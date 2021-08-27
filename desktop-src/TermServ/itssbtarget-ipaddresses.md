@@ -5,13 +5,13 @@ ms.assetid: 938a753c-d541-4772-b41b-817324488685
 ms.tgt_platform: multiple
 keywords:
 - Proprietà TargetExternalIpAddresses Servizi Desktop remoto
-- Proprietà TargetExternalIpAddresses Servizi Desktop remoto , interfaccia ITsSbTarget
-- Proprietà TargetExternalIpAddresses Servizi Desktop remoto , interfaccia ITsSbTarget
+- Proprietà TargetExternalIpAddresses Servizi Desktop remoto, interfaccia ITsSbTarget
+- Proprietà TargetExternalIpAddresses Servizi Desktop remoto, interfaccia ITsSbTarget
 - Proprietà IpAddresses Servizi Desktop remoto
 - Proprietà IpAddresses Servizi Desktop remoto, interfaccia ITsSbTarget
-- Interfaccia ITsSbTarget Servizi Desktop remoto proprietà IpAddresses
+- Interfaccia ITsSbTarget Servizi Desktop remoto proprietà , IpAddresses
 - Proprietà IpAddresses Servizi Desktop remoto, interfaccia ITsSbTargetEx
-- Interfaccia ITsSbTargetEx Servizi Desktop remoto proprietà IpAddresses
+- Interfaccia ITsSbTargetEx Servizi Desktop remoto proprietà , IpAddresses
 topic_type:
 - apiref
 api_name:
@@ -31,12 +31,12 @@ api_type:
 - COM
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: e2ff06e60f125590154a17cb7467deae3611a617b684e9068439c9e15609d8fe
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 21afd8d2349bfef37dcc39b684c3f5b837728f79
+ms.sourcegitcommit: 4665ebce0c106bdb52eef36e544280b496b6f50b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "118351254"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "122988274"
 ---
 # <a name="itssbtargetipaddresses-property"></a>Proprietà ITsSbTarget::IpAddresses
 
@@ -63,7 +63,7 @@ HRESULT get_IpAddresses(
 
 ## <a name="property-value"></a>Valore proprietà
 
-Puntatore a una matrice [**di strutture \_ ConnectionPoint TSSD**](/windows/win32/api/sessdirpublictypes/ns-sessdirpublictypes-tssd_connectionpoint) che ricevono gli indirizzi IP esterni della destinazione.
+Puntatore a una matrice di [**strutture \_ ConnectionPoint TSSD**](/windows/win32/api/sessdirpublictypes/ns-sessdirpublictypes-tssd_connectionpoint) che ricevono gli indirizzi IP esterni della destinazione.
 
 Puntatore a una **variabile DWORD** che contiene il numero di indirizzi IP esterni nel *parametro sockaddr.* Se il numero di indirizzi è sconosciuto, passare *sockaddr* come **NULL.** Il metodo restituirà il numero di strutture [**\_ ConnectionPoint TSSD**](/windows/win32/api/sessdirpublictypes/ns-sessdirpublictypes-tssd_connectionpoint) necessarie per l'allocazione nella matrice a cui punta il *parametro sockaddr.*
 
@@ -71,40 +71,20 @@ Puntatore a una **variabile DWORD** che contiene il numero di indirizzi IP ester
 
 Questa proprietà era precedentemente nota come **TargetExternalIpAddresses** in Windows Server 2008 R2.
 
-Se il numero di indirizzi IP esterni è sconosciuto, è possibile chiamare questo metodo con *sockaddr* impostato su **NULL.** Il metodo restituirà quindi, nel *parametro numAddresses,* il numero di strutture [**\_ ConnectionPoint TSSD**](/windows/win32/api/sessdirpublictypes/ns-sessdirpublictypes-tssd_connectionpoint) necessarie per ricevere tutti gli indirizzi IP esterni. Allocare la matrice per *sockaddr* in base a questo numero e quindi chiamare di nuovo il metodo , impostando *sockaddr* sulla matrice appena allocata e *numAddresses* sul numero restituito dalla prima chiamata.
+Se il numero di indirizzi IP esterni è sconosciuto, è possibile chiamare questo metodo con *sockaddr* impostato su **NULL.** Il metodo restituirà quindi, nel parametro *numAddresses,* il numero di strutture [**\_ ConnectionPoint TSSD**](/windows/win32/api/sessdirpublictypes/ns-sessdirpublictypes-tssd_connectionpoint) necessarie per ricevere tutti gli indirizzi IP esterni. Allocare la matrice per *sockaddr* in base a questo numero e quindi chiamare di nuovo il metodo , impostando *sockaddr* sulla matrice appena allocata e *numAddresses* sul numero restituito dalla prima chiamata.
 
 ## <a name="requirements"></a>Requisiti
 
 
 
-<table>
-<colgroup>
-<col style="width: 50%" />
-<col style="width: 50%" />
-</colgroup>
-<tbody>
-<tr class="odd">
-<td>Client minimo supportato<br/></td>
-<td>Nessuno supportato<br/></td>
-</tr>
-<tr class="even">
-<td>Server minimo supportato<br/></td>
-<td>Windows Server 2012<br/></td>
-</tr>
-<tr class="odd">
-<td>Idl<br/></td>
-<td><dl> <dt>Sbtsv.idl</dt> </dl></td>
-</tr>
-<tr class="even">
-<td>IID<br/></td>
-<td>IID_ITsSbTarget definito come:
-<ul>
-<li>16616ECC-272D-411D-B324-126893033856</li>
-<li>e85e10ea-db0b-4752-b456-5fd5840901c0 in Windows Server 2008 R2</li>
-</ul></td>
-</tr>
-</tbody>
-</table>
+
+| Requisito | Valore |
+|--------|-------|
+| Client minimo supportato<br /> | Nessuno supportato<br /> | 
+| Server minimo supportato<br /> | Windows Server 2012<br /> | 
+| IDL<br /> | <dl><dt>Sbtsv.idl</dt></dl> | 
+| IID<br /> | IID_ITsSbTarget è definito come:<ul><li>16616ECC-272D-411D-B324-126893033856</li><li>e85e10ea-db0b-4752-b456-5fd5840901c0 in Windows Server 2008 R2</li></ul> | 
+
 
 
 
@@ -118,7 +98,7 @@ Se il numero di indirizzi IP esterni è sconosciuto, è possibile chiamare quest
 [**ITsSbTarget**](/windows/desktop/api/sbtsv/nn-sbtsv-itssbtarget)
 </dt> <dt>
 
-[**Punto di connessione \_ TSSD**](/windows/win32/api/sessdirpublictypes/ns-sessdirpublictypes-tssd_connectionpoint)
+[**Punto di connessione TSSD \_**](/windows/win32/api/sessdirpublictypes/ns-sessdirpublictypes-tssd_connectionpoint)
 </dt> </dl>
 
  

@@ -18,12 +18,12 @@ api_type:
 api_location:
 - ESENT.DLL
 ROBOTS: INDEX,FOLLOW
-ms.openlocfilehash: 3e02550fb40987906e21d588263daed9dc68aa5d
-ms.sourcegitcommit: 9b5faa61c38b2d0c432b7f2dbee8c127b0e28a7e
+ms.openlocfilehash: 5b66c80f506942e2815c8b8795c32250c827527b
+ms.sourcegitcommit: 4665ebce0c106bdb52eef36e544280b496b6f50b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/19/2021
-ms.locfileid: "122478247"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "122982344"
 ---
 # <a name="jetupdate-function"></a>Funzione JetUpdate
 
@@ -34,7 +34,7 @@ _**Si applica a:** Windows | Windows Server_
 
 La **funzione JetUpdate** esegue un'operazione di aggiornamento che include l'inserimento di una nuova riga in una tabella o l'aggiornamento di una riga esistente. L'eliminazione di una riga di tabella viene eseguita chiamando [JetDelete](./jetdelete-function.md).
 
-**JetUpdate** è il passaggio finale per eseguire un inserimento o un aggiornamento. L'aggiornamento viene avviato chiamando [JetPrepareUpdate](./jetprepareupdate-function.md) e quindi chiamando [JetSetColumn](./jetsetcolumn-function.md) o [JetSetColumns](./jetsetcolumns-function.md) una o più volte per impostare lo stato del record. Infine, **jetUpdate viene** chiamato per completare l'operazione di aggiornamento. Gli indici vengono aggiornati solo da **JetUpdate** o [JetUpdate2](./jetupdate2-function.md)e non durante [JetSetColumn](./jetsetcolumn-function.md) [o JetSetColumns](./jetsetcolumns-function.md).
+**JetUpdate** è il passaggio finale per eseguire un inserimento o un aggiornamento. L'aggiornamento viene avviato chiamando [JetPrepareUpdate](./jetprepareupdate-function.md) e quindi chiamando [JetSetColumn](./jetsetcolumn-function.md) o [JetSetColumns](./jetsetcolumns-function.md) una o più volte per impostare lo stato del record. Infine, **viene chiamato JetUpdate** per completare l'operazione di aggiornamento. Gli indici vengono aggiornati solo da **JetUpdate** o [JetUpdate2](./jetupdate2-function.md)e non durante [JetSetColumn](./jetsetcolumn-function.md) [o JetSetColumns](./jetsetcolumns-function.md).
 
 ```cpp
     JET_ERR JET_API JetUpdate(
@@ -66,11 +66,11 @@ Dimensioni del buffer a cui punta *pvBookmark*.
 
 *pcbActual*
 
-Dimensioni restituite del segnalibro per la riga inserita restituita in *pvBookmark.*
+Dimensioni restituite del segnalibro per la riga inserita restituita in *pvBookmark*.
 
 ### <a name="return-value"></a>Valore restituito
 
-Questa funzione restituisce il [JET_ERR](./jet-err.md) dati con uno dei codici restituiti seguenti. Per altre informazioni sui possibili errori ESE, vedere Errori del [motore Archiviazione estendibile](./extensible-storage-engine-errors.md) e Parametri [di gestione degli errori](./error-handling-parameters.md).
+Questa funzione restituisce il [JET_ERR](./jet-err.md) dati con uno dei codici restituiti seguenti. Per altre informazioni sui possibili errori ESE, vedere Errori del [motore di Archiviazione](./extensible-storage-engine-errors.md) estendibile e Parametri di gestione degli [errori](./error-handling-parameters.md).
 
 
 | <p>Codice restituito</p> | <p>Descrizione</p> | 
@@ -86,7 +86,7 @@ Questa funzione restituisce il [JET_ERR](./jet-err.md) dati con uno dei codici r
 | <p>JET_errKeyTruncated</p> | <p>Il record inserito o aggiornato ha uno o più indici per i quali la chiave generata avrebbe superato le dimensioni massime consentite. Di conseguenza, l'operazione non è riuscita a impedire il troncamento della chiave.</p> | 
 | <p>JET_errMultiValuedIndexViolation</p> | <p>Il record inserito o aggiornato ha una colonna a più valori indicizzata con due o più valori identici all'interno della dimensione massima della chiave di lunghezza impostata per l'indice. Di conseguenza, il record ha due voci identiche nell'indice che non sono valide.</p> | 
 | <p>JET_errNotInitialized</p> | <p>Non è possibile completare l'operazione perché l'istanza associata alla sessione non è ancora stata inizializzata.</p> | 
-| <p>JET_errNullInvalid</p> | <p>Una o più colonne del record da inserire o nello stato aggiornato di un record da sostituire sono <strong>NULL</strong> che viola il vincolo definito per tali colonne.</p> | 
+| <p>JET_errNullInvalid</p> | <p>Una o più colonne del record da inserire o nello stato aggiornato di un record da sostituire sono <strong>NULL</strong> che violano il vincolo definito per tali colonne.</p> | 
 | <p>JET_errNullKeyDisallowed</p> | <p>Uno o più indici sono definiti per non consentire una chiave <strong>NULL</strong> e lo stato inserito o aggiornato di un record sostituito viola questo vincolo definito.</p> | 
 | <p>JET_errRecordPrimaryChanged</p> | <p>Un'operazione di sostituzione dei record ha aggiornato la chiave primaria. Gli aggiornamenti alle colonne chiave primaria devono essere evasi eliminando il record esistente e inserendo un nuovo record con i dati desiderati.</p> | 
 | <p>JET_errRestoreInProgress</p> | <p>Non è possibile completare l'operazione perché è in corso un'operazione di ripristino nell'istanza associata alla sessione.</p> | 
@@ -107,14 +107,20 @@ In caso di errore, non vengono apportate modifiche di alcun tipo al database. Pr
 
 Le funzioni di callback possono essere registrate per essere chiamate prima o dopo l'inserimento e prima o dopo l'aggiornamento.
 
-Le limitazioni relative alle dimensioni dei record vengono applicate [da JetSetColumn](./jetsetcolumn-function.md)e non in generale da **JetUpdate**.
+Le limitazioni relative alle dimensioni dei record vengono applicate [da JetSetColumn](./jetsetcolumn-function.md)e non in generale da **JetUpdate.**
 
-È importante comprendere l'impatto dell'esecuzione di un numero elevato di operazioni di aggiornamento all'interno di una singola transazione. Ogni aggiornamento del database deve essere monitorato dal motore di database nell'archivio delle versioni. L'archivio versioni contiene un record attivo di tutte le diverse versioni di ogni record o voce di indice nel database che può essere vista da tutte le transazioni attive. Queste versioni vengono usate per supportare il controllo della concorrenza con più versioni in uso dal motore di database per supportare le transazioni che usano l'isolamento dello snapshot. Dopo che il motore di database ha esaurito le risorse usate per archiviare queste versioni, non può più accettare altre modifiche fino a quando alcune transazioni non sono state conclusa per consentire il recupero di queste risorse. Quando il motore è in questo stato, tutti gli aggiornamenti avranno esito negativo JET_errVersionStoreOutOfMemory. Le risorse disponibili per il motore di database per archiviare queste versioni possono essere controllate tramite [JetSetSystemParameter](./jetsetsystemparameter-function.md) con JET_paramMaxVerPages [e](./resource-parameters.md) [JET_paramGlobalMinVerPages](./resource-parameters.md).
+È importante comprendere l'impatto dell'esecuzione di un numero elevato di operazioni di aggiornamento all'interno di una singola transazione. Ogni aggiornamento del database deve essere monitorato dal motore di database nell'archivio delle versioni. L'archivio versioni contiene un record attivo di tutte le diverse versioni di ogni record o voce di indice nel database che può essere visualizzato da tutte le transazioni attive. Queste versioni vengono usate per supportare il controllo della concorrenza con più versioni in uso dal motore di database per supportare le transazioni che usano l'isolamento dello snapshot. Dopo che il motore di database ha esaurito le risorse usate per archiviare queste versioni, non può più accettare altre modifiche fino a quando alcune transazioni non sono state conclusa per consentire il recupero di queste risorse. Quando il motore è in questo stato, tutti gli aggiornamenti avranno esito negativo JET_errVersionStoreOutOfMemory. Le risorse disponibili per il motore di database per archiviare queste versioni possono essere controllate tramite [JetSetSystemParameter](./jetsetsystemparameter-function.md) con JET_paramMaxVerPages [e](./resource-parameters.md) [JET_paramGlobalMinVerPages](./resource-parameters.md).
 
 #### <a name="requirements"></a>Requisiti
 
 
-| | | <p><strong>Client</strong></p> | <p>Richiede Windows Vista, Windows XP o Windows 2000 Professional.</p> | | <p><strong>Server</strong></p> | <p>Richiede Windows Server 2008, Windows Server 2003 o Windows 2000 Server.</p> | | <p><strong>Intestazione</strong></p> | <p>Dichiarato in Esent.h.</p> | | <p><strong>Libreria</strong></p> | <p>Usare ESENT.lib.</p> | | <p><strong>DLL</strong></p> | <p>Richiede ESENT.dll.</p> | 
+| Requisito | Valore |
+|------------|----------|
+| <p><strong>Client</strong></p> | <p>Richiede Windows Vista, Windows XP o Windows 2000 Professional.</p> | 
+| <p><strong>Server</strong></p> | <p>Richiede Windows Server 2008, Windows Server 2003 o Windows 2000 Server.</p> | 
+| <p><strong>Intestazione</strong></p> | <p>Dichiarato in Esent.h.</p> | 
+| <p><strong>Libreria</strong></p> | <p>Usare ESENT.lib.</p> | 
+| <p><strong>DLL</strong></p> | <p>Richiede ESENT.dll.</p> | 
 
 
 
@@ -127,8 +133,8 @@ Le limitazioni relative alle dimensioni dei record vengono applicate [da JetSetC
 [JetPrepareUpdate](./jetprepareupdate-function.md)  
 [JetRegisterCallback](./jetregistercallback-function.md)  
 [JetRetrieveColumn](./jetretrievecolumn-function.md)  
-[JetRetrieveColumns](./jetretrievecolumns-function.md)  
+[Oggetti JetRetrieveColumns](./jetretrievecolumns-function.md)  
 [JetSetColumn](./jetsetcolumn-function.md)  
-[JetSetColumns](./jetsetcolumns-function.md)  
+[Oggetti JetSetColumns](./jetsetcolumns-function.md)  
 [JetSetSystemParameter](./jetsetsystemparameter-function.md)  
 [Parametri di sistema](./extensible-storage-engine-system-parameters.md)

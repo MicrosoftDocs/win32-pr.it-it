@@ -1,9 +1,9 @@
 ---
-title: 'Funzione RWBuffer:: Load (int)'
-description: 'Legge i dati del buffer. | Funzione RWBuffer:: Load (int)'
+title: Funzione RWBuffer::Load(int)
+description: Legge i dati del buffer. | Funzione RWBuffer::Load(int)
 ms.assetid: 3066E244-DE56-4F0D-8443-018B9EFEC1FF
 keywords:
-- Funzione Load HLSL
+- Caricare la funzione HLSL
 topic_type:
 - apiref
 api_name:
@@ -13,14 +13,14 @@ api_type:
 ms.topic: reference
 ms.date: 05/31/2018
 api_location: ''
-ms.openlocfilehash: 561f055990bbca683bf9c55b5805b8d3c55b3272
-ms.sourcegitcommit: 92e74c99f8f4d097676959d0c317f533c2400a80
+ms.openlocfilehash: d3e3f9c9714cb4cc7f0f29bfa801e767b468d526836a7bd09f0f9823d9ff8868
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/09/2021
-ms.locfileid: "103761692"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120118301"
 ---
-# <a name="rwbufferloadint-function"></a>Funzione RWBuffer:: Load (int)
+# <a name="rwbufferloadint-function"></a>Funzione RWBuffer::Load(int)
 
 Legge i dati del buffer.
 
@@ -39,7 +39,7 @@ Legge i dati del buffer.
 
 <dl> <dt>
 
-*Posizione* \[ in\]
+*Località* \[ Pollici\]
 </dt> <dd>
 
 Tipo: **int**
@@ -52,7 +52,7 @@ Posizione del buffer.
 
 Digitare:
 
-Il tipo restituito corrisponde al tipo nella dichiarazione per l'oggetto [**RWBuffer**](sm5-object-rwbuffer.md) .
+Il tipo restituito corrisponde al tipo nella dichiarazione per [**l'oggetto RWBuffer.**](sm5-object-rwbuffer.md)
 
 ## <a name="remarks"></a>Commenti
 
@@ -60,7 +60,7 @@ Questa funzione è supportata per i tipi di shader seguenti:
 
 
 
-| Vertice | Hull | Dominio | Geometria | Pixel | Calcolo |
+| Vertice | Scafo | Dominio | Geometria | Pixel | Calcolo |
 |--------|------|--------|----------|-------|---------|
 | x      | x    | x      | x        | x     | x       |
 
@@ -72,7 +72,7 @@ Questa funzione è supportata per i tipi di shader seguenti:
 
 <dl> <dt>
 
-[Metodi Load](rwbuffer-load.md)
+[Metodi di caricamento](rwbuffer-load.md)
 </dt> </dl>
 
  

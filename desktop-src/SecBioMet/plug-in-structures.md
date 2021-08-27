@@ -1,21 +1,21 @@
 ---
-title: Strutture di plug-in
-description: Strutture per lo sviluppo di applicazioni client da parte dell'API Windows Biometric Framework.
+title: Strutture dei plug-in
+description: Strutture per lo sviluppo di applicazioni client da parte dell Windows API Biometric Framework.
 ms.assetid: 64fb908c-72c2-4639-a2f6-77ede080512c
 keywords:
-- API Windows Biometric Framework API di Windows Biometric Framework, strutture di plug-in
+- Windows API Biometric Framework Windows API Biometric Framework , strutture plug-in
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 193b5a99f30c76e8e6e2ab7ebf0242cf56905816
-ms.sourcegitcommit: 2d531328b6ed82d4ad971a45a5131b430c5866f7
+ms.openlocfilehash: e150dd043a8c95e91d0f9095e23584544f43a503a709ae54c9180e06aa40bdaf
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "104331671"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120101241"
 ---
-# <a name="plug-in-structures"></a>Strutture di plug-in
+# <a name="plug-in-structures"></a>Strutture dei plug-in
 
-Le strutture seguenti sono supportate per lo sviluppo di applicazioni client da parte dell'API Windows Biometric Framework.
+Le strutture seguenti sono supportate per lo sviluppo di applicazioni client dall'API Windows Biometric Framework.
 
 ## <a name="in-this-section"></a>Contenuto della sezione
 
@@ -23,14 +23,14 @@ Le strutture seguenti sono supportate per lo sviluppo di applicazioni client da 
 
 | Argomento                                                                                                | Descrizione                                                                                                                           |
 |------------------------------------------------------------------------------------------------------|---------------------------------------------------------------------------------------------------------------------------------------|
-| [**\_criteri dell'account WINBIO \_**](winbio-account-policy.md)<br/>                                  | Contiene criteri di antispoofing predefiniti o specifici dell'account.<br/>                                                         |
-| [**\_versione dell' \_ interfaccia dell'adattatore WINBIO \_**](/windows/desktop/api/Winbio_adapter/ns-winbio_adapter-winbio_adapter_interface_version)<br/>           | Contiene un numero di versione principale e secondario utilizzato nelle tabelle di interfaccia del motore, del sensore e dell'adattatore di archiviazione.<br/>                |
-| [**\_interfaccia del motore WINBIO \_**](/windows/desktop/api/Winbio_adapter/ns-winbio_adapter-winbio_engine_interface)<br/>                              | Contiene i puntatori alle funzioni dell'adattatore del motore personalizzato.<br/>                                                                 |
-| [**WINBIO \_ parametri di registrazione estesi \_ \_**](winbio-extended-enrollment-parameters.md)<br/> | Contiene informazioni aggiuntive necessarie per la creazione di un modello di registrazione da un adattatore del motore. <br/>                            |
-| [**\_pipeline WINBIO**](/windows/desktop/api/Winbio_adapter/ns-winbio_adapter-winbio_pipeline)<br/>                                               | Contiene informazioni di contesto condivise utilizzate dal sensore, dal motore e dai componenti dell'adattatore di archiviazione in un'unica unità biometrica.<br/> |
-| [**\_interfaccia del sensore WINBIO \_**](/windows/desktop/api/Winbio_adapter/ns-winbio_adapter-winbio_sensor_interface)<br/>                              | Contiene i puntatori alle funzioni dell'adattatore del sensore personalizzato.<br/>                                                                 |
-| [**\_interfaccia di archiviazione WINBIO \_**](/windows/desktop/api/Winbio_adapter/ns-winbio_adapter-winbio_storage_interface)<br/>                            | Contiene i puntatori alle funzioni dell'adattatore di archiviazione personalizzato.<br/>                                                                |
-| [**\_record di archiviazione WINBIO \_**](/windows/desktop/api/Winbio_adapter/ns-winbio_adapter-winbio_storage_record)<br/>                                  | Contiene un modello biometrico e i dati associati in un formato standard.<br/>                                                    |
+| [**CRITERI DELL'ACCOUNT WINBIO \_ \_**](winbio-account-policy.md)<br/>                                  | Contiene un criterio antispoofing predefinito o specifico dell'account.<br/>                                                         |
+| [**VERSIONE DELL'INTERFACCIA \_ \_ DELL'ADAPTER WINBIO \_**](/windows/desktop/api/Winbio_adapter/ns-winbio_adapter-winbio_adapter_interface_version)<br/>           | Contiene un numero di versione principale e secondario usato nelle tabelle di interfaccia del motore, del sensore e dell'adattatore di archiviazione.<br/>                |
+| [**INTERFACCIA DEL MOTORE WINBIO \_ \_**](/windows/desktop/api/Winbio_adapter/ns-winbio_adapter-winbio_engine_interface)<br/>                              | Contiene puntatori alle funzioni dell'adattatore del motore personalizzato.<br/>                                                                 |
+| [**PARAMETRI DI REGISTRAZIONE \_ ESTESA WINBIO \_ \_**](winbio-extended-enrollment-parameters.md)<br/> | Contiene informazioni aggiuntive necessarie a un adattatore motore per creare un modello di registrazione. <br/>                            |
+| [**WINBIO \_ PIPELINE**](/windows/desktop/api/Winbio_adapter/ns-winbio_adapter-winbio_pipeline)<br/>                                               | Contiene informazioni di contesto condiviso usate dai componenti sensore, motore e adattatore di archiviazione in una singola unità biometrica.<br/> |
+| [**INTERFACCIA DEL SENSORE WINBIO \_ \_**](/windows/desktop/api/Winbio_adapter/ns-winbio_adapter-winbio_sensor_interface)<br/>                              | Contiene puntatori alle funzioni dell'adattatore del sensore personalizzato.<br/>                                                                 |
+| [**INTERFACCIA DI ARCHIVIAZIONE \_ WINBIO \_**](/windows/desktop/api/Winbio_adapter/ns-winbio_adapter-winbio_storage_interface)<br/>                            | Contiene puntatori alle funzioni dell'adattatore di archiviazione personalizzato.<br/>                                                                |
+| [**RECORD DI ARCHIVIAZIONE WINBIO \_ \_**](/windows/desktop/api/Winbio_adapter/ns-winbio_adapter-winbio_storage_record)<br/>                                  | Contiene un modello biometrico e i dati associati in un formato standard.<br/>                                                    |
 
 
 
@@ -40,7 +40,7 @@ Le strutture seguenti sono supportate per lo sviluppo di applicazioni client da 
 
 <dl> <dt>
 
-[Riferimento al plug-in](plug-in-reference.md)
+[Informazioni di riferimento sul plug-in](plug-in-reference.md)
 </dt> <dt>
 
 [Funzioni plug-in](plug-in-functions.md)

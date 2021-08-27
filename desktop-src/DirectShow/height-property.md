@@ -1,15 +1,15 @@
 ---
-description: La proprietà height Imposta o recupera l'altezza del rettangolo.
+description: La proprietà Height imposta o recupera l'altezza del rettangolo.
 ms.assetid: b66324bd-730c-4a16-87b0-18baef0a2a9c
 title: Proprietà Height (DirectShow)
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 497f24fdb4f4468a0ffc7fca26e12e2b70f6cc1e
-ms.sourcegitcommit: a47bd86f517de76374e4fff33cfeb613eb259a7e
+ms.openlocfilehash: cfc51973fa0aff180c60eecd183e413c131759bd1ec4b5f850abae5bb567e6dc
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/06/2021
-ms.locfileid: "104125337"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120102769"
 ---
 # <a name="height-property-directshow"></a>Proprietà Height (DirectShow)
 
@@ -26,11 +26,11 @@ La `Height` proprietà imposta o recupera l'altezza del rettangolo.
 
 ## <a name="return-value"></a>Valore restituito
 
-Restituisce l'altezza, in pixel, del rettangolo come valore integer.
+Restituisce l'altezza, in pixel, del rettangolo come integer.
 
 ## <a name="remarks"></a>Commenti
 
-Questa proprietà è di lettura/scrittura e non prevede alcun valore predefinito.
+Questa proprietà è di lettura/scrittura senza alcun valore predefinito.
 
  
 

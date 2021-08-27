@@ -16,12 +16,12 @@ api_location: ''
 topic_type:
 - APIRef
 - kbSyntax
-ms.openlocfilehash: 2d9208e3c0aad7ab05348056eaf70747aa23433e0ab5badec5da1f2baf063b1b
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 73d9018797770f206dbb518685c7b5dac5a6f9af
+ms.sourcegitcommit: 4665ebce0c106bdb52eef36e544280b496b6f50b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "118066307"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "122982724"
 ---
 # <a name="span-idwwan_profile_v4element_providerspanprovider"></a><span id="WWAN_profile_v4.element_Provider"></span>Provider
 
@@ -31,9 +31,9 @@ Il valore di questo elemento è un'istanza del tipo complesso [**providerType**]
 
 ## <a name="element-hierarchy"></a>Gerarchia degli elementi
 
-[<MBNProfileExt>](element-mbnprofileext.md)  
-[<DataRoamingPartners>](element-dataroamingpartners.md)  
-**<Provider>**
+[&lt;MBNProfileExt&gt;](element-mbnprofileext.md)  
+[&lt;DataRoamingPartners&gt;](element-dataroamingpartners.md)  
+**&lt;Provider&gt;**
 
 ## <a name="syntax"></a>Sintassi
 
@@ -57,42 +57,21 @@ Nessuno.
 
 ### <a name="span-idparent_elementsspanspan-idparent_elementsspanparent-elements"></a><span id="parent_elements"></span><span id="PARENT_ELEMENTS"></span>Elementi padre
 
-<table>
-<colgroup>
-<col style="width: 50%" />
-<col style="width: 50%" />
-</colgroup>
-<thead>
-<tr class="header">
-<th>Elemento padre</th>
-<th>Descrizione</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td><a href="element-dataroamingpartners.md">DataRoamingPartners</a></td>
-<td><p>Specifica un elenco di provider di rete preferiti durante il roaming.</p>
-<p>Per informazioni dettagliate, vedere la documentazione per <a href="../mbn/schema-dataroamingpartners-mbnprofile-element.md"><strong>l'elemento DataRoamingPartners v1.</strong></a></p></td>
-</tr>
-</tbody>
-</table>
+
+| Elemento padre | Descrizione | 
+|----------------|-------------|
+| <a href="element-dataroamingpartners.md">DataRoamingPartners</a> | <p>Specifica un elenco di provider di rete preferiti durante il roaming.</p><p>Per informazioni dettagliate, vedere la documentazione per <a href="../mbn/schema-dataroamingpartners-mbnprofile-element.md"><strong>l'elemento DataRoamingPartners v1.</strong></a></p> | 
+
 
  
 
 ## <a name="requirements"></a>Requisiti
 
-<table>
-<colgroup>
-<col style="width: 50%" />
-<col style="width: 50%" />
-</colgroup>
-<tbody>
-<tr class="odd">
-<td><p>Spazio dei nomi</p></td>
-<td><p>https://www.microsoft.com/networking/WWAN/profile/v4</p></td>
-</tr>
-</tbody>
-</table>
+
+| Requisito | Valore |
+|------------|----------|
+| <p>Spazio dei nomi</p> | <p>https://www.microsoft.com/networking/WWAN/profile/v4</p> | 
+
 
  
 

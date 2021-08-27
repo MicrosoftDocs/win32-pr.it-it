@@ -1,12 +1,12 @@
 ---
-title: Proprietà Name di IMsRdpDrive
+title: Proprietà IMsRdpDrive Name
 description: Recupera il nome dell'unità.
 ms.assetid: 5aabb7df-fd46-48aa-ad1d-51da45495782
 ms.tgt_platform: multiple
 keywords:
-- Servizi Desktop remoto proprietà nome
-- Nome Servizi Desktop remoto proprietà, interfaccia IMsRdpDrive
-- Interfaccia IMsRdpDrive Servizi Desktop remoto, proprietà Name
+- Proprietà Name Servizi Desktop remoto
+- Proprietà Name Servizi Desktop remoto, interfaccia IMsRdpDrive
+- Interfaccia IMsRdpDrive Servizi Desktop remoto proprietà Name
 topic_type:
 - apiref
 api_name:
@@ -18,14 +18,14 @@ api_type:
 - COM
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: c38eeb0f6112983f508bb43ba69d721aeb52c314
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: bde69814f38c39315a02a76bd52b8c3c38baffc2c0a92601ef383cb60b0bc492
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "104477740"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120125641"
 ---
-# <a name="imsrdpdrivename-property"></a>Proprietà IMsRdpDrive:: Name
+# <a name="imsrdpdrivename-property"></a>Proprietà IMsRdpDrive::Name
 
 Recupera il nome dell'unità.
 
@@ -48,7 +48,7 @@ Nome dell'unità.
 
 ## <a name="error-codes"></a>Codici di errore
 
-Se il metodo ha esito positivo, viene restituito **S \_ OK** . Qualsiasi altro valore **HRESULT** indica che la chiamata non è riuscita.
+Se il metodo ha esito positivo, **viene restituito S \_ OK.** Qualsiasi altro **valore HRESULT** indica che la chiamata non è riuscita.
 
 ## <a name="requirements"></a>Requisiti
 
@@ -60,7 +60,7 @@ Se il metodo ha esito positivo, viene restituito **S \_ OK** . Qualsiasi altro v
 | Server minimo supportato<br/> | Windows Server 2008<br/>                                                         |
 | Libreria dei tipi<br/>             | <dl> <dt>MsTscAx.dll</dt> </dl> |
 | DLL<br/>                      | <dl> <dt>MsTscAx.dll</dt> </dl> |
-| IID<br/>                      | IID \_ IMsRdpDrive è definito come d28b5458-f694-47a8-8e61-40356a767e46<br/>         |
+| IID<br/>                      | IMsRdpDrive IID è definito come \_ d28b5458-f694-47a8-8e61-40356a767e46<br/>         |
 
 
 

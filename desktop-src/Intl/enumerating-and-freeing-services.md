@@ -1,23 +1,23 @@
 ---
-description: Enumerazione e liberazione di servizi
+description: Enumerazione e freeing dei servizi
 ms.assetid: 526e51c7-9ff2-4590-b092-172f4942ce8e
-title: Enumerazione e liberazione di servizi
+title: Enumerazione e freeing dei servizi
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 859abe590ccaf2f71df676d5989778d5b391be57
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: dc6472851fbf5f7f84a499d2e9e04804279d397f31452d9617a8868e05cb8ebb
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "106317156"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120086611"
 ---
-# <a name="enumerating-and-freeing-services"></a>Enumerazione e liberazione di servizi
+# <a name="enumerating-and-freeing-services"></a>Enumerazione e freeing dei servizi
 
-L'applicazione ELS chiama la funzione [**MappingGetServices**](/windows/desktop/api/Elscore/nf-elscore-mappinggetservices) per determinare i servizi disponibili nel sistema operativo. La funzione può essere utilizzata per enumerare tutti i servizi ELS disponibili o per filtrare i servizi in base ai criteri di ricerca forniti dall'applicazione. Quando i servizi non sono più necessari, l'applicazione chiama [**MappingFreeServices**](/windows/desktop/api/Elscore/nf-elscore-mappingfreeservices).
+L'applicazione ELS [**chiama la funzione MappingGetServices**](/windows/desktop/api/Elscore/nf-elscore-mappinggetservices) per determinare i servizi disponibili nel sistema operativo. La funzione può essere usata per enumerare tutti i servizi ELS disponibili o per filtrare i servizi in base ai criteri di ricerca forniti dall'applicazione. Quando i servizi non sono più necessari, l'applicazione chiama [**MappingFreeServices.**](/windows/desktop/api/Elscore/nf-elscore-mappingfreeservices)
 
 ## <a name="get-all-supported-services"></a>Ottenere tutti i servizi supportati
 
-Questo esempio di codice illustra l'uso di [**MappingGetServices**](/windows/desktop/api/Elscore/nf-elscore-mappinggetservices) e [**MappingFreeServices**](/windows/desktop/api/Elscore/nf-elscore-mappingfreeservices) per enumerare e quindi liberare tutti i servizi disponibili nel sistema operativo. A tale scopo, l'applicazione passa **null** per il parametro *pOptions* di **MappingGetServices**.
+Questo esempio di codice illustra l'uso di [**MappingGetServices**](/windows/desktop/api/Elscore/nf-elscore-mappinggetservices) e [**MappingFreeServices**](/windows/desktop/api/Elscore/nf-elscore-mappingfreeservices) per enumerare e quindi liberare tutti i servizi disponibili nel sistema operativo. A tale scopo, l'applicazione **passa NULL** per il *parametro pOptions* **di MappingGetServices.**
 
 
 ```C++
@@ -54,7 +54,7 @@ int __cdecl main()
 
 ## <a name="get-specific-services"></a>Ottenere servizi specifici
 
-Nell'esempio seguente viene illustrato l'utilizzo di [**MappingGetServices**](/windows/desktop/api/Elscore/nf-elscore-mappinggetservices) e [**MappingFreeServices**](/windows/desktop/api/Elscore/nf-elscore-mappingfreeservices) per enumerare e quindi liberare tutti i servizi della categoria "rilevamento lingua". Per ulteriori informazioni su questa categoria di servizi, vedere [**Microsoft rilevamento lingua**](microsoft-language-detection.md).
+L'esempio seguente illustra l'uso di [**MappingGetServices**](/windows/desktop/api/Elscore/nf-elscore-mappinggetservices) e [**MappingFreeServices**](/windows/desktop/api/Elscore/nf-elscore-mappingfreeservices) per enumerare e quindi liberare tutti i servizi della categoria "Rilevamento lingua". Per altre informazioni su questa categoria di servizi, vedere [**Microsoft Rilevamento lingua**](microsoft-language-detection.md).
 
 
 ```C++
@@ -101,7 +101,7 @@ int __cdecl main()
 
 <dl> <dt>
 
-[Uso di servizi linguistici estesi](using-extended-linguistic-services.md)
+[Uso di Servizi linguistici estesi](using-extended-linguistic-services.md)
 </dt> <dt>
 
 [**MappingFreeServices**](/windows/desktop/api/Elscore/nf-elscore-mappingfreeservices)

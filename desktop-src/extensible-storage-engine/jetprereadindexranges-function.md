@@ -1,6 +1,6 @@
 ---
-description: 'Altre informazioni su: funzione JetPrereadIndexRanges'
-title: JetPrereadIndexRanges (funzione)
+description: 'Altre informazioni su: Funzione JetPrereadIndexRanges'
+title: Funzione JetPrereadIndexRanges
 TOCTitle: JetPrereadIndexRanges Function
 ms:assetid: ab49abcc-eaeb-438f-8e6d-b08bc94d7bc3
 ms:mtpsurl: https://msdn.microsoft.com/library/JJ835045(v=EXCHG.10)
@@ -19,21 +19,21 @@ api_type:
 api_location:
 - ESENT.DLL
 ROBOTS: INDEX,FOLLOW
-ms.openlocfilehash: 7cfdd8d25f7008f5fa854cbee32b54fa01942ce2
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 0ff2d9e7c538e8aa8cc862fe9a72c0308e497fd4
+ms.sourcegitcommit: 4665ebce0c106bdb52eef36e544280b496b6f50b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104128163"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "122986664"
 ---
-# <a name="jetprereadindexranges-function"></a>JetPrereadIndexRanges (funzione)
+# <a name="jetprereadindexranges-function"></a>Funzione JetPrereadIndexRanges
 
 
 _**Si applica a:** Windows | Windows Server_
 
-La funzione **JetPrereadIndexRanges** legge gli indici per migliorare le prestazioni.
+La **funzione JetPrereadIndexRanges** prelettura gli indici per migliorare le prestazioni.
 
-La funzione **JetPrereadIndexRanges** è stata introdotta nel sistema operativo Windows 8.
+La **funzione JetPrereadIndexRanges** è stata introdotta nel Windows 8 operativo.
 
 ``` c++
 JET_ERR JetPrereadIndexRanges(
@@ -54,17 +54,17 @@ JET_ERR JetPrereadIndexRanges(
 
 Contesto della sessione di database da usare per la chiamata API.
 
-*TableID*
+*tableid*
 
-Tabella su cui eseguire le preletture.
+Tabella su cui eseguire le prelettura.
 
 *rgIndexRanges*
 
-Intervalli di chiavi da preleggere.
+Intervalli di chiavi da pre-leggere.
 
 *cIndexRanges*
 
-Numero di intervalli di chiavi da preleggere, determinato dal numero di elementi in *rgIndexRanges*.
+Numero di intervalli di chiavi da pre-leggere, determinato dal numero di elementi in *rgIndexRanges.*
 
 *pcRangesPreread*
 
@@ -72,106 +72,52 @@ Numero di intervalli di chiavi effettivamente preletti.
 
 *rgcolumnidPreread*
 
-Elenco di ID di colonna per le colonne con valore esteso da preleggere. Per impostazione predefinita, solo il record di pagina è preletto. Se è necessario preleggere le colonne con valore Long all'esterno della pagina, gli ID di colonna devono essere passati tramite questo parametro.
+Elenco di ID di colonna per le colonne con valori lunghi da leggere in modo preliminare. Per impostazione predefinita, solo il record nella pagina è prelettura. Se le colonne con valori lunghi fuori pagina devono essere prelette, i relativi ID colonna devono essere passati tramite questo parametro.
 
 *ccolumnidPreread*
 
-Numero di ID di colonna per le colonne con valore lungo da preleggere, determinato dal numero di elementi in *rgcolumnidPreread*.
+Numero di ID di colonna per le colonne con valori lunghi da preletre, determinato dal numero di elementi in *rgcolumnidPreread.*
 
 *grbit*
 
-Gruppo di bit che specifica zero o più valori di direzione di prelettura elencati nella tabella seguente.
+Gruppo di bit che specifica zero o più valori della direzione di prelettura elencati nella tabella seguente.
 
-<table>
-<colgroup>
-<col style="width: 50%" />
-<col style="width: 50%" />
-</colgroup>
-<thead>
-<tr class="header">
-<th><p>Valore</p></th>
-<th><p>Significato</p></th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td><p>Inoltra</p></td>
-<td><p>Prelettura in futuro.</p></td>
-</tr>
-<tr class="even">
-<td><p>Indietro</p></td>
-<td><p>Prelettura indietro.</p></td>
-</tr>
-<tr class="odd">
-<td><p>FirstPageOnly</p></td>
-<td><p>Prelettura solo della prima pagina di qualsiasi colonna lungo.</p></td>
-</tr>
-<tr class="even">
-<td><p>NormalizedKey</p></td>
-<td><p>Chiave/segnalibro normalizzato fornito al posto del valore della colonna.</p></td>
-</tr>
-</tbody>
-</table>
+
+| <p>Valore</p> | <p>Significato</p> | 
+|--------------|----------------|
+| <p>Inoltra</p> | <p>Prelettura in avanti.</p> | 
+| <p>Indietro</p> | <p>Prelettura all'indietro.</p> | 
+| <p>FirstPageOnly</p> | <p>Prelettura solo la prima pagina di qualsiasi colonna lunga.</p> | 
+| <p>NormalizedKey</p> | <p>Chiave/segnalibro normalizzato fornito al posto del valore della colonna.</p> | 
+
 
 
 ### <a name="return-value"></a>Valore restituito
 
-Questa funzione restituisce il tipo di dati [JET_ERR](./jet-err.md) con uno dei codici restituiti elencati nella tabella seguente. Per ulteriori informazioni sui possibili errori di Extensible Storage Engine (ESE), vedere la pagina relativa agli errori e ai [parametri di gestione degli](./error-handling-parameters.md)errori del [motore di archiviazione estensibile](./extensible-storage-engine-errors.md) .
+Questa funzione restituisce il [JET_ERR](./jet-err.md) dati con uno dei codici restituiti elencati nella tabella seguente. Per altre informazioni sui possibili errori ESE [(Extensible](./extensible-storage-engine-errors.md) Archiviazione Engine), vedere Extensible Archiviazione Engine Errors and [Error Handling Parameters](./error-handling-parameters.md).
 
-<table>
-<colgroup>
-<col style="width: 50%" />
-<col style="width: 50%" />
-</colgroup>
-<thead>
-<tr class="header">
-<th><p>Codice restituito</p></th>
-<th><p>Descrizione</p></th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td><p>JET_errSuccess</p></td>
-<td><p>Operazione riuscita.</p></td>
-</tr>
-</tbody>
-</table>
+
+| <p>Codice restituito</p> | <p>Descrizione</p> | 
+|--------------------|--------------------|
+| <p>JET_errSuccess</p> | <p>Operazione riuscita.</p> | 
+
 
 
 #### <a name="remarks"></a>Commenti
 
-Se i record con gli intervalli di chiavi specificati non si trovano nella cache buffer, è consigliabile avviare le letture asincrone per inserire i record nella cache buffer del database.
+Se i record con gli intervalli di chiavi specificati non sono presenti nella cache del buffer, è necessario avviare le letture asincrone per portare i record nella cache del buffer del database.
 
 #### <a name="requirements"></a>Requisiti
 
-<table>
-<colgroup>
-<col style="width: 50%" />
-<col style="width: 50%" />
-</colgroup>
-<tbody>
-<tr class="odd">
-<td><p><strong>Client</strong></p></td>
-<td><p>Richiede Windows 8.</p></td>
-</tr>
-<tr class="even">
-<td><p><strong>Server</strong></p></td>
-<td><p>Richiede Windows Server 2012.</p></td>
-</tr>
-<tr class="odd">
-<td><p><strong>Intestazione</strong></p></td>
-<td><p>Dichiarata in esent. h.</p></td>
-</tr>
-<tr class="even">
-<td><p><strong>Libreria</strong></p></td>
-<td><p>Usare ESENT. lib.</p></td>
-</tr>
-<tr class="odd">
-<td><p><strong>DLL</strong></p></td>
-<td><p>Richiede ESENT.dll.</p></td>
-</tr>
-</tbody>
-</table>
+
+| Requisito | Valore |
+|------------|----------|
+| <p><strong>Client</strong></p> | <p>Richiede Windows 8.</p> | 
+| <p><strong>Server</strong></p> | <p>Richiede Windows Server 2012.</p> | 
+| <p><strong>Intestazione</strong></p> | <p>Dichiarato in Esent.h.</p> | 
+| <p><strong>Libreria</strong></p> | <p>Usare ESENT.lib.</p> | 
+| <p><strong>DLL</strong></p> | <p>Richiede ESENT.dll.</p> | 
+
 
 
 #### <a name="see-also"></a>Vedi anche

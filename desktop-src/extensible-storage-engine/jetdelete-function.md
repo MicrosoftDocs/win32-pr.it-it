@@ -1,5 +1,5 @@
 ---
-description: 'Altre informazioni su: funzione JetDelete'
+description: 'Altre informazioni su: Funzione JetDelete'
 title: Funzione JetDelete
 TOCTitle: JetDelete Function
 ms:assetid: 807de5ba-2f4b-4779-ab29-a1f094beecc1
@@ -18,12 +18,12 @@ api_type:
 api_location:
 - ESENT.DLL
 ROBOTS: INDEX,FOLLOW
-ms.openlocfilehash: 9f3422bc623bbd4f0cc99365df51bb797100811c
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 039ddcb0610b6a958e9c45be7e3a898631d2a0fc
+ms.sourcegitcommit: 4665ebce0c106bdb52eef36e544280b496b6f50b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "106315622"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "122984954"
 ---
 # <a name="jetdelete-function"></a>Funzione JetDelete
 
@@ -32,7 +32,7 @@ _**Si applica a:** Windows | Windows Server_
 
 ## <a name="jetdelete-function"></a>Funzione JetDelete
 
-La funzione **JetDelete** Elimina il record corrente in una tabella di database.
+La **funzione JetDelete** elimina il record corrente in una tabella di database.
 
 ```cpp
     JET_ERR JET_API JetDelete(
@@ -45,142 +45,68 @@ La funzione **JetDelete** Elimina il record corrente in una tabella di database.
 
 *sesid*
 
-Contesto della sessione del database che verrà usato per la chiamata API.
+Contesto della sessione di database che verrà usato per la chiamata API.
 
-*TableID*
+*tableid*
 
 Cursore su una tabella di database. La riga corrente verrà eliminata.
 
 ### <a name="return-value"></a>Valore restituito
 
-Questa funzione restituisce il tipo di dati [JET_ERR](./jet-err.md) con uno dei seguenti codici restituiti. Per ulteriori informazioni sugli errori ESE possibili, vedere la pagina relativa agli errori e ai [parametri di gestione degli](./error-handling-parameters.md)errori del [motore di archiviazione estensibile](./extensible-storage-engine-errors.md) .
-
-<table>
-<colgroup>
-<col style="width: 50%" />
-<col style="width: 50%" />
-</colgroup>
-<thead>
-<tr class="header">
-<th><p>Codice restituito</p></th>
-<th><p>Descrizione</p></th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td><p>JET_errSuccess</p></td>
-<td><p>Operazione riuscita.</p></td>
-</tr>
-<tr class="even">
-<td><p>JET_errCallbackFailed</p></td>
-<td><p>La funzione di callback ha avuto esito negativo in qualche modo. Le violazioni di accesso nelle funzioni di callback, ad esempio, vengono rilevate e convertite in JET_errCallbackFailed. Questo errore verrà restituito solo da Windows XP e versioni successive.</p></td>
-</tr>
-<tr class="odd">
-<td><p>JET_errClientRequestToStopJetService</p></td>
-<td><p>Non è possibile completare l'operazione perché tutte le attività nell'istanza associata alla sessione sono state interrotte in seguito a una chiamata a <a href="gg269240(v=exchg.10).md">JetStopService</a>.</p></td>
-</tr>
-<tr class="even">
-<td><p>JET_errIllegalOperation</p></td>
-<td><p>Il cursore specificato da <em>TableID</em> non supporta l'eliminazione. Vedere la sezione relativa alle osservazioni.</p></td>
-</tr>
-<tr class="odd">
-<td><p>JET_errInstanceUnavailable</p></td>
-<td><p>Non è possibile completare l'operazione perché l'istanza associata alla sessione ha rilevato un errore irreversibile che richiede che l'accesso a tutti i dati venga revocato per proteggere l'integrità dei dati. Questo errore verrà restituito solo da Windows XP e versioni successive.</p></td>
-</tr>
-<tr class="even">
-<td><p>JET_errNoCurrentRecord</p></td>
-<td><p>Il cursore specificato da <em>TableID</em> non si trova in un record.</p></td>
-</tr>
-<tr class="odd">
-<td><p>JET_errNotInitialized</p></td>
-<td><p>Non è possibile completare l'operazione perché l'istanza associata alla sessione non è ancora stata inizializzata.</p></td>
-</tr>
-<tr class="even">
-<td><p>JET_errRestoreInProgress</p></td>
-<td><p>Non è possibile completare l'operazione perché è in corso un'operazione di ripristino sull'istanza associata alla sessione.</p></td>
-</tr>
-<tr class="odd">
-<td><p>JET_errPermissionDenied</p></td>
-<td><p>Il motore di database non dispone di autorizzazioni sufficienti per eliminare il record. Questo problema può verificarsi se il file di database è stato aperto con accesso in sola lettura.</p></td>
-</tr>
-<tr class="even">
-<td><p>JET_errRollbackError</p></td>
-<td><p>Un buffer di aggiornamento (vedere <a href="gg269339(v=exchg.10).md">JetPrepareUpdate</a>) esiste, ma non è possibile eseguire il rollback di tutte le modifiche apportate alle colonne di tipo JET_coltypLongText e/o colonne di tipo JET_coltypLongBinary.</p></td>
-</tr>
-<tr class="odd">
-<td><p>JET_errSessionSharingViolation</p></td>
-<td><p>Non è consentito usare la stessa sessione da più di un thread nello stesso momento. Questo errore verrà restituito solo da Windows XP e versioni successive.</p></td>
-</tr>
-<tr class="even">
-<td><p>JET_errTermInProgress</p></td>
-<td><p>Non è possibile completare l'operazione perché l'istanza associata alla sessione viene arrestata.</p></td>
-</tr>
-<tr class="odd">
-<td><p>JET_errTransReadOnly</p></td>
-<td><p>La transazione è di sola lettura e non supporta le eliminazioni.</p></td>
-</tr>
-<tr class="even">
-<td><p>JET_errVersionStoreOutOfMemory</p></td>
-<td><p>Operazione non riuscita perché la memoria disponibile non è sufficiente per mantenere le informazioni transazionali sull'aggiornamento.</p></td>
-</tr>
-<tr class="odd">
-<td><p>JET_errWriteConflict</p></td>
-<td><p>Un'altra sessione ha bloccato in precedenza il record per l'aggiornamento. Il tentativo di aggiornamento da questa sessione avrà esito negativo.</p></td>
-</tr>
-</tbody>
-</table>
+Questa funzione restituisce il [JET_ERR](./jet-err.md) dati con uno dei codici restituiti seguenti. Per altre informazioni sui possibili errori ESE, vedere Errori del [motore di Archiviazione](./extensible-storage-engine-errors.md) estendibile e Parametri di gestione degli [errori](./error-handling-parameters.md).
 
 
-In seguito all'esito positivo, la valuta viene lasciata immediatamente prima del record successivo. Se il record eliminato era l'ultimo nella tabella, la valuta viene lasciata alla fine della tabella, ovvero dopo il nuovo record. Se il record eliminato è l'unico record della tabella, la valuta viene impostata all'inizio.
+| <p>Codice restituito</p> | <p>Descrizione</p> | 
+|--------------------|--------------------|
+| <p>JET_errSuccess</p> | <p>Operazione riuscita.</p> | 
+| <p>JET_errCallbackFailed</p> | <p>La funzione di callback non è riuscita in qualche modo. Ad esempio, le violazioni di accesso nelle funzioni di callback vengono intercettte e convertite in JET_errCallbackFailed. Questo errore verrà restituito solo da Windows XP e versioni successive.</p> | 
+| <p>JET_errClientRequestToStopJetService</p> | <p>Non è possibile completare l'operazione perché tutte le attività nell'istanza associata alla sessione sono cesse a causa di una chiamata a <a href="gg269240(v=exchg.10).md">JetStopService.</a></p> | 
+| <p>JET_errIllegalOperation</p> | <p>Il cursore specificato da <em>tableid</em> non supporta l'eliminazione. Vedere la sezione relativa alle osservazioni.</p> | 
+| <p>JET_errInstanceUnavailable</p> | <p>Non è possibile completare l'operazione perché l'istanza associata alla sessione ha rilevato un errore irreversibile che richiede la revoca dell'accesso a tutti i dati per proteggere l'integrità di questi dati. Questo errore verrà restituito solo da Windows XP e versioni successive.</p> | 
+| <p>JET_errNoCurrentRecord</p> | <p>Il cursore specificato <em>da tableid</em> non si trova in un record.</p> | 
+| <p>JET_errNotInitialized</p> | <p>Non è possibile completare l'operazione perché l'istanza associata alla sessione non è ancora stata inizializzata.</p> | 
+| <p>JET_errRestoreInProgress</p> | <p>Non è possibile completare l'operazione perché è in corso un'operazione di ripristino nell'istanza associata alla sessione.</p> | 
+| <p>JET_errPermissionDenied</p> | <p>Il motore di database non dispone di autorizzazioni sufficienti per eliminare il record. Questo problema può verificarsi se il file di database è stato aperto con accesso in sola lettura.</p> | 
+| <p>JET_errRollbackError</p> | <p>Esiste un buffer di aggiornamento (vedere <a href="gg269339(v=exchg.10).md">JetPrepareUpdate),</a>ma non è possibile eseguire il rollback di tutte le modifiche apportate alle colonne di tipo JET_coltypLongText e/o colonne di tipo JET_coltypLongBinary.</p> | 
+| <p>JET_errSessionSharingViolation</p> | <p>Non è valido usare la stessa sessione da più thread contemporaneamente. Questo errore verrà restituito solo da Windows XP e versioni successive.</p> | 
+| <p>JET_errTermInProgress</p> | <p>Non è possibile completare l'operazione perché è in corso l'arresto dell'istanza associata alla sessione.</p> | 
+| <p>JET_errTransReadOnly</p> | <p>La transazione è di sola lettura e non supporta le eliminazioni.</p> | 
+| <p>JET_errVersionStoreOutOfMemory</p> | <p>L'operazione non è riuscita perché la memoria disponibile non è sufficiente per mantenere le informazioni transazionali sull'aggiornamento.</p> | 
+| <p>JET_errWriteConflict</p> | <p>Un'altra sessione ha bloccato in precedenza il record per l'aggiornamento. L'aggiornamento tentato da questa sessione avrà esito negativo.</p> | 
+
+
+
+In caso di esito positivo, la valuta viene lasciata poco prima del record successivo. Se il record eliminato è l'ultimo nella tabella, la valuta viene lasciata alla fine della tabella, ovvero dopo il nuovo ultimo record. Se il record eliminato è l'unico record nella tabella, la valuta viene impostata sull'inizio.
 
 Gli indici appropriati vengono aggiornati automaticamente.
 
-Se un aggiornamento viene preparato (usando [JetPrepareUpdate](./jetprepareupdate-function.md)), verrà annullato. Il buffer di aggiornamento verrà reimpostato.
+Se viene preparato un aggiornamento [(tramite JetPrepareUpdate),](./jetprepareupdate-function.md)verrà annullato. Il buffer di aggiornamento verrà reimpostato.
 
-In caso di errore, la valuta rimane invariata. Se un aggiornamento viene preparato (vedere [JetPrepareUpdate](./jetprepareupdate-function.md)), il buffer di aggiornamento potrebbe essere reimpostato.
+In caso di errore, la valuta rimane invariata. Se viene preparato un aggiornamento (vedere [JetPrepareUpdate),](./jetprepareupdate-function.md)è possibile reimpostare il buffer di aggiornamento.
 
 #### <a name="remarks"></a>Commenti
 
-Non tutte le tabelle supportano l'eliminazione di righe. Una tabella temporanea in genere non supporta l'eliminazione di righe. L'eliminazione di record può essere abilitata nelle tabelle temporanee per diversi motivi, alcune delle quali sono:
+Non tutte le tabelle supportano l'eliminazione di righe. Una tabella temporanea in genere non supporta l'eliminazione di righe. L'eliminazione di record può essere abilitata nelle tabelle temporanee per molti motivi, alcuni dei quali sono:
 
-  - JET_bitTTUpdatable specificato durante la creazione.
+  - JET_bitTTUpdatable è stato specificato durante la creazione.
 
-  - Le tabelle temporanee di grandi dimensioni possono supportare l'eliminazione se sono state create con JET_bitTTScrollable o JET_bitTTIndexed. La soglia in corrispondenza della quale una tabella temporanea diventa "large" è attualmente 64 kilobyte, ma potrebbe essere modificata nelle versioni future.
+  - Le tabelle temporanee di grandi dimensioni possono supportare l'eliminazione se sono state create con JET_bitTTScrollable o JET_bitTTIndexed. La soglia alla quale una tabella temporanea diventa "grande" è attualmente di 64 kilobyte, ma potrebbe essere modificata nelle versioni future.
 
-Windows XP e versioni successive. Le funzioni di callback possono essere richiamate da **JetDelete**, inclusi JET_cbtypBeforeDelete e JET_cbtypAfterDelete.
+Windows XP e versioni successive. Le funzioni di callback possono essere richiamate **da JetDelete,** JET_cbtypBeforeDelete e JET_cbtypAfterDelete.
 
-È importante comprendere l'effetto dell'esecuzione di un numero elevato di operazioni di aggiornamento all'interno di una singola transazione. Ogni aggiornamento del database deve essere rilevato dal motore di database nell'archivio delle versioni. L'archivio versione include un record live di tutte le diverse versioni di ogni voce di record o di indice nel database che possono essere visualizzate da tutte le transazioni attive. Queste versioni vengono utilizzate per supportare il controllo della concorrenza multiversione utilizzato dal motore di database per supportare le transazioni mediante l'isolamento dello snapshot. Una volta che il motore di database ha esaurito le risorse usate per archiviare queste versioni, non può più accettare ulteriori modifiche fino a quando alcune transazioni non sono state terminate per consentire il ripristino di queste risorse. Quando il motore è in questo stato, tutti gli aggiornamenti avranno esito negativo con JET_errVersionStoreOutOfMemory. Le risorse disponibili per il motore di database per archiviare queste versioni possono essere controllate utilizzando [JetSetSystemParameter](./jetsetsystemparameter-function.md) con *JET_paramMaxVerPages* e *JET_paramGlobalMinVerPages*.
+È importante comprendere l'impatto dell'esecuzione di un numero elevato di operazioni di aggiornamento all'interno di una singola transazione. Ogni aggiornamento del database deve essere monitorato dal motore di database nell'archivio delle versioni. L'archivio versioni contiene un record attivo di tutte le diverse versioni di ogni record o voce di indice nel database che può essere visualizzato da tutte le transazioni attive. Queste versioni vengono usate per supportare il controllo della concorrenza con più versioni in uso dal motore di database per supportare le transazioni che usano l'isolamento dello snapshot. Dopo che il motore di database ha esaurito le risorse usate per archiviare queste versioni, non può più accettare altre modifiche fino a quando alcune transazioni non sono state conclusa per consentire il recupero di queste risorse. Quando il motore è in questo stato, tutti gli aggiornamenti avranno esito negativo JET_errVersionStoreOutOfMemory. Le risorse disponibili per il motore di database per archiviare queste versioni possono essere controllate tramite [JetSetSystemParameter](./jetsetsystemparameter-function.md) con JET_paramMaxVerPages *e* *JET_paramGlobalMinVerPages*.
 
 #### <a name="requirements"></a>Requisiti
 
-<table>
-<colgroup>
-<col style="width: 50%" />
-<col style="width: 50%" />
-</colgroup>
-<tbody>
-<tr class="odd">
-<td><p><strong>Client</strong></p></td>
-<td><p>Richiede Windows Vista, Windows XP o Windows 2000 Professional.</p></td>
-</tr>
-<tr class="even">
-<td><p><strong>Server</strong></p></td>
-<td><p>Richiede Windows Server 2008, Windows Server 2003 o Windows 2000 Server.</p></td>
-</tr>
-<tr class="odd">
-<td><p><strong>Intestazione</strong></p></td>
-<td><p>Dichiarata in esent. h.</p></td>
-</tr>
-<tr class="even">
-<td><p><strong>Libreria</strong></p></td>
-<td><p>Usare ESENT. lib.</p></td>
-</tr>
-<tr class="odd">
-<td><p><strong>DLL</strong></p></td>
-<td><p>Richiede ESENT.dll.</p></td>
-</tr>
-</tbody>
-</table>
+
+| Requisito | Valore |
+|------------|----------|
+| <p><strong>Client</strong></p> | <p>Richiede Windows Vista, Windows XP o Windows 2000 Professional.</p> | 
+| <p><strong>Server</strong></p> | <p>Richiede Windows Server 2008, Windows Server 2003 o Windows 2000 Server.</p> | 
+| <p><strong>Intestazione</strong></p> | <p>Dichiarato in Esent.h.</p> | 
+| <p><strong>Libreria</strong></p> | <p>Usare ESENT.lib.</p> | 
+| <p><strong>DLL</strong></p> | <p>Richiede ESENT.dll.</p> | 
+
 
 
 #### <a name="see-also"></a>Vedere anche

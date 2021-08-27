@@ -1,25 +1,25 @@
 ---
-description: 'Altre informazioni su: operatori JET_SESID'
-title: Operatori di JET_SESID
+description: 'Altre informazioni su: Operatori JET_SESID'
+title: JET_SESID seguenti
 TOCTitle: JET_SESID operators
 ms:assetid: fc9db8fb-5468-7f64-a8ce-662ba7687623
 ms:mtpsurl: https://msdn.microsoft.com/library/Hh566716(v=EXCHG.10)
 ms:contentKeyID: 39516806
 ms.date: 07/30/2014
 ms.topic: article
-ms.openlocfilehash: 1f3e1e686f394287fc68c5a8b851e6bdf7484abd
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 733365a6d99249ff19a8319613eacecd9b3a22ab03f3d404d293dbe250e42255
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104225970"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120093351"
 ---
-# <a name="jet_sesid-operators"></a>Operatori di JET_SESID
+# <a name="jet_sesid-operators"></a>JET_SESID seguenti
 
-Includi membri protetti  
+Includere membri protetti  
 Includi membri ereditati  
 
-Il tipo di [JET_SESID](./jet-sesid-structure.md) espone i membri seguenti.
+Il [JET_SESID](./jet-sesid-structure.md) espone i membri seguenti.
 
 ## <a name="operators"></a>Operatori
 
@@ -52,6 +52,6 @@ Inizio
 
 #### <a name="reference"></a>Riferimento
 
-[Struttura JET_SESID](./jet-sesid-structure.md)
+[JET_SESID struttura](./jet-sesid-structure.md)
 
-[Spazio dei nomi Microsoft. ISAM. esent. Interop](./microsoft.isam.esent.interop-namespace.md)
+[Spazio dei nomi Microsoft.Isam.Esent.Interop](./microsoft.isam.esent.interop-namespace.md)

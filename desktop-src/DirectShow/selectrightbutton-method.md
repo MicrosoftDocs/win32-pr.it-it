@@ -1,15 +1,15 @@
 ---
 description: Il metodo SelectRightButton seleziona il pulsante direzionale destro dal menu visualizzato.
 ms.assetid: 03e6034a-8db1-4724-9923-f19c4e835db7
-title: Metodo SelectRightButton (Segment. h)
+title: Metodo SelectRightButton (Segment.h)
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 96adb93cb81e59fd43ec4aa4438ae17085ee1b51
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: 7e04eb19addba14b285955daa6752fda497f657435cf7655e3071de3ee345edc
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "106325907"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120078891"
 ---
 # <a name="selectrightbutton-method"></a>Metodo SelectRightButton
 
@@ -18,7 +18,7 @@ ms.locfileid: "106325907"
 
  
 
-Il `SelectRightButton` metodo consente di selezionare il pulsante direzionale corretto dal menu visualizzato.
+Il `SelectRightButton` metodo seleziona il pulsante direzionale destro dal menu visualizzato.
 
 ``` syntax
 MSWebDVD.SelectRightButton()
@@ -34,7 +34,7 @@ Nessun valore restituito.
 
 | Requisito | Valore |
 |-------------------|--------------------------------------------------------------------------------------|
-| Intestazione<br/> | <dl> <dt>Segmento. h</dt> </dl> |
+| Intestazione<br/> | <dl> <dt>Segment.h</dt> </dl> |
 
 
 

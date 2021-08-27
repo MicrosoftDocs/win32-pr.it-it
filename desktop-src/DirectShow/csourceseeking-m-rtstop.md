@@ -1,7 +1,7 @@
 ---
-description: Ora di arresto. Per impostazione predefinita, il valore è impostato su un numero molto elevato. La classe derivata può reimpostare il valore nel costruttore o quando il filtro viene inizializzato.
+description: Ora di arresto. Per impostazione predefinita, il valore è impostato su un numero molto grande. La classe derivata può reimpostare il valore nel costruttore o quando il filtro viene inizializzato.
 ms.assetid: 1fddcf84-fd9a-4dad-892c-1b0abbb0ca55
-title: 'Membro CSourceSeeking:: m_rtStop (Ctlutil. h)'
+title: Membro CSourceSeeking::m_rtStop (Ctlutil.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -16,16 +16,16 @@ api_location:
 - Strmbase.dll
 - Strmbasd.lib
 - Strmbasd.dll
-ms.openlocfilehash: 28031f245ef877eca38129df2a86210f90093db4
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: a4408fddf42070012aa6e1eb3a0268e8e449b571828c0904524f3cc8d27df3bf
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "106330201"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120103001"
 ---
-# <a name="csourceseekingm_rtstop-member"></a>Membro rtStop di CSourceSeeking:: m \_
+# <a name="csourceseekingm_rtstop-member"></a>Membro CSourceSeeking::m \_ rtStop
 
-Ora di arresto. Per impostazione predefinita, il valore è impostato su un numero molto elevato. La classe derivata può reimpostare il valore nel costruttore o quando il filtro viene inizializzato.
+Ora di arresto. Per impostazione predefinita, il valore è impostato su un numero molto grande. La classe derivata può reimpostare il valore nel costruttore o quando il filtro viene inizializzato.
 
 ## <a name="syntax"></a>Sintassi
 
@@ -38,7 +38,7 @@ CRefTime m_rtStop;
 
 ## <a name="remarks"></a>Osservazioni
 
-Prima di accedere a questa variabile, mantenere la sezione **\_ pLock critico m** .
+Mantenere la **sezione \_ critica m pLock** prima di accedere a questa variabile.
 
 ## <a name="requirements"></a>Requisiti
 
@@ -46,8 +46,8 @@ Prima di accedere a questa variabile, mantenere la sezione **\_ pLock critico m*
 
 | Requisito | Valore |
 |--------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Intestazione<br/>  | <dl> <dt>Ctlutil. h (include Streams. h)</dt> </dl>                                                                                   |
-| Libreria<br/> | <dl> <dt>Strmbase. lib (compilazioni finali); </dt> <dt>Strmbasd. lib (build di debug)</dt> </dl> |
+| Intestazione<br/>  | <dl> <dt>Ctlutil.h (include Flussi.h)</dt> </dl>                                                                                   |
+| Libreria<br/> | <dl> <dt>Strmbase.lib (build di vendita al dettaglio); </dt> <dt>Strmbasd.lib (build di debug)</dt> </dl> |
 
 
 

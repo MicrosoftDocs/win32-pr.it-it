@@ -1,8 +1,8 @@
 ---
-description: Rinomina il file di voce di directory specificato nel percorso dell'oggetto.
+description: Rinomina il file di voci di directory specificato nel percorso dell'oggetto.
 ms.assetid: 8bfe1b69-5f93-4408-a742-f03a9cb16bfe
 ms.tgt_platform: multiple
-title: Rinominare il metodo della classe Win32_Directory
+title: Metodo Rename della classe Win32_Directory
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -14,18 +14,18 @@ api_type:
 - COM
 api_location:
 - CIMWin32.dll
-ms.openlocfilehash: 874151e1ff8c9feca375df3eb441665863d1070d
-ms.sourcegitcommit: c7add10d695482e1ceb72d62b8a4ebd84ea050f7
+ms.openlocfilehash: 86b6bd35b14ee2a342dee27615c1ff21d9274a5f3020c4f804df5065f430813f
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "106304437"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120077441"
 ---
-# <a name="rename-method-of-the-win32_directory-class"></a>Rinominare il metodo della \_ classe di directory Win32
+# <a name="rename-method-of-the-win32_directory-class"></a>Metodo Rename della classe Directory Win32 \_
 
-Il metodo **Rinomina** [classe WMI](/windows/desktop/WmiSdk/retrieving-a-class) Rinomina il file di voce di directory specificato nel percorso dell'oggetto. Una ridenominazione non è supportata se la destinazione si trova in un'altra unità o se è necessario sovrascrivere un file logico esistente.
+Il **metodo rinomina** la classe [WMI](/windows/desktop/WmiSdk/retrieving-a-class) rinomina il file di voci di directory specificato nel percorso dell'oggetto. La ridenominazione non è supportata se la destinazione si trova in un'altra unità o se è necessario sovrascrivere un file logico esistente.
 
-In questo argomento viene utilizzata la sintassi Managed Object Format (MOF). Per ulteriori informazioni sull'utilizzo di questo metodo, vedere [chiamata a un metodo](/windows/desktop/WmiSdk/calling-a-method).
+Questo argomento usa Managed Object Format (MOF). Per altre informazioni sull'uso di questo metodo, [vedere Chiamata di un metodo](/windows/desktop/WmiSdk/calling-a-method).
 
 ## <a name="syntax"></a>Sintassi
 
@@ -45,13 +45,13 @@ uint32 Rename(
 *FileName* 
 </dt> <dd>
 
-Nome completo del nuovo file (o directory). Esempio: c: \\ temp \\newfile.txt.
+Nuovo nome completo del file (o directory). Esempio: c: \\ temp \\newfile.txt.
 
 </dd> </dl>
 
 ## <a name="return-value"></a>Valore restituito
 
-Restituisce un valore pari a 0 (zero) se il file è stato rinominato correttamente e qualsiasi altro numero per indicare un errore.
+Restituisce il valore 0 (zero) se il file è stato rinominato correttamente e qualsiasi altro numero per indicare un errore.
 
 <dl> <dt>
 
@@ -128,7 +128,7 @@ Si è verificata una violazione di condivisione.
 **16**
 </dt> <dd>
 
-Il file di avvio specificato non è valido.
+Il file iniziale specificato non è valido.
 
 </dd> <dt>
 
@@ -148,19 +148,19 @@ Un parametro specificato non è valido.
 
 ## <a name="remarks"></a>Commenti
 
-Per rinominare una cartella, eseguire prima l'associazione alla cartella in questione, quindi chiamare il metodo Rename. Come unico parametro del metodo, passare il nuovo nome per la cartella come nome di percorso completo. Se, ad esempio, la cartella del backup dei log di C: \\ Scripts deve \\ \\ essere rinominata c: \\ Scripts \\ Archive, è necessario passare c: \\ Scripts \\ Archive come nome completo della cartella. Passando solo il nome della cartella-Archive-viene restituito un errore di percorso non valido.
+Per rinominare una cartella, eseguire prima l'associazione alla cartella in questione e quindi chiamare il metodo Rename. Come unico parametro per il metodo , passare il nuovo nome per la cartella come nome di percorso completo. Ad esempio, se la cartella in C: Scripts Logs Backup deve essere rinominata C: Scripts Archive, è necessario passare C: Scripts Archive come nome completo \\ \\ della \\ \\ \\ \\ \\ cartella. Se si passa solo il nome della cartella Archive, viene generato un errore di percorso non valido.
 
-La \_ classe di directory Win32 non fornisce un metodo in un unico passaggio per lo trasferimento di cartelle. Il trasferimento di una cartella prevede in genere due passaggi:
+La classe Directory Win32 non fornisce un metodo in un unico passaggio per \_ lo spostamento di cartelle. Al contrario, lo spostamento di una cartella comporta in genere due passaggi:
 
-<dl> 1. Copia della cartella nella nuova posizione  
+<dl> 1. Copia della cartella nel nuovo percorso  
 2. Eliminazione della cartella originale  
 </dl>
 
-L'unica eccezione a questo processo in due passaggi prevede lo spostamento di una cartella in una nuova posizione nella stessa unità. Si supponga, ad esempio, di voler spostare l' \\ Archivio c: Temp in c: \\ script per \\ i file temporanei \\ . Fino a quando la posizione corrente e la nuova posizione si trovano nella stessa unità, è possibile spostare la cartella semplicemente chiamando il metodo Rename e passando la nuova posizione come parametro del metodo. Questo approccio consente di spostare la cartella in un unico passaggio. Tuttavia, lo script ha esito negativo se l'unità corrente e la nuova unità sono diverse. Il tentativo di rinominare C: \\ Temp in D: \\ Temp ha esito negativo con un errore "unità non uguale".
+L'unica eccezione a questo processo in due passaggi prevede lo spostamento di una cartella in un nuovo percorso nella stessa unità. Si supponga, ad esempio, di voler spostare C: \\ Temp in C: \\ Scripts Temporary \\ Files \\ Archive. Se il percorso corrente e il nuovo percorso sono nella stessa unità, è possibile spostare la cartella semplicemente chiamando il metodo Rename e passando il nuovo percorso come parametro del metodo . Questo approccio consente di spostare la cartella in un unico passaggio. Tuttavia, lo script ha esito negativo se l'unità corrente e la nuova unità sono diverse. Un tentativo di rinominare C: Temp in D: Temp ha esito negativo e viene visualizzato l'errore \\ \\ "Drive not the same" (Unità non uguale).
 
 ## <a name="examples"></a>Esempio
 
-Il codice seguente, dall'esempio [Move a folder using WMI](https://Gallery.TechNet.Microsoft.Com/f4f9643c-d7ed-4f54-b155-c6515396431f) VBScript in TechNet Gallery, usa il metodo Rename per spostare la cartella c: \\ Scripts in c: \\ Admins \\ Documents \\ Archive \\ VBScript.
+Il codice seguente, dall'esempio di spostamento di una cartella tramite [WMI](https://Gallery.TechNet.Microsoft.Com/f4f9643c-d7ed-4f54-b155-c6515396431f) VBScript nella raccolta TechNet, usa il metodo Rename per spostare la cartella C: \\ Scripts in C: \\ Admins Documents Archive \\ \\ \\ VBScript.
 
 
 ```VB
@@ -187,7 +187,7 @@ Next
 | Client minimo supportato<br/> | Windows Vista<br/>                                                                |
 | Server minimo supportato<br/> | Windows Server 2008<br/>                                                          |
 | Spazio dei nomi<br/>                | \\CIMV2 radice<br/>                                                                  |
-| MOF<br/>                      | <dl> <dt>CIMWin32. mof</dt> </dl> |
+| MOF<br/>                      | <dl> <dt>CIMWin32.mof</dt> </dl> |
 | DLL<br/>                      | <dl> <dt>CIMWin32.dll</dt> </dl> |
 
 
@@ -199,7 +199,7 @@ Next
 [Classi del sistema operativo](/previous-versions//aa392727(v=vs.85))
 </dt> <dt>
 
-[**\_Directory Win32**](win32-directory.md)
+[**Win32 \_ Directory**](win32-directory.md)
 </dt> </dl>
 
  

@@ -15,12 +15,12 @@ api_type:
 - COM
 api_location: ''
 ROBOTS: INDEX,FOLLOW
-ms.openlocfilehash: 24e4bc43928d6b7ea25294a0163b3b35b1fa04391196e86c54554a785ed2429d
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: f7427a28752384f6c30e050458e5844dcaedd1a7
+ms.sourcegitcommit: 4665ebce0c106bdb52eef36e544280b496b6f50b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119616888"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "122989144"
 ---
 # <a name="jet_pfnrealloc-callback-function"></a>JET_PFNREALLOC di callback
 
@@ -29,7 +29,7 @@ _**Si applica a:** Windows | Windows Server_
 
 ## <a name="jet_pfnrealloc-callback-function"></a>JET_PFNREALLOC di callback
 
-La JET_PFNREALLOC è un callback compatibile di [rialloca](/cpp/c-runtime-library/reference/realloc?view=vs-2019) usato da [JetEnumerateColumns](./jetenumeratecolumns-function.md) per allocare memoria per i buffer di output.
+La JET_PFNREALLOC è un callback compatibile con [riallocare](/cpp/c-runtime-library/reference/realloc?view=vs-2019) usato [da JetEnumerateColumns](./jetenumeratecolumns-function.md) per allocare memoria per i buffer di output.
 
 ```cpp
     void * JET_API JET_PFNREALLOC(
@@ -57,52 +57,23 @@ Nuova dimensione in byte del blocco di memoria. Se questo parametro è 0 (zero) 
 
 Il sistema può generare codici di esito positivo o negativo in seguito a una chiamata a questa funzione. Per informazioni su come restituire questi codici come HRESULT, vedere Errori del motore Archiviazione [estendibile](./extensible-storage-engine-errors.md).
 
-<table>
-<colgroup>
-<col style="width: 50%" />
-<col style="width: 50%" />
-</colgroup>
-<thead>
-<tr class="header">
-<th><p>Codice restituito</p></th>
-<th><p>Descrizione</p></th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td><p>Operazione completata</p></td>
-<td><p>Se è stato specificato un blocco di memoria allocato in precedenza ed è stata specificata una nuova dimensione pari a zero, tale blocco viene liberato e viene restituito NULL. Se è stato specificato un blocco di memoria allocato in precedenza ed è stata specificata una nuova dimensione diverso da zero, viene restituito il blocco di memoria riallocato. Se non è stato specificato alcun blocco di memoria, viene restituito un blocco di memoria appena allocato delle dimensioni specificate.</p></td>
-</tr>
-<tr class="even">
-<td><p>Operazioni non riuscite</p></td>
-<td><p>Verrà restituito NULL. Se è stato fornito un blocco di memoria allocato in precedenza, tale blocco rimarrà allocato.</p></td>
-</tr>
-</tbody>
-</table>
+
+| <p>Codice restituito</p> | <p>Descrizione</p> | 
+|--------------------|--------------------|
+| <p>Operazione completata</p> | <p>Se è stato specificato un blocco di memoria allocato in precedenza ed è stata specificata una nuova dimensione pari a zero, tale blocco viene liberato e verrà restituito NULL. Se è stato specificato un blocco di memoria allocato in precedenza ed è stata specificata una nuova dimensione diverso da zero, viene restituito il blocco di memoria riallocato. Se non è stato specificato alcun blocco di memoria, viene restituito un blocco di memoria appena allocato delle dimensioni specificate.</p> | 
+| <p>Operazioni non riuscite</p> | <p>Verrà restituito NULL. Se è stato fornito un blocco di memoria allocato in precedenza, tale blocco rimarrà allocato.</p> | 
+
 
 
 ### <a name="requirements"></a>Requisiti
 
-<table>
-<colgroup>
-<col style="width: 50%" />
-<col style="width: 50%" />
-</colgroup>
-<tbody>
-<tr class="odd">
-<td><p><strong>Client</strong></p></td>
-<td><p>Richiede Windows Vista, Windows XP o Windows 2000 Professional.</p></td>
-</tr>
-<tr class="even">
-<td><p><strong>Server</strong></p></td>
-<td><p>Richiede Windows Server 2008, Windows Server 2003 o Windows 2000 Server.</p></td>
-</tr>
-<tr class="odd">
-<td><p><strong>Intestazione</strong></p></td>
-<td><p>Dichiarato in Esent.h.</p></td>
-</tr>
-</tbody>
-</table>
+
+| Requisito | Valore |
+|------------|----------|
+| <p><strong>Client</strong></p> | <p>Richiede Windows Vista, Windows XP o Windows 2000 Professional.</p> | 
+| <p><strong>Server</strong></p> | <p>Richiede Windows Server 2008, Windows Server 2003 o Windows 2000 Server.</p> | 
+| <p><strong>Intestazione</strong></p> | <p>Dichiarato in Esent.h.</p> | 
+
 
 
 ### <a name="see-also"></a>Vedere anche

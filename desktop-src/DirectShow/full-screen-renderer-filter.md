@@ -4,18 +4,18 @@ ms.assetid: 59332096-bdfe-4208-b99a-1f434652f287
 title: Filtro renderer a schermo intero
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 3d331ff6f31d1c985c7e255b23381a289931da60
-ms.sourcegitcommit: b32433cc0394159c7263809ae67615ab5792d40d
+ms.openlocfilehash: 5013bee81d92c1ade3da4574f576f519b94c025c60c563ab70a35d0956e82865
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/30/2021
-ms.locfileid: "113120476"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120102781"
 ---
 # <a name="full-screen-renderer-filter"></a>Filtro renderer a schermo intero
 
 Il filtro Renderer a schermo intero fornisce il rendering video a schermo intero su hardware meno recente. Le schede video più nuove possono estendere il video in modo sufficientemente efficiente da non renderer a schermo intero. Pertanto, l'uso di questo filtro è ora deprecato.
 
-Non aggiungere manualmente questo filtro al grafico dei filtri. Se un'applicazione chiama [**IVideoWindow::p ut \_ FullScreenMode,**](/windows/desktop/api/Control/nf-control-ivideowindow-put_fullscreenmode)Filter Graph Manager seleziona automaticamente il renderer video appropriato per la modalità schermo intero. La selezione è trasparente per l'applicazione. Con le schede video correnti, è improbabile che Filter Graph Manager selezione il renderer a schermo intero.
+Non aggiungere manualmente questo filtro al grafico dei filtri. Se un'applicazione chiama [**IVideoWindow::p ut \_ FullScreenMode,**](/windows/desktop/api/Control/nf-control-ivideowindow-put_fullscreenmode)Filter Graph Manager seleziona automaticamente il renderer video appropriato per la modalità schermo intero. La selezione è trasparente per l'applicazione. Con le schede video correnti, è improbabile che filter Graph Manager selezionerà il renderer a schermo intero.
 
 
 
@@ -67,7 +67,7 @@ Il renderer a schermo intero supporta un set statico di modalità di visualizzaz
 
 Tutte le modalità sono RGB. Questo elenco è tuttavia soggetto a modifiche. Usare il [**metodo IFullScreenVideoEx::GetModeInfo**](/previous-versions/windows/desktop/api/Amvideo/nf-amvideo-ifullscreenvideoex-getmodeinfo) per ottenere informazioni sulle modalità. Il renderer a schermo intero sceglie sempre la modalità di risoluzione più bassa disponibile, limitata da una proprietà denominata fattore di *ritaglio*, che determina la quantità di video che il renderer a schermo intero può ritagliare. Per altre informazioni, vedere [**IFullScreenVideoEx::GetClipFactor.**](/previous-versions/windows/desktop/api/Amvideo/nf-amvideo-ifullscreenvideoex-getclipfactor)
 
-Quando l'applicazione viene eseguita o sospende il grafico dei filtri, il renderer a schermo intero passa alla modalità di visualizzazione scelta. Quando il grafico si arresta, il renderer a schermo intero ripristina la modalità di visualizzazione originale.
+Quando l'applicazione esegue o sospende il grafico dei filtri, il renderer a schermo intero passa alla modalità di visualizzazione scelta. Quando il grafico si arresta, il renderer a schermo intero ripristina la modalità di visualizzazione originale.
 
 Il renderer a schermo intero può funzionare solo come finestra attiva in primo piano. Se l'utente passa a un'altra applicazione, il renderer a schermo intero nasconde il video riducendo al minimo o nascondendo la finestra video.
 
@@ -75,7 +75,7 @@ Il renderer a schermo intero può funzionare solo come finestra attiva in primo 
 
 <dl> <dt>
 
-[DirectShow Filters](directshow-filters.md)
+[DirectShow Filtri](directshow-filters.md)
 </dt> </dl>
 
  

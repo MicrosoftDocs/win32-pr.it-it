@@ -1,24 +1,24 @@
 ---
 description: Costruttori esposti da XMINT2.
 ms.assetid: 9605c593-6fd1-46f2-9594-7a100c1325ab
-title: Costruttori XMINT2 (DirectXMath. h)
+title: Costruttori XMINT2 (Directxmath.h)
 ms.date: 07/02/2019
 ms.topic: reference
-ms.openlocfilehash: 9cdfdc6d1a91fc122ebde49c5faf91716e94a472
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: 3bae51f51692f825a0f6f9b693b9d5db258e7383
+ms.sourcegitcommit: 9b5faa61c38b2d0c432b7f2dbee8c127b0e28a7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "106326997"
+ms.lasthandoff: 08/19/2021
+ms.locfileid: "122465894"
 ---
 # <a name="xmint2-constructors"></a>Costruttori XMINT2
 
 Costruttori esposti da `XMINT2` .
 
-Costruisce istanze della struttura [**XMINT2**](/windows/win32/api/directxmath/ns-directxmath-xmint2) .
+Costruisce istanze della [**struttura XMINT2.**](/windows/win32/api/directxmath/ns-directxmath-xmint2)
 
 > [!Note]  
-> I costruttori elencati di seguito sono disponibili solo in C++.
+> I costruttori elencati qui sono disponibili solo in C++.
 
  
 
@@ -26,47 +26,13 @@ Costruisce istanze della struttura [**XMINT2**](/windows/win32/api/directxmath/n
 
 
 
-<table>
-<colgroup>
-<col style="width: 50%" />
-<col style="width: 50%" />
-</colgroup>
-<thead>
-<tr class="header">
-<th style="text-align: left;">Costruttore</th>
-<th style="text-align: left;">Descrizione</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td style="text-align: left;">[<strong>XMINT2 (const int32_t *)</strong>] (/Windows/Win32/API/DirectXMath/NF-DirectXMath-xmint2-xmint2 (constint32_t))</td>
-<td style="text-align: left;">Inizializza una nuova istanza di <code>XMINT2</code> da un argomento di matrice a due elementi <code>int32_t2</code> .<br/> Questo costruttore inizializza una nuova istanza di [<strong>XMINT2</strong>] (/Windows/Win32/API/DirectXMath/NS-DirectXMath-xmint2) da un argomento di matrice a due elementi <code>int32_t</code> .<br/>
-<blockquote>
-[!Note]<br />
-Questo costruttore è disponibile solo in C++.
-</blockquote>
-<br/></td>
-</tr>
-<tr class="even">
-<td style="text-align: left;">[<strong>XMINT2 (int32_t, int32_t)</strong>] (/Windows/Win32/API/DirectXMath/NF-DirectXMath-xmint2-xmint2 (int32_t_int32_t))</td>
-<td style="text-align: left;">Inizializza una nuova istanza di <code>XMINT2</code> da due <code>int32_t</code> argomenti. <br/> Questo costruttore inizializza una nuova istanza di [<strong>XMINT2</strong>] (/Windows/Win32/API/DirectXMath/NS-DirectXMath-xmint2) da due <code>int32_t</code> argomenti. <br/>
-<blockquote>
-[!Note]<br />
-Questo costruttore è disponibile solo in C++.
-</blockquote>
-<br/></td>
-</tr>
-<tr class="odd">
-<td style="text-align: left;">[<strong>XMINT2 ()</strong>] (/Windows/Win32/API/DirectXMath/NF-DirectXMath-xmint2-xmint2 (constxmint2_))</td>
-<td style="text-align: left;">Costruttore predefinito per <code>XMINT2</code> . <br/> Costruttore predefinito per [<strong>XMINT2</strong>] (/Windows/Win32/API/DirectXMath/NS-DirectXMath-xmint2). <br/>
-<blockquote>
-[!Note]<br />
-Questo costruttore è disponibile solo in C++.
-</blockquote>
-<br/></td>
-</tr>
-</tbody>
-</table>
+
+| Costruttore | Descrizione | 
+|-------------|-------------|
+| [<strong>XMINT2 (const int32_t*)</strong>](/windows/win32/api/directxmath/nf-directxmath-xmint2-xmint2(constint32_t)) | Inizializza una nuova istanza di da <code>XMINT2</code> un argomento della matrice di due <code>int32_t2</code> elementi.<br /> Questo costruttore inizializza una nuova istanza di [<strong>XMINT2</strong>](/windows/win32/api/directxmath/ns-directxmath-xmint2) da un da un argomento della <code>int32_t</code> matrice di due elementi.<br /><blockquote>[!Note]<br />Questo costruttore è disponibile solo in C++.</blockquote><br /> | 
+| [<strong>XMINT2 (int32_t,int32_t)</strong>](/windows/win32/api/directxmath/nf-directxmath-xmint2-xmint2(int32_t_int32_t)) | Inizializza una nuova istanza di <code>XMINT2</code> da due <code>int32_t</code> argomenti. <br /> Questo costruttore inizializza una nuova istanza di [<strong>XMINT2</strong>](/windows/win32/api/directxmath/ns-directxmath-xmint2) da due <code>int32_t</code> argomenti. <br /><blockquote>[!Note]<br />Questo costruttore è disponibile solo in C++.</blockquote><br /> | 
+| [<strong>XMINT2 ()</strong>](/windows/win32/api/directxmath/nf-directxmath-xmint2-xmint2(constxmint2_)) | Costruttore predefinito per <code>XMINT2</code> . <br /> Costruttore predefinito per [<strong>XMINT2.</strong>](/windows/win32/api/directxmath/ns-directxmath-xmint2) <br /><blockquote>[!Note]<br />Questo costruttore è disponibile solo in C++.</blockquote><br /> | 
+
 
 
 
@@ -74,9 +40,9 @@ Questo costruttore è disponibile solo in C++.
 
 
 
-| Requisito | Valore |
+| Requisito | valore |
 |-------------------|------------------------------------------------------------------------------------------|
-| Intestazione<br/> | <dl> <dt>DirectXMath. h</dt> </dl> |
+| Intestazione<br/> | <dl> <dt>Directxmath.h</dt> </dl> |
 
 
 

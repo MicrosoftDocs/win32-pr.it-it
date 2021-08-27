@@ -1,48 +1,48 @@
 ---
 title: Esempio di trigger di avvio (C++)
-description: Questo argomento contiene un esempio di codice C++ che Mostra come creare un'attività pianificata per l'esecuzione Notepad.exe all'avvio del sistema.
+description: Questo argomento contiene un esempio di codice C++ che illustra come creare un'attività pianificata per l'esecuzione Notepad.exe all'avvio del sistema.
 ms.assetid: d4dbbfe5-bde9-4a1c-8e11-24cd1e14646c
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: bdbd5a5a73d100394b90e91f8b9c30c1bd495ac0
-ms.sourcegitcommit: 2d531328b6ed82d4ad971a45a5131b430c5866f7
+ms.openlocfilehash: 1b1f556b2b0754d913e44c2874a7fa01f9aea7ea50f5ccc0aa15fa769dfdca95
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "103856450"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120100502"
 ---
 # <a name="boot-trigger-example-c"></a>Esempio di trigger di avvio (C++)
 
-Questo argomento contiene un esempio di codice C++ che Mostra come creare un'attività pianificata per l'esecuzione Notepad.exe all'avvio del sistema. L'attività contiene un trigger di avvio che specifica un limite iniziale e un tempo di ritardo per l'avvio dell'attività dopo l'avvio del sistema. L'attività contiene anche un'azione che specifica l'esecuzione dell'attività Notepad.exe. L'attività viene registrata utilizzando l'account del servizio locale come contesto di sicurezza per l'esecuzione dell'attività.
+Questo argomento contiene un esempio di codice C++ che illustra come creare un'attività pianificata per l'esecuzione Notepad.exe all'avvio del sistema. L'attività contiene un trigger di avvio che specifica un limite di avvio e il tempo di ritardo per l'avvio dell'attività dopo l'avvio del sistema. L'attività contiene anche un'azione che specifica l'esecuzione dell'Notepad.exe. L'attività viene registrata usando l'account servizio locale come contesto di sicurezza per eseguire l'attività.
 
 Nella procedura seguente viene descritto come pianificare un'attività per avviare un eseguibile all'avvio del sistema.
 
-**Per pianificare l'avvio del blocco note al momento dell'avvio del sistema**
+**Per pianificare Blocco note l'avvio del sistema**
 
-1.  Inizializzare COM e impostare la sicurezza generale COM.
-2.  Creare l'oggetto [**ITaskService**](/windows/desktop/api/taskschd/nn-taskschd-itaskservice) .
+1.  Inizializzare COM e impostare la sicurezza COM generale.
+2.  Creare [**l'oggetto ITaskService.**](/windows/desktop/api/taskschd/nn-taskschd-itaskservice)
 
     Questo oggetto consente di creare attività in una cartella specificata.
 
-3.  Ottenere una cartella attività per la creazione di un'attività in.
+3.  Ottiene una cartella di attività in cui creare un'attività.
 
-    Usare il metodo [**ITaskService:: GetFolder**](/windows/desktop/api/taskschd/nf-taskschd-itaskservice-getfolder) per ottenere la cartella e il metodo [**ITaskService:: newTask**](/windows/desktop/api/taskschd/nf-taskschd-itaskservice-newtask) per creare l'oggetto [**ITaskDefinition**](/windows/desktop/api/taskschd/nn-taskschd-itaskdefinition) .
+    Usare il [**metodo ITaskService::GetFolder**](/windows/desktop/api/taskschd/nf-taskschd-itaskservice-getfolder) per ottenere la cartella e il metodo [**ITaskService::NewTask**](/windows/desktop/api/taskschd/nf-taskschd-itaskservice-newtask) per creare [**l'oggetto ITaskDefinition.**](/windows/desktop/api/taskschd/nn-taskschd-itaskdefinition)
 
-4.  Definire le informazioni sull'attività usando l'oggetto [**ITaskDefinition**](/windows/desktop/api/taskschd/nn-taskschd-itaskdefinition) , ad esempio le informazioni di registrazione per l'attività.
+4.  Definire le informazioni sull'attività usando [**l'oggetto ITaskDefinition,**](/windows/desktop/api/taskschd/nn-taskschd-itaskdefinition) ad esempio le informazioni di registrazione per l'attività.
 
-    Utilizzare la [**Proprietà RegistrationInfo di ITaskDefinition**](/windows/desktop/api/taskschd/nf-taskschd-itaskdefinition-get_registrationinfo) e altre proprietà dell'interfaccia [**ITaskDefinition**](/windows/desktop/api/taskschd/nn-taskschd-itaskdefinition) per definire le informazioni sull'attività.
+    Usare la [**proprietà RegistrationInfo di ITaskDefinition e**](/windows/desktop/api/taskschd/nf-taskschd-itaskdefinition-get_registrationinfo) altre proprietà dell'interfaccia [**ITaskDefinition**](/windows/desktop/api/taskschd/nn-taskschd-itaskdefinition) per definire le informazioni sull'attività.
 
-5.  Creare un trigger di avvio usando la [**Proprietà Triggers di ITaskDefinition**](/windows/desktop/api/taskschd/nf-taskschd-itaskdefinition-get_triggers) per accedere al [**ITriggerCollection**](/windows/desktop/api/taskschd/nn-taskschd-itriggercollection) per l'attività.
+5.  Creare un trigger di avvio usando la [**proprietà Triggers di ITaskDefinition**](/windows/desktop/api/taskschd/nf-taskschd-itaskdefinition-get_triggers) per accedere a [**ITriggerCollection**](/windows/desktop/api/taskschd/nn-taskschd-itriggercollection) per l'attività.
 
-    Usare il metodo [**ITriggerCollection:: create**](/windows/desktop/api/taskschd/nf-taskschd-itriggercollection-create) per specificare che si vuole creare un trigger di avvio. È possibile impostare il limite di inizio e il ritardo per il trigger in modo che le azioni dell'attività vengano pianificate per l'esecuzione a un'ora specificata all'avvio del sistema.
+    Usare il [**metodo ITriggerCollection::Create**](/windows/desktop/api/taskschd/nf-taskschd-itriggercollection-create) per specificare che si vuole creare un trigger di avvio. È possibile impostare il limite di avvio e il ritardo per il trigger in modo che le azioni dell'attività verranno pianificate per l'esecuzione a un'ora specificata all'avvio del sistema.
 
-6.  Creare un'azione per l'attività da eseguire usando la [**Proprietà Actions di ITaskDefinition**](/windows/desktop/api/taskschd/nf-taskschd-itaskdefinition-get_actions) per accedere alla raccolta [**IActionCollection**](/windows/desktop/api/taskschd/nn-taskschd-iactioncollection) per l'attività.
+6.  Creare un'azione per l'attività da eseguire usando la proprietà [**Actions di ITaskDefinition**](/windows/desktop/api/taskschd/nf-taskschd-itaskdefinition-get_actions) per accedere alla [**raccolta IActionCollection**](/windows/desktop/api/taskschd/nn-taskschd-iactioncollection) per l'attività.
 
-    Usare il metodo [**IActionCollection:: create**](/windows/desktop/api/taskschd/nf-taskschd-iactioncollection-create) per specificare il tipo di azione che si vuole creare. In questo esempio viene utilizzato un oggetto [**IExecAction**](/windows/desktop/api/taskschd/nn-taskschd-iexecaction) , che rappresenta un'azione che esegue un'operazione della riga di comando.
+    Usare il [**metodo IActionCollection::Create**](/windows/desktop/api/taskschd/nf-taskschd-iactioncollection-create) per specificare il tipo di azione che si vuole creare. Questo esempio usa un [**oggetto IExecAction,**](/windows/desktop/api/taskschd/nn-taskschd-iexecaction) che rappresenta un'azione che esegue un'operazione della riga di comando.
 
-7.  Registrare l'attività usando il metodo [**ITaskFolder:: RegisterTaskDefinition**](/windows/desktop/api/taskschd/nf-taskschd-itaskfolder-registertaskdefinition) .
+7.  Registrare l'attività [**usando il metodo ITaskFolder::RegisterTaskDefinition.**](/windows/desktop/api/taskschd/nf-taskschd-itaskfolder-registertaskdefinition)
 
-Nell'esempio di codice C++ riportato di seguito viene illustrato come pianificare un'attività da eseguire Notepad.exe 30 secondi dopo l'avvio del sistema.
+Nell'esempio di codice C++ seguente viene illustrato come pianificare un'attività da eseguire Notepad.exe 30 secondi dopo l'avvio del sistema.
 
 
 ```C++
@@ -374,12 +374,12 @@ int __cdecl wmain()
 
 <dl> <dt>
 
-[Uso della Utilità di pianificazione](using-the-task-scheduler.md)
+[Uso del Utilità di pianificazione](using-the-task-scheduler.md)
 </dt> </dl>
 
- 
+ 
 
- 
+ 
 
 
 

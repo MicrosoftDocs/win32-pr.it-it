@@ -4,12 +4,12 @@ description: Esistono due versioni del formato di serializzazione del set di pro
 ms.assetid: 10544118-5e80-47e2-b75b-c1a43be15b2e
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 9412fd2a83ab7c71b97888d4ae7911a96fdc4cfe5a9ebbceb5d985b3a5e2b418
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: d9f340b31252bfc3d99f72746e8ae791f313498c
+ms.sourcegitcommit: 4665ebce0c106bdb52eef36e544280b496b6f50b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "118886476"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "122989154"
 ---
 # <a name="property-set-serialization"></a>Serializzazione del set di proprietà
 
@@ -31,7 +31,7 @@ Gli elementi seguenti identificano le differenze tra i formati di serializzazion
 
     VT_DECIMAL
 
-    È anche possibile serializzare SafeArray in un set di proprietà. La presenza di safearray è indicata dal bit VT_ARRAY combinato, usando un'operazione **OR,** con gli elementi della matrice nel membro **vt** della [**struttura PROPVARIANT.**](/windows/win32/api/propidlbase/ns-propidlbase-propvariant) Un SafeArray di interi con segno a 4 byte, ad esempio, ha un tipo VT_ARRAY \| VT_I4.
+    È anche possibile serializzare SafeArray in un set di proprietà. La presenza di safearray è indicata dal bit VT_ARRAY combinato, usando un'operazione **OR,** con gli elementi della matrice nel membro **vt** della [**struttura PROPVARIANT.**](/windows/win32/api/propidlbase/ns-propidlbase-propvariant) Un SafeArray di interi con segno a 4 byte, ad esempio, ha un tipo di VT_ARRAY \| VT_I4.
 
     I tipi di elemento seguenti sono validi per safearray in un set di proprietà serializzato:
 
@@ -44,7 +44,7 @@ Gli elementi seguenti identificano le differenze tra i formati di serializzazion
     | VT_VARIANT  |          |             |           |
     |             |          |             |           |
 
-    Quando viene VT_VARIANT specificato il tipo di dati , significa che SafeArray contiene strutture [**PROPVARIANT.**](/windows/win32/api/propidlbase/ns-propidlbase-propvariant) I tipi per questi elementi devono essere dell'elenco precedente, ad eccezione del fatto che non possono contenere tipi VT_VARIANT annidati.
+    Quando viene VT_VARIANT tipo di dati specificato, significa che SafeArray contiene strutture [**PROPVARIANT.**](/windows/win32/api/propidlbase/ns-propidlbase-propvariant) I tipi per questi elementi devono essere dell'elenco precedente, ad eccezione del fatto che non possono contenere tipi VT_VARIANT annidati.
     
     Si noti che le [**implementazioni di IPropertyStorage**](/windows/desktop/api/Propidl/nn-propidl-ipropertystorage) devono essere in grado di eseguire correttamente il ripristino tramite la restituzione di un errore quando viene rilevato un nuovo tipo. ad esempio i tipi VARENUM.
 
@@ -54,7 +54,7 @@ Gli elementi seguenti identificano le differenze tra i formati di serializzazion
 
 -   Nomi di proprietà lunghi. I nomi delle proprietà per i set di proprietà della versione 0 devono essere minori o uguali a 256 caratteri, incluso il carattere di terminazione della stringa, per i set di proprietà nella tabella codici Unicode. Se non sono presenti nella tabella codici Unicode, devono essere minori di 256 byte. I set di proprietà della versione 1, d'altra parte, possono avere nomi di proprietà di lunghezza illimitata, anche se sono comunque limitati dal limite complessivo di dimensioni del set di proprietà di 256 kilobyte (KB).
 
-È consigliabile che le implementazioni di [**IPropertyStorage creino**](/windows/desktop/api/Propidl/nn-propidl-ipropertystorage) e mantengano i set di proprietà della versione 0 per impostazione predefinita. Se un chiamante richiede successivamente una funzionalità specifica del formato della versione 1, solo la versione del set di proprietà deve essere aggiornata. Ad esempio, se viene scritta una proprietà di tipo VT_ARRAY o se viene scritto un nome di proprietà lungo, l'implementazione deve aggiornare il formato del set di proprietà alla versione 1. Un'eccezione a questa linea guida si verifica se PROPSETFLAG_CASE_SENSITIVE valore di enumerazione viene specificato nella chiamata a [**IPropertySetStorage::Create**](/windows/desktop/api/Propidl/nf-propidl-ipropertysetstorage-create). In questo caso, il set di proprietà deve essere creato come set di proprietà della versione 1.
+È consigliabile che le implementazioni di [**IPropertyStorage creino**](/windows/desktop/api/Propidl/nn-propidl-ipropertystorage) e mantengano i set di proprietà della versione 0 per impostazione predefinita. Se un chiamante richiede successivamente una funzionalità specifica del formato della versione 1, solo la versione del set di proprietà deve essere aggiornata. Ad esempio, se viene scritta una proprietà di tipo VT_ARRAY o se viene scritto un nome di proprietà lungo, l'implementazione deve aggiornare il formato del set di proprietà alla versione 1. Un'eccezione a questa linea guida si verifica se PROPSETFLAG_CASE_SENSITIVE valore di enumerazione viene specificato nella chiamata a [**IPropertySetStorage::Create.**](/windows/desktop/api/Propidl/nf-propidl-ipropertysetstorage-create) In questo caso, il set di proprietà deve essere creato come set di proprietà della versione 1.
 
  
 

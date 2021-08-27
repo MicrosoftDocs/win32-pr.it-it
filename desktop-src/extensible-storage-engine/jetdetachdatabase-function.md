@@ -1,5 +1,5 @@
 ---
-description: 'Altre informazioni su: funzione JetDetachDatabase'
+description: 'Altre informazioni su: Funzione JetDetachDatabase'
 title: Funzione JetDetachDatabase
 TOCTitle: JetDetachDatabase Function
 ms:assetid: 629f19e5-99f3-425a-b6ba-de18daec7efe
@@ -20,12 +20,12 @@ api_type:
 api_location:
 - ESENT.DLL
 ROBOTS: INDEX,FOLLOW
-ms.openlocfilehash: 2e4437955acc0ed5714f7fbfb9f42fd4abafa58d
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 028e156cffd5eef0d4baa1f043dddf5105fd1023
+ms.sourcegitcommit: 4665ebce0c106bdb52eef36e544280b496b6f50b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "104349926"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "122985874"
 ---
 # <a name="jetdetachdatabase-function"></a>Funzione JetDetachDatabase
 
@@ -34,7 +34,7 @@ _**Si applica a:** Windows | Windows Server_
 
 ## <a name="jetdetachdatabase-function"></a>Funzione JetDetachDatabase
 
-La funzione **JetDetachDatabase** rilascia un file di database precedentemente collegato a una sessione di database.
+La **funzione JetDetachDatabase** rilascia un file di database precedentemente collegato a una sessione di database.
 
 ```cpp
     JET_ERR JET_API JetDetachDatabase(
@@ -51,88 +51,41 @@ Contesto della sessione di database da usare per la chiamata API.
 
 *szFilename*
 
-Nome del database da scollegare. Se *szFileName* è **null** o una stringa vuota, tutti i database collegati a *sesid* verranno scollegati.
+Nome del database da scollegare. Se *szFilename* è **NULL** o una stringa vuota, tutti i database collegati a *sesid* verranno scollegati.
 
 ### <a name="return-value"></a>Valore restituito
 
-Questa funzione restituisce il tipo di dati [JET_ERR](./jet-err.md) con uno dei seguenti codici restituiti. Per ulteriori informazioni sugli errori ESE possibili, vedere la pagina relativa agli errori e ai [parametri di gestione degli](./error-handling-parameters.md)errori del [motore di archiviazione estensibile](./extensible-storage-engine-errors.md) .
+Questa funzione restituisce il [JET_ERR](./jet-err.md) dati con uno dei codici restituiti seguenti. Per altre informazioni sui possibili errori ESE, vedere Errori del [motore di Archiviazione](./extensible-storage-engine-errors.md) estendibile e Parametri di gestione degli [errori](./error-handling-parameters.md).
 
-<table>
-<colgroup>
-<col style="width: 50%" />
-<col style="width: 50%" />
-</colgroup>
-<thead>
-<tr class="header">
-<th><p>Codice restituito</p></th>
-<th><p>Descrizione</p></th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td><p>JET_errSuccess</p></td>
-<td><p>Operazione riuscita.</p></td>
-</tr>
-<tr class="even">
-<td><p>JET_errBackupInProgress</p></td>
-<td><p>È in corso il backup del database e non è possibile scollegarlo.</p></td>
-</tr>
-<tr class="odd">
-<td><p>JET_errDatabaseInUse</p></td>
-<td><p>Il database è stato aperto da <a href="gg269299(v=exchg.10).md">JetOpenDatabase</a>. Prima dello scollegamento, è necessario chiudere i database.</p></td>
-</tr>
-<tr class="even">
-<td><p>JET_errDatabaseNotFound</p></td>
-<td><p>Il database non è stato collegato in precedenza (vedere <a href="gg294074(v=exchg.10).md">JetAttachDatabase</a> o <a href="gg269322(v=exchg.10).md">JetAttachDatabase2</a>).</p></td>
-</tr>
-<tr class="odd">
-<td><p>JET_errInTransaction</p></td>
-<td><p>È stato effettuato un tentativo di scollegamento di un database in una transazione.</p></td>
-</tr>
-</tbody>
-</table>
+
+| <p>Codice restituito</p> | <p>Descrizione</p> | 
+|--------------------|--------------------|
+| <p>JET_errSuccess</p> | <p>Operazione riuscita.</p> | 
+| <p>JET_errBackupInProgress</p> | <p>Il backup del database è in corso e non può essere scollegato.</p> | 
+| <p>JET_errDatabaseInUse</p> | <p>Il database è stato aperto <a href="gg269299(v=exchg.10).md">da JetOpenDatabase.</a> I database devono essere chiusi prima di scollegarsi.</p> | 
+| <p>JET_errDatabaseNotFound</p> | <p>Il database non è stato collegato in precedenza (vedere <a href="gg294074(v=exchg.10).md">JetAttachDatabase</a> o <a href="gg269322(v=exchg.10).md">JetAttachDatabase2).</a></p> | 
+| <p>JET_errInTransaction</p> | <p>È stato effettuato un tentativo di scollegare un database durante una transazione.</p> | 
+
 
 
 #### <a name="remarks"></a>Commenti
 
-Se un database collegato è stato aperto (con [JetAttachDatabase](./jetattachdatabase-function.md)), è necessario chiuderlo con [JetCloseDatabase](./jetclosedatabase-function.md) prima di disconnetterlo.
+Se un database collegato è stato aperto [(con JetAttachDatabase),](./jetattachdatabase-function.md)deve essere chiuso con [JetCloseDatabase](./jetclosedatabase-function.md) prima di scollegarlo.
 
-Solo Windows 2000: i database che non sono stati scollegati prima della chiamata a [JetTerm](./jetterm-function.md) verranno automaticamente ricollegati al successivo chiamata di [JetInit](./jetinit-function.md) .
+Windows solo 2000: i database che non sono stati scollegati prima della chiamata a [JetTerm](./jetterm-function.md) verranno collegati automaticamente alla chiamata successiva di [JetInit.](./jetinit-function.md)
 
 #### <a name="requirements"></a>Requisiti
 
-<table>
-<colgroup>
-<col style="width: 50%" />
-<col style="width: 50%" />
-</colgroup>
-<tbody>
-<tr class="odd">
-<td><p><strong>Client</strong></p></td>
-<td><p>Richiede Windows Vista, Windows XP o Windows 2000 Professional.</p></td>
-</tr>
-<tr class="even">
-<td><p><strong>Server</strong></p></td>
-<td><p>Richiede Windows Server 2008, Windows Server 2003 o Windows 2000 Server.</p></td>
-</tr>
-<tr class="odd">
-<td><p><strong>Intestazione</strong></p></td>
-<td><p>Dichiarata in esent. h.</p></td>
-</tr>
-<tr class="even">
-<td><p><strong>Libreria</strong></p></td>
-<td><p>Usare ESENT. lib.</p></td>
-</tr>
-<tr class="odd">
-<td><p><strong>DLL</strong></p></td>
-<td><p>Richiede ESENT.dll.</p></td>
-</tr>
-<tr class="even">
-<td><p><strong>Unicode</strong></p></td>
-<td><p>Implementato come <strong>JetDetachDatabaseW</strong> (Unicode) e <strong>JetDetachDatabaseA</strong> (ANSI).</p></td>
-</tr>
-</tbody>
-</table>
+
+| Requisito | Valore |
+|------------|----------|
+| <p><strong>Client</strong></p> | <p>Richiede Windows Vista, Windows XP o Windows 2000 Professional.</p> | 
+| <p><strong>Server</strong></p> | <p>Richiede Windows Server 2008, Windows Server 2003 o Windows 2000 Server.</p> | 
+| <p><strong>Intestazione</strong></p> | <p>Dichiarato in Esent.h.</p> | 
+| <p><strong>Libreria</strong></p> | <p>Usare ESENT.lib.</p> | 
+| <p><strong>DLL</strong></p> | <p>Richiede ESENT.dll.</p> | 
+| <p><strong>Unicode</strong></p> | <p>Implementato come <strong>JetDetachDatabaseW</strong> (Unicode) e <strong>JetDetachDatabaseA</strong> (ANSI).</p> | 
+
 
 
 #### <a name="see-also"></a>Vedere anche

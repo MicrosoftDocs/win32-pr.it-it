@@ -1,5 +1,5 @@
 ---
-description: 'Altre informazioni su: tipi di enumerazione PWM'
+description: 'Altre informazioni su: Tipi di enumerazione PWM'
 ms.assetid: DB87CDA5-E536-4884-BF60-3E7DB8C67A19
 title: Tipi di enumerazione PWM
 ms.topic: article
@@ -9,18 +9,18 @@ topic_type:
 api_name: ''
 api_type: ''
 api_location: ''
-ms.openlocfilehash: 1cd1c9ad1b32c965610295a3b42d8dbb2a3899e7
-ms.sourcegitcommit: c7add10d695482e1ceb72d62b8a4ebd84ea050f7
+ms.openlocfilehash: 2be9abd990baa5beefb17da63cd951fafe344c947ceed7db466715f1cf833b50
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "103748346"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120088061"
 ---
 # <a name="pwm-enumeration-types"></a>Tipi di enumerazione PWM
 
-\[Alcune informazioni si riferiscono al prodotto pre-rilasciato che può essere modificato in modo sostanziale prima del rilascio commerciale. Microsoft non riconosce alcuna garanzia, espressa o implicita, in merito alle informazioni qui fornite.\]
+\[Alcune informazioni riguardano un prodotto pre-rilasciato che può essere modificato sostanzialmente prima del rilascio in commercio. Microsoft non riconosce alcuna garanzia, espressa o implicita, in merito alle informazioni qui fornite.\]
 
-I tipi di enumerazione seguenti vengono usati con la modulazione della larghezza del polso:
+Con Pulse Width Modulation vengono usati i tipi di enumerazione seguenti:
 
 ## <a name="in-this-section"></a>Contenuto della sezione
 
@@ -28,7 +28,7 @@ I tipi di enumerazione seguenti vengono usati con la modulazione della larghezza
 
 | Argomento                                            | Descrizione                                                                                                  |
 |--------------------------------------------------|--------------------------------------------------------------------------------------------------------------|
-| [**\_polarità PWM**](/windows/desktop/api/Pwm/ne-pwm-pwm_polarity)<br/> | Rappresenta la polarità del livello di segnale PWM (Pulse Width Modulation) rispetto al ciclo di servizio.<br/> |
+| [**POLARITÀ \_ PWM**](/windows/desktop/api/Pwm/ne-pwm-pwm_polarity)<br/> | Rappresenta la polarità del livello di segnale Pulse Width Modulation (PWM) rispetto al ciclo di lavoro.<br/> |
 
 
 

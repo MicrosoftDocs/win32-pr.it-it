@@ -1,5 +1,5 @@
 ---
-description: 'Altre informazioni su: struttura JET_COLUMNBASE'
+description: 'Altre informazioni su: JET_COLUMNBASE Structure'
 title: Struttura JET_COLUMNBASE
 TOCTitle: JET_COLUMNBASE Structure
 ms:assetid: 171275c3-966d-409d-ad20-a8f240f7500d
@@ -15,12 +15,12 @@ api_type:
 - COM
 api_location: ''
 ROBOTS: INDEX,FOLLOW
-ms.openlocfilehash: 9276c36a08a429f44568b3a909af77f5ae038c80
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 603025166eed7c92d98148a43d26046308235777
+ms.sourcegitcommit: 4665ebce0c106bdb52eef36e544280b496b6f50b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "106319210"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "122983594"
 ---
 # <a name="jet_columnbase-structure"></a>Struttura JET_COLUMNBASE
 
@@ -29,7 +29,7 @@ _**Si applica a:** Windows | Windows Server_
 
 ## <a name="jet_columnbase-structure"></a>Struttura JET_COLUMNBASE
 
-La struttura **JET_COLUMNBASE** descrive i parametri di una colonna di base. Le funzioni [JetGetColumnInfo](./jetgetcolumninfo-function.md) e [JetGetTableColumnInfo](./jetgettablecolumninfo-function.md) usano la struttura **JET_COLUMNBASE** .
+La **JET_COLUMNBASE** struttura descrive i parametri di una colonna di base. Le [funzioni JetGetColumnInfo](./jetgetcolumninfo-function.md) [e JetGetTableColumnInfo](./jetgettablecolumninfo-function.md) usano la **JET_COLUMNBASE** struttura .
 
 ```cpp
     typedef struct {
@@ -51,15 +51,15 @@ La struttura **JET_COLUMNBASE** descrive i parametri di una colonna di base. Le 
 
 **cbStruct**
 
-Dimensioni, in byte, della struttura. Impostare **cbStruct** su sizeof (JET_COLUMNBASE).
+Dimensioni di questa struttura, in byte. Impostare **cbStruct** su sizeof( JET_COLUMNBASE ).
 
-**ColumnID**
+**columnid**
 
-Riservato. Impostare **ColumnID** su 0 (zero).
+Riservato. Impostare **columnid** su 0 (zero).
 
 **coltyp**
 
-Tipo di colonna (ad esempio, testo, binario o numerico). Per ulteriori informazioni, vedere [JET_COLTYP](./jet-coltyp.md).
+Tipo della colonna, ad esempio testo, binario o numerico. Per altre informazioni, [vedere](./jet-coltyp.md)JET_COLTYP .
 
 **wCountry**
 
@@ -71,7 +71,7 @@ Riservato. Impostare su 0 (zero).
 
 **cp**
 
-Tabella codici per la colonna. Gli unici valori validi per le colonne di testo sono English (1252) e Unicode (1200). Il valore zero indica che verrà utilizzato il valore predefinito (inglese, 1252). Se la colonna non è una colonna di testo, la tabella codici viene impostata automaticamente su zero.
+Tabella codici per la colonna. Gli unici valori validi per le colonne di testo sono Inglese (1252) e Unicode (1200). Il valore zero indica che verrà usato il valore predefinito (inglese, 1252). Se la colonna non è una colonna di testo, la tabella codici viene impostata automaticamente su zero.
 
 **wFiller**
 
@@ -85,141 +85,49 @@ Lunghezza massima, in byte, di una colonna a lunghezza variabile o lunghezza eff
 
 Opzioni per la colonna, inclusi zero o più dei valori seguenti.
 
-<table>
-<colgroup>
-<col style="width: 50%" />
-<col style="width: 50%" />
-</colgroup>
-<thead>
-<tr class="header">
-<th><p>Valore</p></th>
-<th><p>Significato</p></th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td><p>JET_bitColumnFixed</p></td>
-<td><p>La colonna è fissa e occupa la stessa quantità di spazio in una riga indipendentemente dalla quantità di dati in essa contenuti. JET_bitColumnFixed non possono essere combinati con JET_bitColumnTagged e non possono essere usati quando il membro <strong>coltyp</strong> è impostato su <strong>JET_coltypLongText</strong> o <strong>JET_coltypLongBinary</strong>.</p></td>
-</tr>
-<tr class="even">
-<td><p>JET_bitColumnTagged</p></td>
-<td><p>La colonna è contrassegnata e occupa lo spazio nel database solo se contiene dati. Non è possibile combinare JET_bitColumnTagged con JET_bitColumnFixed, JET_bitColumnVersion o JET_bitColumnEscrowUpdate.</p></td>
-</tr>
-<tr class="odd">
-<td><p>JET_bitColumnNotNULL</p></td>
-<td><p>La colonna non deve essere impostata su un valore <strong>null</strong> .</p>
-<p>Non è possibile combinare JET_bitColumnNotNULL con JET_bitColumnUserDefinedDefault.</p></td>
-</tr>
-<tr class="even">
-<td><p>JET_bitColumnVersion</p></td>
-<td><p>La colonna è una colonna della versione che specifica la versione della riga. Il valore di questa colonna inizia da zero e viene incrementato automaticamente per ogni aggiornamento della riga.</p>
-<p>JET_bitColumnVersion può essere utilizzato solo quando il membro <strong>coltyp</strong> è impostato su <strong>JET_coltypLong</strong> e non può essere combinato con JET_bitColumnAutoincrement, JET_bitColumnEscrowUpdate, JET_bitColumnTagged o JET_bitColumnUserDefinedDefault.</p></td>
-</tr>
-<tr class="odd">
-<td><p>JET_bitColumnAutoincrement</p></td>
-<td><p>La colonna viene incrementata automaticamente. Il numero è un numero crescente ed è garantito che sia univoco all'interno di una tabella. I numeri, tuttavia, non possono essere sequenziali. Se, ad esempio, vengono inserite cinque righe in una tabella, la colonna incrementata automaticamente potrebbe contenere i valori {1, 2, 6, 7, 8}.</p>
-<p>JET_bitColumnAutoincrement può essere utilizzato solo quando il membro <strong>coltyp</strong> è impostato su <strong>JET_coltypLong</strong> o <strong>JET_coltypCurrency</strong> e non può essere combinato con JET_bitColumnEscrowUpdate, JET_bitColumnUserDefinedDefault o JET_bitColumnVersion.</p>
-<p><strong>Windows 2000:  </strong> JET_bitColumnVersion può essere utilizzato solo quando il membro <strong>coltyp</strong> è impostato su <strong>JET_coltypLong</strong>.</p></td>
-</tr>
-<tr class="even">
-<td><p>JET_bitColumnUpdatable</p></td>
-<td><p>Valido solo per le chiamate a <a href="gg269215(v=exchg.10).md">JetGetColumnInfo</a>. Non è possibile combinare JET_bitColumnUpdatable con JET_bitColumnUserDefinedDefault.</p></td>
-</tr>
-<tr class="odd">
-<td><p>JET_bitColumnTTKey</p></td>
-<td><p>Valido solo per le chiamate a <a href="gg294118(v=exchg.10).md">JetOpenTable</a>.</p></td>
-</tr>
-<tr class="even">
-<td><p>JET_bitColumnTTDescending</p></td>
-<td><p>Valido solo per le chiamate a <a href="gg269211(v=exchg.10).md">JetOpenTempTable</a>.</p></td>
-</tr>
-<tr class="odd">
-<td><p>JET_bitColumnMultiValued</p></td>
-<td><p>La colonna può essere multivalore. Una colonna multivalore può avere zero, uno o più valori associati. I vari valori in una colonna multivalore sono identificati da un numero nel membro <strong>itagSequence</strong> di varie strutture, ad esempio <a href="gg294049(v=exchg.10).md">JET_RETINFO</a>, <a href="gg294090(v=exchg.10).md">JET_SETINFO</a>, <a href="gg269233(v=exchg.10).md">JET_SETCOLUMN</a>, <a href="gg269334(v=exchg.10).md">JET_RETRIEVECOLUMN</a> <a href="gg294052(v=exchg.10).md">JET_ENUMCOLUMNVALUE</a>. Le colonne multivalore devono essere contrassegnate come colonne; ovvero, non possono essere colonne a lunghezza fissa o a lunghezza variabile.</p></td>
-</tr>
-<tr class="even">
-<td><p>JET_bitColumnEscrowUpdate</p></td>
-<td><p>Specifica che una colonna è una colonna di aggiornamento del deposito che può essere aggiornata simultaneamente da sessioni diverse con <a href="gg294125(v=exchg.10).md">JetEscrowUpdate</a> e che avrà coerenza transazionale.</p>
-<ul>
-<li><p>Una colonna di aggiornamento del deposito è possibile creare solo se la tabella è vuota.</p></li>
-</ul>
-<ul>
-<li><p>Per una colonna di aggiornamento del deposito, il membro <strong>coltyp</strong> deve essere impostato su <strong>JET_coltypLong.</strong></p></li>
-</ul>
-<ul>
-<li><p>Una colonna di aggiornamento del deposito deve avere un valore predefinito, ovvero <strong>cbDefault</strong> deve essere un valore positivo.</p></li>
-</ul>
-<ul>
-<li><p>Non è possibile combinare JET_bitColumnEscrowUpdate con JET_bitColumnTagged, JET_bitColumnVersion o JET_bitColumnAutoincrement.</p></li>
-</ul></td>
-</tr>
-<tr class="odd">
-<td><p>JET_bitColumnUnversioned</p></td>
-<td><p>La colonna viene creata senza un numero di versione. Ciò significa che altre transazioni che tentano di aggiungere una colonna con lo stesso nome avranno esito negativo. JET_bitColumnUnversioned viene utilizzata solo con <a href="gg294122(v=exchg.10).md">JetAddColumn</a>. Non può essere utilizzato all'interno di una transazione.</p></td>
-</tr>
-<tr class="even">
-<td><p>JET_bitColumnMaybeNull</p></td>
-<td><p>Riservato per utilizzi futuri.</p>
-<p>Non è possibile combinare JET_bitColumnMaybeNull con JET_bitColumnUserDefinedDefault.</p></td>
-</tr>
-<tr class="odd">
-<td><p>JET_bitColumnFinalize</p></td>
-<td><p>Non usare. In alternativa, usare JET_bitColumnDeleteOnZero.</p>
-<p>La colonna può essere finalizzata. Una colonna che può essere finalizzata è una colonna di aggiornamento del deposito che causa l'eliminazione della riga quando la colonna raggiunge lo zero. Le versioni future possono invece richiamare una funzione di callback (vedere <a href="gg294098(v=exchg.10).md">JET_CALLBACK</a>). Una colonna che può essere finalizzata deve essere una colonna di aggiornamento del deposito. Non è possibile combinare JET_bitColumnFinalize con JET_bitColumnUserDefinedDefault.</p></td>
-</tr>
-<tr class="even">
-<td><p>JET_bitColumnUserDefinedDefault</p></td>
-<td><p>Il valore predefinito per una colonna verrà fornito da una funzione di callback. Vedere <a href="gg294098(v=exchg.10).md">JET_CALLBACK</a>. Una colonna con un valore predefinito definito dall'utente deve essere una colonna con tag. Se JET_bitColumnUserDefinedDefault è specificato, <strong>pvDefault</strong> deve puntare a una struttura di <a href="gg269200(v=exchg.10).md">JET_USERDEFINEDDEFAULT</a> e <strong>cbDefault</strong> deve essere impostato su sizeof (JET_USERDEFINEDDEFAULT).</p>
-<p>Non è possibile combinare JET_bitColumnUserDefinedDefault con JET_bitColumnFixed, JET_bitColumnNotNULL, JET_bitColumnVersion, JET_bitColumnAutoincrement, JET_bitColumnUpdatable, JET_bitColumnEscrowUpdate, JET_bitColumnFinalize, JET_bitColumnDeleteOnZero o JET_bitColumnMaybeNull.</p></td>
-</tr>
-<tr class="odd">
-<td><p>JET_bitColumnDeleteOnZero</p></td>
-<td><p>La colonna è una colonna di aggiornamento del deposito e quando raggiunge lo zero, il record verrà eliminato. Un uso comune per le colonne Delete-on-zero è come campi del conteggio dei riferimenti. Quando il numero di riferimenti è pari a zero, il record viene eliminato. Una colonna Delete-on-zero deve essere una colonna di aggiornamento del deposito.</p>
-<p>JET_bitColumnDeleteOnZero sostituisce JET_bitColumnFinalize.</p>
-<p>Non è possibile combinare JET_bitColumnDeleteOnZero con JET_bitColumnFinalize o JET_bitColumnUserDefinedDefault né usare le colonne predefinite definite dall'utente.</p></td>
-</tr>
-</tbody>
-</table>
+
+| <p>Valore</p> | <p>Significato</p> | 
+|--------------|----------------|
+| <p>JET_bitColumnFixed</p> | <p>La colonna è fissa e occupa la stessa quantità di spazio in una riga indipendentemente dalla quantità di dati in essa contenuti. JET_bitColumnFixed può essere combinato con JET_bitColumnTagged e non può essere usato quando il membro <strong>coltyp</strong> è impostato su <strong>JET_coltypLongText</strong> <strong>o JET_coltypLongBinary</strong>.</p> | 
+| <p>JET_bitColumnTagged</p> | <p>La colonna viene contrassegnata e occupa spazio nel database solo se contiene dati. JET_bitColumnTagged può essere combinato con JET_bitColumnFixed, JET_bitColumnVersion o JET_bitColumnEscrowUpdate.</p> | 
+| <p>JET_bitColumnNotNULL</p> | <p>La colonna non deve essere impostata su <strong>un valore NULL.</strong></p><p>JET_bitColumnNotNULL può essere combinato con JET_bitColumnUserDefinedDefault.</p> | 
+| <p>JET_bitColumnVersion</p> | <p>La colonna è una colonna versione che specifica la versione della riga. Il valore di questa colonna inizia da zero e viene incrementato automaticamente per ogni aggiornamento della riga.</p><p>JET_bitColumnVersion può essere usato solo quando il membro <strong>coltyp</strong> è impostato su <strong>JET_coltypLong</strong> e non può essere combinato con JET_bitColumnAutoincrement, JET_bitColumnEscrowUpdate, JET_bitColumnTagged o JET_bitColumnUserDefinedDefault.</p> | 
+| <p>JET_bitColumnAutoincrement</p> | <p>La colonna viene incrementata automaticamente. Il numero è un numero crescente ed è garantito che sia univoco all'interno di una tabella. I numeri, tuttavia, potrebbero non essere sequenziali. Ad esempio, se in una tabella vengono inserite cinque righe, la colonna incrementata automaticamente potrebbe contenere i valori { 1, 2, 6, 7, 8 }.</p><p>JET_bitColumnAutoincrement può essere usato solo quando il membro <strong>coltyp</strong> è impostato su <strong>JET_coltypLong</strong> o JET_coltypCurrency e non può essere combinato con JET_bitColumnEscrowUpdate, JET_bitColumnUserDefinedDefault o <strong>JET_bitColumnVersion.</strong></p><p><strong>Windows 2000:</strong> JET_bitColumnVersion può essere usato solo quando il <strong>membro coltyp</strong> è impostato <strong>su JET_coltypLong</strong>.</p> | 
+| <p>JET_bitColumnUpdatable</p> | <p>Valido solo per le chiamate <a href="gg269215(v=exchg.10).md">a JetGetColumnInfo.</a> JET_bitColumnUpdatable può essere combinato con JET_bitColumnUserDefinedDefault.</p> | 
+| <p>JET_bitColumnTTKey</p> | <p>Valido solo per le chiamate <a href="gg294118(v=exchg.10).md">a JetOpenTable.</a></p> | 
+| <p>JET_bitColumnTTDescending</p> | <p>Valido solo per le chiamate <a href="gg269211(v=exchg.10).md">a JetOpenTempTable.</a></p> | 
+| <p>JET_bitColumnMultiValued</p> | <p>La colonna può essere multivalore. A una colonna multivalore possono essere associati zero, uno o più valori. I vari valori in una colonna multivalore sono identificati da un numero nel membro <strong>itagSequence</strong> di varie strutture, ad esempio <a href="gg294049(v=exchg.10).md">JET_RETINFO</a>, <a href="gg294090(v=exchg.10).md">JET_SETINFO</a>, <a href="gg269233(v=exchg.10).md">JET_SETCOLUMN</a>, <a href="gg269334(v=exchg.10).md">JET_RETRIEVECOLUMN</a>, <a href="gg294052(v=exchg.10).md">JET_ENUMCOLUMNVALUE</a>. Le colonne multivalore devono essere colonne con tag. in altre informazioni, potrebbero non essere colonne a lunghezza fissa o a lunghezza variabile.</p> | 
+| <p>JET_bitColumnEscrowUpdate</p> | <p>Specifica che una colonna è una colonna di aggiornamento del deposito che può essere aggiornata contemporaneamente da sessioni diverse con <a href="gg294125(v=exchg.10).md">JetEscrowUpdate</a> e avrà coerenza transazionale.</p><ul><li><p>È possibile creare una colonna di aggiornamento del deposito solo quando la tabella è vuota.</p></li></ul><ul><li><p>Per una colonna di aggiornamento del deposito, il <strong>membro coltyp</strong> deve essere impostato su <strong>JET_coltypLong.</strong></p></li></ul><ul><li><p>Una colonna di aggiornamento del deposito deve avere un valore predefinito , ovvero <strong>cbDefault</strong> deve essere positivo.</p></li></ul><ul><li><p>JET_bitColumnEscrowUpdate può essere combinato con JET_bitColumnTagged, JET_bitColumnVersion o JET_bitColumnAutoincrement.</p></li></ul> | 
+| <p>JET_bitColumnUnversioned</p> | <p>La colonna viene creata senza un numero di versione. Ciò significa che le altre transazioni che tentano di aggiungere una colonna con lo stesso nome avranno esito negativo. JET_bitColumnUnversioned viene usato solo con <a href="gg294122(v=exchg.10).md">JetAddColumn</a>. Non può essere usato all'interno di una transazione.</p> | 
+| <p>JET_bitColumnMaybeNull</p> | <p>Riservato per utilizzi futuri.</p><p>JET_bitColumnMaybeNull può essere combinato con JET_bitColumnUserDefinedDefault.</p> | 
+| <p>JET_bitColumnFinalize</p> | <p>Non usare. Usare JET_bitColumnDeleteOnZero invece.</p><p>La colonna può essere finalizzata. Una colonna che può essere finalizzata è una colonna di aggiornamento del deposito che determina l'eliminazione della riga quando la colonna raggiunge lo zero. Le versioni future possono richiamare invece una funzione di callback (vedere <a href="gg294098(v=exchg.10).md">JET_CALLBACK</a>). Una colonna che può essere finalizzata deve essere una colonna di aggiornamento del deposito. JET_bitColumnFinalize può essere combinato con JET_bitColumnUserDefinedDefault.</p> | 
+| <p>JET_bitColumnUserDefinedDefault</p> | <p>Il valore predefinito per una colonna verrà fornito da una funzione di callback. Vedere <a href="gg294098(v=exchg.10).md">JET_CALLBACK</a>. Una colonna con un valore predefinito definito dall'utente deve essere una colonna con tag. Se JET_bitColumnUserDefinedDefault specificato, <strong>pvDefault</strong> deve puntare a una struttura <a href="gg269200(v=exchg.10).md">JET_USERDEFINEDDEFAULT</a> e <strong>cbDefault</strong> deve essere impostato su sizeof( JET_USERDEFINEDDEFAULT ).</p><p>JET_bitColumnUserDefinedDefault non può essere combinato con JET_bitColumnFixed, JET_bitColumnNotNULL, JET_bitColumnVersion, JET_bitColumnAutoincrement, JET_bitColumnUpdatable, JET_bitColumnEscrowUpdate, JET_bitColumnFinalize, JET_bitColumnDeleteOnZero o JET_bitColumnMaybeNull.</p> | 
+| <p>JET_bitColumnDeleteOnZero</p> | <p>La colonna è una colonna di aggiornamento del deposito e quando raggiunge lo zero, il record verrà eliminato. Un uso comune per le colonne delete-on-zero è come campi di conteggio dei riferimenti. Quando il numero di riferimenti è pari a zero, il record viene eliminato. Una colonna delete-on-zero deve essere una colonna di aggiornamento del deposito.</p><p>JET_bitColumnDeleteOnZero sostituisce JET_bitColumnFinalize.</p><p>JET_bitColumnDeleteOnZero non può essere combinato con JET_bitColumnFinalize o JET_bitColumnUserDefinedDefault e non può essere usato con colonne predefinite definite dall'utente.</p> | 
+
 
 
 **szBaseTableName**
 
-Tabella da cui la tabella corrente eredita la DDL.
+Tabella da cui la tabella corrente eredita il relativo linguaggio DDL.
 
 **szBaseColumnName**
 
-Nome della colonna nella tabella del modello.
+Nome della colonna nella tabella modello.
 
 ### <a name="remarks"></a>Commenti
 
-**JET_COLUMNBASE** contiene gran parte delle stesse informazioni [JET_COLUMNDEF](./jet-columndef-structure.md), ma aggiunge campi stringa per descrivere la tabella di base (se è stata usata una DDL gerarchica).
+**JET_COLUMNBASE** contiene molte delle stesse informazioni di [JET_COLUMNDEF](./jet-columndef-structure.md), ma aggiunge campi stringa per descrivere la tabella di base (se è stata usata una DDL gerarchica).
 
 ### <a name="requirements"></a>Requisiti
 
-<table>
-<colgroup>
-<col style="width: 50%" />
-<col style="width: 50%" />
-</colgroup>
-<tbody>
-<tr class="odd">
-<td><p><strong>Client</strong></p></td>
-<td><p>Richiede Windows Vista, Windows XP o Windows 2000 Professional.</p></td>
-</tr>
-<tr class="even">
-<td><p><strong>Server</strong></p></td>
-<td><p>Richiede Windows Server 2008, Windows Server 2003 o Windows 2000 Server.</p></td>
-</tr>
-<tr class="odd">
-<td><p><strong>Intestazione</strong></p></td>
-<td><p>Dichiarata in esent. h.</p></td>
-</tr>
-<tr class="even">
-<td><p><strong>Unicode</strong></p></td>
-<td><p>Implementato come <strong>JET_COLUMNBASE_W</strong> (Unicode) e <strong>JET_COLUMNBASE_A</strong> (ANSI).</p></td>
-</tr>
-</tbody>
-</table>
+
+| Requisito | Valore |
+|------------|----------|
+| <p><strong>Client</strong></p> | <p>Richiede Windows Vista, Windows XP o Windows 2000 Professional.</p> | 
+| <p><strong>Server</strong></p> | <p>Richiede Windows Server 2008, Windows Server 2003 o Windows 2000 Server.</p> | 
+| <p><strong>Intestazione</strong></p> | <p>Dichiarato in Esent.h.</p> | 
+| <p><strong>Unicode</strong></p> | <p>Implementato come <strong>JET_COLUMNBASE_W</strong> (Unicode) <strong>e JET_COLUMNBASE_A</strong> (ANSI).</p> | 
+
 
 
 ### <a name="see-also"></a>Vedere anche

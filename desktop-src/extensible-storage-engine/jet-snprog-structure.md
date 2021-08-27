@@ -1,5 +1,5 @@
 ---
-description: 'Altre informazioni su: JET_SNPROG struttura'
+description: 'Altre informazioni su: JET_SNPROG Structure'
 title: JET_SNPROG struttura
 TOCTitle: JET_SNPROG Structure
 ms:assetid: 8b4224e4-ad4d-440f-8915-8eb43b0885f0
@@ -15,12 +15,12 @@ api_type:
 - COM
 api_location: ''
 ROBOTS: INDEX,FOLLOW
-ms.openlocfilehash: 251f7948ec4d15e455720043b847abbd855e24146dd05a432b2bf3ea6d28dfef
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: ab132d203ca2dc81e2ed3c3d8a0ce25c76a2cc71
+ms.sourcegitcommit: 4665ebce0c106bdb52eef36e544280b496b6f50b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "118252768"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "122987734"
 ---
 # <a name="jet_snprog-structure"></a>JET_SNPROG struttura
 
@@ -29,7 +29,7 @@ _**Si applica a:** Windows | Windows Server_
 
 ## <a name="jet_snprog-structure"></a>JET_SNPROG struttura
 
-La **JET_SNPROG** contiene informazioni sullo stato di avanzamento di un'operazione a esecuzione lunga. Quando la funzione di callback viene chiamata per notificare lo stato dell'operazione e l'operazione è ancora in **corso,** l'ultimo parametro della funzione di callback è un puntatore a una JET_SNPROG struttura .
+La **JET_SNPROG** contiene informazioni sullo stato di avanzamento di un'operazione a esecuzione lunga. Quando la funzione di callback viene chiamata per notificare lo stato dell'operazione e l'operazione è ancora in corso, l'ultimo parametro della funzione di callback è un puntatore **a** una JET_SNPROG struttura.
 
 ```cpp
     typedef struct {
@@ -55,24 +55,11 @@ Numero di unità di lavoro che devono essere completate. Questo valore deve esse
 
 ### <a name="requirements"></a>Requisiti
 
-<table>
-<colgroup>
-<col style="width: 50%" />
-<col style="width: 50%" />
-</colgroup>
-<tbody>
-<tr class="odd">
-<td><p><strong>Client</strong></p></td>
-<td><p>Richiede Windows Vista, Windows XP o Windows 2000 Professional.</p></td>
-</tr>
-<tr class="even">
-<td><p><strong>Server</strong></p></td>
-<td><p>Richiede Windows Server 2008, Windows Server 2003 o Windows 2000 Server.</p></td>
-</tr>
-<tr class="odd">
-<td><p><strong>Intestazione</strong></p></td>
-<td><p>Dichiarato in Esent.h.</p></td>
-</tr>
-</tbody>
-</table>
+
+| Requisito | Valore |
+|------------|----------|
+| <p><strong>Client</strong></p> | <p>Richiede Windows Vista, Windows XP o Windows 2000 Professional.</p> | 
+| <p><strong>Server</strong></p> | <p>Richiede Windows Server 2008, Windows Server 2003 o Windows 2000 Server.</p> | 
+| <p><strong>Intestazione</strong></p> | <p>Dichiarato in Esent.h.</p> | 
+
 

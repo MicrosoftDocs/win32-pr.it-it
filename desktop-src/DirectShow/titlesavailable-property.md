@@ -1,15 +1,15 @@
 ---
-description: La proprietà TitlesAvailable Recupera il numero di titoli disponibili sul disco.
+description: La proprietà TitlesAvailable recupera il numero di titoli disponibili nel disco.
 ms.assetid: 821ab1dc-7a42-407f-8fcd-8662036a6fa5
 title: Proprietà TitlesAvailable
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 388f81cab788fb440d55d4bb5a80e99d13c54db0
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 980870b0aa56ca472fa839c9560b93f5c3f069fa9376e950d9d65f6a3fb6fed3
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "106319539"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120078731"
 ---
 # <a name="titlesavailable-property"></a>Proprietà TitlesAvailable
 
@@ -18,7 +18,7 @@ ms.locfileid: "106319539"
 
  
 
-La `TitlesAvailable` proprietà recupera il numero di titoli disponibili sul disco.
+La `TitlesAvailable` proprietà recupera il numero di titoli disponibili nel disco.
 
 ``` syntax
 [ iTitles = ] MSWebDVD.TitlesAvailable
@@ -26,11 +26,11 @@ La `TitlesAvailable` proprietà recupera il numero di titoli disponibili sul dis
 
 ## <a name="return-value"></a>Valore restituito
 
-Restituisce il numero di titoli disponibili come valore intero compreso tra 1 e 99.
+Restituisce il numero di titoli disponibili come valore Integer compreso tra 1 e 99.
 
 ## <a name="remarks"></a>Commenti
 
-Questa proprietà è di sola lettura e non prevede alcun valore predefinito.
+Questa proprietà è di sola lettura senza alcun valore predefinito.
 
  
 

@@ -1,5 +1,5 @@
 ---
-description: 'Altre informazioni su: struttura JET_OBJECTLIST'
+description: 'Altre informazioni su: JET_OBJECTLIST struttura'
 title: Struttura JET_OBJECTLIST
 TOCTitle: JET_OBJECTLIST Structure
 ms:assetid: 95f12f2a-13da-48d4-a254-fc0cb718b17d
@@ -15,12 +15,12 @@ api_type:
 - COM
 api_location: ''
 ROBOTS: INDEX,FOLLOW
-ms.openlocfilehash: a7a66bb3b7f7dfbbfd1087d1fe0ce32c4144a8bf
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 21a3ea030421406a5bc571bb5cc1887f77b4710d
+ms.sourcegitcommit: 4665ebce0c106bdb52eef36e544280b496b6f50b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "104347516"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "122983124"
 ---
 # <a name="jet_objectlist-structure"></a>Struttura JET_OBJECTLIST
 
@@ -29,7 +29,7 @@ _**Si applica a:** Windows | Windows Server_
 
 ## <a name="jet_objectlist-structure"></a>Struttura JET_OBJECTLIST
 
-La struttura **JET_OBJECTLIST** attraversa una tabella temporanea creata con [JetGetObjectInfo](./jetgetobjectinfo-function.md). Ogni riga della tabella temporanea descrive un oggetto nel database.
+La **JET_OBJECTLIST** attraversa una tabella temporanea creata con [JetGetObjectInfo.](./jetgetobjectinfo-function.md) Ogni riga della tabella temporanea descrive un oggetto nel database.
 
 ```cpp
     typedef struct {
@@ -52,11 +52,11 @@ La struttura **JET_OBJECTLIST** attraversa una tabella temporanea creata con [Je
 
 **cbStruct**
 
-Dimensioni, in byte, della struttura. La chiamata API aggiornerà questo campo, in modo che il chiamante assicuri che questo valore corrisponda a sizeof (JET_INDEXLIST).
+Dimensioni della struttura, in byte. La chiamata API aggiornerà questo campo, quindi il chiamante deve assicurarsi che questo valore corrisponda a sizeof( JET_INDEXLIST ).
 
-**TableID**
+**tableid**
 
-Identificatore di tabella della tabella temporanea creata. Il chiamante deve contenere codice che chiude la tabella.
+Identificatore di tabella della tabella temporanea creata. Il chiamante deve contenere codice che chiuderà la tabella.
 
 **cRecord**
 
@@ -76,7 +76,7 @@ Questa colonna è un [JET_coltypText](./jet-coltyp.md).
 
 **columnidobjtyp**
 
-Identificatore di colonna del tipo dell'oggetto. Gli unici contenitori attualmente supportati sono tabelle, pertanto questo campo verrà JET_objtypTable.
+Identificatore di colonna del tipo dell'oggetto. Gli unici contenitori attualmente supportati sono le tabelle, quindi questo campo verrà JET_objtypTable.
 
 Questa colonna è un [JET_coltypLong](./jet-coltyp.md).
 
@@ -90,7 +90,7 @@ Obsoleta. Non usare.
 
 **columnidgrbit**
 
-Identificatore di colonna di **grbits** applicabili all'oggetto. Per un elenco dei **grbits** applicabili, vedere [JET_TABLECREATE](./jet-tablecreate-structure.md).
+Identificatore di colonna dei **grbit applicabili** all'oggetto. Per un elenco di **grbit applicabili,** vedere [JET_TABLECREATE](./jet-tablecreate-structure.md).
 
 Questa colonna è un [JET_coltypLong](./jet-coltyp.md).
 
@@ -116,32 +116,19 @@ Questa colonna è un [JET_coltypLong](./jet-coltyp.md).
 
 Ogni riga della tabella temporanea corrisponde a un oggetto nel database.
 
-Quando la tabella temporanea viene creata con il parametro *InfoLevel* nella funzione [JetGetObjectInfo](./jetgetobjectinfo-function.md) impostata su JET_ObjInfoListNoStats, le colonne identificate da **columnidcRecord** e **columnidcPage** non conterranno informazioni significative.
+Quando la tabella temporanea viene creata con il parametro *InfoLevel* nella funzione [JetGetObjectInfo](./jetgetobjectinfo-function.md) impostato su JET_ObjInfoListNoStats, le colonne identificate da **columnidcRecord** e **columnidcPage** non conterranno informazioni significative.
 
-Attualmente, solo le informazioni sulle tabelle saranno incluse nella tabella temporanea.
+Attualmente, nella tabella temporanea saranno presenti solo le informazioni sulle tabelle.
 
 ### <a name="requirements"></a>Requisiti
 
-<table>
-<colgroup>
-<col style="width: 50%" />
-<col style="width: 50%" />
-</colgroup>
-<tbody>
-<tr class="odd">
-<td><p><strong>Client</strong></p></td>
-<td><p>Richiede Windows Vista, Windows XP o Windows 2000 Professional.</p></td>
-</tr>
-<tr class="even">
-<td><p><strong>Server</strong></p></td>
-<td><p>Richiede Windows Server 2008, Windows Server 2003 o Windows 2000 Server.</p></td>
-</tr>
-<tr class="odd">
-<td><p><strong>Intestazione</strong></p></td>
-<td><p>Dichiarata in esent. h.</p></td>
-</tr>
-</tbody>
-</table>
+
+| Requisito | Valore |
+|------------|----------|
+| <p><strong>Client</strong></p> | <p>Richiede Windows Vista, Windows XP o Windows 2000 Professional.</p> | 
+| <p><strong>Server</strong></p> | <p>Richiede Windows Server 2008, Windows Server 2003 o Windows 2000 Server.</p> | 
+| <p><strong>Intestazione</strong></p> | <p>Dichiarato in Esent.h.</p> | 
+
 
 
 ### <a name="see-also"></a>Vedere anche

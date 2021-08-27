@@ -1,5 +1,5 @@
 ---
-description: 'Metodo IAMTimelineObj::SetDirtyRange: non implementato.'
+description: 'Metodo IAMTimelineObj::SetDirtyRange : non implementato.'
 ms.assetid: f3be3b5a-7ab9-44ca-8a03-33fb905d3aea
 title: Metodo IAMTimelineObj::SetDirtyRange (Qedit.h)
 ms.topic: reference
@@ -14,12 +14,12 @@ api_type:
 api_location:
 - strmiids.lib
 - strmiids.dll
-ms.openlocfilehash: 7e3f70e5ba9d01733df154911c4f40d2b9d33776
-ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
+ms.openlocfilehash: 1cd03802aa019e6da81f2667dddd3a5bede67ad70c98a82e843ee0f05c36e956
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/28/2021
-ms.locfileid: "108119489"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120086821"
 ---
 # <a name="iamtimelineobjsetdirtyrange-method"></a>Metodo IAMTimelineObj::SetDirtyRange
 
@@ -72,7 +72,7 @@ Se questo metodo ha esito positivo, restituisce **S \_ OK**. In caso contrario, 
  
 
 > [!Note]  
-> Per ottenere Qedit.h, scaricare l'aggiornamento [Microsoft Windows SDK per Windows Vista e .NET Framework 3.0.](https://msdn.microsoft.com/windowsvista/bb980924.aspx) Qedit.h non è disponibile nel Microsoft Windows SDK per Windows 7 e .NET Framework 3.5 Service Pack 1.
+> Per ottenere Qedit.h, scaricare [Microsoft Windows SDK Update per Windows Vista e .NET Framework 3.0.](https://msdn.microsoft.com/windowsvista/bb980924.aspx) Qedit.h non è disponibile in Microsoft Windows SDK per Windows 7 e .NET Framework 3.5 Service Pack 1.
 
  
 

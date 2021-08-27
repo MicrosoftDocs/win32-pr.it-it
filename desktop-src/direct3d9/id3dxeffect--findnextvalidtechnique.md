@@ -1,7 +1,7 @@
 ---
-description: Cerca la tecnica valida successiva, iniziando dalla tecnica dopo la tecnica specificata.
+description: Cerca la tecnica valida successiva, a partire dalla tecnica dopo la tecnica specificata.
 ms.assetid: 0d2f3f80-90fd-495d-acb8-075f50e9a974
-title: 'Metodo ID3DXEffect:: FindNextValidTechnique (D3DX9Effect. h)'
+title: Metodo ID3DXEffect::FindNextValidTechnique (D3DX9Effect.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -14,16 +14,16 @@ api_type:
 api_location:
 - D3dx9.lib
 - D3dx9.dll
-ms.openlocfilehash: adcaaa5194abeb17d110118de922811eb84af7fa
-ms.sourcegitcommit: 14010c34b35fa268046c7683f021f86de08ddd0a
+ms.openlocfilehash: f65a08d1f1ec8a1f7710272d2a1c48e936f211b3bcdee8b84652b9a7196f39e3
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/15/2021
-ms.locfileid: "104401971"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120118701"
 ---
-# <a name="id3dxeffectfindnextvalidtechnique-method"></a>Metodo ID3DXEffect:: FindNextValidTechnique
+# <a name="id3dxeffectfindnextvalidtechnique-method"></a>Metodo ID3DXEffect::FindNextValidTechnique
 
-Cerca la tecnica valida successiva, iniziando dalla tecnica dopo la tecnica specificata.
+Cerca la tecnica valida successiva, a partire dalla tecnica dopo la tecnica specificata.
 
 ## <a name="syntax"></a>Sintassi
 
@@ -41,21 +41,21 @@ HRESULT FindNextValidTechnique(
 
 <dl> <dt>
 
-*hTechnique* \[ in\]
+*hTechnique* \[ Pollici\]
 </dt> <dd>
 
 Tipo: **[D3DXHANDLE](dx9-graphics-reference-effects-constants.md)**
 
-Identificatore univoco di una tecnica. Vedere [handle (Direct3D 9)](handles.md). Specificare **null** per questo parametro per trovare la prima tecnica valida.
+Identificatore univoco di una tecnica. Vedere [Handle (Direct3D 9).](handles.md) Specificare **NULL** per questo parametro per trovare la prima tecnica valida.
 
 </dd> <dt>
 
-*pTechnique* \[ out\]
+*pTechnique* \[ Cambio\]
 </dt> <dd>
 
 Tipo: **[D3DXHANDLE](dx9-graphics-reference-effects-constants.md)\***
 
-Puntatore a un identificatore per la tecnica successiva. Se si tratta dell'ultima tecnica, viene restituito **null** . Vedere [handle (Direct3D 9)](handles.md).
+Puntatore a un identificatore per la tecnica successiva. Se si tratta dell'ultima tecnica, viene restituito **NULL.** Vedere [Handle (Direct3D 9).](handles.md)
 
 </dd> </dl>
 
@@ -71,8 +71,8 @@ Se il metodo ha esito positivo, il valore restituito è D3D \_ OK. Se il metodo 
 
 | Requisito | Valore |
 |--------------------|------------------------------------------------------------------------------------------|
-| Intestazione<br/>  | <dl> <dt>D3DX9Effect. h</dt> </dl> |
-| Libreria<br/> | <dl> <dt>D3dx9. lib</dt> </dl>     |
+| Intestazione<br/>  | <dl> <dt>D3DX9Effect.h</dt> </dl> |
+| Libreria<br/> | <dl> <dt>D3dx9.lib</dt> </dl>     |
 
 
 

@@ -1,6 +1,6 @@
 ---
-description: 'Altre informazioni su: costanti impostazioni massime'
-title: Costanti di impostazioni massime
+description: 'Altre informazioni su: Costanti Impostazioni massime'
+title: Costanti Impostazioni massime
 TOCTitle: Maximum Settings Constants
 ms:assetid: 1111051f-55af-4c33-be38-6a3973c2c815
 ms:mtpsurl: https://msdn.microsoft.com/library/Gg269189(v=EXCHG.10)
@@ -15,185 +15,58 @@ api_type:
 - COM
 api_location: ''
 ROBOTS: INDEX,FOLLOW
-ms.openlocfilehash: 3754732e59c9a90c74366558d9904fc13376db7d
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: fa6ff7044dcd43e4b51c801784d29955f3d34a15
+ms.sourcegitcommit: 4665ebce0c106bdb52eef36e544280b496b6f50b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "103879534"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "122982224"
 ---
-# <a name="maximum-settings-constants"></a>Costanti di impostazioni massime
+# <a name="maximum-settings-constants"></a>Costanti Impostazioni massime
 
 
 _**Si applica a:** Windows | Windows Server_
 
-## <a name="maximum-settings-constants"></a>Costanti di impostazioni massime
+## <a name="maximum-settings-constants"></a>Costanti Impostazioni massime
 
-Queste costanti forniscono le impostazioni massime consentite per gli elementi di un database ESE.
+Queste costanti forniscono le impostazioni massime consentite per gli elementi in un database ESE.
 
-<table>
-<colgroup>
-<col style="width: 50%" />
-<col style="width: 50%" />
-</colgroup>
-<thead>
-<tr class="header">
-<th><p>Costante/valore</p></th>
-<th><p>Descrizione</p></th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td><p>JET_BASE_NAME_LENGTH<br />
-3</p></td>
-<td><p>Imposta la lunghezza per il prefisso utilizzato per denominare i file utilizzati dal motore di database. Questa lunghezza è applicabile al nome impostato per il parametro di sistema <a href="gg269235(v=exchg.10).md">JET_paramBaseName</a> .</p></td>
-</tr>
-<tr class="even">
-<td><p>JET_MAX_COMPUTERNAME_LENGTH<br />
-15</p></td>
-<td><p>Imposta la lunghezza massima per <a href="gg269340(v=exchg.10).md">JET_SIGNATURE</a>.</p></td>
-</tr>
-<tr class="odd">
-<td><p>JET_cbBookmarkMost<br />
-256</p></td>
-<td><p>Dimensioni massime predefinite di un segnalibro. Questo valore è valido quando la dimensione della chiave viene lasciata sul valore predefinito.</p></td>
-</tr>
-<tr class="even">
-<td><p>JET_cbBookmarkMostMost<br />
-2000</p></td>
-<td><p>Dimensione massima di un segnalibro quando ESENT è configurato in modo da avere le chiavi maggiori possibili.</p>
-<p><strong>Windows 7:</strong> JET_cbBookmarkMostMost è stato introdotto in Windows 7.</p></td>
-</tr>
-<tr class="odd">
-<td><p>JET_cbNameMost<br />
-64</p></td>
-<td><p>Lunghezza massima di un oggetto, una colonna, un indice o un nome di proprietà.</p>
-<p><strong>Nota</strong>  Se Unicode, il valore è 128.</p></td>
-</tr>
-<tr class="even">
-<td><p>JET_cbFullNameMost<br />
-255</p></td>
-<td><p>Lunghezza massima di un &quot; costrutto Name.Name.Name.... &quot;</p>
-<p><strong>Nota</strong>  Se Unicode, il valore è 510.</p></td>
-</tr>
-<tr class="odd">
-<td><p>JET_cbColumnLVPageOverhead<br />
-82</p></td>
-<td><p>Questo numero può essere utilizzato per calcolare la quantità massima di un BLOB che può essere archiviato dal motore di database in una singola pagina di database. La formula è max size = JET_paramDatabasePageSize-JET_cbColumnLVPageOverhead.</p>
-<p>Questo valore è ora obsoleto. È necessario recuperare le dimensioni del blocco con valore Long con il parametro JET_paramLVChunkSizeMost.</p></td>
-</tr>
-<tr class="even">
-<td><p>JET_cbColumnMost<br />
-255</p></td>
-<td><p>Dimensione massima dei dati della colonna non di valori Long.</p></td>
-</tr>
-<tr class="odd">
-<td><p>JET_cbLVDefaultValueMost<br />
-255</p></td>
-<td><p>Dimensione massima di un valore predefinito della colonna con valore Long (LongBinary o LongText).</p></td>
-</tr>
-<tr class="even">
-<td><p>JET_cbKeyMost<br />
-255</p></td>
-<td><p>Dimensioni massime predefinite di una chiave di ordinamento o di indice.</p></td>
-</tr>
-<tr class="odd">
-<td><p>JET_cbKeyMostMost<br />
-2000</p></td>
-<td><p>Dimensioni massime configurabili di una chiave di ordinamento o di indice per qualsiasi dimensione di pagina. (Vedere JET_INDEXCREATE2. cbKeyMost)</p>
-<p><strong>Windows 7:</strong> JET_cbKeyMostMost è stato introdotto nel sistema operativo Windows 7.</p></td>
-</tr>
-<tr class="even">
-<td><p>JET_cbKeyMost2KBytePage<br />
-500</p></td>
-<td><p>Dimensioni massime consentite configurabili per una chiave di indice in un database che utilizza pagine a 2048 byte. Per ulteriori informazioni, vedere <a href="gg269186(v=exchg.10).md">JET_INDEXCREATE</a> .</p>
-<p><strong>Windows Vista:</strong> JET_cbKeyMost2KBytePage è stato introdotto nel sistema operativo Windows Vista.</p></td>
-</tr>
-<tr class="odd">
-<td><p>JET_cbKeyMost4KBytePage<br />
-1000</p></td>
-<td><p>Dimensioni massime consentite configurabili per una chiave di indice in un database che utilizza pagine a 4096 byte. Per ulteriori informazioni, vedere <a href="gg269186(v=exchg.10).md">JET_INDEXCREATE</a> .</p>
-<p><strong>Windows Vista:</strong> JET_cbKeyMost4KBytePage è stato introdotto in Windows Vista.</p></td>
-</tr>
-<tr class="even">
-<td><p>JET_cbKeyMost8KBytePage<br />
-2000</p></td>
-<td><p>Dimensioni massime consentite configurabili per una chiave di indice in un database che utilizza pagine a 8192 byte. Per ulteriori informazioni, vedere <a href="gg269186(v=exchg.10).md">JET_INDEXCREATE</a> .</p>
-<p><strong>Windows Vista:  </strong> JET_cbKeyMost8KBytePage è stato introdotto in Windows Vista</p></td>
-</tr>
-<tr class="odd">
-<td><p>JET_cbKeyMostMin<br />
-255</p></td>
-<td><p>Dimensioni massime consentite minime per una chiave di indice. Per ulteriori informazioni, vedere <a href="gg269186(v=exchg.10).md">JET_INDEXCREATE</a> .</p>
-<p><strong>Windows Vista:  </strong> JET_cbKeyMostMin è stato introdotto in Windows Vista.</p></td>
-</tr>
-<tr class="even">
-<td><p>JET_cbLimitKeyMost<br />
-256</p></td>
-<td><p>Dimensione massima della chiave quando la chiave viene formata usando un limite <em>grbit</em>, ad esempio JET_bitStrLimit, che viene usato nella funzione <a href="gg269329(v=exchg.10).md">JetMakeKey</a> .</p></td>
-</tr>
-<tr class="odd">
-<td><p>JET_cbPrimaryKeyMost<br />
-255</p></td>
-<td><p>Dimensione massima dell'indice primario. Questa operazione è ora obsoleta.</p></td>
-</tr>
-<tr class="even">
-<td><p>JET_cbSecondaryKeyMost<br />
-255</p></td>
-<td><p>Dimensione massima dell'indice secondario. Questa operazione è ora obsoleta.</p></td>
-</tr>
-<tr class="odd">
-<td><p>JET_ccolKeyMost<br />
-12</p></td>
-<td><p>Numero massimo di componenti in una chiave di ordinamento o di indice.</p>
-<p><strong>Windows Vista:  </strong> In Windows Vista e nelle versioni successive di Windows il valore è 16.</p></td>
-</tr>
-<tr class="even">
-<td><p>JET_ccolMost<br />
-0x0000fee0</p></td>
-<td><p>Numero massimo di colonne consentite in una tabella.</p>
-<p><strong>Windows XP:  </strong> Il valore 0x0000fee0 viene utilizzato in Windows XP e versioni successive e successive di Windows</p>
-<p><strong>Windows 2000:  </strong> Il valore 0x00007ffe viene usato in Windows 2000.</p></td>
-</tr>
-<tr class="odd">
-<td><p>JET_ccolFixedMost<br />
-0x0000007F</p></td>
-<td><p>Numero massimo di colonne fisse consentite in una tabella, attualmente 127.</p></td>
-</tr>
-<tr class="even">
-<td><p>JET_ccolVarMost<br />
-0x00000080</p></td>
-<td><p>Numero massimo di colonne a lunghezza variabile che possono essere contenute in una tabella, attualmente 128.</p></td>
-</tr>
-<tr class="odd">
-<td><p>JET_ccolTaggedMost<br />
-(JET_ccolMost-0x000000FF)</p></td>
-<td><p>Numero massimo di colonne con tag che possono essere contenute in una tabella, attualmente 64993.</p></td>
-</tr>
-</tbody>
-</table>
+
+| <p>Costante/valore</p> | <p>Descrizione</p> | 
+|-----------------------|--------------------|
+| <p>JET_BASE_NAME_LENGTH<br />3</p> | <p>Imposta la lunghezza del prefisso utilizzato per assegnare un nome ai file utilizzati dal motore di database. Questa lunghezza è applicabile al nome impostato per il parametro <a href="gg269235(v=exchg.10).md">JET_paramBaseName</a> di sistema.</p> | 
+| <p>JET_MAX_COMPUTERNAME_LENGTH<br />15</p> | <p>Imposta la lunghezza massima per <a href="gg269340(v=exchg.10).md">JET_SIGNATURE</a>.</p> | 
+| <p>JET_cbBookmarkMost<br />256</p> | <p>Dimensione massima predefinita di un segnalibro. Questo valore è valido quando la dimensione della chiave viene lasciata al valore predefinito.</p> | 
+| <p>JET_cbBookmarkMostMost<br />2000</p> | <p>Dimensione massima di un segnalibro quando esent è configurato per avere le chiavi più grandi possibili.</p><p><strong>Windows 7:</strong> JET_cbBookmarkMostMost è stato introdotto in Windows 7.</p> | 
+| <p>JET_cbNameMost<br />64</p> | <p>Lunghezza massima di un oggetto, una colonna, un indice o un nome di proprietà.</p><p><strong>Nota</strong>  Se Unicode, il valore è 128.</p> | 
+| <p>JET_cbFullNameMost<br />255</p> | <p>Lunghezza massima di un oggetto "name.name.name..." Costruire.</p><p><strong>Nota</strong>  Se Unicode, il valore è 510.</p> | 
+| <p>JET_cbColumnLVPageOverhead<br />82</p> | <p>Questo numero può essere usato per calcolare la quantità massima di UN BLOB che può essere archiviata dal motore di database in una singola pagina di database. La formula è max size = JET_paramDatabasePageSize-JET_cbColumnLVPageOverhead.</p><p>Questo valore è ora obsoleto. La dimensione del blocco di valore lungo deve essere recuperata con il JET_paramLVChunkSizeMost parametro .</p> | 
+| <p>JET_cbColumnMost<br />255</p> | <p>Dimensione massima dei dati delle colonne con valori non lunghi.</p> | 
+| <p>JET_cbLVDefaultValueMost<br />255</p> | <p>Dimensione massima del valore predefinito di una colonna long-value (LongBinary o LongText).</p> | 
+| <p>JET_cbKeyMost<br />255</p> | <p>Dimensione massima predefinita di una chiave di ordinamento o di indice.</p> | 
+| <p>JET_cbKeyMostMost<br />2000</p> | <p>Dimensione massima configurabile di una chiave di ordinamento o di indice per qualsiasi dimensione di pagina. (Vedere JET_INDEXCREATE2.cbKeyMost)</p><p><strong>Windows 7:</strong> JET_cbKeyMostMost è stato introdotto nel sistema operativo Windows 7.</p> | 
+| <p>JET_cbKeyMost2KBytePage<br />500</p> | <p>Dimensione massima configurabile consentita per una chiave di indice in un database che utilizza pagine di 2048 byte. Vedere <a href="gg269186(v=exchg.10).md">JET_INDEXCREATE</a> per altre informazioni.</p><p><strong>Windows Vista:</strong> JET_cbKeyMost2KBytePage è stato introdotto nel sistema operativo Windows Vista.</p> | 
+| <p>JET_cbKeyMost4KBytePage<br />1000</p> | <p>Dimensione massima configurabile consentita per una chiave di indice in un database che usa pagine di 4096 byte. Vedere <a href="gg269186(v=exchg.10).md">JET_INDEXCREATE</a> per altre informazioni.</p><p><strong>Windows Vista:</strong> JET_cbKeyMost4KBytePage è stato introdotto in Windows Vista.</p> | 
+| <p>JET_cbKeyMost8KBytePage<br />2000</p> | <p>Dimensione massima configurabile consentita per una chiave di indice in un database che usa pagine di 8192 byte. Vedere <a href="gg269186(v=exchg.10).md">JET_INDEXCREATE</a> per altre informazioni.</p><p><strong>Windows Vista:</strong> JET_cbKeyMost8KBytePage è stato introdotto in Windows Vista</p> | 
+| <p>JET_cbKeyMostMin<br />255</p> | <p>Dimensione massima minima consentita per una chiave di indice. Vedere <a href="gg269186(v=exchg.10).md">JET_INDEXCREATE</a> per altre informazioni.</p><p><strong>Windows Vista:</strong> JET_cbKeyMostMin è stato introdotto in Windows Vista.</p> | 
+| <p>JET_cbLimitKeyMost<br />256</p> | <p>Dimensione massima della chiave quando la chiave viene formata usando un limite <em>grbit,</em>ad esempio JET_bitStrLimit, usato nella <a href="gg269329(v=exchg.10).md">funzione JetMakeKey.</a></p> | 
+| <p>JET_cbPrimaryKeyMost<br />255</p> | <p>Dimensione massima dell'indice primario. Questo è ora obsoleto.</p> | 
+| <p>JET_cbSecondaryKeyMost<br />255</p> | <p>Dimensione massima dell'indice secondario. Questo è ora obsoleto.</p> | 
+| <p>JET_ccolKeyMost<br />12</p> | <p>Numero massimo di componenti in una chiave di ordinamento o di indice.</p><p><strong>Windows Vista:</strong> In Windows Vista e versioni successive di Windows il valore è 16.</p> | 
+| <p>JET_ccolMost<br />0x0000fee0</p> | <p>Numero massimo di colonne consentite in una tabella.</p><p><strong>Windows XP:</strong> Il valore 0x0000fee0 viene usato in Windows XP e versioni successive e successive di Windows</p><p><strong>Windows 2000:</strong> Il valore 0x00007ffe viene usato in Windows 2000.</p> | 
+| <p>JET_ccolFixedMost<br />0x0000007f</p> | <p>Numero massimo di colonne fisse consentite in una tabella, attualmente 127.</p> | 
+| <p>JET_ccolVarMost<br />0x00000080</p> | <p>Numero massimo di colonne a lunghezza variabile che possono essere contenute in una tabella, attualmente 128.</p> | 
+| <p>JET_ccolTaggedMost<br />( JET_ccolMost - 0x000000ff )</p> | <p>Numero massimo di colonne con tag che possono essere contenute in una tabella, attualmente 64993.</p> | 
+
 
 
 ### <a name="requirements"></a>Requisiti
 
-<table>
-<colgroup>
-<col style="width: 50%" />
-<col style="width: 50%" />
-</colgroup>
-<tbody>
-<tr class="odd">
-<td><p><strong>Client</strong></p></td>
-<td><p>Richiede Windows Vista, Windows XP o Windows 2000 Professional.</p></td>
-</tr>
-<tr class="even">
-<td><p><strong>Server</strong></p></td>
-<td><p>Richiede Windows Server 2008, Windows Server 2003 o Windows 2000 Server.</p></td>
-</tr>
-<tr class="odd">
-<td><p><strong>Intestazione</strong></p></td>
-<td><p>Dichiarata in esent. h.</p></td>
-</tr>
-</tbody>
-</table>
+
+| Requisito | Valore |
+|------------|----------|
+| <p><strong>Client</strong></p> | <p>Richiede Windows Vista, Windows XP o Windows 2000 Professional.</p> | 
+| <p><strong>Server</strong></p> | <p>Richiede Windows Server 2008, Windows Server 2003 o Windows 2000 Server.</p> | 
+| <p><strong>Intestazione</strong></p> | <p>Dichiarato in Esent.h.</p> | 
+
 

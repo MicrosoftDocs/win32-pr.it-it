@@ -1,9 +1,9 @@
 ---
-title: Messaggio HDM_CREATEDRAGIMAGE (COMmctrl. h)
-description: Crea una versione semi-trasparente dell'immagine di un elemento da utilizzare come immagine di trascinamento. È possibile inviare questo messaggio in modo esplicito o usare la \_ macro CreateDragImage dell'intestazione.
+title: HDM_CREATEDRAGIMAGE messaggio (Commctrl.h)
+description: Crea una versione semitrasparente dell'immagine di un elemento da usare come immagine di trascinamento. È possibile inviare questo messaggio in modo esplicito o usare la \_ macro Header CreateDragImage.
 ms.assetid: 1b9dc515-d327-4634-a424-cc15a32f0f7c
 keywords:
-- Controlli di Windows Message HDM_CREATEDRAGIMAGE
+- HDM_CREATEDRAGIMAGE dei messaggi Windows controlli
 topic_type:
 - apiref
 api_name:
@@ -14,16 +14,16 @@ api_type:
 - HeaderDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: d9e801ad9771205b5f2e6df8e37bb0a0ad7f0bc6
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: 1507f3e72ce75394aaad834fe5c0d876fc579a671ad8f2df00865b2278ad6e32
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "104048522"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120047231"
 ---
-# <a name="hdm_createdragimage-message"></a>\_Messaggio HDM CREATEDRAGIMAGE
+# <a name="hdm_createdragimage-message"></a>Messaggio HDM \_ CREATEDRAGIMAGE
 
-Crea una versione semi-trasparente dell'immagine di un elemento da utilizzare come immagine di trascinamento. È possibile inviare questo messaggio in modo esplicito o usare la macro [**\_ CreateDragImage dell'intestazione**](/windows/desktop/api/Commctrl/nf-commctrl-header_createdragimage) .
+Crea una versione semitrasparente dell'immagine di un elemento da usare come immagine di trascinamento. È possibile inviare questo messaggio in modo esplicito o usare la macro [**\_ Header CreateDragImage.**](/windows/desktop/api/Commctrl/nf-commctrl-header_createdragimage)
 
 ## <a name="parameters"></a>Parametri
 
@@ -32,7 +32,7 @@ Crea una versione semi-trasparente dell'immagine di un elemento da utilizzare co
 *wParam* 
 </dt> <dd>
 
-Indice in base zero dell'elemento all'interno del controllo intestazione. L'immagine assegnata a questo elemento rappresenta la base per l'immagine trasparente.
+Indice in base zero dell'elemento all'interno del controllo intestazione. L'immagine assegnata a questo elemento è la base per l'immagine trasparente.
 
 </dd> <dt>
 
@@ -49,9 +49,9 @@ Restituisce un handle a un elenco di immagini che contiene la nuova immagine com
 
 | Requisito | Valore |
 |-------------------------------------|---------------------------------------------------------------------------------------|
-| Client minimo supportato<br/> | \[Solo app desktop di Windows Vista\]<br/>                                        |
-| Server minimo supportato<br/> | \[Solo app desktop Windows Server 2003\]<br/>                                  |
-| Intestazione<br/>                   | <dl> <dt>Commctrl. h</dt> </dl> |
+| Client minimo supportato<br/> | Windows Solo \[ app desktop di Vista\]<br/>                                        |
+| Server minimo supportato<br/> | Windows Solo app desktop server 2003 \[\]<br/>                                  |
+| Intestazione<br/>                   | <dl> <dt>Commctrl.h</dt> </dl> |
 
 
 
