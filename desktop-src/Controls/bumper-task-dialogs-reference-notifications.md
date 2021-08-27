@@ -1,31 +1,31 @@
 ---
-title: Notifiche finestra di dialogo attività
-description: Notifiche finestra di dialogo attività
+title: Notifiche della finestra di dialogo attività
+description: Notifiche della finestra di dialogo attività
 ms.assetid: 1cd6adf4-f844-4195-9e92-38bf1b05cda1
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 8d4168a02a293a5a8aef83443b93e5de0fe9793d
-ms.sourcegitcommit: 92e74c99f8f4d097676959d0c317f533c2400a80
+ms.openlocfilehash: 2ba40f051ab8344e0e0ed603afb9155b30ca774cc5affea5ffe8696c37db73d3
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/09/2021
-ms.locfileid: "104234833"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120063691"
 ---
-# <a name="task-dialog-notifications"></a>Notifiche finestra di dialogo attività
+# <a name="task-dialog-notifications"></a>Notifiche della finestra di dialogo attività
 
 ## <a name="in-this-section"></a>Contenuto della sezione
 
--   [\_pulsante TDN \_ selezionato](tdn-button-clicked.md)
--   [TDN \_ creato](tdn-created.md)
--   [TDN \_ distrutto](tdn-destroyed.md)
--   [\_finestra di dialogo TDN \_ costruita](tdn-dialog-constructed.md)
--   [\_pulsante TDN expando \_ \_ selezionato](tdn-expando-button-clicked.md)
+-   [PULSANTE TDN \_ SU CUI È STATO FATTO \_ CLIC](tdn-button-clicked.md)
+-   [TDN \_ CREATO](tdn-created.md)
+-   [TDN \_ ELIMINATO](tdn-destroyed.md)
+-   [FINESTRA DI DIALOGO TDN \_ \_ COSTRUITA](tdn-dialog-constructed.md)
+-   [PULSANTE EXPANDO TDN \_ SU CUI È STATO FATTO \_ \_ CLIC](tdn-expando-button-clicked.md)
 -   [Guida di TDN \_](tdn-help.md)
--   [\_collegamento ipertestuale TDN \_ selezionato](tdn-hyperlink-clicked.md)
--   [TDN \_ navigato](tdn-navigated.md)
--   [\_pulsante di opzione TDN \_ \_ selezionato](tdn-radio-button-clicked.md)
--   [\_timer TDN](tdn-timer.md)
--   [\_Verifica TDN \_ clic](tdn-verification-clicked.md)
+-   [COLLEGAMENTO IPERTESTUALE TDN \_ \_ SELEZIONATO](tdn-hyperlink-clicked.md)
+-   [TDN \_ ESPLORATO](tdn-navigated.md)
+-   [PULSANTE DI OPZIONE TDN \_ \_ \_ SELEZIONATO](tdn-radio-button-clicked.md)
+-   [TDN \_ TIMER](tdn-timer.md)
+-   [VERIFICA TDN \_ SU CUI È STATO FATTO \_ CLIC](tdn-verification-clicked.md)
 
  
 

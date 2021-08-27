@@ -4,12 +4,12 @@ ms.assetid: c3047706-affd-4feb-9d48-cfb4c7dd6fa0
 title: Elemento Margin
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: b0ff764585919ff144ebc25ac568caf1af74410a2f337beb03d5ce484f7d1abe
-ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
+ms.openlocfilehash: 78c264c2470d070353d1fd19340a161cf765bc05
+ms.sourcegitcommit: 9b5faa61c38b2d0c432b7f2dbee8c127b0e28a7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119350441"
+ms.lasthandoff: 08/19/2021
+ms.locfileid: "122478667"
 ---
 # <a name="margin-element"></a>Elemento Margin
 
@@ -38,65 +38,14 @@ Nessuno..
 
 
 
-<table>
-<colgroup>
-<col style="width: 20%" />
-<col style="width: 20%" />
-<col style="width: 20%" />
-<col style="width: 20%" />
-<col style="width: 20%" />
-</colgroup>
-<thead>
-<tr class="header">
-<th>Attributo</th>
-<th>Type</th>
-<th>Obbligatoria</th>
-<th>Descrizione</th>
-<th>Valori possibili</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td><strong>Style</strong></td>
-<td><a href="linelayoutstyletype-simple-type.md"><strong>SimpleType LineLayoutStyleType</strong></a></td>
-<td>Necessario</td>
-<td>Specifica il tipo di linea da disegnare.</td>
-<td><ul>
-<li>Nessuno</li>
-<li>Tinta unita</li>
-<li>Trattino</li>
-<li>Punto</li>
-<li>DashDot</li>
-<li>DashDotDot</li>
-<li>Double</li>
-</ul></td>
-</tr>
-<tr class="even">
-<td><strong>Colore</strong></td>
-<td><a href="colortype-simple-type.md"><strong>SimpleType ColorType</strong></a></td>
-<td>Facoltativo</td>
-<td>Colore dell'elemento.</td>
-<td>Valore RGB esadecimale. Corrisponde all'espressione regolare seguente: #[0-9a-zA-Z] {6} . Ad esempio, #4a79B5.<br/></td>
-</tr>
-<tr class="odd">
-<td><strong>Tipo</strong></td>
-<td><a href="margintypetype-simple-type.md"><strong>SimpleType MarginTypeType</strong></a></td>
-<td>Facoltativo</td>
-<td>Indica il margine sinistro o destro.</td>
-<td><ul>
-<li>Sinistra</li>
-<li>Destra</li>
-</ul></td>
-</tr>
-<tr class="even">
-<td><strong>Spaziatura</strong></td>
-<td><strong>xs:nonNegativeInteger</strong></td>
-<td>Facoltativo</td>
-<td>Spaziatura tra il bordo della pagina e il margine.</td>
-<td>Qualsiasi numero intero non negativo.</td>
-</tr>
-</tbody>
-</table>
+
+| Attributo | Type | Obbligatoria | Descrizione | Valori possibili | 
+|-----------|------|----------|-------------|-----------------|
+| <strong>Style</strong> | <a href="linelayoutstyletype-simple-type.md"><strong>SimpleType LineLayoutStyleType</strong></a> | Obbligatoria | Specifica il tipo di linea da disegnare. | <ul><li>Nessuno</li><li>Tinta unita</li><li>Trattino</li><li>Punto</li><li>DashDot</li><li>DashDotDot</li><li>Double</li></ul> | 
+| <strong>Colore</strong> | <a href="colortype-simple-type.md"><strong>SimpleType ColorType</strong></a> | Facoltativo | Colore dell'elemento. | Valore RGB esadecimale. Corrisponde all'espressione regolare seguente: #[0-9a-zA-Z] {6} . Ad esempio, #4a79B5.<br /> | 
+| <strong>Tipo</strong> | <a href="margintypetype-simple-type.md"><strong>SimpleType MarginTypeType</strong></a> | Facoltativo | Indica il margine sinistro o destro. | <ul><li>Sinistra</li><li>Destra</li></ul> | 
+| <strong>Spaziatura</strong> | <strong>xs:nonNegativeInteger</strong> | Facoltativo | Spaziatura tra il bordo della pagina e il margine. | Qualsiasi numero intero non negativo. | 
+
 
 
 

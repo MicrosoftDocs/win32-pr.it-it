@@ -1,12 +1,12 @@
 ---
-title: Metodo ConvertLicenses della classe Win32_TSLicenseKeyPack
+title: Metodo ConvertLicenses della Win32_TSLicenseKeyPack classe
 description: Converte le licenze nel Key Pack corrente.
 ms.assetid: 38600144-8fa2-4f9a-b7a4-7fafc304e7cb
 ms.tgt_platform: multiple
 keywords:
-- Servizi Desktop remoto del metodo ConvertLicenses
-- Metodo ConvertLicenses Servizi Desktop remoto, classe Win32_TSLicenseKeyPack
-- Classe Win32_TSLicenseKeyPack Servizi Desktop remoto, metodo ConvertLicenses
+- Metodo ConvertLicenses Servizi Desktop remoto
+- Metodo ConvertLicenses Servizi Desktop remoto , Win32_TSLicenseKeyPack classe
+- Win32_TSLicenseKeyPack classe Servizi Desktop remoto , metodo ConvertLicenses
 topic_type:
 - apiref
 api_name:
@@ -17,16 +17,16 @@ api_type:
 - COM
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 54f37b1d9804c5f14f89a7ff6b48f5f8fcbdc60b
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: edfb65ea7429af14e633c8dee655b4977427e3a685e1404856fd9b5f2daf2ce4
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "104400335"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120099571"
 ---
-# <a name="convertlicenses-method-of-the-win32_tslicensekeypack-class"></a>Metodo ConvertLicenses della \_ classe TSLicenseKeyPack Win32
+# <a name="convertlicenses-method-of-the-win32_tslicensekeypack-class"></a>Metodo ConvertLicenses della classe \_ Win32 TSLicenseKeyPack
 
-Converte le licenze nel Key Pack corrente. Se la licenza è una licenza per utente, viene convertita in una licenza per dispositivo. Se la licenza è una licenza per ogni dispositivo, viene convertita in una licenza per singolo utente.
+Converte le licenze nel Key Pack corrente. Se la licenza è una licenza per utente, viene convertita in una licenza per dispositivo. Se la licenza è una licenza per dispositivo, viene convertita in una licenza per utente.
 
 ## <a name="syntax"></a>Sintassi
 
@@ -44,23 +44,23 @@ uint32 ConvertLicenses(
 
 <dl> <dt>
 
-*Numero* \[ di in\]
+*Conteggio* \[ Pollici\]
 </dt> <dd>
 
 Numero di licenze da convertire.
 
 </dd> <dt>
 
-*KeypackID* \[ out\]
+*KeypackID* \[ Cambio\]
 </dt> <dd>
 
-Identificatore del Key Pack risultante.
+Identificatore del key pack risultante.
 
 </dd> </dl>
 
 ## <a name="return-value"></a>Valore restituito
 
-Se il metodo ha esito positivo, restituisce zero. Se il metodo ha esito negativo, restituisce un valore diverso da zero. Per un elenco di codici di errore, vedere [Servizi Desktop remoto codici di errore del provider WMI](terminal-services-wmi-provider-error-codes.md).
+Se il metodo ha esito positivo, restituisce zero. Se il metodo ha esito negativo, restituisce un valore diverso da zero. Per un elenco dei codici di errore, vedere Servizi Desktop remoto [di errore del provider WMI.](terminal-services-wmi-provider-error-codes.md)
 
 ## <a name="requirements"></a>Requisiti
 
@@ -71,7 +71,7 @@ Se il metodo ha esito positivo, restituisce zero. Se il metodo ha esito negativo
 | Client minimo supportato<br/> | Nessuno supportato<br/>                                                                 |
 | Server minimo supportato<br/> | Windows Server 2012<br/>                                                            |
 | Spazio dei nomi<br/>                | Root\\CIMv2<br/>                                                                    |
-| MOF<br/>                      | <dl> <dt>TlsWmiProv. mof</dt> </dl> |
+| MOF<br/>                      | <dl> <dt>TlsWmiProv.mof</dt> </dl> |
 | DLL<br/>                      | <dl> <dt>TlsWmiProv.dll</dt> </dl> |
 
 
@@ -80,7 +80,7 @@ Se il metodo ha esito positivo, restituisce zero. Se il metodo ha esito negativo
 
 <dl> <dt>
 
-[**\_TSLicenseKeyPack Win32**](win32-tslicensekeypack.md)
+[**Win32 \_ TSLicenseKeyPack**](win32-tslicensekeypack.md)
 </dt> </dl>
 
  

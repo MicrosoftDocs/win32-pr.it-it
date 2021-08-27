@@ -3,7 +3,7 @@ title: Attributo WM/ContentDistributor
 description: L'attributo WM/ContentDistributor è il nome del server di distribuzione dell'elemento.
 ms.assetid: 45f548a4-4059-464c-af93-1ba09e6b8d1e
 keywords:
-- Media Player Windows per gli attributi WM/ContentDistributor
+- Attributi WM/ContentDistributor Windows Media Player
 topic_type:
 - apiref
 api_name:
@@ -12,21 +12,21 @@ api_type:
 - NA
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 420e3e05a68f89d8e37b8ef95dd1247802442700
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: ba79ab07b8579961db70038ef80f79da974ba5dff6d3ac88781be5d4f046f088
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "106327026"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120122710"
 ---
 # <a name="wmcontentdistributor-attribute"></a>Attributo WM/ContentDistributor
 
-L'attributo **WM/contentdistributor** è il nome del server di distribuzione dell'elemento.
+**L'attributo WM/ContentDistributor** è il nome del server di distribuzione dell'elemento.
 
 ## <a name="applies-to"></a>Si applica a
 
 -   [Elementi audio](audio-item-attributes.md)
--   [Attributi di file di Windows Media usati di frequente](commonly-used-windows-media-file-attributes.md)
+-   [Attributi dei Windows file multimediali comunemente usati](commonly-used-windows-media-file-attributes.md)
 -   [Playlist](playlist-attributes-ref.md)
 -   [Elementi video](video-item-attributes.md)
 
@@ -34,11 +34,11 @@ L'attributo **WM/contentdistributor** è il nome del server di distribuzione del
 
 Questo attributo viene archiviato sia nella libreria che nel file multimediale digitale.
 
-**Contentdistributor** è un alias per questo attributo.
+**ContentDistributor** è un alias per questo attributo.
 
-La costante Windows Media Format SDK per questo attributo è g \_ wszWMContentDistributor.
+La Windows Media Format SDK per questo attributo è g \_ wszWMContentDistributor.
 
-Per determinare se è possibile modificare il valore di questo attributo, usare il metodo [Media. isReadOnlyItem](media-isreadonlyitem.md) .
+Per determinare se è possibile modificare il valore di questo attributo, usare il [metodo Media.isReadOnlyItem.](media-isreadonlyitem.md)
 
 ## <a name="requirements"></a>Requisiti
 
@@ -46,7 +46,7 @@ Per determinare se è possibile modificare il valore di questo attributo, usare 
 
 | Requisito | Valore |
 |--------------------|---------------------------------------------------|
-| Versione<br/> | Windows Media Player 9 serie o versione successiva<br/> |
+| Versione<br/> | Windows Media Player serie 9 o successive<br/> |
 
 
 
@@ -54,7 +54,7 @@ Per determinare se è possibile modificare il valore di questo attributo, usare 
 
 <dl> <dt>
 
-[**Riferimento agli attributi**](attribute-reference.md)
+[**Informazioni di riferimento su attributi**](attribute-reference.md)
 </dt> </dl>
 
  

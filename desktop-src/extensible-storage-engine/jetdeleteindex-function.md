@@ -20,12 +20,12 @@ api_type:
 api_location:
 - ESENT.DLL
 ROBOTS: INDEX,FOLLOW
-ms.openlocfilehash: a934581754477f336415926716a9a8c7e6097d81
-ms.sourcegitcommit: 4665ebce0c106bdb52eef36e544280b496b6f50b
+ms.openlocfilehash: 4170bd4def6ad60953189923252e2d775765b03d
+ms.sourcegitcommit: 9b5faa61c38b2d0c432b7f2dbee8c127b0e28a7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/26/2021
-ms.locfileid: "122985894"
+ms.lasthandoff: 08/19/2021
+ms.locfileid: "122478017"
 ---
 # <a name="jetdeleteindex-function"></a>Funzione JetDeleteIndex
 
@@ -66,7 +66,7 @@ Questa funzione restituisce il [JET_ERR](./jet-err.md) dati con uno dei codici r
 | <p>Codice restituito</p> | <p>Descrizione</p> | 
 |--------------------|--------------------|
 | <p>JET_errSuccess</p> | <p>Operazione riuscita.</p> | 
-| <p>JET_errFixedDDL</p> | <p>Si è tentato di eliminare un indice da una tabella fissa, ad esempio un indice creato con JET_bitTableCreateFixedDDL.</p> | 
+| <p>JET_errFixedDDL</p> | <p>Si è tentato di eliminare un indice da una tabella fissa, ad esempio uno creato con JET_bitTableCreateFixedDDL.</p> | 
 | <p>JET_errFixedInheritedDDL</p> | <p>Si è tentato di eliminare un indice da una tabella modello. Una tabella modello ha una DDL fissa.</p> | 
 | <p>JET_errIndexNotFound</p> | <p>Impossibile trovare l'indice denominato in <em>szIndexName.</em></p> | 
 | <p>JET_errPermissionDenied</p> | <p>Impossibile aggiornare la tabella perché è stata aperta in sola lettura.</p> | 
@@ -84,14 +84,7 @@ In caso di esito positivo, la valuta viene impostata prima del primo record.
 #### <a name="requirements"></a>Requisiti
 
 
-| Requisito | Valore |
-|------------|----------|
-| <p><strong>Client</strong></p> | <p>Richiede Windows Vista, Windows XP o Windows 2000 Professional.</p> | 
-| <p><strong>Server</strong></p> | <p>Richiede Windows Server 2008, Windows Server 2003 o Windows 2000 Server.</p> | 
-| <p><strong>Intestazione</strong></p> | <p>Dichiarato in Esent.h.</p> | 
-| <p><strong>Libreria</strong></p> | <p>Usare ESENT.lib.</p> | 
-| <p><strong>DLL</strong></p> | <p>Richiede ESENT.dll.</p> | 
-| <p><strong>Unicode</strong></p> | <p>Implementato come <strong>JetDeleteIndexW</strong> (Unicode) e <strong>JetDeleteIndexA</strong> (ANSI).</p> | 
+| | | <p><strong>Client</strong></p> | <p>Richiede Windows Vista, Windows XP o Windows 2000 Professional.</p> | | <p><strong>Server</strong></p> | <p>Richiede Windows Server 2008, Windows Server 2003 o Windows 2000 Server.</p> | | <p><strong>Intestazione</strong></p> | <p>Dichiarato in Esent.h.</p> | | <p><strong>Libreria</strong></p> | <p>Usare ESENT.lib.</p> | | <p><strong>DLL</strong></p> | <p>Richiede ESENT.dll.</p> | | <p><strong>Unicode</strong></p> | <p>Implementato come <strong>JetDeleteIndexW</strong> (Unicode) e <strong>JetDeleteIndexA</strong> (ANSI).</p> | 
 
 
 

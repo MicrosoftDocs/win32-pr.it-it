@@ -1,7 +1,7 @@
 ---
-description: Rappresenta un evento di errore di memoria del computer Check Architecture (MCA). Questa classe è disponibile solo nei sistemi Windows a 64 bit.
+description: Rappresenta un evento di errore di memoria mca (Machine Check Architecture). Questa classe è disponibile solo nei sistemi Windows a 64 bit.
 ms.assetid: 0db1d526-e2c3-4e48-90c8-cbcd9121040e
-title: Classe MSMCAEvent_MemoryError
+title: MSMCAEvent_MemoryError classe
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -39,18 +39,18 @@ api_type:
 - DllExport
 api_location:
 - Wmiprov.dll
-ms.openlocfilehash: 8dce82b8fa7a87676c34a9c6f26f43e4db10e227
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: f93ac9ddda978a56ceb0e258766c2e60703acc94e92c551e673a9294e2cb984c
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "106316600"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120120981"
 ---
-# <a name="msmcaevent_memoryerror-class"></a>\_Classe MSMCAEvent MemoryError
+# <a name="msmcaevent_memoryerror-class"></a>Classe \_ MemoryError MSMCAEvent
 
-La classe **MSMCAEvent \_ MemoryError** rappresenta un evento di errore di memoria del computer Check Architecture (MCA). Questa classe è disponibile solo nei sistemi Windows a 64 bit.
+La **classe MSMCAEvent \_ MemoryError** rappresenta un evento di errore di memoria mca (Machine Check Architecture). Questa classe è disponibile solo nei sistemi Windows a 64 bit.
 
-La sintassi seguente è semplificata dal codice Managed Object Format (MOF) e include tutte le relative proprietà ereditate. Le proprietà e i metodi sono in ordine alfabetico e non in ordine MOF.
+La sintassi seguente è semplificata dal Managed Object Format (MOF) e include tutte le proprietà ereditate. Le proprietà e i metodi sono in ordine alfabetico, non in ordine MOF.
 
 ## <a name="syntax"></a>Sintassi
 
@@ -88,33 +88,33 @@ class MSMCAEvent_MemoryError : WMIEvent
 
 ## <a name="members"></a>Members
 
-La **classe \_ MemoryError di MSMCAEvent** dispone di questi tipi di membri:
+La **classe MSMCAEvent \_ MemoryError** ha questi tipi di membri:
 
 -   [Proprietà](#properties)
 
 ### <a name="properties"></a>Proprietà
 
-La **classe \_ MemoryError di MSMCAEvent** dispone di queste proprietà.
+La **classe MSMCAEvent \_ MemoryError** ha queste proprietà.
 
 <dl> <dt>
 
 **Attivo**
 </dt> <dd> <dl> <dt>
 
-Tipo di dati: **Boolean**
+Tipo di dati: **booleano**
 </dt> <dt>
 
 Tipo di accesso: sola lettura
 </dt> </dl>
 
-**True** se questa istanza della classe è attiva; in caso contrario, **false**.
+**TRUE** se questa istanza della classe è attiva; in caso contrario, **FALSE.**
 
 </dd> <dt>
 
 **AdditionalErrors**
 </dt> <dd> <dl> <dt>
 
-Tipo di dati: **UInt32**
+Tipo di dati: **uint32**
 </dt> <dt>
 
 Tipo di accesso: sola lettura
@@ -124,10 +124,10 @@ Numero di errori aggiuntivi nel record MCA.
 
 </dd> <dt>
 
-**\_dati specifici del bus \_**
+**DATI \_ SPECIFICI DEL \_ BUS**
 </dt> <dd> <dl> <dt>
 
-Tipo di dati: **UInt64**
+Tipo di dati: **uint64**
 </dt> <dt>
 
 Tipo di accesso: sola lettura
@@ -135,14 +135,14 @@ Tipo di accesso: sola lettura
 
 Dati dipendenti dal bus specifici dell'OEM.
 
-Per ulteriori informazioni sull'utilizzo di valori **UInt64** negli script, vedere [scripting in WMI](/previous-versions//aa393262(v=vs.85)).
+Per altre informazioni sull'uso **dei valori uint64** negli script, vedere [Scripting in WMI](/previous-versions//aa393262(v=vs.85)).
 
 </dd> <dt>
 
-**CPU**
+**Cpu**
 </dt> <dd> <dl> <dt>
 
-Tipo di dati: **UInt32**
+Tipo di dati: **uint32**
 </dt> <dt>
 
 Tipo di accesso: sola lettura
@@ -155,7 +155,7 @@ CPU che ha segnalato l'errore. Questa proprietà si applica solo a un sistema mu
 **ErrorSeverity**
 </dt> <dd> <dl> <dt>
 
-Tipo di dati: **Uint8**
+Tipo di dati: **uint8**
 </dt> <dt>
 
 Tipo di accesso: sola lettura
@@ -180,7 +180,7 @@ Livello di gravità dell'errore segnalato.
 **InstanceName**
 </dt> <dd> <dl> <dt>
 
-Tipo di dati: **String**
+Tipo di dati: **stringa**
 </dt> <dt>
 
 Tipo di accesso: sola lettura
@@ -189,120 +189,120 @@ Tipo di accesso: sola lettura
 Qualificatori: [ **chiave**](/windows/desktop/WmiSdk/standard-qualifiers)
 </dt> </dl>
 
-Identificatore univoco di questa istanza della classe.
+Identificatore univoco di questa istanza della classe .
 
 </dd> <dt>
 
 **LogToEventlog**
 </dt> <dd> <dl> <dt>
 
-Tipo di dati: **UInt32**
+Tipo di dati: **uint32**
 </dt> <dt>
 
 Tipo di accesso: sola lettura
 </dt> </dl>
 
-Se è zero, questo evento non viene registrato nel registro eventi di sistema.
+Se zero, questo evento non viene registrato nel registro eventi di sistema.
 
 </dd> <dt>
 
-**\_banca MEM**
+**MEM \_ BANK**
 </dt> <dd> <dl> <dt>
 
-Tipo di dati: **UInt16**
+Tipo di dati: **uint16**
 </dt> <dt>
 
 Tipo di accesso: sola lettura
 </dt> </dl>
 
-Il modulo o il numero di rango della posizione degli errori di memoria.
+Numero modulo o RANK della posizione dell'errore di memoria.
 
 </dd> <dt>
 
-**\_posizione bit \_ MEM**
+**POSIZIONE DEI BIT MEM \_ \_**
 </dt> <dd> <dl> <dt>
 
-Tipo di dati: **UInt16**
+Tipo di dati: **uint16**
 </dt> <dt>
 
 Tipo di accesso: sola lettura
 </dt> </dl>
 
-Posizione del bit nella parola di memoria che contiene l'errore.
+Posizione in bit nella parola di memoria che contiene l'errore.
 
 </dd> <dt>
 
-**\_scheda mem**
+**SCHEDA \_ MEM**
 </dt> <dd> <dl> <dt>
 
-Tipo di dati: **UInt16**
+Tipo di dati: **uint16**
 </dt> <dt>
 
 Tipo di accesso: sola lettura
 </dt> </dl>
 
-Numero di scheda della posizione degli errori di memoria.
+Numero di scheda del percorso dell'errore di memoria.
 
 </dd> <dt>
 
-**\_colonna MEM**
+**COLONNA \_ MEM**
 </dt> <dd> <dl> <dt>
 
-Tipo di dati: **UInt16**
+Tipo di dati: **uint16**
 </dt> <dt>
 
 Tipo di accesso: sola lettura
 </dt> </dl>
 
-Numero di colonna della posizione degli errori di memoria.
+Numero di colonna della posizione dell'errore di memoria.
 
 </dd> <dt>
 
-**\_dispositivo MEM**
+**DISPOSITIVO \_ MEM**
 </dt> <dd> <dl> <dt>
 
-Tipo di dati: **UInt16**
+Tipo di dati: **uint16**
 </dt> <dt>
 
 Tipo di accesso: sola lettura
 </dt> </dl>
 
-Numero del dispositivo del percorso di errore di memoria.
+Numero di dispositivo della posizione dell'errore di memoria.
 
 </dd> <dt>
 
-**\_stato di errore di mem \_**
+**STATO ERRORE \_ \_ MEM**
 </dt> <dd> <dl> <dt>
 
-Tipo di dati: **UInt64**
+Tipo di dati: **uint64**
 </dt> <dt>
 
 Tipo di accesso: sola lettura
 </dt> </dl>
 
-Stato di errore della memoria.
+Stato dell'errore di memoria.
 
-Per ulteriori informazioni sull'utilizzo di valori **UInt64** negli script, vedere [scripting in WMI](/previous-versions//aa393262(v=vs.85)).
+Per altre informazioni sull'uso **dei valori uint64** negli script, vedere [Scripting in WMI](/previous-versions//aa393262(v=vs.85)).
 
 </dd> <dt>
 
-**\_modulo MEM**
+**MODULO \_ MEM**
 </dt> <dd> <dl> <dt>
 
-Tipo di dati: **UInt16**
+Tipo di dati: **uint16**
 </dt> <dt>
 
 Tipo di accesso: sola lettura
 </dt> </dl>
 
-Numero del modulo o del rango della posizione dell'errore di memoria.
+Numero di modulo o di classificazione della posizione dell'errore di memoria.
 
 </dd> <dt>
 
-**\_nodo MEM**
+**NODO \_ MEM**
 </dt> <dd> <dl> <dt>
 
-Tipo di dati: **UInt16**
+Tipo di dati: **uint16**
 </dt> <dt>
 
 Tipo di accesso: sola lettura
@@ -312,10 +312,10 @@ Nodo che contiene l'errore di memoria. Questa proprietà si applica solo in un s
 
 </dd> <dt>
 
-**\_indirizzo fisico \_ MEM**
+**COMPONENTE AGGIUNTIVO \_ FISICO \_ MEM**
 </dt> <dd> <dl> <dt>
 
-Tipo di dati: **UInt64**
+Tipo di dati: **uint64**
 </dt> <dt>
 
 Tipo di accesso: sola lettura
@@ -323,14 +323,14 @@ Tipo di accesso: sola lettura
 
 Indirizzo fisico dell'errore di memoria.
 
-Per ulteriori informazioni sull'utilizzo di valori **UInt64** negli script, vedere [scripting in WMI](/previous-versions//aa393262(v=vs.85)).
+Per altre informazioni sull'uso **dei valori uint64** negli script, vedere [Scripting in WMI](/previous-versions//aa393262(v=vs.85)).
 
 </dd> <dt>
 
-**\_maschera fisica \_ MEM**
+**MASCHERA \_ FISICA MEM \_**
 </dt> <dd> <dl> <dt>
 
-Tipo di dati: **UInt64**
+Tipo di dati: **uint64**
 </dt> <dt>
 
 Tipo di accesso: sola lettura
@@ -343,70 +343,70 @@ Bit di indirizzo validi nell'indirizzo fisico a 64 bit dell'errore di memoria.
 
  
 
-Per ulteriori informazioni sull'utilizzo di valori **UInt64** negli script, vedere [scripting in WMI](/previous-versions//aa393262(v=vs.85)).
+Per altre informazioni sull'uso **dei valori uint64** negli script, vedere [Scripting in WMI](/previous-versions//aa393262(v=vs.85)).
 
 </dd> <dt>
 
-**\_riga Mem**
+**RIGA \_ MEM**
 </dt> <dd> <dl> <dt>
 
-Tipo di dati: **UInt16**
+Tipo di dati: **uint16**
 </dt> <dt>
 
 Tipo di accesso: sola lettura
 </dt> </dl>
 
-Numero di riga della posizione degli errori di memoria.
+Numero di riga della posizione dell'errore di memoria.
 
 </dd> <dt>
 
 **RawRecord**
 </dt> <dd> <dl> <dt>
 
-Tipo di dati: matrice **Uint8**
+Tipo di dati: **matrice uint8**
 </dt> <dt>
 
 Tipo di accesso: sola lettura
 </dt> </dl>
 
-Matrice di byte che contiene il record di errore non elaborato presentato a Windows da System Abstraction Layer (SAL). Il numero di elementi nella matrice è specificato dalla proprietà **size** .
+Matrice di byte che contiene il record di errore non elaborato presentato Windows dal livello di astrazione di sistema (SAL). Il numero di elementi nella matrice viene specificato dalla **proprietà Size.**
 
 </dd> <dt>
 
-**RecordId**
+**Recordid**
 </dt> <dd> <dl> <dt>
 
-Tipo di dati: **UInt64**
+Tipo di dati: **uint64**
 </dt> <dt>
 
 Tipo di accesso: sola lettura
 </dt> </dl>
 
-Identificatore del record di errore per l'errore.
+Identificatore del record di errore per questo errore.
 
-Per ulteriori informazioni sull'utilizzo di valori **UInt64** negli script, vedere [scripting in WMI](/previous-versions//aa393262(v=vs.85)).
+Per altre informazioni sull'uso **dei valori uint64** negli script, vedere [Scripting in WMI](/previous-versions//aa393262(v=vs.85)).
 
 </dd> <dt>
 
-**ID RICHIEDEnte \_**
+**ID \_ RICHIEDENTE**
 </dt> <dd> <dl> <dt>
 
-Tipo di dati: **UInt64**
+Tipo di dati: **uint64**
 </dt> <dt>
 
 Tipo di accesso: sola lettura
 </dt> </dl>
 
-Indirizzo hardware del dispositivo o componente che avvia la transazione.
+Indirizzo hardware del dispositivo o del componente che avvia la transazione.
 
-Per ulteriori informazioni sull'utilizzo di valori **UInt64** negli script, vedere [scripting in WMI](/previous-versions//aa393262(v=vs.85)).
+Per altre informazioni sull'uso **dei valori uint64** negli script, vedere [Scripting in WMI](/previous-versions//aa393262(v=vs.85)).
 
 </dd> <dt>
 
-**ID RISPONDItore \_**
+**ID \_ RISPONDITORE**
 </dt> <dd> <dl> <dt>
 
-Tipo di dati: **UInt64**
+Tipo di dati: **uint64**
 </dt> <dt>
 
 Tipo di accesso: sola lettura
@@ -414,55 +414,55 @@ Tipo di accesso: sola lettura
 
 Indirizzo hardware del risponditore alla transazione.
 
-Per ulteriori informazioni sull'utilizzo di valori **UInt64** negli script, vedere [scripting in WMI](/previous-versions//aa393262(v=vs.85)).
+Per altre informazioni sull'uso **dei valori uint64** negli script, vedere [Scripting in WMI](/previous-versions//aa393262(v=vs.85)).
 
 </dd> <dt>
 
 **Dimensioni**
 </dt> <dd> <dl> <dt>
 
-Tipo di dati: **UInt32**
+Tipo di dati: **uint32**
 </dt> <dt>
 
 Tipo di accesso: sola lettura
 </dt> </dl>
 
-Dimensioni in byte del record di errore non elaborato.
+Dimensione in byte del record di errore non elaborato.
 
 </dd> <dt>
 
-**\_ID destinazione**
+**ID \_ DESTINAZIONE**
 </dt> <dd> <dl> <dt>
 
-Tipo di dati: **UInt64**
+Tipo di dati: **uint64**
 </dt> <dt>
 
 Tipo di accesso: sola lettura
 </dt> </dl>
 
-Indirizzo hardware della destinazione prevista per la transazione.
+Indirizzo hardware della destinazione prevista della transazione.
 
-Per ulteriori informazioni sull'utilizzo di valori **UInt64** negli script, vedere [scripting in WMI](/previous-versions//aa393262(v=vs.85)).
+Per altre informazioni sull'uso **dei valori uint64** negli script, vedere [Scripting in WMI](/previous-versions//aa393262(v=vs.85)).
 
 </dd> <dt>
 
 **Tipo**
 </dt> <dd> <dl> <dt>
 
-Tipo di dati: **UInt32**
+Tipo di dati: **uint32**
 </dt> <dt>
 
 Tipo di accesso: sola lettura
 </dt> </dl>
 
-Tipo di messaggio del log eventi. Questi messaggi corrispondono ai codici dei messaggi del registro eventi utilizzati per inserire i messaggi del registro eventi dal provider di consumer del registro eventi di Windows quando riceve uno degli eventi.
+Tipo di messaggio del registro eventi. Questi messaggi corrispondono ai codici dei messaggi del registro eventi usati per inserire i messaggi del registro eventi dal provider consumer del registro eventi Windows quando riceve uno degli eventi.
 
 </dd> <dt>
 
-**bit di convalida \_**
+**BIT \_ DI CONVALIDA**
 </dt> <dd> <dl> <dt>
 
-Tipo di dati: **UInt64**
+Tipo di dati: **uint64**
 </dt> <dt>
 
 Tipo di accesso: sola lettura
@@ -474,35 +474,35 @@ Bit di convalida usati per indicare la validità dei campi successivi.
 
 | Valori                                                                                     | Significato                                                 |
 |--------------------------------------------------------------------------------------------|---------------------------------------------------------|
-| <dl> <dt>1 (0x1)</dt> </dl>         | \_Lo stato di errore di mem \_ è valido.<br/>                 |
-| <dl> <dt>2 (0x2)</dt> </dl>         | Il valore \_ addr fisico della memoria \_ è valido.<br/>                |
-| <dl> <dt>4 (0x4)</dt> </dl>         | \_La maschera della MEM addr \_ è valida.<br/>                    |
-| <dl> <dt>8 (0x8)</dt> </dl>         | \_Nodo MEM valido.<br/>                          |
-| <dl> <dt>16 (0x10)</dt> </dl>       | \_La scheda mem è valida.<br/>                          |
-| <dl> <dt>32 (0x20)</dt> </dl>       | Il \_ modulo MEM è valido.<br/>                        |
-| <dl> <dt>64 (0x40)</dt> </dl>       | MEM \_ Bank è valido.<br/>                          |
-| <dl> <dt>128 (0x80)</dt> </dl>      | Il \_ dispositivo MEM è valido.<br/>                        |
-| <dl> <dt>256 (0x100)</dt> </dl>     | \_La riga di MEM è valida.<br/>                           |
-| <dl> <dt>512 (0x200)</dt> </dl>     | \_La colonna Mem è valida.<br/>                        |
-| <dl> <dt>1024 (0x400)</dt> </dl>    | Posizione del bit di MEM \_ \_ valida.<br/>                 |
-| <dl> <dt>2048 (0x800)</dt> </dl>    | L' \_ ID del richiedente della piattaforma mem \_ \_ è valido.<br/>       |
-| <dl> <dt>4096 (0x1000)</dt> </dl>   | L' \_ \_ ID risponditore della piattaforma \_ è valido.<br/>       |
-| <dl> <dt>8192 (0x2000)</dt> </dl>   | \_La destinazione della piattaforma mem \_ è valida.<br/>              |
-| <dl> <dt>16384 (0x4000)</dt> </dl>  | \_ \_ I dati specifici del bus di piattaforma mem \_ \_ sono validi.<br/> |
-| <dl> <dt>32768 (0x8000)</dt> </dl>  | \_ID OEM della piattaforma mem \_ \_ valido.<br/>             |
-| <dl> <dt>65536 (0x10000)</dt> </dl> | Lo \_ struct di dati OEM della piattaforma mem \_ \_ \_ è valido.<br/>   |
+| <dl> <dt>1 (0x1)</dt> </dl>         | MEM \_ ERROR STATUS è \_ valido.<br/>                 |
+| <dl> <dt>2 (0x2)</dt> </dl>         | MEM \_ PHYSICAL \_ ADDR è valido.<br/>                |
+| <dl> <dt>4 (0x4)</dt> </dl>         | MEM \_ ADDR \_ MASK è valido.<br/>                    |
+| <dl> <dt>8 (0x8)</dt> </dl>         | IL NODO MEM \_ è valido.<br/>                          |
+| <dl> <dt>16 (0x10)</dt> </dl>       | LA SCHEDA MEM \_ è valida.<br/>                          |
+| <dl> <dt>32 (0x20)</dt> </dl>       | MEM \_ MODULE è valido.<br/>                        |
+| <dl> <dt>64 (0x40)</dt> </dl>       | MEM \_ BANK è valido.<br/>                          |
+| <dl> <dt>128 (0x80)</dt> </dl>      | IL DISPOSITIVO MEM \_ è valido.<br/>                        |
+| <dl> <dt>256 (0x100)</dt> </dl>     | MEM \_ ROW è valido.<br/>                           |
+| <dl> <dt>512 (0x200)</dt> </dl>     | MEM \_ COLUMN è valido.<br/>                        |
+| <dl> <dt>1024 (0x400)</dt> </dl>    | MEM \_ BIT POSITION è \_ valido.<br/>                 |
+| <dl> <dt>2048 (0x800)</dt> </dl>    | L'ID DEL RICHIEDENTE DELLA PIATTAFORMA MEM \_ \_ è \_ valido.<br/>       |
+| <dl> <dt>4096 (0x1000)</dt> </dl>   | L'ID RISPONDITORE PIATTAFORMA MEM \_ \_ è \_ valido.<br/>       |
+| <dl> <dt>8192 (0x2000)</dt> </dl>   | MEM \_ PLATFORM TARGET è \_ valido.<br/>              |
+| <dl> <dt>16384 (0x4000)</dt> </dl>  | I DATI SPECIFICI DEL BUS DELLA PIATTAFORMA MEM \_ \_ sono \_ \_ validi.<br/> |
+| <dl> <dt>32768 (0x8000)</dt> </dl>  | L'ID OEM della piattaforma MEM \_ \_ è \_ valido.<br/>             |
+| <dl> <dt>65536 (0x10000)</dt> </dl> | MEM \_ PLATFORM \_ OEM DATA \_ \_ STRUCT è valido.<br/>   |
 
 
 
  
 
-Per ulteriori informazioni sull'utilizzo di valori **UInt64** negli script, vedere [scripting in WMI](/previous-versions//aa393262(v=vs.85)).
+Per altre informazioni sull'uso **dei valori uint64** negli script, vedere [Scripting in WMI](/previous-versions//aa393262(v=vs.85)).
 
 </dd> </dl>
 
 ## <a name="remarks"></a>Commenti
 
-La classe **MSMCAEvent \_ MemoryError** è derivata da [**WmiEvent**](wmievent.md).
+La **classe MSMCAEvent \_ MemoryError** è derivata da [**WMIEvent**](wmievent.md).
 
 ## <a name="requirements"></a>Requisiti
 
@@ -512,8 +512,8 @@ La classe **MSMCAEvent \_ MemoryError** è derivata da [**WmiEvent**](wmievent.m
 |-------------------------------------|----------------------------------------------------------------------------------------|
 | Client minimo supportato<br/> | Windows XP<br/>                                                                  |
 | Server minimo supportato<br/> | Windows Server 2003<br/>                                                         |
-| Spazio dei nomi<br/>                | \\WMI radice<br/>                                                                   |
-| MOF<br/>                      | <dl> <dt>Wmicore. mof</dt> </dl> |
+| Spazio dei nomi<br/>                | Wmi \\ radice<br/>                                                                   |
+| MOF<br/>                      | <dl> <dt>Wmicore.mof</dt> </dl> |
 | DLL<br/>                      | <dl> <dt>Wmiprov.dll</dt> </dl> |
 
 

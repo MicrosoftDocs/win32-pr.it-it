@@ -1,33 +1,33 @@
 ---
 title: Completamento callback asincrono
-description: Viene descritto in che modo il provider è in grado di servire in modo asincrono i callback.
+description: Viene descritto come il provider può eseguire in modo asincrono i callback del servizio.
 ms.assetid: <GUID-GOES-HERE>
 ms.date: 10/12/2018
 ms.topic: article
-ms.openlocfilehash: 8ec23f5ea6e8ec55be2eaa2811d9dee8b1870edc
-ms.sourcegitcommit: 592c9bbd22ba69802dc353bcb5eb30699f9e9403
+ms.openlocfilehash: f2262e803d1ee3d071538dc6e520517c6fd7b800c4d7fdc4a7404748b9f9f0dc
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/20/2020
-ms.locfileid: "106300272"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120127951"
 ---
-# <a name="asynchronous-callback-handling"></a>Gestione asincrona del callback
+# <a name="asynchronous-callback-handling"></a>Gestione dei callback asincroni
 
-Quando un client interagisce con i file e le directory sotto la radice di virtualizzazione del provider, queste interazioni generano in genere i callback del provider richiamati.  ProjFS richiama i callback del provider inviando un messaggio dalla modalità kernel alla libreria in modalità utente ProjFS, dove un thread di lavoro riceve il messaggio e chiama il callback appropriato.  Una volta restituito il callback, il thread di lavoro attende che un altro messaggio arrivi dalla modalità kernel.  Se tutti i thread di lavoro sono occupati nell'esecuzione del codice di callback del provider, eventuali ulteriori operazioni di I/O client che attivano un blocco di callback fino a quando un thread di lavoro non diventa disponibile per ricevere il messaggio e richiamare il callback pertinente.  Quando un provider viene avviato, può specificare il numero di thread di lavoro che desidera che ProjFS crei ai callback del servizio tramite il parametro _options_ di **[PrjStartVirtualizing](/windows/desktop/api/projectedfslib/nf-projectedfslib-prjstartvirtualizing)**.  Un provider può migliorare l'efficienza dei thread di lavoro che ricevono messaggi tramite la manutenzione asincrona dei callback.
+Quando un client interagisce con i file e le directory sotto la radice di virtualizzazione del provider, queste interazioni in genere comportano la chiamata dei callback del provider.  ProjFS richiama i callback del provider inviando un messaggio dalla modalità kernel alla libreria in modalità utente ProjFS, in cui un thread di lavoro riceve il messaggio e chiama il callback appropriato.  Una volta restituito il callback, il thread di lavoro attende l'arrivo di un altro messaggio dalla modalità kernel.  Se tutti i thread di lavoro sono occupati a eseguire il codice di callback del provider, qualsiasi ulteriore I/O client che attiva un callback si blocca fino a quando un thread di lavoro non diventa disponibile per ricevere il messaggio e richiamare il callback pertinente.  Quando un provider viene avviato, può specificare il numero di thread di lavoro che ProjFS deve creare per i callback del servizio tramite il parametro _options_ **[di PrjStartVirtualizing](/windows/desktop/api/projectedfslib/nf-projectedfslib-prjstartvirtualizing)**.  Un provider può migliorare l'efficienza dei thread di lavoro che ricevono messaggi tramite la manutenzione dei callback in modo asincrono.
 
-> Se il provider non specifica il parametro _options_ per **PrjStartVirtualizing** o se specifica 0 per il membro ConcurrentThreadCount del parametro _options_ , ProjFS utilizzerà il numero di processori logici nel sistema per il valore di ConcurrentThreadCount.
+> Se il provider non specifica il parametro _options_ per **PrjStartVirtualizing** o se specifica 0 per il membro ConcurrentThreadCount del parametro _options,_ ProjFS userà il numero di processori logici nel sistema per il valore di ConcurrentThreadCount.
 >
-> Se il provider non specifica il parametro _options_ per **PrjStartVirtualizing** o se specifica 0 per il membro PoolThreadCount del parametro _options_ , ProjFS utilizzerà il doppio del valore di ConcurrentThreadCount per il valore di PoolThreadCount.
+> Se il provider non specifica il parametro _options_ per **PrjStartVirtualizing** o se specifica 0 per il membro PoolThreadCount del parametro _options,_ ProjFS userà il doppio del valore di ConcurrentThreadCount per il valore di PoolThreadCount.
 
-I servizi provider richiamano in modo asincrono restituendo HRESULT_FROM_WIN32 (ERROR_IO_PENDING) dai relativi callback e successivamente li completano utilizzando **[PrjCompleteCommand](/windows/desktop/api/projectedfslib/nf-projectedfslib-prjcompletecommand)**.  Un provider che elabora i callback in modo asincrono deve supportare anche l'annullamento del callback implementando il callback **[PRJ_CANCEL_COMMAND_CB](/windows/desktop/api/projectedfslib/nc-projectedfslib-prj_cancel_command_cb)** .
+Un servizio provider esegue i callback in modo asincrono HRESULT_FROM_WIN32(ERROR_IO_PENDING) dai callback e li completa in un secondo momento usando **[PrjCompleteCommand](/windows/desktop/api/projectedfslib/nf-projectedfslib-prjcompletecommand)**.  Un provider che elabora i callback in modo asincrono deve supportare anche l'annullamento del callback implementando PRJ_CANCEL_COMMAND_CB **[callback.](/windows/desktop/api/projectedfslib/nc-projectedfslib-prj_cancel_command_cb)**
 
-Quando ProjFS chiama il callback di un provider, identifica la chiamata specifica del callback usando il membro CommandID del parametro _callBackData_ del callback.  Se il provider decide di elaborare tale callback in modo asincrono, deve archiviare il valore del membro CommandID e restituire HRESULT_FROM_WIN32 (ERROR_IO_PENDING) dal callback.  Al termine dell'elaborazione del callback da parte del provider, viene chiamato **PrjCompleteCommand**, passando l'identificatore archiviato nel parametro _CommandID_ .  Indica a ProjFS quale chiamata di callback è stata completata.
+Quando ProjFS chiama il callback di un provider, identifica la chiamata specifica del callback usando il membro CommandId del _parametro callbackData del_ callback.  Se il provider decide di elaborare il callback in modo asincrono, deve archiviare il valore del membro CommandId e restituire HRESULT_FROM_WIN32(ERROR_IO_PENDING) dal callback.  Al termine dell'elaborazione del callback, il provider chiama **PrjCompleteCommand**, passando l'identificatore archiviato nel _parametro commandId._  Ciò indica a ProjFS quale chiamata di callback è stata completata.
 
-Un provider che implementa il callback **PRJ_CANCEL_COMMAND_CB** deve tenere traccia dei callback non ancora completati.  Se il provider riceve questo callback, indica che l'I/O che ha causato la chiamata di uno di questi callback è stato annullato, in modo esplicito o perché il thread su cui è stato emesso è stato terminato. Il provider deve annullare l'elaborazione della chiamata di callback identificata da CommandID appena possibile.
+Un provider che implementa il callback **PRJ_CANCEL_COMMAND_CB** deve tenere traccia dei callback non ancora completati.  Se il provider riceve questo callback, indica che l'I/O che ha causato la chiamata di uno di questi callback è stato annullato, in modo esplicito o perché il thread su cui è stato eseguito è stato terminato. Il provider deve annullare l'elaborazione della chiamata di callback identificata da CommandId appena possibile.
 
-> Anche se ProjFS richiamerà **PRJ_CANCEL_COMMAND_CB** per un determinato oggetto CommandID solo dopo che il callback da annullare viene richiamato, l'annullamento e la chiamata originale possono essere eseguiti contemporaneamente in un provider multithread.  Il provider deve essere in grado di gestire normalmente questa situazione.
+> Anche se ProjFS richiamerà PRJ_CANCEL_COMMAND_CB per un determinato CommandId solo dopo che il callback da annullare è stato richiamato, l'annullamento e la chiamata originale possono essere eseguiti contemporaneamente in un provider multithreading.   Il provider deve essere in grado di gestire correttamente questa situazione.
 
-L'esempio seguente è una versione dell'esempio fornita per l'argomento [enumerazione di file e directory](enumerating-files-and-directories.md) , modificato per illustrare la gestione asincrona dei callback.
+L'esempio seguente è una versione dell'esempio specificata per l'argomento [Enumerazione di file](enumerating-files-and-directories.md) e directory, modificata per illustrare la gestione dei callback asincroni.
 
 ```C++
 typedef struct MY_ENUM_ENTRY MY_ENUM_ENTRY;
@@ -324,7 +324,7 @@ CompleteCallback:
 }
 ```
 
-Ecco un breve esempio PRJ_CANCEL_COMMAND_CB che funziona con il codice di esempio precedente.
+Ecco un breve esempio di PRJ_CANCEL_COMMAND_CB che funziona con il codice di esempio precedente.
 
 ```C++
 void

@@ -1,7 +1,7 @@
 ---
-description: Ottiene le dimensioni del buffer della tabella delle costanti.
+description: Ottiene le dimensioni del buffer della tabella costante.
 ms.assetid: 77dbff34-a6b4-43d8-a790-d9e69ff09cfb
-title: 'Metodo ID3DXConstantTable:: GetBufferSize (D3DX9Shader. h)'
+title: Metodo ID3DXConstantTable::GetBufferSize (D3DX9Shader.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -14,16 +14,16 @@ api_type:
 api_location:
 - d3dx9.lib
 - d3dx9.dll
-ms.openlocfilehash: 68731f86db5aeae14bda4b0f2107c3f9d2f6d357
-ms.sourcegitcommit: 14010c34b35fa268046c7683f021f86de08ddd0a
+ms.openlocfilehash: b43bbc6064ab8d52fd961294b57a6faea0c2b83861e30c3e965b0bb9c7bd25cb
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/15/2021
-ms.locfileid: "106322828"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120096021"
 ---
-# <a name="id3dxconstanttablegetbuffersize-method"></a>Metodo ID3DXConstantTable:: GetBufferSize
+# <a name="id3dxconstanttablegetbuffersize-method"></a>Metodo ID3DXConstantTable::GetBufferSize
 
-Ottiene le dimensioni del buffer della tabella delle costanti.
+Ottiene le dimensioni del buffer della tabella costante.
 
 ## <a name="syntax"></a>Sintassi
 
@@ -42,7 +42,7 @@ Questo metodo non presenta parametri.
 
 Tipo: **[ **DWORD**](../winprog/windows-data-types.md)**
 
-Restituisce la dimensione, in byte, del buffer.
+Restituisce le dimensioni del buffer, in byte.
 
 ## <a name="requirements"></a>Requisiti
 
@@ -50,8 +50,8 @@ Restituisce la dimensione, in byte, del buffer.
 
 | Requisito | Valore |
 |--------------------|------------------------------------------------------------------------------------------|
-| Intestazione<br/>  | <dl> <dt>D3DX9Shader. h</dt> </dl> |
-| Libreria<br/> | <dl> <dt>D3dx9. lib</dt> </dl>     |
+| Intestazione<br/>  | <dl> <dt>D3DX9Shader.h</dt> </dl> |
+| Libreria<br/> | <dl> <dt>D3dx9.lib</dt> </dl>     |
 
 
 

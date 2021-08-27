@@ -1,5 +1,5 @@
 ---
-description: 'Altre informazioni su: JET_OBJECTLIST struttura'
+description: 'Altre informazioni su: JET_OBJECTLIST Structure'
 title: Struttura JET_OBJECTLIST
 TOCTitle: JET_OBJECTLIST Structure
 ms:assetid: 95f12f2a-13da-48d4-a254-fc0cb718b17d
@@ -15,12 +15,12 @@ api_type:
 - COM
 api_location: ''
 ROBOTS: INDEX,FOLLOW
-ms.openlocfilehash: 21a3ea030421406a5bc571bb5cc1887f77b4710d
-ms.sourcegitcommit: 4665ebce0c106bdb52eef36e544280b496b6f50b
+ms.openlocfilehash: a2f035a15c0f0f2861c7c6698878e0782feb35ce
+ms.sourcegitcommit: 9b5faa61c38b2d0c432b7f2dbee8c127b0e28a7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/26/2021
-ms.locfileid: "122983124"
+ms.lasthandoff: 08/19/2021
+ms.locfileid: "122476537"
 ---
 # <a name="jet_objectlist-structure"></a>Struttura JET_OBJECTLIST
 
@@ -29,7 +29,7 @@ _**Si applica a:** Windows | Windows Server_
 
 ## <a name="jet_objectlist-structure"></a>Struttura JET_OBJECTLIST
 
-La **JET_OBJECTLIST** attraversa una tabella temporanea creata con [JetGetObjectInfo.](./jetgetobjectinfo-function.md) Ogni riga della tabella temporanea descrive un oggetto nel database.
+La **JET_OBJECTLIST** struttura attraversa una tabella temporanea creata con [JetGetObjectInfo](./jetgetobjectinfo-function.md). Ogni riga della tabella temporanea descrive un oggetto nel database.
 
 ```cpp
     typedef struct {
@@ -76,7 +76,7 @@ Questa colonna è un [JET_coltypText](./jet-coltyp.md).
 
 **columnidobjtyp**
 
-Identificatore di colonna del tipo dell'oggetto. Gli unici contenitori attualmente supportati sono le tabelle, quindi questo campo verrà JET_objtypTable.
+Identificatore di colonna del tipo dell'oggetto . Gli unici contenitori attualmente supportati sono tabelle, quindi questo campo verrà JET_objtypTable.
 
 Questa colonna è un [JET_coltypLong](./jet-coltyp.md).
 
@@ -90,13 +90,13 @@ Obsoleta. Non usare.
 
 **columnidgrbit**
 
-Identificatore di colonna dei **grbit applicabili** all'oggetto. Per un elenco di **grbit applicabili,** vedere [JET_TABLECREATE](./jet-tablecreate-structure.md).
+Identificatore di colonna dei **grbit applicabili** all'oggetto . Per un elenco dei **grbit applicabili,** [vedere](./jet-tablecreate-structure.md)JET_TABLECREATE .
 
 Questa colonna è un [JET_coltypLong](./jet-coltyp.md).
 
 **columnidflags**
 
-Identificatore di colonna dei flag applicabili all'oggetto. Per un elenco dei flag applicabili, vedere [JET_OBJECTINFO](./jet-objectinfo-structure.md).
+Identificatore di colonna dei flag applicabili all'oggetto . Per un elenco dei flag applicabili, [vedere](./jet-objectinfo-structure.md)JET_OBJECTINFO .
 
 Questa colonna è un [JET_coltypLong](./jet-coltyp.md).
 
@@ -108,7 +108,7 @@ Questa colonna è un [JET_coltypLong](./jet-coltyp.md).
 
 **columnidcPage**
 
-Identificatore di colonna del numero di pagine utilizzate dall'oggetto.
+Identificatore di colonna del numero di pagine utilizzate dall'oggetto .
 
 Questa colonna è un [JET_coltypLong](./jet-coltyp.md).
 
@@ -116,18 +116,14 @@ Questa colonna è un [JET_coltypLong](./jet-coltyp.md).
 
 Ogni riga della tabella temporanea corrisponde a un oggetto nel database.
 
-Quando la tabella temporanea viene creata con il parametro *InfoLevel* nella funzione [JetGetObjectInfo](./jetgetobjectinfo-function.md) impostato su JET_ObjInfoListNoStats, le colonne identificate da **columnidcRecord** e **columnidcPage** non conterranno informazioni significative.
+Quando la tabella temporanea viene creata con il *parametro InfoLevel* nella funzione [JetGetObjectInfo](./jetgetobjectinfo-function.md) impostata su JET_ObjInfoListNoStats, le colonne identificate da **columnidcRecord** e **columnidcPage** non conterranno informazioni significative.
 
-Attualmente, nella tabella temporanea saranno presenti solo le informazioni sulle tabelle.
+Attualmente, solo le informazioni sulle tabelle saranno nella tabella temporanea.
 
 ### <a name="requirements"></a>Requisiti
 
 
-| Requisito | Valore |
-|------------|----------|
-| <p><strong>Client</strong></p> | <p>Richiede Windows Vista, Windows XP o Windows 2000 Professional.</p> | 
-| <p><strong>Server</strong></p> | <p>Richiede Windows Server 2008, Windows Server 2003 o Windows 2000 Server.</p> | 
-| <p><strong>Intestazione</strong></p> | <p>Dichiarato in Esent.h.</p> | 
+| | | <p><strong>Client</strong></p> | <p>Richiede Windows Vista, Windows XP o Windows 2000 Professional.</p> | | <p><strong>Server</strong></p> | <p>Richiede Windows Server 2008, Windows Server 2003 o Windows 2000 Server.</p> | | <p><strong>Intestazione</strong></p> | <p>Dichiarato in Esent.h.</p> | 
 
 
 

@@ -11,18 +11,18 @@ api_name: ''
 api_type:
 - NA
 api_location: ''
-ms.openlocfilehash: 26f8d02fcb65f685baf245928ff0969a99076491
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: a50e6059d36f7081aef1fd0250f726ce7dc7ea69
+ms.sourcegitcommit: 9b5faa61c38b2d0c432b7f2dbee8c127b0e28a7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "106309243"
+ms.lasthandoff: 08/19/2021
+ms.locfileid: "122477677"
 ---
 # <a name="xmbyte2-constructors"></a>Costruttori XMBYTE2
 
 Costruttori esposti da `XMBYTE2` .
 
-Costruisce istanze della struttura [**XMBYTE2**](/windows/desktop/api/DirectXPackedVector/ns-directxpackedvector-xmbyte2) .
+Costruisce istanze della [**struttura XMBYTE2.**](/windows/desktop/api/DirectXPackedVector/ns-directxpackedvector-xmbyte2)
 
 > [!Note]  
 > I costruttori elencati di seguito sono disponibili solo con C++.
@@ -33,65 +33,15 @@ Costruisce istanze della struttura [**XMBYTE2**](/windows/desktop/api/DirectXPac
 
 
 
-<table>
-<colgroup>
-<col style="width: 50%" />
-<col style="width: 50%" />
-</colgroup>
-<thead>
-<tr class="header">
-<th style="text-align: left;">Costruttore</th>
-<th style="text-align: left;">Descrizione</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td style="text-align: left;"><a href="/windows/desktop/api/directxpackedvector/nf-directxpackedvector-xmbyte2-xmbyte2(constfloat)"><strong>XMBYTE2 ()</strong></a></td>
-<td style="text-align: left;">Costruttore predefinito per <code>XMBYTE2</code> .<br/> Costruttore predefinito per <a href="/windows/desktop/api/DirectXPackedVector/ns-directxpackedvector-xmbyte2"><strong>XMBYTE2</strong></a>.<br/>
-<blockquote>
-[!Note]<br />
-Questo costruttore è disponibile solo con C++.
-</blockquote>
-<br/></td>
-</tr>
-<tr class="even">
-<td style="text-align: left;"><a href="/windows/desktop/api/directxpackedvector/nf-directxpackedvector-xmbyte2-xmbyte2(float_float)"><strong>XMBYTE2 (float, float)</strong></a></td>
-<td style="text-align: left;">Inizializza una nuova istanza di <code>XMBYTE2</code> da due <code>float</code> argomenti.<br/> Questo costruttore inizializza una nuova istanza di <a href="/windows/desktop/api/DirectXPackedVector/ns-directxpackedvector-xmbyte2"><strong>XMBYTE2</strong></a> da due <code>float</code> argomenti.<br/>
-<blockquote>
-[!Note]<br />
-Questo costruttore è disponibile solo con C++.
-</blockquote>
-<br/></td>
-</tr>
-<tr class="odd">
-<td style="text-align: left;"><a href="/windows/desktop/api/directxpackedvector/nf-directxpackedvector-xmbyte2-xmbyte2(constfloat)"><strong>XMBYTE2 (const Float *)</strong></a></td>
-<td style="text-align: left;">Inizializza una nuova istanza di <code>XMBYTE2</code> da un argomento di matrice a due elementi <code>float</code> .<br/> Questo costruttore inizializza una nuova istanza di <a href="/windows/desktop/api/DirectXPackedVector/ns-directxpackedvector-xmbyte2"><strong>XMBYTE2</strong></a> da un argomento di matrice a due elementi <code>float</code> .<br/>
-<blockquote>
-[!Note]<br />
-Questo costruttore è disponibile solo con C++.
-</blockquote>
-<br/></td>
-</tr>
-<tr class="even">
-<td style="text-align: left;"><a href="/windows/desktop/api/directxpackedvector/nf-directxpackedvector-xmbyte2-xmbyte2(int8_t_int8_t)"><strong>XMBYTE2 (int8_t, int8_t)</strong></a></td>
-<td style="text-align: left;">Inizializza una nuova istanza di <code>XMBYTE2</code> dagli <code>int8_t</code> argomenti XMBYTE2.<br/> Questo costruttore inizializza una nuova istanza di <a href="/windows/desktop/api/DirectXPackedVector/ns-directxpackedvector-xmbyte2"><strong>XMBYTE2</strong></a> da argomenti di XMBYTE2 <code>int8_t</code> .<br/>
-<blockquote>
-[!Note]<br />
-Questo costruttore è disponibile solo con C++.
-</blockquote>
-<br/></td>
-</tr>
-<tr class="odd">
-<td style="text-align: left;"><a href="/windows/desktop/api/directxpackedvector/nf-directxpackedvector-xmbyte2-xmbyte2(constfloat)"><strong>XMBYTE2 (const int8_t *)</strong></a></td>
-<td style="text-align: left;">Inizializza una nuova istanza di <code>XMBYTE2</code> da un argomento di matrice a due elementi <code>int8_t</code> .<br/> Questo costruttore inizializza una nuova istanza di <a href="/windows/desktop/api/DirectXPackedVector/ns-directxpackedvector-xmbyte2"><strong>XMBYTE2</strong></a> da un argomento di matrice a due elementi <code>int8_t</code> .<br/>
-<blockquote>
-[!Note]<br />
-Questo costruttore è disponibile solo con C++.
-</blockquote>
-<br/></td>
-</tr>
-</tbody>
-</table>
+
+| Costruttore | Descrizione | 
+|-------------|-------------|
+| <a href="/windows/desktop/api/directxpackedvector/nf-directxpackedvector-xmbyte2-xmbyte2(constfloat)"><strong>XMBYTE2 ()</strong></a> | Costruttore predefinito per <code>XMBYTE2</code> .<br /> Costruttore predefinito per <a href="/windows/desktop/api/DirectXPackedVector/ns-directxpackedvector-xmbyte2"><strong>XMBYTE2.</strong></a><br /><blockquote>[!Note]<br />Questo costruttore è disponibile solo con C++.</blockquote><br /> | 
+| <a href="/windows/desktop/api/directxpackedvector/nf-directxpackedvector-xmbyte2-xmbyte2(float_float)"><strong>XMBYTE2 (float,float)</strong></a> | Inizializza una nuova istanza di <code>XMBYTE2</code> da due <code>float</code> argomenti.<br /> Questo costruttore inizializza una nuova istanza di <a href="/windows/desktop/api/DirectXPackedVector/ns-directxpackedvector-xmbyte2"><strong>XMBYTE2</strong></a> da due <code>float</code> argomenti.<br /><blockquote>[!Note]<br />Questo costruttore è disponibile solo con C++.</blockquote><br /> | 
+| <a href="/windows/desktop/api/directxpackedvector/nf-directxpackedvector-xmbyte2-xmbyte2(constfloat)"><strong>XMBYTE2 (const float*)</strong></a> | Inizializza una nuova istanza di da <code>XMBYTE2</code> un argomento di matrice a due <code>float</code> elementi.<br /> Questo costruttore inizializza una nuova istanza di <a href="/windows/desktop/api/DirectXPackedVector/ns-directxpackedvector-xmbyte2"><strong>XMBYTE2</strong></a> da un argomento di <code>float</code> matrice a due elementi.<br /><blockquote>[!Note]<br />Questo costruttore è disponibile solo con C++.</blockquote><br /> | 
+| <a href="/windows/desktop/api/directxpackedvector/nf-directxpackedvector-xmbyte2-xmbyte2(int8_t_int8_t)"><strong>XMBYTE2 (int8_t,int8_t)</strong></a> | Inizializza una nuova istanza di <code>XMBYTE2</code> da argomenti XMBYTE2. <code>int8_t</code><br /> Questo costruttore inizializza una nuova istanza di <a href="/windows/desktop/api/DirectXPackedVector/ns-directxpackedvector-xmbyte2"><strong>XMBYTE2</strong></a> da argomenti XMBYTE2. <code>int8_t</code><br /><blockquote>[!Note]<br />Questo costruttore è disponibile solo con C++.</blockquote><br /> | 
+| <a href="/windows/desktop/api/directxpackedvector/nf-directxpackedvector-xmbyte2-xmbyte2(constfloat)"><strong>XMBYTE2 (const int8_t*)</strong></a> | Inizializza una nuova istanza di da <code>XMBYTE2</code> un argomento di matrice a due <code>int8_t</code> elementi.<br /> Questo costruttore inizializza una nuova istanza di <a href="/windows/desktop/api/DirectXPackedVector/ns-directxpackedvector-xmbyte2"><strong>XMBYTE2</strong></a> da un argomento di <code>int8_t</code> matrice a due elementi.<br /><blockquote>[!Note]<br />Questo costruttore è disponibile solo con C++.</blockquote><br /> | 
+
 
 
 

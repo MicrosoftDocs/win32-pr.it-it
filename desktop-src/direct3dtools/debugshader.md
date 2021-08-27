@@ -17,12 +17,12 @@ api_location:
 topic_type:
 - APIRef
 - kbSyntax
-ms.openlocfilehash: 5a87947d6d3eae5191b212610af66728fa0a80fbcb1699cc83e68adf22dd9496
-ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
+ms.openlocfilehash: f9d37d23520ddab2175e2875204b404e657b1649
+ms.sourcegitcommit: c276a8912787b2cda74dcf54eb96df961bb1188b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "120095111"
+ms.lasthandoff: 08/20/2021
+ms.locfileid: "122625517"
 ---
 # <a name="span-idvspixenginedebugshaderspandebugshader-structure"></a><span id="vspixengine.debugshader"></span>Struttura DebugShader
 
@@ -48,7 +48,7 @@ ID del processo associato.
 
 ## <a name="requirements"></a>Requisiti
 
-<table><colgroup><col style="width: 50%" /><col style="width: 50%" /></colgroup><tbody><tr class="odd"><td><p>Intestazione</p></td><td>Vspixengine.h</td></tr></tbody></table>
+<table><colgroup><col  /><col  /></colgroup><tbody><tr class="odd"><td><p>Intestazione</p></td><td>Vspixengine.h</td></tr></tbody></table>
 
  
 

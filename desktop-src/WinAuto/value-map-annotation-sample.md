@@ -1,19 +1,19 @@
 ---
-title: Esempio di annotazione mappa di valori
-description: Esempio di annotazione mappa di valori
+title: Esempio di annotazione mappa valori
+description: Esempio di annotazione mappa valori
 ms.assetid: f95233ee-c825-482e-880b-63212014b505
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: e9ad1008e2e3ce039ead09c43b37d9ef0500da3f
-ms.sourcegitcommit: 2d531328b6ed82d4ad971a45a5131b430c5866f7
+ms.openlocfilehash: 12165224d7ae85a8e7fca6c000a9debe3c9c68624de7bf0630eda8fc3d916118
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "106297953"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120098051"
 ---
-# <a name="value-map-annotation-sample"></a>Esempio di annotazione mappa di valori
+# <a name="value-map-annotation-sample"></a>Esempio di annotazione mappa valori
 
-Tagliare, incollare e modificare l'esempio di codice seguente per uso personale. Seguire le istruzioni riportate nei commenti contrassegnati con/ \* todo \* /.
+Tagliare, incollare e modificare l'esempio di codice seguente per uso personale. Seguire le istruzioni nei commenti contrassegnati con / \* TODO \* /.
 
 
 ```C++
@@ -96,9 +96,9 @@ OBJID_CLIENT, 0, PROPID_ACC_STATEMAP, g_ListOrTreeStateMap ) );
 
 
 
- 
+ 
 
- 
+ 
 
 
 

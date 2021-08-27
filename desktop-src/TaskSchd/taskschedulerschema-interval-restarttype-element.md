@@ -13,12 +13,12 @@ api_type:
 ms.topic: reference
 ms.date: 05/31/2018
 api_location: ''
-ms.openlocfilehash: 6e731582364df23bdef800ab5d2cf15dd5c882ae
-ms.sourcegitcommit: b3a9abea47dea7374eac0f9a95a652ac6977fb2e
+ms.openlocfilehash: 2362a5d6ec1a6a9d0d876ef0673f4775e2db3ade0a83696ad2b993e31e02a9ab
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/20/2021
-ms.locfileid: "107734186"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120099991"
 ---
 # <a name="interval-restarttype-element"></a>Elemento Interval (restartType)
 
@@ -55,11 +55,11 @@ L'elemento è definito dal [**tipo complesso restartType.**](taskschedulerschema
 
 ## <a name="remarks"></a>Commenti
 
-Se questo elemento viene specificato, è necessario specificare anche l'elemento [**Count**](taskschedulerschema-count-restarttype-element.md) per indicare al Utilità di pianificazione quante volte deve tentare di riavviare l'attività.
+Se si specifica questo elemento, è necessario specificare anche l'elemento [**Count**](taskschedulerschema-count-restarttype-element.md) per indicare al Utilità di pianificazione quante volte deve tentare di riavviare l'attività.
 
 Per lo sviluppo in C++, vedere [**Proprietà RestartInterval di ITaskSettings.**](/windows/desktop/api/taskschd/nf-taskschd-itasksettings-get_restartinterval)
 
-Per lo sviluppo di script, [**vedere TaskSettings.RestartInterval.**](tasksettings-restartinterval.md)
+Per lo sviluppo di script, vedere [**TaskSettings.RestartInterval.**](tasksettings-restartinterval.md)
 
 ## <a name="requirements"></a>Requisiti
 
@@ -67,8 +67,8 @@ Per lo sviluppo di script, [**vedere TaskSettings.RestartInterval.**](tasksettin
 
 | Requisito | Valore |
 |-------------------------------------|------------------------------------------------------|
-| Client minimo supportato<br/> | Solo app desktop di Windows Vista \[\]<br/>       |
-| Server minimo supportato<br/> | Solo app desktop di Windows Server 2008 \[\]<br/> |
+| Client minimo supportato<br/> | Windows Solo \[ app desktop Vista\]<br/>       |
+| Server minimo supportato<br/> | Windows Solo app desktop di Server 2008 \[\]<br/> |
 
 
 
@@ -76,7 +76,7 @@ Per lo sviluppo di script, [**vedere TaskSettings.RestartInterval.**](tasksettin
 
 <dl> <dt>
 
-[Utilità di pianificazione schema](task-scheduler-schema-elements.md)
+[Utilità di pianificazione di schema](task-scheduler-schema-elements.md)
 </dt> </dl>
 
  

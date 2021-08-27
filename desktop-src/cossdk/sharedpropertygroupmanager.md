@@ -1,7 +1,7 @@
 ---
-description: Crea gruppi di proprietà condivisi e per ottenere l'accesso ai gruppi di proprietà condivisi esistenti.
+description: Crea gruppi di proprietà condivise e per ottenere l'accesso ai gruppi di proprietà condivise esistenti.
 ms.assetid: 4ba05806-afda-4926-8ca4-abbf15ed8278
-title: Classe SharedPropertyGroupManager (ComSvcs. h)
+title: Classe SharedPropertyGroupManager (ComSvcs.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -11,29 +11,29 @@ api_name:
 - SharedPropertyGroupManager
 api_type:
 - COM
-ms.openlocfilehash: 680c5caef996d329e18192193f30841f61f02f27
-ms.sourcegitcommit: c7add10d695482e1ceb72d62b8a4ebd84ea050f7
+ms.openlocfilehash: ac05dcc813192a9ea1bf1f1f4e5ad63ed72eca6874de855ac3f4582af51680f6
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "103877621"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120120361"
 ---
 # <a name="sharedpropertygroupmanager-class"></a>Classe SharedPropertyGroupManager
 
-Crea gruppi di proprietà condivisi e per ottenere l'accesso ai gruppi di proprietà condivisi esistenti.
+Crea gruppi di proprietà condivise e per ottenere l'accesso ai gruppi di proprietà condivise esistenti.
 
-Per ulteriori informazioni sull'utilizzo del Gestione proprietà condiviso in COM+, vedere [com+ shared gestione proprietà](com--shared-property-manager.md).
+Per altre informazioni sull'uso del Gestione proprietà condiviso in COM+, vedere [Com+ Shared Gestione proprietà](com--shared-property-manager.md).
 
 ## <a name="when-to-implement"></a>Quando implementare
 
-Questa classe è implementata da COM+.
+Questa classe viene implementata da COM+.
 
 
 
 | Requisito | Valore |
 |------------|--------------------------------------------------------------------|
-| CLSID      | \_SHAREDPROPERTYGROUPMANAGER CLSID                                  |
-| ProgID     | L "MTxSpm. SharedPropertyGroupManager"                               |
+| CLSID      | CLSID \_ SharedPropertyGroupManager                                  |
+| ProgID     | L"MTxSpm.SharedPropertyGroupManager"                               |
 | Interfacce | [**ISharedPropertyGroupManager**](/windows/desktop/api/ComSvcs/nn-comsvcs-isharedpropertygroupmanager) |
 
 
@@ -42,13 +42,13 @@ Questa classe è implementata da COM+.
 
 ## <a name="when-to-use"></a>Utilizzo
 
-Usare questa classe per accedere ai metodi di [**ISharedPropertyGroupManager**](/windows/desktop/api/ComSvcs/nn-comsvcs-isharedpropertygroupmanager).
+Usare questa classe per accedere ai metodi di [**ISharedPropertyGroupManager.**](/windows/desktop/api/ComSvcs/nn-comsvcs-isharedpropertygroupmanager)
 
 ## <a name="remarks"></a>Commenti
 
-Per creare questo oggetto, chiamare [**IObjectContext:: CreateInstance**](/windows/desktop/api/ComSvcs/nf-comsvcs-iobjectcontext-createinstance).
+Per creare questo oggetto, chiamare [**IObjectContext::CreateInstance**](/windows/desktop/api/ComSvcs/nf-comsvcs-iobjectcontext-createinstance).
 
-Per utilizzare questa classe da Microsoft Visual Basic, aggiungere un riferimento alla libreria dei tipi di servizi COM+. Un oggetto SharedPropertyGroupManager può essere dichiarato con "COMSVCSLib. SharedPropertyGroupManager" come nome della classe.
+Per usare questa classe da Microsoft Visual Basic, aggiungere un riferimento alla libreria dei tipi dei servizi COM+. Un oggetto SharedPropertyGroupManager può essere dichiarato usando "COMSVCSLib.SharedPropertyGroupManager" come nome della classe.
 
 ## <a name="requirements"></a>Requisiti
 
@@ -58,7 +58,7 @@ Per utilizzare questa classe da Microsoft Visual Basic, aggiungere un riferiment
 |-------------------------------------|--------------------------------------------------------------------------------------|
 | Client minimo supportato<br/> | Windows 2000 Professional \[solo app desktop\]<br/>                           |
 | Server minimo supportato<br/> | Windows 2000 Server \[solo app desktop\]<br/>                                 |
-| Intestazione<br/>                   | <dl> <dt>ComSvcs. h</dt> </dl> |
+| Intestazione<br/>                   | <dl> <dt>ComSvcs.h</dt> </dl> |
 
 
 
@@ -69,7 +69,7 @@ Per utilizzare questa classe da Microsoft Visual Basic, aggiungere un riferiment
 [**ISharedPropertyGroupManager**](/windows/desktop/api/ComSvcs/nn-comsvcs-isharedpropertygroupmanager)
 </dt> <dt>
 
-[**SharedProperty**](sharedproperty.md)
+[**Proprietà condivisa**](sharedproperty.md)
 </dt> <dt>
 
 [**SharedPropertyGroup**](sharedpropertygroup.md)

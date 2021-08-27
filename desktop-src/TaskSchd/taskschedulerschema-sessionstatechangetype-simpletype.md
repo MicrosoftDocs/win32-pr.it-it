@@ -1,9 +1,9 @@
 ---
 title: Tipo semplice sessionStateChangeType
-description: Definisce i valori per il tipo di Terminal Server modifica dello stato della sessione che è possibile usare per avviare un'attività.
+description: Definisce i valori per il tipo di modifica dello stato sessione di Terminal Server che è possibile usare per attivare l'avvio di un'attività.
 ms.assetid: 56e19ec0-ea6c-4434-ab9d-a1069108920f
 keywords:
-- Utilità di pianificazione di tipo semplice sessionStateChangeType
+- Tipo semplice sessionStateChangeType Utilità di pianificazione
 topic_type:
 - apiref
 api_name:
@@ -13,16 +13,16 @@ api_type:
 ms.topic: reference
 ms.date: 05/31/2018
 api_location: ''
-ms.openlocfilehash: 7a77fb563b59ccd8d63d38c6c85f16ff74ac404b
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: a67334b2e8d51404a0e5e78a7d2b3e49908cd1c6ce74f499e66272d2db9be910
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "104478377"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120099811"
 ---
 # <a name="sessionstatechangetype-simple-type"></a>Tipo semplice sessionStateChangeType
 
-Definisce i valori per il tipo di Terminal Server modifica dello stato della sessione che è possibile usare per avviare un'attività.
+Definisce i valori per il tipo di modifica dello stato sessione di Terminal Server che è possibile usare per attivare l'avvio di un'attività.
 
 ``` syntax
 <xs:simpleType name="sessionStateChangeType">
@@ -53,18 +53,18 @@ Definisce i valori per il tipo di Terminal Server modifica dello stato della ses
 
 ## <a name="enumeration-values"></a>Valori di enumerazione
 
-Il tipo semplice **sessionStateChangeType** definisce i valori seguenti.
+Il **tipo semplice sessionStateChangeType** definisce i valori seguenti.
 
 
 
 | Valore             | Descrizione                                                                                                                                                                                       |
 |-------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| ConsoleConnect    | Modifica dello stato di connessione della console Terminal Server. Ad esempio, quando si esegue la connessione a una sessione utente nel computer locale cambiando gli utenti del computer. <br/>                            |
-| ConsoleDisconnect | Modifica dello stato di disconnessione della console Terminal Server. Ad esempio, quando si esegue la disconnessione a una sessione utente nel computer locale cambiando gli utenti del computer. <br/>                      |
-| RemoteConnect     | Terminal Server modifica dello stato della connessione remota. Ad esempio, quando un utente si connette a una sessione utente utilizzando il programma Connessione Desktop remoto da un computer remoto. <br/>            |
-| RemoteDisconnect  | Terminal Server modifica dello stato di disconnessione remota. Ad esempio, quando un utente si disconnette da una sessione utente durante l'utilizzo del programma Connessione Desktop remoto da un computer remoto. <br/> |
-| SessionLock       | Modifica dello stato di blocco della sessione Terminal Server. Ad esempio, questa modifica di stato comporta l'esecuzione dell'attività quando il computer è bloccato. <br/>                                                       |
-| SessionUnlock     | Modifica dello stato di Terminal Server sessione sbloccata. Ad esempio, questa modifica di stato comporta l'esecuzione dell'attività quando il computer è sbloccato.<br/>                                                    |
+| ConsoleConnetti    | Modifica dello stato della connessione della console di Terminal Server. Ad esempio, quando ci si connette a una sessione utente nel computer locale passando gli utenti nel computer. <br/>                            |
+| ConsoleDisconnect | Modifica dello stato di disconnessione della console di Terminal Server. Ad esempio, quando si esegue la disconnessione a una sessione utente nel computer locale passando gli utenti nel computer. <br/>                      |
+| Connessione remota     | Modifica dello stato della connessione remota di Terminal Server. Ad esempio, quando un utente si connette a una sessione utente usando il Connessione Desktop remoto da un computer remoto. <br/>            |
+| RemoteDisconnect  | Modifica dello stato di disconnessione remota di Terminal Server. Ad esempio, quando un utente si disconnette da una sessione utente durante l'Connessione Desktop remoto programma da un computer remoto. <br/> |
+| SessionLock       | Modifica dello stato di blocco della sessione di Terminal Server. Ad esempio, questa modifica dello stato determina l'esecuzione dell'attività quando il computer è bloccato. <br/>                                                       |
+| SessionUnlock     | Modifica dello stato di sblocco della sessione di Terminal Server. Ad esempio, questa modifica dello stato determina l'esecuzione dell'attività quando il computer viene sbloccato.<br/>                                                    |
 
 
 
@@ -74,8 +74,8 @@ Il tipo semplice **sessionStateChangeType** definisce i valori seguenti.
 
 | Requisito | Valore |
 |-------------------------------------|------------------------------------------------------|
-| Client minimo supportato<br/> | \[Solo app desktop di Windows Vista\]<br/>       |
-| Server minimo supportato<br/> | \[Solo app desktop Windows Server 2008\]<br/> |
+| Client minimo supportato<br/> | Windows Solo \[ app desktop di Vista\]<br/>       |
+| Server minimo supportato<br/> | Windows Solo app desktop server 2008 \[\]<br/> |
 
 
 

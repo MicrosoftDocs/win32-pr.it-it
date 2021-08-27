@@ -1,21 +1,21 @@
 ---
 title: Effetto di scalabilità
-description: Usare questo effetto per ridimensionare un'immagine verso l'alto o verso il basso. L'effetto ha sei modalità di ridimensionamento più vicino, lineare, cubico, lineare multi-campione, anisotropo e cubico di alta qualità.
+description: Usare questo effetto per ridimensionare un'immagine verso l'alto o verso il basso. L'effetto ha sei modalità di ridimensionamento vicino più vicino, lineare, cubico, lineare multi-campione, anisotropo e cubica di alta qualità.
 ms.assetid: 99DFA8DB-384B-4F64-90A2-0D3D7E1ACF27
 keywords:
 - Effetto di ridimensionamento
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: d3a28e71dfb552a35bf138c245a82937bd600e61acd8b4a82b42cbc8d9d66a65
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: db3a4ef93fcdd2e93580157e0bb73b172975fe4a
+ms.sourcegitcommit: 9b5faa61c38b2d0c432b7f2dbee8c127b0e28a7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "118003663"
+ms.lasthandoff: 08/19/2021
+ms.locfileid: "122472933"
 ---
 # <a name="scale-effect"></a>Effetto di scalabilità
 
-Usare questo effetto per ridimensionare un'immagine verso l'alto o verso il basso. L'effetto ha sei modalità di ridimensionamento: vicino più vicino, lineare, cubico, lineare multi-campione, anisotropo e cubo di alta qualità.
+Usare questo effetto per ridimensionare un'immagine verso l'alto o verso il basso. L'effetto ha sei modalità di ridimensionamento: vicino più vicino, lineare, cubico, lineare multi-campione, anisotropo e cubica di alta qualità.
 
 Il CLSID per questo effetto è CLSID \_ D2D1Scale.
 
@@ -64,45 +64,15 @@ m_d2dContext->EndDraw();
 
 
 
-<table>
-<colgroup>
-<col style="width: 50%" />
-<col style="width: 50%" />
-</colgroup>
-<thead>
-<tr class="header">
-<th>Nome visualizzato ed enumerazione dell'indice</th>
-<th>Descrizione</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>Scalabilità<br/> D2D1_SCALE_PROP_SCALE<br/></td>
-<td>Quantità di scala nella direzione X e Y come rapporto tra le dimensioni dell'output e le dimensioni di input. Questa proprietà è D2D1_VECTOR_2Fdefined come: (scala X, scala Y). Gli importi della scala sono FLOAT, senza unità e devono essere positivi o 0.<br/> Il tipo è D2D1_VECTOR_2F.<br/> Il valore predefinito è {1.0f, 1.0f}.<br/></td>
-</tr>
-<tr class="even">
-<td>CenterPoint<br/> D2D1_SCALE_PROP_CENTER_POINT<br/></td>
-<td>Punto centrale di ridimensionamento dell'immagine. Questa proprietà è un D2D1_VECTOR_2F definito come: (punto X, punto Y). Le unità sono in DIP.<br/> Usare la proprietà del punto centrale per ridimensionare intorno a un punto diverso dall'angolo superiore sinistro.<br/> Il tipo è D2D1_VECTOR_2F.<br/> Il valore predefinito è {0.0f, 0.0f}.<br/></td>
-</tr>
-<tr class="odd">
-<td>BorderMode<br/> D2D1_SCALE_PROP_BORDER_MODE<br/></td>
-<td>Modalità usata per calcolare il bordo dell'immagine, soft o hard. Per <a href="#border-modes">altre informazioni, vedere</a> Modalità bordo. <br/> Il tipo è D2D1_BORDER_MODE.<br/> Il valore predefinito è D2D1_BORDER_MODE_SOFT.<br/></td>
-</tr>
-<tr class="even">
-<td>Nitidezza<br/> D2D1_SCALE_PROP_SHARPNESS<br/></td>
-<td>Nella modalità di interpolazione cubica di alta qualità, il livello di nitidezza del filtro di scala come float compreso tra 0 e 1. I valori sono senza unità. È possibile usare la nitidezza per regolare la qualità di un'immagine quando si ridimensiona l'immagine.<br/> Il fattore di nitidezza influisce sulla forma del kernel. Maggiore è il fattore di affilamento, più piccolo è il kernel.<br/>
-<blockquote>
-[!Note]<br />
-Questa proprietà influisce solo sulla modalità di interpolazione cubica di alta qualità.
-</blockquote>
-<br/> Il tipo è FLOAT.<br/> Il valore predefinito è 0,0f.<br/></td>
-</tr>
-<tr class="odd">
-<td>InterpolazioneMode<br/> D2D1_SCALE_PROP_INTERPOLATION_MODE<br/></td>
-<td>Modalità di interpolazione utilizzata dall'effetto per ridimensionare l'immagine. Esistono 6 modalità di scalabilità che variano in qualità e velocità. Per <a href="#interpolation-modes">altre informazioni, vedere Modalità di interpolazione.</a> <br/> Il tipo è D2D1_SCALE_INTERPOLATION_MODE.<br/> Il valore predefinito è D2D1_SCALE_INTERPOLATION_MODE_LINEAR.<br/></td>
-</tr>
-</tbody>
-</table>
+
+| Enumerazione del nome visualizzato e dell'indice | Descrizione | 
+|------------------------------------|-------------|
+| Scalabilità<br /> D2D1_SCALE_PROP_SCALE<br /> | Quantità di scala nella direzione X e Y come rapporto tra le dimensioni di output e le dimensioni di input. Questa proprietà è D2D1_VECTOR_2Fdefined come: (scala X, scala Y). Gli importi della scala sono FLOAT, senza unità e devono essere positivi o 0.<br /> Il tipo è D2D1_VECTOR_2F.<br /> Il valore predefinito è {1.0f, 1.0f}.<br /> | 
+| CenterPoint<br /> D2D1_SCALE_PROP_CENTER_POINT<br /> | Punto centrale di ridimensionamento dell'immagine. Questa proprietà è un D2D1_VECTOR_2F definito come: (punto X, punto Y). Le unità sono in DIP.<br /> Usare la proprietà punto centrale per ridimensionare un punto diverso dall'angolo superiore sinistro.<br /> Il tipo è D2D1_VECTOR_2F.<br /> Il valore predefinito è {0.0f, 0.0f}.<br /> | 
+| BorderMode<br /> D2D1_SCALE_PROP_BORDER_MODE<br /> | Modalità utilizzata per calcolare il bordo dell'immagine, soft o hard. Per <a href="#border-modes">altre informazioni, vedi</a> Modalità bordo. <br /> Il tipo è D2D1_BORDER_MODE.<br /> Il valore predefinito è D2D1_BORDER_MODE_SOFT.<br /> | 
+| Nitidezza<br /> D2D1_SCALE_PROP_SHARPNESS<br /> | Nella modalità di interpolazione cubica di alta qualità, il livello di nitidezza del filtro di ridimensionamento come valore float compreso tra 0 e 1. I valori sono senza unità. È possibile usare la nitidezza per regolare la qualità di un'immagine quando si ridimensiona l'immagine.<br /> Il fattore di nitidezza influisce sulla forma del kernel. Maggiore è il fattore di nitidezza, più piccolo è il kernel.<br /><blockquote>[!Note]<br />Questa proprietà influisce solo sulla modalità di interpolazione cubica di alta qualità.</blockquote><br /> Il tipo è FLOAT.<br /> Il valore predefinito è 0,0f.<br /> | 
+| InterpolationMode<br /> D2D1_SCALE_PROP_INTERPOLATION_MODE<br /> | Modalità di interpolazione utilizzata dall'effetto per ridimensionare l'immagine. Esistono 6 modalità di scalabilità che variano in qualità e velocità. Per <a href="#interpolation-modes">altre informazioni, vedi Modalità di interpolazione.</a> <br /> Il tipo è D2D1_SCALE_INTERPOLATION_MODE.<br /> Il valore predefinito è D2D1_SCALE_INTERPOLATION_MODE_LINEAR.<br /> | 
+
 
 
 
@@ -114,8 +84,8 @@ Questa proprietà influisce solo sulla modalità di interpolazione cubica di alt
 
 | Nome                     | Descrizione                                                                                                                                                                                                                                                              |
 |--------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| MODALITÀ BORDO D2D1 \_ \_ \_ SOFT | L'effetto applica il riempimento dell'immagine di input con pixel neri trasparenti per i campioni al di fuori dei limiti di input quando applica il kernel di convoluzione. In questo modo viene creato un bordo soft per l'immagine e nel processo la bitmap di output viene espansa in base alle dimensioni del kernel.<br/> |
-| MODALITÀ BORDO D2D1 \_ \_ \_ HARD | L'effetto estende l'immagine di input con una trasformazione del bordo di tipo speculare per gli esempi al di fuori dei limiti di input. Le dimensioni della bitmap di output sono uguali alle dimensioni della bitmap di input.<br/>                                                                       |
+| MODALITÀ BORDO D2D1 \_ \_ \_ SOFT | L'effetto riempire l'immagine di input con pixel neri trasparenti per i campioni al di fuori dei limiti di input quando applica il kernel di convoluzione. In questo modo viene creato un bordo soft per l'immagine e nel processo la bitmap di output viene espansa in base alle dimensioni del kernel.<br/> |
+| MODALITÀ BORDO D2D1 \_ \_ \_ HARD | L'effetto estende l'immagine di input con una trasformazione del bordo di tipo speculare per i campioni esterni ai limiti di input. La dimensione della bitmap di output è uguale alla dimensione della bitmap di input.<br/>                                                                       |
 
 
 
@@ -129,36 +99,36 @@ Questa proprietà influisce solo sulla modalità di interpolazione cubica di alt
 
 | Enumerazione                                             | Descrizione                                                                                                                                                                                          |
 |---------------------------------------------------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| D2D1 \_ SCALE \_ INTERPOLATION \_ MODE \_ NEAREST \_ NEIGHBOR     | Campiota il singolo punto più vicino e lo usa. Questa modalità usa meno tempo di elaborazione, ma restituisce l'immagine di qualità più bassa.                                                                           |
-| MODALITÀ DI INTERPOLAZIONE DELLA SCALA D2D1 \_ \_ \_ \_ LINEARE                | Usa un campione di quattro punti e un'interpolazione lineare. Questa modalità usa più tempo di elaborazione rispetto alla modalità vicina più vicina, ma restituisce un'immagine di qualità superiore.                                           |
-| MODALITÀ DI INTERPOLAZIONE DELLA SCALA D2D1 \_ \_ \_ \_ CUBICA                 | Usa un kernel cubico di 16 campioni per l'interpolazione. Questa modalità usa la maggior parte del tempo di elaborazione, ma restituisce un'immagine di qualità superiore.                                                                        |
-| D2D1 \_ SCALE \_ INTERPOLATION \_ MODE \_ MULTI \_ SAMPLE \_ LINEAR | Usa 4 campioni lineari all'interno di un singolo pixel per un anti-aliasing del bordo valido. Questa modalità è buona per ridurre di piccole quantità le immagini con pochi pixel.                                              |
-| D2D1 \_ SCALE \_ INTERPOLATION \_ MODE \_ ANISOTROP           | Usa il filtro anisotropo per campionare un modello in base alla forma trasformata della bitmap.                                                                                                     |
-| D2D1 \_ SCALE \_ INTERPOLATION \_ MODE \_ HIGH \_ QUALITY \_ CUBIC  | Usa un kernel cubico di qualità elevata di dimensioni variabili per eseguire una scalabilità preliminare dell'immagine se è coinvolta la scalabilità in basso nella matrice di trasformazione. Usa quindi la modalità di interpolazione cubica per l'output finale. |
+| D2D1 \_ SCALE \_ INTERPOLATION \_ MODE \_ NEAREST \_ NEIGHBOR     | Campioni il singolo punto più vicino e lo usa. Questa modalità usa meno tempo di elaborazione, ma restituisce l'immagine di qualità più bassa.                                                                           |
+| MODALITÀ DI INTERPOLAZIONE DELLA SCALA D2D1 \_ \_ \_ \_ LINEARE                | Usa un campione di quattro punti e l'interpolazione lineare. Questa modalità usa più tempo di elaborazione rispetto alla modalità adiacente più vicina, ma restituisce un'immagine di qualità superiore.                                           |
+| D2D1 \_ SCALE \_ INTERPOLATION \_ MODE \_ CUBIC                 | Usa un kernel cubico di 16 campioni per l'interpolazione. Questa modalità usa la maggior parte del tempo di elaborazione, ma restituisce un'immagine di qualità superiore.                                                                        |
+| D2D1 \_ SCALE \_ INTERPOLATION \_ MODE \_ MULTI \_ SAMPLE \_ LINEAR | Usa 4 campioni lineari all'interno di un singolo pixel per un anti-aliasing dei bordi valido. Questa modalità è buona per ridurre di piccole quantità le immagini con pochi pixel.                                              |
+| D2D1 \_ SCALE \_ INTERPOLATION \_ MODE \_ ANISO STANDBY           | Usa un filtro anisotropo per campionare un criterio in base alla forma trasformata della bitmap.                                                                                                     |
+| CUBO DI ALTA QUALITÀ \_ \_ DELLA MODALITÀ DI INTERPOLAZIONE DELLA \_ \_ \_ \_ SCALA D2D1  | Usa un kernel cubico di qualità elevata di dimensioni variabili per eseguire una scalabilità pre-ridimensionata dell'immagine se la scalabilità è coinvolta nella matrice di trasformazione. Usa quindi la modalità di interpolazione cubica per l'output finale. |
 
 
 
  
 
 > [!Note]  
-> Se non si seleziona una modalità, per impostazione predefinita l'effetto è D2D1 \_ SCALE \_ INTERPOLATION \_ MODE \_ LINEAR.
+> Se non si seleziona una modalità, per impostazione predefinita l'effetto è D2D1 \_ SCALE \_ INTERPOLATION MODE LINEAR (LINEARE MODALITÀ INTERPOLAZIONE SCALA D2D1). \_ \_
 
  
 
 > [!Note]  
-> La modalità anisotrop genera mipmap durante il ridimensionamento, tuttavia, se si imposta la proprietà **Cached** su true sugli effetti immessi a questo effetto, le mipmap non verranno generate ogni volta per immagini sufficientemente piccole.
+> La modalità anisotropa genera mipmap durante il ridimensionamento, tuttavia, se si imposta la proprietà **Cached** su true per gli effetti di input per questo effetto, le mipmap non verranno generate ogni volta per immagini sufficientemente piccole.
 
  
 
 ## <a name="output-bitmap"></a>Bitmap di output
 
-La posizione e le dimensioni della bitmap di output dipendono dal fattore di scala e dal punto centrale specificati.
+La posizione e le dimensioni della bitmap di output dipendono dal fattore di scala specificato e dal punto centrale.
 
-È possibile calcolare le dimensioni della bitmap di output usando questa equazione:<dl> BitmapSize? (Pixel)=Scala? \* Dimensioni bitmap originali? (DIP) \* (UserDPI/96)  
+È possibile calcolare le dimensioni della bitmap di output usando questa equazione:<dl> BitmapSize? (Pixel)=Scala? \* Dimensioni originali della bitmap? (DIP) \* (UserDPI/96)  
 BitmapSize<sub>y</sub>(Pixel)=Scale<sub>y</sub>Original Bitmap \* Size<sub>y</sub> (DIP) \* (UserDPI/96)  
 </dl>
 
-L'effetto arrotonda le frazioni di pixel fino al pixel intero più vicino.
+L'effetto arrotonda frazioni di pixel fino al pixel intero più vicino.
 
 La posizione della bitmap è (0, 0) o il valore della proprietà del punto centrale.
 
@@ -166,7 +136,7 @@ La posizione della bitmap è (0, 0) o il valore della proprietà del punto centr
 
 
 
-| Requisito | Valore |
+| Requisito | valore |
 |--------------------------|------------------------------------------------------------------------------------|
 | Client minimo supportato | Windows 8 e l'aggiornamento della piattaforma per Windows 7 \[ app desktop \| Windows Store\] |
 | Server minimo supportato | Windows 8 e l'aggiornamento della piattaforma per Windows 7 \[ app desktop \| Windows Store\] |

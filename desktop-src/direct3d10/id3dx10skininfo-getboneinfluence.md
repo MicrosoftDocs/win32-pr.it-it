@@ -1,7 +1,7 @@
 ---
-description: Ottenere la quantità di influenza di un dato osso su un vertice specificato.
+description: Ottiene la quantità di influenza che un determinato sodale ha su un vertice specificato.
 ms.assetid: 0586fdfd-e5b1-4699-b489-c54a0f305ee4
-title: 'Metodo ID3DX10SkinInfo:: GetBoneInfluence (D3DX10. h)'
+title: Metodo ID3DX10SkinInfo::GetBoneInfluence (D3DX10.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -14,16 +14,16 @@ api_type:
 api_location:
 - D3DX10.lib
 - D3DX10.dll
-ms.openlocfilehash: b2f7e6b75e9c0f9f08463b6dacf9d7c9d72f4f28
-ms.sourcegitcommit: 14010c34b35fa268046c7683f021f86de08ddd0a
+ms.openlocfilehash: 9b53f642b6e62bb37c6979602b1ae66e09ffc2eb42a6d47c70c6b895a01ba273
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/15/2021
-ms.locfileid: "106323134"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120096551"
 ---
-# <a name="id3dx10skininfogetboneinfluence-method"></a>Metodo ID3DX10SkinInfo:: GetBoneInfluence
+# <a name="id3dx10skininfogetboneinfluence-method"></a>Metodo ID3DX10SkinInfo::GetBoneInfluence
 
-Ottenere la quantità di influenza di un dato osso su un vertice specificato.
+Ottiene la quantità di influenza che un determinato sodale ha su un vertice specificato.
 
 ## <a name="syntax"></a>Sintassi
 
@@ -42,30 +42,30 @@ HRESULT GetBoneInfluence(
 
 <dl> <dt>
 
-*BoneIndex* \[ in\]
+*IndexIndex* \[ Pollici\]
 </dt> <dd>
 
-Tipo: **[ **uint**](../winprog/windows-data-types.md)**
+Tipo: **[ **UINT**](../winprog/windows-data-types.md)**
 
-Indice che specifica un osso esistente. Deve essere compreso tra 0 e il valore restituito da [**ID3DX10SkinInfo:: GetNumBones**](id3dx10skininfo-getnumbones.md).
+Indice che specifica un oggetto esistente. Deve essere compreso tra 0 e il valore restituito da [**ID3DX10SkinInfo::GetNumBones**](id3dx10skininfo-getnumbones.md).
 
 </dd> <dt>
 
-*InfluenceIndex* \[ in\]
+*Indice di influenza* \[ Pollici\]
 </dt> <dd>
 
-Tipo: **[ **uint**](../winprog/windows-data-types.md)**
+Tipo: **[ **UINT**](../winprog/windows-data-types.md)**
 
-Indice nell'elenco di vertici dell'osso che influenza.
+Indice nell'elenco dei vertici su cui influisce.
 
 </dd> <dt>
 
-*pWeight* \[ in\]
+*pWeight* \[ Pollici\]
 </dt> <dd>
 
-Tipo: **float \***
+Tipo: **\* float**
 
-La quantità di influenza, tra 0 e 1, che l'osso ha sul vertice.
+La quantità di influenza, compresa tra 0 e 1, che l'abile ha sul vertice.
 
 </dd> </dl>
 
@@ -77,7 +77,7 @@ Se il metodo ha esito positivo, il valore restituito è D3D \_ OK. Se il metodo 
 
 ## <a name="remarks"></a>Commenti
 
-Usare ID3DX10SkinInfo:: GetBoneInfluenceCount per determinare il numero di vertici influenzati dall'osso.
+Usare ID3DX10SkinInfo::GetBoneInfluenceCount per individuare il numero di vertici su cui influisce l'elemento.
 
 ## <a name="requirements"></a>Requisiti
 
@@ -85,8 +85,8 @@ Usare ID3DX10SkinInfo:: GetBoneInfluenceCount per determinare il numero di verti
 
 | Requisito | Valore |
 |--------------------|---------------------------------------------------------------------------------------|
-| Intestazione<br/>  | <dl> <dt>D3DX10. h</dt> </dl>   |
-| Libreria<br/> | <dl> <dt>D3DX10. lib</dt> </dl> |
+| Intestazione<br/>  | <dl> <dt>D3DX10.h</dt> </dl>   |
+| Libreria<br/> | <dl> <dt>D3DX10.lib</dt> </dl> |
 
 
 

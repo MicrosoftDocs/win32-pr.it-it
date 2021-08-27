@@ -4,12 +4,12 @@ ms.assetid: d687ecd3-9ad6-46d5-b927-d9b99af2002f
 title: Visualizzazione delle informazioni sulla topologia
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 78fd1d7d28de3d7fa5420241abf793295323532dca29d3d68d1271545aa460dd
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 9bf29f28ac419da7df14d90efb50919634d7409b
+ms.sourcegitcommit: 9b5faa61c38b2d0c432b7f2dbee8c127b0e28a7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "118237373"
+ms.lasthandoff: 08/19/2021
+ms.locfileid: "122468008"
 ---
 # <a name="viewing-topology-information"></a>Visualizzazione delle informazioni sulla topologia
 
@@ -19,41 +19,13 @@ Nella tabella seguente vengono illustrati l'elemento della topologia e gli attri
 
 
 
-<table>
-<colgroup>
-<col style="width: 50%" />
-<col style="width: 50%" />
-</colgroup>
-<thead>
-<tr class="header">
-<th>Elemento topologia</th>
-<th>Attributi</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>Nodi della topologia</td>
-<td><ul>
-<li><a href="topology-node-attributes.md">Attributi del nodo della topologia</a> per tutti i nodi.<br/></li>
-<li><a href="presentation-descriptor-attributes.md">Attributi del descrittore di presentazione</a> solo per i nodi di origine.<br/></li>
-<li>Informazioni sull'autorità di attendibilità di input e output per i nodi di trasformazione e output.<br/></li>
-</ul></td>
-</tr>
-<tr class="even">
-<td>Input del nodo</td>
-<td><ul>
-<li><a href="media-type-attributes.md">Attributi del tipo di supporto</a> per tutti i nodi.</li>
-</ul></td>
-</tr>
-<tr class="odd">
-<td>Output del nodo</td>
-<td><ul>
-<li><a href="stream-descriptor-attributes.md">Attributi del descrittore di flusso solo</a> per i nodi di origine.<br/></li>
-<li><a href="media-type-attributes.md">Attributi del tipo di supporto</a> per tutti i nodi.<br/></li>
-</ul></td>
-</tr>
-</tbody>
-</table>
+
+| Elemento topologia | Attributi | 
+|---------------|------------|
+| Nodi della topologia | <ul><li><a href="topology-node-attributes.md">Attributi del nodo della topologia</a> per tutti i nodi.<br /></li><li><a href="presentation-descriptor-attributes.md">Attributi del descrittore di presentazione</a> solo per i nodi di origine.<br /></li><li>Informazioni sull'autorità di attendibilità di input e output per i nodi di trasformazione e output.<br /></li></ul> | 
+| Input del nodo | <ul><li><a href="media-type-attributes.md">Attributi del tipo di supporto</a> per tutti i nodi.</li></ul> | 
+| Output del nodo | <ul><li><a href="stream-descriptor-attributes.md">Attributi del descrittore di flusso solo</a> per i nodi di origine.<br /></li><li><a href="media-type-attributes.md">Attributi del tipo di supporto</a> per tutti i nodi.<br /></li></ul> | 
+
 
 
 
@@ -73,7 +45,7 @@ I valori degli attributi, ad eccezione dei riferimenti ai puntatori e dei valori
 
 3.  Nel primo elenco a discesa scegliere la categoria Attributo.
 
-    Le categorie dipendono dal nodo della topologia. Ad esempio, per il nodo di origine, l'elenco a discesa mostra **Attributi** del descrittore di presentazione e Attributi **nodo** come categorie disponibili.
+    Le categorie dipendono dal nodo della topologia. Ad esempio, per il nodo di origine, l'elenco a discesa mostra **Presentation Descriptor Attributes** (Attributi descrittore presentazione) e **Node Attributes (Attributi nodo)** come categorie disponibili.
 
 4.  Nel secondo elenco a discesa scegliere l'attributo che si vuole impostare nel nodo.
 

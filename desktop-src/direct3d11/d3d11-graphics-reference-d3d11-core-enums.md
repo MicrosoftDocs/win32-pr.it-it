@@ -1,28 +1,28 @@
 ---
 title: Enumerazioni di base di Direct3D 11
-description: Questa sezione contiene informazioni sulle enumerazioni di base.
+description: Questa sezione contiene informazioni sulle enumerazioni principali.
 ms.assetid: 1641713a-5ac8-4597-900b-1bba54f9f522
 keywords:
 - enumerazioni, Direct3D 11 Core
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: b012ae34367ef849bebf3fb25780310fcb924ba9
-ms.sourcegitcommit: 73417d55867c804274a55abe5ca71bcba7006119
+ms.openlocfilehash: f0daf03ca2114f67935e1eb89f34b31306e31fc0
+ms.sourcegitcommit: c276a8912787b2cda74dcf54eb96df961bb1188b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/20/2020
-ms.locfileid: "104399901"
+ms.lasthandoff: 08/20/2021
+ms.locfileid: "122623117"
 ---
 # <a name="direct3d-11-core-enumerations"></a>Enumerazioni di base di Direct3D 11
 
-Questa sezione contiene informazioni sulle enumerazioni di base.
+Questa sezione contiene informazioni sulle enumerazioni principali.
 
 ## <a name="in-this-section"></a>Contenuto della sezione
 
 <table>
 <colgroup>
-<col style="width: 50%" />
-<col style="width: 50%" />
+<col  />
+<col  />
 </colgroup>
 <thead>
 <tr class="header">
@@ -33,23 +33,23 @@ Questa sezione contiene informazioni sulle enumerazioni di base.
 <tbody>
 <tr>
 <td><a href="/windows/win32/api/D3D11/ne-d3d11-d3d11_async_getdata_flag"><strong>D3D11_ASYNC_GETDATA_FLAG</strong></a><br/></td>
-<td>Flag facoltativi che controllano il comportamento di <a href="/windows/win32/api/D3D11/nf-d3d11-id3d11devicecontext-getdata"><strong>sul ID3D11DeviceContext:: GetData</strong></a>.<br/></td>
+<td>Flag facoltativi che controllano il comportamento di <a href="/windows/win32/api/D3D11/nf-d3d11-id3d11devicecontext-getdata"><strong>ID3D11DeviceContext::GetData</strong></a>.<br/></td>
 </tr>
 <tr>
 <td><a href="/windows/win32/api/D3D11/ne-d3d11-d3d11_blend"><strong>D3D11_BLEND</strong></a><br/></td>
-<td>Fattori di Blend, che modulano i valori per il pixel shader e la destinazione di rendering.<br/></td>
+<td>Fattori di blend, che modificano i valori per l'pixel shader e la destinazione di rendering.<br/></td>
 </tr>
 <tr>
 <td><a href="/windows/win32/api/D3D11/ne-d3d11-d3d11_blend_op"><strong>D3D11_BLEND_OP</strong></a><br/></td>
-<td>Operazione di fusione RGB o Alpha.<br/></td>
+<td>Operazione di fusione RGB o alfa.<br/></td>
 </tr>
 <tr>
 <td><a href="/windows/win32/api/D3D11/ne-d3d11-d3d11_clear_flag"><strong>D3D11_CLEAR_FLAG</strong></a><br/></td>
-<td>Specifica le parti del depth stencil da cancellare. <br/></td>
+<td>Specifica le parti della depth stencil da cancellare. <br/></td>
 </tr>
 <tr>
 <td><a href="/windows/win32/api/D3D11/ne-d3d11-d3d11_color_write_enable"><strong>D3D11_COLOR_WRITE_ENABLE</strong></a><br/></td>
-<td>Identificare i componenti di ogni pixel di una destinazione di rendering scrivibile durante la fusione.<br/></td>
+<td>Identificare i componenti di ogni pixel di una destinazione di rendering scrivibili durante la fusione.<br/></td>
 </tr>
 <tr>
 <td><a href="/windows/win32/api/D3D11/ne-d3d11-d3d11_comparison_func"><strong>D3D11_COMPARISON_FUNC</strong></a><br/></td>
@@ -57,21 +57,21 @@ Questa sezione contiene informazioni sulle enumerazioni di base.
 </tr>
 <tr>
 <td><a href="/windows/win32/api/D3D11_3/ne-d3d11_3-d3d11_conservative_rasterization_mode"><strong>D3D11_CONSERVATIVE_RASTERIZATION_MODE</strong></a><br/></td>
-<td>Indica se la rasterizzazione conservativa è attiva o disattivata.<br/></td>
+<td>Identifica se la rasterizzazione conservativa è on o off.<br/></td>
 </tr>
 <tr>
 <td><a href="/windows/win32/api/D3D11/ne-d3d11-d3d11_conservative_rasterization_tier"><strong>D3D11_CONSERVATIVE_RASTERIZATION_TIER</strong></a><br/></td>
-<td>Specifica se l'hardware e il driver supportano la rasterizzazione conservativa e il livello di livello.<br/></td>
+<td>Specifica se l'hardware e il driver supportano la rasterizzazione conservativa e a quale livello.<br/></td>
 </tr>
 <tr>
 <td><a href="/windows/win32/api/D3D11_3/ne-d3d11_3-d3d11_context_type"><strong>D3D11_CONTEXT_TYPE</strong></a><br/></td>
-<td>Specifica il contesto in cui viene eseguita una query.<br/></td>
+<td>Specifica il contesto in cui si verifica una query.<br/></td>
 </tr>
 <tr>
 <td><a href="/windows/win32/api/D3D11_1/ne-d3d11_1-d3d11_copy_flags"><strong>D3D11_COPY_FLAGS</strong></a><br/></td>
 <td><blockquote>
 [!Note]<br />
-Questa enumerazione è supportata dal runtime Direct3D 11,1, disponibile nei sistemi operativi Windows 8 e versioni successive.
+Questa enumerazione è supportata dal runtime direct3D 11.1, disponibile in Windows 8 e versioni successive.
 </blockquote>
 <br/> Specifica come gestire il contenuto esistente di una risorsa durante un'operazione di copia o aggiornamento di un'area all'interno di tale risorsa.<br/></td>
 </tr>
@@ -89,15 +89,15 @@ Questa enumerazione è supportata dal runtime Direct3D 11,1, disponibile nei sis
 </tr>
 <tr>
 <td><a href="/windows/win32/api/D3D11_1/ne-d3d11_1-d3d11_1_create_device_context_state_flag"><strong>D3D11_1_CREATE_DEVICE_CONTEXT_STATE_FLAG</strong></a><br/></td>
-<td>Descrive i flag usati per creare un oggetto stato del contesto del dispositivo (<a href="/windows/win32/api/d3d11_1/nn-d3d11_1-id3ddevicecontextstate"><strong>ID3DDeviceContextState</strong></a>) con il metodo <a href="/windows/win32/api/D3D11_1/nf-d3d11_1-id3d11device1-createdevicecontextstate"><strong>ID3D11Device1:: CreateDeviceContextState</strong></a> .<br/></td>
+<td>Descrive i flag usati per creare un oggetto stato del contesto di dispositivo (<a href="/windows/win32/api/d3d11_1/nn-d3d11_1-id3ddevicecontextstate"><strong>ID3DDeviceContextState</strong></a>) con il <a href="/windows/win32/api/D3D11_1/nf-d3d11_1-id3d11device1-createdevicecontextstate"><strong>metodo ID3D11Device1::CreateDeviceContextState.</strong></a><br/></td>
 </tr>
 <tr>
 <td><a href="/windows/win32/api/D3D11/ne-d3d11-d3d11_cull_mode"><strong>D3D11_CULL_MODE</strong></a><br/></td>
-<td>Indica che i triangoli rivolti a una direzione particolare non vengono disegnati.<br/></td>
+<td>Indica che i triangoli rivolti verso una determinata direzione non vengono disegnati.<br/></td>
 </tr>
 <tr>
 <td><a href="/windows/win32/api/D3D11/ne-d3d11-d3d11_depth_write_mask"><strong>D3D11_DEPTH_WRITE_MASK</strong></a><br/></td>
-<td>Identificare la parte di un buffer di stencil Depth per la scrittura di dati di profondità.<br/></td>
+<td>Identificare la parte di un buffer depth-stencil per la scrittura dei dati di profondità.<br/></td>
 </tr>
 <tr>
 <td><a href="/windows/win32/api/D3D11/ne-d3d11-d3d11_device_context_type"><strong>D3D11_DEVICE_CONTEXT_TYPE</strong></a><br/></td>
@@ -109,19 +109,19 @@ Questa enumerazione è supportata dal runtime Direct3D 11,1, disponibile nei sis
 </tr>
 <tr>
 <td><a href="/windows/win32/api/d3d11_3/ne-d3d11_3-d3d11_fence_flag"><strong>D3D11_FENCE_FLAG</strong></a><br/></td>
-<td>Specifica le opzioni di recinzione. <br/></td>
+<td>Specifica le opzioni di recinto virtuale. <br/></td>
 </tr>
 <tr>
 <td><a href="/windows/win32/api/D3D11/ne-d3d11-d3d11_fill_mode"><strong>D3D11_FILL_MODE</strong></a><br/></td>
-<td>Determina la modalità di riempimento da utilizzare durante il rendering dei triangoli.<br/></td>
+<td>Determina la modalità di riempimento da usare per il rendering dei triangoli.<br/></td>
 </tr>
 <tr>
 <td><a href="/windows/win32/api/D3D11/ne-d3d11-d3d11_filter"><strong>D3D11_FILTER</strong></a><br/></td>
-<td>Opzioni di filtro durante il campionamento della trama.<br/></td>
+<td>Opzioni di filtro durante il campionamento delle trame.<br/></td>
 </tr>
 <tr>
 <td><a href="/windows/win32/api/D3D11/ne-d3d11-d3d11_filter_type"><strong>D3D11_FILTER_TYPE</strong></a><br/></td>
-<td>Tipi di filtri di ingrandimento o campionatore minification.<br/></td>
+<td>Tipi di filtri per ingrandimento o minificazione del campionatore.<br/></td>
 </tr>
 <tr>
 <td><a href="/windows/win32/api/d3d11/ne-d3d11-d3d11_filter_reduction_type"><strong>D3D11_FILTER_REDUCTION_TYPE</strong></a><br/></td>
@@ -129,11 +129,11 @@ Questa enumerazione è supportata dal runtime Direct3D 11,1, disponibile nei sis
 </tr>
 <tr>
 <td><a href="/windows/win32/api/D3D11/ne-d3d11-d3d11_format_support"><strong>D3D11_FORMAT_SUPPORT</strong></a><br/></td>
-<td>Quali risorse sono supportate per un formato specificato e un dispositivo specifico (vedere <a href="/windows/win32/api/D3D11/nf-d3d11-id3d11device-checkformatsupport"><strong>ID3D11Device:: CheckFormatSupport</strong></a> e <a href="/windows/win32/api/D3D11/nf-d3d11-id3d11device-checkfeaturesupport"><strong>ID3D11Device:: CheckFeatureSupport</strong></a>).<br/></td>
+<td>Quali risorse sono supportate per un determinato formato e dispositivo (vedere <a href="/windows/win32/api/D3D11/nf-d3d11-id3d11device-checkformatsupport"><strong>ID3D11Device::CheckFormatSupport</strong></a> e <a href="/windows/win32/api/D3D11/nf-d3d11-id3d11device-checkfeaturesupport"><strong>ID3D11Device::CheckFeatureSupport).</strong></a><br/></td>
 </tr>
 <tr>
 <td><a href="/windows/win32/api/D3D11/ne-d3d11-d3d11_format_support2"><strong>D3D11_FORMAT_SUPPORT2</strong></a><br/></td>
-<td>Opzioni di supporto delle risorse non ordinate per una risorsa di calcolo shader (vedere <a href="/windows/win32/api/D3D11/nf-d3d11-id3d11device-checkfeaturesupport"><strong>ID3D11Device:: CheckFeatureSupport</strong></a>). <br/></td>
+<td>Opzioni di supporto delle risorse non ordinate per una risorsa compute shader (vedere <a href="/windows/win32/api/D3D11/nf-d3d11-id3d11device-checkfeaturesupport"><strong>ID3D11Device::CheckFeatureSupport).</strong></a> <br/></td>
 </tr>
 <tr>
 <td><a href="/windows/win32/api/D3D11/ne-d3d11-d3d11_input_classification"><strong>D3D11_INPUT_CLASSIFICATION</strong></a><br/></td>
@@ -143,17 +143,17 @@ Questa enumerazione è supportata dal runtime Direct3D 11,1, disponibile nei sis
 <td><a href="/windows/win32/api/D3D11_1/ne-d3d11_1-d3d11_logic_op"><strong>D3D11_LOGIC_OP</strong></a><br/></td>
 <td><blockquote>
 [!Note]<br />
-Questa enumerazione è supportata dal runtime Direct3D 11,1, disponibile nei sistemi operativi Windows 8 e versioni successive.
+Questa enumerazione è supportata dal runtime direct3D 11.1, disponibile in Windows 8 e versioni successive.
 </blockquote>
 <br/> Specifica le operazioni logiche da configurare per una destinazione di rendering.<br/></td>
 </tr>
 <tr>
 <td><a href="/windows/win32/api/d3dcommon/ne-d3dcommon-d3d_primitive"><strong>D3D11_PRIMITIVE</strong></a><br/></td>
-<td>Indica il modo in cui la pipeline interpreta le primitive di input di geometria o Hull shader. <br/></td>
+<td>Indica il modo in cui la pipeline interpreta le primitive di input geometry o hull shader. <br/></td>
 </tr>
 <tr>
 <td><a href="/previous-versions/windows/desktop/legacy/ff476189(v=vs.85)"><strong>D3D11_PRIMITIVE_TOPOLOGY</strong></a><br/></td>
-<td>Il modo in cui la pipeline interpreta i dati dei vertici associati alla fase input-assembler. Questi valori di topologia primitivi determinano il rendering dei dati dei vertici sullo schermo.<br/></td>
+<td>Il modo in cui la pipeline interpreta i dati dei vertici associati alla fase dell'assembler di input. Questi valori di topologia primitiva determinano la modalità di rendering dei dati dei vertici sullo schermo.<br/></td>
 </tr>
 <tr>
 <td><a href="/windows/win32/api/D3D11/ne-d3d11-d3d11_query"><strong>D3D11_QUERY</strong></a><br/></td>
@@ -161,7 +161,7 @@ Questa enumerazione è supportata dal runtime Direct3D 11,1, disponibile nei sis
 </tr>
 <tr>
 <td><a href="/windows/win32/api/D3D11/ne-d3d11-d3d11_query_misc_flag"><strong>D3D11_QUERY_MISC_FLAG</strong></a><br/></td>
-<td>Flag che descrivono il comportamento delle query varie.<br/></td>
+<td>Flag che descrivono il comportamento di query varie.<br/></td>
 </tr>
 <tr>
 <td><a href="/windows/win32/api/D3D11/ne-d3d11-d3d11_raise_flag"><strong>D3D11_RAISE_FLAG</strong></a><br/></td>
@@ -169,15 +169,15 @@ Questa enumerazione è supportata dal runtime Direct3D 11,1, disponibile nei sis
 </tr>
 <tr>
 <td><a href="https://www.bing.com/search?q=<strong>D3D11_SHADER_CACHE_SUPPORT_FLAGS</strong>"><strong>D3D11_SHADER_CACHE_SUPPORT_FLAGS</strong></a><br/></td>
-<td>Viene descritto il livello di supporto per la memorizzazione nella cache dello shader nel driver grafico corrente.<br/></td>
+<td>Descrive il livello di supporto per la memorizzazione nella cache dello shader nel driver di grafica corrente.<br/></td>
 </tr>
 <tr>
 <td><a href="/windows/win32/api/D3D11/ne-d3d11-d3d11_shader_min_precision_support"><strong>D3D11_SHADER_MIN_PRECISION_SUPPORT</strong></a><br/></td>
 <td><blockquote>
 [!Note]<br />
-Questa enumerazione è supportata dal runtime Direct3D 11,1, disponibile nei sistemi operativi Windows 8 e versioni successive.
+Questa enumerazione è supportata dal runtime direct3D 11.1, disponibile in Windows 8 e versioni successive.
 </blockquote>
-<br/> Valori che specificano i livelli di precisione minimi alle fasi dello shader.<br/></td>
+<br/> Valori che specificano i livelli di precisione minima nelle fasi dello shader.<br/></td>
 </tr>
 <tr>
 <td><a href="/windows/win32/api/d3d11/ne-d3d11-d3d11_shared_resource_tier"><strong>D3D11_SHARED_RESOURCE_TIER</strong></a><br/></td>
@@ -185,23 +185,23 @@ Questa enumerazione è supportata dal runtime Direct3D 11,1, disponibile nei sis
 </tr>
 <tr>
 <td><a href="/windows/win32/api/D3D11/ne-d3d11-d3d11_stencil_op"><strong>D3D11_STENCIL_OP</strong></a><br/></td>
-<td>Operazioni dello stencil che possono essere eseguite durante i test di stencil di profondità.<br/></td>
+<td>Operazioni degli stencil che possono essere eseguite durante il test dello stencil di profondità.<br/></td>
 </tr>
 <tr>
 <td><a href="/windows/win32/api/D3D11/ne-d3d11-d3d11_texture_address_mode"><strong>D3D11_TEXTURE_ADDRESS_MODE</strong></a><br/></td>
-<td>Identificare una tecnica per la risoluzione di coordinate di trama esterne ai limiti di una trama.<br/></td>
+<td>Identificare una tecnica per risolvere le coordinate della trama esterne ai limiti di una trama.<br/></td>
 </tr>
 <tr>
 <td><a href="/windows/win32/api/D3D11/ne-d3d11-d3d11_texturecube_face"><strong>D3D11_TEXTURECUBE_FACE</strong></a><br/></td>
-<td>Facce diverse di una trama del cubo.<br/></td>
+<td>I diversi visi di una trama del cubo.<br/></td>
 </tr>
 <tr>
 <td><a href="/windows/win32/api/D3D11/ne-d3d11-d3d11_tiled_resources_tier"><strong>D3D11_TILED_RESOURCES_TIER</strong></a><br/></td>
-<td>Indica il livello di livello al quale sono supportate le risorse affiancate.<br/></td>
+<td>Indica il livello a cui sono supportate le risorse affiancate.<br/></td>
 </tr>
 </tbody>
 </table>
 
 ## <a name="related-topics"></a>Argomenti correlati
 
-[Riferimento principale](d3d11-graphics-reference-d3d11-core.md)
+[Informazioni di riferimento di base](d3d11-graphics-reference-d3d11-core.md)

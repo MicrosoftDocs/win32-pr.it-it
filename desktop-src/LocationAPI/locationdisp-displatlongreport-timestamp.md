@@ -1,5 +1,5 @@
 ---
-description: 'Proprietà LocationDisp.DispLatLongReport.Timestamp: data e ora di generazione del report.'
+description: 'Proprietà LocationDisp.DispLatLongReport.Timestamp : data e ora di generazione del report.'
 ms.assetid: 3b8036aa-499c-4baf-bcc4-5b6c3f54eb7b
 title: Proprietà LocationDisp.DispLatLongReport.Timestamp
 ms.topic: reference
@@ -12,16 +12,16 @@ api_name:
 api_type:
 - COM
 api_location: ''
-ms.openlocfilehash: fd505f967bad31afa908609a72d108b17552fce8
-ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
+ms.openlocfilehash: 02b1d2bc344ec954f8c309e2370755464857fd754b16f6664760f9df4e0e5f54
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/28/2021
-ms.locfileid: "108105689"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120129911"
 ---
 # <a name="locationdispdisplatlongreporttimestamp-property"></a>Proprietà LocationDisp.DispLatLongReport.Timestamp
 
-\[Il modello a oggetti dell'API Location è disponibile per l'uso nei sistemi operativi specificati nella sezione Requisiti. È possibile che in versioni successive sia stata modificata o non sia più disponibile. Per accedere invece alla posizione da un sito Web, usare [l'API di georilevazione W3C](/previous-versions/windows/internet-explorer/ie-developer/samples/gg589513(v=vs.85)). Per accedere alla posizione da un'applicazione desktop, usare l'API [**Windows.Devices.Geolocation.**](/uwp/api/Windows.Devices.Geolocation)\]
+\[Il modello a oggetti dell'API Location è disponibile per l'uso nei sistemi operativi specificati nella sezione Requisiti. È possibile che in versioni successive sia stata modificata o non sia più disponibile. Per accedere invece alla posizione da un sito Web, usare [l'API di georilevazione W3C](/previous-versions/windows/internet-explorer/ie-developer/samples/gg589513(v=vs.85)). Per accedere alla posizione da un'applicazione desktop, usare il [**Windows. API Devices.Geolocation.**](/uwp/api/Windows.Devices.Geolocation)\]
 
 Data e ora di generazione del report.
 
@@ -46,7 +46,7 @@ Si noti che i linguaggi di scripting, ad esempio Microsoft JScript, potrebbero r
 
 ## <a name="examples"></a>Esempio
 
-Per un esempio di come usare questa proprietà, vedere [A Simple LatLong Report Example](/uwp/api/Windows.Devices.Geolocation).
+Per un esempio di come usare questa proprietà, vedere [Esempio di report LatLong semplice.](/uwp/api/Windows.Devices.Geolocation)
 
 ## <a name="requirements"></a>Requisiti
 
@@ -54,7 +54,7 @@ Per un esempio di come usare questa proprietà, vedere [A Simple LatLong Report 
 
 | Requisito | Valore |
 |-------------------------------------|--------------------------------------------|
-| Client minimo supportato<br/> | Solo app desktop di Windows 7 \[\]<br/> |
+| Client minimo supportato<br/> | Windows 7 \[ app desktop\]<br/> |
 | Server minimo supportato<br/> | Nessuno supportato<br/>                  |
 
 

@@ -1,9 +1,9 @@
 ---
-title: Elemento data (ComplexDataType)
-description: Elenco di elementi di dati nella struttura. L'elenco di elementi è nello stesso ordine definito nel modello.
+title: Elemento Data (ComplexDataType)
+description: Elenco di elementi di dati nella struttura . L'elenco di elementi è nello stesso ordine definito nel modello.
 ms.assetid: f2d7c2e4-0daa-4413-b23b-e1fd70dc4fc1
 keywords:
-- EventLog elemento dati
+- EventLog dell'elemento data
 topic_type:
 - apiref
 api_name:
@@ -13,16 +13,16 @@ api_type:
 ms.topic: reference
 ms.date: 05/31/2018
 api_location: ''
-ms.openlocfilehash: 34481c7cc784a20cb59a146c5f23cf21d8c51b3e
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: 8425b4ec69fc596e510554c589c58247837476389d1b7dbb9ab39de2dfbc7ff8
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "104048316"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120124241"
 ---
-# <a name="data-complexdatatype-element"></a>Elemento data (ComplexDataType)
+# <a name="data-complexdatatype-element"></a>Elemento Data (ComplexDataType)
 
-Elenco di elementi di dati nella struttura. L'elenco di elementi è nello stesso ordine definito nel modello.
+Elenco di elementi di dati nella struttura . L'elenco di elementi è nello stesso ordine definito nel modello.
 
 ``` syntax
 <xs:element name="Data"
@@ -30,7 +30,7 @@ Elenco di elementi di dati nella struttura. L'elenco di elementi è nello stesso
  />
 ```
 
-L'elemento **dati** è definito dal tipo complesso [**ComplexDataType**](eventschema-complexdatatype-complextype.md) .
+**L'elemento** Data è definito dal [**tipo complesso ComplexDataType.**](eventschema-complexdatatype-complextype.md)
 
 ## <a name="requirements"></a>Requisiti
 
@@ -38,8 +38,8 @@ L'elemento **dati** è definito dal tipo complesso [**ComplexDataType**](eventsc
 
 | Requisito | Valore |
 |-------------------------------------|------------------------------------------------------|
-| Client minimo supportato<br/> | \[Solo app desktop di Windows Vista\]<br/>       |
-| Server minimo supportato<br/> | \[Solo app desktop Windows Server 2008\]<br/> |
+| Client minimo supportato<br/> | Windows Solo \[ app desktop Vista\]<br/>       |
+| Server minimo supportato<br/> | Windows Solo app desktop di Server 2008 \[\]<br/> |
 
 
 
