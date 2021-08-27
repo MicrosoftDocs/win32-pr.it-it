@@ -14,12 +14,12 @@ api_type:
 api_location:
 - d3dx9.lib
 - d3dx9.dll
-ms.openlocfilehash: 78df978201df37269b7d33058effc16eadc9d16f
-ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
+ms.openlocfilehash: 35812be28d847f0c0ced94a05ab9cbcc941f26ef474b7b37ac175e84be263b34
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/28/2021
-ms.locfileid: "108116018"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120069361"
 ---
 # <a name="d3dxassembleshaderfromresource-function"></a>Funzione D3DXAssembleShaderFromResource
 
@@ -96,7 +96,7 @@ Opzioni di compilazione identificate da vari flag. Il compilatore HLSL Direct3D 
 
 Tipo: **[ **LPD3DXBUFFER**](id3dxbuffer.md)\***
 
-Restituisce un buffer contenente lo shader creato. Questo buffer contiene il codice dello shader compilato, nonché eventuali informazioni incorporate sulla tabella di debug e simboli.
+Restituisce un buffer contenente lo shader creato. Questo buffer contiene il codice shader compilato, nonché le informazioni sulle tabelle di debug e simboli incorporate.
 
 </dd> <dt>
 
@@ -117,7 +117,7 @@ Se la funzione ha esito positivo, il valore restituito è D3D \_ OK. Se la funzi
 
 ## <a name="remarks"></a>Commenti
 
-L'impostazione del compilatore determina anche la versione della funzione. Se è definito Unicode, la chiamata di funzione viene risolta in D3DXAssembleShaderFromResourceW. In caso contrario, la chiamata di funzione viene risolta in D3DXAssembleShaderFromResourceA perché vengono usate stringhe ANSI.
+L'impostazione del compilatore determina anche la versione della funzione. Se unicode è definito, la chiamata di funzione viene risolta in D3DXAssembleShaderFromResourceW. In caso contrario, la chiamata di funzione viene risolta in D3DXAssembleShaderFromResourceA perché vengono usate stringhe ANSI.
 
 ## <a name="requirements"></a>Requisiti
 

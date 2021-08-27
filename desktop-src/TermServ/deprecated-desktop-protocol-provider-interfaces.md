@@ -1,20 +1,20 @@
 ---
-title: Interfacce del provider di protocollo desktop deprecate
-description: Le interfacce seguenti sono state deprecate e non devono più essere utilizzate. Per i nuovi progetti, usare invece le interfacce del provider di Remote Desktop Protocol.
+title: Interfacce del provider del protocollo desktop deprecate
+description: Le interfacce seguenti sono deprecate e non devono più essere usate. Per i nuovi progetti, usare Remote Desktop Protocol interfacce provider.
 ms.assetid: FD64A6B9-AE15-4311-BD69-4824CAF53544
 ms.tgt_platform: multiple
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: f11a586084bc4938727e632ca196e97117f7b8a4
-ms.sourcegitcommit: 57758ecb246c84d65e6e0e4bd5570d9176fa39cd
+ms.openlocfilehash: fb4279be242a380795355c311cdf13c7af5e5ffb170afc05e2ad78477807c15f
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/25/2019
-ms.locfileid: "103857661"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120080191"
 ---
-# <a name="deprecated-desktop-protocol-provider-interfaces"></a>Interfacce del provider di protocollo desktop deprecate
+# <a name="deprecated-desktop-protocol-provider-interfaces"></a>Interfacce del provider del protocollo desktop deprecate
 
-Le interfacce seguenti sono state deprecate e non devono più essere utilizzate. Per i nuovi progetti, usare invece le interfacce del [provider di Remote Desktop Protocol](custom-remote-protocol-interfaces.md) .
+Le interfacce seguenti sono deprecate e non devono più essere usate. Per i nuovi progetti, [usare Remote Desktop Protocol interfacce](custom-remote-protocol-interfaces.md) provider.
 
 ## <a name="in-this-section"></a>Contenuto della sezione
 
@@ -83,9 +83,9 @@ Le interfacce seguenti sono state deprecate e non devono più essere utilizzate.
 
 </dd> </dl>
 
- 
+ 
 
- 
+ 
 
 
 

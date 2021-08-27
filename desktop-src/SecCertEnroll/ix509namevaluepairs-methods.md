@@ -4,22 +4,22 @@ ms.assetid: BA722088-17B0-4989-9AD8-BB875F3097CC
 title: Metodi IX509NameValuePairs
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: ac478492818aef144249d535665274ed768c4c54
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 5407ccac9d085390654f9de40ef342039572616353044c5af9b0211c628c119a
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "106314157"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119993661"
 ---
 # <a name="ix509namevaluepairs-methods"></a>Metodi IX509NameValuePairs
 
-L'interfaccia [**IX509NameValuePairs**](/windows/desktop/api/CertEnroll/nn-certenroll-ix509namevaluepairs) espone i metodi seguenti.
+[**L'interfaccia IX509NameValuePairs**](/windows/desktop/api/CertEnroll/nn-certenroll-ix509namevaluepairs) espone i metodi seguenti.
 
 ## <a name="in-this-section"></a>Contenuto della sezione
 
--   [**Aggiungi metodo**](/windows/desktop/api/CertEnroll/nf-certenroll-ix509namevaluepairs-add)
+-   [**Metodo Add**](/windows/desktop/api/CertEnroll/nf-certenroll-ix509namevaluepairs-add)
 -   [**Metodo Clear**](/windows/desktop/api/CertEnroll/nf-certenroll-ix509namevaluepairs-clear)
--   [**Remove (metodo)**](/windows/desktop/api/CertEnroll/nf-certenroll-ix509namevaluepairs-remove)
+-   [**Metodo Remove**](/windows/desktop/api/CertEnroll/nf-certenroll-ix509namevaluepairs-remove)
 
  
 

@@ -1,19 +1,19 @@
 ---
-description: Un renderer video richiede un oggetto Repaint.
+description: Un renderer video richiede un ridisegno.
 ms.assetid: 2e756dea-366c-4024-8fc8-6feabaef1954
-title: EC_REPAINT (dshow. h)
+title: EC_REPAINT (Dshow.h)
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: ba86b54d6d465330ec1635ed7301ce774ef7cb27
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: 7edd498d84aaace460a10c88d5579c2f5a87bba42e1a5f393786134bbe727af3
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "106324157"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120102791"
 ---
-# <a name="ec_repaint"></a>ridisegno EC \_
+# <a name="ec_repaint"></a>EC \_ REPAINT
 
-Un renderer video richiede un oggetto Repaint.
+Un renderer video richiede un ridisegno.
 
 ## <a name="parameters"></a>Parametri
 
@@ -22,7 +22,7 @@ Un renderer video richiede un oggetto Repaint.
 <span id="lParam1"></span><span id="lparam1"></span><span id="LPARAM1"></span>*lParam1*
 </dt> <dd>
 
-(**IUnknown** \* ) Puntatore all'interfaccia [**Ipin**](/windows/desktop/api/Strmif/nn-strmif-ipin) del PIN di input del renderer video o **null**.
+(**IUnknown** \* ) Puntatore [**all'interfaccia IPin**](/windows/desktop/api/Strmif/nn-strmif-ipin) del pin di input del renderer video o **NULL.**
 
 </dd> <dt>
 
@@ -35,19 +35,19 @@ Zero.
 
 ## <a name="default-action"></a>Azione predefinita
 
-Il parametro *lParam1* potrebbe specificare il pin di input del renderer video. In tal caso, il gestore del grafico del filtro trova il pin di output connesso al pin e lo interroga per l'interfaccia [**IMediaEventSink**](/windows/desktop/api/Strmif/nn-strmif-imediaeventsink) . Se il pin di output supporta **IMediaEventSink**, il gestore del grafo dei filtri chiama [**IMediaEventSink:: Notify**](/windows/desktop/api/Strmif/nf-strmif-imediaeventsink-notify) con il \_ codice dell'evento EC Repaint. Ciò consente al filtro upstream di inviare nuovamente l'ultimo esempio.
+Il *parametro lParam1* può specificare il pin di input del renderer video. In tal caso, il gestore del grafico dei filtri trova il pin di output connesso a tale pin ed esegue una query per [**l'interfaccia IMediaEventSink.**](/windows/desktop/api/Strmif/nn-strmif-imediaeventsink) Se il pin di output supporta **IMediaEventSink,** il gestore del grafico dei filtri chiama [**IMediaEventSink::Notify con**](/windows/desktop/api/Strmif/nf-strmif-imediaeventsink-notify) il codice evento EC \_ REPAINT. In questo modo il filtro upstream ha la possibilità di inviare nuovamente l'ultimo campione.
 
-Se *lParam1* è **null** o se il PIN non supporta [**IMediaEventSink**](/windows/desktop/api/Strmif/nn-strmif-imediaeventsink)o se il metodo [**Notify**](/windows/desktop/api/Strmif/nf-strmif-imediaeventsink-notify) ha esito negativo, il gestore del grafico del filtro gestisce l' \_ evento di ridisegno EC da solo. Il relativo comportamento dipende dallo stato del grafo:
+Se *lParam1* è **NULL** o se il pin non supporta [**IMediaEventSink**](/windows/desktop/api/Strmif/nn-strmif-imediaeventsink)o se il [**metodo Notify**](/windows/desktop/api/Strmif/nf-strmif-imediaeventsink-notify) ha esito negativo, il gestore del grafico del filtro gestisce l'evento EC \_ REPAINT da solo. Il comportamento dipende dallo stato del grafo:
 
--   Running: ignora l'evento. Il renderer riceverà l'esempio successivo nel flusso.
--   Paused: Cerca il grafico nella posizione corrente, scaricando quindi il filtro e riaccodando i dati.
--   Arrestato: sospende e arresta il grafico, riaccodando quindi i dati.
+-   In esecuzione: ignora l'evento. Il renderer riceverà l'esempio successivo nel flusso.
+-   In pausa: cerca il grafico nella posizione corrente, scaricando il filtro e riaspendendo i dati.
+-   Arrestato: sospende e arresta il grafo, rieliguendo così l'accodamento dei dati.
 
 Per impostazione predefinita, il gestore del grafico del filtro non passa questo evento all'applicazione.
 
 ## <a name="remarks"></a>Commenti
 
-I renderer video inviano questo messaggio quando ricevono un messaggio di [**\_ disegno WM**](/windows/desktop/gdi/wm-paint) e non contengono dati da visualizzare.
+I renderer video inviano questo messaggio quando ricevono un [**messaggio WM \_ PAINT**](/windows/desktop/gdi/wm-paint) e non hanno dati da visualizzare.
 
 ## <a name="requirements"></a>Requisiti
 
@@ -55,7 +55,7 @@ I renderer video inviano questo messaggio quando ricevono un messaggio di [**\_ 
 
 | Requisito | Valore |
 |-------------------|------------------------------------------------------------------------------------|
-| Intestazione<br/> | <dl> <dt>Dshow. h</dt> </dl> |
+| Intestazione<br/> | <dl> <dt>Dshow.h</dt> </dl> |
 
 
 

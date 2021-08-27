@@ -1,19 +1,19 @@
 ---
-description: Identifica il percorso di salvataggio predefinito per una raccolta per il proprietario della libreria.
+description: Identifica il percorso di salvataggio predefinito per una libreria per il proprietario della libreria.
 ms.assetid: b6b8961c-169a-4ad6-b7a4-ec9870a4fa83
-title: System. IsDefaultSaveLocation
+title: System.IsDefaultSaveLocation
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: f51b86b1069645f052a98f0023cf9cb2ebec1efc
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: f1823ee496556df9e9dc799e642565e53ad5a3497821c986bcae2d9657709674
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "103884965"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120058861"
 ---
-# <a name="systemisdefaultsavelocation"></a>System. IsDefaultSaveLocation
+# <a name="systemisdefaultsavelocation"></a>System.IsDefaultSaveLocation
 
-Identifica il percorso di salvataggio predefinito per una raccolta per il proprietario della libreria.
+Identifica il percorso di salvataggio predefinito per una libreria per il proprietario della libreria.
 
 ## <a name="windows-10-version-1703-windows-10-version-1607-windows-10-version-1511-windows-10-version-1507-windows-81-windows-8-windows-7"></a>Windows 10, versione 1703, Windows 10, versione 1607, Windows 10, versione 1511, Windows 10, versione 1507, Windows 8.1, Windows 8, Windows 7
 
@@ -44,7 +44,7 @@ propertyDescription
 
 ## <a name="remarks"></a>Commenti
 
-I valori PKEY sono definiti in Propkey. h.
+I valori PKEY sono definiti in Propkey.h.
 
 ## <a name="related-topics"></a>Argomenti correlati
 
@@ -59,13 +59,13 @@ I valori PKEY sono definiti in Propkey. h.
 [labelInfo](./propdesc-schema-labelinfo.md)
 </dt> <dt>
 
-[typeInfo](./propdesc-schema-typeinfo.md)
+[Typeinfo](./propdesc-schema-typeinfo.md)
 </dt> <dt>
 
 [displayInfo](./propdesc-schema-displayinfo.md)
 </dt> <dt>
 
-[stringFormat](./propdesc-schema-stringformat.md)
+[Stringformat](./propdesc-schema-stringformat.md)
 </dt> <dt>
 
 [booleanFormat](./propdesc-schema-booleanformat.md)
@@ -74,7 +74,7 @@ I valori PKEY sono definiti in Propkey. h.
 [numberFormat](./propdesc-schema-numberformat.md)
 </dt> <dt>
 
-[dateTimeFormat](./propdesc-schema-datetimeformat.md)
+[Datetimeformat](./propdesc-schema-datetimeformat.md)
 </dt> <dt>
 
 [enumeratedList](./propdesc-schema-enumeratedlist.md)

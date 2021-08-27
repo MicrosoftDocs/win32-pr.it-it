@@ -1,38 +1,38 @@
 ---
 title: Esempio di trigger di registrazione (C++)
-description: In questo esempio di C++ viene illustrato come creare un'attività pianificata per l'esecuzione del blocco note quando un'attività viene registrata.
+description: Questo esempio C++ illustra come creare un'attività pianificata per l'esecuzione Blocco note quando un'attività viene registrata.
 ms.assetid: 5e2e8fa6-66c7-4356-8fd6-22f7974791b9
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 090a690601e24e1245040d0e7b394123afa94b07
-ms.sourcegitcommit: 2d531328b6ed82d4ad971a45a5131b430c5866f7
+ms.openlocfilehash: cb9b87f21f2d301bcd500b4f28e41d1e2fada63ddaa8e7c9a4c833c6359f0b15
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "106298513"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120011331"
 ---
 # <a name="registration-trigger-example-c"></a>Esempio di trigger di registrazione (C++)
 
-In questo esempio di C++ viene illustrato come creare un'attività pianificata per l'esecuzione del blocco note quando un'attività viene registrata. L'attività contiene un trigger di registrazione che specifica un limite iniziale e un limite finale per l'attività e anche un ritardo per l'attività. Il limite iniziale specifica quando viene attivato il trigger e il ritardo imposta la quantità di tempo tra il momento in cui l'attività viene registrata e l'avvio dell'attività. L'attività contiene anche un'azione che specifica l'attività per l'esecuzione del blocco note.
+Questo esempio C++ illustra come creare un'attività pianificata per l'esecuzione Blocco note quando un'attività viene registrata. L'attività contiene un trigger di registrazione che specifica un limite iniziale e un limite finale per l'attività e anche un ritardo per l'attività. Il limite di inizio specifica quando il trigger viene attivato e il ritardo imposta la quantità di tempo tra la registrazione dell'attività e l'avvio dell'attività. L'attività contiene anche un'azione che specifica l'attività da eseguire Blocco note.
 
 > [!Note]  
-> Quando si aggiorna un'attività con un trigger di registrazione, l'attività verrà eseguita dopo l'aggiornamento.
+> Quando un'attività con un trigger di registrazione viene aggiornata, l'attività verrà eseguita dopo l'aggiornamento.
 
- 
+ 
 
-Nella procedura seguente viene descritto come pianificare un'attività per avviare un eseguibile quando l'attività è registrata.
+La procedura seguente descrive come pianificare un'attività per avviare un eseguibile quando l'attività viene registrata.
 
-**Per pianificare l'avvio del blocco note quando viene registrata un'attività**
+**Per pianificare Blocco note l'avvio quando un'attività viene registrata**
 
-1.  Inizializzare COM e impostare la sicurezza generale COM.
-2.  Creare l'oggetto [**ITaskService**](/windows/desktop/api/taskschd/nn-taskschd-itaskservice) . Questo oggetto consente di creare attività in una cartella specificata.
-3.  Ottenere una cartella attività per la creazione di un'attività in. Usare il metodo [**ITaskService:: GetFolder**](/windows/desktop/api/taskschd/nf-taskschd-itaskservice-getfolder) per ottenere la cartella e il metodo [**ITaskService:: newTask**](/windows/desktop/api/taskschd/nf-taskschd-itaskservice-newtask) per creare l'oggetto [**ITaskDefinition**](/windows/desktop/api/taskschd/nn-taskschd-itaskdefinition) .
-4.  Definire le informazioni sull'attività usando l'oggetto [**ITaskDefinition**](/windows/desktop/api/taskschd/nn-taskschd-itaskdefinition) , ad esempio le informazioni di registrazione per l'attività. Utilizzare la [**Proprietà RegistrationInfo di ITaskDefinition**](/windows/desktop/api/taskschd/nf-taskschd-itaskdefinition-get_registrationinfo) e altre proprietà dell'interfaccia **ITaskDefinition** per definire le informazioni sull'attività.
-5.  Creare un trigger di registrazione usando la [**Proprietà Triggers di ITaskDefinition**](/windows/desktop/api/taskschd/nf-taskschd-itaskdefinition-get_triggers) per accedere al [**ITriggerCollection**](/windows/desktop/api/taskschd/nn-taskschd-itriggercollection) per l'attività. Usare il metodo [**ITriggerCollection:: create**](/windows/desktop/api/taskschd/nf-taskschd-itriggercollection-create) (specificando il tipo di trigger che si vuole creare) per creare un trigger di registrazione.
-6.  Creare un'azione per l'attività da eseguire usando la [**Proprietà Actions di ITaskDefinition**](/windows/desktop/api/taskschd/nf-taskschd-itaskdefinition-get_actions) per accedere all'interfaccia [**IActionCollection**](/windows/desktop/api/taskschd/nn-taskschd-iactioncollection) per l'attività. Usare il metodo [**IActionCollection:: create**](/windows/desktop/api/taskschd/nf-taskschd-iactioncollection-create) per specificare il tipo di azione che si vuole creare. In questo esempio viene utilizzato un oggetto [**IExecAction**](/windows/desktop/api/taskschd/nn-taskschd-iexecaction) , che rappresenta un'azione che esegue un'operazione della riga di comando.
-7.  Registrare l'attività usando il metodo [**ITaskFolder:: RegisterTaskDefinition**](/windows/desktop/api/taskschd/nf-taskschd-itaskfolder-registertaskdefinition) .
+1.  Inizializzare COM e impostare la sicurezza COM generale.
+2.  Creare [**l'oggetto ITaskService.**](/windows/desktop/api/taskschd/nn-taskschd-itaskservice) Questo oggetto consente di creare attività in una cartella specificata.
+3.  Ottenere una cartella di attività in cui creare un'attività. Usare il [**metodo ITaskService::GetFolder**](/windows/desktop/api/taskschd/nf-taskschd-itaskservice-getfolder) per ottenere la cartella e il metodo [**ITaskService::NewTask**](/windows/desktop/api/taskschd/nf-taskschd-itaskservice-newtask) per creare [**l'oggetto ITaskDefinition.**](/windows/desktop/api/taskschd/nn-taskschd-itaskdefinition)
+4.  Definire le informazioni sull'attività usando [**l'oggetto ITaskDefinition,**](/windows/desktop/api/taskschd/nn-taskschd-itaskdefinition) ad esempio le informazioni di registrazione per l'attività. Usare la [**proprietà RegistrationInfo di ITaskDefinition**](/windows/desktop/api/taskschd/nf-taskschd-itaskdefinition-get_registrationinfo) e altre proprietà dell'interfaccia **ITaskDefinition** per definire le informazioni sull'attività.
+5.  Creare un trigger di registrazione usando la [**proprietà Triggers di ITaskDefinition**](/windows/desktop/api/taskschd/nf-taskschd-itaskdefinition-get_triggers) per accedere a [**ITriggerCollection**](/windows/desktop/api/taskschd/nn-taskschd-itriggercollection) per l'attività. Usare il [**metodo ITriggerCollection::Create**](/windows/desktop/api/taskschd/nf-taskschd-itriggercollection-create) (che specifica il tipo di trigger da creare) per creare un trigger di registrazione.
+6.  Creare un'azione per l'esecuzione dell'attività usando la proprietà [**Actions di ITaskDefinition**](/windows/desktop/api/taskschd/nf-taskschd-itaskdefinition-get_actions) per accedere all'interfaccia [**IActionCollection**](/windows/desktop/api/taskschd/nn-taskschd-iactioncollection) per l'attività. Usare il [**metodo IActionCollection::Create**](/windows/desktop/api/taskschd/nf-taskschd-iactioncollection-create) per specificare il tipo di azione che si vuole creare. In questo esempio viene utilizzato [**un oggetto IExecAction,**](/windows/desktop/api/taskschd/nn-taskschd-iexecaction) che rappresenta un'azione che esegue un'operazione della riga di comando.
+7.  Registrare l'attività [**usando il metodo ITaskFolder::RegisterTaskDefinition.**](/windows/desktop/api/taskschd/nf-taskschd-itaskfolder-registertaskdefinition)
 
-Nell'esempio C++ riportato di seguito viene illustrato come pianificare un'attività per eseguire il blocco note 30 secondi dopo la registrazione dell'attività.
+L'esempio C++ seguente illustra come pianificare l'esecuzione di un'attività Blocco note 30 secondi dopo la registrazione dell'attività.
 
 
 ```C++
@@ -386,12 +386,12 @@ int __cdecl wmain()
 
 <dl> <dt>
 
-[Uso della Utilità di pianificazione](using-the-task-scheduler.md)
+[Uso del Utilità di pianificazione](using-the-task-scheduler.md)
 </dt> </dl>
 
- 
+ 
 
- 
+ 
 
 
 

@@ -1,7 +1,7 @@
 ---
-description: "Il metodo EndFlush termina un'operazione di svuotamento. Implementa il metodo IPin:: EndFlush."
+description: Il metodo EndFlush termina un'operazione di scaricamento. Implementa il metodo IPin::EndFlush.
 ms.assetid: d4110eb4-26c5-4312-b33f-4af31e1bf2ae
-title: Metodo CBaseInputPin. EndFlush (Amfilter. h)
+title: Metodo CBaseInputPin.EndFlush (Amfilter.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -16,16 +16,16 @@ api_location:
 - Strmbase.dll
 - Strmbasd.lib
 - Strmbasd.dll
-ms.openlocfilehash: 403ee5aa100309084090dc241724067f9dd3aa5c
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: fba4c82679ebe96827cd45c9045080fb354cdab25eb562523869e97d533c5f2a
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "106326067"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120056351"
 ---
-# <a name="cbaseinputpinendflush-method"></a>CBaseInputPin. EndFlush, metodo
+# <a name="cbaseinputpinendflush-method"></a>Metodo CBaseInputPin.EndFlush
 
-Il `EndFlush` metodo termina un'operazione di svuotamento. Implementa il metodo [**Ipin:: EndFlush**](/windows/desktop/api/Strmif/nf-strmif-ipin-endflush) .
+Il `EndFlush` metodo termina un'operazione di scaricamento. Implementa il [**metodo IPin::EndFlush.**](/windows/desktop/api/Strmif/nf-strmif-ipin-endflush)
 
 ## <a name="syntax"></a>Sintassi
 
@@ -42,18 +42,18 @@ Questo metodo non presenta parametri.
 
 ## <a name="return-value"></a>Valore restituito
 
-Restituisce \_ OK.
+Restituisce S \_ OK.
 
 ## <a name="remarks"></a>Commenti
 
-Questo metodo imposta il flag [**CBaseInputPin:: m \_ BFlushing**](cbaseinputpin-m-bflushing.md) su **true**, che consente al metodo [**CBaseInputPin:: Receive**](cbaseinputpin-receive.md) di accettare esempi.
+Questo metodo imposta il flag [**\_ BFlushing CBaseInputPin::m**](cbaseinputpin-m-bflushing.md) su **TRUE,** che consente al metodo [**CBaseInputPin::Receive**](cbaseinputpin-receive.md) di accettare gli esempi.
 
-La classe derivata deve eseguire l'override di questo metodo ed eseguire i passaggi seguenti:
+La classe derivata deve eseguire l'override di questo metodo ed eseguire la procedura seguente:
 
-1.  Liberare i dati memorizzati nel buffer e attendere che tutti gli esempi in coda vengano eliminati.
-2.  Cancellare le notifiche [**\_ complete di EC**](ec-complete.md) in sospeso.
+1.  Liberare tutti i dati memorizzati nel buffer e attendere che tutti gli esempi in coda siano eliminati.
+2.  Cancellare tutte le notifiche [**EC \_ COMPLETE in**](ec-complete.md) sospeso.
 3.  Chiamare il metodo della classe base.
-4.  Chiamare [**Ipin:: EndFlush**](/windows/desktop/api/Strmif/nf-strmif-ipin-endflush) nei pin di input downstream. Se il PIN non ha ancora recapitato alcun campione multimediale a valle, è possibile ignorare questo passaggio. Se i pin di output derivano dalla classe [**CBaseOutputPin**](cbaseoutputpin.md) , è possibile chiamare il metodo [**CBaseOutputPin::D eliverendflush**](cbaseoutputpin-deliverendflush.md) .
+4.  Chiamare [**IPin::EndFlush sui**](/windows/desktop/api/Strmif/nf-strmif-ipin-endflush) pin di input downstream. Se il pin non ha ancora fornito campioni di supporti a valle, è possibile ignorare questo passaggio. Se i pin di output derivano dalla [**classe CBaseOutputPin,**](cbaseoutputpin.md) è possibile chiamare il metodo [**CBaseOutputPin::D eliverEndFlush.**](cbaseoutputpin-deliverendflush.md)
 
 ## <a name="requirements"></a>Requisiti
 
@@ -61,8 +61,8 @@ La classe derivata deve eseguire l'override di questo metodo ed eseguire i passa
 
 | Requisito | Valore |
 |--------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Intestazione<br/>  | <dl> <dt>Amfilter. h (include Streams. h)</dt> </dl>                                                                                  |
-| Libreria<br/> | <dl> <dt>Strmbase. lib (compilazioni finali); </dt> <dt>Strmbasd. lib (build di debug)</dt> </dl> |
+| Intestazione<br/>  | <dl> <dt>Amfilter.h (include Flussi.h)</dt> </dl>                                                                                  |
+| Libreria<br/> | <dl> <dt>Strmbase.lib (build di vendita al dettaglio); </dt> <dt>Strmbasd.lib (build di debug)</dt> </dl> |
 
 
 

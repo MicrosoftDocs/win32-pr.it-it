@@ -14,12 +14,12 @@ api_type:
 api_location:
 - d3dx9.lib
 - d3dx9.dll
-ms.openlocfilehash: 33d45beda51a7a2c80debafbab864c2accb33653
-ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
+ms.openlocfilehash: fcb542c5c7bb4edb4dafffa1254b76504aaf0f256a9d694db9d55724f2c94c2d
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/28/2021
-ms.locfileid: "108098269"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120069281"
 ---
 # <a name="d3dxintersecttri-function-d3dx9meshh"></a>Funzione D3DXIntersectTri (D3DX9Mesh.h)
 
@@ -52,7 +52,7 @@ BOOL D3DXIntersectTri(
 
 Tipo: **const [**D3DXVECTOR3**](d3dxvector3.md) \***
 
-Puntatore a una [**struttura D3DXVECTOR3,**](d3dxvector3.md) che descrive la prima posizione del vertice del triangolo.
+Puntatore a una [**struttura D3DXVECTOR3,**](d3dxvector3.md) che descrive la posizione del primo vertice triangolare.
 
 </dd> <dt>
 
@@ -61,7 +61,7 @@ Puntatore a una [**struttura D3DXVECTOR3,**](d3dxvector3.md) che descrive la pri
 
 Tipo: **const [**D3DXVECTOR3**](d3dxvector3.md) \***
 
-Puntatore a una [**struttura D3DXVECTOR3,**](d3dxvector3.md) che descrive la seconda posizione del vertice del triangolo.
+Puntatore a una [**struttura D3DXVECTOR3,**](d3dxvector3.md) che descrive la posizione del secondo vertice triangolare.
 
 </dd> <dt>
 
@@ -70,7 +70,7 @@ Puntatore a una [**struttura D3DXVECTOR3,**](d3dxvector3.md) che descrive la sec
 
 Tipo: **const [**D3DXVECTOR3**](d3dxvector3.md) \***
 
-Puntatore a una [**struttura D3DXVECTOR3,**](d3dxvector3.md) che descrive la posizione del terzo vertice del triangolo.
+Puntatore a una [**struttura D3DXVECTOR3,**](d3dxvector3.md) che descrive la posizione del terzo vertice triangolare.
 
 </dd> <dt>
 
@@ -133,7 +133,7 @@ Qualsiasi punto nel piano V1V2V3 può essere rappresentato dalla coordinata bary
 
 Le coordinate barycentriche sono una forma di coordinate generali. In questo contesto, l'uso di coordinate barycentrice rappresenta una modifica nei sistemi di coordinate. Ciò che vale per le coordinate cartesiane è vero per le coordinate barycentriche.
 
-Le coordinate barycentriche definiscono un punto all'interno di un triangolo in termini di vertici del triangolo. Per una descrizione più approfondita delle coordinate barycentriche, vedere Descrizione delle coordinate [barycentriche di Mathworld.](https://mathworld.wolfram.com/BarycentricCoordinates.html)
+Le coordinate barycentriche definiscono un punto all'interno di un triangolo in termini di vertici del triangolo. Per una descrizione più dettagliata delle coordinate barycentric, vedere Descrizione delle [coordinate barycentriche di Mathworld.](https://mathworld.wolfram.com/BarycentricCoordinates.html)
 
 ## <a name="requirements"></a>Requisiti
 

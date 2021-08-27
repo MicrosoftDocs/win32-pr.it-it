@@ -1,31 +1,31 @@
 ---
-description: Tutti gli oggetti Item dispongono di proprietà.
+description: Tutti gli oggetti elemento hanno proprietà.
 ms.assetid: 00e04790-e319-41b3-b88f-8064912b91b1
-title: Attributi di proprietà (WIA)
+title: Attributi delle proprietà (WIA)
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 47c635cb0d4e21fe2a1d65a3f21254f8e9c04d64
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: cdee1cdee48bba6183f9bcae2abc521ac9f53dfb33eec544ab3ed6bead4947b9
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104485060"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120007531"
 ---
-# <a name="property-attributes-wia"></a>Attributi di proprietà (WIA)
+# <a name="property-attributes-wia"></a>Attributi delle proprietà (WIA)
 
-Tutti gli oggetti Item dispongono di proprietà. Le proprietà hanno attributi. Ad esempio, gli attributi delle proprietà indicano se una proprietà viene letta, scritta o eliminata. Indica inoltre i valori validi della proprietà. Le costanti seguenti sono attributi di proprietà validi: 
+Tutti gli oggetti elemento hanno proprietà. Le proprietà hanno attributi. Ad esempio, gli attributi della proprietà indicano se una proprietà viene letta, scritta o eliminata. Indicano anche i valori di proprietà validi. Le costanti seguenti sono attributi di proprietà validi: 
 
-| Attributo Property        | Significato                                                                                                  |
+| Attributo property        | Significato                                                                                                  |
 |---------------------------|----------------------------------------------------------------------------------------------------------|
-| inseribile \_ \_ nella cache WIA      | Il dispositivo può memorizzare nella cache il valore della proprietà.                                                               |
-| \_flag di prop WIA \_           | La proprietà dispone di un elenco di valori di flag validi. I valori dei flag vengono combinati tramite **un'operazione or** bit per bit. |
-| \_elenco di oggetti WIA \_           | La proprietà dispone di un elenco di valori validi.                                                                 |
-| \_None Prop \_ nessuno           | Alla proprietà non è associato alcun valore valido.                                          |
-| \_intervallo di oggetti WIA \_          | La proprietà ha un intervallo di valori validi.                                                                |
-| \_lettura della prop di WIA \_           | L'applicazione è in grado di leggere il valore della proprietà.                                                           |
-| WIA \_ prop \_ RW             | L'applicazione è in grado di leggere e scrivere il valore della proprietà.                                                 |
-| \_ \_ richiesta sincronizzazione Prop \_ WIA | Non usare.                                                                                              |
-| \_scrittura della prop WIA \_          | L'applicazione può scrivere il valore della proprietà.                                                          |
+| WIA \_ PROP \_ MEMORIZZABILE NELLA CACHE      | Il dispositivo può memorizzare nella cache il valore della proprietà.                                                               |
+| WIA \_ PROP \_ FLAG           | La proprietà include un elenco di valori di flag validi. I valori dei flag vengono combinati usando un'operazione **OR** bit per bit. |
+| ELENCO DI PROPRIETÀ WIA \_ \_           | La proprietà include un elenco di valori validi.                                                                 |
+| WIA \_ PROP \_ NONE           | Alla proprietà non sono associati valori validi.                                          |
+| INTERVALLO DI PROPRIETÀ WIA \_ \_          | La proprietà ha un intervallo di valori validi.                                                                |
+| WIA \_ PROP \_ READ           | L'applicazione può leggere il valore della proprietà.                                                           |
+| WIA \_ PROP \_ RW             | L'applicazione può leggere e scrivere il valore della proprietà.                                                 |
+| È NECESSARIA LA SINCRONIZZAZIONE DI WIA \_ \_ \_ PROP | Non usare.                                                                                              |
+| SCRITTURA DI PROPRIETÀ WIA \_ \_          | L'applicazione può scrivere il valore della proprietà.                                                          |
 
 
 

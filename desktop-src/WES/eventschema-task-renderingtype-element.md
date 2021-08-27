@@ -1,9 +1,9 @@
 ---
 title: Elemento Task (RenderingInfoType)
-description: Stringa del messaggio di cui è stato eseguito il rendering dell'attività specificata nell'evento.
+description: Stringa di messaggio di cui è stato eseguito il rendering dell'attività specificata nell'evento .
 ms.assetid: c485eeee-e809-4f84-b3fd-cc7e3349433b
 keywords:
-- EventLog elemento attività
+- EventLog dell'elemento Task
 topic_type:
 - apiref
 api_name:
@@ -13,16 +13,16 @@ api_type:
 ms.topic: reference
 ms.date: 05/31/2018
 api_location: ''
-ms.openlocfilehash: 139c50605c869c81d1b9afeacdc9129cf4df2974
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: f4f07ce270a6f1936a1d30f2151afe2c70576e3f8539779d64e1816796708d8c
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "103743727"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120005321"
 ---
 # <a name="task-renderinginfotype-element"></a>Elemento Task (RenderingInfoType)
 
-Stringa del messaggio di cui è stato eseguito il rendering dell'attività specificata nell'evento.
+Stringa di messaggio di cui è stato eseguito il rendering dell'attività specificata nell'evento .
 
 ``` syntax
 <xs:element name="Task"
@@ -30,7 +30,7 @@ Stringa del messaggio di cui è stato eseguito il rendering dell'attività speci
  />
 ```
 
-L'elemento **Task** è definito dal tipo complesso [**RenderingInfoType**](eventschema-renderingtype-complextype.md) .
+**L'elemento** Task è definito dal [**tipo complesso RenderingInfoType.**](eventschema-renderingtype-complextype.md)
 
 ## <a name="requirements"></a>Requisiti
 
@@ -38,8 +38,8 @@ L'elemento **Task** è definito dal tipo complesso [**RenderingInfoType**](event
 
 | Requisito | Valore |
 |-------------------------------------|------------------------------------------------------|
-| Client minimo supportato<br/> | \[Solo app desktop di Windows Vista\]<br/>       |
-| Server minimo supportato<br/> | \[Solo app desktop Windows Server 2008\]<br/> |
+| Client minimo supportato<br/> | Windows Solo \[ app desktop Vista\]<br/>       |
+| Server minimo supportato<br/> | Windows Solo app desktop di Server 2008 \[\]<br/> |
 
 
 

@@ -1,15 +1,15 @@
 ---
-description: I provider WMI di sicurezza possono essere usati per lo scripting wmi e per creare un provider di sicurezza gestito.
+description: I provider WMI di sicurezza possono essere utilizzati per lo scripting WMI e per creare un provider di sicurezza gestito.
 ms.assetid: c3f7bd91-6cea-43ee-b8a7-1506dbd7926d
 title: Provider WMI di sicurezza
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 7d81833abff5160847678d094694702e4711de90
-ms.sourcegitcommit: 822413efb4a70dd464e5db4d9e8693ef74f8132f
+ms.openlocfilehash: 8acc0ecff578f687b7a0473fc5ecbbeae6b3a5503deb795da3bddfe6bf761042
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 07/09/2021
-ms.locfileid: "113581989"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120080621"
 ---
 # <a name="security-wmi-providers"></a>Provider WMI di sicurezza
 
@@ -19,7 +19,7 @@ I provider WMI di sicurezza consentono agli amministratori e ai programmatori di
 
 ## <a name="developer-audience"></a>Sviluppatori
 
-Questo documento specifica l'interfaccia del provider WMI per la gestione e la configurazione di Crittografia unità BitLocker (BDE) e Trusted Platform Module (TPM) in Windows Server 2008 R2 e Windows Server 2008 per i server e Windows 7 e Windows Vista per i computer client. È destinato a essere letto da chi scrive script, elementi dell'interfaccia utente o altri strumenti di amministrazione per BDE o TPM.
+Questo documento specifica l'interfaccia del provider WMI per la gestione e la configurazione di Crittografia unità BitLocker (BDE) e Trusted Platform Module (TPM) in Windows Server 2008 R2 e Windows Server 2008 per server e Windows 7 e Windows Vista per i computer client. Deve essere letto da chi scrive script, elementi dell'interfaccia utente o altri strumenti di amministrazione per BDE o TPM.
 
 ## <a name="run-time-requirements"></a>Requisiti di runtime
 
@@ -40,7 +40,7 @@ I provider WMI di sicurezza richiedono il file mof specificato con ogni provider
 
 ## <a name="additional-resources"></a>Risorse aggiuntive
 
-Di seguito sono riportate altre risorse.
+Di seguito sono riportate risorse aggiuntive.
 
 
 

@@ -14,12 +14,12 @@ api_type:
 api_location:
 - D3DX10.lib
 - D3DX10.dll
-ms.openlocfilehash: 9671b2a161124228c264da7eac0a2aa3a915ff95
-ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
+ms.openlocfilehash: acd1c3e816d8f5a88b266a71e7579227be2def3452fbc25307fb4fa899ecacb7
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/28/2021
-ms.locfileid: "108108759"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120070021"
 ---
 # <a name="d3dxquaternionsquad-function-d3dx10mathh"></a>Funzione D3DXQuaternionSquad (D3DX10Math.h)
 
@@ -95,7 +95,7 @@ Puntatore a una struttura D3DXQUATERNION di origine.
 
 Tipo: **[ **FLOAT**](../winprog/windows-data-types.md)**
 
-Parametro che indica la distanza da interpolare tra i quaternioni.
+Parametro che indica la distanza di interpolazione tra i quaternioni.
 
 </dd> </dl>
 
@@ -107,7 +107,7 @@ Puntatore a una struttura D3DXQUATERNION che è il risultato dell'interpolazione
 
 ## <a name="remarks"></a>Commenti
 
-Questa funzione usa la sequenza seguente di operazioni di interpolazione lineare sferica:
+Questa funzione usa la sequenza seguente di operazioni di interpolazione lineare sferiche:
 
 
 ```

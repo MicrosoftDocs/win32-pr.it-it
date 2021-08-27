@@ -1,9 +1,9 @@
 ---
-title: Struttura WMDM_PROP_VALUES_RANGE
-description: La \_ struttura dell'intervallo WMDM Prop \_ Values \_ descrive un intervallo di valori validi per una particolare proprietà in una particolare configurazione della proprietà.
+title: WMDM_PROP_VALUES_RANGE struttura
+description: La struttura WMDM PROP VALUES RANGE descrive un intervallo di valori \_ validi per una determinata proprietà in una particolare configurazione di \_ \_ proprietà.
 ms.assetid: fb823a66-cc9c-4632-a4f0-03c7255c3ccb
 keywords:
-- Struttura di WMDM_PROP_VALUES_RANGE Windows Media Gestione dispositivi
+- WMDM_PROP_VALUES_RANGE struttura windows Media Device Manager
 topic_type:
 - apiref
 api_name:
@@ -14,16 +14,16 @@ api_type:
 - HeaderDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 2ba82a1067db97e93fff2845e69e89f978548b73
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: a668b5acd8427df5b4bc163788c225f4eaee9a16b70af25312ae8ec94cb2bb63
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "106325272"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120004781"
 ---
-# <a name="wmdm_prop_values_range-structure"></a>\_Struttura dell' \_ intervallo di valori della prop WMDM \_
+# <a name="wmdm_prop_values_range-structure"></a>Struttura WMDM \_ PROP \_ VALUES \_ RANGE
 
-La struttura dell' **\_ \_ \_ intervallo WMDM prop values** descrive un intervallo di valori validi per una particolare proprietà in una particolare configurazione della proprietà.
+La **struttura WMDM \_ PROP VALUES \_ \_ RANGE** descrive un intervallo di valori validi per una determinata proprietà in una particolare configurazione di proprietà.
 
 ## <a name="syntax"></a>Sintassi
 
@@ -59,13 +59,13 @@ Valore massimo nell'intervallo.
 **rangeStep**
 </dt> <dd>
 
-Dimensioni del passaggio in cui i valori validi vengono incrementati dal valore minimo al valore massimo. Questo consente di specificare valori discreti consentiti in un intervallo.
+Dimensione del passaggio in cui i valori validi aumentano dal valore minimo al valore massimo. Ciò consente di specificare valori discreti consentiti in un intervallo.
 
 </dd> </dl>
 
 ## <a name="remarks"></a>Commenti
 
-Questa struttura viene utilizzata nella struttura [**WMDM di \_ prop \_ desc**](wmdm-prop-desc.md) per descrivere un intervallo di valori validi. Un intervallo di valori validi è applicabile quando WMDM \_ enum \_ prop \_ valid \_ Values \_ enum è selezionato dall'enumerazione [**WMDM \_ enum \_ prop \_ valid \_ Values \_ form**](wmdm-enum-prop-valid-values-form.md) Enumeration.
+Questa struttura viene usata nella struttura [**WMDM \_ PROP \_ DESC**](wmdm-prop-desc.md) per descrivere un intervallo di valori validi. Un intervallo di valori validi è applicabile quando l'enumerazione WMDM ENUM PROP VALID VALUES ENUM è selezionata dall'enumerazione \_ \_ \_ \_ \_ [**WMDM \_ ENUM \_ PROP VALID VALUES \_ \_ \_ FORM.**](wmdm-enum-prop-valid-values-form.md)
 
 ## <a name="requirements"></a>Requisiti
 
@@ -73,7 +73,7 @@ Questa struttura viene utilizzata nella struttura [**WMDM di \_ prop \_ desc**](
 
 | Requisito | Valore |
 |-------------------|-------------------------------------------------------------------------------------|
-| Intestazione<br/> | <dl> <dt>WMDM. idl</dt> </dl> |
+| Intestazione<br/> | <dl> <dt>Wmdm.idl</dt> </dl> |
 
 
 
@@ -84,19 +84,19 @@ Questa struttura viene utilizzata nella struttura [**WMDM di \_ prop \_ desc**](
 [**IWMDMDevice3::GetFormatCapability**](/windows/desktop/api/mswmdm/nf-mswmdm-iwmdmdevice3-getformatcapability)
 </dt> <dt>
 
-[**\_ \_ \_ \_ form valori validi dell'enumerazione \_ WMDM**](wmdm-enum-prop-valid-values-form.md)
+[**MODULO VALORI \_ VALIDI DELLE PROPRIETÀ DELL'ENUMERAZIONE WMDM \_ \_ \_ \_**](wmdm-enum-prop-valid-values-form.md)
 </dt> <dt>
 
-[**\_funzionalità di formato WMDM \_**](wmdm-format-capability.md)
+[**FUNZIONALITÀ DEL \_ FORMATO WMDM \_**](wmdm-format-capability.md)
 </dt> <dt>
 
-[**\_configurazione della prop WMDM \_**](wmdm-prop-config.md)
+[**WMDM \_ PROP \_ CONFIG**](wmdm-prop-config.md)
 </dt> <dt>
 
-[**WMDM \_ prop \_ DESC**](wmdm-prop-desc.md)
+[**WMDM \_ PROP \_ DESC**](wmdm-prop-desc.md)
 </dt> <dt>
 
-[**\_ \_ enumerazione valori Prop \_ WMDM**](wmdm-prop-values-enum.md)
+[**ENUMERAZIONE DEI VALORI DELLA PROPRIETÀ WMDM \_ \_ \_**](wmdm-prop-values-enum.md)
 </dt> <dt>
 
 [**Strutture**](structures.md)

@@ -1,9 +1,9 @@
 ---
-title: Messaggio TBM_GETSELEND (COMmctrl. h)
-description: Recupera la posizione finale dell'intervallo di selezione corrente in un TrackBar.
+title: TBM_GETSELEND messaggio (Commctrl.h)
+description: Recupera la posizione finale dell'intervallo di selezione corrente in un trackbar.
 ms.assetid: e365dd4d-eb49-4107-b6d4-cdb558d27fdb
 keywords:
-- Controlli di Windows Message TBM_GETSELEND
+- TBM_GETSELEND di controllo Windows messaggio
 topic_type:
 - apiref
 api_name:
@@ -14,16 +14,16 @@ api_type:
 - HeaderDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 486d66d3e7fc2dd4d23b89cb5e9406fa81b34638
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: ff24c6b8f22aba0eb8f8f3a52d7de2bc812936525a7754bb1fa0afa4054524e3
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "104476804"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120046431"
 ---
-# <a name="tbm_getselend-message"></a>\_Messaggio GETselend TBM
+# <a name="tbm_getselend-message"></a>Messaggio \_ TBM GETSELEND
 
-Recupera la posizione finale dell'intervallo di selezione corrente in un TrackBar.
+Recupera la posizione finale dell'intervallo di selezione corrente in un trackbar.
 
 ## <a name="parameters"></a>Parametri
 
@@ -41,7 +41,7 @@ Restituisce un valore a 32 bit che specifica la posizione finale dell'intervallo
 
 ## <a name="remarks"></a>Commenti
 
-Un TrackBar può avere un intervallo di selezione solo se è stato specificato lo stile [**\_ ENABLESELRANGE di TBS**](trackbar-control-styles.md) quando è stato creato.
+Un trackbar può avere un intervallo di selezione solo se è stato specificato lo stile [**\_ TBS ENABLESELRANGE**](trackbar-control-styles.md) al momento della creazione.
 
 ## <a name="requirements"></a>Requisiti
 
@@ -49,9 +49,9 @@ Un TrackBar può avere un intervallo di selezione solo se è stato specificato l
 
 | Requisito | Valore |
 |-------------------------------------|---------------------------------------------------------------------------------------|
-| Client minimo supportato<br/> | \[Solo app desktop di Windows Vista\]<br/>                                        |
-| Server minimo supportato<br/> | \[Solo app desktop Windows Server 2003\]<br/>                                  |
-| Intestazione<br/>                   | <dl> <dt>Commctrl. h</dt> </dl> |
+| Client minimo supportato<br/> | Windows Solo \[ app desktop di Vista\]<br/>                                        |
+| Server minimo supportato<br/> | Windows Solo app desktop server 2003 \[\]<br/>                                  |
+| Intestazione<br/>                   | <dl> <dt>Commctrl.h</dt> </dl> |
 
 
 
@@ -68,7 +68,7 @@ Un TrackBar può avere un intervallo di selezione solo se è stato specificato l
 [**TBM \_ SETSEL**](tbm-setsel.md)
 </dt> <dt>
 
-[**\_SEselend TBM**](tbm-setselend.md)
+[**TBM \_ SETSELEND**](tbm-setselend.md)
 </dt> <dt>
 
 [**TBM \_ SETSELSTART**](tbm-setselstart.md)

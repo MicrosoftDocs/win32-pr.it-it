@@ -4,12 +4,12 @@ ms.assetid: 1a93a505-0c63-4cbf-9ad3-8c99f40315a1
 title: System.Journal.EntryType
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: f4c4a094cae730b122478209adddff4e68482cfc
-ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
+ms.openlocfilehash: 84fb701b84ca472d39c0b27197ac10a352dd36d6005333d73a1da230832e5692
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/28/2021
-ms.locfileid: "108086959"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120058791"
 ---
 # <a name="systemjournalentrytype"></a>System.Journal.EntryType
 
@@ -36,7 +36,7 @@ I valori PKEY sono definiti in Propkey.h.
 
 <dl> <dt>
 
-[proprietàDescrizione](./propdesc-schema-propertydescription.md)
+[propertyDescription](./propdesc-schema-propertydescription.md)
 </dt> <dt>
 
 [searchInfo](./propdesc-schema-searchinfo.md)
@@ -66,7 +66,7 @@ I valori PKEY sono definiti in Propkey.h.
 [enumeratedList](./propdesc-schema-enumeratedlist.md)
 </dt> <dt>
 
-[DrawControl](./propdesc-schema-drawcontrol.md)
+[drawControl](./propdesc-schema-drawcontrol.md)
 </dt> <dt>
 
 [editControl](./propdesc-schema-editcontrol.md)

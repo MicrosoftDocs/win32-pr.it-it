@@ -1,19 +1,19 @@
 ---
-description: L'esempio seguente contiene una \# richiesta di rinnovo PKCS 7 mostrata in formato ASN. 1. L'esempio è stato generato utilizzando gli strumenti Certreq.exe e Certutil.exe. Il file con estensione inf utilizzato come input per Certreq.exe contiene la configurazione seguente.
+description: L'esempio seguente contiene una richiesta di rinnovo PKCS \# 7 visualizzata nel formato ASN.1. L'esempio è stato generato usando gli Certreq.exe e Certutil.exe strumenti. Il file inf usato come input per Certreq.exe contiene la configurazione seguente.
 ms.assetid: b8d00945-b792-4c43-a983-cea6c063d866
-title: '\#ASN con codifica del rinnovo PKCS 7.1'
+title: PKCS \# 7 Renewal Encoded ASN.1
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 91120fd4e5d991ed4673b215ddb3cf11806c4bcb
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 396f3ef09c7e6787773166d5b588e1792111a912e7d43d69d0c7b4a43591a655
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "104346236"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120101191"
 ---
-# <a name="pkcs-7-renewal-encoded-asn1"></a>\#ASN con codifica del rinnovo PKCS 7.1
+# <a name="pkcs-7-renewal-encoded-asn1"></a>PKCS \# 7 Renewal Encoded ASN.1
 
-L'esempio seguente contiene una \# richiesta di rinnovo PKCS 7 mostrata in formato ASN. 1. L'esempio è stato generato utilizzando gli strumenti Certreq.exe e Certutil.exe. Il file con estensione inf utilizzato come input per Certreq.exe contiene la configurazione seguente.
+L'esempio seguente contiene una richiesta di rinnovo PKCS \# 7 visualizzata nel formato ASN.1. L'esempio è stato generato usando gli Certreq.exe e Certutil.exe strumenti. Il file inf usato come input per Certreq.exe contiene la configurazione seguente.
 
 ``` syntax
 [NewRequest]
@@ -21,7 +21,7 @@ RequestType=pkcs7
 RenewalCert=248f7d3c00000000086e
 ```
 
-La configurazione specifica il tipo di richiesta (PKCS \# 7) e il numero di serie del certificato su cui è basata la richiesta. Viene generato l'output seguente.
+La configurazione specifica il tipo di richiesta (PKCS 7) e il numero di serie del certificato su cui si \# basa la richiesta. Viene generato l'output seguente.
 
 ``` syntax
 0000: 30 82 11 44               ; SEQUENCE (1144 Bytes)

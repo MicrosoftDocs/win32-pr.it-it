@@ -1,19 +1,19 @@
 ---
-description: Il modo in cui i collegamenti simbolici influiscono sulle funzioni file standard che usano nomi di percorso per specificare uno o più file.
+description: Effetto dei collegamenti simbolici sulle funzioni di file standard che usano nomi di percorso per specificare uno o più file.
 ms.assetid: afda53eb-d0db-4844-9dd0-8a7d93ca341f
-title: Effetti dei collegamenti simbolici sulle funzioni di file System
+title: Effetti di collegamento simbolico sulle funzioni dei file system
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 6d4a2fe1696bf5260a0c55ba8b6e4f107270d6da
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 5e1c5d140dc70de8ebc255b779b226b6da156aa2b8961c49d86f466ac01b26ed
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "106316767"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120078457"
 ---
-# <a name="symbolic-link-effects-on-file-systems-functions"></a>Effetti dei collegamenti simbolici sulle funzioni di file System
+# <a name="symbolic-link-effects-on-file-systems-functions"></a>Effetti di collegamento simbolico sulle funzioni dei file system
 
-Diverse funzioni di file standard che usano nomi di percorso per specificare uno o più file sono interessate dall'uso di collegamenti simbolici. In questo argomento vengono elencate le funzioni e descritte le modifiche nel comportamento:
+Diverse funzioni di file standard che usano nomi di percorso per specificare uno o più file sono interessate dall'uso di collegamenti simbolici. In questo argomento vengono elencate queste funzioni e vengono descritte le modifiche apportate al comportamento:
 
 -   [CopyFile e CopyFileTransacted](#copyfile-and-copyfiletransacted)
 -   [CopyFileEx](#copyfileex)
@@ -23,11 +23,11 @@ Diverse funzioni di file standard che usano nomi di percorso per specificare uno
 -   [FindFirstChangeNotification](#findfirstchangenotification)
 -   [FindFirstFile e FindFirstFileTransacted](#findfirstfile-and-findfirstfiletransacted)
 -   [FindFirstFileEx](#findfirstfileex)
--   [FindNextFile](#findnextfile)
+-   [Findnextfile](#findnextfile)
 -   [GetBinaryType](#getbinarytype)
 -   [GetCompressedFileSize e GetCompressedFileSizeTransacted](#getcompressedfilesize-and-getcompressedfilesizetransacted)
 -   [GetDiskFreeSpace](#getdiskfreespaceex)
--   [GetDiskFreeSpaceEx](#getdiskfreespaceex)
+-   [Getdiskfreespaceex](#getdiskfreespaceex)
 -   [GetFileAttributes](#getfileattributesex)
 -   [GetFileAttributesEx](#getfileattributesex)
 -   [GetFileSecurity](#getfilesecurity)
@@ -37,76 +37,76 @@ Diverse funzioni di file standard che usano nomi di percorso per specificare uno
 -   [SetFileSecurity](#setfilesecurity)
 -   [Argomenti correlati](#related-topics)
 
-Nelle descrizioni riportate di seguito vengono usati i termini seguenti:
+Nelle descrizioni seguenti vengono usati i termini seguenti:
 
--   File di origine: il file originale da copiare.
--   File di destinazione: la copia del file appena creata.
--   Target: entità a cui punta un collegamento simbolico.
+-   File di origine: file originale da copiare.
+-   File di destinazione: copia del file appena creata.
+-   Destinazione: entità a cui punta un collegamento simbolico.
 
 > [!Note]  
-> Il comportamento delle funzioni che accettano un handle creato mediante la funzione [**CreateFile**](/windows/desktop/api/FileAPI/nf-fileapi-createfilea) , ad esempio la funzione [**GetFileTime ha provocato**](/windows/desktop/api/fileapi/nf-fileapi-getfiletime) , varia a seconda che la funzione **CreateFile** sia stata chiamata o meno usando il flag di **file \_ \_ Open \_ reparse \_ Point** . Per ulteriori informazioni, vedere [**CreateFile**](/windows/desktop/api/FileAPI/nf-fileapi-createfilea) e la sezione [CreateFile e CreateFileTransacted](#createfile-and-createfiletransacted) seguente.
+> Il comportamento delle funzioni che accettano un handle creato usando la funzione [**CreateFile,**](/windows/desktop/api/FileAPI/nf-fileapi-createfilea) ad esempio la funzione [**GetFileTime,**](/windows/desktop/api/fileapi/nf-fileapi-getfiletime) sarà diverso a seconda che la funzione **CreateFile** sia stata chiamata o meno usando il flag **FILE FLAG OPEN \_ \_ \_ REPARSE \_ POINT.** Per altre informazioni, vedere [**CreateFile**](/windows/desktop/api/FileAPI/nf-fileapi-createfilea) e la sezione [CreateFile e CreateFileTransacted](#createfile-and-createfiletransacted) seguente.
 
  
 
 ## <a name="copyfile-and-copyfiletransacted"></a>CopyFile e CopyFileTransacted
 
-Se il file di origine è un collegamento simbolico, il file effettivamente copiato è la destinazione del collegamento simbolico.
+Se il file di origine è un collegamento simbolico, il file effettivo copiato è la destinazione del collegamento simbolico.
 
 Se il file di destinazione esiste già ed è un collegamento simbolico, il collegamento simbolico viene sovrascritto dal file di origine.
 
 ## <a name="copyfileex"></a>CopyFileEx
 
-Se viene specificato il **\_ \_ \_ collegamento simbolico copia file** e:
+Se **copy FILE COPY \_ \_ \_ SYMLINK è** specificato e:
 
--   Se il file di origine è un collegamento simbolico, viene copiato il collegamento simbolico, non il file di destinazione.
--   Se il file di origine non è un collegamento simbolico, non viene apportata alcuna modifica al comportamento.
+-   Se il file di origine è un collegamento simbolico, il collegamento simbolico viene copiato, non il file di destinazione.
+-   Se il file di origine non è un collegamento simbolico, il comportamento non viene modificato.
 -   Se il file di destinazione è un collegamento simbolico esistente, il collegamento simbolico viene sovrascritto, non il file di destinazione.
--   Se viene specificato anche il **file di copia, \_ \_ \_ se \_ esiste** , e il file di destinazione è un collegamento simbolico esistente, l'operazione avrà esito negativo in tutti i casi.
+-   Se **si specifica anche COPY FILE FAIL IF \_ \_ \_ \_ EXISTS** e il file di destinazione è un collegamento simbolico esistente, l'operazione non riesce in tutti i casi.
 
-Se **il \_ \_ \_ collegamento simbolico copia file** non è specificato e:
+Se **COPY FILE COPY \_ \_ \_ SYMLINK** non è specificato e:
 
--   Se viene specificato anche il **file di copia, \_ \_ \_ se \_ esiste** , e il file di destinazione è un collegamento simbolico esistente, l'operazione ha esito negativo solo se esiste la destinazione del collegamento simbolico.
--   Se il **file di copia ha \_ \_ esito negativo se non viene specificato \_ \_ Exists** , non è presente alcuna modifica nel comportamento.
+-   Se si specifica anche **COPY FILE FAIL IF \_ \_ \_ \_ EXISTS** e il file di destinazione è un collegamento simbolico esistente, l'operazione ha esito negativo solo se esiste la destinazione del collegamento simbolico.
+-   Se **l'opzione COPY \_ FILE FAIL IF \_ \_ \_ EXISTS** non è specificata, il comportamento non viene modificato.
 
-**Windows Server 2003 e Windows XP:** Il flag di copia del **\_ \_ \_ collegamento simbolico copia file** non è supportato. Se il file di origine è un collegamento simbolico, il file effettivamente copiato è la destinazione del collegamento simbolico.
+**Windows Server 2003 e Windows XP:** Il flag **COPY \_ FILE COPY \_ \_ SYMLINK** non è supportato. Se il file di origine è un collegamento simbolico, il file effettivo copiato è la destinazione del collegamento simbolico.
 
 ## <a name="createfile-and-createfiletransacted"></a>CreateFile e CreateFileTransacted
 
-Se la chiamata a questa funzione crea un nuovo file, non viene apportata alcuna modifica al comportamento.
+Se la chiamata a questa funzione crea un nuovo file, il comportamento non viene modificato.
 
-Se viene specificato il **flag di file \_ \_ aperto \_ reparse \_ Point** e:
+Se **è specificato FILE FLAG OPEN \_ \_ \_ REPARSE \_ POINT** e:
 
 -   Se un file esistente viene aperto ed è un collegamento simbolico, l'handle restituito è un handle per il collegamento simbolico.
--   Se viene specificato **Create \_ Always**, **Truncate \_ exist** o **file \_ flag \_ Delete \_ alla \_ chiusura** , il file interessato è un collegamento simbolico.
+-   Se **vengono specificati CREATE \_ ALWAYS,** **TRUNCATE \_ EXISTING** o **FILE FLAG DELETE ON \_ \_ \_ \_ CLOSE,** il file interessato è un collegamento simbolico.
 
-Se **il \_ flag di file \_ aperto \_ reparse \_ Point** non è specificato e:
+Se **FILE FLAG OPEN \_ \_ \_ REPARSE \_ POINT** non è specificato e:
 
 -   Se un file esistente viene aperto ed è un collegamento simbolico, l'handle restituito è un handle per la destinazione.
--   Se viene specificato **Create \_ Always**, **Truncate \_ exist** o **file \_ flag \_ Delete alla \_ \_ chiusura** , il file interessato è la destinazione.
+-   Se **si specificato CREATE \_ ALWAYS**, **TRUNCATE \_ EXISTING** o **FILE FLAG DELETE ON \_ \_ \_ \_ CLOSE,** il file interessato è la destinazione.
 
 ## <a name="createhardlink-and-createhardlinktransacted"></a>CreateHardLink e CreateHardLinkTransacted
 
-Se il percorso punta a un collegamento simbolico, la funzione crea un collegamento reale alla destinazione.
+Se il percorso punta a un collegamento simbolico, la funzione crea un collegamento rigido alla destinazione.
 
 ## <a name="deletefile-and-deletefiletransacted"></a>DeleteFile e DeleteFileTransacted
 
-Se il percorso punta a un collegamento simbolico, il collegamento simbolico viene eliminato e non la destinazione. Per eliminare una destinazione, è necessario chiamare [**CreateFile**](/windows/desktop/api/FileAPI/nf-fileapi-createfilea) e specificare **\_ il flag \_ di file Delete \_ alla \_ chiusura**.
+Se il percorso punta a un collegamento simbolico, il collegamento simbolico viene eliminato, non la destinazione. Per eliminare una destinazione, è necessario chiamare [**CreateFile**](/windows/desktop/api/FileAPI/nf-fileapi-createfilea) e specificare **FILE FLAG DELETE ON \_ \_ \_ \_ CLOSE**.
 
 ## <a name="findfirstchangenotification"></a>FindFirstChangeNotification
 
-Se il percorso punta a un collegamento simbolico, viene creato l'handle di notifica per la destinazione. Se un'applicazione è stata registrata per ricevere le notifiche delle modifiche per una directory che contiene collegamenti simbolici, l'applicazione riceverà una notifica solo quando i collegamenti simbolici sono stati modificati, non i file di destinazione.
+Se il percorso punta a un collegamento simbolico, viene creato l'handle di notifica per la destinazione. Se un'applicazione è stata registrata per ricevere notifiche di modifica per una directory che contiene collegamenti simbolici, l'applicazione riceve una notifica solo quando i collegamenti simbolici sono stati modificati, non i file di destinazione.
 
 ## <a name="findfirstfile-and-findfirstfiletransacted"></a>FindFirstFile e FindFirstFileTransacted
 
-Se il percorso punta a un collegamento simbolico, il buffer [**\_ \_ dei dati di ricerca Win32**](/windows/desktop/api/MinWinBase/ns-minwinbase-win32_find_dataa) contiene informazioni sul collegamento simbolico, non sulla destinazione.
+Se il percorso punta a un collegamento simbolico, il buffer [**\_ FIND \_ DATA WIN32**](/windows/desktop/api/MinWinBase/ns-minwinbase-win32_find_dataa) contiene informazioni sul collegamento simbolico, non sulla destinazione.
 
 ## <a name="findfirstfileex"></a>FindFirstFileEx
 
-Se il percorso punta a un collegamento simbolico, il buffer [**\_ \_ dei dati di ricerca Win32**](/windows/desktop/api/MinWinBase/ns-minwinbase-win32_find_dataa) contiene informazioni sul collegamento simbolico, non sulla destinazione.
+Se il percorso punta a un collegamento simbolico, il buffer [**\_ FIND \_ DATA WIN32**](/windows/desktop/api/MinWinBase/ns-minwinbase-win32_find_dataa) contiene informazioni sul collegamento simbolico, non sulla destinazione.
 
-## <a name="findnextfile"></a>FindNextFile
+## <a name="findnextfile"></a>Findnextfile
 
-Se il percorso punta a un collegamento simbolico, il buffer [**\_ \_ dei dati di ricerca Win32**](/windows/desktop/api/MinWinBase/ns-minwinbase-win32_find_dataa) contiene informazioni sul collegamento simbolico, non sulla destinazione.
+Se il percorso punta a un collegamento simbolico, il buffer [**\_ FIND \_ DATA WIN32**](/windows/desktop/api/MinWinBase/ns-minwinbase-win32_find_dataa) contiene informazioni sul collegamento simbolico, non sulla destinazione.
 
 ## <a name="getbinarytype"></a>GetBinaryType
 
@@ -120,7 +120,7 @@ Se il percorso punta a un collegamento simbolico, la funzione restituisce le dim
 
 Se il percorso punta a un collegamento simbolico, l'operazione viene eseguita sulla destinazione.
 
-## <a name="getdiskfreespaceex"></a>GetDiskFreeSpaceEx
+## <a name="getdiskfreespaceex"></a>Getdiskfreespaceex
 
 Se il percorso punta a un collegamento simbolico, l'operazione viene eseguita sulla destinazione.
 
@@ -138,7 +138,7 @@ Se il percorso punta a un collegamento simbolico, la funzione restituisce gli at
 
 ## <a name="gettemppath"></a>GetTempPath
 
-Se il percorso punta a un collegamento simbolico, il nome del percorso temporaneo gestisce tutti i collegamenti simbolici.
+Se il percorso punta a un collegamento simbolico, il nome del percorso temporaneo mantiene tutti i collegamenti simbolici.
 
 ## <a name="getvolumeinformation"></a>GetVolumeInformation
 
@@ -186,7 +186,7 @@ Se il percorso punta a un collegamento simbolico, la funzione restituisce gli at
 [**FindFirstChangeNotification**](/windows/desktop/api/FileAPI/nf-fileapi-findfirstchangenotificationa)
 </dt> <dt>
 
-[**FindFirstFile**](/windows/desktop/api/FileAPI/nf-fileapi-findfirstfilea)
+[**Findfirstfile**](/windows/desktop/api/FileAPI/nf-fileapi-findfirstfilea)
 </dt> <dt>
 
 [**FindFirstFileEx**](/windows/desktop/api/FileAPI/nf-fileapi-findfirstfileexa)
@@ -195,7 +195,7 @@ Se il percorso punta a un collegamento simbolico, la funzione restituisce gli at
 [**FindFirstFileTransacted**](/windows/desktop/api/WinBase/nf-winbase-findfirstfiletransacteda)
 </dt> <dt>
 
-[**FindNextFile**](/windows/desktop/api/FileAPI/nf-fileapi-findnextfilea)
+[**Findnextfile**](/windows/desktop/api/FileAPI/nf-fileapi-findnextfilea)
 </dt> <dt>
 
 [**GetBinaryType**](/windows/desktop/api/WinBase/nf-winbase-getbinarytypea)
@@ -210,7 +210,7 @@ Se il percorso punta a un collegamento simbolico, la funzione restituisce gli at
 [**GetDiskFreeSpace**](/windows/desktop/api/FileAPI/nf-fileapi-getdiskfreespacea)
 </dt> <dt>
 
-[**GetDiskFreeSpaceEx**](/windows/desktop/api/FileAPI/nf-fileapi-getdiskfreespaceexa)
+[**Getdiskfreespaceex**](/windows/desktop/api/FileAPI/nf-fileapi-getdiskfreespaceexa)
 </dt> <dt>
 
 [**GetFileAttributes**](/windows/desktop/api/FileAPI/nf-fileapi-getfileattributesa)
@@ -228,7 +228,7 @@ Se il percorso punta a un collegamento simbolico, la funzione restituisce gli at
 [**GetVolumeInformation**](/windows/desktop/api/FileAPI/nf-fileapi-getvolumeinformationa)
 </dt> <dt>
 
-[**SetFileAttributes**](/windows/desktop/api/FileAPI/nf-fileapi-setfileattributesa)
+[**Attributi SetFileAttributes**](/windows/desktop/api/FileAPI/nf-fileapi-setfileattributesa)
 </dt> <dt>
 
 [**SetFileSecurity**](/windows/desktop/api/winbase/nf-winbase-setfilesecuritya)

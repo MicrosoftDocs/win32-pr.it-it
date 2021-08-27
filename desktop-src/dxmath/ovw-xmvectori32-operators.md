@@ -1,19 +1,19 @@
 ---
-description: Gli operatori seguenti sono esposti dalla struttura XMVECTORI32.
+description: Gli operatori seguenti vengono esposti dalla struttura XMVECTORI32.
 ms.assetid: cab788bf-6c2e-49bb-9a6d-92cbad2f7a64
 title: Operatori XMVECTORI32
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 0b64b421c970fef22913b60b8034f951157889d7
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 569f462873c8c3824e8468b6d5973ec8a2c4fd24789ea2d9b21171ecfb909421
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "106309315"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120021971"
 ---
 # <a name="xmvectori32-operators"></a>Operatori XMVECTORI32
 
-Gli operatori seguenti sono esposti dalla struttura [**XMVECTORI32**](xmvectori32-data-type.md) .
+Gli operatori seguenti vengono esposti dalla [**struttura XMVECTORI32.**](xmvectori32-data-type.md)
 
 > [!Note]  
 > Gli operatori elencati di seguito sono disponibili solo in C++.
@@ -26,8 +26,8 @@ Gli operatori seguenti sono esposti dalla struttura [**XMVECTORI32**](xmvectori3
 
 | Metodi                                                               | Descrizione                                                                                                                                                                                                                                                                                               |
 |-----------------------------------------------------------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| [**operatore \_ \_ m128i**](/previous-versions/windows/desktop/legacy/ee421164(v=vs.85))<br/> | Restituisce l'oggetto che implementa l'istanza corrente di [**XMVECTORI32**](xmvectori32-data-type.md) cast a un'istanza [ \_ \_ m128i](/cpp/cpp/m128i) di \[ sistemi Windows che supportano solo [SSE](/previous-versions/visualstudio/visual-studio-2010/t467de55(v=vs.100))\]<br/> |
-| [**operatore XMVECTOR**](/previous-versions/windows/desktop/legacy/ee421165(v=vs.85))<br/> | Restituisce l'istanza di che `XMVECTOR` implementa l'istanza corrente di `XMVECTORI32` .<br/>                                                                                                                                                                                                         |
+| [**operatore \_ \_ m128i**](/previous-versions/windows/desktop/legacy/ee421164(v=vs.85))<br/> | Restituisce l'oggetto che implementa l'istanza corrente del cast [**XMVECTORI32**](xmvectori32-data-type.md) a un'istanza [ \_ \_ m128i](/cpp/cpp/m128i) \[ di Windows che supportano solo [SSE](/previous-versions/visualstudio/visual-studio-2010/t467de55(v=vs.100))\]<br/> |
+| [**Operatore XMVECTOR**](/previous-versions/windows/desktop/legacy/ee421165(v=vs.85))<br/> | Restituisce l'istanza di `XMVECTOR` che implementa l'istanza corrente di `XMVECTORI32` .<br/>                                                                                                                                                                                                         |
 
 
 

@@ -3,7 +3,7 @@ title: Tipo semplice runLevelType
 description: Definisce i valori possibili per l'elemento RunLevel (principalType).
 ms.assetid: d6b73dc5-97ac-4f94-99c1-c241a25cc252
 keywords:
-- Utilità di pianificazione di tipo semplice runLevelType
+- RunLevelType tipo semplice Utilità di pianificazione
 topic_type:
 - apiref
 api_name:
@@ -13,16 +13,16 @@ api_type:
 ms.topic: reference
 ms.date: 05/31/2018
 api_location: ''
-ms.openlocfilehash: d037dceeb3e6e4957cc96a17a2ac511a03a94b94
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: 8ce534008ce0138293a773e4f5fa4a5270a2d4b27aad54dd062eafe286ab8ba6
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "106302220"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119991071"
 ---
 # <a name="runleveltype-simple-type"></a>Tipo semplice runLevelType
 
-Definisce i valori possibili per l'elemento [**runlevel (PrincipalType)**](taskschedulerschema-runlevel-principaltype-element.md) .
+Definisce i valori possibili per [**l'elemento RunLevel (principalType).**](taskschedulerschema-runlevel-principaltype-element.md)
 
 ``` syntax
 <xs:simpleType name="runLevelType">
@@ -41,7 +41,7 @@ Definisce i valori possibili per l'elemento [**runlevel (PrincipalType)**](tasks
 
 ## <a name="enumeration-values"></a>Valori di enumerazione
 
-Il tipo semplice **runLevelType** definisce i valori seguenti.
+Il **tipo semplice runLevelType** definisce i valori seguenti.
 
 
 
@@ -58,8 +58,8 @@ Il tipo semplice **runLevelType** definisce i valori seguenti.
 
 | Requisito | Valore |
 |-------------------------------------|------------------------------------------------------|
-| Client minimo supportato<br/> | \[Solo app desktop di Windows Vista\]<br/>       |
-| Server minimo supportato<br/> | \[Solo app desktop Windows Server 2008\]<br/> |
+| Client minimo supportato<br/> | Windows Solo \[ app desktop di Vista\]<br/>       |
+| Server minimo supportato<br/> | Windows Solo app desktop server 2008 \[\]<br/> |
 
 
 

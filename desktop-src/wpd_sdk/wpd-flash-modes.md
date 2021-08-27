@@ -1,7 +1,7 @@
 ---
-description: Il \_ tipo di enumerazione WPD Flash Modes \_ descrive una modalità flash da usare durante l'acquisizione di immagini con un dispositivo.
+description: Il tipo di enumerazione \_ WPD FLASH MODES descrive una modalità flash da usare per \_ l'acquisizione di immagini con un dispositivo.
 ms.assetid: 4e92c86d-2f35-4bc6-8d37-ec1ab5c518b2
-title: Enumerazione WPD_FLASH_MODES (PortableDevice. h)
+title: WPD_FLASH_MODES enumerazione (PortableDevice.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -13,16 +13,16 @@ api_type:
 - HeaderDef
 api_location:
 - PortableDevice.h
-ms.openlocfilehash: 09a2a5b95e86d9d17267cafcfbf723e734ffc74f
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: 72e9b6cb2b52f1d90c584b6f425711769b25ea0c5d44065b5aa377d2811592e9
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "106328966"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120005921"
 ---
-# <a name="wpd_flash_modes-enumeration"></a>\_Enumerazione delle \_ modalità flash WPD
+# <a name="wpd_flash_modes-enumeration"></a>Enumerazione WPD \_ FLASH \_ MODES
 
-Il tipo di enumerazione **WPD \_ Flash \_** Modes descrive una modalità flash da usare durante l'acquisizione di immagini con un dispositivo.
+Il **tipo di enumerazione \_ WPD FLASH \_ MODES** descrive una modalità flash da usare per l'acquisizione di immagini con un dispositivo.
 
 ## <a name="syntax"></a>Sintassi
 
@@ -45,58 +45,58 @@ typedef enum WPD_FLASH_MODES {
 
 <dl> <dt>
 
-<span id="WPD_FLASH_MODE_UNDEFINED"></span><span id="wpd_flash_mode_undefined"></span>**\_modalità flash WPD non \_ \_ definita**
+<span id="WPD_FLASH_MODE_UNDEFINED"></span><span id="wpd_flash_mode_undefined"></span>**MODALITÀ FLASH WPD \_ \_ NON \_ DEFINITA**
 </dt> <dd>
 
 Non è stata specificata alcuna modalità flash.
 
 </dd> <dt>
 
-<span id="WPD_FLASH_MODE_AUTO"></span><span id="wpd_flash_mode_auto"></span>**WPD \_ \_ modalità Flash \_ automatica**
+<span id="WPD_FLASH_MODE_AUTO"></span><span id="wpd_flash_mode_auto"></span>**MODALITÀ FLASH WPD \_ \_ \_ AUTOMATICA**
 </dt> <dd>
 
-Specifica che il flash deve essere usato in modalità automatica, come specificato dal dispositivo.
+Specifica che la memoria flash deve essere usata in modalità automatica, come specificato dal dispositivo.
 
 </dd> <dt>
 
-<span id="WPD_FLASH_MODE_OFF"></span><span id="wpd_flash_mode_off"></span>**\_modalità Flash \_ WPD \_ disabilitata**
+<span id="WPD_FLASH_MODE_OFF"></span><span id="wpd_flash_mode_off"></span>**MODALITÀ FLASH WPD \_ \_ \_ DISATTIVATA**
 </dt> <dd>
 
-Specifica che non deve essere utilizzato alcun flash.
+Specifica che non deve essere usata alcuna memoria flash.
 
 </dd> <dt>
 
-<span id="WPD_FLASH_MODE_FILL"></span><span id="wpd_flash_mode_fill"></span>**\_ \_ riempimento modalità Flash \_ WPD**
+<span id="WPD_FLASH_MODE_FILL"></span><span id="wpd_flash_mode_fill"></span>**RIEMPIMENTO IN MODALITÀ FLASH WPD \_ \_ \_**
 </dt> <dd>
 
-Specifica un flash di tipo Fill.
+Specifica un flash di tipo riempimento.
 
 </dd> <dt>
 
-<span id="WPD_FLASH_MODE_RED_EYE_AUTO"></span><span id="wpd_flash_mode_red_eye_auto"></span>**WPD \_ in \_ modalità \_ Flash \_ automatico a occhi rossi \_**
+<span id="WPD_FLASH_MODE_RED_EYE_AUTO"></span><span id="wpd_flash_mode_red_eye_auto"></span>**WPD \_ FLASH \_ MODE \_ RED \_ EYE \_ AUTO**
 </dt> <dd>
 
-Specifica che deve essere usato il flash di riduzione degli occhi rossi.
+Specifica che deve essere usato il flash di riduzione oculare rosso.
 
 </dd> <dt>
 
-<span id="WPD_FLASH_MODE_RED_EYE_FILL"></span><span id="wpd_flash_mode_red_eye_fill"></span>**\_riempimento a \_ \_ occhi rossi \_ in modalità flash WPD \_**
+<span id="WPD_FLASH_MODE_RED_EYE_FILL"></span><span id="wpd_flash_mode_red_eye_fill"></span>**WPD FLASH MODE RED EYE FILL (RIEMPIMENTO \_ \_ \_ OCULARE ROSSO IN MODALITÀ FLASH \_ \_ WPD)**
 </dt> <dd>
 
-Specifica che deve essere usato il flash di riempimento a occhi rossi.
+Specifica che deve essere usato il flash di riempimento a occhio rosso.
 
 </dd> <dt>
 
-<span id="WPD_FLASH_MODE_EXTERNAL_SYNC"></span><span id="wpd_flash_mode_external_sync"></span>**\_ \_ sincronizzazione esterna in modalità Flash \_ WPD \_**
+<span id="WPD_FLASH_MODE_EXTERNAL_SYNC"></span><span id="wpd_flash_mode_external_sync"></span>**SINCRONIZZAZIONE ESTERNA IN MODALITÀ FLASH WPD \_ \_ \_ \_**
 </dt> <dd>
 
-Specifica che il flash deve essere sincronizzato con altri dispositivi flash esterni.
+Specifica che la memoria flash deve essere sincronizzata con altri dispositivi flash esterni.
 
 </dd> </dl>
 
 ## <a name="remarks"></a>Commenti
 
-Questa enumerazione viene utilizzata dalla proprietà [WPD \_ still \_ Image \_ Flash \_ mode](still-image-properties.md) .
+Questa enumerazione viene usata dalla [proprietà \_ WPD STILL IMAGE FLASH \_ \_ \_ MODE.](still-image-properties.md)
 
 ## <a name="requirements"></a>Requisiti
 
@@ -104,7 +104,7 @@ Questa enumerazione viene utilizzata dalla proprietà [WPD \_ still \_ Image \_ 
 
 | Requisito | Valore |
 |-------------------|---------------------------------------------------------------------------------------------|
-| Intestazione<br/> | <dl> <dt>PortableDevice. h</dt> </dl> |
+| Intestazione<br/> | <dl> <dt>PortableDevice.h</dt> </dl> |
 
 
 

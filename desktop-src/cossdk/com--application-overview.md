@@ -1,33 +1,33 @@
 ---
-description: Un'applicazione COM+ è l'unità primaria di amministrazione e protezione per i servizi componenti ed è costituita da un gruppo di componenti COM che in genere eseguono funzioni correlate.
+description: Un'applicazione COM+ è l'unità principale di amministrazione e sicurezza per Servizi componenti ed è costituita da un gruppo di componenti COM che in genere eseguono funzioni correlate.
 ms.assetid: 82e94acb-e7ce-4423-a720-26ee65d0d7b4
-title: Panoramica dell'applicazione COM+
+title: Cenni preliminari sull'applicazione COM+
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: d3365e0c0e7598d8f1eb2f466e8a2cea2d93edf4
-ms.sourcegitcommit: bf526e267d3991892733bdd229c66d5365cf244a
+ms.openlocfilehash: 0c964d760b5ba0ef260bc9dcb0658b564a4b211075692ce6301a0445eee0eb7a
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/05/2021
-ms.locfileid: "106320227"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119991877"
 ---
-# <a name="com-application-overview"></a>Panoramica dell'applicazione COM+
+# <a name="com-application-overview"></a>Cenni preliminari sull'applicazione COM+
 
-Un'applicazione COM+ è l'unità primaria di amministrazione e protezione per i servizi componenti ed è costituita da un gruppo di componenti COM che in genere eseguono funzioni correlate. Questi componenti sono ulteriormente costituiti da interfacce e metodi, come illustrato nella figura seguente.
+Un'applicazione COM+ è l'unità principale di amministrazione e sicurezza per Servizi componenti ed è costituita da un gruppo di componenti COM che in genere eseguono funzioni correlate. Questi componenti sono costituiti ulteriormente da interfacce e metodi, come illustrato nella figura seguente.
 
-![Diagramma che mostra le interfacce e i metodi all'interno di caselle, in ordine di metodo all'interno di un componente all'interno dell'applicazione COM+.](images/487518b4-0460-4b2d-a834-c4ea57755ffd.png)
+![Diagramma che mostra le interfacce e i metodi all'interno delle caselle, in ordine di Metodo all'interno dell'interfaccia all'interno del componente all'interno dell'applicazione COM+.](images/487518b4-0460-4b2d-a834-c4ea57755ffd.png)
 
-È possibile utilizzare lo strumento di amministrazione Servizi componenti per creare nuove applicazioni COM+, aggiungere componenti alle applicazioni e impostare gli attributi per un'applicazione e i relativi componenti.
+È possibile usare lo strumento amministrativo Servizi componenti per creare nuove applicazioni COM+, aggiungere componenti alle applicazioni e impostare gli attributi per un'applicazione e i relativi componenti.
 
-Grazie alla creazione di gruppi logici di componenti COM come applicazioni COM+, è possibile sfruttare i vantaggi di COM+ seguenti:
+Creando gruppi logici di componenti COM come applicazioni COM+, è possibile sfruttare i vantaggi seguenti di COM+:
 
--   Un ambito di distribuzione per i componenti COM.
--   Un ambito di configurazione comune per i componenti COM, inclusi i limiti di sicurezza e l'accodamento.
--   Archiviazione di attributi componente non fornita dallo sviluppatore del componente, ad esempio transazioni e sincronizzazione.
--   Librerie a collegamento dinamico (dll) del componente caricate in processi (DLLHost.exe) su richiesta.
+-   Ambito di distribuzione per i componenti COM.
+-   Ambito di configurazione comune per i componenti COM, inclusi i limiti di sicurezza e l'accodamento.
+-   Archiviazione di attributi del componente non forniti dallo sviluppatore del componente, ad esempio transazioni e sincronizzazione.
+-   Librerie a collegamento dinamico dei componenti (DLL) caricate nei processi (DLLHost.exe) su richiesta.
 -   Processi del server gestito per ospitare i componenti.
--   Creazione e gestione dei thread utilizzati dai componenti di.
--   Accesso all'oggetto di contesto per i dispenser di risorse, che consente di associare automaticamente le risorse acquisite al contesto. Per ulteriori informazioni sui componenti COM e i contesti, vedere [contesti com+](com--contexts.md).
+-   Creazione e gestione di thread usati dai componenti.
+-   Accesso all'oggetto contesto per i distributori di risorse, consentendo l'associazione automatica delle risorse acquisite al contesto. Per altre informazioni su componenti e contesti COM, vedere [Contesti COM+.](com--contexts.md)
 
 ## <a name="related-topics"></a>Argomenti correlati
 

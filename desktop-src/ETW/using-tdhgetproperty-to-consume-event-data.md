@@ -1,19 +1,19 @@
 ---
-description: Nell'esempio seguente viene illustrato come utilizzare i dati degli eventi utilizzando la funzione TdhGetProperty.
+description: L'esempio seguente illustra come usare i dati degli eventi usando la funzione TdhGetProperty.
 ms.assetid: 16b36718-087f-4be9-9ca2-fc083358017b
-title: Utilizzo di TdhGetProperty per utilizzare i dati degli eventi
+title: Uso di TdhGetProperty per utilizzare i dati degli eventi
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: c48b21f7e43a46762a28694e1f9c41497b1f53da
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: f4d14964424d0f12c20d5de040cf44ad358c2f2e3c2c4eaa416ce08c560b0a27
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "103753034"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120083111"
 ---
-# <a name="using-tdhgetproperty-to-consume-event-data"></a>Utilizzo di TdhGetProperty per utilizzare i dati degli eventi
+# <a name="using-tdhgetproperty-to-consume-event-data"></a>Uso di TdhGetProperty per utilizzare i dati degli eventi
 
-Nell'esempio seguente viene illustrato come utilizzare i dati degli eventi utilizzando la funzione [**TdhGetProperty**](/windows/desktop/api/Tdh/nf-tdh-tdhgetproperty) .
+L'esempio seguente illustra come usare i dati degli eventi usando [**la funzione TdhGetProperty.**](/windows/desktop/api/Tdh/nf-tdh-tdhgetproperty)
 
 
 ```C++

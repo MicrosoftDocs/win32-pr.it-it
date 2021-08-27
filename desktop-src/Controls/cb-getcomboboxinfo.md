@@ -1,9 +1,9 @@
 ---
-title: Messaggio CB_GETCOMBOBOXINFO (winuser. h)
+title: CB_GETCOMBOBOXINFO messaggio (Winuser.h)
 description: Ottiene informazioni sulla casella combinata specificata.
 ms.assetid: 3239dfa8-7301-48e3-ba8e-29c5d5f43b39
 keywords:
-- Controlli di Windows Message CB_GETCOMBOBOXINFO
+- CB_GETCOMBOBOXINFO di controllo Windows messaggio
 topic_type:
 - apiref
 api_name:
@@ -14,14 +14,14 @@ api_type:
 - HeaderDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: bd7052ef4feca8a8704258c7c34d6516c7cd6cd4
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: 4ce6227df0031c01b15892daa14eea9cc8d25bd2c7eede68af275063d7201505
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "104475407"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120089291"
 ---
-# <a name="cb_getcomboboxinfo-message"></a>\_Messaggio GETCOMBOBOXINFO CB
+# <a name="cb_getcomboboxinfo-message"></a>Messaggio \_ CB GETCOMBOBOXINFO
 
 Ottiene informazioni sulla casella combinata specificata.
 
@@ -36,10 +36,10 @@ Questo parametro non viene usato.
 
 </dd> <dt>
 
-*lParam* \[ out\]
+*lParam* \[ Cambio\]
 </dt> <dd>
 
-Puntatore a una struttura [**COMBOBOXINFO**](/windows/win32/api/winuser/ns-winuser-comboboxinfo) che riceve le informazioni.
+Puntatore a una [**struttura COMBOBOXINFO**](/windows/win32/api/winuser/ns-winuser-comboboxinfo) che riceve le informazioni.
 
 </dd> </dl>
 
@@ -51,7 +51,7 @@ Se la funzione ha esito negativo, il valore restituito è zero. Per informazioni
 
 ## <a name="remarks"></a>Osservazioni
 
-Questo messaggio è equivalente a [**GetComboBoxInfo**](/windows/desktop/api/Winuser/nf-winuser-getcomboboxinfo).
+Questo messaggio equivale a [**GetComboBoxInfo**](/windows/desktop/api/Winuser/nf-winuser-getcomboboxinfo).
 
 ## <a name="requirements"></a>Requisiti
 
@@ -59,9 +59,9 @@ Questo messaggio è equivalente a [**GetComboBoxInfo**](/windows/desktop/api/Win
 
 | Requisito | Valore |
 |-------------------------------------|----------------------------------------------------------------------------------------------------------|
-| Client minimo supportato<br/> | \[Solo app desktop di Windows Vista\]<br/>                                                           |
-| Server minimo supportato<br/> | \[Solo app desktop Windows Server 2003\]<br/>                                                     |
-| Intestazione<br/>                   | <dl> <dt>Winuser. h (include Windows. h)</dt> </dl> |
+| Client minimo supportato<br/> | Windows Solo \[ app desktop di Vista\]<br/>                                                           |
+| Server minimo supportato<br/> | Windows Solo app desktop server 2003 \[\]<br/>                                                     |
+| Intestazione<br/>                   | <dl> <dt>Winuser.h (includere Windows.h)</dt> </dl> |
 
 
 

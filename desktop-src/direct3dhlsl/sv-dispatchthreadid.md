@@ -1,6 +1,6 @@
 ---
 title: SV_DispatchThreadID
-description: Indici per i quali un thread e un gruppo di thread combinati eseguono uno shader di calcolo.
+description: Indici per i quali vengono combinati thread e gruppi di thread in cui viene eseguito uno shader di calcolo.
 ms.assetid: bad697f6-26d9-47cd-93e5-127621a161e8
 keywords:
 - SV_DispatchThreadID HLSL
@@ -13,16 +13,16 @@ api_type:
 ms.topic: reference
 ms.date: 05/31/2018
 api_location: ''
-ms.openlocfilehash: 8e2713aaa50206660f7672688a43e644873b1c13
-ms.sourcegitcommit: adba238660d8a5f4fe98fc6f5d105d56aac3a400
+ms.openlocfilehash: a5f7dbc7f4aa4b508d801736529628dbb25c29fb6c37f1db04f91874e85ee9a9
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/09/2021
-ms.locfileid: "111827060"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120023391"
 ---
 # <a name="sv_dispatchthreadid"></a>SV \_ DispatchThreadID
 
-Indici per i quali un thread e un gruppo di thread combinati eseguono uno shader di calcolo. SV \_ DispatchThreadID è la somma di \_ SV GroupID \* numthreads e GroupThreadID. Varia in base all'intervallo specificato in [**Dispatch**](/windows/desktop/api/d3d11/nf-d3d11-id3d11devicecontext-dispatch) e [numthreads](sm5-attributes-numthreads.md). Ad esempio, se Dispatch(2,2,2) viene chiamato in un compute shader con numthreads(3,3,3) SV \_ DispatchThreadID avrà un intervallo di 0,.5 per ogni dimensione.
+Indici per i quali vengono combinati thread e gruppi di thread in cui viene eseguito uno shader di calcolo. SV \_ DispatchThreadID è la somma di \_ SV GroupID \* numthreads e GroupThreadID. Varia in base all'intervallo specificato in [**Dispatch**](/windows/desktop/api/d3d11/nf-d3d11-id3d11devicecontext-dispatch) e [numthreads](sm5-attributes-numthreads.md). Ad esempio, se Dispatch(2,2,2) viene chiamato in un compute shader con numthreads(3,3,3) SV DispatchThreadID avrà un \_ intervallo di 0,.5 per ogni dimensione.
 
 ## <a name="type"></a>Tipo
 
@@ -40,7 +40,7 @@ Indici per i quali un thread e un gruppo di thread combinati eseguono uno shader
 
 Questo valore di sistema è facoltativo.
 
-La figura seguente illustra la relazione tra i parametri passati a [**Dispatch,**](/windows/desktop/api/d3d11/nf-d3d11-id3d11devicecontext-dispatch)Dispatch(5,3,2), i valori specificati nell'attributo [numthreads,](sm5-attributes-numthreads.md) numthreads(10,8,3) e i valori che verranno passati allo shader di calcolo per i valori di sistema correlati al thread ([SV \_ GroupIndex](sv-groupindex.md), SV \_ DispatchThreadID,[SV \_ GroupThreadID](sv-groupthreadid.md),[SV \_ GroupID](sv-groupid.md)).
+La figura seguente mostra la relazione tra i parametri passati a [**Dispatch,**](/windows/desktop/api/d3d11/nf-d3d11-id3d11devicecontext-dispatch)Dispatch(5,3,2), i valori specificati nell'attributo [numthreads,](sm5-attributes-numthreads.md) numthreads(10,8,3) e i valori che verranno passati allo shader di calcolo per i valori di sistema correlati al thread ([SV \_ GroupIndex](sv-groupindex.md), SV \_ DispatchThreadID,[SV \_ GroupThreadID](sv-groupthreadid.md),[SV \_ GroupID](sv-groupid.md)).
 
 ![Illustrazione della relazione tra dispatch, gruppi di thread e thread](images/threadgroupids.png)
 

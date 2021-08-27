@@ -1,9 +1,9 @@
 ---
-title: Messaggio PGM_GETBORDER (COMmctrl. h)
-description: Recupera le dimensioni correnti del bordo per il controllo pager. È possibile inviare questo messaggio in modo esplicito o usare la \_ macro pager GetBorder.
+title: PGM_GETBORDER messaggio (Commctrl.h)
+description: Recupera le dimensioni correnti del bordo per il controllo pager. È possibile inviare questo messaggio in modo esplicito o usare la \_ macro GetBorder del pager.
 ms.assetid: 5d2f49ad-d940-4a0b-b5a0-05d742151b1c
 keywords:
-- Controlli di Windows Message PGM_GETBORDER
+- PGM_GETBORDER dei messaggi Windows controlli
 topic_type:
 - apiref
 api_name:
@@ -14,16 +14,16 @@ api_type:
 - HeaderDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: be510af44c9cf53000420531843a79e9856c40dd
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: 148b3d840548116d3082e27b5a760650c5802bdb2c6dbc1fc7c94f1df3a3d5b5
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "106302051"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120046861"
 ---
-# <a name="pgm_getborder-message"></a>\_Messaggio PGM GETborder
+# <a name="pgm_getborder-message"></a>Messaggio \_ GETBORDER PGM
 
-Recupera le dimensioni correnti del bordo per il controllo pager. È possibile inviare questo messaggio in modo esplicito o usare la macro [**pager \_ GetBorder**](/windows/desktop/api/Commctrl/nf-commctrl-pager_getborder) .
+Recupera le dimensioni correnti del bordo per il controllo pager. È possibile inviare questo messaggio in modo esplicito o usare la macro [**\_ GetBorder del pager.**](/windows/desktop/api/Commctrl/nf-commctrl-pager_getborder)
 
 ## <a name="parameters"></a>Parametri
 
@@ -45,9 +45,9 @@ Restituisce un valore INT che contiene le dimensioni correnti del bordo, in pixe
 
 | Requisito | Valore |
 |-------------------------------------|---------------------------------------------------------------------------------------|
-| Client minimo supportato<br/> | \[Solo app desktop di Windows Vista\]<br/>                                        |
-| Server minimo supportato<br/> | \[Solo app desktop Windows Server 2003\]<br/>                                  |
-| Intestazione<br/>                   | <dl> <dt>Commctrl. h</dt> </dl> |
+| Client minimo supportato<br/> | Windows Solo \[ app desktop di Vista\]<br/>                                        |
+| Server minimo supportato<br/> | Windows Solo app desktop server 2003 \[\]<br/>                                  |
+| Intestazione<br/>                   | <dl> <dt>Commctrl.h</dt> </dl> |
 
 
 
@@ -55,7 +55,7 @@ Restituisce un valore INT che contiene le dimensioni correnti del bordo, in pixe
 
 <dl> <dt>
 
-[**PGM ( \_ bordo)**](pgm-setborder.md)
+[**PGM \_ SETBORDER**](pgm-setborder.md)
 </dt> </dl>
 
  

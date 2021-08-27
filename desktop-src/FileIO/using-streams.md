@@ -1,21 +1,21 @@
 ---
 description: Codice di esempio che illustra come usare i flussi di file system NTFS di base.
 ms.assetid: 9cd5f418-404c-40f5-aa51-ef4d2a5f238e
-title: Uso di flussi
+title: Uso di Flussi
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 04edc73a3524d45eeead4cd6c0d508925e6caa5e
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 23ebb6e2297c82e8643eb79ce66991b32fdf27e46fc723113a2866c79b2f8377
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "104232872"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120078391"
 ---
-# <a name="using-streams"></a>Uso di flussi
+# <a name="using-streams"></a>Uso di Flussi
 
-Nell'esempio riportato in questo argomento viene illustrato come utilizzare i flussi di file system NTFS di base.
+L'esempio in questo argomento illustra come usare i flussi di file system NTFS di base.
 
-Questo esempio crea un file denominato "TestFile" con una dimensione di 16 byte. Tuttavia, il file dispone anche di un tipo di flusso:: $DATA aggiuntivo, denominato "Stream", che aggiunge altri 23 byte non segnalati dal sistema operativo. Pertanto, quando si visualizza la proprietà dimensioni file per il file, vengono visualizzate solo le dimensioni del flusso default:: $DATA per il file.
+In questo esempio viene creato un file denominato "TestFile" con dimensioni di 16 byte. Tuttavia, il file ha anche un tipo di flusso aggiuntivo ::$DATA, denominato "Stream", che aggiunge altri 23 byte non segnalati dal sistema operativo. Pertanto, quando si visualizza la proprietà delle dimensioni del file, vengono visualizzate solo le dimensioni del flusso predefinito ::$DATA per il file.
 
 
 ```C++
@@ -74,21 +74,21 @@ void main( )
 
 
 
-Se si digita **digitare TestFile** al prompt dei comandi, viene visualizzato l'output seguente:
+Se si digita **Digitare TestFile** al prompt dei comandi, viene visualizzato l'output seguente:
 
 ``` syntax
 This is TestFile
 ```
 
-Tuttavia, se si digita il testo **digitare testfile: Stream**, viene generato l'errore seguente:
+Tuttavia, se si digitano le parole **Type TestFile:Stream**, viene generato l'errore seguente:
 
-"La sintassi del nome file, della directory o dell'etichetta di volume non è corretta".
+"Il nome file, il nome della directory o la sintassi dell'etichetta di volume non sono corretti."
 
-Per visualizzare le informazioni presenti in TestFile: Stream, usare uno dei comandi seguenti:
+Per visualizzare il contenuto di TestFile:stream, usare uno dei comandi seguenti:
 
-**Altre < TestFile: Stream**
+**Altre < TestFile:Stream**
 
-**Altre < TestFile: Stream: $DATA**
+**Altre < TestFile:Stream:$DATA**
 
 Il testo visualizzato è il seguente:
 
@@ -100,7 +100,7 @@ This is TestFile:Stream
 
 <dl> <dt>
 
-[Flussi di file](file-streams.md)
+[File Flussi](file-streams.md)
 </dt> </dl>
 
  

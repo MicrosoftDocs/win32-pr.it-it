@@ -14,16 +14,16 @@ api_type:
 - HeaderDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 27eff7e9a14f39554fa6c1a69846bbaca7c39990
-ms.sourcegitcommit: f848119a8faa29b27585f4df53f6e50ee9666684
+ms.openlocfilehash: 66e919ccbdabbb19745b172082eed5cc2b0b8a36555587cda59bd7e24fca3247
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/27/2021
-ms.locfileid: "110548876"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120022521"
 ---
 # <a name="cdm_getspec-message"></a>Messaggio \_ CDM GETSPEC
 
-\[A partire da Windows Vista, le **finestre di** **dialogo** comuni Apri e Salva con nome sono state sostituite dalla finestra di dialogo [Elemento comune](../shell/common-file-dialog.md). È consigliabile usare l'API Common Item Dialog al posto di queste finestre di dialogo di Common Dialog Box Library.\]
+\[A partire Windows Vista, le  **finestre di** dialogo comuni Apri e Salva con nome sono state sostituite dalla finestra di dialogo [Elemento comune](../shell/common-file-dialog.md). È consigliabile usare l'API Common Item Dialog al posto di queste finestre di dialogo di Common Dialog Box Library.\]
 
 Recupera il nome file (senza il percorso) del file attualmente  selezionato in una finestra di dialogo Apri o **Salva con** nome di tipo Esplora risorse. La finestra di dialogo deve essere stata creata con il flag **OFN \_ EXPLORER;** in caso contrario, il messaggio ha esito negativo.
 
@@ -56,7 +56,7 @@ Puntatore al buffer che riceve il nome del file.
 
 ## <a name="return-value"></a>Valore restituito
 
-Se il messaggio ha esito positivo, il valore restituito è la dimensione, in caratteri, della stringa del nome file, incluso il carattere NULL di terminazione. Si tratta del numero di byte o caratteri copiati nel buffer o delle dimensioni del buffer richieste se il buffer è troppo piccolo.
+Se il messaggio ha esito positivo, il valore restituito è la dimensione, in caratteri, della stringa del nome file, incluso il carattere NULL di terminazione. Si tratta del numero di byte o caratteri copiati nel buffer o delle dimensioni del buffer necessarie se il buffer è troppo piccolo.
 
 Se si verifica un errore, il valore restituito è minore di zero.
 

@@ -1,28 +1,28 @@
 ---
-title: Esempio di Windows Touch temporanei in C (MTScratchpadWMTouchCS)
-description: L'esempio Windows Touch temporanei in C# Mostra come usare i messaggi tocco di Windows per tracciare i punti di tocco in una finestra.
+title: Windows Esempio di Touch Scratchpad in C (MTSocchpadWMTouchCS)
+description: L'Windows Touch Scratchpad in C# illustra come usare i messaggi Windows Touch per disegnare tracce dei punti di tocco in una finestra.
 ms.assetid: 652124be-01a8-4df4-b590-e5c2ca3f012c
 keywords:
-- Windows Touch, esempi di codice
-- Windows Touch, codice di esempio
-- Windows Touch, esempi temporanei
-- Esempi di temporanei
+- Windows Tocco, esempi di codice
+- Windows Tocco, codice di esempio
+- Windows Esempi di Touch,Scratchpad
+- Esempi di Scratchpad
 ms.topic: article
 ms.date: 10/28/2019
-ms.openlocfilehash: 2d91c08c55f0d5b29a170a3a01c6ee882fad765f
-ms.sourcegitcommit: c7fa8fc137714433c8d18b1bf71e9cf0b5bf5e80
+ms.openlocfilehash: 112f8446af4b845bfd36e4262a11da807535c93baaf6257a10a9a8d2b03374e9
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/25/2020
-ms.locfileid: "104047479"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120089847"
 ---
-# <a name="windows-touch-scratchpad-sample-c"></a>Esempio di Windows Touch temporanei (C#)
+# <a name="windows-touch-scratchpad-sample-c"></a>Windows Esempio di Touch Scratchpad (C#)
 
-L' [esempio Windows Touch temporanei in C#](https://github.com/microsoft/Windows-classic-samples/tree/master/Samples/Win7Samples/Touch/MTScratchpadWMTouch/CS) Mostra come usare i messaggi tocco di Windows per tracciare i punti di tocco in una finestra. La traccia del dito principale, quella che è stata inserita prima sul digitalizzatore, viene disegnata in nero. Le dita secondarie sono disegnate in sei colori: rosso, verde, blu, ciano, magenta e giallo. Nell'immagine seguente viene illustrato l'aspetto dell'applicazione durante l'esecuzione.
+[L'Windows touch scratchpad in C#](https://github.com/microsoft/Windows-classic-samples/tree/master/Samples/Win7Samples/Touch/MTScratchpadWMTouch/CS) illustra come usare i messaggi Windows Touch per disegnare tracce dei punti di tocco in una finestra. La traccia del dito principale, quella che è stata inserita per prima sul digitalizzatore, viene disegnata in nero. Le dita secondarie vengono disegnate in altri sei colori: rosso, verde, blu, ciano, magenta e giallo. L'immagine seguente mostra l'aspetto dell'applicazione durante l'esecuzione.
 
-![screenshot che mostra l'esempio Windows Touch temporanei in c Sharp, con la controllo ortografia durante nera, verde, blu e rossa sullo schermo](images/mtscratchpadwmtouchcs.png)
+![Screenshot che mostra l'esempio di scratchpad tocco di Windows in c sharp, con linee a linee a righe nere, verdi, blu e rosse sullo schermo](images/mtscratchpadwmtouchcs.png)
 
-Per questo esempio viene creato un form toccabile per gestire i messaggi di [**WM_TOUCH**](wm-touchdown.md) . Questo modulo viene ereditato per abilitare Windows Touch nell'applicazione temporanei. Quando i messaggi di **WM_TOUCH** arrivano al modulo, vengono interpretati in punti e vengono aggiunti alla raccolta di tratti. Viene eseguito il rendering della raccolta Strokes nell'oggetto Graphics. Nel codice seguente viene illustrato il modo in cui il form toccabile si registra per la gestione dei messaggi **WM_TOUCH** e il modo in cui gestisce i messaggi di **WM_TOUCH** .
+Per questo esempio, viene creato un form toccabile per gestire i [**WM_TOUCH**](wm-touchdown.md) messaggi. Questo modulo viene ereditato per abilitare Windows Touch nell'applicazione scratchpad. Quando i **WM_TOUCH** vengono visualizzati nel form, vengono interpretati in punti e aggiunti alla raccolta di tratti. Il rendering della raccolta strokes viene eseguito nell'oggetto Graphics. Nel codice seguente viene illustrato come il form  toccabile si registra per la gestione WM_TOUCH messaggi e come gestisce i **WM_TOUCH** personalizzati.
 
 ```CSharp
         private void OnLoadHandler(Object sender, EventArgs e)
@@ -71,7 +71,7 @@ Per questo esempio viene creato un form toccabile per gestire i messaggi di [**W
         }
 ```
 
-Il codice seguente illustra come viene interpretato il messaggio Windows Touch e i dati vengono aggiunti alle raccolte Stroke.
+Il codice seguente illustra come viene interpretato il Windows Touch e i dati vengono aggiunti alle raccolte di tratti.
 
 ```CSharp
         private bool DecodeTouch(ref Message m)
@@ -163,7 +163,7 @@ Il codice seguente illustra come viene visualizzata una raccolta di tratti.
         }
 ```
 
-Il codice seguente illustra il modo in cui i singoli oggetti Stroke vengono visualizzati con un oggetto Graphics.
+Il codice seguente mostra come i singoli oggetti stroke vengono visualizzati con un oggetto Graphics.
 
 ```CSharp
         public void Draw(Graphics graphics)
@@ -180,5 +180,5 @@ Il codice seguente illustra il modo in cui i singoli oggetti Stroke vengono visu
 
 ## <a name="related-topics"></a>Argomenti correlati
 
-[Windows Touch temporanei Sample (C++)](windows-touch-scratchpad-sample--mtscratchpadwmtouch-.md), [applicazione temporanei multitocco (WM_TOUCH/c #)](https://github.com/microsoft/Windows-classic-samples/tree/master/Samples/Win7Samples/Touch/MTScratchpadWMTouch/CS), [applicazione temporanei multitocco (WM_TOUCH/C + +)](https://github.com/microsoft/Windows-classic-samples/tree/master/Samples/Win7Samples/Touch/MTScratchpadWMTouch/cpp), esempi di [Windows Touch](windows-touch-samples.md)
+[Windows Touch Scratchpad (C++)](windows-touch-scratchpad-sample--mtscratchpadwmtouch-.md), [Multi-Touch Scratchpad Application (WM_TOUCH/C#)](https://github.com/microsoft/Windows-classic-samples/tree/master/Samples/Win7Samples/Touch/MTScratchpadWMTouch/CS), [Multi-Touch Scratchpad Application (WM_TOUCH/C++)](https://github.com/microsoft/Windows-classic-samples/tree/master/Samples/Win7Samples/Touch/MTScratchpadWMTouch/cpp), [Windows Touch Samples](windows-touch-samples.md)
 

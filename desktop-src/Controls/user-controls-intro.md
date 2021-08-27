@@ -1,36 +1,36 @@
 ---
 title: Controlli personalizzati
-description: Questa sezione contiene informazioni sui controlli personalizzati o definiti dall'applicazione.
+description: Questa sezione contiene informazioni sui controlli definiti dall'applicazione o personalizzati.
 ms.assetid: 220f7058-db04-46d0-acee-ed5e676790b3
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: e82ed9394ec06257e524153b86ef487f4507f35b
-ms.sourcegitcommit: 5f33645661bf8c825a7a2e73950b1f4ea0f1cd82
+ms.openlocfilehash: 12d1a31a44f1f71d99088f7729c2de6d5fdb597e14507f5f994dfaca1b96613d
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/21/2020
-ms.locfileid: "104118483"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120059711"
 ---
 # <a name="custom-controls"></a>Controlli personalizzati
 
-Questa sezione contiene informazioni sui controlli personalizzati o definiti dall'applicazione.
+Questa sezione contiene informazioni sui controlli definiti dall'applicazione o personalizzati.
 
 Vengono illustrati gli argomenti seguenti.
 
--   [Creazione di controlli Owner-Drawn](#creating-owner-drawn-controls)
--   [Sottoclasse della classe della finestra di un controllo esistente](#subclassing-the-window-class-of-an-existing-control)
--   [Implementazione di una classe Application-Defined Window](#implementing-an-application-defined-window-class)
+-   [Creazione di Owner-Drawn personalizzati](#creating-owner-drawn-controls)
+-   [Sottoclasse della classe Window di un controllo esistente](#subclassing-the-window-class-of-an-existing-control)
+-   [Implementazione di una Application-Defined finestra personalizzata](#implementing-an-application-defined-window-class)
 -   [Invio di notifiche da un controllo](#sending-notifications-from-a-control)
 -   [Accessibilità](#accessibility)
 -   [Argomenti correlati](#related-topics)
 
-## <a name="creating-owner-drawn-controls"></a>Creazione di controlli Owner-Drawn
+## <a name="creating-owner-drawn-controls"></a>Creazione di Owner-Drawn personalizzati
 
-I pulsanti, i menu, i controlli di testo statici, le caselle di riepilogo e le caselle combinate possono essere creati con un flag di stile disegnato dal proprietario. Quando un controllo ha lo stile disegnato dal proprietario, il sistema gestisce l'interazione dell'utente con il controllo come di consueto, eseguendo attività come il rilevamento quando un utente sceglie un pulsante e invia una notifica al proprietario dell'evento. Tuttavia, poiché il controllo è creato dal proprietario, la finestra padre del controllo è responsabile dell'aspetto visivo del controllo. La finestra padre riceve un messaggio ogni volta che è necessario disegnare il controllo.
+È possibile creare pulsanti, menu, controlli di testo statico, caselle di riepilogo e caselle combinate con un flag di stile creato dal proprietario. Quando un controllo ha lo stile disegnato dal proprietario, il sistema gestisce l'interazione dell'utente con il controllo come di consueto, eseguendo attività come il rilevamento del momento in cui un utente ha scelto un pulsante e notificando al proprietario del pulsante l'evento. Tuttavia, poiché il controllo è disegnato dal proprietario, la finestra padre del controllo è responsabile dell'aspetto visivo del controllo. La finestra padre riceve un messaggio ogni volta che è necessario disegnare il controllo.
 
-Per i pulsanti e i controlli di testo statici, lo stile disegnato dal proprietario influiscono sul modo in cui il sistema disegna l'intero controllo. Per le caselle di riepilogo e le caselle combinate, la finestra padre disegna gli elementi all'interno del controllo e il controllo disegna il proprio contorno. Ad esempio, un'applicazione può personalizzare una casella di riepilogo in modo da visualizzare una piccola bitmap accanto a ogni elemento dell'elenco.
+Per i pulsanti e i controlli di testo statico, lo stile disegnato dal proprietario influisce sul modo in cui il sistema disegna l'intero controllo. Per le caselle di riepilogo e le caselle combinate, la finestra padre disegna gli elementi all'interno del controllo e il controllo disegna il proprio contorno. Ad esempio, un'applicazione può personalizzare una casella di riepilogo in modo da visualizzare una piccola bitmap accanto a ogni elemento dell'elenco.
 
-Nell'esempio di codice seguente viene illustrato come creare un controllo testo statico creato dal proprietario. Si supponga che Unicode sia definito.
+Nell'esempio di codice seguente viene illustrato come creare un controllo di testo statico creato dal proprietario. Si supponga che sia definito Unicode.
 
 
 ```
@@ -42,7 +42,7 @@ g_myStatic = CreateWindowEx(0, L"STATIC", L"Some static text",
 
 
 
-Nell'esempio seguente, nella procedura della finestra di dialogo che contiene il controllo creato nell'esempio precedente, il messaggio [**WM \_ DrawItem**](wm-drawitem.md) viene gestito visualizzando il testo in un colore personalizzato, usando il tipo di carattere predefinito. Si noti che non è necessario chiamare [**BeginPaint**](/windows/desktop/api/winuser/nf-winuser-beginpaint) e [**EndPaint**](/windows/desktop/api/winuser/nf-winuser-endpaint) quando si gestisce **WM \_ DrawItem**.
+Nell'esempio seguente, dalla routine della finestra per la finestra di dialogo che contiene il controllo creato nell'esempio precedente, il messaggio [**WM \_ DRAWITEM**](wm-drawitem.md) viene gestito visualizzando il testo con un colore personalizzato, usando il tipo di carattere predefinito. Si noti che non è necessario chiamare [**BeginPaint**](/windows/desktop/api/winuser/nf-winuser-beginpaint) ed [**EndPaint**](/windows/desktop/api/winuser/nf-winuser-endpaint) quando si gestisce **WM \_ DRAWITEM.**
 
 
 ```
@@ -63,50 +63,50 @@ case WM_DRAWITEM:
 
 
 
-Per ulteriori informazioni sui controlli creati dal proprietario, vedere [creazione di una casella di riepilogo creata dal proprietario](using-list-boxes.md) e [caselle combinate create](about-combo-boxes.md)dal proprietario.
+Per altre informazioni sui controlli disegnati dal proprietario, vedere [Creazione di](using-list-boxes.md) una casella di riepilogo disegnata dal proprietario e Caselle combinate [disegnate dal proprietario.](about-combo-boxes.md)
 
-## <a name="subclassing-the-window-class-of-an-existing-control"></a>Sottoclasse della classe della finestra di un controllo esistente
+## <a name="subclassing-the-window-class-of-an-existing-control"></a>Sottoclasse della classe Window di un controllo esistente
 
-La creazione di una sottoclasse di un controllo esistente è un altro modo per creare un controllo personalizzato. La procedura di sottoclasse può modificare i comportamenti selezionati del controllo elaborando i messaggi che interessano i comportamenti selezionati. Tutti gli altri messaggi passano alla routine della finestra originale per il controllo. Ad esempio, un'applicazione può visualizzare una piccola bitmap accanto al testo in un controllo di sola lettura e di modifica a riga singola eseguendo la sottoclasse del controllo ed elaborando il messaggio di [**\_ disegno WM**](/windows/desktop/gdi/wm-paint) . Per ulteriori informazioni, vedere [informazioni sulle routine della finestra e sui controlli di](/windows/desktop/winmsg/about-window-procedures) [sottoclasse](subclassing-overview.md).
+La creazione di una sottoclasse di un controllo esistente è un altro modo per creare un controllo personalizzato. La routine della sottoclasse può modificare i comportamenti selezionati del controllo elaborando i messaggi che influiscono sui comportamenti selezionati. Tutti gli altri messaggi passano alla routine della finestra originale per il controllo. Ad esempio, un'applicazione può visualizzare una piccola bitmap accanto al testo in un controllo di modifica a riga singola di sola lettura sottoclassando il controllo ed elaborando il [**messaggio WM \_ PAINT.**](/windows/desktop/gdi/wm-paint) Per altre informazioni, vedere [About Window Procedures](/windows/desktop/winmsg/about-window-procedures) and [Subclassing Controls](subclassing-overview.md).
 
-## <a name="implementing-an-application-defined-window-class"></a>Implementazione di una classe Application-Defined Window
+## <a name="implementing-an-application-defined-window-class"></a>Implementazione di una Application-Defined finestra personalizzata
 
-Per creare un controllo non basato in modo esplicito su un controllo esistente, l'applicazione deve creare e registrare una classe di finestra. Il processo per la registrazione di una classe di finestra definita dall'applicazione per un controllo personalizzato equivale alla registrazione di una classe per una finestra ordinaria. Per creare un controllo personalizzato, specificare il nome della classe della finestra nella funzione [**CreateWindowEx**](/windows/desktop/api/winuser/nf-winuser-createwindowexa) o in un modello di finestra di dialogo. Ogni classe deve avere un nome univoco, una routine della finestra corrispondente e altre informazioni.
+Per creare un controllo non basato in modo esplicito su un controllo esistente, l'applicazione deve creare e registrare una classe finestra. Il processo per la registrazione di una classe di finestra definita dall'applicazione per un controllo personalizzato è identico a quello per la registrazione di una classe per una finestra normale. Per creare un controllo personalizzato, specificare il nome della classe della finestra nella [**funzione CreateWindowEx**](/windows/desktop/api/winuser/nf-winuser-createwindowexa) o in un modello di finestra di dialogo. Ogni classe deve avere un nome univoco, una routine della finestra corrispondente e altre informazioni.
 
-Come minimo, la routine della finestra Disegna il controllo. Se un'applicazione utilizza il controllo per consentire all'utente di immettere informazioni sul tipo, la procedura della finestra elabora anche i messaggi di input dalla tastiera e il mouse e invia messaggi di notifica alla finestra padre. Inoltre, se il controllo supporta i messaggi di controllo, la routine della finestra elabora i messaggi inviati dalla finestra padre o da altre finestre. I controlli, ad esempio, elaborano spesso il messaggio [**WM \_ GETDLGCODE**](/windows/desktop/dlgbox/wm-getdlgcode) inviato da finestre di dialogo per indicare a una finestra di dialogo di elaborare l'input da tastiera in un determinato modo.
+Come minimo, la routine della finestra disegna il controllo. Se un'applicazione usa il controllo per consentire all'utente di digitare informazioni, la routine della finestra elabora anche i messaggi di input dalla tastiera e dal mouse e invia messaggi di notifica alla finestra padre. Inoltre, se il controllo supporta i messaggi di controllo, la routine della finestra elabora i messaggi inviati dalla finestra padre o da altre finestre. Ad esempio, i controlli spesso elaborano il messaggio [**WM \_ GETDLGCODE**](/windows/desktop/dlgbox/wm-getdlgcode) inviato dalle finestre di dialogo per indirizzare una finestra di dialogo all'elaborazione dell'input da tastiera in un determinato modo.
 
-La routine della finestra per un controllo definito dall'applicazione deve elaborare qualsiasi messaggio di controllo predefinito nella tabella seguente se il messaggio influiscono sul funzionamento del controllo.
+La routine della finestra per un controllo definito dall'applicazione deve elaborare qualsiasi messaggio di controllo predefinito nella tabella seguente se il messaggio influisce sul funzionamento del controllo.
 
 
 
 | Message                                          | Recommendation                                                                                                                                                                                                                                  |
 |--------------------------------------------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| [**\_GETDLGCODE WM**](/windows/desktop/dlgbox/wm-getdlgcode)       | Elaborare se il controllo Usa i tasti INVIO, ESC, TAB o freccia. La funzione [**IsDialogMessage**](/windows/desktop/api/winuser/nf-winuser-isdialogmessagea) Invia questo messaggio ai controlli in una finestra di dialogo per determinare se elaborare le chiavi o passarle al controllo. |
-| [**\_tipo di carattere WM GetFont**](/windows/desktop/winmsg/wm-getfont)             | Elabora se viene elaborato anche il messaggio [**WM \_ sefont**](/windows/desktop/winmsg/wm-setfont) .                                                                                                                                                                  |
-| [**WM \_ GETtext**](/windows/desktop/winmsg/wm-gettext)             | Elaborare se il testo del controllo non è uguale al titolo specificato dalla funzione [**CreateWindowEx**](/windows/desktop/api/winuser/nf-winuser-createwindowexa) .                                                                                                                 |
-| [**\_GETTEXTLENGTH WM**](/windows/desktop/winmsg/wm-gettextlength) | Elaborare se il testo del controllo non è uguale al titolo specificato dalla funzione [**CreateWindowEx**](/windows/desktop/api/winuser/nf-winuser-createwindowexa) .                                                                                                                 |
-| [**\_KILLFOCUS WM**](/windows/desktop/inputdev/wm-killfocus)       | Elabora se il controllo Visualizza un accento circonflesso, un rettangolo di attivazione o un altro elemento per indicare che ha lo stato attivo per l'input.                                                                                                                            |
-| [**\_stato attivo WM**](/windows/desktop/inputdev/wm-setfocus)         | Elabora se il controllo Visualizza un accento circonflesso, un rettangolo di attivazione o un altro elemento per indicare che ha lo stato attivo per l'input.                                                                                                                            |
-| [**\_testo WM**](/windows/desktop/winmsg/wm-settext)             | Elaborare se il testo del controllo non è uguale al titolo specificato dalla funzione [**CreateWindowEx**](/windows/desktop/api/winuser/nf-winuser-createwindowexa) .                                                                                                                 |
-| [**\_tipo di carattere WM**](/windows/desktop/winmsg/wm-setfont)             | Elaborare se il controllo Visualizza il testo. Questo messaggio viene inviato dal sistema durante la creazione di una finestra di dialogo con lo \_ stile DS sefont.                                                                                                                  |
+| [**WM \_ GETDLGCODE**](/windows/desktop/dlgbox/wm-getdlgcode)       | Elaborare se il controllo usa INVIO, ESC, TAB o i tasti di direzione. La [**funzione IsDialogMessage**](/windows/desktop/api/winuser/nf-winuser-isdialogmessagea) invia questo messaggio ai controlli in una finestra di dialogo per determinare se elaborare i tasti o passarli al controllo. |
+| [**WM \_ GETFONT**](/windows/desktop/winmsg/wm-getfont)             | Elaborare se viene elaborato anche il messaggio [**\_ WM SETFONT.**](/windows/desktop/winmsg/wm-setfont)                                                                                                                                                                  |
+| [**WM \_ GETTEXT**](/windows/desktop/winmsg/wm-gettext)             | Elaborare se il testo del controllo non corrisponde al titolo specificato dalla [**funzione CreateWindowEx.**](/windows/desktop/api/winuser/nf-winuser-createwindowexa)                                                                                                                 |
+| [**WM \_ GETTEXTLENGTH**](/windows/desktop/winmsg/wm-gettextlength) | Elaborare se il testo del controllo non corrisponde al titolo specificato dalla [**funzione CreateWindowEx.**](/windows/desktop/api/winuser/nf-winuser-createwindowexa)                                                                                                                 |
+| [**WM \_ KILLFOCUS**](/windows/desktop/inputdev/wm-killfocus)       | Elaborare se il controllo visualizza un punto di inserimento, un rettangolo di attivazione o un altro elemento per indicare che ha lo stato attivo per l'input.                                                                                                                            |
+| [**WM \_ SETFOCUS**](/windows/desktop/inputdev/wm-setfocus)         | Elaborare se il controllo visualizza un punto di inserimento, un rettangolo di attivazione o un altro elemento per indicare che ha lo stato attivo per l'input.                                                                                                                            |
+| [**WM \_ SETTEXT**](/windows/desktop/winmsg/wm-settext)             | Elaborare se il testo del controllo non corrisponde al titolo specificato dalla [**funzione CreateWindowEx.**](/windows/desktop/api/winuser/nf-winuser-createwindowexa)                                                                                                                 |
+| [**WM \_ SETFONT**](/windows/desktop/winmsg/wm-setfont)             | Elaborare se il controllo visualizza testo. Il sistema invia questo messaggio durante la creazione di una finestra di dialogo con lo stile \_ DS SETFONT.                                                                                                                  |
 
 
 
- 
+ 
 
-I messaggi di controllo definiti dall'applicazione sono specifici del controllo specificato e devono essere inviati in modo esplicito al controllo tramite una funzione [**SendMessage**](/windows/desktop/api/winuser/nf-winuser-sendmessage) o [**SendDlgItemMessage**](/windows/desktop/api/winuser/nf-winuser-senddlgitemmessagea) . Il valore numerico per ogni messaggio deve essere univoco e non deve essere in conflitto con i valori di altri messaggi della finestra. Per assicurarsi che i valori dei messaggi definiti dall'applicazione non siano in conflitto, un'applicazione deve creare ogni valore aggiungendo un numero univoco al valore [**\_ utente WM**](/windows/desktop/winmsg/wm-user) .
+I messaggi di controllo definiti dall'applicazione sono specifici del controllo specificato e devono essere inviati in modo esplicito al controllo tramite una funzione [**SendMessage**](/windows/desktop/api/winuser/nf-winuser-sendmessage) o [**SendDlgItemMessage.**](/windows/desktop/api/winuser/nf-winuser-senddlgitemmessagea) Il valore numerico per ogni messaggio deve essere univoco e non deve essere in conflitto con i valori di altri messaggi finestra. Per garantire che i valori dei messaggi definiti dall'applicazione non siano in conflitto, un'applicazione deve creare ogni valore aggiungendo un numero univoco al [**valore WM \_ USER.**](/windows/desktop/winmsg/wm-user)
 
 ## <a name="sending-notifications-from-a-control"></a>Invio di notifiche da un controllo
 
-I controlli personalizzati potrebbero essere necessari per inviare notifiche di eventi alla finestra padre in modo che l'applicazione host possa rispondere a questi eventi. Ad esempio, una visualizzazione elenco personalizzata può inviare una notifica quando l'utente seleziona un elemento e un'altra notifica quando si fa doppio clic su un elemento.
+I controlli personalizzati potrebbero essere necessari per inviare notifiche di eventi alla finestra padre in modo che l'applicazione host possa rispondere a questi eventi. Ad esempio, una visualizzazione elenco personalizzata potrebbe inviare una notifica quando l'utente seleziona un elemento e un'altra notifica quando si fa doppio clic su un elemento.
 
-Le notifiche vengono inviate come i messaggi [**WM \_ Command**](/windows/desktop/menurc/wm-command) o [**WM \_ Notify**](wm-notify.md) . **WM \_** I messaggi di notifica contengono più informazioni rispetto ai messaggi di **\_ comando WM** .
+Le notifiche vengono inviate [**come messaggi WM \_ COMMAND**](/windows/desktop/menurc/wm-command) [**o WM \_ NOTIFY.**](wm-notify.md) **WM \_ I messaggi NOTIFY** hanno più informazioni rispetto ai **messaggi WM \_ COMMAND.**
 
-L'identificatore di controllo è un numero univoco usato dall'applicazione per identificare il controllo che invia il messaggio. L'applicazione imposta l'identificatore per un controllo quando crea il controllo. Tramite l'applicazione viene specificato l'identificatore nel parametro *HMENU* della funzione [**CreateWindowEx**](/windows/desktop/api/winuser/nf-winuser-createwindowexa) o nel membro **ID** della struttura [**DLGITEMTEMPLATEEX**](/windows/desktop/dlgbox/dlgitemtemplateex) .
+L'identificatore di controllo è un numero univoco utilizzato dall'applicazione per identificare il controllo che invia il messaggio. L'applicazione imposta l'identificatore per un controllo quando crea il controllo. L'applicazione specifica l'identificatore nel parametro *hMenu* della [**funzione CreateWindowEx**](/windows/desktop/api/winuser/nf-winuser-createwindowexa) o nel **membro id** della [**struttura DLGITEMTEMPLATEEX.**](/windows/desktop/dlgbox/dlgitemtemplateex)
 
-Poiché il controllo stesso non imposta l'identificatore del controllo, il controllo deve recuperare l'identificatore prima di poter inviare i messaggi di notifica. Un controllo deve usare la funzione [**GetDlgCtrlID**](/windows/desktop/api/winuser/nf-winuser-getdlgctrlid) per recuperare il proprio identificatore del controllo. Sebbene l'identificatore di controllo venga specificato come handle di menu quando viene creato il controllo, non è possibile utilizzare la funzione [**GetMenu**](/windows/desktop/api/winuser/nf-winuser-getmenu) per recuperare l'identificatore. In alternativa, un controllo può recuperare l'identificatore dal membro **HMENU** nella struttura [**struttura CREATESTRUCT**](/windows/win32/api/winuser/ns-winuser-createstructa) durante l'elaborazione del messaggio [**WM \_ create**](/windows/desktop/winmsg/wm-create) .
+Poiché il controllo stesso non imposta l'identificatore del controllo, il controllo deve recuperare l'identificatore prima di poter inviare messaggi di notifica. Un controllo deve usare la [**funzione GetDlgCtrlID**](/windows/desktop/api/winuser/nf-winuser-getdlgctrlid) per recuperare il proprio identificatore di controllo. Anche se l'identificatore del controllo viene specificato come handle di menu quando viene creato il controllo, non è possibile usare la [**funzione GetMenu**](/windows/desktop/api/winuser/nf-winuser-getmenu) per recuperare l'identificatore. In alternativa, un controllo può recuperare l'identificatore dal membro **hMenu** nella [**struttura CREATESTRUCT**](/windows/win32/api/winuser/ns-winuser-createstructa) durante l'elaborazione [**del messaggio WM \_ CREATE.**](/windows/desktop/winmsg/wm-create)
 
-Gli esempi seguenti, in cui *hwndControl* è l'handle della finestra di controllo e CN \_ VALUECHANGED è una definizione di notifica personalizzata, mostrano le due modalità di invio di una notifica specifica del controllo.
+Gli esempi seguenti, in cui *hwndControl* è l'handle della finestra di controllo e CN VALUECHANGED è una definizione di notifica personalizzata, illustra i due modi per inviare una notifica specifica \_ del controllo.
 
 
 ```
@@ -129,15 +129,15 @@ SendMessage(GetParent(hwndControl),
 
 
 
-Si noti che la struttura [**NMHDR**](/windows/desktop/api/richedit/ns-richedit-nmhdr) può far parte di una struttura più ampia definita dal controllo che contiene informazioni aggiuntive. Nell'esempio, i valori vecchi e nuovi del controllo potrebbero essere contenuti in questa struttura. Queste strutture estese vengono usate con molte notifiche standard. ad esempio, vedere [LVN \_ INSERTITEM](lvn-insertitem.md), che usa la struttura [**NMLISTVIEW**](/windows/win32/api/commctrl/ns-commctrl-nmlistview) .
+Si noti che [**la struttura NMHDR**](/windows/desktop/api/richedit/ns-richedit-nmhdr) può far parte di una struttura più ampia definita dal controllo che contiene informazioni aggiuntive. Nell'esempio i valori precedente e nuovo del controllo potrebbero essere contenuti in questa struttura . Queste strutture estese vengono usate con molte notifiche standard. Ad esempio, vedere [LVN \_ INSERTITEM,](lvn-insertitem.md)che usa la [**struttura NMLISTVIEW.**](/windows/win32/api/commctrl/ns-commctrl-nmlistview)
 
 ## <a name="accessibility"></a>Accessibilità
 
-Tutti i controlli comuni supportano Microsoft Active Accessibility (MSAA), che consente l'accesso a livello di codice alle applicazioni tecnologiche accessibili, ad esempio i lettori dello schermo. MSAA consente inoltre l'automazione dell'interfaccia utente, una tecnologia più recente, per interagire con i controlli.
+Tutti i controlli comuni supportano Microsoft Active Accessibility (MSAA), che consente l'accesso a livello di codice da applicazioni tecnologiche accessibili, ad esempio utilità per la lettura dello schermo. MSAA consente anche Automazione interfaccia utente, una tecnologia più recente, di interagire con i controlli.
 
-I controlli personalizzati devono implementare l'interfaccia [**IAccessible**](/windows/desktop/api/oleacc/nn-oleacc-iaccessible) (per supportare MSAA) o le interfacce di automazione interfaccia utente o entrambi. In caso contrario, i prodotti con tecnologia accessibile potranno ottenere solo informazioni molto limitate sulla finestra di controllo, non avranno accesso alle proprietà del controllo e non saranno in grado di attivare eventi nel controllo.
+I controlli personalizzati devono implementare [**l'interfaccia IAccessible**](/windows/desktop/api/oleacc/nn-oleacc-iaccessible) (per supportare MSAA) o le interfacce Automazione interfaccia utente o entrambe. In caso contrario, i prodotti con tecnologia accessibile saranno in grado di ottenere solo informazioni molto limitate sulla finestra di controllo, non avranno accesso alle proprietà del controllo e non potranno attivare eventi nel controllo.
 
-Per altre informazioni su come rendere accessibile il controllo, vedere [API di automazione di Windows](/windows/desktop/WinAuto/windows-automation-api-portal).
+Per altre informazioni sull'accessibilità del controllo, vedere API [Windows Automation](/windows/desktop/WinAuto/windows-automation-api-portal).
 
 ## <a name="related-topics"></a>Argomenti correlati
 
@@ -146,18 +146,18 @@ Per altre informazioni su come rendere accessibile il controllo, vedere [API di 
 **Informazioni concettuali**
 </dt> <dt>
 
-[Riferimento al controllo generale](common-control-reference.md)
+[Informazioni di riferimento generali sul controllo](common-control-reference.md)
 </dt> <dt>
 
-[Personalizzazione dell'aspetto di un controllo mediante il progetto personalizzato](custom-draw.md)
+[Personalizzazione dell'aspetto di un controllo tramite disegno personalizzato](custom-draw.md)
 </dt> <dt>
 
 [Messaggi di controllo](control-messages.md)
 </dt> <dt>
 
-[Uso di stili di visualizzazione con controlli Owner-Drawn](using-visual-styles.md)
+[Uso degli stili di visualizzazione con Owner-Drawn personalizzati](using-visual-styles.md)
 </dt> </dl>
 
- 
+ 
 
- 
+ 

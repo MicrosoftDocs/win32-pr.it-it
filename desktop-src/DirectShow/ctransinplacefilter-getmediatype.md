@@ -16,12 +16,12 @@ api_location:
 - Strmbase.dll
 - Strmbasd.lib
 - Strmbasd.dll
-ms.openlocfilehash: 8678f9b18e40f529da282909015a7c75695770ea
-ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
+ms.openlocfilehash: a714d3dba30b3038d6c04ecedd51db4196a3c4d899d7c607dd12f9a068f8a803
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/28/2021
-ms.locfileid: "108094809"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120079301"
 ---
 # <a name="ctransinplacefiltergetmediatype-method"></a>Metodo CTransInPlaceFilter.GetMediaType
 
@@ -53,7 +53,7 @@ Valore di indice in base zero.
 *pMediaType* 
 </dt> <dd>
 
-Puntatore a un [**oggetto CMediaType**](cmediatype.md) che riceve il tipo di supporto.
+Puntatore a [**un oggetto CMediaType**](cmediatype.md) che riceve il tipo di supporto.
 
 </dd> </dl>
 
@@ -63,7 +63,7 @@ Restituisce E \_ UNEXPECTED.
 
 ## <a name="remarks"></a>Commenti
 
-Questo metodo esegue l'override [**del metodo CTransformFilter::GetMediaType.**](ctransformfilter-getmediatype.md) Nella classe **CTransInPlaceFilter** ogni pin chiama il pin connesso opposto per enumerare i tipi di supporti preferiti. Il pin di input chiama il pin di input del filtro downstream e il pin di output chiama il pin di output del filtro upstream. Pertanto, il metodo del `GetMediaType` filtro non viene mai chiamato.
+Questo metodo esegue l'override [**del metodo CTransformFilter::GetMediaType.**](ctransformfilter-getmediatype.md) Nella classe **CTransInPlaceFilter** ogni pin chiama il pin connesso opposto per enumerare i tipi di supporti preferiti. Il pin di input chiama il pin di input del filtro downstream e il pin di output chiama il pin di output del filtro upstream. Di conseguenza, il metodo `GetMediaType` del filtro non viene mai chiamato.
 
 ## <a name="requirements"></a>Requisiti
 
@@ -71,7 +71,7 @@ Questo metodo esegue l'override [**del metodo CTransformFilter::GetMediaType.**]
 
 | Requisito | Valore |
 |--------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Intestazione<br/>  | <dl> <dt>Transip.h (include Streams.h)</dt> </dl>                                                                                   |
+| Intestazione<br/>  | <dl> <dt>Transip.h (includere Flussi.h)</dt> </dl>                                                                                   |
 | Libreria<br/> | <dl> <dt>Strmbase.lib (build di vendita al dettaglio); </dt> <dt>Strmbasd.lib (build di debug)</dt> </dl> |
 
 

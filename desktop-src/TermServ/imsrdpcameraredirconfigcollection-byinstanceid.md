@@ -1,11 +1,11 @@
 ---
-title: Proprietà ByInstanceId di IMsRdpCameraRedirConfigCollection
+title: Proprietà IMsRdpCameraRedirConfigCollection ByInstanceId
 description: Restituisce un oggetto IMsRdpCameraRedirConfig dalla raccolta che corrisponde all'ID istanza specificato.
 ms.tgt_platform: multiple
 keywords:
-- Servizi Desktop remoto proprietà ByInstanceId
-- Servizi Desktop remoto proprietà ByInstanceId, interfaccia IMsRdpCameraRedirConfigCollection
-- Interfaccia IMsRdpCameraRedirConfigCollection Servizi Desktop remoto, proprietà ByInstanceId
+- Proprietà ByInstanceId Servizi Desktop remoto
+- Proprietà ByInstanceId Servizi Desktop remoto, interfaccia IMsRdpCameraRedirConfigCollection
+- Interfaccia IMsRdpCameraRedirConfigCollection Servizi Desktop remoto proprietà , ByInstanceId
 topic_type:
 - apiref
 api_name:
@@ -17,16 +17,16 @@ api_type:
 - COM
 ms.topic: reference
 ms.date: 12/16/2020
-ms.openlocfilehash: d90cb7d2f309a3df9e354ace04a840b667e5569b
-ms.sourcegitcommit: 04e801237156e90b48111d60bddf437f87f5cdfe
+ms.openlocfilehash: e621efa61c6e033a9066da30fc6a2a97c76ebec94e9bfe848743f8b031b08d80
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/19/2020
-ms.locfileid: "104480525"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120080071"
 ---
-# <a name="imsrdpcameraredirconfigcollectionbyinstanceid-property"></a>Proprietà IMsRdpCameraRedirConfigCollection:: ByInstanceId
+# <a name="imsrdpcameraredirconfigcollectionbyinstanceid-property"></a>Proprietà IMsRdpCameraRedirConfigCollection::ByInstanceId
 
-Restituisce un oggetto [IMsRdpCameraRedirConfig](imsrdpcameraredirconfig.md) dalla raccolta che corrisponde all'ID istanza specificato.
+Restituisce un [oggetto IMsRdpCameraRedirConfig](imsrdpcameraredirconfig.md) dalla raccolta che corrisponde all'ID istanza specificato.
 
 Questa proprietà è di sola lettura.
 
@@ -50,7 +50,7 @@ Oggetto [IMsRdpCameraRedirConfig](imsrdpcameraredirconfig.md) che corrisponde al
 | Client minimo supportato| Windows 10, versione 1803 (build 17134)      |
 | Libreria dei tipi            | MsTscAx.dll                        |
 | DLL                  | MsTscAx.dll     |
-| IID                      | IID \_ IMsRdpCameraRedirConfigCollection è definito come AE45252B-aaab-4504-B681-649D6073A37A          |
+| IID                      | IID \_ IMsRdpCameraRedirConfigCollection è definito come AE45252B-AAAB-4504-B681-649D6073A37A          |
 
 ## <a name="see-also"></a>Vedi anche
 

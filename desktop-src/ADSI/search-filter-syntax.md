@@ -1,6 +1,6 @@
 ---
 title: Sintassi del filtro di ricerca
-description: I filtri di ricerca consentono di definire criteri di ricerca e forniscono ricerche più efficienti ed efficaci.
+description: I filtri di ricerca consentono di definire i criteri di ricerca e di fornire ricerche più efficienti ed efficaci.
 ms.assetid: 3ce4709c-5ef7-4713-8fb7-b46ab284339f
 ms.tgt_platform: multiple
 keywords:
@@ -8,27 +8,27 @@ keywords:
 - query, sintassi del filtro di ricerca
 ms.topic: article
 ms.date: 09/25/2020
-ms.openlocfilehash: 28875bd49a3d1df7418c37706e58852066bbe08a
-ms.sourcegitcommit: 4570ac533e129ff88b23f2c2b69e0140ead3a4a4
+ms.openlocfilehash: 9ea6b347da1c840ef6bd1dd32bb32f96e7be86dfb93e6c1e71cdbb06bd52ba97
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/26/2021
-ms.locfileid: "106334000"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120005491"
 ---
 # <a name="search-filter-syntax"></a>Sintassi del filtro di ricerca
 
-I filtri di ricerca consentono di definire criteri di ricerca e forniscono ricerche più efficienti ed efficaci.
+I filtri di ricerca consentono di definire i criteri di ricerca e di fornire ricerche più efficienti ed efficaci.
 
-ADSI supporta i filtri di ricerca LDAP come definito in RFC2254. Questi filtri di ricerca sono rappresentati da stringhe Unicode. Nella tabella seguente sono elencati alcuni esempi di filtri di ricerca LDAP.
+ADSI supporta i filtri di ricerca LDAP definiti in RFC2254. Questi filtri di ricerca sono rappresentati da stringhe Unicode. La tabella seguente elenca alcuni esempi di filtri di ricerca LDAP.
 
 
 
 | Filtro di ricerca                                                               | Descrizione                                                |
 |-----------------------------------------------------------------------------|------------------------------------------------------------|
-| "(objectClass = \* )"                                                          | Tutti gli oggetti.                                               |
-| "(& (objectCategory = person) (objectClass = user) (! ( CN = Andy))) "                  | Tutti gli oggetti utente, ma "Andy".                               |
-| "(SN = SM \* )"                                                                 | Tutti gli oggetti con un cognome che inizia con "SM".          |
-| "(& (objectCategory = person) (objectClass = Contact) ( \| (sn = Smith) (sn = Johnson)))" | Tutti i contatti con cognome uguale a "Smith" o "Johnson". |
+| "(objectClass= \* )"                                                          | Tutti gli oggetti .                                               |
+| "(&(objectCategory=person)(objectClass=user)(!( cn=andy))                  | Tutti gli oggetti utente, ad esempio "andy".                               |
+| "(sn=sm \* )"                                                                 | Tutti gli oggetti con un cognome che inizia con "sm".          |
+| "(&(objectCategory=person)(objectClass=contact)( \| (sn=Smith)(sn=ObjectCategory))))" | Tutti i contatti con cognome uguale a "Smith" o "Smith". |
 
 
 
@@ -52,7 +52,7 @@ oppure
 
 
 
-I filtri di ricerca ADSI vengono usati in due modi. Formano una parte del dialetto LDAP per l'invio di query tramite il provider di OLE DB. Vengono inoltre usati con l'interfaccia [**IDirectorySearch**](/windows/desktop/api/Iads/nn-iads-idirectorysearch) .
+I filtri di ricerca ADSI vengono usati in due modi. Fanno parte del dialetto LDAP per l'invio di query tramite OLE DB provider. Vengono usati anche con [**l'interfaccia IDirectorySearch.**](/windows/desktop/api/Iads/nn-iads-idirectorysearch)
 
 ## <a name="operators"></a>Operatori
 
@@ -64,8 +64,8 @@ Nella tabella seguente sono elencati gli operatori di filtro di ricerca usati di
 |------------------|--------------------------------------------|
 | =                | Uguale a                                   |
 | ~=               | Approssimativamente uguale a                     |
-| <=            | Lessicografico minore o uguale a    |
-| >=            | Lessicografico maggiore o uguale a |
+| <=            | Lessicograficamente minore o uguale a    |
+| >=            | Lessicograficamente maggiore o uguale a |
 | &                | AND                                        |
 | \|               | OR                                         |
 | !                | NOT                                        |
@@ -83,23 +83,23 @@ Oltre agli operatori precedenti, LDAP definisce due identificatori di oggetto re
 
 
 
-" &lt; nome attributo &gt; " è l' **ldapDisplayName** dell'attributo " &lt; Rule OID &gt; " è l'OID per la regola di corrispondenza e " &lt; value &gt; " è il valore da usare per il confronto. Tenere presente che in questa stringa non è possibile utilizzare spazi. " &lt; value &gt; " deve essere un numero decimale. non può essere un numero esadecimale o un nome di costante, ad esempio la **\_ sicurezza del tipo di gruppo Ads \_ \_ \_ abilitata**. Per ulteriori informazioni sugli attributi di Active Directory disponibili, vedere [tutti gli attributi](/windows/desktop/ADSchema/attributes-all).
+" attribute name " è il &lt; &gt; valore **lDAPDisplayName** dell'attributo, " rule OID " è l'OID per la regola di corrispondenza e " value " è il valore da usare per &lt; il &gt; &lt; &gt; confronto. Tenere presente che non è possibile usare spazi in questa stringa. " value " deve essere un numero decimale. Non può essere un numero esadecimale o un nome costante, ad esempio &lt; &gt; **ADS \_ GROUP TYPE \_ SECURITY \_ \_ ENABLED.** Per altre informazioni sugli attributi di Active Directory disponibili, vedere [Tutti gli attributi.](/windows/desktop/ADSchema/attributes-all)
 
-La tabella seguente elenca la regola di corrispondenza OID implementata da LDAP.
+Nella tabella seguente sono elencati gli OID delle regole di corrispondenza implementati da LDAP.
 
 
 
-| OID regola di corrispondenza       | Identificatore di stringa (da Ntldap. h)   | Descrizione                                                                                                                                                                                   |
+| OID regola di corrispondenza       | Identificatore di stringa (da Ntldap.h)   | Descrizione                                                                                                                                                                                   |
 |-------------------------|-------------------------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| 1.2.840.113556.1.4.803  | **\_bit della \_ regola di corrispondenza LDAP \_ \_ e**  | Viene trovata una corrispondenza solo se tutti i bit dall'attributo corrispondono al valore. Questa regola è equivalente a un operatore **and** bit per bit.                                                                  |
-| 1.2.840.113556.1.4.804  | **\_bit della regola di corrispondenza LDAP \_ \_ \_ o**   | Viene trovata una corrispondenza se i bit dall'attributo corrispondono al valore. Questa regola è equivalente a un operatore **OR bit per** bit.                                                                        |
-| 1.2.840.113556.1.4.1941 | **\_ \_ regola di corrispondenza LDAP \_ nella \_ catena** | Questa regola è limitata ai filtri applicati al DN. Si tratta di uno speciale operatore di corrispondenza "esteso" che percorre la catena di origini negli oggetti fino alla radice fino a quando non viene trovata una corrispondenza. |
+| 1.2.840.113556.1.4.803  | **BIT E \_ DELLA \_ REGOLA DI CORRISPONDENZA \_ LDAP \_**  | Viene trovata una corrispondenza solo se tutti i bit dell'attributo corrispondono al valore. Questa regola equivale a un operatore **AND** bit per bit.                                                                  |
+| 1.2.840.113556.1.4.804  | **BIT \_ DELLA REGOLA DI CORRISPONDENZA LDAP \_ \_ \_ O**   | Se i bit dell'attributo corrispondono al valore, viene trovata una corrispondenza. Questa regola equivale a un operatore **OR** bit per bit.                                                                        |
+| 1.2.840.113556.1.4.1941 | **REGOLA \_ DI CORRISPONDENZA LDAP NELLA \_ \_ \_ CATENA** | Questa regola è limitata ai filtri che si applicano al DN. Si tratta di uno speciale operatore di corrispondenza "esteso" che consente di raggiungere la radice fino alla radice fino a trovare una corrispondenza. |
 
 
 
  
 
-La stringa di query di esempio seguente cerca gli oggetti gruppo per i quali è impostato il flag di **\_ \_ \_ sicurezza \_ abilitata per il tipo di gruppo ADS** . Tenere presente che per il valore di confronto viene usato il valore decimale della **\_ sicurezza del tipo di gruppo Ads \_ \_ \_ abilitata** (0x80000000 = 2147483648).
+La stringa di query di esempio seguente cerca gli oggetti gruppo per cui è impostato il flag **ADS \_ GROUP TYPE \_ SECURITY \_ \_ ENABLED.** Tenere presente che per il valore di confronto viene usato il valore decimale **di ADS \_ GROUP TYPE \_ SECURITY \_ \_ ENABLED** (0x80000000 = 2147483648).
 
 
 ```C++
@@ -108,9 +108,9 @@ La stringa di query di esempio seguente cerca gli oggetti gruppo per i quali è 
 
 
 
-La **\_ regola di corrispondenza LDAP \_ \_ nella \_ catena** è un OID della regola di corrispondenza progettato per fornire un metodo per cercare l'origine di un oggetto. Molte applicazioni che usano Active Directory e AD LDS in genere funzionano con i dati gerarchici, ordinati in base alle relazioni padre-figlio. In precedenza, le applicazioni eseguivano un'espansione del gruppo transitiva per determinare l'appartenenza al gruppo, che usava troppa larghezza di banda di rete; le applicazioni devono creare più round trip per determinare se un oggetto è caduto "nella catena" Se un collegamento viene attraversato fino alla fine.
+LDAP **\_ MATCHING RULE IN \_ CHAIN \_ \_ è** un OID della regola di corrispondenza progettato per fornire un metodo per cercare l'origine di un oggetto. Molte applicazioni che usano AD e AD LDS in genere funzionano con dati gerarchici, ordinati in base alle relazioni padre-figlio. In precedenza, le applicazioni hanno eseguito l'espansione transitiva dei gruppi per determinare l'appartenenza ai gruppi, che usava una larghezza di banda di rete troppo elevata. le applicazioni dovevano eseguire più roundtrip per determinare se un oggetto era "nella catena" se un collegamento viene attraversato fino alla fine.
 
-Un esempio di query di questo tipo è quello progettato per verificare se un utente "User1" è un membro del gruppo "group1". Impostare la base sul DN dell'utente `(cn=user1, cn=users, dc=x)` e l'ambito su `base` e usare la query seguente.
+Un esempio di query di questo tipo è una query progettata per verificare se un utente "user1" è membro del gruppo "group1". Impostare la base sul DN dell'utente `(cn=user1, cn=users, dc=x)` e l'ambito su `base` e usare la query seguente.
 
 
 ```C++
@@ -119,7 +119,7 @@ Un esempio di query di questo tipo è quello progettato per verificare se un ute
 
 
 
-Analogamente, per trovare tutti i gruppi di cui "User1" è membro, impostare la base sul DN del contenitore gruppi; ad esempio `(OU=groupsOU, dc=x)` e l'ambito di `subtree` e usare il filtro seguente.
+Analogamente, per trovare tutti i gruppi di cui "user1" è membro, impostare la base sul DN del contenitore groups; ad esempio `(OU=groupsOU, dc=x)` e l'ambito su `subtree` e usare il filtro seguente.
 
 
 ```C++
@@ -128,11 +128,11 @@ Analogamente, per trovare tutti i gruppi di cui "User1" è membro, impostare la 
 
 
 
-Si noti che quando si usa la **\_ \_ regola di corrispondenza LDAP \_ nella \_ catena**, l'ambito non è limitato, ovvero può essere `base` , `one-level` o `subtree` . Alcune query su sottoalberi potrebbero richiedere un maggior numero di processori, ad esempio la ricerca di collegamenti con un fan-out elevato; ovvero, elencando tutti i gruppi di cui un utente è membro. Le ricerche inefficienti registreranno i messaggi appropriati del registro eventi, come per qualsiasi altro tipo di query.
+Si noti che quando si **usa LDAP MATCHING RULE IN \_ \_ \_ \_ CHAIN,** l'ambito non è limitato: può essere `base` , o `one-level` `subtree` . Alcune di queste query sui sottoalberi possono richiedere un utilizzo più intensivo del processore, ad esempio la ricerca di collegamenti con un fan-out elevato; ad esempio elencando tutti i gruppi di cui un utente è membro. Ricerche inefficienti registrano messaggi del registro eventi appropriati, come per qualsiasi altro tipo di query.
 
 ## <a name="wildcards"></a>Caratteri jolly
 
-È anche possibile aggiungere caratteri jolly e Condizioni a un filtro di ricerca LDAP. Gli esempi seguenti illustrano le sottostringhe che possono essere usate per eseguire ricerche nella directory.
+È anche possibile aggiungere caratteri jolly e condizioni a un filtro di ricerca LDAP. Negli esempi seguenti vengono mostrate sottostringhe che possono essere usate per eseguire ricerche nella directory.
 
 Ottenere tutte le voci:
 
@@ -143,7 +143,7 @@ Ottenere tutte le voci:
 
 
 
-Ottenere le voci contenenti "Bob" in un punto qualsiasi nel nome comune:
+Ottenere le voci contenenti "bob" in un punto qualsiasi nel nome comune:
 
 
 ```C++
@@ -152,7 +152,7 @@ Ottenere le voci contenenti "Bob" in un punto qualsiasi nel nome comune:
 
 
 
-Ottenere le voci con un nome comune maggiore o uguale a "Bob":
+Ottenere le voci con un nome comune maggiore o uguale a "bob":
 
 
 ```C++
@@ -170,7 +170,7 @@ Ottenere tutti gli utenti con un attributo di posta elettronica:
 
 
 
-Ottenere tutte le voci utente con un attributo di posta elettronica e un cognome uguale a "Smith":
+Ottenere tutte le voci utente con un attributo email e un cognome uguale a "smith":
 
 
 ```C++
@@ -179,7 +179,7 @@ Ottenere tutte le voci utente con un attributo di posta elettronica e un cognome
 
 
 
-Ottenere tutte le voci utente con un nome comune che inizia con "Andy", "Steve" o "Margaret":
+Ottenere tutte le voci utente con un nome comune che inizia con "andy", "steve" o "più":
 
 
 ```C++
@@ -188,7 +188,7 @@ Ottenere tutte le voci utente con un nome comune che inizia con "Andy", "Steve" 
 
 
 
-Ottenere tutte le voci senza un attributo di posta elettronica:
+Ottenere tutte le voci senza un attributo email:
 
 
 ```C++
@@ -197,7 +197,7 @@ Ottenere tutte le voci senza un attributo di posta elettronica:
 
 
 
-La definizione formale del filtro di ricerca è la seguente (da [RFC 2254](https://tools.ietf.org/html/rfc2254)):
+La definizione formale del filtro di ricerca è la seguente [(da RFC 2254):](https://tools.ietf.org/html/rfc2254)
 
 
 ```C++
@@ -222,35 +222,35 @@ La definizione formale del filtro di ricerca è la seguente (da [RFC 2254](https
 
 
 
-Il token &lt; attr &gt; è una stringa che rappresenta un attributeType. Il valore del token &lt; &gt; è una stringa che rappresenta un AttributeValue il cui formato è definito dal servizio directory sottostante.
+&lt;L'attr &gt; del token è una stringa che rappresenta un AttributeType. Il valore &lt; del token è una stringa che rappresenta un AttributeValue il cui formato è definito dal servizio directory &gt; sottostante.
 
-Se un &lt; valore &gt; deve contenere il carattere asterisco ( \* ), parentesi aperta (() o parentesi destra ()), il carattere deve essere preceduto dal carattere di escape della barra rovesciata ( \\ ).
+Se un valore deve contenere il carattere asterisco ( ), parentesi aperta (() ) o parentesi destra (), il carattere deve essere preceduto dal carattere di escape barra &lt; &gt; \* rovesciata ( \\ ).
 
 ## <a name="special-characters"></a>Caratteri speciali
 
-Se uno dei caratteri speciali seguenti deve essere visualizzato nel filtro di ricerca come valori letterali, è necessario sostituirli con la sequenza di escape elencata.
+Se uno dei caratteri speciali seguenti deve essere visualizzato nel filtro di ricerca come valori letterali, deve essere sostituito dalla sequenza di escape elencata.
 
 
 
-| Carattere ASCII | Sostituzione sequenza di escape |
+| Carattere ASCII | Sostituzione della sequenza di escape |
 |-----------------|----------------------------|
 | \*              | \\2a                       |
 | (               | \\28                       |
 | )               | \\29                       |
-| \\              | \\5C                       |
+| \\              | \\5c                       |
 | NUL             | \\00                       |
-| /               | \\2F                       |
+| /               | \\2f                       |
 
 
 
  
 
 > [!Note]  
-> Nei casi in cui viene utilizzato un set di caratteri MultiByte, le sequenze di escape elencate in precedenza devono essere utilizzate se la ricerca viene eseguita da ADO con il sottolinguaggio SQL.
+> Nei casi in cui viene usato un set di caratteri multibyte, è necessario usare le sequenze di escape elencate in precedenza se la ricerca viene eseguita da ADO con il SQL specificato.
 
  
 
-Inoltre, i dati binari arbitrari possono essere rappresentati usando la sintassi della sequenza di escape codificando ogni byte di dati binari con la barra rovesciata ( \\ ) seguita da due cifre esadecimali. Ad esempio, il valore a quattro byte 0x00000004 è codificato come \\ 00 00 \\ 00 \\ \\ 04 in una stringa di filtro.
+Inoltre, i dati binari arbitrari possono essere rappresentati usando la sintassi della sequenza di escape codificando ogni byte di dati binari con la barra rovesciata ( ) seguita da due cifre \\ esadecimali. Ad esempio, il valore a quattro byte 0x00000004 codificato come \\ 00 \\ 00 \\ 00 \\ 04 in una stringa di filtro.
 
 ## <a name="related-topics"></a>Argomenti correlati
 
@@ -259,13 +259,13 @@ Inoltre, i dati binari arbitrari possono essere rappresentati usando la sintassi
 [Dialetto LDAP](ldap-dialect.md)
 </dt> <dt>
 
-[Sottolinguaggio SQL](sql-dialect.md)
+[SQL dialetto](sql-dialect.md)
 </dt> <dt>
 
 [Ricerca con l'interfaccia IDirectorySearch](searching-with-idirectorysearch.md)
 </dt> <dt>
 
-[Ricerca con ActiveX Data Objects](searching-with-activex-data-objects-ado.md)
+[Ricerca con oggetti ActiveX dati](searching-with-activex-data-objects-ado.md)
 </dt> <dt>
 
 [Ricerca con OLE DB](searching-with-ole-db.md)

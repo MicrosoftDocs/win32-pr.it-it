@@ -4,12 +4,12 @@ ms.assetid: 8ee50fd7-507e-484f-9a16-de5449470562
 title: Tabella ODBCSourceAttribute
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: d52dd9636ac19eae0fb3a9e41d1a1c8389753e5d
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 4c6d84ca19dfd059df4ff8f79d9409ef23288800f09e84d45e1b55d81bc8641e
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104525771"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120082711"
 ---
 # <a name="odbcsourceattribute-table"></a>Tabella ODBCSourceAttribute
 
@@ -33,7 +33,7 @@ La tabella ODBCSourceAttribute include le colonne seguenti.
 
 <dl> <dt>
 
-<span id="DataSource_"></span><span id="datasource_"></span><span id="DATASOURCE_"></span>DataSource\_
+<span id="DataSource_"></span><span id="datasource_"></span><span id="DATASOURCE_"></span>Datasource\_
 </dt> <dd>
 
 Nome del token interno per l'origine dati. Chiave primaria per la tabella.
@@ -56,7 +56,7 @@ Valore stringa localizzabile per l'attributo.
 
 ## <a name="remarks"></a>Commenti
 
-Le azioni [InstallODBC](installodbc-action.md) e [RemoveODBC](removeodbc-action.md) nelle [*tabelle di sequenza*](s-gly.md) elaborano le informazioni contenute in questa tabella. Per informazioni sull'utilizzo di *tabelle di sequenza*, vedere [utilizzo di una tabella di sequenza](using-a-sequence-table.md).
+Le [azioni InstallODBC](installodbc-action.md) [e RemoveODBC](removeodbc-action.md) nelle tabelle [*di sequenza*](s-gly.md) elaborano le informazioni in questa tabella. Per informazioni sull'uso *delle tabelle di sequenza,* vedere [Uso di una tabella di sequenza](using-a-sequence-table.md).
 
 ## <a name="validation"></a>Convalida
 

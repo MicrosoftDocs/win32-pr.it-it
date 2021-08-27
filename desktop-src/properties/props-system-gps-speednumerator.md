@@ -1,19 +1,19 @@
 ---
-description: Il numeratore della \_ velocità GPS pkey \_ .
+description: Numeratore della velocità \_ GPS PKEY. \_
 ms.assetid: decae1d2-d3f8-495a-9fb9-70e48a9ca2cc
-title: System. GPS. SpeedNumerator
+title: System.GPS.SpeedNumerator
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: f917c73a762da419dd1acae701ea9d0b16335678
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 1095ef3eac71f1b969a8078c30988a84f94b4fda062734906e96a7e8eb24b632
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "104050188"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120091121"
 ---
-# <a name="systemgpsspeednumerator"></a>System. GPS. SpeedNumerator
+# <a name="systemgpsspeednumerator"></a>System.GPS.SpeedNumerator
 
-Il numeratore della \_ velocità GPS pkey \_ .
+Numeratore della velocità \_ GPS PKEY. \_
 
 ## <a name="windows-10-version-1703-windows-10-version-1607-windows-10-version-1511-windows-10-version-1507-windows-81-windows-8-windows-7-windows-vista"></a>Windows 10, versione 1703, Windows 10, versione 1607, Windows 10, versione 1511, Windows 10, versione 1507, Windows 8.1, Windows 8, Windows 7, Windows Vista
 
@@ -32,7 +32,7 @@ propertyDescription
 
 ## <a name="remarks"></a>Commenti
 
-I valori PKEY sono definiti in Propkey. h.
+I valori PKEY sono definiti in Propkey.h.
 
 ## <a name="related-topics"></a>Argomenti correlati
 
@@ -47,13 +47,13 @@ I valori PKEY sono definiti in Propkey. h.
 [labelInfo](./propdesc-schema-labelinfo.md)
 </dt> <dt>
 
-[typeInfo](./propdesc-schema-typeinfo.md)
+[Typeinfo](./propdesc-schema-typeinfo.md)
 </dt> <dt>
 
 [displayInfo](./propdesc-schema-displayinfo.md)
 </dt> <dt>
 
-[stringFormat](./propdesc-schema-stringformat.md)
+[Stringformat](./propdesc-schema-stringformat.md)
 </dt> <dt>
 
 [booleanFormat](./propdesc-schema-booleanformat.md)
@@ -62,7 +62,7 @@ I valori PKEY sono definiti in Propkey. h.
 [numberFormat](./propdesc-schema-numberformat.md)
 </dt> <dt>
 
-[dateTimeFormat](./propdesc-schema-datetimeformat.md)
+[Datetimeformat](./propdesc-schema-datetimeformat.md)
 </dt> <dt>
 
 [enumeratedList](./propdesc-schema-enumeratedlist.md)
