@@ -14,12 +14,12 @@ api_type:
 api_location:
 - d3dx9.lib
 - d3dx9.dll
-ms.openlocfilehash: a9b89508079b0b400135f4ae39fd6fdfaed61952
-ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
+ms.openlocfilehash: 1b6f3067b25561869f61c70792ed2a242404deca4d65f07d83e331f6f4414d8c
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/28/2021
-ms.locfileid: "108098069"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120096125"
 ---
 # <a name="d3dxplaneintersectline-function-d3dx9mathh"></a>Funzione D3DXPlaneIntersectLine (D3dx9math.h)
 
@@ -48,7 +48,7 @@ D3DXVECTOR3* D3DXPlaneIntersectLine(
 
 Tipo: **[ **D3DXVECTOR3**](d3dxvector3.md)\***
 
-Puntatore a [**una struttura D3DXVECTOR3,**](d3dxvector3.md) che identifica l'intersezione tra il piano e la linea specificati.
+Puntatore a una [**struttura D3DXVECTOR3,**](d3dxvector3.md) che identifica l'intersezione tra il piano e la linea specificati.
 
 </dd> <dt>
 
@@ -66,7 +66,7 @@ Puntatore alla struttura [**D3DXPLANE di**](d3dxplane.md) origine.
 
 Tipo: **const [**D3DXVECTOR3**](d3dxvector3.md) \***
 
-Puntatore a una [**struttura D3DXVECTOR3**](d3dxvector3.md) di origine, che definisce un punto di partenza della linea.
+Puntatore a una [**struttura D3DXVECTOR3 di**](d3dxvector3.md) origine, che definisce un punto iniziale della riga.
 
 </dd> <dt>
 
@@ -75,7 +75,7 @@ Puntatore a una [**struttura D3DXVECTOR3**](d3dxvector3.md) di origine, che defi
 
 Tipo: **const [**D3DXVECTOR3**](d3dxvector3.md) \***
 
-Puntatore a una struttura [**D3DXVECTOR3**](d3dxvector3.md) di origine, che definisce un punto finale della riga.
+Puntatore a una [**struttura D3DXVECTOR3 di**](d3dxvector3.md) origine, che definisce un punto finale di riga.
 
 </dd> </dl>
 
@@ -83,7 +83,7 @@ Puntatore a una struttura [**D3DXVECTOR3**](d3dxvector3.md) di origine, che defi
 
 Tipo: **[ **D3DXVECTOR3**](d3dxvector3.md)\***
 
-Puntatore a [**una struttura D3DXVECTOR3**](d3dxvector3.md) che rappresenta l'intersezione tra il piano e la linea specificati.
+Puntatore a una [**struttura D3DXVECTOR3**](d3dxvector3.md) che rappresenta l'intersezione tra il piano e la linea specificati.
 
 ## <a name="remarks"></a>Commenti
 

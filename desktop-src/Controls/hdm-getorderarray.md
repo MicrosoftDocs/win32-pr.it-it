@@ -1,9 +1,9 @@
 ---
-title: Messaggio HDM_GETORDERARRAY (COMmctrl. h)
-description: Ottiene l'ordine da sinistra a destra corrente degli elementi in un controllo intestazione. È possibile inviare questo messaggio in modo esplicito o usare la \_ macro GetOrderArray dell'intestazione.
+title: HDM_GETORDERARRAY messaggio (Commctrl.h)
+description: Ottiene l'ordine corrente da sinistra a destra degli elementi in un controllo intestazione. È possibile inviare questo messaggio in modo esplicito o usare la \_ macro Header GetOrderArray.
 ms.assetid: b287d3c1-ae61-41a4-a884-dc008eb24ad8
 keywords:
-- Controlli di Windows Message HDM_GETORDERARRAY
+- HDM_GETORDERARRAY controlli di Windows messaggio
 topic_type:
 - apiref
 api_name:
@@ -14,16 +14,16 @@ api_type:
 - HeaderDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: e334b0023ad3441c20048273e9bc58c1b25622b9
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: f374424fe3f1d84c4919c26948486a9bae1660072975556aecaac4b08b85b33b
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "104119831"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120062831"
 ---
-# <a name="hdm_getorderarray-message"></a>\_Messaggio HDM GETORDERARRAY
+# <a name="hdm_getorderarray-message"></a>Messaggio \_ HDM GETORDERARRAY
 
-Ottiene l'ordine da sinistra a destra corrente degli elementi in un controllo intestazione. È possibile inviare questo messaggio in modo esplicito o usare la macro [**\_ GetOrderArray dell'intestazione**](/windows/desktop/api/Commctrl/nf-commctrl-header_getorderarray) .
+Ottiene l'ordine corrente da sinistra a destra degli elementi in un controllo intestazione. È possibile inviare questo messaggio in modo esplicito o usare la macro [**\_ Header GetOrderArray.**](/windows/desktop/api/Commctrl/nf-commctrl-header_getorderarray)
 
 ## <a name="parameters"></a>Parametri
 
@@ -32,24 +32,24 @@ Ottiene l'ordine da sinistra a destra corrente degli elementi in un controllo in
 *wParam* 
 </dt> <dd>
 
-Numero di elementi Integer che *lParam* può mantenere. Questo valore deve essere uguale al numero di elementi nel controllo (vedere [**HDM \_ GETITEMCOUNT**](hdm-getitemcount.md)).
+Numero di elementi integer che *lParam* può contenere. Questo valore deve essere uguale al numero di elementi nel controllo (vedere [**HDM \_ GETITEMCOUNT).**](hdm-getitemcount.md)
 
 </dd> <dt>
 
 *lParam* 
 </dt> <dd>
 
-Puntatore a una matrice di numeri interi che ricevono i valori di indice per gli elementi nell'intestazione.
+Puntatore a una matrice di interi che ricevono i valori di indice per gli elementi nell'intestazione.
 
 </dd> </dl>
 
 ## <a name="return-value"></a>Valore restituito
 
-Restituisce un valore diverso da zero se ha esito positivo e il buffer in *lParam* riceve il numero di elemento per ogni elemento nel controllo intestazione nell'ordine in cui appaiono da sinistra a destra. In caso contrario, il messaggio restituisce zero.
+Restituisce un valore diverso da zero in caso di esito positivo e il buffer in corrispondenza di *lParam* riceve il numero di elemento per ogni elemento nel controllo intestazione nell'ordine in cui vengono visualizzati da sinistra a destra. In caso contrario, il messaggio restituisce zero.
 
 ## <a name="remarks"></a>Commenti
 
-Il numero di elementi in *lParam* è specificato in *wParam* e deve essere uguale al numero di elementi nel controllo. Il frammento di codice seguente, ad esempio, riserva memoria sufficiente per mantenere i valori di indice.
+Il numero di elementi in *lParam* è specificato in *wParam* e deve essere uguale al numero di elementi nel controllo. Ad esempio, il frammento di codice seguente riserva memoria sufficiente per contenere i valori di indice.
 
 
 ```
@@ -76,9 +76,9 @@ MessageBox(hwnd, "Out of memory.","Error", MB_OK);
 
 | Requisito | Valore |
 |-------------------------------------|---------------------------------------------------------------------------------------|
-| Client minimo supportato<br/> | \[Solo app desktop di Windows Vista\]<br/>                                        |
-| Server minimo supportato<br/> | \[Solo app desktop Windows Server 2003\]<br/>                                  |
-| Intestazione<br/>                   | <dl> <dt>Commctrl. h</dt> </dl> |
+| Client minimo supportato<br/> | Windows Solo \[ app desktop Vista\]<br/>                                        |
+| Server minimo supportato<br/> | Windows Solo app desktop di Server 2003 \[\]<br/>                                  |
+| Intestazione<br/>                   | <dl> <dt>Commctrl.h</dt> </dl> |
 
 
 

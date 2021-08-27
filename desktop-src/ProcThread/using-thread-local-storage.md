@@ -1,19 +1,19 @@
 ---
-description: L'archiviazione thread-local (TLS) consente a più thread dello stesso processo di usare un indice allocato dalla funzione TlsAlloc per archiviare e recuperare un valore locale al thread.
+description: L'archiviazione thread-local (TLS) consente a più thread dello stesso processo di usare un indice allocato dalla funzione TlsAlloc per archiviare e recuperare un valore locale per il thread.
 ms.assetid: b7f5a206-a827-4b6b-86f6-5e3aea1246b7
-title: Uso dell'archiviazione locale di thread
+title: Uso di thread locali Archiviazione
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 8e9221d4d0d68891ab8e2d0f2462b7c0aae307c4
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 9bdac1306a4a2da10e6a24ba2e1b2444f6215fdac39be7b41cc6850c1e5a683d
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "106313311"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120127991"
 ---
-# <a name="using-thread-local-storage"></a>Uso dell'archiviazione locale di thread
+# <a name="using-thread-local-storage"></a>Uso di thread locali Archiviazione
 
-L' [archiviazione thread-local](thread-local-storage.md) (TLS) consente a più thread dello stesso processo di usare un indice allocato dalla funzione [**TlsAlloc**](/windows/win32/api/processthreadsapi/nf-processthreadsapi-tlsalloc) per archiviare e recuperare un valore locale al thread. In questo esempio, all'avvio del processo viene allocato un indice. All'avvio di ogni thread, viene allocato un blocco di memoria dinamica e viene archiviato un puntatore a questa memoria nello slot TLS utilizzando la funzione [**TlsSetValue**](/windows/win32/api/processthreadsapi/nf-processthreadsapi-tlssetvalue) . La funzione CommonFunc usa la funzione [**TlsGetValue**](/windows/win32/api/processthreadsapi/nf-processthreadsapi-tlsgetvalue) per accedere ai dati associati all'indice locale del thread chiamante. Prima che ogni thread venga terminato, rilascia la memoria dinamica. Prima che il processo termini, viene chiamato [**TlsFree**](/windows/win32/api/processthreadsapi/nf-processthreadsapi-tlsfree) per rilasciare l'indice.
+[L'archiviazione](thread-local-storage.md) thread-local (TLS) consente a più thread dello stesso processo di usare un indice allocato dalla funzione [**TlsAlloc**](/windows/win32/api/processthreadsapi/nf-processthreadsapi-tlsalloc) per archiviare e recuperare un valore locale per il thread. In questo esempio viene allocato un indice all'avvio del processo. All'avvio di ogni thread, alloca un blocco di memoria dinamica e archivia un puntatore a questa memoria nello slot TLS usando la [**funzione TlsSetValue.**](/windows/win32/api/processthreadsapi/nf-processthreadsapi-tlssetvalue) La funzione CommonFunc usa la [**funzione TlsGetValue**](/windows/win32/api/processthreadsapi/nf-processthreadsapi-tlsgetvalue) per accedere ai dati associati all'indice locale del thread chiamante. Prima che ogni thread termini, rilascia la memoria dinamica. Prima che il processo termini, chiama [**TlsFree**](/windows/win32/api/processthreadsapi/nf-processthreadsapi-tlsfree) per rilasciare l'indice.
 
 
 ```C++
@@ -114,7 +114,7 @@ VOID ErrorExit (LPCSTR message)
 
 <dl> <dt>
 
-[Uso dell'archiviazione locale di thread in una libreria di Dynamic-Link](../dlls/using-thread-local-storage-in-a-dynamic-link-library.md)
+[Uso di thread locali Archiviazione in una libreria Dynamic-Link locale](../dlls/using-thread-local-storage-in-a-dynamic-link-library.md)
 </dt> </dl>
 
  

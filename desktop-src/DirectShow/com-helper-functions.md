@@ -1,7 +1,7 @@
 ---
 description: Queste funzioni forniscono il supporto per l'implementazione dell'interfaccia IUnknown in DirectShow.
 ms.assetid: 991e4c69-7d30-4ecf-9ccf-4920452c21d6
-title: Funzioni helper COM (ComBase. h)
+title: Funzioni helper COM (Combase.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -16,24 +16,24 @@ api_location:
 - Strmbase.dll
 - Strmbasd.lib
 - Strmbasd.dll
-ms.openlocfilehash: 9522469ee1aa4f4efa63b4cff6ad73204973a622
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: fa8558cd0d04258adf89cbacdd99952cf00c6d0aa5f24ee38cca2dceb4e5478f
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "106333434"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120084341"
 ---
 # <a name="com-helper-functions"></a>Funzioni helper COM
 
-Queste funzioni forniscono il supporto per l'implementazione dell'interfaccia **IUnknown** in DirectShow.
+Queste funzioni forniscono il supporto per l'implementazione **dell'interfaccia IUnknown** in DirectShow.
 
 
 
 | Funzione                                               | Descrizione                                                           |
 |--------------------------------------------------------|-----------------------------------------------------------------------|
-| [**DICHIARARE \_ IUnknown**](declare-iunknown.md)          | Dichiara i tre metodi dell'interfaccia di base per una nuova interfaccia. |
-| [**GetInterface**](getinterface.md)                   | Recupera un puntatore di interfaccia al client richiesto.               |
-| [**INonDelegatingUnknown**](inondelegatingunknown.md) | Versione non delegata dell'interfaccia **IUnknown** .                  |
+| [**DECLARE \_ IUNKNOWN**](declare-iunknown.md)          | Dichiara i tre metodi dell'interfaccia di base per una nuova interfaccia. |
+| [**GetInterface**](getinterface.md)                   | Recupera un puntatore a interfaccia al client richiesto.               |
+| [**INonDelegatingUnknown**](inondelegatingunknown.md) | Versione non recapitante **dell'interfaccia IUnknown.**                  |
 | [**LoadOLEAut32**](loadoleaut32.md)                   | Carica la DLL di automazione (OleAut32.dll).                              |
 
 
@@ -46,8 +46,8 @@ Queste funzioni forniscono il supporto per l'implementazione dell'interfaccia **
 
 | Requisito | Valore |
 |--------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Intestazione<br/>  | <dl> <dt>ComBase. h (Includi Streams. h)</dt> </dl>                                                                                   |
-| Libreria<br/> | <dl> <dt>Strmbase. lib (compilazioni finali); </dt> <dt>Strmbasd. lib (build di debug)</dt> </dl> |
+| Intestazione<br/>  | <dl> <dt>Combase.h (includere Flussi.h)</dt> </dl>                                                                                   |
+| Libreria<br/> | <dl> <dt>Strmbase.lib (build di vendita al dettaglio); </dt> <dt>Strmbasd.lib (build di debug)</dt> </dl> |
 
 
 

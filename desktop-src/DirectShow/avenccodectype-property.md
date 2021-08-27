@@ -1,17 +1,17 @@
 ---
 description: Specifica lo schema di codifica.
 ms.assetid: a26951d6-67fb-43fb-849f-331416e9d7c2
-title: Proprietà AVEncCodecType (codecapis. h)
+title: Proprietà AVEncCodecType (Codecapi.h)
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 8643c0624b7d82381e2008f2adbd6804e9af9881
-ms.sourcegitcommit: a47bd86f517de76374e4fff33cfeb613eb259a7e
+ms.openlocfilehash: 3727ff8cc2a59208d63874de173e3e44e89e3e6f2ebc37201218f9656aa09cd4
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/06/2021
-ms.locfileid: "104341996"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120084611"
 ---
-# <a name="avenccodectype-property"></a>Proprietà AVEncCodecType
+# <a name="avenccodectype-property"></a>AVEncCodecType - proprietà
 
 Specifica lo schema di codifica.
 
@@ -23,35 +23,35 @@ Si tratta di una proprietà di lettura/scrittura.
 
 ## <a name="property-guid"></a>GUID proprietà
 
-**Codecapis \_ AVEncCodecType**
+**CODECAPI \_ AVEncCodecType**
 
 ## <a name="property-value"></a>Valore proprietà
 
-Il valore di questa proprietà è un **BSTR** che contiene la rappresentazione di stringa di un GUID. Sono definiti i seguenti GUID.
+Il valore di questa proprietà è un **BSTR che** contiene la rappresentazione di stringa di un GUID. Vengono definiti i GUID seguenti.
 
 
 
 | GUID                                      | Descrizione                                        |
 |-------------------------------------------|----------------------------------------------------|
-| \_GUID AVEncDolbyDigitalConsumer di CODEcapi \_ | Audio Dolby Digital Consumer                       |
-| \_GUID AVEncDolbyDigitalPlus di CODEcapi \_     | Audio Dolby Digital Plus                           |
-| \_GUID AVEncDolbyDigitalPro di CODEcapi \_      | Audio Dolby Digital Pro                            |
-| \_GUID AVEncDTS di CODEcapi \_                  | Audio DTS                                          |
-| \_GUID AVEncDTSHD di CODEcapi \_                | DTS-audio HD                                       |
-| \_GUID AVEncDV di CODEcapi \_                   | Video DV                                           |
-| \_GUID AVEncH264Video di CODEcapi \_            | Video H. 264                                        |
-| \_GUID AVEncMLP di CODEcapi \_                  | Audio di compressione meridiano (MLP)              |
-| \_GUID AVEncMPEG1Audio di CODEcapi \_           | Audio MPEG-1                                       |
-| \_GUID AVEncMPEG1Video di CODEcapi \_           | Video MPEG-1                                       |
-| \_GUID AVEncMPEG2Audio di CODEcapi \_           | Audio MPEG-2                                       |
-| \_GUID AVEncMPEG2Video di CODEcapi \_           | Video MPEG-2                                       |
-| \_GUID AVEncPCM di CODEcapi \_                  | Audio PCM                                          |
-| \_GUID AVEncSDDS di CODEcapi \_                 | Audio di Sony Dynamic Digital Sound (SDD)            |
-| \_GUID AVEncWMALossless di CODEcapi \_          | Audio senza perdita di Windows Media Audio 9               |
-| \_GUID AVEncWMAPro di CODEcapi \_               | Audio Windows Media Audio 9 Professional (WMA Pro) |
-| \_GUID AVEncWMAVoice di CODEcapi \_             | Audio Windows Media Audio 9                  |
-| \_GUID AVEncWMV di CODEcapi \_                  | Windows Media Video                                |
-| \_GUID AVEndMPEG4Video di CODEcapi \_           | Video MPEG-4                                       |
+| CODECAPI \_ GUID \_ AVEncDolbyDigitalConsumer | Dolby Digital Consumer audio                       |
+| CODECAPI \_ GUID \_ AVEncDolbyDigitalPlus     | Audio Dolby Digital Plus                           |
+| CODECAPI \_ GUID \_ AVEncDolbyDigitalPro      | Dolby Digital Pro audio                            |
+| CODECAPI \_ GUID \_ AVEncDTS                  | Audio DTS                                          |
+| CODECAPI \_ GUID \_ AVEncDTSHD                | Audio DTS-HD                                       |
+| CODECAPI \_ GUID \_ AVEncDV                   | Video DV                                           |
+| CODECAPI \_ GUID \_ AVEncH264Video            | Video H.264                                        |
+| CODECAPI \_ GUID \_ AVEncMLP                  | Audio meridian Lossless Packing (MLP)              |
+| CODECAPI \_ GUID \_ AVEncMPEG1Audio           | Audio MPEG-1                                       |
+| CODECAPI \_ GUID \_ AVEncMPEG1Video           | Video MPEG-1                                       |
+| CODECAPI \_ GUID \_ AVEncMPEG2Audio           | Audio MPEG-2                                       |
+| CODECAPI \_ GUID \_ AVEncMPEG2Video           | Video MPEG-2                                       |
+| CODECAPI \_ GUID \_ AVEncPCM                  | Audio PCM                                          |
+| CODECAPI \_ GUID \_ AVEncSDDS                 | Audio SDDS (Dynamic Digital Sound) di Digital Sound (SDDS)            |
+| CODECAPI \_ GUID \_ AVEncWMALossless          | Windows Audio senza perdita di dati audio 9 multimediale               |
+| CODECAPI \_ GUID \_ AVEncWMAPro               | Windows Audio audio Professional (WMA Pro) |
+| CODECAPI \_ GUID \_ AVEncWMAVoice             | Windows Audio audio 9 voce multimediale                  |
+| CODECAPI \_ GUID \_ AVEncWMV                  | Windows Video multimediale                                |
+| CODECAPI \_ GUID \_ AVEndMPEG4Video           | Video MPEG-4                                       |
 
 
 
@@ -59,7 +59,7 @@ Il valore di questa proprietà è un **BSTR** che contiene la rappresentazione d
 
 ## <a name="remarks"></a>Commenti
 
-Le applicazioni possono impostare questa proprietà per specificare lo schema di codifica da usare. I codec possono inoltre restituire questa proprietà come funzionalità.
+Le applicazioni possono impostare questa proprietà per specificare lo schema di codifica da usare. I codec possono anche restituire questa proprietà come funzionalità.
 
 ## <a name="requirements"></a>Requisiti
 
@@ -67,9 +67,9 @@ Le applicazioni possono impostare questa proprietà per specificare lo schema di
 
 | Requisito | Valore |
 |-------------------------------------|---------------------------------------------------------------------------------------|
-| Client minimo supportato<br/> | App UWP di Windows 2000 Professional \[ desktop apps \|\]<br/>                     |
-| Server minimo supportato<br/> | App desktop di Windows 2000 Server \[ \| UWP\]<br/>                           |
-| Intestazione<br/>                   | <dl> <dt>Codecapis. h</dt> </dl> |
+| Client minimo supportato<br/> | Windows 2000 Professional \[ app desktop \| UWP\]<br/>                     |
+| Server minimo supportato<br/> | app \[ desktop UWP di Windows 2000 Server \|\]<br/>                           |
+| Intestazione<br/>                   | <dl> <dt>Codecapi.h</dt> </dl> |
 
 
 
@@ -77,7 +77,7 @@ Le applicazioni possono impostare questa proprietà per specificare lo schema di
 
 <dl> <dt>
 
-[Proprietà dell'API codec](codec-api-properties.md)
+[Proprietà dell'API Codec](codec-api-properties.md)
 </dt> <dt>
 
 [**Interfaccia ICodecAPI**](/windows/desktop/api/Strmif/nn-strmif-icodecapi)

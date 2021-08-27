@@ -12,18 +12,18 @@ api_name:
 api_type:
 - COM
 api_location: ''
-ms.openlocfilehash: 1b2d21a032a2e4c08c6f80e4f0ae79349a49ce21
-ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
+ms.openlocfilehash: ffbae03d22cee89b5974b32b224c779210e82feb23292628a5a705bc203dbc5e
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/28/2021
-ms.locfileid: "108088929"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120129831"
 ---
 # <a name="locationdisplatlongreportfactoryrequestpermissions-method"></a>Metodo LocationDisp.LatLongReportFactory.RequestPermissions
 
-\[Il modello a oggetti dell'API Location è disponibile per l'uso nei sistemi operativi specificati nella sezione Requisiti. È possibile che in versioni successive sia stata modificata o non sia più disponibile. Per accedere invece alla posizione da un sito Web, usare [l'API di georilevazione W3C](/previous-versions/windows/internet-explorer/ie-developer/samples/gg589513(v=vs.85)). Per accedere alla posizione da un'applicazione desktop, usare l'API [**Windows.Devices.Geolocation.**](/uwp/api/Windows.Devices.Geolocation)\]
+\[Il modello a oggetti dell'API Location è disponibile per l'uso nei sistemi operativi specificati nella sezione Requisiti. È possibile che in versioni successive sia stata modificata o non sia più disponibile. Per accedere invece alla posizione da un sito Web, usare [l'API di georilevazione W3C](/previous-versions/windows/internet-explorer/ie-developer/samples/gg589513(v=vs.85)). Per accedere alla posizione da un'applicazione desktop, usare il [**Windows. API Devices.Geolocation.**](/uwp/api/Windows.Devices.Geolocation)\]
 
-Apre una finestra di dialogo di sistema per richiedere l'autorizzazione utente per i dispositivi abilitati alla posizione.
+Apre una finestra di dialogo di sistema per richiedere l'autorizzazione utente per i dispositivi abilitati per la posizione.
 
 ## <a name="syntax"></a>Sintassi
 
@@ -56,13 +56,13 @@ Questo metodo non restituisce valori.
 La chiamata è sincrona e il chiamante attende la chiusura della finestra di dialogo.
 
 > [!Note]  
-> Se un'applicazione in esecuzione in modalità protetta, ad esempio un oggetto browser helper per Internet Explorer, chiama **RequestPermissions** e **l'utente sceglie l'opzione** Non abilitare questo sensore di posizione nella finestra di dialogo, il provider di posizione non verrà abilitato, ma Windows visualizza di nuovo la finestra di dialogo se **RequestPermissions** viene chiamato di nuovo dallo stesso utente. Le applicazioni eseguite in modalità protetta possono scegliere di non chiamare **RequestPermissions** all'avvio, in modo che l'utente non veda una finestra di dialogo potenzialmente indesiderata a ogni avvio dell'applicazione.
+> Se un'applicazione in esecuzione in modalità protetta, ad esempio un oggetto browser helper (BHO) per Internet Explorer, chiama **RequestPermissions** e **l'utente sceglie l'opzione** Non abilitare questo sensore di posizione nella finestra di dialogo, il provider di posizione non verrà abilitato, ma Windows visualizza nuovamente la finestra di dialogo se **RequestPermissions** viene chiamato di nuovo dallo stesso utente. Le applicazioni in esecuzione in modalità protetta possono scegliere di non chiamare **RequestPermissions** all'avvio in modo che l'utente non veda una finestra di dialogo potenzialmente indesiderata ogni volta che l'applicazione viene avviata.
 
  
 
 ## <a name="examples"></a>Esempio
 
-Per un esempio di come usare questo metodo, vedere [Listening for LatLong Report Events](/uwp/api/Windows.Devices.Geolocation).
+Per un esempio di come usare questo metodo, vedere Ascolto di eventi del [report LatLong](/uwp/api/Windows.Devices.Geolocation).
 
 ## <a name="requirements"></a>Requisiti
 
@@ -70,7 +70,7 @@ Per un esempio di come usare questo metodo, vedere [Listening for LatLong Report
 
 | Requisito | Valore |
 |-------------------------------------|--------------------------------------------|
-| Client minimo supportato<br/> | Solo app desktop di Windows 7 \[\]<br/> |
+| Client minimo supportato<br/> | Windows 7 \[ app desktop\]<br/> |
 | Server minimo supportato<br/> | Nessuno supportato<br/>                  |
 
 

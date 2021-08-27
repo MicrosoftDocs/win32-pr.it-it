@@ -1,26 +1,26 @@
 ---
-description: impostazioni locali \_ ITIME
+description: IMPOSTAZIONI \_ LOCALI ITIME
 ms.assetid: 52f760c3-00df-44f1-857b-419d0dfdec19
 title: LOCALE_ITIME
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 2ebcc94713bafddd45249f5598f86d6660496028
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 8b9f309dc35e2191c90c49aa551c0dc2808788f73c47b8acc26120d2fff5d0c4
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104131203"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120106452"
 ---
-# <a name="locale_itime"></a>impostazioni locali \_ ITIME
+# <a name="locale_itime"></a>IMPOSTAZIONI \_ LOCALI ITIME
 
-Specifica del formato dell'ora. La specifica è uno dei valori seguenti. È preferibile che l'applicazione usi la costante [ \_ STIMEFORMAT delle impostazioni locali](locale-stime-constants.md) anziché ITIME delle impostazioni locali \_ .
+Specifica del formato dell'ora. La specifica è uno dei valori seguenti. È preferibile che l'applicazione usi la [costante LOCALE \_ STIMEFORMAT](locale-stime-constants.md) anziché LOCALE \_ ITIME.
 
 
 
 | Valore | Descrizione          |
 |-------|----------------------|
-| 0     | Formato a 12 ore AM/PM |
-| 1     | formato a 24 ore       |
+| 0     | Formato am/PM 12 ore |
+| 1     | Formato a 24 ore       |
 
 
 

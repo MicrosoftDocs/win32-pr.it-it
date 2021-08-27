@@ -1,35 +1,35 @@
 ---
 title: Costanti RPC
-description: Pagina di navigazione per le costanti RPC (Remote Procedure Call).
+description: Pagina di spostamento per le costanti RPC (Remote Procedure Call).
 ms.assetid: bd851224-3c68-4699-ad52-452caa80f309
 keywords:
-- RPC, riferimento, costanti (Remote Procedure Call)
+- Chiamata di procedura remota RPC, riferimento, costanti
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: bc0d92d9939ce31565796741b584cfa37e4a2690
-ms.sourcegitcommit: 2d531328b6ed82d4ad971a45a5131b430c5866f7
+ms.openlocfilehash: 8782fa94352e578e0b6e7d32645c0dda0dd997bf51c46869ecbc5e9642957f31
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "104045185"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120127791"
 ---
 # <a name="rpc-constants"></a>Costanti RPC
 
-In questa sezione vengono descritte le costanti seguenti utilizzate da Microsoft RPC:
+In questa sezione vengono descritte le costanti seguenti usate da Microsoft RPC:
 
 -   [Costanti a livello di autenticazione](authentication-level-constants.md)
--   [Costanti servizio di autenticazione](authentication-service-constants.md)
--   [Autorizzazioni-costanti servizio](authorization-service-constants.md)
--   [Costanti di timeout di binding](binding-time-out-constants.md)
+-   [Costanti del servizio di autenticazione](authentication-service-constants.md)
+-   [Costanti del servizio di autorizzazione](authorization-service-constants.md)
+-   [Costanti di timeout dell'associazione](binding-time-out-constants.md)
 -   [Costanti delle opzioni di associazione](binding-option-constants.md)
--   [\_stringa di \_ errore DCE C \_ \_ Len](dce-c-error-string-len.md)
+-   [LEN \_ DELLA STRINGA DI \_ \_ ERRORE DCE C \_](dce-c-error-string-len.md)
 -   [Flag di registrazione dell'interfaccia](interface-registration-flags.md)
 -   [Costanti del livello di protezione](protection-level-constants.md)
 -   [Costanti della sequenza di protocollo](protocol-sequence-constants.md)
 
- 
+ 
 
- 
+ 
 
 
 

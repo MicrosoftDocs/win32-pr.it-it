@@ -1,6 +1,6 @@
 ---
 title: Extensible Authentication Protocol
-description: Extensible Authentication Protocol (EAP) è uno standard supportato da diversi componenti di sistema. EAP è essenziale per la protezione della sicurezza di reti wireless (802.1 X) e LAN cablate, di connessione remota e di reti private virtuali (VPN).
+description: Il protocollo EAP (Extensible Authentication Protocol) è uno standard supportato da diversi componenti di sistema. EAP è fondamentale per la protezione della sicurezza delle reti wireless (802.1X) e cablate LAN, connessioni remote e reti private virtuali (VPN).
 ms.assetid: bdbac41e-064c-445f-8f86-a6e2eff2a683
 keywords:
 - Extensible Authentication Protocol
@@ -9,32 +9,32 @@ keywords:
 - EAP, vedere Extensible Authentication Protocol
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: c79b9585363d74eb50190d0fd6355830a7087aa4
-ms.sourcegitcommit: ebd3ce6908ff865f1ef66f2fc96769be0aad82e1
+ms.openlocfilehash: 5cd54a380323fdf5a04add7f28fe18378be8ed375e936c70d2045f2e139ff852
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/19/2020
-ms.locfileid: "103724938"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120094431"
 ---
 # <a name="extensible-authentication-protocol"></a>Extensible Authentication Protocol
 
 ## <a name="purpose"></a>Scopo
 
-Extensible Authentication Protocol (EAP) è uno standard supportato da diversi componenti di sistema. EAP è essenziale per la protezione della sicurezza di reti wireless (802.1 X) e LAN cablate, di connessione remota e di reti private virtuali (VPN).
+Il protocollo EAP (Extensible Authentication Protocol) è uno standard supportato da diversi componenti di sistema. EAP è fondamentale per la protezione della sicurezza delle reti wireless (802.1X) e cablate LAN, connessioni remote e reti private virtuali (VPN).
 
 ## <a name="where-applicable"></a>Se applicabile
 
 EAP migliora i protocolli di autenticazione precedenti, ad esempio Password Authentication Protocol (PAP) e Challenge Handshake Authentication Protocol (CHAP).
 
-Per lo sviluppo di nuovi metodi EAP, vedere [Extensible Authentication Protocol Host](../eaphost/portal.md).
+Per lo sviluppo di nuovi metodi EAP, vedere [Extensible Authentication Protocol Host.](../eaphost/portal.md)
 
 ## <a name="developer-audience"></a>Sviluppatori
 
-L'API EAP è progettata per l'uso da parte dei programmatori C/C++. I programmatori devono acquisire familiarità con i concetti di rete.
+L'API EAP è progettata per l'uso da parte dei programmatori C/C++. I programmatori devono avere familiarità con i concetti relativi alla rete.
 
 ## <a name="run-time-requirements"></a>Requisiti di runtime
 
-EAP è supportato nei computer client e server in esecuzione in Windows 2000 e versioni successive. EAP è supportato anche nei computer che eseguono Windows 2000 Server e versioni successive se eseguono il servizio di autenticazione Internet (IAS). Per ulteriori informazioni sui sistemi operativi supportati, vedere la sezione requisiti nella documentazione di.
+EAP è supportato nei computer client e server in Windows 2000 e versioni successive. EAP è supportato anche nei computer che eseguono Windows 2000 Server e versioni successive se eseguono il servizio di autenticazione Internet (IAS). Per altre informazioni sui sistemi operativi supportati, vedere la sezione Requisiti nella documentazione.
 
 ## <a name="related-topics"></a>Argomenti correlati
 
@@ -61,9 +61,9 @@ EAP è supportato nei computer client e server in esecuzione in Windows 2000 e v
 
 </dt> <dt>
 
-[Informazioni di riferimento sul protocollo Extensible Authentication](extensible-authentication-protocol-reference.md)
+[Informazioni di riferimento su Extensible Authentication Protocol](extensible-authentication-protocol-reference.md)
 </dt> </dl>
 
- 
+ 
 
- 
+ 

@@ -1,23 +1,23 @@
 ---
-title: MOVC (SM4-ASM)
-description: Spostamento condizionale a livello di componente. | MOVC (SM4-ASM)
+title: movc (sm4 - asm)
+description: Spostamento condizionale per componente. | movc (sm4 - asm)
 ms.assetid: B7F19DF5-282F-41D4-AE2D-6ACF61A42088
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 91aa3116b7bc13102386c57c9b8c63d3534147a8
-ms.sourcegitcommit: 92e74c99f8f4d097676959d0c317f533c2400a80
+ms.openlocfilehash: 81da36b39f60929bdfbac3b4a37c379189cf358ed4844e1a4cc899f867970065
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/09/2021
-ms.locfileid: "104995477"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120095361"
 ---
-# <a name="movc-sm4---asm"></a>MOVC (SM4-ASM)
+# <a name="movc-sm4---asm"></a>movc (sm4 - asm)
 
-Spostamento condizionale a livello di componente.
+Spostamento condizionale per componente.
 
 
 
-| MOVC \[ \_ Sat \] dest \[ . mask \] , src0 \[ . Swizzle \] , \[ - \] src1 \[ \_ ABS \] \[ . Swizzle \] , \[ - \] src2 \[ \_ ABS \] \[ . Swizzle \] , |
+| movc \[ \_ sat \] dest \[ \] .mask, src0 \[ .swizzle, \] \[ - \] src1 \[ \_ abs \] \[ .swizzle, \] \[ - \] src2 \[ \_ abs \] \[ .swizzle \] , |
 |----------------------------------------------------------------------------------------------------------------|
 
 
@@ -28,10 +28,10 @@ Spostamento condizionale a livello di componente.
 
 | Elemento                                                            | Descrizione                                                                                                                    |
 |-----------------------------------------------------------------|--------------------------------------------------------------------------------------------------------------------------------|
-| <span id="dest"></span><span id="DEST"></span>*dest*<br/> | \[nell' \] indirizzo del risultato dell'operazione. <br/> Se *src0*, quindi *dest*  =  *src1* else *dest*  =  *src2*<br/> |
-| <span id="src0"></span><span id="SRC0"></span>*src0*<br/> | \[nei \] componenti su cui eseguire il test della condizione.<br/>                                                               |
-| <span id="src1"></span><span id="SRC1"></span>*src1*<br/> | \[nei \] componenti da spostare. <br/>                                                                                     |
-| <span id="src2"></span><span id="SRC2"></span>*src2*<br/> | \[nei \] componenti da spostare.<br/>                                                                                      |
+| <span id="dest"></span><span id="DEST"></span>*Dest*<br/> | \[in \] Indirizzo del risultato dell'operazione. <br/> Se *src0*, *dest*  =  *src1* else *dest*  =  *src2*<br/> |
+| <span id="src0"></span><span id="SRC0"></span>*src0*<br/> | \[in \] Componenti in cui testare la condizione.<br/>                                                               |
+| <span id="src1"></span><span id="SRC1"></span>*src1*<br/> | \[in \] Componenti da spostare. <br/>                                                                                     |
+| <span id="src2"></span><span id="SRC2"></span>*src2*<br/> | \[in \] Componenti da spostare.<br/>                                                                                      |
 
 
 
@@ -39,7 +39,7 @@ Spostamento condizionale a livello di componente.
 
 ## <a name="remarks"></a>Commenti
 
-Nell'esempio seguente viene illustrato come utilizzare questa istruzione.
+L'esempio seguente illustra come usare questa istruzione.
 
 ``` syntax
                 for each component in dest[.mask]
@@ -55,7 +55,7 @@ Nell'esempio seguente viene illustrato come utilizzare questa istruzione.
                 endfor
 ```
 
-I modificatori in *src1* e *src2*, diversi da Swizzle, presuppongono che i dati siano a virgola mobile. L'assenza di modificatori sposta solo i dati senza alterare i bit.
+I modificatori in *src1* e *src2*, diversi da swizzle, presuppongono che i dati siano a virgola mobile. L'assenza di modificatori sposta semplicemente i dati senza modificare i bit.
 
 Questa istruzione si applica alle fasi dello shader seguenti:
 
@@ -69,7 +69,7 @@ Questa istruzione si applica alle fasi dello shader seguenti:
 
  
 
-## <a name="minimum-shader-model"></a>Modello Shader minimo
+## <a name="minimum-shader-model"></a>Modello shader minimo
 
 Questa funzione è supportata nei modelli shader seguenti.
 
@@ -77,12 +77,12 @@ Questa funzione è supportata nei modelli shader seguenti.
 
 | Modello di shader                                              | Supportato |
 |-----------------------------------------------------------|-----------|
-| [Modello Shader 5](d3d11-graphics-reference-sm5.md)        | sì       |
-| [Modello Shader 4,1](dx-graphics-hlsl-sm4.md)              | sì       |
-| [Modello Shader 4](dx-graphics-hlsl-sm4.md)                | sì       |
+| [Modello shader 5](d3d11-graphics-reference-sm5.md)        | sì       |
+| [Modello shader 4.1](dx-graphics-hlsl-sm4.md)              | sì       |
+| [Modello shader 4](dx-graphics-hlsl-sm4.md)                | sì       |
 | [Shader Model 3 (DirectX HLSL)](dx-graphics-hlsl-sm3.md) | no        |
-| [Shader Model 2 (DirectX HLSL)](dx-graphics-hlsl-sm2.md) | no        |
-| [Shader Model 1 (DirectX HLSL)](dx-graphics-hlsl-sm1.md) | no        |
+| [Modello shader 2 (DirectX HLSL)](dx-graphics-hlsl-sm2.md) | no        |
+| [Modello shader 1 (DirectX HLSL)](dx-graphics-hlsl-sm1.md) | no        |
 
 
 
@@ -92,7 +92,7 @@ Questa funzione è supportata nei modelli shader seguenti.
 
 <dl> <dt>
 
-[Assembly Shader Model 4 (DirectX HLSL)](dx-graphics-hlsl-sm4-asm.md)
+[Shader Model 4 Assembly (DirectX HLSL)](dx-graphics-hlsl-sm4-asm.md)
 </dt> </dl>
 
  

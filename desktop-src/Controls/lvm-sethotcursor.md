@@ -1,9 +1,9 @@
 ---
-title: Messaggio LVM_SETHOTCURSOR (COMmctrl. h)
-description: Imposta il valore HCURSOR usato dal controllo di visualizzazione elenco quando il puntatore è posizionato su un elemento mentre è abilitata la funzionalità di rilevamento a caldo.
+title: LVM_SETHOTCURSOR messaggio (Commctrl.h)
+description: Imposta il valore HCURSOR utilizzato dal controllo visualizzazione elenco quando il puntatore si trova su un elemento mentre è abilitato il rilevamento a caldo.
 ms.assetid: e3ff8608-9389-4167-839b-ecc2be01bb64
 keywords:
-- Controlli di Windows Message LVM_SETHOTCURSOR
+- LVM_SETHOTCURSOR di controllo Windows messaggio
 topic_type:
 - apiref
 api_name:
@@ -14,16 +14,16 @@ api_type:
 - HeaderDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 0e743f74eda3b59f04f6f4793b47d76da3bab881
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: 3407c5d8b53483d3a639fc40959768b3fa8eea0e7b439ab8871d36346b7079d0
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "103739946"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120077251"
 ---
-# <a name="lvm_sethotcursor-message"></a>\_Messaggio SETHOTCURSOR LVM
+# <a name="lvm_sethotcursor-message"></a>Messaggio LVM \_ SETHOTCURSOR
 
-Imposta il valore HCURSOR usato dal controllo di visualizzazione elenco quando il puntatore è posizionato su un elemento mentre è abilitata la funzionalità di rilevamento a caldo. È possibile inviare questo messaggio in modo esplicito o usare la macro [**\_ SetHotCursor di ListView**](/windows/desktop/api/Commctrl/nf-commctrl-listview_sethotcursor) . Per verificare se è abilitata la funzionalità di rilevamento attivo, chiamare [**SystemParametersInfo**](/windows/desktop/api/winuser/nf-winuser-systemparametersinfoa).
+Imposta il valore HCURSOR utilizzato dal controllo visualizzazione elenco quando il puntatore si trova su un elemento mentre è abilitato il rilevamento a caldo. È possibile inviare questo messaggio in modo esplicito o usare la macro [**\_ ListView SetHotCursor.**](/windows/desktop/api/Commctrl/nf-commctrl-listview_sethotcursor) Per verificare se il rilevamento a caldo è abilitato, chiamare [**SystemParametersInfo**](/windows/desktop/api/winuser/nf-winuser-systemparametersinfoa).
 
 ## <a name="parameters"></a>Parametri
 
@@ -41,11 +41,11 @@ Handle per il cursore da impostare.
 
 ## <a name="return-value"></a>Valore restituito
 
-Restituisce un valore HCURSOR che rappresenta il cursore attivo precedente.
+Restituisce un valore HCURSOR che rappresenta il cursore a caldo precedente.
 
 ## <a name="remarks"></a>Commenti
 
-Un controllo di visualizzazione elenco Usa il rilevamento a caldo e la selezione del passaggio del mouse quando lo stile [**LVS \_ ex \_ TRACKSELECT**](extended-list-view-styles.md) è impostato.
+Un controllo visualizzazione elenco usa il rilevamento a caldo e la selezione al passaggio del mouse quando è impostato lo stile [**LVS \_ EX \_ TRACKSELECT.**](extended-list-view-styles.md)
 
 ## <a name="requirements"></a>Requisiti
 
@@ -53,9 +53,9 @@ Un controllo di visualizzazione elenco Usa il rilevamento a caldo e la selezione
 
 | Requisito | Valore |
 |-------------------------------------|---------------------------------------------------------------------------------------|
-| Client minimo supportato<br/> | \[Solo app desktop di Windows Vista\]<br/>                                        |
-| Server minimo supportato<br/> | \[Solo app desktop Windows Server 2003\]<br/>                                  |
-| Intestazione<br/>                   | <dl> <dt>Commctrl. h</dt> </dl> |
+| Client minimo supportato<br/> | Windows Solo \[ app desktop di Vista\]<br/>                                        |
+| Server minimo supportato<br/> | Windows Solo app desktop server 2003 \[\]<br/>                                  |
+| Intestazione<br/>                   | <dl> <dt>Commctrl.h</dt> </dl> |
 
 
 

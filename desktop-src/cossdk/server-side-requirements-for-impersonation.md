@@ -1,35 +1,35 @@
 ---
-description: Server-Side requisiti per la rappresentazione
+description: Server-Side per la rappresentazione
 ms.assetid: f6128688-dfd8-40ff-83ec-99d740b9152c
-title: Server-Side requisiti per la rappresentazione
+title: Server-Side per la rappresentazione
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: e30edbebd37035ab7a7f4ca09e1cff73c2afbabe
-ms.sourcegitcommit: c7add10d695482e1ceb72d62b8a4ebd84ea050f7
+ms.openlocfilehash: 18e43016428f2ff083fc5a783d05c3c79e241dcf299f3af9ca226cb4f6a2cf1b
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "106304808"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120096801"
 ---
-# <a name="server-side-requirements-for-impersonation"></a>Server-Side requisiti per la rappresentazione
+# <a name="server-side-requirements-for-impersonation"></a>Server-Side per la rappresentazione
 
-Il server esegue la rappresentazione a livello di codice. Presuppone in modo esplicito le credenziali di sicurezza del client usando [**CoImpersonateClient**](/windows/desktop/api/combaseapi/nf-combaseapi-coimpersonateclient). Quando il client ha concesso al server un'autorità sufficiente, questo ha l'effetto di sostituire le credenziali di sicurezza del client con il token del thread del server, al posto del token di processo.
+Il server esegue la rappresentazione a livello di codice. Presuppone in modo esplicito le credenziali di sicurezza del client usando [**CoImpersonateClient.**](/windows/desktop/api/combaseapi/nf-combaseapi-coimpersonateclient) Quando il client ha concesso al server un'autorità sufficiente, ciò ha l'effetto di sostituire le credenziali di sicurezza del client con il token del thread del server, al posto del token di processo.
 
-Al termine di questa operazione, il server può, ad esempio, usare il token client per accedere alle risorse sorvegliate con un descrittore di sicurezza. In alternativa, può effettuare chiamate sotto l'identità del client, se il mascheramento è abilitato.
+Al termine di questa operazione, il server può, ad esempio, usare il token client per accedere alle risorse sorvegliate con un descrittore di sicurezza. Oppure può effettuare chiamate con l'identità client, se la clonazione è abilitata.
 
-Il server può impostare in modo esplicito il mascheramento a livello di codice oppure può basarsi su un'impostazione amministrativa. Per impostazione predefinita, le applicazioni COM+ sono configurate per l'utilizzo del mascheramento dinamico. Per informazioni dettagliate, vedere [mascheramento](cloaking.md).
+Il server può impostare in modo esplicito la clonazione a livello di codice oppure può basarsi su un'impostazione amministrativa. Per impostazione predefinita, le applicazioni COM+ sono configurate per l'uso della clonazione dinamica. Per altri dettagli, vedere [Cloaking](cloaking.md).
 
-Se il server sta implementando la delega per conto del client, utilizzando l'identità client sulla rete, l'identità del processo server deve essere contrassegnata come "trusted per la delega" nel servizio Active Directory; in caso contrario, la delega avrà esito negativo.
+Se il server implementa la delega per conto del client, usando l'identità client in rete, l'identità del processo server deve essere contrassegnata come "Trusted per la delega" nel servizio Active Directory; In caso contrario, la delega avrà esito negativo.
 
-Al termine dell'utilizzo dell'identità del client, il server può ripristinare il proprio token di processo utilizzando [**CoRevertToSelf**](/windows/desktop/api/combaseapi/nf-combaseapi-coreverttoself).
+Al termine dell'uso dell'identità del client, il server può ripristinare il proprio token di processo [**usando CoRevertToSelf.**](/windows/desktop/api/combaseapi/nf-combaseapi-coreverttoself)
 
-Per informazioni dettagliate sull'implementazione della rappresentazione e della delega, vedere [delega e rappresentazione](/windows/desktop/com/delegation-and-impersonation).
+Per informazioni dettagliate sull'implementazione della rappresentazione e della delega, vedere [Delega e rappresentazione.](/windows/desktop/com/delegation-and-impersonation)
 
 ## <a name="related-topics"></a>Argomenti correlati
 
 <dl> <dt>
 
-[Rappresentazione e delega client](client-impersonation-and-delegation.md)
+[Rappresentazione e delega del client](client-impersonation-and-delegation.md)
 </dt> <dt>
 
 [Requisiti lato client per la rappresentazione](client-side-requirements-for-impersonation.md)

@@ -1,9 +1,9 @@
 ---
-title: /h (opzione)
-description: L'opzione/h è equivalente dal punto di vista funzionale all'opzione/header.
+title: Opzione /h
+description: Dal punto di vista funzionale, l'opzione /h equivale all'opzione /header.
 ms.assetid: 1b74d5f2-6624-4b71-832d-fb55a0e84c86
 keywords:
-- /h switch MIDL
+- Opzione /h MIDL
 topic_type:
 - apiref
 api_name:
@@ -12,16 +12,16 @@ api_type:
 - NA
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: c7ff2cd7aa5e4b8386e0c9faecfaccd860207403
-ms.sourcegitcommit: 57758ecb246c84d65e6e0e4bd5570d9176fa39cd
+ms.openlocfilehash: a71bf02668a583b330684338cbc3f639fbbda5a340c7226e10956233aa8dc9ed
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/25/2019
-ms.locfileid: "104045837"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120105611"
 ---
-# <a name="h-switch"></a>/h (opzione)
+# <a name="h-switch"></a>Opzione /h
 
-L'opzione **/h** è equivalente dal punto di vista funzionale all'opzione [**/header**](-header.md) .
+Dal punto di vista funzionale, l'opzione **/h** equivale all'opzione [**/header.**](-header.md)
 
 ``` syntax
 midl /h filename
@@ -31,36 +31,36 @@ midl /h filename
 
 <dl> <dt>
 
-*filename* 
+*Filename* 
 </dt> <dd>
 
-Specifica un nome di file di intestazione che esegue l'override del nome del file di intestazione predefinito. I nomi di file possono essere racchiusi tra virgolette doppie (") per evitare che la shell interpreti caratteri speciali.
+Specifica un nome di file di intestazione che esegue l'override del nome del file di intestazione predefinito. I nomi di file possono essere racchiusi tra virgolette doppie (") per impedire alla shell di interpretare caratteri speciali.
 
 </dd> </dl>
 
 ## <a name="remarks"></a>Commenti
 
-L'opzione **/h** specifica *filename* come nome di un file di intestazione che contiene tutte le definizioni contenute nel file IDL, senza la sintassi IDL. Questo file può essere usato come file di intestazione C o C++.
+**L'opzione /h** specifica *filename* come nome di un file di intestazione che contiene tutte le definizioni contenute nel file IDL, senza la sintassi IDL. Questo file può essere usato come file di intestazione C o C++.
 
 ## <a name="examples"></a>Esempio
 
-**MIDL/h tlibhead. h nomefile. idl**
+**midl /h tlibhead.h filename.idl**
 
-**MIDL/h "MIDL. h" nomefile. idl**
+**midl /h "midl.h" filename.idl**
 
 ## <a name="see-also"></a>Vedi anche
 
 <dl> <dt>
 
-[Sintassi della riga di comando MIDL generale](general-midl-command-line-syntax.md)
+[Sintassi generale della riga di comando MIDL](general-midl-command-line-syntax.md)
 </dt> <dt>
 
 [**/header**](-header.md)
 </dt> </dl>
 
- 
+ 
 
- 
+ 
 
 
 

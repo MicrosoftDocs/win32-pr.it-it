@@ -1,21 +1,21 @@
 ---
-description: La \_ proprietà dell'unità CCP è impostata sul percorso radice del volume rimovibile che deve essere cercato da RMCCPSearch.
+description: La proprietà CCP DRIVE è impostata sul percorso radice del volume rimovibile in cui RMCCPSearch deve eseguire la \_ ricerca.
 ms.assetid: 567b7d11-6d80-4ec5-810d-f32b9ebf5809
-title: Proprietà CCP_DRIVE
+title: CCP_DRIVE proprietà
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 6215881cd3a998cd63a958bfe258ad3f9872ab1e
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: 0a7e96b5c69ecb3b52ae57da5476f4b9408039659f5cf26474cc443072b870de
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "106327326"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120075141"
 ---
-# <a name="ccp_drive-property"></a>\_Proprietà unità CCP
+# <a name="ccp_drive-property"></a>CCP \_ DRIVE - proprietà
 
-La proprietà dell' **\_ unità CCP** è impostata sul percorso radice del volume rimovibile che deve essere cercato da [RMCCPSearch](rmccpsearch-action.md). L'azione RMCCPSearch usa le firme dei file per convalidare che i prodotti idonei siano installati in un sistema prima di eseguire un'installazione dell'aggiornamento.
+La **proprietà \_ CCP DRIVE** è impostata sul percorso radice del volume rimovibile in cui eseguire la ricerca in [RMCCPSearch.](rmccpsearch-action.md) L'azione RMCCPSearch usa le firme di file per verificare che i prodotti idonei siano installati in un sistema prima di eseguire un'installazione dell'aggiornamento.
 
-Questa proprietà viene in genere impostata tramite l'interfaccia utente o un'azione personalizzata. Questa proprietà deve essere impostata prima dell'esecuzione dell'azione [RMCCPSearch](rmccpsearch-action.md) .
+Questa proprietà viene in genere impostata tramite l'interfaccia utente o un'azione personalizzata. Questa proprietà deve essere impostata prima [dell'esecuzione dell'azione RMCCPSearch.](rmccpsearch-action.md)
 
 ## <a name="requirements"></a>Requisiti
 
@@ -23,7 +23,7 @@ Questa proprietà viene in genere impostata tramite l'interfaccia utente o un'az
 
 | Requisito | Valore |
 |--------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Versione<br/> | Windows Installer 5,0 in Windows Server 2012, Windows 8, Windows Server 2008 R2 o Windows 7. Windows Installer 4,0 o Windows Installer 4,5 in Windows Server 2008 o Windows Vista. Windows Installer in Windows Server 2003 o Windows XP. Vedere i [requisiti di Run-Time Windows Installer](windows-installer-portal.md) per informazioni sul Service Pack minimo di Windows richiesto da una versione Windows Installer.<br/> |
+| Versione<br/> | Windows Programma di installazione 5.0 Windows Server 2012, Windows 8, Windows Server 2008 R2 o Windows 7. Windows Installer 4.0 o Windows Installer 4.5 in Windows Server 2008 o Windows Vista. Windows Programma di installazione Windows Server 2003 o Windows XP. Per informazioni [Windows service](windows-installer-portal.md) pack minimo necessario per Run-Time versione del programma di installazione di Windows, vedere i requisiti minimi Windows Service Pack.<br/> |
 
 
 

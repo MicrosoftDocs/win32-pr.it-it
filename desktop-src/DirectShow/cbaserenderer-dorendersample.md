@@ -1,7 +1,7 @@
 ---
-description: Il metodo DoRenderSample esegue il rendering di un campione.
+description: Il metodo DoRenderSample esegue il rendering di un esempio.
 ms.assetid: cf06192c-44c0-4d88-a20e-6501ea48cbfd
-title: Metodo CBaseRenderer. DoRenderSample (Renbase. h)
+title: Metodo CBaseRenderer.DoRenderSample (Renbase.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -16,16 +16,16 @@ api_location:
 - Strmbase.dll
 - Strmbasd.lib
 - Strmbasd.dll
-ms.openlocfilehash: 935fd7b92cef5d51056b2eb2daa9d2fb775647b6
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: ef91e7ad27d008f5dfdb83e5642ecba8ec68bc424824dca9c8aa068ec055f24f
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "106329387"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120076431"
 ---
-# <a name="cbaserendererdorendersample-method"></a>CBaseRenderer. DoRenderSample, metodo
+# <a name="cbaserendererdorendersample-method"></a>Metodo CBaseRenderer.DoRenderSample
 
-Il `DoRenderSample` metodo esegue il rendering di un campione.
+Il `DoRenderSample` metodo esegue il rendering di un esempio.
 
 ## <a name="syntax"></a>Sintassi
 
@@ -51,11 +51,11 @@ Puntatore all'interfaccia [**IMediaSample**](/windows/desktop/api/Strmif/nn-strm
 
 ## <a name="return-value"></a>Valore restituito
 
-Restituisce un valore **HRESULT** .
+Restituisce un **valore HRESULT.**
 
 ## <a name="remarks"></a>Commenti
 
-La classe derivata deve implementare questo metodo. Il comportamento dipende interamente dal tipo di filtro implementato. Un renderer video, ad esempio, potrebbe creare l'immagine video contenuta nell'esempio.
+La classe derivata deve implementare questo metodo. Il comportamento dipende interamente dal tipo di filtro implementato. Un renderer video, ad esempio, disegna l'immagine video contenuta nell'esempio.
 
 ## <a name="requirements"></a>Requisiti
 
@@ -63,8 +63,8 @@ La classe derivata deve implementare questo metodo. Il comportamento dipende int
 
 | Requisito | Valore |
 |--------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Intestazione<br/>  | <dl> <dt>Renbase. h (include Streams. h)</dt> </dl>                                                                                   |
-| Libreria<br/> | <dl> <dt>Strmbase. lib (compilazioni finali); </dt> <dt>Strmbasd. lib (build di debug)</dt> </dl> |
+| Intestazione<br/>  | <dl> <dt>Renbase.h (includere Flussi.h)</dt> </dl>                                                                                   |
+| Libreria<br/> | <dl> <dt>Strmbase.lib (build di vendita al dettaglio); </dt> <dt>Strmbasd.lib (build di debug)</dt> </dl> |
 
 
 

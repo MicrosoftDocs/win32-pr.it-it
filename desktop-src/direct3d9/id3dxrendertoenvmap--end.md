@@ -1,7 +1,7 @@
 ---
 description: Ripristinare tutte le destinazioni di rendering e, se necessario, comporre tutti i visi sottoposti a rendering nella superficie della mappa dell'ambiente.
 ms.assetid: 57c73787-36e7-4088-b5ff-78894e3a5d90
-title: 'Metodo ID3DXRenderToEnvMap:: end (D3dx9core. h)'
+title: Metodo ID3DXRenderToEnvMap::End (D3dx9core.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -14,14 +14,14 @@ api_type:
 api_location:
 - d3dx9.lib
 - d3dx9.dll
-ms.openlocfilehash: 20e62a9d794738ae81ae84a665165f6034958f0c
-ms.sourcegitcommit: 14010c34b35fa268046c7683f021f86de08ddd0a
+ms.openlocfilehash: efaf32eb421f6bda38fb922c4a89b1dbbe871842c3b4f07a87ff30c2e6b4dc40
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/15/2021
-ms.locfileid: "104354564"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120095791"
 ---
-# <a name="id3dxrendertoenvmapend-method"></a>Metodo ID3DXRenderToEnvMap:: end
+# <a name="id3dxrendertoenvmapend-method"></a>Metodo ID3DXRenderToEnvMap::End
 
 Ripristinare tutte le destinazioni di rendering e, se necessario, comporre tutti i visi sottoposti a rendering nella superficie della mappa dell'ambiente.
 
@@ -40,12 +40,12 @@ HRESULT End(
 
 <dl> <dt>
 
-*MipFilter* \[ in\]
+*Filtro mip* \[ Pollici\]
 </dt> <dd>
 
 Tipo: **[ **DWORD**](../winprog/windows-data-types.md)**
 
-Combinazione valida di uno o più flag [di \_ filtro D3DX](d3dx-filter.md) .
+Combinazione valida di uno o più [flag \_ FILTER D3DX.](d3dx-filter.md)
 
 </dd> </dl>
 
@@ -61,8 +61,8 @@ Se il metodo ha esito positivo, il valore restituito è D3D \_ OK. Se il metodo 
 
 | Requisito | Valore |
 |--------------------|----------------------------------------------------------------------------------------|
-| Intestazione<br/>  | <dl> <dt>D3dx9core. h</dt> </dl> |
-| Libreria<br/> | <dl> <dt>D3dx9. lib</dt> </dl>   |
+| Intestazione<br/>  | <dl> <dt>D3dx9core.h</dt> </dl> |
+| Libreria<br/> | <dl> <dt>D3dx9.lib</dt> </dl>   |
 
 
 
@@ -73,7 +73,7 @@ Se il metodo ha esito positivo, il valore restituito è D3D \_ OK. Se il metodo 
 [ID3DXRenderToEnvMap](id3dxrendertoenvmap.md)
 </dt> <dt>
 
-[**ID3DXRenderToEnvMap:: Face**](id3dxrendertoenvmap--face.md)
+[**ID3DXRenderToEnvMap::Face**](id3dxrendertoenvmap--face.md)
 </dt> </dl>
 
  

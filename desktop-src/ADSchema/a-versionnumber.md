@@ -1,10 +1,10 @@
 ---
-title: Attributo Version-Number
-description: Un numero di versione per utilizzo generico.
+title: Version-Number attributo
+description: Numero di versione per utilizzo generico.
 ms.assetid: e98d858e-d7b3-4541-ab56-53b49479ec2a
 ms.tgt_platform: multiple
 keywords:
-- Schema AD Version-Number attribute
+- Version-Number schema AD dell'attributo
 - Schema AD dell'attributo versionNumber
 topic_type:
 - apiref
@@ -14,28 +14,28 @@ api_type:
 - Schema
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 98a621bd9b26eb403bdf60211a70a3d27532ce7f
-ms.sourcegitcommit: b77ace27b0432e7cd3863191b11926be032fbe2f
+ms.openlocfilehash: c9ab595e8b554ecdaf19d568ae73dba2895a0a958cece0bbd5aba4f97d068d1a
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/14/2020
-ms.locfileid: "104225273"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120065581"
 ---
-# <a name="version-number-attribute"></a>Attributo Version-Number
+# <a name="version-number-attribute"></a>Version-Number attributo
 
-Un numero di versione per utilizzo generico.
+Numero di versione per utilizzo generico.
 
 
 
 | Voce | Valore |
 |-------------------|--------------------------------------|
 | CN                | Version-Number                       |
-| LDAP-Display-Name | versionNumber                        |
+| Ldap-Display-Name | versionNumber                        |
 | Dimensione              | 4 byte                              |
-| Privilegio aggiornamento  | \-                                   |
+| Privilegio di aggiornamento  | \-                                   |
 | Frequenza di aggiornamento  | \-                                   |
 | Attribute-Id      | 1.2.840.113556.1.4.141               |
-| System-ID-GUID    | bf967a76-0de6-11d0-a285-00aa003049e2 |
+| System-Id-Guid    | bf967a76-0de6-11d0-a285-00aa003049e2 |
 | Sintassi            | [**Enumerazione**](s-enumeration.md) |
 
 
@@ -58,15 +58,15 @@ Un numero di versione per utilizzo generico.
 | ID collegamento                | \-                                                                                                                                                                |
 | MAPI-Id                | \-                                                                                                                                                                |
 | System-Only            | Falso                                                                                                                                                             |
-| È a valore singolo       | Vero                                                                                                                                                              |
+| Is-Single-Valued       | Vero                                                                                                                                                              |
 | Indicizzato             | Falso                                                                                                                                                             |
 | Nel catalogo globale      | Vero                                                                                                                                                              |
-| NT-Security-descrittore | O:BAG: NON VALIDO: S:                                                                                                                                                      |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                                                                                                                                      |
 | Range-Lower            | \-                                                                                                                                                                |
 | Range-Upper            | \-                                                                                                                                                                |
 | Search-Flags           | 0x00000000                                                                                                                                                        |
 | System-Flags           | 0x00000010                                                                                                                                                        |
-| Classi utilizzate in        | [**Archivio classi**](c-classstore.md)<br/> [**Gruppo-criteri-contenitore**](c-grouppolicycontainer.md)<br/> [**Coda di stampa**](c-printqueue.md)<br/> |
+| Classi usate in        | [**Archivio classi**](c-classstore.md)<br/> [**Group-Policy-Container**](c-grouppolicycontainer.md)<br/> [**Coda di stampa**](c-printqueue.md)<br/> |
 
 
 
@@ -79,15 +79,15 @@ Un numero di versione per utilizzo generico.
 | ID collegamento                | \-                                                                                                                                                                                                                                                                                                       |
 | MAPI-Id                | \-                                                                                                                                                                                                                                                                                                       |
 | System-Only            | Falso                                                                                                                                                                                                                                                                                                    |
-| È a valore singolo       | Vero                                                                                                                                                                                                                                                                                                     |
+| Is-Single-Valued       | Vero                                                                                                                                                                                                                                                                                                     |
 | Indicizzato             | Falso                                                                                                                                                                                                                                                                                                    |
 | Nel catalogo globale      | Vero                                                                                                                                                                                                                                                                                                     |
-| NT-Security-descrittore | O:BAG: NON VALIDO: S:                                                                                                                                                                                                                                                                                             |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                                                                                                                                                                                                                                                                             |
 | Range-Lower            | \-                                                                                                                                                                                                                                                                                                       |
 | Range-Upper            | \-                                                                                                                                                                                                                                                                                                       |
 | Search-Flags           | 0x00000000                                                                                                                                                                                                                                                                                               |
 | System-Flags           | 0x00000010                                                                                                                                                                                                                                                                                               |
-| Classi utilizzate in        | [**Versione applicazione**](c-applicationversion.md)<br/> [**Archivio classi**](c-classstore.md)<br/> [**Gruppo-criteri-contenitore**](c-grouppolicycontainer.md)<br/> [**Coda di stampa**](c-printqueue.md)<br/> [**Punto di connessione del servizio**](c-serviceconnectionpoint.md)<br/> |
+| Classi usate in        | [**Versione dell'applicazione**](c-applicationversion.md)<br/> [**Archivio classi**](c-classstore.md)<br/> [**Group-Policy-Container**](c-grouppolicycontainer.md)<br/> [**Coda di stampa**](c-printqueue.md)<br/> [**Punto di connessione del servizio**](c-serviceconnectionpoint.md)<br/> |
 
 
 
@@ -100,15 +100,15 @@ Un numero di versione per utilizzo generico.
 | ID collegamento                | \-                                                                                                                                                                                                                                                                                                       |
 | MAPI-Id                | \-                                                                                                                                                                                                                                                                                                       |
 | System-Only            | Falso                                                                                                                                                                                                                                                                                                    |
-| È a valore singolo       | Vero                                                                                                                                                                                                                                                                                                     |
+| Is-Single-Valued       | Vero                                                                                                                                                                                                                                                                                                     |
 | Indicizzato             | Falso                                                                                                                                                                                                                                                                                                    |
 | Nel catalogo globale      | Vero                                                                                                                                                                                                                                                                                                     |
-| NT-Security-descrittore | O:BAG: NON VALIDO: S:                                                                                                                                                                                                                                                                                             |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                                                                                                                                                                                                                                                                             |
 | Range-Lower            | \-                                                                                                                                                                                                                                                                                                       |
 | Range-Upper            | \-                                                                                                                                                                                                                                                                                                       |
 | Search-Flags           | 0x00000000                                                                                                                                                                                                                                                                                               |
 | System-Flags           | 0x00000010                                                                                                                                                                                                                                                                                               |
-| Classi utilizzate in        | [**Versione applicazione**](c-applicationversion.md)<br/> [**Archivio classi**](c-classstore.md)<br/> [**Gruppo-criteri-contenitore**](c-grouppolicycontainer.md)<br/> [**Coda di stampa**](c-printqueue.md)<br/> [**Punto di connessione del servizio**](c-serviceconnectionpoint.md)<br/> |
+| Classi usate in        | [**Versione applicazione**](c-applicationversion.md)<br/> [**Archivio classi**](c-classstore.md)<br/> [**Contenitore criteri di gruppo**](c-grouppolicycontainer.md)<br/> [**Coda di stampa**](c-printqueue.md)<br/> [**Punto di connessione del servizio**](c-serviceconnectionpoint.md)<br/> |
 
 
 
@@ -121,15 +121,15 @@ Un numero di versione per utilizzo generico.
 | ID collegamento                | \-                                                                                                                                                                                                                                                                                                       |
 | MAPI-Id                | \-                                                                                                                                                                                                                                                                                                       |
 | System-Only            | Falso                                                                                                                                                                                                                                                                                                    |
-| È a valore singolo       | Vero                                                                                                                                                                                                                                                                                                     |
+| Is-Single-Valued       | Vero                                                                                                                                                                                                                                                                                                     |
 | Indicizzato             | Falso                                                                                                                                                                                                                                                                                                    |
 | Nel catalogo globale      | Vero                                                                                                                                                                                                                                                                                                     |
-| NT-Security-descrittore | O:BAG: NON VALIDO: S:                                                                                                                                                                                                                                                                                             |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                                                                                                                                                                                                                                                                             |
 | Range-Lower            | \-                                                                                                                                                                                                                                                                                                       |
 | Range-Upper            | \-                                                                                                                                                                                                                                                                                                       |
 | Search-Flags           | 0x00000000                                                                                                                                                                                                                                                                                               |
 | System-Flags           | 0x00000010                                                                                                                                                                                                                                                                                               |
-| Classi utilizzate in        | [**Versione applicazione**](c-applicationversion.md)<br/> [**Archivio classi**](c-classstore.md)<br/> [**Gruppo-criteri-contenitore**](c-grouppolicycontainer.md)<br/> [**Coda di stampa**](c-printqueue.md)<br/> [**Punto di connessione del servizio**](c-serviceconnectionpoint.md)<br/> |
+| Classi usate in        | [**Versione applicazione**](c-applicationversion.md)<br/> [**Archivio classi**](c-classstore.md)<br/> [**Contenitore criteri di gruppo**](c-grouppolicycontainer.md)<br/> [**Coda di stampa**](c-printqueue.md)<br/> [**Punto di connessione del servizio**](c-serviceconnectionpoint.md)<br/> |
 
 
 
@@ -142,15 +142,15 @@ Un numero di versione per utilizzo generico.
 | ID collegamento                | \-                                                                                                                                                                                                                                                                                                       |
 | MAPI-Id                | \-                                                                                                                                                                                                                                                                                                       |
 | System-Only            | Falso                                                                                                                                                                                                                                                                                                    |
-| È a valore singolo       | Vero                                                                                                                                                                                                                                                                                                     |
+| Is-Single-Valued       | Vero                                                                                                                                                                                                                                                                                                     |
 | Indicizzato             | Falso                                                                                                                                                                                                                                                                                                    |
 | Nel catalogo globale      | Vero                                                                                                                                                                                                                                                                                                     |
-| NT-Security-descrittore | O:BAG: NON VALIDO: S:                                                                                                                                                                                                                                                                                             |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                                                                                                                                                                                                                                                                             |
 | Range-Lower            | \-                                                                                                                                                                                                                                                                                                       |
 | Range-Upper            | \-                                                                                                                                                                                                                                                                                                       |
 | Search-Flags           | 0x00000000                                                                                                                                                                                                                                                                                               |
 | System-Flags           | 0x00000010                                                                                                                                                                                                                                                                                               |
-| Classi utilizzate in        | [**Versione applicazione**](c-applicationversion.md)<br/> [**Archivio classi**](c-classstore.md)<br/> [**Gruppo-criteri-contenitore**](c-grouppolicycontainer.md)<br/> [**Coda di stampa**](c-printqueue.md)<br/> [**Punto di connessione del servizio**](c-serviceconnectionpoint.md)<br/> |
+| Classi usate in        | [**Versione applicazione**](c-applicationversion.md)<br/> [**Archivio classi**](c-classstore.md)<br/> [**Contenitore criteri di gruppo**](c-grouppolicycontainer.md)<br/> [**Coda di stampa**](c-printqueue.md)<br/> [**Punto di connessione del servizio**](c-serviceconnectionpoint.md)<br/> |
 
 
 
@@ -163,15 +163,15 @@ Un numero di versione per utilizzo generico.
 | ID collegamento                | \-                                                                                                                                                                                                                                                                                                       |
 | MAPI-Id                | \-                                                                                                                                                                                                                                                                                                       |
 | System-Only            | Falso                                                                                                                                                                                                                                                                                                    |
-| È a valore singolo       | Vero                                                                                                                                                                                                                                                                                                     |
+| Is-Single-Valued       | Vero                                                                                                                                                                                                                                                                                                     |
 | Indicizzato             | Falso                                                                                                                                                                                                                                                                                                    |
 | Nel catalogo globale      | Vero                                                                                                                                                                                                                                                                                                     |
-| NT-Security-descrittore | O:BAG: NON VALIDO: S:                                                                                                                                                                                                                                                                                             |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                                                                                                                                                                                                                                                                             |
 | Range-Lower            | \-                                                                                                                                                                                                                                                                                                       |
 | Range-Upper            | \-                                                                                                                                                                                                                                                                                                       |
 | Search-Flags           | 0x00000000                                                                                                                                                                                                                                                                                               |
 | System-Flags           | 0x00000010                                                                                                                                                                                                                                                                                               |
-| Classi utilizzate in        | [**Versione applicazione**](c-applicationversion.md)<br/> [**Archivio classi**](c-classstore.md)<br/> [**Gruppo-criteri-contenitore**](c-grouppolicycontainer.md)<br/> [**Coda di stampa**](c-printqueue.md)<br/> [**Punto di connessione del servizio**](c-serviceconnectionpoint.md)<br/> |
+| Classi usate in        | [**Versione applicazione**](c-applicationversion.md)<br/> [**Archivio classi**](c-classstore.md)<br/> [**Contenitore criteri di gruppo**](c-grouppolicycontainer.md)<br/> [**Coda di stampa**](c-printqueue.md)<br/> [**Punto di connessione del servizio**](c-serviceconnectionpoint.md)<br/> |
 
 
 

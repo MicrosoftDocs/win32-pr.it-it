@@ -5,25 +5,25 @@ ms.tgt_platform: multiple
 title: Enumerazioni CThreadBase
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: b3844892d400df9861cd81c8a39e3c9461f9832d
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 4f0721d44c0b2c68e93af445898a4443eb2b0e37dcf49a4d46d6dd5c35ae26ba
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "104530283"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120097301"
 ---
 # <a name="cthreadbase-enumerations"></a>Enumerazioni CThreadBase
 
-La classe [**CThreadBase**](/windows/desktop/api/ThrdBase/nl-thrdbase-cthreadbase) dispone delle enumerazioni seguenti.
+La [**classe CThreadBase**](/windows/desktop/api/ThrdBase/nl-thrdbase-cthreadbase) dispone delle enumerazioni seguenti.
 
 ## <a name="in-this-section"></a>Contenuto della sezione
 
 <dl> <dt>
 
-[**FlagDefs**](/previous-versions/windows/desktop/legacy/mt432263(v=vs.85))
+[**FlagDef**](/previous-versions/windows/desktop/legacy/mt432263(v=vs.85))
 </dt> <dd>
 
-Specifica i flag validi per il tipo di operazione specificato. Questa enumerazione viene utilizzata dal metodo [**provider:: ValidateFlags**](/windows/desktop/api/Provider/nf-provider-provider-validateflags) .
+Specifica i flag validi per il tipo di operazione specificato. Questa enumerazione viene utilizzata dal [**metodo Provider::ValidateFlags.**](/windows/desktop/api/Provider/nf-provider-provider-validateflags)
 
 </dd> </dl>
 

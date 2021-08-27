@@ -4,12 +4,12 @@ description: Un manifesto può identificare uno o più provider. Per identificar
 ms.assetid: 3bd40405-2b7a-4709-aef7-8615de8c5b6a
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: fbce9b07aa8a2322311397ae9a48b3d72d60b784e5c55b028afc9772b53f63d9
-ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
+ms.openlocfilehash: 37ae37b20ea37d7e67d97846d9e9338e36d52f94
+ms.sourcegitcommit: 0dec0044816af3f2b2e6403659e1cf11138c90cd
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119470922"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "121812664"
 ---
 # <a name="identifying-the-provider"></a>Identificazione del provider
 

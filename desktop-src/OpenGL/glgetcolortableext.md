@@ -14,12 +14,12 @@ api_type:
 - HeaderDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: f4eaedd572cd51983445a6ac82394a91544b4ca05c58e8e488889dcbd68c225b
-ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
+ms.openlocfilehash: 46593ac7b03781288d7d0d3932ced799dbbdfcff
+ms.sourcegitcommit: 9b5faa61c38b2d0c432b7f2dbee8c127b0e28a7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119494151"
+ms.lasthandoff: 08/19/2021
+ms.locfileid: "122469628"
 ---
 # <a name="glgetcolortableext-function"></a>Funzione glGetColorTableEXT
 
@@ -46,7 +46,7 @@ void WINAPI glGetColorTableEXT(
 *target* 
 </dt> <dd>
 
-Trama di destinazione per cui deve essere modificata la tavolozza. Deve essere TEXTURE \_ 1D o TEXTURE \_ 2D.
+Trama di destinazione che deve modificare la tavolozza. Deve essere TEXTURE \_ 1D o TEXTURE \_ 2D.
 
 </dd> <dt>
 
@@ -57,59 +57,18 @@ Formato dei dati pixel. Vengono accettate le costanti simboliche seguenti.
 
 
 
-<table>
-<colgroup>
-<col style="width: 50%" />
-<col style="width: 50%" />
-</colgroup>
-<thead>
-<tr class="header">
-<th>Valore</th>
-<th>Significato</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td><span id="GL_RGBA"></span><span id="gl_rgba"></span><dl> <dt><strong>GL_RGBA</strong></dt> </dl></td>
-<td>Ogni pixel è un gruppo di quattro componenti nell'ordine seguente: rosso, verde, blu, alfa. Il formato RGBA viene determinato in questo modo: <br/>
-<ol>
-<li>La <strong>funzione glGetColorTableEXT</strong> converte i valori a virgola mobile direttamente in un formato interno con precisione non specificata. I valori Interi con segno vengono mappati in modo lineare al formato interno in modo che il valore intero rappresentabile più positivo sia mappato a 1,0 e il valore intero rappresentabile più negativo sia mappato a -1,0. Il mapping dei dati di un intero senza segno viene eseguito in modo analogo: il valore intero più grande viene mappato a 1,0 e zero esegue il mapping a 0,0.</li>
-<li>La <strong>funzione glGetColorTableEXT</strong> moltiplica i valori di colore risultanti per GL_c_SCALE e li aggiunge a GL_c_BIAS, dove <em>c</em> è RED, GREEN, BLUE e ALPHA per i rispettivi componenti di colore. I risultati vengono definiti nell'intervallo [0,1].</li>
-<li>Se GL_MAP_COLOR è <strong>TRUE,</strong> <strong>glGetColorTableEXT</strong> ridimensiona ogni componente colore in base alle dimensioni della tabella di ricerca GL_PIXEL_MAP_c_TO_c, quindi sostituisce il componente con il valore a cui fa riferimento nella tabella; <em>c</em> è rispettivamente R, G, B o A.</li>
-<li>La <strong>funzione glGetColorTableEXT</strong> converte i colori RGBA risultanti in frammenti collegando la coordinata z della posizione raster corrente e le coordinate di trama a ogni pixel, quindi assegnando le coordinate delle finestre <em>x</em> e <em>y</em> al <em>frammento n,</em>in modo che <em>x</em>? = <em>x</em><sub>r</sub> + <em>n</em> mod <em>width</em><br/> <em>y</em>? = <em>y</em><sub>r</sub> + <em>n/width</em><br/> dove (<em>x</em><sub>r</sub> , <em>y</em><sub>r</sub> ) è la posizione raster corrente.<br/></li>
-<li>Questi frammenti di pixel vengono quindi trattati esattamente come i frammenti generati dall'rasterizzazione di punti, linee o poligoni. La <strong>funzione glGetColorTableEXT</strong> applica il mapping delle trame, il riempimento e tutte le operazioni sui frammenti prima di scrivere i frammenti nel buffer frame.</li>
-</ol></td>
-</tr>
-<tr class="even">
-<td><span id="GL_RED"></span><span id="gl_red"></span><dl> <dt><strong>GL_RED</strong></dt> </dl></td>
-<td>Ogni pixel è un singolo componente rosso.<br/> La <strong>funzione glGetColorTableEXT</strong> converte questo componente nel formato interno allo stesso modo del componente rosso di un pixel RGBA, quindi lo converte in un pixel RGBA con verde e blu impostato su 0,0 e alfa impostato su 1,0. Dopo questa conversione, il pixel viene considerato come se fosse stato letto come pixel RGBA.<br/></td>
-</tr>
-<tr class="odd">
-<td><span id="GL_GREEN"></span><span id="gl_green"></span><dl> <dt><strong>GL_GREEN</strong></dt> </dl></td>
-<td>Ogni pixel è un singolo componente verde.<br/> La <strong>funzione glGetColorTableEXT</strong> converte questo componente nel formato interno allo stesso modo del componente verde di un pixel RGBA e quindi lo converte in un pixel RGBA con rosso e blu impostato su 0,0 e alfa impostato su 1,0. Dopo questa conversione, il pixel viene considerato come se fosse stato letto come pixel RGBA.<br/></td>
-</tr>
-<tr class="even">
-<td><span id="GL_BLUE"></span><span id="gl_blue"></span><dl> <dt><strong>GL_BLUE</strong></dt> </dl></td>
-<td>Ogni pixel è un singolo componente blu.<br/> La <strong>funzione glGetColorTableEXT</strong> converte questo componente nel formato interno allo stesso modo del componente blu di un pixel RGBA e quindi lo converte in un pixel RGBA con rosso e verde impostati su 0,0 e alfa impostato su 1,0. Dopo questa conversione, il pixel viene considerato come se fosse stato letto come pixel RGBA.<br/></td>
-</tr>
-<tr class="odd">
-<td><span id="GL_ALPHA"></span><span id="gl_alpha"></span><dl> <dt><strong>GL_ALPHA</strong></dt> </dl></td>
-<td>Ogni pixel è un singolo componente alfa.<br/> La <strong>funzione glGetColorTableEXT</strong> converte questo componente nel formato interno nello stesso modo in cui è il componente alfa di un pixel RGBA e quindi lo converte in un pixel RGBA con rosso, verde e blu impostato su 0,0. Dopo questa conversione, il pixel viene considerato come se fosse stato letto come pixel RGBA.<br/></td>
-</tr>
-<tr class="even">
-<td><span id="GL_RGB"></span><span id="gl_rgb"></span><dl> <dt><strong>GL_RGB</strong></dt> </dl></td>
-<td>Ogni pixel è un gruppo di tre componenti in questo ordine: rosso, verde, blu.<br/> La <strong>funzione glGetColorTableEXT</strong> converte ogni componente nel formato interno allo stesso modo dei componenti rosso, verde e blu di un pixel RGBA. La tripla di colore viene convertita in un pixel RGBA con alfa impostato su 1,0. Dopo questa conversione, il pixel viene considerato come se fosse stato letto come pixel RGBA.<br/></td>
-</tr>
-<tr class="odd">
-<td><span id="GL_BGR_EXT"></span><span id="gl_bgr_ext"></span><dl> <dt><strong>GL_BGR_EXT</strong></dt> </dl></td>
-<td>Ogni pixel è un gruppo di tre componenti in questo ordine: blu, verde, rosso.<br/> GL_BGR_EXT fornisce un formato che corrisponde al layout di memoria di Microsoft Windows bitmap indipendenti dal dispositivo (DIB). Di conseguenza, le applicazioni possono usare gli stessi dati con Windows di funzione e chiamate di funzione pixel OpenGL.<br/></td>
-</tr>
-<tr class="even">
-<td><span id="GL_BGRA_EXT"></span><span id="gl_bgra_ext"></span><dl> <dt><strong>GL_BGRA_EXT</strong></dt> </dl></td>
-<td>Ogni pixel è un gruppo di quattro componenti nell'ordine seguente: blu, verde, rosso, alfa.<br/> GL_BGRA_EXT fornisce un formato che corrisponde al layout di memoria Windows bitmap indipendenti dal dispositivo (DIB). In questo modo le applicazioni possono usare gli stessi dati con Windows di funzione e chiamate di funzione pixel OpenGL.<br/></td>
-</tr>
-</tbody>
-</table>
+
+| valore | Significato | 
+|-------|---------|
+| <span id="GL_RGBA"></span><span id="gl_rgba"></span><dl><dt><strong>GL_RGBA</strong></dt></dl> | Ogni pixel è un gruppo di quattro componenti nell'ordine seguente: rosso, verde, blu, alfa. Il formato RGBA viene determinato in questo modo: <br /><ol><li>La <strong>funzione glGetColorTableEXT</strong> converte i valori a virgola mobile direttamente in un formato interno con precisione non specificata. I valori Interi con segno vengono mappati in modo lineare al formato interno in modo che il valore intero rappresentabile più positivo sia mappato a 1,0 e il valore intero rappresentabile più negativo sia mappato a -1,0. Il mapping dei dati di un intero senza segno viene eseguito in modo analogo: il valore intero più grande viene mappato a 1,0 e zero esegue il mapping a 0,0.</li><li>La <strong>funzione glGetColorTableEXT</strong> moltiplica i valori di colore risultanti per GL_c_SCALE e li aggiunge a GL_c_BIAS, dove <em>c</em> è RED, GREEN, BLUE e ALPHA per i rispettivi componenti di colore. I risultati vengono definiti nell'intervallo [0,1].</li><li>Se GL_MAP_COLOR è <strong>TRUE,</strong> <strong>glGetColorTableEXT</strong> ridimensiona ogni componente colore in base alle dimensioni della tabella di ricerca GL_PIXEL_MAP_c_TO_c, quindi sostituisce il componente con il valore a cui fa riferimento nella tabella; <em>c</em> è rispettivamente R, G, B o A.</li><li>La <strong>funzione glGetColorTableEXT</strong> converte i colori RGBA risultanti in frammenti collegando la coordinata z della posizione raster corrente e le coordinate di trama a ogni pixel, quindi assegnando le coordinate delle finestre <em>x</em> e <em>y</em> al <em>frammento n,</em>in modo che <em>x</em>? = <em>x</em><sub>r</sub>  +  <em>n</em> mod <em>width</em><br /><em>y</em>? = <em>y</em><sub>r</sub>  +  <em>n/width</em><br /> dove (<em>x</em><sub>r</sub> , <em>y</em><sub>r</sub> ) è la posizione raster corrente.<br /></li><li>Questi frammenti di pixel vengono quindi trattati esattamente come i frammenti generati dall'rasterizzazione di punti, linee o poligoni. La <strong>funzione glGetColorTableEXT</strong> applica il mapping delle trame, il riempimento e tutte le operazioni sui frammenti prima di scrivere i frammenti nel buffer frame.</li></ol> | 
+| <span id="GL_RED"></span><span id="gl_red"></span><dl><dt><strong>GL_RED</strong></dt></dl> | Ogni pixel è un singolo componente rosso.<br /> La <strong>funzione glGetColorTableEXT</strong> converte questo componente nel formato interno allo stesso modo del componente rosso di un pixel RGBA, quindi lo converte in un pixel RGBA con verde e blu impostato su 0,0 e alfa impostato su 1,0. Dopo questa conversione, il pixel viene considerato come se fosse stato letto come pixel RGBA.<br /> | 
+| <span id="GL_GREEN"></span><span id="gl_green"></span><dl><dt><strong>GL_GREEN</strong></dt></dl> | Ogni pixel è un singolo componente verde.<br /> La <strong>funzione glGetColorTableEXT</strong> converte questo componente nel formato interno allo stesso modo del componente verde di un pixel RGBA e quindi lo converte in un pixel RGBA con rosso e blu impostato su 0,0 e alfa impostato su 1,0. Dopo questa conversione, il pixel viene considerato come se fosse stato letto come pixel RGBA.<br /> | 
+| <span id="GL_BLUE"></span><span id="gl_blue"></span><dl><dt><strong>GL_BLUE</strong></dt></dl> | Ogni pixel è un singolo componente blu.<br /> La <strong>funzione glGetColorTableEXT</strong> converte questo componente nel formato interno allo stesso modo del componente blu di un pixel RGBA e quindi lo converte in un pixel RGBA con rosso e verde impostati su 0,0 e alfa impostato su 1,0. Dopo questa conversione, il pixel viene considerato come se fosse stato letto come pixel RGBA.<br /> | 
+| <span id="GL_ALPHA"></span><span id="gl_alpha"></span><dl><dt><strong>GL_ALPHA</strong></dt></dl> | Ogni pixel è un singolo componente alfa.<br /> La <strong>funzione glGetColorTableEXT</strong> converte questo componente nel formato interno nello stesso modo in cui è il componente alfa di un pixel RGBA e quindi lo converte in un pixel RGBA con rosso, verde e blu impostato su 0,0. Dopo questa conversione, il pixel viene considerato come se fosse stato letto come pixel RGBA.<br /> | 
+| <span id="GL_RGB"></span><span id="gl_rgb"></span><dl><dt><strong>GL_RGB</strong></dt></dl> | Ogni pixel è un gruppo di tre componenti in questo ordine: rosso, verde, blu.<br /> La <strong>funzione glGetColorTableEXT</strong> converte ogni componente nel formato interno allo stesso modo dei componenti rosso, verde e blu di un pixel RGBA. Il triplo colore viene convertito in un pixel RGBA con alfa impostato su 1,0. Dopo questa conversione, il pixel viene considerato come se fosse stato letto come pixel RGBA.<br /> | 
+| <span id="GL_BGR_EXT"></span><span id="gl_bgr_ext"></span><dl><dt><strong>GL_BGR_EXT</strong></dt></dl> | Ogni pixel è un gruppo di tre componenti in questo ordine: blu, verde, rosso.<br /> GL_BGR_EXT fornisce un formato che corrisponde al layout di memoria di Microsoft Windows bitmap indipendenti dal dispositivo (DIB). Di conseguenza, le applicazioni possono usare gli stessi dati con Windows di funzione e chiamate di funzione pixel OpenGL.<br /> | 
+| <span id="GL_BGRA_EXT"></span><span id="gl_bgra_ext"></span><dl><dt><strong>GL_BGRA_EXT</strong></dt></dl> | Ogni pixel è un gruppo di quattro componenti nell'ordine seguente: blu, verde, rosso, alfa.<br /> GL_BGRA_EXT fornisce un formato che corrisponde al layout di memoria Windows bitmap indipendenti dal dispositivo (DIB). In questo modo le applicazioni possono usare gli stessi dati con Windows di funzione e chiamate di funzione pixel OpenGL.<br /> | 
+
 
 
 
@@ -124,7 +83,7 @@ Tipo di dati per i *dati*. Di seguito sono riportate le costanti simboliche acce
 
 
 
-| Valore                                                                                                                                                                      | Significato                                          |
+| valore                                                                                                                                                                      | Significato                                          |
 |----------------------------------------------------------------------------------------------------------------------------------------------------------------------------|--------------------------------------------------|
 | <span id="GL_UNSIGNED_BYTE"></span><span id="gl_unsigned_byte"></span><dl> <dt>**GL \_ UNSIGNED \_ BYTE**</dt> </dl>    | Intero senza segno a 8 bit<br/>                |
 | <span id="GL_BYTE"></span><span id="gl_byte"></span><dl> <dt>**GL \_ BYTE**</dt> </dl>                                | Valore intero con segno a 8 bit<br/>                  |
@@ -174,7 +133,7 @@ La **funzione glGetColorTableEXT** è una funzione di estensione che non fa part
 
 
 
-| Requisito | Valore |
+| Requisito | valore |
 |-------------------------------------|---------------------------------------------------------------------------------|
 | Client minimo supportato<br/> | Windows 2000 Professional \[solo app desktop\]<br/>                      |
 | Server minimo supportato<br/> | Windows 2000 Server \[solo app desktop\]<br/>                            |

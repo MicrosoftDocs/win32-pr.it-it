@@ -9,12 +9,12 @@ keywords:
 - livello di funzionalità, DirectX
 ms.topic: article
 ms.date: 09/01/2020
-ms.openlocfilehash: 9c4717d743e50e91376e57e5d13acbe2cfae41d8
-ms.sourcegitcommit: 0b93de98c4afc79a6801a113bc91adbc89e835b9
+ms.openlocfilehash: e1ca80faa816ff7601f0a33893a708fafa7f2d3f
+ms.sourcegitcommit: 0dec0044816af3f2b2e6403659e1cf11138c90cd
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 07/03/2021
-ms.locfileid: "113282470"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "121812047"
 ---
 # <a name="direct3d-feature-levels"></a>Livelli di funzionalità Direct3D
 
@@ -36,7 +36,7 @@ Usando i livelli di funzionalità, è possibile sviluppare un'applicazione per D
 - Un livello di funzionalità non implica prestazioni, ma solo funzionalità. Le prestazioni dipendono dall'implementazione dell'hardware.
 - Scegliere un livello di funzionalità quando si crea un dispositivo Direct3D 11.
 
-Per informazioni sulle limitazioni per la creazione di dispositivi di tipo nonhardware in determinati livelli di funzionalità, vedere Limitazioni di creazione [di dispositivi WARP e di riferimento.](overviews-direct3d-11-devices-limitations.md)
+Per informazioni sulle limitazioni per la creazione di dispositivi di tipo nonhardware in determinati livelli di funzionalità, vedere Limitazioni relative alla creazione di [dispositivi WARP e di riferimento.](overviews-direct3d-11-devices-limitations.md)
 
 Per facilitare la scelta del livello di funzionalità con cui progettare, confrontare le funzionalità per ogni livello di funzionalità.
 
@@ -56,27 +56,27 @@ Per i livelli di funzionalità elencati sono disponibili le funzionalità seguen
 
 | Livello \\ di funzionalità | 12 \_ 2<sup>8</sup> | 12 \_ 1<sup>0</sup> | 12 \_ 0<sup>0</sup> | 11 \_ 1<sup>1</sup> | 11 \_ 0 | 10 \_ 1 | 10 \_ 0 | 9 \_ 3<sup>7</sup> |
 |-|-|-|-|-|-|-|-|-|
-| Modello shader (D3D11) | N/D | 5.0<sup>2</sup> | 5.0<sup>2</sup> | 5.0<sup>2</sup> | 5.0<sup>2</sup> | 4.x | 4.0 | 2.0 (4 \_ 0 \_ livello \_ 9 \_ 3) \[ rispetto a \_ 2 \_ a/ps \_ 2 x \_ \] <sup>5</sup> |
+| Modello shader (D3D11) | N/A | 5.0<sup>2</sup> | 5.0<sup>2</sup> | 5.0<sup>2</sup> | 5.0<sup>2</sup> | 4.x | 4.0 | 2.0 (4 \_ 0 \_ livello \_ 9 \_ 3) \[ rispetto a \_ 2 \_ a/ps \_ 2 x \_ \] <sup>5</sup> |
 | Modello shader (D3D12) | 6.5 | 5.1<sup>2</sup> | 5.1<sup>2</sup> | 5.1<sup>2</sup> | 5.1<sup>2</sup> | N/D | N/D | N/D |
 | [Risorse affiancate](tiled-resources.md) | Livello 3 | Livello<sup>2 6</sup> | Livello<sup>2 6</sup> | Facoltativo | Facoltativo | No | No | No |
 | [Rasterizzazione conservativa](conservative-rasterization.md) | Livello 3 | Livello<sup>1 6</sup> | Facoltativo | Facoltativo | No | No | No | No |
-| [Visualizzazioni degli ordini di rasterizzazione](rasterizer-order-views.md) | Sì | sì | Facoltativo | Facoltativo | No | No | No | No |
+| [Visualizzazioni dell'ordine di rasterizzazione](rasterizer-order-views.md) | Sì | sì | Facoltativo | Facoltativo | No | No | No | No |
 | [Filtri min/max](/windows/win32/api/D3D11/ne-d3d11-d3d11_filter) | Sì | Sì | sì | Facoltativo | No | No | No | No |
-| Eseguire il mapping del buffer predefinito | N/D | Facoltativo | Facoltativo | Facoltativo | Facoltativo | No | No | No |
+| Eseguire il mapping del buffer predefinito | N/A | Facoltativo | Facoltativo | Facoltativo | Facoltativo | No | No | No |
 | [Valore di riferimento dello stencil specificato dello shader](shader-specified-stencil-reference-value.md) | Facoltativo | Facoltativo | Facoltativo | Facoltativo | No | No | No | No |
 | Caricamenti Unordered Access View tipi | 18 formati, più facoltativi | 18 formati, più facoltativi | 18 formati, più facoltativi | 3 formati, più facoltativi | 3 formati, più facoltativi | No | No | No |
 | [Geometry shader](/previous-versions/bb205146(v=vs.85)) | Sì | Sì | Sì | Sì | Sì | Sì | Sì | No |
 | [Flusso in uscita](./d3d10-graphics-programming-guide-output-stream-stage.md) | Sì | Sì | Sì | Sì | Sì | Sì | Sì | No |
-| [DirectCompute/Compute Shader](direct3d-11-advanced-stages-compute-shader.md) | Sì | Sì | Sì | Sì | sì | Facoltativo | Facoltativo | N/D |
+| [DirectCompute/Compute Shader](direct3d-11-advanced-stages-compute-shader.md) | Sì | Sì | Sì | Sì | sì | Facoltativo | Facoltativo | N/A |
 | <b>Livello \\ di funzionalità</b> | <b>12 \_ 2<sup>8</sup></b> | <b>12 \_ 1<sup>0</sup></b> | <b>12 \_ 0<sup>0</sup></b> | <b>11 \_ 1<sup>1</sup></b> | <b>11 \_ 0</b> | <b>10 \_ 1</b> | <b>10 \_ 0</b> | <b>9 \_ 3<sup>7</sup></b> |
 | [Shader della base e del dominio](direct3d-11-advanced-stages-tessellation.md) | Sì | Sì | Sì | Sì | Sì | No | No | No |
 | [Matrici di risorse texture](overviews-direct3d-11-resources-textures-intro.md) | Sì | Sì | Sì | Sì | Sì | Sì | Sì | No |
-| [Matrici di risorse della mappa cubi](overviews-direct3d-11-resources-textures-intro.md) | Sì | Sì | Sì | Sì | Sì | Sì | No | No |
+| [Matrici di risorse di mappe cubi](overviews-direct3d-11-resources-textures-intro.md) | Sì | Sì | Sì | Sì | Sì | Sì | No | No |
 | [Compressione BC4/BC5](../direct3d10/d3d10-graphics-programming-guide-resources-block-compression.md) | Sì | Sì | Sì | Sì | Sì | Sì | Sì | No |
 | [Compressione BC6H/BC7](texture-block-compression-in-direct3d-11.md) | Sì | Sì | Sì | Sì | Sì | No | No | No |
 | [Alpha-to-coverage](./d3d10-graphics-programming-guide-blend-state.md) | Sì | Sì | Sì | Sì | Sì | Sì | Sì | No |
 | [Formati estesi (BGRA e così via)](overviews-direct3d-11-devices-downlevel-exceptions.md) | Sì | Sì | Sì | Sì | sì | Facoltativo | Facoltativo | Sì |
-| [Formato High Color 10 bit XR](overviews-direct3d-11-devices-downlevel-exceptions.md) | Sì | Sì | Sì | Sì | sì | Facoltativo | Facoltativo | N/D |
+| [Formato High Color 10 bit XR](overviews-direct3d-11-devices-downlevel-exceptions.md) | Sì | Sì | Sì | Sì | sì | Facoltativo | Facoltativo | N/A |
 | [Operazioni per la logica (output merger)](/windows/win32/api/D3D11/ns-d3d11-d3d11_feature_data_d3d11_options) | Sì | Sì | Sì | Sì | Facoltativo<sup>1</sup> | Facoltativo<sup>1</sup> | Facoltativo<sup>1</sup> | No |
 | Rasterizzazione indipendente dalla destinazione | Sì | Sì | Sì | Sì | No | No | No | No |
 | [Più destinazione di rendering (MRT) con ForcedSampleCount 1](/windows/win32/api/D3D11/ns-d3d11-d3d11_feature_data_d3d11_options) | Sì | Sì | Sì | Sì | Facoltativo<sup>1</sup> | Facoltativo<sup>1</sup> | Facoltativo<sup>1</sup> | No |
@@ -84,15 +84,15 @@ Per i livelli di funzionalità elencati sono disponibili le funzionalità seguen
 | <b>Livello \\ di funzionalità</b> | <b>12 \_ 2<sup>8</sup></b> | <b>12 \_ 1<sup>0</sup></b> | <b>12 \_ 0<sup>0</sup></b> | <b>11 \_ 1<sup>1 1</sup></b> | <b>11 \_ 0</b> | <b>10 \_ 1</b> | <b>10 \_ 0</b> | <b>9 \_ 3<sup>7</sup></b> |
 | UAV in ogni fase | Sì | Sì | Sì | Sì | No | No | No | N/D |
 | [Numero massimo di campioni forzati per il rendering solo UAV](/windows/win32/api/D3D11/ns-d3d11-d3d11_feature_data_d3d11_options) | 16 | 16 | 16 | 16 | 8 | N/D | N/D | N/D |
-| Offset del buffer costante e aggiornamenti parziali | Sì | Sì | Sì | Sì | Facoltativo<sup>1</sup> | Facoltativo<sup>1</sup> | Facoltativo<sup>1</sup> | Sì<sup>1</sup> |
+| Offset costante del buffer e aggiornamenti parziali | Sì | Sì | Sì | Sì | Facoltativo<sup>1</sup> | Facoltativo<sup>1</sup> | Facoltativo<sup>1</sup> | Sì<sup>1</sup> |
 | Formati a 16 bit per pixel (bpp) | Sì | Sì | Sì | Sì | Facoltativo<sup>1</sup> | Facoltativo<sup>1</sup> | Facoltativo<sup>1</sup> | Facoltativo<sup>1</sup> |
 | Dimensione massima trama | 16384 | 16384 | 16384 | 16384 | 16384 | 8192 | 8192 | 4096 |
 | Dimensione Max Cubemap | 16384 | 16384 | 16384 | 16384 | 16384 | 8192 | 8192 | 4096 |
 | Extent massimo volume | 2048 | 2048 | 2048 | 2048 | 2048 | 2048 | 2048 | 256 |
-| Ripetizione massima trame | 16384 | 16384 | 16384 | 16384 | 16384 | 8192 | 8192 | 8192 |
+| Max Texture Repeat | 16384 | 16384 | 16384 | 16384 | 16384 | 8192 | 8192 | 8192 |
 | Max Anisotropy | 16 | 16 | 16 | 16 | 16 | 16 | 16 | 16 |
-| Numero massimo primitive | 2^32 – 1 | 2^32 – 1 | 2^32 – 1 | 2^32 – 1 | 2^32 – 1 | 2^32 – 1 | 2^32 – 1 | 1048575 |
-| Indice massimo vertici | 2^32 – 1 | 2^32 – 1 | 2^32 – 1 | 2^32 – 1 | 2^32 – 1 | 2^32 – 1 | 2^32 – 1 | 1048575 |
+| Numero massimo di primitive | 2^32 – 1 | 2^32 – 1 | 2^32 – 1 | 2^32 – 1 | 2^32 – 1 | 2^32 – 1 | 2^32 – 1 | 1048575 |
+| Max Vertex Index | 2^32 – 1 | 2^32 – 1 | 2^32 – 1 | 2^32 – 1 | 2^32 – 1 | 2^32 – 1 | 2^32 – 1 | 1048575 |
 | Numero massimo di slot di input | 32 | 32 | 32 | 32 | 32 | 32 | 16 | 16 |
 | Destinazioni di rendering simultanee | 8 | 8 | 8 | 8 | 8 | 8 | 8 | 4 |
 | Query di occlusione | Sì | Sì | Sì | Sì | Sì | Sì | Sì | Sì |
@@ -115,39 +115,39 @@ Per i livelli di funzionalità elencati sono disponibili le funzionalità seguen
 | Modello shader (D3D12) | N/D | N/D |
 | [Risorse affiancate](tiled-resources.md) | No | No |
 | [Rasterizzazione conservativa](conservative-rasterization.md) | No | No |
-| [Visualizzazioni degli ordini di rasterizzazione](rasterizer-order-views.md) | No | No |
-| [Filtri min/max](/windows/win32/api/D3D11/ne-d3d11-d3d11_filter) | No | No |
+| [Visualizzazioni dell'ordine del rasterizzatore](rasterizer-order-views.md) | No | No |
+| [Filtri minimi/massimi](/windows/win32/api/D3D11/ne-d3d11-d3d11_filter) | No | No |
 | Eseguire il mapping del buffer predefinito | No | No |
 | [Valore di riferimento dello stencil specificato dello shader](shader-specified-stencil-reference-value.md) | No | No |
-| Caricamenti Unordered Access View tipi | No | No |
+| Carichi Unordered Access View tipi | No | No |
 | [Geometry shader](/previous-versions/bb205146(v=vs.85)) | No | No |
 | [Flusso in uscita](./d3d10-graphics-programming-guide-output-stream-stage.md) | No | No |
 | [DirectCompute/Compute Shader](direct3d-11-advanced-stages-compute-shader.md) | N/D | N/D |
-| [Shader della base e del dominio](direct3d-11-advanced-stages-tessellation.md) | No | No |
-| [Matrici di risorse texture](overviews-direct3d-11-resources-textures-intro.md) | No | No |
-| [Matrici di risorse della mappa cubi](overviews-direct3d-11-resources-textures-intro.md) | No | No |
+| [Hull e domain shader](direct3d-11-advanced-stages-tessellation.md) | No | No |
+| [Matrici di risorse trama](overviews-direct3d-11-resources-textures-intro.md) | No | No |
+| [Matrici di risorse di Mappe cubi](overviews-direct3d-11-resources-textures-intro.md) | No | No |
 | [Compressione BC4/BC5](../direct3d10/d3d10-graphics-programming-guide-resources-block-compression.md) | No | No |
 | <b>Livello \\ di funzionalità</b> | <b>9 \_ 2</b> | <b>9 \_ 1</b> |
 | [Compressione BC6H/BC7](texture-block-compression-in-direct3d-11.md) | No | No |
 | [Alpha-to-coverage](./d3d10-graphics-programming-guide-blend-state.md) | No | No |
 | [Formati estesi (BGRA e così via)](overviews-direct3d-11-devices-downlevel-exceptions.md) | Sì | Sì |
 | [Formato High Color 10 bit XR](overviews-direct3d-11-devices-downlevel-exceptions.md) | N/D | N/D |
-| [Operazioni logiche (unione output)](/windows/win32/api/D3D11/ns-d3d11-d3d11_feature_data_d3d11_options) | No | No |
+| [Operazioni per la logica (output merger)](/windows/win32/api/D3D11/ns-d3d11-d3d11_feature_data_d3d11_options) | No | No |
 | Rasterizzazione indipendente dalla destinazione | No | No |
-| [Destinazione di rendering multipla (MRT) con ForcedSampleCount 1](/windows/win32/api/D3D11/ns-d3d11-d3d11_feature_data_d3d11_options) | No | No |
+| [Più destinazione di rendering (MRT) con ForcedSampleCount 1](/windows/win32/api/D3D11/ns-d3d11-d3d11_feature_data_d3d11_options) | No | No |
 | Slot UAV | N/D | N/D |
 | UAV in ogni fase | N/D | N/D |
 | [Numero massimo di campioni forzati per il rendering solo UAV](/windows/win32/api/D3D11/ns-d3d11-d3d11_feature_data_d3d11_options) | N/D | N/D |
-| Offset costante del buffer e aggiornamenti parziali | Sì<sup>1</sup> | Sì<sup>1</sup> |
+| Offset del buffer costante e aggiornamenti parziali | Sì<sup>1</sup> | Sì<sup>1</sup> |
 | Formati a 16 bit per pixel (bpp) | Facoltativo<sup>1</sup> | Facoltativo<sup>1</sup> |
 | Dimensione massima trama | 2048 | 2048 |
 | Dimensione Max Cubemap | 512 | 512 |
 | Extent massimo volume | 256 | 256 |
-| Max Texture Repeat | 2048 | 128 |
+| Ripetizione massima trame | 2048 | 128 |
 | <b>Livello \\ di funzionalità</b> | <b>9 \_ 2</b> | <b>9 \_ 1</b> |
 | Max Anisotropy | 16 | 2 |
-| Numero massimo di primitive | 1048575 | 65535 |
-| Max Vertex Index | 1048575 | 65534 |
+| Numero massimo primitive | 1048575 | 65535 |
+| Indice massimo vertici | 1048575 | 65534 |
 | Numero massimo di slot di input | 16 | 16 |
 | Destinazioni di rendering simultanee | 1 | 1 |
 | Query di occlusione | Sì | No |
@@ -165,11 +165,11 @@ Per i livelli di funzionalità elencati sono disponibili le funzionalità seguen
 
 <sup>1</sup> Richiede il runtime Direct3D 11.1.
 
-<sup>2</sup> Il modello shader 5.0 e versione successiva può supportare facoltativamente shader a precisione doppia, shader a doppia precisione estesi, l'istruzione **sad4** shader e shader a precisione parziale. Per determinare le opzioni del modello shader 5.0 disponibili per DirectX 11, chiamare [**ID3D11Device::CheckFeatureSupport**](/windows/win32/api/D3D11/nf-d3d11-id3d11device-checkfeaturesupport). La compatibilità dipende dall'hardware in esecuzione. Il modello shader 5.1 e versioni successive sono supportati solo tramite l'API DirectX 12, indipendentemente dal livello di funzionalità in uso. DirectX 11 supporta solo fino al modello shader 5.0. L'API DirectX 12 passa solo al livello di funzionalità 11 \_ 0.
+<sup>2</sup> Il modello shader 5.0 e versione successiva può supportare facoltativamente shader a precisione doppia, shader a doppia precisione estesi, l'istruzione **sad4** shader e shader a precisione parziale. Per determinare le opzioni del modello shader 5.0 disponibili per DirectX 11, chiamare [**ID3D11Device::CheckFeatureSupport**](/windows/win32/api/D3D11/nf-d3d11-id3d11device-checkfeaturesupport). La compatibilità dipende dall'hardware in esecuzione. Il modello di shader 5.1 e versioni successive sono supportati solo tramite l'API DirectX 12, indipendentemente dal livello di funzionalità in uso. DirectX 11 supporta solo fino al modello shader 5.0. L'API DirectX 12 passa solo al livello di funzionalità 11 \_ 0.
 
-<sup>3</sup> Ai livelli di funzionalità \_ 9 1, 9 2 e 9 3, il dispositivo di visualizzazione supporta l'uso di trame 2D con dimensioni che non sono potenza di due in due \_ \_ condizioni. In primo luogo, è possibile creare un solo livello di mappa MIP per ogni trama e, in secondo luogo, non è consentita alcuna modalità di incapsulamento del campionatore per le trame (ovvero, i membri **AddressU**, **AddressV** e **AddressW** di [**D3D11 \_ SAMPLER \_ DESC**](/windows/win32/api/D3D11/ns-d3d11-d3d11_sampler_desc) non possono essere impostati su [**D3D11 \_ TEXTURE ADDRESS \_ \_ WRAP).**](/windows/win32/api/D3D11/ne-d3d11-d3d11_texture_address_mode)
+<sup>3</sup> Ai livelli di funzionalità \_ 9 1, 9 2 e 9 3, il dispositivo di visualizzazione supporta l'uso di trame 2D con dimensioni che non sono potenza di due in due \_ \_ condizioni. In primo luogo, è possibile creare un solo livello mappa MIP per ogni trama e, in secondo luogo, non è consentita alcuna modalità di incapsulamento del campionatore per le trame (ovvero, i membri **AddressU**, **AddressV** e **AddressW** di [**D3D11 \_ SAMPLER \_ DESC**](/windows/win32/api/D3D11/ns-d3d11-d3d11_sampler_desc) non possono essere impostati su [**D3D11 \_ TEXTURE ADDRESS \_ \_ WRAP).**](/windows/win32/api/D3D11/ne-d3d11-d3d11_texture_address_mode)
 
-<sup>4</sup> Ai livelli di funzionalità \_ 10 0, 10 1 e \_ 11 0, il dispositivo di visualizzazione supporta incondizionatamente l'uso di trame 2D con dimensioni che non sono di potenza di \_ due.
+<sup>4</sup> Ai livelli di funzionalità \_ 10 0, 10 1 e \_ 11 0, il dispositivo di visualizzazione supporta incondizionatamente l'uso di trame 2D con dimensioni non di potenza di \_ due.
 
 <sup>5</sup> Vertex shader 2a con 256 istruzioni, 32 registri temporanei, controllo di flusso statico di profondità 4, controllo dinamico del flusso di profondità 24 e PREDICAZIONE D3DVS20CAPS. \_ Pixel shader 2x con 512 istruzioni, 32 registri temporanei, controllo di flusso statico di profondità 4, controllo dinamico del flusso di profondità 24, \_ D3DPS20CAPS ARBITRARYSWIZZLE, \_ D3DPS20CAPS GRADIENTINSTRUCTIONS, PREDICATION D3DPS20CAPS, \_ D3DPS20CAPS \_ NODEPENDENTREADLIMIT e D3DPS20CAPS \_ NOTEXINSTRUCTIONLIMIT.
 
@@ -179,7 +179,7 @@ Per i livelli di funzionalità elencati sono disponibili le funzionalità seguen
 
 <sup>8</sup> Richiede il runtime Direct3D 12.
 
-<sup>9</sup> Nell'API Direct3D 12 sono previsti limiti al numero di descrittori in un heap CBV/SRV/UAV. Per [informazioni dettagliate, vedere](/windows/win32/direct3d12/hardware-support) Livelli hardware. Separatamente, è previsto un limite al numero di UAV in tutte le tabelle dei descrittori in tutte le fasi, che si basa sul livello [di binding delle risorse](https://microsoft.github.io/DirectX-Specs/d3d/ResourceBinding.html#levels-of-hardware-support).
+<sup>9</sup> Nell'API Direct3D 12 sono previsti limiti al numero di descrittori in un heap CBV/SRV/UAV. Per [informazioni dettagliate, vedere](../direct3d12/hardware-support.md) Livelli hardware. Separatamente, è previsto un limite al numero di UAV in tutte le tabelle dei descrittori in tutte le fasi, che si basa sul livello [di binding delle risorse](https://microsoft.github.io/DirectX-Specs/d3d/ResourceBinding.html#levels-of-hardware-support).
 
 Per informazioni dettagliate sul supporto del formato a diversi livelli di funzionalità hardware, vedere:
 

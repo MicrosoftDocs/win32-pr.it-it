@@ -4,12 +4,12 @@ description: Notifiche della finestra di dialogo
 ms.assetid: df51dad0-8320-4e7a-a93e-1731463f888a
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 94c10ad325551a8c00b2eb05ebbadc29337fedc7
-ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
+ms.openlocfilehash: 173f7d65b58b9d51d0e698c182679692e678ff439cdffc2bbc77d901fdd48572
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/28/2021
-ms.locfileid: "108112999"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120117821"
 ---
 # <a name="dialog-box-notifications"></a>Notifiche della finestra di dialogo
 

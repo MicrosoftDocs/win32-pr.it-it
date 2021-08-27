@@ -1,6 +1,6 @@
 ---
-title: Proprietà del metodo EAP (Eaptypes. h)
-description: Usato dai supplicant e dagli autenticatori per determinare i metodi EAP da usare con un supplicant o un autenticatore specifico. Le proprietà del metodo specificano inoltre la configurazione di un metodo.
+title: Proprietà del metodo EAP (Eaptypes.h)
+description: Usato da supplicant e autenticatori per determinare i metodi EAP da usare con un determinato supplicante o autenticatore. Le proprietà del metodo specificano anche la configurazione di un metodo.
 ms.assetid: 10407b85-5d2c-4c75-9b65-a0d65d4cc7ab
 topic_type:
 - apiref
@@ -40,20 +40,20 @@ api_type:
 - HeaderDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 844f897456ee21dfa93dfaa5b16b4f218ba5efb0
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: c88c31d77b666e377cbd1911cde8b5df63d8f5c2fc750cd03a701b03af5b60ab
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "103741847"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120094401"
 ---
 # <a name="eap-method-properties"></a>Proprietà del metodo EAP
 
-Usato dai supplicant e dagli autenticatori per determinare i metodi EAP da usare con un supplicant o un autenticatore specifico. Le proprietà del metodo specificano inoltre la configurazione di un metodo.
+Usato da supplicant e autenticatori per determinare i metodi EAP da usare con un determinato supplicante o autenticatore. Le proprietà del metodo specificano anche la configurazione di un metodo.
 
-Ad esempio, il richiedente [802.1 x](/previous-versions/windows/embedded/ms890287(v=msdn.10)) può richiedere metodi per avere determinate proprietà da usare con il supplicant [802.1 x](/previous-versions/windows/embedded/ms890287(v=msdn.10)) . Il materiale delle chiavi, ad esempio, è un requisito.
+Ad esempio, il supplicante [802.1X](/previous-versions/windows/embedded/ms890287(v=msdn.10)) può richiedere che i metodi abbia determinate proprietà da usare con il supplicant [802.1X.](/previous-versions/windows/embedded/ms890287(v=msdn.10)) Il materiale per la chiave, ad esempio, è un requisito.
 
-Sono elencate le proprietà supportate dai metodi EAP. Le proprietà vengono archiviate come valori della chiave del registro di sistema. Per ulteriori informazioni, vedere la sezione relativa alla chiave del registro di sistema della DLL del metodo peer EAP nell'argomento [configurazione del registro di sistema per i metodi EAP.](registry-keys-for-eap-methods.md)
+Sono elencate le proprietà supportate dai metodi EAP. Le proprietà vengono archiviate come valori delle chiavi del Registro di sistema. Per altre informazioni, vedere la sezione EAP Peer Method DLL Registry Key dell'argomento [Registry Configuration for EAP Methods.](registry-keys-for-eap-methods.md)
 
 <dl> <dt>
 
@@ -65,13 +65,13 @@ Sono elencate le proprietà supportate dai metodi EAP. Le proprietà vengono arc
 
 
 
-Il metodo consente la negoziazione del pacchetto di crittografia ai fini della crittografia dei dati. Windows Server 2008 supporta i pacchetti di [crittografia](/windows/desktop/SecAuthN/tls-cipher-suites)3DES seguenti:
+Il metodo consente la negoziazione del pacchetto di crittografia ai fini della crittografia dei dati. Windows Server 2008 supporta i pacchetti di crittografia 3DES [seguenti:](/windows/desktop/SecAuthN/tls-cipher-suites)
 
--   \_Sha RSA \_ con \_ 3DES \_ Ede \_ \_ (TLS & SSL 3)
--   TLS \_ dhe \_ DSS \_ with \_ 3DES \_ EDE \_ CBC \_ SHA (TLS & SSL 3)
--   SSL \_ CK \_ des \_ 192 \_ EDE3 \_ CBC \_ con \_ MD5 (SSL 2 se abilitato)
+-   TLS \_ RSA \_ CON \_ 3DES \_ EDE \_ CBC SHA \_ (TLS & SSL 3)
+-   TLS \_ DHE \_ DSS \_ CON \_ 3DES \_ EDE \_ CBC SHA \_ (TLS & SSL 3)
+-   SSL \_ CK \_ DES \_ 192 \_ EDE3 \_ CBC WITH \_ \_ MD5 (SSL 2 se abilitato)
 
-Per ulteriori informazioni sul protocollo di sicurezza TLS 1,0, vedere [RFC 2246](https://go.microsoft.com/fwlink/p/?linkid=84035).
+Per altre informazioni sul protocollo di sicurezza TLS 1.0, vedere [RFC 2246.](https://go.microsoft.com/fwlink/p/?linkid=84035)
 
 
 </dt> </dl> </dd> <dt>
@@ -84,7 +84,7 @@ Per ulteriori informazioni sul protocollo di sicurezza TLS 1,0, vedere [RFC 2246
 
 
 
-Il metodo fornisce uno scambio, in cui l'autenticatore autentica il peer e viceversa.
+Il metodo fornisce uno scambio in cui l'autenticatore autentica il peer e viceversa.
 
 
 </dt> </dl> </dd> <dt>
@@ -97,7 +97,7 @@ Il metodo fornisce uno scambio, in cui l'autenticatore autentica il peer e vicev
 
 
 
-Il metodo fornisce l'autenticazione e la protezione dell'origine dati contro la modifica non autorizzata delle informazioni per i pacchetti EAP, incluse le richieste e le risposte EAP. Quando si esegue questa attestazione, una specifica del metodo deve specificare i pacchetti EAP protetti e i campi protetti all'interno dei pacchetti EAP.
+Il metodo fornisce l'autenticazione dell'origine dati e la protezione da modifiche non autorizzate delle informazioni per i pacchetti EAP, incluse le richieste e le risposte EAP. Quando si effettua questa attestazione, una specifica del metodo deve specificare i pacchetti EAP protetti e i campi protetti all'interno dei pacchetti EAP.
 
 
 </dt> </dl> </dd> <dt>
@@ -110,7 +110,7 @@ Il metodo fornisce l'autenticazione e la protezione dell'origine dati contro la 
 
 
 
-Il metodo può proteggersi dalla riproduzione di un metodo EAP o dei relativi messaggi. Impossibile riprodurre le indicazioni relative al risultato dell'esito positivo e negativo.
+Il metodo può proteggersi dalla riproduzione di un metodo EAP o dei relativi messaggi. Le indicazioni di esito positivo e negativo non possono essere riprodotte.
 
 
 </dt> </dl> </dd> <dt>
@@ -123,7 +123,7 @@ Il metodo può proteggersi dalla riproduzione di un metodo EAP o dei relativi me
 
 
 
-Il metodo può crittografare i messaggi EAP. Le richieste EAP, le risposte EAP, le indicazioni relative al risultato dell'esito positivo e l'errore vengono crittografate. Un metodo che rende questa attestazione deve supportare Identity Protection.
+Il metodo può crittografare i messaggi EAP. Le richieste EAP, le risposte EAP, le indicazioni dei risultati di esito positivo e le indicazioni dei risultati degli errori vengono crittografate. Un metodo che effettua questa attestazione deve supportare identity protection.
 
 
 </dt> </dl> </dd> <dt>
@@ -136,7 +136,7 @@ Il metodo può crittografare i messaggi EAP. Le richieste EAP, le risposte EAP, 
 
 
 
-Il metodo può derivare il materiale delle chiavi esportabili, ad esempio la chiave della sessione master (MSK) e la chiave della sessione master estesa (EMSK). Il MSK viene utilizzato solo per ulteriori derivazioni delle chiavi, non direttamente per la protezione della conversazione EAP o dei dati successivi. L'uso di EMSK è riservato.
+Il metodo può derivare materiale esportabile per la chiave, ad esempio la chiave della sessione master (MSK) e la chiave della sessione master estesa (EMSK). La chiave MSK viene usata solo per un'ulteriore derivazione della chiave, non direttamente per la protezione della conversazione EAP o dei dati successivi. L'uso di EMSK è riservato.
 
 
 </dt> </dl> </dd> <dt>
@@ -214,7 +214,7 @@ La lunghezza minima della chiave supportata dal metodo EAP è 1024 bit.
 
 
 
-Il metodo non consente un attacco offline che ha un fattore di lavoro basato sul numero di password nel dizionario di un utente malintenzionato. Quando si usa l'autenticazione della password, le password vengono generalmente selezionate da un set di piccole dimensioni (rispetto a un set di chiavi a N bit), che genera un problema per gli attacchi con dizionario. È possibile che un metodo fornisca la protezione contro gli attacchi del dizionario se, quando usa una password come segreto, il metodo non consente un attacco offline che ha un fattore di lavoro basato sul numero di password nel dizionario di un utente malintenzionato.
+Il metodo non consente un attacco offline con un fattore di lavoro basato sul numero di password nel dizionario di un utente malintenzionato. Quando viene usata l'autenticazione della password, le password vengono in genere selezionate da un set di piccole dimensioni (rispetto a un set di chiavi a N bit), che genera un problema per gli attacchi al dizionario. Si può dire che un metodo fornisce protezione dagli attacchi con dizionario se, quando usa una password come segreto, il metodo non consente un attacco offline con un fattore di lavoro basato sul numero di password nel dizionario di un utente malintenzionato.
 
 
 </dt> </dl> </dd> <dt>
@@ -227,7 +227,7 @@ Il metodo non consente un attacco offline che ha un fattore di lavoro basato sul
 
 
 
-Il metodo ha la possibilità, nel caso in cui sia stata stabilita un'associazione di sicurezza in precedenza, per creare un'associazione di sicurezza nuova o aggiornata in modo più efficiente o con un numero minore di round trip.
+Il metodo ha la possibilità, nel caso in cui sia stata precedentemente stabilita un'associazione di sicurezza, di creare un'associazione di sicurezza nuova o aggiornata in modo più efficiente o in un numero minore di round trip.
 
 
 </dt> </dl> </dd> <dt>
@@ -240,7 +240,7 @@ Il metodo ha la possibilità, nel caso in cui sia stata stabilita un'associazion
 
 
 
-Il metodo dimostra al server EAP che una singola entità ha agito come peer EAP per tutti i metodi eseguiti in un metodo di tunneling. Il binding può inoltre implicare che il server EAP dimostri al peer che una singola entità ha agito come server EAP per tutti i metodi eseguiti in un metodo di tunneling. Se eseguita correttamente, l'associazione serve a mitigare le vulnerabilità man-in-the-Middle.
+Il metodo dimostra al server EAP che una singola entità ha fungeto da peer EAP per tutti i metodi eseguiti all'interno di un metodo di tunnel. L'associazione può anche implicare che il server EAP dimostra al peer che una singola entità ha fungeto da server EAP per tutti i metodi eseguiti all'interno di un metodo di tunnel. Se eseguito correttamente, il binding serve a mitigare le vulnerabilità man-in-the-middle.
 
 
 </dt> </dl> </dd> <dt>
@@ -253,7 +253,7 @@ Il metodo dimostra al server EAP che una singola entità ha agito come peer EAP 
 
 
 
-Il metodo dimostra che gli attacchi passivi, ad esempio l'acquisizione della conversazione EAP, o gli attacchi attivi (inclusa la compromissione di MSK o EMSK) non compromettono i MSKs o EMSKs successivi o precedenti.
+Il metodo dimostra che gli attacchi passivi (ad esempio l'acquisizione della conversazione EAP) o gli attacchi attivi (inclusa la compromissione di MSK o EMSK) non compromette gli MSK o gli EMSK successivi o precedenti.
 
 
 </dt> </dl> </dd> <dt>
@@ -266,7 +266,7 @@ Il metodo dimostra che gli attacchi passivi, ad esempio l'acquisizione della con
 
 
 
-Il metodo può supportare la frammentazione e il riassemblaggio se i pacchetti EAP superano la MTU minima (unità di trasmissione massima) di 1020 ottetti.
+Il metodo può supportare la frammentazione e il riassemblaggio se i pacchetti EAP superano il valore minimo di MTU (unità massima di trasmissione) di 1020 ottetti.
 
 
 </dt> </dl> </dd> <dt>
@@ -279,7 +279,7 @@ Il metodo può supportare la frammentazione e il riassemblaggio se i pacchetti E
 
 
 
-Il metodo può comunicare proprietà del canale protette dall'integrità, ad esempio identificatori di endpoint, che possono essere confrontati con i valori comunicati usando meccanismi fuori banda, ad esempio [autenticazione, autorizzazione e accounting](https://go.microsoft.com/fwlink/p/?linkid=84063) (AAA) o il protocollo di livello inferiore.
+Il metodo può comunicare le proprietà del canale protetto dall'integrità, ad esempio gli identificatori di endpoint, che possono essere confrontati con i valori comunicati tramite meccanismi fuori banda, ad esempio un protocollo di [autenticazione,](https://go.microsoft.com/fwlink/p/?linkid=84063) autorizzazione e accounting (AAA) o il protocollo di livello inferiore.
 
 
 </dt> </dl> </dd> <dt>
@@ -292,7 +292,7 @@ Il metodo può comunicare proprietà del canale protette dall'integrità, ad ese
 
 
 
-Il metodo supporta protezione accesso alla rete (NAP).
+Il metodo supporta Protezione accesso alla rete.
 
 
 </dt> </dl> </dd> <dt>
@@ -318,7 +318,7 @@ Il metodo può essere usato in un computer autonomo.
 
 
 
-Il metodo supporta la crittografia del [protocollo Microsoft Point-to-Point Encryption (MPPE)](https://go.microsoft.com/fwlink/p/?linkid=83915) .
+Il metodo supporta la crittografia del protocollo [MPPE (Microsoft Point-to-Point](https://go.microsoft.com/fwlink/p/?linkid=83915) Encryption).
 
 
 </dt> </dl> </dd> <dt>
@@ -370,7 +370,7 @@ Il metodo è stato certificato dal programma di certificazione EAP. Questo bit d
 
 
 
-Windows 7 o versioni successive: il metodo può essere usato per autenticare un computer in una rete usando le credenziali dei computer.
+Windows 7 o versione successiva: il metodo può essere usato per autenticare un computer in una rete usando le credenziali del computer.
 
 
 </dt> </dl> </dd> <dt>
@@ -383,7 +383,7 @@ Windows 7 o versioni successive: il metodo può essere usato per autenticare un 
 
 
 
-Windows 7 o versioni successive: il metodo può essere usato per autenticare un utente in una rete usando le credenziali degli utenti.
+Windows 7 o versione successiva: il metodo può essere usato per autenticare un utente in una rete usando le credenziali dell'utente.
 
 
 </dt> </dl> </dd> <dt>
@@ -396,7 +396,7 @@ Windows 7 o versioni successive: il metodo può essere usato per autenticare un 
 
 
 
-Windows 7 o versioni successive: il metodo supporta l'invio dell'identità utente in un canale protetto.
+Windows 7 o versione successiva: il metodo supporta l'invio dell'identità utente in un canale protetto.
 
 
 </dt> </dl> </dd> <dt>
@@ -409,7 +409,7 @@ Windows 7 o versioni successive: il metodo supporta l'invio dell'identità utent
 
 
 
-Windows 7 o versioni successive: il metodo è un metodo con tunneling e supporta il concatenamento di metodi EAP all'interno del tunnel.
+Windows 7 o versione successiva: il metodo è un metodo con tunneling e supporta il concatenamento dei metodi EAP all'interno del tunnel.
 
 
 </dt> </dl> </dd> <dt>
@@ -422,7 +422,7 @@ Windows 7 o versioni successive: il metodo è un metodo con tunneling e supporta
 
 
 
-Windows 7 o versioni successive: il metodo supporta l'equivalenza dello stato condiviso come definito nella [specifica RFC 4017](https://go.microsoft.com/fwlink/p/?linkid=90455).
+Windows 7 o versione successiva: il metodo supporta l'equivalenza dello stato condiviso come definito in [RFC 4017.](https://go.microsoft.com/fwlink/p/?linkid=90455)
 
 
 </dt> </dl> </dd> <dt>
@@ -446,9 +446,9 @@ Riservato. Non usato.
 
 | Requisito | Valore |
 |-------------------------------------|---------------------------------------------------------------------------------------|
-| Client minimo supportato<br/> | \[Solo app desktop di Windows Vista\]<br/>                                        |
-| Server minimo supportato<br/> | \[Solo app desktop Windows Server 2008\]<br/>                                  |
-| Intestazione<br/>                   | <dl> <dt>Eaptypes. h</dt> </dl> |
+| Client minimo supportato<br/> | Windows Solo \[ app desktop Vista\]<br/>                                        |
+| Server minimo supportato<br/> | Windows Solo app desktop di Server 2008 \[\]<br/>                                  |
+| Intestazione<br/>                   | <dl> <dt>Eaptypes.h</dt> </dl> |
 
 
 
@@ -456,7 +456,7 @@ Riservato. Non usato.
 
 <dl> <dt>
 
-[Chiavi del registro di sistema per i metodi EAP](registry-keys-for-eap-methods.md)
+[Chiavi del Registro di sistema per i metodi EAP](registry-keys-for-eap-methods.md)
 </dt> <dt>
 
 [Costanti EAPHost comuni](common-eap-host-error-constants.md)

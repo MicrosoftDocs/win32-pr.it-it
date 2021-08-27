@@ -1,7 +1,7 @@
 ---
-description: Fornisce i seguenti overload di operatore e cast di tipo per le strutture D3DXPLANE.
+description: Fornisce gli overload dell'operatore e i cast di tipo seguenti per le strutture D3DXPLANE.
 ms.assetid: 05f80b68-fb2b-4fd7-94e9-e5b40968c4aa
-title: Estensioni D3DXPLANE (D3dx9math. h)
+title: Estensioni D3DXPLANE (D3dx9math.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -13,16 +13,16 @@ api_type:
 - HeaderDef
 api_location:
 - d3dx9math.h
-ms.openlocfilehash: 3ff8f68283cd81e6647fcdea480ac19b48547cab
-ms.sourcegitcommit: 14010c34b35fa268046c7683f021f86de08ddd0a
+ms.openlocfilehash: ec6d2724c9c151aca203592cb0bf3caf0b30c4f359b4f95ec2ac734500e59197
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/15/2021
-ms.locfileid: "106322111"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120096111"
 ---
 # <a name="d3dxplane-extensions"></a>Estensioni D3DXPLANE
 
-Fornisce i seguenti overload di operatore e cast di tipo per le strutture [**D3DXPLANE**](d3dxplane.md) .
+Fornisce gli overload dell'operatore e i cast di tipo seguenti per [**le strutture D3DXPLANE.**](d3dxplane.md)
 
 ``` syntax
 typedef struct D3DXPLANE
@@ -64,9 +64,9 @@ Tipi derivati: \* LPD3DXPLANE
 
 ## <a name="remarks"></a>Commenti
 
-Per ulteriori informazioni sui membri della struttura, fare riferimento a [**D3DXPLANE**](d3dxplane.md).
+Per altre informazioni sui membri della struttura, vedere [**D3DXPLANE**](d3dxplane.md).
 
-Gli overload degli operatori e i cast di tipo per questa struttura sono implementati in d3dx9math. inl.
+Gli overload degli operatori e i cast di tipo per questa struttura vengono implementati in d3dx9math.inl.
 
 ## <a name="requirements"></a>Requisiti
 
@@ -74,7 +74,7 @@ Gli overload degli operatori e i cast di tipo per questa struttura sono implemen
 
 | Requisito | Valore |
 |-------------------|----------------------------------------------------------------------------------------|
-| Intestazione<br/> | <dl> <dt>D3dx9math. h</dt> </dl> |
+| Intestazione<br/> | <dl> <dt>D3dx9math.h</dt> </dl> |
 
 
 

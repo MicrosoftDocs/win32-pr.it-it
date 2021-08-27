@@ -1,23 +1,23 @@
 ---
-title: MOV (SM4-ASM)
-description: Spostamento a livello di componente. | MOV (SM4-ASM)
+title: mov (sm4 - asm)
+description: Spostamento per componente. | mov (sm4 - asm)
 ms.assetid: A8865237-59D3-4332-9F09-157E10C4FFC6
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: f029cd8a31a9348e729681878773c225b87b9fbb
-ms.sourcegitcommit: 92e74c99f8f4d097676959d0c317f533c2400a80
+ms.openlocfilehash: 247e3838841d63c3cadf2e075fd088b534bf56ea19b8869b7cffe91e9f75e6c5
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/09/2021
-ms.locfileid: "104234641"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120095371"
 ---
-# <a name="mov-sm4---asm"></a>MOV (SM4-ASM)
+# <a name="mov-sm4---asm"></a>mov (sm4 - asm)
 
-Spostamento a livello di componente.
+Spostamento per componente.
 
 
 
-| Istruzione: MOV \[ \_ Sat \] dest \[ . mask \] , \[ - \] src0 \[ \_ ABS \] \[ . Swizzle\] |
+| Istruzione: mov \[ \_ sat \] dest \[ .mask \] , \[ - \] src0 \[ \_ abs \] \[ .swizzle\] |
 |-------------------------------------------------------------------------|
 
 
@@ -28,8 +28,8 @@ Spostamento a livello di componente.
 
 | Elemento                                                            | Descrizione                                                                              |
 |-----------------------------------------------------------------|------------------------------------------------------------------------------------------|
-| <span id="dest"></span><span id="DEST"></span>*dest*<br/> | \[nell' \] indirizzo del risultato dell'operazione.<br/> *dest*  =  *src0*<br/> |
-| <span id="src0"></span><span id="SRC0"></span>*src0*<br/> | \[nei \] componenti da spostare.<br/>                                                |
+| <span id="dest"></span><span id="DEST"></span>*Dest*<br/> | \[in \] Indirizzo del risultato dell'operazione.<br/> *dest*  =  *src0*<br/> |
+| <span id="src0"></span><span id="SRC0"></span>*src0*<br/> | \[in \] Componenti da spostare.<br/>                                                |
 
 
 
@@ -37,7 +37,7 @@ Spostamento a livello di componente.
 
 ## <a name="remarks"></a>Commenti
 
-I modificatori, diversi da Swizzle, presuppongono che i dati siano a virgola mobile. L'assenza di modificatori sposta solo i dati senza alterare i bit.
+I modificatori, diversi da swizzle, presuppongono che i dati siano a virgola mobile. L'assenza di modificatori sposta semplicemente i dati senza modificare i bit.
 
 Questa istruzione si applica alle fasi dello shader seguenti:
 
@@ -51,7 +51,7 @@ Questa istruzione si applica alle fasi dello shader seguenti:
 
  
 
-## <a name="minimum-shader-model"></a>Modello Shader minimo
+## <a name="minimum-shader-model"></a>Modello di shader minimo
 
 Questa funzione è supportata nei modelli shader seguenti.
 
@@ -59,12 +59,12 @@ Questa funzione è supportata nei modelli shader seguenti.
 
 | Modello di shader                                              | Supportato |
 |-----------------------------------------------------------|-----------|
-| [Modello Shader 5](d3d11-graphics-reference-sm5.md)        | sì       |
-| [Modello Shader 4,1](dx-graphics-hlsl-sm4.md)              | sì       |
-| [Modello Shader 4](dx-graphics-hlsl-sm4.md)                | sì       |
+| [Modello shader 5](d3d11-graphics-reference-sm5.md)        | sì       |
+| [Modello shader 4.1](dx-graphics-hlsl-sm4.md)              | sì       |
+| [Modello shader 4](dx-graphics-hlsl-sm4.md)                | sì       |
 | [Shader Model 3 (DirectX HLSL)](dx-graphics-hlsl-sm3.md) | no        |
-| [Shader Model 2 (DirectX HLSL)](dx-graphics-hlsl-sm2.md) | no        |
-| [Shader Model 1 (DirectX HLSL)](dx-graphics-hlsl-sm1.md) | no        |
+| [Modello shader 2 (DirectX HLSL)](dx-graphics-hlsl-sm2.md) | no        |
+| [Modello shader 1 (DirectX HLSL)](dx-graphics-hlsl-sm1.md) | no        |
 
 
 
@@ -74,7 +74,7 @@ Questa funzione è supportata nei modelli shader seguenti.
 
 <dl> <dt>
 
-[Assembly Shader Model 4 (DirectX HLSL)](dx-graphics-hlsl-sm4-asm.md)
+[Shader Model 4 Assembly (DirectX HLSL)](dx-graphics-hlsl-sm4-asm.md)
 </dt> </dl>
 
  

@@ -1,6 +1,6 @@
 ---
-description: 'Altre informazioni su: funzione JetStopBackup'
-title: JetStopBackup (funzione)
+description: 'Altre informazioni: Funzione JetStopBackup'
+title: Funzione JetStopBackup
 TOCTitle: JetStopBackup Function
 ms:assetid: b7545284-2fdb-4470-8466-fc2109ad63c5
 ms:mtpsurl: https://msdn.microsoft.com/library/Gg294067(v=EXCHG.10)
@@ -18,25 +18,25 @@ api_type:
 api_location:
 - ESENT.DLL
 ROBOTS: INDEX,FOLLOW
-ms.openlocfilehash: c47a1454e5846fae510a7b91c197d4b180fd14a7
-ms.sourcegitcommit: 168d11879cb9fd89d26f826482725c0a626be00f
+ms.openlocfilehash: fd5f7fe7096b0562aa9fc4ce8d15f77a4ccf205f
+ms.sourcegitcommit: 9b5faa61c38b2d0c432b7f2dbee8c127b0e28a7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/16/2021
-ms.locfileid: "106323797"
+ms.lasthandoff: 08/19/2021
+ms.locfileid: "122469698"
 ---
-# <a name="jetstopbackup-function"></a>JetStopBackup (funzione)
+# <a name="jetstopbackup-function"></a>Funzione JetStopBackup
 
 
 _**Si applica a:** Windows | Windows Server_
 
-## <a name="jetstopbackup-function"></a>JetStopBackup (funzione)
+## <a name="jetstopbackup-function"></a>Funzione JetStopBackup
 
-La funzione **JetStopBackup** impedisce a tutte le attività correlate al backup di flusso di continuare su un'istanza in esecuzione specifica, chiudendo in tal modo il backup di flusso in modo prevedibile.
+La **funzione JetStopBackup** impedisce a qualsiasi attività correlata al backup di streaming di continuare in un'istanza in esecuzione specifica, terminando così il backup di streaming in modo prevedibile.
 
 **Windows XP:**  Questa funzione è stata introdotta in Windows XP.
 
-[JetStopService](./jetstopservice-function.md) è la chiamata legacy quando è consentita una sola istanza. In questo caso, l'unica istanza attiva è quella preparata per la terminazione.
+[JetStopService è](./jetstopservice-function.md) la chiamata legacy quando è consentita una sola istanza. In questo caso, l'unica istanza attiva è quella preparata per la terminazione.
 
 ```cpp
 JET_ERR JET_API JetStopBackup(void);
@@ -48,71 +48,29 @@ Questa funzione non ha parametri.
 
 ### <a name="return-value"></a>Valore restituito
 
-Questa funzione restituisce il tipo di dati [JET_ERR](./jet-err.md) con uno dei seguenti codici restituiti. Per ulteriori informazioni sugli errori ESE possibili, vedere la pagina relativa agli errori e ai [parametri di gestione degli](./error-handling-parameters.md)errori del [motore di archiviazione estensibile](./extensible-storage-engine-errors.md) .
-
-<table>
-<colgroup>
-<col style="width: 50%" />
-<col style="width: 50%" />
-</colgroup>
-<thead>
-<tr class="header">
-<th><p>Codice restituito</p></th>
-<th><p>Descrizione</p></th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td><p>JET_errSuccess</p></td>
-<td><p>Operazione riuscita.</p></td>
-</tr>
-<tr class="even">
-<td><p>JET_errRunningInMultiInstanceMode</p></td>
-<td><p>Non è chiaro quale istanza preparare per la terminazione quando si usa <a href="gg269240(v=exchg.10).md">JetStopService</a> con più modalità di istanza.</p>
-<p><strong>Windows XP:</strong>  Questo valore restituito è stato introdotto in Windows XP.</p></td>
-</tr>
-</tbody>
-</table>
+Questa funzione restituisce il [JET_ERR](./jet-err.md) dati con uno dei codici restituiti seguenti. Per altre informazioni sui possibili errori ESE, vedere Errori del [motore Archiviazione estendibile](./extensible-storage-engine-errors.md) e Parametri [di gestione degli errori](./error-handling-parameters.md).
 
 
-Se questa funzione ha esito positivo, l'istanza di avrà esito negativo per le nuove API di backup di flusso.
+| <p>Codice restituito</p> | <p>Descrizione</p> | 
+|--------------------|--------------------|
+| <p>JET_errSuccess</p> | <p>Operazione riuscita.</p> | 
+| <p>JET_errRunningInMultiInstanceMode</p> | <p>Non è chiaro quale istanza preparare per la terminazione quando si usa <a href="gg269240(v=exchg.10).md">JetStopService</a> con la modalità a più istanze.</p><p><strong>Windows XP:</strong>  Questo valore restituito è stato introdotto in Windows XP.</p> | 
 
-Se questa funzione ha esito negativo, non verrà eseguito alcun passaggio per preparare la terminazione del backup nell'istanza e non si verificherà alcuna modifica allo stato dell'istanza.
+
+
+Se questa funzione ha esito positivo, l'istanza inizierà a non riuscire con le nuove API di backup di streaming.
+
+Se questa funzione ha esito negativo, non verrà eseguita alcuna procedura per preparare la terminazione del backup nell'istanza e non verrà apportata alcuna modifica allo stato dell'istanza.
 
 #### <a name="remarks"></a>Commenti
 
-Il backup viene in genere attivato da un evento esterno al meccanismo di processo e tramite questa API, l'applicazione ESENT stessa effettuerà altre chiamate alle API di backup di flusso per avere esito negativo. La maggior parte delle API di backup di flusso inizierà a non riuscire con JET_errBackupAbortByServer. Di conseguenza, lo stato di avanzamento del backup di flusso, ad esempio [JetReadFileInstance](./jetreadfileinstance-function.md), restituirà un errore. Verranno comunque consentite le operazioni di backup che fanno parte della terminazione del backup, ad esempio [JetEndExternalBackupInstance](./jetendexternalbackupinstance-function.md).
+Il backup viene in genere attivato da un evento esterno al meccanismo del processo e, usando questa API, l'applicazione ESENT stessa effettua altre chiamate alle API di backup di streaming in modo che non riescano. La maggior parte delle API di backup di streaming inizierà a non riuscire JET_errBackupAbortByServer. Di conseguenza, qualsiasi avanzamento del backup di streaming (ad esempio [JetReadFileInstance](./jetreadfileinstance-function.md)) restituirà un errore. Le operazioni di backup che fanno parte della terminazione del backup ( ad esempio [JetEndExternalBackupInstance](./jetendexternalbackupinstance-function.md)) saranno comunque consentite.
 
 #### <a name="requirements"></a>Requisiti
 
-<table>
-<colgroup>
-<col style="width: 50%" />
-<col style="width: 50%" />
-</colgroup>
-<tbody>
-<tr class="odd">
-<td><p><strong>Client</strong></p></td>
-<td><p>Richiede Windows Vista, Windows XP o Windows 2000 Professional.</p></td>
-</tr>
-<tr class="even">
-<td><p><strong>Server</strong></p></td>
-<td><p>Richiede Windows Server 2008, Windows Server 2003 o Windows 2000 Server.</p></td>
-</tr>
-<tr class="odd">
-<td><p><strong>Intestazione</strong></p></td>
-<td><p>Dichiarata in esent. h.</p></td>
-</tr>
-<tr class="even">
-<td><p><strong>Libreria</strong></p></td>
-<td><p>Usare ESENT. lib.</p></td>
-</tr>
-<tr class="odd">
-<td><p><strong>DLL</strong></p></td>
-<td><p>Richiede ESENT.dll.</p></td>
-</tr>
-</tbody>
-</table>
+
+| | | <p><strong>Client</strong></p> | <p>Richiede Windows Vista, Windows XP o Windows 2000 Professional.</p> | | <p><strong>Server</strong></p> | <p>Richiede Windows Server 2008, Windows Server 2003 o Windows 2000 Server.</p> | | <p><strong>Intestazione</strong></p> | <p>Dichiarato in Esent.h.</p> | | <p><strong>Libreria</strong></p> | <p>Usare ESENT.lib.</p> | | <p><strong>DLL</strong></p> | <p>Richiede ESENT.dll.</p> | 
+
 
 
 #### <a name="see-also"></a>Vedere anche

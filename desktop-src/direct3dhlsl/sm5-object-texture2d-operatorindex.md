@@ -1,9 +1,9 @@
 ---
-title: 'Funzione Texture2D:: operator'
-description: 'Restituisce una variabile di risorsa di sola lettura. | Funzione Texture2D:: operator'
+title: Funzione Texture2D::Operator
+description: Restituisce una variabile di risorsa di sola lettura. | Funzione Texture2D::Operator
 ms.assetid: 72ba3fc8-04c3-479a-b307-525020898bac
 keywords:
-- Funzione operator HLSL
+- Funzione operatore HLSL
 topic_type:
 - apiref
 api_name:
@@ -13,14 +13,14 @@ api_type:
 ms.topic: reference
 ms.date: 05/31/2018
 api_location: ''
-ms.openlocfilehash: 2c397b1b80836f48cb856d03ccdf52ad2c95ce48
-ms.sourcegitcommit: 92e74c99f8f4d097676959d0c317f533c2400a80
-ms.translationtype: HT
+ms.openlocfilehash: 99323f1dcf212fc42c413a4be8231aa22acbd00cf3f40b408e3f9f5eca59f578
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
+ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/09/2021
-ms.locfileid: "104981703"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120095071"
 ---
-# <a name="texture2doperator--function"></a>Funzione Texture2D:: operator
+# <a name="texture2doperator--function"></a>Funzione Texture2D::Operator
 
 Restituisce una variabile di risorsa di sola lettura.
 
@@ -36,7 +36,7 @@ R Operator[](
 
 <dl> <dt>
 
-*pos* \[ in\]
+*pos* \[ Pollici\]
 </dt> <dd>
 
 Tipo: **uint2**
@@ -49,19 +49,19 @@ Posizione dell'indice. Contiene le coordinate (x, y).
 
 Tipo: **R**
 
-Variabile di sola lettura di una risorsa.
+Variabile di risorsa di sola lettura.
 
 ## <a name="remarks"></a>Commenti
 
-Questo metodo accede sempre al primo livello MIP. Per specificare altri livelli MIP, usare invece il metodo [**MIP \[ \] \[ \] . operator**](sm5-object-texture2d-mipsoperatorindex.md) .
+Questo metodo accede sempre al primo livello mip. Per specificare altri livelli mip, usare invece il [**metodo \[ \] \[ \] mip.operator.**](sm5-object-texture2d-mipsoperatorindex.md)
 
-Gli esempi di trama possono essere usati per l'interpolazione bilineare.
+I campioni di trama possono essere usati per l'interpolazione bilineare.
 
 Questa funzione è supportata per i tipi di shader seguenti:
 
 
 
-| Vertice | Hull | Dominio | Geometria | Pixel | Calcolo |
+| Vertice | Scafo | Dominio | Geometria | Pixel | Calcolo |
 |--------|------|--------|----------|-------|---------|
 | x      | x    | x      | x        | x     | x       |
 
@@ -76,7 +76,7 @@ Questa funzione è supportata per i tipi di shader seguenti:
 [Texture2D](sm5-object-texture2d.md)
 </dt> <dt>
 
-[Modello Shader 5](d3d11-graphics-reference-sm5.md)
+[Modello shader 5](d3d11-graphics-reference-sm5.md)
 </dt> </dl>
 
  

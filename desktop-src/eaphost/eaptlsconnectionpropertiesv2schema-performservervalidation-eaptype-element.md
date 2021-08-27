@@ -1,6 +1,6 @@
 ---
 title: TLSExtensions (schema v2)
-description: Informazioni sull'elemento TLSExtensions (TLSExtensionsType). Questo elemento consente miglioramenti futuri allo schema.
+description: Informazioni sull'elemento TLSExtensions (TLSExtensionsType). Questo elemento consente miglioramenti futuri dello schema.
 ms.assetid: efbb402e-a001-4782-aca8-be4aeca8328c
 keywords:
 - Elemento TLSExtensions EAPHost
@@ -14,16 +14,16 @@ ms.topic: reference
 ms.date: 05/31/2018
 api_location: ''
 ROBOTS: INDEX,FOLLOW
-ms.openlocfilehash: 02ad636f9894f96b9d6e9b2d27952117c7581e69
-ms.sourcegitcommit: b0ebdefc3dcd5c04bede94091833aa1015a2f95c
+ms.openlocfilehash: aee5841de491b72481cccd07fd6f4f65ee9cfc6dbd0620dc4558ed6ca3c2b130
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/21/2020
-ms.locfileid: "104399735"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120094381"
 ---
 # <a name="tlsextensions-v2-schema"></a>TLSExtensions (schema v2)
 
-L'elemento **TLSExtensions (TLSExtensionsType)** consente miglioramenti futuri allo schema.
+**L'elemento TLSExtensions (TLSExtensionsType)** consente miglioramenti futuri allo schema.
 
 ``` syntax
 <xs:element name="TLSExtensions"
@@ -33,16 +33,16 @@ L'elemento **TLSExtensions (TLSExtensionsType)** consente miglioramenti futuri a
 
 ## <a name="remarks"></a>Commenti
 
-L'elemento **TLSExtensions** è facoltativo.
+**L'elemento TLSExtensions** è facoltativo.
 
 ## <a name="requirements"></a>Requisiti
 
 
 
-| Ruolo | Versione minima del sistema operativo supportata |
+| Ruolo | Versione minima supportata del sistema operativo |
 |------|------------------------------|
-| Client<br/> | \[Solo app desktop di Windows 7\]<br/>              |
-| Server<br/> | Solo app desktop Windows Server 2008 R2 \[\]<br/> |
+| Client<br/> | Windows 7 \[ app desktop\]<br/>              |
+| Server<br/> | Windows Solo app desktop server 2008 R2 \[\]<br/> |
 
 
 

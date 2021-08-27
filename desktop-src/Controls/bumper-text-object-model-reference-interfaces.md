@@ -1,17 +1,17 @@
 ---
-title: Interfacce del modello a oggetti testo
-description: Interfacce del modello a oggetti testo
+title: Interfacce del modello a oggetti di testo
+description: Interfacce del modello a oggetti di testo
 ms.assetid: 477b90fb-d544-4529-8495-87eb88fc2573
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: d7476e3fdc6b6bcd885dedadca856d6d734f8b96
-ms.sourcegitcommit: 92e74c99f8f4d097676959d0c317f533c2400a80
+ms.openlocfilehash: 8eb63f06b069f274376a2b4c6e715889858613e3b26df036d1cceb6502bdc476
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/09/2021
-ms.locfileid: "104234832"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120063701"
 ---
-# <a name="text-object-model-interfaces"></a>Interfacce del modello a oggetti testo
+# <a name="text-object-model-interfaces"></a>Interfacce del modello a oggetti di testo
 
 ## <a name="in-this-section"></a>Contenuto della sezione
 

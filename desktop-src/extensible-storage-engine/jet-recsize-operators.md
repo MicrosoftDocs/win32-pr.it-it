@@ -1,25 +1,25 @@
 ---
-description: 'Altre informazioni su: operatori JET_RECSIZE'
-title: Operatori di JET_RECSIZE (Microsoft. ISAM. esent. Interop. vista)
+description: 'Altre informazioni su: Operatori JET_RECSIZE'
+title: JET_RECSIZE (Microsoft.Isam.Esent.Interop.Vista)
 TOCTitle: JET_RECSIZE operators
 ms:assetid: 56c98252-155c-d738-f75d-65d35d5be50d
 ms:mtpsurl: https://msdn.microsoft.com/library/Hh557600(v=EXCHG.10)
 ms:contentKeyID: 39512132
 ms.date: 07/30/2014
 ms.topic: article
-ms.openlocfilehash: 57717504ed794fc9e722aaaea9e518f99a380023
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 6c3bfaf54bba1d115efa19a8a578c4b9a51e6b8d890272678ce08f53983b0773
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "104234096"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120063191"
 ---
-# <a name="jet_recsize-operators"></a>Operatori di JET_RECSIZE
+# <a name="jet_recsize-operators"></a>JET_RECSIZE seguenti
 
-Includi membri protetti  
+Includere membri protetti  
 Includi membri ereditati  
 
-Il tipo di [JET_RECSIZE](./jet-recsize-structure2.md) espone i membri seguenti.
+Il [JET_RECSIZE](./jet-recsize-structure2.md) espone i membri seguenti.
 
 ## <a name="operators"></a>Operatori
 
@@ -34,8 +34,8 @@ Il tipo di [JET_RECSIZE](./jet-recsize-structure2.md) espone i membri seguenti.
 <tbody>
 <tr class="odd">
 <td><img src="../images/dn350944.puboperator(exchg.10).gif" title="Operatore pubblico" alt="Public operator" /><img src="../images/dn292146.static(exchg.10).gif" title="Membro statico" alt="Static member" /></td>
-<td><a href="hh578675(v=exchg.10).md">Oltre</a></td>
-<td>Aggiungere le dimensioni in due strutture di JET_RECSIZE.</td>
+<td><a href="hh578675(v=exchg.10).md">Addizione</a></td>
+<td>Aggiungere le dimensioni in due JET_RECSIZE struttura .</td>
 </tr>
 <tr class="even">
 <td><img src="../images/dn350944.puboperator(exchg.10).gif" title="Operatore pubblico" alt="Public operator" /><img src="../images/dn292146.static(exchg.10).gif" title="Membro statico" alt="Static member" /></td>
@@ -50,7 +50,7 @@ Il tipo di [JET_RECSIZE](./jet-recsize-structure2.md) espone i membri seguenti.
 <tr class="even">
 <td><img src="../images/dn350944.puboperator(exchg.10).gif" title="Operatore pubblico" alt="Public operator" /><img src="../images/dn292146.static(exchg.10).gif" title="Membro statico" alt="Static member" /></td>
 <td><a href="hh596696(v=exchg.10).md">Sottrazione</a></td>
-<td>Calcolare la differenza di dimensioni tra due strutture di JET_RECSIZE.</td>
+<td>Calcolare la differenza di dimensioni tra due JET_RECSIZE struttura .</td>
 </tr>
 </tbody>
 </table>
@@ -62,6 +62,6 @@ Inizio
 
 #### <a name="reference"></a>Riferimento
 
-[Struttura JET_RECSIZE](./jet-recsize-structure2.md)
+[JET_RECSIZE struttura](./jet-recsize-structure2.md)
 
-[Spazio dei nomi Microsoft. ISAM. esent. Interop. vista](./microsoft.isam.esent.interop.vista-namespace.md)
+[Spazio dei nomi Microsoft.Isam.Esent.Interop.Vista](./microsoft.isam.esent.interop.vista-namespace.md)

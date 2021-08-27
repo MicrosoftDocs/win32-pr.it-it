@@ -1,29 +1,29 @@
 ---
-description: Questo argomento elenca le tabelle di frequenza usate per l'ottimizzazione della TV analoga per la Slovacchia.
+description: In questo argomento vengono elencate le tabelle di frequenza usate per l'ottimizzazione della TV analoga per la Repubblica slovacca.
 ms.assetid: 359ce11e-547d-43ac-82c3-aac9d739b496
-title: Assegnazioni canale Slovacchia
+title: Assegnazioni di canali per la Repubblica slovacca
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 4382b5cd9a3515f68979ae12c9bf63d6fd063175
-ms.sourcegitcommit: a47bd86f517de76374e4fff33cfeb613eb259a7e
+ms.openlocfilehash: 99c9c5df17d5d2f4403382b52f86d238f95630c8737a7476a66df5d6c6015d6c
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/06/2021
-ms.locfileid: "104341946"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120075721"
 ---
-# <a name="slovakia-channel-assignments"></a>Assegnazioni canale Slovacchia
+# <a name="slovakia-channel-assignments"></a>Assegnazioni di canali per la Repubblica slovacca
 
-Questo argomento elenca le tabelle di frequenza usate per l'ottimizzazione della TV analoga per la Slovacchia.
+In questo argomento vengono elencate le tabelle di frequenza usate per l'ottimizzazione della TV analoga per la Repubblica slovacca.
 
-Per una spiegazione delle tabelle seguenti, vedere [tabelle e assegnazioni](tables-and-assignments.md).
+Per una spiegazione delle tabelle seguenti, vedere [Tabelle e assegnazioni](tables-and-assignments.md).
 
-Le seguenti assegnazioni di canale sono state introdotte in Windows 7. In precedenza, veniva usata la [tabella della frequenza Unicable](unicable-frequency-table.md) .
+Le assegnazioni di canale seguenti sono state introdotte nella Windows 7. In precedenza, [era stata usata la tabella di frequenza unicable.](unicable-frequency-table.md)
 
--   [Assegnazioni broadcast](#broadcast-assignments)
+-   [Assegnazioni di trasmissione](#broadcast-assignments)
 -   [Assegnazioni di cavi](#cable-assignments)
 -   [Argomenti correlati](#related-topics)
 
-## <a name="broadcast-assignments"></a>Assegnazioni broadcast
+## <a name="broadcast-assignments"></a>Assegnazioni di trasmissione
 
 ``` syntax
         1L,             // Lowest channel
@@ -250,7 +250,7 @@ Le seguenti assegnazioni di canale sono state introdotte in Windows 7. In preced
 
 <dl> <dt>
 
-[Ottimizzazione della TV analoga internazionale](international-analog-tv-tuning.md)
+[Ottimizzazione tv analoga internazionale](international-analog-tv-tuning.md)
 </dt> </dl>
 
  

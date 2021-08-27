@@ -1,25 +1,25 @@
 ---
 description: 'Altre informazioni su: operatori JET_OSSNAPID'
-title: Operatori di JET_OSSNAPID
+title: JET_OSSNAPID seguenti
 TOCTitle: JET_OSSNAPID operators
 ms:assetid: 30e3519b-5ceb-150e-eaf2-d15c3133310b
 ms:mtpsurl: https://msdn.microsoft.com/library/Hh564633(v=EXCHG.10)
 ms:contentKeyID: 39511037
 ms.date: 07/30/2014
 ms.topic: article
-ms.openlocfilehash: 997f65dadfe1e173e1399c281118a7162ad9060f
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 41a0b2779094585dcff0473e2f1455174f568266cefde2be2b88097765bc7436
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "103885018"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120063221"
 ---
-# <a name="jet_ossnapid-operators"></a>Operatori di JET_OSSNAPID
+# <a name="jet_ossnapid-operators"></a>JET_OSSNAPID seguenti
 
-Includi membri protetti  
-Includi membri ereditati  
+Includere membri protetti  
+Includere i membri ereditati  
 
-Il tipo di [JET_OSSNAPID](./jet-ossnapid-structure.md) espone i membri seguenti.
+Il [JET_OSSNAPID](./jet-ossnapid-structure.md) tipo espone i membri seguenti.
 
 ## <a name="operators"></a>Operatori
 
@@ -52,6 +52,6 @@ Inizio
 
 #### <a name="reference"></a>Riferimento
 
-[Struttura JET_OSSNAPID](./jet-ossnapid-structure.md)
+[JET_OSSNAPID struttura](./jet-ossnapid-structure.md)
 
-[Spazio dei nomi Microsoft. ISAM. esent. Interop](./microsoft.isam.esent.interop-namespace.md)
+[Spazio dei nomi Microsoft.Isam.Esent.Interop](./microsoft.isam.esent.interop-namespace.md)

@@ -1,7 +1,7 @@
 ---
-description: L'interfaccia IDxtAlphaSetter imposta le proprietà sull'effetto Setter alfa. Questa interfaccia viene utilizzata internamente da DirectShow editing Services (DES) quando viene eseguito il rendering dell'effetto Alpha Setter.
+description: L'interfaccia IDxtAlphaSetter imposta le proprietà sull'effetto Alpha Setter. Questa interfaccia viene usata internamente da DirectShow Editing Services (DES) quando esegue il rendering dell'effetto Alpha Setter.
 ms.assetid: 9f0439b9-55d2-4526-ae4c-64ab90e11a64
-title: Interfaccia IDxtAlphaSetter (qedit. h)
+title: Interfaccia IDxtAlphaSetter (Qedit.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -14,42 +14,42 @@ api_type:
 api_location:
 - strmiids.lib
 - strmiids.dll
-ms.openlocfilehash: 0f4ad88d10f4a2538cddbdc31fa90bc5496bc7f1
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: f1cc4056733dbd0e46639a921da65e5cb2a81f3601fa1ae00624be7d92ddc0e6
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "106330175"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120051931"
 ---
 # <a name="idxtalphasetter-interface"></a>Interfaccia IDxtAlphaSetter
 
 > [!Note]  
-> \[Deprecato. Questa API può essere rimossa dalle versioni successive di Windows.\]
+> \[Deprecato. Questa API potrebbe essere rimossa dalle versioni future Windows.\]
 
  
 
-L' `IDxtAlphaSetter` interfaccia imposta le proprietà sull'effetto del [Setter alfa](alpha-setter-effect.md) .
+`IDxtAlphaSetter`L'interfaccia imposta le proprietà sull'effetto Alpha [Setter.](alpha-setter-effect.md)
 
-Questa interfaccia viene utilizzata internamente da DirectShow editing Services (DES) quando viene eseguito il rendering dell'effetto Alpha Setter. Non è necessario che le applicazioni DES usino questa interfaccia. Per impostare le proprietà di una transizione in DES, utilizzare l'interfaccia [**IPropertySetter**](ipropertysetter.md) .
+Questa interfaccia viene usata internamente da DirectShow Editing Services (DES) quando esegue il rendering dell'effetto Alpha Setter. Le applicazioni DES non devono usare questa interfaccia. Per impostare le proprietà in una transizione in DES, usare [**l'interfaccia IPropertySetter.**](ipropertysetter.md)
 
 ## <a name="members"></a>Membri
 
-L'interfaccia **IDxtAlphaSetter** eredita da **IDXEffect**. **IDxtAlphaSetter** dispone anche di questi tipi di membri:
+**L'interfaccia IDxtAlphaSetter** eredita da **IDXEffect**. **IDxtAlphaSetter** include anche questi tipi di membri:
 
 -   [Metodi](#methods)
 
 ### <a name="methods"></a>Metodi
 
-L'interfaccia **IDxtAlphaSetter** dispone di questi metodi.
+**L'interfaccia IDxtAlphaSetter** include questi metodi.
 
 
 
 | Metodo                                                  | Descrizione                                                |
 |:--------------------------------------------------------|:-----------------------------------------------------------|
-| [**Ottieni \_ alfa**](idxtalphasetter-get-alpha.md)         | Recupera il valore alfa per l'intera immagine.<br/> |
-| [**ottenere \_ AlphaRamp**](idxtalphasetter-get-alpharamp.md) | Recupera la proprietà della rampa alfa.<br/>              |
-| [**Inserisci \_ Alpha**](idxtalphasetter-put-alpha.md)         | Specifica il valore alfa per l'intera immagine.<br/> |
-| [**Inserisci \_ AlphaRamp**](idxtalphasetter-put-alpharamp.md) | Specifica la proprietà della rampa alfa.<br/>              |
+| [**get \_ Alpha**](idxtalphasetter-get-alpha.md)         | Recupera il valore alfa per l'intera immagine.<br/> |
+| [**get \_ AlphaRamp**](idxtalphasetter-get-alpharamp.md) | Recupera la proprietà alpha ramp.<br/>              |
+| [**put \_ Alpha**](idxtalphasetter-put-alpha.md)         | Specifica il valore alfa per l'intera immagine.<br/> |
+| [**put \_ AlphaRamp**](idxtalphasetter-put-alpharamp.md) | Specifica la proprietà alpha ramp.<br/>              |
 
 
 
@@ -58,12 +58,12 @@ L'interfaccia **IDxtAlphaSetter** dispone di questi metodi.
 ## <a name="remarks"></a>Commenti
 
 > [!Note]  
-> Il file di intestazione qedit. h non è compatibile con le intestazioni Direct3D successive alla versione 7.
+> Il file di intestazione Qedit.h non è compatibile con le intestazioni Direct3D successive alla versione 7.
 
  
 
 > [!Note]  
-> Per ottenere qedit. h, scaricare l' [aggiornamento Microsoft Windows SDK per Windows Vista e .NET Framework 3,0](https://msdn.microsoft.com/windowsvista/bb980924.aspx). Qedit. h non è disponibile nel Microsoft Windows SDK per Windows 7 e .NET Framework 3,5 Service Pack 1.
+> Per ottenere Qedit.h, scaricare l'aggiornamento di Microsoft Windows SDK per Windows [Vista e .NET Framework 3.0.](https://msdn.microsoft.com/windowsvista/bb980924.aspx) Qedit.h non è disponibile in Microsoft Windows SDK per Windows 7 e .NET Framework 3.5 Service Pack 1.
 
  
 
@@ -73,8 +73,8 @@ L'interfaccia **IDxtAlphaSetter** dispone di questi metodi.
 
 | Requisito | Valore |
 |--------------------|-----------------------------------------------------------------------------------------|
-| Intestazione<br/>  | <dl> <dt>Qedit. h</dt> </dl>      |
-| Libreria<br/> | <dl> <dt>Strmiids. lib</dt> </dl> |
+| Intestazione<br/>  | <dl> <dt>Qedit.h</dt> </dl>      |
+| Libreria<br/> | <dl> <dt>Strmiids.lib</dt> </dl> |
 
 
 

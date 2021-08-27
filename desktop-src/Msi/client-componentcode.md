@@ -13,12 +13,12 @@ api_type:
 - COM
 api_location:
 - Msi.dll
-ms.openlocfilehash: a4fba4c9b832256620dec60852a53b3e2ed17101
-ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
+ms.openlocfilehash: 41de8706ebba3221f5b805b3647afb5b0a46c9a4299d5564ed472a42037b7969
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/28/2021
-ms.locfileid: "108090799"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120075121"
 ---
 # <a name="clientcomponentcode-property"></a>Client.ComponentCode - proprietà
 
@@ -36,7 +36,7 @@ Codice del componente in questione. Questa proprietà chiama la [**funzione MsiE
 
 | Requisito | Valore |
 |--------------------|------------------------------------------------------------------------------------|
-| Versione<br/> | Windows Installer 5.0 o versione successiva.<br/>                                         |
+| Versione<br/> | Windows Programma di installazione 5.0 o versione successiva.<br/>                                         |
 | DLL<br/>     | <dl> <dt>Msi.dll</dt> </dl> |
 | IID<br/>     | IID \_ IClient è definito come 000C1098-0000-0000-C000-000000000046<br/>         |
 

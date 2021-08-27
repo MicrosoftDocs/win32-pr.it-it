@@ -1,17 +1,17 @@
 ---
 description: Implementare il supporto per la negoziazione del tipo di supporto come parte della scrittura di un filtro di trasformazione. Il tipo di supporto descrive il formato dei dati.
 ms.assetid: b2b5dafc-d38d-4ec3-a390-55229495b4f9
-title: Passaggio 3. Supporto della negoziazione del tipo di supporto
+title: Passaggio 3. Supportare la negoziazione del tipo di supporto
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 3a23784e70330f751325fc5f780463d5a3904d20
-ms.sourcegitcommit: 5d4e99f4c8f42f5f543e52cb9beb9fb13ec56c5f
+ms.openlocfilehash: 1558d5b1a7fd9db41fef7e5a9818d93c306f4f15f42099d4cb88f66b34725660
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/19/2021
-ms.locfileid: "112410044"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120051471"
 ---
-# <a name="step-3-support-media-type-negotiation"></a>Passaggio 3. Supporto della negoziazione del tipo di supporto
+# <a name="step-3-support-media-type-negotiation"></a>Passaggio 3. Supportare la negoziazione del tipo di supporto
 
 Questo è il passaggio 3 dell'esercitazione [Scrittura di filtri di trasformazione](writing-transform-filters.md).
 
@@ -39,10 +39,10 @@ Le sezioni seguenti descrivono ogni metodo in modo più dettagliato:
 
 <dl> <dt>
 
-[Come si connettono i filtri](how-filters-connect.md)
+[Modalità di Connessione](how-filters-connect.md)
 </dt> <dt>
 
-[Scrittura di filtri DirectShow](writing-directshow-filters.md)
+[Scrittura DirectShow filtri](writing-directshow-filters.md)
 </dt> </dl>
 
  
