@@ -1,5 +1,5 @@
 ---
-description: 'Metodo RequestStateChange della classe Msvm_ReplicationService : richiede una modifica dello stato.'
+description: 'Metodo RequestStateChange della classe Msvm_ReplicationService: richiede una modifica dello stato.'
 ms.assetid: ae799e76-5177-42a5-8591-ceaf15dd7eaf
 title: Metodo RequestStateChange della classe Msvm_ReplicationService
 ms.topic: reference
@@ -44,7 +44,7 @@ uint32 RequestStateChange(
 *RequestedState* \[ Pollici\]
 </dt> <dd>
 
-Nuovo stato. Le informazioni vengono inserite nella **proprietà RequestedState** dell'istanza se il codice restituito del **metodo RequestStateChange** è 0 o 4096. Per altre informazioni, vedi la descrizione delle **proprietà EnabledState** e **RequestedState** per l'elemento . Deve essere uno dei valori seguenti.
+Nuovo stato. Le informazioni vengono inserite nella **proprietà RequestedState** dell'istanza se il codice restituito del **metodo RequestStateChange** è 0 o 4096. Per altre informazioni, vedere la descrizione delle **proprietà EnabledState** e **RequestedState** per l'elemento. Deve essere uno dei valori seguenti.
 
 <dt>
 
@@ -64,7 +64,7 @@ Nuovo stato. Le informazioni vengono inserite nella **proprietà RequestedState*
 
 <span id="Shut_Down"></span><span id="shut_down"></span><span id="SHUT_DOWN"></span>
 
-**Arresta** (4)
+**Arresto** (4)
 
 
 </dt> <dd></dd> <dt>
@@ -85,7 +85,7 @@ Nuovo stato. Le informazioni vengono inserite nella **proprietà RequestedState*
 
 <span id="Defer"></span><span id="defer"></span><span id="DEFER"></span>
 
-**Rinvia** (8)
+**Rinvio** (8)
 
 
 </dt> <dd></dd> <dt>
@@ -106,21 +106,21 @@ Nuovo stato. Le informazioni vengono inserite nella **proprietà RequestedState*
 
 <span id="Reset"></span><span id="reset"></span><span id="RESET"></span>
 
-**Reset** (11)
+**Reimposta** (11)
 
 
 </dt> <dd></dd> <dt>
 
 <span id="DMTF_Reserved"></span><span id="dmtf_reserved"></span><span id="DMTF_RESERVED"></span>
 
-**DmTF Reserved** (..)
+**DmTF riservato** (..)
 
 
 </dt> <dd></dd> <dt>
 
 <span id="Vendor_Reserved"></span><span id="vendor_reserved"></span><span id="VENDOR_RESERVED"></span>
 
-**Vendor Reserved** (32768..65535)
+**Fornitore riservato** (32768..65535)
 
 
 </dt> <dd></dd> </dl> </dd> <dt>
@@ -128,14 +128,14 @@ Nuovo stato. Le informazioni vengono inserite nella **proprietà RequestedState*
 *Processo* \[ Cambio\]
 </dt> <dd>
 
-Può contenere un riferimento a [**CIM \_ ConcreteJob**](cim-concretejob.md) creato per tenere traccia della transizione di stato avviata dalla chiamata al metodo.
+Può contenere un riferimento al [**processo \_ concreto CIM**](cim-concretejob.md) creato per tenere traccia della transizione di stato avviata dalla chiamata al metodo.
 
 </dd> <dt>
 
 *TimeoutPeriod* \[ Pollici\]
 </dt> <dd>
 
-Periodo di timeout che specifica la quantità massima di tempo prevista dal client per la transizione al nuovo stato. Il formato dell'intervallo deve essere usato per specificare il periodo di timeout. Il valore 0 o **Null** indica che il client non ha requisiti di tempo per la transizione. Se questa proprietà non contiene 0 o **Null** e l'implementazione non supporta questo parametro, deve essere restituito un codice restituito 4098 (Utilizzo del parametro di **timeout** non supportato).
+Periodo di timeout che specifica la quantità massima di tempo prevista dal client per la transizione al nuovo stato. Il formato dell'intervallo deve essere usato per specificare il periodo di timeout. Il valore 0 o **Null** indica che il client non ha requisiti di tempo per la transizione. Se questa proprietà non contiene 0 o **Null** e l'implementazione non supporta questo parametro, deve essere restituito un codice restituito 4098 ( Utilizzo del parametro **di timeout** non supportato ).
 
 </dd> </dl>
 
@@ -145,7 +145,7 @@ Questo metodo restituisce uno dei valori seguenti:
 
 <dl> <dt>
 
-**Completata senza errori** (0)
+**Completato senza errori** (0)
 </dt> <dt>
 
 **Non supportato** (1)

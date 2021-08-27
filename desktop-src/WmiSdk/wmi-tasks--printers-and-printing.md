@@ -10,12 +10,12 @@ topic_type:
 api_name: ''
 api_type: ''
 api_location: ''
-ms.openlocfilehash: fcc7315f32ee1c00928b1feefe7d7d9dbebaf9fd169cd741440ad53ce4343c87
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 2f6e580b299e32e2c003c084fb771a28e5984f7e
+ms.sourcegitcommit: c276a8912787b2cda74dcf54eb96df961bb1188b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "118311995"
+ms.lasthandoff: 08/20/2021
+ms.locfileid: "122625577"
 ---
 # <a name="wmi-tasks-printers-and-printing"></a>Attività WMI: Stampanti e stampa
 
@@ -28,10 +28,10 @@ La procedura seguente descrive come eseguire uno script.
 
 **Per eseguire uno script**
 
-1.  Copiare il codice e salvarlo in un file con estensione vbs, ad esempio *filename.vbs*. Assicurarsi che l'editor di testo non .txt'estensione al file.
+1.  Copiare il codice e salvarlo in un file con estensione vbs, ad esempio *filename.vbs*. Assicurarsi che l'editor di testo non aggiunge un'.txt al file.
 2.  Aprire una finestra del prompt dei comandi e passare alla directory in cui è stato salvato il file.
 3.  Digitare **cscript filename.vbs** al prompt dei comandi.
-4.  Se non è possibile accedere a un registro eventi, verificare se si è in esecuzione da un prompt dei comandi con privilegi elevati. Alcuni registri eventi, ad esempio il registro eventi di sicurezza, possono essere protetti dai controlli di accesso utente.
+4.  Se non è possibile accedere a un registro eventi, verificare se è in esecuzione da un prompt dei comandi con privilegi elevati. Alcuni registri eventi, ad esempio il registro eventi di sicurezza, possono essere protetti dai controlli di accesso utente.
 
 > [!Note]  
 > Per impostazione predefinita, cscript visualizza l'output di uno script nella finestra del prompt dei comandi. Poiché gli script WMI possono produrre grandi quantità di output, potrebbe essere necessario reindirizzare l'output a un file. Digitare **cscript filename.vbs > outfile.txt** prompt dei comandi per reindirizzare l'output dello *script* filename.vbsa *outfile.txt*.
@@ -44,8 +44,8 @@ Nella tabella seguente sono elencati esempi di script che possono essere usati p
 
 <table>
 <colgroup>
-<col style="width: 50%" />
-<col style="width: 50%" />
+<col  />
+<col  />
 </colgroup>
 <thead>
 <tr class="header">
@@ -59,7 +59,7 @@ Nella tabella seguente sono elencati esempi di script che possono essere usati p
 <td>Usare la <a href="/windows/desktop/CIMWin32Prov/win32-printer"><strong>Win32_Printer</strong></a> e il <a href="/windows/desktop/CIMWin32Prov/addprinterconnection-method-in-class-win32-printer"><strong>metodo AddPrinterConnection.</strong></a><br/> <span data-codelanguage="VisualBasic"></span>
 <table>
 <colgroup>
-<col style="width: 100%" />
+<col  />
 </colgroup>
 <thead>
 <tr class="header">
@@ -84,7 +84,7 @@ errReturn = objPrinter.AddPrinterConnection (&quot;\\PrintServer1\ArtDepartmentP
 <span data-codelanguage="VisualBasic"></span>
 <table>
 <colgroup>
-<col style="width: 100%" />
+<col  />
 </colgroup>
 <thead>
 <tr class="header">
@@ -105,7 +105,7 @@ Next</code></pre></td>
 <span data-codelanguage="PowerShell"></span>
 <table>
 <colgroup>
-<col style="width: 100%" />
+<col  />
 </colgroup>
 <thead>
 <tr class="header">
@@ -130,7 +130,7 @@ $printer = get-wmiObject -class win32_printer -Namespace $namespace | Where-Obje
 <span data-codelanguage="VisualBasic"></span>
 <table>
 <colgroup>
-<col style="width: 100%" />
+<col  />
 </colgroup>
 <thead>
 <tr class="header">
@@ -151,7 +151,7 @@ Next</code></pre></td>
 <span data-codelanguage="PowerShell"></span>
 <table>
 <colgroup>
-<col style="width: 100%" />
+<col  />
 </colgroup>
 <thead>
 <tr class="header">
@@ -174,7 +174,7 @@ Next</code></pre></td>
 <span data-codelanguage="VisualBasic"></span>
 <table>
 <colgroup>
-<col style="width: 100%" />
+<col  />
 </colgroup>
 <thead>
 <tr class="header">
@@ -195,7 +195,7 @@ Next</code></pre></td>
 <span data-codelanguage="PowerShell"></span>
 <table>
 <colgroup>
-<col style="width: 100%" />
+<col  />
 </colgroup>
 <thead>
 <tr class="header">

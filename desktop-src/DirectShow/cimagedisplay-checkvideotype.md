@@ -1,7 +1,7 @@
 ---
 description: Il metodo CheckVideoType controlla se un formato VIDEOINFO specificato è compatibile con il formato di visualizzazione.
 ms.assetid: a8593c7d-bde0-4c44-b450-10c129dd0007
-title: Metodo CImageDisplay. CheckVideoType (Winutil. h)
+title: Metodo CImageDisplay.CheckVideoType (Winutil.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -16,16 +16,16 @@ api_location:
 - Strmbase.dll
 - Strmbasd.lib
 - Strmbasd.dll
-ms.openlocfilehash: 7db198270804053993352c4969b924fa7edc891f
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: de6389e22868fe529b5038fe6be1403748dd5a01d22a242c41f9e6c6b8f86808
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "106331642"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120108491"
 ---
-# <a name="cimagedisplaycheckvideotype-method"></a>CImageDisplay. CheckVideoType, metodo
+# <a name="cimagedisplaycheckvideotype-method"></a>Metodo CImageDisplay.CheckVideoType
 
-Il `CheckVideoType` metodo controlla se un formato [**VIDEOINFO**](/previous-versions/windows/desktop/api/amvideo/ns-amvideo-videoinfo) specificato è compatibile con il formato di visualizzazione.
+Il `CheckVideoType` metodo verifica se un formato [**VIDEOINFO**](/previous-versions/windows/desktop/api/amvideo/ns-amvideo-videoinfo) specificato è compatibile con il formato di visualizzazione.
 
 ## <a name="syntax"></a>Sintassi
 
@@ -45,17 +45,17 @@ HRESULT CheckVideoType(
 *pInput* 
 </dt> <dd>
 
-Puntatore a una struttura **VIDEOINFO** .
+Puntatore a una **struttura VIDEOINFO.**
 
 </dd> </dl>
 
 ## <a name="return-value"></a>Valore restituito
 
-Restituisce \_ OK se il formato è compatibile o e \_ INVALIDARG in caso contrario.
+Restituisce S \_ OK se il formato è compatibile oppure E \_ INVALIDARG in caso contrario.
 
 ## <a name="remarks"></a>Commenti
 
-Questo metodo restituisce \_ OK se è possibile visualizzare facilmente il tipo proposto sotto le impostazioni di visualizzazione correnti.
+Questo metodo restituisce S \_ OK se il tipo proposto può essere visualizzato facilmente nelle impostazioni di visualizzazione correnti.
 
 ## <a name="requirements"></a>Requisiti
 
@@ -63,8 +63,8 @@ Questo metodo restituisce \_ OK se è possibile visualizzare facilmente il tipo 
 
 | Requisito | Valore |
 |--------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Intestazione<br/>  | <dl> <dt>WinUtil. h (include Streams. h)</dt> </dl>                                                                                   |
-| Libreria<br/> | <dl> <dt>Strmbase. lib (compilazioni finali); </dt> <dt>Strmbasd. lib (build di debug)</dt> </dl> |
+| Intestazione<br/>  | <dl> <dt>Winutil.h (include Flussi.h)</dt> </dl>                                                                                   |
+| Libreria<br/> | <dl> <dt>Strmbase.lib (build di vendita al dettaglio); </dt> <dt>Strmbasd.lib (build di debug)</dt> </dl> |
 
 
 

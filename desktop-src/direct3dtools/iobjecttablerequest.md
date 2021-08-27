@@ -1,5 +1,5 @@
 ---
-description: Richiesta per i dati della tabella di oggetti.
+description: Richiesta per i dati della tabella oggetti.
 MS-HAID: vspixengine.IObjectTableRequest
 MSHAttr:
 - PreferredSiteName:MSDN
@@ -17,34 +17,34 @@ api_location:
 topic_type:
 - APIRef
 - kbSyntax
-ms.openlocfilehash: ede9f0aa326cff046133a75bcd662df083cc13fe
-ms.sourcegitcommit: a47bd86f517de76374e4fff33cfeb613eb259a7e
+ms.openlocfilehash: 6d2e02f9d8ca5de72a612a2ac5e7049cd2719f71
+ms.sourcegitcommit: c276a8912787b2cda74dcf54eb96df961bb1188b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/06/2021
-ms.locfileid: "104522362"
+ms.lasthandoff: 08/20/2021
+ms.locfileid: "122628410"
 ---
 # <a name="span-idvspixengineiobjecttablerequestspaniobjecttablerequest-interface"></a><span id="vspixengine.iobjecttablerequest"></span>Interfaccia IObjectTableRequest
 
-Richiesta per i dati della tabella di oggetti.
+Richiesta per i dati della tabella oggetti.
 
 ## <a name="members"></a>Membri
 
-L'interfaccia **IObjectTableRequest** eredita dall'interfaccia [**IUnknown**](/windows/desktop/api/unknwn/nn-unknwn-iunknown) . **IObjectTableRequest** dispone anche di questi tipi di membri:
+**L'interfaccia IObjectTableRequest** eredita dall'interfaccia [**IUnknown.**](/windows/desktop/api/unknwn/nn-unknwn-iunknown) **IObjectTableRequest** include anche questi tipi di membri:
 
 -   [Metodi](#methods)
 
 ### <a name="span-idmethodsspanmethods"></a><span id="methods"></span>Metodi
 
-L'interfaccia **IObjectTableRequest** dispone di questi metodi.
+Questi metodi sono disponibili nell'interfaccia **IObjectTableRequest.**
 
-<table><colgroup><col style="width: 50%" /><col style="width: 50%" /></colgroup><thead><tr class="header"><th style="text-align: left;">Metodo</th><th style="text-align: left;">Descrizione</th></tr></thead><tbody><tr class="odd"><td style="text-align: left;"><a href="/windows/desktop/direct3dtools/iobjecttablerequest-requestasync-dword-dword-dword-arr-iobjecttablecallback-ptr-dword-dword"><strong>RequestAsync</strong></a></td><td style="text-align: left;"><p>Richiede di ottenere le informazioni specificate dalla tabella degli oggetti per l'evento specificato.</p></td></tr><tr class="even"><td style="text-align: left;"><a href="/windows/desktop/direct3dtools/iobjecttablerequest-requestsupportedcolumnsasync-iobjecttablecallback-ptr-dword"><strong>RequestSupportedColumnsAsync</strong></a></td><td style="text-align: left;"><p>Richieste per ottenere informazioni sulle colonne (campi) supportate dal tipo di richiesta della tabella di oggetti.</p></td></tr></tbody></table>
+<table><colgroup><col  /><col  /></colgroup><thead><tr class="header"><th style="text-align: left;">Metodo</th><th style="text-align: left;">Descrizione</th></tr></thead><tbody><tr class="odd"><td style="text-align: left;"><a href="/windows/desktop/direct3dtools/iobjecttablerequest-requestasync-dword-dword-dword-arr-iobjecttablecallback-ptr-dword-dword"><strong>RequestAsync</strong></a></td><td style="text-align: left;"><p>Richiede di ottenere le informazioni specificate dalla tabella dell'oggetto per l'evento specificato.</p></td></tr><tr class="even"><td style="text-align: left;"><a href="/windows/desktop/direct3dtools/iobjecttablerequest-requestsupportedcolumnsasync-iobjecttablecallback-ptr-dword"><strong>RequestSupportedColumnsAsync</strong></a></td><td style="text-align: left;"><p>Richieste per ottenere informazioni sulle colonne (campi) supportate da questo tipo di richiesta di tabella oggetti.</p></td></tr></tbody></table>
 
  
 
 ## <a name="requirements"></a>Requisiti
 
-<table><colgroup><col style="width: 50%" /><col style="width: 50%" /></colgroup><tbody><tr class="odd"><td><p>Intestazione</p></td><td>Vspixengine. h</td></tr></tbody></table>
+<table><colgroup><col  /><col  /></colgroup><tbody><tr class="odd"><td><p>Intestazione</p></td><td>Vspixengine.h</td></tr></tbody></table>
 
  
 

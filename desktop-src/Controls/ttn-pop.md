@@ -1,9 +1,9 @@
 ---
-title: Codice di notifica TTN_POP (COMmctrl. h)
-description: Notifica alla finestra del proprietario che una descrizione comando sta per essere nascosta. Questo codice di notifica viene inviato sotto forma di messaggio di \_ notifica WM.
+title: TTN_POP codice di notifica (Commctrl.h)
+description: Notifica alla finestra proprietaria che una descrizione comando sta per essere nascosta. Questo codice di notifica viene inviato sotto forma di messaggio WM \_ NOTIFY.
 ms.assetid: 44a38f1a-f1df-4057-bf76-f87eb467f0d7
 keywords:
-- Controlli di Windows per il codice di notifica TTN_POP
+- TTN_POP codice di notifica Windows controlli
 topic_type:
 - apiref
 api_name:
@@ -14,16 +14,16 @@ api_type:
 - HeaderDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 576aa382f571fb6ded7205d2df3b0abd938c704d
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: 4d3322da3ddbb677631a433e4cce1d2a9eb6e56c3484314026242f23c91c103f
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "103741447"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120109481"
 ---
-# <a name="ttn_pop-notification-code"></a>\_Codice di notifica pop TTN
+# <a name="ttn_pop-notification-code"></a>Codice di notifica POP TTN \_
 
-Notifica alla finestra del proprietario che una descrizione comando sta per essere nascosta. Questo codice di notifica viene inviato sotto forma di messaggio [**di \_ notifica WM**](wm-notify.md) .
+Notifica alla finestra proprietaria che una descrizione comando sta per essere nascosta. Questo codice di notifica viene inviato sotto forma di [**messaggio WM \_ NOTIFY.**](wm-notify.md)
 
 
 ```C++
@@ -41,7 +41,7 @@ TTN_POP
 *lParam* 
 </dt> <dd>
 
-Puntatore a una struttura [**NMHDR**](/windows/desktop/api/richedit/ns-richedit-nmhdr) .
+Puntatore a [**una struttura NMHDR.**](/windows/desktop/api/richedit/ns-richedit-nmhdr)
 
 </dd> </dl>
 
@@ -55,9 +55,9 @@ Nessun valore restituito.
 
 | Requisito | Valore |
 |-------------------------------------|---------------------------------------------------------------------------------------|
-| Client minimo supportato<br/> | \[Solo app desktop di Windows Vista\]<br/>                                        |
-| Server minimo supportato<br/> | \[Solo app desktop Windows Server 2003\]<br/>                                  |
-| Intestazione<br/>                   | <dl> <dt>Commctrl. h</dt> </dl> |
+| Client minimo supportato<br/> | Windows Solo \[ app desktop di Vista\]<br/>                                        |
+| Server minimo supportato<br/> | Windows Solo app desktop server 2003 \[\]<br/>                                  |
+| Intestazione<br/>                   | <dl> <dt>Commctrl.h</dt> </dl> |
 
 
 

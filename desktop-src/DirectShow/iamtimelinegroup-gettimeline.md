@@ -1,7 +1,7 @@
 ---
-description: Il metodo getTimeline recupera la sequenza temporale a cui appartiene il gruppo.
+description: Il metodo GetTimeline recupera la sequenza temporale a cui appartiene questo gruppo.
 ms.assetid: a57d75c9-6e2e-426f-9403-ad32188b2211
-title: 'Metodo IAMTimelineGroup:: getTimeline (qedit. h)'
+title: Metodo IAMTimelineGroup::GetTimeline (Qedit.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -14,21 +14,21 @@ api_type:
 api_location:
 - strmiids.lib
 - strmiids.dll
-ms.openlocfilehash: 6b85b0c6f1730c2946134a36d33537f311b6603f
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: da9064969cc026ebffb91ccbdb70bcaebab2b5d696bcb04d6c6281548721c522
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "106328616"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120086841"
 ---
-# <a name="iamtimelinegroupgettimeline-method"></a>Metodo IAMTimelineGroup:: getTimeline
+# <a name="iamtimelinegroupgettimeline-method"></a>Metodo IAMTimelineGroup::GetTimeline
 
 > [!Note]  
-> \[Deprecato. Questa API può essere rimossa dalle versioni successive di Windows.\]
+> \[Deprecato. Questa API potrebbe essere rimossa dalle versioni future Windows.\]
 
  
 
-Il `GetTimeline` metodo recupera la sequenza temporale a cui appartiene il gruppo.
+Il `GetTimeline` metodo recupera la sequenza temporale a cui appartiene questo gruppo.
 
 ## <a name="syntax"></a>Sintassi
 
@@ -45,28 +45,28 @@ HRESULT GetTimeline(
 
 <dl> <dt>
 
-*ppTimeline* \[ out\]
+*ppTimeline* \[ Cambio\]
 </dt> <dd>
 
-Riceve l'interfaccia [**IAMTimeline**](iamtimeline.md) della sequenza temporale. Se il gruppo non fa parte di una sequenza temporale, il valore viene impostato su **null**.
+Riceve l'interfaccia [**IAMTimeline della sequenza**](iamtimeline.md) temporale. Se il gruppo non fa parte di una sequenza temporale, il valore viene impostato su **NULL.**
 
 </dd> </dl>
 
 ## <a name="return-value"></a>Valore restituito
 
-Se questo metodo ha esito positivo, restituisce **S \_ OK**. In caso contrario, restituisce un codice di errore **HRESULT** .
+Se questo metodo ha esito positivo, restituisce **S \_ OK**. In caso contrario, restituisce un **codice di errore HRESULT.**
 
 ## <a name="remarks"></a>Commenti
 
-Se il valore restituito in *ppTimeline* non è **null**, l'interfaccia **IAMTimeline** include un conteggio dei riferimenti in attesa. Assicurarsi di rilasciare l'interfaccia al termine dell'utilizzo.
+Se il valore restituito in *ppTimeline* non è **NULL,** **l'interfaccia IAMTimeline** ha un conteggio dei riferimenti in sospeso. Assicurarsi di rilasciare l'interfaccia al termine dell'uso.
 
 > [!Note]  
-> Il file di intestazione qedit. h non è compatibile con le intestazioni Direct3D successive alla versione 7.
+> Il file di intestazione Qedit.h non è compatibile con le intestazioni Direct3D successive alla versione 7.
 
  
 
 > [!Note]  
-> Per ottenere qedit. h, scaricare l' [aggiornamento Microsoft Windows SDK per Windows Vista e .NET Framework 3,0](https://msdn.microsoft.com/windowsvista/bb980924.aspx). Qedit. h non è disponibile nel Microsoft Windows SDK per Windows 7 e .NET Framework 3,5 Service Pack 1.
+> Per ottenere Qedit.h, scaricare l'aggiornamento di Microsoft Windows SDK per Windows [Vista e .NET Framework 3.0.](https://msdn.microsoft.com/windowsvista/bb980924.aspx) Qedit.h non è disponibile in Microsoft Windows SDK per Windows 7 e .NET Framework 3.5 Service Pack 1.
 
  
 
@@ -76,8 +76,8 @@ Se il valore restituito in *ppTimeline* non è **null**, l'interfaccia **IAMTime
 
 | Requisito | Valore |
 |--------------------|-----------------------------------------------------------------------------------------|
-| Intestazione<br/>  | <dl> <dt>Qedit. h</dt> </dl>      |
-| Libreria<br/> | <dl> <dt>Strmiids. lib</dt> </dl> |
+| Intestazione<br/>  | <dl> <dt>Qedit.h</dt> </dl>      |
+| Libreria<br/> | <dl> <dt>Strmiids.lib</dt> </dl> |
 
 
 

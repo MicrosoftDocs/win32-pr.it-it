@@ -13,7 +13,7 @@ ms.locfileid: "120129771"
 ---
 # <a name="location-api-c-programming-reference"></a>Informazioni di riferimento sulla programmazione C++ dell'API Location
 
-\[L'API Percorso Win32 è disponibile per l'uso nei sistemi operativi specificati nella sezione Requisiti. È possibile che in versioni successive sia stata modificata o non sia più disponibile. Usare invece il [**Windows. API Devices.Geolocation.**](/uwp/api/Windows.Devices.Geolocation) \]
+\[L'API percorso Win32 è disponibile per l'uso nei sistemi operativi specificati nella sezione Requisiti. È possibile che in versioni successive sia stata modificata o non sia più disponibile. Usare invece il [**Windows. API Devices.Geolocation.**](/uwp/api/Windows.Devices.Geolocation) \]
 
 Questa sezione documenta le interfacce COM e altri costrutti C++ per la programmazione della posizione.
 

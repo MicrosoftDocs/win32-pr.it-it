@@ -1,5 +1,5 @@
 ---
-description: Recupera gli stati di visualizzazione automatica e sempre in primo piano della barra Windows barra delle applicazioni.
+description: Recupera gli stati di rilevamento automatico e sempre in primo piano della barra Windows barra delle applicazioni.
 title: ABM_GETSTATE messaggio (Shellapi.h)
 ms.topic: reference
 ms.date: 05/31/2018
@@ -13,16 +13,16 @@ api_location:
 topic_type:
 - APIRef
 - kbSyntax
-ms.openlocfilehash: b1a3618be793f4728dc6184b50b7a4e0e57c3ffd2c4d2cd8acde17372aa031f4
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 1ced01e3f8186a82e99f408f91546ebcbb117ed9
+ms.sourcegitcommit: 9b5faa61c38b2d0c432b7f2dbee8c127b0e28a7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "118225230"
+ms.lasthandoff: 08/19/2021
+ms.locfileid: "122466388"
 ---
-# <a name="abm_getstate-message"></a>Messaggio \_ GETSTATE ABM
+# <a name="abm_getstate-message"></a>Messaggio ABM \_ GETSTATE
 
-Recupera gli stati di visualizzazione automatica e sempre in primo piano della barra Windows barra delle applicazioni.
+Recupera gli stati di rilevamento automatico e sempre in primo piano della barra Windows barra delle applicazioni.
 
 
 ```C++
@@ -38,43 +38,22 @@ uState = (UINT) SHAppBarMessage(ABM_GETSTATE, pabd);
 *pabd* 
 </dt> <dd>
 
-Puntatore a [**una struttura APPBARDATA.**](/windows/desktop/api/Shellapi/ns-shellapi-appbardata) È necessario specificare il **membro cbSize quando** si invia questo messaggio. tutti gli altri membri vengono ignorati.
+Puntatore a [**una struttura APPBARDATA.**](/windows/desktop/api/Shellapi/ns-shellapi-appbardata) È necessario specificare il **membro cbSize** quando si invia questo messaggio. tutti gli altri membri vengono ignorati.
 
 </dd> </dl>
 
 ## <a name="return-value"></a>Valore restituito
 
-Restituisce zero se la barra delle applicazioni non si trova né nello stato di visualizzazione automatica né sempre in primo piano. In caso contrario, il valore restituito è uno o entrambi gli elementi seguenti:
+Restituisce zero se la barra delle applicazioni non è nello stato di visualizzazione automatica né sempre attiva. In caso contrario, il valore restituito è uno o entrambi gli elementi seguenti:
 
 
 
-<table>
-<colgroup>
-<col style="width: 50%" />
-<col style="width: 50%" />
-</colgroup>
-<thead>
-<tr class="header">
-<th>Codice restituito</th>
-<th>Descrizione</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td><dl> <dt><strong>ABS_ALWAYSONTOP</strong></dt> </dl></td>
-<td>La barra delle applicazioni è nello stato sempre in primo piano. <br/>
-<blockquote>
-[!Note]<br />
-A Windows 7, ABS_ALWAYSONTOP non viene più restituito perché la barra delle applicazioni si trova sempre in tale stato. Il codice precedente deve essere aggiornato per ignorare l'assenza di questo valore in non presupporre che il valore restituito per indicare che la barra delle applicazioni non si trova nello stato sempre in primo piano.
-</blockquote>
-<br/></td>
-</tr>
-<tr class="even">
-<td><dl> <dt><strong>ABS_AUTOHIDE</strong></dt> </dl></td>
-<td>La barra delle applicazioni si trova nello stato di visualizzazione automatica.<br/></td>
-</tr>
-</tbody>
-</table>
+
+| Codice restituito | Descrizione | 
+|-------------|-------------|
+| <dl><dt><strong>ABS_ALWAYSONTOP</strong></dt></dl> | La barra delle applicazioni è nello stato always-on-top. <br /><blockquote>[!Note]<br />A Windows 7, ABS_ALWAYSONTOP non viene più restituito perché la barra delle applicazioni si trova sempre in tale stato. Il codice meno recente deve essere aggiornato in modo da ignorare l'assenza di questo valore senza presupporre che il valore restituito significherebbe che la barra delle applicazioni non si trova nello stato always-on-top.</blockquote><br /> | 
+| <dl><dt><strong>ABS_AUTOHIDE</strong></dt></dl> | La barra delle applicazioni è nello stato nascondi automaticamente.<br /> | 
+
 
 
 
@@ -84,7 +63,7 @@ A Windows 7, ABS_ALWAYSONTOP non viene più restituito perché la barra delle ap
 
 
 
-| Requisito | Valore |
+| Requisito | valore |
 |-------------------------------------|---------------------------------------------------------------------------------------|
 | Client minimo supportato<br/> | Windows Solo \[ app desktop XP\]<br/>                                           |
 | Server minimo supportato<br/> | Windows 2000 Server \[solo app desktop\]<br/>                                  |

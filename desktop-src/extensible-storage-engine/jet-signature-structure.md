@@ -1,5 +1,5 @@
 ---
-description: 'Altre informazioni su: JET_SIGNATURE struttura'
+description: 'Altre informazioni su: JET_SIGNATURE Structure'
 title: JET_SIGNATURE struttura
 TOCTitle: JET_SIGNATURE Structure
 ms:assetid: 90d3fd56-be65-4126-b50c-b53e3c3f38f6
@@ -15,12 +15,12 @@ api_type:
 - COM
 api_location: ''
 ROBOTS: INDEX,FOLLOW
-ms.openlocfilehash: 456eadecbaba7295753a18ec2ca739f5e3fc8391
-ms.sourcegitcommit: 4665ebce0c106bdb52eef36e544280b496b6f50b
+ms.openlocfilehash: da4684872358d9d6751812b2adb2b2bea819a2e3
+ms.sourcegitcommit: 9b5faa61c38b2d0c432b7f2dbee8c127b0e28a7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/26/2021
-ms.locfileid: "122987824"
+ms.lasthandoff: 08/19/2021
+ms.locfileid: "122476477"
 ---
 # <a name="jet_signature-structure"></a>JET_SIGNATURE struttura
 
@@ -47,7 +47,7 @@ Numero assegnato in modo casuale.
 
 **logtimeCrea**
 
-Il [JET_LOGTIME](./jet-logtime-structure.md) al momento dell'esecuzione [di JetCreateDatabase.](./jetcreatedatabase-function.md)
+Il [JET_LOGTIME](./jet-logtime-structure.md) al momento [dell'esecuzione di JetCreateDatabase.](./jetcreatedatabase-function.md)
 
 **szComputerName**
 
@@ -60,11 +60,7 @@ Può essere trovato come elemento di JET_DBINFOMISC [.](./jet-dbinfomisc-structu
 ### <a name="requirements"></a>Requisiti
 
 
-| Requisito | Valore |
-|------------|----------|
-| <p><strong>Client</strong></p> | <p>Richiede Windows Vista, Windows XP o Windows 2000 Professional.</p> | 
-| <p><strong>Server</strong></p> | <p>Richiede Windows Server 2008, Windows Server 2003 o Windows 2000 Server.</p> | 
-| <p><strong>Intestazione</strong></p> | <p>Dichiarato in Esent.h.</p> | 
+| | | <p><strong>Client</strong></p> | <p>Richiede Windows Vista, Windows XP o Windows 2000 Professional.</p> | | <p><strong>Server</strong></p> | <p>Richiede Windows Server 2008, Windows Server 2003 o Windows 2000 Server.</p> | | <p><strong>Intestazione</strong></p> | <p>Dichiarato in Esent.h.</p> | 
 
 
 

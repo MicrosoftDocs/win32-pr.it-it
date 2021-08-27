@@ -1,5 +1,5 @@
 ---
-description: Richiede di restituire dati oggetto generico che descrivono un oggetto nel file vsglog per l'evento specificato e nel formato specificato.
+description: Richiede di restituire dati oggetto generici che descrivono un oggetto nel file con estensione vsglog per l'evento specificato e nel formato specificato.
 MS-HAID: vspixengine.IGenericBufferDataRequest\_RequestAsync\_DumperType\_EventID\_DWORD\_IGenericBufferDataCallback\_ptr\_DWORD\_DWORD
 MSHAttr:
 - PreferredSiteName:MSDN
@@ -17,16 +17,16 @@ api_location:
 topic_type:
 - APIRef
 - kbSyntax
-ms.openlocfilehash: 1859c5527480f018223933603a2dedb0af54cfe009194a170d537f10e124d35a
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 310d8ed1a6938c7f15dce7eea2d448654a2b004e
+ms.sourcegitcommit: c276a8912787b2cda74dcf54eb96df961bb1188b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "117722068"
+ms.lasthandoff: 08/20/2021
+ms.locfileid: "122624517"
 ---
 # <a name="span-idvspixengineigenericbufferdatarequest_requestasync_dumpertype_eventid_dword_igenericbufferdatacallback_ptr_dword_dwordspanigenericbufferdatarequestrequestasync-method"></a><span id="vspixengine.igenericbufferdatarequest_requestasync_dumpertype_eventid_dword_igenericbufferdatacallback_ptr_dword_dword"></span>Metodo IGenericBufferDataRequest::RequestAsync
 
-Richiede di restituire dati oggetto generico che descrivono un oggetto nel file vsglog per l'evento specificato e nel formato specificato.
+Richiede di restituire dati oggetto generici che descrivono un oggetto nel file con estensione vsglog per l'evento specificato e nel formato specificato.
 
 ## <a name="syntax"></a>Sintassi
 
@@ -48,13 +48,13 @@ HRESULT RequestAsync(
 Formato specificato della rappresentazione testuale dell'oggetto (HTML, XML e così via)
 
 *Eventid*   
-Evento specificato a cui associare il contenuto del buffer( ad esempio, una destinazione di rendering potrebbe cambiare nel tempo).
+Evento specificato a cui associare il contenuto del buffer (ad esempio, una destinazione di rendering può cambiare nel tempo).
 
 *RequestedDataUID*   
 Indirizzo dell'oggetto specificato.
 
 *requestCallback*   
-Indirizzo del callback utilizzato per inviare una notifica all'host dei risultati.
+Indirizzo del callback utilizzato per notificare i risultati all'host.
 
 *requestCookie*   
 Cookie che identifica in modo univoco la richiesta e può essere usato per segnalare l'annullamento.
@@ -68,7 +68,7 @@ Se questo metodo ha esito positivo, restituisce **S \_ OK**. In caso contrario, 
 
 ## <a name="requirements"></a>Requisiti
 
-<table><colgroup><col style="width: 50%" /><col style="width: 50%" /></colgroup><tbody><tr class="odd"><td><p>Intestazione</p></td><td>Vspixengine.h</td></tr></tbody></table>
+<table><colgroup><col  /><col  /></colgroup><tbody><tr class="odd"><td><p>Intestazione</p></td><td>Vspixengine.h</td></tr></tbody></table>
 
 ## <a name="span-idsee_alsospansee-also"></a><span id="see_also"></span>Vedere anche
 

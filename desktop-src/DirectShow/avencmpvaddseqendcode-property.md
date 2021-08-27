@@ -1,33 +1,33 @@
 ---
-description: Specifica se il codificatore aggiunge un codice di fine sequenza alla fine del flusso. Questa proprietà si applica ai codificatori video MPEG.
+description: Specifica se il codificatore aggiunge un codice finale della sequenza alla fine del flusso. Questa proprietà si applica ai codificatori video MPEG.
 ms.assetid: ef606207-2ee3-420b-afae-67c764e05e54
-title: Proprietà AVEncMPVAddSeqEndCode (codecapis. h)
+title: Proprietà AVEncMPVAddSeqEndCode (Codecapi.h)
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 1a21adcf8b817e0049da3308760e20cdd0e9d473
-ms.sourcegitcommit: a47bd86f517de76374e4fff33cfeb613eb259a7e
+ms.openlocfilehash: ba3d757bd3023ca9539172c96f6f276bc1833eb7c4e24c8b2bb3adc6038d77c4
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/06/2021
-ms.locfileid: "104522170"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120087591"
 ---
-# <a name="avencmpvaddseqendcode-property"></a>Proprietà AVEncMPVAddSeqEndCode
+# <a name="avencmpvaddseqendcode-property"></a>AVEncMPVAddSeqEndCode - proprietà
 
-Specifica se il codificatore aggiunge un codice di fine sequenza alla fine del flusso. Questa proprietà si applica ai codificatori video MPEG.
+Specifica se il codificatore aggiunge un codice finale della sequenza alla fine del flusso. Questa proprietà si applica ai codificatori video MPEG.
 
 Si tratta di una proprietà di lettura/scrittura.
 
 ## <a name="data-type"></a>Tipo di dati
 
-**Variante \_ BOOL** (**VT \_ bool**)
+**VARIANT \_ BOOL** (**VT \_ BOOL**)
 
 ## <a name="property-guid"></a>GUID proprietà
 
-**Codecapis \_ AVEncMPVAddSeqEndCode**
+**CODECAPI \_ AVEncMPVAddSeqEndCode**
 
 ## <a name="remarks"></a>Commenti
 
-Se il valore è **Variant \_ true**, il codificatore aggiunge un codice di fine sequenza alla fine del flusso.
+Se il valore è **VARIANT \_ TRUE,** il codificatore aggiunge un codice finale della sequenza alla fine del flusso.
 
 ## <a name="requirements"></a>Requisiti
 
@@ -35,9 +35,9 @@ Se il valore è **Variant \_ true**, il codificatore aggiunge un codice di fine 
 
 | Requisito | Valore |
 |-------------------------------------|---------------------------------------------------------------------------------------|
-| Client minimo supportato<br/> | App UWP di Windows 2000 Professional \[ desktop apps \|\]<br/>                     |
-| Server minimo supportato<br/> | App desktop di Windows 2000 Server \[ \| UWP\]<br/>                           |
-| Intestazione<br/>                   | <dl> <dt>Codecapis. h</dt> </dl> |
+| Client minimo supportato<br/> | Windows 2000 Professional \[ app desktop app \| UWP\]<br/>                     |
+| Server minimo supportato<br/> | Windows 2000 App desktop UWP per le app \[ desktop di 2000 \| Server\]<br/>                           |
+| Intestazione<br/>                   | <dl> <dt>Codecapi.h</dt> </dl> |
 
 
 
@@ -45,7 +45,7 @@ Se il valore è **Variant \_ true**, il codificatore aggiunge un codice di fine 
 
 <dl> <dt>
 
-[Proprietà dell'API codec](codec-api-properties.md)
+[Proprietà API codec](codec-api-properties.md)
 </dt> <dt>
 
 [**Interfaccia ICodecAPI**](/windows/desktop/api/Strmif/nn-strmif-icodecapi)

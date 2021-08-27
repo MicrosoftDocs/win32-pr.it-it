@@ -20,12 +20,12 @@ api_type:
 api_location:
 - ESENT.DLL
 ROBOTS: INDEX,FOLLOW
-ms.openlocfilehash: 9e6317280c5e794e9809c15f47f01d55ffd48eeb
-ms.sourcegitcommit: 4665ebce0c106bdb52eef36e544280b496b6f50b
+ms.openlocfilehash: 824c19fbb1fb1e479b805eb45bf8ff56458110d0
+ms.sourcegitcommit: 9b5faa61c38b2d0c432b7f2dbee8c127b0e28a7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/26/2021
-ms.locfileid: "122982424"
+ms.lasthandoff: 08/19/2021
+ms.locfileid: "122469788"
 ---
 # <a name="jetgetobjectinfo-function"></a>Funzione JetGetObjectInfo
 
@@ -92,12 +92,12 @@ Specifica il tipo di informazioni da recuperare per l'oggetto specificato. Influ
 Per questo parametro sono disponibili le opzioni seguenti.
 
 
-| <p>Valore</p> | <p>Significato</p> | 
+| <p>valore</p> | <p>Significato</p> | 
 |--------------|----------------|
 | <p>JET_ObjInfo</p> | <p><em>pvResult viene</em> interpretato come una <a href="gg269353(v=exchg.10).md">JET_OBJECTINFO</a> struttura.</p><p>La <a href="gg269353(v=exchg.10).md">JET_OBJECTINFO</a> struttura viene popolata con le informazioni relative all'oggetto denominato in <em>szObjectName</em>.</p><p>Se il chiamante non vuole conoscere il numero di record e pagine per l'oggetto, provare JET_ObjInfoNoStats livello di informazioni, che potrebbe essere più veloce perché le statistiche non sono incluse.</p> | 
-| <p>JET_ObjInfoList</p> | <p><em>pvResult viene</em> interpretato come una <a href="gg269348(v=exchg.10).md">JET_OBJECTLIST</a> struttura. Vengono recuperate informazioni su tutti gli oggetti. Verrà creata una tabella temporanea e le informazioni necessarie per attraversare la tabella temporanea sono descritte nella JET_OBJECTLIST <a href="gg269348(v=exchg.10).md">struttura.</a> Per altre informazioni, vedere <a href="gg269348(v=exchg.10).md">JET_OBJECTLIST</a>. Se il chiamante non vuole conoscere il numero di record e pagine per l'oggetto, è consigliabile usare JET_ObjInfoListNoStats, che potrebbe essere più veloce.</p> | 
+| <p>JET_ObjInfoList</p> | <p><em>pvResult viene</em> interpretato come una <a href="gg269348(v=exchg.10).md">JET_OBJECTLIST</a> struttura. Vengono recuperate informazioni su tutti gli oggetti. Verrà creata una tabella temporanea e le informazioni necessarie per attraversare la tabella temporanea sono descritte nella JET_OBJECTLIST <a href="gg269348(v=exchg.10).md">struttura.</a> Per altre informazioni, <a href="gg269348(v=exchg.10).md">vedere</a>JET_OBJECTLIST . Se il chiamante non vuole conoscere il numero di record e pagine per l'oggetto, è consigliabile usare JET_ObjInfoListNoStats, che potrebbe essere più veloce.</p> | 
 | <p>JET_ObjInfoListACM</p> | <p>Deprecato e attualmente non supportato.</p> | 
-| <p>JET_ObjInfoListNoStats</p> | <p><em>pvResult viene</em> interpretato come una <a href="gg269348(v=exchg.10).md">JET_OBJECTLIST</a> struttura. Vengono recuperate informazioni su tutti gli oggetti. Verrà creata una tabella temporanea e le informazioni necessarie per attraversare la tabella temporanea sono descritte nella JET_OBJECTLIST <a href="gg269348(v=exchg.10).md">struttura.</a> Per altre informazioni, vedere <a href="gg269348(v=exchg.10).md">JET_OBJECTLIST</a>. JET_ObjInfoListNoStats è identico a JET_ObjInfoList, ad eccezione del fatto che le colonne che segnalano il numero di record (<em>columnidcRecord</em>) e le pagine (<em>columnidcPage</em>) non verranno aggiornate.</p> | 
+| <p>JET_ObjInfoListNoStats</p> | <p><em>pvResult viene</em> interpretato come una <a href="gg269348(v=exchg.10).md">JET_OBJECTLIST</a> struttura. Vengono recuperate informazioni su tutti gli oggetti. Verrà creata una tabella temporanea e le informazioni necessarie per attraversare la tabella temporanea sono descritte nella JET_OBJECTLIST <a href="gg269348(v=exchg.10).md">struttura.</a> Per altre informazioni, <a href="gg269348(v=exchg.10).md">vedere</a>JET_OBJECTLIST . JET_ObjInfoListNoStats è identico JET_ObjInfoList, ad eccezione del fatto che le colonne che segnalano il numero di record (<em>columnidcRecord</em>) e le pagine (<em>columnidcPage</em>) non verranno aggiornate.</p> | 
 | <p>JET_ObjInfoMax</p> | <p><em>pvResult viene</em> interpretato come un <a href="gg269353(v=exchg.10).md">JET_OBJECTINFO</a>. Le dimensioni massime dell'oggetto sono in pagine. Attualmente verranno restituite solo le tabelle.</p> | 
 | <p>JET_ObjInfoNoStats</p> | <p><em>pvResult viene</em> interpretato come un <a href="gg269353(v=exchg.10).md">JET_OBJECTINFO</a>. Verranno recuperate solo le informazioni sull'oggetto specificato in <em>szObjectName.</em></p><p>La <a href="gg269353(v=exchg.10).md">JET_OBJECTINFO</a> verrà popolata con le informazioni relative all'oggetto denominato in <em>szObjectName</em>.</p><p>JET_ObjInfoNoStats è identico a JET_ObjInfo, ad eccezione del fatto che i campi che segnalano il numero di record e pagine sono impostati su zero.</p> | 
 | <p>JET_ObjInfoRulesLoaded</p> | <p>Deprecato e attualmente non supportato.</p> | 
@@ -108,7 +108,7 @@ Per questo parametro sono disponibili le opzioni seguenti.
 
 ### <a name="return-value"></a>Valore restituito
 
-Questa funzione restituisce il [JET_ERR](./jet-err.md) dati con uno dei codici restituiti seguenti. Per altre informazioni sui possibili errori ESE, vedere Errori del [motore di Archiviazione](./extensible-storage-engine-errors.md) estendibile e Parametri di gestione degli [errori](./error-handling-parameters.md).
+Questa funzione restituisce il [JET_ERR](./jet-err.md) dati con uno dei codici restituiti seguenti. Per altre informazioni sui possibili errori ESE, vedere Errori del [motore Archiviazione estendibile](./extensible-storage-engine-errors.md) e Parametri [di gestione degli errori](./error-handling-parameters.md).
 
 
 | <p>Codice restituito</p> | <p>Descrizione</p> | 
@@ -129,14 +129,7 @@ Se **JetGetObjectInfo** crea correttamente una tabella temporanea (ad esempio, J
 #### <a name="requirements"></a>Requisiti
 
 
-| Requisito | Valore |
-|------------|----------|
-| <p><strong>Client</strong></p> | <p>Richiede Windows Vista, Windows XP o Windows 2000 Professional.</p> | 
-| <p><strong>Server</strong></p> | <p>Richiede Windows Server 2008, Windows Server 2003 o Windows 2000 Server.</p> | 
-| <p><strong>Intestazione</strong></p> | <p>Dichiarato in Esent.h.</p> | 
-| <p><strong>Libreria</strong></p> | <p>Usare ESENT.lib.</p> | 
-| <p><strong>DLL</strong></p> | <p>Richiede ESENT.dll.</p> | 
-| <p><strong>Unicode</strong></p> | <p>Implementato come <strong>JetGetObjectInfoW</strong> (Unicode) e <strong>JetGetObjectInfoA</strong> (ANSI).</p> | 
+| | | <p><strong>Client</strong></p> | <p>Richiede Windows Vista, Windows XP o Windows 2000 Professional.</p> | | <p><strong>Server</strong></p> | <p>Richiede Windows Server 2008, Windows Server 2003 o Windows 2000 Server.</p> | | <p><strong>Intestazione</strong></p> | <p>Dichiarato in Esent.h.</p> | | <p><strong>Libreria</strong></p> | <p>Usare ESENT.lib.</p> | | <p><strong>DLL</strong></p> | <p>Richiede ESENT.dll.</p> | | <p><strong>Unicode</strong></p> | <p>Implementato come <strong>JetGetObjectInfoW</strong> (Unicode) e <strong>JetGetObjectInfoA</strong> (ANSI).</p> | 
 
 
 

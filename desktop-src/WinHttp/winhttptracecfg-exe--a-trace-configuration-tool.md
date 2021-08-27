@@ -1,15 +1,15 @@
 ---
-description: Lo strumento Windows di traccia dei servizi HTTP (WinHTTP), WinHttpTraceCfg.exe, viene usato per configurare le funzionalità di traccia a scopo di debug e analisi dei pacchetti.
+description: Lo strumento Windows di traccia di Microsoft Windows Servizi HTTP (WinHTTP), WinHttpTraceCfg.exe, viene usato per configurare le funzionalità di traccia a scopo di debug e analisi dei pacchetti.
 ms.assetid: 744cae92-9c64-459e-96eb-eb609e62183c
 title: WinHttpTraceCfg.exe, uno strumento di configurazione della traccia
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: a7747e0b2fe023ab3c2c86d19a722059482aed19062cf2a450b8d0f237a8b3a9
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: e292373c0da19be32f48d7f62f558953406e8d1b
+ms.sourcegitcommit: c276a8912787b2cda74dcf54eb96df961bb1188b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "118562415"
+ms.lasthandoff: 08/20/2021
+ms.locfileid: "122622567"
 ---
 # <a name="winhttptracecfgexe-a-trace-configuration-tool"></a>WinHttpTraceCfg.exe, uno strumento di configurazione della traccia
 
@@ -37,8 +37,8 @@ Nella tabella seguente sono elencati i possibili parametri per lo strumento di c
 
 <table>
 <colgroup>
-<col style="width: 50%" />
-<col style="width: 50%" />
+<col  />
+<col  />
 </colgroup>
 <thead>
 <tr class="header">
@@ -162,7 +162,7 @@ L'immagine seguente mostra una parte di un file di log generato dalla funzionali
 
 ![traccia di esempio](images/ss-tracer-wco.png)
 
-Ogni riga di output di traccia contiene informazioni in tre colonne. La prima colonna mostra la data e l'ora in cui è stata registrata la voce. La seconda colonna mostra un identificatore di richiesta (ID) che può essere usato per distinguere tra più richieste. Se la voce di log non corrisponde a una richiesta specifica, in questa colonna viene \* \* visualizzato " Sessione ". Può essere utile ordinare il file di log in base a questo ID per visualizzare solo gli eventi che si verificano per una singola richiesta. Nell'esempio seguente viene illustrato un comando che è possibile usare per ordinare il file di log.
+Ogni riga di output di traccia contiene informazioni in tre colonne. La prima colonna mostra la data e l'ora in cui è stata registrata la voce. La seconda colonna mostra un identificatore di richiesta (ID) che può essere usato per distinguere tra più richieste. Se la voce di log non corrisponde a una richiesta specifica, in \* questa colonna viene visualizzato " Sessione \* ". Può essere utile ordinare il file di log in base a questo ID per visualizzare solo gli eventi che si verificano per una singola richiesta. Nell'esempio seguente viene illustrato un comando che è possibile usare per ordinare il file di log.
 
 **findstr 00000001 LogFile.log**
 

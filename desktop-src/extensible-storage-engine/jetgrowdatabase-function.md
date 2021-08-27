@@ -1,6 +1,6 @@
 ---
-description: 'Altre informazioni su: funzione JetGrowDatabase'
-title: JetGrowDatabase (funzione)
+description: Altre informazioni sulla funzione JetGrowDatabase
+title: Funzione JetGrowDatabase
 TOCTitle: JetGrowDatabase Function
 ms:assetid: d9719991-6c80-4dcb-a1d6-f0c7de61f459
 ms:mtpsurl: https://msdn.microsoft.com/library/Gg294109(v=EXCHG.10)
@@ -18,21 +18,21 @@ api_type:
 api_location:
 - ESENT.DLL
 ROBOTS: INDEX,FOLLOW
-ms.openlocfilehash: 9ed8ee9888a2e4ab7908b72cc071f7b8143ca6ca
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 710e41b29c55ec435db6eb1b9e1536740819478e
+ms.sourcegitcommit: 9b5faa61c38b2d0c432b7f2dbee8c127b0e28a7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "106313097"
+ms.lasthandoff: 08/19/2021
+ms.locfileid: "122479067"
 ---
-# <a name="jetgrowdatabase-function"></a>JetGrowDatabase (funzione)
+# <a name="jetgrowdatabase-function"></a>Funzione JetGrowDatabase
 
 
 _**Si applica a:** Windows | Windows Server_
 
-## <a name="jetgrowdatabase-function"></a>JetGrowDatabase (funzione)
+## <a name="jetgrowdatabase-function"></a>Funzione JetGrowDatabase
 
-La funzione **JetGrowDatabase** estende le dimensioni di un database attualmente aperto.
+La **funzione JetGrowDatabase** estende le dimensioni di un database attualmente aperto.
 
 ```cpp
     JET_ERR JET_API JetGrowDatabase(
@@ -49,11 +49,11 @@ La funzione **JetGrowDatabase** estende le dimensioni di un database attualmente
 
 Contesto della sessione di database da usare per la chiamata API.
 
-*dbid*
+*Dbid*
 
 Database che verrà esteso.
 
-*cpg*
+*Cpg*
 
 Dimensioni desiderate del database, in pagine.
 
@@ -63,76 +63,32 @@ Puntatore a un numero che riceve le dimensioni del database, in pagine, dopo la 
 
 ### <a name="return-value"></a>Valore restituito
 
-Questa funzione restituisce il tipo di dati [JET_ERR](./jet-err.md) con uno dei seguenti codici restituiti. Per ulteriori informazioni sugli errori ESE possibili, vedere la pagina relativa agli errori e ai [parametri di gestione degli](./error-handling-parameters.md)errori del [motore di archiviazione estensibile](./extensible-storage-engine-errors.md) .
+Questa funzione restituisce il [JET_ERR](./jet-err.md) dati con uno dei codici restituiti seguenti. Per altre informazioni sui possibili errori ESE, vedere Errori del [motore Archiviazione estendibile](./extensible-storage-engine-errors.md) e Parametri [di gestione degli errori](./error-handling-parameters.md).
 
-<table>
-<colgroup>
-<col style="width: 50%" />
-<col style="width: 50%" />
-</colgroup>
-<thead>
-<tr class="header">
-<th><p>Codice restituito</p></th>
-<th><p>Descrizione</p></th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td><p>JET_errSuccess</p></td>
-<td><p>Operazione riuscita.</p></td>
-</tr>
-<tr class="even">
-<td><p>JET_errDiskFull</p></td>
-<td><p>Lo spazio disponibile nel volume non è sufficiente per eseguire l'operazione di espansione.</p></td>
-</tr>
-<tr class="odd">
-<td><p>JET_errDiskIO</p></td>
-<td><p>Un errore relativo al file è stato restituito da <a href="gg269242(v=exchg.10).md">JetSetDatabaseSize</a>. Per ulteriori informazioni sugli altri errori correlati ai file che potrebbero essere restituiti, vedere <a href="gg269242(v=exchg.10).md">JetSetDatabaseSize</a>.</p></td>
-</tr>
-</tbody>
-</table>
+
+| <p>Codice restituito</p> | <p>Descrizione</p> | 
+|--------------------|--------------------|
+| <p>JET_errSuccess</p> | <p>Operazione riuscita.</p> | 
+| <p>JET_errDiskFull</p> | <p>Spazio disponibile insufficiente nel volume per eseguire l'operazione di crescita.</p> | 
+| <p>JET_errDiskIO</p> | <p>Un errore correlato al file è stato restituito <a href="gg269242(v=exchg.10).md">da JetSetDatabaseSize.</a> Per altre informazioni su altri errori correlati ai file che potrebbero essere restituiti, vedere <a href="gg269242(v=exchg.10).md">JetSetDatabaseSize</a>.</p> | 
+
 
 
 #### <a name="remarks"></a>Commenti
 
-Se **JetGrowDatabase** viene chiamato prima dell'inserimento di grandi quantità di dati, il file di database verrà aumentato in un'unica operazione. In questo modo si ridurrà la probabilità che il file di database diventi frammentato a livello di file system e si ridurrà anche il numero di volte in cui il file di database deve essere aumentato. La crescita del file di database può essere più veloce rispetto alla crescita più volte.
+Se **jetGrowDatabase viene** chiamato prima di inserire grandi quantità di dati, il file di database verrà aumentato in un'unica operazione. In questo modo si ridurrà la probabilità che il file di database diventi frammentato file system livello e si ridurrà anche il numero di volte in cui il file di database deve essere aumentato. L'aumento delle dimensioni del file di database una sola volta può essere più rapido rispetto all'aumento più volte.
 
-Attualmente è supportata solo la crescita del file. Per compattare un file, utilizzare la funzionalità di deframmentazione del programma di utilità **esentutl.exe** .
+Attualmente è supportata solo l'espansione del file. Per compattare un file, usare la funzionalità di deframmentazione del **programmaesentutl.exe** utilità.
 
 Per impostare le dimensioni di un database non aperto, vedere [JetSetDatabaseSize](./jetsetdatabasesize-function.md).
 
-Le dimensioni del file potrebbero non corrispondere al numero di pagine restituite in *pcpgReal*. Sono disponibili altre due pagine riservate che potrebbero non essere conteggiate in *pcpgReal*.
+Le dimensioni del file potrebbero non corrispondere al numero di pagine restituite in *pcpgReal*. Esistono due pagine riservate aggiuntive che potrebbero non essere conteggiate in *pcpgReal*.
 
 #### <a name="requirements"></a>Requisiti
 
-<table>
-<colgroup>
-<col style="width: 50%" />
-<col style="width: 50%" />
-</colgroup>
-<tbody>
-<tr class="odd">
-<td><p><strong>Client</strong></p></td>
-<td><p>Richiede Windows Vista, Windows XP o Windows 2000 Professional.</p></td>
-</tr>
-<tr class="even">
-<td><p><strong>Server</strong></p></td>
-<td><p>Richiede Windows Server 2008, Windows Server 2003 o Windows 2000 Server.</p></td>
-</tr>
-<tr class="odd">
-<td><p><strong>Intestazione</strong></p></td>
-<td><p>Dichiarata in esent. h.</p></td>
-</tr>
-<tr class="even">
-<td><p><strong>Libreria</strong></p></td>
-<td><p>Usare ESENT. lib.</p></td>
-</tr>
-<tr class="odd">
-<td><p><strong>DLL</strong></p></td>
-<td><p>Richiede ESENT.dll.</p></td>
-</tr>
-</tbody>
-</table>
+
+| | | <p><strong>Client</strong></p> | <p>Richiede Windows Vista, Windows XP o Windows 2000 Professional.</p> | | <p><strong>Server</strong></p> | <p>Richiede Windows Server 2008, Windows Server 2003 o Windows 2000 Server.</p> | | <p><strong>Intestazione</strong></p> | <p>Dichiarato in Esent.h.</p> | | <p><strong>Libreria</strong></p> | <p>Usare ESENT.lib.</p> | | <p><strong>DLL</strong></p> | <p>Richiede ESENT.dll.</p> | 
+
 
 
 #### <a name="see-also"></a>Vedere anche

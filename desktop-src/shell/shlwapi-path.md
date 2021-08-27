@@ -1,5 +1,5 @@
 ---
-description: In questa sezione vengono descritte le funzioni di gestione dei percorsi della shell di Windows. Gli elementi di programmazione descritti in questa documentazione vengono esportati da Shlwapi.dll e definiti in Shlwapi. h e Shlwapi. lib.
+description: In questa sezione vengono descritte le Windows di gestione dei percorsi della shell. Gli elementi di programmazione illustrati in questa documentazione vengono esportati Shlwapi.dll e definiti in Shlwapi.h e Shlwapi.lib.
 title: Funzioni di gestione del percorso della shell
 ms.topic: article
 ms.date: 05/31/2018
@@ -9,16 +9,16 @@ api_type: ''
 api_location: ''
 topic_type:
 - kbArticle
-ms.openlocfilehash: 8ed0a5e0f2e91a2e647af461ee6679a5542d28b7
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: ab485d7055ed6412698d06e9d95628074c85f3cc1e7ac52e7513dd8975529826
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "104995072"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120111121"
 ---
 # <a name="shell-path-handling-functions"></a>Funzioni di gestione del percorso della shell
 
-In questa sezione vengono descritte le funzioni di gestione dei percorsi della shell di Windows. Gli elementi di programmazione descritti in questa documentazione vengono esportati da Shlwapi.dll e definiti in Shlwapi. h e Shlwapi. lib.
+In questa sezione vengono descritte le Windows di gestione dei percorsi della shell. Gli elementi di programmazione illustrati in questa documentazione vengono esportati Shlwapi.dll e definiti in Shlwapi.h e Shlwapi.lib.
 
 ## <a name="in-this-section"></a>Contenuto della sezione
 
@@ -38,28 +38,28 @@ In questa sezione vengono descritte le funzioni di gestione dei percorsi della s
 <tbody>
 <tr class="odd">
 <td><a href="/windows/desktop/api/Shlwapi/nf-shlwapi-pathaddbackslasha"><strong>PathAddBackslash</strong></a><br/></td>
-<td>Aggiunge una barra rovesciata alla fine di una stringa per creare la sintassi corretta per un percorso. Se il percorso di origine dispone già di una barra rovesciata finale, non verrà aggiunta alcuna barra rovesciata. <br/>
+<td>Aggiunge una barra rovesciata alla fine di una stringa per creare la sintassi corretta per un percorso. Se il percorso di origine ha già una barra rovesciata finale, non verrà aggiunta alcuna barra rovesciata. <br/>
 <blockquote>
 [!Note]<br />
-Un uso improprio di questa funzione può causare un sovraccarico del buffer. È consigliabile usare la funzione <a href="/windows/desktop/api/pathcch/nf-pathcch-pathcchaddbackslash"><strong>PathCchAddBackslash</strong></a> o <a href="/windows/desktop/api/pathcch/nf-pathcch-pathcchaddbackslashex"><strong>PathCchAddBackslashEx</strong></a> più sicura al suo posto.
+L'uso improprio di questa funzione può causare un sovraccarico del buffer. È consigliabile usare al suo posto la funzione <a href="/windows/desktop/api/pathcch/nf-pathcch-pathcchaddbackslash"><strong>PathCchAddBackslash</strong></a> o <a href="/windows/desktop/api/pathcch/nf-pathcch-pathcchaddbackslashex"><strong>PathCchAddBackslashEx</strong></a> più sicura.
 </blockquote>
 <br/></td>
 </tr>
 <tr class="even">
 <td><a href="/windows/desktop/api/Shlwapi/nf-shlwapi-pathaddextensiona"><strong>PathAddExtension</strong></a><br/></td>
-<td>Aggiunge un'estensione del nome di file a una stringa di percorso.<br/>
+<td>Aggiunge un'estensione di file a una stringa di percorso.<br/>
 <blockquote>
 [!Note]<br />
-Un uso improprio di questa funzione può causare un sovraccarico del buffer. È consigliabile usare la funzione <a href="/windows/desktop/api/pathcch/nf-pathcch-pathcchaddextension"><strong>PathCchAddExtension</strong></a> più sicura al suo posto.
+L'uso improprio di questa funzione può causare un sovraccarico del buffer. È consigliabile usare al suo posto <a href="/windows/desktop/api/pathcch/nf-pathcch-pathcchaddextension"><strong>la funzione PathCchAddExtension</strong></a> più sicura.
 </blockquote>
 <br/></td>
 </tr>
 <tr class="odd">
 <td><a href="/windows/desktop/api/Shlwapi/nf-shlwapi-pathappenda"><strong>PathAppend</strong></a><br/></td>
-<td>Accoda un percorso alla fine di un altro. <br/>
+<td>Aggiunge un percorso alla fine di un altro. <br/>
 <blockquote>
 [!Note]<br />
-Un uso improprio di questa funzione può causare un sovraccarico del buffer. È consigliabile usare la funzione <a href="/windows/desktop/api/pathcch/nf-pathcch-pathcchappend"><strong>PathCchAppend</strong></a> o <a href="/windows/desktop/api/pathcch/nf-pathcch-pathcchappendex"><strong>PathCchAppendEx</strong></a> più sicura al suo posto.
+L'uso improprio di questa funzione può causare un sovraccarico del buffer. È consigliabile usare al suo posto la funzione <a href="/windows/desktop/api/pathcch/nf-pathcch-pathcchappend"><strong>PathCchAppend</strong></a> o <a href="/windows/desktop/api/pathcch/nf-pathcch-pathcchappendex"><strong>PathCchAppendEx</strong></a> più sicura.
 </blockquote>
 <br/></td>
 </tr>
@@ -69,32 +69,32 @@ Un uso improprio di questa funzione può causare un sovraccarico del buffer. È 
 </tr>
 <tr class="odd">
 <td><a href="/windows/desktop/api/Shlwapi/nf-shlwapi-pathcanonicalizea"><strong>PathCanonicalize</strong></a><br/></td>
-<td>Semplifica un percorso rimuovendo gli elementi di navigazione, ad esempio &quot; . &quot; e &quot; .. &quot; , per produrre un percorso diretto e ben formato.<br/></td>
+<td>Semplifica un percorso rimuovendo gli elementi di navigazione, ad esempio . e .. per produrre un percorso diretto &quot; &quot; e ben &quot; &quot; formato.<br/></td>
 </tr>
 <tr class="even">
 <td><a href="/windows/desktop/api/Shlwapi/nf-shlwapi-pathcombinea"><strong>PathCombine</strong></a><br/></td>
-<td>Concatena due stringhe che rappresentano i percorsi correttamente formattati in un unico percorso. concatena inoltre tutti gli elementi del percorso relativo. <br/>
+<td>Concatena due stringhe che rappresentano percorsi correttamente formati in un unico percorso. concatena anche tutti gli elementi del percorso relativo. <br/>
 <blockquote>
 [!Note]<br />
-Un uso improprio di questa funzione può causare un sovraccarico del buffer. È consigliabile usare la funzione <a href="/windows/desktop/api/pathcch/nf-pathcch-pathcchcombine"><strong>PathCchCombine</strong></a> o <a href="/windows/desktop/api/pathcch/nf-pathcch-pathcchcombineex"><strong>PathCchCombineEx</strong></a> più sicura al suo posto.
+L'uso improprio di questa funzione può causare un sovraccarico del buffer. È consigliabile usare al suo posto la funzione <a href="/windows/desktop/api/pathcch/nf-pathcch-pathcchcombine"><strong>PathCchCombine</strong></a> o <a href="/windows/desktop/api/pathcch/nf-pathcch-pathcchcombineex"><strong>PathCchCombineEx</strong></a> più sicura.
 </blockquote>
 <br/></td>
 </tr>
 <tr class="odd">
 <td><a href="/windows/desktop/api/Shlwapi/nf-shlwapi-pathcommonprefixa"><strong>PathCommonPrefix</strong></a><br/></td>
-<td>Confronta due percorsi per determinare se condividono un prefisso comune. Un prefisso è uno dei seguenti tipi: &quot; C: \\ &quot; , &quot; . &quot; , &quot; .. &quot; , &quot; \\ &quot; ...<br/></td>
+<td>Confronta due percorsi per determinare se condividono un prefisso comune. Un prefisso è uno dei tipi seguenti: &quot; C: \\ &quot; , . , . . &quot; . . . &quot; &quot; &quot; &quot; \\ &quot; .<br/></td>
 </tr>
 <tr class="even">
 <td><a href="/windows/desktop/api/Shlwapi/nf-shlwapi-pathcompactpatha"><strong>PathCompactPath</strong></a><br/></td>
-<td>Tronca un percorso di file per adattarsi alla larghezza di un determinato pixel sostituendo i componenti del percorso con ellissi.<br/></td>
+<td>Tronca un percorso di file in base a una larghezza in pixel specificata sostituendo i componenti del percorso con puntini di sospensione.<br/></td>
 </tr>
 <tr class="odd">
 <td><a href="/windows/desktop/api/Shlwapi/nf-shlwapi-pathcompactpathexa"><strong>PathCompactPathEx</strong></a><br/></td>
-<td>Tronca un percorso per adattarsi a un certo numero di caratteri sostituendo i componenti del percorso con ellissi.<br/></td>
+<td>Tronca un tracciato per rientrare in un determinato numero di caratteri sostituendo i componenti del tracciato con puntini di sospensione.<br/></td>
 </tr>
 <tr class="even">
 <td><a href="/windows/desktop/api/Shlwapi/nf-shlwapi-pathcreatefromurla"><strong>PathCreateFromUrl</strong></a><br/></td>
-<td>Converte un URL di file in un percorso Microsoft MS-DOS.<br/></td>
+<td>Converte l'URL di un file in un percorso Microsoft MS-DOS.<br/></td>
 </tr>
 <tr class="odd">
 <td><a href="/windows/desktop/api/Shlwapi/nf-shlwapi-pathcreatefromurlalloc"><strong>PathCreateFromUrlAlloc</strong></a><br/></td>
@@ -102,7 +102,7 @@ Un uso improprio di questa funzione può causare un sovraccarico del buffer. È 
 </tr>
 <tr class="even">
 <td><a href="/windows/desktop/api/Shlwapi/nf-shlwapi-pathfileexistsa"><strong>PathFileExists</strong></a><br/></td>
-<td>Determina se il percorso di un oggetto file system, ad esempio un file o una cartella, è valido.<br/></td>
+<td>Determina se un percorso di un file system, ad esempio un file o una cartella, è valido.<br/></td>
 </tr>
 <tr class="odd">
 <td><a href="/windows/desktop/api/Shlwapi/nf-shlwapi-pathfindextensiona"><strong>PathFindExtension</strong></a><br/></td>
@@ -114,7 +114,7 @@ Un uso improprio di questa funzione può causare un sovraccarico del buffer. È 
 </tr>
 <tr class="odd">
 <td><a href="/windows/desktop/api/Shlwapi/nf-shlwapi-pathfindnextcomponenta"><strong>PathFindNextComponent</strong></a><br/></td>
-<td>Analizza un percorso e restituisce la parte del percorso che segue la prima barra rovesciata.<br/></td>
+<td>Analizza un percorso e restituisce la parte di tale percorso che segue la prima barra rovesciata.<br/></td>
 </tr>
 <tr class="even">
 <td><a href="/windows/desktop/api/Shlwapi/nf-shlwapi-pathfindonpatha"><strong>PathFindOnPath</strong></a><br/></td>
@@ -122,7 +122,7 @@ Un uso improprio di questa funzione può causare un sovraccarico del buffer. È 
 </tr>
 <tr class="odd">
 <td><a href="/windows/desktop/api/Shlwapi/nf-shlwapi-pathfindsuffixarraya"><strong>PathFindSuffixArray</strong></a><br/></td>
-<td>Determina se un nome file specificato presenta uno degli elenchi di suffissi.<br/></td>
+<td>Determina se un nome di file specificato ha uno di un elenco di suffissi.<br/></td>
 </tr>
 <tr class="even">
 <td><a href="/windows/desktop/api/Shlwapi/nf-shlwapi-pathgetargsa"><strong>PathGetArgs</strong></a><br/></td>
@@ -134,7 +134,7 @@ Un uso improprio di questa funzione può causare un sovraccarico del buffer. È 
 </tr>
 <tr class="even">
 <td><a href="/windows/desktop/api/Shlwapi/nf-shlwapi-pathgetdrivenumbera"><strong>PathGetDriveNumber</strong></a><br/></td>
-<td>Cerca in un percorso una lettera di unità compresa nell'intervallo tra' A ' è Z ' e restituisce il numero di unità corrispondente.<br/></td>
+<td>Cerca in un percorso una lettera di unità nell'intervallo da "A" a "Z" e restituisce il numero di unità corrispondente.<br/></td>
 </tr>
 <tr class="odd">
 <td><a href="/windows/desktop/api/Shlwapi/nf-shlwapi-pathiscontenttypea"><strong>PathIsContentType</strong></a><br/></td>
@@ -150,15 +150,15 @@ Un uso improprio di questa funzione può causare un sovraccarico del buffer. È 
 </tr>
 <tr class="even">
 <td><a href="/windows/desktop/api/Shlwapi/nf-shlwapi-pathisfilespeca"><strong>PathIsFileSpec</strong></a><br/></td>
-<td>Cerca in un percorso eventuali caratteri di delimitazione del percorso (ad esempio,':' o ' \' ). Se non sono presenti caratteri di delimitazione del percorso, il percorso viene considerato un percorso di specifica del file.<br/></td>
+<td>Cerca in un percorso tutti i caratteri di delimitazione del percorso ,ad esempio ':' o \' '. Se non sono presenti caratteri di delimitazione del percorso, il percorso viene considerato un percorso di specifica file.<br/></td>
 </tr>
 <tr class="odd">
 <td><a href="/windows/desktop/api/Shlwapi/nf-shlwapi-pathishtmlfilea"><strong>PathIsHTMLFile</strong></a><br/></td>
-<td>Determina se un file è un file HTML. La determinazione viene eseguita in base al tipo di contenuto registrato per l'estensione del file.<br/></td>
+<td>Determina se un file è un file HTML. La determinazione viene effettuata in base al tipo di contenuto registrato per l'estensione del file.<br/></td>
 </tr>
 <tr class="even">
 <td><a href="/windows/desktop/api/Shlwapi/nf-shlwapi-pathislfnfilespeca"><strong>PathIsLFNFileSpec</strong></a><br/></td>
-<td>Determina se un nome di file è nel formato lungo.<br/></td>
+<td>Determina se un nome file è in formato lungo.<br/></td>
 </tr>
 <tr class="odd">
 <td><a href="/windows/desktop/api/Shlwapi/nf-shlwapi-pathisnetworkpatha"><strong>PathIsNetworkPath</strong></a><br/></td>
@@ -166,7 +166,7 @@ Un uso improprio di questa funzione può causare un sovraccarico del buffer. È 
 </tr>
 <tr class="even">
 <td><a href="/windows/desktop/api/Shlwapi/nf-shlwapi-pathisprefixa"><strong>PathIsPrefix</strong></a><br/></td>
-<td>Cerca un percorso per determinare se contiene un prefisso valido del tipo passato da <em>pszPrefix</em>. Un prefisso è uno dei seguenti tipi: &quot; C: \\ &quot; , &quot; . &quot; , &quot; .. &quot; , &quot; \\ &quot; ...<br/></td>
+<td>Cerca in un percorso per determinare se contiene un prefisso valido del tipo passato da <em>pszPrefix</em>. Un prefisso è uno dei tipi seguenti: &quot; C: \\ &quot; , . , . . &quot; . . . &quot; &quot; &quot; &quot; \\ &quot; .<br/></td>
 </tr>
 <tr class="odd">
 <td><a href="/windows/desktop/api/Shlwapi/nf-shlwapi-pathisrelativea"><strong>PathIsRelative</strong></a><br/></td>
@@ -182,31 +182,31 @@ Un uso improprio di questa funzione può causare un sovraccarico del buffer. È 
 </tr>
 <tr class="even">
 <td><a href="/windows/desktop/api/Shlwapi/nf-shlwapi-pathissystemfoldera"><strong>PathIsSystemFolder</strong></a><br/></td>
-<td>Determina se una cartella esistente contiene gli attributi che lo rendono una cartella di sistema. In alternativa, questa funzione indica se determinati attributi qualificano una cartella come cartella di sistema.<br/></td>
+<td>Determina se una cartella esistente contiene gli attributi che la rendono una cartella di sistema. In alternativa, questa funzione indica se determinati attributi qualificano una cartella come cartella di sistema.<br/></td>
 </tr>
 <tr class="odd">
 <td><a href="/windows/desktop/api/Shlwapi/nf-shlwapi-pathisunca"><strong>PathIsUNC</strong></a><br/></td>
-<td>Determina se una stringa di percorso è un percorso UNC (Universal Naming Convention) valido, anziché un percorso basato su una lettera di unità.<br/></td>
+<td>Determina se una stringa di percorso è un percorso Universal Naming Convention (UNC) valido, anziché un percorso basato su una lettera di unità.<br/></td>
 </tr>
 <tr class="even">
 <td><a href="/windows/desktop/api/Shlwapi/nf-shlwapi-pathisuncservera"><strong>PathIsUNCServer</strong></a><br/></td>
-<td>Determina se una stringa è un UNC valido solo per un percorso server.<br/></td>
+<td>Determina se una stringa è un UNC valido solo per un percorso del server.<br/></td>
 </tr>
 <tr class="odd">
 <td><a href="/windows/desktop/api/Shlwapi/nf-shlwapi-pathisuncserversharea"><strong>PathIsUNCServerShare</strong></a><br/></td>
-<td>Determina se una stringa è un percorso di condivisione UNC valido, ovvero una \\ <em></em> \ <em>condivisione</em>server.<br/></td>
+<td>Determina se una stringa è un percorso di condivisione UNC valido, \\ <em>condivisione</em> \ <em>server</em>.<br/></td>
 </tr>
 <tr class="even">
 <td><a href="/windows/desktop/api/Shlwapi/nf-shlwapi-pathisurla"><strong>PathIsURL</strong></a><br/></td>
-<td>Verifica una determinata stringa per determinare se è conforme a un formato di URL valido.<br/></td>
+<td>Verifica una determinata stringa per determinare se è conforme a un formato URL valido.<br/></td>
 </tr>
 <tr class="odd">
 <td><a href="/windows/desktop/api/Shlwapi/nf-shlwapi-pathmakeprettya"><strong>PathMakePretty</strong></a><br/></td>
-<td>Converte un percorso all-maiuscolo in tutti i caratteri minuscoli per fornire al percorso un aspetto coerente.<br/></td>
+<td>Converte un percorso tutto maiuscolo in tutti i caratteri minuscoli per assegnare al percorso un aspetto coerente.<br/></td>
 </tr>
 <tr class="even">
 <td><a href="/windows/desktop/api/Shlwapi/nf-shlwapi-pathmakesystemfoldera"><strong>PathMakeSystemFolder</strong></a><br/></td>
-<td>Assegna a una cartella esistente gli attributi appropriati che diventano una cartella di sistema.<br/></td>
+<td>Fornisce a una cartella esistente gli attributi adeguati per diventare una cartella di sistema.<br/></td>
 </tr>
 <tr class="odd">
 <td><a href="/windows/desktop/api/Shlwapi/nf-shlwapi-pathmatchspeca"><strong>PathMatchSpec</strong></a><br/></td>
@@ -214,15 +214,15 @@ Un uso improprio di questa funzione può causare un sovraccarico del buffer. È 
 </tr>
 <tr class="even">
 <td><a href="/windows/desktop/api/Shlwapi/nf-shlwapi-pathmatchspecexa"><strong>PathMatchSpecEx</strong></a><br/></td>
-<td>Corrisponde a un nome file da un percorso rispetto a uno o più modelli di nome file.<br/></td>
+<td>Trova la corrispondenza di un nome di file da un percorso rispetto a uno o più modelli di nome file.<br/></td>
 </tr>
 <tr class="odd">
-<td><a href="/windows/desktop/api/Shlwapi/nf-shlwapi-pathparseiconlocationa"><strong>PathParseIconLocation</strong></a><br/></td>
-<td>Analizza una stringa del percorso del file che contiene un percorso di file e un indice di icona e restituisce valori distinti.<br/></td>
+<td><a href="/windows/desktop/api/Shlwapi/nf-shlwapi-pathparseiconlocationa"><strong>PercorsoParseIconLocation</strong></a><br/></td>
+<td>Analizza una stringa di percorso del file che contiene un percorso di file e un indice di icona e restituisce valori separati.<br/></td>
 </tr>
 <tr class="even">
 <td><a href="/windows/desktop/api/Shlwapi/nf-shlwapi-pathquotespacesa"><strong>PathQuoteSpaces</strong></a><br/></td>
-<td>Cerca gli spazi in un percorso. Se vengono trovati spazi, l'intero percorso è racchiuso tra virgolette.<br/></td>
+<td>Cerca spazi in un percorso. Se vengono trovati spazi, l'intero percorso è racchiuso tra virgolette.<br/></td>
 </tr>
 <tr class="odd">
 <td><a href="/windows/desktop/api/Shlwapi/nf-shlwapi-pathrelativepathtoa"><strong>PathRelativePathTo</strong></a><br/></td>
@@ -237,7 +237,7 @@ Un uso improprio di questa funzione può causare un sovraccarico del buffer. È 
 <td>Rimuove la barra rovesciata finale da un percorso specificato.<br/>
 <blockquote>
 [!Note]<br />
-Questa funzione è deprecata. È consigliabile usare la funzione <a href="/windows/desktop/api/pathcch/nf-pathcch-pathcchremovebackslash"><strong>PathCchRemoveBackslash</strong></a> o <a href="/windows/desktop/api/pathcch/nf-pathcch-pathcchremovebackslashex"><strong>PathCchRemoveBackslashEx</strong></a> al suo posto.
+Questa funzione è deprecata. È consigliabile usare al suo posto la funzione <a href="/windows/desktop/api/pathcch/nf-pathcch-pathcchremovebackslash"><strong>PathCchRemoveBackslash</strong></a> o <a href="/windows/desktop/api/pathcch/nf-pathcch-pathcchremovebackslashex"><strong>PathCchRemoveBackslashEx.</strong></a>
 </blockquote>
 <br/></td>
 </tr>
@@ -247,19 +247,19 @@ Questa funzione è deprecata. È consigliabile usare la funzione <a href="/windo
 </tr>
 <tr class="odd">
 <td><a href="/windows/desktop/api/Shlwapi/nf-shlwapi-pathremoveextensiona"><strong>PathRemoveExtension</strong></a><br/></td>
-<td>Rimuove l'estensione del nome file da un percorso, se presente. <br/>
+<td>Rimuove l'estensione di file da un percorso, se presente. <br/>
 <blockquote>
 [!Note]<br />
-Questa funzione è deprecata. Si consiglia di usare <a href="/windows/desktop/api/pathcch/nf-pathcch-pathcchremoveextension"><strong>PathCchRemoveExtension</strong></a> al suo posto.
+Questa funzione è deprecata. È consigliabile usare <a href="/windows/desktop/api/pathcch/nf-pathcch-pathcchremoveextension"><strong>PathCchRemoveExtension</strong></a> al suo posto.
 </blockquote>
 <br/></td>
 </tr>
 <tr class="even">
 <td><a href="/windows/desktop/api/Shlwapi/nf-shlwapi-pathremovefilespeca"><strong>PathRemoveFileSpec</strong></a><br/></td>
-<td>Rimuove il nome del file finale e la barra rovesciata da un percorso, se presenti.<br/>
+<td>Rimuove il nome file finale e la barra rovesciata da un percorso, se presenti.<br/>
 <blockquote>
 [!Note]<br />
-Questa funzione è deprecata. È consigliabile usare la funzione <a href="/windows/desktop/api/pathcch/nf-pathcch-pathcchremovefilespec"><strong>PathCchRemoveFileSpec</strong></a> al suo posto.
+Questa funzione è deprecata. È consigliabile usare al suo posto la funzione <a href="/windows/desktop/api/pathcch/nf-pathcch-pathcchremovefilespec"><strong>PathCchRemoveFileSpec.</strong></a>
 </blockquote>
 <br/></td>
 </tr>
@@ -268,7 +268,7 @@ Questa funzione è deprecata. È consigliabile usare la funzione <a href="/windo
 <td>Sostituisce l'estensione di un nome file con una nuova estensione. Se il nome file non contiene un'estensione, l'estensione verrà allegata alla fine della stringa.<br/>
 <blockquote>
 [!Note]<br />
-Un uso improprio di questa funzione può causare un sovraccarico del buffer. È consigliabile usare la funzione <a href="/windows/desktop/api/pathcch/nf-pathcch-pathcchrenameextension"><strong>PathCchRenameExtension</strong></a> più sicura al suo posto.
+L'uso improprio di questa funzione può causare un sovraccarico del buffer. È consigliabile usare al suo posto la funzione <a href="/windows/desktop/api/pathcch/nf-pathcch-pathcchrenameextension"><strong>PathCchRenameExtension</strong></a> più sicura.
 </blockquote>
 <br/></td>
 </tr>
@@ -278,36 +278,36 @@ Un uso improprio di questa funzione può causare un sovraccarico del buffer. È 
 </tr>
 <tr class="odd">
 <td><a href="/windows/desktop/api/Shlwapi/nf-shlwapi-pathsetdlgitempatha"><strong>PathSetDlgItemPath</strong></a><br/></td>
-<td>Imposta il testo di un controllo figlio in una finestra o in una finestra di dialogo, usando <a href="/windows/desktop/api/Shlwapi/nf-shlwapi-pathcompactpatha"><strong>PathCompactPath</strong></a> per garantire che il percorso corrisponda al controllo.<br/></td>
+<td>Imposta il testo di un controllo figlio in una finestra o in una finestra di dialogo, usando <a href="/windows/desktop/api/Shlwapi/nf-shlwapi-pathcompactpatha"><strong>PathCompactPath</strong></a> per garantire che il percorso si adatti al controllo.<br/></td>
 </tr>
 <tr class="even">
 <td><a href="/windows/desktop/api/Shlwapi/nf-shlwapi-pathskiproota"><strong>PathSkipRoot</strong></a><br/></td>
-<td>Recupera un puntatore al primo carattere in un percorso che segue la lettera di unità o gli elementi del percorso di condivisione o del server UNC.<br/></td>
+<td>Recupera un puntatore al primo carattere in un percorso che segue la lettera di unità o gli elementi del percorso di condivisione/server UNC.<br/></td>
 </tr>
 <tr class="odd">
 <td><a href="/windows/desktop/api/Shlwapi/nf-shlwapi-pathstrippatha"><strong>PathStripPath</strong></a><br/></td>
-<td>Rimuove la parte del percorso di un percorso e un file completi.<br/></td>
+<td>Rimuove la parte relativa al percorso di un percorso e di un file completi.<br/></td>
 </tr>
 <tr class="even">
 <td><a href="/windows/desktop/api/Shlwapi/nf-shlwapi-pathstriptoroota"><strong>PathStripToRoot</strong></a><br/></td>
-<td>Rimuove tutti gli elementi di file e directory in un percorso tranne le informazioni radice.<br/>
+<td>Rimuove tutti gli elementi di file e directory in un percorso, ad eccezione delle informazioni radice.<br/>
 <blockquote>
 [!Note]<br />
-Un uso improprio di questa funzione può causare un sovraccarico del buffer. È consigliabile usare la funzione <a href="/windows/desktop/api/pathcch/nf-pathcch-pathcchstriptoroot"><strong>PathCchStripToRoot</strong></a> più sicura al suo posto.
+L'uso improprio di questa funzione può causare un sovraccarico del buffer. È consigliabile usare al suo posto <a href="/windows/desktop/api/pathcch/nf-pathcch-pathcchstriptoroot"><strong>la funzione PathCchStripToRoot</strong></a> più sicura.
 </blockquote>
 <br/></td>
 </tr>
 <tr class="odd">
 <td><a href="/windows/desktop/api/Shlwapi/nf-shlwapi-pathundecoratea"><strong>PathUndecorate</strong></a><br/></td>
-<td>Rimuove la decorazione da una stringa di percorso.<br/></td>
+<td>Rimuove l'elemento decorativo da una stringa di percorso.<br/></td>
 </tr>
 <tr class="even">
 <td><a href="/windows/desktop/api/Shlwapi/nf-shlwapi-pathunexpandenvstringsa"><strong>PathUnExpandEnvStrings</strong></a><br/></td>
-<td>Sostituisce determinati nomi di cartella in un percorso completo con la relativa stringa di ambiente associata.<br/></td>
+<td>Sostituisce determinati nomi di cartella in un percorso completo con la stringa di ambiente associata.<br/></td>
 </tr>
 <tr class="odd">
 <td><a href="/windows/desktop/api/Shlwapi/nf-shlwapi-pathunmakesystemfoldera"><strong>PathUnmakeSystemFolder</strong></a><br/></td>
-<td>Rimuove gli attributi da una cartella che lo rende una cartella di sistema. Questa cartella deve esistere effettivamente nella file system.<br/></td>
+<td>Rimuove gli attributi da una cartella che la rende una cartella di sistema. Questa cartella deve esistere effettivamente nel file system.<br/></td>
 </tr>
 <tr class="even">
 <td><a href="/windows/desktop/api/Shlwapi/nf-shlwapi-pathunquotespacesa"><strong>PathUnquoteSpaces</strong></a><br/></td>
@@ -315,7 +315,7 @@ Un uso improprio di questa funzione può causare un sovraccarico del buffer. È 
 </tr>
 <tr class="odd">
 <td><a href="/windows/desktop/api/Shlwapi/nf-shlwapi-shskipjunction"><strong>SHSkipJunction</strong></a><br/></td>
-<td>Controlla un contesto di associazione per verificare se è sicuro eseguire un'associazione a un particolare oggetto componente.<br/></td>
+<td>Controlla un contesto di associazione per verificare se è sicuro eseguire l'associazione a un particolare oggetto componente.<br/></td>
 </tr>
 <tr class="even">
 <td><a href="/windows/desktop/api/Shlwapi/nf-shlwapi-urlapplyschemea"><strong>UrlApplyScheme</strong></a><br/></td>
@@ -327,23 +327,23 @@ Un uso improprio di questa funzione può causare un sovraccarico del buffer. È 
 </tr>
 <tr class="even">
 <td><a href="/windows/desktop/api/Shlwapi/nf-shlwapi-urlcombinea"><strong>UrlCombine</strong></a><br/></td>
-<td>Se fornito con un URL relativo e la relativa base, restituisce un URL in formato canonico.<br/></td>
+<td>Se specificato con un URL relativo e la relativa base, restituisce un URL in formato canonico.<br/></td>
 </tr>
 <tr class="odd">
 <td><a href="/windows/desktop/api/Shlwapi/nf-shlwapi-urlcomparea"><strong>UrlCompare</strong></a><br/></td>
-<td>Esegue un confronto con distinzione tra maiuscole e minuscole di due stringhe URL.<br/></td>
+<td>Esegue un confronto tra maiuscole e minuscole di due stringhe URL.<br/></td>
 </tr>
 <tr class="even">
 <td><a href="/windows/desktop/api/Shlwapi/nf-shlwapi-urlcreatefrompatha"><strong>UrlCreateFromPath</strong></a><br/></td>
-<td>Converte un percorso MS-DOS in un URL canonico.<br/></td>
+<td>Converte un percorso MS-DOS in un URL in formato canonico.<br/></td>
 </tr>
 <tr class="odd">
 <td><a href="/windows/desktop/api/Shlwapi/nf-shlwapi-urlescapea"><strong>UrlEscape</strong></a><br/></td>
-<td>Converte i caratteri o le coppie di surrogati in un URL che può essere modificato durante il trasporto su Internet ( &quot; caratteri non sicuri &quot; ) nelle corrispondenti sequenze di escape. Le coppie di surrogati sono caratteri compresi tra U + 10000 e U + 10FFFF (in UTF-32) o tra DC00 e DFFF (in UTF-16). <br/></td>
+<td>Converte i caratteri o le coppie di surrogati in un URL che potrebbero essere modificati durante il trasporto su Internet (caratteri non sicuri) nelle sequenze di &quot; &quot; escape corrispondenti. Le coppie di surrogati sono caratteri compresi tra U+10000 e U+10FFFF (in UTF-32) o tra DC00 e DFFF (in UTF-16). <br/></td>
 </tr>
 <tr class="even">
 <td><a href="/windows/desktop/api/Shlwapi/nf-shlwapi-urlescapespaces"><strong>UrlEscapeSpaces</strong></a><br/></td>
-<td>Una macro che converte i caratteri spazio nella sequenza di escape corrispondente.<br/></td>
+<td>Macro che converte gli spazi nella sequenza di escape corrispondente.<br/></td>
 </tr>
 <tr class="odd">
 <td><a href="/windows/desktop/api/Shlwapi/nf-shlwapi-urlgetlocationa"><strong>UrlGetLocation</strong></a><br/></td>
@@ -355,10 +355,10 @@ Un uso improprio di questa funzione può causare un sovraccarico del buffer. È 
 </tr>
 <tr class="odd">
 <td><a href="/windows/desktop/api/Shlwapi/nf-shlwapi-urlhasha"><strong>UrlHash</strong></a><br/></td>
-<td>Viene eseguito l'hashing di una stringa URL.<br/></td>
+<td>Esegue l'hashing di una stringa URL.<br/></td>
 </tr>
 <tr class="even">
-<td><a href="/windows/desktop/api/Shlwapi/nf-shlwapi-urlisa"><strong>UrlIs</strong></a><br/></td>
+<td><a href="/windows/desktop/api/Shlwapi/nf-shlwapi-urlisa"><strong>URLIs</strong></a><br/></td>
 <td>Verifica se un URL è un tipo specificato.<br/></td>
 </tr>
 <tr class="odd">
@@ -367,7 +367,7 @@ Un uso improprio di questa funzione può causare un sovraccarico del buffer. È 
 </tr>
 <tr class="even">
 <td><a href="/windows/desktop/api/Shlwapi/nf-shlwapi-urlisnohistorya"><strong>UrlIsNoHistory</strong></a><br/></td>
-<td>Restituisce un valore che indica se un URL è un URL che in genere non include nei browser la cronologia di navigazione.<br/></td>
+<td>Restituisce un valore che indica se un URL è un URL che i browser in genere non includono nella cronologia di navigazione.<br/></td>
 </tr>
 <tr class="odd">
 <td><a href="/windows/desktop/api/Shlwapi/nf-shlwapi-urlisopaquea"><strong>UrlIsOpaque</strong></a><br/></td>
@@ -375,11 +375,11 @@ Un uso improprio di questa funzione può causare un sovraccarico del buffer. È 
 </tr>
 <tr class="even">
 <td><a href="/windows/desktop/api/Shlwapi/nf-shlwapi-urlunescapea"><strong>UrlUnescape</strong></a><br/></td>
-<td>Converte le sequenze di escape in caratteri normali.<br/></td>
+<td>Converte di nuovo le sequenze di escape in caratteri normali.<br/></td>
 </tr>
 <tr class="odd">
 <td><a href="/windows/desktop/api/Shlwapi/nf-shlwapi-urlunescapeinplace"><strong>UrlUnescapeInPlace</strong></a><br/></td>
-<td>Converte le sequenze di escape in caratteri ordinari e sovrascrive la stringa originale.<br/></td>
+<td>Converte di nuovo le sequenze di escape in caratteri normali e sovrascrive la stringa originale.<br/></td>
 </tr>
 </tbody>
 </table>

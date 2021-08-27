@@ -4,12 +4,12 @@ description: Nella tabella seguente sono riepilogate le procedure di programmazi
 ms.assetid: 70c24042-bf44-4484-8e5e-d117e2ba28d5
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 007ed1a50688ceff7cdd3bfd9916c1726773cf5ecb2e175af99880950c5c3db8
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 5bb83d6d61311866ddb84d3980f5742f82f51405
+ms.sourcegitcommit: 9b5faa61c38b2d0c432b7f2dbee8c127b0e28a7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119142794"
+ms.lasthandoff: 08/19/2021
+ms.locfileid: "122479397"
 ---
 # <a name="winsnmp-programming-tasks"></a>Attività di programmazione WinSNMP
 
@@ -17,70 +17,20 @@ Nella tabella seguente sono riepilogate le procedure di programmazione di base c
 
 
 
-<table>
-<colgroup>
-<col style="width: 50%" />
-<col style="width: 50%" />
-</colgroup>
-<thead>
-<tr class="header">
-<th>Attività di programmazione</th>
-<th>Funzione e argomenti correlati alle attività</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>Aprire l'applicazione WinSNMP.</td>
-<td>Usare <a href="/windows/desktop/api/Winsnmp/nf-winsnmp-snmpstartup"><strong>SnmpStartup</strong></a>. Vedere <a href="opening-and-closing-a-winsnmp-application.md">Apertura e chiusura di un'applicazione WinSNMP.</a><br/></td>
-</tr>
-<tr class="even">
-<td>Aprire una o più sessioni WinSNMP.</td>
-<td>Usare <a href="/windows/desktop/api/Winsnmp/nf-winsnmp-snmpcreatesession"><strong>SnmpCreateSession</strong></a>. Vedere <a href="opening-and-closing-a-winsnmp-session.md">Apertura e chiusura di una sessione WinSNMP.</a><br/></td>
-</tr>
-<tr class="odd">
-<td>Registrarsi per ricevere trap o notifiche.</td>
-<td>Usare <a href="/windows/desktop/api/Winsnmp/nf-winsnmp-snmpregister"><strong>SnmpRegister</strong></a>. Vedere <a href="managing-traps-and-notifications.md">Gestione di trap e notifiche.</a><br/></td>
-</tr>
-<tr class="even">
-<td>Creare uno o più elenchi di associazioni di variabili per l'incorporamento in una PDU.</td>
-<td>Usare <a href="/windows/desktop/api/Winsnmp/nf-winsnmp-snmpcreatevbl"><strong>SnmpCreateVbl</strong></a>, <a href="/windows/desktop/api/Winsnmp/nf-winsnmp-snmpduplicatevbl"><strong>SnmpDuplicateVbl</strong></a>, <a href="/windows/desktop/api/Winsnmp/nf-winsnmp-snmpsetvb"><strong>SnmpSetVb</strong></a>. Vedere <a href="working-with-variable-binding-lists.md">Uso degli elenchi di associazioni di variabili</a>.<br/>
-<blockquote>
-[!Note]<br />
-L'applicazione potrebbe dover chiamare altre funzioni di <a href="winsnmp-functions.md">associazione di variabili per</a> creare l'elenco di associazioni delle variabili.
-</blockquote>
-<br/></td>
-</tr>
-<tr class="odd">
-<td>Creare uno o più PDU per la trasmissione e l'elaborazione.</td>
-<td>Usare <a href="/windows/desktop/api/Winsnmp/nf-winsnmp-snmpcreatepdu"><strong>SnmpCreatePDU</strong></a>, <a href="/windows/desktop/api/Winsnmp/nf-winsnmp-snmpsetpdudata"><strong>SnmpSetPduData</strong></a>, <a href="/windows/desktop/api/Winsnmp/nf-winsnmp-snmpduplicatepdu"><strong>SnmpDuplicatePDU</strong></a>. Vedere <a href="working-with-protocol-data-units.md">Uso delle unità dati di protocollo.</a><br/>
-<blockquote>
-[!Note]<br />
-L'applicazione potrebbe dover chiamare altre <a href="winsnmp-functions.md">funzioni PDU e</a> funzioni di utilità WinSNMP <a href="winsnmp-functions.md"></a> per creare la PDU.
-</blockquote>
-<br/></td>
-</tr>
-<tr class="even">
-<td>Inviare una o più richieste di operazioni SNMP.</td>
-<td>Usare <a href="/windows/desktop/api/Winsnmp/nf-winsnmp-snmpsendmsg"><strong>SnmpSendMsg</strong></a>. Vedere <a href="sending-snmp-messages.md">Invio di messaggi SNMP.</a><br/></td>
-</tr>
-<tr class="odd">
-<td>Recuperare la risposta alla richiesta dell'operazione SNMP.</td>
-<td>Usare <a href="/windows/desktop/api/Winsnmp/nf-winsnmp-snmprecvmsg"><strong>SnmpRecvMsg</strong></a>. Vedere <a href="receiving-snmp-messages.md">Ricezione di messaggi SNMP.</a><br/></td>
-</tr>
-<tr class="even">
-<td>Elaborare la risposta della richiesta.</td>
-<td>Usare la logica specifica dell'applicazione.</td>
-</tr>
-<tr class="odd">
-<td>Chiudere ogni sessione WinSNMP.</td>
-<td>Usare <a href="/windows/desktop/api/Winsnmp/nf-winsnmp-snmpclose"><strong>SnmpClose</strong></a>. Vedere <a href="opening-and-closing-a-winsnmp-session.md">Apertura e chiusura di una sessione WinSNMP.</a><br/></td>
-</tr>
-<tr class="even">
-<td>Chiudere l'applicazione WinSNMP.</td>
-<td>Usare <a href="/windows/desktop/api/Winsnmp/nf-winsnmp-snmpcleanup"><strong>SnmpCleanup</strong></a>. Vedere <a href="opening-and-closing-a-winsnmp-application.md">Apertura e chiusura di un'applicazione WinSNMP.</a><br/></td>
-</tr>
-</tbody>
-</table>
+
+| Attività di programmazione | Funzione e argomenti correlati alle attività | 
+|------------------|----------------------------------|
+| Aprire l'applicazione WinSNMP. | Usare <a href="/windows/desktop/api/Winsnmp/nf-winsnmp-snmpstartup"><strong>SnmpStartup</strong></a>. Vedere <a href="opening-and-closing-a-winsnmp-application.md">Apertura e chiusura di un'applicazione WinSNMP.</a><br /> | 
+| Aprire una o più sessioni WinSNMP. | Usare <a href="/windows/desktop/api/Winsnmp/nf-winsnmp-snmpcreatesession"><strong>SnmpCreateSession</strong></a>. Vedere <a href="opening-and-closing-a-winsnmp-session.md">Apertura e chiusura di una sessione WinSNMP.</a><br /> | 
+| Registrarsi per ricevere trap o notifiche. | Usare <a href="/windows/desktop/api/Winsnmp/nf-winsnmp-snmpregister"><strong>SnmpRegister</strong></a>. Vedere <a href="managing-traps-and-notifications.md">Gestione di trap e notifiche.</a><br /> | 
+| Creare uno o più elenchi di associazioni di variabili per l'incorporamento in una PDU. | Usare <a href="/windows/desktop/api/Winsnmp/nf-winsnmp-snmpcreatevbl"><strong>SnmpCreateVbl</strong></a>, <a href="/windows/desktop/api/Winsnmp/nf-winsnmp-snmpduplicatevbl"><strong>SnmpDuplicateVbl</strong></a>, <a href="/windows/desktop/api/Winsnmp/nf-winsnmp-snmpsetvb"><strong>SnmpSetVb</strong></a>. Vedere <a href="working-with-variable-binding-lists.md">Uso degli elenchi di associazioni di variabili</a>.<br /><blockquote>[!Note]<br />L'applicazione potrebbe dover chiamare altre funzioni di <a href="winsnmp-functions.md">associazione di variabili per</a> creare l'elenco di associazioni delle variabili.</blockquote><br /> | 
+| Creare uno o più PDU per la trasmissione e l'elaborazione. | Usare <a href="/windows/desktop/api/Winsnmp/nf-winsnmp-snmpcreatepdu"><strong>SnmpCreatePDU</strong></a>, <a href="/windows/desktop/api/Winsnmp/nf-winsnmp-snmpsetpdudata"><strong>SnmpSetPduData</strong></a>, <a href="/windows/desktop/api/Winsnmp/nf-winsnmp-snmpduplicatepdu"><strong>SnmpDuplicatePDU</strong></a>. Vedere <a href="working-with-protocol-data-units.md">Uso delle unità dati di protocollo.</a><br /><blockquote>[!Note]<br />L'applicazione potrebbe dover chiamare altre <a href="winsnmp-functions.md">funzioni PDU e</a> funzioni di utilità WinSNMP <a href="winsnmp-functions.md"></a> per creare la PDU.</blockquote><br /> | 
+| Inviare una o più richieste di operazioni SNMP. | Usare <a href="/windows/desktop/api/Winsnmp/nf-winsnmp-snmpsendmsg"><strong>SnmpSendMsg</strong></a>. Vedere <a href="sending-snmp-messages.md">Invio di messaggi SNMP.</a><br /> | 
+| Recuperare la risposta alla richiesta dell'operazione SNMP. | Usare <a href="/windows/desktop/api/Winsnmp/nf-winsnmp-snmprecvmsg"><strong>SnmpRecvMsg</strong></a>. Vedere <a href="receiving-snmp-messages.md">Ricezione di messaggi SNMP.</a><br /> | 
+| Elaborare la risposta della richiesta. | Usare la logica specifica dell'applicazione. | 
+| Chiudere ogni sessione WinSNMP. | Usare <a href="/windows/desktop/api/Winsnmp/nf-winsnmp-snmpclose"><strong>SnmpClose</strong></a>. Vedere <a href="opening-and-closing-a-winsnmp-session.md">Apertura e chiusura di una sessione WinSNMP.</a><br /> | 
+| Chiudere l'applicazione WinSNMP. | Usare <a href="/windows/desktop/api/Winsnmp/nf-winsnmp-snmpcleanup"><strong>SnmpCleanup</strong></a>. Vedere <a href="opening-and-closing-a-winsnmp-application.md">Apertura e chiusura di un'applicazione WinSNMP.</a><br /> | 
+
 
 
 

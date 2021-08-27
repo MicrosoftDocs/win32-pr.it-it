@@ -1,6 +1,6 @@
 ---
-description: 'Altre informazioni su: funzione JetGetTruncateLogInfoInstance'
-title: JetGetTruncateLogInfoInstance (funzione)
+description: 'Altre informazioni su: Funzione JetGetTruncateLogInfoInstance'
+title: Funzione JetGetTruncateLogInfoInstance
 TOCTitle: JetGetTruncateLogInfoInstance Function
 ms:assetid: 1ecb2f2f-2cad-4c55-9296-5e5893b57695
 ms:mtpsurl: https://msdn.microsoft.com/library/Gg269199(v=EXCHG.10)
@@ -20,23 +20,23 @@ api_type:
 api_location:
 - ESENT.DLL
 ROBOTS: INDEX,FOLLOW
-ms.openlocfilehash: 3d51243ff6ca4b2bbaec77233bbe00437f55e0f2
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 36583267277f7c5254adc85047ce99631f6c03ef
+ms.sourcegitcommit: 9b5faa61c38b2d0c432b7f2dbee8c127b0e28a7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "106318091"
+ms.lasthandoff: 08/19/2021
+ms.locfileid: "122479077"
 ---
-# <a name="jetgettruncateloginfoinstance-function"></a>JetGetTruncateLogInfoInstance (funzione)
+# <a name="jetgettruncateloginfoinstance-function"></a>Funzione JetGetTruncateLogInfoInstance
 
 
 _**Si applica a:** Windows | Windows Server_
 
-## <a name="jetgettruncateloginfoinstance-function"></a>JetGetTruncateLogInfoInstance (funzione)
+## <a name="jetgettruncateloginfoinstance-function"></a>Funzione JetGetTruncateLogInfoInstance
 
-La funzione **JetGetTruncateLogInfoInstance** viene utilizzata durante un backup avviato da [JetBeginExternalBackup](./jetbeginexternalbackup-function.md) per eseguire una query su un'istanza di per i nomi dei file di log delle transazioni che possono essere eliminati in modo sicuro dopo il completamento del backup.
+La funzione **JetGetTruncateLogInfoInstance** viene usata durante un backup avviato da [JetBeginExternalBackup](./jetbeginexternalbackup-function.md) per eseguire una query su un'istanza per i nomi dei file di log delle transazioni che possono essere eliminati in modo sicuro dopo il completamento del backup.
 
-**Windows XP:**  **JetGetTruncateLogInfoInstance** è stato introdotto in Windows XP.
+**Windows XP:****JetGetTruncateLogInfoInstance** è stato introdotto in Windows XP.  
 
 ```cpp
     JET_ERR JET_API JetGetTruncateLogInfoInstance(
@@ -49,15 +49,15 @@ La funzione **JetGetTruncateLogInfoInstance** viene utilizzata durante un backup
 
 ### <a name="parameters"></a>Parametri
 
-*istanza*
+*Istanza*
 
 Istanza di da utilizzare per questa chiamata.
 
-*SZZ*
+*Szz*
 
-Buffer di output che riceve l'elenco di stringhe con terminazione null che descrivono il set di file di log delle transazioni che possono essere eliminati in modo sicuro dopo che il backup è stato completato correttamente.
+Buffer di output che riceve l'elenco di stringhe con terminazione Null che descrivono il set di file di log delle transazioni che possono essere eliminati in modo sicuro dopo il completamento del backup.
 
-L'elenco di stringhe restituite in questo buffer è nello stesso formato di un multistringa utilizzato dal registro di sistema. Ogni stringa con terminazione null viene restituita in sequenza e seguita da un terminatore null finale.
+L'elenco di stringhe restituite in questo buffer è nello stesso formato di una stringa multipla usata dal Registro di sistema. Ogni stringa con terminazione Null viene restituita in sequenza e seguita da un terminatore Null finale.
 
 *cbMax*
 
@@ -69,113 +69,38 @@ Puntatore al buffer di output che riceve la quantità effettiva di dati stringa.
 
 ### <a name="return-value"></a>Valore restituito
 
-Questa funzione restituisce il tipo di dati [JET_ERR](./jet-err.md) con uno dei seguenti codici restituiti. Per ulteriori informazioni sugli errori ESE possibili, vedere la pagina relativa agli errori e ai [parametri di gestione degli](./error-handling-parameters.md)errori del [motore di archiviazione estensibile](./extensible-storage-engine-errors.md) .
-
-<table>
-<colgroup>
-<col style="width: 50%" />
-<col style="width: 50%" />
-</colgroup>
-<thead>
-<tr class="header">
-<th><p>Codice restituito</p></th>
-<th><p>Descrizione</p></th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td><p>JET_errSuccess</p></td>
-<td><p>Operazione riuscita.</p></td>
-</tr>
-<tr class="even">
-<td><p>JET_errInvalidParameter</p></td>
-<td><p>Uno dei parametri specificati contiene un valore imprevisto o la combinazione di diversi valori di parametro ha restituito un risultato imprevisto.</p>
-<p><strong>Windows XP e versioni successive:</strong>  Questo problema può verificarsi per <strong>JetGetTruncateLogInfoInstance</strong> quando l'handle di istanza specificato non è valido.</p></td>
-</tr>
-<tr class="odd">
-<td><p>JET_errNotInitialized</p></td>
-<td><p>Non è possibile completare l'operazione perché l'istanza associata alla sessione non è ancora stata inizializzata.</p></td>
-</tr>
-<tr class="even">
-<td><p>JET_errClientRequestToStopJetService</p></td>
-<td><p>Non è possibile completare l'operazione perché tutte le attività nell'istanza associata alla sessione sono state interrotte in seguito a una chiamata a <a href="gg269240(v=exchg.10).md">JetStopService</a>.</p></td>
-</tr>
-<tr class="odd">
-<td><p>JET_errInstanceUnavailable</p></td>
-<td><p>Non è possibile completare l'operazione perché l'istanza associata alla sessione ha rilevato un errore irreversibile che richiede che l'accesso a tutti i dati venga revocato per proteggere l'integrità dei dati.</p>
-<p><strong>Windows XP:</strong>  Questo valore restituito è stato introdotto in Windows XP.</p></td>
-</tr>
-<tr class="even">
-<td><p>JET_errBackupAbortByServer</p></td>
-<td><p>L'operazione non è riuscita perché il backup esterno corrente è stato interrotto da una chiamata a <a href="gg294067(v=exchg.10).md">JetStopBackup</a>.</p>
-<p><strong>Windows XP:</strong>  Questo valore restituito è stato introdotto in Windows XP.</p></td>
-</tr>
-<tr class="odd">
-<td><p>JET_errInvalidBackupSequence</p></td>
-<td><p>L'operazione di backup non è riuscita perché è stata chiamata fuori sequenza.</p></td>
-</tr>
-<tr class="even">
-<td><p>JET_errNoBackup</p></td>
-<td><p>L'operazione non è riuscita perché non è in corso alcun backup esterno.</p></td>
-</tr>
-<tr class="odd">
-<td><p>JET_errRestoreInProgress</p></td>
-<td><p>Non è possibile completare l'operazione perché è in corso un'operazione di ripristino nell'istanza di associata alla sessione.</p></td>
-</tr>
-<tr class="even">
-<td><p>JET_errTermInProgress</p></td>
-<td><p>Non è possibile completare l'operazione perché è in corso l'arresto dell'istanza associata alla sessione.</p></td>
-</tr>
-<tr class="odd">
-<td><p><strong>JetGetTruncateLogInfoInstance</strong></p></td>
-<td><p>Sono presenti handle di file in attesa creati utilizzando <a href="gg269249(v=exchg.10).md">JetOpenFile</a> per l'istanza.</p></td>
-</tr>
-</tbody>
-</table>
+Questa funzione restituisce il [JET_ERR](./jet-err.md) dati con uno dei codici restituiti seguenti. Per altre informazioni sui possibili errori ESE, vedere [Extensible Archiviazione Engine Errors](./extensible-storage-engine-errors.md) and [Error Handling Parameters](./error-handling-parameters.md).
 
 
-Se questa funzione ha esito positivo, le informazioni richieste sul set di file di log delle transazioni che possono essere eliminati in modo sicuro dopo il completamento del backup verranno inserite nei buffer di output in cui vengono fornite. La macchina a stati di backup sarà avanzata in modo che il backup dei file di database non sia più consentito. Oltre questo punto, è possibile aprire solo file di patch del database e file di log delle transazioni per il backup.
+| <p>Codice restituito</p> | <p>Descrizione</p> | 
+|--------------------|--------------------|
+| <p>JET_errSuccess</p> | <p>Operazione riuscita.</p> | 
+| <p>JET_errInvalidParameter</p> | <p>Uno dei parametri forniti contiene un valore imprevisto o la combinazione di diversi valori di parametro ha restituito un risultato imprevisto.</p><p><strong>Windows XP e versioni successive:</strong>  Questa operazione può verificarsi <strong>per JetGetTruncateLogInfoInstance</strong> quando l'handle di istanza specificato non è valido.</p> | 
+| <p>JET_errNotInitialized</p> | <p>Impossibile completare l'operazione perché l'istanza associata alla sessione non è ancora stata inizializzata.</p> | 
+| <p>JET_errClientRequestToStopJetService</p> | <p>L'operazione non può essere completata perché tutte le attività nell'istanza associata alla sessione sono scadute in seguito a una chiamata a <a href="gg269240(v=exchg.10).md">JetStopService.</a></p> | 
+| <p>JET_errInstanceUnavailable</p> | <p>L'operazione non può essere completata perché l'istanza associata alla sessione ha rilevato un errore irreversibile che richiede la revoca dell'accesso a tutti i dati per proteggere l'integrità di questi dati.</p><p><strong>Windows XP:</strong>  Questo valore restituito è stato introdotto in Windows XP.</p> | 
+| <p>JET_errBackupAbortByServer</p> | <p>L'operazione non è riuscita perché il backup esterno corrente è stato interrotto da una chiamata a <a href="gg294067(v=exchg.10).md">JetStopBackup.</a></p><p><strong>Windows XP:</strong>  Questo valore restituito è stato introdotto in Windows XP.</p> | 
+| <p>JET_errInvalidBackupSequence</p> | <p>L'operazione di backup non è riuscita perché è stata chiamata fuori sequenza.</p> | 
+| <p>JET_errNoBackup</p> | <p>L'operazione non è riuscita perché non è in corso alcun backup esterno.</p> | 
+| <p>JET_errRestoreInProgress</p> | <p>Impossibile completare l'operazione perché è in corso un'operazione di ripristino nell'istanza associata alla sessione.</p> | 
+| <p>JET_errTermInProgress</p> | <p>Impossibile completare l'operazione perché è in corso l'arresto dell'istanza associata alla sessione.</p> | 
+| <p><strong>JetGetTruncateLogInfoInstance</strong></p> | <p>Sono presenti handle di file in sospeso creati usando <a href="gg269249(v=exchg.10).md">JetOpenFile per</a> l'istanza.</p> | 
 
-Se questa funzione ha esito negativo, lo stato dei buffer di output non è definito. L'errore comporterà l'annullamento dell'intero processo di backup per l'istanza.
+
+
+Se questa funzione ha esito positivo, le informazioni richieste sul set di file di log delle transazioni che possono essere eliminate in modo sicuro dopo il completamento del backup verranno inserite nei buffer di output in cui vengono forniti. La macchina a stati di backup sarà avanzata in modo che il backup dei file di database non sia più consentito. Solo i file di patch del database e i file di log delle transazioni possono essere aperti per il backup oltre questo punto.
+
+Se questa funzione ha esito negativo, lo stato dei buffer di output non è definito. L'errore comporta l'annullamento dell'intero processo di backup per l'istanza.
 
 #### <a name="remarks"></a>Commenti
 
-Questa API non restituisce un errore o un avviso se il buffer di output è troppo piccolo per accettare l'elenco completo dei file che devono far parte del set di file di backup. L'applicazione deve sempre fornire un buffer per ricevere le dimensioni effettive dell'elenco e utilizzare tali informazioni per determinare se l'elenco è stato troncato.
+Questa API non restituisce un errore o un avviso se il buffer di output è troppo piccolo per accettare l'elenco completo dei file che devono far parte del set di file di backup. L'applicazione deve sempre fornire un buffer per ricevere le dimensioni effettive di questo elenco e usare tali informazioni per determinare se l'elenco è stato troncato.
 
 #### <a name="requirements"></a>Requisiti
 
-<table>
-<colgroup>
-<col style="width: 50%" />
-<col style="width: 50%" />
-</colgroup>
-<tbody>
-<tr class="odd">
-<td><p><strong>Client</strong></p></td>
-<td><p>Richiede Windows Vista o Windows XP.</p></td>
-</tr>
-<tr class="even">
-<td><p><strong>Server</strong></p></td>
-<td><p>Richiede Windows Server 2008 o Windows Server 2003.</p></td>
-</tr>
-<tr class="odd">
-<td><p><strong>Intestazione</strong></p></td>
-<td><p>Dichiarata in esent. h.</p></td>
-</tr>
-<tr class="even">
-<td><p><strong>Libreria</strong></p></td>
-<td><p>Usare ESENT. lib.</p></td>
-</tr>
-<tr class="odd">
-<td><p><strong>DLL</strong></p></td>
-<td><p>Richiede ESENT.dll.</p></td>
-</tr>
-<tr class="even">
-<td><p><strong>Unicode</strong></p></td>
-<td><p>Implementato come <strong>JetGetTruncateLogInfoInstanceW</strong> (Unicode) e <strong>JetGetTruncateLogInfoInstanceA</strong> (ANSI).</p></td>
-</tr>
-</tbody>
-</table>
+
+| | | <p><strong>Client</strong></p> | <p>Richiede Windows Vista o Windows XP.</p> | | <p><strong>Server</strong></p> | <p>Richiede Windows Server 2008 o Windows Server 2003.</p> | | <p><strong>Intestazione</strong></p> | <p>Dichiarato in Esent.h.</p> | | <p><strong>Libreria</strong></p> | <p>Usare ESENT.lib.</p> | | <p><strong>DLL</strong></p> | <p>Richiede ESENT.dll.</p> | | <p><strong>Unicode</strong></p> | <p>Implementato come <strong>JetGetTruncateLogInfoInstanceW</strong> (Unicode) e <strong>JetGetTruncateLogInfoInstanceA</strong> (ANSI).</p> | 
+
 
 
 #### <a name="see-also"></a>Vedere anche

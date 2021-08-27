@@ -4,18 +4,18 @@ ms.assetid: 28ea95a2-e602-4f71-9488-48525e995814
 title: PageBlackGenerationProcessingGrayComponentReplacementStart
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: f2e7e5a7e22c20b15dc373a2cce2bfe19e3417d4
-ms.sourcegitcommit: 5d4e99f4c8f42f5f543e52cb9beb9fb13ec56c5f
+ms.openlocfilehash: 3323f3aa910673b5e35d660cf59b9f30fb0380711d053db314167a9f93c3dd3b
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/19/2021
-ms.locfileid: "112408464"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120112321"
 ---
 # <a name="pageblackgenerationprocessinggraycomponentreplacementstart"></a>PageBlackGenerationProcessingGrayComponentReplacementStart
 
-Questo argomento non è corrente. Per le informazioni più aggiornate, vedere Print [Schema Specification](https://download.microsoft.com/download/D/E/C/DECA6E6B-3E81-48E7-B7EF-6D92A547D03C/print-schema-spec-2-0.zip).
+Questo argomento non è corrente. Per le informazioni più aggiornate, vedere Specifica [dello schema di stampa](https://download.microsoft.com/download/D/E/C/DECA6E6B-3E81-48E7-B7EF-6D92A547D03C/print-schema-spec-2-0.zip).
 
-Descrive il punto nell'intervallo "evidenziazione da ombreggiatura" in cui deve iniziare GCR (ombreggiatura più scura al 100%.)
+Descrive il punto nell'intervallo di "evidenziazione da ombreggiatura" in cui deve iniziare GCR (100% ombreggiatura più scura).
 
 -   [Informazioni sull'elemento](#element-information)
 -   [Contenuto della struttura](#structure-content)
@@ -77,8 +77,8 @@ Nella tabella seguente vengono descritte le caratteristiche delle variabili defi
 | MaxValue<br/>     | numero intero<br/> | 100<br/>             |
 | Minvalue<br/>     | integer<br/> | 0<br/>               |
 | Multipli<br/>     | integer<br/> | 1<br/>               |
-| Obbligatorio<br/>    | string<br/>  | psk:Condizionale<br/> |
-| Tipo di unità<br/>     | string<br/>  | percent<br/>         |
+| Obbligatorio<br/>    | string<br/>  | psk:Conditional<br/> |
+| UnitType<br/>     | string<br/>  | percent<br/>         |
 
 
 

@@ -20,7 +20,7 @@ ms.locfileid: "120119501"
 **Per inizializzare un index buffer**
 
 1.  Creare un buffer contenente le informazioni sull'indice.
-2.  Creare una descrizione del buffer compilando una [**struttura D3D11 \_ BUFFER \_ DESC.**](/windows/desktop/api/D3D11/ns-d3d11-d3d11_buffer_desc) Passare il flag D3D11 BIND INDEX BUFFER al membro \_ \_ \_ **BindFlags** e passare le dimensioni del buffer in byte al **membro ByteWidth.**
+2.  Creare una descrizione del buffer compilando una [**struttura D3D11 \_ BUFFER \_ DESC.**](/windows/desktop/api/D3D11/ns-d3d11-d3d11_buffer_desc) Passare il flag BIND INDEX BUFFER D3D11 al membro \_ \_ \_ **BindFlags** e passare le dimensioni del buffer in byte al **membro ByteWidth.**
 3.  Creare una descrizione dei dati della sottorisorsa compilando una [**struttura D3D11 \_ SUBRESOURCE \_ DATA.**](/windows/desktop/api/D3D11/ns-d3d11-d3d11_subresource_data) Il **membro pSysMem** deve puntare direttamente ai dati dell'indice creati nel primo passaggio.
 4.  Chiamare [**ID3D11Device::CreateBuffer**](/windows/desktop/api/D3D11/nf-d3d11-id3d11device-createbuffer) passando la struttura [**D3D11 \_ BUFFER \_ DESC,**](/windows/desktop/api/D3D11/ns-d3d11-d3d11_buffer_desc) la struttura [**D3D11 \_ SUBRESOURCE \_ DATA**](/windows/desktop/api/D3D11/ns-d3d11-d3d11_subresource_data) e l'indirizzo di un puntatore all'interfaccia [**ID3D11Buffer**](/windows/desktop/api/D3D11/nn-d3d11-id3d11buffer) da inizializzare.
 

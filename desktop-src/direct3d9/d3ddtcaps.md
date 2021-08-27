@@ -20,13 +20,13 @@ Costanti che descrivono i tipi di dati dei vertici supportati da un dispositivo.
 | \#Definire              | Valore       | Descrizione                                                                                                                   |
 |-----------------------|-------------|-------------------------------------------------------------------------------------------------------------------------------|
 | D3DDTCAPS \_ UBYTE4     | 0x00000001L | Byte senza segno 4D.                                                                                                             |
-| D3DDTCAPS \_ UBYTE4N    | 0x00000002L | Byte senza segno normalizzato e 4D. Ognuno dei quattro byte viene normalizzato dividendo per 255,0.                                      |
-| D3DDTCAPS \_ SHORT2N    | 0x00000004L | Normalized, 2D signed short, espanso in (first byte/32767.0, second byte/32767.0, 0, 1).                                     |
-| D3DDTCAPS \_ SHORT4N    | 0x00000008L | Normalizzato, 4D signed short, espanso in (primo byte/32767.0, secondo byte/32767.0, terzo byte/32767.0, quarto byte/32767.0).  |
-| D3DDTCAPS \_ USHORT2N   | 0x00000010L | Normalized, 2D unsigned short, espanso in (primo byte/65535.0, secondo byte/65535.0, 0, 1).                                   |
-| D3DDTCAPS \_ USHORT4N   | 0x00000020L | Normalizzato 4D unsigned short, espanso a (primo byte/65535.0, secondo byte/65535.0, terzo byte/65535.0, quarto byte/65535.0). |
+| D3DDTCAPS \_ UBYTE4N    | 0x00000002L | Normalizzato, byte senza segno 4D. Ognuno dei quattro byte viene normalizzato dividendo a 255,0.                                      |
+| D3DDTCAPS \_ SHORT2N    | 0x00000004L | Normalized, 2D signed short, expanded to (first byte/32767.0, second byte/32767.0, 0, 1).                                     |
+| D3DDTCAPS \_ SHORT4N    | 0x00000008L | Normalized, 4D signed short, expanded to (first byte/32767.0, second byte/32767.0, third byte/32767.0, fourth byte/32767.0).  |
+| D3DDTCAPS \_ USHORT2N   | 0x00000010L | Normalizzato, 2D unsigned short, espanso in (primo byte/65535.0, secondo byte/65535.0, 0, 1).                                   |
+| D3DDTCAPS \_ USHORT4N   | 0x00000020L | Normalized 4D unsigned short, expanded to (first byte/65535.0, second byte/65535.0, third byte/65535.0, fourth byte/65535.0). |
 | D3DDTCAPS \_ UDEC3      | 0x00000040L | Formato 3D senza segno 10 10 10 espanso in (valore, valore, valore, 1).                                                             |
-| D3DDTCAPS \_ DEC3N      | 0x00000080L | Formato 10 10 10 con segno 3D normalizzato ed espanso in (v \[ 0 \] /511.0, v \[ 1 \] /511.0, v \[ 2 \] /511.0, 1).                           |
+| D3DDTCAPS \_ DEC3N      | 0x00000080L | 3D signed 10 10 10 format normalized and expanded to (v \[ 0 \] /511.0, v \[ 1 \] /511.0, v \[ 2 \] /511.0, 1).                           |
 | D3DDTCAPS \_ FLOAT16 \_ 2 | 0x00000100L | Numeri a virgola mobile a 16 bit 2D.                                                                                             |
 | D3DDTCAPS \_ FLOAT16 \_ 4 | 0x00000200L | Numeri a virgola mobile a 16 bit 4D.                                                                                             |
 
@@ -36,7 +36,7 @@ Costanti che descrivono i tipi di dati dei vertici supportati da un dispositivo.
 
 Queste costanti vengono usate dal membro DeclTypes di [**D3DCAPS9.**](/windows/desktop/api/D3D9Caps/ns-d3d9caps-d3dcaps9)
 
-## <a name="constant-information"></a>Informazioni sulle costanti
+## <a name="constant-information"></a>Informazioni costanti
 
 
 

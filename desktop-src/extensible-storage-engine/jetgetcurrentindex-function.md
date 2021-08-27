@@ -1,5 +1,5 @@
 ---
-description: 'Altre informazioni su: Funzione JetGetCurrentIndex'
+description: Altre informazioni sulla funzione JetGetCurrentIndex
 title: Funzione JetGetCurrentIndex
 TOCTitle: JetGetCurrentIndex Function
 ms:assetid: 9db3b875-0b95-4027-9742-c36d2d7e64cf
@@ -20,12 +20,12 @@ api_type:
 api_location:
 - ESENT.DLL
 ROBOTS: INDEX,FOLLOW
-ms.openlocfilehash: cb2e1ad0a0f2d4ecab40f582342c0561552a97b3a30ebea785aec7c5fd83fac9
-ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
+ms.openlocfilehash: 82f24afb4d8e36d95d6e3be480f32358c1c5dba2
+ms.sourcegitcommit: 9b5faa61c38b2d0c432b7f2dbee8c127b0e28a7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119719151"
+ms.lasthandoff: 08/19/2021
+ms.locfileid: "122468308"
 ---
 # <a name="jetgetcurrentindex-function"></a>Funzione JetGetCurrentIndex
 
@@ -34,7 +34,7 @@ _**Si applica a:** Windows | Windows Server_
 
 ## <a name="jetgetcurrentindex-function"></a>Funzione JetGetCurrentIndex
 
-La **funzione JetGetCurrentIndex** determina il nome dell'indice corrente di un determinato cursore. Questo nome viene usato anche per selezionare nuovamente l'indice in un secondo momento come indice corrente usando [JetSetCurrentIndex.](./jetsetcurrentindex-function.md) Può essere usato anche per individuare le proprietà dell'indice usando [JetGetTableIndexInfo.](./jetgettableindexinfo-function.md)
+La **funzione JetGetCurrentIndex** determina il nome dell'indice corrente di un determinato cursore. Questo nome viene usato anche per selezionare nuovamente l'indice come indice corrente usando [JetSetCurrentIndex](./jetsetcurrentindex-function.md). Può anche essere usato per individuare le proprietà dell'indice usando [JetGetTableIndexInfo.](./jetgettableindexinfo-function.md)
 
 ```cpp
     JET_ERR JET_API JetGetCurrentIndex(
@@ -65,102 +65,37 @@ Dimensione massima in caratteri del buffer di output.
 
 ### <a name="return-value"></a>Valore restituito
 
-Questa funzione restituisce il [JET_ERR](./jet-err.md) dati con uno dei codici restituiti seguenti. Per altre informazioni sui possibili errori ESE, vedere [Extensible Archiviazione Engine Errors](./extensible-storage-engine-errors.md) and [Error Handling Parameters](./error-handling-parameters.md).
-
-<table>
-<colgroup>
-<col style="width: 50%" />
-<col style="width: 50%" />
-</colgroup>
-<thead>
-<tr class="header">
-<th><p>Codice restituito</p></th>
-<th><p>Descrizione</p></th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td><p>JET_errSuccess</p></td>
-<td><p>Operazione riuscita.</p></td>
-</tr>
-<tr class="even">
-<td><p>JET_errClientRequestToStopJetService</p></td>
-<td><p>Non è possibile completare l'operazione perché tutte le attività nell'istanza associata alla sessione sono cessare in seguito a una chiamata a <a href="gg269240(v=exchg.10).md">JetStopService.</a></p></td>
-</tr>
-<tr class="odd">
-<td><p>JET_errInstanceUnavailable</p></td>
-<td><p>Non è possibile completare l'operazione perché l'istanza associata alla sessione ha rilevato un errore irreversibile che richiede la revoca dell'accesso a tutti i dati per proteggere l'integrità di questi dati. Questo errore verrà restituito solo da Windows XP e versioni successive.</p></td>
-</tr>
-<tr class="even">
-<td><p>JET_errNotInitialized</p></td>
-<td><p>Non è possibile completare l'operazione perché l'istanza associata alla sessione non è ancora stata inizializzata.</p></td>
-</tr>
-<tr class="odd">
-<td><p>JET_errRestoreInProgress</p></td>
-<td><p>Non è possibile completare l'operazione perché è in corso un'operazione di ripristino nell'istanza associata alla sessione.</p></td>
-</tr>
-<tr class="even">
-<td><p>JET_errSessionSharingViolation</p></td>
-<td><p>La stessa sessione non può essere usata per più thread contemporaneamente. Questo errore verrà restituito solo da Windows XP e versioni successive.</p></td>
-</tr>
-<tr class="odd">
-<td><p>JET_errTermInProgress</p></td>
-<td><p>Non è possibile completare l'operazione perché è in corso l'arresto dell'istanza associata alla sessione.</p></td>
-</tr>
-<tr class="even">
-<td><p>JET_wrnBufferTruncated</p></td>
-<td><p>L'operazione è stata completata correttamente, ma il buffer di output è troppo piccolo per ricevere l'intero nome dell'indice.</p>
-<p>Il buffer di output è stato riempito con la maggior parte del nome dell'indice che sarebbe possibile inserire. Se la lunghezza del buffer di output è di almeno un carattere, la stringa in tale buffer di output avrà terminazione Null.</p>
-<p><strong>Nota  </strong> Questo errore non verrà restituito se cchIndexName è zero. Per altre informazioni, vedere la sezione Osservazioni.</p></td>
-</tr>
-</tbody>
-</table>
+Questa funzione restituisce il [JET_ERR](./jet-err.md) dati con uno dei codici restituiti seguenti. Per altre informazioni sui possibili errori ESE, vedere Errori del [motore Archiviazione estendibile](./extensible-storage-engine-errors.md) e Parametri [di gestione degli errori](./error-handling-parameters.md).
 
 
-In caso di esito positivo, il nome dell'indice corrente del cursore specificato verrà restituito nel buffer di output. Se JET_wrnBufferTruncated viene restituito , il buffer di output conterrà la quantità di nome dell'indice sufficiente per lo spazio fornito. Se la lunghezza del buffer di output è di almeno un carattere, la stringa restituita in tale buffer avrà terminazione Null. Non verrà apportata alcuna modifica allo stato del database.
+| <p>Codice restituito</p> | <p>Descrizione</p> | 
+|--------------------|--------------------|
+| <p>JET_errSuccess</p> | <p>Operazione riuscita.</p> | 
+| <p>JET_errClientRequestToStopJetService</p> | <p>Non è possibile completare l'operazione perché tutte le attività nell'istanza associata alla sessione sono cesse a causa di una chiamata a <a href="gg269240(v=exchg.10).md">JetStopService.</a></p> | 
+| <p>JET_errInstanceUnavailable</p> | <p>Non è possibile completare l'operazione perché l'istanza associata alla sessione ha rilevato un errore irreversibile che richiede la revoca dell'accesso a tutti i dati per proteggere l'integrità di questi dati. Questo errore verrà restituito solo da Windows XP e versioni successive.</p> | 
+| <p>JET_errNotInitialized</p> | <p>Non è possibile completare l'operazione perché l'istanza associata alla sessione non è ancora stata inizializzata.</p> | 
+| <p>JET_errRestoreInProgress</p> | <p>Non è possibile completare l'operazione perché è in corso un'operazione di ripristino nell'istanza associata alla sessione.</p> | 
+| <p>JET_errSessionSharingViolation</p> | <p>La stessa sessione non può essere usata per più thread contemporaneamente. Questo errore verrà restituito solo da Windows XP e versioni successive.</p> | 
+| <p>JET_errTermInProgress</p> | <p>Non è possibile completare l'operazione perché è in corso l'arresto dell'istanza associata alla sessione.</p> | 
+| <p>JET_wrnBufferTruncated</p> | <p>L'operazione è stata completata correttamente, ma il buffer di output era troppo piccolo per ricevere l'intero nome dell'indice.</p><p>Il buffer di output è stato riempito con la quantità di nome dell'indice adatta. Se la lunghezza del buffer di output è di almeno un carattere, la stringa nel buffer di output sarà con terminazione Null.</p><p><strong>Nota:  </strong> Questo errore non verrà restituito se cchIndexName è zero. Per altre informazioni, vedere la sezione Osservazioni.</p> | 
+
+
+
+In caso di esito positivo, il nome dell'indice corrente del cursore specificato verrà restituito nel buffer di output. Se JET_wrnBufferTruncated restituito, il buffer di output conterrà la quantità di nome dell'indice che si adatterà allo spazio fornito. Se la lunghezza del buffer di output è di almeno un carattere, la stringa restituita in tale buffer sarà con terminazione Null. Non verrà apportata alcuna modifica allo stato del database.
 
 In caso di errore, lo stato del buffer di output non sarà definito. Non verrà apportata alcuna modifica allo stato del database.
 
 #### <a name="remarks"></a>Commenti
 
-Se non è presente alcun indice corrente per il cursore, verrà restituita una stringa vuota. Questa operazione può verificarsi quando il cursore si trova sull'indice cluster della tabella e non è stato definito alcun indice primario. Questo indice è noto come indice sequenziale della tabella e non ha alcuna definizione. In ogni caso, l'impostazione dell'indice corrente su una stringa vuota tramite [JetSetCurrentIndex](./jetsetcurrentindex-function.md) selezionerà l'indice cluster indipendentemente dalla presenza di una definizione di indice primario.
+Se non è presente alcun indice corrente per il cursore, verrà restituita una stringa vuota. Ciò può verificarsi quando il cursore si trova sull'indice cluster della tabella e non è stato definito alcun indice primario. Questo indice è noto come indice sequenziale della tabella e non ha alcuna definizione. In ogni caso, l'impostazione dell'indice corrente su una stringa vuota tramite [JetSetCurrentIndex](./jetsetcurrentindex-function.md) selezionerà l'indice cluster indipendentemente dalla presenza di una definizione di indice primario.
 
-In questa funzione è presente un bug importante in tutte le versioni. Se il buffer di output è troppo piccolo per ricevere l'intero nome dell'indice e la lunghezza del buffer di output è di almeno un carattere, JET_wrnBufferTruncated non verrà restituito. JET_errSuccess verrà restituito . Per evitare questo problema, il buffer di output deve essere sempre di almeno JET_cbNameMost + 1 (65) caratteri.
+In questa funzione è presente un bug importante in tutte le versioni. Se il buffer di output è troppo piccolo per ricevere l'intero nome dell'indice e la lunghezza del buffer di output è di almeno un carattere, JET_wrnBufferTruncated non verrà restituito. JET_errSuccess verrà restituito . Per evitare questo problema, il buffer di output deve avere sempre una lunghezza di almeno JET_cbNameMost + 1 (65).
 
 #### <a name="requirements"></a>Requisiti
 
-<table>
-<colgroup>
-<col style="width: 50%" />
-<col style="width: 50%" />
-</colgroup>
-<tbody>
-<tr class="odd">
-<td><p><strong>Client</strong></p></td>
-<td><p>Richiede Windows Vista, Windows XP o Windows 2000 Professional.</p></td>
-</tr>
-<tr class="even">
-<td><p><strong>Server</strong></p></td>
-<td><p>Richiede Windows Server 2008, Windows Server 2003 o Windows 2000 Server.</p></td>
-</tr>
-<tr class="odd">
-<td><p><strong>Intestazione</strong></p></td>
-<td><p>Dichiarato in Esent.h.</p></td>
-</tr>
-<tr class="even">
-<td><p><strong>Libreria</strong></p></td>
-<td><p>Usare ESENT.lib.</p></td>
-</tr>
-<tr class="odd">
-<td><p><strong>DLL</strong></p></td>
-<td><p>Richiede ESENT.dll.</p></td>
-</tr>
-<tr class="even">
-<td><p><strong>Unicode</strong></p></td>
-<td><p>Implementato come <strong>JetGetCurrentIndexW</strong> (Unicode) e <strong>JetGetCurrentIndexA</strong> (ANSI).</p></td>
-</tr>
-</tbody>
-</table>
+
+| | | <p><strong>Client</strong></p> | <p>Richiede Windows Vista, Windows XP o Windows 2000 Professional.</p> | | <p><strong>Server</strong></p> | <p>Richiede Windows Server 2008, Windows Server 2003 o Windows 2000 Server.</p> | | <p><strong>Intestazione</strong></p> | <p>Dichiarato in Esent.h.</p> | | <p><strong>Libreria</strong></p> | <p>Usare ESENT.lib.</p> | | <p><strong>DLL</strong></p> | <p>Richiede ESENT.dll.</p> | | <p><strong>Unicode</strong></p> | <p>Implementato come <strong>JetGetCurrentIndexW</strong> (Unicode) e <strong>JetGetCurrentIndexA</strong> (ANSI).</p> | 
+
 
 
 #### <a name="see-also"></a>Vedere anche

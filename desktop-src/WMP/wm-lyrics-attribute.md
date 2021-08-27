@@ -35,7 +35,7 @@ Questo attributo viene archiviato sia nella libreria (o cache) che nel file mult
 
 **Lyrics è** un alias per questo attributo.
 
-La Windows Media Format SDK per questo attributo è g \_ wszWMLyrics.
+La Windows media format SDK per questo attributo è g \_ wszWMLyrics.
 
 Per determinare se è possibile modificare il valore di questo attributo, usare il [metodo Media.isReadOnlyItem.](media-isreadonlyitem.md)
 

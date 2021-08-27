@@ -1,5 +1,5 @@
 ---
-description: Richiesta di aggiornamento dello stato iniziale di un oggetto. ad esempio una trama o uno shader.
+description: Richiesta di aggiornamento dello stato iniziale di un oggetto . ad esempio una trama o uno shader.
 MS-HAID: vspixengine.IUpdateObject\_UpdateObject\_UINT\_DWORD\_BYTE\_arr\_IUpdateObjectCallback\_ptr
 MSHAttr:
 - PreferredSiteName:MSDN
@@ -17,16 +17,16 @@ api_location:
 topic_type:
 - APIRef
 - kbSyntax
-ms.openlocfilehash: b48e206d09c784ac2f2df31eeab0d65cac04f740a66874fe9e436f96b8349143
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 1fddd375b72681b87ad9abf9abe679ece1725d6a
+ms.sourcegitcommit: c276a8912787b2cda74dcf54eb96df961bb1188b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "118282277"
+ms.lasthandoff: 08/20/2021
+ms.locfileid: "122624637"
 ---
 # <a name="span-idvspixengineiupdateobject_updateobject_uint_dword_byte_arr_iupdateobjectcallback_ptrspaniupdateobjectupdateobject-method"></a><span id="vspixengine.iupdateobject_updateobject_uint_dword_byte_arr_iupdateobjectcallback_ptr"></span>Metodo IUpdateObject::UpdateObject
 
-Richiesta di aggiornamento dello stato iniziale di un oggetto. ad esempio una trama o uno shader.
+Richiesta di aggiornamento dello stato iniziale di un oggetto . ad esempio una trama o uno shader.
 
 ## <a name="syntax"></a>Sintassi
 
@@ -46,9 +46,9 @@ HRESULT UpdateObject(
 ID dell'oggetto da aggiornare.
 
 *Dimensione*   
-Dimensioni del payload di aggiornamento in byte.
+Dimensioni in byte del payload di aggiornamento.
 
-*buffer \_ count1*   
+*Buffer \_ count1*   
 Payload di aggiornamento.
 
 *pCallback*   
@@ -60,11 +60,11 @@ Se questo metodo ha esito positivo, restituisce **S \_ OK**. In caso contrario, 
 
 ## <a name="requirements"></a>Requisiti
 
-<table><colgroup><col style="width: 50%" /><col style="width: 50%" /></colgroup><tbody><tr class="odd"><td><p>Intestazione</p></td><td>Vspixengine.h</td></tr></tbody></table>
+<table><colgroup><col  /><col  /></colgroup><tbody><tr class="odd"><td><p>Intestazione</p></td><td>Vspixengine.h</td></tr></tbody></table>
 
 ## <a name="span-idsee_alsospansee-also"></a><span id="see_also"></span>Vedere anche
 
-[**Oggetto IUpdateObject**](/windows/desktop/direct3dtools/iupdateobject)
+[**IUpdateObject**](/windows/desktop/direct3dtools/iupdateobject)
 
  
 

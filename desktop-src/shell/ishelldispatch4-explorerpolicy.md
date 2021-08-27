@@ -1,5 +1,5 @@
 ---
-description: 'Metodo IShellDispatch4.ExplorerPolicy: ottiene il valore per un criterio Internet Explorer Windows specificato.'
+description: 'Metodo IShellDispatch4.ExplorerPolicy: ottiene il valore per un Windows Internet Explorer criteri.'
 ms.assetid: 490c3e18-b606-456a-9016-dc4f7bad2bc3
 title: Metodo IShellDispatch4.ExplorerPolicy (Shldisp.h)
 ms.topic: reference
@@ -13,16 +13,16 @@ api_type:
 - COM
 api_location:
 - Shell32.dll
-ms.openlocfilehash: 4a03d61905bdb1f2b16de11cc604625d8e71a7ea
-ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
+ms.openlocfilehash: 16187fedde4a454ffaa5415ade08e61f5d0abca145caa7b5c8e29fa9f3b00cdd
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/28/2021
-ms.locfileid: "108116829"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120111501"
 ---
 # <a name="ishelldispatch4explorerpolicy-method"></a>Metodo IShellDispatch4.ExplorerPolicy
 
-Ottiene il valore per un criterio di Internet Explorer Windows specificato.
+Ottiene il valore per un criterio di Windows Internet Explorer specificati.
 
 ## <a name="syntax"></a>Sintassi
 
@@ -76,13 +76,13 @@ Valore associato al nome del criterio specificato.
 
 Gli amministratori di rete possono controllare e gestire l'ambiente di elaborazione degli utenti impostando criteri.
 
-Il nome del valore specificato deve essere all'interno **della sottochiave HKEY \_ CURRENT \_ USER** \\ **Software** \\ **Microsoft** \\ **Windows** \\ **CurrentVersion** \\ **Policies** \\ **Explorer.** Se il nome del valore non esiste, il metodo restituisce **null.**
+Il nome del valore specificato deve essere all'interno della sottochiave **HKEY \_ CURRENT \_ USER** \\ **Software** \\ **Microsoft** \\ **Windows** \\ **CurrentVersion** \\ **Policies** \\ **Explorer.** Se il nome del valore non esiste, il metodo restituisce **null.**
 
 ## <a name="examples"></a>Esempio
 
 Gli esempi seguenti illustrano l'uso corretto di **ExplorerPolicy** per JScript, VBScript e Visual Basic.
 
-Jscript:
+JScript:
 
 
 ```JScript
@@ -142,8 +142,8 @@ End Sub
 
 | Requisito | Valore |
 |-------------------------------------|---------------------------------------------------------------------------------------------------------------|
-| Client minimo supportato<br/> | Solo app desktop di Windows XP \[\]<br/>                                                                   |
-| Server minimo supportato<br/> | Solo app desktop di Windows Server 2003 \[\]<br/>                                                          |
+| Client minimo supportato<br/> | Windows Solo \[ app desktop XP\]<br/>                                                                   |
+| Server minimo supportato<br/> | Windows Solo app desktop server 2003 \[\]<br/>                                                          |
 | Intestazione<br/>                   | <dl> <dt>Shldisp.h</dt> </dl>                          |
 | Idl<br/>                      | <dl> <dt>Shldisp.idl</dt> </dl>                        |
 | DLL<br/>                      | <dl> <dt>Shell32.dll (versione 6.0 o successiva)</dt> </dl> |

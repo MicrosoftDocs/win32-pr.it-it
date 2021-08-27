@@ -1,9 +1,9 @@
 ---
-title: Messaggio IPM_SETFOCUS (COMmctrl. h)
-description: Imposta lo stato attivo della tastiera sul campo specificato nel controllo degli indirizzi IP. Tutto il testo in tale campo verrà selezionato.
+title: IPM_SETFOCUS messaggio (Commctrl.h)
+description: Imposta lo stato attivo della tastiera sul campo specificato nel controllo dell'indirizzo IP. Tutto il testo in tale campo verrà selezionato.
 ms.assetid: 4b975eb2-85e1-4e33-a803-99b48d2ff5e8
 keywords:
-- Controlli di Windows Message IPM_SETFOCUS
+- IPM_SETFOCUS di controllo Windows messaggio
 topic_type:
 - apiref
 api_name:
@@ -14,16 +14,16 @@ api_type:
 - HeaderDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 5d713e0a8b7eb838a2db5c4738c801d4fb76b782
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: 2a74d98aa4d4259d11d7fef6e0bfdad2bfe741447ddffab27fa41545e7eda515
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "104120291"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120085571"
 ---
-# <a name="ipm_setfocus-message"></a>\_Messaggio di DISattivazione IPM
+# <a name="ipm_setfocus-message"></a>Messaggio \_ IPM SETFOCUS
 
-Imposta lo stato attivo della tastiera sul campo specificato nel controllo degli indirizzi IP. Tutto il testo in tale campo verrà selezionato.
+Imposta lo stato attivo della tastiera sul campo specificato nel controllo dell'indirizzo IP. Tutto il testo in tale campo verrà selezionato.
 
 ## <a name="parameters"></a>Parametri
 
@@ -32,7 +32,7 @@ Imposta lo stato attivo della tastiera sul campo specificato nel controllo degli
 *wParam* 
 </dt> <dd>
 
-Indice di campo in base zero in cui impostare lo stato attivo. Se questo valore è maggiore del numero di campi, lo stato attivo è impostato sul primo campo vuoto. Se tutti i campi non sono vuoti, lo stato attivo è impostato sul primo campo.
+Indice del campo in base zero sul quale deve essere impostato lo stato attivo. Se questo valore è maggiore del numero di campi, lo stato attivo viene impostato sul primo campo vuoto. Se tutti i campi sono non blank, lo stato attivo viene impostato sul primo campo.
 
 </dd> <dt>
 
@@ -49,9 +49,9 @@ Il valore restituito non viene utilizzato.
 
 | Requisito | Valore |
 |-------------------------------------|---------------------------------------------------------------------------------------|
-| Client minimo supportato<br/> | \[Solo app desktop di Windows Vista\]<br/>                                        |
-| Server minimo supportato<br/> | \[Solo app desktop Windows Server 2003\]<br/>                                  |
-| Intestazione<br/>                   | <dl> <dt>Commctrl. h</dt> </dl> |
+| Client minimo supportato<br/> | Windows Solo \[ app desktop Vista\]<br/>                                        |
+| Server minimo supportato<br/> | Windows Solo app desktop di Server 2003 \[\]<br/>                                  |
+| Intestazione<br/>                   | <dl> <dt>Commctrl.h</dt> </dl> |
 
 
 

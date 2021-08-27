@@ -1,5 +1,5 @@
 ---
-description: 'Costruttore COutputQueue.COutputQueue : metodo del costruttore.'
+description: 'Costruttore COutputQueue.COutputQueue : metodo costruttore.'
 ms.assetid: 672c0337-0c36-4f53-9125-d02fe8b36b1c
 title: Costruttore COutputQueue.COutputQueue (Outputq.h)
 ms.topic: reference
@@ -16,12 +16,12 @@ api_location:
 - Strmbase.dll
 - Strmbasd.lib
 - Strmbasd.dll
-ms.openlocfilehash: 17a795bf4ec33ec904b83f6621fc0bc4f43b4b15
-ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
+ms.openlocfilehash: 1bf50314fd0ceb1afbe00c5a6a63708cc79ab38d77931c80b086039c7ca9704c
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/28/2021
-ms.locfileid: "108095329"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120087241"
 ---
 # <a name="coutputqueuecoutputqueue-constructor"></a>Costruttore COutputQueue.COutputQueue
 
@@ -52,7 +52,7 @@ COutputQueue(
 *pInputPin* 
 </dt> <dd>
 
-Puntatore [**all'interfaccia IPin**](/windows/desktop/api/Strmif/nn-strmif-ipin) del pin di input. L'oggetto consegnerà esempi a questo segnaposto.
+Puntatore [**all'interfaccia IPin**](/windows/desktop/api/Strmif/nn-strmif-ipin) del pin di input. L'oggetto consegnerà gli esempi a questo segnaposto.
 
 </dd> <dt>
 
@@ -119,7 +119,7 @@ Se l'oggetto crea un thread, assegna l'handle del thread alla variabile membro [
 
 | Requisito | Valore |
 |--------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Intestazione<br/>  | <dl> <dt>Outputq.h (include Streams.h)</dt> </dl>                                                                                   |
+| Intestazione<br/>  | <dl> <dt>Outputq.h (includere Flussi.h)</dt> </dl>                                                                                   |
 | Libreria<br/> | <dl> <dt>Strmbase.lib (build di vendita al dettaglio); </dt> <dt>Strmbasd.lib (build di debug)</dt> </dl> |
 
 

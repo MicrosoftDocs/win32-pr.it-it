@@ -9,12 +9,12 @@ topic_type:
 api_name: ''
 api_type: ''
 api_location: ''
-ms.openlocfilehash: 9e307527f93c153f0f78ce58b4d70ead4f7c1bc4
-ms.sourcegitcommit: b32433cc0394159c7263809ae67615ab5792d40d
+ms.openlocfilehash: 44d71469cf5fd3246a0bb038cf369227cb3a3017
+ms.sourcegitcommit: c276a8912787b2cda74dcf54eb96df961bb1188b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/30/2021
-ms.locfileid: "113120556"
+ms.lasthandoff: 08/20/2021
+ms.locfileid: "122625827"
 ---
 # <a name="calculatelevelofdetail-directx-hlsl-texture-object"></a>CalculateLevelOfDetail (oggetto trama DirectX HLSL)
 
@@ -32,8 +32,8 @@ ret Object.CalculateLevelOfDetail( sampler \_ state S, float x );
 
 <table>
 <colgroup>
-<col style="width: 50%" />
-<col style="width: 50%" />
+<col  />
+<col  />
 </colgroup>
 <thead>
 <tr class="header">
@@ -52,7 +52,7 @@ ret Object.CalculateLevelOfDetail( sampler \_ state S, float x );
 </tr>
 <tr class="odd">
 <td><span id="x"></span><span id="X"></span><em>X</em><br/></td>
-<td>[in] Valore o valori di interpolazione lineare, ovvero un numero a virgola mobile compreso tra 0,0 e 1,0 inclusi. Il numero di componenti dipende dal tipo di oggetto trama. <br/> 
+<td>[in] Valore o valori di interpolazione lineare, ovvero un numero a virgola mobile compreso tra 0,0 e 1,0 inclusi. Il numero di componenti dipende dal tipo texture-object. <br/> 
 <table>
 <thead>
 <tr class="header">
@@ -89,7 +89,7 @@ ret Object.CalculateLevelOfDetail( sampler \_ state S, float x );
 
 Restituisce il lod calcolato, un singolo valore a virgola mobile.
 
-## <a name="minimum-shader-model"></a>Modello shader minimo
+## <a name="minimum-shader-model"></a>Modello di shader minimo
 
 Questa funzione è supportata nei modelli shader seguenti.
 

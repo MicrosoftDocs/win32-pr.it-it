@@ -5,7 +5,7 @@ ms.assetid: 5f2aabbe-e6c7-4aa2-a30d-30178a4ba3db
 keywords:
 - Metodo isIdentical Windows Media Player
 - Metodo isIdentical Windows Media Player , classe StringCollection
-- Classe StringCollection Windows Media Player metodo , isIdentical
+- Classe StringCollection Windows Media Player metodo isIdentical
 topic_type:
 - apiref
 api_name:

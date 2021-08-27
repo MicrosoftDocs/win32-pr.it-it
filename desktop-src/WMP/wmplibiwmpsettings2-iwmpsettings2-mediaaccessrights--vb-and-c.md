@@ -5,7 +5,7 @@ ms.assetid: c4289a2c-e343-405d-9bf5-0e97f6617916
 keywords:
 - Proprietà mediaAccessRights Windows Media Player
 - Proprietà mediaAccessRights Windows Media Player, interfaccia IWMPSettings2
-- Interfaccia IWMPSettings2 Windows Media Player , proprietà mediaAccessRights
+- Interfaccia IWMPSettings2 Windows Media Player proprietà , mediaAccessRights
 topic_type:
 - apiref
 api_name:

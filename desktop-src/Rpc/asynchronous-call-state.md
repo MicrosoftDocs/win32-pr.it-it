@@ -1,70 +1,33 @@
 ---
-title: Stato di chiamata asincrono
-description: Questa pagina descrive lo stato di chiamata asincrono per le chiamate RPC.
+title: Stato di chiamata asincrona
+description: Questa pagina descrive lo stato della chiamata asincrona per le chiamate RPC.
 ms.assetid: 4a594dad-a8a1-44e9-8648-ddc2539c234c
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 96331a18b267b2e44072840727c8fd06afd11d6b
-ms.sourcegitcommit: 2d531328b6ed82d4ad971a45a5131b430c5866f7
+ms.openlocfilehash: db7ab00104b305ac87fa87883031d2425f229ce5
+ms.sourcegitcommit: 9b5faa61c38b2d0c432b7f2dbee8c127b0e28a7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "103856970"
+ms.lasthandoff: 08/19/2021
+ms.locfileid: "122478627"
 ---
-# <a name="asynchronous-call-state"></a>Stato di chiamata asincrono
+# <a name="asynchronous-call-state"></a>Stato di chiamata asincrona
 
-Questa pagina descrive lo stato di chiamata asincrono per le chiamate RPC.
+Questa pagina descrive lo stato della chiamata asincrona per le chiamate RPC.
 
 ## <a name="client-behavior"></a>Comportamento del client
 
 
 
-<table>
-<colgroup>
-<col style="width: 33%" />
-<col style="width: 33%" />
-<col style="width: 33%" />
-</colgroup>
-<thead>
-<tr class="header">
-<th>State</th>
-<th>Nome dello stato</th>
-<th>Azione</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>C</td>
-<td>Eseguire la chiamata</td>
-<td>Eseguire la chiamata RPC
-<ul>
-<li>In riuscita Vai a stato WComp</li>
-<li>All'eccezione Vai alla fine</li>
-</ul>
-Per avere esito negativo: passare a Can<br/></td>
-</tr>
-<tr class="even">
-<td>Capacità</td>
-<td>Annulla la chiamata</td>
-<td>Chiama <a href="/windows/desktop/api/Rpcasync/nf-rpcasync-rpcasynccancelcall"><strong>RpcAsyncCancelCall</strong></a>Vai a WComp<br/></td>
-</tr>
-<tr class="odd">
-<td>WComp</td>
-<td>Attendi completamento</td>
-<td>Attendi notificationCall-è necessario ricevere una notifica completa<br/> Vai a comp<br/></td>
-</tr>
-<tr class="even">
-<td>Comp</td>
-<td>Completion</td>
-<td>Problema <a href="/windows/desktop/api/Rpcasync/nf-rpcasync-rpcasynccompletecall"><strong>RpcAsyncCompleteCall</strong></a>Vai alla fine<br/></td>
-</tr>
-<tr class="odd">
-<td>Fine</td>
 
+| State | Nome dello stato | Azione | 
+|-------|------------|--------|
+| C | Effettuare la chiamata | Effettuare la chiamata RPC<ul><li>Se l'operazione ha esito positivo, passare allo stato WComp</li><li>In eccezione passare a Fine</li></ul>Per esito negativo: passare a Can<br /> | 
+| Capacità | Annullare la chiamata | Chiamare <a href="/windows/desktop/api/Rpcasync/nf-rpcasync-rpcasynccancelcall"><strong>RpcAsyncCancelCall</strong></a>Go a WComp<br /> | 
+| WComp | Attendere il completamento | Attendere la ricezione della notificaCall-complete<br /> Passare a Comp<br /> | 
+| Comp | Completion | Problema <a href="/windows/desktop/api/Rpcasync/nf-rpcasync-rpcasynccompletecall"><strong>RpcAsyncCompleteCall</strong></a>Go to End<br /> | 
+| Fine | 
 
-</tr>
-</tbody>
-</table>
 
 
 
@@ -76,9 +39,9 @@ Per avere esito negativo: passare a Can<br/></td>
 
 | State | Nome dello stato     | Azione                                                                                                                                                                                                              |
 |-------|----------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| D     | Dispatch       | La chiamata viene inviata dal runtimeProcess RPC<br/> Vai a comp<br/> Per avere esito negativo (durante l'esecuzione sul thread RPC): Genera eccezione; Vai alla fine<br/> Per eseguire correttamente l'errore: passare a un<br/> |
-| A     | Interrompi la chiamata | Chiama [**RpcAsyncAbortCall**](/windows/desktop/api/Rpcasync/nf-rpcasync-rpcasyncabortcall)Vai alla fine<br/>                                                                                                                                             |
-| Comp  | Completion     | Problema [**RpcAsyncCompleteCall**](/windows/desktop/api/Rpcasync/nf-rpcasync-rpcasynccompletecall)Vai alla fine<br/>                                                                                                                                      |
+| D     | Dispatch       | La chiamata viene inviata da RPC runtimeProcess<br/> Passare a Comp<br/> Per generare un errore irreversibile (durante l'esecuzione sul thread RPC): genera eccezione. Vai a Fine<br/> Per eseguire correttamente l'errore: passare a A<br/> |
+| A     | Interrompere la chiamata | Chiamare [**RpcAsyncAbortCall**](/windows/desktop/api/Rpcasync/nf-rpcasync-rpcasyncabortcall)Go to End<br/>                                                                                                                                             |
+| Comp  | Completion     | Problema [**RpcAsyncCompleteCall**](/windows/desktop/api/Rpcasync/nf-rpcasync-rpcasynccompletecall)Go to End<br/>                                                                                                                                      |
 | Fine   |                |                                                                                                                                                                                                                     |
 
 

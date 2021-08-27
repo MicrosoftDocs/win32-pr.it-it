@@ -3,7 +3,7 @@ title: Elemento DropDownColorPicker
 description: Rappresenta un Drop-Down controllo Selezione colori che quando si fa clic visualizza una tavolozza di campioni di colore.
 ms.assetid: fc4df978-9c52-43d5-8a5e-e015aa7058cd
 keywords:
-- Barra multifunzione di Windows per l'elemento DropDownColorPicker
+- Elemento DropDownColorPicker Windows ribbon
 topic_type:
 - apiref
 api_name:
@@ -13,12 +13,12 @@ api_type:
 ms.topic: reference
 ms.date: 05/31/2018
 api_location: ''
-ms.openlocfilehash: ce2fd1d9ff12b56d87955304fad24af23209ff91
-ms.sourcegitcommit: 099ecdda1e83618b844387405da0db0ebda93a65
+ms.openlocfilehash: 31525ee1b7233f0bf49668856d917ef14bc034b6
+ms.sourcegitcommit: c276a8912787b2cda74dcf54eb96df961bb1188b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/04/2021
-ms.locfileid: "111442902"
+ms.lasthandoff: 08/20/2021
+ms.locfileid: "122622887"
 ---
 # <a name="dropdowncolorpicker-element"></a>Elemento DropDownColorPicker
 
@@ -45,10 +45,10 @@ Rappresenta un [controllo elenco a Selezione colori](windowsribbon-controls-drop
 
 <table>
 <colgroup>
-<col style="width: 25%" />
-<col style="width: 25%" />
-<col style="width: 25%" />
-<col style="width: 25%" />
+<col  />
+<col  />
+<col  />
+<col  />
 </colgroup>
 <thead>
 <tr class="header">
@@ -75,7 +75,7 @@ Rappresenta un [controllo elenco a Selezione colori](windowsribbon-controls-drop
 <ul>
 <li>Ancoraggio SplitButton.</li>
 <li><strong>Il pulsante</strong> a colori automatico viene visualizzato per impostazione predefinita.</li>
-<li>Griglia <strong>dei campioni dei colori</strong> del tema di Windows.</li>
+<li>Windows griglia <strong>dei campioni dei colori</strong> del tema.</li>
 <li><strong>Griglia dei campioni</strong> di colori standard.</li>
 <li><strong>La griglia dei</strong> campioni colori recenti è facoltativa.</li>
 <li><strong>Icona di avvio della finestra</strong> di dialogo Altri colori.</li>
@@ -164,7 +164,7 @@ Non ci sono elementi figlio.
 | [**ControlGroup**](windowsribbon-element-controlgroup.md)<br/>             |
 | [**DropDownButton**](windowsribbon-element-dropdownbutton.md)<br/>         |
 | [**DropDownGallery**](windowsribbon-element-dropdowngallery.md)<br/>       |
-| [**Gruppo**](windowsribbon-element-group.md)<br/>                           |
+| [**Group**](windowsribbon-element-group.md)<br/>                           |
 | [**Menugroup**](windowsribbon-element-menugroup.md)<br/>                   |
 | [**SplitButton**](windowsribbon-element-splitbutton.md)<br/>               |
 | [**SplitButtonGallery**](windowsribbon-element-splitbuttongallery.md)<br/> |
@@ -175,11 +175,11 @@ Non ci sono elementi figlio.
 
 facoltativo.
 
-Può verificarsi una o più volte per ogni elemento [**ControlGroup,**](windowsribbon-element-controlgroup.md) [**DropDownButton,**](windowsribbon-element-dropdownbutton.md) [**DropDownGallery,**](windowsribbon-element-dropdowngallery.md) [**Group,**](windowsribbon-element-group.md) [**MenuGroup,**](windowsribbon-element-menugroup.md) [**SplitButton**](windowsribbon-element-splitbutton.md)o [**SplitButtonGallery.**](windowsribbon-element-splitbuttongallery.md)
+Può verificarsi una o più volte per ogni elemento [**ControlGroup**](windowsribbon-element-controlgroup.md), [**DropDownButton**](windowsribbon-element-dropdownbutton.md), [**DropDownGallery**](windowsribbon-element-dropdowngallery.md), [**Group**](windowsribbon-element-group.md), [**MenuGroup**](windowsribbon-element-menugroup.md), [**SplitButton**](windowsribbon-element-splitbutton.md)o [**SplitButtonGallery.**](windowsribbon-element-splitbuttongallery.md)
 
 ## <a name="examples"></a>Esempio
 
-Nell'esempio seguente viene illustrato il markup di base per tutti e tre i tipi di elenco a [discesa Selezione colori](windowsribbon-controls-dropdowncolorpicker.md).
+Nell'esempio seguente viene illustrato il markup di base per tutti e tre i tipi di elenco [a Selezione colori](windowsribbon-controls-dropdowncolorpicker.md).
 
 Questa sezione di codice illustra le dichiarazioni Command per tre **elementi DropDownColorPicker.**
 

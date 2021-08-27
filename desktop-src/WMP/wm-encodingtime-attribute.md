@@ -26,7 +26,7 @@ ms.locfileid: "120122661"
 ## <a name="applies-to"></a>Si applica a
 
 -   [Elementi audio](audio-item-attributes.md)
--   [Attributi dei Windows file multimediali comunemente usati](commonly-used-windows-media-file-attributes.md)
+-   [Attributi di file multimediali Windows comunemente usati](commonly-used-windows-media-file-attributes.md)
 -   [Playlist](playlist-attributes-ref.md)
 -   [Elementi video](video-item-attributes.md)
 
@@ -36,7 +36,7 @@ Questo attributo viene archiviato sia nella libreria che nel file multimediale d
 
 **CreationDate** è un alias per questo attributo.
 
-La Windows Media Format SDK per questo attributo è g \_ wszWMEncodingTime.
+La Windows media format SDK costante per questo attributo è \_ g wszWMEncodingTime.
 
 Per determinare se è possibile modificare il valore di questo attributo, usare il [metodo Media.isReadOnlyItem.](media-isreadonlyitem.md)
 
@@ -54,7 +54,7 @@ Per determinare se è possibile modificare il valore di questo attributo, usare 
 
 <dl> <dt>
 
-[**Informazioni di riferimento su attributi**](attribute-reference.md)
+[**Riferimento all'attributo**](attribute-reference.md)
 </dt> </dl>
 
  

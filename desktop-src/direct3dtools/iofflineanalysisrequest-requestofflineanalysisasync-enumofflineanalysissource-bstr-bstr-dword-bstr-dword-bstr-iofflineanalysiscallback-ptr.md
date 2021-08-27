@@ -1,5 +1,5 @@
 ---
-description: Richieste di esecuzione dell'analisi offline con l'origine, il manifesto, i parametri e del frame specificato.
+description: Richiede di eseguire l'analisi offline con l'origine, il manifesto, i parametri e del frame specificato.
 MS-HAID: vspixengine.IOfflineAnalysisRequest\_RequestOfflineAnalysisAsync\_enumOFFLINEANALYSISSOURCE\_BSTR\_BSTR\_DWORD\_BSTR\_DWORD\_BSTR\_IOfflineAnalysisCallback\_ptr
 MSHAttr:
 - PreferredSiteName:MSDN
@@ -17,16 +17,16 @@ api_location:
 topic_type:
 - APIRef
 - kbSyntax
-ms.openlocfilehash: 2a8a36f65f2158d03650257cf13458d36330e7fd3184210d99c05200e1731231
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 85243b1c07db1f2c30a4e29b221582fd507360f1
+ms.sourcegitcommit: c276a8912787b2cda74dcf54eb96df961bb1188b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119981141"
+ms.lasthandoff: 08/20/2021
+ms.locfileid: "122624337"
 ---
 # <a name="span-idvspixengineiofflineanalysisrequest_requestofflineanalysisasync_enumofflineanalysissource_bstr_bstr_dword_bstr_dword_bstr_iofflineanalysiscallback_ptrspaniofflineanalysisrequestrequestofflineanalysisasync-method"></a><span id="vspixengine.iofflineanalysisrequest_requestofflineanalysisasync_enumofflineanalysissource_bstr_bstr_dword_bstr_dword_bstr_iofflineanalysiscallback_ptr"></span>Metodo IOfflineAnalysisRequest::RequestOfflineAnalysisAsync
 
-Richieste di esecuzione dell'analisi offline con l'origine, il manifesto, i parametri e del frame specificato.
+Richiede di eseguire l'analisi offline con l'origine, il manifesto, i parametri e del frame specificato.
 
 ## <a name="syntax"></a>Sintassi
 
@@ -47,7 +47,7 @@ HRESULT RequestOfflineAnalysisAsync(
 ## <a name="parameters"></a>Parametri
 
 *analysisSource*   
-Specifica dove l'origine dell'analisi deriva da report memorizzati nella cache o dalla riproduzione.
+Specifica dove l'origine dell'analisi deriva dai report memorizzati nella cache o dalla riproduzione.
 
 *manifestXml*   
 Stringa COM contenente il percorso del file manifesto XML.
@@ -68,7 +68,7 @@ Frame specificato.
 Stringa COM contenente il percorso assoluto del file in cui viene scritto l'output.
 
 *requestCallback*   
-Indirizzo di un callback utilizzato per inviare una notifica all'host dei risultati.
+Indirizzo di un callback utilizzato per notificare i risultati all'host.
 
 ## <a name="return-value"></a>Valore restituito
 
@@ -76,7 +76,7 @@ Se questo metodo ha esito positivo, restituisce **S \_ OK**. In caso contrario, 
 
 ## <a name="requirements"></a>Requisiti
 
-<table><colgroup><col style="width: 50%" /><col style="width: 50%" /></colgroup><tbody><tr class="odd"><td><p>Intestazione</p></td><td>Vspixengine.h</td></tr></tbody></table>
+<table><colgroup><col  /><col  /></colgroup><tbody><tr class="odd"><td><p>Intestazione</p></td><td>Vspixengine.h</td></tr></tbody></table>
 
 ## <a name="span-idsee_alsospansee-also"></a><span id="see_also"></span>Vedere anche
 
