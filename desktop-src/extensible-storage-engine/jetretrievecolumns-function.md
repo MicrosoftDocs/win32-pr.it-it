@@ -1,5 +1,5 @@
 ---
-description: 'Altre informazioni su: funzione JetRetrieveColumns'
+description: 'Altre informazioni su: Funzione JetRetrieveColumns'
 title: Funzione JetRetrieveColumns
 TOCTitle: JetRetrieveColumns Function
 ms:assetid: f7158fe8-ba4b-420c-9d45-185791a5759b
@@ -18,12 +18,12 @@ api_type:
 api_location:
 - ESENT.DLL
 ROBOTS: INDEX,FOLLOW
-ms.openlocfilehash: 515be3a36932c9a56843f51d2e1b32a41ca94e5b
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: ad6e1d39797c9a9ff965644ceea7858cb4af1a56
+ms.sourcegitcommit: 9b5faa61c38b2d0c432b7f2dbee8c127b0e28a7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "104233633"
+ms.lasthandoff: 08/19/2021
+ms.locfileid: "122472497"
 ---
 # <a name="jetretrievecolumns-function"></a>Funzione JetRetrieveColumns
 
@@ -32,7 +32,7 @@ _**Si applica a:** Windows | Windows Server_
 
 ## <a name="jetretrievecolumns-function"></a>Funzione JetRetrieveColumns
 
-La funzione **JetRetrieveColumns** recupera più valori di colonna dal record corrente in un'unica operazione. Una matrice di strutture di [JET_RETRIEVECOLUMN](./jet-retrievecolumn-structure.md) viene utilizzata per descrivere il set di valori di colonna da recuperare e per descrivere i buffer di output per ogni valore di colonna da recuperare.
+La **funzione JetRetrieveColumns** recupera più valori di colonna dal record corrente in una singola operazione. Una matrice di [JET_RETRIEVECOLUMN](./jet-retrievecolumn-structure.md) viene usata per descrivere il set di valori di colonna da recuperare e per descrivere i buffer di output per ogni valore di colonna da recuperare.
 
 ```cpp
     JET_ERR JET_API JetRetrieveColumns(
@@ -49,144 +49,59 @@ La funzione **JetRetrieveColumns** recupera più valori di colonna dal record co
 
 Sessione da utilizzare per questa chiamata.
 
-*TableID*
+*tableid*
 
 Cursore da utilizzare per questa chiamata.
 
 *pretrievecolumn*
 
-Puntatore a una matrice di una o più strutture di [JET_RETRIEVECOLUMN](./jet-retrievecolumn-structure.md) . Ogni struttura include le descrizioni del valore della colonna da recuperare e la posizione in cui archiviare i dati restituiti.
+Puntatore a una matrice di una o [più JET_RETRIEVECOLUMN](./jet-retrievecolumn-structure.md) struttura . Ogni struttura include descrizioni del valore della colonna da recuperare e della posizione in cui archiviare i dati restituiti.
 
 *cretrievecolumn*
 
-Numero di strutture di [JET_RETRIEVECOLUMN](./jet-retrievecolumn-structure.md) nella matrice specificata da *pretrievecolumn*.
+Numero di [JET_RETRIEVECOLUMN](./jet-retrievecolumn-structure.md) nella matrice specificata da *pretrievecolumn*.
 
 ### <a name="return-value"></a>Valore restituito
 
-Questa funzione restituisce il tipo di dati [JET_ERR](./jet-err.md) con uno dei seguenti codici restituiti. Per ulteriori informazioni sugli errori ESE possibili, vedere la pagina relativa agli errori e ai [parametri di gestione degli](./error-handling-parameters.md)errori del [motore di archiviazione estensibile](./extensible-storage-engine-errors.md) .
-
-<table>
-<colgroup>
-<col style="width: 50%" />
-<col style="width: 50%" />
-</colgroup>
-<thead>
-<tr class="header">
-<th><p>Codice restituito</p></th>
-<th><p>Descrizione</p></th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td><p>JET_errSuccess</p></td>
-<td><p>Operazione riuscita.</p></td>
-</tr>
-<tr class="even">
-<td><p>JET_errBadItagSequence</p></td>
-<td><p>È stato passato un valore del numero di sequenza di colonna multivalore non valido in pretinfo- &gt; itagSequence. I valori validi per i numeri di sequenza dei valori di colonna multivalore sono pari a 1 o superiore. Il valore 0 (zero) è valido per questa funzione ma non è valido per <a href="gg269198(v=exchg.10).md">JetRetrieveColumn</a>.</p></td>
-</tr>
-<tr class="odd">
-<td><p>JET_errBadColumnId</p></td>
-<td><p>L'ID di colonna specificato non rientra nei limiti validi di un ID di colonna.</p></td>
-</tr>
-<tr class="even">
-<td><p>JET_errClientRequestToStopJetService</p></td>
-<td><p>Non è possibile completare l'operazione perché tutte le attività nell'istanza associata alla sessione sono state interrotte in seguito a una chiamata a <a href="gg269240(v=exchg.10).md">JetStopService</a>.</p></td>
-</tr>
-<tr class="odd">
-<td><p>JET_errColumnNotFound</p></td>
-<td><p>La colonna descritta dal <em>ColumnID</em> specificato non esiste nella tabella.</p></td>
-</tr>
-<tr class="even">
-<td><p>JET_errIndexTuplesCannotRetrieveFromIndex</p></td>
-<td><p>Le colonne indicizzate come sottostringhe non possono essere recuperate dall'indice, perché solo una piccola parte della colonna è in genere presente in ogni voce di indice.</p></td>
-</tr>
-<tr class="odd">
-<td><p>JET_errInvalidBufferSize</p></td>
-<td><p>In alcuni casi, il buffer fornito per la colonna di recupero deve essere sufficientemente dimensionato per restituire qualsiasi quantità di valore della colonna. Ad esempio, le colonne aggiornabili con deposito sono regolate in modo da essere coerenti per il contesto transazionale della sessione chiamante e questa regolazione richiede il buffer fornito dal chiamante. Se viene fornito spazio sufficiente nel buffer, viene restituito JET_errInvalidBufferSize e non vengono restituiti dati di colonna.</p></td>
-</tr>
-<tr class="even">
-<td><p>JET_errInvalidgrbit</p></td>
-<td><p>Le opzioni specificate sono sconosciute o una combinazione non valida di impostazioni di bit note.</p></td>
-</tr>
-<tr class="odd">
-<td><p>JET_errInvalidParameter</p></td>
-<td><p>Uno o più parametri specificati non sono corretti. Questo problema può verificarsi se retinfo. cbStruct è più piccolo della dimensione del <a href="gg294049(v=exchg.10).md">JET_RETINFO</a>.</p></td>
-</tr>
-<tr class="even">
-<td><p>JET_errInstanceUnavailable</p></td>
-<td><p>Non è possibile completare l'operazione perché l'istanza associata alla sessione ha rilevato un errore irreversibile che richiede che l'accesso a tutti i dati venga revocato per proteggere l'integrità dei dati.</p>
-<p><strong>Windows XP:</strong>  Questo errore verrà restituito solo da Windows XP e versioni successive.</p></td>
-</tr>
-<tr class="odd">
-<td><p>JET_errNoCurrentRecord</p></td>
-<td><p>Il cursore non è posizionato in corrispondenza di un record. I motivi possono essere diversi. Questa situazione si verifica, ad esempio, se il cursore è attualmente posizionato dopo l'ultimo record nell'indice corrente.</p></td>
-</tr>
-<tr class="even">
-<td><p>JET_errNotInitialized</p></td>
-<td><p>Non è possibile completare l'operazione perché l'istanza associata alla sessione non è ancora stata inizializzata.</p></td>
-</tr>
-<tr class="odd">
-<td><p>JET_errRestoreInProgress</p></td>
-<td><p>Non è possibile completare l'operazione perché è in corso un'operazione di ripristino sull'istanza associata alla sessione.</p></td>
-</tr>
-<tr class="even">
-<td><p>JET_errSessionSharingViolation</p></td>
-<td><p>Non è possibile usare la stessa sessione per più di un thread nello stesso momento.</p>
-<p><strong>Windows XP:</strong>  Questo errore verrà restituito solo da Windows XP e versioni successive.</p></td>
-</tr>
-<tr class="odd">
-<td><p>JET_errTermInProgress</p></td>
-<td><p>Non è possibile completare l'operazione perché l'istanza associata alla sessione viene arrestata.</p></td>
-</tr>
-<tr class="even">
-<td><p>JET_wrnBufferTruncated</p></td>
-<td><p>Impossibile recuperare l'intero valore della colonna perché il buffer specificato è inferiore alle dimensioni della colonna.</p></td>
-</tr>
-</tbody>
-</table>
+Questa funzione restituisce il [JET_ERR](./jet-err.md) dati con uno dei codici restituiti seguenti. Per altre informazioni sui possibili errori ESE, vedere [Extensible Archiviazione Engine Errors](./extensible-storage-engine-errors.md) and [Error Handling Parameters](./error-handling-parameters.md).
 
 
-In seguito all'esito positivo, i dati delle colonne e le dimensioni della colonna vengono restituiti nei buffer forniti descritti in matrice di strutture di [JET_RETRIEVECOLUMN](./jet-retrievecolumn-structure.md) . Se un *itagSequence* è stato impostato su 0 (zero) per indicare che è stato richiesto il numero di istanze di un campo multivalore anziché i dati della colonna, il numero di istanze di una colonna multivalore viene restituito nel campo *itagSequence* . Ogni struttura [JET_RETRIEVECOLUMN](./jet-retrievecolumn-structure.md) dispone di un campo di errore che contiene avvisi per la colonna recuperata. Se la colonna è di valore **null** , il codice di errore verrà impostato su JET_wrnColumnNull.
+| <p>Codice restituito</p> | <p>Descrizione</p> | 
+|--------------------|--------------------|
+| <p>JET_errSuccess</p> | <p>Operazione riuscita.</p> | 
+| <p>JET_errBadItagSequence</p> | <p>È stato passato un valore di numero di sequenza di colonna multivalore non valido in pretinfo- &gt; itagSequence. I valori validi per i numeri di sequenza di valori di colonna multivalore sono 1 o superiori. Il valore 0 (zero) è valido per questa funzione, ma non è valido <a href="gg269198(v=exchg.10).md">per JetRetrieveColumn</a>.</p> | 
+| <p>JET_errBadColumnId</p> | <p>L'ID di colonna specificato non rientra nei limiti legali di un ID di colonna.</p> | 
+| <p>JET_errClientRequestToStopJetService</p> | <p>Non è possibile completare l'operazione perché tutte le attività nell'istanza associata alla sessione sono cessare in seguito a una chiamata a <a href="gg269240(v=exchg.10).md">JetStopService.</a></p> | 
+| <p>JET_errColumnNotFound</p> | <p>La colonna descritta dal <em>valore columnid</em> specificato non esiste nella tabella.</p> | 
+| <p>JET_errIndexTuplesCannotRetrieveFromIndex</p> | <p>Le colonne indicizzate come sottostringhe non possono essere recuperate dall'indice, poiché solo una piccola parte della colonna è in genere presente in ogni voce di indice.</p> | 
+| <p>JET_errInvalidBufferSize</p> | <p>In alcuni casi, il buffer specificato per la colonna di recupero deve essere sufficientemente ridimensionato per restituire qualsiasi quantità del valore della colonna. Ad esempio, le colonne aggiornabili del deposito vengono modificate in modo da essere coerenti per il contesto transazionale della sessione chiamante e questa modifica richiede il buffer fornito dal chiamante. Se viene specificato spazio nel buffer insufficiente, JET_errInvalidBufferSize viene restituito un valore e non viene restituito alcun dato di colonna.</p> | 
+| <p>JET_errInvalidgrbit</p> | <p>Le opzioni fornite sono sconosciute o una combinazione non valida di impostazioni di bit note.</p> | 
+| <p>JET_errInvalidParameter</p> | <p>Uno o più parametri specificati non sono corretti. Questo problema può verificarsi se retinfo.cbStruct è inferiore alle dimensioni <a href="gg294049(v=exchg.10).md">di JET_RETINFO</a>.</p> | 
+| <p>JET_errInstanceUnavailable</p> | <p>Non è possibile completare l'operazione perché l'istanza associata alla sessione ha rilevato un errore irreversibile che richiede la revoca dell'accesso a tutti i dati per proteggere l'integrità di questi dati.</p><p><strong>Windows XP:</strong>  Questo errore verrà restituito solo da Windows XP e versioni successive.</p> | 
+| <p>JET_errNoCurrentRecord</p> | <p>Il cursore non è posizionato su un record. I motivi possono essere diversi. Ad esempio, ciò si verifica se il cursore è attualmente posizionato dopo l'ultimo record nell'indice corrente.</p> | 
+| <p>JET_errNotInitialized</p> | <p>Non è possibile completare l'operazione perché l'istanza associata alla sessione non è ancora stata inizializzata.</p> | 
+| <p>JET_errRestoreInProgress</p> | <p>Non è possibile completare l'operazione perché è in corso un'operazione di ripristino nell'istanza associata alla sessione.</p> | 
+| <p>JET_errSessionSharingViolation</p> | <p>La stessa sessione non può essere usata per più thread contemporaneamente.</p><p><strong>Windows XP:</strong>  Questo errore verrà restituito solo da Windows XP e versioni successive.</p> | 
+| <p>JET_errTermInProgress</p> | <p>Non è possibile completare l'operazione perché è in corso l'arresto dell'istanza associata alla sessione.</p> | 
+| <p>JET_wrnBufferTruncated</p> | <p>Non è stato possibile recuperare l'intero valore della colonna perché il buffer specificato è inferiore alle dimensioni della colonna.</p> | 
 
-In caso di errore, la posizione del cursore viene lasciata invariata e nessun dato viene copiato nel buffer fornito.
+
+
+In caso di esito positivo, i dati e le dimensioni delle colonne vengono restituiti nei buffer forniti descritti nella matrice [JET_RETRIEVECOLUMN](./jet-retrievecolumn-structure.md) strutture. Se *un oggetto itagSequence* è stato impostato su 0 (zero) per indicare che il numero di istanze di un campo multivalore è desiderato anziché i dati della colonna, il numero di istanze di una colonna multivalore viene restituito nel campo *itagSequence* stesso. Ogni [JET_RETRIEVECOLUMN](./jet-retrievecolumn-structure.md) ha un campo di errore che contiene avvisi per la colonna recuperata. Se la colonna ha **valore NULL,** il codice di errore verrà impostato su JET_wrnColumnNull.
+
+In caso di errore, la posizione del cursore rimane invariata e non vengono copiati dati nel buffer specificato.
 
 #### <a name="remarks"></a>Commenti
 
-**JetRetrieveColumns** supporta una funzionalità che non è supportata da [JetRetrieveColumn](./jetretrievecolumn-function.md) . Si tratta della possibilità di recuperare il numero di istanze di una colonna multivalore. Lo scopo di questa funzionalità è quello di consentire a un'applicazione di recuperare tutti i valori di una colonna. Questa operazione può essere eseguita determinando innanzitutto il numero di valori di una colonna. Successivamente, è possibile determinare la loro lunghezza chiamando di nuovo **JetRetrieveColumns** con una struttura [JET_RETRIEVECOLUMN](./jet-retrievecolumn-structure.md) allocata per ogni valore per determinare la lunghezza dei dati della colonna. Questa operazione può essere eseguita passando i puntatori _PvData_ **null** con *cbMax* 0 (zero) e recuperando la lunghezza della colonna in *cbActual*. La terza e ultima chiamata può essere effettuata con la memoria allocata per i dati del valore della colonna.
+**JetRetrieveColumns** supporta una funzionalità non disponibile [in JetRetrieveColumn.](./jetretrievecolumn-function.md) Questa è la possibilità di recuperare il numero di istanze di una colonna multivalore. Lo scopo di questa funzionalità è consentire a un'applicazione di recuperare tutti i valori di una colonna. Questa operazione può essere eseguita determinando innanzitutto il numero di valori di una colonna. Successivamente, le relative lunghezze possono essere determinate chiamando nuovamente [](./jet-retrievecolumn-structure.md) **JetRetrieveColumns** con una JET_RETRIEVECOLUMN allocata per ogni valore per determinare la lunghezza dei dati della colonna. Questa operazione può essere eseguita passando puntatori _NULL pvData_ con *cbMax* pari a 0 (zero) e recuperando la lunghezza della colonna in *cbActual*. La terza e l'ultima chiamata possono essere effettuate con memoria allocata per i dati del valore della colonna.
 
-Se una colonna recuperata viene troncata a causa di un buffer di lunghezza insufficiente, l'API restituirà JET_wrnBufferTruncated. Tuttavia, altri errori JET_wrnColumnNull vengono restituiti solo nel campo errore [JET_RETRIEVECOLUMN](./jet-retrievecolumn-structure.md). Il motivo è che le applicazioni spesso vogliono garantire che tutti i dati siano stati recuperati e la restituzione di questo errore da **JetRetrieveColumns** facilita questa comprensione.
+Se una colonna recuperata viene troncata a causa di un buffer di lunghezza insufficiente, l'API restituirà JET_wrnBufferTruncated. Tuttavia, altri errori, JET_wrnColumnNull vengono restituiti solo nel campo dell'errore in [JET_RETRIEVECOLUMN](./jet-retrievecolumn-structure.md). Il motivo è che le applicazioni spesso vogliono assicurarsi che tutti i dati siano stati recuperati e la restituzione di questo errore **da JetRetrieveColumns** facilita questa comprensione.
 
 #### <a name="requirements"></a>Requisiti
 
-<table>
-<colgroup>
-<col style="width: 50%" />
-<col style="width: 50%" />
-</colgroup>
-<tbody>
-<tr class="odd">
-<td><p><strong>Client</strong></p></td>
-<td><p>Richiede Windows Vista, Windows XP o Windows 2000 Professional.</p></td>
-</tr>
-<tr class="even">
-<td><p><strong>Server</strong></p></td>
-<td><p>Richiede Windows Server 2008, Windows Server 2003 o Windows 2000 Server.</p></td>
-</tr>
-<tr class="odd">
-<td><p><strong>Intestazione</strong></p></td>
-<td><p>Dichiarata in esent. h.</p></td>
-</tr>
-<tr class="even">
-<td><p><strong>Libreria</strong></p></td>
-<td><p>Usare ESENT. lib.</p></td>
-</tr>
-<tr class="odd">
-<td><p><strong>DLL</strong></p></td>
-<td><p>Richiede ESENT.dll.</p></td>
-</tr>
-</tbody>
-</table>
+
+| | | <p><strong>Client</strong></p> | <p>Richiede Windows Vista, Windows XP o Windows 2000 Professional.</p> | | <p><strong>Server</strong></p> | <p>Richiede Windows Server 2008, Windows Server 2003 o Windows 2000 Server.</p> | | <p><strong>Intestazione</strong></p> | <p>Dichiarato in Esent.h.</p> | | <p><strong>Libreria</strong></p> | <p>Usare ESENT.lib.</p> | | <p><strong>DLL</strong></p> | <p>Richiede ESENT.dll.</p> | 
+
 
 
 #### <a name="see-also"></a>Vedere anche
@@ -197,4 +112,4 @@ Se una colonna recuperata viene troncata a causa di un buffer di lunghezza insuf
 [JET_RETRIEVECOLUMN](./jet-retrievecolumn-structure.md)  
 [JetEnumerateColumns](./jetenumeratecolumns-function.md)  
 [JetRetrieveColumn](./jetretrievecolumn-function.md)  
-[JetSetColumns](./jetsetcolumns-function.md)
+[Oggetti JetSetColumns](./jetsetcolumns-function.md)

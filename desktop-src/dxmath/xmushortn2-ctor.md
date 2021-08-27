@@ -11,18 +11,18 @@ api_name: ''
 api_type:
 - NA
 api_location: ''
-ms.openlocfilehash: 71c8583bcb7fbac27b90099c760e99636991d62c
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 09ab81ae6b9d3c0a5a03128b78f6f6bea19879aa
+ms.sourcegitcommit: 9b5faa61c38b2d0c432b7f2dbee8c127b0e28a7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104049680"
+ms.lasthandoff: 08/19/2021
+ms.locfileid: "122470486"
 ---
 # <a name="xmushortn2-constructors"></a>Costruttori XMUSHORTN2
 
 Costruttori esposti da `XMUSHORTN2` .
 
-Costruisce istanze della struttura [**XMUSHORTN2**](/windows/desktop/api/DirectXPackedVector/ns-directxpackedvector-xmushortn2) .
+Costruisce istanze della [**struttura XMUSHORTN2.**](/windows/desktop/api/DirectXPackedVector/ns-directxpackedvector-xmushortn2)
 
 > [!Note]  
 > I costruttori elencati di seguito sono disponibili solo in C++.
@@ -33,56 +33,14 @@ Costruisce istanze della struttura [**XMUSHORTN2**](/windows/desktop/api/DirectX
 
 
 
-<table>
-<colgroup>
-<col style="width: 50%" />
-<col style="width: 50%" />
-</colgroup>
-<thead>
-<tr class="header">
-<th style="text-align: left;">Costruttore</th>
-<th style="text-align: left;">Descrizione</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td style="text-align: left;"><a href="/windows/desktop/api/directxpackedvector/nf-directxpackedvector-xmushortn2-xmushortn2(constfloat)"><strong>XMUSHORTN2 ()</strong></a></td>
-<td style="text-align: left;">Costruttore predefinito per <code>XMUSHORTN2</code> .<br/> Costruttore predefinito per <a href="/windows/desktop/api/DirectXPackedVector/ns-directxpackedvector-xmushortn2"><strong>XMUSHORTN2</strong></a>.<br/>
-<blockquote>
-[!Note]<br />
-Questo costruttore è disponibile solo in C++.
-</blockquote>
-<br/></td>
-</tr>
-<tr class="even">
-<td style="text-align: left;"><a href="/windows/desktop/api/directxpackedvector/nf-directxpackedvector-xmushortn2-xmushortn2(float_float)"><strong>XMUSHORTN2 (float, float)</strong></a></td>
-<td style="text-align: left;">Inizializza una nuova istanza di <code>XMUSHORTN2</code> da due argomenti normalizzati <code>float</code> . <br/> Questo costruttore inizializza una nuova istanza di <a href="/windows/desktop/api/DirectXPackedVector/ns-directxpackedvector-xmushortn2"><strong>XMUSHORTN2</strong></a> da due argomenti normalizzati <code>float</code> . <br/>
-<blockquote>
-[!Note]<br />
-Questo costruttore è disponibile solo in C++.
-</blockquote>
-<br/></td>
-</tr>
-<tr class="odd">
-<td style="text-align: left;"><a href="/windows/desktop/api/directxpackedvector/nf-directxpackedvector-xmushortn2-xmushortn2(constuint16_t)"><strong>XMUSHORTN2 (const uint16_t *)</strong></a></td>
-<td style="text-align: left;">Inizializza una nuova istanza di <code>XMUSHORTN2</code> da un argomento di matrice a due elementi <code>uint16_t</code> . <br/> Questo costruttore inizializza una nuova istanza di <a href="/windows/desktop/api/DirectXPackedVector/ns-directxpackedvector-xmushortn2"><strong>XMUSHORTN2</strong></a> da un argomento di matrice a due elementi <code>uint16_t</code> . <br/>
-<blockquote>
-[!Note]<br />
-Questo costruttore è disponibile solo in C++.
-</blockquote>
-<br/></td>
-</tr>
-<tr class="even">
-<td style="text-align: left;"><a href="/windows/desktop/api/directxpackedvector/nf-directxpackedvector-xmushortn2-xmushortn2(uint16_t_uint16_t)"><strong>XMUSHORTN2 (uint16_t, uint16_t)</strong></a></td>
-<td style="text-align: left;">Inizializza una nuova istanza di <code>XMUSHORTN2</code> da due <code>uint16_t</code> argomenti. <br/> Questo costruttore inizializza una nuova istanza di <a href="/windows/desktop/api/DirectXPackedVector/ns-directxpackedvector-xmushortn2"><strong>XMUSHORTN2</strong></a> da due <code>uint16_t</code> argomenti. <br/>
-<blockquote>
-[!Note]<br />
-Questo costruttore è disponibile solo in C++.
-</blockquote>
-<br/></td>
-</tr>
-</tbody>
-</table>
+
+| Costruttore | Descrizione | 
+|-------------|-------------|
+| <a href="/windows/desktop/api/directxpackedvector/nf-directxpackedvector-xmushortn2-xmushortn2(constfloat)"><strong>XMUSHORTN2 ()</strong></a> | Costruttore predefinito per <code>XMUSHORTN2</code> .<br /> Costruttore predefinito per <a href="/windows/desktop/api/DirectXPackedVector/ns-directxpackedvector-xmushortn2"><strong>XMUSHORTN2.</strong></a><br /><blockquote>[!Note]<br />Questo costruttore è disponibile solo in C++.</blockquote><br /> | 
+| <a href="/windows/desktop/api/directxpackedvector/nf-directxpackedvector-xmushortn2-xmushortn2(float_float)"><strong>XMUSHORTN2 (float,float)</strong></a> | Inizializza una nuova istanza di <code>XMUSHORTN2</code> da due argomenti <code>float</code> normalizzati. <br /> Questo costruttore inizializza una nuova istanza di <a href="/windows/desktop/api/DirectXPackedVector/ns-directxpackedvector-xmushortn2"><strong>XMUSHORTN2</strong></a> da due argomenti <code>float</code> normalizzati. <br /><blockquote>[!Note]<br />Questo costruttore è disponibile solo in C++.</blockquote><br /> | 
+| <a href="/windows/desktop/api/directxpackedvector/nf-directxpackedvector-xmushortn2-xmushortn2(constuint16_t)"><strong>XMUSHORTN2 (const uint16_t*)</strong></a> | Inizializza una nuova istanza di da <code>XMUSHORTN2</code> un argomento della matrice di due <code>uint16_t</code> elementi. <br /> Questo costruttore inizializza una nuova istanza di <a href="/windows/desktop/api/DirectXPackedVector/ns-directxpackedvector-xmushortn2"><strong>XMUSHORTN2</strong></a> da un oggetto da un argomento di <code>uint16_t</code> matrice di due elementi. <br /><blockquote>[!Note]<br />Questo costruttore è disponibile solo in C++.</blockquote><br /> | 
+| <a href="/windows/desktop/api/directxpackedvector/nf-directxpackedvector-xmushortn2-xmushortn2(uint16_t_uint16_t)"><strong>XMUSHORTN2 (uint16_t,uint16_t)</strong></a> | Inizializza una nuova istanza di <code>XMUSHORTN2</code> da due <code>uint16_t</code> argomenti. <br /> Questo costruttore inizializza una nuova istanza di <a href="/windows/desktop/api/DirectXPackedVector/ns-directxpackedvector-xmushortn2"><strong>XMUSHORTN2</strong></a> da due <code>uint16_t</code> argomenti. <br /><blockquote>[!Note]<br />Questo costruttore è disponibile solo in C++.</blockquote><br /> | 
+
 
 
 

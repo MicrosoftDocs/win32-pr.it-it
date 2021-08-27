@@ -1,19 +1,19 @@
 ---
-description: <name>L'elemento specifica il nome di questa libreria. Questo elemento è obbligatorio e non ha attributi o elementi figlio.
+description: "&lt;L'elemento name specifica il nome di questa &gt; libreria. Questo elemento è obbligatorio e non dispone di attributi o elementi figlio."
 ms.assetid: 1F433405-5943-4579-BDAD-423C4E1A6E76
-title: Elemento name (schema di libreria)
+title: Elemento name (schema della libreria)
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 179d8b4a1f4358ccb441cc38c6c0765a6dc4d9ade8b3c32a1504be2151cfedaa
-ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
+ms.openlocfilehash: 6d32b6d929a58f19cc2b87a79af846d22fc0ebda
+ms.sourcegitcommit: 61a4c522182aa1cacbf5669683d9570a3bf043b2
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119883941"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "122880857"
 ---
-# <a name="name-element-library-schema"></a>Elemento name (schema di libreria)
+# <a name="name-element-library-schema"></a>Elemento name (schema della libreria)
 
-<name>L'elemento specifica il nome di questa libreria. Questo elemento è obbligatorio e non ha attributi o elementi figlio.
+&lt;L'elemento name specifica il nome di questa &gt; libreria. Questo elemento è obbligatorio e non dispone di attributi o elementi figlio.
 
 ## <a name="syntax"></a>Sintassi
 
@@ -41,7 +41,7 @@ ms.locfileid: "119883941"
 
 ## <a name="remarks"></a>Commenti
 
-Il nome è il nome descrittivo della libreria visualizzato in Windows Explorer. Il nome può essere specificato in un formato <dllname> <index> , come nell'esempio seguente.
+Il nome è il nome descrittivo della libreria visualizzato in Windows Explorer. Il nome può essere specificato in un &lt; formato di indice &gt; dllname, come &lt; &gt; nell'esempio seguente.
 
 
 ```

@@ -13,16 +13,16 @@ api_type:
 - COM
 api_location:
 - Shell32.dll
-ms.openlocfilehash: 424d25d7555090e4244d5cd22084171ca2a4fea9
-ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
+ms.openlocfilehash: 1c7ec210b7b3eb178f328e880041e45dd1e9a9279b3644e5b83fc9d5d78ef77c
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/28/2021
-ms.locfileid: "108086619"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120111521"
 ---
 # <a name="ishelldispatchtrayproperties-method"></a>Metodo IShellDispatch.TrayProperties
 
-Consente di visualizzare la **finestra di dialogo Proprietà barra** delle applicazioni e menu Start . Questo metodo ha lo stesso effetto di fare clic con il pulsante destro del mouse sulla barra delle applicazioni e scegliere **Proprietà**.
+Consente di visualizzare la **finestra di dialogo Proprietà barra delle** applicazioni e menu Start . Questo metodo ha lo stesso effetto di fare clic con il pulsante destro del mouse sulla barra delle applicazioni e scegliere **Proprietà**.
 
 ## <a name="syntax"></a>Sintassi
 
@@ -61,9 +61,9 @@ Questo metodo viene implementato e accessibile tramite il [**metodo Shell.TrayPr
 
 ## <a name="examples"></a>Esempio
 
-Gli esempi seguenti illustrano l'uso **di TrayProperties** in JScript, VBScript e Visual Basic.
+Gli esempi seguenti illustrano l'uso di **TrayProperties** in JScript, VBScript e Visual Basic.
 
-Jscript:
+JScript:
 
 
 ```JScript
@@ -119,7 +119,7 @@ End Sub
 
 | Requisito | Valore |
 |-------------------------------------|----------------------------------------------------------------------------------------------------------------|
-| Client minimo supportato<br/> | Solo app desktop windows 2000 Professional e Windows XP \[\]<br/>                                         |
+| Client minimo supportato<br/> | Windows 2000 Professional, Windows solo app \[ desktop XP\]<br/>                                         |
 | Server minimo supportato<br/> | Windows 2000 Server \[solo app desktop\]<br/>                                                           |
 | Intestazione<br/>                   | <dl> <dt>Shldisp.h</dt> </dl>                           |
 | Idl<br/>                      | <dl> <dt>Shldisp.idl</dt> </dl>                         |

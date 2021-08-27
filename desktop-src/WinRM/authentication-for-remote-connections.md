@@ -10,12 +10,12 @@ topic_type:
 api_name: ''
 api_type: ''
 api_location: ''
-ms.openlocfilehash: 0622f3d80e923f7d910740c71ee99f0e9a0bc446cea259b292e2d645e3b5a973
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: b9c9c0e98d884e09b9bbd52ef4f0e1cb53e782ea
+ms.sourcegitcommit: 61a4c522182aa1cacbf5669683d9570a3bf043b2
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119858877"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "122887000"
 ---
 # <a name="authentication-for-remote-connections"></a>Autenticazione per connessioni remote
 
@@ -23,7 +23,7 @@ Windows Gestione remota mantiene la sicurezza per la comunicazione tra computer 
 
 ## <a name="default-group-access"></a>Accesso predefinito ai gruppi
 
-Durante l'installazione, WinRM crea il gruppo **locale \_ \_ WinRMRemoteWMIUsers**. WinRM limita quindi l'accesso remoto a qualsiasi utente che non sia membro del gruppo di amministrazione locale o **del gruppo \_ \_ WinRMRemoteWMIUsers.** È possibile aggiungere un utente locale, un utente di dominio o un gruppo di dominio a **\_ \_ WinRMRemoteWMIUsers** digitando **net localgroup WinRMRemoteWMIUsers \_ \_ /add <domain> \\ <username>** al prompt dei comandi. Facoltativamente, è possibile usare il Criteri di gruppo per aggiungere un utente al gruppo.
+Durante l'installazione, WinRM crea il gruppo **locale \_ \_ WinRMRemoteWMIUsers**. WinRM limita quindi l'accesso remoto a qualsiasi utente che non sia membro del gruppo di amministrazione locale o **del gruppo \_ \_ WinRMRemoteWMIUsers.** È possibile aggiungere un utente locale, un utente di dominio o un gruppo di dominio a **\_ \_ WinRMRemoteWMIUsers** digitando **net localgroup WinRMRemoteWMIUsers \_ \_ /add &lt; domain &gt; \\ &lt; username &gt;** al prompt dei comandi. Facoltativamente, è possibile usare il Criteri di gruppo per aggiungere un utente al gruppo.
 
 ## <a name="default-authentication-settings"></a>Autenticazione predefinita Impostazioni
 

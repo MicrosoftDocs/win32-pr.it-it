@@ -3,7 +3,7 @@ title: Tipo complesso LevelListType
 description: Definisce un elenco di livelli di gravità che specificano il livello di dettaglio di un evento.
 ms.assetid: 82102f8a-271e-4c3d-9b0a-1e20eaa87497
 keywords:
-- Log eventi di tipo complesso LevelListType
+- EventLog di tipo complesso LevelListType
 topic_type:
 - apiref
 api_name:
@@ -13,12 +13,12 @@ api_type:
 ms.topic: reference
 ms.date: 05/31/2018
 api_location: ''
-ms.openlocfilehash: 4456ade3977603948997304393a1c9414cb0c458
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: 8087913cacac67f0c7487b5eb41f404ebdc205765c693bdfda9f86995a809493
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "104479198"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120124301"
 ---
 # <a name="levellisttype-complex-type"></a>Tipo complesso LevelListType
 
@@ -42,7 +42,7 @@ Definisce un elenco di livelli di gravità che specificano il livello di dettagl
 
 | Elemento                                                          | Tipo                                                           | Descrizione                                                                                 |
 |------------------------------------------------------------------|----------------------------------------------------------------|---------------------------------------------------------------------------------------------|
-| [**livello**](eventmanifestschema-level-levellisttype-element.md) | [**LevelType**](eventmanifestschema-leveltype-complextype.md) | Definisce un valore di gravità che determina il livello di dettaglio degli eventi durante la registrazione.<br/> |
+| [**Livello**](eventmanifestschema-level-levellisttype-element.md) | [**LevelType**](eventmanifestschema-leveltype-complextype.md) | Definisce un valore di gravità che determina il livello di dettaglio degli eventi durante la registrazione.<br/> |
 
 
 
@@ -52,8 +52,8 @@ Definisce un elenco di livelli di gravità che specificano il livello di dettagl
 
 | Requisito | Valore |
 |-------------------------------------|------------------------------------------------------|
-| Client minimo supportato<br/> | \[Solo app desktop di Windows Vista\]<br/>       |
-| Server minimo supportato<br/> | \[Solo app desktop Windows Server 2008\]<br/> |
+| Client minimo supportato<br/> | Windows Solo \[ app desktop di Vista\]<br/>       |
+| Server minimo supportato<br/> | Windows Solo app desktop server 2008 \[\]<br/> |
 
 
 

@@ -1,11 +1,11 @@
 ---
-title: Proprietà imageSourceWidth di IWMPMedia
+title: Proprietà IWMPMedia imageSourceWidth
 description: La proprietà imageSourceWidth ottiene la larghezza dell'elemento multimediale corrente in pixel.
 ms.assetid: d3644217-6faf-415e-b0c0-23db85c31a3a
 keywords:
-- Finestra delle proprietà di imageSourceWidth Media Player
-- Proprietà di imageSourceWidth Media Player Windows, interfaccia IWMPMedia
-- Interfaccia IWMPMedia Windows Media Player, proprietà imageSourceWidth
+- Proprietà imageSourceWidth Windows Media Player
+- proprietà imageSourceWidth Windows Media Player, interfaccia IWMPMedia
+- Interfaccia IWMPMedia Windows Media Player proprietà imageSourceWidth
 topic_type:
 - apiref
 api_name:
@@ -17,16 +17,16 @@ api_type:
 - COM
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 441c4fb4a05f610aee5a2c923353fb9688bffcc2
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: 2c24d9cb6d6c8cdec29984fa66b6cb12e254413ca518ed12a3089627aeeb08e8
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "106332392"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120098791"
 ---
-# <a name="iwmpmediaimagesourcewidth-property"></a>Proprietà IWMPMedia:: imageSourceWidth
+# <a name="iwmpmediaimagesourcewidth-property"></a>Proprietà IWMPMedia::imageSourceWidth
 
-La proprietà **imageSourceWidth** ottiene la larghezza dell'elemento multimediale corrente in pixel.
+La **proprietà imageSourceWidth** ottiene la larghezza dell'elemento multimediale corrente in pixel.
 
 Questa proprietà è di sola lettura.
 
@@ -49,17 +49,17 @@ Public ReadOnly Property imageSourceWidth As System.Int32
 
 ## <a name="property-value"></a>Valore proprietà
 
-**System. Int32** che rappresenta la larghezza dell'elemento multimediale.
+Oggetto **System.Int32** che rappresenta la larghezza dell'elemento multimediale.
 
 ## <a name="remarks"></a>Commenti
 
 Se l'elemento multimediale non è quello corrente, questa proprietà restituisce zero.
 
-Prima di utilizzare questa proprietà, è necessario disporre dell'accesso in lettura alla libreria. Per altre informazioni, vedere [accesso alla libreria](library-access.md).
+Prima di usare questa proprietà, è necessario avere accesso in lettura alla libreria. Per altre informazioni, vedere [Accesso alla libreria](library-access.md).
 
 ## <a name="examples"></a>Esempio
 
-Nell'esempio seguente viene usato **imageSourceWidth** per visualizzare la dimensione dell'immagine, in pixel, dell'elemento multimediale corrente in una casella di testo. L'oggetto **AxWMPLib. AxWindowsMediaPlayer** è rappresentato dalla variabile denominata Player.
+L'esempio seguente usa **imageSourceWidth** per visualizzare le dimensioni dell'immagine, in pixel, dell'elemento multimediale corrente in una casella di testo. **L'oggetto AxWMPLib.AxWindowsMediaPlayer** è rappresentato dalla variabile denominata player.
 
 
 ```CSharp
@@ -125,7 +125,7 @@ End Sub
 
 | Requisito | Valore |
 |----------------------|------------------------------------------------------------------------------------------------------------------------|
-| Versione<br/>   | Windows Media Player 9 serie o versione successiva<br/>                                                                      |
+| Versione<br/>   | Windows Media Player serie 9 o successive<br/>                                                                      |
 | Spazio dei nomi<br/> | **WMPLib**<br/>                                                                                                  |
 | Assembly<br/>  | <dl> <dt>Interop.WMPLib.dll (Interop.WMPLib.dll.dll)</dt> </dl> |
 

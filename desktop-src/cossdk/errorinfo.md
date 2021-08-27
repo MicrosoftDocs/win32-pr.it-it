@@ -1,5 +1,5 @@
 ---
-description: Recupera informazioni dettagliate sugli errori relativi ai metodi che gestiscono più oggetti, ad esempio popolamento e SaveChanges sull'oggetto COMAdminCatalogCollection, e metodi per installare, importare o esportare applicazioni o componenti nell'oggetto COMAdminCatalog.
+description: Recupera informazioni estese sugli errori relativi ai metodi che riguardano più oggetti, ad esempio Populate e SaveChanges nell'oggetto COMAdminCatalogCollection, e i metodi per installare, importare o esportare applicazioni o componenti nell'oggetto COMAdminCatalog.
 ms.assetid: cf612fc4-55dd-4706-8c41-2654ca922b9a
 title: Raccolta ErrorInfo
 ms.topic: reference
@@ -12,39 +12,39 @@ api_name:
 api_type:
 - COM
 api_location: ''
-ms.openlocfilehash: ebcb4b89eee51b475869cfc62676feda10e53084
-ms.sourcegitcommit: c7add10d695482e1ceb72d62b8a4ebd84ea050f7
+ms.openlocfilehash: 9953bc1119d7e203936ca7e78048a4083a996ec2
+ms.sourcegitcommit: 61a4c522182aa1cacbf5669683d9570a3bf043b2
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104483605"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "122881045"
 ---
 # <a name="errorinfo-collection"></a>Raccolta ErrorInfo
 
-Recupera informazioni dettagliate sugli errori relativi ai metodi che gestiscono più oggetti, ad esempio [**popolamento**](/windows/desktop/api/ComAdmin/nf-comadmin-icatalogcollection-populate) e [**SaveChanges**](/windows/desktop/api/ComAdmin/nf-comadmin-icatalogcollection-savechanges) sull'oggetto [**COMAdminCatalogCollection**](comadmincatalogcollection.md) , e metodi per installare, importare o esportare applicazioni o componenti nell'oggetto [**COMAdminCatalog**](comadmincatalog.md) .
+Recupera informazioni estese sugli errori relativi ai metodi che riguardano più oggetti, ad esempio [**Populate**](/windows/desktop/api/ComAdmin/nf-comadmin-icatalogcollection-populate) e [**SaveChanges**](/windows/desktop/api/ComAdmin/nf-comadmin-icatalogcollection-savechanges) nell'oggetto [**COMAdminCatalogCollection,**](comadmincatalogcollection.md) e i metodi per installare, importare o esportare applicazioni o componenti nell'oggetto [**COMAdminCatalog.**](comadmincatalog.md)
 
-Usare il metodo [**GetCollection**](/windows/desktop/api/ComAdmin/nf-comadmin-icatalogcollection-getcollection) su un [**COMAdminCatalogCollection**](comadmincatalogcollection.md) per accedere alla raccolta **errorInfo** associata alla raccolta originale che contiene un errore.
+Usare il [**metodo GetCollection**](/windows/desktop/api/ComAdmin/nf-comadmin-icatalogcollection-getcollection) in [**un oggetto COMAdminCatalogCollection**](comadmincatalogcollection.md) per accedere alla raccolta **ErrorInfo** associata alla raccolta originale che presenta un errore.
 
-È necessario chiamare [**GetCollection**](/windows/desktop/api/ComAdmin/nf-comadmin-icatalogcollection-getcollection) in **errorInfo** immediatamente dopo che si è verificato un errore. in caso contrario, le informazioni sull'errore andranno perse.
+È necessario chiamare [**GetCollection**](/windows/desktop/api/ComAdmin/nf-comadmin-icatalogcollection-getcollection) su **ErrorInfo** immediatamente dopo che si verifica un errore. In caso contrario, le informazioni sull'errore vengono perse.
 
-Questa raccolta non supporta i metodi [**Add**](/windows/desktop/api/ComAdmin/nf-comadmin-icatalogcollection-add) e [**Remove**](/windows/desktop/api/ComAdmin/nf-comadmin-icatalogcollection-remove) dell'oggetto [**COMAdminCatalogCollection**](comadmincatalogcollection.md) .
+Questa raccolta non supporta i [**metodi Add**](/windows/desktop/api/ComAdmin/nf-comadmin-icatalogcollection-add) [**e Remove**](/windows/desktop/api/ComAdmin/nf-comadmin-icatalogcollection-remove) dell'oggetto [**COMAdminCatalogCollection.**](comadmincatalogcollection.md)
 
 ## <a name="members"></a>Membri
 
-La raccolta **errorInfo** eredita dall'interfaccia [**IUnknown**](/windows/desktop/api/unknwn/nn-unknwn-iunknown) ma non dispone di membri aggiuntivi.
+La **raccolta ErrorInfo** eredita dall'interfaccia [**IUnknown,**](/windows/desktop/api/unknwn/nn-unknwn-iunknown) ma non dispone di membri aggiuntivi.
 
 ## <a name="related-collections"></a>Raccolte correlate
 
 È possibile passare da questa raccolta a una delle raccolte seguenti:
 
--   [**PropertyInfo**](propertyinfo.md)
+-   [**Propertyinfo**](propertyinfo.md)
 -   [**RelatedCollectionInfo**](relatedcollectioninfo.md)
 
-È possibile passare a questa raccolta da ogni raccolta, ad eccezione di **errorInfo**, [**InprocServers**](inprocservers.md), [**PropertyInfo**](propertyinfo.md), [**RelatedCollectionInfo**](relatedcollectioninfo.md), [**root**](root.md)e [**WOWInprocServers**](wowinprocservers.md).
+È possibile passare a questa raccolta da ogni raccolta ad eccezione di **ErrorInfo**, [**InprocServers**](inprocservers.md), [**PropertyInfo**](propertyinfo.md), [**RelatedCollectionInfo**](relatedcollectioninfo.md), [**Root**](root.md)e [**WOWInprocServers**](wowinprocservers.md).
 
 ## <a name="properties"></a>Proprietà
 
-Le proprietà seguenti sono supportate dall'oggetto [**COMAdminCatalogObject**](comadmincatalogobject.md) all'interno della raccolta:
+Le proprietà seguenti sono supportate [**dall'oggetto COMAdminCatalogObject all'interno**](comadmincatalogobject.md) della raccolta:
 
 -   [ErrorCode](#errorcode)
 -   [MajorRef](#majorref)
@@ -59,7 +59,7 @@ Le proprietà seguenti sono supportate dall'oggetto [**COMAdminCatalogObject**](
 |----------------|----------------------------------------|
 | Descrizione    | Codice di errore relativo all'oggetto o al file. |
 | Access         | ReadOnly                               |
-| Type           | string                                 |
+| Type           | Stringa                                 |
 | Predefinito        | nessuno                                   |
 | Sistema minimo | Windows 2000                           |
 
@@ -73,9 +73,9 @@ Le proprietà seguenti sono supportate dall'oggetto [**COMAdminCatalogObject**](
 
 | Voce | Valore |
 |----------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Descrizione    | Valore della proprietà [**chiave**](/windows/desktop/api/ComAdmin/nf-comadmin-icatalogobject-get_key) per l'oggetto che contiene un errore. Se, ad esempio, una chiamata a [**SaveChanges**](/windows/desktop/api/ComAdmin/nf-comadmin-icatalogcollection-savechanges) per una raccolta ha esito negativo su un particolare oggetto della raccolta, il valore della proprietà **chiave** per l'oggetto viene segnalato come valore MajorRef. Utilizzare questa proprietà per esaminare l'elemento che non è possibile aggiornare o per trovare il componente o la DLL che non viene installata. |
+| Descrizione    | Valore [**della**](/windows/desktop/api/ComAdmin/nf-comadmin-icatalogobject-get_key) proprietà Key per l'oggetto che presenta un errore. Ad esempio, se una chiamata [**SaveChanges**](/windows/desktop/api/ComAdmin/nf-comadmin-icatalogcollection-savechanges) per una raccolta ha esito negativo su un oggetto specifico nella raccolta, il valore della proprietà **Key** per tale oggetto viene segnalato come valore MajorRef. Usare questa proprietà per esaminare l'elemento che non riesce ad aggiornare o per trovare il componente o la DLL che non riesce a installare. |
 | Access         | ReadOnly                                                                                                                                                                                                                                                                                                                                                                                                                             |
-| Type           | string                                                                                                                                                                                                                                                                                                                                                                                                                               |
+| Type           | Stringa                                                                                                                                                                                                                                                                                                                                                                                                                               |
 | Predefinito        | nessuno                                                                                                                                                                                                                                                                                                                                                                                                                                 |
 | Sistema minimo | Windows 2000                                                                                                                                                                                                                                                                                                                                                                                                                         |
 
@@ -89,9 +89,9 @@ Le proprietà seguenti sono supportate dall'oggetto [**COMAdminCatalogObject**](
 
 | Voce | Valore |
 |----------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Descrizione    | Specifica precisa dell'elemento che presenta un errore, ad esempio un nome di proprietà. Se si verificano più errori o in contesti in cui questo non è applicabile, MinorRef è <Invalid> . |
+| Descrizione    | Specifica precisa dell'elemento che presenta un errore, ad esempio il nome di una proprietà. Se si verificano più errori o in contesti in cui questo non è applicabile, MinorRef non &lt; è &gt; valido. |
 | Access         | ReadOnly                                                                                                                                                                          |
-| Type           | string                                                                                                                                                                            |
+| Type           | Stringa                                                                                                                                                                            |
 | Predefinito        | nessuno                                                                                                                                                                              |
 | Sistema minimo | Windows 2000                                                                                                                                                                      |
 
@@ -105,9 +105,9 @@ Le proprietà seguenti sono supportate dall'oggetto [**COMAdminCatalogObject**](
 
 | Voce | Valore |
 |----------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Descrizione    | Nome dell'oggetto o del file in cui si è verificato un errore. Questa proprietà viene restituita quando il metodo della proprietà [**Key**](/windows/desktop/api/ComAdmin/nf-comadmin-icatalogobject-get_key) o [**Name**](/windows/desktop/api/ComAdmin/nf-comadmin-icatalogobject-get_name) viene chiamato su un oggetto di questa raccolta. |
+| Descrizione    | Nome dell'oggetto o del file che presenta un errore. Questa proprietà viene restituita quando il metodo della proprietà [**Key**](/windows/desktop/api/ComAdmin/nf-comadmin-icatalogobject-get_key) o [**Name**](/windows/desktop/api/ComAdmin/nf-comadmin-icatalogobject-get_name) viene chiamato su un oggetto di questa raccolta. |
 | Access         | ReadOnly                                                                                                                                                                                                                 |
-| Type           | string                                                                                                                                                                                                                   |
+| Type           | Stringa                                                                                                                                                                                                                   |
 | Predefinito        | nessuno                                                                                                                                                                                                                     |
 | Sistema minimo | Windows 2000                                                                                                                                                                                                             |
 

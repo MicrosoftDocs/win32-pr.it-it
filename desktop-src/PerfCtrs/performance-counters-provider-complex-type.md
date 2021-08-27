@@ -9,12 +9,12 @@ topic_type:
 api_name: ''
 api_type: ''
 api_location: ''
-ms.openlocfilehash: 4470754e710faf9f7abe5a94cfb2e08e6e79c1b0415110b96dbac35807556911
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 94654c538cc0637e6c90e0b14d3433b979762b00
+ms.sourcegitcommit: c276a8912787b2cda74dcf54eb96df961bb1188b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119061068"
+ms.lasthandoff: 08/20/2021
+ms.locfileid: "122622717"
 ---
 # <a name="provider-complex-type"></a>Tipo complesso provider
 
@@ -159,7 +159,7 @@ Definisce un provider e i contatori forniti.
 
 | Elemento        | Tipo                                                                   | Descrizione                                                                                 |
 |----------------|------------------------------------------------------------------------|---------------------------------------------------------------------------------------------|
-| **Counterset** | [**man:counterSet**](performance-counters-counterset-complex-type.md) | Identifica l'insieme di contatori che contiene uno o più contatori correlati logicamente.<br/> |
+| **Counterset** | [**man:counterSet**](performance-counters-counterset-complex-type.md) | Identifica il set di contatori che contiene uno o più contatori correlati logicamente.<br/> |
 
 
 
@@ -169,9 +169,9 @@ Definisce un provider e i contatori forniti.
 
 <table>
 <colgroup>
-<col style="width: 33%" />
-<col style="width: 33%" />
-<col style="width: 33%" />
+<col  />
+<col  />
+<col  />
 </colgroup>
 <thead>
 <tr class="header">
@@ -184,22 +184,22 @@ Definisce un provider e i contatori forniti.
 <tr class="odd">
 <td>Applicationidentity</td>
 <td><strong>xs:string</strong></td>
-<td>Nome del file binario che contiene le stringhe di risorse localizzate, un file .exe o .dll (non includere il percorso del file binario).<br/> LLodctr.exe utilità usa il percorso del parametro facoltativo [<em>path</em>] per cercare il file binario. Ad esempio, <strong>lodctr</strong> [<strong>/m:</strong><em>manifest</em> [<em>percorso</em>]]. Se non si include il parametro [<em>path</em>], Lodctr.exe cerca nella cartella che contiene il manifesto.<br/></td>
+<td>Nome del file binario che contiene le stringhe di risorse localizzate, un file .exe o .dll (non includere il percorso del file binario).<br/> LLodctr.exe utilità usa il percorso del parametro facoltativo [<em>percorso</em>] per cercare il file binario. Ad esempio, <strong>lodctr</strong> [<strong>/m:</strong><em>manifesto</em> [<em>percorso</em>]]. Se non si include il parametro [<em>path</em>], Lodctr.exe ricerca nella cartella che contiene il manifesto.<br/></td>
 </tr>
 <tr class="even">
 <td>callback</td>
 
-<td>Questo attributo indica che si desidera ricevere una notifica quando un consumer esegue determinate azioni. <br/> Se si include questo attributo, lo strumento CTRPP usa la firma della funzione <a href="counterinitialize.md"><strong>CounterInitialize</strong></a> alternativa, che consente di passare il nome della funzione che implementa la funzione di callback <a href="/windows/desktop/api/Perflib/nc-perflib-perflibrequest"><strong>ControlCallback.</strong></a><br/> In alternativa alla specifica di questo attributo, è possibile usare l'argomento<a href="ctrpp.md">CTRPP</a> <strong>-NotificationCallback.</strong><br/> <strong>Windows Vista:</strong> L'unico valore valido per questo attributo è &quot; &quot; personalizzato. <a href="ctrpp.md">L'utilità CTRPP</a> genera il modello per una funzione di callback <a href="/windows/desktop/api/Perflib/nc-perflib-perflibrequest"><strong>ControlCallback.</strong></a> Il modello è incluso nel file CTRPP generato da CTRPP. <br/> <br/></td>
+<td>Questo attributo indica che si vuole ricevere una notifica quando un consumer esegue determinate azioni. <br/> Se si include questo attributo, lo strumento CTRPP usa la firma della funzione <a href="counterinitialize.md"><strong>CounterInitialize</strong></a> alternativa, che consente di passare il nome della funzione che implementa la funzione di callback <a href="/windows/desktop/api/Perflib/nc-perflib-perflibrequest"><strong>ControlCallback.</strong></a><br/> In alternativa alla specifica di questo attributo, è possibile usare l'argomento <strong>-NotificationCallback</strong><a href="ctrpp.md">CTRPP.</a><br/> <strong>Windows Vista:</strong> L'unico valore valido per questo attributo è &quot; &quot; personalizzato. <a href="ctrpp.md">L'utilità CTRPP</a> genera il modello per una funzione di callback <a href="/windows/desktop/api/Perflib/nc-perflib-perflibrequest"><strong>ControlCallback.</strong></a> Il modello è incluso nel file con estensione c generato da CTRPP. <br/> <br/></td>
 </tr>
 <tr class="odd">
-<td>guida provider</td>
+<td>providerGuid</td>
 <td><a href="performance-counters-guidtype-simple-type.md"><strong>man:GUIDType</strong></a></td>
-<td>GUID stringa che identifica in modo univoco il provider nel manifesto. Il GUID deve essere univoco all'interno del manifesto.<br/> È necessario specificare un nuovo GUID solo quando viene modificata la versione dell'applicazione (se si supportano installazioni side-by-side).<br/></td>
+<td>GUID di stringa che identifica in modo univoco il provider nel manifesto. Il GUID deve essere univoco all'interno del manifesto.<br/> È necessario specificare un nuovo GUID solo quando cambia la versione dell'applicazione (se si supportano le installazioni side-by-side).<br/></td>
 </tr>
 <tr class="even">
 <td>providerName</td>
 <td><strong>xs:string</strong></td>
-<td>Nome utilizzato per creare il nome della Win32_PerfRawData WMI. Se non si specifica un nome, &quot; counters &quot; viene utilizzato come nome della classe.<br/></td>
+<td>Nome utilizzato per creare il nome della Win32_PerfRawData WMI. Se non si specifica un nome, &quot; counters &quot; viene usato come nome della classe.<br/></td>
 </tr>
 <tr class="odd">
 <td>Providertype</td>
@@ -229,7 +229,7 @@ Definisce un provider e i contatori forniti.
 <tr class="even">
 <td>resourceBase</td>
 <td><a href="performance-counters-uint32type-simple-type.md"><strong>man:UInt32Type</strong></a></td>
-<td><p>Definisce il valore iniziale dell'indice delle risorse <a href="ctrpp.md">utilizzato da CTRPP</a> per generare gli identificatori di risorsa.</p></td>
+<td><p>Definisce il valore di indice della risorsa iniziale utilizzato <a href="ctrpp.md">da CTRPP</a> per generare gli identificatori di risorsa.</p></td>
 </tr>
 <tr class="odd">
 <td>simbolo</td>
@@ -248,8 +248,8 @@ Definisce un provider e i contatori forniti.
 
 | Requisito | Valore |
 |-------------------------------------|------------------------------------------------------|
-| Client minimo supportato<br/> | Windows Solo \[ app desktop Vista\]<br/>       |
-| Server minimo supportato<br/> | Windows Solo app desktop di Server 2008 \[\]<br/> |
+| Client minimo supportato<br/> | Windows Solo \[ app desktop di Vista\]<br/>       |
+| Server minimo supportato<br/> | Windows Solo app desktop server 2008 \[\]<br/> |
 
 
 

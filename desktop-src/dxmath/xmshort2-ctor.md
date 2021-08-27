@@ -11,12 +11,12 @@ api_name: ''
 api_type:
 - NA
 api_location: ''
-ms.openlocfilehash: 08feaa115f814a2e4475122b96197261c42241709609482b4063c1edeb69ff86
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 58d9f664ae0ecd17497972283439d2a0414ce8ad
+ms.sourcegitcommit: 9b5faa61c38b2d0c432b7f2dbee8c127b0e28a7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119117991"
+ms.lasthandoff: 08/19/2021
+ms.locfileid: "122467728"
 ---
 # <a name="xmshort2-constructors"></a>Costruttori XMSHORT2
 
@@ -33,65 +33,15 @@ Costruisce istanze della [**struttura XMSHORT2.**](/windows/desktop/api/DirectXP
 
 
 
-<table>
-<colgroup>
-<col style="width: 50%" />
-<col style="width: 50%" />
-</colgroup>
-<thead>
-<tr class="header">
-<th style="text-align: left;">Costruttore</th>
-<th style="text-align: left;">Descrizione</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td style="text-align: left;"><a href="/windows/desktop/api/directxpackedvector/nf-directxpackedvector-xmshort2-xmshort2(constfloat)"><strong>XMSHORT2 ()</strong></a></td>
-<td style="text-align: left;">Costruttore predefinito per <code>XMSHORT2</code> . <br/> Costruttore predefinito per <a href="/windows/desktop/api/DirectXPackedVector/ns-directxpackedvector-xmshort2"><strong>XMSHORT2.</strong></a> <br/>
-<blockquote>
-[!Note]<br />
-Questo costruttore è disponibile solo in C++.
-</blockquote>
-<br/></td>
-</tr>
-<tr class="even">
-<td style="text-align: left;"><a href="/windows/desktop/api/directxpackedvector/nf-directxpackedvector-xmshort2-xmshort2(float_float)"><strong>XMSHORT2 (float,float)</strong></a></td>
-<td style="text-align: left;">Inizializza una nuova istanza di <code>XMSHORT2</code> da due <code>float</code> argomenti. <br/> Questo costruttore inizializza una nuova istanza di <a href="/windows/desktop/api/DirectXPackedVector/ns-directxpackedvector-xmshort2"><strong>XMSHORT2</strong></a> da due <code>float</code> argomenti. <br/>
-<blockquote>
-[!Note]<br />
-Questo costruttore è disponibile solo in C++.
-</blockquote>
-<br/></td>
-</tr>
-<tr class="odd">
-<td style="text-align: left;"><a href="/windows/desktop/api/directxpackedvector/nf-directxpackedvector-xmshort2-xmshort2(constfloat)"><strong>XMSHORT2 (const float*)</strong></a></td>
-<td style="text-align: left;">Inizializza una nuova istanza di da <code>XMSHORT2</code> un argomento della matrice di due <code>float</code> elementi. <br/> Questo costruttore inizializza una nuova istanza di <a href="/windows/desktop/api/DirectXPackedVector/ns-directxpackedvector-xmshort2"><strong>XMSHORT2</strong></a> da un oggetto da un argomento di matrice di <code>float</code> due elementi. <br/>
-<blockquote>
-[!Note]<br />
-Questo costruttore è disponibile solo in C++.
-</blockquote>
-<br/></td>
-</tr>
-<tr class="even">
-<td style="text-align: left;"><a href="/windows/desktop/api/directxpackedvector/nf-directxpackedvector-xmshort2-xmshort2(constint16_t)"><strong>XMSHORT2 (const int16_t*)</strong></a></td>
-<td style="text-align: left;">Inizializza una nuova istanza di da <code>XMSHORT2</code> un argomento della matrice di due <code>int16_t</code> elementi. <br/> Questo costruttore inizializza una nuova istanza di <a href="/windows/desktop/api/DirectXPackedVector/ns-directxpackedvector-xmshort2"><strong>XMSHORT2</strong></a> da un oggetto da un argomento di matrice di <code>int16_t</code> due elementi. <br/>
-<blockquote>
-[!Note]<br />
-Questo costruttore è disponibile solo in C++.
-</blockquote>
-<br/></td>
-</tr>
-<tr class="odd">
-<td style="text-align: left;"><a href="/windows/desktop/api/directxpackedvector/nf-directxpackedvector-xmshort2-xmshort2(int16_t_int16_t)"><strong>XMSHORT2 (int16_t,int16_t)</strong></a></td>
-<td style="text-align: left;">Inizializza una nuova istanza di <code>XMSHORT2</code> da due <code>int16_t</code> argomenti. <br/> Questo costruttore inizializza una nuova istanza di <a href="/windows/desktop/api/DirectXPackedVector/ns-directxpackedvector-xmshort2"><strong>XMSHORT2</strong></a> da due <code>int16_t</code> argomenti. <br/>
-<blockquote>
-[!Note]<br />
-Questo costruttore è disponibile solo in C++.
-</blockquote>
-<br/></td>
-</tr>
-</tbody>
-</table>
+
+| Costruttore | Descrizione | 
+|-------------|-------------|
+| <a href="/windows/desktop/api/directxpackedvector/nf-directxpackedvector-xmshort2-xmshort2(constfloat)"><strong>XMSHORT2 ()</strong></a> | Costruttore predefinito per <code>XMSHORT2</code> . <br /> Costruttore predefinito per <a href="/windows/desktop/api/DirectXPackedVector/ns-directxpackedvector-xmshort2"><strong>XMSHORT2.</strong></a> <br /><blockquote>[!Note]<br />Questo costruttore è disponibile solo in C++.</blockquote><br /> | 
+| <a href="/windows/desktop/api/directxpackedvector/nf-directxpackedvector-xmshort2-xmshort2(float_float)"><strong>XMSHORT2 (float,float)</strong></a> | Inizializza una nuova istanza di <code>XMSHORT2</code> da due <code>float</code> argomenti. <br /> Questo costruttore inizializza una nuova istanza di <a href="/windows/desktop/api/DirectXPackedVector/ns-directxpackedvector-xmshort2"><strong>XMSHORT2</strong></a> da due <code>float</code> argomenti. <br /><blockquote>[!Note]<br />Questo costruttore è disponibile solo in C++.</blockquote><br /> | 
+| <a href="/windows/desktop/api/directxpackedvector/nf-directxpackedvector-xmshort2-xmshort2(constfloat)"><strong>XMSHORT2 (const float*)</strong></a> | Inizializza una nuova istanza di da <code>XMSHORT2</code> un argomento della matrice di due <code>float</code> elementi. <br /> Questo costruttore inizializza una nuova istanza di <a href="/windows/desktop/api/DirectXPackedVector/ns-directxpackedvector-xmshort2"><strong>XMSHORT2</strong></a> da un oggetto da un argomento di matrice di <code>float</code> due elementi. <br /><blockquote>[!Note]<br />Questo costruttore è disponibile solo in C++.</blockquote><br /> | 
+| <a href="/windows/desktop/api/directxpackedvector/nf-directxpackedvector-xmshort2-xmshort2(constint16_t)"><strong>XMSHORT2 (const int16_t*)</strong></a> | Inizializza una nuova istanza di da <code>XMSHORT2</code> un argomento della matrice di due <code>int16_t</code> elementi. <br /> Questo costruttore inizializza una nuova istanza di <a href="/windows/desktop/api/DirectXPackedVector/ns-directxpackedvector-xmshort2"><strong>XMSHORT2</strong></a> da un oggetto da un argomento di matrice di <code>int16_t</code> due elementi. <br /><blockquote>[!Note]<br />Questo costruttore è disponibile solo in C++.</blockquote><br /> | 
+| <a href="/windows/desktop/api/directxpackedvector/nf-directxpackedvector-xmshort2-xmshort2(int16_t_int16_t)"><strong>XMSHORT2 (int16_t,int16_t)</strong></a> | Inizializza una nuova istanza di <code>XMSHORT2</code> da due <code>int16_t</code> argomenti. <br /> Questo costruttore inizializza una nuova istanza di <a href="/windows/desktop/api/DirectXPackedVector/ns-directxpackedvector-xmshort2"><strong>XMSHORT2</strong></a> da due <code>int16_t</code> argomenti. <br /><blockquote>[!Note]<br />Questo costruttore è disponibile solo in C++.</blockquote><br /> | 
+
 
 
 

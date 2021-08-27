@@ -1,21 +1,21 @@
 ---
-description: Questo argomento è il passaggio 1 dell'esercitazione come riprodurre file multimediali con Media Foundation.
+description: Questo argomento è il passaggio 1 dell'esercitazione Come riprodurre file multimediali con Media Foundation.
 ms.assetid: 10767bbf-3b47-4df1-be73-18678397c0ab
-title: 'Passaggio 1: dichiarare la classe CPlayer'
+title: 'Passaggio 1: Dichiarare la classe CPlayer'
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 1593842ecece68fcd3c4cca35a7e2e28eac503c6
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: c61f03a9054e96769414320811d32a549027defb80ff929aba2c27ad4aa5b5f6
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "106308993"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120112911"
 ---
-# <a name="step-1-declare-the-cplayer-class"></a>Passaggio 1: dichiarare la classe CPlayer
+# <a name="step-1-declare-the-cplayer-class"></a>Passaggio 1: Dichiarare la classe CPlayer
 
-Questo argomento è il passaggio 1 dell'esercitazione [come riprodurre file multimediali con Media Foundation](how-to-play-unprotected-media-files.md). Il codice completo è illustrato nell'esempio relativo alla [riproduzione della sessione multimediale](media-session-playback-example.md).
+Questo argomento è il passaggio 1 dell'esercitazione [Come riprodurre file multimediali con Media Foundation](how-to-play-unprotected-media-files.md). Il codice completo è illustrato nell'argomento [Esempio di riproduzione di sessioni multimediali](media-session-playback-example.md).
 
-In questa esercitazione la funzionalità di riproduzione è incapsulata nella `CPlayer` classe. La classe `CPlayer` viene dichiarata nel modo seguente:
+In questa esercitazione la funzionalità di riproduzione viene incapsulata nella `CPlayer` classe . La classe `CPlayer` viene dichiarata nel modo seguente:
 
 
 ```C++
@@ -107,20 +107,20 @@ protected:
 
 
 
-Di seguito sono riportati alcuni aspetti da considerare `CPlayer` :
+Di seguito sono riportati alcuni aspetti da tenere presenti `CPlayer` in :
 
--   L' **evento costante \_ WM \_ app \_ Player** definisce un messaggio di finestra privata. Questo messaggio viene utilizzato per notificare all'applicazione gli eventi della sessione multimediale. Vedere [passaggio 5: gestire gli eventi della sessione multimediale](step-5--handle-media-session-events.md).
--   L' `PlayerState` enumerazione definisce gli stati possibili dell' `CPlayer` oggetto.
--   La `CPlayer` classe implementa l'interfaccia [**IMFAsyncCallback**](/windows/desktop/api/mfobjects/nn-mfobjects-imfasynccallback) , che viene usata per ottenere le notifiche degli eventi dalla sessione multimediale.
--   Il `CPlayer` costruttore è privato. L'applicazione chiama il `CreateInstance` metodo statico per creare un'istanza della `CPlayer` classe.
--   `CPlayer`Anche il distruttore è privato. La `CPlayer` classe implementa **IUnknown**, quindi la durata dell'oggetto viene controllata tramite il conteggio dei riferimenti (*m \_ nRefCount*). Per eliminare definitivamente l'oggetto, l'applicazione chiama **IUnknown:: Release**, non **Delete**.
--   L' `CPlayer` oggetto gestisce sia la sessione multimediale che l'origine del supporto.
+-   La costante **WM \_ APP PLAYER \_ \_ EVENT** definisce un messaggio di finestra privata. Questo messaggio viene usato per notificare all'applicazione gli eventi della sessione multimediale. Vedere [Passaggio 5: Gestire gli eventi della sessione multimediale.](step-5--handle-media-session-events.md)
+-   `PlayerState`L'enumerazione definisce i possibili stati dell'oggetto `CPlayer` .
+-   La `CPlayer` classe implementa [**l'interfaccia IMFAsyncCallback,**](/windows/desktop/api/mfobjects/nn-mfobjects-imfasynccallback) che viene usata per ottenere le notifiche degli eventi dalla sessione multimediale.
+-   Il `CPlayer` costruttore è privato. L'applicazione chiama il `CreateInstance` metodo statico per creare un'istanza della classe `CPlayer` .
+-   Anche `CPlayer` il distruttore è privato. La `CPlayer` classe implementa **IUnknown,** quindi la durata dell'oggetto viene controllata tramite il relativo conteggio dei riferimenti (*m \_ nRefCount*). Per eliminare definitivamente l'oggetto, l'applicazione chiama **IUnknown::Release** e non **elimina**.
+-   `CPlayer`L'oggetto gestisce sia la sessione multimediale che l'origine multimediale.
 
 ## <a name="implement-iunknown"></a>Implementare IUnknown
 
-La `CPlayer` classe implementa [**IMFAsyncCallback**](/windows/desktop/api/mfobjects/nn-mfobjects-imfasynccallback), che eredita **IUnknown**.
+La `CPlayer` classe implementa [**IMFAsyncCallback,**](/windows/desktop/api/mfobjects/nn-mfobjects-imfasynccallback)che eredita **IUnknown.**
 
-Il codice illustrato di seguito è un'implementazione piuttosto standard di **IUnknown**. Se si preferisce, è possibile utilizzare il Active Template Library (ATL) per implementare questi metodi. Tuttavia, non `CPlayer` supporta [**CoCreateInstance**](/windows/win32/api/combaseapi/nf-combaseapi-cocreateinstance) o le funzionalità com avanzate, quindi non esiste alcun motivo per cui utilizzare ATL.
+Il codice illustrato di seguito è un'implementazione piuttosto standard **di IUnknown.** Se si preferisce, è possibile usare Active Template Library (ATL) per implementare questi metodi. Tuttavia, non supporta CoCreateInstance o alcuna funzionalità COM avanzata, quindi non esiste un motivo `CPlayer` eccessivo per usare ATL in questo [](/windows/win32/api/combaseapi/nf-combaseapi-cocreateinstance) caso.
 
 
 ```C++
@@ -152,7 +152,7 @@ ULONG CPlayer::Release()
 
 
 
-[Passaggio 2: creare l'oggetto CPlayer](step-2--create-the-cplayer-object.md)
+Passaggio [2: Creare l'oggetto CPlayer](step-2--create-the-cplayer-object.md)
 
 ## <a name="related-topics"></a>Argomenti correlati
 

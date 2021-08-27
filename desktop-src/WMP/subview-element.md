@@ -1,47 +1,47 @@
 ---
-title: Elemento subview
-description: Elemento subview
+title: Elemento SUBVIEW
+description: Elemento SUBVIEW
 ms.assetid: 6201df82-8688-4ada-a660-b66e93723f63
 keywords:
-- Windows Media Player Skin, elemento subview
-- Skin, elemento subview
-- Elemento subview
-- riferimento per Skin, elemento subview
-- elementi, visualizzazione subview
+- Windows Media Player, elemento SUBVIEW
+- skins,subVIEW - elemento
+- SubVIEW - elemento
+- riferimento per le interfaccia, elemento SUBVIEW
+- elementi, SUBVIEW
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 0f6ed8088d2e79677e542785b4bab1c3c90dcdcf
-ms.sourcegitcommit: 2d531328b6ed82d4ad971a45a5131b430c5866f7
+ms.openlocfilehash: aef4f7860d1db04991a35ffeff2903e7a16a5d7bd84929313c296006f6f1c092
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "104331860"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120122911"
 ---
-# <a name="subview-element"></a>Elemento subview
+# <a name="subview-element"></a>Elemento SUBVIEW
 
-L'elemento **subview** fornisce un modo per modificare una parte di un'interfaccia, ad esempio per fornire un pannello di controllo che può essere nascosto quando non è in uso. Gli elementi della **visualizzazione subview** sono sempre elementi figlio degli elementi di **visualizzazione** padre e possono contenere altro elemento Skin ad eccezione di **visualizzazione**, **tema** e altri elementi di **Sottovisualizzazione** .
+**L'elemento SUBVIEW** consente ad esempio di modificare una parte di un'interfaccia per fornire un pannello di controllo che può essere nascosto quando non viene usato. **Gli elementi SUBVIEW** sono sempre elementi figlio degli elementi **VIEW** padre e possono contenere altri elementi dell'interfaccia, ad eccezione di **VIEW,** **THEME** e altri **elementi SUBVIEW.**
 
-L'elemento **subview** supporta gli attributi seguenti, definiti nell'elemento **View** .
+**L'elemento SUBVIEW** supporta gli attributi seguenti, definiti nell'elemento **VIEW.**
 
 
 
 | Attributo                                                       | Descrizione                                                                                                 |
 |-----------------------------------------------------------------|-------------------------------------------------------------------------------------------------------------|
-| [backgroundColor](view-backgroundcolor.md)                     | Specifica o Recupera il colore di sfondo del controllo di **Sottovisualizzazione** . Il valore predefinito è "None".        |
-| [backgroundImage](view-backgroundimage.md)                     | Specifica o recupera l'immagine di sfondo del controllo **Sottovisualizzazione** .                                     |
-| [backgroundImageHueShift](view-backgroundimagehueshift.md)     | Specifica o recupera la quantità in base alla quale viene spostata la tonalità dell'immagine di sfondo.                      |
-| [backgroundImageSaturation](view-backgroundimagesaturation.md) | Specifica o Recupera il valore di saturazione dell'immagine di sfondo.                                        |
-| [backgroundTiled](view-backgroundtiled.md)                     | Specifica o recupera un valore che indica se l'immagine di sfondo del controllo **Sottovisualizzazione** è affiancata. |
-| [resizeBackgroundImage](view-resizebackgroundimage.md)         | Specifica o recupera un valore che indica se è possibile ridimensionare l'immagine di sfondo.                      |
-| [transparencyColor](view-transparencycolor.md)                 | Specifica o Recupera il colore di trasparenza dell'immagine di sfondo.                                      |
+| [Backgroundcolor](view-backgroundcolor.md)                     | Specifica o recupera il colore di sfondo del **controllo SUBVIEW.** Il valore predefinito è "none".        |
+| [backgroundImage](view-backgroundimage.md)                     | Specifica o recupera l'immagine di sfondo del **controllo SUBVIEW.**                                     |
+| [backgroundImageHueShift](view-backgroundimagehueshift.md)     | Specifica o recupera la quantità di spostamento della tonalità dell'immagine di sfondo.                      |
+| [backgroundImageSaturation](view-backgroundimagesaturation.md) | Specifica o recupera il valore di saturazione dell'immagine di sfondo.                                        |
+| [backgroundTiled](view-backgroundtiled.md)                     | Specifica o recupera un valore che indica se l'immagine di sfondo del **controllo SUBVIEW** è affiancata. |
+| [resizeBackgroundImage](view-resizebackgroundimage.md)         | Specifica o recupera un valore che indica se l'immagine di sfondo può essere ridimensionata.                      |
+| [trasparenzaColor](view-transparencycolor.md)                 | Specifica o recupera il colore di trasparenza dell'immagine di sfondo.                                      |
 
 
 
- 
+ 
 
-L'elemento **subview** supporta gli attributi di ambiente, eccetto se specificato. Per altre informazioni, vedere [attributi di ambiente](ambient-attributes.md).
+**L'elemento SUBVIEW** supporta gli attributi di ambiente, tranne dove specificato. Per altre informazioni, vedere [Attributi di ambiente.](ambient-attributes.md)
 
-L'elemento **subview** può implementare i gestori eventi di ambiente seguenti: [onendmove](onendmove.md) e [OnResize](onresize.md).
+**L'elemento SUBVIEW** può implementare i gestori eventi di ambiente seguenti: [onendmove](onendmove.md) [e onresize.](onresize.md)
 
 ## <a name="related-topics"></a>Argomenti correlati
 
@@ -53,9 +53,9 @@ L'elemento **subview** può implementare i gestori eventi di ambiente seguenti: 
 [**Elemento VIEW**](view-element.md)
 </dt> </dl>
 
- 
+ 
 
- 
+ 
 
 
 

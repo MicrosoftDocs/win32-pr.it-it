@@ -12,12 +12,12 @@ api_name:
 api_type:
 - COM
 api_location: ''
-ms.openlocfilehash: be18f77c4946a5d8a79adc09e97bc9ab35782fdb837f15b82794cbf5f624d59d
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 8c07162fc20788545b38b8fae4be245b9a1ebbff
+ms.sourcegitcommit: 61a4c522182aa1cacbf5669683d9570a3bf043b2
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "118546163"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "122886197"
 ---
 # <a name="subscriptionsforcomponent-collection"></a>Raccolta SubscriptionsForComponent
 
@@ -72,7 +72,7 @@ Le proprietà seguenti sono supportate [**dall'oggetto COMAdminCatalogObject all
 |----------------|-------------------------------------|
 | Descrizione    | Descrizione per la sottoscrizione. |
 | Access         | ReadWrite                           |
-| Type           | string                              |
+| Type           | Stringa                              |
 | Predefinito        | ""                                  |
 | Sistema minimo | Windows 2000                        |
 
@@ -104,7 +104,7 @@ Le proprietà seguenti sono supportate [**dall'oggetto COMAdminCatalogObject all
 |----------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | Descrizione    | Quando si esegue la sottoscrizione a una classe di evento, usata per rappresentare il GUID dell'ID di partizione contenente la classe di evento. Quando si esegue la sottoscrizione alle classi di evento, il sottoscrittore ha la possibilità di sottoscrivere una classe di evento nella stessa partizione o in una partizione diversa. |
 | Access         | ReadWrite                                                                                                                                                                                                                                          |
-| Type           | string                                                                                                                                                                                                                                             |
+| Type           | Stringa                                                                                                                                                                                                                                             |
 | Predefinito        | NULL                                                                                                                                                                                                                                               |
 | Sistema minimo | Windows Server 2003                                                                                                                                                                                                                                |
 
@@ -120,7 +120,7 @@ Le proprietà seguenti sono supportate [**dall'oggetto COMAdminCatalogObject all
 |----------------|----------------------------------------------------------------------------------------------|
 | Descrizione    | CLSID per la classe di evento. È possibile indicare un EventCLSID o un PublisherID, ma non entrambi. |
 | Access         | WriteOnce                                                                                    |
-| Type           | string                                                                                       |
+| Type           | Stringa                                                                                       |
 | Predefinito        | N/A                                                                                          |
 | Sistema minimo | Windows 2000                                                                                 |
 
@@ -136,7 +136,7 @@ Le proprietà seguenti sono supportate [**dall'oggetto COMAdminCatalogObject all
 |----------------|------------------------------------------------------------------------------------------------------------------|
 | Descrizione    | Stringa che indica i criteri di filtro. Può essere un CLSID per una [**classe PublisherFilter.**](/windows/desktop/api/EventSys/nn-eventsys-ipublisherfilter) |
 | Access         | ReadWrite                                                                                                        |
-| Type           | string                                                                                                           |
+| Type           | Stringa                                                                                                           |
 | Predefinito        | N/A                                                                                                              |
 | Sistema minimo | Windows 2000                                                                                                     |
 
@@ -152,8 +152,8 @@ Le proprietà seguenti sono supportate [**dall'oggetto COMAdminCatalogObject all
 |----------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | Descrizione    | Identificatore della sottoscrizione. Questa proprietà viene restituita quando [**il metodo**](/windows/desktop/api/ComAdmin/nf-comadmin-icatalogobject-get_key) della proprietà Key viene chiamato su un oggetto di questa raccolta. |
 | Access         | WriteOnce                                                                                                                                                        |
-| Type           | string                                                                                                                                                           |
-| Predefinito        | <Generated>                                                                                                                                                |
+| Type           | Stringa                                                                                                                                                           |
+| Predefinito        | &lt;Generato&gt;                                                                                                                                                |
 | Sistema minimo | Windows 2000                                                                                                                                                     |
 
 
@@ -168,7 +168,7 @@ Le proprietà seguenti sono supportate [**dall'oggetto COMAdminCatalogObject all
 |----------------|------------------------------------------|
 | Descrizione    | IID per l'interfaccia sottoscritta. |
 | Access         | ReadWrite                                |
-| Type           | string                                   |
+| Type           | Stringa                                   |
 | Predefinito        | N/A                                      |
 | Sistema minimo | Windows 2000                             |
 
@@ -184,7 +184,7 @@ Le proprietà seguenti sono supportate [**dall'oggetto COMAdminCatalogObject all
 |----------------|---------------------------------------------------------------------------------|
 | Descrizione    | Nome del computer remoto per le sottoscrizioni alle classi di evento in un computer remoto. |
 | Access         | ReadWrite                                                                       |
-| Type           | string                                                                          |
+| Type           | Stringa                                                                          |
 | Predefinito        | ""                                                                              |
 | Sistema minimo | Windows 2000                                                                    |
 
@@ -200,7 +200,7 @@ Le proprietà seguenti sono supportate [**dall'oggetto COMAdminCatalogObject all
 |----------------|----------------------------------------------|
 | Descrizione    | Metodo sull'interfaccia da sottoscrivere. |
 | Access         | ReadWrite                                    |
-| Type           | string                                       |
+| Type           | Stringa                                       |
 | Predefinito        | N/A                                          |
 | Sistema minimo | Windows 2000                                 |
 
@@ -208,7 +208,7 @@ Le proprietà seguenti sono supportate [**dall'oggetto COMAdminCatalogObject all
 
  
 
-### <a name="name"></a>Nome
+### <a name="name"></a>NOME
 
 
 
@@ -216,7 +216,7 @@ Le proprietà seguenti sono supportate [**dall'oggetto COMAdminCatalogObject all
 |----------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | Descrizione    | Nome della sottoscrizione. Gli spazi aggiuntivi all'inizio e alla fine della stringa vengono spogliati. Questa proprietà viene restituita quando il metodo della proprietà [**Name**](/windows/desktop/api/ComAdmin/nf-comadmin-icatalogobject-get_name) viene chiamato su un oggetto di questa raccolta. |
 | Access         | ReadWrite                                                                                                                                                                                                                          |
-| Type           | string                                                                                                                                                                                                                             |
+| Type           | Stringa                                                                                                                                                                                                                             |
 | Predefinito        | "Nuova sottoscrizione"                                                                                                                                                                                                                 |
 | Sistema minimo | Windows 2000                                                                                                                                                                                                                       |
 
@@ -248,7 +248,7 @@ Le proprietà seguenti sono supportate [**dall'oggetto COMAdminCatalogObject all
 |----------------|-----------------------------------------------------------------------------------------|
 | Descrizione    | ID del server di pubblicazione. È possibile indicare un EventCLSID o un PublisherID, ma non entrambi. |
 | Access         | WriteOnce                                                                               |
-| Type           | string                                                                                  |
+| Type           | Stringa                                                                                  |
 | Predefinito        | ""                                                                                      |
 | Sistema minimo | Windows 2000                                                                            |
 
@@ -278,9 +278,9 @@ Le proprietà seguenti sono supportate [**dall'oggetto COMAdminCatalogObject all
 
 | Voce | Valore |
 |----------------|-----------------------------------------------------------------------------------------------------------------|
-| Descrizione    | Moniker per un sottoscrittore contrassegnato come In coda. Un valore predefinito viene generato quando Queued è inizialmente impostato su True. |
+| Descrizione    | Moniker per un sottoscrittore contrassegnato come In coda. Quando Queued è inizialmente impostato su True, viene generato un valore predefinito. |
 | Access         | ReadWrite                                                                                                       |
-| Type           | string                                                                                                          |
+| Type           | Stringa                                                                                                          |
 | Predefinito        | N/A                                                                                                             |
 | Sistema minimo | Windows 2000                                                                                                    |
 
@@ -294,10 +294,10 @@ Le proprietà seguenti sono supportate [**dall'oggetto COMAdminCatalogObject all
 
 | Voce | Valore |
 |----------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Descrizione    | Quando si esegue la sottoscrizione a una classe di evento nella stessa partizione, usata per rappresentare il GUID dell'ID di partizione del sottoscrittore. Quando si esegue la sottoscrizione alle classi di evento, il sottoscrittore ha la possibilità di sottoscrivere una classe di evento nella stessa partizione o in una partizione diversa. |
+| Descrizione    | Quando si sottoscrive una classe di evento nella stessa partizione, utilizzata per rappresentare il GUID dell'ID di partizione del Sottoscrittore. Quando si sottoscrive una classe di evento, il sottoscrittore ha la possibilità di sottoscrivere una classe di evento nella stessa partizione o in una partizione diversa. |
 | Access         | WriteOnce                                                                                                                                                                                                                                                       |
-| Type           | string                                                                                                                                                                                                                                                          |
-| Predefinito        | <Generated>                                                                                                                                                                                                                                               |
+| Type           | Stringa                                                                                                                                                                                                                                                          |
+| Predefinito        | &lt;Generato&gt;                                                                                                                                                                                                                                               |
 | Sistema minimo | Windows Server 2003                                                                                                                                                                                                                                             |
 
 
@@ -312,7 +312,7 @@ Le proprietà seguenti sono supportate [**dall'oggetto COMAdminCatalogObject all
 |----------------|--------------------------------------------------------------------------|
 | Descrizione    | Nome dell'utente a cui si applica la sottoscrizione, quando PerUser è True. |
 | Access         | ReadWrite                                                                |
-| Type           | string                                                                   |
+| Type           | Stringa                                                                   |
 | Predefinito        | N/A                                                                      |
 | Sistema minimo | Windows 2000                                                             |
 

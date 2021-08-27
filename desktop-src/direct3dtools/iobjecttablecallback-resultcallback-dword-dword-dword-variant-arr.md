@@ -4,7 +4,7 @@ MS-HAID: vspixengine.IObjectTableCallback\_ResultCallback\_DWORD\_DWORD\_DWORD\_
 MSHAttr:
 - PreferredSiteName:MSDN
 - PreferredLib:/library/windows/desktop
-title: 'Metodo IObjectTableCallback:: ResultCallback'
+title: Metodo IObjectTableCallback::ResultCallback
 ms.topic: reference
 ms.date: 05/31/2018
 ms.assetid: AAD02864-AE08-406B-A0E9-2228DC9A73E7
@@ -17,14 +17,14 @@ api_location:
 topic_type:
 - APIRef
 - kbSyntax
-ms.openlocfilehash: 66247dddbf0926b420faa998461393397a4717b7
-ms.sourcegitcommit: a47bd86f517de76374e4fff33cfeb613eb259a7e
+ms.openlocfilehash: e82381211f580412414c646af58360a55f8309bd
+ms.sourcegitcommit: c276a8912787b2cda74dcf54eb96df961bb1188b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/06/2021
-ms.locfileid: "103747394"
+ms.lasthandoff: 08/20/2021
+ms.locfileid: "122627947"
 ---
-# <a name="span-idvspixengineiobjecttablecallback_resultcallback_dword_dword_dword_variant_arrspaniobjecttablecallbackresultcallback-method"></a><span id="vspixengine.iobjecttablecallback_resultcallback_dword_dword_dword_variant_arr"></span>Metodo IObjectTableCallback:: ResultCallback
+# <a name="span-idvspixengineiobjecttablecallback_resultcallback_dword_dword_dword_variant_arrspaniobjecttablecallbackresultcallback-method"></a><span id="vspixengine.iobjecttablecallback_resultcallback_dword_dword_dword_variant_arr"></span>Metodo IObjectTableCallback::ResultCallback
 
 Funzione di callback utilizzata per notificare all'host le informazioni sulla tabella degli oggetti.
 
@@ -42,25 +42,25 @@ HRESULT ResultCallback(
 
 ## <a name="parameters"></a>Parametri
 
-*numElements*   
+*Elementi numElements*   
 Numero totale di campi in tutte le colonne di tutti gli oggetti.
 
 *numRows*   
 Numero di oggetti trasferiti.
 
-*numColumns*   
-Numero di colonne (campi) di informazioni da trasferire per ogni oggetto.
+*Numcolumns*   
+Numero di colonne (campi) di informazioni trasferite per ogni oggetto.
 
-*\_pRowData count0*   
-Informazioni sugli oggetti; un elemento per ogni campo di ciascun oggetto.
+*count0 \_ pRowData*   
+Informazioni sugli oggetti; un elemento per ogni campo di ogni oggetto.
 
 ## <a name="return-value"></a>Valore restituito
 
-Se questo metodo ha esito positivo, restituisce **S \_ OK**. In caso contrario, restituisce un codice di errore **HRESULT** .
+Se questo metodo ha esito positivo, restituisce **S \_ OK**. In caso contrario, restituisce un **codice di errore HRESULT.**
 
 ## <a name="requirements"></a>Requisiti
 
-<table><colgroup><col style="width: 50%" /><col style="width: 50%" /></colgroup><tbody><tr class="odd"><td><p>Intestazione</p></td><td>Vspixengine. h</td></tr></tbody></table>
+<table><colgroup><col  /><col  /></colgroup><tbody><tr class="odd"><td><p>Intestazione</p></td><td>Vspixengine.h</td></tr></tbody></table>
 
 ## <a name="span-idsee_alsospansee-also"></a><span id="see_also"></span>Vedere anche
 

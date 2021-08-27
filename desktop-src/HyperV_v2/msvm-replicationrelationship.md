@@ -21,12 +21,12 @@ api_type:
 - DllExport
 api_location:
 - vmms.exe
-ms.openlocfilehash: c8ff905475863df11c6fb6529f030f73a4f1b785792be4c5fe8c7ce1142096c3
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 763e14d0ebd0aab33aef252b883009567df727cd
+ms.sourcegitcommit: 61a4c522182aa1cacbf5669683d9570a3bf043b2
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119068481"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "122887146"
 ---
 # <a name="msvm_replicationrelationship-class"></a>Classe Msvm \_ ReplicationRelationship
 
@@ -115,14 +115,14 @@ Tipo di dati: **stringa**
 Tipo di accesso: sola lettura
 </dt> <dt>
 
-Qualificatori: [**Key**](/windows/desktop/WmiSdk/key-qualifier), [**Override**](/windows/desktop/WmiSdk/standard-qualifiers) ("InstanceID")
+Qualificatori: [**Key,**](/windows/desktop/WmiSdk/key-qualifier) [**Override**](/windows/desktop/WmiSdk/standard-qualifiers) ("InstanceID")
 </dt> </dl>
 
 Identifica la relazione di replica. Questa proprietà viene ereditata da [**CIM \_ ManagedElement.**](/previous-versions/windows/desktop/iscsitarg/cim-managedelement)
 
 Questa proprietà ha il formato seguente:
 
-**Microsoft: <vmid> \\ HVR \\<0/1>**
+**Microsoft: &lt; vmid &gt; \\ HVR \\<0/1>**
 
 0 indica la replica primaria e 1 indica [la replica estesa.](#extended-replication)
 
@@ -137,7 +137,7 @@ Tipo di dati: **datetime**
 Tipo di accesso: sola lettura
 </dt> </dl>
 
-Data e ora in cui l'ultima replica coerente dell'applicazione viene ricevuta al ripristino per la relazione di replica.
+Data e ora in cui l'ultima replica coerente dell'applicazione viene ricevuta al momento del ripristino per la relazione di replica.
 
 </dd> <dt>
 
@@ -475,7 +475,7 @@ Stato della replica per la relazione di replica.
 
 ### <a name="extended-replication"></a>Replica estesa
 
-La funzionalità di replica Hyper-V in Windows 8 consente alle macchine virtuali eseguite in un server Hyper-V nel sito primario di essere replicate in modo efficiente in un altro server Hyper-V nel sito secondario.
+La funzionalità di replica Hyper-V in Windows 8 consente alle macchine virtuali in esecuzione in un server Hyper-V nel sito primario di essere replicate in modo efficiente in un altro server Hyper-V nel sito secondario.
 
 La funzionalità di replica Hyper-V in Windows 8.1 consente a un utente di estendere la relazione di replica dal sito secondario in poi a un terzo sito. Il terzo sito può essere un host Hyper-V di cui è stato eseguito il pre-provisioning come server di ripristino o provider di replica esterno.
 

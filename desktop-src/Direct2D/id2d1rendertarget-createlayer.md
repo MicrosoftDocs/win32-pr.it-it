@@ -1,9 +1,9 @@
 ---
-title: Metodi CreateLayer di ID2D1RenderTarget (D2d1. h)
-description: Crea una risorsa livello che può essere utilizzata con questa destinazione di rendering e le relative destinazioni di rendering compatibili.
+title: Metodi ID2D1RenderTarget CreateLayer (D2d1.h)
+description: Crea una risorsa di livello che può essere usata con questa destinazione di rendering e le destinazioni di rendering compatibili.
 ms.assetid: 074e9ffb-c5f2-4e7b-94c7-d457bf07c0b7
 keywords:
-- Metodo CreateLayer Direct2D
+- Metodi CreateLayer Direct2D
 topic_type:
 - apiref
 api_location:
@@ -12,16 +12,16 @@ api_type:
 - DllExport
 ms.date: 07/02/2019
 ms.topic: reference
-ms.openlocfilehash: 6e7fe86f041a818db77c28ed9461d8c8fb48ad64
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: a351c9e1b4fc36c816e87aeaae79a591bb43768a4e098bf315990fc1e1794fe4
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "106326084"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120131491"
 ---
-# <a name="id2d1rendertargetcreatelayer-methods"></a>Metodi ID2D1RenderTarget:: CreateLayer
+# <a name="id2d1rendertargetcreatelayer-methods"></a>Metodi ID2D1RenderTarget::CreateLayer
 
-Crea una risorsa livello che può essere utilizzata con questa destinazione di rendering e le relative destinazioni di rendering compatibili.
+Crea una risorsa di livello che può essere usata con questa destinazione di rendering e le destinazioni di rendering compatibili.
 
 ### <a name="overload-list"></a>Elenco di overload
 
@@ -29,19 +29,19 @@ Crea una risorsa livello che può essere utilizzata con questa destinazione di r
 
 | Metodo                                                                                                                 | Descrizione                                                                                                                                                    |
 |:-----------------------------------------------------------------------------------------------------------------------|:---------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| [**CreateLayer (ID2D1Layer \* \* )**](/windows/win32/api/d2d1/nf-d2d1-id2d1rendertarget-createlayer(id2d1layer))                                | Crea una risorsa livello che può essere utilizzata con questa destinazione di rendering e le relative destinazioni di rendering compatibili. <br/>                                               |
-| [**CreateLayer (D2D1 \_ size \_ F, ID2D1Layer \* \* )**](/windows/win32/api/d2d1/nf-d2d1-id2d1rendertarget-createlayer(d2d1_size_f_id2d1layer))       | Crea una risorsa livello che può essere utilizzata con questa destinazione di rendering e le relative destinazioni di rendering compatibili. Il nuovo livello ha le dimensioni iniziali specificate. <br/> |
-| [**CreateLayer (D2D1 \_ size \_ F \* , ID2D1Layer \* \* )**](/windows/win32/api/d2d1/nf-d2d1-id2d1rendertarget-createlayer(d2d1_size_f_id2d1layer)) | Crea una risorsa livello che può essere utilizzata con questa destinazione di rendering e le relative destinazioni di rendering compatibili. Il nuovo livello ha le dimensioni iniziali specificate. <br/> |
+| [**CreateLayer(ID2D1Layer \* \* )**](/windows/win32/api/d2d1/nf-d2d1-id2d1rendertarget-createlayer(id2d1layer))                                | Crea una risorsa di livello che può essere usata con questa destinazione di rendering e le destinazioni di rendering compatibili. <br/>                                               |
+| [**CreateLayer(D2D1 \_ SIZE \_ F,ID2D1Layer \* \* )**](/windows/win32/api/d2d1/nf-d2d1-id2d1rendertarget-createlayer(d2d1_size_f_id2d1layer))       | Crea una risorsa di livello che può essere usata con questa destinazione di rendering e le destinazioni di rendering compatibili. Il nuovo livello ha le dimensioni iniziali specificate. <br/> |
+| [**CreateLayer(D2D1 \_ SIZE \_ F \* ,ID2D1Layer \* \* )**](/windows/win32/api/d2d1/nf-d2d1-id2d1rendertarget-createlayer(d2d1_size_f_id2d1layer)) | Crea una risorsa di livello che può essere usata con questa destinazione di rendering e le destinazioni di rendering compatibili. Il nuovo livello ha le dimensioni iniziali specificate. <br/> |
 
 
 
 ## <a name="remarks"></a>Commenti
 
-Il livello viene automaticamente ridimensionato, in base alle esigenze.
+Il livello si ridimensiona automaticamente, in base alle esigenze.
 
 ## <a name="examples"></a>Esempio
 
-Nell'esempio seguente viene usato un livello per ritagliare una bitmap a una maschera geometrica. Per l'esempio completo, vedere [come ritagliare una maschera geometrica](how-to-clip-with-layers.md).
+Nell'esempio seguente viene utilizzato un livello per ritagliare una bitmap in una maschera geometrica. Per l'esempio completo, [vedere How to Clip to a Geometric Mask](how-to-clip-with-layers.md).
 
 
 ```C++
@@ -90,8 +90,8 @@ HRESULT DemoApp::RenderWithLayer(ID2D1RenderTarget *pRT)
 
 | Requisito | Valore |
 |--------------------|-------------------------------------------------------------------------------------|
-| Intestazione<br/>  | <dl> <dt>D2d1. h</dt> </dl>   |
-| Libreria<br/> | <dl> <dt>D2d1. lib</dt> </dl> |
+| Intestazione<br/>  | <dl> <dt>D2d1.h</dt> </dl>   |
+| Libreria<br/> | <dl> <dt>D2d1.lib</dt> </dl> |
 | DLL<br/>     | <dl> <dt>D2d1.dll</dt> </dl> |
 
 
@@ -100,7 +100,7 @@ HRESULT DemoApp::RenderWithLayer(ID2D1RenderTarget *pRT)
 
 <dl> <dt>
 
-[Panoramica sui livelli](direct2d-layers-overview.md)
+[Panoramica dei livelli](direct2d-layers-overview.md)
 </dt> <dt>
 
 [**ID2D1RenderTarget**](/windows/win32/api/d2d1/nn-d2d1-id2d1rendertarget)

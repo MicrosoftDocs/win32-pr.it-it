@@ -1,10 +1,10 @@
 ---
-title: Attributo DNS-host-name
+title: Attributo DNS-Host-Name
 description: Nome del computer registrato in DNS.
 ms.assetid: ba655adb-cb70-47f2-820f-c5b0749d3e70
 ms.tgt_platform: multiple
 keywords:
-- DNS-host-name attributo AD schema
+- Schema AD dell'attributo DNS-Host-Name
 - Schema AD dell'attributo dNSHostName
 topic_type:
 - apiref
@@ -14,14 +14,14 @@ api_type:
 - Schema
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 7580a58e5d3042633a9dd665354bc883b4fdb87c
-ms.sourcegitcommit: b77ace27b0432e7cd3863191b11926be032fbe2f
+ms.openlocfilehash: 2241ea7144db7895e521c2844627d77b2f0ce54b5da518d180c87c6e9f834140
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/14/2020
-ms.locfileid: "104519486"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120085961"
 ---
-# <a name="dns-host-name-attribute"></a>Attributo DNS-host-name
+# <a name="dns-host-name-attribute"></a>Attributo DNS-Host-Name
 
 Nome del computer registrato in DNS.
 
@@ -29,13 +29,13 @@ Nome del computer registrato in DNS.
 
 | Voce | Valore |
 |-------------------|-----------------------------------------------------------------------------|
-| CN                | Nome-host-DNS                                                               |
-| LDAP-Display-Name | dNSHostName                                                                 |
-| Dimensione              | Ogni segmento può essere costituito da 63 caratteri. La lunghezza intera può essere di 255 caratteri. |
-| Privilegio aggiornamento  | Amministratore di dominio                                                        |
+| CN                | DNS-Host-Name                                                               |
+| Ldap-Display-Name | dNSHostName                                                                 |
+| Dimensione              | Ogni segmento può contenere 63 caratteri. L'intera lunghezza può essere di 255 caratteri. |
+| Aggiorna privilegio  | Amministratore di dominio                                                        |
 | Frequenza di aggiornamento  | Quando il computer è denominato.                                                 |
 | Attribute-Id      | 1.2.840.113556.1.4.619                                                      |
-| System-ID-GUID    | 72e39547-7b18-11d1-adef-00c04fd8d5cd                                        |
+| System-Id-Guid    | 72e39547-7b18-11d1-adef-00c04fd8d5cd                                        |
 | Sintassi            | [**String(Unicode)**](s-string-unicode.md)                                 |
 
 
@@ -44,7 +44,7 @@ Nome del computer registrato in DNS.
 
 -   [**Windows 2000 Server**](#windows-2000-server)
 -   [**Windows Server 2003**](#windows-server-2003)
--   [**ADAM**](#adam)
+-   [**Adam**](#adam)
 -   [**Windows Server 2003 R2**](#windows-server-2003-r2)
 -   [**Windows Server 2008**](#windows-server-2008)
 -   [**Windows Server 2008 R2**](#windows-server-2008-r2)
@@ -59,15 +59,15 @@ Nome del computer registrato in DNS.
 | ID collegamento                | \-                                                                                                                                                                                                                         |
 | MAPI-Id                | \-                                                                                                                                                                                                                         |
 | System-Only            | Falso                                                                                                                                                                                                                      |
-| È a valore singolo       | Vero                                                                                                                                                                                                                       |
+| Is-Single-Valued       | Vero                                                                                                                                                                                                                       |
 | Indicizzato             | Falso                                                                                                                                                                                                                      |
 | Nel catalogo globale      | Vero                                                                                                                                                                                                                       |
-| NT-Security-descrittore | O:BAG: NON VALIDO: S:                                                                                                                                                                                                               |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                                                                                                                                                                                               |
 | Range-Lower            | 0                                                                                                                                                                                                                          |
 | Range-Upper            | 2048                                                                                                                                                                                                                       |
 | Search-Flags           | 0x00000000                                                                                                                                                                                                                 |
 | System-Flags           | 0x00000010                                                                                                                                                                                                                 |
-| Classi utilizzate in        | [**Autorità di certificazione**](c-certificationauthority.md)<br/> [**Computer**](c-computer.md)<br/> [**PKI-registrazione-servizio**](c-pkienrollmentservice.md)<br/> [**Server**](c-server.md)<br/> |
+| Classi usate in        | [**Autorità di certificazione**](c-certificationauthority.md)<br/> [**Computer**](c-computer.md)<br/> [**PKI-Enrollment-Service**](c-pkienrollmentservice.md)<br/> [**Server**](c-server.md)<br/> |
 
 
 
@@ -80,19 +80,19 @@ Nome del computer registrato in DNS.
 | ID collegamento                | \-                                                                                                                                                                                                                         |
 | MAPI-Id                | \-                                                                                                                                                                                                                         |
 | System-Only            | Falso                                                                                                                                                                                                                      |
-| È a valore singolo       | Vero                                                                                                                                                                                                                       |
+| Is-Single-Valued       | Vero                                                                                                                                                                                                                       |
 | Indicizzato             | Falso                                                                                                                                                                                                                      |
 | Nel catalogo globale      | Vero                                                                                                                                                                                                                       |
-| NT-Security-descrittore | O:BAG: NON VALIDO: S:                                                                                                                                                                                                               |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                                                                                                                                                                                               |
 | Range-Lower            | 0                                                                                                                                                                                                                          |
 | Range-Upper            | 2048                                                                                                                                                                                                                       |
 | Search-Flags           | 0x00000000                                                                                                                                                                                                                 |
 | System-Flags           | 0x00000010                                                                                                                                                                                                                 |
-| Classi utilizzate in        | [**Autorità di certificazione**](c-certificationauthority.md)<br/> [**Computer**](c-computer.md)<br/> [**PKI-registrazione-servizio**](c-pkienrollmentservice.md)<br/> [**Server**](c-server.md)<br/> |
+| Classi usate in        | [**Autorità di certificazione**](c-certificationauthority.md)<br/> [**Computer**](c-computer.md)<br/> [**PKI-Enrollment-Service**](c-pkienrollmentservice.md)<br/> [**Server**](c-server.md)<br/> |
 
 
 
-## <a name="adam"></a>ADAM
+## <a name="adam"></a>Adam
 
 
 
@@ -101,15 +101,15 @@ Nome del computer registrato in DNS.
 | ID collegamento                | \-                                    |
 | MAPI-Id                | \-                                    |
 | System-Only            | Falso                                 |
-| È a valore singolo       | Vero                                  |
+| Is-Single-Valued       | Vero                                  |
 | Indicizzato             | Falso                                 |
 | Nel catalogo globale      | Vero                                  |
-| NT-Security-descrittore | O:BAG: NON VALIDO: S:                          |
+| NT-Security-Descriptor | O:BAG:BAD:S:                          |
 | Range-Lower            | 0                                     |
 | Range-Upper            | 2048                                  |
 | Search-Flags           | 0x00000000                            |
 | System-Flags           | 0x00000010                            |
-| Classi utilizzate in        | [**Server**](c-server.md)<br/> |
+| Classi usate in        | [**Server**](c-server.md)<br/> |
 
 
 
@@ -122,15 +122,15 @@ Nome del computer registrato in DNS.
 | ID collegamento                | \-                                                                                                                                                                                                                         |
 | MAPI-Id                | \-                                                                                                                                                                                                                         |
 | System-Only            | Falso                                                                                                                                                                                                                      |
-| È a valore singolo       | Vero                                                                                                                                                                                                                       |
+| Is-Single-Valued       | Vero                                                                                                                                                                                                                       |
 | Indicizzato             | Falso                                                                                                                                                                                                                      |
 | Nel catalogo globale      | Vero                                                                                                                                                                                                                       |
-| NT-Security-descrittore | O:BAG: NON VALIDO: S:                                                                                                                                                                                                               |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                                                                                                                                                                                               |
 | Range-Lower            | 0                                                                                                                                                                                                                          |
 | Range-Upper            | 2048                                                                                                                                                                                                                       |
 | Search-Flags           | 0x00000000                                                                                                                                                                                                                 |
 | System-Flags           | 0x00000010                                                                                                                                                                                                                 |
-| Classi utilizzate in        | [**Autorità di certificazione**](c-certificationauthority.md)<br/> [**Computer**](c-computer.md)<br/> [**PKI-registrazione-servizio**](c-pkienrollmentservice.md)<br/> [**Server**](c-server.md)<br/> |
+| Classi usate in        | [**Autorità di certificazione**](c-certificationauthority.md)<br/> [**Computer**](c-computer.md)<br/> [**PKI-Enrollment-Service**](c-pkienrollmentservice.md)<br/> [**Server**](c-server.md)<br/> |
 
 
 
@@ -143,15 +143,15 @@ Nome del computer registrato in DNS.
 | ID collegamento                | \-                                                                                                                                                                                                                         |
 | MAPI-Id                | \-                                                                                                                                                                                                                         |
 | System-Only            | Falso                                                                                                                                                                                                                      |
-| È a valore singolo       | Vero                                                                                                                                                                                                                       |
+| Is-Single-Valued       | Vero                                                                                                                                                                                                                       |
 | Indicizzato             | Falso                                                                                                                                                                                                                      |
 | Nel catalogo globale      | Vero                                                                                                                                                                                                                       |
-| NT-Security-descrittore | O:BAG: NON VALIDO: S:                                                                                                                                                                                                               |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                                                                                                                                                                                               |
 | Range-Lower            | 0                                                                                                                                                                                                                          |
 | Range-Upper            | 2048                                                                                                                                                                                                                       |
 | Search-Flags           | 0x00000000                                                                                                                                                                                                                 |
 | System-Flags           | 0x00000010                                                                                                                                                                                                                 |
-| Classi utilizzate in        | [**Autorità di certificazione**](c-certificationauthority.md)<br/> [**Computer**](c-computer.md)<br/> [**PKI-registrazione-servizio**](c-pkienrollmentservice.md)<br/> [**Server**](c-server.md)<br/> |
+| Classi usate in        | [**Autorità di certificazione**](c-certificationauthority.md)<br/> [**Computer**](c-computer.md)<br/> [**PKI-Enrollment-Service**](c-pkienrollmentservice.md)<br/> [**Server**](c-server.md)<br/> |
 
 
 
@@ -164,15 +164,15 @@ Nome del computer registrato in DNS.
 | ID collegamento                | \-                                                                                                                                                                                                                         |
 | MAPI-Id                | \-                                                                                                                                                                                                                         |
 | System-Only            | Falso                                                                                                                                                                                                                      |
-| È a valore singolo       | Vero                                                                                                                                                                                                                       |
+| Is-Single-Valued       | Vero                                                                                                                                                                                                                       |
 | Indicizzato             | Falso                                                                                                                                                                                                                      |
 | Nel catalogo globale      | Vero                                                                                                                                                                                                                       |
-| NT-Security-descrittore | O:BAG: NON VALIDO: S:                                                                                                                                                                                                               |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                                                                                                                                                                                               |
 | Range-Lower            | 0                                                                                                                                                                                                                          |
 | Range-Upper            | 2048                                                                                                                                                                                                                       |
 | Search-Flags           | 0x00000000                                                                                                                                                                                                                 |
 | System-Flags           | 0x00000010                                                                                                                                                                                                                 |
-| Classi utilizzate in        | [**Autorità di certificazione**](c-certificationauthority.md)<br/> [**Computer**](c-computer.md)<br/> [**PKI-registrazione-servizio**](c-pkienrollmentservice.md)<br/> [**Server**](c-server.md)<br/> |
+| Classi usate in        | [**Autorità di certificazione**](c-certificationauthority.md)<br/> [**Computer**](c-computer.md)<br/> [**PKI-Enrollment-Service**](c-pkienrollmentservice.md)<br/> [**Server**](c-server.md)<br/> |
 
 
 
@@ -185,15 +185,15 @@ Nome del computer registrato in DNS.
 | ID collegamento                | \-                                                                                                                                                                                                                         |
 | MAPI-Id                | \-                                                                                                                                                                                                                         |
 | System-Only            | Falso                                                                                                                                                                                                                      |
-| È a valore singolo       | Vero                                                                                                                                                                                                                       |
+| Is-Single-Valued       | Vero                                                                                                                                                                                                                       |
 | Indicizzato             | Falso                                                                                                                                                                                                                      |
 | Nel catalogo globale      | Vero                                                                                                                                                                                                                       |
-| NT-Security-descrittore | O:BAG: NON VALIDO: S:                                                                                                                                                                                                               |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                                                                                                                                                                                               |
 | Range-Lower            | 0                                                                                                                                                                                                                          |
 | Range-Upper            | 2048                                                                                                                                                                                                                       |
 | Search-Flags           | 0x00000000                                                                                                                                                                                                                 |
 | System-Flags           | 0x00000010                                                                                                                                                                                                                 |
-| Classi utilizzate in        | [**Autorità di certificazione**](c-certificationauthority.md)<br/> [**Computer**](c-computer.md)<br/> [**PKI-registrazione-servizio**](c-pkienrollmentservice.md)<br/> [**Server**](c-server.md)<br/> |
+| Classi usate in        | [**Autorità di certificazione**](c-certificationauthority.md)<br/> [**Computer**](c-computer.md)<br/> [**PKI-Enrollment-Service**](c-pkienrollmentservice.md)<br/> [**Server**](c-server.md)<br/> |
 
 
 

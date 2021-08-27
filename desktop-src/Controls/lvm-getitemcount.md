@@ -1,9 +1,9 @@
 ---
-title: Messaggio LVM_GETITEMCOUNT (COMmctrl. h)
-description: Recupera il numero di elementi in un controllo visualizzazione elenco. È possibile inviare questo messaggio in modo esplicito o usando la \_ macro GetItemCount di ListView.
+title: LVM_GETITEMCOUNT messaggio (Commctrl.h)
+description: Recupera il numero di elementi in un controllo di visualizzazione elenco. È possibile inviare questo messaggio in modo esplicito o tramite la \_ macro ListView GetItemCount.
 ms.assetid: 7c639d69-e42c-41b5-9fdd-4943166752a2
 keywords:
-- Controlli di Windows Message LVM_GETITEMCOUNT
+- LVM_GETITEMCOUNT dei messaggi Windows controlli
 topic_type:
 - apiref
 api_name:
@@ -14,16 +14,16 @@ api_type:
 - HeaderDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: ff2791440c7285d054eca0d2945086d06e3c35a3
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: f1561e893930e4e3eca8de628c1df555e63794c3463edf81af798c53d873c8a4
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "103742991"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120109621"
 ---
-# <a name="lvm_getitemcount-message"></a>\_Messaggio GETITEMCOUNT LVM
+# <a name="lvm_getitemcount-message"></a>Messaggio LVM \_ GETITEMCOUNT
 
-Recupera il numero di elementi in un controllo visualizzazione elenco. È possibile inviare questo messaggio in modo esplicito o usando la macro [**\_ GetItemCount di ListView**](/windows/desktop/api/Commctrl/nf-commctrl-listview_getitemcount) .
+Recupera il numero di elementi in un controllo di visualizzazione elenco. È possibile inviare questo messaggio in modo esplicito o tramite la macro [**\_ ListView GetItemCount.**](/windows/desktop/api/Commctrl/nf-commctrl-listview_getitemcount)
 
 ## <a name="parameters"></a>Parametri
 
@@ -45,9 +45,9 @@ Restituisce il numero di elementi.
 
 | Requisito | Valore |
 |-------------------------------------|---------------------------------------------------------------------------------------|
-| Client minimo supportato<br/> | \[Solo app desktop di Windows Vista\]<br/>                                        |
-| Server minimo supportato<br/> | \[Solo app desktop Windows Server 2003\]<br/>                                  |
-| Intestazione<br/>                   | <dl> <dt>Commctrl. h</dt> </dl> |
+| Client minimo supportato<br/> | Windows Solo \[ app desktop di Vista\]<br/>                                        |
+| Server minimo supportato<br/> | Windows Solo app desktop server 2003 \[\]<br/>                                  |
+| Intestazione<br/>                   | <dl> <dt>Commctrl.h</dt> </dl> |
 
 
 

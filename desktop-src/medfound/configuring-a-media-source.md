@@ -4,12 +4,12 @@ ms.assetid: 1378bbe6-be94-4be1-b428-5ec58dabd1fa
 title: Configurazione di un'origine multimediale
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 69e6737d643db2ee473214586cd7ded4f9596133dac5f4fb177df4d7b6b19757
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 809d215cf282dba1e65c21316fafda47684a2151
+ms.sourcegitcommit: 9b5faa61c38b2d0c432b7f2dbee8c127b0e28a7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "117880592"
+ms.lasthandoff: 08/19/2021
+ms.locfileid: "122481707"
 ---
 # <a name="configuring-a-media-source"></a>Configurazione di un'origine multimediale
 
@@ -19,33 +19,12 @@ Nella tabella seguente sono elencate le proprietà di configurazione per le orig
 
 
 
-<table>
-<colgroup>
-<col style="width: 50%" />
-<col style="width: 50%" />
-</colgroup>
-<thead>
-<tr class="header">
-<th>Origine multimediale</th>
-<th>Proprietà</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>Origine di rete</td>
-<td>Vedere <a href="network-source-features.md">Funzionalità dell'origine di rete</a>.</td>
-</tr>
-<tr class="even">
-<td>Origine multimediale ASF</td>
-<td><ul>
-<li><a href="mfpkey-asfmediasource-approxseek-property.md"><strong>MFPKEY_ASFMediaSource_ApproxSeek</strong></a></li>
-<li><a href="mfpkey-asfmediasource-iterativeseekifnoindex.md">MFPKEY_ASFMediaSource_IterativeSeekIfNoIndex</a></li>
-<li><a href="mfpkey-asfmediasource-iterativeseek-max-count.md">MFPKEY_ASFMediaSource_IterativeSeek_Max_Count</a></li>
-<li><a href="mfpkey-asfmediasource-iterativeseek-tolerance-in-millisecond.md">MFPKEY_ASFMediaSource_IterativeSeek_Tolerance_In_MilliSecond</a></li>
-</ul></td>
-</tr>
-</tbody>
-</table>
+
+| Origine multimediale | Proprietà | 
+|--------------|------------|
+| Origine di rete | Vedere <a href="network-source-features.md">Funzionalità dell'origine di rete</a>. | 
+| Origine multimediale ASF | <ul><li><a href="mfpkey-asfmediasource-approxseek-property.md"><strong>MFPKEY_ASFMediaSource_ApproxSeek</strong></a></li><li><a href="mfpkey-asfmediasource-iterativeseekifnoindex.md">MFPKEY_ASFMediaSource_IterativeSeekIfNoIndex</a></li><li><a href="mfpkey-asfmediasource-iterativeseek-max-count.md">MFPKEY_ASFMediaSource_IterativeSeek_Max_Count</a></li><li><a href="mfpkey-asfmediasource-iterativeseek-tolerance-in-millisecond.md">MFPKEY_ASFMediaSource_IterativeSeek_Tolerance_In_MilliSecond</a></li></ul> | 
+
 
 
 
@@ -105,7 +84,7 @@ HRESULT CreateMediaSource(
 
 
 
-Il resolver di origine passa il **puntatore IPropertyStore** direttamente al gestore dello schema o al gestore del flusso di byte che crea l'origine. Il sistema di risoluzione di origine non tenta di convalidare le proprietà.
+Il sistema di risoluzione di origine passa il **puntatore IPropertyStore** direttamente al gestore dello schema o al gestore del flusso di byte che crea l'origine. Il sistema di risoluzione di origine non tenta di convalidare le proprietà.
 
 In genere, queste proprietà vengono usate per le impostazioni avanzate. Se non si fornisce un archivio delle proprietà, l'origine dei supporti dovrebbe comunque funzionare correttamente con le impostazioni predefinite.
 

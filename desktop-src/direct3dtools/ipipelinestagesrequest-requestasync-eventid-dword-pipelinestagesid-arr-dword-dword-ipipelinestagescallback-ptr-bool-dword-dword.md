@@ -1,5 +1,5 @@
 ---
-description: Richiesta asincrona per ottenere le immagini di anteprima per la finestra delle fasi della pipeline grafica.
+description: Richiesta asincrona per ottenere immagini di anteprima per la finestra delle fasi della pipeline grafica.
 MS-HAID: vspixengine.IPipeLineStagesRequest\_RequestAsync\_EventID\_DWORD\_PipeLineStagesID\_arr\_DWORD\_DWORD\_IPipeLineStagesCallback\_ptr\_BOOL\_DWORD\_DWORD
 MSHAttr:
 - PreferredSiteName:MSDN
@@ -17,16 +17,16 @@ api_location:
 topic_type:
 - APIRef
 - kbSyntax
-ms.openlocfilehash: 890e0d95e811b47582a46ca0a1bc7a66dcbbb3fa5e6dab8a15d9e886730f22ed
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 62211a838470807d674671cb8b8ff886d62a4408
+ms.sourcegitcommit: c276a8912787b2cda74dcf54eb96df961bb1188b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "117721778"
+ms.lasthandoff: 08/20/2021
+ms.locfileid: "122626827"
 ---
 # <a name="span-idvspixengineipipelinestagesrequest_requestasync_eventid_dword_pipelinestagesid_arr_dword_dword_ipipelinestagescallback_ptr_bool_dword_dwordspanipipelinestagesrequestrequestasync-method"></a><span id="vspixengine.ipipelinestagesrequest_requestasync_eventid_dword_pipelinestagesid_arr_dword_dword_ipipelinestagescallback_ptr_bool_dword_dword"></span>Metodo IPipeLineStagesRequest::RequestAsync
 
-Richiesta asincrona per ottenere le immagini di anteprima per la finestra delle fasi della pipeline grafica.
+Richiesta asincrona per ottenere immagini di anteprima per la finestra delle fasi della pipeline grafica.
 
 ## <a name="syntax"></a>Sintassi
 
@@ -63,7 +63,7 @@ Larghezza delle immagini richieste.
 Altezza delle immagini richieste.
 
 *requestCallback*   
-Indirizzo del callback utilizzato per notificare i risultati all'host.
+Indirizzo del callback utilizzato per inviare una notifica all'host dei risultati.
 
 *getMeshData*   
 true per restituire i dati della mesh; in caso contrario, false.
@@ -80,7 +80,7 @@ Se questo metodo ha esito positivo, restituisce **S \_ OK**. In caso contrario, 
 
 ## <a name="requirements"></a>Requisiti
 
-<table><colgroup><col style="width: 50%" /><col style="width: 50%" /></colgroup><tbody><tr class="odd"><td><p>Intestazione</p></td><td>Vspixengine.h</td></tr></tbody></table>
+<table><colgroup><col  /><col  /></colgroup><tbody><tr class="odd"><td><p>Intestazione</p></td><td>Vspixengine.h</td></tr></tbody></table>
 
 ## <a name="span-idsee_alsospansee-also"></a><span id="see_also"></span>Vedere anche
 

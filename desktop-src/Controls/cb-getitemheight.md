@@ -1,9 +1,9 @@
 ---
-title: Messaggio CB_GETITEMHEIGHT (winuser. h)
-description: Determina l'altezza degli elementi dell'elenco o il campo di selezione in una casella combinata.
+title: CB_GETITEMHEIGHT messaggio (Winuser.h)
+description: Determina l'altezza degli elementi dell'elenco o del campo di selezione in una casella combinata.
 ms.assetid: 72fba6ca-0a51-4801-bd45-5f5a7d5ebee2
 keywords:
-- Controlli di Windows Message CB_GETITEMHEIGHT
+- CB_GETITEMHEIGHT controlli Windows messaggio
 topic_type:
 - apiref
 api_name:
@@ -14,16 +14,16 @@ api_type:
 - HeaderDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: c4aac9d8f9a430c056f8b91a9306d77c182f4c96
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: a6e3ad9636c32e40bfa95f1f3b2c209eab42023205e0a967cc91804ec314a103
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "103873801"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120089191"
 ---
-# <a name="cb_getitemheight-message"></a>\_Messaggio GETITEMHEIGHT CB
+# <a name="cb_getitemheight-message"></a>CB \_ GETITEMHEIGHT message
 
-Determina l'altezza degli elementi dell'elenco o il campo di selezione in una casella combinata.
+Determina l'altezza degli elementi dell'elenco o del campo di selezione in una casella combinata.
 
 ## <a name="parameters"></a>Parametri
 
@@ -32,7 +32,7 @@ Determina l'altezza degli elementi dell'elenco o il campo di selezione in una ca
 *wParam* 
 </dt> <dd>
 
-Componente della casella combinata di cui è necessario recuperare l'altezza. Questo parametro deve essere-1 per recuperare l'altezza del campo di selezione. Deve essere zero per recuperare l'altezza degli elementi dell'elenco, a meno che la casella combinata non abbia lo stile [**CBS \_ OwnerDrawVariable**](combo-box-styles.md) . In tal caso, il parametro *wParam* è l'indice in base zero di un elemento di elenco specifico.
+Componente casella combinata di cui recuperare l'altezza. Questo parametro deve essere -1 per recuperare l'altezza del campo di selezione. Deve essere zero per recuperare l'altezza degli elementi dell'elenco, a meno che la casella combinata non abbia lo stile [**CBS \_ OWNERDRAWVARIABLE.**](combo-box-styles.md) In tal caso, il *parametro wParam* è l'indice in base zero di un elemento dell'elenco specifico.
 
 </dd> <dt>
 
@@ -45,7 +45,7 @@ Questo parametro non viene usato.
 
 ## <a name="return-value"></a>Valore restituito
 
-Il valore restituito è l'altezza, in pixel, degli elementi dell'elenco in una casella combinata. Se la casella combinata ha lo stile [**CBS \_ OwnerDrawVariable**](combo-box-styles.md) , è l'altezza dell'elemento specificato dal parametro *wParam* . Se *wParam* è-1, il valore restituito è l'altezza della parte del controllo di modifica (o del testo statico) della casella combinata. Se si verifica un errore, il valore restituito è CB \_ Err.
+Il valore restituito è l'altezza, in pixel, degli elementi dell'elenco in una casella combinata. Se la casella combinata ha lo stile [**CBS \_ OWNERDRAWVARIABLE,**](combo-box-styles.md) corrisponde all'altezza dell'elemento specificato dal *parametro wParam.* Se *wParam* è -1, il valore restituito è l'altezza della parte del controllo di modifica (o testo statico) della casella combinata. Se si verifica un errore, il valore restituito è CB \_ ERR.
 
 ## <a name="requirements"></a>Requisiti
 
@@ -53,9 +53,9 @@ Il valore restituito è l'altezza, in pixel, degli elementi dell'elenco in una c
 
 | Requisito | Valore |
 |-------------------------------------|----------------------------------------------------------------------------------------------------------|
-| Client minimo supportato<br/> | \[Solo app desktop di Windows Vista\]<br/>                                                           |
-| Server minimo supportato<br/> | \[Solo app desktop Windows Server 2003\]<br/>                                                     |
-| Intestazione<br/>                   | <dl> <dt>Winuser. h (include Windows. h)</dt> </dl> |
+| Client minimo supportato<br/> | Windows Solo \[ app desktop Vista\]<br/>                                                           |
+| Server minimo supportato<br/> | Windows Solo app desktop di Server 2003 \[\]<br/>                                                     |
+| Intestazione<br/>                   | <dl> <dt>Winuser.h (includere Windows.h)</dt> </dl> |
 
 
 
@@ -69,7 +69,7 @@ Il valore restituito è l'altezza, in pixel, degli elementi dell'elenco in una c
 [**CB \_ SETITEMHEIGHT**](cb-setitemheight.md)
 </dt> <dt>
 
-[**\_MeasureItem WM**](wm-measureitem.md)
+[**WM \_ MEASUREITEM**](wm-measureitem.md)
 </dt> </dl>
 
  

@@ -13,12 +13,12 @@ api_type:
 - HeaderDef
 api_location:
 - Wmistr.h
-ms.openlocfilehash: e8ad8bd5e1fd4917fa031e7553ed0e7e460244b8ab7c7da347a62d7430036cc0
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 93cecb900b0c62084a3b5ea4e4a7789575c20c27
+ms.sourcegitcommit: 9b5faa61c38b2d0c432b7f2dbee8c127b0e28a7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119015239"
+ms.lasthandoff: 08/19/2021
+ms.locfileid: "122480687"
 ---
 # <a name="wnode_header-structure"></a>Struttura WNODE \_ HEADER
 
@@ -71,7 +71,7 @@ Riservato per utilizzo interno.
 **HistoricalContext**
 </dt> <dd>
 
-Nell'output, l'handle per la sessione di traccia eventi.
+Nell'output, handle per la sessione di traccia eventi.
 
 </dd> <dt>
 
@@ -112,62 +112,38 @@ Per una sessione del logger del kernel NT, impostare questo membro **su SystemTr
 
 Se questo membro è impostato su **SystemTraceControlGuid** o **GlobalLoggerGuid,** il logger sarà un logger di sistema.
 
-Per una sessione del logger privato, impostare questo membro sul GUID del provider che si desidera abilitare per la sessione.
+Per una sessione di logger privata, impostare questo membro sul GUID del provider che si desidera abilitare per la sessione.
 
 Se si avvia una sessione che non è un logger del kernel o una sessione privata del logger, non è necessario specificare un GUID di sessione. Se non si specifica un GUID, ETW ne crea uno automaticamente. È necessario specificare un GUID di sessione solo se si desidera modificare le autorizzazioni predefinite associate a una sessione specifica. Per informazioni dettagliate, vedere la funzione EventAccessControl.
 
 Non è possibile avviare più di una sessione con lo stesso GUID di sessione.
 
-**Prima di Windows Vista:** È possibile avviare più sessioni con lo stesso GUID di sessione.
+**Prima di Windows Vista:** È possibile avviare più di una sessione con lo stesso GUID di sessione.
 
 </dd> <dt>
 
 **ClientContext**
 </dt> <dd>
 
-Risoluzione dell'orologio da utilizzare per la registrazione del timestamp per ogni evento. Il valore predefinito è Query performance counter (QPC).
+Risoluzione del clock da utilizzare per la registrazione del timestamp per ogni evento. Il valore predefinito è Query performance counter (QPC).
 
 **Prima di Windows Vista:** Il valore predefinito è l'ora di sistema.
 
-**Prima di Windows 10, versione 1703:** Non più di 2 tipi di clock distinti possono essere usati contemporaneamente da qualsiasi logger di sistema.
+**Prima di Windows 10, versione 1703:** Nessun logger di sistema può usare contemporaneamente più di 2 tipi di clock distinti.
 
-**A partire da Windows 10, versione 1703:** La restrizione del tipo di orologio è stata rimossa. Tutti e tre i tipi di clock possono ora essere usati contemporaneamente dai logger di sistema.
+**A partire Windows 10, versione 1703:** La restrizione del tipo di orologio è stata rimossa. Tutti e tre i tipi di clock possono ora essere usati contemporaneamente dai logger di sistema.
 
 È possibile specificare uno dei valori seguenti.
 
 
 
-<table>
-<colgroup>
-<col style="width: 50%" />
-<col style="width: 50%" />
-</colgroup>
-<thead>
-<tr class="header">
-<th>Valore</th>
-<th>Significato</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td><dl> <dt>1</dt> </dl></td>
-<td>Contatore delle prestazioni query (QPC). Il contatore QPC fornisce un timestamp ad alta risoluzione che non è interessato dalle modifiche all'orologio di sistema. Il timestamp archiviato nell'evento è equivalente al valore restituito dall'API QueryPerformanceCounter. Per altre informazioni sulle caratteristiche di questo timestamp, vedere Acquisizione di timestamp <a href="/windows/win32/sysinfo/acquiring-high-resolution-time-stamps">ad alta risoluzione</a>.<br/> È consigliabile usare questa risoluzione se si hanno frequenze di eventi elevate o se il consumer unisce eventi da buffer diversi. In questi casi, la precisione e la stabilità del timestamp QPC consentono una migliore accuratezza nell'ordinamento degli eventi da buffer diversi. Tuttavia, il timestamp QPC non rifletterà gli aggiornamenti all'orologio di sistema, ad esempio se l'orologio di sistema viene regolato in avanti a causa della sincronizzazione con un server NTP mentre la traccia è in corso, i timestamp QPC nella traccia continueranno a riflettere l'ora come se non si fosse verificato alcun aggiornamento.<br/> Per determinare la risoluzione, usare il <strong>membro PerfFreq</strong> di <a href="/windows/win32/api/evntrace/ns-evntrace-trace_logfile_header"><strong>TRACE_LOGFILE_HEADER</strong></a> durante l'utilizzo dell'evento.<br/> Per convertire il timestamp di un evento in unità di 100 ns, usare la formula di conversione seguente: <br/> scaledTimestamp = eventRecord.EventHeader.TimeStamp.QuadPart * 100000000.0 / logfileHeader.PerfFreq.QuadPart<br/> Si noti che nei computer meno recenti il timestamp potrebbe non essere accurato perché il contatore talvolta viene ignorato a causa di errori hardware.<br/></td>
-</tr>
-<tr class="even">
-<td><dl> <dt>2</dt> </dl></td>
-<td>Ora di sistema. L'ora di sistema fornisce un timestamp che tiene traccia delle modifiche all'orologio del sistema, ad esempio se l'orologio di sistema viene regolato in avanti a causa della sincronizzazione con un server NTP mentre la traccia è in corso, anche i timestamp ora di sistema nella traccia salteranno in avanti in modo che corrispondano alla nuova impostazione dell'orologio di sistema. <br/>
-<ul>
-<li>Nei sistemi precedenti Windows 10, il timestamp archiviato nell'evento è equivalente al valore restituito dall'API GetSystemTimeAsFileTime.</li>
-<li>In Windows 10 versione successiva, il timestamp archiviato nell'evento è equivalente al valore restituito dall'API GetSystemTimePreciseAsFileTime.</li>
-</ul>
-Prima di Windows 10, la risoluzione di questo timestamp era la risoluzione di un clock di sistema, come indicato dal membro TimerResolution di TRACE_LOGFILE_HEADER. A partire Windows 10, la risoluzione di questo timestamp è la risoluzione del contatore delle prestazioni, come indicato dal membro PerfFreq di TRACE_LOGFILE_HEADER.<br/> Per convertire il timestamp di un evento in unità di 100 ns, usare la formula di conversione seguente: <br/> scaledTimestamp = eventRecord.EventHeader.TimeStamp.QuadPart<br/> Si noti che quando gli eventi vengono acquisiti in un sistema che esegue un sistema operativo prima di Windows 10, se il volume degli eventi è elevato, la risoluzione dell'ora di sistema potrebbe non essere sufficiente per determinare la sequenza di eventi. In questo caso, un set di eventi avrà lo stesso timestamp, ma l'ordine in cui ETW recapita gli eventi potrebbe non essere corretto. A partire da Windows 10, il timestamp viene acquisito con precisione aggiuntiva, anche se potrebbe verificarsi una certa instabilità nei casi in cui l'orologio di sistema è stato regolato durante l'acquisizione della traccia.<br/></td>
-</tr>
-<tr class="odd">
-<td><dl> <dt>3</dt> </dl></td>
-<td>Contatore del ciclo CPU. Il contatore CPU fornisce il timestamp di risoluzione più elevato ed è il minor utilizzo di risorse da recuperare. Tuttavia, il contatore CPU non è affidabile e non deve essere usato nell'ambiente di produzione. Ad esempio, in alcuni computer, i timer cambieranno frequenza a causa di variazioni termiche e dell'alimentazione, oltre all'arresto in alcuni stati.<br/> Per determinare la risoluzione, usare il <strong>membro CpuSpeedInMHz</strong> <a href="/windows/win32/api/evntrace/ns-evntrace-trace_logfile_header"><strong>di TRACE_LOGFILE_HEADER</strong></a> quando si utilizza l'evento.<br/> Se l'hardware non supporta questo tipo di clock, ETW usa l'ora di sistema.<br/> <strong>Windows Server 2003, Windows XP con SP1 e Windows XP:</strong> Questo valore non è supportato, è stato introdotto in Windows Server 2003 con SP1 e Windows XP con SP2.<br/></td>
-</tr>
-</tbody>
-</table>
+
+| valore | Significato | 
+|-------|---------|
+| <dl><dt>1</dt></dl> | Contatore delle prestazioni delle query (QPC). Il contatore QPC fornisce un timestamp ad alta risoluzione che non è interessato dalle modifiche all'orologio di sistema. Il timestamp archiviato nell'evento è equivalente al valore restituito dall'API QueryPerformanceCounter. Per altre informazioni sulle caratteristiche di questo timestamp, vedere Acquisizione di timestamp ad <a href="/windows/win32/sysinfo/acquiring-high-resolution-time-stamps">alta risoluzione.</a><br /> È consigliabile usare questa risoluzione se si hanno frequenze di eventi elevate o se il consumer unisce eventi da buffer diversi. In questi casi, la precisione e la stabilità del timestamp QPC consentono una migliore accuratezza nell'ordinamento degli eventi da buffer diversi. Tuttavia, il timestamp QPC non rifletterà gli aggiornamenti all'orologio di sistema, ad esempio se l'orologio di sistema viene regolato in avanti a causa della sincronizzazione con un server NTP mentre la traccia è in corso, i timestamp QPC nella traccia continueranno a riflettere l'ora come se non fosse stato fatto alcun aggiornamento.<br /> Per determinare la risoluzione, usare il <strong>membro PerfFreq</strong> di <a href="/windows/win32/api/evntrace/ns-evntrace-trace_logfile_header"><strong>TRACE_LOGFILE_HEADER</strong></a> quando si utilizza l'evento.<br /> Per convertire il timestamp di un evento in unità da 100 ns, usare la formula di conversione seguente: <br /> scaledTimestamp = eventRecord.EventHeader.TimeStamp.QuadPart * 10000000.0 / logfileHeader.PerfFreq.QuadPart<br /> Si noti che nei computer meno recenti il timestamp potrebbe non essere accurato perché a volte il contatore viene ignorato a causa di errori hardware.<br /> | 
+| <dl><dt>2</dt></dl> | Ora di sistema. L'ora di sistema fornisce un timestamp che tiene traccia delle modifiche apportate all'orologio del sistema, ad esempio se l'orologio di sistema viene regolato in avanti a causa della sincronizzazione con un server NTP mentre la traccia è in corso, anche i timestamp di sistema nella traccia salteranno in avanti per corrispondere alla nuova impostazione dell'orologio di sistema. <br /><ul><li>Nei sistemi precedenti Windows 10, il timestamp archiviato nell'evento è equivalente al valore restituito dall'API GetSystemTimeAsFileTime.</li><li>In Windows 10 versione successiva, il timestamp archiviato nell'evento è equivalente al valore restituito dall'API GetSystemTimePreciseAsFileTime.</li></ul>Prima di Windows 10, la risoluzione di questo timestamp era la risoluzione di un tick del clock di sistema, come indicato dal membro TimerResolution di TRACE_LOGFILE_HEADER. A partire Windows 10, la risoluzione di questo timestamp è la risoluzione del contatore delle prestazioni, come indicato dal membro PerfFreq di TRACE_LOGFILE_HEADER.<br /> Per convertire il timestamp di un evento in unità da 100 ns, usare la formula di conversione seguente: <br /> scaledTimestamp = eventRecord.EventHeader.TimeStamp.QuadPart<br /> Si noti che quando gli eventi vengono acquisiti in un sistema che esegue un sistema operativo prima di Windows 10, se il volume di eventi è elevato, la risoluzione dell'ora di sistema potrebbe non essere sufficiente per determinare la sequenza di eventi. In questo caso, un set di eventi avrà lo stesso timestamp, ma l'ordine in cui ETW recapita gli eventi potrebbe non essere corretto. A partire da Windows 10, il timestamp viene acquisito con una precisione aggiuntiva, anche se potrebbe verificarsi una certa instabilità nei casi in cui l'orologio di sistema è stato regolato durante l'acquisizione della traccia.<br /> | 
+| <dl><dt>3</dt></dl> | Contatore ciclo CPU. Il contatore CPU fornisce il timestamp di risoluzione più elevato ed è il meno elevato di risorse da recuperare. Tuttavia, il contatore della CPU non è affidabile e non deve essere usato nell'ambiente di produzione. Ad esempio, in alcuni computer, i timer cambieranno frequenza a causa di variazioni termiche e di alimentazione, oltre all'arresto in alcuni stati.<br /> Per determinare la risoluzione, usare il <strong>membro CpuSpeedInMHz</strong> <a href="/windows/win32/api/evntrace/ns-evntrace-trace_logfile_header"><strong>di TRACE_LOGFILE_HEADER</strong></a> quando si utilizza l'evento.<br /> Se l'hardware non supporta questo tipo di clock, ETW usa l'ora di sistema.<br /><strong>Windows Server 2003, Windows XP con SP1 e Windows XP:</strong> Questo valore non è supportato, è stato introdotto in Windows Server 2003 con SP1 e Windows XP con SP2.<br /> | 
+
 
 
 
@@ -180,7 +156,7 @@ Prima di Windows 10, la risoluzione di questo timestamp era la risoluzione di un
 **Flag**
 </dt> <dd>
 
-Deve contenere **WNODE \_ FLAG \_ TRACED \_ GUID per** indicare che la struttura contiene informazioni di traccia degli eventi.
+Deve contenere **WNODE \_ FLAG \_ TRACED \_ GUID** per indicare che la struttura contiene informazioni di traccia eventi.
 
 </dd> </dl>
 
@@ -188,13 +164,13 @@ Deve contenere **WNODE \_ FLAG \_ TRACED \_ GUID per** indicare che la struttura
 
 Assicurarsi di inizializzare la memoria per questa struttura su zero prima di impostare i membri.
 
-Per convertire un timestamp ETW in file FILETIME, usare la procedura seguente:
+Per convertire un timestamp ETW in fileTIME, usare la procedura seguente:
 
-<dl> 1. Per ogni sessione o file di log in fase di elaborazione, ad esempio per ogni LOGFILE DI TRACCIA EVENTI, controllare il campo \_ \_ logFile.ProcessTraceMode per determinare se il flag PROCESS TRACE MODE RAW TIMESTAMP è \_ \_ \_ \_ impostato. Per impostazione predefinita, questo flag non è impostato. Se questo flag non è impostato, il runtime ETW converte automaticamente il timestamp di ogni RECORD DI EVENTO in UN FILETIME prima di inviare event RECORD alla funzione \_ EventRecordCallback, quindi non è necessaria alcuna elaborazione \_ aggiuntiva. I passaggi seguenti devono essere usati solo se la traccia viene elaborata con il \_ flag RAW TIMESTAMP PROCESS TRACE MODE \_ \_ \_ impostato.  
-2. Per ogni sessione o file di log in fase di elaborazione, ad esempio per ogni LOGFILE DI TRACCIA EVENTI, controllare il campo \_ logFile.LogfileHeader.ReservedFlags per determinare la scala del timestamp per il \_ file di log. In base al valore di ReservedFlags, seguire uno di questi passaggi per determinare il valore da usare per timeStampScale nei passaggi rimanenti: <dl> a. If ReservedFlags == 1 (QPC): DOUBLE timeStampScale = 100000000.0 / logFile.LogfileHeader.PerfFreq.QuadPart;  
+<dl> 1. Per ogni sessione o file di log in fase di elaborazione, ad esempio per ogni EVENT TRACE LOGFILE, controllare il campo \_ \_ logFile.ProcessTraceMode per determinare se il flag PROCESS TRACE MODE RAW TIMESTAMP è \_ \_ \_ \_ impostato. Per impostazione predefinita, questo flag non è impostato. Se questo flag non è impostato, il runtime ETW convertirà automaticamente il timestamp di ogni RECORD DI EVENTO in UN FILETIME prima di inviare il RECORD DI EVENTO alla funzione \_ EventRecordCallback, quindi non è necessaria alcuna elaborazione \_ aggiuntiva. I passaggi seguenti devono essere utilizzati solo se la traccia viene elaborata con il flag RAW TIMESTAMP DI PROCESS \_ TRACE \_ MODE \_ \_ impostato.  
+2. Per ogni sessione o file di log in fase di elaborazione, ad esempio per ogni EVENT TRACE LOGFILE, controllare il campo \_ logFile.LogfileHeader.ReservedFlags per determinare la scala del timestamp per il \_ file di log. In base al valore di ReservedFlags, seguire uno di questi passaggi per determinare il valore da usare per timeStampScale nei passaggi rimanenti: <dl> a. If ReservedFlags == 1 (QPC): DOUBLE timeStampScale = 10000000.0 / logFile.LogfileHeader.PerfFreq.QuadPart;  
 b. If ReservedFlags == 2 (System time): DOUBLE timeStampScale = 1.0;  
-Si noti che i passaggi rimanenti non sono necessari per gli eventi che usano l'ora di sistema, poiché gli eventi forniscono già i timestamp in unità FILETIME. I passaggi rimanenti funzioneranno, ma non saranno necessari e introdurranno un piccolo errore di arrotondamento.  
-c. If ReservedFlags == 3 (contatore del ciclo CPU): DOUBLE timeStampScale = 10.0 / logFile.LogfileHeader.CpuSpeedInMHz;  
+Si noti che i passaggi rimanenti non sono necessari per gli eventi che usano l'ora di sistema, poiché gli eventi forniscono già i timestamp in unità FILETIME. I passaggi rimanenti funzioneranno ma non saranno necessari e introdurranno un piccolo errore di arrotondamento.  
+c. If ReservedFlags == 3 (CPU cycle counter): DOUBLE timeStampScale = 10.0 / logFile.LogfileHeader.CpuSpeedInMHz;  
 </dl> </dd> 3. On the FIRST call to your EventRecordCallback function for a particular log file, use data from the logFile (EVENT\_TRACE\_LOGFILE) and from the eventRecord (EVENT\_RECORD) to compute the timeStampBase that will be used for the remaining events in the log file: INT64 timeStampBase = logFile.LogfileHeader.StartTime.QuadPart - (INT64)(timeStampScale \* eventRecord.EventHeader.TimeStamp.QuadPart);  
 4. For each eventRecord (EVENT\_RECORD), convert the event’s timestamp into FILETIME as follows, using the timeStampScale and timeStampBase values calculated in steps 2 and 3: INT64 timeStampInFileTime = timeStampBase + (INT64)(timeStampScale \* eventRecord.EventHeader.TimeStamp.QuadPart);  
 </dl>
@@ -203,10 +179,10 @@ c. If ReservedFlags == 3 (contatore del ciclo CPU): DOUBLE timeStampScale = 10.0
 
 
 
-| Requisito | Valore |
+| Requisito | valore |
 |-------------------------------------|-------------------------------------------------------------------------------------|
-| Client minimo supportato<br/> | Windows 2000 Professional \[ app desktop app \| UWP\]<br/>                   |
-| Server minimo supportato<br/> | Windows 2000 App desktop UWP per le app \[ desktop di 2000 \| Server\]<br/>                         |
+| Client minimo supportato<br/> | Windows 2000 Professional app \[ desktop \| app UWP\]<br/>                   |
+| Server minimo supportato<br/> | Windows 2000 Server desktop apps UWP apps (App desktop UWP di Windows 2000 \[ \| Server)\]<br/>                         |
 | Intestazione<br/>                   | <dl> <dt>Wmistr.h</dt> </dl> |
 
 
@@ -215,7 +191,7 @@ c. If ReservedFlags == 3 (contatore del ciclo CPU): DOUBLE timeStampScale = 10.0
 
 <dl> <dt>
 
-[*ControlCallback*](/windows/win32/api/evntrace/nc-evntrace-wmidprequest)
+[*Metodo ControlCallback*](/windows/win32/api/evntrace/nc-evntrace-wmidprequest)
 </dt> <dt>
 
 [**PROPRIETÀ \_ DI TRACCIA \_ EVENTI**](/windows/win32/api/evntrace/ns-evntrace-event_trace_properties)

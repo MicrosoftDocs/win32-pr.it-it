@@ -4,18 +4,18 @@ ms.assetid: 27c03ced-a5fa-4ab4-b88e-5b78701da878
 title: displayInfo
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: fff0bb441b4535c0b6c6f3183671fbe8ade09183
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 9b0bbc3cf0f17d24672e30a110d95341c1cb902d
+ms.sourcegitcommit: c276a8912787b2cda74dcf54eb96df961bb1188b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "106312553"
+ms.lasthandoff: 08/20/2021
+ms.locfileid: "122622087"
 ---
 # <a name="displayinfo"></a>displayInfo
 
-Specifica le informazioni di visualizzazione di una proprietà. Deve essere presente un solo elemento [displayInfo]() per ogni [PropertyDescription](./propdesc-schema-propertydescription.md).
+Specifica le informazioni di visualizzazione di una proprietà. Deve essere presente un solo [elemento displayInfo]() per ogni [propertyDescription.](./propdesc-schema-propertydescription.md)
 
-Se sono presenti più elementi, viene usato l'ultimo. Se non viene specificato alcun elemento [displayInfo]() , le impostazioni predefinite degli attributi vengono applicate alla descrizione della proprietà.
+Se sono presenti più elementi, viene usato l'ultimo. Se non viene specificato alcun elemento [displayInfo,]() alla descrizione della proprietà vengono applicate le impostazioni predefinite dell'attributo.
 
 ## <a name="syntax"></a>Sintassi
 
@@ -266,15 +266,15 @@ Se sono presenti più elementi, viene usato l'ultimo. Se non viene specificato a
 
 | Elemento padre                                                   | Elementi figlio                                                                                                 |
 |------------------------------------------------------------------|----------------------------------------------------------------------------------------------------------------|
-| [propertyDescription](./propdesc-schema-propertydescription.md) | [stringFormat](./propdesc-schema-stringformat.md)                                                             |
+| [proprietàDescrizione](./propdesc-schema-propertydescription.md) | [Stringformat](./propdesc-schema-stringformat.md)                                                             |
 |                                                                  | [booleanFormat](./propdesc-schema-booleanformat.md)                                                           |
 |                                                                  | [numberFormat](./propdesc-schema-numberformat.md)                                                             |
-|                                                                  | [dateTimeFormat](./propdesc-schema-datetimeformat.md)                                                         |
+|                                                                  | [Datetimeformat](./propdesc-schema-datetimeformat.md)                                                         |
 |                                                                  | [enumeratedList](./propdesc-schema-enumeratedlist.md)                                                         |
-|                                                                  | [drawControl](./propdesc-schema-drawcontrol.md)                                                               |
+|                                                                  | [DrawControl](./propdesc-schema-drawcontrol.md)                                                               |
 |                                                                  | [editControl](./propdesc-schema-editcontrol.md)                                                               |
 |                                                                  | [filterControl](./propdesc-schema-filtercontrol.md)                                                           |
-|                                                                  | [queryControl](./propdesc-schema-querycontrol.md) (solo Windows Vista. Non supportato in Windows 7 e versioni successive. |
+|                                                                  | [queryControl](./propdesc-schema-querycontrol.md) (Windows Vista. Non supportato in Windows 7 e versioni successive. |
 
 
 
@@ -286,8 +286,8 @@ Se sono presenti più elementi, viene usato l'ultimo. Se non viene specificato a
 
 <table>
 <colgroup>
-<col style="width: 50%" />
-<col style="width: 50%" />
+<col  />
+<col  />
 </colgroup>
 <thead>
 <tr class="header">
@@ -298,11 +298,11 @@ Se sono presenti più elementi, viene usato l'ultimo. Se non viene specificato a
 <tbody>
 <tr class="odd">
 <td>defaultColumnWidth</td>
-<td>Pubblica. facoltativo. Il valore predefinito è &quot; 20 &quot; .</td>
+<td>Pubblica. facoltativo. Il valore predefinito &quot; è 20 &quot; .</td>
 </tr>
 <tr class="even">
 <td>displayType</td>
-<td>Pubblica. facoltativo. Il valore predefinito è &quot; String &quot; . Specifica il tipo della stringa di visualizzazione. Una volta impostati qui, i valori <strong>PROPDESC_DISPLAYTYPE</strong> associati vengono recuperati da <a href="/windows/win32/api/propsys/nf-propsys-ipropertydescription-getdisplaytype"><strong>IPropertyDescription:: GetDisplayType</strong></a>. Di seguito sono riportati i tipi validi. 
+<td>Pubblica. facoltativo. Il valore predefinito &quot; è &quot; String. Specifica il tipo della stringa di visualizzazione. Una volta impostati qui, i <strong>valori PROPDESC_DISPLAYTYPE</strong> vengono recuperati da <a href="/windows/win32/api/propsys/nf-propsys-ipropertydescription-getdisplaytype"><strong>IPropertyDescription::GetDisplayType</strong></a>. Di seguito sono riportati i tipi validi. 
 <table>
 <thead>
 <tr class="header">
@@ -312,12 +312,12 @@ Se sono presenti più elementi, viene usato l'ultimo. Se non viene specificato a
 </thead>
 <tbody>
 <tr class="odd">
-<td>string</td>
-<td>Valore predefinito. Il valore viene visualizzato sotto forma di stringa. Usare &quot; StringFormat &quot; per formattare. Il metodo restituisce PDDT_STRING.</td>
+<td>Stringa</td>
+<td>Valore predefinito. Il valore viene visualizzato come stringa. Usare &quot; stringFormat &quot; per formattare. Il metodo restituisce PDDT_STRING.</td>
 </tr>
 <tr class="even">
-<td>Number</td>
-<td>Valore predefinito per le proprietà numeriche. Il valore viene visualizzato sotto forma di numero. Usare &quot; NumberFormat &quot; per formattare. Il metodo restituisce PDDT_NUMBER.</td>
+<td>Numero</td>
+<td>Impostazione predefinita per le proprietà numeriche. Il valore viene visualizzato come numero. Usare &quot; numberFormat &quot; per formattare. Il metodo restituisce PDDT_NUMBER.</td>
 </tr>
 <tr class="odd">
 <td>Boolean</td>
@@ -325,11 +325,11 @@ Se sono presenti più elementi, viene usato l'ultimo. Se non viene specificato a
 </tr>
 <tr class="even">
 <td>Datetime</td>
-<td>Valore predefinito se <typeInfo type=&quot;DateTime&quot;> . Il valore viene visualizzato come data o ora. Utilizzare &quot; dateTimeFormat &quot; per formattare. Il metodo restituisce PDDT_DATETIME.</td>
+<td>Valore predefinito se <typeInfo type=&quot;DateTime&quot;> . Il valore viene visualizzato come data o ora. Usare &quot; dateTimeFormat &quot; per formattare. Il metodo restituisce PDDT_DATETIME.</td>
 </tr>
 <tr class="odd">
 <td>Enumerazione</td>
-<td>Il valore viene visualizzato come mapping della stringa di visualizzazione fornito &quot; dall' &quot; elemento enumeratedList. Il metodo restituisce PDDT_ENUMERATED.</td>
+<td>Il valore viene visualizzato come mapping di stringhe di visualizzazione fornito &quot; dall'elemento &quot; enumeratedList. Il metodo restituisce PDDT_ENUMERATED.</td>
 </tr>
 </tbody>
 </table>
@@ -338,7 +338,7 @@ Se sono presenti più elementi, viene usato l'ultimo. Se non viene specificato a
 </tr>
 <tr class="odd">
 <td>allineamento</td>
-<td>facoltativo. Il valore predefinito è &quot; Left &quot; . 
+<td>facoltativo. Il valore predefinito &quot; è &quot; Left. 
 <table>
 <thead>
 <tr class="header">
@@ -366,7 +366,7 @@ Se sono presenti più elementi, viene usato l'ultimo. Se non viene specificato a
 </tr>
 <tr class="even">
 <td>relativeDescriptionType</td>
-<td>facoltativo. Il valore predefinito è &quot; Generale &quot; . Specifica il modo in cui devono essere descritti due valori di questa proprietà quando vengono confrontati tra loro. In caso di equivalenza, &quot; &quot; viene sempre usato lo stesso. <a href="/windows/win32/api/propsys/nf-propsys-ipropertydescription-getrelativedescription"><strong>IPropertyDescription:: GetRelativeDescription</strong></a> e <a href="/windows/win32/api/propsys/nf-propsys-ipropertydescription-getrelativedescriptiontype"><strong>IPropertyDescription:: GetRelativeDescriptionType</strong></a> usano questo valore per determinare quale descrizione relativa Visualizza i nomi da usare. 
+<td>facoltativo. Il valore predefinito &quot; è &quot; Generale. Specifica come devono essere descritti due valori di questa proprietà quando vengono confrontati tra loro. In caso di equivalenza, &quot; viene &quot; sempre usato Same. <a href="/windows/win32/api/propsys/nf-propsys-ipropertydescription-getrelativedescription"><strong>IPropertyDescription::GetRelativeDescription</strong></a> e <a href="/windows/win32/api/propsys/nf-propsys-ipropertydescription-getrelativedescriptiontype"><strong>IPropertyDescription::GetRelativeDescriptionType</strong></a> usano questo valore per determinare i nomi visualizzati della descrizione relativa da usare. 
 <table>
 <thead>
 <tr class="header">
@@ -377,47 +377,47 @@ Se sono presenti più elementi, viene usato l'ultimo. Se non viene specificato a
 <tbody>
 <tr class="odd">
 <td>Generale</td>
-<td>Valore predefinito. USA &quot; &quot;  /  &quot; lo stesso &quot;  /  &quot; diverso &quot; .</td>
+<td>Valore predefinito. Usa &quot; diversi &quot;  /  &quot; . &quot;  /  &quot; &quot;</td>
 </tr>
 <tr class="even">
 <td>Data</td>
-<td>Valore predefinito se <typeInfo type=&quot;DateTime&quot;> . USA &quot; &quot;  /  &quot; lo stesso in un &quot;  /  &quot; secondo momento &quot; o usa &quot; &quot;  /  &quot; lo stesso più &quot;  /  &quot; recente &quot; o USA prima di tutto &quot; &quot;  /  &quot; &quot;  /  &quot; &quot; .</td>
+<td>Valore predefinito se <typeInfo type=&quot;DateTime&quot;> . Usa earlier Same Later oppure usa la versione più recente di o &quot; &quot;  /  &quot; &quot;  /  &quot; &quot; prima &quot; &quot;  /  &quot; &quot;  /  &quot; &quot; della stessa &quot; versione &quot;  /  &quot; &quot;  /  &quot; &quot; successiva.</td>
 </tr>
 <tr class="odd">
 <td>Dimensione</td>
-<td>USA &quot; &quot;  /  &quot; lo stesso più &quot;  /  &quot; grande&quot;</td>
+<td>Usa &quot; più piccoli con le stesse dimensioni &quot;  /  &quot; &quot;  /  &quot; maggiori&quot;</td>
 </tr>
 <tr class="even">
 <td>Conteggio</td>
-<td>USA &quot; &quot;  /  &quot; lo stesso più &quot;  /  &quot; grande&quot;</td>
+<td>Usa &quot; più piccoli con le stesse dimensioni &quot;  /  &quot; &quot;  /  &quot; maggiori&quot;</td>
 </tr>
 <tr class="odd">
 <td>Revisione</td>
-<td>USA &quot; precedenti &quot;  /  &quot; allo stesso &quot;  /  &quot; momento&quot;</td>
+<td>Usa &quot; in &quot;  /  &quot; precedenza lo stesso &quot;  /  &quot; in un secondo momento&quot;</td>
 </tr>
 <tr class="even">
 <td>Length</td>
-<td>USA &quot; più breve &quot;  /  &quot; lo stesso &quot;  /  &quot; più a lungo&quot;</td>
+<td>Usa &quot; più breve e più a &quot;  /  &quot; &quot;  /  &quot; lungo&quot;</td>
 </tr>
 <tr class="odd">
-<td>Duration</td>
-<td>USA &quot; più breve &quot;  /  &quot; lo stesso &quot;  /  &quot; più a lungo&quot;</td>
+<td>Durata</td>
+<td>Usa &quot; più breve e più a &quot;  /  &quot; &quot;  /  &quot; lungo&quot;</td>
 </tr>
 <tr class="even">
 <td>speed</td>
-<td>USA &quot; più lentamente &quot;  /  &quot; lo stesso &quot;  /  &quot; più velocemente&quot;</td>
+<td>Usa &quot; più lentamente lo stesso più &quot;  /  &quot; &quot;  /  &quot; velocemente&quot;</td>
 </tr>
 <tr class="odd">
 <td>Tariffa</td>
-<td>USA &quot; più lentamente &quot;  /  &quot; lo stesso &quot;  /  &quot; più velocemente&quot;</td>
+<td>Usa &quot; più lentamente lo stesso più &quot;  /  &quot; &quot;  /  &quot; velocemente&quot;</td>
 </tr>
 <tr class="even">
 <td>Classificazione</td>
-<td>USA &quot; &quot;  /  &quot; lo stesso &quot;  /  &quot; livello più alto&quot;</td>
+<td>Usa &quot; più in basso lo stesso valore più &quot;  /  &quot; &quot;  /  &quot; alto&quot;</td>
 </tr>
 <tr class="odd">
 <td>Priorità</td>
-<td>USA &quot; &quot;  /  &quot; lo stesso &quot;  /  &quot; livello più alto&quot;</td>
+<td>Usa &quot; più in basso lo stesso valore più &quot;  /  &quot; &quot;  /  &quot; alto&quot;</td>
 </tr>
 </tbody>
 </table>
@@ -426,7 +426,7 @@ Se sono presenti più elementi, viene usato l'ultimo. Se non viene specificato a
 </tr>
 <tr class="odd">
 <td>defaultSortDirection</td>
-<td>Specifica la direzione di ordinamento. Il valore predefinito è &quot; Ascending &quot; . 
+<td>Specifica la direzione di ordinamento. Il valore predefinito &quot; è &quot; Crescente. 
 <table>
 <thead>
 <tr class="header">
@@ -437,11 +437,11 @@ Se sono presenti più elementi, viene usato l'ultimo. Se non viene specificato a
 <tbody>
 <tr class="odd">
 <td>Crescente</td>
-<td>Ordinamento crescente.</td>
+<td>Ordina in ordine crescente.</td>
 </tr>
 <tr class="even">
 <td>Decrescente</td>
-<td>Ordinamento decrescente.</td>
+<td>Ordina in senso decrescente.</td>
 </tr>
 </tbody>
 </table>
