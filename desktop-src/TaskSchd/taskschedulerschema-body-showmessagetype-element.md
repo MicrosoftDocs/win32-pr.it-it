@@ -3,7 +3,7 @@ title: Elemento Body (showMessageType)
 description: Contiene il testo da visualizzare nel corpo della finestra di messaggio.
 ms.assetid: 69ea872a-7ca1-4464-9380-b35f74c9cb8e
 keywords:
-- Utilità di pianificazione elemento Body
+- Corpo dell'Utilità di pianificazione
 topic_type:
 - apiref
 api_name:
@@ -13,12 +13,12 @@ api_type:
 ms.topic: reference
 ms.date: 05/31/2018
 api_location: ''
-ms.openlocfilehash: 3486601153f8e9dd7dac14f83800dae00a79a9f8
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: c6b1fbacd450c05b8ff71521dacfa6e95c7efc70fc7d8909ca66f3390bf22295
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "104477470"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120010871"
 ---
 # <a name="body-showmessagetype-element"></a>Elemento Body (showMessageType)
 
@@ -30,7 +30,7 @@ Contiene il testo da visualizzare nel corpo della finestra di messaggio.
  />
 ```
 
-L'elemento **Body** è definito dal tipo complesso [**showMessageType**](taskschedulerschema-showmessagetype-complextype.md) .
+**L'elemento** Body è definito dal [**tipo complesso showMessageType.**](taskschedulerschema-showmessagetype-complextype.md)
 
 ## <a name="parent-element"></a>Elemento padre
 
@@ -38,15 +38,15 @@ L'elemento **Body** è definito dal tipo complesso [**showMessageType**](tasksch
 
 | Elemento                                                                                  | Derivato da                                                               | Descrizione                                               |
 |------------------------------------------------------------------------------------------|----------------------------------------------------------------------------|-----------------------------------------------------------|
-| [**ShowMessage (actionGroup)**](taskschedulerschema-showmessage-actiongroup-element.md) | [**showMessageType**](taskschedulerschema-showmessagetype-complextype.md) | Rappresenta un'azione che visualizza una finestra di messaggio.<br/> |
+| [**ShowMessage (actionGroup)**](taskschedulerschema-showmessage-actiongroup-element.md) | [**showMessageType**](taskschedulerschema-showmessagetype-complextype.md) | Rappresenta un'azione che mostra una finestra di messaggio.<br/> |
 
 
 
 ## <a name="remarks"></a>Commenti
 
-Per lo sviluppo in C++, vedere [**la proprietà MessageBody di IShowMessageAction**](/windows/desktop/api/taskschd/nf-taskschd-ishowmessageaction-get_messagebody).
+Per lo sviluppo C++, vedere [**Proprietà MessageBody di IShowMessageAction**](/windows/desktop/api/taskschd/nf-taskschd-ishowmessageaction-get_messagebody).
 
-Per lo sviluppo di script, vedere [**ShowMessageAction. MessageBody**](showmessageaction-messagebody.md).
+Per lo sviluppo di script, [**vedere ShowMessageAction.MessageBody**](showmessageaction-messagebody.md).
 
 ## <a name="requirements"></a>Requisiti
 
@@ -54,8 +54,8 @@ Per lo sviluppo di script, vedere [**ShowMessageAction. MessageBody**](showmessa
 
 | Requisito | Valore |
 |-------------------------------------|------------------------------------------------------|
-| Client minimo supportato<br/> | \[Solo app desktop di Windows Vista\]<br/>       |
-| Server minimo supportato<br/> | \[Solo app desktop Windows Server 2008\]<br/> |
+| Client minimo supportato<br/> | Windows Solo \[ app desktop di Vista\]<br/>       |
+| Server minimo supportato<br/> | Windows Solo app desktop server 2008 \[\]<br/> |
 
 
 

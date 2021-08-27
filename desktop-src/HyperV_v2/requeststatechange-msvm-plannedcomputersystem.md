@@ -1,5 +1,5 @@
 ---
-description: Richiede che lo stato del sistema pianificato venga modificato nel valore specificato.
+description: Richiede che lo stato del sistema pianificato sia impostato sul valore specificato.
 ms.assetid: 54ed9514-4f09-458e-8e86-a807ee66df17
 title: Metodo RequestStateChange della classe Msvm_PlannedComputerSystem
 ms.topic: reference
@@ -13,16 +13,16 @@ api_type:
 - COM
 api_location:
 - vmms.exe
-ms.openlocfilehash: 172ec383473510a30ccde66b2617e8ef02ffdb72
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 54ff75630e93392805d835032ca3405f97e0a26e58c1c61ab06ba18bb1a88856
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "106311778"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120083091"
 ---
-# <a name="requeststatechange-method-of-the-msvm_plannedcomputersystem-class"></a>Metodo RequestStateChange della classe MSVM \_ PlannedComputerSystem
+# <a name="requeststatechange-method-of-the-msvm_plannedcomputersystem-class"></a>Metodo RequestStateChange della classe Msvm \_ PlannedComputerSystem
 
-Richiede che lo stato del sistema pianificato venga modificato nel valore specificato.
+Richiede che lo stato del sistema pianificato sia impostato sul valore specificato.
 
 ## <a name="syntax"></a>Sintassi
 
@@ -41,7 +41,7 @@ uint32 RequestStateChange(
 
 <dl> <dt>
 
-*RequestedState* \[ in\]
+*RequestedState* \[ Pollici\]
 </dt> <dd>
 
 Stato richiesto per il sistema pianificato.
@@ -64,7 +64,7 @@ Stato richiesto per il sistema pianificato.
 
 <span id="Shut_Down"></span><span id="shut_down"></span><span id="SHUT_DOWN"></span>
 
-**Arresto** (4)
+**Arresta** (4)
 
 
 </dt> <dd></dd> <dt>
@@ -92,7 +92,7 @@ Stato richiesto per il sistema pianificato.
 
 <span id="Quiesce"></span><span id="quiesce"></span><span id="QUIESCE"></span>
 
-**Mettere in stato** (9)
+**Inattiva** (9)
 
 
 </dt> <dd></dd> <dt>
@@ -106,33 +106,33 @@ Stato richiesto per il sistema pianificato.
 
 <span id="Reset"></span><span id="reset"></span><span id="RESET"></span>
 
-**Reimposta** (11)
+**Reset** (11)
 
 
 </dt> <dd></dd> <dt>
 
 <span id="DMTF_Reserved"></span><span id="dmtf_reserved"></span><span id="DMTF_RESERVED"></span>
 
-**DMTF riservato** (..)
+**DmTF Reserved** (..)
 
 
 </dt> <dd></dd> <dt>
 
 <span id="Vendor_Reserved"></span><span id="vendor_reserved"></span><span id="VENDOR_RESERVED"></span>
 
-**Fornitore riservato** (32768.. 65535)
+**Vendor Reserved** (32768..65535)
 
 
 </dt> <dd></dd> </dl> </dd> <dt>
 
-*Processo* \[ di out\]
+*Processo* \[ Cambio\]
 </dt> <dd>
 
-Questo parametro non viene utilizzato e deve essere **null**.
+Questo parametro non viene usato e deve essere **Null.**
 
 </dd> <dt>
 
-*TimeoutPeriod* \[ in\]
+*TimeoutPeriod* \[ Pollici\]
 </dt> <dd>
 
 Questo parametro non viene usato.
@@ -156,7 +156,7 @@ Questo metodo restituisce uno dei valori seguenti.
 | <dl> <dt></dt><dt>32772</dt> </dl> |                                                                                    |
 | <dl> <dt></dt><dt>32773</dt> </dl> |                                                                                    |
 | <dl> <dt></dt><dt>32774</dt> </dl> |                                                                                    |
-| <dl> <dt></dt><dt>32775</dt> </dl> | Il valore specificato nel parametro *RequestedState* non è supportato.<br/> |
+| <dl> <dt></dt><dt>32775</dt> </dl> | Il valore specificato nel *parametro RequestedState* non è supportato.<br/> |
 | <dl> <dt></dt><dt>32776</dt> </dl> |                                                                                    |
 | <dl> <dt></dt><dt>32777</dt> </dl> |                                                                                    |
 | <dl> <dt></dt><dt>32778</dt> </dl> |                                                                                    |
@@ -171,10 +171,10 @@ Questo metodo restituisce uno dei valori seguenti.
 
 | Requisito | Valore |
 |-------------------------------------|---------------------------------------------------------------------------------------------------------|
-| Client minimo supportato<br/> | \[Solo app desktop di Windows 8\]<br/>                                                              |
-| Server minimo supportato<br/> | \[Solo app desktop Windows Server 2012\]<br/>                                                    |
-| Spazio dei nomi<br/>                | \\Virtualizzazione radice \\ v2<br/>                                                                     |
-| MOF<br/>                      | <dl> <dt>WindowsVirtualization. v2. mof</dt> </dl> |
+| Client minimo supportato<br/> | \[Windows 8 solo app desktop\]<br/>                                                              |
+| Server minimo supportato<br/> | \[Windows Server 2012 solo app desktop\]<br/>                                                    |
+| Spazio dei nomi<br/>                | Root \\ Virtualization \\ V2<br/>                                                                     |
+| MOF<br/>                      | <dl> <dt>WindowsVirtualization.V2.mof</dt> </dl> |
 | DLL<br/>                      | <dl> <dt>Vmms.exe</dt> </dl>                     |
 
 
@@ -183,7 +183,7 @@ Questo metodo restituisce uno dei valori seguenti.
 
 <dl> <dt>
 
-[**\_PlannedComputerSystem MSVM**](msvm-plannedcomputersystem.md)
+[**Msvm \_ PlannedComputerSystem**](msvm-plannedcomputersystem.md)
 </dt> </dl>
 
  

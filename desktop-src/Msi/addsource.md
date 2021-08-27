@@ -1,32 +1,32 @@
 ---
-description: Il valore della proprietà ADDSOURCE è un elenco di funzioni delimitate da virgole e deve essere installato per l'esecuzione dall'origine.
+description: Il valore della proprietà ADDSOURCE è un elenco di funzionalità delimitate da virgole che devono essere installate per l'esecuzione dall'origine.
 ms.assetid: 7bc38b49-72d8-4b0c-bd71-284a638e7860
-title: Proprietà ADDSOURCE
+title: AddSOURCE - proprietà
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: fd51d6f86060def1a7536134a0041f1e15178a91
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: 420ca53a96ddeb379a7e021db2c45157861acfb62d066cadfc7a163db7fbc307
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "106333578"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120078161"
 ---
-# <a name="addsource-property"></a>Proprietà ADDSOURCE
+# <a name="addsource-property"></a>AddSOURCE - proprietà
 
-Il valore della proprietà **addsource** è un elenco di funzioni delimitate da virgole e deve essere installato per l'esecuzione dall'origine. Le funzionalità devono essere presenti nella colonna funzionalità della tabella delle [funzionalità](feature-table.md). Per installare tutte le funzionalità come eseguite dall'origine, usare ADDSOURCE = ALL nella riga di comando. Non immettere ADDSOURCE = ALL nella tabella delle [Proprietà](property-table.md), perché in questo modo viene generato un pacchetto di esecuzione da un'origine che non può essere rimosso correttamente.
+Il valore della **proprietà ADDSOURCE** è un elenco di funzionalità delimitate da virgole che devono essere installate per l'esecuzione dall'origine. Le funzionalità devono essere presenti nella colonna Funzionalità della [tabella delle funzionalità](feature-table.md). Per installare tutte le funzionalità come eseguite dall'origine, usare ADDSOURCE=ALL nella riga di comando. Non immettere ADDSOURCE=ALL nella tabella delle proprietà [perché](property-table.md)viene generato un pacchetto run-from-source che non può essere rimosso correttamente.
 
 ## <a name="remarks"></a>Commenti
 
-I nomi delle funzionalità fanno distinzione tra maiuscole e minuscole Se il flag di bit LocalOnly è impostato nella colonna attributi della [tabella dei componenti](component-table.md) per un componente di una funzionalità nell'elenco, tale componente viene installato per l'esecuzione in locale.
+Per i nomi delle funzionalità viene fatto distinzione tra maiuscole e minuscole. Se il flag di bit LocalOnly è [](component-table.md) impostato nella colonna Attributi della tabella dei componenti per un componente di una funzionalità nell'elenco, tale componente viene installato per l'esecuzione locale.
 
-Il programma di installazione valuta sempre le seguenti proprietà nell'ordine seguente:
+Il programma di installazione valuta sempre le proprietà seguenti nell'ordine seguente:
 
 1.  [**ADDLOCAL**](addlocal.md)
-2.  [**RIMUOVERE**](remove.md)
+2.  [**Rimuovere**](remove.md)
 3.  **ADDSOURCE**
 4.  [**ADDDEFAULT**](adddefault.md)
 5.  [**REINSTALL**](reinstall.md)
-6.  [**PUBBLICIZZARE**](advertise.md)
+6.  [**Pubblicizzare**](advertise.md)
 7.  [**COMPADDLOCAL**](compaddlocal.md)
 8.  [**COMPADDSOURCE**](compaddsource.md)
 9.  [**COMPADDDEFAULT**](compadddefault.md)
@@ -34,12 +34,12 @@ Il programma di installazione valuta sempre le seguenti proprietà nell'ordine s
 11. [**FILEADDSOURCE**](fileaddsource.md)
 12. [**FILEADDDEFAULT**](fileadddefault.md)
 
-Ad esempio:
+Esempio:
 
--   Se la riga di comando specifica: ADDLOCAL = ALL, ADDSOURCE = **funzionalità**, tutte le funzionalità vengono prima impostate su run-local, quindi la **funzionalità** è impostata su Run-from-source.
--   Se la riga di comando è: ADDSOURCE = ALL, ADDLOCAL = la **funzionalità**, First **funzionalità** è impostata su run-local e quindi quando viene valutato addsource = all, tutte le funzionalità (inclusa la **funzionalità**) vengono reimpostate su Run-from-source.
+-   Se la riga di comando specifica: ADDLOCAL=ALL, ADDSOURCE = **MyFeature**, tutte le funzionalità vengono prima impostate su run-local e quindi **MyFeature** su run-from-source.
+-   Se la riga di comando è: ADDSOURCE=ALL, ADDLOCAL=**MyFeature**, prima **MyFeature** è impostato su run-local e quindi quando viene valutato ADDSOURCE=ALL, tutte le funzionalità (inclusa **MyFeature**) vengono reimpostate su run-from-source.
 
-Il programma di installazione imposta la proprietà [**preselezionata**](preselected.md) sul valore "1" durante la ripresa di un'installazione sospesa o quando una delle proprietà sopra indicate viene specificata nella riga di comando.
+Il programma [](preselected.md) di installazione imposta la proprietà preselezionata sul valore "1" durante la ripresa di un'installazione sospesa o quando una delle proprietà precedenti viene specificata nella riga di comando.
 
 ## <a name="requirements"></a>Requisiti
 
@@ -47,7 +47,7 @@ Il programma di installazione imposta la proprietà [**preselezionata**](presele
 
 | Requisito | Valore |
 |--------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Versione<br/> | Windows Installer 5,0 in Windows Server 2012, Windows 8, Windows Server 2008 R2 o Windows 7. Windows Installer 4,0 o Windows Installer 4,5 in Windows Server 2008 o Windows Vista. Windows Installer in Windows Server 2003 o Windows XP. Vedere i [requisiti di Run-Time Windows Installer](windows-installer-portal.md) per informazioni sul Service Pack minimo di Windows richiesto da una versione Windows Installer.<br/> |
+| Versione<br/> | Windows Programma di installazione 5.0 Windows Server 2012, Windows 8, Windows Server 2008 R2 o Windows 7. Windows Programma di installazione 4.0 o Windows Installer 4.5 in Windows Server 2008 o Windows Vista. Windows Programma di installazione Windows Server 2003 o Windows XP. Vedere i [Windows di installazione Run-Time](windows-installer-portal.md) per informazioni sul Service Pack Windows minimo richiesto da una versione Windows Installer.<br/> |
 
 
 

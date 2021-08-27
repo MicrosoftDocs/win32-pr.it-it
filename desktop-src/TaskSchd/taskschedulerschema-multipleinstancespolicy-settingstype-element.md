@@ -3,7 +3,7 @@ title: Elemento MultipleInstancesPolicy (settingsType)
 description: Specifica i criteri che definiscono il modo in cui il Utilità di pianificazione gestisce più istanze dell'attività.
 ms.assetid: ec82d396-f83c-4684-98ab-f70e15ada075
 keywords:
-- Utilità di pianificazione elemento MultipleInstancesPolicy
+- Elemento MultipleInstancesPolicy Utilità di pianificazione
 topic_type:
 - apiref
 api_name:
@@ -13,12 +13,12 @@ api_type:
 ms.topic: reference
 ms.date: 05/31/2018
 api_location: ''
-ms.openlocfilehash: f5bcbbd26880f1ccced3e71b44dc93993d20f4a9
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: 8d7728d2b39fbcbed060fce409f4d721b59ef5ca324cd141d7777a5ffed110a0
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "106301906"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120072451"
 ---
 # <a name="multipleinstancespolicy-settingstype-element"></a>Elemento MultipleInstancesPolicy (settingsType)
 
@@ -30,7 +30,7 @@ Specifica i criteri che definiscono il modo in cui il Utilità di pianificazione
  />
 ```
 
-L'elemento **MultipleInstancesPolicy** è definito dal tipo semplice [**multipleInstancesPolicyType**](taskschedulerschema-multipleinstancespolicytype-simpletype.md) .
+**L'elemento MultipleInstancesPolicy** è definito dal tipo semplice [**multipleInstancesPolicyType.**](taskschedulerschema-multipleinstancespolicytype-simpletype.md)
 
 ## <a name="parent-element"></a>Elemento padre
 
@@ -44,22 +44,22 @@ L'elemento **MultipleInstancesPolicy** è definito dal tipo semplice [**multiple
 
 ## <a name="remarks"></a>Commenti
 
-Per lo sviluppo in C++, vedere [**la proprietà MultipleInstances di ITaskSettings**](/windows/desktop/api/taskschd/nf-taskschd-itasksettings-get_multipleinstances).
+Per lo sviluppo in C++, vedere [**Proprietà MultipleInstances di ITaskSettings.**](/windows/desktop/api/taskschd/nf-taskschd-itasksettings-get_multipleinstances)
 
-Per lo sviluppo di script, vedere [**TaskSettings. MultipleInstances**](tasksettings-multipleinstances.md).
+Per lo sviluppo di script, [**vedere TaskSettings.MultipleInstances.**](tasksettings-multipleinstances.md)
 
-### <a name="restricted-values"></a>Valori con restrizioni
+### <a name="restricted-values"></a>Valori limitati
 
 Questo elemento è limitato ai valori seguenti.
 
--   Parallel: avvia una nuova istanza mentre è in esecuzione un'istanza esistente.
--   Queue: avvia una nuova istanza dell'attività dopo il completamento di tutte le altre istanze dell'attività.
--   IgnoreNew: valore predefinito. Non avvia una nuova istanza di se è in esecuzione un'istanza esistente dell'attività.
+-   Parallelo: avvia una nuova istanza mentre è in esecuzione un'istanza esistente.
+-   Coda: avvia una nuova istanza dell'attività dopo il completamento di tutte le altre istanze dell'attività.
+-   IgnoreNew: impostazione predefinita. Non avvia una nuova istanza se è in esecuzione un'istanza esistente dell'attività.
 -   StopExisting: arresta un'istanza esistente dell'attività prima di avviare una nuova istanza.
 
 ## <a name="examples"></a>Esempio
 
-Nel codice XML seguente viene definito un elemento Settings che consente l'esecuzione in parallelo di più istanze dell'attività.
+Nel codice XML seguente viene definito un elemento settings che consente l'esecuzione parallela di più istanze dell'attività.
 
 
 ```XML
@@ -76,8 +76,8 @@ Nel codice XML seguente viene definito un elemento Settings che consente l'esecu
 
 | Requisito | Valore |
 |-------------------------------------|------------------------------------------------------|
-| Client minimo supportato<br/> | \[Solo app desktop di Windows Vista\]<br/>       |
-| Server minimo supportato<br/> | \[Solo app desktop Windows Server 2008\]<br/> |
+| Client minimo supportato<br/> | Windows Solo \[ app desktop Vista\]<br/>       |
+| Server minimo supportato<br/> | Windows Solo app desktop di Server 2008 \[\]<br/> |
 
 
 
@@ -85,7 +85,7 @@ Nel codice XML seguente viene definito un elemento Settings che consente l'esecu
 
 <dl> <dt>
 
-[Elementi dello schema Utilità di pianificazione](task-scheduler-schema-elements.md)
+[Utilità di pianificazione di schema](task-scheduler-schema-elements.md)
 </dt> </dl>
 
  

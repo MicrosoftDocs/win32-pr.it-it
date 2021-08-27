@@ -1,30 +1,30 @@
 - name: Piattaforma filtro Windows
   href: windows-filtering-platform-start-page.md
   items:
-    - name: Novità della piattaforma filtro Windows
+    - name: Novità di Windows Filtering Platform
       href: what-s-new-in-windows-filtering-platform.md
-    - name: Informazioni sulla piattaforma filtro Windows
+    - name: Informazioni Windows filtering platform
       href: about-windows-filtering-platform.md
       items:
-        - name: Architettura WFP
+        - name: Architettura del WFP
           href: windows-filtering-platform-architecture-overview.md
-        - name: API PAM
+        - name: WFP API
           href: api-sets.md
           items:
             - name: Modello a oggetti
               href: object-model.md
-            - name: Gestione degli oggetti
+            - name: Gestione oggetti
               href: object-management.md
-            - name: Pam Version-Independent i nomi e la destinazione di versioni specifiche di Windows
+            - name: Nomi Version-Independent wfp e destinazione di versioni specifiche di Windows
               href: wfp-version-independent-names-and-targeting-specific-versions-of-windows.md
-        - name: Operazione PAM
+        - name: Operazione WFP
           href: basic-operation.md
           items:
             - name: Flussi di pacchetti TCP
               href: tcp-packet-flows.md
             - name: Flussi di pacchetti UDP
               href: udp-packet-flows.md
-            - name: Arbitraggio di filtro
+            - name: Filtra arbitraggio
               href: filter-arbitration.md
         - name: Configurazione di WFP
           href: wfp-configuration.md
@@ -33,48 +33,48 @@
               href: access-control.md
             - name: Assegnazione di pesi dei filtri
               href: filter-weight-assignment.md
-        - name: Application Layer Enforcement (ALE)
+        - name: Applicazione a livello di applicazione (ALE)
           href: application-layer-enforcement--ale-.md
           items:
             - name: Livelli ALE
               href: ale-layers.md
             - name: Filtro con stato ALE
               href: ale-stateful-filtering.md
-            - name: Traffico di broadcast/multicast ALE
+            - name: Traffico multicast/broadcast ALE
               href: ale-multicast-broadcast-traffic.md
             - name: Riautorizzazione ALE
               href: ale-re-authorization.md
-            - name: Personalizzazione del flusso di ALE
+            - name: Personalizzazione Flow ale
               href: ale-flow-customization.md
         - name: Configurazione IPsec
           href: ipsec-configuration.md
           items:
             - name: modalità di sicurezza trasporto
               href: regular-transport-mode.md
-            - name: Modalità trasporto individuazione negoziazione
+            - name: Modalità di trasporto individuazione negoziazione
               href: negotiation-discovery-transport-mode.md
-            - name: Modalità di trasporto individuazione negoziazione in modalità limite
+            - name: Modalità trasporto individuazione negoziazione in modalità limite
               href: negotiation-discovery-transport-mode-in-boundary-mode.md
-            - name: Modalità tunnel
+            - name: Tunnel Modalità
               href: tunnel-mode.md
             - name: Crittografia garantita
               href: guaranteed-encryption.md
-            - name: Autorizzazione identità remota
+            - name: Autorizzazione dell'identità remota
               href: remote-identity-authorization.md
-            - name: SA manuale
+            - name: Firma di accesso condiviso manuale
               href: manual-ipsec-sas.md
             - name: Esenzioni IKE/AuthIP
               href: ike-exemptions.md
-        - name: Monitoraggio WFP
+        - name: Monitoraggio del WFP
           href: wfp-monitoring.md
           items:
             - name: Controllo
               href: auditing-and-logging.md
             - name: Registrazione
               href: logging.md
-            - name: Notifiche delle modifiche
+            - name: Notifiche di modifica
               href: change-notifications.md
-    - name: Uso della piattaforma filtro Windows
+    - name: Uso della Windows di filtro
       href: using-windows-filtering-platform.md
       items:
         - name: Introduzione
@@ -84,12 +84,12 @@
               href: installing-a-provider.md
             - name: Disinstallazione di un provider
               href: uninstalling-a-provider.md
-        - name: Filtraggio del traffico
+        - name: Filtro del traffico
           href: filtering-traffic.md
           items:
-            - name: Consentire e bloccare applicazioni e utenti
+            - name: Autorizzazione e blocco di applicazioni e utenti
               href: permitting-and-blocking-applications-and-users.md
-            - name: Riserva di porte
+            - name: Prenotazione di porte
               href: reserving-ports.md
             - name: Uso delle opzioni di classificazione
               href: using-classify-options.md
@@ -98,66 +98,66 @@
         - name: Osservazione del sistema
           href: observing-the-system.md
           items:
-            - name: Popolamento di condizioni di filtro
+            - name: Popolamento delle condizioni di filtro
               href: populating-filter-conditions.md
             - name: Visualizzazione dello stato corrente
               href: viewing-current-state.md
-            - name: Monitoraggio delle modifiche al filtro
+            - name: Monitoraggio delle modifiche ai filtri
               href: monitoring-filter-changes.md
-            - name: Visualizzazione di eventi NET
+            - name: Visualizzazione di eventi net
               href: displaying-net-events.md
         - name: Gestione della sicurezza
           href: managing-security.md
           items:
-            - name: Eliminazione del filtro intralciata
+            - name: Impedisci l'eliminazione dei filtri
               href: hindering-filter-deletion.md
-            - name: Esecuzione forzata dell'eliminazione del filtro
+            - name: Eliminazione forzata del filtro
               href: forcing-filter-deletion.md
         - name: Configurazione di IPSec
           href: configuring-ipsec.md
           items:
             - name: Uso della modalità di trasporto
               href: using-transport-mode.md
-            - name: Uso della modalità tunnel
+            - name: Uso della Tunnel predefinita
               href: using-tunnel-mode.md
-            - name: Digitazione manuale SA
+            - name: Keying sa manuale
               href: manual-sa-keying.md
         - name: Procedure consigliate
           href: best-practices.md
-    - name: Informazioni di riferimento sulle API della piattaforma filtro Windows
+    - name: Windows Informazioni di riferimento sulle API della piattaforma di filtro
       href: fwp-reference.md
       items:
-        - name: Costanti WFP
+        - name: Costanti wfp
           href: windows-filtering-platform-api-constants.md
           items:
-            - name: Identificatori Right di accesso
+            - name: Identificatori dei diritti di accesso
               href: access-right-identifiers.md
-            - name: Identificatori di callout predefiniti
+            - name: Identificatori callout predefiniti
               href: built-in-callout-identifiers.md
-            - name: Identificatori di moduli di trasparenza predefiniti
+            - name: Identificatori di modulo di keying predefiniti
               href: built-in-keying-module-identifiers.md
             - name: Identificatori di contesto del provider predefiniti
               href: built-in-provider-context-identifiers.md
-            - name: Identificatori provider predefiniti
+            - name: Identificatori di provider predefiniti
               href: built-in-provider-identifiers.md
-            - name: Identificatori di contesto di filtro
+            - name: Filtrare gli identificatori di contesto
               href: filter-context-identifiers.md
-            - name: Identificatori di peso del filtro
+            - name: Filtrare gli identificatori di peso
               href: filter-weight-identifiers.md
             - name: Condizioni di filtro
               href: filtering-conditions.md
               items:
-                - name: Filtraggio degli identificatori di condizione
+                - name: Filtro degli identificatori di condizione
                   href: filtering-condition-identifiers-.md
                 - name: Flag di condizione di filtro
                   href: filtering-condition-flags-.md
                 - name: Condizioni di filtro disponibili a ogni livello di filtro
                   href: filtering-conditions-available-at-each-filtering-layer.md
-            - name: Filtraggio degli identificatori del livello
+            - name: Filtro degli identificatori di livello
               href: management-filtering-layer-identifiers-.md
-            - name: Filtraggio degli identificatori di sottolivello
+            - name: Filtro degli identificatori dei sottolivelli
               href: management-filtering-sublayer-identifiers.md
-            - name: Codici di errore di WFP
+            - name: Codici di errore WFP
               href: wfp-error-codes.md
         - name: Tipi enumerati WFP
           href: fwp-enums.md
@@ -392,7 +392,7 @@
             - name: Funzioni di gestione
               href: fwp-mgmt-functions.md
               items:
-                - name: Gestione dei callout
+                - name: Gestione callout
                   href: callout-management.md
                   items:
                     - name: FWPM_CALLOUT_CHANGE_CALLBACK0
@@ -423,7 +423,7 @@
                       href: /windows/desktop/api/Fwpmu/nf-fwpmu-fwpmcalloutsubscriptionsget0
                     - name: FwpmCalloutUnsubscribeChanges0
                       href: /windows/desktop/api/Fwpmu/nf-fwpmu-fwpmcalloutunsubscribechanges0
-                - name: Gestione degli oggetti di connessione
+                - name: Gestione oggetti connessione
                   href: connection-object-management.md
                   items:
                     - name: FWPM_CONNECTION_CALLBACK0
@@ -481,7 +481,7 @@
                       href: /windows/desktop/api/Fwpmu/nf-fwpmu-fwpmneteventsubscriptionsget0
                     - name: FwpmNetEventUnsubscribe0
                       href: /windows/desktop/api/Fwpmu/nf-fwpmu-fwpmneteventunsubscribe0
-                - name: Gestione dei filtri
+                - name: Gestione filtri
                   href: filter-management.md
                   items:
                     - name: FWPM_FILTER_CHANGE_CALLBACK0
@@ -578,7 +578,7 @@
                       href: /windows/desktop/api/Fwpmu/nf-fwpmu-fwpmprovidercontextsubscriptionsget0
                     - name: FwpmProviderContextUnsubscribeChanges0
                       href: /windows/desktop/api/Fwpmu/nf-fwpmu-fwpmprovidercontextunsubscribechanges0
-                - name: Gestione provider
+                - name: Gestione dei provider
                   href: provider-management.md
                   items:
                     - name: FWPM_PROVIDER_CHANGE_CALLBACK0
@@ -626,7 +626,7 @@
                       href: /windows/desktop/api/Fwpmu/nf-fwpmu-fwpmsessiondestroyenumhandle0
                     - name: FwpmSessionEnum0
                       href: /windows/desktop/api/Fwpmu/nf-fwpmu-fwpmsessionenum0
-                - name: Gestione Sub-Layer
+                - name: Sub-Layer gestione
                   href: sub-layer-management.md
                   items:
                     - name: FWPM_SUBLAYER_CHANGE_CALLBACK0

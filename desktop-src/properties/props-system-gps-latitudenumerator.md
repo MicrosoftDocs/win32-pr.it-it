@@ -1,19 +1,19 @@
 ---
-description: Il numeratore di PKEY \_ GPS \_ latitudine.
+description: Numeratore della latitudine \_ GPS PKEY. \_
 ms.assetid: 2f70a640-7093-49c2-9f2c-99af870ecaf7
-title: System. GPS. LatitudeNumerator
+title: System.GPS.LatitudeNumerator
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: d974082109cab4d2e9ec18e9eefc410b6a116359
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: e638f5196111a44d5f64de81bb60af3b32f8b99545c8a6045998929ed3c92f89
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "104234217"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120010411"
 ---
-# <a name="systemgpslatitudenumerator"></a>System. GPS. LatitudeNumerator
+# <a name="systemgpslatitudenumerator"></a>System.GPS.LatitudeNumerator
 
-Il numeratore di PKEY \_ GPS \_ latitudine.
+Numeratore della latitudine \_ GPS PKEY. \_
 
 ## <a name="windows-10-version-1703-windows-10-version-1607-windows-10-version-1511-windows-10-version-1507-windows-81-windows-8-windows-7-windows-vista"></a>Windows 10, versione 1703, Windows 10, versione 1607, Windows 10, versione 1511, Windows 10, versione 1507, Windows 8.1, Windows 8, Windows 7, Windows Vista
 
@@ -32,7 +32,7 @@ propertyDescription
 
 ## <a name="remarks"></a>Commenti
 
-I valori PKEY sono definiti in Propkey. h.
+I valori PKEY sono definiti in Propkey.h.
 
 ## <a name="related-topics"></a>Argomenti correlati
 
@@ -47,13 +47,13 @@ I valori PKEY sono definiti in Propkey. h.
 [labelInfo](./propdesc-schema-labelinfo.md)
 </dt> <dt>
 
-[typeInfo](./propdesc-schema-typeinfo.md)
+[Typeinfo](./propdesc-schema-typeinfo.md)
 </dt> <dt>
 
 [displayInfo](./propdesc-schema-displayinfo.md)
 </dt> <dt>
 
-[stringFormat](./propdesc-schema-stringformat.md)
+[Stringformat](./propdesc-schema-stringformat.md)
 </dt> <dt>
 
 [booleanFormat](./propdesc-schema-booleanformat.md)
@@ -62,7 +62,7 @@ I valori PKEY sono definiti in Propkey. h.
 [numberFormat](./propdesc-schema-numberformat.md)
 </dt> <dt>
 
-[dateTimeFormat](./propdesc-schema-datetimeformat.md)
+[Datetimeformat](./propdesc-schema-datetimeformat.md)
 </dt> <dt>
 
 [enumeratedList](./propdesc-schema-enumeratedlist.md)

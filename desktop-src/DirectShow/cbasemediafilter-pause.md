@@ -1,7 +1,7 @@
 ---
-description: Sospende l'oggetto. Implementa il metodo IMediaFilter::P ause.
+description: Sospende l'oggetto . Implementa il metodo IMediaFilter::P ause.
 ms.assetid: 4f4cbe7e-3004-4731-864f-737c2f51afff
-title: Metodo CBaseMediaFilter. pause (Amfilter. h)
+title: Metodo CBaseMediaFilter.Pause (Amfilter.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -16,16 +16,16 @@ api_location:
 - Strmbase.dll
 - Strmbasd.lib
 - Strmbasd.dll
-ms.openlocfilehash: a75cbcf1d629b997584cff35ebd4095094fe8607
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: 0d7c2f68ca8753826776c804ff63e11454110d9d5287f29a61343ce4c2dcec85
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "106325077"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120079367"
 ---
-# <a name="cbasemediafilterpause-method"></a>CBaseMediaFilter. pause (metodo)
+# <a name="cbasemediafilterpause-method"></a>Metodo CBaseMediaFilter.Pause
 
-Sospende l'oggetto. Implementa il metodo [**IMediaFilter::P ause**](/windows/desktop/api/Strmif/nf-strmif-imediafilter-pause) .
+Sospende l'oggetto . Implementa il [**metodo IMediaFilter::P ause.**](/windows/desktop/api/Strmif/nf-strmif-imediafilter-pause)
 
 ## <a name="syntax"></a>Sintassi
 
@@ -42,11 +42,11 @@ Questo metodo non presenta parametri.
 
 ## <a name="return-value"></a>Valore restituito
 
-Restituisce \_ OK.
+Restituisce S \_ OK.
 
 ## <a name="remarks"></a>Commenti
 
-Nella classe di base, questo metodo imposta la variabile membro di [**\_ stato CBaseMediaFilter:: m**](cbasemediafilter-m-state.md) su stato \_ sospeso ma non esegue alcuna operazione.
+Nella classe di base questo metodo imposta la variabile membro [**CBaseMediaFilter::m \_ State**](cbasemediafilter-m-state.md) su State \_ Paused, ma non esegue altre operazioni.
 
 ## <a name="requirements"></a>Requisiti
 
@@ -54,8 +54,8 @@ Nella classe di base, questo metodo imposta la variabile membro di [**\_ stato C
 
 | Requisito | Valore |
 |--------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Intestazione<br/>  | <dl> <dt>Amfilter. h (include Streams. h)</dt> </dl>                                                                                  |
-| Libreria<br/> | <dl> <dt>Strmbase. lib (compilazioni finali); </dt> <dt>Strmbasd. lib (build di debug)</dt> </dl> |
+| Intestazione<br/>  | <dl> <dt>Amfilter.h (includere Flussi.h)</dt> </dl>                                                                                  |
+| Libreria<br/> | <dl> <dt>Strmbase.lib (build di vendita al dettaglio); </dt> <dt>Strmbasd.lib (build di debug)</dt> </dl> |
 
 
 

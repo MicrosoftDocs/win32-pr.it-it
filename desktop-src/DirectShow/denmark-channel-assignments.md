@@ -1,23 +1,23 @@
 ---
 description: Questo argomento elenca le tabelle di frequenza usate per l'ottimizzazione della TV analoga per la Danimarca.
 ms.assetid: 6ef5e1b9-08a0-4f3e-a26f-cf5bdf4ea464
-title: Assegnazioni canale Danimarca
+title: Assegnazioni di canali in Danimarca
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 33597d1f6a3d0e32365630362dcd3d7dd83272a8
-ms.sourcegitcommit: a47bd86f517de76374e4fff33cfeb613eb259a7e
+ms.openlocfilehash: dd54c7161be11375fb899b985ecbf1f00f5d23de31e808fcfd23616b984932f2
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/06/2021
-ms.locfileid: "103876057"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120079271"
 ---
-# <a name="denmark-channel-assignments"></a>Assegnazioni canale Danimarca
+# <a name="denmark-channel-assignments"></a>Assegnazioni di canali in Danimarca
 
 Questo argomento elenca le tabelle di frequenza usate per l'ottimizzazione della TV analoga per la Danimarca.
 
-Per una spiegazione delle tabelle seguenti, vedere [tabelle e assegnazioni](tables-and-assignments.md).
+Per una spiegazione delle tabelle seguenti, vedere [Tabelle e assegnazioni](tables-and-assignments.md).
 
-Le seguenti assegnazioni di canale sono state introdotte in Windows 7. In precedenza, veniva usata la [tabella della frequenza Unicable](unicable-frequency-table.md) .
+Le assegnazioni di canale seguenti sono state introdotte nella Windows 7. In precedenza, [era stata usata la tabella di frequenza unicable.](unicable-frequency-table.md)
 
 ## <a name="cable-assignments"></a>Assegnazioni di cavi
 
@@ -138,7 +138,7 @@ Le seguenti assegnazioni di canale sono state introdotte in Windows 7. In preced
 
 <dl> <dt>
 
-[Ottimizzazione della TV analoga internazionale](international-analog-tv-tuning.md)
+[Ottimizzazione tv analogica internazionale](international-analog-tv-tuning.md)
 </dt> </dl>
 
  

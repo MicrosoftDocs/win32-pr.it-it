@@ -1,10 +1,10 @@
 ---
-title: Struttura WINBIO_BSP_SCHEMA ( \_ tipi WINBIO. h)
-description: Descrive le funzionalità di un provider di servizi biometrico.
+title: WINBIO_BSP_SCHEMA struttura (Winbio \_ types.h)
+description: Descrive le funzionalità di un provider di servizi biometrici.
 ms.assetid: d690c735-55a1-4e2c-8b39-d52a1972bf93
 keywords:
-- Struttura di WINBIO_BSP_SCHEMA Windows Biometric Framework API
-- API Windows Biometric Framework puntatore alla struttura PWINBIO_BSP_SCHEMA
+- WINBIO_BSP_SCHEMA struttura Windows'API Biometric Framework
+- PWINBIO_BSP_SCHEMA puntatore alla struttura Windows'API Biometric Framework
 topic_type:
 - apiref
 api_name:
@@ -15,16 +15,16 @@ api_type:
 - HeaderDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: f8ae63aefb64eb22f454559b76e9922242ca9530
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: ff46f5484addb0221d9e441df73ecca3e8283da88ee7849e4362314aa1c375e0
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "104476876"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120080781"
 ---
-# <a name="winbio_bsp_schema-structure"></a>\_ \_ Struttura dello schema BSP WINBIO
+# <a name="winbio_bsp_schema-structure"></a>Struttura dello \_ SCHEMA BSP WINBIO \_
 
-La **struttura \_ \_ dello schema BSP WINBIO** descrive le funzionalità di un provider di servizi biometrico. Questa struttura viene utilizzata dalla funzione [**WinBioEnumServiceProviders**](/windows/desktop/api/Winbio/nf-winbio-winbioenumserviceproviders) .
+La **struttura DELLO \_ \_ SCHEMA BSP WINBIO** descrive le funzionalità di un provider di servizi biometrici. Questa struttura viene usata dalla [**funzione WinBioEnumServiceProviders.**](/windows/desktop/api/Winbio/nf-winbio-winbioenumserviceproviders)
 
 ## <a name="syntax"></a>Sintassi
 
@@ -48,35 +48,35 @@ typedef struct _WINBIO_BSP_SCHEMA {
 **BiometricFactor**
 </dt> <dd>
 
-Tipo di misurazione biometrica usata dal dispositivo. Attualmente deve essere **WINBIO \_ \_ impronta digitale del tipo**.
+Tipo di misurazione biometrica usata da questo dispositivo. Attualmente deve essere **WINBIO \_ TYPE \_ FINGERPRINT.**
 
 </dd> <dt>
 
 **BspId**
 </dt> <dd>
 
-Valore che identifica in modo univoco questo componente del provider di servizi biometrico.
+Valore che identifica in modo univoco questo componente del provider di servizi biometrici.
 
 </dd> <dt>
 
 **Descrizione**
 </dt> <dd>
 
-Stringa Unicode con terminazione **null** che contiene una descrizione del provider di servizi biometrici.
+Stringa **Unicode con** terminazione NULL che contiene una descrizione del provider di servizi biometrici.
 
 </dd> <dt>
 
 **Fornitore**
 </dt> <dd>
 
-Stringa Unicode con terminazione **null** che contiene il nome del fornitore che fornisce il provider di servizi biometrico.
+Stringa Unicode con terminazione **NULL** contenente il nome del fornitore che fornisce il provider di servizi biometrici.
 
 </dd> <dt>
 
-**Versione**
+**Version**
 </dt> <dd>
 
-Struttura [**di \_ versione di WINBIO**](winbio-version.md) che contiene la versione software del componente provider di servizi biometrico.
+Struttura [**VERSION DI WINBIO \_**](winbio-version.md) che contiene la versione software del componente del provider di servizi biometrici.
 
 </dd> </dl>
 
@@ -86,9 +86,9 @@ Struttura [**di \_ versione di WINBIO**](winbio-version.md) che contiene la vers
 
 | Requisito | Valore |
 |-------------------------------------|---------------------------------------------------------------------------------------------------------------|
-| Client minimo supportato<br/> | \[Solo app desktop di Windows 7\]<br/>                                                                    |
-| Server minimo supportato<br/> | Solo app desktop Windows Server 2008 R2 \[\]<br/>                                                       |
-| Intestazione<br/>                   | <dl> <dt>\_Tipi WinBio. h (includere WinBio. h)</dt> </dl> |
+| Client minimo supportato<br/> | Windows 7 \[ app desktop\]<br/>                                                                    |
+| Server minimo supportato<br/> | Windows Solo app desktop server 2008 R2 \[\]<br/>                                                       |
+| Intestazione<br/>                   | <dl> <dt>Winbio \_ types.h (include Winbio.h)</dt> </dl> |
 
 
 

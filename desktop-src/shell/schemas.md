@@ -1,5 +1,5 @@
 ---
-description: In questa sezione vengono descritti gli schemi utilizzati dalla shell di Windows.
+description: In questa sezione vengono descritti gli schemi usati da Windows Shell.
 title: Schemi della shell
 ms.topic: article
 ms.date: 05/31/2018
@@ -9,16 +9,16 @@ api_type: ''
 api_location: ''
 topic_type:
 - kbArticle
-ms.openlocfilehash: cffedfcb9678d42e322ce9c4cd34c26f9b82f016
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 3d1cc078129694f855c4eab6189220498e181e584e9edaf18b6464ab8bc36860
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104976983"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120090171"
 ---
 # <a name="shell-schemas"></a>Schemi della shell
 
-In questa sezione vengono descritti gli schemi utilizzati dalla shell di Windows.
+In questa sezione vengono descritti gli schemi usati da Windows Shell.
 
 ## <a name="in-this-section"></a>Contenuto della sezione
 
@@ -26,8 +26,8 @@ In questa sezione vengono descritti gli schemi utilizzati dalla shell di Windows
 
 | Argomento                                                             | Descrizione                                                                                                                                                                                                                                                                               |
 |-------------------------------------------------------------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| [Schema Descrizione libreria](library-schema-entry.md)<br/> | I file di descrizione della libreria sono file XML che definiscono le librerie. Le librerie aggregano gli elementi da percorsi di archiviazione locali e remoti in una singola visualizzazione in Esplora risorse. I file di descrizione della libreria seguono lo schema della descrizione della libreria e vengono salvati come \* file con estensione library-ms.<br/> |
-| [Trasferimento dello schema del manifesto](manifest-schema.md)<br/>        | Questi elementi costituiscono i XML Schema utilizzati nelle procedure guidate per il trasferimento dei manifesti di pubblicazione sul Web e degli ordini di stampa online.<br/>                                                                                                                                                         |
+| [Schema di descrizione della libreria](library-schema-entry.md)<br/> | I file di descrizione della libreria sono file XML che definiscono le librerie. Le librerie aggregano gli elementi dai percorsi di archiviazione locali e remoti in un'unica visualizzazione in Windows Explorer. I file di descrizione della libreria seguono lo schema di descrizione della libreria e vengono salvati come \* file con estensione library-ms.<br/> |
+| [Trasferire lo schema del manifesto](manifest-schema.md)<br/>        | Questi elementi costituiscono lo schema XML usato nel manifesto di trasferimento delle procedure guidate Pubblicazione Web e Ordinamento stampa online.<br/>                                                                                                                                                         |
 
 
 

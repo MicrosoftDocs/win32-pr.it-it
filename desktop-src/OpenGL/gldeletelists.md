@@ -1,9 +1,9 @@
 ---
-title: funzione glDeleteLists (GL. h)
-description: La funzione glDeleteLists Elimina un gruppo contiguo di elenchi di visualizzazione.
+title: Funzione glDeleteLists (Gl.h)
+description: La funzione glDeleteLists elimina un gruppo contiguo di elenchi di visualizzazione.
 ms.assetid: 979ab352-99db-4822-922c-a1813b9fcfce
 keywords:
-- funzione glDeleteLists OpenGL
+- Funzione glDeleteLists OpenGL
 topic_type:
 - apiref
 api_name:
@@ -14,16 +14,16 @@ api_type:
 - DllExport
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: c11ae41273cba5bd050a62ea330cef9da0647769
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: 6ec0ffac68119f6f2080ef6ca96ec63fbd35176d3541464a89b6c31f4941b4c7
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "106301798"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120081661"
 ---
-# <a name="gldeletelists-function"></a>glDeleteLists (funzione)
+# <a name="gldeletelists-function"></a>Funzione glDeleteLists
 
-La funzione **glDeleteLists** Elimina un gruppo contiguo di elenchi di visualizzazione.
+La **funzione glDeleteLists** elimina un gruppo contiguo di elenchi di visualizzazione.
 
 ## <a name="syntax"></a>Sintassi
 
@@ -44,14 +44,14 @@ void WINAPI glDeleteLists(
 *list* 
 </dt> <dd>
 
-Nome intero del primo elenco visualizzato da eliminare.
+Nome intero del primo elenco di visualizzazione da eliminare.
 
 </dd> <dt>
 
 *range* 
 </dt> <dd>
 
-Numero di elenchi di visualizzazione da eliminare.
+Numero di elenchi visualizzati da eliminare.
 
 </dd> </dl>
 
@@ -61,22 +61,22 @@ Questa funzione non restituisce un valore.
 
 ## <a name="error-codes"></a>Codici di errore
 
-I codici di errore seguenti possono essere recuperati dalla funzione [**glGetError**](glgeterror.md) .
+I codici di errore seguenti possono essere recuperati dalla [**funzione glGetError.**](glgeterror.md)
 
 
 
 | Nome                                                                                                  | Significato                                                                                                                               |
 |-------------------------------------------------------------------------------------------------------|---------------------------------------------------------------------------------------------------------------------------------------|
-| <dl> <dt>**\_valore GL non valido \_**</dt> </dl>     | l' *intervallo* è negativo.<br/>                                                                                                      |
-| <dl> <dt>**\_operazione GL non valida \_**</dt> </dl> | La funzione è stata chiamata tra una chiamata a [**glBegin**](glbegin.md) e la chiamata corrispondente a [**glEnd**](glend.md).<br/> |
+| <dl> <dt>**VALORE GL \_ NON \_ VALIDO**</dt> </dl>     | *L'intervallo* era negativo.<br/>                                                                                                      |
+| <dl> <dt>**OPERAZIONE GL \_ NON \_ VALIDA**</dt> </dl> | La funzione è stata chiamata tra una chiamata a [**glBegin**](glbegin.md) e la chiamata corrispondente a [**glEnd**](glend.md).<br/> |
 
 
 
 ## <a name="remarks"></a>Commenti
 
-La funzione **glDeleteLists** causa l'eliminazione di un gruppo contiguo di elenchi di visualizzazione. Il parametro *List* è il nome del primo elenco visualizzato da eliminare e *Range* indica il numero di elenchi di visualizzazione da eliminare. Tutti gli elenchi di visualizzazione *d* con *List*  =  *d*  =  *List*  +  *Range* -1 vengono eliminati.
+La **funzione glDeleteLists** causa l'eliminazione di un gruppo contiguo di elenchi di visualizzazione. Il *parametro list* è il nome del primo elenco visualizzato da eliminare e *range* è il numero di elenchi visualizzati da eliminare. Tutti gli elenchi visualizzati *d* con   =  *l'elenco d*  =    +  *list range* - 1 vengono eliminati.
 
-Tutte le posizioni di archiviazione allocate agli elenchi di visualizzazione specificati vengono liberate e i nomi sono disponibili per essere riutilizzati in un secondo momento. I nomi compresi nell'intervallo che non dispongono di un elenco di visualizzazione associato vengono ignorati. Se *Range* è zero, non viene eseguita alcuna operazione.
+Tutti i percorsi di archiviazione allocati agli elenchi di visualizzazione specificati vengono liberati e i nomi sono disponibili per il riutilizzo in un secondo momento. I nomi all'interno dell'intervallo a cui non è associato un elenco di visualizzazione vengono ignorati. Se *range* è zero, non accade nulla.
 
 ## <a name="requirements"></a>Requisiti
 
@@ -86,8 +86,8 @@ Tutte le posizioni di archiviazione allocate agli elenchi di visualizzazione spe
 |-------------------------------------|-----------------------------------------------------------------------------------------|
 | Client minimo supportato<br/> | Windows 2000 Professional \[solo app desktop\]<br/>                              |
 | Server minimo supportato<br/> | Windows 2000 Server \[solo app desktop\]<br/>                                    |
-| Intestazione<br/>                   | <dl> <dt>GL. h</dt> </dl>         |
-| Libreria<br/>                  | <dl> <dt>Opengl32. lib</dt> </dl> |
+| Intestazione<br/>                   | <dl> <dt>Gl.h</dt> </dl>         |
+| Libreria<br/>                  | <dl> <dt>Opengl32.lib</dt> </dl> |
 | DLL<br/>                      | <dl> <dt>Opengl32.dll</dt> </dl> |
 
 
@@ -105,13 +105,13 @@ Tutte le posizioni di archiviazione allocate agli elenchi di visualizzazione spe
 [**glCallLists**](glcalllists.md)
 </dt> <dt>
 
-[**Remo**](glend.md)
+[**glEnd**](glend.md)
 </dt> <dt>
 
 [**glGenLists**](glgenlists.md)
 </dt> <dt>
 
-[**Pagina di**](glislist.md)
+[**glIsList**](glislist.md)
 </dt> <dt>
 
 [**glNewList**](glnewlist.md)

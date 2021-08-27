@@ -1,79 +1,79 @@
 ---
-title: Uso dei profili di dispositivo con WCS
+title: Uso di profili di dispositivo con WCS
 description: I profili di dispositivo sono uno strumento di base per la gestione dei colori.
 ms.assetid: 9ea420ad-dcf1-4ba9-b739-308be7a56a6c
 keywords:
-- Windows Color System (WCS), profili di dispositivo
-- WCS (sistema di colori Windows), profili di dispositivo
-- Gestione colori immagine, profili dispositivo
+- Windows Sistema colori (WCS), profili dispositivo
+- WCS (Windows Color System), profili dispositivo
+- gestione dei colori delle immagini, profili di dispositivo
 - gestione dei colori, profili di dispositivo
 - colori, profili di dispositivo
-- Windows Color System (WCS), profili
+- Windows Sistema colori (WCS), profili
 - WCS (Windows Color System), profili
-- Gestione colori immagine, profili
+- gestione dei colori delle immagini, profili
 - gestione dei colori, profili
 - colori, profili
 - profili di dispositivo
-- Conversione colori
+- conversione dei colori
 - profili di collegamento del dispositivo
 ms.localizationpriority: high
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 2cf58b46cbee67d437e7d6fe343c7f3a0fab451b
-ms.sourcegitcommit: de72a1294df274b0a71dc0fdc42d757e5f6df0f3
+ms.openlocfilehash: 1c8211ff883f8e30e7b67b0168e6da980744b252cbb1b89412fc834ac6370cca
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/05/2021
-ms.locfileid: "106321005"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120090071"
 ---
-# <a name="using-device-profiles-with-wcs"></a>Uso dei profili di dispositivo con WCS
+# <a name="using-device-profiles-with-wcs"></a>Uso di profili di dispositivo con WCS
 
-I profili di dispositivo sono uno strumento di base per la gestione dei colori. Un [profilo di dispositivo](d.md) è un file che contiene informazioni su come convertire i colori nello spazio di colore e la [gamma](./g.md) di colori di un dispositivo specifico in uno spazio di colore indipendente dal dispositivo. Lo spazio di colore indipendente dal dispositivo usato da ICM2 viene definito spazio di connessione del profilo (PC). Un profilo di dispositivo contiene anche informazioni su come convertire i colori dai PC nello spazio dei colori e nel gamut dei colori di un dispositivo specifico.
+I profili di dispositivo sono uno strumento di base per la gestione dei colori. Un [profilo di](d.md) dispositivo è un file che contiene informazioni su come convertire i colori nello spazio colori e la gamma di [colori](./g.md) di un dispositivo specifico in uno spazio colori indipendente dal dispositivo. Lo spazio colori indipendente dal dispositivo utilizzato da ICM2 è denominato spazio di connessione del profilo (PCS). Un profilo di dispositivo contiene anche informazioni su come convertire i colori dal PCS nello spazio colori e nella gamma di colori di un dispositivo specifico.
 
-Questi due set di informazioni di conversione vengono usati per la [conversione dei colori](c.md) e la gestione dei colori. Ad esempio, è possibile creare un'immagine nello spazio colore e nella gamma di colori di una visualizzazione video. Le informazioni nei file del profilo del dispositivo possono essere utilizzate per visualizzare una rappresentazione di un'immagine stampata. Spesso gli utenti desiderano visualizzare sullo schermo il modo in cui i colori cambiano quando viene stampata un'immagine. Questa operazione è detta correzione. Un'immagine può essere provata convertendo i colori dal gamut dei colori di origine (lo schermo) ai colori dei [PC](p.md) e quindi convertendo i computer nel gamut dei colori di destinazione (la stampante). L'immagine risultante può essere visualizzata sullo schermo, in modo da consentire all'utente di visualizzare l'immagine finale quando viene stampata.
+Questi due set di informazioni sulla conversione vengono usati per la [conversione dei colori e](c.md) la gestione dei colori. Ad esempio, un'immagine può essere creata nello spazio colori e nella gamma di colori di una visualizzazione video. Le informazioni nei file del profilo del dispositivo possono essere usate per visualizzare una rappresentazione di un'immagine stampata. Gli utenti spesso vogliono vedere sullo schermo come cambieranno i colori quando viene stampata un'immagine. Questa operazione è denominata strumenti di correzione. Un'immagine può essere verificata convertendo i colori dalla gamma di colori di origine (lo schermo) in colori [PCS](p.md) e quindi convertendoli dal PCS alla gamma di colori di destinazione (la stampante). L'immagine risultante può essere visualizzata sullo schermo, consentendo all'utente di visualizzare l'aspetto dell'immagine finale quando viene stampata.
 
-I profili di dispositivo consentono anche usi più complessi. Ad esempio, possono essere usati per avere un'idea dell'aspetto di un'immagine creata in uno schermo video quando viene stampato in una stampante laser ad alta risoluzione. L'esempio è più complesso se è presente solo una stampante inkjet standard in cui riprovare. ICM2 convertirà l'immagine dalla [gamma](./g.md) dello schermo alla gamma della stampante inkjet. Da qui viene convertito nella gamma della stampante laser. L'immagine risultante può essere stampata sulla stampante a getto d'inchiostro. Naturalmente, l'immagine potrebbe essere a una risoluzione superiore quando viene stampata sulla stampante laser con colori. Tuttavia, i colori dell'immagine di correzione stampata sulla stampante inkjet sarebbero una corrispondenza vicina ai colori che la stampante laser avrebbe stampato.
+Anche i profili di dispositivo consentono usi più complessi. Ad esempio, possono essere usati per avere un'idea dell'aspetto di un'immagine creata su un display video quando viene stampata su una stampante laser ad alta risoluzione. L'esempio diventa più complesso se è presente solo una stampante a getto d'input penna standard su cui eseguire la verifica. ICM2 converte l'immagine dalla [gamma](./g.md) dello schermo nella gamma della stampante inkjet. Da qui viene convertito nella gamma della stampante laser. L'immagine risultante può essere stampata sulla stampante inkjet. Naturalmente l'immagine avrebbe una risoluzione più elevata quando viene stampata sulla stampante a colori. Tuttavia, i colori dell'immagine di prova stampata sulla stampante inkjet corrisponderebbero molto ai colori stampati dalla stampante laser.
 
-Le conversioni da un profilo di dispositivo possono essere concatenate in un singolo file, denominato *profilo di collegamento del dispositivo*. Se una serie di conversioni viene usata ripetutamente, la creazione di un profilo di collegamento del dispositivo consente di ridurre il tempo di conversione.
+Le conversioni da un profilo di dispositivo possono essere concatenate in un singolo file, denominato *profilo di collegamento del dispositivo.* Se si usa più volte una serie di conversioni, la creazione di un profilo di collegamento del dispositivo ridurrà il tempo di conversione.
 
-È possibile gestire i profili dei dispositivi stessi. Gestione del profilo è il processo di associazione dei profili colori alle istanze del dispositivo. A qualsiasi dispositivo di output a colori può essere associato un set di uno o più profili colori. I produttori di hardware e le terze parti che forniscono profili colori devono eseguire la gestione dei profili.
+I profili di dispositivo possono essere gestiti. La gestione dei profili è il processo di associazione dei profili colori alle istanze del dispositivo. A qualsiasi dispositivo di output a colori può essere associato un set di uno o più profili colori. I produttori di hardware e terze parti che forniscono profili colore devono eseguire la gestione dei profili.
 
-È possibile condividere i set di profili tra i dispositivi oppure dedicarli a dispositivi specifici. Si supponga, ad esempio, di disporre di due stampanti a colori dello stesso modello. Ogni stampante richiederebbe l'associazione di un set di profili colori. Il set di profili colori per una stampante corrisponde alle diverse configurazioni possibili in tale modello. Essendo dello stesso modello, entrambe le stampanti possono condividere un set di profili. In alternativa, è possibile assegnare a ogni stampante un proprio set di profili distinti. In quest'ultimo caso, i profili colori nel set possono essere calibrati con precisione per il singolo output della stampante, non solo per le caratteristiche generali di output del modello.
+I set di profili possono essere condivisi tra dispositivi o dedicati a dispositivi specifici. Si supponga, ad esempio, di avere due stampanti a colori dello stesso modello. Per ogni stampante è necessario associare un set di profili colori. Il set di profili colori per una stampante corrisponde alle varie configurazioni possibili in tale modello. Essendo dello stesso modello, entrambe le stampanti possono condividere un set di profili. L'alternativa consiste nel assegnare a ogni stampante un proprio set di profili distinto. In quest'ultimo caso, i profili colori nel set possono essere calibrati esattamente in base all'output singolo della stampante, non solo alle caratteristiche generali di output del modello.
 
-Sono disponibili tre classi diverse di profili ICC: profili di input, profili di visualizzazione e profili di output. I profili di input sono in genere associati a un dispositivo, ad esempio uno scanner. I profili di visualizzazione sono in genere associati a un monitor del computer. I profili di output sono comunemente associati alle stampanti.
+Esistono tre diverse classi di profili ICC: profili di input, profili di visualizzazione e profili di output. I profili di input sono in genere associati a un dispositivo, ad esempio uno scanner. I profili di visualizzazione sono in genere associati a un monitoraggio del computer. I profili di output sono comunemente associati alle stampanti.
 
-La specifica consente anche profili di dispositivo, profili astratti, profili di collegamento a dispositivi, profili colori denominati e profili dello spazio dei colori.
+La specifica consente anche profili di dispositivo, profili astratti, profili di collegamento del dispositivo, profili colori denominati e profili dello spazio colori.
 
-Un profilo di dispositivo descrive lo spazio dei colori di un dispositivo specifico.
+Un profilo di dispositivo descrive lo spazio colore di un dispositivo specifico.
 
-Un profilo astratto fornisce un metodo generico per consentire agli utenti di apportare modifiche dei colori soggettive a immagini o oggetti grafici tramite la trasformazione dei dati di colore nei PC.
+Un profilo astratto fornisce un metodo generico per consentire agli utenti di apportare modifiche di colore soggettive alle immagini o agli oggetti grafici trasformando i dati sui colori all'interno del PCS.
 
-Come indicato in precedenza, un profilo di collegamento del dispositivo Concatena una serie di profili in un'unica trasformazione.
+Come accennato in precedenza, un profilo di collegamento del dispositivo concatena una serie di profili in un'unica trasformazione.
 
-I profili colori denominati possono essere considerati come profili di pari livello ai profili di dispositivo. Per un determinato dispositivo sono disponibili uno o più profili di dispositivo per gestire le conversioni dei colori del processo e uno o più profili colori denominati per gestire i colori denominati. Potrebbero essere presenti più profili colori denominati per tenere conto di diversi materiali di consumo o più fornitori di colori denominati.
+I profili colori denominati possono essere ritenuti profili di pari livello per i profili di dispositivo. Per un determinato dispositivo sono disponibili uno o più profili di dispositivo per gestire le conversioni dei colori di processo e uno o più profili colori denominati per gestire i colori denominati. Potrebbero essere presenti più profili colori denominati per l'utilizzo di materiali di consumo diversi o più fornitori di colori denominati.
 
-Un profilo dello spazio dei colori descrive uno spazio di colore indipendente dal dispositivo.
+Un profilo dello spazio colori descrive uno spazio colori indipendente dal dispositivo.
 
-Nella tabella seguente sono riepilogati i vari tipi di profili.
+La tabella seguente riepiloga i vari tipi di profili.
 
 
 
 | Tipo di profilo        | Descrizione                                                                                                                   |
 |---------------------|-------------------------------------------------------------------------------------------------------------------------------|
-| Profilo astratto    | Profilo che è stato regolato in base alle preferenze specifiche di un utente.                                                     |
-| Profilo dello spazio colore | Profilo che descrive uno spazio di colore indipendente dal dispositivo.                                                                    |
+| Profilo astratto    | Profilo che è stato modificato in base alle preferenze specifiche di un utente.                                                     |
+| Profilo dello spazio colori | Profilo che descrive uno spazio colori indipendente dal dispositivo.                                                                    |
 | Profilo collegamento dispositivo | Serie di profili concatenati in un unico profilo.                                                    |
-| Profilo del dispositivo      | Profilo che descrive lo spazio dei colori di un dispositivo specifico.                                                              |
-| Profilo di visualizzazione     | Classe o categoria di profili che include qualsiasi tipo di profilo associato a una visualizzazione.                                  |
+| Profilo del dispositivo      | Profilo che descrive lo spazio colore di un dispositivo specifico.                                                              |
+| Visualizzare il profilo     | Classe o categoria di profili che include qualsiasi tipo di profilo associato a una visualizzazione.                                  |
 | Profilo di input       | Classe o categoria di profili che include qualsiasi tipo di profilo associato a un dispositivo di input, ad esempio uno scanner.          |
-| Profilo colori denominato | Profilo per uno spazio colore costituito da colori denominati.                                                                    |
+| Profilo colori denominato | Profilo per uno spazio colori costituito da colori denominati.                                                                    |
 | Profili di output     | Classe o categoria di profili che include qualsiasi tipo di profilo associato a un dispositivo di output hardcopy, ad esempio una stampante. |
 
 
 
  
 
-È possibile creare trasformazioni colore con uno o più profili. Se una trasformazione viene creata con un solo profilo, il profilo deve essere un profilo di collegamento del dispositivo. Una trasformazione può inoltre includere due o più profili in una catena. In caso contrario, non può contenere profili di collegamento del dispositivo. I profili astratti possono trovarsi solo al centro della catena. Il primo e l'ultimo profilo devono essere profili di dispositivo o profili dello spazio dei colori.
+Le trasformazioni di colore possono essere create con uno o più profili. Se viene creata una trasformazione con un solo profilo, il profilo deve essere un profilo di collegamento del dispositivo. Una trasformazione può avere anche due o più profili in una catena. In caso contrario, non può contenere profili di collegamento del dispositivo. I profili astratti possono essere solo al centro della catena. Il primo e l'ultimo profilo devono essere profili di dispositivo o profili di spazio colore.
 
  
 

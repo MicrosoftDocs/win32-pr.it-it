@@ -1,37 +1,37 @@
 ---
-title: Movimenti tocco di Windows nell'esempio C (MTGesturesCS)
-description: In questa sezione viene descritto l'esempio di movimenti tocco di Windows in C \.
+title: Windows Movimenti tocco nell'esempio C (MTGesturesCS)
+description: Questa sezione descrive l'Windows di movimenti tocco in C\ .
 ms.assetid: 4b2d70bb-47e4-4448-97e2-6f6e29d1dfdf
 keywords:
-- Windows Touch, esempi di codice
-- Windows Touch, codice di esempio
-- Windows Touch, movimenti
-- Windows Touch, esempi di movimenti
-- Esempi di movimento
+- Windows Tocco, esempi di codice
+- Windows Tocco, codice di esempio
+- Windows Tocco, movimenti
+- Windows Esempi di tocco, movimento
+- Esempi di movimenti
 - movimenti, codice di esempio
 - movimenti, esempi di codice
 ms.topic: article
 ms.date: 02/18/2020
-ms.openlocfilehash: e6ffc0e8caf63807d4df80a1b96229f2fa7b5ff9
-ms.sourcegitcommit: 48d1c892045445bcbd0f22bafa2fd3861ffaa6e7
+ms.openlocfilehash: ac3a7c0772ad7329d14d9909b55f8a60ef6e7d7473a06fcba921297117a00b6e
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/19/2020
-ms.locfileid: "104398564"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120089906"
 ---
-# <a name="windows-touch-gestures-in-c-sample-mtgesturescs"></a>Movimenti tocco di Windows nell'esempio C# (MTGesturesCS)
+# <a name="windows-touch-gestures-in-c-sample-mtgesturescs"></a>Windows Esempio di movimenti tocco in C# (MTGesturesCS)
 
-Questa sezione descrive l'esempio di movimenti tocco di Windows in C#.
+Questa sezione descrive l'Windows di movimenti tocco in C#.
 
-Questo esempio di movimenti tocco di Windows illustra come usare i messaggi di movimento per tradurre, ruotare e ridimensionare una casella di cui è stato eseguito il rendering tramite il Graphics Device Interface (GDI) gestendo il messaggio di [**WM_GESTURE**](wm-gesture.md) . Lo screenshot seguente mostra l'aspetto dell'esempio durante l'esecuzione.
+Questo Windows di movimenti tocco illustra come usare i messaggi di movimento per traslare, ruotare e ridimensionare [](wm-gesture.md) un riquadro di cui viene eseguito il rendering da parte del Graphics Device Interface (GDI) gestendo il messaggio WM_GESTURE. Lo screenshot seguente mostra l'aspetto dell'esempio quando è in esecuzione.
 
-![screenshot che mostra i movimenti tocco di Windows nell'esempio c Sharp quando è in esecuzione, con un rettangolo bianco delineato al centro sullo schermo](images/mtgesturescs.png)
+![Screenshot che mostra i movimenti tocco di Windows nell'esempio c sharp quando è in esecuzione, con un rettangolo bianco con contorno nero centrato sullo schermo](images/mtgesturescs.png)
 
-Per questo esempio, i messaggi di movimento vengono passati a un motore di movimento che chiama quindi i metodi per disegnare oggetti per tradurre, ruotare e ridimensionare un oggetto con metodi per la gestione di questi comandi. Per rendere possibile questa operazione in C#, viene creato un modulo speciale, TouchableForm, per gestire i messaggi di movimento. Questo form utilizza quindi i messaggi per apportare modifiche a un oggetto Drawing, DrawingObject, per modificare la modalità di rendering dell'oggetto nel metodo Paint.
+Per questo esempio, i messaggi di movimento vengono passati a un motore movimenti che chiama quindi i metodi sugli oggetti di disegno per traslare, ruotare e ridimensionare un oggetto che dispone di metodi per la gestione di questi comandi. Per rendere possibile questa operazione in C#, viene creato un modulo speciale, TouchableForm, per gestire i messaggi di movimento. Questo form usa quindi i messaggi per apportare modifiche a un oggetto di disegno, DrawingObject, per modificare la modalità di rendering dell'oggetto Paint metodo .
 
-Per illustrare il funzionamento dell'esempio, prendere in considerazione i passaggi per l'utilizzo del comando Pan per tradurre la casella sottoposta a rendering. Un utente esegue il gesto di panoramica che genera un messaggio di [**WM_GESTURE**](wm-gesture.md) con l'identificatore del movimento GID_PAN. TouchableForm gestisce i messaggi e aggiorna la posizione dell'oggetto Drawing e l'oggetto viene quindi sottoposto a rendering.
+Per illustrare il funzionamento dell'esempio, prendere in considerazione la procedura per usare il comando pan per tradurre la casella sottoposta a rendering. Un utente esegue il movimento di panoramica che genera un messaggio [**WM_GESTURE**](wm-gesture.md) con l'identificatore del movimento GID_PAN. TouchableForm gestisce questi messaggi e aggiorna la posizione dell'oggetto di disegno e l'oggetto eseguirà quindi il rendering di se stesso tradotto.
 
-Nel codice seguente viene illustrato il modo in cui il gestore movimenti recupera i parametri dal messaggio di [**WM_GESTURE**](wm-gesture.md) e quindi esegue la conversione sulla casella di cui è stato eseguito il rendering tramite una chiamata al metodo Move dell'oggetto Drawing.
+Il codice seguente illustra come il gestore movimenti recupera i parametri dal messaggio WM_GESTURE e quindi esegue la traslazione nella casella sottoposta [**a**](wm-gesture.md) rendering tramite una chiamata al metodo move dell'oggetto di disegno.
 
 ```CSharp
             switch (gi.dwID)
@@ -69,7 +69,7 @@ Nel codice seguente viene illustrato il modo in cui il gestore movimenti recuper
                     break;
 ```
 
-Nel codice seguente viene illustrato il modo in cui il metodo Move dell'oggetto Drawing aggiorna le variabili di posizione interna.
+Nel codice seguente viene illustrato come il metodo move dell'oggetto di disegno aggiorna le variabili di posizione interne.
 
 ```CSharp
         public void Move(int deltaX,int deltaY)
@@ -79,7 +79,7 @@ Nel codice seguente viene illustrato il modo in cui il metodo Move dell'oggetto 
         }
 ```
 
-Il codice seguente mostra come viene usata la posizione nel metodo Paint dell'oggetto Drawing.
+Nel codice seguente viene illustrato come utilizzare la posizione nel metodo di disegno dell'oggetto di disegno.
 
 ```CSharp
 public void Paint(Graphics graphics)
@@ -102,8 +102,8 @@ public void Paint(Graphics graphics)
         }
 ```
 
-I movimenti di Pan provocheranno il rendering della casella disegnata.
+I movimenti di panoramica determinano la traduzione della casella disegnata.
 
 ## <a name="related-topics"></a>Argomenti correlati
 
-[Applicazione movimenti multitocco (C#)](https://github.com/microsoft/Windows-classic-samples/tree/master/Samples/Win7Samples/Touch/MTGestures/CS), [applicazione movimenti multitocco (C++)](https://github.com/microsoft/Windows-classic-samples/tree/master/Samples/Win7Samples/Touch/MTGestures/cpp), [esempi di Windows Touch](windows-touch-samples.md)
+[Applicazione Movimenti multitocchetto (C#),](https://github.com/microsoft/Windows-classic-samples/tree/master/Samples/Win7Samples/Touch/MTGestures/CS)Applicazione movimenti [multitocchetto (C++),](https://github.com/microsoft/Windows-classic-samples/tree/master/Samples/Win7Samples/Touch/MTGestures/cpp) [Windows touch](windows-touch-samples.md)

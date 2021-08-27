@@ -1,7 +1,7 @@
 ---
 description: Reimposta le statistiche di replica associate alla relazione di replica specificata della macchina virtuale specificata.
 ms.assetid: 6E49A7C0-2F60-444E-964E-420470EE1538
-title: 'Metodo Msvm_ReplicationService:: ResetReplicationStatisticsEx'
+title: Msvm_ReplicationService::ResetReplicationStatisticsEx
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -13,14 +13,14 @@ api_type:
 - COM
 api_location:
 - vmms.exe
-ms.openlocfilehash: c1acb234660e71636b4a69a697b11385d65cf1ea
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 613d35a03d224032a07468c2ed2d830c73c3a899df455cc3e0cd68b335797b3e
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "103883029"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120083071"
 ---
-# <a name="msvm_replicationserviceresetreplicationstatisticsex-method"></a>\_Metodo MSVM ReplicationService:: ResetReplicationStatisticsEx
+# <a name="msvm_replicationserviceresetreplicationstatisticsex-method"></a>Metodo Msvm \_ ReplicationService::ResetReplicationStatisticsEx
 
 Reimposta le statistiche di replica associate alla relazione di replica specificata della macchina virtuale specificata.
 
@@ -41,24 +41,24 @@ uint32 ResetReplicationStatisticsEx(
 
 <dl> <dt>
 
-*ComputerSystem* \[ in\]
+*ComputerSystem* \[ Pollici\]
 </dt> <dd>
 
-Riferimento a un'istanza di [**CIM \_ ComputerSystem**](/windows/desktop/CIMWin32Prov/cim-computersystem) che rappresenta la macchina virtuale abilitata per la replica.
+Riferimento a [**un'istanza CIM \_ ComputerSystem**](/windows/desktop/CIMWin32Prov/cim-computersystem) che rappresenta la macchina virtuale abilitata per la replica.
 
 </dd> <dt>
 
-*ReplicationRelationship* \[ in\]
+*ReplicaRelationship* \[ Pollici\]
 </dt> <dd>
 
-Rappresentazione di stringa di un'istanza incorporata della classe [**MSVM \_ ReplicationRelationship**](msvm-replicationrelationship.md) che definisce la relazione di replica per la quale reimpostare le statistiche di replica.
+Rappresentazione di stringa di un'istanza incorporata della [**classe Msvm \_ ReplicationRelationship**](msvm-replicationrelationship.md) che definisce la relazione di replica per cui reimpostare le statistiche di replica.
 
 </dd> <dt>
 
-*Processo* \[ di out\]
+*Processo* \[ Cambio\]
 </dt> <dd>
 
-Se l'operazione viene eseguita in modo asincrono, questo metodo restituirà 4096 e questo parametro conterrà un riferimento a un oggetto derivato da [**CIM \_ ConcreteJob**](/previous-versions//cc136808(v=vs.85)). Questo riferimento può essere **null** se l'attività è stata completata.
+Se l'operazione viene eseguita in modo asincrono, questo metodo restituirà 4096 e questo parametro conterrà un riferimento a un oggetto derivato da [**CIM \_ ConcreteJob**](/previous-versions//cc136808(v=vs.85)). Questo riferimento può essere **NULL se** l'attività è stata completata.
 
 </dd> </dl>
 
@@ -71,10 +71,10 @@ Questo metodo restituisce uno dei valori seguenti.
 **Completato senza errori** (0)
 </dt> <dt>
 
-**Parametri del metodo controllati-processo avviato** (4096)
+**Parametri del metodo controllati - Processo avviato** (4096)
 </dt> <dt>
 
-**Non riuscito** (32768)
+**Operazione non** riuscita (32768)
 </dt> <dt>
 
 **Accesso negato** (32769)
@@ -83,25 +83,25 @@ Questo metodo restituisce uno dei valori seguenti.
 **Non supportato** (32770)
 </dt> <dt>
 
-**Stato sconosciuto** (32771)
+**Lo stato è sconosciuto** (32771)
 </dt> <dt>
 
 **Timeout** (32772)
 </dt> <dt>
 
-**Parametro non valido** (32773)
+**Parametro non** valido (32773)
 </dt> <dt>
 
 **Sistema in uso** (32774)
 </dt> <dt>
 
-**Stato non valido per l'operazione** (32775)
+**Stato non valido per questa operazione** (32775)
 </dt> <dt>
 
-**Tipo di dati non corretto** (32776)
+**Tipo di dati non** corretto (32776)
 </dt> <dt>
 
-**Sistema non disponibile** (32777)
+**Il sistema non è disponibile** (32777)
 </dt> <dt>
 
 **Memoria insufficiente** (32778)
@@ -116,10 +116,10 @@ Questo metodo restituisce uno dei valori seguenti.
 
 | Requisito | Valore |
 |-------------------------------------|---------------------------------------------------------------------------------------------------------|
-| Client minimo supportato<br/> | Windows 8.1 \[ solo app desktop\]<br/>                                                            |
-| Server minimo supportato<br/> | Solo app desktop Windows Server 2012 R2 \[\]<br/>                                                 |
-| Spazio dei nomi<br/>                | \\\\\\Virtualizzazione radice \\ v2<br/>                                                                 |
-| MOF<br/>                      | <dl> <dt>WindowsVirtualization. v2. mof</dt> </dl> |
+| Client minimo supportato<br/> | \[Windows 8.1 solo app desktop\]<br/>                                                            |
+| Server minimo supportato<br/> | Windows Server 2012 Solo app desktop R2 \[\]<br/>                                                 |
+| Spazio dei nomi<br/>                | \\\\Virtualizzazione \\ radice \\ V2<br/>                                                                 |
+| MOF<br/>                      | <dl> <dt>WindowsVirtualization.V2.mof</dt> </dl> |
 | DLL<br/>                      | <dl> <dt>Vmms.exe</dt> </dl>                     |
 
 
@@ -131,7 +131,7 @@ Questo metodo restituisce uno dei valori seguenti.
 [**GetReplicationStatisticsEx**](getreplicationstatisticsex-msvm-replicationservice.md)
 </dt> <dt>
 
-[**\_ReplicationService MSVM**](msvm-replicationservice.md)
+[**Msvm \_ ReplicationService**](msvm-replicationservice.md)
 </dt> </dl>
 
  

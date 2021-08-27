@@ -13,14 +13,14 @@ api_type:
 - HeaderDef
 api_location:
 - dvdevcode.h
-ms.openlocfilehash: 6bd06eb99cae60960db64a6f32df5e4c932b362f
-ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
+ms.openlocfilehash: 36a1dfcf93e44d8d94a0bdf74042ce1d2d2907bcf1f7085b452f56254196dd24
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/28/2021
-ms.locfileid: "108094619"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120102921"
 ---
-# <a name="ec_dvd_vobu_timestamp"></a>Timestamp \_ \_ VOBU DEL \_ DVD EC
+# <a name="ec_dvd_vobu_timestamp"></a>EC \_ DVD \_ VOBU \_ Timestamp
 
 Inviato quando lo strumento [di navigazione DVD](dvd-navigator-filter.md) analizza un pacchetto PCI.
 
@@ -33,14 +33,14 @@ I dati dell'evento sono il timestamp dell'unità oggetto video (VOBU) più recen
 <span id="lParam1"></span><span id="lparam1"></span><span id="LPARAM1"></span>*lParam1*
 </dt> <dd>
 
-Contiene il valore **DWORD** di ordine basso del timestamp.
+Contiene il valore **DWORD** di ordine più basso del timestamp.
 
 </dd> <dt>
 
 <span id="lParam2"></span><span id="lparam2"></span><span id="LPARAM2"></span>*lParam2*
 </dt> <dd>
 
-Contiene il valore **DWORD** più alto del timestamp.
+Contiene il valore **DWORD** più elevato del timestamp.
 
 </dd> </dl>
 
@@ -48,7 +48,7 @@ Contiene il valore **DWORD** più alto del timestamp.
 
 Questo evento è disabilitato per impostazione predefinita. Per abilitare questo evento, chiamare [**IDvdControl2::SetOption**](/windows/desktop/api/Strmif/nf-strmif-idvdcontrol2-setoption) e impostare l'opzione **\_ DVD EnableLoggingEvents** su **TRUE.**
 
-Ricostruire il timestamp come indicato di seguito:
+Ricostruire il timestamp come segue:
 
 
 ```C++

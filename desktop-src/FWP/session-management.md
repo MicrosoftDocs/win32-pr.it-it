@@ -4,12 +4,12 @@ description: Gestione delle sessioni
 ms.assetid: F4987435-2D6D-460B-801D-EC71E9A9BB91
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: d143cb3d5333a584a3c6197868d8a9a1c604bb6a
-ms.sourcegitcommit: 2d531328b6ed82d4ad971a45a5131b430c5866f7
+ms.openlocfilehash: aebfab2187590a30442c93d418c2497d187ede79d44ca46b4f4775c0ed0c677d
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "104332540"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120078481"
 ---
 # <a name="session-management"></a>Gestione delle sessioni
 
@@ -25,9 +25,9 @@ ms.locfileid: "104332540"
 -   [**FwpmSessionDestroyEnumHandle0**](/windows/desktop/api/Fwpmu/nf-fwpmu-fwpmsessiondestroyenumhandle0)
 -   [**FwpmSessionEnum0**](/windows/desktop/api/Fwpmu/nf-fwpmu-fwpmsessionenum0)
 
- 
+ 
 
- 
+ 
 
 
 

@@ -4,12 +4,12 @@ ms.assetid: 4ce196c0-fa05-43b3-97d8-f58d31a9368d
 title: System.IsFlagged
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 33f3a7105c7920e1ba33cdd6dc5899d518a4522b
-ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
+ms.openlocfilehash: 1008598f57a80dab22c8c80a5ea49f299a177f1146702922f6a3a1542d8040ea
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/28/2021
-ms.locfileid: "108086989"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120091091"
 ---
 # <a name="systemisflagged"></a>System.IsFlagged
 
@@ -50,7 +50,7 @@ I valori PKEY sono definiti in Propkey.h.
 
 <dl> <dt>
 
-[proprietàDescrizione](./propdesc-schema-propertydescription.md)
+[propertyDescription](./propdesc-schema-propertydescription.md)
 </dt> <dt>
 
 [searchInfo](./propdesc-schema-searchinfo.md)
@@ -80,7 +80,7 @@ I valori PKEY sono definiti in Propkey.h.
 [enumeratedList](./propdesc-schema-enumeratedlist.md)
 </dt> <dt>
 
-[DrawControl](./propdesc-schema-drawcontrol.md)
+[drawControl](./propdesc-schema-drawcontrol.md)
 </dt> <dt>
 
 [editControl](./propdesc-schema-editcontrol.md)

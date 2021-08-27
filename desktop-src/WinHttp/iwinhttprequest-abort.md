@@ -1,7 +1,7 @@
 ---
-description: Il metodo Abort interrompe un metodo di invio WinHTTP.
+description: Il metodo Abort interrompe un metodo WinHTTP Send.
 ms.assetid: 8326feef-8611-4441-b52d-74855e6acfff
-title: 'Metodo IWinHttpRequest:: Abort'
+title: Metodo IWinHttpRequest::Abort
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -14,16 +14,16 @@ api_type:
 - COM
 api_location:
 - Winhttp.dll
-ms.openlocfilehash: 56290dfc16f9986cb7d7596c098bb53c207efebe
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: ca70917139059e8b0d038797ad61b137a259d615f6098a52bc86466f8054c7b4
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "103968284"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120071771"
 ---
-# <a name="iwinhttprequestabort-method"></a>Metodo IWinHttpRequest:: Abort
+# <a name="iwinhttprequestabort-method"></a>Metodo IWinHttpRequest::Abort
 
-Il metodo **Abort** interrompe un metodo di [**invio**](iwinhttprequest-send.md) [WinHTTP](about-winhttp.md) .
+Il **metodo Abort** interrompe un metodo [WinHTTP](about-winhttp.md) [**Send.**](iwinhttprequest-send.md)
 
 ## <a name="syntax"></a>Sintassi
 
@@ -40,14 +40,14 @@ Questo metodo non presenta parametri.
 
 ## <a name="return-value"></a>Valore restituito
 
-Il valore restituito è **\_ OK** in caso di esito positivo o un valore di errore.
+Il valore restituito è **S \_ OK in** caso di esito positivo o un valore di errore in caso contrario.
 
 ## <a name="remarks"></a>Commenti
 
-È possibile interrompere i metodi di [**invio**](iwinhttprequest-send.md) sincroni e asincroni. Per interrompere un metodo di [**invio**](iwinhttprequest-send.md) sincrono, è necessario chiamare **Abort** dall'interno di un evento [**IWinHttpRequestEvents**](iwinhttprequestevents-interface.md) .
+È possibile interrompere metodi Send [](iwinhttprequest-send.md) asincroni e sincroni. Per interrompere un metodo [**Send**](iwinhttprequest-send.md) sincrono, è necessario chiamare **Abort** dall'interno di un [**evento IWinHttpRequestEvents.**](iwinhttprequestevents-interface.md)
 
 > [!Note]  
-> Per Windows XP e Windows 2000, vedere la sezione [requisiti di run-time](winhttp-start-page.md) della pagina iniziale di WinHTTP.
+> Per Windows XP e Windows 2000, vedere la sezione [Requisiti di run-time](winhttp-start-page.md) della pagina iniziale di WinHttp.
 
  
 
@@ -57,11 +57,11 @@ Il valore restituito è **\_ OK** in caso di esito positivo o un valore di error
 
 | Requisito | Valore |
 |-------------------------------------|--------------------------------------------------------------------------------------------|
-| Client minimo supportato<br/> | Windows XP, Windows 2000 Professional con \[ solo app desktop SP3\]<br/>            |
-| Server minimo supportato<br/> | Windows Server 2003, Windows 2000 Server con \[ solo app desktop SP3\]<br/>         |
-| Componente ridistribuibile<br/>          | WinHTTP 5,0 e Internet Explorer 5,01 o versioni successive in Windows XP e Windows 2000.<br/> |
-| IDL<br/>                      | <dl> <dt>HttpRequest. idl</dt> </dl> |
-| Libreria<br/>                  | <dl> <dt>WinHTTP. lib</dt> </dl>     |
+| Client minimo supportato<br/> | Windows XP, Windows 2000 Professional solo con app desktop SP3 \[\]<br/>            |
+| Server minimo supportato<br/> | Windows Server 2003, Windows 2000 Server con solo app desktop SP3 \[\]<br/>         |
+| Componente ridistribuibile<br/>          | WinHTTP 5.0 e Internet Explorer 5.01 o versioni successive in Windows XP e Windows 2000.<br/> |
+| Idl<br/>                      | <dl> <dt>HttpRequest.idl</dt> </dl> |
+| Libreria<br/>                  | <dl> <dt>Winhttp.lib</dt> </dl>     |
 | DLL<br/>                      | <dl> <dt>Winhttp.dll</dt> </dl>     |
 
 
@@ -76,7 +76,7 @@ Il valore restituito è **\_ OK** in caso di esito positivo o un valore di error
 [**WinHttpRequest**](winhttprequest.md)
 </dt> <dt>
 
-[Versioni WinHTTP](winhttp-versions.md)
+[Versioni di WinHTTP](winhttp-versions.md)
 </dt> </dl>
 
  
