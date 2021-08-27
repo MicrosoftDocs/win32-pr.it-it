@@ -1,12 +1,12 @@
 ---
 title: Metodo GetDiffVHDPath della classe Win32_RDMSDeploymentSettings
-description: Recupera il percorso della directory in cui vengono distribuiti i dischi differenze per un insieme di desktop virtuali.
+description: Recupera il percorso della directory in cui vengono distribuiti i dischi differenze per una raccolta di desktop virtuali.
 ms.assetid: 4340c817-2276-48a1-a856-b4c9e91ea981
 ms.tgt_platform: multiple
 keywords:
-- Servizi Desktop remoto del metodo GetDiffVHDPath
-- Metodo GetDiffVHDPath Servizi Desktop remoto, classe Win32_RDMSDeploymentSettings
-- Classe Win32_RDMSDeploymentSettings Servizi Desktop remoto, metodo GetDiffVHDPath
+- Metodo GetDiffVHDPath Servizi Desktop remoto
+- Metodo GetDiffVHDPath Servizi Desktop remoto , Win32_RDMSDeploymentSettings classe
+- Win32_RDMSDeploymentSettings classe Servizi Desktop remoto metodo , GetDiffVHDPath
 topic_type:
 - apiref
 api_name:
@@ -17,16 +17,16 @@ api_type:
 - COM
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 7391315013cf8487d93b32f645933d14f06db2d6
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: ad8783d20737c98dcccf769924ea1544c21dec8ffa3ff340aa285be163b8925b
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "104400322"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120099541"
 ---
-# <a name="getdiffvhdpath-method-of-the-win32_rdmsdeploymentsettings-class"></a>Metodo GetDiffVHDPath della \_ classe RDMSDeploymentSettings Win32
+# <a name="getdiffvhdpath-method-of-the-win32_rdmsdeploymentsettings-class"></a>Metodo GetDiffVHDPath della classe \_ RDMSDeploymentSettings Win32
 
-Recupera il percorso della directory in cui vengono distribuiti i dischi differenze per un insieme di desktop virtuali.
+Recupera il percorso della directory in cui vengono distribuiti i dischi differenze per una raccolta di desktop virtuali.
 
 ## <a name="syntax"></a>Sintassi
 
@@ -43,7 +43,7 @@ uint32 GetDiffVHDPath(
 
 <dl> <dt>
 
-*DirectoryPath* \[ out\]
+*DirectoryPath* \[ Cambio\]
 </dt> <dd>
 
 Riceve il nuovo percorso del disco differenze.
@@ -62,8 +62,8 @@ Restituisce 0 in caso di esito positivo, in caso contrario restituisce un codice
 |-------------------------------------|---------------------------------------------------------------------------------------------|
 | Client minimo supportato<br/> | Nessuno supportato<br/>                                                                   |
 | Server minimo supportato<br/> | Windows Server 2012<br/>                                                              |
-| Spazio dei nomi<br/>                | Radice \\ CIMv2 \\ RDBMS<br/>                                                                |
-| MOF<br/>                      | <dl> <dt>RDManagement. mof</dt> </dl> |
+| Spazio dei nomi<br/>                | Rdms \\ CIMv2 \\ radice<br/>                                                                |
+| MOF<br/>                      | <dl> <dt>RDManagement.mof</dt> </dl> |
 | DLL<br/>                      | <dl> <dt>RDMS.dll</dt> </dl>         |
 
 
@@ -72,7 +72,7 @@ Restituisce 0 in caso di esito positivo, in caso contrario restituisce un codice
 
 <dl> <dt>
 
-[**\_RDMSDeploymentSettings Win32**](win32-rdmsdeploymentsettings.md)
+[**Win32 \_ RDMSDeploymentSettings**](win32-rdmsdeploymentsettings.md)
 </dt> </dl>
 
  

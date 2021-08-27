@@ -1,5 +1,5 @@
 ---
-description: Contiene i metodi che ottengono il contenuto non elaborato della definizione del video di input dei dati di identificazione (VESA) Enhanced Extended Display Data (E-EDID) v. 1. x blocchi di dati standard a 128 byte.
+description: Contiene i metodi che ottengono il contenuto non elaborato dei blocchi di dati standard VESA (Video Electronics Standard Association) Enhanced Extended Display Identification Data (E-EDID) v.1.x standard a 128 byte.
 ms.assetid: c13d4ddd-d171-44d5-9e70-3a6f89ad55da
 title: Classe WmiMonitorDescriptorMethods
 ms.topic: reference
@@ -15,16 +15,16 @@ api_type:
 - DllExport
 api_location:
 - WmiProv.dll
-ms.openlocfilehash: 578c08c48ada4859b69e00655c5eea8c075515fa
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 7e8fe02540cd68047e3e74c052a8ea833a67d829228979da31bb12e13e84d9f8
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "106315740"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120120961"
 ---
 # <a name="wmimonitordescriptormethods-class"></a>Classe WmiMonitorDescriptorMethods
 
-La classe WMI **WmiMonitorDescriptorMethods** contiene i metodi che ottengono il contenuto non elaborato della definizione di input video di video Electronics Standard Association (VESA) Enhanced Extended Display Identification Data (E-EDID) v. 1. x blocchi di dati Standard a 128 byte.
+La classe **WMI WmiMonitorDescriptorMethods** contiene metodi che ottengono il contenuto non elaborato dei blocchi di dati standard VESA (Video Electronics Standard Association) v.1.x standard a 128 byte.
 
 ## <a name="syntax"></a>Sintassi
 
@@ -38,20 +38,20 @@ class WmiMonitorDescriptorMethods : MSMonitorClass
 
 ## <a name="members"></a>Members
 
-La classe **WmiMonitorDescriptorMethods** dispone di questi tipi di membri:
+La **classe WmiMonitorDescriptorMethods** ha questi tipi di membri:
 
 -   [Metodi](#wmimonitordescriptormethods-class)
 -   [Proprietà](#properties)
 
 ### <a name="methods"></a>Metodi
 
-La classe **WmiMonitorDescriptorMethods** dispone di questi metodi.
+La **classe WmiMonitorDescriptorMethods** include questi metodi.
 
 
 
 | Metodo                                                                                           | Descrizione                                                                   |
 |:-------------------------------------------------------------------------------------------------|:------------------------------------------------------------------------------|
-| [**WmiGetMonitorRawEEdidV1Block**](wmigetmonitorraweedidv1block-wmimonitordescriptormethods.md) | Accede ai dati non elaborati per un blocco descrittore EDID v. 1. x specificato.<br/> |
+| [**WmiGetMonitorRawEEdidV1Block**](wmigetmonitorraweedidv1block-wmimonitordescriptormethods.md) | Accede ai dati non elaborati per un blocco descrittore EDID v.1.x specificato.<br/> |
 
 
 
@@ -59,14 +59,14 @@ La classe **WmiMonitorDescriptorMethods** dispone di questi metodi.
 
 ### <a name="properties"></a>Proprietà
 
-La classe **WmiMonitorDescriptorMethods** dispone di queste proprietà.
+La **classe WmiMonitorDescriptorMethods** ha queste proprietà.
 
 <dl> <dt>
 
 **Attivo**
 </dt> <dd> <dl> <dt>
 
-Tipo di dati: **Boolean**
+Tipo di dati: **booleano**
 </dt> <dt>
 
 Tipo di accesso: sola lettura
@@ -79,7 +79,7 @@ Indica il monitoraggio attivo.
 **InstanceName**
 </dt> <dd> <dl> <dt>
 
-Tipo di dati: **String**
+Tipo di dati: **stringa**
 </dt> <dt>
 
 Tipo di accesso: sola lettura
@@ -88,7 +88,7 @@ Tipo di accesso: sola lettura
 Qualificatori: **chiave**
 </dt> </dl>
 
-Nome dell'istanza di monitoraggio specifica.
+Nome dell'istanza del monitoraggio specifica.
 
 </dd> </dl>
 
@@ -100,8 +100,8 @@ Nome dell'istanza di monitoraggio specifica.
 |-------------------------------------|----------------------------------------------------------------------------------------|
 | Client minimo supportato<br/> | Windows Vista<br/>                                                               |
 | Server minimo supportato<br/> | Windows Server 2008<br/>                                                         |
-| Spazio dei nomi<br/>                | \\WMI radice<br/>                                                                   |
-| MOF<br/>                      | <dl> <dt>WmiCore. mof</dt> </dl> |
+| Spazio dei nomi<br/>                | Wmi \\ radice<br/>                                                                   |
+| MOF<br/>                      | <dl> <dt>WmiCore.mof</dt> </dl> |
 | DLL<br/>                      | <dl> <dt>WmiProv.dll</dt> </dl> |
 
 

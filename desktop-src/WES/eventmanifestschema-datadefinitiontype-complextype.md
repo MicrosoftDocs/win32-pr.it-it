@@ -1,6 +1,6 @@
 ---
 title: Tipo complesso DataDefinitionType
-description: Definisce un elemento di dati da includere con l'evento . | Tipo complesso DataDefinitionType
+description: Definisce un elemento di dati che si desidera includere con l'evento . | Tipo complesso DataDefinitionType
 ms.assetid: f4234e54-a5a8-48e4-941f-05107dcd3f88
 keywords:
 - EventLog di tipo complesso DataDefinitionType
@@ -13,16 +13,16 @@ api_type:
 ms.topic: reference
 ms.date: 05/31/2018
 api_location: ''
-ms.openlocfilehash: fa492acf00740b0df9b761c40797ec05feb5b2e38b84ec0682296dd845cbe613
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: a637166d261c4148a81baee3597d4090542b8612
+ms.sourcegitcommit: 9b5faa61c38b2d0c432b7f2dbee8c127b0e28a7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "118589606"
+ms.lasthandoff: 08/19/2021
+ms.locfileid: "122470927"
 ---
 # <a name="datadefinitiontype-complex-type"></a>Tipo complesso DataDefinitionType
 
-Definisce un elemento di dati da includere con l'evento .
+Definisce un elemento di dati che si desidera includere con l'evento .
 
 ``` syntax
 <xs:complexType name="DataDefinitionType"
@@ -69,67 +69,26 @@ Definisce un elemento di dati da includere con l'evento .
 
 
 
-<table>
-<colgroup>
-<col style="width: 33%" />
-<col style="width: 33%" />
-<col style="width: 33%" />
-</colgroup>
-<thead>
-<tr class="header">
-<th>Nome</th>
-<th>Tipo</th>
-<th>Descrizione</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>count</td>
-<td><a href="eventmanifestschema-counttype-simpletype.md"><strong>CountType</strong></a></td>
-<td>Numero di elementi nella matrice se l'elemento dati è una matrice. È possibile specificare il conteggio effettivo o il nome di un altro elemento di dati che contiene il conteggio. <br/></td>
-</tr>
-<tr class="even">
-<td>inType</td>
-<td><strong>QName</strong></td>
-<td>Tipo di dati per questo elemento di dati. Per un elenco dei tipi di dati di input predefiniti, vedere il <a href="eventmanifestschema-inputtype-complextype.md"><strong>tipo complesso InputType.</strong></a><br/></td>
-</tr>
-<tr class="odd">
-<td>length</td>
-<td><a href="eventmanifestschema-lengthtype-simpletype.md"><strong>LengthType</strong></a></td>
-<td>Lunghezza di un elemento di dati a lunghezza variabile, ad esempio un BLOB binario. Per i dati binari, specificare la lunghezza in byte e per i dati stringa specificare la lunghezza in caratteri. È possibile specificare la lunghezza effettiva o il nome di un altro elemento di dati che contiene la lunghezza.<br/> Se si usa l'attributo length per specificare una stringa a lunghezza fissa, è necessario riempire la stringa fino alla lunghezza fissa consentendo il carattere di terminazione Null alla fine (ad esempio, se la lunghezza è 5, la stringa abc deve essere riempita come &quot; &quot; &quot; abc &quot; . La lunghezza della stringa deve includere il carattere di terminazione Null.<br/></td>
-</tr>
-<tr class="even">
-<td>map</td>
-<td>string</td>
-<td>Nome del mapping nome/valore da usare per eseguire il mapping di valori interi alle stringhe. Il tipo di dati dell'elemento dati deve essere uno dei tipi seguenti:<br/>
-<ul>
-<li>win:UInt8</li>
-<li>win:UInt16</li>
-<li>win:UInt32</li>
-</ul></td>
-</tr>
-<tr class="odd">
-<td>name</td>
-<td>string</td>
-<td>Nome dell'elemento dati. È possibile usare il nome per fare riferimento a questo elemento di dati nel frammento XML se si specifica una <a href="eventmanifestschema-userdata-templateitemtype-element.md"><strong>sezione UserData</strong></a> nel modello. È anche possibile fare riferimento a questo nome in un attributo length o count di un altro elemento di dati se questo elemento di dati contiene il relativo valore di lunghezza o conteggio.<br/> <strong>Windows Vista:</strong> Questo attributo è facoltativo.<br/></td>
-</tr>
-<tr class="even">
-<td>outType</td>
-<td><strong>QName</strong></td>
-<td>Tipo di dati da utilizzare per il rendering di questo elemento di dati. Per un elenco dei tipi di dati di output predefiniti, vedere il <a href="eventmanifestschema-outputtype-complextype.md"><strong>tipo complesso OutputType.</strong></a><br/> <strong>Windows Vista:</strong> Il tipo di output viene ignorato e il servizio determina il tipo in base al tipo di input.<br/></td>
-</tr>
-</tbody>
-</table>
+
+| Nome | Tipo | Descrizione | 
+|------|------|-------------|
+| count | <a href="eventmanifestschema-counttype-simpletype.md"><strong>Tipo di conteggio</strong></a> | Numero di elementi nella matrice se l'elemento dati è una matrice. È possibile specificare il conteggio effettivo o il nome di un altro elemento di dati che contiene il conteggio. <br /> | 
+| inType | <strong>QName</strong> | Tipo di dati per questo elemento di dati. Per un elenco dei tipi di dati di input predefiniti, vedere il <a href="eventmanifestschema-inputtype-complextype.md"><strong>tipo complesso InputType.</strong></a><br /> | 
+| length | <a href="eventmanifestschema-lengthtype-simpletype.md"><strong>Tipo di lunghezza</strong></a> | Lunghezza di un elemento di dati a lunghezza variabile, ad esempio un BLOB binario. Per i dati binari, specificare la lunghezza in byte e per i dati stringa specificare la lunghezza in caratteri. È possibile specificare la lunghezza effettiva o il nome di un altro elemento di dati che contiene la lunghezza.<br /> Se si usa l'attributo length per specificare una stringa a lunghezza fissa, è necessario riempire la stringa fino alla lunghezza fissa consentendo il carattere di terminazione Null alla fine (ad esempio, se la lunghezza è 5, la stringa "abc" deve essere riempita come "abc". La lunghezza della stringa deve includere il carattere di terminazione Null.<br /> | 
+| map | string | Nome del mapping nome/valore da usare per eseguire il mapping di valori interi a stringhe. Il tipo di dati dell'elemento dati deve essere uno dei tipi seguenti:<br /><ul><li>win:UInt8</li><li>win:UInt16</li><li>win:UInt32</li></ul> | 
+| name | string | Nome dell'elemento dati. È possibile usare il nome per fare riferimento a questo elemento di dati nel frammento XML se si specifica una <a href="eventmanifestschema-userdata-templateitemtype-element.md"><strong>sezione UserData</strong></a> nel modello. È anche possibile fare riferimento a questo nome in un attributo length o count di un altro elemento di dati se questo elemento dati contiene il relativo valore di lunghezza o conteggio.<br /><strong>Windows Vista:</strong> Questo attributo è facoltativo.<br /> | 
+| outType | <strong>QName</strong> | Tipo di dati da utilizzare per il rendering di questo elemento di dati. Per un elenco dei tipi di dati di output predefiniti, vedere il <a href="eventmanifestschema-outputtype-complextype.md"><strong>tipo complesso OutputType.</strong></a><br /><strong>Windows Vista:</strong> Il tipo di output viene ignorato e il servizio determina il tipo in base al tipo di input.<br /> | 
+
 
 
 
 ## <a name="remarks"></a>Commenti
 
-Per i tipi di input a lunghezza variabile, ad esempio BLOB binari, è necessario usare l'attributo length per specificare in modo esplicito le dimensioni dei dati. Per le stringhe, specificare l'attributo length solo se le stringhe sono di lunghezza fissa.
+Per i tipi di input a lunghezza variabile, ad esempio i BLOB binari, è necessario usare l'attributo length per specificare in modo esplicito le dimensioni dei dati. Per le stringhe, specificare l'attributo length solo se le stringhe hanno una lunghezza fissa.
 
 ## <a name="examples"></a>Esempio
 
-Di seguito sono riportati alcuni esempi di definizioni di elementi di dati.
+Di seguito sono riportati alcuni esempi delle definizioni degli elementi di dati.
 
 
 ```XML
@@ -207,10 +166,10 @@ Di seguito sono riportati alcuni esempi di definizioni di elementi di dati.
 
 
 
-| Requisito | Valore |
+| Requisito | valore |
 |-------------------------------------|------------------------------------------------------|
-| Client minimo supportato<br/> | Windows Solo \[ app desktop di Vista\]<br/>       |
-| Server minimo supportato<br/> | Windows Solo app desktop server 2008 \[\]<br/> |
+| Client minimo supportato<br/> | Windows Solo \[ app desktop Vista\]<br/>       |
+| Server minimo supportato<br/> | Windows Solo app desktop di Server 2008 \[\]<br/> |
 
 
 

@@ -4,16 +4,16 @@ ms.assetid: 7b9abfcc-28ab-4f29-af69-6dc68e3f51b6
 title: Messaggio di bye
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 8276c05314b31782442bfdf6de998dd41241391de9dc94947409041c8f4aa420
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 77d571e8633690f1a2fee5f6f9c09e1379a7a465
+ms.sourcegitcommit: c276a8912787b2cda74dcf54eb96df961bb1188b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "117738653"
+ms.lasthandoff: 08/20/2021
+ms.locfileid: "122622477"
 ---
 # <a name="bye-message"></a>Messaggio di bye
 
-Un messaggio Bye è un WS-Discovery usato per annunciare la partenza di un dispositivo o di un servizio dalla rete. Per altre informazioni sui messaggi Bye, vedere la sezione 4.2 della [specifica WS-Discovery.](https://specs.xmlsoap.org/ws/2005/04/discovery/ws-discovery.pdf)
+Un messaggio Bye è un WS-Discovery usato per annunciare la partenza di un dispositivo o di un servizio dalla rete. Per altre informazioni sui messaggi Bye, vedere la sezione 4.2 della specifica [WS-Discovery](https://specs.xmlsoap.org/ws/2005/04/discovery/ws-discovery.pdf).
 
 I messaggi bye non sono richieste. I messaggi sono facoltativi.
 
@@ -62,9 +62,9 @@ Un messaggio Bye ha i punti di interesse seguenti.
 
 <table>
 <colgroup>
-<col style="width: 33%" />
-<col style="width: 33%" />
-<col style="width: 33%" />
+<col  />
+<col  />
+<col  />
 </colgroup>
 <thead>
 <tr class="header">

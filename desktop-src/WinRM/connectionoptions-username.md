@@ -1,12 +1,12 @@
 ---
-title: Proprietà ConnectionOptions. UserName (WSManDisp. h)
+title: Proprietà ConnectionOptions.UserName (WSManDisp.h)
 description: Imposta e ottiene il nome utente di un account locale o di dominio nel computer remoto. Questa proprietà determina il nome utente per l'autenticazione.
 ms.assetid: e8f70143-f002-4b39-97a3-006b9713262d
 ms.tgt_platform: multiple
 keywords:
-- Proprietà UserName Gestione remota Windows
-- Gestione remota Windows proprietà nomeutente, oggetto ConnectionOptions
-- Oggetto ConnectionOptions Gestione remota Windows, proprietà UserName
+- Proprietà UserName Windows Gestione remota
+- Proprietà UserName Windows gestione remota, oggetto ConnectionOptions
+- Oggetto ConnectionOptions Windows proprietà Gestione remota , UserName
 topic_type:
 - apiref
 api_name:
@@ -17,16 +17,16 @@ api_type:
 - COM
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: ba4d6c751dbe579372b863566412e740c2a646a5
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: 40fa4cd5e1d4fd733431adab80241744c0b197960506cfe2908bc99315ecfdea
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "104120374"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120121781"
 ---
-# <a name="connectionoptionsusername-property"></a>Proprietà ConnectionOptions. UserName
+# <a name="connectionoptionsusername-property"></a>ConnectionOptions.UserName - proprietà
 
-Imposta e ottiene il nome utente di un account locale o di dominio nel computer remoto. Questa proprietà determina il nome utente per l'autenticazione. Per altre informazioni, vedere [autenticazione per le connessioni remote](authentication-for-remote-connections.md).
+Imposta e ottiene il nome utente di un account locale o di dominio nel computer remoto. Questa proprietà determina il nome utente per l'autenticazione. Per altre informazioni, vedere [Autenticazione per connessioni remote.](authentication-for-remote-connections.md)
 
 Si tratta di una proprietà di lettura/scrittura.
 
@@ -41,15 +41,15 @@ ConnectionOptions.UserName As String
 
 ## <a name="property-value"></a>Valore proprietà
 
-Stringa che contiene il nome utente di un account locale o di dominio nel computer remoto.
+Stringa contenente il nome utente di un account locale o di dominio nel computer remoto.
 
-Se non viene specificato alcun valore e il flag **WSManFlagCredUsernamePassword** non è impostato, viene usato il nome utente dell'account che esegue lo script.
+Se non viene specificato alcun valore e il flag **WSManFlagCredUsernamePassword** non è impostato, viene utilizzato il nome utente dell'account che esegue lo script.
 
-Se non viene specificato alcun valore e viene impostato il flag **WSManFlagCredUsernamePassword** , lo script richiede all'utente di immettere il nome utente e la password. Se non viene immesso un nome utente e una password validi, viene restituito un errore di accesso negato.
+Se non viene specificato alcun valore e il flag **WSManFlagCredUsernamePassword** è impostato, lo script richiede all'utente di immettere il nome utente e la password. Se non vengono immessi un nome utente e una password validi, viene restituito un errore di accesso negato.
 
 ## <a name="remarks"></a>Commenti
 
-Per specificare questa proprietà, viene usata la sintassi seguente.
+La sintassi seguente viene utilizzata per specificare questa proprietà.
 
 
 ```VB
@@ -59,7 +59,7 @@ ConnectionOptions.UserName = "<UserName>"
 
 
 
-È possibile specificare **nome utente** e [**password**](connectionoptions-password.md) per un account di dominio quando si usa l'autenticazione [*Negotiate*](windows-remote-management-glossary.md) o *Kerberos* o per un account locale con autenticazione di [*base*](windows-remote-management-glossary.md) . Per connettersi a un account locale, i flag [**WSMan. CreateSession**](wsman-createsession.md) devono contenere la combinazione del flag **WSManFlagUseBasic** e del flag **WsmanFlagCredUserNamePassword** . Per connettersi a un account di dominio, i flag **WSMan. CreateSession** devono contenere la combinazione del flag **WSManFlagUseNegotiate** e del flag **WsmanFlagCredUserNamePassword** oppure la combinazione del flag **WSManFlagUseKerberos** e del flag **WsmanFlagCredUserNamePassword** . Per un account di dominio, il nome **utente** deve essere specificato nel formato "computer \\ nomeutente", dove la parte "computer" della stringa può essere il nome o l'indirizzo IP. Per altre informazioni, vedere [autenticazione per le connessioni remote](authentication-for-remote-connections.md).
+È possibile specificare **UserName e** [**Password per**](connectionoptions-password.md) un account di dominio quando si usa l'autenticazione [*Negotiate*](windows-remote-management-glossary.md) o *Kerberos* o per un account locale con autenticazione [*di*](windows-remote-management-glossary.md) base. Per connettersi a un account locale, i flag [**WSMan.CreateSession**](wsman-createsession.md) devono contenere la combinazione del flag **WSManFlagUseBasic** e del flag **WsmanFlagCredUserNamePassword.** Per connettersi a un account di dominio, i flag **WSMan.CreateSession** devono contenere la combinazione del flag **WSManFlagUseNegotiate** e del flag **WsmanFlagCredUserNamePassword** o della combinazione del flag **WSManFlagUseKerberos** e del flag **WsmanFlagCredUserNamePassword.** Per un account di dominio, **UserName** deve essere specificato nel formato "nome utente computer", dove la parte "computer" della stringa può essere il nome o \\ l'indirizzo IP. Per altre informazioni, vedere [Autenticazione per connessioni remote.](authentication-for-remote-connections.md)
 
 
 ```VB
@@ -73,7 +73,7 @@ Set NewSession = Wsman.CreateSession("127.0.51.1", _
 
 
 
-Per la connessione a un account di dominio, i flag [**WSMan. CreateSession**](wsman-createsession.md) devono contenere la combinazione del flag **WSManFlagUseNegotiate** e il flag **WsmanFlagCredUserNamePassword** per la connessione a un account di dominio, che richiede l'autenticazione Negotiate.
+Per la connessione a un account di dominio, i flag [**WSMan.CreateSession**](wsman-createsession.md) devono contenere la combinazione del flag **WSManFlagUseNegotiate** e del flag **WsmanFlagCredUserNamePassword** per la connessione a un account di dominio, che richiede l'autenticazione Negotiate.
 
 
 ```VB
@@ -95,9 +95,9 @@ Set NewSession = Wsman.CreateSession("127.0.51.1", _
 |-------------------------------------|------------------------------------------------------------------------------------------|
 | Client minimo supportato<br/> | Windows Vista<br/>                                                                 |
 | Server minimo supportato<br/> | Windows Server 2008<br/>                                                           |
-| Intestazione<br/>                   | <dl> <dt>WSManDisp. h</dt> </dl>   |
-| IDL<br/>                      | <dl> <dt>WSManDisp. idl</dt> </dl> |
-| Libreria<br/>                  | <dl> <dt>WSManDisp. tlb</dt> </dl> |
+| Intestazione<br/>                   | <dl> <dt>WSManDisp.h</dt> </dl>   |
+| Idl<br/>                      | <dl> <dt>WSManDisp.idl</dt> </dl> |
+| Libreria<br/>                  | <dl> <dt>WSManDisp.tlb</dt> </dl> |
 | DLL<br/>                      | <dl> <dt>WSMAuto.dll</dt> </dl>   |
 
 
@@ -106,7 +106,7 @@ Set NewSession = Wsman.CreateSession("127.0.51.1", _
 
 <dl> <dt>
 
-[**ConnectionOptions**](connectionoptions.md)
+[**Connectionoptions**](connectionoptions.md)
 </dt> </dl>
 
  

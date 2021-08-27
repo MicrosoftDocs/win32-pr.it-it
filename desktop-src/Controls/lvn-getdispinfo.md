@@ -1,9 +1,9 @@
 ---
-title: Codice di notifica LVN_GETDISPINFO (COMmctrl. h)
-description: Inviato da un controllo di visualizzazione elenco alla relativa finestra padre. Si tratta di una richiesta per la finestra padre per fornire le informazioni necessarie per visualizzare o ordinare un elemento della visualizzazione elenco. Questo codice di notifica viene inviato sotto forma di messaggio di \_ notifica WM.
+title: LVN_GETDISPINFO codice di notifica (Commctrl.h)
+description: Inviato da un controllo visualizzazione elenco alla relativa finestra padre. Si tratta di una richiesta per la finestra padre di fornire le informazioni necessarie per visualizzare o ordinare un elemento della visualizzazione elenco. Questo codice di notifica viene inviato sotto forma di messaggio WM \_ NOTIFY.
 ms.assetid: 04310e39-69bc-45d7-958c-00452279d7a9
 keywords:
-- Controlli di Windows per il codice di notifica LVN_GETDISPINFO
+- LVN_GETDISPINFO codice di notifica Windows controlli
 topic_type:
 - apiref
 api_name:
@@ -16,16 +16,16 @@ api_type:
 - HeaderDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: f1585524dd447c4a1324dc5c7a235490de776fb2
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: 1f4f4fc6917b0de699d1ca561f46bc7789aa15eea7c40aa3681fe74991e3a122
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "103744002"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120088821"
 ---
-# <a name="lvn_getdispinfo-notification-code"></a>\_Codice di notifica GETDISPINFO di LVN
+# <a name="lvn_getdispinfo-notification-code"></a>Codice di notifica \_ LVN GETDISPINFO
 
-Inviato da un controllo di visualizzazione elenco alla relativa finestra padre. Si tratta di una richiesta per la finestra padre per fornire le informazioni necessarie per visualizzare o ordinare un elemento della visualizzazione elenco. Questo codice di notifica viene inviato sotto forma di messaggio [**di \_ notifica WM**](wm-notify.md) .
+Inviato da un controllo visualizzazione elenco alla relativa finestra padre. Si tratta di una richiesta per la finestra padre di fornire le informazioni necessarie per visualizzare o ordinare un elemento della visualizzazione elenco. Questo codice di notifica viene inviato sotto forma di [**messaggio WM \_ NOTIFY.**](wm-notify.md)
 
 
 ```C++
@@ -43,7 +43,7 @@ LVN_GETDISPINFO
 *lParam* 
 </dt> <dd>
 
-Puntatore a una struttura [**NMLVDISPINFO**](/windows/win32/api/commctrl/ns-commctrl-nmlvdispinfoa) . In input la struttura [**LVITEM**](/windows/win32/api/commctrl/ns-commctrl-lvitema) contenuta in questa struttura specifica il tipo di informazioni richieste e identifica l'elemento o l'elemento secondario di interesse. Utilizzare la struttura **LVITEM** per restituire al controllo le informazioni richieste. Se il gestore di messaggi imposta il \_ flag LVIF di \_ SetItem nel membro **mask** della struttura **LVITEM** , il controllo List-View archivia le informazioni richieste e non le richiede di nuovo.
+Puntatore a [**una struttura NMLVDISPINFO.**](/windows/win32/api/commctrl/ns-commctrl-nmlvdispinfoa) In input, la [**struttura LVITEM**](/windows/win32/api/commctrl/ns-commctrl-lvitema) contenuta in questa struttura specifica il tipo di informazioni necessarie e identifica l'elemento o l'elemento secondario di interesse. Usare la **struttura LVITEM** per restituire le informazioni richieste al controllo. Se il gestore di messaggi imposta il flag LVIF DI SETITEM nel membro mask della struttura \_ \_ **LVITEM,**  il controllo visualizzazione elenco archivia le informazioni richieste e non le richiederà di nuovo.
 
 </dd> </dl>
 
@@ -53,15 +53,15 @@ Nessun valore restituito.
 
 ## <a name="remarks"></a>Commenti
 
-Il ricevitore di notifiche esegue il cast di *lParam* per recuperare la struttura [**NMLVDISPINFO**](/windows/win32/api/commctrl/ns-commctrl-nmlvdispinfoa) . Il parametro *wParam* contiene il codice di notifica.
+Il ricevitore della notifica esegue il cast *di lParam* per recuperare la [**struttura NMLVDISPINFO.**](/windows/win32/api/commctrl/ns-commctrl-nmlvdispinfoa) Il *parametro wParam* contiene il codice di notifica.
 
-Un controllo di visualizzazione elenco Invia il codice di notifica **\_ GETDISPINFO LVN** per recuperare le informazioni sull'elemento archiviate dall'applicazione anziché dal controllo. Le informazioni possono essere informazioni sul testo o sull'icona per un elemento. Può anche essere informazioni sullo stato dell'elemento. Per ulteriori informazioni sull'implementazione dello stato dell'elemento in base a un callback, vedere il messaggio [**LVM \_ SETCALLBACKMASK**](lvm-setcallbackmask.md) .
+Un controllo visualizzazione elenco invia il codice di notifica **\_ LVN GETDISPINFO** per recuperare le informazioni sull'elemento archiviate dall'applicazione anziché dal controllo. Le informazioni possono essere informazioni di testo o icona per un elemento. Può anche essere informazioni sullo stato dell'elemento. Per altre informazioni sull'implementazione dello stato dell'elemento in base al callback, vedere il messaggio [**LVM \_ SETCALLBACKMASK.**](lvm-setcallbackmask.md)
 
-Per altre informazioni sui callback di visualizzazione elenco, vedere [elementi di callback e maschera di callback](list-view-controls-overview.md).
+Per altre informazioni sui callback di visualizzazione elenco, vedere [Elementi di callback e Maschera di callback](list-view-controls-overview.md).
 
 ## <a name="examples"></a>Esempio
 
-Nell'esempio seguente viene illustrato il modo in cui questo codice di notifica può essere gestito per impostare il testo nelle colonne di una visualizzazione elenco. I dati per ogni elemento sono contenuti nella struttura seguente.
+L'esempio seguente illustra come questo codice di notifica può essere gestito per impostare il testo nelle colonne di una visualizzazione elenco. I dati per ogni elemento sono mantenuti nella struttura seguente.
 
 
 ```C++
@@ -78,7 +78,7 @@ Nell'esempio seguente viene illustrato il modo in cui questo codice di notifica 
 
 
 
-Il codice seguente è riportato dal \_ gestore di notifiche WM nella procedura della finestra di dialogo.
+Di seguito è riportato il gestore WM \_ NOTIFY nella procedura della finestra di dialogo.
 
 
 ```C++
@@ -124,9 +124,9 @@ Il codice seguente è riportato dal \_ gestore di notifiche WM nella procedura d
 
 | Requisito | Valore |
 |-------------------------------------|---------------------------------------------------------------------------------------|
-| Client minimo supportato<br/> | \[Solo app desktop di Windows Vista\]<br/>                                        |
-| Server minimo supportato<br/> | \[Solo app desktop Windows Server 2003\]<br/>                                  |
-| Intestazione<br/>                   | <dl> <dt>Commctrl. h</dt> </dl> |
+| Client minimo supportato<br/> | Windows Solo \[ app desktop di Vista\]<br/>                                        |
+| Server minimo supportato<br/> | Windows Solo app desktop server 2003 \[\]<br/>                                  |
+| Intestazione<br/>                   | <dl> <dt>Commctrl.h</dt> </dl> |
 | Nomi Unicode e ANSI<br/>   | **LVN \_ GETDISPINFOW** (Unicode) e **LVN \_ GETDISPINFOA** (ANSI)<br/>           |
 
 
@@ -135,7 +135,7 @@ Il codice seguente è riportato dal \_ gestore di notifiche WM nella procedura d
 
 <dl> <dt>
 
-[**\_SETDISPINFO LVN**](lvn-setdispinfo.md)
+[**LVN \_ SETDISPINFO**](lvn-setdispinfo.md)
 </dt> </dl>
 
  

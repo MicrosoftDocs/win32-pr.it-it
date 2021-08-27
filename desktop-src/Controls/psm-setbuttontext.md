@@ -1,9 +1,9 @@
 ---
-title: Messaggio PSM_SETBUTTONTEXT (Prsht. h)
-description: Imposta il testo su un pulsante in una procedura guidata Aero. È possibile inviare questo messaggio in modo esplicito o utilizzando la \_ macro PropSheet SetButtonText.
+title: PSM_SETBUTTONTEXT messaggio (Prsht.h)
+description: Imposta il testo di un pulsante in una procedura guidata di Aero. È possibile inviare questo messaggio in modo esplicito o tramite la \_ macro PropSheet SetButtonText.
 ms.assetid: 30b7afd1-5094-430f-9c48-d87832d96050
 keywords:
-- Controlli di Windows Message PSM_SETBUTTONTEXT
+- PSM_SETBUTTONTEXT dei controlli Windows messaggio
 topic_type:
 - apiref
 api_name:
@@ -15,16 +15,16 @@ api_type:
 - HeaderDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 41a0b55f73fc7084e89f54c1e741d12000b0f949
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: feac193beef3149140447a38c0be00b7f4fa0c1c1b28e10a5d7de2203ba21cec
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "104048256"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120088591"
 ---
-# <a name="psm_setbuttontext-message"></a>\_Messaggio SETBUTTONTEXT di PSM
+# <a name="psm_setbuttontext-message"></a>Messaggio \_ SETBUTTONTEXT PSM
 
-Imposta il testo su un pulsante in una procedura guidata Aero. È possibile inviare questo messaggio in modo esplicito o utilizzando la macro [**PropSheet \_ SetButtonText**](/windows/desktop/api/Prsht/nf-prsht-propsheet_setbuttontext) .
+Imposta il testo di un pulsante in una procedura guidata di Aero. È possibile inviare questo messaggio in modo esplicito o tramite la macro [**\_ PropSheet SetButtonText.**](/windows/desktop/api/Prsht/nf-prsht-propsheet_setbuttontext)
 
 ## <a name="parameters"></a>Parametri
 
@@ -39,11 +39,11 @@ Uno dei valori seguenti che specifica il pulsante il cui testo è impostato.
 
 | Valore                                                                                                                                                                                 | Significato                           |
 |---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|-----------------------------------|
-| <span id="PSWIZB_BACK"></span><span id="pswizb_back"></span><dl> <dt>**PSWIZB \_ indietro**</dt> </dl>                               | Pulsante **indietro** .<br/>   |
-| <span id="PSWIZB_CANCEL"></span><span id="pswizb_cancel"></span><dl> <dt>**\_annullamento PSWIZB**</dt> </dl>                         | Pulsante **Annulla** .<br/> |
-| <span id="PSWIZB_DISABLEDFINISH"></span><span id="pswizb_disabledfinish"></span><dl> <dt>**\_DISABLEDFINISH PSWIZB**</dt> </dl> | Pulsante **fine** .<br/> |
-| <span id="PSWIZB_FINISH"></span><span id="pswizb_finish"></span><dl> <dt>**\_fine PSWIZB**</dt> </dl>                         | Pulsante **fine** .<br/> |
-| <span id="PSWIZB_NEXT"></span><span id="pswizb_next"></span><dl> <dt>**PSWIZB \_ successivo**</dt> </dl>                               | Pulsante **Avanti** .<br/>   |
+| <span id="PSWIZB_BACK"></span><span id="pswizb_back"></span><dl> <dt>**PSWIZB \_ BACK**</dt> </dl>                               | Pulsante  Indietro.<br/>   |
+| <span id="PSWIZB_CANCEL"></span><span id="pswizb_cancel"></span><dl> <dt>**PSWIZB \_ CANCEL**</dt> </dl>                         | Pulsante  Annulla.<br/> |
+| <span id="PSWIZB_DISABLEDFINISH"></span><span id="pswizb_disabledfinish"></span><dl> <dt>**PSWIZB \_ DISABLEDFINISH**</dt> </dl> | Pulsante **Fine.**<br/> |
+| <span id="PSWIZB_FINISH"></span><span id="pswizb_finish"></span><dl> <dt>**PSWIZB \_ FINISH**</dt> </dl>                         | Pulsante **Fine.**<br/> |
+| <span id="PSWIZB_NEXT"></span><span id="pswizb_next"></span><dl> <dt>**PSWIZB \_ NEXT**</dt> </dl>                               | Pulsante  Avanti.<br/>   |
 
 
 
@@ -68,9 +68,9 @@ Nessun valore restituito.
 
 | Requisito | Valore |
 |-------------------------------------|------------------------------------------------------------------------------------|
-| Client minimo supportato<br/> | \[Solo app desktop di Windows Vista\]<br/>                                     |
-| Server minimo supportato<br/> | \[Solo app desktop Windows Server 2008\]<br/>                               |
-| Intestazione<br/>                   | <dl> <dt>Prsht. h</dt> </dl> |
+| Client minimo supportato<br/> | Windows Solo \[ app desktop di Vista\]<br/>                                     |
+| Server minimo supportato<br/> | Windows Solo app desktop server 2008 \[\]<br/>                               |
+| Intestazione<br/>                   | <dl> <dt>Prsht.h</dt> </dl> |
 | Nomi Unicode e ANSI<br/>   | **PSM \_ SETBUTTONTEXTW** (Unicode)<br/>                                       |
 
 

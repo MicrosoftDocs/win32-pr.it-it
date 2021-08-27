@@ -2,7 +2,7 @@
 description: Le attività pianificate WMI creano e ottengono informazioni sulle attività pianificate. Per altri esempi, vedere TechNet ScriptCenter all'indirizzo https://www.microsoft.com/technet .
 ms.assetid: 62151fe8-8880-43f2-b456-628bd9c7cc1c
 ms.tgt_platform: multiple
-title: 'Attività WMI: Attività pianificate'
+title: 'Attività WMI: attività pianificate'
 ms.topic: article
 ms.date: 05/31/2018
 topic_type:
@@ -10,42 +10,42 @@ topic_type:
 api_name: ''
 api_type: ''
 api_location: ''
-ms.openlocfilehash: ee4fcf193296d5c474987a3a99877b3bfb43868f79527200893303df351920cb
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 37a1d44a07feea7beb07984c383620fd2f166cdb
+ms.sourcegitcommit: c276a8912787b2cda74dcf54eb96df961bb1188b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "117738840"
+ms.lasthandoff: 08/20/2021
+ms.locfileid: "122626157"
 ---
-# <a name="wmi-tasks-scheduled-tasks"></a>Attività WMI: Attività pianificate
+# <a name="wmi-tasks-scheduled-tasks"></a>Attività WMI: attività pianificate
 
 Le attività pianificate WMI creano e ottengono informazioni sulle attività pianificate. Per altri esempi, vedere TechNet ScriptCenter all'indirizzo [https://www.microsoft.com/technet](https://technet.microsoft.com/default.aspx) .
 
-Gli esempi di script illustrati in questo argomento ottengono i dati solo dal computer locale. Per altre informazioni su come usare lo script per ottenere dati da computer remoti, vedere [Connessione a WMI in un computer remoto.](connecting-to-wmi-on-a-remote-computer.md)
+Gli esempi di script illustrati in questo argomento ottengono dati solo dal computer locale. Per altre informazioni su come usare lo script per ottenere dati da computer remoti, vedere [Connessione a WMI in un computer remoto](connecting-to-wmi-on-a-remote-computer.md).
 
 
-Nella procedura seguente viene descritto come eseguire uno script.
+La procedura seguente descrive come eseguire uno script.
 
 **Per eseguire uno script**
 
-1.  Copiare il codice e salvarlo in un file con estensione vbs, ad esempio *filename.vbs*. Assicurarsi che l'editor di testo non a .txt'estensione al file.
+1.  Copiare il codice e salvarlo in un file con estensione vbs, ad esempio *filename.vbs*. Assicurarsi che l'editor di testo non aggiunge un'.txt al file.
 2.  Aprire una finestra del prompt dei comandi e passare alla directory in cui è stato salvato il file.
-3.  Digitare **cscript filename.vbs** prompt dei comandi.
-4.  Se non è possibile accedere a un registro eventi, verificare se è in esecuzione da un prompt dei comandi con privilegi elevati. Alcuni registri eventi, ad esempio il registro eventi di sicurezza, possono essere protetti da Controlli di accesso utente.
+3.  Digitare **cscript filename.vbs** al prompt dei comandi.
+4.  Se non è possibile accedere a un registro eventi, verificare se è in esecuzione da un prompt dei comandi con privilegi elevati. Alcuni registri eventi, ad esempio il registro eventi di sicurezza, possono essere protetti dai controlli di accesso utente.
 
 > [!Note]  
-> Per impostazione predefinita, cscript visualizza l'output di uno script nella finestra del prompt dei comandi. Poiché gli script WMI possono produrre grandi quantità di output, potrebbe essere necessario reindirizzare l'output a un file. Digitare **cscript filename.vbs > outfile.txt** prompt dei comandi per reindirizzare l'output dello script *filename.vbs* a *outfile.txt*.
+> Per impostazione predefinita, cscript visualizza l'output di uno script nella finestra del prompt dei comandi. Poiché gli script WMI possono produrre grandi quantità di output, potrebbe essere necessario reindirizzare l'output a un file. Digitare **cscript filename.vbs > outfile.txt** prompt dei comandi per reindirizzare l'output dello *script* filename.vbsa *outfile.txt*.
 
  
 
-Nella tabella seguente sono elencati esempi di script che possono essere utilizzati per ottenere vari tipi di dati dal computer locale.
+Nella tabella seguente sono elencati esempi di script che possono essere usati per ottenere vari tipi di dati dal computer locale.
 
 
 
 <table>
 <colgroup>
-<col style="width: 50%" />
-<col style="width: 50%" />
+<col  />
+<col  />
 </colgroup>
 <thead>
 <tr class="header">
@@ -56,10 +56,10 @@ Nella tabella seguente sono elencati esempi di script che possono essere utilizz
 <tbody>
 <tr class="odd">
 <td>... creare attività pianificate tramite script?</td>
-<td>Usare la <a href="/windows/desktop/CIMWin32Prov/win32-scheduledjob"><strong>Win32_ScheduledJob</strong></a> e il <a href="/windows/desktop/CIMWin32Prov/create-method-in-class-win32-scheduledjob"><strong>metodo Create.</strong></a> Se si hanno difficoltà a eseguire questa attività in Windows 7 o versioni successive, vedere la sezione Win32_ScheduledJob note. <strong></strong> probabilmente le impostazioni impediscono l'uso della classe .<br/> <span data-codelanguage="VisualBasic"></span>
+<td>Usare la <a href="/windows/desktop/CIMWin32Prov/win32-scheduledjob"><strong>Win32_ScheduledJob</strong></a> e il <a href="/windows/desktop/CIMWin32Prov/create-method-in-class-win32-scheduledjob"><strong>metodo Create.</strong></a> Se si hanno difficoltà a far funzionare questa attività Windows <strong></strong> 7 o versioni successive, vedere la sezione Win32_ScheduledJob Note. probabilmente le impostazioni impediscono l'uso della classe .<br/> <span data-codelanguage="VisualBasic"></span>
 <table>
 <colgroup>
-<col style="width: 100%" />
+<col  />
 </colgroup>
 <thead>
 <tr class="header">
@@ -85,16 +85,16 @@ End If</code></pre></td>
 </tbody>
 </table>
 
-<p>Nella stringa &quot; ********143000.000000-420 (usata nel valore del parametro StartTime del metodo &quot; <a href="/windows/desktop/CIMWin32Prov/create-method-in-class-win32-scheduledjob"><strong>Create),</strong></a> <em></em> &quot; ********143000.0000000 specifica che l'attività inizia alle &quot; 14.30 (2:30 P.M.) e &quot; -420 &quot; specifica il fuso orario. Il numero di fuso orario è la distorsione corrente della conversione dell'ora locale. La differenza è la differenza tra l'ora UTC e l'ora locale. Per calcolare la distorsione per il fuso orario, moltiplicare il numero di ore in cui il fuso orario è avanti o indietro rispetto all'ora di Greenwich (GMT) per 60 (usare un numero positivo per il numero di ore se il fuso orario è superiore a GMT e un numero negativo se il fuso orario è indietro rispetto a GMT). Aggiungere altri 60 al calcolo se il fuso orario usa l'ora legale. Ad esempio, il fuso orario standard del Pacifico è otto ore indietro rispetto a GMT, pertanto la deviazione è uguale a -420 (-8 * 60 + 60) quando è in uso l'ora legale e -480 (-8 * 60) quando l'ora legale non è in uso. È anche possibile determinare il valore della distorsione tramite una query sulla proprietà bias <a href="/windows/desktop/CIMWin32Prov/win32-timezone"><strong>della Win32_TimeZone</strong></a> classe .</p></td>
+<p>Nella stringa &quot; *********143000.000000-420 (usata nel valore del parametro StartTime del metodo &quot; <a href="/windows/desktop/CIMWin32Prov/create-method-in-class-win32-scheduledjob"><strong>Create),</strong></a> <em></em> &quot; ******143000.0000000 specifica che l'attività inizia alle &quot; 14.30 (2:30 P.M.) e &quot; -420 &quot; specifica il fuso orario. Il numero del fuso orario è la distorsione corrente della traduzione dell'ora locale. La differenza è la differenza tra l'ora UTC e l'ora locale. Per calcolare la distorsione per il fuso orario, moltiplicare il numero di ore in cui il fuso orario è in anticipo o indietro rispetto a Greenwich Mean Time (GMT) per 60 (usare un numero positivo per il numero di ore se il fuso orario è superiore a GMT e un numero negativo se il fuso orario è indietro rispetto a GMT). Aggiungere altri 60 al calcolo se il fuso orario usa l'ora legale. Ad esempio, il fuso orario standard del Pacifico è indietro di otto ore rispetto a GMT, quindi la deviazione è uguale a -420 (-8 * 60 + 60) quando è in uso l'ora legale e -480 (-8 * 60) quando l'ora legale non è in uso. È anche possibile determinare il valore della distorsione tramite una query sulla proprietà bias della <a href="/windows/desktop/CIMWin32Prov/win32-timezone"><strong>Win32_TimeZone</strong></a> classe.</p></td>
 </tr>
 <tr class="even">
 <td>... restituire un elenco di tutte le attività pianificate in un computer?</td>
-<td><p>Usare la <a href="/windows/desktop/CIMWin32Prov/win32-scheduledjob"><strong>Win32_ScheduledJob</strong></a> classe . Si noti che questa classe può restituire solo processi creati usando uno script o AT.exe. Non può restituire informazioni sui processi creati o modificati dalla procedura guidata Attività pianificata.</p>
+<td><p>Usare la <a href="/windows/desktop/CIMWin32Prov/win32-scheduledjob"><strong>Win32_ScheduledJob</strong></a> classe . Si noti che questa classe può restituire solo processi creati usando uno script o AT.exe. Non può restituire informazioni sui processi creati da o modificati dalla procedura guidata Attività pianificate.</p>
 <div class="code">
 <span data-codelanguage="VisualBasic"></span>
 <table>
 <colgroup>
-<col style="width: 100%" />
+<col  />
 </colgroup>
 <thead>
 <tr class="header">
@@ -147,7 +147,7 @@ Next</code></pre></td>
 [Attività WMI per script e applicazioni](wmi-tasks-for-scripts-and-applications.md)
 </dt> <dt>
 
-[Esempi di applicazioni WMI C++](wmi-c---application-examples.md)
+[Esempi di applicazioni C++ WMI](wmi-c---application-examples.md)
 </dt> <dt>
 
 [TechNet ScriptCenter](https://www.microsoft.com/technet/scriptcenter)

@@ -4,115 +4,115 @@ ms.assetid: 0522ccbf-e754-470a-8199-004fcbaa927d
 title: Panoramica di DXGI
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 324a5be26aade17385a6ab0b7d347015497a2a3f
-ms.sourcegitcommit: a47bd86f517de76374e4fff33cfeb613eb259a7e
+ms.openlocfilehash: 604787a1b3f747b9d33cc04e249128aede7b7a3e
+ms.sourcegitcommit: c276a8912787b2cda74dcf54eb96df961bb1188b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/06/2021
-ms.locfileid: "104481085"
+ms.lasthandoff: 08/20/2021
+ms.locfileid: "122626137"
 ---
 # <a name="dxgi-overview"></a>Panoramica di DXGI
 
-Microsoft DirectX Graphics Infrastructure (DXGI) riconosce che alcune parti della grafica si evolvono più lentamente di altre. L'obiettivo principale di DXGI è quello di gestire attività di basso livello che possono essere indipendenti dal runtime di grafica DirectX. DXGI fornisce un Framework comune per i componenti grafici futuri. il primo componente che sfrutta i vantaggi di DXGI è Microsoft Direct3D 10.
+Microsoft DirectX Graphic Infrastructure (DXGI) riconosce che alcune parti della grafica si evolvono più lentamente di altre. L'obiettivo principale di DXGI è gestire attività di basso livello che possono essere indipendenti dal runtime di grafica DirectX. DXGI fornisce un framework comune per i componenti grafici futuri; Il primo componente che sfrutta DXGI è Microsoft Direct3D 10.
 
-Nelle versioni precedenti di Direct3D, le attività di basso livello, ad esempio l'enumerazione dei dispositivi hardware, la presentazione di frame di cui è stato eseguito il rendering in un output, il controllo di gamma e la gestione di una transizione a schermo intero erano incluse nel runtime Direct3D. Queste attività sono ora implementate in DXGI.
+Nelle versioni precedenti di Direct3D, nel runtime Direct3D sono state incluse attività di basso livello come l'enumerazione dei dispositivi hardware, la presentazione di fotogrammi sottoposti a rendering in un output, il controllo della gamma e la gestione di una transizione a schermo intero. Queste attività sono ora implementate in DXGI.
 
-Lo scopo di DXGI è comunicare con il driver in modalità kernel e l'hardware di sistema, come illustrato nel diagramma seguente.
+Lo scopo di DXGI è comunicare con il driver in modalità kernel e con l'hardware di sistema, come illustrato nel diagramma seguente.
 
-![diagramma della comunicazione tra applicazioni, DXGI, driver e hardware](images/dxgi-dll.png)
+![diagramma della comunicazione tra applicazioni, dxgi e driver e hardware](images/dxgi-dll.png)
 
-Un'applicazione può accedere direttamente a DXGI o chiamare le API Direct3D in D3D11 \_ 1. h, d3d11. h, D3D10 \_ 1. h o d3d10. h, che gestisce le comunicazioni con dxgi. Si consiglia di usare direttamente DXGI se l'applicazione deve enumerare i dispositivi o controllare la modalità di presentazione dei dati a un output.
+Un'applicazione può accedere direttamente a DXGI o chiamare le API Direct3D in D3D11 \_ 1.h, D3D11.h, D3D10 1.h o D3D10.h, che gestisce automaticamente le comunicazioni con \_ DXGI. È possibile usare DXGI direttamente se l'applicazione deve enumerare i dispositivi o controllare la modalità di presentazione dei dati a un output.
 
 In questo argomento sono contenute le sezioni seguenti.
 
--   [Enumerazione degli adapter](#enumerating-adapters)
+-   [Enumerazione degli adattatori](#enumerating-adapters)
     -   [Nuove informazioni sull'enumerazione degli adapter per Windows 8](#new-info-about-enumerating-adapters-for-windows-8)
 -   [Presentazione](#presentation)
     -   [Creare una catena di scambio](#create-a-swap-chain)
     -   [Cura e alimentazione della catena di scambio](#care-and-feeding-of-the-swap-chain)
     -   [Gestione del ridimensionamento della finestra](#handling-window-resizing)
-    -   [Scelta dell'output e delle dimensioni di DXGI](#choosing-the-dxgi-output-and-size)
-    -   [Debug in modalità Full-Screen](#debugging-in-full-screen-mode)
+    -   [Scelta dell'output e delle dimensioni DXGI](#choosing-the-dxgi-output-and-size)
+    -   [Debug in modalità Full-Screen predefinita](#debugging-in-full-screen-mode)
     -   [Eliminazione di una catena di scambio](#destroying-a-swap-chain)
     -   [Uso di un monitoraggio ruotato](#using-a-rotated-monitor)
-    -   [Modalità di cambio](#switching-modes)
-    -   [Suggerimento per le prestazioni a schermo intero](#full-screen-performance-tip)
-    -   [Considerazioni su multithread](#multithread-considerations)
+    -   [Cambio di modalità](#switching-modes)
+    -   [Suggerimento sulle prestazioni a schermo intero](#full-screen-performance-tip)
+    -   [Considerazioni sul multithreading](#multithread-considerations)
 -   [Risposte DXGI da DLLMain](#dxgi-responses-from-dllmain)
--   [DXGI 1,1 modifiche](#dxgi-11-changes)
--   [DXGI 1,2 modifiche](#dxgi-12-changes)
+-   [Modifiche di DXGI 1.1](#dxgi-11-changes)
+-   [Modifiche di DXGI 1.2](#dxgi-12-changes)
 -   [Argomenti correlati](#related-topics)
 
-Per vedere quali formati sono supportati dall'hardware di Direct3D 11:
+Per visualizzare i formati supportati dall'hardware Direct3D 11:
 
--   [Supporto del formato DXGI per l'hardware a livello di funzionalità Direct3D 12,1](hardware-support-for-direct3d-12-1-formats.md)
--   [Supporto del formato DXGI per l'hardware a livello di funzionalità Direct3D 12,0](hardware-support-for-direct3d-12-0-formats.md)
--   [Supporto del formato DXGI per l'hardware a livello di funzionalità Direct3D 11,1](format-support-for-direct3d-11-1-feature-level-hardware.md)
--   [Supporto del formato DXGI per l'hardware a livello di funzionalità Direct3D 11,0](format-support-for-direct3d-11-0-feature-level-hardware.md)
--   [Supporto hardware per i formati 10Level9 Direct3D](/previous-versions//ff471324(v=vs.85))
--   [Supporto hardware per formati Direct3D 10,1](/previous-versions//cc627091(v=vs.85))
+-   [Supporto del formato DXGI per l'hardware Direct3D Feature Level 12.1](hardware-support-for-direct3d-12-1-formats.md)
+-   [Supporto del formato DXGI per l'hardware Direct3D Feature Level 12.0](hardware-support-for-direct3d-12-0-formats.md)
+-   [Supporto del formato DXGI per l'hardware Direct3D Feature Level 11.1](format-support-for-direct3d-11-1-feature-level-hardware.md)
+-   [Supporto del formato DXGI per l'hardware Direct3D Feature Level 11.0](format-support-for-direct3d-11-0-feature-level-hardware.md)
+-   [Supporto hardware per i formati Direct3D 10Level9](/previous-versions//ff471324(v=vs.85))
+-   [Supporto hardware per i formati Direct3D 10.1](/previous-versions//cc627091(v=vs.85))
 -   [Supporto hardware per i formati Direct3D 10](/previous-versions//cc627090(v=vs.85))
 
-## <a name="enumerating-adapters"></a>Enumerazione degli adapter
+## <a name="enumerating-adapters"></a>Enumerazione degli adattatori
 
-Un adapter è un'astrazione dell'hardware e della funzionalità software del computer. Nel computer sono in genere presenti molti adapter. Alcuni dispositivi sono implementati nell'hardware (ad esempio la scheda video) e altri sono implementati nel software, ad esempio l'unità di rasterizzazione dei riferimenti Direct3D. Gli adapter implementano la funzionalità utilizzata da un'applicazione grafica. Il diagramma seguente mostra un sistema con un singolo computer, due schede (schede video) e tre monitor di output.
+Un adattatore è un'astrazione dell'hardware e della funzionalità software del computer. In genere nel computer sono presenti molte schede. Alcuni dispositivi vengono implementati nell'hardware (come la scheda video) e altri nel software (come il rasterizzatore di riferimento Direct3D). Gli adattatori implementano le funzionalità usate da un'applicazione grafica. Il diagramma seguente illustra un sistema con un singolo computer, due schede (schede video) e tre monitor di output.
 
-![diagramma di un computer con due schede video e tre monitor](images/dxgi-terms.png)
+![Diagramma di un computer con due schede video e tre monitor](images/dxgi-terms.png)
 
-Quando si enumerano questi componenti hardware, DXGI crea un'interfaccia [**IDXGIOutput1**](/windows/win32/api/DXGI1_2/nn-dxgi1_2-idxgioutput1) per ciascun output (o monitoraggio) e un'interfaccia [**IDXGIAdapter2**](/windows/win32/api/DXGI1_2/nn-dxgi1_2-idxgiadapter2) per ogni scheda video (anche se si tratta di una scheda video incorporata in una scheda madre). L'enumerazione viene eseguita utilizzando una chiamata di interfaccia [**IDXGIFactory**](/windows/win32/api/DXGI1_2/nn-dxgi1_2-idxgifactory2) , [**IDXGIFactory:: EnumAdapters**](/windows/win32/api/DXGI/nf-dxgi-idxgifactory-enumadapters), per restituire un set di interfacce [**IDXGIAdapter**](/windows/win32/api/DXGI/nn-dxgi-idxgiadapter) che rappresentano l'hardware del video.
+Durante l'enumerazione di questi componenti hardware, DXGI crea un'interfaccia [**IDXGIOutput1**](/windows/win32/api/DXGI1_2/nn-dxgi1_2-idxgioutput1) per ogni output (o monitoraggio) e un'interfaccia [**IDXGIAdapter2**](/windows/win32/api/DXGI1_2/nn-dxgi1_2-idxgiadapter2) per ogni scheda video (anche se si tratta di una scheda video incorporata in una scheda madre). L'enumerazione viene eseguita usando una chiamata di interfaccia [**IDXGIFactory,**](/windows/win32/api/DXGI1_2/nn-dxgi1_2-idxgifactory2) [**IDXGIFactory::EnumAdapters**](/windows/win32/api/DXGI/nf-dxgi-idxgifactory-enumadapters), per restituire un set di [**interfacce IDXGIAdapter**](/windows/win32/api/DXGI/nn-dxgi-idxgiadapter) che rappresentano l'hardware video.
 
-DXGI 1,1 ha aggiunto l'interfaccia [**IDXGIFactory1**](/windows/win32/api/DXGI/nn-dxgi-idxgifactory1) . [**IDXGIFactory1:: EnumAdapters1**](/windows/win32/api/DXGI/nf-dxgi-idxgifactory1-enumadapters1) restituisce un set di interfacce [**IDXGIAdapter1**](/windows/win32/api/DXGI/nn-dxgi-idxgiadapter1) che rappresenta l'hardware del video.
+DXGI 1.1 ha aggiunto [**l'interfaccia IDXGIFactory1.**](/windows/win32/api/DXGI/nn-dxgi-idxgifactory1) [**IDXGIFactory1::EnumAdapters1**](/windows/win32/api/DXGI/nf-dxgi-idxgifactory1-enumadapters1) restituisce un set di [**interfacce IDXGIAdapter1**](/windows/win32/api/DXGI/nn-dxgi-idxgiadapter1) che rappresenta l'hardware video.
 
-Se si desidera selezionare funzionalità hardware video specifiche quando si utilizzano le API Direct3D, è consigliabile chiamare in modo iterativo la funzione [**D3D11CreateDevice**](/windows/win32/api/d3d11/nf-d3d11-d3d11createdevice) o [**D3D11CreateDeviceAndSwapChain**](/windows/win32/api/d3d11/nf-d3d11-d3d11createdeviceandswapchain) con ogni handle di adapter e il possibile [livello di funzionalità](../direct3d11/overviews-direct3d-11-devices-downlevel-intro.md)dell'hardware. Questa funzione ha esito positivo se il livello di funzionalità è supportato dall'adapter specificato.
+Se si vogliono selezionare funzionalità hardware video specifiche quando si usano LE API Direct3D, è consigliabile chiamare in modo iterativo la funzione [**D3D11CreateDevice**](/windows/win32/api/d3d11/nf-d3d11-d3d11createdevice) o [**D3D11CreateDeviceAndSwapChain**](/windows/win32/api/d3d11/nf-d3d11-d3d11createdeviceandswapchain) con ogni handle di scheda e il possibile livello di funzionalità [hardware.](../direct3d11/overviews-direct3d-11-devices-downlevel-intro.md) Questa funzione ha esito positivo se il livello di funzionalità è supportato dall'adapter specificato.
 
 ### <a name="new-info-about-enumerating-adapters-for-windows-8"></a>Nuove informazioni sull'enumerazione degli adapter per Windows 8
 
-A partire da Windows 8, un adapter denominato "Microsoft Basic render driver" è sempre presente. Questa scheda ha un VendorId di **0x1414** e un DeviceID di **0x8c**. Questa scheda dispone anche del [**valore \_ \_ \_ software del flag dell'adattatore DXGI**](/windows/win32/api/dxgi/ne-dxgi-dxgi_adapter_flag) impostato nel membro **Flags** della relativa struttura [**\_ \_ DESC2 dell'adapter DXGI**](/windows/win32/api/DXGI1_2/ns-dxgi1_2-dxgi_adapter_desc2) . Questo adapter è un dispositivo solo di rendering senza output di visualizzazione. DXGI non restituisce mai il [**\_ dispositivo DXGI Error \_ \_ rimosso**](dxgi-error.md) per questo adapter.
+A partire Windows 8, è sempre presente un adattatore denominato "Microsoft Basic Render Driver". Questo adapter ha un VendorId di **0x1414** e un DeviceID di **0x8c**. Questa scheda ha anche il [**valore SOFTWARE DXGI \_ ADAPTER \_ \_ FLAG**](/windows/win32/api/dxgi/ne-dxgi-dxgi_adapter_flag) impostato nel membro **Flags** della struttura [**DXGI \_ ADAPTER \_ DESC2.**](/windows/win32/api/DXGI1_2/ns-dxgi1_2-dxgi_adapter_desc2) Questo adattatore è un dispositivo di solo rendering senza output di visualizzazione. DXGI non restituisce mai [**DXGI \_ ERROR \_ DEVICE \_ REMOVED**](dxgi-error.md) per questa scheda.
 
-Se il driver di visualizzazione di un computer non funziona o è disabilitato, è possibile chevenga chiamato anche il "driver di rendering di base Microsoft". Tuttavia, per questo adapter sono presenti output e non è stato impostato il valore di DXGI per l' [**\_ adapter \_ \_**](/windows/win32/api/dxgi/ne-dxgi-dxgi_adapter_flag) . Per impostazione predefinita, il sistema operativo e le app utilizzano questa scheda. Se è installato o abilitato un driver di visualizzazione, le app possono ricevere il [**\_ dispositivo di errore DXGI \_ \_ rimosso**](dxgi-error.md) per questa scheda e quindi rienumerare nuovamente gli adapter.
+Se il driver video di un computer non funziona o è disabilitato, l'adattatore primario **(NULL)** del computer potrebbe anche essere denominato "Driver di rendering Di base Microsoft". Ma questo adapter ha output e non ha il valore [**SOFTWARE DXGI \_ ADAPTER \_ FLAG \_**](/windows/win32/api/dxgi/ne-dxgi-dxgi_adapter_flag) impostato. Il sistema operativo e le app usano questa scheda per impostazione predefinita. Se un driver video è installato o abilitato, le app possono ricevere [**DXGI \_ ERROR \_ DEVICE \_ REMOVED**](dxgi-error.md) per questa scheda e quindi devono enumerare nuovamente le schede.
 
-Quando la scheda di visualizzazione principale di un computer è "Microsoft Basic Display Adapter" (scheda[Warp](../direct3d11/overviews-direct3d-11-devices-create-warp.md) ), il computer dispone anche di un secondo adapter. Questa seconda scheda è il dispositivo solo di rendering senza output di visualizzazione e per il quale DXGI non restituisce mai il [**\_ dispositivo DXGI Error \_ \_ rimosso**](dxgi-error.md).
+Quando la scheda video principale di un computer è la "Scheda video Microsoft Basic"[(scheda WARP),](../direct3d11/overviews-direct3d-11-devices-create-warp.md) tale computer dispone anche di una seconda scheda. Questo secondo adattatore è il dispositivo di solo rendering senza output di visualizzazione e per il quale DXGI non restituisce mai [**DXGI \_ ERROR \_ DEVICE \_ REMOVED**](dxgi-error.md).
 
-Se si vuole usare WARP per il rendering, il calcolo o altre attività a esecuzione prolungata, si consiglia di usare il dispositivo solo di rendering. È possibile ottenere un puntatore al dispositivo di sola rendering chiamando il metodo [**IDXGIFactory1:: EnumAdapters1**](/windows/win32/api/DXGI/nf-dxgi-idxgifactory1-enumadapters1) . Si crea anche il dispositivo di sola rendering quando si specifica [**il \_ \_ tipo di \_ driver D3D**](/windows/win32/api/d3dcommon/ne-d3dcommon-d3d_driver_type) nel parametro *DRIVERTYPE* di [**D3D11CreateDevice**](/windows/win32/api/d3d11/nf-d3d11-d3d11createdevice) perché il dispositivo Warp usa anche l'adattatore di distorsione di sola rendering.
+Se si vuole usare WARP per il rendering, il calcolo o altre attività a esecuzione lunga, è consigliabile usare il dispositivo solo rendering. È possibile ottenere un puntatore al dispositivo di solo rendering chiamando il [**metodo IDXGIFactory1::EnumAdapters1.**](/windows/win32/api/DXGI/nf-dxgi-idxgifactory1-enumadapters1) Il dispositivo di solo rendering viene creato anche quando si specifica [**D3D \_ DRIVER \_ TYPE \_ WARP**](/windows/win32/api/d3dcommon/ne-d3dcommon-d3d_driver_type) nel parametro *DriverType* di [**D3D11CreateDevice**](/windows/win32/api/d3d11/nf-d3d11-d3d11createdevice) perché il dispositivo WARP usa anche l'adattatore WARP di solo rendering.
 
 ## <a name="presentation"></a>Presentazione
 
-Il processo dell'applicazione consiste nel eseguire il rendering dei frame e richiedere a DXGI di presentare tali frame all'output. Se l'applicazione dispone di due buffer disponibili, è possibile eseguire il rendering di un buffer e presentarne un altro. L'applicazione potrebbe richiedere più di due buffer a seconda del tempo necessario per eseguire il rendering di un frame o della frequenza dei fotogrammi desiderata per la presentazione. Il set di buffer creati è denominato catena di scambio, come illustrato di seguito.
+Il compito dell'applicazione è quello di eseguire il rendering dei fotogrammi e chiedere a DXGI di presentare tali fotogrammi nell'output. Se l'applicazione ha due buffer disponibili, può eseguire il rendering di un buffer durante la presentazione di un altro buffer. L'applicazione potrebbe richiedere più di due buffer a seconda del tempo necessario per eseguire il rendering di un frame o della frequenza di fotogrammi desiderata per la presentazione. Il set di buffer creati è detto catena di scambio, come illustrato di seguito.
 
-![illustrazione di una catena di scambio](images/dxgi-swap-chain.png)
+![Illustrazione di una catena di scambio](images/dxgi-swap-chain.png)
 
 -   [Creare una catena di scambio](#create-a-swap-chain)
 -   [Cura e alimentazione della catena di scambio](#care-and-feeding-of-the-swap-chain)
 -   [Gestione del ridimensionamento della finestra](#handling-window-resizing)
--   [Scelta dell'output e delle dimensioni di DXGI](#choosing-the-dxgi-output-and-size)
--   [Debug in modalità Full-Screen](#debugging-in-full-screen-mode)
+-   [Scelta dell'output e delle dimensioni DXGI](#choosing-the-dxgi-output-and-size)
+-   [Debug in modalità Full-Screen predefinita](#debugging-in-full-screen-mode)
 -   [Eliminazione di una catena di scambio](#destroying-a-swap-chain)
 -   [Uso di un monitoraggio ruotato](#using-a-rotated-monitor)
--   [Modalità di cambio](#switching-modes)
--   [Suggerimento per le prestazioni a schermo intero](#full-screen-performance-tip)
--   [Considerazioni su multithread](#multithread-considerations)
+-   [Cambio di modalità](#switching-modes)
+-   [Suggerimento sulle prestazioni a schermo intero](#full-screen-performance-tip)
+-   [Considerazioni sul multithreading](#multithread-considerations)
 
-Una catena di scambio ha un buffer anteriore e uno o più buffer back. Ogni applicazione crea la propria catena di scambio. Per massimizzare la velocità della presentazione dei dati a un output, viene quasi sempre creata una catena di scambio nella memoria di un sottosistema di visualizzazione, come illustrato nella figura seguente.
+Una catena di scambio ha un front buffer e uno o più buffer back. Ogni applicazione crea una propria catena di scambio. Per ottimizzare la velocità di presentazione dei dati a un output, viene quasi sempre creata una catena di scambio nella memoria di un sottosistema di visualizzazione, come illustrato nella figura seguente.
 
 ![illustrazione di un sottosistema di visualizzazione](images/dxgi-adapter.png)
 
-Il sottosistema di visualizzazione (che è spesso una scheda video ma potrebbe essere implementato in una scheda madre) contiene una GPU, un convertitore da digitale a analogico (DAC) e memoria. La catena di scambio viene allocata in questa memoria per rendere la presentazione molto rapida. Il sottosistema di visualizzazione presenta i dati nel buffer anteriore all'output.
+Il sottosistema di visualizzazione (che spesso è una scheda video ma può essere implementato in una scheda madre) contiene una GPU, un convertitore da digitale ad analogico (DAC) e memoria. La catena di scambio viene allocata all'interno di questa memoria per rendere la presentazione molto veloce. Il sottosistema di visualizzazione presenta i dati nel front buffer all'output.
 
-Una catena di scambio è configurata per essere tracciata in modalità a schermo intero o a finestra. in questo modo si elimina la necessità di sapere se un output è a finestra o a schermo intero. Una catena di scambio in modalità a schermo intero può ottimizzare le prestazioni cambiando la risoluzione dello schermo.
+Una catena di scambio è impostata per il disegno a schermo intero o in modalità finestra, eliminando la necessità di sapere se un output è a finestra o a schermo intero. Una catena di scambio in modalità schermo intero può ottimizzare le prestazioni passando alla risoluzione dello schermo.
 
 ### <a name="create-a-swap-chain"></a>Creare la catena di scambio
 
 <table>
 <colgroup>
-<col style="width: 100%" />
+<col  />
 </colgroup>
 <tbody>
 <tr class="odd">
-<td>Differenze tra Direct3D 9 e Direct3D 10: Direct3D 10 è il primo componente grafico per l'uso di DXGI. DXGI presenta diversi comportamenti della catena di scambio.<br/>
+<td>Differenze tra Direct3D 9 e Direct3D 10: Direct3D 10 è il primo componente grafico a usare DXGI. DXGI ha alcuni comportamenti diversi della catena di scambio.<br/>
 <ul>
-<li>In DXGI una catena di scambio è associata a una finestra al momento della creazione della catena di scambio. Questa modifica consente di migliorare le prestazioni e di risparmiare memoria. Le versioni precedenti di Direct3D consentivano alla catena di scambio di modificare la finestra a cui è associata la catena di scambio.</li>
-<li>In DXGI una catena di scambio è associata a un dispositivo di rendering al momento della creazione. L'oggetto dispositivo che la funzione di creazione di un dispositivo Direct3D restituisce implementa l'interfaccia <a href="/windows/win32/api/unknwn/nn-unknwn-iunknown"><strong>IUnknown</strong></a> . È possibile chiamare <a href="/windows/win32/api/unknwn/nf-unknwn-iunknown-queryinterface(q)"><strong>QueryInterface</strong></a> per eseguire una query per l'interfaccia <a href="/windows/win32/api/DXGI1_2/nn-dxgi1_2-idxgidevice2"><strong>IDXGIDevice2</strong></a> corrispondente del dispositivo. Una modifica al dispositivo di rendering richiede la ricreazione della catena di scambio.</li>
-<li><p>In DXGI, gli effetti di scambio disponibili sono DXGI_SWAP_EFFECT_DISCARD e DXGI_SWAP_EFFECT_SEQUENTIAL. A partire da Windows 8, è disponibile anche l'effetto di scambio DXGI_SWAP_EFFECT_FLIP_SEQUENTIAL. Nella tabella seguente viene illustrato un mapping di Direct3D 9 a DXGI. </p>
+<li>In DXGI una catena di scambio è associata a una finestra quando viene creata la catena di scambio. Questa modifica migliora le prestazioni e consente di risparmiare memoria. Le versioni precedenti di Direct3D consentiva alla catena di scambio di modificare la finestra a cui è associata la catena di scambio.</li>
+<li>In DXGI una catena di scambio è associata a un dispositivo di rendering al momento della creazione. L'oggetto dispositivo restituito da Direct3D create device functions implementa <a href="/windows/win32/api/unknwn/nn-unknwn-iunknown"><strong>l'interfaccia IUnknown.</strong></a> È possibile chiamare <a href="/windows/win32/api/unknwn/nf-unknwn-iunknown-queryinterface(q)"><strong>QueryInterface</strong></a> per eseguire una query per <a href="/windows/win32/api/DXGI1_2/nn-dxgi1_2-idxgidevice2"><strong>l'interfaccia IDXGIDevice2</strong></a> corrispondente del dispositivo. Una modifica al dispositivo di rendering richiede la ricreazione della catena di scambio.</li>
+<li><p>In DXGI gli effetti di scambio disponibili sono DXGI_SWAP_EFFECT_DISCARD e DXGI_SWAP_EFFECT_SEQUENTIAL. A partire Windows 8 è disponibile DXGI_SWAP_EFFECT_FLIP_SEQUENTIAL'effetto di scambio dei dati. La tabella seguente illustra il mapping tra l'effetto di scambio Direct3D 9 e DXGI definito. </p>
 <table>
 <thead>
 <tr class="header">
@@ -150,9 +150,9 @@ Una catena di scambio è configurata per essere tracciata in modalità a schermo
 
  
 
-I buffer di una catena di scambio vengono creati in una determinata dimensione e in un particolare formato. L'applicazione specifica questi valori (oppure è possibile ereditare le dimensioni dalla finestra di destinazione) all'avvio e può quindi modificarli eventualmente quando le dimensioni della finestra cambiano in risposta a eventi di input o programma dell'utente.
+I buffer di una catena di scambio vengono creati a una dimensione specifica e in un particolare formato. L'applicazione specifica questi valori (oppure è possibile ereditare le dimensioni dalla finestra di destinazione) all'avvio e facoltativamente può modificarli quando le dimensioni della finestra cambiano in risposta agli eventi di input dell'utente o del programma.
 
-Dopo aver creato la catena di scambio, in genere si desidera eseguire il rendering delle immagini. Ecco un frammento di codice che configura un contesto Direct3D per il rendering in una catena di scambio. Questo codice estrae un buffer dalla catena di scambio, crea una visualizzazione della destinazione di rendering da tale buffer, quindi la imposta sul dispositivo:
+Dopo aver creato la catena di scambio, è in genere necessario eseguirvi il rendering delle immagini. Ecco un frammento di codice che configura un contesto Direct3D per il rendering in una catena di scambio. Questo codice estrae un buffer dalla catena di scambio, crea una visualizzazione di destinazione di rendering da tale buffer e quindi lo imposta nel dispositivo:
 
 
 ```
@@ -168,30 +168,30 @@ pD3D11DeviceContext->OMSetRenderTargets(1, &pView, 0);
 
 
 
-Quando l'applicazione esegue il rendering di un frame in un buffer a catena di scambio, chiamare [**IDXGISwapChain1::P resent1**](/windows/win32/api/DXGI1_2/nf-dxgi1_2-idxgiswapchain1-present1). L'applicazione può quindi eseguire il rendering dell'immagine successiva.
+Dopo che l'applicazione ha eseguito il rendering di un frame in un buffer della catena di scambio, chiamare [**IDXGISwapChain1::P resent1**](/windows/win32/api/DXGI1_2/nf-dxgi1_2-idxgiswapchain1-present1). L'applicazione può quindi eseguire il rendering dell'immagine successiva.
 
 ### <a name="care-and-feeding-of-the-swap-chain"></a>Cura e alimentazione della catena di scambio
 
-Dopo aver eseguito il rendering dell'immagine, chiamare [**IDXGISwapChain1::P resent1**](/windows/win32/api/DXGI1_2/nf-dxgi1_2-idxgiswapchain1-present1) e passare il rendering dell'immagine successiva. Questo è l'ambito della responsabilità dell'utente.
+Dopo aver eseguito il rendering dell'immagine, chiamare [**IDXGISwapChain1::P resent1**](/windows/win32/api/DXGI1_2/nf-dxgi1_2-idxgiswapchain1-present1) e passare a eseguire il rendering dell'immagine successiva. Questa è l'entità della responsabilità dell'utente.
 
-Se in precedenza è stato chiamato [**IDXGIFactory:: MakeWindowAssociation**](/windows/win32/api/DXGI/nf-dxgi-idxgifactory-makewindowassociation), l'utente può premere la combinazione di tasti Alt-Enter e DXGI eseguirà la transizione dell'applicazione tra la modalità a schermo intero e a finestra. È consigliabile utilizzare **IDXGIFactory:: MakeWindowAssociation** , perché un meccanismo di controllo standard per l'utente è fortemente auspicabile.
+Se in precedenza è stato chiamato [**IDXGIFactory::MakeWindowAssociation,**](/windows/win32/api/DXGI/nf-dxgi-idxgifactory-makewindowassociation)l'utente può premere la combinazione di tasti Alt-Enter e DXGI esegue la transizione dell'applicazione tra la modalità finestra e la modalità schermo intero. **È consigliabile utilizzare IDXGIFactory::MakeWindowAssociation,** perché è fortemente desiderato un meccanismo di controllo standard per l'utente.
 
-Sebbene non sia necessario scrivere altro codice rispetto a quanto descritto, pochi semplici passaggi possono rendere l'applicazione più reattiva. La considerazione più importante è il ridimensionamento dei buffer della catena di scambio in risposta al ridimensionamento della finestra di output. Naturalmente, la migliore route dell'applicazione consiste nel rispondere alle dimensioni di WM \_ e chiamare [**IDXGISwapChain:: ResizeBuffers**](/windows/win32/api/DXGI/nf-dxgi-idxgiswapchain-resizebuffers), passando le dimensioni contenute nei parametri del messaggio. Questo comportamento rende ovviamente la risposta dell'applicazione all'utente quando trascina i bordi della finestra, ma è anche ciò che consente una transizione senza problemi a schermo intero. La finestra riceverà un \_ messaggio di dimensioni WM ogni volta che si verifica tale transizione e la chiamata a **IDXGISwapChain:: ResizeBuffers** è la possibilità della catena di scambio di riallocare l'archiviazione dei buffer per una presentazione ottimale. Questo è il motivo per cui l'applicazione è necessaria per rilasciare tutti i riferimenti presenti nei buffer esistenti prima di chiamare **IDXGISwapChain:: ResizeBuffers**.
+Anche se non è necessario scrivere altro codice di quello descritto, alcuni semplici passaggi possono rendere l'applicazione più reattiva. La considerazione più importante è il ridimensionamento dei buffer della catena di scambio in risposta al ridimensionamento della finestra di output. Naturalmente, la route migliore dell'applicazione è rispondere a WM SIZE e chiamare \_ [**IDXGISwapChain::ResizeBuffers,**](/windows/win32/api/DXGI/nf-dxgi-idxgiswapchain-resizebuffers)passando le dimensioni contenute nei parametri del messaggio. Questo comportamento ovviamente fa sì che l'applicazione risponda bene all'utente quando trascina i bordi della finestra, ma è anche esattamente ciò che consente una transizione uniforme a schermo intero. La finestra riceverà un messaggio WM SIZE ogni volta che si verifica una transizione di questo tipo e la chiamata a \_ **IDXGISwapChain::ResizeBuffers** è la possibilità della catena di scambio di riallocare lo spazio di archiviazione dei buffer per una presentazione ottimale. Questo è il motivo per cui l'applicazione deve rilasciare tutti i riferimenti presenti nei buffer esistenti prima di effettuare una **chiamata a IDXGISwapChain::ResizeBuffers**.
 
-Non è possibile chiamare [**IDXGISwapChain:: ResizeBuffers**](/windows/win32/api/DXGI/nf-dxgi-idxgiswapchain-resizebuffers) in risposta al passare alla modalità a schermo intero (la maggior parte dei casi, in risposta a \_ dimensioni WM), può impedire l'ottimizzazione del capovolgimento, in cui DXGI può semplicemente scambiare il buffer visualizzato, anziché copiare i dati di un intero schermo.
+La mancata chiamata di [**IDXGISwapChain::ResizeBuffers**](/windows/win32/api/DXGI/nf-dxgi-idxgiswapchain-resizebuffers) in risposta al passaggio alla modalità schermo intero (più naturalmente, in risposta a WM SIZE), può precludere l'ottimizzazione del capovolgimento, in cui DXGI può semplicemente scambiare quale buffer viene visualizzato, anziché copiare i dati di uno schermo \_ intero.
 
-[**IDXGISwapChain1::P resent1**](/windows/win32/api/DXGI1_2/nf-dxgi1_2-idxgiswapchain1-present1) indicherà se la finestra di output è completamente nascosto tramite **\_ lo stato \_ DXGI**. Quando si verifica questo problema, si consiglia di passare alla modalità standby (chiamando **IDXGISwapChain1::P resent1** con **DXGI \_ present \_ test**) poiché le risorse usate per eseguire il rendering del frame vengono sprecate. Se si usa DXGI, il **\_ \_ test presente** impedirà la presentazione di tutti i dati durante l'esecuzione del controllo dell'occlusione. Quando **IDXGISwapChain1::P resent1** restituisce S \_ OK, è necessario uscire dalla modalità standby. non usare il codice restituito per passare alla modalità standby. in questo modo, è possibile lasciare che la catena di scambio non possa rinunciare alla modalità a schermo intero.
+[**IDXGISwapChain1::P resent1**](/windows/win32/api/DXGI1_2/nf-dxgi1_2-idxgiswapchain1-present1) indica se la finestra di output è completamente occlusa tramite **STATO DXGI \_ \_ OCCLUDED.** In questo caso, è consigliabile attivare la modalità standby per l'applicazione (chiamando **IDXGISwapChain1::P resent1** con **DXGI \_ PRESENT \_ TEST)** perché le risorse usate per il rendering del frame vengono sprecate. **L'uso di DXGI \_ PRESENT \_ TEST** impedirà la presentazione di dati durante l'esecuzione del controllo dell'occlusione. Quando **IDXGISwapChain1::P resent1** restituisce S OK, è consigliabile uscire dalla modalità standby. Non usare il codice restituito per passare alla modalità standby, in quanto in questo modo la catena di scambio potrebbe non essere in grado di abbandonare la modalità schermo \_ intero.
 
-Il runtime Direct3D 11,1, disponibile a partire da Windows 8, fornisce una catena di scambio Flip-Model, ovvero una catena di scambio con il valore [**\_ \_ \_ \_ sequenziale DXGI swap effect Flip**](/windows/win32/api/DXGI/ne-dxgi-dxgi_swap_effect) impostato nel membro **SwapEffect** di [**DXGI \_ swap \_ Chain \_ desc**](/windows/win32/api/DXGI/ns-dxgi-dxgi_swap_chain_desc) o [**DXGI \_ swap \_ Chain \_ DESC1**](/windows/win32/api/DXGI1_2/ns-dxgi1_2-dxgi_swap_chain_desc1)). Quando si visualizzano i frame in un output con una catena di scambio Flip-Model, DXGI Annulla il binding del buffer nascosto da tutte le posizioni dello stato della pipeline, ad esempio una destinazione di rendering dell'Unione di output, che scrivono nel buffer di back 0. Pertanto, si consiglia di chiamare [**sul ID3D11DeviceContext:: OMSetRenderTargets**](/windows/win32/api/d3d11/nf-d3d11-id3d11devicecontext-omsetrendertargets) immediatamente prima di eseguire il rendering nel buffer nascosto. Ad esempio, non chiamare **OMSetRenderTargets** e quindi eseguire il lavoro compute shader che non termina il rendering nella risorsa. Per altre informazioni sulle catene di scambio flip-model e sui relativi vantaggi, vedere [DXGI flip model](dxgi-flip-model.md).
+Il runtime di Direct3D 11.1, disponibile a partire da Windows 8, fornisce una catena di scambio del modello flip, ovvero una catena di scambio con il valore [**\_ FLIP \_ \_ \_ SEQUENTIAL**](/windows/win32/api/DXGI/ne-dxgi-dxgi_swap_effect) DELL'EFFETTO SWAP DXGI impostato nel membro **SwapEffect** di [**DXGI \_ SWAP CHAIN \_ \_ DESC**](/windows/win32/api/DXGI/ns-dxgi-dxgi_swap_chain_desc) o [**DXGI \_ SWAP CHAIN \_ \_ DESC1.**](/windows/win32/api/DXGI1_2/ns-dxgi1_2-dxgi_swap_chain_desc1) Quando si presentano frame a un output con una catena di scambio del modello di capovolgimento, DXGI disassocia il buffer nascosto da tutte le posizioni di stato della pipeline, ad esempio una destinazione di rendering unione output, che scrivono nel buffer nascosto 0. È quindi consigliabile chiamare [**ID3D11DeviceContext::OMSetRenderTargets**](/windows/win32/api/d3d11/nf-d3d11-id3d11devicecontext-omsetrendertargets) immediatamente prima di eseguire il rendering nel buffer nascosto. Ad esempio, non chiamare **OMSetRenderTargets** e quindi eseguire operazioni di compute shader che non finisce per eseguire il rendering nella risorsa. Per altre informazioni sulle catene di scambio del modello di capovolgimento e sui relativi vantaggi, vedere [DXGI Flip Model (Modello di inversione DXGI).](dxgi-flip-model.md)
 
 > [!NOTE]  
-> In Direct3D 10 e Direct3D 11 non è necessario chiamare [**IDXGISwapChain:: GetBuffer**](/windows/win32/api/DXGI/nf-dxgi-idxgiswapchain-getbuffer) per recuperare il buffer di back 0 dopo aver chiamato [**IDXGISwapChain1::P resent1**](/windows/win32/api/DXGI1_2/nf-dxgi1_2-idxgiswapchain1-present1) perché per praticità le identità dei buffer indietro cambiano. Questa operazione non si verifica in Direct3D 12 e l'applicazione deve invece tenere traccia manualmente degli indici del buffer.
+> In Direct3D 10 e Direct3D 11 non è necessario chiamare [**IDXGISwapChain::GetBuffer**](/windows/win32/api/DXGI/nf-dxgi-idxgiswapchain-getbuffer) per recuperare il buffer nascosto 0 dopo aver chiamato [**IDXGISwapChain1::P resent1 perché**](/windows/win32/api/DXGI1_2/nf-dxgi1_2-idxgiswapchain1-present1) per praticità le identità dei buffer di back-buffer cambiano. Questo non avviene in Direct3D 12 e l'applicazione deve invece tenere traccia manualmente degli indici del buffer nascosto.
 
-### <a name="handling-window-resizing"></a>Gestione del ridimensionamento della finestra
+### <a name="handling-window-resizing"></a>Gestione del ridimensionamento delle finestre
 
-Per gestire il ridimensionamento delle finestre, è possibile usare il metodo [**IDXGISwapChain:: ResizeBuffers**](/windows/win32/api/DXGI/nf-dxgi-idxgiswapchain-resizebuffers) . Prima di chiamare **ResizeBuffers**, è necessario rilasciare tutti i riferimenti in attesa ai buffer della catena di scambio. L'oggetto che in genere include un riferimento a un buffer della catena di scambio è una visualizzazione di destinazione di rendering.
+È possibile usare il [**metodo IDXGISwapChain::ResizeBuffers**](/windows/win32/api/DXGI/nf-dxgi-idxgiswapchain-resizebuffers) per gestire il ridimensionamento della finestra. Prima di chiamare **ResizeBuffers,** è necessario rilasciare tutti i riferimenti in sospeso ai buffer della catena di scambio. L'oggetto che in genere contiene un riferimento al buffer di una catena di scambio è una visualizzazione di destinazione di rendering.
 
-Il codice di esempio seguente mostra come chiamare [**ResizeBuffers**](/windows/win32/api/DXGI/nf-dxgi-idxgiswapchain-resizebuffers) dall'interno del gestore WindowProc per \_ i messaggi di dimensioni WM:
+Il codice di esempio seguente illustra come chiamare [**ResizeBuffers**](/windows/win32/api/DXGI/nf-dxgi-idxgiswapchain-resizebuffers) dall'interno del gestore WindowProc per i messaggi \_ WM SIZE:
 
 
 ```
@@ -238,95 +238,95 @@ Il codice di esempio seguente mostra come chiamare [**ResizeBuffers**](/windows/
 
 
 
-### <a name="choosing-the-dxgi-output-and-size"></a>Scelta dell'output e delle dimensioni di DXGI
+### <a name="choosing-the-dxgi-output-and-size"></a>Scelta dell'output e delle dimensioni DXGI
 
-Per impostazione predefinita, DXGI sceglie l'output che contiene la maggior parte dell'area client della finestra. Questa è l'unica opzione disponibile per DXGI quando viene visualizzata a schermo intero in risposta a ALT-INVIO. Se l'applicazione sceglie di passare alla modalità a schermo intero da solo, può chiamare [**IDXGISwapChain:: SetFullscreenState**](/windows/win32/api/DXGI/nf-dxgi-idxgiswapchain-setfullscreenstate) e passare un [**IDXGIOutput1**](/windows/win32/api/DXGI1_2/nn-dxgi1_2-idxgioutput1) esplicito (o **null**, se l'applicazione è lieta di consentire a DXGI di decidere).
+Per impostazione predefinita, DXGI sceglie l'output che contiene la maggior parte dell'area client della finestra. Questa è l'unica opzione disponibile per DXGI quando passa a schermo intero in risposta a ALT+INVIO. Se l'applicazione sceglie di passare alla modalità schermo intero da sola, può chiamare [**IDXGISwapChain::SetFullscreenState**](/windows/win32/api/DXGI/nf-dxgi-idxgiswapchain-setfullscreenstate) e passare un [**IDXGIOutput1**](/windows/win32/api/DXGI1_2/nn-dxgi1_2-idxgioutput1) esplicito (o **NULL,** se l'applicazione è contenta di consentire a DXGI di decidere).
 
-Per ridimensionare l'output a schermo intero o a finestra, si consiglia di chiamare [**IDXGISwapChain:: ResizeTarget**](/windows/win32/api/DXGI/nf-dxgi-idxgiswapchain-resizetarget), poiché questo metodo ridimensiona anche la finestra di destinazione. Poiché la finestra di destinazione viene ridimensionata, il sistema operativo invia **le \_ dimensioni di WM** e il codice chiamerà naturalmente [**IDXGISwapChain:: ResizeBuffers**](/windows/win32/api/DXGI/nf-dxgi-idxgiswapchain-resizebuffers) in risposta. Si tratta pertanto di uno spreco di sforzo per ridimensionare i buffer e successivamente ridimensionare la destinazione.
+Per ridimensionare l'output a schermo intero o in finestra, è consigliabile chiamare [**IDXGISwapChain::ResizeTarget,**](/windows/win32/api/DXGI/nf-dxgi-idxgiswapchain-resizetarget)poiché questo metodo ridimensiona anche la finestra di destinazione. Poiché la finestra di destinazione viene ridimensionata, il sistema operativo invia **\_ WM SIZE** e il codice chiamerà naturalmente [**IDXGISwapChain::ResizeBuffers**](/windows/win32/api/DXGI/nf-dxgi-idxgiswapchain-resizebuffers) in risposta. È quindi uno spreco di impegno ridimensionare i buffer e quindi ridimensionare successivamente la destinazione.
 
 ### <a name="debugging-in-full-screen-mode"></a>Debug in modalità schermo intero
 
-Una catena di scambio DXGI abbandona la modalità schermo intero solo quando è strettamente necessario. Ciò significa che è possibile eseguire il debug di un'applicazione a schermo intero utilizzando più monitoraggi, purché la finestra di debug non si sovrappongano alla finestra di destinazione della catena di scambio. In alternativa, è possibile evitare completamente il cambio di modalità, non impostando il flag di opzione per la **modalità di scambio DXGI del \_ flag della \_ catena \_ \_ \_ \_ di scambio** .
+Una catena di scambio DXGI cesa la modalità schermo intero solo quando assolutamente necessario. Ciò significa che è possibile eseguire il debug di un'applicazione a schermo intero usando più monitor, purché la finestra di debug non si sovrapponga alla finestra di destinazione della catena di scambio. In alternativa, è possibile impedire completamente il cambio di modalità non impostando il flag **DXGI \_ SWAP CHAIN FLAG ALLOW MODE \_ \_ \_ \_ \_ SWITCH.**
 
-Se il cambio di modalità è consentito, una catena di scambio abbandonerà la modalità a schermo intero ogni volta che la finestra di output è bloccato da un'altra finestra. Il controllo dell'occlusione viene eseguito durante [**IDXGISwapChain1::P resent1**](/windows/win32/api/DXGI1_2/nf-dxgi1_2-idxgiswapchain1-present1)oppure da un thread separato il cui scopo è quello di controllare se l'applicazione non risponde e non chiama più **IDXGISwapChain1::P resent1**. Per disabilitare la possibilità che il thread separato provochi un'opzione, impostare la seguente chiave del registro di sistema su un valore diverso da zero.
+Se il cambio di modalità è consentito, una catena di scambio cederà la modalità schermo intero ogni volta che la finestra di output è occlusa da un'altra finestra. Il controllo dell'occlusione viene eseguito durante [**IDXGISwapChain1::P resent1**](/windows/win32/api/DXGI1_2/nf-dxgi1_2-idxgiswapchain1-present1)o da un thread separato il cui scopo è controllare se l'applicazione non risponde (e non chiama **più IDXGISwapChain1::P resent1).** Per disabilitare la capacità del thread separato di causare un'opzione, impostare la chiave del Registro di sistema seguente su qualsiasi valore diverso da zero.
 
-**HKCU \\ software \\ Microsoft \\ DXGI \\ DisableFullscreenWatchdog**
+**HKCU \\ Software \\ Microsoft \\ DXGI \\ DisableFullscreenWatchdog**
 
 ### <a name="destroying-a-swap-chain"></a>Eliminazione di una catena di scambio
 
-Non è possibile rilasciare una catena di scambio in modalità schermo intero perché questa operazione può creare una contesa di thread, che causerà la generazione di un'eccezione non continuabile da DXGI. Prima di rilasciare una catena di scambio, passare prima alla modalità finestra (usando [**IDXGISwapChain:: SetFullscreenState**](/windows/win32/api/DXGI/nf-dxgi-idxgiswapchain-setfullscreenstate)( **false**, **null** )) e quindi chiamare [**IUnknown:: Release**](/windows/win32/api/unknwn/nf-unknwn-iunknown-release).
+È possibile che non si rilasci una catena di scambio in modalità schermo intero perché in questo modo è possibile che si crei una contentione di thread (che causerà la generazione di un'eccezione non continuabile da parte di DXGI). Prima di rilasciare una catena di scambio, passare alla modalità finestra (usando [**IDXGISwapChain::SetFullscreenState**](/windows/win32/api/DXGI/nf-dxgi-idxgiswapchain-setfullscreenstate)( **FALSE**, **NULL** )) e quindi chiamare [**IUnknown::Release**](/windows/win32/api/unknwn/nf-unknwn-iunknown-release).
 
-### <a name="using-a-rotated-monitor"></a>Uso di un monitoraggio ruotato
+### <a name="using-a-rotated-monitor"></a>Uso di un monitor ruotato
 
-Non è necessario che un'applicazione si preoccupi dell'orientamento del monitoraggio, DXGI ruoterà un buffer a catena di scambio durante la presentazione, se necessario. Naturalmente, questa rotazione aggiuntiva può avere un effetto sulle prestazioni. Per ottenere prestazioni ottimali, si prenda in considerazione la rotazione nell'applicazione eseguendo le operazioni seguenti:
+Un'applicazione non deve preoccuparsi dell'orientamento del monitor. DXGI ruota un buffer della catena di scambio durante la presentazione, se necessario. Naturalmente, questa rotazione aggiuntiva può influire sulle prestazioni. Per ottenere prestazioni ottimali, eseguire le operazioni seguenti per eseguire la rotazione nell'applicazione:
 
--   Usare il **\_ \_ flag Chain DXGI \_ swap \_ NONPREROTATED**. Questo notifica a DXGI che l'applicazione produrrà un'immagine ruotata, ad esempio modificando la matrice di proiezione. Un aspetto da notare è che questo flag è valido solo in modalità schermo intero.
--   Allocare ogni buffer della catena di scambio nelle dimensioni ruotate. Usare [**IDXGIOutput:: getdesc**](/windows/win32/api/DXGI/nf-dxgi-idxgioutput-getdesc) per ottenere questi valori, se necessario.
+-   Usare **DXGI \_ SWAP CHAIN FLAG \_ \_ \_ NONPREROTATED**. In questo modo si notifica a DXGI che l'applicazione produrrà un'immagine ruotata, ad esempio modificando la relativa matrice di proiezione. Un aspetto da notare è che questo flag è valido solo in modalità schermo intero.
+-   Allocare ogni buffer della catena di scambio nelle dimensioni ruotate. Usare [**IDXGIOutput::GetDesc**](/windows/win32/api/DXGI/nf-dxgi-idxgioutput-getdesc) per ottenere questi valori, se necessario.
 
 Eseguendo la rotazione nell'applicazione, DXGI eseguirà semplicemente una copia anziché una copia e una rotazione.
 
-Il runtime Direct3D 11,1, disponibile a partire da Windows 8, fornisce una catena di scambio Flip-Model, ovvero una catena di scambio con il valore [**\_ \_ \_ \_ sequenziale DXGI swap effect Flip**](/windows/win32/api/DXGI/ne-dxgi-dxgi_swap_effect) impostato nel membro **SwapEffect** di [**DXGI \_ swap \_ Chain \_ DESC1**](/windows/win32/api/DXGI1_2/ns-dxgi1_2-dxgi_swap_chain_desc1)). Per ottimizzare le ottimizzazioni della presentazione disponibili con una catena di scambio Flip-Model, è consigliabile fare in modo che le applicazioni orientino il contenuto in modo che corrisponda all'output specifico in cui si trova il contenuto quando il contenuto occupa completamente l'output. Per altre informazioni sulle catene di scambio flip-model e sui relativi vantaggi, vedere [DXGI flip model](dxgi-flip-model.md).
+Il runtime di Direct3D 11.1, disponibile a partire da Windows 8, fornisce una catena di scambio del modello di capovolgimento, ovvero una catena di scambio con il valore [**\_ FLIP \_ \_ \_ SEQUENTIAL**](/windows/win32/api/DXGI/ne-dxgi-dxgi_swap_effect) DELL'EFFETTO SWAP DXGI impostato nel membro **SwapEffect** di [**DXGI \_ SWAP CHAIN \_ \_ DESC1.**](/windows/win32/api/DXGI1_2/ns-dxgi1_2-dxgi_swap_chain_desc1) Per ottimizzare le ottimizzazioni della presentazione disponibili con una catena di scambio del modello di capovolgimento, è consigliabile fare in modo che le applicazioni orientano il contenuto in modo che corrisponda all'output specifico in cui risiede il contenuto quando tale contenuto occupa completamente l'output. Per altre informazioni sulle catene di scambio del modello di capovolgimento e sui relativi vantaggi, vedere [DXGI Flip Model (Modello di inversione DXGI).](dxgi-flip-model.md)
 
-### <a name="switching-modes"></a>Modalità di cambio
+### <a name="switching-modes"></a>Passaggio da una modalità all'altra
 
-La catena di scambio DXGI potrebbe modificare la modalità di visualizzazione di un output quando si esegue una transizione a schermo intero. Per abilitare la modifica della modalità di visualizzazione automatica, è necessario specificare l' **\_ \_ \_ \_ \_ \_ opzione di modalità Consenti flag catena di scambio DXGI** nella descrizione della catena di scambio. Se la modalità di visualizzazione cambia automaticamente, DXGI sceglierà la modalità più modesta (le dimensioni e la risoluzione non verranno modificate, ma la profondità del colore potrebbe essere). Il ridimensionamento dei buffer della catena di scambio non comporta l'attivazione di un commutatore di modalità. La catena di scambio crea una promessa implicita che se si sceglie un buffer nascosto che corrisponde esattamente a una modalità di visualizzazione supportata dall'output di destinazione, si passerà a tale modalità di visualizzazione quando si entra in modalità schermo intero su tale output. Di conseguenza, è possibile scegliere una modalità di visualizzazione scegliendo il formato e le dimensioni del buffer.
+La catena di scambio DXGI potrebbe modificare la modalità di visualizzazione di un output quando si effettua una transizione a schermo intero. Per abilitare la modifica automatica della modalità di visualizzazione, è necessario specificare **DXGI \_ SWAP CHAIN FLAG ALLOW MODE \_ \_ \_ \_ \_ SWITCH** nella descrizione della catena di scambio. Se la modalità di visualizzazione cambia automaticamente, DXGI sceglierà la modalità più modesta (le dimensioni e la risoluzione non cambieranno, ma la profondità del colore potrebbe cambiare). Il ridimensionamento dei buffer della catena di scambio non causerà un cambio di modalità. La catena di scambio garantisce implicitamente che, se si sceglie un buffer nascosto che corrisponde esattamente a una modalità di visualizzazione supportata dall'output di destinazione, passa alla modalità di visualizzazione quando si passa alla modalità schermo intero nell'output. Di conseguenza, è possibile scegliere una modalità di visualizzazione scegliendo le dimensioni e il formato del buffer nascosto.
 
 ### <a name="full-screen-performance-tip"></a>Suggerimento per le prestazioni a schermo intero
 
-Quando si chiama [**IDXGISwapChain1::P resent1**](/windows/win32/api/DXGI1_2/nf-dxgi1_2-idxgiswapchain1-present1) su un'applicazione a schermo intero, la catena di scambio capovolge (in contrapposizione a Blits) il contenuto del buffer nascosto al buffer anteriore. A questo scopo, è necessario che la catena di scambio sia stata creata usando una modalità di visualizzazione enumerata (specificata in [**DXGI \_ swap \_ Chain \_ DESC1**](/windows/win32/api/DXGI1_2/ns-dxgi1_2-dxgi_swap_chain_desc1)). Se non si riesce a enumerare le modalità di visualizzazione o si specifica erroneamente la modalità di visualizzazione nella descrizione, la catena di scambio può invece eseguire un trasferimento a blocchi di bit (BitBlt). Il BitBlt causa una copia di estensione aggiuntiva, oltre ad aumentare l'utilizzo della memoria video ed è difficile da rilevare. Per evitare questo problema, enumerare le modalità di visualizzazione e inizializzare correttamente la descrizione della catena di scambio prima di creare la catena di scambio. Questo garantisce prestazioni massime quando si esegue il capovolgimento in modalità schermo intero ed evita l'overhead aggiuntivo della memoria.
+Quando si chiama [**IDXGISwapChain1::P resent1**](/windows/win32/api/DXGI1_2/nf-dxgi1_2-idxgiswapchain1-present1) in un'applicazione a schermo intero, la catena di scambio capovolge (anziché bliqui) il contenuto del buffer nascosto nel front buffer. A questo scopo è necessario che la catena di scambio sia stata creata usando una modalità di visualizzazione enumerata (specificata in [**DXGI \_ SWAP \_ CHAIN \_ DESC1).**](/windows/win32/api/DXGI1_2/ns-dxgi1_2-dxgi_swap_chain_desc1) Se non si riesce a enumerare le modalità di visualizzazione o si specifica erroneamente la modalità di visualizzazione nella descrizione, la catena di scambio potrebbe invece eseguire un trasferimento a blocchi di bit (bitblt). Il bitblt causa una copia di estensione aggiuntiva e un aumento dell'utilizzo della memoria video ed è difficile da rilevare. Per evitare questo problema, enumerare le modalità di visualizzazione e inizializzare correttamente la descrizione della catena di scambio prima di creare la catena di scambio. Ciò garantisce prestazioni massime quando si capovolge la modalità schermo intero ed evita il sovraccarico di memoria aggiuntivo.
 
-### <a name="multithread-considerations"></a>Considerazioni su multithread
+### <a name="multithread-considerations"></a>Considerazioni sul multithreading
 
-Quando si usa DXGI in un'applicazione con più thread, è necessario prestare attenzione a evitare la creazione di un deadlock, in cui due thread diversi sono in attesa di essere completati. Questo problema può verificarsi in due situazioni.
+Quando si usa DXGI in un'applicazione con più thread, è necessario evitare di creare un deadlock, in cui due thread diversi sono in attesa l'uno sull'altro per il completamento. Questa situazione può verificarsi in due situazioni.
 
--   Il thread di rendering non è il thread della pompa di messaggi.
+-   Il thread di rendering non è il thread message pump.
 -   Il thread che esegue un'API DXGI non è lo stesso thread che ha creato la finestra.
 
-Quando si usano le catene di scambio a schermo intero, prestare attenzione a non avere mai un thread di message-pump in attesa sul thread di rendering. Ad esempio, la chiamata a [**IDXGISwapChain1::P resent1**](/windows/win32/api/DXGI1_2/nf-dxgi1_2-idxgiswapchain1-present1) (dal thread di rendering) può provocare l'attesa del thread di rendering sul thread della pompa di messaggi. Quando si verifica una modifica della modalità, questo scenario è possibile se **Present1** chiama:: SetWindowPos () o:: SetWindowStyle () e uno di questi metodi chiama:: SendMessage (). In questo scenario, se il thread della pompa di messaggi presenta una sezione critica che lo sorveglia o se il thread di rendering è bloccato, i due thread risulteranno deadlock.
+Prestare attenzione a non avere mai il thread message pump in attesa sul thread di rendering quando si usano catene di scambio a schermo intero. Ad esempio, la chiamata [**a IDXGISwapChain1::P resent1**](/windows/win32/api/DXGI1_2/nf-dxgi1_2-idxgiswapchain1-present1) (dal thread di rendering) può causare l'attesa del thread di rendering sul thread message-pump. Quando si verifica una modifica della modalità, questo scenario è possibile se **Present1** chiama ::SetWindowPos() o ::SetWindowStyle() e uno di questi metodi chiama ::SendMessage(). In questo scenario, se il thread message-pump ha una sezione critica che lo protegge o se il thread di rendering è bloccato, i due thread si bloccano.
 
-Per altre informazioni sull'uso di DXGI con più thread, vedere [multithreading e DXGI](../direct3d11/overviews-direct3d-11-render-multi-thread-intro.md).
+Per altre informazioni sull'uso di DXGI con più thread, vedere [Multithreading e DXGI.](../direct3d11/overviews-direct3d-11-render-multi-thread-intro.md)
 
 ## <a name="dxgi-responses-from-dllmain"></a>Risposte DXGI da DLLMain
 
-Poiché una funzione [**DllMain**](../dlls/dllmain.md) non può garantire l'ordine in cui carica e Scarica le dll, è consigliabile che la funzione **DllMain** dell'app non chiami le funzioni o i metodi Direct3D o DXGI, incluse le funzioni o i metodi che creano o rilasciano oggetti. Se la funzione **DllMain** dell'app chiama un particolare componente, il componente potrebbe chiamare un'altra dll non presente nel sistema operativo, causando l'arresto anomalo del sistema operativo. Direct3D e DXGI possono caricare un set di dll, in genere un set di driver, che differisce da computer a computer. Pertanto, anche se l'app non si arresta in modo anomalo nei computer di sviluppo e di test quando la funzione **DllMain** chiama funzioni o metodi Direct3D o DXGI, è possibile che si verifichi un arresto anomalo quando viene eseguito in un altro computer.
+Poiché una funzione [**DllMain**](../dlls/dllmain.md) non può garantire l'ordine di caricamento e scaricamento delle DLL, è consigliabile che la funzione **DllMain** dell'app non chiami funzioni o metodi Direct3D o DXGI, incluse funzioni o metodi che creano o rilasciano oggetti. Se la funzione **DllMain** dell'app chiama un componente specifico, tale componente potrebbe chiamare un'altra DLL non presente nel sistema operativo, causando l'arresto anomalo del sistema operativo. Direct3D e DXGI potrebbero caricare un set di DLL, in genere un set di driver, che differisce da computer a computer. Pertanto, anche se l'app non si arresta in modo anomalo nei computer di sviluppo e test quando la relativa funzione **DllMain** chiama funzioni o metodi Direct3D o DXGI, potrebbe bloccarsi quando viene eseguita in un altro computer.
 
-Per evitare di creare un'app che potrebbe causare l'arresto anomalo del sistema operativo, DXGI fornisce le risposte seguenti nelle situazioni specificate:
+Per impedire la creazione di un'app che potrebbe causare l'arresto anomalo del sistema operativo, DXGI fornisce le risposte seguenti nelle situazioni specificate:
 
 -   Se la funzione [**DllMain**](../dlls/dllmain.md) dell'app rilascia l'ultimo riferimento a una factory DXGI, DXGI genera un'eccezione.
 -   Se la funzione [**DllMain**](../dlls/dllmain.md) dell'app crea una factory DXGI, DXGI restituisce un codice di errore.
 
-## <a name="dxgi-11-changes"></a>DXGI 1,1 modifiche
+## <a name="dxgi-11-changes"></a>Modifiche di DXGI 1.1
 
-Sono state aggiunte le funzionalità seguenti in DXGI 1,1.
+È stata aggiunta la funzionalità seguente in DXGI 1.1.
 
 -   Supporto delle superfici condivise sincronizzate
 
-    Le aree condivise sincronizzate per Direct3D 10,1 e Direct3D 11 consentono una condivisione efficace della superficie di lettura e scrittura tra più dispositivi Direct3D (la condivisione tra i dispositivi Direct3D 10 e Direct3D 11 è possibile). Vedere [**IDXGIKeyedMutex:: AcquireSync**](/windows/win32/api/DXGI/nf-dxgi-idxgikeyedmutex-acquiresync) e [**IDXGIKeyedMutex:: ReleaseSync**](/windows/win32/api/DXGI/nf-dxgi-idxgikeyedmutex-releasesync).
+    Le superfici condivise sincronizzate per Direct3D 10.1 e Direct3D 11 consentono una condivisione efficiente della superficie di lettura e scrittura tra più dispositivi Direct3D (è possibile condividere tra dispositivi Direct3D 10 e Direct3D 11). Vedere [**IDXGIKeyedMutex::AcquireSync**](/windows/win32/api/DXGI/nf-dxgi-idxgikeyedmutex-acquiresync) e [**IDXGIKeyedMutex::ReleaseSync**](/windows/win32/api/DXGI/nf-dxgi-idxgikeyedmutex-releasesync).
 
--   Supporto per colori elevati
+-   Supporto colori elevato
 
-    Supporta il formato \_ DXGI \_ R10G10B10 \_ XR \_ Bias \_ a2 \_ UNORM.
+    Supporta il formato DXGI \_ FORMAT \_ R10G10B10 \_ XR \_ BIAS \_ A2 \_ UNORM.
 
--   [**IDXGIDevice1:: SetMaximumFrameLatency**](/windows/win32/api/DXGI/nf-dxgi-idxgidevice1-setmaximumframelatency) e [ **IDXGIDevice1:: GetMaximumFrameLatency**](/windows/win32/api/DXGI/nf-dxgi-idxgidevice1-getmaximumframelatency)
--   [**IDXGIFactory1:: EnumAdapters1**](/windows/win32/api/DXGI/nf-dxgi-idxgifactory1-enumadapters1) enumera gli adapter locali senza i monitoraggi o gli output collegati, nonché gli adapter con gli output collegati. Il primo Adapter restituito sarà l'adapter locale in cui viene visualizzato il desktop primario.
+-   [**IDXGIDevice1::SetMaximumFrameLatency**](/windows/win32/api/DXGI/nf-dxgi-idxgidevice1-setmaximumframelatency) e [ **IDXGIDevice1::GetMaximumFrameLatency**](/windows/win32/api/DXGI/nf-dxgi-idxgidevice1-getmaximumframelatency)
+-   [**IDXGIFactory1::EnumAdapters1**](/windows/win32/api/DXGI/nf-dxgi-idxgifactory1-enumadapters1) enumera gli adattatori locali senza monitoraggi o output collegati, nonché gli adattatori con output collegati. Il primo adattatore restituito sarà l'adattatore locale in cui viene visualizzato il desktop primario.
 -   Supporto del formato BGRA
 
-    DXGI \_ Format \_ B8G8R8A8 \_ UNORM e DXGI \_ Format \_ B8G8R8A8 \_ UNORM \_ sRGB, vedere [**IDXGISurface1:: GetDC**](/windows/win32/api/DXGI/nf-dxgi-idxgisurface1-getdc) e [**IDXGISurface1:: ReleaseDC**](/windows/win32/api/DXGI/nf-dxgi-idxgisurface1-releasedc).
+    DXGI \_ FORMAT \_ B8G8R8A8 \_ UNORM e DXGI \_ FORMAT \_ B8G8R8A8A8 \_ UNORM \_ SRGB, vedere [**IDXGISurface1::GetDC**](/windows/win32/api/DXGI/nf-dxgi-idxgisurface1-getdc) e [**IDXGISurface1::ReleaseDC**](/windows/win32/api/DXGI/nf-dxgi-idxgisurface1-releasedc).
 
-## <a name="dxgi-12-changes"></a>DXGI 1,2 modifiche
+## <a name="dxgi-12-changes"></a>Modifiche di DXGI 1.2
 
-Sono state aggiunte le funzionalità seguenti in DXGI 1,2.
+È stata aggiunta la funzionalità seguente in DXGI 1.2.
 
 -   Catena di scambio stereo
--   [Inverti catena di scambio del modello](dxgi-flip-model.md)
--   Presentazione ottimizzata (scorrimento, rettangoli Dirty e rotazione)
+-   [Catena di scambio del modello flip](dxgi-flip-model.md)
+-   Presentazione ottimizzata (scorrimento, rettangoli dirty e rotazione)
 -   Miglioramento delle risorse condivise e della sincronizzazione
 -   [Duplicazione del desktop](desktop-dup-api.md)
--   Utilizzo ottimizzato della memoria video
--   Supporto per formati a 16 bit per pixel (BPP) ( \_ formato DXGI \_ B5G6R5 \_ UNORM, \_ formato DXGI B5G5R5A1 UNORM \_ \_ , \_ formato \_ DXGI \_ B4G4R4A4 UNORM)
--   API di debug
+-   Uso ottimizzato della memoria video
+-   Supporto per formati a 16 bit per pixel (bpp) (DXGI \_ \_ FORMAT B5G6R5 \_ UNORM, DXGI \_ FORMAT \_ B5G5R5A1 \_ UNORM, DXGI \_ FORMAT \_ B4G4R4A4 \_ UNORM)
+-   Debug delle API
 
-Per altre informazioni su DXGI 1,2, vedere [miglioramenti di DXGI 1,2](dxgi-1-2-improvements.md).
+Per altre informazioni su DXGI 1.2, vedere [Miglioramenti di DXGI 1.2.](dxgi-1-2-improvements.md)
 
 ## <a name="related-topics"></a>Argomenti correlati
 

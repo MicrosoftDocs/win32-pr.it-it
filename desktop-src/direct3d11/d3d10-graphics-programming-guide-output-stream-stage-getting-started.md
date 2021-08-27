@@ -4,20 +4,20 @@ description: Questa sezione descrive come usare uno shader geometry con la fase 
 ms.assetid: 37146486-5922-4833-850c-cc4a51de0957
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: ae2e72d25177926c948f43996b6c57d42a7c557b
-ms.sourcegitcommit: 749dea42142dec076d41a8f26cb57ae8db46e848
+ms.openlocfilehash: 5f00b469b28601322358f348de98354f15263483
+ms.sourcegitcommit: c276a8912787b2cda74dcf54eb96df961bb1188b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/24/2021
-ms.locfileid: "112587878"
+ms.lasthandoff: 08/20/2021
+ms.locfileid: "122621877"
 ---
 # <a name="getting-started-with-the-stream-output-stage"></a>Attività iniziali con la fase Stream-Output lavoro
 
 Questa sezione descrive come usare uno shader geometry con la fase di output del flusso.
 
-## <a name="compile-a-geometry-shader"></a>Compilare uno shader geometrico
+## <a name="compile-a-geometry-shader"></a>Compilare uno shader geometry
 
-Questo geometry shader (GS) calcola una normale faccia per ogni triangolo e restituisce i dati delle coordinate di posizione, normale e trama.
+Questo geometry shader (GS) calcola una normale faccia per ogni triangolo e restituisce i dati relativi alla posizione, alla normale e alla coordinata della trama.
 
 
 ```
@@ -99,8 +99,8 @@ Tenere presente questo codice, tenere presente che un geometry shader è simile 
 
 <table>
 <colgroup>
-<col style="width: 50%" />
-<col style="width: 50%" />
+<col  />
+<col  />
 </colgroup>
 <thead>
 <tr class="header">
@@ -114,7 +114,7 @@ Tenere presente questo codice, tenere presente che un geometry shader è simile 
 <td>Il tipo restituito dalla funzione esegue un'unica cosa e dichiara il numero massimo di vertici che possono essere restituiti dallo shader. In questo caso <span data-codelanguage=""></span>
 <table>
 <colgroup>
-<col style="width: 100%" />
+<col  />
 </colgroup>
 <tbody>
 <tr class="odd">
@@ -132,7 +132,7 @@ definisce che l'output deve essere un massimo di 12 vertici.</td>
 <span data-codelanguage=""></span>
 <table>
 <colgroup>
-<col style="width: 100%" />
+<col  />
 </colgroup>
 <tbody>
 <tr class="odd">
@@ -142,13 +142,13 @@ definisce che l'output deve essere un massimo di 12 vertici.</td>
 </table>
 
 </div>
-<p>Il primo parametro è una matrice di vertici (3 in questo caso) definita da una struttura GSPS_INPUT (che definisce i dati per vertice come una posizione, una normale e una coordinata di trama). Il primo parametro usa anche la parola chiave triangle, il che significa che la fase dell'assembler di input deve determinare l'output dei dati al geometry shader come uno dei tipi primitivi del triangolo (elenco di triangoli o striscia di triangoli).</p>
+<p>Il primo parametro è una matrice di vertici (3 in questo caso) definita da una struttura GSPS_INPUT (che definisce i dati per vertice come una posizione, una coordinata normale e una trama). Il primo parametro usa anche la parola chiave triangle, che significa che la fase dell'assembler di input deve determinare l'output dei dati nel geometry shader come uno dei tipi primitivi del triangolo (elenco di triangoli o striscia di triangoli).</p>
 <p>Il secondo parametro è un flusso triangolare definito dal tipo TriangleStream &lt; GSPS_INPUTT &gt; . Ciò significa che il parametro è una matrice di triangoli, ognuno dei quali è costituito da tre vertici (che contengono i dati dei membri di GSPS_INPUT).</p>
 <p>Usare le parole chiave triangle e trianglestream per identificare singoli triangoli o un flusso di triangoli in GS.</p></td>
 </tr>
 <tr class="odd">
 <td><p><span id="Intrinsic_function"></span><span id="intrinsic_function"></span><span id="INTRINSIC_FUNCTION"></span>Funzione intrinseca</p></td>
-<td><p>Le righe di codice nella funzione shader usano funzioni intrinseche HLSL common-shader-core, ad eccezione delle ultime due righe, che chiamano Append e RestartStrip. Queste funzioni sono disponibili solo per uno shader geometrico. Append indica al geometry shader di aggiungere l'output all'elenco corrente. RestartStrip crea una nuova striscia primitiva. Una nuova striscia viene creata in modo implicito in ogni chiamata della fase GS.</p></td>
+<td><p>Le righe di codice nella funzione shader usano funzioni intrinseche HLSL comuni, ad eccezione delle ultime due righe, che chiamano Append e RestartStrip. Queste funzioni sono disponibili solo per uno shader geometry. Append indica al geometry shader di aggiungere l'output all'elenco corrente. RestartStrip crea una nuova striscia primitiva. Una nuova striscia viene creata in modo implicito in ogni chiamata della fase GS.</p></td>
 </tr>
 </tbody>
 </table>
@@ -200,7 +200,7 @@ D3D11Device->CreateGeometryShaderWithStreamOut( pShaderBytecode, ShaderBytecodes
 Questa funzione accetta diversi parametri, tra cui:
 
 -   Puntatore al geometry shader compilato (o vertex shader se non è presente alcun geometry shader e i dati verranno trasmessi direttamente dal vertex shader). Per informazioni su come ottenere questo puntatore, vedere [Recupero di un puntatore a uno shader compilato.](/windows/desktop/direct3dhlsl/dx-graphics-hlsl-using-shaders-10)
--   Puntatore a una matrice di dichiarazioni che descrivono i dati di input per la fase di output del flusso. Vedere [**D3D11 \_ SO DECLARATION ENTRY (VOCE DI DICHIARAZIONE \_ \_ SO D3D11).**](/windows/desktop/api/D3D11/ns-d3d11-d3d11_so_declaration_entry) È possibile fornire fino a 64 dichiarazioni, una per ogni tipo di elemento diverso da visualizzare come output dalla fase SO. La matrice di voci di dichiarazione descrive il layout dei dati indipendentemente dal fatto che sia necessario eseguire l'associazione di un solo buffer o di più buffer per l'output del flusso.
+-   Puntatore a una matrice di dichiarazioni che descrivono i dati di input per la fase di output del flusso. Vedere [**D3D11 \_ SO DECLARATION ENTRY (VOCE DI DICHIARAZIONE \_ \_ SO D3D11).**](/windows/desktop/api/D3D11/ns-d3d11-d3d11_so_declaration_entry) È possibile fornire fino a 64 dichiarazioni, una per ogni tipo di elemento diverso da visualizzare come output dalla fase SO. La matrice di voci di dichiarazione descrive il layout dei dati indipendentemente dal fatto che per l'output del flusso siano associati solo un singolo buffer o più buffer.
 -   Numero di elementi scritti dalla fase SO.
 -   Puntatore all'oggetto geometry shader creato (vedere [**ID3D11GeometryShader).**](/windows/win32/api/d3d11/nn-d3d11-id3d11geometryshader)
 

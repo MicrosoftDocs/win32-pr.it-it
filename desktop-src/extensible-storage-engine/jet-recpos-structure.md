@@ -1,5 +1,5 @@
 ---
-description: 'Altre informazioni su: JET_RECPOS Structure'
+description: 'Altre informazioni su: JET_RECPOS struttura'
 title: JET_RECPOS struttura
 TOCTitle: JET_RECPOS Structure
 ms:assetid: 7c335120-4b84-4095-8f13-e5315d4996b1
@@ -15,12 +15,12 @@ api_type:
 - COM
 api_location: ''
 ROBOTS: INDEX,FOLLOW
-ms.openlocfilehash: ed374030bd3ab577b209d326d21110482c9cf37a
-ms.sourcegitcommit: 4665ebce0c106bdb52eef36e544280b496b6f50b
+ms.openlocfilehash: 6eb136ef309bad4ffd5c02768a3ca5b8e0d52f3c
+ms.sourcegitcommit: 9b5faa61c38b2d0c432b7f2dbee8c127b0e28a7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/26/2021
-ms.locfileid: "122989114"
+ms.lasthandoff: 08/19/2021
+ms.locfileid: "122470516"
 ---
 # <a name="jet_recpos-structure"></a>JET_RECPOS struttura
 
@@ -61,11 +61,7 @@ Numero approssimativo di voci nell'indice.
 ### <a name="requirements"></a>Requisiti
 
 
-| Requisito | Valore |
-|------------|----------|
-| <p><strong>Client</strong></p> | <p>Richiede Windows Vista, Windows XP o Windows 2000 Professional.</p> | 
-| <p><strong>Server</strong></p> | <p>Richiede Windows Server 2008, Windows Server 2003 o Windows 2000 Server.</p> | 
-| <p><strong>Intestazione</strong></p> | <p>Dichiarato in Esent.h.</p> | 
+| | | <p><strong>Client</strong></p> | <p>Richiede Windows Vista, Windows XP o Windows 2000 Professional.</p> | | <p><strong>Server</strong></p> | <p>Richiede Windows Server 2008, Windows Server 2003 o Windows 2000 Server.</p> | | <p><strong>Intestazione</strong></p> | <p>Dichiarato in Esent.h.</p> | 
 
 
 

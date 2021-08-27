@@ -14,12 +14,12 @@ api_type:
 - HeaderDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 2f815e0bb1fc7e8e1cba277f68b7950af2b20395092b69b2c07ebb7ac51367da
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: a47d53de99d3c6f6144755934989ca3958d28a23
+ms.sourcegitcommit: 9b5faa61c38b2d0c432b7f2dbee8c127b0e28a7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "117843790"
+ms.lasthandoff: 08/19/2021
+ms.locfileid: "122476782"
 ---
 # <a name="wmt_videoimage_transition_inset"></a>WMT \_ VIDEOIMAGE \_ TRANSITION \_ INSET
 
@@ -31,52 +31,14 @@ La tabella seguente descrive i parametri usati da questa transizione ed elenca i
 
 
 
-<table>
-<colgroup>
-<col style="width: 33%" />
-<col style="width: 33%" />
-<col style="width: 33%" />
-</colgroup>
-<thead>
-<tr class="header">
-<th>Parametro</th>
-<th>Membro della struttura</th>
-<th>Descrizione</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>Larghezza</td>
-<td><strong>fEffectPara0</strong></td>
-<td>Larghezza dell'oggetto inset in pixel.</td>
-</tr>
-<tr class="even">
-<td>Altezza</td>
-<td><strong>fEffectPara1</strong></td>
-<td>Altezza dell'oggetto inset in pixel.</td>
-</tr>
-<tr class="odd">
-<td>Direzione</td>
-<td><strong>fEffectPara2</strong></td>
-<td>Angolo da cui ha origine l'oggetto inset. Impostare su uno dei valori seguenti:<br/>
-<ul>
-<li>0 - In basso a sinistra</li>
-<li>1 - In basso a destra</li>
-<li>2 - In alto a sinistra</li>
-<li>3 - In alto a destra</li>
-</ul></td>
-</tr>
-<tr class="even">
-<td>Composizione</td>
-<td><strong>fEffectPara3</strong></td>
-<td>Impostare su uno dei valori seguenti:
-<ul>
-<li>0 : specifica la composizione normale, in cui l'immagine precedente è lo sfondo e l'immagine corrente è in primo piano.</li>
-<li>1 : specifica la composizione inversa, in cui l'immagine corrente è l'immagine di sfondo e l'immagine precedente è in primo piano</li>
-</ul></td>
-</tr>
-</tbody>
-</table>
+
+| Parametro | Membro della struttura | Descrizione | 
+|-----------|------------------|-------------|
+| Larghezza | <strong>fEffectPara0</strong> | Larghezza dell'oggetto inset in pixel. | 
+| Altezza | <strong>fEffectPara1</strong> | Altezza dell'oggetto inset in pixel. | 
+| Direzione | <strong>fEffectPara2</strong> | Angolo da cui ha origine l'oggetto inset. Impostare su uno dei valori seguenti:<br /><ul><li>0 - In basso a sinistra</li><li>1 - In basso a destra</li><li>2 - In alto a sinistra</li><li>3 - In alto a destra</li></ul> | 
+| Composizione | <strong>fEffectPara3</strong> | Impostare su uno dei valori seguenti:<ul><li>0 : specifica la composizione normale, in cui l'immagine precedente è lo sfondo e l'immagine corrente è in primo piano.</li><li>1 : specifica la composizione inversa, in cui l'immagine corrente è l'immagine di sfondo e l'immagine precedente è in primo piano</li></ul> | 
+
 
 
 
@@ -86,7 +48,7 @@ La tabella seguente descrive i parametri usati da questa transizione ed elenca i
 
 
 
-| Requisito | Valore |
+| Requisito | valore |
 |-------------------|---------------------------------------------------------------------------------------|
 | Intestazione<br/> | <dl> <dt>Wmsdkidl.h</dt> </dl> |
 

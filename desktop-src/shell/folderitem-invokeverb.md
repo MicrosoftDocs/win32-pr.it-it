@@ -1,7 +1,7 @@
 ---
 description: Esegue un verbo sull'elemento.
 ms.assetid: 569bdc88-15ef-4d08-923c-4f41e5ae5a38
-title: Metodo FolderItem. InvokeVerb (shldisp. h)
+title: Metodo FolderItem.InvokeVerb (Shldisp.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -13,14 +13,14 @@ api_type:
 - COM
 api_location:
 - Shell32.dll
-ms.openlocfilehash: 259ff9613756940d5da8a37585dbf39fb2dc0a26
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 1f6c45c67bd8863b6cf1169670a4d087f29e4441c48592f850a683af5ef0bc1d
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104524481"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120111791"
 ---
-# <a name="folderiteminvokeverb-method"></a>FolderItem. InvokeVerb, metodo
+# <a name="folderiteminvokeverb-method"></a>Metodo FolderItem.InvokeVerb
 
 Esegue un verbo sull'elemento.
 
@@ -42,9 +42,9 @@ FolderItem.InvokeVerb(
 *vVerb* \[ in, facoltativo\]
 </dt> <dd>
 
-Tipo: **Variant**
+Tipo: **Variante**
 
-Stringa che specifica il verbo da eseguire. Deve corrispondere a uno dei valori restituiti dalla proprietà [**FolderItemVerb.Name**](folderitemverb-name.md) dell'elemento. Se non viene specificato alcun verbo, verrà richiamato il verbo predefinito.
+Stringa che specifica il verbo da eseguire. Deve essere uno dei valori restituiti [](folderitemverb-name.md) dalla proprietà FolderItemVerb.Name dell'elemento. Se non viene specificato alcun verbo, verrà richiamato il verbo predefinito.
 
 </dd> </dl>
 
@@ -54,15 +54,15 @@ Questo metodo non restituisce valori.
 
 ## <a name="remarks"></a>Commenti
 
-Un verbo è una stringa utilizzata per specificare un'azione specifica supportata da un elemento. La chiamata di un verbo equivale alla selezione di un comando dal menu di scelta rapida di un elemento. In genere, la chiamata di un verbo avvia un'applicazione correlata. Se ad esempio si richiama il verbo "Open" in un file con estensione txt, il file verrà aperto con un editor di testo, in genere Microsoft Notepad. Per ulteriori informazioni sui verbi, vedere [avvio delle applicazioni](launch.md) .
+Un verbo è una stringa usata per specificare una determinata azione che un elemento supporta. Chiamare un verbo equivale a selezionare un comando dal menu di scelta rapida di un elemento. In genere, la chiamata di un verbo avvia un'applicazione correlata. Ad esempio, se si richiama il verbo "open" in un file .txt, il file viene aperto con un editor di testo, in genere Microsoft Blocco note. Per [altre informazioni sui](launch.md) verbi, vedere Avvio di applicazioni.
 
-L'oggetto [**folderitemverbs**](folderitemverbs.md) rappresenta la raccolta di verbi associati all'elemento. Il verbo predefinito può variare per elementi diversi, ma in genere è "aperto".
+[**L'oggetto FolderItemVerbs**](folderitemverbs.md) rappresenta la raccolta di verbi associati all'elemento. Il verbo predefinito può variare per elementi diversi, ma in genere è "aperto".
 
 ## <a name="examples"></a>Esempio
 
-Nell'esempio seguente viene usato **InvokeVerb** per richiamare il verbo predefinito (in questo caso "Open") nella cartella Windows. L'utilizzo corretto viene visualizzato per JScript, VBScript e Visual Basic.
+Nell'esempio seguente **viene utilizzato InvokeVerb** per richiamare il verbo predefinito ("open" in questo caso) nella Windows cartella. Viene visualizzato un utilizzo appropriato per JScript, VBScript e Visual Basic.
 
-JScript
+JScript:
 
 
 ```JScript
@@ -92,7 +92,7 @@ JScript
 
 
 
-VBScript
+Vbscript:
 
 
 ```VB
@@ -167,11 +167,11 @@ End Sub
 
 | Requisito | Valore |
 |-------------------------------------|----------------------------------------------------------------------------------------------------------------|
-| Client minimo supportato<br/> | Windows 2000 Professional, \[ solo app desktop Windows XP\]<br/>                                         |
+| Client minimo supportato<br/> | Windows 2000 Professional, Windows solo app desktop XP \[\]<br/>                                         |
 | Server minimo supportato<br/> | Windows 2000 Server \[solo app desktop\]<br/>                                                           |
-| Intestazione<br/>                   | <dl> <dt>Shldisp. h</dt> </dl>                           |
-| IDL<br/>                      | <dl> <dt>Shldisp. idl</dt> </dl>                         |
-| DLL<br/>                      | <dl> <dt>Shell32.dll (versione 4,71 o successiva)</dt> </dl> |
+| Intestazione<br/>                   | <dl> <dt>Shldisp.h</dt> </dl>                           |
+| Idl<br/>                      | <dl> <dt>Shldisp.idl</dt> </dl>                         |
+| DLL<br/>                      | <dl> <dt>Shell32.dll (versione 4.71 o successiva)</dt> </dl> |
 
 
 
@@ -185,7 +185,7 @@ End Sub
 [**Verbi**](folderitem-verbs.md)
 </dt> <dt>
 
-[**DoIt**](folderitemverb-doit.md)
+[**Doit**](folderitemverb-doit.md)
 </dt> </dl>
 
  

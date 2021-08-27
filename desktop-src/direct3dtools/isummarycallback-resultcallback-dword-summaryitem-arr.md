@@ -4,7 +4,7 @@ MS-HAID: vspixengine.ISummaryCallback\_ResultCallback\_DWORD\_SummaryItem\_arr
 MSHAttr:
 - PreferredSiteName:MSDN
 - PreferredLib:/library/windows/desktop
-title: 'Metodo ISummaryCallback:: ResultCallback'
+title: Metodo ISummaryCallback::ResultCallback
 ms.topic: reference
 ms.date: 05/31/2018
 ms.assetid: 07569D26-45A6-41A5-868D-8038BAB9079B
@@ -17,14 +17,14 @@ api_location:
 topic_type:
 - APIRef
 - kbSyntax
-ms.openlocfilehash: c4ea46550628ec9701ab6b0e6bb3af9ab71a2499
-ms.sourcegitcommit: a47bd86f517de76374e4fff33cfeb613eb259a7e
+ms.openlocfilehash: 7a663297ffbbebe79ef991cd6eec993a43f28749
+ms.sourcegitcommit: c276a8912787b2cda74dcf54eb96df961bb1188b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/06/2021
-ms.locfileid: "106304292"
+ms.lasthandoff: 08/20/2021
+ms.locfileid: "122625727"
 ---
-# <a name="span-idvspixengineisummarycallback_resultcallback_dword_summaryitem_arrspanisummarycallbackresultcallback-method"></a><span id="vspixengine.isummarycallback_resultcallback_dword_summaryitem_arr"></span>Metodo ISummaryCallback:: ResultCallback
+# <a name="span-idvspixengineisummarycallback_resultcallback_dword_summaryitem_arrspanisummarycallbackresultcallback-method"></a><span id="vspixengine.isummarycallback_resultcallback_dword_summaryitem_arr"></span>Metodo ISummaryCallback::ResultCallback
 
 Funzione di callback utilizzata per notificare all'host le informazioni di riepilogo del log di grafica.
 
@@ -40,19 +40,19 @@ HRESULT ResultCallback(
 
 ## <a name="parameters"></a>Parametri
 
-*conteggio*   
+*Conteggio*   
 Numero di elementi di informazioni di riepilogo restituiti.
 
-*\_summaryItem count0*   
+*count0 \_ summaryItem*   
 Elementi di informazioni di riepilogo (coppie chiave-valore).
 
 ## <a name="return-value"></a>Valore restituito
 
-Se questo metodo ha esito positivo, restituisce **S \_ OK**. In caso contrario, restituisce un codice di errore **HRESULT** .
+Se questo metodo ha esito positivo, restituisce **S \_ OK**. In caso contrario, restituisce un **codice di errore HRESULT.**
 
 ## <a name="requirements"></a>Requisiti
 
-<table><colgroup><col style="width: 50%" /><col style="width: 50%" /></colgroup><tbody><tr class="odd"><td><p>Intestazione</p></td><td>Vspixengine. h</td></tr></tbody></table>
+<table><colgroup><col  /><col  /></colgroup><tbody><tr class="odd"><td><p>Intestazione</p></td><td>Vspixengine.h</td></tr></tbody></table>
 
 ## <a name="span-idsee_alsospansee-also"></a><span id="see_also"></span>Vedere anche
 

@@ -13,16 +13,16 @@ api_type:
 ms.topic: reference
 ms.date: 05/31/2018
 api_location: ''
-ms.openlocfilehash: 5649553ab51a43bd1fb0aeb78d505d7e922bf80b
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: 1de2679d5f78b48ceef569491ef21998fc13faf7126e61f76ad31959bdc2ac6c
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "106328869"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120122781"
 ---
 # <a name="title-element-wpl"></a>Elemento title (WPL)
 
-L'elemento **title** specifica un titolo per la playlist.
+**L'elemento** title specifica un titolo per la playlist.
 
 ``` syntax
 <head>
@@ -40,7 +40,7 @@ Questo elemento non ha attributi.
 
 | Gerarchia | Elementi                 |
 |-----------|--------------------------|
-| Padre    | [Head](head-element.md) |
+| Padre    | [Testa](head-element.md) |
 | Figlio     | nessuno                     |
 
 
@@ -49,7 +49,7 @@ Questo elemento non ha attributi.
 
 ## <a name="remarks"></a>Osservazioni
 
-Quando si sceglie un titolo per una playlist Windows Media (WPL), tenere presente che il contenuto della playlist può essere dinamico. Un approccio efficace consiste nel basare il titolo sulla logica negli elementi **argument** perché definisce il contenuto della playlist. Esempi di questo argomento sono "canzoni rock preferite da 1966" o "canzoni dance che non ho eseguito di recente".
+Quando si sceglie un titolo per una playlist Windows Media Playlist (WPL), tenere presente che il contenuto della playlist può essere dinamico. Un approccio valido consiste nel basare  il titolo sulla logica negli elementi dell'argomento perché questo è ciò che definisce il contenuto della playlist. Ne sono esempi "My Favorite Rock Songs from 1966" o "Dance Songs That I Haven't Played Recently".
 
 ## <a name="examples"></a>Esempio
 
@@ -68,7 +68,7 @@ Quando si sceglie un titolo per una playlist Windows Media (WPL), tenere present
 
 | Requisito | Valore |
 |--------------------|----------------------------------------------------|
-| Versione<br/> | Windows Media Player 9 serie o versione successiva.<br/> |
+| Versione<br/> | Windows Media Player serie 9 o successiva.<br/> |
 
 
 
@@ -79,10 +79,10 @@ Quando si sceglie un titolo per una playlist Windows Media (WPL), tenere present
 [**Elemento argument**](argument-element.md)
 </dt> <dt>
 
-[**Elemento Head**](head-element.md)
+[**Elemento head**](head-element.md)
 </dt> <dt>
 
-[**Riferimento agli elementi della playlist Windows Media**](windows-media-playlist-elements-reference.md)
+[**Windows Informazioni di riferimento per gli elementi della playlist multimediale**](windows-media-playlist-elements-reference.md)
 </dt> </dl>
 
  

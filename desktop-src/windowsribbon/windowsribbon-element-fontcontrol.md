@@ -1,9 +1,9 @@
 ---
 title: Elemento FontControl
-description: Rappresenta un controllo Tipo di carattere, ovvero un contenitore specializzato di singoli controlli dedicati alla modifica del tipo di carattere.
+description: Rappresenta un controllo Tipo di carattere, un contenitore specializzato di singoli controlli dedicati alla manipolazione del tipo di carattere.
 ms.assetid: 98eddab5-28cb-4b9d-a788-ee28dd6055b1
 keywords:
-- Elemento FontControl Windows barra multifunzione
+- Elemento FontControl Windows ribbon
 topic_type:
 - apiref
 api_name:
@@ -13,16 +13,16 @@ api_type:
 ms.topic: reference
 ms.date: 05/31/2018
 api_location: ''
-ms.openlocfilehash: 7c7b068246da9b26a4b3547e27abd1a9b60c8fd70de10e4edd2438463a156633
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 5b6be1fae596e70f15dbfcd27e4bf15e35e04a93
+ms.sourcegitcommit: c276a8912787b2cda74dcf54eb96df961bb1188b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "118202523"
+ms.lasthandoff: 08/20/2021
+ms.locfileid: "122625977"
 ---
 # <a name="fontcontrol-element"></a>Elemento FontControl
 
-Rappresenta un [controllo Tipo di carattere](windowsribbon-controls-fontcontrol.md), che è un contenitore specializzato di singoli controlli dedicati alla modifica del tipo di carattere.
+Rappresenta un [controllo Tipo di carattere](windowsribbon-controls-fontcontrol.md), che è un contenitore specializzato di singoli controlli dedicati alla manipolazione del tipo di carattere.
 
 ## <a name="usage"></a>Utilizzo
 
@@ -46,10 +46,10 @@ Rappresenta un [controllo Tipo di carattere](windowsribbon-controls-fontcontrol.
 
 <table>
 <colgroup>
-<col style="width: 25%" />
-<col style="width: 25%" />
-<col style="width: 25%" />
-<col style="width: 25%" />
+<col  />
+<col  />
+<col  />
+<col  />
 </colgroup>
 <thead>
 <tr class="header">
@@ -64,37 +64,37 @@ Rappresenta un [controllo Tipo di carattere](windowsribbon-controls-fontcontrol.
 <td><strong>CommandName</strong><br/></td>
 <td>xs:positiveInteger o xs:string<br/></td>
 <td>No<br/></td>
-<td>Associa l'elemento a un <a href="windowsribbon-element-command.md"><strong>oggetto Command.</strong></a><br/> <br/>
-<dt><span></span><span></span><strong></strong> (xs:positiveInteger o xs:string)<br/> </dt> <dd> Stringa, valore intero compreso tra 2 e 59999 inclusi o valore esadecimale compreso tra 0x2 e 0xea5f inclusi. <br/> Il valore deve essere univoco all'interno del documento XML della barra multifunzione. <br/> Lunghezza massima: 100 caratteri. <br/> </dd> </dl></td>
+<td>Associa l'elemento a un <a href="windowsribbon-element-command.md"><strong>oggetto Command</strong></a>.<br/> <br/>
+<dt><span></span><span></span><strong></strong> (xs:positiveInteger o xs:string)<br/> </dt> <dd> Stringa, valore intero compreso tra 2 e 59999, inclusivo o valore esadecimale compreso tra 0x2 e 0xea5f, inclusi. <br/> Il valore deve essere univoco all'interno del documento XML della barra multifunzione. <br/> Lunghezza massima: 100 caratteri. <br/> </dd> </dl></td>
 </tr>
 <tr class="even">
 <td><strong>Tipo di carattere</strong><br/></td>
 <td>xs:string<br/></td>
 <td>No<br/></td>
 <td>Limitato a uno dei valori seguenti: <br/> <br/>
-<dt><span></span><span></span><strong></strong> (FontOnly)<br/> </dt> <dd> Valore predefinito. <br/> <img src="images/markup/screenshot-fonttype-fontonly.png" alt="Screen shot of the FontControl element with the FontOnly attribute set to true." /><br/> <em>L'impostazione dell'attributo FontType</em> <code>FontOnly</code> su abilita le funzionalità seguenti:<br/>
+<dt><span></span><span></span><strong></strong> (FontOnly)<br/> </dt> <dd> Valore predefinito. <br/> <img src="images/markup/screenshot-fonttype-fontonly.png" alt="Screen shot of the FontControl element with the FontOnly attribute set to true." /><br/> L'impostazione <em>dell'attributo FontType</em> <code>FontOnly</code> su abilita le funzionalità seguenti:<br/>
 <ul>
-<li><strong>Casella combinata famiglia</strong> di caratteri.</li>
+<li><strong>Casella combinata della famiglia</strong> di caratteri.</li>
 <li><strong>Casella combinata Dimensioni</strong> carattere.</li>
-<li><p><strong>Pulsanti di</strong> <strong>attivazione/disattivazione</strong>Grassetto, Corsivo, Sottolineato <strong>e</strong> Barrato. <strong></strong></p>
+<li><p><strong>Pulsanti di</strong> <strong>attivazione/disattivazione</strong>grassetto, corsivo, <strong>sottolineatura e barrato.</strong> <strong></strong></p>
 <blockquote>
 [!Note]<br />
-I <strong>pulsanti di</strong> attivazione/disattivazione Barrato e Sottolineatura vengono visualizzati per impostazione predefinita, ma possono essere nascosti impostando gli attributi <em>IsStrikethroughButtonVisible</em> e <em>IsUnderlineButtonVisible</em> su <strong></strong> <code>false</code> .
+I pulsanti <strong></strong> <strong>di</strong> attivazione/disattivazione Barrato e Sottolineatura vengono visualizzati per impostazione predefinita, ma possono essere nascosti impostando gli attributi <em>IsStrikethroughButtonVisible</em> e <em>IsUnderlineButtonVisible</em> su <code>false</code> .
 </blockquote>
 <p><br/></p></li>
 </ul>
-</dd> <dt><span></span><span></span><strong></strong> (FontWithColor)<br/> </dt> <dd> <img src="images/markup/screenshot-fonttype-fontwithcolor.png" alt="Screen shot of the FontControl element with the FontWithColor attribute set to true." /><br/> <em>L'impostazione dell'attributo FontType</em> <code>FontWithColor</code> su abilita le funzionalità seguenti:<br/>
+</dd> <dt><span></span><span></span><strong></strong> (FontWithColor)<br/> </dt> <dd> <img src="images/markup/screenshot-fonttype-fontwithcolor.png" alt="Screen shot of the FontControl element with the FontWithColor attribute set to true." /><br/> L'impostazione <em>dell'attributo FontType</em> <code>FontWithColor</code> su abilita le funzionalità seguenti:<br/>
 <ul>
-<li><strong>Casella combinata famiglia</strong> di caratteri.</li>
-<li><strong>Casella combinata dimensioni</strong> carattere.</li>
+<li><strong>Casella combinata della famiglia</strong> di caratteri.</li>
+<li><strong>Casella combinata Dimensioni</strong> carattere.</li>
 <li><strong>Pulsanti Aumenta dimensioni carattere</strong> <strong>e Riduci dimensioni</strong> carattere incrementa e decrementa.</li>
-<li><p><strong>Pulsanti di</strong> <strong>attivazione/disattivazione</strong>Grassetto, Corsivo, Sottolineato <strong>e</strong> Barrato. <strong></strong></p>
+<li><p><strong>Pulsanti di</strong> <strong>attivazione/disattivazione</strong>grassetto, corsivo, <strong>sottolineatura e barrato.</strong> <strong></strong></p>
 <blockquote>
 [!Note]<br />
-I <strong>pulsanti di</strong> attivazione/disattivazione Barrato e Sottolineatura vengono visualizzati per impostazione predefinita, ma possono essere nascosti impostando gli attributi <em>IsStrikethroughButtonVisible</em> e <em>IsUnderlineButtonVisible</em> su <strong></strong> <code>false</code> .
+I pulsanti <strong></strong> <strong>di</strong> attivazione/disattivazione Barrato e Sottolineatura vengono visualizzati per impostazione predefinita, ma possono essere nascosti impostando gli attributi <em>IsStrikethroughButtonVisible</em> e <em>IsUnderlineButtonVisible</em> su <code>false</code> .
 </blockquote>
 <p><br/></p></li>
-<li><strong>Selezione colori</strong> del testo.</li>
+<li><strong>Selezione colori</strong> testo.</li>
 <li><p><strong>Selezione colori evidenziazione</strong> testo.</p>
 <blockquote>
 [!Note]<br />
@@ -102,25 +102,25 @@ Questo controllo è nascosto per impostazione predefinita, ma può essere visual
 </blockquote>
 <p><br/></p></li>
 </ul>
-</dd> <dt><span></span><span></span><strong></strong> (RichFont)<br/> </dt> <dd> <img src="images/markup/screenshot-fonttype-richfont.png" alt="Screen shot of the FontControl element with the RichFont attribute set to true." /><br/> <em>L'impostazione dell'attributo FontType</em> <code>RichFont</code> su abilita le funzionalità seguenti:<br/>
+</dd> <dt><span></span><span></span><strong></strong> (RichFont)<br/> </dt> <dd> <img src="images/markup/screenshot-fonttype-richfont.png" alt="Screen shot of the FontControl element with the RichFont attribute set to true." /><br/> L'impostazione <em>dell'attributo FontType</em> <code>RichFont</code> su abilita le funzionalità seguenti:<br/>
 <ul>
-<li><strong>Casella combinata famiglia</strong> di caratteri.</li>
-<li><strong>Casella combinata dimensioni</strong> carattere.</li>
+<li><strong>Casella combinata della famiglia</strong> di caratteri.</li>
+<li><strong>Casella combinata Dimensioni</strong> carattere.</li>
 <li><strong>Pulsanti Aumenta dimensioni carattere</strong> <strong>e Riduci dimensioni</strong> carattere incrementa e decrementa.</li>
-<li><p><strong>Pulsanti di</strong> <strong>attivazione/disattivazione</strong>Grassetto, Corsivo, Sottolineato <strong>e</strong> Barrato. <strong></strong></p>
+<li><p><strong>Pulsanti di</strong> <strong>attivazione/disattivazione</strong>grassetto, corsivo, <strong>sottolineatura e barrato.</strong> <strong></strong></p>
 <blockquote>
 [!Note]<br />
-I <strong>pulsanti di attivazione/disattivazione</strong> Barrato e Sottolineatura vengono visualizzati per impostazione predefinita e non possono essere nascosti impostando gli attributi <em>IsStrikethroughButtonVisible</em> e <em>IsUnderlineButtonVisible</em> su <strong></strong> <code>false</code> .
+I pulsanti <strong></strong> <strong>di</strong> attivazione/disattivazione barrato e sottolineatura vengono visualizzati per impostazione predefinita e non possono essere nascosti impostando gli attributi <em>IsStrikethroughButtonVisible</em> e <em>IsUnderlineButtonVisible</em> su <code>false</code> .
 </blockquote>
 <p><br/></p></li>
-<li><strong>Selezione colori</strong> del testo.</li>
+<li><strong>Selezione colori</strong> testo.</li>
 <li><p><strong>Selezione colori evidenziazione</strong> testo.</p>
 <blockquote>
 [!Note]<br />
 Questo controllo viene visualizzato per impostazione predefinita e non può essere nascosto impostando <em>l'attributo IsHighlightButtonVisible</em> su <code>false</code> .
 </blockquote>
 <p><br/></p></li>
-<li><strong>Pulsanti di alternanza</strong> <strong>Pedice</strong> e Apice.</li>
+<li><strong>Pulsanti di attivazione/disattivazione</strong> <strong>pedice</strong> e apice.</li>
 </ul>
 </dd> </dl></td>
 </tr>
@@ -143,7 +143,7 @@ I pulsanti Aumenta/Riduci non vengono mai visualizzati in <a href="windowsribbon
 <td>Limitato a uno dei valori seguenti (0 e 1 non sono validi): <br/>
 <blockquote>
 [!Note]<br />
-L'evidenziazione dei colori è disponibile solo da <strong>fontControl</strong> quando il valore <em>dell'attributo FontType</em> è uguale <code>FontWithColor</code> a o <code>RichFont</code> .
+L'evidenziazione dei colori è disponibile solo da <strong>un oggetto FontControl</strong> quando il valore dell'attributo <em>FontType</em> è uguale <code>FontWithColor</code> a o <code>RichFont</code> .
 </blockquote>
 <br/> <br/>
 <dt><span></span><span></span><strong></strong> (true)<br/> </dt> <dd> Impostazione predefinita quando il valore di <em>FontType</em> è uguale <code>FontWithColor</code> a o <code>RichFont</code> .<br/> Valido solo quando il valore di <em>FontType</em> è uguale <code>FontWithColor</code> a o <code>RichFont</code> .<br/> </dd> <dt><span></span><span></span><strong></strong> (false)<br/> </dt> <dd> Impostazione predefinita quando il valore di <em>FontType</em> è uguale a <code>FontOnly</code> .<br/> Valido solo quando il valore di <em>FontType</em> è uguale <code>FontOnly</code> a o <code>FontWithColor</code> .<br/> </dd> </dl></td>
@@ -167,13 +167,13 @@ L'evidenziazione dei colori è disponibile solo da <strong>fontControl</strong> 
 <td>xs:positiveInteger<br/></td>
 <td>No<br/></td>
 <td>Dimensione massima in punti da visualizzare.<br/> <br/>
-<dt><span></span><span></span><strong></strong> (xs:positiveInteger)<br/> </dt> <dd> Valore intero compreso tra 1 e 9999 inclusi.<br/> Il valore predefinito <strong>è 9999.</strong><br/> </dd> </dl></td>
+<dt><span></span><span></span><strong></strong> (xs:positiveInteger)<br/> </dt> <dd> Valore intero compreso tra 1 e 9999, inclusi.<br/> Il valore predefinito <strong>è 9999.</strong><br/> </dd> </dl></td>
 </tr>
 <tr class="even">
 <td><strong>MinimumFontSize</strong><br/></td>
 <td>xs:positiveInteger<br/></td>
 <td>No<br/></td>
-<td>Dimensione minima del punto da visualizzare.<br/> <br/>
+<td>Dimensione minima in punti da visualizzare.<br/> <br/>
 <dt><span></span><span></span><strong></strong> (xs:positiveInteger)<br/> </dt> <dd> Valore intero compreso tra 1 e 9999 inclusi.<br/> Il valore predefinito <strong>è 1</strong>.<br/> </dd> </dl></td>
 </tr>
 <tr class="odd">
@@ -196,7 +196,7 @@ I tipi di carattere verticali sono preceduti da un simbolo @ <strong>nell'elenco
 <dt><span></span><span></span><strong></strong> (true)<br/> </dt> <dd> Valore predefinito. Visualizza i tipi di carattere verticali impostati su <strong>Mostra nel</strong> pannello di <strong>controllo Tipi</strong> di carattere. <br/> </dd> <dt><span></span><span></span><strong></strong> (false)<br/> </dt> <dd> Consente a un'applicazione che non supporta il testo verticale di nascondere i tipi di carattere verticali impostati su <strong>Mostra</strong> nel pannello <strong>di controllo Tipi di</strong> carattere.<br/>
 <blockquote>
 [!Note]<br />
-In Windows Vista il pannello di controllo <strong>Tipi di</strong> carattere non offre <strong>la funzionalità</strong> Mostra <strong>o</strong> Nascondi. In questo caso, <em>l'attributo ShowVerticalFonts</em> deve essere impostato su <code>False</code> .
+In Windows Vista il pannello di controllo <strong>Tipi</strong> di carattere non offre <strong>la funzionalità</strong> Mostra <strong>o</strong> Nascondi. In questo caso, <em>l'attributo ShowVerticalFonts</em> deve essere impostato su <code>False</code> .
 </blockquote>
 <br/> </dd> </dl></td>
 </tr>

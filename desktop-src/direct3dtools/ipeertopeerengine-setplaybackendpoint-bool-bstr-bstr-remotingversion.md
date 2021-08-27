@@ -1,5 +1,5 @@
 ---
-description: Imposta l'indirizzo endpoint usato per connettersi a un motore remoto.
+description: Imposta l'indirizzo dell'endpoint utilizzato per connettersi a un motore remoto.
 MS-HAID: vspixengine.IPeerToPeerEngine\_SetPlaybackEndpoint\_BOOL\_BSTR\_BSTR\_RemotingVersion
 MSHAttr:
 - PreferredSiteName:MSDN
@@ -17,16 +17,16 @@ api_location:
 topic_type:
 - APIRef
 - kbSyntax
-ms.openlocfilehash: 81f3743c9f1cca5a763df23087d7703b79d198a9cd780f9a398017c53afaabfb
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 68a52342f3494b831439764eb74cd16132ec770e
+ms.sourcegitcommit: c276a8912787b2cda74dcf54eb96df961bb1188b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "117721798"
+ms.lasthandoff: 08/20/2021
+ms.locfileid: "122622937"
 ---
 # <a name="span-idvspixengineipeertopeerengine_setplaybackendpoint_bool_bstr_bstr_remotingversionspanipeertopeerenginesetplaybackendpoint-method"></a><span id="vspixengine.ipeertopeerengine_setplaybackendpoint_bool_bstr_bstr_remotingversion"></span>Metodo IPeerToPeerEngine::SetPlaybackEndpoint
 
-Imposta l'indirizzo endpoint usato per connettersi a un motore remoto.
+Imposta l'indirizzo dell'endpoint utilizzato per connettersi a un motore remoto.
 
 ## <a name="syntax"></a>Sintassi
 
@@ -49,10 +49,10 @@ true per usare l'autenticazione; in caso contrario, false.
 Stringa COM contenente l'indirizzo dell'endpoint.
 
 *sessionKey*   
-Stringa COM contenente la chiave di sessione utilizzata per la crittografia.
+Stringa COM contenente la chiave di sessione usata per la crittografia.
 
 *remoteVersion*   
-Specifica la versione del motore remoto da utilizzare.
+Specifica la versione del motore remoto da usare.
 
 ## <a name="return-value"></a>Valore restituito
 
@@ -60,7 +60,7 @@ Se questo metodo ha esito positivo, restituisce **S \_ OK**. In caso contrario, 
 
 ## <a name="requirements"></a>Requisiti
 
-<table><colgroup><col style="width: 50%" /><col style="width: 50%" /></colgroup><tbody><tr class="odd"><td><p>Intestazione</p></td><td>Vspixengine.h</td></tr></tbody></table>
+<table><colgroup><col  /><col  /></colgroup><tbody><tr class="odd"><td><p>Intestazione</p></td><td>Vspixengine.h</td></tr></tbody></table>
 
 ## <a name="span-idsee_alsospansee-also"></a><span id="see_also"></span>Vedere anche
 
