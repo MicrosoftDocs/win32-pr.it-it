@@ -1,5 +1,5 @@
 ---
-description: 'Altre informazioni su: funzione JetOSSnapshotPrepare'
+description: 'Altre informazioni su: Funzione JetOSSnapshotPrepare'
 title: Funzione JetOSSnapshotPrepare
 TOCTitle: JetOSSnapshotPrepare Function
 ms:assetid: 364cbcba-7ddb-4748-8417-e885a5984b0d
@@ -18,12 +18,12 @@ api_type:
 api_location:
 - ESENT.DLL
 ROBOTS: INDEX,FOLLOW
-ms.openlocfilehash: 67ccf9a5b21ccb9a4f94ba5aa4f995e4bb9017bf
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 010cafd19ffde09b3083dd3cb6e6a69fa2268f11
+ms.sourcegitcommit: 9b5faa61c38b2d0c432b7f2dbee8c127b0e28a7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "106315613"
+ms.lasthandoff: 08/19/2021
+ms.locfileid: "122470328"
 ---
 # <a name="jetossnapshotprepare-function"></a>Funzione JetOSSnapshotPrepare
 
@@ -32,9 +32,9 @@ _**Si applica a:** Windows | Windows Server_
 
 ## <a name="jetossnapshotprepare-function"></a>Funzione JetOSSnapshotPrepare
 
-La funzione **JetOSSnapshotPrepare** avvia i preparativi per una sessione snapshot. Una sessione snapshot è un breve intervallo di tempo in cui il motore non rilascia alcun disco IOs su disco, in modo che il motore possa partecipare a una sessione di snapshot del volume (se basata su uno snapshot writer).
+La **funzione JetOSSnapshotPrepare** avvia i preparativi per una sessione di snapshot. Una sessione snapshot è un breve intervallo di tempo in cui il motore non esegue operazioni di I/O di scrittura su disco, in modo che il motore possa partecipare a una sessione di snapshot del volume (se basata su un writer di snapshot).
 
-**Windows XP:**  **JetOSSnapshotPrepare** è stato introdotto in Windows XP.
+**Windows XP:****JetOSSnapshotPrepare** è stato introdotto in Windows XP.  
 
 ```cpp
     JET_ERR JET_API JetOSSnapshotPrepare(
@@ -47,92 +47,47 @@ La funzione **JetOSSnapshotPrepare** avvia i preparativi per una sessione snapsh
 
 *psnapId*
 
-Identificatore della sessione snapshot da avviare.
+Identificatore della sessione snapshot da iniziare.
 
 *grbit*
 
 Opzioni per questa chiamata. Questo parametro può avere una combinazione dei valori seguenti.
 
-<table>
-<colgroup>
-<col style="width: 50%" />
-<col style="width: 50%" />
-</colgroup>
-<thead>
-<tr class="header">
-<th><p>Valore</p></th>
-<th><p>Significato</p></th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td><p>0</p></td>
-<td><p>Snapshot normale.</p></td>
-</tr>
-<tr class="even">
-<td><p>JET_bitIncrementalSnapshot</p></td>
-<td><p>Verranno effettuati solo i file di log.</p></td>
-</tr>
-<tr class="odd">
-<td><p>JET_bitCopySnapshot</p></td>
-<td><p>Uno snapshot di copia (normale o incrementale) senza troncamento del log.</p></td>
-</tr>
-<tr class="even">
-<td><p>JET_bitContinueAfterThaw</p></td>
-<td><p>La sessione snapshot si verifica dopo <a href="gg269229(v=exchg.10).md">JetOSSnapshotThaw</a> e richiede una chiamata di funzione <a href="gg294136(v=exchg.10).md">JetOSSnapshotEnd</a> .</p></td>
-</tr>
-<tr class="odd">
-<td><p>JET_bitExplicitPrepare</p></td>
-<td><p>Nessuna istanza verrà preparata per impostazione predefinita.</p>
-<p><strong>Windows 7:</strong>  JET_bitExplicitPrepare è stato introdotto in Windows 7.</p></td>
-</tr>
-</tbody>
-</table>
+
+| <p>valore</p> | <p>Significato</p> | 
+|--------------|----------------|
+| <p>0</p> | <p>Snapshot normale.</p> | 
+| <p>JET_bitIncrementalSnapshot</p> | <p>Verranno prelevati solo i file di log.</p> | 
+| <p>JET_bitCopySnapshot</p> | <p>Snapshot di copia (normale o incrementale) senza troncamento del log.</p> | 
+| <p>JET_bitContinueAfterThaw</p> | <p>La sessione snapshot si verifica dopo <a href="gg269229(v=exchg.10).md">JetOSSnapshotThaw</a> e richiederà una <a href="gg294136(v=exchg.10).md">chiamata di funzione JetOSSnapshotEnd.</a></p> | 
+| <p>JET_bitExplicitPrepare</p> | <p>Per impostazione predefinita, non verrà preparata alcuna istanza.</p><p><strong>Windows 7:</strong>  JET_bitExplicitPrepare è stato introdotto in Windows 7.</p> | 
+
 
 
 ### <a name="return-value"></a>Valore restituito
 
-Questa funzione restituisce il tipo di dati [JET_ERR](./jet-err.md) con uno dei seguenti codici restituiti. Per ulteriori informazioni sugli errori ESE possibili, vedere la pagina relativa agli errori e ai [parametri di gestione degli](./error-handling-parameters.md)errori del [motore di archiviazione estensibile](./extensible-storage-engine-errors.md) .
-
-<table>
-<colgroup>
-<col style="width: 50%" />
-<col style="width: 50%" />
-</colgroup>
-<thead>
-<tr class="header">
-<th><p>Codice restituito</p></th>
-<th><p>Descrizione</p></th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td><p>JET_errSuccess</p></td>
-<td><p>Operazione riuscita.</p></td>
-</tr>
-<tr class="even">
-<td><p>JET_errInvalidParameter</p></td>
-<td><p>Il puntatore di ID snapshot è NULL o il parametro <em>grbit</em> non è valido.</p></td>
-</tr>
-<tr class="odd">
-<td><p>JET_errOSSnapshotInvalidSequence</p></td>
-<td><p>Una sessione snapshot è già in corso e l'operazione non può avere più di una sessione snapshot in un determinato momento.</p></td>
-</tr>
-</tbody>
-</table>
+Questa funzione restituisce il [JET_ERR](./jet-err.md) dati con uno dei codici restituiti seguenti. Per altre informazioni sui possibili errori ESE, vedere [Extensible Archiviazione Engine Errors](./extensible-storage-engine-errors.md) and [Error Handling Parameters](./error-handling-parameters.md).
 
 
-Se questa funzione ha esito positivo, sarà possibile avviare una sessione snapshot in qualsiasi momento con la fase di blocco IO. L'identificatore per la sessione verrà restituito e deve essere utilizzato nelle chiamate successive per la sessione snapshot.
+| <p>Codice restituito</p> | <p>Descrizione</p> | 
+|--------------------|--------------------|
+| <p>JET_errSuccess</p> | <p>Operazione riuscita.</p> | 
+| <p>JET_errInvalidParameter</p> | <p>Il puntatore all'ID dello snapshot è NULL o il <em>parametro grbit</em> non è valido.</p> | 
+| <p>JET_errOSSnapshotInvalidSequence</p> | <p>Una sessione snapshot è già in corso e l'operazione non può avere più di una sessione snapshot in un determinato momento.</p> | 
 
-Le istanze in esecuzione del motore verranno ora considerate parte della sessione snapshot.
 
-**Windows Vista:**  Per specificare un subset diverso di istanze, è possibile chiamare [JetOSSnapshotPrepareInstance](./jetossnapshotprepareinstance-function.md) .
 
-La normale chiamata di sequenza API è: **JetOSSnapshotPrepare**, seguita facoltativamente da una o più chiamate a [JetOSSnapshotPrepareInstance](./jetossnapshotprepareinstance-function.md)e quindi da [JetOSSnapshotFreeze](./jetossnapshotfreeze-function.md). Una volta avviato il blocco, è possibile terminarlo utilizzando [JetOSSnapshotThaw](./jetossnapshotthaw-function.md). In qualsiasi momento dopo la preparazione, la sessione snapshot può essere terminata improvvisamente con [JetOSSnapshotAbort](./jetossnapshotabort-function.md).
+Se questa funzione ha esito positivo, una sessione snapshot potrà essere avviata in qualsiasi momento con la fase di blocco I/O. Verrà restituito l'identificatore per la sessione e deve essere utilizzato nelle chiamate successive per la sessione snapshot.
 
-Se JET_bitContinueAfterThaw viene specificato dopo [JetOSSnapshotThaw](./jetossnapshotthaw-function.md), la sessione snapshot rimarrà (anche se verrà ripresa l'i/O). In questo modo verrà abilitata una verifica dello snapshot e, se necessario, verrà abilitato il troncamento del log tramite [JetOSSnapshotTruncateLog](./jetossnapshottruncatelog-function.md) e verrà richiesta una chiamata a [JetOSSnapshotEnd](./jetossnapshotend-function.md).
+Le istanze in esecuzione del motore verranno ora considerate parte della sessione di snapshot.
 
-Se questa funzione ha esito negativo, non viene apportata alcuna modifica allo stato del motore.
+**Windows Vista:**  Per specificare un subset diverso di istanze, è possibile [chiamare JetOSSnapshotPrepareInstance.](./jetossnapshotprepareinstance-function.md)
+
+La normale chiamata della sequenza API è: **JetOSSnapshotPrepare**, facoltativamente seguita da una o più chiamate a [JetOSSnapshotPrepareInstance](./jetossnapshotprepareinstance-function.md)e quindi [da JetOSSnapshotFreeze.](./jetossnapshotfreeze-function.md) Dopo l'avvio, il blocco può essere terminato usando [JetOSSnapshotThaw.](./jetossnapshotthaw-function.md) In qualsiasi momento dopo la preparazione, la sessione snapshot può essere terminata improvvisamente con [JetOSSnapshotAbort](./jetossnapshotabort-function.md).
+
+Se JET_bitContinueAfterThaw viene specificato dopo [JetOSSnapshotThaw,](./jetossnapshotthaw-function.md)la sessione snapshot rimarrà (anche se l'I/O riprenderà). In questo modo verrà abilitata la verifica dello snapshot e, se necessario, verrà abilitato il troncamento del log tramite [JetOSSnapshotTruncateLog](./jetossnapshottruncatelog-function.md) e sarà necessaria una chiamata a [JetOSSnapshotEnd.](./jetossnapshotend-function.md)
+
+Se questa funzione ha esito negativo, non si verifica alcuna modifica dello stato del motore.
 
 #### <a name="remarks"></a>Commenti
 
@@ -140,34 +95,9 @@ Verranno generate voci del registro eventi per i diversi passaggi dello snapshot
 
 #### <a name="requirements"></a>Requisiti
 
-<table>
-<colgroup>
-<col style="width: 50%" />
-<col style="width: 50%" />
-</colgroup>
-<tbody>
-<tr class="odd">
-<td><p><strong>Client</strong></p></td>
-<td><p>Richiede Windows Vista o Windows XP.</p></td>
-</tr>
-<tr class="even">
-<td><p><strong>Server</strong></p></td>
-<td><p>Richiede Windows Server 2008 o Windows Server 2003.</p></td>
-</tr>
-<tr class="odd">
-<td><p><strong>Intestazione</strong></p></td>
-<td><p>Dichiarata in esent. h.</p></td>
-</tr>
-<tr class="even">
-<td><p><strong>Libreria</strong></p></td>
-<td><p>Usare ESENT. lib.</p></td>
-</tr>
-<tr class="odd">
-<td><p><strong>DLL</strong></p></td>
-<td><p>Richiede ESENT.dll.</p></td>
-</tr>
-</tbody>
-</table>
+
+| | | <p><strong>Client</strong></p> | <p>Richiede Windows Vista o Windows XP.</p> | | <p><strong>Server</strong></p> | <p>Richiede Windows Server 2008 o Windows Server 2003.</p> | | <p><strong>Intestazione</strong></p> | <p>Dichiarato in Esent.h.</p> | | <p><strong>Libreria</strong></p> | <p>Usare ESENT.lib.</p> | | <p><strong>DLL</strong></p> | <p>Richiede ESENT.dll.</p> | 
+
 
 
 #### <a name="see-also"></a>Vedere anche

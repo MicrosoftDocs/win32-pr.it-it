@@ -17,12 +17,12 @@ api_location:
 topic_type:
 - APIRef
 - kbSyntax
-ms.openlocfilehash: dbac6a356a71d24f1808cba404d513333b9fa071
-ms.sourcegitcommit: 4e94fc75fad7b2a0f3c92a26f97e89924e59b7a9
+ms.openlocfilehash: d57ed4925fe0f47a5d55dfc581dee5e31c31aca2
+ms.sourcegitcommit: c276a8912787b2cda74dcf54eb96df961bb1188b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/24/2021
-ms.locfileid: "122786797"
+ms.lasthandoff: 08/20/2021
+ms.locfileid: "122628197"
 ---
 # <a name="span-idvspixengineistatuscallbackspanistatuscallback-interface"></a><span id="vspixengine.istatuscallback"></span>Interfaccia IStatusCallback
 
@@ -38,7 +38,7 @@ Non usato.
 
 **L'interfaccia IStatusCallback** include questi metodi.
 
-<table><colgroup><col  /><col  /></colgroup><thead><tr class="header"><th >Metodo</th><th >Descrizione</th></tr></thead><tbody><tr class="odd"><td ><a href="/windows/desktop/direct3dtools/istatuscallback-status-dword-dword-dword"><strong>Stato</strong></a></td><td ><p>Funzione di callback utilizzata per notificare all'host lo stato di avanzamento del motore. Questo consente inoltre all'host di determinare che il motore è ancora in esecuzione.</p></td></tr></tbody></table>
+<table><colgroup><col  /><col  /></colgroup><thead><tr class="header"><th style="text-align: left;">Metodo</th><th style="text-align: left;">Descrizione</th></tr></thead><tbody><tr class="odd"><td style="text-align: left;"><a href="/windows/desktop/direct3dtools/istatuscallback-status-dword-dword-dword"><strong>Stato</strong></a></td><td style="text-align: left;"><p>Funzione di callback utilizzata per notificare all'host lo stato di avanzamento del motore. Questo consente inoltre all'host di determinare che il motore è ancora in esecuzione.</p></td></tr></tbody></table>
 
  
 

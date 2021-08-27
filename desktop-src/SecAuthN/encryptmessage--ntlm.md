@@ -4,16 +4,16 @@ ms.assetid: 852a4624-792d-4f7d-bd3e-5a28692e2ef3
 title: Funzione EncryptMessage (NTLM)
 ms.topic: reference
 ms.date: 07/25/2019
-ms.openlocfilehash: b470543a6b97a0c14aae3dc38c8a045e90a7d9e327eae77283089f4fb16fc34a
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 5c36ce31793a7dc889b6dec40acac7606cc38bf3
+ms.sourcegitcommit: 9b5faa61c38b2d0c432b7f2dbee8c127b0e28a7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119008319"
+ms.lasthandoff: 08/19/2021
+ms.locfileid: "122480807"
 ---
 # <a name="encryptmessage-ntlm-function"></a>Funzione EncryptMessage (NTLM)
 
-La **funzione EncryptMessage (NTLM) crittografa** un messaggio per fornire [*la privacy*](../secgloss/p-gly.md). **EncryptMessage (NTLM)** consente a un'applicazione di scegliere tra gli algoritmi [*di crittografia*](../secgloss/c-gly.md) supportati dal meccanismo scelto. La **funzione EncryptMessage (NTLM)** usa il [*contesto di sicurezza*](../secgloss/s-gly.md) a cui fa riferimento l'handle di contesto. Alcuni pacchetti non hanno messaggi da crittografare o decrittografare, ma forniscono invece un [*hash*](../secgloss/h-gly.md) di integrità che può essere controllato.
+La **funzione EncryptMessage (NTLM) crittografa** un messaggio per fornire [*la privacy*](../secgloss/p-gly.md). **EncryptMessage (NTLM) consente** a un'applicazione di scegliere tra gli algoritmi [*di crittografia*](../secgloss/c-gly.md) supportati dal meccanismo scelto. La **funzione EncryptMessage (NTLM)** usa il [*contesto di sicurezza*](../secgloss/s-gly.md) a cui fa riferimento l'handle di contesto. Alcuni pacchetti non hanno messaggi da crittografare o decrittografare, ma forniscono invece un [*hash*](../secgloss/h-gly.md) di integrità che può essere controllato.
 
 > [!Note]  
 > **EncryptMessage (NTLM)** e [**DecryptMessage (NTLM)**](decryptmessage--ntlm.md) possono essere chiamati contemporaneamente da due thread diversi in un singolo contesto SSPI [*(Security Support Provider Interface)*](../secgloss/s-gly.md) se un thread è in fase di crittografia e l'altro sta decrittografando. Se più thread vengono crittografati o più thread vengono decrittografati, ogni thread deve ottenere un contesto univoco.
@@ -41,8 +41,11 @@ Flag specifici del pacchetto che indicano la qualità della protezione. Un [*pac
 
 Questo parametro può essere il flag seguente.
 
-<table><colgroup><col style="width: 50%" /><col style="width: 50%" /></colgroup><thead><tr class="header"><th>Valore</th><th>Significato</th></tr></thead><tbody><tr class="odd"><td><span id="SECQOP_WRAP_NO_ENCRYPT"></span><span id="secqop_wrap_no_encrypt"></span><dl> <dt><strong>SECQOP_WRAP_NO_ENCRYPT</strong></dt> </dl></td><td>Produrre un'intestazione o un trailer, ma non crittografare il messaggio.<br/><blockquote>[!Note]<br />
-KERB_WRAP_NO_ENCRYPT ha lo stesso valore e lo stesso significato.</blockquote><br/></td></tr></tbody></table>
+
+| valore | Significato | 
+|-------|---------|
+| <span id="SECQOP_WRAP_NO_ENCRYPT"></span><span id="secqop_wrap_no_encrypt"></span><dl><dt><strong>SECQOP_WRAP_NO_ENCRYPT</strong></dt></dl> | Produrre un'intestazione o un trailer, ma non crittografare il messaggio.<br /><blockquote>[!Note]<br />KERB_WRAP_NO_ENCRYPT ha lo stesso valore e lo stesso significato.</blockquote><br /> | 
+
 
 *pMessage* \[ in, out\]
 
@@ -96,11 +99,11 @@ Per ottenere prestazioni ottimali, le *strutture pMessage* devono essere allocat
 
 ## <a name="requirements"></a>Requisiti
 
-| Requisito | Valore |
+| Requisito | valore |
 | -------------------------|-------------------------------------------|
 | Client minimo supportato | Windows Solo \[ app desktop XP\]          |
 | Server minimo supportato | Windows Solo app desktop di Server 2003 \[\] |
-| Intestazione                   | Sspi.h (include Security.h)               |
+| Intestazione                   | Sspi.h (includere Security.h)               |
 | Libreria                  | Secur32.lib                               |
 | DLL                      | Secur32.dll                               |
 

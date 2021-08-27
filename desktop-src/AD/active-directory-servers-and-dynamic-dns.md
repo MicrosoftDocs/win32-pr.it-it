@@ -7,12 +7,12 @@ keywords:
 - Active Directory DNS dinamico
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 9508bd571cf60d3801cc5708276ff9399494e354ee3559efd0a3ffa0b96836a0
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: cd9828a2d6d14d862e98d3c5c4129bbc70f5c411
+ms.sourcegitcommit: 61a4c522182aa1cacbf5669683d9570a3bf043b2
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "118025201"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "122880067"
 ---
 # <a name="active-directory-servers-and-dynamic-dns"></a>Server Active Directory e DNS dinamico
 
@@ -25,7 +25,7 @@ I server Active Directory pubblicano gli indirizzi in modo che i client possano 
 
 
 
-I server Active Directory offrono il servizio LDAP tramite il protocollo TCP in modo che i nomi pubblicati siano "ldap.tcp.". <domain> Di conseguenza, sRV RR per fabrikam.com è "ldap.tcp.fabrikam.com". Dati aggiuntivi sul server SRV RR indicano la priorità e il peso del server, consentendo ai client di scegliere il server migliore per le proprie esigenze.
+I server Active Directory offrono il servizio LDAP tramite il protocollo TCP in modo che i nomi pubblicati siano "ldap.tcp. &lt; dominio &gt; ". Di conseguenza, sRV RR per fabrikam.com è "ldap.tcp.fabrikam.com". Dati aggiuntivi sul server SRV RR indicano la priorità e il peso del server, consentendo ai client di scegliere il server migliore per le proprie esigenze.
 
 Quando viene installato un server Active Directory, usa DNS dinamico per pubblicare se stesso. Poiché gli indirizzi TCP/IP sono soggetti a modifiche, i server verificano periodicamente le registrazioni per assicurarsi che siano corrette e, se necessario, le aggiornano.
 

@@ -20,19 +20,19 @@ api_type:
 api_location:
 - Microsoft.Isam.Esent.Interop.dll
 ROBOTS: INDEX,FOLLOW
-ms.openlocfilehash: d518fcb263481c2563b92d0b579a686db13c0175
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 9de3c9fd996c318a3df3445afbf1a7a0054ed3253c669a837c62c23e35159d9b
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "106318776"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120065664"
 ---
 # <a name="esentdiskexception-constructor-string-jet_err"></a>Costruttore EsentDiskException (String, JET_err)
 
 Inizializza una nuova istanza della classe EsentDiskException.
 
-**Spazio dei nomi:**  [Microsoft. ISAM. esent. Interop](./microsoft.isam.esent.interop-namespace.md)  
-**Assembly:**  Microsoft. ISAM. esent. Interop (in Microsoft.Isam.Esent.Interop.dll)
+**Spazio dei**  [nomi: Microsoft.Isam.Esent.Interop](./microsoft.isam.esent.interop-namespace.md)  
+**Assembly:**  Microsoft.Isam.Esent.Interop (in Microsoft.Isam.Esent.Interop.dll)
 
 ## <a name="syntax"></a>Sintassi
 
@@ -60,14 +60,14 @@ protected EsentDiskException(
 #### <a name="parameters"></a>Parametri
 
   - description  
-    Tipo: [System. String](/dotnet/api/system.string)  
+    Tipo: [System.String](/dotnet/api/system.string)  
     
     Descrizione dell'errore.
 
 <!-- end list -->
 
   - Err  
-    Tipo: [Microsoft.ISAM.esent.Interop.JET_err](./jet-err-enumeration.md)  
+    Tipo: [Microsoft.Isam.Esent.Interop.JET_err](./jet-err-enumeration.md)  
     
     Codice di errore dell'eccezione.
 
@@ -79,6 +79,6 @@ protected EsentDiskException(
 
 [Membri di EsentDiskException](./esentdiskexception-members.md)
 
-[Overload EsentDiskException](./esentdiskexception-constructor.md)
+[Overload di EsentDiskException](./esentdiskexception-constructor.md)
 
-[Spazio dei nomi Microsoft. ISAM. esent. Interop](./microsoft.isam.esent.interop-namespace.md)
+[Spazio dei nomi Microsoft.Isam.Esent.Interop](./microsoft.isam.esent.interop-namespace.md)

@@ -1,19 +1,19 @@
 ---
-description: Nell'esempio seguente i dati vengono trasferiti da un file di log dei contatori creato dallo strumento prestazioni a un formato separato da virgole (CSV).
+description: L'esempio seguente trasferisce i dati da un file di log dei contatori creato dallo strumento Prestazioni in un formato delimitato da virgole (.csv).
 ms.assetid: 5adeda14-0312-45ce-af91-6888f3aa1c95
 title: Conversione di dati da un file di log in formato binario a un file di log in formato CSV
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 6fea03ab810ff0ed357f72e3283323ee776bdc70
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 2748ef834b82de09ce0fa9f5ca8a36c85781eaa6
+ms.sourcegitcommit: 61a4c522182aa1cacbf5669683d9570a3bf043b2
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "106312077"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "122880910"
 ---
 # <a name="converting-data-from-a-binary-format-log-file-to-a-csv-format-log-file"></a>Conversione di dati da un file di log in formato binario a un file di log in formato CSV
 
-Nell'esempio seguente i dati vengono trasferiti da un file di log dei contatori creato dallo strumento prestazioni a un formato separato da virgole (CSV). L'esempio trasferisce i dati del contatore del tempo del processore raccolti dal computer locale. Per specificare un altro tipo di dati del contatore, modificare la variabile szCounterPath. Se i dati del contatore raccolti Risaleno a un computer specifico, aggiungere il nome del computer al percorso, ad esempio " \\ \\ \\ \\ <computername> \\ \\ processore (0) \\ \\ % tempo processore").
+L'esempio seguente trasferisce i dati da un file di log dei contatori creato dallo strumento Prestazioni in un formato delimitato da virgole (.csv). L'esempio trasferisce i dati del contatore Tempo processore raccolti dal computer locale. Per specificare un altro tipo di dati del contatore, modificare la variabile szCounterPath. Se i dati del contatore raccolti sono provenienti da un computer specifico, aggiungere il nome del computer al percorso (ad esempio, " \\ \\ \\ \\ &lt; computername &gt; \\ \\ Processore(0) \\ \\ % Tempo processore").
 
 
 ```C++

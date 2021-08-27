@@ -1,21 +1,21 @@
 ---
 description: Un manifesto dell'assembly è un file XML che descrive un assembly side-by-side.
 ms.assetid: f7973019-0a80-498e-adf1-c66267c813f4
-title: Manifesti dell'assembly
+title: Manifesti di assembly
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: d5d7c6739bc83e56a42a926ca6aecb739fc41bbf39225cc531afc7afc6706ccc
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 94310ce3fdbb05706f889ea9755f7a47320ada56
+ms.sourcegitcommit: 61a4c522182aa1cacbf5669683d9570a3bf043b2
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119142514"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "122884891"
 ---
-# <a name="assembly-manifests"></a>Manifesti dell'assembly
+# <a name="assembly-manifests"></a>Manifesti di assembly
 
 Un manifesto dell'assembly è un file XML che descrive un assembly side-by-side. I manifesti dell'assembly descrivono i nomi e le versioni di assembly, file e risorse side-by-side dell'assembly, nonché la dipendenza dell'assembly da altri assembly side-by-side. L'installazione, l'attivazione e l'esecuzione corrette di assembly side-by-side richiedono che il manifesto dell'assembly accompagna sempre un assembly nel sistema.
 
-Per un elenco completo di XML Schema, vedere [Schema del file manifesto.](manifest-file-schema.md)
+Per un elenco completo dello schema XML, vedere [Schema del file manifesto](manifest-file-schema.md).
 
 I manifesti dell'assembly hanno gli elementi e gli attributi seguenti.
 
@@ -39,7 +39,7 @@ I manifesti dell'assembly hanno gli elementi e gli attributi seguenti.
 |                                   | **nome**                  | Sì      |
 |                                   | **hashalg**               | No       |
 |                                   | **hash**                  | No       |
-| **Classe comClass**                      |                           | No       |
+| **comClass**                      |                           | No       |
 |                                   | **description**           | No       |
 |                                   | **Clsid**                 | Sì      |
 |                                   | **Threadingmodel**        | No       |
@@ -82,7 +82,7 @@ I manifesti dell'assembly hanno gli elementi e gli attributi seguenti.
 
 I manifesti dell'assembly possono essere installati in tre posizioni:
 
--   Come manifesti che [accompagnano](/windows/desktop/Msi/shared-assemblies)gli assembly condivisi, i manifesti degli assembly devono essere installati come file separato nella Cache assembly side-by-side. Si tratta in genere della cartella WinSxS nella directory Windows directory.
+-   Come manifesti che [accompagnano](/windows/desktop/Msi/shared-assemblies)gli assembly condivisi, i manifesti degli assembly devono essere installati come file separato nella Cache assembly side-by-side. Si tratta in genere della cartella WinSxS nella directory Windows.
 -   Come manifesti che [accompagnano assembly privati,](/windows/desktop/Msi/private-assemblies)i manifesti degli assembly devono essere installati nella struttura di directory dell'applicazione. Si tratta in genere di un file separato nella stessa cartella del file eseguibile dell'applicazione.
 -   Come risorsa in una DLL, l'assembly è disponibile per l'uso privato della DLL. Un manifesto dell'assembly non può essere incluso come risorsa in un file EXE. Un file EXE può includere un [manifesto dell'applicazione](application-manifests.md) come risorsa.
 
@@ -152,7 +152,7 @@ Questo elemento non ha sottoelementi. **L'elemento assemblyIdentity** dispone de
 | **type**                  | Specifica il tipo di assembly. Il valore deve essere win32 e in lettere minuscole. Obbligatorio.                                                                                                                                                                                                                                                                                                                                                         |
 | **nome**                  | Nome univoco dell'assembly. Usare il formato seguente per il nome dell'assembly: Organization.Division.Name. Ad esempio, Microsoft. Windows.mysampleAsm. Obbligatorio. Si noti che nel caso di una DLL in pacchetto come assembly privato con un file manifesto separato, il nome dell'assembly deve essere diverso dal nome della DLL e del manifesto.<br/>                                                                              |
 | **language**              | Identifica la lingua dell'assembly. facoltativo. Se l'assembly è specifico del linguaggio, specificare il codice del linguaggio DHTML. Nell'assembly **DEF-contextIdentity di** un manifesto dell'assembly destinato all'uso in tutto il mondo (indipendente dalla lingua) omettere l'attributo language.<br/> In un assembly di contesto **REFIdentità** di un manifesto dell'assembly destinato all'uso in tutto il mondo (indipendente dalla lingua) impostare il valore di language su " \* ".<br/> |
-| **processorArchitecture** | Specifica il processore. I valori validi sono x86 per i Windows a 32 bit e ia64 per i Windows a 64 bit. facoltativo.                                                                                                                                                                                                                                                                                                                               |
+| **processorArchitecture** | Specifica il processore. I valori validi sono x86 per i Windows a 32 bit e ia64 per le versioni a 64 bit Windows. facoltativo.                                                                                                                                                                                                                                                                                                                               |
 | **version**               | Specifica la versione dell'assembly. Usare il formato di versione in quattro parti: mmmmm.nnnnn.ooooo.ppppp. Ognuna delle parti separate da punti può essere compresa tra 0 e 65535 inclusi. Per altre informazioni, vedere [Versioni degli assembly.](assembly-versions.md) Obbligatorio.                                                                                                                                                                                               |
 | **Publickeytoken**        | Stringa esadecimale di 16 caratteri che rappresenta gli ultimi 8 byte dell'hash SHA-1 della chiave pubblica con cui viene firmato l'assembly. La chiave pubblica usata per firmare il catalogo deve essere di 2048 bit o superiore. Obbligatorio per gli assembly side-by-side condivisi.                                                                                                                                                                                |
 
@@ -212,7 +212,7 @@ Sottoelemento di un **elemento file.** facoltativo.
 | **Clsid**               | GUID che identifica in modo univoco la classe . Obbligatorio. Il valore deve essere nel formato di un GUID valido.                                                                                                                                                                                                                                                                                                                                                                                                                             |
 | **Threadingmodel**      | Modello di threading utilizzato dalle classi COM in-process. Se questa proprietà è Null, non viene usato alcun modello di threading. Il componente viene creato nel thread principale del client e viene effettuato il marshalling delle chiamate da altri thread a questo thread. facoltativo. I valori validi sono: "Apartment", "Free", "Both" e "Neutral".                                                                                                                                                                                                                         |
 | **tlbid**               | GUID per la libreria dei tipi per questo componente COM. Il valore deve essere nel formato di un GUID. facoltativo.                                                                                                                                                                                                                                                                                                                                                                                                                              |
-| **Progid**              | Identificatore a livello di codice dipendente dalla versione associato al componente COM. Il formato di un ProgID è <*del*>.< di>.<*versione*>.                                                                                                                                                                                                                                                                                                                                                                      |
+| **Progid**              | Identificatore a livello di codice dipendente dalla versione associato al componente COM. Il formato di un ProgID è <*del* fornitore>.<componente *>.<* *versione*>.                                                                                                                                                                                                                                                                                                                                                                      |
 | **miscStatus**          | Duplica nel manifesto dell'assembly le informazioni fornite dalla chiave del Registro di sistema MiscStatus. Se i valori per gli attributi **miscStatusIcon**, **miscStatusContent**, **miscStatusDocprint** o **miscStatusThumbnail** non vengono trovati, per gli attributi mancanti viene usato il valore predefinito corrispondente elencato in **miscStatus.** Il valore può essere un elenco delimitato da virgole dei valori degli attributi della tabella seguente. È possibile usare questo attributo se la classe COM è una classe OCX che richiede valori della chiave del Registro di sistema Miscstatus. |
 | **miscStatusIcon**      | Duplica nel manifesto dell'assembly le informazioni fornite da DVASPECT \_ ICON. Può fornire un'icona di un oggetto. Il valore può essere un elenco delimitato da virgole dei valori degli attributi della tabella seguente. È possibile usare questo attributo se la classe COM è una classe OCX che richiede valori della chiave del Registro di sistema Miscstatus.                                                                                                                                                                                                                |
 | **miscStatusContent**   | Duplica nel manifesto dell'assembly le informazioni fornite da DVASPECT \_ CONTENT. Può fornire un documento composto visualizzabile per uno schermo o una stampante. Il valore può essere un elenco delimitato da virgole dei valori degli attributi della tabella seguente. È possibile usare questo attributo se la classe COM è una classe OCX che richiede valori della chiave del Registro di sistema Miscstatus.                                                                                                                                                                          |
@@ -223,7 +223,7 @@ Sottoelemento di un **elemento file.** facoltativo.
 
  
 
-**L'elemento comClass** può avere <progid>elementi ...</progid> come elementi figlio, che elencano i progid dipendenti dalla versione.
+**L'elemento comClass** può avere &lt; elementi progid ... come elementi &gt; </progid> figlio, che elencano i progid dipendenti dalla versione.
 
 L'esempio seguente mostra un **elemento comClass** incluso in un **elemento file.**
 
@@ -354,12 +354,12 @@ Se un file nell'assembly implementa uno stub proxy, il tag di file corrispondent
 | Attributo            | Descrizione                                                                                                                                                                                                                                                                                                 |
 |----------------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | **Iid**              | Le. IID dell'interfaccia per cui viene dichiarato il proxy. Obbligatorio. Il valore deve essere nel formato: "{iid}".                                                                                                                                                                                        |
-| **nome**             | Nome dell'interfaccia come verrebbe visualizzato nel codice. Ad esempio, "IViewObject". Non deve essere una stringa descrittiva. Questo attributo è facoltativo. Il valore deve essere nel formato: "name".                                                                                                                 |
+| **nome**             | Nome dell'interfaccia così come verrebbe visualizzata nel codice. Ad esempio, "IViewObject". Non deve essere una stringa descrittiva. Questo attributo è facoltativo. Il valore deve essere nel formato "name".                                                                                                                 |
 | **tlbid**            | Libreria dei tipi che contiene la descrizione dell'interfaccia specificata **dall'attributo iid.** Questo attributo è facoltativo. Il valore deve essere nel formato: "{tlbid}".                                                                                                                                 |
-| **baseInterface**    | IID dell'interfaccia da cui deriva quello descritto **dall'attributo iid.** Questo attributo è facoltativo. Il valore deve essere nel formato: "{iid}".                                                                                                                                            |
+| **baseInterface**    | IID dell'interfaccia da cui deriva quello descritto dall'attributo **iid.** Questo attributo è facoltativo. Il valore deve essere nel formato: "{iid}".                                                                                                                                            |
 | **numMethods**       | Numero di metodi implementati dall'interfaccia . Questo attributo è facoltativo. Il valore deve essere nel formato: "n".                                                                                                                                                                                       |
 | **proxyStubClsid32** | Mappe un IID a un CLSID nelle DLL proxy a 32 bit.                                                                                                                                                                                                                                                                |
-| **Threadingmodel**   | Modello di threading utilizzato dalle classi COM in-process. Se questa proprietà è Null, non viene usato alcun modello di threading. Il componente viene creato nel thread principale del client e viene effettuato il marshalling delle chiamate da altri thread a questo thread. facoltativo. I valori validi sono: "Apartment", "Free", "Both" e "Neutral". |
+| **Threadingmodel**   | Modello di threading usato dalle classi COM in-process. Se questa proprietà è Null, non viene usato alcun modello di threading. Il componente viene creato nel thread principale del client e viene effettuato il marshalling delle chiamate da altri thread a questo thread. facoltativo. I valori validi sono: "Apartment", "Free", "Both" e "Neutral". |
 
 
 
@@ -367,22 +367,22 @@ Se un file nell'assembly implementa uno stub proxy, il tag di file corrispondent
 
 </dd> <dt>
 
-<span id="windowclass"></span><span id="WINDOWCLASS"></span>**classe finestra**
+<span id="windowclass"></span><span id="WINDOWCLASS"></span>**windowclass**
 </dt> <dd>
 
-Nome di una classe di Windows di cui eseguire il controllo delle versioni. **L'elemento windowclass** ha l'attributo seguente.
+Nome di una classe windows di cui eseguire il controllo delle versioni. **L'elemento windowclass** ha l'attributo seguente.
 
 
 
 | Attributo     | Descrizione                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                               |
 |---------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| **con controllo delle versioni** | Questo attributo controlla se il nome della classe della finestra interna usato nella registrazione contiene o meno la versione dell'assembly contenente la classe della finestra. Il valore di questo attributo può essere "yes" o "no". Il valore predefinito è "yes". Il valore "no" deve essere usato solo se la stessa classe di finestra è definita da un componente affiancato e da un componente non side-by-side equivalente e si vuole considerarli come la stessa classe di finestra. Si noti che le regole consuete relative alla registrazione della classe finestra si applicano solo al primo componente che registra la classe della finestra sarà in grado di registrarla perché non è con controllo delle versioni. |
+| **con controllo delle versioni** | Questo attributo controlla se il nome della classe della finestra interna utilizzato nella registrazione contiene o meno la versione dell'assembly contenente la classe della finestra. Il valore di questo attributo può essere "sì" o "no". Il valore predefinito è "sì". Il valore "no" deve essere usato solo se la stessa classe di finestra è definita da un componente side-by-side e da un componente non side-by-side equivalente e si vuole considerarli come la stessa classe finestra. Si noti che le regole consuete sulla registrazione della classe finestra si applicano solo al primo componente che registra la classe della finestra, perché non è con controllo delle versioni. |
 
 
 
  
 
-L'esempio seguente mostra un **elemento windowclass** incluso in un **elemento file.**
+L'esempio seguente illustra un **elemento windowclass** incluso in un **elemento file.**
 
 ``` syntax
 <file name="comctl32.dll">

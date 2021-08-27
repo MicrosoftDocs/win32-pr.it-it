@@ -1,7 +1,7 @@
 ---
-description: L' \_ operatore time () di riferimento esegue il cast dell'oggetto a un \_ tipo di dati time di riferimento.
+description: L'operatore REFERENCE \_ TIME() esegue il cast dell'oggetto a un tipo di dati REFERENCE \_ TIME.
 ms.assetid: 36f51e03-a458-46e6-9657-977b263c127f
-title: Metodo CRefTime. operator REFERENCE_TIME (Reftime. h)
+title: Metodo REFERENCE_TIME CRefTime.operator (Reftime.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -16,16 +16,16 @@ api_location:
 - Strmbase.dll
 - Strmbasd.lib
 - Strmbasd.dll
-ms.openlocfilehash: a3ceeeb00ba1de4f305f87ef3fe15e70a8d91457
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: 9a084d4e142f57b724343ac5a353461b41aac0be216b8e3851bc8b7e40000a1f
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "106329046"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120108031"
 ---
-# <a name="creftimeoperator-reference_time-method"></a>Metodo time di riferimento CRefTime. Operator \_
+# <a name="creftimeoperator-reference_time-method"></a>Metodo CRefTime.operator REFERENCE \_ TIME
 
-L' `REFERENCE_TIME()` operatore esegue il cast dell'oggetto a un tipo di dati [**\_ time di riferimento**](reference-time.md) .
+`REFERENCE_TIME()`L'operatore esegue il cast dell'oggetto a un [**tipo di dati REFERENCE \_ TIME.**](reference-time.md)
 
 ## <a name="syntax"></a>Sintassi
 
@@ -42,11 +42,11 @@ Questo metodo non presenta parametri.
 
 ## <a name="return-value"></a>Valore restituito
 
-Restituisce il valore di [**CRefTime:: m \_ Time**](creftime-m-time.md).
+Restituisce il valore di [**CRefTime::m \_ time**](creftime-m-time.md).
 
 ## <a name="remarks"></a>Commenti
 
-Nell'esempio seguente viene illustrato come utilizzare questo operatore cast:
+L'esempio seguente illustra come usare questo operatore cast:
 
 
 ```C++
@@ -62,8 +62,8 @@ REFERENCE_TIME rt = (REFERENCE_TIME)cRT;
 
 | Requisito | Valore |
 |--------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Intestazione<br/>  | <dl> <dt>Reftime. h (include Streams. h)</dt> </dl>                                                                                   |
-| Libreria<br/> | <dl> <dt>Strmbase. lib (compilazioni finali); </dt> <dt>Strmbasd. lib (build di debug)</dt> </dl> |
+| Intestazione<br/>  | <dl> <dt>Reftime.h (include Flussi.h)</dt> </dl>                                                                                   |
+| Libreria<br/> | <dl> <dt>Strmbase.lib (build di vendita al dettaglio); </dt> <dt>Strmbasd.lib (build di debug)</dt> </dl> |
 
 
 

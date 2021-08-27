@@ -4,32 +4,32 @@ ms.assetid: a262ef4e-d8ab-4eb6-88c6-023b90850cc6
 title: Identificatori di tasti di scelta rapida IME
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 407bffa76558626e88d8fbb88343d82df5557a78
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: cb02349fe416a02772332c07b6f9bfb38a44348815488ed3338b32fb353c7709
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104129738"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120107201"
 ---
 # <a name="ime-hot-key-identifiers"></a>Identificatori di tasti di scelta rapida IME
 
-Questi identificatori vengono usati con la funzione [**ImmSimulateHotKey**](/windows/desktop/api/Imm/nf-imm-immsimulatehotkey) .
+Questi identificatori vengono usati con la [**funzione ImmSimulateHotKey.**](/windows/desktop/api/Imm/nf-imm-immsimulatehotkey)
 
 
 
 | Identificatori                       | Significato                                                                                                                                                                                                 |
 |-----------------------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| \_ \_ \_ interruttore attiva disattiva IME CHOTKEY \_ IME | (Cinese semplificato) Consente di passare da un'operazione IME a un'altra quando il linguaggio è in cinese semplificato.                                                                                                  |
-| \_ \_ interruttore forma CHOTKEY \_ IME       | (Cinese semplificato) Consente di abilitare o disabilitare la modalità di conversione delle forme di IME.                                                                                                                                           |
-| \_interruttore del \_ simbolo \_ CHOTKEY IME      | (Cinese semplificato) Consente di abilitare o disabilitare la modalità di conversione dei simboli di IME. La modalità simbolo indica che l'utente può inserire segni di punteggiatura e simboli cinesi eseguendo il mapping alla punteggiatura e ai simboli sulla tastiera. |
-| \_RECONVERTSTRING ITHOTKEY \_ IME    | **Windows Me/98, windows 2000, Windows XP:** (cinese tradizionale) riconversione del trigger.                                                                                                                |
-| \_ \_ chiusura apertura JHOTKEY \_ IME         | Giapponese In alternativa, aprire e chiudere l'IME.                                                                                                                                                          |
-| IME \_ KHOTKEY \_ inglese             | Coreano Passa a inglese.                                                                                                                                                                             |
-| \_ \_ interruttore forma KHOTKEY \_ IME       | Coreano Consente di abilitare o disabilitare la modalità di conversione delle forme di IME.                                                                                                                                                       |
-| \_HANJACONVERT KHOTKEY \_ IME        | Coreano Passa alla conversione Hanja.                                                                                                                                                                    |
-| \_ \_ \_ interruttore attiva disattiva IME thotkey \_ IME | (Cinese tradizionale) Consente di passare da un'operazione IME a un'altra quando il linguaggio è cinese tradizionale.                                                                                                |
-| \_ \_ interruttore forma thotkey \_ IME       | (Cinese tradizionale) Consente di abilitare o disabilitare la modalità di conversione delle forme di IME.                                                                                                                                          |
-| \_interruttore del \_ simbolo \_ thotkey IME      | (Cinese tradizionale) Consente di abilitare o disabilitare la modalità di conversione dei simboli di IME.                                                                                                                                         |
+| INTERRUTTORE IME \_ CHOTKEY \_ IME \_ NONIME \_ | (cinese semplificato) Passare dall'operazione IME a un'operazione non IME quando la lingua è il cinese semplificato.                                                                                                  |
+| IME \_ CHOTKEY \_ SHAPE \_ TOGGLE       | (cinese semplificato) Attivare o disattivare la modalità di conversione delle forme dell'IME.                                                                                                                                           |
+| INTERRUTTORE \_ PER IL SIMBOLO CHOTKEY IME \_ \_      | (cinese semplificato) Attivare o disattivare la modalità di conversione dei simboli di IME. La modalità simbolo indica che l'utente può immettere segni di punteggiatura e simboli in cinese tramite mapping alla punteggiatura e ai simboli sulla tastiera. |
+| IME \_ ITHOTKEY \_ RECONVERTSTRING    | **Windows Me/98, Windows 2000, Windows XP:** (cinese tradizionale) Trigger reconversion.                                                                                                                |
+| IME \_ JHOTKEY \_ CLOSE \_ OPEN         | (giapponese) In alternativa, aprire e chiudere l'IME.                                                                                                                                                          |
+| IME \_ KHOTKEY \_ ENGLISH             | (coreano) Passare all'inglese.                                                                                                                                                                             |
+| IME \_ KHOTKEY \_ SHAPE \_ TOGGLE       | (coreano) Attivare o disattivare la modalità di conversione delle forme dell'IME.                                                                                                                                                       |
+| IME \_ KHOTKEY \_ HANJACONVERT        | (coreano) Passare alla conversione Hanja.                                                                                                                                                                    |
+| IME \_ THOTKEY \_ IME \_ NONIME \_ TOGGLE | (cinese tradizionale) Passare dall'operazione IME all'operazione non IME quando la lingua è il cinese tradizionale.                                                                                                |
+| INTERRUTTORE \_ FORMA THOTKEY IME \_ \_       | (cinese tradizionale) Attivare o disattivare la modalità di conversione delle forme dell'IME.                                                                                                                                          |
+| INTERRUTTORE \_ DEL SIMBOLO THOTKEY IME \_ \_      | (cinese tradizionale) Attivare o disattivare la modalità di conversione dei simboli di IME.                                                                                                                                         |
 
 
 

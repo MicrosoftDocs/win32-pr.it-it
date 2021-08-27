@@ -1,5 +1,5 @@
 ---
-description: Assegna i dati dei componenti vettoriali all'istanza corrente di XMDEC4.
+description: Assegna i dati del componente vettoriale all'istanza corrente di XMDEC4.
 ms.assetid: 'overload:microsoft.directx_sdk.reference.xmdec4.operator = '
 title: Operatore XMDEC4 = operatori
 ms.topic: reference
@@ -11,18 +11,18 @@ api_name: ''
 api_type:
 - NA
 api_location: ''
-ms.openlocfilehash: 4768697d40d0d7d0b793fb7e8dd81a1c3f53d95e13ae924fbc0926e41b77d505
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: f018a2ddce7599adf02e87d435d54b45725665cc
+ms.sourcegitcommit: c276a8912787b2cda74dcf54eb96df961bb1188b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "118087552"
+ms.lasthandoff: 08/20/2021
+ms.locfileid: "122622117"
 ---
 # <a name="xmdec4-operator--operators"></a>Operatore XMDEC4 = operatori
 
-Assegna i dati dei componenti vettoriali all'istanza corrente di `XMDEC4` .
+Assegna i dati del componente vettoriale all'istanza corrente di `XMDEC4` .
 
-Assegna i dati dei componenti vettoriali all'istanza corrente [**di XMDEC4.**](/windows/win32/api/directxpackedvector/ns-directxpackedvector-xmdec4)
+Assegna i dati del componente vettoriale all'istanza corrente [**di XMDEC4.**](/windows/win32/api/directxpackedvector/ns-directxpackedvector-xmdec4)
 
 ### <a name="overload-list"></a>Elenco di overload
 
@@ -30,19 +30,19 @@ Assegna i dati dei componenti vettoriali all'istanza corrente [**di XMDEC4.**](/
 
 <table>
 <colgroup>
-<col style="width: 50%" />
-<col style="width: 50%" />
+<col  />
+<col  />
 </colgroup>
 <thead>
 <tr class="header">
-<th style="text-align: left;">Operatore</th>
-<th style="text-align: left;">Descrizione</th>
+<th >Operatore</th>
+<th >Descrizione</th>
 </tr>
 </thead>
 <tbody>
 <tr class="odd">
-<td style="text-align: left;"><a href="/windows/desktop/api/directxmath/nf-directxmath-xmfloat4x3-operator-assign"><strong>XMDEC4::operator = (const XMDEC4&)</strong></a></td>
-<td style="text-align: left;">Assegna i dati del componente vettore da un'istanza <code>XMDEC4</code> di all'istanza corrente di <code>XMDEC4</code> . <br/> Questo operatore assegna i dati del componente vettore da un'istanza di <a href="/windows/desktop/api/directxpackedvector/ns-directxpackedvector-xmdec4"><strong>XMDEC4</strong></a> all'istanza corrente di <code>XMDEC4</code> . <br/>
+<td ><a href="/windows/desktop/api/directxmath/nf-directxmath-xmfloat4x3-operator-assign"><strong>XMDEC4::operator = (const XMDEC4&)</strong></a></td>
+<td >Assegna i dati del componente vettoriale da un'istanza <code>XMDEC4</code> di all'istanza corrente di <code>XMDEC4</code> . <br/> Questo operatore assegna i dati del componente vettoriale da un'istanza di <a href="/windows/desktop/api/directxpackedvector/ns-directxpackedvector-xmdec4"><strong>XMDEC4</strong></a> all'istanza corrente di <code>XMDEC4</code> . <br/>
 <blockquote>
 [!Note]<br />
 Questo operatore è disponibile solo in C++.
@@ -50,8 +50,8 @@ Questo operatore è disponibile solo in C++.
 <br/></td>
 </tr>
 <tr class="even">
-<td style="text-align: left;"><a href="/windows/desktop/api//rrascfg/nf-rrascfg-ieapproviderconfig-initialize"><strong>XMDEC4::operator = (const uint32_t)</strong></a></td>
-<td style="text-align: left;">Assegna i dati del componente vettore in un'istanza di <code>uint32_t</code> all'istanza corrente di <code>XMDEC4</code> . <br/> Questo operatore assegna i dati del componente vettore in un'istanza di <code>uint32_t</code> all'istanza corrente di <a href="/windows/desktop/api/directxpackedvector/ns-directxpackedvector-xmdec4"><strong>XMDEC4.</strong></a> <br/>
+<td ><a href="/windows/desktop/api//rrascfg/nf-rrascfg-ieapproviderconfig-initialize"><strong>XMDEC4::operator = (const uint32_t)</strong></a></td>
+<td >Assegna i dati del componente vettoriale in un'istanza di <code>uint32_t</code> all'istanza corrente di <code>XMDEC4</code> . <br/> Questo operatore assegna i dati del componente vettoriale in un'istanza di <code>uint32_t</code> all'istanza corrente di <a href="/windows/desktop/api/directxpackedvector/ns-directxpackedvector-xmdec4"><strong>XMDEC4.</strong></a> <br/>
 <blockquote>
 [!Note]<br />
 Questo operatore è disponibile solo in C++.

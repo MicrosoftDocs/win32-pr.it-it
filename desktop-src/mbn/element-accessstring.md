@@ -16,18 +16,18 @@ api_location: ''
 topic_type:
 - APIRef
 - kbSyntax
-ms.openlocfilehash: dec0b54f4e6539fb12ab2f2150f13a8c2046f58a
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 8066b722bb45e7296e48e65bb9bfd129ec9c7d4d
+ms.sourcegitcommit: 9b5faa61c38b2d0c432b7f2dbee8c127b0e28a7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104129031"
+ms.lasthandoff: 08/19/2021
+ms.locfileid: "122469398"
 ---
 # <a name="span-idwwan_profile_v4element_accessstringspanmbnprofileextaccessstring-v4"></a><span id="WWAN_profile_v4.element_AccessString"></span>MBNProfileExt \/ ... \/ AccessString (v4)
 
-Identifica l'APN o la stringa di connessione da utilizzare per stabilire una connessione dati.
+Identifica l'APN o la stringa di composizione da usare per stabilire una connessione dati.
 
-Per ulteriori informazioni, vedere la documentazione relativa all'elemento V1 [**AccessString**](./schema-accessstring-contexttype-element.md) .
+Per altre informazioni, vedere la documentazione per l'elemento [**AccessString**](./schema-accessstring-contexttype-element.md) v1.
 
 ## <a name="element-hierarchy"></a>Gerarchia degli elementi
 
@@ -53,49 +53,27 @@ Per ulteriori informazioni, vedere la documentazione relativa all'elemento V1 [*
 
 ### <a name="span-idattributesspanspan-idattributesspanattributes"></a><span id="attributes"></span><span id="ATTRIBUTES"></span>Attributi
 
-Nessuna.
+Nessuno.
 
 ### <a name="span-idchild_elementsspanspan-idchild_elementsspanspan-idchild_elementsspanchild-elements"></a><span id="Child_Elements"></span><span id="child_elements"></span><span id="CHILD_ELEMENTS"></span>Elementi figlio
 
-Nessuna.
+Nessuno.
 
 ### <a name="span-idparent_elementsspanspan-idparent_elementsspanparent-elements"></a><span id="parent_elements"></span><span id="PARENT_ELEMENTS"></span>Elementi padre
 
-<table>
-<colgroup>
-<col style="width: 50%" />
-<col style="width: 50%" />
-</colgroup>
-<thead>
-<tr class="header">
-<th>Elemento padre</th>
-<th>Descrizione</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td><a href="element-context.md">Contesto</a></td>
-<td><p>Specifica i parametri necessari per stabilire una connessione dati.</p></td>
-</tr>
-</tbody>
-</table>
+
+| Elemento padre | Descrizione | 
+|----------------|-------------|
+| <a href="element-context.md">Contesto</a> | <p>Specifica i parametri necessari per stabilire una connessione dati.</p> | 
+
 
  
 
 ## <a name="requirements"></a>Requisiti
 
-<table>
-<colgroup>
-<col style="width: 50%" />
-<col style="width: 50%" />
-</colgroup>
-<tbody>
-<tr class="odd">
-<td><p>Spazio dei nomi</p></td>
-<td><p>https://www.microsoft.com/networking/WWAN/profile/v4</p></td>
-</tr>
-</tbody>
-</table>
+
+| | | <p>Spazio dei nomi</p> | <p>https://www.microsoft.com/networking/WWAN/profile/v4</p> | 
+
 
  
 

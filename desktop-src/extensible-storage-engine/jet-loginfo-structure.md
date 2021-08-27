@@ -1,5 +1,5 @@
 ---
-description: 'Altre informazioni su: JET_LOGINFO struttura'
+description: 'Altre informazioni su: JET_LOGINFO Structure'
 title: JET_LOGINFO struttura
 TOCTitle: JET_LOGINFO Structure
 ms:assetid: b34b3f24-5d19-4e11-a657-a0e59204d628
@@ -15,12 +15,12 @@ api_type:
 - COM
 api_location: ''
 ROBOTS: INDEX,FOLLOW
-ms.openlocfilehash: 167b097426e27785ad47b8295fb728d1537dbd47
-ms.sourcegitcommit: 9b5faa61c38b2d0c432b7f2dbee8c127b0e28a7e
+ms.openlocfilehash: 8f5619211a5fc76bb080b81b22c08c9e369abf93
+ms.sourcegitcommit: 4665ebce0c106bdb52eef36e544280b496b6f50b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/19/2021
-ms.locfileid: "122479607"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "122983164"
 ---
 # <a name="jet_loginfo-structure"></a>JET_LOGINFO struttura
 
@@ -46,7 +46,7 @@ typedef struct {
 
 Dimensioni della struttura, in byte.
 
-Questo membro consente l'espansione futura di questa struttura, consentendo al tempo stesso la compatibilità con le versioni precedenti. Deve sempre essere impostata su sizeof( JET_LOGINFO ).
+Questo membro consente l'espansione futura di questa struttura, consentendo al tempo stesso la compatibilità con le versioni precedenti. Deve sempre essere impostato su sizeof( JET_LOGINFO ).
 
 **ulGenLow**
 
@@ -54,7 +54,7 @@ Numero di file di log più basso (o meno recente) ripristinato. La fedeltà comp
 
 **ulGenHigh**
 
-Numero di file di log più alto (o più recente) ripristinato. La massima fedeltà di un valore long senza segno deve essere mantenuta, ma nelle versioni correnti del motore questo numero è un numero esadecimale nell'intervallo compreso tra 0x00000 e 0xFFFFF. Questo potrebbe cambiare nelle versioni future.
+Numero di file di log più alto (o più recente) ripristinato. La fedeltà completa di un valore long senza segno deve essere mantenuta, ma nelle versioni correnti del motore questo numero è un numero esadecimale nell'intervallo tra 0x00000 a 0xFFFFF. Questo potrebbe cambiare nelle versioni future.
 
 **szBaseName**
 
@@ -66,12 +66,17 @@ Il valore restituito in questo membro è sempre uguale all'impostazione per JET_
 
 I file di log delle transazioni vengono denominati in base al nome di base dell'istanza e al numero di generazione del file di log. Il nome è nel formato BBBXXXXX. REGISTRO. BBB corrisponde al nome di base per il file di log e ha sempre una lunghezza di tre caratteri. XXXXX corrisponde al numero di generazione del file di log in zero caratteri esadecimali con riempimento e ha sempre una lunghezza di cinque caratteri. LOG è l'estensione di file che viene sempre specificata ai file di log delle transazioni dal motore.
 
-L'uso di queste informazioni strutturate è sconsigliato perché fa sì che l'applicazione abbia una conoscenza approfondita di questo schema di denominazione per i file di log delle transazioni. Se lo schema di denominazione cambia in futuro, tale applicazione non funzionerà più correttamente. È possibile che il formato del log cambi in modo da incorporare 8 cifre esadecimali in futuro. Le applicazioni devono usare invece l'elenco esplicito di nomi di file [restituiti da JetGetLogInfo.](./jetgetloginfo-function.md)
+L'uso di queste informazioni strutturate è sconsigliato perché fa sì che l'applicazione abbia una conoscenza approfondita di questo schema di denominazione per i file di log delle transazioni. Se lo schema di denominazione viene modificato in futuro, tale applicazione non funzionerà più correttamente. È possibile che il formato del log cambi in modo da incorporare 8 cifre esadecimali in futuro. Le applicazioni devono usare invece l'elenco esplicito di nomi di file [restituiti da JetGetLogInfo.](./jetgetloginfo-function.md)
 
 ### <a name="requirements"></a>Requisiti
 
 
-| | | <p><strong>Client</strong></p> | <p>Richiede Windows Vista o Windows XP.</p> | | <p><strong>Server</strong></p> | <p>Richiede Windows Server 2008 o Windows Server 2003.</p> | | <p><strong>Intestazione</strong></p> | <p>Dichiarato in Esent.h.</p> | | <p><strong>Unicode</strong></p> | <p>Implementato come <strong>JET_LOGINFO_W</strong> (Unicode) <strong>e JET_LOGINFO_A</strong> (ANSI).</p> | 
+| Requisito | Valore |
+|------------|----------|
+| <p><strong>Client</strong></p> | <p>Richiede Windows Vista o Windows XP.</p> | 
+| <p><strong>Server</strong></p> | <p>Richiede Windows Server 2008 o Windows Server 2003.</p> | 
+| <p><strong>Intestazione</strong></p> | <p>Dichiarato in Esent.h.</p> | 
+| <p><strong>Unicode</strong></p> | <p>Implementato come <strong>JET_LOGINFO_W</strong> (Unicode) <strong>e JET_LOGINFO_A</strong> (ANSI).</p> | 
 
 
 

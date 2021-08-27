@@ -1,21 +1,21 @@
 ---
-title: Aggiunta di un'immagine di avvio
-description: Questo esempio si basa sull'esempio di masterizzazione di un'immagine del disco aggiungendo codice per includere un'immagine di avvio nella sezione di avvio del disco.
+title: Aggiunta di un'immagine d'avvio
+description: Questo esempio si basa sull'esempio Disampliare un'immagine disco aggiungendo il codice per includere un'immagine di avvio nella sezione di avvio del disco.
 ms.assetid: b23cdbb9-ae0d-4261-965b-56abe865f323
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 4ce48537f32f1dc574eef174b26daaa5e2ebe255
-ms.sourcegitcommit: 2d531328b6ed82d4ad971a45a5131b430c5866f7
+ms.openlocfilehash: b884c69dc53c14c01cb6e9486af30a148233192e41d433f4af6791b658185cca
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "104045341"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120092481"
 ---
-# <a name="adding-a-boot-image"></a>Aggiunta di un'immagine di avvio
+# <a name="adding-a-boot-image"></a>Aggiunta di un'immagine d'avvio
 
-Questo esempio si basa sull'esempio di [masterizzazione di un'immagine del disco](burning-a-disc.md) aggiungendo codice per includere un'immagine di avvio nella sezione di avvio del disco. L'immagine di avvio si connette all'oggetto file system scritto su disco. Una volta collegato, il resto del processo di masterizzazione è identico a quello della procedura di masterizzazione di base. L'immagine di avvio fornisce l'avvio del sistema tramite l'unità disco CD o DVD.
+Questo esempio si [](burning-a-disc.md) basa sull'esempio Disampliare un'immagine disco aggiungendo il codice per includere un'immagine di avvio nella sezione di avvio del disco. L'immagine di avvio si connette all file system o object scritto su disco. Una volta collegato, il resto del processo di esequiezione è identico a quello di base. L'immagine d'avvio consente l'avvio del sistema usando l'unità disco CD o DVD.
 
-L'esempio consente di impostare come hardcoded il percorso dell'immagine di avvio. Assicurarsi di modificare il percorso insieme ad altri valori hardcoded nel modo appropriato.
+L'esempio imposta come hardcoded il percorso dell'immagine di avvio. Assicurarsi di modificare il percorso insieme ad altri valori hardcoded in base alle esigenze.
 
 
 ```VB
@@ -107,7 +107,7 @@ End Function
 
 <dl> <dt>
 
-[Uso di IMAPi](using-imapi.md)
+[Uso di IMAPI](using-imapi.md)
 </dt> <dt>
 
 [**IDiscMaster2**](/windows/desktop/api/imapi2/nn-imapi2-idiscmaster2)
@@ -119,9 +119,9 @@ End Function
 [**IFileSystemImage**](/windows/desktop/api/imapi2fs/nn-imapi2fs-ifilesystemimage)
 </dt> </dl>
 
- 
+ 
 
- 
+ 
 
 
 

@@ -7,12 +7,12 @@ keywords:
 - user_marshal
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 5d0501cfd3199d41a49da7f54919c86f9332ce976f33963f23c63a7938338da0
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: b769e6a7e176d5aeba68afd322cdd6f24d76c6b5
+ms.sourcegitcommit: 61a4c522182aa1cacbf5669683d9570a3bf043b2
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "118923531"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "122883750"
 ---
 # <a name="the-user_marshal-attribute"></a>Attributo di \_ marshalling dell'utente
 
@@ -20,16 +20,16 @@ ms.locfileid: "118923531"
 
 Il tipo specifico dell'applicazione può essere un tipo semplice, composito o puntatore. La restrizione principale è che l'istanza del tipo deve avere una dimensione di memoria fissa e ben definita. Se le dimensioni dell'istanza del tipo devono cambiare, usare un campo puntatore anziché una matrice conforme. In alternativa, è possibile definire un puntatore al tipo modificabile.
 
-Come per **\[ l'attributo wire \_ marshal, \]** si forniscono routine per i passaggi di ridimensionamento, marshalling, annullamento del marshalling e liberamento. Nella tabella seguente vengono descritti i quattro nomi di routine forniti dall'utente. è <type> il tipo userm-*specificato* nella definizione del tipo **\[ di \_ marshalling \]** utente.
+Come per **\[ l'attributo wire \_ marshal, \]** si forniscono routine per i passaggi di ridimensionamento, marshalling, annullamento del marshalling e liberamento. Nella tabella seguente vengono descritti i quattro nomi di routine forniti dall'utente. Il &lt; tipo è il tipo &gt; userm-*specificato* nella definizione del tipo **\[ di \_ marshalling \]** utente.
 
 
 
 | Routine                                                            | Descrizione                                                               |
 |--------------------------------------------------------------------|---------------------------------------------------------------------------|
-| [<type>\_UserSize](the-type-usersize-function.md)           | Ridimensiona il buffer di dati RPC prima del marshalling sul lato client o server. |
-| [<type>\_UserMarshal](the-type-usermarshal-function.md)     | Esegue il marshalling dei dati sul lato client o server.                           |
-| [<type>\_UserUnmarshal](the-type-userunmarshal-function.md) | Annulla ilmarshaling dei dati sul lato client o server.                         |
-| [<type>\_UserFree](the-type-userfree-function.md)           | Libera i dati sul lato server.                                        |
+| [&lt;digitare &gt; \_ UserSize](the-type-usersize-function.md)           | Ridimensiona il buffer di dati RPC prima del marshalling sul lato client o server. |
+| [&lt;digitare &gt; \_ UserMarshal](the-type-usermarshal-function.md)     | Esegue il marshalling dei dati sul lato client o server.                           |
+| [&lt;digitare &gt; \_ UserUnmarshal](the-type-userunmarshal-function.md) | Annulla ilmarshaling dei dati sul lato client o server.                         |
+| [&lt;digitare &gt; \_ UserFree](the-type-userfree-function.md)           | Libera i dati sul lato server.                                        |
 
 
 
@@ -37,9 +37,9 @@ Come per **\[ l'attributo wire \_ marshal, \]** si forniscono routine per i pass
 
 Queste routine fornite dall'utente vengono fornite dal client o dall'applicazione server, in base agli attributi direzionali.
 
-Se il parametro è \[ [solo in](/windows/desktop/Midl/in) \] , il client trasmette al server. Il client richiede le **<type> \_ funzioni UserSize** **<type> \_ e UserMarshal.** Il server richiede le **<type> \_ funzioni UserUnmarshal** **<type> \_ e UserFree.**
+Se il parametro è \[ [solo in](/windows/desktop/Midl/in) \] , il client trasmette al server. Il client richiede il **&lt; tipo &gt; \_ UserSize** e **&lt; le funzioni &gt; \_ UserMarshal.** Il server richiede il **&lt; tipo &gt; \_ UserUnmarshal** e **&lt; le funzioni &gt; \_ UserFree.**
 
-Per un \[ [parametro out](/windows/desktop/Midl/out-idl) \] -only, il server trasmette al client. Il server richiede le **<type> \_ funzioni UserSize** e **<type> \_ UserMarshal,** mentre il client richiede la **<type> \_ funzione UserMarshal.**
+Per un \[ [parametro out](/windows/desktop/Midl/out-idl) \] -only, il server trasmette al client. Il server richiede il **&lt; tipo &gt; \_ UserSize** e **&lt; le funzioni &gt; \_ UserMarshal,** mentre il client richiede la **&lt; funzione &gt; \_ UserMarshal.**
 
 ## <a name="related-topics"></a>Argomenti correlati
 

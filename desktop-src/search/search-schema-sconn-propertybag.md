@@ -1,19 +1,19 @@
 ---
-description: <propertyBag>L'elemento obbligatorio specifica un set di una o più proprietà usate da questo provider di posizione.
+description: "&lt;L'elemento propertyBag &gt; obbligatorio specifica un set di una o più proprietà usate da questo provider di posizione."
 ms.assetid: 63f8f2e4-3b52-4d6e-8d3a-2e133aac0e86
 title: Elemento propertyBag (schema del connettore di ricerca)
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 50a8b888ba57fd71c892c61bc8b3f29a8ebc7f9e240162d0ecf6b3bbff41d2e1
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: f7c186e9502c48a1fc052acf28bc8bd8063085b8
+ms.sourcegitcommit: 61a4c522182aa1cacbf5669683d9570a3bf043b2
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "118226481"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "122883331"
 ---
 # <a name="propertybag-element-search-connector-schema"></a>Elemento propertyBag (schema del connettore di ricerca)
 
-<propertyBag>L'elemento obbligatorio specifica un set di una o più proprietà usate da questo provider di posizione.
+&lt;L'elemento propertyBag &gt; obbligatorio specifica un set di una o più proprietà usate da questo provider di posizione.
 
 ## <a name="syntax"></a>Sintassi
 

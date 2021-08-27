@@ -1,21 +1,21 @@
 ---
-description: Specifica il controllo da utilizzare nel menu del filtro di intestazione.
+description: Specifica il controllo da usare nel menu del filtro dell'intestazione.
 ms.assetid: a3117e16-20d0-4637-b726-9fa49516ad5c
 title: filterControl
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: e0c0de28eaa349b9a999ba39c1bad47aa01d43d9
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 7ac7424cf281c08f1d8de87686e95a38be3f4f3a
+ms.sourcegitcommit: c276a8912787b2cda74dcf54eb96df961bb1188b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "106310124"
+ms.lasthandoff: 08/20/2021
+ms.locfileid: "122627547"
 ---
 # <a name="filtercontrol"></a>filterControl
 
-Specifica il controllo da utilizzare nel menu del filtro di intestazione. Deve essere presente un solo elemento [filterControl]() per ogni elemento [displayInfo](./propdesc-schema-displayinfo.md) .
+Specifica il controllo da usare nel menu del filtro dell'intestazione. Deve essere presente un solo [elemento filterControl]() per ogni [elemento displayInfo.](./propdesc-schema-displayinfo.md)
 
-Se sono presenti più elementi, viene usato l'ultimo. Se non viene specificato alcun elemento [filterControl]() , le impostazioni predefinite degli attributi vengono applicate alla descrizione della proprietà.
+Se sono presenti più elementi, viene usato l'ultimo. Se non viene specificato alcun elemento [filterControl,]() le impostazioni predefinite dell'attributo vengono applicate alla descrizione della proprietà.
 
 ## <a name="syntax"></a>Sintassi
 
@@ -45,7 +45,7 @@ Se sono presenti più elementi, viene usato l'ultimo. Se non viene specificato a
 
 | Elemento padre                                   | Elementi figlio |
 |--------------------------------------------------|----------------|
-| [displayInfo](./propdesc-schema-displayinfo.md) | nessuno           |
+| [displayInfo](./propdesc-schema-displayinfo.md) | Nessuno           |
 
 
 
@@ -57,8 +57,8 @@ Se sono presenti più elementi, viene usato l'ultimo. Se non viene specificato a
 
 <table>
 <colgroup>
-<col style="width: 50%" />
-<col style="width: 50%" />
+<col  />
+<col  />
 </colgroup>
 <thead>
 <tr class="header">
@@ -69,7 +69,7 @@ Se sono presenti più elementi, viene usato l'ultimo. Se non viene specificato a
 <tbody>
 <tr class="odd">
 <td>controllo</td>
-<td>Pubblica. facoltativo. Il valore predefinito è &quot; default &quot; . I valori validi sono i seguenti. 
+<td>Pubblica. facoltativo. Il valore predefinito &quot; è &quot; Default. I valori validi sono i seguenti. 
 <table>
 <thead>
 <tr class="header">
@@ -80,15 +80,15 @@ Se sono presenti più elementi, viene usato l'ultimo. Se non viene specificato a
 <tbody>
 <tr class="odd">
 <td>Predefinito</td>
-<td>Valore predefinito. Usa il controllo predefinito, in base all' <typeInfo type=&quot;&quot;> attributo. Il tipo predefinito è &quot; DateTime &quot; e il controllo predefinito è &quot; Calendar &quot; . Qualsiasi altro tipo non produce alcun controllo filtro speciale.</td>
+<td>Valore predefinito. Usa il controllo predefinito, in base <typeInfo type=&quot;&quot;> all'attributo . Il tipo predefinito è &quot; DateTime &quot; e il controllo predefinito è &quot; &quot; Calendar. Qualsiasi altro tipo non comporta alcun controllo filtro speciale.</td>
 </tr>
 <tr class="even">
 <td>Calendario</td>
-<td>Usa il controllo Calendar.</td>
+<td>Usa il controllo calendario.</td>
 </tr>
 <tr class="odd">
 <td>Classificazione</td>
-<td>Usa il controllo della classificazione a 5 stelle.</td>
+<td>Usa il controllo classificazione a 5 stelle.</td>
 </tr>
 </tbody>
 </table>

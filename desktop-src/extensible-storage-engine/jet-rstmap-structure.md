@@ -15,12 +15,12 @@ api_type:
 - COM
 api_location: ''
 ROBOTS: INDEX,FOLLOW
-ms.openlocfilehash: 8e9952c040540e78c76d81babbb4c7b326fe92f8
-ms.sourcegitcommit: 9b5faa61c38b2d0c432b7f2dbee8c127b0e28a7e
+ms.openlocfilehash: e1f3813be8e1ea076a401ce5cdabef3e454b98c1
+ms.sourcegitcommit: 4665ebce0c106bdb52eef36e544280b496b6f50b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/19/2021
-ms.locfileid: "122465858"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "122983584"
 ---
 # <a name="jet_rstmap-structure"></a>JET_RSTMAP struttura
 
@@ -29,7 +29,7 @@ _**Si applica a:** Windows | Windows Server_
 
 ## <a name="jet_rstmap-structure"></a>JET_RSTMAP struttura
 
-La **JET_RSTMAP** consente il remapping dei percorsi dei file di database archiviati nei log delle transazioni durante il recupero, se usato dalle funzioni [JetInit](./jetinit-function.md) e [JetExternalRestore.](./jetexternalrestore-function.md) In questo modo i database possono essere spostati offline o quando vengono ripristinati dal backup.
+La **JET_RSTMAP** consente il nuovo mapping dei percorsi dei file di database archiviati nei log delle transazioni durante il recupero, se usato dalle funzioni [JetInit](./jetinit-function.md) e [JetExternalRestore.](./jetexternalrestore-function.md) In questo modo i database possono essere spostati offline o quando vengono ripristinati dal backup.
 
 ```cpp
     typedef struct {
@@ -51,7 +51,12 @@ Nuovo percorso assoluto per il database.
 ### <a name="requirements"></a>Requisiti
 
 
-| | | <p><strong>Client</strong></p> | <p>Richiede Windows Vista, Windows XP o Windows 2000 Professional.</p> | | <p><strong>Server</strong></p> | <p>Richiede Windows Server 2008, Windows Server 2003 o Windows 2000 Server.</p> | | <p><strong>Intestazione</strong></p> | <p>Dichiarato in Esent.h.</p> | | <p><strong>Unicode</strong></p> | <p>Implementato come <strong>JET_RSTMAP_W</strong> (Unicode) <strong>e JET_RSTMAP_A</strong> (ANSI).</p> | 
+| Requisito | Valore |
+|------------|----------|
+| <p><strong>Client</strong></p> | <p>Richiede Windows Vista, Windows XP o Windows 2000 Professional.</p> | 
+| <p><strong>Server</strong></p> | <p>Richiede Windows Server 2008, Windows Server 2003 o Windows 2000 Server.</p> | 
+| <p><strong>Intestazione</strong></p> | <p>Dichiarato in Esent.h.</p> | 
+| <p><strong>Unicode</strong></p> | <p>Implementato come <strong>JET_RSTMAP_W</strong> (Unicode) <strong>e JET_RSTMAP_A</strong> (ANSI).</p> | 
 
 
 

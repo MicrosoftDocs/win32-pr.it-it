@@ -1,7 +1,7 @@
 ---
-description: L'interfaccia ID3DXRenderToEnvMap viene utilizzata per generalizzare il processo di rendering nelle mappe dell'ambiente.
+description: L'interfaccia ID3DXRenderToEnvMap viene usata per generalizzare il processo di rendering nelle mappe dell'ambiente.
 ms.assetid: d72db260-5493-4381-9269-521ad333f0b2
-title: Interfaccia ID3DXRenderToEnvMap (D3dx9core. h)
+title: Interfaccia ID3DXRenderToEnvMap (D3dx9core.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -14,40 +14,40 @@ api_type:
 api_location:
 - d3dx9.lib
 - d3dx9.dll
-ms.openlocfilehash: c3fdfc37c206b6360fc0b7296bbf90c319652e28
-ms.sourcegitcommit: 14010c34b35fa268046c7683f021f86de08ddd0a
+ms.openlocfilehash: 94fc32654ca5bea81538a5dc56e7ca6b391287703a4a96dfccf62ceae497766a
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/15/2021
-ms.locfileid: "106323528"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120095771"
 ---
 # <a name="id3dxrendertoenvmap-interface"></a>Interfaccia ID3DXRenderToEnvMap
 
-L'interfaccia ID3DXRenderToEnvMap viene utilizzata per generalizzare il processo di rendering nelle mappe dell'ambiente.
+L'interfaccia ID3DXRenderToEnvMap viene usata per generalizzare il processo di rendering nelle mappe dell'ambiente.
 
 ## <a name="members"></a>Membri
 
-L'interfaccia **ID3DXRenderToEnvMap** eredita dall'interfaccia [**IUnknown**](/windows/win32/api/unknwn/nn-unknwn-iunknown) . **ID3DXRenderToEnvMap** dispone anche di questi tipi di membri:
+**L'interfaccia ID3DXRenderToEnvMap** eredita dall'interfaccia [**IUnknown.**](/windows/win32/api/unknwn/nn-unknwn-iunknown) **ID3DXRenderToEnvMap** include anche questi tipi di membri:
 
 -   [Metodi](#methods)
 
 ### <a name="methods"></a>Metodi
 
-L'interfaccia **ID3DXRenderToEnvMap** dispone di questi metodi.
+**L'interfaccia ID3DXRenderToEnvMap** include questi metodi.
 
 
 
 | Metodo                                                          | Descrizione                                                                                                                                                                                      |
 |:----------------------------------------------------------------|:-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| [**BeginCube**](id3dxrendertoenvmap--begincube.md)             | Avviare il rendering di una mappa dell'ambiente cubica.<br/>                                                                                                                                    |
-| [**BeginHemisphere**](id3dxrendertoenvmap--beginhemisphere.md) | Avviare il rendering di una mappa dell'ambiente emisferica.<br/>                                                                                                                              |
-| [**BeginParabolic**](id3dxrendertoenvmap--beginparabolic.md)   | Avviare il rendering di una mappa dell'ambiente parabolica.<br/>                                                                                                                                |
+| [**BeginCube**](id3dxrendertoenvmap--begincube.md)             | Avviare il rendering di una mappa di ambiente cubica.<br/>                                                                                                                                    |
+| [**BeginHemisphere**](id3dxrendertoenvmap--beginhemisphere.md) | Avviare il rendering di una mappa dell'ambiente emisferico.<br/>                                                                                                                              |
+| [**BeginParabolic**](id3dxrendertoenvmap--beginparabolic.md)   | Avviare il rendering di una mappa dell'ambiente parabolico.<br/>                                                                                                                                |
 | [**BeginSphere**](id3dxrendertoenvmap--beginsphere.md)         | Avviare il rendering di una mappa dell'ambiente sferica.<br/>                                                                                                                                |
 | [**Fine**](id3dxrendertoenvmap--end.md)                         | Ripristinare tutte le destinazioni di rendering e, se necessario, comporre tutti i visi sottoposti a rendering nella superficie della mappa dell'ambiente.<br/>                                                                           |
-| [**Viso**](id3dxrendertoenvmap--face.md)                       | Avviare il disegno di ogni faccia di una mappa dell'ambiente.<br/>                                                                                                                              |
-| [**Getdesc**](id3dxrendertoenvmap--getdesc.md)                 | Recupera la descrizione della superficie di rendering.<br/>                                                                                                                                      |
+| [**Viso**](id3dxrendertoenvmap--face.md)                       | Avviare il disegno di ogni viso di una mappa dell'ambiente.<br/>                                                                                                                              |
+| [**GetDesc**](id3dxrendertoenvmap--getdesc.md)                 | Recupera la descrizione della superficie di rendering.<br/>                                                                                                                                      |
 | [**GetDevice**](id3dxrendertoenvmap--getdevice.md)             | Recupera il dispositivo Direct3D associato alla mappa dell'ambiente.<br/>                                                                                                                    |
-| [**OnLostDevice**](id3dxrendertoenvmap--onlostdevice.md)       | Usare questo metodo per rilasciare tutti i riferimenti alle risorse di memoria video ed eliminare tutti stateblocks. Questo metodo deve essere chiamato ogni volta che un dispositivo viene perso o prima di reimpostare un dispositivo.<br/> |
+| [**OnLostDevice**](id3dxrendertoenvmap--onlostdevice.md)       | Usare questo metodo per rilasciare tutti i riferimenti alle risorse di memoria video ed eliminare tutti gli blocchi di stato. Questo metodo deve essere chiamato ogni volta che un dispositivo viene perso o prima di reimpostare un dispositivo.<br/> |
 | [**OnResetDevice**](id3dxrendertoenvmap--onresetdevice.md)     | Usare questo metodo per acquisire nuovamente le risorse e salvare lo stato iniziale.<br/>                                                                                                                       |
 
 
@@ -56,11 +56,11 @@ L'interfaccia **ID3DXRenderToEnvMap** dispone di questi metodi.
 
 ## <a name="remarks"></a>Commenti
 
-Una mappa dell'ambiente viene utilizzata per la geometria della scena della mappa di trama per offrire una scena più sofisticata senza utilizzare la geometria complessa. Questa interfaccia supporta la creazione di superfici per i tipi di geometria seguenti: Cube, Half Sphere o emisferal, parabolica o Sphere.
+Una mappa dell'ambiente viene usata per la geometria della scena della mappa di trama per fornire una scena più sofisticata senza usare una geometria complessa. Questa interfaccia supporta la creazione di superfici per i tipi di geometria seguenti: cubo, sfera semiferica o emisferica, parabolica o sfera.
 
-L'interfaccia **ID3DXRenderToEnvMap** viene ottenuta chiamando la funzione [**D3DXCreateRenderToEnvMap**](d3dxcreaterendertoenvmap.md) .
+**L'interfaccia ID3DXRenderToEnvMap** viene ottenuta chiamando la [**funzione D3DXCreateRenderToEnvMap.**](d3dxcreaterendertoenvmap.md)
 
-Il tipo LPD3DXRenderToEnvMap è definito come puntatore all'interfaccia **ID3DXRenderToEnvMap** .
+Il tipo LPD3DXRenderToEnvMap è definito come puntatore **all'interfaccia ID3DXRenderToEnvMap.**
 
 
 ```
@@ -76,8 +76,8 @@ typedef interface ID3DXRenderToEnvMap *LPD3DXRenderToEnvMap;
 
 | Requisito | Valore |
 |--------------------|----------------------------------------------------------------------------------------|
-| Intestazione<br/>  | <dl> <dt>D3dx9core. h</dt> </dl> |
-| Libreria<br/> | <dl> <dt>D3dx9. lib</dt> </dl>   |
+| Intestazione<br/>  | <dl> <dt>D3dx9core.h</dt> </dl> |
+| Libreria<br/> | <dl> <dt>D3dx9.lib</dt> </dl>   |
 
 
 

@@ -1,5 +1,5 @@
 ---
-description: 'Altre informazioni su: JET_BKLOGTIME Structure'
+description: 'Altre informazioni su: JET_BKLOGTIME struttura'
 title: JET_BKLOGTIME struttura
 TOCTitle: JET_BKLOGTIME Structure
 ms:assetid: 31460079-7c5b-4145-837d-b112ba0117d6
@@ -15,12 +15,12 @@ api_type:
 - COM
 api_location: ''
 ROBOTS: INDEX,FOLLOW
-ms.openlocfilehash: b34740d582e341cce3b2fd0b28203b7346a4de1d94a8586289be8ab252247943
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 2d6f8e3f77d905eb601441ad8ab3ca88bb08f59d
+ms.sourcegitcommit: 9b5faa61c38b2d0c432b7f2dbee8c127b0e28a7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "118487723"
+ms.lasthandoff: 08/19/2021
+ms.locfileid: "122478527"
 ---
 # <a name="jet_bklogtime-structure"></a>JET_BKLOGTIME struttura
 
@@ -60,7 +60,7 @@ La **JET_BKLOGTIME** contiene gli elementi di data e ora di un evento. È un'est
 
 ### <a name="members"></a>Membri
 
-**bSecondi**
+**bSeconds**
 
 Ora dell'evento in secondi. Può essere da 0 (zero) a 60. 0 (zero) viene usato quando la **struttura JET_BKLOGTIME** è "null".
 
@@ -80,9 +80,9 @@ Giorno del mese dell'evento. Può essere da 0 (zero) a 31. 0 (zero) viene usato 
 
 Mese dell'anno dell'evento. Può essere da 0 (zero) a 12. 0 (zero) viene usato quando la **struttura JET_BKLOGTIME** è "null".
 
-**bAnno**
+**bYear**
 
-Anno (offset di 1900) dell'evento. Per ottenere l'anno effettivo, aggiungere 1900 a questo valore. 0 (zero) viene usato quando la **struttura JET_BKLOGTIME** è "null".
+Anno (offset per 1900) dell'evento. Per ottenere l'anno effettivo, aggiungere 1900 a questo valore. 0 (zero) viene usato quando la **struttura JET_BKLOGTIME** è "null".
 
 **bFiller1**
 
@@ -104,28 +104,12 @@ Questo campo deve essere ignorato.
 
 Se questo evento è un backup, questo flag contiene uno dei valori possibili seguenti:
 
-<table>
-<colgroup>
-<col style="width: 50%" />
-<col style="width: 50%" />
-</colgroup>
-<thead>
-<tr class="header">
-<th><p>Nome</p></th>
-<th><p>Valore</p></th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td><p>backup in streaming</p></td>
-<td><p>0 (zero)</p></td>
-</tr>
-<tr class="even">
-<td><p>backup snapshot</p></td>
-<td><p>1</p></td>
-</tr>
-</tbody>
-</table>
+
+| <p>Nome</p> | <p>valore</p> | 
+|-------------|--------------|
+| <p>backup in streaming</p> | <p>0 (zero)</p> | 
+| <p>backup di snapshot</p> | <p>1</p> | 
+
 
 
 **fReserved**
@@ -138,26 +122,9 @@ Questa struttura viene utilizzata durante il debug.
 
 ### <a name="requirements"></a>Requisiti
 
-<table>
-<colgroup>
-<col style="width: 50%" />
-<col style="width: 50%" />
-</colgroup>
-<tbody>
-<tr class="odd">
-<td><p><strong>Client</strong></p></td>
-<td><p>Richiede Windows Vista.</p></td>
-</tr>
-<tr class="even">
-<td><p><strong>Server</strong></p></td>
-<td><p>Richiede Windows Server 2008.</p></td>
-</tr>
-<tr class="odd">
-<td><p><strong>Intestazione</strong></p></td>
-<td><p>Dichiarato in Esent.h.</p></td>
-</tr>
-</tbody>
-</table>
+
+| | | <p><strong>Client</strong></p> | <p>Richiede Windows Vista.</p> | | <p><strong>Server</strong></p> | <p>Richiede Windows Server 2008.</p> | | <p><strong>Intestazione</strong></p> | <p>Dichiarato in Esent.h.</p> | 
+
 
 
 ### <a name="see-also"></a>Vedere anche

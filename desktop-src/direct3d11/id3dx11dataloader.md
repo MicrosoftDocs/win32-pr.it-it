@@ -1,10 +1,10 @@
 ---
-title: Interfaccia ID3DX11DataLoader (D3DX11core. h)
-description: Nota la libreria dell'utilità D3DX (D3DX 9, D3DX 10 e D3DX 11) è deprecata per Windows 8 e non è supportata per le app di Windows Store. Oggetto caricamento dati utilizzato dall'interfaccia ID3DX11ThreadPump per il caricamento asincrono dei dati.
+title: Interfaccia ID3DX11DataLoader (D3DX11core.h)
+description: Nota La libreria di utilità D3DX (D3DX 9, D3DX 10 e D3DX 11) è deprecata per Windows 8 e non è supportata per le app di Windows Store. Oggetto di caricamento dati usato dall'interfaccia ID3DX11ThreadPump per il caricamento asincrono dei dati.
 ms.assetid: 878929ea-0228-4650-9ca0-f83d60d9f915
 keywords:
 - Interfaccia ID3DX11DataLoader Direct3D 11
-- Interfaccia ID3DX11DataLoader Direct3D 11, descritta
+- INTERFACCIA ID3DX11DataLoader Direct3D 11 , descritta
 topic_type:
 - apiref
 api_name:
@@ -16,12 +16,12 @@ api_type:
 - COM
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 68236451bf2ba6f491d17541f7d4ca627f5063c5
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: 92b688fcbeff21edf23f6a3be1b39be5a9cf0000
+ms.sourcegitcommit: 9b5faa61c38b2d0c432b7f2dbee8c127b0e28a7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "104119178"
+ms.lasthandoff: 08/19/2021
+ms.locfileid: "122471647"
 ---
 # <a name="id3dx11dataloader-interface"></a>Interfaccia ID3DX11DataLoader
 
@@ -30,58 +30,27 @@ ms.locfileid: "104119178"
 
  
 
-Oggetto caricamento dati utilizzato dall' [**interfaccia ID3DX11ThreadPump**](id3dx11threadpump.md) per il caricamento asincrono dei dati.
+Oggetto di caricamento dati usato [**dall'interfaccia ID3DX11ThreadPump**](id3dx11threadpump.md) per il caricamento asincrono dei dati.
 
 ## <a name="members"></a>Membri
 
-L'interfaccia **ID3DX11DataLoader** eredita dall'interfaccia [**IUnknown**](/windows/desktop/api/unknwn/nn-unknwn-iunknown) . **ID3DX11DataLoader** dispone anche di questi tipi di membri:
+**L'interfaccia ID3DX11DataLoader** eredita dall'interfaccia [**IUnknown.**](/windows/desktop/api/unknwn/nn-unknwn-iunknown) **ID3DX11DataLoader** include anche questi tipi di membri:
 
 -   [Metodi](#methods)
 
 ### <a name="methods"></a>Metodi
 
-L'interfaccia **ID3DX11DataLoader** dispone di questi metodi.
+**L'interfaccia ID3DX11DataLoader** include questi metodi.
 
 
 
-<table>
-<colgroup>
-<col style="width: 50%" />
-<col style="width: 50%" />
-</colgroup>
-<thead>
-<tr class="header">
-<th style="text-align: left;">Metodo</th>
-<th style="text-align: left;">Descrizione</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td style="text-align: left;"><a href="id3dx11dataloader-decompress.md"><strong>Decomprimere</strong></a></td>
-<td style="text-align: left;"><blockquote>
-[!Note]<br />
-La libreria di utilità D3DX (D3DX 9, D3DX 10 e D3DX 11) è deprecata per Windows 8 e non è supportata per le app di Windows Store.
-</blockquote>
-<br/> Decomprime i dati codificati.<br/></td>
-</tr>
-<tr class="even">
-<td style="text-align: left;"><a href="id3dx11dataloader-destroy.md"><strong>Eliminare</strong></a></td>
-<td style="text-align: left;"><blockquote>
-[!Note]<br />
-La libreria di utilità D3DX (D3DX 9, D3DX 10 e D3DX 11) è deprecata per Windows 8 e non è supportata per le app di Windows Store.
-</blockquote>
-<br/> Elimina il caricatore dopo il completamento di un elemento di lavoro.<br/></td>
-</tr>
-<tr class="odd">
-<td style="text-align: left;"><a href="id3dx11dataloader-load.md"><strong>Caricamento</strong></a></td>
-<td style="text-align: left;"><blockquote>
-[!Note]<br />
-La libreria di utilità D3DX (D3DX 9, D3DX 10 e D3DX 11) è deprecata per Windows 8 e non è supportata per le app di Windows Store.
-</blockquote>
-<br/> Carica i dati da un disco.<br/></td>
-</tr>
-</tbody>
-</table>
+
+| Metodo | Descrizione | 
+|--------|-------------|
+| <a href="id3dx11dataloader-decompress.md"><strong>Decomprimere</strong></a> | <blockquote>[!Note]<br />La libreria di utilità D3DX (D3DX 9, D3DX 10 e D3DX 11) è deprecata per Windows 8 e non è supportata per le app di Windows Store.</blockquote><br /> Decomprime i dati codificati.<br /> | 
+| <a href="id3dx11dataloader-destroy.md"><strong>Distruggere</strong></a> | <blockquote>[!Note]<br />La libreria di utilità D3DX (D3DX 9, D3DX 10 e D3DX 11) è deprecata per Windows 8 e non è supportata per le app di Windows Store.</blockquote><br /> Elimina il caricatore dopo il completamento di un elemento di lavoro.<br /> | 
+| <a href="id3dx11dataloader-load.md"><strong>Caricamento</strong></a> | <blockquote>[!Note]<br />La libreria di utilità D3DX (D3DX 9, D3DX 10 e D3DX 11) è deprecata per Windows 8 e non è supportata per le app di Windows Store.</blockquote><br /> Carica i dati da un disco.<br /> | 
+
 
 
 
@@ -89,18 +58,18 @@ La libreria di utilità D3DX (D3DX 9, D3DX 10 e D3DX 11) è deprecata per Window
 
 ## <a name="remarks"></a>Commenti
 
-Questo oggetto può essere ereditato e i relativi membri ridefiniti. Questa operazione consente di personalizzare l'API per il caricamento e la decompressione dei formati di file personalizzati.
+Questo oggetto può essere ereditato e i relativi membri possono essere ridefiniti. In questo modo è possibile personalizzare l'API per il caricamento e la decompressione dei formati di file personalizzati.
 
 ## <a name="requirements"></a>Requisiti
 
 
 
-| Requisito | Valore |
+| Requisito | valore |
 |-------------------------------------|-----------------------------------------------------------------------------------------|
-| Client minimo supportato<br/> | \[Solo app desktop di Windows 7\]<br/>                                              |
-| Server minimo supportato<br/> | Solo app desktop Windows Server 2008 R2 \[\]<br/>                                 |
-| Intestazione<br/>                   | <dl> <dt>D3DX11core. h</dt> </dl> |
-| Libreria<br/>                  | <dl> <dt>D3DX11. lib</dt> </dl>   |
+| Client minimo supportato<br/> | Windows 7 \[ app desktop\]<br/>                                              |
+| Server minimo supportato<br/> | Windows Solo app desktop server 2008 R2 \[\]<br/>                                 |
+| Intestazione<br/>                   | <dl> <dt>D3DX11core.h</dt> </dl> |
+| Libreria<br/>                  | <dl> <dt>D3DX11.lib</dt> </dl>   |
 
 
 

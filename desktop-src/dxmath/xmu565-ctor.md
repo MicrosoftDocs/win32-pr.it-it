@@ -11,12 +11,12 @@ api_name: ''
 api_type:
 - NA
 api_location: ''
-ms.openlocfilehash: fd5d1e9360a311d1431d851c0c2697644afcc16c
-ms.sourcegitcommit: adba238660d8a5f4fe98fc6f5d105d56aac3a400
+ms.openlocfilehash: 4651a3aac6933c9f6fde5c7d52626a5e671064c6
+ms.sourcegitcommit: 9b5faa61c38b2d0c432b7f2dbee8c127b0e28a7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/09/2021
-ms.locfileid: "111826447"
+ms.lasthandoff: 08/19/2021
+ms.locfileid: "122478727"
 ---
 # <a name="xmu565-constructors"></a>Costruttori XMU565
 
@@ -33,74 +33,16 @@ Costruisce istanze della [**struttura XMU565.**](/windows/win32/api/directxpacke
 
 
 
-<table>
-<colgroup>
-<col style="width: 50%" />
-<col style="width: 50%" />
-</colgroup>
-<thead>
-<tr class="header">
-<th style="text-align: left;">Costruttore</th>
-<th style="text-align: left;">Descrizione</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td style="text-align: left;"><a href="/windows/desktop/api/directxpackedvector/nf-directxpackedvector-xmu565-xmu565(uint16_t)"><strong>XMU565 (uint16_t)</strong></a></td>
-<td style="text-align: left;">Inizializza una nuova istanza di da <code>XMU565</code> una variabile contenente i dati del componente in un formato di tipo <code>uint16_t</code> packed. <br/> Questo costruttore inizializza una nuova istanza di <a href="/windows/desktop/api/directxpackedvector/ns-directxpackedvector-xmu565"><strong>XMU565</strong></a> da una variabile contenente i <code>uint16_t</code> dati dei componenti in un formato di pacchetto. <br/>
-<blockquote>
-[!Note]<br />
-Questo costruttore è disponibile solo in C++.
-</blockquote>
-<br/></td>
-</tr>
-<tr class="even">
-<td style="text-align: left;"><a href="/windows/desktop/api/directxpackedvector/nf-directxpackedvector-xmu565-xmu565(constfloat)"><strong>XMU565 (const float*)</strong></a></td>
-<td style="text-align: left;">Inizializza una nuova istanza di da <code>XMU565</code> una matrice di tre <code>float</code> elementi. <br/> Questo costruttore inizializza una nuova istanza di <a href="/windows/desktop/api/directxpackedvector/ns-directxpackedvector-xmu565"><strong>XMU565</strong></a> da una matrice di tre <code>float</code> elementi. <br/>
-<blockquote>
-[!Note]<br />
-Questo costruttore è disponibile solo in C++.
-</blockquote>
-<br/></td>
-</tr>
-<tr class="odd">
-<td style="text-align: left;"><a href="/windows/desktop/api/directxpackedvector/nf-directxpackedvector-xmu565-xmu565(constuint8_t)"><strong>XMU565 (const uint8_t*)</strong></a></td>
-<td style="text-align: left;">Inizializza una nuova istanza di da <code>XMU565</code> una matrice di tre <code>uint8_t</code> elementi. <br/> Questo costruttore inizializza una nuova istanza di <a href="/windows/desktop/api/directxpackedvector/ns-directxpackedvector-xmu565"><strong>XMU565</strong></a> da una matrice di tre <code>uint8_t</code> elementi. <br/>
-<blockquote>
-[!Note]<br />
-Questo costruttore è disponibile solo in C++.
-</blockquote>
-<br/></td>
-</tr>
-<tr class="even">
-<td style="text-align: left;"><a href="/windows/desktop/api/directxpackedvector/nf-directxpackedvector-xmu565-xmu565(float_float_float)"><strong>XMU565 (float,float,float)</strong></a></td>
-<td style="text-align: left;">Inizializza una nuova istanza di <code>XMU565</code> da tre <code>float</code> argomenti. <br/> Questo costruttore inizializza una nuova istanza di <a href="/windows/desktop/api/directxpackedvector/ns-directxpackedvector-xmu565"><strong>XMU565</strong></a> da tre <code>float</code> argomenti. <br/>
-<blockquote>
-[!Note]<br />
-Questo costruttore è disponibile solo in C++.
-</blockquote>
-<br/></td>
-</tr>
-<tr class="odd">
-<td style="text-align: left;"><a href="/windows/desktop/api/directxpackedvector/nf-directxpackedvector-xmu565-xmu565(float_float_float)"><strong>XMU565 (uint8_t,uint8_t,uint8_t)</strong></a></td>
-<td style="text-align: left;">Inizializza una nuova istanza di <code>XMU565</code> da tre <code>uint8_t</code> argomenti. <br/> Questo costruttore inizializza una nuova istanza di <a href="/windows/desktop/api/directxpackedvector/ns-directxpackedvector-xmu565"><strong>XMU565</strong></a> da tre <code>uint8_t</code> argomenti. <br/>
-<blockquote>
-[!Note]<br />
-Questo costruttore è disponibile solo in C++.
-</blockquote>
-<br/></td>
-</tr>
-<tr class="even">
-<td style="text-align: left;"><a href="/windows/desktop/api/directxpackedvector/nf-directxpackedvector-xmu565-xmu565(constfloat)"><strong>XMU565 ()</strong></a></td>
-<td style="text-align: left;">Costruttore predefinito per <code>XMU565</code><br/> Costruttore predefinito per <a href="/windows/desktop/api/directxpackedvector/ns-directxpackedvector-xmu565"> <strong>XMU565</strong></a><br/>
-<blockquote>
-[!Note]<br />
-Questa opzione è disponibile solo per lo sviluppo basato su C++.
-</blockquote>
-<br/></td>
-</tr>
-</tbody>
-</table>
+
+| Costruttore | Descrizione | 
+|-------------|-------------|
+| <a href="/windows/desktop/api/directxpackedvector/nf-directxpackedvector-xmu565-xmu565(uint16_t)"><strong>XMU565 (uint16_t)</strong></a> | Inizializza una nuova istanza di da <code>XMU565</code> una variabile contenente i dati del componente in un formato di tipo <code>uint16_t</code> packed. <br /> Questo costruttore inizializza una nuova istanza di <a href="/windows/desktop/api/directxpackedvector/ns-directxpackedvector-xmu565"><strong>XMU565</strong></a> da una variabile contenente i <code>uint16_t</code> dati dei componenti in un formato di pacchetto. <br /><blockquote>[!Note]<br />Questo costruttore è disponibile solo in C++.</blockquote><br /> | 
+| <a href="/windows/desktop/api/directxpackedvector/nf-directxpackedvector-xmu565-xmu565(constfloat)"><strong>XMU565 (const float*)</strong></a> | Inizializza una nuova istanza di da <code>XMU565</code> una matrice di tre <code>float</code> elementi. <br /> Questo costruttore inizializza una nuova istanza di <a href="/windows/desktop/api/directxpackedvector/ns-directxpackedvector-xmu565"><strong>XMU565</strong></a> da una matrice di tre <code>float</code> elementi. <br /><blockquote>[!Note]<br />Questo costruttore è disponibile solo in C++.</blockquote><br /> | 
+| <a href="/windows/desktop/api/directxpackedvector/nf-directxpackedvector-xmu565-xmu565(constuint8_t)"><strong>XMU565 (const uint8_t*)</strong></a> | Inizializza una nuova istanza di da <code>XMU565</code> una matrice di tre <code>uint8_t</code> elementi. <br /> Questo costruttore inizializza una nuova istanza di <a href="/windows/desktop/api/directxpackedvector/ns-directxpackedvector-xmu565"><strong>XMU565</strong></a> da una matrice di tre <code>uint8_t</code> elementi. <br /><blockquote>[!Note]<br />Questo costruttore è disponibile solo in C++.</blockquote><br /> | 
+| <a href="/windows/desktop/api/directxpackedvector/nf-directxpackedvector-xmu565-xmu565(float_float_float)"><strong>XMU565 (float,float,float)</strong></a> | Inizializza una nuova istanza di <code>XMU565</code> da tre <code>float</code> argomenti. <br /> Questo costruttore inizializza una nuova istanza di <a href="/windows/desktop/api/directxpackedvector/ns-directxpackedvector-xmu565"><strong>XMU565</strong></a> da tre <code>float</code> argomenti. <br /><blockquote>[!Note]<br />Questo costruttore è disponibile solo in C++.</blockquote><br /> | 
+| <a href="/windows/desktop/api/directxpackedvector/nf-directxpackedvector-xmu565-xmu565(float_float_float)"><strong>XMU565 (uint8_t,uint8_t,uint8_t)</strong></a> | Inizializza una nuova istanza di <code>XMU565</code> da tre <code>uint8_t</code> argomenti. <br /> Questo costruttore inizializza una nuova istanza di <a href="/windows/desktop/api/directxpackedvector/ns-directxpackedvector-xmu565"><strong>XMU565</strong></a> da tre <code>uint8_t</code> argomenti. <br /><blockquote>[!Note]<br />Questo costruttore è disponibile solo in C++.</blockquote><br /> | 
+| <a href="/windows/desktop/api/directxpackedvector/nf-directxpackedvector-xmu565-xmu565(constfloat)"><strong>XMU565 ()</strong></a> | Costruttore predefinito per <code>XMU565</code><br /> Costruttore predefinito per <a href="/windows/desktop/api/directxpackedvector/ns-directxpackedvector-xmu565"> <strong>XMU565</strong></a><br /><blockquote>[!Note]<br />Questa opzione è disponibile solo per lo sviluppo basato su C++.</blockquote><br /> | 
+
 
 
 
