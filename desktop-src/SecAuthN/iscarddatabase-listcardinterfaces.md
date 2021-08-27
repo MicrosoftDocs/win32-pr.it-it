@@ -1,7 +1,7 @@
 ---
-description: Il metodo ListCardInterfaces recupera gli identificatori (GUID) di tutte le interfacce supportate per la smart card specificata.
+description: Il metodo ListCardInterfaces recupera gli identificatori (GUID) di tutte le interfacce supportate per il smart card.
 ms.assetid: c9dfd17e-f4a9-47d3-974e-66e78bc4b06a
-title: 'Metodo ISCardDatabase:: ListCardInterfaces (Scardmgr. h)'
+title: Metodo ISCardDatabase::ListCardInterfaces (Scardmgr.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -13,18 +13,18 @@ api_type:
 - COM
 api_location:
 - Scardssp.dll
-ms.openlocfilehash: d52324edd4a502388ac6064de07a6ab58a68074d
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: b97569f967c76c985eb05099a21ed10e90456563a871f3e5d9803c6a5875ebdd
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104225900"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119008109"
 ---
-# <a name="iscarddatabaselistcardinterfaces-method"></a>Metodo ISCardDatabase:: ListCardInterfaces
+# <a name="iscarddatabaselistcardinterfaces-method"></a>Metodo ISCardDatabase::ListCardInterfaces
 
-\[Il metodo **ListCardInterfaces** è disponibile per l'uso nei sistemi operativi specificati nella sezione requisiti. Non è disponibile per l'utilizzo in Windows Server 2003 con Service Pack 1 (SP1) e versioni successive, Windows Vista, Windows Server 2008 e versioni successive del sistema operativo. I [moduli Smart Card](/previous-versions/windows/desktop/secsmart/smart-card-modules) offrono funzionalità simili.\]
+\[Il **metodo ListCardInterfaces** è disponibile per l'uso nei sistemi operativi specificati nella sezione Requisiti. Non è disponibile per l'uso in Windows Server 2003 con Service Pack 1 (SP1) e versioni successive, Windows Vista, Windows Server 2008 e versioni successive del sistema operativo. I [moduli smart card offrono](/previous-versions/windows/desktop/secsmart/smart-card-modules) funzionalità simili.\]
 
-Il metodo **ListCardInterfaces** recupera gli identificatori (Guid) di tutte le interfacce supportate per la [*Smart Card*](../secgloss/s-gly.md)specificata.
+Il **metodo ListCardInterfaces** recupera gli identificatori (GUID) di tutte le interfacce supportate per l'oggetto smart card [*.*](../secgloss/s-gly.md)
 
 ## <a name="syntax"></a>Sintassi
 
@@ -42,17 +42,17 @@ HRESULT ListCardInterfaces(
 
 <dl> <dt>
 
-*bstrCardName* \[ in\]
+*bstrCardName* \[ Pollici\]
 </dt> <dd>
 
-Nome della smart card.
+Nome dell'smart card.
 
 </dd> <dt>
 
-*ppInterfaceGuids* \[ out\]
+*ppInterfaceGuids* \[ Cambio\]
 </dt> <dd>
 
-Puntatore ai GUID dell'interfaccia in caso di esito positivo; **Null** se l'operazione non è riuscita.
+Puntatore ai GUID dell'interfaccia in caso di esito positivo. **NULL se** l'operazione non è riuscita.
 
 </dd> </dl>
 
@@ -64,10 +64,10 @@ Il metodo restituisce uno dei valori possibili seguenti.
 
 | Codice restituito                                                                                   | Descrizione                                                |
 |-----------------------------------------------------------------------------------------------|------------------------------------------------------------|
-| <dl> <dt>**\_OK**</dt> </dl>          | Operazione completata correttamente.<br/>               |
+| <dl> <dt>**S \_ OK**</dt> </dl>          | Operazione completata correttamente.<br/>               |
 | <dl> <dt>**E \_ INVALIDARG**</dt> </dl>  | Parametro non valido.<br/>                              |
-| <dl> <dt>**\_puntatore E**</dt> </dl>     | Un puntatore errato è stato passato in *ppInterfaceGuids*.<br/> |
-| <dl> <dt>**E \_ OutOfMemory**</dt> </dl> | Memoria insufficiente.<br/>                                  |
+| <dl> <dt>**PUNTATORE E \_**</dt> </dl>     | È stato passato un puntatore non valido in *ppInterfaceGuids*.<br/> |
+| <dl> <dt>**E \_ OUTOFMEMORY**</dt> </dl> | Memoria insufficiente.<br/>                                  |
 
 
 
@@ -75,17 +75,17 @@ Il metodo restituisce uno dei valori possibili seguenti.
 
 ## <a name="remarks"></a>Commenti
 
-Per recuperare il [*provider di servizi primario*](../secgloss/p-gly.md) della smart card, chiamare [**GetProviderCardId**](iscarddatabase-getprovidercardid.md).
+Per recuperare il [*provider di servizi primario*](../secgloss/p-gly.md) del smart card, chiamare [**GetProviderCardId**](iscarddatabase-getprovidercardid.md).
 
-Per recuperare tutte le [*Smart Card*](../secgloss/s-gly.md), i [*Reader*](../secgloss/r-gly.md)e i [*gruppi di Reader*](../secgloss/r-gly.md) noti, chiamare rispettivamente [**ListCards**](iscarddatabase-listcards.md), [**ListReaders**](iscarddatabase-listreaders.md)e [**ListReaderGroups**](iscarddatabase-listreadergroups.md) .
+Per recuperare tutti i [](../secgloss/r-gly.md)gruppi [](../secgloss/r-gly.md) noti di [*smart card,*](../secgloss/s-gly.md)lettori e lettori, chiamare [**rispettivamente ListCards**](iscarddatabase-listcards.md), [**ListReaders**](iscarddatabase-listreaders.md)e [**ListReaderGroups.**](iscarddatabase-listreadergroups.md)
 
 Per un elenco di tutti i metodi forniti da questa interfaccia, vedere [**ISCardDatabase**](iscarddatabase.md).
 
-Oltre ai codici di errore COM elencati sopra, questa interfaccia può restituire un codice di errore della smart card se è stata chiamata una funzione Smart Card per completare la richiesta. Per ulteriori informazioni, vedere [valori restituiti della smart card](authentication-return-values.md).
+Oltre ai codici di errore COM elencati in precedenza, questa interfaccia può restituire un smart card di errore se è stata chiamata una funzione smart card per completare la richiesta. Per altre informazioni, vedere [Smart Card Return Values](authentication-return-values.md).
 
 ## <a name="examples"></a>Esempio
 
-Nell'esempio seguente viene illustrato il recupero degli identificatori delle interfacce supportate per la smart card specificata.
+Nell'esempio seguente viene illustrato come recuperare gli identificatori delle interfacce supportate per il smart card.
 
 
 ```C++
@@ -120,14 +120,14 @@ else
 
 | Requisito | Valore |
 |-------------------------------------|-----------------------------------------------------------------------------------------|
-| Client minimo supportato<br/> | \[Solo app desktop Windows XP\]<br/>                                             |
-| Server minimo supportato<br/> | \[Solo app desktop Windows Server 2003\]<br/>                                    |
+| Client minimo supportato<br/> | Windows Solo \[ app desktop XP\]<br/>                                             |
+| Server minimo supportato<br/> | Windows Solo app desktop server 2003 \[\]<br/>                                    |
 | Fine del supporto client<br/>    | Windows XP<br/>                                                                   |
 | Fine del supporto server<br/>    | Windows Server 2003<br/>                                                          |
-| Intestazione<br/>                   | <dl> <dt>Scardmgr. h</dt> </dl>   |
-| Libreria dei tipi<br/>             | <dl> <dt>Scardmgr. tlb</dt> </dl> |
+| Intestazione<br/>                   | <dl> <dt>Scardmgr.h</dt> </dl>   |
+| Libreria dei tipi<br/>             | <dl> <dt>Scardmgr.tlb</dt> </dl> |
 | DLL<br/>                      | <dl> <dt>Scardssp.dll</dt> </dl> |
-| IID<br/>                      | IID \_ ISCardDatabase è definito come 1461AAC8-6810-11D0-918F-00AA00C18068<br/>       |
+| IID<br/>                      | IID ISCardDatabase è definito come \_ 1461AAC8-6810-11D0-918F-00AA00C18068<br/>       |
 
 
 
@@ -147,7 +147,7 @@ else
 [**ListReaderGroups**](iscarddatabase-listreadergroups.md)
 </dt> <dt>
 
-[**ListReaders**](iscarddatabase-listreaders.md)
+[**ListReader**](iscarddatabase-listreaders.md)
 </dt> </dl>
 
  

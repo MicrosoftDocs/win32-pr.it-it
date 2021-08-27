@@ -4,12 +4,12 @@ ms.assetid: 0da23c09-1d6c-4d5e-8ceb-058bc0f89577
 title: System.ApplicationDefinedProperties
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 86852d674e8e5fc721b0240d1ff06910247c4442
-ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
+ms.openlocfilehash: b141ba6cb4ac0dbba577b71ed75fc32a9cb6fd498a27a352d0c2dfe1a58e28e0
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/28/2021
-ms.locfileid: "108087369"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118970920"
 ---
 # <a name="systemapplicationdefinedproperties"></a>System.ApplicationDefinedProperties
 
@@ -37,7 +37,7 @@ I valori PKEY sono definiti in Propkey.h.
 
 <dl> <dt>
 
-[proprietàDescrizione](./propdesc-schema-propertydescription.md)
+[propertyDescription](./propdesc-schema-propertydescription.md)
 </dt> <dt>
 
 [searchInfo](./propdesc-schema-searchinfo.md)
@@ -67,7 +67,7 @@ I valori PKEY sono definiti in Propkey.h.
 [enumeratedList](./propdesc-schema-enumeratedlist.md)
 </dt> <dt>
 
-[DrawControl](./propdesc-schema-drawcontrol.md)
+[drawControl](./propdesc-schema-drawcontrol.md)
 </dt> <dt>
 
 [editControl](./propdesc-schema-editcontrol.md)

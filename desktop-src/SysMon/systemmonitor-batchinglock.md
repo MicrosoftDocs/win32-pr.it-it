@@ -1,11 +1,11 @@
 ---
-title: Metodo chingLock SystemMonitor.Bat
-description: Blocca il monitor di sistema per impedirne il campionamento dei dati del contatore o del file di log appena aggiunto.
+title: SystemMonitor.Batmetodo chingLock
+description: Blocca Monitoraggio di sistema per impedire il campionamento dei dati dei contatori dal nuovo contatore o file di log aggiunto.
 ms.assetid: 6b9d683a-7a97-44a4-9eb6-6caaafe2abdd
 keywords:
 - Metodo BatchingLock SysMon
-- Metodo BatchingLock SysMon, oggetto SystemMonitor
-- Oggetto SystemMonitor SysMon, metodo BatchingLock
+- Metodo BatchingLock SysMon , oggetto SystemMonitor
+- Oggetto SystemMonitor SysMon , metodo BatchingLock
 topic_type:
 - apiref
 api_name:
@@ -16,16 +16,16 @@ api_type:
 - COM
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: b858a6920b039d911ae571d81744eb99dea4ef4f
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: 8f028a3cb985a530b6e034ceabe430d2dda7b12e337af40d6510a3a8d77bd0d5
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "106301791"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118882937"
 ---
-# <a name="systemmonitorbatchinglock-method"></a>Metodo chingLock SystemMonitor.Bat
+# <a name="systemmonitorbatchinglock-method"></a>SystemMonitor.Batmetodo chingLock
 
-Blocca il monitor di sistema per impedirne il campionamento dei dati del contatore o del file di log appena aggiunto.
+Blocca Monitoraggio di sistema per impedire il campionamento dei dati dei contatori dal nuovo contatore o file di log aggiunto.
 
 ## <a name="syntax"></a>Sintassi
 
@@ -43,17 +43,17 @@ SystemMonitor.BatchingLock( _
 
 <dl> <dt>
 
-*blocca* \[ in\]
+*blocco* \[ Pollici\]
 </dt> <dd>
 
-Impostare su true per bloccare il monitor di sistema in modo da impedire il campionamento dei dati del contatore dal nuovo contatore o dal file di log appena aggiunto. Impostare su false per rimuovere il blocco.
+Impostare su True per bloccare Monitoraggio di sistema per impedire il campionamento dei dati dei contatori dal file di log o del contatore appena aggiunto. Impostare su False per rimuovere il blocco.
 
 </dd> <dt>
 
-*batchReason* \[ in\]
+*batchReason* \[ Pollici\]
 </dt> <dd>
 
-Identifica l'origine dei dati che si stanno bloccando. Utilizzare lo stesso valore motivo per bloccare e sbloccare la risorsa. Per i valori possibili, vedere l'enumerazione [**SysmonBatchReason**](/windows/win32/api/isysmon/ne-isysmon-sysmonbatchreason) .
+Identifica l'origine dei dati che si sta bloccando. Usare lo stesso valore di motivo quando si blocca e si sblocca la risorsa. Per i valori possibili, vedere [**l'enumerazione SysmonBatchReason.**](/windows/win32/api/isysmon/ne-isysmon-sysmonbatchreason)
 
 </dd> </dl>
 
@@ -63,9 +63,9 @@ Questo metodo non restituisce valori.
 
 ## <a name="remarks"></a>Commenti
 
-È necessario chiamare questo metodo due volte, una volta per bloccare l'origine (true) e una volta per sbloccare l'origine (false).
+È necessario chiamare questo metodo due volte, una volta per bloccare l'origine (True) e una volta per sbloccare l'origine (False).
 
-È possibile inserire un solo blocco. Se ad esempio si imposta il blocco per SysmonBatchAddFiles e quindi si effettua una seconda chiamata usando SysmonBatchAddCounters come motivo, la seconda chiamata rimuove il blocco inserito dalla prima chiamata.
+È possibile inserire un solo blocco. Ad esempio, se si imposta il blocco per SysmonBatchAddFiles e quindi si effettua una seconda chiamata usando SysmonBatchAddCounters come motivo, la seconda chiamata rimuove il blocco inserito dalla prima chiamata.
 
 ## <a name="requirements"></a>Requisiti
 
@@ -73,9 +73,9 @@ Questo metodo non restituisce valori.
 
 | Requisito | Valore |
 |-------------------------------------|---------------------------------------------------------------------------------------|
-| Client minimo supportato<br/> | \[Solo app desktop di Windows Vista\]<br/>                                        |
-| Server minimo supportato<br/> | \[Solo app desktop Windows Server 2008\]<br/>                                  |
-| DLL<br/>                      | <dl> <dt>Sysmon. ocx</dt> </dl> |
+| Client minimo supportato<br/> | Windows Solo \[ app desktop di Vista\]<br/>                                        |
+| Server minimo supportato<br/> | Windows Solo app desktop server 2008 \[\]<br/>                                  |
+| DLL<br/>                      | <dl> <dt>Sysmon.ocx</dt> </dl> |
 
 
 

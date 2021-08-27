@@ -1,7 +1,7 @@
 ---
-description: Il metodo CallWorker segnala al thread la richiesta.
+description: Il metodo CallWorker segnala al thread una richiesta.
 ms.assetid: 51431688-bf55-4778-afc0-91b6ab336aa3
-title: Metodo CAMThread. CallWorker (Wxutil. h)
+title: Metodo CAMThread.CallWorker (Wxutil.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -16,16 +16,16 @@ api_location:
 - Strmbase.dll
 - Strmbasd.lib
 - Strmbasd.dll
-ms.openlocfilehash: 7410fbee4ece729d1579f525731bddaceded1153
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: f7ffee6a55191f8f41d7121f3801a4a6392f9869803ded40ed891817146828f1
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "106331461"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118955400"
 ---
-# <a name="camthreadcallworker-method"></a>CAMThread. CallWorker, metodo
+# <a name="camthreadcallworker-method"></a>Metodo CAMThread.CallWorker
 
-Il `CallWorker` metodo segnala al thread la richiesta.
+Il `CallWorker` metodo segnala al thread una richiesta.
 
 ## <a name="syntax"></a>Sintassi
 
@@ -45,7 +45,7 @@ DWORD CallWorker(
 *dwParam* 
 </dt> <dd>
 
-Parametro della richiesta. La classe derivata definisce il significato del parametro.
+Parametro della richiesta. La classe derivata definisce il significato del parametro .
 
 </dd> </dl>
 
@@ -55,11 +55,11 @@ Restituisce un valore definito dalla classe derivata.
 
 ## <a name="remarks"></a>Commenti
 
-I metodi [**CAMThread:: GetRequest**](camthread-getrequest.md) e [**CAMThread:: CheckRequest**](camthread-checkrequest.md) recuperano il valore del parametro *dwParam* . Il metodo GetRequest si blocca fino a quando non `CallWorker` viene chiamato il metodo.
+I [**metodi CAMThread::GetRequest**](camthread-getrequest.md) e [**CAMThread::CheckRequest**](camthread-checkrequest.md) recuperano il valore del *parametro dwParam.* Il metodo GetRequest si blocca fino a quando `CallWorker` non viene chiamato .
 
-Questo metodo si blocca fino a quando non viene chiamato il metodo [**CAMThread:: Reply**](camthread-reply.md) . Il valore restituito è il parametro assegnato a Reply.
+Questo metodo si blocca fino a quando non viene chiamato il metodo [**CAMThread::Reply.**](camthread-reply.md) Il valore restituito è il parametro assegnato a Reply.
 
-Questo metodo include il blocco [**CAMThread:: m \_ AccessLock**](camthread-m-accesslock.md) per serializzare le richieste. Pertanto, chiamare questo metodo dal thread stesso o da qualsiasi funzione membro eseguita nel contesto del thread.
+Questo metodo contiene il [**blocco \_ ACCESSLock CAMThread::m**](camthread-m-accesslock.md) per serializzare le richieste. Pertanto, chiamare questo metodo dal thread stesso o da qualsiasi funzione membro eseguita nel contesto del thread.
 
 ## <a name="requirements"></a>Requisiti
 
@@ -67,8 +67,8 @@ Questo metodo include il blocco [**CAMThread:: m \_ AccessLock**](camthread-m-ac
 
 | Requisito | Valore |
 |--------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Intestazione<br/>  | <dl> <dt>Wxutil. h (include Streams. h)</dt> </dl>                                                                                    |
-| Libreria<br/> | <dl> <dt>Strmbase. lib (compilazioni finali); </dt> <dt>Strmbasd. lib (build di debug)</dt> </dl> |
+| Intestazione<br/>  | <dl> <dt>Wxutil.h (includere Flussi.h)</dt> </dl>                                                                                    |
+| Libreria<br/> | <dl> <dt>Strmbase.lib (build di vendita al dettaglio); </dt> <dt>Strmbasd.lib (build di debug)</dt> </dl> |
 
 
 

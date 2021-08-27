@@ -1,9 +1,9 @@
 ---
-title: Messaggio TB_GETBITMAP (COMmctrl. h)
+title: TB_GETBITMAP messaggio (Commctrl.h)
 description: Recupera l'indice della bitmap associata a un pulsante in una barra degli strumenti.
 ms.assetid: 64878cca-7d71-48ad-b2ed-d2bdc3067592
 keywords:
-- Controlli di Windows Message TB_GETBITMAP
+- TB_GETBITMAP dei controlli Windows messaggio
 topic_type:
 - apiref
 api_name:
@@ -14,14 +14,14 @@ api_type:
 - HeaderDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 771073b67b1421a5d9bda9d162bc234400c85885
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: ebb976d206de0cdbd0234763f92ac0417cc974355a3371d04476d7969e1f763c
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "103965002"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118957910"
 ---
-# <a name="tb_getbitmap-message"></a>\_Messaggio GETBITMAP TB
+# <a name="tb_getbitmap-message"></a>MESSAGGIO \_ GETBITMAP DA TB
 
 Recupera l'indice della bitmap associata a un pulsante in una barra degli strumenti.
 
@@ -32,7 +32,7 @@ Recupera l'indice della bitmap associata a un pulsante in una barra degli strume
 *wParam* 
 </dt> <dd>
 
-Identificatore di comando del pulsante di cui deve essere recuperato l'indice bitmap.
+Identificatore del comando del pulsante di cui recuperare l'indice bitmap.
 
 </dd> <dt>
 
@@ -41,7 +41,7 @@ Identificatore di comando del pulsante di cui deve essere recuperato l'indice bi
 
 ## <a name="return-value"></a>Valore restituito
 
-Restituisce l'indice della bitmap, se ha esito positivo, oppure zero in caso contrario.
+Restituisce l'indice della bitmap in caso di esito positivo oppure zero in caso contrario.
 
 ## <a name="requirements"></a>Requisiti
 
@@ -49,9 +49,9 @@ Restituisce l'indice della bitmap, se ha esito positivo, oppure zero in caso con
 
 | Requisito | Valore |
 |-------------------------------------|---------------------------------------------------------------------------------------|
-| Client minimo supportato<br/> | \[Solo app desktop di Windows Vista\]<br/>                                        |
-| Server minimo supportato<br/> | \[Solo app desktop Windows Server 2003\]<br/>                                  |
-| Intestazione<br/>                   | <dl> <dt>Commctrl. h</dt> </dl> |
+| Client minimo supportato<br/> | Windows Solo \[ app desktop Vista\]<br/>                                        |
+| Server minimo supportato<br/> | Windows Solo app desktop di Server 2003 \[\]<br/>                                  |
+| Intestazione<br/>                   | <dl> <dt>Commctrl.h</dt> </dl> |
 
 
 

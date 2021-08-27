@@ -1,9 +1,9 @@
 ---
-title: 'Metodi di raccolta TextureCubeArray:: TextureCubeArray'
-description: "Restituisce i componenti rossi di quattro valori Texel che verrebbero usati in un'operazione di filtraggio bilineare. | Metodi di raccolta TextureCubeArray:: TextureCubeArray"
+title: Metodi Gather di TextureCubeArray::TextureCubeArray
+description: Restituisce i componenti rossi di quattro valori texel che verrebbero usati in un'operazione di filtro bi-lineare. | Metodi Gather di TextureCubeArray::TextureCubeArray
 ms.assetid: B459E455-EF22-46A7-ADFE-322ED808F83E
 keywords:
-- Metodi gather HLSL
+- Raccogliere i metodi HLSL
 topic_type:
 - apiref
 api_type:
@@ -12,18 +12,18 @@ ms.topic: reference
 ms.date: 05/31/2018
 api_name: ''
 api_location: ''
-ms.openlocfilehash: 59a7dfd9170b93e1c253e7558cea7d8fb9b2f8c3
-ms.sourcegitcommit: 92e74c99f8f4d097676959d0c317f533c2400a80
+ms.openlocfilehash: 8700205ed1cb7c0356a93d6766efd8d9e3cc2fe63838b25bc5665ea194b2e1ff
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/09/2021
-ms.locfileid: "103886195"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118786468"
 ---
-# <a name="texturecubearraygather-methods"></a>Metodi TextureCubeArray:: Gather
+# <a name="texturecubearraygather-methods"></a>Metodi TextureCubeArray::Gather
 
-Restituisce i componenti rossi di quattro valori Texel che verrebbero usati in un'operazione di filtraggio bilineare.
+Restituisce i componenti rossi di quattro valori texel che verrebbero usati in un'operazione di filtro bi-lineare.
 
-Per ulteriori informazioni sulla descrizione dell'istruzione DXBC sottostante, vedere la documentazione su [gather4](./gather4--sm5---asm-.md) .
+Per altre informazioni sull'istruzione DXBC sottostante, vedere la documentazione di [gather4.](./gather4--sm5---asm-.md)
 
 ### <a name="overload-list"></a>Elenco di overload
 
@@ -31,8 +31,8 @@ Per ulteriori informazioni sulla descrizione dell'istruzione DXBC sottostante, v
 
 | Metodo                                                          | Descrizione                                                                                                                                |
 |:----------------------------------------------------------------|:-------------------------------------------------------------------------------------------------------------------------------------------|
-| [**Raccolta (S, float)**](dx-graphics-hlsl-to-gather.md)           | Restituisce i componenti rossi di quattro valori Texel (solo componente rosso) che verrebbero usati in un'operazione di filtro bi-lineare. <br/>           |
-| [**Raccolta (S, float, uint)**](tcubearray-gather-s-float-uint-.md) | Restituisce i componenti rossi di quattro valori Texel che verrebbero usati in un'operazione di filtraggio bilineare, insieme allo stato del mapping dei riquadri.<br/> |
+| [**Gather(S,float)**](dx-graphics-hlsl-to-gather.md)           | Restituisce i componenti rossi di quattro valori texel (solo componente rosso) che verrebbero usati in un'operazione di filtro bi-lineare. <br/>           |
+| [**Gather(S,float,uint)**](tcubearray-gather-s-float-uint-.md) | Restituisce i componenti rossi di quattro valori texel che verrebbero usati in un'operazione di filtro bi-lineare, insieme allo stato del mapping dei riquadri.<br/> |
 
 
 

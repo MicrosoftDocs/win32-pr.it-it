@@ -1,21 +1,21 @@
 ---
-description: Di seguito è riportato un esempio di programma di configurazione del servizio.
+description: Di seguito è riportato un programma di configurazione del servizio di esempio.
 ms.assetid: effb469a-020e-4c70-aad6-12a91bd36f68
 title: SvcConfig.cpp
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 69baf6e2c0757f394f09338c65af488db9efd664
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 1f400849dcd28073e17faacd2bc33cea06ed1a5837a72fb2beecd52714911cc0
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "106316088"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118888413"
 ---
 # <a name="svcconfigcpp"></a>SvcConfig.cpp
 
-Di seguito è riportato un esempio di [programma di configurazione del servizio](service-configuration-programs.md).
+Di seguito è riportato un programma di [configurazione del servizio di esempio.](service-configuration-programs.md)
 
-Quando si compila l'esempio, assicurarsi di eseguire il collegamento a Kernel32. lib e Advapi32. lib.
+Quando si compila l'esempio, assicurarsi di collegarsi a Kernel32.lib e Advapi32.lib.
 
 
 ```C++

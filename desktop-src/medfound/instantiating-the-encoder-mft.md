@@ -4,47 +4,47 @@ ms.assetid: 50b71c00-b7cf-4c38-8114-bb36b358fda5
 title: Creazione di un'istanza di un codificatore MFT
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 5344c19a3a00c659efbbfd88d42176b876528380
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 40337bbef63cf243777978d1672a60de5ebfba8874b3cce0271ca06ccf4ab38b
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "104232536"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118974270"
 ---
 # <a name="instantiating-an-encoder-mft"></a>Creazione di un'istanza di un codificatore MFT
 
-In Microsoft Media Foundation i codificatori vengono implementati come [trasformazioni di Media Foundation](media-foundation-transforms.md) (MFTS). Prima di creare un codificatore, è necessario innanzitutto trovare il codificatore più adatto alle proprie esigenze.
+In Microsoft Media Foundation, i codificatori vengono implementati [come](media-foundation-transforms.md) trasformazioni Media Foundation (MFT). Prima di creare un codificatore, è necessario trovare il codificatore più adatto alle proprie esigenze.
 
--   Codec audio Windows Media
+-   Windows Codec audio multimediali
 
-    Categoria: **\_ \_ \_ codificatore audio della categoria MFT**
+    Categoria: **CODIFICATORE \_ \_ AUDIO \_ CATEGORIA MFT**
 
-    Tipo principale: MFMediaType \_ audio
+    Tipo principale: MFMediaType \_ Audio
 
-    Sottotipo: MFAudioFormat \_ WMAudioV9, MFAudioFormat \_ WMAudioV8, MFAudioFormat \_ WMAudio \_ Lossless, MFAudioFormat \_ WMASPDIF
+    SubType: MFAudioFormat \_ WMAudioV9, MFAudioFormat \_ WMAudioV8, MFAudioFormat \_ WMAudio \_ Lossless, MFAudioFormat \_ WMASPDIF
 
--   Codec video di Windows Media
+-   Windows Codec video multimediali
 
-    Categoria: **\_ \_ \_ codificatore video della categoria MFT**
+    Categoria: **CODIFICATORE \_ \_ VIDEO \_ CATEGORIA MFT**
 
-    Tipo principale: video di MFMediaType \_
+    Tipo principale: video \_ MFMediaType
 
-    Sottotipo: MFVideoFormat \_ WVC1, MFVideoFormat \_ WMV3, MFVideoFormat WMV2 \_ , MFVideoFormat \_ WMV1
+    SubType: MFVideoFormat \_ WVC1, MFVideoFormat \_ WMV3, MFVideoFormat \_ WMV2, MFVideoFormat \_ WMV1
 
-Media Foundation offre diverse funzioni che l'applicazione può chiamare per enumerare i vari codificatori disponibili nel sistema. I codificatori sono registrati come oggetti COM e la voce del registro di sistema segue il formato standard per le class factory COM. Il registro di sistema gestisce i CLSID per i codificatori, classificati in base al formato multimediale (audio o video). Gli identificatori di classe dei codificatori Windows Media sono definiti come costanti nel file di intestazione wmcodecdsp. h. In Media Foundation, i codificatori possono essere registrati tramite chiamate a [**MFTRegisterLocal**](/windows/desktop/api/mfapi/nf-mfapi-mftregisterlocal) o [**MFTRegisterLocalByCLSID**](/windows/desktop/api/mfapi/nf-mfapi-mftregisterlocalbyclsid) specificando pullula, i tipi di input supportati e i tipi di output supportati. Una volta completata la registrazione tramite queste funzioni, i MFTs vengono considerati dalle funzioni di enumerazione Media Foundation.
+Media Foundation fornisce diverse funzioni che l'applicazione può chiamare per enumerare i vari codificatori disponibili nel sistema. I codificatori vengono registrati come oggetti COM e la voce del Registro di sistema segue il formato standard per le class factory COM. Il Registro di sistema gestisce i CLSID per i codificatori, classificati in base al formato multimediale (audio o video). Gli identificatori di classe Windows codificatori multimediali sono definiti come costanti nel file di intestazione wmcodecdsp.h. In Media Foundation, i codificatori possono essere registrati tramite chiamate a [**MFTRegisterLocal**](/windows/desktop/api/mfapi/nf-mfapi-mftregisterlocal) o [**MFTRegisterLocalByCLSID**](/windows/desktop/api/mfapi/nf-mfapi-mftregisterlocalbyclsid) specificando la catergory, i tipi di input supportati e i tipi di output supportati. Al completamento della registrazione tramite queste funzioni, i MFT vengono considerati dalle Media Foundation di enumerazione.
 
 Per creare un'istanza di un codificatore MFT, un'applicazione ha le opzioni seguenti.
 
--   Creare direttamente il codificatore MFT e ricevere un puntatore all'interfaccia [**IMFTransform**](/windows/desktop/api/mftransform/nn-mftransform-imftransform) . Per ulteriori informazioni, vedere [creazione di un codificatore tramite CoCreateInstance](using-an-encoder-s-imftransform--interface.md).
--   Creare un'istanza dell'oggetto Activation per il codificatore MFT e ricevere un puntatore all'interfaccia [**IMFActivate**](/windows/desktop/api/mfobjects/nn-mfobjects-imfactivate) . Per ulteriori informazioni, vedere [utilizzo degli oggetti di attivazione di un codificatore](using-an-encoder-s-activation-objects.md).
+-   Creare direttamente il codificatore MFT e ricevere un puntatore [**all'interfaccia IMFTransform.**](/windows/desktop/api/mftransform/nn-mftransform-imftransform) Per altre informazioni, vedere [Creazione di un codificatore tramite CoCreateInstance.](using-an-encoder-s-imftransform--interface.md)
+-   Creare un'istanza dell'oggetto di attivazione per il codificatore MFT e ricevere un puntatore [**all'interfaccia IMFActivate.**](/windows/desktop/api/mfobjects/nn-mfobjects-imfactivate) Per altre informazioni, vedere [Uso degli oggetti di attivazione di un codificatore.](using-an-encoder-s-activation-objects.md)
 
-Se l'applicazione usa [componenti ASF di livello pipeline](pipeline-layer-asf-components.md) per codificare un file in formato ASF, è necessario inserire il codificatore MFT nella pipeline come nodo di trasformazione. Durante la creazione del nodo Transform nella topologia di codifica, è possibile impostare il tipo di oggetto come puntatore all'interfaccia [**IMFTransform**](/windows/desktop/api/mftransform/nn-mftransform-imftransform) o all'oggetto [**IMFActivate**](/windows/desktop/api/mfobjects/nn-mfobjects-imfactivate) . Media Foundation fornisce oggetti attivazione per codificatori Windows Media, in modo che possano essere impostati comodamente come nodo di trasformazione nella topologia di codifica. Quando la topologia viene risolta, la sessione multimediale usa l'oggetto attivazione per creare un'istanza del codificatore MFT.
+Se l'applicazione usa [componenti ASF](pipeline-layer-asf-components.md) del livello pipeline per codificare un file in formato ASF, è necessario inserire il codificatore MFT nella pipeline come nodo di trasformazione. Durante la creazione del nodo di trasformazione nella topologia di codifica, è possibile impostare il tipo di oggetto come puntatore [**all'interfaccia IMFTransform**](/windows/desktop/api/mftransform/nn-mftransform-imftransform) o [**all'oggetto IMFActivate.**](/windows/desktop/api/mfobjects/nn-mfobjects-imfactivate) Media Foundation fornisce oggetti di attivazione per Windows codificatori multimediali in modo che possano essere facilmente impostati come nodo di trasformazione nella topologia di codifica. Quando la topologia viene risolta, la sessione multimediale usa l'oggetto di attivazione per creare un'istanza del codificatore MFT.
 
 ## <a name="related-topics"></a>Argomenti correlati
 
 <dl> <dt>
 
-[Codificatori Windows Media](windows-media-encoders.md)
+[Windows Codificatori multimediali](windows-media-encoders.md)
 </dt> </dl>
 
  

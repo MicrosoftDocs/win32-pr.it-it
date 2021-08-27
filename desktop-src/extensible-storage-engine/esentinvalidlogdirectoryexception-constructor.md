@@ -1,5 +1,5 @@
 ---
-description: Altre informazioni sul costruttore EsentInvalidLogDirectoryException
+description: 'Altre informazioni su: Costruttore EsentInvalidLogDirectoryException'
 title: Costruttore EsentInvalidLogDirectoryException
 TOCTitle: 'EsentInvalidLogDirectoryException constructor '
 ms:assetid: M:Microsoft.Isam.Esent.Interop.EsentInvalidLogDirectoryException.#ctor

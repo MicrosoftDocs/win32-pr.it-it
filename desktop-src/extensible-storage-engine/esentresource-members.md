@@ -1,5 +1,5 @@
 ---
-description: 'Altre informazioni su: membri di EsentResource'
+description: 'Altre informazioni su: Membri di EsentResource'
 title: Membri di EsentResource
 TOCTitle: EsentResource members
 ms:assetid: AllMembers.T:Microsoft.Isam.Esent.Interop.EsentResource
@@ -7,21 +7,21 @@ ms:mtpsurl: https://msdn.microsoft.com/library/microsoft.isam.esent.interop.esen
 ms:contentKeyID: 55107302
 ms.date: 07/30/2014
 ms.topic: article
-ms.openlocfilehash: af0f0a4baa76cc702c6f4048e42e9ec78463e5a2
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: f8ad16ef0fa5a6aac0521a27a1b2817cbd2c3cfd0e25d378265dd1a6032223ef
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104568069"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118982031"
 ---
 # <a name="esentresource-members"></a>Membri di EsentResource
 
-Includi membri protetti  
+Includere membri protetti  
 Includi membri ereditati  
 
-Si tratta della classe di base per tutti gli oggetti risorsa esent. Le sottoclassi di questa classe possono allocare e rilasciare le risorse non gestite.
+Si tratta della classe di base per tutti gli oggetti risorsa di esent. Le sottoclassi di questa classe possono allocare e rilasciare risorse non gestite.
 
-Il tipo [EsentResource](./esentresource-class.md) espone i membri seguenti.
+Il [tipo EsentResource](./esentresource-class.md) espone i membri seguenti.
 
 ## <a name="constructors"></a>Costruttori
 
@@ -81,42 +81,42 @@ Inizio
 <tr class="odd">
 <td><img src="../images/dn292116.protmethod(exchg.10).gif" title="Metodo protetto" alt="Protected method" /></td>
 <td><a href="dn350541(v=exchg.10).md">CheckObjectIsNotDisposed</a></td>
-<td>Genera un'eccezione se l'oggetto è stato eliminato.</td>
+<td>Genera un'eccezione se questo oggetto è stato eliminato.</td>
 </tr>
 <tr class="even">
 <td><img src="../images/dn292146.pubmethod(exchg.10).gif" title="Metodo pubblico" alt="Public method" /></td>
-<td><a href="dn350553(v=exchg.10).md">Dispose ()</a></td>
-<td>Eliminare questo oggetto, rilasciando la risorsa ESENT sottostante.</td>
+<td><a href="dn350553(v=exchg.10).md">Dispose()</a></td>
+<td>Eliminare questo oggetto, rilasciando la risorsa Esent sottostante.</td>
 </tr>
 <tr class="odd">
 <td><img src="../images/dn292116.protmethod(exchg.10).gif" title="Metodo protetto" alt="Protected method" /></td>
-<td><a href="dn350543(v=exchg.10).md">Dispose (valore booleano)</a></td>
+<td><a href="dn350543(v=exchg.10).md">Dispose(Boolean)</a></td>
 <td>Chiamato da Dispose e dal finalizzatore.</td>
 </tr>
 <tr class="even">
 <td><img src="../images/dn292146.pubmethod(exchg.10).gif" title="Metodo pubblico" alt="Public method" /></td>
 <td><a href="/dotnet/api/system.object.equals#System_Object_Equals_System_Object_">È uguale a</a></td>
-<td>Ereditato da <a href="/dotnet/api/system.object">Object</a>.</td>
+<td>Ereditato <a href="/dotnet/api/system.object">dall'oggetto</a>.</td>
 </tr>
 <tr class="odd">
 <td><img src="../images/dn292116.protmethod(exchg.10).gif" title="Metodo protetto" alt="Protected method" /></td>
-<td><a href="dn350552(v=exchg.10).md">Finalize</a></td>
-<td>Finalizza un'istanza della classe EsentResource. Esegue l'override di <a href="/dotnet/api/system.object.finalize#System_Object_Finalize">Object. Finalize ()</a>.</td>
+<td><a href="dn350552(v=exchg.10).md">Finalizza</a></td>
+<td>Finalizza un'istanza della classe EsentResource. Esegue l'override <a href="/dotnet/api/system.object.finalize#System_Object_Finalize">di Object.Finalize().</a></td>
 </tr>
 <tr class="even">
 <td><img src="../images/dn292146.pubmethod(exchg.10).gif" title="Metodo pubblico" alt="Public method" /></td>
 <td><a href="/dotnet/api/system.object.gethashcode#System_Object_GetHashCode">GetHashCode</a></td>
-<td>Ereditato da <a href="/dotnet/api/system.object">Object</a>.</td>
+<td>Ereditato <a href="/dotnet/api/system.object">dall'oggetto</a>.</td>
 </tr>
 <tr class="odd">
 <td><img src="../images/dn292146.pubmethod(exchg.10).gif" title="Metodo pubblico" alt="Public method" /></td>
 <td><a href="/dotnet/api/system.object.gettype#System_Object_GetType">GetType</a></td>
-<td>Ereditato da <a href="/dotnet/api/system.object">Object</a>.</td>
+<td>Ereditato <a href="/dotnet/api/system.object">dall'oggetto</a>.</td>
 </tr>
 <tr class="even">
 <td><img src="../images/dn292116.protmethod(exchg.10).gif" title="Metodo protetto" alt="Protected method" /></td>
 <td><a href="/dotnet/api/system.object.memberwiseclone#System_Object_MemberwiseClone">MemberwiseClone</a></td>
-<td>Ereditato da <a href="/dotnet/api/system.object">Object</a>.</td>
+<td>Ereditato <a href="/dotnet/api/system.object">dall'oggetto</a>.</td>
 </tr>
 <tr class="odd">
 <td><img src="../images/dn292116.protmethod(exchg.10).gif" title="Metodo protetto" alt="Protected method" /></td>
@@ -131,12 +131,12 @@ Inizio
 <tr class="odd">
 <td><img src="../images/dn292116.protmethod(exchg.10).gif" title="Metodo protetto" alt="Protected method" /></td>
 <td><a href="dn350577(v=exchg.10).md">ResourceWasReleased</a></td>
-<td>Chiamato da una sottoclasse quando una risorsa viene liberata.</td>
+<td>Chiamato da una sottoclasse quando viene liberata una risorsa.</td>
 </tr>
 <tr class="even">
 <td><img src="../images/dn292146.pubmethod(exchg.10).gif" title="Metodo pubblico" alt="Public method" /></td>
 <td><a href="/dotnet/api/system.object.tostring#System_Object_ToString">ToString</a></td>
-<td>Ereditato da <a href="/dotnet/api/system.object">Object</a>.</td>
+<td>Ereditato <a href="/dotnet/api/system.object">dall'oggetto</a>.</td>
 </tr>
 </tbody>
 </table>
@@ -150,4 +150,4 @@ Inizio
 
 [Classe EsentResource](./esentresource-class.md)
 
-[Spazio dei nomi Microsoft. ISAM. esent. Interop](./microsoft.isam.esent.interop-namespace.md)
+[Spazio dei nomi Microsoft.Isam.Esent.Interop](./microsoft.isam.esent.interop-namespace.md)

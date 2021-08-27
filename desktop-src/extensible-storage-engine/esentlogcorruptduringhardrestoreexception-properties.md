@@ -1,5 +1,5 @@
 ---
-description: 'Altre informazioni su: Proprietà di EsentLogCorruptDuringHardRestoreException'
+description: Altre informazioni sulle proprietà di EsentLogCorruptDuringHardRestoreException
 title: Proprietà di EsentLogCorruptDuringHardRestoreException
 TOCTitle: EsentLogCorruptDuringHardRestoreException properties
 ms:assetid: Properties.T:Microsoft.Isam.Esent.Interop.EsentLogCorruptDuringHardRestoreException
@@ -17,7 +17,7 @@ ms.locfileid: "118776986"
 # <a name="esentlogcorruptduringhardrestoreexception-properties"></a>Proprietà di EsentLogCorruptDuringHardRestoreException
 
 Includere membri protetti  
-Includi membri ereditati  
+Includere i membri ereditati  
 
 Il [tipo EsentLogCorruptDuringHardRestoreException](./esentlogcorruptduringhardrestoreexception-class.md) espone i membri seguenti.
 

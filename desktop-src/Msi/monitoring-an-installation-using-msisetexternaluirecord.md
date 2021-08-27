@@ -1,21 +1,21 @@
 ---
-description: Gli autori di pacchetti possono monitorare i messaggi di Windows Installer interni tramite la creazione di un'applicazione eseguibile che contiene un gestore di callback basato su record per ricevere i messaggi e le funzionalità per avviare un'installazione.
+description: Gli autori di pacchetti possono monitorare i messaggi interni Windows Installer tramite la creazione di un'applicazione eseguibile che contiene sia un gestore di callback basato su record per ricevere i messaggi che le funzionalità per avviare un'installazione.
 ms.assetid: 5d9e51dd-7918-491f-aea9-01a6e0317c57
-title: Monitoraggio di un'installazione mediante MsiSetExternalUIRecord
+title: Monitoraggio di un'installazione tramite MsiSetExternalUIRecord
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: ce3fd0caf3d24eed49ff8a373b6f4d38037f840f
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 2fc74001a52d7eb1ef2cfbc3a052eaad1a2d72e127571f6f51d5afac992343a9
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "106319012"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118945086"
 ---
-# <a name="monitoring-an-installation-using-msisetexternaluirecord"></a>Monitoraggio di un'installazione mediante MsiSetExternalUIRecord
+# <a name="monitoring-an-installation-using-msisetexternaluirecord"></a>Monitoraggio di un'installazione tramite MsiSetExternalUIRecord
 
-Gli autori di pacchetti possono monitorare i messaggi di Windows Installer interni tramite la creazione di un'applicazione eseguibile che contiene un gestore di callback basato su record per ricevere i messaggi e le funzionalità per avviare un'installazione.
+Gli autori di pacchetti possono monitorare i messaggi interni Windows Installer tramite la creazione di un'applicazione eseguibile che contiene sia un gestore di callback basato su record per ricevere i messaggi che le funzionalità per avviare un'installazione.
 
-Il gestore basato su record nell'esempio seguente è conforme al prototipo [**di \_ \_ record del gestore INSTALLUI**](/windows/win32/api/msi/nc-msi-installui_handler_record) e un puntatore a questo gestore di callback viene passato alla funzione [**MsiSetExternalUIRecord**](/windows/desktop/api/Msi/nf-msi-msisetexternaluirecord) .
+Il gestore basato su record nell'esempio seguente è conforme al prototipo [**INSTALLUI \_ HANDLER \_ RECORD**](/windows/win32/api/msi/nc-msi-installui_handler_record) e un puntatore a questo gestore di callback viene passato alla [**funzione MsiSetExternalUIRecord.**](/windows/desktop/api/Msi/nf-msi-msisetexternaluirecord)
 
 
 ```C++

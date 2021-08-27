@@ -1,6 +1,6 @@
 ---
-title: 'Metodi di RWByteAddressBuffer:: RWByteAddressBuffer Load3'
-description: Ottiene tre valori da un RWByteAddressBuffer.
+title: Metodi di Load3 RWByteAddressBuffer::RWByteAddressBuffer
+description: Ottiene tre valori da RWByteAddressBuffer.
 ms.assetid: BB36AF51-1C2A-4DA2-A257-4BE837E8587A
 keywords:
 - Metodi Load3 HLSL
@@ -12,16 +12,16 @@ ms.topic: reference
 ms.date: 05/31/2018
 api_name: ''
 api_location: ''
-ms.openlocfilehash: 8c93b55bc2093232b3128c78f05b8bc9cb5611f1
-ms.sourcegitcommit: 476861130ea63675206d1f06e517059705b930ed
+ms.openlocfilehash: f1723b428994a62040939b390fcbd0f205cc38b40c3e0341d3a7bc6966ba6d99
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/06/2019
-ms.locfileid: "104516414"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118791213"
 ---
-# <a name="rwbyteaddressbufferload3-methods"></a>Metodi RWByteAddressBuffer:: Load3
+# <a name="rwbyteaddressbufferload3-methods"></a>Metodi RWByteAddressBuffer::Load3
 
-Ottiene tre valori da un [**RWByteAddressBuffer**](sm5-object-rwbyteaddressbuffer.md).
+Ottiene tre valori da [**RWByteAddressBuffer.**](sm5-object-rwbyteaddressbuffer.md)
 
 ### <a name="overload-list"></a>Elenco di overload
 
@@ -29,8 +29,8 @@ Ottiene tre valori da un [**RWByteAddressBuffer**](sm5-object-rwbyteaddressbuffe
 
 | Metodo                                                            | Descrizione                                                       |
 |:------------------------------------------------------------------|:------------------------------------------------------------------|
-| [**Load3 (uint)**](sm5-object-rwbyteaddressbuffer-load3.md)       | Ottiene tre valori.<br/>                                     |
-| [**Load3 (uint, uint)**](rwbyteaddressbuffer-load3-float-uint-.md) | Ottiene tre valori e restituisce lo stato dell'operazione.<br/> |
+| [**Load3(uint)**](sm5-object-rwbyteaddressbuffer-load3.md)       | Ottiene tre valori.<br/>                                     |
+| [**Load3(uint,uint)**](rwbyteaddressbuffer-load3-float-uint-.md) | Ottiene tre valori e restituisce lo stato dell'operazione.<br/> |
 
 
 

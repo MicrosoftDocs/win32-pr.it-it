@@ -1,30 +1,30 @@
 ---
-description: In questo argomento viene illustrato come creare ed eliminare i timer e come utilizzare un timer per intercettare l'input del mouse a intervalli specificati.
+description: Questo argomento illustra come creare ed eliminare i timer e come usare un timer per intercettare l'input del mouse a intervalli specificati.
 ms.assetid: eee54078-759f-4fd4-9cf4-10a8bde888b7
-title: Utilizzo di timer
+title: Uso dei timer
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 440c6479aca9d5394c2ad9ade87dd77b1474f31f
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 7922be60012ae81ce1971afe6f2300f54689f7a6cc8d7f088df2fb126e834ab5
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "104348181"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119028309"
 ---
-# <a name="using-timers"></a>Utilizzo di timer
+# <a name="using-timers"></a>Uso dei timer
 
-In questo argomento viene illustrato come creare ed eliminare i timer e come utilizzare un timer per intercettare l'input del mouse a intervalli specificati.
+Questo argomento illustra come creare ed eliminare i timer e come usare un timer per intercettare l'input del mouse a intervalli specificati.
 
 In questo argomento sono contenute le sezioni seguenti.
 
 -   [Creazione di un timer](#creating-a-timer)
 -   [Eliminazione di un timer](#destroying-a-timer)
--   [Utilizzo di funzioni timer per intercettare l'input del mouse](#using-timer-functions-to-trap-mouse-input)
+-   [Uso di funzioni timer per intercettare l'input del mouse](#using-timer-functions-to-trap-mouse-input)
 -   [Argomenti correlati](#related-topics)
 
 ## <a name="creating-a-timer"></a>Creazione di un timer
 
-Nell'esempio seguente viene utilizzata la funzione [**setimer**](/windows/win32/api/winuser/nf-winuser-settimer) per creare due timer. Il primo timer viene impostato ogni 10 secondi, il secondo per ogni cinque minuti.
+Nell'esempio seguente viene [**utilizzata la funzione SetTimer**](/windows/win32/api/winuser/nf-winuser-settimer) per creare due timer. Il primo timer viene impostato ogni 10 secondi, il secondo ogni cinque minuti.
 
 
 ```
@@ -43,7 +43,7 @@ SetTimer(hwnd,             // handle to main window
 
 
 
-Per elaborare i messaggi del [**\_ timer WM**](wm-timer.md) generati da questi timer, aggiungere un'istruzione case del **\_ timer WM** alla routine della finestra per il parametro *HWND* .
+Per elaborare [**i messaggi \_ WM TIMER**](wm-timer.md) generati da questi timer, aggiungere un'istruzione case WM **\_ TIMER** alla routine della finestra per il *parametro hwnd.*
 
 
 ```
@@ -65,7 +65,7 @@ case WM_TIMER:
 
 
 
-Un'applicazione può anche creare un timer i cui messaggi del [**\_ timer WM**](wm-timer.md) non vengono elaborati dalla routine della finestra principale ma da una funzione di callback definita dall'applicazione, come nell'esempio di codice seguente, che crea un timer e usa la funzione di callback **MyTimerProc** per elaborare i messaggi del **\_ timer WM** del timer.
+Un'applicazione può anche creare un timer i cui messaggi [**WM \_ TIMER**](wm-timer.md) vengono elaborati non dalla routine della finestra principale, ma da una funzione di callback definita dall'applicazione, come nell'esempio di codice seguente, che crea un timer e usa la funzione di callback **MyTimerProc** per elaborare i messaggi **WM \_ TIMER** del timer.
 
 
 ```
@@ -79,9 +79,9 @@ SetTimer(hwnd,                // handle to main window
 
 
 
-La convenzione di chiamata per **MyTimerProc** deve essere basata sulla funzione di callback [*TimerProc*](/windows/win32/api/winuser/nc-winuser-timerproc) .
+La convenzione di chiamata **per MyTimerProc** deve essere basata sulla funzione di callback [*TimerProc.*](/windows/win32/api/winuser/nc-winuser-timerproc)
 
-Se l'applicazione crea un timer senza specificare un handle di finestra, l'applicazione deve monitorare la coda di messaggi per i messaggi del [**\_ timer WM**](wm-timer.md) e inviarli alla finestra appropriata.
+Se l'applicazione crea un timer senza specificare un handle di finestra, l'applicazione deve monitorare la coda di messaggi per i messaggi [**WM \_ TIMER**](wm-timer.md) e inviare i messaggi alla finestra appropriata.
 
 
 ```
@@ -110,7 +110,7 @@ MSG msg;          // message structure
 
 ## <a name="destroying-a-timer"></a>Eliminazione di un timer
 
-Le applicazioni devono utilizzare la funzione [**KillTimer**](/windows/win32/api/winuser/nf-winuser-killtimer) per eliminare i timer che non sono più necessari. Nell'esempio seguente vengono eliminati i timer identificati dalle costanti IDT \_ Timer1, IDT \_ Timer2 e IDT \_ TIMER3.
+Le applicazioni devono usare [**la funzione KillTimer**](/windows/win32/api/winuser/nf-winuser-killtimer) per eliminare i timer che non sono più necessari. Nell'esempio seguente vengono distrutti i timer identificati dalle costanti IDT \_ TIMER1, IDT \_ TIMER2 e IDT \_ TIMER3.
 
 
 ```
@@ -123,11 +123,11 @@ KillTimer(hwnd, IDT_TIMER3);
 
 
 
-## <a name="using-timer-functions-to-trap-mouse-input"></a>Utilizzo di funzioni timer per intercettare l'input del mouse
+## <a name="using-timer-functions-to-trap-mouse-input"></a>Uso di funzioni timer per intercettare l'input del mouse
 
-A volte è necessario impedire un maggiore input mentre è presente un puntatore del mouse sullo schermo. Un modo per eseguire questa operazione consiste nel creare una routine speciale che intrappola l'input del mouse fino a quando non si verifica un evento specifico. Molti sviluppatori fanno riferimento a questa routine come "creazione di una trappola per topi".
+In alcuni casi è necessario impedire più input quando si ha un puntatore del mouse sullo schermo. Un modo per eseguire questa operazione è creare una routine speciale che intercetta l'input del mouse fino a quando non si verifica un evento specifico. Molti sviluppatori fanno riferimento a questa routine come "creazione di un mousetrap".
 
-Nell'esempio seguente vengono utilizzate le funzioni [**setimer**](/windows/win32/api/winuser/nf-winuser-settimer) e [**KillTimer**](/windows/win32/api/winuser/nf-winuser-killtimer) per intercettare l'input del mouse. **Setimer** crea un timer che invia un messaggio di [**\_ timer WM**](wm-timer.md) ogni 10 secondi. Ogni volta che l'applicazione riceve un messaggio di **\_ timer WM** , registra la posizione del puntatore del mouse. Se la posizione corrente è uguale a quella precedente e la finestra principale dell'applicazione è ridotta a icona, l'applicazione sposta il puntatore del mouse sull'icona. Quando l'applicazione viene chiusa, **KillTimer** arresta il timer.
+Nell'esempio seguente vengono utilizzate le [**funzioni SetTimer**](/windows/win32/api/winuser/nf-winuser-settimer) e [**KillTimer**](/windows/win32/api/winuser/nf-winuser-killtimer) per intercettare l'input del mouse. **SetTimer crea** un timer che invia un [**messaggio WM \_ TIMER**](wm-timer.md) ogni 10 secondi. Ogni volta che l'applicazione riceve un **messaggio \_ WM TIMER,** registra la posizione del puntatore del mouse. Se la posizione corrente corrisponde alla posizione precedente e la finestra principale dell'applicazione è ridotta a icona, l'applicazione sposta il puntatore del mouse sull'icona. Alla chiusura dell'applicazione, **KillTimer arresta** il timer.
 
 
 ```
@@ -217,7 +217,7 @@ LONG APIENTRY MainWndProc(
 
 
 
-Anche se l'esempio seguente illustra come intercettare l'input del mouse, elabora il messaggio del [**\_ timer WM**](wm-timer.md) tramite la funzione di callback definita dall'applicazione **MyTimerProc**, anziché tramite la coda di messaggi dell'applicazione.
+Anche se l'esempio seguente illustra anche come intercettare l'input del mouse, elabora il messaggio [**WM \_ TIMER**](wm-timer.md) tramite la funzione di callback definita dall'applicazione **MyTimerProc** anziché tramite la coda di messaggi dell'applicazione.
 
 
 ```

@@ -1,6 +1,6 @@
 ---
 title: CDM_GETFILEPATH messaggio (Commdlg.h)
-description: Recupera il percorso e il nome del file selezionato in una finestra di dialogo Apri o Salva con nome di tipo Esplora risorse.
+description: Recupera il percorso e il nome del file selezionato in una finestra di dialogo Apri o Salva con nome in stile Esplora risorse.
 ms.assetid: fad8c5e2-9838-45a8-8c51-4326c989d939
 keywords:
 - CDM_GETFILEPATH finestre di dialogo del messaggio
@@ -14,18 +14,18 @@ api_type:
 - HeaderDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 7d531999757d46e127b73584adf1b563e64ea25b
-ms.sourcegitcommit: f848119a8faa29b27585f4df53f6e50ee9666684
+ms.openlocfilehash: 67ac18880ef62df1d228c006f0bc33fcf4932cbb976419ee29464e49828d8173
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/27/2021
-ms.locfileid: "110548666"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118786334"
 ---
 # <a name="cdm_getfilepath-message"></a>Messaggio \_ CDM GETFILEPATH
 
-\[A partire da Windows Vista, le **finestre di** **dialogo** comuni Apri e Salva con nome sono state sostituite dalla finestra di dialogo [Elemento comune](../shell/common-file-dialog.md). È consigliabile usare l'API Common Item Dialog al posto di queste finestre di dialogo di Common Dialog Box Library.\]
+\[A partire Windows Vista, **le**  finestre di dialogo comuni Apri e Salva con nome sono state sostituite dalla finestra di dialogo Elemento [comune](../shell/common-file-dialog.md). È consigliabile usare l'API Common Item Dialog al posto di queste finestre di dialogo da Common Dialog Box Library.\]
 
-Recupera il percorso e il nome del file  selezionato in una finestra di dialogo Apri o **Salva con** nome di tipo Esplora risorse. La finestra di dialogo deve essere stata creata con il flag **OFN \_ EXPLORER;** in caso contrario, il messaggio ha esito negativo.
+Recupera il percorso e il nome del file  selezionato in una finestra di dialogo Apri o **Salva con** nome in stile Esplora risorse. La finestra di dialogo deve essere stata creata con il flag **OFN \_ EXPLORER;** in caso contrario, il messaggio ha esito negativo.
 
 
 ```C++
@@ -56,7 +56,7 @@ Puntatore al buffer che riceve il nome e il percorso del file.
 
 ## <a name="return-value"></a>Valore restituito
 
-Se il messaggio ha esito positivo, il valore restituito è la dimensione, in caratteri, del nome file e della stringa di percorso, incluso il carattere NULL di terminazione. Si tratta del numero di byte o caratteri copiati nel buffer o delle dimensioni del buffer richieste se il buffer è troppo piccolo.
+Se il messaggio ha esito positivo, il valore restituito è la dimensione, in caratteri, del nome file e della stringa di percorso, incluso il carattere NULL di terminazione. Si tratta del numero di byte o caratteri copiati nel buffer o della dimensione del buffer necessaria se il buffer è troppo piccolo.
 
 Se si verifica un errore, il valore restituito è minore di zero.
 
@@ -99,6 +99,6 @@ int CommDlg_OpenSave_GetFilePath(hwnd, lparam, wparam);
 **Informazioni concettuali**
 </dt> <dt>
 
-[Libreria di finestre di dialogo comune](common-dialog-box-library.md)
+[Libreria di finestre di dialogo comuni](common-dialog-box-library.md)
 </dt> </dl>
 

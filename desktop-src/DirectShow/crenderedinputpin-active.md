@@ -1,5 +1,5 @@
 ---
-description: "Metodo CRenderedInputPin.Active: il metodo Active notifica al segnaposto che il filtro è ora attivo. Questo metodo esegue l'override del metodo CBasePin::Active."
+description: "Metodo CRenderedInputPin.Active: il metodo Active notifica al pin che il filtro è ora attivo. Questo metodo esegue l'override del metodo CBasePin::Active."
 ms.assetid: e98ca947-df2f-41a7-9785-b35bd1dde1e6
 title: Metodo CRenderedInputPin.Active (Amextra.h)
 ms.topic: reference
@@ -16,16 +16,16 @@ api_location:
 - Strmbase.dll
 - Strmbasd.lib
 - Strmbasd.dll
-ms.openlocfilehash: d8c9b06f41454d2cb9a7ac35dd7e8f8b335632f9
-ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
+ms.openlocfilehash: 0f7fce3525feb2c4ff50a93423697f80db6f1285ec354ac01b5f59e7bf9b7ada
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/28/2021
-ms.locfileid: "108098929"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118953900"
 ---
 # <a name="crenderedinputpinactive-method"></a>Metodo CRenderedInputPin.Active
 
-Il `Active` metodo notifica al segnaposto che il filtro è ora attivo. Questo metodo esegue l'override [**del metodo CBasePin::Active.**](cbasepin-active.md)
+Il `Active` metodo notifica al pin che il filtro è ora attivo. Questo metodo esegue l'override [**del metodo CBasePin::Active.**](cbasepin-active.md)
 
 ## <a name="syntax"></a>Sintassi
 
@@ -50,7 +50,7 @@ Restituisce S \_ OK in caso di esito positivo oppure un codice di errore in caso
 
 | Requisito | Valore |
 |--------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Intestazione<br/>  | <dl> <dt>Amextra.h (include Streams.h)</dt> </dl>                                                                                   |
+| Intestazione<br/>  | <dl> <dt>Amextra.h (includere Flussi.h)</dt> </dl>                                                                                   |
 | Libreria<br/> | <dl> <dt>Strmbase.lib (build di vendita al dettaglio); </dt> <dt>Strmbasd.lib (build di debug)</dt> </dl> |
 
 

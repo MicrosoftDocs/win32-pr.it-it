@@ -1,17 +1,17 @@
 ---
 description: Formato dell'oggetto dati. Valore stringa che rappresenta il nome del formato degli Appunti.
 ms.assetid: D833838E-3B5A-42D5-BA19-0476A3141C9B
-title: System. DataObjectFormat
+title: System.DataObjectFormat
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 56e44a9b608f4e55b74b89e54e9b49bee39e3af5
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 4548bda3415edd63f185eaf2539a2bbe1e44d70c82fe9d0a4ede7f32ed2f750a
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "103882817"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118970500"
 ---
-# <a name="systemdataobjectformat"></a>System. DataObjectFormat
+# <a name="systemdataobjectformat"></a>System.DataObjectFormat
 
 Formato dell'oggetto dati. Valore stringa che rappresenta il nome del formato degli Appunti.
 
@@ -32,7 +32,7 @@ propertyDescription
 
 ## <a name="remarks"></a>Commenti
 
-I valori PKEY sono definiti in Propkey. h.
+I valori PKEY sono definiti in Propkey.h.
 
 ## <a name="related-topics"></a>Argomenti correlati
 
@@ -47,13 +47,13 @@ I valori PKEY sono definiti in Propkey. h.
 [labelInfo](./propdesc-schema-labelinfo.md)
 </dt> <dt>
 
-[typeInfo](./propdesc-schema-typeinfo.md)
+[Typeinfo](./propdesc-schema-typeinfo.md)
 </dt> <dt>
 
 [displayInfo](./propdesc-schema-displayinfo.md)
 </dt> <dt>
 
-[stringFormat](./propdesc-schema-stringformat.md)
+[Stringformat](./propdesc-schema-stringformat.md)
 </dt> <dt>
 
 [booleanFormat](./propdesc-schema-booleanformat.md)
@@ -62,7 +62,7 @@ I valori PKEY sono definiti in Propkey. h.
 [numberFormat](./propdesc-schema-numberformat.md)
 </dt> <dt>
 
-[dateTimeFormat](./propdesc-schema-datetimeformat.md)
+[Datetimeformat](./propdesc-schema-datetimeformat.md)
 </dt> <dt>
 
 [enumeratedList](./propdesc-schema-enumeratedlist.md)

@@ -1,21 +1,21 @@
 ---
-description: Nell'esempio seguente viene illustrato come ricevere e decrittografare un messaggio crittografato.
+description: Nell'esempio seguente viene illustrato un messaggio crittografato ricevuto e decrittografato.
 ms.assetid: 4858a43b-3084-4a03-8b6f-4a788cdb3dd5
 title: Decrittografia di un messaggio
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 3598025564e607bf25241def4171eba84aa1dbbe
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: ca3b01b37b82c3b8c2ca551e2b8113ff171668b2bb95b41fa9b8363e5b3ae4af
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104527019"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119008639"
 ---
 # <a name="decrypting-a-message"></a>Decrittografia di un messaggio
 
-Nell'esempio seguente viene illustrato come ricevere e decrittografare un messaggio crittografato.
+Nell'esempio seguente viene illustrato un messaggio crittografato ricevuto e decrittografato.
 
-Nell'esempio si presuppone che venga inizializzata una variabile **SecHandle** denominata `phContext` e una struttura **socket** denominata `s` . Per le dichiarazioni e le inizializzazioni di queste variabili, vedere [uso di SSPI con un client Windows Sockets](using-sspi-with-a-windows-sockets-client.md) e [uso di SSPI con un server Windows Sockets](using-sspi-with-a-windows-sockets-server.md). Questo esempio include le chiamate alle funzioni in Secur32. lib, che devono essere incluse tra le librerie di collegamento.
+Nell'esempio si presuppone **l'inizializzazione** di una variabile SecHandle denominata e di una `phContext` struttura **SOCKET** `s` denominata . Per le dichiarazioni e le iniziazioni di queste variabili, vedere Using [SSPI with a Windows Sockets Client](using-sspi-with-a-windows-sockets-client.md) e [Using SSPI with a Windows Sockets Server](using-sspi-with-a-windows-sockets-server.md). Questo esempio include le chiamate alle funzioni in Secur32.lib, che devono essere incluse tra le librerie di collegamento.
 
 
 ```C++

@@ -1,41 +1,41 @@
 ---
-description: 'WsdCodeGen ha due funzioni: la generazione di file di configurazione e la generazione di codice sorgente per applicazioni host e client WSDAPI.'
+description: 'WsdCodeGen ha due funzioni: generazione di file di configurazione e generazione di codice sorgente per applicazioni client e host WSDAPI.'
 ms.assetid: 75f5071c-040b-4e65-a80e-e1fea63535b0
-title: Sintassi della riga di comando di WsdCodeGen
+title: Sintassi della riga di comando WsdCodeGen
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: ff7db3afe9b13286833f8563c0cacb41919d77bd
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 5fff02fd9bbbcfddd20a68948f139e765d27a86363df12fc0057627717e53cc4
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "103880394"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119049639"
 ---
-# <a name="wsdcodegen-command-line-syntax"></a>Sintassi della riga di comando di WsdCodeGen
+# <a name="wsdcodegen-command-line-syntax"></a>Sintassi della riga di comando WsdCodeGen
 
-WsdCodeGen ha due funzioni: la generazione di file di configurazione e la generazione di codice sorgente per applicazioni host e client WSDAPI. In questo argomento viene illustrata la sintassi della riga di comando utilizzata per eseguire ogni attività.
+WsdCodeGen ha due funzioni: generazione di file di configurazione e generazione di codice sorgente per applicazioni client e host WSDAPI. In questo argomento viene illustrata la sintassi della riga di comando usata per eseguire ogni attività.
 
 ## <a name="generating-a-configuration-file"></a>Generazione di un file di configurazione
 
 ### <a name="syntax"></a>Sintassi
 
-**WSDCODEGEN.EXE** **/generateconfig:**{**client** \| **host** \| **All**} **\[ /outputfile:**_nomefileconfigurazione_ *_\]_* *WSDLFileNameList*
+**WSDCODEGEN.EXE** **/generateconfig:**{**client** \| **host** \| **all**} **\[ /outputfile:**_ConfigFileName_ *_\]_* *WSDLFileNameList*
 
 ### <a name="parameters"></a>Parametri
 
 <dl> <dt>
 
-<span id="_generateconfig__client___host___all_"></span><span id="_GENERATECONFIG__CLIENT___HOST___ALL_"></span>**/generateconfig: { \| host client \| All}**
+<span id="_generateconfig__client___host___all_"></span><span id="_GENERATECONFIG__CLIENT___HOST___ALL_"></span>**/generateconfig:{client \| host \| all}**
 </dt> <dd>
 
-Tipo di codice che il file di configurazione di output genererà. **/generateconfig: il client** viene usato per generare un file di configurazione per la generazione di codice client, **/generateconfig: host** viene usato per generare un file di configurazione per la generazione del codice host e **/generateconfig: All** viene usato per generare un file di configurazione per la generazione di codice client e host.
+Tipo di codice che verrà generato dal file di configurazione di output. **/generateconfig:client** viene usato per generare un file di configurazione per la generazione di codice client, **/generateconfig:host** viene usato per generare un file di configurazione per la generazione di codice host e **/generateconfig:all** viene usato per generare un file di configurazione per la generazione di codice client e host.
 
 </dd> <dt>
 
-<span id="_outputfile_ConfigFileName"></span><span id="_outputfile_configfilename"></span><span id="_OUTPUTFILE_CONFIGFILENAME"></span>**/outputfile:**_nomefileconfigurazione_
+<span id="_outputfile_ConfigFileName"></span><span id="_outputfile_configfilename"></span><span id="_OUTPUTFILE_CONFIGFILENAME"></span>**/outputfile:**_ConfigFileName_
 </dt> <dd>
 
-Questo parametro facoltativo viene utilizzato per specificare il nome file del file di configurazione di output. Se questo parametro è escluso, il nome del file di configurazione di output viene codegen.config.
+Questo parametro facoltativo viene usato per specificare il nome file del file di configurazione di output. Se questo parametro viene escluso, il nome del file di configurazione di output viene codegen.config.
 
 </dd> <dt>
 
@@ -53,11 +53,11 @@ Elenco delimitato da spazi dei file WSDL che devono essere elaborati da WsdCodeG
 
 </dd> </dl>
 
-## <a name="generating-source-code"></a>Generazione del codice sorgente
+## <a name="generating-source-code"></a>Generazione di codice sorgente
 
 ### <a name="syntax"></a>Sintassi
 
-**WSDCODEGEN.EXE** **/GenerateCode** **\[ /download \]** **\[ /GBC \]** **\[ outputroot:**_path_ *_\]_* **\[ /WriteAccess:**_Command_ *_\]_* *nomefileconfigurazione*
+**WSDCODEGEN.EXE** **/generatecode** **\[ /download \] /gbc** **\[ \]** **\[ outputroot:**_path_ *_\]_* **\[ /writeaccess:**_comando_ *_\]_* *ConfigFileName*
 
 ### <a name="parameters"></a>Parametri
 
@@ -66,11 +66,11 @@ Elenco delimitato da spazi dei file WSDL che devono essere elaborati da WsdCodeG
 <span id="_generatecode"></span><span id="_GENERATECODE"></span>**/generatecode**
 </dt> <dd>
 
-Indica a WsdCodeGen di generare codice sorgente. Questa è la modalità predefinita se non è specificata alcuna modalità.
+Indica a WsdCodeGen di generare codice sorgente. Si tratta della modalità predefinita se non viene specificata alcuna modalità.
 
 </dd> <dt>
 
-<span id="_download"></span><span id="_DOWNLOAD"></span>**/Download**
+<span id="_download"></span><span id="_DOWNLOAD"></span>**/download**
 </dt> <dd>
 
 Scarica i documenti importati a cui fa riferimento il file di configurazione. Questo parametro è facoltativo.
@@ -80,33 +80,33 @@ Scarica i documenti importati a cui fa riferimento il file di configurazione. Qu
 <span id="_gbc"></span><span id="_GBC"></span>**/gbc**
 </dt> <dd>
 
-Aggiunge commenti al codice sorgente che indica che il codice è stato generato. Questi commenti hanno come prefisso la frase "generated by". Questo parametro è facoltativo.
+Aggiunge commenti al codice sorgente che indicano che il codice è stato generato. Questi commenti sono preceduti dalla frase "Generated by". Questo parametro è facoltativo.
 
 </dd> <dt>
 
-<span id="_outputroot_path"></span><span id="_OUTPUTROOT_PATH"></span>**/outputroot:**_percorso_
+<span id="_outputroot_path"></span><span id="_OUTPUTROOT_PATH"></span>**/outputroot:**_path_
 </dt> <dd>
 
-Percorso di output per i file generati. il *percorso* può essere un percorso assoluto o relativo. Questo parametro è facoltativo.
+Percorso di output per i file generati. *path* può essere un percorso assoluto o relativo. Questo parametro è facoltativo.
 
 </dd> <dt>
 
-<span id="_writeaccess_command"></span><span id="_WRITEACCESS_COMMAND"></span>**/WriteAccess:**_comando_
+<span id="_writeaccess_command"></span><span id="_WRITEACCESS_COMMAND"></span>**/writeaccess:**_comando_
 </dt> <dd>
 
-Indica a WsdCodeGen di eseguire il comando specificato prima di modificare eventuali file esistenti sul disco. I file di output identici a quelli sul disco non riceveranno questo comando né verranno scritti. Se il comando contiene la sequenza " {0} ", questa sequenza verrà sostituita con il nome del file da modificare. In caso contrario, il nome del file verrà aggiunto al comando.
+Indica a WsdCodeGen di eseguire il comando specificato prima di modificare i file esistenti su disco. I file di output identici a quelli su disco non riceveranno questo comando né verranno scritti. Se il comando contiene la sequenza " ", questa sequenza verrà sostituita con il {0} nome del file da modificare. In caso contrario, il nome file verrà aggiunto al comando.
 
 Esempi:
 
-**/WriteAccess: "attrib-r"**
+**/writeaccess:"attrib -r"**
 
-**/WriteAccess: "attrib-r {0} "**
+**/writeaccess:"attrib -r {0} "**
 
-**/WriteAccess: "copia {0} .. \\ backup \\ "**
+**/writeaccess:"copia {0} .. \\ backup \\ "**
 
 </dd> <dt>
 
-<span id="ConfigFileName"></span><span id="configfilename"></span><span id="CONFIGFILENAME"></span>*Nomefileconfigurazione*
+<span id="ConfigFileName"></span><span id="configfilename"></span><span id="CONFIGFILENAME"></span>*ConfigFileName*
 </dt> <dd>
 
 Nome del file di configurazione da elaborare prima di generare il codice.
@@ -122,7 +122,7 @@ Nome del file di configurazione da elaborare prima di generare il codice.
 | *Corsivo*                                                                  | Informazioni che l'utente deve fornire                  |
 | **Grassetto**                                                                  | Elementi che l'utente deve digitare esattamente come visualizzati       |
 | Tra parentesi quadre ( \[ \] )                                                   | Elementi facoltativi                                          |
-| Tra parentesi graffe ( {} ); scelte separate da pipe ( \| ). Esempio: {even \| Odd} | Set di opzioni da cui l'utente deve scegliere un solo |
+| Tra parentesi graffe ( {} ), scelte separate da barra verticale ( \| ). Esempio: {even \| odd} | Set di scelte tra cui l'utente deve sceglierne una sola |
 
 
 
@@ -134,8 +134,8 @@ Nome del file di configurazione da elaborare prima di generare il codice.
 
 | Requisito | Valore |
 |-------------------------------------|------------------------------------------------------|
-| Client minimo supportato<br/> | \[Solo app desktop di Windows Vista\]<br/>       |
-| Server minimo supportato<br/> | \[Solo app desktop Windows Server 2008\]<br/> |
+| Client minimo supportato<br/> | Windows Solo \[ app desktop Vista\]<br/>       |
+| Server minimo supportato<br/> | Windows Solo app desktop di Server 2008 \[\]<br/> |
 
 
 

@@ -1,24 +1,24 @@
 ---
-title: Visualizzazione di eventi NET
-description: Nell'esempio di codice riportato di seguito viene illustrato come un'applicazione server può individuare eventi NET recenti che potrebbero esserne interessati.
+title: Visualizzazione di eventi netti
+description: Il codice di esempio seguente illustra come un'applicazione server possa individuare gli eventi net recenti che potrebbero aver avuto un'influenza su di essa.
 ms.assetid: 24c1cf68-a67f-415a-a45d-0e0eb4aae636
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 582a2ad40d47fa3e999391d49b2f5a3a7dc23d3f
-ms.sourcegitcommit: 2d531328b6ed82d4ad971a45a5131b430c5866f7
+ms.openlocfilehash: ff774a8a66899979150cb83936e45e200c2f2cb76a9266c01e233041356db93e
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "106297981"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118951290"
 ---
-# <a name="displaying-net-events"></a>Visualizzazione di eventi NET
+# <a name="displaying-net-events"></a>Visualizzazione di eventi netti
 
-Nell'esempio di codice riportato di seguito viene illustrato come un'applicazione server può individuare eventi NET recenti che potrebbero esserne interessati.
+Nell'esempio di codice seguente viene illustrato come un'applicazione server possa individuare gli eventi net recenti che potrebbero aver interessato l'applicazione.
 
 > [!Note]  
-> Le condizioni di filtro sono le stesse supportate dall'API **IsPortAllowed** di livello inferiore.
+> Le condizioni di filtro sono le stesse supportate dall'API **IsPortAllowed di livello** inferiore.
 
- 
+ 
 
 
 ```C++
@@ -197,9 +197,9 @@ DWORD wmain(int argc,
 
 
 
- 
+ 
 
- 
+ 
 
 
 

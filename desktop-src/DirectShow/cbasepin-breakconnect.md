@@ -16,12 +16,12 @@ api_location:
 - Strmbase.dll
 - Strmbasd.lib
 - Strmbasd.dll
-ms.openlocfilehash: a9a099b1001c2b8c30398ca350e05d15562a8bc2
-ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
+ms.openlocfilehash: c40c7614f94b2be5e5f588a706b4b0bd1eec92c3181ffbedcad3ae1e57183f51
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/28/2021
-ms.locfileid: "108099439"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118955230"
 ---
 # <a name="cbasepinbreakconnect-method"></a>Metodo CBasePin.BreakConnect
 
@@ -46,11 +46,11 @@ Restituisce S \_ OK.
 
 ## <a name="remarks"></a>Commenti
 
-Questo metodo viene chiamato durante la disconnessione del pin dal [**metodo CBasePin::D isconnect.**](cbasepin-disconnect.md) Viene chiamato anche durante un tentativo di connessione se il [**metodo CBasePin::CheckConnect ha**](cbasepin-checkconnect.md) esito negativo.
+Questo metodo viene chiamato durante la disconnessione del pin dal metodo [**CBasePin::D isconnect.**](cbasepin-disconnect.md) Viene chiamato anche durante un tentativo di connessione se il [**metodo CBasePin::CheckConnect ha**](cbasepin-checkconnect.md) esito negativo.
 
 Questo metodo deve liberare tutte le risorse ottenute dal **metodo CheckConnect.** Ad esempio, se **CheckConnect alloca** memoria, `BreakConnect` deve liberare la memoria. Se **CheckConnect esegue** una query sul pin di connessione per un'interfaccia, `BreakConnect` deve liberare l'interfaccia.
 
-Si noti `BreakConnect` che può essere chiamato senza una chiamata corrispondente a **CompleteConnect.** Pertanto, non è possibile **presupporre che CompleteConnect** sia stato chiamato in precedenza.
+Si noti `BreakConnect` che può essere chiamato senza una chiamata corrispondente a **CompleteConnect**. Pertanto, non è possibile presupporre che **CompleteConnect** sia stato chiamato in precedenza.
 
 ## <a name="requirements"></a>Requisiti
 
@@ -58,7 +58,7 @@ Si noti `BreakConnect` che può essere chiamato senza una chiamata corrispondent
 
 | Requisito | Valore |
 |--------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Intestazione<br/>  | <dl> <dt>Amfilter.h (include Streams.h)</dt> </dl>                                                                                  |
+| Intestazione<br/>  | <dl> <dt>Amfilter.h (include Flussi.h)</dt> </dl>                                                                                  |
 | Libreria<br/> | <dl> <dt>Strmbase.lib (build di vendita al dettaglio); </dt> <dt>Strmbasd.lib (build di debug)</dt> </dl> |
 
 

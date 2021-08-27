@@ -1,9 +1,9 @@
 ---
-title: Messaggio WM_CLIPBOARDUPDATE (winuser. h)
-description: Inviato quando il contenuto degli Appunti viene modificato.
+title: WM_CLIPBOARDUPDATE messaggio (Winuser.h)
+description: Inviato quando il contenuto degli Appunti è stato modificato.
 ms.assetid: 1508aa22-9cf0-40a2-8cb0-ce7c8671df2c
 keywords:
-- Scambio di dati del messaggio WM_CLIPBOARDUPDATE
+- WM_CLIPBOARDUPDATE messaggio Dati Exchange
 topic_type:
 - apiref
 api_name:
@@ -14,16 +14,16 @@ api_type:
 - HeaderDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 303110f0d094cfed336a9f92006b3720a0ccc83b
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: d0483ba43b6b0c660daee74637fd9f9ac8d377a16097b5cfd60632c1b691ead7
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "104120042"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118991221"
 ---
-# <a name="wm_clipboardupdate-message"></a>\_Messaggio CLIPBOARDUPDATE WM
+# <a name="wm_clipboardupdate-message"></a>Messaggio WM \_ CLIPBOARDUPDATE
 
-Inviato quando il contenuto degli Appunti viene modificato.
+Inviato quando il contenuto degli Appunti è stato modificato.
 
 
 ```C++
@@ -39,24 +39,24 @@ Inviato quando il contenuto degli Appunti viene modificato.
 *wParam* 
 </dt> <dd>
 
-Questo parametro non viene utilizzato e deve essere zero.
+Questo parametro non viene usato e deve essere zero.
 
 </dd> <dt>
 
 *lParam* 
 </dt> <dd>
 
-Questo parametro non viene utilizzato e deve essere zero.
+Questo parametro non viene usato e deve essere zero.
 
 </dd> </dl>
 
 ## <a name="return-value"></a>Valore restituito
 
-Se un'applicazione elabora il messaggio, deve restituire zero.
+Se un'applicazione elabora questo messaggio, deve restituire zero.
 
 ## <a name="remarks"></a>Commenti
 
-Per registrare una finestra per la ricezione di questo messaggio, usare la funzione [**AddClipboardFormatListener**](/windows/desktop/api/Winuser/nf-winuser-addclipboardformatlistener) .
+Per registrare una finestra per ricevere questo messaggio, usare la [**funzione AddClipboardFormatListener.**](/windows/desktop/api/Winuser/nf-winuser-addclipboardformatlistener)
 
 ## <a name="requirements"></a>Requisiti
 
@@ -64,9 +64,9 @@ Per registrare una finestra per la ricezione di questo messaggio, usare la funzi
 
 | Requisito | Valore |
 |-------------------------------------|----------------------------------------------------------------------------------------------------------|
-| Client minimo supportato<br/> | \[Solo app desktop di Windows Vista\]<br/>                                                           |
-| Server minimo supportato<br/> | \[Solo app desktop Windows Server 2008\]<br/>                                                     |
-| Intestazione<br/>                   | <dl> <dt>Winuser. h (include Windows. h)</dt> </dl> |
+| Client minimo supportato<br/> | Windows Solo \[ app desktop di Vista\]<br/>                                                           |
+| Server minimo supportato<br/> | Windows Solo app desktop server 2008 \[\]<br/>                                                     |
+| Intestazione<br/>                   | <dl> <dt>Winuser.h (includere Windows.h)</dt> </dl> |
 
 
 

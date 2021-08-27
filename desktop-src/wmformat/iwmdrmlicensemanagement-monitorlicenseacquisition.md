@@ -1,11 +1,11 @@
 ---
-title: Metodo IWMDRMLicenseManagement MonitorLicenseAcquisition (wmdrmsdk. h)
+title: Metodo IWMDRMLicenseManagement MonitorLicenseAcquisition (Wmdrmsdk.h)
 description: Il metodo MonitorLicenseAcquisition avvia il monitoraggio per un processo di acquisizione delle licenze.
 ms.assetid: 725cd51a-a50b-4ff5-a880-7f551f6dba8f
 keywords:
-- Metodo MonitorLicenseAcquisition Windows Media Format
-- Metodo MonitorLicenseAcquisition Windows Media Format, interfaccia IWMDRMLicenseManagement
-- Interfaccia IWMDRMLicenseManagement-formato Windows Media, metodo MonitorLicenseAcquisition
+- Metodo MonitorLicenseAcquisition windows Media Format
+- Metodo MonitorLicenseAcquisition windows Media Format , interfaccia IWMDRMLicenseManagement
+- Metodo MonitorLicenseAcquisition dell'interfaccia IWMDRMLicenseManagement di Windows Media Format
 topic_type:
 - apiref
 api_name:
@@ -17,16 +17,16 @@ api_type:
 - COM
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 25171d36a9d360f7c8eb77211c580c4f7676618f
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: b7ab3188425decca614ae104989fdc2f07930ac0de463e492be630a3fb54556e
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "106324046"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119027579"
 ---
-# <a name="iwmdrmlicensemanagementmonitorlicenseacquisition-method"></a>Metodo IWMDRMLicenseManagement:: MonitorLicenseAcquisition
+# <a name="iwmdrmlicensemanagementmonitorlicenseacquisition-method"></a>Metodo IWMDRMLicenseManagement::MonitorLicenseAcquisition
 
-Il metodo **MonitorLicenseAcquisition** avvia il monitoraggio per un processo di acquisizione delle licenze.
+Il **metodo MonitorLicenseAcquisition** avvia il monitoraggio per un processo di acquisizione delle licenze.
 
 ## <a name="syntax"></a>Sintassi
 
@@ -46,43 +46,43 @@ HRESULT MonitorLicenseAcquisition(
 
 <dl> <dt>
 
-*bstrKID* \[ in\]
+*bstrKID* \[ Pollici\]
 </dt> <dd>
 
-ID chiave (KID) della licenza che si sta acquisendo.
+ID chiave (KID) della licenza acquisita.
 
 </dd> <dt>
 
-*bstrHeader* \[ in\]
+*bstrHeader* \[ Pollici\]
 </dt> <dd>
 
-Intestazione del contenuto utilizzata nella chiamata al metodo [**AcquireLicense**](iwmdrmlicensemanagement-acquirelicense.md) .
+Intestazione di contenuto usata nella chiamata al [**metodo AcquireLicense.**](iwmdrmlicensemanagement-acquirelicense.md)
 
 </dd> <dt>
 
-*bstrActions* \[ in\]
+*bstrActions* \[ Pollici\]
 </dt> <dd>
 
-Stringa contenente le azioni richieste nella chiamata al metodo **AcquireLicense** .
+Stringa contenente le azioni richieste nella chiamata al **metodo AcquireLicense.**
 
 </dd> <dt>
 
-*ppunkCancelationCookie* \[ out\]
+*ppunkCancelationCookie* \[ Cambio\]
 </dt> <dd>
 
-Puntatore che riceve un puntatore all'interfaccia **IUnknown** di un oggetto che identifica la chiamata asincrona. Questo puntatore di interfaccia può essere utilizzato per annullare la chiamata asincrona chiamando il metodo [**IWMDRMEventGenerator:: CancelAsyncOperation**](iwmdrmeventgenerator-cancelasyncoperation.md) .
+Puntatore che riceve un puntatore **all'interfaccia IUnknown** di un oggetto che identifica questa chiamata asincrona. Questo puntatore a interfaccia può essere usato per annullare la chiamata asincrona chiamando il [**metodo IWMDRMEventGenerator::CancelAsyncOperation.**](iwmdrmeventgenerator-cancelasyncoperation.md)
 
 </dd> </dl>
 
 ## <a name="return-value"></a>Valore restituito
 
-Il metodo restituisce un valore **HRESULT**. I valori possibili includono, ma non sono limitati a, quelli indicati nella tabella seguente.
+Il metodo restituisce un **HRESULT**. I valori possibili includono, ma non sono limitati a, quelli indicati nella tabella seguente.
 
 
 
 | Codice restituito                                                                          | Descrizione                      |
 |--------------------------------------------------------------------------------------|----------------------------------|
-| <dl> <dt>**\_OK**</dt> </dl> | Il metodo è riuscito.<br/> |
+| <dl> <dt>**S \_ OK**</dt> </dl> | Il metodo è riuscito.<br/> |
 
 
 
@@ -90,7 +90,7 @@ Il metodo restituisce un valore **HRESULT**. I valori possibili includono, ma no
 
 ## <a name="remarks"></a>Commenti
 
-Nessuna.
+Nessuno.
 
 ## <a name="requirements"></a>Requisiti
 
@@ -98,8 +98,8 @@ Nessuna.
 
 | Requisito | Valore |
 |--------------------|-----------------------------------------------------------------------------------------|
-| Intestazione<br/>  | <dl> <dt>Wmdrmsdk. h</dt> </dl>   |
-| Libreria<br/> | <dl> <dt>Wmdrmsdk. lib</dt> </dl> |
+| Intestazione<br/>  | <dl> <dt>Wmdrmsdk.h</dt> </dl>   |
+| Libreria<br/> | <dl> <dt>Wmdrmsdk.lib</dt> </dl> |
 
 
 

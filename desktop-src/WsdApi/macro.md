@@ -4,12 +4,12 @@ ms.assetid: bf5cc1e2-b08e-45b6-8e07-5c69865b695b
 title: elemento macro
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 6f794566b0fd789c463d404289644976c8301a2e
-ms.sourcegitcommit: b6fe9acffad983c14864b8fe0296f6025cb1f961
+ms.openlocfilehash: ee876e04934a328e73b6e45d8442249ad3d749fc3b40fa45652c89979fcff6e5
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/26/2021
-ms.locfileid: "107994328"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118991721"
 ---
 # <a name="macro-element"></a>elemento macro
 
@@ -42,15 +42,15 @@ Non ci sono elementi figlio.
 
 | Elemento                                     | Descrizione                                                                         |
 |---------------------------------------------|-------------------------------------------------------------------------------------|
-| [**wsdCodeGen**](wsdcodegen.md)<br/> | Elemento radice di un file di script XML del generatore di codice WSDAPI.<br/> <br/> |
+| [**wsdCodeGen**](wsdcodegen.md)<br/> | Elemento radice di un file script XML del generatore di codice WSDAPI.<br/> <br/> |
 
 
 
 ## <a name="remarks"></a>Commenti
 
-WsdCodeGen definisce una macro denominata **DoNotModify**. Quando questa macro è inclusa, il codice generato contiene un blocco di commenti ad alta visibilità che indica agli sviluppatori di non modificare il codice generato.
+WsdCodeGen definisce una macro denominata **DoNotModify.** Quando questa macro è inclusa, il codice generato contiene un blocco di commenti ad alta visibilità che indica agli sviluppatori di non modificare il codice generato.
 
-Il codice XML seguente illustra come includere la macro **DoNotModify.** Questo codice XML può essere aggiunto a un file di configurazione XML per WsdCodeGen.
+Nel codice XML seguente viene illustrato come includere la macro **DoNotModify.** Questo codice XML può essere aggiunto a un file di configurazione XML per WsdCodeGen.
 
 ``` syntax
 <include macro="DoNotModify">
@@ -60,7 +60,7 @@ Il codice XML seguente illustra come includere la macro **DoNotModify.** Questo 
 
 
 
-| Label | Valore |
+| Etichetta | Valore |
 |-------------------------------------|---------------|
 | Sistema minimo supportato<br/> | Windows Vista |
 | Può essere vuoto                        | Sì           |

@@ -1,10 +1,10 @@
 ---
-title: Attributo app-Schema-Version
-description: Questo attributo archivia la versione dello schema dell'archivio di classi. Viene usato per fornire un comportamento corretto tra le modifiche dello schema.
+title: Attributo App-Schema-Version
+description: Questo attributo archivia la versione dello schema dell'archivio classi. Viene usato per fornire il comportamento corretto tra le modifiche dello schema.
 ms.assetid: e8c2ab2b-1b7f-4d4f-b9ea-4116a8e30277
 ms.tgt_platform: multiple
 keywords:
-- Schema di AD dell'attributo app-Schema-Version
+- Attributo App-Schema-Version Schema AD Schema
 - Schema AD dell'attributo appSchemaVersion
 topic_type:
 - apiref
@@ -14,28 +14,28 @@ api_type:
 - Schema
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 09265299a676ef6b9d319153c7efdbe3929ee883
-ms.sourcegitcommit: b77ace27b0432e7cd3863191b11926be032fbe2f
+ms.openlocfilehash: 3db892ebaa613cf95c016162e12ee3f9de0a101e433a73aa203640be8645f0ee
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/14/2020
-ms.locfileid: "106303056"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119081985"
 ---
-# <a name="app-schema-version-attribute"></a>Attributo app-Schema-Version
+# <a name="app-schema-version-attribute"></a>Attributo App-Schema-Version
 
-Questo attributo archivia la versione dello schema dell'archivio di classi. Viene usato per fornire un comportamento corretto tra le modifiche dello schema.
+Questo attributo archivia la versione dello schema dell'archivio classi. Viene usato per fornire il comportamento corretto tra le modifiche dello schema.
 
 
 
 | Voce | Valore |
 |-------------------|--------------------------------------|
 | CN                | App-Schema-Version                   |
-| LDAP-Display-Name | appSchemaVersion                     |
+| Ldap-Display-Name | appSchemaVersion                     |
 | Dimensione              | \-                                   |
-| Privilegio aggiornamento  | \-                                   |
+| Aggiorna privilegio  | \-                                   |
 | Frequenza di aggiornamento  | \-                                   |
 | Attribute-Id      | 1.2.840.113556.1.4.848               |
-| System-ID-GUID    | 96a7dd65-9118-11d1-aebc-0000f80367c1 |
+| System-Id-Guid    | 96a7dd65-9118-11d1-aebc-0000f80367c1 |
 | Sintassi            | [**Enumerazione**](s-enumeration.md) |
 
 
@@ -58,15 +58,15 @@ Questo attributo archivia la versione dello schema dell'archivio di classi. Vien
 | ID collegamento                | \-                                             |
 | MAPI-Id                | \-                                             |
 | System-Only            | Falso                                          |
-| È a valore singolo       | Vero                                           |
+| Is-Single-Valued       | Vero                                           |
 | Indicizzato             | Falso                                          |
 | Nel catalogo globale      | Falso                                          |
-| NT-Security-descrittore | O:BAG: NON VALIDO: S:                                   |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                   |
 | Range-Lower            | \-                                             |
 | Range-Upper            | \-                                             |
 | Search-Flags           | 0x00000000                                     |
 | System-Flags           | 0x00000010                                     |
-| Classi utilizzate in        | [**Archivio classi**](c-classstore.md)<br/> |
+| Classi usate in        | [**Archivio classi**](c-classstore.md)<br/> |
 
 
 
@@ -79,15 +79,15 @@ Questo attributo archivia la versione dello schema dell'archivio di classi. Vien
 | ID collegamento                | \-                                                                                                                                                                                    |
 | MAPI-Id                | \-                                                                                                                                                                                    |
 | System-Only            | Falso                                                                                                                                                                                 |
-| È a valore singolo       | Vero                                                                                                                                                                                  |
+| Is-Single-Valued       | Vero                                                                                                                                                                                  |
 | Indicizzato             | Falso                                                                                                                                                                                 |
 | Nel catalogo globale      | Falso                                                                                                                                                                                 |
-| NT-Security-descrittore | O:BAG: NON VALIDO: S:                                                                                                                                                                          |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                                                                                                                                                          |
 | Range-Lower            | \-                                                                                                                                                                                    |
 | Range-Upper            | \-                                                                                                                                                                                    |
 | Search-Flags           | 0x00000000                                                                                                                                                                            |
 | System-Flags           | 0x00000010                                                                                                                                                                            |
-| Classi utilizzate in        | [**Versione applicazione**](c-applicationversion.md)<br/> [**Archivio classi**](c-classstore.md)<br/> [**Punto di connessione del servizio**](c-serviceconnectionpoint.md)<br/> |
+| Classi usate in        | [**Versione applicazione**](c-applicationversion.md)<br/> [**Archivio classi**](c-classstore.md)<br/> [**Punto di connessione del servizio**](c-serviceconnectionpoint.md)<br/> |
 
 
 
@@ -100,15 +100,15 @@ Questo attributo archivia la versione dello schema dell'archivio di classi. Vien
 | ID collegamento                | \-                                                                                                                                                                                    |
 | MAPI-Id                | \-                                                                                                                                                                                    |
 | System-Only            | Falso                                                                                                                                                                                 |
-| È a valore singolo       | Vero                                                                                                                                                                                  |
+| Is-Single-Valued       | Vero                                                                                                                                                                                  |
 | Indicizzato             | Falso                                                                                                                                                                                 |
 | Nel catalogo globale      | Falso                                                                                                                                                                                 |
-| NT-Security-descrittore | O:BAG: NON VALIDO: S:                                                                                                                                                                          |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                                                                                                                                                          |
 | Range-Lower            | \-                                                                                                                                                                                    |
 | Range-Upper            | \-                                                                                                                                                                                    |
 | Search-Flags           | 0x00000000                                                                                                                                                                            |
 | System-Flags           | 0x00000010                                                                                                                                                                            |
-| Classi utilizzate in        | [**Versione applicazione**](c-applicationversion.md)<br/> [**Archivio classi**](c-classstore.md)<br/> [**Punto di connessione del servizio**](c-serviceconnectionpoint.md)<br/> |
+| Classi usate in        | [**Versione applicazione**](c-applicationversion.md)<br/> [**Archivio classi**](c-classstore.md)<br/> [**Punto di connessione del servizio**](c-serviceconnectionpoint.md)<br/> |
 
 
 
@@ -121,15 +121,15 @@ Questo attributo archivia la versione dello schema dell'archivio di classi. Vien
 | ID collegamento                | \-                                                                                                                                                                                    |
 | MAPI-Id                | \-                                                                                                                                                                                    |
 | System-Only            | Falso                                                                                                                                                                                 |
-| È a valore singolo       | Vero                                                                                                                                                                                  |
+| Is-Single-Valued       | Vero                                                                                                                                                                                  |
 | Indicizzato             | Falso                                                                                                                                                                                 |
 | Nel catalogo globale      | Falso                                                                                                                                                                                 |
-| NT-Security-descrittore | O:BAG: NON VALIDO: S:                                                                                                                                                                          |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                                                                                                                                                          |
 | Range-Lower            | \-                                                                                                                                                                                    |
 | Range-Upper            | \-                                                                                                                                                                                    |
 | Search-Flags           | 0x00000000                                                                                                                                                                            |
 | System-Flags           | 0x00000010                                                                                                                                                                            |
-| Classi utilizzate in        | [**Versione applicazione**](c-applicationversion.md)<br/> [**Archivio classi**](c-classstore.md)<br/> [**Punto di connessione del servizio**](c-serviceconnectionpoint.md)<br/> |
+| Classi usate in        | [**Versione applicazione**](c-applicationversion.md)<br/> [**Archivio classi**](c-classstore.md)<br/> [**Punto di connessione del servizio**](c-serviceconnectionpoint.md)<br/> |
 
 
 
@@ -142,15 +142,15 @@ Questo attributo archivia la versione dello schema dell'archivio di classi. Vien
 | ID collegamento                | \-                                                                                                                                                                                    |
 | MAPI-Id                | \-                                                                                                                                                                                    |
 | System-Only            | Falso                                                                                                                                                                                 |
-| È a valore singolo       | Vero                                                                                                                                                                                  |
+| Is-Single-Valued       | Vero                                                                                                                                                                                  |
 | Indicizzato             | Falso                                                                                                                                                                                 |
 | Nel catalogo globale      | Falso                                                                                                                                                                                 |
-| NT-Security-descrittore | O:BAG: NON VALIDO: S:                                                                                                                                                                          |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                                                                                                                                                          |
 | Range-Lower            | \-                                                                                                                                                                                    |
 | Range-Upper            | \-                                                                                                                                                                                    |
 | Search-Flags           | 0x00000000                                                                                                                                                                            |
 | System-Flags           | 0x00000010                                                                                                                                                                            |
-| Classi utilizzate in        | [**Versione applicazione**](c-applicationversion.md)<br/> [**Archivio classi**](c-classstore.md)<br/> [**Punto di connessione del servizio**](c-serviceconnectionpoint.md)<br/> |
+| Classi usate in        | [**Versione applicazione**](c-applicationversion.md)<br/> [**Archivio classi**](c-classstore.md)<br/> [**Punto di connessione del servizio**](c-serviceconnectionpoint.md)<br/> |
 
 
 
@@ -163,15 +163,15 @@ Questo attributo archivia la versione dello schema dell'archivio di classi. Vien
 | ID collegamento                | \-                                                                                                                                                                                    |
 | MAPI-Id                | \-                                                                                                                                                                                    |
 | System-Only            | Falso                                                                                                                                                                                 |
-| È a valore singolo       | Vero                                                                                                                                                                                  |
+| Is-Single-Valued       | Vero                                                                                                                                                                                  |
 | Indicizzato             | Falso                                                                                                                                                                                 |
 | Nel catalogo globale      | Falso                                                                                                                                                                                 |
-| NT-Security-descrittore | O:BAG: NON VALIDO: S:                                                                                                                                                                          |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                                                                                                                                                          |
 | Range-Lower            | \-                                                                                                                                                                                    |
 | Range-Upper            | \-                                                                                                                                                                                    |
 | Search-Flags           | 0x00000000                                                                                                                                                                            |
 | System-Flags           | 0x00000010                                                                                                                                                                            |
-| Classi utilizzate in        | [**Versione applicazione**](c-applicationversion.md)<br/> [**Archivio classi**](c-classstore.md)<br/> [**Punto di connessione del servizio**](c-serviceconnectionpoint.md)<br/> |
+| Classi usate in        | [**Versione applicazione**](c-applicationversion.md)<br/> [**Archivio classi**](c-classstore.md)<br/> [**Punto di connessione del servizio**](c-serviceconnectionpoint.md)<br/> |
 
 
 

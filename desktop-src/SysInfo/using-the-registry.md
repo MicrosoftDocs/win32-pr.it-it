@@ -1,23 +1,23 @@
 ---
-description: Nell'esempio di codice riportato di seguito viene illustrato come utilizzare le funzioni del registro di sistema.
+description: Il codice di esempio seguente illustra come usare le funzioni del Registro di sistema.
 ms.assetid: 9ec22204-2e2f-4470-83ca-df0f2b52c6d5
-title: Uso del registro di sistema
+title: Uso del Registro di sistema
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 34aeeeb758bfc9faace483124ecb1b77f99a1683
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 5c4e3096c58528432e59accedfa59da5b2b06500c10019635a82458ffd31e86a
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "106310731"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118884253"
 ---
-# <a name="using-the-registry"></a>Uso del registro di sistema
+# <a name="using-the-registry"></a>Uso del Registro di sistema
 
-Nell'esempio di codice riportato di seguito viene illustrato come utilizzare le funzioni del registro di sistema.
+Il codice di esempio seguente illustra come usare le funzioni del Registro di sistema.
 
--   [Enumerazione delle sottochiavi del registro di sistema](enumerating-registry-subkeys.md)
+-   [Enumerazione delle sottochiavi del Registro di sistema](enumerating-registry-subkeys.md)
 -   [Eliminazione di una chiave con sottochiavi](deleting-a-key-with-subkeys.md)
--   [Determinazione delle dimensioni del registro di sistema](determining-the-registry-size.md)
+-   [Determinazione delle dimensioni del Registro di sistema](determining-the-registry-size.md)
 
  
 

@@ -1,21 +1,21 @@
 ---
-description: Questo argomento descrive come usare tipi diversi di pennelli in un OM XPS.
+description: Questo argomento descrive come usare diversi tipi di pennelli in un sistema operativo XPS.
 ms.assetid: 392ca1d5-283e-4eed-ae21-6477c469014d
 title: Pennelli OM XPS
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 0557757bfaf81156b2015525d35897cfb042e44b
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: dbca4174c406e0d2fda63d932ee85f2f3c3123b7255b43f77a2365bf0f05e2f5
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "106310150"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118971130"
 ---
 # <a name="xps-om-brushes"></a>Pennelli OM XPS
 
-Questo argomento descrive come usare tipi diversi di pennelli in un OM XPS.
+Questo argomento descrive come usare diversi tipi di pennelli in un sistema operativo XPS.
 
-I pennelli in XPS OM sono basati sull' [**interfaccia IXpsOMBrush**](/windows/desktop/api/xpsobjectmodel/nn-xpsobjectmodel-ixpsombrush) e includono quanto segue:
+I pennelli nel sistema operativo XPS sono basati [**sull'interfaccia IXpsOMBrush**](/windows/desktop/api/xpsobjectmodel/nn-xpsobjectmodel-ixpsombrush) e includono quanto segue:
 
 <dl> Pennelli affiancati
 
@@ -67,7 +67,7 @@ Nell'esempio di codice seguente viene creato un pennello a tinta unita da un val
 
 
 
-### <a name="create-a-visual-brush"></a>Creazione di un pennello visivo
+### <a name="create-a-visual-brush"></a>Creare un pennello visivo
 
 Nell'esempio di codice seguente viene creato un pennello da un oggetto visivo.
 
@@ -108,11 +108,11 @@ Nell'esempio di codice seguente viene creato un pennello da un oggetto visivo.
 
 ### <a name="create-an-image-brush"></a>Creare un pennello immagine
 
-Vedere l'esempio di codice sulle [Immagini del posto in un OM XPS](place-images-in-an-xps-om.md).
+Vedere l'esempio di codice in [Inserire immagini in un sistema operativo XPS.](place-images-in-an-xps-om.md)
 
 ### <a name="create-a-linear-gradient-brush"></a>Creare un pennello a sfumatura lineare
 
-Nell'esempio di codice seguente viene creato un pennello a sfumatura lineare. La sfumatura presenta due cursori sfumatura.
+Nell'esempio di codice seguente viene creato un pennello a sfumatura lineare. La sfumatura ha due interruzioni della sfumatura.
 
 
 ```C++
@@ -198,7 +198,7 @@ Nell'esempio di codice seguente viene creato un pennello a sfumatura lineare. La
 [**Interfaccia IXpsOMVisualBrush**](/windows/desktop/api/xpsobjectmodel/nn-xpsobjectmodel-ixpsomvisualbrush)
 </dt> <dt>
 
-[**\_colore XPS**](xps-color.md)
+[**COLORE \_ XPS**](xps-color.md)
 </dt> <dt>
 
 [XML Paper Specification](https://www.ecma-international.org/activities/XML%20Paper%20Specification/XPS%20Standard%20WD%201.6.pdf)

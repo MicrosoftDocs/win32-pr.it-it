@@ -5,16 +5,16 @@ ms.tgt_platform: multiple
 title: Disponibilità del sistema operativo dei componenti WMI
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 1f9261bd0c636c8f7fd7777d2ad38685ff3ea765
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 5e93ff29479fcba7d30a5872189d5db6894a16124c2f8667828511acddf92672
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104049340"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119050599"
 ---
 # <a name="operating-system-availability-of-wmi-components"></a>Disponibilità del sistema operativo dei componenti WMI
 
-WMI viene installato per impostazione predefinita in tutte le piattaforme desktop e server di Windows. Tuttavia, è possibile che alcuni provider WMI non siano installati, a seconda della versione del sistema operativo e della configurazione. Il provider SNMP, ad esempio, non è abilitato per impostazione predefinita e il provider di Windows Installer (provider MSI) non è installato per impostazione predefinita nei sistemi operativi a 64 bit. Per ulteriori informazioni sulla disponibilità di un provider specifico, vedere [provider WMI](/windows/desktop/SrvNodes/wmi-mi-omi-providers).
+WMI viene installato per impostazione predefinita in tutte Windows desktop e server. Tuttavia, alcuni provider WMI possono essere installati o meno, a seconda della versione e della configurazione del sistema operativo. Ad esempio, il provider SNMP non è abilitato per impostazione predefinita e il provider Windows Installer (provider MSI) non è installato per impostazione predefinita nei sistemi operativi a 64 bit. Per altre informazioni sulla disponibilità di un provider specifico, vedere [Provider WMI](/windows/desktop/SrvNodes/wmi-mi-omi-providers).
 
  
 

@@ -1,6 +1,6 @@
 ---
-title: Funzione D3DPERF_GetStatus
-description: Determinare lo stato corrente del Profiler dal programma di destinazione.
+title: D3DPERF_GetStatus funzione
+description: Determinare lo stato corrente del profiler dal programma di destinazione.
 ms.localizationpriority: low
 ms.topic: reference
 ms.date: 04/06/2020
@@ -16,16 +16,16 @@ api_location:
 api_name:
 - D3DPERF_GetStatus
 targetos: Windows
-ms.openlocfilehash: 626d56dd449b0a0aa92e85c82dabda119900680d
-ms.sourcegitcommit: 517a888e0370b9ec64c451635f12d60245ff5ae3
+ms.openlocfilehash: 78ff9eda9ab224faf4b2a117f6230e3361664bbfea35d8b2a8484ba7f5ab764a
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/08/2020
-ms.locfileid: "104336585"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118805746"
 ---
-# <a name="d3dperf_getstatus-function"></a>Funzione D3DPERF_GetStatus
+# <a name="d3dperf_getstatus-function"></a>D3DPERF_GetStatus funzione
 
-Determinare lo stato corrente del Profiler dal programma di destinazione.
+Determinare lo stato corrente del profiler dal programma di destinazione.
 
 ## <a name="syntax"></a>Sintassi
 
@@ -35,12 +35,12 @@ DWORD WINAPI D3DPERF_GetStatus( void );
 
 ## <a name="return-value"></a>Valore restituito
 
-Valore diverso da zero quando PIX sta profilando il programma di destinazione; in caso contrario, zero.
+Valore diverso da zero quando PIX esegue la profilatura del programma di destinazione. in caso contrario, zero.
 
 ## <a name="requirements"></a>Requisiti
 | &nbsp; | &nbsp; |
 | ---- |:---- |
 | **Piattaforma di destinazione** | Windows |
-| **Intestazione** | d3d9. h |
-| **Libreria** | d3d9. lib |
+| **Intestazione** | d3d9.h |
+| **Libreria** | d3d9.lib |
 | **DLL** | d3d9.dll |

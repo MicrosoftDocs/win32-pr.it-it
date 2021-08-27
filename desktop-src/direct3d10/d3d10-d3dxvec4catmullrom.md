@@ -13,16 +13,16 @@ api_type:
 - HeaderDef
 api_location:
 - D3DX10Math.h
-ms.openlocfilehash: 4e3665709564f578046273facbd3311253d8c2b9
-ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
+ms.openlocfilehash: 4d565d1e9b567ff0c3320d6e0ba6023a6c4917720a2a13f32f98164cb7632123
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/28/2021
-ms.locfileid: "108102959"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118990551"
 ---
 # <a name="d3dxvec4catmullrom-function-d3dx10mathh"></a>Funzione D3DXVec4CatmullRom (D3DX10Math.h)
 
-Esegue unCatmull-Rom interpolazione, usando i vettori 4D specificati.
+Esegue un Catmull-Rom interpolazione, usando i vettori 4D specificati.
 
 ## <a name="syntax"></a>Sintassi
 
@@ -49,7 +49,7 @@ D3DXVECTOR4* D3DXVec4CatmullRom(
 
 Tipo: **[ **D3DXVECTOR4**](../direct3d9/d3dxvector4.md)\***
 
-Puntatore a [**D3DXVECTOR4**](d3d10-d3dxvector4.md) che rappresenta il risultato dell'operazione.
+Puntatore [**all'oggetto D3DXVECTOR4**](d3d10-d3dxvector4.md) che rappresenta il risultato dell'operazione.
 
 </dd> <dt>
 
@@ -102,7 +102,7 @@ Fattore di ponderazione. Vedere la sezione Osservazioni.
 
 Tipo: **[ **D3DXVECTOR4**](../direct3d9/d3dxvector4.md)\***
 
-Puntatore a una struttura D3DXVECTOR4 che rappresenta il risultato dellCatmull-Rom interpolazione.
+Puntatore a una struttura D3DXVECTOR4 che è il risultato dellCatmull-Rom interpolazione.
 
 ## <a name="remarks"></a>Commenti
 
@@ -118,7 +118,7 @@ Q(s) is parallel to the line joining p2 to p4 when s is 1.
 
 
 
-La Catmull-Rom spline può essere derivata dalla spline hermite impostando:
+La Catmull-Rom spline può essere derivata dalla spline Hermite impostando:
 
 
 ```
@@ -140,7 +140,7 @@ p3 è il contenuto di pV2.
 
 p4 è il contenuto di pV3.
 
-Uso dell'equazione spline hermite:
+Uso dell'equazione spline Hermite:
 
 
 ```
@@ -149,7 +149,7 @@ Q(s) = (2s3 - 3s2 + 1)v1 + (-2s3 + 3s2)v2 + (s3 - 2s2 + s)t1 + (s3 - s2)t2
 
 
 
-e sostituendo v1, v2, t1, t2 produce:
+e la sostituzione di v1, v2, t1, t2 produce:
 
 
 ```
@@ -158,7 +158,7 @@ Q(s) = (2s3 - 3s2 + 1)p2 + (-2s3 + 3s2)p3 + (s3 - 2s2 + s)(p3 - p1) / 2 + (s3 - 
 
 
 
-Questa operazione può essere ridisposta nel modo seguente:
+Questo può essere riorganizzato come:
 
 
 ```

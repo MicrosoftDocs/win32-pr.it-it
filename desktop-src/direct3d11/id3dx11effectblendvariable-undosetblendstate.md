@@ -1,11 +1,11 @@
 ---
-title: Metodo ID3DX11EffectBlendVariable UndoSetBlendState (D3dx11effect. h)
-description: Ripristina uno stato di Blend impostato in precedenza.
+title: Metodo ID3DX11EffectBlendVariable UndoSetBlendState (D3dx11effect.h)
+description: Ripristina uno stato di blend impostato in precedenza.
 ms.assetid: 375c225b-558f-4ad0-81e7-62eff3e28cf1
 keywords:
 - Metodo UndoSetBlendState Direct3D 11
 - Metodo UndoSetBlendState Direct3D 11, interfaccia ID3DX11EffectBlendVariable
-- Interfaccia ID3DX11EffectBlendVariable Direct3D 11, metodo UndoSetBlendState
+- Id3DX11EffectBlendVariable interface Direct3D 11 , UndoSetBlendState method
 topic_type:
 - apiref
 api_name:
@@ -17,16 +17,16 @@ api_type:
 - COM
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: e117eafa9b6379b2240cf491809c58d8600d840f
-ms.sourcegitcommit: 14010c34b35fa268046c7683f021f86de08ddd0a
+ms.openlocfilehash: 5fefb1e59ef3ef30bcd21700a2573830e3178f574fe631ab4c7373b0bddd5fdb
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/15/2021
-ms.locfileid: "104996077"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119046479"
 ---
-# <a name="id3dx11effectblendvariableundosetblendstate-method"></a>Metodo ID3DX11EffectBlendVariable:: UndoSetBlendState
+# <a name="id3dx11effectblendvariableundosetblendstate-method"></a>Metodo ID3DX11EffectBlendVariable::UndoSetBlendState
 
-Ripristina uno stato di Blend impostato in precedenza.
+Ripristina uno stato di blend impostato in precedenza.
 
 ## <a name="syntax"></a>Sintassi
 
@@ -46,9 +46,9 @@ HRESULT UndoSetBlendState(
 *Index* 
 </dt> <dd>
 
-Tipo: **[ **uint**](/windows/desktop/WinProg/windows-data-types)**
+Tipo: **[ **UINT**](/windows/desktop/WinProg/windows-data-types)**
 
-Indicizzare in una matrice di interfacce di stato di Blend. Se è presente una sola interfaccia di stato di Blend, usare 0.
+Indicizzare in una matrice di interfacce di stato di blend. Se è presente una sola interfaccia dello stato di blend, usare 0.
 
 </dd> </dl>
 
@@ -56,12 +56,12 @@ Indicizzare in una matrice di interfacce di stato di Blend. Se è presente una s
 
 Tipo: **[ **HRESULT**](https://msdn.microsoft.com/library/Bb401631(v=MSDN.10).aspx)**
 
-Restituisce uno dei seguenti [codici restituiti Direct3D 11](d3d11-graphics-reference-returnvalues.md).
+Restituisce uno dei codici [restituiti Direct3D 11 seguenti.](d3d11-graphics-reference-returnvalues.md)
 
 ## <a name="remarks"></a>Commenti
 
 > [!Note]  
-> DirectX SDK non fornisce binari compilati per gli effetti. È necessario usare Effects 11 source per compilare l'applicazione di tipo Effects. Per ulteriori informazioni sull'utilizzo dell'origine Effects 11, vedere [differenze tra gli effetti 10 e gli effetti 11](d3d11-graphics-programming-guide-effects-differences.md).
+> DirectX SDK non fornisce alcun file binario compilato per gli effetti. È necessario usare l'origine Effects 11 per compilare l'applicazione effects-type. Per altre informazioni sull'uso dell'origine Effetti 11, vedere Differenze [tra effetti 10 ed effetti 11.](d3d11-graphics-programming-guide-effects-differences.md)
 
  
 
@@ -71,8 +71,8 @@ Restituisce uno dei seguenti [codici restituiti Direct3D 11](d3d11-graphics-refe
 
 | Requisito | Valore |
 |--------------------|----------------------------------------------------------------------------------------------------------------------------------------------|
-| Intestazione<br/>  | <dl> <dt>D3dx11effect. h</dt> </dl>                                                    |
-| Libreria<br/> | <dl> <dt>N/d (la libreria Effects 11 è disponibile online come origine condivisa).</dt> </dl> |
+| Intestazione<br/>  | <dl> <dt>D3dx11effect.h</dt> </dl>                                                    |
+| Libreria<br/> | <dl> <dt>N/D (una libreria effects 11 è disponibile online come origine condivisa).</dt> </dl> |
 
 
 

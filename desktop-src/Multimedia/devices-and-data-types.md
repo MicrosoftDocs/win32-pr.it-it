@@ -5,21 +5,21 @@ ms.assetid: 46247983-19c3-4c7a-a615-ba6cd8bd3289
 keywords:
 - audio waveform, apertura di dispositivi di output
 - interfaccia waveform-audio, apertura di dispositivi di output
-- apertura di dispositivi di output audio-waveform
+- apertura di dispositivi di output audio waveform
 - audio waveform, esecuzione di query su dispositivi di output
 - interfaccia waveform-audio, esecuzione di query sui dispositivi di output
 - esecuzione di query su dispositivi di output audio-waveform
-- audio waveform, handle di dispositivo
+- audio waveform, handle del dispositivo
 - interfaccia waveform-audio, handle di dispositivo
 - audio waveform, identificatori di dispositivo
-- interfaccia waveform-audio, identificatori di dispositivo
+- interfaccia audio waveform, identificatori di dispositivo
 - audio waveform, tipi di dati di output
 - interfaccia waveform-audio, tipi di dati di output
 - audio waveform, formati di dati
 - interfaccia waveform-audio, formati di dati
 - scrittura di dati audio waveform
 - audio waveform, scrittura di dati
-- interfaccia audio-forma d'onda, scrittura di dati
+- interfaccia audio waveform, scrittura di dati
 - Dati audio waveform PCM
 - audio waveform, dati PCM
 - interfaccia audio waveform,dati PCM
@@ -28,12 +28,12 @@ keywords:
 - chiusura di dispositivi di output audio-forma d'onda
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 2abe0c2c20c52f4498316fb619885d41f85e41d6
-ms.sourcegitcommit: b32433cc0394159c7263809ae67615ab5792d40d
+ms.openlocfilehash: 165f740e260c4e1a25fbd40cac9b8efd66ccd401c3e166dd1119b92c7b9999f4
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/30/2021
-ms.locfileid: "113120246"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118941269"
 ---
 # <a name="devices-and-data-types"></a>Dispositivi e tipi di dati
 
@@ -47,7 +47,7 @@ Alcuni computer multimediali hanno più dispositivi di output audio waveform. A 
 
 ## <a name="querying-audio-devices"></a>Esecuzione di query su dispositivi audio
 
-Windows offre le funzioni seguenti per determinare il numero di dispositivi di un determinato tipo disponibili in un sistema.
+Windows fornisce le funzioni seguenti per determinare il numero di dispositivi di un determinato tipo disponibili in un sistema.
 
 
 
@@ -61,7 +61,7 @@ Windows offre le funzioni seguenti per determinare il numero di dispositivi di u
 
  
 
-I dispositivi audio sono identificati da un identificatore di dispositivo. L'identificatore del dispositivo viene determinato in modo implicito dal numero di dispositivi presenti in un sistema. Gli identificatori dei dispositivi sono da zero a uno in meno rispetto al numero di dispositivi presenti. Ad esempio, se in un sistema sono presenti due dispositivi di output audio-waveform, gli identificatori di dispositivo validi sono 0 e 1.
+I dispositivi audio sono identificati da un identificatore di dispositivo. L'identificatore del dispositivo viene determinato in modo implicito dal numero di dispositivi presenti in un sistema. Gli identificatori dei dispositivi sono da zero a uno in meno rispetto al numero di dispositivi presenti. Ad esempio, se sono presenti due dispositivi di output audio-waveform in un sistema, gli identificatori di dispositivo validi sono 0 e 1.
 
 Dopo aver determinato il numero di dispositivi di un determinato tipo presenti in un sistema, è possibile usare una delle funzioni seguenti per eseguire query sulle funzionalità di ogni dispositivo.
 
@@ -108,7 +108,7 @@ Non sono disponibili funzioni che aprono o chiudono i dispositivi audio ausiliar
 
 ## <a name="waveform-audio-output-data-types"></a>Waveform-Audio di dati di output
 
-I tipi di dati seguenti sono definiti per le funzioni di output audio-forma d'onda.
+Per le funzioni di output audio-waveform vengono definiti i tipi di dati seguenti.
 
 
 
@@ -125,27 +125,27 @@ I tipi di dati seguenti sono definiti per le funzioni di output audio-forma d'on
 
 ## <a name="specifying-waveform-audio-data-formats"></a>Specifica di Waveform-Audio dati personalizzati
 
-Quando si chiama la funzione [**waveOutOpen**](/windows/win32/api/mmeapi/nf-mmeapi-waveoutopen) per aprire un driver di dispositivo per la riproduzione o per verificare se il driver supporta un particolare formato dati, usare il parametro *pwfx* per specificare un puntatore a una struttura [**WAVEFORMATEX**](/windows/win32/api/mmeapi/ns-mmeapi-waveformatex) contenente il formato dati audio waveform richiesto. **WAVEFORMATEX** sostituisce le [**strutture WAVEFORMAT**](/windows/win32/api/mmreg/ns-mmreg-waveformat) e [**PCMWAVEFORMAT.**](/windows/win32/api/mmreg/ns-mmreg-pcmwaveformat)
+Quando si chiama la funzione [**waveOutOpen**](/windows/win32/api/mmeapi/nf-mmeapi-waveoutopen) per aprire un driver di dispositivo per la riproduzione o per verificare se il driver supporta un formato dati specifico, usare il *parametro pwfx* per specificare un puntatore a [**una struttura WAVEFORMATEX**](/windows/win32/api/mmeapi/ns-mmeapi-waveformatex) contenente il formato dati waveform-audio richiesto. **WAVEFORMATEX** sostituisce le [**strutture WAVEFORMAT**](/windows/win32/api/mmreg/ns-mmreg-waveformat) e [**PCMWAVEFORMAT.**](/windows/win32/api/mmreg/ns-mmreg-pcmwaveformat)
 
-Per i dati audio separati in più di due canali o con una dimensione del campione diversa da un multiplo di 8, è consigliabile usare [**WAVEFORMATEXTENSIBLE.**](/windows/win32/api/mmreg/ns-mmreg-waveformatextensible) Questa struttura configura semplicemente i byte aggiuntivi a cui punta il membro **cbSize** di **WAVEFORMATEX** per fornire informazioni aggiuntive sul formato. È possibile eseguire il cast di **WAVEFORMATEXTENSIBLE** come **WAVEFORMATEX.**
+Per i dati audio separati in più di due canali o con una dimensione di campionamento diversa da un multiplo di 8, è consigliabile usare [**WAVEFORMATEXTENSIBLE**](/windows/win32/api/mmreg/ns-mmreg-waveformatextensible). Questa struttura configura semplicemente i byte aggiuntivi a cui punta il membro **cbSize** di **WAVEFORMATEX** per fornire informazioni aggiuntive sul formato. È possibile eseguire il cast di **WAVEFORMATEXTENSIBLE** come **WAVEFORMATEX**.
 
-Esistono anche due formati di Appunti che è possibile usare per rappresentare i dati audio: CF \_ WAVE e CF \_ RIFF. Usare il formato CF WAVE per rappresentare i dati in uno dei formati standard, ad esempio PCM a \_ 11 o 22 kHz. Usare il formato RIFF CF per rappresentare formati di dati più \_ complessi che non possono essere rappresentati come file audio waveform standard.
+Esistono anche due formati di Appunti che è possibile usare per rappresentare i dati audio: CF \_ WAVE e CF \_ RIFF. Usare il formato CF WAVE per rappresentare i dati in uno dei formati standard, ad esempio \_ PCM a 11 kHz o 22 kHz. Usare il formato CF RIFF per rappresentare formati di dati più complessi che \_ non possono essere rappresentati come file audio con forma d'onda standard.
 
 ## <a name="writing-waveform-audio-data"></a>Scrittura Waveform-Audio dati
 
-Dopo aver aperto correttamente un driver di dispositivo di output audio-forma d'onda, è possibile iniziare a riprodurre un suono. Windows fornisce la [**funzione waveOutWrite**](/windows/win32/api/mmeapi/nf-mmeapi-waveoutwrite) per l'invio di blocchi di dati ai dispositivi di output audio waveform.
+Dopo aver aperto correttamente un driver di dispositivo di output waveform-audio, è possibile iniziare a riprodurre un suono. Windows fornisce la [**funzione waveOutWrite**](/windows/win32/api/mmeapi/nf-mmeapi-waveoutwrite) per l'invio di blocchi di dati ai dispositivi di output waveform-audio.
 
-Usare la [**struttura WAVEHDR**](/windows/win32/api/mmeapi/ns-mmeapi-wavehdr) per specificare il blocco di dati audio-forma d'onda che si sta inviando usando **waveOutWrite.** Questa struttura contiene un puntatore a un blocco di dati bloccato, la lunghezza del blocco di dati e alcuni flag. Questo blocco di dati deve essere preparato prima di usarlo. Per informazioni sulla preparazione di un blocco di dati, vedere [Blocchi di dati audio.](audio-data-blocks.md)
+Usare la [**struttura WAVEHDR**](/windows/win32/api/mmeapi/ns-mmeapi-wavehdr) per specificare il blocco di dati waveform-audio che si sta inviando usando **waveOutWrite**. Questa struttura contiene un puntatore a un blocco di dati bloccato, la lunghezza del blocco di dati e alcuni flag. Questo blocco di dati deve essere preparato prima di usarlo. Per informazioni sulla preparazione di un blocco di dati, vedere [Blocchi di dati audio](audio-data-blocks.md).
 
-Dopo aver inviato un blocco di dati a un dispositivo di output usando **waveOutWrite,** è necessario attendere il completamento del blocco di dati da parte del driver di dispositivo prima di liberarlo. Se si inviano più blocchi di dati, è necessario monitorare il completamento dei blocchi di dati per sapere quando inviare blocchi aggiuntivi. Per altre informazioni sui blocchi di dati, vedere [Blocchi di dati audio.](audio-data-blocks.md)
+Dopo aver inviato un blocco di dati a un dispositivo di output usando **waveOutWrite,** è necessario attendere il completamento del driver di dispositivo con il blocco di dati prima di liberarlo. Se si inviano più blocchi di dati, è necessario monitorare il completamento dei blocchi di dati per sapere quando inviare blocchi aggiuntivi. Per altre informazioni sui blocchi di dati, vedere [Blocchi di dati audio](audio-data-blocks.md).
 
 ## <a name="pcm-waveform-audio-data-format"></a>Formato dati Waveform-Audio PCM
 
-Il **membro lpData** della struttura [**WAVEHDR**](/windows/win32/api/mmeapi/ns-mmeapi-wavehdr) punta agli esempi di dati audio della forma d'onda. Per i dati PCM a 8 bit, ogni campione è rappresentato da un singolo byte di dati senza segno. Per i dati PCM a 16 bit, ogni campione è rappresentato da un valore con segno a 16 bit. La tabella seguente riepiloga i valori massimo, minimo e medio per i dati audio della forma d'onda PCM.
+Il **membro lpData** della struttura [**WAVEHDR**](/windows/win32/api/mmeapi/ns-mmeapi-wavehdr) punta agli esempi di dati waveform-audio. Per i dati PCM a 8 bit, ogni campione è rappresentato da un singolo byte di dati senza segno. Per i dati PCM a 16 bit, ogni esempio è rappresentato da un valore con segno a 16 bit. La tabella seguente riepiloga i valori massimo, minimo e medio per i dati audio della forma d'onda PCM.
 
 
 
-| Formato dati | Valore massimo   | Valore minimo    | Valore punto medio |
+| Formato dati | Valore massimo   | Valore minimo    | Valore del punto medio |
 |-------------|-----------------|------------------|----------------|
 | PCM a 8 bit   | 255 (0xFF)      | 0                | 128 (0x80)     |
 | PCM a 16 bit  | 32.767 (0x7FFF) | –32.768 (0x8000) | 0              |
@@ -160,21 +160,21 @@ L'ordine dei byte di dati varia tra i formati a 8 bit e a 16 bit e tra i formati
 
 
 
-| Formato audio waveform PCM | Descrizione                                                                                                                                                                                                                                                                                                                                     |
+| Formato waveform-audio PCM | Descrizione                                                                                                                                                                                                                                                                                                                                     |
 |---------------------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | Mono a 8 bit                | Ogni campione è di 1 byte che corrisponde a un singolo canale audio. L'esempio 1 è seguito dagli esempi 2, 3, 4 e così via.                                                                                                                                                                                                                           |
-| Stereo a 8 bit              | Ogni campione è di 2 byte. L'esempio 1 è seguito dagli esempi 2, 3, 4 e così via. Per ogni esempio, il primo byte è il canale 0 (il canale sinistro) e il secondo byte è il canale 1 (il canale destro).                                                                                                                                               |
-| Mono a 16 bit               | Ogni campione è di 2 byte. L'esempio 1 è seguito dagli esempi 2, 3, 4 e così via. Per ogni campione, il primo byte è il byte di ordine più basso del canale 0 e il secondo byte è il byte più significativo del canale 0.                                                                                                                                         |
-| Stereo a 16 bit             | Ogni campione è di 4 byte. L'esempio 1 è seguito dagli esempi 2, 3, 4 e così via. Per ogni esempio, il primo byte è il byte di ordine inferiore del canale 0 (canale sinistro); il secondo byte è il byte più significativo del canale 0; il terzo byte è il byte di ordine inferiore del canale 1 (canale destro); e il quarto byte è il byte più significativo del canale 1. |
-| Altro                    | Ogni campione è contenuto in un blocco che è un multiplo di 4 byte, ma i campioni possono essere non allineati a byte. La disposizione dei canali è specificata da una maschera. Per altre informazioni, vedere [**WAVEFORMATEXTENSIBLE.**](/windows/win32/api/mmreg/ns-mmreg-waveformatextensible)                                                                                                 |
+| Stereo a 8 bit              | Ogni esempio è di 2 byte. L'esempio 1 è seguito dagli esempi 2, 3, 4 e così via. Per ogni esempio, il primo byte è il canale 0 (canale sinistro) e il secondo byte è il canale 1 (canale destro).                                                                                                                                               |
+| Mono a 16 bit               | Ogni esempio è di 2 byte. L'esempio 1 è seguito dagli esempi 2, 3, 4 e così via. Per ogni esempio, il primo byte è il byte di ordine basso del canale 0 e il secondo è il byte di ordine superiore del canale 0.                                                                                                                                         |
+| Stereo a 16 bit             | Ogni esempio è di 4 byte. L'esempio 1 è seguito dagli esempi 2, 3, 4 e così via. Per ogni esempio, il primo byte è il byte di ordine inferiore del canale 0 (canale sinistro); il secondo byte è il byte di ordine superiore del canale 0. il terzo byte è il byte di ordine inferiore del canale 1 (canale destro); e il quarto byte è il byte di ordine superiore del canale 1. |
+| Altro                    | Ogni esempio è contenuto in un blocco che è un multiplo di 4 byte, ma gli esempi possono essere non allineati a byte. La disposizione dei canali viene specificata da una maschera. Per altre informazioni, vedere [**WAVEFORMATEXTENSIBLE**](/windows/win32/api/mmreg/ns-mmreg-waveformatextensible).                                                                                                 |
 
 
 
  
 
-## <a name="closing-waveform-audio-output-devices"></a>Chiusura Waveform-Audio di output
+## <a name="closing-waveform-audio-output-devices"></a>Chiusura Waveform-Audio dispositivi di output
 
-Al termine della riproduzione audio waveform, chiamare [**waveOutClose**](/windows/win32/api/mmeapi/nf-mmeapi-waveoutclose) per chiudere il dispositivo di output. Se **waveOutClose viene** chiamato durante la riproduzione di un file audio waveform, l'operazione di chiusura ha esito negativo e la funzione restituisce un codice di errore che indica che il dispositivo non è stato chiuso. Se non si vuole attendere la fine della riproduzione prima di chiudere il dispositivo, chiamare la funzione [**waveOutReset**](/windows/win32/api/mmeapi/nf-mmeapi-waveoutreset) prima della chiusura. Questa operazione termina la riproduzione e consente la chiusura del dispositivo. Assicurarsi di usare la funzione [**waveOutUnprepareHeader**](/windows/win32/api/mmeapi/nf-mmeapi-waveoutunprepareheader) per pulire la preparazione in tutti i blocchi di dati prima di chiudere il dispositivo.
+Al termine della riproduzione waveform-audio, chiamare [**waveOutClose**](/windows/win32/api/mmeapi/nf-mmeapi-waveoutclose) per chiudere il dispositivo di output. Se **waveOutClose viene** chiamato durante la riproduzione di un file waveform-audio, l'operazione di chiusura ha esito negativo e la funzione restituisce un codice di errore che indica che il dispositivo non è stato chiuso. Se non si vuole attendere la fine della riproduzione prima di chiudere il dispositivo, chiamare la [**funzione waveOutReset**](/windows/win32/api/mmeapi/nf-mmeapi-waveoutreset) prima della chiusura. La riproduzione termina e consente la chiusura del dispositivo. Assicurarsi di usare la [**funzione waveOutUnprepareHeader**](/windows/win32/api/mmeapi/nf-mmeapi-waveoutunprepareheader) per pulire la preparazione in tutti i blocchi di dati prima di chiudere il dispositivo.
 
  
 

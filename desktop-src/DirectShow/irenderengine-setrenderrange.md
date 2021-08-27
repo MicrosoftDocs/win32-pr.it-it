@@ -1,7 +1,7 @@
 ---
-description: Il metodo SetRenderRange imposta l'intervallo di tempo nella sequenza temporale di cui eseguire il rendering. Non viene eseguito il rendering degli oggetti che non rientrano nell'intervallo specificato e le risorse non sono allocate.
+description: Il metodo SetRenderRange imposta l'intervallo di tempo sulla sequenza temporale di cui eseguire il rendering. Gli oggetti che non si trovano all'esterno dell'intervallo specificato non vengono sottoposti a rendering e le risorse non vengono allocate per essi.
 ms.assetid: 2dcdca6b-2bae-4a27-bfbc-19a9b2ea633a
-title: 'Metodo IRenderEngine:: SetRenderRange (qedit. h)'
+title: Metodo IRenderEngine::SetRenderRange (Qedit.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -14,21 +14,21 @@ api_type:
 api_location:
 - strmiids.lib
 - strmiids.dll
-ms.openlocfilehash: e715c2c0077a890948cfd5f5026afe98633325ef
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: 0255b7806e2e2303bb2ca953fc5e59886480cbf3525d4de1bf1ef2fbd1388caf
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "106330784"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118952520"
 ---
-# <a name="irenderenginesetrenderrange-method"></a>Metodo IRenderEngine:: SetRenderRange
+# <a name="irenderenginesetrenderrange-method"></a>Metodo IRenderEngine::SetRenderRange
 
 > [!Note]  
-> \[Deprecato. Questa API può essere rimossa dalle versioni successive di Windows.\]
+> \[Deprecato. Questa API potrebbe essere rimossa dalle versioni future Windows.\]
 
  
 
-Il `SetRenderRange` metodo imposta l'intervallo di tempo nella sequenza temporale di cui eseguire il rendering. Non viene eseguito il rendering degli oggetti che non rientrano nell'intervallo specificato e le risorse non sono allocate.
+Il `SetRenderRange` metodo imposta l'intervallo di tempo sulla sequenza temporale di cui eseguire il rendering. Gli oggetti che non si trovano all'esterno dell'intervallo specificato non vengono sottoposti a rendering e le risorse non vengono allocate per essi.
 
 ## <a name="syntax"></a>Sintassi
 
@@ -49,27 +49,27 @@ HRESULT SetRenderRange(
 *Inizia* 
 </dt> <dd>
 
-Ora di inizio, in unità di 100 nanosecondi.
+Ora di inizio, in unità da 100 nanosecondi.
 
 </dd> <dt>
 
 *Stop* 
 </dt> <dd>
 
-Ora di arresto, in unità di 100 nanosecondi.
+Tempo di arresto, in unità da 100 nanosecondi.
 
 </dd> </dl>
 
 ## <a name="return-value"></a>Valore restituito
 
-Restituisce uno dei seguenti valori **HRESULT** :
+Restituisce uno dei valori **HRESULT** seguenti:
 
 
 
 | Codice restituito                                                                                            | Descrizione                                    |
 |--------------------------------------------------------------------------------------------------------|------------------------------------------------|
-| <dl> <dt>**\_OK**</dt> </dl>                   | Esito positivo.<br/>                            |
-| <dl> <dt>**E \_ deve \_ inizializzare il \_ RENDERER**</dt> </dl> | Impossibile inizializzare il motore di rendering.<br/> |
+| <dl> <dt>**S \_ OK**</dt> </dl>                   | Operazione completata.<br/>                            |
+| <dl> <dt>**E \_ DEVE \_ INIT \_ RENDERER**</dt> </dl> | Impossibile inizializzare il motore di rendering.<br/> |
 
 
 
@@ -78,12 +78,12 @@ Restituisce uno dei seguenti valori **HRESULT** :
 ## <a name="remarks"></a>Commenti
 
 > [!Note]  
-> Il file di intestazione qedit. h non è compatibile con le intestazioni Direct3D successive alla versione 7.
+> Il file di intestazione Qedit.h non è compatibile con le intestazioni Direct3D successive alla versione 7.
 
  
 
 > [!Note]  
-> Per ottenere qedit. h, scaricare l' [aggiornamento Microsoft Windows SDK per Windows Vista e .NET Framework 3,0](https://msdn.microsoft.com/windowsvista/bb980924.aspx). Qedit. h non è disponibile nel Microsoft Windows SDK per Windows 7 e .NET Framework 3,5 Service Pack 1.
+> Per ottenere Qedit.h, scaricare l'aggiornamento di Microsoft Windows SDK per Windows [Vista e .NET Framework 3.0.](https://msdn.microsoft.com/windowsvista/bb980924.aspx) Qedit.h non è disponibile in Microsoft Windows SDK per Windows 7 e .NET Framework 3.5 Service Pack 1.
 
  
 
@@ -93,8 +93,8 @@ Restituisce uno dei seguenti valori **HRESULT** :
 
 | Requisito | Valore |
 |--------------------|-----------------------------------------------------------------------------------------|
-| Intestazione<br/>  | <dl> <dt>Qedit. h</dt> </dl>      |
-| Libreria<br/> | <dl> <dt>Strmiids. lib</dt> </dl> |
+| Intestazione<br/>  | <dl> <dt>Qedit.h</dt> </dl>      |
+| Libreria<br/> | <dl> <dt>Strmiids.lib</dt> </dl> |
 
 
 

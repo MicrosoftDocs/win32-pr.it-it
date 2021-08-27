@@ -1,28 +1,28 @@
 ---
-description: Schannel USA CryptoAPI per le operazioni di crittografia, ad esempio l'archiviazione di chiavi pubbliche/private.
+description: Schannel usa CryptoAPI per le operazioni di crittografia, ad esempio l'archiviazione di chiavi pubbliche/private.
 ms.assetid: 5ad9a171-5f69-4035-aac5-ae8d27d0abfb
 title: Schannel e CryptoAPI
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 0684cd690911444b77ba27d2876e578fd71c73a2
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: f79a351e1f27a94f5974988b78542401ddda8058804d2ef845cdf0c0da2d85dc
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104401577"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118918820"
 ---
 # <a name="schannel-and-cryptoapi"></a>Schannel e CryptoAPI
 
-Schannel USA [CryptoAPI](../seccrypto/cryptography-essentials.md) per le operazioni di crittografia, ad esempio l'archiviazione di [*chiavi pubbliche/private*](../secgloss/p-gly.md).
+Schannel usa [CryptoAPI per](../seccrypto/cryptography-essentials.md) le operazioni di crittografia, ad esempio l'archiviazione [*di chiavi pubbliche/private.*](../secgloss/p-gly.md)
 
-Negli argomenti seguenti vengono fornite informazioni dettagliate sull'utilizzo di CryptoAPI da parte di Schannel.
+Gli argomenti seguenti forniscono informazioni dettagliate su come Schannel usa CryptoAPI.
 
 
 
 | Argomento                                                                   | Descrizione                                                                                                          |
 |-------------------------------------------------------------------------|----------------------------------------------------------------------------------------------------------------------|
 | [Archivi certificati](certificate-stores.md)<br/>                 | I certificati client e server devono essere archiviati in un archivio certificati.<br/>                                |
-| [Chiavi private CryptoAPI 2.0](cryptoapi-2-0-private-keys.md)<br/> | Le credenziali Schannel sono rappresentate internamente come strutture del [**\_ contesto del certificato**](/windows/win32/api/wincrypt/ns-wincrypt-cert_context) .<br/> |
+| [CryptoAPI 2.0 Private Keys](cryptoapi-2-0-private-keys.md)<br/> | Le credenziali Schannel sono rappresentate internamente come [**strutture CERT \_ CONTEXT.**](/windows/win32/api/wincrypt/ns-wincrypt-cert_context)<br/> |
 
 
 

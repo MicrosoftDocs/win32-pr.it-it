@@ -1,9 +1,9 @@
 ---
-title: Struttura WINBIO_IDENTITY ( \_ tipi WINBIO. h)
+title: WINBIO_IDENTITY struttura (Winbio \_ types.h)
 description: Contiene un valore di identificazione associato a un modello biometrico.
 ms.assetid: 58a5f4ba-2f58-466c-90fd-9480c3c095db
 keywords:
-- Struttura di WINBIO_IDENTITY Windows Biometric Framework API
+- WINBIO_IDENTITY struttura Windows'API Biometric Framework
 topic_type:
 - apiref
 api_name:
@@ -14,16 +14,16 @@ api_type:
 - HeaderDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 8092754b9107029e0be5800bbd5bc98bc3efb91c
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: c677a341386bcc937061798f406397028c23c10b65989480da975a9fdf81a3c3
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "104119982"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118910119"
 ---
-# <a name="winbio_identity-structure"></a>\_Struttura di identità WINBIO
+# <a name="winbio_identity-structure"></a>Struttura WINBIO \_ IDENTITY
 
-La struttura di **\_ identità WINBIO** contiene un valore di identificazione associato a un modello biometrico.
+La **struttura WINBIO \_ IDENTITY** contiene un valore di identificazione associato a un modello biometrico.
 
 ## <a name="syntax"></a>Sintassi
 
@@ -52,16 +52,16 @@ typedef struct _WINBIO_IDENTITY {
 **Tipo**
 </dt> <dd>
 
-Specifica il formato delle informazioni di identità contenute nella struttura. I valori possibili sono i seguenti:
+Specifica il formato delle informazioni sull'identità contenute in questa struttura. I valori possibili sono i seguenti:
 
 
 
 | Valore                                                                                                                                                                                         | Significato                                                                         |
 |-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|---------------------------------------------------------------------------------|
-| <span id="WINBIO_ID_TYPE_NULL"></span><span id="winbio_id_type_null"></span><dl> <dt>**\_tipo di ID WINBIO \_ \_ null**</dt> </dl>             | Al modello non è associato alcun ID.<br/>                                   |
-| <span id="WINBIO_ID_TYPE_WILDCARD"></span><span id="winbio_id_type_wildcard"></span><dl> <dt>**\_ \_ carattere jolly tipo ID WINBIO \_**</dt> </dl> | La struttura corrisponde a tutte le identità del modello.<br/>                       |
-| <span id="WINBIO_ID_TYPE_GUID"></span><span id="winbio_id_type_guid"></span><dl> <dt>**\_ \_ GUID tipo ID \_ WINBIO**</dt> </dl>             | La struttura contiene un GUID associato al modello.<br/>          |
-| <span id="WINBIO_ID_TYPE_SID"></span><span id="winbio_id_type_sid"></span><dl> <dt>**\_ \_ SID tipo ID \_ WINBIO**</dt> </dl>                | La struttura contiene il SID dell'account associato al modello.<br/> |
+| <span id="WINBIO_ID_TYPE_NULL"></span><span id="winbio_id_type_null"></span><dl> <dt>**TIPO DI ID WINBIO \_ \_ \_ NULL**</dt> </dl>             | Al modello non è associato alcun ID.<br/>                                   |
+| <span id="WINBIO_ID_TYPE_WILDCARD"></span><span id="winbio_id_type_wildcard"></span><dl> <dt>**CARATTERE JOLLY DI TIPO ID WINBIO \_ \_ \_**</dt> </dl> | La struttura corrisponde a tutte le identità del modello.<br/>                       |
+| <span id="WINBIO_ID_TYPE_GUID"></span><span id="winbio_id_type_guid"></span><dl> <dt>**GUID DEL TIPO \_ DI \_ \_ ID WINBIO**</dt> </dl>             | La struttura contiene un GUID associato al modello.<br/>          |
+| <span id="WINBIO_ID_TYPE_SID"></span><span id="winbio_id_type_sid"></span><dl> <dt>**SID DEL TIPO DI ID WINBIO \_ \_ \_**</dt> </dl>                | La struttura contiene il SID dell'account associato al modello.<br/> |
 
 
 
@@ -79,28 +79,28 @@ Unione che può contenere uno dei valori seguenti:
 **Null**
 </dt> <dd>
 
-Contiene 1 se il membro del **tipo** è **WINBIO \_ ID \_ tipo \_ null**.
+Contiene 1 se il **membro Type** è **WINBIO \_ ID TYPE \_ \_ NULL.**
 
 </dd> <dt>
 
-**Jolly**
+**Carattere jolly**
 </dt> <dd>
 
-Contiene 1 se il membro del **tipo** è un **\_ \_ \_ carattere jolly di tipo ID WINBIO**.
+Contiene 1 se il **membro Type** è **WINBIO \_ ID TYPE \_ \_ WILDCARD**.
 
 </dd> <dt>
 
 **TemplateGuid**
 </dt> <dd>
 
-Contiene un valore GUID a 128 bit che identifica il modello se il membro del **tipo** è **WINBIO \_ ID \_ tipo \_ GUID**.
+Contiene un valore GUID a 128 bit che identifica il modello se il membro **Type** è **WINBIO \_ ID TYPE \_ \_ GUID**.
 
 </dd> <dt>
 
 **AccountSid**
 </dt> <dd>
 
-Struttura che contiene un SID dell'account se il membro di **tipo** è **WINBIO \_ ID \_ tipo \_ SID**.
+Struttura che contiene un SID dell'account se il membro **Type** è **WINBIO \_ ID TYPE \_ \_ SID**.
 
 <dl> <dt>
 
@@ -114,13 +114,13 @@ Numero di caratteri nel SID.
 **Dati**
 </dt> <dd>
 
-Matrice di caratteri non firmati che contengono il SID. La dimensione massima corrente della matrice è 68 caratteri.
+Matrice di caratteri senza segno che contengono il SID. La dimensione massima corrente della matrice è di 68 caratteri.
 
 </dd> </dl> </dd> </dl> </dd> </dl>
 
 ## <a name="remarks"></a>Commenti
 
-Questa struttura viene utilizzata nelle funzioni seguenti:
+Questa struttura viene usata nelle funzioni seguenti:
 
 -   [**WinBioDeleteTemplate**](/windows/desktop/api/Winbio/nf-winbio-winbiodeletetemplate)
 -   [**WinBioEnrollCommit**](/windows/desktop/api/Winbio/nf-winbio-winbioenrollcommit)
@@ -137,9 +137,9 @@ Questa struttura viene utilizzata nelle funzioni seguenti:
 
 | Requisito | Valore |
 |-------------------------------------|---------------------------------------------------------------------------------------------------------------|
-| Client minimo supportato<br/> | \[Solo app desktop di Windows 7\]<br/>                                                                    |
-| Server minimo supportato<br/> | Solo app desktop Windows Server 2008 R2 \[\]<br/>                                                       |
-| Intestazione<br/>                   | <dl> <dt>\_Tipi WinBio. h (includere WinBio. h)</dt> </dl> |
+| Client minimo supportato<br/> | Windows 7 \[ app desktop\]<br/>                                                                    |
+| Server minimo supportato<br/> | Windows Solo app desktop server 2008 R2 \[\]<br/>                                                       |
+| Intestazione<br/>                   | <dl> <dt>Winbio \_ types.h (include Winbio.h)</dt> </dl> |
 
 
 

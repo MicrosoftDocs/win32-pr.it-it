@@ -1,7 +1,7 @@
 ---
-description: Il metodo GetPinCount Recupera il numero di pin sul filtro.
+description: Il metodo GetPinCount recupera il numero di pin nel filtro.
 ms.assetid: 29039ada-fccd-4890-b36b-3dd5c0bbdc3e
-title: Metodo CTransformFilter. GetPinCount (Transfrm. h)
+title: Metodo CTransformFilter.GetPinCount (Transfrm.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -16,16 +16,16 @@ api_location:
 - Strmbase.dll
 - Strmbasd.lib
 - Strmbasd.dll
-ms.openlocfilehash: ba1d2046bf7be31a9c0d3f3d43b13aeeffd1f76b
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: ac9269149d7f2bbc95e811515f70aa279a4aafd8cf34b2d5077ed69019b86c2d
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "106331151"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118953600"
 ---
-# <a name="ctransformfiltergetpincount-method"></a>CTransformFilter. GetPinCount, metodo
+# <a name="ctransformfiltergetpincount-method"></a>Metodo CTransformFilter.GetPinCount
 
-Il `GetPinCount` metodo recupera il numero di pin sul filtro.
+Il `GetPinCount` metodo recupera il numero di pin nel filtro.
 
 ## <a name="syntax"></a>Sintassi
 
@@ -46,7 +46,7 @@ Restituisce 2.
 
 ## <a name="remarks"></a>Commenti
 
-Questo metodo esegue l'override del metodo [**CBaseFilter:: GetPinCount**](cbasefilter-getpincount.md) . La classe **CTransformFilter** supporta esattamente un pin di input e un pin di output.
+Questo metodo esegue l'override [**del metodo CBaseFilter::GetPinCount.**](cbasefilter-getpincount.md) La **classe CTransformFilter** supporta esattamente un pin di input e un pin di output.
 
 ## <a name="requirements"></a>Requisiti
 
@@ -54,8 +54,8 @@ Questo metodo esegue l'override del metodo [**CBaseFilter:: GetPinCount**](cbase
 
 | Requisito | Valore |
 |--------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Intestazione<br/>  | <dl> <dt>Transfrm. h (include Streams. h)</dt> </dl>                                                                                  |
-| Libreria<br/> | <dl> <dt>Strmbase. lib (compilazioni finali); </dt> <dt>Strmbasd. lib (build di debug)</dt> </dl> |
+| Intestazione<br/>  | <dl> <dt>Transfrm.h (include Flussi.h)</dt> </dl>                                                                                  |
+| Libreria<br/> | <dl> <dt>Strmbase.lib (build di vendita al dettaglio); </dt> <dt>Strmbasd.lib (build di debug)</dt> </dl> |
 
 
 

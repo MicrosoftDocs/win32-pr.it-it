@@ -1,7 +1,7 @@
 ---
-description: Il metodo InitialiseWindow Inizializza la finestra.
+description: Il metodo InitialiseWindow inizializza la finestra.
 ms.assetid: 0cf07714-6846-4271-8095-bc4ab865171f
-title: Metodo CBaseWindow.InitialiseWindow (Winutil. h)
+title: CBaseWindow.Inimetodo tialiseWindow (Winutil.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -16,14 +16,14 @@ api_location:
 - Strmbase.dll
 - Strmbasd.lib
 - Strmbasd.dll
-ms.openlocfilehash: 75668846c700c33a26b7bb7ad2af2a3fd6e8eea2
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: f260f60111f715bfce357e264b65bb4b821c5ca890d39d4d54e7269a191df303
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "106327935"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118954660"
 ---
-# <a name="cbasewindowinitialisewindow-method"></a>Metodo tialiseWindow CBaseWindow.Ini
+# <a name="cbasewindowinitialisewindow-method"></a>CBaseWindow.Inimetodo tialiseWindow
 
 Il `InitialiseWindow` metodo inizializza la finestra.
 
@@ -42,7 +42,7 @@ virtual HRESULT InitialiseWindow(
 
 <dl> <dt>
 
-*HWND* 
+*Hwnd* 
 </dt> <dd>
 
 Handle per la finestra.
@@ -51,13 +51,13 @@ Handle per la finestra.
 
 ## <a name="return-value"></a>Valore restituito
 
-Restituisce \_ OK.
+Restituisce S \_ OK.
 
 ## <a name="remarks"></a>Commenti
 
-Per impostazione predefinita, questo metodo recupera un handle per il contesto di dispositivo (DC) della finestra e crea un controller di dominio di memoria compatibile. Se il valore del flag [**\_ BDoGetDC di CBaseWindow:: m**](cbasewindow-m-bdogetdc.md) è **false**, tuttavia, questo metodo non recupera i contesti di dispositivo. Il controller di dominio della memoria è utile per la selezione di bitmap prima di blitting nella finestra.
+Per impostazione predefinita, questo metodo recupera un handle per il contesto di dispositivo della finestra e crea un controller di dominio di memoria compatibile. Se il valore del flag [**\_ BDoGetDC di CBaseWindow::m**](cbasewindow-m-bdogetdc.md) è **FALSE,** tuttavia, questo metodo non recupera i contesti di dispositivo. Il controller di dominio di memoria è utile per selezionare bitmap prima di eseguire il blitting nella finestra.
 
-Il metodo [**CBaseWindow::D ocreatewindow**](cbasewindow-docreatewindow.md) chiama questo metodo.
+Il [**metodo CBaseWindow::D oCreateWindow**](cbasewindow-docreatewindow.md) chiama questo metodo.
 
 ## <a name="requirements"></a>Requisiti
 
@@ -65,8 +65,8 @@ Il metodo [**CBaseWindow::D ocreatewindow**](cbasewindow-docreatewindow.md) chia
 
 | Requisito | Valore |
 |--------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Intestazione<br/>  | <dl> <dt>WinUtil. h (include Streams. h)</dt> </dl>                                                                                   |
-| Libreria<br/> | <dl> <dt>Strmbase. lib (compilazioni finali); </dt> <dt>Strmbasd. lib (build di debug)</dt> </dl> |
+| Intestazione<br/>  | <dl> <dt>Winutil.h (includere Flussi.h)</dt> </dl>                                                                                   |
+| Libreria<br/> | <dl> <dt>Strmbase.lib (build di vendita al dettaglio); </dt> <dt>Strmbasd.lib (build di debug)</dt> </dl> |
 
 
 

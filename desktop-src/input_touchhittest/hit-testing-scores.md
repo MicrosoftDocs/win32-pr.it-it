@@ -1,6 +1,6 @@
 ---
-title: Punteggi hit testing tocco
-description: Le costanti seguenti identificano i possibili punteggi di hit test per un oggetto, rispetto ad altri oggetti che intersecano l'area di contatto tocco.
+title: Punteggi di hit testing tocco
+description: Le costanti seguenti identificano i punteggi di hit test possibili per un oggetto, rispetto ad altri oggetti che intersecano l'area di contatto tocco.
 ms.assetid: EACDE6DB-ADBD-4F0C-8C31-7321AB6A73EA
 topic_type:
 - apiref
@@ -13,16 +13,16 @@ api_type:
 - HeaderDef
 ms.topic: article
 ms.date: 02/07/2020
-ms.openlocfilehash: f6590e7d56c1c9d92f0ff20524b6e4222d8655b6
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: 18b321272637f4e6931bdc9115e64f8b0553e90e94d8013147ca7a577bad1eb3
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "104517619"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118758013"
 ---
-# <a name="touch-hit-testing-scores"></a>Punteggi hit testing tocco
+# <a name="touch-hit-testing-scores"></a>Punteggi di hit testing tocco
 
-Le costanti seguenti identificano i possibili punteggi di hit test per un oggetto, rispetto ad altri oggetti che intersecano l'area di contatto tocco.
+Le costanti seguenti identificano i punteggi di hit test possibili per un oggetto, rispetto ad altri oggetti che intersecano l'area di contatto tocco.
 
 | Costante/valore | Descrizione |
 |---|---|
@@ -33,6 +33,6 @@ Le costanti seguenti identificano i possibili punteggi di hit test per un oggett
 
 | Requisito | Valore |
 |-------------------------------------|--------------------------------------------------------------------------------------|
-| Client minimo supportato<br/> | \[Solo app desktop di Windows 8\]<br/>                                           |
+| Client minimo supportato<br/> | \[Windows 8 solo app desktop\]<br/>                                           |
 | Server minimo supportato<br/> | Nessuno supportato<br/>                                                            |
-| Intestazione<br/>                   | Winuser. h |
+| Intestazione<br/>                   | Winuser |

@@ -1,21 +1,21 @@
 ---
 title: Definizione dei nomi per il preprocessore
-description: È possibile specificare la compilazione condizionale in uno script, a seconda che un nome venga definito nella riga di comando RC con l'opzione/d oppure nel file o in un file di inclusione con la direttiva \ define.
+description: È possibile specificare la compilazione condizionale in uno script, a seconda che un nome sia definito nella riga di comando RC con l'opzione /d o nel file o in un file di inclusione con la direttiva \ define.
 ms.assetid: bc72911e-2aca-46a4-b6c1-60cc8ed7d82f
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: e64b339959ace5a70d83fa8ee8beb615f1bc5ce4
-ms.sourcegitcommit: 2d531328b6ed82d4ad971a45a5131b430c5866f7
+ms.openlocfilehash: f3bcf9c02b5a4da4487b0c82de8d8b0223662cb30f9529e82204fc66a3de91cc
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "104328772"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118972110"
 ---
 # <a name="defining-names-for-the-preprocessor"></a>Definizione dei nomi per il preprocessore
 
-È possibile specificare la compilazione condizionale in uno script, a seconda che un nome venga definito nella riga di comando RC con l'opzione **/d** oppure nel file o in un file di inclusione con la direttiva [**\# define**](-define.md) .
+È possibile specificare la compilazione condizionale in uno script, a seconda che un nome sia definito nella riga di comando RC con l'opzione **/d** o nel file o in un file di inclusione con la direttiva [**\# define.**](-define.md)
 
-Si supponga, ad esempio, che l'applicazione disponga di un menu a comparsa che dovrebbe essere visualizzato solo con le versioni di debug dell'applicazione. Quando si compila l'applicazione per l'uso normale, il menu non è incluso. Nell'esempio seguente vengono illustrate le istruzioni che possono essere aggiunte al file di definizione delle risorse per definire un menu debug:
+Si supponga, ad esempio, che l'applicazione abbia un menu a comparsa che deve essere visualizzato solo con le versioni di debug dell'applicazione. Quando si compila l'applicazione per un uso normale, il menu non è incluso. Nell'esempio seguente vengono illustrate le istruzioni che è possibile aggiungere al file di definizione delle risorse per definire un menu Debug:
 
 ``` syntax
 #include <windows.h>
@@ -33,17 +33,17 @@ MainMenu MENU
 }
 ```
 
-Quando si compilano risorse per una versione di debug dell'applicazione, è possibile includere il menu debug usando il comando seguente:
+Quando si compilano risorse per una versione di debug dell'applicazione, è possibile includere il menu Debug usando il comando seguente:
 
-**DEBUG RC-d: MyApp. RC**
+**rc -d DEBUG myapp.rc**
 
-Per compilare le risorse per una versione normale dell'applicazione? una che non include il menu debug? è possibile usare il comando seguente:
+Per compilare le risorse per una versione normale dell'applicazione? una che non include il menu Debug? è possibile usare il comando seguente:
 
-**RC MyApp. RC**
+**rc myapp.rc**
 
- 
+ 
 
- 
+ 
 
 
 

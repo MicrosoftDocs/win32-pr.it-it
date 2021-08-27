@@ -1,9 +1,9 @@
 ---
-title: LISTBOX. popUp
-description: L'attributo popUp specifica un valore che indica se l'elemento rappresenta un controllo popup o una casella di riepilogo.
+title: LISTBOX.popUp
+description: L'attributo popUp specifica un valore che indica se l'elemento rappresenta un controllo popup o casella di riepilogo.
 ms.assetid: b0ade23a-6164-4dd4-b599-43ea1fcd44e4
 keywords:
-- Media Player finestre LISTBOX. popUp
+- LISTBOX.popUp Windows Media Player
 topic_type:
 - apiref
 api_name:
@@ -12,16 +12,16 @@ api_type:
 - NA
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 43d197adbdf2ec27ea6ef7bf04c5c71d15ae923d
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: 8a755a4fc8f5e1451ee118f718a9b6618e75875789faef7318164f7f2add2069
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "106327730"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118996441"
 ---
-# <a name="listboxpopup"></a>LISTBOX. popUp
+# <a name="listboxpopup"></a>LISTBOX.popUp
 
-L'attributo **popup** specifica un valore che indica se l'elemento rappresenta un controllo popup o una casella di riepilogo.
+**L'attributo popUp** specifica un valore che indica se l'elemento rappresenta un controllo popup o casella di riepilogo.
 
 ``` syntax
 <ELEMENT popUp="value">
@@ -44,7 +44,7 @@ Questo attributo è un **valore booleano** specificato solo in fase di progettaz
 
 ## <a name="remarks"></a>Commenti
 
-L'elemento **popup** rappresenta un controllo casella di riepilogo visualizzato solo quando necessario. È identico all'elemento **ListBox** , ad eccezione del valore predefinito di questo attributo, che modifica il comportamento di visualizzazione. Per gli elementi **ListBox** , il valore predefinito è false. Per gli elementi **popup** , il valore predefinito è true. Anziché specificare questo attributo, l'elemento **ListBox** o **popup** deve essere usato in base al comportamento desiderato.
+**L'elemento POPUP** rappresenta un controllo casella di riepilogo che viene visualizzato solo quando necessario. È identico **all'elemento LISTBOX,** ad eccezione del valore predefinito di questo attributo, che modifica il comportamento di visualizzazione. Per **gli elementi LISTBOX,** il valore predefinito è false. Per **gli elementi POPUP,** il valore predefinito è true. Anziché specificare questo attributo, **l'elemento LISTBOX** o **POPUP** deve essere usato in base al comportamento desiderato.
 
 ## <a name="requirements"></a>Requisiti
 
@@ -60,7 +60,7 @@ L'elemento **popup** rappresenta un controllo casella di riepilogo visualizzato 
 
 <dl> <dt>
 
-[**LISTBOX (elemento)**](listbox-element.md)
+[**Elemento LISTBOX**](listbox-element.md)
 </dt> <dt>
 
 [**Elemento POPUP**](popup-element.md)

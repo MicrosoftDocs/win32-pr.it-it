@@ -1,5 +1,5 @@
 ---
-description: Altre informazioni sul costruttore EsentDatabase200FormatException
+description: 'Altre informazioni su: Costruttore EsentDatabase200FormatException'
 title: Costruttore EsentDatabase200FormatException
 TOCTitle: 'EsentDatabase200FormatException constructor '
 ms:assetid: M:Microsoft.Isam.Esent.Interop.EsentDatabase200FormatException.#ctor

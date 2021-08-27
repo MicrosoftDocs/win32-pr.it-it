@@ -17,7 +17,7 @@ ms.locfileid: "118776753"
 # <a name="esentloggenerationmismatchexception-properties"></a>Proprietà di EsentLogGenerationMismatchException
 
 Includere membri protetti  
-Includi membri ereditati  
+Includere i membri ereditati  
 
 Il [tipo EsentLogGenerationMismatchException](./esentloggenerationmismatchexception-class.md) espone i membri seguenti.
 

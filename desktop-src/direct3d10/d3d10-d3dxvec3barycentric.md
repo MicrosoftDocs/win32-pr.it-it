@@ -1,5 +1,5 @@
 ---
-description: 'Funzione D3DXVec3BaryCentric (D3DX10Math.h): restituisce un punto in coordinate barycentriche, usando i vettori 3D specificati.'
+description: 'Funzione D3DXVec3BaryCentric (D3DX10Math.h): restituisce un punto nelle coordinate barycentriche, usando i vettori 3D specificati.'
 ms.assetid: 572e151d-8044-480e-92b2-3f973d92d03e
 title: Funzione D3DXVec3BaryCentric (D3DX10Math.h)
 ms.topic: reference
@@ -13,16 +13,16 @@ api_type:
 - HeaderDef
 api_location:
 - D3DX10Math.h
-ms.openlocfilehash: e350bde6d1b898088ccb9b68d10a9a346935bfd5
-ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
+ms.openlocfilehash: a0911a3e9e5bf0d1aa1df4d09f0b1fbcda0db2bc0bfe0c4c4b31da0f47c62999
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/28/2021
-ms.locfileid: "108108249"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118990641"
 ---
 # <a name="d3dxvec3barycentric-function-d3dx10mathh"></a>Funzione D3DXVec3BaryCentric (D3DX10Math.h)
 
-Restituisce un punto nelle coordinate barycentriche, usando i vettori 3D specificati.
+Restituisce un punto in coordinate barycentriche, usando i vettori 3D specificati.
 
 ## <a name="syntax"></a>Sintassi
 
@@ -49,7 +49,7 @@ D3DXVECTOR3* D3DXVec3BaryCentric(
 
 Tipo: **[ **D3DXVECTOR3**](../direct3d9/d3dxvector3.md)\***
 
-Puntatore [**all'oggetto D3DXVECTOR3**](d3d10-d3dxvector3.md) che rappresenta il risultato dell'operazione.
+Puntatore a [**D3DXVECTOR3**](d3d10-d3dxvector3.md) che rappresenta il risultato dell'operazione.
 
 </dd> <dt>
 
