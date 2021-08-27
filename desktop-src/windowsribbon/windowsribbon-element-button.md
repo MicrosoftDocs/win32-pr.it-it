@@ -1,9 +1,9 @@
 ---
-title: Elemento Button (framework della barra multifunzione di Windows)
+title: Elemento Button (Windows Ribbon Framework)
 description: Rappresenta un controllo Button.
 ms.assetid: a17d4dd8-9b0d-4b4a-93f4-f2a8c008fc58
 keywords:
-- Elemento Pulsante Barra multifunzione di Windows
+- Elemento Pulsante Windows barra multifunzione
 topic_type:
 - apiref
 api_name:
@@ -13,12 +13,12 @@ api_type:
 ms.topic: reference
 ms.date: 05/31/2018
 api_location: ''
-ms.openlocfilehash: 40236b60a9fe9c72dd35d67fcf7c98bc188938af
-ms.sourcegitcommit: 099ecdda1e83618b844387405da0db0ebda93a65
+ms.openlocfilehash: 066327000d490ac1615fe1e1447e1579939670d5
+ms.sourcegitcommit: c276a8912787b2cda74dcf54eb96df961bb1188b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/04/2021
-ms.locfileid: "111443572"
+ms.lasthandoff: 08/20/2021
+ms.locfileid: "122630684"
 ---
 # <a name="button-element"></a>Elemento Button
 
@@ -39,10 +39,10 @@ Rappresenta un [controllo](windowsribbon-controls-button.md) Button.
 
 <table>
 <colgroup>
-<col style="width: 25%" />
-<col style="width: 25%" />
-<col style="width: 25%" />
-<col style="width: 25%" />
+<col  />
+<col  />
+<col  />
+<col  />
 </colgroup>
 <thead>
 <tr class="header">
@@ -65,7 +65,7 @@ Rappresenta un [controllo](windowsribbon-controls-button.md) Button.
 <td>xs:string<br/></td>
 <td>No<br/></td>
 <td>Valido solo se <a href="windowsribbon-element-menugroup.md"><strong>MenuGroup</strong></a> è l'elemento padre.<br/> <br/>
-<dt><span></span><span></span><strong></strong> (xs:string)<br/> </dt> <dd> Stringa che contiene un elenco delimitato da virgole di numeri interi compresi tra 0 e 31.<br/> Gli spazi vuoti sono validi e ignorati.<br/> Lunghezza massima: 250 caratteri. <br/> </dd> </dl></td>
+<dt><span></span><span></span><strong></strong> (xs:string)<br/> </dt> <dd> Stringa contenente un elenco delimitato da virgole di numeri interi compresi tra 0 e 31.<br/> Gli spazi vuoti sono validi e ignorati.<br/> Lunghezza massima: 250 caratteri. <br/> </dd> </dl></td>
 </tr>
 <tr class="odd">
 <td><strong>CommandName</strong><br/></td>
@@ -92,7 +92,7 @@ Non ci sono elementi figlio.
 | [**ControlGroup**](windowsribbon-element-controlgroup.md)<br/>                                                     |
 | [**DropDownButton**](windowsribbon-element-dropdownbutton.md)<br/>                                                 |
 | [**DropDownGallery**](windowsribbon-element-dropdowngallery.md)<br/>                                               |
-| [**Gruppo**](windowsribbon-element-group.md)<br/>                                                                   |
+| [**Group**](windowsribbon-element-group.md)<br/>                                                                   |
 | [**Menugroup**](windowsribbon-element-menugroup.md)<br/>                                                           |
 | [**QuickAccessToolbar.ApplicationDefaults**](windowsribbon-element-quickaccesstoolbar-applicationdefaults.md)<br/> |
 | [**SplitButton**](windowsribbon-element-splitbutton.md)<br/>                                                       |

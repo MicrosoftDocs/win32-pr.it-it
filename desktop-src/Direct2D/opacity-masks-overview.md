@@ -4,12 +4,12 @@ description: 'Questo argomento descrive come usare bitmap e pennelli per definir
 ms.assetid: 869821b0-6ebe-46c2-aab6-93177d8a92c5
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 2050cccd37012028e2a86fbf77cd071671ce7201
-ms.sourcegitcommit: c276a8912787b2cda74dcf54eb96df961bb1188b
+ms.openlocfilehash: 513365474ed6b1f6f42d34f9b876226e00ba6e85
+ms.sourcegitcommit: 4e94fc75fad7b2a0f3c92a26f97e89924e59b7a9
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/20/2021
-ms.locfileid: "122626557"
+ms.lasthandoff: 08/24/2021
+ms.locfileid: "122786377"
 ---
 # <a name="opacity-masks-overview"></a>Cenni preliminari sulle maschere di opacità
 
@@ -72,7 +72,7 @@ In questo esempio [**ID2D1Bitmap**](/windows/win32/api/d2d1/nn-d2d1-id2d1bitmap)
 
 L'esempio successivo definisce il *pennello, m \_ pFernBitmapBrush,* a cui viene applicata la maschera di opacità. Questo esempio usa un [**oggetto ID2D1BitmapBrush**](/windows/win32/api/d2d1/nn-d2d1-id2d1bitmapbrush) che contiene un'immagine di una felce, ma è possibile usare [**id2D1SolidColorBrush,**](/windows/win32/api/d2d1/nn-d2d1-id2d1solidcolorbrush) [**ID2D1LinearGradientBrush**](/windows/win32/api/d2d1/nn-d2d1-id2d1lineargradientbrush)o [**ID2D1RadialGradientBrush.**](/windows/win32/api/d2d1/nn-d2d1-id2d1radialgradientbrush) La figura seguente mostra l'output prodotto.
 
-![illustrazione della bitmap usata dal pennello bitmap](images/fern.png)
+![Illustrazione della bitmap usata dal pennello bitmap](images/fern.png)
 
 
 ```C++
@@ -101,7 +101,7 @@ L'esempio successivo definisce il *pennello, m \_ pFernBitmapBrush,* a cui viene
 Dopo aver definito la maschera di opacità e il pennello, è possibile usare il [**metodo FillOpacityMask**](id2d1rendertarget-fillopacitymask.md) nel metodo di rendering dell'applicazione. Quando si chiama il metodo **FillOpacityMask,** è necessario specificare il tipo di maschera di opacità in uso: **D2D1 \_ OPACITY \_ MASK CONTENT \_ \_ GRAPHICS,** **D2D1 \_ OPACITY MASK CONTENT \_ TEXT \_ \_ \_ NATURAL** e **D2D1 \_ OPACITY MASK CONTENT TEXT \_ \_ \_ \_ GDI \_ COMPATIBLE**. Per i significati di questi tre tipi, vedere [**CONTENUTO MASCHERA \_ OPACITÀ \_ \_ D2D1**](/windows/desktop/api/d2d1/ne-d2d1-d2d1_opacity_mask_content).
 
 > [!Note]  
-> A partire Windows 8, il [**CONTENUTO MASCHERA OPACITÀ D2D1 \_ \_ \_**](/windows/desktop/api/d2d1/ne-d2d1-d2d1_opacity_mask_content) non è obbligatorio. Vedere il [**metodo ID2D1DeviceContext::FillOpacityMask,**](/windows/win32/api/d2d1_1/nf-d2d1_1-id2d1devicecontext-fillopacitymask(id2d1bitmap_id2d1brush_constd2d1_rect_f_constd2d1_rect_f)) senza parametro **CONTENT \_ OPACITY \_ MASK \_ D2D1.**
+> A partire da Windows 8, il [**CONTENUTO MASCHERA OPACITÀ D2D1 \_ \_ \_**](/windows/desktop/api/d2d1/ne-d2d1-d2d1_opacity_mask_content) non è necessario. Vedere il [**metodo ID2D1DeviceContext::FillOpacityMask,**](/windows/win32/api/d2d1_1/nf-d2d1_1-id2d1devicecontext-fillopacitymask(id2d1bitmap_id2d1brush_constd2d1_rect_f_constd2d1_rect_f)) senza parametro **CONTENT \_ OPACITY \_ MASK \_ D2D1.**
 
  
 
@@ -139,7 +139,7 @@ Il [**metodo FillGeometry**](/windows/win32/api/d2d1/nf-d2d1-id2d1rendertarget-f
 
 -   Il primo parametro, [**ID2D1Geometry,**](/windows/win32/api/d2d1/nn-d2d1-id2d1geometry)definisce la forma da disegnare.
 -   Il secondo parametro, [**ID2D1Brush,**](/windows/win32/api/d2d1/nn-d2d1-id2d1brush)specifica il pennello usato per disegnare la geometria. Questo parametro deve essere un [**oggetto ID2D1BitmapBrush**](/windows/win32/api/d2d1/nn-d2d1-id2d1bitmapbrush) con le modalità di estensione x e y impostate su [**D2D1 \_ EXTEND MODE \_ \_ CLAMP.**](/windows/desktop/api/d2d1/ne-d2d1-d2d1_extend_mode)
--   Il terzo parametro, [**ID2D1Brush**](/windows/win32/api/d2d1/nn-d2d1-id2d1brush), specifica un pennello da usare come maschera di opacità. Questo pennello può essere [**ID2D1LinearGradientBrush,**](/windows/win32/api/d2d1/nn-d2d1-id2d1lineargradientbrush) [**ID2D1RadialGradientBrush**](/windows/win32/api/d2d1/nn-d2d1-id2d1radialgradientbrush)o [**ID2D1BitmapBrush.**](/windows/win32/api/d2d1/nn-d2d1-id2d1bitmapbrush) Tecnicamente, è possibile usare un [**oggetto ID2D1SolidColorBrush,**](/windows/win32/api/d2d1/nn-d2d1-id2d1solidcolorbrush)ma l'uso di un pennello a tinta unita come maschera di opacità non produce risultati interessanti.
+-   Il terzo parametro, [**ID2D1Brush,**](/windows/win32/api/d2d1/nn-d2d1-id2d1brush)specifica un pennello da usare come maschera di opacità. Questo pennello può essere [**ID2D1LinearGradientBrush,**](/windows/win32/api/d2d1/nn-d2d1-id2d1lineargradientbrush) [**ID2D1RadialGradientBrush**](/windows/win32/api/d2d1/nn-d2d1-id2d1radialgradientbrush)o [**ID2D1BitmapBrush.**](/windows/win32/api/d2d1/nn-d2d1-id2d1bitmapbrush) Tecnicamente, è possibile usare un [**oggetto ID2D1SolidColorBrush,**](/windows/win32/api/d2d1/nn-d2d1-id2d1solidcolorbrush)ma l'uso di un pennello a tinta unita come maschera di opacità non produce risultati interessanti.
 
 Le sezioni seguenti descrivono come usare [**gli oggetti ID2D1LinearGradientBrush**](/windows/win32/api/d2d1/nn-d2d1-id2d1lineargradientbrush) e [**ID2D1RadialGradientBrush**](/windows/win32/api/d2d1/nn-d2d1-id2d1radialgradientbrush) come maschere di opacità.
 
@@ -176,7 +176,7 @@ I passaggi seguenti descrivono come creare nuovamente questo effetto.
                 );
     ```
 
-    <span codelanguage="ManagedCPlusPlus"></span>
+    
     <table>
     <colgroup>
     <col  />
@@ -200,7 +200,7 @@ I passaggi seguenti descrivono come creare nuovamente questo effetto.
     </tbody>
     </table>
 
-    <span codelanguage="ManagedCPlusPlus"></span>
+    
     <table>
     <colgroup>
     <col  />
@@ -256,7 +256,7 @@ I passaggi seguenti descrivono come creare nuovamente questo effetto.
 
     
 
-3.  Usare il [**metodo FillGeometry.**](/windows/win32/api/d2d1/nf-d2d1-id2d1rendertarget-fillgeometry) L'esempio finale usa il metodo **FillGeometry** per riempire un [**oggetto ID2D1RectangleGeometry**](/windows/win32/api/d2d1/nn-d2d1-id2d1rectanglegeometry) (*m \_ pRectGeo*) con [**id2D1BitmapBrush**](/windows/win32/api/d2d1/nn-d2d1-id2d1bitmapbrush) (*m \_ pLinearFadeFlowersBitmap*) e applica una maschera di opacità (*m \_ pLinearGradientBrush*).
+3.  Usare il [**metodo FillGeometry.**](/windows/win32/api/d2d1/nf-d2d1-id2d1rendertarget-fillgeometry) L'esempio finale usa il metodo **FillGeometry** per riempire un [**oggetto ID2D1RectangleGeometry**](/windows/win32/api/d2d1/nn-d2d1-id2d1rectanglegeometry) (*m \_ pRectGeo*) con [**un oggetto ID2D1BitmapBrush**](/windows/win32/api/d2d1/nn-d2d1-id2d1bitmapbrush) (*m \_ pLinearFadeFlowersBitmap*) e applica una maschera di opacità (*m \_ pLinearGradientBrush*).
 ```C++
             m_pRenderTarget->FillGeometry(
                 m_pRectGeo, 
@@ -273,9 +273,9 @@ Il codice è stato omesso da questo esempio.
 
 Il diagramma seguente illustra l'effetto visivo dell'applicazione di un pennello sfumatura radiale a un rettangolo riempito con una bitmap di fogliame.
 
-![Diagramma di una bitmap fogliare con un pennello sfumato radiale applicato](images/brushes-ovw-radialgradient-opacitymask.png)
+![Diagramma di una bitmap fogliare con un pennello sfumatura radiale applicato](images/brushes-ovw-radialgradient-opacitymask.png)
 
-Il primo esempio crea un [**oggetto ID2D1BitmapBrush**](/windows/win32/api/d2d1/nn-d2d1-id2d1bitmapbrush), *m \_ pRadialFadeFlowersBitmapBrush*. In modo che possa essere usato con una maschera di opacità dal metodo [**FillGeometry,**](/windows/win32/api/d2d1/nf-d2d1-id2d1rendertarget-fillgeometry) le modalità di estensione x e y per *m \_ pRadialFadeFlowersBitmapBrush* sono impostate su [**D2D1 \_ EXTEND MODE \_ \_ CLAMP.**](/windows/desktop/api/d2d1/ne-d2d1-d2d1_extend_mode)
+Il primo esempio crea un [**oggetto ID2D1BitmapBrush**](/windows/win32/api/d2d1/nn-d2d1-id2d1bitmapbrush), *m \_ pRadialFadeFlowersBitmapBrush*. In modo che possa essere usata con una maschera di opacità dal metodo [**FillGeometry,**](/windows/win32/api/d2d1/nf-d2d1-id2d1rendertarget-fillgeometry) le modalità di estensione x e y per *m \_ pRadialFadeFlowersBitmapBrush* sono impostate su [**D2D1 \_ EXTEND MODE \_ \_ CLAMP.**](/windows/desktop/api/d2d1/ne-d2d1-d2d1_extend_mode)
 
 
 ```C++
@@ -304,7 +304,7 @@ Il primo esempio crea un [**oggetto ID2D1BitmapBrush**](/windows/win32/api/d2d1/
 
 
 
-<span codelanguage="ManagedCPlusPlus"></span>
+
 
 <table>
 <colgroup>
@@ -329,7 +329,7 @@ Il primo esempio crea un [**oggetto ID2D1BitmapBrush**](/windows/win32/api/d2d1/
 </tbody>
 </table>
 
-<span codelanguage="ManagedCPlusPlus"></span>
+
 
 <table>
 <colgroup>
@@ -407,7 +407,7 @@ Il codice è stato omesso da questo esempio.
 
 ## <a name="apply-an-opacity-mask-to-a-layer"></a>Applicare una maschera di opacità a un livello
 
-Quando si chiama [**PushLayer**](/windows/win32/api/d2d1/nf-d2d1-id2d1rendertarget-pushlayer(constd2d1_layer_parameters__id2d1layer)) per eseguire il push di [**un oggetto ID2D1Layer**](/windows/win32/api/d2d1/nn-d2d1-id2d1layer) in una destinazione di rendering, è possibile usare la struttura [**D2D1 \_ LAYER \_ PARAMETERS**](/windows/desktop/api/d2d1/ns-d2d1-d2d1_layer_parameters) per applicare un pennello come maschera di opacità. L'esempio di codice seguente usa [**ID2D1RadialGradientBrush**](/windows/win32/api/d2d1/nn-d2d1-id2d1radialgradientbrush) come maschera di opacità.
+Quando si chiama [**PushLayer**](/windows/win32/api/d2d1/nf-d2d1-id2d1rendertarget-pushlayer(constd2d1_layer_parameters__id2d1layer)) per eseguire il push di [**un oggetto ID2D1Layer**](/windows/win32/api/d2d1/nn-d2d1-id2d1layer) in una destinazione di rendering, è possibile usare la struttura [**D2D1 \_ LAYER \_ PARAMETERS**](/windows/desktop/api/d2d1/ns-d2d1-d2d1_layer_parameters) per applicare un pennello come maschera di opacità. L'esempio di codice seguente usa [**id2D1RadialGradientBrush**](/windows/win32/api/d2d1/nn-d2d1-id2d1radialgradientbrush) come maschera di opacità.
 
 
 ```C++

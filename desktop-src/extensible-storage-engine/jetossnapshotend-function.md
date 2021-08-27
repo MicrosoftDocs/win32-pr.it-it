@@ -1,6 +1,6 @@
 ---
-description: 'Altre informazioni su: funzione JetOSSnapshotEnd'
-title: JetOSSnapshotEnd (funzione)
+description: Altre informazioni sulla funzione JetOSSnapshotEnd
+title: Funzione JetOSSnapshotEnd
 TOCTitle: JetOSSnapshotEnd Function
 ms:assetid: f7f4db8b-8e40-48d7-bc7b-0c80d0d0f77f
 ms:mtpsurl: https://msdn.microsoft.com/library/Gg294136(v=EXCHG.10)
@@ -18,23 +18,23 @@ api_type:
 api_location:
 - ESENT.DLL
 ROBOTS: INDEX,FOLLOW
-ms.openlocfilehash: de1237de9af0b1b75f645346fc30a128a1b8e907
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: b57528899b8d78ecee31f6dd54c2ac8decece383
+ms.sourcegitcommit: 4665ebce0c106bdb52eef36e544280b496b6f50b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104128170"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "122984434"
 ---
-# <a name="jetossnapshotend-function"></a>JetOSSnapshotEnd (funzione)
+# <a name="jetossnapshotend-function"></a>Funzione JetOSSnapshotEnd
 
 
 _**Si applica a:** Windows | Windows Server_
 
-## <a name="jetossnapshotend-function"></a>JetOSSnapshotEnd (funzione)
+## <a name="jetossnapshotend-function"></a>Funzione JetOSSnapshotEnd
 
-La funzione **JetOSSnapshotEnd** notifica al motore che la sessione snapshot è stata completata.
+La **funzione JetOSSnapshotEnd** notifica al motore che la sessione snapshot è stata completata.
 
-**Windows Vista:**  **JetOSSnapshotEnd** è stato introdotto in Windows Vista:.
+**Windows Vista:****JetOSSnapshotEnd** è stato introdotto in Windows Vista:.  
 
 ```cpp
     JET_ERR JET_API JetOSSnapshotEnd(
@@ -53,115 +53,55 @@ Identificatore della sessione snapshot.
 
 Opzioni per questa chiamata. Questo parametro può avere una combinazione dei valori seguenti.
 
-<table>
-<colgroup>
-<col style="width: 50%" />
-<col style="width: 50%" />
-</colgroup>
-<thead>
-<tr class="header">
-<th><p>Valore</p></th>
-<th><p>Significato</p></th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td><p>0</p></td>
-<td><p>Fine corretta della sessione snapshot.</p></td>
-</tr>
-<tr class="even">
-<td><p>JET_bitAbortSnapshot</p></td>
-<td><p>La sessione snapshot è stata interrotta.</p></td>
-</tr>
-</tbody>
-</table>
+
+| <p>Valore</p> | <p>Significato</p> | 
+|--------------|----------------|
+| <p>0</p> | <p>Fine della sessione snapshot completata.</p> | 
+| <p>JET_bitAbortSnapshot</p> | <p>Sessione snapshot interrotta.</p> | 
+
 
 
 ### <a name="return-value"></a>Valore restituito
 
-Questa funzione restituisce il tipo di dati [JET_ERR](./jet-err.md) con uno dei seguenti codici restituiti. Per ulteriori informazioni sugli errori ESE possibili, vedere la pagina relativa agli errori e ai [parametri di gestione degli](./error-handling-parameters.md)errori del [motore di archiviazione estensibile](./extensible-storage-engine-errors.md) .
+Questa funzione restituisce il [JET_ERR](./jet-err.md) dati con uno dei codici restituiti seguenti. Per altre informazioni sui possibili errori ESE, vedere Errori del [motore di Archiviazione](./extensible-storage-engine-errors.md) estendibile e Parametri di gestione degli [errori](./error-handling-parameters.md).
 
-<table>
-<colgroup>
-<col style="width: 50%" />
-<col style="width: 50%" />
-</colgroup>
-<thead>
-<tr class="header">
-<th><p>Codice restituito</p></th>
-<th><p>Descrizione</p></th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td><p>JET_errSuccess</p></td>
-<td><p>Operazione riuscita.</p></td>
-</tr>
-<tr class="even">
-<td><p>JET_errInvalidGrbit</p></td>
-<td><p>Una delle opzioni richieste non è valida, viene usata in modo errato o non è stata implementata.</p></td>
-</tr>
-<tr class="odd">
-<td><p>JET_errOSSnapshotInvalidSequence</p></td>
-<td><p>Una sessione snapshot è già in corso. ma questa operazione non è consentita.</p></td>
-</tr>
-<tr class="even">
-<td><p>JET_errOSSnapshotInvalidSnapId</p></td>
-<td><p>Identificatore per la sessione snapshot non valido.</p></td>
-</tr>
-<tr class="odd">
-<td><p>JET_errOSSnapshotTimeOut</p></td>
-<td><p>Il timeout della sessione snapshot è stato interno prima della chiamata. Di conseguenza, le operazioni di i/o restituite al normale prima che questa chiamata venisse eseguita.</p></td>
-</tr>
-</tbody>
-</table>
+
+| <p>Codice restituito</p> | <p>Descrizione</p> | 
+|--------------------|--------------------|
+| <p>JET_errSuccess</p> | <p>Operazione riuscita.</p> | 
+| <p>JET_errInvalidGrbit</p> | <p>Una delle opzioni richieste non è valida, usata in modo non corretto o non implementata.</p> | 
+| <p>JET_errOSSnapshotInvalidSequence</p> | <p>Una sessione snapshot è già in corso. ma questa operazione non è consentita.</p> | 
+| <p>JET_errOSSnapshotInvalidSnapId</p> | <p>L'identificatore per la sessione snapshot non è valido.</p> | 
+| <p>JET_errOSSnapshotTimeOut</p> | <p>La sessione snapshot ha avuto un timeout interno prima che si verifica questa chiamata. Di conseguenza, le operazioni di I/O tornano normali prima della chiamata.</p> | 
+
 
 
 Se questa funzione ha esito positivo, verrà completata una sessione snapshot e verrà ripreso il normale comportamento del motore. Una nuova sessione snapshot può essere avviata in un secondo momento.
 
-Se questa funzione ha esito negativo, il codice restituito JET_errOSSnapshotTimeOut restituisce e la sessione snapshot corrente termina, ma il blocco di IOs durante il periodo dello snapshot non è stato rispettato internamente. Per tutti gli altri errori lo stato della sessione snapshot non verrà modificato.
+Se questa funzione ha esito negativo, il JET_errOSSnapshotTimeOut restituito viene restituito e la sessione di snapshot corrente termina, ma il blocco delle operazioni di I/O durante il periodo di snapshot non è stato rispettato internamente. Per tutti gli altri errori, lo stato della sessione snapshot non verrà modificato.
 
 #### <a name="remarks"></a>Commenti
 
-Questa funzione viene chiamata solo se [JetOSSnapshotThaw](./jetossnapshotthaw-function.md) è stato chiamato con JET_bitContinueAfterThaw.
+Questa funzione viene chiamata solo se [JetOSSnapshotThaw è](./jetossnapshotthaw-function.md) stato chiamato con JET_bitContinueAfterThaw.
 
-Per eseguire la verifica dello snapshot e il troncamento del log, è necessario completare la sessione snapshot. Verranno generate voci del registro eventi per i diversi passaggi dello snapshot.
+Per eseguire la verifica dello snapshot e il troncamento del log, è necessario completare la sessione snapshot. Verranno generate voci del log eventi per i diversi passaggi dello snapshot.
 
 #### <a name="requirements"></a>Requisiti
 
-<table>
-<colgroup>
-<col style="width: 50%" />
-<col style="width: 50%" />
-</colgroup>
-<tbody>
-<tr class="odd">
-<td><p><strong>Client</strong></p></td>
-<td><p>Richiede Windows Vista.</p></td>
-</tr>
-<tr class="even">
-<td><p><strong>Server</strong></p></td>
-<td><p>Richiede Windows Server 2008.</p></td>
-</tr>
-<tr class="odd">
-<td><p><strong>Intestazione</strong></p></td>
-<td><p>Dichiarata in esent. h.</p></td>
-</tr>
-<tr class="even">
-<td><p><strong>Libreria</strong></p></td>
-<td><p>Usare ESENT. lib.</p></td>
-</tr>
-<tr class="odd">
-<td><p><strong>DLL</strong></p></td>
-<td><p>Richiede ESENT.dll.</p></td>
-</tr>
-</tbody>
-</table>
+
+| Requisito | Valore |
+|------------|----------|
+| <p><strong>Client</strong></p> | <p>Richiede Windows Vista.</p> | 
+| <p><strong>Server</strong></p> | <p>Richiede Windows Server 2008.</p> | 
+| <p><strong>Intestazione</strong></p> | <p>Dichiarato in Esent.h.</p> | 
+| <p><strong>Libreria</strong></p> | <p>Usare ESENT.lib.</p> | 
+| <p><strong>DLL</strong></p> | <p>Richiede ESENT.dll.</p> | 
+
 
 
 #### <a name="see-also"></a>Vedere anche
 
 [Parametri di gestione degli errori](./error-handling-parameters.md)  
-[Errori del motore di archiviazione estendibile](./extensible-storage-engine-errors.md)  
+[Errori del motore Archiviazione estendibile](./extensible-storage-engine-errors.md)  
 [JET_ERR](./jet-err.md)  
 [JetOSSnapshotThaw](./jetossnapshotthaw-function.md)

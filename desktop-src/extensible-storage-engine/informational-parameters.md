@@ -1,6 +1,6 @@
 ---
-description: 'Ulteriori informazioni su: parametri informativi'
-title: Parametri informativi
+description: 'Altre informazioni su: Parametri in informazioni'
+title: Parametri in informazioni
 TOCTitle: Informational Parameters
 ms:assetid: 48500fc9-6d89-45b8-92ad-afb997b729f3
 ms:mtpsurl: https://msdn.microsoft.com/library/Gg269241(v=EXCHG.10)
@@ -15,225 +15,97 @@ api_type:
 - COM
 api_location: ''
 ROBOTS: INDEX,FOLLOW
-ms.openlocfilehash: a8923b544726e474775684f54fed47d8b4ba281e
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: cd932f64956e1a00aae5925b97dbf6c35ecc2661
+ms.sourcegitcommit: 4665ebce0c106bdb52eef36e544280b496b6f50b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "103753319"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "122987604"
 ---
-# <a name="informational-parameters"></a>Parametri informativi
+# <a name="informational-parameters"></a>Parametri in informazioni
 
 
 _**Si applica a:** Windows | Windows Server_
 
-## <a name="informational-parameters"></a>Parametri informativi
+## <a name="informational-parameters"></a>Parametri in informazioni
 
-Questo argomento contiene i parametri usati per esporre le informazioni sul motore di database.
+Questo argomento contiene i parametri usati per esporre informazioni sul motore di database.
 
 *JET_paramKeyMost*  
 134  
 
-Questo parametro di sola lettura indica la lunghezza massima consentita della chiave di indice che è possibile selezionare per le dimensioni correnti della pagina del database (come configurato dal JET_paramDatabasePageSize).
+Questo parametro di sola lettura indica la lunghezza massima consentita della chiave di indice che può essere selezionata per le dimensioni correnti della pagina del database (come configurato da JET_paramDatabasePageSize).
 
-<table>
-<colgroup>
-<col style="width: 50%" />
-<col style="width: 50%" />
-</colgroup>
-<tbody>
-<tr class="odd">
-<td><p>Valore predefinito:</p></td>
-<td><p>JET_cbKeyMost4KBytePage</p></td>
-</tr>
-<tr class="even">
-<td><p>Digitare:</p></td>
-<td><p>Integer</p></td>
-</tr>
-<tr class="odd">
-<td><p>Intervallo valido:</p></td>
-<td><p>255 – 65535</p></td>
-</tr>
-<tr class="even">
-<td><p>Ambito:</p></td>
-<td><p>Globale</p></td>
-</tr>
-<tr class="odd">
-<td><p>Imposta dopo <a href="gg269354(v=exchg.10).md">JetCreateInstance</a>:</p></td>
-<td><p>N/D</p></td>
-</tr>
-<tr class="even">
-<td><p>Imposta dopo <a href="gg294068(v=exchg.10).md">JetInit</a>:</p></td>
-<td><p>N/D</p></td>
-</tr>
-<tr class="odd">
-<td><p>Influiscono sul layout fisico:</p></td>
-<td><p>No</p></td>
-</tr>
-<tr class="even">
-<td><p>Influire sull'affidabilità:</p></td>
-<td><p>No</p></td>
-</tr>
-<tr class="odd">
-<td><p>Influire sulle prestazioni:</p></td>
-<td><p>No</p></td>
-</tr>
-<tr class="even">
-<td><p>Influiscono sulle risorse:</p></td>
-<td><p>No</p></td>
-</tr>
-<tr class="odd">
-<td><p>Disponibilità:</p></td>
-<td><p>A partire da Windows Server 2008 e Windows Vista</p></td>
-</tr>
-</tbody>
-</table>
+
+| Etichetta | Valore |
+|--------|-------|
+| <p>Valore predefinito:</p> | <p>JET_cbKeyMost4KBytePage</p> | 
+| <p>Digitare:</p> | <p>Intero</p> | 
+| <p>Intervallo valido:</p> | <p>255 – 65535</p> | 
+| <p>Ambito:</p> | <p>Globale</p> | 
+| <p>Imposta dopo <a href="gg269354(v=exchg.10).md">JetCreateInstance</a>:</p> | <p>N/A</p> | 
+| <p>Impostare dopo <a href="gg294068(v=exchg.10).md">JetInit</a>:</p> | <p>N/A</p> | 
+| <p>Influisce sul layout fisico:</p> | <p>No</p> | 
+| <p>Influisce sull'affidabilità:</p> | <p>No</p> | 
+| <p>Influisce sulle prestazioni:</p> | <p>No</p> | 
+| <p>Influisce sulle risorse:</p> | <p>No</p> | 
+| <p>Disponibilità:</p> | <p>A partire da Windows Server 2008 e Windows Vista</p> | 
+
 
 
 *JET_paramMaxColtyp*  
 131  
 
-Questo parametro di sola lettura restituisce la [JET_COLTYP](./jet-coltyp.md) massima (JET_coltypMax) per la versione del motore di database. Questo valore può essere utilizzato per verificare il supporto di un [JET_COLTYP](./jet-coltyp.md)specifico. Se un [JET_COLTYP](./jet-coltyp.md) specificato è minore del valore di questo parametro, è supportato dal motore di database.
+Questo parametro di sola lettura restituisce il numero [massimo JET_COLTYP](./jet-coltyp.md) (JET_coltypMax) per tale versione del motore di database. Questo valore può essere usato per testare il supporto di una [specifica](./jet-coltyp.md)JET_COLTYP . Se un determinato [JET_COLTYP](./jet-coltyp.md) è minore del valore di questo parametro, è supportato dal motore di database.
 
-<table>
-<colgroup>
-<col style="width: 50%" />
-<col style="width: 50%" />
-</colgroup>
-<tbody>
-<tr class="odd">
-<td><p>Valore predefinito:</p></td>
-<td><p>JET_coltypUnsignedShort + 1</p></td>
-</tr>
-<tr class="even">
-<td><p>Digitare:</p></td>
-<td><p>Integer</p></td>
-</tr>
-<tr class="odd">
-<td><p>Intervallo valido:</p></td>
-<td><p>0 – 255</p></td>
-</tr>
-<tr class="even">
-<td><p>Ambito:</p></td>
-<td><p>Globale</p></td>
-</tr>
-<tr class="odd">
-<td><p>Imposta dopo <a href="gg269354(v=exchg.10).md">JetCreateInstance</a>:</p></td>
-<td><p>N/D</p></td>
-</tr>
-<tr class="even">
-<td><p>Imposta dopo <a href="gg294068(v=exchg.10).md">JetInit</a>:</p></td>
-<td><p>N/D</p></td>
-</tr>
-<tr class="odd">
-<td><p>Influiscono sul layout fisico:</p></td>
-<td><p>No</p></td>
-</tr>
-<tr class="even">
-<td><p>Influire sull'affidabilità:</p></td>
-<td><p>No</p></td>
-</tr>
-<tr class="odd">
-<td><p>Influire sulle prestazioni:</p></td>
-<td><p>No</p></td>
-</tr>
-<tr class="even">
-<td><p>Influiscono sulle risorse:</p></td>
-<td><p>No</p></td>
-</tr>
-<tr class="odd">
-<td><p>Disponibilità:</p></td>
-<td><p>A partire da Windows Server 2008 e Windows Vista</p></td>
-</tr>
-</tbody>
-</table>
+
+| Etichetta | Valore |
+|--------|-------|
+| <p>Valore predefinito:</p> | <p>JET_coltypUnsignedShort + 1</p> | 
+| <p>Digitare:</p> | <p>Intero</p> | 
+| <p>Intervallo valido:</p> | <p>0 – 255</p> | 
+| <p>Ambito:</p> | <p>Globale</p> | 
+| <p>Imposta dopo <a href="gg269354(v=exchg.10).md">JetCreateInstance</a>:</p> | <p>N/A</p> | 
+| <p>Impostare dopo <a href="gg294068(v=exchg.10).md">JetInit</a>:</p> | <p>N/A</p> | 
+| <p>Influisce sul layout fisico:</p> | <p>No</p> | 
+| <p>Influisce sull'affidabilità:</p> | <p>No</p> | 
+| <p>Influisce sulle prestazioni:</p> | <p>No</p> | 
+| <p>Influisce sulle risorse:</p> | <p>No</p> | 
+| <p>Disponibilità:</p> | <p>A partire da Windows Server 2008 e Windows Vista</p> | 
+
 
 
 *JET_paramLVChunkSizeMost*  
 163  
 
-Parametro di sola lettura che restituisce la dimensione del blocco di valore Long in base alle dimensioni di pagina configurate. Se è necessario leggere o scrivere un valore Long con più chiamate jet {set, retrieve}, utilizzare un buffer le cui dimensioni sono un multiplo della dimensione del blocco è più efficiente.
+Parametro di sola lettura che restituisce le dimensioni del blocco di valore lungo in base alle dimensioni di pagina configurate. Se un valore long deve essere letto o scritto con più chiamate Jet{Set,Retrieve}Column, l'uso di un buffer la cui dimensione è un multiplo delle dimensioni del blocco è più efficiente.
 
-<table>
-<colgroup>
-<col style="width: 50%" />
-<col style="width: 50%" />
-</colgroup>
-<tbody>
-<tr class="odd">
-<td><p>Valore predefinito:</p></td>
-<td><p>Pagina 2 KB = 1966 byte<br />
-pagina 4KB = 4014 byte<br />
-pagina 8KB = 8110 byte<br />
-pagina 16KB = 4050 byte<br />
-pagina 32 KB = 8150 byte</p></td>
-</tr>
-<tr class="even">
-<td><p>Digitare:</p></td>
-<td><p>Integer</p></td>
-</tr>
-<tr class="odd">
-<td><p>Intervallo valido:</p></td>
-<td><p>0-10000</p></td>
-</tr>
-<tr class="even">
-<td><p>Ambito:</p></td>
-<td><p></p></td>
-</tr>
-<tr class="odd">
-<td><p>Imposta dopo <a href="gg269354(v=exchg.10).md">JetCreateInstance</a>:</p></td>
-<td><p></p></td>
-</tr>
-<tr class="even">
-<td><p>Imposta dopo <a href="gg294068(v=exchg.10).md">JetInit</a>:</p></td>
-<td><p></p></td>
-</tr>
-<tr class="odd">
-<td><p>Influiscono sul layout fisico:</p></td>
-<td><p></p></td>
-</tr>
-<tr class="even">
-<td><p>Influire sull'affidabilità:</p></td>
-<td><p></p></td>
-</tr>
-<tr class="odd">
-<td><p>Influire sulle prestazioni:</p></td>
-<td><p></p></td>
-</tr>
-<tr class="even">
-<td><p>Influiscono sulle risorse:</p></td>
-<td><p></p></td>
-</tr>
-<tr class="odd">
-<td><p>Disponibilità:</p></td>
-<td><p></p></td>
-</tr>
-</tbody>
-</table>
+
+| Etichetta | Valore |
+|--------|-------|
+| <p>Valore predefinito:</p> | <p>Pagina da 2 kb = 1966 byte<br />Pagina da 4 kb = 4014 byte<br />Pagina da 8 kb = 8110 byte<br />Pagina da 16 kb = 4050 byte<br />Pagina da 32 kb = 8150 byte</p> | 
+| <p>Digitare:</p> | <p>Intero</p> | 
+| <p>Intervallo valido:</p> | <p>0-10000</p> | 
+| <p>Ambito:</p> | <p></p> | 
+| <p>Imposta dopo <a href="gg269354(v=exchg.10).md">JetCreateInstance</a>:</p> | <p></p> | 
+| <p>Impostare dopo <a href="gg294068(v=exchg.10).md">JetInit</a>:</p> | <p></p> | 
+| <p>Influisce sul layout fisico:</p> | <p></p> | 
+| <p>Influisce sull'affidabilità:</p> | <p></p> | 
+| <p>Influisce sulle prestazioni:</p> | <p></p> | 
+| <p>Influisce sulle risorse:</p> | <p></p> | 
+| <p>Disponibilità:</p> | <p></p> | 
+
 
 
 ### <a name="requirements"></a>Requisiti
 
-<table>
-<colgroup>
-<col style="width: 50%" />
-<col style="width: 50%" />
-</colgroup>
-<tbody>
-<tr class="odd">
-<td><p><strong>Client</strong></p></td>
-<td><p>Richiede Windows Vista.</p></td>
-</tr>
-<tr class="even">
-<td><p><strong>Server</strong></p></td>
-<td><p>Richiede Windows Server 2008.</p></td>
-</tr>
-<tr class="odd">
-<td><p><strong>Intestazione</strong></p></td>
-<td><p>Dichiarata in esent. h.</p></td>
-</tr>
-</tbody>
-</table>
+
+| Requisito | Valore |
+|------------|----------|
+| <p><strong>Client</strong></p> | <p>Richiede Windows Vista.</p> | 
+| <p><strong>Server</strong></p> | <p>Richiede Windows Server 2008.</p> | 
+| <p><strong>Intestazione</strong></p> | <p>Dichiarato in Esent.h.</p> | 
+
 
 
 ### <a name="see-also"></a>Vedere anche

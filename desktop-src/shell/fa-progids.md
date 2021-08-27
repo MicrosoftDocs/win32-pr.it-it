@@ -4,12 +4,12 @@ ms.assetid: f2b666d6-bf22-47b5-87e1-8de5ff51c152
 title: Identificatori a livello di codice
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 7cdc29a3981461a178bdf528768bb12b1840ac5dbed46f310c10718fa9429153
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: bf982f865fa8b856bc29c00a9b2371b88b34615b
+ms.sourcegitcommit: 9b5faa61c38b2d0c432b7f2dbee8c127b0e28a7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "117860808"
+ms.lasthandoff: 08/19/2021
+ms.locfileid: "122467288"
 ---
 # <a name="programmatic-identifiers"></a>Identificatori a livello di codice
 
@@ -31,57 +31,18 @@ Una sottochiave ProgID deve includere gli elementi seguenti. Si noti che alcuni 
 
 
 
-<table>
-<colgroup>
-<col style="width: 50%" />
-<col style="width: 50%" />
-</colgroup>
-<thead>
-<tr class="header">
-<th>Elemento</th>
-<th>Descrizione</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td><strong>(Impostazione predefinita)</strong></td>
-<td>Impostare la voce predefinita della sottochiave ProgID su un nome descrittivo per il ProgID, adatto per la visualizzazione all'utente. L'uso di questa voce per contenere il nome descrittivo è deprecato dalla voce FriendlyTypeName nei sistemi che eseguono Windows 2000 o versioni successive. Tuttavia, è necessario impostare questo valore per la compatibilità con le versioni precedenti.<br/></td>
-</tr>
-<tr class="even">
-<td><strong>AllowSilentDefaultTakeOver</strong> (introdotto in Windows 8)</td>
-<td>Impostare questa voce facoltativa per segnalare Windows questo ProgID quando si determina un gestore predefinito per un tipo di file pubblico. Indipendentemente dal fatto che questo valore sia impostato, progID continua a essere visualizzato nel menu di scelta rapida OpenWith e nella finestra di dialogo. Si tratta di un REG_NONE predefinito.</td>
-</tr>
-<tr class="odd">
-<td><strong>AppUserModelID</strong> (introdotto in Windows 7)</td>
-<td>Impostare questa voce facoltativa sull'ID modello utente dell'applicazione esplicito (AppUserModelID) se l'applicazione usa un <strong></strong> AppUserModelID esplicito e usa le Jump List recenti o <strong>frequenti</strong> generate automaticamente dal sistema o fornisce un Jump List. Se un'applicazione usa un AppUserModelID esplicito e non imposta questo valore, gli elementi non verranno visualizzati nelle Jump List dell'applicazione. Si tratta di una REG_SZ stringa. Per altre informazioni, vedere <a href="appids.md">ID modello utente applicazione (AppUserModelIDs)</a>.<br/></td>
-</tr>
-<tr class="even">
-<td><strong>EditFlags</strong></td>
-<td>Impostare questa voce facoltativa usando i flag <a href="/windows/desktop/api/Shlwapi/ne-shlwapi-filetypeattributeflags"><strong>dell'enumerazione FILETYPEATTRIBUTEFLAGS.</strong></a> La voce EditFlags controlla alcuni aspetti della gestione della shell dei tipi di file collegati a questo ProgID. È anche possibile usare la voce EditFlags per limitare la quantità di utenti che possono modificare determinati aspetti di questi tipi di file usando la finestra delle proprietà di un file. I <strong>valori FILETYPEATTRIBUTEFLAGS</strong> usati per EditFlags sono valori binari progettati in modo da poter combinare più attributi in un singolo valore in un'operazione OR bit per bit. Si tratta di un REG_DWORD o REG_BINARY valore.<br/></td>
-</tr>
-<tr class="odd">
-<td><strong>FriendlyTypeName</strong></td>
-<td>Impostare questa voce su un nome descrittivo per ProgID, adatto per la visualizzazione all'utente. Per coerenza, questa stringa deve contenere gli stessi dati della voce Default per questa chiave ProgID. Questa voce può essere una stringa REG_SZ o REG_EXPAND_SZ, ma deve essere formattata come stringa indiretta (un nome di file completo e un valore di risorsa preceduti dal simbolo @), ad esempio <em>@%SystemRoot%\shell32.dll,-154</em>.<br/></td>
-</tr>
-<tr class="even">
-<td><strong>InfoTip</strong></td>
-<td>Impostare questa voce su un breve messaggio della Guida visualizzato da Shell per questo ProgID. La voce InfoTip viene visualizzata in una finestra di dialogo con il mouse. Questo valore può essere una REG_SZ o REG_EXPAND_SZ stringa, ma, ad esempio FriendlyTypeName, deve essere formattato come stringa indiretta.<br/></td>
-</tr>
-<tr class="odd">
-<td><strong>CurVer</strong></td>
-<td>Impostare la voce (Predefinita) di questa sottochiave sulla versione più recente di questo ProgID.<br/>
-<blockquote>
-[!Note]<br />
-A meno che non si abbia una versione side-by-side dell'applicazione, vale a volte più versioni installate nello stesso sistema, è consigliabile evitare di usare <strong>CurVer</strong>.
-</blockquote>
-<br/></td>
-</tr>
-<tr class="even">
-<td><strong>DefaultIcon</strong>.</td>
-<td>Impostare la voce (Predefinita) di questa sottochiave sull'icona predefinita che si vuole visualizzare per i tipi di file associati a questo ProgID. Questo valore può essere una stringa REG_SZ o REG_EXPAND_SZ, ma deve essere fornito come nome di file completo con il relativo valore di risorsa di supporto, ad esempio <em>%SystemRoot%\shell32.dll,-154</em>.<br/></td>
-</tr>
-</tbody>
-</table>
+
+| Elemento | Descrizione | 
+|---------|-------------|
+| <strong>(Impostazione predefinita)</strong> | Impostare la voce predefinita della sottochiave ProgID su un nome descrittivo per progID, adatto per la visualizzazione all'utente. L'uso di questa voce per contenere il nome descrittivo è deprecato dalla voce FriendlyTypeName nei sistemi che eseguono Windows 2000 o versioni successive. Tuttavia, è necessario impostare questo valore per la compatibilità con le versioni precedenti.<br /> | 
+| <strong>AllowSilentDefaultTakeOver</strong> (introdotto in Windows 8) | Impostare questa voce facoltativa per segnalare Windows questo ProgID quando si determina un gestore predefinito per un tipo di file pubblico. Indipendentemente dal fatto che questo valore sia impostato, progID continua a essere visualizzato nel menu di scelta rapida OpenWith e nella finestra di dialogo. Si tratta di un REG_NONE predefinito. | 
+| <strong>AppUserModelID</strong> (introdotto in Windows 7) | Impostare questa voce facoltativa sull'ID modello utente dell'applicazione esplicito (AppUserModelID) se l'applicazione usa un <strong></strong> AppUserModelID esplicito e usa le Jump List recenti o <strong>frequenti</strong> generate automaticamente dal sistema o fornisce un Jump List. Se un'applicazione usa un AppUserModelID esplicito e non imposta questo valore, gli elementi non verranno visualizzati nelle Jump List dell'applicazione. Si tratta di una REG_SZ stringa. Per altre informazioni, vedere <a href="appids.md">ID modello utente applicazione (AppUserModelIDs)</a>.<br /> | 
+| <strong>EditFlags</strong> | Impostare questa voce facoltativa usando i flag <a href="/windows/desktop/api/Shlwapi/ne-shlwapi-filetypeattributeflags"><strong>dell'enumerazione FILETYPEATTRIBUTEFLAGS.</strong></a> La voce EditFlags controlla alcuni aspetti della gestione della shell dei tipi di file collegati a questo ProgID. È anche possibile usare la voce EditFlags per limitare quanto l'utente può modificare determinati aspetti di questi tipi di file usando la finestra delle proprietà di un file. I <strong>valori FILETYPEATTRIBUTEFLAGS</strong> usati per EditFlags sono valori binari progettati in modo che sia possibile combinare più attributi in un singolo valore in un'operazione OR bit per bit. Si tratta di un REG_DWORD o REG_BINARY valore.<br /> | 
+| <strong>FriendlyTypeName</strong> | Impostare questa voce su un nome descrittivo per ProgID, adatto per la visualizzazione all'utente. Per coerenza, questa stringa deve contenere gli stessi dati della voce Default per questa chiave ProgID. Questa voce può essere una stringa REG_SZ o REG_EXPAND_SZ, ma deve essere formattata come stringa indiretta (un nome di file completo e un valore di risorsa preceduto dal simbolo @), ad esempio <em>@%SystemRoot%\shell32.dll,-154</em>.<br /> | 
+| <strong>InfoTip</strong> | Impostare questa voce su un breve messaggio della Guida visualizzato da Shell per questo ProgID. La voce InfoTip viene visualizzata in una finestra di dialogo con il mouse. Questo valore può essere una REG_SZ o REG_EXPAND_SZ stringa, ma, ad esempio FriendlyTypeName, deve essere formattato come stringa indiretta.<br /> | 
+| <strong>CurVer</strong> | Impostare la voce (Predefinita) di questa sottochiave sulla versione più recente di questo ProgID.<br /><blockquote>[!Note]<br />A meno che non si dispone di versioni side-by-side dell'applicazione, cio' più versioni installate nello stesso sistema, è consigliabile evitare di usare <strong>CurVer</strong>.</blockquote><br /> | 
+| <strong>DefaultIcon</strong>. | Impostare la voce (Predefinita) di questa sottochiave sull'icona predefinita che si vuole visualizzare per i tipi di file associati a questo ProgID. Questo valore può essere una stringa REG_SZ o REG_EXPAND_SZ, ma deve essere fornito come nome di file completo con il relativo valore di risorsa di supporto, ad esempio <em>%SystemRoot%\shell32.dll,-154</em>.<br /> | 
+
 
 
 
@@ -106,7 +67,7 @@ HKEY_CLASSES_ROOT
 
 ## <a name="using-versioned-programmatic-identifiers"></a>Uso di identificatori a livello di codice con controllo delle versioni
 
-Un ProgID con controllo delle versioni è quello la cui versione è indicata nel nome. A tale scopo, in genere si aggiunge un punto e il numero di versione al nome. Esempio:
+Un ProgID con controllo delle versioni è quello la cui versione è indicata nel nome. A tale scopo, in genere si aggiunge un punto e il numero di versione al nome. Ad esempio:
 
 -   Word.Document.6
 -   Word.Document.8

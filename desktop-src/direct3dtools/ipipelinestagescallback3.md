@@ -17,12 +17,12 @@ api_location:
 topic_type:
 - APIRef
 - kbSyntax
-ms.openlocfilehash: 62c626c30f641fb4f73761454d9e56fcde0d4737
-ms.sourcegitcommit: a47bd86f517de76374e4fff33cfeb613eb259a7e
+ms.openlocfilehash: 211b6c35ef0333dfd6c4ad1f8ef04f1997db4ef1
+ms.sourcegitcommit: 4e94fc75fad7b2a0f3c92a26f97e89924e59b7a9
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/06/2021
-ms.locfileid: "104481268"
+ms.lasthandoff: 08/24/2021
+ms.locfileid: "122787097"
 ---
 # <a name="span-idvspixengineipipelinestagescallback3spanipipelinestagescallback3-interface"></a><span id="vspixengine.ipipelinestagescallback3"></span>Interfaccia IPipeLineStagesCallback3
 
@@ -30,21 +30,21 @@ Callback per i dati delle fasi della pipeline.
 
 ## <a name="members"></a>Membri
 
-L'interfaccia **IPipeLineStagesCallback3** eredita dall'interfaccia [**IUnknown**](/windows/desktop/api/unknwn/nn-unknwn-iunknown) . **IPipeLineStagesCallback3** dispone anche di questi tipi di membri:
+**L'interfaccia IPipeLineStagesCallback3** eredita dall'interfaccia [**IUnknown.**](/windows/desktop/api/unknwn/nn-unknwn-iunknown) **IPipeLineStagesCallback3** include anche questi tipi di membri:
 
 -   [Metodi](#methods)
 
 ### <a name="span-idmethodsspanmethods"></a><span id="methods"></span>Metodi
 
-L'interfaccia **IPipeLineStagesCallback3** dispone di questi metodi.
+Questi metodi sono disponibili nell'interfaccia **IPipeLineStagesCallback3.**
 
-<table><colgroup><col style="width: 50%" /><col style="width: 50%" /></colgroup><thead><tr class="header"><th style="text-align: left;">Metodo</th><th style="text-align: left;">Descrizione</th></tr></thead><tbody><tr class="odd"><td style="text-align: left;"><a href="/windows/desktop/direct3dtools/ipipelinestagescallback3-meshfilereadycallback-bstr"><strong>MeshFileReadyCallback</strong></a></td><td style="text-align: left;"><p>Callback che notifica all'host le informazioni di mesh scritte dalla richiesta associata.</p></td></tr></tbody></table>
+<table><colgroup><col  /><col  /></colgroup><thead><tr class="header"><th >Metodo</th><th >Descrizione</th></tr></thead><tbody><tr class="odd"><td ><a href="/windows/desktop/direct3dtools/ipipelinestagescallback3-meshfilereadycallback-bstr"><strong>MeshFileReadyCallback</strong></a></td><td ><p>Callback che notifica all'host le informazioni mesh scritte dalla richiesta associata.</p></td></tr></tbody></table>
 
  
 
 ## <a name="requirements"></a>Requisiti
 
-<table><colgroup><col style="width: 50%" /><col style="width: 50%" /></colgroup><tbody><tr class="odd"><td><p>Intestazione</p></td><td>Vspixengine. h</td></tr></tbody></table>
+<table><colgroup><col  /><col  /></colgroup><tbody><tr class="odd"><td><p>Intestazione</p></td><td>Vspixengine.h</td></tr></tbody></table>
 
  
 

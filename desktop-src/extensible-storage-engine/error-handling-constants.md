@@ -1,5 +1,5 @@
 ---
-description: 'Altre informazioni su: gestione degli errori costanti'
+description: 'Altre informazioni su: Costanti di gestione degli errori'
 title: Costanti di gestione degli errori
 TOCTitle: Error Handling Constants
 ms:assetid: 5a1f9438-2d36-483e-9820-d0de30ee5e01
@@ -15,12 +15,12 @@ api_type:
 - COM
 api_location: ''
 ROBOTS: INDEX,FOLLOW
-ms.openlocfilehash: 1ab59a8e0c721558e5c056d25798c5d1273bd86c
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 4480b54277c1586ca05d4a5db2ca6fdb9e045055
+ms.sourcegitcommit: 4665ebce0c106bdb52eef36e544280b496b6f50b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "106318804"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "122987634"
 ---
 # <a name="error-handling-constants"></a>Costanti di gestione degli errori
 
@@ -29,56 +29,25 @@ _**Si applica a:** Windows | Windows Server_
 
 ## <a name="error-handling-constants"></a>Costanti di gestione degli errori
 
-Le costanti seguenti vengono utilizzate per impostare l'intervallo per i parametri di sistema [JET_paramExceptionAction](./error-handling-parameters.md) .
+Le costanti seguenti vengono usate per impostare l'intervallo per i JET_paramExceptionAction [di](./error-handling-parameters.md) sistema.
 
-<table>
-<colgroup>
-<col style="width: 50%" />
-<col style="width: 50%" />
-</colgroup>
-<thead>
-<tr class="header">
-<th><p>Costante/valore</p></th>
-<th><p>Descrizione</p></th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td><p>JET_ExceptionMsgBox<br />
-0x0001</p></td>
-<td><p>Visualizza una finestra di messaggio quando si verifica un'eccezione.</p></td>
-</tr>
-<tr class="even">
-<td><p>JET_ExceptionNone<br />
-0x0002</p></td>
-<td><p>Non esegue alcuna operazione quando si verifica un'eccezione.</p></td>
-</tr>
-</tbody>
-</table>
+
+| <p>Costante/valore</p> | <p>Descrizione</p> | 
+|-----------------------|--------------------|
+| <p>JET_ExceptionMsgBox<br />0x0001</p> | <p>Visualizza una finestra di messaggio quando si verifica un'eccezione.</p> | 
+| <p>JET_ExceptionNone<br />0x0002</p> | <p>Non esegue alcuna operazione quando si verifica un'eccezione.</p> | 
+
 
 
 ### <a name="requirements"></a>Requisiti
 
-<table>
-<colgroup>
-<col style="width: 50%" />
-<col style="width: 50%" />
-</colgroup>
-<tbody>
-<tr class="odd">
-<td><p><strong>Client</strong></p></td>
-<td><p>Richiede Windows Vista, Windows XP o Windows 2000 Professional.</p></td>
-</tr>
-<tr class="even">
-<td><p><strong>Server</strong></p></td>
-<td><p>Richiede Windows Server 2008, Windows Server 2003 o Windows 2000 Server.</p></td>
-</tr>
-<tr class="odd">
-<td><p><strong>Intestazione</strong></p></td>
-<td><p>Dichiarata in esent. h.</p></td>
-</tr>
-</tbody>
-</table>
+
+| Requisito | Valore |
+|------------|----------|
+| <p><strong>Client</strong></p> | <p>Richiede Windows Vista, Windows XP o Windows 2000 Professional.</p> | 
+| <p><strong>Server</strong></p> | <p>Richiede Windows Server 2008, Windows Server 2003 o Windows 2000 Server.</p> | 
+| <p><strong>Intestazione</strong></p> | <p>Dichiarato in Esent.h.</p> | 
+
 
 
 ### <a name="see-also"></a>Vedere anche

@@ -14,12 +14,12 @@ api_type:
 - Schema
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 2fa08d1eb3cbb8086149192e6ecd5fa3880f01e6cfa1800468d2825c243b211e
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: c2f2cc1014b081ac13183144fca34c2087539de0
+ms.sourcegitcommit: 61a4c522182aa1cacbf5669683d9570a3bf043b2
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119803310"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "122885709"
 ---
 # <a name="ms-frs-hub-member-attribute"></a>Attributo ms-FRS-Hub-Member
 
@@ -57,7 +57,7 @@ ms.locfileid: "119803310"
 | ID collegamento                | 1046                                                      |
 | MAPI-Id                | \-                                                        |
 | System-Only            | Falso                                                     |
-| Is-Single-Valued       | Vero                                                      |
+| A valore singolo       | Vero                                                      |
 | Indicizzato             | Falso                                                     |
 | Nel catalogo globale      | Falso                                                     |
 | NT-Security-Descriptor | O:BAG:BAD:S:                                              |
@@ -78,7 +78,7 @@ ms.locfileid: "119803310"
 | ID collegamento                | 1046                                                      |
 | MAPI-Id                | \-                                                        |
 | System-Only            | Falso                                                     |
-| Is-Single-Valued       | Vero                                                      |
+| A valore singolo       | Vero                                                      |
 | Indicizzato             | Falso                                                     |
 | Nel catalogo globale      | Falso                                                     |
 | NT-Security-Descriptor | O:BAG:BAD:S:                                              |
@@ -99,7 +99,7 @@ ms.locfileid: "119803310"
 | ID collegamento                | 1046                                                      |
 | MAPI-Id                | \-                                                        |
 | System-Only            | Falso                                                     |
-| Is-Single-Valued       | Vero                                                      |
+| A valore singolo       | Vero                                                      |
 | Indicizzato             | Falso                                                     |
 | Nel catalogo globale      | Falso                                                     |
 | NT-Security-Descriptor | O:BAG:BAD:S:                                              |
@@ -120,7 +120,7 @@ ms.locfileid: "119803310"
 | ID collegamento                | 1046                                                      |
 | MAPI-Id                | \-                                                        |
 | System-Only            | Falso                                                     |
-| Is-Single-Valued       | Vero                                                      |
+| A valore singolo       | Vero                                                      |
 | Indicizzato             | Falso                                                     |
 | Nel catalogo globale      | Falso                                                     |
 | NT-Security-Descriptor | O:BAG:BAD:S:                                              |
@@ -141,7 +141,7 @@ ms.locfileid: "119803310"
 | ID collegamento                | 1046                                                      |
 | MAPI-Id                | \-                                                        |
 | System-Only            | Falso                                                     |
-| Is-Single-Valued       | Vero                                                      |
+| A valore singolo       | Vero                                                      |
 | Indicizzato             | Falso                                                     |
 | Nel catalogo globale      | Falso                                                     |
 | NT-Security-Descriptor | O:BAG:BAD:S:                                              |
@@ -155,7 +155,7 @@ ms.locfileid: "119803310"
 
 ## <a name="remarks"></a>Commenti
 
-Si tratta del nome distinto completo di un [**oggetto NTFRS-Member.**](c-ntfrsmember.md) Il nome distinto è nel formato "CN= *<computerGuid>* , CN= *<Dfs Link Name>* , CN= , *<Dfs Root name>* CN=DFS Volumes, CN=File Replication Service,CN=System, DC=..."
+Si tratta del nome distinto completo di un [**oggetto NTFRS-Member.**](c-ntfrsmember.md) Il nome distinto è nel formato "CN=*&lt; &gt; computerGuid*, CN= *<Dfs Link Name>* , CN= , *<Dfs Root name>* CN=DFS Volumes, CN=File Replication Service,CN=System, DC=..."
 
  
 

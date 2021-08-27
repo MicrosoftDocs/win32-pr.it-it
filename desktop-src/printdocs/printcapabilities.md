@@ -4,12 +4,12 @@ ms.assetid: f503b62f-02e1-4621-8799-a8b6ad12f489
 title: PrintCapabilities
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 2158fd651849df2e4ea24c640065f1041569741a
-ms.sourcegitcommit: 5d4e99f4c8f42f5f543e52cb9beb9fb13ec56c5f
+ms.openlocfilehash: 8ef035015e8024954b32d17dd87bab929221ac78
+ms.sourcegitcommit: 61a4c522182aa1cacbf5669683d9570a3bf043b2
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/19/2021
-ms.locfileid: "112407024"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "122883928"
 ---
 # <a name="printcapabilities"></a>PrintCapabilities
 
@@ -19,7 +19,7 @@ Un elemento PrintCapabilities rappresenta la radice del documento PrintCapabilit
 
 ## <a name="element-tag"></a>Element Tag
 
-<PrintCapabilities>
+&lt;PrintCapabilities&gt;
 
 ## <a name="xml-attributes"></a>Attributi XML
 
@@ -29,7 +29,7 @@ Nella tabella seguente sono elencati gli attributi XML che possono essere relati
 
 | Attributo XML      | Dettagli                                                                                                                                                                                                             |
 |--------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| version<br/> | Specifica la versione dello schema che definisce i tipi di elemento e la relativa struttura. L'attributo version è di tipo integer. La versione corrente dello schema è definita "1". Questo attributo è obbligatorio. <br/> |
+| version<br/> | Specifica la versione dello schema che definisce i tipi di elemento e la relativa struttura. L'attributo version è di tipo integer. La versione corrente dello schema è designata come "1". Questo attributo è obbligatorio. <br/> |
 
 
 
@@ -43,7 +43,7 @@ Nella tabella seguente sono elencati gli elementi che possono essere elementi pa
 
 
 
-| Categoria                   | Dettagli                                                                                                           |
+| Category                   | Dettagli                                                                                                           |
 |----------------------------|-------------------------------------------------------------------------------------------------------------------|
 | Elementi padre<br/> | Solo radice del documento.<br/>                                                                                    |
 | Elementi figlio<br/>  | *Funzionalità* (zero o più)<br/> *ParameterDef* (zero o più)<br/> *Proprietà* (zero o più)<br/> |

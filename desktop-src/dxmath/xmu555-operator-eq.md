@@ -11,12 +11,12 @@ api_name: ''
 api_type:
 - NA
 api_location: ''
-ms.openlocfilehash: 5ec53b3c49c7ade0f8be22f507768bd1c2e084de40d4812168b7ff760bf349b6
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 315dedd527773030e2732717f01fc9e29e3ea5d4
+ms.sourcegitcommit: c276a8912787b2cda74dcf54eb96df961bb1188b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "118984611"
+ms.lasthandoff: 08/20/2021
+ms.locfileid: "122624977"
 ---
 # <a name="xmu555-operator--operators"></a>Operatore XMU555 = operatori
 
@@ -30,23 +30,23 @@ Assegna i dati del componente vettoriale all'istanza corrente di [**XMU555.**](/
 
 <table>
 <colgroup>
-<col style="width: 50%" />
-<col style="width: 50%" />
+<col  />
+<col  />
 </colgroup>
 <thead>
 <tr class="header">
-<th style="text-align: left;">Operatore</th>
-<th style="text-align: left;">Descrizione</th>
+<th >Operatore</th>
+<th >Descrizione</th>
 </tr>
 </thead>
 <tbody>
 <tr class="odd">
-<td style="text-align: left;"><a href="/windows/desktop/api//rrascfg/nn-rrascfg-ieapproviderconfig"><strong>XMU555::operator = (const XMU555&)</strong></a></td>
-<td style="text-align: left;">Assegna i dati del componente vettoriale da un'istanza <code>XMU555</code> di all'istanza corrente di <code>XMU555</code> . <br/> Questo operatore assegna i dati del componente vettoriale da un'istanza di <a href="/windows/desktop/api/directxpackedvector/ns-directxpackedvector-xmu555"><strong>XMU555</strong></a> all'istanza corrente di <code>XMU555</code> . <br/></td>
+<td ><a href="/windows/desktop/api//rrascfg/nn-rrascfg-ieapproviderconfig"><strong>XMU555::operator = (const XMU555&)</strong></a></td>
+<td >Assegna i dati del componente vettoriale da un'istanza <code>XMU555</code> di all'istanza corrente di <code>XMU555</code> . <br/> Questo operatore assegna i dati del componente vettoriale da un'istanza di <a href="/windows/desktop/api/directxpackedvector/ns-directxpackedvector-xmu555"><strong>XMU555</strong></a> all'istanza corrente di <code>XMU555</code> . <br/></td>
 </tr>
 <tr class="even">
-<td style="text-align: left;"><a href="/windows/desktop/api/directxpackedvector/nf-directxpackedvector-xmu555-operator-assign(uint16_t)"><strong>XMU555::operator = (const uint16_t)</strong></a></td>
-<td style="text-align: left;">Assegna i dati del componente vettoriale in un'istanza di <code>uint16_t</code> all'istanza corrente di <code>XMU555</code> . <br/> Assegna i dati del componente vettoriale in un'istanza di <code>uint16_t</code> all'istanza corrente di <a href="/windows/desktop/api/directxpackedvector/ns-directxpackedvector-xmu555"><strong>XMU555.</strong></a> <br/>
+<td ><a href="/windows/desktop/api/directxpackedvector/nf-directxpackedvector-xmu555-operator-assign(uint16_t)"><strong>XMU555::operator = (const uint16_t)</strong></a></td>
+<td >Assegna i dati del componente vettoriale in un'istanza di <code>uint16_t</code> all'istanza corrente di <code>XMU555</code> . <br/> Assegna i dati del componente vettoriale in un'istanza di <code>uint16_t</code> all'istanza corrente di <a href="/windows/desktop/api/directxpackedvector/ns-directxpackedvector-xmu555"><strong>XMU555.</strong></a> <br/>
 <blockquote>
 [!Note]<br />
 Questo operatore è disponibile solo in C++.

@@ -7,12 +7,12 @@ MSHAttr:
 title: PurposeGroupGuid
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 29ead67e44ac4735d17d97580b6bce5f187422994c9854bac19febf7a988bcbf
-ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
+ms.openlocfilehash: a704d035371d6d7febc2f2d86e4d67736ab02ad2
+ms.sourcegitcommit: 4665ebce0c106bdb52eef36e544280b496b6f50b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119358835"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "122985413"
 ---
 # <a name="span-idwwan_profile_v4element_purposegroupguidspanpurposegroupguid"></a><span id="WWAN_profile_v4.element_PurposeGroupGuid"></span>PurposeGroupGuid
 
@@ -33,9 +33,9 @@ Vengono definiti quattro valori GUID, come elencato nella tabella seguente.
 
 ## <a name="element-hierarchy"></a>Gerarchia degli elementi
 
-[<MBNProfileExt>](element-mbnprofileext.md)  
-[<PurposeGroups>](element-purposegroups.md)  
-**<PurposeGroupGuid>**
+[&lt;MBNProfileExt&gt;](element-mbnprofileext.md)  
+[&lt;PurposeGroups&gt;](element-purposegroups.md)  
+**&lt;PurposeGroupGuid&gt;**
 
 ## <a name="syntax"></a>Sintassi
 
@@ -59,43 +59,21 @@ Nessuno.
 
 ### <a name="span-idparent_elementsspanspan-idparent_elementsspanparent-elements"></a><span id="parent_elements"></span><span id="PARENT_ELEMENTS"></span>Elementi padre
 
-<table>
-<colgroup>
-<col style="width: 50%" />
-<col style="width: 50%" />
-</colgroup>
-<thead>
-<tr class="header">
-<th>Elemento padre</th>
-<th>Descrizione</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td><a href="element-purposegroups.md">PurposeGroups</a></td>
-<td><p>Elenco facoltativo di gruppi di profili, in cui ogni gruppo include i profili usati per uno scopo comune.</p>
-<p>Questo elemento è nuovo per la versione 4 dello schema.</p>
-<p>Un profilo può essere elencato in più gruppi.</p></td>
-</tr>
-</tbody>
-</table>
+
+| Elemento padre | Descrizione | 
+|----------------|-------------|
+| <a href="element-purposegroups.md">PurposeGroups</a> | <p>Elenco facoltativo di gruppi di profili, in cui ogni gruppo include i profili usati per uno scopo comune.</p><p>Questo elemento è nuovo per la versione 4 dello schema.</p><p>Un profilo può essere elencato in più gruppi.</p> | 
+
 
  
 
 ## <a name="requirements"></a>Requisiti
 
-<table>
-<colgroup>
-<col style="width: 50%" />
-<col style="width: 50%" />
-</colgroup>
-<tbody>
-<tr class="odd">
-<td><p>Spazio dei nomi</p></td>
-<td><p>https://www.microsoft.com/networking/WWAN/profile/v4</p></td>
-</tr>
-</tbody>
-</table>
+
+| Requisito | Valore |
+|------------|----------|
+| <p>Spazio dei nomi</p> | <p>https://www.microsoft.com/networking/WWAN/profile/v4</p> | 
+
 
  
 

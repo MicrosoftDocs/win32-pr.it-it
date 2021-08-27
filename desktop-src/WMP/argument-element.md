@@ -1,9 +1,9 @@
 ---
 title: Elemento argument
-description: L'elemento Argument contiene una parte di una stringa di condizione.
+description: L'elemento argument contiene una parte di una stringa di condizione.
 ms.assetid: 7e4744ce-e9e2-4a70-a2cc-d33ae1ad2f99
 keywords:
-- Finestra degli elementi argomento Media Player
+- Elemento argument Windows Media Player
 topic_type:
 - apiref
 api_name:
@@ -13,16 +13,16 @@ api_type:
 ms.topic: reference
 ms.date: 05/31/2018
 api_location: ''
-ms.openlocfilehash: 1c4adc0b853054d448bc9955f3bd8c64115ac2ab
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: 1f5a689b74bd18138361d9377358ddee5cf5979f
+ms.sourcegitcommit: c276a8912787b2cda74dcf54eb96df961bb1188b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "106329206"
+ms.lasthandoff: 08/20/2021
+ms.locfileid: "122630192"
 ---
 # <a name="argument-element"></a>Elemento argument
 
-L'elemento **argument** contiene una parte di una stringa di condizione. Una stringa di condizione ha in genere una parte della condizione e una parte del valore. Ad esempio, nella stringa di condizione "Artist uguale a Joe", la parte della condizione è "Equals" e la parte del valore è "Joe".
+**L'elemento** argument contiene una parte di una stringa di condizione. Una stringa di condizione include in genere una parte di condizione e una parte di valore. Ad esempio, nella stringa di condizione "Artist Equals Joe", la parte della condizione è "Equals" e la parte del valore è "Joe".
 
 ``` syntax
 <argument
@@ -35,7 +35,7 @@ L'elemento **argument** contiene una parte di una stringa di condizione. Una str
 
 ## <a name="attributes"></a>Attributi
 
-**nome** (obbligatorio)
+**name** (obbligatorio)
 
 Nome di una parte della stringa della condizione.
 
@@ -45,7 +45,7 @@ Nome di una parte della stringa della condizione.
 
 | Gerarchia | Elementi                         |
 |-----------|----------------------------------|
-| Padre    | [frammento](fragment-element.md) |
+| Padre    | [Frammento](fragment-element.md) |
 | Figlio     | nessuno                             |
 
 
@@ -54,14 +54,14 @@ Nome di una parte della stringa della condizione.
 
 ## <a name="remarks"></a>Osservazioni
 
-Quando l'attributo **Name** di un elemento **Fragment** è una caratteristica dell'elemento multimediale, ad esempio Album Artist o genre, l'elemento **Fragment** deve contenere due elementi **argument** : uno che specifica una condizione e un altro che specifica un valore. La tabella seguente mostra due valori possibili per l'attributo **Name** e come vengono usati gli elementi **argument** per specificare le condizioni e i valori.
+Quando l'attributo  **name** di un elemento frammento è una caratteristica  dell'elemento multimediale, ad esempio Album Artist o Genre, l'elemento frammento deve contenere due elementi **argomento:** uno che specifica una condizione e un altro che specifica un valore. Nella tabella seguente vengono illustrati due valori possibili per **l'attributo name** e **come** vengono usati gli elementi dell'argomento per specificare condizioni e valori.
 
 
 
 <table>
 <colgroup>
-<col style="width: 50%" />
-<col style="width: 50%" />
+<col  />
+<col  />
 </colgroup>
 <thead>
 <tr class="header">
@@ -71,12 +71,12 @@ Quando l'attributo **Name** di un elemento **Fragment** è una caratteristica de
 </thead>
 <tbody>
 <tr class="odd">
-<td>Condizione</td>
-<td>Il contenuto dell'elemento <strong>argument</strong> è la parte della condizione di una stringa di condizione. Nella condizione, ad esempio, &quot; la stringa Artist è uguale a Joe &quot; , la parte della condizione è &quot; uguale a &quot; . La parte della condizione di una stringa di condizione deve essere una delle seguenti: Equals, non uguale a, Contains, non contiene, è minore di, è maggiore di, è, non è, è precedente a, è successiva a, è più recente di, superiore, inferiore, crescente, decrescente, casuale, è almeno, non è maggiore di.</td>
+<td>Condition</td>
+<td>Il contenuto <strong>dell'elemento argomento</strong> è la parte della condizione di una stringa di condizione. Ad esempio, nella stringa della condizione &quot; Artist Equals Joe &quot; la parte relativa alla condizione è Uguale a &quot; &quot; . La parte della condizione di una stringa di condizione deve essere una delle seguenti: Uguale a, Non uguale a, Contiene, Non contiene, è minore di, è maggiore di, È, Non è, È prima, è più recente di, è più recente di, Sopra, Sotto, Crescente, Decrescente, Casuale, è almeno, non è più di.</td>
 </tr>
 <tr class="even">
 <td>Valore</td>
-<td>Il contenuto dell'elemento <strong>argument</strong> è la parte relativa al valore di una stringa di condizione. Nella condizione, ad esempio, &quot; la stringa Artist è uguale a Joe &quot; , la parte relativa al valore è &quot; Joe &quot; . Esempio<br/>
+<td>Il contenuto <strong>dell'elemento argomento</strong> è la parte del valore di una stringa di condizione. Ad esempio, nella stringa di condizione &quot; Artist Equals Joe &quot; , la parte del valore è Joe &quot; &quot; . Esempio:<br/>
 <pre data-space="preserve"><code><fragment name = &quot;Artist&quot;>
   <argument name = &quot;Condition&quot;>Equals</argument>
   <argument name = &quot;Value&quot;>Joe</argument>
@@ -89,14 +89,14 @@ Quando l'attributo **Name** di un elemento **Fragment** è una caratteristica de
 
  
 
-Quando l'attributo **Name** di un elemento **Fragment** è "Limit Total Size to" o "Limit Total Duration to", l'elemento **Fragment** deve contenere due elementi **argument** : uno che specifica un formato e uno che specifica un numero. La tabella seguente illustra due valori possibili per l'attributo **Name** e come vengono usati gli elementi **argument** per limitare le dimensioni o la durata di una playlist.
+Quando l'attributo  **name** di un elemento frammento è "Limit Total  Size To"  o "Limit Total Duration To", l'elemento fragment deve contenere due elementi argomento: uno che specifica un formato e uno che specifica un numero. La tabella seguente illustra due valori possibili  per l'attributo **name** e come vengono usati gli elementi dell'argomento per limitare le dimensioni o la durata di una playlist.
 
 
 
 <table>
 <colgroup>
-<col style="width: 50%" />
-<col style="width: 50%" />
+<col  />
+<col  />
 </colgroup>
 <thead>
 <tr class="header">
@@ -107,11 +107,11 @@ Quando l'attributo **Name** di un elemento **Fragment** è "Limit Total Size to"
 <tbody>
 <tr class="odd">
 <td>Formato</td>
-<td>Quando l'attributo <strong>Name</strong> dell'elemento <strong>Fragment</strong> è &quot; limitato alle dimensioni totali &quot; , il contenuto dell'elemento <strong>argument</strong> deve essere uno dei seguenti: kilobyte, megabyte o gigabyte. quando l'attributo <strong>Name</strong> dell'elemento <strong>Fragment</strong> è &quot; limite Total Duration a &quot; , il contenuto dell'elemento <strong>argument</strong> deve essere uno dei seguenti: seconds, minutes, hours o Days.<br/></td>
+<td>Quando l'attributo <strong></strong> <strong>name</strong> dell'elemento fragment è Limit Total Size To , il contenuto dell'elemento argument deve essere uno dei &quot; &quot; seguenti: <strong></strong> Kilobyte, Megabyte o Gigabyte. Quando <strong></strong> <strong></strong> l'attributo name dell'elemento fragment è Limit Total Duration To , il contenuto dell'elemento argument deve essere uno dei &quot; &quot; seguenti: Seconds, Minutes, Hours o Days. <strong></strong><br/></td>
 </tr>
 <tr class="even">
-<td>Number</td>
-<td>Il contenuto dell'elemento <strong>argument</strong> è un numero che limita la dimensione o la durata della playlist. Esempi<br/>
+<td>Numero</td>
+<td>Il contenuto <strong>dell'elemento argomento</strong> è un numero che limita le dimensioni o la durata della playlist. Esempi:<br/>
 <pre data-space="preserve"><code><fragment name = &quot;Limit Total Size To&quot;>
   <argument name = &quot;Format&quot;>Megabytes</argument>
   <argument name = &quot;Number&quot;>5</argument>
@@ -129,14 +129,14 @@ Quando l'attributo **Name** di un elemento **Fragment** è "Limit Total Size to"
 
  
 
-Quando l'attributo **Name** di un elemento **Fragment** è "Limit number of items", l'elemento **Fragment** deve contenere un elemento **argument** che specifica il numero di elementi. Nella tabella seguente viene illustrato come utilizzare il valore numerico dell'attributo **Name** .
+Quando **l'attributo name** di un elemento **fragment** è "Limit Number  of Items", l'elemento **fragment** deve contenere un elemento argument che specifica il numero di elementi. Nella tabella seguente viene illustrato come usare il valore Number **dell'attributo name.**
 
 
 
 <table>
 <colgroup>
-<col style="width: 50%" />
-<col style="width: 50%" />
+<col  />
+<col  />
 </colgroup>
 <thead>
 <tr class="header">
@@ -146,8 +146,8 @@ Quando l'attributo **Name** di un elemento **Fragment** è "Limit number of item
 </thead>
 <tbody>
 <tr class="odd">
-<td>Number</td>
-<td>Il contenuto dell'elemento <strong>argument</strong> è un numero che limita il numero di elementi in una playlist. Esempio<br/>
+<td>Numero</td>
+<td>Il contenuto <strong>dell'elemento argomento</strong> è un numero che limita il numero di elementi in una playlist. Esempio:<br/>
 <pre data-space="preserve"><code><fragment name = &quot;Limit Number of Items&quot;>
   <argument name = &quot;Number&quot;>15</argument>
 </fragment></code></pre></td>
@@ -165,7 +165,7 @@ Quando l'attributo **Name** di un elemento **Fragment** è "Limit number of item
 
 | Requisito | Valore |
 |--------------------|----------------------------------------------------|
-| Versione<br/> | Windows Media Player 9 serie o versione successiva.<br/> |
+| Versione<br/> | Windows Media Player serie 9 o successive.<br/> |
 
 
 
@@ -173,10 +173,10 @@ Quando l'attributo **Name** di un elemento **Fragment** è "Limit number of item
 
 <dl> <dt>
 
-[**Elemento Fragment**](fragment-element.md)
+[**Elemento fragment**](fragment-element.md)
 </dt> <dt>
 
-[**Riferimento agli elementi della playlist Windows Media**](windows-media-playlist-elements-reference.md)
+[**Windows Informazioni di riferimento per gli elementi della playlist multimediale**](windows-media-playlist-elements-reference.md)
 </dt> </dl>
 
  

@@ -4,7 +4,7 @@ description: Questo argomento fornisce informazioni sul supporto di Microsoft Au
 ms.assetid: dc707198-ceb6-4fbf-ace4-8fec88c92b98
 keywords:
 - Automazione interfaccia utente, supporto per il tipo di controllo TitleBar
-- Automazione interfaccia utente, tipo di controllo TitleBar
+- Automazione interfaccia utente,Tipo di controllo TitleBar
 - Automazione interfaccia utente struttura ad albero per il tipo di controllo TitleBar
 - Automazione interfaccia utente,proprietà per il tipo di controllo TitleBar
 - Automazione interfaccia utente,pattern di controllo per il tipo di controllo TitleBar
@@ -21,12 +21,12 @@ keywords:
 - tipi di controllo, TitleBar
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 3ee83d3fb61b58bf627a424ec9fbe2c230968c07e8ae000f5af39d1682c3ddca
-ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
+ms.openlocfilehash: b7e3d3ed0c4a3abc995afab7aec4aa89d02542e2
+ms.sourcegitcommit: 9b5faa61c38b2d0c432b7f2dbee8c127b0e28a7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119570421"
+ms.lasthandoff: 08/19/2021
+ms.locfileid: "122473357"
 ---
 # <a name="titlebar-control-type"></a>Tipo di controllo TitleBar
 
@@ -44,34 +44,15 @@ In questo argomento sono contenute le sezioni seguenti.
 
 ## <a name="typical-tree-structure"></a>Struttura ad albero tipica
 
-La tabella seguente illustra un controllo tipico e una visualizzazione contenuto dell'albero Automazione interfaccia utente relativo ai controlli barra del titolo e descrive gli elementi che possono essere contenuti in ogni visualizzazione. Per altre informazioni sull'albero Automazione interfaccia utente, vedere panoramica Automazione interfaccia utente [albero.](uiauto-treeoverview.md)
+La tabella seguente illustra un controllo tipico e una visualizzazione contenuto dell'albero Automazione interfaccia utente relativo ai controlli barra del titolo e descrive cosa può essere contenuto in ogni visualizzazione. Per altre informazioni sull'albero Automazione interfaccia utente, vedere panoramica [Automazione interfaccia utente albero.](uiauto-treeoverview.md)
 
 
 
-<table>
-<colgroup>
-<col style="width: 50%" />
-<col style="width: 50%" />
-</colgroup>
-<thead>
-<tr class="header">
-<th>Visualizzazione controlli</th>
-<th>Visualizzazione contenuto</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td><ul>
-<li>TitleBar
-<ul>
-<li>Menu (0 o 1)</li>
-<li>Button (0 o più)</li>
-</ul></li>
-</ul></td>
-<td>(Non applicabile; il controllo barra del titolo non ha contenuto)</td>
-</tr>
-</tbody>
-</table>
+
+| Visualizzazione controlli | Visualizzazione contenuto | 
+|--------------|--------------|
+| <ul><li>TitleBar<ul><li>Menu (0 o 1)</li><li>Button (0 o più)</li></ul></li></ul> | (Non applicabile; il controllo barra del titolo non ha contenuto) | 
+
 
 
 
@@ -79,22 +60,22 @@ La tabella seguente illustra un controllo tipico e una visualizzazione contenuto
 
 ## <a name="relevant-properties"></a>Proprietà rilevanti
 
-La tabella seguente elenca le proprietà Automazione interfaccia utente il cui valore o la cui definizione è particolarmente rilevante per il **tipo di controllo TitleBar.** Per altre informazioni sulle Automazione interfaccia utente, vedere [Recupero di proprietà da Automazione interfaccia utente elementi](uiauto-propertiesforclients.md).
+La tabella seguente elenca le Automazione interfaccia utente il cui valore o la cui definizione è particolarmente rilevante per il **tipo di controllo TitleBar.** Per altre informazioni sulle Automazione interfaccia utente, vedere [Recupero di proprietà da Automazione interfaccia utente elementi](uiauto-propertiesforclients.md).
 
 
 
-| Proprietà di automazione interfaccia utente                                                                                              | Valore        | Note                                                                                                                                                                                                |
+| Proprietà di automazione interfaccia utente                                                                                              | valore        | Note                                                                                                                                                                                                |
 |---------------------------------------------------------------------------------------------------------------------|--------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | [**UIA \_ AutomationIdPropertyId**](uiauto-automation-element-propids.md)                 | Vedere le note.   | Il valore di questa proprietà deve essere univoco tra tutti gli elementi peer nella visualizzazione non elaborata dell'Automazione interfaccia utente albero.                                                                                         |
 | [**UIA \_ BoundingRectanglePropertyId**](uiauto-automation-element-propids.md)       | Vedere le note.   | Il valore esposto da questa proprietà deve includere tutti i controlli contenuti.                                                                                                             |
 | [**UIA \_ ClickablePointPropertyId**](uiauto-automation-element-propids.md)             | Vedere le note.   | Supportata se è presente un rettangolo di delimitazione. Se non tutti i punti all'interno del rettangolo di delimitazione sono selezionabili e l'elemento esegue hit testing specializzati, eseguire l'override e fornire un punto selezionabile. |
 | [**UIA \_ ControlTypePropertyId**](uiauto-automation-element-propids.md)                   | **Titlebar** | Questo valore è uguale per tutti i framework dell'interfaccia utente.                                                                                                                                                        |
-| [**IsContentElementPropertyId dell'interfaccia \_ utente**](uiauto-automation-element-propids.md)         | FALSE        | Il controllo barra del titolo non viene mai incluso nella visualizzazione contenuto dell'Automazione interfaccia utente struttura ad albero.                                                                                                               |
+| [**\_IsContentElementPropertyId dell'interfaccia utente**](uiauto-automation-element-propids.md)         | FALSE        | Il controllo barra del titolo non viene mai incluso nella visualizzazione contenuto dell'Automazione interfaccia utente albero.                                                                                                               |
 | [**UIA \_ IsControlElementPropertyId**](uiauto-automation-element-propids.md)         | true         | Il controllo barra del titolo è sempre incluso nella visualizzazione controlli dell'Automazione interfaccia utente albero.                                                                                                              |
 | [**UIA \_ IsKeyboardFocusablePropertyId**](uiauto-automation-element-propids.md)   | FALSE        | Un controllo barra del titolo non ha mai lo stato attivo della tastiera.                                                                                                                                                        |
 | [**UIA \_ IsOffscreenPropertyId**](uiauto-automation-element-propids.md)                   | Dipende da      | Un controllo barra del titolo restituisce un valore a seconda che sia visibile sullo schermo.                                                                                                                |
 | [**UIA \_ LabeledByPropertyId**](uiauto-automation-element-propids.md)                       | Vedere le note.   | Un controllo barra del titolo in genere non ha un'etichetta.                                                                                                                                                 |
-| [**UIA \_ LocalizedControlTypePropertyId**](uiauto-automation-element-propids.md) | Vedere le note.   | Stringa localizzata corrispondente al tipo di controllo TitleBar. Il valore predefinito è "title bar" per en-US o English (Stati Uniti).                                                                  |
+| [**UIA \_ LocalizedControlTypePropertyId**](uiauto-automation-element-propids.md) | Vedere le note.   | Stringa localizzata corrispondente al tipo di controllo TitleBar. Il valore predefinito è "barra del titolo" per en-US o inglese (Stati Uniti).                                                                  |
 | [**UIA \_ NamePropertyId**](uiauto-automation-element-propids.md)                                 | ""           | Una barra del titolo non è contenuto. Le informazioni testuali vengono esposte in base al nome della finestra padre.                                                                                                     |
 
 

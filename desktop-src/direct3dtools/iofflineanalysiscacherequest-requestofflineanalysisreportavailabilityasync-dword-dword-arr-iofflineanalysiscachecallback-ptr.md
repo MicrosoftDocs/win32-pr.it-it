@@ -1,5 +1,5 @@
 ---
-description: Richieste di memorizzazione nella cache del report di analisi offline dei frame specificati.
+description: Richieste di memorizzare nella cache il report di analisi offline dei frame specificati.
 MS-HAID: vspixengine.IOfflineAnalysisCacheRequest\_RequestOfflineAnalysisReportAvailabilityAsync\_DWORD\_DWORD\_arr\_IOfflineAnalysisCacheCallback\_ptr
 MSHAttr:
 - PreferredSiteName:MSDN
@@ -17,16 +17,16 @@ api_location:
 topic_type:
 - APIRef
 - kbSyntax
-ms.openlocfilehash: 2e888b795815b5a406568fbc5d531bb9e294ec92beafd1bad5eade438bf6fa03
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 9d1f32dd20cde915fabce8a1ec805d5d79499349
+ms.sourcegitcommit: c276a8912787b2cda74dcf54eb96df961bb1188b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119624141"
+ms.lasthandoff: 08/20/2021
+ms.locfileid: "122624187"
 ---
 # <a name="span-idvspixengineiofflineanalysiscacherequest_requestofflineanalysisreportavailabilityasync_dword_dword_arr_iofflineanalysiscachecallback_ptrspaniofflineanalysiscacherequestrequestofflineanalysisreportavailabilityasync-method"></a><span id="vspixengine.iofflineanalysiscacherequest_requestofflineanalysisreportavailabilityasync_dword_dword_arr_iofflineanalysiscachecallback_ptr"></span>Metodo IOfflineAnalysisCacheRequest::RequestOfflineAnalysisReportAvailabilityAsync
 
-Richieste di memorizzazione nella cache del report di analisi offline dei frame specificati.
+Richieste di memorizzare nella cache il report di analisi offline dei frame specificati.
 
 ## <a name="syntax"></a>Sintassi
 
@@ -56,7 +56,7 @@ Se questo metodo ha esito positivo, restituisce **S \_ OK**. In caso contrario, 
 
 ## <a name="requirements"></a>Requisiti
 
-<table><colgroup><col style="width: 50%" /><col style="width: 50%" /></colgroup><tbody><tr class="odd"><td><p>Intestazione</p></td><td>Vspixengine.h</td></tr></tbody></table>
+<table><colgroup><col  /><col  /></colgroup><tbody><tr class="odd"><td><p>Intestazione</p></td><td>Vspixengine.h</td></tr></tbody></table>
 
 ## <a name="span-idsee_alsospansee-also"></a><span id="see_also"></span>Vedere anche
 

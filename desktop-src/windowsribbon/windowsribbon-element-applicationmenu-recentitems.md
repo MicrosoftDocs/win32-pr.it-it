@@ -1,9 +1,9 @@
 ---
-title: Proprietà ApplicationMenu. RecentItems
-description: Rappresenta un contenitore per il controllo degli elementi recenti nel menu dell'applicazione.
+title: ApplicationMenu.RecentItems - proprietà
+description: Rappresenta un contenitore per il controllo Elementi recenti nel menu dell'applicazione.
 ms.assetid: 26ed38b6-17de-423f-a113-ccbaf3780a91
 keywords:
-- Barra multifunzione di Windows ApplicationMenu. RecentItems
+- Proprietà ApplicationMenu.RecentItems Windows ribbon
 topic_type:
 - apiref
 api_name:
@@ -12,16 +12,16 @@ api_type:
 - NA
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 473ab6436eabd7fcbbbfb533a8ae4afc07098c81
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: f6cfb5152cd1d9cc4d27abfa3432666f06880d8e
+ms.sourcegitcommit: c276a8912787b2cda74dcf54eb96df961bb1188b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "104400659"
+ms.lasthandoff: 08/20/2021
+ms.locfileid: "122630376"
 ---
-# <a name="applicationmenurecentitems-property"></a>Proprietà ApplicationMenu. RecentItems
+# <a name="applicationmenurecentitems-property"></a>ApplicationMenu.RecentItems - proprietà
 
-Rappresenta un contenitore per il controllo [degli elementi recenti](windowsribbon-controls-recentitems.md) nel [menu dell'applicazione](windowsribbon-controls-applicationmenu.md).
+Rappresenta un contenitore per il [controllo Elementi](windowsribbon-controls-recentitems.md) recenti nel [menu dell'applicazione](windowsribbon-controls-applicationmenu.md).
 
 ## <a name="usage"></a>Utilizzo
 
@@ -39,10 +39,10 @@ Rappresenta un contenitore per il controllo [degli elementi recenti](windowsribb
 
 <table>
 <colgroup>
-<col style="width: 25%" />
-<col style="width: 25%" />
-<col style="width: 25%" />
-<col style="width: 25%" />
+<col  />
+<col  />
+<col  />
+<col  />
 </colgroup>
 <thead>
 <tr class="header">
@@ -55,10 +55,10 @@ Rappresenta un contenitore per il controllo [degli elementi recenti](windowsribb
 <tbody>
 <tr class="odd">
 <td><strong>CommandName</strong><br/></td>
-<td>XS: positiveInteger o xs: String<br/></td>
+<td>xs:positiveInteger o xs:string<br/></td>
 <td>No<br/></td>
-<td>Associa l'elemento a un <a href="windowsribbon-element-command.md"><strong>comando</strong></a>.<br/> <br/>
-<dt><span></span><span></span><strong></strong> (XS: positiveInteger o xs: String)<br/> </dt> <dd> Stringa, valore intero compreso tra 2 e 59999, inclusivo o un valore esadecimale compreso tra 0x2 e 0xea5f, inclusi. <br/> Il valore deve essere univoco all'interno del documento XML della barra multifunzione. <br/> Lunghezza massima: 100 caratteri. <br/> </dd> </dl></td>
+<td>Associa l'elemento a un <a href="windowsribbon-element-command.md"><strong>oggetto Command</strong></a>.<br/> <br/>
+<dt><span></span><span></span><strong></strong> (xs:positiveInteger o xs:string)<br/> </dt> <dd> Stringa, valore intero compreso tra 2 e 59999, inclusivo o valore esadecimale compreso tra 0x2 e 0xea5f, inclusi. <br/> Il valore deve essere univoco all'interno del documento XML della barra multifunzione. <br/> Lunghezza massima: 100 caratteri. <br/> </dd> </dl></td>
 </tr>
 </tbody>
 </table>
@@ -71,7 +71,7 @@ Rappresenta un contenitore per il controllo [degli elementi recenti](windowsribb
 
 | Elemento                                                             | Descrizione                                    |
 |---------------------------------------------------------------------|------------------------------------------------|
-| [**RecentItems**](windowsribbon-element-recentitems.md)<br/> | Deve verificarsi esattamente una volta<br/> <br/> |
+| [**Elementi recenti**](windowsribbon-element-recentitems.md)<br/> | Deve verificarsi esattamente una volta<br/> <br/> |
 
 
 
@@ -89,15 +89,15 @@ Rappresenta un contenitore per il controllo [degli elementi recenti](windowsribb
 
 facoltativo.
 
-Può verificarsi al massimo una volta per ogni elemento [**ApplicationMenu**](windowsribbon-element-applicationmenu.md) .
+Può verificarsi al massimo una volta per [**ogni elemento ApplicationMenu.**](windowsribbon-element-applicationmenu.md)
 
-Il controllo [elementi recenti](windowsribbon-controls-recentitems.md) consente di visualizzare l'elenco degli elementi usati di recente (MRU) dell'applicazione della barra multifunzione.
+Il [controllo Elementi recenti](windowsribbon-controls-recentitems.md) visualizza l'elenco degli elementi usati più di recente dell'applicazione barra multifunzione.
 
 ## <a name="examples"></a>Esempio
 
-Nell'esempio seguente viene illustrato il markup di base per il controllo [degli elementi recenti](windowsribbon-controls-recentitems.md) .
+Nell'esempio seguente viene illustrato il markup di base per il [controllo Elementi](windowsribbon-controls-recentitems.md) recenti.
 
-Nell'esempio seguente viene illustrata una dichiarazione di comando [**RecentItems**](windowsribbon-element-recentitems.md) .
+L'esempio seguente illustra una [**dichiarazione RecentItems**](windowsribbon-element-recentitems.md) Command.
 
 
 ```XML
@@ -109,7 +109,7 @@ Nell'esempio seguente viene illustrata una dichiarazione di comando [**RecentIte
 
 
 
-Nell'esempio seguente viene illustrata la Dichiarazione **ApplicationMenu. RecentItems** e [**RecentItems**](windowsribbon-element-recentitems.md) Controls associata.
+L'esempio seguente illustra la **dichiarazione dei controlli ApplicationMenu.RecentItems** e [**RecentItems**](windowsribbon-element-recentitems.md) associati.
 
 
 ```XML
@@ -127,8 +127,8 @@ Nell'esempio seguente viene illustrata la Dichiarazione **ApplicationMenu. Recen
 
 | Requisito | Valore |
 |-------------------------------------|---------------------------------------------------------|
-| Client minimo supportato<br/> | \[Solo app desktop di Windows 7\]<br/>              |
-| Server minimo supportato<br/> | Solo app desktop Windows Server 2008 R2 \[\]<br/> |
+| Client minimo supportato<br/> | Windows 7 \[ app desktop\]<br/>              |
+| Server minimo supportato<br/> | Windows Solo app desktop server 2008 R2 \[\]<br/> |
 
 
 
@@ -136,10 +136,10 @@ Nell'esempio seguente viene illustrata la Dichiarazione **ApplicationMenu. Recen
 
 <dl> <dt>
 
-[Controllo menu applicazione](windowsribbon-controls-applicationmenu.md)
+[Controllo Menu dell'applicazione](windowsribbon-controls-applicationmenu.md)
 </dt> <dt>
 
-[Controllo elementi recenti](windowsribbon-controls-recentitems.md)
+[Controllo Elementi recenti](windowsribbon-controls-recentitems.md)
 </dt> </dl>
 
  

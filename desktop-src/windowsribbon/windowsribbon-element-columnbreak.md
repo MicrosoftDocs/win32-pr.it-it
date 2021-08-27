@@ -1,9 +1,9 @@
 ---
-title: Elemento ColumnBreak
+title: ColumnBreak - elemento
 description: Rappresenta un separatore verticale (visibile o nascosto) nei modelli di layout SizeDefinition personalizzati.
 ms.assetid: 5979d3e6-366b-4c47-810f-90fb8039af8d
 keywords:
-- Elemento ColumnBreak Windows ribbon
+- Elemento ColumnBreak Windows barra multifunzione
 topic_type:
 - apiref
 api_name:
@@ -13,14 +13,14 @@ api_type:
 ms.topic: reference
 ms.date: 05/31/2018
 api_location: ''
-ms.openlocfilehash: beaf97a34a062b3461cf2101cb436fb1ba131d00e8656186fd434045bdef30bc
-ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
+ms.openlocfilehash: 95b5b5982b5348cef7a2dbaa3b60d639beabaf9d
+ms.sourcegitcommit: c276a8912787b2cda74dcf54eb96df961bb1188b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119393081"
+ms.lasthandoff: 08/20/2021
+ms.locfileid: "122630499"
 ---
-# <a name="columnbreak-element"></a>Elemento ColumnBreak
+# <a name="columnbreak-element"></a>ColumnBreak - elemento
 
 Rappresenta un separatore verticale (visibile o nascosto) nei modelli di layout [**SizeDefinition**](windowsribbon-element-sizedefinition.md) personalizzati.
 
@@ -37,10 +37,10 @@ Rappresenta un separatore verticale (visibile o nascosto) nei modelli di layout 
 
 <table>
 <colgroup>
-<col style="width: 25%" />
-<col style="width: 25%" />
-<col style="width: 25%" />
-<col style="width: 25%" />
+<col  />
+<col  />
+<col  />
+<col  />
 </colgroup>
 <thead>
 <tr class="header">
@@ -85,7 +85,7 @@ Può verificarsi una o più volte per ogni [**elemento GroupSizeDefinition.**](w
 
 ## <a name="examples"></a>Esempio
 
-L'esempio seguente illustra il markup di base per un **elemento ColumnBreak** in un modello di layout [**SizeDefinition**](windowsribbon-element-sizedefinition.md) a quattro pulsanti personalizzato. ColumnBreak **viene** specificato solo per il `Large` modello.
+L'esempio seguente illustra il markup di base per **un elemento ColumnBreak** in un modello di layout [**SizeDefinition**](windowsribbon-element-sizedefinition.md) a quattro pulsanti personalizzato. ColumnBreak **viene** specificato solo per il `Large` modello.
 
 
 ```XML

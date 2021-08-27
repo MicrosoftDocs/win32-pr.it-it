@@ -20,12 +20,12 @@ api_type:
 api_location:
 - ESENT.DLL
 ROBOTS: INDEX,FOLLOW
-ms.openlocfilehash: b7b3998d25d4f54d5150ad2a7a7d523f943d2eb7
-ms.sourcegitcommit: 9b5faa61c38b2d0c432b7f2dbee8c127b0e28a7e
+ms.openlocfilehash: 572684785139bd8cdcd0da391199bdf6b5cb0bd9
+ms.sourcegitcommit: 4665ebce0c106bdb52eef36e544280b496b6f50b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/19/2021
-ms.locfileid: "122465068"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "122985074"
 ---
 # <a name="jetcreatedatabase-function"></a>Funzione JetCreateDatabase
 
@@ -69,7 +69,7 @@ Puntatore a un buffer che, in caso di chiamata riuscita, contiene l'identificato
 Gruppo di bit che specifica zero o più delle opzioni seguenti.
 
 
-| <p>valore</p> | <p>Significato</p> | 
+| <p>Valore</p> | <p>Significato</p> | 
 |--------------|----------------|
 | <p>JET_bitDbOverwriteExisting</p> | <p>Per impostazione predefinita, se <strong>viene chiamato JetCreateDatabase</strong> e il database esiste già, la chiamata API avrà esito negativo e il database originale non verrà sovrascritto. JET_bitDbOverwriteExisting questo comportamento e il database precedente verrà sovrascritto con uno nuovo. Windows XP e versioni successive.</p> | 
 | <p>JET_bitDbRecoveryOff</p> | <p>JET_bitDbRecoveryOff disattiva la registrazione. L'impostazione di questo bit non consente di riprodurre i file di log e ripristinare il database a uno stato utilizzabile coerente dopo un evento irreversibile.</p> | 
@@ -113,7 +113,14 @@ Se l'API crea un file di database e quindi genera un altro errore, pulisce ed el
 #### <a name="requirements"></a>Requisiti
 
 
-| | | <p><strong>Client</strong></p> | <p>Richiede Windows Vista, Windows XP o Windows 2000 Professional.</p> | | <p><strong>Server</strong></p> | <p>Richiede Windows Server 2008, Windows Server 2003 o Windows 2000 Server.</p> | | <p><strong>Intestazione</strong></p> | <p>Dichiarato in Esent.h.</p> | | <p><strong>Libreria</strong></p> | <p>Usare ESENT.lib.</p> | | <p><strong>DLL</strong></p> | <p>Richiede ESENT.dll.</p> | | <p><strong>Unicode</strong></p> | <p>Implementato come <strong>JetCreateDatabaseW</strong> (Unicode) e <strong>JetCreateDatabaseA</strong> (ANSI).</p> | 
+| Requisito | Valore |
+|------------|----------|
+| <p><strong>Client</strong></p> | <p>Richiede Windows Vista, Windows XP o Windows 2000 Professional.</p> | 
+| <p><strong>Server</strong></p> | <p>Richiede Windows Server 2008, Windows Server 2003 o Windows 2000 Server.</p> | 
+| <p><strong>Intestazione</strong></p> | <p>Dichiarato in Esent.h.</p> | 
+| <p><strong>Libreria</strong></p> | <p>Usare ESENT.lib.</p> | 
+| <p><strong>DLL</strong></p> | <p>Richiede ESENT.dll.</p> | 
+| <p><strong>Unicode</strong></p> | <p>Implementato come <strong>JetCreateDatabaseW</strong> (Unicode) e <strong>JetCreateDatabaseA</strong> (ANSI).</p> | 
 
 
 

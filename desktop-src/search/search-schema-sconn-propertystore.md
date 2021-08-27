@@ -1,19 +1,19 @@
 ---
-description: L'elemento facoltativo specifica il percorso di un IPropertyStore basato su XML per archiviare i metadati aperti <propertyStore> per questo connettore di ricerca. Questo elemento non ha attributi e un solo elemento figlio.
+description: L'elemento propertyStore facoltativo specifica il percorso di un IPropertyStore basato su XML per archiviare i metadati aperti &lt; &gt; per questo connettore di ricerca. Questo elemento non ha attributi e un solo elemento figlio.
 ms.assetid: 5720c69f-af87-432b-857c-dbd66ba74e80
 title: Elemento propertyStore (schema del connettore di ricerca)
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 0de5a9e801163bd85635b82c1915394f24c39d3dfdafcb64c81fcff0bf84a219
-ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
+ms.openlocfilehash: 73c617f560e0471062064bcec8020dd5e6efa026
+ms.sourcegitcommit: 61a4c522182aa1cacbf5669683d9570a3bf043b2
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119351851"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "122886792"
 ---
 # <a name="propertystore-element-search-connector-schema"></a>Elemento propertyStore (schema del connettore di ricerca)
 
-L'elemento facoltativo specifica il percorso di un IPropertyStore basato su XML per archiviare i metadati aperti <propertyStore> per questo connettore di ricerca. Questo elemento non ha attributi e un solo elemento figlio.
+L'elemento propertyStore facoltativo specifica il percorso di un IPropertyStore basato su XML per archiviare i metadati aperti &lt; &gt; per questo connettore di ricerca. Questo elemento non ha attributi e un solo elemento figlio.
 
 ## <a name="syntax"></a>Sintassi
 
@@ -49,7 +49,7 @@ L'elemento facoltativo specifica il percorso di un IPropertyStore basato su XML 
 
 ## <a name="example"></a>Esempio
 
-Nell'esempio seguente viene illustrato <propertyStore> un elemento con due elementi <property> .
+L'esempio seguente mostra un &lt; elemento propertyStore &gt; con due &lt; elementi &gt; property.
 
 
 ```

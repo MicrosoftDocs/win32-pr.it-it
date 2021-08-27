@@ -1,5 +1,5 @@
 ---
-description: 'Altre informazioni su: struttura JET_COLUMNLIST'
+description: 'Altre informazioni su: JET_COLUMNLIST struttura'
 title: Struttura JET_COLUMNLIST
 TOCTitle: JET_COLUMNLIST Structure
 ms:assetid: 3899676f-c96e-4f15-9089-4faea6808bc2
@@ -15,12 +15,12 @@ api_type:
 - COM
 api_location: ''
 ROBOTS: INDEX,FOLLOW
-ms.openlocfilehash: 9bce36c818dd35408d95c770540ff4865bdf639b
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: c61f3492a9f92700fc51b7e51e13f8c3c3febc69
+ms.sourcegitcommit: 4665ebce0c106bdb52eef36e544280b496b6f50b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "106308511"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "122985264"
 ---
 # <a name="jet_columnlist-structure"></a>Struttura JET_COLUMNLIST
 
@@ -29,7 +29,7 @@ _**Si applica a:** Windows | Windows Server_
 
 ## <a name="jet_columnlist-structure"></a>Struttura JET_COLUMNLIST
 
-La struttura **JET_COLUMNLIST** contiene le informazioni necessarie per attraversare la tabella temporanea creata dalle funzioni [JetGetColumnInfo](./jetgetcolumninfo-function.md) e [JetGetTableColumnInfo](./jetgettablecolumninfo-function.md) . Ogni riga nella tabella temporanea descrive una colonna della tabella specificata nella chiamata API. Questa struttura viene utilizzata solo con [JetGetColumnInfo](./jetgetcolumninfo-function.md) e [JetGetTableColumnInfo](./jetgettablecolumninfo-function.md).
+La **JET_COLUMNLIST** contiene le informazioni necessarie per attraversare la tabella temporanea creata dalle funzioni [JetGetColumnInfo](./jetgetcolumninfo-function.md) e [JetGetTableColumnInfo.](./jetgettablecolumninfo-function.md) Ogni riga della tabella temporanea descrive una colonna nella tabella specificata nella chiamata API. Questa struttura viene usata solo con [JetGetColumnInfo](./jetgetcolumninfo-function.md) e [JetGetTableColumnInfo.](./jetgettablecolumninfo-function.md)
 
 ```cpp
     typedef struct {
@@ -57,9 +57,9 @@ La struttura **JET_COLUMNLIST** contiene le informazioni necessarie per attraver
 
 **cbStruct**
 
-Dimensioni in byte della struttura. La chiamata API aggiornerà questo campo, in modo che il chiamante assicuri che questo valore corrisponda a sizeof (JET_COLUMNLIST).
+Dimensione della struttura in byte. La chiamata API aggiornerà questo campo, quindi il chiamante deve assicurarsi che questo valore corrisponda a sizeof( JET_COLUMNLIST ).
 
-**TableID**
+**tableid**
 
 Identificatore di tabella della tabella temporanea creata. È responsabilità del chiamante chiudere la tabella.
 
@@ -71,61 +71,61 @@ Numero di record nella tabella temporanea creata dalla chiamata API.
 
 Identificatore di colonna dell'ordine di presentazione.
 
-L'ordine di presentazione viene utilizzato per ordinare le righe della tabella temporanea. L'ordine di presentazione è un [JET_coltypLong](./jet-coltyp.md)fisso. Se il livello di informazioni specificato non è un livello di compattazione, viene anche contrassegnato come JET_bitColumnTTKey.
+L'ordine di presentazione viene usato per ordinare le righe della tabella temporanea. L'ordine di presentazione è un valore [fisso JET_coltypLong](./jet-coltyp.md). Se il livello di informazioni specificato non è un livello compatto, viene contrassegnato anche come JET_bitColumnTTKey.
 
 **columnidcolumnname**
 
 Identificatore di colonna del nome della colonna.
 
-Se il livello di informazioni specificato non è Compact, viene anche contrassegnato come JET_bitColumnTTKey.
+Se il livello di informazioni specificato non è compatto, viene contrassegnato anche come JET_bitColumnTTKey.
 
 **columnidcolumnid**
 
 Identificatore di colonna dell'identificatore di colonna.
 
-L'identificatore di colonna è un [JET_coltypLong](./jet-coltyp.md)fisso.
+L'identificatore di colonna è un [valore JET_coltypLong](./jet-coltyp.md).
 
 **columnidcoltyp**
 
 Identificatore di colonna del tipo di colonna.
 
-Il tipo di colonna è un [JET_coltypLong](./jet-coltyp.md)fisso.
+Il tipo di colonna è un tipo [JET_coltypLong](./jet-coltyp.md).
 
 **columnidCountry**
 
 Identificatore di colonna del codice paese.
 
-Il codice paese è un [JET_coltypShort](./jet-coltyp.md)fisso.
+Il codice paese è un valore [fisso JET_coltypShort](./jet-coltyp.md).
 
 **columnidLangid**
 
 Identificatore di colonna dell'identificatore di lingua.
 
-L'identificatore di lingua è un [JET_coltypShort](./jet-coltyp.md)fisso.
+L'identificatore di lingua è un valore [fisso JET_coltypShort](./jet-coltyp.md).
 
 **columnidCp**
 
 Identificatore di colonna della tabella codici.
 
-La tabella codici è un [JET_coltypShort](./jet-coltyp.md)fisso.
+La tabella codici è una tabella [JET_coltypShort](./jet-coltyp.md).
 
 **columnidCollate**
 
-Identificatore di colonna della sequenza delle regole di confronto.
+Identificatore di colonna della sequenza di regole di confronto.
 
-La sequenza delle regole di confronto è un [JET_coltypShort](./jet-coltyp.md)fisso.
+La sequenza di regole di confronto è un valore [fisso JET_coltypShort](./jet-coltyp.md).
 
 **columnidcbMax**
 
-Identificatore di colonna del campo **cbMax** .
+Identificatore di colonna del **campo cbMax.**
 
-**CbMax** è un [JET_coltypLong](./jet-coltyp.md)fisso.
+**CbMax è un** valore [fisso JET_coltypLong](./jet-coltyp.md).
 
 **columnidgrbit**
 
-Identificatore di colonna del *grbits* della colonna. Il campo *grbit* è un [JET_coltypLong](./jet-coltyp.md)fisso. Per ulteriori informazioni su questi bit, vedere [JET_COLUMNDEF](./jet-columndef-structure.md).
+Identificatore di colonna *dei grbit* della colonna. Il *campo grbit* è un valore [fisso JET_coltypLong](./jet-coltyp.md). Per altre informazioni su questi bit, vedere [JET_COLUMNDEF](./jet-columndef-structure.md).
 
-Di seguito sono riportati i valori possibili per **columnidgrbit**:
+Di seguito sono riportati i valori possibili **per columnidgrbit:**
 
 JET_bitColumnTagged
 
@@ -171,36 +171,23 @@ Il nome della colonna è un [JET_coltypText](./jet-coltyp.md).
 
 Identificatore di colonna del nome della definizione di colonna.
 
-Il nome della definizione di colonna è un [JET_coltypText](./jet-coltyp.md).
+Il nome della definizione di colonna è [JET_coltypText](./jet-coltyp.md).
 
 ### <a name="remarks"></a>Commenti
 
-Per impostazione predefinita, l'ordine delle righe nella tabella temporanea viene ordinato in base al nome della colonna. Può anche essere ordinato in base all'identificatore di colonna. Per ulteriori informazioni sull'ordinamento in base all'identificatore di colonna, vedere [JetGetColumnInfo](./jetgetcolumninfo-function.md) e [JetGetTableColumnInfo](./jetgettablecolumninfo-function.md).
+Per impostazione predefinita, l'ordine delle righe nella tabella temporanea viene ordinato in base al nome della colonna. Può anche essere ordinato in base all'identificatore di colonna. Per altre informazioni sull'ordinamento in base all'identificatore di colonna, vedere [JetGetColumnInfo](./jetgetcolumninfo-function.md) e [JetGetTableColumnInfo.](./jetgettablecolumninfo-function.md)
 
-La chiamata a [JetGetColumnInfo](./jetgetcolumninfo-function.md) o [JetGetTableColumnInfo](./jetgettablecolumninfo-function.md) può specificare una forma compatta di risultati. Se sono state ereditate colonne da una tabella modello, i risultati di Compact non li archivia.
+La chiamata a [JetGetColumnInfo](./jetgetcolumninfo-function.md) o [JetGetTableColumnInfo](./jetgettablecolumninfo-function.md) potrebbe specificare una forma compatta di risultati. Se una o più colonne sono state ereditate da una tabella modello, i risultati compatti non le archivieranno.
 
 ### <a name="requirements"></a>Requisiti
 
-<table>
-<colgroup>
-<col style="width: 50%" />
-<col style="width: 50%" />
-</colgroup>
-<tbody>
-<tr class="odd">
-<td><p><strong>Client</strong></p></td>
-<td><p>Richiede Windows Vista, Windows XP o Windows 2000 Professional.</p></td>
-</tr>
-<tr class="even">
-<td><p><strong>Server</strong></p></td>
-<td><p>Richiede Windows Server 2008, Windows Server 2003 o Windows 2000 Server.</p></td>
-</tr>
-<tr class="odd">
-<td><p><strong>Intestazione</strong></p></td>
-<td><p>Dichiarata in esent. h.</p></td>
-</tr>
-</tbody>
-</table>
+
+| Requisito | Valore |
+|------------|----------|
+| <p><strong>Client</strong></p> | <p>Richiede Windows Vista, Windows XP o Windows 2000 Professional.</p> | 
+| <p><strong>Server</strong></p> | <p>Richiede Windows Server 2008, Windows Server 2003 o Windows 2000 Server.</p> | 
+| <p><strong>Intestazione</strong></p> | <p>Dichiarato in Esent.h.</p> | 
+
 
 
 ### <a name="see-also"></a>Vedere anche

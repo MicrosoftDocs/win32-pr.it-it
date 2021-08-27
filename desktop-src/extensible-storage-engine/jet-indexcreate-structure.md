@@ -1,5 +1,5 @@
 ---
-description: 'Altre informazioni su: JET_INDEXCREATE struttura'
+description: 'Altre informazioni su: JET_INDEXCREATE Structure'
 title: Struttura JET_INDEXCREATE
 TOCTitle: JET_INDEXCREATE Structure
 ms:assetid: 0c55f25c-d42a-49ba-a1fe-549850fdc9a6
@@ -17,19 +17,19 @@ api_type:
 - COM
 api_location: ''
 ROBOTS: INDEX,FOLLOW
-ms.openlocfilehash: 31b6b72cba336e3f7251bacfb1836673086ba9c2
-ms.sourcegitcommit: 9b5faa61c38b2d0c432b7f2dbee8c127b0e28a7e
+ms.openlocfilehash: 237e6351c7baf7f418c5160797f413d78ce034bd
+ms.sourcegitcommit: 4665ebce0c106bdb52eef36e544280b496b6f50b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/19/2021
-ms.locfileid: "122467628"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "122984154"
 ---
 # <a name="jet_indexcreate-structure"></a>Struttura JET_INDEXCREATE
 
 
 _**Si applica a:** Windows | Windows Server_
 
-La **JET_INDEXCREATE** contiene le informazioni necessarie per creare un indice sui dati in un database ESE (Extensible Archiviazione Engine). La struttura viene usata da funzioni come [JetCreateIndex2](./jetcreateindex2-function.md)e in strutture come JET_TABLECREATE [e](./jet-tablecreate-structure.md) [JET_TABLECREATE2](./jet-tablecreate2-structure.md).
+La **JET_INDEXCREATE** contiene le informazioni necessarie per creare un indice sui dati in un database ESE (Extensible Archiviazione Engine). La struttura viene usata da funzioni come [JetCreateIndex2](./jetcreateindex2-function.md) [](./jet-tablecreate-structure.md) e in strutture come JET_TABLECREATE [e JET_TABLECREATE2](./jet-tablecreate2-structure.md).
 
 ``` c++
 typedef struct tagJET_INDEXCREATE {
@@ -68,23 +68,23 @@ Il nome dell'indice deve soddisfare le condizioni seguenti:
 
   - Deve essere minore di JET_cbNameMost, senza includere il valore Null di terminazione.
 
-  - Deve contenere i caratteri seguenti: da 0 (zero) a 9, da A a Z, da a a z e tutti gli altri segni di punteggiatura ad eccezione di " \! " " (punto esclamativo), "," (virgola), " " (parentesi di apertura) e " " (parentesi quadra di chiusura), ovvero caratteri \[ \] ASCII 0x20, da 0x22 a 0x2d, da 0x2f a 0x5a, 0x5c, 0x5d fino 0x7f.
+  - Deve essere costituito da caratteri seguenti: da 0 (zero) a 9, da A a Z, da a a z e da tutti gli altri segni di punteggiatura ad eccezione di " \! " " (punto esclamativo), "," (virgola), " " (parentesi di apertura) e " " (parentesi quadra di chiusura), ovvero caratteri ASCII 0x20, da 0x22 a 0x2d, da 0x2f a \[ \] 0x5a, 0x5c, 0x5d fino a 0x7f.
 
   - Non deve iniziare con uno spazio.
 
-  - Deve essere costituito da almeno un carattere diverso da uno spazio.
+  - Deve essere costituito da almeno un carattere non spazio.
 
 **szKey**
 
-Puntatore a una stringa con terminazione Null doppia di token delimitati da Null.
+Puntatore a una stringa con terminazione double-null di token delimitati da Null.
 
-Ogni token è nel formato " \<direction-specifier\> \<column-name\> ", dove direction-specification è "+" o "-". Ad esempio, **un valore szKey** di "+abc \\ 0-def 0+ghi 0" indicizza le tre colonne \\ \\ "abc" (in ordine crescente), "def" (in ordine decrescente) e "ghi" (in ordine crescente). Nel linguaggio C i valori letterali stringa hanno un terminatore **NULL** implicito. Pertanto, la stringa precedente verrà terminata da un valore double-NULL.
+Ogni token ha il formato " \<direction-specifier\> \<column-name\> ", dove direction-specification è "+" o "-". Ad esempio, **szKey** di "+abc \\ 0-def 0+ghi 0" indicizza le tre colonne \\ \\ "abc" (in ordine crescente), "def" (in ordine decrescente) e "ghi" (in ordine crescente). Nel linguaggio C i valori letterali stringa hanno un terminatore **NULL** implicito. Pertanto, la stringa precedente verrà terminata da un valore double-NULL.
 
 Il numero di colonne specificato in **szKey** non può superare il valore di **JET_ccolKeyMost** (costante dipendente dalla versione).
 
 Almeno una colonna deve essere denominata in **szKey**.
 
-Comportamento obsoleto: dopo il carattere di terminazione double-NULL, è possibile specificare un ID lingua (word che viene passato in MAKELCID( langid, SORT_DEFAULT ) come modo per specificare l'LCID per l'indice. Non è valido specificare sia un ID lingua in **szKey** che un LCID in [JET_UNICODEINDEX](./jet-unicodeindex-structure.md) (impostando JET_bitIndexUnicode in *grbit*).
+Comportamento obsoleto: dopo il carattere di terminazione double-NULL, è possibile specificare un ID di lingua (word che viene passato in MAKELCID( langid, SORT_DEFAULT ) come modo per specificare l'LCID per l'indice. Non è valido specificare sia un ID lingua in **szKey** che un LCID in [JET_UNICODEINDEX](./jet-unicodeindex-structure.md) (impostando JET_bitIndexUnicode in *grbit*).
 
 Deprecato: dopo l'ID lingua, è possibile passare **cbVarSegMac** come USHORT. Il comportamento non è definito se USHORT è impostato sia in **szKey** che se **cbVarSegMac** è impostato nella struttura .
 
@@ -97,24 +97,24 @@ Lunghezza, in byte, di **szKey,** inclusi i due valori Null di terminazione.
 Gruppo di bit che include zero o più valori elencati nella tabella seguente.
 
 
-| <p>valore</p> | <p>Significato</p> | 
+| <p>Valore</p> | <p>Significato</p> | 
 |--------------|----------------|
-| <p>JET_bitIndexUnique</p> | <p>Le voci di indice (chiavi) duplicate non sono consentite. Questo viene applicato quando <a href="gg269288(v=exchg.10).md">viene chiamato JetUpdate,</a> non quando <a href="gg294137(v=exchg.10).md">viene chiamato JetSetColumn.</a></p> | 
-| <p>JET_bitIndexPrimary</p> | <p>L'indice è un indice primario (cluster). Ogni tabella deve avere esattamente un indice primario. Se non viene definito in modo esplicito alcun indice primario in una tabella, il motore di database creerà il proprio indice primario.</p> | 
-| <p>JET_bitIndexDisallowNull</p> | <p>Nessuna delle colonne in cui viene creato l'indice può contenere <strong>un valore NULL.</strong></p> | 
+| <p>JET_bitIndexUnique</p> | <p>Le voci di indice duplicate (chiavi) non sono consentite. Viene applicato quando viene chiamato <a href="gg269288(v=exchg.10).md">JetUpdate,</a> non quando <a href="gg294137(v=exchg.10).md">viene chiamato JetSetColumn.</a></p> | 
+| <p>JET_bitIndexPrimary</p> | <p>L'indice è un indice primario (cluster). Ogni tabella deve avere esattamente un indice primario. Se non viene definito in modo esplicito alcun indice primario su una tabella, il motore di database creerà il proprio indice primario.</p> | 
+| <p>JET_bitIndexDisallowNull</p> | <p>Nessuna delle colonne in cui viene creato l'indice può contenere un <strong>valore NULL.</strong></p> | 
 | <p>JET_bitIndexIgnoreNull</p> | <p>Non aggiungere una voce di indice per una riga se tutte le colonne indicizzate sono <strong>NULL.</strong></p> | 
 | <p>JET_bitIndexIgnoreAnyNull</p> | <p>Non aggiungere una voce di indice per una riga se una delle colonne indicizzate è <strong>NULL.</strong></p> | 
 | <p>JET_bitIndexIgnoreFirstNull</p> | <p>Non aggiungere una voce di indice per una riga se la prima colonna indicizzata è <strong>NULL.</strong></p> | 
-| <p>JET_bitIndexLazyFlush</p> | <p>Le operazioni di indice verranno registrate in modo lazid.</p><p>JET_bitIndexLazyFlush non influisce sulla laziness degli aggiornamenti dei dati. Se l'operazione di indicizzazione viene interrotta dalla terminazione del processo, il ripristino a rito rapido sarà comunque in grado di ottenere lo stato coerente del database, ma l'indice potrebbe non essere presente.</p> | 
-| <p>JET_bitIndexEmpty</p> | <p>Non tentare di compilare l'indice, perché tutte le voci restituiranno <strong>NULL.</strong> <strong>grbit</strong> deve anche specificare JET_bitIgnoreAnyNull quando JET_bitIndexEmpty viene passato. Si tratta di un miglioramento delle prestazioni. Ad esempio, se una nuova colonna viene aggiunta a una tabella, viene creato un indice su questa colonna appena aggiunta e tutti i record nella tabella vengono analizzati anche se non vengono aggiunti all'indice. Se si JET_bitIndexEmpty viene ignorata l'analisi della tabella, il che potrebbe richiedere molto tempo.</p> | 
-| <p>JET_bitIndexUnversioned</p> | <p>Fa sì che la creazione dell'indice sia visibile ad altre transazioni. In genere una sessione in una transazione non sarà in grado di visualizzare un'operazione di creazione dell'indice in un'altra sessione. Questo flag può essere utile se è probabile che un'altra transazione crei lo stesso indice. La seconda creazione dell'indice avrà esito negativo anziché causare potenzialmente molte operazioni di database non necessarie. La seconda transazione potrebbe non essere in grado di utilizzare immediatamente l'indice. L'operazione di creazione dell'indice deve essere completata prima che sia utilizzabile. La sessione non deve essere attualmente in una transazione per creare un indice senza informazioni sulla versione.</p> | 
-| <p>JET_bitIndexSortNullsHigh</p> | <p>Se si specifica questo flag, <strong>i valori NULL</strong> verranno ordinati dopo i dati per tutte le colonne nell'indice.</p> | 
-| <p>JET_bitIndexUnicode</p> | <p>La specifica di questo flag influisce sull'interpretazione del campo di unione lcid/pidxunicde nella struttura . L'impostazione del bit indica che <strong>il campo pidxunicode</strong> punta effettivamente a una <a href="gg294097(v=exchg.10).md">JET_UNICODEINDEX</a> struttura . JET_bitIndexUnicode non è necessario per indicizzare i dati Unicode. Viene usato solo per personalizzare la normalizzazione dei dati Unicode.</p> | 
-| <p>JET_bitIndexTuples</p> | <p>Specifica che l'indice è un indice di tupla. Vedere <a href="gg269207(v=exchg.10).md">JET_TUPLELIMITS</a> per una descrizione di un indice di tupla.</p><p>JET_bitIndexTuples è stato introdotto nel Windows xp.</p> | 
-| <p>JET_bitIndexTupleLimits</p> | <p>La specifica di questo flag influisce sull'interpretazione del campo <strong>union cbVarSegMac/ptuplelimits</strong> nella struttura. L'impostazione di questo bit significa che il campo <strong>ptuplelimits</strong> punta effettivamente a una <a href="gg269207(v=exchg.10).md">struttura JET_TUPLELIMITS</a> per consentire limiti dell'indice di tupla personalizzato (implica JET_bitIndexTuples).</p><p>JET_bitIndexTupleLimits è stato introdotto nel sistema operativo Windows Server 2003.</p> | 
-| <p>JET_bitIndexCrossProduct 0x00004000</p> | <p>Se si specifica questo flag per un indice con più di una colonna chiave che è una colonna multivalore, verrà creata una voce di indice per ogni risultato di un prodotto incrociato di tutti i valori in tali colonne chiave. In caso contrario, l'indice avrebbe una sola voce per ogni multivalore nella colonna chiave più significativa che è una colonna multivalore e ognuna di queste voci di indice userebbe il primo multivalore da qualsiasi altra colonna chiave che sono colonne multivalore.</p><p>Ad esempio, se è stato specificato questo flag per un indice sulla colonna A con i valori "red" e "blue" e sulla colonna B con i valori "1" e "2", verranno create le voci di indice seguenti: "red", "1"; "red", "2"; "blue", "1"; "blue", "2". In caso contrario, verranno create le voci di indice seguenti: "red", "1"; "blue", "1".</p><p>JET_bitIndexCrossProduct è stato introdotto nel sistema operativo Windows Vista.</p> | 
-| <p>JET_bitIndexKeyMost 0x00008000</p> | <p>Se si specifica questo flag, l'indice userà le dimensioni massime della chiave specificate nel <strong>campo cbKeyMost</strong> della struttura . In caso contrario, l'indice userà JET_cbKeyMost (255) come dimensione massima della chiave.</p><p>JET_bitIndexKeyMost è stato introdotto in Windows Vista.</p> | 
-| <p>JET_bitIndexDisallowTruncation 0x00010000</p> | <p>Se si specifica questo flag, qualsiasi aggiornamento dell'indice che causerebbe l'esito negativo di una chiave troncata con JET_errKeyTruncated. In caso contrario, le chiavi verranno troncate automaticamente. Per altre informazioni sul troncamento della chiave, vedere la <a href="gg269329(v=exchg.10).md">funzione JetMakeKey.</a></p><p><strong>Windows Vista: JET_bitIndexDisallowTruncation</strong> è stato introdotto in Windows Vista.</p> | 
+| <p>JET_bitIndexLazyFlush</p> | <p>Le operazioni di indice verranno registrate in modo lazily.</p><p>JET_bitIndexLazyFlush non influisce sulla pigrizia degli aggiornamenti dei dati. Se l'operazione di indicizzazione viene interrotta dalla terminazione del processo, il ripristino soft sarà comunque in grado di ottenere lo stato coerente del database, ma l'indice potrebbe non essere presente.</p> | 
+| <p>JET_bitIndexEmpty</p> | <p>Non tentare di compilare l'indice, perché tutte le voci restituirebbero <strong>NULL.</strong> <strong>grbit</strong> deve anche specificare JET_bitIgnoreAnyNull quando JET_bitIndexEmpty viene passato. Si tratta di un miglioramento delle prestazioni. Ad esempio, se viene aggiunta una nuova colonna a una tabella, viene creato un indice su questa colonna appena aggiunta e tutti i record nella tabella vengono analizzati anche se non vengono aggiunti all'indice. Se si JET_bitIndexEmpty viene ignorata l'analisi della tabella, che potrebbe richiedere molto tempo.</p> | 
+| <p>JET_bitIndexUnversioned</p> | <p>Fa sì che la creazione dell'indice sia visibile ad altre transazioni. In genere una sessione in una transazione non sarà in grado di visualizzare un'operazione di creazione dell'indice in un'altra sessione. Questo flag può essere utile se è probabile che un'altra transazione crei lo stesso indice. La seconda creazione dell'indice avrà esito negativo anziché causare molte operazioni di database non necessarie. La seconda transazione potrebbe non essere in grado di usare immediatamente l'indice. L'operazione di creazione dell'indice deve essere completata prima che sia utilizzabile. La sessione non deve essere attualmente in una transazione per creare un indice senza informazioni sulla versione.</p> | 
+| <p>JET_bitIndexSortNullsHigh</p> | <p>Se si specifica questo flag, i <strong>valori NULL</strong> vengono ordinati dopo i dati per tutte le colonne nell'indice.</p> | 
+| <p>JET_bitIndexUnicode</p> | <p>La specifica di questo flag influisce sull'interpretazione del campo lcid/pidxunicde union nella struttura . L'impostazione del bit indica che il <strong>campo pidxunicode</strong> punta effettivamente a una <a href="gg294097(v=exchg.10).md">JET_UNICODEINDEX</a> struttura. JET_bitIndexUnicode non è necessario per indicizzare i dati Unicode. Viene usato solo per personalizzare la normalizzazione dei dati Unicode.</p> | 
+| <p>JET_bitIndexTuples</p> | <p>Specifica che l'indice è un indice di tupla. Vedere <a href="gg269207(v=exchg.10).md">JET_TUPLELIMITS</a> per una descrizione di un indice di tupla.</p><p>JET_bitIndexTuples introdotto nel sistema operativo Windows XP.</p> | 
+| <p>JET_bitIndexTupleLimits</p> | <p>La specifica di questo flag influisce sull'interpretazione del campo di unione <strong>cbVarSegMac/ptuplelimits</strong> nella struttura . L'impostazione di questo bit significa che il campo <strong>ptuplelimits</strong> punta <a href="gg269207(v=exchg.10).md">effettivamente</a> a una struttura JET_TUPLELIMITS per consentire limiti personalizzati dell'indice di tupla (implica JET_bitIndexTuples).</p><p>JET_bitIndexTupleLimits è stato introdotto nel sistema operativo Windows Server 2003.</p> | 
+| <p>JET_bitIndexCrossProduct 0x00004000</p> | <p>Se si specifica questo flag per un indice con più di una colonna chiave che è una colonna multivalore, verrà creata una voce di indice per ogni risultato di un prodotto incrociato di tutti i valori in tali colonne chiave. In caso contrario, l'indice avrebbe una sola voce per ogni multivalore nella colonna chiave più significativa che è una colonna multivalore e ognuna di queste voci di indice userebbe il primo multivalore da qualsiasi altra colonna chiave che sono colonne multivalore.</p><p>Se ad esempio è stato specificato questo flag per un indice sulla colonna A con i valori "red" e "blue" e sulla colonna B con i valori "1" e "2", verranno create le voci di indice seguenti: "red", "1"; "red", "2"; "blue", "1"; "blue", "2". In caso contrario, verranno create le voci di indice seguenti: "red", "1"; "blue", "1".</p><p>JET_bitIndexCrossProduct è stato introdotto nel sistema operativo Windows Vista.</p> | 
+| <p>JET_bitIndexKeyMost 0x00008000</p> | <p>Se si specifica questo flag, l'indice userà le dimensioni massime della chiave specificate nel campo <strong>cbKeyMost</strong> nella struttura . In caso contrario, l'indice userà JET_cbKeyMost (255) come dimensione massima della chiave.</p><p>JET_bitIndexKeyMost è stato introdotto in Windows Vista.</p> | 
+| <p>JET_bitIndexDisallowTruncation 0x00010000</p> | <p>Se si specifica questo flag, qualsiasi aggiornamento all'indice che causerebbe l'esito negativo di una chiave troncata con JET_errKeyTruncated. In caso contrario, le chiavi verranno troncate automaticamente. Per altre informazioni sul troncamento delle chiavi, vedere la <a href="gg269329(v=exchg.10).md">funzione JetMakeKey.</a></p><p><strong>Windows Vista: JET_bitIndexDisallowTruncation</strong> è stato introdotto in Windows Vista.</p> | 
 | <p>JET_bitIndexNestedTable 0x00020000</p> | <p>Se si specifica questo flag, l'indice verrà aggiornato su più colonne multivalore, ma solo con valori dello stesso <strong>oggetto itagSequence.</strong></p><p>JET_bitIndexNestedTable è stato introdotto in Windows Vista.</p> | 
 
 
@@ -129,7 +129,7 @@ Identificatore delle impostazioni locali (LCID) da utilizzare durante la normali
 
 **pidxunicode**
 
-Puntatore a una [JET_UNICODEINDEX](./jet-unicodeindex-structure.md) struttura se il JET_bitIndexUnicode specificato nel *parametro grbit.* In questo modo l'utente può specificare flag personalizzati che vengono passati alla [funzione LCMapString durante](https://msdn.microsoft.com/library/dd318700\(vs.85\).aspx) la normalizzazione Unicode.
+Puntatore a una [JET_UNICODEINDEX](./jet-unicodeindex-structure.md) se il JET_bitIndexUnicode specificato nel *parametro grbit.* In questo modo l'utente può specificare flag personalizzati che vengono passati alla [funzione LCMapString durante](https://msdn.microsoft.com/library/dd318700\(vs.85\).aspx) la normalizzazione Unicode.
 
 **cbVarSegMac**
 
@@ -175,7 +175,7 @@ Le dimensioni massime della chiave dipendono dalle dimensioni della pagina del d
 
 Le dimensioni massime della chiave supportate per l'istanza possono essere lette anche dal JET_paramKeyMost di sistema.
 
-**cbKeyMost è** stato introdotto in Windows Vista.
+**cbKeyMost** è stato introdotto in Windows Vista.
 
 ### <a name="remarks"></a>Commenti
 
@@ -205,7 +205,12 @@ Nelle versioni di Windows a partire da Windows Vista, tutte le colonne multivalo
 ### <a name="requirements"></a>Requisiti
 
 
-| | | <p><strong>Client</strong></p> | <p>Richiede Windows Vista, Windows XP o Windows 2000 Professional.</p> | | <p><strong>Server</strong></p> | <p>Richiede Windows Server 2008, Windows Server 2003 o Windows 2000 Server.</p> | | <p><strong>Intestazione</strong></p> | <p>Dichiarato in Esent.h.</p> | | <p><strong>Unicode</strong></p> | <p>Implementato come <strong>JET_ INDEXCREATE_W</strong> (Unicode) <strong>e JET_ INDEXCREATE_A</strong> (ANSI).</p> | 
+| Requisito | Valore |
+|------------|----------|
+| <p><strong>Client</strong></p> | <p>Richiede Windows Vista, Windows XP o Windows 2000 Professional.</p> | 
+| <p><strong>Server</strong></p> | <p>Richiede Windows Server 2008, Windows Server 2003 o Windows 2000 Server.</p> | 
+| <p><strong>Intestazione</strong></p> | <p>Dichiarato in Esent.h.</p> | 
+| <p><strong>Unicode</strong></p> | <p>Implementato come <strong>JET_ INDEXCREATE_W</strong> (Unicode) <strong>e JET_ INDEXCREATE_A</strong> (ANSI).</p> | 
 
 
 

@@ -1,22 +1,22 @@
 ---
 title: Informazioni di riferimento sul modello a oggetti VML
-description: Questo argomento descrive VML, una funzionalità deprecata a Internet Explorer Windows 9. Le pagine Web e le applicazioni che si basano su VML devono essere migrate a SVG o ad altri standard ampiamente supportati.
+description: Questo argomento descrive VML, una funzionalità deprecata a Windows Internet Explorer 9. È necessario eseguire la migrazione di pagine Web e applicazioni basate su VML a SVG o ad altri standard ampiamente supportati.
 ms.assetid: 68a84c68-3aac-4971-9611-45f52e057708
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: c387935119babc73442e9b8f307672925bdf71d3
-ms.sourcegitcommit: 099ecdda1e83618b844387405da0db0ebda93a65
+ms.openlocfilehash: 092190bc12a4c2cc8c15817529a16524f17bdef1
+ms.sourcegitcommit: c276a8912787b2cda74dcf54eb96df961bb1188b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/04/2021
-ms.locfileid: "111444822"
+ms.lasthandoff: 08/20/2021
+ms.locfileid: "122624307"
 ---
 # <a name="vml-object-model-reference"></a>Informazioni di riferimento sul modello a oggetti VML
 
-Questo argomento descrive VML, una funzionalità deprecata a Internet Explorer Windows 9. Le pagine Web e le applicazioni che si basano su VML devono essere migrate a SVG o ad altri standard ampiamente supportati.
+Questo argomento descrive VML, una funzionalità deprecata a Windows Internet Explorer 9. È necessario eseguire la migrazione di pagine Web e applicazioni basate su VML a SVG o ad altri standard ampiamente supportati.
 
 > [!Note]  
-> A partire da dicembre 2011, questo argomento è stato archiviato. Di conseguenza, non viene più gestito attivamente. Per altre informazioni, vedere [Contenuto archiviato.](/previous-versions/windows/internet-explorer/ie-developer/) Per informazioni, consigli e indicazioni sulla versione corrente di Windows Internet Explorer, Internet Explorer [Developer Center.](https://msdn.microsoft.com/ie/)
+> A partire da dicembre 2011, questo argomento è stato archiviato. Di conseguenza, non viene più gestito attivamente. Per altre informazioni, vedere [Contenuto archiviato](/previous-versions/windows/internet-explorer/ie-developer/). Per informazioni, consigli e indicazioni sulla versione corrente di Windows Internet Explorer, vedere Internet Explorer [Developer Center.](https://msdn.microsoft.com/ie/)
 
  
 
@@ -30,11 +30,11 @@ In questo argomento
 -   [Sottoelementi dell'elemento Shape](#subelements-of-the-shape-element)
     -   [Elemento Background](#background-element)
     -   [Elemento Extrusion](#extrusion-element)
-    -   [Fill - elemento](#fill-element)
+    -   [Elemento Fill](#fill-element)
     -   [Group - elemento](#group-element)
     -   [Elemento Imagedata](#imagedata-element)
     -   [Elemento Path](#path-element)
-    -   [Elemento Shadow](#shadow-element)
+    -   [Elemento shadow](#shadow-element)
     -   [Elemento Skew](#skew-element)
     -   [Elemento Stroke](#stroke-element)
     -   [Elemento TextPath](#textpath-element)
@@ -42,7 +42,7 @@ In questo argomento
 
 ## <a name="introduction"></a>Introduzione
 
-[Vector Markup Language (VML)](https://www.w3.org/TR/NOTE-datetime.html) è un linguaggio basato su testo che usa [XML](https://www.w3.org/TR/REC-xml.mdl) per estendere il codice HTML allo scopo di visualizzare informazioni grafiche vettoriali. Il modello DOCUMENT OBJECT MODEL (DOM) definisce un'interfaccia a livello di codice per la modifica degli elementi del documento. In questo modo l'utente può creare e modificare dinamicamente la grafica vettoriale tramite un'interfaccia indipendente dalla piattaforma e dalla lingua. Il DOM VML è conforme [Document Object Model](https://www.w3.org/TR/REC-DOM-Level-1/) specifica.
+[Vector Markup Language (VML)](https://www.w3.org/TR/NOTE-datetime.html) è un linguaggio basato su testo che usa [XML](https://www.w3.org/TR/REC-xml.mdl) per estendere il codice HTML allo scopo di visualizzare informazioni grafiche vettoriali. L'Document Object Model VML (DOM) definisce un'interfaccia a livello di codice per la manipolazione degli elementi del documento. In questo modo l'utente può creare e modificare in modo dinamico la grafica vettoriale tramite un'interfaccia indipendente dalla piattaforma e dalla lingua. Il DOM VML è conforme alla specifica [Document Object Model](https://www.w3.org/TR/REC-DOM-Level-1/) macchina virtuale.
 
 VML usa [l'elemento Shape](#shape-element) come blocco predefinito di base per le immagini grafiche vettoriali. Dopo aver creato una forma, è possibile modificarla tramite attributi o sottoelementi collegati. Ad esempio, per modificare il colore di una forma, assegnare un valore di colore **all'attributo FillColor.**
 
@@ -53,7 +53,7 @@ myshape.fillcolor = "red"
 
 
 
-Molti attributi di una forma sono anche [sottoelementi](/windows) e hanno i propri attributi, tra cui:
+Diversi attributi di una forma sono anche [sottoelementi](/windows) e hanno i propri attributi, tra cui gli elementi seguenti:
 
 -   [Background](#background-element)
 -   [Estrusione](#extrusion-element)
@@ -63,10 +63,10 @@ Molti attributi di una forma sono anche [sottoelementi](/windows) e hanno i prop
 -   [Percorso](#path-element)
 -   [Shadow](#shadow-element)
 -   [Inclinazione](#skew-element)
--   [infarto](#stroke-element)
--   [Percorso di testo](#textpath-element)
+-   [Infarto](#stroke-element)
+-   [TextPath](#textpath-element)
 
-VmL OM usa diversi tipi [di dati](/windows) per definire i parametri. I tipi di dati preceduti da "Vg" sono enumerazioni e quelli preceduti da "IVg" sono oggetti . Fare clic qui per un elenco. I tipi di dati secondari sono elencati con parametri specifici.
+VmL OM usa diversi [tipi di dati](/windows) per definire i parametri. I tipi di dati preceduti da "Vg" sono enumerazioni e quelli con prefisso "IVg" sono oggetti . Fare clic qui per un elenco. I tipi di dati secondari sono elencati con parametri specifici.
 
 ## <a name="example"></a>Esempio
 
@@ -86,13 +86,13 @@ Il codice VBScript seguente illustra come creare una forma semplice:
 
 
 
-Nell'esempio precedente viene creata una forma usando il Document Object Model **createElement**. La forma è una forma Rect predefinita VML. Anche se l'oggetto esiste, non può far parte del documento fino a quando non viene allegato al documento. Usando il **metodo AppendChild,** Rect viene reso figlio di un **elemento DIV** denominato MyDiv. Alcuni attributi di stile minimi (**Position**, **Width**, **Height**, **Top**, **Left**) sono impostati per assegnare alla forma una dimensione specifica. Infine, un colore viene assegnato con **l'attributo FillColor.** Si noti che è possibile usare qualsiasi linguaggio di scripting o qualsiasi linguaggio che Document Object Model interfacce.
+Nell'esempio precedente viene creata una forma usando il metodo Document Object Model **CreateElement**. La forma è una forma Rect predefinita VML. Anche se l'oggetto esiste, non può far parte del documento finché non viene allegato al documento. Usando il **metodo AppendChild,** Rect viene reso figlio di un **elemento DIV** denominato MyDiv. Alcuni attributi di stile minimi (**Position**, **Width**, **Height**, **Top**, **Left**) sono impostati per assegnare alla forma una dimensione specifica. Infine, un colore viene assegnato con **l'attributo FillColor.** Si noti che è possibile usare qualsiasi linguaggio di scripting o qualsiasi linguaggio in grado di Document Object Model interfacce.
 
 ## <a name="setting-up-vml"></a>Configurazione di VML
 
-Un'implementazione di VML è tramite Microsoft Internet Explorer 5.0 o versione successiva. Per configurare correttamente l'oggetto di rendering in una pagina Web, è necessario eseguire le aggiunte seguenti:
+Un'implementazione di VML è tramite Microsoft Internet Explorer 5.0 o versione successiva. Per configurare correttamente l'oggetto rendering in una pagina Web, è necessario eseguire le aggiunte seguenti:
 
-1.  Lo schema deve essere configurato nell'elemento iniziale <HTML> come indicato di seguito:
+1.  Lo schema deve essere configurato nell'elemento iniziale <HTML> tag come indicato di seguito:
     ```HTML
     <HTML xmlns:v="urn:schemas-microsoft-com:vml">
     ```
@@ -139,19 +139,19 @@ R.FillColor = "red"
 
 
 
-Si noti che nelle versioni beta erano necessari un tag oggetto ActiveX e uno stile di comportamento diverso.
+Si noti che nelle versioni beta sono necessari ActiveX tag dell'oggetto e uno stile di comportamento diverso.
 
 ## <a name="vml-om-reference"></a>Informazioni di riferimento su VML OM
 
-Questo riferimento definisce [l'elemento Shape,](#shape-element) [i sottoelementi](/windows) [e](/windows) i tipi di dati usati dal modello a oggetti di VML.
+Questo riferimento definisce l'elemento [Shape,](#shape-element) [](/windows) [i sottoelementi](/windows)e i tipi di dati usati dal modello a oggetti di VML.
 
 ### <a name="shape-element"></a>Elemento Shape
 
 Le forme sono i blocchi predefiniti delle immagini grafiche definite da Vector Markup Language (VML). La forma è l'elemento di primo livello e diversi sottoelementi consentono di definire la natura di ogni forma.
 
-VML fornisce forme predefinite:
+VML offre forme predefinite:
 
-**Attributi di forma**
+**Attributi della forma**
 
 -   **Arc**
 -   **Curva**
@@ -164,37 +164,37 @@ VML fornisce forme predefinite:
 
 |   Sottoelemento           |    Descrizione                                                                                                                                                                                                                                                                                                                                                                              |
 |--------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Adj          | [IVgAdjustments](msdn-online-vml-ivgadjustments-data-type.md). Elenco delimitato da virgole di numeri che sono i parametri per le formule guida che definiscono il percorso della forma. I valori possono essere omessi per consentire l'uso delle impostazioni predefinite. Possono essere presenti fino a 8 valori di regolazione.                                                                                                   |
+| Adj          | [IVgAdjustments](msdn-online-vml-ivgadjustments-data-type.md). Elenco delimitato da virgole di numeri che sono i parametri per le formule della guida che definiscono il percorso della forma. I valori possono essere omessi per consentire l'uso delle impostazioni predefinite. Possono essere presenti fino a 8 valori di regolazione.                                                                                                   |
 | ALT          | Stringa. Testo alternativo associato alla forma. Usato per l'esplorazione non grafica.                                                                                                                                                                                                                                                                                                 |
-| Pulsante       | [VgTriState](msdn-online-vml-vgtristate.md). Visualizza il comportamento del pulsante al clic del mouse.                                                                                                                                                                                                                                                                                                 |
-| BWMode       | [VgBlackWhiteMode](msdn-online-vml-vgblackwhitemode.md). Determina la modalità di rendering della forma nella visualizzazione in bianco e nero nelle app o quando viene stampata su stampanti in bianco e nero. I valori includono: **Color**, **Auto**, **GrayScale**, **LightGrayScale**, **InverseGray**, **GrayOutline**, **BlackTextAndLines**, **HighContrast**, **Black**, **White**, **Undrawn**. Impostazione predefinita: **Auto.** |
-| BWNormal     | VgBlackWhiteMode. Quando BWMode è Auto, questa proprietà viene consultata per informazioni su come eseguire il rendering della forma in bianco e nero normale. I valori includono: **Color,** **Auto,** **GrayScale,** **LightGrayScale,** **InverseGray,** **GrayOutline,** **BlackTextAndLines,** **HighContrast,** **Black,** **White,** **Undrawn.** Impostazione predefinita: **Auto.**                                                |
-| BWPure       | VgBlackWhiteMode. Quando BWMode è Auto, questa proprietà viene consultata per informazioni su come eseguire il rendering della forma in B/W puro. I valori includono: **Color,** **Auto,** **GrayScale,** **LightGrayScale,** **InverseGray,** **GrayOutline,** **BlackTextAndLines,** **HighContrast,** **Black,** **White,** **Undrawn.** Impostazione predefinita: **Auto.**                                                              |
-| Forme figlio  | IVgGroupShapes. Raccolta di altre forme in questo gruppo. Questa raccolta supporta i metodi Standard Length e Item.                                                                                                                                                                                                                                                       |
-| Chromakey    | [IVgColor](msdn-online-vml-ivgcolor.md). Valore del colore che sarà trasparente e mostra tutto ciò che si nasconde dietro la forma.                                                                                                                                                                                                                                                             |
+| Button       | [VgTriState](msdn-online-vml-vgtristate.md). Visualizza il comportamento del pulsante al clic.                                                                                                                                                                                                                                                                                                 |
+| BWMode       | [VgBlackWhiteMode](msdn-online-vml-vgblackwhitemode.md). Determina la modalità di rendering della forma nella visualizzazione in bianco e nero nelle app o quando viene stampata su stampanti in bianco e nero. I valori includono: **Color,** **Auto,** **GrayScale,** **LightGrayScale,** **InverseGray,** **GrayOutline,** **BlackTextAndLines,** **HighContrast,** **Black,** **White,** **Undrawn.** Impostazione predefinita: **Auto.** |
+| BWNormal     | VgBlackWhiteMode. Quando BWMode è Auto, questa proprietà viene consultata per informazioni su come eseguire il rendering della forma in bianco e nero normali. I valori includono: **Color**, **Auto**, **GrayScale**, **LightGrayScale**, **InverseGray**, **GrayOutline**, **BlackTextAndLines**, **HighContrast**, **Black**, **White**, **Undrawn**. Impostazione predefinita: **Auto.**                                                |
+| BWPure       | VgBlackWhiteMode. Quando BWMode è Auto, questa proprietà viene consultata per informazioni su come eseguire il rendering della forma in B/W puro. I valori includono: **Color**, **Auto**, **GrayScale**, **LightGrayScale**, **InverseGray**, **GrayOutline**, **BlackTextAndLines**, **HighContrast**, **Black**, **White**, **Undrawn**. Impostazione predefinita: **Auto.**                                                              |
+| Forme figlio  | IVgGroupShapes. Raccolta di altre forme in questo gruppo. Questa raccolta supporta i metodi standard Length e Item.                                                                                                                                                                                                                                                       |
+| Chromakey    | [Oggetto IVgColor.](msdn-online-vml-ivgcolor.md) Valore del colore che sarà trasparente e mostrerà tutto ciò che si nasconde dietro la forma.                                                                                                                                                                                                                                                             |
 | Control1     | [Vector2D](msdn-online-vml-ivgvector2d-data-type.md). Punto di controllo per la curva.                                                                                                                                                                                                                                                                                                  |
 | Controllo2     | [Vector2D](msdn-online-vml-ivgvector2d-data-type.md). Punto di controllo per la curva.                                                                                                                                                                                                                                                                                                  |
 | CoordOrigin  | [Vector2D](msdn-online-vml-ivgvector2d-data-type.md) Coordinate nell'angolo superiore sinistro del rettangolo del contenitore. Intervallo compreso tra 0 e infinito.                                                                                                                                                                                                                               |
-| CoordSize    | [Vector2D](msdn-online-vml-ivgvector2d-data-type.md). Larghezza e altezza dello spazio delle coordinate all'interno del rettangolo di riferimento di questa forma. Se non viene specificato, corrisponde alla larghezza e all'altezza del rettangolo. Intervallo compreso tra 0 e infinito. Valore predefinito: "1000,1000".                                                                                               |
+| CoordSize    | [Vector2D](msdn-online-vml-ivgvector2d-data-type.md). Larghezza e altezza dello spazio delle coordinate all'interno del rettangolo di riferimento di questa forma. Se non viene specificato, corrisponde alla larghezza e all'altezza del rettangolo. Intervallo compreso tra 0 e infinito. Impostazione predefinita: "1000,1000".                                                                                               |
 | EndAngle     | [VgAngleInDegrees](msdn-online-vml-vgangleindegrees-data-type.md). Angolo finale della forma.                                                                                                                                                                                                                                                                                          |
-| Estrusione    | IVgExtrusion. Specifica il valore dell'oggetto Extrusion per questa forma. Per informazioni dettagliate, vedere l'elemento [Estrusione.](msdn-online-vml-extrusion-element.md)                                                                                                                                                                                                                               |
-| Fill         | VgFillFormat. Specifica il valore di riempimento per questa forma. Per altri [dettagli, vedere](msdn-online-vml-fill-element.md) l'elemento Fill.                                                                                                                                                                                                                                                |
-| Fillcolor    | [IVgColor](msdn-online-vml-ivgcolor.md). Colore principale del pennello da usare per riempire il percorso di questa forma.                                                                                                                                                                                                                                                                  |
-| Riempito       | [VgTriState](msdn-online-vml-vgtristate.md). Se True, il percorso che definisce la forma verrà riempito. Per impostazione predefinita, verrà riempito con un colore a tinta unita a meno che non sia presente un sottoelemento Fill che specifica proprietà di riempimento più complesse. Se False, il riempimento è trasparente.                                                                                                           |
+| Estrusione    | IVgExtrusion. Specifica il valore dell'oggetto Extrusion per questa forma. Per informazioni dettagliate, vedere l'elemento [Extrusion.](msdn-online-vml-extrusion-element.md)                                                                                                                                                                                                                               |
+| Fill         | VgFillFormat. Specifica il valore di riempimento per questa forma. Per altri dettagli, vedere l'elemento [Fill.](msdn-online-vml-fill-element.md)                                                                                                                                                                                                                                                |
+| Fillcolor    | [Oggetto IVgColor.](msdn-online-vml-ivgcolor.md) Colore principale del pennello da usare per riempire il tracciato di questa forma.                                                                                                                                                                                                                                                                  |
+| Riempito       | [VgTriState](msdn-online-vml-vgtristate.md). Se True, il percorso che definisce la forma verrà riempito. Per impostazione predefinita, verrà riempito con un colore a tinta unita, a meno che non sia presente un sottoelemento Fill che specifica proprietà di riempimento più complesse. Se False, il riempimento è trasparente.                                                                                                           |
 | Flip         | VgFlipOrientation. I valori sono: X Y XY YX                                                                                                                                                                                                                                                                                                                                         |
 | ForceDash    | [VgTriState](msdn-online-vml-vgtristate.md). Indica che deve essere eseguito il rendering di un contorno tratteggiato quando non è presente alcuna linea e nessun riempimento per una forma. Questo comportamento è in genere utile per rendere visibili le forme invisibili nelle applicazioni di modifica in modo che possano essere selezionate e gestite, ad esempio in una mappa immagine.                                                                 |
 | Formule     | IVgFormulas. Matrice di formule che definisce una forma.                                                                                                                                                                                                                                                                                                                          |
-| Da         | [Vector2D](msdn-online-vml-ivgvector2d-data-type.md). Punto di partenza della linea.                                                                                                                                                                                                                                                                                                   |
+| Da         | [Vector2D](msdn-online-vml-ivgvector2d-data-type.md). Punto iniziale della linea.                                                                                                                                                                                                                                                                                                   |
 | Href         | [Stringa](#data-types-used-in-the-vml-object-model). URL a cui passare se si fa clic su questa forma.                                                                                                                                                                                                                                                                                 |
 | ImageData    | IVgImageData. Informazioni sull'immagine se la forma è un'immagine. Per altre informazioni, vedere l'elemento ImageData.                                                                                                                                                                                                                                                                       |
-| OnEd         | [VgTriState](msdn-online-vml-vgtristate.md). Nasconde tutti i punti di controllo tranne quelli in alto a sinistra e in basso a destra, come nei punti di manipolazione per un segmento di linea retta.                                                                                                                                                                                                                             |
+| OnEd         | [VgTriState](msdn-online-vml-vgtristate.md). Nasconde tutti gli handle tranne quelli in alto a sinistra e in basso a destra, come negli handle per un segmento di linea retta.                                                                                                                                                                                                                             |
 | Opacità      | [VgFraction](msdn-online-vml-vgfraction-data-type.md). Opacità dell'intera forma. Numero compreso tra 0,0 e 1,0.                                                                                                                                                                                                                                                           |
 | Percorso         | IVgPath. Stringa contenente i comandi che definiscono il percorso.                                                                                                                                                                                                                                                                                                                  |
 | Punti       | [IVgPoints](msdn-online-vml-ivgpoints-data-type.md). Raccolta di punti che definiscono una forma.                                                                                                                                                                                                                                                                                   |
 | Stampa        | [VgTriState](msdn-online-vml-vgtristate.md). Se True, questa forma deve essere stampata.                                                                                                                                                                                                                                                                                        |
 | Rotazione     | [VgAngleInDegrees](msdn-online-vml-vgangleindegrees-data-type.md). Imposta la rotazione della forma. Il valore viene propagato allo stile della forma.                                                                                                                                                                                                                                              |
 | Scalabilità        | [Vector2D](msdn-online-vml-ivgvector2d-data-type.md). Scala della forma.                                                                                                                                                                                                                                                                                                           |
-| Ombreggiatura       | IVgShadow. Specifica l'ombreggiatura per questa forma. Per informazioni [dettagliate, vedere l'elemento](msdn-online-vml-shadow-element.md) Shadow.                                                                                                                                                                                                                                                        |
+| Ombreggiatura       | IVgShadow. Specifica l'ombreggiatura per questa forma. Per informazioni [dettagliate,](msdn-online-vml-shadow-element.md) vedere l'elemento Shadow.                                                                                                                                                                                                                                                        |
 | Spt          | Riservato.                                                                                                                                                                                                                                                                                                                                                                        |
 | StartAngle   | [VgAngleInDegrees](msdn-online-vml-vgangleindegrees-data-type.md). Angolo iniziale della forma.                                                                                                                                                                                                                                                                                        |
 | Stroke       | VgStrokeFormat. Per informazioni dettagliate, vedere Elemento Stroke.                                                                                                                                                                                                                                                                                                                                  |
@@ -221,7 +221,7 @@ I sottoelementi seguenti fanno parte del modello a oggetti VML.
 -   [Percorso](#path-element)
 -   [Shadow](#shadow-element)
 -   [Inclinazione](#skew-element)
--   [infarto](#stroke-element)
+-   [Infarto](#stroke-element)
 -   [TextPath](#textpath-element)
 
 ### <a name="background-element"></a>Elemento Background
@@ -251,8 +251,8 @@ Descrive un'estrusione 3D della forma.
 
 <table>
 <colgroup>
-<col style="width: 50%" />
-<col style="width: 50%" />
+<col  />
+<col  />
 </colgroup>
 <tbody>
 <tr class="odd">
@@ -345,11 +345,11 @@ Descrive un'estrusione 3D della forma.
 </tr>
 <tr class="even">
 <td>Aereo</td>
-<td>Vg3DExtrudePlane. Consente l'estrusione da piani ortogonali al piano dello schermo. Richiede che foreDepth e BackDepth siano specificati in unità di disegno anziché in emus. I valori possibili sono:
+<td>Vg3DExtrudePlane. Consente l'estrusione da piani ortogonali al piano dello schermo. Richiede che ForeDepth e BackDepth siano specificati in unità di disegno anziché in emus. I valori possibili sono:
 <ul>
-<li>Xy</li>
-<li>Zx</li>
-<li>Yz</li>
+<li>XY</li>
+<li>ZX</li>
+<li>YZ</li>
 </ul></td>
 </tr>
 <tr class="odd">
@@ -371,7 +371,7 @@ Descrive un'estrusione 3D della forma.
 </tr>
 <tr class="even">
 <td>Luminosità</td>
-<td><a href="#data-types-used-in-the-vml-object-model">VgPositiveNumber</a>. Determina la concentrazione o la diffusione della reflection speculare. Un valore elevato è compreso tra 8 e 10 e si avvicina a uno mirror e un valore basso è compreso tra 2 e 3 e indica un abbigliamento con paillettes approssimativo. Sono consigliati valori da 3 a 7. I valori alti rifletteranno le sorgenti di luce di puntina.</td>
+<td><a href="#data-types-used-in-the-vml-object-model">VgPositiveNumber</a>. Determina la concentrazione o la diffusione della reflection speculare. Un valore alto è compreso tra 8 e 10 e si avvicina a uno mirror e un valore basso è compreso tra 2 e 3 e indica un abbigliamento con paillettes approssimativo. Sono consigliati valori da 3 a 7. I valori alti rifletteranno le sorgenti di luce di puntina.</td>
 </tr>
 <tr class="odd">
 <td>SkewAmt</td>
@@ -418,8 +418,8 @@ Descrive come riempire un percorso per i riempimenti più complessi rispetto a u
 
 <table>
 <colgroup>
-<col style="width: 50%" />
-<col style="width: 50%" />
+<col  />
+<col  />
 </colgroup>
 <tbody>
 <tr class="odd">
@@ -432,7 +432,7 @@ Descrive come riempire un percorso per i riempimenti più complessi rispetto a u
 </tr>
 <tr class="odd">
 <td>Aspetto</td>
-<td><strong>VgAspectType</strong>. L'attributo ImageSize verrà modificato per mantenere l'aspetto dell'immagine. I possibili valori sono:
+<td><strong>VgAspectType</strong>. L'attributo ImageSize verrà regolato per mantenere l'aspetto dell'immagine. I possibili valori sono:
 <table>
 <thead>
 <tr class="header">
@@ -480,7 +480,7 @@ Descrive come riempire un percorso per i riempimenti più complessi rispetto a u
 </tr>
 <tr class="odd">
 <td>FocusSize</td>
-<td><a href="msdn-online-vml-ivgvector2d-data-type.md">Vector2D</a> Dimensioni del rettangolo più interno per le sfumature radiali. Il vettore è una frazione (da 0,0 a 1,0) della larghezza e dell'altezza della forma.</td>
+<td><a href="msdn-online-vml-ivgvector2d-data-type.md">Vector2D</a> Dimensione del rettangolo più interno per le sfumature radiali. Il vettore è una frazione (da 0,0 a 1,0) della larghezza e dell'altezza della forma.</td>
 </tr>
 <tr class="even">
 <td>Metodo</td>
@@ -568,18 +568,18 @@ Descrive un'immagine di cui eseguire il rendering sopra una forma.
 
 |   Attributo        |   Descrizione                                                                                                                                                                                      |
 |-------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Bilevel     | [VgTriState](msdn-online-vml-vgtristate.md). Visualizzare l'immagine solo in due colori (in genere bianco e nero).                                                                                                                                                                                                                                                     |
+| Bilevel     | [VgTriState](msdn-online-vml-vgtristate.md). Visualizzare l'immagine in due soli colori (in genere bianco e nero).                                                                                                                                                                                                                                                     |
 | BlackLevel  | [VgFraction](msdn-online-vml-vgfraction-data-type.md). Consente di impostare il livello in modo che i nero vengano visualizzati come veri neri e tutti gli altri colori siano visibili come sfumature sopra il nero.                                                                                                                                                                        |
 | Chromakey   | [IVgColor](msdn-online-vml-ivgcolor.md). Colore trasparente dell'immagine.                                                                                                                                                                                                                                                                                         |
 | CropBottom  | [VgNumber](#data-types-used-in-the-vml-object-model). Distanza di ritaglio dalla parte inferiore dell'immagine espressa come percentuale delle dimensioni dell'immagine.                                                                                                                                                                                                                           |
-| CropLeft    | [VgNumber](#data-types-used-in-the-vml-object-model). Distanza di ritaglio dal bordo sinistro dell'immagine espressa come frazione delle dimensioni dell'immagine (da 0,0 a 1,0). Tuttavia, il "ritaglio in uscita" è supportato e pertanto sono supportati valori minori di 0 e maggiori di 1. Ad esempio, -5, 20 potrebbe ritagliare i limiti 25X delle dimensioni dell'immagine con 4/5 su un lato dell'immagine. |
+| CropLeft    | [VgNumber](#data-types-used-in-the-vml-object-model). Distanza di ritaglio dal bordo sinistro dell'immagine espressa come frazione delle dimensioni dell'immagine (da 0,0 a 1,0). Tuttavia, è supportato il "ritaglio in uscita" e pertanto sono supportati valori minori di 0 e maggiori di 1. Ad esempio, -5, 20 potrebbe ritagliare i limiti 25X delle dimensioni dell'immagine con 4/5 su un lato dell'immagine. |
 | CropRight   | [VgNumber](#data-types-used-in-the-vml-object-model). Distanza di ritaglio da destra dell'immagine espressa come percentuale delle dimensioni dell'immagine.                                                                                                                                                                                                                            |
 | CropTop     | [VgNumber](#data-types-used-in-the-vml-object-model). Distanza di ritaglio dall'inizio dell'immagine espressa come percentuale delle dimensioni dell'immagine.                                                                                                                                                                                                                              |
 | EmbossColor | [IVgColor](msdn-online-vml-ivgcolor.md). Questa proprietà è impostata su una percentuale del colore dell'ombreggiatura per creare un effetto immagine in rilievo.                                                                                                                                                                                                                                 |
 | Guadagno        | [VgPositiveNumber](#data-types-used-in-the-vml-object-model). Regola l'intensità di tutti i colori. In sostanza, imposta il bianco brillante. È compreso tra 0 e 32767.                                                                                                                                                                                           |
 | Gamma       | [VgFraction](msdn-online-vml-vgfraction-data-type.md). Correzione gamma. Aumentandola si aumenta il contrasto di un'immagine.                                                                                                                                                                                                                                           |
 | GrayScale   | [VgTriState](msdn-online-vml-vgtristate.md). Visualizzare l'immagine in colori in scala di grigi.                                                                                                                                                                                                                                                                              |
-| Src         | [Stringa](#data-types-used-in-the-vml-object-model). URL di un'immagine da caricare per riempimenti di immagini e motivi. Questo attributo deve essere sempre presente e puntare a dati immagine validi per visualizzare un'immagine.                                                                                                                                                           |
+| Src         | [Stringa](#data-types-used-in-the-vml-object-model). URL di un'immagine da caricare per i riempimenti di immagine e motivo. Questo attributo deve essere sempre presente e puntare a dati immagine validi per visualizzare un'immagine.                                                                                                                                                           |
 
 
 
@@ -593,8 +593,8 @@ Definisce il percorso che costituisce la forma, usando una stringa che contiene 
 
 <table>
 <colgroup>
-<col style="width: 50%" />
-<col style="width: 50%" />
+<col  />
+<col  />
 </colgroup>
 <tbody>
 <tr class="odd">
@@ -642,7 +642,7 @@ Definisce il percorso che costituisce la forma, usando una stringa che contiene 
 </tr>
 <tr class="even">
 <td>e (end)</td>
-<td>Terminare il set corrente di sottopercorso. Un determinato set di sottopercorso (delimitato da end) viene riempito usando eofill. I set successivi di sottopercorso vengono riempiti in modo indipendente e sovrapposti a quelli esistenti.</td>
+<td>Terminare il set corrente di sottopercorso. Un set specificato di sottopercorso (delimitato da end) viene riempito usando eofill. I set successivi di sottopercorso vengono riempiti in modo indipendente e sovrapposti a quelli esistenti.</td>
 </tr>
 <tr class="odd">
 <td>l (lineto)</td>
@@ -662,19 +662,19 @@ Definisce il percorso che costituisce la forma, usando una stringa che contiene 
 </tr>
 <tr class="odd">
 <td>qb (quadraticbezier)</td>
-<td>(<strong>controlpoint</strong>(x, y))*,<strong>end</strong>(x,y) <br/> Definisce una o più curve di Bézier quadratica tramite punti di controllo e un endpoint. I punti intermedi (su curva) vengono ottenuti tramite interpolazione tra punti di controllo successivi simili ai tipi di carattere TrueType. Il sottopercorso non deve essere un inizio, nel qual caso il sottopercorso viene chiuso e l'ultimo punto definisce il punto iniziale.<br/></td>
+<td>(<strong>controlpoint</strong>(x, y))*,<strong>end</strong>(x,y) <br/> Definisce una o più curve di Bézier quadratica tramite punti di controllo e un endpoint. I punti intermedi (su curva) vengono ottenuti tramite interpolazione tra punti di controllo successivi simili ai tipi di carattere TrueType. Il sottopercorso non deve essere un inizio, nel qual caso il sottopercorso è chiuso e l'ultimo punto definisce il punto iniziale.<br/></td>
 </tr>
 <tr class="even">
 <td>qx (ellipticalquadrantx)</td>
-<td><strong>end</strong>(x,y) <br/> Un quarto di ellisse viene disegnato dal punto corrente all'endpoint specificato. Il segmento ellittico è inizialmente tangente a una linea parallela all'asse x; ad esempio il segmento inizia orizzontalmente.<br/></td>
+<td><strong>end</strong>(x,y) <br/> Un quarto di ellisse viene disegnato dal punto corrente al punto finale specificato. Il segmento ellittico è inizialmente tangente a una linea parallela all'asse x; Ad esempio, il segmento inizia orizzontalmente.<br/></td>
 </tr>
 <tr class="odd">
 <td>qy (ellipticalquadranty)</td>
-<td><strong>end</strong>(x,y) <br/> Uguale a qx, ad eccezione del fatto che il segmento ellittico è inizialmente tangente a una linea parallela all'asse y; ad esempio il segmento inizia in verticale.<br/></td>
+<td><strong>end</strong>(x,y) <br/> Uguale a qx ad eccezione del fatto che il segmento ellittico è inizialmente tangente a una linea parallela all'asse y; Ad esempio, il segmento inizia in verticale.<br/></td>
 </tr>
 <tr class="even">
 <td>r (rlineto)</td>
-<td>x,y <br/> Disegnare una linea dal punto corrente alla coordinata relativa (cpx + x, cpy + y). Se vengono specificate coppie di coordinate aggiuntive, ogni nuovo punto viene calcolato rispetto all'ultimo.<br/></td>
+<td>x,y <br/> Disegnare una linea dal punto corrente alla coordinata relativa (cpx + x, cpy + y). Se vengono specificate altre coppie di coordinate, ogni nuovo punto viene calcolato rispetto all'ultimo.<br/></td>
 </tr>
 <tr class="odd">
 <td>t (rmoveto)</td>
@@ -682,7 +682,7 @@ Definisce il percorso che costituisce la forma, usando una stringa che contiene 
 </tr>
 <tr class="even">
 <td>v (curveto)</td>
-<td><strong>control1</strong>(x,y) <strong>control2</strong>(x,y) <strong>to</strong> (x,y) <br/> Curva di Bézier cubica che usa le coordinate specificate relative al punto corrente. Tutti i punti vengono calcolati in relazione allo stesso punto iniziale.<br/></td>
+<td><strong>control1</strong>(x,y) <strong>control2</strong>(x,y) <strong>a</strong> (x,y) <br/> Curva di Bézier cubica usando le coordinate specificate relative al punto corrente. Tutti i punti vengono calcolati rispetto allo stesso punto iniziale.<br/></td>
 </tr>
 <tr class="odd">
 <td>wa (clockwisearcto)</td>
@@ -708,7 +708,7 @@ Definisce il percorso che costituisce la forma, usando una stringa che contiene 
 
  
 
-### <a name="shadow-element"></a>Elemento Shadow
+### <a name="shadow-element"></a>Elemento shadow
 
 Descrive un effetto ombreggiatura su una forma.
 
@@ -716,21 +716,21 @@ Descrive un effetto ombreggiatura su una forma.
 
 <table>
 <colgroup>
-<col style="width: 50%" />
-<col style="width: 50%" />
+<col  />
+<col  />
 </colgroup>
 <tbody>
 <tr class="odd">
 <td>Color</td>
-<td><a href="msdn-online-vml-ivgcolor.md">Oggetto IVgColor.</a> Colore dell'ombreggiatura primaria. Il valore predefinito è RGB(128,128,128)</td>
+<td><a href="msdn-online-vml-ivgcolor.md">IVgColor</a>. Colore dell'ombreggiatura primaria. Il valore predefinito è RGB(128,128,128)</td>
 </tr>
 <tr class="even">
 <td>Color2</td>
-<td><a href="msdn-online-vml-ivgcolor.md">Oggetto IVgColor.</a> Colore della seconda ombreggiatura o evidenziazione in un'ombreggiatura in rilievo o in rilievo. Il valore predefinito è RGB(203,203,203).</td>
+<td><a href="msdn-online-vml-ivgcolor.md">IVgColor</a>. Colore della seconda ombreggiatura o evidenziazione in un'ombreggiatura in rilievo o incisa. Il valore predefinito è RGB(203,203,203).</td>
 </tr>
 <tr class="odd">
 <td>Matrice</td>
-<td><a href="#data-types-used-in-the-vml-object-model">IvgSkewMatrix</a>. Matrice di trasformazione prospettica nel &quot; formato, sxx,sxy,syx,syy,px,py &quot; [s=scale, p=perspective]. Gli elementi s specificano come deve essere ridimensionata l'ombreggiatura rispetto alla forma e gli elementi p specificano come l'ombreggiatura deve inclinarsi rispetto alla forma. Ad esempio, la matrice seguente ridimensiona la forma di un fattore 2 e la inclina di un fattore di 4 in tutte le direzioni: <br/> &quot;2,2,2,2,4,4&quot;<br/> Questa matrice viene utilizzata solo se il tipo di ombreggiatura è impostato su perspective.<br/></td>
+<td><a href="#data-types-used-in-the-vml-object-model">IvgSkewMatrix</a>. Matrice di trasformazione prospettica nel formato &quot; sxx,sxy,syx,syy,px,py &quot; [s=scale, p=perspective]. Gli elementi s specificano come ridimensionare l'ombreggiatura rispetto alla forma e gli elementi p specificano come l'ombreggiatura deve essere a inclinazione rispetto alla forma. Ad esempio, la matrice seguente ridimensiona la forma di un fattore 2 e la inclina di un fattore 4 in tutte le direzioni: <br/> &quot;2,2,2,2,4,4&quot;<br/> Questa matrice viene usata solo se il tipo di ombreggiatura è impostato su perspective.<br/></td>
 </tr>
 <tr class="even">
 <td>Oscurato</td>
@@ -742,7 +742,7 @@ Descrive un effetto ombreggiatura su una forma.
 </tr>
 <tr class="even">
 <td>Offset2</td>
-<td><a href="msdn-online-vml-ivgvector2d-data-type.md">Vector2D</a>. Quantità di offset x,y secondi dalla posizione della forma. I valori sono una misura assoluta o un valore frazionario di forma (da -0,5 a +0,5).</td>
+<td><a href="msdn-online-vml-ivgvector2d-data-type.md">Vector2D</a>. Quantità di offset x,y secondo dalla posizione della forma. I valori sono una misura assoluta o un valore frazionario di forma (da -0,5 a +0,5).</td>
 </tr>
 <tr class="odd">
 <td>On</td>
@@ -754,7 +754,7 @@ Descrive un effetto ombreggiatura su una forma.
 </tr>
 <tr class="odd">
 <td>Origine</td>
-<td><a href="msdn-online-vml-ivgvector2d-data-type.md">Vector2D</a> Coppia di valori frazionari di forma da -0,5 a +0,5.</td>
+<td><a href="msdn-online-vml-ivgvector2d-data-type.md">Vector2D</a> Coppia di valori frazionari della forma da -0,5 a +0,5.</td>
 </tr>
 <tr class="even">
 <td>Tipo</td>
@@ -777,16 +777,16 @@ Descrive un effetto ombreggiatura su una forma.
 
 ### <a name="skew-element"></a>Elemento Skew
 
-Descrive un effetto di inclinazione della prospettiva su una forma. L'a inclinazione viene applicata ai dati grafici vettoriali, non ai dati di immagine.
+Descrive un effetto di a inclinazione prospettica su una forma. L'a inclinazione viene applicata ai dati grafici vettoriali, non ai dati immagine.
 
 
 
 |   Attributo        |   Descrizione                                                                                                                                                                                      |
 |--------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Matrice | [IVgSkewMatrix](#data-types-used-in-the-vml-object-model). Matrice di trasformazione della prospettiva nel formato "sxx,sxy,syx,syy,px,py" \[ s=scale, p=perspective \] . Se offset è in unità assolute, px, py sono in emu ^ -1 unità; in caso contrario, sono una frazione inversa delle dimensioni della forma. |
+| Matrice | [IVgSkewMatrix](#data-types-used-in-the-vml-object-model). Matrice di trasformazione prospettica nel formato "sxx,sxy,syx,syy,px,py" \[ s=scale, p=perspective \] . Se offset è in unità assolute, px,py è in emu ^ -1 unità; in caso contrario, sono una frazione inversa delle dimensioni della forma. |
 | Offset | [IvgSkewOffset](#data-types-used-in-the-vml-object-model). Quantità di offset x,y dalla posizione della forma. Il valore predefinito è "2pt,2pt".                                                                                                                                                   |
 | On     | [VgTriState](msdn-online-vml-vgtristate.md). Attiva o disattiva la visualizzazione dell'a inclinazione.                                                                                                                                                                                             |
-| Origine | [Vector2D](msdn-online-vml-ivgvector2d-data-type.md). Coppia di valori frazionari di forma da -0,5 a +0,5.                                                                                                                                                                     |
+| Origine | [Vector2D](msdn-online-vml-ivgvector2d-data-type.md). Coppia di valori frazionari della forma da -0,5 a +0,5.                                                                                                                                                                     |
 
 
 
@@ -800,8 +800,8 @@ Descrive come disegnare il tracciato se si desidera un elemento oltre una linea 
 
 <table>
 <colgroup>
-<col style="width: 50%" />
-<col style="width: 50%" />
+<col  />
+<col  />
 </colgroup>
 <tbody>
 <tr class="odd">
@@ -810,7 +810,7 @@ Descrive come disegnare il tracciato se si desidera un elemento oltre una linea 
 </tr>
 <tr class="even">
 <td>Color2</td>
-<td><a href="msdn-online-vml-ivgcolor.md">Oggetto IVgColor.</a> Colore secondario. Usato quando FillType è Pattern.</td>
+<td><a href="msdn-online-vml-ivgcolor.md">IVgColor</a>. Colore secondario. Usato quando FillType è Pattern.</td>
 </tr>
 <tr class="odd">
 <td>Dashstyle</td>
@@ -845,7 +845,7 @@ Descrive come disegnare il tracciato se si desidera un elemento oltre una linea 
 </tr>
 <tr class="odd">
 <td>EndArrowLength</td>
-<td><strong>VgArrowHeadLength</strong>. Lunghezza della freccia per la fine della linea. I valori possibili sono:
+<td><strong>VgArrowHeadLength</strong>. Lunghezza della punta della freccia per la fine della linea. I valori possibili sono:
 <ul>
 <li>Short</li>
 <li>Media (impostazione predefinita)</li>
@@ -886,7 +886,7 @@ Descrive come disegnare il tracciato se si desidera un elemento oltre una linea 
 </tr>
 <tr class="even">
 <td>ImageAspect</td>
-<td><strong>VgAspectType</strong>. L'attributo ImageSize verrà modificato per mantenere l'aspetto dell'immagine. I possibili valori sono:
+<td><strong>VgAspectType</strong>. L'attributo ImageSize verrà regolato per mantenere l'aspetto dell'immagine. I possibili valori sono:
 <table>
 <thead>
 <tr class="header">
@@ -950,7 +950,7 @@ Descrive come disegnare il tracciato se si desidera un elemento oltre una linea 
 </tr>
 <tr class="odd">
 <td>Src</td>
-<td>Stringa. URL di un'immagine da caricare per riempimenti di immagini e motivi. Questo attributo deve essere sempre presente e puntare a dati immagine validi per visualizzare un'immagine.</td>
+<td>Stringa. URL di un'immagine da caricare per i riempimenti di immagine e motivo. Questo attributo deve essere sempre presente e puntare a dati immagine validi per visualizzare un'immagine.</td>
 </tr>
 <tr class="even">
 <td>StartArrow</td>
@@ -988,7 +988,7 @@ Descrive come disegnare il tracciato se si desidera un elemento oltre una linea 
 <div class="alert">
 <blockquote>
 [!Note]<br />
-L'attributo DashStyle consente all'utente di specificare un modello di tratteggio personalizzato. Questa operazione viene eseguita usando una serie di numeri. Gli stili dei trattini sono definiti in termini di lunghezza del trattino (la parte disegnata del tratto) e lunghezza dello spazio tra i trattini. Le lunghezze sono relative alla larghezza della linea. una lunghezza &quot; pari a 1 è uguale alla larghezza &quot; della riga. Lo stile EndCap viene applicato a ogni trattino, gli stili freccia no. La stringa definisce prima la lunghezza del trattino e quindi la lunghezza dello spazio. Questa operazione può essere ripetuta per formare stili trattini complessi. La stringa deve contenere sempre una coppia di numeri. se contiene un numero dispari di numeri, l'ultimo può essere ignorato. Nella tabella seguente sono elencati alcuni valori tipici e una descrizione dell'effetto desiderato. &quot;0 implica un punto che deve essere simmetrico quattro volte (con estremità arrotondate &quot; deve essere un cerchio). Se l'estremità linea è Flat, un visualizzatore deve scegliere un trattino del sistema operativo predefinito, laddove possibile(ad esempio, qualcosa che è veloce da disegnare). Di seguito sono riportati alcuni esempi.
+L'attributo DashStyle consente all'utente di specificare un modello di tratteggio personalizzato. Questa operazione viene eseguita usando una serie di numeri. Gli stili dei trattini sono definiti in termini di lunghezza del trattino (la parte disegnata del tratto) e lunghezza dello spazio tra i trattini. Le lunghezze sono relative alla larghezza della linea. una lunghezza &quot; pari a 1 è uguale alla larghezza &quot; della riga. Lo stile EndCap viene applicato a ogni trattino, gli stili freccia no. La stringa definisce prima la lunghezza del trattino e quindi la lunghezza dello spazio. Questa operazione può essere ripetuta per formare stili trattini complessi. La stringa deve contenere sempre una coppia di numeri. se contiene un numero dispari di numeri, l'ultimo può essere ignorato. Nella tabella seguente sono elencati alcuni valori tipici e una descrizione dell'effetto desiderato. &quot;0 implica un punto che deve essere simmetrico quattro volte (con estremità arrotondate &quot; deve essere un cerchio). Se l'estremità linea è Flat, un visualizzatore deve scegliere un trattino del sistema operativo predefinito, laddove possibile , ad esempio qualcosa che sia veloce da disegnare. Di seguito sono illustrati alcuni esempi.
 </blockquote>
 </div>
 <div>
@@ -1007,7 +1007,7 @@ L'attributo DashStyle consente all'utente di specificare un modello di tratteggi
 </tr>
 <tr class="odd">
 <td>&quot;4 2&quot;</td>
-<td>trattino (ogni trattino è quattro volte la larghezza della linea mentre ogni spazio è doppio della larghezza della linea)</td>
+<td>trattino (ogni trattino è quattro volte la larghezza della linea mentre ogni spazio è il doppio della larghezza della linea)</td>
 </tr>
 <tr class="even">
 <td>&quot;8 2&quot;</td>
@@ -1015,7 +1015,7 @@ L'attributo DashStyle consente all'utente di specificare un modello di tratteggi
 </tr>
 <tr class="odd">
 <td>&quot;4 2 1 2&quot;</td>
-<td>trattino punto</td>
+<td>punto trattino</td>
 </tr>
 <tr class="even">
 <td>&quot;8 2 1 2&quot;</td>
@@ -1097,16 +1097,16 @@ Intero con un intervallo compreso tra -infinito e infinito.
 
 **Tipo di dati IVgAdjustments**
 
-Raccolta di modifiche a una forma che può essere utilizzata per modificare le dimensioni di una forma. Le rettifiche possono essere usate come segnaposto temporanei o per qualsiasi motivo si usino le variabili. Nella raccolta sono presenti solo 8 modifiche.
+Raccolta di modifiche a una forma che può essere utilizzata per modificare le dimensioni di una forma. Le rettifiche possono essere usate come segnaposto temporanei o per qualsiasi motivo si usino le variabili. La raccolta contiene solo 8 modifiche.
 
 
 
 | Attributo | Descrizione                                                                                                                                                                                                                                                                                                                                                                    |
 |------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Exists     | [IVgTriState](msdn-online-vml-vgtristate.md). Determina se esiste una rettifica specificata. Si noti che è necessario usare un indice. ovvero exists( item ) deve essere usato per recuperare l'esistenza di un elemento.                                                                                                                                                                   |
-| Elemento       | [Long](#data-types-used-in-the-vml-object-model). Matrice di rettifiche indicizzate da 0 a 7. Si noti che le modifiche possono essere specificate con parsimonio. in altri, i valori intermedi delle matrici potrebbero non essere sempre riempiti. Ad esempio, l'elemento 1, 3 e 5 può avere valori per una lunghezza pari a 3, con item(0), item(2) e item(4) specificati. Per verificare se esiste un elemento, usare l'attributo Exists. |
-| Length     | [Integer](#data-types-used-in-the-vml-object-model). Numero di modifiche. Non può essere maggiore di 8.                                                                                                                                                                                                                                                                          |
-| Valore      | [Stringa](#data-types-used-in-the-vml-object-model). Rappresentazione testuale dei valori numerici, con virgole tra ogni numero.                                                                                                                                                                                                                                                    |
+| Exists     | [IVgTriState](msdn-online-vml-vgtristate.md). Determina se esiste una regolazione specificata. Si noti che è necessario usare un indice. ovvero exists( item ) deve essere usato per recuperare l'esistenza di un elemento.                                                                                                                                                                   |
+| Elemento       | [Long](#data-types-used-in-the-vml-object-model). Matrice di rettifiche indicizzate da 0 a 7. Si noti che le rettifiche possono essere specificate con parsimonio; ciò significa che i valori intermedi della matrice potrebbero non essere sempre riempiti. Ad esempio, gli elementi 1, 3 e 5 possono avere valori per una lunghezza pari a 3, con item(0), item(2) e item(4) specificati. Per verificare se esiste un elemento, usare l'attributo Exists. |
+| Length     | [Integer](#data-types-used-in-the-vml-object-model). Numero di rettifiche. Non può essere maggiore di 8.                                                                                                                                                                                                                                                                          |
+| Valore      | [Stringa](#data-types-used-in-the-vml-object-model). Rappresentazione testuale di valori numerici, con virgole tra ogni numero.                                                                                                                                                                                                                                                    |
 
 
 
@@ -1120,8 +1120,8 @@ Specifica un colore.
 
 <table>
 <colgroup>
-<col style="width: 50%" />
-<col style="width: 50%" />
+<col  />
+<col  />
 </colgroup>
 <thead>
 <tr class="header">
@@ -1157,12 +1157,12 @@ Specifica un colore.
 <li>Maroon (#800000)</li>
 <li>Rosso (#FF0000)</li>
 <li>Viola (#800080)</li>
-<li>Fucsia (#FF00FF)</li>
+<li>Fuchsia (#FF00FF)</li>
 <li>Verde (#008000)</li>
-<li>Lime (#00FF00)</li>
-<li>Olive (#808000)</li>
+<li>Bianco (#00FF00)</li>
+<li>Verde verde (#808000)</li>
 <li>Giallo (#FFFF00)</li>
-<li>Navy (#000080)</li>
+<li>Rieti (#000080)</li>
 <li>Blu (#0000FF)</li>
 <li>Teal (#008080)</li>
 <li>Aqua (#00FFFF)</li>
@@ -1193,8 +1193,8 @@ Equazioni usate per le formule.
 
 <table>
 <colgroup>
-<col style="width: 50%" />
-<col style="width: 50%" />
+<col  />
+<col  />
 </colgroup>
 <tbody>
 <tr class="odd">
@@ -1214,7 +1214,7 @@ Equazioni usate per le formule.
 </tr>
 <tr class="even">
 <td>Atan2</td>
-<td>Aritmetica polare: risultati in unità fd (gradi moltiplicati per 65536).<br/> <strong>atan2</strong>(p1,v) <br/></td>
+<td>Aritmetica polare: i risultati sono unità fd (gradi moltiplicati per 65536).<br/> <strong>atan2</strong>(p1,v) <br/></td>
 </tr>
 <tr class="odd">
 <td>Cos</td>
@@ -1230,7 +1230,7 @@ Equazioni usate per le formule.
 </tr>
 <tr class="even">
 <td>Se</td>
-<td>Se il test della condizione. v > 0 <strong>?</strong> p1 : p2</td>
+<td>If Condition test. v > 0 <strong>?</strong> p1 : p2</td>
 </tr>
 <tr class="odd">
 <td>Max</td>
@@ -1250,7 +1250,7 @@ Equazioni usate per le formule.
 </tr>
 <tr class="odd">
 <td>Prodotto</td>
-<td>Usato per la moltiplicazione e la divisione. v * p1 /p2</td>
+<td>Usato per la moltiplicazione e la divisione. v * p1 / p2</td>
 </tr>
 <tr class="even">
 <td>Sin</td>
@@ -1266,7 +1266,7 @@ Equazioni usate per le formule.
 </tr>
 <tr class="odd">
 <td>Sum</td>
-<td>Usato per l'addizione e la sottrazione.<br/> v + p1 p2<br/></td>
+<td>Utilizzato per l'addizione e la sottrazione.<br/> v + p1 p2<br/></td>
 </tr>
 <tr class="even">
 <td>Sumangle</td>
@@ -1274,7 +1274,7 @@ Equazioni usate per le formule.
 </tr>
 <tr class="odd">
 <td>Tan</td>
-<td>Tangente, l'argomento è in unità fd (gradi moltiplicati per 65536). <br/> v * tan( p1 )<br/></td>
+<td>Tangente, argomento in unità fd (gradi moltiplicati per 65536). <br/> v * tan( p1 )<br/></td>
 </tr>
 <tr class="even">
 <td>Val</td>
@@ -1306,11 +1306,11 @@ Equazioni usate per le formule.
 </tr>
 <tr class="even">
 <td>AdjustmentReference</td>
-<td>Il parametro è un riferimento a una rettifica. Ad esempio, se il primo parametro è 1, verrà usato il valore della prima rettifica.</td>
+<td>Il parametro è un riferimento a una regolazione. Ad esempio, se il primo parametro è 1, verrà usato il valore della prima rettifica.</td>
 </tr>
 <tr class="odd">
 <td>FormulaReference</td>
-<td>Il parametro è il risultato di un riferimento al risultato di una formula precedente. Ad esempio, se il primo parametro è 2, verrà usato il risultato della formula 2.</td>
+<td>Parameter è il risultato di un riferimento al risultato di una formula precedente. Ad esempio, se il primo parametro è 2, verrà usato il risultato della formula 2.</td>
 </tr>
 </tbody>
 </table>
@@ -1323,7 +1323,7 @@ Equazioni usate per le formule.
 </tr>
 <tr class="odd">
 <td>Paramtype2</td>
-<td><strong>VgFormulaParamType</strong> Tipo del parametro 2.</td>
+<td><strong>VgFormulaParamType</strong> Tipo di parametro 2.</td>
 </tr>
 <tr class="even">
 <td>Val</td>
@@ -1352,7 +1352,7 @@ Specifica un rettangolo fisso.
 | Sinistra       | [Double](#data-types-used-in-the-vml-object-model). Coordinata più a sinistra del rettangolo.   |
 | Inizio        | [Double](#data-types-used-in-the-vml-object-model). Coordinata superiore del rettangolo.    |
 | Destra      | [Double](#data-types-used-in-the-vml-object-model). Coordinata più a destra del rettangolo.  |
-| Ultimo     | [Double](#data-types-used-in-the-vml-object-model). Coordinata più in basso del rettangolo. |
+| Ultimo     | [Double](#data-types-used-in-the-vml-object-model). Coordinata inferiore del rettangolo. |
 
 
 
@@ -1368,7 +1368,7 @@ Matrice di rettangoli fissi.
 |------------|-------------------------------------------------------------------------------------------------------------|
 | Valore      | [Stringa](#data-types-used-in-the-vml-object-model). Rappresentazione testuale della matrice.                           |
 | Length     | [Integer](#data-types-used-in-the-vml-object-model). Numero di rettangoli in questa matrice.                    |
-| Elemento       | [Oggetto IVgFixedRectangle.](#data-types-used-in-the-vml-object-model) Oggetto rettangolo in corrispondenza dell'indice specificato. |
+| Elemento       | [IVgFixedRectangle](#data-types-used-in-the-vml-object-model). Oggetto rettangolo in corrispondenza dell'indice specificato. |
 
 
 
@@ -1376,7 +1376,7 @@ Matrice di rettangoli fissi.
 
 **Tipo di dati IVgFormula**
 
-Definizioni per formule che possono variare il percorso di una forma o essere usate per altri scopi di calcolo. Le formule possono essere basate **sull'attributo Adj** di una forma, che può cambiare. Le formule possono fare riferimento anche ad altre formule.
+Definizioni per formule che possono variare il percorso di una forma o che possono essere usate per altri scopi di calcolo. Le formule possono essere basate **sull'attributo Adj** di una forma, che può cambiare. Le formule possono fare riferimento anche ad altre formule.
 
 
 
@@ -1397,13 +1397,13 @@ Raccolta di oggetti formula.
 | Attributo | Descrizione                                                                                                                                  |
 |------------|----------------------------------------------------------------------------------------------------------------------------------------------|
 | Length     | [Integer](#data-types-used-in-the-vml-object-model). Numero di oggetti formula nella raccolta.                                                |
-| Elemento       | [IVgFormula](#data-types-used-in-the-vml-object-model). Formula specifica. Si noti che la matrice della formula può essere ereditata in base al tipo di forma. |
+| Elemento       | [IVgFormula](#data-types-used-in-the-vml-object-model). Formula specifica. Si noti che la matrice di formule può essere ereditata in base al tipo di forma. |
 
 
 
  
 
-**Oggetto IVgGradientColorArray**
+**IVgGradientColorArray**
 
 Matrice di colori che definiscono una sfumatura (intervallo di colori misto).
 
@@ -1411,7 +1411,7 @@ Matrice di colori che definiscono una sfumatura (intervallo di colori misto).
 
 | Attributo | Descrizione                                                                                                                  |
 |------------|------------------------------------------------------------------------------------------------------------------------------|
-| Valore      | [Stringa](#data-types-used-in-the-vml-object-model). Specifica la matrice di colori. ad esempio "red .2; verde .4; black .7" |
+| Valore      | [Stringa](#data-types-used-in-the-vml-object-model). Specifica la matrice di colori. ad esempio "red .2; verde .4; nero .7" |
 | Length     | [Integer](#data-types-used-in-the-vml-object-model). Numero di colori nella matrice.                                          |
 
 
@@ -1422,8 +1422,8 @@ Matrice di colori che definiscono una sfumatura (intervallo di colori misto).
 
 | Metodo     | Descrizione                                                                                                                                                                                                      |
 |-------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| AddColor    | [VgFraction](msdn-online-vml-vgfraction-data-type.md). Aggiunge un nuovo colore all'endpoint specificato da fraction. Il nuovo colore è bianco per impostazione predefinita e è il valore restituito. Il colore può quindi essere modificato per riferimento. |
-| RemoveColor | [VgFraction](msdn-online-vml-vgfraction-data-type.md). Rimuove un colore in corrispondenza dell'endpoint specificato da fraction. Nota: se 0.0 o 1.0 non esiste, viene implicito e a questo punto viene usato il colore bianco.          |
+| AddColor    | [VgFraction](msdn-online-vml-vgfraction-data-type.md). Aggiunge il nuovo colore in corrispondenza dell'endpoint specificato da fraction. Il nuovo colore è bianco per impostazione predefinita e rappresenta il valore restituito. Il colore può quindi essere modificato in base al riferimento. |
+| RemoveColor | [VgFraction](msdn-online-vml-vgfraction-data-type.md). Rimuove un colore in corrispondenza dell'endpoint specificato da fraction. Nota: se 0.0 o 1.0 non esiste, è implicito e il colore bianco viene usato a quel punto.          |
 
 
 
@@ -1447,7 +1447,7 @@ Matrice di punti che definiscono una forma.
 
 **Tipo di dati IVgSkewMatrix**
 
-Matrice usata per forme a inclinazione, matrice di trasformazione prospettica nel formato "*sxx,sxy,syx,syy,px,py* " \[ *s* =scale, *p* =perspective \] . Se offset è in unità assolute, *px,py* sono in unità emu ^-1; in caso contrario, sono una frazione inversa delle dimensioni della forma.
+Matrice usata per le forme a inclinazione, matrice di trasformazione prospettica nel formato "*sxx,sxy,syx,syy,px,py* " \[ *s* =scale, *p* =perspective \] . Se offset è in unità assolute, *px,py* è in emu ^-1 unità; in caso contrario, sono una frazione inversa delle dimensioni della forma.
 
 
 
@@ -1455,8 +1455,8 @@ Matrice usata per forme a inclinazione, matrice di trasformazione prospettica ne
 |--------------|-----------------------------------------------------|
 | XtoX         | [Double](#data-types-used-in-the-vml-object-model). |
 | YtoX         | [Double](#data-types-used-in-the-vml-object-model). |
-| Xtoy         | [Double](#data-types-used-in-the-vml-object-model). |
-| AAA         | [Double](#data-types-used-in-the-vml-object-model). |
+| XtoY         | [Double](#data-types-used-in-the-vml-object-model). |
+| YtoY         | [Double](#data-types-used-in-the-vml-object-model). |
 | PerspectiveX | [Double](#data-types-used-in-the-vml-object-model). |
 | PerspectiveY | [Double](#data-types-used-in-the-vml-object-model). |
 
@@ -1466,14 +1466,14 @@ Matrice usata per forme a inclinazione, matrice di trasformazione prospettica ne
 
 **IVgSkewOffset**
 
-Specifica l'offset dell'a inclinazione.
+Specifica l'offset dell'aassamento.
 
 
 
 <table>
 <colgroup>
-<col style="width: 50%" />
-<col style="width: 50%" />
+<col  />
+<col  />
 </colgroup>
 <thead>
 <tr class="header">
@@ -1488,7 +1488,7 @@ Specifica l'offset dell'a inclinazione.
 </tr>
 <tr class="even">
 <td>X</td>
-<td><a href="#data-types-used-in-the-vml-object-model">Double</a>. Componente X. Percentuale o misura. Se non sono presenti unità, il tipo ShapeRelative è implicito. in caso contrario, il tipo assoluto è implicito.</td>
+<td><a href="#data-types-used-in-the-vml-object-model">Double</a>. Componente X. Percentuale o misura. Se non sono presenti unità, il tipo ShapeRelative è implicito; in caso contrario, il tipo assoluto è implicito.</td>
 </tr>
 <tr class="odd">
 <td>S</td>
@@ -1507,7 +1507,7 @@ Specifica l'offset dell'a inclinazione.
 <tbody>
 <tr class="odd">
 <td>ShapeRelative</td>
-<td>I valori dell'offset sono percentuali (rapporti) delle dimensioni della forma originale. Ad esempio, un valore pari a 0,5 indica un offset della metà delle dimensioni della forma.</td>
+<td>I valori dell'offset sono percentuali (proporzioni) delle dimensioni della forma originale. Ad esempio, un valore pari a 0,5 indica un offset pari alla metà delle dimensioni della forma.</td>
 </tr>
 <tr class="even">
 <td>Assoluto</td>
@@ -1533,8 +1533,8 @@ Specifica un vettore bidimensionale costituito da due **numeri Double.**
 
 <table>
 <colgroup>
-<col style="width: 50%" />
-<col style="width: 50%" />
+<col  />
+<col  />
 </colgroup>
 <thead>
 <tr class="header">
@@ -1581,8 +1581,8 @@ Specifica un vettore tridimensionale costituito da tre **numeri Double.**
 
 <table>
 <colgroup>
-<col style="width: 50%" />
-<col style="width: 50%" />
+<col  />
+<col  />
 </colgroup>
 <tbody>
 <tr class="odd">
@@ -1627,7 +1627,7 @@ Numero a virgola mobile con un intervallo compreso tra 0 e infinito.
 
 **Tipo di dati measure**
 
-Numero a virgola mobile da -infinity a infinito.
+Numero a virgola mobile da -infinity a infinity.
 
 **Tipo di dati String**
 

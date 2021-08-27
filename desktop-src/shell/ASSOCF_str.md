@@ -4,12 +4,12 @@ ms.assetid: e67d0282-9090-43e6-aedf-bb1fc0443221
 title: Enumerazione ASSOCF
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: b6920ef874833471d88c4d42a074661337469b11
-ms.sourcegitcommit: 9b5faa61c38b2d0c432b7f2dbee8c127b0e28a7e
+ms.openlocfilehash: 3d52de3ce181033358fc20ca3e4f8759b61f72ed
+ms.sourcegitcommit: 4e94fc75fad7b2a0f3c92a26f97e89924e59b7a9
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/19/2021
-ms.locfileid: "122477937"
+ms.lasthandoff: 08/24/2021
+ms.locfileid: "122786697"
 ---
 # <a name="assocf-enumeration"></a>Enumerazione ASSOCF
 
@@ -17,7 +17,7 @@ Fornisce informazioni ai metodi [**dell'interfaccia IQueryAssociations.**](/wind
 
 ## <a name="syntax"></a>Sintassi
 
-<span codelanguage="ManagedCPlusPlus"></span>
+
 
 
 | C++ | 
@@ -67,11 +67,11 @@ Indica ai metodi [**IQueryAssociations**](/windows/win32/api/shlwapi/nn-shlwapi-
 
  <span id="ASSOCF_REMAPRUNDLL"></span><span id="assocf_remaprundll"></span>**REMAPRUNDLL DI ASSOCF \_** 
 
-Indica ai metodi [**IQueryAssociations**](/windows/win32/api/shlwapi/nn-shlwapi-iqueryassociations) di ignorare Rundll.exe e restituire informazioni sulla destinazione. In **genere i metodi IQueryAssociations** restituiscono informazioni sulla prima .exe o .dll in una stringa di comando. Se un comando usa Rundll.exe, l'impostazione di questo flag indica al metodo di ignorare Rundll.exe e restituire informazioni sulla destinazione.
+Indica ai metodi [**IQueryAssociations**](/windows/win32/api/shlwapi/nn-shlwapi-iqueryassociations) di ignorare Rundll.exe e restituire informazioni sulla destinazione. In genere **i metodi IQueryAssociations** restituiscono informazioni sulla prima .exe o .dll in una stringa di comando. Se un comando usa Rundll.exe, l'impostazione di questo flag indica al metodo di ignorare Rundll.exe e restituire informazioni sulla destinazione.
 
  <span id="ASSOCF_NOFIXUPS"></span><span id="assocf_nofixups"></span>**NOFIXUPS DI ASSOCF \_** 
 
-Indica ai metodi [**IQueryAssociations**](/windows/win32/api/shlwapi/nn-shlwapi-iqueryassociations) di non correggere gli errori nel Registro di sistema, ad esempio il nome descrittivo di una funzione che non corrisponde a quello presente nel file .exe.
+Indica ai metodi [**IQueryAssociations**](/windows/win32/api/shlwapi/nn-shlwapi-iqueryassociations) di non correggere gli errori nel Registro di sistema, ad esempio il nome descrittivo di una funzione che non corrisponde a quello trovato nel file .exe.
 
  <span id="ASSOCF_IGNOREBASECLASS"></span><span id="assocf_ignorebaseclass"></span>**ASSOCF \_ IGNOREBASECLASS** 
 
@@ -99,9 +99,9 @@ Specifica che il valore BaseClass deve essere ignorato.
 
 
 
-| Requisito | valore |
+| Requisito | Valore |
 |-------------------------------------|--------------------------------------------------------------------------------------|
-| Client minimo supportato | Windows 2000 Professional, Windows solo app desktop XP \[\]               |
+| Client minimo supportato | Windows 2000 Professional, Windows solo app \[ desktop XP\]               |
 | Server minimo supportato | Windows 2000 Server \[solo app desktop\]                                 |
 | Intestazione                   |  Shlwapi.h  |
 

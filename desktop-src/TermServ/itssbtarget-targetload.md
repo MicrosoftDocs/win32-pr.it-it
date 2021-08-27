@@ -1,5 +1,5 @@
 ---
-title: Proprietà ITsSbTarget TargetLoad
+title: Proprietà TargetLoad ITsSbTarget
 description: Recupera il carico relativo su una destinazione.
 ms.assetid: 56618dcf-1319-4310-80ba-7ed71b8b02e8
 ms.tgt_platform: multiple
@@ -22,12 +22,12 @@ api_type:
 - COM
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 3c367e9c00caff78bb3e64263c1622de45fa6e640e78d88239e1ed25a6f68558
-ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
+ms.openlocfilehash: ec8224106fad6031a18bf061020a259813db639e
+ms.sourcegitcommit: 4665ebce0c106bdb52eef36e544280b496b6f50b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119989861"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "122983924"
 ---
 # <a name="itssbtargettargetload-property"></a>Proprietà ITsSbTarget::TargetLoad
 
@@ -52,42 +52,22 @@ Numero che rappresenta il carico relativo su una destinazione.
 
 ## <a name="remarks"></a>Commenti
 
-Il peso di una sessione in sospeso rispetto a una sessione attiva può essere modificato impostando il valore del parametro *\_ LB ConnectionEstablishmentPenalty* per Connection Broker. Questo parametro si trova nella chiave del Registro di sistema **HKLM \\ System \\ CurrentControlSet \\ Services \\ Tssdis \\ Parameters.** Il valore predefinito 1 specifica che le sessioni in sospeso hanno lo stesso peso delle sessioni attive.
+Il peso di una sessione in sospeso rispetto a una sessione attiva può essere modificato impostando il valore del parametro *\_ LB ConnectionEstablishmentPenalty* per Gestore connessione. Questo parametro si trova nella chiave del Registro di sistema **HKLM \\ System \\ CurrentControlSet \\ Services \\ Tssdis \\ Parameters.** Il valore predefinito 1 specifica che le sessioni in sospeso hanno lo stesso peso delle sessioni attive.
 
-Questa proprietà è disponibile Windows Server 2012 R2 con [KB3091411](https://support.microsoft.com/kb/3091411) installato [**nell'interfaccia ITsSbTargetEx.**](itssbtargetex.md)
+Questa proprietà è disponibile in Windows Server 2012 R2 con [KB3091411](https://support.microsoft.com/kb/3091411) installato [**nell'interfaccia ITsSbTargetEx.**](itssbtargetex.md)
 
 ## <a name="requirements"></a>Requisiti
 
 
 
-<table>
-<colgroup>
-<col style="width: 50%" />
-<col style="width: 50%" />
-</colgroup>
-<tbody>
-<tr class="odd">
-<td>Client minimo supportato<br/></td>
-<td>Nessuno supportato<br/></td>
-</tr>
-<tr class="even">
-<td>Server minimo supportato<br/></td>
-<td>Windows Server 2016<br/></td>
-</tr>
-<tr class="odd">
-<td>Idl<br/></td>
-<td><dl> <dt>Sbtsv.idl</dt> </dl></td>
-</tr>
-<tr class="even">
-<td>IID<br/></td>
-<td>IID_ITsSbTarget definito come:
-<ul>
-<li>16616ECC-272D-411D-B324-126893033856</li>
-<li>e85e10ea-db0b-4752-b456-5fd5840901c0 in Windows Server 2008 R2</li>
-</ul></td>
-</tr>
-</tbody>
-</table>
+
+| Requisito | Valore |
+|--------|-------|
+| Client minimo supportato<br /> | Nessuno supportato<br /> | 
+| Server minimo supportato<br /> | Windows Server 2016<br /> | 
+| IDL<br /> | <dl><dt>Sbtsv.idl</dt></dl> | 
+| IID<br /> | IID_ITsSbTarget è definito come:<ul><li>16616ECC-272D-411D-B324-126893033856</li><li>e85e10ea-db0b-4752-b456-5fd5840901c0 in Windows Server 2008 R2</li></ul> | 
+
 
 
 

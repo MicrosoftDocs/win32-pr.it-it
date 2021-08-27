@@ -4,12 +4,12 @@ ms.assetid: efeed3a6-de5e-4698-9dc3-d0acb3d13dee
 title: Elemento Title
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: ef687f809aae5c3722cdad84ee63d79c7bfcfb21
-ms.sourcegitcommit: c3f669dc1d52278432bf75ad9fddba3257d26aa2
+ms.openlocfilehash: 05661be8566cf4136194af4e08d8f9774d3413dc
+ms.sourcegitcommit: 9b5faa61c38b2d0c432b7f2dbee8c127b0e28a7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/04/2021
-ms.locfileid: "111432223"
+ms.lasthandoff: 08/19/2021
+ms.locfileid: "122473137"
 ---
 # <a name="title-element"></a>Elemento Title
 
@@ -27,63 +27,19 @@ Contiene informazioni sul titolo della nota journal.
 
 ## <a name="child-elements"></a>Elementi figlio
 
-[**TitleArea**](titlearea-element.md)
+[**Area titolo**](titlearea-element.md)
 
 ## <a name="attributes"></a>Attributi
 
 
 
-<table>
-<colgroup>
-<col style="width: 20%" />
-<col style="width: 20%" />
-<col style="width: 20%" />
-<col style="width: 20%" />
-<col style="width: 20%" />
-</colgroup>
-<thead>
-<tr class="header">
-<th>Attributo</th>
-<th>Type</th>
-<th>Obbligatoria</th>
-<th>Descrizione</th>
-<th>Valori possibili</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td><strong>Style</strong></td>
-<td><strong>xs:string</strong></td>
-<td>Obbligatoria</td>
-<td>Specifica il tipo di bordo che circonda il titolo della nota.</td>
-<td><ul>
-<li>Nessuno</li>
-<li>SolidSquare</li>
-<li>OutlineSquare</li>
-<li>SolidRoundRect</li>
-<li>OutlineRoundRect</li>
-<li>SolidRoundRectDottedBaseline</li>
-</ul></td>
-</tr>
-<tr class="even">
-<td><strong>DateStyle</strong></td>
-<td><strong>xs:string</strong></td>
-<td>Obbligatoria</td>
-<td>Definisce se il titolo include o meno una data.</td>
-<td><ul>
-<li>Nessuno</li>
-<li>Short</li>
-</ul></td>
-</tr>
-<tr class="odd">
-<td><strong>Colore</strong></td>
-<td><a href="colortype-simple-type.md"><strong>SimpleType ColorType</strong></a></td>
-<td>Facoltativo</td>
-<td>Specifica il colore dello sfondo.</td>
-<td>Vedere <a href="colortype-simple-type.md"><strong>ColorType simpleType</strong></a>.</td>
-</tr>
-</tbody>
-</table>
+
+| Attributo | Type | Obbligatoria | Descrizione | Valori possibili | 
+|-----------|------|----------|-------------|-----------------|
+| <strong>Style</strong> | <strong>xs:string</strong> | Obbligatoria | Specifica il tipo di bordo che circonda il titolo della nota. | <ul><li>Nessuno</li><li>SolidSquare</li><li>OutlineSquare</li><li>SolidRoundRect</li><li>OutlineRoundRect</li><li>SolidRoundRectDottedBaseline</li></ul> | 
+| <strong>DateStyle</strong> | <strong>xs:string</strong> | Obbligatoria | Definisce se il titolo include o meno una data. | <ul><li>Nessuno</li><li>Short</li></ul> | 
+| <strong>Colore</strong> | <a href="colortype-simple-type.md"><strong>SimpleType ColorType</strong></a> | Facoltativo | Specifica il colore dello sfondo. | Vedere <a href="colortype-simple-type.md"><strong>ColorType simpleType.</strong></a> | 
+
 
 
 
@@ -95,7 +51,7 @@ Contiene informazioni sul titolo della nota journal.
 
 | Elemento      | valore                                                   |
 |--------------|---------------------------------------------------------|
-| Tipo di elemento | [**ComplexType TitleType**](titletype-complex-type.md) |
+| Tipo di elemento | [**complexType TitleType**](titletype-complex-type.md) |
 | Spazio dei nomi    | urn:schemas-microsoft-com:tabletpc:richink              |
 | Nome schema  | Lettore journal                                          |
 

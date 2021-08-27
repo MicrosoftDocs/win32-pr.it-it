@@ -7,12 +7,12 @@ MSHAttr:
 title: APPLICAZIONEApplicazione
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: cdeb94362480b00a4d1a3d0d6a7dedc49d4cf9f7
-ms.sourcegitcommit: 9b5faa61c38b2d0c432b7f2dbee8c127b0e28a7e
+ms.openlocfilehash: df188ec628961aed8aeb5d68e3b9b3f7852e7fdd
+ms.sourcegitcommit: 4665ebce0c106bdb52eef36e544280b496b6f50b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/19/2021
-ms.locfileid: "122467568"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "122986854"
 ---
 # <a name="span-idwwan_profile_v4element_ratapplicabilityspanratapplicability"></a><span id="WWAN_profile_v4.element_RATApplicability"></span>APPLICAZIONEApplicazione
 
@@ -20,9 +20,9 @@ Specifica che questo profilo è attivo solo quando il tipo PIÙ BASSO è quello 
 
 ## <a name="element-hierarchy"></a>Gerarchia degli elementi
 
-[<MBNProfileExt>](element-mbnprofileext.md)  
-[<ProfileConditionedOn>](element-profileconditionedon.md)  
-**<RATApplicability>**
+[&lt;MBNProfileExt&gt;](element-mbnprofileext.md)  
+[&lt;ProfileConditionedOn&gt;](element-profileconditionedon.md)  
+**&lt;APPLICAZIONEApplicazione&gt;**
 
 ## <a name="syntax"></a>Sintassi
 
@@ -57,7 +57,9 @@ Nessuno.
 ## <a name="requirements"></a>Requisiti
 
 
-| | | <p>Spazio dei nomi</p> | <p>https://www.microsoft.com/networking/WWAN/profile/v4</p> | 
+| Requisito | Valore |
+|------------|----------|
+| <p>Spazio dei nomi</p> | <p>https://www.microsoft.com/networking/WWAN/profile/v4</p> | 
 
 
  

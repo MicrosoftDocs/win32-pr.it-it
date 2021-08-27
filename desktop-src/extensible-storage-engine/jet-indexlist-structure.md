@@ -1,5 +1,5 @@
 ---
-description: 'Altre informazioni su: JET_INDEXLIST struttura'
+description: 'Altre informazioni su: JET_INDEXLIST Structure'
 title: Struttura JET_INDEXLIST
 TOCTitle: JET_INDEXLIST Structure
 ms:assetid: 0c092b48-e583-49f3-8f5e-1428a84d9265
@@ -15,12 +15,12 @@ api_type:
 - COM
 api_location: ''
 ROBOTS: INDEX,FOLLOW
-ms.openlocfilehash: c57fda6eaea161839cdaa758c41f13749d4c5eda
-ms.sourcegitcommit: 9b5faa61c38b2d0c432b7f2dbee8c127b0e28a7e
+ms.openlocfilehash: e21353fb780ed7346c1ff82cbc5057469da25a4b
+ms.sourcegitcommit: 4665ebce0c106bdb52eef36e544280b496b6f50b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/19/2021
-ms.locfileid: "122480047"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "122987484"
 ---
 # <a name="jet_indexlist-structure"></a>Struttura JET_INDEXLIST
 
@@ -59,7 +59,7 @@ La **JET_INDEXLIST** contiene le informazioni necessarie per attraversare una ta
 
 **cbStruct**
 
-Dimensione della struttura in byte. La chiamata API aggiornerà questo campo, quindi il chiamante deve assicurarsi che questo valore corrisponda a sizeof( JET_INDEXLIST ).
+Dimensioni della struttura in byte. La chiamata API aggiornerà questo campo, quindi il chiamante deve assicurarsi che questo valore corrisponda a sizeof( JET_INDEXLIST ).
 
 **tableid**
 
@@ -77,7 +77,7 @@ Questa colonna è un [JET_coltypText](./jet-coltyp.md).
 
 **columnidgrbitIndex**
 
-Identificatore di colonna degli *grbit usati* nell'indice. Vedere [JET_INDEXCREATE](./jet-indexcreate-structure.md) per un elenco di bit validi.
+Identificatore di colonna dei *grbit usati* nell'indice. Vedere [JET_INDEXCREATE](./jet-indexcreate-structure.md) per un elenco di bit validi.
 
 Questa colonna è un [JET_coltypLong](./jet-coltyp.md).
 
@@ -110,7 +110,7 @@ Identificatore di colonna del numero di colonne nell'indice. Per altre informazi
 Questa colonna è un [JET_coltypLong](./jet-coltyp.md).
 
 
-| <p>valore</p> | <p>Significato</p> | 
+| <p>Valore</p> | <p>Significato</p> | 
 |--------------|----------------|
 | <p>cIndexInfoCols<br />15</p> | <p>Specifica che sono consentite 15 colonne.</p> | 
 | <p>cColumnInfoCols<br />14</p> | <p>Specifica che sono consentite 14 colonne.</p> | 
@@ -124,7 +124,7 @@ Identificatore di colonna della colonna indicizzata. Per altre informazioni, ved
 
 **columnidcoltyp**
 
-Identificatore di colonna della coltyp della colonna indicizzata. Per altre informazioni, vedere la sezione Osservazioni di questo argomento. Questa colonna è un [JET_coltypLong](./jet-coltyp.md).
+Identificatore di colonna della colonna indicizzata. Per altre informazioni, vedere la sezione Osservazioni di questo argomento. Questa colonna è un [JET_coltypLong](./jet-coltyp.md).
 
 **columnidCountry**
 
@@ -134,13 +134,13 @@ Questa colonna è un [JET_coltypShort](./jet-coltyp.md).
 
 **columnidLangid**
 
-Identificatore di colonna dell'identificatore di lingua (LCID) in cui è stato creato l'indice. Per altre informazioni, vedere [JET_INDEXCREATE](./jet-indexcreate-structure.md).
+Identificatore di colonna dell'identificatore di lingua (LCID) in cui è stato creato l'indice. Per altre informazioni, [vedere](./jet-indexcreate-structure.md)JET_INDEXCREATE .
 
 Questa colonna è un [JET_coltypShort](./jet-coltyp.md).
 
 **columnidCp**
 
-Identificatore di colonna della tabella codici in cui è stato creato l'indice. Per altre informazioni, vedere [JET_COLUMNCREATE](./jet-columncreate-structure.md).
+Identificatore di colonna della tabella codici in cui è stato creato l'indice. Per altre informazioni, [vedere](./jet-columncreate-structure.md)JET_COLUMNCREATE .
 
 Questa colonna è un [JET_coltypShort](./jet-coltyp.md).
 
@@ -154,12 +154,12 @@ Questa colonna è un [JET_coltypShort](./jet-coltyp.md).
 
 Identificatore di colonna dei *grbit che* si applicano all'ordine della colonna nell'indice.
 
-I dati per questa colonna possono essere ordinati come JET_bitKeyAscending o JET_bitKeyDescending. Questa colonna è un [JET_coltypLong](./jet-coltyp.md). Ad esempio, un indice definito come "-column1 \\ 0+column2 0" avrà JET_bitKeyDescending per "column1" e JET_bitKeyAscending \\ per "column2".
+I dati per questa colonna possono essere ordinati JET_bitKeyAscending o JET_bitKeyDescending. Questa colonna è un [JET_coltypLong](./jet-coltyp.md). Ad esempio, un indice definito come "-column1 \\ 0+column2 0" avrà JET_bitKeyDescending per "column1" e JET_bitKeyAscending \\ per "column2".
 
 Le opzioni seguenti sono valide per questo membro.
 
 
-| <p>valore</p> | <p>Significato</p> | 
+| <p>Valore</p> | <p>Significato</p> | 
 |--------------|----------------|
 | <p>JET_bitKeyAscending</p> | <p>Segmento di indice in ordine crescente.</p> | 
 | <p>JET_bitKeyDescending</p> | <p>Segmento di indice in ordine decrescente.</p> | 
@@ -174,7 +174,7 @@ Questa colonna è un [JET_coltypText](./jet-coltyp.md).
 
 **columnidLCMapFlags**
 
-Identificatore di colonna dei flag utilizzati per creare l'indice. Per altre informazioni, vedere la **sezione dwMapFlags** [di JET_UNICODEINDEX](./jet-unicodeindex-structure.md).
+Identificatore di colonna dei flag utilizzati per creare l'indice. Per altre informazioni, vedere la sezione **dwMapFlags** [di JET_UNICODEINDEX](./jet-unicodeindex-structure.md).
 
 Questa colonna è un [JET_coltypLong](./jet-coltyp.md).
 
@@ -182,9 +182,9 @@ Questa colonna è un [JET_coltypLong](./jet-coltyp.md).
 
 Ogni riga della tabella temporanea corrisponde a una colonna in un indice specifico.
 
-Ad esempio, l'indice "+A \\ 0+B \\ 0+C \\ 0+D \\ 0+E \\ 0" è maggiore di cinque colonne e occuperà cinque righe nella tabella temporanea. Ognuna di queste cinque righe avrà un valore pari a 5 nella colonna identificata dalla colonna columnid. Tuttavia, ogni riga avrà un valore diverso per columnid columnid, compreso tra 0 e 4.
+Ad esempio, l'indice "+A \\ 0+B \\ \\ 0+C 0+D \\ 0+E 0" è più di cinque colonne e occuperà cinque righe nella tabella \\ temporanea. Ognuna di queste cinque righe avrà un valore pari a 5 nella colonna identificata dalla colonna columnid. Tuttavia, ogni riga avrà un valore diverso per columnid columnid, compreso tra 0 e 4.
 
-Il numero di chiavi in un determinato indice corrisponde al numero di valori univoci per i quali un chiamante può cercare e ottenere una corrispondenza esatta. Il numero di voci è il numero di righe corrispondenti a un indice. Se un indice ha un vincolo di univocità, il numero di chiavi è uguale al numero di voci. Ad esempio, se una tabella contiene le informazioni seguenti e viene creato un indice sulla colonna denominata "key", sono presenti tre chiavi (100, 200 e 500), ma sono presenti quattro voci ("this", "is", "an" e "example").
+Il numero di chiavi in un indice specifico corrisponde al numero di valori univoci per cui un chiamante può cercare e ottenere una corrispondenza esatta. Il numero di voci è il numero di righe corrispondenti a un indice. Se un indice ha un vincolo di univocità, il numero di chiavi è uguale al numero di voci. Ad esempio, se una tabella contiene le informazioni seguenti e viene creato un indice sulla colonna denominata "key", sono presenti tre chiavi (100, 200 e 500), ma sono presenti quattro voci ("this", "is", "an" e "example").
 
 
 | <p>Chiave</p> | <p>Voce</p> | 
@@ -199,7 +199,11 @@ Il numero di chiavi in un determinato indice corrisponde al numero di valori uni
 ### <a name="requirements"></a>Requisiti
 
 
-| | | <p><strong>Client</strong></p> | <p>Richiede Windows Vista, Windows XP o Windows 2000 Professional.</p> | | <p><strong>Server</strong></p> | <p>Richiede Windows Server 2008, Windows Server 2003 o Windows 2000 Server.</p> | | <p><strong>Intestazione</strong></p> | <p>Dichiarato in Esent.h.</p> | 
+| Requisito | Valore |
+|------------|----------|
+| <p><strong>Client</strong></p> | <p>Richiede Windows Vista, Windows XP o Windows 2000 Professional.</p> | 
+| <p><strong>Server</strong></p> | <p>Richiede Windows Server 2008, Windows Server 2003 o Windows 2000 Server.</p> | 
+| <p><strong>Intestazione</strong></p> | <p>Dichiarato in Esent.h.</p> | 
 
 
 

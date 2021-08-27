@@ -7,12 +7,12 @@ MSHAttr:
 title: MBNProfileExt
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: c47dd7c8b8064d7c9bed24763dfe3ec8fda0ac12
-ms.sourcegitcommit: 9b5faa61c38b2d0c432b7f2dbee8c127b0e28a7e
+ms.openlocfilehash: 1cf6b821d36fc69c06fd42fad58efc4102e64f6a
+ms.sourcegitcommit: 4665ebce0c106bdb52eef36e544280b496b6f50b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/19/2021
-ms.locfileid: "122472127"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "122987914"
 ---
 # <a name="span-idwwan_profile_v4element_mbnprofileextspanmbnprofileext"></a><span id="WWAN_profile_v4.element_MBNProfileExt"></span>MBNProfileExt
 
@@ -22,7 +22,7 @@ In un profilo possono essere presenti più elementi MbnProfileExt, che descrivon
 
 ## <a name="element-hierarchy"></a>Gerarchia degli elementi
 
-**<MBNProfileExt>**
+**&lt;MBNProfileExt&gt;**
 
 ## <a name="syntax"></a>Sintassi
 
@@ -105,7 +105,9 @@ Questo elemento più esterno (documento) potrebbe non essere contenuto da altri 
 ## <a name="requirements"></a>Requisiti
 
 
-| | | <p>Spazio dei nomi</p> | <p>https://www.microsoft.com/networking/WWAN/profile/v4</p> | 
+| Requisito | Valore |
+|------------|----------|
+| <p>Spazio dei nomi</p> | <p>https://www.microsoft.com/networking/WWAN/profile/v4</p> | 
 
 
  

@@ -3,7 +3,7 @@ title: Elemento VerticalMenuLayout
 description: Rappresenta un layout verticale per gli elementi in una raccolta.
 ms.assetid: 4124c639-c078-4eb0-9d36-37d1ffcebac0
 keywords:
-- Barra multifunzione di Windows per l'elemento VerticalMenuLayout
+- Elemento VerticalMenuLayout Windows ribbon
 topic_type:
 - apiref
 api_name:
@@ -13,12 +13,12 @@ api_type:
 ms.topic: reference
 ms.date: 05/31/2018
 api_location: ''
-ms.openlocfilehash: 5e6f3e4a691c9691b9bc6c8c6d760bb10635d8d8
-ms.sourcegitcommit: 099ecdda1e83618b844387405da0db0ebda93a65
+ms.openlocfilehash: 732fff993e4ac4e1caf8637c1f83804636bf6882
+ms.sourcegitcommit: c276a8912787b2cda74dcf54eb96df961bb1188b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/04/2021
-ms.locfileid: "111444052"
+ms.lasthandoff: 08/20/2021
+ms.locfileid: "122623297"
 ---
 # <a name="verticalmenulayout-element"></a>Elemento VerticalMenuLayout
 
@@ -39,10 +39,10 @@ Rappresenta un layout verticale per gli elementi in una raccolta.
 
 <table>
 <colgroup>
-<col style="width: 25%" />
-<col style="width: 25%" />
-<col style="width: 25%" />
-<col style="width: 25%" />
+<col  />
+<col  />
+<col  />
+<col  />
 </colgroup>
 <thead>
 <tr class="header">
@@ -57,22 +57,22 @@ Rappresenta un layout verticale per gli elementi in una raccolta.
 <td><strong>Pinza</strong><br/></td>
 <td>xs:string<br/></td>
 <td>No<br/></td>
-<td>Handle di ridimensionamento collegato all'elenco a discesa della raccolta. <br/> <img src="images/controls/gripper.png" alt="Screen shot of a vertical gripper." /><br/> Limitato a uno dei valori seguenti:<br/> <br/>
+<td>Handle di ridimensionamento associato all'elenco a discesa della raccolta. <br/> <img src="images/controls/gripper.png" alt="Screen shot of a vertical gripper." /><br/> Limitato a uno dei valori seguenti:<br/> <br/>
 <dt><span></span><span></span><strong></strong> (Nessuno)<br/> </dt> <dd></dd> <dt><span></span><span></span><strong></strong> (Verticale)<br/> </dt> <dd> Valore predefinito. <br/> </dd> </dl></td>
 </tr>
 <tr class="even">
 <td><strong>IsMultipleHighlightingEnabled</strong><br/></td>
 <td>xs:boolean<br/></td>
 <td>No<br/></td>
-<td><strong>Windows 8 e più recente</strong><br/> Evidenzia tutti gli elementi nell'elenco fino all'elemento corrente di passaggio del mouse (anziché solo all'elemento di passaggio del mouse). In genere viene usato per <strong>più funzionalità di</strong> <strong>annullamento e di annullamento.</strong><br/> <br/>
+<td><strong>Windows 8 e più recente</strong><br/> Evidenzia tutti gli elementi nell'elenco fino all'elemento corrente del mouse(anziché solo all'elemento di passaggio del mouse). Usato in genere per più <strong>funzionalità di</strong> <strong>annullamento e di annullamento.</strong><br/> <br/>
 <dt><span></span><span></span><strong></strong> (true)<br/> </dt> <dd></dd> <dt><span></span><span></span><strong></strong> (false)<br/> </dt> <dd> Valore predefinito. <br/> </dd> </dl></td>
 </tr>
 <tr class="odd">
 <td><strong>prime righe</strong><br/></td>
 <td>xs:integer<br/></td>
 <td>No<br/></td>
-<td>Specifica il numero di righe di elementi da visualizzare senza scorrimento. <br/> <br/>
-<dt><span></span><span></span><strong></strong> (xs:integer)<br/> </dt> <dd> Qualsiasi numero intero positivo o negativo. <br/> Il valore predefinito <strong>è -1,</strong> che specifica di visualizzare il maggior numero possibile di righe di elementi.<br/> </dd> </dl></td>
+<td>Specifica il numero di righe dell'elemento da visualizzare senza scorrere. <br/> <br/>
+<dt><span></span><span></span><strong></strong> (xs:integer)<br/> </dt> <dd> Qualsiasi numero intero positivo o negativo. <br/> Il valore predefinito <strong>è -1</strong> che specifica di visualizzare il maggior numero possibile di righe di elementi.<br/> </dd> </dl></td>
 </tr>
 </tbody>
 </table>
@@ -99,13 +99,13 @@ Non ci sono elementi figlio.
 
 Obbligatorio.
 
-L'elemento **VerticalMenuLayout** o [**FlowMenuLayout**](windowsribbon-element-flowmenulayout.md) deve essere presente una volta per ogni elemento [**DropDownGallery.MenuLayout**](windowsribbon-element-dropdowngallery-menulayout.md), [**InRibbonGallery.MenuLayout**](windowsribbon-element-inribbongallery-menulayout.md)o [**SplitButtonGallery.MenuLayout.**](windowsribbon-element-splitbuttongallery-menulayout.md)
+L'elemento **VerticalMenuLayout** o [**FlowMenuLayout**](windowsribbon-element-flowmenulayout.md) deve verificarsi una volta per ogni elemento [**DropDownGallery.MenuLayout**](windowsribbon-element-dropdowngallery-menulayout.md), [**InRibbonGallery.MenuLayout**](windowsribbon-element-inribbongallery-menulayout.md)o [**SplitButtonGallery.MenuLayout.**](windowsribbon-element-splitbuttongallery-menulayout.md)
 
 ## <a name="examples"></a>Esempio
 
-L'esempio seguente illustra il markup di base per **un elemento VerticalMenuLayout.**
+L'esempio seguente illustra il markup di base per un **elemento VerticalMenuLayout.**
 
-Questa sezione di codice illustra le dichiarazioni del controllo [**InRibbonGallery.**](windowsribbon-element-inribbongallery.md)
+Questa sezione di codice illustra le dichiarazioni di controllo [**InRibbonGallery.**](windowsribbon-element-inribbongallery.md)
 
 
 ```XML
