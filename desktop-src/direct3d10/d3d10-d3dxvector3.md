@@ -1,5 +1,5 @@
 ---
-description: 'Struttura D3DXVECTOR3 (D3DX10Math.h): descrive un vettore a tre componenti che include overload degli operatori e cast di tipo.'
+description: "Struttura D3DXVECTOR3 (D3DX10Math.h): descrive un vettore a tre componenti che include overload dell'operatore e cast di tipi."
 ms.assetid: d170cd26-d705-4a31-82b3-f9ea070b6ca4
 title: Struttura D3DXVECTOR3 (D3DX10Math.h)
 ms.topic: reference
@@ -13,16 +13,16 @@ api_type:
 - HeaderDef
 api_location:
 - D3DX10Math.h
-ms.openlocfilehash: 7b43348b6b5683e9fe75c5340fd0c2cab5efe719
-ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
+ms.openlocfilehash: 61c9791f4e97fbde77f3b42154b2855f2fc31694efd19087dd78fdced9908e56
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/28/2021
-ms.locfileid: "108102851"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120120221"
 ---
 # <a name="d3dxvector3-structure-d3dx10mathh"></a>Struttura D3DXVECTOR3 (D3DX10Math.h)
 
-Descrive un vettore a tre componenti che include gli overload degli operatori e i cast di tipo.
+Descrive un vettore a tre componenti che include overload dell'operatore e cast di tipi.
 
 ## <a name="syntax"></a>Sintassi
 
@@ -63,7 +63,7 @@ Componente y.
 
 </dd> <dt>
 
-**Z**
+**z**
 </dt> <dd>
 
 Tipo: **[ **FLOAT**](../winprog/windows-data-types.md)**
@@ -76,7 +76,7 @@ Componente z.
 
 ## <a name="remarks"></a>Commenti
 
-**D3DXVECTOR3 include** le estensioni C++ seguenti.
+**D3DXVECTOR3** include le estensioni C++ seguenti.
 
 ### <a name="d3dxvector3-extensions"></a>Estensioni D3DXVECTOR3
 

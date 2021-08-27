@@ -15,12 +15,12 @@ api_type:
 - COM
 api_location: ''
 ROBOTS: INDEX,FOLLOW
-ms.openlocfilehash: 687f28fcba3d20c5b72a3089d3a442dd97e2dfb3
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 401c490c667cd8f9842a7ab0429e10a510e3b06e
+ms.sourcegitcommit: 9b5faa61c38b2d0c432b7f2dbee8c127b0e28a7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "106317410"
+ms.lasthandoff: 08/19/2021
+ms.locfileid: "122466398"
 ---
 # <a name="jet_api_ptr"></a>JET_API_PTR
 
@@ -29,7 +29,7 @@ _**Si applica a:** Windows | Windows Server_
 
 ## <a name="jet_api_ptr"></a>JET_API_PTR
 
-Il tipo di dati **JET_API_PTR** include un valore integer o un puntatore.
+Il **JET_API_PTR** dati contiene un valore integer o puntatore.
 
 ```cpp
     #if defined(_WIN64)
@@ -45,11 +45,11 @@ Il tipo di dati **JET_API_PTR** include un valore integer o un puntatore.
 
 JET_API_PTR
 
-Analogamente a un tipo di dati **DWORD_PTR** , il tipo di dati **JET_API_PTR** viene definito come 4 byte in un computer a 32 bit e a 8 byte in un computer a 64 bit.
+Come un **DWORD_PTR** di dati, il tipo di dati **JET_API_PTR** è definito come 4 byte in un computer a 32 bit e 8 byte in un computer a 64 bit.
 
 ### <a name="remarks"></a>Commenti
 
-Il tipo di dati **JET_API_PTR** viene utilizzato per definire i tipi di dati seguenti:
+Il **JET_API_PTR** di dati viene usato per definire i tipi di dati seguenti:
 
   - [JET_HANDLE](./jet-handle.md)
 
@@ -63,23 +63,6 @@ Il tipo di dati **JET_API_PTR** viene utilizzato per definire i tipi di dati seg
 
 ### <a name="requirements"></a>Requisiti
 
-<table>
-<colgroup>
-<col style="width: 50%" />
-<col style="width: 50%" />
-</colgroup>
-<tbody>
-<tr class="odd">
-<td><p><strong>Client</strong></p></td>
-<td><p>Richiede Windows Vista, Windows XP o Windows 2000 Professional.</p></td>
-</tr>
-<tr class="even">
-<td><p><strong>Server</strong></p></td>
-<td><p>Richiede Windows Server 2008, Windows Server 2003 o Windows 2000 Server.</p></td>
-</tr>
-<tr class="odd">
-<td><p><strong>Intestazione</strong></p></td>
-<td><p>Dichiarata in esent. h.</p></td>
-</tr>
-</tbody>
-</table>
+
+| | | <p><strong>Client</strong></p> | <p>Richiede Windows Vista, Windows XP o Windows 2000 Professional.</p> | | <p><strong>Server</strong></p> | <p>Richiede Windows Server 2008, Windows Server 2003 o Windows 2000 Server.</p> | | <p><strong>Intestazione</strong></p> | <p>Dichiarato in Esent.h.</p> | 
+

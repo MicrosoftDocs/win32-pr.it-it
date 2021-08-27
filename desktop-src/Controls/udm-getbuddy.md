@@ -1,9 +1,9 @@
 ---
-title: Messaggio UDM_GETBUDDY (COMmctrl. h)
-description: Recupera l'handle per la finestra Buddy corrente.
+title: UDM_GETBUDDY messaggio (Commctrl.h)
+description: Recupera l'handle per la finestra corrente.
 ms.assetid: 684b224d-5565-4bf4-9c18-c5e4cd01ee00
 keywords:
-- Controlli di Windows Message UDM_GETBUDDY
+- UDM_GETBUDDY di Windows di messaggio
 topic_type:
 - apiref
 api_name:
@@ -14,16 +14,16 @@ api_type:
 - HeaderDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: cd6f38ea58250ef3367ef260625dea7dc7b94783
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: 50a02da2143ea4a5b167f6485993c5623b79643db861876483e5e0dfd8e34b53
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "103743799"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120132171"
 ---
-# <a name="udm_getbuddy-message"></a>UDM \_ messaggio GETbuddy
+# <a name="udm_getbuddy-message"></a>Messaggio GETBUDDY di UDM \_
 
-Recupera l'handle per la finestra Buddy corrente.
+Recupera l'handle per la finestra corrente.
 
 ## <a name="parameters"></a>Parametri
 
@@ -37,7 +37,7 @@ Recupera l'handle per la finestra Buddy corrente.
 
 ## <a name="return-value"></a>Valore restituito
 
-Il valore restituito è l'handle per la finestra Buddy corrente.
+Il valore restituito è l'handle per la finestra corrente.
 
 ## <a name="requirements"></a>Requisiti
 
@@ -45,9 +45,9 @@ Il valore restituito è l'handle per la finestra Buddy corrente.
 
 | Requisito | Valore |
 |-------------------------------------|---------------------------------------------------------------------------------------|
-| Client minimo supportato<br/> | \[Solo app desktop di Windows Vista\]<br/>                                        |
-| Server minimo supportato<br/> | \[Solo app desktop Windows Server 2003\]<br/>                                  |
-| Intestazione<br/>                   | <dl> <dt>Commctrl. h</dt> </dl> |
+| Client minimo supportato<br/> | Windows Solo \[ app desktop Vista\]<br/>                                        |
+| Server minimo supportato<br/> | Windows Solo app desktop di Server 2003 \[\]<br/>                                  |
+| Intestazione<br/>                   | <dl> <dt>Commctrl.h</dt> </dl> |
 
 
 

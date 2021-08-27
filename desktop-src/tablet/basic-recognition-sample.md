@@ -1,25 +1,25 @@
 ---
-description: Questa applicazione illustra come creare una semplice applicazione di riconoscimento della grafia. Questo programma crea un oggetto InkCollector per abilitare l'input penna per la finestra e un oggetto contesto di riconoscimento predefinito.
+description: Questa applicazione illustra come creare una semplice applicazione di riconoscimento della grafia. Questo programma crea un oggetto InkCollector per abilitare l'input penna della finestra e un oggetto contesto del riconoscimento predefinito.
 ms.assetid: 6dc94293-cdf7-4b90-a5e8-559f376add26
 title: Esempio di riconoscimento di base
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 19679a6d1642a94ed813ba0428654b6e03009ea6
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: bcf45aa7695866e1cf413ea42b7c377b07ea84984ecf2cc3f44da93ff868072d
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "103884382"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120111141"
 ---
 # <a name="basic-recognition-sample"></a>Esempio di riconoscimento di base
 
-Questa applicazione illustra come creare una semplice applicazione di riconoscimento della *grafia* .
+Questa applicazione illustra come creare una semplice applicazione *di riconoscimento della grafia.*
 
-Questo programma crea un oggetto [**InkCollector**](inkcollector-class.md) per abilitare l' *input penna* per la finestra e un oggetto *contesto di riconoscimento* predefinito. Alla ricezione di "Recognize!" , generato dal menu dell'applicazione, i tratti di input penna raccolti vengono passati al contesto del riconoscimento. La stringa di risultato migliore viene visualizzata in una finestra di messaggio.
+Questo programma crea un [**oggetto InkCollector**](inkcollector-class.md) per abilitare *l'input penna* e un oggetto contesto *del riconoscimento* predefinito. Alla ricezione del messaggio "Recognize!" il comando , attivato dal menu dell'applicazione, i tratti input penna raccolti vengono passati al contesto del riconoscimento. La stringa di risultato migliore viene visualizzata in una finestra di messaggio.
 
 ## <a name="creating-the-recognizercontext-object"></a>Creazione dell'oggetto RecognizerContext
 
-Nella procedura WndProc per l'applicazione, quando viene ricevuto il \_ messaggio WM create all'avvio, viene creato un nuovo contesto di riconoscimento che usa il riconoscimento predefinito. Questo contesto viene utilizzato per tutti i riconoscimenti nell'applicazione.
+Nella procedura WndProc per l'applicazione, quando viene ricevuto il messaggio WM CREATE all'avvio, viene creato un nuovo contesto di riconoscimento che usa il sistema \_ di riconoscimento predefinito. Questo contesto viene usato per tutto il riconoscimento nell'applicazione.
 
 
 ```C++
@@ -43,7 +43,7 @@ case WM_CREATE:
 
 ## <a name="recognizing-the-strokes"></a>Riconoscimento dei tratti
 
-Il comando Recognize viene ricevuto quando l'utente fa clic su Recognize! . Il codice ottiene un puntatore al [**InkStrokes**](/previous-versions/windows/desktop/legacy/ms703293(v=vs.85)) input penna (pIInkStrokes) dall'oggetto [**InkDisp**](inkdisp-class.md) e quindi passa il **InkStrokes** al contesto del riconoscimento utilizzando una chiamata a putref \_ Strokes.
+Il comando recognize viene ricevuto quando l'utente fa clic su Recognize! . Il codice ottiene un puntatore a [**InkStrokes**](/previous-versions/windows/desktop/legacy/ms703293(v=vs.85)) (pIInkStrokes) dall'oggetto [**InkDisp**](inkdisp-class.md) e quindi passa **InkStrokes** al contesto del riconoscimento usando una chiamata a putref \_ Strokes.
 
 
 ```C++
@@ -67,7 +67,7 @@ Il comando Recognize viene ricevuto quando l'utente fa clic su Recognize! . Il c
 
 
 
-Il codice chiama quindi il metodo [**Recognize**](/windows/desktop/api/msinkaut/nf-msinkaut-iinkrecognizercontext-recognize) dell'oggetto [**InkRecognizerContext**](inkrecognizercontext-class.md) , passando un puntatore a un oggetto [**IInkRecognitionResult**](/windows/desktop/api/msinkaut/nn-msinkaut-iinkrecognitionresult) per conservare i risultati.
+Il codice chiama quindi il [**metodo Recognize**](/windows/desktop/api/msinkaut/nf-msinkaut-iinkrecognizercontext-recognize) dell'oggetto [**InkRecognizerContext,**](inkrecognizercontext-class.md) passando un puntatore a [**un oggetto IInkRecognitionResult**](/windows/desktop/api/msinkaut/nn-msinkaut-iinkrecognitionresult) per contenere i risultati.
 
 
 ```C++
@@ -80,7 +80,7 @@ Il codice chiama quindi il metodo [**Recognize**](/windows/desktop/api/msinkaut/
 
 
 
-Infine, il codice utilizza la proprietà [**IInkRecognitionResult**](/windows/desktop/api/msinkaut/nn-msinkaut-iinkrecognitionresult) dell'oggetto IInkRecognitionResult per recuperare il risultato del riconoscimento principale in una [**variabile di stringa**](/windows/desktop/api/msinkaut/nf-msinkaut-iinkrecognitionresult-get_topstring) , rilascia l'oggetto  e visualizza la stringa in una finestra di messaggio.
+Infine, il codice usa la proprietà [**TopString**](/windows/desktop/api/msinkaut/nf-msinkaut-iinkrecognitionresult-get_topstring) dell'oggetto [**IInkRecognitionResult**](/windows/desktop/api/msinkaut/nn-msinkaut-iinkrecognitionresult) per recuperare il primo risultato del riconoscimento in una variabile stringa, rilascia l'oggetto **IInkRecognitionResult** e visualizza la stringa in una finestra di messaggio.
 
 
 ```C++
@@ -102,7 +102,7 @@ Infine, il codice utilizza la proprietà [**IInkRecognitionResult**](/windows/de
 
 
 
-Assicurarsi di reimpostare il contesto di riconoscimento tra gli utilizzi.
+Assicurarsi di reimpostare il contesto del riconoscimento tra gli utilizzi.
 
 
 ```

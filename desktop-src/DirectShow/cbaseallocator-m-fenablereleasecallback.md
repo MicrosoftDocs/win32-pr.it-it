@@ -1,7 +1,7 @@
 ---
-description: "Flag che indica se il callback di rilascio è abilitato. Questo flag viene impostato nel metodo del costruttore. Se il valore è FALSE, la chiamata al metodo CBaseAllocator:: senotify comporta l'attivazione di un'asserzione (nelle build di debug)."
+description: Flag che indica se il callback di versione è abilitato. Questo flag viene impostato nel metodo del costruttore. Se il valore è FALSE, la chiamata al metodo CBaseAllocator::SetNotify causa l'esecuzione di un'asserzione (nelle build di debug).
 ms.assetid: cc9adc7c-ec44-41e7-875a-b3e553120804
-title: 'Membro CBaseAllocator:: m_fEnableReleaseCallback (Amfilter. h)'
+title: Membro CBaseAllocator::m_fEnableReleaseCallback (Amfilter.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -16,16 +16,16 @@ api_location:
 - Strmbase.dll
 - Strmbasd.lib
 - Strmbasd.dll
-ms.openlocfilehash: 626f1e8f4101eb48e79bc1cf679d1b91be9b2b31
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: 2fc1dfebb051ddffffce341547562901153b47bd5da002ebd847965593a73d93
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "106333379"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120131461"
 ---
-# <a name="cbaseallocatorm_fenablereleasecallback-member"></a>Membro fEnableReleaseCallback di CBaseAllocator:: m \_
+# <a name="cbaseallocatorm_fenablereleasecallback-member"></a>Membro CBaseAllocator::m \_ fEnableReleaseCallback
 
-Flag che indica se il callback di rilascio è abilitato. Questo flag viene impostato nel metodo del costruttore. Se il valore è **false**, la chiamata al metodo [**CBaseAllocator:: senotify**](cbaseallocator-setnotify.md) comporta l'attivazione di un'asserzione (nelle build di debug).
+Flag che indica se il callback di versione è abilitato. Questo flag viene impostato nel metodo del costruttore. Se il valore è **FALSE,** la chiamata al metodo [**CBaseAllocator::SetNotify**](cbaseallocator-setnotify.md) causa l'esecuzione di un'asserzione (nelle build di debug).
 
 ## <a name="syntax"></a>Sintassi
 
@@ -42,8 +42,8 @@ BOOL m_fEnableReleaseCallback;
 
 | Requisito | Valore |
 |--------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Intestazione<br/>  | <dl> <dt>Amfilter. h (include Streams. h)</dt> </dl>                                                                                  |
-| Libreria<br/> | <dl> <dt>Strmbase. lib (compilazioni finali); </dt> <dt>Strmbasd. lib (build di debug)</dt> </dl> |
+| Intestazione<br/>  | <dl> <dt>Amfilter.h (include Flussi.h)</dt> </dl>                                                                                  |
+| Libreria<br/> | <dl> <dt>Strmbase.lib (build di vendita al dettaglio); </dt> <dt>Strmbasd.lib (build di debug)</dt> </dl> |
 
 
 

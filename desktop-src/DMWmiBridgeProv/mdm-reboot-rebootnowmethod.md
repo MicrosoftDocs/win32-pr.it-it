@@ -4,8 +4,8 @@ description: Questo metodo esegue un riavvio del dispositivo.
 ms.assetid: b1bacad8-06db-4e56-9f3d-46c9a0036729
 keywords:
 - Metodo RebootNowMethod
-- Metodo RebootNowMethod, classe MDM_Reboot
-- Classe MDM_Reboot, metodo RebootNowMethod
+- Metodo RebootNowMethod, MDM_Reboot classe
+- MDM_Reboot classe, metodo RebootNowMethod
 topic_type:
 - apiref
 api_name:
@@ -16,16 +16,16 @@ api_type:
 - COM
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 29d35d297858588ade6655ea84876c6e75abd719
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: f27d95a83de2ceb9cdeabd9036a03a517c3148371ea4f6933a20155ceb4ed652
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "104119067"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120084901"
 ---
-# <a name="rebootnowmethod-method-of-the-mdm_reboot-class"></a>Metodo RebootNowMethod della classe di \_ riavvio MDM
+# <a name="rebootnowmethod-method-of-the-mdm_reboot-class"></a>Metodo RebootNowMethod della classe \_ Reboot MDM
 
-\[Alcune informazioni si riferiscono al prodotto pre-rilasciato che può essere modificato in modo sostanziale prima del rilascio commerciale. Microsoft non riconosce alcuna garanzia, espressa o implicita, in merito alle informazioni qui fornite.\]
+\[Alcune informazioni riguardano prodotti pre-rilasciati che possono essere modificati in modo sostanziale prima che venga rilasciato commercialmente. Microsoft non riconosce alcuna garanzia, espressa o implicita, in merito alle informazioni qui fornite.\]
 
 Questo metodo esegue un riavvio del dispositivo. Vedere anche [RebootNow](/windows/client-management/mdm/reboot-csp).
 
@@ -48,11 +48,11 @@ Questo metodo non presenta parametri.
 
 | Requisito | Valore |
 |-------------------------------------|------------------------------------------------------------------------------------------------------|
-| Client minimo supportato<br/> | \[Solo app desktop Windows 10\]<br/>                                                          |
+| Client minimo supportato<br/> | \[Windows 10 solo app desktop\]<br/>                                                          |
 | Server minimo supportato<br/> | Nessuno supportato<br/>                                                                            |
-| Spazio dei nomi<br/>                | \\ \\ Dmmap MDM CIMV2 \\ radice<br/>                                                                   |
-| MOF<br/>                      | <dl> <dt>DMWmiBridgeProv1. mof</dt> </dl>      |
-| DLL<br/>                      | <dl> <dt>\\DMWmiBridgeProv.dllfile MOF</dt> </dl> |
+| Spazio dei nomi<br/>                | Dmmap \\ mdm cimv2 \\ \\ radice<br/>                                                                   |
+| MOF<br/>                      | <dl> <dt>DMWmiBridgeProv1.mof</dt> </dl>      |
+| DLL<br/>                      | <dl> <dt>Mofs \\DMWmiBridgeProv.dll</dt> </dl> |
 
 
 
@@ -60,7 +60,7 @@ Questo metodo non presenta parametri.
 
 <dl> <dt>
 
-[**\_Riavvio MDM**](mdm-reboot.md)
+[**Riavvio MDM \_**](mdm-reboot.md)
 </dt> </dl>
 
  

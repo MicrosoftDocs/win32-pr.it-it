@@ -3,7 +3,7 @@ title: Tipo complesso weeklyScheduleType
 description: Definisce gli elementi figlio e le informazioni di sequenziazione per l'elemento ScheduleByWeek.
 ms.assetid: 048832fa-2262-4461-9cfc-823a4eb7a1df
 keywords:
-- Utilità di pianificazione di tipo complesso weeklyScheduleType
+- Tipo complesso weeklyScheduleType Utilità di pianificazione
 topic_type:
 - apiref
 api_name:
@@ -13,16 +13,16 @@ api_type:
 ms.topic: reference
 ms.date: 05/31/2018
 api_location: ''
-ms.openlocfilehash: 797e01c20e749593d64bad12f017af8be613992e
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: 5f886b2901a5cf1ff1c9db0c8ec761a796b8e68a0f3bdc746afa13a9d8e32ee6
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "104400469"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120099781"
 ---
 # <a name="weeklyscheduletype-complex-type"></a>Tipo complesso weeklyScheduleType
 
-Definisce gli elementi figlio e le informazioni di sequenziazione per l'elemento [**ScheduleByWeek**](taskschedulerschema-schedulebyweek-calendartriggertype-element.md) .
+Definisce gli elementi figlio e le informazioni di sequenziazione per [**l'elemento ScheduleByWeek.**](taskschedulerschema-schedulebyweek-calendartriggertype-element.md)
 
 ``` syntax
 <xs:complexType name="weeklyScheduleType">
@@ -68,8 +68,8 @@ Definisce gli elementi figlio e le informazioni di sequenziazione per l'elemento
 
 | Requisito | Valore |
 |-------------------------------------|------------------------------------------------------|
-| Client minimo supportato<br/> | \[Solo app desktop di Windows Vista\]<br/>       |
-| Server minimo supportato<br/> | \[Solo app desktop Windows Server 2008\]<br/> |
+| Client minimo supportato<br/> | Windows Solo \[ app desktop Vista\]<br/>       |
+| Server minimo supportato<br/> | Windows Solo app desktop di Server 2008 \[\]<br/> |
 
 
 

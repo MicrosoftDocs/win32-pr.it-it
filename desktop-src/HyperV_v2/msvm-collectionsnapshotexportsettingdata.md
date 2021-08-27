@@ -1,7 +1,7 @@
 ---
-description: Esportare i dati delle impostazioni da passare al metodo ExportSnapshot della classe MSVM \_ CollectionSnapshotService.
+description: Esportare i dati delle impostazioni da passare al metodo ExportSnapshot della classe Msvm \_ CollectionSnapshotService.
 ms.assetid: 03b448ed-72bc-485e-bb31-4445c53baa1c
-title: Classe Msvm_CollectionSnapshotExportSettingData
+title: Msvm_CollectionSnapshotExportSettingData classe
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -16,16 +16,16 @@ api_type:
 - DllExport
 api_location:
 - vmms.exe
-ms.openlocfilehash: 3e146fe2e2af17223e792d86cff16bf1c4149dd6
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: bd148b7ea73bf7c2eaff7f648c7084c37a8669779515749611c675e7f5564d1c
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "106306636"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120130631"
 ---
-# <a name="msvm_collectionsnapshotexportsettingdata-class"></a>\_Classe MSVM CollectionSnapshotExportSettingData
+# <a name="msvm_collectionsnapshotexportsettingdata-class"></a>Classe Msvm \_ CollectionSnapshotExportSettingData
 
-Esportare i dati delle impostazioni da passare al metodo ExportSnapshot della classe [**MSVM \_ CollectionSnapshotService**](msvm-collectionsnapshotservice.md) .
+Esportare i dati delle impostazioni da passare al metodo ExportSnapshot [**della classe Msvm \_ CollectionSnapshotService.**](msvm-collectionsnapshotservice.md)
 
 La sintassi seguente è semplificata dal codice MOF (Managed Object Format) e include tutte le proprietà ereditate.
 
@@ -43,26 +43,26 @@ class Msvm_CollectionSnapshotExportSettingData : CIM_SettingData
 
 ## <a name="members"></a>Members
 
-La **classe \_ CollectionSnapshotExportSettingData di MSVM** dispone di questi tipi di membri:
+La **classe Msvm \_ CollectionSnapshotExportSettingData** ha questi tipi di membri:
 
 -   [Proprietà](#properties)
 
 ### <a name="properties"></a>Proprietà
 
-La **classe \_ CollectionSnapshotExportSettingData di MSVM** dispone di queste proprietà.
+La **classe Msvm \_ CollectionSnapshotExportSettingData** ha queste proprietà.
 
 <dl> <dt>
 
 **BackupIntent**
 </dt> <dd> <dl> <dt>
 
-Tipo di dati: **UInt16**
+Tipo di dati: **uint16**
 </dt> <dt>
 
-Tipo di accesso: lettura/scrittura
+Tipo di accesso: Lettura/Scrittura
 </dt> </dl>
 
-Indica l'intenzione di utilizzare i set di backup esportati:
+Indica la finalità di utilizzo dei set di backup esportati:
 
 <dt>
 
@@ -73,7 +73,7 @@ Indica l'intenzione di utilizzare i set di backup esportati:
 
 </dt> <dd>
 
-Tutti i set di backup completi e differenziali esportati verranno conservati così come sono.
+Tutti i set di backup completi e differenziali esportati verranno mantenuti così come sono.
 
 </dd> <dt>
 
@@ -84,7 +84,7 @@ Tutti i set di backup completi e differenziali esportati verranno conservati cos
 
 </dt> <dd>
 
-I set di backup completi e differenziali esportati verranno uniti per sintetizzare set di backup completi.
+I set di backup completi e differenziali esportati verranno uniti per sintetizzare i set di backup completi.
 
 </dd> </dl>
 
@@ -93,26 +93,26 @@ I set di backup completi e differenziali esportati verranno uniti per sintetizza
 **CopyVmStorage**
 </dt> <dd> <dl> <dt>
 
-Tipo di dati: **Boolean**
+Tipo di dati: **booleano**
 </dt> <dt>
 
-Tipo di accesso: lettura/scrittura
+Tipo di accesso: Lettura/Scrittura
 </dt> </dl>
 
-Se **true**, l'archiviazione della macchina virtuale verrà copiata quando viene esportata la macchina virtuale. In caso contrario, **false.**
+se **true**, l'archiviazione della macchina virtuale verrà copiata quando la macchina virtuale viene esportata. In caso contrario, **false.**
 
 </dd> <dt>
 
-**DifferentialBackupBase**
+**DifferenzialalBackupBase**
 </dt> <dd> <dl> <dt>
 
-Tipo di dati: **String**
+Tipo di dati: **stringa**
 </dt> <dt>
 
-Tipo di accesso: lettura/scrittura
+Tipo di accesso: Lettura/Scrittura
 </dt> </dl>
 
-Base per l'esportazione differenziale. Si tratta del percorso di un'istanza di [**\_ ReferencePointCollection MSVM**](msvm-referencepointcollection.md) che rappresenta il punto di riferimento oppure il percorso di un'istanza di [**MSVM \_ snapshotcollection**](msvm-snapshotcollection.md) che rappresenta lo snapshot da utilizzare come base per l'esportazione differenziale.
+Base per l'esportazione differenziale. Si tratta del percorso di un'istanza [**di Msvm \_ ReferencePointCollection**](msvm-referencepointcollection.md) che rappresenta il punto di riferimento o del percorso di un'istanza [**di Msvm \_ SnapshotCollection**](msvm-snapshotcollection.md) che rappresenta lo snapshot da usare come base per l'esportazione differenziale.
 
 </dd> </dl>
 
@@ -122,10 +122,10 @@ Base per l'esportazione differenziale. Si tratta del percorso di un'istanza di [
 
 | Requisito | Valore |
 |-------------------------------------|---------------------------------------------------------------------------------------------------------|
-| Client minimo supportato<br/> | \[Solo app desktop Windows 10\]<br/>                                                             |
+| Client minimo supportato<br/> | \[Windows 10 solo app desktop\]<br/>                                                             |
 | Server minimo supportato<br/> | Windows Server 2016<br/>                                                                          |
-| Spazio dei nomi<br/>                | \\Virtualizzazione radice \\ v2<br/>                                                                     |
-| MOF<br/>                      | <dl> <dt>WindowsVirtualization. v2. mof</dt> </dl> |
+| Spazio dei nomi<br/>                | Virtualizzazione \\ radice \\ v2<br/>                                                                     |
+| MOF<br/>                      | <dl> <dt>WindowsVirtualization.V2.mof</dt> </dl> |
 | DLL<br/>                      | <dl> <dt>Vmms.exe</dt> </dl>                     |
 
 
@@ -134,7 +134,7 @@ Base per l'esportazione differenziale. Si tratta del percorso di un'istanza di [
 
 <dl> <dt>
 
-[**\_SETTINGDATA CIM**](cim-settingdata.md)
+[**CIM \_ SettingData**](cim-settingdata.md)
 </dt> </dl>
 
  

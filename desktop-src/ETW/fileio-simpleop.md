@@ -1,7 +1,7 @@
 ---
-description: Questa classe è la classe del tipo di evento per gli eventi semplici dell'operazione sui file. La sintassi seguente è semplificata dal codice MOF.
+description: Questa classe è la classe del tipo di evento per eventi di operazioni su file semplici. La sintassi seguente è semplificata dal codice MOF.
 ms.assetid: 5b6374e0-b39a-4d5a-acbd-25b410f1ba52
-title: Classe FileIo_SimpleOp
+title: FileIo_SimpleOp classe
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -16,16 +16,16 @@ api_name:
 api_type:
 - NA
 api_location: ''
-ms.openlocfilehash: f7ff09830653278c9b37cfefa81b182b0f1dc054
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 246bf356786b1b884380faa1feaad11db4d3f406a296d3292c571ff02698f454
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "104980362"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120130571"
 ---
-# <a name="fileio_simpleop-class"></a>Classe SimpleOp di FileIO \_
+# <a name="fileio_simpleop-class"></a>Classe FileIo \_ SimpleOp
 
-Questa classe è la classe del tipo di evento per gli eventi semplici dell'operazione sui file.
+Questa classe è la classe del tipo di evento per eventi di operazioni su file semplici.
 
 La sintassi seguente è semplificata dal codice MOF.
 
@@ -44,42 +44,42 @@ class FileIo_SimpleOp : FileIo
 
 ## <a name="members"></a>Members
 
-La **classe \_ SimpleOp di FileIO** presenta questi tipi di membri:
+La **classe FileIo \_ SimpleOp** ha questi tipi di membri:
 
 -   [Proprietà](#properties)
 
 ### <a name="properties"></a>Proprietà
 
-La **classe \_ SimpleOp di FileIO** presenta queste proprietà.
+La **classe FileIo \_ SimpleOp** ha queste proprietà.
 
 <dl> <dt>
 
 **FileKey**
 </dt> <dd> <dl> <dt>
 
-Tipo di dati: **UInt32**
+Tipo di dati: **uint32**
 </dt> <dt>
 
 Tipo di accesso: sola lettura
 </dt> <dt>
 
-Qualificatori: WmiDataId (4), puntatore
+Qualificatori: WmiDataId(4), Puntatore
 </dt> </dl>
 
-Per determinare il nome del file, trovare la corrispondenza con il valore di questa proprietà con la proprietà **FileObject** di un evento del [**\_ nome**](fileio-name.md) del FileIO.
+Per determinare il nome del file, associare il valore di questa proprietà alla **proprietà FileObject** di un [**evento FileIo \_ Name.**](fileio-name.md)
 
 </dd> <dt>
 
-**FileObject**
+**Oggetto FileObject**
 </dt> <dd> <dl> <dt>
 
-Tipo di dati: **UInt32**
+Tipo di dati: **uint32**
 </dt> <dt>
 
 Tipo di accesso: sola lettura
 </dt> <dt>
 
-Qualificatori: WmiDataId (3), puntatore
+Qualificatori: WmiDataId(3), Puntatore
 </dt> </dl>
 
 Identificatore che può essere usato per correlare le operazioni alla stessa istanza dell'oggetto file aperto tra gli eventi di creazione e chiusura di file.
@@ -89,38 +89,38 @@ Identificatore che può essere usato per correlare le operazioni alla stessa ist
 **IrpPtr**
 </dt> <dd> <dl> <dt>
 
-Tipo di dati: **UInt32**
+Tipo di dati: **uint32**
 </dt> <dt>
 
 Tipo di accesso: sola lettura
 </dt> <dt>
 
-Qualificatori: WmiDataId (1), puntatore
+Qualificatori: WmiDataId(1), Pointer
 </dt> </dl>
 
-Pacchetto di richiesta IO. Questa proprietà identifica l'attività IO.
+Pacchetto di richiesta I/O. Questa proprietà identifica l'attività di I/O.
 
 </dd> <dt>
 
 **TTID**
 </dt> <dd> <dl> <dt>
 
-Tipo di dati: **UInt32**
+Tipo di dati: **uint32**
 </dt> <dt>
 
 Tipo di accesso: sola lettura
 </dt> <dt>
 
-Qualificatori: WmiDataId (2), puntatore
+Qualificatori: WmiDataId(2), Puntatore
 </dt> </dl>
 
-Identificatore del thread che sta eseguendo l'operazione.
+Identificatore di thread del thread che esegue l'operazione.
 
 </dd> </dl>
 
 ## <a name="remarks"></a>Commenti
 
-L'evento Cleanup viene registrato quando viene chiuso l'ultimo handle del file. L'evento Close specifica che un oggetto file viene liberato. L'evento Flush specifica quando i buffer di file vengono scaricati completamente su disco.
+L'evento Cleanup viene registrato quando viene chiuso l'ultimo handle per il file. L'evento Close specifica che viene liberato un oggetto file. L'evento Flush specifica quando i buffer dei file vengono scaricati completamente su disco.
 
 ## <a name="requirements"></a>Requisiti
 
@@ -128,8 +128,8 @@ L'evento Cleanup viene registrato quando viene chiuso l'ultimo handle del file. 
 
 | Requisito | Valore |
 |-------------------------------------|------------------------------------------------------|
-| Client minimo supportato<br/> | \[Solo app desktop di Windows Vista\]<br/>       |
-| Server minimo supportato<br/> | \[Solo app desktop Windows Server 2008\]<br/> |
+| Client minimo supportato<br/> | Windows Solo \[ app desktop di Vista\]<br/>       |
+| Server minimo supportato<br/> | Windows Solo app desktop server 2008 \[\]<br/> |
 
 
 
@@ -137,7 +137,7 @@ L'evento Cleanup viene registrato quando viene chiuso l'ultimo handle del file. 
 
 <dl> <dt>
 
-[**FileIo**](fileio.md)
+[**Fileio**](fileio.md)
 </dt> </dl>
 
  

@@ -4,16 +4,16 @@ description: Di seguito è riportato il file di intestazione per l'applicazione 
 ms.assetid: e35b395a-4092-478f-b3e0-b40303b8f591
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: e6f7d2757a005b786c75ecb020c61dac8696f6b5
-ms.sourcegitcommit: 2d531328b6ed82d4ad971a45a5131b430c5866f7
+ms.openlocfilehash: 9ab55a797bebda61be01a41dec602f300dd896fc05960d68eeab8bc54e58f54c
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "104221170"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120121941"
 ---
 # <a name="asynchronous-example-header"></a>Intestazione di esempio asincrona
 
-Di seguito è riportato il file di intestazione per l' [applicazione di esempio asincrona](asynchronous-example-application.md).
+Di seguito è riportato il file di intestazione per [l'applicazione di esempio asincrona](asynchronous-example-application.md).
 
 
 ```C++
@@ -259,9 +259,9 @@ VOID LogSysError(
 
 
 
- 
+ 
 
- 
+ 
 
 
 

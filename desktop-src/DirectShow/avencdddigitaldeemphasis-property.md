@@ -1,29 +1,29 @@
 ---
-description: Specifica se il deenfasi digitale è abilitato in un flusso audio Dolby Digital. Questa proprietà si applica ai codificatori audio Dolby Digital.
+description: Specifica se la de-enfasi digitale è abilitata in un flusso audio Dolby Digital. Questa proprietà si applica ai codificatori audio Dolby Digital.
 ms.assetid: 5d2d9f1d-fdc3-448f-8d9f-f75a73a63cd3
-title: Proprietà AVEncDDDigitalDeemphasis (codecapis. h)
+title: Proprietà AVEncDDDigitalDeemphasis (Codecapi.h)
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 42662de5aebda80db8f2011a923e4a86e2c831fe
-ms.sourcegitcommit: a47bd86f517de76374e4fff33cfeb613eb259a7e
+ms.openlocfilehash: 5a9eb0c7404c1efad35c811cc0acf438fb00fe785de5155fbfd5cb06f43db3d4
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/06/2021
-ms.locfileid: "103747223"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120084601"
 ---
-# <a name="avencdddigitaldeemphasis-property"></a>Proprietà AVEncDDDigitalDeemphasis
+# <a name="avencdddigitaldeemphasis-property"></a>AVEncDDDigitalDeemphasis - proprietà
 
-Specifica se il deenfasi digitale è abilitato in un flusso audio Dolby Digital. Questa proprietà si applica ai codificatori audio Dolby Digital.
+Specifica se la de-enfasi digitale è abilitata in un flusso audio Dolby Digital. Questa proprietà si applica ai codificatori audio Dolby Digital.
 
 Si tratta di una proprietà di lettura/scrittura.
 
 ## <a name="data-type"></a>Tipo di dati
 
-**Variante \_ BOOL** (**VT \_ bool**)
+**VARIANT \_ BOOL** (**VT \_ BOOL**)
 
 ## <a name="property-guid"></a>GUID proprietà
 
-**Codecapis \_ AVEncDDDigitalDeemphasis**
+**CODECAPI \_ AVEncDDDigitalDeemphasis**
 
 ## <a name="requirements"></a>Requisiti
 
@@ -31,9 +31,9 @@ Si tratta di una proprietà di lettura/scrittura.
 
 | Requisito | Valore |
 |-------------------------------------|---------------------------------------------------------------------------------------|
-| Client minimo supportato<br/> | App UWP di Windows 2000 Professional \[ desktop apps \|\]<br/>                     |
-| Server minimo supportato<br/> | App desktop di Windows 2000 Server \[ \| UWP\]<br/>                           |
-| Intestazione<br/>                   | <dl> <dt>Codecapis. h</dt> </dl> |
+| Client minimo supportato<br/> | Windows 2000 Professional \[ app desktop app \| UWP\]<br/>                     |
+| Server minimo supportato<br/> | Windows 2000 App desktop UWP per le app \[ desktop di 2000 \| Server\]<br/>                           |
+| Intestazione<br/>                   | <dl> <dt>Codecapi.h</dt> </dl> |
 
 
 
@@ -41,7 +41,7 @@ Si tratta di una proprietà di lettura/scrittura.
 
 <dl> <dt>
 
-[Proprietà dell'API codec](codec-api-properties.md)
+[Proprietà API codec](codec-api-properties.md)
 </dt> <dt>
 
 [**Interfaccia ICodecAPI**](/windows/desktop/api/Strmif/nn-strmif-icodecapi)

@@ -1,96 +1,27 @@
 ---
-description: Filtro strumento di navigazione DVD
+description: Filtro DVD Navigator
 ms.assetid: 3b2c01a2-d52c-4497-8fc9-d1113e8507e8
-title: Filtro strumento di navigazione DVD
+title: Filtro DVD Navigator
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: a395001daeac5f90be85bea972d1d4f118198ee4343960cb4eed0d958e1677aa
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 96d248e490201536e92afeb38f520028e29ea9a5
+ms.sourcegitcommit: 9b5faa61c38b2d0c432b7f2dbee8c127b0e28a7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119016009"
+ms.lasthandoff: 08/19/2021
+ms.locfileid: "122477298"
 ---
-# <a name="dvd-navigator-filter"></a>Filtro strumento di navigazione DVD
+# <a name="dvd-navigator-filter"></a>Filtro DVD Navigator
 
-Il filtro DVD Navigator è il filtro di origine per un grafico DVD-Video filtro di riproduzione. Apre tutti i file necessari in un volume DVD-Video, esplora i file con estensione vob DVD-Video lineare e analizza il flusso del programma MPEG-2 risultante, suddividendo il flusso in tre pin di output (video, audio, immagine secondaria).
+Il filtro DVD Navigator è il filtro di origine per un grafico DVD-Video filtro di riproduzione. Apre tutti i file necessari in un volume di DVD-Video, esplora i file DVD-Video lineari con estensione vob e analizza il flusso del programma MPEG-2 risultante, suddividendo il flusso in tre pin di output (video, audio, immagine secondaria).
 
 Il filtro DVD Navigator implementa anche le interfacce [**IDvdControl2**](/windows/desktop/api/Strmif/nn-strmif-idvdcontrol2) e [**IDvdInfo2**](/windows/desktop/api/Strmif/nn-strmif-idvdinfo2) che consentono a un'applicazione di riproduzione DVD di controllare DVD-Video riproduzione.
 
 
 
-<table>
-<colgroup>
-<col style="width: 50%" />
-<col style="width: 50%" />
-</colgroup>
-<tbody>
-<tr class="odd">
-<td>Interfacce di filtro</td>
-<td><a href="/windows/desktop/api/Strmif/nn-strmif-ibasefilter"><strong>IBaseFilter,</strong></a> <a href="/windows/desktop/api/Strmif/nn-strmif-idvdcontrol2"><strong>IDvdControl2,</strong></a> <a href="/windows/desktop/api/Strmif/nn-strmif-idvdinfo2"><strong>IDvdInfo2,</strong></a> <a href="/windows/desktop/api/Strmif/nn-strmif-ifilesourcefilter"><strong>IFileSourceFilter,</strong></a> <strong>ISpecifyPropertyPages</strong></td>
-</tr>
-<tr class="even">
-<td>Tipi di supporti pin di input</td>
-<td>MEDIATYPE_Stream, MEDIASUBTYPE_MPEG2_PROGRAM</td>
-</tr>
-<tr class="odd">
-<td>Interfacce pin di input</td>
-<td>Non applicabile.</td>
-</tr>
-<tr class="even">
-<td>Tipi di supporti pin di output</td>
-<td>Tipi di base:<br/>
-<ul>
-<li>Video: <strong>MEDIATYPE_DVD_ENCRYPTED_PACK</strong>, <strong>MEDIASUBTYPE_MPEG2_VIDEO</strong></li>
-<li>Audio: <strong>MEDIATYPE_DVD_ENCRYPTED_PACK</strong>, <strong>MEDIASUBTYPE_DOLBY_AC3</strong></li>
-<li>Immagine secondaria: <strong>MEDIATYPE_DVD_ENCRYPTED_PACK</strong>, <strong>MEDIASUBTYPE_DVD_SUBPICTURE</strong></li>
-</ul>
-Tipi estesi:<br/> Video:<br/>
-<ul>
-<li><strong>MEDIATYPE_DVD_ENCRYPTED_PACK</strong>, <strong>MEDIASUBTYPE_MPEG2_VIDEO</strong></li>
-<li><strong>MEDIATYPE_Video</strong>, <strong>MEDIASUBTYPE_MPEG2_VIDEO</strong></li>
-<li><strong>MEDIATYPE_MPEG2_PES</strong>, <strong>MEDIASUBTYPE_MPEG2_VIDEO</strong></li>
-</ul>
-Audio:<br/>
-<ul>
-<li><strong>MEDIATYPE_DVD_ENCRYPTED_PACK</strong>, <strong>MEDIASUBTYPE_DOLBY_AC3</strong></li>
-<li><strong>MEDIATYPE_Audio</strong>, <strong>MEDIASUBTYPE_DOLBY_AC3</strong></li>
-<li><strong>MEDIATYPE_MPEG2_PES</strong>, <strong>MEDIASUBTYPE_DOLBY_AC3</strong></li>
-</ul>
-Immagine secondaria:<br/>
-<ul>
-<li><strong>MEDIATYPE_DVD_ENCRYPTED_PACK</strong>, <strong>MEDIASUBTYPE_DVD_SUBPICTURE</strong></li>
-<li><strong>MEDIATYPE_Video</strong>, <strong>MEDIASUBTYPE_DVD_SUBPICTURE</strong></li>
-<li><strong>MEDIATYPE_MPEG2_PES</strong>, <strong>MEDIASUBTYPE_DVD_SUBPICTURE</strong></li>
-</ul>
-Per abilitare i tipi estesi, chiamare <a href="/windows/desktop/api/Strmif/nf-strmif-idvdcontrol2-setoption"><strong>IDvdControl2::SetOption</strong></a> e impostare <br/></td>
-</tr>
-<tr class="odd">
-<td>Interfacce pin di output</td>
-<td><a href="/windows/desktop/api/Strmif/nn-strmif-ipin"><strong>IPin</strong></a>, <a href="/windows/desktop/api/Strmif/nn-strmif-iqualitycontrol"> <strong>IQualityControl</strong></a></td>
-</tr>
-<tr class="even">
-<td>Filtro CLSID</td>
-<td>CLSID_DVDNavigator</td>
-</tr>
-<tr class="odd">
-<td>CLSID della pagina delle proprietà</td>
-<td>Nessuna pagina delle proprietà.</td>
-</tr>
-<tr class="even">
-<td>File eseguibile</td>
-<td>qdvd.dll</td>
-</tr>
-<tr class="odd">
-<td><a href="merit.md">Merito</a></td>
-<td>MERIT_DO_NOT_USE</td>
-</tr>
-<tr class="even">
-<td><a href="filter-categories.md">Categoria filtro</a></td>
-<td>CLSID_LegacyAmFilterCategory</td>
-</tr>
-</tbody>
-</table>
+
+| | | Interfacce di filtro | <a href="/windows/desktop/api/Strmif/nn-strmif-ibasefilter"><strong>IBaseFilter</strong></a>, <a href="/windows/desktop/api/Strmif/nn-strmif-idvdcontrol2"><strong>IDvdControl2</strong></a>, <a href="/windows/desktop/api/Strmif/nn-strmif-idvdinfo2"><strong>IDvdInfo2</strong></a>, <a href="/windows/desktop/api/Strmif/nn-strmif-ifilesourcefilter"><strong>IFileSourceFilter</strong></a>, <strong>ISpecifyPropertyPages</strong> | | Tipi di supporti pin di input | MEDIATYPE_Stream, MEDIASUBTYPE_MPEG2_PROGRAM | | Interfacce pin di input | Non applicabile. | | Tipi di supporti pin di output | Tipi di base:<br /><ul><li>Video: <strong>MEDIATYPE_DVD_ENCRYPTED_PACK</strong>, <strong>MEDIASUBTYPE_MPEG2_VIDEO</strong></li><li>Audio: <strong>MEDIATYPE_DVD_ENCRYPTED_PACK</strong>, <strong>MEDIASUBTYPE_DOLBY_AC3</strong></li><li>Immagine secondaria: <strong>MEDIATYPE_DVD_ENCRYPTED_PACK</strong>, <strong>MEDIASUBTYPE_DVD_SUBPICTURE</strong></li></ul>Tipi estesi:<br /> Video:<br /><ul><li><strong>MEDIATYPE_DVD_ENCRYPTED_PACK</strong>, <strong>MEDIASUBTYPE_MPEG2_VIDEO</strong></li><li><strong>MEDIATYPE_Video</strong>, <strong>MEDIASUBTYPE_MPEG2_VIDEO</strong></li><li><strong>MEDIATYPE_MPEG2_PES</strong>, <strong>MEDIASUBTYPE_MPEG2_VIDEO</strong></li></ul>Audio:<br /><ul><li><strong>MEDIATYPE_DVD_ENCRYPTED_PACK</strong>, <strong>MEDIASUBTYPE_DOLBY_AC3</strong></li><li><strong>MEDIATYPE_Audio</strong>, <strong>MEDIASUBTYPE_DOLBY_AC3</strong></li><li><strong>MEDIATYPE_MPEG2_PES</strong>, <strong>MEDIASUBTYPE_DOLBY_AC3</strong></li></ul>Immagine secondaria:<br /><ul><li><strong>MEDIATYPE_DVD_ENCRYPTED_PACK</strong>, <strong>MEDIASUBTYPE_DVD_SUBPICTURE</strong></li><li><strong>MEDIATYPE_Video</strong>, <strong>MEDIASUBTYPE_DVD_SUBPICTURE</strong></li><li><strong>MEDIATYPE_MPEG2_PES</strong>, <strong>MEDIASUBTYPE_DVD_SUBPICTURE</strong></li></ul>Per abilitare i tipi estesi, <a href="/windows/desktop/api/Strmif/nf-strmif-idvdcontrol2-setoption"><strong>chiamare IDvdControl2::SetOption</strong></a> e impostare <br /> | | Interfacce pin di output | <a href="/windows/desktop/api/Strmif/nn-strmif-ipin"><strong>IPin</strong></a>, <a href="/windows/desktop/api/Strmif/nn-strmif-iqualitycontrol"><strong>IQualityControl</strong></a> | | Filtrare l'| CLSID CLSID_DVDNavigator | | Pagina delle proprietà CLSID | Nessuna pagina delle proprietà. | | File eseguibili | qdvd.dll | | <a href="merit.md">|</a> MERIT_DO_NOT_USE | | <a href="filter-categories.md">Filtro categoria |</a> CLSID_LegacyAmFilterCategory | 
+
 
 
 

@@ -1,5 +1,5 @@
 ---
-description: Altre informazioni sulla funzione JetDefragment2
+description: 'Altre informazioni su: Funzione JetDefragment2'
 title: Funzione JetDefragment2
 TOCTitle: JetDefragment2 Function
 ms:assetid: cfb190cf-8bd3-4479-a6a1-7c0c9e8c74ca
@@ -20,12 +20,12 @@ api_type:
 api_location:
 - ESENT.DLL
 ROBOTS: INDEX,FOLLOW
-ms.openlocfilehash: 4bcde8d55032d2e07466668b5a4d96b9a447d843
-ms.sourcegitcommit: 35baf9ba19918a38c4ca8714f88c004af0c6f518
+ms.openlocfilehash: 3d31b6203de9feb9301b3c08c01bee84c666a9e9
+ms.sourcegitcommit: 9b5faa61c38b2d0c432b7f2dbee8c127b0e28a7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/21/2021
-ms.locfileid: "107838805"
+ms.lasthandoff: 08/19/2021
+ms.locfileid: "122465838"
 ---
 # <a name="jetdefragment2-function"></a>Funzione JetDefragment2
 
@@ -34,17 +34,17 @@ _**Si applica a:** Windows | Windows Server_
 
 ## <a name="jetdefragment2-function"></a>Funzione JetDefragment2
 
-La **funzione JetDefragment2** avvia e arresta le attività di deframmentazione del database che migliorano l'organizzazione dei dati all'interno di un database, con un parametro di callback disponibile per segnalare lo stato di avanzamento della deframmentazione. Questa operazione viene eseguita per limitare l'aumento delle dimensioni del database usando l'allocazione dei dischi esistente in modo più efficiente all'interno del database. Può anche ridurre i working set assicurando che i dati sono più imballati. Infine, può migliorare le prestazioni dell'applicazione accelerando le operazioni comuni tramite una migliore organizzazione dei dati.
+La **funzione JetDefragment2** avvia e arresta le attività di deframmentazione del database che migliorano l'organizzazione dei dati all'interno di un database, con un parametro di callback disponibile per segnalare lo stato di avanzamento della deframmentazione. Questa operazione viene eseguita per limitare l'aumento delle dimensioni del database usando l'allocazione dei dischi esistente in modo più efficiente all'interno del database. Può anche ridurre le working set assicurando che i dati sono più strettamente imballati. Infine, può migliorare le prestazioni dell'applicazione velocizzando le operazioni comuni tramite una migliore organizzazione dei dati.
 
-**Windows XP:**  **JetDefragment2** è stato introdotto in Windows XP.
+**Windows XP:****JetDefragment2** è stato introdotto in Windows XP.  
 
-**JetDefragment2** contiene anche un parametro della funzione di callback usato per segnalare lo stato del processo di deframmentazione.
+**JetDefragment2** contiene anche un parametro della funzione di callback utilizzato per segnalare lo stato del processo di deframmentazione.
 
-La deframmentazione del database è un'operazione online e non interrompe la normale attività del database, ad esempio operazioni di query o aggiornamenti dei dati. **JetDefragment2** non crea inoltre una copia di tutti i dati esistenti. Al contrario, deframmenta un database sul posto. Infine, **JetDefragment2** recupera lo spazio interno del database per il nuovo utilizzo, ma non rilascia spazio in eccesso al sistema operativo file system.
+La deframmentazione del database è un'operazione online e non interrompe la normale attività del database, ad esempio operazioni di query o aggiornamenti dei dati. **JetDefragment2** inoltre non crea una copia di tutti i dati esistenti. Al contrario, deframmenta un database sul posto. Infine, **JetDefragment2** recupera lo spazio interno del database per il nuovo utilizzo, ma non rilascia spazio in eccesso al sistema operativo file system.
 
-Il formato risultante dei dati può essere molto più efficiente, ma non è in genere ottimale. La deframmentazione è limitata al rilascio di pagine di database per il nuovo utilizzo che contengono dati già eliminati logicamente. La deframmentazione rende anche disponibili le pagine di database per il nuovo uso in alcuni casi combinando i dati di due pagine quando possono essere adattati a una singola pagina.
+Il formato risultante dei dati può essere molto più efficiente, ma in genere non è ottimale. La deframmentazione è limitata al rilascio di pagine di database per il nuovo utilizzo che contengono dati già eliminati logicamente. La deframmentazione rende inoltre disponibili le pagine di database per il nuovo utilizzo in alcuni casi combinando i dati di due pagine quando possono rientrare in una singola pagina.
 
-Questa operazione è diversa [da JetCompact,](./jetcompact-function.md) che rende una copia di un database di sola lettura in un formato altamente ottimale.
+Questa operazione è diversa [da JetCompact, che](./jetcompact-function.md) rende una copia di un database di sola lettura in un formato estremamente ottimale.
 
 ```cpp
 JET_ERR JET_API JetDefragment2(
@@ -107,116 +107,39 @@ Funzione di callback che la deframmentazione chiama regolarmente per segnalare l
 
 Gruppo di bit che specifica zero o più delle opzioni seguenti.
 
-<table>
-<colgroup>
-<col style="width: 50%" />
-<col style="width: 50%" />
-</colgroup>
-<thead>
-<tr class="header">
-<th><p>Valore</p></th>
-<th><p>Significato</p></th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td><p>JET_bitDefragmentAvailSpaceTreesOnly</p></td>
-<td><p>Questa opzione viene usata per deframmentare la parte di spazio disponibile dell'allocazione dello spazio del database ESE. Lo spazio del database è suddiviso in due tipi, lo spazio di proprietà e lo spazio disponibile. Lo spazio di proprietà viene allocato a una tabella o a un indice, mentre lo spazio disponibile è pronto per l'uso rispettivamente all'interno della tabella o dell'indice. Lo spazio disponibile è molto più dinamico nel comportamento e richiede più deframmentazione online rispetto allo spazio di proprietà, alla tabella o ai dati dell'indice.</p></td>
-</tr>
-<tr class="even">
-<td><p>JET_bitDefragmentBatchStart</p></td>
-<td><p>Questa opzione viene usata per avviare una nuova attività di deframmentazione.</p></td>
-</tr>
-<tr class="odd">
-<td><p>JET_bitDefragmentBatchStop</p></td>
-<td><p>Questa opzione viene usata per arrestare un'attività di deframmentazione avviata esistente.</p></td>
-</tr>
-<tr class="even">
-<td><p>JET_bitDefragmentBTree</p></td>
-<td><p>Questa opzione viene usata per deframmentare un albero B, specificato da szTableName.</p></td>
-</tr>
-<tr class="odd">
-<td><p>JET_bitDefragmentBTreeBatch</p></td>
-<td><p>Questa opzione viene usata per chiamare OLD2 sull'intero database.</p></td>
-</tr>
-</tbody>
-</table>
+
+| <p>valore</p> | <p>Significato</p> | 
+|--------------|----------------|
+| <p>JET_bitDefragmentAvailSpaceTreesOnly</p> | <p>Questa opzione viene utilizzata per deframmentare la parte di spazio disponibile dell'allocazione dello spazio del database ESE. Lo spazio del database è suddiviso in due tipi: spazio di proprietà e spazio disponibile. Lo spazio di proprietà viene allocato a una tabella o a un indice mentre lo spazio disponibile è pronto per l'uso rispettivamente all'interno della tabella o dell'indice. Lo spazio disponibile è molto più dinamico nel comportamento e richiede la deframmentazione online più dello spazio di proprietà, della tabella o dei dati dell'indice.</p> | 
+| <p>JET_bitDefragmentBatchStart</p> | <p>Questa opzione viene utilizzata per avviare una nuova attività di deframmentazione.</p> | 
+| <p>JET_bitDefragmentBatchStop</p> | <p>Questa opzione viene utilizzata per arrestare un'attività di deframmentazione avviata esistente.</p> | 
+| <p>JET_bitDefragmentBTree</p> | <p>Questa opzione viene usata per deframmentare un albero B, specificato da szTableName.</p> | 
+| <p>JET_bitDefragmentBTreeBatch</p> | <p>Questa opzione viene usata per chiamare OLD2 sull'intero database.</p> | 
+
 
 
 ### <a name="return-value"></a>Valore restituito
 
-Questa funzione restituisce il [JET_ERR](./jet-err.md) dati con uno dei codici restituiti seguenti. Per altre informazioni sui possibili errori ESE, vedere Errori del motore di archiviazione [estendibile](./extensible-storage-engine-errors.md) e Parametri [di gestione degli errori](./error-handling-parameters.md).
+Questa funzione restituisce il [JET_ERR](./jet-err.md) dati con uno dei codici restituiti seguenti. Per altre informazioni sui possibili errori ESE, vedere [Extensible Archiviazione Engine Errors](./extensible-storage-engine-errors.md) and [Error Handling Parameters](./error-handling-parameters.md).
 
-<table>
-<colgroup>
-<col style="width: 50%" />
-<col style="width: 50%" />
-</colgroup>
-<thead>
-<tr class="header">
-<th><p>Codice restituito</p></th>
-<th><p>Descrizione</p></th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td><p>JET_errSuccess</p></td>
-<td><p>Operazione riuscita.</p></td>
-</tr>
-<tr class="even">
-<td><p>JET_errClientRequestToStopJetService</p></td>
-<td><p>Non è possibile completare l'operazione perché tutte le attività nell'istanza associata alla sessione sono cessare in seguito a una chiamata a <a href="gg269240(v=exchg.10).md">JetStopService.</a></p></td>
-</tr>
-<tr class="odd">
-<td><p>JET_errDatabaseFileReadOnly</p></td>
-<td><p>Il database scelto per la deframmentazione è di sola lettura e non può essere aggiornato in alcun modo, inclusa la deframmentazione.</p></td>
-</tr>
-<tr class="even">
-<td><p>JET_errDistributedTransactionAlreadyPreparedToCommit</p></td>
-<td><p>La sessione specificata è nello stato pronto per il commit e non può iniziare nuovi aggiornamenti fino a quando non viene eseguito il commit o il rollback della transazione corrente.</p></td>
-</tr>
-<tr class="odd">
-<td><p>JET_errInstanceUnavailable</p></td>
-<td><p>Non è possibile completare l'operazione perché l'istanza associata alla sessione ha rilevato un errore irreversibile che richiede la revoca dell'accesso a tutti i dati per proteggere l'integrità di questi dati. Questo errore verrà restituito solo da Windows XP e versioni successive.</p></td>
-</tr>
-<tr class="even">
-<td><p>JET_errInvalidDatabaseId</p></td>
-<td><p>L'ID di database specificato non corrisponde a un database noto nell'istanza.</p></td>
-</tr>
-<tr class="odd">
-<td><p>JET_errNotInitialized</p></td>
-<td><p>Non è possibile completare l'operazione perché l'istanza associata alla sessione non è ancora stata inizializzata.</p></td>
-</tr>
-<tr class="even">
-<td><p>JET_errRestoreInProgress</p></td>
-<td><p>Non è possibile completare l'operazione perché è in corso un'operazione di ripristino nell'istanza associata alla sessione.</p></td>
-</tr>
-<tr class="odd">
-<td><p>JET_errSessionSharingViolation</p></td>
-<td><p>La stessa sessione non può essere usata per più thread contemporaneamente. Questo errore verrà restituito solo da Windows XP e versioni successive.</p></td>
-</tr>
-<tr class="even">
-<td><p>JET_errTermInProgress</p></td>
-<td><p>Non è possibile completare l'operazione perché è in corso l'arresto dell'istanza associata alla sessione.</p></td>
-</tr>
-<tr class="odd">
-<td><p>JET_errTransReadOnly</p></td>
-<td><p>La sessione specificata ha solo privilegi di sola lettura e non può avviare un'attività che può eseguire un aggiornamento, inclusa la deframmentazione.</p></td>
-</tr>
-<tr class="even">
-<td><p>JET_errVersionStoreOutOfMemory</p></td>
-<td><p>Questo errore si verifica quando le dimensioni configurate dell'archivio versioni non sono sufficienti per contenere tutti gli aggiornamenti in sospeso.</p></td>
-</tr>
-<tr class="odd">
-<td><p>JET_wrnDefragAlreadyRunning</p></td>
-<td><p>L JET_bitDefragmentBatchStart è stata passata, ma un'attività di deframmentazione sta già eseguendo la deframmentazione nel database specificato.</p></td>
-</tr>
-<tr class="even">
-<td><p>JET_wrnDefragNotRunning</p></td>
-<td><p>L JET_bitDefragmentBatchStop è stata passata, ma non è attualmente in esecuzione alcuna attività di deframmentazione.</p></td>
-</tr>
-</tbody>
-</table>
+
+| <p>Codice restituito</p> | <p>Descrizione</p> | 
+|--------------------|--------------------|
+| <p>JET_errSuccess</p> | <p>Operazione riuscita.</p> | 
+| <p>JET_errClientRequestToStopJetService</p> | <p>Non è possibile completare l'operazione perché tutte le attività nell'istanza associata alla sessione sono cessare in seguito a una chiamata a <a href="gg269240(v=exchg.10).md">JetStopService.</a></p> | 
+| <p>JET_errDatabaseFileReadOnly</p> | <p>Il database scelto per la deframmentazione è di sola lettura e non può essere aggiornato in alcun modo, inclusa la deframmentazione.</p> | 
+| <p>JET_errDistributedTransactionAlreadyPreparedToCommit</p> | <p>La sessione specificata è nello stato pronto per il commit e non può iniziare nuovi aggiornamenti fino a quando non viene eseguito il commit o il rollback della transazione corrente.</p> | 
+| <p>JET_errInstanceUnavailable</p> | <p>Non è possibile completare l'operazione perché l'istanza associata alla sessione ha rilevato un errore irreversibile che richiede la revoca dell'accesso a tutti i dati per proteggere l'integrità di questi dati. Questo errore verrà restituito solo da Windows XP e versioni successive.</p> | 
+| <p>JET_errInvalidDatabaseId</p> | <p>L'ID di database specificato non corrisponde a un database noto nell'istanza.</p> | 
+| <p>JET_errNotInitialized</p> | <p>Non è possibile completare l'operazione perché l'istanza associata alla sessione non è ancora stata inizializzata.</p> | 
+| <p>JET_errRestoreInProgress</p> | <p>Non è possibile completare l'operazione perché è in corso un'operazione di ripristino nell'istanza associata alla sessione.</p> | 
+| <p>JET_errSessionSharingViolation</p> | <p>La stessa sessione non può essere usata per più thread contemporaneamente. Questo errore verrà restituito solo da Windows XP e versioni successive.</p> | 
+| <p>JET_errTermInProgress</p> | <p>Non è possibile completare l'operazione perché è in corso l'arresto dell'istanza associata alla sessione.</p> | 
+| <p>JET_errTransReadOnly</p> | <p>La sessione specificata ha solo privilegi di sola lettura e non può avviare un'attività che può eseguire un aggiornamento, inclusa la deframmentazione.</p> | 
+| <p>JET_errVersionStoreOutOfMemory</p> | <p>Questo errore si verifica quando le dimensioni configurate dell'archivio versioni non sono sufficienti per contenere tutti gli aggiornamenti in sospeso.</p> | 
+| <p>JET_wrnDefragAlreadyRunning</p> | <p>L JET_bitDefragmentBatchStart è stata passata, ma un'attività di deframmentazione sta già eseguendo la deframmentazione nel database specificato.</p> | 
+| <p>JET_wrnDefragNotRunning</p> | <p>L'JET_bitDefragmentBatchStop è stata passata, ma non è attualmente in esecuzione alcuna attività di deframmentazione.</p> | 
+
 
 
 In caso di esito positivo, viene eseguita l'azione richiesta di avvio di un'attività di deframmentazione per dati con opzioni specificate oppure viene eseguita l'azione di arresto di un'attività di deframmentazione esistente.
@@ -225,7 +148,7 @@ In caso di errore, l'azione richiesta di avvio o arresto di un processo di defra
 
 #### <a name="remarks"></a>Commenti
 
-La deframmentazione online è controllata sia da un'impostazione di parametro che da questa API. Il valore predefinito del parametro di sistema JET_OnlineDefragAll, ovvero la deframmentazione è abilitata per tutte le strutture di dati supportate. Tuttavia, usando [JetSetSystemParameter,](./jetsetsystemparameter-function.md)è possibile disabilitare la deframmentazione online o abilitarla in modo selettivo solo per gli alberi dello spazio del database, solo per i database, solo per i file di streaming o per qualsiasi combinazione di queste opzioni. Se l'impostazione di sistema per la deframmentazione in linea è su un'impostazione obsoleta, **JetDefragment2** considera l'impostazione JET_OnlineDefragAll.
+La deframmentazione online è controllata sia da un'impostazione di parametro che da questa API. Il valore predefinito del parametro di sistema JET_OnlineDefragAll, ovvero la deframmentazione è abilitata per tutte le strutture di dati supportate. Tuttavia, usando [JetSetSystemParameter,](./jetsetsystemparameter-function.md)è possibile disabilitare la deframmentazione online o abilitarla in modo selettivo solo per gli alberi dello spazio del database, solo per i database, solo per i file di streaming o per qualsiasi combinazione di queste opzioni. Se l'impostazione di sistema per la deframmentazione in linea è su un'impostazione obsoleta, **JetDefragment2** considera l'impostazione come JET_OnlineDefragAll.
 
 Può essere presente al massimo un'attività in esecuzione per ogni database. L'attività viene eseguita come thread nel processo che ospita ESE.
 
@@ -233,38 +156,9 @@ La sessione usata per avviare l'attività di deframmentazione online può essere
 
 #### <a name="requirements"></a>Requisiti
 
-<table>
-<colgroup>
-<col style="width: 50%" />
-<col style="width: 50%" />
-</colgroup>
-<tbody>
-<tr class="odd">
-<td><p><strong>Client</strong></p></td>
-<td><p>Richiede Windows Vista o Windows XP.</p></td>
-</tr>
-<tr class="even">
-<td><p><strong>Server</strong></p></td>
-<td><p>Richiede Windows Server 2008 o Windows Server 2003.</p></td>
-</tr>
-<tr class="odd">
-<td><p><strong>Intestazione</strong></p></td>
-<td><p>Dichiarato in Esent.h.</p></td>
-</tr>
-<tr class="even">
-<td><p><strong>Libreria</strong></p></td>
-<td><p>Usare ESENT.lib.</p></td>
-</tr>
-<tr class="odd">
-<td><p><strong>DLL</strong></p></td>
-<td><p>Richiede ESENT.dll.</p></td>
-</tr>
-<tr class="even">
-<td><p><strong>Unicode</strong></p></td>
-<td><p>Implementato come <strong>JetDefragment2W</strong> (Unicode) e <strong>JetDefragment2A</strong> (ANSI).</p></td>
-</tr>
-</tbody>
-</table>
+
+| | | <p><strong>Client</strong></p> | <p>Richiede Windows Vista o Windows XP.</p> | | <p><strong>Server</strong></p> | <p>Richiede Windows Server 2008 o Windows Server 2003.</p> | | <p><strong>Intestazione</strong></p> | <p>Dichiarato in Esent.h.</p> | | <p><strong>Libreria</strong></p> | <p>Usare ESENT.lib.</p> | | <p><strong>DLL</strong></p> | <p>Richiede ESENT.dll.</p> | | <p><strong>Unicode</strong></p> | <p>Implementato come <strong>JetDefragment2W</strong> (Unicode) e <strong>JetDefragment2A</strong> (ANSI).</p> | 
+
 
 
 #### <a name="see-also"></a>Vedere anche

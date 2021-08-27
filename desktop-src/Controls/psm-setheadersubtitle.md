@@ -1,9 +1,9 @@
 ---
-title: Messaggio PSM_SETHEADERSUBTITLE (Prsht. h)
-description: Imposta il testo del sottotitolo per l'intestazione della pagina interna di una procedura guidata. È possibile inviare questo messaggio in modo esplicito o usare la \_ macro SetHeaderSubTitle di PropSheet.
+title: PSM_SETHEADERSUBTITLE messaggio (Prsht.h)
+description: Imposta il testo del sottotitolo per l'intestazione della pagina interna di una procedura guidata. È possibile inviare questo messaggio in modo esplicito o usare la \_ macro PropSheet SetHeaderSubTitle.
 ms.assetid: 6ef3017b-8a20-4d62-a604-135410d8bdf7
 keywords:
-- Controlli di Windows Message PSM_SETHEADERSUBTITLE
+- PSM_SETHEADERSUBTITLE controlli Windows messaggio
 topic_type:
 - apiref
 api_name:
@@ -16,16 +16,16 @@ api_type:
 - HeaderDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 2d73376b5ed35f20b43c743b31a4a78d3a4fa809
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: 20e030b75a933ba7f647f8b3dffa5e45637999d45f3299f8280fd1db3afb9857
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "103964159"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120088501"
 ---
-# <a name="psm_setheadersubtitle-message"></a>\_Messaggio SETHEADERSUBTITLE di PSM
+# <a name="psm_setheadersubtitle-message"></a>PSM \_ SETHEADERSUBTITLE message
 
-Imposta il testo del sottotitolo per l'intestazione della pagina interna di una procedura guidata. È possibile inviare questo messaggio in modo esplicito o usare la macro [**\_ SetHeaderSubTitle di PropSheet**](/windows/desktop/api/Prsht/nf-prsht-propsheet_setheadersubtitle) .
+Imposta il testo del sottotitolo per l'intestazione della pagina interna di una procedura guidata. È possibile inviare questo messaggio in modo esplicito o usare la macro [**\_ PropSheet SetHeaderSubTitle.**](/windows/desktop/api/Prsht/nf-prsht-propsheet_setheadersubtitle)
 
 ## <a name="parameters"></a>Parametri
 
@@ -41,7 +41,7 @@ Indice in base zero della pagina della procedura guidata.
 *lParam* 
 </dt> <dd>
 
-Nuovo sottotitolo dell'intestazione.
+Sottotitolo nuova intestazione.
 
 </dd> </dl>
 
@@ -54,7 +54,7 @@ Nessun valore restituito.
 Se si specifica la pagina corrente, verrà ridisegnata immediatamente per visualizzare il nuovo sottotitolo.
 
 > [!Note]  
-> Questo messaggio non è supportato quando si usa lo stile della procedura guidata Aero ([**PSH \_ AEROWIZARD**](/windows/desktop/api/Prsht/ns-prsht-propsheetheadera_v2)).
+> Questo messaggio non è supportato quando si usa lo stile della procedura guidata Aero ([**PSH \_ ACROBATWIZARD**](/windows/desktop/api/Prsht/ns-prsht-propsheetheadera_v2)).
 
  
 
@@ -64,9 +64,9 @@ Se si specifica la pagina corrente, verrà ridisegnata immediatamente per visual
 
 | Requisito | Valore |
 |-------------------------------------|-----------------------------------------------------------------------------------------|
-| Client minimo supportato<br/> | \[Solo app desktop di Windows Vista\]<br/>                                          |
-| Server minimo supportato<br/> | \[Solo app desktop Windows Server 2003\]<br/>                                    |
-| Intestazione<br/>                   | <dl> <dt>Prsht. h</dt> </dl>      |
+| Client minimo supportato<br/> | Windows Solo \[ app desktop Vista\]<br/>                                          |
+| Server minimo supportato<br/> | Windows Solo app desktop di Server 2003 \[\]<br/>                                    |
+| Intestazione<br/>                   | <dl> <dt>Prsht.h</dt> </dl>      |
 | Nomi Unicode e ANSI<br/>   | **PSM \_ SETHEADERSUBTITLEW** (Unicode) e **PSM \_ SETHEADERSUBTITLEA** (ANSI)<br/> |
 
 
@@ -78,13 +78,13 @@ Se si specifica la pagina corrente, verrà ridisegnata immediatamente per visual
 **Riferimento**
 </dt> <dt>
 
-[**HWNDTOINDEX di PSM \_**](psm-hwndtoindex.md)
+[**PSM \_ HWNDTOINDEX**](psm-hwndtoindex.md)
 </dt> <dt>
 
-[**IDTOINDEX di PSM \_**](psm-idtoindex.md)
+[**PSM \_ IDTOINDEX**](psm-idtoindex.md)
 </dt> <dt>
 
-[**PAGETOINDEX di PSM \_**](psm-pagetoindex.md)
+[**PSM \_ PAGETOINDEX**](psm-pagetoindex.md)
 </dt> </dl>
 
  

@@ -1,17 +1,17 @@
 ---
 description: Specifica la modalità downmix stereo preferita per un flusso audio Dolby Digital. Questa proprietà si applica ai codificatori audio Dolby Digital.
 ms.assetid: 3cf9fba7-6895-4dfb-9aef-571c512b7955
-title: Proprietà AVEncDDPreferredStereoDownMixMode (codecapis. h)
+title: Proprietà AVEncDDPreferredStereoDownMixMode (Codecapi.h)
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: aea695491175c8cb7d769673fcb09dd6ad2ae9f6
-ms.sourcegitcommit: a47bd86f517de76374e4fff33cfeb613eb259a7e
+ms.openlocfilehash: 0f28df64ba42cec96f7b1d18a6bb32ec08bd2b93176adbaa0233364c35b4ab6b
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/06/2021
-ms.locfileid: "103876889"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120087621"
 ---
-# <a name="avencddpreferredstereodownmixmode-property"></a>Proprietà AVEncDDPreferredStereoDownMixMode
+# <a name="avencddpreferredstereodownmixmode-property"></a>AVEncDDPreferredStereoDownMixMode - proprietà
 
 Specifica la modalità downmix stereo preferita per un flusso audio Dolby Digital. Questa proprietà si applica ai codificatori audio Dolby Digital.
 
@@ -19,15 +19,15 @@ Si tratta di una proprietà di lettura/scrittura.
 
 ## <a name="data-type"></a>Tipo di dati
 
-**UInt32** (**VT \_ UI4**)
+**UINT32** (**VT \_ UI4**)
 
 ## <a name="property-guid"></a>GUID proprietà
 
-**Codecapis \_ AVEncDDPreferredStereoDownMixMode**
+**CODECAPI \_ AVEncDDPreferredStereoDownMixMode**
 
 ## <a name="property-value"></a>Valore proprietà
 
-Il valore di questa proprietà è un membro dell'enumerazione [**eAVEncDDPreferredStereoDownMixMode**](/windows/desktop/api/codecapi/ne-codecapi-eavencddpreferredstereodownmixmode) .
+Il valore di questa proprietà è un membro [**dell'enumerazione eAVEncDDPreferredStereoDownMixMode.**](/windows/desktop/api/codecapi/ne-codecapi-eavencddpreferredstereodownmixmode)
 
 ## <a name="remarks"></a>Commenti
 
@@ -39,9 +39,9 @@ Si tratta di una proprietà di lettura/scrittura.
 
 | Requisito | Valore |
 |-------------------------------------|---------------------------------------------------------------------------------------|
-| Client minimo supportato<br/> | App UWP di Windows 2000 Professional \[ desktop apps \|\]<br/>                     |
-| Server minimo supportato<br/> | App desktop di Windows 2000 Server \[ \| UWP\]<br/>                           |
-| Intestazione<br/>                   | <dl> <dt>Codecapis. h</dt> </dl> |
+| Client minimo supportato<br/> | Windows 2000 Professional app \[ desktop \| app UWP\]<br/>                     |
+| Server minimo supportato<br/> | Windows 2000 App desktop UWP per le app \[ desktop di 2000 \| Server\]<br/>                           |
+| Intestazione<br/>                   | <dl> <dt>Codecapi.h</dt> </dl> |
 
 
 
@@ -49,7 +49,7 @@ Si tratta di una proprietà di lettura/scrittura.
 
 <dl> <dt>
 
-[Proprietà dell'API codec](codec-api-properties.md)
+[Proprietà API codec](codec-api-properties.md)
 </dt> <dt>
 
 [**Interfaccia ICodecAPI**](/windows/desktop/api/Strmif/nn-strmif-icodecapi)

@@ -1,23 +1,23 @@
 ---
-description: In questo argomento viene fornito un esempio di utilizzo delle interfacce correlate alla geometria in un OM XPS.
+description: In questo argomento viene fornito un esempio dell'uso delle interfacce correlate alla geometria in un OM XPS.
 ms.assetid: 2663c6fc-301e-4765-b37c-b5e29a714ce8
-title: Oggetti Geometry OM di XPS
+title: Oggetti geometry OM XPS
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: cca767de311d2f2d49b0b194c372c0e69eaa637c
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: db68127535b37e216d28423a034083e979f58c714cbbbee875bc3f1621974bfe
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "106310147"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120112091"
 ---
-# <a name="xps-om-geometry-objects"></a>Oggetti Geometry OM di XPS
+# <a name="xps-om-geometry-objects"></a>Oggetti geometry OM XPS
 
-In questo argomento viene fornito un esempio di utilizzo delle interfacce correlate alla geometria in un OM XPS.
+In questo argomento viene fornito un esempio dell'uso delle interfacce correlate alla geometria in un OM XPS.
 
 ## <a name="create-a-rectangular-geometry"></a>Creare una geometria rettangolare
 
-Nell'esempio di codice seguente viene creato un oggetto Geometry che descrive una forma rettangolare chiusa.
+Nell'esempio di codice seguente viene creato un oggetto geometry che descrive una forma rettangolare chiusa.
 
 
 ```C++
@@ -92,7 +92,7 @@ Nell'esempio di codice seguente viene creato un oggetto Geometry che descrive un
 
 
 
-Per ulteriori informazioni sull'aggiunta di segmenti a una figura Geometry, vedere gli esempi di codice negli argomenti di riferimento del metodo [**IXpsOMGeometryFigure:: GetSegmentData**](/windows/desktop/api/xpsobjectmodel/nf-xpsobjectmodel-ixpsomgeometryfigure-getsegmentdata) e [**IXpsOMGeometryFigure:: sesegments**](/windows/desktop/api/xpsobjectmodel/nf-xpsobjectmodel-ixpsomgeometryfigure-setsegments) .
+Per altre informazioni sull'aggiunta di segmenti a una figura geometrica, vedere gli esempi di codice negli argomenti di riferimento [**metodo IXpsOMGeometryFigure::GetSegmentData**](/windows/desktop/api/xpsobjectmodel/nf-xpsobjectmodel-ixpsomgeometryfigure-getsegmentdata) e [**Metodo IXpsOMGeometryFigure::SetSegments.**](/windows/desktop/api/xpsobjectmodel/nf-xpsobjectmodel-ixpsomgeometryfigure-setsegments)
 
 ## <a name="related-topics"></a>Argomenti correlati
 
@@ -104,10 +104,10 @@ Per ulteriori informazioni sull'aggiunta di segmenti a una figura Geometry, vede
 [**Interfaccia IXpsOMGeometryFigure**](/windows/desktop/api/xpsobjectmodel/nn-xpsobjectmodel-ixpsomgeometryfigure)
 </dt> <dt>
 
-[**Metodo IXpsOMGeometryFigure:: GetSegmentData**](/windows/desktop/api/xpsobjectmodel/nf-xpsobjectmodel-ixpsomgeometryfigure-getsegmentdata)
+[**Metodo IXpsOMGeometryFigure::GetSegmentData**](/windows/desktop/api/xpsobjectmodel/nf-xpsobjectmodel-ixpsomgeometryfigure-getsegmentdata)
 </dt> <dt>
 
-[**Metodo IXpsOMGeometryFigure:: sesegments**](/windows/desktop/api/xpsobjectmodel/nf-xpsobjectmodel-ixpsomgeometryfigure-setsegments)
+[**Metodo IXpsOMGeometryFigure::SetSegments**](/windows/desktop/api/xpsobjectmodel/nf-xpsobjectmodel-ixpsomgeometryfigure-setsegments)
 </dt> <dt>
 
 [**Interfaccia IXpsOMGeometryFigureCollection**](/windows/desktop/api/xpsobjectmodel/nn-xpsobjectmodel-ixpsomgeometryfigurecollection)

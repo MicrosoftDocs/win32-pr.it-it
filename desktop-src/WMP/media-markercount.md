@@ -1,9 +1,9 @@
 ---
-title: Media. markerCount
-description: La proprietà markerCount Recupera il numero di marcatori nell'elemento multimediale.
+title: Media.markerCount
+description: La proprietà markerCount recupera il numero di marcatori nell'elemento multimediale.
 ms.assetid: 48313395-b225-4008-b0e8-82fa22d6aaef
 keywords:
-- Media Player Windows Media. markerCount
+- Media.markerCount Windows Media Player
 topic_type:
 - apiref
 api_name:
@@ -14,36 +14,36 @@ api_type:
 - DllExport
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: c97a874211c0c00ebf9f242887d4314ec490b552
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: 00206991f81c6a445648a063a37bcc45bf91f647b60317772478142eefd1b20e
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "106329307"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120123351"
 ---
-# <a name="mediamarkercount"></a>Media. markerCount
+# <a name="mediamarkercount"></a>Media.markerCount
 
-La proprietà **markerCount** Recupera il numero di marcatori nell'elemento multimediale.
+La **proprietà markerCount** recupera il numero di marcatori nell'elemento multimediale.
 
 ## <a name="syntax"></a>Sintassi
 
-*Player*. *currentMedia*. **markerCount**
+*lettore*. *currentMedia.* **markerCount**
 
 ## <a name="possible-values"></a>Valori possibili
 
-Questa proprietà è un **numero** di sola lettura (**Long**) che specifica il numero di marcatori nel file.
+Questa proprietà è un numero di sola **lettura** (**long**) che specifica il numero di marcatori nel file.
 
 ## <a name="remarks"></a>Commenti
 
-Questa proprietà restituisce zero se un file non ha marcatori o se l'elemento multimediale non è uguale a *Player*. **currentMedia**.
+Questa proprietà restituisce zero se un file non contiene marcatori o se l'elemento multimediale non corrisponde a *Player.* **currentMedia.**
 
-I numeri degli indicatori iniziano da 1.
+I numeri dei marcatori iniziano da 1.
 
-Per recuperare il valore di questa proprietà, è necessario l'accesso in lettura alla libreria. Per altre informazioni, vedere [accesso alla libreria](library-access.md).
+Per recuperare il valore di questa proprietà, è necessario l'accesso in lettura alla libreria. Per altre informazioni, vedere [Accesso alla libreria.](library-access.md)
 
 ## <a name="examples"></a>Esempio
 
-Nell'esempio JScript seguente viene usato il *supporto*. **markerCount** per recuperare il numero di marcatori nell'elemento multimediale corrente. Tale valore viene quindi utilizzato come limite superiore per una struttura di ciclo, che scorre l'elenco dei marcatori per recuperare ogni nome del marcatore. Un elemento TEXTAREA HTML denominato MNAMES Visualizza i nomi dei marcatori nell'elemento multimediale corrente. L'oggetto **Player** è stato creato con ID = "Player".
+Nell'esempio JScript seguente viene utilizzato *Media*. **markerCount** per recuperare il numero di marcatori nell'elemento multimediale corrente. Tale valore viene quindi usato come limite superiore per una struttura di ciclo, che scorre l'elenco dei marcatori per recuperare il nome di ogni marcatore. Un elemento HTML TEXTAREA denominato MNAMES visualizza i nomi dei marcatori nell'elemento multimediale corrente. **L'oggetto Player** è stato creato con ID = "Player".
 
 
 ```JScript
@@ -71,7 +71,7 @@ for (var i = 1; i < mcount + 1; i++){
 
 | Requisito | Valore |
 |--------------------|------------------------------------------------------------------------------------|
-| Versione<br/> | Windows Media Player versione 7,0 o successiva.<br/>                              |
+| Versione<br/> | Windows Media Player versione 7.0 o successiva.<br/>                              |
 | DLL<br/>     | <dl> <dt>Wmp.dll</dt> </dl> |
 
 
@@ -83,13 +83,13 @@ for (var i = 1; i < mcount + 1; i++){
 [**Oggetto multimediale**](media-object.md)
 </dt> <dt>
 
-[**Player. currentMedia**](player-currentmedia.md)
+[**Player.currentMedia**](player-currentmedia.md)
 </dt> <dt>
 
-[**Settings. mediaAccessRights**](settings-mediaaccessrights.md)
+[**Impostazioni.mediaAccessRights**](settings-mediaaccessrights.md)
 </dt> <dt>
 
-[**Settings. requestMediaAccessRights**](settings-requestmediaaccessrights.md)
+[**Impostazioni.requestMediaAccessRights**](settings-requestmediaaccessrights.md)
 </dt> </dl>
 
  

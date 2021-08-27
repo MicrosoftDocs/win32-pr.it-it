@@ -1,7 +1,7 @@
 ---
-description: Sblocca un buffer del vertice.
+description: Sblocca un vertex buffer.
 ms.assetid: 31f9529c-f5ec-41f8-bd3a-a4484f95caf7
-title: 'Metodo ID3DXBaseMesh:: UnlockVertexBuffer (D3DX9Mesh. h)'
+title: Metodo ID3DXBaseMesh::UnlockVertexBuffer (D3DX9Mesh.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -14,16 +14,16 @@ api_type:
 api_location:
 - d3dx9.lib
 - d3dx9.dll
-ms.openlocfilehash: 26e0b4d9781598495f358d21c0b06fbb7a34f466
-ms.sourcegitcommit: 14010c34b35fa268046c7683f021f86de08ddd0a
+ms.openlocfilehash: 447be3f91917d7aa7e1b606186aea32bc77f8f00f178495c35d2ae933ae936d3
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/15/2021
-ms.locfileid: "103886289"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120118799"
 ---
-# <a name="id3dxbasemeshunlockvertexbuffer-method"></a>Metodo ID3DXBaseMesh:: UnlockVertexBuffer
+# <a name="id3dxbasemeshunlockvertexbuffer-method"></a>Metodo ID3DXBaseMesh::UnlockVertexBuffer
 
-Sblocca un buffer del vertice.
+Sblocca un vertex buffer.
 
 ## <a name="syntax"></a>Sintassi
 
@@ -50,8 +50,8 @@ Se il metodo ha esito positivo, il valore restituito è D3D \_ OK. Se il metodo 
 
 | Requisito | Valore |
 |--------------------|----------------------------------------------------------------------------------------|
-| Intestazione<br/>  | <dl> <dt>D3DX9Mesh. h</dt> </dl> |
-| Libreria<br/> | <dl> <dt>D3dx9. lib</dt> </dl>   |
+| Intestazione<br/>  | <dl> <dt>D3DX9Mesh.h</dt> </dl> |
+| Libreria<br/> | <dl> <dt>D3dx9.lib</dt> </dl>   |
 
 
 

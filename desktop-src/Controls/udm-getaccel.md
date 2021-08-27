@@ -1,9 +1,9 @@
 ---
-title: Messaggio UDM_GETACCEL (COMmctrl. h)
-description: Recupera le informazioni di accelerazione per un controllo di scorrimento.
+title: UDM_GETACCEL messaggio (Commctrl.h)
+description: Recupera informazioni sull'accelerazione per un controllo di scorrimento.
 ms.assetid: 794538d6-ca01-4f05-82d1-ce7bc0f76f64
 keywords:
-- Controlli di Windows Message UDM_GETACCEL
+- UDM_GETACCEL di controllo Windows messaggio
 topic_type:
 - apiref
 api_name:
@@ -14,16 +14,16 @@ api_type:
 - HeaderDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: b86a9740e59631b737453763a10ccb9820056d95
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: 3603f364a6caa4f4726460e4b5b71e0d79564fbe9178414576fbed2ce5f5777d
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "104475736"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120132191"
 ---
-# <a name="udm_getaccel-message"></a>\_Messaggio UDM GETACCEL
+# <a name="udm_getaccel-message"></a>Messaggio GETACCEL di UDM \_
 
-Recupera le informazioni di accelerazione per un controllo di scorrimento.
+Recupera informazioni sull'accelerazione per un controllo di scorrimento.
 
 ## <a name="parameters"></a>Parametri
 
@@ -39,13 +39,13 @@ Numero di elementi nella matrice specificata da *lParam*.
 *lParam* 
 </dt> <dd>
 
-Puntatore a una matrice di strutture [**UDACCEL**](/windows/desktop/api/Commctrl/ns-commctrl-udaccel) che ricevono informazioni di accelerazione.
+Puntatore a una matrice di [**strutture UDACCEL**](/windows/desktop/api/Commctrl/ns-commctrl-udaccel) che ricevono informazioni sull'accelerazione.
 
 </dd> </dl>
 
 ## <a name="return-value"></a>Valore restituito
 
-Il valore restituito è il numero di acceleratori attualmente impostati per il controllo.
+Il valore restituito è il numero di tasti di scelta rapida attualmente impostati per il controllo.
 
 ## <a name="requirements"></a>Requisiti
 
@@ -53,9 +53,9 @@ Il valore restituito è il numero di acceleratori attualmente impostati per il c
 
 | Requisito | Valore |
 |-------------------------------------|---------------------------------------------------------------------------------------|
-| Client minimo supportato<br/> | \[Solo app desktop di Windows Vista\]<br/>                                        |
-| Server minimo supportato<br/> | \[Solo app desktop Windows Server 2003\]<br/>                                  |
-| Intestazione<br/>                   | <dl> <dt>Commctrl. h</dt> </dl> |
+| Client minimo supportato<br/> | Windows Solo \[ app desktop Vista\]<br/>                                        |
+| Server minimo supportato<br/> | Windows Solo app desktop di Server 2003 \[\]<br/>                                  |
+| Intestazione<br/>                   | <dl> <dt>Commctrl.h</dt> </dl> |
 
 
 
@@ -63,7 +63,7 @@ Il valore restituito è il numero di acceleratori attualmente impostati per il c
 
 <dl> <dt>
 
-[**\_SETACCEL UDM**](udm-setaccel.md)
+[**UDM \_ SETACCEL**](udm-setaccel.md)
 </dt> </dl>
 
  

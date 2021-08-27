@@ -16,12 +16,12 @@ api_location:
 - Strmbase.dll
 - Strmbasd.lib
 - Strmbasd.dll
-ms.openlocfilehash: 6c58e8edd908c101c3045e221cc86420cbb5cb94
-ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
+ms.openlocfilehash: 92349ab37fb677b561f342e99882c27208287310b544880e397f4f5df6cb0c38
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/28/2021
-ms.locfileid: "108098749"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120083921"
 ---
 # <a name="csourceseekingisformatsupported-method"></a>Metodo CSourceSeeking.IsFormatSupported
 
@@ -45,7 +45,7 @@ HRESULT IsFormatSupported(
 *pFormat* 
 </dt> <dd>
 
-Puntatore a un GUID di formato ora. Vedere [**GUID di formato dell'ora.**](time-format-guids.md)
+Puntatore a un GUID di formato ora. Vedere [**GUID di formato ora**](time-format-guids.md).
 
 </dd> </dl>
 
@@ -59,7 +59,7 @@ Restituisce uno dei **valori HRESULT** elencati nella tabella seguente.
 |-------------------------------------------------------------------------------------------|-----------------------------------------|
 | <dl> <dt>**S \_ FALSE**</dt> </dl>   | Il formato non è supportato.<br/> |
 | <dl> <dt>**S \_ OK**</dt> </dl>      | Il formato è supportato.<br/>     |
-| <dl> <dt>**PUNTATORE \_ E**</dt> </dl> | Argomento del puntatore **NULL.**<br/>   |
+| <dl> <dt>**PUNTATORE E \_**</dt> </dl> | Argomento del puntatore **NULL.**<br/>   |
 
 
 
@@ -67,7 +67,7 @@ Restituisce uno dei **valori HRESULT** elencati nella tabella seguente.
 
 ## <a name="remarks"></a>Commenti
 
-L'unico formato di ora supportato dalla classe di base è TIME \_ FORMAT \_ MEDIA TIME \_ (unità di 100 nanosecondi).
+L'unico formato di ora supportato dalla classe di base è TIME \_ FORMAT \_ MEDIA TIME \_ (unità da 100 nanosecondi).
 
 ## <a name="requirements"></a>Requisiti
 
@@ -75,7 +75,7 @@ L'unico formato di ora supportato dalla classe di base è TIME \_ FORMAT \_ MEDI
 
 | Requisito | Valore |
 |--------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Intestazione<br/>  | <dl> <dt>Ctlutil.h (include Streams.h)</dt> </dl>                                                                                   |
+| Intestazione<br/>  | <dl> <dt>Ctlutil.h (include Flussi.h)</dt> </dl>                                                                                   |
 | Libreria<br/> | <dl> <dt>Strmbase.lib (build di vendita al dettaglio); </dt> <dt>Strmbasd.lib (build di debug)</dt> </dl> |
 
 

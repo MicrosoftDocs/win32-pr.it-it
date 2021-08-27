@@ -1,7 +1,7 @@
 ---
-description: Connette due rappresentazioni di superficie in modalità kernel.
+description: Collega due rappresentazioni di superficie in modalità kernel.
 ms.assetid: f1b1859f-8b62-4385-9e8a-296086446fe7
-title: Funzione NtGdiDdAttachSurface (Ntgdi. h)
+title: Funzione NtGdiDdAttachSurface (Ntgdi.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -16,18 +16,18 @@ api_location:
 - Ext-MS-Win-GDI-Internal-Desktop-L1-1-0.dll
 - GDI32.dll
 - GDI32Full.dll
-ms.openlocfilehash: a3d099e7b3a3106e0e1e4285b37d2ea205baf3d5
-ms.sourcegitcommit: c7add10d695482e1ceb72d62b8a4ebd84ea050f7
+ms.openlocfilehash: 8ec07f539cfa2a99338d8366f10f7c3d79dbdd5ef26a6de0ee0296941e2c84ff
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "106304568"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120088031"
 ---
-# <a name="ntgdiddattachsurface-function"></a>NtGdiDdAttachSurface (funzione)
+# <a name="ntgdiddattachsurface-function"></a>Funzione NtGdiDdAttachSurface
 
-\[Questa funzione è soggetta a modifiche a ogni revisione del sistema operativo. Usare invece Microsoft DirectDraw e Microsoft Direct3DAPIs; Queste API isolano le applicazioni da tali modifiche del sistema operativo e nascondono molte altre difficoltà legate all'interazione diretta con i driver di visualizzazione.\]
+\[Questa funzione è soggetta a modifiche con ogni revisione del sistema operativo. Usare invece Microsoft DirectDraw e Microsoft Direct3DAPIs. queste API isolano le applicazioni da tali modifiche del sistema operativo e nascondono molte altre difficoltà nell'interazione diretta con i driver di visualizzazione.\]
 
-Connette due rappresentazioni di superficie in modalità kernel.
+Collega due rappresentazioni di superficie in modalità kernel.
 
 ## <a name="syntax"></a>Sintassi
 
@@ -45,30 +45,30 @@ BOOL APIENTRY NtGdiDdAttachSurface(
 
 <dl> <dt>
 
-*hSurfaceFrom* \[ in\]
+*hSurfaceFrom* \[ Pollici\]
 </dt> <dd>
 
-Handle per l'oggetto Surface in modalità kernel che sarà il punto iniziale del nuovo allegato.
+Handle all'oggetto surface in modalità kernel che sarà il punto iniziale del nuovo allegato.
 
 </dd> <dt>
 
-*hSurfaceTo* \[ in\]
+*hSurfaceTo* \[ Pollici\]
 </dt> <dd>
 
-Handle per l'oggetto Surface in modalità kernel che corrisponderà al punto finale del nuovo allegato.
+Handle all'oggetto surface in modalità kernel che sarà il punto finale del nuovo allegato.
 
 </dd> </dl>
 
 ## <a name="return-value"></a>Valore restituito
 
-**NtGdiDdAttachSurface** restituisce uno dei seguenti elementi:
+**NtGdiDdAttachSurface** restituisce uno degli elementi seguenti:
 
 
 
 | Codice restituito                                                                          | Descrizione                             |
 |--------------------------------------------------------------------------------------|-----------------------------------------|
-| <dl> <dt>**TRUE**</dt> </dl>  | La chiamata di funzione è riuscita.<br/> |
-| <dl> <dt>**FALSE**</dt> </dl> | Chiamata di funzione non riuscita.<br/>    |
+| <dl> <dt>**Vero**</dt> </dl>  | La chiamata di funzione è riuscita.<br/> |
+| <dl> <dt>**False**</dt> </dl> | Chiamata di funzione non riuscita.<br/>    |
 
 
 
@@ -76,10 +76,10 @@ Handle per l'oggetto Surface in modalità kernel che corrisponderà al punto fin
 
 ## <a name="remarks"></a>Commenti
 
-Per una descrizione completa degli allegati della superficie, vedere il Software Development Kit di DirectDraw (SDK) e il kit di sviluppo di driver (DDK).
+Per una descrizione completa degli allegati di superficie, vedere DirectDraw Software Development Kit (SDK) e Driver Development Kit (DDK).
 
 > [!Note]  
-> Come per gli altri allegati della superficie, l'allegato risultante è unidirezionale. Dopo la chiamata a questa funzione, *hSurfaceTo* non verrà associato a *hSurfaceFrom*.
+> Come per altri allegati di superficie, l'allegato risultante è unidiredato. Dopo la chiamata a questa funzione, *hSurfaceTo* non verrà associato a *hSurfaceFrom*.
 
  
 
@@ -91,7 +91,7 @@ Per una descrizione completa degli allegati della superficie, vedere il Software
 |-------------------------------------|------------------------------------------------------------------------------------|
 | Client minimo supportato<br/> | Windows 2000 Professional \[solo app desktop\]<br/>                         |
 | Server minimo supportato<br/> | Windows 2000 Server \[solo app desktop\]<br/>                               |
-| Intestazione<br/>                   | <dl> <dt>Ntgdi. h</dt> </dl> |
+| Intestazione<br/>                   | <dl> <dt>Ntgdi.h</dt> </dl> |
 
 
 
@@ -99,7 +99,7 @@ Per una descrizione completa degli allegati della superficie, vedere il Software
 
 <dl> <dt>
 
-[Supporto client di livello inferiore grafica](-dxgkernel-low-level-client-support.md)
+[Supporto client di basso livello per grafica](-dxgkernel-low-level-client-support.md)
 </dt> </dl>
 
  

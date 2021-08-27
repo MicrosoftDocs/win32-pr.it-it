@@ -1,12 +1,12 @@
 ---
 title: Metodo GetStringProperty della classe Win32_RDSHServer
-description: Recupera un valore della proprietà di stringa di un \_ oggetto Win32 RDSHServer.
+description: Recupera il valore di una proprietà stringa di un oggetto \_ RDSHServer Win32.
 ms.assetid: 136cd213-86a6-472a-8853-8d05f992309a
 ms.tgt_platform: multiple
 keywords:
-- Servizi Desktop remoto del Metodo GetStringProperty
-- Metodo GetStringProperty Servizi Desktop remoto, classe Win32_RDSHServer
-- Classe Win32_RDSHServer Servizi Desktop remoto, Metodo GetStringProperty
+- Metodo GetStringProperty Servizi Desktop remoto
+- Metodo GetStringProperty Servizi Desktop remoto , Win32_RDSHServer classe
+- Win32_RDSHServer classe Servizi Desktop remoto metodo , GetStringProperty
 topic_type:
 - apiref
 api_name:
@@ -17,16 +17,16 @@ api_type:
 - COM
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 619a034e0a2f89270d21bf0c4fc297b4248cef59
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: ee7540a93e5172ac45fe57527eaa4a105af82e7ad8f73b4a3a25a9fe356ed688
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "104479115"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120099491"
 ---
-# <a name="getstringproperty-method-of-the-win32_rdshserver-class"></a>Metodo GetStringProperty della \_ classe RDSHServer Win32
+# <a name="getstringproperty-method-of-the-win32_rdshserver-class"></a>Metodo GetStringProperty della classe RDSHServer Win32 \_
 
-Recupera un valore della proprietà di stringa di un oggetto [**Win32 \_ RDSHServer**](win32-rdshserver.md) .
+Recupera il valore di una proprietà stringa di un [**oggetto \_ RDSHServer Win32.**](win32-rdshserver.md)
 
 ## <a name="syntax"></a>Sintassi
 
@@ -44,14 +44,14 @@ uint32 GetStringProperty(
 
 <dl> <dt>
 
-*Chiave* \[ di in\]
+*Chiave* \[ Pollici\]
 </dt> <dd>
 
 Chiave che identifica la proprietà da recuperare.
 
 </dd> <dt>
 
-*Valore* \[ di out\]
+*Valore* \[ Cambio\]
 </dt> <dd>
 
 Riceve il valore della proprietà recuperata.
@@ -70,8 +70,8 @@ Restituisce 0 in caso di esito positivo, in caso contrario restituisce un codice
 |-------------------------------------|---------------------------------------------------------------------------------------------|
 | Client minimo supportato<br/> | Nessuno supportato<br/>                                                                   |
 | Server minimo supportato<br/> | Windows Server 2012<br/>                                                              |
-| Spazio dei nomi<br/>                | Radice \\ CIMv2 \\ RDBMS<br/>                                                                |
-| MOF<br/>                      | <dl> <dt>RDManagement. mof</dt> </dl> |
+| Spazio dei nomi<br/>                | Rdms \\ CIMv2 \\ radice<br/>                                                                |
+| MOF<br/>                      | <dl> <dt>RDManagement.mof</dt> </dl> |
 | DLL<br/>                      | <dl> <dt>RDMS.dll</dt> </dl>         |
 
 
@@ -80,7 +80,7 @@ Restituisce 0 in caso di esito positivo, in caso contrario restituisce un codice
 
 <dl> <dt>
 
-[**\_RDSHServer Win32**](win32-rdshserver.md)
+[**Win32 \_ RDSHServer**](win32-rdshserver.md)
 </dt> </dl>
 
  

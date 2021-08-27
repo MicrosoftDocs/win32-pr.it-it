@@ -1,6 +1,6 @@
 ---
 title: PSM_QUERYSIBLINGS messaggio (Prsht.h)
-description: Inviato a una finestra delle proprietà, che inoltra quindi il messaggio a ognuna delle relative pagine. È possibile inviare questo messaggio in modo esplicito o tramite la \_ macro PropSheet QuerySiblings.
+description: Inviato a una finestra delle proprietà, che inoltra quindi il messaggio a ogni pagina. È possibile inviare questo messaggio in modo esplicito o tramite la \_ macro PropSheet QuerySiblings.
 ms.assetid: 96f48847-b7b8-4d6f-8bde-ada915b7c962
 keywords:
 - PSM_QUERYSIBLINGS di controllo Windows messaggio
@@ -21,9 +21,9 @@ ms.contentlocale: it-IT
 ms.lasthandoff: 08/11/2021
 ms.locfileid: "120088651"
 ---
-# <a name="psm_querysiblings-message"></a>Messaggio \_ QUERYSIBLINGS PSM
+# <a name="psm_querysiblings-message"></a>Messaggio PSM \_ QUERYSIBLINGS
 
-Inviato a una finestra delle proprietà, che inoltra quindi il messaggio a ognuna delle relative pagine. È possibile inviare questo messaggio in modo esplicito o tramite la macro [**\_ PropSheet QuerySiblings.**](/windows/desktop/api/Prsht/nf-prsht-propsheet_querysiblings)
+Inviato a una finestra delle proprietà, che inoltra quindi il messaggio a ogni pagina. È possibile inviare questo messaggio in modo esplicito o tramite la macro [**\_ PropSheet QuerySiblings.**](/windows/desktop/api/Prsht/nf-prsht-propsheet_querysiblings)
 
 ## <a name="parameters"></a>Parametri
 
@@ -57,8 +57,8 @@ Se una pagina restituisce un valore diverso da zero, la finestra delle propriet�
 
 | Requisito | Valore |
 |-------------------------------------|------------------------------------------------------------------------------------|
-| Client minimo supportato<br/> | Windows Solo \[ app desktop Vista\]<br/>                                     |
-| Server minimo supportato<br/> | Windows Solo app desktop di Server 2003 \[\]<br/>                               |
+| Client minimo supportato<br/> | Windows Solo \[ app desktop di Vista\]<br/>                                     |
+| Server minimo supportato<br/> | Windows Solo app desktop server 2003 \[\]<br/>                               |
 | Intestazione<br/>                   | <dl> <dt>Prsht.h</dt> </dl> |
 
 

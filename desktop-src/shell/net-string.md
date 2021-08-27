@@ -1,6 +1,6 @@
 ---
-description: Rappresentano i tipi di indirizzi di rete. Usare uno o più (come combinazione bit per bit) delle costanti seguenti per creare una maschera di indirizzo di rete da usare con la macro NetAddr \_ SetAllowType.
-title: NET_STRING (Iphlpapi. h)
+description: Rappresentano i tipi di indirizzi di rete. Usare una o più costanti seguenti (come combinazione bit per bit) per creare una maschera di indirizzi di rete da usare con la macro NetAddr \_ SetAllowType.
+title: NET_STRING (Iphlpapi.h)
 ms.topic: reference
 ms.date: 05/31/2018
 ms.assetid: 4144dac9-772c-49cb-b924-e852fb4c81c7
@@ -31,46 +31,46 @@ api_location:
 topic_type:
 - APIRef
 - kbSyntax
-ms.openlocfilehash: 41ebe1cb844ec36ef13c8f8fe143d46dd9ac51b5
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: a7d1a09e6165e77ee5419da47419a65e3995ce0ffedb8a6fb71f01fb9c63dde5
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104993773"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120111221"
 ---
-# <a name="net_string"></a>\_stringa net
+# <a name="net_string"></a>STRINGA \_ DI RETE
 
-Rappresentano i tipi di indirizzi di rete. Usare uno o più (come combinazione bit per bit) delle costanti seguenti per creare una maschera di indirizzo di rete da usare con la macro [**NetAddr \_ SetAllowType**](/windows/desktop/api/Shellapi/nf-shellapi-netaddr_setallowtype).
+Rappresentano i tipi di indirizzi di rete. Usare una o più costanti seguenti (come combinazione bit per bit) per creare una maschera di indirizzi di rete da usare con la macro [**NetAddr \_ SetAllowType**](/windows/desktop/api/Shellapi/nf-shellapi-netaddr_setallowtype).
 
 
 
 | Costante                                                                                                                                                                                                                   | Descrizione                                                                                                                                                                    |
 |:---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|:-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| <span id="NET_STRING_IPV4_ADDRESS"></span><span id="net_string_ipv4_address"></span><dl> <dt>**\_ \_ Indirizzo IPv4 stringa \_ net**</dt> </dl>                              | La stringa identifica un host/router IPv4 usando un indirizzo letterale (la porta o il prefisso non è consentito).<br/>                                                                       |
-| <span id="NET_STRING_IPV4_SERVICE"></span><span id="net_string_ipv4_service"></span><dl> <dt>**\_Servizio NET String \_ IPv4 \_**</dt> </dl>                              | La stringa identifica un servizio IPv4 usando un indirizzo letterale (porta richiesta; prefisso non consentito).<br/>                                                                    |
-| <span id="NET_STRING_IPV4_NETWORK"></span><span id="net_string_ipv4_network"></span><dl> <dt>**\_Rete stringa \_ IPv4 \_ net**</dt> </dl>                              | La stringa identifica una rete IPv4 (prefisso obbligatorio; la porta non è consentita).<br/>                                                                                          |
-| <span id="NET_STRING_IPV6_ADDRESS"></span><span id="net_string_ipv6_address"></span><dl> <dt>**\_ \_ Indirizzo IPv6 stringa \_ net**</dt> </dl>                              | La stringa identifica un host/router IPv6 usando un indirizzo letterale (porta o prefisso non consentito; ID ambito consentito).<br/>                                                     |
-| <span id="NET_STRING_IPV6_ADDRESS_NO_SCOPE"></span><span id="net_string_ipv6_address_no_scope"></span><dl> <dt>**\_ \_ Indirizzo IPv6 NET \_ String \_ senza \_ ambito**</dt> </dl> | La stringa identifica un host/router IPv6 usando un indirizzo letterale in cui il contesto dell'interfaccia è già noto (la porta o il prefisso non è consentito; ID ambito non consentito).<br/>    |
-| <span id="NET_STRING_IPV6_SERVICE"></span><span id="net_string_ipv6_service"></span><dl> <dt>**\_ \_ Servizio IPv6 NET \_ String**</dt> </dl>                              | La stringa identifica un servizio IPv6 usando un indirizzo letterale (porta necessaria; prefisso non consentito; ID ambito consentito).<br/>                                                  |
-| <span id="NET_STRING_IPV6_SERVICE_NO_SCOPE"></span><span id="net_string_ipv6_service_no_scope"></span><dl> <dt>**\_ \_ Servizio IPv6 NET \_ String \_ senza \_ ambito**</dt> </dl> | La stringa identifica un servizio IPv6 usando un indirizzo letterale in cui il contesto dell'interfaccia è già noto (porta richiesta; prefisso non consentito; ID ambito non consentito).<br/> |
-| <span id="NET_STRING_IPV6_NETWORK"></span><span id="net_string_ipv6_network"></span><dl> <dt>**\_Rete stringa net \_ IPv6 \_**</dt> </dl>                              | La stringa identifica una rete IPv6 (prefisso obbligatorio, porta o ID ambito non consentito).<br/>                                                                              |
-| <span id="NET_STRING_NAMED_ADDRESS"></span><span id="net_string_named_address"></span><dl> <dt>**\_indirizzo stringa net \_ denominato \_**</dt> </dl>                           | La stringa identifica un host Internet che usa il DNS (porta o prefisso o ID ambito non consentito).<br/>                                                                       |
-| <span id="NET_STRING_NAMED_SERVICE"></span><span id="net_string_named_service"></span><dl> <dt>**NET \_ stringa \_ denominata \_ Service**</dt> </dl>                           | La stringa identifica un servizio Internet che usa DNS (porta richiesta; prefisso o ID ambito non consentito).<br/>                                                                |
-| <span id="NET_STRING_IP_ADDRESS"></span><span id="net_string_ip_address"></span><dl> <dt>**\_ \_ indirizzo IP stringa \_ net**</dt> </dl>                                    | Indirizzo IPv4 della stringa di rete NET \_ \_ \_ Address \| \_ \_ IPv6 \_ .<br/>                                                                                                           |
-| <span id="NET_STRING_IP_ADDRESS_NO_SCOPE"></span><span id="net_string_ip_address_no_scope"></span><dl> <dt>**\_ \_ indirizzo IP stringa \_ net \_ senza \_ ambito**</dt> </dl>       | Indirizzo \_ IPv4 NET String \_ net Address \_ \| \_ \_ IPv6 \_ \_ senza \_ ambito. <br/>                                                                                               |
-| <span id="NET_STRING_IP_SERVICE"></span><span id="net_string_ip_service"></span><dl> <dt>**NET \_ String \_ IP \_ Service**</dt> </dl>                                    | \_ \_ \_ \| \_ \_ \_ Servizio IPv6 NET String NET String.<br/>                                                                                                           |
-| <span id="NET_STRING_IP_SERVICE_NO_SCOPE"></span><span id="net_string_ip_service_no_scope"></span><dl> <dt>**\_ \_ servizio IP stringa \_ net \_ senza \_ ambito**</dt> </dl>       | stringa di rete \_ \_ denominata \_ indirizzo \| IP stringa net indirizzo \_ \_ \_ \_ nessun \_ ambito.<br/>                                                                                                 |
-| <span id="NET_STRING_IP_NETWORK"></span><span id="net_string_ip_network"></span><dl> <dt>**\_ \_ rete IP stringa \_ net**</dt> </dl>                                    | Rete stringa net \_ \_ IPv4 \_ rete \| IPv6 rete \_ \_ \_ .<br/>                                                                                                           |
-| <span id="NET_STRING_ANY_ADDRESS"></span><span id="net_string_any_address"></span><dl> <dt>**\_stringa net \_ Any \_ Address**</dt> </dl>                                 | stringa di rete \_ \_ denominata \_ indirizzo \| IP della \_ stringa \_ \_ di rete.<br/>                                                                                                            |
-| <span id="NET_STRING_ANY_ADDRESS_NO_SCOPE"></span><span id="net_string_any_address_no_scope"></span><dl> <dt>**\_stringa net \_ Any \_ Address \_ senza \_ ambito**</dt> </dl>    | stringa di rete \_ \_ denominata \_ indirizzo \| IP stringa net indirizzo \_ \_ \_ \_ nessun \_ ambito.<br/>                                                                                                 |
-| <span id="NET_STRING_ANY_SERVICE"></span><span id="net_string_any_service"></span><dl> <dt>**NET \_ String \_ Any \_ Service**</dt> </dl>                                 | \_stringa net \_ denominata \_ servizio \| net \_ String \_ IP \_ Service.<br/>                                                                                                            |
-| <span id="NET_STRING_ANY_SERVICE_NO_SCOPE"></span><span id="net_string_any_service_no_scope"></span><dl> <dt>**NET \_ String \_ Any \_ Service \_ senza \_ ambito**</dt> </dl>    | stringa di rete \_ \_ denominata \_ indirizzo \| IP stringa net indirizzo \_ \_ \_ \_ nessun \_ ambito.<br/>                                                                                                 |
+| <span id="NET_STRING_IPV4_ADDRESS"></span><span id="net_string_ipv4_address"></span><dl> <dt>**INDIRIZZO \_ \_ IPV4 DELLA STRINGA \_ DI RETE**</dt> </dl>                              | La stringa identifica un host/router IPv4 usando un indirizzo letterale (porta o prefisso non consentito).<br/>                                                                       |
+| <span id="NET_STRING_IPV4_SERVICE"></span><span id="net_string_ipv4_service"></span><dl> <dt>**SERVIZIO \_ NET STRING \_ IPV4 \_**</dt> </dl>                              | La stringa identifica un servizio IPv4 usando un indirizzo letterale (porta obbligatoria; prefisso non consentito).<br/>                                                                    |
+| <span id="NET_STRING_IPV4_NETWORK"></span><span id="net_string_ipv4_network"></span><dl> <dt>**NET \_ STRING \_ IPV4 \_ NETWORK**</dt> </dl>                              | La stringa identifica una rete IPv4 (prefisso obbligatorio; porta non consentita).<br/>                                                                                          |
+| <span id="NET_STRING_IPV6_ADDRESS"></span><span id="net_string_ipv6_address"></span><dl> <dt>**INDIRIZZO \_ \_ IPV6 DELLA STRINGA \_ DI RETE**</dt> </dl>                              | La stringa identifica un host/router IPv6 usando un indirizzo letterale (porta o prefisso non consentito; scope-id consentito).<br/>                                                     |
+| <span id="NET_STRING_IPV6_ADDRESS_NO_SCOPE"></span><span id="net_string_ipv6_address_no_scope"></span><dl> <dt>**NET \_ STRING \_ IPV6 \_ ADDRESS \_ NO \_ SCOPE**</dt> </dl> | La stringa identifica un host/router IPv6 usando un indirizzo letterale in cui il contesto dell'interfaccia è già noto (porta o prefisso non consentito; scope-id non consentito).<br/>    |
+| <span id="NET_STRING_IPV6_SERVICE"></span><span id="net_string_ipv6_service"></span><dl> <dt>**SERVIZIO \_ NET STRING \_ IPV6 \_**</dt> </dl>                              | La stringa identifica un servizio IPv6 usando un indirizzo letterale (porta obbligatoria; prefisso non consentito; scope-id consentito).<br/>                                                  |
+| <span id="NET_STRING_IPV6_SERVICE_NO_SCOPE"></span><span id="net_string_ipv6_service_no_scope"></span><dl> <dt>**NET \_ STRING \_ IPV6 \_ SERVICE \_ NO \_ SCOPE**</dt> </dl> | La stringa identifica un servizio IPv6 usando un indirizzo letterale in cui il contesto dell'interfaccia è già noto (porta obbligatoria; prefisso non consentito; scope-id non consentito).<br/> |
+| <span id="NET_STRING_IPV6_NETWORK"></span><span id="net_string_ipv6_network"></span><dl> <dt>**NET \_ STRING \_ IPV6 \_ NETWORK**</dt> </dl>                              | La stringa identifica una rete IPv6 (prefisso obbligatorio; porta o id ambito non consentito).<br/>                                                                              |
+| <span id="NET_STRING_NAMED_ADDRESS"></span><span id="net_string_named_address"></span><dl> <dt>**INDIRIZZO \_ DENOMINATO DELLA STRINGA DI \_ \_ RETE**</dt> </dl>                           | La stringa identifica un host Internet usando DNS(porta o prefisso o id ambito non consentito).<br/>                                                                       |
+| <span id="NET_STRING_NAMED_SERVICE"></span><span id="net_string_named_service"></span><dl> <dt>**NET \_ STRING \_ NAMED \_ SERVICE**</dt> </dl>                           | La stringa identifica un servizio Internet tramite DNS (porta obbligatoria; prefisso o id ambito non consentito).<br/>                                                                |
+| <span id="NET_STRING_IP_ADDRESS"></span><span id="net_string_ip_address"></span><dl> <dt>**INDIRIZZO \_ \_ IP DELLA STRINGA DI \_ RETE**</dt> </dl>                                    | NET \_ STRING \_ IPV4 \_ ADDRESS NET STRING \| \_ \_ IPV6 ADDRESS (INDIRIZZO NET STRING IPV6). \_<br/>                                                                                                           |
+| <span id="NET_STRING_IP_ADDRESS_NO_SCOPE"></span><span id="net_string_ip_address_no_scope"></span><dl> <dt>**INDIRIZZO \_ \_ IP DELLA STRINGA DI RETE \_ SENZA \_ \_ AMBITO**</dt> </dl>       | NET \_ STRING \_ IPV4 \_ ADDRESS NET STRING \| \_ \_ IPV6 ADDRESS NO SCOPE .NET STRING IPV6 ADDRESS NO SCOPE ( INDIRIZZO IPV6 NET STRING IPV4 ADDRESS NET STRING IPV6 \_ ADDRESS NO \_ \_ SCOPE). <br/>                                                                                               |
+| <span id="NET_STRING_IP_SERVICE"></span><span id="net_string_ip_service"></span><dl> <dt>**SERVIZIO \_ \_ IP DELLA STRINGA DI \_ RETE**</dt> </dl>                                    | NET \_ STRING \_ IPV4 \_ SERVICE NET STRING \| \_ \_ IPV6 \_ SERVICE .<br/>                                                                                                           |
+| <span id="NET_STRING_IP_SERVICE_NO_SCOPE"></span><span id="net_string_ip_service_no_scope"></span><dl> <dt>**NET \_ STRING \_ IP \_ SERVICE \_ NO \_ SCOPE**</dt> </dl>       | NET STRING NAMED ADDRESS NET STRING IP ADDRESS NO SCOPE (INDIRIZZO IP DELLA STRINGA DI RETE \_ \_ SENZA \_ \| \_ \_ \_ \_ \_ AMBITO).<br/>                                                                                                 |
+| <span id="NET_STRING_IP_NETWORK"></span><span id="net_string_ip_network"></span><dl> <dt>**RETE \_ \_ IP DELLA STRINGA DI \_ RETE**</dt> </dl>                                    | NET \_ STRING \_ IPV4 \_ NETWORK NET STRING \| \_ \_ IPV6 NETWORK .NET STRING IPV6 \_ NETWORK<br/>                                                                                                           |
+| <span id="NET_STRING_ANY_ADDRESS"></span><span id="net_string_any_address"></span><dl> <dt>**NET \_ STRING \_ ANY \_ ADDRESS**</dt> </dl>                                 | NET \_ STRING NAMED ADDRESS NET STRING IP ADDRESS \_ \_ \| \_ \_ \_ .<br/>                                                                                                            |
+| <span id="NET_STRING_ANY_ADDRESS_NO_SCOPE"></span><span id="net_string_any_address_no_scope"></span><dl> <dt>**NET \_ STRING \_ ANY \_ ADDRESS \_ NO \_ SCOPE**</dt> </dl>    | NET STRING NAMED ADDRESS NET STRING IP ADDRESS NO SCOPE (INDIRIZZO IP DELLA STRINGA DI RETE \_ \_ SENZA \_ \| \_ \_ \_ \_ \_ AMBITO).<br/>                                                                                                 |
+| <span id="NET_STRING_ANY_SERVICE"></span><span id="net_string_any_service"></span><dl> <dt>**NET \_ STRING \_ ANY \_ SERVICE**</dt> </dl>                                 | STRINGA \_ DI RETE DENOMINATA SERVIZIO NET STRING IP \_ \_ \| \_ \_ \_ SERVICE.<br/>                                                                                                            |
+| <span id="NET_STRING_ANY_SERVICE_NO_SCOPE"></span><span id="net_string_any_service_no_scope"></span><dl> <dt>**NET \_ STRING \_ ANY \_ SERVICE \_ NO \_ SCOPE**</dt> </dl>    | NET STRING NAMED ADDRESS NET STRING IP ADDRESS NO SCOPE (INDIRIZZO IP DELLA STRINGA DI RETE \_ \_ SENZA \_ \| \_ \_ \_ \_ \_ AMBITO).<br/>                                                                                                 |
 
 
 
 ## <a name="remarks"></a>Commenti
 
-Questi valori sono definiti in iphlpapi. h.
+Questi valori sono definiti in Iphlpapi.h.
 
 ## <a name="requirements"></a>Requisiti
 
@@ -78,9 +78,9 @@ Questi valori sono definiti in iphlpapi. h.
 
 | Requisito | Valore |
 |-------------------------------------|---------------------------------------------------------------------------------------|
-| Client minimo supportato<br/> | \[Solo app desktop di Windows Vista\]<br/>                                        |
-| Server minimo supportato<br/> | \[Solo app desktop Windows Server 2008\]<br/>                                  |
-| Intestazione<br/>                   | <dl> <dt>Iphlpapi. h</dt> </dl> |
+| Client minimo supportato<br/> | Windows Solo \[ app desktop di Vista\]<br/>                                        |
+| Server minimo supportato<br/> | Windows Solo app desktop server 2008 \[\]<br/>                                  |
+| Intestazione<br/>                   | <dl> <dt>Iphlpapi.h</dt> </dl> |
 
 
 

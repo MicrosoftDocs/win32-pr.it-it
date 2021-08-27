@@ -1,19 +1,19 @@
 ---
-description: In questa versione dell'applicazione viene utilizzato un blocco di invio dei dati compresso. Questa modifica comporta un miglioramento significativo delle prestazioni.
+description: In questa versione dell'applicazione viene usato un blocco compresso di invio dei dati. Questa modifica comporta un miglioramento significativo delle prestazioni.
 ms.assetid: 3f0a129b-5b67-4334-a0aa-cd80ee7018b9
-title: 'Revisione 3: invio blocco compresso'
+title: 'Revisione tre: Compressed Block Send'
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 657579406ed31fce08239c518a6910f525219fdf
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 4bba84010a09755c5b978665cbd8aa1b29068ec42294ab7b1e499c631fc6b472
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "106310443"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120121281"
 ---
-# <a name="revision-three-compressed-block-send"></a>Revisione 3: invio blocco compresso
+# <a name="revision-three-compressed-block-send"></a>Revisione tre: Compressed Block Send
 
-In questa versione dell'applicazione viene utilizzato un blocco di invio dei dati compresso. Questa modifica comporta un miglioramento significativo delle prestazioni.
+In questa versione dell'applicazione viene usato un blocco compresso di invio dei dati. Questa modifica comporta un miglioramento significativo delle prestazioni.
 
 
 ```C++
@@ -32,27 +32,27 @@ closesocket( s );
 
 
 
-## <a name="changes-in-this-version"></a>Modifiche in questa versione
+## <a name="changes-in-this-version"></a>Modifiche apportate a questa versione
 
 Questa versione riflette le modifiche seguenti:
 
 -   Gli aggiornamenti delle celle non vengono più serializzati.
--   Poiché viene utilizzato un blocco Send, l'applicazione non è più in chat.
--   Viene utilizzata la compressione dei dati, causando un'applicazione meno FAT.
+-   Poiché viene usata un'invio a blocchi, l'applicazione non è più in chat.
+-   Viene usata la compressione dei dati, con un'applicazione meno fat.
 
-Si è verificato un problema con questa versione dell'applicazione. il rischio di deadlock esiste poiché viene utilizzata un'invio di grandi dimensioni con nessuna ricezione. Il server invia un byte per ogni 3 byte ricevuti. Questo potrebbe causare un deadlock se la dimensione del buffer di ricezione è inferiore a 1000 byte per questa applicazione di esempio.
+Esiste ancora un problema con questa versione dell'applicazione. il rischio di deadlock esiste perché viene usato un invio di grandi dimensioni senza ricevere. Il server invia un byte ogni 3 byte ricevuti. Ciò potrebbe causare un deadlock se le dimensioni del buffer di ricezione sono inferiori a 1000 byte per questa applicazione di esempio.
 
 ## <a name="key-performance-metrics"></a>Metriche delle prestazioni chiave
 
-Le metriche delle prestazioni seguenti sono espresse in tempo di round trip (RTT), Goodput e sovraccarico del protocollo. Per una spiegazione di questi termini, vedere l'argomento [terminologia di rete](network-terminology-2.md) .
+Le metriche delle prestazioni seguenti sono espresse in Tempo di round trip (RTT), Goodput e Sovraccarico del protocollo. Per una [spiegazione di questi termini,](network-terminology-2.md) vedere l'argomento Terminologia della rete.
 
 Questa versione riflette le metriche delle prestazioni seguenti:
 
--   Tempo cella-. 002 \* RTT
--   Goodput-2 kilobyte/RTT
--   Overhead del protocollo: 14%
+-   Ora cella - 0,002 \* RTT
+-   Goodput : 2 kilobyte/RTT
+-   Sovraccarico del protocollo: 14%
 
-Del 14% di overhead, il 6% è dalle intestazioni Ethernet e l'altro l'8% viene dall'avvio della connessione e da teardown.
+Del sovraccarico del 14%, il 6% deriva dalle intestazioni Ethernet e l'altro 8% deriva dall'avvio e dalla rimozione della connessione.
 
 ## <a name="related-topics"></a>Argomenti correlati
 
@@ -61,16 +61,16 @@ Del 14% di overhead, il 6% è dalle intestazioni Ethernet e l'altro l'8% viene d
 [Miglioramento di un'applicazione lenta](improving-a-slow-application-2.md)
 </dt> <dt>
 
-[Terminologia di rete](network-terminology-2.md)
+[Terminologia della rete](network-terminology-2.md)
 </dt> <dt>
 
-[Versione di base: applicazione con prestazioni molto scarsa](the-baseline-version-a-very-poor-performing-application-2.md)
+[Versione di base: un'applicazione con prestazioni molto scarse](the-baseline-version-a-very-poor-performing-application-2.md)
 </dt> <dt>
 
-[Revisione 1: pulizia dell'ovvia](revision-1-cleaning-up-the-obvious-2.md)
+[Revisione 1: Pulizia dell'ovvio](revision-1-cleaning-up-the-obvious-2.md)
 </dt> <dt>
 
-[Revisione 2: riprogettazione per un minor numero di connessioni](revision-2-redesigning-for-fewer-connects-2.md)
+[Revisione 2: Riprogettazione per un minor numero di connessione](revision-2-redesigning-for-fewer-connects-2.md)
 </dt> <dt>
 
 [Miglioramenti futuri](future-improvements-2.md)

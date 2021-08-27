@@ -1,9 +1,9 @@
 ---
-title: Messaggio PSM_SETFINISHTEXT (Prsht. h)
-description: Imposta il testo del pulsante fine in una procedura guidata, Mostra e Abilita il pulsante e nasconde i pulsanti avanti e indietro. È possibile inviare questo messaggio in modo esplicito o utilizzando la \_ macro PropSheet SetFinishText.
+title: PSM_SETFINISHTEXT messaggio (Prsht.h)
+description: Imposta il testo del pulsante Fine in una procedura guidata, visualizza e abilita il pulsante e nasconde i pulsanti Avanti e Indietro. È possibile inviare questo messaggio in modo esplicito o tramite la macro PropSheet \_ SetFinishText.
 ms.assetid: fa89c6d7-9ab7-4e7c-ba08-d665420492a3
 keywords:
-- Controlli di Windows Message PSM_SETFINISHTEXT
+- PSM_SETFINISHTEXT di controllo Windows messaggio
 topic_type:
 - apiref
 api_name:
@@ -16,16 +16,16 @@ api_type:
 - HeaderDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 08195cddc96c8b92f403be6940f31099e21151f1
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: 5a08cafbeafeccb2235cb9b653f997aa8c60bd5fd21a3ccbc92e572fa5d3d0db
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "103740098"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120088561"
 ---
-# <a name="psm_setfinishtext-message"></a>\_Messaggio SETFINISHTEXT di PSM
+# <a name="psm_setfinishtext-message"></a>Messaggio \_ PSM SETFINISHTEXT
 
-Imposta il testo del pulsante **fine** in una procedura guidata, Mostra e Abilita il pulsante e nasconde i pulsanti **Avanti** e **indietro** . È possibile inviare questo messaggio in modo esplicito o utilizzando la macro [**PropSheet \_ SetFinishText**](/windows/desktop/api/Prsht/nf-prsht-propsheet_setfinishtext) .
+Imposta il testo del **pulsante Fine** in una procedura guidata, visualizza e abilita il pulsante e nasconde i **pulsanti** Avanti **e** Indietro. È possibile inviare questo messaggio in modo esplicito o tramite la macro [**PropSheet \_ SetFinishText.**](/windows/desktop/api/Prsht/nf-prsht-propsheet_setfinishtext)
 
 ## <a name="parameters"></a>Parametri
 
@@ -41,7 +41,7 @@ Deve essere zero.
 *lParam* 
 </dt> <dd>
 
-Puntatore al nuovo testo per il pulsante **fine** .
+Puntatore al nuovo testo per il **pulsante** Fine.
 
 </dd> </dl>
 
@@ -51,7 +51,7 @@ Nessun valore restituito.
 
 ## <a name="remarks"></a>Commenti
 
-Per impostazione predefinita, il pulsante **fine** non dispone di un tasto di scelta rapida. È possibile creare un tasto di scelta rapida con questo messaggio includendo una e commerciale (&) nella stringa di testo assegnata a *lParam*. Ad esempio, "&Finish" definisce F come tasto di scelta rapida.
+Per impostazione predefinita, il **pulsante Fine** non dispone di un tasto di scelta rapida. È possibile creare un acceleratore di tastiera con questo messaggio includendo una e commerciale (&) nella stringa di testo assegnata a *lParam*. Ad esempio, "&fine" definisce F come tasto di scelta rapida.
 
 ## <a name="requirements"></a>Requisiti
 
@@ -59,9 +59,9 @@ Per impostazione predefinita, il pulsante **fine** non dispone di un tasto di sc
 
 | Requisito | Valore |
 |-------------------------------------|------------------------------------------------------------------------------------|
-| Client minimo supportato<br/> | \[Solo app desktop di Windows Vista\]<br/>                                     |
-| Server minimo supportato<br/> | \[Solo app desktop Windows Server 2003\]<br/>                               |
-| Intestazione<br/>                   | <dl> <dt>Prsht. h</dt> </dl> |
+| Client minimo supportato<br/> | Windows Solo \[ app desktop di Vista\]<br/>                                     |
+| Server minimo supportato<br/> | Windows Solo app desktop server 2003 \[\]<br/>                               |
+| Intestazione<br/>                   | <dl> <dt>Prsht.h</dt> </dl> |
 | Nomi Unicode e ANSI<br/>   | **PSM \_ SETFINISHTEXTW** (Unicode) e **PSM \_ SETFINISHTEXTA** (ANSI)<br/>    |
 
 

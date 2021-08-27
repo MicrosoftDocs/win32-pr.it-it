@@ -4,12 +4,12 @@ description: Informazioni sui valori del Registro di sistema specifici necessari
 ms.assetid: 16bdd6bf-9eab-40a8-a2d3-8942d2f5f37a
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: b2a1092b743ae0568093a563e318c3a3d24761bb634fdcfb2780c6c681fe7322
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: ee42360689a74b3cd11628e6114e80532000b95f
+ms.sourcegitcommit: 9b5faa61c38b2d0c432b7f2dbee8c127b0e28a7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "118984251"
+ms.lasthandoff: 08/19/2021
+ms.locfileid: "122476637"
 ---
 # <a name="eap-peer-method-registry-values"></a>Valori del Registro di sistema del metodo peer EAP
 
@@ -28,7 +28,7 @@ Ad esempio, un percorso di registrazione dell'installazione del metodo EAP dato 
 Il percorso seguente specifica il percorso del Registro di sistema per le DLL estese dei metodi EAP.
 
 > [!Note]  
-> Le DLL dei metodi EAP estesi sono supportate in Windows Vista con Service Pack 1 (SP1) o versioni successive.
+> Le DLL dei metodi EAP estesi sono supportate in Windows Vista con Service Pack 1 (SP1) o versione successiva.
 
  
 
@@ -145,32 +145,12 @@ I valori del Registro di sistema del metodo peer AP seguenti sono facoltativi.
 
 
 
-<table>
-<colgroup>
-<col style="width: 50%" />
-<col style="width: 50%" />
-</colgroup>
-<thead>
-<tr class="header">
-<th>Constant Value</th>
-<th>PeerInvokeUsernameDialog</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>Tipo</td>
-<td>REG_DWORD</td>
-</tr>
-<tr class="even">
-<td>Descrizione</td>
-<td><ul>
-<li>1 : per ottenere le credenziali usando la finestra di dialogo generica nome utente EAPHost.</li>
-<li>0- per usare una finestra di dialogo personalizzata.</li>
-</ul>
-Se viene usata la finestra di dialogo generica, le credenziali vengono impostate dal metodo [<strong>EapPeerSetCredentials</strong>](/previous-versions/windows/desktop/api/eapmethodpeerapis/nf-eapmethodpeerapis-eappeersetcredentials).</td>
-</tr>
-</tbody>
-</table>
+
+| Constant Value | PeerInvokeUsernameDialog | 
+|----------------|--------------------------|
+| Tipo | REG_DWORD | 
+| Descrizione | <ul><li>1 : per ottenere le credenziali usando la finestra di dialogo generica nome utente EAPHost.</li><li>0- per usare una finestra di dialogo personalizzata.</li></ul>Se viene usata la finestra di dialogo generica, le credenziali vengono impostate dal [<strong>metodo EapPeerSetCredentials.</strong>](/previous-versions/windows/desktop/api/eapmethodpeerapis/nf-eapmethodpeerapis-eappeersetcredentials) | 
+
 
 
 

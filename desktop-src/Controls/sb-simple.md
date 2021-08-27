@@ -1,9 +1,9 @@
 ---
-title: Messaggio SB_SIMPLE (COMmctrl. h)
-description: Specifica se una finestra di stato Visualizza testo semplice o Visualizza tutte le parti della finestra impostate da un messaggio precedente della \_ parte SB.
+title: SB_SIMPLE messaggio (Commctrl.h)
+description: Specifica se una finestra di stato visualizza testo semplice o tutte le parti della finestra impostate da un messaggio SETPARTS SB \_ precedente.
 ms.assetid: 457209cb-67d4-4a9f-8d18-75aa5eb9ca1d
 keywords:
-- Controlli di Windows Message SB_SIMPLE
+- SB_SIMPLE dei controlli Windows messaggio
 topic_type:
 - apiref
 api_name:
@@ -14,16 +14,16 @@ api_type:
 - HeaderDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 9f7a462a917c86531cd70f5f5c8ea60bf448ff6f
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: 229f0a896c9adcab6886151753761c62aefb8f4dc6ee21b7e85bb7507bda11f7
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "104120694"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120132211"
 ---
-# <a name="sb_simple-message"></a>\_Messaggio semplice SB
+# <a name="sb_simple-message"></a>Messaggio SB \_ SIMPLE
 
-Specifica se una finestra di stato Visualizza testo semplice o Visualizza tutte le parti della finestra impostate da un messaggio precedente della [**\_ parte SB**](sb-setparts.md) .
+Specifica se una finestra di stato visualizza testo semplice o tutte le parti della finestra impostate da un messaggio [**\_ SETPARTS SB**](sb-setparts.md) precedente.
 
 ## <a name="parameters"></a>Parametri
 
@@ -32,7 +32,7 @@ Specifica se una finestra di stato Visualizza testo semplice o Visualizza tutte 
 *wParam* 
 </dt> <dd>
 
-Flag tipo di visualizzazione. Se questo parametro è **true**, nella finestra viene visualizzato un testo semplice. Se è **false**, vengono visualizzate più parti.
+Flag del tipo di visualizzazione. Se questo parametro è **TRUE,** nella finestra viene visualizzato testo semplice. Se è **FALSE,** vengono visualizzate più parti.
 
 </dd> <dt>
 
@@ -45,7 +45,7 @@ Il valore restituito non viene utilizzato.
 
 ## <a name="remarks"></a>Commenti
 
-Se la finestra di stato viene modificata da non semplice a semplice o viceversa, la finestra viene immediatamente ridisegnato.
+Se la finestra di stato viene modificata da non semplice a semplice o viceversa, la finestra viene ridisegnata immediatamente.
 
 ## <a name="requirements"></a>Requisiti
 
@@ -53,9 +53,9 @@ Se la finestra di stato viene modificata da non semplice a semplice o viceversa,
 
 | Requisito | Valore |
 |-------------------------------------|---------------------------------------------------------------------------------------|
-| Client minimo supportato<br/> | \[Solo app desktop di Windows Vista\]<br/>                                        |
-| Server minimo supportato<br/> | \[Solo app desktop Windows Server 2003\]<br/>                                  |
-| Intestazione<br/>                   | <dl> <dt>Commctrl. h</dt> </dl> |
+| Client minimo supportato<br/> | Windows Solo \[ app desktop Vista\]<br/>                                        |
+| Server minimo supportato<br/> | Windows Solo app desktop di Server 2003 \[\]<br/>                                  |
+| Intestazione<br/>                   | <dl> <dt>Commctrl.h</dt> </dl> |
 
 
 

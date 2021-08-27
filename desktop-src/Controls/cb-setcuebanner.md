@@ -1,9 +1,9 @@
 ---
-title: Messaggio CB_SETCUEBANNER (winuser. h)
-description: Imposta il testo del banner cue visualizzato per il controllo di modifica di una casella combinata.
+title: CB_SETCUEBANNER messaggio (Winuser.h)
+description: Imposta il testo del banner di segnale visualizzato per il controllo di modifica di una casella combinata.
 ms.assetid: 4b2b5042-ba64-4e3f-adeb-9aea66773b0e
 keywords:
-- Controlli di Windows Message CB_SETCUEBANNER
+- CB_SETCUEBANNER controlli Windows messaggio
 topic_type:
 - apiref
 api_name:
@@ -14,16 +14,16 @@ api_type:
 - HeaderDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: d5799b1b1be5e938ce1e234948a1f7d878122f30
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: cb546b7113247f09d8929364984d5e73c3e28b6541d2ca04bd631405040bf6fb
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "104048350"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120089041"
 ---
-# <a name="cb_setcuebanner-message"></a>\_Messaggio SETCUEBANNER CB
+# <a name="cb_setcuebanner-message"></a>CB \_ SETCUEBANNER message
 
-Imposta il testo del banner cue visualizzato per il controllo di modifica di una casella combinata.
+Imposta il testo del banner di segnale visualizzato per il controllo di modifica di una casella combinata.
 
 ## <a name="parameters"></a>Parametri
 
@@ -39,17 +39,17 @@ Deve essere zero.
 *lParam* 
 </dt> <dd>
 
-Puntatore a un buffer di stringa Unicode con terminazione null che contiene il testo.
+Puntatore a un buffer di stringhe Unicode con terminazione Null che contiene il testo.
 
 </dd> </dl>
 
 ## <a name="return-value"></a>Valore restituito
 
-Restituisce 1 se l'operazione ha esito positivo o un valore di errore in caso contrario.
+Restituisce 1 in caso di esito positivo oppure un valore di errore in caso contrario.
 
 ## <a name="remarks"></a>Commenti
 
-Il banner cue è il testo visualizzato nel controllo di modifica di una casella combinata in assenza di selezione.
+Il banner segnale è il testo visualizzato nel controllo di modifica di una casella combinata quando non è presente alcuna selezione.
 
 ## <a name="requirements"></a>Requisiti
 
@@ -57,9 +57,9 @@ Il banner cue è il testo visualizzato nel controllo di modifica di una casella 
 
 | Requisito | Valore |
 |-------------------------------------|----------------------------------------------------------------------------------------------------------|
-| Client minimo supportato<br/> | \[Solo app desktop di Windows Vista\]<br/>                                                           |
-| Server minimo supportato<br/> | \[Solo app desktop Windows Server 2008\]<br/>                                                     |
-| Intestazione<br/>                   | <dl> <dt>CommCtrl. h</dt> </dl> |
+| Client minimo supportato<br/> | Windows Solo \[ app desktop Vista\]<br/>                                                           |
+| Server minimo supportato<br/> | Windows Solo app desktop di Server 2008 \[\]<br/>                                                     |
+| Intestazione<br/>                   | <dl> <dt>CommCtrl.h</dt> </dl> |
 
 
 

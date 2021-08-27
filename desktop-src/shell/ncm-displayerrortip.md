@@ -1,6 +1,6 @@
 ---
-description: Visualizza un messaggio di errore nel fumetto suggerimento associato al controllo dell'indirizzo di rete.
-title: Messaggio NCM_DISPLAYERRORTIP (Shellapi. h)
+description: Visualizza un messaggio di errore nella descrizione del fumetto associata al controllo dell'indirizzo di rete.
+title: NCM_DISPLAYERRORTIP messaggio (Shellapi.h)
 ms.topic: reference
 ms.date: 05/31/2018
 ms.assetid: 5ECAB6C3-69FC-4f2a-A9E6-80BC37ED3119
@@ -13,16 +13,16 @@ api_location:
 topic_type:
 - APIRef
 - kbSyntax
-ms.openlocfilehash: 8a3968b9001d74721938190369e6b52cf2368835
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 046119c93ec6a80fcfcedbd562d04665d5642fd832f2385bab914cc732499e5a
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104993776"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120111471"
 ---
-# <a name="ncm_displayerrortip-message"></a>\_Messaggio NCM DISPLAYERRORTIP
+# <a name="ncm_displayerrortip-message"></a>Messaggio \_ DISPLAYERRORTIP NCM
 
-Visualizza un messaggio di errore nel fumetto suggerimento associato al controllo dell'indirizzo di rete.
+Visualizza un messaggio di errore nella descrizione del fumetto associata al controllo dell'indirizzo di rete.
 
 
 ```C++
@@ -49,11 +49,11 @@ NCM_DISPLAYERRORTIP
 
 ## <a name="return-value"></a>Valore restituito
 
-Se il messaggio ha esito positivo, restituisce **S \_ OK**. In caso contrario, restituisce un codice di errore **HRESULT** .
+Se il messaggio ha esito positivo, restituisce **S \_ OK**. In caso contrario, restituisce un **codice di errore HRESULT.**
 
 ## <a name="remarks"></a>Commenti
 
-Inviare questo messaggio per visualizzare un messaggio di errore quando un indirizzo digitato nel controllo non viene convalidato in base ai tipi di indirizzi di rete consentiti impostati con il messaggio [**NCM \_ SETALLOWTYPE**](ncm-setallowtype.md) . Usare il messaggio [**NCM \_ GetAddress**](ncm-getaddress.md) per convalidare l'indirizzo.
+Inviare questo messaggio per visualizzare un messaggio di errore quando un indirizzo digitato nel controllo non viene convalidato in base ai tipi di indirizzi di rete consentiti impostati con il messaggio [**NCM \_ SETALLOWTYPE.**](ncm-setallowtype.md) Usare il [**messaggio NCM \_ GETADDRESS**](ncm-getaddress.md) per convalidare l'indirizzo.
 
 ## <a name="requirements"></a>Requisiti
 
@@ -61,9 +61,9 @@ Inviare questo messaggio per visualizzare un messaggio di errore quando un indir
 
 | Requisito | Valore |
 |-------------------------------------|---------------------------------------------------------------------------------------|
-| Client minimo supportato<br/> | \[Solo app desktop di Windows Vista\]<br/>                                        |
-| Server minimo supportato<br/> | \[Solo app desktop Windows Server 2008\]<br/>                                  |
-| Intestazione<br/>                   | <dl> <dt>Shellapi. h</dt> </dl> |
+| Client minimo supportato<br/> | Windows Solo \[ app desktop di Vista\]<br/>                                        |
+| Server minimo supportato<br/> | Windows Solo app desktop server 2008 \[\]<br/>                                  |
+| Intestazione<br/>                   | <dl> <dt>Shellapi.h</dt> </dl> |
 
 
 
@@ -71,7 +71,7 @@ Inviare questo messaggio per visualizzare un messaggio di errore quando un indir
 
 <dl> <dt>
 
-[**\_DisplayErrorTip NetAddr**](/windows/desktop/api/Shellapi/nf-shellapi-netaddr_displayerrortip)
+[**NetAddr \_ DisplayErrorTip**](/windows/desktop/api/Shellapi/nf-shellapi-netaddr_displayerrortip)
 </dt> </dl>
 
  

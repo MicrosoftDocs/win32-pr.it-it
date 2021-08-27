@@ -1,6 +1,6 @@
 ---
 title: Attributo TitleSortOrder
-description: L'attributo TitleSortOrder è il valore da utilizzare per l'ordinamento della colonna title nella libreria.
+description: L'attributo TitleSortOrder è il valore da usare per ordinare la colonna Title nella libreria.
 ms.assetid: 199e02f8-c0df-49cb-baba-6c6d7b18a0c0
 keywords:
 - Attributo TitleSortOrder Windows Media Player
@@ -12,16 +12,16 @@ api_type:
 - NA
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: d407f0606b0125e748406b21570585a449897639
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: 72e85f9ca04ec62b3d8b867c74de4188deb1992903550e4af150ba0b87b42e47
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "106327281"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120122791"
 ---
 # <a name="titlesortorder-attribute"></a>Attributo TitleSortOrder
 
-L'attributo **TitleSortOrder** è il valore da utilizzare per l'ordinamento della colonna **title** nella libreria.
+**L'attributo TitleSortOrder** è il valore da usare per ordinare la **colonna Title** nella libreria.
 
 ## <a name="applies-to"></a>Si applica a
 
@@ -31,9 +31,9 @@ L'attributo **TitleSortOrder** è il valore da utilizzare per l'ordinamento dell
 
 ## <a name="remarks"></a>Commenti
 
-Questo attributo viene archiviato solo nella libreria.
+Questo attributo viene archiviato solo nella libreria .
 
-Per determinare se è possibile modificare il valore di questo attributo, usare il metodo [Media. isReadOnlyItem](media-isreadonlyitem.md) .
+Per determinare se è possibile modificare il valore di questo attributo, usare il [metodo Media.isReadOnlyItem.](media-isreadonlyitem.md)
 
 ## <a name="requirements"></a>Requisiti
 
@@ -41,7 +41,7 @@ Per determinare se è possibile modificare il valore di questo attributo, usare 
 
 | Requisito | Valore |
 |--------------------|---------------------------------------------------|
-| Versione<br/> | Windows Media Player 9 serie o versione successiva<br/> |
+| Versione<br/> | Windows Media Player serie 9 o successive<br/> |
 
 
 
@@ -49,7 +49,7 @@ Per determinare se è possibile modificare il valore di questo attributo, usare 
 
 <dl> <dt>
 
-[**Riferimento agli attributi**](attribute-reference.md)
+[**Riferimento all'attributo**](attribute-reference.md)
 </dt> </dl>
 
  

@@ -1,5 +1,5 @@
 ---
-description: Viene illustrato come utilizzare l'interfaccia IShellLibrary per creare un'applicazione della riga di comando che fornisce l'accesso a livello di codice per esaminare e modificare le librerie e i file di libreria.
+description: Illustra come usare l'interfaccia IShellLibrary per creare un'applicazione della riga di comando che fornisce l'accesso a livello di codice per controllare e modificare librerie e file di libreria.
 title: Esempio di riga di comando della libreria shell
 ms.topic: article
 ms.date: 05/31/2018
@@ -9,16 +9,16 @@ api_type: ''
 api_location: ''
 topic_type:
 - kbArticle
-ms.openlocfilehash: c9db182498791fee344061c91ea570ed770f3a2a
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: e85595de3e7dab60be7741f95598f5d4e4d53276d5eff62f499874dea79bb99e
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "104485772"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120111191"
 ---
 # <a name="shell-library-command-line-sample"></a>Esempio di riga di comando della libreria shell
 
-Viene illustrato come utilizzare l'interfaccia [**IShellLibrary**](/windows/desktop/api/shobjidl_core/nn-shobjidl_core-ishelllibrary) per creare un'applicazione della riga di comando che fornisce l'accesso a livello di codice per esaminare e modificare le librerie e i file di libreria.
+Illustra come usare [**l'interfaccia IShellLibrary**](/windows/desktop/api/shobjidl_core/nn-shobjidl_core-ishelllibrary) per creare un'applicazione della riga di comando che fornisce l'accesso a livello di codice per controllare e modificare librerie e file di libreria.
 
 In questo argomento sono contenute le sezioni seguenti.
 
@@ -40,11 +40,11 @@ In questo argomento sono contenute le sezioni seguenti.
 
  
 
-Per ulteriori requisiti, vedere il file Leggimi incluso nell'esempio.
+Per altri requisiti, vedere il file Leggimi incluso nell'esempio.
 
 ## <a name="downloading-the-sample"></a>Download dell'esempio
 
-| Location      | URL percorso                                                                                             |
+| Località      | URL del percorso                                                                                             |
 |---------------|------------------------------------------------------------------------------------------------------|
 | GitHub  | [Esempio ShellLibraryCommandLine](https://github.com/microsoft/Windows-classic-samples/tree/master/Samples/Win7Samples/winui/shell/appplatform/ShellLibraryCommandLine) |
 

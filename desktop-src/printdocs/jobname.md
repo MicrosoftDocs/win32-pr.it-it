@@ -1,19 +1,19 @@
 ---
-description: Informazioni sull'elemento JobName, che specifica un nome descrittivo per il processo. Per le informazioni più aggiornate, vedere Print Schema Specification( Specifica dello schema di stampa).
+description: Informazioni sull'elemento JobName, che specifica un nome descrittivo per il processo. Per le informazioni più aggiornate, vedere Specifica dello schema di stampa.
 ms.assetid: 1e7b0681-a29b-4fd6-8518-dc9d0b716b12
 title: JobName
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 3bfb63a54e9501ff5dc45ff09a925396c168b20c
-ms.sourcegitcommit: 5d4e99f4c8f42f5f543e52cb9beb9fb13ec56c5f
+ms.openlocfilehash: 3bc05451cce8994a77017f2ff905698ad8a58ee67ef2895f7ed0b692388971b2
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/19/2021
-ms.locfileid: "112408874"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120112371"
 ---
 # <a name="jobname"></a>JobName
 
-Questo argomento non è corrente. Per le informazioni più aggiornate, vedere Print [Schema Specification](https://download.microsoft.com/download/D/E/C/DECA6E6B-3E81-48E7-B7EF-6D92A547D03C/print-schema-spec-2-0.zip).
+Questo argomento non è corrente. Per le informazioni più aggiornate, vedere Specifica [dello schema di stampa](https://download.microsoft.com/download/D/E/C/DECA6E6B-3E81-48E7-B7EF-6D92A547D03C/print-schema-spec-2-0.zip).
 
 Specifica un nome descrittivo per il processo.
 
