@@ -1,29 +1,29 @@
 ---
-description: Specifica l'impostazione di protezione da sovramodulazione RF in un flusso audio Dolby Digital. Questa proprietà si applica ai codificatori audio Dolby Digital.
+description: Specifica l'impostazione di protezione dell'overmodulation RF in un flusso audio Dolby Digital. Questa proprietà si applica ai codificatori audio Dolby Digital.
 ms.assetid: 2befb216-8735-4aed-80e7-22e31b2b147e
-title: Proprietà AVEncDDRFPreEmphasisFilter (codecapis. h)
+title: Proprietà AVEncDDRFPreEmphasisFilter (Codecapi.h)
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: a5a1cf48bfebd7374471e3d9a2a318d35e303cfc
-ms.sourcegitcommit: a47bd86f517de76374e4fff33cfeb613eb259a7e
+ms.openlocfilehash: 234d9e9bd612acfe365025bbdd99e8a5d7d706c090856b4d86f2834e0975fbdd
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/06/2021
-ms.locfileid: "106304205"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120103391"
 ---
-# <a name="avencddrfpreemphasisfilter-property"></a>Proprietà AVEncDDRFPreEmphasisFilter
+# <a name="avencddrfpreemphasisfilter-property"></a>AVEncDDRFPreEmphasisFilter - proprietà
 
-Specifica l'impostazione di protezione da sovramodulazione RF in un flusso audio Dolby Digital. Questa proprietà si applica ai codificatori audio Dolby Digital.
+Specifica l'impostazione di protezione dell'overmodulation RF in un flusso audio Dolby Digital. Questa proprietà si applica ai codificatori audio Dolby Digital.
 
 Si tratta di una proprietà di lettura/scrittura.
 
 ## <a name="data-type"></a>Tipo di dati
 
-**Variante \_ BOOL** (**VT \_ bool**)
+**VARIANT \_ BOOL** (**VT \_ BOOL**)
 
 ## <a name="property-guid"></a>GUID proprietà
 
-**Codecapis \_ AVEncDDRFPreEmphasisFilter**
+**CODECAPI \_ AVEncDDRFPreEmphasisFilter**
 
 ## <a name="requirements"></a>Requisiti
 
@@ -31,9 +31,9 @@ Si tratta di una proprietà di lettura/scrittura.
 
 | Requisito | Valore |
 |-------------------------------------|---------------------------------------------------------------------------------------|
-| Client minimo supportato<br/> | App UWP di Windows 2000 Professional \[ desktop apps \|\]<br/>                     |
-| Server minimo supportato<br/> | App desktop di Windows 2000 Server \[ \| UWP\]<br/>                           |
-| Intestazione<br/>                   | <dl> <dt>Codecapis. h</dt> </dl> |
+| Client minimo supportato<br/> | Windows 2000 Professional \[ app desktop app \| UWP\]<br/>                     |
+| Server minimo supportato<br/> | Windows 2000 App desktop UWP per le app \[ desktop di 2000 \| Server\]<br/>                           |
+| Intestazione<br/>                   | <dl> <dt>Codecapi.h</dt> </dl> |
 
 
 
@@ -41,7 +41,7 @@ Si tratta di una proprietà di lettura/scrittura.
 
 <dl> <dt>
 
-[Proprietà dell'API codec](codec-api-properties.md)
+[Proprietà API codec](codec-api-properties.md)
 </dt> <dt>
 
 [**Interfaccia ICodecAPI**](/windows/desktop/api/Strmif/nn-strmif-icodecapi)

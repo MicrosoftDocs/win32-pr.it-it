@@ -1,7 +1,7 @@
 ---
 description: Specifica la memorizzazione nella cache di un handle per una stampante aperta con OpenPrinter2.
 ms.assetid: e5a62322-723c-490d-8de1-f74dcac9e22d
-title: Enumerazione PRINTER_OPTION_FLAGS (winspool. h)
+title: PRINTER_OPTION_FLAGS enumerazione (Winspool.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -13,16 +13,16 @@ api_type:
 - HeaderDef
 api_location:
 - Winspool.h
-ms.openlocfilehash: 683ad70b5db12c11a2bccd11905e7ef87fce1bc7
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: b8541ec00f0d53bf58a826ceb7d8b8a821008fb6a66c0fe3917ebc12822e0e5f
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "104233042"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120091801"
 ---
-# <a name="printer_option_flags-enumeration"></a>\_ \_ Enumerazione flag opzioni stampante
+# <a name="printer_option_flags-enumeration"></a>Enumerazione PRINTER \_ OPTION \_ FLAGS
 
-Specifica la memorizzazione nella cache di un handle per una stampante aperta con [**OpenPrinter2**](openprinter2.md).
+Specifica la memorizzazione nella cache di un handle per una stampante aperta [**con OpenPrinter2.**](openprinter2.md)
 
 ## <a name="syntax"></a>Sintassi
 
@@ -41,24 +41,24 @@ typedef enum tagPRINTER_OPTION_FLAGS {
 
 <dl> <dt>
 
-<span id="PRINTER_OPTION_NO_CACHE"></span><span id="printer_option_no_cache"></span>**\_opzione stampante \_ senza \_ cache**
+<span id="PRINTER_OPTION_NO_CACHE"></span><span id="printer_option_no_cache"></span>**OPZIONE \_ STAMPANTE \_ NESSUNA \_ CACHE**
 </dt> <dd>
 
-L'handle non viene memorizzato nella cache. Tutte le funzioni applicate a un handle restituito da [**OpenPrinter2**](openprinter2.md) verranno inviate al computer remoto.
+L'handle non viene memorizzato nella cache. Tutte le funzioni applicate a un handle restituito da [**OpenPrinter2**](openprinter2.md) verranno applicate al computer remoto.
 
 </dd> <dt>
 
-<span id="PRINTER_OPTION_CACHE"></span><span id="printer_option_cache"></span>**\_cache delle opzioni della stampante \_**
+<span id="PRINTER_OPTION_CACHE"></span><span id="printer_option_cache"></span>**PRINTER \_ OPTION \_ CACHE**
 </dt> <dd>
 
-L'handle viene memorizzato nella cache. Tutte le funzioni applicate a un handle restituito da [**OpenPrinter2**](openprinter2.md) verranno inviate alla cache locale.
+L'handle viene memorizzato nella cache. Tutte le funzioni applicate a un handle restituito [**da OpenPrinter2**](openprinter2.md) verranno memorizzate nella cache locale.
 
 </dd> <dt>
 
-<span id="PRINTER_OPTION_CLIENT_CHANGE"></span><span id="printer_option_client_change"></span>**\_opzione stampante \_ - \_ modifica client**
+<span id="PRINTER_OPTION_CLIENT_CHANGE"></span><span id="printer_option_client_change"></span>**MODIFICA \_ DEL \_ CLIENT DELL'OPZIONE \_ STAMPANTE**
 </dt> <dd>
 
-L'handle restituito da [**OpenPrinter2**](openprinter2.md) può essere usato da [**seprinter**](setprinter.md) per rinominare la connessione alla stampante.
+L'handle restituito [**da OpenPrinter2**](openprinter2.md) può essere usato da [**SetPrinter**](setprinter.md) per rinominare la connessione della stampante.
 
 </dd> </dl>
 
@@ -68,9 +68,9 @@ L'handle restituito da [**OpenPrinter2**](openprinter2.md) può essere usato da 
 
 | Requisito | Valore |
 |-------------------------------------|-----------------------------------------------------------------------------------------------------------|
-| Client minimo supportato<br/> | \[Solo app desktop di Windows Vista\]<br/>                                                            |
-| Server minimo supportato<br/> | \[Solo app desktop Windows Server 2008\]<br/>                                                      |
-| Intestazione<br/>                   | <dl> <dt>Winspool. h (include Windows. h)</dt> </dl> |
+| Client minimo supportato<br/> | Windows Solo \[ app desktop Vista\]<br/>                                                            |
+| Server minimo supportato<br/> | Windows Solo app desktop di Server 2008 \[\]<br/>                                                      |
+| Intestazione<br/>                   | <dl> <dt>Winspool.h (includere Windows.h)</dt> </dl> |
 
 
 
@@ -81,13 +81,13 @@ L'handle restituito da [**OpenPrinter2**](openprinter2.md) può essere usato da 
 [Stampa](printdocs-printing.md)
 </dt> <dt>
 
-[Strutture dell'API spooler di stampa](printing-and-print-spooler-structures.md)
+[Strutture dell'API Spooler di stampa](printing-and-print-spooler-structures.md)
 </dt> <dt>
 
 [**OpenPrinter2**](openprinter2.md)
 </dt> <dt>
 
-[**SetPrinter**](setprinter.md)
+[**Setprinter**](setprinter.md)
 </dt> </dl>
 
  

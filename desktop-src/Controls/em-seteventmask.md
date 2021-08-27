@@ -1,9 +1,9 @@
 ---
-title: Messaggio di EM_SETEVENTMASK (RichEdit. h)
-description: Imposta la maschera di eventi per un controllo Rich Edit. La maschera eventi specifica i codici di notifica che il controllo Invia alla finestra padre.
+title: EM_SETEVENTMASK messaggio (Richedit.h)
+description: Imposta la maschera evento per un controllo Rich Edit. La maschera eventi specifica i codici di notifica che il controllo invia alla finestra padre.
 ms.assetid: 139f6e44-fc54-40f2-a3f6-2b7efc819cae
 keywords:
-- Controlli di Windows Message EM_SETEVENTMASK
+- EM_SETEVENTMASK dei controlli Windows messaggio
 topic_type:
 - apiref
 api_name:
@@ -14,16 +14,16 @@ api_type:
 - HeaderDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: fd4d79d23f7b56a29bc4f5142ed03b23e8081687
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: 244274d969473531bae7c1d124af24a88d6b98d9db8bdbe073d054a3a9e36ac1
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "104478568"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120048501"
 ---
-# <a name="em_seteventmask-message"></a>\_Messaggio SETEVENTMASK em
+# <a name="em_seteventmask-message"></a>Messaggio \_ EM SETEVENTMASK
 
-Imposta la maschera di eventi per un controllo Rich Edit. La maschera eventi specifica i codici di notifica che il controllo Invia alla finestra padre.
+Imposta la maschera evento per un controllo Rich Edit. La maschera eventi specifica i codici di notifica che il controllo invia alla finestra padre.
 
 ## <a name="parameters"></a>Parametri
 
@@ -32,24 +32,24 @@ Imposta la maschera di eventi per un controllo Rich Edit. La maschera eventi spe
 *wParam* 
 </dt> <dd>
 
-Questo parametro non viene utilizzato. deve essere zero.
+Questo parametro non viene usato. deve essere zero.
 
 </dd> <dt>
 
 *lParam* 
 </dt> <dd>
 
-Nuova maschera eventi per il controllo Rich Edit. Per un elenco di maschere di eventi, vedere [**flag di maschera eventi del controllo Rich Edit**](rich-edit-control-event-mask-flags.md).
+Nuova maschera evento per il controllo Rich Edit. Per un elenco di maschere evento, vedere Flag di maschera eventi del [**controllo Rich Edit.**](rich-edit-control-event-mask-flags.md)
 
 </dd> </dl>
 
 ## <a name="return-value"></a>Valore restituito
 
-Questo messaggio restituisce la maschera eventi precedente.
+Questo messaggio restituisce la maschera evento precedente.
 
 ## <a name="remarks"></a>Commenti
 
-La maschera di eventi predefinita (prima che sia impostato) è ENM \_ None.
+La maschera di evento predefinita (prima dell'impostazione di qualsiasi) è ENM \_ NONE.
 
 ## <a name="requirements"></a>Requisiti
 
@@ -57,9 +57,9 @@ La maschera di eventi predefinita (prima che sia impostato) è ENM \_ None.
 
 | Requisito | Valore |
 |-------------------------------------|---------------------------------------------------------------------------------------|
-| Client minimo supportato<br/> | \[Solo app desktop di Windows Vista\]<br/>                                        |
-| Server minimo supportato<br/> | \[Solo app desktop Windows Server 2003\]<br/>                                  |
-| Intestazione<br/>                   | <dl> <dt>RichEdit. h</dt> </dl> |
+| Client minimo supportato<br/> | Windows Solo \[ app desktop Vista\]<br/>                                        |
+| Server minimo supportato<br/> | Windows Solo app desktop di Server 2003 \[\]<br/>                                  |
+| Intestazione<br/>                   | <dl> <dt>Richedit.h</dt> </dl> |
 
 
 
@@ -70,10 +70,10 @@ La maschera di eventi predefinita (prima che sia impostato) è ENM \_ None.
 **Riferimento**
 </dt> <dt>
 
-[**\_GETEVENTMASK em**](em-geteventmask.md)
+[**EM \_ GETEVENTMASK**](em-geteventmask.md)
 </dt> <dt>
 
-[**Flag di maschera eventi controllo Rich Edit**](rich-edit-control-event-mask-flags.md)
+[**Flag di maschera eventi del controllo Rich Edit**](rich-edit-control-event-mask-flags.md)
 </dt> </dl>
 
  

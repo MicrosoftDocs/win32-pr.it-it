@@ -1,9 +1,9 @@
 ---
-title: Codice di notifica TDN_TIMER (COMmctrl. h)
-description: Inviato da una finestra di dialogo attività approssimativamente ogni 200 millisecondi.
+title: TDN_TIMER codice di notifica (Commctrl.h)
+description: Inviato da una finestra di dialogo attività circa ogni 200 millisecondi.
 ms.assetid: 5a162d97-6912-45bc-8151-1ea56cc459ea
 keywords:
-- Controlli di Windows per il codice di notifica TDN_TIMER
+- TDN_TIMER codice di notifica Windows controlli
 topic_type:
 - apiref
 api_name:
@@ -14,16 +14,16 @@ api_type:
 - HeaderDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 2eea7a1604c70c187299c9f2c99abbe934926317
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: eaf3f5d72ef8267c6600decf070875b2dd109114f910d09a5ca343f8fde44005
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "106302636"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120104451"
 ---
-# <a name="tdn_timer-notification-code"></a>\_Codice di notifica del timer TDN
+# <a name="tdn_timer-notification-code"></a>Codice di notifica \_ TDN TIMER
 
-Inviato da una finestra di dialogo attività approssimativamente ogni 200 millisecondi. Questo codice di notifica viene inviato quando il \_ \_ flag del timer di callback TDF è stato impostato nel membro **DwFlags** della struttura [**TASKDIALOGCONFIG**](/windows/desktop/api/Commctrl/ns-commctrl-taskdialogconfig) che è stato passato alla funzione [**TaskDialogIndirect**](/windows/desktop/api/Commctrl/nf-commctrl-taskdialogindirect) . Questo codice di notifica viene ricevuto solo tramite la funzione di callback della finestra di dialogo attività, che può essere registrata tramite il metodo **TaskDialogIndirect** .
+Inviato da una finestra di dialogo attività circa ogni 200 millisecondi. Questo codice di notifica viene inviato quando il flag TIMER CALLBACK TDF è stato impostato nel membro \_ \_ **dwFlags** della struttura [**TASKDIALOGCONFIG**](/windows/desktop/api/Commctrl/ns-commctrl-taskdialogconfig) passato alla [**funzione TaskDialogIndirect.**](/windows/desktop/api/Commctrl/nf-commctrl-taskdialogindirect) Questo codice di notifica viene ricevuto solo tramite la funzione di callback del dialogo attività, che può essere registrata usando il **metodo TaskDialogIndirect.**
 
 
 ```C++
@@ -42,7 +42,7 @@ TDN_TIMER
 *wParam* 
 </dt> <dd>
 
-**DWORD** che specifica il numero di millisecondi trascorsi dal momento della creazione della finestra di dialogo oppure il codice di notifica ha restituito **\_ false**.
+Valore **DWORD che** specifica il numero di millisecondi trascorsi dalla creazione della finestra di dialogo o il codice di notifica ha restituito **S \_ FALSE.**
 
 </dd> <dt>
 
@@ -55,7 +55,7 @@ Deve essere zero.
 
 ## <a name="return-value"></a>Valore restituito
 
-Per reimpostare il TickCount, l'applicazione deve restituire **S \_ false**, in caso contrario il TickCount continuerà ad aumentare.
+Per reimpostare il tickcount, l'applicazione deve restituire **S \_ FALSE,** in caso contrario il tickcount continuerà a incrementare.
 
 ## <a name="requirements"></a>Requisiti
 
@@ -63,9 +63,9 @@ Per reimpostare il TickCount, l'applicazione deve restituire **S \_ false**, in 
 
 | Requisito | Valore |
 |-------------------------------------|---------------------------------------------------------------------------------------|
-| Client minimo supportato<br/> | \[Solo app desktop di Windows Vista\]<br/>                                        |
-| Server minimo supportato<br/> | \[Solo app desktop Windows Server 2008\]<br/>                                  |
-| Intestazione<br/>                   | <dl> <dt>Commctrl. h</dt> </dl> |
+| Client minimo supportato<br/> | Windows Solo \[ app desktop di Vista\]<br/>                                        |
+| Server minimo supportato<br/> | Windows Solo app desktop server 2008 \[\]<br/>                                  |
+| Intestazione<br/>                   | <dl> <dt>Commctrl.h</dt> </dl> |
 
 
 

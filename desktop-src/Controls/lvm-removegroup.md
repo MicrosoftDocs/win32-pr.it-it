@@ -1,9 +1,9 @@
 ---
-title: Messaggio LVM_REMOVEGROUP (COMmctrl. h)
+title: LVM_REMOVEGROUP messaggio (Commctrl.h)
 description: Rimuove un gruppo da un controllo visualizzazione elenco.
 ms.assetid: c6f4f54c-4cf8-47d0-8e96-fa8a1df0501b
 keywords:
-- Controlli di Windows Message LVM_REMOVEGROUP
+- LVM_REMOVEGROUP di controllo Windows messaggio
 topic_type:
 - apiref
 api_name:
@@ -14,14 +14,14 @@ api_type:
 - HeaderDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: fa631593e791f90c76a9f74aa1d967d9678540f5
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: c644a0367747ad63eb15a2b83a8df3078c1c89ca1c51875b178aa22d054de2b1
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "103964473"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120062321"
 ---
-# <a name="lvm_removegroup-message"></a>\_Messaggio REMOVEGROUP LVM
+# <a name="lvm_removegroup-message"></a>Messaggio LVM \_ REMOVEGROUP
 
 Rimuove un gruppo da un controllo visualizzazione elenco.
 
@@ -35,18 +35,18 @@ Rimuove un gruppo da un controllo visualizzazione elenco.
 *lParam* 
 </dt> <dd>
 
-Deve essere **null**.
+Deve essere **NULL.**
 
 </dd> </dl>
 
 ## <a name="return-value"></a>Valore restituito
 
-Restituisce l'indice del gruppo, se ha esito positivo, oppure-1 in caso contrario.
+Restituisce l'indice del gruppo in caso di esito positivo oppure -1 in caso contrario.
 
 ## <a name="remarks"></a>Commenti
 
 > [!Note]  
-> Per utilizzare questo messaggio, è necessario fornire un manifesto che specifichi Comclt32.dll versione 6,0. Per altre informazioni sui manifesti, vedere [Abilitazione degli stili di visualizzazione](cookbook-overview.md).
+> Per usare questo messaggio, è necessario fornire un manifesto che specifica Comclt32.dll versione 6.0. Per altre informazioni sui manifesti, vedere [Abilitazione degli stili di visualizzazione](cookbook-overview.md).
 
  
 
@@ -56,9 +56,9 @@ Restituisce l'indice del gruppo, se ha esito positivo, oppure-1 in caso contrari
 
 | Requisito | Valore |
 |-------------------------------------|---------------------------------------------------------------------------------------|
-| Client minimo supportato<br/> | \[Solo app desktop di Windows Vista\]<br/>                                        |
-| Server minimo supportato<br/> | \[Solo app desktop Windows Server 2003\]<br/>                                  |
-| Intestazione<br/>                   | <dl> <dt>Commctrl. h</dt> </dl> |
+| Client minimo supportato<br/> | Windows Solo \[ app desktop di Vista\]<br/>                                        |
+| Server minimo supportato<br/> | Windows Solo app desktop server 2003 \[\]<br/>                                  |
+| Intestazione<br/>                   | <dl> <dt>Commctrl.h</dt> </dl> |
 
 
 

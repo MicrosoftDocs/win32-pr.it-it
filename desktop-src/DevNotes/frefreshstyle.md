@@ -1,7 +1,7 @@
 ---
-description: Ricarica le impostazioni dei colori dal registro di sistema.
+description: Ricarica le impostazioni dei colori dal Registro di sistema.
 ms.assetid: 1F2EE08A-4193-4F0C-BE4F-0551FA71CFA8
-title: FRefreshStyle (funzione)
+title: Funzione FRefreshStyle
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -13,16 +13,16 @@ api_type:
 - DllExport
 api_location:
 - Imeshare.dll
-ms.openlocfilehash: 098e79ab49373dc115189a2c47dc3604fba10ef9
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: 5c071d76712877650bba8ecf502687538bb6ac354e62a0285dc08e2f22f25873
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "106327679"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120103691"
 ---
-# <a name="frefreshstyle-function"></a>FRefreshStyle (funzione)
+# <a name="frefreshstyle-function"></a>Funzione FRefreshStyle
 
-Ricarica le impostazioni dei colori dal registro di sistema.
+Ricarica le impostazioni dei colori dal Registro di sistema.
 
 ## <a name="syntax"></a>Sintassi
 
@@ -39,11 +39,11 @@ Questa funzione non ha parametri.
 
 ## <a name="return-value"></a>Valore restituito
 
-Restituisce TRUE in caso di esito positivo; in caso contrario, FALSE.
+Restituisce TRUE in caso di esito positivo. in caso contrario, FALSE.
 
 ## <a name="remarks"></a>Commenti
 
-Questa funzione non è associata a una libreria di importazione o a un file di intestazione. deve essere chiamato usando le funzioni [**LoadLibrary**](-loadlibrary.md) e [**GetProcAddress**](-getprocaddress-.md) .
+Questa funzione non è associata a una libreria di importazione o a un file di intestazione. deve essere chiamato usando le [**funzioni LoadLibrary**](-loadlibrary.md) e [**GetProcAddress.**](-getprocaddress-.md)
 
 ## <a name="requirements"></a>Requisiti
 

@@ -1,7 +1,7 @@
 ---
-description: Il \_ metodo Get Filter recupera un puntatore al filtro di origine attualmente utilizzato dal rilevamento multimediale.
+description: Il metodo get \_ Filter recupera un puntatore al filtro di origine attualmente usato dal rilevatore di supporti.
 ms.assetid: 23d603c1-445d-425a-973e-7bfe0a2d19f2
-title: 'Metodo IMediaDet:: get_Filter (qedit. h)'
+title: Metodo IMediaDet::get_Filter (Qedit.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -14,21 +14,21 @@ api_type:
 api_location:
 - strmiids.lib
 - strmiids.dll
-ms.openlocfilehash: 5f80b5d5021ca7f04cd56dc319fb5416c3361108
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: c3d4622438dbb8c8dfc54183550c274fcd4555de8b75435b85bbbebfae9c2c1a
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "106331507"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120083761"
 ---
-# <a name="imediadetget_filter-method"></a>Metodo IMediaDet:: Get \_ Filter
+# <a name="imediadetget_filter-method"></a>Metodo IMediaDet::get \_ Filter
 
 > [!Note]  
-> \[Deprecato. Questa API può essere rimossa dalle versioni successive di Windows.\]
+> \[Deprecato. Questa API potrebbe essere rimossa dalle versioni future Windows.\]
 
  
 
-Il `get_Filter` metodo recupera un puntatore al filtro di origine attualmente utilizzato dal rilevamento multimediale.
+Il `get_Filter` metodo recupera un puntatore al filtro di origine attualmente usato dal rilevatore di supporti.
 
 ## <a name="syntax"></a>Sintassi
 
@@ -48,25 +48,25 @@ HRESULT get_Filter(
 *ppVal* \[ out, retval\]
 </dt> <dd>
 
-Riceve un puntatore all'interfaccia **IUnknown** del filtro. Se non è in uso alcun filtro di origine, il valore viene impostato su **null**.
+Riceve un puntatore all'interfaccia **IUnknown del** filtro. Se non è in uso alcun filtro di origine, il valore viene impostato su **NULL.**
 
 </dd> </dl>
 
 ## <a name="return-value"></a>Valore restituito
 
-Se questo metodo ha esito positivo, restituisce **S \_ OK**. In caso contrario, restituisce un codice di errore **HRESULT** .
+Se questo metodo ha esito positivo, restituisce **S \_ OK**. In caso contrario, restituisce un **codice di errore HRESULT.**
 
 ## <a name="remarks"></a>Commenti
 
-Quando il metodo restituisce un risultato, se *\* ppVal* non è **null**, l'interfaccia **IUnknown** presenta un conteggio dei riferimenti in attesa. Rilasciare l'interfaccia al termine dell'utilizzo.
+Quando il metodo termina, se *\* ppVal* non è **NULL,** **l'interfaccia IUnknown** ha un conteggio dei riferimenti in sospeso. Al termine dell'uso, rilasciare l'interfaccia .
 
 > [!Note]  
-> Il file di intestazione qedit. h non è compatibile con le intestazioni Direct3D successive alla versione 7.
+> Il file di intestazione Qedit.h non è compatibile con le intestazioni Direct3D successive alla versione 7.
 
  
 
 > [!Note]  
-> Per ottenere qedit. h, scaricare l' [aggiornamento Microsoft Windows SDK per Windows Vista e .NET Framework 3,0](https://msdn.microsoft.com/windowsvista/bb980924.aspx). Qedit. h non è disponibile nel Microsoft Windows SDK per Windows 7 e .NET Framework 3,5 Service Pack 1.
+> Per ottenere Qedit.h, scaricare l'aggiornamento di Microsoft Windows SDK per Windows [Vista e .NET Framework 3.0.](https://msdn.microsoft.com/windowsvista/bb980924.aspx) Qedit.h non è disponibile in Microsoft Windows SDK per Windows 7 e .NET Framework 3.5 Service Pack 1.
 
  
 
@@ -76,8 +76,8 @@ Quando il metodo restituisce un risultato, se *\* ppVal* non è **null**, l'inte
 
 | Requisito | Valore |
 |--------------------|-----------------------------------------------------------------------------------------|
-| Intestazione<br/>  | <dl> <dt>Qedit. h</dt> </dl>      |
-| Libreria<br/> | <dl> <dt>Strmiids. lib</dt> </dl> |
+| Intestazione<br/>  | <dl> <dt>Qedit.h</dt> </dl>      |
+| Libreria<br/> | <dl> <dt>Strmiids.lib</dt> </dl> |
 
 
 

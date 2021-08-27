@@ -1,6 +1,6 @@
 ---
 description: 'Altre informazioni su: JET_RECSIZE. Metodo Equals (JET_RECSIZE)'
-title: JET_RECSIZE. Metodo Equals (JET_RECSIZE) (Microsoft. ISAM. esent. Interop. vista)
+title: JET_RECSIZE. Metodo Equals (JET_RECSIZE) (Microsoft.Isam.Esent.Interop.Vista)
 TOCTitle: Equals method (JET_RECSIZE)
 ms:assetid: M:Microsoft.Isam.Esent.Interop.Vista.JET_RECSIZE.Equals(Microsoft.Isam.Esent.Interop.Vista.JET_RECSIZE)
 ms:mtpsurl: https://msdn.microsoft.com/library/microsoft.isam.esent.interop.vista.jet_recsize.equals(v=EXCHG.10)
@@ -20,19 +20,19 @@ api_type:
 api_location:
 - Microsoft.Isam.Esent.Interop.dll
 ROBOTS: INDEX,FOLLOW
-ms.openlocfilehash: ecc4aff26b80754d47fdffb70dbdeb1963cf065f
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 62a99854f2c32dd6aa40cb69e28621814063e8d9acd3fbf6d428ca4298ace311
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "106305772"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120093431"
 ---
 # <a name="jet_recsizeequals-method-jet_recsize"></a>JET_RECSIZE. Metodo Equals (JET_RECSIZE)
 
-Restituisce un valore che indica se questa istanza è uguale a un'altra istanza.
+Restituisce un valore che indica se questa istanza è uguale a un'altra istanza di .
 
-**Spazio dei nomi:**  [Microsoft. ISAM. esent. Interop. vista](./microsoft.isam.esent.interop.vista-namespace.md)  
-**Assembly:**  Microsoft. ISAM. esent. Interop (in Microsoft.Isam.Esent.Interop.dll)
+**Spazio dei nomi:**  [Microsoft.Isam.Esent.Interop.Vista](./microsoft.isam.esent.interop.vista-namespace.md)  
+**Assembly:**  Microsoft.Isam.Esent.Interop (in Microsoft.Isam.Esent.Interop.dll)
 
 ## <a name="syntax"></a>Sintassi
 
@@ -58,27 +58,27 @@ public bool Equals(
 #### <a name="parameters"></a>Parametri
 
   - altro  
-    Tipo: [Microsoft.ISAM.esent.Interop.vista.JET_RECSIZE](./jet-recsize-structure2.md)  
+    Tipo: [Microsoft.Isam.Esent.Interop.Vista.JET_RECSIZE](./jet-recsize-structure2.md)  
     
     Oggetto da confrontare con l'istanza.
 
 #### <a name="return-value"></a>Valore restituito
 
-Tipo: [System. Boolean](/dotnet/api/system.boolean)  
+Tipo: [System.Boolean](/dotnet/api/system.boolean)  
 True se le due istanze sono uguali.  
 
 #### <a name="implements"></a>Implementazioni
 
-[IEquatable \<T\> . Uguale a (T)](/dotnet/api/system.iequatable-1.equals#System_IEquatable_1_Equals__0_)  
+[IEquatable. \<T\> Equals(T)](/dotnet/api/system.iequatable-1.equals#System_IEquatable_1_Equals__0_)  
 
 ## <a name="see-also"></a>Vedi anche
 
 #### <a name="reference"></a>Riferimento
 
-[Struttura JET_RECSIZE](./jet-recsize-structure2.md)
+[JET_RECSIZE struttura](./jet-recsize-structure2.md)
 
-[Membri JET_RECSIZE](./jet-recsize-members.md)
+[JET_RECSIZE membri](./jet-recsize-members.md)
 
 [Confronta l'overload](./jet-recsize.equals-method.md)
 
-[Spazio dei nomi Microsoft. ISAM. esent. Interop. vista](./microsoft.isam.esent.interop.vista-namespace.md)
+[Spazio dei nomi Microsoft.Isam.Esent.Interop.Vista](./microsoft.isam.esent.interop.vista-namespace.md)

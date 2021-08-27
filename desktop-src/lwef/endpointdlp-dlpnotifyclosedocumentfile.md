@@ -1,5 +1,5 @@
 ---
-description: Fornisce al sistema informazioni su un documento prima che venga avviata l'operazione di chiusura del file del documento.
+description: Fornisce al sistema informazioni su un documento prima dell'avvio dell'operazione di chiusura del file di documento.
 title: Funzione DlpNotifyCloseDocumentFile (endpointdlp.h)
 ms.topic: reference
 ms.date: 03/18/2021
@@ -12,16 +12,16 @@ api_type:
 - DllExport
 api_location:
 - EndpointDlp.dll
-ms.openlocfilehash: 2438829cde84e9029a86d74e4ed704e1e8d33511
-ms.sourcegitcommit: 91110c16e4713ed82d7fb80562d3ddf40b5d76b2
+ms.openlocfilehash: fc4aff982ebfa8e16f4a7d2c0cd42a847825b422af761416d4a410a03df66446
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/14/2021
-ms.locfileid: "107495719"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120062141"
 ---
 # <a name="dlpnotifyclosedocumentfile-function"></a>Funzione DlpNotifyCloseDocumentFile
 
-Fornisce al sistema informazioni su un documento prima che venga avviata l'operazione di chiusura del file del documento.
+Fornisce al sistema informazioni su un documento prima dell'avvio dell'operazione di chiusura del file di documento.
 
 ## <a name="syntax"></a>Sintassi
 
@@ -39,7 +39,7 @@ void WINAPI DlpNotifyCloseDocumentFile(_In_ const PDLP_DOCUMENT_INFO DocumentInf
 *DocumentInfo* \[ Pollici\]
 </dt> <dd>
 
-Puntatore a una [PDLP_DOCUMENT_INFO](endpointdlp-dlp_document_info.md) struttura contenente informazioni sul documento da aprire.
+Puntatore a una [PDLP_DOCUMENT_INFO](endpointdlp-dlp_document_info.md) contenente informazioni sul documento da aprire.
 
 </dd> </dl>
 

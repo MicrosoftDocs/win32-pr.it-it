@@ -1,35 +1,35 @@
 ---
-description: Uso di System Device Enumerator
+description: Uso dell'enumeratore del dispositivo di sistema
 ms.assetid: 70db139c-2c5b-4574-bec3-dfe758b16715
-title: Uso di System Device Enumerator
+title: Uso dell'enumeratore del dispositivo di sistema
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 88f8f66cb64e9f7bb51d6b0716b9fa23cf531435
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 7192a1ea85d807dd388b79eef455edf59c83d3c22ab3a4a330799b3491253bb6
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "104564174"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120083536"
 ---
-# <a name="using-the-system-device-enumerator"></a>Uso di System Device Enumerator
+# <a name="using-the-system-device-enumerator"></a>Uso dell'enumeratore del dispositivo di sistema
 
-L'enumeratore di dispositivo System fornisce un modo uniforme per enumerare, per categoria, i filtri registrati nel sistema di un utente. Inoltre, distingue tra i singoli dispositivi hardware, anche se lo stesso filtro li supporta. Questa operazione è particolarmente utile per i dispositivi che usano il Windows Driver Model (WDM) e il filtro KSProxy. Ad esempio, l'utente potrebbe avere diversi dispositivi di acquisizione video WDM, tutti supportati dallo stesso filtro. L'enumeratore di dispositivi di sistema li considera come istanze di dispositivo separate.
+L'enumeratore dispositivo di sistema fornisce un modo uniforme per enumerare, per categoria, i filtri registrati nel sistema di un utente. Inoltre, distingue tra singoli dispositivi hardware, anche se lo stesso filtro li supporta. Ciò è particolarmente utile per i dispositivi che usano Windows Driver Model (WDM) e il filtro KSProxy. Ad esempio, l'utente potrebbe avere diversi dispositivi di acquisizione video WDM, tutti supportati dallo stesso filtro. L'enumeratore del dispositivo di sistema li considera come istanze di dispositivo separate.
 
-L'enumeratore di dispositivi di sistema funziona creando un enumeratore per una categoria specifica, ad esempio l'acquisizione audio o la compressione video. L'enumeratore Category restituisce un moniker univoco per ogni dispositivo nella categoria. L'enumeratore Category include automaticamente eventuali dispositivi Plug and Play rilevanti nella categoria. Per un elenco di categorie, vedere [filtrare le categorie](filter-categories.md).
+L'enumeratore dispositivo di sistema funziona creando un enumeratore per una categoria specifica, ad esempio l'acquisizione audio o la compressione video. L'enumeratore di categoria restituisce un moniker univoco per ogni dispositivo nella categoria. L'enumeratore di categoria include automaticamente Plug and Play dispositivi pertinenti nella categoria. Per un elenco di categorie, vedere [Filtrare le categorie](filter-categories.md).
 
-Per usare l'enumeratore di dispositivo di sistema, eseguire le operazioni seguenti:
+Per usare l'enumeratore del dispositivo di sistema, eseguire le operazioni seguenti:
 
-1.  Creare l'enumeratore di dispositivo di sistema chiamando **CoCreateInstance**. L'identificatore di classe (CLSID) è CLSID \_ SystemDeviceEnum.
-2.  Ottenere un enumeratore Category chiamando [**ICreateDevEnum:: CreateClassEnumerator**](/windows/desktop/api/Strmif/nf-strmif-icreatedevenum-createclassenumerator) con il CLSID della categoria desiderata. Questo metodo restituisce un puntatore all'interfaccia **IEnumMoniker** . Se la categoria è vuota (o non esiste), il metodo restituisce \_ false anziché un codice di errore. In caso affermativo, il puntatore **IEnumMoniker** restituito è **null** e la dereferenziazione provocherà un'eccezione. Pertanto, testare in modo esplicito for S \_ OK quando si chiama **CreateClassEnumerator**, invece di chiamare la normale macro **succeeded** .
-3.  Usare il metodo **IEnumMoniker:: Next** per enumerare ogni moniker. Questo metodo restituisce un puntatore a interfaccia **IMoniker** . Quando il metodo **successivo** raggiunge la fine dell'enumerazione, restituisce anche s \_ false, quindi controlla di nuovo la presenza di s \_ OK.
-4.  Per recuperare il nome descrittivo del dispositivo (ad esempio, per visualizzarlo nell'interfaccia utente), chiamare il metodo **IMoniker:: BindToStorage** .
-5.  Per creare e inizializzare il filtro DirectShow che gestisce il dispositivo, chiamare **IMoniker:: BindToObject** nel moniker. Chiamare [**IFilterGraph:: AddFilter**](/windows/desktop/api/Strmif/nf-strmif-ifiltergraph-addfilter) per aggiungere il filtro al grafo.
+1.  Creare l'enumeratore del dispositivo di sistema chiamando **CoCreateInstance**. L'identificatore di classe (CLSID) è CLSID \_ SystemDeviceEnum.
+2.  Ottenere un enumeratore di categoria chiamando [**ICreateDevEnum::CreateClassEnumerator**](/windows/desktop/api/Strmif/nf-strmif-icreatedevenum-createclassenumerator) con il CLSID della categoria desiderata. Questo metodo restituisce un puntatore a **interfaccia IEnumMoniker.** Se la categoria è vuota (o non esiste), il metodo restituisce S \_ FALSE anziché un codice di errore. In tal caso, il **puntatore IEnumMoniker** restituito è **NULL** e la sua dereferenziazione causerà un'eccezione. Pertanto, testare in modo esplicito S \_ OK quando si chiama **CreateClassEnumerator**, anziché chiamare la consueta macro **SUCCEEDED.**
+3.  Usare il **metodo IEnumMoniker::Next** per enumerare ogni moniker. Questo metodo restituisce un puntatore a **interfaccia IMoniker.** Quando il **metodo Next** raggiunge la fine dell'enumerazione, restituisce anche S FALSE, quindi controllare di nuovo \_ S \_ OK.
+4.  Per recuperare il nome descrittivo del dispositivo, ad esempio da visualizzare nell'interfaccia utente, chiamare il metodo **IMoniker::BindToStorage.**
+5.  Per creare e inizializzare DirectShow filtro che gestisce il dispositivo, chiamare **IMoniker::BindToObject** nel moniker. Chiamare [**IFilterGraph::AddFilter**](/windows/desktop/api/Strmif/nf-strmif-ifiltergraph-addfilter) per aggiungere il filtro al grafo.
 
 La figura seguente illustra questo processo.
 
-![Enumerazione dei dispositivi](images/sysdevenum.png)
+![enumerazione di dispositivi](images/sysdevenum.png)
 
-Nell'esempio seguente viene illustrato come enumerare i compressioni video installati nel sistema dell'utente. Per brevità, nell'esempio viene eseguito il controllo minimo degli errori.
+L'esempio seguente illustra come enumerare i video compressi installati nel sistema dell'utente. Per brevità, l'esempio esegue un controllo degli errori minimo.
 
 
 ```C++
@@ -88,11 +88,11 @@ pSysDevEnum->Release();
 
 **Moniker del dispositivo**
 
-Per i moniker del dispositivo, è possibile passare il moniker al metodo [**IFilterGraph2:: AddSourceFilterForMoniker**](/windows/desktop/api/Strmif/nf-strmif-ifiltergraph2-addsourcefilterformoniker) per creare un filtro di acquisizione per il dispositivo. Per un esempio di codice, vedere la documentazione relativa a tale metodo.
+Per i moniker del dispositivo, è possibile passare il moniker al metodo [**IFilterGraph2::AddSourceFilterForMoniker**](/windows/desktop/api/Strmif/nf-strmif-ifiltergraph2-addsourcefilterformoniker) per creare un filtro di acquisizione per il dispositivo. Per il codice di esempio, vedere la documentazione relativa a tale metodo.
 
-Il metodo **IMoniker:: GetDisplayName** restituisce il nome visualizzato del moniker. Sebbene il nome visualizzato sia leggibile, in genere non viene visualizzato a un utente finale. Ottenere invece il nome descrittivo dall'elenco delle proprietà, come descritto in precedenza.
+Il **metodo IMoniker::GetDisplayName** restituisce il nome visualizzato del moniker. Anche se il nome visualizzato è leggibile, in genere non lo si visualizza a un utente finale. Ottenere invece il nome descrittivo dall'elenco delle proprietà, come descritto in precedenza.
 
-Il metodo **IMoniker::P arsedisplayname** o la funzione **MkParseDisplayName** può essere usato per creare un moniker di dispositivo predefinito per una categoria di filtro specificata. Usare un nome visualizzato con il formato `@device:*:{category-clsid}` , dove `category-clsid` è la rappresentazione di stringa del GUID di categoria. Il moniker predefinito è il primo moniker restituito dall'enumeratore del dispositivo per tale categoria.
+È possibile usare il metodo **IMoniker::P arseDisplayName** o la funzione **MkParseDisplayName** per creare un moniker di dispositivo predefinito per una determinata categoria di filtri. Usare un nome visualizzato con il formato `@device:*:{category-clsid}` , dove è la `category-clsid` rappresentazione di stringa del GUID della categoria. Il moniker predefinito è il primo moniker restituito dall'enumeratore del dispositivo per la categoria.
 
  
 

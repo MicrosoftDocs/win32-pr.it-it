@@ -1,21 +1,21 @@
 ---
 description: Un programma di configurazione del servizio usa le funzioni ChangeServiceConfig e ChangeServiceConfig2 per modificare i parametri di configurazione di un servizio installato.
 ms.assetid: 79aa4ad5-87ee-4f5d-9c8e-4e788f4c7182
-title: Modifica della configurazione di un servizio
+title: Modifica di una configurazione dei servizi
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: ed7afffcb896e7732536ad308ccd54f0ae1f0a05
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 88cb7fe3739e1ff6cc47a548f5a40111c2383c27f2da34496e3038acbe835a4a
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "104346526"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120126461"
 ---
 # <a name="changing-a-services-configuration"></a>Modifica della configurazione di un servizio
 
-Un [programma di configurazione del servizio](service-configuration-programs.md) usa le funzioni [**ChangeServiceConfig**](/windows/desktop/api/Winsvc/nf-winsvc-changeserviceconfiga) e [**ChangeServiceConfig2**](/windows/desktop/api/Winsvc/nf-winsvc-changeserviceconfig2a) per modificare i parametri di configurazione di un servizio installato. Il programma apre un handle per l'oggetto servizio, ne modifica la configurazione e quindi chiude l'handle dell'oggetto servizio.
+Un [programma di configurazione del](service-configuration-programs.md) servizio usa le funzioni [**ChangeServiceConfig**](/windows/desktop/api/Winsvc/nf-winsvc-changeserviceconfiga) e [**ChangeServiceConfig2**](/windows/desktop/api/Winsvc/nf-winsvc-changeserviceconfig2a) per modificare i parametri di configurazione di un servizio installato. Il programma apre un handle per l'oggetto servizio, ne modifica la configurazione e quindi chiude l'handle dell'oggetto servizio.
 
-Nell'esempio seguente, la funzione DoDisableSvc utilizza [**ChangeServiceConfig**](/windows/desktop/api/Winsvc/nf-winsvc-changeserviceconfiga) per impostare il tipo di avvio del servizio su "disabled", la funzione DoEnableSvc utilizza **ChangeServiceConfig** per impostare il tipo di avvio del servizio su "Enabled" e la funzione DoUpdateSvcDesc utilizza [**ChangeServiceConfig2**](/windows/desktop/api/Winsvc/nf-winsvc-changeserviceconfig2a) per impostare la descrizione del servizio su "Questa è una descrizione del test". La variabile szSvcName è una variabile globale che contiene il nome del servizio. Per l'esempio completo che imposta questa variabile, vedere [SvcConfig. cpp](svcconfig-cpp.md).
+Nell'esempio seguente la funzione DoDisableSvc usa [**ChangeServiceConfig**](/windows/desktop/api/Winsvc/nf-winsvc-changeserviceconfiga) per modificare il tipo di avvio del servizio in "Disabled", la funzione DoEnableSvc usa **ChangeServiceConfig per** modificare il tipo di avvio del servizio in "Enabled" e la funzione DoUpdateSvcDesc usa [**ChangeServiceConfig2**](/windows/desktop/api/Winsvc/nf-winsvc-changeserviceconfig2a) per impostare la descrizione del servizio su "This is a test description". La variabile szSvcName è una variabile globale che contiene il nome del servizio. Per l'esempio completo che imposta questa variabile, vedere [SvcConfig.cpp](svcconfig-cpp.md).
 
 
 ```C++
@@ -217,7 +217,7 @@ VOID __stdcall DoUpdateSvcDesc()
 
 <dl> <dt>
 
-[Configurazione del servizio](service-configuration.md)
+[Service Configuration](service-configuration.md)
 </dt> <dt>
 
 [Esempio di servizio completo](the-complete-service-sample.md)

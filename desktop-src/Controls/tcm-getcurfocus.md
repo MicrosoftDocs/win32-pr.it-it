@@ -1,9 +1,9 @@
 ---
-title: Messaggio TCM_GETCURFOCUS (COMmctrl. h)
-description: Restituisce l'indice dell'elemento con lo stato attivo in un controllo struttura a schede. È possibile inviare questo messaggio in modo esplicito o utilizzando la \_ macro TabCtrl GetCurFocus.
+title: TCM_GETCURFOCUS messaggio (Commctrl.h)
+description: Restituisce l'indice dell'elemento con lo stato attivo in un controllo Struttura a schede. È possibile inviare questo messaggio in modo esplicito o tramite la macro TabCtrl \_ GetCurFocus.
 ms.assetid: ae6ee159-c769-41d6-b0bb-2a9ade4c0e71
 keywords:
-- Controlli di Windows Message TCM_GETCURFOCUS
+- TCM_GETCURFOCUS dei messaggi Windows controlli
 topic_type:
 - apiref
 api_name:
@@ -14,16 +14,16 @@ api_type:
 - HeaderDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: b0b0d0f3d2bbd4a7cf0ab2a63c5a988f60768eec
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: 694fb64b033d279292a687c39959925a68999c0b232c847bdf6ec6b476c725e8
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "103964792"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120104941"
 ---
-# <a name="tcm_getcurfocus-message"></a>\_Messaggio TCM GETCURFOCUS
+# <a name="tcm_getcurfocus-message"></a>Messaggio GETCURFOCUS di TCM \_
 
-Restituisce l'indice dell'elemento con lo stato attivo in un controllo struttura a schede. È possibile inviare questo messaggio in modo esplicito o utilizzando la macro [**TabCtrl \_ GetCurFocus**](/windows/desktop/api/Commctrl/nf-commctrl-tabctrl_getcurfocus) .
+Restituisce l'indice dell'elemento con lo stato attivo in un controllo Struttura a schede. È possibile inviare questo messaggio in modo esplicito o tramite la macro [**TabCtrl \_ GetCurFocus.**](/windows/desktop/api/Commctrl/nf-commctrl-tabctrl_getcurfocus)
 
 ## <a name="parameters"></a>Parametri
 
@@ -37,7 +37,7 @@ Restituisce l'indice dell'elemento con lo stato attivo in un controllo struttura
 
 ## <a name="return-value"></a>Valore restituito
 
-Restituisce l'indice dell'elemento di scheda con lo stato attivo.
+Restituisce l'indice dell'elemento della scheda con lo stato attivo.
 
 ## <a name="remarks"></a>Commenti
 
@@ -49,9 +49,9 @@ L'elemento con lo stato attivo può essere diverso dall'elemento selezionato.
 
 | Requisito | Valore |
 |-------------------------------------|---------------------------------------------------------------------------------------|
-| Client minimo supportato<br/> | \[Solo app desktop di Windows Vista\]<br/>                                        |
-| Server minimo supportato<br/> | \[Solo app desktop Windows Server 2003\]<br/>                                  |
-| Intestazione<br/>                   | <dl> <dt>Commctrl. h</dt> </dl> |
+| Client minimo supportato<br/> | Windows Solo \[ app desktop di Vista\]<br/>                                        |
+| Server minimo supportato<br/> | Windows Solo app desktop server 2003 \[\]<br/>                                  |
+| Intestazione<br/>                   | <dl> <dt>Commctrl.h</dt> </dl> |
 
 
 

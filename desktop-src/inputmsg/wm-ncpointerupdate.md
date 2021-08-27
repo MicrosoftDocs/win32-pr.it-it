@@ -1,9 +1,9 @@
 ---
-title: Messaggio WM_NCPOINTERUPDATE
-description: Inviato per fornire un aggiornamento su un puntatore che ha effettuato il contatto sull'area non client di una finestra o quando un contatto non acquisito in sospeso passa sull'area non client di una finestra.
+title: WM_NCPOINTERUPDATE messaggio
+description: Pubblicato per fornire un aggiornamento su un puntatore che ha reso il contatto sull'area non client di una finestra o quando un contatto non incapsulato al passaggio del mouse si sposta sull'area non client di una finestra.
 ms.assetid: 3bdc37da-227c-4be1-bf0b-99704caa1322
 keywords:
-- Messaggi e notifiche di input del messaggio WM_NCPOINTERUPDATE
+- WM_NCPOINTERUPDATE messaggi di input e notifiche del messaggio
 topic_type:
 - apiref
 api_name:
@@ -14,21 +14,21 @@ api_type:
 - HeaderDef
 ms.topic: article
 ms.date: 02/03/2020
-ms.openlocfilehash: 09ef5fd6f3b7378a963be4278f1fabdf0f6ab351
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: 6f1cf786af00175f75b5faee11b384aa31618d89427826f9c1454006df461f0b
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "104400501"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120062421"
 ---
-# <a name="wm_ncpointerupdate-message"></a>Messaggio WM_NCPOINTERUPDATE
+# <a name="wm_ncpointerupdate-message"></a>WM_NCPOINTERUPDATE messaggio
 
-Inviato per fornire un aggiornamento su un puntatore che ha effettuato il contatto sull'area non client di una finestra o quando un contatto non acquisito in sospeso passa sull'area non client di una finestra. Mentre il puntatore è posizionato al passaggio del mouse, il messaggio viene indirizzato a qualsiasi finestra su cui si trova il puntatore. Mentre il puntatore è in contatto con la superficie, il puntatore viene acquisito in modo implicito nella finestra su cui il puntatore ha effettuato il contatto e tale finestra continua a ricevere l'input per il puntatore finché non interrompe il contatto.
+Pubblicato per fornire un aggiornamento su un puntatore che ha reso il contatto sull'area non client di una finestra o quando un contatto non incapsulato al passaggio del mouse si sposta sull'area non client di una finestra. Durante il passaggio del puntatore, il messaggio è destinato a qualsiasi finestra su cui si trova il puntatore. Mentre il puntatore è in contatto con la superficie, il puntatore viene acquisito in modo implicito nella finestra sulla quale il puntatore ha effettuato il contatto e tale finestra continua a ricevere l'input per il puntatore fino a quando non interrompe il contatto.
 
-Se una finestra ha acquisito questo puntatore, questo messaggio non viene inviato. Al contrario, viene pubblicato un [**WM_POINTERUPDATE**](wm-pointerupdate.md) nella finestra che ha acquisito il puntatore.
+Se una finestra ha acquisito questo puntatore, questo messaggio non viene inviato. Viene invece inviato [**un WM_POINTERUPDATE**](wm-pointerupdate.md) alla finestra che ha acquisito questo puntatore.
 
 > \[! Importante\]  
-> Le applicazioni desktop devono essere compatibili con DPI. Se l'app non è compatibile con DPI, le coordinate dello schermo contenute nei messaggi puntatore e le strutture correlate potrebbero sembrare non accurate a causa della virtualizzazione DPI. La virtualizzazione DPI fornisce il supporto per il ridimensionamento automatico per le applicazioni che non sono compatibili con DPI ed è attivo per impostazione predefinita (gli utenti possono disabilitarlo). Per altre informazioni, vedere [scrittura di applicazioni Win32 ad alta risoluzione](/previous-versions//dd464660(v=vs.85)).
+> Le app desktop devono essere in grado di riconoscere DPI. Se l'app non è in grado di riconoscere DPI, le coordinate dello schermo contenute nei messaggi dell'indicatore di misura e nelle strutture correlate potrebbero apparire inaccurate a causa della virtualizzazione DPI. La virtualizzazione DPI offre il supporto per il ridimensionamento automatico per le applicazioni che non sono in grado di riconoscere DPI ed è attiva per impostazione predefinita (gli utenti possono disattivarla). Per altre informazioni, vedere [Writing High-DPI Win32 Applications](/previous-versions//dd464660(v=vs.85)).
 
  
 
@@ -50,7 +50,7 @@ Contiene l'identificatore del puntatore e informazioni aggiuntive. Usare le macr
 
 [**GET_POINTERID_WPARAM**](/previous-versions/windows/desktop/api)(wParam): identificatore del puntatore
 
-[**HIWORD**](/previous-versions/windows/desktop/legacy/ms632657(v=vs.85))(wParam): valore hit-test restituito dall'elaborazione del messaggio di [**WM_NCHITTEST**](../inputdev/wm-nchittest.md) .
+[**HIWORD**](/previous-versions/windows/desktop/legacy/ms632657(v=vs.85))(wParam): valore dell'hit test restituito [**dall'elaborazione WM_NCHITTEST**](../inputdev/wm-nchittest.md) messaggio.
 
 </dd> <dt>
 
@@ -60,26 +60,26 @@ Contiene l'identificatore del puntatore e informazioni aggiuntive. Usare le macr
 Contiene la posizione del punto del puntatore.
 
 > [!Note]  
-> Poiché il puntatore può rendere il contatto con il dispositivo su un'area non banale, questa posizione del punto può essere una semplificazione di un'area del puntatore più complessa. Laddove possibile, un'applicazione deve usare le informazioni complete sull'area del puntatore anziché la posizione del punto.
+> Poiché l'indicatore di misura può contattare il dispositivo su un'area non semplice, questa posizione del punto può essere una semplificazione di un'area del puntatore più complessa. Quando possibile, un'applicazione deve usare le informazioni complete sull'area del puntatore anziché la posizione del punto.
 
  
 
-Utilizzare le macro seguenti per recuperare le coordinate dello schermo fisico del punto.
+Usare le macro seguenti per recuperare le coordinate fisiche dello schermo del punto.
 
--   [**GET_X_LPARAM**](/windows/win32/api/windowsx/nf-windowsx-get_x_lparam)(lParam): coordinata X (punto orizzontale).
--   [**GET_Y_LPARAM**](/windows/win32/api/windowsx/nf-windowsx-get_y_lparam)(lParam): coordinata Y (punto verticale).
+-   [**GET_X_LPARAM**](/windows/win32/api/windowsx/nf-windowsx-get_x_lparam)(lParam): coordinata x (punto orizzontale).
+-   [**GET_Y_LPARAM**](/windows/win32/api/windowsx/nf-windowsx-get_y_lparam)(lParam): coordinata y (punto verticale).
 
 </dd> </dl>
 
 ## <a name="return-value"></a>Valore restituito
 
-Se un'applicazione elabora il messaggio, deve restituire zero.
+Se un'applicazione elabora questo messaggio, deve restituire zero.
 
 Se l'applicazione non elabora questo messaggio, deve chiamare [**DefWindowProc**](/windows/win32/api/winuser/nf-winuser-defwindowproca).
 
 ## <a name="remarks"></a>Commenti
 
-Se l'applicazione non elabora questo messaggio, [**DefWindowProc**](/windows/win32/api/winuser/nf-winuser-defwindowproca) può eseguire una o più azioni di sistema a seconda del risultato dell'hit test incluso nel messaggio. In genere, le applicazioni non devono necessariamente gestire questo messaggio.
+Se l'applicazione non elabora questo messaggio, [**DefWindowProc**](/windows/win32/api/winuser/nf-winuser-defwindowproca) può eseguire una o più azioni di sistema a seconda del risultato dell'hit test incluso nel messaggio. In genere, le applicazioni non devono gestire questo messaggio.
 
 ## <a name="requirements"></a>Requisiti
 
@@ -87,9 +87,9 @@ Se l'applicazione non elabora questo messaggio, [**DefWindowProc**](/windows/win
 
 | Requisito | Valore |
 |-------------------------------------|----------------------------------------------------------------------------------------------------------|
-| Client minimo supportato<br/> | \[Solo app desktop di Windows 8\]<br/>                                                               |
-| Server minimo supportato<br/> | \[Solo app desktop Windows Server 2012\]<br/>                                                     |
-| Intestazione<br/>                   | <dl> <dt>Winuser. h (include Windows. h)</dt> </dl> |
+| Client minimo supportato<br/> | \[Windows 8 solo app desktop\]<br/>                                                               |
+| Server minimo supportato<br/> | \[Windows Server 2012 solo app desktop\]<br/>                                                     |
+| Intestazione<br/>                   | <dl> <dt>Winuser.h (includere Windows.h)</dt> </dl> |
 
 
 

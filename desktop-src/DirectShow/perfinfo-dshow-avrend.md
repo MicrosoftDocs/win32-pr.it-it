@@ -1,7 +1,7 @@
 ---
-description: La \_ struttura PERFINFO dshow \_ AVREND contiene i dati per un evento di traccia di tipo GUID \_ VIDEOREND. VMR registra questo evento immediatamente prima di eseguire il rendering di un frame.
+description: La struttura PERFINFO DSHOW AVREND contiene i dati per un evento \_ di traccia di tipo GUID \_ \_ VIDEOREND. La macchina virtuale registra questo evento immediatamente prima di eseguire il rendering di un frame.
 ms.assetid: 95deda21-0ef4-4bf0-9fa3-826a813757b9
-title: Struttura PERFINFO_DSHOW_AVREND (Perfstruct. h)
+title: PERFINFO_DSHOW_AVREND struttura (Perfstruct.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -13,18 +13,18 @@ api_type:
 - HeaderDef
 api_location:
 - Perfstruct.h
-ms.openlocfilehash: ee2d944d086f9c1a4ea7944f023321dfbc06d547
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: 49cc76f4db1a5fae76678ee2d81f3e2fff0a6c5ca3d5c5532adebaec23f48215
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "106332263"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120050711"
 ---
-# <a name="perfinfo_dshow_avrend-structure"></a>\_Struttura PERFINFO dshow \_ AVREND
+# <a name="perfinfo_dshow_avrend-structure"></a>Struttura PERFINFO \_ DSHOW \_ AVREND
 
-La `PERFINFO_DSHOW_AVREND` struttura contiene dati per un evento di traccia di tipo GUID \_ VIDEOREND.
+La `PERFINFO_DSHOW_AVREND` struttura contiene dati per un evento di traccia di tipo \_ VIDEOREND.
 
-VMR registra questo evento immediatamente prima di eseguire il rendering di un frame.
+La macchina virtuale registra questo evento immediatamente prima di eseguire il rendering di un frame.
 
 ## <a name="syntax"></a>Sintassi
 
@@ -46,14 +46,14 @@ typedef struct PERFINFO_DSHOW_AVREND {
 **cycleCounter**
 </dt> <dd>
 
-Numero di cicli di clock più recenti (istruzione RDTSC).
+Conteggio del ciclo di clock più recente (istruzione RDTSC).
 
 </dd> <dt>
 
 **dshowClock**
 </dt> <dd>
 
-Ora di riferimento corrente, restituita dal metodo [**IReferenceClock:: GetTime**](/windows/desktop/api/Strmif/nf-strmif-ireferenceclock-gettime) .
+Ora di riferimento corrente, come restituito dal [**metodo IReferenceClock::GetTime.**](/windows/desktop/api/Strmif/nf-strmif-ireferenceclock-gettime)
 
 </dd> <dt>
 
@@ -66,9 +66,9 @@ Ora di inizio dell'esempio.
 
 ## <a name="remarks"></a>Commenti
 
-Per abilitare questo evento, è necessario impostare il \_ flag DXMPERF VIDEOREND nel parametro *EnableFlag* quando si chiama **EnableTrace**. Questo flag è definito nel file di intestazione Dxmperf. h, incluso nelle classi base di DirectShow.
+Per abilitare questo evento, è necessario impostare il flag DXMPERF \_ VIDEOREND nel *parametro EnableFlag* quando si chiama **EnableTrace**. Questo flag è definito nel file di intestazione Dxmperf.h, incluso nelle classi DirectShow di base.
 
-Per registrare questo evento da un filtro DirectShow, usare la **macro \_ VIDEOREND di PERFLOG** , definita in Dxmperf. h.
+Per registrare questo evento da DirectShow filtro, usare la macro **PERFLOG \_ VIDEOREND,** definita in Dxmperf.h.
 
 ## <a name="requirements"></a>Requisiti
 
@@ -76,7 +76,7 @@ Per registrare questo evento da un filtro DirectShow, usare la **macro \_ VIDEOR
 
 | Requisito | Valore |
 |-------------------|-----------------------------------------------------------------------------------------|
-| Intestazione<br/> | <dl> <dt>Perfstruct. h</dt> </dl> |
+| Intestazione<br/> | <dl> <dt>Perfstruct.h</dt> </dl> |
 
 
 
@@ -84,13 +84,13 @@ Per registrare questo evento da un filtro DirectShow, usare la **macro \_ VIDEOR
 
 <dl> <dt>
 
-[Strutture DirectShow](directshow-structures.md)
+[DirectShow Strutture](directshow-structures.md)
 </dt> <dt>
 
 [Traccia eventi in DirectShow](event-tracing-in-directshow.md)
 </dt> <dt>
 
-[GUID dell'evento di traccia](trace-guids.md)
+[GUID degli eventi di traccia](trace-guids.md)
 </dt> </dl>
 
  

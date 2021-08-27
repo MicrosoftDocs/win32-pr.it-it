@@ -1,9 +1,9 @@
 ---
-title: Messaggio TCM_GETCURSEL (COMmctrl. h)
-description: Determina la scheda attualmente selezionata in un controllo struttura a schede. È possibile inviare questo messaggio in modo esplicito o usando la \_ macro TabCtrl GetCurSel.
+title: TCM_GETCURSEL messaggio (Commctrl.h)
+description: Determina la scheda attualmente selezionata in un controllo struttura a schede. È possibile inviare questo messaggio in modo esplicito o tramite la \_ macro TabCtrl GetCurSel.
 ms.assetid: 1caa7fad-da5a-4b26-8e78-12110c126691
 keywords:
-- Controlli di Windows Message TCM_GETCURSEL
+- TCM_GETCURSEL di controllo Windows messaggio
 topic_type:
 - apiref
 api_name:
@@ -14,16 +14,16 @@ api_type:
 - HeaderDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 3103931e29d150412192a745f8dde7681cff0e94
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: 6555194972467486789296377b5aaf87ca5520846ec9bf4c03ec345f635b6557
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "106302365"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120104901"
 ---
-# <a name="tcm_getcursel-message"></a>TCM- \_ messaggio GETcursel
+# <a name="tcm_getcursel-message"></a>Messaggio \_ GETCURSEL TCM
 
-Determina la scheda attualmente selezionata in un controllo struttura a schede. È possibile inviare questo messaggio in modo esplicito o usando la macro [**TabCtrl \_ GetCurSel**](/windows/desktop/api/Commctrl/nf-commctrl-tabctrl_getcursel) .
+Determina la scheda attualmente selezionata in un controllo struttura a schede. È possibile inviare questo messaggio in modo esplicito o tramite la macro [**\_ TabCtrl GetCurSel.**](/windows/desktop/api/Commctrl/nf-commctrl-tabctrl_getcursel)
 
 ## <a name="parameters"></a>Parametri
 
@@ -37,7 +37,7 @@ Determina la scheda attualmente selezionata in un controllo struttura a schede. 
 
 ## <a name="return-value"></a>Valore restituito
 
-Restituisce l'indice della scheda selezionata in caso di esito positivo, oppure-1 se non è selezionata alcuna scheda.
+Restituisce l'indice della scheda selezionata in caso di esito positivo oppure -1 se non è selezionata alcuna scheda.
 
 ## <a name="requirements"></a>Requisiti
 
@@ -45,9 +45,9 @@ Restituisce l'indice della scheda selezionata in caso di esito positivo, oppure-
 
 | Requisito | Valore |
 |-------------------------------------|---------------------------------------------------------------------------------------|
-| Client minimo supportato<br/> | \[Solo app desktop di Windows Vista\]<br/>                                        |
-| Server minimo supportato<br/> | \[Solo app desktop Windows Server 2003\]<br/>                                  |
-| Intestazione<br/>                   | <dl> <dt>Commctrl. h</dt> </dl> |
+| Client minimo supportato<br/> | Windows Solo \[ app desktop Vista\]<br/>                                        |
+| Server minimo supportato<br/> | Windows Solo app desktop di Server 2003 \[\]<br/>                                  |
+| Intestazione<br/>                   | <dl> <dt>Commctrl.h</dt> </dl> |
 
 
 

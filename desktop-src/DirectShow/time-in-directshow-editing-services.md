@@ -1,75 +1,75 @@
 ---
-description: Tempo in servizi di modifica DirectShow
+description: Tempo di DirectShow servizi di modifica
 ms.assetid: 4e8cc766-97f3-45d5-9c4a-5cd6e9ad9c09
-title: Tempo in servizi di modifica DirectShow
+title: Tempo di DirectShow servizi di modifica
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 421831742a2805f58d61c2258dad89d339131f58
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: afc99ff2391ea7975daed7b4152e869741f9990561417131942c4d86e904fca8
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "106319546"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120083623"
 ---
-# <a name="time-in-directshow-editing-services"></a>Tempo in servizi di modifica DirectShow
+# <a name="time-in-directshow-editing-services"></a>Tempo di DirectShow servizi di modifica
 
-\[Questa API non è supportata e può essere modificata o non disponibile in futuro.\]
+\[Questa API non è supportata e potrebbe essere modificata o non disponibile in futuro.\]
 
-Per modificare il video, è necessario usare alcuni concetti importanti relativi alla tempistica. Ad esempio:
+Per modificare i video, è necessario usare alcuni importanti concetti di temporizzazione. Esempio:
 
 -   Ogni clip ha una durata.
--   Le clip, le transizioni e gli effetti vengono visualizzati in determinati orari in un progetto.
--   Il video presenta una frequenza di fotogrammi, espressa in frame al secondo (fps).
+-   Le clip, le transizioni e gli effetti vengono visualizzati in determinati momenti in un progetto.
+-   Il video ha una frequenza di fotogrammi espressa in fotogrammi al secondo (fps).
 
-I [servizi di modifica DirectShow](directshow-editing-services.md) (des) forniscono diversi metodi che consentono di impostare o recuperare orari e frequenze dei fotogrammi. Il significato di questi valori dipende dal contesto.
+[DirectShow Editing Services](directshow-editing-services.md) (DES) fornisce vari metodi che impostano o recuperano orari e frequenze fotogrammi. Il significato di questi valori dipende dal contesto.
 
-**Valori temporali**
+**Valori di ora**
 
-Quando un parametro esprime un'ora, sono possibili tre significati distinti:
+Quando un parametro esprime un tempo, sono possibili tre significati distinti:
 
--   *Time Timeline*: tempo relativo all'inizio della sequenza temporale. Ad esempio, una clip potrebbe iniziare 2 secondi nella sequenza temporale o una transizione potrebbe verificarsi 15 secondi nella sequenza temporale. La sequenza temporale determina il progetto di cui è stato eseguito il rendering finale, quindi è possibile considerare anche il tempo della sequenza temporale come "tempo progetto".
--   *Tempo del supporto*: punto in un file di origine relativo all'inizio del file, come raggiunto durante la riproduzione normale. Se, ad esempio, si dispone di un file video di 10 secondi, il punto a metà del file si verifica a 5 secondi, espresso come ora del supporto.
--   *Ora padre*: tempo relativo a un oggetto nella sequenza temporale. Se, ad esempio, un oggetto inizia a 8 secondi nella sequenza temporale e contiene un altro oggetto che inizia a 10 secondi nella sequenza temporale, l'oggetto figlio inizia a 2 secondi rispetto all'elemento padre. Tutte le tracce virtuali iniziano al momento zero rispetto alla sequenza temporale. Quindi, per qualsiasi oggetto in una traccia virtuale, l'ora padre è uguale all'ora della sequenza temporale.
+-   *Tempo sequenza temporale:* tempo relativo all'inizio della sequenza temporale. Ad esempio, un clip potrebbe iniziare 2 secondi nella sequenza temporale o potrebbe verificarsi una transizione di 15 secondi nella sequenza temporale. La sequenza temporale determina il progetto di cui è stato eseguito il rendering finale, quindi è anche possibile pensare all'ora della sequenza temporale come "ora del progetto".
+-   *Tempo multimediale:* punto in un file di origine rispetto all'inizio del file, raggiunto durante la riproduzione normale. Ad esempio, se si dispone di un file video di 10 secondi, il punto a metà del file si verifica a 5 secondi, espresso come tempo multimediale.
+-   *Ora padre:* tempo relativo a un oggetto nella sequenza temporale. Ad esempio, se un oggetto inizia a 8 secondi sulla sequenza temporale e contiene un altro oggetto che inizia a 10 secondi sulla sequenza temporale, l'oggetto figlio inizia a 2 secondi rispetto all'oggetto padre. Le tracce virtuali iniziano tutte con il tempo zero, rispetto alla sequenza temporale. Pertanto, per qualsiasi oggetto in una traccia virtuale, il tempo padre è uguale al tempo della sequenza temporale.
 
-Il tempo di supporto si applica solo agli oggetti di origine. Ogni oggetto di origine ha un'ora di inizio e un'ora di arresto del supporto. Si supponga, ad esempio, di avere un clip video di 10 secondi e di voler usare solo 5 secondi dal centro della clip, tagliando i primi 2 secondi e gli ultimi 3 secondi dalla clip. Se si vuole che il clip venga visualizzato 20 secondi nel progetto (e presupponendo una frequenza di riproduzione normale), specificare le ore di inizio e di fine seguenti.
+Il tempo multimediale si applica solo agli oggetti di origine. Ogni oggetto di origine ha un'ora di inizio del supporto e un'ora di arresto del supporto. Si supponga, ad esempio, di avere un clip video di 10 secondi e di voler usare solo 5 secondi dalla metà del clip, tagliando i primi 2 secondi e gli ultimi 3 secondi dal clip. Se si vuole che il clip venga visualizzato 20 secondi nel progetto (presupponendo una velocità di riproduzione normale), è necessario specificare i tempi di avvio e arresto seguenti.
 
--   Inizio supporto: 2 secondi
--   Arresto supporto: 7 secondi
+-   Avvio del supporto: 2 secondi
+-   Arresto del supporto: 7 secondi
 -   Inizio sequenza temporale: 20 secondi
--   Arresto sequenza temporale: 25 secondi
+-   Interruzione della sequenza temporale: 25 secondi
 
-    ![inserimento di una clip di origine in una sequenza temporale](images/des-time1.png)
+    ![inserimento di un clip di origine in una sequenza temporale](images/des-time1.png)
 
-**Frequenza fotogrammi**
+**Frequenze fotogrammi**
 
-La frequenza dei fotogrammi è la "velocità" di un flusso multimediale, misurata in fotogrammi al secondo. Come per i valori temporali, il significato di una frequenza dei fotogrammi dipende dal contesto:
+Frequenza fotogrammi è la "velocità" di un flusso multimediale, misurata in fotogrammi al secondo. Come per i valori di tempo, il significato di una frequenza fotogrammi dipende dal contesto:
 
--   **Frequenza fotogrammi di output:** Frequenza dei fotogrammi del progetto di cui è stato eseguito il rendering finale, definito dal gruppo. Quando si esegue il rendering del progetto, ogni gruppo diventa un flusso multimediale separato con la relativa frequenza dei fotogrammi.
--   **Frequenza fotogrammi di origine:** Frequenza dei fotogrammi in cui è stato originariamente creato il file di origine. La frequenza dei fotogrammi creata non deve corrispondere alla frequenza dei fotogrammi di output del gruppo. DES effettuerà automaticamente il campionamento o Downsample il file in base alle esigenze. Per la maggior parte dei formati multimediali, DES può determinare la frequenza dei fotogrammi esaminando il formato. Una sequenza DIB è un'eccezione. è necessario specificare la frequenza dei fotogrammi di una sequenza DIB. Per ulteriori informazioni, vedere [utilizzo delle origini](working-with-sources.md).
+-   **Frequenza fotogrammi di output:** Frequenza dei fotogrammi del progetto di cui è stato eseguito il rendering finale, definito dal gruppo. Quando si esegue il rendering del progetto, ogni gruppo diventa un flusso multimediale separato con la propria frequenza di fotogrammi.
+-   **Frequenza fotogrammi di origine:** Frequenza dei fotogrammi in cui è stato originariamente creato il file di origine. La frequenza dei fotogrammi creati non deve corrispondere alla frequenza dei fotogrammi di output del gruppo. DES esemperà automaticamente il campionamento o il downsample del file in base alle esigenze. Per la maggior parte dei formati multimediali, DES può determinare la frequenza dei fotogrammi esaminando il formato. Una sequenza DIB è un'eccezione. è necessario specificare la frequenza dei fotogrammi di una sequenza DIB. Per altre informazioni, vedere [Uso delle origini.](working-with-sources.md)
 
-**Velocità di riproduzione:** Velocità apparente di una clip di origine quando viene visualizzata nel progetto. Ad esempio, 10 secondi di video possono essere inseriti in 5 secondi nella sequenza temporale. Di conseguenza, la velocità della clip aumenta di un fattore pari a 2, come illustrato nella figura seguente.
+**Velocità di riproduzione:** Velocità apparente di un clip di origine quando viene visualizzato nel progetto. Ad esempio, 10 secondi di video possono essere contenuti in 5 secondi nella sequenza temporale. Di conseguenza, la velocità della clip aumenta di un fattore di 2, come illustrato nel diagramma seguente.
 
-![esecuzione più veloce di un'origine](images/des-time2.png)
+![rendere più veloce una riproduzione di origine](images/des-time2.png)
 
-Con un'origine audio, anche il pitch viene spostato. La formula seguente determina la velocità di riproduzione di una clip di origine:
+Con un'origine audio, anche l'intonazione cambia. La formula seguente determina la velocità di riproduzione di un clip di origine:
 
--   Velocità di riproduzione = (Media Stop-avvio supporto)/(arresto sequenza temporale-Avvio sequenza temporale)
+-   Velocità di riproduzione = (Arresto multimediale - Avvio multimediale) / (Arresto sequenza temporale - Avvio sequenza temporale)
 
-Si noti che ognuno di questi tre tassi è indipendente dagli altri:
+Si noti che ognuna di queste tre tariffe è indipendente dalle altre:
 
--   È possibile velocizzare o rallentare un ritaglio regolando i tempi dei supporti; Questa operazione non influisce sulla frequenza dei fotogrammi dell'output finale.
--   È possibile aumentare o ridurre la frequenza dei fotogrammi di output senza influenzare la velocità di riproduzione di un file.
--   È possibile combinare, all'interno dello stesso gruppo, i file di origine con diverse frequenze di frame create e DES esegue il campionamento o il downsample di ogni clip in modo che corrisponda alla frequenza dei fotogrammi del gruppo.
+-   È possibile accelerare o rallentare un clip regolando i tempi dei supporti; ciò non influisce sulla frequenza dei fotogrammi dell'output finale.
+-   È possibile aumentare o ridurre la frequenza dei fotogrammi di output senza influire sulla velocità di riproduzione di un file.
+-   È possibile combinare, all'interno dello stesso gruppo, file di origine con frequenze di fotogrammi creati diverse e DES esempere o sottocampionare ogni clip in modo che corrisponda alla frequenza dei fotogrammi del gruppo.
 
-Quando si esegue il rendering di un progetto, tutte le volte vengono arrotondate al limite del frame più vicino, come determinato dalla frequenza dei fotogrammi del gruppo. Si supponga, ad esempio, che un gruppo di video abbia una frequenza di fotogrammi pari a 30 fps. Ogni frame è approssimativamente di 33 millisecondi (MS). Si supponga di aggiungere una clip di origine di 1,68 secondi alla sequenza temporale, a partire dal momento zero. L'origine non termina esattamente su un limite di frame, quindi DES arrotonda il tempo di arresto a 1,6666 secondi (50 frame). Se si cerca di 1,68 secondi nel progetto di cui è stato eseguito il rendering, si procederà alla fine del 51 ° frame.
+Quando si esegue il rendering di un progetto, tutte le volte vengono arrotondate al limite del frame più vicino, come determinato dalla frequenza fotogrammi del gruppo. Si supponga, ad esempio, che un gruppo di video abbia una frequenza fotogrammi di 30 fps. Ogni fotogramma è di circa 33 millisecondi (ms). Si supponga di aggiungere un clip di origine di 1,68 secondi alla sequenza temporale, a partire dal momento zero. L'origine non termina esattamente su un limite di frame, quindi DES arrotonda il tempo di arresto a 1,6666 secondi (50 fotogrammi). Se si cerca di 1,68 secondi nel progetto sottoposto a rendering, si cercherà effettivamente oltre la fine dell'origine, fino al 51° frame.
 
-Tuttavia, DES non sovrascrive l'ora di arresto dell'origine. In seguito è possibile modificare la frequenza dei fotogrammi del gruppo o spostare l'origine in un nuovo punto della sequenza temporale in cui viene arrotondato in modo diverso. Quindi, DES conserva l'ora di arresto originale e arrotonda solo quando necessario. Per ulteriori informazioni, vedere [**IAMTimelineObj:: FixTimes**](iamtimelineobj-fixtimes.md).
+Des non sovrascrive tuttavia il tempo di arresto dell'origine. In un secondo momento è possibile modificare la frequenza fotogrammi del gruppo o spostare l'origine in un nuovo punto della sequenza temporale in cui viene arrotondato in modo diverso. Des mantiene pertanto il tempo di arresto originale e arrotonda solo quando necessario. Per altre informazioni, vedere [**IAMTimelineObj::FixTimes**](iamtimelineobj-fixtimes.md).
 
 ## <a name="related-topics"></a>Argomenti correlati
 
 <dl> <dt>
 
-[Introduzione con i servizi di modifica DirectShow](getting-started-with-directshow-editing-services.md)
+[Attività iniziali con i DirectShow di modifica](getting-started-with-directshow-editing-services.md)
 </dt> </dl>
 
  

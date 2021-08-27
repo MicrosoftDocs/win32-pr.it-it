@@ -1,19 +1,19 @@
 ---
-description: Proprietà che non sono archiviate nell'elemento stesso, in cui le proprietà sono nel formato di un flusso contenente un SERIALIZEDPROPSTORAGE.
+description: Proprietà non archiviate nell'elemento stesso, in cui le proprietà sono sotto forma di flusso contenente SERIALIZEDPROPSTORAGE.
 ms.assetid: 6ab4f33a-5247-4706-95c9-39c84ef2aa56
-title: System. ExpandoProperties
+title: System.ExpandoProperties
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: b16cf94a7e670dd498fb65acfb01f09a83fa9502
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 4c02abc4f1ebf38ce2f9730c08b8b91a32e6148270ce484b3cd0ae1e171d4427
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "106317992"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120091261"
 ---
-# <a name="systemexpandoproperties"></a>System. ExpandoProperties
+# <a name="systemexpandoproperties"></a>System.ExpandoProperties
 
-Proprietà che non sono archiviate nell'elemento stesso, in cui le proprietà sono nel formato di un flusso contenente un SERIALIZEDPROPSTORAGE.
+Proprietà non archiviate nell'elemento stesso, in cui le proprietà sono sotto forma di flusso contenente SERIALIZEDPROPSTORAGE.
 
 ## <a name="windows-10-version-1703-windows-10-version-1607-windows-10-version-1511-windows-10-version-1507-windows-81-windows-8"></a>Windows 10, versione 1703, Windows 10, versione 1607, Windows 10, versione 1511, Windows 10, versione 1507, Windows 8.1, Windows 8
 
@@ -33,7 +33,7 @@ propertyDescription
 
 ## <a name="remarks"></a>Commenti
 
-I valori PKEY sono definiti in Propkey. h.
+I valori PKEY sono definiti in Propkey.h.
 
 ## <a name="related-topics"></a>Argomenti correlati
 
@@ -48,13 +48,13 @@ I valori PKEY sono definiti in Propkey. h.
 [labelInfo](./propdesc-schema-labelinfo.md)
 </dt> <dt>
 
-[typeInfo](./propdesc-schema-typeinfo.md)
+[Typeinfo](./propdesc-schema-typeinfo.md)
 </dt> <dt>
 
 [displayInfo](./propdesc-schema-displayinfo.md)
 </dt> <dt>
 
-[stringFormat](./propdesc-schema-stringformat.md)
+[Stringformat](./propdesc-schema-stringformat.md)
 </dt> <dt>
 
 [booleanFormat](./propdesc-schema-booleanformat.md)
@@ -63,7 +63,7 @@ I valori PKEY sono definiti in Propkey. h.
 [numberFormat](./propdesc-schema-numberformat.md)
 </dt> <dt>
 
-[dateTimeFormat](./propdesc-schema-datetimeformat.md)
+[Datetimeformat](./propdesc-schema-datetimeformat.md)
 </dt> <dt>
 
 [enumeratedList](./propdesc-schema-enumeratedlist.md)

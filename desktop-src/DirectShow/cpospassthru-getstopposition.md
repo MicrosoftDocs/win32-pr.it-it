@@ -1,7 +1,7 @@
 ---
-description: "Il metodo GetStopPosition recupera l'ora in cui la riproduzione viene arrestata rispetto alla durata del flusso. Questo metodo implementa il metodo IMediaSeeking:: GetStopPosition."
+description: Il metodo GetStopPosition recupera l'ora in cui la riproduzione verrà interrotta, in relazione alla durata del flusso. Questo metodo implementa il metodo IMediaSeeking::GetStopPosition.
 ms.assetid: 11486371-da0a-4b83-956b-ef6b92721e74
-title: Metodo CPosPassThru. GetStopPosition (Ctlutil. h)
+title: Metodo CPosPassThru.GetStopPosition (Ctlutil.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -16,16 +16,16 @@ api_location:
 - Strmbase.dll
 - Strmbasd.lib
 - Strmbasd.dll
-ms.openlocfilehash: 7ee704a47074db032badfa1f02ffbf2db8c7efa4
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: f9c6798d03e2935c991e12cded4d85a4972d54e7800d6aa79c70525b10276f91
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "106333206"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120084071"
 ---
-# <a name="cpospassthrugetstopposition-method"></a>CPosPassThru. GetStopPosition, metodo
+# <a name="cpospassthrugetstopposition-method"></a>Metodo CPosPassThru.GetStopPosition
 
-Il `GetStopPosition` metodo recupera l'ora in cui la riproduzione viene arrestata rispetto alla durata del flusso. Questo metodo implementa il metodo [**IMediaSeeking:: GetStopPosition**](/windows/desktop/api/Strmif/nf-strmif-imediaseeking-getstopposition) .
+Il `GetStopPosition` metodo recupera l'ora in cui la riproduzione verrà interrotta, in relazione alla durata del flusso. Questo metodo implementa il [**metodo IMediaSeeking::GetStopPosition.**](/windows/desktop/api/Strmif/nf-strmif-imediaseeking-getstopposition)
 
 ## <a name="syntax"></a>Sintassi
 
@@ -45,13 +45,13 @@ HRESULT GetStopPosition(
 *pStop* 
 </dt> <dd>
 
-Puntatore a una variabile che riceve l'ora di arresto, in unità del formato dell'ora corrente.
+Puntatore a una variabile che riceve l'ora di arresto, in unità del formato di ora corrente.
 
 </dd> </dl>
 
 ## <a name="return-value"></a>Valore restituito
 
-Restituisce il valore **HRESULT** dal pin connesso.
+Restituisce il **valore HRESULT** dal pin connesso.
 
 ## <a name="requirements"></a>Requisiti
 
@@ -59,8 +59,8 @@ Restituisce il valore **HRESULT** dal pin connesso.
 
 | Requisito | Valore |
 |--------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Intestazione<br/>  | <dl> <dt>Ctlutil. h (include Streams. h)</dt> </dl>                                                                                   |
-| Libreria<br/> | <dl> <dt>Strmbase. lib (compilazioni finali); </dt> <dt>Strmbasd. lib (build di debug)</dt> </dl> |
+| Intestazione<br/>  | <dl> <dt>Ctlutil.h (includere Flussi.h)</dt> </dl>                                                                                   |
+| Libreria<br/> | <dl> <dt>Strmbase.lib (build di vendita al dettaglio); </dt> <dt>Strmbasd.lib (build di debug)</dt> </dl> |
 
 
 

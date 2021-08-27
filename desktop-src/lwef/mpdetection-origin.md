@@ -1,10 +1,10 @@
 ---
-title: Enumerazione MPDETECTION_ORIGIN (MpClient. h)
+title: MPDETECTION_ORIGIN enumerazione (MpClient.h)
 description: Origine del rilevamento.
 ms.assetid: 9FEE2FAD-3E44-4134-B968-53E971F6B092
 keywords:
-- Funzionalità dell'ambiente Windows legacy dell'enumerazione MPDETECTION_ORIGIN
-- Caratteristiche dell'ambiente Windows legacy del puntatore di enumerazione PMPDETECTION_ORIGIN
+- MPDETECTION_ORIGIN di enumerazione Legacy Windows Environment Features
+- PMPDETECTION_ORIGIN puntatore di enumerazione Legacy Windows Environment Features
 topic_type:
 - apiref
 api_name:
@@ -15,14 +15,14 @@ api_type:
 - HeaderDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: ed4224aafef2c72db2a8d3b27f338ca83feaf64f
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: 70b46ed86276ccb3fc3bd4d2b26388d778c102c1c1fa3bb7ced8f1ad64cd0203
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "106301410"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120092361"
 ---
-# <a name="mpdetection_origin-enumeration"></a>\_Enumerazione MPDETECTION Origin
+# <a name="mpdetection_origin-enumeration"></a>Enumerazione MPDETECTION \_ ORIGIN
 
 Origine del rilevamento.
 
@@ -46,42 +46,42 @@ typedef enum tagMPDETECTION_ORIGIN {
 
 <dl> <dt>
 
-<span id="MPDETECTION_ORIGIN_UNKNOWN"></span><span id="mpdetection_origin_unknown"></span>**\_origine MPDETECTION \_ sconosciuta**
+<span id="MPDETECTION_ORIGIN_UNKNOWN"></span><span id="mpdetection_origin_unknown"></span>**ORIGINE MPDETECTION \_ \_ SCONOSCIUTA**
 </dt> <dd>
 
-Origine rilevata minaccia sconosciuta.
+L'origine rilevata dalla minaccia è sconosciuta.
 
 </dd> <dt>
 
-<span id="MPDETECTION_ORIGIN_LOCAL_MACHINE"></span><span id="mpdetection_origin_local_machine"></span>**\_ \_ computer locale di origine MPDETECTION \_**
+<span id="MPDETECTION_ORIGIN_LOCAL_MACHINE"></span><span id="mpdetection_origin_local_machine"></span>**COMPUTER LOCALE DI ORIGINE MPDETECTION \_ \_ \_**
 </dt> <dd>
 
 Minaccia rilevata nel computer locale.
 
 </dd> <dt>
 
-<span id="MPDETECTION_ORIGIN_NETWORKSHARE"></span><span id="mpdetection_origin_networkshare"></span>**MPDETECTION \_ Origin \_ NETWORKSHARE**
+<span id="MPDETECTION_ORIGIN_NETWORKSHARE"></span><span id="mpdetection_origin_networkshare"></span>**MPDETECTION \_ ORIGIN \_ NETWORKSHARE**
 </dt> <dd>
 
 Minaccia rilevata nella condivisione di rete.
 
 </dd> <dt>
 
-<span id="MPDETECTION_ORIGIN_INTERNET"></span><span id="mpdetection_origin_internet"></span>**\_Internet di origine MPDETECTION \_**
+<span id="MPDETECTION_ORIGIN_INTERNET"></span><span id="mpdetection_origin_internet"></span>**MPDETECTION \_ ORIGIN \_ INTERNET**
 </dt> <dd>
 
-Minaccia rilevata in Internet.
+Minaccia rilevata su Internet.
 
 </dd> <dt>
 
-<span id="MPDETECTION_ORIGIN_OUTBOUND"></span><span id="mpdetection_origin_outbound"></span>**origine MPDETECTION in \_ \_ uscita**
+<span id="MPDETECTION_ORIGIN_OUTBOUND"></span><span id="mpdetection_origin_outbound"></span>**ORIGINE MPDETECTION \_ IN \_ USCITA**
 </dt> <dd>
 
 Minaccia rilevata in una connessione in uscita.
 
 </dd> <dt>
 
-<span id="MPDETECTION_ORIGIN_INBOUND"></span><span id="mpdetection_origin_inbound"></span>**origine MPDETECTION in \_ \_ ingresso**
+<span id="MPDETECTION_ORIGIN_INBOUND"></span><span id="mpdetection_origin_inbound"></span>**ORIGINE MPDETECTION \_ \_ IN INGRESSO**
 </dt> <dd>
 
 Minaccia rilevata in una connessione in ingresso.
@@ -94,9 +94,9 @@ Minaccia rilevata in una connessione in ingresso.
 
 | Requisito | Valore |
 |-------------------------------------|---------------------------------------------------------------------------------------|
-| Client minimo supportato<br/> | \[Solo app desktop di Windows 8\]<br/>                                            |
-| Server minimo supportato<br/> | \[Solo app desktop Windows Server 2012\]<br/>                                  |
-| Intestazione<br/>                   | <dl> <dt>MpClient. h</dt> </dl> |
+| Client minimo supportato<br/> | \[Windows 8 solo app desktop\]<br/>                                            |
+| Server minimo supportato<br/> | \[Windows Server 2012 solo app desktop\]<br/>                                  |
+| Intestazione<br/>                   | <dl> <dt>MpClient.h</dt> </dl> |
 
 
 
