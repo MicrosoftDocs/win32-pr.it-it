@@ -1,6 +1,6 @@
 ---
-title: attribute Library
-description: L'istruzione Library contiene tutte le informazioni utilizzate dal compilatore MIDL per generare una libreria dei tipi.
+title: Attributo library
+description: L'istruzione library contiene tutte le informazioni utilizzate dal compilatore MIDL per generare una libreria dei tipi.
 ms.assetid: d73acb17-abe4-4c31-a264-a131d1f9fa51
 keywords:
 - attributo della libreria MIDL
@@ -12,16 +12,16 @@ api_type:
 - NA
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 100c901c6b5d86ed3420d51e459627bdb5b461b8
-ms.sourcegitcommit: ebd3ce6908ff865f1ef66f2fc96769be0aad82e1
+ms.openlocfilehash: 4fc1f836174a57f6edfddd0575a10d40367c061c034369a1582cc8bf8ce17a53
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/19/2020
-ms.locfileid: "106299788"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120086371"
 ---
-# <a name="library-attribute"></a>attribute Library
+# <a name="library-attribute"></a>Attributo library
 
-L'istruzione **Library** contiene tutte le informazioni utilizzate dal compilatore MIDL per generare una libreria dei tipi.
+**L'istruzione** library contiene tutte le informazioni utilizzate dal compilatore MIDL per generare una libreria dei tipi.
 
 ``` syntax
 [
@@ -38,28 +38,28 @@ library library-name
 
 <dl> <dt>
 
-*UUID-numero* 
+*uuid-number* 
 </dt> <dd>
 
-Specifica un numero di identificazione univoco universale per la libreria.
+Specifica un numero di identificazione universalmente univoco per la libreria.
 
 </dd> <dt>
 
-*facoltativo-Attribute-List* 
+*optional-attribute-list* 
 </dt> <dd>
 
-Specifica gli attributi aggiuntivi che si applicano all'intera istruzione della **libreria** . Gli attributi consentiti includono **\[** [**Control**](control.md) **\]** , **\[** [**HelpContext**](helpcontext.md) **\]** , **\[** [**filelima**](helpfile.md), **\]** **\[** [**helpstring**](helpstring.md) **\]** , **\[** [**Hidden**](hidden.md) **\]** , **\[** [**LCID**](lcid.md) **\]** , **\[** [**Restricted**](restricted.md) **\]** e **\[** [**Version**](version.md) **\]** .
+Specifica attributi aggiuntivi che si applicano all'intera istruzione **della** libreria. Gli attributi consentiti includono il controllo **\[** [](control.md) **\]** , **\[** [**helpcontext**](helpcontext.md) **\]** , **\[** [**helpfile**](helpfile.md), **\]** **\[** [**helpstring**](helpstring.md), **\]** **\[** [**hidden**](hidden.md) **\]** , **\[** [**lcid**](lcid.md), **\]** **\[** [**restricted**](restricted.md)e **\]** **\[** [**version**](version.md) **\]** .
 
 </dd> <dt>
 
-*nome della libreria* 
+*nome-libreria* 
 </dt> <dd>
 
 Nome con cui i componenti software fanno riferimento alla **libreria**.
 
 </dd> <dt>
 
-*Library-Definition-Statements* 
+*library-definition-statements* 
 </dt> <dd>
 
 Una o più istruzioni MIDL che definiscono il contenuto della **libreria**.
@@ -68,7 +68,7 @@ Una o più istruzioni MIDL che definiscono il contenuto della **libreria**.
 
 ## <a name="remarks"></a>Commenti
 
-Le istruzioni all'interno del blocco di libreria possono usare elementi dichiarati all'interno o all'esterno del blocco di libreria. Le istruzioni Library possono usare tali elementi come tipi di base, ereditando da tali elementi o semplicemente facendo riferimento a essi su una riga, come indicato di seguito:
+Le istruzioni all'interno del blocco di libreria possono usare elementi dichiarati all'interno o all'esterno del blocco di libreria. Le istruzioni della libreria possono usare tali elementi come tipi di base, ereditando da tali elementi o semplicemente facendo riferimento a tali elementi in una riga, come indicato di seguito:
 
 ``` syntax
 interface MyFace 
@@ -87,9 +87,9 @@ library
 };
 ```
 
-Il compilatore MIDL creerà una libreria dei tipi che include le definizioni per ogni elemento all'interno del blocco Library, più le definizioni per tutti gli elementi definiti all'esterno e a cui viene fatto riferimento dall'interno del blocco di libreria.
+Il compilatore MIDL creerà una libreria dei tipi che include le definizioni per ogni elemento all'interno del blocco di libreria, oltre alle definizioni per tutti gli elementi definiti all'esterno e a cui si fa riferimento all'interno del blocco di libreria.
 
-Per informazioni sulla generazione di una libreria dei tipi e di stub e intestazioni proxy da un singolo file IDL, vedere [generazione di una DLL proxy e di una libreria dei tipi da un singolo file IDL](generating-a-proxy-dll-and-a-type-library-from-a-single-idl-file-2.md).
+Per informazioni sulla generazione di una libreria dei tipi e di stub proxy e intestazioni da un singolo file IDL, vedere [Generating a Proxy DLL and a Type Library From a Single IDL File](generating-a-proxy-dll-and-a-type-library-from-a-single-idl-file-2.md).
 
 ## <a name="examples"></a>Esempi
 
@@ -113,7 +113,7 @@ library Hello
 [Contenuto di una libreria dei tipi](/previous-versions/windows/desktop/automat/contents-of-a-type-library)
 </dt> <dt>
 
-[**controllo**](control.md)
+[**Controllo**](control.md)
 </dt> <dt>
 
 [Generazione di una libreria dei tipi con MIDL](generating-a-type-library-with-midl-2.md)
@@ -128,21 +128,21 @@ library Hello
 [**helpstring**](helpstring.md)
 </dt> <dt>
 
-[**nascosto**](hidden.md)
+[**Nascosto**](hidden.md)
 </dt> <dt>
 
-[**LCID**](lcid.md)
+[**Lcid**](lcid.md)
 </dt> <dt>
 
-[Sintassi del file di FAD](/previous-versions/windows/desktop/automat/odl-file-syntax)
+[Sintassi del file ODL](/previous-versions/windows/desktop/automat/odl-file-syntax)
 </dt> <dt>
 
-[**limitato**](restricted.md)
+[**Limitato**](restricted.md)
 </dt> <dt>
 
 [**Versione**](version.md)
 </dt> </dl>
 
- 
+ 
 
- 
+ 

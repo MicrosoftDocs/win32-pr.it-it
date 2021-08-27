@@ -1,7 +1,7 @@
 ---
-description: Il metodo IsValid determina se il filtro è attualmente attivo (in esecuzione o in pausa).
+description: Il metodo IsActive determina se il filtro è attualmente attivo (in esecuzione o sospeso).
 ms.assetid: 3bbb50d5-6a07-4932-940c-4466b95e6412
-title: Metodo CBaseFilter. IsValid (Amfilter. h)
+title: Metodo CBaseFilter.IsActive (Amfilter.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -16,16 +16,16 @@ api_location:
 - Strmbase.dll
 - Strmbasd.lib
 - Strmbasd.dll
-ms.openlocfilehash: 63cf2cd78bb61562c9b4d6a09de3d88c88d4c643
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: fbbd9fedf94816d518ef9f8826542399d1d1e97f97137b2d86581d36c4a33e53
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "106331541"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120076641"
 ---
-# <a name="cbasefilterisactive-method"></a>Metodo CBaseFilter. IsValid
+# <a name="cbasefilterisactive-method"></a>Metodo CBaseFilter.IsActive
 
-Il `IsActive` metodo determina se il filtro è attualmente attivo (in esecuzione o in pausa).
+Il `IsActive` metodo determina se il filtro è attualmente attivo (in esecuzione o sospeso).
 
 ## <a name="syntax"></a>Sintassi
 
@@ -42,7 +42,7 @@ Questo metodo non presenta parametri.
 
 ## <a name="return-value"></a>Valore restituito
 
-Restituisce **true** se il filtro è in pausa o in esecuzione oppure **false** se è stato arrestato.
+Restituisce **TRUE** se il filtro è sospeso o in esecuzione oppure **FALSE** se viene arrestato.
 
 ## <a name="requirements"></a>Requisiti
 
@@ -50,8 +50,8 @@ Restituisce **true** se il filtro è in pausa o in esecuzione oppure **false** s
 
 | Requisito | Valore |
 |--------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Intestazione<br/>  | <dl> <dt>Amfilter. h (include Streams. h)</dt> </dl>                                                                                  |
-| Libreria<br/> | <dl> <dt>Strmbase. lib (compilazioni finali); </dt> <dt>Strmbasd. lib (build di debug)</dt> </dl> |
+| Intestazione<br/>  | <dl> <dt>Amfilter.h (include Flussi.h)</dt> </dl>                                                                                  |
+| Libreria<br/> | <dl> <dt>Strmbase.lib (build di vendita al dettaglio); </dt> <dt>Strmbasd.lib (build di debug)</dt> </dl> |
 
 
 

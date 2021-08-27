@@ -1,6 +1,6 @@
 ---
-title: 'Funzione SampleBias:: SampleBias (S, float, float, float) per TextureCube'
-description: 'La funzione SampleBias:: SampleBias (S, float, float, float) per TextureCube campiona una trama, dopo aver applicato il valore di distorsione al livello mipmap.'
+title: Funzione SampleBias::SampleBias(S,float,float,float) per TextureCube
+description: La funzione SampleBias::SampleBias(S,float,float,float) per TextureCube campionare una trama, dopo aver applicato il valore di distorsione al livello mipmap.
 ms.assetid: BCDDADD9-D8B0-47C9-A312-5E6AF9C3C07B
 keywords:
 - Funzione SampleBias HLSL
@@ -13,16 +13,16 @@ api_type:
 ms.topic: reference
 ms.date: 05/31/2018
 api_location: ''
-ms.openlocfilehash: 55404f2e32f45e5b19e7b0cd4c109a6d5a8bcc13
-ms.sourcegitcommit: 0e611cdff84ff9f897c59e4e1d2b2d134bc4e133
+ms.openlocfilehash: fe1044b14e2bda6595730a80b2d474aae1e692e8647835a44fe86105963da659
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/02/2021
-ms.locfileid: "106334321"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120117981"
 ---
-# <a name="samplebiassamplebiassfloatfloatfloat-function-for-texturecube"></a>Funzione SampleBias:: SampleBias (S, float, float, float) per TextureCube
+# <a name="samplebiassamplebiassfloatfloatfloat-function-for-texturecube"></a>Funzione SampleBias::SampleBias(S,float,float,float) per TextureCube
 
-Esegue il campionamento di una trama, dopo aver applicato il valore di distorsione al livello mipmap, con un valore facoltativo per limitare i valori del livello di dettaglio (LOD) campione a.
+Campionare una trama, dopo aver applicato il valore di distorsione al livello mipmap, con un valore facoltativo a cui applicare i valori del livello di dettaglio del campione.
 
 ## <a name="syntax"></a>Sintassi
 
@@ -47,11 +47,11 @@ DXGI_FORMAT SampleBias(
 
 Tipo: **SamplerState**
 
-[Stato del campionatore](dx-graphics-hlsl-sampler.md). Si tratta di un oggetto dichiarato in un file di effetti che contiene le assegnazioni di stato.
+Stato [del campionatore.](dx-graphics-hlsl-sampler.md) Si tratta di un oggetto dichiarato in un file degli effetti che contiene assegnazioni di stato.
 
 </dd> <dt>
 
-*Posizione* \[ in\]
+*Località* \[ Pollici\]
 </dt> <dd>
 
 Tipo: **float**
@@ -60,7 +60,7 @@ Coordinate di trama. Il tipo di argomento dipende dal tipo di oggetto trama.
 
 
 
-| Tipo di Texture-Object                    | Tipo di parametro |
+| tipo Texture-Object                    | Tipo di parametro |
 |----------------------------------------|----------------|
 | Texture1D                              | float          |
 | Texture1DArray, Texture2D              | float2         |
@@ -73,29 +73,29 @@ Coordinate di trama. Il tipo di argomento dipende dal tipo di oggetto trama.
 
 </dd> <dt>
 
-*Distorsione* \[ in\]
+*Distorsione* \[ Pollici\]
 </dt> <dd>
 
 Tipo: **float**
 
-Il valore di distorsione, ovvero un numero a virgola mobile compreso tra 0,0 e 1,0 inclusivo, viene applicato a un livello MIP prima del campionamento.
+Il valore della distorsione, ovvero un numero a virgola mobile compreso tra 0,0 e 1,0 inclusi, viene applicato a un livello mip prima del campionamento.
 
 </dd> <dt>
 
-*Blocca* \[ in\]
+*Clamp* \[ Pollici\]
 </dt> <dd>
 
 Tipo: **float**
 
-Valore facoltativo a cui bloccare i valori LOD di esempio. Se ad esempio si passa 2.0 f per il valore del morsetto, si garantisce che nessun singolo campione acceda a un livello MIP inferiore a 2.0 f.
+Valore facoltativo a cui stringere i valori LOD di esempio. Ad esempio, se si passa 2.0f per il valore clamp, si garantisce che nessun singolo campione accerta un livello mip inferiore a 2,0f.
 
 </dd> </dl>
 
 ## <a name="return-value"></a>Valore restituito
 
-Tipo: **[ **DXGI \_ Format**](/windows/desktop/api/dxgiformat/ne-dxgiformat-dxgi_format)**
+Tipo: **[ **FORMATO \_ DXGI**](/windows/desktop/api/dxgiformat/ne-dxgiformat-dxgi_format)**
 
-Il formato di trama, che è uno dei valori tipizzati elencati [**nel \_ formato DXGI**](/windows/desktop/api/dxgiformat/ne-dxgiformat-dxgi_format).
+Formato della trama, ovvero uno dei valori tipi di dati elencati in [**FORMATO DXGI. \_**](/windows/desktop/api/dxgiformat/ne-dxgiformat-dxgi_format)
 
 ## <a name="see-also"></a>Vedi anche
 

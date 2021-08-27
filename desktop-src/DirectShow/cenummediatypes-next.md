@@ -1,7 +1,7 @@
 ---
-description: 'Il metodo successivo recupera un numero specificato di tipi di supporti. Questo metodo implementa il metodo IEnumMediaTypes:: Next.'
+description: Il metodo Next recupera un numero specificato di tipi di supporti. Questo metodo implementa il metodo IEnumMediaTypes::Next.
 ms.assetid: d59dea48-e36c-4ee6-9935-5a47e8a12a9e
-title: Metodo CEnumMediaTypes. Next (Amfilter. h)
+title: Metodo CEnumMediaTypes.Next (Amfilter.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -16,16 +16,16 @@ api_location:
 - Strmbase.dll
 - Strmbasd.lib
 - Strmbasd.dll
-ms.openlocfilehash: 6b5eaa75a52f88539438cec58f024919577518e2
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: f8dd593fe6ca550c55ffc1f769a303dd2d5cbf7a8d8c986be8a39278d7f334ce
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "106329852"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120131291"
 ---
-# <a name="cenummediatypesnext-method"></a>Metodo CEnumMediaTypes. Next
+# <a name="cenummediatypesnext-method"></a>Metodo CEnumMediaTypes.Next
 
-Il `Next` metodo recupera un numero specificato di tipi di supporti. Questo metodo implementa il metodo [**IEnumMediaTypes:: Next**](/windows/desktop/api/Strmif/nf-strmif-ienummediatypes-next) .
+Il `Next` metodo recupera un numero specificato di tipi di supporti. Questo metodo implementa il [**metodo IEnumMediaTypes::Next.**](/windows/desktop/api/Strmif/nf-strmif-ienummediatypes-next)
 
 ## <a name="syntax"></a>Sintassi
 
@@ -47,37 +47,37 @@ HRESULT Next(
 *cMediaTypes* 
 </dt> <dd>
 
-Numero di tipi di supporto da recuperare.
+Numero di tipi di supporti da recuperare.
 
 </dd> <dt>
 
 *ppMediaTypes* 
 </dt> <dd>
 
-Matrice di puntatori alle strutture di [**\_ \_ tipo multimediale am**](/windows/win32/api/strmif/ns-strmif-am_media_type) , di dimensioni *cPins*.
+Matrice di puntatori a [**strutture AM \_ MEDIA \_ TYPE,**](/windows/win32/api/strmif/ns-strmif-am_media_type) di dimensioni *cPins*.
 
 </dd> <dt>
 
 *pcFetched* 
 </dt> <dd>
 
-Puntatore a una variabile che riceve il numero di tipi di supporti restituiti dal metodo. Può essere **null** se *cMediaTypes* è 1.
+Puntatore a una variabile che riceve il numero di tipi di supporti restituiti dal metodo. Può essere **NULL** se *cMediaTypes* è 1.
 
 </dd> </dl>
 
 ## <a name="return-value"></a>Valore restituito
 
-Restituisce uno dei valori **HRESULT** indicati nella tabella seguente.
+Restituisce uno dei **valori HRESULT** illustrati nella tabella seguente.
 
 
 
 | Codice restituito                                                                                                | Descrizione                                                                         |
 |------------------------------------------------------------------------------------------------------------|-------------------------------------------------------------------------------------|
-| <dl> <dt>**S \_ false**</dt> </dl>                    | Non è stato possibile recuperare tutti i tipi di supporto richiesti.<br/>                       |
-| <dl> <dt>**\_OK**</dt> </dl>                       | Esito positivo.<br/>                                                                 |
+| <dl> <dt>**S \_ FALSE**</dt> </dl>                    | Non è stato recuperato il numero di tipi di supporti richiesto.<br/>                       |
+| <dl> <dt>**S \_ OK**</dt> </dl>                       | Operazione completata.<br/>                                                                 |
 | <dl> <dt>**E \_ INVALIDARG**</dt> </dl>               | Argomento non valido.<br/>                                                        |
-| <dl> <dt>**\_puntatore E**</dt> </dl>                  | Argomento puntatore **null** .<br/>                                               |
-| <dl> <dt>**non \_ \_ \_ \_ sincronizzato con VFW E enum \_**</dt> </dl> | Lo stato del PIN è stato modificato ed è ora incoerente con l'enumeratore.<br/> |
+| <dl> <dt>**PUNTATORE E \_**</dt> </dl>                  | Argomento del puntatore **NULL.**<br/>                                               |
+| <dl> <dt>**ENUMERAZIONE VFW \_ \_ NON \_ \_ \_ SINCRONIZZATA**</dt> </dl> | Lo stato del pin è stato modificato ed è ora incoerente con l'enumeratore.<br/> |
 
 
 
@@ -85,9 +85,9 @@ Restituisce uno dei valori **HRESULT** indicati nella tabella seguente.
 
 ## <a name="remarks"></a>Commenti
 
-Se il metodo ha esito positivo, la matrice specificata da *ppMediaTypes* contiene i puntatori alle \_ strutture del tipo di supporto am \_ . Il numero di strutture è uguale a *\* pcFetched*. Liberare ogni tipo di supporto chiamando la funzione [**DeleteMediaType**](deletemediatype.md) .
+Se il metodo ha esito positivo, la matrice specificata da *ppMediaTypes* contiene puntatori alle strutture AM \_ MEDIA \_ TYPE. Il numero di strutture è uguale a *\* pcFetched*. Liberare ogni tipo di supporto chiamando la [**funzione DeleteMediaType.**](deletemediatype.md)
 
-Questo metodo chiama il metodo [**CBasePin:: GetMediaType**](cbasepin-getmediatype.md) del PIN per recuperare i tipi di supporto.
+Questo metodo chiama il metodo [**CBasePin::GetMediaType**](cbasepin-getmediatype.md) del pin per recuperare i tipi di supporti.
 
 ## <a name="requirements"></a>Requisiti
 
@@ -95,8 +95,8 @@ Questo metodo chiama il metodo [**CBasePin:: GetMediaType**](cbasepin-getmediaty
 
 | Requisito | Valore |
 |--------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Intestazione<br/>  | <dl> <dt>Amfilter. h (include Streams. h)</dt> </dl>                                                                                  |
-| Libreria<br/> | <dl> <dt>Strmbase. lib (compilazioni finali); </dt> <dt>Strmbasd. lib (build di debug)</dt> </dl> |
+| Intestazione<br/>  | <dl> <dt>Amfilter.h (include Flussi.h)</dt> </dl>                                                                                  |
+| Libreria<br/> | <dl> <dt>Strmbase.lib (build di vendita al dettaglio); </dt> <dt>Strmbasd.lib (build di debug)</dt> </dl> |
 
 
 

@@ -1,19 +1,19 @@
 ---
-description: Un filtro ha completato l'esecuzione del frame.
+description: Un filtro ha completato l'esecuzione delle istruzioni dei frame.
 ms.assetid: 61c3c343-3754-40b7-9f85-9a96d3faf4a2
-title: EC_STEP_COMPLETE (dshow. h)
+title: EC_STEP_COMPLETE (Dshow.h)
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: a436d0cb32161e5e9d5782990146b03e0605b700
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: 04920f29570344412fab15f0f94feceef9539e004f9e8b94228a8cab0097d3aa
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "106329957"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120107891"
 ---
-# <a name="ec_step_complete"></a>\_passaggio EC \_ completato
+# <a name="ec_step_complete"></a>EC \_ STEP \_ COMPLETE
 
-Un filtro ha completato l'esecuzione del frame.
+Un filtro ha completato l'esecuzione delle istruzioni dei frame.
 
 ## <a name="parameters"></a>Parametri
 
@@ -35,7 +35,7 @@ Non usato.
 
 ## <a name="default-action"></a>Azione predefinita
 
-Filter Graph Manager sospende il grafico e passa l'evento all'applicazione.
+Il gestore del grafico del filtro sospende il grafo e passa l'evento all'applicazione.
 
 ## <a name="requirements"></a>Requisiti
 
@@ -43,7 +43,7 @@ Filter Graph Manager sospende il grafico e passa l'evento all'applicazione.
 
 | Requisito | Valore |
 |-------------------|------------------------------------------------------------------------------------|
-| Intestazione<br/> | <dl> <dt>Dshow. h</dt> </dl> |
+| Intestazione<br/> | <dl> <dt>Dshow.h</dt> </dl> |
 
 
 
@@ -57,7 +57,7 @@ Filter Graph Manager sospende il grafico e passa l'evento all'applicazione.
 [Notifica degli eventi in DirectShow](event-notification-in-directshow.md)
 </dt> <dt>
 
-[**IVideoFrameStep:: Step**](/windows/desktop/api/Strmif/nf-strmif-ivideoframestep-step)
+[**IVideoFrameStep::Step**](/windows/desktop/api/Strmif/nf-strmif-ivideoframestep-step)
 </dt> </dl>
 
  

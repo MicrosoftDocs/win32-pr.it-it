@@ -1,7 +1,7 @@
 ---
 description: Ottiene un puntatore al buffer che contiene la tabella delle costanti.
 ms.assetid: 71dda064-15f8-415c-aba7-60255886c6b4
-title: 'Metodo ID3DXConstantTable:: GetBufferPointer (D3DX9Shader. h)'
+title: Metodo ID3DXConstantTable::GetBufferPointer (D3DX9Shader.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -14,14 +14,14 @@ api_type:
 api_location:
 - d3dx9.lib
 - d3dx9.dll
-ms.openlocfilehash: e21efe675e0b9a87161bc940f428bdda354c050c
-ms.sourcegitcommit: 14010c34b35fa268046c7683f021f86de08ddd0a
+ms.openlocfilehash: 3ff8052b088b4cdbb01689796b32e63829554ccc0bce5295992393359b1cc7e7
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/15/2021
-ms.locfileid: "106322829"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120118811"
 ---
-# <a name="id3dxconstanttablegetbufferpointer-method"></a>Metodo ID3DXConstantTable:: GetBufferPointer
+# <a name="id3dxconstanttablegetbufferpointer-method"></a>Metodo ID3DXConstantTable::GetBufferPointer
 
 Ottiene un puntatore al buffer che contiene la tabella delle costanti.
 
@@ -50,8 +50,8 @@ Restituisce un puntatore al buffer.
 
 | Requisito | Valore |
 |--------------------|------------------------------------------------------------------------------------------|
-| Intestazione<br/>  | <dl> <dt>D3DX9Shader. h</dt> </dl> |
-| Libreria<br/> | <dl> <dt>D3dx9. lib</dt> </dl>     |
+| Intestazione<br/>  | <dl> <dt>D3DX9Shader.h</dt> </dl> |
+| Libreria<br/> | <dl> <dt>D3dx9.lib</dt> </dl>     |
 
 
 
@@ -62,7 +62,7 @@ Restituisce un puntatore al buffer.
 [ID3DXConstantTable](id3dxconstanttable.md)
 </dt> <dt>
 
-[**ID3DXConstantTable:: GetBufferSize**](id3dxconstanttable--getbuffersize.md)
+[**ID3DXConstantTable::GetBufferSize**](id3dxconstanttable--getbuffersize.md)
 </dt> </dl>
 
  

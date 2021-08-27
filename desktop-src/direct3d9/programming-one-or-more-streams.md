@@ -1,35 +1,35 @@
 ---
-description: Questa sezione descrive gli shader che è possibile usare per il modello di flusso programmabile.
+description: Questa sezione descrive gli shader che possono essere usati per il modello di flusso programmabile.
 ms.assetid: 800aaa27-e1e6-4d35-8de4-7ac94d646870
-title: Programmazione di uno o più flussi (Direct3D 9)
+title: Programmazione di uno o più Flussi (Direct3D 9)
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 43210823911648ed11227faef44d980b60d0a335
-ms.sourcegitcommit: a47bd86f517de76374e4fff33cfeb613eb259a7e
+ms.openlocfilehash: 92440abfb6e343bdd3440f5608d6446c0390b1271e5c4c6686a3a46e578476ab
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/06/2021
-ms.locfileid: "106304065"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120118600"
 ---
-# <a name="programming-one-or-more-streams-direct3d-9"></a>Programmazione di uno o più flussi (Direct3D 9)
+# <a name="programming-one-or-more-streams-direct3d-9"></a>Programmazione di uno o più Flussi (Direct3D 9)
 
-Questa sezione descrive gli shader che è possibile usare per il modello di flusso programmabile.
+Questa sezione descrive gli shader che possono essere usati per il modello di flusso programmabile.
 
-## <a name="using-streams"></a>Uso di flussi
+## <a name="using-streams"></a>Uso di Flussi
 
-DirectX 8 ha introdotto la nozione di flusso per associare i dati ai registri di input per l'uso da parte degli shader. Un flusso è una matrice uniforme di dati del componente, in cui ogni componente è costituito da uno o più elementi che rappresentano una singola entità, ad esempio posizione, normale, colore e così via. I flussi consentono ai chip grafici di eseguire un accesso diretto alla memoria da più buffer dei vertici in parallelo e forniscono anche un mapping più naturale dai dati dell'applicazione. Abilitano anche Trivial multitexture rispetto a MultiPASS. Si pensi a questo:
+DirectX 8 ha introdotto la nozione di flusso per associare i dati ai registri di input per l'uso da parte degli shader. Un flusso è una matrice uniforme di dati del componente, in cui ogni componente è costituito da uno o più elementi che rappresentano una singola entità, ad esempio posizione, normale, colore e così via. Flussi chip grafici per eseguire un accesso diretto alla memoria da più vertex buffer in parallelo e fornire anche un mapping più naturale dai dati dell'applicazione. Abilitano anche il multitexture semplice e il multipass. Si pensi al modo seguente:
 
 -   Un vertice è costituito da n flussi.
 -   Un flusso è costituito da elementi m.
--   Un elemento è \[ position, color, Normal e coordinata di trama \] .
+-   Un elemento è \[ position, color, normal, texture coordinate \] .
 
-Il metodo [**IDirect3DDevice9:: SetStreamSource**](/windows/desktop/api) associa un buffer vertex a un flusso di dati del dispositivo, creando un'associazione tra i dati dei vertici e una delle diverse porte del flusso di dati che alimentano le funzioni di elaborazione primitive. I riferimenti effettivi ai dati del flusso non si verificano fino a quando non viene chiamato un metodo di disegno, ad esempio [**IDirect3DDevice9::D rawprimitive**](/windows/win32/api/d3d9helper/nf-d3d9helper-idirect3ddevice9-drawprimitive).
+Il metodo [**IDirect3DDevice9::SetStreamSource**](/windows/desktop/api) associa un vertex buffer a un flusso di dati del dispositivo, creando un'associazione tra i dati dei vertici e una delle diverse porte del flusso di dati che alimentano le funzioni di elaborazione primitive. I riferimenti effettivi ai dati del flusso non si verificano fino a quando non viene chiamato un metodo di disegno, ad esempio [**IDirect3DDevice9::D rawPrimitive**](/windows/win32/api/d3d9helper/nf-d3d9helper-idirect3ddevice9-drawprimitive).
 
-Il mapping degli elementi del vertice di input ai registri di input dei vertici per i vertex shader programmabili è definito nella dichiarazione dello shader, ma gli elementi del vertice di input non hanno una semantica specifica relativa all'utilizzo. L'interpretazione degli elementi del vertice di input viene programmata usando le istruzioni dello shader. La funzione vertex shader viene definita da una matrice di istruzioni applicate a ogni vertice. I registri di output dei vertici vengono scritti in modo esplicito in, usando le istruzioni nella funzione shader.
+Il mapping degli elementi dei vertici di input ai registri di input dei vertici per i vertex shader programmabili è definito nella dichiarazione dello shader, ma gli elementi dei vertici di input non hanno una semantica specifica sul loro uso. L'interpretazione degli elementi dei vertici di input viene programmata usando le istruzioni dello shader. La funzione vertex shader è definita da una matrice di istruzioni applicate a ogni vertice. I registri di output dei vertici vengono scritti in modo esplicito in , usando le istruzioni nella funzione shader.
 
-Per questa discussione, tuttavia, è preoccupante del mapping semantico degli elementi ai registri e più riguarda il motivo per l'uso dei flussi e il problema che viene risolto usando i flussi. Il vantaggio principale dei flussi consiste nel fatto che i dati dei vertici vengono rimossi in precedenza dai costi associati al multitexturing. Prima dei flussi, un utente doveva duplicare i set di dati dei vertici per gestire il case singolo e multitrama senza elementi dati inutilizzati o includere elementi di dati che sarebbero stati inutilizzati tranne nel caso di multitexture.
+Per questa discussione, tuttavia, è necessario preoccuparsi meno del mapping semantico degli elementi ai registri e del motivo dell'uso dei flussi e del problema risolto usando i flussi. Il vantaggio principale dei flussi è che rimuovono i costi dei dati dei vertici precedentemente associati al multitexturing. Prima dei flussi, un utente doveva duplicare i set di dati dei vertici per gestire il caso singolo e multitexture senza elementi di dati inutilizzati o portare elementi di dati che sarebbero stati inutilizzati tranne che nel caso multitexture.
 
-Di seguito è riportato un esempio di utilizzo di due set di dati dei vertici, uno per la trama singola e uno per la multitexturing.
+Di seguito è riportato un esempio di uso di due set di dati dei vertici, uno per la trama singola e uno per il multitexturing.
 
 
 ```
@@ -52,7 +52,7 @@ struct CUSTOMVERTEX_TEX2
 
 
 
-In alternativa, era necessario disporre di un singolo elemento Vertex che conteneva entrambi i set di coordinate di trama.
+L'alternativa consisteva nel disporre di un singolo elemento vertice che conteneva entrambi i set di coordinate di trama.
 
 
 ```
@@ -68,9 +68,9 @@ struct CUSTOMVERTEX_TEX2
 
 
 
-Con questi dati dei vertici, solo una copia dei dati di posizione e colore viene mantenuta in memoria, a scapito del fatto di portare entrambi i set di coordinate di trama per il rendering anche nel caso di una singola trama.
+Con questi dati sui vertici, solo una copia dei dati relativi alla posizione e al colore viene trasportata in memoria, a spese del trasporto di entrambi i set di coordinate di trama per il rendering anche nel caso di trama singola.
 
-Ora che il compromesso è chiaro, i flussi forniscono una soluzione elegante a questo dilemma. Di seguito è riportato un set di definizioni dei vertici per supportare tre flussi: uno con la posizione e il colore, uno con il primo set di coordinate di trama e uno con il secondo set di coordinate di trama.
+Ora che il compromesso è chiaro, i flussi forniscono una correzione elegante a questo problema. Ecco un set di definizioni dei vertici per supportare tre flussi: uno con posizione e colore, uno con il primo set di coordinate di trama e uno con il secondo set di coordinate di trama.
 
 
 ```
@@ -123,7 +123,7 @@ D3DVERTEXELEMENT9 dwDecl3[] =
 
 
 
-A questo punto, creare l'oggetto dichiarazione vertici e impostarlo come illustrato di seguito:
+Creare ora l'oggetto dichiarazione vertice e impostarlo come illustrato:
 
 
 ```
@@ -137,9 +137,9 @@ m_pd3dDevice->SetVertexDeclaration(m_pVertexDeclaration);
 
 ## <a name="examples-of-combinations"></a>Esempi di combinazioni
 
-### <a name="one-stream-diffuse-color"></a>Colore diffuso di un flusso
+### <a name="one-stream-diffuse-color"></a>Un colore diffuso del flusso
 
-La dichiarazione dei vertici e le impostazioni di flusso per il rendering dei colori diffusi sono simili alle seguenti:
+La dichiarazione dei vertici e le impostazioni del flusso per il rendering a colori diffuso sono simili alle seguenti:
 
 
 ```
@@ -161,9 +161,9 @@ D3DVERTEXELEMENT9 dwDecl3[] =
 
 
 
-### <a name="two-streams-with-color-and-texture"></a>Due flussi con colore e trama
+### <a name="two-streams-with-color-and-texture"></a>Due Flussi con colore e trama
 
-La dichiarazione dei vertici e le impostazioni di flusso per il rendering a trama singola avranno un aspetto simile al seguente:
+La dichiarazione dei vertici e le impostazioni del flusso per il rendering a trama singola sono simili alle seguenti:
 
 
 ```
@@ -190,9 +190,9 @@ D3DVERTEXELEMENT9 dwDecl3[] =
 
 
 
-### <a name="two-streams-with-color-and-two-textures"></a>Due flussi con colore e due trame
+### <a name="two-streams-with-color-and-two-textures"></a>Due Flussi con colore e due trame
 
-La dichiarazione dei vertici e le impostazioni di flusso per il rendering a più trame a due trame avranno un aspetto simile al seguente:
+La dichiarazione dei vertici e le impostazioni del flusso per il rendering a più trame a due trame sono simili alle seguenti:The vertex declaration and stream settings for two-texture multi-texture rendering would look like this:
 
 
 ```
@@ -224,7 +224,7 @@ m_pd3dDevice->SetStreamSource(2, m_pVBTexC1, 0,
 
 
 
-In ogni caso, è sufficiente la chiamata [**IDirect3DDevice9::D rawprimitive**](/windows/win32/api/d3d9helper/nf-d3d9helper-idirect3ddevice9-drawprimitive) .
+In ogni caso, è sufficiente la chiamata [**IDirect3DDevice9::D rawPrimitive**](/windows/win32/api/d3d9helper/nf-d3d9helper-idirect3ddevice9-drawprimitive) seguente.
 
 
 ```
@@ -233,13 +233,13 @@ In ogni caso, è sufficiente la chiamata [**IDirect3DDevice9::D rawprimitive**](
 
 
 
-Questo mostra la flessibilità dei flussi per la risoluzione del problema di duplicazione dei dati/trasmissione di dati ridondanti sul bus (ovvero, di sprecare larghezza di banda).
+Ciò mostra la flessibilità dei flussi nella risoluzione del problema della duplicazione dei dati o della trasmissione dei dati ridondanti attraverso il bus, ovvero dello spremimento della larghezza di banda.
 
 ## <a name="related-topics"></a>Argomenti correlati
 
 <dl> <dt>
 
-[Dichiarazione vertici](vertex-declaration.md)
+[Dichiarazione dei vertici](vertex-declaration.md)
 </dt> </dl>
 
  

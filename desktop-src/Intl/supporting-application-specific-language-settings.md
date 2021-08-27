@@ -1,25 +1,25 @@
 ---
-description: L'applicazione può supportare un diverso set di lingue dell'interfaccia utente da quelle supportate dal sistema operativo di destinazione. In questo argomento viene illustrato questo tipo di supporto, utilizzando frammenti di esempi completi.
+description: L'applicazione può supportare un set diverso di lingue dell'interfaccia utente da quelle supportate dal sistema operativo di destinazione. Questo argomento illustra questo tipo di supporto, usando frammenti di codice di esempi completi.
 ms.assetid: cb9f2a5f-3bb8-4287-a542-c71d20b37194
-title: Supporto delle impostazioni della lingua Application-Specific
+title: Supporto di Application-Specific language Impostazioni
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: d6bddfe94586751d3b0f4757c670c006317e49b7
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 96c934ea2f01c37eb2f9e846382447a50ccbedcd9b69fe20069216fa46521b02
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "106316276"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120130061"
 ---
-# <a name="supporting-application-specific-language-settings"></a>Supporto delle impostazioni della lingua Application-Specific
+# <a name="supporting-application-specific-language-settings"></a>Supporto di Application-Specific language Impostazioni
 
-L'applicazione può supportare un diverso set di lingue dell'interfaccia utente da quelle supportate dal sistema operativo di destinazione. In questo argomento viene illustrato questo tipo di supporto, utilizzando frammenti di esempi completi.
+L'applicazione può supportare un set diverso di lingue dell'interfaccia utente da quelle supportate dal sistema operativo di destinazione. Questo argomento illustra questo tipo di supporto, usando frammenti di codice di esempi completi.
 
-## <a name="interpret-users-language-preference"></a>Interpretare le preferenze della lingua dell'utente
+## <a name="interpret-users-language-preference"></a>Interpretare le preferenze di lingua dell'utente
 
-L'applicazione deve innanzitutto determinare quale lingua dell'interfaccia utente visualizzare, in base alle preferenze dell'utente. Il codice può leggere le impostazioni da un file di configurazione o dalle impostazioni del registro di sistema.
+L'applicazione deve prima determinare la lingua dell'interfaccia utente da visualizzare, in base alle preferenze dell'utente. Il codice può leggere le impostazioni da un file di configurazione o dalle impostazioni del Registro di sistema.
 
-Nell'esempio seguente vengono definite due funzioni utilizzate per interpretare le preferenze di lingua dell'utente. La prima funzione illustra la lettura di un elenco delimitato di lingue da un file, rappresentato nel codice come "langs.txt". I delimitatori supportati nell'esempio sono ",", ";"; "." e "". La seconda funzione converte la stringa letta dal file in un valore a più stringhe. Questa operazione è necessaria perché le funzioni MUI utilizzate per impostare i linguaggi accettano solo valori multistringhe.
+L'esempio seguente definisce due funzioni usate per interpretare le preferenze di lingua dell'utente. La prima funzione illustra la lettura di un elenco delimitato di lingue da un file, rappresentato nel codice come "langs.txt". I delimitatori supportati nell'esempio sono ",",";";"." e " ". La seconda funzione converte la stringa letta dal file in un valore a più stringhe. Questa operazione è necessaria perché le funzioni MUI usate per impostare le lingue accettano solo valori a più stringhe.
 
 
 ```C++
@@ -89,9 +89,9 @@ BOOL ConvertMyLangStrToMultiLangStr(WCHAR * langStr, WCHAR * langMultiStr, DWORD
 
 
 
-## <a name="set-the-application-language"></a>Imposta la lingua dell'applicazione
+## <a name="set-the-application-language"></a>Impostare la lingua dell'applicazione
 
-Dopo aver letto le informazioni sulle preferenze della lingua, il codice dell'applicazione deve usare l'impostazione recuperata per impostare la lingua dell'applicazione. In Windows 7 e versioni successive, l'applicazione può impostare la lingua a livello di processo chiamando la funzione [**SetProcessPreferredUILanguages**](/windows/desktop/api/Winnls/nf-winnls-setprocesspreferreduilanguages) .
+Dopo aver letto le informazioni sulle preferenze della lingua, il codice dell'applicazione deve usare l'impostazione recuperata per impostare la lingua dell'applicazione. In Windows 7 e versioni successive, l'applicazione può impostare la lingua a livello di processo chiamando la [**funzione SetProcessPreferredUILanguages.**](/windows/desktop/api/Winnls/nf-winnls-setprocesspreferreduilanguages)
 
 
 ```C++
@@ -108,7 +108,7 @@ if(!SetProcessPreferredUILanguages(MUI_LANGUAGE_NAME, userLanguagesMultiString, 
 
 
 
-In Windows Vista e versioni successive la lingua dell'applicazione viene impostata a livello di thread chiamando la funzione [**SetThreadPreferredUILanguages**](/windows/desktop/api/Winnls/nf-winnls-setthreadpreferreduilanguages) .
+In Windows Vista e versioni successive, la lingua dell'applicazione viene impostata a livello di thread chiamando la [**funzione SetThreadPreferredUILanguages.**](/windows/desktop/api/Winnls/nf-winnls-setthreadpreferreduilanguages)
 
 
 ```C++
@@ -133,10 +133,10 @@ return 1;
 [Impostazione delle preferenze di lingua dell'applicazione](setting-application-language-preferences.md)
 </dt> <dt>
 
-[Esempio di impostazioni di MUI: Application-Specific (Windows Vista)](mui-application-specific-settings-sample-vista.md)
+[MUI: Application-Specific Impostazioni esempio (Windows Vista)](mui-application-specific-settings-sample-vista.md)
 </dt> <dt>
 
-[Esempio di impostazioni di MUI: Application-Specific (precedente a Windows Vista)](mui-application-specific-settings-sample-pre-vista.md)
+[MUI: Application-Specific Impostazioni esempio (pre-Windows Vista)](mui-application-specific-settings-sample-pre-vista.md)
 </dt> </dl>
 
  

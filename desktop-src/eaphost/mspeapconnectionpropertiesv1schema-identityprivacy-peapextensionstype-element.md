@@ -14,12 +14,12 @@ ms.topic: reference
 ms.date: 05/31/2018
 api_location: ''
 ROBOTS: INDEX,FOLLOW
-ms.openlocfilehash: 7195ce43fb3f1a1f1710fe7aee3f5f74e18f3786
-ms.sourcegitcommit: 6fc8a7419bd01787cf6a1c52c355a4a2d1aec471
+ms.openlocfilehash: 1997f802c68c56232ee0680fd77d11007d88b7670c9b3277ddfb2d78901961bb
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/10/2021
-ms.locfileid: "111989216"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120094311"
 ---
 # <a name="identityprivacy-peapextensionstype-element"></a>Elemento IdentityPrivacy (PeapExtensionsType)
 
@@ -44,8 +44,8 @@ L'elemento è definito [**dall'elemento PeapExtensionsType.**](mspeapconnectionp
 
 | Requisito | Valore |
 |-------------------------------------|---------------------------------------------------------|
-| Client minimo supportato<br/> | Solo app desktop di Windows 7 \[\]<br/>              |
-| Server minimo supportato<br/> | Solo app desktop di Windows Server 2008 R2 \[\]<br/> |
+| Client minimo supportato<br/> | Windows 7 \[ app desktop\]<br/>              |
+| Server minimo supportato<br/> | Windows Solo app desktop server 2008 R2 \[\]<br/> |
 
 
 

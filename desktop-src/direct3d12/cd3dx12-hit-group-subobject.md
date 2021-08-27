@@ -1,6 +1,6 @@
 ---
 title: CD3DX12_HIT_GROUP_SUBOBJECT classe (D3dx12.h)
-description: Classe helper per la creazione di un oggetto secondario dello stato del gruppo di hit.
+description: Classe helper per la creazione di un sottooggetto di stato del gruppo di hit.
 keywords:
 - CD3DX12_HIT_GROUP_SUBOBJECT classe
 topic_type:
@@ -14,18 +14,18 @@ api_type:
 ms.localizationpriority: low
 ms.topic: reference
 ms.date: 08/04/2021
-ms.openlocfilehash: 68b95f15c41fd46bfaeb58943720d3b657a3208d9a0276e9ab65fe7bd6087c42
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: dd2b396e1305d2cf21cb2121aaa6a186c47d7677
+ms.sourcegitcommit: 0dec0044816af3f2b2e6403659e1cf11138c90cd
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119037384"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "121813092"
 ---
 # <a name="cd3dx12_hit_group_subobject-class"></a>CD3DX12_HIT_GROUP_SUBOBJECT classe
 
-Classe helper per la creazione di un oggetto secondario dello stato del gruppo di hit.
+Classe helper per la creazione di un sottooggetto di stato del gruppo di hit.
 
-Per altre informazioni sugli helper per la creazione di oggetti di stato D3DX12, [CD3DX12_STATE_OBJECT_DESC](cd3dx12-state-object-desc.md).
+Per altre informazioni sugli helper per la creazione di oggetti di stato D3DX12, [vedere](cd3dx12-state-object-desc.md)CD3DX12_STATE_OBJECT_DESC .
 
 ## <a name="syntax"></a>Sintassi
 
@@ -49,7 +49,7 @@ class CD3DX12_HIT_GROUP_SUBOBJECT
 
 `CD3DX12_HIT_GROUP_SUBOBJECT`
 
-Costruttore predefinito. Crea una nuova istanza inizializzata per impostazione predefinita di un **CD3DX12_HIT_GROUP_SUBOBJECT**.
+Costruttore predefinito. Crea una nuova istanza inizializzata predefinita di un CD3DX12_HIT_GROUP_SUBOBJECT **.**
 
 `CD3DX12_HIT_GROUP_SUBOBJECT(CD3DX12_STATE_OBJECT_DESC&)`
 
@@ -61,7 +61,7 @@ Funzione per l'impostazione del nome del gruppo di hit.
 
 `SetHitGroupType(D3D12_HIT_GROUP_TYPE)`
 
-Funzione per l'impostazione di un [valore dall D3D12_HIT_GROUP_TYPE](/windows/win32/api/d3d12/ne-d3d12-d3d12_hit_group_type) che specifica il tipo del gruppo di hit.
+Funzione per l'impostazione di un [valore dall'D3D12_HIT_GROUP_TYPE](/windows/win32/api/d3d12/ne-d3d12-d3d12_hit_group_type) che specifica il tipo del gruppo di hit.
 
 `SetAnyHitShaderImport(LPCWSTR)`
 

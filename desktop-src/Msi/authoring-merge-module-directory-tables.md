@@ -1,55 +1,55 @@
 ---
-description: Un modulo merge può essere applicato a un file con estensione msi per aggiungere directory all'installazione, ma non è possibile sostituire o rimuovere le directory esistenti.
+description: Un modulo unione può essere applicato a un file .msi per aggiungere directory all'installazione, ma non può sostituire o rimuovere directory esistenti.
 ms.assetid: 5b808aa2-b2b2-4703-bd57-0b5e1e73b306
 title: Creazione di tabelle di directory del modulo merge
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 98332f2c0bda10a5cc076f0ec80df3bf4b2e05aa
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: f90768dff191b729d482f8ddd58a821a6ed440e79fcd1453ff412aaf7b8a76fb
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "103881101"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120086271"
 ---
 # <a name="authoring-merge-module-directory-tables"></a>Creazione di tabelle di directory del modulo merge
 
-Un modulo merge può essere applicato a un file con estensione msi per aggiungere directory all'installazione, ma non è possibile sostituire o rimuovere le directory esistenti. La [tabella directory](directory-table.md) specifica il layout delle directory fornite dal modulo merge all'installazione di destinazione. In ogni modulo merge è necessaria una tabella di directory.
+Un modulo unione può essere applicato a un file .msi per aggiungere directory all'installazione, ma non può sostituire o rimuovere directory esistenti. La [tabella Directory](directory-table.md) specifica il layout delle directory fornite dal modulo di merge all'installazione di destinazione. In ogni modulo di unione è necessaria una tabella Directory.
 
-Usare le linee guida seguenti durante la creazione della tabella di directory in un modulo merge. Per ulteriori informazioni, vedere [tabella directory](directory-table.md) e [utilizzo della tabella directory](using-the-directory-table.md).
+Quando si crea la tabella directory in un modulo di merge, usare le linee guida seguenti. Per altre informazioni, vedere [Tabella di directory](directory-table.md) e Uso della tabella di [directory.](using-the-directory-table.md)
 
--   La struttura di directory aggiunta dal modulo merge deve avere una singola directory radice. La radice deve essere denominata TARGETDIR. L'utente può modificare il valore di TARGETDIR durante il merge per specificare la posizione in cui alleghi la struttura di directory del modulo nell'albero di directory della destinazione.
--   Le tabelle del modulo merge diverse dalla tabella di directory non devono fare riferimento direttamente ai percorsi della directory a TARGETDIR. Il percorso di tale riferimento viene modificato se l'utente modifica il valore di TARGETDIR.
--   È necessario che le tabelle del modulo merge facciano riferimento al percorso di una directory figlio di TARGETDIR o a un'altra directory nell'albero del modulo merge. Eseguire le operazioni seguenti per specificare TARGETDIR come elemento padre di una directory nel modulo merge. Immettere la directory nella colonna directory e immettere TARGETDIR nella \_ colonna padre della directory. Usare la notazione "." nella colonna DefaultDir per indicare che questa directory si trova in TARGETDIR senza una sottodirectory. Per ulteriori informazioni, vedere [utilizzo della tabella directory](using-the-directory-table.md).
--   I nomi delle directory aggiunte dal modulo merge devono usare le convenzioni di denominazione descritte in [denominazione delle chiavi primarie nei database dei moduli di merge](naming-primary-keys-in-merge-module-databases.md). Sono incluse le directory predefinite da proprietà come la proprietà [**SystemFolder**](systemfolder.md) e la proprietà [**ProgramFilesFolder**](programfilesfolder.md) .
--   Aggiungere un [*GUID*](g-gly.md) a ogni voce nella tabella di directory (ad eccezione di TARGETDIR). Sono incluse le voci della tabella di directory che specificano Windows Installer proprietà [**SystemFolder**](systemfolder.md) , ad esempio SystemFolder. 00000000 \_ 0000 \_ 0000 \_ 0000 \_ 000000000000. La libreria Mergemod.dll aggiunge azioni personalizzate per impostare la proprietà **SystemFolder** .
--   Quando in un modulo merge viene inclusa una directory predefinita, lo strumento di merge aggiunge automaticamente al database di destinazione un' [azione personalizzata di tipo 51](custom-action-type-51.md) . L'autore del modulo merge deve verificare che sia inclusa anche una [tabella CustomAction](customaction-table.md) . La tabella CustomAction può essere vuota, ma la tabella deve esistere nel database di destinazione e garantisce che le directory predefinite modificate vengano scritte nei percorsi corretti. Ad esempio, quando una directory di sistema è inclusa in un modulo merge, l'autore del modulo merge deve verificare che sia presente una tabella delle azioni personalizzata.
+-   La struttura di directory aggiunta dal modulo merge deve avere una singola directory radice. La radice deve essere denominata TARGETDIR. L'utente può modificare il valore di TARGETDIR durante l'unione per specificare dove collegare la struttura di directory del modulo all'albero di directory della destinazione.
+-   Le tabelle del modulo merge diverse dalla tabella Directory non devono fare riferimento direttamente ai percorsi di directory a TARGETDIR. La posizione di tale riferimento cambia se il valore di TARGETDIR viene modificato dall'utente.
+-   Le tabelle nel modulo di merge devono fare riferimento al percorso di una directory figlio di TARGETDIR o di un'altra directory nell'albero del modulo di merge. Eseguire le operazioni seguenti per specificare TARGETDIR come padre di una directory nel modulo di unione. Immettere la directory nella colonna Directory e targetDIR nella colonna Directory \_ padre. Usare la notazione "." nella colonna DefaultDir per indicare che questa directory si trova in TARGETDIR senza una sottodirectory. Per altre informazioni, vedere [Uso della tabella directory.](using-the-directory-table.md)
+-   I nomi delle directory aggiunte dal modulo di merge devono usare le convenzioni di denominazione descritte in [Naming Primary Keys in Merge Module Databases](naming-primary-keys-in-merge-module-databases.md). Sono incluse le directory predefinite dalle proprietà, ad esempio [**la proprietà SystemFolder**](systemfolder.md) e [**la proprietà ProgramFilesFolder.**](programfilesfolder.md)
+-   Aggiungere un [*GUID*](g-gly.md) a ogni voce della tabella Directory (ad eccezione di TARGETDIR). Sono incluse le voci della tabella Directory che specificano le proprietà [**systemFolder**](systemfolder.md) di Windows Installer, ad esempio SystemFolder.00000000 \_ 0000 \_ 0000 \_ 0000 \_ 000000000000000. La libreria Mergemod.dll aggiunge azioni personalizzate per impostare la **proprietà SystemFolder.**
+-   Quando una directory predefinita viene inclusa in un modulo unione, lo strumento di merge aggiunge automaticamente un tipo di azione [personalizzata 51](custom-action-type-51.md) al database di destinazione. L'autore del modulo unione deve assicurarsi che sia inclusa anche una tabella [CustomAction.](customaction-table.md) La tabella CustomAction può essere vuota, ma questa tabella deve esistere nel database di destinazione e garantisce che le directory predefinite modificate siano scritte nei percorsi corretti. Ad esempio, quando una directory di sistema viene inclusa in un modulo merge, l'autore del modulo di merge deve assicurarsi che esista una tabella Azione personalizzata.
 
-    Si noti che l'algoritmo di corrispondenza per la generazione di queste azioni personalizzate di tipo 51 controlla solo che il nome di directory inizi con una delle proprietà [**SystemFolder**](systemfolder.md) predefinite. Non verifica che il nome di directory corrisponda esattamente alla proprietà della directory. Tutte le directory che iniziano con uno di questi nomi di cartella standard ottengono un'azione personalizzata di tipo 51, anche se il resto del nome non è un GUID. È necessario che gli autori si occupino di non generare corrispondenze false positive e la generazione di azioni personalizzate non intenzionali, su chiavi primarie derivate che iniziano con una delle proprietà **SystemFolder** .
+    Si noti che l'algoritmo di corrispondenza per la generazione di queste azioni personalizzate di tipo 51 controlla solo che il nome della directory inizi con una delle proprietà [**SystemFolder**](systemfolder.md) predefinite. Non verifica che il nome della directory sia esattamente uguale alla proprietà della directory. Qualsiasi directory che inizia con uno di questi nomi di cartella standard ottiene un'azione personalizzata di tipo 51, anche se il resto del nome non è un GUID. Gli autori devono fare attenzione a non generare corrispondenze false positive e la generazione di azioni personalizzate impreviste sulle chiavi primarie derivate che iniziano con una **delle proprietà SystemFolder.**
 
-Di seguito è riportato un esempio di tabella di directory in un modulo merge e le directory risolte previste.
+Di seguito è riportato un esempio di tabella Directory in un modulo unione e delle directory risolte previste.
 
 
 
-| Directory                                              | \_Padre directory                                | DefaultDir  |
+| Directory                                              | Directory \_ Parent                                | DefaultDir  |
 |--------------------------------------------------------|--------------------------------------------------|-------------|
-| TARGETDIR                                              |                                                  | SourceDir   |
-| Dir00. BC82E350 \_ C7FC \_ 11D1 \_ A848-006097ABDE17        | TARGETDIR                                        | .: \_ PROG mmm |
-| SystemFolder. BC82E350 \_ C7FC \_ 11D1 \_ A848-006097ABDE17 | TARGETDIR                                        | \_Sys mmm    |
-| Dir02. BC82E350 \_ C7FC \_ 11D1 \_ A848-006097ABDE17        | Dir00. BC82E350 \_ C7FC \_ 11D1 \_ A848 \_ 006097ABDE17 | \_ocx MFC    |
+| Targetdir                                              |                                                  | SourceDir   |
+| Dir00.BC82E350 \_ C7FC \_ 11d1 \_ A848-006097ABDE17        | Targetdir                                        | Prog .:MMM \_ |
+| SystemFolder.BC82E350 \_ C7FC \_ 11d1 \_ A848-006097ABDE17 | Targetdir                                        | MMM \_ Sys    |
+| Dir02.BC82E350 \_ C7FC \_ 11d1 \_ A848-006097ABDE17        | Dir00.BC82E350 \_ C7FC \_ 11d1 \_ A848 \_ 006097ABDE17 | MFC \_ OCX    |
 
 
 
  
 
-Si prevede che un modulo merge con la tabella di directory precedente provochi la seguente struttura di directory.
+È previsto che un modulo unione con la tabella Directory precedente dia come risultato la struttura di directory seguente.
 
 
 
 | Directory                                              | Destinazione                                     | Source (Sorgente)                                               |
 |--------------------------------------------------------|--------------------------------------------|------------------------------------------------------|
-| Dir00. BC82E350 \_ C7FC \_ 11D1 \_ A848-006097ABDE17        | \[Punto di installazione del modulo di merge\]\\         | \[\] \\ PROG mmm punto di origine del modulo di merge \_           |
-| SystemFolder. BC82E350 \_ C7FC \_ 11D1 \_ A848-006097ABDE17 | \[SystemFolder\]\\                         | \[Il punto di origine del modulo di Unione \] \\ mmm \_ sys            |
-| Dir02. BC82E350 \_ C7FC \_ 11D1 \_ A848-006097ABDE17        | \[OCX per il punto di installazione del modulo di merge \] \\ \_ | \[Punto di origine del modulo di merge- \] \\ \_ PROG \\ MFC \_ ocx |
+| Dir00.BC82E350 \_ C7FC \_ 11d1 \_ A848-006097ABDE17        | \[Punto di installazione del modulo di merge\]\\         | \[Prog MMM del punto di \] \\ origine del modulo di \_ merge           |
+| SystemFolder.BC82E350 \_ C7FC \_ 11d1 \_ A848-006097ABDE17 | \[Cartella Di sistema\]\\                         | \[Merge Module's Source Point \] \\ MMM \_ Sys            |
+| Dir02.BC82E350 \_ C7FC \_ 11d1 \_ A848-006097ABDE17        | \[Punto di installazione del modulo \] \\ unione MFC \_ OCX | \[Punto di origine del modulo unione \] \\ MMM \_ Prog \\ MFC \_ OCX |
 
 
 

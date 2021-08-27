@@ -12,16 +12,16 @@ api_name:
 api_type:
 - COM
 api_location: ''
-ms.openlocfilehash: d2ed39956bb542aa4e150bf9afa3e59a472a4d91
-ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
+ms.openlocfilehash: 12388706c0b8e9205f398ec259314ab05ff5fe1c062f4b8920d610b7d74b36f2
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/28/2021
-ms.locfileid: "108110879"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120129991"
 ---
 # <a name="locationdispdispcivicaddressreporttimestamp-property"></a>Proprietà LocationDisp.DispCivicAddressReport.Timestamp
 
-\[Il modello a oggetti dell'API Location è disponibile per l'uso nei sistemi operativi specificati nella sezione Requisiti. È possibile che in versioni successive sia stata modificata o non sia più disponibile. Per accedere invece alla posizione da un sito Web, usare [l'API di georilevazione W3C](/previous-versions/windows/internet-explorer/ie-developer/samples/gg589513(v=vs.85)). Per accedere alla posizione da un'applicazione desktop, usare l'API [**Windows.Devices.Geolocation.**](/uwp/api/Windows.Devices.Geolocation)\]
+\[Il modello a oggetti dell'API Location è disponibile per l'uso nei sistemi operativi specificati nella sezione Requisiti. È possibile che in versioni successive sia stata modificata o non sia più disponibile. Per accedere invece alla posizione da un sito Web, usare [l'API di georilevazione W3C](/previous-versions/windows/internet-explorer/ie-developer/samples/gg589513(v=vs.85)). Per accedere alla posizione da un'applicazione desktop, usare il [**Windows. API Devices.Geolocation.**](/uwp/api/Windows.Devices.Geolocation)\]
 
 Data e ora di generazione del report.
 
@@ -54,7 +54,7 @@ Per un esempio di come usare questa proprietà, vedere [a Simple Civic Address R
 
 | Requisito | Valore |
 |-------------------------------------|--------------------------------------------|
-| Client minimo supportato<br/> | Solo app desktop di Windows 7 \[\]<br/> |
+| Client minimo supportato<br/> | Windows 7 \[ app desktop\]<br/> |
 | Server minimo supportato<br/> | Nessuno supportato<br/>                  |
 
 

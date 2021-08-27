@@ -1,7 +1,7 @@
 ---
-description: 'Il metodo Activate crea la finestra di dialogo. Questo metodo implementa il Metodo IPropertyPage:: Activate.'
+description: Il metodo Activate crea la finestra di dialogo. Questo metodo implementa il metodo IPropertyPage::Activate.
 ms.assetid: 8f030dc5-1d14-46b5-9d40-7f07a1177dbe
-title: Metodo CBasePropertyPage. Activate (Cprop. h)
+title: Metodo CBasePropertyPage.Activate (Cprop.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -16,16 +16,16 @@ api_location:
 - Strmbase.dll
 - Strmbasd.lib
 - Strmbasd.dll
-ms.openlocfilehash: 4b851cfc4490d25e7e30dfd2cf0e7c33b0e76224
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: b525eb16f534f0da8c847f50365c43124cb9e37d89f16629842fa202925a0674
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "106328077"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120108521"
 ---
-# <a name="cbasepropertypageactivate-method"></a>Metodo CBasePropertyPage. Activate
+# <a name="cbasepropertypageactivate-method"></a>Metodo CBasePropertyPage.Activate
 
-Il `Activate` metodo crea la finestra di dialogo. Questo metodo implementa il metodo **IPropertyPage:: Activate** .
+Il `Activate` metodo crea la finestra di dialogo. Questo metodo implementa il **metodo IPropertyPage::Activate.**
 
 ## <a name="syntax"></a>Sintassi
 
@@ -54,29 +54,29 @@ Handle per la finestra padre della finestra di dialogo.
 *prect* 
 </dt> <dd>
 
-Puntatore a una struttura **Rect** che contiene informazioni sul posizionamento per la finestra di dialogo.
+Puntatore a una **struttura RECT** che contiene informazioni sul posizionamento per la finestra di dialogo.
 
 </dd> <dt>
 
 *fModal* 
 </dt> <dd>
 
-Valore booleano che indica se il frame della finestra di dialogo è modale (**true**) o non modale (**false**).
+Valore booleano che indica se la cornice della finestra di dialogo è modale (**TRUE**) o non modale **(FALSE).**
 
 </dd> </dl>
 
 ## <a name="return-value"></a>Valore restituito
 
-Restituisce un valore **HRESULT** . Di seguito sono indicati alcuni valori possibili.
+Restituisce un **valore HRESULT.** Di seguito sono indicati alcuni valori possibili.
 
 
 
 | Codice restituito                                                                                   | Descrizione                           |
 |-----------------------------------------------------------------------------------------------|---------------------------------------|
-| <dl> <dt>**\_OK**</dt> </dl>          | Esito positivo.<br/>                   |
-| <dl> <dt>**E \_ OutOfMemory**</dt> </dl> | Memoria insufficiente.<br/>       |
-| <dl> <dt>**\_puntatore E**</dt> </dl>     | Argomento puntatore **null** .<br/> |
-| <dl> <dt>**E \_ imprevisto**</dt> </dl>  | Errore imprevisto.<br/>        |
+| <dl> <dt>**S \_ OK**</dt> </dl>          | Operazione completata.<br/>                   |
+| <dl> <dt>**E \_ OUTOFMEMORY**</dt> </dl> | Memoria insufficiente.<br/>       |
+| <dl> <dt>**PUNTATORE \_ E**</dt> </dl>     | Argomento del puntatore **NULL.**<br/> |
+| <dl> <dt>**E \_ UNEXPECTED**</dt> </dl>  | Errore imprevisto.<br/>        |
 
 
 
@@ -88,8 +88,8 @@ Restituisce un valore **HRESULT** . Di seguito sono indicati alcuni valori possi
 
 | Requisito | Valore |
 |--------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Intestazione<br/>  | <dl> <dt>Cprop. h (include Streams. h)</dt> </dl>                                                                                     |
-| Libreria<br/> | <dl> <dt>Strmbase. lib (compilazioni finali); </dt> <dt>Strmbasd. lib (build di debug)</dt> </dl> |
+| Intestazione<br/>  | <dl> <dt>Cprop.h (includere Flussi.h)</dt> </dl>                                                                                     |
+| Libreria<br/> | <dl> <dt>Strmbase.lib (build di vendita al dettaglio); </dt> <dt>Strmbasd.lib (build di debug)</dt> </dl> |
 
 
 
@@ -100,7 +100,7 @@ Restituisce un valore **HRESULT** . Di seguito sono indicati alcuni valori possi
 [**Classe CBasePropertyPage**](cbasepropertypage.md)
 </dt> <dt>
 
-[**CBasePropertyPage:: OnActivate**](cbasepropertypage-onactivate.md)
+[**CBasePropertyPage::OnActivate**](cbasepropertypage-onactivate.md)
 </dt> </dl>
 
  

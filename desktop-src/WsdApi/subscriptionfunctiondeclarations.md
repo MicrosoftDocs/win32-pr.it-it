@@ -1,17 +1,17 @@
 ---
 description: Genera dichiarazioni di implementazione per le funzioni proxy subscribe/unsubscribe per le operazioni di notifica del tipo di porta.
 ms.assetid: 0e5b2232-c9bf-4741-921d-bb3bce4ee293
-title: subscriptionFunctionDeclarations - elemento
+title: Elemento subscriptionFunctionDeclarations
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: fb7389b30ef7da17f9466fa8aefd24fa04f4c99f
-ms.sourcegitcommit: b6fe9acffad983c14864b8fe0296f6025cb1f961
+ms.openlocfilehash: 1326750ece2f8dceff171890d107a7efad5f7432be2c201bf182e4406cb7fe6b
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/26/2021
-ms.locfileid: "107995458"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120097101"
 ---
-# <a name="subscriptionfunctiondeclarations-element"></a>subscriptionFunctionDeclarations - elemento
+# <a name="subscriptionfunctiondeclarations-element"></a>Elemento subscriptionFunctionDeclarations
 
 Genera dichiarazioni di implementazione per le funzioni proxy subscribe/unsubscribe per le operazioni di notifica del tipo di porta.
 
@@ -41,7 +41,7 @@ Genera dichiarazioni di implementazione per le funzioni proxy subscribe/unsubscr
 | Elemento                                                           | Descrizione                                                                                            |
 |-------------------------------------------------------------------|--------------------------------------------------------------------------------------------------------|
 | [**notificationInterface**](notificationinterface.md)<br/> | Specifica il nome dell'interfaccia di notifica utilizzata con le sottoscrizioni di eventi.<br/> <br/> |
-| [**Operazione**](operation.md)<br/>                         | Specifica un'operazione per la quale deve essere generato il codice.<br/> <br/>                       |
+| [**Operazione**](operation.md)<br/>                         | Specifica un'operazione per cui deve essere generato il codice.<br/> <br/>                       |
 | [**Porttype**](porttype.md)<br/>                           | Specifica il tipo di porta per cui deve essere generato il codice.<br/> <br/>                      |
 
 
@@ -62,7 +62,7 @@ Genera dichiarazioni di implementazione per le funzioni proxy subscribe/unsubscr
 
 | Elemento                         | Descrizione                                                    |
 |---------------------------------|----------------------------------------------------------------|
-| [**ﬁle**](file.md)<br/> | Restituisce un file dal generatore di codice.<br/> <br/> |
+| [**File**](file.md)<br/> | Restituisce un file dal generatore di codice.<br/> <br/> |
 
 
 
@@ -70,7 +70,7 @@ Genera dichiarazioni di implementazione per le funzioni proxy subscribe/unsubscr
 
 
 
-| Label | Valore |
+| Etichetta | Valore |
 |-------------------------------------|---------------|
 | Sistema minimo supportato<br/> | Windows Vista |
 | Può essere vuoto                        | Sì           |

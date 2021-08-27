@@ -4,12 +4,12 @@ description: Moltiplicazione per componente.
 ms.assetid: DB95A38F-54E4-4BB6-81DF-CFFEBB4D425B
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: a020666c3ce59cb368271aaf09f958d8a40af56c
-ms.sourcegitcommit: b6fe9acffad983c14864b8fe0296f6025cb1f961
+ms.openlocfilehash: 0185f0d11807ddc8cfc7b057cf9a8af1bc49e199d187c01bf16029e0ce54d018
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/26/2021
-ms.locfileid: "107998258"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120118351"
 ---
 # <a name="mul-sm4---asm"></a>mul (sm4 - asm)
 
@@ -38,9 +38,9 @@ Moltiplicazione per componente.
 
 ## <a name="remarks"></a>Commenti
 
-Nella tabella seguente vengono illustrati i risultati ottenuti durante l'esecuzione dell'istruzione con diverse classi di numeri, presupponendo che non si verifichi alcun overflow o underflow.
+La tabella seguente mostra i risultati ottenuti durante l'esecuzione dell'istruzione con diverse classi di numeri, presupponendo che non si verifichino overflow o underflow.
 
-F indica un numero finito-reale.
+F indica un numero finito reale.
 
 
 
@@ -62,7 +62,7 @@ F indica un numero finito-reale.
 
  
 
-Questa istruzione si applica alle fasi di shader seguenti:
+Questa istruzione si applica alle fasi dello shader seguenti:
 
 
 

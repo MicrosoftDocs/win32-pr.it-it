@@ -1,48 +1,48 @@
 ---
-description: Se si sta scrivendo un servizio o un componente ed è necessario usare i servizi transazionali o se è necessario monitorare lo stato di una transazione kernel, è necessario creare un gestore di risorse (RM).
+description: Se si scrive un servizio o un componente ed è necessario usare servizi transazionali o se è necessario monitorare lo stato di una transazione del kernel, è necessario creare un gestore di risorse (RM).
 ms.assetid: 9b62ef58-9897-4573-bda4-8c3ec952b6d2
-title: Scrittura di un Gestione risorse
+title: Scrittura di un Resource Manager
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: b2c47f9a0704f6edaea02d752fe39f01fce61c0a
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 54b1443bef61f56a14779612a6275aacbd65e344d7294325bd87b953795f0f8a
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "106311125"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120086451"
 ---
-# <a name="writing-a-resource-manager"></a>Scrittura di un Gestione risorse
+# <a name="writing-a-resource-manager"></a>Scrittura di un Resource Manager
 
-Se si sta scrivendo un servizio o un componente ed è necessario usare i servizi transazionali o se è necessario monitorare lo stato di una transazione kernel, è necessario creare un gestore di risorse (RM).
+Se si scrive un servizio o un componente ed è necessario usare servizi transazionali o se è necessario monitorare lo stato di una transazione del kernel, è necessario creare un gestore di risorse (RM).
 
 Per scrivere un gestore di risorse, è necessario creare più oggetti kernel. Gli oggetti utilizzati da un RM sono:
 
 -   Oggetti di gestione transazioni (TM)
--   Oggetti Gestione risorse
+-   Resource Manager oggetti
 -   Oggetti di integrazione
 
-Per prima cosa, creare un oggetto TM. Esistono due tipi di TMs:
+Creare prima di tutto un oggetto TM. Esistono due tipi di TM:
 
--   Volatile: le TMs non dispongono di un log e non possono recuperare il proprio stato
--   Durevole: le TM hanno un log
+-   Volatile: queste macchine virtuali non hanno un log e non possono ripristinare il proprio stato
+-   Durevole: queste macchine virtuali hanno un log
 
-Per creare una TM durevole, è necessario creare un log CLFS e chiamare [**CreateTransactionManager**](/windows/desktop/api/Ktmw32/nf-ktmw32-createtransactionmanager) o fare in modo che KTM lo crei per l'utente. Dopo la creazione di una TM durevole, è necessario innanzitutto ripristinare la TM chiamando [**RecoverTransactionManager**](/windows/desktop/api/Ktmw32/nf-ktmw32-recovertransactionmanager). Una volta recuperato, il TM sarà disponibile per l'uso.
+Per creare un TM durevole, è necessario creare un log CLFS e chiamare [**CreateTransactionManager**](/windows/desktop/api/Ktmw32/nf-ktmw32-createtransactionmanager) oppure fare in modo che KTM lo crei automaticamente. Dopo aver creato un TM durevole, è necessario innanzitutto ripristinare il TM chiamando [**RecoverTransactionManager.**](/windows/desktop/api/Ktmw32/nf-ktmw32-recovertransactionmanager) Dopo il ripristino, il TM è disponibile per l'uso.
 
-Se è stata ripristinata una TM esistente, tutte le RMs associate a questa TM inizieranno a ricevere i messaggi di ripristino. Per ulteriori informazioni, vedere [elaborazione del ripristino](recovery-processing.md).
+Se è stato ripristinato un TM esistente, tutte le macchine virtuali associate a questa TM inizieranno a ricevere messaggi di ripristino. Per altre informazioni, vedere [Elaborazione del ripristino.](recovery-processing.md)
 
-Successivamente, creare un gestore di risorse chiamando [**CreateResourceManager**](/windows/desktop/api/Ktmw32/nf-ktmw32-createresourcemanager) con l'handle TM. Il RM può essere volatile o durevole. Con RMs durevole è possibile usare solo TMs durevoli.
+Creare quindi un gestore di risorse chiamando [**CreateResourceManager con**](/windows/desktop/api/Ktmw32/nf-ktmw32-createresourcemanager) l'handle TM. L'RM può essere volatile o durevole. Solo le macchine virtuali durevoli possono essere usate con macchine virtuali durevoli.
 
-Quando si lavora in modo transazionale, si integra la transazione chiamando [**CreateEnlistment**](/windows/desktop/api/KtmW32/nf-ktmw32-createenlistment)e specificando quali notifiche ricevere.
+Quando si lavora in modo transazionale, è possibile integrarsi nella transazione chiamando [**CreateEnlistment**](/windows/desktop/api/KtmW32/nf-ktmw32-createenlistment)e specificando le notifiche da ricevere.
 
-**Nota**  È possibile iniziare a ricevere le notifiche prima del completamento della chiamata a [**CreateEnlistment**](/windows/desktop/api/KtmW32/nf-ktmw32-createenlistment) .
+**Nota**  È possibile iniziare a ricevere notifiche prima del [**completamento della chiamata a CreateEnlistment.**](/windows/desktop/api/KtmW32/nf-ktmw32-createenlistment)
 
-Quando si riceve una notifica, chiamare la funzione "completa \* " appropriata quando viene completata qualsiasi lavoro associato all'elaborazione della notifica. Le funzioni complete sono:
+Quando si riceve una notifica, chiamare la funzione appropriata "Completa" quando viene completata qualsiasi operazione associata \* all'elaborazione della notifica. Le funzioni complete sono:
 
 -   [**CommitComplete**](/windows/desktop/api/Ktmw32/nf-ktmw32-commitcomplete)
 -   [**PrepareComplete**](/windows/desktop/api/Ktmw32/nf-ktmw32-preparecomplete)
 -   [**PreprepareComplete**](/windows/desktop/api/Ktmw32/nf-ktmw32-prepreparecomplete)
 
-Se in qualsiasi momento un gestore di risorse non è in grado di completare il lavoro della transazione o se continuare, il rendering dell'applicazione non è in grado di annullare le operazioni eseguite all'interno della transazione, è necessario eseguire il rollback della transazione chiamando [**RollbackEnlistment**](/windows/desktop/api/Ktmw32/nf-ktmw32-rollbackenlistment).
+Se in qualsiasi momento un gestore di risorse non è in grado di completare il lavoro della transazione o se continuare rende l'applicazione in grado di annullare le operazioni eseguite all'interno della transazione, è necessario eseguire il rollback della transazione chiamando [**RollbackEnlistment**](/windows/desktop/api/Ktmw32/nf-ktmw32-rollbackenlistment).
 
  
 

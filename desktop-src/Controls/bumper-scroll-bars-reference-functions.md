@@ -1,17 +1,17 @@
 ---
-title: Funzioni barra di scorrimento
-description: Funzioni barra di scorrimento
+title: Funzioni della barra di scorrimento
+description: Funzioni della barra di scorrimento
 ms.assetid: ed40b2c7-da99-4fff-bdb9-df682b3cc860
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 6f9e60159d65ab301953608fff3775b50c3814fe
-ms.sourcegitcommit: 92e74c99f8f4d097676959d0c317f533c2400a80
+ms.openlocfilehash: 69c817f89740bd4143fc6d4f881301a0349f39cf29691d02e1ce2b72ae306144
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/09/2021
-ms.locfileid: "104234657"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120064107"
 ---
-# <a name="scroll-bar-functions"></a>Funzioni barra di scorrimento
+# <a name="scroll-bar-functions"></a>Funzioni della barra di scorrimento
 
 ## <a name="in-this-section"></a>Contenuto della sezione
 

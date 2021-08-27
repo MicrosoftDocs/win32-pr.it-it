@@ -1,6 +1,6 @@
 ---
 title: SV_GroupID
-description: Indici per il gruppo di thread in cui è in esecuzione un compute shader.
+description: Indici per il quale il gruppo di thread raggruppa uno shader di calcolo in cui è in esecuzione.
 ms.assetid: 1b90ca74-a2b6-4a5f-aa4a-1ec879360593
 keywords:
 - SV_GroupID HLSL
@@ -13,18 +13,18 @@ api_type:
 ms.topic: reference
 ms.date: 05/31/2018
 api_location: ''
-ms.openlocfilehash: ab94cef0a9a33f23947e11b93a5487c65eee3890
-ms.sourcegitcommit: adba238660d8a5f4fe98fc6f5d105d56aac3a400
+ms.openlocfilehash: bce2623141329b4d750ab5add7957a7674662d7c21de9ff03e1165d341f98576
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/09/2021
-ms.locfileid: "111827040"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120118161"
 ---
 # <a name="sv_groupid"></a>SV \_ GroupID
 
-Indici per il gruppo di thread in cui è in esecuzione un compute shader. Gli indici sono relativi all'intero gruppo e non a un singolo thread. I valori possibili variano nell'intervallo passato come parametri a [**Dispatch.**](/windows/desktop/api/d3d11/nf-d3d11-id3d11devicecontext-dispatch) Ad esempio, se si chiama Dispatch(2,1,1), i valori possibili sono 0,0,0 e 1,0,0.
+Indici per il quale il gruppo di thread raggruppa uno shader di calcolo in cui è in esecuzione. Gli indici sono relativi all'intero gruppo e non a un singolo thread. I valori possibili variano in base all'intervallo passato come parametri a [**Dispatch**](/windows/desktop/api/d3d11/nf-d3d11-id3d11devicecontext-dispatch). Ad esempio, chiamando Dispatch(2,1,1) si possono ottenere valori possibili di 0,0,0 e 1,0,0.
 
-Definisce l'offset del gruppo all'interno [**di una chiamata Dispatch,**](/windows/desktop/api/d3d11/nf-d3d11-id3d11devicecontext-dispatch) per dimensione della chiamata di invio.
+Definisce l'offset del gruppo all'interno [**di una chiamata Dispatch,**](/windows/desktop/api/d3d11/nf-d3d11-id3d11devicecontext-dispatch) per dimensione della chiamata dispatch.
 
 ## <a name="type"></a>Tipo
 
@@ -42,9 +42,9 @@ Definisce l'offset del gruppo all'interno [**di una chiamata Dispatch,**](/windo
 
 Questo valore di sistema è facoltativo.
 
-La figura seguente illustra la relazione tra i parametri passati a [**Dispatch**](/windows/desktop/api/d3d11/nf-d3d11-id3d11devicecontext-dispatch), Dispatch(5,3,2), i valori specificati nell'attributo [numthreads,](sm5-attributes-numthreads.md) numthreads(10,8,3) e i valori che verranno passati al compute shader per i valori di sistema correlati al thread [(SV \_ GroupIndex](sv-groupindex.md),[SV \_ DispatchThreadID](sv-dispatchthreadid.md),[SV \_ GroupThreadID](sv-groupthreadid.md), SV \_ GroupID).
+La figura seguente illustra la relazione tra i parametri passati a [**Dispatch,**](/windows/desktop/api/d3d11/nf-d3d11-id3d11devicecontext-dispatch)Dispatch(5,3,2), i valori specificati nell'attributo [numthreads,](sm5-attributes-numthreads.md) numthreads(10,8,3) e i valori che verranno passati allo shader di calcolo per i valori di sistema correlati ai thread ([SV \_ GroupIndex,](sv-groupindex.md)[SV \_ DispatchThreadID,](sv-dispatchthreadid.md)[SV \_ GroupThreadID,](sv-groupthreadid.md)SV GroupID, SV \_ GroupID).
 
-![illustrazione della relazione tra dispatch, gruppi di thread e thread](images/threadgroupids.png)
+![Illustrazione della relazione tra dispatch, gruppi di thread e thread](images/threadgroupids.png)
 
 Questa funzione è supportata nei tipi di shader seguenti:
 

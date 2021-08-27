@@ -3,7 +3,7 @@ title: Tipo complesso BaseEapMethodUserCredentials
 description: Informazioni sul tipo complesso BaseEapMethodUserCredentials. Questo tipo è un elemento segnaposto per i dati delle credenziali del metodo.
 ms.assetid: ebbf813d-657a-4ff2-acf2-c18ce694b564
 keywords:
-- BaseEapMethodUserCredentials di tipo complesso EAPHost
+- Tipo complesso BaseEapMethodUserCredentials EAPHost
 topic_type:
 - apiref
 api_name:
@@ -14,16 +14,16 @@ ms.topic: reference
 ms.date: 05/31/2018
 api_location: ''
 ROBOTS: INDEX,FOLLOW
-ms.openlocfilehash: 37bc7a91a5d90cde6cba1af12bb0a4784ee21c7f
-ms.sourcegitcommit: b0ebdefc3dcd5c04bede94091833aa1015a2f95c
+ms.openlocfilehash: 8102f095ca7d4b1ada6db3c21fbe55e73a98ed6d06d2d6b99032f1a21a344527
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/21/2020
-ms.locfileid: "103730178"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120094421"
 ---
 # <a name="baseeapmethodusercredentials-complex-type"></a>Tipo complesso BaseEapMethodUserCredentials
 
-Il tipo complesso **BaseEapMethodUserCredentials** è un elemento segnaposto per i dati delle credenziali del metodo.
+Il **tipo complesso BaseEapMethodUserCredentials** è un elemento segnaposto per i dati delle credenziali del metodo.
 
 ``` syntax
 <xs:complexType name="BaseEapMethodUserCredentials">
@@ -40,16 +40,16 @@ Il tipo complesso **BaseEapMethodUserCredentials** è un elemento segnaposto per
 
 ## <a name="remarks"></a>Commenti
 
-Il metodo EAP esegue la convalida dello schema sul contenuto di **BaseEapMethodUserCredentials**.
+Il metodo EAP esegue la convalida dello schema sul contenuto di **BaseEapMethodUserCredentials.**
 
 ## <a name="requirements"></a>Requisiti
 
 
 
-| Ruolo | Versione minima del sistema operativo supportata |
+| Ruolo | Versione minima supportata del sistema operativo |
 |------|------------------------------|
-| Client<br/> | \[Solo app desktop di Windows Vista\]<br/>       |
-| Server<br/> | \[Solo app desktop Windows Server 2008\]<br/> |
+| Client<br/> | Windows Solo \[ app desktop di Vista\]<br/>       |
+| Server<br/> | Windows Solo app desktop server 2008 \[\]<br/> |
 
 
 

@@ -1,7 +1,7 @@
 ---
-description: Descrive un vettore a due componenti, inclusi gli overload degli operatori e i cast di tipo. Uguale a D3DXVECTOR2, ma usa valori a virgola mobile a 16 bit per x, y e z.
+description: Descrive un vettore a due componenti che include gli overload degli operatori e i cast di tipo. Uguale a D3DXVECTOR2, ma usa valori a virgola mobile a 16 bit per x, y e z.
 ms.assetid: b410d2e1-a006-4563-928a-c9000f73c224
-title: Struttura D3DXVECTOR2_16F (D3DX10Math. h)
+title: D3DXVECTOR2_16F struttura (D3DX10Math.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -13,16 +13,16 @@ api_type:
 - HeaderDef
 api_location:
 - D3DX10Math.h
-ms.openlocfilehash: 677f4f8c47cdc70791ad98e18582810bbff23920
-ms.sourcegitcommit: 14010c34b35fa268046c7683f021f86de08ddd0a
+ms.openlocfilehash: e7d1c24b40674fe2df202a0cdea42dc7ad96728a8710c21e443642c8b6152cea
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/15/2021
-ms.locfileid: "103761962"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120120261"
 ---
-# <a name="d3dxvector2_16f-structure"></a>\_Struttura D3DXVECTOR2 16F
+# <a name="d3dxvector2_16f-structure"></a>Struttura D3DXVECTOR2 \_ 16F
 
-Descrive un vettore a due componenti, inclusi gli overload degli operatori e i cast di tipo. Uguale a [**D3DXVECTOR2**](d3d10-d3dxvector2.md), ma usa valori a virgola mobile a 16 bit per x, y e z.
+Descrive un vettore a due componenti che include gli overload degli operatori e i cast di tipo. Come [**D3DXVECTOR2,**](d3d10-d3dxvector2.md)ma usa valori a virgola mobile a 16 bit per x, y e z.
 
 ## <a name="syntax"></a>Sintassi
 
@@ -43,7 +43,7 @@ typedef struct D3DXVECTOR2_16F {
 **x**
 </dt> <dd>
 
-Tipo: **[ **float**](../winprog/windows-data-types.md)**
+Tipo: **[ **FLOAT**](../winprog/windows-data-types.md)**
 
 </dd> <dd>
 
@@ -54,7 +54,7 @@ Componente x.
 **y**
 </dt> <dd>
 
-Tipo: **[ **float**](../winprog/windows-data-types.md)**
+Tipo: **[ **FLOAT**](../winprog/windows-data-types.md)**
 
 </dd> <dd>
 
@@ -66,7 +66,7 @@ Componente y.
 
 **D3DXVECTOR2 \_ 16F** include le estensioni C++ seguenti.
 
-### <a name="d3dxvector2_16f-extensions"></a>\_Estensioni 16F D3DXVECTOR2
+### <a name="d3dxvector2_16f-extensions"></a>Estensioni D3DXVECTOR2 \_ 16F
 
 
 ```
@@ -103,7 +103,7 @@ public:
 
 | Requisito | Valore |
 |-------------------|-----------------------------------------------------------------------------------------|
-| Intestazione<br/> | <dl> <dt>D3DX10Math. h</dt> </dl> |
+| Intestazione<br/> | <dl> <dt>D3DX10Math.h</dt> </dl> |
 
 
 

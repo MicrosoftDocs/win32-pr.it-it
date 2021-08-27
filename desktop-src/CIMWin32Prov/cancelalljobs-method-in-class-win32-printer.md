@@ -1,5 +1,5 @@
 ---
-description: Rimuove tutti i processi, incluso quello attualmente stampato dalla coda.
+description: Rimuove tutti i processi, incluso quello attualmente in fase di stampa dalla coda.
 ms.assetid: d7466513-b123-43af-ab17-b3213ba80284
 ms.tgt_platform: multiple
 title: Metodo CancelAllJobs della classe Win32_Printer
@@ -14,18 +14,18 @@ api_type:
 - COM
 api_location:
 - CIMWin32.dll
-ms.openlocfilehash: d2d816dab837aafd7b6e9c6beff75c4e62b19b2f
-ms.sourcegitcommit: c7add10d695482e1ceb72d62b8a4ebd84ea050f7
+ms.openlocfilehash: 06aae96cec4e38c7ff9c213cd19dc35e9843a077c262aafcaf0aed43160505a9
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "103877410"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120085841"
 ---
-# <a name="cancelalljobs-method-of-the-win32_printer-class"></a>Metodo CancelAllJobs della \_ classe Printer Win32
+# <a name="cancelalljobs-method-of-the-win32_printer-class"></a>Metodo CancelAllJobs della classe Printer Win32 \_
 
-Il metodo della [classe WMI](/windows/desktop/WmiSdk/retrieving-a-class) **CancelAllJobs** rimuove tutti i processi, incluso quello attualmente stampato dalla coda.
+Il metodo della classe [WMI](/windows/desktop/WmiSdk/retrieving-a-class) **CancelAllJobs** rimuove tutti i processi, incluso quello attualmente in fase di stampa dalla coda.
 
-In questo argomento viene utilizzata la sintassi Managed Object Format (MOF). Per ulteriori informazioni sull'utilizzo di questo metodo, vedere [chiamata a un metodo](/windows/desktop/WmiSdk/calling-a-method).
+Questo argomento usa Managed Object Format (MOF). Per altre informazioni sull'uso di questo metodo, vedere [Chiamata di un metodo](/windows/desktop/WmiSdk/calling-a-method).
 
 ## <a name="syntax"></a>Sintassi
 
@@ -42,7 +42,7 @@ Questo metodo non presenta parametri.
 
 ## <a name="return-value"></a>Valore restituito
 
-Restituisce uno dei valori elencati nell'elenco seguente o qualsiasi altro valore per indicare un errore. Per ulteriori codici di errore, vedere [**costanti di errore WMI**](/windows/desktop/WmiSdk/wmi-error-constants) o [**WbemErrorEnum**](/windows/desktop/api/wbemdisp/ne-wbemdisp-wbemerrorenum). Per i valori **HRESULT** generali, vedere [codici di errore di sistema](/windows/desktop/Debug/system-error-codes).
+Restituisce uno dei valori elencati nell'elenco seguente o qualsiasi altro valore per indicare un errore. Per altri codici di errore, [**vedere Costanti di errore WMI**](/windows/desktop/WmiSdk/wmi-error-constants) o [**WbemErrorEnum.**](/windows/desktop/api/wbemdisp/ne-wbemdisp-wbemerrorenum) Per i valori **HRESULT** generali, vedere [Codici di errore di sistema.](/windows/desktop/Debug/system-error-codes)
 
 <dl> <dt>
 
@@ -62,11 +62,11 @@ Accesso negato
 
 ## <a name="examples"></a>Esempio
 
-La [notifica agli utenti quando viene eliminata una coda di stampa](https://Gallery.TechNet.Microsoft.Com/9f8ad84e-239d-45bf-a14f-ad8f3fc4988a) USA Msg.exe per inviare un avviso di rete a tutti gli utenti che dispongono di documenti in una coda di stampa che stanno per essere eliminati. Dopo aver inviato gli avvisi, lo script Elimina la coda di stampa.
+[L'attività Notifica](https://Gallery.TechNet.Microsoft.Com/9f8ad84e-239d-45bf-a14f-ad8f3fc4988a) agli utenti quando una coda di stampa viene eliminata usa Msg.exe per inviare un avviso di rete a tutti gli utenti che avevano documenti in una coda di stampa che sta per essere eliminati. Dopo l'invio degli avvisi, lo script elimina la coda di stampa.
 
-L'esempio di codice [Elimina tutti i processi di stampa](https://Gallery.TechNet.Microsoft.Com/0e89fa7c-a837-4607-b421-c870142e7323) VBScript Elimina tutti i processi di stampa nel computer locale.
+[L'esempio di codice](https://Gallery.TechNet.Microsoft.Com/0e89fa7c-a837-4607-b421-c870142e7323) VBScript Delete all print jobs (Elimina tutti i processi di stampa) elimina tutti i processi di stampa nel computer locale.
 
-L'esempio VBScript seguente elimina tutti i processi di stampa per una stampante denominata HP QuietJet.
+Nell'esempio vbscript seguente vengono eliminati tutti i processi di stampa per una stampante denominata HP QuietSample.
 
 
 ```VB
@@ -93,7 +93,7 @@ Next
 | Client minimo supportato<br/> | Windows Vista<br/>                                                                      |
 | Server minimo supportato<br/> | Windows Server 2008<br/>                                                                |
 | Spazio dei nomi<br/>                | \\CIMV2 radice<br/>                                                                        |
-| MOF<br/>                      | <dl> <dt>Win32 \_ Printer. mof</dt> </dl> |
+| MOF<br/>                      | <dl> <dt>Win32 \_ Printer.mof</dt> </dl> |
 | DLL<br/>                      | <dl> <dt>CIMWin32.dll</dt> </dl>       |
 
 
@@ -102,10 +102,10 @@ Next
 
 <dl> <dt>
 
-[Classi hardware del sistema del computer](computer-system-hardware-classes.md)
+[Classi hardware del sistema computer](computer-system-hardware-classes.md)
 </dt> <dt>
 
-[**\_Stampante Win32**](win32-printer.md)
+[**Stampante \_ Win32**](win32-printer.md)
 </dt> </dl>
 
  

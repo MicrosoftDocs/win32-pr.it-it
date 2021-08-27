@@ -1,11 +1,11 @@
 ---
-title: Proprietà AxWindowsMediaPlayer. closedCaption
+title: AxWindowsMediaPlayer.closedCaption - proprietà
 description: La proprietà closedCaption ottiene un'interfaccia IWMPClosedCaption per l'elemento multimediale corrente.
 ms.assetid: 459a04fd-daf5-46f9-925b-02011bbbf640
 keywords:
-- Finestra delle proprietà di closedCaption Media Player
-- Proprietà closedCaption Windows Media Player, classe AxWindowsMediaPlayer
-- Classe AxWindowsMediaPlayer Media Player Windows, proprietà closedCaption
+- proprietà closedCaption Windows Media Player
+- proprietà closedCaption Windows Media Player , classe AxWindowsMediaPlayer
+- Classe AxWindowsMediaPlayer Windows Media Player , proprietà closedCaption
 topic_type:
 - apiref
 api_name:
@@ -16,16 +16,16 @@ api_type:
 - COM
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 10210c5e3e068c52c9795cc6c760d2f79faabf1f
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: 5d315b516e4b85e082ab0cc1d34016aa94b022e43c9d59a49b06a146c913d41b
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "106327081"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120098851"
 ---
-# <a name="axwindowsmediaplayerclosedcaption-property"></a>Proprietà AxWindowsMediaPlayer. closedCaption
+# <a name="axwindowsmediaplayerclosedcaption-property"></a>AxWindowsMediaPlayer.closedCaption - proprietà
 
-La proprietà closedCaption ottiene un'interfaccia **IWMPClosedCaption** per l'elemento multimediale corrente.
+La proprietà closedCaption ottiene **un'interfaccia IWMPClosedCaption** per l'elemento multimediale corrente.
 
 Questa proprietà è di sola lettura.
 
@@ -48,7 +48,7 @@ Public ReadOnly Property closedCaption As IWMPClosedCaption
 
 ## <a name="property-value"></a>Valore proprietà
 
-WMPLIB. Interfaccia IWMPClosedCaption.
+The WMPLIB. Interfaccia IWMPClosedCaption.
 
 ## <a name="requirements"></a>Requisiti
 
@@ -56,7 +56,7 @@ WMPLIB. Interfaccia IWMPClosedCaption.
 
 | Requisito | Valore |
 |----------------------|----------------------------------------------------------------------------------------------------------------------------|
-| Versione<br/>   | Windows Media Player 9 serie o versione successiva<br/>                                                                          |
+| Versione<br/>   | Windows Media Player serie 9 o successive<br/>                                                                          |
 | Spazio dei nomi<br/> | **AxWMPLib**<br/>                                                                                                    |
 | Assembly<br/>  | <dl> <dt>AxInterop.WMPLib.dll (AxInterop.WMPLib.dll.dll)</dt> </dl> |
 

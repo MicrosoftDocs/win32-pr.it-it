@@ -1,36 +1,36 @@
 ---
-title: Come usare Tree-View infotip
-description: Quando si applica lo \_ stile INFOTIP TVS a un controllo di visualizzazione albero, genera \_ notifiche GETINFOTIP di TVN quando il cursore è posizionato su un elemento nella visualizzazione albero. Rispondendo a questa notifica, è possibile impostare il testo visualizzato in infotip.
+title: Come usare le Tree-View infotip
+description: Quando si applica lo stile INFOTIP TVS a un controllo visualizzazione albero, vengono generate notifiche \_ TVN GETINFOTIP quando il cursore si trova su un elemento \_ nella visualizzazione albero. Rispondendo a questa notifica, è possibile impostare il testo visualizzato nel suggerimento.
 ms.assetid: 779BEAC1-877E-43DD-AE1C-6D71C3013384
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 0f0ef862d68cfd9f6ac5a97e82c80622e9c02121
-ms.sourcegitcommit: 3e70ae762629e244028b437420ed50b5850db4e3
+ms.openlocfilehash: 6ff9273b28b614e7935f6ac507288a5733271fb455a6be1e85b52c5b0ba8bbb3
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/20/2020
-ms.locfileid: "106299457"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120132031"
 ---
-# <a name="how-to-use-tree-view-infotips"></a>Come usare Tree-View infotip
+# <a name="how-to-use-tree-view-infotips"></a>Come usare le Tree-View infotip
 
-Quando si applica lo [**stile \_ INFOTIP TVS**](tree-view-control-window-styles.md) a un controllo di visualizzazione albero, genera notifiche [ \_ GETINFOTIP di TVN](tvn-getinfotip.md) quando il cursore è posizionato su un elemento nella visualizzazione albero. Rispondendo a questa notifica, è possibile impostare il testo visualizzato in infotip.
+Quando si applica lo stile [**\_ INFOTIP TVS**](tree-view-control-window-styles.md) a un controllo di visualizzazione albero, vengono generate notifiche [TVN \_ GETINFOTIP](tvn-getinfotip.md) quando il cursore si trova su un elemento nella visualizzazione albero. Rispondendo a questa notifica, è possibile impostare il testo visualizzato nel suggerimento.
 
 ## <a name="what-you-need-to-know"></a>Informazioni importanti
 
 ### <a name="technologies"></a>Tecnologie
 
--   [Controlli Windows](window-controls.md)
+-   [Windows Controlli](window-controls.md)
 
 ### <a name="prerequisites"></a>Prerequisiti
 
 -   C/C++
--   Programmazione dell'interfaccia utente di Windows
+-   Windows Interfaccia utente programmazione
 
 ## <a name="instructions"></a>Istruzioni
 
 ### <a name="use-tree-view-infotips"></a>Usare Tree-View infotip
 
-Nell'esempio di codice seguente viene illustrato il modo in cui un'applicazione potrebbe rispondere alla notifica. Per semplicità, nell'esempio viene semplicemente copiato il testo per l'elemento in infotip.
+Il codice di esempio seguente illustra come un'applicazione potrebbe rispondere alla notifica. Per semplicità, l'esempio copia semplicemente il testo dell'elemento nel suggerimento.
 
 
 ```
@@ -66,15 +66,15 @@ Nell'esempio di codice seguente viene illustrato il modo in cui un'applicazione 
 
 <dl> <dt>
 
-[Uso di controlli Tree-View](using-treeview.md)
+[Uso dei Tree-View personalizzati](using-treeview.md)
 </dt> <dt>
 
-[L'esempio CustDTv illustra il progetto personalizzato in un controllo Tree-View](https://support.microsoft.com/default.aspx?scid=kb;EN-US;q248496)
+[L'esempio CustDTv illustra il disegno personalizzato in un controllo Tree-View personalizzato](https://support.microsoft.com/default.aspx?scid=kb;EN-US;q248496)
 </dt> </dl>
 
- 
+ 
 
- 
+ 
 
 
 

@@ -1,7 +1,7 @@
 ---
 description: Questa classe è la classe del tipo di evento per gli eventi di fine dell'operazione su file. La sintassi seguente è semplificata dal codice MOF.
 ms.assetid: 3925d5bf-f412-4248-a61f-e667efa9debd
-title: Classe FileIo_OpEnd
+title: FileIo_OpEnd classe
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -15,14 +15,14 @@ api_name:
 api_type:
 - NA
 api_location: ''
-ms.openlocfilehash: d3f1c495cf44b84f8d7661b40cadec6ea255c6a0
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 74042df74f8e128c4d92b6e4f1c886a7bba2f673c1a8a998a4b7f251475c3f93
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "103758429"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120130591"
 ---
-# <a name="fileio_opend-class"></a>\_Classe aprita FileIO
+# <a name="fileio_opend-class"></a>Classe FileIo \_ OpEnd
 
 Questa classe è la classe del tipo di evento per gli eventi di fine dell'operazione su file.
 
@@ -42,26 +42,26 @@ class FileIo_OpEnd : FileIo
 
 ## <a name="members"></a>Members
 
-I tipi di membri della classe **\_ Open FileIO** sono i seguenti:
+La **classe FileIo \_ OpEnd** ha questi tipi di membri:
 
 -   [Proprietà](#properties)
 
 ### <a name="properties"></a>Proprietà
 
-Le proprietà della classe **\_ Aprita del FileIO** sono tali.
+La **classe FileIo \_ OpEnd** ha queste proprietà.
 
 <dl> <dt>
 
 **ExtraInfo**
 </dt> <dd> <dl> <dt>
 
-Tipo di dati: **UInt32**
+Tipo di dati: **uint32**
 </dt> <dt>
 
 Tipo di accesso: sola lettura
 </dt> <dt>
 
-Qualificatori: WmiDataId (2), puntatore
+Qualificatori: WmiDataId(2), Puntatore
 </dt> </dl>
 
 Informazioni aggiuntive restituite dal file system per l'operazione. Ad esempio, per una richiesta di lettura, il numero effettivo di byte letti.
@@ -71,29 +71,29 @@ Informazioni aggiuntive restituite dal file system per l'operazione. Ad esempio,
 **IrpPtr**
 </dt> <dd> <dl> <dt>
 
-Tipo di dati: **UInt32**
+Tipo di dati: **uint32**
 </dt> <dt>
 
 Tipo di accesso: sola lettura
 </dt> <dt>
 
-Qualificatori: WmiDataId (1), puntatore
+Qualificatori: WmiDataId(1), Pointer
 </dt> </dl>
 
-Pacchetto di richiesta IO. Questa proprietà identifica l'attività IO che sta terminando.
+Pacchetto di richiesta I/O. Questa proprietà identifica l'attività di I/O che termina.
 
 </dd> <dt>
 
 **NtStatus**
 </dt> <dd> <dl> <dt>
 
-Tipo di dati: **UInt32**
+Tipo di dati: **uint32**
 </dt> <dt>
 
 Tipo di accesso: sola lettura
 </dt> <dt>
 
-Qualificatori: WmiDataId (3)
+Qualificatori: WmiDataId(3)
 </dt> </dl>
 
 Valore restituito dall'operazione.
@@ -102,7 +102,7 @@ Valore restituito dall'operazione.
 
 ## <a name="remarks"></a>Commenti
 
-Gli eventi [**FileIO**](fileio.md) vengono registrati all'inizio dell'operazione. Gli eventi aperti possono essere abilitati separatamente per indicare la fine di tali operazioni. È possibile utilizzare l'IRP per correlare gli eventi di inizio e di fine.
+[**Gli eventi FileIo**](fileio.md) vengono registrati all'inizio dell'operazione. Gli eventi OpEnd possono essere abilitati separatamente per indicare la fine di tali operazioni. Irp può essere usato per correlare gli eventi di inizio e fine.
 
 ## <a name="requirements"></a>Requisiti
 
@@ -110,8 +110,8 @@ Gli eventi [**FileIO**](fileio.md) vengono registrati all'inizio dell'operazione
 
 | Requisito | Valore |
 |-------------------------------------|------------------------------------------------------|
-| Client minimo supportato<br/> | \[Solo app desktop di Windows Vista\]<br/>       |
-| Server minimo supportato<br/> | \[Solo app desktop Windows Server 2008\]<br/> |
+| Client minimo supportato<br/> | Windows Solo \[ app desktop di Vista\]<br/>       |
+| Server minimo supportato<br/> | Windows Solo app desktop server 2008 \[\]<br/> |
 
 
 
@@ -119,7 +119,7 @@ Gli eventi [**FileIO**](fileio.md) vengono registrati all'inizio dell'operazione
 
 <dl> <dt>
 
-[**FileIo**](fileio.md)
+[**Fileio**](fileio.md)
 </dt> </dl>
 
  

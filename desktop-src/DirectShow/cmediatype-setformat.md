@@ -1,7 +1,7 @@
 ---
-description: Il metodo seformatt Inizializza il blocco di formato.
+description: Il metodo SetFormat inizializza il blocco di formato.
 ms.assetid: 71f1c3d4-9c45-4124-8560-378c8f66e710
-title: Metodo CMediaType. Formatter (mtype. h)
+title: Metodo CMediaType.SetFormat (Mtype.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -16,14 +16,14 @@ api_location:
 - Strmbase.dll
 - Strmbasd.lib
 - Strmbasd.dll
-ms.openlocfilehash: 08dd05faf514581a3325f4922076ba2053cd0c95
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: 99726a466b6bf273b654a5d459fa2391a75882f1adee64b981d91a514a988b88
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "106329532"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120108451"
 ---
-# <a name="cmediatypesetformat-method"></a>Metodo CMediaType. seformatt
+# <a name="cmediatypesetformat-method"></a>Metodo CMediaType.SetFormat
 
 Il `SetFormat` metodo inizializza il blocco di formato.
 
@@ -59,13 +59,13 @@ Lunghezza del blocco di formato, in byte.
 
 ## <a name="return-value"></a>Valore restituito
 
-Restituisce **true** se ha esito positivo o **false** se si è verificato un errore.
+Restituisce **TRUE in** caso di esito positivo oppure FALSE **se** si è verificato un errore.
 
 ## <a name="remarks"></a>Commenti
 
-Questo metodo alloca memoria per il blocco di formato e copia il buffer specificato da *pFormat* nel nuovo blocco di formato. Se il tipo di supporto contiene già un blocco di formato, viene rilasciato quello precedente. Il metodo imposta inoltre il membro **cbFormat** della struttura **del \_ \_ tipo di supporto am** .
+Questo metodo alloca memoria per il blocco di formato e copia il buffer specificato da *pFormat* nel nuovo blocco di formato. Se il tipo di supporto contiene già un blocco di formato, viene rilasciato quello precedente. Il metodo imposta anche il **membro cbFormat** della struttura **AM MEDIA \_ \_ TYPE.**
 
-Per impostare il tipo di formato, chiamare il metodo [**CMediaType:: SetFormatType**](cmediatype-setformattype.md) .
+Per impostare il tipo di formato, chiamare il [**metodo CMediaType::SetFormatType.**](cmediatype-setformattype.md)
 
 ## <a name="requirements"></a>Requisiti
 
@@ -73,8 +73,8 @@ Per impostare il tipo di formato, chiamare il metodo [**CMediaType:: SetFormatTy
 
 | Requisito | Valore |
 |--------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Intestazione<br/>  | <dl> <dt>Mtype. h (include Streams. h)</dt> </dl>                                                                                     |
-| Libreria<br/> | <dl> <dt>Strmbase. lib (compilazioni finali); </dt> <dt>Strmbasd. lib (build di debug)</dt> </dl> |
+| Intestazione<br/>  | <dl> <dt>Mtype.h (includere Flussi.h)</dt> </dl>                                                                                     |
+| Libreria<br/> | <dl> <dt>Strmbase.lib (build di vendita al dettaglio); </dt> <dt>Strmbasd.lib (build di debug)</dt> </dl> |
 
 
 

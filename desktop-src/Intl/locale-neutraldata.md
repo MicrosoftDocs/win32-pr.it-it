@@ -1,19 +1,19 @@
 ---
-description: impostazioni locali \_ NEUTRALDATA
+description: LOCALE \_ NEUTRALDATA
 ms.assetid: 2ca39b78-4cbd-4326-95e5-cb233941968f
 title: LOCALE_NEUTRALDATA
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: dc89990ff7f604f0129c749b39bb65489b3dc48a
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 1bc61eb77f9bf797b06ce650099470cee255d92016eabc8d46963bc79ecd7b1b
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "106312855"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120106411"
 ---
-# <a name="locale_neutraldata"></a>impostazioni locali \_ NEUTRALDATA
+# <a name="locale_neutraldata"></a>LOCALE \_ NEUTRALDATA
 
-**Windows 7 e versioni successive:** Dati delle impostazioni locali non associate ad alcun paese, ovvero i dati definiti solo dal linguaggio. I dati del paese/area geografica usano il valore predefinito.
+**Windows 7 e versioni successive:** Dati delle impostazioni locali neutri, ad esempio dati definiti solo in base alla lingua. I dati relativi al paese/all'area geografica utilizzano l'impostazione predefinita.
 
  
 

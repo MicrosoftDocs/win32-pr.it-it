@@ -4,12 +4,12 @@ description: Panoramica del livello di debug Direct2D
 ms.assetid: 7c28e00b-ebb9-4b79-939c-64eade1351ad
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 833174e0d18b11e2384d838930d5508601cfceaf
-ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
+ms.openlocfilehash: 6ad960c50cd125ec8c335d836949457bb05ef65aba4b2edaff1dfbbd3a9cf6d7
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/28/2021
-ms.locfileid: "108099989"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120087771"
 ---
 # <a name="direct2d-debug-layer-overview"></a>Panoramica del livello di debug Direct2D
 
@@ -25,18 +25,18 @@ Questa panoramica contiene le sezioni seguenti.
 
 ## <a name="what-is-the-direct2d-debug-layer"></a>Informazioni sul livello di debug Direct2D
 
-Il livello di debug Direct2D, implementato separatamente da Direct2D nella propria DLL denominata d2d1debug.dll, fornisce messaggi di debug che consentono di usare in modo accurato le funzioni Direct2D. I messaggi di debug spesso derivano da violazioni del contratto API, ad esempio parametri non validi (potrebbero essere correlati a Direct3D), risorse non valide, violazioni di threading e problemi di prestazioni, ad esempio l'uso di un livello quando una clip è sufficiente. Per specificare la quantità di informazioni tracciate dal livello di debug, è possibile specificare uno dei tre livelli di debug: informazioni, avviso ed errore. e un messaggio di errore di livello attiva il punto di interruzione per facilitare il debug.
+Il livello di debug Direct2D, implementato separatamente da Direct2D nella propria DLL denominata d2d1debug.dll, fornisce messaggi di debug che consentono di usare in modo accurato le funzioni Direct2D. I messaggi di debug spesso derivano da violazioni del contratto API, ad esempio parametri non validi (potrebbero essere correlati a Direct3D), risorse non valide, violazioni del threading e problemi di prestazioni, ad esempio l'uso di un livello quando sarebbe sufficiente un clip. Per specificare la quantità di informazioni tracciate dal livello di debug, è possibile specificare uno dei tre livelli di debug: informazioni, avviso ed errore. e un messaggio di errore di livello attiva il punto di interruzione per facilitare il debug.
 
 ## <a name="installing-the-direct2d-debug-layer"></a>Installazione del livello di debug Direct2D
 
-Per istruzioni sull'installazione del livello di debug, vedere [Installazione del livello di debug Direct2D.](installing-the-direct2d-debug-layer.md)
+Per istruzioni sull'installazione del livello di debug, vedere [Installazione del livello di debug Direct2D](installing-the-direct2d-debug-layer.md).
 
 ## <a name="enabling-the-debug-layer"></a>Abilitazione del livello di debug
 
-Per abilitare il livello di debug nell'applicazione, specificare un valore [**D2D1 \_ DEBUG \_ LEVEL**](/windows/desktop/api/d2d1/ne-d2d1-d2d1_debug_level) diverso da **D2D1 \_ DEBUG LEVEL \_ \_ NONE** quando si crea una factory con la funzione [**D2D1CreateFactory.**](/windows/desktop/api/d2d1/nf-d2d1-d2d1createfactory)
+Per abilitare il livello di debug nell'applicazione, specificare un valore [**D2D1 \_ DEBUG \_ LEVEL**](/windows/desktop/api/d2d1/ne-d2d1-d2d1_debug_level) diverso da **D2D1 \_ DEBUG LEVEL \_ \_ NONE** quando si crea una factory con la [**funzione D2D1CreateFactory.**](/windows/desktop/api/d2d1/nf-d2d1-d2d1createfactory)
 
 > [!Note]  
-> Se il livello di debug Direct2D è abilitato, l'effetto di gestione dei colori Direct2D (CLSID D2D1ColorManagement) può causare una violazione di accesso quando si imposta un contesto \_ colore. La soluzione alternativa consiste nel disabilitare il livello di debug quando si usa l'effetto di gestione del colore
+> Se il livello di debug Direct2D è abilitato, l'effetto di gestione dei colori Direct2D (CLSID D2D1ColorManagement) può causare una violazione di accesso quando si imposta un contesto \_ colori. La soluzione alternativa consiste nel disabilitare il livello di debug quando si usa l'effetto di gestione del colore
 
  
 

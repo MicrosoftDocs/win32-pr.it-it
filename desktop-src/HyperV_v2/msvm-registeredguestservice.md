@@ -1,7 +1,7 @@
 ---
-description: Rappresenta un'associazione tra un'istanza di MSVM \_ GuestServiceInterfaceComponent e un'istanza di MSVM \_ GuestService, che rappresenta un servizio in esecuzione nel guest.
+description: Rappresenta un'associazione tra un'istanza di Msvm GuestServiceInterfaceComponent e un'istanza di \_ Msvm GuestService, che rappresenta un servizio \_ in esecuzione nel guest.
 ms.assetid: 246CFAC1-7D83-4DE7-B9D3-96326511E08B
-title: Classe Msvm_RegisteredGuestService
+title: Msvm_RegisteredGuestService classe
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -15,16 +15,16 @@ api_type:
 - DllExport
 api_location:
 - vmms.exe
-ms.openlocfilehash: 850d7f081b070fd34ef11bc56e8cd1f914e498b0
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: cf2e551a30f169477f9dc73e58ecd9e6c3a78b708c047eb0088f36782623da3c
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "103756893"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120130441"
 ---
-# <a name="msvm_registeredguestservice-class"></a>\_Classe MSVM RegisteredGuestService
+# <a name="msvm_registeredguestservice-class"></a>Classe Msvm \_ RegisteredGuestService
 
-Rappresenta un'associazione tra un'istanza di [**MSVM \_ GuestServiceInterfaceComponent**](msvm-guestserviceinterfacecomponent.md) e un'istanza di [**MSVM \_ GuestService**](msvm-guestservice.md), che rappresenta un servizio in esecuzione nel guest. Questa classe deriva dalla classe di [**\_ dipendenza CIM**](/windows/desktop/CIMWin32Prov/cim-dependency) .
+Rappresenta un'associazione tra un'istanza di [**Msvm \_ GuestServiceInterfaceComponent**](msvm-guestserviceinterfacecomponent.md) e un'istanza di [**Msvm \_ GuestService**](msvm-guestservice.md), che rappresenta un servizio in esecuzione nel guest. Questa classe deriva dalla [**classe \_ Dependency CIM.**](/windows/desktop/CIMWin32Prov/cim-dependency)
 
 La sintassi seguente è semplificata dal codice MOF e include tutte le proprietà ereditate.
 
@@ -41,45 +41,45 @@ class Msvm_RegisteredGuestService : CIM_Dependency
 
 ## <a name="members"></a>Members
 
-La **classe \_ RegisteredGuestService di MSVM** dispone di questi tipi di membri:
+La **classe Msvm \_ RegisteredGuestService** include questi tipi di membri:
 
 -   [Proprietà](#properties)
 
 ### <a name="properties"></a>Proprietà
 
-La **classe \_ RegisteredGuestService di MSVM** dispone di queste proprietà.
+La **classe Msvm \_ RegisteredGuestService** ha queste proprietà.
 
 <dl> <dt>
 
 **Antecedente**
 </dt> <dd> <dl> <dt>
 
-Tipo di dati: **[ **MSVM \_ GuestServiceInterfaceComponent**](msvm-guestserviceinterfacecomponent.md)**
+Tipo di dati: **[ **Msvm \_ GuestServiceInterfaceComponent**](msvm-guestserviceinterfacecomponent.md)**
 </dt> <dt>
 
 Tipo di accesso: sola lettura
 </dt> <dt>
 
-Qualificatori: [**override**](/windows/desktop/WmiSdk/standard-qualifiers) ("CIM \_ Dependency. Antecedent")
+Qualificatori: [**override**](/windows/desktop/WmiSdk/standard-qualifiers) ("CIM \_ Dependency.Antecedent")
 </dt> </dl>
 
-Riferimento al componente dell'interfaccia del servizio Guest in questa associazione.
+Riferimento al componente dell'interfaccia del servizio guest in questa associazione.
 
 </dd> <dt>
 
 **Dipendente**
 </dt> <dd> <dl> <dt>
 
-Tipo di dati: **[ **MSVM \_ GuestService**](msvm-guestservice.md)**
+Tipo di dati: **[ **Msvm \_ GuestService**](msvm-guestservice.md)**
 </dt> <dt>
 
 Tipo di accesso: sola lettura
 </dt> <dt>
 
-Qualificatori: [**override**](/windows/desktop/WmiSdk/standard-qualifiers) ("CIM \_ Dependency. dependent")
+Qualificatori: [**override**](/windows/desktop/WmiSdk/standard-qualifiers) ("CIM \_ Dependency.Dependent")
 </dt> </dl>
 
-Riferimento al servizio Guest registrato che dipende dalla proprietà **precedente** .
+Riferimento al servizio guest registrato che dipende dalla **proprietà Antecedent.**
 
 </dd> </dl>
 
@@ -89,10 +89,10 @@ Riferimento al servizio Guest registrato che dipende dalla proprietà **preceden
 
 | Requisito | Valore |
 |-------------------------------------|---------------------------------------------------------------------------------------------------------|
-| Client minimo supportato<br/> | Windows 8.1 \[ solo app desktop\]<br/>                                                            |
-| Server minimo supportato<br/> | Solo app desktop Windows Server 2012 R2 \[\]<br/>                                                 |
-| Spazio dei nomi<br/>                | \\Virtualizzazione radice \\ v2<br/>                                                                     |
-| MOF<br/>                      | <dl> <dt>WindowsVirtualization. v2. mof</dt> </dl> |
+| Client minimo supportato<br/> | \[Windows 8.1 solo app desktop\]<br/>                                                            |
+| Server minimo supportato<br/> | Windows Server 2012 Solo \[ app desktop R2\]<br/>                                                 |
+| Spazio dei nomi<br/>                | Root \\ Virtualization \\ V2<br/>                                                                     |
+| MOF<br/>                      | <dl> <dt>WindowsVirtualization.V2.mof</dt> </dl> |
 | DLL<br/>                      | <dl> <dt>Vmms.exe</dt> </dl>                     |
 
 
@@ -101,10 +101,10 @@ Riferimento al servizio Guest registrato che dipende dalla proprietà **preceden
 
 <dl> <dt>
 
-[**\_Dipendenza CIM**](cim-dependency.md)
+[**Dipendenza \_ CIM**](cim-dependency.md)
 </dt> <dt>
 
-[**\_Dipendenza CIM**](/windows/desktop/CIMWin32Prov/cim-dependency)
+[**Dipendenza \_ CIM**](/windows/desktop/CIMWin32Prov/cim-dependency)
 </dt> </dl>
 
  

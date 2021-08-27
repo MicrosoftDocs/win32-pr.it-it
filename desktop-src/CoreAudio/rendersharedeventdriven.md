@@ -1,19 +1,19 @@
 ---
-description: Questa applicazione di esempio usa le API audio principali per eseguire il rendering dei dati audio in un dispositivo di output, specificato dall'utente.
+description: Questa applicazione di esempio usa le API Core Audio per eseguire il rendering dei dati audio in un dispositivo di output, specificato dall'utente.
 ms.assetid: 92e644be-df8b-415d-ac8e-c0c30c85f844
 title: RenderSharedEventDriven
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 9901896b962717ed72fd36d022eef9510d7cb916
-ms.sourcegitcommit: c7add10d695482e1ceb72d62b8a4ebd84ea050f7
+ms.openlocfilehash: aafab0e2a9d073a963653ebaf53106ee737327a516df300a810632b0822c26f1
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "103877946"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120109410"
 ---
 # <a name="rendersharedeventdriven"></a>RenderSharedEventDriven
 
-Questa applicazione di esempio usa le API audio principali per eseguire il rendering dei dati audio in un dispositivo di output, specificato dall'utente. Questo esempio illustra il buffering basato sugli eventi per un client di rendering in modalità condivisa. Per un flusso in modalità condivisa, il client condivide il buffer dell'endpoint con il motore audio.
+Questa applicazione di esempio usa le API Core Audio per eseguire il rendering dei dati audio in un dispositivo di output, specificato dall'utente. Questo esempio illustra il buffering basato su eventi per un client di rendering in modalità condivisa. Per un flusso in modalità condivisa, il client condivide il buffer dell'endpoint con il motore audio.
 
 In questo argomento sono contenute le sezioni seguenti.
 
@@ -26,10 +26,10 @@ In questo argomento sono contenute le sezioni seguenti.
 
 ## <a name="description"></a>Descrizione
 
-In questo esempio vengono illustrate le funzionalità seguenti.
+Questo esempio illustra le funzionalità seguenti.
 
--   [API MMDevice](mmdevice-api.md) per la selezione e l'enumerazione dei dispositivi multimediali.
--   WASAPI per le operazioni di gestione del flusso.
+-   [API MMDevice per](mmdevice-api.md) l'enumerazione e la selezione di dispositivi multimediali.
+-   WASAPI per le operazioni di gestione dei flussi.
 
 ## <a name="requirements"></a>Requisiti
 
@@ -50,9 +50,9 @@ Questo esempio è disponibile nelle posizioni seguenti.
 
 
 
-| Location    | Percorso/URL                                                                                                 |
+| Località    | Percorso/URL                                                                                                 |
 |-------------|----------------------------------------------------------------------------------------------------------|
-| Windows SDK | \\Programmi \\ Microsoft SDK \\ Windows \\ v 7.0 esempi di \\ \\ audio multimediale \\ \\ RenderSharedEventDriven \\ ... |
+| Windows SDK | \\Programmi \\ Microsoft SDK Windows \\ \\ v7.0 \\ Samples \\ Multimedia Audio \\ \\ RenderSharedEventDriven \\ ... |
 
 
 
@@ -62,54 +62,54 @@ Questo esempio è disponibile nelle posizioni seguenti.
 
 Per compilare l'esempio RenderSharedEventDriven, seguire questa procedura:
 
-1.  Aprire la shell CMD per la Windows SDK e passare alla directory di esempio RenderSharedEventDriven.
-2.  Eseguire il comando `start WASAPIRenderSharedEventDriven.sln` nella directory RenderSharedEventDriven per aprire il progetto WASAPIRenderSharedEventDriven nella finestra di Visual Studio.
-3.  Nella finestra di selezionare la configurazione di **debug** o di **rilascio** della soluzione, selezionare il menu **Compila** dalla barra dei menu e selezionare l'opzione **Compila** . Se non si apre Visual Studio dalla shell CMD per l'SDK, Visual Studio non avrà accesso all'ambiente di compilazione dell'SDK. In tal caso, l'esempio non verrà compilato a meno che non si imposti in modo esplicito la variabile di ambiente MSSdk, che viene usata nel file di progetto, WASAPIRenderSharedEventDriven. vcproj.
+1.  Aprire la shell CMD per Windows SDK e passare alla directory di esempio RenderSharedEventDriven.
+2.  Eseguire il comando nella directory RenderSharedEventDriven per aprire il progetto `start WASAPIRenderSharedEventDriven.sln` WASAPIRenderSharedEventDriven nella finestra Visual Studio.
+3.  Nella finestra selezionare la configurazione  della soluzione **Debug** o Versione, scegliere il **menu** Compila dalla barra dei menu e selezionare l'opzione **Compila.** Se non si apre Visual Studio shell CMD per l'SDK, Visual Studio non avrà accesso all'ambiente di compilazione SDK. In tal caso, l'esempio non verrà compilato a meno che non si imposta in modo esplicito la variabile di ambiente MSSdk, usata nel file di progetto WASAPIRenderSharedEventDriven.vcproj.
 
 ## <a name="running-the-sample"></a>Esecuzione dell'esempio
 
-Se l'applicazione demo viene compilata correttamente, viene generato un file eseguibile WASAPIRenderSharedEventDriven.exe. Per eseguirlo, digitare `WASAPIRenderSharedEventDriven` in una finestra di comando seguita da argomenti obbligatori o facoltativi. Nell'esempio seguente viene illustrato come eseguire l'esempio specificando la durata della riproduzione sul dispositivo multimediale predefinito.
+Se si compila correttamente l'applicazione demo, viene generato un file eseguibile, WASAPIRenderSharedEventDriven.exe, Per eseguirlo, digitare `WASAPIRenderSharedEventDriven` in una finestra di comando seguita da argomenti obbligatori o facoltativi. Nell'esempio seguente viene illustrato come eseguire l'esempio specificando la durata della riproduzione nel dispositivo multimediale predefinito.
 
 `WASAPIRenderSharedEventDriven.exe -d 20 -multimedia`
 
-La tabella seguente illustra gli argomenti.
+Nella tabella seguente vengono illustrati gli argomenti .
 
 | Argomento        | Descrizione                                                |
 |-----------------|------------------------------------------------------------|
-| -?              | Visualizza la guida.                                                |
-| -H              | Visualizza la guida.                                                |
-| -f              | Frequenza di onda sinusoidale in Hz.                                 |
+| -?              | Visualizza la Guida.                                                |
+| -H              | Visualizza la Guida.                                                |
+| -f              | Frequenza delle onde sinsino in Hz.                                 |
 | -l              | Latenza di rendering audio in millisecondi.                      |
-| -d              | Durata in secondi dell'onda sinusoidale.                             |
+| -d              | Durata dell'ondata seno in secondi.                             |
 | -M              | Disabilita l'uso di MMCSS.                                 |
-| -Console        | Usare il dispositivo console predefinito.                            |
-| -comunicazioni | Usare il dispositivo di comunicazione predefinito.                      |
-| -Multimedia     | Usare il dispositivo multimediale predefinito.                         |
+| -console        | Usare il dispositivo console predefinito.                            |
+| -communications | Usare il dispositivo di comunicazione predefinito.                      |
+| -multimedia     | Usare il dispositivo multimediale predefinito.                         |
 | -endpoint       | Usare l'identificatore dell'endpoint specificato nel valore dell'opzione. |
 
 
 
  
 
-Se l'applicazione viene eseguita senza argomenti, enumera i dispositivi disponibili e chiede all'utente di selezionare un dispositivo per la sessione di rendering. Dopo che l'utente ha specificato un dispositivo, l'applicazione esegue il rendering di un'onda sinusoidale a 440 Hz per 10 secondi. Questi valori possono essere modificati specificando i valori di opzione-f e-d.
+Se l'applicazione viene eseguita senza argomenti, enumera i dispositivi disponibili e richiede all'utente di selezionare un dispositivo per la sessione di rendering. Dopo che l'utente ha specificato un dispositivo, l'applicazione esegue il rendering di un'onda seno a 440 Hz per 10 secondi. Questi valori possono essere modificati specificando i valori delle opzioni -f e -d.
 
-RenderSharedEventDriven illustra la memorizzazione nel buffer basata sugli eventi. Nell'esempio viene illustrato come eseguire le operazioni seguenti:
+RenderSharedEventDriven illustra il buffering basato su eventi. L'esempio illustra come:
 
--   Creare un'istanza di un client audio, configurarlo per l'esecuzione in modalità esclusiva e abilitare la memorizzazione nel buffer basata sugli eventi impostando il flag **AUDCLNT \_ STREAMFLAGS \_ EVENTCALLBACK** nella chiamata a [**IAudioClient:: Initialize**](/windows/desktop/api/Audioclient/nf-audioclient-iaudioclient-initialize).
--   Associare il client agli esempi pronti per il rendering fornendo un handle di evento al sistema chiamando il metodo [**IAudioClient:: SetEventHandle**](/windows/desktop/api/Audioclient/nf-audioclient-iaudioclient-seteventhandle) .
--   Creare un thread di rendering per eseguire gli esempi dal motore audio.
--   Controllare il formato di combinazione dell'endpoint del dispositivo per determinare se è possibile eseguire il rendering degli esempi. Se il dispositivo non supporta il formato di combinazione, i dati vengono convertiti nel PCM.
+-   Creare un'istanza di un client audio, configurarlo per l'esecuzione in modalità esclusiva e abilitare il buffer basato su eventi impostando il flag **AUDCLNT \_ STREAMFLAGS \_ EVENTCALLBACK** nella chiamata a [**IAudioClient::Initialize**](/windows/desktop/api/Audioclient/nf-audioclient-iaudioclient-initialize).
+-   Associare il client agli esempi pronti per il rendering fornendo un handle di evento al sistema chiamando il metodo [**IAudioClient::SetEventHandle.**](/windows/desktop/api/Audioclient/nf-audioclient-iaudioclient-seteventhandle)
+-   Creare un thread di rendering per ottenere esempi dal motore audio.
+-   Controllare il formato di combinazione dell'endpoint del dispositivo per determinare se è possibile eseguire il rendering degli esempi. Se il dispositivo non supporta il formato di combinazione, i dati vengono convertiti in PCM.
 -   Gestire il cambio di flusso.
 
-Dopo l'inizio della sessione di rendering e l'avvio del flusso, il motore audio segnala all'handle di evento fornito di notificare al client ogni volta che un buffer è pronto per l'elaborazione da parte del client. I dati audio possono anche essere elaborati in un ciclo basato su timer. Questa modalità è illustrata nell'esempio [RenderSharedTimerDriven](rendersharedtimerdriven.md) .
+Dopo l'avvio della sessione di rendering e l'avvio del flusso, il motore audio segnala all'handle di evento fornito di inviare una notifica al client ogni volta che un buffer diventa pronto per l'elaborazione da parte del client. I dati audio possono essere elaborati anche in un ciclo basato su timer. Questa modalità è illustrata [nell'esempio RenderSharedTimerDriven.](rendersharedtimerdriven.md)
 
-Per altre informazioni sul rendering di un flusso, vedere [rendering di un flusso](rendering-a-stream.md).
+Per altre informazioni sul rendering di un flusso, vedere [Rendering di un flusso](rendering-a-stream.md).
 
 ## <a name="related-topics"></a>Argomenti correlati
 
 <dl> <dt>
 
-[Esempi di SDK che usano le API audio principali](sdk-samples-that-use-the-core-audio-apis.md)
+[Esempi di SDK che usano le API audio di base](sdk-samples-that-use-the-core-audio-apis.md)
 </dt> </dl>
 
  

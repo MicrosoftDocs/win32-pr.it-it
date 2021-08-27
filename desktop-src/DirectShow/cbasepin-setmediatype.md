@@ -16,12 +16,12 @@ api_location:
 - Strmbase.dll
 - Strmbasd.lib
 - Strmbasd.dll
-ms.openlocfilehash: b61b6179aa6364ebddd940b8853e22d628463e56
-ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
+ms.openlocfilehash: e71047b5063a5975266e5e24db936a0baf9e7b65e81ce29b402ccce4638267a2
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/28/2021
-ms.locfileid: "108095988"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120108641"
 ---
 # <a name="cbasepinsetmediatype-method"></a>Metodo CBasePin.SetMediaType
 
@@ -55,7 +55,7 @@ Restituisce S \_ OK.
 
 ## <a name="remarks"></a>Commenti
 
-Questo metodo stabilisce il formato per una connessione pin. Prima di chiamare questo metodo, il pin chiama il [**metodo CBasePin::CheckMediaType**](cbasepin-checkmediatype.md) per determinare se il tipo di supporto è accettabile. Si presuppone pertanto *che il parametro pmt* sia un tipo di supporto accettabile.
+Questo metodo stabilisce il formato per una connessione pin. Prima di chiamare questo metodo, il pin chiama il [**metodo CBasePin::CheckMediaType**](cbasepin-checkmediatype.md) per determinare se il tipo di supporto è accettabile. Si presuppone quindi *che il parametro pmt* sia un tipo di supporto accettabile.
 
 Nella classe di base questo metodo imposta la variabile membro [**CBasePin::m \_ mt**](cbasepin-m-mt.md) e restituisce S \_ OK. Una classe derivata può eseguire l'override di questo metodo se richiede una notifica quando viene impostato il tipo di supporto.
 
@@ -65,7 +65,7 @@ Nella classe di base questo metodo imposta la variabile membro [**CBasePin::m \_
 
 | Requisito | Valore |
 |--------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Intestazione<br/>  | <dl> <dt>Amfilter.h (include Streams.h)</dt> </dl>                                                                                  |
+| Intestazione<br/>  | <dl> <dt>Amfilter.h (includere Flussi.h)</dt> </dl>                                                                                  |
 | Libreria<br/> | <dl> <dt>Strmbase.lib (build di vendita al dettaglio); </dt> <dt>Strmbasd.lib (build di debug)</dt> </dl> |
 
 

@@ -1,19 +1,19 @@
 ---
 title: 'Test case dei giochi di Windows: procedure consigliate per giochi su Windows XP, Windows Vista, Windows 7 e Windows 8'
-description: Questo articolo fornisce test case per giochi per Windows.
+description: Questo articolo fornisce test case per i giochi per Windows.
 ms.assetid: bbe84d3f-e7ff-f14f-ec25-ae1c980749fe
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 0b13a4934c539579e49c9b00c60f3603bd64c711
-ms.sourcegitcommit: b32433cc0394159c7263809ae67615ab5792d40d
+ms.openlocfilehash: e9848131cae57e1f456f2ca7a497f10c8865fad146aa82c7b73f99180dcb75aa
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/30/2021
-ms.locfileid: "113120276"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120107581"
 ---
-# <a name="games-for-windows-test-cases-best-practices-for-games-on-windows-xp-windows-vista-windows-7-and-windows-8"></a>Test case di Giochi per Windows: procedure consigliate per i giochi in Windows XP, Windows Vista, Windows 7 e Windows 8
+# <a name="games-for-windows-test-cases-best-practices-for-games-on-windows-xp-windows-vista-windows-7-and-windows-8"></a>Games for Windows Test Cases: Best Practices for Games on Windows XP, Windows Vista, Windows 7, and Windows 8
 
-Questo articolo fornisce test case per giochi per Windows.
+Questo articolo fornisce test case per i giochi per Windows.
 
 ## <a name="how-to-use-this-article"></a>Come usare questo articolo
 
@@ -24,21 +24,21 @@ Questo articolo contiene tre sezioni principali:
 <span id="Test_Requirements"></span><span id="test_requirements"></span><span id="TEST_REQUIREMENTS"></span>**Requisiti di test**
 </dt> <dd>
 
-Ogni requisito di test in questo documento ha quattro sezioni principali: un titolo e una tabella con tre sezioni di primo piano (colonna a sinistra, in alto a destra, in basso a destra).
+Ogni requisito di test in questo documento include quattro sezioni principali: un titolo e una tabella con tre sezioni principali (colonna sinistra, in alto a destra, in basso a destra).
 
 <dl> <dt>
 
 <span id="Title"></span><span id="title"></span><span id="TITLE"></span>Titolo
 </dt> <dd>
 
-Nome dell'test case.
+Nome del test case.
 
 </dd> <dt>
 
-<span id="Box__far_left_column"></span><span id="box__far_left_column"></span><span id="BOX__FAR_LEFT_COLUMN"></span>Casella, colonna all'estrema sinistra
+<span id="Box__far_left_column"></span><span id="box__far_left_column"></span><span id="BOX__FAR_LEFT_COLUMN"></span>Box, colonna all'estrema sinistra
 </dt> <dd>
 
-Nomi dei sistemi operativi a cui si test case.
+Nomi dei sistemi operativi a cui si test case sistema operativo.
 
 </dd> <dt>
 
@@ -52,14 +52,14 @@ Breve riepilogo del test case.
 <span id="Box__right_bottom"></span><span id="box__right_bottom"></span><span id="BOX__RIGHT_BOTTOM"></span>Casella, in basso a destra
 </dt> <dd>
 
-Dettagli dell'effettiva test case.
+Dettagli dell'effettivo test case.
 
 </dd> </dl> </dd> <dt>
 
 <span id="Sample_Test_Script"></span><span id="sample_test_script"></span><span id="SAMPLE_TEST_SCRIPT"></span>**Script di test di esempio**
 </dt> <dd>
 
-Questa sezione è un esempio della sequenza che verrebbe seguito da un tipico passaggio di test se si usano i requisiti di test come guida.
+Questa sezione è un esempio della sequenza che verrebbe seguito da un tipico test superato se si usano i requisiti di test come guida.
 
 </dd> <dt>
 
@@ -86,23 +86,23 @@ Questa sezione contiene note dettagliate su ognuno degli strumenti di test usati
 <tbody>
 <tr class="odd">
 <td>Windows 7<br/> Windows Vista<br/></td>
-<td>Il gioco deve essere visibile all'interno Games Explorer in Windows Vista e Windows 7. Quando questa opzione è selezionata, il gioco deve visualizzare anche i metadati corretti. L'installazione non deve creare un collegamento per avviare il gioco sul desktop, nel menu Start o in qualsiasi altra posizione. Non è necessario creare attività e collegamenti per la rimozione.</td>
+<td>Il gioco deve essere visibile all'interno Games Explorer in Windows Vista e Windows 7. Quando questa opzione è selezionata, il gioco deve visualizzare anche i metadati corretti. L'installazione non deve creare un collegamento per avviare il gioco sul desktop, nel menu Start o in qualsiasi altro percorso. Le attività e i collegamenti per la rimozione non devono essere creati.</td>
 </tr>
 <tr class="even">
 
 <td><ol>
 <li>Dopo aver installato il gioco, aprire Games Explorer.</li>
 <li>Verificare che l'icona del gioco sia visualizzata Games Explorer.</li>
-<li>Fare clic con il pulsante destro del mouse sull'icona e testare ogni attività di & di supporto.</li>
+<li>Fare clic con il pulsante destro del mouse sull'icona e testare ogni attività di riproduzione definita dall'& supporto tecnico.</li>
 <li>Fare clic sull'icona e verificare che i metadati (editore, sviluppatore, genere, data di rilascio, versione) nella parte inferiore siano visualizzati e siano corretti.</li>
-<li>Verificare che l'icona del gioco visualizzi Indice prestazioni Windows (WEI) in Games Explorer.</li>
-<li>Verificare che i collegamenti ipertestuali del gioco per i metadati funzionino correttamente Games Explorer. Se i collegamenti ipertestuali non vengono visualizzati, è possibile che il file exe non sia firmato. Vedere la sezione <a href="#23-sign-files">2.3.</a></li>
-<li>Verificare che il gioco visualizzi una valutazione accurata del controllo genitori Games Explorer. Se viene indicato che non è stata impostata larate, verificare che si tratta di un gioco senzarate. In caso contrario, si tratta di un indicatore che indica che l'exe non è firmato; vedere la sezione <a href="#23-sign-files">2.3.</a></li>
-<li>Verificare che il gioco non inseri i collegamenti di avvio sul desktop dell'utente.</li>
+<li>Verificare che l'icona del gioco Windows informazioni sull'indice dell'esperienza utente (WEI) Games Explorer.</li>
+<li>Verificare che i collegamenti ipertestuali del gioco per i metadati funzionino correttamente in Games Explorer. Se i collegamenti ipertestuali non vengono visualizzati, questo è un possibile segno che il file exe non è firmato. Vedere la sezione <a href="#23-sign-files">2.3.</a></li>
+<li>Verificare che il gioco visualizzi una classificazione di controllo genitori accurata Games Explorer. Se viene visualizzato un messaggio senzarate, verificare che si tratta di un gioco senzarate. In caso contrario, si tratta di un indicatore che indica che il file exe non è firmato. Vedere la sezione <a href="#23-sign-files">2.3.</a></li>
+<li>Verificare che il gioco non posiziona i tasti di scelta rapida di avvio sul desktop dell'utente.</li>
 <li>Fare clic su Start -> Tutti i programmi.</li>
-<li>Verificare che il gioco non inseri i collegamenti di avvio nel menu Start.</li>
-<li>Verificare che il gioco non posiziona i collegamenti di disinstallazione nel menu Start all'esterno Pannello di controllo.</li>
-<li>Se il gioco viene distribuito digitalmente, verificare che il provider di servizi sia visualizzato in Windows Games Explorer.</li>
+<li>Verificare che il gioco non posiziona i tasti di scelta rapida di avvio nel menu Start.</li>
+<li>Verificare che i tasti di scelta rapida di disinstallazione non siano posizionati nel menu Start all'esterno Pannello di controllo.</li>
+<li>Se il gioco viene distribuito digitalmente, verificare che il provider di servizi sia visualizzato Windows Games Explorer.</li>
 </ol>
 <br/></td>
 </tr>
@@ -125,41 +125,41 @@ Questa sezione contiene note dettagliate su ognuno degli strumenti di test usati
 <tbody>
 <tr class="odd">
 <td>Windows 7<br/> Windows Vista<br/></td>
-<td>Il gioco deve essere eseguito nel contesto di un &quot; utente &quot; standard. Controllo genitori deve essere in grado di bloccare il gioco. Verificare che la funzione definita dall'utente abbia nomi EXE.</td>
+<td>Il gioco deve essere eseguito nel contesto di un &quot; utente &quot; standard. Il controllo genitori deve essere in grado di bloccare il gioco. Verificare che la funzione GDF abbia nomi EXE.</td>
 </tr>
 <tr class="even">
 
 <td><ol>
-<li>Creare un account utente standard in Windows Vista o Windows 7 denominato Toby. Start -> Pannello di controllo -> Add or Remove User Accounts -> Create New Account</li>
-<li>Come Jane, dall'account amministratore configurare Controllo genitori per il gioco. Start -> Pannello di controllo -> Set up Parental Controls for Any User -> Toby
+<li>Creare un account utente standard in Windows Vista o Windows 7 denominato Toby. Avviare -> Pannello di controllo -> Aggiungi o rimuovi account utente -> Crea nuovo account</li>
+<li>Come Jane, dall'account amministratore configurare Controllo genitori per il gioco. Start -> Pannello di controllo -> Set Up Parent Controls for Any User -> Toby
 <ol>
-<li>Verificare che il gioco sia avviato dall'Games Explorer di avvio.</li>
-<li>Verificare che il gioco visualizzi una valutazione accurata di Controllo genitori sotto il titolo del gioco nell'Pannello di controllo.</li>
-<li>Prima di applicare Controllo genitori, verificare che il gioco non richiedi credenziali di amministratore all'avvio.</li>
+<li>Verificare che il gioco si avvii dall Games Explorer icona.</li>
+<li>Verificare che il gioco visualizzi una valutazione accurata di Controllo genitori sotto il titolo del gioco nella scheda Controllo genitori Pannello di controllo.</li>
+<li>Prima di applicare il controllo genitori, verificare che il gioco non richiedi credenziali di amministratore all'avvio.</li>
 <li>Impostare Controllo genitori su &quot; On &quot; .</li>
-<li>Nella sezione Impostazioni di Windows fare clic su Giochi.</li>
-<li>Fare clic su OK (l'impostazione dovrebbe ora &quot; essere AO/tutti i &quot; giochi).</li>
+<li>Nella sezione Windows Impostazioni fare clic su Giochi.</li>
+<li>Fare clic su OK (l'impostazione dovrebbe &quot; ora essere AO/tutti i &quot; giochi).</li>
 <li>Verificare che il gioco venga eseguito con queste impostazioni come User Jane.</li>
 <li>Disconnettersi come Jane e accedere come Toby.</li>
 <li>Verificare che il gioco venga eseguito con queste impostazioni come User Toby.</li>
 <li>Disconnettersi come Toby e accedere come Jane.</li>
-<li>Tornare alla schermata precedente e selezionare &quot; Imposta classificazioni di gioco &quot; .</li>
+<li>Tornare alla schermata precedente e selezionare &quot; Set Game Ratings (Imposta classificazioni &quot; gioco).</li>
 <li><p>Selezionare una classificazione inferiore alla classificazione ESRB del gioco.</p>
 <blockquote>
 [!Note]<br />
-Se il gioco non è valutato, ignorare questo passaggio e passare alla parte successiva di questo test. Potrebbe essere necessario scegliere un sistema di classificazione diverso per trovare una classificazione del gioco, a seconda delle impostazioni locali della lingua dello SKU testato.
+Se il gioco non viene valutato, ignorare questo passaggio e passare alla parte successiva di questo test. Potrebbe essere necessario scegliere un sistema di classificazione diverso per trovare una classificazione del gioco, a seconda delle impostazioni locali della lingua dello SKU testato.
 </blockquote>
 <p><br/></p></li>
 <li>Disconnettersi come Jane e accedere come Toby.</li>
 <li>Verificare che il gioco non si avvii per User Toby quando ESRB è bloccato dall'utente Jane.</li>
 <li>Disconnettersi come Toby e accedere come Jane.</li>
-<li>Se modificato in precedenza, ripristinare le impostazioni ESRB.</li>
-<li>Se non sono presenti impostazioni ESRB, selezionare Blocca o Consenti giochi specifici &quot; e selezionare il gioco in base al &quot; nome.</li>
+<li>Se è stato modificato in precedenza, ripristinare le impostazioni di ESRB.</li>
+<li>Se non sono presenti impostazioni ESRB, selezionare Blocca o Consenti &quot; giochi specifici e selezionare il gioco in base al &quot; nome.</li>
 <li>Disconnettersi come Jane e accedere come Toby.</li>
 <li>Verificare che il gioco non si avvii per User Toby quando EXE/Name è bloccato dall'utente Jane.</li>
 <li>Disconnettersi come Toby e accedere di nuovo come Jane.</li>
 <li>Come Jane, aprire Controlli utente -> restrizioni dell'applicazione.</li>
-<li>Fare clic su Toby per usare solo i programmi consentiti e fare clic su &quot; &quot; OK(ovvero, non consentire exe).</li>
+<li>Fare clic su Toby può usare solo i programmi consentiti e fare clic &quot; su OK &quot; ,ovvero non consentire alcun file exe.</li>
 <li>Passare a Controlli utente | Games Controlla e consente il gioco specifico usando la classificazione ESRB.</li>
 <li>Disconnettersi come Jane e accedere come Toby e provare a eseguire il gioco.</li>
 <li>Verificare che il gioco NON sia bloccato e che Toby possa riprodurlo quando non sono impostati &quot; file &quot; exe consentiti.</li>
@@ -174,11 +174,11 @@ Se il gioco non è valutato, ignorare questo passaggio e passare alla parte succ
 
  
 
-### <a name="13-windows-vista-rich-saved-games"></a>1.3 Windows Vista Rich Saved Games
+### <a name="13-windows-vista-rich-saved-games"></a>1.3 Windows Rich Saved Games di Vista
 
 Questo requisito è stato ritirato.
 
-### <a name="14-xbox-360-common-controller-for-windows-conditional-requirement"></a>1.4 Xbox 360 requisito condizionale di Common Controller per \[ Windows\]
+### <a name="14-xbox-360-common-controller-for-windows-conditional-requirement"></a>1.4 Xbox 360 Common Controller for Windows \[ Conditional Requirement\]
 
 
 
@@ -190,24 +190,24 @@ Questo requisito è stato ritirato.
 <tbody>
 <tr class="odd">
 <td>Windows 7<br/> Windows Vista<br/> Windows XP<br/></td>
-<td>I giochi che supportano i controller gamepad devono supportare il controller Xbox 360 per Windows usando l'API XInput. Tutti i riferimenti ai trigger e ai pulsanti comuni del controller devono usare Xbox 360 nomi.</td>
+<td>I giochi che supportano i controller del game pad devono supportare controller Xbox 360 per Windows l'API XInput. Tutti i riferimenti ai trigger e ai pulsanti del controller comuni devono usare Xbox 360 nomi.</td>
 </tr>
 <tr class="even">
 
 <td><ol>
 <li>Avviare il gioco.</li>
 <li>Passare alle opzioni del controller. **</li>
-<li>Verificare che il gioco riconosca Xbox 360 controller per Windows come dispositivo di input.</li>
-<li>Riprodurre il gioco e verificare che il gioco e il sistema di menu siano controllabili con Xbox 360 Controller per Windows.</li>
-<li>Verificare che il Xbox 360 controller per Windows si comporti in base agli standard accettati. (B per back, A per accept, Start for in game menu/pause or accept, etc.)</li>
-<li>Verificare che il gioco faccia riferimento ai pulsanti e ai trigger del controller usando Xbox 360 nomi.</li>
+<li>Verificare che il gioco riconosca controller Xbox 360 per Windows come dispositivo di input.</li>
+<li>Riprodurre il gioco e verificare che il sistema di gioco e menu sia controllabile con controller Xbox 360 per Windows.</li>
+<li>Verificare che il controller Xbox 360 per Windows si comporti in base agli standard accettati. (B per back, A per accept, Start for in game menu/pause or accept, etc.)</li>
+<li>Verificare che il gioco faccia riferimento ai pulsanti e ai trigger del controller Xbox 360 nomi.</li>
 </ol>
 <br/>
 <blockquote>
 [!Note]<br />
-Se il gioco non supporta un controller di gioco e/o supporta solo tastiera/mouse, ignorare questa test case.
+Se il gioco non supporta un controller di gioco e/o supporta solo tastiera/mouse, ignorare questo test case.
 </blockquote>
-<br/> ** Le impostazioni per il controller potrebbero trovarsi all'esterno del gioco. <br/></td>
+<br/> ** Impostazioni per il controller potrebbe trovarsi all'esterno del gioco. <br/></td>
 </tr>
 </tbody>
 </table>
@@ -231,7 +231,7 @@ Se il gioco non supporta un controller di gioco e/o supporta solo tastiera/mouse
 <td>Il gioco deve supportare almeno le proporzioni seguenti e le risoluzioni dello schermo associate: <br/>
 <ul>
 <li>4:3 &quot; normale &quot; (800 600 o 1024 768)</li>
-<li>Widescreen 16:9 &quot; &quot; (1280 720)</li>
+<li>Schermo widescreen 16:9 &quot; &quot; (1280 720)</li>
 <li>Widescreen 16:10 &quot; &quot; (1152 720, 1680 1050 o 800 480)</li>
 </ul></td>
 </tr>
@@ -250,10 +250,10 @@ I test seguenti devono essere eseguiti su un monitor widescreen.
 <li>Verificare che il gioco venga eseguito con una risoluzione delle proporzioni 16:9.</li>
 <li>Nella sezione risoluzione video selezionare 1680 1050, 800 480 o 1152 720.</li>
 <li>Verificare che il gioco venga eseguito con una risoluzione delle proporzioni 16:10.</li>
-<li>Verificare che il gioco non estenda l'immagine e a sua volta presenti un'area di visualizzazione più ampia.</li>
-<li>Verificare che il gioco chiede all'utente quando viene apportata una modifica alla risoluzione.</li>
+<li>Verificare che il gioco non estensa l'immagine e a sua volta presenti un'area di visualizzazione più ampia.</li>
+<li>Verificare che il gioco richiede all'utente quando viene apportata una modifica alla risoluzione.</li>
 <li>Se l'utente non accetta entro 15 secondi, verificare che lo schermo torni all'impostazione precedente.</li>
-<li>Verificare che il gioco non attava le barre nere a sinistra e a destra dell'area di gioco. In questo caso, l'area del gioco sarà ancora in un rapporto 4:3 al centro dello schermo.</li>
+<li>Verificare che il gioco non aggiunge barre nere a sinistra e a destra dell'area di gioco. In questo caso, l'area del gioco sarà ancora in un rapporto 4:3 al centro dello schermo.</li>
 </ol>
 <br/></td>
 </tr>
@@ -272,16 +272,16 @@ Questo requisito è stato ritirato.
 
 
 
-| OS                                                                    | Requisito                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                             |
+| Sistema operativo                                                                    | Requisito                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                             |
 |---------------------------------------------------------------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | Windows 7<br/> Windows Vista<br/> Windows XP<br/> | Se il gioco usa Direct3D, la versione minima supportata deve essere Direct3D 9 e Direct3D deve essere l'impostazione predefinita per qualsiasi opzione di configurazione dello schermo.                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                          |
-|     <dl> <dt><span id="Manual"></span><span id="manual"></span><span id="MANUAL"></span>Manuale</dt> <dd> Avviare il gioco. Nelle opzioni video verificare se sono disponibili opzioni di rendering, D3D e/o OpenGL. In caso contrario, verificare che le opzioni di rendering del gioco siano direct3D per impostazione predefinita. Se non è possibile verificare che D3D9 sia la versione di DirectX in uso, passare a Test automatizzato. <br/> </dd> <dt><span id="Automated_Test"></span><span id="automated_test"></span><span id="AUTOMATED_TEST"></span>Test automatizzato</dt> <dd> Usare lo strumento: Depends.exe <br/> </dd> </dl> |
+|     <dl> <dt><span id="Manual"></span><span id="manual"></span><span id="MANUAL"></span>Manuale</dt> <dd> Avviare il gioco. Nelle opzioni video verificare se sono disponibili opzioni di rendering, D3D e/o OpenGL. In caso contrario, verificare che per impostazione predefinita le opzioni di rendering del gioco siano Direct3D. Se non è possibile verificare che D3D9 sia la versione di DirectX in uso, passare a Test automatizzato. <br/> </dd> <dt><span id="Automated_Test"></span><span id="automated_test"></span><span id="AUTOMATED_TEST"></span>Test automatizzato</dt> <dd> Usare lo strumento: Depends.exe <br/> </dd> </dl> |
 
 
 
  
 
-### <a name="18-enable-high-dpi-aware"></a>1.8 Abilitare il supporto per valori DPI alti
+### <a name="18-enable-high-dpi-aware"></a>1.8 Abilitare il supporto per valori DPI elevati
 
 
 
@@ -299,8 +299,8 @@ Questo requisito è stato ritirato.
 
 <td><dl> <dt><span id="Manual"></span><span id="manual"></span><span id="MANUAL"></span>Manuale</dt> <dd>
 <ol>
-<li>Impostare il sistema su DPI 150%: <br/> Windows Vista: Pannello di controllo: Personalizzazione, Regola dimensioni carattere (DPI), DPI personalizzato. Impostare su 150%.<br/> Windows 7: Pannello di controllo: Schermo, Impostato su Più grande - 150%.<br/></li>
-<li>Eseguire il processo di installazione e il gioco per verificare che non siano presenti problemi con le schermate ritagliate o le finestre di dialogo.</li>
+<li>Impostare il sistema su DPI 150%: <br/> Windows Vista: Pannello di controllo: Personalizzazione, Regola dimensioni carattere (DPI), DPI personalizzato. Impostare su 150%.<br/> Windows 7: Pannello di controllo: Display, Set to Larger - 150%.<br/></li>
+<li>Eseguire il processo di installazione e il gioco per verificare che non siano presenti problemi con schermate ritagliate o finestre di dialogo.</li>
 </ol>
 </dd> <dt><span id="Automated_Test"></span><span id="automated_test"></span><span id="AUTOMATED_TEST"></span>Test automatizzato</dt> <dd> Verificare che <dpiAware>l'elemento true</dpiAware> sia contenuto nel manifesto incorporato.<br/> Usare lo strumento: Mt.exe <br/> </dd> </dl></td>
 </tr>
@@ -325,13 +325,13 @@ Questo requisito è stato ritirato.
 <tbody>
 <tr class="odd">
 <td>Windows 7<br/> Windows Vista<br/></td>
-<td>Ogni file eseguibile (.EXE)incluso in un'applicazione deve avere un manifesto incorporato che ne definisce il livello di esecuzione:
+<td>Ogni file eseguibile (.EXE) incluso in un'applicazione deve avere un manifesto incorporato che ne definisce il livello di esecuzione:
 <pre class="syntax" data-space="preserve"><code><requestedExecutionLevel level=&quot;asInvoker|highestAvailable|requireAdministrator&quot; 
               uiAccess=&quot;true|false&quot;/></code></pre>
 <br/>
 <blockquote>
 [!Note]<br />
-Per i giochi e i programmi di installazione di giochi, uiAccess deve sempre essere impostato su &quot; &quot; false.
+Per i giochi e i programmi di installazione dei giochi, uiAccess deve sempre essere impostato su &quot; &quot; false.
 </blockquote>
 <br/></td>
 </tr>
@@ -339,7 +339,7 @@ Per i giochi e i programmi di installazione di giochi, uiAccess deve sempre esse
 
 <td><ol>
 <li>Verificare che i file eseguibili del gioco contengano manifesti.</li>
-<li>Verificare che il manifesto del file eseguibile del gioco requestedExecutionLevel &quot; sia AsInvoker &quot; .</li>
+<li>Verificare che il manifesto del file eseguibile del gioco requestedExecutionLevel sia &quot; AsInvoker &quot; .</li>
 </ol>
 Usare lo strumento: Mt.exe <br/></td>
 </tr>
@@ -364,12 +364,12 @@ Usare lo strumento: Mt.exe <br/></td>
 <td>Windows 7<br/> Windows Vista<br/></td>
 <td>Per mantenere la compatibilità con le versioni x64 di Windows: <br/>
 <ul>
-<li>I programmi di installazione dei titoli e dei titoli non devono contenere codice a 16 bit o basarsi su componenti a 16 bit.</li>
-<li>Se il gioco dipende dai driver in modalità kernel per il funzionamento, è necessario che siano disponibili versioni x64 di questi driver. La configurazione del gioco deve rilevare e installare i driver e i componenti appropriati per le edizioni a 64 bit di Windows.</li>
+<li>I programmi di installazione di titoli e titoli non devono contenere codice a 16 bit o basarsi su componenti a 16 bit.</li>
+<li>Se il gioco dipende dai driver in modalità kernel per il funzionamento, le versioni x64 di questi driver devono essere disponibili. La configurazione del gioco deve rilevare e installare i driver e i componenti appropriati per le edizioni a 64 bit di Windows.</li>
 </ul>
 <blockquote>
 [!Note]<br />
-Il supporto per l'edizione a 64 bit di Windows XP Professional è facoltativo.
+Il supporto per l'edizione a 64 bit di Windows XP Professional facoltativo.
 </blockquote>
 <br/></td>
 </tr>
@@ -377,8 +377,8 @@ Il supporto per l'edizione a 64 bit di Windows XP Professional è facoltativo.
 
 <td>Test manuale<br/>
 <ol>
-<li>Eseguire il gioco nelle edizioni a 64 bit di Windows. Verificare che il processo di installazione del gioco venga eseguito normalmente nelle edizioni a 64 bit di Windows Vista o Windows 7.</li>
-<li>Verificare che il gioco non verifichi un errore in seguito a file eseguibili a 16 bit nelle edizioni a 64 bit di Windows Vista o Windows 7. L'errore menziona l'applicazione a 16 bit nella finestra degli errori.</li>
+<li>Eseguire il gioco in edizioni a 64 bit di Windows. Verificare che il processo di installazione del gioco venga eseguito normalmente nelle edizioni a 64 bit di Windows Vista o Windows 7.</li>
+<li>Verificare che il gioco non verifichi un errore in seguito a eseguibili a 16 bit nelle edizioni a 64 bit di Windows Vista o Windows 7. L'errore menziona l'applicazione a 16 bit nella finestra di errore.</li>
 <li>Se il gioco ha un eseguibile nativo a 64 bit, usare anche questo.</li>
 </ol></td>
 </tr>
@@ -401,14 +401,14 @@ Il supporto per l'edizione a 64 bit di Windows XP Professional è facoltativo.
 <tbody>
 <tr class="odd">
 <td>Windows 7<br/> Windows Vista<br/> Windows XP<br/></td>
-<td>Tutti i file di codice eseguibile ( ad esempio, .exe e .dll) devono essere firmati con un certificato Authenticode. <br/> Se si usa un Windows Installer, i file di pacchetto del programma di installazione (.msi file) devono essere firmati. <br/></td>
+<td>Tutti i file di codice eseguibile (ad esempio, .exe e .dll) devono essere firmati con un certificato Authenticode. <br/> Se si usa il Windows, i file del pacchetto del programma di installazione (.msi file) devono essere firmati. <br/></td>
 </tr>
 <tr class="even">
 
 <td>Test manuale<br/>
 <ol>
 <li>Passare alla directory del gioco.</li>
-<li>Individuare tutti i file .exe e .dll file.</li>
+<li>Individuare tutti i .exe e .dll file.</li>
 <li>Fare clic con il pulsante destro del mouse su Proprietà in ogni file.</li>
 <li>Verificare che i file eseguibili del gioco contengano una firma digitale.</li>
 </ol></td>
@@ -420,7 +420,7 @@ Il supporto per l'edizione a 64 bit di Windows XP Professional è facoltativo.
 
  
 
-### <a name="24-sign-drivers"></a>2.4 Firmare i driver
+### <a name="24-sign-drivers"></a>2.4 Driver di firma
 
 
 
@@ -432,14 +432,14 @@ Il supporto per l'edizione a 64 bit di Windows XP Professional è facoltativo.
 <tbody>
 <tr class="odd">
 <td>Windows 7<br/> Windows Vista<br/> Windows XP<br/></td>
-<td>Qualsiasi driver in modalità kernel installato dal gioco deve essere firmato con un certificato Authenticode valido pubblicamente. <br/> Qualsiasi driver di dispositivo hardware in modalità kernel installato dal gioco deve avere una firma Microsoft ottenuta tramite il programma Windows Hardware Quality Labs (WHQL) o DrS (Driver Reliability Signature). <br/></td>
+<td>Qualsiasi driver in modalità kernel installato dal gioco deve essere firmato con un certificato Authenticode valido pubblicamente. <br/> Qualsiasi driver di dispositivo hardware in modalità kernel installato dal gioco deve avere una firma Microsoft ottenuta tramite il programma Windows Hardware Quality Labs (WHQL) o Driver Reliability Signature (DRS). <br/></td>
 </tr>
 <tr class="even">
 
 <td>Test manuale<br/>
 <ol>
 <li>Installare il gioco.</li>
-<li>Verificare che il processo di installazione del gioco non visualizza le finestre di dialogo del driver non firmate.</li>
+<li>Verificare che nel processo di installazione del gioco non siano visualizzate finestre di dialogo del driver non firmate.</li>
 </ol></td>
 </tr>
 </tbody>
@@ -461,7 +461,7 @@ Il supporto per l'edizione a 64 bit di Windows XP Professional è facoltativo.
 <tbody>
 <tr class="odd">
 <td>Windows 7<br/> Windows Vista<br/> Windows XP<br/></td>
-<td>I giochi non devono essere eseguiti nei sistemi operativi futuri come indicato dalle modifiche nel numero di versione di Windows, a meno che il Contratto di licenza con l'utente finale non proibisca l'uso nei sistemi operativi futuri. Se si suppone che il gioco non riesca, deve farlo normalmente visualizzando un messaggio all'utente.</td>
+<td>I giochi non devono essere eseguiti nei sistemi operativi futuri, come indicato dalle modifiche nel numero di versione Windows, a meno che il Contratto di licenza con l'utente finale non proibisca l'uso nei sistemi operativi futuri. Se si suppone che il gioco non riesca, deve farlo normalmente visualizzando un messaggio all'utente.</td>
 </tr>
 <tr class="even">
 
@@ -499,19 +499,19 @@ Il supporto per l'edizione a 64 bit di Windows XP Professional è facoltativo.
 <tbody>
 <tr class="odd">
 <td>Windows 7<br/> Windows Vista<br/> Windows XP<br/></td>
-<td>I giochi devono supportare scenari multitasking windows standard.</td>
+<td>I giochi devono supportare scenari Windows multitasking standard.</td>
 </tr>
 <tr class="even">
 
-<td>Creare un account utente standard in Windows Vista o Windows 7 denominato Toby. Start -> Pannello di controllo -> Add or Remove User Accounts -> Create New Account <br/>
+<td>Creare un account utente standard in Windows Vista o Windows 7 denominato Toby. Avviare -> Pannello di controllo -> Aggiungi o rimuovi account utente -> Crea nuovo account <br/>
 <ol>
 <li>Avviare il gioco come User Jane.</li>
-<li>ALT+TAB per tornare al desktop.</li>
-<li>Verificare che il gioco sia correttamente ALT+TAB sul desktop di Windows.</li>
+<li>ALT+TAB torna al desktop.</li>
+<li>Verificare che il gioco venga eseguito correttamente con ALT+TAB Windows desktop.</li>
 <li>Fare clic su Start -> [freccia a destra di Blocca] -> Cambia utente.</li>
-<li>Accedere come Utente Toby.</li>
-<li>Verificare che il gioco sia avviato come User Toby mentre è ancora in esecuzione come User Jane.</li>
-<li>Verificare che nel gioco non si verifichino errori per User Toby o User Jane durante il processo user switch.</li>
+<li>Accedere come User Toby.</li>
+<li>Verificare che il gioco si avvii come User Toby mentre è ancora in esecuzione come User Jane.</li>
+<li>Verificare che il gioco non presenti errori per User Toby o User Jane durante il processo user switch.</li>
 <li>Se è possibile avviare un'altra sessione di gioco, verificare che non sia possibile ascoltare l'audio dalla sessione di gioco originale.</li>
 <li>Chiudere il gioco e tornare all'utente e al gioco originali.</li>
 </ol></td>
@@ -535,7 +535,7 @@ Il supporto per l'edizione a 64 bit di Windows XP Professional è facoltativo.
 <tbody>
 <tr class="odd">
 <td>Windows 7<br/> Windows Vista<br/> Windows XP<br/></td>
-<td>Se un gioco supporta il salvataggio di file, deve essere in grado di salvare file con nomi e percorsi lunghi. Il gioco deve gestire correttamente i caratteri file system, ad esempio \ / : * ? &quot; < o > campi di input utente usati per creare nomi di file o percorsi.</td>
+<td>Se un gioco supporta il salvataggio di file, deve essere in grado di salvare i file con nomi e percorsi lunghi. Il gioco deve gestire correttamente i file system speciali, ad esempio \ / : * ? &quot; < o > in tutti i campi di input utente usati per creare percorsi o nomi di file.</td>
 </tr>
 <tr class="even">
 
@@ -546,7 +546,7 @@ Il supporto per l'edizione a 64 bit di Windows XP Professional è facoltativo.
 <li>Tornare al menu principale.</li>
 <li>Provare a caricare il gioco appena salvato.</li>
 <li>Verificare che nel gioco non si verifichino errori durante la gestione di caratteri file system non supportati, ad esempio \ / : * ? &quot; < o > se il gioco lo consente, assegnare un nome al gioco salvato.</li>
-<li>Se all'utente è consentito assegnare un nome al profilo e/o al carattere o salvare giochi, verificare che il gioco non presenti errori anche quando si usano nomi di file lunghi.</li>
+<li>Se l'utente è autorizzato a assegnare un nome al proprio profilo e/o al carattere o salvare giochi, verificare che il gioco non presenti errori anche quando si usano nomi di file lunghi.</li>
 </ol></td>
 </tr>
 </tbody>
@@ -576,13 +576,13 @@ Il supporto per l'edizione a 64 bit di Windows XP Professional è facoltativo.
 
 <td><ol>
 <li>Inserire il disco del gioco.</li>
-<li>Verificare che nel gioco non siano visualizzati più End-User di licenza.</li>
+<li>Verificare che il gioco non visualizza più di un contratto End-User licenza.</li>
 <li>Se il gioco supporta un'opzione di installazione personalizzata o avanzata, verificare che questa opzione sia accessibile durante il processo di installazione.</li>
-<li>Verificare che l'opzione Installazione predefinita bypassi tutte le selezioni di input utente per il processo di installazione (selezione della cartella di installazione, selezione dei componenti e così via).</li>
-<li>Verificare che il processo di installazione del gioco non richiede l'installazione del componente del sistema operativo (installazione di DirectX, Runtime di Visual C e così via).</li>
-<li>Verificare che il processo di installazione del gioco non richiede l'interazione del firewall.</li>
+<li>Verificare che l'opzione installazione predefinita ignora tutte le selezioni di input dell'utente per il processo di installazione (selezione della cartella di installazione, selezione dei componenti e così via).</li>
+<li>Verificare che il processo di installazione del gioco non richiede l'installazione del componente del sistema operativo (installazione di DirectX, runtime di Visual C e così via).</li>
+<li>Verificare che il processo di installazione del gioco non richiede l'interazione con il firewall.</li>
 <li>Verificare che il gioco venga eseguito automaticamente o che al termine del processo di installazione sia presente un menu di avvio.</li>
-<li>Verificare che il processo di disinstallazione del gioco rimova tutti i file dei componenti del sistema operativo non ridistribuiti installati e cancella tutte le impostazioni. La pulizia di tutte le impostazioni e i dati per utente (ad esempio i giochi salvati) non è necessaria.</li>
+<li>Verificare che il processo di disinstallazione del gioco rimova tutti i file dei componenti del sistema operativo installati e non ridistribuiti e cancella tutte le impostazioni. Non è necessario pulire tutte le impostazioni e i dati per utente, ad esempio i giochi salvati.</li>
 </ol></td>
 </tr>
 </tbody>
@@ -609,12 +609,12 @@ Il supporto per l'edizione a 64 bit di Windows XP Professional è facoltativo.
 <tr class="even">
 
 <td><ol>
-<li>Verificare che sia possibile installare il gioco come User Jane. Questa operazione richiederà diritti elevati durante il processo di installazione/installazione.</li>
-<li>Verificare che il processo di installazione del gioco richiede all'utente Jane di elevare il livello tramite credenziali di amministratore. La richiesta di elevazione dei privilegi verrà visualizzata quando l'utente tenta di eseguire l'installazione.</li>
-<li>Scegliere di eseguire automaticamente il gioco al termine dell'installazione, se non lo fa già, o avviarlo dal menu visualizzato.</li>
-<li>Una volta in gioco, creare un nuovo profilo, riprodurre e salvare un gioco.</li>
+<li>Verificare che sia possibile installare il gioco come User Jane. Questa operazione richiede diritti elevati durante il processo di installazione/installazione.</li>
+<li>Verificare che il processo di installazione del gioco richiede all'utente Jane di elevare i privilegi tramite credenziali di amministratore. Quando l'utente tenta di eseguire l'installazione, verrà visualizzata la richiesta di elevazione dei privilegi.</li>
+<li>Scegliere di eseguire automaticamente il gioco al termine dell'installazione, se non lo fa già, oppure avviarlo dal menu visualizzato.</li>
+<li>Una volta nel gioco, crea un nuovo profilo, riproduci e salva un gioco.</li>
 <li>Uscire dal gioco.</li>
-<li>Riavviare il gioco e verificare che Profili utente e Giochi salvati siano accessibili dall'account User Jane.</li>
+<li>Riavviare il gioco e verificare che i profili utente e i giochi salvati siano accessibili dall'account User Jane.</li>
 </ol></td>
 </tr>
 </tbody>
@@ -624,7 +624,7 @@ Il supporto per l'edizione a 64 bit di Windows XP Professional è facoltativo.
 
  
 
-### <a name="33-install-to-correct-folders"></a>3.3 Installare in cartelle corrette
+### <a name="33-install-to-correct-folders"></a>3.3 Eseguire l'installazione nelle cartelle corrette
 
 
 
@@ -641,12 +641,12 @@ Il supporto per l'edizione a 64 bit di Windows XP Professional è facoltativo.
 <tr class="even">
 
 <td><ol>
-<li>Installare il gioco usando il tipo di installazione predefinito.</li>
+<li>Installare il gioco usando il tipo di installazione Predefinito.</li>
 <li>Verificare che il gioco sia stato installato in Programmi.</li>
 </ol>
 <blockquote>
 [!Note]<br />
-Se il test ha esito negativo, verificare che il gioco sia destinato all'installazione per tutti gli utenti. In tal caso, si tratta di un errore.
+Se il test ha esito negativo, verificare che il gioco sia destinato all'installazione per Tutti gli utenti. In caso contrario, si tratta di un errore.
 </blockquote>
 <br/></td>
 </tr>
@@ -657,7 +657,7 @@ Se il test ha esito negativo, verificare che il gioco sia destinato all'installa
 
  
 
-### <a name="34-install-windows-resources-properly"></a>3.4 Installare correttamente le risorse di Windows
+### <a name="34-install-windows-resources-properly"></a>3.4 Installare Windows risorse in modo corretto
 
 
 
@@ -669,12 +669,12 @@ Se il test ha esito negativo, verificare che il gioco sia destinato all'installa
 <tbody>
 <tr class="odd">
 <td>Windows 7<br/> Windows Vista<br/> Windows XP<br/></td>
-<td>Le applicazioni non devono tentare di installare file o chiavi del Registro di sistema protette da Protezione risorse di Windows (WRP).</td>
+<td>Le applicazioni non devono tentare di installare file o chiavi del Registro di sistema protette da Windows Resource Protection (WRP).</td>
 </tr>
 <tr class="even">
 
 <td><ul>
-<li>Verificare che non vengano Protezione risorse di Windows finestre di dialogo WRP durante il processo di installazione.</li>
+<li>Verificare che non vengano Windows finestra di dialogo WRP di Protezione risorse durante il processo di installazione.</li>
 </ul></td>
 </tr>
 </tbody>
@@ -684,7 +684,7 @@ Se il test ha esito negativo, verificare che il gioco sia destinato all'installa
 
  
 
-### <a name="35-avoid-reboots-during-installation"></a>3.5 Evitare riavvii durante l'installazione
+### <a name="35-avoid-reboots-during-installation"></a>3.5 Evitare i riavvii durante l'installazione
 
 
 
@@ -706,7 +706,7 @@ Se il test ha esito negativo, verificare che il gioco sia destinato all'installa
 </ol>
 <blockquote>
 [!Note]<br />
-Se un aggiornamento del sistema Microsoft REDIST richiede un riavvio, eseguire le operazioni seguenti: Completare l'installazione del gioco, disinstallare il gioco e reinstallarlo una seconda volta. Il processo di installazione del gioco non deve richiedere un riavvio in questa seconda installazione.
+Se un aggiornamento del sistema Microsoft REDIST richiede un riavvio, eseguire le operazioni seguenti: Completare l'installazione del gioco, disinstallare il gioco e reinstallare il gioco una seconda volta. Il processo di installazione del gioco non deve richiedere un riavvio in questa seconda installazione.
 </blockquote>
 <br/></td>
 </tr>
@@ -729,7 +729,7 @@ Se un aggiornamento del sistema Microsoft REDIST richiede un riavvio, eseguire l
 <tbody>
 <tr class="odd">
 <td>Windows 7<br/> Windows Vista<br/> Windows XP<br/></td>
-<td>Il programma di installazione del gioco deve verificare correttamente che siano installate le versioni più recenti dei file. L'installazione di un gioco non deve mai regredire i file non prodotti o condivisi da applicazioni non producete.</td>
+<td>Il programma di installazione del gioco deve verificare correttamente che siano installate le versioni più recenti dei file. L'installazione di un gioco non deve mai regredire per i file non prodotti o condivisi da applicazioni che non vengono prodotti.</td>
 </tr>
 <tr class="even">
 
@@ -737,7 +737,7 @@ Se un aggiornamento del sistema Microsoft REDIST richiede un riavvio, eseguire l
 <li>Prima di installare il gioco, creare uno snapshot di preinstallazione di System32.<br/>
 <ol>
 <li>Creare una directory denominata G4Wtest.</li>
-<li>Visualizzare una finestra di comando (Start -> Run -> cmd).</li>
+<li>Visualizzare una finestra di comando (Avvia -> Esegui -> cmd).</li>
 <li>Passare a c:\windows\system32.</li>
 <li>Digitare dir /o:-g /o:-d >> c:\G4Wtest\pregame.txt.</li>
 </ol></li>
@@ -774,7 +774,7 @@ Se un aggiornamento del sistema Microsoft REDIST richiede un riavvio, eseguire l
 [!Note]<br />
 I programmi di esecuzione automatica scritti per l'uso in versioni di Windows precedenti a Windows Vista non devono usare il runtime .NET, perché questa tecnologia non è inclusa in Windows XP o versioni precedenti di Windows.
 </blockquote>
-<br/> Per altre indicazioni, vedere <a href="/windows/win32/DxTechArts/games-for-windows-technical-requirements-1-1-0006">Games for Windows Technical Requirements</a> 3.7, Support Autorun (Giochi per Windows Technical Requirements 3.7, Esecuzione automatica del supporto). <br/></td>
+<br/> Per altre indicazioni, fare riferimento a <a href="/windows/win32/DxTechArts/games-for-windows-technical-requirements-1-1-0006">Games for Windows Technical Requirements</a> 3.7, Support Autorun (Requisiti tecnici 3.7, Esecuzione automatica del supporto). <br/></td>
 </tr>
 <tr class="even">
 
@@ -783,7 +783,7 @@ I programmi di esecuzione automatica scritti per l'uso in versioni di Windows pr
 <li>Verificare che la finestra di dialogo Installa/Esegui venga visualizzata automaticamente.</li>
 <li>Windows Vista o Windows 7: verificare che il programma di esecuzione automatica del gioco stesso non chiede all'utente Jane di elevare i privilegi tramite credenziali di amministratore.</li>
 <li>Verificare che il file eseguibile di esecuzione automatica non necessiti di componenti REDIST, ad esempio .NET 3.5, librerie Run-Time C e così via.</li>
-<li>Verificare che il nuovo inserimento del disco nell'unità dopo l'installazione non causerà il nuovo avvio automatico dell'installazione.</li>
+<li>Verificare che se si inserisce nuovamente il disco nell'unità dopo l'installazione, l'installazione non verrà avviata di nuovo automaticamente.</li>
 </ol></td>
 </tr>
 </tbody>
@@ -799,7 +799,7 @@ I programmi di esecuzione automatica scritti per l'uso in versioni di Windows pr
 
 
 
-| OS                                              | Requisito                                                                                                                                                                   |
+| Sistema operativo                                              | Requisito                                                                                                                                                                   |
 |-----------------------------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | Windows 7<br/> Windows Vista<br/> | Tutti i programmi di installazione delle applicazioni devono sfruttare le API di Gestione riavvio per evitare riavvii del sistema (vedere [il requisito 3.5).](#35-avoid-reboots-during-installation) |
 
@@ -833,7 +833,7 @@ I programmi di esecuzione automatica scritti per l'uso in versioni di Windows pr
 <li>Avviare AppVerifier e selezionare File -> Aggiungi applicazione.</li>
 <li>Individuare il file eseguibile del gioco, selezionarlo e fare clic sul &quot; pulsante &quot; Apri.</li>
 <li>Nella sezione &quot; Applicazioni selezionare il file &quot; eseguibile del gioco.</li>
-<li>Nella sezione Test selezionare i test elencati in precedenza nelle categorie Nozioni di base e Varie (deselezionare ThreadPool e &quot; &quot; &quot; &quot; &quot; &quot; TimeRollOver) e assicurarsi che tutti gli altri test non siano selezionati.</li>
+<li>Nella sezione Test selezionare i test elencati in precedenza nelle categorie Informazioni di base e Varie (deselezionare ThreadPool e &quot; &quot; &quot; &quot; &quot; &quot; TimeRollOver) e assicurarsi che tutti gli altri test non siano selezionati.</li>
 <li>Avviare il gioco.</li>
 <li>Verificare che il gioco non generi errori quando viene eseguito in Application Verifier.</li>
 </ol>
@@ -896,12 +896,12 @@ Alcuni test richiedono l'esecuzione completa di un debugger. Potrebbe essere nec
 <ol>
 <li>Fare clic con il pulsante destro del mouse sui file eseguibili del gioco sia nel supporto di installazione che in quelli installati nel disco rigido del computer.</li>
 <li>Selezionare Proprietà.</li>
-<li>Windows XP: fare clic sulla <strong>scheda</strong> Versione. Verificare che i campi Product Name (Nome prodotto), Company Name (Nome società) e File Version (Versione file) siano popolati correttamente.</li>
-<li>Windows Vista o Windows 7: fare clic sulla <strong>scheda</strong> Dettagli. Verificare che i campi Nome prodotto e Versione file siano popolati correttamente. Nome società non è visibile nella pagina delle proprietà di Windows Vista o Windows 7.</li>
+<li>Windows XP: fare clic <strong>sulla scheda</strong> Versione. Verificare che i campi Product Name (Nome prodotto), Company Name (Nome società) e File Version (Versione file) siano popolati correttamente.</li>
+<li>Windows Vista o Windows 7: fare clic sulla <strong>scheda</strong> Dettagli. Verificare che i campi Nome prodotto e Versione file siano popolati correttamente. Nome società non è visibile nella pagina Windows Vista o Windows 7.</li>
 </ol>
 </dd> <dt><span id="Automated_test_"></span><span id="automated_test_"></span><span id="AUTOMATED_TEST_"></span>Test automatizzato:</dt> <dd>
 <ul>
-<li>Usare lo strumento di test di Microsoft Games for Windows; vedere <a href="#64-microsoft-games-for-windows-test-tool">la sezione 6.4</a>.</li>
+<li>Usare Microsoft Games for Windows Test Tool; vedere <a href="#64-microsoft-games-for-windows-test-tool">la sezione 6.4</a>.</li>
 </ul>
 </dd> </dl></td>
 </tr>
@@ -947,15 +947,15 @@ Questo è un esempio di un test superato tipico usando i requisiti di test prece
 -   Edizione a 32 bit di Windows Vista SP1 e/o Windows 7 in una CPU Intel
 -   Edizione a 64 bit di Windows Vista SP1 e/o Windows 7 in una CPU AMD
 -   Edizione a 64 bit di Windows Vista SP1 e/o Windows 7 in una CPU Intel
--   Edizione a 32 bit di Windows XP SP2 in una CPU AMD
--   Edizione a 32 bit di Windows XP SP2 in una CPU Intel
+-   Edizione a 32 bit Windows XP SP2 in una CPU AMD
+-   Edizione a 32 bit Windows XP SP2 in una CPU Intel
 -   Monitor wide screen che supporta 1680 1050
--   Xbox 360 controller per Windows
+-   controller Xbox 360 per Windows
 
 ### <a name="52-pre-install"></a>5.2 Preinstallazione
 
 1.  Windows Vista e Windows 7: Creare due utenti standard: Jane e Toby
-2.  Windows Vista e Windows 7: verificare che Controllo dell'account utente sia abilitato
+2.  Windows Vista e Windows 7: Verificare che controllo dell'account utente sia abilitato
 3.  Creare uno snapshot di preinstallazione di System32
 
     1.  Creare una directory denominata G4Wtest
@@ -963,7 +963,7 @@ Questo è un esempio di un test superato tipico usando i requisiti di test prece
     3.  Passare a c: \\ windows \\ system32
     4.  Digitare dir /o:-g /o:-d >> c: \\ G4Wtest \\pregame.txt
 
-4.  Windows Vista e Windows 7: impostare su 150% DPI \[ 1.8\]
+4.  Windows Vista e Windows 7: impostare su 150% DPI \[ 1,8\]
 5.  Procedere con [l'installazione](#3-installation)
 
 ### <a name="53-install"></a>5.3 Installare
@@ -979,7 +979,7 @@ Questo è un esempio di un test superato tipico usando i requisiti di test prece
 9.  Verificare che il processo di installazione del gioco non richiede l'interazione con il firewall \[ 3.1\]
 10. Verificare che il processo di installazione del gioco non verifichi un errore relativo alla versione del sistema operativo \[ 2.5 \] \[ 4.2\]
 11. Verificare che nel processo di installazione del gioco non siano visualizzate finestre di dialogo del driver \[ non firmate 2.4\]
-12. Verificare che non vengano Protezione risorse di Windows (WRP) durante il processo di installazione \[ 3.4\]
+12. Verificare che non vengano Windows finestre di dialogo WRP (Resource Protection) durante il processo di installazione \[ 3.4\]
 13. Verificare che il nuovo inserimento del disco nell'unità dopo l'installazione non causa il nuovo avvio automatico dell'installazione
 14. Verificare che il gioco non richieda il riavvio del sistema dopo \[ l'installazione 3.5\]
 15. Verificare che sia possibile installare il gioco come User Jane \[ 3.2\]
@@ -989,13 +989,13 @@ Questo è un esempio di un test superato tipico usando i requisiti di test prece
 
 ### <a name="54-post-install"></a>5.4 Post-installazione
 
-1.  Verificare che il gioco non posiziona i collegamenti di avvio sul desktop dell'utente \[ 1.1\]
+1.  Verificare che il gioco non posiziona i collegamenti di avvio sul desktop \[ dell'utente 1.1\]
 2.  Verificare che il gioco non posiziona i collegamenti di avvio nel menu Start \[ 1.1\]
 3.  Verificare che l'icona del gioco sia visualizzata Windows Games Explorer \[ 1.1\]
 4.  Verificare che i metadati (editore, sviluppatore, genere, data di rilascio, versione) nella parte inferiore visualizzino la \[ versione 1.1 corretta\]
-5.  Verificare che l'icona del gioco visualizzi Indice prestazioni Windows (WEI) in Windows Games Explorer \[ 1.1\]
+5.  Verificare che l'icona del gioco visualizzi Windows informazioni sull'indice dell'esperienza (WEI) Windows Games Explorer \[ 1.1\]
 6.  Verificare che i collegamenti ipertestuali del gioco per i metadati funzionino correttamente in Windows Games Explorer \[ 1.1\]
-7.  Verificare che il gioco visualizzi una valutazione accurata del controllo genitori in Windows Games Explorer \[ 1.1\]
+7.  Verificare che il gioco visualizzi una valutazione accurata del controllo genitori Windows Games Explorer \[ 1.1\]
 8.  Creare uno snapshot post-installazione di System32
 
     1.  Visualizzare una finestra di comando (Start -> Run -> cmd)
@@ -1026,12 +1026,12 @@ Questo è un esempio di un test superato tipico usando i requisiti di test prece
     3.  Verificare che il gioco non richiede credenziali di amministratore \[ all'avvio 1.2\]
     4.  Passare a RUNTIME 3
 
-3.  RUNTIME 3: se il gioco supporta un game pad, verificare che il gioco riconosca Xbox 360 Controller per Windows come dispositivo di input \[ 1.4\]
+3.  RUNTIME 3: se il gioco supporta un game pad, verificare che il gioco riconosca controller Xbox 360 per Windows come dispositivo di input \[ 1.4\]
 
     1.  Se necessario, abilitare il controller tramite il menu delle opzioni
     2.  Verificare che il gioco faccia riferimento ai pulsanti e ai trigger del controller usando Xbox 360 nomi
     3.  Verificare che il gioco e il sistema di menu siano controllabili con il controller Xbox 360 per Windows
-    4.  Verificare che il Xbox 360 per Windows si comporti in base agli standard accettati
+    4.  Verificare che il controller Xbox 360 per Windows si comporti in base agli standard accettati
 
 4.  Impostare il video su \[ 1.5: \]
 
@@ -1045,8 +1045,8 @@ Questo è un esempio di un test superato tipico usando i requisiti di test prece
 
 5.  Se disponibile nelle impostazioni video, verificare che per impostazione predefinita le opzioni di rendering del gioco siano Direct3D \[ 1.7. In caso \] contrario, passare [a Test automatizzati](#58-automated-tests)
 6.  Se richiesto o se l'opzione è disponibile, creare un profilo utente. Verificare che nel gioco non si verifichino errori quando si usano nomi di file lunghi \[ 2.7\]
-7.  Avviare un nuovo gioco, creare un salvataggio del gioco e verificare che non si verifichino errori durante la gestione dei caratteri file system non supportati \[ 2.7\]
-8.  Verificare che il gioco sia correttamente ALT+TAB sul desktop di Windows \[ 2.6\]
+7.  Avviare un nuovo gioco, creare un salvataggio del gioco e verificare che non si verifichino errori durante la gestione di caratteri file system non supportati \[ 2.7\]
+8.  Verificare che il gioco sia correttamente ALT+TAB Windows desktop \[ 2.6\]
 
     1.  Cambiare utente con il gioco in esecuzione facendo clic su Start -> Cambia utente
     2.  Accedere come Toby
@@ -1114,16 +1114,16 @@ Questo è un esempio di un test superato tipico usando i requisiti di test prece
 1.  Verificare che i file eseguibili del gioco contengano una firma \[ digitale 2.3\]
 2.  Verificare che il processo di installazione del gioco venga eseguito normalmente nelle edizioni a 64 bit di Windows Vista e/o Windows 7 \[ 2.3\]
 3.  Verificare che il gioco non verifichi un errore in seguito a file eseguibili a 16 bit nelle edizioni a 64 bit di Windows Vista e/o Windows 7 \[ 2.3\]
-4.  Forzare l'arresto anomalo dell'applicazione durante il test e verificare che il gioco Segnalazione errori Windows correttamente e raccoglie i dati di arresto \[ anomalo 4.3\]
-5.  Verificare i riepiloghi dei file \[ 4.3\]
+4.  Forzare l'arresto anomalo dell'applicazione durante i test e verificare che il gioco Segnalazione errori Windows correttamente e raccoglie i dati di arresto \[ anomalo 4.3\]
+5.  Assicurarsi che i riepiloghi dei file \[ 4.3 siano adeguati\]
 
     1.  Fare clic su Start -> Computer
     2.  Passare alla directory del gioco
     3.  Nella finestra di ricerca digitare \*.dll
     4.  Per ogni file: fare clic con il pulsante destro del mouse sul file e scegliere Proprietà
 
-        -   In Windows XP: fare clic sulla scheda Versione . Verificare che i campi Product Name (Nome prodotto), Company Name (Nome società) e File Version (Versione file) siano popolati correttamente. \[4.3\]
-        -   In Windows Vista e Windows 7: fare clic sulla scheda Dettagli. Verificare che i campi Nome prodotto e Versione file siano popolati correttamente. Nome società non è visibile nella pagina delle proprietà di Windows Vista o Windows 7 \[ 4.3\]
+        -   In Windows XP: fare clic sulla scheda Versione. Verificare che i campi Product Name (Nome prodotto), Company Name (Nome società) e File Version (Versione file) siano popolati correttamente. \[4.3\]
+        -   In Windows Vista e Windows 7: fare clic sulla scheda Dettagli. Verificare che i campi Nome prodotto e Versione file siano popolati correttamente. Nome società non è visibile nella pagina Windows Vista o Windows 7 \[ 4.3\]
 
     5.  Ripetere questo controllo per .exe file
 
@@ -1172,7 +1172,7 @@ Queste sono note per ognuno degli strumenti di test elencati nei requisiti di te
     -   DangerousAPIs
     -   DirtyStacks
 
-7.  Verificare che tutti gli altri test non siano selezionati
+7.  Assicurarsi che tutti gli altri test non siano selezionati
 8.  Avviare il gioco
 9.  Riprodurre il gioco
 10. Chiudere il gioco
@@ -1238,9 +1238,9 @@ Dove str è il nome \_ di \_program.exe
 
 ### <a name="64-microsoft-games-for-windows-test-tool"></a>6.4 Microsoft Games for Windows Test Tool
 
-Questo strumento si trova in DirectX SDK. Dopo aver installato l'SDK in un computer, il programma di installazione dello strumento di test di Games for Windows può essere inserito nel computer di test e installato.
+Questo strumento si trova in DirectX SDK. Dopo aver installato l'SDK in un computer, il programma di installazione dello strumento di test games per Windows può essere inserito nel computer di test e installato.
 
-Individuare il programma di installazione dello strumento di test di Microsoft Games for Windows nel computer di sviluppo in cui è installato DirectX SDK. Per impostazione predefinita, viene inserito nel percorso seguente:
+Individuare il programma di installazione di Microsoft Games for Windows Test Tool nel computer di sviluppo in cui è installato DirectX SDK. Per impostazione predefinita, viene inserito nel percorso seguente:
 
 ``` syntax
 %SystemDrive%\Program Files (x86)\Microsoft DirectX SDK (Date)\Utilities\bin\x86\Microsoft Games for Windows Test Tools\
@@ -1248,12 +1248,12 @@ Individuare il programma di installazione dello strumento di test di Microsoft G
 
 1.  Copiare il programma di MicrosoftGFWTestTool.msi /setup.exe) nel computer di test.
 2.  Eseguire il programma di installazione.
-3.  Avviare lo strumento di test di Microsoft Games for Windows.
-4.  Nel campo **Project List (Elenco** progetti) sostituire **Create New Project (Crea nuovo progetto)** con il nome del titolo e fare clic **su Create New (Crea nuovo).**
+3.  Avviare Microsoft Games for Windows Test Tool.
+4.  Nel campo **Project elenco sostituire** Create New **Project** con il nome del titolo e fare clic su Create New ( **Crea nuovo).**
 
     Attendere il completamento della baseline.
 
-5.  Immettere tutte le informazioni disponibili nella sezione **Game Information (Informazioni** sul gioco) e fare clic **su Update Game Information (Aggiorna informazioni sul gioco).**
+5.  Immettere le informazioni disponibili nella sezione **Game Information (Informazioni** sul gioco) e fare clic **su Update Game Information (Aggiorna informazioni sul gioco).**
 6.  Fare clic **sulla scheda Test** case.
 7.  A partire dall'alto, procedere con i test case, facendo clic su **Supera** o **Non superato in** base alle esigenze.
 
@@ -1266,7 +1266,7 @@ Individuare il programma di installazione dello strumento di test di Microsoft G
 
 ### <a name="writing-a-bug"></a>Scrittura di un bug
 
-Esistono due modi per scrivere un report sui bug:  è possibile scorrere i test case e fare clic su Non riuscito quando il titolo ha esito negativo per un test case oppure è possibile fare clic sulla scheda **Modifica** bug e aggiungere manualmente un report sui bug.
+Esistono due modi per scrivere un report sui bug:  è possibile scorrere i test case e fare clic su Non riuscito quando il titolo ha esito negativo in un test case oppure è possibile fare clic sulla scheda **Modifica** bug e aggiungere manualmente un report sui bug.
 
 ### <a name="clicking-fail-on-a-test-case"></a>Fare clic su Non riuscito in un test case
 
@@ -1288,25 +1288,25 @@ Questo processo è identico a quello in cui si fa clic su **Non** riuscito , ad 
 <span id="Games_for_Windows__Technical_Requirements"></span><span id="games_for_windows__technical_requirements"></span><span id="GAMES_FOR_WINDOWS__TECHNICAL_REQUIREMENTS"></span>Giochi per Windows: requisiti tecnici
 </dt> <dd>
 
-[Requisiti tecnici di Games for Windows: procedure consigliate per i giochi in Windows XP, Windows Vista e Windows 7](./games-for-windows-technical-requirements-1-1-0006.md)
+[Requisiti tecnici di Games for Windows: Procedure consigliate per i giochi in Windows XP, Windows Vista e Windows 7](./games-for-windows-technical-requirements-1-1-0006.md)
 
 </dd> <dt>
 
-<span id="Windows_SDK"></span><span id="windows_sdk"></span><span id="WINDOWS_SDK"></span>Windows SDK
+<span id="Windows_SDK"></span><span id="windows_sdk"></span><span id="WINDOWS_SDK"></span>Windows Sdk
 </dt> <dd>
 
-[SDK di Windows](https://msdn.microsoft.com/bb980924.aspx)
+[Windows Sdk](https://msdn.microsoft.com/bb980924.aspx)
 
 </dd> <dt>
 
 <span id="User_Account_Control_Guidelines"></span><span id="user_account_control_guidelines"></span><span id="USER_ACCOUNT_CONTROL_GUIDELINES"></span>Linee guida per il controllo dell'account utente
 </dt> <dd>
 
-[Requisiti di sviluppo delle applicazioni di Windows Vista per la compatibilità del controllo dell'account utente](/previous-versions/dotnet/articles/bb530410(v=msdn.10))
+[Windows Requisiti di sviluppo delle applicazioni di Vista per la compatibilità del controllo dell'account utente](/previous-versions/dotnet/articles/bb530410(v=msdn.10))
 
 </dd> <dt>
 
-<span id="Windows_Installer_Information"></span><span id="windows_installer_information"></span><span id="WINDOWS_INSTALLER_INFORMATION"></span>Windows Installer informazioni
+<span id="Windows_Installer_Information"></span><span id="windows_installer_information"></span><span id="WINDOWS_INSTALLER_INFORMATION"></span>Windows Informazioni sul programma di installazione
 </dt> <dd>
 
 [Windows Installer](../msi/windows-installer-portal.md)

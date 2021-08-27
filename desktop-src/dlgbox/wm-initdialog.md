@@ -1,9 +1,9 @@
 ---
-title: Messaggio WM_INITDIALOG (winuser. h)
-description: Inviato alla routine della finestra di dialogo immediatamente prima della visualizzazione di una finestra di dialogo. Le routine della finestra di dialogo utilizzano in genere questo messaggio per inizializzare i controlli e per eseguire altre attività di inizializzazione che influiscono sull'aspetto della finestra di dialogo.
+title: WM_INITDIALOG messaggio (Winuser.h)
+description: Inviato alla routine della finestra di dialogo immediatamente prima che venga visualizzata una finestra di dialogo. Le procedure della finestra di dialogo usano in genere questo messaggio per inizializzare i controlli ed eseguire qualsiasi altra attività di inizializzazione che influisce sull'aspetto della finestra di dialogo.
 ms.assetid: bc4f4718-1dab-48db-ae3b-5a81a7be2644
 keywords:
-- Finestre di dialogo WM_INITDIALOG messaggio
+- WM_INITDIALOG finestre di dialogo del messaggio
 topic_type:
 - apiref
 api_name:
@@ -14,16 +14,16 @@ api_type:
 - HeaderDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 64646075bc3d5c90076d6c1ca0d61f80111c90ae
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: e272ac93514fb60069a9217c3100318f95b1e9a8c77d9e75af56e2e7fbfbf66e
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "106302082"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120117771"
 ---
-# <a name="wm_initdialog-message"></a>\_Messaggio INITDIALOG WM
+# <a name="wm_initdialog-message"></a>Messaggio \_ WM INITDIALOG
 
-Inviato alla routine della finestra di dialogo immediatamente prima della visualizzazione di una finestra di dialogo. Le routine della finestra di dialogo utilizzano in genere questo messaggio per inizializzare i controlli e per eseguire altre attività di inizializzazione che influiscono sull'aspetto della finestra di dialogo.
+Inviato alla routine della finestra di dialogo immediatamente prima che venga visualizzata una finestra di dialogo. Le procedure della finestra di dialogo usano in genere questo messaggio per inizializzare i controlli ed eseguire qualsiasi altra attività di inizializzazione che influisce sull'aspetto della finestra di dialogo.
 
 
 ```C++
@@ -39,28 +39,28 @@ Inviato alla routine della finestra di dialogo immediatamente prima della visual
 *wParam* 
 </dt> <dd>
 
-Handle per il controllo per ricevere lo stato attivo della tastiera predefinito. Il sistema assegna lo stato attivo della tastiera predefinito solo se la routine della finestra di dialogo restituisce **true**.
+Handle per il controllo per ricevere lo stato attivo predefinito della tastiera. Il sistema assegna lo stato attivo predefinito della tastiera solo se la routine della finestra di dialogo restituisce **TRUE.**
 
 </dd> <dt>
 
 *lParam* 
 </dt> <dd>
 
-Dati di inizializzazione aggiuntivi. Questi dati vengono passati al sistema come parametro *lParam* in una chiamata alla funzione [**CreateDialogIndirectParam**](/windows/desktop/api/Winuser/nf-winuser-createdialogindirectparama), [**CreateDialogParam**](/windows/desktop/api/Winuser/nf-winuser-createdialogparama), [**DialogBoxIndirectParam**](/windows/desktop/api/Winuser/nf-winuser-dialogboxindirectparama)o [**DialogBoxParam**](/windows/desktop/api/Winuser/nf-winuser-dialogboxparama) usata per creare la finestra di dialogo. Per le finestre delle proprietà, questo parametro è un puntatore alla struttura [**PROPSHEETPAGE**](/windows/desktop/api/prsht/ns-prsht-propsheetpagea_v2) usata per creare la pagina. Questo parametro è zero se viene utilizzata un'altra funzione di creazione della finestra di dialogo.
+Dati di inizializzazione aggiuntivi. Questi dati vengono passati al sistema come parametro *lParam* in una chiamata alla funzione [**CreateDialogIndirectParam**](/windows/desktop/api/Winuser/nf-winuser-createdialogindirectparama), [**CreateDialogParam**](/windows/desktop/api/Winuser/nf-winuser-createdialogparama), [**DialogBoxIndirectParam**](/windows/desktop/api/Winuser/nf-winuser-dialogboxindirectparama)o [**DialogBoxParam**](/windows/desktop/api/Winuser/nf-winuser-dialogboxparama) usata per creare la finestra di dialogo. Per le finestre delle proprietà, questo parametro è un puntatore alla [**struttura PROPSHEETPAGE**](/windows/desktop/api/prsht/ns-prsht-propsheetpagea_v2) usata per creare la pagina. Questo parametro è zero se viene usata qualsiasi altra funzione di creazione della finestra di dialogo.
 
 </dd> </dl>
 
 ## <a name="return-value"></a>Valore restituito
 
-La routine della finestra di dialogo deve restituire **true** per indirizzare il sistema in modo da impostare lo stato attivo sulla tastiera sul controllo specificato da *wParam*. In caso contrario, deve restituire **false** per impedire che il sistema imposti lo stato attivo della tastiera predefinito.
+La routine della finestra di dialogo deve restituire **TRUE** per indirizzare il sistema a impostare lo stato attivo della tastiera sul controllo specificato da *wParam*. In caso contrario, deve restituire **FALSE** per impedire al sistema di impostare lo stato attivo predefinito della tastiera.
 
-La routine della finestra di dialogo deve restituire direttamente il valore. Il valore **DWL \_ MSGRESULT** impostato dalla funzione [**SetWindowLong**](/windows/desktop/api/winuser/nf-winuser-setwindowlonga) viene ignorato.
+La routine della finestra di dialogo deve restituire direttamente il valore . Il **valore \_ MSGRESULT DWL** impostato dalla funzione [**SetWindowLong**](/windows/desktop/api/winuser/nf-winuser-setwindowlonga) viene ignorato.
 
 ## <a name="remarks"></a>Commenti
 
-Il controllo che riceve lo stato attivo predefinito è sempre il primo controllo nella finestra di dialogo visibile, non disabilitato e con lo stile **WS \_ TABSTOP** . Quando la routine della finestra di dialogo restituisce **true**, il sistema controlla il controllo per verificare che la procedura non sia stata disabilitata. Se è stato disabilitato, il sistema imposta lo stato attivo della tastiera sul controllo successivo visibile, non disabilitato e con **WS \_ TABSTOP**.
+Il controllo per ricevere lo stato attivo predefinito della tastiera è sempre il primo controllo della finestra di dialogo visibile, non disabilitato e con lo **stile \_ WS TABSTOP.** Quando la routine della finestra di dialogo restituisce **TRUE,** il sistema controlla il controllo per assicurarsi che la procedura non lo abbia disabilitato. Se è stato disabilitato, il sistema imposta lo stato attivo della tastiera sul controllo successivo visibile, non disabilitato e con **WS \_ TABSTOP**.
 
-Un'applicazione può restituire **false** solo se ha impostato lo stato attivo su uno dei controlli della finestra di dialogo.
+Un'applicazione può restituire **FALSE** solo se lo stato attivo della tastiera è stato impostato su uno dei controlli della finestra di dialogo.
 
 ## <a name="requirements"></a>Requisiti
 
@@ -70,7 +70,7 @@ Un'applicazione può restituire **false** solo se ha impostato lo stato attivo s
 |-------------------------------------|----------------------------------------------------------------------------------------------------------|
 | Client minimo supportato<br/> | Windows 2000 Professional \[solo app desktop\]<br/>                                               |
 | Server minimo supportato<br/> | Windows 2000 Server \[solo app desktop\]<br/>                                                     |
-| Intestazione<br/>                   | <dl> <dt>Winuser. h (include Windows. h)</dt> </dl> |
+| Intestazione<br/>                   | <dl> <dt>Winuser.h (includere Windows.h)</dt> </dl> |
 
 
 
@@ -93,7 +93,7 @@ Un'applicazione può restituire **false** solo se ha impostato lo stato attivo s
 [**DialogBoxParam**](/windows/desktop/api/Winuser/nf-winuser-dialogboxparama)
 </dt> <dt>
 
-[**SetFocus**](/windows/desktop/api/winuser/nf-winuser-setfocus)
+[**Setfocus**](/windows/desktop/api/winuser/nf-winuser-setfocus)
 </dt> <dt>
 
 **Informazioni concettuali**

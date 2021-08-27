@@ -12,16 +12,16 @@ api_name:
 api_type:
 - COM
 api_location: ''
-ms.openlocfilehash: afc5ec235df6c9e07a665410cb09e00f24305304
-ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
+ms.openlocfilehash: 3deccb2dcc71a62b64a508e55759e5cc9c00b5cb0a7a59fb3390046371d2fac4
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/28/2021
-ms.locfileid: "108088969"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120129851"
 ---
 # <a name="locationdisplatlongreportfactorydesiredaccuracy-property"></a>Proprietà LocationDisp.LatLongReportFactory.DesiredAccuracy
 
-\[Il modello a oggetti dell'API Location è disponibile per l'uso nei sistemi operativi specificati nella sezione Requisiti. È possibile che in versioni successive sia stata modificata o non sia più disponibile. Per accedere invece alla posizione da un sito Web, usare [l'API di georilevazione W3C](/previous-versions/windows/internet-explorer/ie-developer/samples/gg589513(v=vs.85)). Per accedere alla posizione da un'applicazione desktop, usare l'API [**Windows.Devices.Geolocation.**](/uwp/api/Windows.Devices.Geolocation)\]
+\[Il modello a oggetti dell'API Location è disponibile per l'uso nei sistemi operativi specificati nella sezione Requisiti. È possibile che in versioni successive sia stata modificata o non sia più disponibile. Per accedere invece alla posizione da un sito Web, usare [l'API di georilevazione W3C](/previous-versions/windows/internet-explorer/ie-developer/samples/gg589513(v=vs.85)). Per accedere alla posizione da un'applicazione desktop, usare il [**Windows. API Devices.Geolocation.**](/uwp/api/Windows.Devices.Geolocation)\]
 
 Valore corrente di accuratezza desiderata.
 
@@ -62,7 +62,7 @@ Questo valore è una richiesta al provider di posizione. Il provider di posizion
 
 | Requisito | Valore |
 |-------------------------------------|--------------------------------------------|
-| Client minimo supportato<br/> | Solo app desktop di Windows 7 \[\]<br/> |
+| Client minimo supportato<br/> | Windows 7 \[ app desktop\]<br/> |
 | Server minimo supportato<br/> | Nessuno supportato<br/>                  |
 
 

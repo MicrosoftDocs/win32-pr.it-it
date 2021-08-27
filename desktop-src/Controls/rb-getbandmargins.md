@@ -1,9 +1,9 @@
 ---
-title: Messaggio RB_GETBANDMARGINS (COMmctrl. h)
+title: RB_GETBANDMARGINS messaggio (Commctrl.h)
 description: Recupera i margini di una banda.
 ms.assetid: 262f4180-53f9-428f-9360-75b762470270
 keywords:
-- Controlli di Windows Message RB_GETBANDMARGINS
+- RB_GETBANDMARGINS di controllo Windows messaggio
 topic_type:
 - apiref
 api_name:
@@ -14,14 +14,14 @@ api_type:
 - HeaderDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 51ab77c057073d9816d1310b1e8cb39fd374956b
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: 7975e843417b8a47d90d011ad9a4b5367abdad2aa096f1a9652ba1cf704ddebf
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "103964551"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120085101"
 ---
-# <a name="rb_getbandmargins-message"></a>\_Messaggio GETBANDMARGINS RB
+# <a name="rb_getbandmargins-message"></a>Messaggio RB \_ GETBANDMARGINS
 
 Recupera i margini di una banda.
 
@@ -35,7 +35,7 @@ Recupera i margini di una banda.
 *lParam* 
 </dt> <dd>
 
-Puntatore a una struttura dei [**margini**](/windows/desktop/api/Uxtheme/ns-uxtheme-margins) che riceve i margini recuperati.
+Puntatore a una [**struttura MARGINS**](/windows/desktop/api/Uxtheme/ns-uxtheme-margins) che riceve i margini recuperati.
 
 </dd> </dl>
 
@@ -46,7 +46,7 @@ Il valore restituito non viene utilizzato.
 ## <a name="remarks"></a>Commenti
 
 > [!Note]  
-> Per utilizzare questo messaggio, è necessario fornire un manifesto che specifichi Comclt32.dll versione 6,0. Per altre informazioni sui manifesti, vedere [Abilitazione degli stili di visualizzazione](cookbook-overview.md).
+> Per usare questo messaggio, è necessario specificare un manifesto Comclt32.dll versione 6.0. Per altre informazioni sui manifesti, vedere [Abilitazione degli stili di visualizzazione.](cookbook-overview.md)
 
  
 
@@ -56,9 +56,9 @@ Il valore restituito non viene utilizzato.
 
 | Requisito | Valore |
 |-------------------------------------|---------------------------------------------------------------------------------------|
-| Client minimo supportato<br/> | \[Solo app desktop di Windows Vista\]<br/>                                        |
-| Server minimo supportato<br/> | \[Solo app desktop Windows Server 2003\]<br/>                                  |
-| Intestazione<br/>                   | <dl> <dt>Commctrl. h</dt> </dl> |
+| Client minimo supportato<br/> | Windows Solo \[ app desktop Vista\]<br/>                                        |
+| Server minimo supportato<br/> | Windows Solo app desktop di Server 2003 \[\]<br/>                                  |
+| Intestazione<br/>                   | <dl> <dt>Commctrl.h</dt> </dl> |
 
 
 

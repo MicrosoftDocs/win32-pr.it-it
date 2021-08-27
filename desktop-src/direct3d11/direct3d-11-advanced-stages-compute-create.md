@@ -4,12 +4,12 @@ description: Questo argomento illustra come creare uno shader di calcolo.
 ms.assetid: 6114dd90-626b-4c9e-9da5-7d2d33153e79
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: eea5e0ab6309dd441d33fc20b13d0ef31642b62f
-ms.sourcegitcommit: 61a4c522182aa1cacbf5669683d9570a3bf043b2
+ms.openlocfilehash: bd51e8b2bd0b841aca149ffa85790921552ca344fd1feaca2c6032492e9561e9
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/26/2021
-ms.locfileid: "122884467"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120119761"
 ---
 # <a name="how-to-create-a-compute-shader"></a>Procedura: Creare uno shader di calcolo
 
@@ -52,7 +52,7 @@ Uno shader di calcolo è uno shader programmabile HLSL (Microsoft High Level Sha
 L'esempio di codice seguente illustra come compilare e creare uno shader di calcolo.
 
 > [!Note]  
-> Per questo codice di esempio sono necessari Windows SDK 8.0 e il file44.dll del compilatore d3d dalla cartella \_ %PROGRAM \_ FILE% \\ Windows Kits \\ 8.0 \\ Redist \\ D3D \\ &lt; arch nel &gt; percorso.
+> Per questo codice di esempio sono necessari Windows SDK 8.0 e il file44.dll del compilatore d3d dalla cartella \_ %PROGRAM \_ FILE% \\ Windows Kits \\ 8.0 \\ Redist \\ D3D \\ <arch> nel percorso.
 
  
 

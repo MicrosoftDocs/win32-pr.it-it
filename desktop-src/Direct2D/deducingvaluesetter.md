@@ -1,9 +1,9 @@
 ---
-title: DeducingValueSetter (D2d1effecthelpers. h)
+title: DeducingValueSetter (D2d1effecthelpers.h)
 description: Deduce la classe e gli argomenti e quindi chiama un callback del setter di proprietà della funzione membro per una proprietà di tipo valore.
 ms.assetid: 4C3D64A8-0CC0-405A-A5B3-627C2DF25EA1
 keywords:
-- Direct2D DeducingValueSetter
+- DeducingValueSetter Direct2D
 topic_type:
 - apiref
 api_name:
@@ -14,12 +14,12 @@ api_type:
 - HeaderDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 0e002c5a36c8ac0b196dfc5fb25e11f7f9d63806
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: bfba4f6123b9e097d5c9c5fedb2e872974fc3d15a5c54464eca4ae6e27c3048c
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "106330092"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120108861"
 ---
 # <a name="deducingvaluesetter"></a>DeducingValueSetter
 
@@ -46,7 +46,7 @@ HRESULT DeducingValueSetter(
 
 | Requisito | Valore |
 |-------------------|------------------------------------------------------------------------------------------------|
-| Intestazione<br/> | <dl> <dt>D2d1effecthelpers. h</dt> </dl> |
+| Intestazione<br/> | <dl> <dt>D2d1effecthelpers.h</dt> </dl> |
 
 
 

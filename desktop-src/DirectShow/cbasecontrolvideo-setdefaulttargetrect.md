@@ -1,7 +1,7 @@
 ---
-description: Il metodo SetDefaultTargetRect imposta il rettangolo del video di destinazione predefinito (Virtual pure). Si tratta di una funzione membro interna che viene chiamata quando viene reimpostato il rettangolo di origine.
+description: Il metodo SetDefaultTargetRect imposta il rettangolo video di destinazione predefinito (virtuale puro). Si tratta di una funzione membro interna che viene chiamata quando viene reimpostato il rettangolo di origine.
 ms.assetid: bb7e32b2-f02c-465f-a8cb-6172d9724790
-title: Metodo CBaseControlVideo. SetDefaultTargetRect (Ctlutil. h)
+title: Metodo CBaseControlVideo.SetDefaultTargetRect (Ctlutil.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -16,16 +16,16 @@ api_location:
 - Strmbase.dll
 - Strmbasd.lib
 - Strmbasd.dll
-ms.openlocfilehash: 54b31268935cb296543b3992bf67b7a2193c1a92
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: 1ab9cf310ffc35df07ecd9e332325bb5f20f3cb4884ee17e672294b89c5abc9d
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "106328561"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120087481"
 ---
-# <a name="cbasecontrolvideosetdefaulttargetrect-method"></a>CBaseControlVideo. SetDefaultTargetRect, metodo
+# <a name="cbasecontrolvideosetdefaulttargetrect-method"></a>Metodo CBaseControlVideo.SetDefaultTargetRect
 
-Il `SetDefaultTargetRect` metodo imposta il rettangolo del video di destinazione predefinito (virtuale puro). Si tratta di una funzione membro interna che viene chiamata quando viene reimpostato il rettangolo di origine.
+Il `SetDefaultTargetRect` metodo imposta il rettangolo video di destinazione predefinito (virtuale puro). Si tratta di una funzione membro interna che viene chiamata quando viene reimpostato il rettangolo di origine.
 
 ## <a name="syntax"></a>Sintassi
 
@@ -42,11 +42,11 @@ Questo metodo non presenta parametri.
 
 ## <a name="return-value"></a>Valore restituito
 
-Restituisce un valore **HRESULT** .
+Restituisce un **valore HRESULT.**
 
 ## <a name="remarks"></a>Commenti
 
-Le classi derivate devono eseguire l'override di questo per reimpostare il rettangolo video di destinazione Viene chiamato dalla funzione membro [**CBaseControlVideo:: SetDefaultDestinationPosition**](cbasecontrolvideo-setdefaultdestinationposition.md) .
+Le classi derivate devono eseguire l'override di per reimpostare il rettangolo video di destinazione. Viene chiamato dalla funzione membro [**CBaseControlVideo::SetDefaultDestinationPosition.**](cbasecontrolvideo-setdefaultdestinationposition.md)
 
 Nell'esempio seguente viene illustrata un'implementazione di questa funzione in una classe derivata.
 
@@ -65,7 +65,7 @@ HRESULT CVideoText::SetDefaultTargetRect()
 
 
 
-In questo esempio, CVideoText è una classe derivata da [**CBaseControlVideo**](cbasecontrolvideo.md), m \_ pRenderer include un oggetto di una classe derivata da [**CBaseVideoRenderer**](cbasevideorenderer.md)e il \_ membro dati DrawImage m, definito nella classe derivata, include un oggetto [**CDrawImage**](cdrawimage.md) . Il \_ membro dati mtIn m, definito anche nella classe derivata, include un oggetto [**CMediaType**](cmediatype.md) con il tipo di supporto del PIN di input.
+In questo esempio CVideoText è una classe derivata da [**CBaseControlVideo**](cbasecontrolvideo.md), m pRenderer contiene un oggetto di una classe derivata da \_ [**CBaseVideoRenderer**](cbasevideorenderer.md)e il membro dati m DrawImage, definito nella classe derivata, contiene un \_ oggetto [**CDrawImage.**](cdrawimage.md) Il membro dati m mtIn, definito anche nella classe derivata, contiene un \_ [**oggetto CMediaType**](cmediatype.md) con il tipo di supporto del pin di input.
 
 ## <a name="requirements"></a>Requisiti
 
@@ -73,8 +73,8 @@ In questo esempio, CVideoText è una classe derivata da [**CBaseControlVideo**](
 
 | Requisito | Valore |
 |--------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Intestazione<br/>  | <dl> <dt>Ctlutil. h (include Streams. h)</dt> </dl>                                                                                   |
-| Libreria<br/> | <dl> <dt>Strmbase. lib (compilazioni finali); </dt> <dt>Strmbasd. lib (build di debug)</dt> </dl> |
+| Intestazione<br/>  | <dl> <dt>Ctlutil.h (include Flussi.h)</dt> </dl>                                                                                   |
+| Libreria<br/> | <dl> <dt>Strmbase.lib (build di vendita al dettaglio); </dt> <dt>Strmbasd.lib (build di debug)</dt> </dl> |
 
 
 

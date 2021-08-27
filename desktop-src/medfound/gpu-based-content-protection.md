@@ -1,19 +1,19 @@
 ---
-description: Descrive il contenuto video&8211; funzionalità di protezione \# che un driver di grafica può fornire.
+description: Descrive il contenuto video&\# 8211; funzionalità di protezione che possono essere fornite da un driver di grafica.
 ms.assetid: FD0625BB-484A-43E6-8931-DB635D4F017F
 title: GPU-Based protezione del contenuto
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 3d9ba9fdd556ecf4d4fc24529945ebb17ed7b117b17e490e664699eafd9ef2fa
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 7e09829984273c35524fe9c8f3cd19e759e18dbc
+ms.sourcegitcommit: 9b5faa61c38b2d0c432b7f2dbee8c127b0e28a7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "118063510"
+ms.lasthandoff: 08/19/2021
+ms.locfileid: "122465038"
 ---
 # <a name="gpu-based-content-protection"></a>GPU-Based protezione del contenuto
 
-Questo argomento descrive le funzionalità di protezione dei contenuti video che un driver di grafica può offrire.
+Questo argomento descrive le funzionalità di protezione del contenuto video che possono essere fornite da un driver di grafica.
 
 -   [Introduzione](#introduction)
 -   [Panoramica del processo di decodifica](#overview-of-the-decoding-process)
@@ -29,25 +29,25 @@ Questo argomento descrive le funzionalità di protezione dei contenuti video che
 
 ## <a name="introduction"></a>Introduzione
 
-Il diagramma seguente mostra una visualizzazione semplificata del modo in cui il contenuto video protetto attraversa la pipeline di cui eseguire il rendering.
+Il diagramma seguente mostra una visualizzazione semplificata del modo in cui il contenuto video protetto passa attraverso la pipeline di cui eseguire il rendering.
 
 ![diagramma che mostra il contenuto video protetto.](images/d3d9video01.png)
 
 > [!Note]  
-> Il [percorso del supporto](protected-media-path.md) protetto (PMP) non è illustrato in questo diagramma. Il flusso di dati illustrato qui può verificarsi all'interno di un processo PMP o all'interno di un processo dell'applicazione.
+> Il [percorso del supporto](protected-media-path.md) protetto (PMP) non è illustrato in questo diagramma. Il flusso di dati illustrato di seguito può verificarsi all'interno di un processo PMP o all'interno di un processo dell'applicazione.
 
  
 
-Il decodificatore riceve dati video crittografati e compressi da un'origine esterna. Si presuppone anche che il decodificatore riceva anche una chiave crittografica per decrittografare questi dati. Questo argomento non descrive lo scambio di chiavi tra l'origine video e il decodificatore, ma il PMP definisce un possibile meccanismo. La GPU non è coinvolta in questa fase.
+Il decodificatore riceve dati video crittografati e compressi da un'origine esterna. Si presuppone anche che il decodificatore riceva anche una chiave crittografica per decrittografare i dati. Questo argomento non descrive lo scambio di chiavi tra l'origine video e il decodificatore, ma il PMP definisce un meccanismo possibile. La GPU non è coinvolta in questa fase.
 
-Per la decodifica con accelerazione hardware, il decodificatore software passa il contenuto video compresso alla GPU. Per proteggere questo contenuto, il decodificatore crittografa nuovamente i dati, in genere usando AES-CTR, prima di passarlo all'acceleratore hardware. Viene definito un meccanismo di scambio di chiavi tra il decodificatore e il driver di grafica.
+Per la decodifica con accelerazione hardware, il decodificatore software passa il contenuto video compresso alla GPU. Per proteggere questo contenuto, il decodificatore crittografa nuovamente i dati, in genere usando AES-CTR, prima di passarlo all'acceleratore hardware. Viene definito un meccanismo di scambio delle chiavi tra il decodificatore e il driver di grafica.
 
 I fotogrammi video decodificati vengono archiviati nella memoria video, in genere in chiaro. A questo punto, i frame vengono elaborati e quindi presentati. Sono disponibili due opzioni principali per la presentazione.
 
--   I frame possono essere presentati usando una sovrimpressione hardware. Per altre informazioni, vedere [Supporto della sovrimpressione hardware](hardware-overlay-support.md).
--   I frame possono essere presentati da Desktop Window Manage (DWM) usando una superficie condivisa.
+-   I fotogrammi possono essere presentati usando una sovrimpressione hardware. Per altre informazioni, vedere [Supporto della sovrimpressione hardware.](hardware-overlay-support.md)
+-   I frame possono essere presentati da Gestione finestre desktop (DWM) usando una superficie condivisa.
 
-L'ultimo passaggio consiste nel visualizzare il frame sul monitor, che potrebbe richiedere la protezione dei collegamenti tra la scheda grafica e il dispositivo di visualizzazione. Un esempio di protezione dei collegamenti è High-Bandwidth Digital protezione del contenuto (HDCP). La protezione dei collegamenti viene [configurata tramite Output Protection Manager](output-protection-manager.md) (OPM). In questo argomento non viene descritto OPM. Per altre informazioni, vedere [Uso di Output Protection Manager.](using-output-protection-manager.md)
+L'ultimo passaggio consiste nel visualizzare il frame sul monitor, che potrebbe richiedere la protezione del collegamento tra la scheda grafica e il dispositivo di visualizzazione. Un esempio di protezione dei collegamenti è High-Bandwidth Digital protezione del contenuto (HDCP). La protezione dei collegamenti viene [configurata tramite Output Protection Manager](output-protection-manager.md) (OPM). In questo argomento non viene descritto OPM; Per altre informazioni, vedere [Uso di Output Protection Manager.](using-output-protection-manager.md)
 
 ## <a name="overview-of-the-decoding-process"></a>Panoramica del processo di decodifica
 
@@ -55,11 +55,11 @@ Durante la decodifica con accelerazione hardware, il decodificatore software dev
 
 Per crittografare il video per la decodifica, il decodificatore software usa le interfacce seguenti:
 
--   [**IDirectXVideoDecoder**](/windows/desktop/api/dxva2api/nn-dxva2api-idirectxvideodecoder). Rappresenta il dispositivo decodificatore DXVA, detto anche acceleratore.
+-   [**IDirectXVideoDecoder**](/windows/desktop/api/dxva2api/nn-dxva2api-idirectxvideodecoder). Rappresenta il dispositivo decodificatore DXVA, chiamato anche acceleratore.
 -   [**IDirect3DCryptoSession9**](/windows/desktop/api/d3d9/nn-d3d9-idirect3dcryptosession9). Rappresenta una sessione di crittografia, che fornisce la chiave di crittografia.
 -   [**IDirect3DAuthenticatedChannel9**](/windows/desktop/api/d3d9/nn-d3d9-idirect3dauthenticatedchannel9). Rappresenta un canale autenticato, che consente al decodificatore software di associare la sessione di crittografia al decodificatore DXVA.
 
-![diagramma che mostra le interfacce di decodifica direct3d9.](images/d3d9video02.png)
+![Diagramma che mostra le interfacce di decodifica direct3d9.](images/d3d9video02.png)
 
 Tutte queste interfacce vengono ottenute dal dispositivo Direct3D, come indicato di seguito:
 
@@ -76,7 +76,7 @@ Tutte queste interfacce vengono ottenute dal dispositivo Direct3D, come indicato
  
 
 > [!Note]  
-> Per ottenere un puntatore [**all'interfaccia IDirect3DDevice9Video,**](/windows/desktop/api/d3d9/nn-d3d9-idirect3ddevice9video) chiamare [**QueryInterface**](/windows/win32/api/unknwn/nf-unknwn-iunknown-queryinterface(q)) in un dispositivo D3D9Ex.
+> Per ottenere un puntatore [**all'interfaccia IDirect3DDevice9Video,**](/windows/desktop/api/d3d9/nn-d3d9-idirect3ddevice9video) chiamare [**QueryInterface**](/windows/win32/api/unknwn/nf-unknwn-iunknown-queryinterface(q)) su un dispositivo D3D9Ex.
 
  
 
@@ -86,7 +86,7 @@ Il canale autenticato fornisce un canale di comunicazione attendibile tra il dec
 -   Il certificato contiene una chiave pubblica RSA per il driver.
 -   Il decodificatore software usa la chiave pubblica per inviare al driver una chiave di sessione AES a 128 bit.
 -   Il decodificatore software invia query e comandi al canale autenticato.
--   La chiave di sessione viene usata per calcolare i codici di autenticazione dei messaggi (MAC) per le query e i comandi. Il driver usa i macs per verificare l'integrità dei dati di query/comando e il decodificatore software li usa per verificare l'integrità dei dati di risposta dal driver.
+-   La chiave di sessione viene usata per calcolare i codici di autenticazione dei messaggi (MAC) per le query e i comandi. Il driver usa i macs per verificare l'integrità dei dati di query/comandi e il decodificatore software li usa per verificare l'integrità dei dati di risposta dal driver.
 
 ## <a name="encrypting-compressed-video-buffers-for-the-decoder"></a>Crittografia dei buffer video compressi per il decodificatore
 
@@ -101,7 +101,7 @@ Ecco una panoramica generale del processo di crittografia e decodifica:
 
      
 
-5.  Il decodificatore invia i buffer compressi crittografati all'acceleratore. Per AES-CTR, il decodificatore passa anche il vettore di inizializzazione. Se viene usata una chiave di contenuto, il decodificatore passa la chiave di contenuto, crittografata usando la chiave di sessione.
+5.  Il decodificatore invia i buffer compressi crittografati all'acceleratore. Per AES-CTR, il decodificatore passa anche il vettore di inizializzazione. Se viene usata una chiave contenuto, il decodificatore passa la chiave content, crittografata usando la chiave di sessione.
 
 Direct3D include il supporto standard per AES-CTR a 128 bit, ma è progettato per estendersi a tipi di crittografia aggiuntivi.
 
@@ -115,15 +115,15 @@ Le cinque sezioni successive forniscono passaggi più dettagliati.
 
 ### <a name="1-query-the-content-protection-capabilities-of-the-driver"></a>1. Eseguire una query protezione del contenuto funzionalità del driver
 
-Prima di tentare di applicare la crittografia, ottenere le funzionalità di protezione del contenuto del driver.
+Prima di provare ad applicare la crittografia, ottenere le funzionalità di protezione del contenuto del driver.
 
 1.  Ottenere un puntatore al dispositivo Direct3D 9.
 2.  Chiamare [**QueryInterface**](/windows/win32/api/unknwn/nf-unknwn-iunknown-queryinterface(q)) per [**l'interfaccia IDirect3DDevice9Video.**](/windows/desktop/api/d3d9/nn-d3d9-idirect3ddevice9video)
-3.  Chiamare [**IDirect3DDevice9Video::GetContentProtectionCaps**](/windows/desktop/api/d3d9/nf-d3d9-idirect3ddevice9video-getcontentprotectioncaps). Questo metodo compila una [**struttura D3DCONTENTPROTECTIONCAPS**](/windows/desktop/api/d3d9caps/ns-d3d9caps-d3dcontentprotectioncaps) con le funzionalità di protezione del contenuto del driver.
+3.  Chiamare [**IDirect3DDevice9Video::GetContentProtectionCaps**](/windows/desktop/api/d3d9/nf-d3d9-idirect3ddevice9video-getcontentprotectioncaps). Questo metodo inserisce una [**struttura D3DCONTENTPROTECTIONCAPS**](/windows/desktop/api/d3d9caps/ns-d3d9caps-d3dcontentprotectioncaps) con le funzionalità di protezione del contenuto del driver.
 
 In particolare, cercare le funzionalità seguenti:
 
--   Se il **membro Caps** contiene **il** flag D3DCPCAPS_SOFTWARE o **D3DCPCAPS_HARDWARE,** il driver può eseguire la crittografia.
+-   Se il **membro Caps** contiene il **flag D3DCPCAPS_SOFTWARE** o **D3DCPCAPS_HARDWARE,** il driver può eseguire la crittografia.
 -   Il **membro KeyExchangeType** specifica come eseguire lo scambio di chiavi per la chiave di sessione.
 -   Se il **membro Caps** contiene il flag **D3DCPCAPS_CONTENTKEY,** il driver usa una chiave simmetrica separata per la crittografia. Questo è importante quando si genera la chiave di sessione.
 
@@ -145,8 +145,8 @@ Il passaggio successivo consiste nel configurare il canale autenticato.
 6.  Generare una chiave di sessione RSA casuale. Questa chiave di sessione viene usata per firmare i dati inviati al canale autenticato. Crittografare la chiave di sessione usando la chiave pubblica del driver.
 7.  Chiamare [**IDirect3DAuthenticatedChannel9::NegotiateKeyExchange**](/windows/desktop/api/d3d9/nf-d3d9-idirect3dauthenticatedchannel9-negotiatekeyexchange) per inviare la chiave di sessione crittografata al driver.
 8.  Inizializzare il canale sicuro come indicato di seguito:
-    1.  Compilare una [**D3DAUTHENTICATEDCHANNEL_CONFIGUREINITIALIZE**](d3dauthenticatedchannel-configureinitialize.md) come descritto nella documentazione.
-    2.  Inviare [**D3DAUTHENTICATEDCONFIGURE_INITIALIZE**](d3dauthenticatedconfigure-initialize.md) comando chiamando [**IDirect3DAuthenticatedChannel9::Configure**](/windows/desktop/api/d3d9/nf-d3d9-idirect3dauthenticatedchannel9-configure) come descritto nella sezione Invio dei comandi [del canale autenticato](#sending-authenticated-channel-commands). Questo comando contiene i numeri di sequenza iniziale per i comandi e le query inviati al canale autenticato.
+    1.  Compilare una [**D3DAUTHENTICATEDCHANNEL_CONFIGUREINITIALIZE**](d3dauthenticatedchannel-configureinitialize.md) struttura come descritto nella documentazione.
+    2.  Inviare [**D3DAUTHENTICATEDCONFIGURE_INITIALIZE**](d3dauthenticatedconfigure-initialize.md) comando chiamando [**IDirect3DAuthenticatedChannel9::Configure**](/windows/desktop/api/d3d9/nf-d3d9-idirect3dauthenticatedchannel9-configure) come descritto nella sezione Invio di comandi [del canale autenticato](#sending-authenticated-channel-commands). Questo comando contiene i numeri di sequenza iniziale per i comandi e le query inviati al canale autenticato.
 9.  Verificare il tipo di canale inviando una query [**D3DAUTHENTICATEDQUERY_CHANNELTYPE**](d3dauthenticatedquery-channeltype.md) al canale autenticato, come descritto nella sezione [Invio di query sul canale autenticato](#sending-authenticated-channel-queries). Verificare che il tipo di canale corrisponda a quello specificato nel [**metodo CreateAuthenticatedChannel.**](/windows/desktop/api/d3d9/nf-d3d9-idirect3ddevice9video-createauthenticatedchannel)
 
 ### <a name="3-configure-the-cryptographic-session"></a>3. Configurare la sessione di crittografia
@@ -160,11 +160,11 @@ Configurare quindi la sessione di crittografia e stabilire la chiave di sessione
 5.  Ottenere la chiave pubblica dal certificato.
 6.  Generare una chiave di sessione RSA casuale. Si tratta di una chiave di sessione separata dalla chiave della sessione del canale autenticata. Crittografare la chiave di sessione usando la chiave pubblica del driver.
 7.  Chiamare [**IDirect3DCryptoSession9::NegotiateKeyExchange**](/windows/desktop/api/d3d9/nf-d3d9-idirect3dauthenticatedchannel9-negotiatekeyexchange) per inviare la chiave di sessione crittografata al driver.
-8.  Se le funzionalità di protezione del contenuto **includono D3DCPCAPS_CONTENTKEY**, creare una chiave contenuto RSA casuale. Verrà usato più avanti nel processo di decodifica.
+8.  Se le funzionalità di protezione del contenuto **includono D3DCPCAPS_CONTENTKEY**, creare una chiave di contenuto RSA casuale. Verrà usato più avanti nel processo di decodifica.
 
 ### <a name="4-get-a-handle-to-the-dxva-decoder-device"></a>4. Ottenere un handle per il dispositivo decodificatore DXVA
 
-Per il passaggio successivo sarà necessario un handle per il dispositivo decodificatore DXVA. Per ottenere questo handle, compilare una struttura DXVA2_DecodeExecuteParams come indicato di seguito:
+Per il passaggio successivo sarà necessario un handle per il dispositivo decodificatore DXVA. Per ottenere questo handle, compilare una DXVA2_DecodeExecuteParams struttura come indicato di seguito:
 
 
 ```C++
@@ -190,7 +190,7 @@ Impostare il **membro pExtensionData** della [**struttura DXVA2_DecodeExecutePar
 
 Nella struttura [**DXVA2_DecodeExtensionData**](/windows/desktop/api/dxva2api/ns-dxva2api-dxva2_decodeextensiondata) impostare il **membro Function** **su DXVA2_DECODE_GET_DRIVER_HANDLE**. Impostare **pPrivateOutputData sull'indirizzo** di un buffer sufficientemente grande da archiviare un **valore HANDLE.** Nell'esempio precedente questo buffer è la *variabile hDecodeDeviceHandle.*
 
-Chiamare quindi [**IDirectXVideoDecoder::Execute**](/windows/desktop/api/dxva2api/nf-dxva2api-idirectxvideodecoder-execute) e passare l'indirizzo [**della DXVA2_DecodeExecuteParams**](/windows/desktop/api/dxva2api/ns-dxva2api-dxva2_decodeexecuteparams) struttura . L'handle per il decodificatore DXVA viene restituito in **pPrivateOutputData.**
+Chiamare quindi [**IDirectXVideoDecoder::Execute**](/windows/desktop/api/dxva2api/nf-dxva2api-idirectxvideodecoder-execute) e passare l'indirizzo della [**DXVA2_DecodeExecuteParams**](/windows/desktop/api/dxva2api/ns-dxva2api-dxva2_decodeexecuteparams) struttura . L'handle per il decodificatore DXVA viene restituito in **pPrivateOutputData.**
 
 ### <a name="5-associate-the-dxva-decoder-with-the-cryptographic-session"></a>5. Associare il decodificatore DXVA alla sessione di crittografia
 
@@ -208,7 +208,7 @@ Il diagramma seguente illustra lo scambio di handle:
 
 ![Diagramma che mostra come il decodificatore dxva è associato alla sessione di crittografia.](images/d3d9video03.png)
 
-Il decodificatore software può ora usare la chiave della sessione di crittografia per crittografare i buffer video compressi. Ogni buffer compresso avrà il proprio vettore di inizializzazione (IV) specificato nel membro **pvPVPState** della [**DXVA2_DecodeBufferDesc**](/windows/desktop/api/dxva2api/ns-dxva2api-dxva2_decodebufferdesc) struttura.
+Il decodificatore software può ora usare la chiave della sessione di crittografia per crittografare i buffer video compressi. Ogni buffer compresso avrà il proprio vettore di inizializzazione (IV) specificato nel membro **pvPVPState** della [**struttura DXVA2_DecodeBufferDesc**](/windows/desktop/api/dxva2api/ns-dxva2api-dxva2_decodebufferdesc) dati.
 
 ## <a name="sending-authenticated-channel-commands"></a>Invio di comandi del canale autenticato
 
@@ -216,43 +216,16 @@ Viene definito un set di comandi per la configurazione del canale autenticato e 
 
 Per inviare un comando al canale autenticato, seguire questa procedura.
 
-1.  Compilare la struttura dei dati di input. Questa struttura di dati è sempre [**una D3DAUTHENTICATEDCHANNEL_CONFIGURE_INPUT**](d3dauthenticatedchannel-configure-input.md) di dati seguita da campi aggiuntivi. Compilare la **D3DAUTHENTICATEDCHANNEL_CONFIGURE_INPUT** struttura come illustrato nella tabella seguente.
+1.  Compilare la struttura dei dati di input. Questa struttura di dati è sempre [**una D3DAUTHENTICATEDCHANNEL_CONFIGURE_INPUT**](d3dauthenticatedchannel-configure-input.md) struttura seguita da campi aggiuntivi. Compilare la **D3DAUTHENTICATEDCHANNEL_CONFIGURE_INPUT** struttura come illustrato nella tabella seguente.
 
-    <table>
-    <colgroup>
-    <col style="width: 50%" />
-    <col style="width: 50%" />
-    </colgroup>
-    <thead>
-    <tr class="header">
-    <th>Membro</th>
-    <th>Descrizione</th>
-    </tr>
-    </thead>
-    <tbody>
-    <tr class="odd">
-    <td><strong>Omac</strong></td>
-    <td>Ignorare questo campo per il momento.</td>
-    </tr>
-    <tr class="even">
-    <td><strong>ConfigureType</strong></td>
-    <td>GUID che identifica il comando. Per un elenco di comandi, vedere protezione del contenuto <a href="content-protection-commands.md">comandi</a>.</td>
-    </tr>
-    <tr class="odd">
-    <td><strong>hChannel</strong></td>
-    <td>Handle per il canale autenticato.</td>
-    </tr>
-    <tr class="even">
-    <td><strong>Sequencenumber</strong></td>
-    <td>Numero di sequenza. Il primo numero di sequenza viene specificato inviando un <a href="d3dauthenticatedconfigure-initialize.md"><strong>D3DAUTHENTICATEDCONFIGURE_INITIALIZE</strong></a> comando. Ogni volta che si invia un altro comando, incrementare questo numero di 1. Il numero di sequenza protegge dagli attacchi di tipo replay.
-    <blockquote>
-    [!Note]<br />
-Vengono usati due numeri di sequenza separati, uno per i comandi e uno per le query.
-    </blockquote>
-    <br/> <br/></td>
-    </tr>
-    </tbody>
-    </table>
+    
+| Membro | Descrizione | 
+|--------|-------------|
+| <strong>Omac</strong> | Ignorare questo campo per il momento. | 
+| <strong>ConfigureType</strong> | GUID che identifica il comando. Per un elenco di comandi, vedere protezione del contenuto <a href="content-protection-commands.md">comandi</a>. | 
+| <strong>hChannel</strong> | Handle per il canale autenticato. | 
+| <strong>Sequencenumber</strong> | Numero di sequenza. Il primo numero di sequenza viene specificato inviando un <a href="d3dauthenticatedconfigure-initialize.md"><strong>D3DAUTHENTICATEDCONFIGURE_INITIALIZE</strong></a> comando . Ogni volta che si invia un altro comando, incrementare questo numero di 1. Il numero di sequenza protegge dagli attacchi di tipo replay.    <blockquote>    [!Note]<br />    Vengono usati due numeri di sequenza separati, uno per i comandi e uno per le query.    </blockquote><br /><br /> | 
+
 
     
 
@@ -273,37 +246,13 @@ Per inviare un comando al canale autenticato, seguire questa procedura.
 
 1.  Compilare la struttura dei dati di input. Questa struttura di dati è sempre [**una D3DAUTHENTICATEDCHANNEL_QUERY_INPUT,**](d3dauthenticatedchannel-query-input.md) possibilmente seguita da campi aggiuntivi. Compilare la **D3DAUTHENTICATEDCHANNEL_QUERY_INPUT** struttura come illustrato nella tabella seguente.
 
-    <table>
-    <colgroup>
-    <col style="width: 50%" />
-    <col style="width: 50%" />
-    </colgroup>
-    <thead>
-    <tr class="header">
-    <th>Membro</th>
-    <th>Descrizione</th>
-    </tr>
-    </thead>
-    <tbody>
-    <tr class="odd">
-    <td><strong>Tipo di query</strong></td>
-    <td>GUID che identifica la query. Per un elenco di query, vedere protezione del contenuto <a href="content-protection-queries.md">query</a>.</td>
-    </tr>
-    <tr class="even">
-    <td><strong>hChannel</strong></td>
-    <td>Handle per il canale autenticato.</td>
-    </tr>
-    <tr class="odd">
-    <td><strong>Sequencenumber</strong></td>
-    <td>Numero di sequenza. Il primo numero di sequenza viene specificato inviando un <a href="d3dauthenticatedconfigure-initialize.md"><strong>D3DAUTHENTICATEDCONFIGURE_INITIALIZE</strong></a> comando. Ogni volta che si invia un'altra query, incrementare questo numero di 1. Il numero di sequenza protegge dagli attacchi di tipo replay.
-    <blockquote>
-    [!Note]<br />
-Vengono usati due numeri di sequenza separati, uno per i comandi e uno per le query.
-    </blockquote>
-    <br/> <br/></td>
-    </tr>
-    </tbody>
-    </table>
+    
+| Membro | Descrizione | 
+|--------|-------------|
+| <strong>Tipo di query</strong> | GUID che identifica la query. Per un elenco di query, vedere protezione del contenuto <a href="content-protection-queries.md">query</a>. | 
+| <strong>hChannel</strong> | Handle per il canale autenticato. | 
+| <strong>Sequencenumber</strong> | Numero di sequenza. Il primo numero di sequenza viene specificato inviando un <a href="d3dauthenticatedconfigure-initialize.md"><strong>D3DAUTHENTICATEDCONFIGURE_INITIALIZE</strong></a> comando. Ogni volta che si invia un'altra query, incrementare questo numero di 1. Il numero di sequenza protegge dagli attacchi di tipo replay.    <blockquote>    [!Note]<br />    Vengono usati due numeri di sequenza separati, uno per i comandi e uno per le query.    </blockquote><br /><br /> | 
+
 
     
 

@@ -1,6 +1,6 @@
 ---
-title: 'Funzione SampleLevel:: SampleLevel (S, float, float, int, uint) per Texture2DArray'
-description: "Esegue il campionamento di una trama sul livello mipmap specificato e restituisce lo stato dell'operazione. Per Texture2DArray. | Funzione SampleLevel:: SampleLevel (S, float, float, int, uint)"
+title: Funzione SampleLevel::SampleLevel(S,float,float,int,uint) per Texture2DArray
+description: Campita una trama a livello di mipmap specificato e restituisce lo stato dell'operazione. Per Texture2DArray. | Funzione SampleLevel::SampleLevel(S,float,float,int,uint)
 ms.assetid: 2A561EE4-D7CF-44D4-AC93-F6841770B868
 keywords:
 - Funzione SampleLevel HLSL
@@ -13,16 +13,16 @@ api_type:
 ms.topic: reference
 ms.date: 05/31/2018
 api_location: ''
-ms.openlocfilehash: 60e9f1df1a68d0971ac9d0ddf6be39eca03dd6ae
-ms.sourcegitcommit: 168d11879cb9fd89d26f826482725c0a626be00f
+ms.openlocfilehash: 0b00882702b44b7d4f9ccb101866400cb023cea00be637e898d9ecd71ed2e262
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/16/2021
-ms.locfileid: "104996393"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120118051"
 ---
-# <a name="samplelevelsamplelevelsfloatfloatintuint-function-for-texture2darray"></a>Funzione SampleLevel:: SampleLevel (S, float, float, int, uint) per Texture2DArray
+# <a name="samplelevelsamplelevelsfloatfloatintuint-function-for-texture2darray"></a>Funzione SampleLevel::SampleLevel(S,float,float,int,uint) per Texture2DArray
 
-Esegue il campionamento di una trama sul livello mipmap specificato e restituisce lo stato dell'operazione.
+Campita una trama a livello di mipmap specificato e restituisce lo stato dell'operazione.
 
 ## <a name="syntax"></a>Sintassi
 
@@ -48,11 +48,11 @@ DXGI_FORMAT SampleLevel(
 
 Tipo: **SamplerState**
 
-[Stato del campionatore](dx-graphics-hlsl-sampler.md). Si tratta di un oggetto dichiarato in un file di effetti che contiene le assegnazioni di stato.
+Stato [del campionatore.](dx-graphics-hlsl-sampler.md) Si tratta di un oggetto dichiarato in un file degli effetti che contiene assegnazioni di stato.
 
 </dd> <dt>
 
-*Posizione* \[ in\]
+*Località* \[ Pollici\]
 </dt> <dd>
 
 Tipo: **float**
@@ -61,7 +61,7 @@ Coordinate di trama. Il tipo di argomento dipende dal tipo di oggetto trama.
 
 
 
-| Tipo di Texture-Object                    | Tipo di parametro |
+| tipo Texture-Object                    | Tipo di parametro |
 |----------------------------------------|----------------|
 | Texture1D                              | float          |
 | Texture1DArray, Texture2D              | float2         |
@@ -74,27 +74,27 @@ Coordinate di trama. Il tipo di argomento dipende dal tipo di oggetto trama.
 
 </dd> <dt>
 
-*LOD* \[ in\]
+*LOD* \[ Pollici\]
 </dt> <dd>
 
 Tipo: **float**
 
-\[in \] un numero che specifica il livello mipmap. Se il valore è ≤ 0, viene usato il livello mipmap 0 (mapping più grande). Il valore frazionario (se fornito) viene usato per interpolare tra due livelli di mipmap.
+\[in \] Numero che specifica il livello mipmap. Se il valore è ≤ 0, viene usato il livello mipmap 0 (mappa principale). Il valore frazionario (se specificato) viene usato per eseguire l'interpolazione tra due livelli mipmap.
 
 </dd> <dt>
 
-*Offset* \[ in\]
+*Offset* \[ Pollici\]
 </dt> <dd>
 
 Tipo: **int**
 
-Offset della coordinata di trama facoltativo che può essere usato per qualsiasi tipo di oggetto trama. l'offset viene applicato al percorso prima del campionamento. Usare un offset solo in un miplevel Integer; in caso contrario, è possibile ottenere risultati che non si traducono correttamente nell'hardware. Il tipo di argomento dipende dal tipo di oggetto trama. Per altre informazioni, vedere [Applying Integer offsets](dx-graphics-hlsl-to-sample.md).
+Offset facoltativo delle coordinate della trama, che può essere usato per qualsiasi tipo di oggetto trama. L'offset viene applicato alla posizione prima del campionamento. Usare un offset solo in corrispondenza di un valore integer miplevel; In caso contrario, è possibile che si otterrà un risultato che non si traduce bene in hardware. Il tipo di argomento dipende dal tipo di oggetto trama. Per altre informazioni, vedere [Applicazione di offset di interi.](dx-graphics-hlsl-to-sample.md)
 
 
 
-| Tipo di Texture-Object           | Tipo di parametro |
+| tipo Texture-Object           | Tipo di parametro |
 |-------------------------------|----------------|
-| Texture1D, Texture1DArray     | INT            |
+| Texture1D, Texture1DArray     | int            |
 | Texture2D, Texture2DArray     | int2           |
 | Texture3D                     | int3           |
 | TextureCube, TextureCubeArray | non supportato  |
@@ -105,26 +105,26 @@ Offset della coordinata di trama facoltativo che può essere usato per qualsiasi
 
 </dd> <dt>
 
-*Stato* \[ di out\]
+*Stato* \[ Cambio\]
 </dt> <dd>
 
 Tipo: **uint**
 
-Stato dell'operazione. Non è possibile accedere direttamente allo stato; passare invece lo stato alla funzione intrinseca [**CheckAccessFullyMapped**](checkaccessfullymapped.md) . **CheckAccessFullyMapped** restituisce **true** se tutti i valori dell'operazione di **campionamento**, **raccolta** o **caricamento** corrispondente hanno eseguito l'accesso ai riquadri mappati in una [risorsa affiancata](/windows/desktop/direct3d11/direct3d-11-2-features). Se sono stati ricavati valori da un riquadro non mappato, **CheckAccessFullyMapped** restituisce **false**.
+Stato dell'operazione. Non è possibile accedere direttamente allo stato. passare invece lo stato alla [**funzione intrinseca CheckAccessFullyMapped.**](checkaccessfullymapped.md) **CheckAccessFullyMapped** restituisce **TRUE** se tutti i valori dell'operazione **Sample**, **Gather** o **Load** corrispondenti hanno eseguito l'accesso ai riquadri mappati in una [risorsa affiancata.](/windows/desktop/direct3d11/direct3d-11-2-features) Se sono stati prelevati valori da un riquadro non mappato, **CheckAccessFullyMapped** restituisce **FALSE.**
 
 </dd> </dl>
 
 ## <a name="return-value"></a>Valore restituito
 
-Tipo: **[ **DXGI \_ Format**](/windows/desktop/api/dxgiformat/ne-dxgiformat-dxgi_format)**
+Tipo: **[ **FORMATO \_ DXGI**](/windows/desktop/api/dxgiformat/ne-dxgiformat-dxgi_format)**
 
-Il formato di trama, che è uno dei valori tipizzati elencati [**nel \_ formato DXGI**](/windows/desktop/api/dxgiformat/ne-dxgiformat-dxgi_format).
+Formato della trama, ovvero uno dei valori tipi di dati elencati in [**FORMATO DXGI. \_**](/windows/desktop/api/dxgiformat/ne-dxgiformat-dxgi_format)
 
 ## <a name="see-also"></a>Vedi anche
 
 <dl> <dt>
 
-[Metodi SampleLevel](texture2darray-samplelevel.md)
+[Metodi di SampleLevel](texture2darray-samplelevel.md)
 </dt> <dt>
 
 [**Texture2DArray**](sm5-object-texture2darray.md)
