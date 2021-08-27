@@ -75,7 +75,7 @@ Tipo di dati: **\_ \_ Spazio dei nomi**
 Tipo di accesso: sola lettura
 </dt> </dl>
 
-Copia [**\_ \_ dell'istanza dello**](--namespace.md) spazio dei nomi creata. La **proprietà Name** dell'istanza **\_ \_ namespace** indica lo spazio dei nomi creato. Questa proprietà viene ereditata da [**\_ \_ NamespaceOperationEvent**](--namespaceoperationevent.md).
+Copia [**\_ \_ dell'istanza dello**](--namespace.md) spazio dei nomi creata. La **proprietà Name** dell'istanza **\_ \_ namespace** indica lo spazio dei nomi creato. Questa proprietà viene ereditata da [**\_ \_ NamespaceOperationEvent.**](--namespaceoperationevent.md)
 
 </dd> <dt>
 
@@ -88,15 +88,15 @@ Tipo di dati: **uint64**
 Tipo di accesso: sola lettura
 </dt> </dl>
 
-Valore univoco che indica l'ora in cui è stato generato l'evento. Valore a 64 bit che rappresenta il numero di intervalli di 100 nanosecondi dopo il 1° gennaio 1601. Le informazioni sono nel formato Coordinated Universal Time (UTC). Questa proprietà viene ereditata [**\_ \_ dall'evento**](--event.md).
+Valore univoco che indica l'ora in cui è stato generato l'evento. Si tratta di un valore a 64 bit che rappresenta il numero di intervalli di 100 nanosecondi dopo il 1° gennaio 1601. Le informazioni sono nel formato Coordinated Universal Time (UTC). Questa proprietà viene ereditata [**\_ \_ dall'evento**](--event.md).
 
-Per altre informazioni sull'uso **dei valori uint64** negli script, vedere [Scripting in WMI](/windows/desktop/WmiSdk/creating-a-wmi-script).
+Per altre informazioni sull'uso **dei valori uint64** negli script, vedere [Scripting in WMI.](/windows/desktop/WmiSdk/creating-a-wmi-script)
 
 </dd> </dl>
 
 ## <a name="remarks"></a>Commenti
 
-La **\_ \_ classe NamespaceCreationEvent** è derivata da [**\_ \_ NamespaceOperationEvent**](--namespaceoperationevent.md).
+La **\_ \_ classe NamespaceCreationEvent** è derivata da [**\_ \_ NamespaceOperationEvent.**](--namespaceoperationevent.md)
 
 ## <a name="requirements"></a>Requisiti
 

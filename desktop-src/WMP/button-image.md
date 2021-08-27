@@ -3,7 +3,7 @@ title: BUTTON.image
 description: L'attributo image specifica o recupera l'immagine predefinita di BUTTON.
 ms.assetid: d0d97f14-2c4d-4769-b45c-c6cde7282bea
 keywords:
-- Proprietà BUTTON.image Windows Media Player
+- Button.image Windows Media Player
 topic_type:
 - apiref
 api_name:
@@ -37,7 +37,7 @@ I formati di immagine supportati sono BMP, JPG, PNG e GIF (incluse le GIF animat
 
 Se **l'immagine BUTTON** è più grande dell'area definita dagli attributi **width** **e height,** l'immagine verrà ritagliata.
 
-Se l'immagine non è specificata, ma **l'altezza** e la **larghezza** lo sono, viene visualizzata l'immagine direttamente dietro questo controllo. Ciò può semplificare il disegno dell'immagine nella **visualizzazione** stessa, riducendo il numero di file di immagine separati necessari.
+Se l'immagine non è specificata ma **l'altezza** e **la larghezza** sono , viene visualizzata l'immagine direttamente dietro questo controllo. Ciò può facilitare il disegno dell'immagine nella **vista** stessa, riducendo il numero di file di immagine separati necessari.
 
 Se non è possibile recuperare l'immagine, viene visualizzata un'immagine predefinita (l'immagine rossa-x).
 

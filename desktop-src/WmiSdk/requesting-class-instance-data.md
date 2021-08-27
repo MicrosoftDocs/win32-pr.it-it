@@ -2,7 +2,7 @@
 description: Le query di dati sono istruzioni WQL che richiedono istanze di classi. Per eseguire una query sui dati, le applicazioni chiamano il metodo IWbemServices::ExecQuery o IWbemServices::ExecQueryAsync.
 ms.assetid: a8b9bf2f-300d-4570-8b30-7532f3421d39
 ms.tgt_platform: multiple
-title: Richiesta dei dati dell'istanza della classe
+title: Richiesta di dati dell'istanza di classe
 ms.topic: article
 ms.date: 05/31/2018
 ms.openlocfilehash: 3332ff8b5ba0aae7d1ac33fb8faba6340bbd795401fa81a52ea9c21abc4fde2e
@@ -12,7 +12,7 @@ ms.contentlocale: it-IT
 ms.lasthandoff: 08/11/2021
 ms.locfileid: "118316288"
 ---
-# <a name="requesting-class-instance-data"></a>Richiesta dei dati dell'istanza della classe
+# <a name="requesting-class-instance-data"></a>Richiesta di dati dell'istanza di classe
 
 Le query di dati sono istruzioni WQL che richiedono istanze di classi. Per eseguire una query sui dati, le applicazioni chiamano il metodo [**IWbemServices::ExecQuery**](/windows/desktop/api/WbemCli/nf-wbemcli-iwbemservices-execquery) o [**IWbemServices::ExecQueryAsync.**](/windows/desktop/api/WbemCli/nf-wbemcli-iwbemservices-execqueryasync)
 
@@ -23,9 +23,9 @@ Le istruzioni seguenti vengono usate per eseguire query sui dati:
 -   [RIFERIMENTI DI](references-of-statement.md)
 -   [ISA](isa-operator-for-data-queries.md)
 
-L'istruzione SELECT WQL è l'istruzione Structured Query Language (SQL) standard per il recupero di informazioni, con alcune restrizioni ed estensioni specifiche di WQL. Anche se SQL'istruzione SELECT viene in genere usata nell'ambiente di database per recuperare colonne specifiche dalle tabelle, l'istruzione WQL SELECT viene usata in WMI per recuperare istanze di una singola classe. WQL non supporta le query in più classi.
+L'istruzione SELECT WQL è l'istruzione Structured Query Language (SQL) standard per il recupero di informazioni, con alcune restrizioni ed estensioni specifiche di WQL. Anche se l'istruzione SQL SELECT viene in genere utilizzata nell'ambiente di database per recuperare colonne specifiche dalle tabelle, l'istruzione WQL SELECT viene utilizzata in WMI per recuperare le istanze di una singola classe. WQL non supporta le query tra più classi.
 
-Le istruzioni ASSOCIATORS OF e REFERENCES OF sono specifiche di WQL e non fanno parte delle istruzioni SQL. L'istruzione ASSOCIATORS OF recupera tutte le istanze di classe associate a una determinata istanza della classe di origine e REFERENCES OF recupera tutte le istanze che fanno riferimento a una determinata istanza di origine. Le associazioni sono rappresentate da istanze di una [classe di associazione](declaring-an-association-class.md).
+Le istruzioni ASSOCIATORS OF e REFERENCES OF sono specifiche di WQL e non fanno parte delle istruzioni SQL. L'istruzione ASSOCIATORS OF recupera tutte le istanze di classe associate a una particolare istanza della classe di origine e REFERENCES OF recupera tutte le istanze che fanno riferimento a una determinata istanza di origine. Le associazioni sono rappresentate da istanze di una [classe di associazione](declaring-an-association-class.md).
 
  
 

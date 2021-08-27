@@ -1,11 +1,11 @@
 ---
-title: Metodo ID3DX11EffectShaderVariable GetOutputSignatureElementDesc (D3dx11effect. h)
+title: Metodo ID3DX11EffectShaderVariable GetOutputSignatureElementDesc (D3dx11effect.h)
 description: Ottenere una descrizione della firma di output.
 ms.assetid: 05f43a57-18fa-4be7-814e-ffbe53837cab
 keywords:
 - Metodo GetOutputSignatureElementDesc Direct3D 11
-- Metodo GetOutputSignatureElementDesc Direct3D 11, interfaccia ID3DX11EffectShaderVariable
-- Interfaccia ID3DX11EffectShaderVariable Direct3D 11, metodo GetOutputSignatureElementDesc
+- Metodo GetOutputSignatureElementDesc Direct3D 11, INTERFACCIA ID3DX11EffectShaderVariable
+- Id3DX11EffectShaderVariable interface Direct3D 11, GetOutputSignatureElementDesc method
 topic_type:
 - apiref
 api_name:
@@ -17,14 +17,14 @@ api_type:
 - COM
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 29545754be560a3a7710adf23963566a324d8a3f
-ms.sourcegitcommit: 14010c34b35fa268046c7683f021f86de08ddd0a
+ms.openlocfilehash: 7af968b25a00e32b489a520e9d4a3e870329af910caa8ac1bf45ac49a7ea6132
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/15/2021
-ms.locfileid: "104996164"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118533267"
 ---
-# <a name="id3dx11effectshadervariablegetoutputsignatureelementdesc-method"></a>Metodo ID3DX11EffectShaderVariable:: GetOutputSignatureElementDesc
+# <a name="id3dx11effectshadervariablegetoutputsignatureelementdesc-method"></a>Metodo ID3DX11EffectShaderVariable::GetOutputSignatureElementDesc
 
 Ottenere una descrizione della firma di output.
 
@@ -48,16 +48,16 @@ HRESULT GetOutputSignatureElementDesc(
 *ShaderIndex* 
 </dt> <dd>
 
-Tipo: **[ **uint**](/windows/desktop/WinProg/windows-data-types)**
+Tipo: **[ **UINT**](/windows/desktop/WinProg/windows-data-types)**
 
-Indice dello shader in base zero.
+Indice shader in base zero.
 
 </dd> <dt>
 
 *elemento* 
 </dt> <dd>
 
-Tipo: **[ **uint**](/windows/desktop/WinProg/windows-data-types)**
+Tipo: **[ **UINT**](/windows/desktop/WinProg/windows-data-types)**
 
 Indice di elemento in base zero.
 
@@ -66,9 +66,9 @@ Indice di elemento in base zero.
 *pDesc* 
 </dt> <dd>
 
-Tipo: **[ **\_ parametro della firma d3d11 \_ \_ desc**](/windows/desktop/api/D3D11Shader/ns-d3d11shader-d3d11_signature_parameter_desc)\***
+Tipo: **[ **D3D11 \_ SIGNATURE \_ PARAMETER \_ DESC**](/windows/desktop/api/D3D11Shader/ns-d3d11shader-d3d11_signature_parameter_desc)\***
 
-Puntatore a una descrizione del parametro (vedere [**il \_ parametro della firma d3d11 \_ \_ desc**](/windows/desktop/api/D3D11Shader/ns-d3d11shader-d3d11_signature_parameter_desc)).
+Puntatore a una descrizione del parametro (vedere [**D3D11 \_ SIGNATURE \_ PARAMETER \_ DESC**](/windows/desktop/api/D3D11Shader/ns-d3d11shader-d3d11_signature_parameter_desc)).
 
 </dd> </dl>
 
@@ -76,14 +76,14 @@ Puntatore a una descrizione del parametro (vedere [**il \_ parametro della firma
 
 Tipo: **[ **HRESULT**](https://msdn.microsoft.com/library/Bb401631(v=MSDN.10).aspx)**
 
-Restituisce uno dei seguenti [codici restituiti Direct3D 11](d3d11-graphics-reference-returnvalues.md).
+Restituisce uno dei codici [restituiti Direct3D 11 seguenti.](d3d11-graphics-reference-returnvalues.md)
 
 ## <a name="remarks"></a>Commenti
 
-Un effetto contiene uno o più shader; ogni shader ha una firma di input e di output. ogni firma contiene uno o più elementi (o parametri). L'indice dello shader identifica lo shader e l'indice dell'elemento identifica l'elemento (o parametro) nella firma dello shader.
+Un effetto contiene uno o più shader. ogni shader ha una firma di input e output; ogni firma contiene uno o più elementi (o parametri). L'indice dello shader identifica lo shader e l'indice dell'elemento identifica l'elemento (o il parametro) nella firma dello shader.
 
 > [!Note]  
-> DirectX SDK non fornisce binari compilati per gli effetti. È necessario usare Effects 11 source per compilare l'applicazione di tipo Effects. Per ulteriori informazioni sull'utilizzo dell'origine Effects 11, vedere [differenze tra gli effetti 10 e gli effetti 11](d3d11-graphics-programming-guide-effects-differences.md).
+> DirectX SDK non fornisce alcun file binario compilato per gli effetti. È necessario usare l'origine Effects 11 per compilare l'applicazione effects-type. Per altre informazioni sull'uso dell'origine Effetti 11, vedere Differenze [tra gli effetti 10 e gli effetti 11.](d3d11-graphics-programming-guide-effects-differences.md)
 
  
 
@@ -93,8 +93,8 @@ Un effetto contiene uno o più shader; ogni shader ha una firma di input e di ou
 
 | Requisito | Valore |
 |--------------------|----------------------------------------------------------------------------------------------------------------------------------------------|
-| Intestazione<br/>  | <dl> <dt>D3dx11effect. h</dt> </dl>                                                    |
-| Libreria<br/> | <dl> <dt>N/d (la libreria Effects 11 è disponibile online come origine condivisa).</dt> </dl> |
+| Intestazione<br/>  | <dl> <dt>D3dx11effect.h</dt> </dl>                                                    |
+| Libreria<br/> | <dl> <dt>N/D (una libreria effects 11 è disponibile online come origine condivisa).</dt> </dl> |
 
 
 

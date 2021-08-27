@@ -4,19 +4,19 @@ description: Esempi di codice che enumerano classi, attributi e sintassi dello s
 ms.assetid: fca0b723-4582-4fe3-933d-b56c016fd324
 ms.tgt_platform: multiple
 keywords:
-- Esempi di Active Directory Active Directory, enumerazione di classi di schema, attributi e sintassi
+- Esempi di Active Directory Active Directory, enumerazione di classi, attributi e sintassi dello schema
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: ceaea652c2e66b07a12b31096fb06bfe8839f6ee
-ms.sourcegitcommit: 2d531328b6ed82d4ad971a45a5131b430c5866f7
+ms.openlocfilehash: 282aeea3274e3e7eb8f7b4c71134bd1cbf95aefff58e5fe9c03e459b27671f1a
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "104044117"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118693817"
 ---
 # <a name="example-code-for-enumerating-schema-classes-attributes-and-syntaxes"></a>Codice di esempio per l'enumerazione di classi, attributi e sintassi dello schema
 
-Nell'esempio C++ riportato di seguito viene illustrato come enumerare le classi, gli attributi e le sintassi nello schema astratto.
+Nell'esempio C++ seguente viene illustrato come enumerare le classi, gli attributi e le sintassi nello schema astratto.
 
 
 ```C++
@@ -167,7 +167,7 @@ cleanup:
 
 
 
-Nell'esempio di codice seguente Visual Basic viene letto lo schema astratto per enumerare le classi di oggetti strutturali, astratte e ausiliarie. Nell'esempio vengono quindi enumerate le classi di attributi a valore singolo e multivalore.
+Nell'Visual Basic di codice seguente viene letto lo schema astratto per enumerare le classi di oggetti strutturali, astratte e ausiliarie. Nell'esempio vengono quindi enumerate le classi di attributi a valore singolo e multivalore.
 
 
 ```VB
@@ -204,9 +204,9 @@ Next aProp
 
 
 
- 
+ 
 
- 
+ 
 
 
 

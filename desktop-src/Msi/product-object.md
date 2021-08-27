@@ -24,7 +24,7 @@ ms.locfileid: "118627674"
 
 **L'oggetto Product** rappresenta un'istanza univoca di un prodotto annunciato, installato o sconosciuto.
 
-È possibile creare un'istanza dell'oggetto con la proprietà **Product** come "WindowsInstaller.Installer.Product(*ProductCode,* *UserSid,* *Context*)". *UserSid* deve essere NULL per il contesto per computer. *UserSid* può essere Null per l'utente corrente specificato, quando il contesto non è per computer. *I parametri ProductCode* *e Context* sono obbligatori.
+È possibile creare un'istanza dell'oggetto con la proprietà **Product** come "WindowsInstaller.Installer.Product(*ProductCode,* *UserSid,* *Context*)". *UserSid* deve essere NULL per il contesto per computer. *UserSid può* essere Null per l'utente corrente specificato, quando il contesto non è per computer. *I parametri ProductCode* *e Context* sono obbligatori.
 
 ## <a name="members"></a>Membri
 
@@ -81,7 +81,7 @@ ms.locfileid: "118627674"
 
 | Requisito | Valore |
 |--------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Versione<br/> | Windows Programma di installazione 5.0 Windows Server 2012, Windows 8, Windows Server 2008 R2 o Windows 7. Windows Programma di installazione 4.0 o Windows Installer 4.5 in Windows Server 2008 o Windows Vista. Windows Programma di installazione 3.0 o versione successiva Windows Server 2003, Windows XP e Windows 2000<br/> |
+| Versione<br/> | Windows Programma di installazione 5.0 Windows Server 2012, Windows 8, Windows Server 2008 R2 o Windows 7. Windows Programma di installazione 4.0 o Windows Installer 4.5 in Windows Server 2008 o Windows Vista. Windows Programma di installazione 3.0 o versioni successive in Windows Server 2003, Windows XP e Windows 2000<br/> |
 | DLL<br/>     | <dl> <dt>Msi.dll</dt> </dl>                                                                                                                                                                                                   |
 | IID<br/>     | IID \_ IProduct è definito come 000C10A0-0000-0000-C000-000000000046<br/>                                                                                                                                                                                                          |
 

@@ -1,6 +1,6 @@
 ---
-description: Indica a una finestra rilascia immagine di eseguire l'aggiornamento usando le nuove informazioni DROPDESCRIPTION.
-title: Messaggio DDWM_UPDATEWINDOW
+description: Indica a una finestra dell'immagine di rilascio di eseguire l'aggiornamento usando le nuove informazioni DROPDESCRIPTION.
+title: DDWM_UPDATEWINDOW messaggio
 ms.topic: reference
 ms.date: 05/31/2018
 ms.assetid: 3b74f2e1-8121-4b7c-8d7a-b449cda529da
@@ -12,29 +12,29 @@ api_location: ''
 topic_type:
 - APIRef
 - kbSyntax
-ms.openlocfilehash: 2bff0e007c735fcf202aaf16cf304eb4ff5358f1
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: a17e015d6dff2ae5133f3ce8245c5ead3c3381f8eb5c48e74946fdf9bcb46ad1
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104977311"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119032839"
 ---
-# <a name="ddwm_updatewindow-message"></a>\_Messaggio DDWM UPDATEWINDOW
+# <a name="ddwm_updatewindow-message"></a>Messaggio DDWM \_ UPDATEWINDOW
 
-Indica a una finestra rilascia immagine di eseguire l'aggiornamento usando le nuove informazioni [**DROPDESCRIPTION**](/windows/desktop/api/shlobj_core/ns-shlobj_core-dropdescription) .
+Indica a una finestra dell'immagine di rilascio di eseguire l'aggiornamento usando le [**nuove informazioni DROPDESCRIPTION.**](/windows/desktop/api/shlobj_core/ns-shlobj_core-dropdescription)
 
 ## <a name="parameters"></a>Parametri
 
 <dl> <dt>
 
-*wParam* \[ in\]
+*wParam* \[ Pollici\]
 </dt> <dd>
 
 Non usato.
 
 </dd> <dt>
 
-*lParam* \[ in\]
+*lParam* \[ Pollici\]
 </dt> <dd>
 
 Non usato.
@@ -43,11 +43,11 @@ Non usato.
 
 ## <a name="remarks"></a>Commenti
 
-DDWM \_ UPDATEWINDOW è definito come \_ utente WM + 3.
+DDWM \_ UPDATEWINDOW è definito come WM \_ USER+3.
 
-Quando lo stato di un'operazione di eliminazione cambia, ad esempio in risposta a un tasto di modifica,[**IDropTarget::D ragover**](/windows/win32/api/oleidl/nf-oleidl-idroptarget-dragover) restituisce un nuovo valore [**DropEffect**](../com/dropeffect-constants.md) (questo valore di **DropEffect** può essere ricevuto anche tramite [**IDropSource:: GiveFeedback**](/windows/win32/api/oleidl/nf-oleidl-idropsource-givefeedback)). In risposta, l'applicazione aggiorna la struttura [**DROPDESCRIPTION**](/windows/desktop/api/shlobj_core/ns-shlobj_core-dropdescription) della destinazione di rilascio con un nuovo valore [**DROPIMAGETYPE**](/windows/desktop/api/shlobj_core/ne-shlobj_core-dropimagetype) che indica la decorazione da applicare all'oggetto visivo della finestra di trascinamento. ad esempio, un'indicazione che indica che il file viene copiato anziché spostato o che l'oggetto non può essere eliminato in tale posizione. Tuttavia, gli oggetti visivi non vengono aggiornati finché l'oggetto riceve un messaggio **DDWM \_ UPDATEWINDOW** .
+Quando lo stato di un'operazione di rilascio cambia, ad esempio in risposta a un tasto di modifica,[**IDropTarget::D ragOver**](/windows/win32/api/oleidl/nf-oleidl-idroptarget-dragover) restituisce un nuovo valore [**DROPEFFECT**](../com/dropeffect-constants.md) (questo **valore DROPEFFECT** può essere ricevuto anche tramite [**IDropSource::GiveFeedback).**](/windows/win32/api/oleidl/nf-oleidl-idropsource-givefeedback) In risposta, l'applicazione aggiorna la struttura [**DROPDESCRIPTION**](/windows/desktop/api/shlobj_core/ns-shlobj_core-dropdescription) della destinazione di rilascio con un nuovo [**valore DROPIMAGETYPE**](/windows/desktop/api/shlobj_core/ne-shlobj_core-dropimagetype) che indica la decorazione da applicare all'oggetto visivo della finestra di trascinamento. ad esempio un'indicazione che il file viene copiato anziché spostato o che l'oggetto non può essere eliminato in tale percorso. Tuttavia, gli oggetti visivi non vengono aggiornati fino a quando l'oggetto non riceve un **messaggio \_ UPDATEWINDOW DDWM.**
 
-Il formato degli Appunti di [DragWindow](clipboard.md) fornisce l' **HWND** della finestra di trascinamento del destinatario al mittente del messaggio **\_ UPDATEWINDOW DDWM** .
+Il formato degli Appunti [DragWindow](clipboard.md) fornisce **l'HWND** della finestra di trascinamento del destinatario al mittente del messaggio **DDWM \_ UPDATEWINDOW.**
 
 ## <a name="requirements"></a>Requisiti
 
@@ -55,8 +55,8 @@ Il formato degli Appunti di [DragWindow](clipboard.md) fornisce l' **HWND** dell
 
 | Requisito | Valore |
 |-------------------------------------|------------------------------------------------------|
-| Client minimo supportato<br/> | \[Solo app desktop di Windows Vista\]<br/>       |
-| Server minimo supportato<br/> | \[Solo app desktop Windows Server 2008\]<br/> |
+| Client minimo supportato<br/> | Windows Solo \[ app desktop di Vista\]<br/>       |
+| Server minimo supportato<br/> | Windows Solo app desktop server 2008 \[\]<br/> |
 
 
 

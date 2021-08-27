@@ -1,25 +1,25 @@
 ---
-description: Informazioni sul generatore di grafici di acquisizione
+description: Informazioni su Capture Graph Builder
 ms.assetid: 9399a06e-7305-41e8-aefe-3d158052a8ed
-title: Informazioni sul generatore di grafici di acquisizione
+title: Informazioni su Capture Graph Builder
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: ae321665e0eae65a1d464bf87a12ac33e935d7ac
-ms.sourcegitcommit: a47bd86f517de76374e4fff33cfeb613eb259a7e
+ms.openlocfilehash: 8d6ef82a160ada6e53fe6d2db830efa85118eb699074630905cd41f0b5412ca2
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/06/2021
-ms.locfileid: "103965795"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118664520"
 ---
-# <a name="about-the-capture-graph-builder"></a>Informazioni sul generatore di grafici di acquisizione
+# <a name="about-the-capture-graph-builder"></a>Informazioni su Capture Graph Builder
 
-Un grafico di filtro che esegue l'acquisizione video o audio è denominato *grafico di acquisizione*. I grafici di acquisizione sono spesso più complicati dei grafici per la riproduzione di file. Per semplificare la creazione di grafici di acquisizione da parte delle applicazioni, DirectShow fornisce un oggetto helper denominato generatore grafico di acquisizione. Il generatore di grafici di acquisizione espone l'interfaccia [**ICaptureGraphBuilder2**](/windows/desktop/api/Strmif/nn-strmif-icapturegraphbuilder2) , che contiene i metodi per la compilazione e il controllo di un grafico di acquisizione. Il diagramma seguente illustra il generatore Graph di acquisizione e l'interfaccia **ICaptureGraphBuilder2** .
+Un grafo di filtro che esegue l'acquisizione video o audio è detto *grafico di acquisizione.* I grafici di acquisizione sono spesso più complessi rispetto ai grafici di riproduzione dei file. Per semplificare la compilazione di grafici di acquisizione da parte delle applicazioni, DirectShow un oggetto helper denominato Capture Graph Builder. Capture Graph Builder espone [**l'interfaccia ICaptureGraphBuilder2,**](/windows/desktop/api/Strmif/nn-strmif-icapturegraphbuilder2) che contiene i metodi per la compilazione e il controllo di un grafo di acquisizione. Il diagramma seguente illustra l'interfaccia Capture Graph Builder e **ICaptureGraphBuilder2.**
 
-![uso del generatore di grafici di acquisizione](images/cgb01.png)
+![uso del generatore di grafi di acquisizione](images/cgb01.png)
 
-Per iniziare, chiamare CoCreateInstance per creare nuove istanze del generatore del grafico di acquisizione e del gestore del grafico dei filtri. Inizializzare quindi il generatore Graph di acquisizione chiamando [**ICaptureGraphBuilder2:: SetFiltergraph**](/windows/desktop/api/Strmif/nf-strmif-icapturegraphbuilder2-setfiltergraph) con un puntatore all'interfaccia [**IGraphBuilder**](/windows/desktop/api/Strmif/nn-strmif-igraphbuilder) del gestore del grafico dei filtri. La figura seguente illustra questo processo.
+Per iniziare, chiamare CoCreateInstance per creare nuove istanze di Capture Graph Builder e filter Graph Manager. Inizializzare quindi Capture Graph Builder chiamando [**ICaptureGraphBuilder2::SetFiltergraph**](/windows/desktop/api/Strmif/nf-strmif-icapturegraphbuilder2-setfiltergraph) con un puntatore all'interfaccia [**IGraphBuilder**](/windows/desktop/api/Strmif/nn-strmif-igraphbuilder) di Filter Graph Manager. La figura seguente illustra questo processo.
 
-![inizializzazione del generatore di grafici di acquisizione](images/cgb03.png)
+![inizializzazione del generatore di grafi di acquisizione](images/cgb03.png)
 
 Il codice seguente illustra una funzione helper per eseguire questi passaggi:
 
@@ -66,13 +66,13 @@ HRESULT InitCaptureGraphBuilder(
 
 
 
-In questa sezione sull'acquisizione video si presuppone che si stia usando il generatore del grafico di acquisizione per creare il grafico di acquisizione. Tuttavia, è possibile compilare i grafici di acquisizione interamente usando i metodi IGraphBuilder. Questo argomento è tuttavia considerato un argomento avanzato e i metodi di acquisizione del generatore di grafici sono preferiti. Per altre informazioni, vedere [argomenti di acquisizione avanzati](advanced-capture-topics.md).
+In questa sezione sull'acquisizione video si presuppone che si sta usando Capture Graph Builder per creare il grafico di acquisizione. Tuttavia, è possibile creare grafici di acquisizione interamente usando i metodi IGraphBuilder. Questo è considerato un argomento avanzato, tuttavia, e i metodi capture Graph Builder sono preferibili. Per altre informazioni, vedere [Argomenti di acquisizione avanzata](advanced-capture-topics.md).
 
 ## <a name="related-topics"></a>Argomenti correlati
 
 <dl> <dt>
 
-[Informazioni su acquisizione video in DirectShow](about-video-capture-in-directshow.md)
+[Informazioni sull'acquisizione video in DirectShow](about-video-capture-in-directshow.md)
 </dt> </dl>
 
  

@@ -1,11 +1,11 @@
 ---
-title: Proprietà IResultsViewer FilterType (WdsView. h)
-description: Questa proprietà consente di impostare o restituire il nome del tipo preceived in base al quale filtrare i risultati.
+title: Proprietà IResultsViewer FilterType (WdsView.h)
+description: Questa proprietà imposta o restituisce il nome del tipo pre-percepito in base a cui filtrare i risultati.
 ms.assetid: 025955eb-3e44-4e26-8b5f-ae92eb4c8300
 keywords:
-- Funzionalità dell'ambiente Windows legacy della proprietà FilterType
-- Proprietà FilterType caratteristiche dell'ambiente Windows legacy, interfaccia IResultsViewer
-- Funzionalità dell'ambiente Windows legacy dell'interfaccia IResultsViewer, proprietà FilterType
+- Proprietà FilterType Funzionalità dell'Windows legacy
+- Proprietà FilterType Legacy Windows Environment Features , interfaccia IResultsViewer
+- Interfaccia IResultsViewer Legacy Windows ambiente, proprietà FilterType
 topic_type:
 - apiref
 api_name:
@@ -18,19 +18,19 @@ api_type:
 - COM
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 890d0ceadddb9f3b46ee8b45f109a389472be218
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: b8f4e71a469ad68431721d99343b43b28ea0f0a82b7e393f5c402b0d88735db4
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "106302654"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118754307"
 ---
-# <a name="iresultsviewerfiltertype-property"></a>Proprietà IResultsViewer:: FilterType
+# <a name="iresultsviewerfiltertype-property"></a>Proprietà IResultsViewer::FilterType
 
 > [!NOTE]
-> Windows Desktop Search 2. x è una tecnologia obsoleta originariamente disponibile come componente aggiuntivo per Windows XP e Windows Server 2003. Nelle versioni successive usare invece l' [API di ricerca di Windows](../search/-search-reference-entry-page.md) . 
+> Windows Desktop Search 2.x è una tecnologia obsoleta originariamente disponibile come componente aggiuntivo per Windows XP e Windows Server 2003. Nelle versioni successive usare invece [l'API Windows ricerca.](../search/-search-reference-entry-page.md) 
 
-Questa proprietà consente di impostare o restituire il nome del tipo preceived in base al quale filtrare i risultati.
+Questa proprietà imposta o restituisce il nome del tipo pre-percepito in base a cui filtrare i risultati.
 
 Si tratta di una proprietà di lettura/scrittura.
 
@@ -59,10 +59,10 @@ Imposta il tipo percepito usato per filtrare i risultati.
 
 | Requisito | Valore |
 |-------------------------------------|--------------------------------------------------------------------------------------|
-| Client minimo supportato<br/> | Solo app desktop Windows XP con SP2 \[\]<br/>                                 |
-| Server minimo supportato<br/> | Windows Server 2003 con \[ solo app desktop SP1\]<br/>                        |
+| Client minimo supportato<br/> | Windows XP solo con app desktop SP2 \[\]<br/>                                 |
+| Server minimo supportato<br/> | Windows Solo Server 2003 con app desktop SP1 \[\]<br/>                        |
 | Componente ridistribuibile<br/>          | Windows Desktop Search (WDS) 2.6.5<br/>                                        |
-| Intestazione<br/>                   | <dl> <dt>WdsView. h</dt> </dl> |
+| Intestazione<br/>                   | <dl> <dt>WdsView.h</dt> </dl> |
 
 
 

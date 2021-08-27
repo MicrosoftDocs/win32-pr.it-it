@@ -45,7 +45,7 @@ La procedura seguente descrive come eseguire una query sui dati sincrona usando 
 
     
 
-2.  Usare tecniche standard di raccolta del linguaggio C# per accedere a ogni oggetto restituito.
+2.  Usare tecniche di raccolta del linguaggio C# standard per accedere a ogni oggetto restituito.
 
     ```CSharp
     foreach (CimInstance drive in queryInstances)
@@ -73,7 +73,7 @@ La procedura seguente descrive come eseguire una query sui dati sincrona usando 
 
     
 
-2.  Usare tecniche standard di raccolta del linguaggio C# per accedere a ogni oggetto restituito.
+2.  Usare tecniche di raccolta del linguaggio C# standard per accedere a ogni oggetto restituito.
 
     ```CSharp
     foreach (ManagementObject drive in objCol)
@@ -113,7 +113,7 @@ La procedura seguente descrive come eseguire una query di dati sincrona usando C
 
 **Per eseguire una query sincrona in C++**
 
-1.  Descrivere la query in WMI tramite una chiamata a [**IWbemServices::ExecQuery**](/windows/desktop/api/WbemCli/nf-wbemcli-iwbemservices-execquery).
+1.  Descrivere la query a WMI tramite una chiamata a [**IWbemServices::ExecQuery**](/windows/desktop/api/WbemCli/nf-wbemcli-iwbemservices-execquery).
 
     Il [**metodo ExecQuery**](/windows/desktop/api/WbemCli/nf-wbemcli-iwbemservices-execquery) accetta una stringa di ricerca WQL come parametro che descrive la query. WMI esegue la query e restituisce un puntatore a [**interfaccia IEnumWbemClassObject.**](/windows/desktop/api/Wbemcli/nn-wbemcli-ienumwbemclassobject) Tramite **l'interfaccia IEnumWbemClassObject** è possibile accedere alle classi o alle istanze che costituiscono il set di risultati.
 

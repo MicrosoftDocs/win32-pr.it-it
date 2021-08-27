@@ -1,11 +1,11 @@
 ---
 title: Metodo IGatherNotify AddScope (deprecato)
-description: Questo argomento dell'interfaccia di ricerca desktop di Windows è deprecato e viene sostituito dall'API di ricerca di Windows ISearchPersistentItemsChangedSink nel Windows SDK. | Metodo IGatherNotify AddScope (deprecato)
+description: Questo Windows'interfaccia di Desktop Search è deprecato e viene sostituito dall'API ISearchPersistentItemsChangedSink di Windows Search in Windows SDK. | Metodo IGatherNotify AddScope (deprecato)
 ms.assetid: 3b250818-1876-40b2-9a85-91f2bf6f52ec
 keywords:
-- Metodo AddScope (deprecato) funzionalità dell'ambiente Windows legacy
-- Metodo AddScope (deprecato) funzionalità dell'ambiente Windows legacy, interfaccia IGatherNotify
-- Funzionalità dell'ambiente Windows legacy dell'interfaccia IGatherNotify, metodo AddScope (deprecato)
+- Metodo AddScope (deprecato) Legacy Windows Environment Features
+- Metodo AddScope (deprecato) Legacy Windows Environment Features , interfaccia IGatherNotify
+- Interfaccia IGatherNotify Legacy Windows, metodo AddScope (deprecato)
 topic_type:
 - apiref
 api_name:
@@ -15,20 +15,20 @@ api_type:
 ms.topic: reference
 ms.date: 05/31/2018
 api_location: ''
-ms.openlocfilehash: 967dc4f30acee2f8d8adbcfec04f0508e53bba15
-ms.sourcegitcommit: 92e74c99f8f4d097676959d0c317f533c2400a80
+ms.openlocfilehash: a49c0cf652b0cfde59167fa98498a978d3c2c41d3a886ee092b8f4a28d35f61b
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/09/2021
-ms.locfileid: "104353011"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118755592"
 ---
-# <a name="igathernotifyaddscope-deprecated-method"></a>Metodo IGatherNotify:: AddScope (deprecato)
+# <a name="igathernotifyaddscope-deprecated-method"></a>Metodo IGatherNotify::AddScope (deprecato)
 
 \[**AddScope** può essere modificato o non disponibile nelle versioni successive del sistema operativo o del prodotto.\]
 
-Questo argomento dell'interfaccia di ricerca desktop di Windows è deprecato e viene sostituito dall'API di ricerca di Windows [**ISearchPersistentItemsChangedSink**](/windows/desktop/api/searchapi/nn-searchapi-isearchpersistentitemschangedsink) nel Windows SDK.
+Questo Windows'interfaccia di Desktop Search è deprecato e viene sostituito dall'API di ricerca di Windows [**ISearchPersistentItemsChangedSink**](/windows/desktop/api/searchapi/nn-searchapi-isearchpersistentitemschangedsink) in Windows SDK.
 
-Aggiunge la pagina iniziale o l'URL che si sta monitorando. Viene avviata una ricerca per indicizzazione incrementale quando si esegue la connessione e si presuppone che tutte le altre modifiche apportate all'URL siano notificate
+Aggiunge la pagina iniziale o l'URL che si sta monitorando. Viene avviata una ricerca per indicizzazione incrementale quando ci si connette e quindi si presuppone che tutte le altre modifiche all'URL siano tramite notifica.
 
 ## <a name="syntax"></a>Sintassi
 
@@ -45,12 +45,12 @@ void AddScope (Deprecated)(
 
 <dl> <dt>
 
-*bstrScope* \[ in\]
+*bstrScope* \[ Pollici\]
 </dt> <dd>
 
 Tipo: **BSTR**
 
-Stringa che specifica la pagina iniziale o URL che si sta monitorando.
+Stringa che specifica la pagina iniziale o l'URL che si sta monitorando.
 
 </dd> </dl>
 
@@ -60,7 +60,7 @@ Questo metodo non restituisce valori.
 
 ## <a name="remarks"></a>Commenti
 
-La chiamata a questo metodo avvia una ricerca per indicizzazione incrementale quando si è connessi all'archivio. In seguito si presuppone che tutte le modifiche apportate all'URL siano notificate dopo l'aggiornamento iniziale.
+La chiamata a questo metodo avvia una ricerca per indicizzazione incrementale quando si è connessi all'archivio. Successivamente, si presuppone che tutte le modifiche dell'URL siano notificate dopo l'aggiornamento iniziale.
 
  
 

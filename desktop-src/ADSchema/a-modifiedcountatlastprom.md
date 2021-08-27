@@ -4,7 +4,7 @@ description: Numero di serie del log delle modifiche di Accesso rete all'ultima 
 ms.assetid: 9f907997-ad1a-451c-960d-e5d1d462c00a
 ms.tgt_platform: multiple
 keywords:
-- Schema AD dell'attributo Modified-Count-At-Last-Prom
+- Modified-Count-At-Last-Prom attribute AD Schema
 - Schema AD dell'attributo modifiedCountAtLastProm
 topic_type:
 - apiref
@@ -32,7 +32,7 @@ Numero di serie del log delle modifiche di Accesso rete all'ultima promozione.
 | CN                | Modified-Count-At-Last-Prom          |
 | Ldap-Display-Name | modifiedCountAtLastProm              |
 | Dimensione              | \-                                   |
-| Aggiorna privilegio  | Questo valore viene impostato dal sistema.     |
+| Privilegio di aggiornamento  | Questo valore viene impostato dal sistema.     |
 | Frequenza di aggiornamento  | \-                                   |
 | Attribute-Id      | 1.2.840.113556.1.4.81                |
 | System-Id-Guid    | bf9679c6-0de6-11d0-a285-00aa003049e2 |
@@ -58,7 +58,7 @@ Numero di serie del log delle modifiche di Accesso rete all'ultima promozione.
 | ID collegamento                | \-                                                                                                 |
 | MAPI-Id                | \-                                                                                                 |
 | System-Only            | Falso                                                                                              |
-| A valore singolo       | Vero                                                                                               |
+| Is-Single-Valued       | Vero                                                                                               |
 | Indicizzato             | Falso                                                                                              |
 | Nel catalogo globale      | Falso                                                                                              |
 | NT-Security-Descriptor | O:BAG:BAD:S:                                                                                       |
@@ -79,7 +79,7 @@ Numero di serie del log delle modifiche di Accesso rete all'ultima promozione.
 | ID collegamento                | \-                                                                                                 |
 | MAPI-Id                | \-                                                                                                 |
 | System-Only            | Falso                                                                                              |
-| A valore singolo       | Vero                                                                                               |
+| Is-Single-Valued       | Vero                                                                                               |
 | Indicizzato             | Falso                                                                                              |
 | Nel catalogo globale      | Falso                                                                                              |
 | NT-Security-Descriptor | O:BAG:BAD:S:                                                                                       |
@@ -100,7 +100,7 @@ Numero di serie del log delle modifiche di Accesso rete all'ultima promozione.
 | ID collegamento                | \-                                                                                                 |
 | MAPI-Id                | \-                                                                                                 |
 | System-Only            | Falso                                                                                              |
-| A valore singolo       | Vero                                                                                               |
+| Is-Single-Valued       | Vero                                                                                               |
 | Indicizzato             | Falso                                                                                              |
 | Nel catalogo globale      | Falso                                                                                              |
 | NT-Security-Descriptor | O:BAG:BAD:S:                                                                                       |
@@ -121,7 +121,7 @@ Numero di serie del log delle modifiche di Accesso rete all'ultima promozione.
 | ID collegamento                | \-                                                                                                 |
 | MAPI-Id                | \-                                                                                                 |
 | System-Only            | Falso                                                                                              |
-| Is-Single-Valued       | Vero                                                                                               |
+| A valore singolo       | Vero                                                                                               |
 | Indicizzato             | Falso                                                                                              |
 | Nel catalogo globale      | Falso                                                                                              |
 | NT-Security-Descriptor | O:BAG:BAD:S:                                                                                       |
@@ -142,7 +142,7 @@ Numero di serie del log delle modifiche di Accesso rete all'ultima promozione.
 | ID collegamento                | \-                                                                                                 |
 | MAPI-Id                | \-                                                                                                 |
 | System-Only            | Falso                                                                                              |
-| Is-Single-Valued       | Vero                                                                                               |
+| A valore singolo       | Vero                                                                                               |
 | Indicizzato             | Falso                                                                                              |
 | Nel catalogo globale      | Falso                                                                                              |
 | NT-Security-Descriptor | O:BAG:BAD:S:                                                                                       |
@@ -163,7 +163,7 @@ Numero di serie del log delle modifiche di Accesso rete all'ultima promozione.
 | ID collegamento                | \-                                                                                                 |
 | MAPI-Id                | \-                                                                                                 |
 | System-Only            | Falso                                                                                              |
-| Is-Single-Valued       | Vero                                                                                               |
+| A valore singolo       | Vero                                                                                               |
 | Indicizzato             | Falso                                                                                              |
 | Nel catalogo globale      | Falso                                                                                              |
 | NT-Security-Descriptor | O:BAG:BAD:S:                                                                                       |

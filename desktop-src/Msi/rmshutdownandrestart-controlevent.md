@@ -13,7 +13,7 @@ ms.locfileid: "118625891"
 ---
 # <a name="rmshutdownandrestart-controlevent"></a>RmShutdownAndRestart ControlEvent
 
-Questo evento notifica al programma di [](../rstmgr/restart-manager-portal.md) installazione Windows di usare Gestione riavvio per arrestare tutte le applicazioni che dispongono di file in uso e riavviarle al termine dell'installazione.
+Questo evento notifica al programma di installazione [](../rstmgr/restart-manager-portal.md) di Windows di usare Gestione riavvio per arrestare tutte le applicazioni che dispongono di file in uso e riavviarle al termine dell'installazione.
 
 Questo ControlEvent non ha alcun effetto se si verifica una delle condizioni seguenti.
 

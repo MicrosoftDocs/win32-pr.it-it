@@ -1,29 +1,29 @@
 ---
 description: Contiene la lingua RFC 1766 preferita dell'origine multimediale.
 ms.assetid: 30f99804-6aea-473b-9bbf-e8c715501391
-title: Attributo MF_PD_PREFERRED_LANGUAGE (Mfidl. h)
+title: MF_PD_PREFERRED_LANGUAGE attributo (Mfidl.h)
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 81bb121c7181724ef06b3e8fe9239342a140104a
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 6cd01a47002bf3cd9419579786ff37df1fc03af940f54b2d2a2bb859d5b97007
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "104233746"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118740712"
 ---
-# <a name="mf_pd_preferred_language-attribute"></a>\_ \_ Attributo lingua preferita MF PD \_
+# <a name="mf_pd_preferred_language-attribute"></a>Attributo MF \_ PD \_ PREFERRED \_ LANGUAGE
 
 Contiene la lingua RFC 1766 preferita dell'origine multimediale.
 
 ## <a name="data-type"></a>Tipo di dati
 
-**WCHAR**
+**Wchar**
 
 ## <a name="getset"></a>Ottenere/impostare
 
-Per ottenere questo attributo, chiamare [**IMFAttributes:: GetString**](/windows/desktop/api/mfobjects/nf-mfobjects-imfattributes-getstring).
+Per ottenere questo attributo, chiamare [**IMFAttributes::GetString**](/windows/desktop/api/mfobjects/nf-mfobjects-imfattributes-getstring).
 
-Per impostare questo attributo, chiamare [**IMFAttributes:: setring**](/windows/desktop/api/mfobjects/nf-mfobjects-imfattributes-setstring).
+Per impostare questo attributo, chiamare [**IMFAttributes::Settring**](/windows/desktop/api/mfobjects/nf-mfobjects-imfattributes-setstring).
 
 ## <a name="applies-to"></a>Si applica a
 
@@ -31,9 +31,9 @@ Per impostare questo attributo, chiamare [**IMFAttributes:: setring**](/windows/
 
 ## <a name="remarks"></a>Commenti
 
-L' \_ attributo di \_ lingua preferita MF PD \_ è facoltativo. Un'applicazione può impostare questo attributo su un'origine multimediale, ad esempio un'origine di rete, per specificare la lingua preferita.
+L'attributo MF \_ PD \_ PREFERRED LANGUAGE è \_ facoltativo. Un'applicazione può impostare questo attributo in un'origine multimediale, ad esempio un'origine di rete, per specificare la lingua preferita.
 
-La costante GUID per questo attributo viene esportata da mfuuid. lib.
+La costante GUID per questo attributo viene esportata da mfuuid.lib.
 
 ## <a name="requirements"></a>Requisiti
 
@@ -41,9 +41,9 @@ La costante GUID per questo attributo viene esportata da mfuuid. lib.
 
 | Requisito | Valore |
 |-------------------------------------|------------------------------------------------------------------------------------|
-| Client minimo supportato<br/> | App desktop di Windows 7 \[ \| UWP\]<br/>                                  |
-| Server minimo supportato<br/> | App desktop di Windows Server 2008 R2 \[ \| UWP\]<br/>                     |
-| Intestazione<br/>                   | <dl> <dt>Mfidl. h</dt> </dl> |
+| Client minimo supportato<br/> | Windows 7 \[ app desktop app \| UWP\]<br/>                                  |
+| Server minimo supportato<br/> | Windows App desktop di Server 2008 R2 \[ \| app UWP\]<br/>                     |
+| Intestazione<br/>                   | <dl> <dt>Mfidl.h</dt> </dl> |
 
 
 
@@ -51,10 +51,10 @@ La costante GUID per questo attributo viene esportata da mfuuid. lib.
 
 <dl> <dt>
 
-[Elenco alfabetico degli attributi di Media Foundation](alphabetical-list-of-media-foundation-attributes.md)
+[Elenco alfabetico degli Media Foundation personalizzati](alphabetical-list-of-media-foundation-attributes.md)
 </dt> <dt>
 
-[Attributi del descrittore della presentazione](presentation-descriptor-attributes.md)
+[Attributi del descrittore di presentazione](presentation-descriptor-attributes.md)
 </dt> </dl>
 
  

@@ -17,7 +17,7 @@ ms.locfileid: "118772894"
 # <a name="esentslvheadercorruptedexception-properties"></a>Proprietà di EsentSLVHeaderCorruptedException
 
 Includere membri protetti  
-Includere i membri ereditati  
+Includi membri ereditati  
 
 Il [tipo EsentSLVHeaderCorruptedException](./esentslvheadercorruptedexception-class.md) espone i membri seguenti.
 

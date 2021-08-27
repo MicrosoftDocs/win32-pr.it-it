@@ -1,6 +1,6 @@
 ---
 title: UI_PKEY_FormatString
-description: Identifica la proprietà \_ PKEY \_ FormatString dell'interfaccia utente.
+description: Identifica la proprietà \_ FormatString PKEY \_ dell'interfaccia utente.
 ms.assetid: b0ad0585-62f4-445c-93e7-6575d76e6ba6
 ms.topic: article
 ms.date: 05/31/2018
@@ -13,7 +13,7 @@ ms.locfileid: "118438156"
 ---
 # <a name="ui_pkey_formatstring"></a>UI \_ PKEY \_ FormatString
 
-Identifica la proprietà \_ PKEY \_ FormatString dell'interfaccia utente.
+Identifica la proprietà \_ FormatString PKEY \_ dell'interfaccia utente.
 
 ```
 propertyDescription
@@ -27,13 +27,13 @@ propertyDescription
 
 ## <a name="remarks"></a>Commenti
 
-Ui PKEY FormatString viene usato da un'applicazione per eseguire query sul formato (o unità di misura) per \_ il valore del controllo \_ [Spinner.](windowsribbon-controls-spinner.md)
+Ui PKEY FormatString viene usato da un'applicazione per eseguire una query sul formato (o unità di misura) per il valore \_ \_ del controllo [Spinner.](windowsribbon-controls-spinner.md)
 
 ## <a name="related-topics"></a>Argomenti correlati
 
 <dl> <dt>
 
-[Proprietà dello stato](windowsribbon-reference-properties-state.md)
+[Proprietà di stato](windowsribbon-reference-properties-state.md)
 </dt> </dl>
 
  

@@ -1,6 +1,6 @@
 ---
 title: Uso di ADSI con Exchange
-description: Ad Exchange 2000, le informazioni per l'uso di ADSI con Exchange sono contenute in Exchange 2000 SDK. Per altre informazioni, vedere Attività di gestione per ADSI.
+description: Per Exchange 2000, le informazioni per l'uso di ADSI con Exchange sono contenute in Exchange 2000 SDK. Per altre informazioni, vedere Attività di gestione per ADSI.
 ms.assetid: c806ca1b-c97c-4567-af8b-e12cfde2bf70
 ms.tgt_platform: multiple
 keywords:
@@ -10,16 +10,16 @@ keywords:
 - ADSI per Exchange ADSI , cassette postali, eliminazione
 - ADSI per Exchange ADSI, cassette postali, impostazione del descrittore di sicurezza su
 - ADSI per Exchange ADSI, cassette postali, ricerca del server principale per
-- ADSI per Exchange ADSI , recupero e modifica dei messaggi
+- ADSI per Exchange ADSI, recupero e modifica dei messaggi
 - ADSI per Exchange ADSI , descrittori di sicurezza
 - ADSI per Exchange ADSI, descrittori di sicurezza, modifica
 - ADSI per Exchange ADSI, descrittori di sicurezza, impostazione
 - ADSI per Exchange contenitore ADSI ,recipients
-- ADSI per Exchange ADSI , visualizzazione Exchange proprietà dell'oggetto
+- ADSI per Exchange ADSI, visualizzazione Exchange proprietà dell'oggetto
 - ADSI per Exchange ADSI, contenitore destinatari, personalizzato
 - ADSI per Exchange ADSI ,Exchange Server
 - ADSI per Exchange ADSI , Exchange Server, visualizzazione e modifica dello schema
-- ADSI per Exchange ADSI ,Exchange Server,listing versione del server
+- ADSI per Exchange ADSI ,Exchange Server, versione del server di elenco
 - ADSI per Exchange ADSI, Exchange Server, nome dell'organizzazione e del sito
 - ADSI per Exchange ADSI ,Exchange Server,ricerca del server principale della cassetta postale
 - ADSI per Exchange ADSI, indirizzi di posta elettronica, recupero
@@ -48,13 +48,13 @@ keywords:
 - Exchange ADSI , visualizzazione delle Exchange dell'oggetto
 - Exchange ADSI, contenitore destinatari, personalizzato
 - Exchange ADSI ,Exchange Server
-- Exchange ADSI ,Exchange Server,visualizzazione e modifica dello schema
+- Exchange ADSI , Exchange Server, visualizzazione e modifica dello schema
 - Exchange ADSI , Exchange Server, versione del server di elenco
 - Exchange ADSI,Exchange Server,nome dell'organizzazione e del sito
 - Exchange ADSI ,Exchange Server,ricerca del server principale della cassetta postale
 - Exchange ADSI, indirizzi di posta elettronica, recupero
 - Exchange ADSI, liste di distribuzione, creazione
-- Exchange Voci ADSI nascoste o eliminate
+- Exchange VOCI ADSI nascoste o eliminate
 - Exchange ADSI, recupero delle modifiche al servizio directory
 - Exchange ADSI, dimensioni dei messaggi
 - Exchange ADSI, risoluzione dei problemi
@@ -70,7 +70,7 @@ ms.locfileid: "118690130"
 ---
 # <a name="using-adsi-with-exchange"></a>Uso di ADSI con Exchange
 
-Ad Exchange 2000, le informazioni per l'uso di ADSI con Exchange sono contenute in Exchange 2000 SDK. Per altre informazioni, vedere [Attività di gestione per ADSI.](/previous-versions/office/developer/exchange-server-2003/aa125368(v=exchg.65))
+Per Exchange 2000, le informazioni per l'uso di ADSI con Exchange sono contenute in Exchange 2000 SDK. Per altre informazioni, vedere [Attività di gestione per ADSI.](/previous-versions/office/developer/exchange-server-2003/aa125368(v=exchg.65))
 
 In questa sezione sono disponibili le attività seguenti:
 
@@ -78,8 +78,8 @@ In questa sezione sono disponibili le attività seguenti:
 -   Creazione di percorsi di Active Directory
 -   Enumerazione di Exchange 2000 server con ADSI
 -   Modifica degli attributi di estensione con ADSI
--   Aggiunta/rimozione di un oggetto manager con ADSI
--   Enumerazione delle Exchange dell'oggetto con ADSI/ADO
+-   Aggiunta/rimozione di un oggetto di gestione con ADSI
+-   Enumerazione delle Exchange di oggetti con ADSI/ADO
 -   Recupero di un nome distinto Exchange legacy con ADSI
 -   Ricerca del nome Exchange'organizzazione usando ADSI
 -   Ricerca Exchange di indirizzi con ADSI

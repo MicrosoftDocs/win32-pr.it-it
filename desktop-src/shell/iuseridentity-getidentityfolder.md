@@ -1,7 +1,7 @@
 ---
-description: GetIdentityFolder non è supportato e può essere modificato o non disponibile in futuro. Usare invece gli account utente con cambio rapido utente e Desktop remoto.
+description: GetIdentityFolder non è supportato e potrebbe essere modificato o non disponibile in futuro. Usare invece gli account utente con cambio utente rapido e Desktop remoto.
 ms.assetid: cd3370a2-b393-4cb9-ad9c-a46086987aaa
-title: 'Metodo IUserIdentity:: GetIdentityFolder (Msident. h)'
+title: Metodo IUserIdentity::GetIdentityFolder (Msident.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -13,16 +13,16 @@ api_type:
 - COM
 api_location:
 - Msident.dll
-ms.openlocfilehash: 9f2644570bb7ccc2ae5bee8a37d4471ffb65861a
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 20357dde27214177a454eb585dcd51182228c247da5aeae5ef887089b73ed85d
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104977903"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118720607"
 ---
-# <a name="iuseridentitygetidentityfolder-method"></a>Metodo IUserIdentity:: GetIdentityFolder
+# <a name="iuseridentitygetidentityfolder-method"></a>Metodo IUserIdentity::GetIdentityFolder
 
-\[**GetIdentityFolder** non è supportato e può essere modificato o non disponibile in futuro. Usare invece gli [account utente con cambio rapido utente e desktop remoto](fastuserswitching.md).\]
+\[**GetIdentityFolder** non è supportato e potrebbe essere modificato o non disponibile in futuro. Usare invece gli [account utente con cambio utente rapido e Desktop remoto](fastuserswitching.md).\]
 
 Ottiene la cartella di file associata a questa identità.
 
@@ -43,7 +43,7 @@ HRESULT GetIdentityFolder(
 
 <dl> <dt>
 
-*dwFlags* \[ in\]
+*dwFlags* \[ Pollici\]
 </dt> <dd>
 
 Tipo: **DWORD**
@@ -54,7 +54,7 @@ Obbligatorio. Valore che specifica se la cartella associata a questa identità �
 
 
 
- (GIF \_ cartella ROAMing \_ )
+ (GIF \_ ROAMING \_ FOLDER)
 
 
 </dt> <dd>
@@ -65,7 +65,7 @@ La cartella è in roaming.
 
 
 
- (GIF \_ cartella NON in \_ roaming \_ )
+ (GIF \_ CARTELLA NON \_ \_ IN ROAMING)
 
 
 </dt> <dd>
@@ -74,21 +74,21 @@ La cartella è locale.
 
 </dd> </dl> </dd> <dt>
 
-*pszPath* \[ in\]
+*pszPath* \[ Pollici\]
 </dt> <dd>
 
-Tipo: **WCHAR \** _
+Tipo: **WCHAR \***
 
 Puntatore a una stringa di caratteri wide che riceve il percorso della cartella.
 
 </dd> <dt>
 
-_ulBuffSize * \[ in\]
+*ulBuffSize* \[ Pollici\]
 </dt> <dd>
 
 Tipo: **ULONG**
 
-Valore che specifica la dimensione di *pszPath*.
+Valore che specifica le dimensioni di *pszPath.*
 
 </dd> </dl>
 
@@ -96,7 +96,7 @@ Valore che specifica la dimensione di *pszPath*.
 
 Tipo: **HRESULT**
 
-Se questo metodo ha esito positivo, restituisce **S \_ OK**. In caso contrario, restituisce un codice di errore **HRESULT** .
+Se questo metodo ha esito positivo, restituisce **S \_ OK**. In caso contrario, restituisce un **codice di errore HRESULT.**
 
 ## <a name="requirements"></a>Requisiti
 
@@ -108,8 +108,8 @@ Se questo metodo ha esito positivo, restituisce **S \_ OK**. In caso contrario, 
 | Server minimo supportato<br/> | Windows 2000 Server \[solo app desktop\]<br/>                                   |
 | Fine del supporto client<br/>    | Windows 2000 Professional<br/>                                                   |
 | Fine del supporto server<br/>    | Windows 2000 Server<br/>                                                         |
-| Intestazione<br/>                   | <dl> <dt>Msident. h</dt> </dl>   |
-| IDL<br/>                      | <dl> <dt>Msident. idl</dt> </dl> |
+| Intestazione<br/>                   | <dl> <dt>Msident.h</dt> </dl>   |
+| Idl<br/>                      | <dl> <dt>Msident.idl</dt> </dl> |
 | DLL<br/>                      | <dl> <dt>Msident.dll</dt> </dl> |
 
 

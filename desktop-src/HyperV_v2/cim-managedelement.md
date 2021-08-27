@@ -1,5 +1,5 @@
 ---
-description: La classe CIM ManagedElement è una classe astratta che fornisce una superclasse comune (o parte superiore dell'albero di ereditarietà) per le classi non di associazione \_ nello schema CIM.
+description: La classe CIM ManagedElement è una classe astratta che fornisce una superclasse comune (o la parte superiore dell'albero di ereditarietà) per le classi non di associazione \_ nello schema CIM.
 ms.assetid: 6655a480-37bd-403c-9673-4eaa3d381201
 title: CIM_ManagedElement classe
 ms.topic: reference
@@ -24,9 +24,9 @@ ms.contentlocale: it-IT
 ms.lasthandoff: 08/11/2021
 ms.locfileid: "118648183"
 ---
-# <a name="cim_managedelement-class"></a>Classe CIM \_ ManagedElement
+# <a name="cim_managedelement-class"></a>Classe \_ CiM ManagedElement
 
-La **classe CIM \_ ManagedElement** è una classe astratta che fornisce una superclasse comune (o parte superiore dell'albero di ereditarietà) per le classi non di associazione nello schema CIM.
+La **classe \_ CIM ManagedElement** è una classe astratta che fornisce una superclasse comune (o la parte superiore dell'albero di ereditarietà) per le classi non di associazione nello schema CIM.
 
 ## <a name="syntax"></a>Sintassi
 
@@ -43,20 +43,20 @@ class CIM_ManagedElement
 
 ## <a name="members"></a>Members
 
-La **classe CIM \_ ManagedElement** ha questi tipi di membri:
+La **classe \_ CIM ManagedElement** ha questi tipi di membri:
 
 -   [Proprietà](#properties)
 
 ### <a name="properties"></a>Proprietà
 
-La **classe CIM \_ ManagedElement** ha queste proprietà.
+La **classe \_ CiM ManagedElement** ha queste proprietà.
 
 <dl> <dt>
 
 **Didascalia**
 </dt> <dd> <dl> <dt>
 
-Tipo di dati: **stringa**
+Tipo di dati: **string**
 </dt> <dt>
 
 Tipo di accesso: sola lettura
@@ -65,14 +65,14 @@ Tipo di accesso: sola lettura
 Qualificatori: [**MaxLen**](/windows/desktop/WmiSdk/standard-qualifiers) (64)
 </dt> </dl>
 
-Breve descrizione testuale dell'oggetto .
+Breve descrizione testuale dell'oggetto.
 
 </dd> <dt>
 
 **Descrizione**
 </dt> <dd> <dl> <dt>
 
-Tipo di dati: **stringa**
+Tipo di dati: **string**
 </dt> <dt>
 
 Tipo di accesso: sola lettura
@@ -85,38 +85,38 @@ Descrizione testuale dell'oggetto .
 **ElementName**
 </dt> <dd> <dl> <dt>
 
-Tipo di dati: **stringa**
+Tipo di dati: **string**
 </dt> <dt>
 
 Tipo di accesso: sola lettura
 </dt> </dl>
 
-Nome descrittivo per l'oggetto . Questa proprietà consente a ogni istanza di definire un nome descrittivo, oltre alle proprietà chiave, ai dati di identità e alle informazioni di descrizione.
+Nome descrittivo dell'oggetto. Questa proprietà consente a ogni istanza di definire un nome descrittivo oltre alle relative proprietà chiave, ai dati di identità e alle informazioni sulla descrizione.
 
 </dd> <dt>
 
 **InstanceID**
 </dt> <dd> <dl> <dt>
 
-Tipo di dati: **stringa**
+Tipo di dati: **string**
 </dt> <dt>
 
 Tipo di accesso: sola lettura
 </dt> </dl>
 
-Identifica in modo univoco e opaco un'istanza di questa classe nell'ambito dello spazio dei nomi contenitore.
+Identifica in modo univoco e opaco un'istanza di questa classe all'interno dell'ambito dello spazio dei nomi contenitore.
 
 > [!IMPORTANT]
 >
 > Per garantire l'univocità all'interno dello spazio dei nomi, il valore della proprietà **InstanceID** deve essere costruito nel modello seguente: *OrgID*:*LocalID*
 >
-> *OrgID* deve includere un nome protetto da copyright, con marchio o altrimenti univoco di proprietà dell'entità aziendale che definisce **InstanceID** o un ID registrato assegnato da un'autorità globale riconosciuta. Questo modello è simile alla struttura dei nomi delle classi dello schema. Inoltre, per garantire l'univocità, i primi due punti in **InstanceID** devono essere compresi tra *OrgID* e *LocalID*. OrgID *non deve* pertanto contenere i due punti (':').
+> *OrgID* deve includere un nome protetto da copyright, registrato o altrimenti univoco di proprietà dell'entità aziendale che definisce **InstanceID** o essere un ID registrato assegnato da un'autorità globale riconosciuta. Questo modello è simile alla struttura dei nomi delle classi dello schema. Inoltre, per garantire l'univocità, i primi due punti in **InstanceID** devono essere compresi tra *OrgID* e *LocalID*. *L'ORGID non* deve pertanto contenere i due punti (':').
 >
-> *LocalID* viene scelto dall'entità aziendale e non deve essere usato nuovamente per identificare diversi elementi reali sottostanti.
+> *LocalID* viene scelto dall'entità business e non deve essere usato nuovamente per identificare diversi elementi reali sottostanti.
 >
-> Se il modello precedente non viene usato, l'entità di definizione deve garantire che il valore **InstanceID** risultante non viene usato di nuovo in tutte le proprietà **InstanceID** prodotte da questo provider o da altri provider per questo spazio dei nomi.
+> Se il modello precedente non viene usato, l'entità di definizione deve garantire che il valore **InstanceID** risultante non sia usato di nuovo in tutte le proprietà **InstanceID** prodotte da questo provider o da altri provider per questo spazio dei nomi.
 >
-> Per le istanze definite dalla dmtf (Distributed Management Task Force), il modello deve essere usato con *OrgID* impostato su CIM.
+> Per le istanze definite da DmTF (Distributed Management Task Force), il modello deve essere usato con *OrgID* impostato su CIM.
 
  
 

@@ -1,5 +1,5 @@
 ---
-description: 'Altre informazioni su: Enumerazione EventLoggingLevels'
+description: Altre informazioni sull'enumerazione EventLoggingLevels
 title: Enumerazione EventLoggingLevels
 TOCTitle: EventLoggingLevels enumeration
 ms:assetid: T:Microsoft.Isam.Esent.Interop.EventLoggingLevels
@@ -36,19 +36,19 @@ api_type:
 api_location:
 - Microsoft.Isam.Esent.Interop.dll
 ROBOTS: INDEX,FOLLOW
-ms.openlocfilehash: 7ec0881a7d217cfdcbc3680eaa3054dbb4fb62a3
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: d910e1417ea7c05e86f7e9d6c2a69c8c0e47c212a7956f1d309e895576d4ee96
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "106313566"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118768034"
 ---
 # <a name="eventlogginglevels-enumeration"></a>Enumerazione EventLoggingLevels
 
 Opzioni per EventLoggingLevel.
 
-**Spazio dei nomi:**  [Microsoft. ISAM. esent. Interop](./microsoft.isam.esent.interop-namespace.md)  
-**Assembly:**  Microsoft. ISAM. esent. Interop (in Microsoft.Isam.Esent.Interop.dll)
+**Spazio dei nomi:**  [Microsoft.Isam.Esent.Interop](./microsoft.isam.esent.interop-namespace.md)  
+**Assembly:**  Microsoft.Isam.Esent.Interop (in Microsoft.Isam.Esent.Interop.dll)
 
 ## <a name="syntax"></a>Sintassi
 
@@ -87,7 +87,7 @@ public enum EventLoggingLevels
 <tr class="odd">
 <td></td>
 <td>Basso</td>
-<td>Livello di dettaglio basso e basso.</td>
+<td>Livello di dettaglio basso e inferiore.</td>
 </tr>
 <tr class="even">
 <td></td>
@@ -112,4 +112,4 @@ public enum EventLoggingLevels
 
 #### <a name="reference"></a>Riferimento
 
-[Spazio dei nomi Microsoft. ISAM. esent. Interop](./microsoft.isam.esent.interop-namespace.md)
+[Spazio dei nomi Microsoft.Isam.Esent.Interop](./microsoft.isam.esent.interop-namespace.md)

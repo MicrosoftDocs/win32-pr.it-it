@@ -3,7 +3,7 @@ title: Elemento seq
 description: L'elemento seq contiene elementi che definiscono una playlist statica o elementi che definiscono una playlist intelligente.
 ms.assetid: 849f7b38-25f2-4708-a83c-e651812a1a72
 keywords:
-- Elemento seq Media Player Windows
+- Elemento seq Windows Media Player
 topic_type:
 - apiref
 api_name:
@@ -13,16 +13,16 @@ api_type:
 ms.topic: reference
 ms.date: 05/31/2018
 api_location: ''
-ms.openlocfilehash: b08b3f4dfa448e48f3a9d2472c6ddb46a4d4dfaf
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: d300931ac93353189e80de1a9f3a34d2e89d365026b149dc623f37c80e280fee
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "106325828"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118833302"
 ---
 # <a name="seq-element"></a>Elemento seq
 
-L'elemento **Seq** contiene elementi che definiscono una playlist statica o elementi che definiscono una playlist intelligente.
+**L'elemento seq** contiene elementi che definiscono una playlist statica o elementi che definiscono una playlist intelligente.
 
 ``` syntax
 <seq>
@@ -40,7 +40,7 @@ Questo elemento non ha attributi.
 | Gerarchia | Elementi                                                               |
 |-----------|------------------------------------------------------------------------|
 | Padre    | [body](body-element.md)                                               |
-| Figlio     | [supporti](media-element.md), [smartPlaylist](smartplaylist-element.md) |
+| Figlio     | [media,](media-element.md) [smartPlaylist](smartplaylist-element.md) |
 
 
 
@@ -48,7 +48,7 @@ Questo elemento non ha attributi.
 
 ## <a name="remarks"></a>Commenti
 
-Quando un elemento **Seq** contiene solo elementi **multimediali** che fanno riferimento a elementi multimediali specifici, la playlist viene considerata statica. Quando un elemento **Seq** contiene un elemento **smartPlaylist** , viene considerato una playlist dinamica "intelligente".
+Quando un **elemento seq** contiene solo **elementi multimediali** che fanno riferimento a elementi multimediali specifici, la playlist viene considerata statica. Quando un **elemento seq** contiene un **elemento smartPlaylist,** viene considerato una playlist dinamica "intelligente".
 
 ## <a name="examples"></a>Esempio
 
@@ -72,7 +72,7 @@ Quando un elemento **Seq** contiene solo elementi **multimediali** che fanno rif
 
 | Requisito | Valore |
 |--------------------|----------------------------------------------------|
-| Versione<br/> | Windows Media Player 9 serie o versione successiva.<br/> |
+| Versione<br/> | Windows Media Player serie 9 o successiva.<br/> |
 
 
 
@@ -80,16 +80,16 @@ Quando un elemento **Seq** contiene solo elementi **multimediali** che fanno rif
 
 <dl> <dt>
 
-[**Body (elemento)**](body-element.md)
+[**Elemento body**](body-element.md)
 </dt> <dt>
 
-[**Elemento multimediale**](media-element.md)
+[**Elemento media**](media-element.md)
 </dt> <dt>
 
 [**Elemento smartPlaylist**](smartplaylist-element.md)
 </dt> <dt>
 
-[**Riferimento agli elementi della playlist Windows Media**](windows-media-playlist-elements-reference.md)
+[**Windows Informazioni di riferimento per gli elementi della playlist multimediale**](windows-media-playlist-elements-reference.md)
 </dt> </dl>
 
  

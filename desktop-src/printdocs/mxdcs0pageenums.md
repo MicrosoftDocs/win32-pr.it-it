@@ -1,5 +1,5 @@
 ---
-description: L'enumerazione MXDC S0 PAGE ENUMS viene usata per specificare tipi di risorse che possono essere associate alle pagine nei documenti XPS e che possono essere elaborate o passate non elaborate da \_ \_ Microsoft \_ XPS Document Converter (MXDC) al relativo output.
+description: L'enumerazione MXDC S0 PAGE ENUMS viene usata per specificare i tipi di risorse che possono essere associate alle pagine nei documenti XPS e che possono essere elaborate o passate non elaborate da \_ \_ Microsoft \_ XPS Document Converter (MXDC) al relativo output.
 ms.assetid: e111d92e-5102-4b39-b311-f9ff1d1a96f1
 title: MXDC_S0_PAGE_ENUMS enumerazione (Winspool.h)
 ms.topic: reference
@@ -22,7 +22,7 @@ ms.locfileid: "118471316"
 ---
 # <a name="mxdc_s0_page_enums-enumeration"></a>Enumerazione MXDC \_ S0 \_ PAGE \_ ENUMS
 
-L'enumerazione **MXDC \_ S0 \_ PAGE \_ ENUMS** viene usata per specificare tipi di risorse che possono essere associate alle pagine nei documenti XPS e che possono essere elaborate o passate non elaborate da Microsoft XPS Document Converter (MXDC) al relativo output.
+L'enumerazione **MXDC \_ S0 \_ PAGE \_ ENUMS** viene usata per specificare i tipi di risorse che possono essere associate alle pagine nei documenti XPS e che possono essere elaborate o passate non elaborate da Microsoft XPS Document Converter (MXDC) al relativo output.
 
 ## <a name="syntax"></a>Sintassi
 
@@ -97,7 +97,7 @@ Profilo ICC che deve essere passato all'output di MXDC non elaborato.
 
 </dd> <dt>
 
-<span id="MXDC_RESOURCE_JPEG_THUMBNAIL"></span><span id="mxdc_resource_jpeg_thumbnail"></span>**ANTEPRIMA \_ JPEG DELLA RISORSA MXDC \_ \_**
+<span id="MXDC_RESOURCE_JPEG_THUMBNAIL"></span><span id="mxdc_resource_jpeg_thumbnail"></span>**ANTEPRIMA \_ JPEG DELLA \_ RISORSA MXDC \_**
 </dt> <dd>
 
 Anteprima JPEG che deve essere passata all'output di MXDC non elaborato.
@@ -130,7 +130,7 @@ Questa enumerazione viene usata principalmente come membro **dwResourceType** de
 |-------------------------------------|-----------------------------------------------------------------------------------------------------------|
 | Client minimo supportato<br/> | Windows Solo \[ app desktop di Vista\]<br/>                                                            |
 | Server minimo supportato<br/> | Windows Solo app desktop server 2008 \[\]<br/>                                                      |
-| Intestazione<br/>                   | <dl> <dt>Winspool.h (includere Windows.h)</dt> </dl> |
+| Intestazione<br/>                   | <dl> <dt>Winspool.h (include Windows.h)</dt> </dl> |
 
 
 

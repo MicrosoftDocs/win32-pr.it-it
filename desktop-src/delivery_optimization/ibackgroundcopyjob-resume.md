@@ -43,7 +43,7 @@ Questo metodo non presenta parametri.
 
 ## <a name="return-value"></a>Valore restituito
 
-Questo metodo restituisce i valori **HRESULT** seguenti, oltre ad altri.
+Questo metodo restituisce i **valori HRESULT** seguenti, oltre ad altri.
 
 
 
@@ -59,7 +59,7 @@ Questo metodo restituisce i valori **HRESULT** seguenti, oltre ad altri.
 
 ## <a name="remarks"></a>Commenti
 
-Quando si crea un processo, il processo viene inizialmente sospeso. Se **si chiama Resume,** il processo viene spostato nello stato Trasferimento. Si noti che il processo deve contenere uno o più file prima di chiamare questo metodo.
+Quando si crea un processo, il processo viene inizialmente sospeso. La **chiamata di Resume** sposta il processo allo stato Trasferimento. Si noti che il processo deve contenere uno o più file prima di chiamare questo metodo.
 
 Se un processo nello stato BG_JOB_STATE_TRANSIENT_ERROR o BG_JOB_STATE_ERROR, chiamare il metodo **Resume** per riavviare il processo dopo aver corretto l'errore.
 

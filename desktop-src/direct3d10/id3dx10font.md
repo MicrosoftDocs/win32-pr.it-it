@@ -44,10 +44,10 @@ L'interfaccia ID3DX10Font incapsula le trame e le risorse necessarie per eseguir
 | [**GetDesc**](id3dx10font-getdesc.md)                     | Ottiene una descrizione dell'oggetto tipo di carattere corrente.<br/>                                                                                              |
 | [**GetDevice**](id3dx10font-getdevice.md)                 | Recuperare il dispositivo Direct3D associato all'oggetto tipo di carattere.<br/>                                                                              |
 | [**GetGlyphData**](id3dx10font-getglyphdata.md)           | Restituisce informazioni sulla posizione e l'orientamento di un glifo in una cella di caratteri.<br/>                                                     |
-| [**GetTextMetrics**](id3dx10font-gettextmetrics.md)       | Recupera le caratteristiche del carattere.<br/>                                                                                                             |
-| [**PreloadCharacters**](id3dx10font-preloadcharacters.md) | Caricare una serie di caratteri nella memoria video per migliorare l'efficienza del rendering nel dispositivo.<br/>                                        |
-| [**PreloadGlyphs**](id3dx10font-preloadglyphs.md)         | Caricare una serie di glifi nella memoria video per migliorare l'efficienza del rendering nel dispositivo.<br/>                                            |
-| [**PreloadText**](id3dx10font-preloadtext.md)             | Caricare testo formattato nella memoria video per migliorare l'efficienza del rendering nel dispositivo. Questo metodo supporta le stringhe ANSI e Unicode.<br/> |
+| [**GetTextMetrics**](id3dx10font-gettextmetrics.md)       | Recuperare le caratteristiche del tipo di carattere.<br/>                                                                                                             |
+| [**Precaricare caratteri**](id3dx10font-preloadcharacters.md) | Caricare una serie di caratteri nella memoria video per migliorare l'efficienza del rendering nel dispositivo.<br/>                                        |
+| [**PrecaricaGlyphs**](id3dx10font-preloadglyphs.md)         | Caricare una serie di glifi nella memoria video per migliorare l'efficienza del rendering nel dispositivo.<br/>                                            |
+| [**Precarica testo**](id3dx10font-preloadtext.md)             | Caricare il testo formattato nella memoria video per migliorare l'efficienza del rendering nel dispositivo. Questo metodo supporta le stringhe ANSI e Unicode.<br/> |
 
 
 

@@ -1,39 +1,39 @@
 ---
-description: Emissione del comando SetDevicePropValue
+description: Esecuzione del comando SetDevicePropValue
 ms.assetid: d5917421-fbd4-477c-b29b-9f983c93cfdb
-title: Emissione del comando SetDevicePropValue
+title: Esecuzione del comando SetDevicePropValue
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: b8949cbf4fe22662de32c4c07de689fec2e6dbad
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: f30190fc7de07c4ae84bbb53f4b3ddd23fcb438c1f08d497d901bd3185db8e95
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "106318682"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118696665"
 ---
-# <a name="issuing-the-setdevicepropvalue-command"></a>Emissione del comando SetDevicePropValue
+# <a name="issuing-the-setdevicepropvalue-command"></a>Esecuzione del comando SetDevicePropValue
 
-Nell'esempio riportato in questa sezione viene richiamato il comando **SetDevicePropValue** MTP. Per una descrizione completa di questo comando e dei relativi parametri, vedere la [specifica MTP](https://www.usb.org/sites/default/files/MTPv1_1.zip).
+L'esempio in questa sezione richiama il **comando MTP SetDevicePropValue.** Per una descrizione completa di questo comando e dei relativi parametri, vedere la [specifica MTP.](https://www.usb.org/sites/default/files/MTPv1_1.zip)
 
-Poiché questo comando include i dati, o una fase di dati, è più implicato rispetto all' [esempio](issuing-the-getnumobjects-command.md)precedente. I comandi che includono una fase di dati possono essere suddivisi in tre parti:
+Poiché questo comando include dati (o una fase dei dati), è più coinvolto rispetto all'esempio [precedente.](issuing-the-getnumobjects-command.md) I comandi che includono una fase dati possono essere suddivisi in tre parti:
 
-1.  Avvio: l'applicazione avvia il comando segnalando al dispositivo che i dati sono imminenti o previsti.
-2.  Transfer: l'applicazione trasferisce i dati (scrivendo o leggendo i dati).
+1.  Avvio: l'applicazione avvia il comando informando il dispositivo che i dati sono in arrivo o previsti.
+2.  Trasferimento: l'applicazione trasferisce i dati (scrivendo o leggendo i dati).
 3.  Completamento: l'applicazione (o il dispositivo) segnala che il comando è completo e recupera un codice di risposta.
 
-L'elenco precedente viene convertito nella sequenza di comandi seguente:
+L'elenco precedente si traduce nella sequenza di comandi seguente:
 
-1.  Comando \_ WPD \_ MTP \_ ext \_ Execute \_ \_ con \_ dati \_ da \_ scrivere o WPD \_ comando \_ MTP \_ ext \_ Execute \_ \_ con \_ dati \_ da \_ leggere.
-2.  \_Comando WPD \_ MTP \_ ext \_ Write \_ data o WPD \_ Command \_ MTP \_ ext \_ Read \_ Data.
-3.  WPD \_ comando \_ MTP \_ ext \_ End \_ data \_ transfer.
+1.  COMANDO WPD \_ \_ MTP EXT EXECUTE COMMAND WITH DATA TO WRITE O \_ \_ \_ \_ \_ \_ \_ WPD \_ COMMAND \_ MTP \_ EXT EXECUTE COMMAND WITH DATA TO READ (COMANDO WPD COMMAND MTP EXT \_ EXECUTE CON \_ \_ \_ \_ \_ DATI DA LEGGERE).
+2.  WPD \_ COMMAND \_ MTP \_ EXT WRITE DATA O \_ \_ WPD \_ COMMAND \_ MTP \_ EXT READ \_ \_ DATA.
+3.  TRASFERIMENTO DEI DATI DI FINE DEL COMANDO \_ \_ WPD MTP \_ \_ \_ \_ EXT.
 
 Nel caso di **SetDevicePropValue**, il codice di esempio usa la sequenza seguente:
 
-1.  comando \_ WPD \_ MTP \_ ext \_ Execute \_ \_ con \_ dati \_ da \_ scrivere.
-2.  il \_ comando WPD \_ MTP \_ ext \_ scrive \_ i dati.
-3.  WPD \_ comando \_ MTP \_ ext \_ End \_ data \_ transfer.
+1.  COMANDO WPD \_ \_ MTP \_ EXT \_ EXECUTE CON DATI DA \_ \_ \_ \_ \_ SCRIVERE.
+2.  DATI DI SCRITTURA \_ MTP EXT DEL COMANDO \_ \_ WPD. \_ \_
+3.  TRASFERIMENTO DEI DATI DI FINE DEL COMANDO \_ \_ WPD MTP \_ \_ \_ \_ EXT.
 
-Nell'esempio di codice seguente viene illustrata la modalità di avvio della sequenza di comandi da parte di un'applicazione WPD.
+L'esempio di codice seguente mostra come un'applicazione WPD avvia la sequenza di comandi.
 
 
 ```C++
@@ -153,7 +153,7 @@ HRESULT SetDateTime(IPortableDevice* pDevice, LPCWSTR pwszDateTime)
 
 
 
-Nell'esempio di codice seguente viene illustrato il modo in cui un'applicazione WPD trasmette i dati dopo aver avviato il comando.
+L'esempio di codice seguente mostra come un'applicazione WPD trasmette i dati dopo aver avviato il comando.
 
 
 ```
@@ -222,7 +222,7 @@ Nell'esempio di codice seguente viene illustrato il modo in cui un'applicazione 
 
 
 
-L'esempio di codice seguente mostra come un'applicazione recupera un codice di risposta dal dispositivo.
+L'esempio di codice seguente illustra come un'applicazione recupera un codice di risposta dal dispositivo.
 
 
 ```

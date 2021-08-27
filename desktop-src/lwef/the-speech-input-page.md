@@ -15,7 +15,7 @@ ms.locfileid: "118474524"
 
 \[Microsoft Agent è deprecato a Windows 7 e potrebbe non essere disponibile nelle versioni successive di Windows.\]
 
-Un utente può modificare le opzioni di input vocale in questa pagina delle proprietà. L'utente può disabilitare l'input vocale, impostare il tasto di input in ascolto, scegliere se visualizzare la finestra Suggerimento per l'ascolto e scegliere di riprodurre un tono MIDI per indicare quando l'input vocale è disponibile.
+Un utente può modificare le opzioni di input vocale in questa pagina delle proprietà. L'utente può disabilitare l'input vocale, impostare il tasto di input di ascolto, scegliere se visualizzare la finestra Suggerimento di ascolto e scegliere di riprodurre un tono MIDI per indicare quando l'input vocale è disponibile.
 
 ![Finestra di dialogo Opzioni carattere avanzate](images/f6sipp.gif)
 

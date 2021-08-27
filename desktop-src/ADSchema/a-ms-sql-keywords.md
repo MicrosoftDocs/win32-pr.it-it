@@ -29,7 +29,7 @@ Non usato. Il valore predefinito è Key 1, Key 2, Key 3, Key 4 e Key 5.
 
 | Voce | Valore |
 |-------------------|---------------------------------------------|
-| CN                | Parole chiave ms-SQL                             |
+| CN                | Parole chiave ms-SQL-keywords                             |
 | Ldap-Display-Name | mS-SQL-Keywords                             |
 | Dimensione              | \-                                          |
 | Aggiorna privilegio  | \-                                          |

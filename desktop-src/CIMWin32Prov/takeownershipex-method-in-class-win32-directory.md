@@ -1,5 +1,5 @@
 ---
-description: Ottiene la proprietà del file di voce della directory logica specificato nel percorso dell'oggetto. Questo metodo è una versione estesa del metodo TakeOwnerShip.
+description: Ottiene la proprietà del file di voci di directory logico specificato nel percorso dell'oggetto. Questo metodo è una versione estesa del metodo TakeOwnerShip.
 ms.assetid: 73726207-e885-4957-bff8-6903c4b99278
 ms.tgt_platform: multiple
 title: Metodo TakeOwnerShipEx della classe Win32_Directory
@@ -23,9 +23,9 @@ ms.locfileid: "118418514"
 ---
 # <a name="takeownershipex-method-of-the-win32_directory-class"></a>Metodo TakeOwnerShipEx della classe Directory Win32 \_
 
-Il metodo della classe [WMI](/windows/desktop/WmiSdk/retrieving-a-class) **TakeOwnerShipEx** ottiene la proprietà del file di voce della directory logica specificato nel percorso dell'oggetto. Questo metodo è una versione estesa del [**metodo TakeOwnerShip.**](takeownership-method-in-class-win32-directory.md) Se il file logico è effettivamente una directory, questo metodo agisce in modo ricorsivo, assumendo la proprietà di tutti i file e le sottodirectory contenuti nella directory.
+Il metodo della classe [WMI](/windows/desktop/WmiSdk/retrieving-a-class) **TakeOwnerShipEx** ottiene la proprietà del file di voce di directory logica specificato nel percorso dell'oggetto. Questo metodo è una versione estesa del [**metodo TakeOwnerShip.**](takeownership-method-in-class-win32-directory.md) Se il file logico è effettivamente una directory, questo metodo agisce in modo ricorsivo, assumendo la proprietà di tutti i file e le sottodirectory contenuti nella directory.
 
-Questo argomento usa la Managed Object Format (MOF). Per altre informazioni sull'uso di questo metodo, vedere [Chiamata di un metodo](/windows/desktop/WmiSdk/calling-a-method).
+In questo argomento viene Managed Object Format sintassi MOF (Managed Object Format). Per altre informazioni sull'uso di questo metodo, vedere [Chiamata di un metodo](/windows/desktop/WmiSdk/calling-a-method).
 
 ## <a name="syntax"></a>Sintassi
 
@@ -47,26 +47,26 @@ uint32 TakeOwnerShipEx(
 *StopFileName* \[ Cambio\]
 </dt> <dd>
 
-Nome del file o della directory in cui il **metodo TakeOwnerShipEx non** è riuscito. Questo parametro è **NULL se** il metodo ha esito positivo.
+Nome del file o della directory in cui il **metodo TakeOwnerShipEx non** è riuscito. Questo parametro è **NULL** se il metodo ha esito positivo.
 
 </dd> <dt>
 
 *StartFileName* \[ in, facoltativo\]
 </dt> <dd>
 
-Nome del file o della directory figlio da usare come punto di partenza per **TakeOwnerShipEx.** Il *parametro StartFileName* è in genere il *parametro StopFileName* che specifica il file o la directory in cui si è verificato un errore dalla chiamata al metodo precedente. Se questo parametro è **NULL,** l'operazione viene eseguita sul file o sulla directory specificata nella chiamata [**ExecMethod.**](/windows/desktop/api/wbemcli/nf-wbemcli-iwbemservices-execmethod)
+Nome del file o della directory figlio da usare come punto di partenza per **TakeOwnerShipEx.** Il *parametro StartFileName* è in genere il parametro *StopFileName* che specifica il file o la directory in cui si è verificato un errore dalla chiamata al metodo precedente. Se questo parametro è **NULL,** l'operazione viene eseguita sul file o sulla directory specificata nella [**chiamata a ExecMethod.**](/windows/desktop/api/wbemcli/nf-wbemcli-iwbemservices-execmethod)
 
 Se *si usa StartFileName,* *anche Recursive* deve essere impostato su true.
 
 </dd> <dt>
 
-*Ricorsiva* \[ in, facoltativo\]
+*Ricorsivo* \[ in, facoltativo\]
 </dt> <dd>
 
-Se **True,** la modifica della proprietà viene applicata in modo ricorsivo ai file e alle directory all'interno della directory specificata [**dall'istanza di CIM \_ LogicalFile.**](cim-logicalfile.md)
+Se **True,** la modifica della proprietà viene applicata in modo ricorsivo ai file e alle directory all'interno della directory specificata [**dall'istanza di \_ CiM LogicalFile.**](cim-logicalfile.md)
 
 > [!Note]  
-> Per le istanze di file, *il parametro di* input ricorsivo viene ignorato.
+> Per le istanze di file, *il parametro di* input Ricorsivo viene ignorato.
 
  
 
@@ -88,7 +88,7 @@ La richiesta è stata completata.
 **2**
 </dt> <dd>
 
-L'accesso è stato negato.
+Accesso negato.
 
 </dd> <dt>
 
@@ -171,7 +171,7 @@ Un parametro specificato non è valido.
 
 ## <a name="examples"></a>Esempio
 
-Il codice Visual Basic script seguente chiama il [**metodo TakeOwnerShipEx**](takeownershipex-method-in-class-cim-directory.md) per assumere la proprietà della cartella temporanea \\ C:.
+Il codice Visual Basic script seguente chiama il [**metodo TakeOwnerShipEx**](takeownershipex-method-in-class-cim-directory.md) per assumere la proprietà della cartella \\ C: temp.
 
 
 ```VB

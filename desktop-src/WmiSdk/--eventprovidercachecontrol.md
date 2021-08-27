@@ -24,7 +24,7 @@ ms.locfileid: "118557925"
 ---
 # <a name="__eventprovidercachecontrol-class"></a>\_\_Classe EventProviderCacheControl
 
-La **\_ \_ classe di sistema EventProviderCacheControl** controlla quando viene scaricato un provider di eventi. Si trova solo nello spazio dei \\ nomi radice.
+La **\_ \_ classe di sistema EventProviderCacheControl** controlla quando un provider di eventi viene scaricato. Si trova solo nello spazio dei \\ nomi radice.
 
 La sintassi seguente è semplificata dal codice MOF (Managed Object Format) e include tutte le proprietà ereditate. Le proprietà sono elencate in ordine alfabetico, non in ordine MOF.
 
@@ -56,18 +56,18 @@ La **\_ \_ classe EventProviderCacheControl** ha queste proprietà.
 Tipo di dati: **datetime**
 </dt> <dt>
 
-Tipo di accesso: Lettura/Scrittura
+Tipo di accesso: Lettura/scrittura
 </dt> </dl>
 
-Intervallo di tempo dopo Windows management instrumentation (WMI) rilascia un provider di eventi. L'ora è in [formato intervallo](interval-format.md). Lo scaricamento del provider può richiedere fino al doppio dell'intervallo specificato.
+Intervallo di tempo dopo Windows Wmi (Management Instrumentation) rilascia un provider di eventi. L'ora è nel [formato intervallo](interval-format.md). Lo scaricamento del provider può richiedere fino al doppio dell'intervallo specificato.
 
 </dd> </dl>
 
 ## <a name="remarks"></a>Commenti
 
-La **\_ \_ classe EventProviderCacheControl** è derivata da [**\_ \_ CacheControl**](--cachecontrol.md).
+La **\_ \_ classe EventProviderCacheControl** è derivata da [**\_ \_ CacheControl.**](--cachecontrol.md)
 
-Per altre informazioni sull'uso di questa classe, vedere [Scaricamento di un provider](unloading-a-provider.md).
+Per altre informazioni sull'uso di questa classe, vedere [Scaricamento di un provider.](unloading-a-provider.md)
 
 ## <a name="requirements"></a>Requisiti
 

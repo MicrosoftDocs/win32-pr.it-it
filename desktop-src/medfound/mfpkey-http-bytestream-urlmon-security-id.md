@@ -1,41 +1,41 @@
 ---
-description: Imposta l'identificatore di sicurezza radice per il flusso di byte HTTP Microsoft Media Foundation.
+description: Imposta l'identificatore di sicurezza radice per il Microsoft Media Foundation di byte HTTP.
 ms.assetid: DD2B9487-53B0-4753-8C47-4D6BFE113109
-title: Proprietà MFPKEY_HTTP_ByteStream_Urlmon_Security_Id (Mfidl. h)
+title: MFPKEY_HTTP_ByteStream_Urlmon_Security_Id proprietà (Mfidl.h)
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 2cf23e0c3d4aa5ab25590cfdb207fd50f04ecaec
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: d64b07dc7d419624bfe300b890b58554394a5cd3e8363ddcbc4d5be91d9e4b48
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "106332665"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118738008"
 ---
-# <a name="mfpkey_http_bytestream_urlmon_security_id-property"></a>MFPKEY \_ http \_ ByteStream \_ Urlmon \_ sicurezza \_ ID proprietà
+# <a name="mfpkey_http_bytestream_urlmon_security_id-property"></a>Proprietà MFPKEY \_ HTTP \_ ByteStream \_ Urlmon \_ Security \_ Id
 
-Imposta l'identificatore di sicurezza radice per il flusso di byte HTTP Microsoft Media Foundation.
+Imposta l'identificatore di sicurezza radice per il Microsoft Media Foundation di byte HTTP.
 
 
 
 Tipo di dati
 
-Tipo PROPVARIANT (VT)
+Tipo PROPVARIANT (vt)
 
 membro PROPVARIANT
 
-**Campo CAUB**
+**CAUB**
 
-VT \_ vettore \| VT \_ UI1
+VT \_ VECTOR \| VT \_ UI1
 
-**Campo CAUB**
+**caub**
 
 
 
 ## <a name="remarks"></a>Commenti
 
-Usare questa proprietà per configurare il flusso di byte HTTP Media Foundation. Per impostare la proprietà, passare un puntatore [**IPropertyStore**](/windows/win32/api/propsys/nn-propsys-ipropertystore) al resolver di origine. Per altre informazioni, vedere [configurazione di un'origine multimediale](configuring-a-media-source.md).
+Usare questa proprietà per configurare il flusso Media Foundation byte HTTP. Per impostare la proprietà, passare un [**puntatore IPropertyStore**](/windows/win32/api/propsys/nn-propsys-ipropertystore) al sistema di risoluzione di origine. Per altre informazioni, vedere [Configurazione di un'origine multimediale](configuring-a-media-source.md).
 
-Questa proprietà si applica solo quando la proprietà [MFPKEY \_ http \_ ByteStream \_ enable \_ Urlmon](mfpkey-http-bytestream-enable-urlmon.md) è impostata su **Variant \_ true**.
+Questa proprietà si applica solo quando la [proprietà MFPKEY \_ HTTP \_ ByteStream Enable \_ \_ Urlmon](mfpkey-http-bytestream-enable-urlmon.md) è impostata su **VARIANT \_ TRUE.**
 
 ## <a name="requirements"></a>Requisiti
 
@@ -43,7 +43,7 @@ Questa proprietà si applica solo quando la proprietà [MFPKEY \_ http \_ ByteSt
 
 | Requisito | Valore |
 |-------------------|------------------------------------------------------------------------------------|
-| Intestazione<br/> | <dl> <dt>Mfidl. h</dt> </dl> |
+| Intestazione<br/> | <dl> <dt>Mfidl.h</dt> </dl> |
 
 
 
@@ -51,7 +51,7 @@ Questa proprietà si applica solo quando la proprietà [MFPKEY \_ http \_ ByteSt
 
 <dl> <dt>
 
-[Proprietà Media Foundation](media-foundation-properties.md)
+[Media Foundation proprietà](media-foundation-properties.md)
 </dt> </dl>
 
  

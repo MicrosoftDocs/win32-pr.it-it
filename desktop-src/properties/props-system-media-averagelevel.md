@@ -4,12 +4,12 @@ ms.assetid: e5500ae2-f250-4b27-8eaa-bff8c2f7c797
 title: System.Media.AverageLevel
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: eaccb62bbe71ac06f821123b971643f92fcbbba3
-ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
+ms.openlocfilehash: 3a01102d09296723fd01f2304b0e5c29be934bea5d509c94a6c057e038478670
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/28/2021
-ms.locfileid: "108092319"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118726360"
 ---
 # <a name="systemmediaaveragelevel"></a>System.Media.AverageLevel
 

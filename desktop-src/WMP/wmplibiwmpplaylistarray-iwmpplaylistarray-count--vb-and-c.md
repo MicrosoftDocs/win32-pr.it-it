@@ -3,9 +3,9 @@ title: Proprietà count IWMPPlaylistArray
 description: La proprietà count ottiene il numero di playlist nella matrice di playlist.
 ms.assetid: 24603d05-4016-4aac-a623-75be668065c8
 keywords:
-- proprietà count Windows Media Player
-- proprietà count Windows Media Player, interfaccia IWMPPlaylistArray
-- Interfaccia IWMPPlaylistArray Windows Media Player , proprietà count
+- Proprietà count Windows Media Player
+- Proprietà count Windows Media Player, interfaccia IWMPPlaylistArray
+- Interfaccia IWMPPlaylistArray Windows Media Player proprietà , count
 topic_type:
 - apiref
 api_name:
@@ -46,11 +46,11 @@ Public ReadOnly Property count As System.Int32
 
 ## <a name="property-value"></a>Valore proprietà
 
-Oggetto **System.Int32** che rappresenta il numero di playlist nella matrice.
+**System.Int32** che rappresenta il numero di playlist nella matrice.
 
 ## <a name="remarks"></a>Commenti
 
-Prima di usare questa proprietà, è necessario avere accesso in lettura alla libreria. Per altre informazioni, vedere [Accesso alla libreria](library-access.md).
+Prima di usare questa proprietà, è necessario avere accesso in lettura alla libreria. Per altre informazioni, vedere [Accesso alla libreria.](library-access.md)
 
 ## <a name="requirements"></a>Requisiti
 
@@ -58,7 +58,7 @@ Prima di usare questa proprietà, è necessario avere accesso in lettura alla li
 
 | Requisito | Valore |
 |----------------------|------------------------------------------------------------------------------------------------------------------------|
-| Versione<br/>   | Windows Media Player serie 9 o successive.<br/>                                                                     |
+| Versione<br/>   | Windows Media Player serie 9 o successiva.<br/>                                                                     |
 | Spazio dei nomi<br/> | **WMPLib**<br/>                                                                                                  |
 | Assembly<br/>  | <dl> <dt>Interop.WMPLib.dll (Interop.WMPLib.dll.dll)</dt> </dl> |
 

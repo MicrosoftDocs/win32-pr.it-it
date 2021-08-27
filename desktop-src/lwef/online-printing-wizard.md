@@ -1,62 +1,62 @@
 ---
 title: Stampa guidata online
-description: La procedura guidata di stampa online di Windows Vista consente agli utenti di ordinare stampe di foto da rivenditori di stampa online.
+description: La Windows guidata stampa online di Vista consente agli utenti di ordinare stampe di foto dai rivenditori di stampa online partecipanti.
 ms.assetid: 1e73a5d0-2ca8-4eca-846a-bd69eee257cb
 keywords:
 - Stampa guidata online
-- icone, stampa guidata online
+- icone, Stampa guidata online
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 8536eea7a51eddb2dbb46d10c9291a60edfdc74e
-ms.sourcegitcommit: ebd3ce6908ff865f1ef66f2fc96769be0aad82e1
+ms.openlocfilehash: bc402f1fe5853c7a255ea45940d62efcd092c424be6905287315c5cfe5fc7504
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/19/2020
-ms.locfileid: "104337422"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118975921"
 ---
 # <a name="online-printing-wizard"></a>Stampa guidata online
 
-La procedura guidata di stampa online di Windows Vista consente agli utenti di ordinare stampe di foto da rivenditori di stampa online. Questa procedura guidata è progettata in modo da poter essere richiamata a livello di codice da qualsiasi applicazione che desideri offrire agli utenti la possibilità di ordinare stampe di foto. La stampa guidata foto è disponibile in Windows Vista. PIX per Windows
+La Windows guidata stampa online di Vista consente agli utenti di ordinare stampe di foto dai rivenditori di stampa online partecipanti. Questa procedura guidata è progettata in modo che possa essere richiamata a livello di codice da qualsiasi applicazione che voglia offrire agli utenti la possibilità di ordinare stampe di foto. La Stampa guidata foto è disponibile in Windows Vista. PIX per Windows
 
--   [Funzionalità fornite dalla procedura guidata di stampa online](#features-provided-by-the-online-print-wizard)
--   [Formati di file di foto supportati](#supported-photo-file-formats)
--   [Avvio a livello di codice della procedura guidata di stampa online](#programmatically-launching-the-online-print-wizard)
--   [Accesso all'icona della procedura guidata di stampa online](#accessing-the-online-print-wizard-icon)
--   [Proprietà MRU della procedura guidata di stampa online](#online-print-wizard-mru-properties)
+-   [Funzionalità fornite dalla Stampa guidata online](#features-provided-by-the-online-print-wizard)
+-   [Formati di file foto supportati](#supported-photo-file-formats)
+-   [Avvio della Stampa guidata online a livello di codice](#programmatically-launching-the-online-print-wizard)
+-   [Accesso all'icona della Stampa guidata online](#accessing-the-online-print-wizard-icon)
+-   [Proprietà MRU della Stampa guidata online](#online-print-wizard-mru-properties)
 
-## <a name="features-provided-by-the-online-print-wizard"></a>Funzionalità fornite dalla procedura guidata di stampa online
+## <a name="features-provided-by-the-online-print-wizard"></a>Funzionalità fornite dalla Stampa guidata online
 
-La procedura guidata di stampa online di Windows Vista consente agli utenti di ordinare le stampe da una selezione di rivenditori di stampa online. Quando viene richiamato, la procedura guidata:
+La Windows guidata stampa online di Vista consente agli utenti di ordinare stampe da una selezione di rivenditori di stampa online partecipanti. Quando viene richiamata, la procedura guidata:
 
-1.  Accetta un file o un elenco di file per cui è necessario ordinare le stampe.
+1.  Accetta un file o un elenco di file per i quali devono essere ordinate le stampe.
 2.  Recupera automaticamente l'elenco corrente dei rivenditori di stampa online partecipanti e consente all'utente di selezionare il rivenditore da cui acquistare le stampe foto.
-3.  Guida l'utente attraverso il processo o Ordina le stampe.
+3.  Guida l'utente nel processo o nell'ordinamento delle stampe.
 
-Qualsiasi applicazione può trarre vantaggio dalle funzionalità offerte dalla procedura guidata di stampa online di Windows Vista. Un'applicazione deve passare solo il file o i file per i quali verranno ordinate le stampe e la procedura guidata guiderà l'utente attraverso il processo di ordinamento.
+Qualsiasi applicazione può trarre vantaggio dalle funzionalità offerte dalla Windows stampa online di Vista. Un'applicazione deve passare solo il file o i file per cui verranno ordinate le stampe e la procedura guidata guida l'utente nel processo di ordinamento.
 
-Nella figura seguente viene illustrata la procedura guidata di stampa online di Windows Vista che visualizza un elenco di esempio dei rivenditori di stampa online partecipanti.
+Nella figura seguente viene illustrata la Windows guidata stampa online di Vista con un elenco di esempio dei rivenditori di stampa online partecipanti.
 
-![procedura guidata di stampa online di Windows Vista](images/opw.png)
+![Creazione guidata stampa online di Windows Vista](images/opw.png)
 
-## <a name="supported-photo-file-formats"></a>Formati di file di foto supportati
+## <a name="supported-photo-file-formats"></a>Formati di file foto supportati
 
-La procedura guidata di stampa online di Windows Vista supporta qualsiasi formato di file di immagine per cui è installato un codec di Windows Imaging Component (WIC). WIC fornisce diversi codec standard, tra cui:
+La Windows guidata stampa online di Vista supporta qualsiasi formato di file di immagine per il quale è installato un codec WIC (Windows Imaging Component). WIC offre diversi codec standard, tra cui:
 
 -   Bitmap (BMP)
 -   Graphics Interchange Format (GIF)
--   Formato dell'icona (ICO)
+-   Formato icona (ICO)
 -   Joint Photographic Experts Group (JPEG)
 -   Portable Network Graphics (PNG)
 -   Tagged Image File Format (TIFF)
--   Formato foto Windows Media
+-   Windows Formato foto multimediale
 
-Per ulteriori informazioni sui codec WIC e WIC, vedere componente per la [creazione di immagini Windows](https://msdn.microsoft.com/library/ms737408(VS.85).aspx).
+Per altre informazioni sui codec WIC e WIC, vedere Windows [Imaging Component](https://msdn.microsoft.com/library/ms737408(VS.85).aspx).
 
-I formati di file supportati dai rivenditori di stampa online variano a seconda del rivenditore. è possibile che un rivenditore specifico non supporti tutti i formati di file supportati dalla procedura guidata di stampa online di Windows Vista. Se l'utente tenta di ordinare le stampe in un formato non supportato dal rivenditore selezionato, la procedura guidata di stampa online di Windows vista informa l'utente che il rivenditore selezionato non supporta il formato di file inviato.
+I formati di file supportati dai rivenditori di stampa online variano da rivenditore a rivenditore; è possibile che un rivenditore specifico non supporti tutti i formati di file supportati dalla Windows stampa online di Vista. Se l'utente tenta di ordinare le stampe in un formato non supportato dal rivenditore selezionato, la Stampa guidata in linea di Windows Vista notifica all'utente che il rivenditore selezionato non supporta il formato di file inviato.
 
-## <a name="programmatically-launching-the-online-print-wizard"></a>Avvio a livello di codice della procedura guidata di stampa online
+## <a name="programmatically-launching-the-online-print-wizard"></a>Avvio della Stampa guidata online a livello di codice
 
-Per richiamare la procedura guidata di stampa online di Windows Vista, chiamare l'interfaccia [IDropTarget](/windows/win32/api/oleidl/nn-oleidl-idroptarget) con l'identificatore di classe seguente (CLSID):
+Per richiamare la Windows guidata stampa online di Vista, chiamare [l'interfaccia IDropTarget](/windows/win32/api/oleidl/nn-oleidl-idroptarget) con l'identificatore di classe (CLSID) seguente:
 
 
 ```
@@ -65,9 +65,9 @@ CLSID_PublishDropTarget
 
 
 
-Questo CLSID è definito in ShObjIdl. h e ShObjIdl. idl. I file che devono essere elaborati dalla stampa guidata di Windows Vista sono specificati in un oggetto [IDataObject](/windows/win32/api/objidl/nn-objidl-idataobject) .
+Questo CLSID è definito in Shobjidl.h e Shobjidl.idl. I file che devono essere elaborati dalla Windows guidata stampa online di Vista vengono specificati in un [oggetto IDataObject.](/windows/win32/api/objidl/nn-objidl-idataobject)
 
-Nell'esempio di codice riportato di seguito viene illustrato come richiamare la procedura guidata di stampa online di Windows Vista.
+Nell'esempio di codice seguente viene illustrato come richiamare la Windows guidata stampa online di Vista.
 
 
 ```
@@ -93,13 +93,13 @@ spDropTarget->Drop(pDataObject, MK_LBUTTON, pt, &dwEffect);}
 
 
 
-## <a name="accessing-the-online-print-wizard-icon"></a>Accesso all'icona della procedura guidata di stampa online
+## <a name="accessing-the-online-print-wizard-icon"></a>Accesso all'icona della Stampa guidata online
 
-La procedura guidata stampa online di Windows Vista consente di esportare un'icona accessibile e visualizzata dalle applicazioni che lo chiamano. Nella figura seguente viene illustrata l'icona della procedura guidata di stampa online di Windows Vista.
+La Windows guidata stampa online di Vista esporta un'icona accessibile e visualizzata dalle applicazioni che la chiamano. Nella figura seguente viene illustrata l Windows di Stampa guidata vista online.
 
-![icona della procedura guidata di stampa online di Windows Vista](images/opw-icon.png)
+![Icona della stampa guidata online di Windows Vista](images/opw-icon.png)
 
-Nell'esempio di codice seguente viene illustrato come recuperare l'indice per l'icona della procedura guidata di stampa online di Windows Vista leggendo la proprietà **OPWIcon** .
+Nell'esempio di codice seguente viene illustrato come recuperare l'indice per l'icona della Stampa guidata Windows Vista Online leggendo la **proprietà OPWIcon.**
 
 
 ```
@@ -129,23 +129,23 @@ if SUCCEEDED(hr)
 
 
 
-## <a name="online-print-wizard-mru-properties"></a>Proprietà MRU della procedura guidata di stampa online
+## <a name="online-print-wizard-mru-properties"></a>Proprietà MRU della Stampa guidata online
 
-La procedura guidata di stampa online di Windows Vista definisce tre proprietà correlate al rivenditore di stampa online usato più di recente (MRU).
+La Windows guidata stampa online di Vista definisce tre proprietà correlate al rivenditore di stampa online usato più di recente.
 
 
 
-| Nome della proprietà | Valore/funzione della proprietà                                                                                                                                                                                                                                                   |
+| Nome della proprietà | Valore proprietà/Funzione                                                                                                                                                                                                                                                   |
 |---------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | **MRUIcon**   | L'indice dell'icona per il rivenditore di stampa online usato più di recente può essere letto da questa proprietà.                                                                                                                                                                 |
 | **MRUName**   | Il nome del rivenditore di stampa online usato più di recente può essere letto da questa proprietà.                                                                                                                                                                               |
-| **UseMRU**    | Un valore di **variabile** **VT \_ bool** che indica se la procedura guidata deve ignorare la pagina di selezione del rivenditore di stampa online e usare invece il rivenditore di stampa online usato più di recente. Impostare questa proprietà su **Variant \_ true** per ignorare la pagina di selezione del rivenditore. |
+| **UseMRU**    | Valore **VARIANT** **VT \_ BOOL** che indica se la procedura guidata deve ignorare la pagina di selezione del rivenditore di stampa online e usare il rivenditore di stampa online usato più di recente. Impostare questa proprietà su **VARIANT \_ TRUE per ignorare** la pagina di selezione del rivenditore. |
 
 
 
- 
+ 
 
-Nell'esempio di codice seguente viene illustrato come impostare la proprietà UseMRU in modo che la procedura guidata di stampa online di Windows Vista ignori la pagina di selezione del rivenditore di stampa online e selezioni automaticamente il rivenditore usato più di recente.
+L'esempio di codice seguente illustra come impostare la proprietà UseMRU in modo che la Stampa guidata di Windows Vista esempli la pagina di selezione del rivenditore di stampa online e selezioni automaticamente il rivenditore usato più di recente.
 
 
 ```
@@ -182,7 +182,7 @@ spDropTarget->Drop(pDataObject, MK_LBUTTON, pt, &dwEffect);
 
 
 
-Nell'esempio di codice riportato di seguito viene illustrato come leggere le proprietà MRUName e MRUIcon.
+L'esempio di codice seguente illustra come leggere le proprietà MRUName e MRUIcon.
 
 
 ```
@@ -219,6 +219,6 @@ if SUCCEEDED(hr)
 
 
 
- 
+ 
 
- 
+ 

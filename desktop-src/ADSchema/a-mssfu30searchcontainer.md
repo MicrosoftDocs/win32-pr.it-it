@@ -32,7 +32,7 @@ Contiene l'identificatore di un oggetto che specifica dove inizierà ogni ricerc
 | CN                | msSFU-30-Search-Container                   |
 | Ldap-Display-Name | msSFU30SearchContainer                      |
 | Dimensione              | \-                                          |
-| Aggiorna privilegio  | \-                                          |
+| Privilegio di aggiornamento  | \-                                          |
 | Frequenza di aggiornamento  | \-                                          |
 | Attribute-Id      | 1.2.840.113556.1.6.18.1.300                 |
 | System-Id-Guid    | 27eebfa2-fbeb-4f8e-aad6-c50247994291        |
@@ -56,7 +56,7 @@ Contiene l'identificatore di un oggetto che specifica dove inizierà ogni ricerc
 | ID collegamento                | \-                                                             |
 | MAPI-Id                | \-                                                             |
 | System-Only            | Falso                                                          |
-| A valore singolo       | Vero                                                           |
+| Is-Single-Valued       | Vero                                                           |
 | Indicizzato             | Falso                                                          |
 | Nel catalogo globale      | Falso                                                          |
 | NT-Security-Descriptor | O:BAG:BAD:S:                                                   |
@@ -77,7 +77,7 @@ Contiene l'identificatore di un oggetto che specifica dove inizierà ogni ricerc
 | ID collegamento                | \-                                                             |
 | MAPI-Id                | \-                                                             |
 | System-Only            | Falso                                                          |
-| A valore singolo       | Vero                                                           |
+| Is-Single-Valued       | Vero                                                           |
 | Indicizzato             | Falso                                                          |
 | Nel catalogo globale      | Falso                                                          |
 | NT-Security-Descriptor | O:BAG:BAD:S:                                                   |
@@ -98,7 +98,7 @@ Contiene l'identificatore di un oggetto che specifica dove inizierà ogni ricerc
 | ID collegamento                | \-                                                             |
 | MAPI-Id                | \-                                                             |
 | System-Only            | Falso                                                          |
-| A valore singolo       | Vero                                                           |
+| Is-Single-Valued       | Vero                                                           |
 | Indicizzato             | Falso                                                          |
 | Nel catalogo globale      | Falso                                                          |
 | NT-Security-Descriptor | O:BAG:BAD:S:                                                   |
@@ -119,7 +119,7 @@ Contiene l'identificatore di un oggetto che specifica dove inizierà ogni ricerc
 | ID collegamento                | \-                                                             |
 | MAPI-Id                | \-                                                             |
 | System-Only            | Falso                                                          |
-| Is-Single-Valued       | Vero                                                           |
+| A valore singolo       | Vero                                                           |
 | Indicizzato             | Falso                                                          |
 | Nel catalogo globale      | Falso                                                          |
 | NT-Security-Descriptor | O:BAG:BAD:S:                                                   |

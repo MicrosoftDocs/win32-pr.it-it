@@ -14,12 +14,12 @@ api_type:
 api_location:
 - d3dx9.lib
 - d3dx9.dll
-ms.openlocfilehash: 46e04c8c86bd0cdf7acea44872d00ad19f620ee6
-ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
+ms.openlocfilehash: e5bbfee8dd7366bbfb3b17aa83708f5d54f3a8b460b2dfab4a7cdc587b3d40d6
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/28/2021
-ms.locfileid: "108090149"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118800221"
 ---
 # <a name="id3dxtextureshadersetmatrixtransposepointerarray-method"></a>Metodo ID3DXTextureShader::SetMatrixTransposePointerArray
 

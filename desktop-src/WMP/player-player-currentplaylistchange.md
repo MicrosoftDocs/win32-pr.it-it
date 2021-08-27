@@ -1,10 +1,10 @@
 ---
 title: Evento Player.CurrentPlaylistChange
-description: L'evento CurrentPlaylistChange si verifica quando cambia qualcosa all'interno della playlist corrente. | Evento Player.CurrentPlaylistChange
+description: L'evento CurrentPlaylistChange si verifica quando viene modificato un elemento all'interno della playlist corrente. | Evento Player.CurrentPlaylistChange
 ms.assetid: 5270373e-e401-40c6-bf8c-ef0557610372
 keywords:
 - Evento CurrentPlaylistChange Windows Media Player
-- Evento CurrentPlaylistChange Windows Media Player , classe Player
+- Classe di evento CurrentPlaylistChange Windows Media Player , Player
 - Classe Player Windows Media Player, evento CurrentPlaylistChange
 topic_type:
 - apiref
@@ -25,7 +25,7 @@ ms.locfileid: "118338147"
 ---
 # <a name="playercurrentplaylistchange-event"></a>Evento Player.CurrentPlaylistChange
 
-**L'evento CurrentPlaylistChange** si verifica quando cambia qualcosa all'interno della playlist corrente.
+**L'evento CurrentPlaylistChange** si verifica quando viene modificato un elemento all'interno della playlist corrente.
 
 ## <a name="syntax"></a>Sintassi
 
@@ -45,7 +45,7 @@ Player.CurrentPlaylistChange(
 *change* 
 </dt> <dd>
 
-**Numero** (**long**) che indica il tipo di modifica apportata alla playlist. Vedere Il *lettore*. **Evento PlaylistChange** per una tabella di valori possibili.
+**Numero** (**long**) che indica il tipo di modifica apportata alla playlist. Vedere *player*. **Evento PlaylistChange** per una tabella di valori possibili.
 
 </dd> </dl>
 
@@ -57,11 +57,11 @@ Questo evento non restituisce un valore.
 
 Questo evento non si verifica quando una playlist diversa diventa la playlist corrente. Si verifica solo quando si verifica una modifica all'interno della playlist corrente, ad esempio un elemento multimediale aggiunto alla playlist.
 
-Il valore dei parametri dell'evento viene specificato da Windows Media Player ed è accessibile o passato a un metodo in un file JScript importato usando il nome del parametro specificato. Questo nome di parametro deve essere digitato esattamente come illustrato, inclusa l'maiuscola.
+Il valore dei parametri dell'evento viene specificato da Windows Media Player e può essere accessibile o passato a un metodo in un file JScript importato usando il nome del parametro specificato. Questo nome di parametro deve essere digitato esattamente come illustrato, inclusa l'maiuscola.
 
 ## <a name="examples"></a>Esempio
 
-Nell'JScript seguente viene aggiornato il testo in un elemento DIV HTML, denominato PlItems, per visualizzare i nomi degli elementi multimediali nella playlist corrente. **L'oggetto** Player è stato creato con ID = "Player".
+Nell'JScript seguente viene aggiornato il testo in un elemento DIV HTML, denominato PlItems, per visualizzare i nomi degli elementi multimediali nella playlist corrente. **L'oggetto Player** è stato creato con ID = "Player".
 
 
 ```JScript

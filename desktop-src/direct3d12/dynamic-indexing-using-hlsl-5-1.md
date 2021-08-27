@@ -57,7 +57,7 @@ float4 PSSceneMain(PSSceneIn input) : SV_Target
 
 La funzionalità di matrice non associata è illustrata dalla `g_txMats[]` matrice perché non specifica una dimensione di matrice. L'indicizzazione dinamica viene usata per `g_txMats[]` indicizzare in `matIndex` con , definito come costante radice. Lo shader non ha alcuna conoscenza delle dimensioni, della matrice o del valore dell'indice in fase di compilazione. Entrambi gli attributi sono definiti nella firma radice dell'oggetto stato della pipeline usato con lo shader.
 
-Per sfruttare le funzionalità di indicizzazione dinamica in HLSL, è necessario che lo shader sia compilato con SM 5.1. Inoltre, per usare matrici senza associazione, è necessario usare anche il flag **/enable \_ unbounded \_ descriptor \_ tables.** Le opzioni della riga di comando seguenti vengono usate per compilare questo shader con [lo strumento Effect-Compiler](/windows/desktop/direct3dtools/fxc) (FXC):
+Per sfruttare le funzionalità di indicizzazione dinamica in HLSL, è necessario che lo shader sia compilato con SM 5.1. Inoltre, per usare matrici senza associazione, è necessario usare anche il flag **/enable \_ unbounded \_ descriptor \_ tables.** Le opzioni della riga di comando seguenti vengono usate per compilare questo shader con [lo strumento Effect-Compiler Tool](/windows/desktop/direct3dtools/fxc) (FXC):
 
 ``` syntax
 fxc /Zi /E"PSSceneMain" /Od /Fo"dynamic_indexing_pixel.cso" /ps"_5_1" /nologo /enable_unbounded_descriptor_tables
@@ -65,7 +65,7 @@ fxc /Zi /E"PSSceneMain" /Od /Fo"dynamic_indexing_pixel.cso" /ps"_5_1" /nologo /e
 
 ## <a name="set-up-the-root-signature"></a>Configurare la firma radice
 
-Si esamini ora la definizione della firma radice, in particolare come si definiscono le dimensioni della matrice non associata e si collega una costante radice a `matIndex` . Per il pixel shader, si definiscono tre elementi: una tabella di descrittori per sRV (texture2D), una tabella di descrittori per i campionatori e una singola costante radice. La tabella dei descrittori per gli SRV contiene `CityMaterialCount + 1` voci. `CityMaterialCount` è una costante che definisce la lunghezza di `g_txMats[]` e + 1 è per `g_txDiffuse` . La tabella dei descrittori per i campionatori contiene una sola voce e nel metodo **LoadAssets** viene definito solo un valore costante radice a 32 bit tramite **InitAsConstants**(...)..
+Si esamini ora la definizione della firma radice, in particolare come si definiscono le dimensioni della matrice non associata e si collega una costante radice a `matIndex` . Per il pixel shader vengono definiti tre elementi: una tabella di descrittori per sRV (texture2D), una tabella di descrittori per i campionatori e una singola costante radice. La tabella dei descrittori per i file SRV contiene `CityMaterialCount + 1` voci. `CityMaterialCount` è una costante che definisce la lunghezza di `g_txMats[]` e + 1 è per `g_txDiffuse` . La tabella dei descrittori per i campionatori contiene una sola voce e nel metodo **LoadAssets** viene definito solo un valore costante radice a 32 bit tramite **InitAsConstants**(...)..
 
 ``` syntax
  // Create the root signature.
@@ -402,7 +402,7 @@ La trama diffusa, g , viene caricata in modo simile e ottiene anche la propria S
 
 ## <a name="create-a-sampler"></a>Creare un campionatore
 
-Infine, **per LoadAssets** viene creato un singolo campionatore per il campionamento dalla trama diffusa o dalla matrice di trame.
+Infine, **per LoadAssets,** viene creato un singolo campionatore per eseguire il campionamento dalla trama diffusa o dalla matrice di trame.
 
 ``` syntax
  // Describe and create a sampler.
@@ -447,7 +447,7 @@ Infine, **per LoadAssets** viene creato un singolo campionatore per il campionam
 <table>
 <thead>
 <tr class="header">
-<th>Flusso di chiamate</th>
+<th>Flusso delle chiamate</th>
 <th>Parametri</th>
 </tr>
 </thead>
@@ -498,11 +498,11 @@ D3D12_FLOAT32_MAX (<a href="constants.md"><strong>Costanti</strong></a>)<br />
 
 ## <a name="dynamically-change-the-root-parameter-index"></a>Modificare dinamicamente l'indice dei parametri radice
 
-Se ora si eseguisse il rendering della scena, tutte le città apparirebbero uguali, perché non è stato impostato il valore della costante radice, `matIndex` . Ogni pixel shader indicizza nello slot 0 di e `g_txMats` la scena sarà simile alla seguente:
+Se si eseguisse il rendering della scena ora, tutte le città apparirebbero uguali, perché non è stato impostato il valore della costante radice, `matIndex` . Ogni pixel shader indicizza nello slot 0 di e `g_txMats` la scena sarà simile alla seguente:
 
 ![tutte le città hanno lo stesso colore](images/dynamicindexing-image1.png)
 
-Il valore della costante radice è impostato in **FrameResource::P opulateCommandLists**. Nel ciclo **double for** in cui viene registrato un comando di disegno per ogni città, viene registrata una chiamata a [**SetGraphicsRoot32BitConstants**](/windows/desktop/api/d3d12/nf-d3d12-id3d12graphicscommandlist-setgraphicsroot32bitconstants) che specifica l'indice del parametro radice in relazione alla firma radice, in questo caso 3, il valore dell'indice dinamico e un offset, in questo caso 0. Poiché la lunghezza di è uguale al numero di città di cui viene eseguito il rendering, il valore dell'indice `g_txMats` viene impostato in modo incrementale per ogni città.
+Il valore della costante radice viene impostato in **FrameResource::P opulateCommandLists.** Nel ciclo **double for** in cui viene registrato un comando di disegno per ogni città, si registra una chiamata a [**SetGraphicsRoot32BitConstants**](/windows/desktop/api/d3d12/nf-d3d12-id3d12graphicscommandlist-setgraphicsroot32bitconstants) specificando l'indice del parametro radice in relazione alla firma radice, in questo caso 3, il valore dell'indice dinamico e un offset, in questo caso 0. Poiché la lunghezza di è uguale al numero di città di cui viene eseguito il rendering, il valore `g_txMats` dell'indice viene impostato in modo incrementale per ogni città.
 
 ``` syntax
  for (UINT i = 0; i < m_cityRowCount; i++)
@@ -525,7 +525,7 @@ Il valore della costante radice è impostato in **FrameResource::P opulateComman
 
 
 
-| Flusso di chiamate                                                                                          | Parametri |
+| Flusso delle chiamate                                                                                          | Parametri |
 |----------------------------------------------------------------------------------------------------|------------|
 | [**SetPipelineState**](/windows/desktop/api/d3d12/nf-d3d12-id3d12graphicscommandlist-setpipelinestate)                             |            |
 | [**SetGraphicsRoot32BitConstant**](/windows/desktop/api/d3d12/nf-d3d12-id3d12graphicscommandlist-setgraphicsroot32bitconstant)     |            |
@@ -534,7 +534,7 @@ Il valore della costante radice è impostato in **FrameResource::P opulateComman
 
 ## <a name="run-the-sample"></a>Eseguire l'esempio
 
-Ora, quando si esegue il rendering della scena, ogni città avrà un valore diverso per e quindi cerca una trama diversa dal rendere la `matIndex` `g_txMats[]` scena simile alla seguente:
+A questo punto, quando si esegue il rendering della scena, ogni città avrà un valore diverso per e quindi cerca una trama diversa dal fatto che la `matIndex` scena abbia un aspetto simile al `g_txMats[]` seguente:
 
 ![tutte le città vengono visualizzate in colori diversi](images/dynamicindexing-image2.png)
 
@@ -542,13 +542,13 @@ Ora, quando si esegue il rendering della scena, ogni città avrà un valore dive
 
 <dl> <dt>
 
-[Analisi del codice D3D12](d3d12-code-walk-throughs.md)
+[Procedura per il codice D3D12](d3d12-code-walk-throughs.md)
 </dt> <dt>
 
-[Strumento effect-compiler](/windows/desktop/direct3dtools/fxc)
+[Strumento compilatore effetti](/windows/desktop/direct3dtools/fxc)
 </dt> <dt>
 
-[Funzionalità di HLSL Shader Model 5.1 per Direct3D 12](/windows/desktop/direct3dhlsl/hlsl-shader-model-5-1-features-for-direct3d-12)
+[Funzionalità del modello di shader HLSL 5.1 per Direct3D 12](/windows/desktop/direct3dhlsl/hlsl-shader-model-5-1-features-for-direct3d-12)
 </dt> <dt>
 
 [Associazione di risorse in HLSL](resource-binding-in-hlsl.md)

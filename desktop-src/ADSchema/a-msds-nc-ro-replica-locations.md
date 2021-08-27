@@ -4,8 +4,8 @@ description: Attributo collegato in un oggetto di riferimento incrociato per una
 ms.assetid: 2473f201-abf7-4fb1-b005-c8db528aeab8
 ms.tgt_platform: multiple
 keywords:
-- Attributo MS-DS-NC-RO-Replica-Locations schema DI AD
-- Attributo MSDS-NC-RO-Replica-Locations schema DI AD
+- Attributo MS-DS-NC-RO-Replica-Locations schema AD
+- Attributo MSDS-NC-RO-Replica-Locations schema AD
 topic_type:
 - apiref
 api_name:

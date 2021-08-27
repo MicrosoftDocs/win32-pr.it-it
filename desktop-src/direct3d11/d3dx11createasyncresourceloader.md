@@ -1,6 +1,6 @@
 ---
 title: Funzione D3DX11CreateAsyncResourceLoader (D3DX11async.h)
-description: Nota La libreria di utilità D3DX (D3DX 9, D3DX 10 e D3DX 11) è deprecata per Windows 8 e non è supportata per le app di Windows Store. Vedere la sezione Osservazioni. Creare un caricatore di risorse asincrone.
+description: Nota La libreria di utilità D3DX (D3DX 9, D3DX 10 e D3DX 11) è deprecata per Windows 8 e non è supportata per le app di Windows Store. Vedere la sezione Osservazioni. Creare un caricatore di risorse asincrono.
 ms.assetid: b49900a1-866d-4a4a-bf3a-2deb9ce4a208
 keywords:
 - Funzione D3DX11CreateAsyncResourceLoader Direct3D 11
@@ -29,7 +29,7 @@ ms.locfileid: "118536755"
 
  
 
-Creare un caricatore di risorse asincrone.
+Creare un caricatore di risorse asincrono.
 
 ## <a name="syntax"></a>Sintassi
 
@@ -79,7 +79,7 @@ Indirizzo di un puntatore al caricatore di dati asincroni (vedere [**l'interfacc
 
 Tipo: **[ **HRESULT**](https://msdn.microsoft.com/library/Bb401631(v=MSDN.10).aspx)**
 
-Il valore restituito è uno dei valori elencati in Codici restituiti [Direct3D 11.](d3d11-graphics-reference-returnvalues.md)
+Il valore restituito è uno dei valori elencati in [Codici restituiti Direct3D 11.](d3d11-graphics-reference-returnvalues.md)
 
 ## <a name="remarks"></a>Commenti
 

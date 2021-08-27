@@ -1,10 +1,10 @@
 ---
-title: Struttura MPHEALTH_DATA (MpClient. h)
+title: MPHEALTH_DATA struttura (MpClient.h)
 description: Dati di notifica dell'integrità.
 ms.assetid: 37A87F77-386A-4508-B338-ED2151518968
 keywords:
-- Struttura MPHEALTH_DATA le funzionalità legacy dell'ambiente Windows
-- Funzionalità dell'ambiente Windows legacy del puntatore della struttura di PMPHEALTH_DATA
+- MPHEALTH_DATA struttura Legacy Windows Environment Features
+- PMPHEALTH_DATA puntatore alla struttura Legacy Windows Environment Features
 topic_type:
 - apiref
 api_name:
@@ -15,14 +15,14 @@ api_type:
 - HeaderDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 4e729bdea82b6a885b64e95ecd77f9deae6bff4e
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: cb04224d38e639d053b8e20370e2b0db0dc15f44cc647e7205911362112e4a49
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "106302382"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118976001"
 ---
-# <a name="mphealth_data-structure"></a>\_Struttura dei dati MPHEALTH
+# <a name="mphealth_data-structure"></a>Struttura MPHEALTH \_ DATA
 
 Dati di notifica dell'integrità.
 
@@ -70,9 +70,9 @@ Non utilizzato.
 
 | Requisito | Valore |
 |-------------------------------------|---------------------------------------------------------------------------------------|
-| Client minimo supportato<br/> | \[Solo app desktop di Windows 8\]<br/>                                            |
-| Server minimo supportato<br/> | \[Solo app desktop Windows Server 2012\]<br/>                                  |
-| Intestazione<br/>                   | <dl> <dt>MpClient. h</dt> </dl> |
+| Client minimo supportato<br/> | \[Windows 8 solo app desktop\]<br/>                                            |
+| Server minimo supportato<br/> | \[Windows Server 2012 solo app desktop\]<br/>                                  |
+| Intestazione<br/>                   | <dl> <dt>MpClient.h</dt> </dl> |
 
 
 

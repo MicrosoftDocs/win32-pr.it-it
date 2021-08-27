@@ -3,8 +3,8 @@ title: Proprietà defaultAudioLanguage IWMPSettings2
 description: La proprietà defaultAudioLanguage ottiene l'identificatore delle impostazioni locali (LCID) della lingua audio predefinita specificata in Windows Media Player.
 ms.assetid: 4b7c9639-9d9f-4ed7-bb70-12cc608dd57a
 keywords:
-- proprietà defaultAudioLanguage Windows Media Player
-- proprietà defaultAudioLanguage Windows Media Player, interfaccia IWMPSettings2
+- Proprietà defaultAudioLanguage Windows Media Player
+- Proprietà defaultAudioLanguage Windows Media Player, interfaccia IWMPSettings2
 - Interfaccia IWMPSettings2 Windows Media Player , proprietà defaultAudioLanguage
 topic_type:
 - apiref
@@ -49,7 +49,7 @@ Public ReadOnly Property defaultAudioLanguage As System.Int32
 
 ## <a name="property-value"></a>Valore proprietà
 
-Oggetto **System.Int32** che rappresenta l'LCID.
+**System.Int32** che rappresenta l'identificatore LCID.
 
 ## <a name="remarks"></a>Commenti
 
@@ -61,7 +61,7 @@ Un LCID identifica in modo univoco un particolare dialetto di lingua, denominato
 
 | Requisito | Valore |
 |----------------------|------------------------------------------------------------------------------------------------------------------------|
-| Versione<br/>   | Windows Media Player serie 9 o successiva<br/>                                                                      |
+| Versione<br/>   | Windows Media Player serie 9 o successive<br/>                                                                      |
 | Spazio dei nomi<br/> | **WMPLib**<br/>                                                                                                  |
 | Assembly<br/>  | <dl> <dt>Interop.WMPLib.dll (Interop.WMPLib.dll.dll)</dt> </dl> |
 

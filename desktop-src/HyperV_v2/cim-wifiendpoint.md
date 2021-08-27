@@ -1,5 +1,5 @@
 ---
-description: Rappresenta un endpoint di comunicazione wireless, che può inviare e ricevere frame di dati quando il dispositivo di interfaccia associato è connesso con una LAN wireless IEEE 802.11.
+description: Rappresenta un endpoint di comunicazione wireless, che può inviare e ricevere frame di dati quando il dispositivo di interfaccia associato è connesso a una LAN wireless IEEE 802.11.
 ms.assetid: 61743402-f333-4501-ba17-e676d85f72f3
 title: CIM_WiFiEndpoint classe
 ms.topic: reference
@@ -32,7 +32,7 @@ ms.locfileid: "118646324"
 ---
 # <a name="cim_wifiendpoint-class"></a>Classe CIM \_ WiFiEndpoint
 
-Rappresenta un endpoint di comunicazione wireless, che può inviare e ricevere frame di dati quando il dispositivo di interfaccia associato è connesso con una LAN wireless IEEE 802.11.
+Rappresenta un endpoint di comunicazione wireless, che può inviare e ricevere frame di dati quando il dispositivo di interfaccia associato è connesso a una LAN wireless IEEE 802.11.
 
 ## <a name="syntax"></a>Sintassi
 
@@ -55,7 +55,7 @@ class CIM_WiFiEndpoint : CIM_LANEndpoint
 
 ## <a name="members"></a>Members
 
-La **classe CIM \_ WiFiEndpoint** include questi tipi di membri:
+La **classe \_ CIM WiFiEndpoint** ha questi tipi di membri:
 
 -   [Proprietà](#properties)
 
@@ -68,13 +68,13 @@ La **classe CIM \_ WiFiEndpoint** ha queste proprietà.
 **AccessPointAddress**
 </dt> <dd> <dl> <dt>
 
-Tipo di dati: **string**
+Tipo di dati: **stringa**
 </dt> <dt>
 
 Tipo di accesso: sola lettura
 </dt> </dl>
 
-Indirizzo MAC del punto di accesso associato all'endpoint Wi-Fi; in caso contrario, **NULL.**
+Indirizzo MAC del punto di accesso associato all'endpoint Wi-Fi destinazione. in caso contrario, **NULL.**
 
 </dd> <dt>
 
@@ -87,11 +87,11 @@ Tipo di dati: **booleano**
 Tipo di accesso: sola lettura
 </dt> </dl>
 
-**true** se l'endpoint Wi-Fi è attualmente associato a un punto di accesso o a una stazione client; in caso contrario, **false.**
+**true** se l'endpoint Wi-Fi è attualmente associato a un punto di accesso o a una stazione client; in caso contrario, **false**.
 
 </dd> <dt>
 
-**Metodo di autenticazione**
+**AuthenticationMethod**
 </dt> <dd> <dl> <dt>
 
 Tipo di dati: **uint16**
@@ -103,7 +103,7 @@ Tipo di accesso: sola lettura
 Qualificatori: [**MappingStrings**](/windows/desktop/WmiSdk/standard-qualifiers) ("IEEE 802.11-2007 \| 8"), [**ModelCorrespondence**](/windows/desktop/WmiSdk/standard-qualifiers) ("**CIM \_ WiFiEndpoint**.**EncryptionMethod**", "**CIM \_ WiFiEndpoint**.**IEEE8021xAuthenticationProtocol**", "**CIM \_ WiFiEndpoint**.**OtherAuthenticationMethod**")
 </dt> </dl>
 
-Tipo di autenticazione utilizzato tra l'endpoint Wi-Fi e la rete.
+Tipo di autenticazione usato tra l'endpoint Wi-Fi e la rete.
 
 <dt>
 
@@ -172,7 +172,7 @@ Tipo di autenticazione utilizzato tra l'endpoint Wi-Fi e la rete.
 
 <span id="DMTF_Reserved"></span><span id="dmtf_reserved"></span><span id="DMTF_RESERVED"></span>
 
-**DmTF Reserved** (9..)
+**DMTF riservato** (9..)
 
 
 </dt> <dd></dd> </dl>
@@ -218,7 +218,7 @@ Tipo di set di servizi di base (BSS) della rete che corrisponde all'istanza di .
 
 <span id="DMTF_Reserved"></span><span id="dmtf_reserved"></span><span id="DMTF_RESERVED"></span>
 
-**DmTF Reserved** (4..)
+**DMTF riservato** (4..)
 
 
 </dt> <dd></dd> </dl>
@@ -237,7 +237,7 @@ Tipo di accesso: sola lettura
 Qualificatori: [**MappingStrings**](/windows/desktop/WmiSdk/standard-qualifiers) ("IEEE 802.11-2007 \| 8"), [**ModelCorrespondence**](/windows/desktop/WmiSdk/standard-qualifiers) ("**CIM \_ WiFiEndpoint**.**AuthenticationMethod**", "**CIM \_ WiFiEndpoint**.**OtherEncryptionMethod**")
 </dt> </dl>
 
-Tipo di crittografia utilizzato per l'invio e la ricezione di dati tramite lWi-Fi endpoint.
+Tipo di crittografia usato per l'invio e la ricezione di dati tramite lWi-Fi endpoint.
 
 <dt>
 
@@ -285,7 +285,7 @@ Tipo di crittografia utilizzato per l'invio e la ricezione di dati tramite lWi-F
 
 <span id="DMTF_Reserved"></span><span id="dmtf_reserved"></span><span id="DMTF_RESERVED"></span>
 
-**DmTF Reserved** (6..)
+**DMTF riservato** (6..)
 
 
 </dt> <dd></dd> </dl>
@@ -301,7 +301,7 @@ Tipo di dati: **uint16**
 Tipo di accesso: sola lettura
 </dt> <dt>
 
-Qualificatori: [**MappingStrings**](/windows/desktop/WmiSdk/standard-qualifiers) ("RFC4017. IETF", "RFC2716. IETF", "draft-ietf-pppext-eap-ttls. IETF", "draft-ppath-pppext-peapv0. IETF", "draft-josefsson-pppext-eap-tls-eap", "RFC4851. IETF", "RFC3748. IETF", "RFC4764. IETF", "RFC4186. IETF", "RFC4187. IETF"), [**ModelCorrespondence**](/windows/desktop/WmiSdk/standard-qualifiers) ("**CIM \_ WiFiEndpoint**.**AuthenticationMethod**")
+Qualificatori: [**MappingStrings**](/windows/desktop/WmiSdk/standard-qualifiers) ("RFC4017. IETF", "RFC2716. IETF", "draft-ietf-pppext-eap-ttls. IETF", "draft-kaath-pppext-peapv0. IETF", "draft-josefsson-pppext-eap-tls-eap", "RFC4851. IETF", "RFC3748. IETF", "RFC4764. IETF", "RFC4186. IETF", "RFC4187. IETF"), [**ModelCorrespondence**](/windows/desktop/WmiSdk/standard-qualifiers) ("**CIM \_ WiFiEndpoint**.**AuthenticationMethod**")
 </dt> </dl>
 
 Tipo EAP (Extensible Authentication Protocol) per l'endpoint Wi-Fi quando **AuthenticationMethod** contiene "7" (WPA IEEE 802.1x) o "8" (CCKM IEEE 802.1x).
@@ -387,7 +387,7 @@ Tipo EAP (Extensible Authentication Protocol) per l'endpoint Wi-Fi quando **Auth
 
 <span id="DMTF_Reserved"></span><span id="dmtf_reserved"></span><span id="DMTF_RESERVED"></span>
 
-**DmTF Reserved** (11..)
+**DMTF riservato** (11..)
 
 
 </dt> <dd></dd> </dl>
@@ -397,23 +397,23 @@ Tipo EAP (Extensible Authentication Protocol) per l'endpoint Wi-Fi quando **Auth
 **LANID**
 </dt> <dd> <dl> <dt>
 
-Tipo di dati: **string**
+Tipo di dati: **stringa**
 </dt> <dt>
 
 Tipo di accesso: sola lettura
 </dt> <dt>
 
-Qualificatori: [**override**](/windows/desktop/WmiSdk/standard-qualifiers) ("LANID"), [**MappingStrings**](/windows/desktop/WmiSdk/standard-qualifiers) ("IEEE 802.11-2007 \| 7.3.2.1")
+Qualificatori: [**Override**](/windows/desktop/WmiSdk/standard-qualifiers) ("LANID"), [**MappingStrings**](/windows/desktop/WmiSdk/standard-qualifiers) ("IEEE 802.11-2007 \| 7.3.2.1")
 </dt> </dl>
 
-Identificatore del set di servizi (SSID) della LAN wireless associata all'endpoint Wi-Fi servizio; in caso contrario, **NULL.**
+Identificatore del set di servizi (SSID) della lan wireless associata all'endpoint Wi-Fi servizio; in caso contrario, **NULL.**
 
 </dd> <dt>
 
 **OtherAuthenticationMethod**
 </dt> <dd> <dl> <dt>
 
-Tipo di dati: **string**
+Tipo di dati: **stringa**
 </dt> <dt>
 
 Tipo di accesso: sola lettura
@@ -429,7 +429,7 @@ Tipo di autenticazione usato tra l'endpoint Wi-Fi e la rete quando **Authenticat
 **OtherEncryptionMethod**
 </dt> <dd> <dl> <dt>
 
-Tipo di dati: **string**
+Tipo di dati: **stringa**
 </dt> <dt>
 
 Tipo di accesso: sola lettura
@@ -454,9 +454,9 @@ Tipo di accesso: sola lettura
 Qualificatori: [**override**](/windows/desktop/WmiSdk/standard-qualifiers) ("ProtocolIFType")
 </dt> </dl>
 
-Categoria o classificazione di questa istanza. I valori possibili sono limitati ai valori Wi-Fi e riservati di DMTF e [IANA ifType MIB.](https://www.iana.org/assignments/ianaiftype-mib)
+Categoria o classificazione di questa istanza. I valori possibili sono limitati ai valori Wi-Fi e riservati di DMTF e [IANA ifType MIB](https://www.iana.org/assignments/ianaiftype-mib).
 
-Se **ProtocolIFType è** impostato su "1" (Altro), le informazioni sul tipo devono essere fornite nella **proprietà OtherTypeDescription.**
+Se **ProtocolIFType** è impostato su "1" (Altro), le informazioni sul tipo devono essere fornite nella **proprietà OtherTypeDescription.**
 
 <dt>
 
@@ -483,14 +483,14 @@ Se **ProtocolIFType è** impostato su "1" (Altro), le informazioni sul tipo devo
 
 <span id="DMTF_Reserved"></span><span id="dmtf_reserved"></span><span id="DMTF_RESERVED"></span>
 
-**DmTF Reserved** (4301..32767)
+**DmTF riservato** (4301..32767)
 
 
 </dt> <dd></dd> <dt>
 
 <span id="Vendor_Reserved"></span><span id="vendor_reserved"></span><span id="VENDOR_RESERVED"></span>
 
-**Vendor Reserved** (32768.).
+**Fornitore riservato** (32768..)
 
 
 </dt> <dd></dd> </dl>

@@ -1,27 +1,27 @@
 ---
-title: Oggetto Balloon
-description: Oggetto Balloon
+title: Oggetto balloon
+description: Oggetto balloon
 ms.assetid: d5b52310-0b4e-4fe3-a481-53687be4a89c
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: de0c94803e9efadde1ae4a8410273ed49437291a
-ms.sourcegitcommit: ebd3ce6908ff865f1ef66f2fc96769be0aad82e1
+ms.openlocfilehash: 2afc2ad1256b040588121dcb92fc8f66fea540b3051b92a6fe5273eb2f81107b
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/19/2020
-ms.locfileid: "104223560"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118745973"
 ---
-# <a name="the-balloon-object"></a>Oggetto Balloon
+# <a name="the-balloon-object"></a>Oggetto balloon
 
-\[Microsoft Agent è stato deprecato a partire da Windows 7 e potrebbe non essere disponibile nelle versioni successive di Windows.\]
+\[Microsoft Agent è deprecato a Windows 7 e potrebbe non essere disponibile nelle versioni successive di Windows.\]
 
-Microsoft Agent supporta la didascalia testuale del metodo [**Speak**](speak-method.md) usando un fumetto di parole. Il metodo [**think**](think-method.md) consente di visualizzare testo senza output audio in un fumetto di parola "pensiero".
+Microsoft Agent supporta la didascalia testuale del [**metodo Speak**](speak-method.md) usando un fumetto per cartoni animati. Il [**metodo Think**](think-method.md) consente di visualizzare il testo senza output audio in un fumetto di parole "pensato".
 
-Le impostazioni predefinite della finestra fumetto di Word iniziale di un carattere sono definite e compilate nell'editor dei caratteri di Microsoft Agent. Al termine dell'esecuzione, l'utente può eseguire l'override delle proprietà del [**tipo di carattere**](https://www.bing.com/search?q=**Font**) e [**abilitate**](enabled-property.md) per il fumetto. Se un utente modifica le proprietà di Word Balloon, avrà effetto su tutti i caratteri. Sia i [**fumetti di parole che quelli**](speak-method.md) [**di Word usano**](think-method.md) le stesse impostazioni delle proprietà per le dimensioni. È possibile accedere alle proprietà per la parola Balloon di un carattere tramite l'oggetto [**Balloon**](/windows/desktop/lwef/the-balloon-object) , che è un elemento figlio dell'oggetto [**character**](/windows/desktop/lwef/the-characters-object) .
+I valori predefiniti della finestra iniziale del fumetto di un carattere vengono definiti e compilati nell'editor di caratteri di Microsoft Agent. Dopo l'esecuzione, le proprietà [**Enabled**](enabled-property.md) e [**Font**](https://www.bing.com/search?q=**Font**) del fumetto possono essere sostituite dall'utente. Se un utente modifica le proprietà del fumetto, influisce su tutti i caratteri. Le aree [**commenti e**](speak-method.md) [**le**](think-method.md) aree commenti usano le stesse impostazioni delle proprietà per le dimensioni. È possibile accedere alle proprietà per il fumetto di parole di un carattere tramite l'oggetto [**Balloon,**](/windows/desktop/lwef/the-balloon-object) che è un elemento figlio [**dell'oggetto Character.**](/windows/desktop/lwef/the-characters-object)
 
-L'oggetto [**Balloon**](/windows/desktop/lwef/the-balloon-object) supporta le proprietà seguenti:
+[**L'oggetto Balloon**](/windows/desktop/lwef/the-balloon-object) supporta le proprietà seguenti:
 
--   [**BackColor**](backcolor-property.md)
+-   [**Backcolor**](backcolor-property.md)
 -   [**ColoreBordo**](bordercolor-property.md)
 -   [**CharsPerLine**](charsperline-property.md)
 -   [**Abilitato**](enabled-property.md)
@@ -37,6 +37,6 @@ L'oggetto [**Balloon**](/windows/desktop/lwef/the-balloon-object) supporta le pr
 -   [**Stile**](style-property.md)
 -   [**Visible**](visible-property-bal.md)
 
- 
+ 
 
- 
+ 

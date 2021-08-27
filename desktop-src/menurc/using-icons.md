@@ -3,29 +3,29 @@ title: Uso delle icone
 description: In questa sezione vengono forniti esempi di codice che illustrano come eseguire attività correlate alle icone.
 ms.assetid: 5021d59a-7aae-4ddc-be66-9abdc75ad316
 keywords:
-- risorse, icone
+- risorse,icone
 - icone, creazione
 - icone, visualizzazione
-- icone, condivisione di risorse
+- icone,condivisione di risorse
 - creazione di icone
 - visualizzazione di icone
-- risorse icona di condivisione
+- risorse dell'icona di condivisione
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 03202c250502794d5f845bcc8c2ae263d919ea62
-ms.sourcegitcommit: dc2f43e0f23f4a4ce239118cf9a5180f3ff0dd1d
+ms.openlocfilehash: 40db7a5828c80dc27780ac54e4110e37a80f44938c9475904ce32089be50d84f
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/30/2021
-ms.locfileid: "108327116"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118472599"
 ---
 # <a name="using-icons"></a>Uso delle icone
 
-Gli argomenti seguenti descrivono come eseguire determinate attività correlate alle icone:
+Negli argomenti seguenti viene descritto come eseguire determinate attività correlate alle icone:
 
 -   [Creazione di un'icona](#creating-an-icon)
 -   [Visualizzazione di un'icona](#displaying-an-icon)
--   [Risorse icona di condivisione](#sharing-icon-resources)
+-   [Risorse delle icone di condivisione](#sharing-icon-resources)
 
 ## <a name="creating-an-icon"></a>Creazione di un'icona
 
@@ -50,7 +50,7 @@ hIcon2 = LoadIcon(hinst, MAKEINTRESOURCE(460));
 
 
 
-Un'applicazione deve implementare icone personalizzate come risorse e deve usare la funzione [**LoadIcon**](/windows/desktop/api/Winuser/nf-winuser-loadicona) o [**LoadImage,**](/windows/desktop/api/Winuser/nf-winuser-loadimagea) anziché creare le icone in fase di esecuzione. Questo approccio evita le dipendenze dei dispositivi, semplifica la localizzazione e consente alle applicazioni di condividere le bitmap delle icone. Tuttavia, l'esempio seguente usa [**CreateIcon per**](/windows/desktop/api/Winuser/nf-winuser-createicon) creare un'icona personalizzata in fase di esecuzione, in base alle maschera di bit bitmap; è incluso per illustrare il modo in cui il sistema interpreta le maschera di bit bitmap delle icone.
+Un'applicazione deve implementare le icone personalizzate come risorse e usare la [**funzione LoadIcon**](/windows/desktop/api/Winuser/nf-winuser-loadicona) o [**LoadImage,**](/windows/desktop/api/Winuser/nf-winuser-loadimagea) anziché creare le icone in fase di esecuzione. Questo approccio evita la dipendenza del dispositivo, semplifica la localizzazione e consente alle applicazioni di condividere le bitmap delle icone. Tuttavia, l'esempio seguente usa [**CreateIcon per**](/windows/desktop/api/Winuser/nf-winuser-createicon) creare un'icona personalizzata in fase di esecuzione, in base alle maschera di bit bitmap. è incluso per illustrare come il sistema interpreta le maschera di bit bitmap delle icone.
 
 
 ```
@@ -152,7 +152,7 @@ hIcon3 = CreateIcon(hinst,    // application instance
 
 
 
-Per creare l'icona, [**CreateIcon applica**](/windows/desktop/api/Winuser/nf-winuser-createicon) la tabella di verità seguente alle maschera di bit AND e XOR.
+Per creare l'icona, [**CreateIcon**](/windows/desktop/api/Winuser/nf-winuser-createicon) applica la tabella di verità seguente alle maschera di bit AND e XOR.
 
 
 
@@ -206,7 +206,7 @@ Per altre informazioni sulle classi finestra, vedere [Classi finestra](/windows/
 
 Il codice seguente usa le funzioni [**CreateIconFromResourceEx**](/windows/desktop/api/Winuser/nf-winuser-createiconfromresourceex), [**DrawIcon**](/windows/desktop/api/Winuser/nf-winuser-drawicon)e [**LookupIconIdFromDirectoryEx**](/windows/desktop/api/Winuser/nf-winuser-lookupiconidfromdirectoryex)e diverse funzioni di risorsa per creare un handle di icona basato sui dati dell'icona da un altro file eseguibile. Visualizza quindi l'icona in una finestra.
 
-**Avviso di sicurezza:** [**L'uso non corretto di LoadLibrary**](/windows/desktop/api/libloaderapi/nf-libloaderapi-loadlibrarya) può compromettere la sicurezza dell'applicazione caricando la DLL errata. Per informazioni su come caricare correttamente le DLL con versioni diverse di Windows, vedere la documentazione di **LoadLibrary.**
+**Avviso di sicurezza:** [**L'uso non corretto di LoadLibrary**](/windows/desktop/api/libloaderapi/nf-libloaderapi-loadlibrarya) può compromettere la sicurezza dell'applicazione caricando la DLL errata. Fare riferimento alla **documentazione di LoadLibrary** per informazioni su come caricare correttamente le DLL con versioni diverse Windows.
 
 
 ```

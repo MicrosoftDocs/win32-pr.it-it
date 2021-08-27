@@ -1,7 +1,7 @@
 ---
 description: Definisce un volume.
 ms.assetid: 415a96bc-1621-4691-b87a-98ca22f0bf07
-title: Struttura D3DBOX (D3D9Types. h)
+title: Struttura D3DBOX (D3D9Types.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -13,12 +13,12 @@ api_type:
 - HeaderDef
 api_location:
 - D3D9Types.h
-ms.openlocfilehash: 882f6aadf0d49284b30132d4f08a9c583e5c9d73
-ms.sourcegitcommit: 14010c34b35fa268046c7683f021f86de08ddd0a
+ms.openlocfilehash: 9b7e01641348594e962f546a431700db799600a08571bbb7cfaf13396e671036
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/15/2021
-ms.locfileid: "104234967"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118805514"
 ---
 # <a name="d3dbox-structure"></a>Struttura D3DBOX
 
@@ -47,7 +47,7 @@ typedef struct D3DBOX {
 **Sinistra**
 </dt> <dd>
 
-Tipo: **[ **uint**](../winprog/windows-data-types.md)**
+Tipo: **[ **UINT**](../winprog/windows-data-types.md)**
 
 </dd> <dd>
 
@@ -58,7 +58,7 @@ Posizione del lato sinistro della casella sull'asse x.
 **Top**
 </dt> <dd>
 
-Tipo: **[ **uint**](../winprog/windows-data-types.md)**
+Tipo: **[ **UINT**](../winprog/windows-data-types.md)**
 
 </dd> <dd>
 
@@ -66,10 +66,10 @@ Posizione della parte superiore della casella sull'asse y.
 
 </dd> <dt>
 
-**Ok**
+**va bene**
 </dt> <dd>
 
-Tipo: **[ **uint**](../winprog/windows-data-types.md)**
+Tipo: **[ **UINT**](../winprog/windows-data-types.md)**
 
 </dd> <dd>
 
@@ -80,7 +80,7 @@ Posizione del lato destro della casella sull'asse x.
 **Ultimo**
 </dt> <dd>
 
-Tipo: **[ **uint**](../winprog/windows-data-types.md)**
+Tipo: **[ **UINT**](../winprog/windows-data-types.md)**
 
 </dd> <dd>
 
@@ -91,7 +91,7 @@ Posizione della parte inferiore della casella sull'asse y.
 **Front**
 </dt> <dd>
 
-Tipo: **[ **uint**](../winprog/windows-data-types.md)**
+Tipo: **[ **UINT**](../winprog/windows-data-types.md)**
 
 </dd> <dd>
 
@@ -102,7 +102,7 @@ Posizione della parte anteriore della casella sull'asse z.
 **Back**
 </dt> <dd>
 
-Tipo: **[ **uint**](../winprog/windows-data-types.md)**
+Tipo: **[ **UINT**](../winprog/windows-data-types.md)**
 
 </dd> <dd>
 
@@ -112,9 +112,9 @@ Posizione della parte posteriore della casella sull'asse z.
 
 ## <a name="remarks"></a>Commenti
 
-**D3DBOX** include i bordi sinistro, superiore e anteriore; Tuttavia, i bordi destro, inferiore e indietro non sono inclusi. Ad esempio, una casella di 100 unità di misura e inizia da 0 (quindi, inclusi i punti fino a 99) viene espressa con un valore pari a 0 per il membro sinistro e il valore 100 per il membro destro. Si noti che il valore 99 non viene utilizzato per il membro destro.
+**D3DBOX** include i bordi sinistro, superiore e anteriore; Tuttavia, i bordi destro, inferiore e posteriore non sono inclusi. Ad esempio, una casella larga 100 unità e che inizia da 0 (inclusi i punti fino a e inclusi 99) viene espressa con un valore pari a 0 per il membro Left e un valore pari a 100 per il membro Right. Si noti che il valore 99 non viene usato per il membro Right.
 
-Le restrizioni sull'ordinamento laterale osservato per **D3DBOX** sono da sinistra a destra, dall'alto verso il basso e viceversa.
+Le restrizioni relative all'ordinamento laterale osservate per **D3DBOX** sono da sinistra a destra, dall'alto verso il basso e dalla parte anteriore alla parte posteriore.
 
 ## <a name="requirements"></a>Requisiti
 
@@ -122,7 +122,7 @@ Le restrizioni sull'ordinamento laterale osservato per **D3DBOX** sono da sinist
 
 | Requisito | Valore |
 |-------------------|----------------------------------------------------------------------------------------|
-| Intestazione<br/> | <dl> <dt>D3D9Types. h</dt> </dl> |
+| Intestazione<br/> | <dl> <dt>D3D9Types.h</dt> </dl> |
 
 
 

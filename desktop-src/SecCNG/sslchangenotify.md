@@ -1,7 +1,7 @@
 ---
-description: Non implementato e non può essere utilizzato.
+description: Non implementato e non può essere usato.
 ms.assetid: b41ba894-5cee-458d-935f-e89363925968
-title: Funzione SslChangeNotify (Sslprovider. h)
+title: Funzione SslChangeNotify (Sslprovider.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -13,16 +13,16 @@ api_type:
 - DllExport
 api_location:
 - Ncrypt.dll
-ms.openlocfilehash: 5539ef2529a4f3af86d34ae0e9d44cd31a8f4289
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: ff8bd1d23315894a3e858a536d10883f2fedcced792575157de824c02f3217ad
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104131294"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118907181"
 ---
-# <a name="sslchangenotify-function"></a>SslChangeNotify (funzione)
+# <a name="sslchangenotify-function"></a>Funzione SslChangeNotify
 
-La funzione **SslChangeNotify** non è implementata e non può essere usata.
+La **funzione SslChangeNotify** non è implementata e non può essere usata.
 
 ## <a name="syntax"></a>Sintassi
 
@@ -40,14 +40,14 @@ SECURITY_STATUS WINAPI SslChangeNotify(
 
 <dl> <dt>
 
-*hEvent* \[ in\]
+*hEvent* \[ Pollici\]
 </dt> <dd>
 
 Questo parametro è riservato per usi futuri.
 
 </dd> <dt>
 
-*dwFlags* \[ in\]
+*dwFlags* \[ Pollici\]
 </dt> <dd>
 
 Questo parametro è riservato per usi futuri.
@@ -56,7 +56,7 @@ Questo parametro è riservato per usi futuri.
 
 ## <a name="return-value"></a>Valore restituito
 
-Restituisce **nte \_ non \_ supportato**.
+Restituisce **NTE \_ NOT \_ SUPPORTED**.
 
 ## <a name="requirements"></a>Requisiti
 
@@ -64,9 +64,9 @@ Restituisce **nte \_ non \_ supportato**.
 
 | Requisito | Valore |
 |-------------------------------------|------------------------------------------------------------------------------------------|
-| Client minimo supportato<br/> | \[Solo app desktop di Windows Vista\]<br/>                                           |
-| Server minimo supportato<br/> | \[Solo app desktop Windows Server 2008\]<br/>                                     |
-| Intestazione<br/>                   | <dl> <dt>Sslprovider. h</dt> </dl> |
+| Client minimo supportato<br/> | Windows Solo \[ app desktop di Vista\]<br/>                                           |
+| Server minimo supportato<br/> | Windows Solo app desktop server 2008 \[\]<br/>                                     |
+| Intestazione<br/>                   | <dl> <dt>Sslprovider.h</dt> </dl> |
 | DLL<br/>                      | <dl> <dt>Ncrypt.dll</dt> </dl>    |
 
 

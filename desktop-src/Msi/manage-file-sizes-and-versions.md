@@ -15,7 +15,7 @@ ms.locfileid: "118629042"
 
 Il file VBScript WiFilVer.vbs in Windows [SDK Components for Windows Installer Developers](platform-sdk-components-for-windows-installer-developers.md). Nell'esempio viene illustrato come utilizzare uno script per segnalare o aggiornare la versione del file, le dimensioni e le informazioni sulla lingua.
 
-L'esempio illustra anche Windows del programma di installazione, come accedere a un database del programma di installazione di Windows e come usare quanto segue:
+L'esempio illustra anche Windows di installazione, come accedere a un database del programma di installazione di Windows e come usare quanto segue:
 
 -   [**Metodo Installer.OpenDatabase**](installer-opendatabase.md) [ **dell'oggetto Installer**](installer-object.md)
 -   [**Installer.FileAttributes -**](installer-fileattributes.md) proprietà
@@ -33,7 +33,7 @@ L'esempio illustra anche Windows del programma di installazione, come accedere a
 
 L'uso di questo esempio richiede CScript.exe o WScript.exe versione di Windows Script Host. Per usare CScript.exe eseguire questo esempio, digitare un comando al prompt dei comandi usando la sintassi seguente:
 
-**cscript WiFilVer.vbs \[ percorso di origine facoltativo del database \] \[\]**
+**cscript WiFilVer.vbs \[ percorso di origine facoltativo \] \[ del database\]**
 
 Tenere presente anche quanto segue:
 
@@ -56,7 +56,7 @@ Le opzioni seguenti possono essere specificate in qualsiasi posizione nella riga
 
  
 
-Per altre informazioni, vedere esempi [di Windows di script del](windows-installer-scripting-examples.md) programma di installazione e Windows di sviluppo del programma di [installazione.](windows-installer-development-tools.md)
+Per altre informazioni, vedere Esempi [Windows di scripting](windows-installer-scripting-examples.md) del programma di installazione e strumenti Windows di sviluppo del programma di [installazione.](windows-installer-development-tools.md)
 
  
 

@@ -1,7 +1,7 @@
 ---
-description: Restituisce una matrice di provider di protocollo SSL (installated Secure Sockets Layer Protocol).
+description: Restituisce una matrice di provider Secure Sockets Layer protocol (SSL) installati.
 ms.assetid: a61ddcf5-b7e3-40b2-82fc-1cf87eb963ec
-title: Funzione SslEnumProtocolProviders (Sslprovider. h)
+title: Funzione SslEnumProtocolProviders (Sslprovider.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -13,16 +13,16 @@ api_type:
 - DllExport
 api_location:
 - Ncrypt.dll
-ms.openlocfilehash: 94c8648950af20a97bcc34b614aee0d0f716b043
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: c0e20bd98f8f3e76d4185cf2a3aa52985d73f66ff1ea61ed50bf67552330290d
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "104234009"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118906683"
 ---
-# <a name="sslenumprotocolproviders-function"></a>SslEnumProtocolProviders (funzione)
+# <a name="sslenumprotocolproviders-function"></a>Funzione SslEnumProtocolProviders
 
-La funzione **SslEnumProtocolProviders** restituisce una matrice di provider di protocollo SSL (installated [*Secure Sockets Layer Protocol*](/windows/desktop/SecGloss/s-gly) ).
+La **funzione SslEnumProtocolProviders** restituisce una matrice [*di provider Secure Sockets Layer protocol*](/windows/desktop/SecGloss/s-gly) (SSL) installati.
 
 ## <a name="syntax"></a>Sintassi
 
@@ -41,21 +41,21 @@ SECURITY_STATUS WINAPI SslEnumProtocolProviders(
 
 <dl> <dt>
 
-*pdwProviderCount* \[ out\]
+*pdwProviderCount* \[ Cambio\]
 </dt> <dd>
 
-Puntatore a un valore **DWORD** per ricevere il numero di provider di protocollo restituiti.
+Puntatore a un **valore DWORD** per ricevere il numero di provider di protocolli restituiti.
 
 </dd> <dt>
 
-*ppProviderList* \[ out\]
+*ppProviderList* \[ Cambio\]
 </dt> <dd>
 
-Puntatore a un buffer che riceve la matrice di strutture [**NCryptProviderName**](/windows/desktop/api/Ncrypt/ns-ncrypt-ncryptprovidername) .
+Puntatore a un buffer che riceve la matrice di [**strutture NCryptProviderName.**](/windows/desktop/api/Ncrypt/ns-ncrypt-ncryptprovidername)
 
 </dd> <dt>
 
-*dwFlags* \[ in\]
+*dwFlags* \[ Pollici\]
 </dt> <dd>
 
 Questo parametro è riservato per usi futuri.
@@ -68,15 +68,15 @@ Se la funzione ha esito positivo, restituisce zero.
 
 Se la funzione ha esito negativo, restituisce un valore di errore diverso da zero.
 
-I codici restituiti possibili includono, ma non sono limitati a, quanto segue.
+I codici restituiti possibili includono, ma non sono limitati, i seguenti.
 
 
 
 | Codice/valore restituito                                                                                                                                                       | Descrizione                                                                  |
 |-------------------------------------------------------------------------------------------------------------------------------------------------------------------------|------------------------------------------------------------------------------|
-| <dl> <dt>**Nte \_ \_Flag non validi**</dt> <dt>0x80090009L</dt> </dl>         | Il parametro *dwFlags* è diverso da zero.<br/>                              |
-| <dl> <dt>**Nte \_ Nessun \_**</dt> <dt>0x8009000EL</dt> di memoria </dl>         | La memoria disponibile non è sufficiente per allocare i buffer necessari.<br/>     |
-| <dl> <dt>**Nte \_ \_Parametro 0X80090027L non valido**</dt> <dt></dt> </dl> | Il parametro *pdwProviderCount* o *ppProviderList* è **null**.<br/> |
+| <dl> <dt>**NTE \_ BAD \_ FLAGS**</dt> <dt>0x80090009L</dt> </dl>         | Il *parametro dwFlags* non è zero.<br/>                              |
+| <dl> <dt>**NTE \_ NO \_ MEMORY**</dt> <dt>0x8009000EL</dt> </dl>         | Memoria insufficiente per allocare i buffer necessari.<br/>     |
+| <dl> <dt>**NTE \_ PARAMETRO \_ NON**</dt> <dt>VALIDO 0x80090027L</dt> </dl> | Il *parametro pdwProviderCount* o *ppProviderList* è **NULL.**<br/> |
 
 
 
@@ -84,7 +84,7 @@ I codici restituiti possibili includono, ma non sono limitati a, quanto segue.
 
 ## <a name="remarks"></a>Commenti
 
-Al termine dell'utilizzo della matrice di strutture [**NCryptProviderName**](/windows/desktop/api/Ncrypt/ns-ncrypt-ncryptprovidername) , chiamare la funzione [**SslFreeBuffer**](sslfreebuffer.md) per liberare la matrice.
+Dopo aver terminato di usare la matrice di [**strutture NCryptProviderName,**](/windows/desktop/api/Ncrypt/ns-ncrypt-ncryptprovidername) chiamare la [**funzione SslFreeBuffer**](sslfreebuffer.md) per liberare la matrice.
 
 ## <a name="requirements"></a>Requisiti
 
@@ -92,9 +92,9 @@ Al termine dell'utilizzo della matrice di strutture [**NCryptProviderName**](/wi
 
 | Requisito | Valore |
 |-------------------------------------|------------------------------------------------------------------------------------------|
-| Client minimo supportato<br/> | \[Solo app desktop di Windows Vista\]<br/>                                           |
-| Server minimo supportato<br/> | \[Solo app desktop Windows Server 2008\]<br/>                                     |
-| Intestazione<br/>                   | <dl> <dt>Sslprovider. h</dt> </dl> |
+| Client minimo supportato<br/> | Windows Solo \[ app desktop Vista\]<br/>                                           |
+| Server minimo supportato<br/> | Windows Solo app desktop di Server 2008 \[\]<br/>                                     |
+| Intestazione<br/>                   | <dl> <dt>Sslprovider.h</dt> </dl> |
 | DLL<br/>                      | <dl> <dt>Ncrypt.dll</dt> </dl>    |
 
 

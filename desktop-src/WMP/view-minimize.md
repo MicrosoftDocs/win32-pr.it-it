@@ -1,9 +1,9 @@
 ---
-title: Visualizza. Riduci a icona
-description: Il metodo di riduzione a icona riduce al minimo la visualizzazione.
+title: VIEW.minimize
+description: Il metodo minimize riduce al minimo l'oggetto VIEW.
 ms.assetid: 97c257fa-aa4f-4e6f-bc49-fa54db63b59b
 keywords:
-- Visualizza. ridurre a icona Media Player Windows
+- VIEW.minimize Windows Media Player
 topic_type:
 - apiref
 api_name:
@@ -13,16 +13,16 @@ api_type:
 ms.topic: reference
 ms.date: 05/31/2018
 api_location: ''
-ms.openlocfilehash: 1e01c35ad5a77c5a78a705d0188f771e0466a761
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: 0351ad27e18750832151e8820dec8594319024791850f1ab92764e175d9582b1
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "106330991"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118332963"
 ---
-# <a name="viewminimize"></a>Visualizza. Riduci a icona
+# <a name="viewminimize"></a>VIEW.minimize
 
-Il metodo di **riduzione** a icona riduce al minimo la **visualizzazione**.
+Il **metodo minimize** riduce al minimo **l'oggetto VIEW.**
 
 ``` syntax
         elementID.minimize()
@@ -57,7 +57,7 @@ Questo metodo non restituisce valori.
 
 | Requisito | Valore |
 |--------------------|------------------------------------------------------|
-| Versione<br/> | Windows Media Player versione 7,0 o successiva<br/> |
+| Versione<br/> | Windows Media Player versione 7.0 o successiva<br/> |
 
 
 
@@ -68,7 +68,7 @@ Questo metodo non restituisce valori.
 [**Elemento VIEW**](view-element.md)
 </dt> <dt>
 
-[**Visualizza. ingrandisce**](view-maximize.md)
+[**VIEW.maximize**](view-maximize.md)
 </dt> </dl>
 
  

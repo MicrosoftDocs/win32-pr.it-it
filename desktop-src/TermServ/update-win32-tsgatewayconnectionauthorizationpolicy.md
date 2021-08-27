@@ -1,12 +1,12 @@
 ---
 title: Metodo Update della classe Win32_TSGatewayConnectionAuthorizationPolicy
-description: Aggiorna i criteri di autorizzazione della connessione di Desktop remoto correnti (RD \ 160; LIMITE).
+description: Aggiorna i criteri di Desktop remoto di connessione corrente (Rd \ 160; CAP).
 ms.assetid: 6d13d1b7-1c7d-4d22-b42c-36e0f4446e86
 ms.tgt_platform: multiple
 keywords:
-- Metodo di aggiornamento Servizi Desktop remoto
-- Metodo Update Servizi Desktop remoto, classe Win32_TSGatewayConnectionAuthorizationPolicy
-- Classe Win32_TSGatewayConnectionAuthorizationPolicy Servizi Desktop remoto, metodo Update
+- Metodo Update Servizi Desktop remoto
+- Metodo Update Servizi Desktop remoto , Win32_TSGatewayConnectionAuthorizationPolicy classe
+- Win32_TSGatewayConnectionAuthorizationPolicy classe Servizi Desktop remoto , metodo Update
 topic_type:
 - apiref
 api_name:
@@ -17,16 +17,16 @@ api_type:
 - COM
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 87b982030170e954342dc5ff99754dcb89afd0e3
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: 2ec7c3d1802f4faa3da8e382d00aa14fc8b3e091baef9659ad45322ec2a909c2
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "104048438"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118850880"
 ---
-# <a name="update-method-of-the-win32_tsgatewayconnectionauthorizationpolicy-class"></a>Metodo Update della classe Win32 \_ TSGatewayConnectionAuthorizationPolicy
+# <a name="update-method-of-the-win32_tsgatewayconnectionauthorizationpolicy-class"></a>Metodo Update della classe \_ TSGatewayConnectionAuthorizationPolicy Win32
 
-Aggiorna i criteri di autorizzazione della connessione del Desktop remoto corrente.
+Aggiorna i criteri di autorizzazione Desktop remoto connessione desktop remoto.
 
 ## <a name="syntax"></a>Sintassi
 
@@ -60,58 +60,58 @@ uint32 Update(
 
 <dl> <dt>
 
-*Nome* \[ in\]
+*Nome* \[ Pollici\]
 </dt> <dd>
 
-Nome del CAP di desktop remoto. Il nome deve essere composto da un massimo di 64 caratteri, univoco (caso ignorato) e non può contenere i caratteri riservati seguenti:
+Nome del cap rd. Il nome deve contenere al massimo 64 caratteri, univoco (la distinzione tra maiuscole e minuscole viene ignorata) e non può contenere i caratteri riservati seguenti:
 
-<> :; " / \\ \| ? \*\[Scheda\]
+<> : ; " / \\ \| ? \*\[SCHEDA\]
 
 </dd> <dt>
 
-*UserGroupNames* \[ in\]
+*UserGroupNames* \[ Pollici\]
 </dt> <dd>
 
-Elenco di nomi di gruppi di utenti separati da punti e virgola. I nomi sono nel formato *dominio \\ nomegruppoutenti*. Se l'utente appartiene a uno di questi gruppi di utenti, l'utente sarà autorizzato ad accedere al server Gateway Desktop remoto.
+Elenco di nomi di gruppi di utenti separati da punti e virgola. I nomi sono nel formato *Dominio \\ UserGroupName*. Se l'utente appartiene a uno di questi gruppi di utenti, l'utente sarà autorizzato ad accedere al server Gateway Desktop remoto.
 
 </dd> <dt>
 
-*ComputerGroupNames* \[ in\]
+*ComputerGroupNames* \[ Pollici\]
 </dt> <dd>
 
-Elenco di nomi di gruppi di computer separati da punto e virgola. Questo valore può essere vuoto. I nomi sono nel formato *dominio \\ ComputerGroupName*. Se viene specificato un valore, il computer client deve appartenere a uno di questi gruppi di computer affinché l'utente acceda al server Gateway Desktop remoto.
+Elenco di nomi di gruppi di computer separati da punto e virgola. Questo valore può essere vuoto. I nomi sono nel formato *Dominio \\ ComputerGroupName*. Se viene specificato un valore, il computer client deve appartenere a uno di questi gruppi di computer per l'accesso dell'utente al server Gateway Desktop remoto.
 
 </dd> <dt>
 
-*Smart Card* \[ in\]
+*SmartCard* \[ Pollici\]
 </dt> <dd>
 
-Specifica se è possibile utilizzare smart card per l'autenticazione con il server Gateway Desktop remoto.
+Specifica se le smart card possono essere usate per l'autenticazione con il server Gateway Desktop remoto.
 
 </dd> <dt>
 
-*Password* \[ di in\]
+*Password* \[ Pollici\]
 </dt> <dd>
 
-Specifica se è possibile utilizzare le password per l'autenticazione con il server Gateway Desktop remoto.
+Specifica se è possibile usare le password per l'autenticazione con il server Gateway Desktop remoto.
 
 </dd> <dt>
 
-*SecureId* \[ in\]
+*SecureId* \[ Pollici\]
 </dt> <dd>
 
 Questo parametro è riservato per usi futuri.
 
 </dd> <dt>
 
-*Abilitato* \[ in\]
+*Abilitato* \[ Pollici\]
 </dt> <dd>
 
-Specifica se il CAP RD è abilitato.
+Specifica se questo criterio di autorizzazione connessioni Desktop remoto è abilitato.
 
 </dd> <dt>
 
-*DeviceRedirectionType* \[ in\]
+*DeviceRedirectionType* \[ Pollici\]
 </dt> <dd>
 
 Specifica i tipi di dispositivo che verranno reindirizzati.
@@ -121,103 +121,103 @@ Specifica i tipi di dispositivo che verranno reindirizzati.
 0
 </dt> <dd>
 
-Verranno reindirizzati tutti i dispositivi.
+Tutti i dispositivi verranno reindirizzati.
 
 </dd> <dt>
 
 1
 </dt> <dd>
 
-Non verrà reindirizzato alcun dispositivo.
+Nessun dispositivo verrà reindirizzato.
 
 </dd> <dt>
 
 2
 </dt> <dd>
 
-I dispositivi specificati non verranno reindirizzati. I parametri *DiskDrivesDisabled*, *PrintersDisabled*, *SerialPortsDisabled*, *ClipboardDisabled* e *PlugAndPlayDevicesDisabled* controllano i dispositivi che non verranno reindirizzati.
+I dispositivi specificati non verranno reindirizzati. I parametri *DiskDrivesDisabled*, *PrintersDisabled*, *SerialPortsDisabled*, *ClipboardDisabled* e *PlugAndPlayDevicesDisabled* controllano quali dispositivi non verranno reindirizzati.
 
 </dd> </dl> </dd> <dt>
 
-*DiskDrivesDisabled* \[ in\]
+*DiskDrivesDisabled* \[ Pollici\]
 </dt> <dd>
 
-Specifica se disabilitare il reindirizzamento dell'unità disco se il parametro *DeviceRedirectionType* è "2".
+Specifica se disabilitare il reindirizzamento delle unità disco se il *parametro DeviceRedirectionType* è "2".
 
 </dd> <dt>
 
-*PrintersDisabled* \[ in\]
+*StampantiDisabled* \[ Pollici\]
 </dt> <dd>
 
-Specifica se disabilitare il reindirizzamento della stampante se il parametro *DeviceRedirectionType* è "2".
+Specifica se disabilitare il reindirizzamento della stampante se il *parametro DeviceRedirectionType* è "2".
 
 </dd> <dt>
 
-*SerialPortsDisabled* \[ in\]
+*SerialPortsDisabled* \[ Pollici\]
 </dt> <dd>
 
-Specifica se disabilitare il reindirizzamento della porta seriale se il parametro *DeviceRedirectionType* è "2".
+Specifica se disabilitare il reindirizzamento delle porte seriali se il *parametro DeviceRedirectionType* è "2".
 
 </dd> <dt>
 
-*ClipboardDisabled* \[ in\]
+*AppuntiDisabled* \[ Pollici\]
 </dt> <dd>
 
-Specifica se disabilitare il reindirizzamento degli Appunti se il parametro *DeviceRedirectionType* è "2".
+Specifica se disabilitare il reindirizzamento degli Appunti se il *parametro DeviceRedirectionType* è "2".
 
 </dd> <dt>
 
-*PlugAndPlayDevicesDisabled* \[ in\]
+*PlugAndPlayDevicesDisabled* \[ Pollici\]
 </dt> <dd>
 
-Specifica se disabilitare il reindirizzamento dei dispositivi Plug and Play se il parametro *DeviceRedirectionType* è "2".
+Specifica se disabilitare il reindirizzamento Plug and Play dispositivi se il *parametro DeviceRedirectionType* è "2".
 
 </dd> <dt>
 
-*IdleTimeout* \[ in\]
+*IdleTimeout* \[ Pollici\]
 </dt> <dd>
 
 Valore di timeout di inattività in minuti
 
 </dd> <dt>
 
-*SessionTimeout* \[ in\]
+*SessionTimeout* \[ Pollici\]
 </dt> <dd>
 
-Valore di timeout della sessione in minuti
+Valore di timeout sessione in minuti
 
 </dd> <dt>
 
-*SessionTimeoutAction* \[ in\]
+*SessionTimeoutAction* \[ Pollici\]
 </dt> <dd>
 
-Azione di timeout della sessione in minuti
+Azione di timeout sessione in minuti
 
 </dd> <dt>
 
-*AllowOnlySDRServers* \[ in\]
+*AllowOnlySDRServers* \[ Pollici\]
 </dt> <dd>
 
 Indica se le connessioni sono consentite solo ai server TS SDR
 
 </dd> <dt>
 
-*CookieAuthentication* \[ in\]
+*CookieAuthentication* \[ Pollici\]
 </dt> <dd>
 
-Indica se l'autenticazione del cookie può essere utilizzata per la connessione al server Gateway Servizi terminal
+Indica se è possibile usare l'autenticazione tramite cookie per connettersi al server gateway di Servizi terminal
 
 </dd> </dl>
 
 ## <a name="return-value"></a>Valore restituito
 
-Se il metodo ha esito positivo, restituisce zero. Se il metodo ha esito negativo, restituisce un valore diverso da zero. Per un elenco di codici di errore, vedere [Servizi Desktop remoto codici di errore del provider WMI](terminal-services-wmi-provider-error-codes.md).
+Se il metodo ha esito positivo, restituisce zero. Se il metodo ha esito negativo, restituisce un valore diverso da zero. Per un elenco di codici di errore, vedere Servizi Desktop remoto [di errore del provider WMI](terminal-services-wmi-provider-error-codes.md).
 
 ## <a name="remarks"></a>Commenti
 
-Per chiamare questo metodo, è necessario essere membri del gruppo Administrators.
+Per chiamare questo metodo, è necessario essere un membro del gruppo Administrators.
 
-I file Managed Object Format (MOF) contengono le definizioni per le classi Strumentazione gestione Windows (WMI). I file MOF non vengono installati come parte di Microsoft Windows Software Development Kit (SDK). Vengono installati nel server quando si aggiunge il ruolo associato usando il Server Manager. Per ulteriori informazioni sui file MOF, vedere [Managed Object Format (MOF)](/windows/desktop/WmiSdk/managed-object-format--mof-).
+Managed Object Format (MOF) contengono le definizioni per le classi WMI (Windows Management Instrumentation). I file MOF non vengono installati come parte di Microsoft Windows Software Development Kit (SDK). Vengono installati nel server quando si aggiunge il ruolo associato usando il Server Manager. Per altre informazioni sui file MOF, vedere [Managed Object Format (MOF)](/windows/desktop/WmiSdk/managed-object-format--mof-).
 
 ## <a name="requirements"></a>Requisiti
 
@@ -227,8 +227,8 @@ I file Managed Object Format (MOF) contengono le definizioni per le classi Strum
 |-------------------------------------|------------------------------------------------------------------------------------------|
 | Client minimo supportato<br/> | Nessuno supportato<br/>                                                                |
 | Server minimo supportato<br/> | Windows Server 2008<br/>                                                           |
-| Spazio dei nomi<br/>                | Radice \\ CIMv2 \\ TerminalServices<br/>                                                 |
-| MOF<br/>                      | <dl> <dt>TSGateway. mof</dt> </dl> |
+| Spazio dei nomi<br/>                | TerminalServices \\ CIMv2 \\ radice<br/>                                                 |
+| MOF<br/>                      | <dl> <dt>TSGateway.mof</dt> </dl> |
 | DLL<br/>                      | <dl> <dt>AagWmi.dll</dt> </dl>    |
 
 
@@ -237,7 +237,7 @@ I file Managed Object Format (MOF) contengono le definizioni per le classi Strum
 
 <dl> <dt>
 
-[**\_TSGatewayConnectionAuthorizationPolicy Win32**](win32-tsgatewayconnectionauthorizationpolicy.md)
+[**Win32 \_ TSGatewayConnectionAuthorizationPolicy**](win32-tsgatewayconnectionauthorizationpolicy.md)
 </dt> </dl>
 
  

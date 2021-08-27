@@ -61,7 +61,7 @@ Puntatore al dispositivo (vedere [**ID3D10 InterfaceDevice Interface)**](/window
 
 Tipo: **[ **UINT**](../winprog/windows-data-types.md)**
 
-Dimensioni del vertex buffer, in numero di sprite, che verranno inviate al dispositivo quando viene chiamato [**ID3DX10Sprite::Flush**](id3dx10sprite-flush.md) o [**ID3DX10Sprite::D rawSpritesImmediate.**](id3dx10sprite-drawspritesimmediate.md) Dovrebbe trattarsi di un numero ridotto se si è in grado di eseguire il rendering di un numero ridotto di sprite alla volta (per risparmiare memoria) e di un numero elevato se si è in grado di eseguire il rendering di un numero elevato di sprite alla volta. Il valore massimo è 4096. Se viene specificato 0, la dimensione del buffer dei vertici verrà impostata automaticamente su 4096.
+Dimensioni del buffer dei vertici, in numero di sprite, che verranno inviate al dispositivo quando viene chiamato [**ID3DX10Sprite::Flush**](id3dx10sprite-flush.md) o [**ID3DX10Sprite::D rawSpritesImmediate.**](id3dx10sprite-drawspritesimmediate.md) Dovrebbe trattarsi di un numero ridotto se si è in grado di eseguire il rendering di un numero ridotto di sprite alla volta (per risparmiare memoria) e di un numero elevato se si è in grado di eseguire il rendering di un numero elevato di sprite alla volta. Il valore massimo è 4096. Se viene specificato 0, la dimensione del buffer dei vertici verrà impostata automaticamente su 4096.
 
 </dd> <dt>
 
@@ -95,7 +95,7 @@ Se la funzione ha esito positivo, il valore restituito è S \_ OK. Se la funzion
 
 <dl> <dt>
 
-[per utilizzo generico funzioni](d3d10-graphics-reference-d3dx10-functions-general-purpose.md)
+[Per utilizzo generico funzioni](d3d10-graphics-reference-d3dx10-functions-general-purpose.md)
 </dt> </dl>
 
  

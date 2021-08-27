@@ -1,9 +1,9 @@
 ---
 title: Elemento patternMaps (NamedQueryType)
-description: Definisce un elenco di coppie di espressioni regolari utilizzate per modificare la stringa del messaggio.
+description: Definisce un elenco di coppie di espressioni regolari usate per modificare la stringa del messaggio.
 ms.assetid: d471d61f-3f01-44eb-a61e-e1f5de67a31d
 keywords:
-- EventLog elemento patternMaps
+- Elemento patternMaps EventLog
 topic_type:
 - apiref
 api_name:
@@ -13,16 +13,16 @@ api_type:
 ms.topic: reference
 ms.date: 05/31/2018
 api_location: ''
-ms.openlocfilehash: 3cf7832cf0869c6df4779eac463e2e124257db25
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: 539c174cb25a83a72de7011c46d527591ec25447410155639deabf17c308aaa8
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "103873257"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118841680"
 ---
 # <a name="patternmaps-namedquerytype-element"></a>Elemento patternMaps (NamedQueryType)
 
-Definisce un elenco di coppie di espressioni regolari utilizzate per modificare la stringa del messaggio.
+Definisce un elenco di coppie di espressioni regolari usate per modificare la stringa del messaggio.
 
 ``` syntax
 <xs:element name="patternMaps"
@@ -30,7 +30,7 @@ Definisce un elenco di coppie di espressioni regolari utilizzate per modificare 
  />
 ```
 
-L'elemento **patternMaps** è definito dal tipo complesso [**NamedQueryType**](eventmanifestschema-namedquerytype-complextype.md) .
+**L'elemento patternMaps** è definito dal [**tipo complesso NamedQueryType.**](eventmanifestschema-namedquerytype-complextype.md)
 
 ## <a name="requirements"></a>Requisiti
 
@@ -38,8 +38,8 @@ L'elemento **patternMaps** è definito dal tipo complesso [**NamedQueryType**](e
 
 | Requisito | Valore |
 |-------------------------------------|------------------------------------------------------|
-| Client minimo supportato<br/> | \[Solo app desktop di Windows Vista\]<br/>       |
-| Server minimo supportato<br/> | \[Solo app desktop Windows Server 2008\]<br/> |
+| Client minimo supportato<br/> | Windows Solo \[ app desktop di Vista\]<br/>       |
+| Server minimo supportato<br/> | Windows Solo app desktop server 2008 \[\]<br/> |
 
 
 

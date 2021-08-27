@@ -1,6 +1,6 @@
 ---
-description: 'Altre informazioni su: JET_COMMIT_ID. CompareTo (metodo)'
-title: Metodo JET_COMMIT_ID. CompareTo (Microsoft. ISAM. esent. Interop. Windows8)
+description: 'Altre informazioni su: JET_COMMIT_ID.CompareTo'
+title: JET_COMMIT_ID.CompareTo (Microsoft.Isam.Esent.Interop.Windows8)
 TOCTitle: 'CompareTo method '
 ms:assetid: M:Microsoft.Isam.Esent.Interop.Windows8.JET_COMMIT_ID.CompareTo(Microsoft.Isam.Esent.Interop.Windows8.JET_COMMIT_ID)
 ms:mtpsurl: https://msdn.microsoft.com/library/microsoft.isam.esent.interop.windows8.jet_commit_id.compareto(v=EXCHG.10)
@@ -24,19 +24,19 @@ api_type:
 api_location:
 - Microsoft.Isam.Esent.Interop.dll
 ROBOTS: INDEX,FOLLOW
-ms.openlocfilehash: bb52be18054b0d9da723ca15073868a6baff6b12
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: a101cd38eb80598f907068d8fd27d2217ad73db1476dc41d42b2a6caaae3e6ed
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "106316493"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118766899"
 ---
-# <a name="jet_commit_idcompareto-method"></a>Metodo JET_COMMIT_ID. CompareTo
+# <a name="jet_commit_idcompareto-method"></a>JET_COMMIT_ID.CompareTo
 
 Restituisce un valore che confronta questa istanza con un'altra.
 
-**Spazio dei nomi:**  [Microsoft. ISAM. esent. Interop. Windows8](./microsoft.isam.esent.interop.windows8-namespace.md)  
-**Assembly:**  Microsoft. ISAM. esent. Interop (in Microsoft.Isam.Esent.Interop.dll)
+**Spazio dei**  [nomi: Microsoft.Isam.Esent.Interop.Windows8](./microsoft.isam.esent.interop.windows8-namespace.md)  
+**Assembly:**  Microsoft.Isam.Esent.Interop (in Microsoft.Isam.Esent.Interop.dll)
 
 ## <a name="syntax"></a>Sintassi
 
@@ -62,25 +62,25 @@ public int CompareTo(
 #### <a name="parameters"></a>Parametri
 
   - altro  
-    Tipo: [Microsoft.ISAM.esent.Interop.Windows8.JET_COMMIT_ID](./jet-commit-id-class.md)  
+    Tipo: [Microsoft.Isam.Esent.Interop.Windows8.JET_COMMIT_ID](./jet-commit-id-class.md)  
     
-    Istanza di da confrontare con questa istanza.
+    Istanza da confrontare con questa istanza.
 
 #### <a name="return-value"></a>Valore restituito
 
-Tipo: [System. Int32](/dotnet/api/system.int32)  
-Valore con segno che rappresenta le posizioni relative delle istanze di.  
+Tipo: [System.Int32](/dotnet/api/system.int32)  
+Valore con segno che rappresenta le posizioni relative delle istanze di .  
 
 #### <a name="implements"></a>Implementazioni
 
-[IComparable \<T\> . CompareTo (T)](/dotnet/api/system.icomparable-1.compareto#System_IComparable_1_CompareTo__0_)  
+[IComparable \<T\> . CompareTo(T)](/dotnet/api/system.icomparable-1.compareto#System_IComparable_1_CompareTo__0_)  
 
 ## <a name="see-also"></a>Vedi anche
 
 #### <a name="reference"></a>Riferimento
 
-[Classe JET_COMMIT_ID](./jet-commit-id-class.md)
+[JET_COMMIT_ID classe](./jet-commit-id-class.md)
 
-[Membri JET_COMMIT_ID](./jet-commit-id-members.md)
+[JET_COMMIT_ID membri](./jet-commit-id-members.md)
 
-[Spazio dei nomi Microsoft. ISAM. esent. Interop. Windows8](./microsoft.isam.esent.interop.windows8-namespace.md)
+[Spazio dei nomi Microsoft.Isam.Esent.Interop.Windows8](./microsoft.isam.esent.interop.windows8-namespace.md)
