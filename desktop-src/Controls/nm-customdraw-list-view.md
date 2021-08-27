@@ -14,12 +14,12 @@ api_type:
 - HeaderDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: d2b30af8dc61f9bb12d524f2b3f6ac58fb1adecebf66b4ad4477756e17f9a621
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: ba991f5af43ee5513ec0713208aed84319bd5a9a
+ms.sourcegitcommit: 0dec0044816af3f2b2e6403659e1cf11138c90cd
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119018874"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "121812678"
 ---
 # <a name="nm_customdraw-list-view-notification-code"></a>Codice \_ di notifica NM CUSTOMDRAW (visualizzazione elenco)
 

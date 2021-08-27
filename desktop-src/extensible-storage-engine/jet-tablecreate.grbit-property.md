@@ -1,6 +1,6 @@
 ---
-description: 'Altre informazioni su: Proprietà JET_TABLECREATE. grbit'
-title: Proprietà JET_TABLECREATE. grbit
+description: 'Altre informazioni su: JET_TABLECREATE.grbit'
+title: JET_TABLECREATE.grbit
 TOCTitle: 'grbit property '
 ms:assetid: P:Microsoft.Isam.Esent.Interop.JET_TABLECREATE.grbit
 ms:mtpsurl: https://msdn.microsoft.com/library/microsoft.isam.esent.interop.jet_tablecreate.grbit(v=EXCHG.10)
@@ -26,19 +26,19 @@ api_type:
 api_location:
 - Microsoft.Isam.Esent.Interop.dll
 ROBOTS: INDEX,FOLLOW
-ms.openlocfilehash: dda87fbaa17b0329c3f1c377ba272ecf94c24abb
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: fc18b415ef168d982f5b00b272a665842f7eb77d9c37d1803906250bdf9fa82b
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "106317360"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120115851"
 ---
-# <a name="jet_tablecreategrbit-property"></a>Proprietà JET_TABLECREATE. grbit
+# <a name="jet_tablecreategrbit-property"></a>JET_TABLECREATE.grbit
 
 Ottiene o imposta le opzioni della tabella.
 
-**Spazio dei nomi:**  [Microsoft. ISAM. esent. Interop](./microsoft.isam.esent.interop-namespace.md)  
-**Assembly:**  Microsoft. ISAM. esent. Interop (in Microsoft.Isam.Esent.Interop.dll)
+**Spazio dei nomi:**  [Microsoft.Isam.Esent.Interop](./microsoft.isam.esent.interop-namespace.md)  
+**Assembly:**  Microsoft.Isam.Esent.Interop (in Microsoft.Isam.Esent.Interop.dll)
 
 ## <a name="syntax"></a>Sintassi
 
@@ -62,14 +62,14 @@ public CreateTableColumnIndexGrbit grbit { get; set; }
 
 #### <a name="property-value"></a>Valore proprietà
 
-Tipo: [Microsoft. ISAM. esent. Interop. CreateTableColumnIndexGrbit](./createtablecolumnindexgrbit-enumeration.md)  
+Tipo: [Microsoft.Isam.Esent.Interop.CreateTableColumnIndexGrbit](./createtablecolumnindexgrbit-enumeration.md)  
 
 ## <a name="see-also"></a>Vedi anche
 
 #### <a name="reference"></a>Riferimento
 
-[Classe JET_TABLECREATE](./jet-tablecreate-class.md)
+[JET_TABLECREATE classe](./jet-tablecreate-class.md)
 
-[Membri JET_TABLECREATE](./jet-tablecreate-members.md)
+[JET_TABLECREATE membri](./jet-tablecreate-members.md)
 
-[Spazio dei nomi Microsoft. ISAM. esent. Interop](./microsoft.isam.esent.interop-namespace.md)
+[Spazio dei nomi Microsoft.Isam.Esent.Interop](./microsoft.isam.esent.interop-namespace.md)

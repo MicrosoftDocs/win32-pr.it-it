@@ -24,19 +24,19 @@ api_type:
 api_location:
 - Microsoft.Isam.Esent.Interop.dll
 ROBOTS: INDEX,FOLLOW
-ms.openlocfilehash: 1fc62b33512515dafd6b8b9dc9791c61a2873dce
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 39d2aa3c6ac41e4818d6cf77be6dbeaf820f2c86cbba4ded68f09bd8e488b746
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104128195"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120115981"
 ---
 # <a name="jet_signaturetostring-method"></a>JET_SIGNATURE. Metodo ToString
 
-Genera una rappresentazione di stringa della struttura.
+Generare una rappresentazione di stringa della struttura .
 
-**Spazio dei nomi:**  [Microsoft. ISAM. esent. Interop](./microsoft.isam.esent.interop-namespace.md)  
-**Assembly:**  Microsoft. ISAM. esent. Interop (in Microsoft.Isam.Esent.Interop.dll)
+**Spazio dei nomi:**  [Microsoft.Isam.Esent.Interop](./microsoft.isam.esent.interop-namespace.md)  
+**Assembly:**  Microsoft.Isam.Esent.Interop (in Microsoft.Isam.Esent.Interop.dll)
 
 ## <a name="syntax"></a>Sintassi
 
@@ -56,15 +56,15 @@ public override string ToString()
 
 #### <a name="return-value"></a>Valore restituito
 
-Tipo: [System. String](/dotnet/api/system.string)  
-Struttura sotto forma di stringa.  
+Tipo: [System.String](/dotnet/api/system.string)  
+Struttura come stringa.  
 
 ## <a name="see-also"></a>Vedi anche
 
 #### <a name="reference"></a>Riferimento
 
-[Struttura JET_SIGNATURE](./jet-signature-structure2.md)
+[JET_SIGNATURE struttura](./jet-signature-structure2.md)
 
-[Membri JET_SIGNATURE](./jet-signature-members.md)
+[JET_SIGNATURE membri](./jet-signature-members.md)
 
-[Spazio dei nomi Microsoft. ISAM. esent. Interop](./microsoft.isam.esent.interop-namespace.md)
+[Spazio dei nomi Microsoft.Isam.Esent.Interop](./microsoft.isam.esent.interop-namespace.md)

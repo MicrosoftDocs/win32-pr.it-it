@@ -1,7 +1,7 @@
 ---
-description: Ora di arresto dell'esempio corrente.
+description: Ora di arresto nell'esempio corrente.
 ms.assetid: 78045c9f-76bd-42a8-b40a-6b18ac93c9b2
-title: 'Membro CBaseRenderer:: m_SignalTime (Renbase. h)'
+title: Membro CBaseRenderer::m_SignalTime (Renbase.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -16,16 +16,16 @@ api_location:
 - Strmbase.dll
 - Strmbasd.lib
 - Strmbasd.dll
-ms.openlocfilehash: b61e5715c96c9233d5d8d25d14b62de093e87bea
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: 6b8fca6274cd12d601dd205d657a34118c579dc65715e9f52e072edf20101436
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "106330531"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120103171"
 ---
-# <a name="cbaserendererm_signaltime-member"></a>Membro SignalTime di CBaseRenderer:: m \_
+# <a name="cbaserendererm_signaltime-member"></a>Membro CBaseRenderer::m \_ SignalTime
 
-Ora di arresto dell'esempio corrente.
+Ora di arresto nell'esempio corrente.
 
 ## <a name="syntax"></a>Sintassi
 
@@ -42,8 +42,8 @@ REFERENCE_TIME m_SignalTime;
 
 | Requisito | Valore |
 |--------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Intestazione<br/>  | <dl> <dt>Renbase. h (include Streams. h)</dt> </dl>                                                                                   |
-| Libreria<br/> | <dl> <dt>Strmbase. lib (compilazioni finali); </dt> <dt>Strmbasd. lib (build di debug)</dt> </dl> |
+| Intestazione<br/>  | <dl> <dt>Renbase.h (includere Flussi.h)</dt> </dl>                                                                                   |
+| Libreria<br/> | <dl> <dt>Strmbase.lib (build di vendita al dettaglio); </dt> <dt>Strmbasd.lib (build di debug)</dt> </dl> |
 
 
 

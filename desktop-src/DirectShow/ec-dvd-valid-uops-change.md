@@ -1,7 +1,7 @@
 ---
-description: Segnala che il set disponibile di metodi dell'interfaccia IDvdControl2 è stato modificato.
+description: Segnala che il set disponibile di metodi di interfaccia IDvdControl2 è stato modificato.
 ms.assetid: dfe698b9-abe5-44a7-9844-f408f11fd0ce
-title: EC_DVD_VALID_UOPS_CHANGE (Dvdevcode. h)
+title: EC_DVD_VALID_UOPS_CHANGE (Dvdevcode.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -13,16 +13,16 @@ api_type:
 - HeaderDef
 api_location:
 - dvdevcode.h
-ms.openlocfilehash: 26ab0674b504fac3fe374247f47ca20496b22ddf
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: fafdbb5443a32a8029ad73d92a2b23c5f05c96d5dfc32375fd05e6d4502484a1
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "106326629"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120051811"
 ---
-# <a name="ec_dvd_valid_uops_change"></a>\_ \_ \_ modifica UOPs valida DVD \_ EC
+# <a name="ec_dvd_valid_uops_change"></a>EC \_ DVD \_ VALID \_ UOPS \_ CHANGE
 
-Segnala che il set disponibile di metodi dell'interfaccia [**IDVDControl2**](/windows/desktop/api/Strmif/nn-strmif-idvdcontrol2) è stato modificato.
+Segnala che il set disponibile di [**metodi di interfaccia IDvdControl2**](/windows/desktop/api/Strmif/nn-strmif-idvdcontrol2) è stato modificato.
 
 ## <a name="parameters"></a>Parametri
 
@@ -31,7 +31,7 @@ Segnala che il set disponibile di metodi dell'interfaccia [**IDVDControl2**](/wi
 <span id="lParam1"></span><span id="lparam1"></span><span id="LPARAM1"></span>*lParam1*
 </dt> <dd>
 
-Valore **DWORD** che contiene una combinazione di zero o più flag dall'enumerazione [**valida \_ del \_ flag UOP**](/windows/win32/api/strmif/ne-strmif-valid_uop_flag) . I bit indicano quali comandi di [**IDVDControl2**](/windows/desktop/api/Strmif/nn-strmif-idvdcontrol2) sono stati disabilitati in modo esplicito dal disco DVD.
+**Valore DWORD** che contiene una combinazione di zero o più flag [**dell'enumerazione VALID \_ UOP \_ FLAG.**](/windows/win32/api/strmif/ne-strmif-valid_uop_flag) I bit indicano quali [**comandi IDvdControl2**](/windows/desktop/api/Strmif/nn-strmif-idvdcontrol2) sono stati disabilitati in modo esplicito dal disco DVD.
 
 </dd> <dt>
 
@@ -44,7 +44,7 @@ Zero.
 
 ## <a name="remarks"></a>Commenti
 
-Questo evento indica solo le operazioni che vengono disabilitate in modo esplicito dal contenuto del disco DVD. Non garantisce che sia valido chiamare metodi che non sono disabilitati. Se, ad esempio, non è presente alcun pulsante, il metodo [**IDVDControl2:: ActivateButton**](/windows/desktop/api/Strmif/nf-strmif-idvdcontrol2-activatebutton) non funzionerà, anche se il metodo non è disabilitato in modo esplicito.
+Questo evento indica solo le operazioni disabilitate in modo esplicito dal contenuto del disco DVD. Non garantisce che sia valido chiamare metodi che non sono disabilitati. Ad esempio, se non sono presenti pulsanti, il [**metodo IDvdControl2::ActivateButton**](/windows/desktop/api/Strmif/nf-strmif-idvdcontrol2-activatebutton) non funzionerà, anche se il metodo non è disabilitato in modo esplicito.
 
 Questo evento viene generato in tutti i domini.
 
@@ -54,7 +54,7 @@ Questo evento viene generato in tutti i domini.
 
 | Requisito | Valore |
 |-------------------|----------------------------------------------------------------------------------------------------------|
-| Intestazione<br/> | <dl> <dt>Dvdevcode. h (include dshow. h)</dt> </dl> |
+| Intestazione<br/> | <dl> <dt>Dvdevcode.h (includere Dshow.h)</dt> </dl> |
 
 
 

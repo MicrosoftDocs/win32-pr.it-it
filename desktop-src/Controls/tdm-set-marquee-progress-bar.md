@@ -1,9 +1,9 @@
 ---
-title: Messaggio TDM_SET_MARQUEE_PROGRESS_BAR (COMmctrl. h)
-description: Indica se l'indicatore di stato ospitato di una finestra di dialogo attività deve essere visualizzato in modalità marquee.
+title: TDM_SET_MARQUEE_PROGRESS_BAR messaggio (Commctrl.h)
+description: Indica se l'indicatore di stato ospitato di una finestra di dialogo attività deve essere visualizzato in modalità selezione.
 ms.assetid: 28b9b519-6b96-4130-936c-b8fe8df86d25
 keywords:
-- Controlli di Windows Message TDM_SET_MARQUEE_PROGRESS_BAR
+- TDM_SET_MARQUEE_PROGRESS_BAR di controllo Windows messaggio
 topic_type:
 - apiref
 api_name:
@@ -14,29 +14,29 @@ api_type:
 - HeaderDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 45a9384826b89d07c6564dc511d4909058871ca3
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: 13262339f7d87ea68755a38a49cc8c327706939d6b18025f350334dfdbe3dd4a
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "104121298"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120104611"
 ---
-# <a name="tdm_set_marquee_progress_bar-message"></a>Messaggio indicatore indicatore di stato TDM \_ set \_ Marquee \_ \_
+# <a name="tdm_set_marquee_progress_bar-message"></a>TDM \_ SET \_ MARQUEE \_ PROGRESS BAR \_ MESSAGE
 
-Indica se l'indicatore di stato ospitato di una finestra di dialogo attività deve essere visualizzato in modalità marquee.
+Indica se l'indicatore di stato ospitato di una finestra di dialogo attività deve essere visualizzato in modalità selezione.
 
 ## <a name="parameters"></a>Parametri
 
 <dl> <dt>
 
-*wParam* \[ in\]
+*wParam* \[ Pollici\]
 </dt> <dd>
 
-**Bool** che indica se l'indicatore di stato deve essere visualizzato in modalità marquee. Il valore **true** attiva la modalità marquee e il valore **false** disattiva la modalità marquee.
+Valore **BOOL** che indica se l'indicatore di stato deve essere visualizzato in modalità di selezione. Il valore **TRUE attiva** la modalità di selezione e il valore **FALSE** disattiva la modalità di selezione.
 
 </dd> <dt>
 
-*lParam* \[ in\]
+*lParam* \[ Pollici\]
 </dt> <dd>
 
 Deve essere zero.
@@ -49,7 +49,7 @@ Il valore restituito viene ignorato.
 
 ## <a name="remarks"></a>Commenti
 
-Per informazioni sulla modalità Marquee, vedere [controllo indicatore di stato](progress-bar-control.md).
+Per informazioni sulla modalità di selezione, vedere Controllo indicatore [di stato](progress-bar-control.md).
 
 ## <a name="requirements"></a>Requisiti
 
@@ -57,9 +57,9 @@ Per informazioni sulla modalità Marquee, vedere [controllo indicatore di stato]
 
 | Requisito | Valore |
 |-------------------------------------|---------------------------------------------------------------------------------------|
-| Client minimo supportato<br/> | \[Solo app desktop di Windows Vista\]<br/>                                        |
-| Server minimo supportato<br/> | \[Solo app desktop Windows Server 2008\]<br/>                                  |
-| Intestazione<br/>                   | <dl> <dt>Commctrl. h</dt> </dl> |
+| Client minimo supportato<br/> | Windows Solo \[ app desktop di Vista\]<br/>                                        |
+| Server minimo supportato<br/> | Windows Solo app desktop server 2008 \[\]<br/>                                  |
+| Intestazione<br/>                   | <dl> <dt>Commctrl.h</dt> </dl> |
 
 
 

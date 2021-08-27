@@ -13,14 +13,14 @@ api_type:
 - COM
 api_location:
 - vmms.exe
-ms.openlocfilehash: 4702b5b73a989e2889bf1da9e4d284afdfe5e916
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: f774192cf5c65f6fff0d9a1a17df51483984b49efd6be437f0348547eed5082c
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104343161"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120050491"
 ---
-# <a name="startreplication-method-of-the-msvm_replicationservice-class"></a>Metodo StartReplication della classe MSVM \_ ReplicationService
+# <a name="startreplication-method-of-the-msvm_replicationservice-class"></a>Metodo StartReplication della classe Msvm \_ ReplicationService
 
 Avvia la replica di una macchina virtuale. Quando un client chiama questo metodo per una macchina virtuale di replica, avvia la replica con la replica estesa.
 
@@ -43,34 +43,34 @@ uint32 StartReplication(
 
 <dl> <dt>
 
-*ComputerSystem* \[ in\]
+*ComputerSystem* \[ Pollici\]
 </dt> <dd>
 
-Riferimento a un'istanza di [**CIM \_ ComputerSystem**](/windows/desktop/CIMWin32Prov/cim-computersystem) che rappresenta la macchina virtuale per cui deve essere avviata la replica.
+Riferimento a [**un'istanza CIM \_ ComputerSystem**](/windows/desktop/CIMWin32Prov/cim-computersystem) che rappresenta la macchina virtuale per cui deve essere avviata la replica.
 
 </dd> <dt>
 
-*InitialReplicationType* \[ in\]
+*InitialReplicationType* \[ Pollici\]
 </dt> <dd>
 
-Tipo di trasferimento da utilizzare per l'esecuzione della replica iniziale.
+Tipo di trasferimento da utilizzare per eseguire la replica iniziale.
 
 <dt>
 
 <span id="Network_Transfer"></span><span id="network_transfer"></span><span id="NETWORK_TRANSFER"></span>
 
-<span id="Network_Transfer"></span><span id="network_transfer"></span><span id="NETWORK_TRANSFER"></span>**Trasferimento di rete** (1)
+<span id="Network_Transfer"></span><span id="network_transfer"></span><span id="NETWORK_TRANSFER"></span>**Trasferimento di** rete (1)
 
 
 </dt> <dd>
 
-Trasferimento tramite rete.
+Trasferimento di rete.
 
 </dd> <dt>
 
 <span id="Export"></span><span id="export"></span><span id="EXPORT"></span>
 
-<span id="Export"></span><span id="export"></span><span id="EXPORT"></span>**Esporta** (2)
+<span id="Export"></span><span id="export"></span><span id="EXPORT"></span>**Esportazione** (2)
 
 
 </dt> <dd>
@@ -81,30 +81,30 @@ Esportazione.
 
 <span id="Seeded_Network_Transfer"></span><span id="seeded_network_transfer"></span><span id="SEEDED_NETWORK_TRANSFER"></span>
 
-<span id="Seeded_Network_Transfer"></span><span id="seeded_network_transfer"></span><span id="SEEDED_NETWORK_TRANSFER"></span>**Trasferimento di rete con seeding** (3)
+<span id="Seeded_Network_Transfer"></span><span id="seeded_network_transfer"></span><span id="SEEDED_NETWORK_TRANSFER"></span>**Seeded Network Transfer** (3)
 
 
 </dt> <dd>
 
-Trasferimento di rete con seeding.
+Trasferimento di rete con seed.
 
 </dd> </dl> </dd> <dt>
 
-*InitialReplicationExportLocation* \[ in\]
+*InitialReplicationExportLocation* \[ Pollici\]
 </dt> <dd>
 
-Se *InitialReplicationType* è 2 (Export), questo parametro contiene il percorso completo della directory in cui deve essere esportata la replica iniziale. Questo parametro non viene utilizzato per altri valori di *InitialReplicationType* e può essere **null**. Questa directory può essere riutilizzata per l'esportazione di più repliche di macchine virtuali. Questo metodo inserisce ogni replica della macchina virtuale in una sottodirectory separata in questo percorso.
+Se *InitialReplicationType* è 2 (Esportazione), questo parametro contiene il percorso completo della directory in cui deve essere esportata la replica iniziale. Questo parametro non viene usato per altri valori *di InitialReplicationType* e può essere **Null.** Questa directory può essere riutilizzata per l'esportazione di più repliche di macchine virtuali. Questo metodo inserisce ogni replica di macchine virtuali in una sottodirectory separata in questo percorso.
 
 </dd> <dt>
 
-*StartTime* \[ in\]
+*StartTime* \[ Pollici\]
 </dt> <dd>
 
-Ora di inizio pianificata per la replica iniziale sulla connessione di rete al server di ripristino. Questo parametro viene ignorato quando *InitialReplicationType* è 2 (Export). Se questo parametro è **null**, la replica iniziale viene avviata immediatamente.
+Ora di inizio pianificata per la replica iniziale tramite la connessione di rete al server di ripristino. Questo parametro viene ignorato *quando InitialReplicationType* è 2 (Esportazione). Se questo parametro è **Null,** la replica iniziale viene avviata immediatamente.
 
 </dd> <dt>
 
-*Processo* \[ di out\]
+*Processo* \[ Cambio\]
 </dt> <dd>
 
 Se l'operazione viene eseguita in modo asincrono, questo metodo restituirà 4096 e questo parametro conterrà un riferimento a un oggetto derivato da [**CIM \_ ConcreteJob**](/previous-versions//cc136808(v=vs.85)).
@@ -120,10 +120,10 @@ Questo metodo restituisce uno dei valori seguenti.
 **Completato senza errori** (0)
 </dt> <dt>
 
-**Parametri del metodo controllati-processo avviato** (4096)
+**Parametri del metodo controllati - Processo avviato** (4096)
 </dt> <dt>
 
-**Non riuscito** (32768)
+**Operazione non** riuscita (32768)
 </dt> <dt>
 
 **Accesso negato** (32769)
@@ -132,25 +132,25 @@ Questo metodo restituisce uno dei valori seguenti.
 **Non supportato** (32770)
 </dt> <dt>
 
-**Stato sconosciuto** (32771)
+**Lo stato è sconosciuto** (32771)
 </dt> <dt>
 
 **Timeout** (32772)
 </dt> <dt>
 
-**Parametro non valido** (32773)
+**Parametro non** valido (32773)
 </dt> <dt>
 
-Il **sistema è in uso** (32774)
+**Sistema in uso** (32774)
 </dt> <dt>
 
-**Stato non valido per l'operazione** (32775)
+**Stato non valido per questa operazione** (32775)
 </dt> <dt>
 
-**Tipo di dati non corretto** (32776)
+**Tipo di dati non** corretto (32776)
 </dt> <dt>
 
-**Sistema non disponibile** (32777)
+**Il sistema non è disponibile** (32777)
 </dt> <dt>
 
 **Memoria insufficiente** (32778)
@@ -165,10 +165,10 @@ Il **sistema è in uso** (32774)
 
 | Requisito | Valore |
 |-------------------------------------|---------------------------------------------------------------------------------------------------------|
-| Client minimo supportato<br/> | \[Solo app desktop di Windows 8\]<br/>                                                              |
-| Server minimo supportato<br/> | \[Solo app desktop Windows Server 2012\]<br/>                                                    |
-| Spazio dei nomi<br/>                | \\Virtualizzazione radice \\ v2<br/>                                                                     |
-| MOF<br/>                      | <dl> <dt>WindowsVirtualization. v2. mof</dt> </dl> |
+| Client minimo supportato<br/> | \[Windows 8 solo app desktop\]<br/>                                                              |
+| Server minimo supportato<br/> | \[Windows Server 2012 solo app desktop\]<br/>                                                    |
+| Spazio dei nomi<br/>                | Virtualizzazione \\ radice \\ V2<br/>                                                                     |
+| MOF<br/>                      | <dl> <dt>WindowsVirtualization.V2.mof</dt> </dl> |
 | DLL<br/>                      | <dl> <dt>Vmms.exe</dt> </dl>                     |
 
 
@@ -177,7 +177,7 @@ Il **sistema è in uso** (32774)
 
 <dl> <dt>
 
-[**\_ReplicationService MSVM**](msvm-replicationservice.md)
+[**Msvm \_ ReplicationService**](msvm-replicationservice.md)
 </dt> </dl>
 
  

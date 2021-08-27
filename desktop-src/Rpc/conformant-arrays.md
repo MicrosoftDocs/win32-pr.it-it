@@ -1,21 +1,21 @@
 ---
 title: Matrici conformi
-description: La dimensione di una matrice conforme può variare o essere conforme ogni volta che il client la passa a una procedura remota sul server.
+description: Le dimensioni di una matrice conforme possono variare o essere conformi ogni volta che il client la passa a una procedura remota nel server.
 ms.assetid: b4aaec77-b7ae-495d-8666-4702017e675f
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: ed6f1491354f9cd26ef6100ab8d21f2ace3133f4
-ms.sourcegitcommit: 592c9bbd22ba69802dc353bcb5eb30699f9e9403
+ms.openlocfilehash: 19766b7b9552bcab08a4d194629892e51d5185ed39b0bedddbaef32f08cececf
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/20/2020
-ms.locfileid: "104047195"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120073431"
 ---
 # <a name="conformant-arrays"></a>Matrici conformi
 
-La dimensione di una matrice conforme può variare o essere conforme ogni volta che il client la passa a una procedura remota sul server. La definizione dell'interfaccia nel file MIDL dell'applicazione consente al client di specificare la dimensione della matrice ogni volta che richiama la procedura remota. Usare parentesi quadre vuote ( \[ \] ) o un asterisco tra parentesi quadre ( \[ \* \] ) nella definizione di matrice per indicare una matrice conforme.
+Le dimensioni di una matrice conforme possono variare o essere conformi ogni volta che il client la passa a una procedura remota nel server. La definizione dell'interfaccia nel file MIDL dell'applicazione consente al client di specificare le dimensioni della matrice ogni volta che richiama la procedura remota. Usare parentesi quadre vuote ( ) o un asterisco tra parentesi quadre ( ) nella definizione della matrice per indicare \[ \] una matrice \[ \* \] conforme.
 
-L'esempio seguente contiene la definizione di una procedura remota in un'interfaccia in un file MIDL. Il client specifica la dimensione della matrice passata al server dal parametro *arraySize*.
+L'esempio seguente contiene la definizione di una procedura remota in un'interfaccia in un file MIDL. Il client specifica le dimensioni della matrice che passa al server dal parametro *arraySize.*
 
 ``` syntax
 [
@@ -32,7 +32,7 @@ interface MyInterface
 }
 ```
 
-La definizione dell'interfaccia usa la dimensione dell'attributo MIDL \[ [**\_**](/windows/desktop/Midl/size-is) \] per specificare le dimensioni della matrice che il client passa al server. Se si preferisce indicare il valore massimo dei numeri di indice della matrice, usare invece l' \[ attributo [**Max \_ is**](/windows/desktop/Midl/max-is) \] . Per altre informazioni su questi attributi MIDL, vedere [attributi di matrice](array-attributes.md).
+La definizione dell'interfaccia usa le dimensioni dell'attributo MIDL per specificare le dimensioni della matrice che il client passa al \[ [**\_**](/windows/desktop/Midl/size-is) \] server. Se si preferisce indicare il valore massimo dei numeri di indice della matrice, usare invece \[ [**\_ l'attributo max**](/windows/desktop/Midl/max-is) \] is. Per altre informazioni su questi attributi MIDL, vedere [Attributi di matrice.](array-attributes.md)
 
 Nel frammento di codice seguente viene illustrato come un client può richiamare la procedura remota definita nel file MIDL precedente.
 
@@ -58,8 +58,8 @@ MyRemoteProc(
 
 
 
-Questo frammento chiama due volte la procedura remota MyRemoteProc. Alla prima chiamata passa una matrice di 20 elementi. Alla seconda chiamata, il client passa una matrice di 200 elementi.
+Questo frammento chiama la procedura remota MyRemoteProc due volte. Alla prima chiamata passa una matrice di 20 elementi. Nella seconda chiamata, il client passa una matrice di 200 elementi.
 
- 
+ 
 
- 
+ 

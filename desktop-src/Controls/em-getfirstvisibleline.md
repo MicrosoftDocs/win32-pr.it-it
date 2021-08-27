@@ -1,9 +1,9 @@
 ---
-title: Messaggio EM_GETFIRSTVISIBLELINE (winuser. h)
-description: Ottiene l'indice in base zero della riga visibile in alto in un controllo di modifica su più righe. Questo messaggio può essere inviato a un controllo di modifica o a un controllo Rich Edit.
+title: EM_GETFIRSTVISIBLELINE messaggio (Winuser.h)
+description: Ottiene l'indice in base zero della riga visibile più in alto in un controllo di modifica su più righe. È possibile inviare questo messaggio a un controllo di modifica o a un controllo Rich Edit.
 ms.assetid: 022838d2-7948-4c5a-92ca-655822c4f672
 keywords:
-- Controlli di Windows Message EM_GETFIRSTVISIBLELINE
+- EM_GETFIRSTVISIBLELINE dei messaggi Windows controlli
 topic_type:
 - apiref
 api_name:
@@ -14,16 +14,16 @@ api_type:
 - HeaderDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 2bb759be166b69b3cfa488e9e23d61d9e0ec42d5
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: 11eb93c1c7dcce7f502945df4e063b22c29514bc79fe7310875e9de055e1d745
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "104518303"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120049211"
 ---
-# <a name="em_getfirstvisibleline-message"></a>\_Messaggio GETFIRSTVISIBLELINE em
+# <a name="em_getfirstvisibleline-message"></a>Messaggio \_ EM GETFIRSTVISIBLELINE
 
-Ottiene l'indice in base zero della riga visibile in alto in un controllo di modifica su più righe. Questo messaggio può essere inviato a un controllo di modifica o a un controllo Rich Edit.
+Ottiene l'indice in base zero della riga visibile più in alto in un controllo di modifica su più righe. È possibile inviare questo messaggio a un controllo di modifica o a un controllo Rich Edit.
 
 ## <a name="parameters"></a>Parametri
 
@@ -32,20 +32,20 @@ Ottiene l'indice in base zero della riga visibile in alto in un controllo di mod
 *wParam* 
 </dt> <dd>
 
-Non utilizzato; deve essere zero.
+Non usato; deve essere zero.
 
 </dd> <dt>
 
 *lParam* 
 </dt> <dd>
 
-Non utilizzato; deve essere zero.
+Non usato; deve essere zero.
 
 </dd> </dl>
 
 ## <a name="return-value"></a>Valore restituito
 
-Il valore restituito è l'indice in base zero della riga visibile in alto in un controllo di modifica su più righe.
+Il valore restituito è l'indice in base zero della riga visibile più in alto in un controllo di modifica su più righe.
 
 **Controlli di modifica:** Per i controlli di modifica a riga singola, il valore restituito è l'indice in base zero del primo carattere visibile.
 
@@ -53,9 +53,9 @@ Il valore restituito è l'indice in base zero della riga visibile in alto in un 
 
 ## <a name="remarks"></a>Commenti
 
-Il numero di righe e la lunghezza delle righe in un controllo di modifica dipendono dalla larghezza del controllo e dall'impostazione corrente di WordWrap.
+Il numero di righe e la lunghezza delle righe in un controllo di modifica dipendono dalla larghezza del controllo e dall'impostazione wordwrap corrente.
 
-**Modifica avanzata:** Supportato in Microsoft Rich Edit 1,0 e versioni successive. Per informazioni sulla compatibilità delle versioni Rich Edit con le varie versioni di sistema, vedere [informazioni sui controlli Rich Edit](about-rich-edit-controls.md).
+**Rich Edit:** Supportato in Microsoft Rich Edit 1.0 e versioni successive. Per informazioni sulla compatibilità delle versioni rich edit con le diverse versioni del sistema, vedere [Informazioni sui controlli Rich Edit](about-rich-edit-controls.md).
 
 ## <a name="requirements"></a>Requisiti
 
@@ -63,9 +63,9 @@ Il numero di righe e la lunghezza delle righe in un controllo di modifica dipend
 
 | Requisito | Valore |
 |-------------------------------------|----------------------------------------------------------------------------------------------------------|
-| Client minimo supportato<br/> | \[Solo app desktop di Windows Vista\]<br/>                                                           |
-| Server minimo supportato<br/> | \[Solo app desktop Windows Server 2003\]<br/>                                                     |
-| Intestazione<br/>                   | <dl> <dt>Winuser. h (include Windows. h)</dt> </dl> |
+| Client minimo supportato<br/> | Windows Solo \[ app desktop di Vista\]<br/>                                                           |
+| Server minimo supportato<br/> | Windows Solo app desktop server 2003 \[\]<br/>                                                     |
+| Intestazione<br/>                   | <dl> <dt>Winuser.h (includere Windows.h)</dt> </dl> |
 
 
 

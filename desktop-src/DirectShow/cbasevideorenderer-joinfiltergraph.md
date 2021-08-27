@@ -1,7 +1,7 @@
 ---
-description: Il metodo JoinFilterGraph Invia \_ \_ una notifica di evento distrutta dalla finestra EC quando un filtro viene rimosso dal grafico dei filtri.
+description: Il metodo JoinFilterGraph invia la notifica \_ dell'evento EC WINDOW \_ DESTROYED quando un filtro viene rimosso dal grafico dei filtri.
 ms.assetid: b54d2deb-d36f-43a9-aa00-d607f487d8b7
-title: Metodo CBaseVideoRenderer. JoinFilterGraph (Renbase. h)
+title: Metodo CBaseVideoRenderer.JoinFilterGraph (Renbase.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -16,16 +16,16 @@ api_location:
 - Strmbase.dll
 - Strmbasd.lib
 - Strmbasd.dll
-ms.openlocfilehash: acabb6deeb6577fa04479fc4014e210d4a5654d5
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: a3aed2c887bc7a452cda978e96cd369a71cad4fab60a72e0c914ebe9d9790a41
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "106330232"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120052211"
 ---
-# <a name="cbasevideorendererjoinfiltergraph-method"></a>CBaseVideoRenderer. JoinFilterGraph, metodo
+# <a name="cbasevideorendererjoinfiltergraph-method"></a>Metodo CBaseVideoRenderer.JoinFilterGraph
 
-Il `JoinFilterGraph` metodo invia una notifica di evento [**\_ \_ distrutta dalla finestra EC**](ec-window-destroyed.md) quando un filtro viene rimosso dal grafico dei filtri.
+Il `JoinFilterGraph` metodo invia la notifica [**\_ dell'evento EC WINDOW \_ DESTROYED**](ec-window-destroyed.md) quando un filtro viene rimosso dal grafico dei filtri.
 
 ## <a name="syntax"></a>Sintassi
 
@@ -46,14 +46,14 @@ HRESULT JoinFilterGraph(
 *pGraph* 
 </dt> <dd>
 
-Puntatore al grafico di filtro da unire.
+Puntatore al grafico dei filtri da unire.
 
 </dd> <dt>
 
-*pname* \[ in\]
+*pName* \[ Pollici\]
 </dt> <dd>
 
-Puntatore al nome del filtro da aggiungere.
+Puntatore al nome del filtro aggiunto.
 
 </dd> </dl>
 
@@ -63,7 +63,7 @@ Nessun valore restituito.
 
 ## <a name="remarks"></a>Commenti
 
-Questa funzione membro esegue l'override della funzione membro [**CBaseFilter:: JoinFilterGraph**](cbasefilter-joinfiltergraph.md) . Se il filtro sta lasciando il grafico del filtro (*pGraph* è **null**), invia una notifica di evento [**\_ \_ distrutta dalla finestra EC**](ec-window-destroyed.md) , in modo che il gestore di risorse non mantenga il renderer come oggetto attivo.
+Questa funzione membro esegue l'override della funzione membro [**CBaseFilter::JoinFilterGraph.**](cbasefilter-joinfiltergraph.md) Se il filtro lascia il grafico dei filtri *(pGraph* è **NULL),** invia una notifica dell'evento [**EC WINDOW \_ \_ DESTROYED**](ec-window-destroyed.md) in modo che il gestore delle risorse non si aggiri sul renderer come oggetto attivo.
 
 ## <a name="requirements"></a>Requisiti
 
@@ -71,8 +71,8 @@ Questa funzione membro esegue l'override della funzione membro [**CBaseFilter:: 
 
 | Requisito | Valore |
 |--------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Intestazione<br/>  | <dl> <dt>Renbase. h (include Streams. h)</dt> </dl>                                                                                   |
-| Libreria<br/> | <dl> <dt>Strmbase. lib (compilazioni finali); </dt> <dt>Strmbasd. lib (build di debug)</dt> </dl> |
+| Intestazione<br/>  | <dl> <dt>Renbase.h (includere Flussi.h)</dt> </dl>                                                                                   |
+| Libreria<br/> | <dl> <dt>Strmbase.lib (build di vendita al dettaglio); </dt> <dt>Strmbasd.lib (build di debug)</dt> </dl> |
 
 
 

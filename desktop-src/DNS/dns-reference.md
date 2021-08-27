@@ -1,21 +1,21 @@
 ---
-title: Riferimento DNS
-description: Riferimento DNS
+title: Informazioni di riferimento su DNS
+description: Informazioni di riferimento su DNS
 ms.assetid: 4dfb4310-f326-4318-918c-fe596ae0d561
 keywords:
-- Domain Name System, riferimento
+- Domain Name System, informazioni di riferimento
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 5da8c40e9da097dcdeb313388a133079363c866e
-ms.sourcegitcommit: 2d531328b6ed82d4ad971a45a5131b430c5866f7
+ms.openlocfilehash: dcaef447e9ff0a31fe42041a828ac702d7f02f59c7d04ebd24d701ddef19ea98
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "104044900"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120104071"
 ---
-# <a name="dns-reference"></a>Riferimento DNS
+# <a name="dns-reference"></a>Informazioni di riferimento su DNS
 
-Questa sezione definisce gli elementi programmatici nell'API Domain Name System. Il riferimento DNS è costituito da:
+Questa sezione definisce gli elementi a livello di codice nell Domain Name System API. Il riferimento DNS è costituito da:
 
 -   [Callback DNS](dns-callbacks.md)
 -   [Costanti DNS](dns-constants.md)
@@ -24,9 +24,9 @@ Questa sezione definisce gli elementi programmatici nell'API Domain Name System.
 -   [Funzioni DNS](dns-functions.md)
 -   [Strutture DNS](dns-structures.md)
 
- 
+ 
 
- 
+ 
 
 
 

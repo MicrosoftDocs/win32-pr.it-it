@@ -1,34 +1,34 @@
 ---
-description: Come configurare il localizzatore proxy
+description: Come configurare il localizzatore di proxy
 ms.assetid: ddc28add-ebf5-4a68-bdf4-dc5f33ab74da
-title: Come configurare il localizzatore proxy
+title: Come configurare il localizzatore di proxy
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 1a6b383dda9ac78b2c62aa8481a09cc5c0d7b3ae
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 51dcade0909159856c4286d9c2cd5d4851d10b6d2c5e56054545bdac312e21b1
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "106308766"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120061541"
 ---
-# <a name="how-to-configure-the-proxy-locator"></a>Come configurare il localizzatore proxy
+# <a name="how-to-configure-the-proxy-locator"></a>Come configurare il localizzatore di proxy
 
-L'applicazione può modificare la configurazione predefinita del localizzatore proxy impostando la proprietà [MFNETSOURCE \_ PROXYLOCATORFACTORY](mfnetsource-proxylocatorfactory-property.md) sull'oggetto factory del localizzatore proxy implementato dall'applicazione. Quando l'applicazione chiama i metodi del resolver di origine per creare l'origine di rete, Media Foundation chiama la factory del localizzatore proxy. Questo oggetto crea il localizzatore proxy con la configurazione personalizzata.
+L'applicazione può modificare la configurazione predefinita del localizzatore proxy impostando la proprietà [MFNETSOURCE \_ PROXYLOCATORFACTORY](mfnetsource-proxylocatorfactory-property.md) sull'oggetto factory del localizzatore proxy implementato dall'applicazione. Quando l'applicazione chiama i metodi del resolver di origine per creare l'origine di rete, Media Foundation chiama la factory del localizzatore proxy. Questo oggetto crea il localizzatore proxy con configurazione personalizzata.
 
 ## <a name="to-change-the-default-configuration-setting-of-the-proxy-locator"></a>Per modificare l'impostazione di configurazione predefinita del localizzatore proxy
 
-1.  Implementare l'interfaccia [**IMFNetProxyLocatorFactory**](/windows/desktop/api/mfidl/nn-mfidl-imfnetproxylocatorfactory) .
-2.  Nel metodo [**IMFNetProxyLocatorFactory:: CreateProxyLocator**](/windows/desktop/api/mfidl/nf-mfidl-imfnetproxylocatorfactory-createproxylocator) eseguire le operazioni seguenti:
+1.  Implementare [**l'interfaccia IMFNetProxyLocatorFactory.**](/windows/desktop/api/mfidl/nn-mfidl-imfnetproxylocatorfactory)
+2.  Nel metodo [**IMFNetProxyLocatorFactory::CreateProxyLocator**](/windows/desktop/api/mfidl/nf-mfidl-imfnetproxylocatorfactory-createproxylocator) eseguire le operazioni seguenti:
     1.  Creare un archivio delle proprietà.
-    2.  Impostare le impostazioni di configurazione per il localizzatore proxy. Per informazioni su queste impostazioni, vedere [impostazioni di configurazione del localizzatore proxy](proxy-locator-configuration-settings.md).
-    3.  Chiamare la funzione [**MFCreateProxyLocator**](/windows/desktop/api/mfidl/nf-mfidl-mfcreateproxylocator) . Passare l'archivio delle proprietà e il protocollo. Il protocollo viene specificato nel parametro *pszProtocol* di [**CreateProxyLocator**](/windows/desktop/api/mfidl/nf-mfidl-imfnetproxylocatorfactory-createproxylocator).
-3.  Creare un'istanza della classe factory del localizzatore proxy e ottenere un puntatore alla relativa interfaccia [**IMFNetProxyLocatorFactory**](/windows/desktop/api/mfidl/nn-mfidl-imfnetproxylocatorfactory) .
-4.  Creare un altro archivio di proprietà e impostare il valore della proprietà [**MFNETSOURCE \_ PROXYLOCATORFACTORY**](mfnetsource-proxylocatorfactory-property.md) uguale al puntatore [**IMFNetProxyLocatorFactory**](/windows/desktop/api/mfidl/nn-mfidl-imfnetproxylocatorfactory) del passaggio 3.
-5.  Quando si crea l'origine di rete, passare l'archivio delle proprietà nel parametro *pProps* dei metodi del resolver di origine, ad esempio [**IMFSourceResolver:: BeginCreateObjectFromURL**](/windows/desktop/api/mfidl/nf-mfidl-imfsourceresolver-begincreateobjectfromurl).
+    2.  Impostare le impostazioni di configurazione per il localizzatore proxy. Per informazioni su queste impostazioni, vedere [Proxy Locator Configuration Impostazioni](proxy-locator-configuration-settings.md).
+    3.  Chiamare la [**funzione MFCreateProxyLocator.**](/windows/desktop/api/mfidl/nf-mfidl-mfcreateproxylocator) Passare l'archivio delle proprietà e il protocollo. Il protocollo è specificato nel *parametro pszProtocol* di [**CreateProxyLocator.**](/windows/desktop/api/mfidl/nf-mfidl-imfnetproxylocatorfactory-createproxylocator)
+3.  Creare un'istanza della classe factory del localizzatore proxy e ottenere un puntatore alla relativa [**interfaccia IMFNetProxyLocatorFactory.**](/windows/desktop/api/mfidl/nn-mfidl-imfnetproxylocatorfactory)
+4.  Creare un altro archivio proprietà e impostare il valore della proprietà [**MFNETSOURCE \_ PROXYLOCATORFACTORY**](mfnetsource-proxylocatorfactory-property.md) uguale al puntatore [**IMFNetProxyLocatorFactory**](/windows/desktop/api/mfidl/nn-mfidl-imfnetproxylocatorfactory) del passaggio 3.
+5.  Quando si crea l'origine di rete, passare l'archivio delle proprietà nel parametro *pProps* dei metodi del resolver di origine, ad esempio [**IMFSourceResolver::BeginCreateObjectFromURL**](/windows/desktop/api/mfidl/nf-mfidl-imfsourceresolver-begincreateobjectfromurl).
 
 ## <a name="example"></a>Esempio
 
-Nell'esempio di codice seguente viene implementata l'interfaccia [**IMFNetProxyLocatorFactory**](/windows/desktop/api/mfidl/nn-mfidl-imfnetproxylocatorfactory) . Il metodo [**IMFNetProxyLocatorFactory:: CreateProxyLocator**](/windows/desktop/api/mfidl/nf-mfidl-imfnetproxylocatorfactory-createproxylocator) crea un'istanza del localizzatore proxy predefinito e la configura per operare in modalità di rilevamento automatico.
+L'esempio di codice seguente implementa [**l'interfaccia IMFNetProxyLocatorFactory.**](/windows/desktop/api/mfidl/nn-mfidl-imfnetproxylocatorfactory) Il [**metodo IMFNetProxyLocatorFactory::CreateProxyLocator**](/windows/desktop/api/mfidl/nf-mfidl-imfnetproxylocatorfactory-createproxylocator) crea un'istanza del localizzatore proxy predefinito e la configura per operare in modalità di rilevamento automatico.
 
 
 ```C++
@@ -109,7 +109,7 @@ public:
 
 
 
-Nell'esempio seguente viene illustrato come passare il puntatore [**IMFNetProxyLocatorFactory**](/windows/desktop/api/mfidl/nn-mfidl-imfnetproxylocatorfactory) all'origine di rete.
+L'esempio seguente illustra come passare il puntatore [**IMFNetProxyLocatorFactory**](/windows/desktop/api/mfidl/nn-mfidl-imfnetproxylocatorfactory) all'origine di rete.
 
 
 ```C++
@@ -164,7 +164,7 @@ HRESULT CreateMediaSourceWithProxyLocator(
 
 <dl> <dt>
 
-[Supporto del proxy per le origini di rete](proxy-support-for-network-sources.md)
+[Supporto proxy per origini di rete](proxy-support-for-network-sources.md)
 </dt> </dl>
 
  

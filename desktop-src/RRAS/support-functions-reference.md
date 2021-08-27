@@ -1,25 +1,25 @@
 ---
-title: Informazioni di riferimento sulle funzioni di supporto
-description: Le funzioni seguenti vengono fornite ai protocolli di routing da Gestione router.
+title: Informazioni di riferimento per le funzioni di supporto
+description: Le funzioni seguenti vengono fornite ai protocolli di routing dal gestore router.
 ms.assetid: 4e88c9fe-f6ec-4f9c-88b1-8726e10d0f6d
 keywords:
-- Protocollo routing interfaccia RRAS, funzioni di supporto
+- Routing Protocol Interface RRAS , funzioni di supporto
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: bbbaba49c5f7e4130491a50176d560ee565b0046
-ms.sourcegitcommit: 592c9bbd22ba69802dc353bcb5eb30699f9e9403
+ms.openlocfilehash: 7fa2af1b38e88e9f3b7a55e8026ad42f4b1d0cff26de3798fb04621a1288ad9f
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/20/2020
-ms.locfileid: "104473814"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120073711"
 ---
-# <a name="support-functions-reference"></a>Informazioni di riferimento sulle funzioni di supporto
+# <a name="support-functions-reference"></a>Informazioni di riferimento per le funzioni di supporto
 
-Le funzioni seguenti vengono fornite ai protocolli di routing da Gestione router. Quando Gestione router chiama la funzione [**StartProtocol**](/windows/desktop/api/Routprot/nc-routprot-pstart_protocol) (implementata dal protocollo di routing), gestione router passa il protocollo di routing a una struttura di [**\_ funzioni di supporto**](/windows/desktop/api/Routprot/ns-routprot-support_functions_50) che contiene i puntatori alle funzioni seguenti:
+Le funzioni seguenti vengono fornite ai protocolli di routing dal gestore router. Quando il gestore router chiama la [**funzione StartProtocol**](/windows/desktop/api/Routprot/nc-routprot-pstart_protocol) (implementata dal protocollo di routing), il gestore di router passa al protocollo di routing una struttura [**SUPPORT \_ FUNCTIONS**](/windows/desktop/api/Routprot/ns-routprot-support_functions_50) contenente puntatori a queste funzioni:
 
 [**DemandDialRequest**](/previous-versions/windows/desktop/legacy/aa373924(v=vs.85))
 
-[**MIBEntryCreate**](/previous-versions/windows/desktop/legacy/aa374538(v=vs.85))
+[**MIBEntryCrea**](/previous-versions/windows/desktop/legacy/aa374538(v=vs.85))
 
 [**MIBEntryDelete**](/previous-versions/windows/desktop/legacy/aa374539(v=vs.85))
 
@@ -35,6 +35,6 @@ Le funzioni seguenti vengono fornite ai protocolli di routing da Gestione router
 
 [**ValidateRoute**](/previous-versions/windows/desktop/legacy/aa382342(v=vs.85))
 
- 
+ 
 
- 
+ 

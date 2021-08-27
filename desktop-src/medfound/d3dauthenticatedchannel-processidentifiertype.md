@@ -1,7 +1,7 @@
 ---
-description: Specifica il tipo di processo identificato nella \_ struttura di output QUERYRESTRICTEDSHAREDRESOURCEPROCESS di D3DAUTHENTICATEDCHANNEL \_ .
+description: Specifica il tipo di processo identificato nella struttura D3DAUTHENTICATEDCHANNEL \_ QUERYRESTRICTEDSHAREDRESOURCEPROCESS \_ OUTPUT.
 ms.assetid: 8878905e-f55b-4dbc-9608-da0082daf673
-title: Enumerazione D3DAUTHENTICATEDCHANNEL_PROCESSIDENTIFIERTYPE (D3d9types. h)
+title: D3DAUTHENTICATEDCHANNEL_PROCESSIDENTIFIERTYPE enumerazione (D3d9types.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -13,16 +13,16 @@ api_type:
 - HeaderDef
 api_location:
 - d3d9types.h
-ms.openlocfilehash: 1b2fdb7384ff868b02f54650de9662b297ce39db
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 522fee8421ec61b58bd67065c31b968252c2c7d563e94f7eda7a9f5105d20382
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104127938"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120061981"
 ---
-# <a name="d3dauthenticatedchannel_processidentifiertype-enumeration"></a>\_Enumerazione D3DAUTHENTICATEDCHANNEL PROCESSIDENTIFIERTYPE
+# <a name="d3dauthenticatedchannel_processidentifiertype-enumeration"></a>Enumerazione D3DAUTHENTICATEDCHANNEL \_ PROCESSIDENTIFIERTYPE
 
-Specifica il tipo di processo identificato nella struttura di [**\_ \_ output QUERYRESTRICTEDSHAREDRESOURCEPROCESS di D3DAUTHENTICATEDCHANNEL**](d3dauthenticatedchannel-queryrestrictedsharedresourceprocess-output.md) .
+Specifica il tipo di processo identificato nella struttura [**D3DAUTHENTICATEDCHANNEL \_ QUERYRESTRICTEDSHAREDRESOURCEPROCESS \_ OUTPUT.**](d3dauthenticatedchannel-queryrestrictedsharedresourceprocess-output.md)
 
 ## <a name="syntax"></a>Sintassi
 
@@ -41,7 +41,7 @@ typedef enum  {
 
 <dl> <dt>
 
-<span id="PROCESSIDTYPE_UNKNOWN"></span><span id="processidtype_unknown"></span>**PROCESSIDTYPE \_ sconosciuto**
+<span id="PROCESSIDTYPE_UNKNOWN"></span><span id="processidtype_unknown"></span>**PROCESSIDTYPE \_ UNKNOWN**
 </dt> <dd>
 
 Tipo di processo sconosciuto.
@@ -51,11 +51,11 @@ Tipo di processo sconosciuto.
 <span id="PROCESSIDTYPE_DWM"></span><span id="processidtype_dwm"></span>**PROCESSIDTYPE \_ DWM**
 </dt> <dd>
 
-Processo di Gestione finestre desktop (DWM).
+Gestione finestre desktop (DWM).
 
 </dd> <dt>
 
-<span id="PROCESSIDTYPE_HANDLE"></span><span id="processidtype_handle"></span>**\_handle PROCESSIDTYPE**
+<span id="PROCESSIDTYPE_HANDLE"></span><span id="processidtype_handle"></span>**PROCESSIDTYPE \_ HANDLE**
 </dt> <dd>
 
 Handle per un processo.
@@ -68,9 +68,9 @@ Handle per un processo.
 
 | Requisito | Valore |
 |-------------------------------------|---------------------------------------------------------------------------------------------------------|
-| Client minimo supportato<br/> | \[Solo app desktop di Windows 7\]<br/>                                                              |
-| Server minimo supportato<br/> | Solo app desktop Windows Server 2008 R2 \[\]<br/>                                                 |
-| Intestazione<br/>                   | <dl> <dt>D3d9types. h (include d3d9. h)</dt> </dl> |
+| Client minimo supportato<br/> | Windows 7 \[ app desktop\]<br/>                                                              |
+| Server minimo supportato<br/> | Windows Solo app desktop server 2008 R2 \[\]<br/>                                                 |
+| Intestazione<br/>                   | <dl> <dt>D3d9types.h (includere D3d9.h)</dt> </dl> |
 
 
 

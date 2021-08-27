@@ -1,7 +1,7 @@
 ---
-description: Puntatore al primo nodo nell'elenco.
+description: Puntatore al primo nodo dell'elenco.
 ms.assetid: 00a9e7c8-e536-46e2-96a0-e26eb6c34e54
-title: 'Membro CBaseList:: m_pFirst (Wxlist. h)'
+title: Membro CBaseList::m_pFirst (Wxlist.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -16,16 +16,16 @@ api_location:
 - Strmbase.dll
 - Strmbasd.lib
 - Strmbasd.dll
-ms.openlocfilehash: ece5bb8d3c19b62448d582314c2908279eba9852
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: b99ec844746d58668164b45bd5cf6dcff867b6c647a9cc3512ec9b4b690b6916
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "106328652"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120052731"
 ---
-# <a name="cbaselistm_pfirst-member"></a>Membro pFirst di CBaseList:: m \_
+# <a name="cbaselistm_pfirst-member"></a>Membro CBaseList::m \_ pFirst
 
-Puntatore al primo nodo nell'elenco.
+Puntatore al primo nodo dell'elenco.
 
 ## <a name="syntax"></a>Sintassi
 
@@ -42,8 +42,8 @@ CNode *m_pFirst;
 
 | Requisito | Valore |
 |--------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Intestazione<br/>  | <dl> <dt>Wxlist. h (include Streams. h)</dt> </dl>                                                                                    |
-| Libreria<br/> | <dl> <dt>Strmbase. lib (compilazioni finali); </dt> <dt>Strmbasd. lib (build di debug)</dt> </dl> |
+| Intestazione<br/>  | <dl> <dt>Wxlist.h (includere Flussi.h)</dt> </dl>                                                                                    |
+| Libreria<br/> | <dl> <dt>Strmbase.lib (build di vendita al dettaglio); </dt> <dt>Strmbasd.lib (build di debug)</dt> </dl> |
 
 
 

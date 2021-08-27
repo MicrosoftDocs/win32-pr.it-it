@@ -4,27 +4,27 @@ ms.assetid: 01D70311-DFE8-4E21-9315-2A8736E1F7B2
 title: Strutture dell'API di compressione
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 27dcee092024ef67b049dcd62035aa52461f2e32
-ms.sourcegitcommit: c7add10d695482e1ceb72d62b8a4ebd84ea050f7
+ms.openlocfilehash: a222895fc739e3c0ad1b9be8aff5d8898cc1065169a490e30d820332fdaef5a7
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104401472"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120071251"
 ---
 # <a name="compression-api-structures"></a>Strutture dell'API di compressione
 
 L'API di compressione nativa contiene la struttura seguente.
 
-[**COMPRIMI \_ routine di allocazione \_**](/windows/desktop/api/compressapi/ns-compressapi-compress_allocation_routines)
+[**COMPRIMERE LE \_ ROUTINE DI \_ ALLOCAZIONE**](/windows/desktop/api/compressapi/ns-compressapi-compress_allocation_routines)
 
 ## <a name="related-topics"></a>Argomenti correlati
 
 <dl> <dt>
 
-[Funzioni API di compressione](compression-api-functions.md)
+[Funzioni dell'API di compressione](compression-api-functions.md)
 </dt> <dt>
 
-[Enumerazioni API di compressione](compression-api-enumerations.md)
+[Enumerazioni dell'API di compressione](compression-api-enumerations.md)
 </dt> </dl>
 
  

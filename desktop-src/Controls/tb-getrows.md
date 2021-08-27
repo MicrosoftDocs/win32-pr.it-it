@@ -1,9 +1,9 @@
 ---
-title: Messaggio TB_GETROWS (COMmctrl. h)
-description: Recupera il numero di righe di pulsanti in una barra degli strumenti con lo \_ stile wrapable TBSTYLE.
+title: TB_GETROWS messaggio (Commctrl.h)
+description: Recupera il numero di righe di pulsanti in una barra degli strumenti con lo stile \_ WRAPABLE TBSTYLE.
 ms.assetid: ced30d62-762a-426e-b3c7-7e57c60145bd
 keywords:
-- Controlli di Windows Message TB_GETROWS
+- TB_GETROWS di Windows messaggi
 topic_type:
 - apiref
 api_name:
@@ -14,16 +14,16 @@ api_type:
 - HeaderDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 594655a08ab5765fca42a51599335a460f038725
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: 333919d65efabb01ff0f7c05ec0b1342bc45526127ea641753a2d01414df0683
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "106302722"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120061381"
 ---
-# <a name="tb_getrows-message"></a>\_Messaggio GetRows TB
+# <a name="tb_getrows-message"></a>Tb \_ GETROWS message
 
-Recupera il numero di righe di pulsanti in una barra degli strumenti con lo stile [**\_ wrapable TBSTYLE**](toolbar-control-and-button-styles.md) .
+Recupera il numero di righe di pulsanti in una barra degli strumenti con lo stile [**\_ WRAPABLE TBSTYLE.**](toolbar-control-and-button-styles.md)
 
 ## <a name="parameters"></a>Parametri
 
@@ -45,9 +45,9 @@ Restituisce il numero di righe.
 
 | Requisito | Valore |
 |-------------------------------------|---------------------------------------------------------------------------------------|
-| Client minimo supportato<br/> | \[Solo app desktop di Windows Vista\]<br/>                                        |
-| Server minimo supportato<br/> | \[Solo app desktop Windows Server 2003\]<br/>                                  |
-| Intestazione<br/>                   | <dl> <dt>Commctrl. h</dt> </dl> |
+| Client minimo supportato<br/> | Windows Solo \[ app desktop Vista\]<br/>                                        |
+| Server minimo supportato<br/> | Windows Solo app desktop di Server 2003 \[\]<br/>                                  |
+| Intestazione<br/>                   | <dl> <dt>Commctrl.h</dt> </dl> |
 
 
 

@@ -1,9 +1,9 @@
 ---
-title: Messaggio di EM_GETELLIPSISSTATE (RichEdit. h)
-description: Recupera lo stato dei puntini di sospensione corrente.
+title: EM_GETELLIPSISSTATE messaggio (Richedit.h)
+description: Recupera lo stato corrente dei puntini di sospensione.
 ms.assetid: D02AE225-F5BF-401A-9877-55C68946CDBE
 keywords:
-- Controlli di Windows Message EM_GETELLIPSISSTATE
+- EM_GETELLIPSISSTATE controlli di Windows messaggio
 topic_type:
 - apiref
 api_name:
@@ -14,16 +14,16 @@ api_type:
 - HeaderDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 905bc8ecc180189f46e896aa0d9aaa3ba88b3f0b
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: 7aaa02fa5ecfdaa5e9f24a41a28ab696e6f2e76224cff8443fab3aa558d1e5a8
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "104476834"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120049251"
 ---
-# <a name="em_getellipsisstate-message"></a>\_Messaggio GETELLIPSISSTATE em
+# <a name="em_getellipsisstate-message"></a>MESSAGGIO \_ EM GETELLIPSISSTATE
 
-Recupera lo stato dei puntini di sospensione corrente.
+Recupera lo stato corrente dei puntini di sospensione.
 
 
 ```C++
@@ -39,20 +39,20 @@ Recupera lo stato dei puntini di sospensione corrente.
 *wParam* 
 </dt> <dd>
 
-Non utilizzato; deve essere zero.
+Non usato; deve essere zero.
 
 </dd> <dt>
 
 *lParam* 
 </dt> <dd>
 
-Non utilizzato; deve essere zero.
+Non usato; deve essere zero.
 
 </dd> </dl>
 
 ## <a name="return-value"></a>Valore restituito
 
-Il valore restituito è TRUE se i puntini di sospensione vengono visualizzati e FALSE in caso contrario.
+Il valore restituito è TRUE se vengono visualizzati i puntini di sospensione e FALSE in caso contrario.
 
 ## <a name="requirements"></a>Requisiti
 
@@ -60,9 +60,9 @@ Il valore restituito è TRUE se i puntini di sospensione vengono visualizzati e 
 
 | Requisito | Valore |
 |-------------------------------------|---------------------------------------------------------------------------------------|
-| Client minimo supportato<br/> | \[Solo app desktop di Windows 8\]<br/>                                            |
-| Server minimo supportato<br/> | \[Solo app desktop Windows Server 2012\]<br/>                                  |
-| Intestazione<br/>                   | <dl> <dt>RichEdit. h</dt> </dl> |
+| Client minimo supportato<br/> | \[Windows 8 solo app desktop\]<br/>                                            |
+| Server minimo supportato<br/> | \[Windows Server 2012 solo app desktop\]<br/>                                  |
+| Intestazione<br/>                   | <dl> <dt>Richedit.h</dt> </dl> |
 
 
 
@@ -70,10 +70,10 @@ Il valore restituito è TRUE se i puntini di sospensione vengono visualizzati e 
 
 <dl> <dt>
 
-[**\_GETELLIPSISMODE em**](em-getellipsismode.md)
+[**EM \_ GETELLIPSISMODE**](em-getellipsismode.md)
 </dt> <dt>
 
-[**\_SETELLIPSISMODE em**](em-setellipsismode.md)
+[**EM \_ SETELLIPSISMODE**](em-setellipsismode.md)
 </dt> </dl>
 
  

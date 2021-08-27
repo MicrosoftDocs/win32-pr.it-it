@@ -1,28 +1,28 @@
 ---
 title: Matrici (RPC) (TFS)
-description: Le categorie di matrici RPC (Remote Procedure Call) includono dimensioni fisse, conformi, variabili conformi, variabili e complesse.
+description: Le categorie di matrici RPC (Remote Procedure Call) includono dimensioni fisse, conformi, variabili, variabili e complesse.
 ms.assetid: 7144ec87-90f2-463a-80e4-28cb4771325f
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: d6d564a2dfd838006be1667343b14a57bdaf4b07
-ms.sourcegitcommit: 4d4a6e9ad5de37e467cd3164276771b71e1f113f
+ms.openlocfilehash: 6271f6a459ebfb96cc5c4d55153bb4c77b013a50925d9c3a4ba9dd81b0f6fbdf
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/05/2021
-ms.locfileid: "106388813"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120073491"
 ---
 # <a name="arrays-rpc"></a>Matrici (RPC)
 
-Sono state definite diverse categorie di matrici in base alle relative caratteristiche di prestazioni, soprattutto se la matrice può essere copiata in blocchi.
+Sono state definite diverse categorie di matrici in base alle caratteristiche delle prestazioni, principalmente se la matrice può essere copiata in blocchi.
 
-Per alcune categorie, ad esempio una matrice di dimensioni fisse, esistono due tipi di descrittori di matrici. sono indicati da una correzione nel nome del token FC principale.
+Per alcune categorie, ad esempio una matrice di dimensioni fisse, esistono due tipi di descrittori di matrice. sono indicati da un in-fix nel nome del token FC iniziale.
 
 
 
-| Formato carattere | Descrizione                                                           |
+| Carattere di formato | Descrizione                                                           |
 |------------------|-----------------------------------------------------------------------|
-| SM               | Le dimensioni totali del tipo possono essere rappresentate in un int senza segno a 16 bit.    |
-| LG               | La dimensione totale del tipo richiede una lunghezza senza segno a 32 bit per essere rappresentata. |
+| SM               | Le dimensioni totali del tipo possono essere rappresentate in un valore unsigned int a 16 bit.    |
+| LG               | Le dimensioni totali del tipo devono essere rappresentate con una lunghezza senza segno a 32 bit. |
 
 
 
@@ -30,25 +30,25 @@ Per alcune categorie, ad esempio una matrice di dimensioni fisse, esistono due t
 
 Campi comuni alle matrici:
 
--   \_dimensioni totali
+-   dimensioni \_ totali
 
-    Dimensioni totali della matrice in memoria, in byte. Corrisponde alla dimensione del Wire dopo l'allineamento. La dimensione totale viene calcolata per le categorie per le quali non esiste un problema di riempimento e le dimensioni sono effettive della matrice.
+    Dimensioni totali della matrice in memoria, in byte. Si tratta della stessa dimensione del cavo dopo l'allineamento. Le dimensioni totali vengono calcolate per le categorie per le quali il problema di riempimento non esiste e le dimensioni sono le dimensioni effettive della matrice.
 
--   \_dimensioni elemento
+-   dimensione \_ dell'elemento
 
-    Dimensioni totali in memoria di un singolo elemento della matrice, inclusa la spaziatura interna (questo può verificarsi solo per matrici complesse).
+    Dimensioni totali in memoria di un singolo elemento della matrice, inclusa la spaziatura interna (ciò può verificarsi solo per matrici complesse).
 
--   \_Descrizione elemento
+-   Descrizione \_ dell'elemento
 
     Descrizione del tipo di elemento della matrice.
 
--   \_layout puntatore
+-   layout del \_ puntatore
 
-    Per ulteriori informazioni, vedere l'argomento relativo al [layout del puntatore](pointer-layout-tfs.md) .
+    Per altre [informazioni, vedere l'argomento Layout](pointer-layout-tfs.md) puntatore.
 
-## <a name="fixed-sized-arrays"></a>Matrici a dimensione fissa
+## <a name="fixed-sized-arrays"></a>Matrici di dimensioni fisse
 
-Una stringa di formato di matrice a dimensione fissa viene generata per le matrici con una dimensione nota e pertanto può essere copiata in blocchi nel buffer di marshalling. I due formati di descrittori di matrici fisse sono i seguenti.
+Viene generata una stringa di formato matrice di dimensioni fisse per le matrici con dimensioni note e pertanto può essere copiata in blocchi nel buffer di marshalling. I due formati di descrittore di matrice fissi sono i seguenti.
 
 ``` syntax
 FC_SMFARRAY alignment<1> 
@@ -70,7 +70,7 @@ FC_END
 
 ## <a name="conformant-array"></a>Matrice conforme
 
-Una matrice conforme può essere copiata in blocco una volta che la dimensione della matrice è nota.
+Una matrice conforme può essere copiata in blocchi quando le dimensioni della matrice sono note.
 
 ``` syntax
 FC_CARRAY alignment<1>
@@ -81,11 +81,11 @@ element_description<>
 FC_END
 ```
 
-La descrizione della conformità \_<> è un descrittore di correlazione e ha 4 o 6 byte, a seconda che venga usato [**/robust**](/windows/desktop/Midl/-robust) .
+La descrizione della<> è un descrittore di correlazione e ha 4 o 6 byte a seconda che \_ [**/robust**](/windows/desktop/Midl/-robust) sia o meno usato.
 
-## <a name="conformant-varying-array"></a>Matrice a variazione conforme
+## <a name="conformant-varying-array"></a>Matrice variabile conforme
 
-Una matrice a variazione conforme può anche essere copiata in blocchi.
+Una matrice variabile conforme può anche essere copiata in blocchi.
 
 ``` syntax
 FC_CVARRAY alignment<1> 
@@ -97,11 +97,11 @@ element_description<>
 FC_END
 ```
 
-La descrizione della conformità \_<> e la descrizione della varianza \_<> è un descrittore di correlazione e include 4 o 6 byte, a seconda che venga usato [**/robust**](/windows/desktop/Midl/-robust) .
+La descrizione della<> e della varianza<> è un descrittore di correlazione e ha 4 o 6 byte a seconda che \_ \_ sia usato [**/robust.**](/windows/desktop/Midl/-robust)
 
 ## <a name="varying-array"></a>Matrice variabile
 
-Le matrici variabili hanno due possibilità a seconda della dimensione della matrice.
+Le matrici variabili hanno due possibilità a seconda delle dimensioni della matrice.
 
 ``` syntax
 FC_SMVARRAY alignment<1>
@@ -123,19 +123,19 @@ element_description<>
 FC_END
 ```
 
-La descrizione della varianza \_<> è un descrittore di correlazione e ha 4 o 6 byte a seconda del [**/robust**](/windows/desktop/Midl/-robust) in uso.
+La descrizione della<> è un descrittore di correlazione e ha 4 o 6 byte a seconda \_ [**dell'opzione /robust**](/windows/desktop/Midl/-robust) usata.
 
-Per matrici variabili incorporate all'interno di una struttura, il campo Offset<2> della descrizione della varianza \_<> è un offset relativo dalla posizione della matrice variabile nella struttura al campo varianza descrittiva. L'offset è in genere relativo all'inizio della struttura.
+Per le matrici diverse incorporate all'interno di una struttura, il campo offset<2> della descrizione della varianza<> è un offset relativo dalla posizione della matrice variabile nella struttura al campo di descrizione della \_ varianza. L'offset è in genere relativo all'inizio della struttura .
 
 ## <a name="complex-arrays"></a>Matrici complesse
 
-Una matrice complessa è una matrice con un elemento che impedisce che venga copiata in blocco e, di conseguenza, deve essere eseguita un'azione aggiuntiva. Questi elementi rendono un array complesso:
+Una matrice complessa è qualsiasi matrice con un elemento che ne impedisce la copia in blocchi e, di conseguenza, è necessario eseguire un'azione aggiuntiva. Questi elementi rendono complessa una matrice:
 
--   tipi semplici: ENUM16, \_ \_ INT3264 (solo su piattaforme a 64 bit), un integrale con \[ [ **intervallo**](/windows/desktop/Midl/range)\]
--   puntatori di riferimento e interfaccia (tutti i puntatori sulle piattaforme a 64 bit)
+-   tipi semplici: ENUM16, \_ \_ INT3264 (solo su piattaforme a 64 bit), integrale con \[ [ **intervallo**](/windows/desktop/Midl/range)\]
+-   puntatori di riferimento e di interfaccia (tutti i puntatori su piattaforme a 64 bit)
 -   unioni
--   strutture complesse (per un elenco completo dei motivi per cui una struttura è complessa), vedere l'argomento relativo alla descrizione della struttura complessa.
--   elementi definiti con \[ [**trasmissione \_ As**](/windows/desktop/Midl/transmit-as) \] , \[ [**\_ marshalling utente**](/windows/desktop/Midl/user-marshal)\]
+-   strutture complesse (vedere l'argomento Descrizione della struttura complessa per un elenco completo dei motivi per cui una struttura deve essere complessa)
+-   elementi definiti con \[ [**trasmetti \_ come**](/windows/desktop/Midl/transmit-as) \] , \[ [**\_ marshalling utente**](/windows/desktop/Midl/user-marshal)\]
 -   Tutte le matrici multidimensionali con almeno una dimensione conforme e/o variabile sono complesse indipendentemente dal tipo di elemento sottostante.
 
 La descrizione della matrice complessa è la seguente:
@@ -151,7 +151,7 @@ FC_END
 
 Il numero \_ di \_ elementi<2> campo è zero se la matrice è conforme.
 
-La descrizione della conformità \_<> e la descrizione della varianza \_<> è un descrittore di correlazione e include 4 o 6 byte, a seconda che venga usato [**/robust**](/windows/desktop/Midl/-robust) . Se la matrice ha una conformità e/o una varianza, la descrizione della conformità \_<> e/o la descrizione della varianza \_<> campo/i hanno descrizioni valide, in caso contrario i primi 4 byte del descrittore di correlazione vengono impostati su 0xFFFFFFFF. I flag, quando presenti, vengono impostati su zero.
+La descrizione della<> e della varianza<> è un descrittore di correlazione e ha 4 o 6 byte a seconda che \_ \_ sia usato [**/robust.**](/windows/desktop/Midl/-robust) Se la matrice ha conformità e/o varianza, la descrizione della conformità<> e/o la descrizione della varianza<> uno o più campi hanno descrizioni valide, in caso contrario i primi 4 byte del descrittore di correlazione vengono impostati su \_ \_ 0xFFFFFFFF. I flag, se presenti, sono impostati su zero.
 
  
 

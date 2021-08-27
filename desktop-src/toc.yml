@@ -11,7 +11,7 @@
           href: ./learnwin32/learn-to-program-for-windows.md
         - name: Creare la prima app Windows con DirectX
           href: ./direct3dgetstarted/building-your-first-directx-app.md
-        - name: Uso delle intestazioni Windows personalizzate
+        - name: Uso delle intestazioni Windows dati
           href: ./winprog/using-the-windows-headers.md
         - name: Guide alla piattaforma
           items:
@@ -205,7 +205,7 @@
                   href: ./devio/communications-resources.md
                 - name: Accesso al dispositivo
                   href: ./deviceaccess/device-access-broker-api-portal.md
-                - name: Location API
+                - name: API di posizione
                   href: ./locationapi/windows-location-api-portal.md
                 - name: API Sensor
                   href: ./sensorsapi/portal.md
@@ -221,7 +221,7 @@
               items:
                 - name: Panoramica
                   href: windows-portable-devices.md
-                - name: WPD Application Programming Interface
+                - name: Interfaccia di programmazione delle applicazioni WPD
                   href: ./wpd_sdk/wpd-application-programming-interface.md
             - name: Diagnostica
               items:
@@ -243,7 +243,7 @@
                   href: ./perfctrs/performance-counters-portal.md
                 - name: Creazione di snapshot dei processi
                   href: /windows/win32/api/_proc_snap/
-                - name: API di stato del processo
+                - name: API Stato processo
                   href: ./psapi/process-status-helper.md
                 - name: Servizio di notifica eventi di sistema
                   href: ./sens/system-event-notification-service-portal.md
@@ -327,7 +327,7 @@
                       href: ./direct3darticles/directx-graphics-articles-portal.md
                     - name: API XAudio2
                       href: ./xaudio2/xaudio2-apis-portal.md
-                    - name: API di XInput Game Controller
+                    - name: API del controller di gioco XInput
                       href: ./xinput/xinput-game-controller-apis-portal.md
                 - name: DirectComposition
                   href: ./directcomp/directcomposition-portal.md
@@ -343,7 +343,7 @@
                   href: ./wic/-wic-lh.md
                 - name: Windows Mixed Reality
                   href: ./mixedreality/mixed-reality-portal.md
-                - name: Windows Sistema colori
+                - name: Windows Sistema di colori
                   href: ./wcs/windows-color-system.md
             - name: Rete e Internet
               items:
@@ -361,7 +361,7 @@
                   href: /previous-versions/windows/desktop/legacy/ms711472(v=vs.85)
                 - name: Interfacce di rete
                   href: ./network-interfaces.md
-                - name: Network List Manager
+                - name: Gestione elenchi di rete
                   href: ./nla/portal.md
                 - name: Gestione della rete
                   href: ./netmgmt/network-management.md
@@ -375,7 +375,7 @@
                   href: ./rras/portal.md
                 - name: Simple Network Management Protocol
                   href: ./snmp/snmp-start-page.md
-                - name: Telefonia delle interfacce di programmazione delle applicazioni
+                - name: Interfacce di programmazione delle applicazioni di telefonia
                   href: Tapi/telephony-application-programming-interfaces.md
                 - name: Teredo
                   href: ./teredo/portal.md
@@ -395,7 +395,7 @@
                       href: ./bluetooth/bluetooth-start-page.md
                     - name: Mobile Broadband
                       href: ./mbn/mobile-broadband-networks-portal.md
-                    - name: Wi-Fi nativo
+                    - name: Wifi nativo
                       href: ./nativewifi/portal.md
                     - name: Windows Connect Now
                       href: ./wcn/portal.md
@@ -425,7 +425,7 @@
                   href: ./seccertenroll/certenroll-portal.md
                 - name: Crittografia
                   href: ./seccrypto/cryptography-portal.md
-                - name: 'API di crittografia: next generation'
+                - name: 'API di crittografia: nuova generazione'
                   href: ./seccng/cng-portal.md
                 - name: 'Directory, identità e Access Services'
                   href: null
@@ -456,7 +456,7 @@
                               href: /previous-versions/windows/desktop/legacy/ms674895(v=vs.85)
                 - name: Extensible Authentication Protocol
                   href: ./eap/eap-start-page.md
-                - name: Extensible Authentication Protocol Host
+                - name: Host del protocollo di autenticazione estendibile
                   href: ./eaphost/portal.md
                 - name: Protezione accesso alla rete
                   href: ./nap/network-access-protection-start-page.md
@@ -468,7 +468,7 @@
                   items:
                     - name: Panoramica
                       href: ./srvnodes/rights-management.md
-                    - name: 'Scenari, codice e strumenti rms'
+                    - name: 'Scenari, codice e strumenti RMS'
                       href: ./srvnodes/rms-code-samples-and-tools.md
                 - name: Gestione della sicurezza
                   href: ./secmgmt/management-portal.md
@@ -545,7 +545,7 @@
             - name: Rights Management
               href: ./srvnodes/rights-management.md
               items:
-                - name: Strumenti e esempi di codice RMS
+                - name: Esempi e strumenti di codice RMS
                   href: ./srvnodes/rms-code-samples-and-tools.md
             - name: Amministrazione sistema
               href: ./srvnodes/system-administration.md
@@ -564,7 +564,7 @@
                 - name: Windows Server Update Services
                   href: ./srvnodes/windows-server-update-services.md
                   items:
-                    - name: libreria di classi Windows Server Update Services 2.0
+                    - name: Windows Server Update Services 2.0 Class Library
                       href: ./srvnodes/windows-server-update-services-2-0-class-library.md
             - name: Virtualizzazione
               href: ./srvnodes/virtualization.md
@@ -575,7 +575,7 @@
               items:
                 - name: Novità di Windows Server 2012 R2 e Windows Server 2012
                   href: ./srvnodes/what-s-new-for-windows-server-2012-r2.md
-                - name: Registrazione per la gestione dei dispositivi mobili
+                - name: Registrazione di Gestione dispositivi mobili
                   href: ./mdmreg/mobile-device-management-registration-portal.md
                 - name: Ripristino configurazione di sistema
                   href: ./sr/system-restore-portal.md
@@ -598,9 +598,9 @@
                       href: ./hyperv_v2/hyper-v-management.md
                     - name: MDM Bridge WMI Provider
                       href: ./dmwmibridgeprov/mdm-bridge-wmi-provider-portal.md
-                    - name: Windows System Assessment Tool
+                    - name: Windows Strumento di valutazione del sistema
                       href: ./winsat/windows-system-assessment-tool-portal.md
-                    - name: WMI Core Provider
+                    - name: Provider di base WMI
                       href: ./wmicoreprov/wmi-core-provider-.md
                 - name: Gestione remota Windows
                   href: ./winrm/portal.md

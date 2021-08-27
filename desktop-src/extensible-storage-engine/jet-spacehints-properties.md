@@ -1,25 +1,25 @@
 ---
-description: 'Altre informazioni su: Proprietà JET_SPACEHINTS'
-title: Proprietà JET_SPACEHINTS
+description: 'Altre informazioni su: JET_SPACEHINTS proprietà'
+title: JET_SPACEHINTS proprietà
 TOCTitle: JET_SPACEHINTS properties
 ms:assetid: Properties.T:Microsoft.Isam.Esent.Interop.JET_SPACEHINTS
 ms:mtpsurl: https://msdn.microsoft.com/library/microsoft.isam.esent.interop.jet_spacehints_properties(v=EXCHG.10)
 ms:contentKeyID: 55103923
 ms.date: 07/30/2014
 ms.topic: article
-ms.openlocfilehash: f361e0a1fbcf8057ae900e57846cce8457489398
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 4292830423be82ec85aa5898fe7fd354777fa20d8622f3b9bfee97deeb0dab8f
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104556212"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120115961"
 ---
-# <a name="jet_spacehints-properties"></a>Proprietà JET_SPACEHINTS
+# <a name="jet_spacehints-properties"></a>JET_SPACEHINTS proprietà
 
-Includi membri protetti  
-Includi membri ereditati  
+Includere membri protetti  
+Includere i membri ereditati  
 
-Il tipo di [JET_SPACEHINTS](./jet-spacehints-class.md) espone i membri seguenti.
+Il [JET_SPACEHINTS](./jet-spacehints-class.md) tipo espone i membri seguenti.
 
 ## <a name="properties"></a>Proprietà
 
@@ -50,17 +50,17 @@ Il tipo di [JET_SPACEHINTS](./jet-spacehints-class.md) espone i membri seguenti.
 <tr class="even">
 <td><img src="../images/dn292128.pubproperty(exchg.10).gif" title="Proprietà pubblica" alt="Public property" /></td>
 <td><a href="dn351068(v=exchg.10).md">grbit</a></td>
-<td>Ottiene o imposta le opzioni degli hint di spazio.</td>
+<td>Ottiene o imposta le opzioni dei suggerimenti per lo spazio.</td>
 </tr>
 <tr class="odd">
 <td><img src="../images/dn292128.pubproperty(exchg.10).gif" title="Proprietà pubblica" alt="Public property" /></td>
 <td><a href="dn351069(v=exchg.10).md">ulGrowth</a></td>
-<td>Ottiene o imposta la percentuale di crescita dall'ultima crescita o dalle dimensioni iniziali (probabilmente arrotondate alle dimensioni di allocazione del JET nativo più vicine). I valori validi sono 0 e [100, 50000).</td>
+<td>Ottiene o imposta la crescita percentuale rispetto all'ultima crescita o dimensione iniziale (possibilmente arrotondata alla dimensione di allocazione JET nativa più vicina). I valori validi sono 0 e [100, 50000).</td>
 </tr>
 <tr class="even">
 <td><img src="../images/dn292128.pubproperty(exchg.10).gif" title="Proprietà pubblica" alt="Public property" /></td>
 <td><a href="dn351070(v=exchg.10).md">ulInitialDensity</a></td>
-<td>Ottiene o imposta la densità in corrispondenza del layout (Accodamento).</td>
+<td>Ottiene o imposta la densità in corrispondenza del layout (append).</td>
 </tr>
 <tr class="odd">
 <td><img src="../images/dn292128.pubproperty(exchg.10).gif" title="Proprietà pubblica" alt="Public property" /></td>
@@ -77,6 +77,6 @@ Inizio
 
 #### <a name="reference"></a>Riferimento
 
-[Classe JET_SPACEHINTS](./jet-spacehints-class.md)
+[JET_SPACEHINTS classe](./jet-spacehints-class.md)
 
-[Spazio dei nomi Microsoft. ISAM. esent. Interop](./microsoft.isam.esent.interop-namespace.md)
+[Spazio dei nomi Microsoft.Isam.Esent.Interop](./microsoft.isam.esent.interop-namespace.md)

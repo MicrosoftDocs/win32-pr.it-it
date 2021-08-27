@@ -1,7 +1,7 @@
-- name: Configurazione feedback input
+- name: Configurazione dei commenti e suggerimenti sull'input
   href: input-feedback-configuration-portal.md
   items:
-    - name: Riferimento alla configurazione del feedback di input
+    - name: Informazioni di riferimento sulla configurazione dei commenti e suggerimenti sull'input
       href: input-feedback-configuration-reference.md
       items:
         - name: Costanti

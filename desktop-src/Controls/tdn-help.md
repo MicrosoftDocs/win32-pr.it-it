@@ -1,9 +1,9 @@
 ---
-title: Codice di notifica TDN_HELP (COMmctrl. h)
-description: Inviato da una finestra di dialogo attività quando l'utente preme F1 sulla tastiera mentre la finestra di dialogo ha lo stato attivo. Questo codice di notifica viene ricevuto solo tramite la funzione di callback della finestra di dialogo attività, che può essere registrata tramite il metodo TaskDialogIndirect.
+title: TDN_HELP di notifica (Commctrl.h)
+description: Inviato da una finestra di dialogo attività quando l'utente preme F1 sulla tastiera mentre la finestra di dialogo ha lo stato attivo. Questo codice di notifica viene ricevuto solo tramite la funzione di callback del dialogo attività, che può essere registrata usando il metodo TaskDialogIndirect.
 ms.assetid: 207ba231-639d-4906-b5dc-1592f2717f1c
 keywords:
-- Controlli di Windows per il codice di notifica TDN_HELP
+- TDN_HELP del codice di notifica Windows controlli
 topic_type:
 - apiref
 api_name:
@@ -14,16 +14,16 @@ api_type:
 - HeaderDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 64d5e08342094aec5adc3da42621307d1577cd68
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: ec5944fb136a76b880deb51b461a0e48b8d81ce2aca541cb6fa3717c3d79e9ce
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "104121475"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120104461"
 ---
-# <a name="tdn_help-notification-code"></a>\_Codice di notifica della Guida TDN
+# <a name="tdn_help-notification-code"></a>Codice di notifica della \_ Guida TDN
 
-Inviato da una finestra di dialogo attività quando l'utente preme F1 sulla tastiera mentre la finestra di dialogo ha lo stato attivo. Questo codice di notifica viene ricevuto solo tramite la funzione di callback della finestra di dialogo attività, che può essere registrata tramite il metodo [**TaskDialogIndirect**](/windows/desktop/api/Commctrl/nf-commctrl-taskdialogindirect) .
+Inviato da una finestra di dialogo attività quando l'utente preme F1 sulla tastiera mentre la finestra di dialogo ha lo stato attivo. Questo codice di notifica viene ricevuto solo tramite la funzione di callback del dialogo attività, che può essere registrata usando il [**metodo TaskDialogIndirect.**](/windows/desktop/api/Commctrl/nf-commctrl-taskdialogindirect)
 
 
 ```C++
@@ -63,9 +63,9 @@ Il valore restituito viene ignorato.
 
 | Requisito | Valore |
 |-------------------------------------|---------------------------------------------------------------------------------------|
-| Client minimo supportato<br/> | \[Solo app desktop di Windows Vista\]<br/>                                        |
-| Server minimo supportato<br/> | \[Solo app desktop Windows Server 2008\]<br/>                                  |
-| Intestazione<br/>                   | <dl> <dt>Commctrl. h</dt> </dl> |
+| Client minimo supportato<br/> | Windows Solo \[ app desktop Vista\]<br/>                                        |
+| Server minimo supportato<br/> | Windows Solo app desktop di Server 2008 \[\]<br/>                                  |
+| Intestazione<br/>                   | <dl> <dt>Commctrl.h</dt> </dl> |
 
 
 

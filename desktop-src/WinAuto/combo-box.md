@@ -1,38 +1,38 @@
 ---
-title: Casella combinata (riferimento all'elemento MSAA UI)
+title: Casella combinata (informazioni di riferimento per gli elementi dell'interfaccia utente MSAA)
 description: Una casella combinata è un casella di riepilogo combinata con un controllo statico o un controllo di modifica che visualizza l'elemento attualmente selezionato nel componente casella di riepilogo della casella combinata.
 ms.assetid: 3fb2c0b0-507f-4520-845b-b3fbfd9e7b60
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 7ce42bb3b0316b0fb2668fed23564b8f904fc793
-ms.sourcegitcommit: 2d531328b6ed82d4ad971a45a5131b430c5866f7
+ms.openlocfilehash: ea3a8d26fa5b8cb264c06e7aa64c672e0a80e8ada7e90a152b3b941ea207cade
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "103711098"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120071841"
 ---
-# <a name="combo-box-msaa-ui-element-reference"></a>Casella combinata (riferimento all'elemento MSAA UI)
+# <a name="combo-box-msaa-ui-element-reference"></a>Casella combinata (informazioni di riferimento per gli elementi dell'interfaccia utente MSAA)
 
 > [!Note]  
-> Questo argomento descrive gli oggetti **casella combinata** a scopo di riferimento all'elemento dell'interfaccia utente MSAA. La procedura per la creazione di oggetti **casella combinata** in diversi framework dell'interfaccia utente non è descritta qui. Vedere la documentazione di riferimento sulle API per il Framework dell'interfaccia utente in uso.
+> Questo argomento descrive gli oggetti **Casella combinata ai** fini delle informazioni di riferimento sugli elementi dell'interfaccia utente MSAA. La procedura per creare **oggetti Casella combinata** in vari framework dell'interfaccia utente non è descritta qui. Vedere la documentazione di riferimento sulle API per il framework dell'interfaccia utente in uso.
 
- 
+ 
 
-Una casella combinata è un casella di riepilogo combinata con un controllo statico o un controllo di modifica che visualizza l'elemento attualmente selezionato nel componente casella di riepilogo della casella combinata. La parte della casella di riepilogo del controllo viene visualizzata in qualsiasi momento o solo quando l'utente seleziona la freccia a discesa (ovvero un pulsante di comando) accanto al controllo. Se il campo di selezione è un controllo di modifica, l'utente può immettere informazioni non presenti nell'elenco. in caso contrario, l'utente può solo selezionare gli elementi nell'elenco.
+Una casella combinata è un casella di riepilogo combinata con un controllo statico o un controllo di modifica che visualizza l'elemento attualmente selezionato nel componente casella di riepilogo della casella combinata. La parte della casella di riepilogo del controllo viene visualizzata in qualsiasi momento o solo a discesa quando l'utente seleziona la freccia a discesa (che è un pulsante di pressione) accanto al controllo. Se il campo di selezione è un controllo di modifica, l'utente può immettere informazioni non presenti nell'elenco. In caso contrario, l'utente può selezionare solo gli elementi nell'elenco.
 
 Il nome della classe della finestra per una casella combinata è "COMBOBOX".
 
-Il contenuto delle proprietà [**IAccessible**](/windows/desktop/api/oleacc/nn-oleacc-iaccessible) dipende da quale delle parti seguenti della casella combinata viene sottoposta a query dal client:
+Il contenuto delle [**proprietà IAccessible**](/windows/desktop/api/oleacc/nn-oleacc-iaccessible) dipende da quale delle parti seguenti della casella combinata viene eseguita una query dal client:
 
 -   Finestra della casella combinata
--   Controllo di modifica o controllo testo statico
--   Freccia a discesa (che è un pulsante di push)
+-   Controllo di modifica o controllo di testo statico
+-   Freccia a discesa (che è un pulsante di pressione)
 -   Casella di riepilogo
--   Voci dell'elenco nella casella di riepilogo
+-   Elementi dell'elenco nella casella di riepilogo
 
 ## <a name="iaccessible-methods"></a>Metodi IAccessible
 
-Le caselle combinate supportano i seguenti metodi [**IAccessible**](/windows/desktop/api/oleacc/nn-oleacc-iaccessible) :
+Le caselle combinate supportano i [**metodi IAccessible**](/windows/desktop/api/oleacc/nn-oleacc-iaccessible) seguenti:
 
 -   [**accDoDefaultAction**](/windows/desktop/api/Oleacc/nf-oleacc-iaccessible-accdodefaultaction)
 -   [**accHitTest**](/windows/desktop/api/Oleacc/nf-oleacc-iaccessible-acchittest)
@@ -42,14 +42,14 @@ Le caselle combinate supportano i seguenti metodi [**IAccessible**](/windows/des
 
 ## <a name="iaccessible-properties"></a>Proprietà IAccessible
 
-Le caselle combinate supportano le proprietà [**IAccessible**](/windows/desktop/api/oleacc/nn-oleacc-iaccessible) seguenti:
+Le caselle combinate supportano le [**proprietà IAccessible**](/windows/desktop/api/oleacc/nn-oleacc-iaccessible) seguenti:
 
--   [**ottenere \_ accChild**](/windows/desktop/api/Oleacc/nf-oleacc-iaccessible-get_accchild)
--   [**get \_ accChildCount**](/windows/desktop/api/Oleacc/nf-oleacc-iaccessible-get_accchildcount): nella tabella seguente viene illustrato il valore del conteggio figlio per parti diverse della casella combinata. 
+-   [**get \_ accChild**](/windows/desktop/api/Oleacc/nf-oleacc-iaccessible-get_accchild)
+-   [**get \_ accChildCount:**](/windows/desktop/api/Oleacc/nf-oleacc-iaccessible-get_accchildcount)la tabella seguente mostra il valore di conteggio figlio per le diverse parti della casella combinata. 
 
     | Parte della casella combinata   | ChildCount               |
     |------------------|--------------------------|
-    | Casella combinata | 3                        |
+    | Finestra casella combinata | 3                        |
     | Controllo Edit     | 0                        |
     | Freccia a discesa  | 0                        |
     | Casella di riepilogo         | Numero di elementi dell'elenco |
@@ -57,129 +57,129 @@ Le caselle combinate supportano le proprietà [**IAccessible**](/windows/desktop
 
     
 
-     
+     
 
--   [**get \_ accDefaultAction**](/windows/desktop/api/Oleacc/nf-oleacc-iaccessible-get_accdefaultaction): nella tabella seguente viene illustrata la proprietà **DefaultAction** per le diverse parti di una casella combinata. 
+-   [**get \_ accDefaultAction:**](/windows/desktop/api/Oleacc/nf-oleacc-iaccessible-get_accdefaultaction)la tabella seguente mostra la **proprietà DefaultAction** per diverse parti di una casella combinata. 
 
-    | Parte della casella combinata   | DefaultAction                                                  |
+    | Parte della casella combinata   | Defaultaction                                                  |
     |------------------|----------------------------------------------------------------|
-    | Casella combinata | nessuno                                                           |
-    | Controllo Edit     | nessuno                                                           |
-    | Freccia a discesa  | "Open" o "close" a seconda dello stato dell'elenco a discesa |
-    | Casella di riepilogo         | nessuno                                                           |
+    | Finestra casella combinata | Nessuno                                                           |
+    | Controllo Edit     | Nessuno                                                           |
+    | Freccia a discesa  | "Apri" o "Chiudi" a seconda dello stato dell'elenco a discesa |
+    | Casella di riepilogo         | Nessuno                                                           |
     | Elemento elenco        | "Doppio clic"                                                 |
 
     
 
-     
+     
 
--   [**ottenere \_ accDescription**](/windows/desktop/api/Oleacc/nf-oleacc-iaccessible-get_accdescription)
--   [**ottenere \_ accFocus**](/windows/desktop/api/Oleacc/nf-oleacc-iaccessible-get_accfocus)
+-   [**get \_ accDescription**](/windows/desktop/api/Oleacc/nf-oleacc-iaccessible-get_accdescription)
+-   [**get \_ accFocus**](/windows/desktop/api/Oleacc/nf-oleacc-iaccessible-get_accfocus)
 -   [**ottenere \_ accHelp**](/windows/desktop/api/Oleacc/nf-oleacc-iaccessible-get_acchelp)
--   [**ottenere \_ accHelpTopic**](/windows/desktop/api/Oleacc/nf-oleacc-iaccessible-get_acchelptopic)
--   [**get \_ accKeyboardShortcut**](/windows/desktop/api/Oleacc/nf-oleacc-iaccessible-get_acckeyboardshortcut): nella tabella seguente viene illustrata la proprietà **KeyboardShortcut** per le diverse parti di una casella combinata. 
+-   [**get \_ accHelpTopic**](/windows/desktop/api/Oleacc/nf-oleacc-iaccessible-get_acchelptopic)
+-   [**get \_ accKeyboardShortcut:**](/windows/desktop/api/Oleacc/nf-oleacc-iaccessible-get_acckeyboardshortcut)la tabella seguente mostra la **proprietà KeyboardShortcut** per diverse parti di una casella combinata. 
 
     | Parte della casella combinata   | KeyboardShortcut               |
     |------------------|--------------------------------|
-    | Casella combinata | Chiave di accesso dell'etichetta associata |
-    | Controllo Edit     | nessuno                           |
-    | Freccia a discesa  | "ALT + freccia giù"               |
-    | Casella di riepilogo         | nessuno                           |
-    | Elemento elenco        | nessuno                           |
+    | Finestra casella combinata | Chiave di accesso dell'etichetta associata |
+    | Controllo Edit     | Nessuno                           |
+    | Freccia a discesa  | "ALT+freccia GIÙ"               |
+    | Casella di riepilogo         | Nessuno                           |
+    | Elemento elenco        | Nessuno                           |
 
     
 
-     
+     
 
-    La chiave di accesso per una casella combinata è il carattere sottolineato nel testo di un controllo testo statico associato che etichetta la casella combinata. Ad esempio, in una finestra di dialogo Apri standard in cui si aprono i file, ad esempio in Microsoft WordPad, la casella combinata con etichetta "file di tipo:" ha **KeyboardShortcut** "Alt + t".
+    Il tasto di scelta per una casella combinata è il carattere sottolineato nel testo di un controllo di testo statico associato che etichetta la casella combinata. Ad esempio, in una finestra di dialogo Apri standard che apre i file, ad esempio in Microsoft WordPad, la casella combinata con etichetta "File di tipo:" ha **KeyboardShortcut** "Alt+t".
 
--   [**get \_ accName**](/windows/desktop/api/Oleacc/nf-oleacc-iaccessible-get_accname): nella tabella seguente viene illustrata la proprietà **Name** per le diverse parti di una casella combinata. 
+-   [**get \_ accName:**](/windows/desktop/api/Oleacc/nf-oleacc-iaccessible-get_accname)la tabella seguente mostra la **proprietà Name** per le diverse parti di una casella combinata. 
 
     | Parte della casella combinata   | Nome                                                           |
     |------------------|----------------------------------------------------------------|
-    | Casella combinata | Controllo testo statico utilizzato come etichetta                            |
-    | Controllo Edit     | Controllo testo statico utilizzato come etichetta                            |
-    | Freccia a discesa  | "Open" o "close" a seconda dello stato dell'elenco a discesa |
+    | Finestra casella combinata | Controllo testo statico usato come etichetta                            |
+    | Controllo Edit     | Controllo testo statico usato come etichetta                            |
+    | Freccia a discesa  | "Apri" o "Chiudi" a seconda dello stato dell'elenco a discesa |
     | Casella di riepilogo         | Etichetta associata                                               |
     | Elemento elenco        | Testo dell'elemento dell'elenco                                          |
 
     
 
-     
+     
 
-    La proprietà **Name** di una casella combinata, il relativo controllo di modifica figlio e la relativa casella di riepilogo figlio è il testo di un controllo testo statico associato che etichetta la casella combinata. Ad esempio, in una finestra di dialogo Apri standard che apre file, ad esempio in WordPad, le proprietà **nome** per le due caselle combinate sono "Cerca in:" e "file di tipo:".
+    La **proprietà Name** di una casella combinata, il relativo controllo di modifica figlio e la relativa casella di riepilogo figlio sono il testo di un controllo di testo statico associato che etichetta la casella combinata. Ad esempio, in una finestra di dialogo Apri standard che  apre i file, ad esempio in WordPad, le proprietà Nome per le due caselle combinate sono "Cerca in:" e "File di tipo:".
 
--   [**get \_ accParent**](/windows/desktop/api/Oleacc/nf-oleacc-iaccessible-get_accparent): la tabella seguente illustra il valore padre per le diverse parti di una casella combinata. 
+-   [**get \_ accParent:**](/windows/desktop/api/Oleacc/nf-oleacc-iaccessible-get_accparent)la tabella seguente mostra il valore padre per le diverse parti di una casella combinata. 
 
     | Parte della casella combinata                        | Padre                                                                                                                                                                                                         |
     |---------------------------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-    | Casella combinata                      | Finestra con la proprietà **Role** della [**finestra del \_ sistema \_ dei ruoli**](object-roles.md) che racchiude la casella combinata e ha la stessa proprietà **Name** e il nome della classe di finestra della casella combinata. |
-    | Modifica controllo (o controllo testo statico) | Finestra della casella combinata.                                                                                                                                                                                          |
+    | Finestra casella combinata                      | Finestra con la **proprietà Role** di ROLE [**SYSTEM \_ \_ WINDOW**](object-roles.md) che racchiude la casella combinata e ha la stessa proprietà **Name** e lo stesso nome della classe della finestra della casella combinata. |
+    | Controllo di modifica (o controllo di testo statico) | Finestra della casella combinata.                                                                                                                                                                                          |
     | Freccia a discesa                       | Finestra della casella combinata.                                                                                                                                                                                          |
-    | Finestra padre casella di riepilogo                | Finestra della casella combinata. Questa finestra racchiude la casella di riepilogo.                                                                                                                                                      |
+    | Finestra padre della casella di riepilogo                | Finestra della casella combinata. Questa finestra racchiude la casella di riepilogo.                                                                                                                                                      |
     | Casella di riepilogo                              | Finestra padre della casella di riepilogo.                                                                                                                                                                                    |
     | Elemento elenco                             | Casella di riepilogo.                                                                                                                                                                                                  |
 
     
 
-     
+     
 
--   [**get \_ accRole**](/windows/desktop/api/Oleacc/nf-oleacc-iaccessible-get_accrole): nella tabella seguente viene illustrata la proprietà **Role** per le diverse parti di una casella combinata. 
+-   [**get \_ accRole:**](/windows/desktop/api/Oleacc/nf-oleacc-iaccessible-get_accrole)la tabella seguente mostra la **proprietà Role** per diverse parti di una casella combinata. 
 
     | Parte della casella combinata                        | [Ruolo](object-roles.md)                                                                                                               |
     |---------------------------------------|----------------------------------------------------------------------------------------------------------------------------------------|
-    | Casella combinata                      | [**\_ \_ casella combinata sistema ruolo**](object-roles.md)                                                                    |
-    | Modifica controllo (o controllo testo statico) | [**Ruolo \_ di \_Testo del sistema**](object-roles.md) o [ **sistema del ruolo \_ \_ STATICTEXT**](object-roles.md) |
-    | Freccia a discesa                       | [**\_pulsante sistema \_ ruolo**](object-roles.md)                                                                |
-    | Casella di riepilogo                              | [**\_elenco sistema \_ ruoli**](object-roles.md)                                                                            |
-    | Elemento elenco                             | [**\_ListItem del sistema di ruolo \_**](object-roles.md)                                                                    |
+    | Finestra casella combinata                      | [**CASELLA \_ COMBINATA SISTEMA \_ RUOLO**](object-roles.md)                                                                    |
+    | Controllo di modifica (o controllo di testo statico) | [**ROLE \_ SYSTEM \_ TEXT o**](object-roles.md) ROLE SYSTEM [ **\_ \_ STATICTEXT**](object-roles.md) |
+    | Freccia a discesa                       | [**PULSANTE \_ PUSH DEL SISTEMA DI \_ RUOLI**](object-roles.md)                                                                |
+    | Casella di riepilogo                              | [**ELENCO \_ DI SISTEMI \_ RUOLO**](object-roles.md)                                                                            |
+    | Elemento elenco                             | [**ROLE \_ SYSTEM \_ LISTITEM**](object-roles.md)                                                                    |
 
     
 
-     
+     
 
--   [**get \_ accState**](/windows/desktop/api/Oleacc/nf-oleacc-iaccessible-get_accstate): nella tabella seguente viene illustrata la proprietà **state** per le diverse parti di una casella combinata. 
+-   [**get \_ accState:**](/windows/desktop/api/Oleacc/nf-oleacc-iaccessible-get_accstate)la tabella seguente mostra la **proprietà State** per le diverse parti di una casella combinata. 
 
     | Parte della casella combinata   | [Stati possibili](object-state-constants.md)                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                           |
     |------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-    | Casella combinata | [**Stato \_ di sistema stato \_ invisibile**](object-state-constants.md) al sistema stato non \| [**\_ \_ disponibile**](object-state-constants.md) sistema stato stato \| attivo [**\_ \_**](object-state-constants.md) sistema stato stato \| [**\_ \_ attivo**](object-state-constants.md) sistema stato \| [**\_ \_**](object-state-constants.md) \| [**\_ \_ espanso**](object-state-constants.md) \| [**\_ \_**](object-state-constants.md) sistema stato compresso |
-    | Controllo Edit     | [**Stato \_ di sistema stato \_ invisibile**](object-state-constants.md) al sistema stato non \| [**\_ \_ disponibile**](object-state-constants.md) sistema stato stato \| [**\_ \_**](object-state-constants.md) \| [**\_ \_ attivo**](object-state-constants.md) \| [**\_ \_**](object-state-constants.md) sistema                                                                                                                                                                         |
-    | Freccia a discesa  | 0, che indica che il pulsante è visibile e non è premuto; sistema di stato [**\_ \_ premutato**](object-state-constants.md) sistema di stato \| [**\_ \_ invisibile**](object-state-constants.md) al sistema di stato \| \_ \_                                                                                                                                                                                                                                                                                                                                                    |
-    | Casella di riepilogo         | [**Stato \_ di sistema stato \_ invisibile**](object-state-constants.md) al sistema stato non \| [**\_ \_ disponibile**](object-state-constants.md) sistema stato stato \| [**\_ \_**](object-state-constants.md) \| [**\_ \_ attivo**](object-state-constants.md) \| [**\_ \_**](object-state-constants.md) \| [**\_ \_**](object-state-constants.md) sistema stato stato attivo sistema                                                                                      |
-    | Elemento elenco        | [**Stato \_ di sistema \_ stato**](object-state-constants.md) attivo sistema di stato stato attivo sistema di stato stato \| [**\_ \_ attivo**](object-state-constants.md) \| [**\_ \_**](object-state-constants.md) \| [**\_ \_ selezionabile**](object-state-constants.md) dal sistema di stato selezionato sistema stato \| [**\_ \_ selezionato**](object-state-constants.md) \| [**\_ \_ normale**](object-state-constants.md)                                                                                        |
+    | Finestra casella combinata | [**STATE \_ SISTEMA \_ INVISIBILE AL**](object-state-constants.md) SISTEMA DI STATO \| [**\_ INVISIBILE \_ SISTEMA STATO**](object-state-constants.md) NON DISPONIBILE STATO ATTIVO SISTEMA STATO ATTIVO SISTEMA DI STATO NORMALE SISTEMA DI STATO ESPANSO SISTEMA DI STATO \| [**\_ \_**](object-state-constants.md) \| [**\_ \_**](object-state-constants.md) \| [**\_ \_**](object-state-constants.md) \| [**\_ \_**](object-state-constants.md) \| [**\_ \_ ESPANSO COMPRESSO**](object-state-constants.md) |
+    | Controllo Edit     | [**STATE \_ SYSTEM \_ INVISIBLE**](object-state-constants.md) \| [**STATE SYSTEM \_ \_ UNAVAILABLE**](object-state-constants.md) \| [**STATE SYSTEM \_ \_ FOCUSED**](object-state-constants.md) \| [**STATE SYSTEM \_ \_ FOCUSABLE**](object-state-constants.md) \| [**STATE SYSTEM \_ \_ NORMAL**](object-state-constants.md)                                                                                                                                                                         |
+    | Freccia a discesa  | 0, ovvero il pulsante è visibile e non premuto. o [**STATE \_ SYSTEM \_ PRESSED**](object-state-constants.md) \| [**STATE SYSTEM \_ \_ INVISIBLE**](object-state-constants.md) \| STATE SYSTEM \_ \_ NORMAL                                                                                                                                                                                                                                                                                                                                                    |
+    | Casella di riepilogo         | [**STATE \_ SYSTEM \_ INVISIBLE**](object-state-constants.md) \| [**STATE SYSTEM \_ \_ UNAVAILABLE**](object-state-constants.md) \| [**STATE SYSTEM \_ \_ FOCUSED**](object-state-constants.md) \| [**STATE SYSTEM \_ \_ FOCUSABLE**](object-state-constants.md) \| [**STATE SYSTEM \_ \_ FLOATING**](object-state-constants.md) \| [**STATE \_ SYSTEM \_ NORMAL**](object-state-constants.md)                                                                                      |
+    | Elemento elenco        | [**STATE \_ SISTEMA \_ INVISIBILE STATO**](object-state-constants.md) \| [**\_ INVISIBILE SISTEMA STATO ATTIVO \_ SISTEMA**](object-state-constants.md) STATO ATTIVO SISTEMA \| [**\_ \_**](object-state-constants.md) STATO \| [**\_ \_ SELEZIONABILE**](object-state-constants.md) SISTEMA STATO \| [**SELEZIONATO \_ \_ NORMALE**](object-state-constants.md) \| [**SISTEMA DI \_ STATO \_**](object-state-constants.md)                                                                                        |
 
     
 
-     
+     
 
--   [**get \_ accValue**](/windows/desktop/api/Oleacc/nf-oleacc-iaccessible-get_accvalue): nella tabella seguente viene illustrata la proprietà **value** per le diverse parti di una casella combinata. 
+-   [**get \_ accValue:**](/windows/desktop/api/Oleacc/nf-oleacc-iaccessible-get_accvalue)la tabella seguente mostra la **proprietà Value** per diverse parti di una casella combinata. 
 
     | Parte della casella combinata   | Valore                                |
     |------------------|--------------------------------------|
-    | Casella combinata | Testo dell'elemento elenco attualmente selezionato |
-    | Controllo Edit     | Testo dell'elemento elenco attualmente selezionato |
-    | Freccia a discesa  | nessuno                                 |
-    | Casella di riepilogo         | nessuno                                 |
-    | Elemento elenco        | nessuno                                 |
+    | Finestra casella combinata | Testo dell'elemento dell'elenco attualmente selezionato |
+    | Controllo Edit     | Testo dell'elemento dell'elenco attualmente selezionato |
+    | Freccia a discesa  | Nessuno                                 |
+    | Casella di riepilogo         | Nessuno                                 |
+    | Elemento elenco        | Nessuno                                 |
 
     
 
-     
+     
 
 ## <a name="notes"></a>Note
 
--   Quando [**accNavigate**](/windows/desktop/api/Oleacc/nf-oleacc-iaccessible-accnavigate) viene chiamato con il [**flag \_ successivo NAVDIR**](navigation-constants.md) nella casella di riepilogo di una casella combinata, si sposta in modo errato sulla finestra della barra delle applicazioni quando deve restituire un **VT \_ vuoto**.
+-   Quando [**accNavigate**](/windows/desktop/api/Oleacc/nf-oleacc-iaccessible-accnavigate) viene chiamato con il flag [**NAVDIR \_ NEXT**](navigation-constants.md) nella parte casella di riepilogo di una casella combinata, passa erroneamente alla finestra della barra delle applicazioni quando deve restituire **VT \_ EMPTY.**
 
 ## <a name="related-topics"></a>Argomenti correlati
 
 <dl> <dt>
 
-[IAccessible (interfaccia)](/windows/desktop/api/oleacc/nn-oleacc-iaccessible)
+[Interfaccia IAccessible](/windows/desktop/api/oleacc/nn-oleacc-iaccessible)
 </dt> </dl>
 
- 
+ 
 
- 
+ 
 
 
 

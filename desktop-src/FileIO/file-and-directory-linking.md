@@ -1,21 +1,21 @@
 ---
-description: 'Nel file system NTFS sono supportati due tipi di collegamenti: collegamenti reali e giunzioni.'
+description: 'Sono supportati due tipi di collegamenti nel file system NTFS: collegamenti rigidi e giunzioni.'
 ms.assetid: 548acfe5-c9e1-4227-ba20-674e071f121f
 title: Collegamento di file e directory
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: a70bcb905b73f7635ba5bdc4afcc44280023c7a8
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 5066ff09efd239ad44efd6511264e81f4cd4dc41d10061b49754841544ebf0f2
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "103968404"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120050891"
 ---
 # <a name="file-and-directory-linking"></a>Collegamento di file e directory
 
-Il file system NTFS consente di creare una rappresentazione di sistema di un file o di una directory in un percorso della struttura di directory diverso dall'oggetto file o directory a cui si è connessi. Questo processo viene chiamato collegamento. Nel file system NTFS sono supportati due tipi di collegamenti: [collegamenti reali e giunzioni](hard-links-and-junctions.md).
+L'file system NTFS consente di creare una rappresentazione di sistema di un file o di una directory in un percorso nella struttura di directory diverso dall'oggetto file o directory a cui viene collegato. Questo processo è detto collegamento. Sono supportati due tipi di collegamenti nel file system NTFS: [collegamenti rigidi e giunzioni](hard-links-and-junctions.md).
 
-Il file system NTFS fornisce inoltre il [servizio di rilevamento](distributed-link-tracking-and-object-identifiers.md)dei collegamenti distribuiti, che tiene traccia automaticamente dei collegamenti quando vengono spostati.
+L'file system NTFS fornisce anche il [servizio di rilevamento dei collegamenti distribuiti,](distributed-link-tracking-and-object-identifiers.md)che tiene traccia automaticamente dei collegamenti durante lo spostamento.
 
 ## <a name="in-this-section"></a>Contenuto della sezione
 
@@ -23,8 +23,8 @@ Il file system NTFS fornisce inoltre il [servizio di rilevamento](distributed-li
 
 | Argomento                                                                                                               | Descrizione                                                                                                             |
 |---------------------------------------------------------------------------------------------------------------------|-------------------------------------------------------------------------------------------------------------------------|
-| [Collegamenti reali e giunzioni](hard-links-and-junctions.md)<br/>                                                 | Vengono descritti i collegamenti reali e le giunzioni.<br/>                                                                          |
-| [Rilevamento dei collegamenti distribuiti e identificatori di oggetto](distributed-link-tracking-and-object-identifiers.md)<br/> | Il **servizio di rilevamento dei collegamenti distribuiti** consente alle applicazioni client di rilevare le origini dei collegamenti che sono state spostate.<br/> |
+| [Collegamenti e giunzioni rigidi](hard-links-and-junctions.md)<br/>                                                 | Descrive collegamenti rigidi e giunzioni.<br/>                                                                          |
+| [Rilevamento dei collegamenti distribuiti e identificatori di oggetto](distributed-link-tracking-and-object-identifiers.md)<br/> | Il **servizio di rilevamento dei collegamenti distribuiti** consente alle applicazioni client di tenere traccia delle origini dei collegamenti spostate.<br/> |
 
 
 
