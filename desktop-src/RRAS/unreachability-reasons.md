@@ -4,12 +4,12 @@ description: Nella tabella seguente sono elencati i valori costanti che indicano
 ms.assetid: 55c0519e-02c8-4a04-bed9-9fe94327a4b6
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: f8b99d36ba895394a417130ab3ae45d1a47c7ed6
-ms.sourcegitcommit: 592c9bbd22ba69802dc353bcb5eb30699f9e9403
+ms.openlocfilehash: 64cb833409d9d2ba31adedbc2942d39399c0a5763ad4d65dc7cdcaf234f97efb
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/20/2020
-ms.locfileid: "104047094"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120025411"
 ---
 # <a name="unreachability-reasons"></a>Motivi di non raggiungibilità
 
@@ -19,34 +19,34 @@ Nella tabella seguente sono elencati i valori costanti che indicano il motivo pe
 
 | Valore                                       | Significato                                                                                        |
 |---------------------------------------------|------------------------------------------------------------------------------------------------|
-| \_amministratore interfaccia \_ MPR \_ disabilitato             | L'amministratore ha disabilitato l'interfaccia.                                                  |
-| \_errore di \_ connessione dell'interfaccia MPR \_         | Il tentativo di connessione precedente non è riuscito. Esaminare il membro **dwLastError** per il codice di errore. |
-| \_ \_ restrizione delle ore di connessione dell'interfaccia MPR \_ \_ | La connessione remota non è consentita all'ora corrente.                                                   |
-| \_interfaccia MPR \_ \_ di \_ risorse insufficienti          | Non sono disponibili porte o dispositivi da usare.                                                     |
-| \_servizio di interfaccia MPR \_ \_ sospeso             | Il servizio è in pausa.                                                                         |
-| \_interfaccia MPR \_ senza \_ media \_ Sense            | Il cavo di rete è disconnesso dalla scheda di rete.                                       |
-| \_interfaccia MPR \_ senza \_ dispositivo                  | La scheda di rete è stata rimossa dal computer.                                            |
+| AMMINISTRATORE \_ DELL'INTERFACCIA \_ MPR \_ DISABILITATO             | L'amministratore ha disabilitato l'interfaccia.                                                  |
+| ERRORE DI \_ CONNESSIONE \_ DELL'INTERFACCIA \_ MPR         | Il tentativo di connessione precedente non è riuscito. Esaminare il membro **dwLastError** per il codice di errore. |
+| RESTRIZIONE DELLE \_ ORE \_ DI DIALOUT \_ DELL'INTERFACCIA \_ MPR | La connessione remota non è consentita al momento.                                                   |
+| INTERFACCIA MPR \_ \_ FUORI \_ RISORSE \_          | Non sono disponibili porte o dispositivi per l'uso.                                                     |
+| SERVIZIO DI \_ INTERFACCIA MPR \_ \_ SOSPESO             | Il servizio è in pausa.                                                                         |
+| INTERFACCIA MPR \_ \_ NO MEDIA \_ \_ SENSE            | Il cavo di rete è disconnesso dalla scheda di rete.                                       |
+| INTERFACCIA MPR \_ \_ NESSUN \_ DISPOSITIVO                  | La scheda di rete è stata rimossa dal computer.                                            |
 
 
 
- 
+ 
 
 ## <a name="related-topics"></a>Argomenti correlati
 
 <dl> <dt>
 
-[**\_Interfaccia MPR \_ 0**](/windows/desktop/api/Mprapi/ns-mprapi-mpr_interface_0)
+[**INTERFACCIA MPR \_ \_ 0**](/windows/desktop/api/Mprapi/ns-mprapi-mpr_interface_0)
 </dt> <dt>
 
-[**\_Interfaccia MPR \_ 1**](/windows/desktop/api/Mprapi/ns-mprapi-mpr_interface_1)
+[**INTERFACCIA MPR \_ \_ 1**](/windows/desktop/api/Mprapi/ns-mprapi-mpr_interface_1)
 </dt> <dt>
 
-[**\_IFROW MIB**](/windows/desktop/api/ifmib/ns-ifmib-mib_ifrow)
+[**MIB \_ IFROW**](/windows/desktop/api/ifmib/ns-ifmib-mib_ifrow)
 </dt> <dt>
 
-[**\_IFSTATUS MIB**](/windows/desktop/api/iprtrmib/ns-iprtrmib-mib_ifstatus)
+[**MIB \_ IFSTATUS**](/windows/desktop/api/iprtrmib/ns-iprtrmib-mib_ifstatus)
 </dt> </dl>
 
- 
+ 
 
- 
+ 

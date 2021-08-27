@@ -1,12 +1,12 @@
 ---
-title: Metodo disconnected IMsTscAxEvents
-description: Chiamato quando il controllo client è stato disconnesso dal server host sessione Desktop remoto (host sessione Desktop remoto).
+title: Metodo IMsTscAxEvents OnDisconnected
+description: Chiamato quando il controllo client è stato disconnesso dal server Desktop remoto host sessione Desktop remoto.
 ms.assetid: f01086e7-61d1-41df-ba0a-4eecfa57d492
 ms.tgt_platform: multiple
 keywords:
-- Metodo disconnected Servizi Desktop remoto
-- Metodo disconnected Servizi Desktop remoto, interfaccia IMsTscAxEvents
-- Interfaccia IMsTscAxEvents Servizi Desktop remoto, metodo disconnected
+- Metodo OnDisconnected Servizi Desktop remoto
+- Metodo OnDisconnected Servizi Desktop remoto, interfaccia IMsTscAxEvents
+- Interfaccia IMsTscAxEvents Servizi Desktop remoto , metodo OnDisconnected
 topic_type:
 - apiref
 api_name:
@@ -17,16 +17,16 @@ api_type:
 - COM
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 372ad98c73b1b0e90753891e01e46c61a78c23dd
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: 02bc7351d1cc0fafa46aab1f93feed4cafc184dc33090d4d2c7947a285fbb234
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "106301880"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120125131"
 ---
-# <a name="imstscaxeventsondisconnected-method"></a>Metodo IMsTscAxEvents:: disconnected
+# <a name="imstscaxeventsondisconnected-method"></a>Metodo IMsTscAxEvents::OnDisconnected
 
-Chiamato quando il controllo client è stato disconnesso dal server host sessione Desktop remoto (host sessione Desktop remoto).
+Chiamato quando il controllo client è stato disconnesso dal server Desktop remoto host sessione Desktop remoto.
 
 ## <a name="syntax"></a>Sintassi
 
@@ -43,10 +43,10 @@ void OnDisconnected(
 
 <dl> <dt>
 
-*discReason* \[ in\]
+*discReason* \[ Pollici\]
 </dt> <dd>
 
-Specifica il motivo della disconnessione. Di seguito è riportato un elenco di codici di errore. Alcuni di questi codici di errore sono definiti in winCred. h.
+Specifica il motivo della disconnessione. Di seguito è riportato un elenco di codici di errore. Alcuni di questi codici di errore sono definiti in Wincred.h.
 
 <dt>
 
@@ -68,7 +68,7 @@ Socket chiuso.
 
 </dt> <dd>
 
-Disconnessione remota dal server. Questo non è un codice di errore.
+Disconnessione remota in base al server. Non si tratta di un codice di errore.
 
 </dd> <dt>
 
@@ -112,7 +112,7 @@ Errore di decrittografia.
 
 </dt> <dd>
 
-Errore di ricerca del nome DNS.
+Errore di ricerca dei nomi DNS.
 
 </dd> <dt>
 
@@ -145,7 +145,7 @@ Errore di crittografia.
 
 </dt> <dd>
 
-Chiamata [**gethostbyname**](/windows/desktop/api/wsipv6ok/nf-wsipv6ok-gethostbyname) di Windows Sockets non riuscita.
+Windows Chiamata [**gethostbyname**](/windows/desktop/api/wsipv6ok/nf-wsipv6ok-gethostbyname) del socket non riuscita.
 
 </dd> <dt>
 
@@ -178,7 +178,7 @@ Errore interno.
 
 </dt> <dd>
 
-Errore interno di sicurezza.
+Errore di sicurezza interno.
 
 </dd> <dt>
 
@@ -189,7 +189,7 @@ Errore interno di sicurezza.
 
 </dt> <dd>
 
-Errore interno di sicurezza.
+Errore di sicurezza interno.
 
 </dd> <dt>
 
@@ -211,7 +211,7 @@ Il metodo di crittografia specificato non è valido.
 
 </dt> <dd>
 
-È stato specificato un indirizzo IP non valido.
+Indirizzo IP non valido specificato.
 
 </dd> <dt>
 
@@ -266,7 +266,7 @@ Negoziazione della licenza non riuscita.
 
 </dt> <dd>
 
-Timeout della gestione delle licenze.
+Timeout delle licenze.
 
 </dd> <dt>
 
@@ -277,7 +277,7 @@ Timeout della gestione delle licenze.
 
 </dt> <dd>
 
-Disconnessione locale. Questo non è un codice di errore.
+Disconnessione locale. Non si tratta di un codice di errore.
 
 </dd> <dt>
 
@@ -332,7 +332,7 @@ Memoria insufficiente.
 
 </dt> <dd>
 
-Disconnessione remota da un utente. Questo non è un codice di errore.
+Disconnessione remota in base all'utente. Non si tratta di un codice di errore.
 
 </dd> <dt>
 
@@ -343,7 +343,7 @@ Disconnessione remota da un utente. Questo non è un codice di errore.
 
 </dt> <dd>
 
-Non è stato possibile decomprimere il certificato server.
+Impossibile decomprimere il certificato server.
 
 </dd> <dt>
 
@@ -354,7 +354,7 @@ Non è stato possibile decomprimere il certificato server.
 
 </dt> <dd>
 
-[**Connessione**](/windows/desktop/api/winsock2/nf-winsock2-connect) Windows Sockets non riuscita.
+Windows Connessione socket [**non**](/windows/desktop/api/winsock2/nf-winsock2-connect) riuscita.
 
 </dd> <dt>
 
@@ -365,7 +365,7 @@ Non è stato possibile decomprimere il certificato server.
 
 </dt> <dd>
 
-Chiamata [**ricezione**](/windows/desktop/api/winsock/nf-winsock-recv) di Windows Sockets non riuscita.
+Windows Chiamata [**recv dei**](/windows/desktop/api/winsock/nf-winsock-recv) socket non riuscita.
 
 </dd> <dt>
 
@@ -398,13 +398,13 @@ Errore interno del timer.
 
 </dt> <dd>
 
-Chiamata di [**invio**](/windows/desktop/api/winsock2/nf-winsock2-send) Windows Sockets non riuscita.
+Windows Chiamata di [**invio socket**](/windows/desktop/api/winsock2/nf-winsock2-send) non riuscita.
 
 </dd> <dt>
 
 <span id="SSL_ERR_ACCOUNT_DISABLED"></span><span id="ssl_err_account_disabled"></span>
 
-<span id="SSL_ERR_ACCOUNT_DISABLED"></span><span id="ssl_err_account_disabled"></span>**SSL \_ \_Account ERR \_ disabilitato** (2823 (0xB07))
+<span id="SSL_ERR_ACCOUNT_DISABLED"></span><span id="ssl_err_account_disabled"></span>**SSL \_ ACCOUNT ERR \_ \_ DISABILITATO** (2823 (0xB07))
 
 
 </dt> <dd>
@@ -415,7 +415,7 @@ L'account è disabilitato.
 
 <span id="SSL_ERR_ACCOUNT_EXPIRED"></span><span id="ssl_err_account_expired"></span>
 
-<span id="SSL_ERR_ACCOUNT_EXPIRED"></span><span id="ssl_err_account_expired"></span>**SSL \_ \_Account ERR \_ scaduto** (3591 (0xE07))
+<span id="SSL_ERR_ACCOUNT_EXPIRED"></span><span id="ssl_err_account_expired"></span>**SSL \_ ACCOUNT ERR \_ \_ SCADUTO** (3591 (0xE07))
 
 
 </dt> <dd>
@@ -426,7 +426,7 @@ L'account è scaduto.
 
 <span id="SSL_ERR_ACCOUNT_LOCKED_OUT"></span><span id="ssl_err_account_locked_out"></span>
 
-<span id="SSL_ERR_ACCOUNT_LOCKED_OUT"></span><span id="ssl_err_account_locked_out"></span>**SSL \_ \_Account ERR \_ bloccato \_** (3335 (0xD07))
+<span id="SSL_ERR_ACCOUNT_LOCKED_OUT"></span><span id="ssl_err_account_locked_out"></span>**SSL \_ ACCOUNT \_ ERR \_ BLOCCATO \_** (3335 (0xD07))
 
 
 </dt> <dd>
@@ -437,7 +437,7 @@ L'account è bloccato.
 
 <span id="SSL_ERR_ACCOUNT_RESTRICTION"></span><span id="ssl_err_account_restriction"></span>
 
-<span id="SSL_ERR_ACCOUNT_RESTRICTION"></span><span id="ssl_err_account_restriction"></span>**SSL \_ \_ \_ Restrizione dell'account ERR** (3079 (0xC07))
+<span id="SSL_ERR_ACCOUNT_RESTRICTION"></span><span id="ssl_err_account_restriction"></span>**SSL \_ RESTRIZIONE \_ \_ DELL'ACCOUNT ERR** (3079 (0xC07))
 
 
 </dt> <dd>
@@ -448,7 +448,7 @@ L'account è limitato.
 
 <span id="SSL_ERR_CERT_EXPIRED"></span><span id="ssl_err_cert_expired"></span>
 
-<span id="SSL_ERR_CERT_EXPIRED"></span><span id="ssl_err_cert_expired"></span>**SSL \_ Il \_ certificato \_ Err è scaduto** (6919 (0x1B07))
+<span id="SSL_ERR_CERT_EXPIRED"></span><span id="ssl_err_cert_expired"></span>**SSL \_ ERR \_ CERT \_ EXPIRED** (6919 (0x1B07))
 
 
 </dt> <dd>
@@ -459,29 +459,29 @@ Il certificato ricevuto è scaduto.
 
 <span id="SSL_ERR_DELEGATION_POLICY"></span><span id="ssl_err_delegation_policy"></span>
 
-<span id="SSL_ERR_DELEGATION_POLICY"></span><span id="ssl_err_delegation_policy"></span>**SSL \_ \_ \_ Criteri di delega ERR** (5639 (0x1607))
+<span id="SSL_ERR_DELEGATION_POLICY"></span><span id="ssl_err_delegation_policy"></span>**SSL \_ CRITERI DI \_ DELEGA \_ ERR** (5639 (0x1607))
 
 
 </dt> <dd>
 
-Il criterio non supporta la delega delle credenziali al server di destinazione.
+I criteri non supportano la delega delle credenziali al server di destinazione.
 
 </dd> <dt>
 
 <span id="SSL_ERR_FRESH_CRED_REQUIRED_BY_SERVER"></span><span id="ssl_err_fresh_cred_required_by_server"></span>
 
-<span id="SSL_ERR_FRESH_CRED_REQUIRED_BY_SERVER"></span><span id="ssl_err_fresh_cred_required_by_server"></span>**SSL \_ ERR \_ Fresh \_ cred \_ richiesta \_ dal \_ Server** (8455 (0x2107))
+<span id="SSL_ERR_FRESH_CRED_REQUIRED_BY_SERVER"></span><span id="ssl_err_fresh_cred_required_by_server"></span>**SSL \_ ERR \_ FRESH \_ CRED RICHIESTO DAL \_ \_ \_ SERVER** (8455 (0x2107))
 
 
 </dt> <dd>
 
-Il criterio di autenticazione server non consente le richieste di connessione tramite le credenziali salvate. L'utente deve immettere le nuove credenziali.
+I criteri di autenticazione del server non consentono richieste di connessione che usano credenziali salvate. L'utente deve immettere nuove credenziali.
 
 </dd> <dt>
 
 <span id="SSL_ERR_LOGON_FAILURE"></span><span id="ssl_err_logon_failure"></span>
 
-<span id="SSL_ERR_LOGON_FAILURE"></span><span id="ssl_err_logon_failure"></span>**SSL \_ \_ \_ Errore di accesso ERR** (2055 (0x807))
+<span id="SSL_ERR_LOGON_FAILURE"></span><span id="ssl_err_logon_failure"></span>**SSL \_ ERRORE DI \_ ACCESSO \_ ERR** (2055 (0x807))
 
 
 </dt> <dd>
@@ -492,18 +492,18 @@ Accesso non riuscito.
 
 <span id="SSL_ERR_NO_AUTHENTICATING_AUTHORITY"></span><span id="ssl_err_no_authenticating_authority"></span>
 
-<span id="SSL_ERR_NO_AUTHENTICATING_AUTHORITY"></span><span id="ssl_err_no_authenticating_authority"></span>**SSL \_ \_Nessuna \_ \_ autorità di autenticazione** (6151 (0x1807))
+<span id="SSL_ERR_NO_AUTHENTICATING_AUTHORITY"></span><span id="ssl_err_no_authenticating_authority"></span>**SSL \_ ERR \_ NO \_ AUTHENTICATING \_ AUTHORITY** (6151 (0x1807))
 
 
 </dt> <dd>
 
-Non è stato possibile contattare un'autorità per l'autenticazione. Il nome di dominio dell'entità di autenticazione potrebbe essere errato, il dominio potrebbe non essere raggiungibile o potrebbe essersi verificato un errore di relazione di trust.
+Non è stato possibile contattare alcuna autorità per l'autenticazione. Il nome di dominio dell'entità autenticante potrebbe non essere corretto, il dominio potrebbe non essere raggiungibile o potrebbe esserci stato un errore di relazione di trust.
 
 </dd> <dt>
 
 <span id="SSL_ERR_NO_SUCH_USER"></span><span id="ssl_err_no_such_user"></span>
 
-<span id="SSL_ERR_NO_SUCH_USER"></span><span id="ssl_err_no_such_user"></span>**SSL \_ ERR \_ No \_ \_ User** (2567 (0xA07))
+<span id="SSL_ERR_NO_SUCH_USER"></span><span id="ssl_err_no_such_user"></span>**SSL \_ ERR \_ NO \_ SUCH \_ USER** (2567 (0xA07))
 
 
 </dt> <dd>
@@ -514,7 +514,7 @@ L'utente specificato non dispone di alcun account.
 
 <span id="SSL_ERR_PASSWORD_EXPIRED"></span><span id="ssl_err_password_expired"></span>
 
-<span id="SSL_ERR_PASSWORD_EXPIRED"></span><span id="ssl_err_password_expired"></span>**SSL \_ \_Password ERR \_ scaduta** (3847 (0xF07))
+<span id="SSL_ERR_PASSWORD_EXPIRED"></span><span id="ssl_err_password_expired"></span>**SSL \_ PASSWORD ERR \_ \_ SCADUTA** (3847 (0xF07))
 
 
 </dt> <dd>
@@ -525,45 +525,45 @@ La password è scaduta.
 
 <span id="SSL_ERR_PASSWORD_MUST_CHANGE"></span><span id="ssl_err_password_must_change"></span>
 
-<span id="SSL_ERR_PASSWORD_MUST_CHANGE"></span><span id="ssl_err_password_must_change"></span>**SSL \_ \_ \_ \_ Modificare la PASSWORD Err** (4615 (0x1207))
+<span id="SSL_ERR_PASSWORD_MUST_CHANGE"></span><span id="ssl_err_password_must_change"></span>**SSL \_ LA PASSWORD DI ERR \_ \_ DEVE \_ CAMBIARE** (4615 (0x1207))
 
 
 </dt> <dd>
 
-È necessario modificare la password utente prima di accedere per la prima volta.
+La password utente deve essere modificata prima di accedere per la prima volta.
 
 </dd> <dt>
 
 <span id="SSL_ERR_POLICY_NTLM_ONLY"></span><span id="ssl_err_policy_ntlm_only"></span>
 
-<span id="SSL_ERR_POLICY_NTLM_ONLY"></span><span id="ssl_err_policy_ntlm_only"></span>**SSL \_ \_Criterio ERR \_ \_ solo NTLM** (5895 (0x1707))
+<span id="SSL_ERR_POLICY_NTLM_ONLY"></span><span id="ssl_err_policy_ntlm_only"></span>**SSL \_ ERR \_ POLICY \_ NTLM \_ ONLY** (5895 (0x1707))
 
 
 </dt> <dd>
 
-La delega delle credenziali al server di destinazione non è consentita, a meno che non sia stata eseguita l'autenticazione reciproca.
+La delega delle credenziali al server di destinazione non è consentita a meno che non sia stata ottenuta l'autenticazione reciproca.
 
 </dd> <dt>
 
 <span id="SSL_ERR_SMARTCARD_CARD_BLOCKED"></span><span id="ssl_err_smartcard_card_blocked"></span>
 
-<span id="SSL_ERR_SMARTCARD_CARD_BLOCKED"></span><span id="ssl_err_smartcard_card_blocked"></span>**SSL \_ \_Scheda SmartCard \_ Err \_ bloccata** (8711 (0x2207))
+<span id="SSL_ERR_SMARTCARD_CARD_BLOCKED"></span><span id="ssl_err_smartcard_card_blocked"></span>**SSL \_ SCHEDA \_ SMART CARD ERR \_ \_ BLOCCATA** (8711 (0x2207))
 
 
 </dt> <dd>
 
-La smart card è bloccata.
+Il smart card è bloccato.
 
 </dd> <dt>
 
 <span id="SSL_ERR_SMARTCARD_WRONG_PIN"></span><span id="ssl_err_smartcard_wrong_pin"></span>
 
-<span id="SSL_ERR_SMARTCARD_WRONG_PIN"></span><span id="ssl_err_smartcard_wrong_pin"></span>**SSL \_ ERRORE \_ \_ \_ pin SMARTCARD errato** (7175 (0x1C07))
+<span id="SSL_ERR_SMARTCARD_WRONG_PIN"></span><span id="ssl_err_smartcard_wrong_pin"></span>**SSL \_ \_ \_ \_ PIN ERRATO DELLA SMART CARD ERR** (7175 (0x1C07))
 
 
 </dt> <dd>
 
-Un PIN errato è stato presentato alla smart card.
+È stato presentato un PIN non corretto al smart card.
 
 </dd> </dl> </dd> </dl>
 
@@ -573,9 +573,9 @@ Questo metodo non restituisce valori.
 
 ## <a name="remarks"></a>Commenti
 
-Per recuperare una descrizione dell'errore di disconnessione, chiamare il metodo [**GetErrorDescription**](imsrdpclient5-geterrordescription.md) e passargli il parametro *discReason* e la proprietà [**ExtendedDisconnectReason**](imsrdpclient-extendeddisconnectreason.md) dell'interfaccia [**IMsRdpClient**](imsrdpclient-interface.md) .
+Per recuperare una descrizione dell'errore di disconnessione, chiamare il metodo [**GetErrorDescription**](imsrdpclient5-geterrordescription.md) e passarlo al parametro *discReason* e alla proprietà [**ExtendedDisconnectReason**](imsrdpclient-extendeddisconnectreason.md) dell'interfaccia [**IMsRdpClient.**](imsrdpclient-interface.md)
 
-Per ulteriori informazioni su Connessione Web Desktop remoto, vedere [requisiti per connessione Web Desktop remoto](requirements-for-remote-desktop-web-connection.md).
+Per altre informazioni sui Connessione Web Desktop remoto, vedere [Requisiti per Connessione Web Desktop remoto](requirements-for-remote-desktop-web-connection.md).
 
 ## <a name="requirements"></a>Requisiti
 

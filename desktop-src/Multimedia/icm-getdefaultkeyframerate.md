@@ -1,9 +1,9 @@
 ---
-title: Messaggio di ICM_GETDEFAULTKEYFRAMERATE (VFW. h)
-description: Il \_ messaggio MCI GETDEFAULTKEYFRAMERATE esegue una query su un driver di compressione video per la spaziatura dei fotogrammi chiave predefinita o preferita. È possibile inviare questo messaggio in modo esplicito o utilizzando la macro ICGetDefaulteyFrameRate.
+title: ICM_GETDEFAULTKEYFRAMERATE messaggio (Vfw.h)
+description: Il ICM getDEFAULTKEYFRAMERATE esegue una query su un driver di compressione video per la spaziatura predefinita \_ (o preferita) dei fotogrammi chiave. È possibile inviare questo messaggio in modo esplicito o usando la macro ICGetDefaulteyFrameRate.
 ms.assetid: 2ebe37cc-3ec2-4b52-bd8f-71c44b704647
 keywords:
-- ICM_GETDEFAULTKEYFRAMERATE messaggi multimediali di Windows
+- ICM_GETDEFAULTKEYFRAMERATE messaggio Windows Multimediali
 topic_type:
 - apiref
 api_name:
@@ -14,16 +14,16 @@ api_type:
 - HeaderDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: e64f2796ca1c2de10222330217a0e1deb7883baa
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: bff21682f08dfdcda120f5efb5f7f8629a9e93e21faaf27ff4ee9ee59da8c762
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "104400680"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120038701"
 ---
-# <a name="icm_getdefaultkeyframerate-message"></a>\_Messaggio GETDEFAULTKEYFRAMERATE ICM
+# <a name="icm_getdefaultkeyframerate-message"></a>\_ICM Messaggio GETDEFAULTKEYFRAMERATE
 
-Il messaggio **MCI \_ GETDEFAULTKEYFRAMERATE** esegue una query su un driver di compressione video per la spaziatura dei fotogrammi chiave predefinita o preferita. È possibile inviare questo messaggio in modo esplicito o utilizzando la macro [**ICGetDefaulteyFrameRate**](/windows/desktop/api/Vfw/nf-vfw-icgetdefaultkeyframerate) .
+Il **ICM \_ getDEFAULTKEYFRAMERATE** esegue una query su un driver di compressione video per la spaziatura predefinita (o preferita) dei fotogrammi chiave. È possibile inviare questo messaggio in modo esplicito o usando la macro [**ICGetDefaulteyFrameRate.**](/windows/desktop/api/Vfw/nf-vfw-icgetdefaultkeyframerate)
 
 
 ```C++
@@ -41,13 +41,13 @@ lParam = 0;
 <span id="dwICValue"></span><span id="dwicvalue"></span><span id="DWICVALUE"></span>*dwICValue*
 </dt> <dd>
 
-Indirizzo per contenere la spaziatura dei fotogrammi chiave preferita.
+Indirizzo che deve contenere la spaziatura tra fotogrammi chiave preferita.
 
 </dd> </dl>
 
 ## <a name="return-value"></a>Valore restituito
 
-Restituisce ICERR \_ OK se il driver supporta questo messaggio o ICERR non \_ supportato in caso contrario.
+Restituisce ICERR OK se il driver supporta questo messaggio o \_ ICERR \_ UNSUPPORTED in caso contrario.
 
 ## <a name="requirements"></a>Requisiti
 
@@ -57,7 +57,7 @@ Restituisce ICERR \_ OK se il driver supporta questo messaggio o ICERR non \_ su
 |-------------------------------------|----------------------------------------------------------------------------------|
 | Client minimo supportato<br/> | Windows 2000 Professional \[solo app desktop\]<br/>                       |
 | Server minimo supportato<br/> | Windows 2000 Server \[solo app desktop\]<br/>                             |
-| Intestazione<br/>                   | <dl> <dt>VFW. h</dt> </dl> |
+| Intestazione<br/>                   | <dl> <dt>Vfw.h</dt> </dl> |
 
 
 

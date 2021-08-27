@@ -1,7 +1,7 @@
 ---
-description: Il metodo Unadvise rimuove una richiesta di notifica.
+description: Il metodo Unadvise rimuove una richiesta di consulenza.
 ms.assetid: b3dfda82-577e-4499-a114-1c8721e4af9e
-title: Metodo CAMSchedule. Unadvise (Dsschedule. h)
+title: Metodo CAMSchedule.Unadvise (Dsschedule.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -16,16 +16,16 @@ api_location:
 - Strmbase.dll
 - Strmbasd.lib
 - Strmbasd.dll
-ms.openlocfilehash: 25dd70a46fcc2b6572500b3164b64fd0facbcbe0
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: 6bc9b1c964d698e1c1323846c7a25a29f60c0cd71009fbb60f1a09a6757b50b2
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "106329561"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120057601"
 ---
-# <a name="camscheduleunadvise-method"></a>Metodo CAMSchedule. Unadvise
+# <a name="camscheduleunadvise-method"></a>Metodo CAMSchedule.Unadvise
 
-Il `Unadvise` metodo rimuove una richiesta di notifica.
+Il `Unadvise` metodo rimuove una richiesta di consulenza.
 
 ## <a name="syntax"></a>Sintassi
 
@@ -45,20 +45,20 @@ HRESULT Unadvise(
 *dwAdviseCookie* 
 </dt> <dd>
 
-Identificatore della richiesta di notifica, restituito dal metodo [**CAMSchedule:: AddAdvisePacket**](camschedule-addadvisepacket.md) .
+Identificatore della richiesta di consulenza, restituita dal [**metodo CAMSchedule::AddAdvisePacket.**](camschedule-addadvisepacket.md)
 
 </dd> </dl>
 
 ## <a name="return-value"></a>Valore restituito
 
-Restituisce uno dei valori **HRESULT** indicati nella tabella seguente.
+Restituisce uno dei **valori HRESULT** illustrati nella tabella seguente.
 
 
 
 | Codice restituito                                                                             | Descrizione          |
 |-----------------------------------------------------------------------------------------|----------------------|
-| <dl> <dt>**S \_ false**</dt> </dl> | Non trovato<br/> |
-| <dl> <dt>**\_OK**</dt> </dl>    | Operazione riuscita<br/>   |
+| <dl> <dt>**S \_ FALSE**</dt> </dl> | Non trovato<br/> |
+| <dl> <dt>**S \_ OK**</dt> </dl>    | Operazione riuscita<br/>   |
 
 
 
@@ -70,8 +70,8 @@ Restituisce uno dei valori **HRESULT** indicati nella tabella seguente.
 
 | Requisito | Valore |
 |--------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Intestazione<br/>  | <dl> <dt>Dsschedule. h (include Streams. h)</dt> </dl>                                                                                |
-| Libreria<br/> | <dl> <dt>Strmbase. lib (compilazioni finali); </dt> <dt>Strmbasd. lib (build di debug)</dt> </dl> |
+| Intestazione<br/>  | <dl> <dt>Dsschedule.h (includere Flussi.h)</dt> </dl>                                                                                |
+| Libreria<br/> | <dl> <dt>Strmbase.lib (build di vendita al dettaglio); </dt> <dt>Strmbasd.lib (build di debug)</dt> </dl> |
 
 
 

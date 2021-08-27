@@ -1,11 +1,11 @@
 ---
-title: Proprietà degli Appunti IMsRdpClientNonScriptable7
-description: Ottiene il controller degli Appunti utilizzato per sincronizzare gli Appunti locali e remoti se è abilitata la sincronizzazione manuale degli Appunti.
+title: Proprietà Degli Appunti IMsRdpClientNonScriptable7
+description: Ottiene il controller appunti utilizzato per sincronizzare gli Appunti locali e remoti se la sincronizzazione manuale degli Appunti è abilitata.
 ms.tgt_platform: multiple
 keywords:
-- Servizi Desktop remoto proprietà degli Appunti
-- Servizi Desktop remoto proprietà degli Appunti, interfaccia IMsRdpClientNonScriptable7
-- Interfaccia IMsRdpClientNonScriptable7 Servizi Desktop remoto, proprietà degli Appunti
+- Proprietà Clipboard Servizi Desktop remoto
+- Proprietà Clipboard Servizi Desktop remoto, interfaccia IMsRdpClientNonScriptable7
+- Interfaccia IMsRdpClientNonScriptable7 Servizi Desktop remoto , proprietà Clipboard
 topic_type:
 - apiref
 api_name:
@@ -17,16 +17,16 @@ api_type:
 - COM
 ms.topic: reference
 ms.date: 12/16/2020
-ms.openlocfilehash: 770930eb780b3ce8684608ffcdc0c13c1630cab0
-ms.sourcegitcommit: 04e801237156e90b48111d60bddf437f87f5cdfe
+ms.openlocfilehash: 236666cbef369c4f2353ff524ceb7544e62f50d4a7e4a7ac59f3882057a92f48
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/19/2020
-ms.locfileid: "103965441"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120009641"
 ---
-# <a name="imsrdpclientnonscriptable7clipboard-property"></a>Proprietà IMsRdpClientNonScriptable7:: Clipboard
+# <a name="imsrdpclientnonscriptable7clipboard-property"></a>Proprietà IMsRdpClientNonScriptable7::Clipboard
 
-Ottiene il controller degli Appunti utilizzato per sincronizzare gli Appunti locali e remoti se è abilitata la sincronizzazione manuale degli Appunti.
+Ottiene il controller appunti utilizzato per sincronizzare gli Appunti locali e remoti se la sincronizzazione manuale degli Appunti è abilitata.
 
 Questa proprietà è di sola lettura.
 
@@ -40,7 +40,7 @@ HRESULT get_Clipboard(
 
 ## <a name="property-value"></a>Valore proprietà
 
-Un [IMsRdpClipboard](imsrdpclipboard.md) che rappresenta il controller degli Appunti usato per sincronizzare gli Appunti locali e remoti se è abilitata la sincronizzazione manuale degli Appunti, ovvero se il valore della proprietà [ManualClipboardSyncEnabled](imsrdpextendedsettings-property.md) è impostato su **true**.
+Oggetto [IMsRdpClipboard](imsrdpclipboard.md) che rappresenta il controller appunti usato per sincronizzare gli Appunti locali e remoti se è abilitata la sincronizzazione manuale degli Appunti, ovvero il valore della proprietà [ManualClipboardSyncEnabled](imsrdpextendedsettings-property.md) è impostato su **True.**
 
 ## <a name="requirements"></a>Requisiti
 
@@ -49,7 +49,7 @@ Un [IMsRdpClipboard](imsrdpclipboard.md) che rappresenta il controller degli App
 | Client minimo supportato| Windows 10, versione 1803 (build 17134)      |
 | Libreria dei tipi            | MsTscAx.dll                        |
 | DLL                  | MsTscAx.dll     |
-| IID                      | IID \_ IMsRdpClientNonScriptable7 è definito come 71B4A60A-FE21-46D8-A39B-8E32BA0C5ECC          |
+| IID                      | IMsRdpClientNonScriptable7 IID è definito come \_ 71B4A60A-FE21-46D8-A39B-8E32BA0C5ECC          |
 
 ## <a name="see-also"></a>Vedi anche
 

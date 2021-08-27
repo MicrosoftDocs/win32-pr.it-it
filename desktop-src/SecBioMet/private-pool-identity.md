@@ -1,27 +1,27 @@
 ---
 title: Identità del pool privato
-description: Contiene il progetto della console di identificazione.
+description: Contiene il progetto console di identificazione.
 ms.assetid: 1A96A20D-6991-4D8D-B7EC-7AF84B550920
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 61c5fd2ec1073b6185235ee739951a1bfb118f40
-ms.sourcegitcommit: 2d531328b6ed82d4ad971a45a5131b430c5866f7
+ms.openlocfilehash: 0243a3d8ea5b425efa8d8ab7133bbd6b8fd1c1662a23b45a4c4177093b3e4498
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "104331660"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120101231"
 ---
 # <a name="private-pool-identity"></a>Identità del pool privato
 
-Le sezioni seguenti contengono il codice necessario per l'identificazione privata del pool di sensori.
+Le sezioni seguenti contengono il codice necessario per l'identificazione del pool di sensori privati.
 
--   [Targetver. h](#targetverh)
--   [Stdafx. h](#stdafxh)
--   [PrivatePoolIdentify. cpp](#privatepoolidentifycpp)
+-   [Targetver.h](#targetverh)
+-   [Stdafx.h](#stdafxh)
+-   [PrivatePoolIdentify.cpp](#privatepoolidentifycpp)
 
-## <a name="targetverh"></a>Targetver. h
+## <a name="targetverh"></a>Targetver.h
 
-Questo esempio è stato creato per i sistemi operativi Windows 7 e versioni successive.
+Questo esempio è stato creato per Windows 7 e versioni successive.
 
 
 ```C++
@@ -65,7 +65,7 @@ Questo esempio è stato creato per i sistemi operativi Windows 7 e versioni succ
 
 
 
-## <a name="privatepoolidentifycpp"></a>PrivatePoolIdentify. cpp
+## <a name="privatepoolidentifycpp"></a>PrivatePoolIdentify.cpp
 
 
 ```C++
@@ -363,9 +363,9 @@ static void displayIdentity(
 
 
 
- 
+ 
 
- 
+ 
 
 
 

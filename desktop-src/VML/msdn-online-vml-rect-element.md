@@ -1,30 +1,30 @@
 ---
-title: Elemento Rect la
-description: Elemento Rect la
+title: Elemento Rect VML
+description: Elemento Rect VML
 ms.assetid: c9a97eb1-eb4d-463b-8311-6fbe82b9a74d
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 66f49d3ddb26a425132a652aca162e004f3218a8
-ms.sourcegitcommit: 592c9bbd22ba69802dc353bcb5eb30699f9e9403
+ms.openlocfilehash: 47bba766cd61979307b6f01c421d5495c49538efdb312b1b16a51ec4fb494eb3
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/20/2020
-ms.locfileid: "103963204"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120007661"
 ---
-# <a name="vml-rect-element"></a>Elemento Rect la
+# <a name="vml-rect-element"></a>Elemento Rect VML
 
-In questo argomento viene descritto la, una funzionalità deprecata a partire da Windows Internet Explorer 9. Le pagine Web e le applicazioni che si basano su la devono essere migrate a SVG o ad altri standard ampiamente supportati.
+Questo argomento descrive VML, una funzionalità deprecata a Windows Internet Explorer 9. Le pagine Web e le applicazioni che si basano su VML devono essere migrate a SVG o ad altri standard ampiamente supportati.
 
 > [!Note]  
-> Al 2011 dicembre, questo argomento è stato archiviato. Di conseguenza, non viene più gestita attivamente. Per altre informazioni, vedere [contenuto archiviato](/previous-versions/windows/internet-explorer/ie-developer/). Per informazioni, suggerimenti e indicazioni per la versione corrente di Windows Internet Explorer, vedere il [centro per sviluppatori di Internet Explorer](https://msdn.microsoft.com/ie/).
+> A partire da dicembre 2011, questo argomento è stato archiviato. Di conseguenza, non viene più gestito attivamente. Per altre informazioni, vedere [Contenuto archiviato.](/previous-versions/windows/internet-explorer/ie-developer/) Per informazioni, consigli e indicazioni sulla versione corrente di Windows Internet Explorer, vedere Internet Explorer [Developer Center.](https://msdn.microsoft.com/ie/)
 
- 
+ 
 
-Forma rettangolare predefinita.
+Forma rettangolo predefinita.
 
 Commenti
 
-Di seguito è riportato il codice minimo necessario per produrre un oggetto Rect.
+Di seguito è riportato il codice minimo necessario per produrre un rect.
 
 
 ```HTML
@@ -38,6 +38,6 @@ Di seguito è riportato il codice minimo necessario per produrre un oggetto Rect
 
 
 
- 
+ 
 
- 
+ 

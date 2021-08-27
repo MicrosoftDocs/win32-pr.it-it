@@ -13,12 +13,12 @@ api_name:
 api_type:
 - NA
 api_location: ''
-ms.openlocfilehash: af46f374d4532efc15185a4716526beabfe5ced1
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: aa297ced8f6c0d17c0c01da9ce11705d30fe7448c8bc2f2ae6358ddc85f653be
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "104980074"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120102061"
 ---
 # <a name="syscallexit-class"></a>Classe SysCallExit
 
@@ -38,26 +38,26 @@ class SysCallExit : PerfInfo
 
 ## <a name="members"></a>Members
 
-La classe **SysCallExit** dispone di questi tipi di membri:
+La **classe SysCallExit** ha questi tipi di membri:
 
 -   [Proprietà](#properties)
 
 ### <a name="properties"></a>Proprietà
 
-La classe **SysCallExit** dispone di queste proprietà.
+La **classe SysCallExit** ha queste proprietà.
 
 <dl> <dt>
 
 **SysCallNtStatus**
 </dt> <dd> <dl> <dt>
 
-Tipo di dati: **UInt32**
+Tipo di dati: **uint32**
 </dt> <dt>
 
 Tipo di accesso: sola lettura
 </dt> <dt>
 
-Qualificatori: WmiDataId (1), Format ("x")
+Qualificatori: WmiDataId(1), Format("x")
 </dt> </dl>
 
 Codice di stato restituito dalla chiamata di sistema NT.
@@ -70,8 +70,8 @@ Codice di stato restituito dalla chiamata di sistema NT.
 
 | Requisito | Valore |
 |-------------------------------------|------------------------------------------------------|
-| Client minimo supportato<br/> | \[Solo app desktop di Windows Vista\]<br/>       |
-| Server minimo supportato<br/> | \[Solo app desktop Windows Server 2008\]<br/> |
+| Client minimo supportato<br/> | Windows Solo \[ app desktop di Vista\]<br/>       |
+| Server minimo supportato<br/> | Windows Solo app desktop server 2008 \[\]<br/> |
 
 
 

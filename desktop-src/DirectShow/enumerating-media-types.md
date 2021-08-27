@@ -1,23 +1,23 @@
 ---
-description: Enumerazione dei tipi di supporto
+description: Enumerazione dei tipi di supporti
 ms.assetid: 7878885f-c285-4744-8eab-445678dcfd49
-title: Enumerazione dei tipi di supporto
+title: Enumerazione dei tipi di supporti
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 3909c25e9ae5f90a3084eebb531431cc93ef46cd
-ms.sourcegitcommit: c16214e53680dc71d1c07111b51f72b82a4512d8
+ms.openlocfilehash: a4e2f063fc243d081b930a1bf47f85904dfbc2fc7eef00fb595d5f0fb3a451ec
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/03/2021
-ms.locfileid: "104351391"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120102801"
 ---
-# <a name="enumerating-media-types"></a>Enumerazione dei tipi di supporto
+# <a name="enumerating-media-types"></a>Enumerazione dei tipi di supporti
 
-I pin supportano il metodo [**Ipin:: EnumMediaTypes**](/windows/desktop/api/Strmif/nf-strmif-ipin-enummediatypes) , che enumera i tipi di supporto preferiti del PIN. Restituisce un puntatore all'interfaccia [**IEnumMediaTypes**](/windows/desktop/api/Strmif/nn-strmif-ienummediatypes) . Il metodo [**IEnumMediaTypes:: Next**](/windows/desktop/api/Strmif/nf-strmif-ienummediatypes-next) recupera i puntatori alle strutture del [**\_ \_ tipo di supporto am**](/windows/win32/api/strmif/ns-strmif-am_media_type) che descrivono i tipi di supporto.
+I pin supportano [**il metodo IPin::EnumMediaTypes,**](/windows/desktop/api/Strmif/nf-strmif-ipin-enummediatypes) che enumera i tipi di supporti preferiti di un pin. Restituisce un puntatore [**all'interfaccia IEnumMediaTypes.**](/windows/desktop/api/Strmif/nn-strmif-ienummediatypes) Il [**metodo IEnumMediaTypes::Next**](/windows/desktop/api/Strmif/nf-strmif-ienummediatypes-next) recupera i puntatori alle strutture [**AM MEDIA \_ \_ TYPE**](/windows/win32/api/strmif/ns-strmif-am_media_type) che descrivono i tipi di supporti.
 
-L'enumeratore Media Type esiste principalmente per consentire a Filter Graph Manager di effettuare connessioni intelligenti e probabilmente non verrà usato dalle applicazioni. Un PIN non restituisce necessariamente i tipi di supporto preferiti. Inoltre, i tipi di supporto restituiti potrebbero dipendere dallo stato di connessione del filtro. Ad esempio, un pin di output di un filtro potrebbe restituire un set di tipi di supporti diverso a seconda del tipo di supporto impostato per il pin di input del filtro.
+L'enumeratore del tipo di supporto esiste principalmente per consentire a Filter Graph Manager di eseguire connessioni intelligenti e probabilmente non verrà usato dalle applicazioni. Un pin non restituisce necessariamente alcun tipo di supporto preferito. Inoltre, i tipi di supporti restituiti potrebbero dipendere dello stato di connessione del filtro. Ad esempio, il pin di output di un filtro potrebbe restituire un set diverso di tipi di supporti a seconda del tipo di supporto impostato per il pin di input del filtro.
 
-Nell'esempio seguente viene trovato un tipo di supporto preferito che corrisponde a un tipo principale, un sottotipo o un tipo di formato specificati.
+Nell'esempio seguente viene trovato un tipo di supporto preferito che corrisponde a un tipo principale, un sottotipo o un tipo di formato specificato.
 
 
 ```C++
@@ -96,7 +96,7 @@ HRESULT GetPinMediaType(
 
 
 > [!Note]  
-> Questo esempio usa la funzione [SafeRelease](/windows/desktop/medfound/saferelease) per rilasciare i puntatori a interfaccia.
+> Questo esempio usa la [funzione SafeRelease](/windows/desktop/medfound/saferelease) per rilasciare i puntatori a interfaccia.
 
  
 
@@ -104,7 +104,7 @@ HRESULT GetPinMediaType(
 
 <dl> <dt>
 
-[Enumerazione di oggetti in un grafico di filtro](enumerating-objects-in-a-filter-graph.md)
+[Enumerazione di oggetti in un filtro Graph](enumerating-objects-in-a-filter-graph.md)
 </dt> <dt>
 
 [**IEnumMediaTypes**](/windows/desktop/api/Strmif/nn-strmif-ienummediatypes)

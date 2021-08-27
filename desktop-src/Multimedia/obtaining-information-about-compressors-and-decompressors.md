@@ -1,23 +1,23 @@
 ---
-title: Ottenere informazioni sui compressori e i decompressori
-description: Ottenere informazioni sui compressori e i decompressori
+title: Recupero di informazioni sui compressori e sui decompressori
+description: Recupero di informazioni sui compressori e sui decompressori
 ms.assetid: 2f1edfd0-dd30-42ea-a5ae-24265d3f8af3
 keywords:
-- Gestione compressione video (VCM), recupero di informazioni sui commediatori
-- VCM (Video Compression Manager), recupero di informazioni sui commediatori
-- ICGetInfo (funzione)
+- gestione compressione video(VCM), recupero di informazioni sui compressi
+- VCM (gestione compressione video), recupero di informazioni sui compressi
+- Funzione ICGetInfo
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 874793233ef0aec4de5b372573fb8dcd79f5d875
-ms.sourcegitcommit: 2d531328b6ed82d4ad971a45a5131b430c5866f7
+ms.openlocfilehash: b023a8f82fa92aa78a2a2dcf47a8f6c9447f943ac0f68440c6d7aff3123fc84e
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "104395546"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120038441"
 ---
-# <a name="obtaining-information-about-compressors-and-decompressors"></a>Ottenere informazioni sui compressori e i decompressori
+# <a name="obtaining-information-about-compressors-and-decompressors"></a>Recupero di informazioni sui compressori e sui decompressori
 
-Nell'esempio seguente viene usata la funzione [**ICGetInfo**](/windows/desktop/api/Vfw/nf-vfw-icgetinfo) per ottenere informazioni su un compressore o un decompressore.
+Nell'esempio seguente viene utilizzata [**la funzione ICGetInfo**](/windows/desktop/api/Vfw/nf-vfw-icgetinfo) per ottenere informazioni su un compressore o un decompressore.
 
 
 ```C++
@@ -28,7 +28,7 @@ ICGetInfo(hIC, &ICInfo, sizeof(ICInfo));
 
 
 
-Nell'esempio seguente vengono usate le macro [**ICGetDefaultKeyFrameRate**](/windows/desktop/api/Vfw/nf-vfw-icgetdefaultkeyframerate) e [**ICGetDefaultQuality**](/windows/desktop/api/Vfw/nf-vfw-icgetdefaultquality) per ottenere i valori predefiniti.
+Nell'esempio seguente vengono utilizzate le macro [**ICGetDefaultKeyFrameRate**](/windows/desktop/api/Vfw/nf-vfw-icgetdefaultkeyframerate) e [**ICGetDefaultQuality**](/windows/desktop/api/Vfw/nf-vfw-icgetdefaultquality) per ottenere i valori predefiniti.
 
 
 ```C++
@@ -40,7 +40,7 @@ dwQuality = ICGetDefaultQuality(hIC);
 
 
 
-Nell'esempio seguente vengono utilizzate le macro [**ICQueryAbout**](/windows/desktop/api/Vfw/nf-vfw-icqueryabout) e [**ICAbout**](/windows/desktop/api/Vfw/nf-vfw-icabout) per visualizzare una finestra di dialogo informazioni su per il compressore o il decompressore, se la finestra di dialogo è presente.
+Nell'esempio seguente vengono utilizzate le macro [**ICQueryAbout**](/windows/desktop/api/Vfw/nf-vfw-icqueryabout) e [**ICAbout**](/windows/desktop/api/Vfw/nf-vfw-icabout) per visualizzare una finestra di dialogo Informazioni su per il compressore o il decompressore, se presente.
 
 
 ```C++
@@ -52,9 +52,9 @@ if ( ICQueryAbout(hIC)) ICAbout(hIC, hwndApp);
 
 
 
- 
+ 
 
- 
+ 
 
 
 

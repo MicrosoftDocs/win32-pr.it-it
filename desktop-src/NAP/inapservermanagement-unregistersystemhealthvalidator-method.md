@@ -1,10 +1,10 @@
 ---
-title: Metodo INapServerManagement UnregisterSystemHealthValidator (NapServerManagement. h)
-description: Viene utilizzato per annullare la registrazione di un servizio di convalida integrità di sistema con il server NAP.
+title: Metodo INapServerManagement UnregisterSystemHealthValidator (NapServerManagement.h)
+description: Viene usato per annullare la registrazione di una shv con il server protezione accesso alla rete.
 ms.assetid: f4148df1-a230-4845-ac8b-9e04be9e0d6c
 keywords:
-- NAP metodo UnregisterSystemHealthValidator
-- Metodo UnregisterSystemHealthValidator NAP, interfaccia INapServerManagement
+- Metodo UnregisterSystemHealthValidator NAP
+- Metodo UnregisterSystemHealthValidator NAP , interfaccia INapServerManagement
 - Interfaccia INapServerManagement NAP, metodo UnregisterSystemHealthValidator
 topic_type:
 - apiref
@@ -16,21 +16,21 @@ api_type:
 - COM
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: d0715445504b862d9ae9e8478b543f8e80378f08
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: 116bcf2d2eec17389cf230bf0a1ad24ba386d2a6e35872570efda092e5992869
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "104518628"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120037831"
 ---
-# <a name="inapservermanagementunregistersystemhealthvalidator-method"></a>Metodo INapServerManagement:: UnregisterSystemHealthValidator
+# <a name="inapservermanagementunregistersystemhealthvalidator-method"></a>Metodo INapServerManagement::UnregisterSystemHealthValidator
 
 > [!Note]  
-> La piattaforma protezione accesso alla rete non è disponibile a partire da Windows 10
+> La piattaforma Protezione accesso alla rete non è disponibile a partire da Windows 10
 
  
 
-Il metodo **INapServerManagement:: UnregisterSystemHealthValidator** viene usato per annullare la registrazione di un servizio di convalida dell'integrità di sistema con il server NAP.
+Il **metodo INapServerManagement::UnregisterSystemHealthValidator** viene usato per annullare la registrazione di un shv con il server protezione accesso alla rete.
 
 ## <a name="syntax"></a>Sintassi
 
@@ -47,23 +47,23 @@ HRESULT UnregisterSystemHealthValidator(
 
 <dl> <dt>
 
-*ID* \[ in\]
+*id* \[ in\]
 </dt> <dd>
 
-Oggetto [**SystemHealthEntityId**](nap-type-constants.md) che contiene l'identificatore univoco del servizio di convalida dell'integrità di cui annullare la registrazione.
+[**SystemHealthEntityId che**](nap-type-constants.md) contiene l'identificatore univoco dell'istanza SHV di cui annullare la registrazione.
 
 </dd> </dl>
 
 ## <a name="return-value"></a>Valore restituito
 
-È possibile che vengano restituiti anche altri codici di errore specifici di COM.
+Possono essere restituiti anche altri codici di errore specifici di COM.
 
 
 
 | Codice restituito                                                                                     | Descrizione                                                        |
 |-------------------------------------------------------------------------------------------------|--------------------------------------------------------------------|
 | <dl> <dt>**S \_ OK**</dt> </dl>           | Operazione riuscita.<br/>                                    |
-| <dl> <dt>**E \_ ACCESSDENIED**</dt> </dl> | Errore delle autorizzazioni, accesso negato.<br/>                       |
+| <dl> <dt>**E \_ ACCESSO NEGATO**</dt> </dl> | Errore di autorizzazione, accesso negato.<br/>                       |
 | <dl> <dt>**E \_ OUTOFMEMORY**</dt> </dl>  | Limite di risorse di sistema. Impossibile eseguire l'operazione.<br/> |
 
 
@@ -72,7 +72,7 @@ Oggetto [**SystemHealthEntityId**](nap-type-constants.md) che contiene l'identif
 
 ## <a name="remarks"></a>Commenti
 
-Se sono presenti chiamate asincrone in sospeso per il servizio di convalida dell'integrità di sistema, verranno completate in un secondo momento e verranno ignorate.
+Se sono presenti chiamate asincrone in sospeso in SHV, verranno completate in un secondo momento e verranno rimosse.
 
 ## <a name="requirements"></a>Requisiti
 
@@ -81,9 +81,9 @@ Se sono presenti chiamate asincrone in sospeso per il servizio di convalida dell
 | Requisito | Valore |
 |-------------------------------------|----------------------------------------------------------------------------------------------------|
 | Client minimo supportato<br/> | Nessuno supportato<br/>                                                                          |
-| Server minimo supportato<br/> | \[Solo app desktop Windows Server 2008\]<br/>                                               |
-| Intestazione<br/>                   | <dl> <dt>NapServerManagement. h</dt> </dl>   |
-| IDL<br/>                      | <dl> <dt>NapServerManagement. idl</dt> </dl> |
+| Server minimo supportato<br/> | Windows Solo app desktop di Server 2008 \[\]<br/>                                               |
+| Intestazione<br/>                   | <dl> <dt>NapServerManagement.h</dt> </dl>   |
+| Idl<br/>                      | <dl> <dt>NapServerManagement.idl</dt> </dl> |
 | DLL<br/>                      | <dl> <dt>Qsvrmgmt.dll</dt> </dl>            |
 
 

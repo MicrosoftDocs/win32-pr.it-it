@@ -1,9 +1,9 @@
 ---
-title: Tipo Vector (HLSL)
+title: Tipo di vettore (HLSL)
 description: Un vettore contiene tra uno e quattro componenti scalari; ogni componente di un vettore deve essere dello stesso tipo.
 ms.assetid: 16e66f3c-c513-4d03-8adf-463dc8d83e12
 keywords:
-- Vettore di tipo HLSL
+- Tipo vettore HLSL
 topic_type:
 - apiref
 api_name:
@@ -12,14 +12,14 @@ api_type:
 - NA
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 76d07da5d22dfb44215f70a7620d6519b5c8a802
-ms.sourcegitcommit: 3d9dce1bd6c84e2b51759e940aa95aa9b459cd20
+ms.openlocfilehash: 2c1ed55fb60e3e7f42418e5bdfea48c1e298af34e9a7d76df17dfa7a021b3f50
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/04/2021
-ms.locfileid: "104995261"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120024241"
 ---
-# <a name="vector-type"></a>Tipo di vettore
+# <a name="vector-type"></a>Tipo vettore
 
 Un vettore contiene tra uno e quattro componenti scalari; ogni componente di un vettore deve essere dello stesso tipo.
 
@@ -46,7 +46,7 @@ TypeComponents Name
 
 | Elemento                                                                                                                             | Descrizione                                                                                                                                                                                                           |
 |----------------------------------------------------------------------------------------------------------------------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| <span id="TypeComponents"></span><span id="typecomponents"></span><span id="TYPECOMPONENTS"></span>**TypeComponents**<br/> | Nome singolo che contiene due parti. La prima parte è uno dei tipi [scalari](dx-graphics-hlsl-data-types.md) . La seconda parte è il numero di componenti, che deve essere compreso tra 1 e 4 inclusi.<br/> |
+| <span id="TypeComponents"></span><span id="typecomponents"></span><span id="TYPECOMPONENTS"></span>**TypeComponents**<br/> | Nome singolo che contiene due parti. La prima parte è uno dei [tipi scalari.](dx-graphics-hlsl-data-types.md) La seconda parte è il numero di componenti, che devono essere compresi tra 1 e 4 inclusi.<br/> |
 | <span id="Name"></span><span id="name"></span><span id="NAME"></span>**Nome**<br/>                                         | Stringa ASCII che identifica in modo univoco il nome della variabile.<br/>                                                                                                                                                |
 
 
@@ -55,7 +55,7 @@ TypeComponents Name
 
 ## <a name="examples"></a>Esempio
 
-Ecco alcuni esempi:
+Di seguito sono riportati alcuni esempi:
 
 
 ```
@@ -66,7 +66,7 @@ float3  fVector = { 0.2f, 0.3f, 0.4f };
 
 
 
-Un vettore può essere dichiarato utilizzando anche questa sintassi:
+Un vettore può essere dichiarato anche usando questa sintassi:
 
 
 ```
@@ -75,7 +75,7 @@ vector <Type, Number> VariableName
 
 
 
-Ecco alcuni esempi:
+Di seguito sono riportati alcuni esempi:
 
 
 ```

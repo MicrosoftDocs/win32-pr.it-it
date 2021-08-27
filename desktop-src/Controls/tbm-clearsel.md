@@ -1,9 +1,9 @@
 ---
-title: Messaggio TBM_CLEARSEL (COMmctrl. h)
-description: Cancella l'intervallo di selezione corrente in un TrackBar.
+title: TBM_CLEARSEL messaggio (Commctrl.h)
+description: Cancella l'intervallo di selezione corrente in un trackbar.
 ms.assetid: ccf69fb7-d616-4a7a-8c7c-7a82827758b1
 keywords:
-- Controlli di Windows Message TBM_CLEARSEL
+- TBM_CLEARSEL di controllo Windows messaggio
 topic_type:
 - apiref
 api_name:
@@ -14,16 +14,16 @@ api_type:
 - HeaderDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: d9d2474f3978dc80b2611bd6b454c45e515ee159
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: 627f2c872b47bf76312856fd81d42bfe8f2739e53efb3c37492b203b150b8e8b
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "103874666"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120046761"
 ---
-# <a name="tbm_clearsel-message"></a>\_Messaggio CLEARSEL TBM
+# <a name="tbm_clearsel-message"></a>Messaggio \_ CLEARSEL TBM
 
-Cancella l'intervallo di selezione corrente in un TrackBar.
+Cancella l'intervallo di selezione corrente in un trackbar.
 
 ## <a name="parameters"></a>Parametri
 
@@ -32,7 +32,7 @@ Cancella l'intervallo di selezione corrente in un TrackBar.
 *wParam* 
 </dt> <dd>
 
-Ridisegni flag. Se questo parametro è **true**, il TrackBar viene ridisegnato dopo la cancellazione della selezione.
+Flag di ridisegno. Se questo parametro è **TRUE,** il trackbar viene ridisegnato dopo che la selezione è stata cancellata.
 
 </dd> <dt>
 
@@ -45,7 +45,7 @@ Nessun valore restituito.
 
 ## <a name="remarks"></a>Commenti
 
-Un TrackBar può avere un intervallo di selezione solo se è stato specificato lo stile [**\_ ENABLESELRANGE di TBS**](trackbar-control-styles.md) quando è stato creato.
+Un trackbar può avere un intervallo di selezione solo se è stato specificato lo stile [**\_ TBS ENABLESELRANGE**](trackbar-control-styles.md) al momento della creazione.
 
 ## <a name="requirements"></a>Requisiti
 
@@ -53,9 +53,9 @@ Un TrackBar può avere un intervallo di selezione solo se è stato specificato l
 
 | Requisito | Valore |
 |-------------------------------------|---------------------------------------------------------------------------------------|
-| Client minimo supportato<br/> | \[Solo app desktop di Windows Vista\]<br/>                                        |
-| Server minimo supportato<br/> | \[Solo app desktop Windows Server 2003\]<br/>                                  |
-| Intestazione<br/>                   | <dl> <dt>Commctrl. h</dt> </dl> |
+| Client minimo supportato<br/> | Windows Solo \[ app desktop Vista\]<br/>                                        |
+| Server minimo supportato<br/> | Windows Solo app desktop di Server 2003 \[\]<br/>                                  |
+| Intestazione<br/>                   | <dl> <dt>Commctrl.h</dt> </dl> |
 
 
 
@@ -69,7 +69,7 @@ Un TrackBar può avere un intervallo di selezione solo se è stato specificato l
 [**TBM \_ SETSEL**](tbm-setsel.md)
 </dt> <dt>
 
-[**\_SEselend TBM**](tbm-setselend.md)
+[**TBM \_ SETSELEND**](tbm-setselend.md)
 </dt> <dt>
 
 [**TBM \_ SETSELSTART**](tbm-setselstart.md)

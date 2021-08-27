@@ -1,7 +1,7 @@
 ---
 description: Funzione proxy per il metodo GetChannelMask.
 ms.assetid: c96e6078-4648-4333-8a25-bcb03a2cd50b
-title: Funzione IWICPixelFormatInfo_GetChannelMask_Proxy
+title: IWICPixelFormatInfo_GetChannelMask_Proxy funzione
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -14,16 +14,16 @@ api_type:
 api_location:
 - Windowscodecs.dll
 - Wincodec.lib
-ms.openlocfilehash: 0db2c14e89aba2b13cb95209b81f6d0da5d9d949
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: ee200dddf0b2cd736ca2ad435b63e774076465ad3d1f6215f1c558f1abb6c194
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "104233543"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120056601"
 ---
-# <a name="iwicpixelformatinfo_getchannelmask_proxy-function"></a>IWICPixelFormatInfo \_ GetChannelMask- \_ funzione proxy
+# <a name="iwicpixelformatinfo_getchannelmask_proxy-function"></a>Funzione proxy IWICPixelFormatInfo \_ GetChannelMask \_
 
-Funzione proxy per il metodo [**GetChannelMask**](/windows/desktop/api/Wincodec/nf-wincodec-iwicpixelformatinfo-getchannelmask) .
+Funzione proxy per il [**metodo GetChannelMask.**](/windows/desktop/api/Wincodec/nf-wincodec-iwicpixelformatinfo-getchannelmask)
 
 ## <a name="syntax"></a>Sintassi
 
@@ -44,56 +44,56 @@ HRESULT IWICPixelFormatInfo_GetChannelMask_Proxy(
 
 <dl> <dt>
 
-*Questa \_ PTR* \[ in\]
+*QUESTO \_ PTR* \[ in\]
 </dt> <dd>
 
-Tipo: **[**IWICPixelFormatInfo**](/windows/desktop/api/Wincodec/nn-wincodec-iwicpixelformatinfo) \** _
+Tipo: **[ **IWICPixelFormatInfo**](/windows/desktop/api/Wincodec/nn-wincodec-iwicpixelformatinfo)\***
 
-Puntatore a questo oggetto [_ *IWICPixelFormatInfo* *](/windows/desktop/api/Wincodec/nn-wincodec-iwicpixelformatinfo) .
+Puntatore a [**questo oggetto IWICPixelFormatInfo.**](/windows/desktop/api/Wincodec/nn-wincodec-iwicpixelformatinfo)
 
 </dd> <dt>
 
-*uiChannelIndex* \[ in\]
+*uiChannelIndex* \[ Pollici\]
 </dt> <dd>
 
-Tipo: **uint**
+Tipo: **UINT**
 
-Indice della maschera di canale da recuperare.
+Indice della channel mask da recuperare.
 
 </dd> <dt>
 
-*cbMaskBuffer* \[ in\]
+*cbMaskBuffer* \[ Pollici\]
 </dt> <dd>
 
-Tipo: **uint**
+Tipo: **UINT**
 
-Dimensioni del buffer *pbMaskBuffer* .
+Dimensioni del buffer *pbMaskBuffer.*
 
 </dd> <dt>
 
-*pbMaskBuffer* \[ in uscita\]
+*pbMaskBuffer* \[ in, out\]
 </dt> <dd>
 
-Tipo: **byte \** _
+Tipo: **\* BYTE**
 
 Puntatore al buffer della maschera.
 
 </dd> <dt>
 
-_pcbActual * \[ out\]
+*pcbActual* \[ Cambio\]
 </dt> <dd>
 
-Tipo: **uint \** _
+Tipo: **UINT \***
 
-Dimensioni effettive del buffer necessarie per ottenere la maschera di canale.
+Dimensioni effettive del buffer necessarie per ottenere la maschera del canale.
 
 </dd> </dl>
 
 ## <a name="return-value"></a>Valore restituito
 
-Tipo: _ *HRESULT**
+Tipo: **HRESULT**
 
-Se questa funzione ha esito positivo, restituisce **S \_ OK**. In caso contrario, restituisce un codice di errore **HRESULT** .
+Se questa funzione ha esito positivo, restituisce **S \_ OK**. In caso contrario, restituisce un **codice di errore HRESULT.**
 
 ## <a name="remarks"></a>Osservazioni
 
@@ -103,9 +103,9 @@ Se questa funzione ha esito positivo, restituisce **S \_ OK**. In caso contrario
 
 | Requisito | Valore |
 |-------------------------------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Client minimo supportato<br/> | Windows XP con SP2, \[ solo app desktop di Windows Vista\]<br/>                                                                                              |
-| Server minimo supportato<br/> | \[Solo app desktop Windows Server 2008\]<br/>                                                                                                             |
-| DLL<br/>                      | <dl> <dt>Windowscodecs.dll; </dt> <dt>Wincodec. lib</dt> </dl> |
+| Client minimo supportato<br/> | Windows XP con SP2, Windows solo \[ app desktop vista\]<br/>                                                                                              |
+| Server minimo supportato<br/> | Windows Solo app desktop di Server 2008 \[\]<br/>                                                                                                             |
+| DLL<br/>                      | <dl> <dt>Windowscodecs.dll; </dt> <dt>Wincodec.lib</dt> </dl> |
 
 
 

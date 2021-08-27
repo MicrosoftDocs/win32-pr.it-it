@@ -14,16 +14,16 @@ api_type:
 api_location:
 - Ndisnpp.dll
 - Rmtnpp.dll
-ms.openlocfilehash: b3a0ce4f230236e276fede528a5e778ecafd51fb
-ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
+ms.openlocfilehash: e6b4d76b3035e156da1f1d4decf7a5c59b28bf0ca13bc2bdaa33e319422509af
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/28/2021
-ms.locfileid: "108113529"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120037551"
 ---
 # <a name="idelaydcgettotalstatistics-method"></a>Metodo IDelaydC::GetTotalStatistics
 
-Il **metodo GetTotalStatistics** recupera le [*statistiche totali per*](t.md) l'acquisizione [*corrente.*](c.md)
+Il **metodo GetTotalStatistics** recupera le [*statistiche*](t.md) totali per l'acquisizione [*corrente.*](c.md)
 
 ## <a name="syntax"></a>Sintassi
 
@@ -51,7 +51,7 @@ Puntatore a una [struttura STATISTICS](statistics.md)che fornisce le statistiche
 *fClearAfterReading* \[ Pollici\]
 </dt> <dd>
 
-Flag usato per indicare Network Monitor come gestire l'archiviazione interna delle statistiche totali. L'impostazione **TRUE** indica Network Monitor cancellare lo spazio di archiviazione interno delle statistiche totali dopo il recupero delle informazioni correnti.
+Flag usato per indicare Network Monitor come gestire l'archiviazione interna delle statistiche totali. L'impostazione **TRUE** indica Network Monitor l'archiviazione interna delle statistiche totali dopo il recupero delle informazioni correnti.
 
 </dd> </dl>
 
@@ -65,9 +65,9 @@ Se il metodo ha esito negativo, il valore restituito è uno dei codici di errore
 
 | Codice restituito                                                                                          | Descrizione                                                                                                                   |
 |------------------------------------------------------------------------------------------------------|-------------------------------------------------------------------------------------------------------------------------------|
-| <dl> <dt>**NMERR \_ NON \_ CONNESSO**</dt> </dl> | Il NPP non è connesso alla rete. Chiamare [IDelaydC::Connect](idelaydc-connect.md) per connettersi alla rete.<br/> |
-| <dl> <dt>**NMERR \_ NON \_ RITARDATO**</dt> </dl>   | Il NPP è connesso alla rete, ma non con il [metodo IDelaydC::Connect.](idelaydc-connect.md)<br/>             |
-| <dl> <dt>**NMERR \_ NON \_ ACQUISISCE**</dt> </dl> | Il NPP non acquisisce dati. Chiamare [IDelaydC::Start](idelaydc-start.md) per avviare l'acquisizione dei dati.<br/>                 |
+| <dl> <dt>**NMERR \_ NON \_ CONNESSO**</dt> </dl> | NPP non è connesso alla rete. Chiamare [IDelaydC::Connessione](idelaydc-connect.md) per connettersi alla rete.<br/> |
+| <dl> <dt>**NMERR \_ NON \_ RITARDATO**</dt> </dl>   | NPP è connesso alla rete, ma non con il [metodo IDelaydC::Connessione.](idelaydc-connect.md)<br/>             |
+| <dl> <dt>**NMERR \_ NON \_ ACQUISISCE**</dt> </dl> | NPP non acquisisce dati. Chiamare [IDelaydC::Start](idelaydc-start.md) per avviare l'acquisizione dei dati.<br/>                 |
 
 
 
@@ -77,7 +77,7 @@ Se il metodo ha esito negativo, il valore restituito è uno dei codici di errore
 
 Questo metodo restituisce i dati solo mentre è in corso un'acquisizione. Quando l'acquisizione viene sospesa, le chiamate a questo metodo non avranno esito positivo.
 
-Network Monitor anche le [*statistiche*](c.md)della conversazione, che possono essere recuperate chiamando il metodo [IDelaydC::GetConversationStatistics.](idelaydc-getconversationstatistics.md)
+Network Monitor archivia anche [*statistiche*](c.md)di conversazione che possono essere recuperate chiamando il metodo [IDelaydC::GetConversationStatistics.](idelaydc-getconversationstatistics.md)
 
 ## <a name="requirements"></a>Requisiti
 
@@ -99,7 +99,7 @@ Network Monitor anche le [*statistiche*](c.md)della conversazione, che possono e
 [IDelaydC](idelaydc.md)
 </dt> <dt>
 
-[IDelaydC::Connect](idelaydc-connect.md)
+[IDelaydC::Connessione](idelaydc-connect.md)
 </dt> <dt>
 
 [IDelaydC::GetConversationStatistics](idelaydc-getconversationstatistics.md)

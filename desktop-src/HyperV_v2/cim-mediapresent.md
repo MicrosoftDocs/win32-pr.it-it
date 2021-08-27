@@ -1,7 +1,7 @@
 ---
-description: Rappresenta una relazione in cui è necessario accedere a un extent di archiviazione tramite un dispositivo di accesso multimediale.
+description: Rappresenta una relazione in cui è necessario accedere a un extent di archiviazione tramite un dispositivo di accesso ai supporti.
 ms.assetid: 436a7e2d-2c14-4058-aca0-669373b8004a
-title: Classe CIM_MediaPresent (gestione Hyper-V)
+title: CIM_MediaPresent classe (gestione di Hyper-V)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -16,16 +16,16 @@ api_type:
 - DllExport
 api_location:
 - vmms.exe
-ms.openlocfilehash: 0e26c36231edaf3ca4b8accf844a3c58b3d70bc7
-ms.sourcegitcommit: c16214e53680dc71d1c07111b51f72b82a4512d8
+ms.openlocfilehash: 6694c945594f0ea5008f6b5f574b84accd338f89a45819a8fb02793bc619ea1f
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/03/2021
-ms.locfileid: "106320467"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120046801"
 ---
-# <a name="cim_mediapresent-class-hyper-v-management"></a>Classe CIM_MediaPresent (gestione Hyper-V)
+# <a name="cim_mediapresent-class-hyper-v-management"></a>CIM_MediaPresent classe (gestione di Hyper-V)
 
-Rappresenta una relazione in cui è necessario accedere a un extent di archiviazione tramite un dispositivo di accesso multimediale.
+Rappresenta una relazione in cui è necessario accedere a un extent di archiviazione tramite un dispositivo di accesso ai supporti.
 
 ## <a name="syntax"></a>Sintassi
 
@@ -41,13 +41,13 @@ class CIM_MediaPresent : CIM_Dependency
 
 ## <a name="members"></a>Members
 
-La classe **CIM \_ MediaPresent** presenta questi tipi di membri:
+La **classe \_ CIM MediaPresent** ha questi tipi di membri:
 
 -   [Proprietà](#properties)
 
 ### <a name="properties"></a>Proprietà
 
-La classe **CIM \_ MediaPresent** dispone di queste proprietà.
+La **classe CIM \_ MediaPresent** ha queste proprietà.
 
 <dl> <dt>
 
@@ -60,10 +60,10 @@ Tipo di dati: **CIM \_ MediaAccessDevice**
 Tipo di accesso: sola lettura
 </dt> <dt>
 
-Qualificatori: [**override**](/windows/desktop/WmiSdk/standard-qualifiers) ("antecedente")
+Qualificatori: [**override**](/windows/desktop/WmiSdk/standard-qualifiers) ("Antecedent")
 </dt> </dl>
 
-Il dispositivo di accesso multimediale.
+Dispositivo di accesso ai supporti.
 
 </dd> <dt>
 
@@ -76,23 +76,23 @@ Tipo di dati: **CIM \_ StorageExtent**
 Tipo di accesso: sola lettura
 </dt> <dt>
 
-Qualificatori: [**override**](/windows/desktop/WmiSdk/standard-qualifiers) ("dipendente")
+Qualificatori: [**override**](/windows/desktop/WmiSdk/standard-qualifiers) ("Dipendente")
 </dt> </dl>
 
-L'extent di archiviazione a cui si accede quando si usa il dispositivo di accesso multimediale.
+Extent di archiviazione a cui si accede quando si usa il dispositivo di accesso ai supporti.
 
 </dd> <dt>
 
-**FixedMedia**
+**Correzione di un problema**
 </dt> <dd> <dl> <dt>
 
-Tipo di dati: **Boolean**
+Tipo di dati: **booleano**
 </dt> <dt>
 
 Tipo di accesso: sola lettura
 </dt> </dl>
 
-**true** se l'extent di archiviazione è fisso nel dispositivo di accesso multimediale e non può essere espulso; in caso contrario, **false**.
+**true** se l'extent di archiviazione è fisso nel dispositivo di accesso ai supporti e non può essere espulso; in caso contrario, **false.**
 
 </dd> </dl>
 
@@ -104,8 +104,8 @@ Tipo di accesso: sola lettura
 |-------------------------------------|---------------------------------------------------------------------------------------------------------|
 | Client minimo supportato<br/> | Windows 8<br/>                                                                                    |
 | Server minimo supportato<br/> | Windows Server 2012<br/>                                                                          |
-| Spazio dei nomi<br/>                | \\Virtualizzazione radice \\ v2<br/>                                                                     |
-| MOF<br/>                      | <dl> <dt>WindowsVirtualization. v2. mof</dt> </dl> |
+| Spazio dei nomi<br/>                | Virtualizzazione \\ radice \\ v2<br/>                                                                     |
+| MOF<br/>                      | <dl> <dt>WindowsVirtualization.V2.mof</dt> </dl> |
 | DLL<br/>                      | <dl> <dt>Vmms.exe</dt> </dl>                     |
 
 
@@ -114,7 +114,7 @@ Tipo di accesso: sola lettura
 
 <dl> <dt>
 
-[**\_Dipendenza CIM**](cim-dependency.md)
+[**Dipendenza \_ CIM**](cim-dependency.md)
 </dt> </dl>
 
  

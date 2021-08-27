@@ -1,9 +1,9 @@
 ---
-title: Funzione MpManagerVersionQuery (MpClient. h)
-description: Restituisce le informazioni sulla versione dei vari componenti di malware Protection Manager.
+title: Funzione MpManagerVersionQuery (MpClient.h)
+description: Restituisce informazioni sulla versione relative ai vari componenti di Malware Protection Manager.
 ms.assetid: 47DE12BF-D7A4-468B-B0E7-79B5C27E56F5
 keywords:
-- Funzionalità dell'ambiente Windows legacy della funzione MpManagerVersionQuery
+- Funzione MpManagerVersionQuery funzionalità dell'Windows legacy
 topic_type:
 - apiref
 api_name:
@@ -14,16 +14,16 @@ api_type:
 - DllExport
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: a841a83d8ceb828de0a5a9cd80f5f5bdc7f5c914
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: b6407f36650b699f6bcdc9cbdd832ff2db38f68e9db758411d42aa5e81564ea4
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "106302068"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120114541"
 ---
-# <a name="mpmanagerversionquery-function"></a>MpManagerVersionQuery (funzione)
+# <a name="mpmanagerversionquery-function"></a>Funzione MpManagerVersionQuery
 
-Restituisce le informazioni sulla versione dei vari componenti di malware Protection Manager.
+Restituisce informazioni sulla versione relative ai vari componenti di Malware Protection Manager.
 
 ## <a name="syntax"></a>Sintassi
 
@@ -41,21 +41,21 @@ HRESULT WINAPI MpManagerVersionQuery(
 
 <dl> <dt>
 
-*hMpHandle* \[ in\]
+*hMpHandle* \[ Pollici\]
 </dt> <dd>
 
 Tipo: **MPHANDLE**
 
-Handle per l'interfaccia di malware Protection Manager. Questo handle viene restituito dalla funzione [**MpManagerOpen**](mpmanageropen.md) .
+Handle per l'interfaccia di Malware Protection Manager. Questo handle viene restituito dalla [**funzione MpManagerOpen.**](mpmanageropen.md)
 
 </dd> <dt>
 
-*pVersionInfo* \[ out\]
+*pVersionInfo* \[ Cambio\]
 </dt> <dd>
 
-Tipo: **PMPVERSION \_ info**
+Tipo: **PMPVERSION \_ INFO**
 
-Puntatore a una struttura che contiene informazioni sulla versione dei vari componenti di malware Protection Manager. Vedere [**MPVERSION \_ info**](mpversion-info.md).
+Puntatore a una struttura che contiene informazioni sulla versione relative ai vari componenti di Malware Protection Manager. Vedere [**MPVERSION \_ INFO**](mpversion-info.md).
 
 </dd> </dl>
 
@@ -65,7 +65,7 @@ Tipo: **HRESULT**
 
 Se la funzione ha esito positivo, il valore restituito è **S \_ OK**.
 
-Se la funzione ha esito negativo, il valore restituito è un codice **HRESULT** non riuscito. Il chiamante può utilizzare la funzione [**MpErrorMessageFormat**](mperrormessageformat.md) per ottenere una descrizione generica del messaggio di errore.
+Se la funzione ha esito negativo, il valore restituito è un codice **HRESULT non** riuscito. Il chiamante può usare la [**funzione MpErrorMessageFormat**](mperrormessageformat.md) per ottenere una descrizione generica del messaggio di errore.
 
 ## <a name="requirements"></a>Requisiti
 
@@ -73,9 +73,9 @@ Se la funzione ha esito negativo, il valore restituito è un codice **HRESULT** 
 
 | Requisito | Valore |
 |-------------------------------------|-----------------------------------------------------------------------------------------|
-| Client minimo supportato<br/> | \[Solo app desktop di Windows 8\]<br/>                                              |
-| Server minimo supportato<br/> | \[Solo app desktop Windows Server 2012\]<br/>                                    |
-| Intestazione<br/>                   | <dl> <dt>MpClient. h</dt> </dl>   |
+| Client minimo supportato<br/> | \[Windows 8 solo app desktop\]<br/>                                              |
+| Server minimo supportato<br/> | \[Windows Server 2012 solo app desktop\]<br/>                                    |
+| Intestazione<br/>                   | <dl> <dt>MpClient.h</dt> </dl>   |
 | DLL<br/>                      | <dl> <dt>MpClient.dll</dt> </dl> |
 
 
@@ -90,7 +90,7 @@ Se la funzione ha esito negativo, il valore restituito è un codice **HRESULT** 
 [**MpManagerOpen**](mpmanageropen.md)
 </dt> <dt>
 
-[**\_informazioni MPVERSION**](mpversion-info.md)
+[**INFORMAZIONI \_ MPVERSION**](mpversion-info.md)
 </dt> </dl>
 
  

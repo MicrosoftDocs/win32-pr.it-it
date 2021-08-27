@@ -1,19 +1,19 @@
 ---
-description: Indica se il file multimediale dispone di un flusso video sferico.
+description: Indica se il file multimediale ha un flusso video sferico.
 ms.assetid: 14d4ea1f-776b-40e4-b55d-1cb8a71c6a99
-title: System. video. unisferico
+title: System.Video.IsSpherical
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: c8dc50f85c64d5e4c7c1f9b54953b4b79536841d
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 79a8e21a43a7f1f0e495c4b031fd86ac419b238f9a03563cfcf2cdbf8db439ae
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104049922"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120058271"
 ---
-# <a name="systemvideoisspherical"></a>System. video. unisferico
+# <a name="systemvideoisspherical"></a>System.Video.IsSpherical
 
-Indica se il file multimediale dispone di un flusso video sferico.
+Indica se il file multimediale ha un flusso video sferico.
 
 ## <a name="windows-10-version-1703"></a>Windows 10 versione 1703
 
@@ -33,7 +33,7 @@ propertyDescription
 
 ## <a name="remarks"></a>Commenti
 
-I valori PKEY sono definiti in Propkey. h.
+I valori PKEY sono definiti in Propkey.h.
 
 ## <a name="related-topics"></a>Argomenti correlati
 
@@ -48,13 +48,13 @@ I valori PKEY sono definiti in Propkey. h.
 [labelInfo](./propdesc-schema-labelinfo.md)
 </dt> <dt>
 
-[typeInfo](./propdesc-schema-typeinfo.md)
+[Typeinfo](./propdesc-schema-typeinfo.md)
 </dt> <dt>
 
 [displayInfo](./propdesc-schema-displayinfo.md)
 </dt> <dt>
 
-[stringFormat](./propdesc-schema-stringformat.md)
+[Stringformat](./propdesc-schema-stringformat.md)
 </dt> <dt>
 
 [booleanFormat](./propdesc-schema-booleanformat.md)
@@ -63,7 +63,7 @@ I valori PKEY sono definiti in Propkey. h.
 [numberFormat](./propdesc-schema-numberformat.md)
 </dt> <dt>
 
-[dateTimeFormat](./propdesc-schema-datetimeformat.md)
+[Datetimeformat](./propdesc-schema-datetimeformat.md)
 </dt> <dt>
 
 [enumeratedList](./propdesc-schema-enumeratedlist.md)

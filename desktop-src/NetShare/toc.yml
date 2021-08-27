@@ -1,10 +1,10 @@
-- name: Gestione delle condivisioni di rete
+- name: Gestione condivisione di rete
   href: network-share-management.md
   items:
-    - name: Informazioni sulla gestione delle condivisioni di rete
+    - name: Informazioni su Gestione condivisione di rete
       href: about-network-share-management.md
       items:
-        - name: Novità della gestione delle condivisioni di rete in Windows Server 2008 R2 e Windows 7
+        - name: Novità di Gestione condivisione di rete in Windows Server 2008 R2 e Windows 7
           href: what-s-new-in-network-share-management-in-windows-server-2008-r2-and-windows-7.md
         - name: Funzioni NetFile
           href: netfile-functions.md
@@ -14,10 +14,10 @@
           href: session-functions.md
         - name: Funzioni statistiche
           href: statistics-functions.md
-    - name: Riferimento alla gestione delle condivisioni di rete
+    - name: Informazioni di riferimento su Gestione condivisione di rete
       href: network-share-management-reference.md
       items:
-        - name: Funzioni di gestione delle condivisioni di rete
+        - name: Funzioni di gestione della condivisione di rete
           href: network-share-management-functions.md
           items:
             - name: NetConnectionEnum
@@ -34,7 +34,7 @@
               href: /windows/desktop/api/Lmshare/nf-lmshare-netsessionenum
             - name: NetSessionGetInfo
               href: /windows/desktop/api/Lmshare/nf-lmshare-netsessiongetinfo
-            - name: Funzione NetShareAdd
+            - name: NetShareAggiungi
               href: /windows/desktop/api/Lmshare/nf-lmshare-netshareadd
             - name: NetShareCheck
               href: /windows/desktop/api/Lmshare/nf-lmshare-netsharecheck
@@ -50,7 +50,7 @@
               href: /windows/desktop/api/Lmshare/nf-lmshare-netsharesetinfo
             - name: NetStatisticsGet
               href: /windows/desktop/api/Lmstats/nf-lmstats-netstatisticsget
-        - name: Strutture di gestione delle condivisioni di rete
+        - name: Strutture di gestione delle condivisine di rete
           href: network-share-management-structures.md
           items:
             - name: CONNECTION_INFO_0

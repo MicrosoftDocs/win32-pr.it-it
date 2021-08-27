@@ -1,9 +1,9 @@
 ---
-title: Messaggio TBM_GETPAGESIZE (COMmctrl. h)
-description: Recupera il numero di posizioni logiche spostate dal dispositivo di scorrimento di TrackBar in risposta all'input da tastiera, ad esempio le chiavi o o l'input del mouse, ad esempio i clic nel canale del TrackBar.
+title: TBM_GETPAGESIZE messaggio (Commctrl.h)
+description: Recupera il numero di posizioni logiche in cui il dispositivo di scorrimento del trackbar si sposta in risposta all'input da tastiera, ad esempio i tasti o , o l'input del mouse, ad esempio i clic nel canale del trackbar.
 ms.assetid: f0c5feac-2723-440e-96c0-dac37b0531ed
 keywords:
-- Controlli di Windows Message TBM_GETPAGESIZE
+- TBM_GETPAGESIZE controlli Windows messaggio
 topic_type:
 - apiref
 api_name:
@@ -14,16 +14,16 @@ api_type:
 - HeaderDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: ac58c0b935b468cf8af565fba2db67c88418ee4f
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: b1aa3ef3412fd00c18972b62d4d868ff1dbc97cb4787693b3746281b4884706e
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "104119822"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120046501"
 ---
-# <a name="tbm_getpagesize-message"></a>\_Messaggio GETPAGESIZE TBM
+# <a name="tbm_getpagesize-message"></a>Messaggio \_ GETPAGESIZE TBM
 
-Recupera il numero di posizioni logiche spostate dal dispositivo di scorrimento di TrackBar in risposta all'input da tastiera, ad esempio le chiavi o o l'input del mouse, ad esempio i clic nel canale del TrackBar. Le posizioni logiche sono gli incrementi interi nell'intervallo compreso tra minimo e massimo per le posizioni del dispositivo di scorrimento.
+Recupera il numero di posizioni logiche in cui il dispositivo di scorrimento del trackbar si sposta in risposta all'input da tastiera, ad esempio i tasti o , o l'input del mouse, ad esempio i clic nel canale del trackbar. Le posizioni logiche sono gli incrementi di interi nell'intervallo tra le posizioni minime e massime del dispositivo di scorrimento del trackbar.
 
 ## <a name="parameters"></a>Parametri
 
@@ -37,11 +37,11 @@ Recupera il numero di posizioni logiche spostate dal dispositivo di scorrimento 
 
 ## <a name="return-value"></a>Valore restituito
 
-Restituisce un valore a 32 bit che specifica le dimensioni di pagina per il TrackBar.
+Restituisce un valore a 32 bit che specifica le dimensioni della pagina per il trackbar.
 
 ## <a name="remarks"></a>Commenti
 
-TrackBar invia anche un messaggio [**WM \_ HSCROLL**](wm-hscroll.md) o [**WM \_ VSCROLL**](wm-vscroll.md) con i \_ codici di notifica TB PAGEUP e TB \_ PGGIÙ alla finestra padre quando riceve l'input della tastiera o del mouse che scorre la pagina.
+Il trackbar invia anche un messaggio [**WM \_ HSCROLL**](wm-hscroll.md) o [**WM \_ VSCROLL**](wm-vscroll.md) con i codici di notifica TB PAGEUP e TB PAGEDOWN alla relativa finestra padre quando riceve l'input da tastiera o mouse che scorre la \_ \_ pagina.
 
 ## <a name="requirements"></a>Requisiti
 
@@ -49,9 +49,9 @@ TrackBar invia anche un messaggio [**WM \_ HSCROLL**](wm-hscroll.md) o [**WM \_ 
 
 | Requisito | Valore |
 |-------------------------------------|---------------------------------------------------------------------------------------|
-| Client minimo supportato<br/> | \[Solo app desktop di Windows Vista\]<br/>                                        |
-| Server minimo supportato<br/> | \[Solo app desktop Windows Server 2003\]<br/>                                  |
-| Intestazione<br/>                   | <dl> <dt>Commctrl. h</dt> </dl> |
+| Client minimo supportato<br/> | Windows Solo \[ app desktop Vista\]<br/>                                        |
+| Server minimo supportato<br/> | Windows Solo app desktop di Server 2003 \[\]<br/>                                  |
+| Intestazione<br/>                   | <dl> <dt>Commctrl.h</dt> </dl> |
 
 
 
@@ -59,7 +59,7 @@ TrackBar invia anche un messaggio [**WM \_ HSCROLL**](wm-hscroll.md) o [**WM \_ 
 
 <dl> <dt>
 
-[**sepagesize TBM \_**](tbm-setpagesize.md)
+[**TBM \_ SETPAGESIZE**](tbm-setpagesize.md)
 </dt> </dl>
 
  

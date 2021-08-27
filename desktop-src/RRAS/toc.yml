@@ -1,11 +1,11 @@
 - name: Routing and Remote Access Service
   href: portal.md
   items:
-    - name: Architettura dei servizi routing e accesso remoto
+    - name: Architettura di routing e Access Services remota
       href: routing-and-remote-access-services-architecture.md
-    - name: Layout del registro di sistema routing e accesso remoto
+    - name: Layout del Registro di sistema di Routing e Accesso remoto
       href: routing-and-remote-access-registry-layout.md
-    - name: Codici di errore di routing e accesso remoto
+    - name: Codici di errore di Routing e Accesso remoto
       href: routing-and-remote-access-error-codes.md
     - name: Accesso remoto
       href: remote-access-start-page.md
@@ -27,19 +27,19 @@
                       href: synchronous-operations.md
                     - name: Operazioni asincrone
                       href: asynchronous-operations.md
-                    - name: File di Phone-Book e informazioni di connessione
+                    - name: Phone-Book file e informazioni di connessione
                       href: phone-book-files-and-connection-information.md
-                    - name: Informazioni di autenticazione utente
+                    - name: Informazioni sull'autenticazione utente
                       href: user-authentication-information.md
                     - name: Altre informazioni di connessione
                       href: other-connection-information.md
                     - name: Stati di connessione
                       href: connection-states.md
-                    - name: Gestori di notifiche
+                    - name: Gestori di notifica
                       href: notification-handlers.md
                     - name: Gestione degli errori RAS
                       href: handling-ras-errors.md
-                    - name: Notifiche informative
+                    - name: Notifiche in tempo reale
                       href: informational-notifications.md
                     - name: Notifiche di completamento
                       href: completion-notifications.md
@@ -53,54 +53,54 @@
                       href: custom-dialers.md
                     - name: Gestione connessione
                       href: connection-manager.md
-                    - name: Script personalizzato RAS
+                    - name: Scripting personalizzato RAS
                       href: ras-custom-scripting.md
                     - name: Connessioni di rete privata virtuale
                       href: virtual-private-network-connections.md
-                    - name: Point-to-Point Protocol su connessioni Ethernet
+                    - name: Point-to-Point Protocol over Ethernet connessioni
                       href: point-to-point-protocol-over-ethernet-connections.md
-                - name: Libri telefonici RAS
+                - name: Documentazione Telefono RAS
                   href: ras-phone-books.md
                   items:
-                    - name: Voci Phone-Book
+                    - name: Phone-Book voci
                       href: phone-book-entries.md
-                    - name: Voci secondarie e connessioni a collegamento multiplo
+                    - name: Voci secondarie e connessioni multilink
                       href: subentries-and-multilink-connections.md
-                - name: Autodial RAS
+                - name: RAS AutoDial
                   href: ras-autodial.md
                   items:
-                    - name: Database di mapping di Autodial
+                    - name: Database di mapping automatico
                       href: autodial-mapping-database.md
-                    - name: Operazioni di connessione con connessione automatica
+                    - name: Operazioni di connessione automatica
                       href: autodial-connection-operations.md
-                - name: Informazioni sulla configurazione e sulla connessione RAS
+                - name: Informazioni di connessione e configurazione RAS
                   href: ras-configuration-and-connection-information.md
                 - name: Amministrazione del server RAS
                   href: ras-server-administration.md
                   items:
-                    - name: Amministrazione account utente RAS
+                    - name: Amministrazione dell'account utente RAS
                       href: ras-user-account-administration.md
                     - name: Amministrazione di server e porte RAS
                       href: ras-server-and-port-administration-ras.md
                     - name: DLL di amministrazione RAS
                       href: ras-administration-dll-ras.md
-                    - name: Configurazione del registro di sistema della DLL di amministrazione RAS
+                    - name: Configurazione del Registro di sistema della DLL di amministrazione RAS
                       href: ras-administration-dll-registry-setup-ras.md
-                - name: Supporto host sicurezza RAS
+                - name: Supporto dell'host di sicurezza RAS
                   href: ras-security-host-support.md
                   items:
                     - name: Registrazione di una DLL di sicurezza RAS
                       href: registering-a-ras-security-dll.md
-                    - name: Autenticazione della sicurezza del server RAS
+                    - name: Autenticazione di sicurezza del server RAS
                       href: ras-server-security-authentication.md
                     - name: Transazione di autenticazione DLL di sicurezza RAS
                       href: ras-security-dll-authentication-transaction.md
             - name: Uso del servizio di accesso remoto
               href: using-remote-access-service.md
               items:
-                - name: Collegamento alla DLL di accesso remoto
+                - name: Collegamento alla DLL di Accesso remoto
                   href: linking-to-the-remote-access-dll.md
-            - name: Riferimento al servizio di accesso remoto
+            - name: Informazioni di riferimento sul servizio di accesso remoto
               href: remote-access-service-reference.md
               items:
                 - name: Tipi di dati del servizio di accesso remoto
@@ -226,7 +226,7 @@
                       href: /windows/desktop/api/Ras/nf-ras-rasseteapuserdataa
                     - name: RasSetEntryDialParams
                       href: /windows/desktop/api/Ras/nf-ras-rassetentrydialparamsa
-                    - name: RasSetEntryProperties
+                    - name: Rassetentryproperties
                       href: /windows/desktop/api/Ras/nf-ras-rassetentrypropertiesa
                     - name: RasSetSubEntryProperties
                       href: /windows/desktop/api/Ras/nf-ras-rassetsubentrypropertiesa
@@ -234,7 +234,7 @@
                       href: /windows/desktop/api/Ras/nf-ras-rasupdateconnection
                     - name: RasValidateEntryName
                       href: /windows/desktop/api/Ras/nf-ras-rasvalidateentrynamea
-                    - name: Funzioni DLL di scripting RAS personalizzate
+                    - name: Funzioni DLL di scripting personalizzate RAS
                       href: ras-custom-scripting-dll-functions.md
                       items:
                         - name: RasCustomScriptExecuteFn
@@ -352,7 +352,7 @@
             - name: Informazioni sull'amministrazione del servizio di accesso remoto
               href: about-remote-access-service-administration.md
               items:
-                - name: 'Confronto tra le funzioni: Windows 2000 e RRAS ridistribuibile'
+                - name: 'Confronto tra funzioni: Windows 2000 e RRAS Redistributable'
                   href: function-comparison-windows-2000-versus-rras-redistributable.md
                 - name: Amministrazione utenti RAS
                   href: ras-user-administration.md
@@ -360,9 +360,9 @@
                   href: ras-server-and-port-administration.md
                 - name: DLL di amministrazione RAS
                   href: ras-administration-dll.md
-                - name: Configurazione del registro di sistema della DLL di amministrazione RAS
+                - name: Configurazione del Registro di sistema della DLL di amministrazione RAS
                   href: ras-administration-dll-registry-setup.md
-            - name: Informazioni di riferimento sull'amministrazione del servizio di accesso remoto
+            - name: Informazioni di riferimento per l'amministrazione del servizio di accesso remoto
               href: remote-access-service-administration-reference.md
               items:
                 - name: Funzioni di amministrazione RAS
@@ -390,7 +390,7 @@
                       href: /windows/desktop/api/Mprapi/nf-mprapi-mpradminportgetinfo
                     - name: MprAdminPortReset
                       href: /windows/desktop/api/Mprapi/nf-mprapi-mpradminportreset
-                    - name: Funzioni DLL RAS amministrazione
+                    - name: Funzioni DELLA DLL di amministrazione RAS
                       href: ras-admin-dll-functions.md
                       items:
                         - name: MprAdminAcceptNewConnection
@@ -431,7 +431,7 @@
                           href: /windows/desktop/api/Mprapi/nf-mprapi-mpradminreleaseipv6addressforuser
                         - name: MprAdminTerminateDll
                           href: /windows/desktop/api/Mprapi/nf-mprapi-mpradminterminatedll
-                    - name: Funzioni di amministrazione utenti RAS
+                    - name: Funzioni di amministrazione utente RAS
                       href: ras-user-administration-functions.md
                       items:
                         - name: MprAdminGetPDCServer
@@ -496,7 +496,7 @@
                       href: /windows/win32/api/Mprapi/ne-mprapi-ras_port_condition
                     - name: RAS_QUARANTINE_STATE
                       href: /windows/win32/api/Mprapi/ne-mprapi-ras_quarantine_state
-            - name: Informazioni di riferimento sull'amministrazione del server RAS
+            - name: Informazioni di riferimento per l'amministrazione del server RAS
               href: ras-server-administration-reference.md
               items:
                 - name: Funzioni di amministrazione del server RAS
@@ -582,7 +582,7 @@
                   items:
                     - name: RAS_PARAMS_FORMAT
                       href: ras-params-format-str.md
-                - name: Unione di amministrazione del server RAS
+                - name: Unione amministrazione server RAS
                   href: ras-server-administration-union.md
                   items:
                     - name: RAS_PARAMS_VALUE
@@ -604,18 +604,18 @@
                   href: components-of-the-router-architecture.md
                 - name: Inizializzazione router
                   href: router-initialization.md
-                - name: Informazioni sulle funzioni di gestione del router
+                - name: Informazioni sulle funzioni di gestione dei router
                   href: understanding-router-management-functions.md
                   items:
-                    - name: Funzioni di interfaccia del router
+                    - name: Funzioni dell'interfaccia router
                       href: router-interface-functions.md
                     - name: Funzioni di gestione router (trasporto)
                       href: router-manager-transport-functions.md
-                    - name: Funzioni client di gestione router (InterfaceTransport)
+                    - name: Funzioni client di Gestione router (InterfaceTransport)
                       href: router-manager-client-interfacetransport-functions.md
-                - name: Informazioni sulle funzioni e le intestazioni delle informazioni di MprInfo
+                - name: Informazioni sulle funzioni MprInfo e sulle intestazioni delle informazioni
                   href: understanding-mprinfo-functions-and-information-headers.md
-                - name: Gestione di client e interfacce router
+                - name: Gestione di interfacce e client router
                   href: managing-router-clients-and-interfaces.md
                   items:
                     - name: Modifica Interface-Specific e informazioni globali per i client
@@ -624,12 +624,12 @@
                       href: deleting-a-client-from-an-interface.md
             - name: Impostazione delle porte L2TP e PPTP del servizio RRAS locale.
               href: setting-l2tp-and-pptp-ports.md
-            - name: Guida di riferimento alla gestione router
+            - name: Informazioni di riferimento sulla gestione dei router
               href: router-management-reference.md
               items:
                 - name: Tipi di dati di gestione router
                   href: router-management-data-types.md
-                - name: Informazioni di riferimento sull'amministrazione del router
+                - name: Riferimento per l'amministrazione del router
                   href: router-administration-reference.md
                   items:
                     - name: Funzioni di amministrazione del router
@@ -721,7 +721,7 @@
                           href: /windows/desktop/api/Mprapi/nf-mprapi-mpradmintransportgetinfo
                         - name: MprAdminTransportSetInfo
                           href: /windows/desktop/api/Mprapi/nf-mprapi-mpradmintransportsetinfo
-                - name: Riferimento alla configurazione del router
+                - name: Informazioni di riferimento sulla configurazione del router
                   href: router-configuration-reference.md
                   items:
                     - name: Funzioni di configurazione del router
@@ -798,7 +798,7 @@
                 - name: Informazioni di riferimento sul router
                   href: router-information-reference.md
                   items:
-                    - name: Funzioni per informazioni sul router
+                    - name: Funzioni relative alle informazioni sul router
                       href: router-information-functions.md
                       items:
                         - name: MprInfoBlockAdd
@@ -819,7 +819,7 @@
                           href: /windows/desktop/api/Mprapi/nf-mprapi-mprinfoduplicate
                         - name: MprInfoRemoveAll
                           href: /windows/desktop/api/Mprapi/nf-mprapi-mprinforemoveall
-                    - name: Strutture di informazioni del router
+                    - name: Strutture di informazioni sui router
                       href: router-information-structures.md
                       items:
                         - name: Strutture di informazioni IP
@@ -831,7 +831,7 @@
                               href: /windows/win32/api/Ipxrtdef/ns-ipxrtdef-ipx_if_info
                             - name: IPXWAN_IF_INFO
                               href: /windows/win32/api/Ipxrtdef/ns-ipxrtdef-ipxwan_if_info
-                    - name: Enumerazioni delle informazioni sul router
+                    - name: Enumerazioni di informazioni sul router
                       href: router-information-enumerations.md
                       items:
                         - name: Tipi di informazioni IP per i blocchi di informazioni del router
@@ -840,7 +840,7 @@
                           href: ipv6-information-types-for-router-information-blocks.md
                         - name: Tipi di informazioni IPX per i blocchi di informazioni del router
                           href: ipx-information-types-for-router-information-blocks.md
-                - name: Strutture di gestione del router
+                - name: Strutture di gestione dei router
                   href: router-management-structures.md
                   items:
                     - name: AUTH_VALIDATION_EX
@@ -925,7 +925,7 @@
                       href: /windows/win32/api/Mprapi/ns-mprapi-sstp_cert_info
                     - name: SSTP_CONFIG_PARAMS
                       href: /windows/win32/api/Mprapi/ns-mprapi-sstp_config_params
-                - name: Enumerazioni di gestione del router
+                - name: Enumerazioni di gestione router
                   href: router-management-enumerations.md
                   items:
                     - name: MPRAPI_OBJECT_TYPE
@@ -934,19 +934,19 @@
                       href: /windows/win32/api/Mprapi/ne-mprapi-router_connection_state
                     - name: ROUTER_INTERFACE_TYPE
                       href: /windows/win32/api/Mprapi/ne-mprapi-router_interface_type
-                    - name: Motivi di non raggiungibilità
+                    - name: Motivi di irraggiungibilità
                       href: unreachability-reasons.md
-        - name: Gestione router e informazioni di base sulla gestione
+        - name: Router Managers and Management Information Base
           href: router-managers-and-management-information-base.md
           items:
             - name: Informazioni sulla gestione dei router con MIB
               href: about-router-management-with-mib.md
-            - name: Uso dell'API MIB di gestione router
+            - name: Uso dell'API MIB gestione router
               href: using-the-router-management-mib-api.md
               items:
-                - name: Acquisizione della tabella delle interfacce MIB II
+                - name: Recupero della tabella delle interfacce II MIB
                   href: obtaining-the-mib-ii-interfaces-table.md
-            - name: Riferimento MIB di gestione router
+            - name: Riferimento MIB gestione router
               href: router-management-mib-reference.md
               items:
                 - name: Funzioni MIB di gestione router
@@ -974,7 +974,7 @@
                       href: /windows/desktop/api/Mprapi/nf-mprapi-mpradminmibserverdisconnect
                     - name: MprAdminMIBSetTrapInfo
                       href: /windows/desktop/api/Mprapi/nf-mprapi-mpradminmibsettrapinfo
-                - name: Costanti di trasporto e di protocollo
+                - name: Costanti di trasporto e protocollo
                   href: transport-and-protocol-constants.md
                   items:
                     - name: Identificatori di protocollo
@@ -984,14 +984,14 @@
     - name: Protocolli di routing
       href: routing-protocols-start-page.md
       items:
-        - name: Richiesta di commenti ai protocolli di routing
+        - name: Richiesta di protocolli di routing per i commenti
           href: routing-protocols-request-for-comments.md
-        - name: Scrittura di un driver per l'acquisizione di frame PPP
+        - name: Scrittura di un driver per acquisire frame PPP
           href: ppp-frame-capture.md
-        - name: Gestione gruppo multicast
+        - name: Multicast Group Manager
           href: multicast-group-manager.md
           items:
-            - name: Informazioni su Gestione gruppi multicast
+            - name: Informazioni su Multicast Group Manager
               href: about-multicast-group-manager.md
               items:
                 - name: Componenti dell'architettura multicast
@@ -1007,15 +1007,15 @@
                       href: multicast-source.md
                     - name: Gruppo multicast
                       href: multicast-group.md
-                    - name: '(s, g), (*, g) e (*, *) coppie'
+                    - name: '(s, g), (*, g) e (*, *) Coppie'
                       href: '-s-g-g-and-pairs.md'
                     - name: Destination
                       href: destination.md
                     - name: Hop successivo
                       href: next-hop.md
-                    - name: Client Gestione gruppi multicast
+                    - name: Client di Gestione gruppi multicast
                       href: multicast-group-manager-client.md
-                    - name: Interazione tra l'architettura multicast
+                    - name: Come si inserisce l'architettura multicast
                       href: how-the-multicast-architecture-fits-together.md
                 - name: Panoramica dei callback MGM
                   href: overview-of-mgm-callbacks.md
@@ -1023,42 +1023,42 @@
                     - name: Callback del protocollo di routing
                       href: routing-protocol-callbacks.md
                       items:
-                        - name: Callback di avviso di join
+                        - name: Join Alert Callbacks
                           href: join-alert-callbacks.md
-                        - name: Richiamate avviso di eliminazione
+                        - name: Eliminare i callback degli avvisi
                           href: prune-alert-callbacks.md
-                        - name: Callback di join locali
+                        - name: Callback di join locale
                           href: local-join-callbacks.md
-                        - name: Callback di uscita locale
+                        - name: Callback di lasciare locale
                           href: local-leave-callbacks.md
-                        - name: Callback di avviso di interfaccia errato
+                        - name: Callback di avviso di interfaccia non corretto
                           href: wrong-interface-alert-callbacks.md
-                        - name: Callback di avviso RPF
+                        - name: Callback degli avvisi RPF
                           href: rpf-alert-callbacks.md
-                    - name: Abilitazione e disabilitazione di callback IGMP
+                    - name: Abilitare e disabilitare i callback IGMP
                       href: igmp-enable-and-disable-callbacks.md
-            - name: Utilizzo di gestione gruppi multicast
+            - name: Utilizzo di Gestione gruppi multicast
               href: using-the-multicast-group-manager.md
               items:
                 - name: Considerazioni sulla programmazione MGM
                   href: mgm-programming-considerations.md
-                - name: Scenario protocollo di routing multicast
+                - name: Scenario del protocollo di routing multicast
                   href: multicast-routing-protocol-scenario.md
                   items:
                     - name: Avvio di un protocollo di routing multicast
                       href: starting-up-a-multicast-routing-protocol.md
-                    - name: Gruppi e callback di elaborazione
+                    - name: Elaborazione di gruppi e callback
                       href: processing-groups-and-callbacks.md
-                    - name: Enumerazione dei gruppi
+                    - name: Enumerazione di gruppi
                       href: enumerating-groups.md
-                    - name: Chiusura di un protocollo di routing multicast
+                    - name: Arresto di un protocollo di routing multicast
                       href: shutting-down-a-multicast-routing-protocol.md
                 - name: Scenario di applicazione amministrativa
                   href: administrative-application-scenario.md
-            - name: Guida di riferimento a gestione gruppi multicast
+            - name: Informazioni di riferimento su Gestione gruppi multicast
               href: multicast-group-manager-reference.md
               items:
-                - name: Funzioni di gestione gruppi multicast
+                - name: Funzioni di gestione del gruppo multicast
                   href: multicast-group-manager-functions.md
                   items:
                     - name: MgmAddGroupMembershipEntry
@@ -1095,7 +1095,7 @@
                       href: /windows/desktop/api/Mgm/nf-mgm-mgmsetmfe
                     - name: MgmTakeInterfaceOwnership
                       href: /windows/desktop/api/Mgm/nf-mgm-mgmtakeinterfaceownership
-                - name: Callback di gestione gruppi multicast
+                - name: Callback di Gestione gruppi multicast
                   href: multicast-group-manager-callbacks.md
                   items:
                     - name: PMGM_CREATION_ALERT_CALLBACK
@@ -1116,7 +1116,7 @@
                       href: /windows/desktop/api/Mgm/nc-mgm-pmgm_rpf_callback
                     - name: PMGM_WRONG_IF_CALLBACK
                       href: /windows/desktop/api/Mgm/nc-mgm-pmgm_wrong_if_callback
-                - name: Strutture di gestione gruppi multicast
+                - name: Strutture di Gestione gruppi multicast
                   href: multicast-group-manager-structures.md
                   items:
                     - name: MGM_IF_ENTRY
@@ -1125,7 +1125,7 @@
                       href: /windows/win32/api/Mgm/ns-mgm-routing_protocol_config
                     - name: SOURCE_GROUP_ENTRY
                       href: /windows/win32/api/Mgm/ns-mgm-source_group_entry
-                - name: Enumerazioni di gestione gruppi multicast
+                - name: Enumerazioni di Group Manager multicast
                   href: multicast-group-manager-enumerations.md
                   items:
                     - name: MGM_ENUM_TYPES
@@ -1142,10 +1142,10 @@
                   href: interfaces.md
                 - name: Route statiche e autostatiche
                   href: static-and-autostatic-routes.md
-            - name: Guida di riferimento all'interfaccia del protocollo di routing
+            - name: Informazioni di riferimento per l'interfaccia del protocollo di routing
               href: routing-protocol-interface-reference.md
               items:
-                - name: Funzioni di interfaccia del protocollo di routing
+                - name: Funzioni dell'interfaccia del protocollo di routing
                   href: routing-protocol-interface-functions.md
                   items:
                     - name: PADD_INTERFACE
@@ -1202,7 +1202,7 @@
                       href: /windows/desktop/api/Routprot/nc-routprot-pstart_protocol
                     - name: PSTOP_PROTOCOL
                       href: /windows/desktop/api/Routprot/nc-routprot-pstop_protocol
-                - name: Strutture di interfaccia del protocollo di routing
+                - name: Strutture dell'interfaccia del protocollo di routing
                   href: routing-protocol-interface-structures.md
                   items:
                     - name: MESSAGGIO
@@ -1213,14 +1213,14 @@
                       href: /windows/win32/api/stm/ns-stm-mpr40_service_characteristics
                     - name: UPDATE_COMPLETE_MESSAGE
                       href: /windows/win32/api/Routprot/ns-routprot-update_complete_message
-                    - name: Informazioni di riferimento sulle funzioni di supporto
+                    - name: Informazioni di riferimento su funzioni di supporto
                       href: support-functions-reference.md
                       items:
                         - name: SUPPORT_FUNCTIONS
                           href: /windows/win32/api/Routprot/ns-routprot-support_functions_50
                         - name: DemandDialRequest
                           href: /previous-versions/windows/desktop/legacy/aa373924(v=vs.85)
-                        - name: MIBEntryCreate
+                        - name: MIBEntryCrea
                           href: //previous-versions/windows/desktop/legacy/aa374538(v=vs.85)
                         - name: MIBEntryDelete
                           href: /previous-versions/windows/desktop/legacy/aa374539(v=vs.85)
@@ -1236,10 +1236,10 @@
                           href: /previous-versions/windows/desktop/legacy/aa382181(v=vs.85)
                         - name: ValidateRoute
                           href: /previous-versions/windows/desktop/legacy/aa382342(v=vs.85)
-                - name: Gestione tabella dei servizi IPX
+                - name: Gestione tabelle del servizio IPX
                   href: ipx-service-table-management.md
                   items:
-                    - name: Funzioni di gestione tabella dei servizi
+                    - name: Funzioni di gestione delle tabelle dei servizi
                       href: service-table-management-functions.md
                       items:
                         - name: PBLOCK_CONVERT_SERVICES_TO_STATIC
@@ -1264,7 +1264,7 @@
                           href: /windows/desktop/api/Stm/nc-stm-pget_service_count
                         - name: PIS_SERVICE
                           href: /windows/desktop/api/Stm/nc-stm-pis_service
-                    - name: Strutture di gestione tabella dei servizi
+                    - name: Strutture di gestione delle tabelle dei servizi
                       href: service-table-management-structures.md
                       items:
                         - name: IPX_SERVER_ENTRY
@@ -1274,17 +1274,17 @@
         - name: Gestione tabelle di routing versione 1
           href: routing-table-manager-version-1.md
           items:
-            - name: Informazioni su Routing Table Manager versione 1
+            - name: Informazioni su Gestione tabelle di routing versione 1
               href: about-routing-table-manager-version-1.md
               items:
-                - name: Tabelle di route e voci della tabella di route
+                - name: Tabelle di route e voci di tabelle di route
                   href: route-tables-and-route-table-entries.md
                 - name: Modifiche alla route migliore a una rete
                   href: changes-to-the-best-route-to-a-network.md
-            - name: Riferimento di gestione tabelle di routing versione 1
+            - name: Informazioni di riferimento su Gestione tabelle di routing versione 1
               href: routing-table-manager-version-1-reference.md
               items:
-                - name: Funzioni di Routing Table Manager versione 1
+                - name: Funzioni di Gestione tabelle di routing versione 1
                   href: routing-table-manager-version-1-functions.md
                   items:
                     - name: RtmAddRoute
@@ -1315,7 +1315,7 @@
                       href: rtmisroute.md
                     - name: RtmRegisterClient
                       href: rtmregisterclient.md
-                - name: Strutture di gestione tabelle di routing versione 1
+                - name: Strutture di Gestione tabelle di routing versione 1
                   href: routing-table-manager-version-1-structures.md
                   items:
                     - name: IP_NETWORK
@@ -1332,7 +1332,7 @@
                       href: ipx-specific-data.md
                     - name: PROTOCOL_SPECIFIC_DATA
                       href: protocol-specific-data.md
-                    - name: Identificatori della famiglia di protocolli di Routing Table Manager versione 1
+                    - name: Identificatori della famiglia di protocolli di Gestione tabelle di routing versione 1
                       href: routing-table-manager-version-1-protocol-family-identifiers.md
                     - name: RTM_IP_ROUTE
                       href: rtm-ip-route.md
@@ -1341,10 +1341,10 @@
         - name: Gestione tabelle di routing versione 2
           href: routing-table-manager-version-2.md
           items:
-            - name: Informazioni su Routing Table Manager versione 2
+            - name: Informazioni su Gestione tabelle di routing versione 2
               href: about-routing-table-manager-version-2.md
               items:
-                - name: Componenti dell'architettura di gestione tabelle di routing
+                - name: Componenti dell'architettura di Gestione tabelle di routing
                   href: components-of-the-routing-table-manager-architecture.md
                   items:
                     - name: Router
@@ -1359,7 +1359,7 @@
                       href: forwarder.md
                     - name: Gestione tabelle di routing
                       href: routing-table-manager.md
-                    - name: Istanza di gestione tabelle di routing
+                    - name: Istanza di Gestione tabelle di routing
                       href: routing-table-manager-instance.md
                     - name: Famiglia di indirizzi
                       href: address-family.md
@@ -1372,46 +1372,46 @@
                       items:
                         - name: Destinazioni
                           href: destinations.md
-                        - name: Route e migliore route
+                        - name: Route e percorso migliore
                           href: routes-and-the-best-route.md
                         - name: Hop successivi
                           href: next-hops.md
-                    - name: Interazione tra l'architettura di gestione tabelle di routing
+                    - name: Come si inserisce l'architettura di Gestione tabelle di routing
                       href: how-the-routing-table-manager-architecture-fits-together.md
-                - name: Registrazione con gestione tabelle di routing
+                - name: Registrazione con Gestione tabelle di routing
                   href: registering-with-the-routing-table-manager.md
-                - name: Enumerazione delle entità registrate
+                - name: Enumerazione di entità registrate
                   href: enumerating-registered-entities.md
-                - name: Metodi using
+                - name: Uso dei metodi
                   href: using-methods.md
-                - name: Utilizzo di puntatori opachi
+                - name: Uso di puntatori opachi
                   href: using-opaque-pointers.md
                   items:
-                    - name: Accesso a puntatori opachi
+                    - name: Accesso ai puntatori opachi
                       href: accessing-opaque-pointers.md
-                - name: Contrassegno delle route per lo stato Hold-Down
+                - name: Contrassegno delle route per lo Hold-Down stato
                   href: marking-routes-for-the-hold-down-state.md
                 - name: Aggiunta di route
                   href: adding-routes.md
-                - name: Recupero delle informazioni sulla Route
+                - name: Recupero delle informazioni sulla route
                   href: retrieving-route-information.md
-                - name: Aggiornamento di route
+                - name: Aggiornamento delle route
                   href: updating-routes.md
                   items:
-                    - name: Aggiornamento di route con RtmAddRouteToDest
+                    - name: Aggiornamento delle route tramite RtmAddRouteToDest
                       href: updating-routes-using-rtmaddroutetodest.md
-                    - name: Aggiornamento delle route sul posto mediante RtmUpdateAndUnlockRoute
+                    - name: Aggiornamento delle route sul posto tramite RtmUpdateAndUnlockRoute
                       href: updating-routes-in-place-using-rtmupdateandunlockroute.md
-                - name: Ricezione di notifiche di modifiche
+                - name: Ricezione di notifiche delle modifiche
                   href: receiving-notification-of-changes.md
                   items:
                     - name: Registrazione per la notifica delle modifiche
                       href: registering-for-change-notification.md
                     - name: Recupero delle modifiche
                       href: retrieving-changes.md
-                    - name: Recupero dello stato delle modifiche e delle modifiche ignorate
+                    - name: Recupero dello stato delle modifiche e ignorare le modifiche
                       href: retrieving-change-status-and-ignoring-changes.md
-                - name: Utilizzo degli hop successivi
+                - name: Uso degli hop successivi
                   href: working-with-next-hops.md
                 - name: Enumerazione delle voci della tabella di routing
                   href: enumerating-routing-table-entries.md
@@ -1420,47 +1420,47 @@
                   items:
                     - name: Recupero di informazioni
                       href: retrieving-information.md
-                - name: Gestione degli elenchi di Client-Specific
+                - name: Gestione degli Client-Specific personalizzati
                   href: maintaining-client-specific-lists.md
                 - name: Gestione degli handle
                   href: managing-handles.md
-            - name: Utilizzo di gestione tabelle di routing versione 2
+            - name: Uso di Gestione tabelle di routing versione 2
               href: using-routing-table-manager-version-2.md
               items:
-                - name: Problemi di programmazione di RTMv2
+                - name: Problemi di programmazione RTMv2
                   href: rtmv2-programming-issues.md
-                - name: Eseguire la registrazione con gestione tabelle di routing
+                - name: Eseguire la registrazione con Gestione tabelle di routing
                   href: register-with-the-routing-table-manager.md
                 - name: Enumerare le entità registrate
                   href: enumerate-the-registered-entities.md
                 - name: Ottenere e chiamare i metodi esportati per un client
                   href: obtain-and-call-the-exported-methods-for-a-client.md
-                - name: Registra per notifica modifiche
+                - name: Registrarsi per la notifica delle modifiche
                   href: register-for-change-notification.md
-                - name: Aggiungere e aggiornare le route con RtmAddRouteToDest
+                - name: Aggiungere e aggiornare route tramite RtmAddRouteToDest
                   href: add-and-update-routes-using-rtmaddroutetodest.md
                 - name: Aggiornare una route sul posto usando RtmUpdateAndUnlockRoute
                   href: update-a-route-in-place-using-rtmupdateandunlockroute.md
-                - name: USA lo stato di Hold-Down Route
+                - name: Usare lo stato Hold-Down route
                   href: use-the-route-hold-down-state.md
-                - name: Enumera tutte le destinazioni
+                - name: Enumerare tutte le destinazioni
                   href: enumerate-all-destinations.md
-                - name: Enumera tutte le route
+                - name: Enumerare tutte le route
                   href: enumerate-all-routes.md
-                - name: Cerca la route migliore
+                - name: Cercare la route migliore
                   href: search-for-the-best-route.md
-                - name: Cercare le route usando un albero di prefisso
+                - name: Cercare route usando un albero di prefissi
                   href: search-for-routes-using-rtmgetmostspecificdestination-and-rtmgetlessspecificdestination.md
                 - name: Accedere al puntatore opaco in una destinazione
                   href: access-the-opaque-pointer-in-a-destination.md
-                - name: Usare un elenco di route Client-Specific
+                - name: Usare un elenco Client-Specific route
                   href: use-a-client-specific-route-list.md
-                - name: USA callback di notifica degli eventi
+                - name: Usare il callback di notifica degli eventi
                   href: use-the-event-notification-callback.md
-            - name: Guida di riferimento a gestione tabelle di routing versione 2
+            - name: Informazioni di riferimento su Gestione tabelle di routing versione 2
               href: routing-table-manager-version-2-reference.md
               items:
-                - name: Funzioni di Routing Table Manager versione 2
+                - name: Funzioni di Gestione tabelle di routing versione 2
                   href: routing-table-manager-version-2-functions.md
                   items:
                     - name: RtmAddNextHop
@@ -1577,14 +1577,14 @@
                       href: /windows/desktop/api/Rtmv2/nf-rtmv2-rtmreleaseroutes
                     - name: RtmUpdateAndUnlockRoute
                       href: /windows/desktop/api/Rtmv2/nf-rtmv2-rtmupdateandunlockroute
-                - name: Callback di gestione tabelle di routing versione 2
+                - name: Callback di Gestione tabelle di routing versione 2
                   href: routing-table-manager-version-2-callbacks.md
                   items:
                     - name: _ENTITY_METHOD
                       href: /windows/desktop/api/Rtmv2/nc-rtmv2-_entity_method
                     - name: _EVENT_CALLBACK
                       href: /windows/desktop/api/Rtmv2/nc-rtmv2-_event_callback
-                - name: Strutture di gestione tabelle di routing versione 2
+                - name: Strutture di Gestione tabelle di routing versione 2
                   href: routing-table-manager-version-2-structures.md
                   items:
                     - name: RTM_DEST_INFO
@@ -1611,7 +1611,7 @@
                       href: /windows/win32/api/Rtmv2/ns-rtmv2-rtm_regn_profile
                     - name: RTM_ROUTE_INFO
                       href: /windows/win32/api/Rtmv2/ns-rtmv2-rtm_route_info
-                - name: Macro di Routing Table Manager versione 2
+                - name: Macro di Gestione tabelle di routing versione 2
                   href: routing-table-manager-version-2-macros.md
                   items:
                     - name: RTM_IPV4_GET_ADDR_AND_LEN
@@ -1632,27 +1632,27 @@
                       href: /windows/desktop/api/Rtmv2/nf-rtmv2-rtm_size_of_dest_info
                     - name: RTM_SIZE_OF_ROUTE_INFO
                       href: /windows/desktop/api/Rtmv2/nf-rtmv2-rtm_size_of_route_info
-                - name: Costanti di routing di gestione tabelle versione 2
+                - name: Costanti di Gestione tabelle di routing versione 2
                   href: routing-table-manager-version-2-constants.md
                   items:
                     - name: Flag di notifica delle modifiche
                       href: change-notification-flags.md
                     - name: Flag di enumerazione
                       href: enumeration-flags.md
-                    - name: Flag di hop successivo
+                    - name: Flag hop successivo
                       href: next-hop-flags.md
                     - name: Flag di route
                       href: route-flags.md
-                    - name: Flag di query tabella di routing
+                    - name: Flag di query della tabella di routing
                       href: routing-table-query-flags.md
-                    - name: Visualizza flag
+                    - name: Flag di visualizzazione
                       href: view-flags.md
-                - name: Enumerazioni di gestione tabelle di routing versione 2
+                - name: Enumerazioni di Gestione tabelle di routing versione 2
                   href: routing-table-manager-version-2-enumerations.md
                   items:
                     - name: RTM_EVENT_TYPE
                       href: /windows/win32/api/Rtmv2/ne-rtmv2-rtm_event_type
-                - name: Tipi di dati semplici di Routing Table Manager versione 2
+                - name: Tipi di dati semplici di Gestione tabelle di routing versione 2
                   href: routing-table-manager-version-2-simple-data-types.md
     - name: Glossario
       href: glossary.md

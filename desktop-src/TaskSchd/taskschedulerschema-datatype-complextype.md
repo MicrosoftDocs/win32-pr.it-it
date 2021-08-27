@@ -1,9 +1,9 @@
 ---
-title: tipo complesso dataType (Utilità di pianificazione)
+title: Tipo complesso dataType (Utilità di pianificazione)
 description: Definisce un tipo di base.
 ms.assetid: 1f9013fd-b59c-48f6-9de2-a2e7e2bf3d23
 keywords:
-- tipo complesso dataType Utilità di pianificazione
+- Tipo complesso dataType Utilità di pianificazione
 topic_type:
 - apiref
 api_name:
@@ -13,14 +13,14 @@ api_type:
 ms.topic: reference
 ms.date: 05/31/2018
 api_location: ''
-ms.openlocfilehash: 6ed4c20f6f714b0e99e2d4a6649b3960b0e5803e
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: e34c6a4a595051083ea79b1c187427fba0fe43919b1fea33973fb3b2a72829e2
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "106302004"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120125861"
 ---
-# <a name="datatype-complex-type-task-scheduler"></a>tipo complesso dataType (Utilità di pianificazione)
+# <a name="datatype-complex-type-task-scheduler"></a>Tipo complesso dataType (Utilità di pianificazione)
 
 Definisce un tipo di base.
 
@@ -40,8 +40,8 @@ Definisce un tipo di base.
 
 | Requisito | Valore |
 |-------------------------------------|------------------------------------------------------|
-| Client minimo supportato<br/> | \[Solo app desktop di Windows Vista\]<br/>       |
-| Server minimo supportato<br/> | \[Solo app desktop Windows Server 2008\]<br/> |
+| Client minimo supportato<br/> | Windows Solo \[ app desktop di Vista\]<br/>       |
+| Server minimo supportato<br/> | Windows Solo app desktop server 2008 \[\]<br/> |
 
 
 
@@ -49,7 +49,7 @@ Definisce un tipo di base.
 
 <dl> <dt>
 
-[Tipi complessi dello schema Utilità di pianificazione](task-scheduler-schema-complex-types.md)
+[Utilità di pianificazione complessi dello schema](task-scheduler-schema-complex-types.md)
 </dt> <dt>
 
 [Utilità di pianificazione](task-scheduler-start-page.md)

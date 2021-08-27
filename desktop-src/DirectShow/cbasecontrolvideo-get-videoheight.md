@@ -1,7 +1,7 @@
 ---
-description: Il \_ metodo Get VideoHeight recupera l'altezza del video nativo.
+description: Il metodo get \_ VideoHeight recupera l'altezza del video nativo.
 ms.assetid: f33ba789-f9c6-47f1-879b-241bfdc72010
-title: Metodo CBaseControlVideo.get_VideoHeight (Ctlutil. h)
+title: CBaseControlVideo.get_VideoHeight metodo (Ctlutil.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -16,14 +16,14 @@ api_location:
 - Strmbase.dll
 - Strmbasd.lib
 - Strmbasd.dll
-ms.openlocfilehash: 4e738636cecd8031962ae31ebf54ac258d868013
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: 31a7ca4b87a9196a8b59ec00cdc0e458855fa1db4e1e8f7b5bfd233924475519
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "106327556"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120057081"
 ---
-# <a name="cbasecontrolvideoget_videoheight-method"></a>Metodo CBaseControlVideo. Get \_ VideoHeight
+# <a name="cbasecontrolvideoget_videoheight-method"></a>Metodo CBaseControlVideo.get \_ VideoHeight
 
 Il `get_VideoHeight` metodo recupera l'altezza del video nativo.
 
@@ -45,17 +45,17 @@ HRESULT get_VideoHeight(
 *pVideoHeight* 
 </dt> <dd>
 
-Puntatore all'altezza, in pixel, del video nativo.
+Puntatore all'altezza del video nativo, in pixel.
 
 </dd> </dl>
 
 ## <a name="return-value"></a>Valore restituito
 
-Restituisce NOERROR se ha esito positivo o E \_ OutOfMemory se la memoria disponibile non è sufficiente.
+Restituisce NOERROR in caso di esito positivo o E \_ OUTOFMEMORY se la memoria disponibile non è sufficiente.
 
 ## <a name="remarks"></a>Commenti
 
-Questa funzione membro implementa il metodo [**IBasicVideo:: Get \_ VideoHeight**](/windows/desktop/api/Control/nf-control-ibasicvideo-get_videoheight) . Chiama il CBaseControlVideo virtuale pure [**:: GetVideoFormat**](cbasecontrolvideo-getvideoformat.md) per recuperare la struttura [**VIDEOINFOHEADER**](/previous-versions/windows/desktop/api/amvideo/ns-amvideo-videoinfoheader) dalla classe derivata.
+Questa funzione membro implementa il [**metodo IBasicVideo::get \_ VideoHeight.**](/windows/desktop/api/Control/nf-control-ibasicvideo-get_videoheight) Chiama la classe [**virtuale pura CBaseControlVideo::GetVideoFormat**](cbasecontrolvideo-getvideoformat.md) per recuperare la [**struttura VIDEOINFOHEADER**](/previous-versions/windows/desktop/api/amvideo/ns-amvideo-videoinfoheader) dalla classe derivata.
 
 ## <a name="requirements"></a>Requisiti
 
@@ -63,8 +63,8 @@ Questa funzione membro implementa il metodo [**IBasicVideo:: Get \_ VideoHeight*
 
 | Requisito | Valore |
 |--------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Intestazione<br/>  | <dl> <dt>Ctlutil. h (include Streams. h)</dt> </dl>                                                                                   |
-| Libreria<br/> | <dl> <dt>Strmbase. lib (compilazioni finali); </dt> <dt>Strmbasd. lib (build di debug)</dt> </dl> |
+| Intestazione<br/>  | <dl> <dt>Ctlutil.h (includere Flussi.h)</dt> </dl>                                                                                   |
+| Libreria<br/> | <dl> <dt>Strmbase.lib (build di vendita al dettaglio); </dt> <dt>Strmbasd.lib (build di debug)</dt> </dl> |
 
 
 

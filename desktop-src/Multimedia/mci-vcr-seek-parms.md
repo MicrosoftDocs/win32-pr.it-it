@@ -1,9 +1,9 @@
 ---
-title: Struttura MCI_VCR_SEEK_PARMS (VCR. h)
-description: La \_ struttura parametri di MCI VCR \_ Seek \_ contiene i parametri per il \_ comando di ricerca MCI per i registratori di nastri video.
+title: MCI_VCR_SEEK_PARMS struttura (Vcr.h)
+description: La struttura MCI VCR SEEK PARMS contiene i parametri \_ \_ per il comando \_ MCI SEEK per i \_ registratori di videocassette.
 ms.assetid: 40a9cef0-abdb-4698-b11e-5c3f67ea846b
 keywords:
-- Struttura MCI_VCR_SEEK_PARMS di Windows Multimedia
+- MCI_VCR_SEEK_PARMS struttura Windows Multimediali
 topic_type:
 - apiref
 api_name:
@@ -14,16 +14,16 @@ api_type:
 - HeaderDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 302011a3e4bf10eb3a81db4a163f94f4322dea98
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: ee25352925681ef548310d9e009808499ce0a36f80472e50ee2a0daa71ed8dd3
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "104476006"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120038201"
 ---
-# <a name="mci_vcr_seek_parms-structure"></a>\_ \_ Struttura parametri di ricerca VCR MCI \_
+# <a name="mci_vcr_seek_parms-structure"></a>Struttura MCI \_ VCR \_ SEEK \_ PARMS
 
-La struttura **parametri di MCI \_ VCR \_ Seek \_** contiene i parametri per il comando di [**\_ ricerca MCI**](mci-seek.md) per i registratori di nastri video.
+La **struttura MCI \_ VCR SEEK \_ \_ PARMS** contiene i parametri per il [**comando MCI \_ SEEK**](mci-seek.md) per i registratori di videocassette.
 
 ## <a name="syntax"></a>Sintassi
 
@@ -46,7 +46,7 @@ typedef struct tagMCI_VCR_SEEK_PARMS {
 **dwCallback**
 </dt> <dd>
 
-La parola di ordine inferiore specifica un handle di finestra utilizzato per il \_ flag di notifica MCI.
+La parola più bassa specifica un handle di finestra utilizzato per il flag MCI \_ NOTIFY.
 
 </dd> <dt>
 
@@ -73,9 +73,9 @@ Ora di inizio della ricerca.
 
 ## <a name="remarks"></a>Commenti
 
-Le posizioni vengono specificate nel formato ora corrente.
+Le posizioni vengono specificate nel formato di ora corrente.
 
-Quando si assegnano dati ai membri di questa struttura, impostare i flag corrispondenti nel parametro *fdwCommand* della funzione [**mciSendCommand**](/previous-versions//dd757160(v=vs.85)) per convalidare i membri.
+Quando si assegnano dati ai membri di questa struttura, impostare i flag corrispondenti nel parametro *fdwCommand* della [**funzione mciSendCommand**](/previous-versions//dd757160(v=vs.85)) per convalidare i membri.
 
 ## <a name="requirements"></a>Requisiti
 
@@ -85,7 +85,7 @@ Quando si assegnano dati ai membri di questa struttura, impostare i flag corrisp
 |-------------------------------------|----------------------------------------------------------------------------------|
 | Client minimo supportato<br/> | Windows 2000 Professional \[solo app desktop\]<br/>                       |
 | Server minimo supportato<br/> | Windows 2000 Server \[solo app desktop\]<br/>                             |
-| Intestazione<br/>                   | <dl> <dt>VCR. h</dt> </dl> |
+| Intestazione<br/>                   | <dl> <dt>Vcr.h</dt> </dl> |
 
 
 
@@ -93,13 +93,13 @@ Quando si assegnano dati ai membri di questa struttura, impostare i flag corrisp
 
 <dl> <dt>
 
-[**MCI**](mci.md)
+[**Mci**](mci.md)
 </dt> <dt>
 
 [**Strutture MCI**](mci-structures.md)
 </dt> <dt>
 
-[**\_ricerca MCI**](mci-seek.md)
+[**MCI \_ SEEK**](mci-seek.md)
 </dt> <dt>
 
 [**mciSendCommand**](/previous-versions//dd757160(v=vs.85))

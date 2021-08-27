@@ -1,29 +1,29 @@
 ---
-title: Scelta del tipo di handle di associazione da usare
-description: Scelta del tipo di handle di associazione da usare
+title: Scelta del tipo di handle di associazione da utilizzare
+description: Scelta del tipo di handle di associazione da utilizzare
 ms.assetid: b0c2c71d-c6c9-4a58-83f9-10ac9b6b214b
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 2dd07716b3618766b3ea8aa07fb766f154285207
-ms.sourcegitcommit: 2d531328b6ed82d4ad971a45a5131b430c5866f7
+ms.openlocfilehash: afd35286a5bb88be3094238e0e4c43b701826bca0a7e5ad02d35c5f87f0cbdaa
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "104044428"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120022921"
 ---
-# <a name="choosing-the-type-of-binding-handles-to-use"></a>Scelta del tipo di handle di associazione da usare
+# <a name="choosing-the-type-of-binding-handles-to-use"></a>Scelta del tipo di handle di associazione da utilizzare
 
-**Procedura consigliata:** Se si sa quale server sarà utilizzato dall'applicazione, utilizzare handle espliciti. In caso contrario, utilizzare il costrutto di handle espliciti ogni volta oppure utilizzare handle generici con routine **\_ Bind** e **\_ UNBIND** .
+**Procedura consigliata:** Se si conosce il server che verrà utilizzato dall'applicazione, usare handle espliciti. In caso contrario, usare il costrutto di handle espliciti ogni volta oppure usare handle generici **\_ con** routine bind **\_ e unbind.**
 
-Non usare handle impliciti o handle automatici. Gli handle impliciti non sono thread-safe e anche se thread safety potrebbe sembrare superfluo, potrebbe essere necessario in seguito. Gli handle automatici hanno un sovraccarico elevato e richiedono un funzionamento corretto del programma di installazione. Le funzionalità di ricerca sono state sostituite dai servizi Active Directory.
+Non usare handle impliciti o handle automatici. Gli handle impliciti non sono thread-safe e, anche thread safety possono sembrare superflui, potrebbero diventare necessari in un secondo momento. Gli handle automatici hanno un sovraccarico elevato e richiedono una grande quantità di configurazione per funzionare correttamente. Le funzionalità di ricerca sono state sostituite dai servizi Active Directory.
 
-Gli handle espliciti sono estremamente efficienti e molte funzionalità interessanti sono disponibili solo per gli handle espliciti. Se, ad esempio, più chiamate RPC saranno destinate allo stesso server, sarà possibile costruire il gestore dell'associazione una sola volta ed effettuare tutte le chiamate. Questo approccio è molto più efficiente rispetto a qualsiasi altro metodo. Se il server a cui la chiamata passerà è sconosciuto, costruire un handle di binding esplicito per ogni chiamata o utilizzare handle di associazione generici.
+Gli handle espliciti sono altamente efficienti e molte funzionalità interessanti sono disponibili solo per gli handle espliciti. Ad esempio, se più chiamate RPC verranno effettuate nello stesso server, è possibile costruire l'handle di associazione una sola volta ed eseguire tutte le chiamate con esso. Questo approccio è molto più efficiente rispetto a qualsiasi altro metodo. Se il server a cui verrà passata la chiamata è sconosciuto, costruire un handle di associazione esplicito per ogni chiamata o usare handle di associazione generici.
 
-In Microsoft™ Windows XP, il tempo di esecuzione RPC è piuttosto efficiente per riutilizzare e memorizzare nella cache le chiamate, pertanto se la chiamata *n*+ 1 termina nello stesso server della chiamata *n*, RPC riutilizza le risorse allocate *per la chiamata n,* eludendo la necessità di memorizzare nella cache gli handle di binding per migliorare le prestazioni.
+In Microsoft™ Windows XP, il tempo di esecuzione RPC è piuttosto efficiente nel ri-uso e nella memorizzazione nella cache delle chiamate, quindi se la chiamata  *n*+1 finisce sullo stesso server della chiamata *n* th, RPC usa nuovamente le risorse allocate per l'esima chiamata, aggirando la necessità di memorizzare nella cache gli handle di associazione per migliorare le prestazioni.
 
- 
+ 
 
- 
+ 
 
 
 

@@ -1,19 +1,19 @@
 ---
-description: Denominatore dell' \_ immagine pkey \_ CompressedBitsPerPixel.
+description: Denominatore di PKEY \_ Image \_ CompressedBitsPerPixel.
 ms.assetid: 70779e4b-3564-4df8-8861-3276ba90276c
-title: System. image. CompressedBitsPerPixelDenominator
+title: System.Image.CompressedBitsPerPixelDenominator
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 961e0cf442986ad8024c11c1d5f76500159b1282
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 7fd96b560a5863c29aeaf265835aeff027ab420e5e87652358833e64fe656cdf
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "106311353"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120058891"
 ---
-# <a name="systemimagecompressedbitsperpixeldenominator"></a>System. image. CompressedBitsPerPixelDenominator
+# <a name="systemimagecompressedbitsperpixeldenominator"></a>System.Image.CompressedBitsPerPixelDenominator
 
-Denominatore dell' \_ immagine pkey \_ CompressedBitsPerPixel.
+Denominatore di PKEY \_ Image \_ CompressedBitsPerPixel.
 
 ## <a name="windows-10-version-1703-windows-10-version-1607-windows-10-version-1511-windows-10-version-1507-windows-81-windows-8-windows-7-windows-vista"></a>Windows 10, versione 1703, Windows 10, versione 1607, Windows 10, versione 1511, Windows 10, versione 1507, Windows 8.1, Windows 8, Windows 7, Windows Vista
 
@@ -32,7 +32,7 @@ propertyDescription
 
 ## <a name="remarks"></a>Commenti
 
-I valori PKEY sono definiti in Propkey. h.
+I valori PKEY sono definiti in Propkey.h.
 
 ## <a name="related-topics"></a>Argomenti correlati
 
@@ -47,13 +47,13 @@ I valori PKEY sono definiti in Propkey. h.
 [labelInfo](./propdesc-schema-labelinfo.md)
 </dt> <dt>
 
-[typeInfo](./propdesc-schema-typeinfo.md)
+[Typeinfo](./propdesc-schema-typeinfo.md)
 </dt> <dt>
 
 [displayInfo](./propdesc-schema-displayinfo.md)
 </dt> <dt>
 
-[stringFormat](./propdesc-schema-stringformat.md)
+[Stringformat](./propdesc-schema-stringformat.md)
 </dt> <dt>
 
 [booleanFormat](./propdesc-schema-booleanformat.md)
@@ -62,7 +62,7 @@ I valori PKEY sono definiti in Propkey. h.
 [numberFormat](./propdesc-schema-numberformat.md)
 </dt> <dt>
 
-[dateTimeFormat](./propdesc-schema-datetimeformat.md)
+[Datetimeformat](./propdesc-schema-datetimeformat.md)
 </dt> <dt>
 
 [enumeratedList](./propdesc-schema-enumeratedlist.md)

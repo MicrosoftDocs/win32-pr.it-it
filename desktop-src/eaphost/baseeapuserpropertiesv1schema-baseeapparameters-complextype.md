@@ -1,9 +1,9 @@
 ---
-title: Tipo complesso BaseEapParameters-proprietà utente
-description: Definisce l'elemento che ha specificato il metodo legacy selezionato e le credenziali specifiche del metodo.
+title: Tipo complesso BaseEapParameters - Proprietà utente
+description: Definisce l'elemento che specifica il metodo legacy selezionato e le credenziali specifiche del metodo.
 ms.assetid: bc42e536-f741-4821-8453-6c0631daad3e
 keywords:
-- BaseEapParameters di tipo complesso EAPHost
+- Tipo complesso BaseEapParameters EAPHost
 topic_type:
 - apiref
 api_name:
@@ -14,18 +14,18 @@ ms.topic: reference
 ms.date: 05/31/2018
 api_location: ''
 ROBOTS: INDEX,FOLLOW
-ms.openlocfilehash: 451c03123634dd98a1f4a49292db0a807009f6f5
-ms.sourcegitcommit: 168d11879cb9fd89d26f826482725c0a626be00f
+ms.openlocfilehash: 80ae1dc749d1c31ee11809b530fe1b04a59ce3e4e4dc76e84323b7dc078ec44a
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/16/2021
-ms.locfileid: "106323771"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119978291"
 ---
-# <a name="baseeapparameters-complex-type---user-properties"></a>Tipo complesso BaseEapParameters-proprietà utente
+# <a name="baseeapparameters-complex-type---user-properties"></a>Tipo complesso BaseEapParameters - Proprietà utente
 
-Il tipo complesso **BaseEapParameters** definisce l'elemento che ha specificato il metodo legacy selezionato e le credenziali specifiche del metodo.
+Il **tipo complesso BaseEapParameters** definisce l'elemento che specifica il metodo legacy selezionato e le credenziali specifiche del metodo.
 
-Il metodo può definire gli elementi costitutivi all'interno di **BaseEapParameters**; il metodo esegue anche la convalida dello schema sugli elementi in **BaseEapParameters**.
+Il metodo può definire gli elementi costitutivi **all'interno di BaseEapParameters;** Il metodo esegue anche la convalida dello schema sugli elementi in **BaseEapParameters.**
 
 ``` syntax
 <xs:complexType name="BaseEapParameters">
@@ -59,8 +59,8 @@ Il metodo può definire gli elementi costitutivi all'interno di **BaseEapParamet
 
 | Requisito | Valore |
 |-------------------------------------|------------------------------------------------------|
-| Client minimo supportato<br/> | \[Solo app desktop di Windows Vista\]<br/>       |
-| Server minimo supportato<br/> | \[Solo app desktop Windows Server 2008\]<br/> |
+| Client minimo supportato<br/> | Windows Solo \[ app desktop Vista\]<br/>       |
+| Server minimo supportato<br/> | Windows Solo app desktop di Server 2008 \[\]<br/> |
 
 
 
@@ -68,7 +68,7 @@ Il metodo può definire gli elementi costitutivi all'interno di **BaseEapParamet
 
 <dl> <dt>
 
-[EAPHost e schema legacy](eaphost-schemas.md)
+[Schema EAPHost e legacy](eaphost-schemas.md)
 </dt> <dt>
 
 [Schema baseeapuserpropertiesv1](baseeapuserpropertiesv1schema-schema.md)

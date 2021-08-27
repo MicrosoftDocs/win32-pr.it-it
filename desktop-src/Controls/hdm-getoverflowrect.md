@@ -1,9 +1,9 @@
 ---
-title: Messaggio HDM_GETOVERFLOWRECT (COMmctrl. h)
-description: Ottiene il rettangolo di delimitazione del pulsante di overflow quando lo \_ stile di overflow HDS è impostato sul controllo intestazione e il pulsante di overflow è visibile. Inviare questo messaggio in modo esplicito o utilizzando la \_ macro GetOverflowRect dell'intestazione.
+title: HDM_GETOVERFLOWRECT messaggio (Commctrl.h)
+description: Ottiene il rettangolo di delimitazione del pulsante di overflow quando lo stile HDS OVERFLOW è impostato sul controllo intestazione e il pulsante \_ di overflow è visibile. Inviare questo messaggio in modo esplicito o tramite la \_ macro Header GetOverflowRect.
 ms.assetid: 52fb3dc3-ce22-40da-8222-20fd75c005ae
 keywords:
-- Controlli di Windows Message HDM_GETOVERFLOWRECT
+- HDM_GETOVERFLOWRECT dei messaggi Windows controllo
 topic_type:
 - apiref
 api_name:
@@ -14,16 +14,16 @@ api_type:
 - HeaderDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 58f521bb6b188a10bb7af52ead46423e7ae0cf58
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: 0f48088ad6c4a1d8cc5b843eeafb167f790bdd8eac06c56e6cb74e8afc18d082
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "104518118"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120047051"
 ---
-# <a name="hdm_getoverflowrect-message"></a>\_Messaggio HDM GETOVERFLOWRECT
+# <a name="hdm_getoverflowrect-message"></a>Messaggio \_ GETOVERFLOWRECT HDM
 
-Ottiene il rettangolo di delimitazione del pulsante di overflow quando lo stile di [**\_ overflow HDS**](header-control-styles.md) è impostato sul controllo intestazione e il pulsante di overflow è visibile. Inviare questo messaggio in modo esplicito o utilizzando la macro [**\_ GetOverflowRect dell'intestazione**](/windows/desktop/api/Commctrl/nf-commctrl-header_getoverflowrect) .
+Ottiene il rettangolo di delimitazione del pulsante di overflow quando lo stile [**\_ HDS OVERFLOW**](header-control-styles.md) è impostato sul controllo intestazione e il pulsante di overflow è visibile. Inviare questo messaggio in modo esplicito o tramite la macro [**\_ Header GetOverflowRect.**](/windows/desktop/api/Commctrl/nf-commctrl-header_getoverflowrect)
 
 ## <a name="parameters"></a>Parametri
 
@@ -36,16 +36,16 @@ Non usato. Deve essere zero.
 
 </dd> <dt>
 
-*lParam* \[ in\]
+*lParam* \[ Pollici\]
 </dt> <dd>
 
-Puntatore a una struttura [**Rect**](/previous-versions//dd162897(v=vs.85)) per ricevere le informazioni sul rettangolo di delimitazione. Il mittente del messaggio è responsabile dell'allocazione della struttura. Le coordinate restituite nella struttura **Rect** sono espresse come coordinate dello schermo.
+Puntatore a una [**struttura RECT**](/previous-versions//dd162897(v=vs.85)) per ricevere le informazioni sul rettangolo di delimitazione. Il mittente del messaggio è responsabile dell'allocazione di questa struttura. Le coordinate restituite nella struttura **RECT** sono espresse come coordinate dello schermo.
 
 </dd> </dl>
 
 ## <a name="return-value"></a>Valore restituito
 
-Restituisce **true** se l'operazione ha esito positivo; in caso contrario, **false**.
+Restituisce **TRUE se** l'operazione ha esito positivo. in caso contrario, **FALSE.**
 
 ## <a name="remarks"></a>Commenti
 
@@ -57,9 +57,9 @@ Il controllo intestazione deve avere lo stile **HDF \_ SPLITBUTTON**.
 
 | Requisito | Valore |
 |-------------------------------------|---------------------------------------------------------------------------------------|
-| Client minimo supportato<br/> | \[Solo app desktop di Windows Vista\]<br/>                                        |
-| Server minimo supportato<br/> | \[Solo app desktop Windows Server 2008\]<br/>                                  |
-| Intestazione<br/>                   | <dl> <dt>Commctrl. h</dt> </dl> |
+| Client minimo supportato<br/> | Windows Solo \[ app desktop di Vista\]<br/>                                        |
+| Server minimo supportato<br/> | Windows Solo app desktop server 2008 \[\]<br/>                                  |
+| Intestazione<br/>                   | <dl> <dt>Commctrl.h</dt> </dl> |
 
 
 

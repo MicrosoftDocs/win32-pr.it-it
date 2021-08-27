@@ -1,44 +1,44 @@
 ---
-title: La MSO-wrap-distance-Bottom-attributo
-description: La MSO-wrap-distance-Bottom-attributo
+title: Attributo VML MSO-Wrap-Distance-Bottom
+description: Attributo VML MSO-Wrap-Distance-Bottom
 ms.assetid: b096fc67-dd99-4833-bb82-73de7b06f43c
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: e7c3ec66ae23994184227d857e269318606d9ea4
-ms.sourcegitcommit: 592c9bbd22ba69802dc353bcb5eb30699f9e9403
+ms.openlocfilehash: 33e28ea0f2d84b9bf9f5981f9ebb22f15af75a2071f07dd9f3e006ac70b34256
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/20/2020
-ms.locfileid: "103963243"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120007681"
 ---
-# <a name="vml-mso-wrap-distance-bottom-attribute"></a>La MSO-wrap-distance-Bottom-attributo
+# <a name="vml-mso-wrap-distance-bottom-attribute"></a>Attributo VML MSO-Wrap-Distance-Bottom
 
-In questo argomento viene descritto la, una funzionalità deprecata a partire da Windows Internet Explorer 9. Le pagine Web e le applicazioni che si basano su la devono essere migrate a SVG o ad altri standard ampiamente supportati.
+Questo argomento descrive VML, una funzionalità deprecata a Windows Internet Explorer 9. È necessario eseguire la migrazione di pagine Web e applicazioni basate su VML a SVG o ad altri standard ampiamente supportati.
 
 > [!Note]  
-> Al 2011 dicembre, questo argomento è stato archiviato. Di conseguenza, non viene più gestita attivamente. Per altre informazioni, vedere [contenuto archiviato](/previous-versions/windows/internet-explorer/ie-developer/). Per informazioni, suggerimenti e indicazioni per la versione corrente di Windows Internet Explorer, vedere il [centro per sviluppatori di Internet Explorer](https://msdn.microsoft.com/ie/).
+> A partire da dicembre 2011, questo argomento è stato archiviato. Di conseguenza, non viene più gestito attivamente. Per altre informazioni, vedere [Contenuto archiviato](/previous-versions/windows/internet-explorer/ie-developer/). Per informazioni, raccomandazioni e indicazioni sulla versione corrente di Windows Internet Explorer, vedere Internet Explorer [Developer Center](https://msdn.microsoft.com/ie/).
 
- 
+ 
 
-Definisce la distanza dal lato inferiore della forma al testo a cui è stato eseguito il wrapping. Proprietà di lettura/scrittura. **Stringa**.
+Definisce la distanza dal lato inferiore della forma al testo che la racchiude. Proprietà di lettura/scrittura. **Stringa**.
 
 **Si applica a**
 
-[Con forme](shape-element--vml.md)
+[Forma](shape-element--vml.md)
 
-**Sintassi Tag**
+**Sintassi dei tag**
 
-<v: *elemento* Style = "MSO-wrap-distance-bottom: *Expression* " >
+<v: *element* style="mso-wrap-distance-bottom: *expression* ">
 
 **Osservazioni:**
 
-Si noti che questo attributo è diverso dall'attributo del **margine** CSS. **Margin** modifica l'origine della forma in modo da includere le aree dei margini, ma la distanza dal wrapping in Microsoft Office non modifica l'origine della forma.
+Si noti che questo attributo è diverso dall'attributo **CSS Margin.** **Il** margine modifica l'origine della forma in modo da includere le aree del margine, ma la distanza di ritorno a capo Microsoft Office modifica l'origine della forma.
 
-*Attributo Microsoft Office Extensions*
+*Microsoft Office Attributo Extensions*
 
 **Esempio**
 
-La forma ha una distanza di incapsulamento inferiore di 10 punti.
+La forma ha una distanza di ritorno a capo inferiore di 10 punti.
 
 
 ```HTML
@@ -52,6 +52,6 @@ La forma ha una distanza di incapsulamento inferiore di 10 punti.
 
 
 
- 
+ 
 
- 
+ 

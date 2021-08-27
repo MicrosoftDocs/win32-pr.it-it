@@ -4,12 +4,12 @@ ms.assetid: 9ba10dba-626f-4cb8-8dc2-1419329b199e
 title: Utilizzi e valori letterali (Direct3D 9)
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 62dc1d7b40e66aaa6499dd2aa00c37d4564df2ab
-ms.sourcegitcommit: b6fe9acffad983c14864b8fe0296f6025cb1f961
+ms.openlocfilehash: 3b8c9fa8eb30726e783ce763ec8700f715dbd5d2b85ff3bf98340cf604e8e2f8
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/26/2021
-ms.locfileid: "107998538"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120026011"
 ---
 # <a name="usages-and-literals-direct3d-9"></a>Utilizzi e valori letterali (Direct3D 9)
 
@@ -29,7 +29,7 @@ L'utilizzo è simile all'ambito di un parametro, perché definisce l'ambito in c
 
 Se si contrassegna un parametro come valore letterale, il relativo valore non cambierà mai. Ciò consente al compilatore di effetti di eseguire un'ottimizzazione aggiuntiva.
 
-Solo i parametri di primo livello non condivisi possono essere contrassegnati come valori letterali. I parametri possono essere contrassegnati come letterali solo con [**ID3DXEffectCompiler**](id3dxeffectcompiler.md). I valori letterali non possono essere impostati [**con ID3DXEffect.**](id3dxeffect.md)
+Solo i parametri di primo livello non condivisi possono essere contrassegnati come valori letterali. I parametri possono essere contrassegnati come letterali solo [**con ID3DXEffectCompiler**](id3dxeffectcompiler.md). I valori letterali non possono essere impostati [**con ID3DXEffect.**](id3dxeffect.md)
 
 ## <a name="related-topics"></a>Argomenti correlati
 

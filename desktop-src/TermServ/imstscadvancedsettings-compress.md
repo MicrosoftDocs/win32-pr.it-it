@@ -1,28 +1,28 @@
 ---
-title: Proprietà Compress IMsTscAdvancedSettings
+title: Proprietà IMsTscAdvancedSettings Compress
 description: Specifica se la compressione è abilitata.
 ms.assetid: 274774b3-0442-4a46-95f8-7857f885bfdb
 ms.tgt_platform: multiple
 keywords:
-- Comprimi Servizi Desktop remoto proprietà
-- Comprimi Servizi Desktop remoto proprietà, interfaccia IMsTscAdvancedSettings
-- Interfaccia IMsTscAdvancedSettings Servizi Desktop remoto, proprietà Compress
-- Comprimi Servizi Desktop remoto proprietà, interfaccia IMsRdpClientAdvancedSettings
-- Interfaccia IMsRdpClientAdvancedSettings Servizi Desktop remoto, proprietà Compress
-- Comprimi Servizi Desktop remoto proprietà, interfaccia IMsRdpClientAdvancedSettings2
-- Interfaccia IMsRdpClientAdvancedSettings2 Servizi Desktop remoto, proprietà Compress
-- Comprimi Servizi Desktop remoto proprietà, interfaccia IMsRdpClientAdvancedSettings3
-- Interfaccia IMsRdpClientAdvancedSettings3 Servizi Desktop remoto, proprietà Compress
-- Comprimi Servizi Desktop remoto proprietà, interfaccia IMsRdpClientAdvancedSettings4
-- Interfaccia IMsRdpClientAdvancedSettings4 Servizi Desktop remoto, proprietà Compress
-- Comprimi Servizi Desktop remoto proprietà, interfaccia IMsRdpClientAdvancedSettings5
-- Interfaccia IMsRdpClientAdvancedSettings5 Servizi Desktop remoto, proprietà Compress
-- Comprimi Servizi Desktop remoto proprietà, interfaccia IMsRdpClientAdvancedSettings6
-- Interfaccia IMsRdpClientAdvancedSettings6 Servizi Desktop remoto, proprietà Compress
-- Comprimi Servizi Desktop remoto proprietà, interfaccia IMsRdpClientAdvancedSettings7
-- Interfaccia IMsRdpClientAdvancedSettings7 Servizi Desktop remoto, proprietà Compress
-- Comprimi Servizi Desktop remoto proprietà, interfaccia IMsRdpClientAdvancedSettings8
-- Interfaccia IMsRdpClientAdvancedSettings8 Servizi Desktop remoto, proprietà Compress
+- Comprimere le proprietà Servizi Desktop remoto
+- Comprimere le Servizi Desktop remoto, interfaccia IMsTscAdvancedSettings
+- Interfaccia IMsTscAdvancedSettings Servizi Desktop remoto , proprietà Compress
+- Comprimere le Servizi Desktop remoto, interfaccia IMsRdpClientAdvancedSettings
+- Interfaccia IMsRdpClientAdvancedSettings Servizi Desktop remoto , proprietà Compress
+- Comprimere le Servizi Desktop remoto, interfaccia IMsRdpClientAdvancedSettings2
+- Interfaccia IMsRdpClientAdvancedSettings2 Servizi Desktop remoto , proprietà Compress
+- Comprimere la Servizi Desktop remoto, interfaccia IMsRdpClientAdvancedSettings3
+- Interfaccia IMsRdpClientAdvancedSettings3 Servizi Desktop remoto , proprietà Compress
+- Comprimere le Servizi Desktop remoto, interfaccia IMsRdpClientAdvancedSettings4
+- Interfaccia IMsRdpClientAdvancedSettings4 Servizi Desktop remoto , proprietà Compress
+- Comprimere la Servizi Desktop remoto, interfaccia IMsRdpClientAdvancedSettings5
+- Interfaccia IMsRdpClientAdvancedSettings5 Servizi Desktop remoto , proprietà Compress
+- Comprimere le Servizi Desktop remoto, interfaccia IMsRdpClientAdvancedSettings6
+- Interfaccia IMsRdpClientAdvancedSettings6 Servizi Desktop remoto , proprietà Compress
+- Comprimere le Servizi Desktop remoto, interfaccia IMsRdpClientAdvancedSettings7
+- Interfaccia IMsRdpClientAdvancedSettings7 Servizi Desktop remoto , proprietà Compress
+- Comprimere le Servizi Desktop remoto, interfaccia IMsRdpClientAdvancedSettings8
+- Interfaccia IMsRdpClientAdvancedSettings8 Servizi Desktop remoto , proprietà Compress
 topic_type:
 - apiref
 api_name:
@@ -59,14 +59,14 @@ api_type:
 - COM
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: c588784d9b06bd2e8e1605a96c8aa9fd157c10eb
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: d954fc039ec8edf4a43b391df29e79fe3a064cbbc856f0b14a011acc517e3d75
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "103964422"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120125491"
 ---
-# <a name="imstscadvancedsettingscompress-property"></a>Proprietà IMsTscAdvancedSettings:: Compress
+# <a name="imstscadvancedsettingscompress-property"></a>Proprietà IMsTscAdvancedSettings::Compress
 
 Specifica se la compressione è abilitata.
 
@@ -89,15 +89,15 @@ HRESULT get_Compress(
 
 ## <a name="property-value"></a>Valore proprietà
 
-Impostare questo parametro su 0 per disabilitare la compressione o un valore diverso da zero per abilitare la compressione.
+Impostare questo parametro su 0 per disabilitare la compressione o su un valore diverso da zero per abilitare la compressione.
 
 ## <a name="error-codes"></a>Codici di errore
 
-Restituisce **\_ OK** se ha esito positivo.
+Restituisce **S \_ OK in** caso di esito positivo.
 
 ## <a name="remarks"></a>Commenti
 
-Per ulteriori informazioni su Connessione Web Desktop remoto, vedere [requisiti per connessione Web Desktop remoto](requirements-for-remote-desktop-web-connection.md).
+Per altre informazioni sui Connessione Web Desktop remoto, vedere [Requisiti per Connessione Web Desktop remoto](requirements-for-remote-desktop-web-connection.md).
 
 ## <a name="requirements"></a>Requisiti
 
@@ -109,7 +109,7 @@ Per ulteriori informazioni su Connessione Web Desktop remoto, vedere [requisiti 
 | Server minimo supportato<br/> | Windows Server 2008<br/>                                                            |
 | Libreria dei tipi<br/>             | <dl> <dt>MsTscAx.dll</dt> </dl>    |
 | DLL<br/>                      | <dl> <dt>MsTscAx.dll</dt> </dl>    |
-| IID<br/>                      | IID \_ IMsTscAdvancedSettings è definito come 809945cc-4b3b-4A92-a6b0-dbf9b5f2ef2d<br/> |
+| IID<br/>                      | IMsTscAdvancedSettings IID è definito come \_ 809945cc-4b3b-4a92-a6b0-dbf9b5f2ef2d<br/> |
 
 
 

@@ -1,24 +1,24 @@
 ---
-description: La proprietà riproduzione recupera lo stato corrente dell'oggetto MSWebDVD.
+description: La proprietà PlayState recupera lo stato corrente dell'oggetto MSWebDVD.
 ms.assetid: ffe71c3f-f8c2-45cc-84bf-e937cfbbe7b9
-title: Proprietà riproduzione
+title: Proprietà PlayState
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 9d8c699ce3f232f9afc14472f0308fa65adc6abb
-ms.sourcegitcommit: a47bd86f517de76374e4fff33cfeb613eb259a7e
+ms.openlocfilehash: 4b66ae0ddfb1a8ceb296ec647a0149a42de68f635ffd198d6ba6609ff11e4888
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/06/2021
-ms.locfileid: "106303985"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120102351"
 ---
-# <a name="playstate-property"></a>Proprietà riproduzione
+# <a name="playstate-property"></a>Proprietà PlayState
 
 > [!Note]  
 > Questo componente è disponibile per l'uso nei sistemi operativi Microsoft Windows 2000, Windows XP e Windows Server 2003. È possibile che in versioni successive sia stata modificata o non sia più disponibile.
 
  
 
-La `PlayState` proprietà recupera lo stato corrente dell'oggetto **mswebdvd** .
+La `PlayState` proprietà recupera lo stato corrente dell'oggetto **MSWebDVD.**
 
 ``` syntax
 [ iState = ] MSWebDVD.PlayState
@@ -26,7 +26,7 @@ La `PlayState` proprietà recupera lo stato corrente dell'oggetto **mswebdvd** .
 
 ## <a name="return-value"></a>Valore restituito
 
-Restituisce un valore intero che rappresenta lo stato corrente del navigatore DVD.
+Restituisce un valore Integer che rappresenta lo stato corrente dello strumento di navigazione DVD.
 
 
 
@@ -44,9 +44,9 @@ Restituisce un valore intero che rappresenta lo stato corrente del navigatore DV
 
 ## <a name="remarks"></a>Commenti
 
-Questa proprietà è di sola lettura e non prevede alcun valore predefinito.
+Questa proprietà è di sola lettura senza alcun valore predefinito.
 
-L'oggetto **mswebdvd** controlla il filtro del navigatore DirectShow DVD, che esegue il lavoro effettivo della navigazione in DVD. Si tratta in realtà dello stato del navigatore DVD a cui questa proprietà fa riferimento. Il navigatore DVD può trovarsi in uno dei diversi Stati, come descritto in precedenza. La `PlayState` proprietà può essere utile come strumento di diagnostica, ma in genere non dovrebbe essere necessario che un'applicazione di scripting monitori lo stato del navigatore DVD.
+**L'oggetto MSWebDVD** controlla il DirectShow DVD Navigator, che esegue le operazioni effettive di navigazione dei DVD. È in realtà lo stato dello strumento di navigazione DVD a cui fa riferimento questa proprietà. Il DVD Navigator può essere in uno dei diversi stati, come descritto in precedenza. La proprietà può essere utile come strumento di diagnostica, ma in genere non deve essere necessario che un'applicazione di scripting monitori lo stato dello `PlayState` strumento di spostamento DVD.
 
  
 

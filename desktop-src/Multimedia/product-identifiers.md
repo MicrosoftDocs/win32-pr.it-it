@@ -3,19 +3,19 @@ title: Identificatori di prodotto
 description: Identificatori di prodotto
 ms.assetid: 671440bb-0ed7-44fe-873c-fcefda8380bc
 keywords:
-- Windows Multimedia, identificatori di prodotto
-- elementi multimediali, identificatori di prodotto
+- Windows multimediali, identificatori di prodotto
+- multimedia,identificatori di prodotto
 - identificatori di prodotto
-- identificatori di prodotto multimediali
-- aziende multimediali
+- identificatori di prodotti multimediali
+- società multimediali
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: ed7046ffae1b8cf3031548abbc778955127e27a5
-ms.sourcegitcommit: 2d531328b6ed82d4ad971a45a5131b430c5866f7
+ms.openlocfilehash: 20bb5a4e958e53c8dda6df71360d5512be0a61ff2ddb42fb77065ee7ce38f8a9
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "104332076"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120037601"
 ---
 # <a name="product-identifiers"></a>Identificatori di prodotto
 
@@ -67,7 +67,7 @@ ms.locfileid: "104332076"
 </ul></td>
 </tr>
 <tr class="even">
-<td>Computer aided Technology, Inc.</td>
+<td>Computer Aided Technology, Inc.</td>
 <td><ul>
 <li>MM_CAT_WAVEOUT</li>
 </ul></td>
@@ -125,7 +125,7 @@ ms.locfileid: "104332076"
 </ul></td>
 </tr>
 <tr class="odd">
-<td>ESS Technology, Inc.</td>
+<td>Tecnologia ESS, Inc.</td>
 <td><ul>
 <li>MM_ESS_AMAUX</li>
 <li>MM_ESS_AMMIDIIN</li>
@@ -153,7 +153,7 @@ ms.locfileid: "104332076"
 </ul></td>
 </tr>
 <tr class="even">
-<td>Eseguendo un'operazione. C. Olivetti & C., S.p.A.</td>
+<td>Ing. C. Olivetti & C., S.p.A.</td>
 <td><ul>
 <li>MM_OLIVETTI_ACM_ADPCM</li>
 <li>MM_OLIVETTI_ACM_CELP</li>
@@ -181,14 +181,14 @@ ms.locfileid: "104332076"
 </ul></td>
 </tr>
 <tr class="even">
-<td>Interactive, Inc.</td>
+<td>InterActive, Inc.</td>
 <td><ul>
 <li>MM_INTERACTIVE_WAVEIN</li>
 <li>MM_INTERACTIVE_WAVEOUT</li>
 </ul></td>
 </tr>
 <tr class="odd">
-<td>Computer aziendali internazionali</td>
+<td>International Business Machines</td>
 <td><ul>
 <li>MM_IBM_PCMCIA_AUX</li>
 <li>MM_IBM_PCMCIA_MIDIIN</li>
@@ -202,7 +202,7 @@ ms.locfileid: "104332076"
 </ul></td>
 </tr>
 <tr class="even">
-<td>Itered Systems, Inc.</td>
+<td>Iterated Systems, Inc.</td>
 <td><ul>
 <li>MM_ITERATEDSYS_FUFCODEC</li>
 </ul></td>
@@ -345,7 +345,7 @@ ms.locfileid: "104332076"
 </ul></td>
 </tr>
 <tr class="even">
-<td>Laboratori di microengineering</td>
+<td>microEngineering Labs</td>
 <td><ul>
 <li>MM_MELABS_MIDI2GO</li>
 </ul></td>
@@ -367,7 +367,7 @@ ms.locfileid: "104332076"
 </ul></td>
 </tr>
 <tr class="odd">
-<td>Nuova Media Corporation</td>
+<td>New Media Corporation</td>
 <td><ul>
 <li>MM_NEWMEDIA_WAVJAMMER</li>
 </ul></td>
@@ -426,7 +426,7 @@ ms.locfileid: "104332076"
 </ul></td>
 </tr>
 <tr class="odd">
-<td>Silicon software, Inc.</td>
+<td>Silicon Software, Inc.</td>
 <td><ul>
 <li>MM_SILICONSOFT_SC1_WAVEIN</li>
 <li>MM_SILICONSOFT_SC1_WAVEOUT</li>
@@ -461,7 +461,7 @@ ms.locfileid: "104332076"
 </ul></td>
 </tr>
 <tr class="even">
-<td>TrueVision, Inc.</td>
+<td>Truevision, Inc.</td>
 <td><ul>
 <li>MM_TRUEVISION_WAVEIN1</li>
 <li>MM_TRUEVISION_WAVEOUT1</li>
@@ -482,14 +482,14 @@ ms.locfileid: "104332076"
 </ul></td>
 </tr>
 <tr class="odd">
-<td>VocalTec, Inc.</td>
+<td>Distorsi, Inc.</td>
 <td><ul>
 <li>MM_VOCALTEC_WAVEIN</li>
 <li>MM_VOCALTEC_WAVEOUT</li>
 </ul></td>
 </tr>
 <tr class="even">
-<td>Laboratori Wang</td>
+<td>Wang Laboratories</td>
 <td><ul>
 <li>MM_WANGLABS_WAVEIN1</li>
 <li>MM_WANGLABS_WAVEOUT1</li>
@@ -506,7 +506,7 @@ ms.locfileid: "104332076"
 </ul></td>
 </tr>
 <tr class="even">
-<td>Yamaha Corporation of America</td>
+<td>Corporation Dell'America</td>
 <td><ul>
 <li>MM_YAMAHA_GSS_AUX</li>
 <li>MM_YAMAHA_GSS_MIDIIN</li>
@@ -521,11 +521,11 @@ ms.locfileid: "104332076"
 
 
 
- 
+ 
 
- 
+ 
 
- 
+ 
 
 
 

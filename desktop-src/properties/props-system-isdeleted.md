@@ -4,12 +4,12 @@ ms.assetid: 55103a8c-3e3c-4615-8a08-d7aba1a7c692
 title: System.IsDeleted
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 4b7b510c71f5bcfa259ac38709fa05f6e2a59272
-ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
+ms.openlocfilehash: 160ffbc14e42479cfc948c75934a03b9bb1468beb2efff7b6bba23e7c5bbc44d
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/28/2021
-ms.locfileid: "108086999"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120058821"
 ---
 # <a name="systemisdeleted"></a>System.IsDeleted
 
@@ -52,7 +52,7 @@ I valori PKEY sono definiti in Propkey.h.
 
 <dl> <dt>
 
-[proprietàDescrizione](./propdesc-schema-propertydescription.md)
+[propertyDescription](./propdesc-schema-propertydescription.md)
 </dt> <dt>
 
 [searchInfo](./propdesc-schema-searchinfo.md)
@@ -82,7 +82,7 @@ I valori PKEY sono definiti in Propkey.h.
 [enumeratedList](./propdesc-schema-enumeratedlist.md)
 </dt> <dt>
 
-[DrawControl](./propdesc-schema-drawcontrol.md)
+[drawControl](./propdesc-schema-drawcontrol.md)
 </dt> <dt>
 
 [editControl](./propdesc-schema-editcontrol.md)

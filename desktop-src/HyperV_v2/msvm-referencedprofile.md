@@ -1,7 +1,7 @@
 ---
 description: Descrive un profilo a cui fa riferimento un altro profilo registrato.
 ms.assetid: 36FC0161-C57F-488A-9B4A-C86C6EB481D7
-title: Classe Msvm_ReferencedProfile
+title: Msvm_ReferencedProfile classe
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -15,18 +15,18 @@ api_type:
 - DllExport
 api_location:
 - vmms.exe
-ms.openlocfilehash: cbe95658556be8a15bed0e7e5b5b32dda23ff21d
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 1dbfe81dede2e3a6eb8b902ff03fe034deda1b5ab8160e830376e3380fe811c8
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "106312900"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120046401"
 ---
-# <a name="msvm_referencedprofile-class"></a>\_Classe MSVM ReferencedProfile
+# <a name="msvm_referencedprofile-class"></a>Classe Msvm \_ ReferencedProfile
 
 Descrive un profilo a cui fa riferimento un altro profilo registrato.
 
-La sintassi seguente è semplificata Managed Object Format codice (MOF) e include tutte le proprietà ereditate.
+La sintassi seguente è Managed Object Format codice MOF e include tutte le proprietà ereditate.
 
 ## <a name="syntax"></a>Sintassi
 
@@ -40,13 +40,13 @@ class Msvm_ReferencedProfile : CIM_ReferencedProfile
 
 ## <a name="members"></a>Members
 
-La **classe \_ ReferencedProfile di MSVM** dispone di questi tipi di membri:
+La **classe Msvm \_ ReferencedProfile** ha questi tipi di membri:
 
 -   [Proprietà](#properties)
 
 ### <a name="properties"></a>Proprietà
 
-La **classe \_ ReferencedProfile di MSVM** dispone di queste proprietà.
+La **classe Msvm \_ ReferencedProfile** ha queste proprietà.
 
 <dl> <dt>
 
@@ -59,7 +59,7 @@ Tipo di dati: **[ **CIM \_ RegisteredProfile**](/previous-versions//ee309375(v=v
 Tipo di accesso: sola lettura
 </dt> </dl>
 
-Profilo registrato a cui fa riferimento il profilo **dipendente** .
+Profilo registrato a cui fa riferimento il **profilo** dipendente.
 
 </dd> <dt>
 
@@ -82,10 +82,10 @@ Profilo registrato che fa riferimento ad altri profili.
 
 | Requisito | Valore |
 |-------------------------------------|---------------------------------------------------------------------------------------------------------|
-| Client minimo supportato<br/> | Windows 8.1 \[ solo app desktop\]<br/>                                                            |
-| Server minimo supportato<br/> | Solo app desktop Windows Server 2012 R2 \[\]<br/>                                                 |
-| Spazio dei nomi<br/>                | \\Interoperabilità radice<br/>                                                                                |
-| MOF<br/>                      | <dl> <dt>WindowsVirtualization. v2. mof</dt> </dl> |
+| Client minimo supportato<br/> | \[Windows 8.1 solo app desktop\]<br/>                                                            |
+| Server minimo supportato<br/> | Windows Server 2012 Solo \[ app desktop R2\]<br/>                                                 |
+| Spazio dei nomi<br/>                | Interoperabilità \\ radice<br/>                                                                                |
+| MOF<br/>                      | <dl> <dt>WindowsVirtualization.V2.mof</dt> </dl> |
 | DLL<br/>                      | <dl> <dt>Vmms.exe</dt> </dl>                     |
 
 

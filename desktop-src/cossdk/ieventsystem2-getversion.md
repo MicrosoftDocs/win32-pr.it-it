@@ -1,7 +1,7 @@
 ---
 description: Recupera il numero di versione del sistema di eventi.
 ms.assetid: 6355f1b3-e1e7-435f-9795-d92464e004ae
-title: 'Metodo IEventSystem2:: GetVersion'
+title: Metodo IEventSystem2::GetVersion
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -12,14 +12,14 @@ api_name:
 api_type:
 - COM
 api_location: ''
-ms.openlocfilehash: 2c75538d9fd71cb8ee81e454249fd5116ccd090c
-ms.sourcegitcommit: c7add10d695482e1ceb72d62b8a4ebd84ea050f7
+ms.openlocfilehash: 77452ccebac71cb8de8357fee0199bc04b690d59cf8d113d57a5850db0771315
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104483869"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120070621"
 ---
-# <a name="ieventsystem2getversion-method"></a>Metodo IEventSystem2:: GetVersion
+# <a name="ieventsystem2getversion-method"></a>Metodo IEventSystem2::GetVersion
 
 Recupera il numero di versione del sistema di eventi.
 
@@ -38,7 +38,7 @@ HRESULT GetVersion(
 
 <dl> <dt>
 
-*pnVersion* \[ out\]
+*pnVersion* \[ Cambio\]
 </dt> <dd>
 
 Numero di versione del sistema di eventi.
@@ -47,7 +47,7 @@ Numero di versione del sistema di eventi.
 
 ## <a name="return-value"></a>Valore restituito
 
-Questo metodo può restituire i valori restituiti standard E \_ INVALIDARG, e \_ OutOfMemory, e \_ imprevisto, e ha \_ esito negativo e S \_ OK.
+Questo metodo può restituire i valori restituiti standard E \_ INVALIDARG, E \_ OUTOFMEMORY, E \_ UNEXPECTED, E \_ FAIL e S \_ OK.
 
 ## <a name="requirements"></a>Requisiti
 

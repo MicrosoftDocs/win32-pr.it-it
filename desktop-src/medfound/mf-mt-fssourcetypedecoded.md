@@ -3,14 +3,14 @@ description: "MF_MT_FSSourceTypeDecoded attributo : specifica se un decodificato
 title: MF_MT_FSSourceTypeDecoded
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 3799c11e3b921427ff4a3b05aa3d7f47e297ba14
-ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
+ms.openlocfilehash: 6ae25fce343d0c24f7b0a79e2623e7c3e2d0f9272b2f95a825860860ff6f88c9
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/28/2021
-ms.locfileid: "108093089"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120113761"
 ---
-# <a name="mf_mt_fssourcetypedecoded-attribute"></a>Attributo MF \_ MT \_ FSSourceTypeDecoded
+# <a name="mf_mt_fssourcetypedecoded-attribute"></a>Attributo \_ MF MT \_ FSSourceTypeDecoded
 
 Specifica che un tipo di supporto viene decodificato automaticamente.
 
@@ -20,9 +20,9 @@ Specifica che un tipo di supporto viene decodificato automaticamente.
 
 
 ## <a name="remarks"></a>Commenti
-Un tipo di supporto è contrassegnato come attributo per indicare che non esiste nell'origine fisica ed è sintetizzato dalla pipeline. Il valore 1 (TRUE) indica che il tipo di supporto è sintetizzato. Il valore 0 (FALSE) o il valore non presente indica che non lo è.
+Un tipo di supporto è contrassegnato come attributo per indicare che non esiste nell'origine fisica e viene sintetizzato dalla pipeline. Il valore 1 (TRUE) indica che il tipo di supporto è sintetizzato. Il valore 0 (FALSE) o il valore non presente indica che non lo è.
 
-Nella versione corrente questo attributo deve essere specificato usando il valore GUID seguente anziché la costante MD_MT_FSSourceTypeDecoded seguente:
+Nella versione corrente questo attributo deve essere specificato usando il valore GUID seguente anziché la MD_MT_FSSourceTypeDecoded costante:
 
 ```ea031a62-8bbb-43c5-b5c4-572d2d231c18```
 
@@ -33,8 +33,8 @@ Nella versione corrente questo attributo deve essere specificato usando il valor
 
 | Requisito | Valore |
 |-------------------------------------|------------------------------------------------------------------------------------|
-| Client minimo supportato<br/> | Windows 8 app \[ desktop \| UWP\]<br/>                                  |
-| Server minimo supportato<br/> | App desktop di Windows Server 2012 \[ \| per app UWP\]<br/>                        |
+| Client minimo supportato<br/> | \[Windows 8 app desktop \| app UWP\]<br/>                                  |
+| Server minimo supportato<br/> | \[Windows Server 2012 app desktop \| app UWP\]<br/>                        |
 
 
 
@@ -42,7 +42,7 @@ Nella versione corrente questo attributo deve essere specificato usando il valor
 
 <dl> <dt>
 
-[Elenco alfabetico degli Media Foundation personalizzati](alphabetical-list-of-media-foundation-attributes.md)
+[Elenco alfabetico di Media Foundation attributi](alphabetical-list-of-media-foundation-attributes.md)
 </dt> </dl>
 
  

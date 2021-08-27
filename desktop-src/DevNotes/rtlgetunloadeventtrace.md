@@ -1,7 +1,7 @@
 ---
-description: Consente al codice di dump di ottenere le informazioni sul modulo non caricate da Ntdll.dll per l'archiviazione nel minidump.
+description: Consente al codice di dump di ottenere le informazioni sul modulo scaricato Ntdll.dll per l'archiviazione nel minidump.
 ms.assetid: 017398da-e13e-4261-bda5-6f400a91dbe3
-title: RtlGetUnloadEventTrace (funzione)
+title: Funzione RtlGetUnloadEventTrace
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -13,18 +13,18 @@ api_type:
 - DllExport
 api_location:
 - Ntdll.dll
-ms.openlocfilehash: 9297ba0019c89c5e93961d4b36e0fe16da04d6bb
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: d8575610ab34b62c9228f87fa64fbd6a40fa0201b7fe1a70ab95c7daae706854
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "106330958"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120058591"
 ---
-# <a name="rtlgetunloadeventtrace-function"></a>RtlGetUnloadEventTrace (funzione)
+# <a name="rtlgetunloadeventtrace-function"></a>Funzione RtlGetUnloadEventTrace
 
-\[Questa funzione può essere modificata o rimossa da Windows senza ulteriore preavviso.\]
+\[Questa funzione può essere modificata o rimossa da Windows senza preavviso.\]
 
-Consente al codice di dump di ottenere le informazioni sul modulo non caricate da Ntdll.dll per l'archiviazione nel minidump.
+Consente al codice di dump di ottenere le informazioni sul modulo scaricato Ntdll.dll per l'archiviazione nel minidump.
 
 ## <a name="syntax"></a>Sintassi
 
@@ -62,7 +62,7 @@ typedef struct _RTL_UNLOAD_EVENT_TRACE {
 RTL_UNLOAD_EVENT_TRACE RtlpUnloadEventTrace[RTL_UNLOAD_EVENT_TRACE_NUMBER];
 ```
 
-A questa funzione non è associato alcun file di intestazione. La libreria di importazione associata, Ntdll. lib, è disponibile in Windows Driver Kit (WDK). È inoltre possibile chiamare questa funzione utilizzando le funzioni [**LoadLibrary**](/windows/win32/api/libloaderapi/nf-libloaderapi-loadlibrarya) e [**GetProcAddress**](/windows/win32/api/libloaderapi/nf-libloaderapi-getprocaddress) .
+A questa funzione non è associato alcun file di intestazione. La libreria di importazione associata, Ntdll.lib, è disponibile in Windows Driver Kit (WDK). È anche possibile chiamare questa funzione usando [**le funzioni LoadLibrary**](/windows/win32/api/libloaderapi/nf-libloaderapi-loadlibrarya) e [**GetProcAddress.**](/windows/win32/api/libloaderapi/nf-libloaderapi-getprocaddress)
 
 ## <a name="requirements"></a>Requisiti
 

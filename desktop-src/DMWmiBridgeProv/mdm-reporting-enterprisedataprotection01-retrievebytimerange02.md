@@ -1,10 +1,10 @@
 ---
-title: Classe MDM_Reporting_EnterpriseDataProtection01_RetrieveByTimeRange02
-description: La \_ \_ \_ classe EnterpriseDataProtection01 RETRIEVEBYTIMERANGE02 di Reporting MDM viene usata per recuperare i log presenti all'interno di StartTime e StopTime.
+title: MDM_Reporting_EnterpriseDataProtection01_RetrieveByTimeRange02 classe
+description: La classe Mdm \_ Reporting \_ EnterpriseDataProtection01 RetrieveByTimeRange02 viene usata per recuperare i log esistenti all'interno di \_ StartTime e StopTime.
 ms.assetid: 6abec00e-901f-4f79-840d-a4ef3a4d392d
 keywords:
-- Classe MDM_Reporting_EnterpriseDataProtection01_RetrieveByTimeRange02
-- Classe MDM_Reporting_EnterpriseDataProtection01_RetrieveByTimeRange02, descritta
+- MDM_Reporting_EnterpriseDataProtection01_RetrieveByTimeRange02 classe
+- MDM_Reporting_EnterpriseDataProtection01_RetrieveByTimeRange02 classe , descritta
 topic_type:
 - apiref
 api_name:
@@ -17,24 +17,24 @@ api_type:
 - DllExport
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: ec266e68bbaaafb1f1e3a78fba7ea6b91805096a
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: 60952e10f437b75edb4edf5a9465d4926b7e0615cc736f19f31520e02997d5f9
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "104047895"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120045611"
 ---
-# <a name="mdm_reporting_enterprisedataprotection01_retrievebytimerange02-class"></a>MDM \_ Reporting \_ EnterpriseDataProtection01 \_ classe RetrieveByTimeRange02
+# <a name="mdm_reporting_enterprisedataprotection01_retrievebytimerange02-class"></a>Classe \_ \_ \_ RetrieveByTimeRange02 di MDM Reporting EnterpriseDataProtection01
 
-\[Alcune informazioni si riferiscono al prodotto pre-rilasciato che può essere modificato in modo sostanziale prima del rilascio commerciale. Microsoft non riconosce alcuna garanzia, espressa o implicita, in merito alle informazioni qui fornite.\]
+\[Alcune informazioni riguardano un prodotto pre-rilasciato che può essere modificato sostanzialmente prima del rilascio in commercio. Microsoft non riconosce alcuna garanzia, espressa o implicita, in merito alle informazioni qui fornite.\]
 
-La **classe \_ \_ EnterpriseDataProtection01 \_ RetrieveByTimeRange02 di Reporting MDM** viene usata per recuperare i log presenti all'interno di StartTime e StopTime. StartTime e StopTime sono espressi in formato ISO 8601. Se i valori di StartTime e StopTime non sono specificati, i valori vengono interpretati come prima esistente o ultima ora esistente.
+La **classe Mdm Reporting \_ \_ EnterpriseDataProtection01 \_ RetrieveByTimeRange02** viene usata per recuperare i log esistenti all'interno di StartTime e StopTime. StartTime e StopTime sono espressi in formato ISO 8601. Se startTime e StopTime non sono specificati, i valori vengono interpretati come la prima ora esistente o l'ultima ora esistente.
 
-Ecco gli altri scenari possibili:
+Ecco gli altri possibili scenari:
 
--   Se StartTime e StopTime non sono specificati, vengono restituiti tutti i log esistenti.
--   Se il StopTime è specificato, ma il StartTime non è specificato, vengono restituiti tutti i log esistenti prima di StopTime.
--   Se viene specificato StartTime, ma StopTime non è specificato, vengono restituiti tutti i log esistenti dall'oggetto StartTime.
+-   Se startTime e StopTime non sono specificati, vengono restituiti tutti i log esistenti.
+-   Se si specifica StopTime, ma startTime non è specificato, vengono restituiti tutti i log esistenti prima di StopTime.
+-   Se viene specificato StartTime, ma stopTime non è specificato, vengono restituiti tutti i log esistenti da StartTime.
 
 La sintassi seguente è semplificata dal codice MOF e include tutte le proprietà ereditate.
 
@@ -55,66 +55,66 @@ class MDM_Reporting_EnterpriseDataProtection01_RetrieveByTimeRange02
 
 ## <a name="members"></a>Members
 
-La **classe \_ \_ EnterpriseDataProtection01 \_ RetrieveByTimeRange02 di Reporting MDM** presenta questi tipi di membri:
+La **classe Mdm Reporting \_ \_ EnterpriseDataProtection01 \_ RetrieveByTimeRange02** include questi tipi di membri:
 
 -   [Proprietà](#properties)
 
 ### <a name="properties"></a>Proprietà
 
-La classe RetrieveByTimeRange02 per la **\_ creazione di report MDM \_ \_ EnterpriseDataProtection01** ha queste proprietà.
+La **classe Mdm Reporting \_ \_ EnterpriseDataProtection01 \_ RetrieveByTimeRange02** ha queste proprietà.
 
 <dl> <dt>
 
 **InstanceID**
 </dt> <dd> <dl> <dt>
 
-Tipo di dati: **String**
+Tipo di dati: **string**
 </dt> <dt>
 
 Tipo di accesso: sola lettura
 </dt> <dt>
 
-Qualificatori: [ **chiave**](/windows/desktop/WmiSdk/key-qualifier)
+Qualificatori: [ **key**](/windows/desktop/WmiSdk/key-qualifier)
 </dt> </dl>
 
-Identifica il nome del nodo padre. Per questa classe la stringa è "RetrieveByTimeRange".
+Identifica il nome del nodo padre. Per questa classe, la stringa è "RetrieveByTimeRange".
 
 </dd> <dt>
 
 [Log](/windows/client-management/mdm/reporting-csp#logs)
 </dt> <dd> <dl> <dt>
 
-Tipo di dati: **String**
+Tipo di dati: **string**
 </dt> <dt>
 
-Tipo di accesso: lettura/scrittura
+Tipo di accesso: Lettura/scrittura
 </dt> </dl>
 
 </dd> <dt>
 
-**ParentID**
+**Parentid**
 </dt> <dd> <dl> <dt>
 
-Tipo di dati: **String**
+Tipo di dati: **string**
 </dt> <dt>
 
 Tipo di accesso: sola lettura
 </dt> <dt>
 
-Qualificatori: [ **chiave**](/windows/desktop/WmiSdk/key-qualifier)
+Qualificatori: [ **key**](/windows/desktop/WmiSdk/key-qualifier)
 </dt> </dl>
 
-Descrive il percorso completo del nodo padre. Per questa classe la stringa è "./Vendor/MSFT/EnterpriseDataProtection"
+Descrive il percorso completo del nodo padre. Per questa classe, la stringa è "./Vendor/MSFT/EnterpriseDataProtection"
 
 </dd> <dt>
 
 [StartTime](/windows/client-management/mdm/reporting-csp#starttime)
 </dt> <dd> <dl> <dt>
 
-Tipo di dati: **String**
+Tipo di dati: **string**
 </dt> <dt>
 
-Tipo di accesso: lettura/scrittura
+Tipo di accesso: Lettura/scrittura
 </dt> </dl>
 
 </dd> <dt>
@@ -122,10 +122,10 @@ Tipo di accesso: lettura/scrittura
 [StopTime](/windows/client-management/mdm/reporting-csp#stoptime)
 </dt> <dd> <dl> <dt>
 
-Tipo di dati: **String**
+Tipo di dati: **string**
 </dt> <dt>
 
-Tipo di accesso: lettura/scrittura
+Tipo di accesso: Lettura/scrittura
 </dt> </dl>
 
 </dd> <dt>
@@ -136,7 +136,7 @@ Tipo di accesso: lettura/scrittura
 Tipo di dati: **sint32**
 </dt> <dt>
 
-Tipo di accesso: lettura/scrittura
+Tipo di accesso: Lettura/scrittura
 </dt> </dl>
 
 </dd> </dl>
@@ -147,11 +147,11 @@ Tipo di accesso: lettura/scrittura
 
 | Requisito | Valore |
 |-------------------------------------|------------------------------------------------------------------------------------------------------|
-| Client minimo supportato<br/> | \[Solo app desktop Windows 10\]<br/>                                                          |
+| Client minimo supportato<br/> | \[Windows 10 solo app desktop\]<br/>                                                          |
 | Server minimo supportato<br/> | Nessuno supportato<br/>                                                                            |
-| Spazio dei nomi<br/>                | \\ \\ Dmmap MDM CIMV2 \\ radice<br/>                                                                   |
-| MOF<br/>                      | <dl> <dt>DMWmiBridgeProv1. mof</dt> </dl>      |
-| DLL<br/>                      | <dl> <dt>\\DMWmiBridgeProv.dllfile MOF</dt> </dl> |
+| Spazio dei nomi<br/>                | Dmmap \\ mdm cimv2 \\ \\ radice<br/>                                                                   |
+| MOF<br/>                      | <dl> <dt>DMWmiBridgeProv1.mof</dt> </dl>      |
+| DLL<br/>                      | <dl> <dt>File mofs \\DMWmiBridgeProv.dll</dt> </dl> |
 
 
 

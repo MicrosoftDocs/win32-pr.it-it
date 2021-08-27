@@ -1,41 +1,41 @@
 ---
-description: Nell'esempio di scripting in questo argomento viene illustrato come utilizzare l'agente di Windows Update (WUA) per analizzare, scaricare e installare un aggiornamento specifico. L'aggiornamento può essere specificato in base al titolo.
+description: L'esempio di scripting in questo argomento illustra come usare Windows Update Agent (WUA) per analizzare, scaricare e installare un aggiornamento specifico. L'aggiornamento può essere specificato dal titolo.
 ms.assetid: 4a5bb920-fc51-48a0-8f66-bb2fcc72589f
 title: Ricerca, download e installazione di aggiornamenti specifici
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: aadd7903303356c3937f41e44aa7a47e71192409
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 70c2da9569ed6fe34b18264ee59e91965877d63e422ae20e25fc27fbc025e812
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104343806"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120071286"
 ---
 # <a name="searching-downloading-and-installing-specific-updates"></a>Ricerca, download e installazione di aggiornamenti specifici
 
-Nell'esempio di scripting in questo argomento viene illustrato come utilizzare l'agente di Windows Update (WUA) per analizzare, scaricare e installare un aggiornamento specifico. L'aggiornamento può essere specificato in base al titolo.
+L'esempio di scripting in questo argomento illustra come usare Windows Update Agent (WUA) per analizzare, scaricare e installare un aggiornamento specifico. L'aggiornamento può essere specificato dal titolo.
 
-Nell'esempio viene eseguita la ricerca di un aggiornamento software specifico, viene scaricato l'aggiornamento, quindi viene installato l'aggiornamento. Un utente, ad esempio, può utilizzare questo metodo per determinare se un aggiornamento critico della sicurezza è installato in un computer. Se l'aggiornamento non è installato, l'utente può verificare che l'aggiornamento venga scaricato e installato. L'utente può inoltre assicurarsi di ricevere una notifica sullo stato dell'installazione.
+L'esempio cerca un aggiornamento software specifico, scarica l'aggiornamento e quindi installa l'aggiornamento. Ad esempio, un utente può usare questo metodo per determinare se un aggiornamento della sicurezza critico è installato in un computer. Se l'aggiornamento non è installato, l'utente può assicurarsi che l'aggiornamento sia scaricato e installato. L'utente può anche assicurarsi di ricevere una notifica sullo stato dell'installazione.
 
-L'aggiornamento di esempio è identificato dal titolo dell'aggiornamento nella [**proprietà title di IUpdate**](/windows/desktop/api/Wuapi/nf-wuapi-iupdate-get_title). Il titolo dell'aggiornamento suggerito in questo esempio è "Update for Windows Rights Management Client 1,0".
+L'aggiornamento di esempio è identificato dal titolo dell'aggiornamento nella [**proprietà Title di IUpdate**](/windows/desktop/api/Wuapi/nf-wuapi-iupdate-get_title). Il titolo dell'aggiornamento suggerito in questo esempio è "Update for Windows Rights Management client 1.0".
 
 > [!Note]  
-> Per informazioni su come cercare, scaricare e installare tutti gli aggiornamenti applicabili a un'applicazione specifica, vedere [ricerca, download e installazione degli aggiornamenti](searching--downloading--and-installing-updates.md).
+> Per informazioni su come cercare, scaricare e installare tutti gli aggiornamenti applicabili a un'applicazione specifica, vedere [Ricerca, download](searching--downloading--and-installing-updates.md)e installazione degli aggiornamenti .
 
  
 
-Prima di provare a eseguire l'esempio, tenere presente quanto segue:
+Prima di provare a eseguire questo esempio, tenere presente quanto segue:
 
--   WUA deve essere installato nel computer. Per ulteriori informazioni su come determinare la versione di WUA installata, vedere [determinazione della versione corrente di WUA](determining-the-current-version-of-wua.md).
--   L'esempio non fornisce una propria interfaccia utente. WUA chiede all'utente di riavviare il computer se è necessario riavviare un aggiornamento.
--   L'esempio può scaricare gli aggiornamenti solo da WUA. Non è possibile scaricare gli aggiornamenti da un server di servizi di aggiornamento software (SUS) 1,0.
--   Per eseguire questo esempio è necessario Windows script host (WSH). Per ulteriori informazioni su WSH, vedere la sezione WSH della piattaforma Software Development Kit (SDK). Se l'esempio viene copiato in un file denominato WUA \_SpecificUpdate.vbs, è possibile eseguirlo aprendo una finestra del prompt dei comandi e digitando il comando seguente: **cscript WUA \_SpecificUpdate.vbs**  
+-   WUA deve essere installato nel computer. Per altre informazioni su come determinare la versione di WUA installata, vedere [Determinare la versione corrente di WUA.](determining-the-current-version-of-wua.md)
+-   L'esempio non fornisce la propria interfaccia utente. WUA richiede all'utente di riavviare il computer se un aggiornamento richiede un riavvio.
+-   L'esempio può scaricare gli aggiornamenti solo da WUA. Non è possibile scaricare gli aggiornamenti da un server SuS (Software Update Services) 1.0.
+-   L'esecuzione di questo esempio richiede Windows Script Host (WSH). Per altre informazioni su WSH, vedere la sezione WSH di Platform Software Development Kit (SDK). Se l'esempio viene copiato in un file denominato WUASpecificUpdate.vbs, è possibile eseguirlo aprendo una finestra del prompt dei comandi e digitando questo \_ comando: **cscript WUA \_SpecificUpdate.vbs**  
     
 
 ## <a name="example"></a>Esempio
 
 > [!IMPORTANT]
-> Questo script ha lo scopo di illustrare l'uso delle API dell'agente Windows Update e fornisce un esempio di come gli sviluppatori possono usare queste API per risolvere i problemi. Questo script non è destinato al codice di produzione e lo script non è supportato da Microsoft (anche se sono supportate le API di Windows Update Agent sottostanti).
+> Questo script ha lo scopo di illustrare l'uso delle API dell'Windows Update Agent e di fornire un esempio di come gli sviluppatori possono usare queste API per risolvere i problemi. Questo script non è inteso come codice di produzione e lo script stesso non è supportato da Microsoft (anche se sono supportate le API Windows Update Agent sottostanti).
 
  
 

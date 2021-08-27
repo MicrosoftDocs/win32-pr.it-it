@@ -14,12 +14,12 @@ api_type:
 api_location:
 - Ndisnpp.dll
 - Rmtnpp.dll
-ms.openlocfilehash: ac262d8da5ab218db7300ea38da59d5c738421c0
-ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
+ms.openlocfilehash: d22333bcaad688fa9ebb805857db3673f48e70591e1d8953274598acef2b368b
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/28/2021
-ms.locfileid: "108103769"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120037511"
 ---
 # <a name="iespstop-method"></a>Metodo IESP::Stop
 
@@ -57,9 +57,9 @@ Se il metodo ha esito negativo, il valore restituito è uno dei codici di errore
 
 | Codice restituito                                                                                          | Descrizione                                                                                                                   |
 |------------------------------------------------------------------------------------------------------|-------------------------------------------------------------------------------------------------------------------------------|
-| <dl> <dt>**NMERR \_ NON \_ CONNESSO**</dt> </dl> | NPP non è connesso alla rete. Chiamare [IESP::Connect](iesp-connect.md) per connettere NPP alla rete.<br/> |
+| <dl> <dt>**NMERR \_ NON \_ CONNESSO**</dt> </dl> | NPP non è connesso alla rete. Chiamare [IESP::Connessione](iesp-connect.md) per connettere NPP alla rete.<br/> |
 | <dl> <dt>**NMERR \_ NON \_ ACQUISISCE**</dt> </dl> | NPP non acquisisce dati. Chiamare [IESP::Start](iesp-start.md) per avviare l'acquisizione.<br/>                            |
-| <dl> <dt>**NMERR \_ NON \_ ESP**</dt> </dl>       | NPP è connesso alla rete, ma non con il [metodo IESP::Connect.](iesp-connect.md)<br/>                     |
+| <dl> <dt>**NMERR \_ NON \_ ESP**</dt> </dl>       | NPP è connesso alla rete, ma non con il metodo [IESP::Connessione.](iesp-connect.md)<br/>                     |
 
 
 
@@ -91,7 +91,7 @@ Quando si arresta e si riavvia l'acquisizione, assicurarsi di chiamare il metodo
 [IESP](iesp.md)
 </dt> <dt>
 
-[IESP::Connect](iesp-connect.md)
+[IESP::Connessione](iesp-connect.md)
 </dt> <dt>
 
 [IESP::Start](iesp-start.md)

@@ -1,10 +1,10 @@
 ---
-title: Proprietà _NewEnum IVMNetworkAdapterCollection (VPCCOMInterfaces. h)
-description: Recupera un enumeratore per l'insieme. | Proprietà _NewEnum IVMNetworkAdapterCollection (VPCCOMInterfaces. h)
+title: Proprietà _NewEnum IVMNetworkAdapterCollection (VPCCOMInterfaces.h)
+description: Recupera un enumeratore per l'insieme. | Proprietà _NewEnum IVMNetworkAdapterCollection (VPCCOMInterfaces.h)
 ms.assetid: 9b970fc6-f8a3-4a16-9d59-789a59a99b68
 keywords:
-- Proprietà _NewEnum Virtual PC
-- Proprietà _NewEnum Virtual PC, interfaccia IVMNetworkAdapterCollection
+- _NewEnum proprietà Virtual PC
+- _NewEnum proprietà Virtual PC , interfaccia IVMNetworkAdapterCollection
 - Interfaccia IVMNetworkAdapterCollection Virtual PC, _NewEnum proprietà
 topic_type:
 - apiref
@@ -17,16 +17,16 @@ api_type:
 - COM
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: caf118700a81865ff93ee581cbb2efd07d237805
-ms.sourcegitcommit: 92e74c99f8f4d097676959d0c317f533c2400a80
+ms.openlocfilehash: d05924b793d281cc190eed434c70efa37f1a930e905751973a6b0285920e1aa1
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/09/2021
-ms.locfileid: "106321492"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120007091"
 ---
 # <a name="ivmnetworkadaptercollection_newenum-property"></a>Proprietà IVMNetworkAdapterCollection:: \_ NewEnum
 
-\[Windows Virtual PC non è più disponibile per l'uso a partire da Windows 8. Usare invece il [provider WMI Hyper-V (v2)](/windows/desktop/HyperV_v2/windows-virtualization-portal).\]
+\[Windows Virtual PC non è più disponibile per l'uso a Windows 8. Usare invece il [provider WMI Hyper-V (V2).](/windows/desktop/HyperV_v2/windows-virtualization-portal)\]
 
 Recupera un enumeratore per l'insieme.
 
@@ -45,7 +45,7 @@ HRESULT get__NewEnum(
 
 ## <a name="property-value"></a>Valore proprietà
 
-Enumeratore [IEnumVARIANT](/windows/win32/api/oaidl/nn-oaidl-ienumvariant) .
+[Enumeratore IEnumVARIANT.](/windows/win32/api/oaidl/nn-oaidl-ienumvariant)
 
 ## <a name="error-codes"></a>Codici di errore
 
@@ -54,8 +54,8 @@ Enumeratore [IEnumVARIANT](/windows/win32/api/oaidl/nn-oaidl-ienumvariant) .
 | Nome/valore                                                                                                                                                    | Significato                                  |
 |---------------------------------------------------------------------------------------------------------------------------------------------------------------|------------------------------------------|
 | <dl> <dt>S \_ OK</dt> <dt>0</dt> </dl>                       | L'operazione è stata completata.<br/> |
-| <dl> <dt>E \_ PUNTATORE</dt> <dt>0x80004003</dt> </dl>         | Il parametro è **null**.<br/>    |
-| <dl> <dt>Disp \_ 0x80020009 \_ eccezione E</dt> <dt></dt> </dl> | Si è verificato un errore imprevisto.<br/> |
+| <dl> <dt>E \_ Puntatore</dt> <dt>0x80004003</dt> </dl>         | Il parametro è **NULL.**<br/>    |
+| <dl> <dt>DISP \_ E \_ EXCEPTION</dt> <dt>0x80020009</dt> </dl> | Si è verificato un errore imprevisto.<br/> |
 
 
 
@@ -65,12 +65,12 @@ Enumeratore [IEnumVARIANT](/windows/win32/api/oaidl/nn-oaidl-ienumvariant) .
 
 | Requisito | Valore |
 |-------------------------------------|------------------------------------------------------------------------------------------------|
-| Client minimo supportato<br/> | \[Solo app desktop di Windows 7\]<br/>                                                     |
+| Client minimo supportato<br/> | Windows 7 \[ app desktop\]<br/>                                                     |
 | Server minimo supportato<br/> | Nessuno supportato<br/>                                                                      |
 | Fine del supporto client<br/>    | Windows 7<br/>                                                                           |
 | Prodotto<br/>                  | Windows Virtual PC<br/>                                                                  |
-| Intestazione<br/>                   | <dl> <dt>VPCCOMInterfaces. h</dt> </dl>  |
-| IID<br/>                      | IID \_ IVMNetworkAdapterCollection è definito come ebaeafe9-EBCD-47CF-866e-ad87d735e479<br/> |
+| Intestazione<br/>                   | <dl> <dt>VPCCOMInterfaces.h</dt> </dl>  |
+| IID<br/>                      | IID \_ IVMNetworkAdapterCollection è definito come ebaeafe9-ebcd-47cf-866e-ad87d735e479<br/> |
 
 
 

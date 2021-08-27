@@ -14,12 +14,12 @@ api_type:
 api_location:
 - D3DX10.lib
 - D3DX10.dll
-ms.openlocfilehash: d8b02b64fd13e7466980340056fceccc1da784cf
-ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
+ms.openlocfilehash: 04cda233d777f05dec44b4fc93537cc33b0369d14d95c104773f0f33ef03498d
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/28/2021
-ms.locfileid: "108103259"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120070041"
 ---
 # <a name="d3dxplanetransformarray-function-d3dx10mathh"></a>Funzione D3DXPlaneTransformArray (D3DX10Math.h)
 
@@ -77,7 +77,7 @@ Puntatore alla struttura D3DXPLANE di input, che contiene la matrice di piani da
 
 Tipo: **[ **UINT**](../winprog/windows-data-types.md)**
 
-Stride di ogni piano non trasformato.
+Passo di ogni piano non trasformato.
 
 </dd> <dt>
 

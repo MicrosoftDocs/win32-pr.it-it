@@ -1,9 +1,9 @@
 ---
-title: Codice di notifica EN_VSCROLL (winuser. h)
+title: EN_VSCROLL di notifica (Winuser.h)
 description: Inviato quando l'utente fa clic sulla barra di scorrimento verticale di un controllo di modifica o quando l'utente scorre la rotellina del mouse sul controllo di modifica.
 ms.assetid: 46307dee-3c5c-4020-9c2b-ec4638a0cea5
 keywords:
-- Controlli di Windows per il codice di notifica EN_VSCROLL
+- EN_VSCROLL del codice di notifica Windows controlli
 topic_type:
 - apiref
 api_name:
@@ -14,16 +14,16 @@ api_type:
 - HeaderDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: de1f99b9ea05d037b5c00562a24bda1e434ce08d
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: c716ecb36c0d27b445446a30eb0a026edf3fd88641f469e50daef1763cd6ca66
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "103874570"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120047381"
 ---
-# <a name="en_vscroll-notification-code"></a>\_Codice di notifica en VSCROLL
+# <a name="en_vscroll-notification-code"></a>Codice \_ di notifica EN VSCROLL
 
-Inviato quando l'utente fa clic sulla barra di scorrimento verticale di un controllo di modifica o quando l'utente scorre la rotellina del mouse sul controllo di modifica. La finestra padre del controllo di modifica riceve questo codice di notifica tramite un messaggio di [**\_ comando WM**](/windows/desktop/menurc/wm-command) . La finestra padre riceve una notifica prima che lo schermo venga aggiornato.
+Inviato quando l'utente fa clic sulla barra di scorrimento verticale di un controllo di modifica o quando l'utente scorre la rotellina del mouse sul controllo di modifica. La finestra padre del controllo di modifica riceve questo codice di notifica tramite un [**messaggio WM \_ COMMAND.**](/windows/desktop/menurc/wm-command) La finestra padre viene notificata prima dell'aggiornamento della schermata.
 
 
 ```C++
@@ -42,7 +42,7 @@ EN_VSCROLL
 *wParam* 
 </dt> <dd>
 
-[**LOWORD**](/previous-versions/windows/desktop/legacy/ms632659(v=vs.85)) contiene l'identificatore del controllo di modifica. [**HIWORD**](/previous-versions/windows/desktop/legacy/ms632657(v=vs.85)) specifica il codice di notifica.
+La [**parola chiave LOWORD**](/previous-versions/windows/desktop/legacy/ms632659(v=vs.85)) contiene l'identificatore del controllo di modifica. HiWORD [**specifica**](/previous-versions/windows/desktop/legacy/ms632657(v=vs.85)) il codice di notifica.
 
 </dd> <dt>
 
@@ -55,11 +55,11 @@ Handle per il controllo di modifica.
 
 ## <a name="remarks"></a>Commenti
 
-Questo messaggio viene inviato per gli eventi del mouse seguenti sulla barra di scorrimento verticale: facendo clic su un pulsante freccia o facendo clic tra il pulsante freccia e il cursore. Tuttavia, il messaggio non viene inviato quando si fa clic sul mouse della barra di scorrimento. Il messaggio viene inviato anche quando un evento della tastiera causa una modifica nell'area di visualizzazione del controllo di modifica, ad esempio, premendo HOME, fine, PGSU, PGGIÙ, freccia su o freccia giù.
+Questo messaggio viene inviato per gli eventi del mouse seguenti sulla barra di scorrimento verticale: facendo clic sul pulsante freccia o facendo clic tra il pulsante freccia e il cursore. Tuttavia, il messaggio non viene inviato quando si fa clic con il mouse sulla barra di scorrimento. Il messaggio viene inviato anche quando un evento della tastiera causa una modifica nell'area di visualizzazione del controllo di modifica, ad esempio premendo HOME, FINE, PGGI SU, PGGI GIÙ, FRECCIA SU o FRECCIA GIÙ.
 
-La rotellina del mouse è un mouse con una rotellina centrale che scorre. Per ulteriori informazioni, vedere la sezione "rotellina del mouse" in [informazioni sull'input del mouse](/windows/desktop/inputdev/about-mouse-input).
+La rotellina del mouse è un mouse con una rotellina centrale che scorre. Per altre informazioni, vedere "Rotellina del mouse" in [Informazioni sull'input del mouse.](/windows/desktop/inputdev/about-mouse-input)
 
-**Modifica avanzata:** Supportato in Microsoft Rich Edit 1,0 e versioni successive. Per ricevere \_ i codici di notifica en VSCROLL, specificare [**ENM \_ Scroll**](rich-edit-control-event-mask-flags.md) nella maschera inviata con il messaggio [**\_ SETEVENTMASK em**](em-seteventmask.md) . Per informazioni sulla compatibilità delle versioni Rich Edit con le varie versioni di sistema, vedere [informazioni sui controlli Rich Edit](about-rich-edit-controls.md).
+**Rich Edit:** Supportato in Microsoft Rich Edit 1.0 e versioni successive. Per ricevere i codici di notifica EN \_ VSCROLL, specificare [**ENM \_ SCROLL**](rich-edit-control-event-mask-flags.md) nella maschera inviata con il [**messaggio EM \_ SETEVENTMASK.**](em-seteventmask.md) Per informazioni sulla compatibilità delle versioni rich edit con le varie versioni di sistema, vedere [Informazioni sui controlli Rich Edit.](about-rich-edit-controls.md)
 
 ## <a name="requirements"></a>Requisiti
 
@@ -67,9 +67,9 @@ La rotellina del mouse è un mouse con una rotellina centrale che scorre. Per ul
 
 | Requisito | Valore |
 |-------------------------------------|----------------------------------------------------------------------------------------------------------|
-| Client minimo supportato<br/> | \[Solo app desktop di Windows Vista\]<br/>                                                           |
-| Server minimo supportato<br/> | \[Solo app desktop Windows Server 2003\]<br/>                                                     |
-| Intestazione<br/>                   | <dl> <dt>Winuser. h (include Windows. h)</dt> </dl> |
+| Client minimo supportato<br/> | Windows Solo \[ app desktop Vista\]<br/>                                                           |
+| Server minimo supportato<br/> | Windows Solo app desktop di Server 2003 \[\]<br/>                                                     |
+| Intestazione<br/>                   | <dl> <dt>Winuser.h (includere Windows.h)</dt> </dl> |
 
 
 
@@ -86,13 +86,13 @@ La rotellina del mouse è un mouse con una rotellina centrale che scorre. Per ul
 **Informazioni concettuali**
 </dt> <dt>
 
-[Uso di controlli di modifica](using-edit-controls.md)
+[Uso dei controlli di modifica](using-edit-controls.md)
 </dt> <dt>
 
 **Altre risorse**
 </dt> <dt>
 
-[**\_comando WM**](/windows/desktop/menurc/wm-command)
+[**COMANDO \_ WM**](/windows/desktop/menurc/wm-command)
 </dt> </dl>
 
  

@@ -1,19 +1,19 @@
 ---
-description: Notifica al sistema la modifica della posizione di un AppBar. Un AppBar deve chiamare questo messaggio in risposta al messaggio WM \_ WINDOWPOSCHANGED.
+description: Notifica al sistema quando la posizione di un'appbar è stata modificata. Un'appbar deve chiamare questo messaggio in risposta al messaggio WM \_ WINDOWPOSCHANGED.
 ms.assetid: 8ca51f5f-b6cf-4f2c-98f4-69c992679320
-title: Messaggio ABM_WINDOWPOSCHANGED (Shellapi. h)
+title: ABM_WINDOWPOSCHANGED messaggio (Shellapi.h)
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 29c8ea6fab6960678ad030a0c1817ad5f8aaae29
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: d770d50629342095308376856b98e6250adc1f9a1f2559da8509d685995428ac
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104484396"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120057811"
 ---
-# <a name="abm_windowposchanged-message"></a>\_Messaggio WINDOWPOSCHANGED ABM
+# <a name="abm_windowposchanged-message"></a>Messaggio ABM \_ WINDOWPOSCHANGED
 
-Notifica al sistema la modifica della posizione di un AppBar. Un AppBar deve chiamare questo messaggio in risposta al messaggio [**WM \_ WINDOWPOSCHANGED**](/windows/desktop/winmsg/wm-windowposchanged) .
+Notifica al sistema quando la posizione di un'appbar è stata modificata. Un'appbar deve chiamare questo messaggio in risposta al [**messaggio WM \_ WINDOWPOSCHANGED.**](/windows/desktop/winmsg/wm-windowposchanged)
 
 
 ```C++
@@ -29,17 +29,17 @@ SHAppBarMessage(ABM_WINDOWPOSCHANGED, pabd);
 *pabd* 
 </dt> <dd>
 
-Puntatore a una struttura [**APPBARDATA**](/windows/desktop/api/Shellapi/ns-shellapi-appbardata) che identifica il AppBar da attivare. Quando si invia questo messaggio, è necessario specificare i membri **cbSize** e **HWND** . tutti gli altri membri vengono ignorati.
+Puntatore a una [**struttura APPBARDATA**](/windows/desktop/api/Shellapi/ns-shellapi-appbardata) che identifica la barra dell'app da attivare. È necessario specificare i **membri cbSize** **e hWnd** quando si invia questo messaggio. tutti gli altri membri vengono ignorati.
 
 </dd> </dl>
 
 ## <a name="return-value"></a>Valore restituito
 
-Restituisce sempre **true**.
+Restituisce sempre **TRUE.**
 
 ## <a name="remarks"></a>Commenti
 
-Questo messaggio viene ignorato se il membro **HWND** della struttura a cui punta *pabd* identifica un AppBar di Nascondi automaticamente.
+Questo messaggio viene ignorato se il **membro hWnd** della struttura a cui punta *pabd* identifica una barra dell'app con rilevamento automatico.
 
 ## <a name="requirements"></a>Requisiti
 
@@ -47,9 +47,9 @@ Questo messaggio viene ignorato se il membro **HWND** della struttura a cui punt
 
 | Requisito | Valore |
 |-------------------------------------|---------------------------------------------------------------------------------------|
-| Client minimo supportato<br/> | \[Solo app desktop Windows XP\]<br/>                                           |
+| Client minimo supportato<br/> | Windows Solo \[ app desktop XP\]<br/>                                           |
 | Server minimo supportato<br/> | Windows 2000 Server \[solo app desktop\]<br/>                                  |
-| Intestazione<br/>                   | <dl> <dt>Shellapi. h</dt> </dl> |
+| Intestazione<br/>                   | <dl> <dt>Shellapi.h</dt> </dl> |
 
 
 

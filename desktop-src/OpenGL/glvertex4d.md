@@ -1,9 +1,9 @@
 ---
-title: funzione glVertex4d (GL. h)
-description: Specifica un vertice. | funzione glVertex4d (GL. h)
+title: Funzione glVertex4d (Gl.h)
+description: Specifica un vertice. | Funzione glVertex4d (Gl.h)
 ms.assetid: d9203e4f-5ed2-41e7-b619-65cee3132ed9
 keywords:
-- funzione glVertex4d OpenGL
+- Funzione glVertex4d OpenGL
 topic_type:
 - apiref
 api_name:
@@ -14,14 +14,14 @@ api_type:
 - DllExport
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 5a28a64c35ff30cc668839899dca4f3dc2958ff9
-ms.sourcegitcommit: 92e74c99f8f4d097676959d0c317f533c2400a80
+ms.openlocfilehash: 6001e3d03e629b807bdb864395b8f6d9bcfba3ff7a1bdf68776ad0ad72edad4b
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/09/2021
-ms.locfileid: "106322002"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120035801"
 ---
-# <a name="glvertex4d-function"></a>glVertex4d (funzione)
+# <a name="glvertex4d-function"></a>Funzione glVertex4d
 
 Specifica un vertice.
 
@@ -77,7 +77,7 @@ Questa funzione non restituisce un valore.
 
 ## <a name="remarks"></a>Commenti
 
-I comandi della funzione glVertex vengono usati all'interno delle coppie [**glBegin**](glbegin.md) / [**glEnd**](glend.md) per specificare i vertici punto, linea e poligono. Le coordinate di colore, normali e di trama correnti sono associate al vertice quando viene chiamato glVertex. Quando si specificano solo *x* e *y* , il valore predefinito per *z* è 0,0 e *w* viene impostato su 1,0. Quando vengono specificati *x*, *y* e *z* , il valore predefinito di *w* è 1,0. La chiamata di glVertex all'esterno di una coppia **glBegin** / **glEnd** comporta un comportamento non definito.
+I comandi della funzione glVertex vengono usati all'interno [**delle coppie glBegin**](glbegin.md)glEnd per specificare i vertici di / [](glend.md) punto, linea e poligono. Le coordinate di colore, normale e trama correnti sono associate al vertice quando viene chiamato glVertex. Se si *specificano solo x* e *y,* il valore predefinito *di z* è 0,0 e il valore predefinito *di w* è 1,0. Quando *si specifica x*, *y* e *z,* *w* viene utilizzato il valore predefinito 1.0. La chiamata di glVertex all'esterno di una coppia **glBegin** / **glEnd** comporta un comportamento indefinito.
 
 ## <a name="requirements"></a>Requisiti
 
@@ -87,8 +87,8 @@ I comandi della funzione glVertex vengono usati all'interno delle coppie [**glBe
 |-------------------------------------|-----------------------------------------------------------------------------------------|
 | Client minimo supportato<br/> | Windows 2000 Professional \[solo app desktop\]<br/>                              |
 | Server minimo supportato<br/> | Windows 2000 Server \[solo app desktop\]<br/>                                    |
-| Intestazione<br/>                   | <dl> <dt>GL. h</dt> </dl>         |
-| Libreria<br/>                  | <dl> <dt>Opengl32. lib</dt> </dl> |
+| Intestazione<br/>                   | <dl> <dt>Gl.h</dt> </dl>         |
+| Libreria<br/>                  | <dl> <dt>Opengl32.lib</dt> </dl> |
 | DLL<br/>                      | <dl> <dt>Opengl32.dll</dt> </dl> |
 
 
@@ -109,7 +109,7 @@ I comandi della funzione glVertex vengono usati all'interno delle coppie [**glBe
 [**glEdgeFlag**](gledgeflag-functions.md)
 </dt> <dt>
 
-[**Remo**](glend.md)
+[**glEnd**](glend.md)
 </dt> <dt>
 
 [**glEvalCoord**](glevalcoord-functions.md)

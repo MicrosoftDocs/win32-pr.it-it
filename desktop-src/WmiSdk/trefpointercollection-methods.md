@@ -2,29 +2,29 @@
 description: La classe TRefPointerCollection espone i metodi seguenti.
 ms.assetid: 453646B6-9F65-4308-AF5F-E818EBF68CAA
 ms.tgt_platform: multiple
-title: Metodi TRefPointerCollection
+title: Metodi di TRefPointerCollection
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: b575c84de03e899308adab516e2021a97b0e224b
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 3f9c0d6160cbbd5d45b364cc1779527ecbe6b8645af6d61df4fa299ea7a3f00a
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "106315192"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120071451"
 ---
-# <a name="trefpointercollection-methods"></a>Metodi TRefPointerCollection
+# <a name="trefpointercollection-methods"></a>Metodi di TRefPointerCollection
 
-\[La classe [**TRefPointerCollection**](/windows/desktop/api/RefPtrCo/nl-refptrco-trefpointercollection) fa parte del Framework del provider WMI, che è ora considerato nello stato finale e non sono disponibili ulteriori sviluppi, miglioramenti o aggiornamenti per i problemi non correlati alla sicurezza che interessano queste librerie. Le [API mi](/previous-versions/windows/desktop/wmi_v2/windows-management-infrastructure) devono essere usate per tutte le nuove attività di sviluppo.\]
+\[La [**classe TRefPointerCollection**](/windows/desktop/api/RefPtrCo/nl-refptrco-trefpointercollection) fa parte del framework del provider WMI che è ora considerato in stato finale e non saranno disponibili altri aggiornamenti, miglioramenti o sviluppo per problemi non correlati alla sicurezza che interessano queste librerie. Le [API MI devono essere](/previous-versions/windows/desktop/wmi_v2/windows-management-infrastructure) usate per tutti i nuovi sviluppi.\]
 
-La classe [**TRefPointerCollection**](/windows/desktop/api/RefPtrCo/nl-refptrco-trefpointercollection) espone i metodi seguenti.
+La [**classe TRefPointerCollection**](/windows/desktop/api/RefPtrCo/nl-refptrco-trefpointercollection) espone i metodi seguenti.
 
 ## <a name="in-this-section"></a>Contenuto della sezione
 
--   [**Aggiungi metodo**](/windows/desktop/api/RefPtrCo/nf-refptrco-trefpointercollection-add)
+-   [**Metodo Add**](/windows/desktop/api/RefPtrCo/nf-refptrco-trefpointercollection-add)
 -   [**Metodo BeginEnum**](/windows/desktop/api/RefPtrCo/nf-refptrco-trefpointercollection-beginenum)
--   [**Metodo Empty**](/windows/desktop/api/RefPtrCo/nf-refptrco-trefpointercollection-empty)
+-   [**Metodo empty**](/windows/desktop/api/RefPtrCo/nf-refptrco-trefpointercollection-empty)
 -   [**Metodo EndEnum**](/windows/desktop/api/RefPtrCo/nf-refptrco-trefpointercollection-endenum)
--   [**GetNext (metodo)**](/windows/desktop/api/RefPtrCo/nf-refptrco-trefpointercollection-getnext)
+-   [**Metodo GetNext**](/windows/desktop/api/RefPtrCo/nf-refptrco-trefpointercollection-getnext)
 -   [**Metodo GetSize**](/windows/desktop/api/RefPtrCo/nf-refptrco-trefpointercollection-getsize)
 -   [**Metodo TRefPointerCollection**](/windows/desktop/api/RefPtrCo/nf-refptrco-trefpointercollection-trefpointercollection(consttrefpointercollection_))
 
