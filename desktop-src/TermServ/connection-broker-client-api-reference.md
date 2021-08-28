@@ -1,31 +1,31 @@
 ---
-title: Riferimento all'API client di Connessione Desktop remoto broker
-description: Elementi di programmazione usati con l'API client di Connessione Desktop remoto broker.
+title: informazioni di riferimento sulle API client di Connessione Desktop remoto Broker
+description: Elementi di programmazione usati con l'API client Connessione Desktop remoto Broker.
 ms.assetid: 0059462A-22BD-4381-9A3E-47C2F09A596A
 ms.tgt_platform: multiple
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: bbfc49ebb8ba5b95bc8a59ba8335b1c287545b99
-ms.sourcegitcommit: 57758ecb246c84d65e6e0e4bd5570d9176fa39cd
+ms.openlocfilehash: 9c7dd899479ecefea182f88c025e8b464bdca8ced41025249f567769cb229452
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/25/2019
-ms.locfileid: "106299163"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119308961"
 ---
-# <a name="remote-desktop-connection-broker-client-api-reference"></a>Riferimento all'API client di Connessione Desktop remoto broker
+# <a name="remote-desktop-connection-broker-client-api-reference"></a>informazioni di riferimento sulle API client di Connessione Desktop remoto Broker
 
-Gli elementi di programmazione seguenti vengono usati con l'API client di Connessione Desktop remoto broker.
+Gli elementi di programmazione seguenti vengono usati con l'API client Connessione Desktop remoto Broker.
 
 ## <a name="in-this-section"></a>Contenuto della sezione
 
--   [Interfacce client di Connessione Desktop remoto broker](connection-broker-client-interfaces.md)
--   [Funzioni client di Connessione Desktop remoto broker](connection-broker-client-functions.md)
--   [Enumerazioni client di Connessione Desktop remoto broker](connection-broker-client-enumerations.md)
--   [Strutture client di Connessione Desktop remoto broker](connection-broker-client-structures.md)
+-   [Connessione Desktop remoto client di Broker](connection-broker-client-interfaces.md)
+-   [Connessione Desktop remoto funzioni client di Broker](connection-broker-client-functions.md)
+-   [enumerazioni client di Connessione Desktop remoto Broker](connection-broker-client-enumerations.md)
+-   [Connessione Desktop remoto strutture client di Broker](connection-broker-client-structures.md)
 
- 
+ 
 
- 
+ 
 
 
 

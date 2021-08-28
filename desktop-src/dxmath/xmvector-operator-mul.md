@@ -1,7 +1,7 @@
 ---
 description: Operatori di moltiplicazione.
 ms.assetid: f8397999-9956-4d11-8705-c95b788a9f03
-title: operatori operator *
+title: Operatori operator *
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -11,14 +11,14 @@ api_name: ''
 api_type:
 - NA
 api_location: ''
-ms.openlocfilehash: 15cdb9d189d110621461c1623b4fd20eaa9e7f5e
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 99f584bac1e31773a5264d4bf3a37931ba9ae793
+ms.sourcegitcommit: 9b5faa61c38b2d0c432b7f2dbee8c127b0e28a7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104130582"
+ms.lasthandoff: 08/19/2021
+ms.locfileid: "122482017"
 ---
-# <a name="operator--operators"></a>\*operatori operator
+# <a name="operator--operators"></a>operatori \* di operatore
 
 Operatori di moltiplicazione
 
@@ -26,47 +26,13 @@ Operatori di moltiplicazione
 
 
 
-<table>
-<colgroup>
-<col style="width: 50%" />
-<col style="width: 50%" />
-</colgroup>
-<thead>
-<tr class="header">
-<th style="text-align: left;">Operatore</th>
-<th style="text-align: left;">Descrizione</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td style="text-align: left;"><a href="/previous-versions/windows/desktop/legacy/ee421390(v=vs.85)"><strong>XMVECTOR:: operator * (float, XMVECTOR)</strong></a></td>
-<td style="text-align: left;">Moltiplicare un valore a virgola mobile in base a un'istanza di <code>XMVECTOR</code> , restituendo il risultato a una nuova istanza di <code>XMVECTOR</code> .<br/> <code>operator *</code>Moltiplica un valore a virgola mobile rispetto a ogni componente di un'istanza del <a href="xmvector-data-type.md"><strong>tipo di dati XMVECTOR</strong></a>, restituendo una nuova <code>XMVECTOR</code> istanza i cui componenti contengono il risultato. <br/>
-<blockquote>
-[!Note]<br />
-Questo operatore è disponibile solo in C++.
-</blockquote>
-<br/></td>
-</tr>
-<tr class="even">
-<td style="text-align: left;"><a href="/previous-versions/windows/desktop/legacy/ee421391(v=vs.85)"><strong>XMVECTOR:: operator * (XMVECTOR, float)</strong></a></td>
-<td style="text-align: left;">Moltiplicare un'istanza di <code>XMVECTOR</code> per un valore a virgola mobile, restituendo il risultato a una nuova istanza di <code>XMVECTOR</code> .<br/> <code>operator *</code>Moltiplica ogni componente di un'istanza del tipo di <a href="xmvector-data-type.md"><strong>dati XMVECTOR</strong></a> in base a un valore a virgola mobile, restituendo una nuova <code>XMVECTOR</code> istanza i cui componenti contengono il risultato. <br/>
-<blockquote>
-[!Note]<br />
-Questo operatore è disponibile solo in C++.
-</blockquote>
-<br/></td>
-</tr>
-<tr class="odd">
-<td style="text-align: left;"><a href="/previous-versions/windows/desktop/legacy/ee421392(v=vs.85)"><strong>XMVECTOR:: operator * (XMVECTOR, XMVECTOR)</strong></a></td>
-<td style="text-align: left;">Moltiplica un'istanza di <code>XMVECTOR</code> per una seconda istanza, restituendo il risultato in una terza istanza. <br/> <code>operator *</code>Moltiplica ogni componente di un'istanza del tipo di <a href="xmvector-data-type.md"><strong>dati XMVECTOR</strong></a> in base al componente corrispondente in una seconda istanza di <code>XMVECTOR</code> , restituendo una nuova <code>XMVECTOR</code> istanza di contenente il risultato. <br/>
-<blockquote>
-[!Note]<br />
-Questo operatore è disponibile solo in C++.
-</blockquote>
-<br/></td>
-</tr>
-</tbody>
-</table>
+
+| Operatore | Descrizione | 
+|----------|-------------|
+| <a href="/previous-versions/windows/desktop/legacy/ee421390(v=vs.85)"><strong>XMVECTOR::operator * (float,XMVECTOR)</strong></a> | Moltiplicare un valore a virgola mobile per un'istanza di <code>XMVECTOR</code> , che restituisce il risultato di una nuova istanza di <code>XMVECTOR</code> .<br /> moltiplica un valore a virgola mobile per ogni componente di un'istanza del tipo di dati <code>operator *</code> <a href="xmvector-data-type.md"><strong>XMVECTOR</strong></a>, che restituisce una nuova istanza i cui componenti <code>XMVECTOR</code> contengono il risultato. <br /><blockquote>[!Note]<br />Questo operatore è disponibile solo in C++.</blockquote><br /> | 
+| <a href="/previous-versions/windows/desktop/legacy/ee421391(v=vs.85)"><strong>XMVECTOR::operator * (XMVECTOR,float)</strong></a> | Moltiplicare un'istanza <code>XMVECTOR</code> di per un valore a virgola mobile, che restituisce il risultato di una nuova istanza di <code>XMVECTOR</code> .<br /> moltiplica ogni componente di un'istanza del tipo di dati XMVECTOR per un valore a virgola mobile, che restituisce una nuova istanza i cui componenti <code>operator *</code> contengono il <a href="xmvector-data-type.md"><strong></strong></a> <code>XMVECTOR</code> risultato. <br /><blockquote>[!Note]<br />Questo operatore è disponibile solo in C++.</blockquote><br /> | 
+| <a href="/previous-versions/windows/desktop/legacy/ee421392(v=vs.85)"><strong>XMVECTOR::operator * (XMVECTOR,XMVECTOR)</strong></a> | Moltiplica un'istanza di <code>XMVECTOR</code> per una seconda istanza, restituisce il risultato in una terza istanza. <br /> moltiplica ogni componente di un'istanza del tipo di dati <code>operator *</code> <a href="xmvector-data-type.md"><strong>XMVECTOR</strong></a> per il componente corrispondente in una seconda istanza di , restituisce una nuova istanza <code>XMVECTOR</code> contenente il <code>XMVECTOR</code> risultato. <br /><blockquote>[!Note]<br />Questo operatore è disponibile solo in C++.</blockquote><br /> | 
+
 
 
 

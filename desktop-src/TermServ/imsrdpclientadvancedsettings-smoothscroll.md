@@ -1,26 +1,26 @@
 ---
-title: Proprietà SmoothScroll di IMsRdpClientAdvancedSettings
-description: Questa proprietà non è supportata. | Proprietà SmoothScroll di IMsRdpClientAdvancedSettings
+title: Proprietà SmoothScroll IMsRdpClientAdvancedSettings
+description: Questa proprietà non è supportata. | Proprietà SmoothScroll IMsRdpClientAdvancedSettings
 ms.assetid: 7f1ce439-0b6e-4426-8dd6-3748509130e1
 ms.tgt_platform: multiple
 keywords:
-- Servizi Desktop remoto proprietà SmoothScroll
-- Servizi Desktop remoto proprietà SmoothScroll, interfaccia IMsRdpClientAdvancedSettings
-- Interfaccia IMsRdpClientAdvancedSettings Servizi Desktop remoto, proprietà SmoothScroll
-- Servizi Desktop remoto proprietà SmoothScroll, interfaccia IMsRdpClientAdvancedSettings2
-- Interfaccia IMsRdpClientAdvancedSettings2 Servizi Desktop remoto, proprietà SmoothScroll
-- Servizi Desktop remoto proprietà SmoothScroll, interfaccia IMsRdpClientAdvancedSettings3
-- Interfaccia IMsRdpClientAdvancedSettings3 Servizi Desktop remoto, proprietà SmoothScroll
-- Servizi Desktop remoto proprietà SmoothScroll, interfaccia IMsRdpClientAdvancedSettings4
-- Interfaccia IMsRdpClientAdvancedSettings4 Servizi Desktop remoto, proprietà SmoothScroll
-- Servizi Desktop remoto proprietà SmoothScroll, interfaccia IMsRdpClientAdvancedSettings5
-- Interfaccia IMsRdpClientAdvancedSettings5 Servizi Desktop remoto, proprietà SmoothScroll
-- Servizi Desktop remoto proprietà SmoothScroll, interfaccia IMsRdpClientAdvancedSettings6
-- Interfaccia IMsRdpClientAdvancedSettings6 Servizi Desktop remoto, proprietà SmoothScroll
-- Servizi Desktop remoto proprietà SmoothScroll, interfaccia IMsRdpClientAdvancedSettings7
-- Interfaccia IMsRdpClientAdvancedSettings7 Servizi Desktop remoto, proprietà SmoothScroll
-- Servizi Desktop remoto proprietà SmoothScroll, interfaccia IMsRdpClientAdvancedSettings8
-- Interfaccia IMsRdpClientAdvancedSettings8 Servizi Desktop remoto, proprietà SmoothScroll
+- Proprietà SmoothScroll Servizi Desktop remoto
+- Proprietà SmoothScroll Servizi Desktop remoto, interfaccia IMsRdpClientAdvancedSettings
+- Interfaccia IMsRdpClientAdvancedSettings Servizi Desktop remoto proprietà , SmoothScroll
+- Proprietà SmoothScroll Servizi Desktop remoto, interfaccia IMsRdpClientAdvancedSettings2
+- Interfaccia IMsRdpClientAdvancedSettings2 Servizi Desktop remoto , proprietà SmoothScroll
+- Proprietà SmoothScroll Servizi Desktop remoto, interfaccia IMsRdpClientAdvancedSettings3
+- Interfaccia IMsRdpClientAdvancedSettings3 Servizi Desktop remoto , proprietà SmoothScroll
+- Proprietà SmoothScroll Servizi Desktop remoto, interfaccia IMsRdpClientAdvancedSettings4
+- Interfaccia IMsRdpClientAdvancedSettings4 Servizi Desktop remoto proprietà , SmoothScroll
+- Proprietà SmoothScroll Servizi Desktop remoto, interfaccia IMsRdpClientAdvancedSettings5
+- Interfaccia IMsRdpClientAdvancedSettings5 Servizi Desktop remoto , proprietà SmoothScroll
+- Proprietà SmoothScroll Servizi Desktop remoto, interfaccia IMsRdpClientAdvancedSettings6
+- Interfaccia IMsRdpClientAdvancedSettings6 Servizi Desktop remoto , proprietà SmoothScroll
+- Proprietà SmoothScroll Servizi Desktop remoto, interfaccia IMsRdpClientAdvancedSettings7
+- Interfaccia IMsRdpClientAdvancedSettings7 Servizi Desktop remoto , proprietà SmoothScroll
+- Proprietà SmoothScroll Servizi Desktop remoto, interfaccia IMsRdpClientAdvancedSettings8
+- Interfaccia IMsRdpClientAdvancedSettings8 Servizi Desktop remoto , proprietà SmoothScroll
 topic_type:
 - apiref
 api_name:
@@ -54,14 +54,14 @@ api_type:
 - COM
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 62be8fe85415792116c23b4e12d9ab56fb89e0f4
-ms.sourcegitcommit: 92e74c99f8f4d097676959d0c317f533c2400a80
+ms.openlocfilehash: 58009b0f63e82439ad34ebe774f72dc4a4de443a87bbe0a300c7fcec0206118d
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/09/2021
-ms.locfileid: "106321708"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119990271"
 ---
-# <a name="imsrdpclientadvancedsettingssmoothscroll-property"></a>Proprietà IMsRdpClientAdvancedSettings:: SmoothScroll
+# <a name="imsrdpclientadvancedsettingssmoothscroll-property"></a>Proprietà IMsRdpClientAdvancedSettings::SmoothScroll
 
 Questa proprietà non è supportata.
 
@@ -84,11 +84,11 @@ HRESULT get_SmoothScroll(
 
 ## <a name="property-value"></a>Valore proprietà
 
-Impostare questo parametro su 0 per disabilitare lo scorrimento uniforme o un valore diverso da zero per abilitare lo scorrimento uniforme.
+Impostare questo parametro su 0 per disabilitare lo scorrimento uniforme o su un valore diverso da zero per abilitare lo scorrimento uniforme.
 
 ## <a name="error-codes"></a>Codici di errore
 
-Restituisce un valore **\_ false**.
+Restituisce **S \_ FALSE.**
 
 ## <a name="requirements"></a>Requisiti
 
@@ -101,7 +101,7 @@ Restituisce un valore **\_ false**.
 | Fine del supporto client<br/>    | Nessuno supportato<br/>                                                                       |
 | Libreria dei tipi<br/>             | <dl> <dt>MsTscAx.dll</dt> </dl>          |
 | DLL<br/>                      | <dl> <dt>MsTscAx.dll</dt> </dl>          |
-| IID<br/>                      | IID \_ IMsRdpClientAdvancedSettings è definito come 3c65b4ab-12b3-465b-aCD4-b8dad3bff9e2<br/> |
+| IID<br/>                      | IID \_ IMsRdpClientAdvancedSettings è definito come 3c65b4ab-12b3-465b-acd4-b8dad3bff9e2<br/> |
 
 
 

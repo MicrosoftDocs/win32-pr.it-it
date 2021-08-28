@@ -4,12 +4,12 @@ ms.assetid: 72a77e83-ab18-438c-af11-fa6d55bf0180
 title: Compatibility Administrator
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 0c735154115fb649d6c6d6b710709ce77c9e0b4e
-ms.sourcegitcommit: 099ecdda1e83618b844387405da0db0ebda93a65
+ms.openlocfilehash: 504378dd4998118e0189a40d978b5649a0bc0215e88ff660d7cdafa6edf7602c
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/04/2021
-ms.locfileid: "111443942"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120098541"
 ---
 # <a name="compatibility-administrator"></a>Compatibility Administrator
 
@@ -21,7 +21,7 @@ ms.locfileid: "111443942"
 
 ## <a name="description"></a>Descrizione
 
-Lo strumento Di amministrazione compatibilità, fornito da Application Compatibility Toolkit (ACT) consente di risolvere molti dei potenziali problemi di compatibilità delle applicazioni, prima di distribuire una nuova versione di Windows nell'organizzazione, tramite:
+Lo strumento Di amministrazione compatibilità, fornito da Application Compatibility Toolkit (ACT) consente di risolvere molti dei potenziali problemi di compatibilità delle applicazioni, prima di distribuire una nuova versione di Windows all'organizzazione, tramite:
 
 -   Fornire singole correzioni di compatibilità, modalità di compatibilità e messaggi di AppHelp che è possibile usare per risolvere problemi di compatibilità specifici
 -   Possibilità di creare correzioni di compatibilità, modalità di compatibilità, messaggi di AppHelp e database di compatibilità personalizzati
@@ -43,7 +43,7 @@ Il diagramma di flusso seguente illustra i passaggi necessari per usare Amminist
 
 ## <a name="links-to-other-resources"></a>Collegamenti ad altre risorse
 
--   [Application Compatibility Toolkit Download](/windows-hardware/get-started/adk-install)
+-   [Compatibilità delle applicazioni Toolkit download](/windows-hardware/get-started/adk-install)
 -   [Uso di Amministrazione compatibilità](/previous-versions/windows/it-pro/windows-7/cc749034(v=ws.10))
 -   [Correzioni di compatibilità note, modalità di compatibilità e messaggi di AppHelp](/previous-versions/windows/it-pro/windows-7/cc765984(v=ws.10))
 -   [Test e mitigazione dei problemi tramite gli strumenti di sviluppo](/previous-versions/orphan-topics/ws.10/cc766461(v=ws.10))

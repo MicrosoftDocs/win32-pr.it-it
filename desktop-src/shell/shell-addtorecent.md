@@ -1,5 +1,5 @@
 ---
-description: "Metodo Shell.AddToRecent: aggiunge un file all'elenco degli elementi usati più di recente."
+description: "Metodo Shell.AddToRecent: aggiunge un file all'elenco degli ultimi elementi usati ."
 ms.assetid: 26D2AE5A-FC7E-4c7c-9F10-8D3D7AA236E7
 title: Metodo Shell.AddToRecent (Shldisp.h)
 ms.topic: reference
@@ -13,16 +13,16 @@ api_type:
 - COM
 api_location:
 - Shell32.dll
-ms.openlocfilehash: 92ea7432c318939a01f86405ae33d8ac90b88c80
-ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
+ms.openlocfilehash: 47382014587057cfe5e1db20e040f2a220f71eee3379521ab93e4006f45930e2
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/28/2021
-ms.locfileid: "108083869"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119660791"
 ---
 # <a name="shelladdtorecent-method"></a>Metodo Shell.AddToRecent
 
-Aggiunge un file all'elenco degli elementi usati più di recente.
+Aggiunge un file all'elenco MRU (Most Recently Used).
 
 ## <a name="syntax"></a>Sintassi
 
@@ -56,9 +56,9 @@ Shell.AddToRecent( _
 
 Tipo: **Variante**
 
-Valore **String** contenente il percorso del file da aggiungere all'elenco dei documenti usati di recente.
+Valore **String** contenente il percorso del file da aggiungere all'elenco di documenti usati di recente.
 
-**Windows Vista:** impostare questo parametro su **null per** cancellare la cartella dei documenti recenti.
+**Windows Vista:** impostare questo parametro su **Null per** cancellare la cartella documenti recenti.
 
 </dd> <dt>
 
@@ -83,9 +83,9 @@ Questo metodo non restituisce valori.
 
 ## <a name="examples"></a>Esempio
 
-Gli esempi seguenti illustrano l'uso **di AddToRecent** per JScript, VBScript e Visual Basic.
+Gli esempi seguenti illustrano l'uso di **AddToRecent** per JScript, VBScript e Visual Basic.
 
-Jscript:
+JScript:
 
 
 ```JScript
@@ -180,8 +180,8 @@ End Sub
 
 | Requisito | Valore |
 |-------------------------------------|---------------------------------------------------------------------------------------------------------------|
-| Client minimo supportato<br/> | Solo app desktop di Windows XP \[\]<br/>                                                                   |
-| Server minimo supportato<br/> | Solo app desktop di Windows Server 2003 \[\]<br/>                                                          |
+| Client minimo supportato<br/> | Windows Solo \[ app desktop XP\]<br/>                                                                   |
+| Server minimo supportato<br/> | Windows Solo app desktop server 2003 \[\]<br/>                                                          |
 | Intestazione<br/>                   | <dl> <dt>Shldisp.h</dt> </dl>                          |
 | Idl<br/>                      | <dl> <dt>Shldisp.idl</dt> </dl>                        |
 | DLL<br/>                      | <dl> <dt>Shell32.dll (versione 6.0 o successiva)</dt> </dl> |

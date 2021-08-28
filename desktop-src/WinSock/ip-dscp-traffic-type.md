@@ -1,5 +1,5 @@
 ---
-description: La tabella seguente descrive le \_ Opzioni del socket del tipo di traffico IP DSCP \_ \_ .
+description: Nella tabella seguente vengono descritte le opzioni del \_ socket IP DSCP \_ TRAFFIC \_ TYPE.
 ms.assetid: 0042B53F-B84E-453A-8E18-87052280DAD5
 title: IP_DSCP_TRAFFIC_TYPE
 ms.topic: reference
@@ -13,22 +13,22 @@ api_type:
 - HeaderDef
 api_location:
 - N/A
-ms.openlocfilehash: 80cbe41e58cf36cd366015d83af380f5952630ce
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: 87915dc214b0ba306b4f38dbd833b27199277564fa8c2815b9147e0d82253589
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "106328375"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120097851"
 ---
-# <a name="ip_dscp_traffic_type"></a>\_tipo di \_ traffico \_ DSCP IP
+# <a name="ip_dscp_traffic_type"></a>TIPO \_ DI TRAFFICO \_ DSCP \_ IP
 
-La tabella seguente descrive le \_ Opzioni del socket del tipo di traffico IP DSCP \_ \_ .
+Nella tabella seguente vengono descritte le opzioni del \_ socket IP DSCP \_ TRAFFIC \_ TYPE.
 
-<dl> <dt><span id="IP_DSCP_TRAFFIC_TYPE"></span><span id="ip_dscp_traffic_type"></span>**\_tipo di \_ traffico \_ DSCP IP**</dt> <dd> <dl> <dt> 
+<dl> <dt><span id="IP_DSCP_TRAFFIC_TYPE"></span><span id="ip_dscp_traffic_type"></span>**TIPO \_ DI TRAFFICO \_ DSCP \_ IP**</dt> <dd> <dl> <dt> 
 
-| Opzione              | Recupero | Set | Tipo optVal | Descrizione                                                                                                                                                                                                                                                                                                                                      |
+| Opzione              | Recupero | Impostazione | Tipo optval | Descrizione                                                                                                                                                                                                                                                                                                                                      |
 |---------------------|-----|-----|-------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| \_tipo di traffico DSCP \_ | Sì | Sì | DWORD       | Impostando questo valore su valori definiti nel **\_ \_ tipo di traffico DSCP**, un'applicazione sarà in grado di richiedere i pacchetti di rete da considerare in base al tipo di servizio richiesto. Analogamente, le chiamate a [**getsockopt**](/windows/desktop/api/winsock/nf-winsock-getsockopt) possono essere usate per ottenere l'impostazione corrente per il tipo di traffico richiesto sul socket specificato |
+| TIPO DI \_ TRAFFICO DSCP \_ | Sì | Sì | DWORD       | Impostando questo valore su valori definiti in **DSCP \_ TRAFFIC \_ TYPE,** un'applicazione sarà in grado di chiedere ai pacchetti di rete di essere trattati in base al tipo di servizio richiesto. Analogamente, le chiamate a [**getsockopt**](/windows/desktop/api/winsock/nf-winsock-getsockopt) possono essere usate per ottenere l'impostazione corrente per il tipo di traffico richiesto nel socket specificato |
 
 
 

@@ -1,9 +1,9 @@
 ---
-title: Codice di notifica LBN_SELCHANGE (winuser. h)
-description: Notifica all'applicazione che la selezione in una casella di riepilogo è stata modificata in seguito all'input dell'utente. La finestra padre della casella di riepilogo riceve questo codice di notifica tramite il \_ messaggio di comando WM.
+title: LBN_SELCHANGE codice di notifica (Winuser.h)
+description: Notifica all'applicazione che la selezione in una casella di riepilogo è stata modificata in seguito all'input dell'utente. La finestra padre della casella di riepilogo riceve questo codice di notifica tramite il messaggio WM \_ COMMAND.
 ms.assetid: 126d2c47-816e-4179-a870-f5c5a34c5513
 keywords:
-- Controlli di Windows per il codice di notifica LBN_SELCHANGE
+- LBN_SELCHANGE codice di notifica Windows controlli
 topic_type:
 - apiref
 api_name:
@@ -14,16 +14,16 @@ api_type:
 - HeaderDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: e029d1753a0fa74f39a59a459d6ede45811a40fd
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: 3ef87aebcf2ce804a10b4682bfaf2cba900bd227a06671959d11babce5f46774
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "103741570"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120085181"
 ---
-# <a name="lbn_selchange-notification-code"></a>\_Codice di notifica SelChange di LBN
+# <a name="lbn_selchange-notification-code"></a>Codice di notifica \_ LBN SELCHANGE
 
-Notifica all'applicazione che la selezione in una casella di riepilogo è stata modificata in seguito all'input dell'utente. La finestra padre della casella di riepilogo riceve questo codice di notifica tramite il messaggio di [**\_ comando WM**](/windows/desktop/menurc/wm-command) .
+Notifica all'applicazione che la selezione in una casella di riepilogo è stata modificata in seguito all'input dell'utente. La finestra padre della casella di riepilogo riceve questo codice di notifica tramite il [**messaggio WM \_ COMMAND.**](/windows/desktop/menurc/wm-command)
 
 
 ```C++
@@ -42,7 +42,7 @@ LBN_SELCHANGE
 *wParam* 
 </dt> <dd>
 
-[**LOWORD**](/previous-versions/windows/desktop/legacy/ms632659(v=vs.85)) contiene l'identificatore della casella di riepilogo. [**HIWORD**](/previous-versions/windows/desktop/legacy/ms632657(v=vs.85)) specifica il codice di notifica.
+La [**parola chiave LOWORD**](/previous-versions/windows/desktop/legacy/ms632659(v=vs.85)) contiene l'identificatore della casella di riepilogo. HIWORD [**specifica**](/previous-versions/windows/desktop/legacy/ms632657(v=vs.85)) il codice di notifica.
 
 </dd> <dt>
 
@@ -55,11 +55,11 @@ Handle per la casella di riepilogo.
 
 ## <a name="remarks"></a>Commenti
 
-Questo codice di notifica viene inviato solo da una casella di riepilogo con lo stile di [**\_ notifica lbs**](list-box-styles.md) .
+Questo codice di notifica viene inviato solo da una casella di riepilogo con lo [**stile \_ LBS NOTIFY.**](list-box-styles.md)
 
-Questo codice di notifica non viene inviato se il messaggio [**lb \_ SETSEL**](lb-setsel.md), [**lb \_ secursel**](lb-setcursel.md), [**lb \_ SELECTSTRING**](lb-selectstring.md), [**lb \_ SELITEMRANGE**](lb-selitemrange.md) o [**lb \_ SELITEMRANGEEX**](lb-selitemrangeex.md) modifica la selezione.
+Questo codice di notifica non viene inviato se il messaggio [**LB \_ SETSEL,**](lb-setsel.md) [**LB \_ SETCURSEL,**](lb-setcursel.md) [**LB \_ SELECTSTRING,**](lb-selectstring.md) [**LB \_ SELITEMRANGE**](lb-selitemrange.md) o [**LB \_ SELITEMRANGEEX**](lb-selitemrangeex.md) modifica la selezione.
 
-Per una casella di riepilogo a selezione multipla, \_ viene inviato il codice di notifica SelChange di LBN ogni volta che l'utente preme un tasto di direzione, anche se la selezione non cambia.
+Per una casella di riepilogo a selezione multipla, il codice di notifica LBN SELCHANGE viene inviato ogni volta che l'utente preme un tasto di direzione, anche se la selezione \_ non cambia.
 
 ## <a name="requirements"></a>Requisiti
 
@@ -67,9 +67,9 @@ Per una casella di riepilogo a selezione multipla, \_ viene inviato il codice di
 
 | Requisito | Valore |
 |-------------------------------------|----------------------------------------------------------------------------------------------------------|
-| Client minimo supportato<br/> | \[Solo app desktop di Windows Vista\]<br/>                                                           |
-| Server minimo supportato<br/> | \[Solo app desktop Windows Server 2003\]<br/>                                                     |
-| Intestazione<br/>                   | <dl> <dt>Winuser. h (include Windows. h)</dt> </dl> |
+| Client minimo supportato<br/> | Windows Solo \[ app desktop di Vista\]<br/>                                                           |
+| Server minimo supportato<br/> | Windows Solo app desktop server 2003 \[\]<br/>                                                     |
+| Intestazione<br/>                   | <dl> <dt>Winuser.h (includere Windows.h)</dt> </dl> |
 
 
 
@@ -80,19 +80,19 @@ Per una casella di riepilogo a selezione multipla, \_ viene inviato il codice di
 **Riferimento**
 </dt> <dt>
 
-[**di \_ lb**](lb-setcursel.md)
+[**LB \_ SETCURSEL**](lb-setcursel.md)
 </dt> <dt>
 
-[\_DBLCLK LBN](lbn-dblclk.md)
+[LBN \_ DBLCLK](lbn-dblclk.md)
 </dt> <dt>
 
-[\_SELCANCEL LBN](lbn-selcancel.md)
+[LBN \_ SELCANCEL](lbn-selcancel.md)
 </dt> <dt>
 
 **Altre risorse**
 </dt> <dt>
 
-[**\_comando WM**](/windows/desktop/menurc/wm-command)
+[**COMANDO \_ WM**](/windows/desktop/menurc/wm-command)
 </dt> </dl>
 
  

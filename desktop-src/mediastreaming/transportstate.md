@@ -1,9 +1,9 @@
 ---
 title: Enumerazione TransportState
-description: Definisce gli Stati di trasporto disponibili come definito dalle linee guida di UPnP.
+description: Definisce gli stati di trasporto disponibili in base alle linee guida UPnP.
 ms.assetid: 2F942EAC-514B-4E65-A12F-85558E9A96A0
 keywords:
-- API di streaming multimediale dell'enumerazione TransportState
+- ENUMERAZIONE TransportState API Streaming multimediale
 topic_type:
 - apiref
 api_name:
@@ -14,16 +14,16 @@ api_type:
 - IDLDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 865d7e0f6a96727915833bb402860cde661162f9
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: a21fc8d0f2799cfba734d605d0c4d2835744ddeb130327ea39a22090d13464f0
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "106332882"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119663091"
 ---
 # <a name="transportstate-enumeration"></a>Enumerazione TransportState
 
-Definisce gli Stati di trasporto disponibili come definito dalle linee guida di UPnP.
+Definisce gli stati di trasporto disponibili in base alle linee guida UPnP.
 
 ## <a name="syntax"></a>Sintassi
 
@@ -50,35 +50,35 @@ typedef enum _TransportState {
 <span id="Unknown"></span><span id="unknown"></span><span id="UNKNOWN"></span>**Sconosciuto**
 </dt> <dd>
 
-Stato del dispositivo errato.
+Stato errroneo del dispositivo.
 
 </dd> <dt>
 
 <span id="Stopped"></span><span id="stopped"></span><span id="STOPPED"></span>**Fermato**
 </dt> <dd>
 
-Il trasporto del dispositivo è in stato interrotto.
+Il trasporto del dispositivo è in stato arrestato.
 
 </dd> <dt>
 
-<span id="Playing"></span><span id="playing"></span><span id="PLAYING"></span>**Riproduzione**
+<span id="Playing"></span><span id="playing"></span><span id="PLAYING"></span>**Giocare**
 </dt> <dd>
 
-Il trasporto del dispositivo è in uno stato di riproduzione.
+Il trasporto del dispositivo è in stato di riproduzione.
 
 </dd> <dt>
 
 <span id="Transitioning"></span><span id="transitioning"></span><span id="TRANSITIONING"></span>**Transizione**
 </dt> <dd>
 
-Il trasporto del dispositivo è in uno stato di transizione che comporterà un altro valore di stato.
+Il trasporto del dispositivo è in uno stato di transizione che comporta un altro valore di stato.
 
 </dd> <dt>
 
 <span id="Paused"></span><span id="paused"></span><span id="PAUSED"></span>**Pausa**
 </dt> <dd>
 
-Il trasporto del dispositivo è in uno stato di sospensione.
+Il trasporto del dispositivo è in stato di sospensione.
 
 </dd> <dt>
 
@@ -99,7 +99,7 @@ Per il trasporto del dispositivo non è impostato un URI per la riproduzione.
 <span id="Last"></span><span id="last"></span><span id="LAST"></span>**Ultima**
 </dt> <dd>
 
-Stato precedente del dispositivo allo stato del trasporto corrente.
+Stato precedente del dispositivo allo stato di trasporto corrente.
 
 </dd> </dl>
 
@@ -109,7 +109,7 @@ Stato precedente del dispositivo allo stato del trasporto corrente.
 
 | Requisito | Valore |
 |----------------|------------------------------------------------------------------------------------------------------------------------------------------------|
-| IDL<br/> | <dl> <dt>Windows. Media. streaming. IDL (riferimento a Windows. Media. streaming. idl)</dt> </dl> |
+| Idl<br/> | <dl> <dt>Windows. Media.Streaming.idl (riferimento Windows. Media.Streaming.idl)</dt> </dl> |
 
 
 

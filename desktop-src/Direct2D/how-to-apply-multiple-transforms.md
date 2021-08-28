@@ -1,23 +1,23 @@
 ---
 title: Come applicare più trasformazioni a un oggetto
-description: Viene illustrato come applicare più trasformazioni a un oggetto.
+description: Illustra come applicare più trasformazioni a un oggetto .
 ms.assetid: a3875072-bb73-4698-944e-102ab5539d80
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: e031a46545c59513767ed4d260be9dc677b3fb77
-ms.sourcegitcommit: 2d531328b6ed82d4ad971a45a5131b430c5866f7
+ms.openlocfilehash: 7d63db7899b79dd07a6a4a14a4efbbfaeefc5723ad09c71a3462ba5d2fd0c042
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "103708362"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119259687"
 ---
 # <a name="how-to-apply-multiple-transforms-to-an-object"></a>Come applicare più trasformazioni a un oggetto
 
-Per eseguire più trasformazioni su un oggetto significa combinare più trasformazioni in una sola. Ovvero, prendendo l'output da ogni matrice di trasformazione e utilizzandolo come input per il successivo, ottenendo così gli effetti cumulativi di tutte le trasformazioni di matrice.
+Per eseguire più trasformazioni su un oggetto, è necessario combinare più trasformazioni in una sola. In altri termini, prendere l'output di ogni matrice di trasformazione e usarlo come input per la successiva, ottenendo in tal modo gli effetti cumulativi di tutte le trasformazioni di matrice.
 
-Si supponga che due matrici di trasformazione, rotazione e traslazione, vengano moltiplicate insieme. Il risultato è una nuova matrice che esegue le funzioni di rotazione e traslazione. Poiché la moltiplicazione di matrici non è commutativa, una trasformazione di rotazione moltiplicata per una trasformazione di conversione è diversa dalla trasformazione di conversione moltiplicata per la trasformazione di rotazione.
+Si supponga che due matrici di trasformazione, rotazione e traslazione, siano moltiplicate insieme. Il risultato è una nuova matrice che esegue le funzioni di rotazione e traslazione. Poiché la moltiplicazione di matrici non è commutativa, una trasformazione di rotazione moltiplicata per una trasformazione di traslazione è diversa dalla trasformazione di traslazione moltiplicata per la trasformazione di rotazione.
 
-Gli esempi di codice seguenti illustrano come applicare la rotazione seguita dalla conversione e quindi dalla conversione seguita dalla rotazione. Si noti che i risultati del rendering sono diversi.
+Gli esempi di codice seguenti illustrano come applicare la rotazione seguita dalla traslazione e quindi dalla traslazione seguita dalla rotazione. Si noti che i risultati del rendering sono diversi.
 
 
 ```C++
@@ -87,21 +87,21 @@ m_pRenderTarget->DrawRectangle(rectangle, m_pTransformedShapeBrush);
 
 Il codice produce l'output illustrato nella figura seguente.
 
-![illustrazione di un rettangolo che è stato convertito e quindi ruotato e un rettangolo che è stato ruotato e quindi convertito](images/multipletransforms.png)
+![illustrazione di un rettangolo che è stato traslato e quindi ruotato e di un rettangolo che è stato ruotato e quindi convertito](images/multipletransforms.png)
 
 ## <a name="related-topics"></a>Argomenti correlati
 
 <dl> <dt>
 
-[Riferimento Direct2D](reference.md)
+[Informazioni di riferimento su Direct2D](reference.md)
 </dt> <dt>
 
 [Cenni preliminari sulle trasformazioni Direct2D](direct2d-transforms-overview.md)
 </dt> </dl>
 
- 
+ 
 
- 
+ 
 
 
 

@@ -1,6 +1,6 @@
 ---
-title: 'Funzione Texture2D:: GatherCmpGreen (S, float, float, int)'
-description: "Per quattro valori Texel che verrebbero usati in un'operazione di filtro bi-lineare, restituisce un confronto tra il relativo componente verde e un valore di confronto. | Funzione Texture2D:: GatherCmpGreen (S, float, float, int)"
+title: Funzione Texture2D::GatherCmpGreen(S,float,float,int)
+description: Per quattro valori texel che verrebbero usati in un'operazione di filtro bi-lineare, restituisce un confronto tra il componente verde e un valore di confronto. | Funzione Texture2D::GatherCmpGreen(S,float,float,int)
 ms.assetid: 5a11ce0c-56b2-460a-95d7-15688dd158ff
 keywords:
 - Funzione GatherCmpGreen HLSL
@@ -13,16 +13,16 @@ api_type:
 ms.topic: reference
 ms.date: 05/31/2018
 api_location: ''
-ms.openlocfilehash: 9346d8b66f90ed780e48e6fcae88e71dc9d9ca1b
-ms.sourcegitcommit: 92e74c99f8f4d097676959d0c317f533c2400a80
+ms.openlocfilehash: 44ebf3590a756ea0bb78e6cc9c636523cb584cdd862059418f7b7c9508bfecfa
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/09/2021
-ms.locfileid: "104353096"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120095121"
 ---
-# <a name="texture2dgathercmpgreensfloatfloatint-function"></a>Funzione Texture2D:: GatherCmpGreen (S, float, float, int)
+# <a name="texture2dgathercmpgreensfloatfloatint-function"></a>Funzione Texture2D::GatherCmpGreen(S,float,float,int)
 
-Per quattro valori Texel che verrebbero usati in un'operazione di filtro bi-lineare, restituisce un confronto tra il relativo componente verde e un valore di confronto.
+Per quattro valori texel che verrebbero usati in un'operazione di filtro bi-lineare, restituisce un confronto tra il componente verde e un valore di confronto.
 
 ## <a name="syntax"></a>Sintassi
 
@@ -48,16 +48,16 @@ Indice del campionatore in base zero.
 
 </dd> <dt>
 
-*posizione* \[ in\]
+*location* \[ Pollici\]
 </dt> <dd>
 
 Tipo: **float2**
 
-Coordinate di esempio (u, v).
+Coordinate di esempio (u,v).
 
 </dd> <dt>
 
-*Confronta \_ valore* \[ in\]
+*confrontare \_ il valore* \[ in\]
 </dt> <dd>
 
 Tipo: **float**
@@ -66,7 +66,7 @@ Valore da confrontare con ogni valore campionato.
 
 </dd> <dt>
 
-*offset* \[ in\]
+*offset* \[ Pollici\]
 </dt> <dd>
 
 Tipo: **int2**
@@ -79,7 +79,7 @@ Offset applicato alla coordinata di trama prima del campionamento.
 
 Tipo: **float4**
 
-Un valore a quattro componenti, ogni componente è il risultato di un confronto per ogni componente.
+Un valore a quattro componenti, ogni componente è il risultato di un confronto per componente.
 
 ## <a name="remarks"></a>Commenti
 
@@ -89,7 +89,7 @@ Questa funzione è supportata per i tipi di shader seguenti:
 
 
 
-| Vertice | Hull | Dominio | Geometria | Pixel | Calcolo |
+| Vertice | Scafo | Dominio | Geometria | Pixel | Calcolo |
 |--------|------|--------|----------|-------|---------|
 | x      | x    | x      | x        | x     | x       |
 
@@ -104,7 +104,7 @@ Questa funzione è supportata per i tipi di shader seguenti:
 [Metodi GatherCmpGreen](texture2d-gathercmpgreen.md)
 </dt> <dt>
 
-[Modello Shader 5](d3d11-graphics-reference-sm5.md)
+[Modello shader 5](d3d11-graphics-reference-sm5.md)
 </dt> </dl>
 
  

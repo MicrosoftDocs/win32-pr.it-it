@@ -1,8 +1,8 @@
 ---
-description: La \_ classe CIM BasedOn rappresenta un'associazione che descrive come possono essere assemblati gli extent di archiviazione da extent di livello inferiore.
+description: La classe CiM BasedOn rappresenta un'associazione che descrive come assemblare gli extent di archiviazione da \_ extent di livello inferiore.
 ms.assetid: 82132012-5851-4be8-82db-edbdb50b70e5
 ms.tgt_platform: multiple
-title: Classe CIM_BasedOn (provider WMI CIMWin32)
+title: CIM_BasedOn (provider WMI CIMWin32)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -18,19 +18,19 @@ api_type:
 - DllExport
 api_location:
 - CIMWin32.dll
-ms.openlocfilehash: 5e25cd9a5f194df8c5cbc0c7dc24a4777cee3417
-ms.sourcegitcommit: c7add10d695482e1ceb72d62b8a4ebd84ea050f7
+ms.openlocfilehash: 0a6bdd4c61628c71dbcb58b7b1d177cf7e936f802165aa9beed0aa195aeef4a9
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104225724"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119439261"
 ---
-# <a name="cim_basedon-class-cimwin32-wmi-providers"></a>Classe CIM_BasedOn (provider WMI CIMWin32)
+# <a name="cim_basedon-class-cimwin32-wmi-providers"></a>CIM_BasedOn (provider WMI CIMWin32)
 
-La classe **CIM \_ BasedOn** rappresenta un'associazione che descrive come possono essere assemblati gli extent di archiviazione da extent di livello inferiore. Ad esempio, gli extent fisici includono extent dello spazio protetto. I set di volumi vengono quindi assemblati da uno o più extent di spazio fisico o protetto. La memoria cache può essere definita in modo indipendente e realizzata in un elemento fisico oppure può essere basata su extent di archiviazione volatili o non volatili.
+La **classe \_ CiM BasedOn** rappresenta un'associazione che descrive come assemblare gli extent di archiviazione da extent di livello inferiore. Ad esempio, gli extent fisici includono extent di spazio protetto. Di conseguenza, i set di volumi vengono assemblati da uno o più extent di spazio fisico o protetto. La memoria cache può essere definita in modo indipendente e realizzata in un elemento fisico oppure può essere basata su extent di archiviazione volatili o non volatili.
 
 > [!IMPORTANT]
-> Le classi CIM (Common Information Model) DMTF (Distributed Management Task Force) sono le classi padre sulle quali vengono compilate le classi WMI. Attualmente WMI supporta solo gli [schemi della versione CIM 2. x](https://dmtf.org/standards/cim/schemas).
+> Le classi CIM (Distributed Management Task Force) DMTF (Distributed Management Task Force) Common Information Model sono le classi padre su cui vengono compilate le classi WMI. WMI supporta attualmente solo gli [schemi della versione CIM 2.x](https://dmtf.org/standards/cim/schemas).
 
  
 
@@ -51,13 +51,13 @@ class CIM_BasedOn : CIM_Dependency
 
 ## <a name="members"></a>Members
 
-La classe **CIM \_ BasedOn** presenta questi tipi di membri:
+La **classe CIM \_ BasedOn** ha questi tipi di membri:
 
 -   [Proprietà](#properties)
 
 ### <a name="properties"></a>Proprietà
 
-La classe **CIM \_ BasedOn** dispone di queste proprietà.
+La **classe CIM \_ BasedOn** ha queste proprietà.
 
 <dl> <dt>
 
@@ -70,10 +70,10 @@ Tipo di dati: **CIM \_ StorageExtent**
 Tipo di accesso: sola lettura
 </dt> <dt>
 
-Qualificatori: [**override**](/windows/desktop/WmiSdk/standard-qualifiers) ("antecedente")
+Qualificatori: [**override**](/windows/desktop/WmiSdk/standard-qualifiers) ("Antecedent")
 </dt> </dl>
 
-Un [**\_ StorageExtent CIM**](cim-storageextent.md) che descrive l'extent di archiviazione di livello inferiore.
+Oggetto [**CIM \_ StorageExtent che**](cim-storageextent.md) descrive l'extent di archiviazione di livello inferiore.
 
 </dd> <dt>
 
@@ -86,17 +86,17 @@ Tipo di dati: **CIM \_ StorageExtent**
 Tipo di accesso: sola lettura
 </dt> <dt>
 
-Qualificatori: [**override**](/windows/desktop/WmiSdk/standard-qualifiers) ("dipendente")
+Qualificatori: [**override**](/windows/desktop/WmiSdk/standard-qualifiers) ("Dipendente")
 </dt> </dl>
 
-Un [**\_ StorageExtent CIM**](cim-storageextent.md) che descrive l'extent di archiviazione di livello superiore.
+Oggetto [**CIM \_ StorageExtent**](cim-storageextent.md) che descrive l'extent di archiviazione di livello superiore.
 
 </dd> <dt>
 
 **EndingAddress**
 </dt> <dd> <dl> <dt>
 
-Tipo di dati: **UInt64**
+Tipo di dati: **uint64**
 </dt> <dt>
 
 Tipo di accesso: sola lettura
@@ -104,14 +104,14 @@ Tipo di accesso: sola lettura
 
 Indica la fine dell'extent di alto livello nell'archiviazione di livello inferiore. Questa proprietà è utile quando si esegue il mapping di extent non contigui in un raggruppamento di livello superiore.
 
-Per ulteriori informazioni sull'utilizzo di valori **UInt64** negli script, vedere [scripting in WMI](/windows/desktop/WmiSdk/creating-a-wmi-script).
+Per altre informazioni sull'uso **dei valori uint64** negli script, vedere [Scripting in WMI.](/windows/desktop/WmiSdk/creating-a-wmi-script)
 
 </dd> <dt>
 
-**IndirizzoIniziale**
+**Indirizzo iniziale**
 </dt> <dd> <dl> <dt>
 
-Tipo di dati: **UInt64**
+Tipo di dati: **uint64**
 </dt> <dt>
 
 Tipo di accesso: sola lettura
@@ -119,17 +119,17 @@ Tipo di accesso: sola lettura
 
 Indica l'inizio dell'extent di alto livello nell'archiviazione di livello inferiore.
 
-Per ulteriori informazioni sull'utilizzo di valori **UInt64** negli script, vedere [scripting in WMI](/windows/desktop/WmiSdk/creating-a-wmi-script).
+Per altre informazioni sull'uso **dei valori uint64** negli script, vedere [Scripting in WMI.](/windows/desktop/WmiSdk/creating-a-wmi-script)
 
 </dd> </dl>
 
 ## <a name="remarks"></a>Commenti
 
-La classe **CIM \_ BasedOn** è derivata dalla [**\_ dipendenza CIM**](cim-dependency.md).
+La **classe \_ CiM BasedOn** è derivata dalla [**dipendenza CIM \_**](cim-dependency.md).
 
 WMI non implementa questa classe.
 
-Questa documentazione è derivata dalle descrizioni della classe CIM pubblicate da DMTF. Microsoft potrebbe avere apportato modifiche per correggere gli errori secondari, rispettare gli standard di documentazione di Microsoft SDK o fornire altre informazioni.
+Questa documentazione è derivata dalle descrizioni della classe CIM pubblicate da DMTF. Microsoft potrebbe aver apportato modifiche per correggere errori secondari, essere conforme agli standard della documentazione di Microsoft SDK o fornire altre informazioni.
 
 ## <a name="requirements"></a>Requisiti
 
@@ -140,7 +140,7 @@ Questa documentazione è derivata dalle descrizioni della classe CIM pubblicate 
 | Client minimo supportato<br/> | Windows Vista<br/>                                                                |
 | Server minimo supportato<br/> | Windows Server 2008<br/>                                                          |
 | Spazio dei nomi<br/>                | \\CIMV2 radice<br/>                                                                  |
-| MOF<br/>                      | <dl> <dt>CIMWin32. mof</dt> </dl> |
+| MOF<br/>                      | <dl> <dt>CIMWin32.mof</dt> </dl> |
 | DLL<br/>                      | <dl> <dt>CIMWin32.dll</dt> </dl> |
 
 
@@ -149,7 +149,7 @@ Questa documentazione è derivata dalle descrizioni della classe CIM pubblicate 
 
 <dl> <dt>
 
-[**\_Dipendenza CIM**](cim-dependency.md)
+[**Dipendenza \_ CIM**](cim-dependency.md)
 </dt> </dl>
 
  

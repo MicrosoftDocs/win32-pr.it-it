@@ -1,9 +1,9 @@
 ---
 title: GetBufferSizeBits
-description: Per la documentazione corrente sui codec Windows Media e sui processori di segnali digitali, vedere Windows Media Audio e codec video e API DSP. | GetBufferSizeBits
+description: Per la documentazione corrente Windows codec multimediali e processori di segnali digitali, vedere Windows Api codec audio e video e DSP. | GetBufferSizeBits
 ms.assetid: a7667fea-8bf9-4f87-bae1-6a32c00e753c
 keywords:
-- GetBufferSizeBits Windows Media Format
+- Formato multimediale GetBufferSizeBits
 topic_type:
 - apiref
 api_name:
@@ -12,16 +12,16 @@ api_type:
 - NA
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: c7251436424a40779ec3da37d3d0dd2dcc66fbb1
-ms.sourcegitcommit: 92e74c99f8f4d097676959d0c317f533c2400a80
+ms.openlocfilehash: 731d066a25396199e26bf6c41d8196083440c33dce24579ba397c99c9b99deea
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/09/2021
-ms.locfileid: "103886249"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120006661"
 ---
 # <a name="getbuffersizebits"></a>GetBufferSizeBits
 
-Per la documentazione corrente sui codec Windows Media e sui processori di segnali digitali, vedere [Windows Media audio e codec video e API DSP.](/previous-versions//dd464626(v=vs.85))
+Per la documentazione corrente Windows codec multimediali e processori di segnali digitali, vedere Windows Api codec audio e video e [DSP.](/previous-versions//dd464626(v=vs.85))
 
  
 

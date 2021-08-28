@@ -1,7 +1,7 @@
 ---
-description: Puntatore all'ultimo nodo nell'elenco.
+description: Puntatore all'ultimo nodo dell'elenco.
 ms.assetid: e72e4dab-da64-472a-b7bd-6af99883f703
-title: 'Membro CBaseList:: m_pLast (Wxlist. h)'
+title: Membro CBaseList::m_pLast (Wxlist.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -16,16 +16,16 @@ api_location:
 - Strmbase.dll
 - Strmbasd.lib
 - Strmbasd.dll
-ms.openlocfilehash: 3fd3e7cbb2a8f121c21f2e845acadf1462bfa433
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: 659dc3ab3f8979a0141b827cb4c66b27d5e241f71c65c9949a7ca611d62ffdfd
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "106328651"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120084511"
 ---
-# <a name="cbaselistm_plast-member"></a>Membro CBaseList:: m \_ pLast
+# <a name="cbaselistm_plast-member"></a>Membro CBaseList::m \_ pLast
 
-Puntatore all'ultimo nodo nell'elenco.
+Puntatore all'ultimo nodo dell'elenco.
 
 ## <a name="syntax"></a>Sintassi
 
@@ -42,8 +42,8 @@ CNode *m_pLast;
 
 | Requisito | Valore |
 |--------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Intestazione<br/>  | <dl> <dt>Wxlist. h (include Streams. h)</dt> </dl>                                                                                    |
-| Libreria<br/> | <dl> <dt>Strmbase. lib (compilazioni finali); </dt> <dt>Strmbasd. lib (build di debug)</dt> </dl> |
+| Intestazione<br/>  | <dl> <dt>Wxlist.h (includere Flussi.h)</dt> </dl>                                                                                    |
+| Libreria<br/> | <dl> <dt>Strmbase.lib (build di vendita al dettaglio); </dt> <dt>Strmbasd.lib (build di debug)</dt> </dl> |
 
 
 

@@ -1,19 +1,19 @@
 ---
-description: Gli operatori seguenti sono esposti dalla struttura XMVECTORU8.
+description: Gli operatori seguenti vengono esposti dalla struttura XMVECTORU8.
 ms.assetid: caa72465-c146-4bdc-a66f-325cf4487866
 title: Operatori XMVECTORU8
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: e42fa97b407714ca88b3ea9a0da769726db7dd6f
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: ce443ff1aea35d4e2e03c11587848093408a9dc13e05854a566a02fa9c540141
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104130614"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119841351"
 ---
 # <a name="xmvectoru8-operators"></a>Operatori XMVECTORU8
 
-Gli operatori seguenti sono esposti dalla struttura [**XMVECTORU8**](xmvectoru8-data-type.md) .
+Gli operatori seguenti vengono esposti dalla [**struttura XMVECTORU8.**](xmvectoru8-data-type.md)
 
 > [!Note]  
 > Gli operatori elencati di seguito sono disponibili solo in C++.
@@ -26,8 +26,8 @@ Gli operatori seguenti sono esposti dalla struttura [**XMVECTORU8**](xmvectoru8-
 
 | Metodi                                                              | Descrizione                                                                                                                                                                                                                                                                                             |
 |----------------------------------------------------------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| [**operatore \_ \_ m128i**](/previous-versions/windows/desktop/legacy/ee421373(v=vs.85))<br/> | Restituisce l'oggetto che implementa l'istanza corrente di [**XMVECTORU8**](xmvectoru8-data-type.md) cast a un'istanza [ \_ \_ m128i](/cpp/cpp/m128i) di \[ sistemi Windows che supportano solo [SSE](/previous-versions/visualstudio/visual-studio-2010/t467de55(v=vs.100))\]<br/> |
-| [**operatore XMVECTOR**](/previous-versions/windows/desktop/legacy/ee421374(v=vs.85))<br/> | Restituisce l'istanza di che `XMVECTOR` implementa l'istanza corrente di `XMVECTORU8` .<br/>                                                                                                                                                                                                        |
+| [**operator \_ \_ m128i**](/previous-versions/windows/desktop/legacy/ee421373(v=vs.85))<br/> | Restituisce l'oggetto che implementa l'istanza corrente del cast [**XMVECTORU8**](xmvectoru8-data-type.md) a un'istanza [ \_ \_ m128i](/cpp/cpp/m128i) \[ di Windows che supportano solo [SSE](/previous-versions/visualstudio/visual-studio-2010/t467de55(v=vs.100))\]<br/> |
+| [**operatore XMVECTOR**](/previous-versions/windows/desktop/legacy/ee421374(v=vs.85))<br/> | Restituisce l'istanza `XMVECTOR` di che implementa l'istanza corrente di `XMVECTORU8` .<br/>                                                                                                                                                                                                        |
 
 
 

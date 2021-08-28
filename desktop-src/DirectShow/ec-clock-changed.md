@@ -1,17 +1,17 @@
 ---
 description: L'orologio di riferimento è stato modificato.
 ms.assetid: f6de9e74-85fa-4f36-9d7d-3d95f2dbf873
-title: EC_CLOCK_CHANGED (dshow. h)
+title: EC_CLOCK_CHANGED (Dshow.h)
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 7f6a1346c4d445245e62c4823edb4f2cc5accfcf
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: 760c947c74a88f9c37ba75ffb55c49e5581c370ef4cc153aee8ebf377bf29246
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "106328468"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119965961"
 ---
-# <a name="ec_clock_changed"></a>\_orologio EC \_ modificato
+# <a name="ec_clock_changed"></a>EC \_ CLOCK \_ MODIFICATO
 
 L'orologio di riferimento è stato modificato.
 
@@ -39,7 +39,7 @@ No.
 
 ## <a name="remarks"></a>Osservazioni
 
-Il gestore del grafico dei filtri Invia questo evento quando viene chiamato il metodo [**IMediaFilter:: SetSyncSource**](/windows/desktop/api/Strmif/nf-strmif-imediafilter-setsyncsource) .
+Il gestore del grafico filtri invia questo evento quando viene chiamato il metodo [**IMediaFilter::SetSyncSource.**](/windows/desktop/api/Strmif/nf-strmif-imediafilter-setsyncsource)
 
 ## <a name="requirements"></a>Requisiti
 
@@ -47,7 +47,7 @@ Il gestore del grafico dei filtri Invia questo evento quando viene chiamato il m
 
 | Requisito | Valore |
 |-------------------|------------------------------------------------------------------------------------|
-| Intestazione<br/> | <dl> <dt>Dshow. h</dt> </dl> |
+| Intestazione<br/> | <dl> <dt>Dshow.h</dt> </dl> |
 
 
 

@@ -1,11 +1,11 @@
 ---
-title: attributo ms-DS-Promotion-Settings
-description: Per un computer, contiene una stringa XML da usare per la promozione DSA delegata.
+title: Attributo ms-DS-Promotion-Impostazioni
+description: Per un computer, contiene una stringa XML da usare per l'innalzamento di livello DSA delegato.
 ms.assetid: 5256da96-7713-4bc1-b2e7-a830ad508644
 ms.tgt_platform: multiple
 keywords:
-- attributo di Active Directory per gli attributi ms-DS-Promotion-Settings
-- attributo msDS-PromotionSettings-schema AD
+- Schema AD ms-DS-Promotion-Impostazioni
+- Schema AD dell'attributo msDS-PromotionSettings
 topic_type:
 - apiref
 api_name:
@@ -14,28 +14,28 @@ api_type:
 - Schema
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 10026c2afca6c10785903f0f4e8cb5c52e9183ae
-ms.sourcegitcommit: b77ace27b0432e7cd3863191b11926be032fbe2f
+ms.openlocfilehash: 8c68f4a4114af24009acefcba9df6115d8cff90561d29a3c06b09a9f6f8f9100
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/14/2020
-ms.locfileid: "106303501"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119322141"
 ---
-# <a name="ms-ds-promotion-settings-attribute"></a>attributo ms-DS-Promotion-Settings
+# <a name="ms-ds-promotion-settings-attribute"></a>Attributo ms-DS-Promotion-Impostazioni
 
-Per un computer, contiene una stringa XML da usare per la promozione DSA delegata.
+Per un computer, contiene una stringa XML da usare per l'innalzamento di livello DSA delegato.
 
 
 
 | Voce | Valore |
 |-------------------|---------------------------------------------|
-| CN                | ms-DS-Promotion-impostazioni                    |
-| LDAP-Display-Name | msDS-PromotionSettings                      |
+| CN                | ms-DS-Promotion-Impostazioni                    |
+| Ldap-Display-Name | msDS-PromotionSettings                      |
 | Dimensione              | \-                                          |
-| Privilegio aggiornamento  | \-                                          |
+| Privilegio di aggiornamento  | \-                                          |
 | Frequenza di aggiornamento  | \-                                          |
 | Attribute-Id      | 1.2.840.113556.1.4.1962                     |
-| System-ID-GUID    | c881b4e2-43c0-4ebe-b9bb-5250aa9b434c        |
+| System-Id-Guid    | c881b4e2-43c0-4ebe-b9bb-5250aa9b434c        |
 | Sintassi            | [**String(Unicode)**](s-string-unicode.md) |
 
 
@@ -55,15 +55,15 @@ Per un computer, contiene una stringa XML da usare per la promozione DSA delegat
 | ID collegamento                | \-                                        |
 | MAPI-Id                | \-                                        |
 | System-Only            | Vero                                      |
-| È a valore singolo       | Vero                                      |
+| Is-Single-Valued       | Vero                                      |
 | Indicizzato             | Falso                                     |
 | Nel catalogo globale      | Falso                                     |
-| NT-Security-descrittore | O:BAG: NON VALIDO: S:                              |
+| NT-Security-Descriptor | O:BAG:BAD:S:                              |
 | Range-Lower            | \-                                        |
 | Range-Upper            | \-                                        |
 | Search-Flags           | 0x00000000                                |
 | System-Flags           | 0x00000010                                |
-| Classi utilizzate in        | [**Computer**](c-computer.md)<br/> |
+| Classi usate in        | [**Computer**](c-computer.md)<br/> |
 
 
 
@@ -76,15 +76,15 @@ Per un computer, contiene una stringa XML da usare per la promozione DSA delegat
 | ID collegamento                | \-                                        |
 | MAPI-Id                | \-                                        |
 | System-Only            | Vero                                      |
-| È a valore singolo       | Vero                                      |
+| Is-Single-Valued       | Vero                                      |
 | Indicizzato             | Falso                                     |
 | Nel catalogo globale      | Falso                                     |
-| NT-Security-descrittore | O:BAG: NON VALIDO: S:                              |
+| NT-Security-Descriptor | O:BAG:BAD:S:                              |
 | Range-Lower            | \-                                        |
 | Range-Upper            | \-                                        |
 | Search-Flags           | 0x00000000                                |
 | System-Flags           | 0x00000010                                |
-| Classi utilizzate in        | [**Computer**](c-computer.md)<br/> |
+| Classi usate in        | [**Computer**](c-computer.md)<br/> |
 
 
 
@@ -97,15 +97,15 @@ Per un computer, contiene una stringa XML da usare per la promozione DSA delegat
 | ID collegamento                | \-                                        |
 | MAPI-Id                | \-                                        |
 | System-Only            | Vero                                      |
-| È a valore singolo       | Vero                                      |
+| Is-Single-Valued       | Vero                                      |
 | Indicizzato             | Falso                                     |
 | Nel catalogo globale      | Falso                                     |
-| NT-Security-descrittore | O:BAG: NON VALIDO: S:                              |
+| NT-Security-Descriptor | O:BAG:BAD:S:                              |
 | Range-Lower            | \-                                        |
 | Range-Upper            | \-                                        |
 | Search-Flags           | 0x00000000                                |
 | System-Flags           | 0x00000010                                |
-| Classi utilizzate in        | [**Computer**](c-computer.md)<br/> |
+| Classi usate in        | [**Computer**](c-computer.md)<br/> |
 
 
 

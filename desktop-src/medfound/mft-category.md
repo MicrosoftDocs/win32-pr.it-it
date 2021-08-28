@@ -1,89 +1,37 @@
 ---
-description: I GUID seguenti definiscono le categorie per le trasformazioni di Media Foundation (MFTs). Queste categorie vengono usate per registrare ed enumerare MFTs.
+description: I GUID seguenti definiscono le categorie per Media Foundation (MFT). Queste categorie vengono usate per registrare ed enumerare mFT.
 ms.assetid: eca3ae3b-e40a-407d-986c-d0a85b891f52
-title: MFT_CATEGORY (Mfapi. h)
+title: MFT_CATEGORY (Mfapi.h)
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: cb7bc74054ad9f201b1f2ca53b526826d34c510d
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 12a65386561f18c105fde47d885ca97858131ecb
+ms.sourcegitcommit: 9b5faa61c38b2d0c432b7f2dbee8c127b0e28a7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "103880609"
+ms.lasthandoff: 08/19/2021
+ms.locfileid: "122475557"
 ---
-# <a name="mft_category"></a>\_categoria MFT
+# <a name="mft_category"></a>CATEGORIA \_ MFT
 
-I GUID seguenti definiscono le categorie per le trasformazioni di Media Foundation (MFTs). Queste categorie vengono usate per registrare ed enumerare MFTs.
+I GUID seguenti definiscono le categorie per Media Foundation (MFT). Queste categorie vengono usate per registrare ed enumerare mFT.
 
 
 
-<table>
-<colgroup>
-<col style="width: 50%" />
-<col style="width: 50%" />
-</colgroup>
-<thead>
-<tr class="header">
-<th style="text-align: left;">Costante</th>
-<th style="text-align: left;">Descrizione</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td style="text-align: left;"><span id="MFT_CATEGORY_AUDIO_DECODER"></span><span id="mft_category_audio_decoder"></span><dl> <dt><strong>MFT_CATEGORY_AUDIO_DECODER</strong></dt> </dl></td>
-<td style="text-align: left;">Decodificatori audio.<br/></td>
-</tr>
-<tr class="even">
-<td style="text-align: left;"><span id="MFT_CATEGORY_AUDIO_EFFECT"></span><span id="mft_category_audio_effect"></span><dl> <dt><strong>MFT_CATEGORY_AUDIO_EFFECT</strong></dt> </dl></td>
-<td style="text-align: left;">Effetti audio.<br/></td>
-</tr>
-<tr class="odd">
-<td style="text-align: left;"><span id="MFT_CATEGORY_AUDIO_ENCODER"></span><span id="mft_category_audio_encoder"></span><dl> <dt><strong>MFT_CATEGORY_AUDIO_ENCODER</strong></dt> </dl></td>
-<td style="text-align: left;">Codificatori audio.<br/></td>
-</tr>
-<tr class="even">
-<td style="text-align: left;"><span id="MFT_CATEGORY_DEMULTIPLEXER"></span><span id="mft_category_demultiplexer"></span><dl> <dt><strong>MFT_CATEGORY_DEMULTIPLEXER</strong></dt> </dl></td>
-<td style="text-align: left;">Demultiplexer.<br/></td>
-</tr>
-<tr class="odd">
-<td style="text-align: left;"><span id="MFT_CATEGORY_MULTIPLEXER"></span><span id="mft_category_multiplexer"></span><dl> <dt><strong>MFT_CATEGORY_MULTIPLEXER</strong></dt> </dl></td>
-<td style="text-align: left;">Multiplexer.<br/>
-<blockquote>
-[!Note]<br />
-In Windows Vista, la pipeline Media Foundation non supporta MFTs con più di un input. I MFTs con più input sono supportati in Windows 7.
-</blockquote>
-<br/> <br/></td>
-</tr>
-<tr class="even">
-<td style="text-align: left;"><span id="MFT_CATEGORY_OTHER"></span><span id="mft_category_other"></span><dl> <dt><strong>MFT_CATEGORY_OTHER</strong></dt> </dl></td>
-<td style="text-align: left;">MFTs varie.<br/></td>
-</tr>
-<tr class="odd">
-<td style="text-align: left;"><span id="MFT_CATEGORY_VIDEO_DECODER"></span><span id="mft_category_video_decoder"></span><dl> <dt><strong>MFT_CATEGORY_VIDEO_DECODER</strong></dt> </dl></td>
-<td style="text-align: left;">Decodificatori video.<br/></td>
-</tr>
-<tr class="even">
-<td style="text-align: left;"><span id="MFT_CATEGORY_VIDEO_EFFECT"></span><span id="mft_category_video_effect"></span><dl> <dt><strong>MFT_CATEGORY_VIDEO_EFFECT</strong></dt> </dl></td>
-<td style="text-align: left;">Effetti video.<br/></td>
-</tr>
-<tr class="odd">
-<td style="text-align: left;"><span id="MFT_CATEGORY_VIDEO_RENDERER_EFFECT"></span><span id="mft_category_video_renderer_effect"></span><dl> <dt><strong>MFT_CATEGORY_VIDEO_RENDERER_EFFECT</strong></dt> </dl></td>
-<td style="text-align: left;">Effetti renderer video.<br/></td>
-</tr>
-<tr class="even">
-<td style="text-align: left;"><span id="MFT_CATEGORY_VIDEO_ENCODER"></span><span id="mft_category_video_encoder"></span><dl> <dt><strong>MFT_CATEGORY_VIDEO_ENCODER</strong></dt> </dl></td>
-<td style="text-align: left;">Codificatori video.<br/></td>
-</tr>
-<tr class="odd">
-<td style="text-align: left;"><span id="MFT_CATEGORY_VIDEO_PROCESSOR"></span><span id="mft_category_video_processor"></span><dl> <dt><strong>MFT_CATEGORY_VIDEO_PROCESSOR</strong></dt> </dl></td>
-<td style="text-align: left;"><blockquote>
-[!Note]<br />
-Introdotta in Windows 7.
-</blockquote>
-<br/> Processori video. <br/> Questa categoria è limitata a MFTs che eseguono conversioni di formato su video non compressi, incluse le conversioni di spazio colore. Per gli effetti video che modificano l'aspetto dell'immagine, ad esempio un effetto di sfocatura o una trasformazione da colore a scala di grigi, usare la categoria <strong>MFT_CATEGORY_VIDEO_EFFECT</strong> .<br/></td>
-</tr>
-</tbody>
-</table>
+
+| Costante | Descrizione | 
+|----------|-------------|
+| <span id="MFT_CATEGORY_AUDIO_DECODER"></span><span id="mft_category_audio_decoder"></span><dl><dt><strong>MFT_CATEGORY_AUDIO_DECODER</strong></dt></dl> | Decodificatori audio.<br /> | 
+| <span id="MFT_CATEGORY_AUDIO_EFFECT"></span><span id="mft_category_audio_effect"></span><dl><dt><strong>MFT_CATEGORY_AUDIO_EFFECT</strong></dt></dl> | Effetti audio.<br /> | 
+| <span id="MFT_CATEGORY_AUDIO_ENCODER"></span><span id="mft_category_audio_encoder"></span><dl><dt><strong>MFT_CATEGORY_AUDIO_ENCODER</strong></dt></dl> | Codificatori audio.<br /> | 
+| <span id="MFT_CATEGORY_DEMULTIPLEXER"></span><span id="mft_category_demultiplexer"></span><dl><dt><strong>MFT_CATEGORY_DEMULTIPLEXER</strong></dt></dl> | Demultiplexer.<br /> | 
+| <span id="MFT_CATEGORY_MULTIPLEXER"></span><span id="mft_category_multiplexer"></span><dl><dt><strong>MFT_CATEGORY_MULTIPLEXER</strong></dt></dl> | Multiplexer.<br /><blockquote>[!Note]<br />In Windows Vista, la pipeline Media Foundation non supporta MFT con più di un input. I MFT a più input sono supportati in Windows 7.</blockquote><br /><br /> | 
+| <span id="MFT_CATEGORY_OTHER"></span><span id="mft_category_other"></span><dl><dt><strong>MFT_CATEGORY_OTHER</strong></dt></dl> | MFT vari.<br /> | 
+| <span id="MFT_CATEGORY_VIDEO_DECODER"></span><span id="mft_category_video_decoder"></span><dl><dt><strong>MFT_CATEGORY_VIDEO_DECODER</strong></dt></dl> | Decodificatori video.<br /> | 
+| <span id="MFT_CATEGORY_VIDEO_EFFECT"></span><span id="mft_category_video_effect"></span><dl><dt><strong>MFT_CATEGORY_VIDEO_EFFECT</strong></dt></dl> | Effetti video.<br /> | 
+| <span id="MFT_CATEGORY_VIDEO_RENDERER_EFFECT"></span><span id="mft_category_video_renderer_effect"></span><dl><dt><strong>MFT_CATEGORY_VIDEO_RENDERER_EFFECT</strong></dt></dl> | Effetti del renderer video.<br /> | 
+| <span id="MFT_CATEGORY_VIDEO_ENCODER"></span><span id="mft_category_video_encoder"></span><dl><dt><strong>MFT_CATEGORY_VIDEO_ENCODER</strong></dt></dl> | Codificatori video.<br /> | 
+| <span id="MFT_CATEGORY_VIDEO_PROCESSOR"></span><span id="mft_category_video_processor"></span><dl><dt><strong>MFT_CATEGORY_VIDEO_PROCESSOR</strong></dt></dl> | <blockquote>[!Note]<br />Introdotto in Windows 7.</blockquote><br /> Processori video. <br /> Questa categoria è limitata a MFT che eseguono conversioni di formato su video non compressi, incluse le conversioni dello spazio colore. Per gli effetti video che modificano l'aspetto dell'immagine,ad esempio un effetto sfocatura o una trasformazione in scala di colore a grigio, usare la MFT_CATEGORY_VIDEO_EFFECT <strong>predefinita.</strong><br /> | 
+
 
 
 
@@ -91,11 +39,11 @@ Introdotta in Windows 7.
 
 
 
-| Requisito | Valore |
+| Requisito | valore |
 |-------------------------------------|------------------------------------------------------------------------------------|
-| Client minimo supportato<br/> | \[Solo app desktop di Windows Vista\]<br/>                                     |
-| Server minimo supportato<br/> | \[Solo app desktop Windows Server 2008\]<br/>                               |
-| Intestazione<br/>                   | <dl> <dt>Mfapi. h</dt> </dl> |
+| Client minimo supportato<br/> | Windows Solo \[ app desktop di Vista\]<br/>                                     |
+| Server minimo supportato<br/> | Windows Solo app desktop server 2008 \[\]<br/>                               |
+| Intestazione<br/>                   | <dl> <dt>Mfapi.h</dt> </dl> |
 
 
 
@@ -103,10 +51,10 @@ Introdotta in Windows 7.
 
 <dl> <dt>
 
-[Costanti Media Foundation](media-foundation-constants.md)
+[Media Foundation costanti](media-foundation-constants.md)
 </dt> <dt>
 
-[Trasformazioni Media Foundation](media-foundation-transforms.md)
+[Media Foundation trasformazioni](media-foundation-transforms.md)
 </dt> <dt>
 
 [**MFTEnum**](/windows/desktop/api/mfapi/nf-mfapi-mftenum)

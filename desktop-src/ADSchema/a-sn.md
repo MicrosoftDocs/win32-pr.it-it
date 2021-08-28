@@ -1,10 +1,10 @@
 ---
-title: Attributo cognome
+title: Attributo Surname
 description: Questo attributo contiene la famiglia o il cognome di un utente.
 ms.assetid: d9d53c9f-4efa-47c4-aec4-518fb8a868b3
 ms.tgt_platform: multiple
 keywords:
-- Schema AD dell'attributo cognome
+- Attributo surname Schema DI AD
 - Schema AD dell'attributo sn
 topic_type:
 - apiref
@@ -14,14 +14,14 @@ api_type:
 - Schema
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 453352574a7aec10c56492060ac2de6ceeca030f
-ms.sourcegitcommit: b77ace27b0432e7cd3863191b11926be032fbe2f
+ms.openlocfilehash: 655557c23475dbc2d7f2e92fb48f5f71a8e818954bff83f5a47bb2470a26ca20
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/14/2020
-ms.locfileid: "103965192"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119836191"
 ---
-# <a name="surname-attribute"></a>Attributo cognome
+# <a name="surname-attribute"></a>Attributo Surname
 
 Questo attributo contiene la famiglia o il cognome di un utente.
 
@@ -30,12 +30,12 @@ Questo attributo contiene la famiglia o il cognome di un utente.
 | Voce | Valore |
 |-------------------|----------------------------------------------------------------------------------|
 | CN                | Surname                                                                          |
-| LDAP-Display-Name | sn                                                                               |
+| Ldap-Display-Name | sn                                                                               |
 | Dimensione              | \-                                                                               |
-| Privilegio aggiornamento  | Chiunque può aggiornare questo oggetto in base alla sicurezza dell'oggetto da creare. |
+| Privilegio di aggiornamento  | Chiunque può aggiornare questo oggetto in base alla sicurezza dell'oggetto creato. |
 | Frequenza di aggiornamento  | \-                                                                               |
 | Attribute-Id      | 2.5.4.4                                                                          |
-| System-ID-GUID    | bf967a41-0de6-11d0-a285-00aa003049e2                                             |
+| System-Id-Guid    | bf967a41-0de6-11d0-a285-00aa003049e2                                             |
 | Sintassi            | [**String(Unicode)**](s-string-unicode.md)                                      |
 
 
@@ -58,15 +58,15 @@ Questo attributo contiene la famiglia o il cognome di un utente.
 | ID collegamento                | \-                                    |
 | MAPI-Id                | 0x3A11                                |
 | System-Only            | Falso                                 |
-| È a valore singolo       | Vero                                  |
+| Is-Single-Valued       | Vero                                  |
 | Indicizzato             | Vero                                  |
 | Nel catalogo globale      | Vero                                  |
-| NT-Security-descrittore | O:BAG: NON VALIDO: S:                          |
+| NT-Security-Descriptor | O:BAG:BAD:S:                          |
 | Range-Lower            | 1                                     |
 | Range-Upper            | 64                                    |
 | Search-Flags           | 0x00000005                            |
 | System-Flags           | 0x00000010                            |
-| Classi utilizzate in        | [**Persona**](c-person.md)<br/> |
+| Classi usate in        | [**Persona**](c-person.md)<br/> |
 
 
 
@@ -79,15 +79,15 @@ Questo attributo contiene la famiglia o il cognome di un utente.
 | ID collegamento                | \-                                                                                            |
 | MAPI-Id                | 0x3A11                                                                                        |
 | System-Only            | Falso                                                                                         |
-| È a valore singolo       | Vero                                                                                          |
+| Is-Single-Valued       | Vero                                                                                          |
 | Indicizzato             | Vero                                                                                          |
 | Nel catalogo globale      | Vero                                                                                          |
-| NT-Security-descrittore | O:BAG: NON VALIDO: S:                                                                                  |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                                                                  |
 | Range-Lower            | 1                                                                                             |
 | Range-Upper            | 64                                                                                            |
 | Search-Flags           | 0x00000005                                                                                    |
 | System-Flags           | 0x00000010                                                                                    |
-| Classi utilizzate in        | [**Persona**](c-person.md)<br/> [**rFC822LocalPart**](c-rfc822localpart.md)<br/> |
+| Classi usate in        | [**Persona**](c-person.md)<br/> [**rFC822LocalPart**](c-rfc822localpart.md)<br/> |
 
 
 
@@ -100,15 +100,15 @@ Questo attributo contiene la famiglia o il cognome di un utente.
 | ID collegamento                | \-                                                                                            |
 | MAPI-Id                | 0x3A11                                                                                        |
 | System-Only            | Falso                                                                                         |
-| È a valore singolo       | Vero                                                                                          |
+| Is-Single-Valued       | Vero                                                                                          |
 | Indicizzato             | Vero                                                                                          |
 | Nel catalogo globale      | Vero                                                                                          |
-| NT-Security-descrittore | O:BAG: NON VALIDO: S:                                                                                  |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                                                                  |
 | Range-Lower            | 1                                                                                             |
 | Range-Upper            | 64                                                                                            |
 | Search-Flags           | 0x00000005                                                                                    |
 | System-Flags           | 0x00000010                                                                                    |
-| Classi utilizzate in        | [**Persona**](c-person.md)<br/> [**rFC822LocalPart**](c-rfc822localpart.md)<br/> |
+| Classi usate in        | [**Persona**](c-person.md)<br/> [**rFC822LocalPart**](c-rfc822localpart.md)<br/> |
 
 
 
@@ -121,15 +121,15 @@ Questo attributo contiene la famiglia o il cognome di un utente.
 | ID collegamento                | \-                                                                                            |
 | MAPI-Id                | 0x3A11                                                                                        |
 | System-Only            | Falso                                                                                         |
-| È a valore singolo       | Vero                                                                                          |
+| A valore singolo       | Vero                                                                                          |
 | Indicizzato             | Vero                                                                                          |
 | Nel catalogo globale      | Vero                                                                                          |
-| NT-Security-descrittore | O:BAG: NON VALIDO: S:                                                                                  |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                                                                  |
 | Range-Lower            | 1                                                                                             |
 | Range-Upper            | 64                                                                                            |
 | Search-Flags           | 0x00000005                                                                                    |
 | System-Flags           | 0x00000010                                                                                    |
-| Classi utilizzate in        | [**Persona**](c-person.md)<br/> [**rFC822LocalPart**](c-rfc822localpart.md)<br/> |
+| Classi usate in        | [**Persona**](c-person.md)<br/> [**rFC822LocalPart**](c-rfc822localpart.md)<br/> |
 
 
 
@@ -142,15 +142,15 @@ Questo attributo contiene la famiglia o il cognome di un utente.
 | ID collegamento                | \-                                                                                            |
 | MAPI-Id                | 0x3A11                                                                                        |
 | System-Only            | Falso                                                                                         |
-| È a valore singolo       | Vero                                                                                          |
+| A valore singolo       | Vero                                                                                          |
 | Indicizzato             | Vero                                                                                          |
 | Nel catalogo globale      | Vero                                                                                          |
-| NT-Security-descrittore | O:BAG: NON VALIDO: S:                                                                                  |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                                                                  |
 | Range-Lower            | 1                                                                                             |
 | Range-Upper            | 64                                                                                            |
 | Search-Flags           | 0x00000005                                                                                    |
 | System-Flags           | 0x00000010                                                                                    |
-| Classi utilizzate in        | [**Persona**](c-person.md)<br/> [**rFC822LocalPart**](c-rfc822localpart.md)<br/> |
+| Classi usate in        | [**Persona**](c-person.md)<br/> [**rFC822LocalPart**](c-rfc822localpart.md)<br/> |
 
 
 
@@ -163,15 +163,15 @@ Questo attributo contiene la famiglia o il cognome di un utente.
 | ID collegamento                | \-                                                                                            |
 | MAPI-Id                | 0x3A11                                                                                        |
 | System-Only            | Falso                                                                                         |
-| È a valore singolo       | Vero                                                                                          |
+| A valore singolo       | Vero                                                                                          |
 | Indicizzato             | Vero                                                                                          |
 | Nel catalogo globale      | Vero                                                                                          |
-| NT-Security-descrittore | O:BAG: NON VALIDO: S:                                                                                  |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                                                                  |
 | Range-Lower            | 1                                                                                             |
 | Range-Upper            | 64                                                                                            |
 | Search-Flags           | 0x00000005                                                                                    |
 | System-Flags           | 0x00000010                                                                                    |
-| Classi utilizzate in        | [**Persona**](c-person.md)<br/> [**rFC822LocalPart**](c-rfc822localpart.md)<br/> |
+| Classi usate in        | [**Persona**](c-person.md)<br/> [**rFC822LocalPart**](c-rfc822localpart.md)<br/> |
 
 
 

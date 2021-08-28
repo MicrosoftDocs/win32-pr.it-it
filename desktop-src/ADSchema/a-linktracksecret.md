@@ -1,10 +1,10 @@
 ---
-title: Attributo link-Track-Secret
-description: Questo attributo archivia un collegamento a una chiave privata che consente la conversione di un file crittografato in testo non crittografato.
+title: Attributo Link-Track-Secret
+description: Questo attributo archivia un collegamento a una chiave privata che consente di convertire un file crittografato in testo non crittografato.
 ms.assetid: e476f4af-71a8-4bd9-a81d-f825bfbf267b
 ms.tgt_platform: multiple
 keywords:
-- Link-Track-schema AD dell'attributo Secret
+- Schema AD dell'attributo Link-Track-Secret
 - Schema AD dell'attributo linkTrackSecret
 topic_type:
 - apiref
@@ -14,28 +14,28 @@ api_type:
 - Schema
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 5eb172ec0985acc7c93c62796881c369c7ad0b82
-ms.sourcegitcommit: b77ace27b0432e7cd3863191b11926be032fbe2f
+ms.openlocfilehash: c90fd71ed399c8a2881f16c13942f7210b152d20ebf5a284f071e8af85b40bf8
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/14/2020
-ms.locfileid: "106303013"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119302001"
 ---
-# <a name="link-track-secret-attribute"></a>Attributo link-Track-Secret
+# <a name="link-track-secret-attribute"></a>Attributo Link-Track-Secret
 
-Questo attributo archivia un collegamento a una chiave privata che consente la conversione di un file crittografato in testo non crittografato.
+Questo attributo archivia un collegamento a una chiave privata che consente di convertire un file crittografato in testo non crittografato.
 
 
 
 | Voce | Valore |
 |-------------------|-------------------------------------------------------|
 | CN                | Link-Track-Secret                                     |
-| LDAP-Display-Name | linkTrackSecret                                       |
+| Ldap-Display-Name | linkTrackSecret                                       |
 | Dimensione              | \-                                                    |
-| Privilegio aggiornamento  | \-                                                    |
+| Aggiorna privilegio  | \-                                                    |
 | Frequenza di aggiornamento  | \-                                                    |
 | Attribute-Id      | 1.2.840.113556.1.4.269                                |
-| System-ID-GUID    | 2ae80fe2-47b4-11d0-a1a4-00c04fd930c9                  |
+| System-Id-Guid    | 2ae80fe2-47b4-11d0-a1a4-00c04fd930c9                  |
 | Sintassi            | [**Object(Replica-Link)**](s-object-replica-link.md) |
 
 
@@ -58,15 +58,15 @@ Questo attributo archivia un collegamento a una chiave privata che consente la c
 | ID collegamento                | \-                                                             |
 | MAPI-Id                | \-                                                             |
 | System-Only            | Falso                                                          |
-| È a valore singolo       | Vero                                                           |
+| A valore singolo       | Vero                                                           |
 | Indicizzato             | Falso                                                          |
 | Nel catalogo globale      | Falso                                                          |
-| NT-Security-descrittore | O:BAG: NON VALIDO: S:                                                   |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                                   |
 | Range-Lower            | 0                                                              |
 | Range-Upper            | 16                                                             |
 | Search-Flags           | 0x00000000                                                     |
 | System-Flags           | 0x00000010                                                     |
-| Classi utilizzate in        | [**Link-Track-vol-entry**](c-linktrackvolentry.md)<br/> |
+| Classi usate in        | [**Link-Track-Vol-Entry**](c-linktrackvolentry.md)<br/> |
 
 
 
@@ -79,15 +79,15 @@ Questo attributo archivia un collegamento a una chiave privata che consente la c
 | ID collegamento                | \-                                                             |
 | MAPI-Id                | \-                                                             |
 | System-Only            | Falso                                                          |
-| È a valore singolo       | Vero                                                           |
+| A valore singolo       | Vero                                                           |
 | Indicizzato             | Falso                                                          |
 | Nel catalogo globale      | Falso                                                          |
-| NT-Security-descrittore | O:BAG: NON VALIDO: S:                                                   |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                                   |
 | Range-Lower            | 0                                                              |
 | Range-Upper            | 16                                                             |
 | Search-Flags           | 0x00000000                                                     |
 | System-Flags           | 0x00000010                                                     |
-| Classi utilizzate in        | [**Link-Track-vol-entry**](c-linktrackvolentry.md)<br/> |
+| Classi usate in        | [**Link-Track-Vol-Entry**](c-linktrackvolentry.md)<br/> |
 
 
 
@@ -100,15 +100,15 @@ Questo attributo archivia un collegamento a una chiave privata che consente la c
 | ID collegamento                | \-                                                             |
 | MAPI-Id                | \-                                                             |
 | System-Only            | Falso                                                          |
-| È a valore singolo       | Vero                                                           |
+| A valore singolo       | Vero                                                           |
 | Indicizzato             | Falso                                                          |
 | Nel catalogo globale      | Falso                                                          |
-| NT-Security-descrittore | O:BAG: NON VALIDO: S:                                                   |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                                   |
 | Range-Lower            | 0                                                              |
 | Range-Upper            | 16                                                             |
 | Search-Flags           | 0x00000000                                                     |
 | System-Flags           | 0x00000010                                                     |
-| Classi utilizzate in        | [**Link-Track-vol-entry**](c-linktrackvolentry.md)<br/> |
+| Classi usate in        | [**Link-Track-Vol-Entry**](c-linktrackvolentry.md)<br/> |
 
 
 
@@ -121,15 +121,15 @@ Questo attributo archivia un collegamento a una chiave privata che consente la c
 | ID collegamento                | \-                                                             |
 | MAPI-Id                | \-                                                             |
 | System-Only            | Falso                                                          |
-| È a valore singolo       | Vero                                                           |
+| A valore singolo       | Vero                                                           |
 | Indicizzato             | Falso                                                          |
 | Nel catalogo globale      | Falso                                                          |
-| NT-Security-descrittore | O:BAG: NON VALIDO: S:                                                   |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                                   |
 | Range-Lower            | 0                                                              |
 | Range-Upper            | 16                                                             |
 | Search-Flags           | 0x00000000                                                     |
 | System-Flags           | 0x00000010                                                     |
-| Classi utilizzate in        | [**Link-Track-vol-entry**](c-linktrackvolentry.md)<br/> |
+| Classi usate in        | [**Link-Track-Vol-Entry**](c-linktrackvolentry.md)<br/> |
 
 
 
@@ -142,15 +142,15 @@ Questo attributo archivia un collegamento a una chiave privata che consente la c
 | ID collegamento                | \-                                                             |
 | MAPI-Id                | \-                                                             |
 | System-Only            | Falso                                                          |
-| È a valore singolo       | Vero                                                           |
+| A valore singolo       | Vero                                                           |
 | Indicizzato             | Falso                                                          |
 | Nel catalogo globale      | Falso                                                          |
-| NT-Security-descrittore | O:BAG: NON VALIDO: S:                                                   |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                                   |
 | Range-Lower            | 0                                                              |
 | Range-Upper            | 16                                                             |
 | Search-Flags           | 0x00000000                                                     |
 | System-Flags           | 0x00000010                                                     |
-| Classi utilizzate in        | [**Link-Track-vol-entry**](c-linktrackvolentry.md)<br/> |
+| Classi usate in        | [**Link-Track-Vol-Entry**](c-linktrackvolentry.md)<br/> |
 
 
 
@@ -163,15 +163,15 @@ Questo attributo archivia un collegamento a una chiave privata che consente la c
 | ID collegamento                | \-                                                             |
 | MAPI-Id                | \-                                                             |
 | System-Only            | Falso                                                          |
-| È a valore singolo       | Vero                                                           |
+| A valore singolo       | Vero                                                           |
 | Indicizzato             | Falso                                                          |
 | Nel catalogo globale      | Falso                                                          |
-| NT-Security-descrittore | O:BAG: NON VALIDO: S:                                                   |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                                   |
 | Range-Lower            | 0                                                              |
 | Range-Upper            | 16                                                             |
 | Search-Flags           | 0x00000000                                                     |
 | System-Flags           | 0x00000010                                                     |
-| Classi utilizzate in        | [**Link-Track-vol-entry**](c-linktrackvolentry.md)<br/> |
+| Classi usate in        | [**Link-Track-Vol-Entry**](c-linktrackvolentry.md)<br/> |
 
 
 

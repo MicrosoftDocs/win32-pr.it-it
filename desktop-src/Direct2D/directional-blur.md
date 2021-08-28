@@ -1,26 +1,26 @@
 ---
 title: Effetto sfocatura direzionale
-description: L'effetto di sfocatura direzionale è simile alla sfocatura gaussiana, ad eccezione del fatto che è possibile inclinare la sfocatura in una direzione specifica.
+description: L'effetto sfocatura direzionale è simile alla sfocatura gaussiana, ma è possibile inclinare la sfocatura in una particolare direzione.
 ms.assetid: 59328FA4-5C27-4A81-AAB2-C5B25B3615C6
 keywords:
 - sfocatura direzionale
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: a0e1c098d17929563cf69f4e61416fa0d93a88dd
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: a2a43dcaa60f8627473444572ec36a13c3949e9430c9befbb5c064b51d7813bc
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "103739855"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119260436"
 ---
 # <a name="directional-blur-effect"></a>Effetto sfocatura direzionale
 
-L'effetto di sfocatura direzionale è simile alla [sfocatura gaussiana](gaussian-blur.md), ad eccezione del fatto che è possibile inclinare la sfocatura in una direzione specifica. È possibile usare questo effetto per creare un'immagine come se fosse in movimento o per enfatizzare un'immagine animata.
+L'effetto sfocatura direzionale è simile alla sfocatura [gaussiana,](gaussian-blur.md)ma è possibile inclinare la sfocatura in una particolare direzione. È possibile usare questo effetto per fare in modo che un'immagine sia in movimento o per evidenziare un'immagine animata.
 
 Il CLSID per questo effetto è CLSID \_ D2D1DirectionalBlur.
 
 -   [Immagine di esempio](#example-image)
--   [Proprietà effetto](#effect-properties)
+-   [Proprietà degli effetti](#effect-properties)
 -   [Modalità di ottimizzazione](#optimization-modes)
 -   [Modalità bordo](#border-modes)
 -   [Bitmap di output](#output-bitmap)
@@ -33,9 +33,9 @@ Il CLSID per questo effetto è CLSID \_ D2D1DirectionalBlur.
 
 | Prima                                                          |
 |-----------------------------------------------------------------|
-| ![immagine prima dell'effetto.](images/default-before.jpg)      |
+| ![l'immagine prima dell'effetto.](images/default-before.jpg)      |
 | After                                                           |
-| ![immagine dopo la trasformazione.](images/2-directionalblur.png) |
+| ![l'immagine dopo la trasformazione.](images/2-directionalblur.png) |
 
 
 
@@ -56,16 +56,16 @@ m_d2dContext->EndDraw();
 
 
 
-## <a name="effect-properties"></a>Proprietà effetto
+## <a name="effect-properties"></a>Proprietà degli effetti
 
 
 
-| Nome visualizzato e enumerazione dell'indice                                                       | Descrizione                                                                                                                                                                                                                                                                                                                                                                                        |
+| Nome visualizzato ed enumerazione dell'indice                                                       | Descrizione                                                                                                                                                                                                                                                                                                                                                                                        |
 |------------------------------------------------------------------------------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| StandardDeviation<br/> D2D1 \_ DIRECTIONALBLUR \_ prop \_ \_ deviazione standard<br/> | Quantità di sfocatura da applicare all'immagine. È possibile calcolare il raggio di sfocatura del kernel moltiplicando la deviazione standard di 3. Le unità della deviazione standard e del raggio di sfocatura sono dip. Il valore 0 DIP Disabilita questo effetto. Il tipo è FLOAT.<br/> Il valore predefinito è 3.0 f.<br/>                                                                            |
-| Angle<br/> \_Angolo della \_ prop \_ DIRECTIONALBLUR d2d1<br/>                           | Angolo della sfocatura rispetto all'asse x, in senso antiorario. Le unità vengono specificate in gradi.<br/> Il kernel di sfocatura viene innanzitutto generato utilizzando lo stesso processo dell'effetto [sfocatura gaussiana](gaussian-blur.md) . I valori del kernel vengono quindi trasformati in base all'angolo di sfocatura.<br/> Il tipo è FLOAT.<br/> Il valore predefinito è 0,0 f.<br/> |
-| Optimization<br/> \_Ottimizzazione della \_ prop \_ DIRECTIONALBLUR d2d1<br/>             | Modalità di ottimizzazione. Per altre informazioni, vedere [modalità di ottimizzazione](#optimization-modes) .<br/> Il tipo è D2D1 \_ DIRECTIONALBLUR \_ Optimization.<br/> Il valore predefinito è D2D1 \_ DIRECTIONALBLUR \_ Optimization \_ Balanced. <br/>                                                                                                                                                         |
-| BorderMode<br/> \_ \_ \_ Modalità bordo prop DIRECTIONALBLUR \_ d2d1<br/>               | Modalità utilizzata per calcolare il bordo dell'immagine, soft o hard. Per altre informazioni, vedere [Border modes](#border-modes) .<br/> Il tipo è D2D1 \_ Border \_ mode.<br/> Il valore predefinito è D2D1 \_ Border \_ mode \_ .<br/>                                                                                                                                                                 |
+| StandardDeviation<br/> DEVIAZIONE STANDARD DELLA PROPRIETÀ \_ DIRECTIONALBLUR D2D1 \_ \_ \_<br/> | Quantità di sfocatura da applicare all'immagine. È possibile calcolare il raggio di sfocatura del kernel moltiplicando la deviazione standard per 3. Le unità della deviazione standard e del raggio di sfocatura sono DIP. Il valore 0 DIP disabilita questo effetto. Il tipo è FLOAT.<br/> Il valore predefinito è 3,0f.<br/>                                                                            |
+| Angle<br/> D2D1 \_ DIRECTIONALBLUR \_ PROP \_ ANGLE<br/>                           | Angolo della sfocatura rispetto all'asse x, in senso antiorario. Le unità sono specificate in gradi.<br/> Il kernel di sfocatura viene prima generato usando lo stesso processo dell'effetto [sfocatura gaussiana.](gaussian-blur.md) I valori del kernel vengono quindi trasformati in base all'angolo di sfocatura.<br/> Il tipo è FLOAT.<br/> Il valore predefinito è 0,0f.<br/> |
+| Optimization<br/> OTTIMIZZAZIONE DELLE PROPRIETÀ \_ DIRECTIONALBLUR D2D1 \_ \_<br/>             | Modalità di ottimizzazione. Per [altre informazioni, vedere](#optimization-modes) Modalità di ottimizzazione.<br/> Il tipo è D2D1 \_ DIRECTIONALBLUR \_ OPTIMIZATION.<br/> Il valore predefinito è D2D1 \_ DIRECTIONALBLUR \_ OPTIMIZATION \_ BALANCED. <br/>                                                                                                                                                         |
+| BorderMode<br/> MODALITÀ BORDO DELLA PROPRIETÀ D2D1 \_ DIRECTIONALBLUR \_ \_ \_<br/>               | Modalità usata per calcolare il bordo dell'immagine, soft o hard. Per [altre informazioni, vedere](#border-modes) Modalità bordo.<br/> Il tipo è D2D1 \_ BORDER \_ MODE.<br/> Il valore predefinito è D2D1 \_ BORDER \_ MODE \_ SOFT.<br/>                                                                                                                                                                 |
 
 
 
@@ -77,9 +77,9 @@ m_d2dContext->EndDraw();
 
 | Nome                                          | Descrizione                                                                                                                           |
 |-----------------------------------------------|---------------------------------------------------------------------------------------------------------------------------------------|
-| \_Velocità di \_ ottimizzazione \_ DIRECTIONALBLUR di d2d1    | Applica le ottimizzazioni interne, ad esempio la pre-scalabilità a raggi relativamente piccoli. Usa il filtro lineare.                                  |
-| \_Ottimizzazione d2d1 \_ DIRECTIONALBLUR \_ | Usa le stesse soglie di ottimizzazione della modalità velocità, ma usa il filtro trilineare.                                                    |
-| \_ \_ Qualità ottimizzazione DIRECTIONALBLUR \_ d2d1  | USA solo le ottimizzazioni interne con raggi di sfocatura grandi, in cui è meno probabile che le approssimazioni siano visibili. Usa il filtro trilineare. |
+| D2D1 \_ DIRECTIONALBLUR \_ OPTIMIZATION \_ SPEED    | Applica ottimizzazioni interne, ad esempio il pre-ridimensionamento a raggi relativamente piccoli. Usa il filtro lineare.                                  |
+| OTTIMIZZAZIONE D2D1 \_ DIRECTIONALBLUR \_ \_ BILANCIATA | Usa le stesse soglie di ottimizzazione della modalità velocità, ma usa il filtro trilineare.                                                    |
+| QUALITÀ DI OTTIMIZZAZIONE D2D1 \_ DIRECTIONALBLUR \_ \_  | Usa solo ottimizzazioni interne con raggi di sfocatura di grandi dimensioni, in cui è meno probabile che le approssimazioni siano visibili. Usa il filtro trilineare. |
 
 
 
@@ -91,8 +91,8 @@ m_d2dContext->EndDraw();
 
 | Nome                     | Descrizione                                                                                                                                                                                                              |
 |--------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| \_Modalità bordo \_ d2d1 \_ Soft | L'effetto Ritaglia l'immagine con i pixel neri trasparenti quando applica il kernel di sfocatura, ottenendo un bordo flessibile. <br/>                                                                                             |
-| \_Modalità bordo \_ d2d1 \_ | L'effetto fissa l'output alla dimensione dell'immagine di input. Quando l'effetto applica il kernel di sfocatura, estende l'immagine di input con una trasformazione del bordo di tipo mirror per i campioni all'esterno dei limiti di input.<br/> |
+| MODALITÀ BORDO D2D1 \_ \_ \_ SOFT | L'effetto consente di riempire l'immagine con pixel neri trasparenti quando applica il kernel sfocatura, determinando un bordo sfuocato. <br/>                                                                                             |
+| MODALITÀ BORDO D2D1 \_ \_ \_ HARD | L'effetto stringe l'output alle dimensioni dell'immagine di input. Quando l'effetto applica il kernel di sfocatura, estende l'immagine di input con una trasformazione del bordo di tipo speculare per i campioni al di fuori dei limiti di input.<br/> |
 
 
 
@@ -100,14 +100,14 @@ m_d2dContext->EndDraw();
 
 ## <a name="output-bitmap"></a>Bitmap di output
 
-La dimensione della bitmap di output aumenta in base alla deviazione standard, all'angolo dell'effetto e alla modalità del bordo. Se la modalità bordo è impostata su D2D1 \_ Border \_ mode \_ , le dimensioni della bitmap di output aumentano in base alle dimensioni del kernel di sfocatura, rappresentate in pixel. Queste equazioni possono essere usate per calcolare le dimensioni della bitmap di output.
+Le dimensioni della bitmap di output aumentano in base alla deviazione standard, all'angolo dell'effetto e alla modalità bordo. Se la modalità bordo è impostata su D2D1 BORDER MODE SOFT, le dimensioni della bitmap di output aumentano delle dimensioni del \_ kernel di sfocatura, \_ \_ rappresentate in pixel. Queste equazioni possono essere usate per calcolare le dimensioni della bitmap di output.
 
 
 
 | Requisito | Valore |
 |------------------------|-------------------------------------------------------------------|
-| Aumento dimensioni bitmap di output X | StandardDeviation (DIP) \* 6 \* (((dpi utente)/96) \* cos (angolo)) |
-| Crescita bitmap di output Y | StandardDeviation (DIP) \* 6 \* (((dpi utente)/96) \* sin (angolo)) |
+| Aumento della bitmap di output X | StandardDeviation (DIP) \* 6 \* ((User DPI) /96) \* cos(Angle)) |
+| Aumento della bitmap di output Y | StandardDeviation (DIP) \* 6 \* ((User DPI) /96) \* sin(Angle)) |
 
 
 
@@ -119,10 +119,10 @@ La dimensione della bitmap di output aumenta in base alla deviazione standard, a
 
 | Requisito | Valore |
 |--------------------------|------------------------------------------------------------------------------------|
-| Client minimo supportato | Windows 8 e aggiornamento della piattaforma per app desktop Windows 7 app \[ \| Windows Store\] |
-| Server minimo supportato | Windows 8 e aggiornamento della piattaforma per app desktop Windows 7 app \[ \| Windows Store\] |
-| Intestazione                   | d2d1effects. h                                                                      |
-| Libreria                  | d2d1. lib, dxguid. lib                                                               |
+| Client minimo supportato | Windows 8 e aggiornamento della piattaforma per Windows 7 \[ app desktop \| Windows Store\] |
+| Server minimo supportato | Windows 8 e aggiornamento della piattaforma per Windows 7 \[ app desktop \| Windows Store\] |
+| Intestazione                   | d2d1effects.h                                                                      |
+| Libreria                  | d2d1.lib, dxguid.lib                                                               |
 
 
 

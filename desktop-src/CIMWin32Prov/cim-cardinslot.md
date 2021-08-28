@@ -1,8 +1,8 @@
 ---
-description: La \_ classe CIM CardInSlot associa una scheda di adapter al contenitore in cui viene inserita.
+description: La classe CIM \_ CardInSlot associa una scheda di scheda al contenitore in cui viene inserita.
 ms.assetid: 253fb444-2a9e-4099-a4d5-352b643d8e32
 ms.tgt_platform: multiple
-title: Classe CIM_CardInSlot
+title: CIM_CardInSlot classe
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -16,23 +16,23 @@ api_type:
 - DllExport
 api_location:
 - CIMWin32.dll
-ms.openlocfilehash: 19c6e7334b8a13854241c3fd2ee41dd7010255b5
-ms.sourcegitcommit: c7add10d695482e1ceb72d62b8a4ebd84ea050f7
+ms.openlocfilehash: 2653160c536d9fd11668e5038ae632b09414cae42ed5ae76d998f3abda85eeec
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "103878002"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119322551"
 ---
-# <a name="cim_cardinslot-class"></a>CIM \_ CardInSlot (classe)
+# <a name="cim_cardinslot-class"></a>Classe CIM \_ CardInSlot
 
-La classe **CIM \_ CardInSlot** associa una scheda di adapter al contenitore in cui viene inserita.
+La **classe CIM \_ CardInSlot** associa una scheda di scheda al contenitore in cui viene inserita.
 
 > [!IMPORTANT]
-> Le classi CIM (Common Information Model) DMTF (Distributed Management Task Force) sono le classi padre sulle quali vengono compilate le classi WMI. Attualmente WMI supporta solo gli [schemi della versione CIM 2. x](https://dmtf.org/standards/cim/schemas).
+> Le classi CIM (Distributed Management Task Force) DMTF (Distributed Management Task Force) Common Information Model sono le classi padre su cui vengono compilate le classi WMI. WMI supporta attualmente solo gli [schemi della versione CIM 2.x](https://dmtf.org/standards/cim/schemas).
 
  
 
-La sintassi seguente è semplificata dal codice MOF (Managed Object Format) e include tutte le proprietà ereditate. Le proprietà sono elencate in ordine alfabetico e non in ordine MOF.
+La sintassi seguente è semplificata dal codice MOF (Managed Object Format) e include tutte le proprietà ereditate. Le proprietà sono elencate in ordine alfabetico, non in ordine MOF.
 
 ## <a name="syntax"></a>Sintassi
 
@@ -47,26 +47,26 @@ class CIM_CardInSlot : CIM_PackageInSlot
 
 ## <a name="members"></a>Members
 
-La classe **CIM \_ CardInSlot** presenta questi tipi di membri:
+La **classe \_ CIM CardInSlot** ha questi tipi di membri:
 
 -   [Proprietà](#properties)
 
 ### <a name="properties"></a>Proprietà
 
-La classe **CIM \_ CardInSlot** dispone di queste proprietà.
+La **classe \_ CIM CardInSlot** ha queste proprietà.
 
 <dl> <dt>
 
 **Antecedente**
 </dt> <dd> <dl> <dt>
 
-Tipo di dati **: \_ slot CIM**
+Tipo di dati: **\_ slot CIM**
 </dt> <dt>
 
 Tipo di accesso: sola lettura
 </dt> <dt>
 
-Qualificatori: [**override**](/windows/desktop/WmiSdk/standard-qualifiers) ("antecedente")
+Qualificatori: [**override**](/windows/desktop/WmiSdk/standard-qualifiers) ("Antecedent")
 </dt> </dl>
 
 Uno [**\_ slot CIM**](cim-slot.md) che descrive lo slot in cui viene inserita la scheda.
@@ -76,26 +76,26 @@ Uno [**\_ slot CIM**](cim-slot.md) che descrive lo slot in cui viene inserita la
 **Dipendente**
 </dt> <dd> <dl> <dt>
 
-Tipo di dati **: \_ scheda CIM**
+Tipo di dati: **scheda \_ CIM**
 </dt> <dt>
 
 Tipo di accesso: sola lettura
 </dt> <dt>
 
-Qualificatori: [**override**](/windows/desktop/WmiSdk/standard-qualifiers) ("dipendente"), [**massimo**](/windows/desktop/WmiSdk/standard-qualifiers) (1)
+Qualificatori: [**Override**](/windows/desktop/WmiSdk/standard-qualifiers) ("Dependent"), [**Max**](/windows/desktop/WmiSdk/standard-qualifiers) (1)
 </dt> </dl>
 
-Una [**\_ scheda CIM**](cim-card.md) che descrive la scheda nello slot.
+Scheda [**CIM \_ che**](cim-card.md) descrive la scheda nello slot.
 
 </dd> </dl>
 
 ## <a name="remarks"></a>Commenti
 
-La classe **CIM \_ CardInSlot** è derivata da [**CIM \_ PackageInSlot**](cim-packageinslot.md).
+La **classe CIM \_ CardInSlot** è derivata da [**CIM \_ PackageInSlot.**](cim-packageinslot.md)
 
 WMI non implementa questa classe.
 
-Questa documentazione è derivata dalle descrizioni della classe CIM pubblicate da DMTF. Microsoft potrebbe avere apportato modifiche per correggere gli errori secondari, rispettare gli standard di documentazione di Microsoft SDK o fornire altre informazioni.
+Questa documentazione è derivata dalle descrizioni della classe CIM pubblicate da DMTF. Microsoft potrebbe aver apportato modifiche per correggere errori secondari, essere conforme agli standard della documentazione di Microsoft SDK o fornire altre informazioni.
 
 ## <a name="requirements"></a>Requisiti
 
@@ -106,7 +106,7 @@ Questa documentazione è derivata dalle descrizioni della classe CIM pubblicate 
 | Client minimo supportato<br/> | Windows Vista<br/>                                                                |
 | Server minimo supportato<br/> | Windows Server 2008<br/>                                                          |
 | Spazio dei nomi<br/>                | \\CIMV2 radice<br/>                                                                  |
-| MOF<br/>                      | <dl> <dt>CIMWin32. mof</dt> </dl> |
+| MOF<br/>                      | <dl> <dt>CIMWin32.mof</dt> </dl> |
 | DLL<br/>                      | <dl> <dt>CIMWin32.dll</dt> </dl> |
 
 
@@ -115,7 +115,7 @@ Questa documentazione è derivata dalle descrizioni della classe CIM pubblicate 
 
 <dl> <dt>
 
-[**\_PACKAGEINSLOT CIM**](cim-packageinslot.md)
+[**Pacchetto \_ CIMInSlot**](cim-packageinslot.md)
 </dt> </dl>
 
  

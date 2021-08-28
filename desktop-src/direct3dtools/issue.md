@@ -1,10 +1,10 @@
 ---
-description: Rappresenta le informazioni su un problema.
+description: Rappresenta informazioni su un problema.
 MS-HAID: vspixengine.Issue
 MSHAttr:
 - PreferredSiteName:MSDN
 - PreferredLib:/library/windows/desktop
-title: Struttura del problema
+title: Struttura dei problemi
 ms.topic: reference
 ms.date: 05/31/2018
 ms.assetid: 4F42E617-3EC8-4308-B9FE-F48C78702504
@@ -17,16 +17,16 @@ api_location:
 topic_type:
 - APIRef
 - kbSyntax
-ms.openlocfilehash: d4878774a01016f52c25574b49cd8b8669bc6691
-ms.sourcegitcommit: a47bd86f517de76374e4fff33cfeb613eb259a7e
+ms.openlocfilehash: 40eab8fa294a8b3843dfff471369a725c8875320
+ms.sourcegitcommit: c276a8912787b2cda74dcf54eb96df961bb1188b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/06/2021
-ms.locfileid: "106304052"
+ms.lasthandoff: 08/20/2021
+ms.locfileid: "122622317"
 ---
-# <a name="span-idvspixengineissuespanissue-structure"></a><span id="vspixengine.issue"></span>Struttura del problema
+# <a name="span-idvspixengineissuespanissue-structure"></a><span id="vspixengine.issue"></span>Struttura dei problemi
 
-Rappresenta le informazioni su un problema.
+Rappresenta informazioni su un problema.
 
 ## <a name="syntax"></a>Sintassi
 
@@ -41,7 +41,7 @@ Rappresenta le informazioni su un problema.
 Stringa COM contenente una descrizione del problema.
 
 **Codice**  
-Stringa COM contenente il codice la connessa associato al problema.
+Stringa COM contenente il codice c associato al problema.
 
 **ID**  
 ID del problema.
@@ -51,7 +51,7 @@ ID dell'evento associato.
 
 ## <a name="requirements"></a>Requisiti
 
-<table><colgroup><col style="width: 50%" /><col style="width: 50%" /></colgroup><tbody><tr class="odd"><td><p>Intestazione</p></td><td>Vspixengine. h</td></tr></tbody></table>
+<table><colgroup><col  /><col  /></colgroup><tbody><tr class="odd"><td><p>Intestazione</p></td><td>Vspixengine.h</td></tr></tbody></table>
 
  
 

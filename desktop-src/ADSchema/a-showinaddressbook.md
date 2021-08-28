@@ -1,10 +1,10 @@
 ---
-title: Attributo show-in-Address-Book
-description: Questo attributo viene utilizzato per indicare in quale libro di indirizzi MAPI verrà visualizzato un oggetto.
+title: Attributo Show-In-Address-Book
+description: Questo attributo viene utilizzato per indicare in quali rubriche MAPI verrà visualizzato un oggetto.
 ms.assetid: de00da4d-7c04-4d1d-b375-ce3b5eb2f50f
 ms.tgt_platform: multiple
 keywords:
-- Schema AD dell'attributo show-in-Address-Book
+- Schema AD dell'attributo Show-In-Address-Book
 - Schema AD dell'attributo showInAddressBook
 topic_type:
 - apiref
@@ -14,28 +14,28 @@ api_type:
 - Schema
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: f44632604c539278c67e9dd46537d8e797e2d70d
-ms.sourcegitcommit: b77ace27b0432e7cd3863191b11926be032fbe2f
+ms.openlocfilehash: 610e310297d3401548cc65adb53c77760893ba3a0c5777a9d440432d12dff77a
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/14/2020
-ms.locfileid: "104479928"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119836271"
 ---
-# <a name="show-in-address-book-attribute"></a>Attributo show-in-Address-Book
+# <a name="show-in-address-book-attribute"></a>Attributo Show-In-Address-Book
 
-Questo attributo viene utilizzato per indicare in quale libro di indirizzi MAPI verrà visualizzato un oggetto. Viene in genere gestito dal servizio aggiornamento destinatari di Exchange.
+Questo attributo viene utilizzato per indicare in quali rubriche MAPI verrà visualizzato un oggetto. Viene in genere gestito dal Exchange Servizio aggiornamento destinatari.
 
 
 
 | Voce | Valore |
 |-------------------|-----------------------------------------|
-| CN                | Mostra-in-indirizzo-libro                    |
-| LDAP-Display-Name | showInAddressBook                       |
+| CN                | Show-In-Address-Book                    |
+| Ldap-Display-Name | showInAddressBook                       |
 | Dimensione              | \-                                      |
-| Privilegio aggiornamento  | Viene utilizzato dal sistema.             |
+| Aggiorna privilegio  | Viene utilizzato dal sistema.             |
 | Frequenza di aggiornamento  | \-                                      |
 | Attribute-Id      | 1.2.840.113556.1.4.644                  |
-| System-ID-GUID    | 3e74f60e-3e73-11d1-a9c0-0000f80367c1    |
+| System-Id-Guid    | 3e74f60e-3e73-11d1-a9c0-0000f80367c1    |
 | Sintassi            | [**Object(DS-DN)**](s-object-ds-dn.md) |
 
 
@@ -58,15 +58,15 @@ Questo attributo viene utilizzato per indicare in quale libro di indirizzi MAPI 
 | ID collegamento                | \-                                                   |
 | MAPI-Id                | \-                                                   |
 | System-Only            | Falso                                                |
-| È a valore singolo       | Falso                                                |
+| Is-Single-Valued       | Falso                                                |
 | Indicizzato             | Falso                                                |
 | Nel catalogo globale      | Falso                                                |
-| NT-Security-descrittore | O:BAG: NON VALIDO: S:                                         |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                         |
 | Range-Lower            | \-                                                   |
 | Range-Upper            | \-                                                   |
 | Search-Flags           | 0x00000010                                           |
 | System-Flags           | 0x00000010                                           |
-| Classi utilizzate in        | [**Destinatario posta**](c-mailrecipient.md)<br/> |
+| Classi usate in        | [**Destinatario posta elettronica**](c-mailrecipient.md)<br/> |
 
 
 
@@ -79,15 +79,15 @@ Questo attributo viene utilizzato per indicare in quale libro di indirizzi MAPI 
 | ID collegamento                | \-                                                   |
 | MAPI-Id                | \-                                                   |
 | System-Only            | Falso                                                |
-| È a valore singolo       | Falso                                                |
+| Is-Single-Valued       | Falso                                                |
 | Indicizzato             | Falso                                                |
 | Nel catalogo globale      | Falso                                                |
-| NT-Security-descrittore | O:BAG: NON VALIDO: S:                                         |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                         |
 | Range-Lower            | \-                                                   |
 | Range-Upper            | \-                                                   |
 | Search-Flags           | 0x00000010                                           |
 | System-Flags           | 0x00000010                                           |
-| Classi utilizzate in        | [**Destinatario posta**](c-mailrecipient.md)<br/> |
+| Classi usate in        | [**Destinatario posta elettronica**](c-mailrecipient.md)<br/> |
 
 
 
@@ -100,15 +100,15 @@ Questo attributo viene utilizzato per indicare in quale libro di indirizzi MAPI 
 | ID collegamento                | \-                                                   |
 | MAPI-Id                | \-                                                   |
 | System-Only            | Falso                                                |
-| È a valore singolo       | Falso                                                |
+| Is-Single-Valued       | Falso                                                |
 | Indicizzato             | Falso                                                |
 | Nel catalogo globale      | Falso                                                |
-| NT-Security-descrittore | O:BAG: NON VALIDO: S:                                         |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                         |
 | Range-Lower            | \-                                                   |
 | Range-Upper            | \-                                                   |
 | Search-Flags           | 0x00000010                                           |
 | System-Flags           | 0x00000010                                           |
-| Classi utilizzate in        | [**Destinatario posta**](c-mailrecipient.md)<br/> |
+| Classi usate in        | [**Destinatario posta elettronica**](c-mailrecipient.md)<br/> |
 
 
 
@@ -121,15 +121,15 @@ Questo attributo viene utilizzato per indicare in quale libro di indirizzi MAPI 
 | ID collegamento                | \-                                                   |
 | MAPI-Id                | \-                                                   |
 | System-Only            | Falso                                                |
-| È a valore singolo       | Falso                                                |
+| Is-Single-Valued       | Falso                                                |
 | Indicizzato             | Falso                                                |
 | Nel catalogo globale      | Falso                                                |
-| NT-Security-descrittore | O:BAG: NON VALIDO: S:                                         |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                         |
 | Range-Lower            | \-                                                   |
 | Range-Upper            | \-                                                   |
 | Search-Flags           | 0x00000010                                           |
 | System-Flags           | 0x00000010                                           |
-| Classi utilizzate in        | [**Destinatario posta**](c-mailrecipient.md)<br/> |
+| Classi usate in        | [**Destinatario posta elettronica**](c-mailrecipient.md)<br/> |
 
 
 
@@ -142,15 +142,15 @@ Questo attributo viene utilizzato per indicare in quale libro di indirizzi MAPI 
 | ID collegamento                | \-                                                   |
 | MAPI-Id                | \-                                                   |
 | System-Only            | Falso                                                |
-| È a valore singolo       | Falso                                                |
+| Is-Single-Valued       | Falso                                                |
 | Indicizzato             | Falso                                                |
 | Nel catalogo globale      | Falso                                                |
-| NT-Security-descrittore | O:BAG: NON VALIDO: S:                                         |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                         |
 | Range-Lower            | \-                                                   |
 | Range-Upper            | \-                                                   |
 | Search-Flags           | 0x00000010                                           |
 | System-Flags           | 0x00000010                                           |
-| Classi utilizzate in        | [**Destinatario posta**](c-mailrecipient.md)<br/> |
+| Classi usate in        | [**Destinatario posta elettronica**](c-mailrecipient.md)<br/> |
 
 
 
@@ -163,15 +163,15 @@ Questo attributo viene utilizzato per indicare in quale libro di indirizzi MAPI 
 | ID collegamento                | \-                                                   |
 | MAPI-Id                | \-                                                   |
 | System-Only            | Falso                                                |
-| È a valore singolo       | Falso                                                |
+| Is-Single-Valued       | Falso                                                |
 | Indicizzato             | Falso                                                |
 | Nel catalogo globale      | Falso                                                |
-| NT-Security-descrittore | O:BAG: NON VALIDO: S:                                         |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                         |
 | Range-Lower            | \-                                                   |
 | Range-Upper            | \-                                                   |
 | Search-Flags           | 0x00000010                                           |
 | System-Flags           | 0x00000010                                           |
-| Classi utilizzate in        | [**Destinatario posta**](c-mailrecipient.md)<br/> |
+| Classi usate in        | [**Destinatario posta elettronica**](c-mailrecipient.md)<br/> |
 
 
 

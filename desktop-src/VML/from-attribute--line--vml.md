@@ -1,24 +1,24 @@
 ---
-title: Attributo from (line) (la)
-description: Attributo from (line) (la)
+title: From Attribute (Line)(VML)
+description: From Attribute (Line)(VML)
 ms.assetid: 37cc9b2e-c18d-48ea-bac5-a2d2ea10d3d2
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 950b3cae8e3b73efdc3a92bdc49a0b9e4366e224
-ms.sourcegitcommit: 592c9bbd22ba69802dc353bcb5eb30699f9e9403
+ms.openlocfilehash: 87a8bf41462f698397b193835d08655f8d6acefb2df77b17e035ec170c3c4781
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/20/2020
-ms.locfileid: "103730007"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120099311"
 ---
-# <a name="from-attribute-linevml"></a>Attributo from (line) (la)
+# <a name="from-attribute-linevml"></a>From Attribute (Line)(VML)
 
-In questo argomento viene descritto la, una funzionalità deprecata a partire da Windows Internet Explorer 9. Le pagine Web e le applicazioni che si basano su la devono essere migrate a SVG o ad altri standard ampiamente supportati.
+Questo argomento descrive VML, una funzionalità deprecata a Windows Internet Explorer 9. Le pagine Web e le applicazioni che si basano su VML devono essere migrate a SVG o ad altri standard ampiamente supportati.
 
 > [!Note]  
-> Al 2011 dicembre, questo argomento è stato archiviato. Di conseguenza, non viene più gestita attivamente. Per altre informazioni, vedere [contenuto archiviato](/previous-versions/windows/internet-explorer/ie-developer/). Per informazioni, suggerimenti e indicazioni per la versione corrente di Windows Internet Explorer, vedere il [centro per sviluppatori di Internet Explorer](https://msdn.microsoft.com/ie/).
+> A partire da dicembre 2011, questo argomento è stato archiviato. Di conseguenza, non viene più gestito attivamente. Per altre informazioni, vedere [Contenuto archiviato.](/previous-versions/windows/internet-explorer/ie-developer/) Per informazioni, consigli e indicazioni sulla versione corrente di Windows Internet Explorer, vedere Internet Explorer [Developer Center.](https://msdn.microsoft.com/ie/)
 
- 
+ 
 
 Definisce il punto iniziale di una linea. Proprietà di lettura/scrittura. **VgVector2D**.
 
@@ -26,25 +26,25 @@ Definisce il punto iniziale di una linea. Proprietà di lettura/scrittura. **VgV
 
 [Linea](msdn-online-vml-line-element.md)
 
-**Sintassi Tag**
+**Sintassi dei tag**
 
-<v: *elemento* da = " *Expression* " >
+<v: *element* from=" *expression* ">
 
 **Sintassi dello script**
 
-*element* . from = "*Expression*"
+*element* .from="*expression*"
 
-*espressione* = *elemento*. from
+*expression* = *Elemento*.from
 
 **Osservazioni:**
 
-Definisce il punto iniziale della riga nello spazio delle coordinate dell'elemento padre. Se l'elemento padre non è un elemento la, l' [unità](msdn-online-vml-units.md) predefinita è un pixel, ma è possibile specificare anche in cm, mm, PT, PC. Il valore predefinito è 0, 0.
+Definisce il punto iniziale della linea nello spazio delle coordinate dell'elemento padre. Se l'elemento padre non è [](msdn-online-vml-units.md) un elemento VML, l'unità predefinita è un pixel (ma è possibile specificare anche in, cm, mm, pt, pc). Il valore predefinito è 0,0.
 
-*Attributo standard la*
+*Attributo VML Standard*
 
 **Esempio**
 
-La riga inizia in una posizione 10 punta verso il basso e 10 punta a destra dell'angolo superiore sinistro dello spazio padre.
+La linea inizia in una posizione 10 punti verso il basso e 10 punta a destra dell'angolo superiore sinistro dello spazio padre.
 
 
 ```HTML
@@ -55,6 +55,6 @@ La riga inizia in una posizione 10 punta verso il basso e 10 punta a destra dell
 
 
 
- 
+ 
 
- 
+ 

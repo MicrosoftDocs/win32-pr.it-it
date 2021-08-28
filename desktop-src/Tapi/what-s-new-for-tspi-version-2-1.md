@@ -1,23 +1,23 @@
 ---
-description: A partire da TAPI 2,1, è possibile usare le DLL dell'interfaccia utente del provider di servizi di telefonia per gestire e visualizzare le finestre di dialogo. Tramite TAPI la DLL viene caricata nel processo di un'applicazione che richiama una delle funzioni del provider di servizi in grado di visualizzare una finestra di dialogo.
+description: A partire da TAPI 2.1, le DLL dell'interfaccia utente del provider di servizi di telefonia possono essere usate per gestire e visualizzare le finestre di dialogo. TAPI carica la DLL nel processo di un'applicazione che richiama una qualsiasi delle funzioni del provider di servizi in grado di visualizzare una finestra di dialogo.
 ms.assetid: 0a0320d1-fb75-405e-8074-b37cef956c9f
-title: Novità della versione 2,1 di TSPI
+title: Novità di TSPI versione 2.1
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 51642fb9ac960732f8e4a56805652333d0c32468
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 260978ad99bf49ed0beae0e71b2a02a794eef1a7af0c25074c20a08c1da054c0
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "106314119"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119659821"
 ---
-# <a name="whats-new-for-tspi-version-21"></a>Novità della versione 2,1 di TSPI
+# <a name="whats-new-for-tspi-version-21"></a>Novità di TSPI versione 2.1
 
-A partire da TAPI 2,1, è possibile usare le DLL dell'interfaccia utente del provider di servizi di telefonia per gestire e visualizzare le finestre di dialogo. Tramite TAPI la DLL viene caricata nel processo di un'applicazione che richiama una delle funzioni del provider di servizi in grado di visualizzare una finestra di dialogo.
+A partire da TAPI 2.1, le DLL dell'interfaccia utente del provider di servizi di telefonia possono essere usate per gestire e visualizzare le finestre di dialogo. TAPI carica la DLL nel processo di un'applicazione che richiama una qualsiasi delle funzioni del provider di servizi in grado di visualizzare una finestra di dialogo.
 
-A partire da TAPI 2,1, i gestori di richieste proxy possono essere implementati. Un gestore è un'applicazione di telefonia completa che in genere viene eseguita in un server di telefonia e fornisce servizi implementati in modo più appropriato in un'applicazione rispetto a un driver.
+A partire da TAPI 2.1, i gestori delle richieste proxy possono essere implementati. Un gestore è un'applicazione di telefonia completa che in genere viene eseguita in un server di telefonia e fornisce servizi implementati in modo più appropriato in un'applicazione rispetto a un driver.
 
-Le funzioni e i messaggi nuovi o modificati per TSPI versione 2,1 sono i seguenti:
+Le funzioni e i messaggi nuovi o modificati per TSPI versione 2.1 sono i seguenti:
 
 -   [**TSPI_lineConditionalMediaDetection**](/windows/win32/api/tspi/nf-tspi-tspi_lineconditionalmediadetection)
 -   **TSPI_lineDropNoOwner**:**obsoleto**
@@ -38,7 +38,7 @@ Le funzioni e i messaggi nuovi o modificati per TSPI versione 2,1 sono i seguent
 -   [**LINE_REMOVE**](/previous-versions/windows/desktop/legacy/ms725237(v=vs.85))
 -   [**PHONE_REMOVE**](/previous-versions/windows/desktop/legacy/ms725260(v=vs.85))
 
-La DLL dell'interfaccia utente del provider di servizi di telefonia fornisce un mezzo per consentire l'interazione dell'utente all'interno del contesto dell'applicazione invece che del provider di servizi stesso. TSPI versione 2,1 ha fornito le nuove funzioni, i messaggi e le strutture seguenti per l'implementazione:
+La DLL dell'interfaccia utente del provider di servizi di telefonia consente l'interazione dell'utente all'interno del contesto dell'applicazione anziché del provider di servizi stesso. TSPI versione 2.1 ha fornito le nuove funzioni, i messaggi e le strutture seguenti per l'implementazione:
 
 -   [**TSPI_providerFreeDialogInstance**](/windows/win32/api/tspi/nf-tspi-tspi_providerfreedialoginstance)
 -   [**TSPI_providerGenericDialogData**](/windows/win32/api/tspi/nf-tspi-tspi_providergenericdialogdata)

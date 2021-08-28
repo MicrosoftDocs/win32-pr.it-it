@@ -1,7 +1,7 @@
 ---
-description: Segnala che un pulsante di menu DVD è stato attivato automaticamente per istruzioni sul disco. Questo errore si verifica quando si verifica il timeout di un menu e il disco ha specificato un pulsante da attivare automaticamente.
+description: Segnala che un pulsante di menu DVD è stato attivato automaticamente in base alle istruzioni sul disco. Ciò si verifica quando si verifica il timeout di un menu e il disco ha specificato un pulsante da attivare automaticamente.
 ms.assetid: ecd79c2a-1717-473d-b111-2b1db2ca4cc1
-title: EC_DVD_BUTTON_AUTO_ACTIVATED (Dvdevcode. h)
+title: EC_DVD_BUTTON_AUTO_ACTIVATED (Dvdevcode.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -13,16 +13,16 @@ api_type:
 - HeaderDef
 api_location:
 - dvdevcode.h
-ms.openlocfilehash: 6a30ddcff32140165d5cb6cb648df84b3360a1b3
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: cc018630d7a994c01b81adea4b4cf567666a76625b4b3b13fbf4118b8e8a1fd7
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "106331284"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119965891"
 ---
-# <a name="ec_dvd_button_auto_activated"></a>\_pulsante DVD \_ EC \_ \_ attivato automaticamente
+# <a name="ec_dvd_button_auto_activated"></a>PULSANTE \_ DVD EC ATTIVATO \_ \_ \_ AUTOMATICAMENTE
 
-Segnala che un pulsante di menu DVD è stato attivato automaticamente per istruzioni sul disco. Questo errore si verifica quando si verifica il timeout di un menu e il disco ha specificato un pulsante da attivare automaticamente.
+Segnala che un pulsante di menu DVD è stato attivato automaticamente in base alle istruzioni sul disco. Ciò si verifica quando si verifica il timeout di un menu e il disco ha specificato un pulsante da attivare automaticamente.
 
 ## <a name="parameters"></a>Parametri
 
@@ -31,7 +31,7 @@ Segnala che un pulsante di menu DVD è stato attivato automaticamente per istruz
 <span id="lParam1"></span><span id="lparam1"></span><span id="LPARAM1"></span>*lParam1*
 </dt> <dd>
 
-Valore **DWORD** che indica il pulsante attivato.
+**Valore DWORD** che indica il pulsante attivato.
 
 </dd> <dt>
 
@@ -50,7 +50,7 @@ Questo evento viene generato in tutti i domini.
 
 | Requisito | Valore |
 |-------------------|----------------------------------------------------------------------------------------------------------|
-| Intestazione<br/> | <dl> <dt>Dvdevcode. h (include dshow. h)</dt> </dl> |
+| Intestazione<br/> | <dl> <dt>Dvdevcode.h (includere Dshow.h)</dt> </dl> |
 
 
 

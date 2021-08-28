@@ -3,7 +3,7 @@ title: Elemento ScalingPolicy
 description: Rappresenta un contenitore per le specifiche di ridimensionamento.
 ms.assetid: 133e7994-9901-43e8-82b0-3d910cf8758e
 keywords:
-- Elemento ScalingPolicy barra multifunzione di Windows
+- Elemento ScalingPolicy Windows barra multifunzione
 topic_type:
 - apiref
 api_name:
@@ -13,12 +13,12 @@ api_type:
 ms.topic: reference
 ms.date: 05/31/2018
 api_location: ''
-ms.openlocfilehash: 812256b0ff329073eb516c6ab2eb7501db8de40d
-ms.sourcegitcommit: 099ecdda1e83618b844387405da0db0ebda93a65
+ms.openlocfilehash: 202112a24a74c9b20d429910fd0ee9447002ce7f2cb95133165fb968eaaf4f69
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/04/2021
-ms.locfileid: "111444992"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120007471"
 ---
 # <a name="scalingpolicy-element"></a>Elemento ScalingPolicy
 
@@ -61,22 +61,22 @@ Non ci sono attributi.
 
 Obbligatorio.
 
-Deve verificarsi una sola volta per [**ogni Tab.ScalingPolicy**](windowsribbon-element-tab-scalingpolicy.md).
+Deve verificarsi una sola volta per [**ogni classe Tab.ScalingPolicy.**](windowsribbon-element-tab-scalingpolicy.md)
 
-**L'elemento ScalingPolicy** contiene un manifesto di [**dichiarazioni ScalingPolicy.IdealSizes**](windowsribbon-element-scalingpolicy-idealsizes.md) e [**Scale**](windowsribbon-element-scale.md) che specificano le preferenze di layout adattive per uno o più elementi [**Group**](windowsribbon-element-group.md) quando la barra multifunzione viene ridimensionata.
+**L'elemento ScalingPolicy** contiene un manifesto delle dichiarazioni [**ScalingPolicy.IdealSizes**](windowsribbon-element-scalingpolicy-idealsizes.md) e [**Scale**](windowsribbon-element-scale.md) che specificano le preferenze di layout adattivo per uno o più elementi [**Group**](windowsribbon-element-group.md) quando la barra multifunzione viene ridimensionata.
 
 L'elenco [**di dichiarazioni Scale**](windowsribbon-element-scale.md) deve essere in ordine decrescente di dimensioni valide (Large, Medium, Small, Popup) per l'elemento [**SizeDefinition**](windowsribbon-element-sizedefinition.md) associato all'elemento [**Group.**](windowsribbon-element-group.md)
 
 > [!Note]  
-> È consigliabile che siano specificati dettagli adeguati dei criteri di ridimensionamento in modo che una barra multifunzione sia in grado di eseguire il rendering senza barre di scorrimento quando viene ridimensionata a una larghezza di 300 pixel a 96 punti per pollice (dpi).
+> È consigliabile che siano specificati dettagli adeguati dei criteri di ridimensionamento in modo che una barra multifunzione possa eseguire il rendering senza barre di scorrimento quando viene ridimensionata a una larghezza di 300 pixel con 96 punti per pollice (dpi).
 
  
 
 ## <a name="examples"></a>Esempio
 
-L'esempio seguente illustra come personalizzare l'aspetto dei controlli in [**un**](windowsribbon-element-group.md) gruppo tramite la funzionalità di layout adattivo dei modelli [**SizeDefinition della**](windowsribbon-element-sizedefinition.md) barra multifunzione.
+L'esempio seguente illustra come personalizzare l'aspetto dei controlli in un oggetto [**Group**](windowsribbon-element-group.md) tramite la funzionalità di layout adattivo dei modelli [**SizeDefinition della**](windowsribbon-element-sizedefinition.md) barra multifunzione.
 
-Il **manifesto ScalingPolicy** in questo esempio specifica una preferenza [**ScalingPolicy.IdealSizes**](windowsribbon-element-scalingpolicy-idealsizes.md) [**SizeDefinition**](windowsribbon-element-sizedefinition.md) per ognuno dei quattro gruppi di controlli in una **scheda** Home. Inoltre, gli [**elementi Scale**](windowsribbon-element-scale.md) vengono specificati per influire sul comportamento di compressione, in ordine decrescente, di ogni gruppo.
+Il **manifesto ScalingPolicy** in questo esempio specifica una preferenza [**ScalingPolicy.IdealSizes**](windowsribbon-element-scalingpolicy-idealsizes.md) [**SizeDefinition**](windowsribbon-element-sizedefinition.md) per ognuno dei quattro gruppi di controlli in una **scheda Home.** Inoltre, gli [**elementi Scale**](windowsribbon-element-scale.md) vengono specificati per influenzare il comportamento di compressione, in ordine di dimensione decrescente, di ogni gruppo.
 
 
 ```XML

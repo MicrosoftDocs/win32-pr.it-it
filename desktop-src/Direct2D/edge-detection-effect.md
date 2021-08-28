@@ -1,17 +1,17 @@
 ---
-title: Effetto rilevamento Edge
+title: Effetto di rilevamento dei bordi
 description: Filtra il contenuto di un'immagine, lasciando le linee ai bordi delle sezioni a contrasto dell'immagine.
 ms.assetid: d22868cf-95fe-690e-66ac-268d7e116aee
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: b47239bede77dc5d32582c6e83c8101e5c9bbf2a
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: f7067243c19ed65bcdc23f1654999ff10ad3b80bafa641d0d3da940719db7bcd
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "104048765"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119967067"
 ---
-# <a name="edge-detection-effect"></a>Effetto rilevamento Edge
+# <a name="edge-detection-effect"></a>Effetto di rilevamento dei bordi
 
 Filtra il contenuto di un'immagine, lasciando le linee ai bordi delle sezioni a contrasto dell'immagine.
 
@@ -19,13 +19,13 @@ Il CLSID per questo effetto è CLSID \_ D2D1EdgeDetection.
 
 -   [Immagine di esempio](#example-image)
 -   [Codice di esempio](#sample-code)
--   [Proprietà effetto](#effect-properties)
+-   [Proprietà dell'effetto](#effect-properties)
 -   [Requisiti](#requirements)
 -   [Argomenti correlati](#related-topics)
 
 ## <a name="example-image"></a>Immagine di esempio
 
-![esempio di output di effetto](images/edge-detection-effect.png)
+![Esempio di output dell'effetto](images/edge-detection-effect.png)
 
 ## <a name="sample-code"></a>Codice di esempio
 
@@ -45,9 +45,9 @@ m_d2dContext->DrawImage(edgeDetectionEffect.Get());
 m_d2dContext->EndDraw();
 ```
 
-## <a name="effect-properties"></a>Proprietà effetto
+## <a name="effect-properties"></a>Proprietà degli effetti
 
-Le proprietà per l'effetto di rilevamento bordo sono definite dall'enumerazione [**d2d1 \_ EDGEDETECTION \_ prop**](/windows/desktop/api/d2d1effects_2/ne-d2d1effects_2-d2d1_edgedetection_prop) .
+Le proprietà per l'effetto di rilevamento dei bordi sono definite dall'enumerazione [**D2D1 \_ EDGEDETECTION \_ PROP.**](/windows/desktop/api/d2d1effects_2/ne-d2d1effects_2-d2d1_edgedetection_prop)
 
 ## <a name="requirements"></a>Requisiti
 
@@ -55,10 +55,10 @@ Le proprietà per l'effetto di rilevamento bordo sono definite dall'enumerazione
 
 | Requisito | Valore |
 |--------------------------|---------------------------------------------------|
-| Client minimo supportato | App \[ Windows 10 desktop app \| Windows Store\] |
-| Server minimo supportato | App \[ Windows 10 desktop app \| Windows Store\] |
-| Intestazione                   | d2d1effects \_ 2. h                                  |
-| Libreria                  | d2d1. lib, dxguid. lib                              |
+| Client minimo supportato | \[Windows 10 app desktop \| Windows Store\] |
+| Server minimo supportato | \[Windows 10 app desktop \| Windows Store\] |
+| Intestazione                   | d2d1effects \_ 2.h                                  |
+| Libreria                  | d2d1.lib, dxguid.lib                              |
 
 ## <a name="related-topics"></a>Argomenti correlati
 

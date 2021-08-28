@@ -1,25 +1,25 @@
 ---
 title: Visualizzazione corretta su uno schermo con valori DPI elevati
-description: Descrive i passaggi per creare una finestra per l'applicazione che viene visualizzata correttamente in schermi con valori DPI elevati.
+description: Descrive i passaggi per creare una finestra per l'applicazione che viene visualizzata correttamente nei display con valori DPI elevati.
 ms.assetid: 72a4b076-1cf0-4dc9-bd75-43b5173fc2a0
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 1dd45b4b654556fc251575410cc11f9b66961263
-ms.sourcegitcommit: 5d4e99f4c8f42f5f543e52cb9beb9fb13ec56c5f
+ms.openlocfilehash: 45d8ebc6a7621623307d9b2cfd953a5fa3f3387fbacb3faeb345375d925044cf
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/19/2021
-ms.locfileid: "112406154"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119259961"
 ---
 # <a name="displaying-properly-on-a-high-dpi-display"></a>Visualizzazione corretta su uno schermo con valori DPI elevati
 
 Anche se Direct2D risolve automaticamente molti problemi di DPI elevati, è necessario eseguire due passaggi per assicurarsi che l'applicazione funzioni correttamente su schermi con valori DPI elevati:
 
--   [Passaggio 1: Usare l'interfaccia DPI di sistema durante la creazione di Windows](#step-1-use-the-system-dpi-when-creating-windows)
+-   [Passaggio 1: Usare l'interfaccia DPI di sistema durante la creazione Windows](#step-1-use-the-system-dpi-when-creating-windows)
 -   [Passaggio 2: Dichiarare che l'applicazione è in grado di riconoscere DPI](#step-2-declare-that-the-application-is-dpi-aware)
 -   [Argomenti correlati](#related-topics)
 
-## <a name="step-1-use-the-system-dpi-when-creating-windows"></a>Passaggio 1: Usare l'interfaccia DPI di sistema durante la creazione di Windows
+## <a name="step-1-use-the-system-dpi-when-creating-windows"></a>Passaggio 1: Usare l'interfaccia DPI di sistema durante la creazione Windows
 
 [**L'interfaccia ID2D1Factory**](/windows/win32/api/d2d1/nn-d2d1-id2d1factory) fornisce il [**metodo GetDesktopDpi**](/windows/win32/api/d2d1/nf-d2d1-id2d1factory-getdesktopdpi) per il recupero dell'interfaccia DPI di sistema. Fornisce le dimensioni orizzontali e verticali della visualizzazione in punti per pollice (DPI). Per usare questi valori per impostare la larghezza di una finestra, usare la formula seguente:
 
@@ -27,11 +27,11 @@ Anche se Direct2D risolve automaticamente molti problemi di DPI elevati, è nece
 
 ... dove *DPI orizzontale* è il valore ritentato da [**GetDesktopDpi**](/windows/win32/api/d2d1/nf-d2d1-id2d1factory-getdesktopdpi) e *il valore DPI orizzontale* predefinito è 96. La formula è simile per le dimensioni verticali:
 
-<*DPI verticale* >  \*  < *height*, in pixel>/<*DPI verticale predefinito*>
+<*DPI verticale* >  \*  < *height*, in pixel>/<*valore DPI verticale predefinito*>
 
 ... dove *DPI verticale* è il valore recuperato dal [**metodo GetDesktopDpi**](/windows/win32/api/d2d1/nf-d2d1-id2d1factory-getdesktopdpi) e *il valore DPI verticale* predefinito è 96.
 
-Il codice seguente usa il metodo [**GetDesktopDpi**](/windows/win32/api/d2d1/nf-d2d1-id2d1factory-getdesktopdpi) per recuperare il valore DPI di sistema e quindi crea una finestra di 640 × 480, ridimensionata al valore DPI di sistema.
+Il codice seguente usa il metodo [**GetDesktopDpi**](/windows/win32/api/d2d1/nf-d2d1-id2d1factory-getdesktopdpi) per recuperare il valore DPI di sistema e quindi crea una finestra di 640 × 480, ridimensionata in base al valore DPI di sistema.
 
 
 ```C++
@@ -64,7 +64,7 @@ Il codice seguente usa il metodo [**GetDesktopDpi**](/windows/win32/api/d2d1/nf-
 
 > [!Note]
 >
-> A partire da Windows 8, è possibile usare la classe [**Windows::Graphics::D isplay::D isplayProperties**](/uwp/api/Windows.Graphics.Display.DisplayProperties) per ottenere il valore DPI di sistema.
+> A partire da Windows 8, è possibile usare la [**classe Windows::Graphics::D isplay::D isplayProperties**](/uwp/api/Windows.Graphics.Display.DisplayProperties) per ottenere il valore DPI di sistema.
 
  
 

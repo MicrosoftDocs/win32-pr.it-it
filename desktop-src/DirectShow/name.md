@@ -1,7 +1,7 @@
 ---
-description: La macro del nome genera una stringa di solo debug.
+description: La macro NAME genera una stringa di solo debug.
 ms.assetid: 5cb9f803-dd2b-4055-bdcc-e754ef5fa505
-title: NOME (Wxdebug. h)
+title: NAME (Wxdebug.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -16,16 +16,16 @@ api_location:
 - Strmbase.dll
 - Strmbasd.lib
 - Strmbasd.dll
-ms.openlocfilehash: 0b698551789deb0c3775bd4ac722136e1abc9d38
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: 9fa3d9c7e343dcbc8c6959a1ead025cafb3e4722382d7fd61c085bcff05347ec
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "106328074"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120107681"
 ---
-# <a name="name"></a>NAME
+# <a name="name"></a>NOME
 
-La macro del **nome** genera una stringa di solo debug.
+La macro **NAME** genera una stringa di solo debug.
 
 ``` syntax
 NAME(strLiteral);
@@ -44,7 +44,7 @@ Stringa di testo.
 
 ## <a name="remarks"></a>Commenti
 
-Nelle build di debug questa macro è equivalente alla macro di **testo** . Nelle compilazioni finali, viene risolto in (TCHAR \* ) **null**. Questa macro è utile quando si dichiara il nome di un oggetto che deriva dalla classe [**CBaseObject**](cbaseobject.md) .
+Nelle build di debug questa macro è equivalente alla macro **TEXT.** Nelle build per la vendita al dettaglio viene risolto in (TCHAR \* ) **NULL.** Questa macro è utile quando si dichiara il nome di un oggetto che deriva dalla [**classe CBaseObject.**](cbaseobject.md)
 
 
 ```C++
@@ -59,8 +59,8 @@ pObject = new CBaseObject(NAME("My Object"));
 
 | Requisito | Valore |
 |--------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Intestazione<br/>  | <dl> <dt>Wxdebug. h (include Streams. h)</dt> </dl>                                                                                   |
-| Libreria<br/> | <dl> <dt>Strmbase. lib (compilazioni finali); </dt> <dt>Strmbasd. lib (build di debug)</dt> </dl> |
+| Intestazione<br/>  | <dl> <dt>Wxdebug.h (includere Flussi.h)</dt> </dl>                                                                                   |
+| Libreria<br/> | <dl> <dt>Strmbase.lib (build di vendita al dettaglio); </dt> <dt>Strmbasd.lib (build di debug)</dt> </dl> |
 
 
 

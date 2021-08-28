@@ -1,5 +1,5 @@
 ---
-description: Ottenere un puntatore alla memoria buffer mesh per modificarne il contenuto.
+description: Ottenere un puntatore alla memoria del buffer mesh per modificarne il contenuto.
 ms.assetid: d15ed47a-450e-404a-bcc2-a641abc2d02e
 title: Metodo ID3DX10MeshBuffer::Map (D3DX10.h)
 ms.topic: reference
@@ -14,16 +14,16 @@ api_type:
 api_location:
 - D3DX10.lib
 - D3DX10.dll
-ms.openlocfilehash: c4a71aaaffe7ed11429efa67b6065f94ecd154d0
-ms.sourcegitcommit: ca37395fd832e798375e81142b97cffcffabf184
+ms.openlocfilehash: 38be37d9d11e40f336eab58691d18113664ff49138704ea563efe083800d7c14
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/24/2021
-ms.locfileid: "110335355"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120096601"
 ---
 # <a name="id3dx10meshbuffermap-method"></a>Metodo ID3DX10MeshBuffer::Map
 
-Ottenere un puntatore alla memoria buffer mesh per modificarne il contenuto.
+Ottenere un puntatore alla memoria del buffer mesh per modificarne il contenuto.
 
 ## <a name="syntax"></a>Sintassi
 

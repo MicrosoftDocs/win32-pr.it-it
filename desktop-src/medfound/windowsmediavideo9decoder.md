@@ -4,12 +4,12 @@ ms.assetid: 08f68d1c-c226-4bf6-abd0-fce0f9ddbc05
 title: Windows Decodificatore Media Video 9 (Wmcodecdsp.h)
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: b251b46c94ef88283577dbd8268c3275d8ed6aab9321c98e115a42501e2729ed
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: df973e78f69e1f1ff0e649b2c4f5637380be9f27
+ms.sourcegitcommit: 9b5faa61c38b2d0c432b7f2dbee8c127b0e28a7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "118237263"
+ms.lasthandoff: 08/19/2021
+ms.locfileid: "122474307"
 ---
 # <a name="windows-media-video-9-decoder"></a>Windows Decodificatore Media Video 9
 
@@ -26,15 +26,15 @@ L'identificatore di classe (CLSID) per il decodificatore Windows Media Video è 
 
 ## <a name="interfaces"></a>Interfacce
 
-Un oggetto decodificatore video espone [**l'interfaccia IMediaObject**](/previous-versions/windows/desktop/api/mediaobj/nn-mediaobj-imediaobject) in modo che l'oggetto possa essere usato come oggetto multimediale DirectX (DMO) ed espone l'interfaccia [**IMFTransform**](/windows/desktop/api/mftransform/nn-mftransform-imftransform) in modo che l'oggetto possa essere usato come trasformazione Media Foundation (MFT).
+Un oggetto decodificatore video espone [**l'interfaccia IMediaObject**](/previous-versions/windows/desktop/api/mediaobj/nn-mediaobj-imediaobject) in modo che l'oggetto possa essere usato come oggetto multimediale DirectX (DMO) e espone l'interfaccia [**IMFTransform**](/windows/desktop/api/mftransform/nn-mftransform-imftransform) in modo che l'oggetto possa essere usato come trasformazione Media Foundation (MFT).
 
-Un decodificatore video si comporta come DMO o MFT a seconda delle interfacce che si ottengono e della versione Windows in esecuzione. La tabella seguente illustra le condizioni in cui un decodificatore video si comporta come DMO o MFT.
+Un decodificatore video si comporta come DMO o MFT a seconda delle interfacce che si ottengono e della versione di Windows in esecuzione. La tabella seguente illustra le condizioni in cui un decodificatore video si comporta come DMO o MFT.
 
 
 
 | Sistema operativo            | Comportamento del decodificatore                                                                                                                                                      |
 |-----------------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Windows XP                  | Un Windows decodificatore video multimediale si comporta sempre come DMO.                                                                                                                |
+| Windows XP                  | Un Windows video decoder multimediale si comporta sempre come DMO.                                                                                                                |
 | Windows Vista e Windows 7 | Per impostazione predefinita, Windows decodificatore video multimediale si comporta come DMO. Se si ottiene [**un'interfaccia IMFTransform**](/windows/desktop/api/mftransform/nn-mftransform-imftransform) in un decodificatore video, si comporta come un MFT. |
 
 
@@ -92,84 +92,22 @@ Il Windows Media Video decoder supporta i sottotipi multimediali di output segue
 
 ## <a name="properties"></a>Proprietà
 
-Il Windows Media Video decoder supporta le proprietà seguenti.
+Il Windows media video supporta le proprietà seguenti.
 
 
 
-<table>
-<colgroup>
-<col style="width: 50%" />
-<col style="width: 50%" />
-</colgroup>
-<thead>
-<tr class="header">
-<th>Proprietà</th>
-<th>Descrizione</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td><a href="mfpkey-decoder-deinterlacingproperty.md">MFPKEY_DECODER_DEINTERLACING</a></td>
-<td>Specifica se il codec decodifica i fotogrammi video interlacciati dal flusso compresso come fotogrammi progressivi.<br/> <dl> Windows XP e versioni successive.<br />
-Profilo semplice, Profilo principale, Profilo avanzato.<br />
-Proprietà di lettura/scrittura.<br />
-</dl></td>
-</tr>
-<tr class="even">
-<td><a href="mfpkey-dxva-enabledproperty.md">MFPKEY_DXVA_ENABLED</a></td>
-<td>Specifica se il decodificatore userà l'hardware di accelerazione video DirectX, se disponibile.<br/> <dl> Windows XP e versioni successive.<br />
-Profilo semplice, Profilo principale, Profilo avanzato.<br />
-Sola scrittura.<br />
-</dl></td>
-</tr>
-<tr class="odd">
-<td><a href="mfpkey-avdecvideoswpowerlevelproperty.md">MFPKEY_AVDecVideoSWPowerLevel</a></td>
-<td>Specifica il livello di alimentazione per il decodificatore.<br/> <dl> Windows 7.<br />
-Profilo semplice, Profilo principale, Profilo avanzato, Immagine.<br />
-Proprietà di lettura/scrittura.<br />
-</dl></td>
-</tr>
-<tr class="even">
-<td><a href="mfpkey-fi-enabledproperty.md">MFPKEY_FI_ENABLED</a></td>
-<td>Specifica se il decodificatore deve usare l'interpolazione dei fotogrammi.<br/> <dl> Windows XP e versioni successive.<br />
-Profilo semplice, Profilo principale, Profilo avanzato, Immagine.<br />
-Sola scrittura.<br />
-</dl></td>
-</tr>
-<tr class="odd">
-<td><a href="mfpkey-fi-supportedproperty.md">MFPKEY_FI_SUPPORTED</a></td>
-<td>Specifica se il decodificatore supporta l'interpolazione dei fotogrammi.<br/> <dl> Windows XP e versioni successive.<br />
-Profilo semplice, Profilo principale, Profilo avanzato, Immagine<br />
-Di sola lettura.<br />
-</dl></td>
-</tr>
-<tr class="even">
-<td><a href="mfpkey-numthreadsdecproperty.md">MFPKEY_NUMTHREADSDEC</a></td>
-<td>Specifica il numero di thread che verranno utilizzati dal decodificatore.<br/> <dl> Windows Vista e versioni successive.<br />
-Profilo semplice, Profilo principale, Profilo avanzato, Immagine.<br />
-Proprietà di lettura/scrittura.<br />
-</dl></td>
-</tr>
-<tr class="odd">
-<td><a href="mfpkey-postprocessmodeproperty.md">MFPKEY_POSTPROCESSMODE</a></td>
-<td>Specifica la modalità di post-elaborazione per il decodificatore.<br/> <dl> Windows Vista e versioni successive.<br />
-Profilo semplice, Profilo principale, Profilo avanzato, Immagine.<br />
-Sola scrittura.<br />
-</dl></td>
-</tr>
-<tr class="even">
-<td><strong>g_wszWMVCNeedsDrain</strong></td>
-<td>Specifica se il decodificatore deve essere svuotato.<br/> <dl> Windows 8<br />
-Di sola lettura.<br />
-</dl> Questa proprietà viene usata dal runtime di Windows Media Format. Il tipo di proprietà è <strong>VARIANT_BOOL</strong>. Se il valore è <strong>VARIANT_TRUE</strong>, il decodificatore deve essere svuotato dopo una discontinuità. Per altre informazioni sullo svuotamento di un MFT, vedere <a href="basic-mft-processing-model.md">Modello di elaborazione MFT di base</a>.<br/>
-<blockquote>
-[!Note]<br />
-Per eseguire query su questa proprietà, usare <a href="/windows/desktop/com/ipropertybag-and-ipersistpropertybag"><strong>l'interfaccia IPropertyBag.</strong></a>
-</blockquote>
-<br/></td>
-</tr>
-</tbody>
-</table>
+
+| Proprietà | Descrizione | 
+|----------|-------------|
+| <a href="mfpkey-decoder-deinterlacingproperty.md">MFPKEY_DECODER_DEINTERLACING</a> | Specifica se il codec decodifica i fotogrammi video interlacciati dal flusso compresso come fotogrammi progressivi.<br /><dl> Windows XP e versioni successive.<br />Profilo semplice, Profilo principale, Profilo avanzato.<br />Proprietà di lettura/scrittura.<br /></dl> | 
+| <a href="mfpkey-dxva-enabledproperty.md">MFPKEY_DXVA_ENABLED</a> | Specifica se il decodificatore userà l'hardware di accelerazione video DirectX, se disponibile.<br /><dl> Windows XP e versioni successive.<br />Profilo semplice, Profilo principale, Profilo avanzato.<br />Sola scrittura.<br /></dl> | 
+| <a href="mfpkey-avdecvideoswpowerlevelproperty.md">MFPKEY_AVDecVideoSWPowerLevel</a> | Specifica il livello di alimentazione per il decodificatore.<br /><dl> Windows 7.<br />Profilo semplice, Profilo principale, Profilo avanzato, Immagine.<br />Proprietà di lettura/scrittura.<br /></dl> | 
+| <a href="mfpkey-fi-enabledproperty.md">MFPKEY_FI_ENABLED</a> | Specifica se il decodificatore deve usare l'interpolazione dei fotogrammi.<br /><dl> Windows XP e versioni successive.<br />Profilo semplice, Profilo principale, Profilo avanzato, Immagine.<br />Sola scrittura.<br /></dl> | 
+| <a href="mfpkey-fi-supportedproperty.md">MFPKEY_FI_SUPPORTED</a> | Specifica se il decodificatore supporta l'interpolazione dei fotogrammi.<br /><dl> Windows XP e versioni successive.<br />Profilo semplice, Profilo principale, Profilo avanzato, Immagine<br />Di sola lettura.<br /></dl> | 
+| <a href="mfpkey-numthreadsdecproperty.md">MFPKEY_NUMTHREADSDEC</a> | Specifica il numero di thread che verranno utilizzati dal decodificatore.<br /><dl> Windows Vista e versioni successive.<br />Profilo semplice, Profilo principale, Profilo avanzato, Immagine.<br />Proprietà di lettura/scrittura.<br /></dl> | 
+| <a href="mfpkey-postprocessmodeproperty.md">MFPKEY_POSTPROCESSMODE</a> | Specifica la modalità di post-elaborazione per il decodificatore.<br /><dl> Windows Vista e versioni successive.<br />Profilo semplice, Profilo principale, Profilo avanzato, Immagine.<br />Sola scrittura.<br /></dl> | 
+| <strong>g_wszWMVCNeedsDrain</strong> | Specifica se il decodificatore deve essere svuotato.<br /><dl> Windows 8<br />Di sola lettura.<br /></dl> Questa proprietà viene usata dal runtime di Windows Media Format. Il tipo di proprietà è <strong>VARIANT_BOOL</strong>. Se il valore è <strong>VARIANT_TRUE</strong>, il decodificatore deve essere svuotato dopo una discontinuità. Per altre informazioni sullo svuotamento di un MFT, vedere <a href="basic-mft-processing-model.md">Modello di elaborazione MFT di base</a>.<br /><blockquote>[!Note]<br />Per eseguire query su questa proprietà, usare <a href="/windows/desktop/com/ipropertybag-and-ipersistpropertybag"><strong>l'interfaccia IPropertyBag.</strong></a></blockquote><br /> | 
+
 
 
 
@@ -183,7 +121,7 @@ La risoluzione massima consentita dal Windows Media Video 9 è 4096x4096.
 
 
 
-| Requisito | Valore |
+| Requisito | valore |
 |-------------------|-----------------------------------------------------------------------------------------|
 | Client<br/> | Windows XP, Windows Vista o Windows 7<br/>                                       |
 | Intestazione<br/> | <dl> <dt>Wmcodecdsp.h</dt> </dl> |

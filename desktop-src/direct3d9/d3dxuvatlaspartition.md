@@ -1,5 +1,5 @@
 ---
-description: 'Funzione D3DXUVAtlasPartition: crea un at atlas UV per una mesh.'
+description: 'Funzione D3DXUVAtlasPartition: creare un at atlas UV per una mesh.'
 ms.assetid: c46f3e47-8e72-435c-875d-cccfa4b893a2
 title: Funzione D3DXUVAtlasPartition (D3DX9Mesh.h)
 ms.topic: reference
@@ -14,12 +14,12 @@ api_type:
 api_location:
 - d3dx9.lib
 - d3dx9.dll
-ms.openlocfilehash: 63df6bbcc1b811b9617796bc6e7e51af2dfdca56
-ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
+ms.openlocfilehash: e34c5b9fe69129cb60c604cbde1fc6bcb4df8e442b7ea29bc55cec44911505e3
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/28/2021
-ms.locfileid: "108117799"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120096128"
 ---
 # <a name="d3dxuvatlaspartition-function"></a>Funzione D3DXUVAtlasPartition
 
@@ -142,7 +142,7 @@ Specificare la frequenza con cui D3DX chiamerà il callback. un valore predefini
 
 Tipo: **[ **LPVOID**](../winprog/windows-data-types.md)**
 
-Puntatore a un valore definito dall'utente passato alla funzione di callback. in genere usato da un'applicazione per passare un puntatore a una struttura di dati che fornisce informazioni sul contesto per la funzione di callback.
+Puntatore a un valore definito dall'utente passato alla funzione di callback. utilizzato in genere da un'applicazione per passare un puntatore a una struttura di dati che fornisce informazioni di contesto per la funzione di callback.
 
 </dd> <dt>
 
@@ -151,7 +151,7 @@ Puntatore a un valore definito dall'utente passato alla funzione di callback. in
 
 Tipo: **[ **DWORD**](../winprog/windows-data-types.md)**
 
-Specificare la qualità dei grafici generati combinando uno o più flag [**D3DXUVATLAS.**](./d3dxuvatlas.md)
+Specificare la qualità dei grafici generati combinando uno o più [**flag D3DXUVATLAS.**](./d3dxuvatlas.md)
 
 </dd> <dt>
 
@@ -160,7 +160,7 @@ Specificare la qualità dei grafici generati combinando uno o più flag [**D3DXU
 
 Tipo: **[ **LPD3DXMESH**](id3dxmesh.md)\***
 
-Puntatore alla mesh creata con l'at atlas (vedere [**ID3DXMesh).**](id3dxmesh.md)
+Puntatore alla mesh creata con l'atlas (vedere [**ID3DXMesh).**](id3dxmesh.md)
 
 </dd> <dt>
 
@@ -169,7 +169,7 @@ Puntatore alla mesh creata con l'at atlas (vedere [**ID3DXMesh).**](id3dxmesh.md
 
 Tipo: **[ **LPD3DXBUFFER**](id3dxbuffer.md)**
 
-Puntatore a una matrice dei dati finali di partizionamento del viso. Ogni elemento contiene un valore DWORD per ogni viso (vedere [**ID3DXBuffer**](id3dxbuffer.md)).
+Puntatore a una matrice dei dati finali di partizionamento viso. Ogni elemento contiene un valore DWORD per ogni viso (vedere [**ID3DXBuffer).**](id3dxbuffer.md)
 
 </dd> <dt>
 
@@ -178,7 +178,7 @@ Puntatore a una matrice dei dati finali di partizionamento del viso. Ogni elemen
 
 Tipo: **[ **LPD3DXBUFFER**](id3dxbuffer.md)\***
 
-Puntatore a una matrice di vertici di cui è stato ridefinito il mapping. Ogni elemento della matrice identifica il vertice originale da cui deriva ogni vertice finale (se il vertice è stato suddiviso durante il nuovo mapping). Ogni elemento della matrice contiene un valore DWORD per vertice.
+Puntatore a una matrice di vertici mappati. Ogni elemento della matrice identifica il vertice originale da cui deriva ogni vertice finale (se il vertice è stato suddiviso durante il nuovo mapping). Ogni elemento della matrice contiene un valore DWORD per vertice.
 
 </dd> <dt>
 
@@ -187,7 +187,7 @@ Puntatore a una matrice di vertici di cui è stato ridefinito il mapping. Ogni e
 
 Tipo: **[ **LPD3DXBUFFER**](id3dxbuffer.md)\***
 
-Indirizzo di un puntatore a [**un'interfaccia ID3DXBuffer.**](id3dxbuffer.md) Questo buffer conterrà una matrice di tre DWORD per ogni viso che specifica i tre elementi adiacenti per ogni viso nella mesh di output. Questo parametro non deve essere **NULL** perché la chiamata successiva a D3DXUVAtlasPack() lo richiede.
+Indirizzo di un puntatore a [**un'interfaccia ID3DXBuffer.**](id3dxbuffer.md) Questo buffer conterrà una matrice di tre DWORD per viso che specificano i tre elementi adiacenti per ogni viso nella mesh di output. Questo parametro non deve essere **NULL** perché la chiamata successiva a D3DXUVAtlasPack() lo richiede.
 
 </dd> <dt>
 
@@ -217,7 +217,7 @@ Se la funzione ha esito positivo, il valore restituito è D3D OK; in caso contra
 
 ## <a name="remarks"></a>Commenti
 
-D3DXUVAtlasPartition è simile a [**D3DXUVAtlasCreate,**](d3dxuvatlascreate.md)ad eccezione del fatto che D3DXUVAtlasPartition non esegue il passaggio di creazione del pacchetto finale.
+D3DXUVAtlasPartition è simile a [**D3DXUVAtlasCreate,**](d3dxuvatlascreate.md)ad eccezione del fatto che D3DXUVAtlasPartition non esegue il passaggio finale di creazione del pacchetto.
 
 ## <a name="requirements"></a>Requisiti
 

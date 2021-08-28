@@ -1,12 +1,12 @@
 ---
-title: Proprietà CmClassGuid di IMsRdpDeviceV2
+title: Proprietà IMsRdpDeviceV2 CmClassGuid
 description: Contiene il GUID della classe di installazione di Configuration Manager per il dispositivo.
 ms.assetid: 29ebe2ca-d669-4cc1-8cc1-33490fbb9497
 ms.tgt_platform: multiple
 keywords:
-- Servizi Desktop remoto proprietà CmClassGuid
-- Servizi Desktop remoto proprietà CmClassGuid, interfaccia IMsRdpDeviceV2
-- Interfaccia IMsRdpDeviceV2 Servizi Desktop remoto, proprietà CmClassGuid
+- Proprietà CmClassGuid Servizi Desktop remoto
+- Proprietà CmClassGuid Servizi Desktop remoto, interfaccia IMsRdpDeviceV2
+- Interfaccia IMsRdpDeviceV2 Servizi Desktop remoto , proprietà CmClassGuid
 topic_type:
 - apiref
 api_name:
@@ -18,14 +18,14 @@ api_type:
 - COM
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 47a13a8ee706a1e6d2f512a9f6dca98928e3d8d9
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: 372d30ad6dc906b421a6f4a125d3f6fddb88addead17ea27f43369ceee758465
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "106300991"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120099391"
 ---
-# <a name="imsrdpdevicev2cmclassguid-property"></a>Proprietà IMsRdpDeviceV2:: CmClassGuid
+# <a name="imsrdpdevicev2cmclassguid-property"></a>Proprietà IMsRdpDeviceV2::CmClassGuid
 
 Contiene il GUID della classe di installazione di Configuration Manager per il dispositivo.
 

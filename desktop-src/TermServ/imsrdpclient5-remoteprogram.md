@@ -1,22 +1,22 @@
 ---
-title: Proprietà RemoteProgram di IMsRdpClient5
+title: Proprietà RemoteProgram IMsRdpClient5
 description: Recupera un oggetto che supporta l'interfaccia ITSRemoteProgram.
 ms.assetid: 013f613b-af7b-4cc5-be1f-d45833806e3b
 ms.tgt_platform: multiple
 keywords:
-- Servizi Desktop remoto proprietà RemoteProgram
-- Servizi Desktop remoto proprietà RemoteProgram, interfaccia IMsRdpClient5
-- Interfaccia IMsRdpClient5 Servizi Desktop remoto, proprietà RemoteProgram
-- Servizi Desktop remoto proprietà RemoteProgram, interfaccia IMsRdpClient6
-- Interfaccia IMsRdpClient6 Servizi Desktop remoto, proprietà RemoteProgram
-- Servizi Desktop remoto proprietà RemoteProgram, interfaccia IMsRdpClient7
-- Interfaccia IMsRdpClient7 Servizi Desktop remoto, proprietà RemoteProgram
-- Servizi Desktop remoto proprietà RemoteProgram, interfaccia IMsRdpClient8
-- Interfaccia IMsRdpClient8 Servizi Desktop remoto, proprietà RemoteProgram
-- Servizi Desktop remoto proprietà RemoteProgram, interfaccia IMsRdpClient9
-- Interfaccia IMsRdpClient9 Servizi Desktop remoto, proprietà RemoteProgram
-- Servizi Desktop remoto proprietà RemoteProgram, interfaccia IMsRdpClient10
-- Interfaccia IMsRdpClient10 Servizi Desktop remoto, proprietà RemoteProgram
+- Proprietà RemoteProgram Servizi Desktop remoto
+- Proprietà RemoteProgram Servizi Desktop remoto, interfaccia IMsRdpClient5
+- Interfaccia IMsRdpClient5 Servizi Desktop remoto , proprietà RemoteProgram
+- Proprietà RemoteProgram Servizi Desktop remoto, interfaccia IMsRdpClient6
+- Interfaccia IMsRdpClient6 Servizi Desktop remoto , proprietà RemoteProgram
+- Proprietà RemoteProgram Servizi Desktop remoto, interfaccia IMsRdpClient7
+- Interfaccia IMsRdpClient7 Servizi Desktop remoto , proprietà RemoteProgram
+- Proprietà RemoteProgram Servizi Desktop remoto, interfaccia IMsRdpClient8
+- Interfaccia IMsRdpClient8 Servizi Desktop remoto , proprietà RemoteProgram
+- Proprietà RemoteProgram Servizi Desktop remoto, interfaccia IMsRdpClient9
+- Interfaccia IMsRdpClient9 Servizi Desktop remoto , proprietà RemoteProgram
+- Proprietà RemoteProgram Servizi Desktop remoto, interfaccia IMsRdpClient10
+- Interfaccia IMsRdpClient10 Servizi Desktop remoto , proprietà RemoteProgram
 topic_type:
 - apiref
 api_name:
@@ -38,16 +38,16 @@ api_type:
 - COM
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 267e367af090a7fd70e9482406104fd0403d63f0
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: 03da8fba499a45ded2d28a5d40cc391c4a137e987eda0c32edd442861d67abc3
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "104475790"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120099481"
 ---
-# <a name="imsrdpclient5remoteprogram-property"></a>Proprietà IMsRdpClient5:: RemoteProgram
+# <a name="imsrdpclient5remoteprogram-property"></a>Proprietà IMsRdpClient5::RemoteProgram
 
-Recupera un oggetto che supporta l'interfaccia [**ITSRemoteProgram**](itsremoteprogram.md) .
+Recupera un oggetto che supporta [**l'interfaccia ITSRemoteProgram.**](itsremoteprogram.md)
 
 Questa proprietà è di sola lettura.
 
@@ -64,7 +64,7 @@ HRESULT get_RemoteProgram(
 
 ## <a name="property-value"></a>Valore proprietà
 
-Puntatore di interfaccia [**ITSRemoteProgram**](itsremoteprogram.md) .
+Puntatore [**a interfaccia ITSRemoteProgram.**](itsremoteprogram.md)
 
 ## <a name="requirements"></a>Requisiti
 
@@ -76,7 +76,7 @@ Puntatore di interfaccia [**ITSRemoteProgram**](itsremoteprogram.md) .
 | Server minimo supportato<br/> | Windows Server 2008<br/>                                                         |
 | Libreria dei tipi<br/>             | <dl> <dt>MsTscAx.dll</dt> </dl> |
 | DLL<br/>                      | <dl> <dt>MsTscAx.dll</dt> </dl> |
-| IID<br/>                      | IID \_ IMsRdpClient5 è definito come 4eb5335b-6429-477d-B922-e06a28ecd8bf<br/>       |
+| IID<br/>                      | IID IMsRdpClient5 è definito come \_ 4eb5335b-6429-477d-b922-e06a28ecd8bf<br/>       |
 
 
 

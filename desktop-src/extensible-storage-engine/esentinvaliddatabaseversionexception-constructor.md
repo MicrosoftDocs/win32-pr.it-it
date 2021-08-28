@@ -1,5 +1,5 @@
 ---
-description: 'Altre informazioni su: Costruttore EsentInvalidDatabaseVersionException'
+description: Altre informazioni sul costruttore EsentInvalidDatabaseVersionException
 title: Costruttore EsentInvalidDatabaseVersionException
 TOCTitle: 'EsentInvalidDatabaseVersionException constructor '
 ms:assetid: M:Microsoft.Isam.Esent.Interop.EsentInvalidDatabaseVersionException.#ctor
@@ -24,19 +24,19 @@ api_type:
 api_location:
 - Microsoft.Isam.Esent.Interop.dll
 ROBOTS: INDEX,FOLLOW
-ms.openlocfilehash: 3706f6c5eae7986881955e15ef34da3a27ce8ac8
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: aa91fd2a6d6ddb410267ff5de668781f5fd45b902029271a86ea06b4d2654e6b
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "104349516"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119837231"
 ---
 # <a name="esentinvaliddatabaseversionexception-constructor"></a>Costruttore EsentInvalidDatabaseVersionException
 
 Inizializza una nuova istanza della classe EsentInvalidDatabaseVersionException.
 
-**Spazio dei nomi:**  [Microsoft. ISAM. esent. Interop](./microsoft.isam.esent.interop-namespace.md)  
-**Assembly:**  Microsoft. ISAM. esent. Interop (in Microsoft.Isam.Esent.Interop.dll)
+**Spazio dei nomi:**  [Microsoft.Isam.Esent.Interop](./microsoft.isam.esent.interop-namespace.md)  
+**Assembly:**  Microsoft.Isam.Esent.Interop (in Microsoft.Isam.Esent.Interop.dll)
 
 ## <a name="syntax"></a>Sintassi
 
@@ -60,4 +60,4 @@ public EsentInvalidDatabaseVersionException()
 
 [Membri di EsentInvalidDatabaseVersionException](./esentinvaliddatabaseversionexception-members.md)
 
-[Spazio dei nomi Microsoft. ISAM. esent. Interop](./microsoft.isam.esent.interop-namespace.md)
+[Spazio dei nomi Microsoft.Isam.Esent.Interop](./microsoft.isam.esent.interop-namespace.md)

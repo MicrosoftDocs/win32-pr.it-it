@@ -1,46 +1,46 @@
 ---
-description: Prima di implementare il provider, è necessario innanzitutto registrare il provider con WMI. La registrazione del provider definisce il tipo di provider e le classi supportate dal provider. WMI può accedere solo a provider registrati.
+description: Prima di implementare il provider, è necessario registrarlo in WMI. La registrazione del provider definisce il tipo del provider e le classi supportate dal provider. WMI può accedere solo ai provider registrati.
 ms.assetid: b0a1a11c-a8e8-4bc1-b286-fb9243667976
 ms.tgt_platform: multiple
 title: Registrazione di un provider
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 53592ecb452de1b6071cbb8f59cfaaef42b57f1b
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 265d3a9f8617c68793fc30c0dc23fd3e9f0106ee98a9e3c757754e2fe589dda8
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "106314579"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119995921"
 ---
 # <a name="registering-a-provider"></a>Registrazione di un provider
 
-Prima di implementare il provider, è necessario innanzitutto registrare il provider con WMI. La registrazione del provider definisce il tipo di provider e le classi supportate dal provider. WMI può accedere solo a provider registrati.
+Prima di implementare il provider, è necessario registrarlo in WMI. La registrazione del provider definisce il tipo del provider e le classi supportate dal provider. WMI può accedere solo ai provider registrati.
 
 > [!Note]  
-> Per ulteriori informazioni sulla registrazione di un provider MI, vedere [procedura: registrare un provider mi](/previous-versions/windows/desktop/wmi_v2/how-to-register-an-mi-provider).
+> Per altre informazioni sulla registrazione di un provider mi, vedere [Procedura: Registrare un provider MI.](/previous-versions/windows/desktop/wmi_v2/how-to-register-an-mi-provider)
 
  
 
-Prima di registrare il provider, è possibile scrivere il codice del provider. Tuttavia, è molto difficile eseguire il debug di un provider non registrato con WMI. La determinazione delle interfacce per il provider consente inoltre di delineare lo scopo e la struttura di un provider. La registrazione del provider consente pertanto di progettare il provider.
+È possibile scrivere il codice del provider prima di registrarlo. Tuttavia, è molto difficile eseguire il debug di un provider non registrato con WMI. La determinazione delle interfacce per il provider consente anche di definire lo scopo e la struttura di un provider. Di conseguenza, la registrazione del provider consente di progettare il provider.
 
 Solo gli amministratori possono registrare o eliminare un provider.
 
-Un provider deve essere registrato per tutti i diversi tipi di funzioni del provider che esegue. Quasi tutti i provider forniscono istanze delle classi che definiscono, ma possono anche fornire dati della proprietà, metodi, eventi o classi. Il provider può inoltre essere registrato come provider di consumer di eventi o provider di contatori delle prestazioni. È consigliabile combinare tutte le funzionalità del provider in un provider anziché avere molti provider distinti per ogni tipo. Un esempio è il [provider del registro di sistema](/previous-versions/windows/desktop/regprov/system-registry-provider), che fornisce metodi e istanze, e il [provider di quote disco](/previous-versions/windows/desktop/wmipdskq/disk-quota-provider), che fornisce istanze, metodi ed eventi.
+Un provider deve essere registrato per tutti i diversi tipi di funzioni del provider eseguite. Quasi tutti i provider forniscono istanze delle classi definite, ma possono anche fornire dati, metodi, eventi o classi delle proprietà. Il provider può anche essere registrato come provider di consumer di eventi o provider di contatori delle prestazioni. È consigliabile combinare tutte le funzionalità del provider in un unico provider anziché avere molti provider separati per ogni tipo. Un esempio è il [provider del Registro](/previous-versions/windows/desktop/regprov/system-registry-provider)di sistema , che fornisce metodi e istanze di , e il provider disk [quota](/previous-versions/windows/desktop/wmipdskq/disk-quota-provider), che fornisce istanze, metodi ed eventi.
 
-Un provider deve essere registrato per tutti i diversi tipi di funzioni del provider che esegue. Quasi tutti i provider forniscono istanze delle classi che definiscono, ma possono anche fornire dati della proprietà, metodi, eventi o classi. Il provider può inoltre essere registrato come provider di consumer di eventi o provider di contatori delle prestazioni.
+Un provider deve essere registrato per tutti i diversi tipi di funzioni del provider eseguite. Quasi tutti i provider forniscono istanze delle classi definite, ma possono anche fornire dati, metodi, eventi o classi delle proprietà. Il provider può anche essere registrato come provider di consumer di eventi o provider di contatori delle prestazioni.
 
-Per ogni tipo di registrazione viene utilizzata la stessa istanza di [**\_ \_ Win32Provider**](--win32provider.md) :
+Per ogni tipo di registrazione viene usata la stessa istanza di [**\_ \_ Win32Provider:**](--win32provider.md)
 
 -   [Registrazione di un provider di istanze](registering-an-instance-provider.md)
 -   [Registrazione di un provider di classi](registering-a-class-provider.md)
 -   [Registrazione di un provider di metodi](registering-a-method-provider.md)
 -   [Registrazione di un provider di eventi](registering-an-event-provider.md)
 -   [Registrazione di un provider di consumer di eventi](registering-an-event-consumer-provider.md)
--   [Creazione di un provider di istanze in un provider di High-Performance](making-an-instance-provider-into-a-high-performance-provider.md)
+-   [Creazione di un provider di istanze in un provider High-Performance](making-an-instance-provider-into-a-high-performance-provider.md)
 
-## <a name="example-creating-and-registering-an-instance-of-a-provider"></a>Esempio: creazione e registrazione di un'istanza di un provider
+## <a name="example-creating-and-registering-an-instance-of-a-provider"></a>Esempio: Creazione e registrazione di un'istanza di un provider
 
-Nell'esempio seguente viene illustrato un file MOF che crea e registra un'istanza del [provider del registro di sistema](/previous-versions/windows/desktop/regprov/system-registry-provider) nello \\ spazio dei nomi CIMV2 radice. Assegna l'alias $Reg al provider per evitare il lungo percorso necessario nelle registrazioni di istanze e metodi. Per ulteriori informazioni, vedere [creazione di un alias](creating-an-alias.md).
+L'esempio seguente illustra un file MOF che crea e registra un'istanza del [provider del](/previous-versions/windows/desktop/regprov/system-registry-provider) Registro di sistema nello spazio dei nomi \\ radice cimv2. Assegna l'alias $Reg al provider per evitare il percorso lungo necessario nelle registrazioni dell'istanza e del metodo. Per altre informazioni, vedere [Creazione di un alias.](creating-an-alias.md)
 
 ``` syntax
 // Place the Registry provider in the root\cimv2 namespace
@@ -155,25 +155,25 @@ class StdRegProv
 };
 ```
 
-## <a name="example-registering-a-provider"></a>Esempio: registrazione di un provider
+## <a name="example-registering-a-provider"></a>Esempio: Registrazione di un provider
 
-Nella procedura riportata di seguito viene descritto come registrare un provider.
+Nella procedura seguente viene descritto come registrare un provider.
 
 **Per registrare un provider**
 
 1.  Registrare il provider come server COM.
 
-    Se necessario, potrebbe essere necessario creare voci del registro di sistema. Questo processo si applica a tutti i server COM e non è correlato a WMI. Per ulteriori informazioni, vedere la sezione COM nella documentazione di Microsoft Windows Software Development Kit (SDK).
+    Se necessario, potrebbe essere necessario creare voci del Registro di sistema. Questo processo si applica a tutti i server COM e non è correlato a WMI. Per altre informazioni, vedere la sezione COM nella documentazione di Microsoft Windows Software Development Kit (SDK).
 
-2.  Creare un file MOF che contiene istanze di [**\_ \_ Win32Provider**](--win32provider.md) e un'istanza di una classe derivata direttamente o indirettamente da [**\_ \_ ProviderRegistration**](--providerregistration.md), ad esempio [**\_ \_ InstanceProviderRegistration**](--instanceproviderregistration.md). Solo gli amministratori possono registrare o eliminare un provider creando istanze delle classi derivate da **\_ \_ Win32Provider** o [**\_ \_ ProviderRegistration**](--providerregistration.md).
-3.  Impostare [**HostingModel**](--win32provider.md) nell'istanza di **\_ \_ Win32Provider** in base ai valori dei modelli di [hosting](provider-hosting-and-security.md).
+2.  Creare un file MOF contenente istanze di [**\_ \_ Win32Provider**](--win32provider.md) e un'istanza di una classe derivata direttamente o indirettamente da [**\_ \_ ProviderRegistration,**](--providerregistration.md)ad esempio [**\_ \_ InstanceProviderRegistration.**](--instanceproviderregistration.md) Solo gli amministratori possono registrare o eliminare un provider creando istanze di classi derivate da **\_ \_ Win32Provider** [**\_ \_ o ProviderRegistration.**](--providerregistration.md)
+3.  Impostare [**HostingModel nell'istanza**](--win32provider.md) di **\_ \_ Win32Provider** in base ai valori in [Modelli di hosting.](provider-hosting-and-security.md)
 
     > [!Note]  
-    > A meno che il provider non richieda i privilegi elevati dell'account LocalSystem, la proprietà [**\_ \_ Win32Provider. HostingModel**](--win32provider.md) deve essere impostata su "NetworkServiceHost". Per altre informazioni, vedere [hosting e sicurezza del provider](provider-hosting-and-security.md).
+    > A meno che il provider non richieda privilegi elevati dell'account LocalSystem, la proprietà [**\_ \_ Win32Provider.HostingModel**](--win32provider.md) deve essere impostata su "NetworkServiceHost". Per altre informazioni, vedere [Hosting e sicurezza del provider.](provider-hosting-and-security.md)
 
      
 
-    Nell'esempio MOF seguente dell'esempio completo viene illustrato il codice che crea un'istanza di [**\_ \_ Win32Provider**](--win32provider.md).
+    L'esempio MOF seguente dell'esempio completo mostra il codice che crea un'istanza di [**\_ \_ Win32Provider**](--win32provider.md).
 
     ```mof
     instance of __Win32Provider as $Reg
@@ -186,14 +186,14 @@ Nella procedura riportata di seguito viene descritto come registrare un provider
 
     
 
-4.  Istanza di una classe derivata direttamente o indirettamente da [**\_ \_ ProviderRegistration**](--providerregistration.md)per descrivere l'implementazione logica del provider. Un provider può essere registrato per diversi tipi di funzionalità. Nell'esempio precedente viene registrato RegProv come istanza e provider di metodi. Tuttavia, se RegProv supporta la funzionalità, può essere registrato anche come proprietà o provider di eventi. Nella tabella seguente sono elencate le classi che registrano la funzionalità del provider.
+4.  Istanza di una classe derivata direttamente o indirettamente da [**\_ \_ ProviderRegistration**](--providerregistration.md)per descrivere l'implementazione logica del provider. Un provider può essere registrato per diversi tipi di funzionalità. L'esempio precedente registra RegProv come provider di istanza e metodo. Tuttavia, se RegProv supporta la funzionalità, potrebbe anche essere registrata come proprietà o provider di eventi. Nella tabella seguente sono elencate le classi che registrano le funzionalità del provider.
 
     
 
     | Classi di registrazione del provider                                                        | Descrizione                                                                         |
     |--------------------------------------------------------------------------------------|-------------------------------------------------------------------------------------|
-    | [**\_\_InstanceProviderRegistration**](--instanceproviderregistration.md)           | Registra un [provider di istanze](registering-an-instance-provider.md).             |
-    | [**\_\_EventProviderRegistration**](--eventproviderregistration.md)                 | Registra un [provider di eventi](registering-an-event-provider.md).                   |
+    | [**\_\_InstanceProviderRegistration**](--instanceproviderregistration.md)           | Registra un provider [di istanze](registering-an-instance-provider.md).             |
+    | [**\_\_EventProviderRegistration**](--eventproviderregistration.md)                 | Registra un provider [di eventi](registering-an-event-provider.md).                   |
     | [**\_\_EventConsumerProviderRegistration**](--eventconsumerproviderregistration.md) | Registra un [provider di consumer di eventi](registering-an-event-consumer-provider.md). |
     | [**\_\_MethodProviderRegistration**](--methodproviderregistration.md)               | Registra un [provider di metodi](registering-an-event-consumer-provider.md).          |
     | [**\_\_PropertyProviderRegistration**](--propertyproviderregistration.md)           | Registra un [provider di proprietà](registering-a-property-provider.md).               |
@@ -206,11 +206,11 @@ Nella procedura riportata di seguito viene descritto come registrare un provider
 
     In genere, è necessario inserire il file nella directory di installazione del provider.
 
-6.  Compilare il file MOF usando [mofcomp](mofcomp.md) o l'interfaccia [**IMOFCompiler**](/windows/desktop/api/Wbemcli/nn-wbemcli-imofcompiler) .
+6.  Compilare il file MOF usando [mofcomp](mofcomp.md) o [**l'interfaccia IMofCompiler.**](/windows/desktop/api/Wbemcli/nn-wbemcli-imofcompiler)
 
-    Per ulteriori informazioni, vedere [compilazione di file MOF](compiling-mof-files.md).
+    Per altre informazioni, vedere [Compilazione di file MOF.](compiling-mof-files.md)
 
-    **Windows 8 e Windows Server 2012:** Quando si installano i provider, sia [**mofcomp**](mofcomp.md) che l'interfaccia [**IMOFCompiler**](/windows/desktop/api/Wbemcli/nn-wbemcli-imofcompiler) considerano i \[ \] \[ qualificatori chiave e statici \] come true se sono presenti, indipendentemente dai valori effettivi. Altri qualificatori vengono considerati false se sono presenti ma non sono impostati in modo esplicito su true.
+    **Windows 8 e Windows Server 2012:** Quando si installano i provider, [**sia mofcomp**](mofcomp.md) che l'interfaccia [**IMofCompiler**](/windows/desktop/api/Wbemcli/nn-wbemcli-imofcompiler) considerano i qualificatori Key e Static come true se sono presenti, indipendentemente dai \[ valori \] \[ \] effettivi. Gli altri qualificatori vengono considerati come false se sono presenti ma non impostati in modo esplicito su true.
 
 ## <a name="related-topics"></a>Argomenti correlati
 
@@ -219,10 +219,10 @@ Nella procedura riportata di seguito viene descritto come registrare un provider
 [Sviluppo di un provider WMI](developing-a-wmi-provider.md)
 </dt> <dt>
 
-[Impostazione di descrittori di sicurezza spazio dei nomi](setting-namespace-security-descriptors.md)
+[Impostazione dei descrittori di sicurezza namepace](setting-namespace-security-descriptors.md)
 </dt> <dt>
 
-[Sicurezza del provider](securing-your-provider.md)
+[Protezione del provider](securing-your-provider.md)
 </dt> </dl>
 
  

@@ -16,12 +16,12 @@ api_location:
 - Strmbase.dll
 - Strmbasd.lib
 - Strmbasd.dll
-ms.openlocfilehash: 3d5b961ad62d65c1f728af71e82de1373ea20b1f
-ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
+ms.openlocfilehash: d8520b39ca62d70152b544e8ae2f146a237c388d93e4786bb13371ad223fa73f
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/28/2021
-ms.locfileid: "108098769"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120084041"
 ---
 # <a name="csourceseekinggetduration-method"></a>Metodo CSourceSeeking.GetDuration
 
@@ -58,7 +58,7 @@ Restituisce uno dei **valori HRESULT** elencati nella tabella seguente.
 | Codice restituito                                                                               | Descrizione                       |
 |-------------------------------------------------------------------------------------------|-----------------------------------|
 | <dl> <dt>**S \_ OK**</dt> </dl>      | Operazione riuscita<br/>                |
-| <dl> <dt>**PUNTATORE \_ E**</dt> </dl> | **Valore del** puntatore NULL<br/> |
+| <dl> <dt>**PUNTATORE E \_**</dt> </dl> | **Valore del** puntatore NULL<br/> |
 
 
 
@@ -66,7 +66,7 @@ Restituisce uno dei **valori HRESULT** elencati nella tabella seguente.
 
 ## <a name="remarks"></a>Commenti
 
-La durata viene specificata dalla [**variabile membro CSourceSeeking::m \_ rtDuration.**](csourceseeking-m-rtduration.md)
+La durata viene specificata dalla variabile membro [**CSourceSeeking::m \_ rtDuration.**](csourceseeking-m-rtduration.md)
 
 ## <a name="requirements"></a>Requisiti
 
@@ -74,7 +74,7 @@ La durata viene specificata dalla [**variabile membro CSourceSeeking::m \_ rtDur
 
 | Requisito | Valore |
 |--------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Intestazione<br/>  | <dl> <dt>Ctlutil.h (include Streams.h)</dt> </dl>                                                                                   |
+| Intestazione<br/>  | <dl> <dt>Ctlutil.h (include Flussi.h)</dt> </dl>                                                                                   |
 | Libreria<br/> | <dl> <dt>Strmbase.lib (build di vendita al dettaglio); </dt> <dt>Strmbasd.lib (build di debug)</dt> </dl> |
 
 

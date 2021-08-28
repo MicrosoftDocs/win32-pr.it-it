@@ -1,9 +1,9 @@
 ---
-title: AmbientAttributes. Height
-description: L'attributo Height specifica o recupera l'altezza del controllo.
+title: AmbientAttributes.height
+description: L'attributo height specifica o recupera l'altezza del controllo.
 ms.assetid: a5c85d86-15d4-451d-b8bc-ed3b6e0dfd7d
 keywords:
-- Media Player Windows AmbientAttributes. Height
+- AmbientAttributes.height Windows Media Player
 topic_type:
 - apiref
 api_name:
@@ -12,16 +12,16 @@ api_type:
 - NA
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 662268bfeaf00b3185d531ff10d8dd17c9127a66
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: 5cbc03f631fffc4d1544906721476f229cbeb926e5d56b08dc1647f2dfd3b243
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "106331405"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120098951"
 ---
-# <a name="ambientattributesheight"></a>AmbientAttributes. Height
+# <a name="ambientattributesheight"></a>AmbientAttributes.height
 
-L'attributo **Height** specifica o recupera l'altezza del controllo.
+**L'attributo** height specifica o recupera l'altezza del controllo.
 
 ``` syntax
         elementID.height
@@ -29,11 +29,11 @@ L'attributo **Height** specifica o recupera l'altezza del controllo.
 
 ## <a name="possible-values"></a>Valori possibili
 
-Questo attributo è un **numero** di lettura/scrittura (**Long**) che rappresenta l'altezza del controllo in pixel. Il valore predefinito è zero o l'altezza dell'immagine specificata nell'attributo **Image** del controllo.
+Questo attributo è un numero **di** lettura/scrittura (**long**) che rappresenta l'altezza del controllo in pixel. Il valore predefinito è zero o l'altezza dell'immagine specificata nell'attributo **image del** controllo.
 
 ## <a name="remarks"></a>Commenti
 
-Se l'altezza specificata è inferiore all'altezza dell'immagine specificata, l'immagine verrà ritagliata. Se l'altezza è maggiore dell'altezza dell'immagine, l'area di clic andrà oltre il limite dell'immagine. Indipendentemente dal valore assegnato a questo attributo, l'immagine non può superare la **visualizzazione** padre o la relativa **visualizzazione**.
+Se l'altezza specificata è inferiore all'altezza dell'immagine specificata, l'immagine verrà ritagliata. Se l'altezza è maggiore dell'altezza dell'immagine, l'area di clic supera il limite dell'immagine. Indipendentemente dal valore assegnato a questo attributo, l'immagine non può aumentare oltre il valore **VIEW** o **SUBVIEW padre.**
 
 ## <a name="requirements"></a>Requisiti
 
@@ -41,7 +41,7 @@ Se l'altezza specificata è inferiore all'altezza dell'immagine specificata, l'i
 
 | Requisito | Valore |
 |--------------------|------------------------------------------------------|
-| Versione<br/> | Windows Media Player versione 7,0 o successiva<br/> |
+| Versione<br/> | Windows Media Player versione 7.0 o successiva<br/> |
 
 
 

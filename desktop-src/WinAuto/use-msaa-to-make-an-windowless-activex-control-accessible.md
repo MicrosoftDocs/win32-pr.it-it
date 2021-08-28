@@ -1,47 +1,47 @@
 ---
-title: Usare MSAA per rendere accessibile un controllo ActiveX senza finestra
-description: Viene descritto come utilizzare Microsoft Active Accessibility \ 32; API per garantire che il controllo Microsoft ActiveX senza finestra sia accessibile per le applicazioni client di Assistive Technology (AT).
+title: Usare MSAA per rendere accessibile un controllo ActiveX finestra
+description: Descrive come usare l'Microsoft Active Accessibility \ 32; API per garantire che il controllo ActiveX Microsoft assistive technology sia accessibile alle applicazioni client assistive technology (AT).
 ms.assetid: 30F874F9-EA45-4365-8798-FEA011C62DA9
 keywords:
-- Controllo ActiveX, accessibilità
+- ActiveX Controllo, accessibilità
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 1a3a76aa72fadef502a6a4319284ab34fdd5214d
-ms.sourcegitcommit: 592c9bbd22ba69802dc353bcb5eb30699f9e9403
+ms.openlocfilehash: 6bac5c4d2a27e5f069f2242999438eebe85e2ea7df1a6bc94890aec142db246c
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/20/2020
-ms.locfileid: "106300182"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120098111"
 ---
-# <a name="use-msaa-to-make-a-windowless-activex-control-accessible"></a>Usare MSAA per rendere accessibile un controllo ActiveX senza finestra
+# <a name="use-msaa-to-make-a-windowless-activex-control-accessible"></a>Usare MSAA per rendere accessibile un controllo ActiveX finestra
 
-Viene descritto come utilizzare l'API Microsoft Active Accessibility per garantire che il controllo Microsoft ActiveX senza finestra sia accessibile alle applicazioni client per la tecnologia assistive (AT).
+Descrive come usare l'API Microsoft Active Accessibility per garantire che il controllo Microsoft ActiveX senza finestra sia accessibile alle applicazioni client assistive technology (AT).
 
 ## <a name="what-you-need-to-know"></a>Informazioni importanti
 
 ### <a name="technologies"></a>Tecnologie
 
--   [Controlli ActiveX](/windows/desktop/com/activex-controls)
+-   [ActiveX Controlli](/windows/desktop/com/activex-controls)
 -   [Microsoft Active Accessibility](microsoft-active-accessibility.md)
 
 ### <a name="prerequisites"></a>Prerequisiti
 
 -   C/C++
 -   Programmazione Microsoft Win32 e Component Object Model (COM)
--   Controlli ActiveX senza finestra
--   Server Microsoft Active Accessibility
+-   Controlli ActiveX finestra
+-   Microsoft Active Accessibility server
 
 ## <a name="instructions"></a>Istruzioni
 
-### <a name="step-1-implement-the-iaccessible-interface"></a>Passaggio 1: implementare l'interfaccia IAccessible.
+### <a name="step-1-implement-the-iaccessible-interface"></a>Passaggio 1: Implementare l'interfaccia IAccessible.
 
-Per rendere accessibile il controllo ActiveX senza finestra, è necessario implementare l'interfaccia Microsoft Active Accessibility [**IAccessible**](/windows/desktop/api/oleacc/nn-oleacc-iaccessible) , come per un controllo basato su finestra, eccetto come descritto nei passaggi seguenti. Per ulteriori informazioni sull'implementazione di **IAccessible**, vedere [la guida per gli sviluppatori di Active Accessibility server](developer-s-guide-for-active-accessibility-servers.md).
+Per rendere accessibile il controllo ActiveX senza finestra, è necessario implementare l'interfaccia [**IAccessible**](/windows/desktop/api/oleacc/nn-oleacc-iaccessible) di Microsoft Active Accessibility, esattamente come si farebbe per un controllo basato su finestra, ad eccezione di quanto descritto nei passaggi seguenti. Per altre informazioni sull'implementazione **di IAccessible,** vedere [Developer's Guide for Active Accessibility Servers](developer-s-guide-for-active-accessibility-servers.md).
 
-### <a name="step-2-implement-the-iserviceprovider-interface"></a>Passaggio 2: implementare l'interfaccia IServiceProvider.
+### <a name="step-2-implement-the-iserviceprovider-interface"></a>Passaggio 2: Implementare l'interfaccia IServiceProvider.
 
-Quando un client richiede informazioni di accessibilità sul controllo senza finestra, il contenitore chiama il metodo [**IServiceProvider:: QueryService**](/previous-versions/windows/internet-explorer/ie-developer/platform-apis/cc678966(v=vs.85)) del controllo per recuperare il puntatore all'interfaccia [**IAccessible**](/windows/desktop/api/oleacc/nn-oleacc-iaccessible) .
+Quando un client richiede informazioni di accessibilità sul controllo senza finestra, il contenitore chiama il metodo [**IServiceProvider::QueryService**](/previous-versions/windows/internet-explorer/ie-developer/platform-apis/cc678966(v=vs.85)) del controllo per recuperare il puntatore a interfaccia [**IAccessible.**](/windows/desktop/api/oleacc/nn-oleacc-iaccessible)
 
-Questo esempio illustra come implementare il metodo [**QueryService**](/previous-versions/windows/internet-explorer/ie-developer/platform-apis/cc678966(v=vs.85)) .
+Questo esempio illustra come implementare il [**metodo QueryService.**](/previous-versions/windows/internet-explorer/ie-developer/platform-apis/cc678966(v=vs.85))
 
 
 ```C++
@@ -66,11 +66,11 @@ STDMETHODIMP CMyAccessibleMSAAControl::QueryService(REFGUID guidService,
 
 
 
-### <a name="step-3-delegate-iaccessibleget_accparent-method-calls-to-the-control-sites-iaccessiblewindowlesssitegetparentaccessible-method"></a>Passaggio 3: delegare \_ le chiamate al metodo IAccessible:: get accParent al metodo IAccessibleWindowlessSite:: GetParentAccessible del sito del controllo.
+### <a name="step-3-delegate-iaccessibleget_accparent-method-calls-to-the-control-sites-iaccessiblewindowlesssitegetparentaccessible-method"></a>Passaggio 3: Delegare le chiamate al metodo IAccessible::get accParent al metodo \_ IAccessibleWindowlessSite::GetParentAccessible del sito di controllo.
 
-Quando un client richiede l'oggetto padre del controllo senza finestra, il contenitore chiama il metodo [**IAccessible:: Get \_ accParent**](/windows/desktop/api/Oleacc/nf-oleacc-iaccessible-get_accparent) del controllo. L'implementazione di **get \_ accParent** deve delegare al metodo [**IAccessibleWindowlessSite:: GetParentAccessible**](/windows/desktop/api/oleacc/nf-oleacc-iaccessiblewindowlesssite-getparentaccessible) del contenitore.
+Quando un client richiede l'oggetto padre del controllo senza finestra, il contenitore chiama il metodo [**IAccessible::get \_ accParent del**](/windows/desktop/api/Oleacc/nf-oleacc-iaccessible-get_accparent) controllo. **\_ L'implementazione get accParent** deve delegare al [**metodo IAccessibleWindowlessSite::GetParentAccessible**](/windows/desktop/api/oleacc/nf-oleacc-iaccessiblewindowlesssite-getparentaccessible) del contenitore.
 
-Questo esempio illustra come implementare il metodo [**get \_ accParent**](/windows/desktop/api/Oleacc/nf-oleacc-iaccessible-get_accparent) .
+Questo esempio illustra come implementare il [**metodo \_ get accParent.**](/windows/desktop/api/Oleacc/nf-oleacc-iaccessible-get_accparent)
 
 
 ```C++
@@ -102,11 +102,11 @@ HRESULT CMyAccessibleMSAAControl::get_accParent(IDispatch **ppdispParent)
 
 
 
-### <a name="step-4-acquire-a-range-of-object-ids-to-assign-to-the-event-sources-in-your-windowless-control"></a>Passaggio 4: acquisire un intervallo di ID oggetto da assegnare alle origini eventi nel controllo privo di finestra.
+### <a name="step-4-acquire-a-range-of-object-ids-to-assign-to-the-event-sources-in-your-windowless-control"></a>Passaggio 4: Acquisire un intervallo di ID oggetto da assegnare alle origini eventi nel controllo senza finestra.
 
-Analogamente ai controlli basati su finestra, un controllo ActiveX senza finestra chiama la funzione [**NotifyWinEvent**](/windows/desktop/api/Winuser/nf-winuser-notifywinevent) per notificare ai client eventi importanti. I parametri della funzione includono l'ID oggetto dell'elemento che genera l'evento. Il controllo senza finestra deve assegnare gli ID oggetto usando un valore di un intervallo acquisito chiamando il metodo [**IAccessibleWindowlessSite:: AcquireObjectIdRange**](/windows/desktop/api/oleacc/nf-oleacc-iaccessiblewindowlesssite-acquireobjectidrange) del sito del controllo.
+Come i controlli basati su finestra, un controllo ActiveX finestra chiama la [**funzione NotifyWinEvent**](/windows/desktop/api/Winuser/nf-winuser-notifywinevent) per notificare ai client eventi importanti. I parametri della funzione includono l'ID oggetto dell'elemento che genera l'evento. Il controllo senza finestra deve assegnare gli ID oggetto usando un valore di un intervallo acquisito chiamando il metodo [**IAccessibleWindowlessSite::AcquireObjectIdRange**](/windows/desktop/api/oleacc/nf-oleacc-iaccessiblewindowlesssite-acquireobjectidrange) del sito di controllo.
 
-Questo esempio illustra come acquisire un intervallo di valori ID oggetto dal contenitore di controlli.
+Questo esempio illustra come acquisire un intervallo di valori ID oggetto dal contenitore del controllo .
 
 
 ```C++
@@ -127,22 +127,22 @@ SafeRelease(&pWindowlessSite);
 
 
 
-### <a name="step-5-implement-the-iaccessiblehandler-interface"></a>Passaggio 5: implementare l'interfaccia IAccessibleHandler.
+### <a name="step-5-implement-the-iaccessiblehandler-interface"></a>Passaggio 5: Implementare l'interfaccia IAccessibleHandler.
 
-Quando un controllo senza finestra chiama la funzione [**NotifyWinEvent**](/windows/desktop/api/Winuser/nf-winuser-notifywinevent) , il controllo specifica l'ID oggetto dell'elemento dell'interfaccia utente che genera l'evento e specifica il contenitore di controlli come finestra che risponderà ai messaggi [**WM \_ GetObject**](wm-getobject.md) per conto del controllo.
+Quando un controllo senza finestra chiama la funzione [**NotifyWinEvent,**](/windows/desktop/api/Winuser/nf-winuser-notifywinevent) il controllo specifica l'ID oggetto dell'elemento dell'interfaccia utente che genera l'evento e specifica il contenitore del controllo come finestra che risponderà ai messaggi [**WM \_ GETOBJECT**](wm-getobject.md) per conto del controllo.
 
-Se un'applicazione client risponde all'evento, il contenitore di controlli riceve un messaggio [**WM \_ GetObject**](wm-getobject.md) che include l'ID oggetto dell'elemento dell'interfaccia utente che ha generato l'evento. Il contenitore di controlli risponde cercando il controllo senza finestra che "possiede" l'ID oggetto, quindi chiamando il metodo [**IAccessibleHandler:: AccessibleObjectFromID**](/windows/desktop/api/Oleacc/nf-oleacc-iaccessiblehandler-accessibleobjectfromid) del controllo. Il metodo **AccessibleObjectFromID** restituisce il puntatore all'interfaccia [**IAccessible**](/windows/desktop/api/oleacc/nn-oleacc-iaccessible) per l'elemento dell'interfaccia utente e il contenitore di controlli lo trasmette all'applicazione client.
+Se un'applicazione client risponde all'evento , il contenitore del controllo riceve un messaggio [**WM \_ GETOBJECT**](wm-getobject.md) che include l'ID oggetto dell'elemento dell'interfaccia utente che ha generato l'evento. Il contenitore del controllo risponde cercando il controllo senza finestra che "possiede" l'ID oggetto e quindi chiamando il metodo [**IAccessibleHandler::AccessibleObjectFromID**](/windows/desktop/api/Oleacc/nf-oleacc-iaccessiblehandler-accessibleobjectfromid) del controllo. Il **metodo AccessibleObjectFromID** restituisce il puntatore a interfaccia [**IAccessible**](/windows/desktop/api/oleacc/nn-oleacc-iaccessible) per l'elemento dell'interfaccia utente e il contenitore di controllo inoltra il puntatore all'applicazione client.
 
 ## <a name="related-topics"></a>Argomenti correlati
 
 <dl> <dt>
 
-[Usare l'automazione dell'interfaccia utente per rendere accessibile un controllo ActiveX senza finestra](use-ui-automation-to-make-an-windowless-activex-control-accessible.md)
+[Usare Automazione interfaccia utente per rendere accessibile un controllo ActiveX finestra](use-ui-automation-to-make-an-windowless-activex-control-accessible.md)
 </dt> <dt>
 
-[Accessibilità controllo ActiveX senza finestra](windowless-activex-control-accessibility.md)
+[Accessibilità dei controlli ActiveX finestra](windowless-activex-control-accessibility.md)
 </dt> </dl>
 
- 
+ 
 
- 
+ 

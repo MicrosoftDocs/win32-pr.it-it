@@ -20,12 +20,12 @@ api_type:
 api_location:
 - ESENT.DLL
 ROBOTS: INDEX,FOLLOW
-ms.openlocfilehash: 2b07312cbfce36b450fe39a39810813adc2d0fd4
-ms.sourcegitcommit: 4665ebce0c106bdb52eef36e544280b496b6f50b
+ms.openlocfilehash: eb68677ad55c137ebb40ffaef1ad0fd686bb4eb7
+ms.sourcegitcommit: 9b5faa61c38b2d0c432b7f2dbee8c127b0e28a7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/26/2021
-ms.locfileid: "122987704"
+ms.lasthandoff: 08/19/2021
+ms.locfileid: "122466758"
 ---
 # <a name="jetattachdatabase-function"></a>Funzione JetAttachDatabase
 
@@ -59,7 +59,7 @@ Nome del database da collegare.
 Gruppo di bit che specificano zero o più delle opzioni seguenti.
 
 
-| <p>Valore</p> | <p>Significato</p> | 
+| <p>valore</p> | <p>Significato</p> | 
 |--------------|----------------|
 | <p>JET_bitDbDeleteCorruptIndexes</p> | <p>Se <a href="gg269337(v=exchg.10).md">JET_paramEnableIndexChecking</a> è stato impostato, verranno eliminati tutti gli indici sui dati Unicode. Per altre informazioni, vedere le sezione Osservazioni.</p> | 
 | <p>JET_bitDbDeleteUnicodeIndexes</p> | <p>Tutti gli indici sui dati Unicode verranno eliminati, indipendentemente dall'impostazione <a href="gg269337(v=exchg.10).md">di JET_paramEnableIndexChecking</a>. Per altre informazioni, vedere le sezione Osservazioni.</p> | 
@@ -100,7 +100,7 @@ Il file di database viene scollegato [tramite JetDetachDatabase](./jetdetachdata
 
 Parametri di controllo dell'indice
 
-Versioni diverse di Windows normalizzare il testo Unicode in modi diversi. Ciò significa che gli indici compilati in una versione di Windows potrebbero non funzionare in altre versioni.
+Diverse versioni di Windows normalizzare il testo Unicode in modi diversi. Ciò significa che gli indici compilati in una versione di Windows potrebbero non funzionare in altre versioni.
 
 Prima di Windows Server 2003, quando la versione del sistema operativo cambiava (inclusa l'installazione di un Service Pack), ogni indice sui dati Unicode era potenzialmente danneggiato.
 
@@ -127,20 +127,13 @@ Se il database è stato collegato come di sola lettura, l'indice non può essere
 #### <a name="requirements"></a>Requisiti
 
 
-| Requisito | Valore |
-|------------|----------|
-| <p><strong>Client</strong></p> | <p>Richiede Windows Vista, Windows XP o Windows 2000 Professional.</p> | 
-| <p><strong>Server</strong></p> | <p>Richiede Windows Server 2008, Windows Server 2003 o Windows 2000 Server.</p> | 
-| <p><strong>Intestazione</strong></p> | <p>Dichiarato in Esent.h.</p> | 
-| <p><strong>Libreria</strong></p> | <p>Usare ESENT.lib.</p> | 
-| <p><strong>DLL</strong></p> | <p>Richiede ESENT.dll.</p> | 
-| <p><strong>Unicode</strong></p> | <p>Implementato come <strong>JetAddColumnW</strong> (Unicode) e <strong>JetAddColumnA</strong> (ANSI).</p> | 
+| | | <p><strong>Client</strong></p> | <p>Richiede Windows Vista, Windows XP o Windows 2000 Professional.</p> | | <p><strong>Server</strong></p> | <p>Richiede Windows Server 2008, Windows Server 2003 o Windows 2000 Server.</p> | | <p><strong>Intestazione</strong></p> | <p>Dichiarato in Esent.h.</p> | | <p><strong>Libreria</strong></p> | <p>Usare ESENT.lib.</p> | | <p><strong>DLL</strong></p> | <p>Richiede ESENT.dll.</p> | | <p><strong>Unicode</strong></p> | <p>Implementato come <strong>JetAddColumnW</strong> (Unicode) e <strong>JetAddColumnA</strong> (ANSI).</p> | 
 
 
 
 #### <a name="see-also"></a>Vedere anche
 
-[File extensible Archiviazione Engine](./extensible-storage-engine-files.md)  
+[Extensible Archiviazione Engine Files](./extensible-storage-engine-files.md)  
 [JET_ERR](./jet-err.md)  
 [JET_GRBIT](./jet-grbit.md)  
 [JET_SESID](./jet-sesid.md)  

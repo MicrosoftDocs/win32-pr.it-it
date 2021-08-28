@@ -1,7 +1,7 @@
 ---
 description: Recupera tutti gli oggetti IContextNode del tipo specificato.
 ms.assetid: e6e68d78-9697-40e6-a4ae-a187ef01a769
-title: 'Metodo IInkAnalyzer:: FindNodesOfType (IACom. h)'
+title: Metodo IInkAnalyzer::FindNodesOfType (IACom.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -13,14 +13,14 @@ api_type:
 - COM
 api_location:
 - IACom.dll
-ms.openlocfilehash: 51611fd4b3c77b43f2ea0d967f81dcc9547edb24
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: ab35825c47ddbbdeda3affc0ab0585dce111233990db28ae65a0636f7145ce4c
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "103879334"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119939959"
 ---
-# <a name="iinkanalyzerfindnodesoftype-method"></a>Metodo IInkAnalyzer:: FindNodesOfType
+# <a name="iinkanalyzerfindnodesoftype-method"></a>Metodo IInkAnalyzer::FindNodesOfType
 
 Recupera tutti gli oggetti [**IContextNode**](icontextnode.md) del tipo specificato.
 
@@ -40,34 +40,34 @@ HRESULT FindNodesOfType(
 
 <dl> <dt>
 
-*pNodeType* \[ in\]
+*pNodeType* \[ Pollici\]
 </dt> <dd>
 
-**GUID** che specifica il tipo di nodo.
+**GUID che** specifica il tipo di nodo.
 
 </dd> <dt>
 
-*ppContextNodesFound* \[ out\]
+*ppContextNodesFound* \[ Cambio\]
 </dt> <dd>
 
-Puntatore a [**IContextNodes**](icontextnodes.md) contenente tutti i nodi di tipo *pNodeType*.
+Puntatore a [**IContextNodes**](icontextnodes.md) contenente tutti i nodi di *tipo pNodeType.*
 
 </dd> </dl>
 
 ## <a name="return-value"></a>Valore restituito
 
-Per una descrizione dei valori restituiti, vedere [classi e interfacce-analisi input penna](classes-and-interfaces---ink-analysis.md).
+Per una descrizione dei valori restituiti, vedere [Classi e interfacce - Analisi input penna](classes-and-interfaces---ink-analysis.md).
 
 ## <a name="remarks"></a>Commenti
 
 > [!Caution]  
-> Per evitare una perdita di memoria, chiamare [**IUnknown:: Release**](/windows/desktop/api/unknwn/nf-unknwn-iunknown-release) su *ppContextNodesFound* quando non è più necessario utilizzare l'oggetto.
+> Per evitare una perdita di memoria, chiamare [**IUnknown::Release**](/windows/desktop/api/unknwn/nf-unknwn-iunknown-release) su *ppContextNodesFound* quando non è più necessario usare l'oggetto .
 
  
 
-La proprietà *pNodeType* deve contenere un GUID dalle costanti dei [tipi di nodo di contesto](context-node-types.md) .
+La *proprietà pNodeType* deve contenere un GUID dalle costanti [Context Node Types.](context-node-types.md)
 
-Se [**IInkAnalyzer**](iinkanalyzer.md) non contiene alcun [**IContextNode**](icontextnode.md), viene restituita una raccolta [**IContextNodes**](icontextnodes.md) vuota.
+Se [**IInkAnalyzer**](iinkanalyzer.md) non contiene [**un IContextNode di**](icontextnode.md)questo tipo, viene restituita una raccolta [**IContextNodes**](icontextnodes.md) vuota.
 
 ## <a name="requirements"></a>Requisiti
 
@@ -75,9 +75,9 @@ Se [**IInkAnalyzer**](iinkanalyzer.md) non contiene alcun [**IContextNode**](ico
 
 | Requisito | Valore |
 |-------------------------------------|---------------------------------------------------------------------------------------------------------------|
-| Client minimo supportato<br/> | Solo app desktop Windows XP Tablet PC Edition \[\]<br/>                                                 |
+| Client minimo supportato<br/> | Windows Solo app desktop tablet PC Edition \[ XP\]<br/>                                                 |
 | Server minimo supportato<br/> | Nessuno supportato<br/>                                                                                     |
-| Intestazione<br/>                   | <dl> <dt>IACom. h (richiede anche IACom \_ i. c)</dt> </dl> |
+| Intestazione<br/>                   | <dl> <dt>IACom.h (richiede anche IACom \_ i.c)</dt> </dl> |
 | DLL<br/>                      | <dl> <dt>IACom.dll</dt> </dl>                          |
 
 
@@ -89,31 +89,31 @@ Se [**IInkAnalyzer**](iinkanalyzer.md) non contiene alcun [**IContextNode**](ico
 [**IInkAnalyzer**](iinkanalyzer.md)
 </dt> <dt>
 
-[**Metodo IInkAnalyzer:: FindInkLeafNodes**](iinkanalyzer-findinkleafnodes.md)
+[**Metodo IInkAnalyzer::FindInkLeafNodes**](iinkanalyzer-findinkleafnodes.md)
 </dt> <dt>
 
-[**Metodo IInkAnalyzer:: FindInkLeafNodesForStrokes**](iinkanalyzer-findinkleafnodesforstrokes.md)
+[**Metodo IInkAnalyzer::FindInkLeafNodesForStrokes**](iinkanalyzer-findinkleafnodesforstrokes.md)
 </dt> <dt>
 
-[**Metodo IInkAnalyzer:: FindLeafNodes**](iinkanalyzer-findleafnodes.md)
+[**Metodo IInkAnalyzer::FindLeafNodes**](iinkanalyzer-findleafnodes.md)
 </dt> <dt>
 
-[**Metodo IInkAnalyzer:: FindNode**](iinkanalyzer-findnode.md)
+[**Metodo IInkAnalyzer::FindNode**](iinkanalyzer-findnode.md)
 </dt> <dt>
 
-[**Metodo IInkAnalyzer:: FindNodesOfTypeForStrokes**](iinkanalyzer-findnodesoftypeforstrokes.md)
+[**Metodo IInkAnalyzer::FindNodesOfTypeForStrokes**](iinkanalyzer-findnodesoftypeforstrokes.md)
 </dt> <dt>
 
-[**Metodo IInkAnalyzer:: FindNodesOfTypeInSubTree**](iinkanalyzer-findnodesoftypeinsubtree.md)
+[**Metodo IInkAnalyzer::FindNodesOfTypeInSubTree**](iinkanalyzer-findnodesoftypeinsubtree.md)
 </dt> <dt>
 
-[**Metodo IInkAnalyzer:: FindNodesWithCallBack**](iinkanalyzer-findnodeswithcallback.md)
+[**Metodo IInkAnalyzer::FindNodesWithCallBack**](iinkanalyzer-findnodeswithcallback.md)
 </dt> <dt>
 
-[**Metodo IInkAnalyzer:: FindNodesWithCallBackInSubTree**](iinkanalyzer-findnodeswithcallbackinsubtree.md)
+[**Metodo IInkAnalyzer::FindNodesWithCallBackInSubTree**](iinkanalyzer-findnodeswithcallbackinsubtree.md)
 </dt> <dt>
 
-[Riferimento all'analisi dell'input penna](ink-analysis-reference.md)
+[Informazioni di riferimento per l'analisi dell'input penna](ink-analysis-reference.md)
 </dt> </dl>
 
  

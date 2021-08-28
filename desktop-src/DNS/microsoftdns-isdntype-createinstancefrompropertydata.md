@@ -1,11 +1,11 @@
 ---
-title: Metodo CreateInstanceFromPropertyData della classe MicrosoftDNS_ISDNType
+title: Metodo CreateInstanceFromPropertyData della MicrosoftDNS_ISDNType classe
 description: Il metodo CreateInstanceFromPropertyData crea un'istanza di un record di risorse ISDN.
 ms.assetid: cd3b98e3-a804-473e-8831-5f045d43a54f
 keywords:
 - DNS del metodo CreateInstanceFromPropertyData
-- DNS del metodo CreateInstanceFromPropertyData, classe MicrosoftDNS_ISDNType
-- Classe MicrosoftDNS_ISDNType DNS, metodo CreateInstanceFromPropertyData
+- Metodo CreateInstanceFromPropertyData DNS, MicrosoftDNS_ISDNType classe
+- MicrosoftDNS_ISDNType classe DNS, metodo CreateInstanceFromPropertyData
 topic_type:
 - apiref
 api_name:
@@ -16,16 +16,16 @@ api_type:
 - COM
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 39f6adaaf374cac56d7d29d04d83c8765b0080ba
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: 082bf764c93e19b7829309de62c4ce5ff99650322c5bb4533db7e4c9b5c23bca
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "104518256"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119433041"
 ---
-# <a name="createinstancefrompropertydata-method-of-the-microsoftdns_isdntype-class"></a>Metodo CreateInstanceFromPropertyData della classe MicrosoftDNS \_ ISDNType
+# <a name="createinstancefrompropertydata-method-of-the-microsoftdns_isdntype-class"></a>Metodo CreateInstanceFromPropertyData della classe \_ MICROSOFTDNS ISDNType
 
-Il metodo **CreateInstanceFromPropertyData** crea un'istanza di un record di risorse ISDN.
+Il **metodo CreateInstanceFromPropertyData crea** un'istanza di un record di risorse ISDN.
 
 ## <a name="syntax"></a>Sintassi
 
@@ -49,31 +49,31 @@ void CreateInstanceFromPropertyData(
 
 <dl> <dt>
 
-*DnsServerName* \[ in\]
+*DnsServerName* \[ Pollici\]
 </dt> <dd>
 
 FQDN o indirizzo IP del server DNS che contiene questo RR.
 
 </dd> <dt>
 
-*ContainerName* \[ in\]
+*ContainerName* \[ Pollici\]
 </dt> <dd>
 
-Nome del contenitore per la zona, la cache o l'istanza di RootHints che contiene questo RR.
+Nome del contenitore per l'istanza di Zone, Cache o RootHints che contiene questo RR.
 
 </dd> <dt>
 
-*Proprietarioname* \[ in\]
+*OwnerName* \[ Pollici\]
 </dt> <dd>
 
-Nome del proprietario per l'RR.
+Nome del proprietario per RR.
 
 </dd> <dt>
 
 *RecordClass* \[ in, facoltativo\]
 </dt> <dd>
 
-Classe dell'RR. Il valore predefinito è 1. I valori seguenti sono validi.
+Classe di RR. Il valore predefinito è 1. I valori seguenti sono validi.
 
 
 
@@ -82,7 +82,7 @@ Classe dell'RR. Il valore predefinito è 1. I valori seguenti sono validi.
 | <span id="1"></span><dl> <dt>**1**</dt> </dl> | IN (Internet)<br/> |
 | <span id="2"></span><dl> <dt>**2**</dt> </dl> | CS (CSNET)<br/>    |
 | <span id="3"></span><dl> <dt>**3**</dt> </dl> | CH (CHAOS)<br/>    |
-| <span id="4"></span><dl> <dt>**4**</dt> </dl> | HS (Esiodo)<br/>   |
+| <span id="4"></span><dl> <dt>**4**</dt> </dl> | HS (Hesiod)<br/>   |
 
 
 
@@ -90,31 +90,31 @@ Classe dell'RR. Il valore predefinito è 1. I valori seguenti sono validi.
 
 </dd> <dt>
 
-Valore *TTL* \[ in, facoltativo\]
+*TTL* \[ in, facoltativo\]
 </dt> <dd>
 
-Tempo, in secondi, che l'RR può memorizzare nella cache da un resolver DNS.
+Tempo, in secondi, in cui RR può essere memorizzato nella cache da un resolver DNS.
 
 </dd> <dt>
 
-*ISDNNumber* \[ in\]
+*ISDNNumber* \[ Pollici\]
 </dt> <dd>
 
 Numero ISDN e DDI del proprietario del record.
 
 </dd> <dt>
 
-*Sottoindirizzo* \[ in\]
+*SubAddress* \[ Pollici\]
 </dt> <dd>
 
 Sottoindirizzo del proprietario, se definito.
 
 </dd> <dt>
 
-*RR* \[ out, Ref\]
+*RR* \[ out, ref\]
 </dt> <dd>
 
-Riferimento al nuovo oggetto.
+Riferimento al nuovo oggetto .
 
 </dd> </dl>
 
@@ -131,7 +131,7 @@ Questo metodo non restituisce valori.
 | Client minimo supportato<br/> | Nessuno supportato<br/>                                                              |
 | Server minimo supportato<br/> | Windows 2000 Server \[solo app desktop\]<br/>                                   |
 | Spazio dei nomi<br/>                | \\MicrosoftDNS radice<br/>                                                          |
-| MOF<br/>                      | <dl> <dt>Dnsprov. mof</dt> </dl> |
+| MOF<br/>                      | <dl> <dt>Dnsprov.mof</dt> </dl> |
 
 
 
@@ -139,13 +139,13 @@ Questo metodo non restituisce valori.
 
 <dl> <dt>
 
-[**\_ISDNType MicrosoftDNS**](microsoftdns-isdntype.md)
+[**MicrosoftDNS \_ ISDNType**](microsoftdns-isdntype.md)
 </dt> <dt>
 
-[**Metodo Modify della \_ classe ISDNType di MicrosoftDNS**](microsoftdns-isdntype-modify.md)
+[**Metodo Modify della classe \_ MICROSOFTDNS ISDNType**](microsoftdns-isdntype-modify.md)
 </dt> <dt>
 
-[**\_ResourceRecord MicrosoftDNS**](microsoftdns-resourcerecord.md)
+[**MicrosoftDNS \_ ResourceRecord**](microsoftdns-resourcerecord.md)
 </dt> </dl>
 
  

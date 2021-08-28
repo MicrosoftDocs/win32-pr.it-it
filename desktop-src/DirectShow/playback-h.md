@@ -4,16 +4,16 @@ ms.assetid: 8cf0f281-3680-4329-80d0-8282d1051c1a
 title: playback.h
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: ba52dc50cd14b26bcd26284a62c96400706d8aa8
-ms.sourcegitcommit: 5d4e99f4c8f42f5f543e52cb9beb9fb13ec56c5f
+ms.openlocfilehash: 8f000c1f9d41a989672feb48cb129a4c86785d4b389a6c3aea987464de664341
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/19/2021
-ms.locfileid: "112405114"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120107621"
 ---
 # <a name="playbackh"></a>playback.h
 
-Questo argomento contiene il codice per l'esercitazione [Riproduzione audio/video in DirectShow.](audio-video-playback-in-directshow.md)
+Questo argomento contiene il codice per [l'esercitazione Riproduzione audio/video in DirectShow](audio-video-playback-in-directshow.md).
 
 
 ```C++
@@ -87,7 +87,7 @@ private:
 [Riproduzione audio/video in DirectShow](audio-video-playback-in-directshow.md)
 </dt> <dt>
 
-[Esempio di riproduzione DirectShow](directshow-playback-example.md)
+[DirectShow Esempio di riproduzione](directshow-playback-example.md)
 </dt> </dl>
 
  

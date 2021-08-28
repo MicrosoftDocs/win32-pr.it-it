@@ -3,7 +3,7 @@ title: Elemento TabGroup
 description: Rappresenta un set contestuale di controlli Tab.
 ms.assetid: f131efe1-b8c4-416e-997a-5e2d3bcc03ea
 keywords:
-- Elemento TabGroup Nella barra multifunzione di Windows
+- Elemento TabGroup Windows barra multifunzione
 topic_type:
 - apiref
 api_name:
@@ -13,12 +13,12 @@ api_type:
 ms.topic: reference
 ms.date: 05/31/2018
 api_location: ''
-ms.openlocfilehash: 6a4c18db72d6b0161842bfde9d5a836d14189c6a
-ms.sourcegitcommit: 099ecdda1e83618b844387405da0db0ebda93a65
+ms.openlocfilehash: 55e2801ae8726fe10933b45e592e6f633f6455ea
+ms.sourcegitcommit: c276a8912787b2cda74dcf54eb96df961bb1188b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/04/2021
-ms.locfileid: "111444062"
+ms.lasthandoff: 08/20/2021
+ms.locfileid: "122622097"
 ---
 # <a name="tabgroup-element"></a>Elemento TabGroup
 
@@ -39,10 +39,10 @@ Rappresenta un set contestuale di [controlli Tab.](windowsribbon-controls-tabgro
 
 <table>
 <colgroup>
-<col style="width: 25%" />
-<col style="width: 25%" />
-<col style="width: 25%" />
-<col style="width: 25%" />
+<col  />
+<col  />
+<col  />
+<col  />
 </colgroup>
 <thead>
 <tr class="header">
@@ -71,7 +71,7 @@ Rappresenta un set contestuale di [controlli Tab.](windowsribbon-controls-tabgro
 
 | Elemento                                             | Descrizione                                     |
 |-----------------------------------------------------|-------------------------------------------------|
-| [**Scheda**](windowsribbon-element-tab.md)<br/> | Deve verificarsi almeno una volta<br/> <br/> |
+| [**TAB**](windowsribbon-element-tab.md)<br/> | Deve verificarsi almeno una volta<br/> <br/> |
 
 
 

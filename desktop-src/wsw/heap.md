@@ -3,38 +3,38 @@ title: Heap
 description: Un heap tiene traccia di un gruppo di allocazioni liberate come unità.
 ms.assetid: 3a25284a-8f15-42d4-a292-ece28a08fb69
 keywords:
-- Servizi Web heap per Windows
+- Servizi Web Heap per Windows
 - WWSAPI
-- WWS
+- Wws
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: b5e1651f90b8ad1afca8f85f9dd2e6f10fc7f5c3
-ms.sourcegitcommit: a716ca2a6a22a400f02c6b31699cf4da83ee3619
+ms.openlocfilehash: 7a581d4173ed16423ac55e82d3dde356bad1e310047dd44d8f92fded0c6f458e
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/04/2020
-ms.locfileid: "104399967"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120005931"
 ---
 # <a name="heap"></a>Heap
 
 Un heap tiene traccia di un gruppo di allocazioni liberate come unità.
 
-In questo modo è possibile evitare modelli complessi di allocazione e deallocazione della memoria quando si usa WWSAPI.
+Ciò consente di evitare modelli complessi di allocazione e deallocazione della memoria quando si usa WWSAPI.
 
 
-È presente un heap associato a ogni messaggio. Durante l'invio di un messaggio o la ricezione di un messaggio, l'heap del messaggio viene utilizzato per tutte le allocazioni relative al messaggio specifico. Dopo l'invio o la ricezione di un messaggio, l'heap viene reimpostato, che consente di eseguire la pulizia di tutte le allocazioni correlate al messaggio specifico.
+A ogni messaggio è associato un heap. Durante l'invio di un messaggio o durante la ricezione di un messaggio, l'heap del messaggio viene usato per tutte le allocazioni relative a tale messaggio specifico. Dopo l'invio o la ricezione di un messaggio, l'heap viene reimpostato, in modo da pulire tutte le allocazioni correlate al messaggio specifico.
 
-Gli heap possono essere utilizzati anche per archiviare i dati dei messaggi separatamente rispetto alla durata di un messaggio. Gran parte della specifica dell'API Consenti dell'heap da usare durante la lettura dei dati fornisce un controllo esplicito sulla durata dei dati letti.
+Gli heap possono essere usati anche per archiviare i dati dei messaggi separatamente dalla durata di un messaggio. Molte delle API consentono di specificare l'heap da usare durante la lettura dei dati e offrono un controllo esplicito sulla durata di tutti i dati letti.
 
-Le allocazioni da un heap sono sicuramente allineate in almeno un limite di 8 byte.
+È garantito che le allocazioni da un heap siano allineate su un limite di almeno 8 byte.
 
-Le allocazioni di zero byte restituiranno un puntatore non NULL.
+Zero allocazioni di byte restituiranno un puntatore non NULL.
 
-In Windows 7, se PageHeap è abilitato, per gestire la memoria viene usato un heap restituito da HeapCreate. In questo caso, [**WsAlloc**](/windows/desktop/api/WebServices/nf-webservices-wsalloc) esegue il mapping diretto a HeapAlloc e [**WsResetHeap**](/windows/desktop/api/WebServices/nf-webservices-wsresetheap) a HeapDestroy.
+Nella Windows 7, se PageHeap è abilitato, viene usato un heap restituito da HeapCreate per gestire la memoria. In questo caso, [**WsAlloc esegue**](/windows/desktop/api/WebServices/nf-webservices-wsalloc) il mapping direttamente a HeapAlloc e [**WsResetHeap**](/windows/desktop/api/WebServices/nf-webservices-wsresetheap) esegue il mapping a HeapDestroy.
 
 L'enumerazione seguente viene utilizzata con l'heap:
 
--   [**\_ID della \_ proprietà \_ heap WS**](/windows/desktop/api/WebServices/ne-webservices-ws_heap_property_id)
+-   [**ID PROPRIETÀ HEAP WS \_ \_ \_**](/windows/desktop/api/WebServices/ne-webservices-ws_heap_property_id)
 
 Con l'heap vengono usate le funzioni seguenti:
 
@@ -44,14 +44,14 @@ Con l'heap vengono usate le funzioni seguenti:
 -   [**WsGetHeapProperty**](/windows/desktop/api/WebServices/nf-webservices-wsgetheapproperty)
 -   [**WsResetHeap**](/windows/desktop/api/WebServices/nf-webservices-wsresetheap)
 
-Con l'heap viene utilizzato l'handle seguente:
+L'handle seguente viene usato con l'heap:
 
--   [\_heap WS](ws-heap.md)
+-   [WS \_ HEAP](ws-heap.md)
 
-Con l'heap vengono utilizzate le strutture seguenti:
+Con l'heap vengono usate le strutture seguenti:
 
--   [**\_Proprietà heap \_ WS**](/windows/desktop/api/WebServices/ns-webservices-ws_heap_properties)
--   [**\_Proprietà heap \_ WS**](/windows/desktop/api/WebServices/ns-webservices-ws_heap_property)
+-   [**PROPRIETÀ HEAP WS \_ \_**](/windows/desktop/api/WebServices/ns-webservices-ws_heap_properties)
+-   [**PROPRIETÀ \_ HEAP WS \_**](/windows/desktop/api/WebServices/ns-webservices-ws_heap_property)
 
  
 

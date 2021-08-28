@@ -1,9 +1,9 @@
 ---
-title: 'Funzione Texture2DArray:: operator'
-description: 'Restituisce una variabile di risorsa di sola lettura. | Funzione Texture2DArray:: operator'
+title: Funzione Texture2DArray::Operator
+description: Restituisce una variabile di risorsa di sola lettura. | Funzione Texture2DArray::Operator
 ms.assetid: eb6ff496-c46f-405f-a172-ab747415a2f9
 keywords:
-- Funzione operator HLSL
+- Funzione operatore HLSL
 topic_type:
 - apiref
 api_name:
@@ -13,14 +13,14 @@ api_type:
 ms.topic: reference
 ms.date: 05/31/2018
 api_location: ''
-ms.openlocfilehash: 1b86aad839fbf28a4fc666b3a5fe5c5788b7b3ae
-ms.sourcegitcommit: 92e74c99f8f4d097676959d0c317f533c2400a80
+ms.openlocfilehash: 752b037cfc5d7c6e7ecc008aec6c45bb05356170b9b7154abca87f01fa146f55
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/09/2021
-ms.locfileid: "104058500"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120095041"
 ---
-# <a name="texture2darrayoperator--function"></a>Funzione Texture2DArray:: operator
+# <a name="texture2darrayoperator--function"></a>Funzione Texture2DArray::Operator
 
 Restituisce una variabile di risorsa di sola lettura.
 
@@ -36,12 +36,12 @@ R Operator[](
 
 <dl> <dt>
 
-*pos* \[ in\]
+*pos* \[ Pollici\]
 </dt> <dd>
 
 Tipo: **uint3**
 
-Posizione dell'indice. Il primo e il secondo componente contengono le coordinate (x, y). Il terzo componente indica la sezione della matrice desiderata.
+Posizione dell'indice. Il primo e il secondo componente contengono le coordinate (x, y). Il terzo componente indica la sezione di matrice desiderata.
 
 </dd> </dl>
 
@@ -49,19 +49,19 @@ Posizione dell'indice. Il primo e il secondo componente contengono le coordinate
 
 Tipo: **R**
 
-Variabile di sola lettura di una risorsa.
+Variabile di risorsa di sola lettura.
 
 ## <a name="remarks"></a>Commenti
 
-Questo metodo accede sempre al primo livello MIP. Per specificare altri livelli MIP, usare invece il metodo [**MIP \[ \] \[ \] . operator**](sm5-object-texture2darray-mipsoperatorindex.md) .
+Questo metodo accede sempre al primo livello mip. Per specificare altri livelli mip, usare invece il [**metodo \[ \] \[ \] mip.operator.**](sm5-object-texture2darray-mipsoperatorindex.md)
 
-Gli esempi di trama possono essere usati per l'interpolazione bilineare.
+I campioni di trama possono essere usati per l'interpolazione bilineare.
 
 Questa funzione è supportata per i tipi di shader seguenti:
 
 
 
-| Vertice | Hull | Dominio | Geometria | Pixel | Calcolo |
+| Vertice | Scafo | Dominio | Geometria | Pixel | Calcolo |
 |--------|------|--------|----------|-------|---------|
 | x      | x    | x      | x        | x     | x       |
 
@@ -76,7 +76,7 @@ Questa funzione è supportata per i tipi di shader seguenti:
 [Texture2DArray](sm5-object-texture2darray.md)
 </dt> <dt>
 
-[Modello Shader 5](d3d11-graphics-reference-sm5.md)
+[Modello shader 5](d3d11-graphics-reference-sm5.md)
 </dt> </dl>
 
  

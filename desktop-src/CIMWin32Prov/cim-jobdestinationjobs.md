@@ -1,8 +1,8 @@
 ---
-description: L' \_ associazione CIM JobDestinationJobs descrive la posizione di invio di un processo per l'elaborazione, ovvero la destinazione del processo.
+description: L'associazione CIM JobDestinationJobs descrive dove viene inviato un processo per l'elaborazione, ovvero a \_ quale destinazione del processo.
 ms.assetid: 6f732d34-2284-4909-a966-6b4066780cb0
 ms.tgt_platform: multiple
-title: Classe CIM_JobDestinationJobs
+title: CIM_JobDestinationJobs classe
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -16,23 +16,23 @@ api_type:
 - DllExport
 api_location:
 - CIMWin32.dll
-ms.openlocfilehash: 4e59e20f776c410db53294b6f6e98a1b13aef0de
-ms.sourcegitcommit: c7add10d695482e1ceb72d62b8a4ebd84ea050f7
+ms.openlocfilehash: 5947ac9a8539227f27dbea62aeebcfbc07b14a7626e25234e3a39ee3267d81c8
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104225679"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119438431"
 ---
-# <a name="cim_jobdestinationjobs-class"></a>CIM \_ JobDestinationJobs (classe)
+# <a name="cim_jobdestinationjobs-class"></a>Classe CIM \_ JobDestinationJobs
 
-L'associazione **CIM \_ JobDestinationJobs** descrive la posizione di invio di un processo per l'elaborazione, ovvero la destinazione del processo.
+**L'associazione CIM \_ JobDestinationJobs** descrive dove viene inviato un processo per l'elaborazione, ovvero a quale destinazione del processo.
 
 > [!IMPORTANT]
-> Le classi CIM (Common Information Model) DMTF (Distributed Management Task Force) sono le classi padre sulle quali vengono compilate le classi WMI. Attualmente WMI supporta solo gli [schemi della versione CIM 2. x](https://dmtf.org/standards/cim/schemas).
+> Le classi CIM (Distributed Management Task Force) DMTF (Common Information Model) sono le classi padre su cui vengono compilate le classi WMI. WMI attualmente supporta solo gli schemi [della versione CIM 2.x](https://dmtf.org/standards/cim/schemas).
 
  
 
-La sintassi seguente è semplificata dal codice MOF (Managed Object Format) e include tutte le proprietà ereditate. Le proprietà sono elencate in ordine alfabetico e non in ordine MOF.
+La sintassi seguente è semplificata dal codice MOF (Managed Object Format) e include tutte le proprietà ereditate. Le proprietà sono elencate in ordine alfabetico, non in ordine MOF.
 
 ## <a name="syntax"></a>Sintassi
 
@@ -47,13 +47,13 @@ class CIM_JobDestinationJobs : CIM_Dependency
 
 ## <a name="members"></a>Members
 
-La classe **CIM \_ JobDestinationJobs** presenta questi tipi di membri:
+La **classe CIM \_ JobDestinationJobs** ha questi tipi di membri:
 
 -   [Proprietà](#properties)
 
 ### <a name="properties"></a>Proprietà
 
-La classe **CIM \_ JobDestinationJobs** dispone di queste proprietà.
+La **classe CIM \_ JobDestinationJobs** ha queste proprietà.
 
 <dl> <dt>
 
@@ -66,36 +66,36 @@ Tipo di dati: **CIM \_ JobDestination**
 Tipo di accesso: sola lettura
 </dt> <dt>
 
-Qualificatori: [**Max**](/windows/desktop/WmiSdk/standard-qualifiers) (1), [**override**](/windows/desktop/WmiSdk/standard-qualifiers) ("antecedente")
+Qualificatori: [**Max**](/windows/desktop/WmiSdk/standard-qualifiers) (1), [**Override**](/windows/desktop/WmiSdk/standard-qualifiers) ("Antecedent")
 </dt> </dl>
 
-Un [**\_ JobDestination CIM**](cim-jobdestination.md) che descrive la destinazione del processo, possibilmente una coda.
+Processo [**\_ CIMDestination che descrive**](cim-jobdestination.md) la destinazione del processo, possibilmente una coda.
 
 </dd> <dt>
 
 **Dipendente**
 </dt> <dd> <dl> <dt>
 
-Tipo di dati **: \_ processo CIM**
+Tipo di dati: **processo CIM \_**
 </dt> <dt>
 
 Tipo di accesso: sola lettura
 </dt> <dt>
 
-Qualificatori: [**override**](/windows/desktop/WmiSdk/standard-qualifiers) ("dipendente")
+Qualificatori: [**override**](/windows/desktop/WmiSdk/standard-qualifiers) ("Dipendente")
 </dt> </dl>
 
-Un [**\_ processo CIM**](cim-job.md) che descrive il processo che si trova nella coda dei processi o nella destinazione.
+Processo [**CIM \_ che**](cim-job.md) descrive il processo presente nella coda/destinazione del processo.
 
 </dd> </dl>
 
 ## <a name="remarks"></a>Commenti
 
-**CIM \_ JobDestinationJobs** è derivato dalla [**\_ dipendenza CIM**](cim-dependency.md).
+**CIM \_ JobDestinationJobs** deriva dalla dipendenza [**CIM. \_**](cim-dependency.md)
 
 WMI non implementa questa classe.
 
-Questa documentazione è derivata dalle descrizioni della classe CIM pubblicate da DMTF. Microsoft potrebbe avere apportato modifiche per correggere gli errori secondari, rispettare gli standard di documentazione di Microsoft SDK o fornire altre informazioni.
+Questa documentazione è derivata dalle descrizioni della classe CIM pubblicate da DMTF. Microsoft potrebbe aver apportato modifiche per correggere gli errori minori, essere conforme agli standard della documentazione di Microsoft SDK o fornire altre informazioni.
 
 ## <a name="requirements"></a>Requisiti
 
@@ -106,7 +106,7 @@ Questa documentazione è derivata dalle descrizioni della classe CIM pubblicate 
 | Client minimo supportato<br/> | Windows Vista<br/>                                                                |
 | Server minimo supportato<br/> | Windows Server 2008<br/>                                                          |
 | Spazio dei nomi<br/>                | \\CIMV2 radice<br/>                                                                  |
-| MOF<br/>                      | <dl> <dt>CIMWin32. mof</dt> </dl> |
+| MOF<br/>                      | <dl> <dt>CIMWin32.mof</dt> </dl> |
 | DLL<br/>                      | <dl> <dt>CIMWin32.dll</dt> </dl> |
 
 
@@ -115,7 +115,7 @@ Questa documentazione è derivata dalle descrizioni della classe CIM pubblicate 
 
 <dl> <dt>
 
-[**\_Dipendenza CIM**](cim-dependency.md)
+[**Dipendenza \_ CIM**](cim-dependency.md)
 </dt> </dl>
 
  
