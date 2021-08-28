@@ -1,9 +1,9 @@
 ---
-title: Elemento Level (LevelListType)
+title: Elemento level (LevelListType)
 description: Definisce un valore di gravità che determina il livello di dettaglio degli eventi durante la registrazione.
 ms.assetid: 898b4784-7acc-45b5-8ff9-485e919fe9c6
 keywords:
-- EventLog elemento Level
+- Elemento level EventLog
 topic_type:
 - apiref
 api_name:
@@ -13,14 +13,14 @@ api_type:
 ms.topic: reference
 ms.date: 05/31/2018
 api_location: ''
-ms.openlocfilehash: 469ed05f6acb7b4189afdadda772982441fdb435
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: 61f8e979e4bc7de7b017b75976ad47b3bf4f4c7cfde46bbaa9e1fc698bc92db3
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "106302407"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120124311"
 ---
-# <a name="level-levellisttype-element"></a>Elemento Level (LevelListType)
+# <a name="level-levellisttype-element"></a>Elemento level (LevelListType)
 
 Definisce un valore di gravità che determina il livello di dettaglio degli eventi durante la registrazione.
 
@@ -30,7 +30,7 @@ Definisce un valore di gravità che determina il livello di dettaglio degli even
  />
 ```
 
-L'elemento **Level** è definito dal tipo complesso [**LevelListType**](eventmanifestschema-levellisttype-complextype.md) .
+**L'elemento** level è definito dal [**tipo complesso LevelListType.**](eventmanifestschema-levellisttype-complextype.md)
 
 ## <a name="requirements"></a>Requisiti
 
@@ -38,8 +38,8 @@ L'elemento **Level** è definito dal tipo complesso [**LevelListType**](eventman
 
 | Requisito | Valore |
 |-------------------------------------|------------------------------------------------------|
-| Client minimo supportato<br/> | \[Solo app desktop di Windows Vista\]<br/>       |
-| Server minimo supportato<br/> | \[Solo app desktop Windows Server 2008\]<br/> |
+| Client minimo supportato<br/> | Windows Solo \[ app desktop Vista\]<br/>       |
+| Server minimo supportato<br/> | Windows Solo app desktop di Server 2008 \[\]<br/> |
 
 
 
@@ -50,10 +50,10 @@ L'elemento **Level** è definito dal tipo complesso [**LevelListType**](eventman
 **Elementi padre**
 </dt> <dt>
 
-[**livelli (ProviderType)**](eventmanifestschema-levels-providertype-element.md)
+[**levels (ProviderType)**](eventmanifestschema-levels-providertype-element.md)
 </dt> <dt>
 
-[**livelli (MetadataType)**](eventmanifestschema-levels-metadatatype-element.md)
+[**levels (MetadataType)**](eventmanifestschema-levels-metadatatype-element.md)
 </dt> </dl>
 
  

@@ -11,18 +11,18 @@ api_name: ''
 api_type:
 - NA
 api_location: ''
-ms.openlocfilehash: 3edd09872171b080dfc2c75bdb8e78d3b10b3856
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: c0e9bf0fe18d17ac2099bd3b7e2b20f23db6cb6d
+ms.sourcegitcommit: 9b5faa61c38b2d0c432b7f2dbee8c127b0e28a7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "106309212"
+ms.lasthandoff: 08/19/2021
+ms.locfileid: "122468728"
 ---
 # <a name="xmshort4-constructors"></a>Costruttori XMSHORT4
 
 Costruttori esposti da `XMSHORT4` .
 
-Costruisce istanze della struttura [**XMSHORT4**](/windows/desktop/api/DirectXPackedVector/ns-directxpackedvector-xmshort4) .
+Costruisce istanze della [**struttura XMSHORT4.**](/windows/desktop/api/DirectXPackedVector/ns-directxpackedvector-xmshort4)
 
 > [!Note]  
 > I costruttori elencati di seguito sono disponibili solo in C++.
@@ -33,65 +33,15 @@ Costruisce istanze della struttura [**XMSHORT4**](/windows/desktop/api/DirectXPa
 
 
 
-<table>
-<colgroup>
-<col style="width: 50%" />
-<col style="width: 50%" />
-</colgroup>
-<thead>
-<tr class="header">
-<th style="text-align: left;">Costruttore</th>
-<th style="text-align: left;">Descrizione</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td style="text-align: left;"><a href="/windows/desktop/api/directxpackedvector/nf-directxpackedvector-xmshort4-xmshort4(constfloat)"><strong>XMSHORT4 ()</strong></a></td>
-<td style="text-align: left;">Costruttore predefinito per <code>XMSHORT4</code> . <br/> Costruttore predefinito per <a href="/windows/desktop/api/DirectXPackedVector/ns-directxpackedvector-xmshort4"><strong>XMSHORT4</strong></a>. <br/>
-<blockquote>
-[!Note]<br />
-Questo costruttore è disponibile solo in C++.
-</blockquote>
-<br/></td>
-</tr>
-<tr class="even">
-<td style="text-align: left;"><a href="/windows/desktop/api/directxpackedvector/nf-directxpackedvector-xmshort4-xmshort4(constfloat)"><strong>XMSHORT4 (const Float *)</strong></a></td>
-<td style="text-align: left;">Inizializza una nuova istanza di <code>XMSHORT4</code> da un argomento di matrice di quattro elementi <code>float</code> . <br/> Questo costruttore inizializza una nuova istanza di <a href="/windows/desktop/api/DirectXPackedVector/ns-directxpackedvector-xmshort4"><strong>XMSHORT4</strong></a> da un argomento di matrice di quattro elementi <code>float</code> . <br/>
-<blockquote>
-[!Note]<br />
-Questo costruttore è disponibile solo in C++.
-</blockquote>
-<br/></td>
-</tr>
-<tr class="odd">
-<td style="text-align: left;"><a href="/windows/desktop/api/directxpackedvector/nf-directxpackedvector-xmshort4-xmshort4(constfloat)"><strong>XMSHORT4 (const int16_t *)</strong></a></td>
-<td style="text-align: left;">Inizializza una nuova istanza di <code>XMSHORT4</code> da un argomento di matrice di quattro elementi <code>int16_t</code> . <br/> Questo costruttore inizializza una nuova istanza di <a href="/windows/desktop/api/DirectXPackedVector/ns-directxpackedvector-xmshort4"><strong>XMSHORT4</strong></a> da un argomento di matrice di quattro elementi <code>int16_t</code> . <br/>
-<blockquote>
-[!Note]<br />
-Questo costruttore è disponibile solo in C++.
-</blockquote>
-<br/></td>
-</tr>
-<tr class="even">
-<td style="text-align: left;"><a href="/windows/desktop/api/directxpackedvector/nf-directxpackedvector-xmshort4-xmshort4(float_float_float_float)"><strong>XMSHORT4 (float, float, float, float)</strong></a></td>
-<td style="text-align: left;">Inizializza una nuova istanza di <code>XMSHORT4</code> da quattro <code>float</code> argomenti. <br/> Questo costruttore inizializza una nuova istanza di <a href="/windows/desktop/api/DirectXPackedVector/ns-directxpackedvector-xmshort4"><strong>XMSHORT4</strong></a> da quattro <code>float</code> argomenti. <br/>
-<blockquote>
-[!Note]<br />
-Questo costruttore è disponibile solo in C++.
-</blockquote>
-<br/></td>
-</tr>
-<tr class="odd">
-<td style="text-align: left;"><a href="/windows/desktop/api/directxpackedvector/nf-directxpackedvector-xmshort4-xmshort4(int16_t_int16_t_int16_t_int16_t)"><strong>XMSHORT4 (int16_t, int16_t, int16_t, int16_t)</strong></a></td>
-<td style="text-align: left;">Inizializza una nuova istanza di <code>XMSHORT4</code> da quattro <code>int16_t</code> argomenti. <br/> Questo costruttore inizializza una nuova istanza di <a href="/windows/desktop/api/DirectXPackedVector/ns-directxpackedvector-xmshort4"><strong>XMSHORT4</strong></a> da quattro <code>int16_t</code> argomenti. <br/>
-<blockquote>
-[!Note]<br />
-Questo costruttore è disponibile solo in C++.
-</blockquote>
-<br/></td>
-</tr>
-</tbody>
-</table>
+
+| Costruttore | Descrizione | 
+|-------------|-------------|
+| <a href="/windows/desktop/api/directxpackedvector/nf-directxpackedvector-xmshort4-xmshort4(constfloat)"><strong>XMSHORT4 ()</strong></a> | Costruttore predefinito per <code>XMSHORT4</code> . <br /> Costruttore predefinito per <a href="/windows/desktop/api/DirectXPackedVector/ns-directxpackedvector-xmshort4"><strong>XMSHORT4.</strong></a> <br /><blockquote>[!Note]<br />Questo costruttore è disponibile solo in C++.</blockquote><br /> | 
+| <a href="/windows/desktop/api/directxpackedvector/nf-directxpackedvector-xmshort4-xmshort4(constfloat)"><strong>XMSHORT4 (const float*)</strong></a> | Inizializza una nuova istanza di da <code>XMSHORT4</code> un argomento di matrice di quattro <code>float</code> elementi. <br /> Questo costruttore inizializza una nuova istanza di <a href="/windows/desktop/api/DirectXPackedVector/ns-directxpackedvector-xmshort4"><strong>XMSHORT4</strong></a> da un argomento di matrice <code>float</code> di quattro elementi. <br /><blockquote>[!Note]<br />Questo costruttore è disponibile solo in C++.</blockquote><br /> | 
+| <a href="/windows/desktop/api/directxpackedvector/nf-directxpackedvector-xmshort4-xmshort4(constfloat)"><strong>XMSHORT4 (const int16_t*)</strong></a> | Inizializza una nuova istanza di da <code>XMSHORT4</code> un argomento di matrice di quattro <code>int16_t</code> elementi. <br /> Questo costruttore inizializza una nuova istanza di <a href="/windows/desktop/api/DirectXPackedVector/ns-directxpackedvector-xmshort4"><strong>XMSHORT4</strong></a> da un oggetto da un argomento di matrice <code>int16_t</code> di quattro elementi. <br /><blockquote>[!Note]<br />Questo costruttore è disponibile solo in C++.</blockquote><br /> | 
+| <a href="/windows/desktop/api/directxpackedvector/nf-directxpackedvector-xmshort4-xmshort4(float_float_float_float)"><strong>XMSHORT4 (float,float,float,float)</strong></a> | Inizializza una nuova istanza di <code>XMSHORT4</code> da quattro <code>float</code> argomenti. <br /> Questo costruttore inizializza una nuova istanza di <a href="/windows/desktop/api/DirectXPackedVector/ns-directxpackedvector-xmshort4"><strong>XMSHORT4</strong></a> da quattro <code>float</code> argomenti. <br /><blockquote>[!Note]<br />Questo costruttore è disponibile solo in C++.</blockquote><br /> | 
+| <a href="/windows/desktop/api/directxpackedvector/nf-directxpackedvector-xmshort4-xmshort4(int16_t_int16_t_int16_t_int16_t)"><strong>XMSHORT4 (int16_t,int16_t,int16_t,int16_t)</strong></a> | Inizializza una nuova istanza di <code>XMSHORT4</code> da quattro <code>int16_t</code> argomenti. <br /> Questo costruttore inizializza una nuova istanza di <a href="/windows/desktop/api/DirectXPackedVector/ns-directxpackedvector-xmshort4"><strong>XMSHORT4</strong></a> da quattro <code>int16_t</code> argomenti. <br /><blockquote>[!Note]<br />Questo costruttore è disponibile solo in C++.</blockquote><br /> | 
+
 
 
 

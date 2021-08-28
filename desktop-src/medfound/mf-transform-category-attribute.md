@@ -1,17 +1,17 @@
 ---
 description: Specifica la categoria per una trasformazione Media Foundation (MFT).
 ms.assetid: cebd64ea-b20f-4ccc-805f-0deab3096bc3
-title: Attributo MF_TRANSFORM_CATEGORY_Attribute (Mftransform. h)
+title: MF_TRANSFORM_CATEGORY_Attribute attributo (Mftransform.h)
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: bd3c64fd5e19bba10646957e7c247294b6d82a97
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 66adac9b1b9f07b3053ff871a12d17163ae2b5f1a2ef644885b54cb8ed281437
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104226371"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120113691"
 ---
-# <a name="mf_transform_category_attribute-attribute"></a>\_Attributo dell' \_ \_ attributo Category di MF Transform
+# <a name="mf_transform_category_attribute-attribute"></a>Attributo \_ CATEGORY MF TRANSFORM \_ \_
 
 Specifica la categoria per una trasformazione Media Foundation (MFT).
 
@@ -19,17 +19,17 @@ Specifica la categoria per una trasformazione Media Foundation (MFT).
 
 **GUID**
 
-Per un elenco di valori possibili, vedere [**la \_ categoria MFT**](mft-category.md).
+Per un elenco dei valori possibili, vedere [**MFT \_ CATEGORY**](mft-category.md).
 
 ## <a name="getset"></a>Ottenere/impostare
 
-Per ottenere questo attributo, chiamare [**IMFAttributes:: GetGuid**](/windows/desktop/api/mfobjects/nf-mfobjects-imfattributes-getguid).
+Per ottenere questo attributo, chiamare [**IMFAttributes::GetGUID**](/windows/desktop/api/mfobjects/nf-mfobjects-imfattributes-getguid).
 
-Per impostare questo attributo, chiamare [**IMFAttributes:: Seguid**](/windows/desktop/api/mfobjects/nf-mfobjects-imfattributes-setguid).
+Per impostare questo attributo, chiamare [**IMFAttributes::SetGUID**](/windows/desktop/api/mfobjects/nf-mfobjects-imfattributes-setguid).
 
 ## <a name="remarks"></a>Commenti
 
-Questo attributo viene impostato sui puntatori [**IMFActivate**](/windows/desktop/api/mfobjects/nn-mfobjects-imfactivate) restituiti dalla funzione [**MFTEnumEx**](/windows/desktop/api/mfapi/nf-mfapi-mftenumex) .
+Questo attributo viene impostato sui [**puntatori IMFActivate**](/windows/desktop/api/mfobjects/nn-mfobjects-imfactivate) restituiti dalla [**funzione MFTEnumEx.**](/windows/desktop/api/mfapi/nf-mfapi-mftenumex)
 
 ## <a name="requirements"></a>Requisiti
 
@@ -37,9 +37,9 @@ Questo attributo viene impostato sui puntatori [**IMFActivate**](/windows/deskto
 
 | Requisito | Valore |
 |-------------------------------------|------------------------------------------------------------------------------------------|
-| Client minimo supportato<br/> | App desktop di Windows 7 \[ \| UWP\]<br/>                                        |
-| Server minimo supportato<br/> | App desktop di Windows Server 2008 R2 \[ \| UWP\]<br/>                           |
-| Intestazione<br/>                   | <dl> <dt>Mftransform. h</dt> </dl> |
+| Client minimo supportato<br/> | Windows 7 \[ app desktop \| app UWP\]<br/>                                        |
+| Server minimo supportato<br/> | Windows App UWP per app desktop server 2008 R2 \[ \|\]<br/>                           |
+| Intestazione<br/>                   | <dl> <dt>Mftransform.h</dt> </dl> |
 
 
 
@@ -47,7 +47,7 @@ Questo attributo viene impostato sui puntatori [**IMFActivate**](/windows/deskto
 
 <dl> <dt>
 
-[Elenco alfabetico degli attributi di Media Foundation](alphabetical-list-of-media-foundation-attributes.md)
+[Elenco alfabetico di Media Foundation attributi](alphabetical-list-of-media-foundation-attributes.md)
 </dt> <dt>
 
 [Attributi di trasformazione](transform-attributes.md)

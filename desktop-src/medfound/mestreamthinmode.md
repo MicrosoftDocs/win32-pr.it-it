@@ -4,12 +4,12 @@ ms.assetid: 7de8cb64-122a-475f-990c-c19590a9d9d8
 title: Evento MEStreamThinMode (Mfobjects.h)
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 371c628498356f64918d42ffe6af94aef95af34005250ba3a4a891b6b76f6dc6
-ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
+ms.openlocfilehash: f13a9cc5b625a8b366bece1debc2017fce51e35d
+ms.sourcegitcommit: 9b5faa61c38b2d0c432b7f2dbee8c127b0e28a7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "120013561"
+ms.lasthandoff: 08/19/2021
+ms.locfileid: "122479517"
 ---
 # <a name="mestreamthinmode-event"></a>EVENTO MEStreamThinMode
 
@@ -23,29 +23,11 @@ I valori possibili recuperati [**da IMFMediaEvent::GetValue**](/windows/desktop/
 
 
 
-<table>
-<colgroup>
-<col style="width: 50%" />
-<col style="width: 50%" />
-</colgroup>
-<thead>
-<tr class="header">
-<th>VARTYPE</th>
-<th>Descrizione</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>VT_BOOL<br/></td>
-<td>Indica se il thinning è stato avviato o arrestato.<br/>
-<ul>
-<li>VARIANT_TRUE: gli esempi recapitati dopo questo evento vengono dilutti.</li>
-<li>VARIANT_FALSE: gli esempi recapitati dopo questo evento non vengono dilutti.</li>
-</ul>
-<br/></td>
-</tr>
-</tbody>
-</table>
+
+| VARTYPE | Descrizione | 
+|---------|-------------|
+| VT_BOOL<br /> | Indica se il thinning è stato avviato o arrestato.<br /><ul><li>VARIANT_TRUE: gli esempi recapitati dopo questo evento vengono dilutti.</li><li>VARIANT_FALSE: gli esempi recapitati dopo questo evento non vengono dilutti.</li></ul><br /> | 
+
 
 
 
@@ -53,7 +35,7 @@ I valori possibili recuperati [**da IMFMediaEvent::GetValue**](/windows/desktop/
 
 
 
-| Requisito | Valore |
+| Requisito | valore |
 |-------------------------------------|----------------------------------------------------------------------------------------------------------|
 | Client minimo supportato<br/> | Windows Solo \[ app desktop Vista\]<br/>                                                           |
 | Server minimo supportato<br/> | Windows Solo app desktop di Server 2008 \[\]<br/>                                                     |

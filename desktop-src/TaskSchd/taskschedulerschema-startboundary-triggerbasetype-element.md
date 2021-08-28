@@ -13,12 +13,12 @@ api_type:
 ms.topic: reference
 ms.date: 05/31/2018
 api_location: ''
-ms.openlocfilehash: 32b91557d812888d9bb6e970be37703537bb3d7645c8a0422df19d5d5fe37a5f
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 46584659fbd14bc26981e220798a91c03e960e1f
+ms.sourcegitcommit: 61a4c522182aa1cacbf5669683d9570a3bf043b2
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119401965"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "122886421"
 ---
 # <a name="startboundary-triggerbasetype-element"></a>Elemento StartBoundary (triggerBaseType)
 
@@ -50,7 +50,7 @@ Specifica la data e l'ora di attivazione del trigger.
 
 ## <a name="remarks"></a>Commenti
 
-**<StartBoundary>** L'elemento è un elemento obbligatorio per i trigger di ora e calendario ( e [**<TimeTrigger>**](taskschedulerschema-timetrigger-triggergroup-element.md) [**<CalendarTrigger>**](taskschedulerschema-calendartrigger-triggergroup-element.md) ).
+**&lt; L'elemento &gt; StartBoundary** è un elemento obbligatorio per i trigger di ora e calendario ([**&lt; TimeTrigger &gt;**](taskschedulerschema-timetrigger-triggergroup-element.md) e [**&lt; CalendarTrigger &gt;**](taskschedulerschema-calendartrigger-triggergroup-element.md)).
 
 Per lo sviluppo di script, il limite finale viene specificato usando la [**proprietà Trigger.StartBoundary**](trigger-startboundary.md) ereditata da tutti gli oggetti trigger.
 

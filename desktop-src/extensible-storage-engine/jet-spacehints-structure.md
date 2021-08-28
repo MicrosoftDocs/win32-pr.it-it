@@ -15,12 +15,12 @@ api_type:
 - COM
 api_location: ''
 ROBOTS: INDEX,FOLLOW
-ms.openlocfilehash: f829e78ff54e77011346ae1bfd39f909411cbee12c18d19781f8fe5d62865097
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 77c452fb78916fdcdf935ec6ad890db055e63b9a
+ms.sourcegitcommit: 9b5faa61c38b2d0c432b7f2dbee8c127b0e28a7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "118252256"
+ms.lasthandoff: 08/19/2021
+ms.locfileid: "122479317"
 ---
 # <a name="jet_spacehints-structure"></a>JET_SPACEHINTS struttura
 
@@ -29,9 +29,9 @@ _**Si applica a:** Windows | Windows Server_
 
 ## <a name="jet_spacehints-structure"></a>JET_SPACEHINTS struttura
 
-La **JET_SPACEHINTS** contiene informazioni sui modelli di allocazione dello spazio quando un albero b si sviluppa tramite divisioni di accodamento o punto di accesso. Le divisioni di accodamento si verificano quando i record vengono aggiunti alla fine di un albero b e le divisioni di punti di accesso si verificano quando più record vengono aggiunti allo stesso punto di inserimento virtuale, ad esempio aggiungendo "Marie", "Mark", "Martin", "Mary" al centro di un albero b ordinato alfabeticamente.
+La **JET_SPACEHINTS** struttura contiene informazioni sui modelli di allocazione dello spazio quando un albero b si sviluppa tramite divisioni di accodamento o punto di accesso. Le divisioni di accodamento si verificano quando i record vengono aggiunti alla fine di un albero b e le divisioni di punti di accesso si verificano quando più record vengono aggiunti allo stesso punto di inserimento virtuale, ad esempio aggiungendo "Marie", "Mark", "Martin", "Mary" al centro di un albero b ordinato alfabeticamente.
 
-**Windows 7:** La **JET_SPACEHINTS** è stata introdotta in Windows 7.
+**Windows 7:** La **JET_SPACEHINTS** struttura è stata introdotta in Windows 7.
 
 ```cpp
     typedef struct tagJET_SPACEHINTS {
@@ -64,50 +64,16 @@ Dimensione iniziale (in byte) dell'oggetto da creare. Deve essere un multiplo de
 
 Gruppo di bit che contengono le opzioni da utilizzare per questa struttura, che includono zero o più dei valori seguenti.
 
-<table>
-<colgroup>
-<col style="width: 50%" />
-<col style="width: 50%" />
-</colgroup>
-<thead>
-<tr class="header">
-<th><p>Valore</p></th>
-<th><p>Significato</p></th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td><p>JET_bitSpaceHintsUtilizeParentSpace<br />
-0x00000001</p></td>
-<td><p>Modifica i criteri di allocazione interni per ottenere spazio in modo eretico dall'elemento padre immediato di un albero b.</p></td>
-</tr>
-<tr class="even">
-<td><p>JET_bitCreateHintAppendSequential<br />
-0x00000002</p></td>
-<td><p>Consente l'aumento delle dimensioni del comportamento di divisione di accodamento in base alla dinamica di crescita della tabella (impostata da cbMinExtent, ulGrowth, cbMaxExtent).</p></td>
-</tr>
-<tr class="odd">
-<td><p>JET_bitCreateHintHotpointSequential<br />
-0x00000004</p></td>
-<td><p>Consente l'aumento delle dimensioni del comportamento di suddivisione dei punti di accesso a caldo in base alla dinamica di crescita della tabella (impostata da cbMinExtent, ulGrowth, cbMaxExtent).</p></td>
-</tr>
-<tr class="even">
-<td><p>JET_bitRetrieveHintTableScanForward<br />
-0x00000010</p></td>
-<td><p>Se impostato, il client indica che l'analisi sequenziale in avanti è il modello di utilizzo predominante di questa tabella.</p></td>
-</tr>
-<tr class="odd">
-<td><p>JET_bitRetrieveHintTableScanBackward<br />
-0x00000020</p></td>
-<td><p>Se impostato, il client indica che l'analisi sequenziale all'indietro è il modello di utilizzo prevalente di questa tabella.</p></td>
-</tr>
-<tr class="even">
-<td><p>JET_bitDeleteHintTableSequential<br />
-0x00000100</p></td>
-<td><p>Se impostata, l'applicazione prevede che la tabella sia pulita in ordine sequenziale, dalla chiave più bassa alla chiave più alta.</p></td>
-</tr>
-</tbody>
-</table>
+
+| <p>valore</p> | <p>Significato</p> | 
+|--------------|----------------|
+| <p>JET_bitSpaceHintsUtilizeParentSpace<br />0x00000001</p> | <p>Modifica i criteri di allocazione interni per ottenere spazio in modo eretico dall'elemento padre immediato di un albero b.</p> | 
+| <p>JET_bitCreateHintAppendSequential<br />0x00000002</p> | <p>Consente l'aumento delle dimensioni del comportamento di divisione di accodamento in base alla dinamica di crescita della tabella (impostata da cbMinExtent, ulGrowth, cbMaxExtent).</p> | 
+| <p>JET_bitCreateHintHotpointSequential<br />0x00000004</p> | <p>Consente l'aumento delle dimensioni del comportamento di suddivisione dei punti di accesso a caldo in base alla dinamica di crescita della tabella (impostata da cbMinExtent, ulGrowth, cbMaxExtent).</p> | 
+| <p>JET_bitRetrieveHintTableScanForward<br />0x00000010</p> | <p>Se impostato, il client indica che l'analisi sequenziale in avanti è il modello di utilizzo predominante di questa tabella.</p> | 
+| <p>JET_bitRetrieveHintTableScanBackward<br />0x00000020</p> | <p>Se impostato, il client indica che l'analisi sequenziale all'indietro è il modello di utilizzo prevalente di questa tabella.</p> | 
+| <p>JET_bitDeleteHintTableSequential<br />0x00000100</p> | <p>Se impostata, l'applicazione prevede che la tabella sia pulita in ordine sequenziale, dalla chiave più bassa alla chiave più alta.</p> | 
+
 
 
 **ulMaintDensity**
@@ -136,30 +102,13 @@ Valore massimo per la crescita in byte. Questo limite è ulGrowth.
 
 3.  Durante l'allocazione successiva, cbLastAlloc ulGrowth/100 (arrotondato alle dimensioni della pagina del database) o \* cbMinExtent se maggiore.
 
-4.  A un'allocazione (che potrebbe essere la prima allocazione), le dimensioni calcolate supereranno cbMaxExtent e che sarà la dimensione di crescita in seguito.
+4.  A un'allocazione (che potrebbe essere la prima allocazione), la dimensione calcolata supererà cbMaxExtent e che sarà la dimensione di crescita in seguito.
 
 ### <a name="requirements"></a>Requisiti
 
-<table>
-<colgroup>
-<col style="width: 50%" />
-<col style="width: 50%" />
-</colgroup>
-<tbody>
-<tr class="odd">
-<td><p><strong>Client</strong></p></td>
-<td><p>Richiede Windows Vista, Windows XP o Windows 2000 Professional.</p></td>
-</tr>
-<tr class="even">
-<td><p><strong>Server</strong></p></td>
-<td><p>Richiede Windows Server 2008, Windows Server 2003 o Windows 2000 Server.</p></td>
-</tr>
-<tr class="odd">
-<td><p><strong>Intestazione</strong></p></td>
-<td><p>Dichiarato in Esent.h.</p></td>
-</tr>
-</tbody>
-</table>
+
+| | | <p><strong>Client</strong></p> | <p>Richiede Windows Vista, Windows XP o Windows 2000 Professional.</p> | | <p><strong>Server</strong></p> | <p>Richiede Windows Server 2008, Windows Server 2003 o Windows 2000 Server.</p> | | <p><strong>Intestazione</strong></p> | <p>Dichiarato in Esent.h.</p> | 
+
 
 
 ### <a name="see-also"></a>Vedere anche

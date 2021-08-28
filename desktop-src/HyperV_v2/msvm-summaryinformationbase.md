@@ -30,12 +30,12 @@ api_type:
 - DllExport
 api_location:
 - vmms.exe
-ms.openlocfilehash: d131a2630c0c64e4b4b6bcec371eb901665c989948a1db510b47a41d9159f06d
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: fd99ec5a0a9f3bd4bd07fa88cfc15139c69a442b
+ms.sourcegitcommit: 61a4c522182aa1cacbf5669683d9570a3bf043b2
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "118950100"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "122886574"
 ---
 # <a name="msvm_summaryinformationbase-class"></a>Classe Msvm \_ SummaryInformationBase
 
@@ -159,7 +159,7 @@ Indica se le connessioni in modalità avanzata sono consentite dall'host e, se c
 
 </dd> <dt>
 
-**Stato di integrità**
+**HealthState**
 </dt> <dd> <dl> <dt>
 
 Tipo di dati: **uint16**
@@ -201,13 +201,13 @@ InstanceID è una proprietà facoltativa che può essere usata per identificare 
 
 Per garantire l'univocità all'interno di NameSpace, il valore di InstanceID deve essere costruito usando l'algoritmo "preferito" seguente:
 
-<OrgID>:<LocalID>
+&lt;&gt;OrgID: &lt; LocalID&gt;
 
-Dove e sono separati da due punti (:) e dove devono includere un nome protetto da copyright, marchio o altrimenti univoco di proprietà dell'entità aziendale che crea o definisce InstanceID o che è un ID registrato assegnato all'entità aziendale da un'autorità globale <OrgID> <LocalID> <OrgID> riconosciuta. Questo requisito è simile al seguente: <Schema Name> \_ <Class Name> struttura dei nomi delle classi dello schema. Inoltre, per garantire l'univocità, <OrgID> non deve contenere i due punti (:). Quando si usa questo algoritmo, i primi due punti da visualizzare in InstanceID devono essere compresi tra <OrgID> e <LocalID> .
+Dove OrgID e LocalID sono separati da due punti (:) e dove OrgID deve includere un nome protetto da copyright, marchio o altrimenti univoco di proprietà dell'entità aziendale che crea o definisce InstanceID o che è un ID registrato assegnato all'entità aziendale da un'autorità globale &lt; &gt; &lt; &gt; &lt; &gt; riconosciuta. Questo requisito è simile al seguente: <Schema Name> \_ <Class Name> struttura dei nomi delle classi dello schema. Inoltre, per garantire l'univocità, &lt; OrgID &gt; non deve contenere i due punti (:). Quando si usa questo algoritmo, i primi due punti da visualizzare in InstanceID devono essere compresi tra &lt; OrgID &gt; e &lt; LocalID &gt; .
 
-<LocalID> viene scelto dall'entità business e non deve essere riutilizzato per identificare diversi elementi sottostanti (reali). Se non è Null e l'algoritmo "preferito" precedente non viene usato, l'entità di definizione deve garantire che l'InstanceID risultante non viene riutilizzato in alcun InstanceID prodotto da questo o da altri provider per lo spazio dei nomi di questa istanza.
+&lt;LocalID viene scelto dall'entità business e non deve essere riutilizzato per identificare diversi elementi &gt; sottostanti (reali). Se non è Null e l'algoritmo "preferito" precedente non viene usato, l'entità di definizione deve garantire che l'InstanceID risultante non viene riutilizzato in alcun InstanceID prodotto da questo o da altri provider per lo spazio dei nomi di questa istanza.
 
-Se non è impostato su Null per le istanze definite da DMTF, l'algoritmo "preferito" deve essere usato con <OrgID> impostato su CIM.
+Se non è impostato su Null per le istanze definite da DMTF, l'algoritmo "preferito" deve essere usato con &lt; OrgID &gt; impostato su CIM.
 
 </dd> <dt>
 

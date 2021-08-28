@@ -1,12 +1,12 @@
 ---
-title: Metodo disconnected IRemoteDesktopClientEvents
+title: Metodo OnDisconnected IRemoteDesktopClientEvents
 description: Chiamato quando il controllo client è stato disconnesso da una sessione remota.
 ms.assetid: EA26B530-0AA8-49D6-8E3C-E53179FC5104
 ms.tgt_platform: multiple
 keywords:
-- Metodo disconnected Servizi Desktop remoto
-- Metodo disconnected Servizi Desktop remoto, interfaccia IRemoteDesktopClientEvents
-- Interfaccia IRemoteDesktopClientEvents Servizi Desktop remoto, metodo disconnected
+- Metodo OnDisconnected Servizi Desktop remoto
+- Metodo OnDisconnected Servizi Desktop remoto, interfaccia IRemoteDesktopClientEvents
+- Interfaccia IRemoteDesktopClientEvents Servizi Desktop remoto , metodo OnDisconnected
 topic_type:
 - apiref
 api_name:
@@ -17,14 +17,14 @@ api_type:
 - COM
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 4bd59b03fe9cb23309d53773289291c8a791935a
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: 5e93ebf7c85e4015539cbbcc15723cdfed9c7d181741925c1a97c93ccc4326eb
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "103742383"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120124901"
 ---
-# <a name="iremotedesktopclienteventsondisconnected-method"></a>Metodo IRemoteDesktopClientEvents:: disconnected
+# <a name="iremotedesktopclienteventsondisconnected-method"></a>Metodo IRemoteDesktopClientEvents::OnDisconnected
 
 Chiamato quando il controllo client è stato disconnesso da una sessione remota.
 
@@ -45,21 +45,21 @@ void OnDisconnected(
 
 <dl> <dt>
 
-*disconnectReason* \[ in\]
+*disconnectReason* \[ Pollici\]
 </dt> <dd>
 
 Motivo dell'evento di disconnessione.
 
 </dd> <dt>
 
-*ExtendedDisconnectReason* \[ in\]
+*ExtendedDisconnectReason* \[ Pollici\]
 </dt> <dd>
 
 Informazioni estese per l'evento di disconnessione.
 
 </dd> <dt>
 
-*disconnectErrorMessage* \[ in\]
+*disconnectErrorMessage* \[ Pollici\]
 </dt> <dd>
 
 Messaggio di errore per l'evento di disconnessione.

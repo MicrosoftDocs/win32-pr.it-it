@@ -17,12 +17,12 @@ api_location:
 topic_type:
 - APIRef
 - kbSyntax
-ms.openlocfilehash: f7a661f2ba049c10934c262fdfd1d047fdcb1fc726c9f8fbfa1f7061c08c8ea7
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: c8a994c400c0ffd2295dec0afa2bfac62127f22d
+ms.sourcegitcommit: 4e94fc75fad7b2a0f3c92a26f97e89924e59b7a9
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "118985731"
+ms.lasthandoff: 08/24/2021
+ms.locfileid: "122786756"
 ---
 # <a name="span-idvspixengineirunactionrequestspanirunactionrequest-interface"></a><span id="vspixengine.irunactionrequest"></span>Interfaccia IRunActionRequest
 
@@ -38,13 +38,13 @@ Non usato. In precedenza una richiesta per elementi come l'evento "capture frame
 
 **L'interfaccia IRunActionRequest** include questi metodi.
 
-<table><colgroup><col style="width: 50%" /><col style="width: 50%" /></colgroup><thead><tr class="header"><th style="text-align: left;">Metodo</th><th style="text-align: left;">Descrizione</th></tr></thead><tbody><tr class="odd"><td style="text-align: left;"><a href="/windows/desktop/direct3dtools/irunactionrequest-requestasync-refguid-iunknown-ptr-irunactioncallback-ptr-dword-dword"><strong>RequestAsync</strong></a></td><td style="text-align: left;"><p>Richiesta asincrona per avviare un'azione (ad esempio, acquisire un frame) nel motore.</p></td></tr></tbody></table>
+<table><colgroup><col  /><col  /></colgroup><thead><tr class="header"><th >Metodo</th><th >Descrizione</th></tr></thead><tbody><tr class="odd"><td ><a href="/windows/desktop/direct3dtools/irunactionrequest-requestasync-refguid-iunknown-ptr-irunactioncallback-ptr-dword-dword"><strong>RequestAsync</strong></a></td><td ><p>Richiesta asincrona per avviare un'azione (ad esempio, acquisire un frame) nel motore.</p></td></tr></tbody></table>
 
  
 
 ## <a name="requirements"></a>Requisiti
 
-<table><colgroup><col style="width: 50%" /><col style="width: 50%" /></colgroup><tbody><tr class="odd"><td><p>Intestazione</p></td><td>Vspixengine.h</td></tr></tbody></table>
+<table><colgroup><col  /><col  /></colgroup><tbody><tr class="odd"><td><p>Intestazione</p></td><td>Vspixengine.h</td></tr></tbody></table>
 
  
 

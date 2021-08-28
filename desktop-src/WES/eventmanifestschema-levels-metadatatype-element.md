@@ -1,9 +1,9 @@
 ---
-title: levels (MetadataType)-elemento
-description: Definisce un elenco di livelli che specificano la gravità di un evento. | levels (MetadataType)-elemento
+title: Elemento levels (MetadataType)
+description: Definisce un elenco di livelli che specificano la gravità di un evento. | Elemento levels (MetadataType)
 ms.assetid: 710a4c7e-d37e-4543-8fdf-44688085b996
 keywords:
-- EventLog elemento levels
+- Elemento levels EventLog
 topic_type:
 - apiref
 api_name:
@@ -13,14 +13,14 @@ api_type:
 ms.topic: reference
 ms.date: 05/31/2018
 api_location: ''
-ms.openlocfilehash: 9df4a7d7fc58f21ab6c5c6965b635f8bd087d890
-ms.sourcegitcommit: 92e74c99f8f4d097676959d0c317f533c2400a80
+ms.openlocfilehash: 7a7c187b8ed9660d5e95be1049c4e718eae9a3ebd4289040d364decb66c58c52
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/09/2021
-ms.locfileid: "104353376"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120124291"
 ---
-# <a name="levels-metadatatype-element"></a>levels (MetadataType)-elemento
+# <a name="levels-metadatatype-element"></a>Elemento levels (MetadataType)
 
 Definisce un elenco di livelli che specificano la gravità di un evento.
 
@@ -30,7 +30,7 @@ Definisce un elenco di livelli che specificano la gravità di un evento.
  />
 ```
 
-L'elemento **levels** viene definito dal tipo complesso [**MetadataType**](eventmanifestschema-metadatatype-complextype.md) .
+**L'elemento levels** è definito dal [**tipo complesso MetadataType.**](eventmanifestschema-metadatatype-complextype.md)
 
 ## <a name="requirements"></a>Requisiti
 
@@ -38,8 +38,8 @@ L'elemento **levels** viene definito dal tipo complesso [**MetadataType**](event
 
 | Requisito | Valore |
 |-------------------------------------|------------------------------------------------------|
-| Client minimo supportato<br/> | \[Solo app desktop di Windows Vista\]<br/>       |
-| Server minimo supportato<br/> | \[Solo app desktop Windows Server 2008\]<br/> |
+| Client minimo supportato<br/> | Windows Solo \[ app desktop di Vista\]<br/>       |
+| Server minimo supportato<br/> | Windows Solo app desktop server 2008 \[\]<br/> |
 
 
 

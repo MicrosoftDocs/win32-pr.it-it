@@ -1,6 +1,6 @@
 ---
 title: Tipo di controllo MenuBar
-description: Questo argomento fornisce informazioni sul supporto microsoft Automazione interfaccia utente per il tipo di controllo MenuBar.
+description: Questo argomento fornisce informazioni sul supporto di Microsoft Automazione interfaccia utente per il tipo di controllo MenuBar.
 ms.assetid: e93a92ce-7c98-4e8f-8a6a-a365ccb705d6
 keywords:
 - Automazione interfaccia utente,supporto per il tipo di controllo MenuBar
@@ -21,12 +21,12 @@ keywords:
 - tipi di controllo,MenuBar
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 096dd2d48281c63a6006d679b8edacfc3607100574eb53325ae491ff1e011386
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 558a734d69a9197b3e0a8d6c5655405074878bca
+ms.sourcegitcommit: 9b5faa61c38b2d0c432b7f2dbee8c127b0e28a7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119387801"
+ms.lasthandoff: 08/19/2021
+ms.locfileid: "122468158"
 ---
 # <a name="menubar-control-type"></a>Tipo di controllo MenuBar
 
@@ -34,7 +34,7 @@ Questo argomento fornisce informazioni sul supporto di Microsoft Automazione int
 
 I controlli barra dei menu sono un esempio di controlli che implementano il **tipo di controllo MenuBar.** Le barre dei menu consentono agli utenti di attivare comandi e opzioni contenuti in un'applicazione.
 
-Le sezioni seguenti definiscono la struttura ad Automazione interfaccia utente, le proprietà, i pattern di controllo e gli eventi necessari per il tipo di **controllo MenuBar.** I Automazione interfaccia utente si applicano a tutti i controlli barra dei menu in cui il framework o la piattaforma dell'interfaccia utente Automazione interfaccia utente supporto per i tipi di controllo e i pattern di controllo.
+Le sezioni seguenti definiscono la struttura ad Automazione interfaccia utente, le proprietà, i pattern di controllo e gli eventi necessari per il **tipo di controllo MenuBar.** I Automazione interfaccia utente si applicano a tutti i controlli barra dei menu in cui il framework o la piattaforma dell'interfaccia utente si integra Automazione interfaccia utente per i tipi di controllo e i pattern di controllo.
 
 In questo argomento sono contenute le sezioni seguenti.
 
@@ -50,36 +50,11 @@ La tabella seguente illustra un controllo tipico e una visualizzazione contenuto
 
 
 
-<table>
-<colgroup>
-<col style="width: 50%" />
-<col style="width: 50%" />
-</colgroup>
-<thead>
-<tr class="header">
-<th>Visualizzazione controlli</th>
-<th>Visualizzazione contenuto</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td><ul>
-<li>MenuBar
-<ul>
-<li>MenuItem (1 o più)</li>
-<li>Altri controlli (0 o molti)</li>
-</ul></li>
-</ul></td>
-<td><ul>
-<li>Non applicabile
-<ul>
-<li>MenuItem (1 o più)</li>
-<li>Altri controlli (0 o molti)</li>
-</ul></li>
-</ul></td>
-</tr>
-</tbody>
-</table>
+
+| Visualizzazione controlli | Visualizzazione contenuto | 
+|--------------|--------------|
+| <ul><li>MenuBar<ul><li>MenuItem (1 o più)</li><li>Altri controlli (0 o molti)</li></ul></li></ul> | <ul><li>Non applicabile<ul><li>MenuItem (1 o più)</li><li>Altri controlli (0 o molti)</li></ul></li></ul> | 
+
 
 
 
@@ -93,18 +68,18 @@ Un controllo barra dei menu può contenere altri controlli, ad esempio controlli
 
 ## <a name="relevant-properties"></a>Proprietà rilevanti
 
-Nella tabella seguente sono elencate le Automazione interfaccia utente il cui valore o definizione è particolarmente rilevante per il **tipo di controllo MenuBar.** Per altre informazioni sulle Automazione interfaccia utente, vedere Recupero di proprietà [da Automazione interfaccia utente elements](uiauto-propertiesforclients.md).
+Nella tabella seguente sono elencate le Automazione interfaccia utente il cui valore o definizione è particolarmente rilevante per il **tipo di controllo MenuBar.** Per altre informazioni sulle Automazione interfaccia utente, vedere Recupero di proprietà [da Automazione interfaccia utente elementi](uiauto-propertiesforclients.md).
 
 
 
-| Proprietà di automazione interfaccia utente                                                                                              | Valore       | Note                                                                                                                                                                                                                                    |
+| Proprietà di automazione interfaccia utente                                                                                              | valore       | Note                                                                                                                                                                                                                                    |
 |---------------------------------------------------------------------------------------------------------------------|-------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | [**UIA \_ AcceleratorKeyPropertyId**](uiauto-automation-element-propids.md)             | NULL        | Le barre dei menu in genere non dispongono di tasti di scelta rapida.                                                                                                                                                                                          |
 | [**UIA \_ AccessKeyPropertyId**](uiauto-automation-element-propids.md)                       | "ALT"       | La pressione del tasto ALT dovrebbe in genere portare lo stato attivo sulla barra dei menu all'interno dell'applicazione.                                                                                                                                                  |
 | [**UIA \_ BoundingRectanglePropertyId**](uiauto-automation-element-propids.md)       | Vedere le note.  | Il valore esposto da questa proprietà deve includere tutti i controlli contenuti.                                                                                                                                                 |
 | [**UIA \_ ControlTypePropertyId**](uiauto-automation-element-propids.md)                   | **MenuBar** |                                                                                                                                                                                                                                          |
-| [**UIA \_ IsContentElementPropertyId**](uiauto-automation-element-propids.md)         | FALSE       | Il controllo barra dei menu non è incluso nella visualizzazione contenuto dell'Automazione interfaccia utente struttura ad albero.                                                                                                                                                      |
-| [**UIA \_ IsControlElementPropertyId**](uiauto-automation-element-propids.md)         | true        | Il controllo barra dei menu è sempre incluso nella visualizzazione controlli dell'Automazione interfaccia utente albero.                                                                                                                                                   |
+| [**UIA \_ IsContentElementPropertyId**](uiauto-automation-element-propids.md)         | FALSE       | Il controllo barra dei menu non è incluso nella visualizzazione contenuto dell'Automazione interfaccia utente albero.                                                                                                                                                      |
+| [**UIA \_ IsControlElementPropertyId**](uiauto-automation-element-propids.md)         | true        | Il controllo barra dei menu è sempre incluso nella visualizzazione controlli dell'Automazione interfaccia utente struttura ad albero.                                                                                                                                                   |
 | [**UIA \_ IsKeyboardFocusablePropertyId**](uiauto-automation-element-propids.md)   | true        | I controlli barra dei menu hanno lo stato attivabile perché i controlli che contengono possono prendere lo stato attivo.                                                                                                                                      |
 | [**UIA \_ IsOffscreenPropertyId**](uiauto-automation-element-propids.md)                   | Vedere le note.  | Il valore di questa proprietà dipende dal fatto che il controllo sia visualizzabile o meno sullo schermo.                                                                                                                                                     |
 | [**UIA \_ LabeledByPropertyId**](uiauto-automation-element-propids.md)                       | NULL        | I controlli barra dei menu in genere non hanno un'etichetta.                                                                                                                                                                                           |

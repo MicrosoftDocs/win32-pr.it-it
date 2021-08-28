@@ -3,7 +3,7 @@ title: QuickAccessToolbar - elemento
 description: Rappresenta la barra di accesso rapido, una piccola barra degli strumenti che visualizza i collegamenti ai comandi della barra multifunzione.
 ms.assetid: 59aa35c3-a844-46b3-b066-c9a321fb0891
 keywords:
-- Elemento QuickAccessToolbar Barra multifunzione di Windows
+- Elemento QuickAccessToolbar Windows barra multifunzione
 topic_type:
 - apiref
 api_name:
@@ -13,12 +13,12 @@ api_type:
 ms.topic: reference
 ms.date: 05/31/2018
 api_location: ''
-ms.openlocfilehash: 6ae01f620d66298a5f7200d0be947dbfb3750af4
-ms.sourcegitcommit: 099ecdda1e83618b844387405da0db0ebda93a65
+ms.openlocfilehash: fa9d097823d049d145c25d1027bdb5a67d688692
+ms.sourcegitcommit: c276a8912787b2cda74dcf54eb96df961bb1188b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/04/2021
-ms.locfileid: "111443302"
+ms.lasthandoff: 08/20/2021
+ms.locfileid: "122624167"
 ---
 # <a name="quickaccesstoolbar-element"></a>QuickAccessToolbar - elemento
 
@@ -40,10 +40,10 @@ Rappresenta la [barra di accesso rapido,](windowsribbon-controls-quickaccesstool
 
 <table>
 <colgroup>
-<col style="width: 25%" />
-<col style="width: 25%" />
-<col style="width: 25%" />
-<col style="width: 25%" />
+<col  />
+<col  />
+<col  />
+<col  />
 </colgroup>
 <thead>
 <tr class="header">

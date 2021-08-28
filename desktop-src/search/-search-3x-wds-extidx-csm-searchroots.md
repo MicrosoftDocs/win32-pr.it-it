@@ -4,12 +4,12 @@ ms.assetid: 0f1ff41f-7c4c-4516-bb55-bf09a8f2f3bc
 title: Gestione delle radici di ricerca
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 758d3c10a4c69f336202274cd1fb40528848b0ddb431fd58646cf700d2b2d736
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 9cbe5fe6184681e6c37cb0b6a7f9a35c677fec53
+ms.sourcegitcommit: 61a4c522182aa1cacbf5669683d9570a3bf043b2
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119095288"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "122880200"
 ---
 # <a name="managing-search-roots"></a>Gestione delle radici di ricerca
 
@@ -40,7 +40,7 @@ or
 
 
 
-Il segmento deve essere seguito da due (2) barre ('/') a meno che non sia il file: protocollo, che richiede tre barre <protocol> (file:///). Il segmento rappresenta un archivio contenuto o un identificatore di sicurezza utente se la radice di ricerca deve <site or SID> essere specifica dell'utente. Il <path> segmento è un set di contenitori, ad esempio directory o cartelle, e può includere il carattere jolly ' \* '. The <item> segment è facoltativo e può includere anche il carattere jolly ' \* '. Se non si include un elemento, assicurarsi di completare il segmento di percorso con una barra oppure l'indicizzatore presuppone che l'ultimo sottocontenitore sia un elemento.
+Il segmento di protocollo deve essere seguito da due &lt; (2) barre ('/') a meno che non sia il file: protocollo, che richiede tre barre &gt; (file:///). Il segmento rappresenta un archivio contenuto o un identificatore di sicurezza utente se la radice di ricerca deve <site or SID> essere specifica dell'utente. Il segmento di percorso è un set di contenitori, ad esempio directory o cartelle, e &lt; può includere il carattere jolly ' &gt; \* '. Il &lt; segmento di elemento è &gt; facoltativo e può includere anche il carattere jolly ' \* '. Se non si include un elemento, assicurarsi di completare il segmento di percorso con una barra oppure l'indicizzatore presuppone che l'ultimo sottocontenitore sia un elemento.
 
 Si supponga, ad esempio, di aver implementato un gestore di protocollo (myPH) per gestire file di tipo \* .myext per un'applicazione personalizzata. Tutti questi file si trovano nella cartella WorkteamA \\ ProjectFiles in un computer locale. La radice di ricerca potrebbe essere simile alla seguente:
 
@@ -55,7 +55,7 @@ I modelli con caratteri jolly definiscono gli URL usando il carattere jolly ' ' 
 -   C: \\ Dati di ProjectA versione \\ **1** \\\\
 -   C: \\ Dati di ProjectA versione \\ **2** \\\\
 
-Tale modello, tuttavia, non corrisponde a questo URL:
+Questo modello, tuttavia, non corrisponde a questo URL:
 
 -   C: \\ Dati temporanei di ProjectA versione \\ **1 \\** \\\\
 
@@ -87,13 +87,13 @@ In **Windows 7 e versioni successive,** [**ISearchCrawlScopeManager2**](/windows
 
 [**ISearchCrawlScopeManager**](/windows/desktop/api/Searchapi/nn-searchapi-isearchcrawlscopemanager) indica al motore di ricerca i contenitori da sottoporsi a ricerca per indicizzazione e/o controllare e gli elementi in tali contenitori da includere o escludere. Per aggiungere una nuova radice di ricerca, creare un'istanza di un oggetto [**ISearchRoot,**](/windows/desktop/api/Searchapi/nn-searchapi-isearchroot) impostare gli attributi radice e quindi chiamare [**ISearchCrawlScopeManager::AddRoot**](/windows/desktop/api/Searchapi/nf-searchapi-isearchcrawlscopemanager-addroot) e passarlo a un puntatore all'oggetto **ISearchRoot.** L'URL radice di ricerca ha lo stesso formato della radice di ricerca descritta in precedenza.
 
-Nella tabella seguente vengono descritti i metodi put pertinenti per [**ISearchRoot.**](/windows/desktop/api/Searchapi/nn-searchapi-isearchroot) Gli altri metodi put dell'interfaccia non vengono attualmente usati da Windows ricerca. È consigliabile includere gli identificatori di sicurezza (SID) degli utenti in tutte le radici per una maggiore sicurezza. Le radici per utente sono più sicure perché le query vengono eseguite in un processo per utente, assicurando che un utente non possa visualizzare gli elementi indicizzati dalla posta in arrivo di un altro utente, ad esempio.
+Nella tabella seguente vengono descritti i metodi put pertinenti per [**ISearchRoot.**](/windows/desktop/api/Searchapi/nn-searchapi-isearchroot) Gli altri metodi put dell'interfaccia non vengono attualmente usati da Windows ricerca. È consigliabile includere gli identificatori di sicurezza (SID) degli utenti in tutte le radici per una maggiore sicurezza. Le radici per utente sono più sicure in quanto le query vengono eseguite in un processo per utente, assicurando che un utente non possa visualizzare gli elementi indicizzati dalla posta in arrivo di un altro utente, ad esempio.
 
 
 
 | Metodo                     | Descrizione                                                                                                                                                                                         |
 |----------------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| put \_ ProvidesNotifications | Impostare su **TRUE se** un gestore di protocollo o un'altra applicazione invierà una notifica al motore di ricerca in caso di modifiche agli URL nella radice di ricerca. La notifica indica che è necessario reindicizzare gli URL. |
+| put \_ ProvidesNotifications | Impostare su **TRUE se** un gestore di protocollo o un'altra applicazione invierà una notifica al motore di ricerca sulle modifiche agli URL nella radice di ricerca. La notifica indica che è necessario reindicizzare gli URL. |
 | put \_ RootURL               | Imposta l'URL radice della ricerca corrente. L'URL assume il formato radice di ricerca descritto in precedenza.                                                                                                      |
 
 
@@ -152,7 +152,7 @@ Il CSM enumera le radici di ricerca usando un'interfaccia enumeratore di tipo CO
 **Informazioni concettuali**
 </dt> <dt>
 
-[Uso dell'Gestione ambito ricerca per indicizzazione](-search-3x-wds-extidx-csm.md)
+[Uso del Gestione ambito ricerca per indicizzazione](-search-3x-wds-extidx-csm.md)
 </dt> <dt>
 
 [Gestione delle regole di ambito](-search-3x-wds-extidx-csm-scoperules.md)

@@ -1,21 +1,21 @@
 ---
 title: Formato del file del tema
-description: Questo documento illustra il formato dei file di tema (con estensione theme). Un file con estensione theme è un .ini di testo suddiviso in sezioni, che specificano gli elementi visivi visualizzati in un Windows desktop. I nomi delle sezioni sono racchiusi tra parentesi quadre (\ \ ) nel file .ini.
+description: Questo documento illustra il formato dei file di tema (con estensione theme). Un file con estensione theme è .ini file di testo suddiviso in sezioni, che specificano gli elementi visivi visualizzati in un Windows desktop. I nomi delle sezioni vengono racchiusi tra parentesi quadre (\ \ ) nel file .ini.
 ms.assetid: 0b7b0ff7-f55a-4215-a2fd-6c3ea117d6e8
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: c67fc2d73e54e4f9c319108c2b29ed62fb58266f
-ms.sourcegitcommit: 9b5faa61c38b2d0c432b7f2dbee8c127b0e28a7e
+ms.openlocfilehash: 584e6d9785cf7660e017cadfb2a39d6bce6c2a87
+ms.sourcegitcommit: 61a4c522182aa1cacbf5669683d9570a3bf043b2
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/19/2021
-ms.locfileid: "122472307"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "122886633"
 ---
 # <a name="theme-file-format"></a>Formato del file del tema
 
-Questo documento illustra il formato dei file di tema (con estensione theme). Un file con estensione theme è un .ini di testo suddiviso in sezioni, che specificano gli elementi visivi visualizzati in un Windows desktop. I nomi delle sezioni vengono racchiusi tra parentesi quadre ( \[ \] ) nel file .ini.
+Questo documento illustra il formato dei file di tema (con estensione theme). Un file con estensione theme è .ini file di testo suddiviso in sezioni, che specificano gli elementi visivi visualizzati in un Windows desktop. I nomi delle sezioni vengono racchiusi tra parentesi quadre ( \[ \] ) nel file .ini.
 
-Un nuovo formato di file, .themepack, è stato introdotto con Windows 7 per consentire agli utenti di condividere i temi. I temi possono essere selezionati nel Pannello di controllo di personalizzazione solo in Windows 7 Home Premium o versione successiva oppure solo in Windows Server 2008 R2 quando viene installato il componente Desktop.
+Un nuovo formato di file, .themepack, è stato introdotto con Windows 7 per consentire agli utenti di condividere i temi. I temi possono essere selezionati nel Pannello di controllo Personalizzazione solo in Windows 7 Home Premium o versione successiva oppure solo in Windows Server 2008 R2 quando viene installato il componente Desktop.
 
 In questo articolo vengono illustrati gli argomenti seguenti.
 
@@ -23,7 +23,7 @@ In questo articolo vengono illustrati gli argomenti seguenti.
 -   [Descrizione di un file di tema](#description-of-a-theme-file)
     -   [\[Sezione \] Theme](#theme-section)
     -   [\[Pannello di controllo \\ Colors \]](#control-panelcolors-section)
-    -   [\[Pannello di controllo \\ cursori \]](#control-panelcursors-section)
+    -   [\[Pannello di controllo \\ Cursori \]](#control-panelcursors-section)
     -   [\[Pannello di controllo \\ Desktop \]](#control-paneldesktop-section)
     -   [\[Sezione \] Presentazione](#slideshow-section)
     -   [\[Sezione \] Metriche](#metrics-section)
@@ -71,7 +71,7 @@ La prima parte della \[ sezione Theme contiene i due elementi \] seguenti:
 
  
 
-Il resto della sezione Tema specifica icone personalizzate per le funzionalità desktop, ad esempio \[ \] Computer, Documenti, Rete e Cestino. Se non si specificano icone desktop personalizzate, sul desktop vengono visualizzate le icone del desktop predefinite del sistema.
+Il resto della sezione Tema specifica icone personalizzate per le funzionalità \[ \] desktop come Computer, Documenti, Rete e Cestino. Se non si specificano icone desktop personalizzate, sul desktop vengono visualizzate le icone del desktop predefinite del sistema.
 
 Di seguito sono riportati due esempi di come un file con estensione theme imposta **l'icona Computer.**
 
@@ -123,7 +123,7 @@ Empty=%SystemRoot%\System32\imageres.dll,-55
 
  
 
-Il colore degli elementi, ad esempio barre di scorrimento, testo e pulsanti, è personalizzabile. Il file con estensione theme specifica i valori RGB da modificare per questi elementi. I valori eseguono l'override dei valori predefiniti dello stile di visualizzazione e vengono usati quando il tema è basato su Windows classico, Windows 7 Basic o su Contrasto elevato tema.
+Il colore degli elementi, ad esempio barre di scorrimento, testo e pulsanti, è personalizzabile. Il file con estensione theme specifica i valori RGB da modificare per questi elementi. I valori eseguono l'override dei valori predefiniti dello stile di visualizzazione e vengono usati quando il tema è basato su Windows classico, Windows 7 Basic o Contrasto elevato tema.
 
 Di seguito è riportato un esempio di come vengono impostati i colori.
 
@@ -161,7 +161,7 @@ GradientInactiveTitle=192 192 192
 
 
 
-### <a name="control-panelcursors-section"></a>\[Pannello di controllo \\ cursori \]
+### <a name="control-panelcursors-section"></a>\[Pannello di controllo \\ Cursori \]
 
 > [!Note]  
 > Questa sezione è facoltativa. Se non si include questa sezione nel file con estensione theme, il sistema usa i cursori predefiniti.
@@ -228,7 +228,7 @@ WallpaperStyle=2
 **Windows 7 e versioni successive.**
 
 > [!Note]  
-> Questa sezione è facoltativa. Se non si include questa sezione nel file con estensione theme, il sistema usa l'immagine di sfondo del desktop specificata nella Pannello di controllo \[ \\ \] Desktop. Se si include questa sezione, è necessario specificare qui le impostazioni della presentazione.
+> Questa sezione è facoltativa. Se non si include questa sezione nel file con estensione theme, il sistema usa l'immagine di sfondo del desktop specificata nella sezione Pannello di controllo \[ \\ \] Desktop. Se si include questa sezione, è necessario specificare qui le impostazioni della presentazione.
 
  
 
@@ -241,9 +241,9 @@ Lo sfondo del tema può essere una presentazione di immagini archiviate in local
 |-----------|-------------|
 | Interval=number of milliseconds | Obbligatorio. Interval è un numero che determina la frequenza di modifica dello sfondo. Viene misurato in millisecondi. | 
 | Shuffle=0 o 1 | Obbligatorio. Shuffle identifica se lo sfondo è in ordine casuale.<br /> 0 = Disabilitato<br /> 1 = Abilitato<br /> | 
-| RSSFeed=URL al feed RSS | Obbligatorio se imagesRootPath non è specificato. RSSFeed specifica un feed RSS da usare come presentazione di sfondo. Per il funzionamento del feed, è necessario fare riferimento a immagini ad alta risoluzione che rispettano lo standard "enclosure" usato dalla Windows <a href="/previous-versions/windows/desktop/ms684701(v=vs.85)">RSS.</a> A causa di questa limitazione, i file con estensione theme che includono un feed RSS devono essere creati manualmente. <br /><blockquote>[!Note]<br />Non è possibile specificare sia RSSFeed che ImagesRootPath.</blockquote><br /><br /> | 
-| ImagesRootPath=percorso della cartella dell'immagine | Obbligatorio se RSSFeed non è specificato. ImagesRootPath specifica il percorso di un set di immagini da usare come presentazione di sfondo. Le immagini nelle sottocartelle non sono incluse nella presentazione.<br /> ImagesRootPath supporta le sostituzioni delle variabili di ambiente nel percorso.<br /><blockquote>[!Note]<br />Non è possibile specificare sia RSSFeed che ImagesRootPath.</blockquote><br /><br /> | 
-| Item<em>N</em>Path=path(s) to specific image(s) | Da usare con ImagesRootPath. <br /> Item N Path (Percorso elemento<em>N)</em>specifica i percorsi di immagini specifiche, in modo che sia possibile limitare la presentazione a immagini specifiche anziché a tutte le immagini in una cartella. Se non viene specificato alcun percorso, tutte le immagini nel percorso ImagesRootPath vengono usate nella presentazione, incluse le immagini aggiunte dopo la creazione e l'installazione del tema.<br /> Il<em>percorso dell'elemento N</em>supporta le sostituzioni delle variabili di ambiente nel percorso. <em>N</em> è 0, 1, 2 e così via. <br /> | 
+| RSSFeed=URL al feed RSS | Obbligatorio se imagesRootPath non è specificato. RSSFeed specifica un feed RSS da usare come presentazione in background. Per il funzionamento del feed, è necessario fare riferimento a immagini ad alta risoluzione che rispettano lo standard "enclosure" usato dal Windows <a href="/previous-versions/windows/desktop/ms684701(v=vs.85)">RSS Platform</a>. A causa di questa limitazione, i file con estensione theme che includono un feed RSS devono essere creati manualmente. <br /><blockquote>[!Note]<br />Non è possibile specificare sia RSSFeed che ImagesRootPath.</blockquote><br /><br /> | 
+| ImagesRootPath=percorso della cartella di immagini | Obbligatorio se RSSFeed non è specificato. ImagesRootPath specifica un percorso di un set di immagini da usare come presentazione di sfondo. Le immagini nelle sottocartelle non sono incluse nella presentazione.<br /> ImagesRootPath supporta le sostituzioni delle variabili di ambiente nel percorso.<br /><blockquote>[!Note]<br />Non è possibile specificare sia RSSFeed che ImagesRootPath.</blockquote><br /><br /> | 
+| Elemento<em>N</em>Path=path(s) a immagini specifiche | Per l'uso con ImagesRootPath. <br /> Il<em>percorso N</em>dell'elemento specifica i percorsi di immagini specifiche, in modo che sia possibile limitare la presentazione a immagini specifiche anziché a tutte le immagini in una cartella. Se non viene specificato alcun percorso, nella presentazione vengono usate tutte le immagini nel percorso ImagesRootPath, incluse le immagini aggiunte dopo la creazione e l'installazione del tema.<br /> <em>L'elemento N</em>Path supporta le sostituzioni di variabili di ambiente nel percorso. <em>N</em> è 0, 1, 2 e così via. <br /> | 
 
 
 
@@ -278,9 +278,9 @@ Item2Path=%ProgramFiles%\fabrikam\wallpaper\river.jpg
 L'esempio seguente è un modello per un file con estensione theme che crea una presentazione di sfondo del desktop usando le immagini di un feed RSS. Seguire questa procedura per personalizzare il modello:
 
 1.  Copiare l'esempio seguente e incollarlo in un editor di testo.
-2.  Sostituire {themename} con il nome che si vuole visualizzare nella raccolta Di Pannello di controllo temi.
+2.  Sostituire {themename} con il nome che si vuole visualizzare nella raccolta Pannello di controllo temi.
 3.  Sostituire {rssfeedurl} con il percorso completo di un feed RSS compatibile.
-4.  Salvare le modifiche come file con l'estensione "theme".
+4.  Salvare le modifiche come file con l'estensione ".theme".
 
 
 ```
@@ -370,7 +370,7 @@ NonclientMetrics=84 1 0 0 1 0 0 0 16 0 0 0 16 0 0 0 18
 ### <a name="visual-styles-section"></a>\[Sezione Stili di \] visualizzazione
 
 > [!Note]  
-> Questa sezione è obbligatoria Se non si include questa sezione nel file con estensione theme, il sistema ignora il tema e non visualizza il tema in Pannello di controllo.
+> Questa sezione è obbligatoria Se non si include questa sezione nel file con estensione theme, il sistema ignora il tema e non visualizza il tema Pannello di controllo.
 
  
 
@@ -386,11 +386,11 @@ Size=NormalSize
 
 
 
-L'aggiunta di un elemento Path a un file con estensione msstyles è facoltativa. Se si specifica un percorso, è necessario rimuovere le sezioni relative alle metriche e ai colori dal file con estensione theme. Quando queste sezioni vengono rimosse, i colori, i tipi di carattere e le dimensioni di un tema provengono dal file con estensione msstyles e corrispondono alla finalità dell'autore .msstyles. Se non si rimuovono le sezioni relative alle metriche e ai colori, Windows o alle applicazioni possono verificarsi problemi di disegno.
+L'aggiunta di un elemento Path a un file con estensione msstyles è facoltativa. Se si specifica un percorso, è necessario rimuovere le sezioni relative alle metriche e ai colori dal file con estensione theme. Quando queste sezioni vengono rimosse, i colori, i tipi di carattere e le dimensioni di un tema provengono dal file msstyles e corrispondono alla finalità dell'autore .msstyles. La mancata rimozione delle sezioni di metrica e colore può causare problemi di disegno Windows o delle applicazioni.
 
-**Windows Vista/Windows 7:** Quando il percorso punta a Aero.msstyles, è possibile specificare il Colore cristallo desiderato, come illustrato nell'esempio seguente.
+**Windows Vista/Windows 7:** Quando il percorso punta a Aero.msstyles, è possibile specificare il colore di cristallo desiderato, come illustrato nell'esempio seguente.
 
-**Windows 7:** Quando il percorso punta a Alfa.msstyles, è anche possibile specificare il valore di Trasparenza desiderato, come illustrato nell'esempio seguente.
+**Windows 7:** Quando il percorso punta a Aero.msstyles, è anche possibile specificare il valore di Trasparenza desiderato, come illustrato nell'esempio seguente.
 
 
 ```
@@ -404,7 +404,7 @@ Transparency=1
 
 
 
-Se i valori ColorizationColor e Transparency corrispondono esattamente a un colore di sistema, il Pannello di controllo personalizzazione visualizza il nome del sistema per il colore. In caso contrario, il colore viene etichettato come "Personalizzato".
+Se i valori ColorizationColor e Transparency corrispondono esattamente a un colore di sistema, l'Pannello di controllo personalizzazioni visualizza il nome di sistema per il colore. In caso contrario, il colore viene etichettato come "Personalizzato".
 
 Di seguito viene illustrata una sezione VisualStyles per il tema Windows 7 Basic.
 
@@ -421,7 +421,7 @@ Transparency=1
 
 
 
-Di seguito è illustrata una sezione VisualStyles per il Windows classico.
+Di seguito viene illustrata una sezione VisualStyles per il tema Windows classico.
 
 
 ```
@@ -434,7 +434,7 @@ Transparency=0
 
 
 
-Di seguito viene illustrata una sezione VisualStyles per un Contrasto elevato nero.
+Di seguito viene illustrata una sezione VisualStyles per un tema Contrasto elevato nero.
 
 
 ```
@@ -447,14 +447,14 @@ Transparency=0
 
 
 
-### <a name="sounds-and-appevents-sections-sounds"></a>\[Sezioni \] Sounds \[ e AppEvents \] (Suoni)
+### <a name="sounds-and-appevents-sections-sounds"></a>\[Sezioni \] Sounds e \[ AppEvents \] (Sounds)
 
 > [!Note]  
 > Questa sezione è facoltativa. Se non si include questa sezione nel file con estensione theme, il sistema usa le impostazioni audio predefinite.
 
  
 
-L'utente può selezionare **l'icona** Suono Pannello di controllo per associare i suoni agli eventi che si verificano nelle applicazioni. Ad esempio, un file wav può essere riprodotto all'apertura di un'applicazione. Un file con estensione theme può specificare file wav per sostituire quelli predefiniti. L'esempio seguente illustra come farlo.
+L'utente può selezionare **l'icona** Audio Pannello di controllo per associare i suoni agli eventi che si verificano nelle applicazioni. Ad esempio, un file wav può essere riprodotto all'apertura di un'applicazione. Un file con estensione theme può specificare file wav per sostituire quelli predefiniti. L'esempio seguente illustra come farlo.
 
 
 ```
@@ -479,7 +479,7 @@ DefaultValue=%WinDir%\media\ding.wav
 
 
 
-**Windows 7 e versioni successive:** È possibile specificare un nome di schema audio anziché elencare separatamente ogni suono.
+**Windows 7 e versioni successive:** È possibile specificare un nome di schema audio invece di elencare separatamente ogni suono.
 
 
 ```
@@ -490,21 +490,21 @@ SchemeName=@%SystemRoot%\System32\mmres.dll,-819
 
 
 
-Il valore SchemeName specifica il nome dello schema audio o il nome della combinazione audio localizzata, come illustrato nell'esempio precedente.
+Il valore SchemeName specifica il nome dello schema audio o il nome dello schema audio localizzato, come illustrato nell'esempio precedente.
 
-### <a name="boot-section"></a>\[Sezione \] di avvio
+### <a name="boot-section"></a>\[Sezione \] Di avvio
 
 > [!Note]  
-> **Gli screen saver sono deprecati nell'aggiornamento Windows 10'anniversario e oltre.**
+> **Gli screen saver sono deprecati nell'aggiornamento Windows 10'anniversario e non solo.**
 
  
 
 > [!Note]  
-> Questa sezione è facoltativa. Se non si include questa sezione nel file con estensione theme, non screen saver viene usata alcuna sezione.
+> Questa sezione è facoltativa. Se non si include questa sezione nel file con estensione theme, non viene usata alcuna screen saver.
 
  
 
-Nel file con estensione theme è possibile specificare la screen saver da Windows da usare. Nell'esempio riportato di seguito viene illustrata questa situazione.
+Nel file con estensione theme è possibile specificare il screen saver per Windows da usare. Nell'esempio riportato di seguito viene illustrata questa situazione.
 
 
 ```
@@ -517,11 +517,11 @@ SCRNSAVE.EXE=%WinDir%\System32\bubbles.scr
 ### <a name="masterthemeselector-section"></a>\[Sezione MasterThemeSelector \]
 
 > [!Note]  
-> Questa sezione è obbligatoria Se non si include questa sezione nel file con estensione theme, il sistema ignora il tema e non visualizza il tema in Pannello di controllo.
+> Questa sezione è obbligatoria Se non si include questa sezione nel file con estensione theme, il sistema ignora il tema e non visualizza il tema Pannello di controllo.
 
  
 
-La sezione del selettore del tema master del file con estensione theme deve essere sempre inclusa come tag che indica che il file è valido. Non è possibile scegliere i valori per questo parametro. Di seguito viene illustrato questo.
+La sezione del selettore del tema master del file con estensione theme deve sempre essere inclusa come tag che indica che il file è valido. Non è possibile scegliere i valori per questo parametro. Di seguito è illustrato questo argomento.
 
 
 ```
@@ -531,9 +531,9 @@ MTSM=DABJDKT
 
 
 
-## <a name="example-of-a-theme-file"></a>Esempio di file di tema
+## <a name="example-of-a-theme-file"></a>Esempio di un file di tema
 
-L'esempio seguente mostra un file con estensione theme completo.
+L'esempio seguente illustra un file con estensione theme completo.
 
 
 ```
@@ -667,15 +667,15 @@ Transparency=1
 
 
 
-## <a name="installing-theme-files"></a>Installazione dei file dei temi
+## <a name="installing-theme-files"></a>Installazione dei file del tema
 
-Quando Windows viene inizializzata, il sistema operativo enumera le sottodirectory di primo livello di %WinDir% Resources per identificare \\ \\ i temi disponibili. I file dei temi predefiniti del sistema si trovano in %WinDir% \\ Resources \\ Themes. I file dei temi utente vengono archiviati in %WinDir% \\ Users \\ <username> \\ AppData \\ Local Microsoft Windows \\ \\ \\ Themes.
+Quando Windows viene inizializzata, il sistema operativo enumera le sottodirectory di primo livello di %WinDir% \\ Resources per identificare i temi \\ disponibili. I file del tema predefiniti di sistema si trovano in %WinDir% \\ Resources \\ Themes. I file del tema utente vengono archiviati in %WinDir% \\ Users \\ &lt; username &gt; \\ AppData \\ Local Microsoft Windows \\ \\ \\ Themes.
 
-Un file con estensione theme ha associazioni di file. Pertanto, le applicazioni del programma di installazione dei temi  possono chiamare [**ShellExecute**](/windows/desktop/api/shellapi/nf-shellapi-shellexecutea) in un file con estensione theme per aprire la finestra Personalizzazione Pannello di controllo al tema specificato.
+Un file con estensione theme ha associazioni di file. Di conseguenza, le applicazioni del programma di installazione del  tema possono chiamare [**ShellExecute**](/windows/desktop/api/shellapi/nf-shellapi-shellexecutea) in un file con estensione theme per aprire la finestra Personalizzazione Pannello di controllo al tema specificato.
 
-## <a name="theme-packs"></a>Theme Pack
+## <a name="theme-packs"></a>Pacchetti di temi
 
-**Windows 7 e versioni successive.** Un pacchetto di temi è un file .cab che contiene non solo il file con estensione theme, ma anche i file necessari per implementare il tema in un altro computer, ad esempio file audio e immagini. Gli utenti possono creare pacchetti di temi tramite l'Pannello di controllo.
+**Windows 7 e versioni successive.** Un theme pack è un file .cab che contiene non solo il file con estensione theme, ma anche i file necessari per implementare il tema in un altro computer, ad esempio file audio e immagini. Gli utenti possono creare pacchetti di temi tramite il Pannello di controllo.
 
 I tipi di file supportati includono:
 

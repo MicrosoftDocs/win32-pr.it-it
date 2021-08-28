@@ -1,16 +1,16 @@
 ---
 title: Tipo di controllo ProgressBar
-description: In questo argomento vengono fornite informazioni sul supporto di automazione interfaccia utente Microsoft per il tipo di controllo ProgressBar.
+description: Questo argomento fornisce informazioni sul supporto di Microsoft Automazione interfaccia utente per il tipo di controllo ProgressBar.
 ms.assetid: 2ea0c1f1-1a0a-4360-bdcb-8edc13cc3c31
 keywords:
-- Automazione interfaccia utente, supporto per il tipo di controllo ProgressBar
+- Automazione interfaccia utente,supporto per il tipo di controllo ProgressBar
 - Automazione interfaccia utente, tipo di controllo ProgressBar
 - Automazione interfaccia utente, struttura ad albero per il tipo di controllo ProgressBar
-- Automazione interfaccia utente, proprietà per il tipo di controllo ProgressBar
-- Automazione interfaccia utente, pattern di controllo per il tipo di controllo ProgressBar
-- Automazione interfaccia utente, eventi per il tipo di controllo ProgressBar
+- Automazione interfaccia utente,proprietà per il tipo di controllo ProgressBar
+- Automazione interfaccia utente,pattern di controllo per il tipo di controllo ProgressBar
+- Automazione interfaccia utente,eventi per il tipo di controllo ProgressBar
 - strutture ad albero, tipo di controllo ProgressBar
-- Proprietà, tipo di controllo ProgressBar
+- proprietà, tipo di controllo ProgressBar
 - pattern di controllo, tipo di controllo ProgressBar
 - eventi, tipo di controllo ProgressBar
 - supporto per il tipo di controllo ProgressBar
@@ -21,20 +21,20 @@ keywords:
 - tipi di controllo, ProgressBar
 ms.topic: article
 ms.date: 12/04/2019
-ms.openlocfilehash: 98be22a4a3d3b99e113d3c0d1402f2c45ee25550
-ms.sourcegitcommit: 6f7576b297d54c0b8f9c79e02c912b83041aa4fb
+ms.openlocfilehash: 5dc5dd22abcaca70ae9ce86717db6055642a21ce
+ms.sourcegitcommit: 9b5faa61c38b2d0c432b7f2dbee8c127b0e28a7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/06/2019
-ms.locfileid: "104117265"
+ms.lasthandoff: 08/19/2021
+ms.locfileid: "122472299"
 ---
 # <a name="progressbar-control-type"></a>Tipo di controllo ProgressBar
 
-In questo argomento vengono fornite informazioni sul supporto di automazione interfaccia utente Microsoft per il tipo di controllo **ProgressBar** .
+In questo argomento vengono fornite informazioni sul supporto Automazione interfaccia utente Microsoft per il **tipo di controllo ProgressBar.**
 
 I controlli indicatore di stato indicano lo stato di avanzamento di un'operazione di lunga durata. Il controllo è costituito da un rettangolo che viene riempito gradualmente con il colore di sistema durante l'esecuzione dell'operazione.
 
-Nelle sezioni seguenti vengono definiti la struttura ad albero, le proprietà, i pattern di controllo e gli eventi di automazione interfaccia utente necessari per il tipo di controllo **ProgressBar** . I requisiti di automazione interfaccia utente si applicano a tutti i controlli indicatore di stato in cui la piattaforma/Framework dell'interfaccia utente integra il supporto di automazione interfaccia utente per i tipi di controllo e i pattern
+Le sezioni seguenti definiscono la struttura ad Automazione interfaccia utente struttura ad albero, le proprietà, i pattern di controllo e gli eventi per il **tipo di controllo ProgressBar.** I Automazione interfaccia utente si applicano a tutti i controlli indicatore di stato in cui il framework o la piattaforma dell'interfaccia utente si integra Automazione interfaccia utente per i tipi di controllo e i pattern di controllo.
 
 In questo argomento sono contenute le sezioni seguenti.
 
@@ -46,95 +46,78 @@ In questo argomento sono contenute le sezioni seguenti.
 
 ## <a name="typical-tree-structure"></a>Struttura ad albero tipica
 
-Nella tabella seguente viene illustrata una tipica visualizzazione del controllo e del contenuto dell'albero di automazione interfaccia utente relativo ai controlli indicatore di stato e viene descritto il possibile contenuto di ogni visualizzazione. Per altre informazioni sull'albero di automazione interfaccia utente, vedere [Cenni preliminari sull'albero di automazione interfaccia utente](uiauto-treeoverview.md).
+La tabella seguente illustra un controllo tipico e una visualizzazione contenuto dell'albero Automazione interfaccia utente relativo ai controlli indicatore di stato e descrive gli elementi che possono essere contenuti in ogni visualizzazione. Per altre informazioni sull'albero Automazione interfaccia utente, vedere Automazione interfaccia utente [Tree Overview](uiauto-treeoverview.md).
 
-<table>
-<colgroup>
-<col style="width: 50%" />
-<col style="width: 50%" />
-</colgroup>
-<thead>
-<tr class="header">
-<th>Visualizzazione controlli</th>
-<th>Visualizzazione contenuto</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td><ul>
-<li>ProgressBar</li>
-</ul></td>
-<td><ul>
-<li>ProgressBar</li>
-</ul></td>
-</tr>
-</tbody>
-</table>
 
-I controlli indicatore di stato non hanno elementi figlio nel controllo o nella visualizzazione contenuto dell'albero di automazione interfaccia utente.
+| Visualizzazione controlli | Visualizzazione contenuto | 
+|--------------|--------------|
+| <ul><li>ProgressBar</li></ul> | <ul><li>ProgressBar</li></ul> | 
+
+
+I controlli indicatore di stato non hanno elementi figlio nella visualizzazione controlli o contenuto dell'Automazione interfaccia utente albero.
 
 ## <a name="relevant-properties"></a>Proprietà rilevanti
 
-La tabella seguente elenca le proprietà di automazione interfaccia utente il cui valore o la cui definizione è particolarmente rilevante per gli indicatori di stato. Per altre informazioni sulle proprietà di automazione interfaccia utente, vedere [recupero di proprietà da elementi di automazione interfaccia utente](uiauto-propertiesforclients.md).
+Nella tabella seguente sono elencate le Automazione interfaccia utente il cui valore o la cui definizione è particolarmente rilevante per gli barre di stato. Per altre informazioni sulle Automazione interfaccia utente, vedere [Recupero di proprietà da Automazione interfaccia utente elementi](uiauto-propertiesforclients.md).
 
-| Proprietà di automazione interfaccia utente                                                                                              | Valore           | Note                                                                                                                                                                                                |
+| Proprietà di automazione interfaccia utente                                                                                              | valore           | Note                                                                                                                                                                                                |
 |---------------------------------------------------------------------------------------------------------------------|-----------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| [**\_AUTOMATIONIDPROPERTYID UIA**](uiauto-automation-element-propids.md)                 | Vedere le note.      | Il valore di questa proprietà deve essere univoco tra tutti gli elementi peer nella visualizzazione non elaborata della struttura ad albero di automazione interfaccia utente.                                                                                         |
-| [**\_BOUNDINGRECTANGLEPROPERTYID UIA**](uiauto-automation-element-propids.md)       | Vedere le note.      | Il rettangolo più esterno che contiene l'intero controllo.                                                                                                                                             |
-| [**\_CLICKABLEPOINTPROPERTYID UIA**](uiauto-automation-element-propids.md)             | Vedere le note.      | Supportata se è presente un rettangolo di delimitazione. Se non tutti i punti all'interno del rettangolo di delimitazione sono selezionabili e l'elemento esegue un hit testing specializzato, eseguire l'override e fornire un punto selezionabile. |
-| [**\_CONTROLTYPEPROPERTYID UIA**](uiauto-automation-element-propids.md)                   | **ProgressBar** |                                                                                                                                                                                                      |
-| [**\_ISCONTENTELEMENTPROPERTYID UIA**](uiauto-automation-element-propids.md)         | **TRUE**        | Il controllo indicatore di stato viene sempre incluso nella visualizzazione contenuto dell'albero di automazione interfaccia utente.                                                                                                           |
-| [**\_ISCONTROLELEMENTPROPERTYID UIA**](uiauto-automation-element-propids.md)         | **TRUE**        | Il controllo indicatore di stato viene sempre incluso nella visualizzazione controlli dell'albero di automazione interfaccia utente.                                                                                                           |
-| [**\_ISKEYBOARDFOCUSABLEPROPERTYID UIA**](uiauto-automation-element-propids.md)   | Vedere le note.      | Se il controllo può ricevere lo stato attivo, deve supportare questa proprietà.                                                                                                                            |
-| [**\_LABELEDBYPROPERTYID UIA**](uiauto-automation-element-propids.md)                       | Vedere le note.      | Se è presente un'etichetta di testo statico, questa proprietà deve esporre un riferimento a tale controllo.                                                                                                              |
-| [**\_LOCALIZEDCONTROLTYPEPROPERTYID UIA**](uiauto-automation-element-propids.md) | Vedere le note.      | Stringa localizzata corrispondente al tipo di controllo **ProgressBar** . Il valore predefinito è "indicatore di stato" per en-US o inglese (Stati Uniti).                                                        |
-| [**\_NAMEPROPERTYID UIA**](uiauto-automation-element-propids.md)                                 | Vedere le note.      | Il controllo indicatore di stato in genere ricava il proprio nome da un'etichetta di testo statico. Se non è presente alcuna etichetta di testo statico, lo sviluppatore dell'applicazione deve esporre un valore per la proprietà Name.                  |
+| [**UIA \_ AutomationIdPropertyId**](uiauto-automation-element-propids.md)                 | Vedere le note.      | Il valore di questa proprietà deve essere univoco tra tutti gli elementi peer nella visualizzazione non elaborata dell'Automazione interfaccia utente albero.                                                                                         |
+| [**UIA \_ BoundingRectanglePropertyId**](uiauto-automation-element-propids.md)       | Vedere le note.      | Il rettangolo più esterno che contiene l'intero controllo.                                                                                                                                             |
+| [**UIA \_ ClickablePointPropertyId**](uiauto-automation-element-propids.md)             | Vedere le note.      | Supportata se è presente un rettangolo di delimitazione. Se non tutti i punti all'interno del rettangolo di delimitazione sono selezionabili e l'elemento esegue hit testing specializzati, eseguire l'override e fornire un punto selezionabile. |
+| [**UIA \_ ControlTypePropertyId**](uiauto-automation-element-propids.md)                   | **ProgressBar** |                                                                                                                                                                                                      |
+| [**\_IsContentElementPropertyId dell'interfaccia utente**](uiauto-automation-element-propids.md)         | **TRUE**        | Il controllo indicatore di stato è sempre incluso nella visualizzazione contenuto dell'Automazione interfaccia utente albero.                                                                                                           |
+| [**UIA \_ IsControlElementPropertyId**](uiauto-automation-element-propids.md)         | **TRUE**        | Il controllo indicatore di stato è sempre incluso nella visualizzazione controlli dell'Automazione interfaccia utente albero.                                                                                                           |
+| [**UIA \_ IsKeyboardFocusablePropertyId**](uiauto-automation-element-propids.md)   | Vedere le note.      | Se il controllo può ricevere lo stato attivo, deve supportare questa proprietà.                                                                                                                            |
+| [**UIA \_ LabeledByPropertyId**](uiauto-automation-element-propids.md)                       | Vedere le note.      | Se è presente un'etichetta di testo statico, questa proprietà deve esporre un riferimento a tale controllo.                                                                                                              |
+| [**UIA \_ LocalizedControlTypePropertyId**](uiauto-automation-element-propids.md) | Vedere le note.      | Stringa localizzata corrispondente al **tipo di controllo ProgressBar.** Il valore predefinito è "progress bar" per en-US o English (Stati Uniti).                                                        |
+| [**UIA \_ NamePropertyId**](uiauto-automation-element-propids.md)                                 | Vedere le note.      | Il controllo indicatore di stato in genere ricava il proprio nome da un'etichetta di testo statico. Se non è presente alcuna etichetta di testo statico, lo sviluppatore dell'applicazione deve esporre un valore per la proprietà Name.                  |
 
 
 
- 
+ 
 
 ## <a name="required-control-patterns"></a>Pattern di controllo obbligatori
 
-La tabella seguente elenca i pattern di controllo di automazione interfaccia utente che devono essere supportati dai controlli indicatore di stato. Per altre informazioni sui pattern di controllo, vedere [UI Automation Control Patterns Overview](uiauto-controlpatternsoverview.md).
+Nella tabella seguente sono elencati i Automazione interfaccia utente che devono essere supportati dai controlli indicatore di stato. Per altre informazioni sui pattern di controllo, vedere [UI Automation Control Patterns Overview](uiauto-controlpatternsoverview.md).
 
 
 
 | Pattern di controllo/proprietà del pattern                              | Supporto/valore | Note                                                                                                                                      |
 |---------------------------------------------------------------|---------------|--------------------------------------------------------------------------------------------------------------------------------------------|
-| [**IRangeValueProvider**](/windows/desktop/api/UIAutomationCore/nn-uiautomationcore-irangevalueprovider)     | Dipende da       | I controlli indicatore di stato che accettano un intervallo numerico devono implementare il pattern di controllo [RangeValue](uiauto-implementingrangevalue.md) .        |
-| [**Minima**](/windows/desktop/api/UIAutomationCore/nf-uiautomationcore-irangevalueprovider-get_minimum)         | Dipende da           | Il valore di questa proprietà è il valore minimo su cui è possibile impostare il controllo. Questo valore deve essere minore di [**Maximum**](/windows/desktop/api/UIAutomationCore/nf-uiautomationcore-irangevalueprovider-get_maximum).                                                      |
-| [**Massimo**](/windows/desktop/api/UIAutomationCore/nf-uiautomationcore-irangevalueprovider-get_maximum)         | Dipende da         | Il valore di questa proprietà è il valore massimo su cui è possibile impostare il controllo. Questo valore deve essere maggiore del valore [**minimo**](/windows/desktop/api/UIAutomationCore/nf-uiautomationcore-irangevalueprovider-get_minimum).                                                        |
-| [**SmallChange**](/windows/desktop/api/UIAutomationCore/nf-uiautomationcore-irangevalueprovider-get_smallchange) | **NaN**       | Questa proprietà non è necessaria perché i controlli indicatore di stato sono di sola lettura.                                                                 |
-| [**LargeChange**](/windows/desktop/api/UIAutomationCore/nf-uiautomationcore-irangevalueprovider-get_largechange) | **NaN**       | Questa proprietà non è necessaria perché i controlli indicatore di stato sono di sola lettura.                                                                 |
-| [**IValueProvider**](/windows/desktop/api/UIAutomationCore/nn-uiautomationcore-ivalueprovider)               | Dipende da       | I controlli indicatore di stato che forniscono un'indicazione testuale dello stato di avanzamento devono implementare il pattern di controllo [value](uiauto-implementingvalue.md) . |
-| [**IsReadOnly**](/windows/desktop/api/UIAutomationCore/nf-uiautomationcore-ivalueprovider-get_isreadonly)        | **TRUE**      | Il valore di questa proprietà è sempre **true**.                                                                                            |
-| [**Valore**](/windows/desktop/api/UIAutomationCore/nf-uiautomationcore-ivalueprovider-get_value)                  | Vedere le note.    | Questa proprietà espone lo stato di avanzamento in formato testuale di un controllo indicatore di stato.                                                                          |
+| [**IRangeValueProvider**](/windows/desktop/api/UIAutomationCore/nn-uiautomationcore-irangevalueprovider)     | Dipende da       | I controlli indicatore di stato che accettano un intervallo numerico devono implementare il [pattern di controllo RangeValue.](uiauto-implementingrangevalue.md)        |
+| [**Minimo**](/windows/desktop/api/UIAutomationCore/nf-uiautomationcore-irangevalueprovider-get_minimum)         | Dipende da           | Il valore di questa proprietà è il valore minimo su cui è possibile impostare il controllo. Questo valore deve essere minore di [**Maximum.**](/windows/desktop/api/UIAutomationCore/nf-uiautomationcore-irangevalueprovider-get_maximum)                                                      |
+| [**Massimo**](/windows/desktop/api/UIAutomationCore/nf-uiautomationcore-irangevalueprovider-get_maximum)         | Dipende da         | Il valore di questa proprietà è il valore massimo su cui è possibile impostare il controllo. Questo valore deve essere maggiore di [**Minimum.**](/windows/desktop/api/UIAutomationCore/nf-uiautomationcore-irangevalueprovider-get_minimum)                                                        |
+| [**Smallchange**](/windows/desktop/api/UIAutomationCore/nf-uiautomationcore-irangevalueprovider-get_smallchange) | **NaN**       | Questa proprietà non è necessaria perché i controlli indicatore di stato sono di sola lettura.                                                                 |
+| [**Largechange**](/windows/desktop/api/UIAutomationCore/nf-uiautomationcore-irangevalueprovider-get_largechange) | **NaN**       | Questa proprietà non è necessaria perché i controlli indicatore di stato sono di sola lettura.                                                                 |
+| [**IValueProvider**](/windows/desktop/api/UIAutomationCore/nn-uiautomationcore-ivalueprovider)               | Dipende da       | I controlli indicatore di stato che forniscono un'indicazione testuale dello stato di avanzamento devono implementare il [pattern di controllo](uiauto-implementingvalue.md) Value. |
+| [**IsReadOnly**](/windows/desktop/api/UIAutomationCore/nf-uiautomationcore-ivalueprovider-get_isreadonly)        | **TRUE**      | Il valore di questa proprietà è sempre **TRUE.**                                                                                            |
+| [**valore**](/windows/desktop/api/UIAutomationCore/nf-uiautomationcore-ivalueprovider-get_value)                  | Vedere le note.    | Questa proprietà espone lo stato di avanzamento in formato testuale di un controllo indicatore di stato.                                                                          |
 
 
 
- 
+ 
 
 ## <a name="required-events"></a>Eventi obbligatori
 
-La tabella seguente elenca gli eventi di automazione interfaccia utente che sono necessari per supportare le barre di stato. Per altre informazioni sugli eventi, vedere [UI Automation Events Overview](uiauto-eventsoverview.md).
+Nella tabella seguente sono elencati gli Automazione interfaccia utente che gli barre di stato devono supportare. Per altre informazioni sugli eventi, vedere [UI Automation Events Overview](uiauto-eventsoverview.md).
 
 
 
-| Evento di automazione interfaccia utente                                                                                                                   | Note                                                                                                                      |
+| Automazione interfaccia utente eventi                                                                                                                   | Note                                                                                                                      |
 |---------------------------------------------------------------------------------------------------------------------------------------|----------------------------------------------------------------------------------------------------------------------------|
-| [**\_AUTOMATIONFOCUSCHANGEDEVENTID UIA**](uiauto-event-ids.md)                                      |                                                                                                                            |
-| [**UIA \_**](uiauto-automation-element-propids.md) Evento di modifica della proprietà BoundingRectanglePropertyId. |                                                                                                                            |
-| [**UIA \_**](uiauto-automation-element-propids.md) Evento di modifica della proprietà IsEnabledPropertyId.                 | Se il controllo supporta la proprietà [**IsEnabled**](uiauto-automation-element-propids.md) , deve supportare questo evento.   |
-| [**UIA \_**](uiauto-automation-element-propids.md) Evento di modifica della proprietà IsOffscreenPropertyId.             | Se il controllo supporta la proprietà [**IsOffscreen**](uiauto-automation-element-propids.md) , deve supportare questo evento. |
-| [**UIA \_**](uiauto-automation-element-propids.md) Evento di modifica della proprietà NamePropertyId.                           |                                                                                                                            |
-| [**\_STRUCTURECHANGEDEVENTID UIA**](uiauto-event-ids.md)                                                  |                                                                                                                            |
-| [**UIA \_**](uiauto-control-pattern-propids.md) Evento di modifica della proprietà RangeValueValuePropertyId.        | Se il controllo supporta il pattern di controllo [RangeValue](uiauto-implementingrangevalue.md) , deve supportare questo evento.   |
-| [**UIA \_**](uiauto-control-pattern-propids.md) Evento di modifica della proprietà ValueValuePropertyId.                  | Se il controllo supporta il pattern di controllo [value](uiauto-implementingvalue.md) , deve supportare questo evento.             |
+| [**UIA \_ AutomationFocusChangedEventId**](uiauto-event-ids.md)                                      |                                                                                                                            |
+| [**Interfaccia \_ utente Evento di modifica della proprietà BoundingRectanglePropertyId.**](uiauto-automation-element-propids.md) |                                                                                                                            |
+| [**Interfaccia \_ utente Evento di modifica della proprietà IsEnabledPropertyId.**](uiauto-automation-element-propids.md)                 | Se il controllo supporta la [**proprietà IsEnabled,**](uiauto-automation-element-propids.md) deve supportare questo evento.   |
+| [**Interfaccia \_ utente Evento di modifica della proprietà IsOffscreenPropertyId.**](uiauto-automation-element-propids.md)             | Se il controllo supporta la [**proprietà IsOffscreen,**](uiauto-automation-element-propids.md) deve supportare questo evento. |
+| [**Interfaccia \_ utente Evento di modifica**](uiauto-automation-element-propids.md) della proprietà NamePropertyId.                           |                                                                                                                            |
+| [**UIA \_ StructureChangedEventId**](uiauto-event-ids.md)                                                  |                                                                                                                            |
+| [**Interfaccia \_ utente Evento di modifica della proprietà RangeValueValuePropertyId.**](uiauto-control-pattern-propids.md)        | Se il controllo supporta il pattern [di controllo RangeValue,](uiauto-implementingrangevalue.md) deve supportare questo evento.   |
+| [**Interfaccia \_ utente Evento di modifica della proprietà ValueValuePropertyId.**](uiauto-control-pattern-propids.md)                  | Se il controllo supporta il pattern [di controllo Value,](uiauto-implementingvalue.md) deve supportare questo evento.             |
 
 
 
- 
+ 
 
 ## <a name="related-topics"></a>Argomenti correlati
 
@@ -149,9 +132,9 @@ La tabella seguente elenca gli eventi di automazione interfaccia utente che sono
 [Cenni preliminari su automazione interfaccia utente](uiauto-uiautomationoverview.md)
 </dt> </dl>
 
- 
+ 
 
- 
+ 
 
 
 

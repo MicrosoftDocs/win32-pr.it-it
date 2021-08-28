@@ -4,12 +4,12 @@ ms.assetid: 12F6E6AE-2776-408c-B9AC-E885BE93C27F
 title: Schema di descrizione della libreria
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 0a6da99820e81c55e5d705c72d4d0509ea271a4a
-ms.sourcegitcommit: 822413efb4a70dd464e5db4d9e8693ef74f8132f
+ms.openlocfilehash: 2bfbaa8401468a6bab79cf4bccc5d7d4cd0ff7bb
+ms.sourcegitcommit: 61a4c522182aa1cacbf5669683d9570a3bf043b2
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 07/09/2021
-ms.locfileid: "113581739"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "122879647"
 ---
 # <a name="library-description-schema"></a>Schema di descrizione della libreria
 
@@ -40,13 +40,13 @@ Lo schema Descrizione libreria è costituito da tre parti principali, descritte 
 
  
 
-I file di libreria Windows 7 vengono archiviati nella cartella nota FOLDERID \_ Libraries. Per impostazione predefinita, la cartella FOLDERID \_ Libraries si trova in %USERPROFILE% \\ AppData Roaming Microsoft Windows \\ \\ \\ \\ Libraries.
+I file di libreria Windows 7 vengono archiviati nella cartella nota FOLDERID \_ Libraries. Per impostazione predefinita, la cartella FOLDERID Libraries si trova \_ in %USERPROFILE% \\ AppData \\ Roaming Microsoft \\ \\ Windows \\ Libraries.
 
 ## <a name="namespace-versioning"></a>Controllo delle versioni dello spazio dei nomi
 
 Le versioni del formato di file di descrizione della libreria ( \* .library-ms) vengono rilevate modificando lo spazio dei nomi . Per Windows 7, il formato di file ha lo spazio dei nomi predefinito seguente: https://schemas.microsoft.com/windows/2009/library .
 
-Le versioni del contenuto della libreria, tuttavia, vengono rilevate usando [<version>](schema-library-version.md) l'elemento in un file di descrizione della libreria specifico.
+Le versioni del contenuto della libreria, tuttavia, vengono rilevate usando [ &lt; l'elemento version &gt; ](schema-library-version.md) in un file di descrizione della libreria specifico.
 
 ## <a name="example-of-a-library-description-file"></a>Esempio di file di descrizione della libreria
 

@@ -1,19 +1,19 @@
 ---
-description: Questa sezione descrive la sintassi delle istruzioni condizionali usate dalla funzione MsiEvaluateCondition e dalle tabelle della sequenza di azioni. Per altre informazioni, vedere Esempi di sintassi delle istruzioni condizionali.
+description: Questa sezione descrive la sintassi delle istruzioni condizionali usate dalla funzione MsiEvaluateCondition e dalle tabelle della sequenza di azioni. Per altre informazioni, vedere Esempi di sintassi di istruzioni condizionali.
 ms.assetid: 6f1657f9-063b-4d57-ad76-95e3dbe25786
-title: Sintassi delle istruzioni condizionali
+title: Sintassi di istruzioni condizionali
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 7dfea7ec31cecbe9c72dee9c660b0e6ee9d07cee2f1818941d036a781c104a93
-ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
+ms.openlocfilehash: f131cf9513d4bf19bb84c5777d1fed1411a682ce
+ms.sourcegitcommit: 61a4c522182aa1cacbf5669683d9570a3bf043b2
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "120077961"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "122886434"
 ---
-# <a name="conditional-statement-syntax"></a>Sintassi delle istruzioni condizionali
+# <a name="conditional-statement-syntax"></a>Sintassi di istruzioni condizionali
 
-Questa sezione descrive la sintassi delle istruzioni condizionali usate dalla funzione [**MsiEvaluateCondition**](/windows/desktop/api/Msiquery/nf-msiquery-msievaluateconditiona) e dalle tabelle della sequenza [di azioni](using-a-sequence-table.md). Per altre informazioni, vedere Esempi [di sintassi delle istruzioni condizionali.](examples-of-conditional-statement-syntax.md)
+Questa sezione descrive la sintassi delle istruzioni condizionali usate dalla funzione [**MsiEvaluateCondition**](/windows/desktop/api/Msiquery/nf-msiquery-msievaluateconditiona) e dalle tabelle della [sequenza di azioni](using-a-sequence-table.md). Per altre informazioni, vedere Esempi [di sintassi di istruzioni condizionali.](examples-of-conditional-statement-syntax.md)
 
 ## <a name="summary-of-conditional-statement-syntax"></a>Riepilogo della sintassi delle istruzioni condizionali
 
@@ -23,7 +23,7 @@ Questa tabella e l'elenco seguente riepilogano la sintassi da usare nelle espres
 
 | Elemento                | Sintassi                                                                                                          |
 |---------------------|-----------------------------------------------------------------------------------------------------------------|
-| Valore               | symbol \| literal \| integer                                                                                    |
+| Valore               | Numero intero \| del valore letterale \| simbolo                                                                                    |
 | operatore di confronto | < \| > \| <= \| >= \| = \| <>                                                                 |
 | Termine                | value \| value comparison-operator value \| ( expression )\|                                                    |
 | Fattore booleano      | termine \| **NOT** termine                                                                                            |
@@ -36,21 +36,21 @@ Questa tabella e l'elenco seguente riepilogano la sintassi da usare nelle espres
  
 
 -   Per i nomi e i valori dei simboli viene fatto distinzione tra maiuscole e minuscole.
--   I nomi delle variabili di ambiente non supportano la distinzione tra maiuscole e minuscole.
+-   Per i nomi delle variabili di ambiente non viene fatto distinzione tra maiuscole e minuscole.
 -   Il testo letterale deve essere racchiuso tra virgolette ("text").
     > [!Note]  
-    > Il testo letterale contenente virgolette non può essere usato nelle istruzioni condizionali perché non è presente alcun carattere di escape per le virgolette all'interno del testo letterale. Per eseguire un confronto con testo letterale contenente virgolette, il testo letterale deve essere inserito in una proprietà . Ad esempio, per verificare che la proprietà SERVERNAME non contenga virgolette, definire una proprietà denominata QUOTES nella tabella [Property](property-table.md) con il valore " e modificare la condizione in NOT SERVERNAME><QUOTES.
+    > Il testo letterale contenente le virgolette non può essere usato nelle istruzioni condizionali perché non è presente alcun carattere di escape per le virgolette all'interno del testo letterale. Per eseguire un confronto con il testo letterale contenente virgolette, il testo letterale deve essere inserito in una proprietà . Ad esempio, per verificare che la proprietà SERVERNAME non contenga virgolette, definire una proprietà denominata QUOTES nella tabella [Property](property-table.md) con il valore " e modificare la condizione in NOT SERVERNAME><QUOTES.
 
      
 
 -   I valori di proprietà inesistenti vengono considerati come stringhe vuote.
 -   I valori numerici a virgola mobile non sono supportati.
--   Gli operatori e la precedenza sono gli stessi dei linguaggi BASIC SQL base.
+-   Gli operatori e la precedenza sono gli stessi dei linguaggi BASIC e SQL.
 -   Gli operatori aritmetici non sono supportati.
 -   Le parentesi possono essere usate per eseguire l'override della precedenza degli operatori.
--   Gli operatori non supportano la distinzione tra maiuscole e minuscole.
+-   Per gli operatori non viene fatto distinzione tra maiuscole e minuscole.
 -   Per i confronti tra stringhe, una tilde "~" preceduta dall'operatore esegue un confronto senza distinzione tra maiuscole e minuscole.
--   Il confronto di un intero con una stringa o un valore di proprietà che non può essere convertito in un integer è sempre **msiEvaluateConditionFalse**, ad eccezione dell'operatore di confronto "<>", che restituisce **msiEvaluateConditionTrue**.
+-   Il confronto di un intero con un valore stringa o di proprietà che non può essere convertito in un intero è sempre **msiEvaluateConditionFalse**, ad eccezione dell'operatore di confronto "<>", che restituisce **msiEvaluateConditionTrue**.
 
 ## <a name="access-prefixes"></a>Prefissi di accesso
 
@@ -60,12 +60,12 @@ La tabella seguente illustra i prefissi da usare per accedere a varie informazio
 
 | Tipo di simbolo          | Prefisso | Valore                                                     |
 |----------------------|--------|-----------------------------------------------------------|
-| Installer - proprietà   | (nessuna) | Valore della tabella property ([Property](property-table.md)). |
+| Proprietà Installer   | (nessuna) | Valore della tabella property ([Property](property-table.md)). |
 | Variabile di ambiente | %      | Valore della variabile di ambiente.                            |
 | Chiave della tabella dei componenti  | $      | Stato dell'azione del componente.                            |
-| Chiave della tabella dei componenti  | ?      | Stato di installazione del componente.                         |
+| Chiave della tabella dei componenti  | ?      | Stato installato del componente.                         |
 | Chiave della tabella delle funzionalità    | &      | Stato dell'azione della funzionalità.                              |
-| Chiave della tabella delle funzionalità    | !      | Stato di installazione della funzionalità.                           |
+| Chiave della tabella delle funzionalità    | !      | Stato installato della funzionalità.                           |
 
 
 
@@ -73,13 +73,13 @@ La tabella seguente illustra i prefissi da usare per accedere a varie informazio
 
 ## <a name="logical-operators"></a>Operatori logici
 
-Nella tabella seguente vengono illustrati gli operatori logici nelle espressioni condizionali, in ordine di precedenza da alto a basso.
+La tabella seguente illustra gli operatori logici nelle espressioni condizionali, in ordine di precedenza da alto a basso.
 
 
 
 | Operatore | Significato                                                 |
 |----------|---------------------------------------------------------|
-| Not      | Operatore unario prefisso; inverte lo stato del termine seguente. |
+| Not      | Operatore unario di prefisso; inverte lo stato del termine seguente. |
 | e      | TRUE se entrambi i termini sono TRUE.                            |
 | Oppure       | TRUE se uno o entrambi i termini sono TRUE.                  |
 | Xor      | TRUE se entrambi i termini sono TRUE, ma non entrambi.             |
@@ -92,18 +92,18 @@ Nella tabella seguente vengono illustrati gli operatori logici nelle espressioni
 
 ## <a name="comparative-operators"></a>Operatori comparativi
 
-Nella tabella seguente vengono illustrati gli operatori di confronto utilizzati nelle espressioni condizionali. Questi operatori di confronto possono verificarsi solo tra due valori.
+La tabella seguente illustra gli operatori di confronto usati nelle espressioni condizionali. Questi operatori di confronto possono verificarsi solo tra due valori.
 
 
 
 | Operatore | Significato                                                     |
 |----------|-------------------------------------------------------------|
-| =        | TRUE se il valore a sinistra è uguale al valore di destra.                 |
-| <> | TRUE se il valore a sinistra non è uguale al valore a destra.             |
-| >     | TRUE se il valore a sinistra è maggiore del valore di destra.             |
-| >=    | TRUE se il valore a sinistra è maggiore o uguale al valore di destra. |
-| <     | TRUE se il valore a sinistra è minore del valore a destra.                |
-| <=    | TRUE se il valore a sinistra è minore o uguale al valore a destra.    |
+| =        | TRUE se left value è uguale al valore right.                 |
+| <> | TRUE se il valore di sinistra non è uguale al valore a destra.             |
+| >     | TRUE se il valore sinistro è maggiore del valore destro.             |
+| >=    | TRUE se il valore sinistro è maggiore o uguale al valore destro. |
+| <     | TRUE se il valore di sinistra è minore del valore destro.                |
+| <=    | TRUE se il valore sinistro è minore o uguale al valore destro.    |
 
 
 
@@ -117,9 +117,9 @@ Nella tabella seguente vengono illustrati gli operatori di sottostringa usati ne
 
 | Operatore | Significato                                           |
 |----------|---------------------------------------------------|
-| >< | TRUE se la stringa a sinistra contiene la stringa a destra.    |
-| << | TRUE se la stringa a sinistra inizia con la stringa a destra. |
-| >> | TRUE se la stringa a sinistra termina con la stringa a destra.   |
+| >< | TRUE se la stringa di sinistra contiene la stringa di destra.    |
+| << | TRUE se la stringa di sinistra inizia con la stringa di destra. |
+| >> | TRUE se la stringa di sinistra termina con la stringa di destra.   |
 
 
 
@@ -127,27 +127,27 @@ Nella tabella seguente vengono illustrati gli operatori di sottostringa usati ne
 
 ## <a name="bitwise-numeric-operators"></a>Operatori numerici bit per bit
 
-Nella tabella seguente vengono illustrati gli operatori numerici bit per bit nelle espressioni condizionali. Questi operatori possono verificarsi tra due valori interi.
+La tabella seguente illustra gli operatori numerici bit per bit nelle espressioni condizionali. Questi operatori possono essere compresi tra due valori interi.
 
 
 
 | Operatore | Significato                                                                      |
 |----------|------------------------------------------------------------------------------|
 | >< | AND bit per bit, TRUE se gli interi sinistro e destro hanno bit in comune.    |
-| << | True se i 16 bit alti dell'intero a sinistra sono uguali all'intero a destra. |
-| >> | True se i 16 bit bassi dell'intero a sinistra sono uguali all'intero a destra.  |
+| << | True se i 16 bit più alti dell'intero a sinistra sono uguali all'intero a destra. |
+| >> | True se i 16 bit bassi dell'intero sinistro sono uguali all'intero a destra.  |
 
 
 
  
 
-## <a name="feature-and-component-state-values"></a>Valori dello stato di funzionalità e componenti
+## <a name="feature-and-component-state-values"></a>Valori di stato delle funzionalità e dei componenti
 
-Nella tabella seguente viene illustrato dove è possibile utilizzare i simboli degli operatori di funzionalità e componenti.
+La tabella seguente illustra dove è valido usare i simboli dell'operatore feature e component.
 
 
 
-| Operatore <state> | Dove questa sintassi è valida                                                                                                                                         |
+| Stato &lt; dell'operatore&gt; | Dove questa sintassi è valida                                                                                                                                         |
 |------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | $component-action      | Nella tabella [Condizione](condition-table.md) e nelle tabelle di [sequenza,](using-a-sequence-table.md) dopo l'azione [CostFinalize.](costfinalize-action.md) |
 | &feature-action        | Nella tabella [Condizione](condition-table.md) e nelle tabelle di [sequenza,](using-a-sequence-table.md) dopo l'azione [CostFinalize.](costfinalize-action.md) |

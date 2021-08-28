@@ -1,19 +1,19 @@
 ---
-description: Questo <templateInfo> elemento facoltativo specifica un tipo di cartella per visualizzare i risultati di una query su questo connettore di ricerca. Questo elemento non ha attributi e un solo figlio obbligatorio.
+description: Questo elemento &lt; templateInfo facoltativo specifica un tipo di cartella per visualizzare i risultati &gt; di una query su questo connettore di ricerca. Questo elemento non ha attributi e un solo elemento figlio obbligatorio.
 ms.assetid: fe42f589-5c47-4629-94eb-78dbaffa4112
 title: Elemento templateInfo (schema del connettore di ricerca)
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 41fd28780689b4d544f251bbaf1542bc379ecdaf
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 72c815d04e23f1e1af9582ad93ba08d118855676
+ms.sourcegitcommit: 61a4c522182aa1cacbf5669683d9570a3bf043b2
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "106306074"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "122880384"
 ---
 # <a name="templateinfo-element-search-connector-schema"></a>Elemento templateInfo (schema del connettore di ricerca)
 
-Questo <templateInfo> elemento facoltativo specifica un tipo di cartella per visualizzare i risultati di una query su questo connettore di ricerca. Questo elemento non ha attributi e un solo figlio obbligatorio.
+Questo elemento &lt; templateInfo facoltativo specifica un tipo di cartella per visualizzare i risultati &gt; di una query su questo connettore di ricerca. Questo elemento non ha attributi e un solo elemento figlio obbligatorio.
 
 ## <a name="syntax"></a>Sintassi
 
@@ -53,7 +53,7 @@ Questo <templateInfo> elemento facoltativo specifica un tipo di cartella per vis
 
 ## <a name="remarks"></a>Commenti
 
-Se non si specifica un tipo di cartella particolare nell' <templateInfo> elemento, Windows usa il tipo di cartella del connettore di ricerca generale {8FAF9629-1980-46FF-8023-9DCEAB9C3EE3}.
+Se non si specifica un particolare tipo di cartella nell'elemento templateInfo, Windows usa il tipo di cartella del connettore di ricerca generale &lt; &gt; {8FAF9629-1980-46FF-8023-9DCEAB9C3EE3}.
 
 ## <a name="example-of-a-templateinfo-element"></a>Esempio di elemento templateInfo
 

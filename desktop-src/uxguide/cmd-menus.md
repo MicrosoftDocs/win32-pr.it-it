@@ -4,12 +4,12 @@ description: I menu sono elenchi gerarchici di comandi o opzioni disponibili per
 ms.assetid: 3772ff8e-8057-476d-b62b-efbd5e07907f
 ms.topic: article
 ms.date: 10/20/2020
-ms.openlocfilehash: e9b2c3559163ff77e8e3f08354b017c1b7cb53c95fd51802ae2565efdf71abcd
-ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
+ms.openlocfilehash: ba8c67716e6b30fcc32651c8932363310926e6bf
+ms.sourcegitcommit: 61a4c522182aa1cacbf5669683d9570a3bf043b2
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119350174"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "122880381"
 ---
 # <a name="menus-design-basics"></a>Menu (nozioni di base sulla progettazione)
 
@@ -37,7 +37,7 @@ I menu hanno diversi modelli di utilizzo:
 
 
 
-| Uso                                                                                                                                                |    Esempio                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                     |
+| Utilizzo                                                                                                                                                |    Esempio                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                     |
 |-------------------------------------------------------------------------------------------------------------------------------------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | **Barre dei menu**<br/> una barra dei menu visualizza comandi e opzioni nei menu a discesa. <br/>                                               | le barre dei menu sono molto comuni e facili da trovare, nonché un uso efficiente dello spazio. <br/> ![Screenshot della barra dei menu con menu a discesa ](images/cmd-menus-image2.png)<br/> Una barra dei menu Windows Posta elettronica.<br/>                                                                                                                                                                                                                                                                                                                                                                                                          |
 | **Menu della barra degli strumenti**<br/> una barra dei menu implementata come barra degli strumenti. <br/>                                                                   | i menu della barra degli strumenti sono costituiti principalmente da comandi nei pulsanti di [menu](ctrl-command-buttons.md) e nei pulsanti di menu suddivisi, con solo alcuni comandi diretti, se presenti. <br/> ![Screenshot del menu della barra degli strumenti con menu a discesa ](images/cmd-menus-image3.png)<br/> Un menu della barra degli strumenti Windows Raccolta foto.<br/> Per linee guida su questo modello, vedere [Barre degli strumenti.](cmd-toolbars.md)<br/>                                                                                                                                                                                                             |
@@ -233,15 +233,18 @@ In questo esempio viene usato un pulsante a discesa di menu per rendere visibile
 <dl> Comandi primari (usati più di frequente)<dl> Apri  
 Esegui  
 Esegui  
-Stampare <separator>  
-</dl> </dd> <dd>Comandi secondari supportati dall'oggetto<dl> <separator>  
+Stampa  
+&lt;separator&gt;  
+</dl> </dd> <dd>Comandi secondari supportati dall'oggetto<dl> &lt;separator&gt;  
 </dl> </dd> Comandi di trasferimento<dl> Taglia  
 Copia  
-Incollare <separator>  
-</dl> </dd> <dd>Impostazioni degli oggetti<dl> <separator>  
-</dl> </dd> Comandi per gli oggetti<dl> Delete  
-Rinominare <separator>  
-Proprietà
+Incolla  
+&lt;separator&gt;  
+</dl> </dd> <dd>Impostazioni degli oggetti<dl> &lt;separator&gt;  
+</dl> </dd> Comandi per gli oggetti<dl> Elimina  
+Rinominare  
+&lt;separator&gt;  
+Proprietà  
 </dl> </dd> </dl>
 
 **Presentazione**
@@ -306,8 +309,8 @@ Per altre linee guida ed esempi, vedere [Tastiera.](inter-keyboard.md)
 -   **Per i tasti di scelta rapida noti, usare le assegnazioni standard.**
 -   **Non assegnare significati diversi a tasti di scelta rapida noti.** Poiché sono memorizzati, significati incoerenti per le scelte rapide note sono frustranti e erre. Vedere Windows tasti di scelta rapida per i tasti di scelta rapida ben Windows programmi.
 -   **Non provare ad assegnare tasti di scelta rapida del programma a livello di sistema.** I tasti di scelta rapida del programma avranno effetto solo quando il programma ha lo stato attivo per l'input.
--   **Documentare tutti i tasti di scelta rapida.** In questo modo, gli utenti possono apprendere le assegnazioni dei tasti di scelta rapida.
-    -   **Eccezione:** Non visualizzare le assegnazioni dei tasti di scelta rapida all'interno dei menu di scelta rapida. I menu di scelta rapida non visualizzano le assegnazioni dei tasti di scelta rapida perché sono ottimizzati per l'efficienza.
+-   **Documentare tutti i tasti di scelta rapida.** In questo modo, gli utenti apprendono le assegnazioni dei tasti di scelta rapida.
+    -   **Eccezione:** Non visualizzare le assegnazioni dei tasti di scelta rapida nei menu di scelta rapida. I menu di scelta rapida non visualizzano le assegnazioni dei tasti di scelta rapida perché sono ottimizzati per l'efficienza.
 -   **Per le assegnazioni di chiave non standard:**
     -   **Scegliere i tasti di scelta rapida che non hanno assegnazioni standard.** Non riassegnare mai i tasti di scelta rapida standard.
     -   **Usare le assegnazioni di chiave non standard in modo coerente in tutto il programma.** Non assegnare significati diversi in finestre diverse.
@@ -332,35 +335,48 @@ La struttura della barra dei menu standard è la seguente. Questo elenco mostra 
 
 <dl> File<dl> Nuovo CTRL+N  
 Aperto... CTRL+O  
-Chiudere <separator>  
+Chiudi  
+&lt;separator&gt;  
 Salva CTRL+S  
-Salva con nome... <separator>  
-Invia a <separator>  
+Salva con nome...  
+&lt;separator&gt;  
+Invia a  
+&lt;separator&gt;  
 Stampare... CTRL+P  
 Anteprima di stampa  
-Configurazione della pagina <separator>  
-1 <filename> 2 <filename> 3 <filename> ... <separator>  
+Impostazioni di pagina  
+&lt;separator&gt;  
+1 <filename> 2 <filename> 3 <filename> ...  
+&lt;separator&gt;  
 Esci da ALT+F4 (collegamento in genere non specificato)
 </dl> </dd> Edit<dl> Annulla CTRL+Z  
-Ripeti CTRL+Y <separator>  
+Ripeti CTRL+Y  
+&lt;separator&gt;  
 Taglia CTRL+X  
 Copiare CTRL+C  
-Incolla CTRL+V <separator>  
-Seleziona tutto CTRL+A <separator>  
-Elimina Del (collegamento in genere non specificato) <separator>  
+Incolla CTRL+V  
+&lt;separator&gt;  
+Seleziona tutto CTRL+A  
+&lt;separator&gt;  
+Elimina Del (collegamento in genere non specificato)  
+&lt;separator&gt;  
 Trovare... CTRL+F  
 Trova F3 successivo (comando in genere non specificato)  
 Sostituire... CTRL+H  
 Vai a... CTRL+G
 </dl> </dd> View<dl> Barre degli strumenti  
-Barra di stato <separator>  
+Status bar  
+&lt;separator&gt;
 </dl> </dd> Zoom<dl> Zoom avanti CTRL++  
-Zoom indietro CTRL+- <separator>  
+Zoom indietro CTRL+-  
+&lt;separator&gt;  
 Schermo intero F11  
 Aggiornare F5
-</dl> </dd> <dd>Strumenti<dl> ... <separator>  
+</dl> </dd> <dd>Strumenti<dl> ...  
+&lt;separator&gt;  
 Opzioni
-</dl> </dd> Help<dl> <program name> Guida F1 <separator>  
+</dl> </dd> Help<dl> <program name> Guida F1  
+&lt;separator&gt;  
 Circa <program name>  
 </dl> </dd> </dl>
 
@@ -369,54 +385,65 @@ Circa <program name>
 I pulsanti di menu standard della barra degli strumenti sono i seguenti. Questo elenco mostra la categoria di menu e le etichette degli elementi, il relativo ordine con separatori, i tasti di scelta rapida e i relativi puntini di sospensione.
 
 <dl> Strumenti<dl> Schermo interoF11(Riassegna chiave di accesso se viene usato anche Trova).  
-Barre degli strumenti (si noti che il comando Barra dei menu è visualizzato qui). <separator>  
+Barre degli strumenti (si noti che il comando Barra dei menu è visualizzato qui).  
+&lt;separator&gt;  
 Stampa...  
-Trovare... <separator>  
+Trova...  
+&lt;separator&gt;  
 Zoom  
-Dimensioni del testo <separator>  
-Opzioni
-</dl> </dd> Organize<dl> Nuova cartellaCtrl+N <separator>  
+Dimensione del testo  
+&lt;separator&gt;  
+Opzioni  
+</dl> </dd> Organize<dl> Nuova cartellaCtrl+N  
+&lt;separator&gt;  
 CutCtrl+X  
 CopyCtrl+C  
-PasteCtrl+V <separator>  
-Selezionare allCtrl+A <separator>  
+PasteCtrl+V  
+&lt;separator&gt;  
+Selezionare allCtrl+A  
+&lt;separator&gt;  
 DeleteDel(collegamento in genere non specificato)  
-Rinominare <separator>  
-Opzioni
-</dl> </dd> Page<dl> Nuova finestraCtrl+N <separator>  
+Rinominare  
+&lt;separator&gt;  
+Opzioni  
+</dl> </dd> Page<dl> Nuova finestraCtrl+N  
+&lt;separator&gt;  
 Zoom  
-Dimensione del testo
+Dimensione del testo  
 </dl> </dd> </dl>
 
 **Menu di scelta rapida standard**
 
-Il contenuto del menu di scelta rapida standard è il seguente. Questo elenco mostra le etichette delle voci di menu, il relativo ordine con separatori, i tasti di scelta e i relativi puntini di sospensione. I menu di scelta rapida non mostrano i tasti di scelta rapida.
+Il contenuto del menu di scelta rapida standard è il seguente. Questo elenco mostra le etichette delle voci di menu, l'ordine con separatori, i tasti di scelta e i puntini di sospensione. I menu di scelta rapida non mostrano i tasti di scelta rapida.
 
 <dl> Apri  
 Esegui  
 Esegui  
 Modifica  
-Stampare... <separator>  
+Stampa...  
+&lt;separator&gt;  
 Taglia  
 Copia  
-Incollare <separator>  
-Delete  
-Rinominare <separator>  
-Bloccare <object name> (segno di spunta)  
+Incolla  
+&lt;separator&gt;  
+Elimina  
+Rinominare  
+&lt;separator&gt;  
+Blocca <object name> (segno di spunta)  
 Proprietà
 </dl>
 
 ### <a name="using-ellipses"></a>Uso dei puntini di sospensione
 
-Mentre i comandi di menu vengono usati per azioni immediate, potrebbero essere necessarie altre informazioni per eseguire l'azione. **Indicare un comando che richiede informazioni aggiuntive (inclusa una conferma) aggiungendo i puntini di sospensione alla fine dell'etichetta.**
+Mentre i comandi di menu vengono usati per azioni immediate, potrebbero essere necessarie altre informazioni per eseguire l'azione. **Indicare un comando che necessita di informazioni aggiuntive (inclusa una conferma) aggiungendo i puntini di sospensione alla fine dell'etichetta.**
 
-![Screenshot del comando di stampa e della finestra di dialogo Stampa ](images/cmd-menus-image15.png)
+![Screenshot della finestra di dialogo stampa e comando stampa ](images/cmd-menus-image15.png)
 
-In questo esempio, print... visualizza una finestra di dialogo Stampa per raccogliere altre informazioni.
+In questo esempio, il comando Stampa... visualizza una finestra di dialogo Stampa per raccogliere altre informazioni.
 
-**L'uso corretto dei puntini di sospensione è importante per indicare che gli utenti possono effettuare altre scelte prima di eseguire l'azione o persino annullare completamente l'azione.** Il segnale visivo offerto da un puntoni di sospensione consente agli utenti di esplorare il software senza timori.
+**L'uso corretto dei puntini di sospensione è importante per indicare che gli utenti possono effettuare altre scelte prima di eseguire l'azione o persino annullare completamente l'azione.** Il segnale visivo offerto dai puntini di sospensione consente agli utenti di esplorare il software senza temere.
 
-Questo non significa che è necessario usare i puntini di sospensione ogni volta che un'azione visualizza **un'altra** finestra solo quando sono necessarie informazioni aggiuntive per eseguire l'azione. Ad esempio, i comandi About, Advanced, Help, Options, Properties e Impostazioni devono visualizzare un'altra finestra quando si fa clic, ma non richiedono informazioni aggiuntive da parte dell'utente. Non sono quindi necessari puntini di sospensione.
+**Ciò non significa che è consigliabile** usare i puntini di sospensione ogni volta che un'azione visualizza un'altra finestra solo quando sono necessarie informazioni aggiuntive per eseguire l'azione. Ad esempio, i comandi About, Advanced, Help, Options, Properties e Impostazioni devono visualizzare un'altra finestra quando si fa clic su di lui, ma non richiedono informazioni aggiuntive all'utente. Non sono quindi necessari puntini di sospensione.
 
 **In caso di ambiguità (ad esempio, l'etichetta del comando non dispone di un verbo), decidere in base all'azione dell'utente più probabile.** Se la semplice visualizzazione della finestra è un'azione comune, non usare i puntini di sospensione.
 
@@ -426,45 +453,45 @@ Altri colori...
 
 Informazioni sulla versione
 
-Nel primo esempio, è molto probabile che gli utenti sceglino un colore, quindi l'uso di un ellisse è corretto. Nel secondo esempio, gli utenti probabilmente visualizzano le informazioni sulla versione, rendendo i puntini di sospensione superflui.
+Nel primo esempio gli utenti probabilmente sceglieranno un colore, quindi l'uso di puntini di sospensione è corretto. Nel secondo esempio gli utenti probabilmente visualizzano le informazioni sulla versione, rendendo superflui i puntini di sospensione.
 
 > [!Note]  
 > Quando si determina se un comando di menu necessita di puntini di sospensione, non usare la necessità di elevare i privilegi come fattore. [](winenv-uac.md)
 
  
 
-L'elevazione dei privilegi non è necessaria per eseguire un comando (piuttosto che per l'autorizzazione) e la necessità di elevare è indicata con lo schermo di sicurezza.
+L'elevazione dei privilegi non è un'informazione necessaria per eseguire un comando (piuttosto che per l'autorizzazione) e la necessità di elevare i privilegi è indicata con lo shield di sicurezza.
 
 ## <a name="labels"></a>Etichette
 
 -   **Usare le maiuscole/minuscole come nelle frasi comuni.**
-    -   **Eccezione:** Per le applicazioni legacy, è possibile usare l'uso di maiuscole e minuscole in stile titolo, se necessario, per evitare di combinare gli stili di combinazione di maiuscole e minuscole.
+    -   **Eccezione:** Per le applicazioni legacy, è possibile usare la combinazione di maiuscole e minuscole in stile titolo, se necessario, per evitare di combinare gli stili di uso delle maiuscole.
 
 ### <a name="menu-category-names"></a>Nomi delle categorie di menu
 
--   **Usare nomi di categorie di menu che sono verbi o sostantivi a parola singola.** Un'etichetta a più parole potrebbe essere confusa per due etichette di una parola.
--   **Preferisce i nomi dei menu basati su verbi.** Tuttavia, omettere il verbo se è Create, Show, View o Manage. Ad esempio, le categorie di menu seguenti non hanno verbi:
+-   **Usare nomi di categoria di menu che sono verbi o sostantivi a parola singola.** Un'etichetta con più parole potrebbe essere confusa per due etichette di una parola.
+-   **Preferisce nomi di menu basati su verbi.** Tuttavia, omettere il verbo se è Create, Show, View o Manage. Ad esempio, le categorie di menu seguenti non hanno verbi:
     -   Tabella
     -   Strumenti
     -   Finestra
--   Per i nomi di categoria non standard, usare una singola parola specifica che descriva in modo chiaro e accurato **il contenuto del menu.** Anche se i nomi non devono essere così generali da descrivere tutti gli elementi nel menu, dovrebbero essere sufficientemente prevedibili in modo che gli utenti non siano sorprese da ciò che trovano nel menu.
+-   Per i nomi di categoria non standard, usare una singola parola specifica che descriva in modo chiaro e accurato **il contenuto del menu.** Anche se i nomi non devono essere così generali da descrivere tutti gli elementi del menu, devono essere sufficientemente prevedibili in modo che gli utenti non siano sorpresi da ciò che trovano nel menu.
 
 ### <a name="menu-item-names"></a>Nomi delle voci di menu
 
--   **Usare nomi di voci di menu che iniziano con una frase verbo, sostantivo o sostantivo.**
--   **Preferisce i nomi dei menu basati su verbi.** Tuttavia, omettere il verbo se:
+-   **Usare nomi di voci di menu che iniziano con un verbo, un sostantivo o una frase sostantiva.**
+-   **Preferisce nomi di menu basati su verbi.** Tuttavia, omettere il verbo se:
     -   **Il verbo è Create, Show, View o Manage.** Ad esempio, i comandi seguenti non hanno verbi:
         -   Informazioni
         -   Avanzato
         -   Schermo intero
-        -   Nuovo
+        -   Nuova
         -   Opzioni
         -   Proprietà
-    -   **Il verbo corrisponde al nome della categoria di menu per evitare ripetizioni.** Ad esempio, nella categoria di menu Inserisci usare Testo, Tabella e Immagine invece di Inserisci testo, Inserisci tabella e Inserisci immagine.
--   **Usare verbi specifici.** Evitare verbi generici e inutili, ad esempio Change e Manage.
--   **Usare sostantivi singolari per i comandi che si applicano a un singolo oggetto**, in caso contrario usare sostantivi plurali.
+    -   **Il verbo è uguale al nome della categoria di menu per evitare ripetizioni.** Ad esempio, nella categoria di menu Inserisci usare Testo, Tabella e Immagine anziché Inserisci testo, Inserisci tabella e Inserisci immagine.
+-   **Usare verbi specifici.** Evitare verbi generici e inutili, ad esempio Change and Manage.
+-   **Usare sostantivi singolari per i comandi che si applicano a un singolo oggetto**. In caso contrario, usare sostantivi plurali.
 -   **Usare i modificatori in base alle esigenze per distinguere tra comandi simili.** Esempi: Inserisci riga sopra, Inserisci riga sotto.
--   **Per coppie di comandi complementari, scegliere nomi chiaramente complementari.** Esempi: Aggiungi, Rimuovi; Mostra, Nascondi; Inserisci, Elimina.
+-   **Per coppie di comandi complementari, scegliere nomi chiaramente complementari.** Esempi: Add, Remove; Show, Hide; Insert, Delete.
 -   **Scegliere i nomi delle voci di menu in base a obiettivi e attività dell'utente, non alla tecnologia.**
 
 **Corretto:**
@@ -473,9 +500,9 @@ L'elevazione dei privilegi non è necessaria per eseguire un comando (piuttosto 
 
 **Non corretto:**
 
-![Screenshot del menu a comparsa con la voce di menu codec ](images/cmd-menus-image17.png)
+![Screenshot del menu Rip con voce di menu codec ](images/cmd-menus-image17.png)
 
-Nell'esempio non corretto, la voce di menu è basata sulla relativa tecnologia.
+Nell'esempio non corretto, la voce di menu si basa sulla relativa tecnologia.
 
 -   Usare i nomi delle voci di menu seguenti per lo scopo indicato:
     -   **Opzioni** Per visualizzare le opzioni del programma.
@@ -491,28 +518,28 @@ Nell'esempio non corretto, la voce di menu è basata sulla relativa tecnologia.
 
 **Non corretto:**
 
-![Screenshot della nuova voce di menu con puntini di sospensione ](images/cmd-menus-image18.png)
+![Screenshot della nuova voce di menu con i puntini di sospensione ](images/cmd-menus-image18.png)
 
-In questo esempio la voce di menu Nuovo presenta erroneamente i puntini di sospensione.
+In questo esempio la voce di menu Nuovo contiene erroneamente i puntini di sospensione.
 
 ## <a name="documentation"></a>Documentazione
 
 Quando si fa riferimento ai menu:
 
 -   Nei comandi che mostrano o nascondono i menu, fare riferimento alle barre dei menu. Non fare riferimento a questi menu come menu classici.
--   Fare riferimento ai menu in base alle relative etichette. Usare il testo esatto dell'etichetta, inclusa la combinazione di maiuscole e minuscole, ma non includere il carattere di sottolineatura o i puntini di sospensione del tasto di scelta.
+-   Fare riferimento ai menu in base alle etichette. Usare il testo esatto dell'etichetta, inclusa la combinazione di maiuscole e minuscole, ma non includere il carattere di sottolineatura del tasto di scelta o i puntini di sospensione.
 -   Per fare riferimento alle categorie di menu, usare "Nel <category name> menu". Se la posizione di una voce di menu è chiara dal contesto, non è necessario menzionare la categoria di menu.
--   Per descrivere l'interazione dell'utente delle voci di menu, usare il clic, senza il menu o il comando word. Non usare scegliere, selezionare o selezionare. Non fare riferimento a una voce di menu come una voce di menu, ad eccezione della documentazione tecnica.
+-   Per descrivere l'interazione dell'utente con le voci di menu, usare clic, senza il comando o il menu word. Non usare scegliere, selezionare o selezionare. Non fare riferimento a una voce di menu come voce di menu se non nella documentazione tecnica.
 -   Per descrivere la rimozione di un segno di spunta da un'opzione di menu, usare fare clic per rimuovere il segno di spunta. Non usare clear.
 -   Fare riferimento ai menu di scelta rapida come menu di scelta rapida, non come menu di scelta rapida.
--   Non usare menu a cascata, a discesa, a discesa o popup per descrivere i menu, ad eccezione della documentazione di programmazione.
--   Fare riferimento alle voci di menu non disponibili come non disponibili, non in grigio, disabilitate o in grigio. Usare disabled nella documentazione di programmazione.
+-   Non usare la propagazione, l'elenco a discesa, l'elenco a discesa o la finestra popup per descrivere i menu, tranne che nella documentazione di programmazione.
+-   Fare riferimento alle voci di menu non disponibili come non disponibili, non come disattivate, disabilitate o in grigio. Usare disabled nella documentazione di programmazione.
 -   Quando possibile, formattare le etichette usando il testo in grassetto. In caso contrario, inserire le etichette tra virgolette solo se necessario per evitare confusione.
 
 Esempi:
 
 -   Scegliere **Stampa** dal menu File **per** stampare il documento.
--   Scegliere Barre **degli** strumenti dal menu Visualizza **e** quindi fare clic su **Formattazione**.
+-   Scegliere Barre **degli** strumenti dal menu Visualizza **,** quindi fare clic su **Formattazione**.
 
  
 

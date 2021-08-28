@@ -4,12 +4,12 @@ ms.assetid: e1cb7e46-3078-46bf-a8c8-e10f6b9dd222
 title: DocumentImpositionColor
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: b747487c19160d29778f306a91b62cf43d245f65
-ms.sourcegitcommit: b32433cc0394159c7263809ae67615ab5792d40d
+ms.openlocfilehash: 834f5ec9ac613fcd683c22fe77252b99223e320b9fbde43bb3bad5a1bed8958c
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/30/2021
-ms.locfileid: "113120006"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120112521"
 ---
 # <a name="documentimpositioncolor"></a>DocumentImpositionColor
 

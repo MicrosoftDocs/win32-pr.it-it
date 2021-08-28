@@ -4,12 +4,12 @@ ms.assetid: 132a55f9-680d-438e-b983-f5ce4cf66a41
 title: Gestione delle regole di ambito
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 6374ff3f29bebfcaeeddd02a4ec1c1d7746a19ab48c4ad8d3669aeb0cfaebdb0
-ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
+ms.openlocfilehash: 134e4241e9dcd66e468935ae56a4029a51a96c37
+ms.sourcegitcommit: 61a4c522182aa1cacbf5669683d9570a3bf043b2
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "120058191"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "122880215"
 ---
 # <a name="managing-scope-rules"></a>Gestione delle regole di ambito
 
@@ -40,7 +40,7 @@ Vengono inoltre presentati gli argomenti seguenti:
 
 Una regola di ambito è una regola che include o esclude gli URL all'interno di una radice di ricerca dalla ricerca per indicizzazione e dall'indicizzazione. Le regole di inclusione determinano l'inclusione dell'URL nell'ambito scrawl e le regole di esclusione causano l'esclusione dell'URL (e dei relativi elementi figlio) dall'ambito della ricerca per indicizzazione.
 
-Si supponga, ad esempio, di aver installato una nuova applicazione i cui file di dati si trovano nella cartella WorkteamA \\ ProjectFiles in un computer locale. Si supponga di voler indicizzare tutti gli elementi all'interno della cartella ProjectFiles, ad eccezione degli elementi nella sottocartella Prototypes. In questo caso, sono necessarie una regola di inclusione per myPH:///C: WorkteamA ProjectFiles e una regola di esclusione per \\ \\ \\ myPH:///C: \\ WorkteamA \\ ProjectFiles \\ Prototypes \\ .
+Si supponga, ad esempio, di aver installato una nuova applicazione i cui file di dati si trovano nella cartella WorkteamA \\ ProjectFiles in un computer locale. Si supponga di voler indicizzare tutti gli elementi all'interno della cartella ProjectFiles, ad eccezione degli elementi nella sottocartella Prototypes. In questo caso, sono necessarie una regola di inclusione per myPH:///C: ProjectFiles workteamA e una regola di esclusione per \\ \\ \\ myPH:///C: \\ WorkteamA \\ ProjectFiles \\ Prototypes \\ .
 
 Esistono tre tipi di regole, con l'ordine di precedenza seguente:
 
@@ -48,10 +48,10 @@ Esistono tre tipi di regole, con l'ordine di precedenza seguente:
 2.  Le regole utente vengono impostate dagli utenti che modificano l'ambito nell Windows utente delle opzioni di ricerca. Gli utenti o altre applicazioni possono rimuovere tutte le regole utente e ripristinare le regole predefinite.
 3.  Le regole predefinite vengono in genere impostate da un'applicazione per definire un ambito predefinito. Ad esempio, le regole predefinite potrebbero essere impostate quando un nuovo gestore di protocollo o un nuovo contenitore viene aggiunto al sistema.
 
-Insieme, questi tipi di regole comprendono il *set* di regole di lavoro da cui Gestione ambito ricerca per indicizzazione (CSM) genera l'elenco completo di URL per la ricerca per indicizzazione. Anche se le regole predefinite possono essere sostituite dalle regole di Criteri di gruppo e dalle regole utente, vengono mantenute nel proprio set di regole predefinito, che è possibile ripristinare in qualsiasi momento. L'indicizzatore esegue una ricerca per indicizzazione degli URL dal set di regole di lavoro e aggiunge elementi, proprietà e contenuto al catalogo.
+Insieme, questi tipi di regole comprendono il *set* di regole di lavoro da cui il Gestione ambito ricerca per indicizzazione (CSM) genera l'elenco completo di URL per la ricerca per indicizzazione. Anche se le regole predefinite possono essere sostituite dalle regole di Criteri di gruppo e dalle regole utente, vengono mantenute nel proprio set di regole predefinito, che è possibile ripristinare in qualsiasi momento. L'indicizzatore esegue una ricerca per indicizzazione degli URL dal set di regole di lavoro e aggiunge elementi, proprietà e contenuto al catalogo.
 
 > [!Note]  
-> Gli utenti con accesso Pannello di controllo modificare le regole tramite tale interfaccia. Pertanto, le applicazioni che offrono la gestione dell'ambito devono sempre ottenere le regole direttamente dal CSM usando i metodi di enumerazione anziché basarsi su una copia salvata delle regole utente.
+> Gli utenti con accesso Pannello di controllo possono modificare le regole tramite tale interfaccia. Pertanto, le applicazioni che offrono la gestione dell'ambito devono sempre ottenere le regole direttamente dal CSM usando i metodi di enumerazione anziché basarsi su una copia salvata delle regole utente.
 
  
 
@@ -102,7 +102,7 @@ La tabella seguente descrive i metodi dell'interfaccia ISearchWlScopeManager usa
 
  
 
-Ogni metodo accetta un URL in una posizione indicizzabile e i flag che determinano se l'URL deve essere incluso o escluso. Il *parametro fFollowFlags* è riservato per un uso futuro. Quando si aggiunge una nuova regola di ambito e il Gestione ambito ricerca per indicizzazione determina che la regola esiste già (in base all'URL o al modello fornito), il set di regole di lavoro viene aggiornato in modo che (1) la regola precedente venga sostituita dalla nuova regola e (2) le eventuali regole utente che la contraddicono vengono rimosse.
+Ogni metodo accetta un URL in una posizione indicizzabile e i flag che determinano se l'URL deve essere incluso o escluso. Il *parametro fFollowFlags* è riservato per un uso futuro. Quando si aggiunge una nuova regola di ambito e il Gestione ambito ricerca per indicizzazione determina che la regola esiste già (in base all'URL o al modello specificato), il set di regole di lavoro viene aggiornato in modo che (1) la regola precedente venga sostituita dalla nuova regola e (2) le eventuali regole utente che la contraddicono vengono rimosse.
 
 **Suggerimento:** Mentre la file:// radice è inclusa per impostazione predefinita nell'ambito della ricerca per indicizzazione, Programmi non è indicizzata per impostazione predefinita. Di conseguenza, le applicazioni con dati salvati nella directory Programmi devono aggiungere il percorso come regola predefinita.
 
@@ -139,7 +139,7 @@ Ogni metodo accetta un URL e un flag che indica se la regola da rimuovere è una
 È anche possibile rimuovere tutte le sostituzioni impostate dall'utente di una radice di ricerca e ripristinare la radice di ricerca originale e le regole di ambito predefinite. Per altre informazioni, vedere la sezione successiva.
 
 > [!Note]  
-> In Windows Vista, se gli utenti vengono rimossi tramite Profili utente in Pannello di controllo, CSM rimuove tutte le regole e le radici che includono il RELATIVO SID e rimuove gli elementi indicizzati dal catalogo. In Windows XP è necessario rimuovere manualmente le radici e le regole degli utenti.
+> In Windows Vista, se gli utenti vengono rimossi tramite profili utente in Pannello di controllo, CSM rimuove tutte le regole e le radici che includono il SID e rimuove gli elementi indicizzati dal catalogo. In Windows XP è necessario rimuovere manualmente le radici e le regole degli utenti.
 
  
 
@@ -153,23 +153,23 @@ Il ripristino delle regole predefinite rimuove tutte le regole utente per un URL
 
 ## <a name="enumerating-scope-rules"></a>Enumerazione delle regole di ambito
 
-Il CSM enumera le regole di ambito usando un'interfaccia di enumeratore di tipo COM standard, [**IEnumSearchScopeRules.**](/windows/desktop/api/Searchapi/nn-searchapi-ienumsearchscoperules) È possibile usare questa interfaccia per enumerare le regole di ambito per diversi scopi. Ad esempio, potrebbe essere necessario visualizzare l'intero set di regole di lavoro in un'interfaccia utente o scoprire se una regola o l'elemento figlio di una regola si trova già nell'ambito della ricerca per indicizzazione.
+Il CSM enumera le regole di ambito usando un'interfaccia enumeratore di tipo COM standard, [**IEnumSearchScopeRules**](/windows/desktop/api/Searchapi/nn-searchapi-ienumsearchscoperules) . È possibile usare questa interfaccia per enumerare le regole di ambito per diversi scopi. Ad esempio, potrebbe essere necessario visualizzare l'intero set di regole di lavoro in un'interfaccia utente o scoprire se una regola o l'elemento figlio di una regola si trova già nell'ambito della ricerca per indicizzazione.
 
  
 
 ## <a name="tracing-scope-rules"></a>Regole di ambito di traccia
 
-Il CSM consente inoltre di determinare se un URL specificato è incluso nell'ambito della ricerca per indicizzazione e se dispone di una regola di ambito padre o figlio. È anche possibile scoprire perché un URL viene incluso o escluso dall'ambito della ricerca per indicizzazione. Questi metodi non devono essere usati con GLI URL dei modelli.
+Il CSM consente anche di determinare se un URL specificato è incluso nell'ambito della ricerca per indicizzazione e se dispone di una regola di ambito padre o figlio. È anche possibile scoprire perché un URL viene incluso o escluso dall'ambito della ricerca per indicizzazione. Questi metodi non devono essere usati con gli URL del modello.
 
-La tabella seguente descrive i metodi di [**ISearchWlScopeManager**](/windows/desktop/api/Searchapi/nn-searchapi-isearchcrawlscopemanager) usati per aggiungere nuove regole di ambito.
+La tabella seguente descrive i metodi di [**ISearchCrawlScopeManager**](/windows/desktop/api/Searchapi/nn-searchapi-isearchcrawlscopemanager) usati per l'aggiunta di nuove regole di ambito.
 
 
 
 | Metodo                                                                                      | Descrizione                                                                                                                                                                                                                                                                                                                                                                                                                                            |
 |---------------------------------------------------------------------------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| [**GetParentScopeVersionId**](/windows/desktop/api/Searchapi/nf-searchapi-isearchcrawlscopemanager-getparentscopeversionid) | Ottiene l'ID versione dell'URL di inclusione padre. È possibile usare questo metodo per verificare se l'ambito padre è stato modificato dopo l'ultima verifica.<br/> Esempio: se un'applicazione di posta elettronica usa notifiche gestite dal provider, potrebbe ottenere la versione dell'ambito padre prima della chiusura e controllare di nuovo la versione all'apertura. L'applicazione può quindi determinare se è necessario eseguire il push di un nuovo set di notifiche all'indicizzatore.<br/> |
-| [**HasChildScopeRule**](/windows/desktop/api/Searchapi/nf-searchapi-isearchcrawlscopemanager-haschildscoperule)             | Restituisce **TRUE** se l'URL specificato ha una regola figlio (una regola che si applica a un elemento figlio a qualsiasi livello all'interno della gerarchia di URL). <br/> Esempio: se l'URL è file:///C: Cartella , questo metodo restituisce TRUE se il CSM ha una regola di ambito specifica per \\ \\ file:///C:  \\ Sottocartella cartella \\ \\ .<br/>                                                                                                                                              |
-| [**HasParentScopeRule**](/windows/desktop/api/Searchapi/nf-searchapi-isearchcrawlscopemanager-hasparentscoperule)           | Restituisce **TRUE** se l'URL specificato ha una regola padre (una regola che si applica a un elemento padre a qualsiasi livello della gerarchia di URL).<br/> Esempio: se l'URL è file:///C: Sottocartella cartella, questo metodo restituisce TRUE se il CSM ha una regola di ambito specifica per \\ \\ file:///C:  \\ Cartella \\ .<br/>                                                                                                                                                   |
+| [**GetParentScopeVersionId**](/windows/desktop/api/Searchapi/nf-searchapi-isearchcrawlscopemanager-getparentscopeversionid) | Ottiene l'ID versione dell'URL di inclusione padre. È possibile usare questo metodo per verificare se l'ambito padre è stato modificato dall'ultima volta che è stato controllato.<br/> Esempio: se un'applicazione di posta elettronica usa notifiche gestite dal provider, potrebbe ottenere la versione dell'ambito padre prima della chiusura e controllare di nuovo la versione all'apertura. L'applicazione può quindi determinare se è necessario eseguire il push di un nuovo set di notifiche all'indicizzatore.<br/> |
+| [**HasChildScopeRule**](/windows/desktop/api/Searchapi/nf-searchapi-isearchcrawlscopemanager-haschildscoperule)             | Restituisce **TRUE se** l'URL specificato ha una regola figlio (una regola che si applica a un elemento figlio a qualsiasi livello all'interno della gerarchia di URL). <br/> Esempio: se l'URL è file:///C: Cartella , questo metodo restituisce TRUE se il CSM ha una regola di ambito specifica per \\ \\ file:///C:  \\ \\ Sottocartella cartella \\ .<br/>                                                                                                                                              |
+| [**HasParentScopeRule**](/windows/desktop/api/Searchapi/nf-searchapi-isearchcrawlscopemanager-hasparentscoperule)           | Restituisce **TRUE** se l'URL specificato ha una regola padre (una regola che si applica a un elemento padre a qualsiasi livello nella gerarchia di URL).<br/> Esempio: se l'URL è file:///C: Sottocartella cartella, questo metodo restituisce TRUE se il CSM ha una regola di ambito specifica per \\ \\ file:///C:  \\ Cartella \\ .<br/>                                                                                                                                                   |
 | [**IncludedInCrawlScope**](/windows/desktop/api/Searchapi/nf-searchapi-isearchcrawlscopemanager-includedincrawlscope)       | Restituisce **TRUE se** l'URL specificato è incluso nell'ambito della ricerca per indicizzazione.                                                                                                                                                                                                                                                                                                                                                                                  |
 | [**IncludedInCrawlScopeEx**](/windows/desktop/api/Searchapi/nf-searchapi-isearchcrawlscopemanager-includedincrawlscopeex)   | Restituisce un valore dall'enumerazione [**CLUSION \_ REASON**](/windows/win32/api/searchapi/ne-searchapi-clusion_reason) che spiega perché l'URL è incluso o escluso dall'ambito della ricerca per indicizzazione e recupera il valore **TRUE** se l'URL è incluso nell'ambito della ricerca per indicizzazione. Questo metodo consente di identificare i conflitti nel set di regole di lavoro.                                                                                                                                       |
 
@@ -180,11 +180,11 @@ La tabella seguente descrive i metodi di [**ISearchWlScopeManager**](/windows/de
  
 
 > [!Note]  
-> I [**metodi IncludedInCrawlScope**](/windows/desktop/api/Searchapi/nf-searchapi-isearchcrawlscopemanager-includedincrawlscope) e [**IncludedInCrawlScopeEx**](/windows/desktop/api/Searchapi/nf-searchapi-isearchcrawlscopemanager-includedincrawlscopeex) determinano se l'URL verrà sottoposto a ricerca per indicizzazione esclusivamente in base alle regole nel CSM. Esistono altri motivi per cui non viene eseguita la ricerca per indicizzazione di un URL, ad esempio il bit FANCI impostato, ovvero se un utente non ha consentito l'indicizzazione rapida nella finestra di dialogo Proprietà della cartella.
+> I [**metodi IncludedInCrawlScope**](/windows/desktop/api/Searchapi/nf-searchapi-isearchcrawlscopemanager-includedincrawlscope) e [**IncludedInCrawlScopeEx**](/windows/desktop/api/Searchapi/nf-searchapi-isearchcrawlscopemanager-includedincrawlscopeex) determinano se l'URL verrà sottoposto a ricerca per indicizzazione solo in base alle regole nel CSM. Esistono altri motivi per cui un URL non viene sottoposto a ricerca per indicizzazione, ad esempio il bit FANCI impostato, ovvero un utente non ha consentito l'indicizzazione veloce nella finestra di dialogo Proprietà della cartella.
 
  
 
-Se si ritiene che un percorso di file debba essere escluso, ma è elencato come incluso, assicurarsi che le regole di esclusione terminino con " <path> \\ \* ". Se si ritiene che un file o un percorso di file debba essere incluso ma non lo è, assicurarsi di controllare l'impostazione di bit FANCI per il file o il percorso. A tale scopo, fare clic con il pulsante destro del mouse sul file o sul percorso del file e scegliere Proprietà **,** quindi assicurarsi che la casella di controllo Per la ricerca **veloce,** consenti al servizio di indicizzazione di indicizzare questa cartella sia selezionata. Se il percorso del file o del file non è contrassegnato per l'indicizzazione, non verrà indicizzato anche se si trova in una regola di inclusione.
+Se si ritiene che un percorso di file debba essere escluso, ma è elencato come incluso, assicurarsi che le regole di esclusione terminino con " &lt; percorso &gt; \\ \* ". Se si ritiene che un file o un percorso di file debba essere incluso ma non lo è, assicurarsi di controllare l'impostazione di bit FANCI per il file o il percorso. A tale scopo, fare clic con il pulsante destro del mouse sul file o sul percorso del file e scegliere Proprietà **,** quindi assicurarsi che la casella di controllo Per la ricerca **veloce,** consenti al Servizio di indicizzazione di indicizzare questa cartella sia selezionata. Se il percorso del file o del file non è contrassegnato per l'indicizzazione, non verrà indicizzato anche se si trova in una regola di inclusione.
 
 ## <a name="related-topics"></a>Argomenti correlati
 

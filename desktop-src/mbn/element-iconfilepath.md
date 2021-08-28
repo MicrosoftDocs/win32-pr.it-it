@@ -7,18 +7,18 @@ MSHAttr:
 title: ICONFilePath
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: bdb21e822f5f2418ad7d08f7d8f8edfff4f93b6a
-ms.sourcegitcommit: 4665ebce0c106bdb52eef36e544280b496b6f50b
+ms.openlocfilehash: 4105dc7bf5f65eb3bc6dfe3e2abf2206caffc7a4
+ms.sourcegitcommit: 61a4c522182aa1cacbf5669683d9570a3bf043b2
 ms.translationtype: MT
 ms.contentlocale: it-IT
 ms.lasthandoff: 08/26/2021
-ms.locfileid: "122988824"
+ms.locfileid: "122879670"
 ---
 # <a name="span-idwwan_profile_v4element_iconfilepathspaniconfilepath"></a><span id="WWAN_profile_v4.element_ICONFilePath"></span>ICONFilePath
 
-Percorso del file dell'icona per la connessione. L'interfaccia utente di connessione del sistema operativo visualizza l'icona quando viene stabilita una connessione usando questo profilo.
+Percorso del file dell'icona per la connessione. L'interfaccia utente di connessione del sistema operativo visualizza l'icona quando viene stabilita una connessione tramite questo profilo.
 
-Per altre informazioni sull'uso di questo elemento, vedere la documentazione v1 per [**ICONFilePath**](./schema-iconfilepath-mbnprofile-element.md).
+Per altri dettagli sull'uso di questo elemento, vedere la documentazione v1 per [**ICONFilePath.**](./schema-iconfilepath-mbnprofile-element.md)
 
 ## <a name="element-hierarchy"></a>Gerarchia degli elementi
 
@@ -50,7 +50,7 @@ Nessuno.
 
 | Elemento padre | Descrizione | 
 |----------------|-------------|
-| <a href="element-mbnprofileext.md">MBNProfileExt</a> | <p><strong>L'elemento MBNProfileExt</strong> è un'estensione dell'elemento MBNProfile precedente. Identifica un profilo Mobile Broadband con un set più ricco di opzioni rispetto all'elemento MBNProfile.</p><p>In un profilo possono essere presenti più elementi MbnProfileExt che descrivono le impostazioni del profilo per un determinato set di condizioni operative. Usare <a href="element-profileconditionedon.md"><strong>l'elemento figlio ProfileConditionedOn</strong></a> di <strong>MBNProfileExt</strong> per specificare le condizioni operative che rendono un profilo specifico il profilo attivo.</p> | 
+| <a href="element-mbnprofileext.md">MBNProfileExt</a> | <p><strong>L'elemento MBNProfileExt</strong> è un'estensione dell'elemento MBNProfile precedente. Identifica un profilo Mobile Broadband con un set di opzioni più ricco rispetto all'elemento MBNProfile.</p><p>In un profilo possono essere presenti più elementi MbnProfileExt, che descrivono le impostazioni del profilo per un particolare set di condizioni operative. Usare <a href="element-profileconditionedon.md"><strong>l'elemento figlio ProfileConditionedOn</strong></a> di <strong>MBNProfileExt</strong> per specificare le condizioni operative che rendono un profilo specifico il profilo attivo.</p> | 
 
 
  
@@ -58,9 +58,7 @@ Nessuno.
 ## <a name="requirements"></a>Requisiti
 
 
-| Requisito | Valore |
-|------------|----------|
-| <p>Spazio dei nomi</p> | <p>https://www.microsoft.com/networking/WWAN/profile/v4</p> | 
+| | | <p>Spazio dei nomi</p> | <p>https://www.microsoft.com/networking/WWAN/profile/v4</p> | 
 
 
  

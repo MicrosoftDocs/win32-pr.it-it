@@ -1,27 +1,27 @@
 ---
 title: Recupero dei metadati di un provider
-description: Un provider usa un manifesto di strumentazione per identificare se stesso, definire gli eventi che scrive e altri componenti come canali, attività e parole chiave.
+description: Un provider usa un manifesto di strumentazione per identificarsi, definire gli eventi che scrive e altri componenti, ad esempio canali, attività e parole chiave.
 ms.assetid: c9442dc1-3599-4e81-a144-943c2843a2f7
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 1b7c78c4e8b96a8d7b0c7002b54e96eec473811f
-ms.sourcegitcommit: 2d531328b6ed82d4ad971a45a5131b430c5866f7
+ms.openlocfilehash: 757796bcc80f9130e20c79c2ed05b98cd2fa0866485cb7df1ca17133d5074b6c
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "103855954"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120124211"
 ---
 # <a name="getting-a-providers-metadata"></a>Recupero dei metadati di un provider
 
-Un provider usa un manifesto di strumentazione per identificare se stesso, definire gli eventi che scrive e altri componenti come canali, attività e parole chiave. Per accedere a queste informazioni in fase di esecuzione, chiamare la funzione [**EvtOpenPublisherMetadata**](/windows/desktop/api/WinEvt/nf-winevt-evtopenpublishermetadata) per ottenere un handle per i metadati del server di pubblicazione.
+Un provider usa un manifesto di strumentazione per identificarsi, definire gli eventi che scrive e altri componenti, ad esempio canali, attività e parole chiave. Per accedere a queste informazioni in fase di esecuzione, chiamare la [**funzione EvtOpenPublisherMetadata**](/windows/desktop/api/WinEvt/nf-winevt-evtopenpublishermetadata) per ottenere un handle per i metadati del server di pubblicazione.
 
-I metadati sono divisi tra i metadati del server di pubblicazione e i metadati dell'evento. I metadati del server di pubblicazione contengono i metadati che identificano il server di pubblicazione e tutti i metadati che definisce, ad esempio canali, livelli, attività, codici operativi e parole chiave. Per un elenco dei metadati del provider che è possibile recuperare, vedere l'enumerazione dell' [**\_ \_ \_ \_ ID della proprietà dei metadati del server di pubblicazione evt**](/windows/desktop/api/WinEvt/ne-winevt-evt_publisher_metadata_property_id) . Per ottenere i metadati, chiamare la funzione [**EvtGetPublisherMetadataProperty**](/windows/desktop/api/WinEvt/nf-winevt-evtgetpublishermetadataproperty) . Questa funzione restituisce i valori delle proprietà per le proprietà che identificano il provider e gli handle per i componenti Channels, levels, Tasks, OpCodes e keywords. Per accedere ai metadati per questi componenti, chiamare la funzione [**EvtGetObjectArrayProperty**](/windows/desktop/api/WinEvt/nf-winevt-evtgetobjectarrayproperty) .
+I metadati sono divisi tra i metadati dell'editore e i metadati dell'evento. I metadati del server di pubblicazione contengono i metadati che identificano il server di pubblicazione e tutti i metadati definiti, ad esempio canali, livelli, attività, codici operativo e parole chiave. Per un elenco dei metadati del provider che è possibile recuperare, vedere [**l'enumerazione EVT \_ PUBLISHER METADATA PROPERTY \_ \_ \_ ID.**](/windows/desktop/api/WinEvt/ne-winevt-evt_publisher_metadata_property_id) Per ottenere i metadati, chiamare la [**funzione EvtGetPublisherMetadataProperty.**](/windows/desktop/api/WinEvt/nf-winevt-evtgetpublishermetadataproperty) Questa funzione restituisce i valori delle proprietà per le proprietà che identificano il provider e gestisce i componenti canali, livelli, attività, codici operativo e parole chiave. Per accedere ai metadati per questi componenti, chiamare la [**funzione EvtGetObjectArrayProperty.**](/windows/desktop/api/WinEvt/nf-winevt-evtgetobjectarrayproperty)
 
-Per ottenere i metadati dell'evento, chiamare la funzione [**EvtOpenEventMetadataEnum**](/windows/desktop/api/WinEvt/nf-winevt-evtopeneventmetadataenum) per ottenere un elenco degli eventi definiti dal provider. Chiamare quindi la funzione [**EvtNextEventMetadata**](/windows/desktop/api/WinEvt/nf-winevt-evtnexteventmetadata) in un ciclo per enumerare gli eventi. Per un elenco di metadati che è possibile ottenere per un evento, vedere l'enumerazione di [**\_ \_ \_ \_ ID della proprietà dei metadati dell'evento evt**](/windows/desktop/api/WinEvt/ne-winevt-evt_event_metadata_property_id) . Per ottenere i metadati, chiamare la funzione [**EvtGetEventMetadataProperty**](/windows/desktop/api/WinEvt/nf-winevt-evtgeteventmetadataproperty) . Queste proprietà restituiscono un valore integer per ogni elemento della definizione dell'evento. Per l'ID e la versione dell'evento, la visualizzazione del valore intero è sufficiente, ma per gli altri elementi, ad esempio il canale e il livello, la visualizzazione del valore integer potrebbe non avere alcun significato per l'utente. Il valore integer per questi elementi corrisponde al valore dell'attributo value. È possibile utilizzare il valore integer per eseguire il mapping ai metadati del provider e ottenere la stringa del messaggio o il valore del nome per l'elemento e visualizzarlo invece all'utente.
+Per ottenere i metadati dell'evento, chiamare la funzione [**EvtOpenEventMetadataEnum**](/windows/desktop/api/WinEvt/nf-winevt-evtopeneventmetadataenum) per ottenere un elenco degli eventi definiti dal provider. Chiamare quindi la [**funzione EvtNextEventMetadata**](/windows/desktop/api/WinEvt/nf-winevt-evtnexteventmetadata) in un ciclo per enumerare gli eventi. Per un elenco dei metadati che è possibile ottenere per un evento, vedere l'enumerazione [**EVT \_ EVENT METADATA PROPERTY \_ \_ \_ ID.**](/windows/desktop/api/WinEvt/ne-winevt-evt_event_metadata_property_id) Per ottenere i metadati, chiamare la [**funzione EvtGetEventMetadataProperty.**](/windows/desktop/api/WinEvt/nf-winevt-evtgeteventmetadataproperty) Queste proprietà restituiscono un valore intero per ogni elemento della definizione di evento. Per l'ID evento e la versione, la visualizzazione del valore intero è corretta, ma per gli altri elementi, ad esempio channel e level, la visualizzazione del valore intero potrebbe non avere alcun significato per l'utente. Il valore intero per questi elementi è il valore dell'attributo value. È possibile usare il valore intero per eseguire il mapping nei metadati del provider e ottenere la stringa di messaggio o il valore del nome per l'elemento e visualizzarlo all'utente.
 
-Per un esempio in cui viene illustrato come enumerare i provider registrati nel computer, vedere [enumerazione dei provider registrati](#enumerating-registered-providers).
+Per un esempio che illustra come enumerare i provider registrati nel computer, vedere [Enumerazione dei provider registrati.](#enumerating-registered-providers)
 
-Per un esempio in cui viene illustrato come ottenere i metadati per un provider registrato, vedere [recupero dei metadati per un provider](#getting-a-providers-metadata).
+Per un esempio che illustra come ottenere i metadati per un provider registrato, vedere [Recupero dei metadati per un provider.](#getting-a-providers-metadata)
 
 ## <a name="enumerating-registered-providers"></a>Enumerazione dei provider registrati
 
@@ -109,7 +109,7 @@ cleanup:
 
 ## <a name="getting-the-metadata-for-a-provider"></a>Recupero dei metadati per un provider
 
-Nell'esempio seguente viene illustrato come ottenere i metadati per il provider e gli eventi che definisce.
+Nell'esempio seguente viene illustrato come ottenere i metadati per il provider e gli eventi definiti.
 
 
 ```C++
@@ -1485,9 +1485,9 @@ LPWSTR GetMessageString(EVT_HANDLE hMetadata, DWORD dwMessageId)
 
 
 
- 
+ 
 
- 
+ 
 
 
 

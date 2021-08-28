@@ -1,9 +1,9 @@
 ---
-title: Event. shiftKey
-description: L'attributo shiftKey recupera un valore che indica se il tasto MAIUSC è inattivo quando si è verificato l'evento.
+title: event.shiftKey
+description: L'attributo shiftKey recupera un valore che indica se il tasto MAIUSC era premuto quando si è verificato l'evento.
 ms.assetid: 02b70533-936f-4543-8a36-88e7c2d1b2a8
 keywords:
-- Media Player di Windows Event. shiftKey
+- Event.shiftKey Windows Media Player
 topic_type:
 - apiref
 api_name:
@@ -12,16 +12,16 @@ api_type:
 - NA
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 256e4e51cb13136dc09f7e86b6805b7e0efd42a7
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: 678e1048e5299446e75cfe16ff09a8f499aec4f0e1e768c80cf23d1ebb6cad3a
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "106332138"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120123601"
 ---
-# <a name="eventshiftkey"></a>Event. shiftKey
+# <a name="eventshiftkey"></a>event.shiftKey
 
-L'attributo **shiftKey** recupera un valore che indica se il tasto MAIUSC è inattivo quando si è verificato l'evento.
+**L'attributo shiftKey** recupera un valore che indica se il tasto MAIUSC era premuto quando si è verificato l'evento.
 
 ``` syntax
 event.shiftKey
@@ -29,14 +29,14 @@ event.shiftKey
 
 ## <a name="possible-values"></a>Valori possibili
 
-Questo attributo è un **valore booleano** di sola lettura.
+Questo attributo è un valore booleano **di sola lettura.**
 
 
 
 | Valore | Descrizione                                       |
 |-------|---------------------------------------------------|
-| true  | Indica che il tasto MAIUSC è posizionato in basso. |
-| false | Indica che il tasto MAIUSC è posizionato in alto.   |
+| true  | Indica che il tasto MAIUSC era nella posizione verso il basso. |
+| false | Indica che il tasto MAIUSC era nella posizione verso l'alto.   |
 
 
 
@@ -48,7 +48,7 @@ Questo attributo è un **valore booleano** di sola lettura.
 
 | Requisito | Valore |
 |--------------------|------------------------------------------------------|
-| Versione<br/> | Windows Media Player versione 7,0 o successiva<br/> |
+| Versione<br/> | Windows Media Player versione 7.0 o successiva<br/> |
 
 
 
@@ -56,7 +56,7 @@ Questo attributo è un **valore booleano** di sola lettura.
 
 <dl> <dt>
 
-[**Attributi dell'evento di ambiente**](ambient-event-attributes.md)
+[**Attributi degli eventi di ambiente**](ambient-event-attributes.md)
 </dt> </dl>
 
  

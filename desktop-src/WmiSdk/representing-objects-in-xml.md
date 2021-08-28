@@ -1,48 +1,48 @@
 ---
-description: Genera rappresentazioni XML di oggetti.
+description: Genera rappresentazioni XML di oggetti .
 ms.assetid: 06d2b532-7ab2-489d-9021-27b5187c8f2b
 ms.tgt_platform: multiple
 title: Rappresentazione di oggetti in XML
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 9698c54eeff61517a1389ceea14bc2415727f085
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 68bcbc47a0e5466b69775b4ff9a6c09ce20bae6f
+ms.sourcegitcommit: 61a4c522182aa1cacbf5669683d9570a3bf043b2
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "106309906"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "122879653"
 ---
 # <a name="representing-objects-in-xml"></a>Rappresentazione di oggetti in XML
 
 Il componente codificatore XML in WMI genera rappresentazioni XML di oggetti.
 
-In C++ è possibile avviare il codificatore XML con una chiamata al metodo [**IWbemObjectTextSrc. GetText**](/windows/desktop/api/Wbemcli/nf-wbemcli-iwbemobjecttextsrc-gettext) , specificando l'oggetto che deve essere rappresentato in XML e il formato di testo da utilizzare nella rappresentazione. Per ulteriori informazioni e un esempio di codice, vedere per codificare un oggetto in XML utilizzando C/C++.
+In C++ è possibile avviare il codificatore XML con una chiamata al metodo [**IWbemObjectTextSrc.GetText,**](/windows/desktop/api/Wbemcli/nf-wbemcli-iwbemobjecttextsrc-gettext) specificando l'oggetto da rappresentare in XML e il formato testo da usare nella rappresentazione. Per altre informazioni e un esempio di codice, vedere Per codificare un oggetto in XML usando C/C++.
 
-In VBScript o Visual Basic per codificare i dati per un'istanza XML, chiamare [**SWbemObjectEx. GetText**](swbemobjectex-gettext-.md). Per ulteriori informazioni e un esempio di codice, vedere per codificare un oggetto in XML tramite VBScript.
+In VBScript o Visual Basic codificare i dati per un'istanza XML, chiamare [**SWbemObjectEx.GetText**](swbemobjectex-gettext-.md). Per altre informazioni e un esempio di codice, vedere Per codificare un oggetto in XML usando VBScript.
 
-Le sezioni seguenti sono illustrate in questo argomento:
+In questo argomento vengono illustrate le sezioni seguenti:
 
--   [Codificare un oggetto con C o C++](#encode-an-object-using-c-or-c)
--   [Codificare un oggetto tramite VBScript](#encode-an-object-using-vbscript)
+-   [Codificare un oggetto usando C o C++](#encode-an-object-using-c-or-c)
+-   [Codificare un oggetto usando VBScript](#encode-an-object-using-vbscript)
 -   [Argomenti correlati](#related-topics)
 
-## <a name="encode-an-object-using-c-or-c"></a>Codificare un oggetto con C o C++
+## <a name="encode-an-object-using-c-or-c"></a>Codificare un oggetto usando C o C++
 
 <span id="to_encode_an_object_in_xml_using_c_c_"></span><span id="TO_ENCODE_AN_OBJECT_IN_XML_USING_C_C_"></span>
 
-Nella procedura riportata di seguito viene descritto come codificare un oggetto in XML utilizzando C o C++.
+La procedura seguente descrive come codificare un oggetto in XML usando C o C++.
 
-**Per codificare un oggetto in XML utilizzando C o C++**
+**Per codificare un oggetto in XML usando C o C++**
 
-1.  Configurare il programma per accedere ai dati WMI.
+1.  Configurare il programma per l'accesso ai dati WMI.
 
-    Poiché WMI è basato sulla tecnologia COM, è necessario eseguire le chiamate necessarie alle funzioni [**CoInitializeEx**](/windows/win32/api/combaseapi/nf-combaseapi-coinitializeex) e [**CoInitializeSecurity**](/windows/win32/api/combaseapi/nf-combaseapi-coinitializesecurity) per accedere a WMI. Per ulteriori informazioni, vedere [inizializzazione di com per un'applicazione WMI](initializing-com-for-a-wmi-application.md).
+    Poiché WMI è basato sulla tecnologia COM, è necessario eseguire le chiamate richieste alle funzioni [**CoInitializeEx**](/windows/win32/api/combaseapi/nf-combaseapi-coinitializeex) e [**CoInitializeSecurity**](/windows/win32/api/combaseapi/nf-combaseapi-coinitializesecurity) per accedere a WMI. Per altre informazioni, vedere [Inizializzazione di COM per un'applicazione WMI.](initializing-com-for-a-wmi-application.md)
 
-2.  Facoltativamente, creare un oggetto [**IWbemContext**](/windows/desktop/api/WbemCli/nn-wbemcli-iwbemcontext) e inizializzarlo.
+2.  Facoltativamente, creare un [**oggetto IWbemContext**](/windows/desktop/api/WbemCli/nn-wbemcli-iwbemcontext) e inizializzarlo.
 
-    Non è necessario creare l'oggetto [**IWbemContext**](/windows/desktop/api/WbemCli/nn-wbemcli-iwbemcontext) , a meno che non sia necessario modificare l'operazione predefinita. L'oggetto context viene utilizzato dal codificatore XML per controllare la quantità di informazioni incluse nella rappresentazione XML dell'oggetto.
+    Non è necessario creare l'oggetto [**IWbemContext**](/windows/desktop/api/WbemCli/nn-wbemcli-iwbemcontext) a meno che non sia necessario modificare l'operazione predefinita. L'oggetto contesto viene usato dal codificatore XML per controllare la quantità di informazioni incluse nella rappresentazione XML dell'oggetto.
 
-    Nella tabella seguente sono elencati i valori facoltativi che è possibile specificare per l'oggetto context.
+    Nella tabella seguente sono elencati i valori facoltativi che è possibile specificare per l'oggetto contesto.
 
     
 
@@ -55,23 +55,23 @@ Nella procedura riportata di seguito viene descritto come codificare un oggetto 
     </thead>
     <tbody>
     <tr class="odd">
-    <td>&quot;&quot; <strong>VT_BOOL</strong> LocalOnly</td>
-    <td>Se è <strong>true</strong>, solo le proprietà e i metodi definiti localmente nella classe sono presenti nel codice XML risultante. Il valore predefinito è <strong>false</strong>.</td>
+    <td>&quot;LocalOnly &quot; <strong>VT_BOOL</strong></td>
+    <td>Se <strong>TRUE,</strong>solo le proprietà e i metodi definiti in locale nella classe sono presenti nel codice XML risultante. Il valore predefinito è <strong>FALSE.</strong></td>
     </tr>
     <tr class="even">
-    <td>&quot;&quot; <strong>VT_BOOL</strong> IncludeQualifiers</td>
-    <td>Se <strong>true</strong>, le classi, le istanze, le proprietà e i qualificatori di metodo sono inclusi nel codice XML risultante. Il valore predefinito è <strong>false</strong>.</td>
+    <td>&quot;IncludeQualifiers &quot; <strong>VT_BOOL</strong></td>
+    <td>Quando <strong>TRUE,</strong>classe, istanza, proprietà e qualificatori di metodo vengono inclusi nel codice XML risultante. Il valore predefinito è <strong>FALSE.</strong></td>
     </tr>
     <tr class="odd">
-    <td>&quot;&quot; <strong>VT_BOOL</strong> ExcludeSystemProperties</td>
-    <td>Se è <strong>true</strong>, le proprietà di sistema WMI vengono filtrate dall'output. Il valore predefinito è <strong>false</strong>.</td>
+    <td>&quot;ExcludeSystemProperties &quot; <strong>VT_BOOL</strong></td>
+    <td>Se <strong>TRUE,</strong>le proprietà di sistema WMI vengono filtrate dall'output. Il valore predefinito è <strong>FALSE.</strong></td>
     </tr>
     <tr class="even">
-    <td>&quot;&quot; <strong>VT_I4</strong> PathLevel</td>
-    <td><dl> 0 = <CLASS> <INSTANCE> viene generato un elemento o.<br />
-1 = <VALUE.NAMEDOBJECT> viene generato un elemento.<br />
-2 = <VALUE.OBJECTWITHLOCALPATH> viene generato un elemento.<br />
-3 = <VALUE.OBJECTWITHPATH> viene generato un.<br />
+    <td>&quot;PathLevel &quot; <strong>VT_I4</strong></td>
+    <td><dl> 0 = Viene &lt; generata una classe o un &gt; <INSTANCE> elemento.<br />
+1 = Viene <VALUE.NAMEDOBJECT> generato un elemento.<br />
+2 = Viene <VALUE.OBJECTWITHLOCALPATH> generato un elemento.<br />
+3 = Viene <VALUE.OBJECTWITHPATH> generato un oggetto .<br />
     </dl> Il valore predefinito è 0 (zero).<br/></td>
     </tr>
     </tbody>
@@ -81,7 +81,7 @@ Nella procedura riportata di seguito viene descritto come codificare un oggetto 
 
      
 
-    Nell'esempio di codice riportato di seguito viene illustrato come inizializzare l'oggetto Context per includere qualificatori ed escludere le proprietà di sistema.
+    Nell'esempio di codice seguente viene illustrato come inizializzare l'oggetto di contesto per includere qualificatori ed escludere le proprietà di sistema.
 
     ```C++
     VARIANT vValue;
@@ -123,9 +123,9 @@ Nella procedura riportata di seguito viene descritto come codificare un oggetto 
 
 3.  Ottenere un riferimento alla classe o all'istanza da codificare in XML.
 
-    Dopo l'inizializzazione di COM e la connessione a WMI, chiamare [**GetObject**](/windows/desktop/api/WbemCli/nf-wbemcli-iwbemservices-getobject) per recuperare un riferimento alla classe o all'istanza specificata. Se è stato usato un BSTR per specificare la classe o l'istanza, chiamare [**SysFreeString**](/windows/win32/api/oleauto/nf-oleauto-sysfreestring) per liberare la memoria allocata da [**SysAllocString**](/windows/win32/api/oleauto/nf-oleauto-sysallocstring).
+    Dopo aver inizializzato COM e essere connessi a WMI, chiamare [**GetObject**](/windows/desktop/api/WbemCli/nf-wbemcli-iwbemservices-getobject) per recuperare un riferimento alla classe o all'istanza specificata. Se è stato usato un BSTR per specificare la classe o l'istanza, chiamare [**SysFreeString**](/windows/win32/api/oleauto/nf-oleauto-sysfreestring) per liberare la memoria allocata [**da SysAllocString**](/windows/win32/api/oleauto/nf-oleauto-sysallocstring).
 
-    Nell'esempio di codice seguente viene recuperato un riferimento a un'istanza di [**Win32 \_ disco logico**](/windows/desktop/CIMWin32Prov/win32-logicaldisk) .
+    Nell'esempio di codice seguente viene recuperato un riferimento a [**un'istanza \_ di LogicalDisk Win32.**](/windows/desktop/CIMWin32Prov/win32-logicaldisk)
 
     ```C++
     HRESULT hr = NULL;
@@ -148,11 +148,11 @@ Nella procedura riportata di seguito viene descritto come codificare un oggetto 
 
     
 
-4.  Creare un oggetto [**IWbemObjectTextSrc**](/windows/desktop/api/Wbemcli/nn-wbemcli-iwbemobjecttextsrc) .
+4.  Creare un [**oggetto IWbemObjectTextSrc.**](/windows/desktop/api/Wbemcli/nn-wbemcli-iwbemobjecttextsrc)
 
-    Dopo aver creato un riferimento a un oggetto, è necessario creare l'oggetto [**IWbemObjectTextSrc**](/windows/desktop/api/Wbemcli/nn-wbemcli-iwbemobjecttextsrc) con una chiamata a [**CoCreateInstance**](/windows/win32/api/combaseapi/nf-combaseapi-cocreateinstance). L'oggetto **IWbemObjectTextSrc** viene utilizzato per generare il testo XML effettivo.
+    Dopo aver creato un riferimento a un oggetto, è necessario creare [**l'oggetto IWbemObjectTextSrc**](/windows/desktop/api/Wbemcli/nn-wbemcli-iwbemobjecttextsrc) con una chiamata a [**CoCreateInstance**](/windows/win32/api/combaseapi/nf-combaseapi-cocreateinstance). **L'oggetto IWbemObjectTextSrc** viene usato per generare il testo XML effettivo.
 
-    Nell'esempio di codice seguente viene illustrato come creare un oggetto [**IWbemObjectTextSrc**](/windows/desktop/api/Wbemcli/nn-wbemcli-iwbemobjecttextsrc) chiamando [**CoCreateInstance**](/windows/win32/api/combaseapi/nf-combaseapi-cocreateinstance).
+    Nell'esempio di codice seguente viene illustrato come creare un [**oggetto IWbemObjectTextSrc**](/windows/desktop/api/Wbemcli/nn-wbemcli-iwbemobjecttextsrc) chiamando [**CoCreateInstance**](/windows/win32/api/combaseapi/nf-combaseapi-cocreateinstance).
 
     ```C++
     HRESULT hr = NULL;
@@ -173,11 +173,11 @@ Nella procedura riportata di seguito viene descritto come codificare un oggetto 
 
     
 
-5.  Richiamare il metodo [**IWbemObjectTextSrc. GetText**](/windows/desktop/api/Wbemcli/nf-wbemcli-iwbemobjecttextsrc-gettext) per ottenere una rappresentazione XML di un oggetto.
+5.  Richiamare il [**metodo IWbemObjectTextSrc.GetText**](/windows/desktop/api/Wbemcli/nf-wbemcli-iwbemobjecttextsrc-gettext) per ottenere una rappresentazione XML di un oggetto.
 
-    Dopo aver impostato il contesto per la rappresentazione dell'oggetto, ottenendo un riferimento all'oggetto e creando un oggetto [**IWbemObjectTextSrc**](/windows/desktop/api/Wbemcli/nn-wbemcli-iwbemobjecttextsrc) , si è pronti per generare una rappresentazione XML dell'oggetto specificato chiamando il metodo [**IWbemObjectTextSrc. GetText**](/windows/desktop/api/Wbemcli/nf-wbemcli-iwbemobjecttextsrc-gettext) .
+    Dopo aver impostato il contesto per la rappresentazione dell'oggetto, aver creato un riferimento all'oggetto e aver creato un oggetto [**IWbemObjectTextSrc,**](/windows/desktop/api/Wbemcli/nn-wbemcli-iwbemobjecttextsrc) è possibile generare una rappresentazione XML dell'oggetto specificato chiamando il metodo [**IWbemObjectTextSrc.GetText.**](/windows/desktop/api/Wbemcli/nf-wbemcli-iwbemobjecttextsrc-gettext)
 
-    Il codice di esempio C++ seguente genera una rappresentazione XML dell'oggetto a cui fa riferimento *pClass*. La rappresentazione XML viene restituita in *strText*. Il terzo parametro di [**gettext**](/windows/desktop/api/Wbemcli/nn-wbemcli-iwbemobjecttextsrc) specifica il formato di testo da utilizzare per il codice XML e deve essere WMI \_ obj \_ Text \_ CIM \_ DTD \_ 2 \_ 0 (0x1) o WMI \_ obj \_ Text \_ WMI \_ DTD \_ 2 \_ 0 (0x2). Per ulteriori informazioni su questi valori, vedere [**IWbemObjectTextSrc:: GetText**](/windows/desktop/api/Wbemcli/nf-wbemcli-iwbemobjecttextsrc-gettext) parameter values.
+    Il codice di esempio C++ seguente genera una rappresentazione XML dell'oggetto a cui fa riferimento *pClass*. La rappresentazione XML viene restituita in *strText*. Il terzo parametro di [**GetText**](/windows/desktop/api/Wbemcli/nn-wbemcli-iwbemobjecttextsrc) specifica il formato di testo da usare per xml e deve essere WMI \_ OBJ \_ TEXT \_ CIM \_ DTD \_ 2 \_ 0 (0x1) o WMI \_ OBJ \_ TEXT WMI \_ \_ DTD \_ 2 \_ 0 (0x2). Per altre informazioni su questi valori, vedere Valori dei parametri [**IWbemObjectTextSrc::GetText.**](/windows/desktop/api/Wbemcli/nf-wbemcli-iwbemobjecttextsrc-gettext)
 
     ```C++
     HRESULT hr = NULL;
@@ -200,7 +200,7 @@ Nella procedura riportata di seguito viene descritto come codificare un oggetto 
 
     
 
-Il codice di esempio C++ riportato di seguito include tutti i passaggi della procedura precedente e codifica la classe [**Win32 \_ disco logico**](/windows/desktop/CIMWin32Prov/win32-logicaldisk) in XML, inclusi i qualificatori di classi, proprietà e metodi ed escludendo le proprietà di sistema.
+Il codice di esempio C++ seguente include tutti i passaggi della procedura precedente e codifica la classe [**\_ LogicalDisk Win32**](/windows/desktop/CIMWin32Prov/win32-logicaldisk) in XML, inclusi i qualificatori di classe, proprietà e metodo ed escludendo le proprietà di sistema.
 
 
 ```C++
@@ -348,17 +348,17 @@ int _cdecl main(int argc, char * argv[])
 
 
 
-## <a name="encode-an-object-using-vbscript"></a>Codificare un oggetto tramite VBScript
+## <a name="encode-an-object-using-vbscript"></a>Codificare un oggetto usando VBScript
 
 <span id="to_encode_an_object_in_xml_using_vbscript"></span><span id="TO_ENCODE_AN_OBJECT_IN_XML_USING_VBSCRIPT"></span>
 
-Nella procedura riportata di seguito viene descritto come codificare un oggetto in XML utilizzando VBScript.
+La procedura seguente descrive come codificare un oggetto in XML usando VBScript.
 
-**Per codificare un oggetto in XML tramite VBScript**
+**Per codificare un oggetto in XML usando VBScript**
 
-1.  Facoltativamente, creare un oggetto [**SWbemNamedValueSet**](swbemnamedvalueset.md) e inizializzarlo in modo da impostare i valori di contesto richiesti per la rappresentazione XML.
+1.  Facoltativamente, creare un [**oggetto SWbemNamedValueSet**](swbemnamedvalueset.md) e inizializzarlo in modo da impostare i valori di contesto necessari per la rappresentazione XML.
 
-    Nell'esempio di codice seguente viene illustrato il modo in cui i valori indicano al codificatore XML di generare un valore <. OBJECTWITHLOCALPATH> elemento, inclusi tutti i qualificatori ed escludendo le proprietà di sistema quando viene costruita la rappresentazione XML dell'oggetto.
+    Nell'esempio di codice seguente viene illustrato come i valori indicano al codificatore XML di generare un <VALUE. OBJECTWITHLOCALPATH>, inclusi tutti i qualificatori ed escludendo le proprietà di sistema quando costruisce la rappresentazione XML dell'oggetto.
 
     ```VB
     ' Create an optional SWbemNamedValueSet object
@@ -375,7 +375,7 @@ Nella procedura riportata di seguito viene descritto come codificare un oggetto 
 
 2.  Recuperare un'istanza dell'oggetto o della classe da rappresentare in XML.
 
-    Nell'esempio di codice seguente viene recuperata un'istanza dell'oggetto.
+    Nell'esempio di codice seguente viene recuperata un'istanza dell'oggetto .
 
     ```VB
     ' Retrieve the object/class to be represented in XML
@@ -384,9 +384,9 @@ Nella procedura riportata di seguito viene descritto come codificare un oggetto 
 
     
 
-3.  Richiamare il metodo [**gettext \_**](swbemobjectex-gettext-.md) dell'istanza di creata nel passaggio precedente, usando 1 come parametro per specificare il formato di testo che corrisponde alla dtd CIM versione 2,0 o 2 per specificare il formato di testo che corrisponde alla dtd WMI versione 2,0. Se è stato creato l'oggetto [**SWbemNamedValueSet**](swbemnamedvalueset.md) nel passaggio 1, includerlo nell'elenco dei parametri come terzo parametro.
+3.  Richiamare il metodo [**GetText \_**](swbemobjectex-gettext-.md) dell'istanza creata nel passaggio precedente, usando 1 come parametro per specificare il formato di testo corrispondente a CIM DTD versione 2.0 o 2 per specificare il formato di testo corrispondente a WMI DTD versione 2.0. Se [**l'oggetto SWbemNamedValueSet**](swbemnamedvalueset.md) è stato creato nel passaggio 1, includerlo nell'elenco di parametri come terzo parametro.
 
-    Nell'esempio di codice riportato di seguito viene illustrato come richiamare il metodo [**gettext \_**](swbemobjectex-gettext-.md) dell'istanza di.
+    Nell'esempio di codice seguente viene illustrato come richiamare il [**metodo GetText \_**](swbemobjectex-gettext-.md) dell'istanza di .
 
     ```VB
     ' Get the XML representation of the object
@@ -399,9 +399,9 @@ Nella procedura riportata di seguito viene descritto come codificare un oggetto 
 
     
 
-4.  Facoltativamente, verificare che il codice XML generato nel passaggio 3 sia un codice XML ben formato, creando e inizializzando un oggetto XML Document Object Model (DOM) e quindi caricarvi il testo XML.
+4.  Facoltativamente, verificare che il codice XML generato nel passaggio 3 sia xml ben formato, creando e inizializzando un oggetto DOM (XML Document Object Model) e quindi caricando il testo XML.
 
-    Nell'esempio di codice seguente viene illustrato come creare e inizializzare un oggetto DOM XML e come caricarvi il testo XML.
+    Nell'esempio di codice seguente viene illustrato come creare e inizializzare un oggetto DOM XML e caricarne il testo XML.
 
     ```VB
     ' Create an XMLDOM object
@@ -416,9 +416,9 @@ Nella procedura riportata di seguito viene descritto come codificare un oggetto 
 
     
 
-5.  Output della rappresentazione XML dell'oggetto.
+5.  Restituisce la rappresentazione XML dell'oggetto .
 
-    Nell'esempio di codice riportato di seguito viene illustrato come utilizzare WScript per restituire il codice XML.
+    Nell'esempio di codice seguente viene illustrato come usare wscript per l'output del codice XML.
 
     ```VB
     wscript.echo strText
@@ -426,7 +426,7 @@ Nella procedura riportata di seguito viene descritto come codificare un oggetto 
 
     
 
-    Se si sceglie di utilizzare il modello DOM XML per verificare che l'XML generato sia in formato corretto, sostituire la riga precedente con il codice seguente.
+    Se si è scelto di usare IL DOM XML per verificare che il formato del codice XML generato sia corretto, sostituire la riga precedente con la seguente.
 
     ```VB
     wscript.echo xml.xml
@@ -434,7 +434,7 @@ Nella procedura riportata di seguito viene descritto come codificare un oggetto 
 
     
 
-Nell'esempio di codice VBScript seguente sono inclusi tutti i passaggi della procedura precedente e viene codificata la classe [**Win32 \_ disco logico**](/windows/desktop/CIMWin32Prov/win32-logicaldisk) in XML, inclusi i qualificatori di classi, proprietà e metodi ed escluse le proprietà di sistema.
+L'esempio di codice VBScript seguente include tutti i passaggi della procedura precedente e codifica la classe [**\_ LogicalDisk Win32**](/windows/desktop/CIMWin32Prov/win32-logicaldisk) in XML, inclusi i qualificatori di classe, proprietà e metodo ed escludendo le proprietà di sistema.
 
 
 ```VB
@@ -482,7 +482,7 @@ wscript.echo xml.xml
 
 <dl> <dt>
 
-[Utilizzo di WMI](using-wmi.md)
+[Uso di WMI](using-wmi.md)
 </dt> </dl>
 
  

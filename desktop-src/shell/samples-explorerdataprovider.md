@@ -9,12 +9,12 @@ api_type: ''
 api_location: ''
 topic_type:
 - kbArticle
-ms.openlocfilehash: 223f498f42e33dda09206b1e21a44138fda54e261ec957efb62e55148a014d6e
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 31e1d42e4660e0e73830876cfdeb0a5c8a5957cd
+ms.sourcegitcommit: 9b5faa61c38b2d0c432b7f2dbee8c127b0e28a7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "117677838"
+ms.lasthandoff: 08/19/2021
+ms.locfileid: "122471887"
 ---
 # <a name="explorer-data-provider-sample"></a>Esempio di provider di dati Explorer
 
@@ -64,19 +64,11 @@ Per compilare l'esempio usando Microsoft Visual Studio (scelta preferita):
 >
 > <span codelanguage=""></span>
 >
-> <table>
-> <colgroup>
-> <col style="width: 100%" />
-> </colgroup>
-> <tbody>
-> <tr class="odd">
-> <td><pre><code>LinkIncremental=&quot;1&quot;
-> AdditionalLibraryDirectories=&quot;&quot;c:\Program Files\Microsoft SDKs\Windows\v6.0\Lib\x64&quot;&quot;
-> ModuleDefinitionFile=&quot;ExplorerDataProvider.def&quot;
-> GenerateDebugInformation=&quot;true&quot;</code></pre></td>
-> </tr>
-> </tbody>
-> </table> 
+> 
+| | | <pre><code>LinkIncremental="1"&gt; AdditionalLibraryDirectories=""c:\Program Files\Microsoft SDKs\Windows\v6.0\Lib\x64""&gt; ModuleDefinitionFile="ExplorerDataProvider.def"&gt; GenerateDebugInformation="true"</code></pre> | 
+
+>
+> 
 >
 > La versione di questo esempio scaricabile da Code Gallery è stata corretta per questo problema e non è necessaria alcuna azione aggiuntiva da parte dell'utente.
 >
@@ -84,7 +76,7 @@ Per compilare l'esempio usando Microsoft Visual Studio (scelta preferita):
 >
 > ## <a name="running-the-sample"></a>Esecuzione dell'esempio
 >
-> 1.  Passare alla directory che contiene il nuovo .dll e il file con estensione propdesc, usando il prompt dei comandi o Windows Explorer.
+> 1.  Passare alla directory che contiene il nuovo file .dll e propdesc, usando il prompt dei comandi o Windows Explorer.
 > 2.  Nella riga di comando digitare `regsvr32.exe` .
 >     > [!Note]  
 >     > Se si esegue questo comando da un prompt dei comandi con privilegi elevati, la registrazione automatica registrerà automaticamente anche il file propdesc. Se viene eseguito da un prompt dei comandi senza privilegi elevati, l'estensione dello spazio dei nomi funzionerà, ma senza funzionalità di proprietà personalizzate.

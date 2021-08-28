@@ -3,7 +3,7 @@ title: D1108 Factory errata
 ms.assetid: eb851118-0541-4c9a-a22d-b98f041852bb
 description: La risorsa è stata allocata dalla factory 1 e usata con la factory 2.
 keywords:
-- D1108 Factory errato Direct2D
+- D1108 Factory Direct2D non corretto
 topic_type:
 - apiref
 api_name:
@@ -13,16 +13,16 @@ api_type:
 ms.topic: reference
 ms.date: 05/31/2018
 ms.custom: seodec18
-ms.openlocfilehash: 20021472467d7861aa2b9cabd5602b5a167f20ab
-ms.sourcegitcommit: c276a8912787b2cda74dcf54eb96df961bb1188b
+ms.openlocfilehash: 463909abeda1410804fa4b842dbdc829c3a74271
+ms.sourcegitcommit: 4e94fc75fad7b2a0f3c92a26f97e89924e59b7a9
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/20/2021
-ms.locfileid: "122622157"
+ms.lasthandoff: 08/24/2021
+ms.locfileid: "122786727"
 ---
 # <a name="d1108-wrong-factory"></a>D1108: Factory errata
 
-La risorsa \[ *è stata* \] allocata dalla factory \[ *1* \] e usata con la factory \[ *2.* \]
+La risorsa \[ *di risorsa* \] è stata allocata dalla factory \[ *1* \] e usata con factory factory \[ *2.* \]
 
 ## <a name="placeholders"></a>Segnaposto
 
@@ -56,7 +56,7 @@ Indirizzo della factory con cui è *stata usata* la risorsa.
 
 ## <a name="examples"></a>Esempio
 
-Nell'esempio seguente vengono prima creati due oggetti [**ID2D1Factory abilitati**](/windows/win32/api/d2d1/nn-d2d1-id2d1factory) per il debug. crea quindi una geometria dalla prima factory e un pennello dalla seconda factory. Infine, chiama [**FillGeometry,**](/windows/win32/api/d2d1/nf-d2d1-id2d1rendertarget-fillgeometry)passando la geometria e il pennello.
+Nell'esempio seguente vengono innanzitutto creati due oggetti [**ID2D1Factory abilitati**](/windows/win32/api/d2d1/nn-d2d1-id2d1factory) per il debug. crea quindi una geometria dalla prima factory e un pennello dalla seconda factory. Infine, chiama [**FillGeometry**](/windows/win32/api/d2d1/nf-d2d1-id2d1rendertarget-fillgeometry), passando la geometria e il pennello.
 
 
 ```C++
@@ -96,7 +96,7 @@ Nell'esempio seguente vengono prima creati due oggetti [**ID2D1Factory abilitati
 
 
 
-<span codelanguage="ManagedCPlusPlus"></span>
+
 
 <table>
 <colgroup>
@@ -119,7 +119,7 @@ Nell'esempio seguente vengono prima creati due oggetti [**ID2D1Factory abilitati
 </tbody>
 </table>
 
-<span codelanguage="ManagedCPlusPlus"></span>
+
 
 <table>
 <colgroup>
@@ -143,7 +143,7 @@ Nell'esempio seguente vengono prima creati due oggetti [**ID2D1Factory abilitati
 </tbody>
 </table>
 
-<span codelanguage="ManagedCPlusPlus"></span>
+
 
 <table>
 <colgroup>
@@ -166,7 +166,7 @@ Nell'esempio seguente vengono prima creati due oggetti [**ID2D1Factory abilitati
 
 
 
-Questo esempio genera il messaggio di debug seguente:
+In questo esempio viene generato il messaggio di debug seguente:
 
 
 ```

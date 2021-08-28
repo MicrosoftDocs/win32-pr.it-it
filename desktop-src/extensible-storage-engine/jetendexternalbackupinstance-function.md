@@ -1,6 +1,6 @@
 ---
-description: 'Altre informazioni su: funzione JetEndExternalBackupInstance'
-title: JetEndExternalBackupInstance (funzione)
+description: Altre informazioni sulla funzione JetEndExternalBackupInstance
+title: Funzione JetEndExternalBackupInstance
 TOCTitle: JetEndExternalBackupInstance Function
 ms:assetid: 2256f63e-91f5-44ad-b67e-506dd71ffa94
 ms:mtpsurl: https://msdn.microsoft.com/library/Gg269204(v=EXCHG.10)
@@ -18,21 +18,21 @@ api_type:
 api_location:
 - ESENT.DLL
 ROBOTS: INDEX,FOLLOW
-ms.openlocfilehash: a017a0dbb4fa2f92c3e43a9dd2ff5649b65ee375
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: f82af0be3185db36498d9a5888da190e92314184
+ms.sourcegitcommit: 9b5faa61c38b2d0c432b7f2dbee8c127b0e28a7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "104057926"
+ms.lasthandoff: 08/19/2021
+ms.locfileid: "122479177"
 ---
-# <a name="jetendexternalbackupinstance-function"></a>JetEndExternalBackupInstance (funzione)
+# <a name="jetendexternalbackupinstance-function"></a>Funzione JetEndExternalBackupInstance
 
 
 _**Si applica a:** Windows | Windows Server_
 
-## <a name="jetendexternalbackupinstance-function"></a>JetEndExternalBackupInstance (funzione)
+## <a name="jetendexternalbackupinstance-function"></a>Funzione JetEndExternalBackupInstance
 
-La funzione **JetEndExternalBackupInstance** termina una sessione di backup esterna. Questa API è l'ultima API in una serie di API che devono essere chiamate per eseguire un backup online (non basato su VSS) riuscito.
+La **funzione JetEndExternalBackupInstance** termina una sessione di backup esterna. Questa API è l'ultima API di una serie di API che devono essere chiamate per eseguire correttamente un backup online (non basato su VSS).
 
 **Windows XP: JetEndExternalBackupInstance** è stato introdotto in Windows XP.
 
@@ -44,127 +44,59 @@ La funzione **JetEndExternalBackupInstance** termina una sessione di backup este
 
 ### <a name="parameters"></a>Parametri
 
-*istanza*
+*Istanza*
 
 Istanza di da utilizzare per questa chiamata.
 
-**Windows 2000:** Per Windows 2000, la variante API che accetta questo parametro non è disponibile perché è supportata una sola istanza. In questo caso, l'utilizzo di questa istanza globale è implicito.
+**Windows 2000:** Per Windows 2000, la variante API che accetta questo parametro non è disponibile perché è supportata una sola istanza. L'uso di questa istanza globale è implicito in questo caso.
 
-**Windows XP:** Per Windows XP e versioni successive, la variante API che non accetta questo parametro può essere chiamata solo quando il motore è in modalità legacy (modalità di compatibilità di Windows 2000) in cui è supportata una sola istanza. In caso contrario, l'operazione avrà esito negativo con JET_errRunningInMultiInstanceMode.
+**Windows XP:** Per Windows XP e versioni successive, la variante API che non accetta questo parametro può essere chiamata solo quando il motore è in modalità legacy (modalità di compatibilità Windows 2000) in cui è supportata una sola istanza. In caso contrario, l'operazione avrà esito negativo con JET_errRunningInMultiInstanceMode.
 
 ### <a name="return-value"></a>Valore restituito
 
-Questa funzione restituisce il tipo di dati [JET_ERR](./jet-err.md) con uno dei seguenti codici restituiti. Per ulteriori informazioni sugli errori ESE possibili, vedere la pagina relativa agli errori e ai [parametri di gestione degli](./error-handling-parameters.md)errori del [motore di archiviazione estensibile](./extensible-storage-engine-errors.md) .
-
-<table>
-<colgroup>
-<col style="width: 50%" />
-<col style="width: 50%" />
-</colgroup>
-<thead>
-<tr class="header">
-<th><p>Codice restituito</p></th>
-<th><p>Descrizione</p></th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td><p>JET_errSuccess</p></td>
-<td><p>Operazione riuscita.</p></td>
-</tr>
-<tr class="even">
-<td><p>JET_errBackupAbortByCaller</p></td>
-<td><p><strong>Windows XP:  </strong> Questo valore restituito è stato introdotto in Windows XP.</p>
-<p>Il chiamante ha terminato un backup al centro della sequenza di backup senza segnalare l'intenzione con <a href="gg294067(v=exchg.10).md">JetStopBackup</a>. Questo errore è il risultato di un bug nel client di backup in Windows Server 2003 e versioni successive. In Windows XP viene restituito questo errore per una chiusura intenzionale della sequenza di backup esterna.</p></td>
-</tr>
-<tr class="odd">
-<td><p>JET_errBackupAbortByServer</p></td>
-<td><p><strong>Windows Server 2003:  </strong> Questo valore restituito è stato introdotto in Windows Server 2003.</p>
-<p>L'operazione non è riuscita perché il backup esterno corrente è stato interrotto da una chiamata a <a href="gg294067(v=exchg.10).md">JetStopBackup</a>.</p></td>
-</tr>
-<tr class="even">
-<td><p>JET_errClientRequestToStopJetService</p></td>
-<td><p>Non è possibile completare l'operazione perché tutte le attività nell'istanza associata alla sessione sono state interrotte in seguito a una chiamata a <a href="gg269240(v=exchg.10).md">JetStopService</a>.</p></td>
-</tr>
-<tr class="odd">
-<td><p>JET_errInstanceUnavailable</p></td>
-<td><p><strong>Windows XP:  </strong> Questo valore restituito è stato introdotto in Windows XP.</p>
-<p>Non è possibile completare l'operazione perché l'istanza associata alla sessione ha rilevato un errore irreversibile che richiede che l'accesso a tutti i dati venga revocato per proteggere l'integrità dei dati.</p></td>
-</tr>
-<tr class="even">
-<td><p>JET_errNoBackup</p></td>
-<td><p>L'operazione non è riuscita perché non è in corso alcun backup esterno.</p></td>
-</tr>
-<tr class="odd">
-<td><p>JET_errNotInitialized</p></td>
-<td><p>Non è possibile completare l'operazione perché l'istanza associata alla sessione non è ancora stata inizializzata.</p></td>
-</tr>
-<tr class="even">
-<td><p>JET_errRestoreInProgress</p></td>
-<td><p>Non è possibile completare l'operazione perché è in corso un'operazione di ripristino nell'istanza di associata alla sessione.</p></td>
-</tr>
-<tr class="odd">
-<td><p>JET_errRunningInMultiInstanceMode</p></td>
-<td><p>L'operazione non è riuscita perché è stato effettuato un tentativo di usare il motore in modalità legacy (modalità di compatibilità di Windows 2000) in cui è supportata una sola istanza, quando sono già presenti più istanze.</p></td>
-</tr>
-<tr class="even">
-<td><p>JET_errTermInProgress</p></td>
-<td><p>Non è possibile completare l'operazione perché è in corso l'arresto dell'istanza associata alla sessione.</p></td>
-</tr>
-</tbody>
-</table>
+Questa funzione restituisce il [JET_ERR](./jet-err.md) dati con uno dei codici restituiti seguenti. Per altre informazioni sui possibili errori ESE, vedere Errori del [motore Archiviazione estendibile](./extensible-storage-engine-errors.md) e Parametri [di gestione degli errori](./error-handling-parameters.md).
 
 
-Se la funzione ha esito positivo, il backup esterno ha avuto esito positivo. Success indica che tutti i file, ad esempio i database e i log, appropriati per il tipo di backup (specificato in [JetBeginExternalBackup](./jetbeginexternalbackup-function.md)) sono stati recuperati dal motore di backup. I file di cui è stato eseguito il backup possono essere ripristinati con ripristino hardware ([JetExternalRestore](./jetexternalrestore-function.md)).
+| <p>Codice restituito</p> | <p>Descrizione</p> | 
+|--------------------|--------------------|
+| <p>JET_errSuccess</p> | <p>Operazione riuscita.</p> | 
+| <p>JET_errBackupAbortByCaller</p> | <p><strong>Windows XP:</strong> Questo valore restituito è stato introdotto in Windows XP.</p><p>Il chiamante ha terminato un backup al centro della sequenza di backup senza segnalare l'intenzione con <a href="gg294067(v=exchg.10).md">JetStopBackup</a>. Questo errore è il risultato di un bug nel client di backup in Windows Server 2003 e versioni successive. In Windows XP questo errore viene restituito per una terminazione intenzionale della sequenza di backup esterna.</p> | 
+| <p>JET_errBackupAbortByServer</p> | <p><strong>Windows Server 2003:</strong> Questo valore restituito è stato introdotto in Windows Server 2003.</p><p>L'operazione non è riuscita perché il backup esterno corrente è stato interrotto da una chiamata a <a href="gg294067(v=exchg.10).md">JetStopBackup.</a></p> | 
+| <p>JET_errClientRequestToStopJetService</p> | <p>Impossibile completare l'operazione perché tutte le attività nell'istanza associata alla sessione sono cesse a causa di una chiamata a <a href="gg269240(v=exchg.10).md">JetStopService.</a></p> | 
+| <p>JET_errInstanceUnavailable</p> | <p><strong>Windows XP:</strong> Questo valore restituito è stato introdotto in Windows XP.</p><p>Impossibile completare l'operazione perché l'istanza associata alla sessione ha rilevato un errore irreversibile che richiede la revoca dell'accesso a tutti i dati per proteggere l'integrità di questi dati.</p> | 
+| <p>JET_errNoBackup</p> | <p>L'operazione non è riuscita perché non è in corso alcun backup esterno.</p> | 
+| <p>JET_errNotInitialized</p> | <p>Impossibile completare l'operazione perché l'istanza associata alla sessione non è ancora stata inizializzata.</p> | 
+| <p>JET_errRestoreInProgress</p> | <p>Impossibile completare l'operazione perché è in corso un'operazione di ripristino nell'istanza associata alla sessione.</p> | 
+| <p>JET_errRunningInMultiInstanceMode</p> | <p>L'operazione non è riuscita perché è stato effettuato un tentativo di usare il motore in modalità legacy (modalità di compatibilità Windows 2000) in cui è supportata una sola istanza, quando in realtà esistono già più istanze.</p> | 
+| <p>JET_errTermInProgress</p> | <p>Impossibile completare l'operazione perché è in corso l'arresto dell'istanza associata alla sessione.</p> | 
 
-Se questa funzione ha esito negativo, il backup esterno termina in genere. Errore indica che il backup non è valido a causa di un errore di utilizzo del client o dell'applicazione. È importante controllare il codice restituito per questa API per verificare che la sequenza di backup sia stata completata correttamente.
+
+
+Se la funzione ha esito positivo, il backup esterno ha avuto esito positivo. Esito positivo indica che tutti i file (ad esempio, database e log) appropriati per il tipo di backup (specificato in [JetBeginExternalBackup)](./jetbeginexternalbackup-function.md)sono stati recuperati dal motore di backup. I file di cui è stato eseguito il backup possono essere ripristinati con il ripristino rigido ([JetExternalRestore](./jetexternalrestore-function.md)).
+
+Se questa funzione ha esito negativo, il backup esterno termina in genere. L'errore indica che il backup non è valido a causa di un client o di un errore di utilizzo dell'applicazione. È importante controllare il codice restituito per questa API per verificare che la sequenza di backup sia riuscita.
 
 #### <a name="remarks"></a>Commenti
 
 Se il motore è configurato per registrare gli eventi, viene registrato un evento per indicare la risoluzione del backup esterno.
 
-Se la sequenza di backup non viene completata in ordine e con una chiamata riuscita a [JetEndExternalBackup](./jetendexternalbackup-function.md), i successivi backup incrementali potrebbero contenere un numero di dati superiore a quello previsto dall'applicazione.
+Se la sequenza di backup non viene completata nell'ordine e con una chiamata riuscita a [JetEndExternalBackup,](./jetendexternalbackup-function.md)i backup incrementali successivi potrebbero contenere più dati di quanto previsto dall'applicazione.
 
-Per ulteriori informazioni sulla sequenza di API di backup esterno, vedere [JetBeginExternalBackup](./jetbeginexternalbackup-function.md).
+Per altre informazioni sulla sequenza dell'API di backup esterna, vedere [JetBeginExternalBackup](./jetbeginexternalbackup-function.md).
 
-Prima di Windows Vista, se il troncamento del log non è stato eseguito, il motore ha considerato che il backup era un backup di copia. Tuttavia, il backup potrebbe essere un backup normale per il quale non è stato eseguito il troncamento (ad esempio, se sono presenti database scollegati). È possibile utilizzare l'opzione JET_bitBackupTruncateDone per informare il motore e consentire le modifiche appropriate dell'intestazione del database.
+Prima Windows Vista, se il troncamento del log non è stato eseguito, il motore ha considerato che il backup era un backup di copia. Tuttavia, il backup potrebbe essere un backup normale per cui non è stato eseguito il troncamento (ad esempio, se sono presenti database scollegati). L JET_bitBackupTruncateDone'opzione può essere usata per informare il motore di questo problema e consentire le modifiche appropriate all'intestazione del database.
 
 #### <a name="requirements"></a>Requisiti
 
-<table>
-<colgroup>
-<col style="width: 50%" />
-<col style="width: 50%" />
-</colgroup>
-<tbody>
-<tr class="odd">
-<td><p><strong>Client</strong></p></td>
-<td><p>Richiede Windows Vista o Windows XP.</p></td>
-</tr>
-<tr class="even">
-<td><p><strong>Server</strong></p></td>
-<td><p>Richiede Windows Server 2008 o Windows Server 2003.</p></td>
-</tr>
-<tr class="odd">
-<td><p><strong>Intestazione</strong></p></td>
-<td><p>Dichiarata in esent. h.</p></td>
-</tr>
-<tr class="even">
-<td><p><strong>Libreria</strong></p></td>
-<td><p>Usare ESENT. lib.</p></td>
-</tr>
-<tr class="odd">
-<td><p><strong>DLL</strong></p></td>
-<td><p>Richiede ESENT.dll.</p></td>
-</tr>
-</tbody>
-</table>
+
+| | | <p><strong>Client</strong></p> | <p>Richiede Windows Vista o Windows XP.</p> | | <p><strong>Server</strong></p> | <p>Richiede Windows Server 2008 o Windows Server 2003.</p> | | <p><strong>Intestazione</strong></p> | <p>Dichiarato in Esent.h.</p> | | <p><strong>Libreria</strong></p> | <p>Usare ESENT.lib.</p> | | <p><strong>DLL</strong></p> | <p>Richiede ESENT.dll.</p> | 
+
 
 
 #### <a name="see-also"></a>Vedere anche
 
 [Parametri di gestione degli errori](./error-handling-parameters.md)  
-[Errori del motore di archiviazione estendibile](./extensible-storage-engine-errors.md)  
+[Errori del motore Archiviazione estendibile](./extensible-storage-engine-errors.md)  
 [JetAttachDatabase](./jetattachdatabase-function.md)  
 [JetBeginExternalBackup](./jetbeginexternalbackup-function.md)  
 [JetBeginExternalBackupInstance](./jetbeginexternalbackupinstance-function.md)  

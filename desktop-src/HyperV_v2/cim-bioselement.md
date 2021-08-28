@@ -1,7 +1,7 @@
 ---
 description: Rappresenta il software di basso livello caricato nell'archiviazione non volatile e usato per avviare e configurare un computer system (CIM \_ ComputerSystem).
 ms.assetid: e34c9b00-2723-4858-805e-5e3e51a5dfd2
-title: CIM_BIOSElement classe (gestione Hyper-V)
+title: CIM_BIOSElement classe (gestione di Hyper-V)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -23,16 +23,16 @@ api_type:
 - DllExport
 api_location:
 - vmms.exe
-ms.openlocfilehash: c443e212913eef60bd3b4c6db8145f454e7de027b5445268c7abb7b2ee8457fd
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 78f2433d2b75e2c348fdf6e7a8ff35db56c9a0c8
+ms.sourcegitcommit: 61a4c522182aa1cacbf5669683d9570a3bf043b2
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "117813402"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "122879873"
 ---
-# <a name="cim_bioselement-class-hyper-v-management"></a>CIM_BIOSElement classe (gestione Hyper-V)
+# <a name="cim_bioselement-class-hyper-v-management"></a>CIM_BIOSElement classe (gestione di Hyper-V)
 
-Rappresenta il software di basso livello caricato nell'archiviazione non volatile e usato per avviare e configurare un sistema informatico ([**CIM \_ ComputerSystem**](cim-computersystem.md)).
+Rappresenta il software di basso livello caricato nell'archiviazione non volatile e usato per avviare e configurare un computer system [**(CIM \_ ComputerSystem).**](cim-computersystem.md)
 
 ## <a name="syntax"></a>Sintassi
 
@@ -68,7 +68,7 @@ La **classe \_ CIM BIOSElement** ha queste proprietà.
 **CurrentLanguage**
 </dt> <dd> <dl> <dt>
 
-Tipo di dati: **stringa**
+Tipo di dati: **string**
 </dt> <dt>
 
 Tipo di accesso: sola lettura
@@ -77,7 +77,7 @@ Tipo di accesso: sola lettura
 Qualificatori: [**ModelCorrespondence**](/windows/desktop/WmiSdk/standard-qualifiers) ("**CIM \_ BIOSElement**.**ListOfLanguages**")
 </dt> </dl>
 
-Lingua attualmente selezionata per il BIOS. Queste informazioni possono essere ottenute dal BIOS di Gestione sistema (SMBIOS) usando l'attributo Current Language della struttura Type 13 per indicizzare nell'elenco di stringhe che segue la struttura. Questa proprietà viene formattata usando il nome della lingua ISO 639 e può essere seguita dal nome del territorio ISO 3166 e dal metodo di codifica.
+Lingua attualmente selezionata per il BIOS. Queste informazioni possono essere ottenute da SYSTEM Management BIOS (SMBIOS) usando l'attributo Current Language della struttura Type 13 per indicizzare l'elenco di stringhe che segue la struttura. Questa proprietà viene formattata usando il nome della lingua ISO 639 e può essere seguita dal nome del territorio ISO 3166 e dal metodo di codifica.
 
 </dd> <dt>
 
@@ -103,7 +103,7 @@ Tipo di dati: **uint64**
 Tipo di accesso: sola lettura
 </dt> <dt>
 
-Qualificatori: [**MappingStrings**](/windows/desktop/WmiSdk/standard-qualifiers) ("MIF. BIOS di sistema DMTF \| \| 001.6")
+Qualificatori: [**MappingStrings**](/windows/desktop/WmiSdk/standard-qualifiers) ("MIF. DMTF \| System BIOS \| 001.6")
 </dt> </dl>
 
 Indirizzo finale della memoria occupata dal BIOS.
@@ -119,7 +119,7 @@ Tipo di dati: **uint64**
 Tipo di accesso: sola lettura
 </dt> <dt>
 
-Qualificatori: [**MappingStrings**](/windows/desktop/WmiSdk/standard-qualifiers) ("MIF. BIOS di sistema DMTF \| \| 001.5")
+Qualificatori: [**MappingStrings**](/windows/desktop/WmiSdk/standard-qualifiers) ("MIF. DMTF \| System BIOS \| 001.5")
 </dt> </dl>
 
 Indirizzo iniziale della memoria occupata dal BIOS.
@@ -129,7 +129,7 @@ Indirizzo iniziale della memoria occupata dal BIOS.
 **LoadUtilityInformation**
 </dt> <dd> <dl> <dt>
 
-Tipo di dati: **stringa**
+Tipo di dati: **string**
 </dt> <dt>
 
 Tipo di accesso: sola lettura
@@ -138,20 +138,20 @@ Tipo di accesso: sola lettura
 Qualificatori: [**MaxLen**](/windows/desktop/WmiSdk/standard-qualifiers) (64), [**MappingStrings**](/windows/desktop/WmiSdk/standard-qualifiers) ("MIF. DMTF \| System BIOS \| 001.7")
 </dt> </dl>
 
-Stringa in formato libero che descrive l'utilità flash/load del BIOS necessaria per aggiornare **l'oggetto \_ CIM BIOSElement.** La versione e altre informazioni possono essere indicate in questa proprietà.
+Stringa in formato libero che descrive l'utilità flash/caricamento BIOS necessaria per aggiornare **l'oggetto \_ BIOSElement CIM.** La versione e altre informazioni possono essere indicate in questa proprietà.
 
 </dd> <dt>
 
 **Produttore**
 </dt> <dd> <dl> <dt>
 
-Tipo di dati: **stringa**
+Tipo di dati: **string**
 </dt> <dt>
 
 Tipo di accesso: sola lettura
 </dt> <dt>
 
-Qualificatori: [**Override**](/windows/desktop/WmiSdk/standard-qualifiers) ("Manufacturer"), [**MappingStrings**](/windows/desktop/WmiSdk/standard-qualifiers) ("MIF. BIOS di sistema DMTF \| \| 001.2")
+Qualificatori: [**override**](/windows/desktop/WmiSdk/standard-qualifiers) ("Manufacturer"), [**MappingStrings**](/windows/desktop/WmiSdk/standard-qualifiers) ("MIF. DMTF \| System BIOS \| 001.2")
 </dt> </dl>
 
 Produttore dell'elemento software.
@@ -167,10 +167,10 @@ Tipo di dati: **booleano**
 Tipo di accesso: sola lettura
 </dt> <dt>
 
-Qualificatori: [**MappingStrings**](/windows/desktop/WmiSdk/standard-qualifiers) ("MIF. BIOS di sistema DMTF \| \| 001.9")
+Qualificatori: [**MappingStrings**](/windows/desktop/WmiSdk/standard-qualifiers) ("MIF. DMTF \| System BIOS \| 001.9")
 </dt> </dl>
 
-True se si tratta del BIOS primario del sistema informatico; in caso contrario, false.
+True se si tratta del BIOS primario del computer; in caso contrario, false.
 
 </dd> <dt>
 
@@ -183,11 +183,11 @@ Tipo di dati: **matrice di** stringhe
 Tipo di accesso: sola lettura
 </dt> </dl>
 
-Percorso di pubblicazione dei registri degli attributi BIOS a cui è conforme l'implementazione del BIOS.
+Percorso di pubblicazione dei registri di attributi BIOS a cui è conforme l'implementazione del BIOS.
 
 </dd> <dt>
 
-**ReleaseDate**
+**Data di rilascio**
 </dt> <dd> <dl> <dt>
 
 Tipo di dati: **datetime**
@@ -196,7 +196,7 @@ Tipo di dati: **datetime**
 Tipo di accesso: sola lettura
 </dt> <dt>
 
-Qualificatori: [**MappingStrings**](/windows/desktop/WmiSdk/standard-qualifiers) ("MIF. BIOS di sistema DMTF \| \| 001.8")
+Qualificatori: [**MappingStrings**](/windows/desktop/WmiSdk/standard-qualifiers) ("MIF. DMTF \| System BIOS \| 001.8")
 </dt> </dl>
 
 Data di rilascio del BIOS.
@@ -206,19 +206,19 @@ Data di rilascio del BIOS.
 **Version**
 </dt> <dd> <dl> <dt>
 
-Tipo di dati: **stringa**
+Tipo di dati: **string**
 </dt> <dt>
 
 Tipo di accesso: sola lettura
 </dt> <dt>
 
-Qualificatori: [**Override**](/windows/desktop/WmiSdk/standard-qualifiers) ("Version"), [**MappingStrings**](/windows/desktop/WmiSdk/standard-qualifiers) ("MIF. BIOS di sistema DMTF \| \| 001.3")
+Qualificatori: [**override**](/windows/desktop/WmiSdk/standard-qualifiers) ("Version"), [**MappingStrings**](/windows/desktop/WmiSdk/standard-qualifiers) ("MIF. DMTF \| System BIOS \| 001.3")
 </dt> </dl>
 
 Versione dell'operazione. La versione dell'operazione deve essere in uno dei formati seguenti:
 
--   *<major>*.*<minor>*.*<revision>*
--   *<major>*.*<minor><letter><revision>*
+-   *&lt; oggetto &gt; principale.**&lt; secondario. &gt;* *&lt; revisione &gt;*
+-   *&lt; oggetto &gt; principale.**&lt; revisione &gt; &lt; lettera &gt; &lt; secondaria &gt;*
 
 </dd> </dl>
 

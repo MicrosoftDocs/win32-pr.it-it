@@ -1,12 +1,12 @@
 ---
-title: Proprietà Enabled di IRemoteDesktopClientTouchPointer
-description: Indica se la funzionalità del puntatore a tocco è abilitata nel controllo client del contenitore di app RDP.
+title: Proprietà IRemoteDesktopClientTouchPointer Enabled
+description: Indica se la funzionalità del puntatore tocco è abilitata nel controllo client del contenitore di app RDP.
 ms.assetid: f1e2f2f2-1b96-4c5a-b0dd-fd57627c5ec3
 ms.tgt_platform: multiple
 keywords:
-- Servizi Desktop remoto proprietà abilitata
-- Servizi Desktop remoto proprietà Enabled, interfaccia IRemoteDesktopClientTouchPointer
-- Interfaccia IRemoteDesktopClientTouchPointer Servizi Desktop remoto, proprietà Enabled
+- Impostazione delle proprietà abilitata Servizi Desktop remoto
+- Proprietà abilitata Servizi Desktop remoto, interfaccia IRemoteDesktopClientTouchPointer
+- Interfaccia IRemoteDesktopClientTouchPointer Servizi Desktop remoto proprietà Enabled
 topic_type:
 - apiref
 api_name:
@@ -19,16 +19,16 @@ api_type:
 - COM
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: cdd534a9f8ec77903f196bbdfa10e1823a18dff4
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: d7ce04e38b41fce462973606f40f0099f010e6f4ab785900039e6771b0a9aaf4
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "106301982"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120124851"
 ---
-# <a name="iremotedesktopclienttouchpointerenabled-property"></a>Proprietà IRemoteDesktopClientTouchPointer:: Enabled
+# <a name="iremotedesktopclienttouchpointerenabled-property"></a>Proprietà IRemoteDesktopClientTouchPointer::Enabled
 
-Indica se la funzionalità del puntatore a tocco è abilitata nel controllo client del contenitore di app RDP.
+Indica se la funzionalità del puntatore tocco è abilitata nel controllo client del contenitore di app RDP.
 
 Si tratta di una proprietà di lettura/scrittura.
 
@@ -49,7 +49,7 @@ HRESULT get_Enabled(
 
 ## <a name="property-value"></a>Valore proprietà
 
-**true** se la funzionalità del puntatore a tocco è abilitata; in caso contrario, **false**.
+**true se** la funzionalità del puntatore tocco è abilitata; in caso contrario, **false.**
 
 ## <a name="requirements"></a>Requisiti
 
