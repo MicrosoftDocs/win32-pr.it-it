@@ -1,17 +1,17 @@
 ---
-title: Visual Automazione interfaccia utente Verify
+title: Verifica Automazione interfaccia utente visuale
 description: Visual Automazione interfaccia utente Verify (Visual UIA Verify) è un Windows \ 32; Driver GUI per la libreria di test uia progettata per il test manuale dell'automazione interfaccia utente.
 ms.assetid: 8AEB083E-785E-4F15-B708-2098A9A41B4E
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 1c50fdd123d24c8a6ef4215ae2451cf49b854b60b26c5d741db1921c42f6f7aa
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 22e8c6118914c791e04226dfa11d2c3bd9548368
+ms.sourcegitcommit: 9b5faa61c38b2d0c432b7f2dbee8c127b0e28a7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "118563655"
+ms.lasthandoff: 08/19/2021
+ms.locfileid: "122466848"
 ---
-# <a name="visual-ui-automation-verify"></a>Visual Automazione interfaccia utente Verify
+# <a name="visual-ui-automation-verify"></a>Verifica Automazione interfaccia utente visuale
 
 Visual Automazione interfaccia utente Verify (Visual UIA Verify) è un driver dell'interfaccia utente grafica di Windows per la libreria di test uia progettata per il test manuale dell'automazione interfaccia utente. Fornisce un'interfaccia alla funzionalità della libreria di test dell'interfaccia utente che elimina l'overhead di scrittura del codice di uno strumento da riga di comando.
 
@@ -22,7 +22,7 @@ Visual Automazione interfaccia utente Verify (Visual UIA Verify) è un driver de
     -   [Riquadro Risultati test](#test-results-pane)
     -   [Riquadro Proprietà](#properties-pane)
 
-Visual UIA Verify supporta solo il logger UIA Verify XML (WUIALoggerXml.dll) in modo nativo. Le trasformazioni XML selezionabili dall'utente sono incorporate in Visual UIA Verify per presentare diverse visualizzazioni del report del logger XML nel **Risultati test** dati.
+Visual UIA Verify supporta solo il logger XML di verifica UIA (WUIALoggerXml.dll) in modo nativo. Le trasformazioni XML selezionabili dall'utente sono incorporate in Visual UIA Verify per presentare diverse visualizzazioni del report del logger XML nel **Risultati test** controllo.
 
 Per impostazione predefinita, Visual UIA Verify carica Automazione interfaccia utente provider sul lato client fornito con la versione originale di Automazione interfaccia utente. È possibile scegliere di non caricare questo provider aggiungendo **/NOCLIENTSIDEPROVIDER nell'opzione** della riga di comando di VisualUIVerifyNative.exe.
 
@@ -36,108 +36,24 @@ La tabella seguente descrive i comandi del menu Verifica dell'interfaccia utente
 
 
 
-<table>
-<colgroup>
-<col style="width: 33%" />
-<col style="width: 33%" />
-<col style="width: 33%" />
-</colgroup>
-<thead>
-<tr class="header">
-<th>Menu</th>
-<th>Comando</th>
-<th>Descrizione</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td><strong>File</strong></td>
-<td><strong>Esci</strong></td>
-<td>Uscire da Visual UIA Verify.</td>
-</tr>
-<tr class="even">
-<td><strong>Visualizzazione</strong></td>
-<td><strong>Evidenziazione</strong></td>
-<td>Evidenziare il rettangolo di delimitazione dell'elemento selezionato nel riquadro <strong>Albero degli elementi di</strong> automazione. Sono disponibili le seguenti opzioni.
-<ul>
-<li><strong>Rettangolo:</strong>linea rossa continua.</li>
-<li><strong>Rettangolo scompaia:</strong>linea rossa continua che scompare dopo alcuni secondi.</li>
-<li><strong>Raggi e rettangolo: linea</strong>rossa continua con linee di evidenziazione blu aggiuntive che si esalano da ogni angolo del rettangolo di delimitazione.</li>
-<li><strong>Nessuno: nessuna</strong>evidenziazione visibile.</li>
-</ul></td>
-</tr>
-<tr class="odd">
-<td rowspan="2"><strong>Albero degli elementi di automazione</strong>${REMOVE}$<br />
-</td>
-<td><strong>Aggiorna elemento selezionato</strong></td>
-<td>Aggiornare gli elementi figlio dell'elemento selezionato nel riquadro <strong>Albero degli elementi di</strong> automazione. L'elenco di elementi è statico e non viene aggiornato dinamicamente (automaticamente) se l'albero degli elementi cambia.</td>
-</tr>
-<tr class="even">
-<td><strong>Spostamento</strong></td>
-<td>Spostarsi all'interno della gerarchia dell'albero degli elementi fino a uno degli elementi seguenti.
-<ul>
-<li><strong>Parent:</strong>consente di passare all'elemento padre.</li>
-<li><strong>First Child :</strong>consente di passare al primo elemento figlio.</li>
-<li><strong>Successivo elemento di pari livello</strong>: consente di passare al primo elemento di pari livello.</li>
-<li><strong>Precedente elemento di pari livello</strong>: consente di passare all'elemento di pari livello precedente.</li>
-<li><strong>Last Child :</strong>consente di passare all'ultimo elemento figlio.</li>
-</ul></td>
 
-</tr>
-<tr class="odd">
-<td rowspan="3"><strong>Modalità</strong>${REMOVE}$<br />
-</td>
-<td><strong>Always On superiore</strong></td>
-<td>La finestra Verifica dell'interfaccia utente visiva rimane nella parte superiore dell'ordine Z del desktop.</td>
-</tr>
-<tr class="even">
-<td><strong>Modalità al passaggio del mouse (usare CTRL)</strong></td>
-<td>Quando si preme CTRL, l'elemento sotto il cursore del mouse viene identificato come elemento di interesse. Il <strong>riquadro Albero degli elementi di</strong> automazione viene aggiornato e l'elemento corrispondente nell'elenco degli elementi viene evidenziato.</td>
+| Menu | Comando | Descrizione | 
+|------|---------|-------------|
+| <strong>File</strong> | <strong>Esci</strong> | Uscire da Visual UIA Verify. | 
+| <strong>Visualizzazione</strong> | <strong>Evidenziazione</strong> | Evidenziare il rettangolo di delimitazione dell'elemento selezionato nel riquadro <strong>Albero degli elementi di</strong> automazione. Sono disponibili le seguenti opzioni.<ul><li><strong>Rettangolo:</strong>linea rossa continua.</li><li><strong>Rettangolo scompaia:</strong>linea rossa continua che scompare dopo alcuni secondi.</li><li><strong>Raggi e rettangolo: linea</strong>rossa continua con linee di evidenziazione blu aggiuntive che si esalano da ogni angolo del rettangolo di delimitazione.</li><li><strong>Nessuno: nessuna</strong>evidenziazione visibile.</li></ul> | 
+| <strong>Albero degli elementi di automazione</strong>${REMOVE}$<br /> | <strong>Aggiorna elemento selezionato</strong> | Aggiornare gli elementi figlio dell'elemento selezionato nel riquadro <strong>Albero degli elementi di</strong> automazione. L'elenco di elementi è statico e non viene aggiornato dinamicamente (automaticamente) se l'albero degli elementi cambia. | 
+| <strong>Spostamento</strong> | Spostarsi all'interno della gerarchia dell'albero degli elementi fino a uno degli elementi seguenti.<ul><li><strong>Parent:</strong>consente di passare all'elemento padre.</li><li><strong>First Child :</strong>consente di passare al primo elemento figlio.</li><li><strong>Successivo elemento di pari livello</strong>: consente di passare al primo elemento di pari livello.</li><li><strong>Precedente elemento di pari livello</strong>: consente di passare all'elemento di pari livello precedente.</li><li><strong>Last Child :</strong>consente di passare all'ultimo elemento figlio.</li></ul> | 
+| <strong>Modalità</strong>${REMOVE}$<br /> | <strong>Always On superiore</strong> | La finestra Verifica dell'interfaccia utente visiva rimane nella parte superiore dell'ordine Z del desktop. | 
+| <strong>Modalità al passaggio del mouse (usare CTRL)</strong> | Quando si preme CTRL, l'elemento sotto il cursore del mouse viene identificato come elemento di interesse. Il <strong>riquadro Albero degli elementi di</strong> automazione viene aggiornato e l'elemento corrispondente nell'elenco degli elementi viene evidenziato. | 
+| <strong>Rilevamento dello stato attivo</strong> | Quando lo stato attivo cambia, l'elemento con lo stato attivo viene identificato come elemento di interesse. Il <strong>riquadro Albero degli elementi di</strong> automazione viene aggiornato e l'elemento corrispondente nell'elenco degli elementi viene evidenziato. | 
+| <strong>Testa</strong>${REMOVE}$<br /> | <strong>Vai a sinistra</strong> | Spostare un nodo a sinistra <strong>nell'albero Test.</strong> | 
+| <strong>Vai su</strong> | Spostare un nodo verso l'alto <strong>nell'albero</strong> Test. | 
+| <strong>Vai in basso</strong> | Spostare un nodo verso il basso <strong>nell'albero Test.</strong> | 
+| <strong>Vai a destra</strong> | Spostare un nodo a destra <strong>nell'albero</strong> Test. | 
+| <strong>Esegui test selezionati sull'elemento selezionato</strong> | Eseguire i test selezionati <strong>dall'albero Test</strong> sull'elemento selezionato. | 
+| <strong>Problemi noti del filtro</strong> | Filtrare i Automazione interfaccia utente noti dai risultati del test. | 
+| <strong>?</strong> | <strong>Informazioni su Visual Automazione interfaccia utente Verify</strong> | Visualizzare la versione del software e le informazioni sul copyright per Visual UIA Verify. | 
 
-</tr>
-<tr class="odd">
-<td><strong>Rilevamento dello stato attivo</strong></td>
-<td>Quando lo stato attivo cambia, l'elemento con lo stato attivo viene identificato come elemento di interesse. Il <strong>riquadro Albero degli elementi di</strong> automazione viene aggiornato e l'elemento corrispondente nell'elenco degli elementi viene evidenziato.</td>
-
-</tr>
-<tr class="even">
-<td rowspan="6"><strong>Testa</strong>${REMOVE}$<br />
-</td>
-<td><strong>Vai a sinistra</strong></td>
-<td>Spostare un nodo a sinistra <strong>nell'albero Test.</strong></td>
-</tr>
-<tr class="odd">
-<td><strong>Vai su</strong></td>
-<td>Spostare un nodo verso l'alto <strong>nell'albero</strong> Test.</td>
-
-</tr>
-<tr class="even">
-<td><strong>Vai in basso</strong></td>
-<td>Spostare un nodo verso il basso <strong>nell'albero Test.</strong></td>
-
-</tr>
-<tr class="odd">
-<td><strong>Vai a destra</strong></td>
-<td>Spostare un nodo a destra <strong>nell'albero</strong> Test.</td>
-
-</tr>
-<tr class="even">
-<td><strong>Esegui test selezionati sull'elemento selezionato</strong></td>
-<td>Eseguire i test selezionati <strong>dall'albero Test</strong> sull'elemento selezionato.</td>
-
-</tr>
-<tr class="odd">
-<td><strong>Problemi noti del filtro</strong></td>
-<td>Filtrare Automazione interfaccia utente bug noti dai risultati del test.</td>
-
-</tr>
-<tr class="even">
-<td><strong>?</strong></td>
-<td><strong>Informazioni su Visual Automazione interfaccia utente Verify</strong></td>
-<td>Visualizzare la versione del software e le informazioni sul copyright per Visual UIA Verify.</td>
-</tr>
-</tbody>
-</table>
 
 
 
@@ -162,7 +78,7 @@ Lo screenshot seguente mostra il riquadro **Albero degli elementi di** automazio
 
 ![riquadro della struttura ad albero degli elementi di automazione dell'interfaccia utente visiva](images/automation-elements-tree-pane.png)
 
-Un nodo in grigio (non  disponibile) nell'albero degli elementi di automazione indica che l'elemento è un membro della visualizzazione non elaborata di Automazione interfaccia utente, ma non soddisfa le condizioni necessarie per essere considerato un membro della visualizzazione contenuto o della visualizzazione controlli. Tuttavia, l'elemento può comunque essere testato da Visual Automazione interfaccia utente Verify. Per altre informazioni, vedere panoramica [dell'Automazione interfaccia utente albero di .](uiauto-treeoverview.md)
+Un nodo in grigio (non  disponibile) nell'albero degli elementi di automazione indica che l'elemento è un membro della visualizzazione non elaborata di Automazione interfaccia utente, ma non soddisfa le condizioni necessarie per essere considerato un membro della visualizzazione contenuto o della visualizzazione controlli. Tuttavia, l'elemento può comunque essere testato da Visual Automazione interfaccia utente Verify. Per altre informazioni, vedere [cenni preliminari Automazione interfaccia utente albero di .](uiauto-treeoverview.md)
 
 I comandi disponibili nella barra degli **strumenti Albero degli elementi di** automazione includono:
 
@@ -176,7 +92,7 @@ I comandi disponibili nella barra degli **strumenti Albero degli elementi di** a
 
 ### <a name="tests-pane"></a>Riquadro Test
 
-Il  riquadro Test contiene un elenco di test Automazione interfaccia utente organizzati in base al tipo di test **(** Elemento di automazione **,** Controllo e **Criterio**) e alla priorità (**Verifica** compilazione , **Priorità 0**, **Priorità 1**, Priorità **2** e Priorità **3**). Questo elenco viene generato in base al tipo di controllo dell'elemento selezionato nel riquadro **Albero degli elementi di** automazione. Per altre informazioni, vedere [UI Automation Control Types Overview](uiauto-controltypesoverview.md).
+Il  riquadro Test contiene un elenco di test Automazione interfaccia utente organizzati per tipo di test **(** Elemento di automazione **,** Controllo e **Modello**) e priorità (**Verifica** compilazione , Priorità 0 , Priorità **1**, Priorità **2** e Priorità **3**).  Questo elenco viene generato in base al tipo di controllo dell'elemento selezionato nel riquadro **Albero degli elementi di** automazione. Per altre informazioni, vedere [UI Automation Control Types Overview](uiauto-controltypesoverview.md).
 
 Lo screenshot seguente mostra il **riquadro** Test.
 
@@ -184,20 +100,20 @@ Lo screenshot seguente mostra il **riquadro** Test.
 
 I comandi disponibili nella barra **degli strumenti Test** includono:
 
--   **Mostra:** specifica i Automazione interfaccia utente test da visualizzare. ovvero visualizzare tutti i test o solo i test adatti al tipo di controllo dell'elemento selezionato nell'albero degli elementi di **automazione** (impostazione predefinita).
+-   **Mostra:** specifica i Automazione interfaccia utente test da visualizzare. ovvero visualizzare tutti i test o solo i test adatti al tipo di controllo dell'elemento selezionato nell'albero **degli elementi** di automazione (impostazione predefinita).
 -   **Tipo:** specifica i tipi di test da visualizzare: **Elemento di automazione,** **Modello** o **Controllo**.
--   **Priorità:** specifica le priorità di test da **visualizzare:** Verifica compilazione, Priorità **0,** Priorità **1,** **Priorità 2** o **Priorità 3.**
+-   **Priorità:** specifica le priorità del test da **visualizzare:** Verifica compilazione, Priorità **0,** Priorità **1,** **Priorità 2** o **Priorità 3.**
 -   **Vai a sinistra:** passare all'elemento padre del nodo corrente.
--   **Vai su:** consente di passare all'elemento di pari livello precedente del nodo corrente.
--   **Vai in basso:** consente di passare al nodo di pari livello successivo del nodo corrente.
--   **Vai a destra:** consente di passare al primo elemento figlio del nodo corrente.
+-   **Vai su:** consente di passare al nodo di pari livello precedente del nodo corrente.
+-   **Vai giù:** passare al nodo di pari livello successivo del nodo corrente.
+-   **Vai a destra:** passare al primo elemento figlio del nodo corrente.
 -   **Esegui test selezionati: esegue** i test sull'elemento selezionato nell'albero **degli elementi di automazione**.
 
 ### <a name="test-results-pane"></a>Riquadro Risultati test
 
-Il **riquadro Risultati test** contiene la funzionalità di registrazione verifica dell'interfaccia utente visiva. Lo screenshot seguente mostra il **riquadro** Risultati test.
+Il **Risultati test** contiene la funzionalità di registrazione Di verifica dell'interfaccia utente visiva. La schermata seguente mostra il riquadro **Risultati test.**
 
-![riquadro dei risultati dei test](images/test-results-pane.png)
+![riquadro risultati test](images/test-results-pane.png)
 
 I comandi disponibili nella barra degli **strumenti Risultati** test includono:
 
@@ -220,7 +136,7 @@ I comandi disponibili nella barra degli **strumenti Risultati** test includono:
     ![visualizzazione alternativa di un test case dettagli](images/alt-view-of-test-case-detail.png)
 
 -   **XML:** visualizza il codice XML non elaborato generato dal logger XML.
--   **Ricerca rapida:** ricerca testuale semplice della visualizzazione corrente nel **riquadro Risultati test** ricerca.
+-   **Ricerca rapida:** ricerca testuale semplice della visualizzazione corrente nel **riquadro** Risultati test ricerca.
 -   **Apri in nuova finestra:** apre la visualizzazione corrente in una nuova istanza di Internet Explorer.
 
 ### <a name="properties-pane"></a>Riquadro delle proprietà
@@ -229,7 +145,7 @@ Il **riquadro** Proprietà contiene un elenco di Automazione interfaccia utente 
 
 ![riquadro delle proprietà](images/properties-pane.png)
 
-Se il controllo selezionato supporta un pattern di controllo specifico, Visual UIA Verify offre la possibilità di chiamare i metodi supportati da tale pattern di controllo. Ad esempio, il [tipo di](uiauto-supportwindowcontroltype.md) controllo Finestra supporta il pattern di controllo [Finestra](uiauto-implementingwindow.md), che dispone di un [**metodo Close**](/windows/desktop/api/UIAutomationClient/nf-uiautomationclient-iuiautomationwindowpattern-close) che può essere richiamato dal riquadro Proprietà, come illustrato nello screenshot seguente.  Per altre informazioni, vedere [UI Automation Control Types Overview](uiauto-controltypesoverview.md).
+Se il controllo selezionato supporta un pattern di controllo specifico, Visual UIA Verify offre la possibilità di chiamare i metodi supportati da tale pattern di controllo. Ad esempio, il [tipo di](uiauto-supportwindowcontroltype.md) controllo Window supporta il pattern di controllo [Window](uiauto-implementingwindow.md), che dispone di un metodo [**Close**](/windows/desktop/api/UIAutomationClient/nf-uiautomationclient-iuiautomationwindowpattern-close) che può essere richiamato dal riquadro Proprietà, come illustrato nello screenshot seguente.  Per altre informazioni, vedere [UI Automation Control Types Overview](uiauto-controltypesoverview.md).
 
 ![Metodo close del pattern di controllo della finestra richiamato dal riquadro delle proprietà](images/close-invoked-from-properties-pane.png)
 

@@ -4,12 +4,12 @@ ms.assetid: 233b3644-f2a5-4166-bac0-30bf2f54e957
 title: MakeCat
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 980c58530c55006d28ecd7589b0313844e9dbe46
-ms.sourcegitcommit: 61a4c522182aa1cacbf5669683d9570a3bf043b2
+ms.openlocfilehash: 6b3b9d8698e3c3694368813b19bd3be692c6c8f3
+ms.sourcegitcommit: c276a8912787b2cda74dcf54eb96df961bb1188b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/26/2021
-ms.locfileid: "122886261"
+ms.lasthandoff: 08/20/2021
+ms.locfileid: "122623146"
 ---
 # <a name="makecat"></a>MakeCat
 
@@ -75,7 +75,7 @@ La \[ sezione CatalogHeader \] definisce le informazioni sull'intero file di cat
 | Versione pubblica<br/>  | Questa opzione non è supportata. <br/> **Windows Server 2008 R2, Windows 7, Windows Server 2008, Windows Vista, Windows Server 2003 e Windows XP:** Versione del catalogo. Se viene lasciato vuoto, viene usato il valore predefinito 1.<br/> <br/>                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                 |
 | CatalogVersion<br/> | Versione del catalogo. Se la versione non è presente o è impostata su 1, "0x100" viene passato al *parametro dwPublicVersion* della funzione [**CryptCATOpen**](/windows/desktop/api/Mscat/nf-mscat-cryptcatopen) e viene creato un file di catalogo della versione 1. L'opzione HashAlgorithms deve essere vuota o contenere SHA1.<br/> Se la versione è impostata su 2, "0x200" viene passato al parametro *dwPublicVersion* della funzione [**CryptCATOpen**](/windows/desktop/api/Mscat/nf-mscat-cryptcatopen) e viene creato un file di catalogo della versione 2. L'opzione HashAlgorithms deve contenere SHA256.<br/> Se questa opzione è presente ma contiene un valore diverso da 1 o 2, lo strumento MakeCat restituirà un errore.<br/> **Windows Server 2008 R2, Windows 7, Windows Server 2008, Windows Vista, Windows Server 2003 e Windows XP:** Questa opzione non è supportata.<br/> <br/> |
 | HashAlgorithms<br/> | Nome dell'algoritmo hash utilizzato. Per altre informazioni, vedere l'opzione CatalogVersion.<br/> **Windows Server 2008 R2, Windows 7, Windows Server 2008, Windows Vista, Windows Server 2003 e Windows XP:** Questa opzione non è supportata.<br/> <br/>                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                        |
-| PageHashes<br/>     | Specifica se eseguire l'hashing dei file elencati &lt; nell'opzione HASH &gt; nella \[ sezione \] CatalogFiles<br/> **Windows Server 2008 R2, Windows 7, Windows Server 2008, Windows Vista, Windows Server 2003 e Windows XP:** Questa opzione non è supportata.<br/> <br/>                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                           |
+| PageHashes<br/>     | Specifica se eseguire l'hashing dei file elencati <HASH> nell'opzione nella \[ sezione \] CatalogFiles<br/> **Windows Server 2008 R2, Windows 7, Windows Server 2008, Windows Vista, Windows Server 2003 e Windows XP:** Questa opzione non è supportata.<br/> <br/>                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                           |
 | EncodingType<br/>   | Tipo di codifica dei messaggi utilizzata. Se lasciato vuoto, il valore predefinito di EncodingType è PKCS \_ 7 \_ ASN \_ ENCODING \| X509 \_ ASN \_ ENCODING, 0x00010001. <br/>                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                               |
 
 
@@ -100,7 +100,7 @@ La sezione CatalogFiles definisce ogni membro del file di catalogo con file di v
 <tbody>
 <tr class="odd">
 <td>tag di riferimento<br/></td>
-<td>Riferimento di testo al file. Può includere qualsiasi carattere di testo ASCII ad eccezione del segno di uguale (=). Il sistema deve essere in grado di riprodurre questo tag dopo l'installazione. <br/> Usare &lt; HASH come prefisso del nome del &gt; file. Il tag è quindi l'hash del file in formato stringa ASCII. <br/></td>
+<td>Riferimento di testo al file. Può includere qualsiasi carattere di testo ASCII ad eccezione del segno di uguale (=). Il sistema deve essere in grado di riprodurre questo tag dopo l'installazione. <br/> Usare <HASH> come prefisso del nome del file. Il tag è quindi l'hash del file in formato stringa ASCII. <br/></td>
 </tr>
 <tr class="even">
 <td>percorso e nome del file<br/></td>
@@ -141,7 +141,7 @@ La sezione CatalogFiles definisce ogni membro del file di catalogo con file di v
 <td>Rappresentazione testuale del valore dell'attributo. Il tipo di rappresentazione di testo usato dipende dal valore dell'opzione type. I caratteri EOL determinano la lunghezza.<br/></td>
 </tr>
 <tr class="odd">
-<td>&lt;HASH&gt;<br/></td>
+<td><HASH><br/></td>
 <td>Esegue l'hashing del file specificato.<br/></td>
 </tr>
 </tbody>

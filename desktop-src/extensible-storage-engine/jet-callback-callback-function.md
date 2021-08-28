@@ -1,6 +1,6 @@
 ---
-description: 'Altre informazioni su: funzione JET_CALLBACK callback'
-title: JET_CALLBACK funzione di callback
+description: 'Altre informazioni su: Funzione JET_CALLBACK callback'
+title: JET_CALLBACK Callback Function
 TOCTitle: JET_CALLBACK Callback Function
 ms:assetid: d15d4f84-8378-4b4b-9b8b-e89a56be5ead
 ms:mtpsurl: https://msdn.microsoft.com/library/Gg294098(v=EXCHG.10)
@@ -15,23 +15,23 @@ api_type:
 - COM
 api_location: ''
 ROBOTS: INDEX,FOLLOW
-ms.openlocfilehash: d50f0f3a0908b725d7f704df962324a0f16af1fc6f7353515a8d604e87edd0a5
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 08d992d1e8b6ca7c6a987a57f44b48d6ba291328
+ms.sourcegitcommit: 9b5faa61c38b2d0c432b7f2dbee8c127b0e28a7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "118487614"
+ms.lasthandoff: 08/19/2021
+ms.locfileid: "122471170"
 ---
-# <a name="jet_callback-callback-function"></a>JET_CALLBACK funzione di callback
+# <a name="jet_callback-callback-function"></a>JET_CALLBACK Callback Function
 
 
 _**Si applica a:** Windows | Windows Server_
 
-## <a name="jet_callback-callback-function"></a>JET_CALLBACK funzione di callback
+## <a name="jet_callback-callback-function"></a>JET_CALLBACK Callback Function
 
-La **JET_CALLBACK** è una funzione di callback multivalore usata dal motore di database per informare l'applicazione di un evento che interessa la deframmentazione online e le notifiche sullo stato del cursore.
+La **JET_CALLBACK** è una funzione di callback multivalore utilizzata dal motore di database per informare l'applicazione di un evento che interessa la deframmentazione online e le notifiche sullo stato del cursore.
 
-Vedere [JET_CBTYP](./jet-cbtyp.md) impostazioni specifiche da usare per i parametri di questa funzione, in quanto queste impostazioni variano **a** seconda dell'opzione JET_CBTYP selezionata per l'uso nel *parametro cbtyp.*
+Vedere [JET_CBTYP](./jet-cbtyp.md) impostazioni specifiche da usare per i parametri di questa funzione, perché queste impostazioni variano **a** seconda dell'opzione JET_CBTYP selezionata per l'uso nel *parametro cbtyp.*
 
 ```cpp
     JET_ERR JET_API* JET_CALLBACK(
@@ -50,7 +50,7 @@ Vedere [JET_CBTYP](./jet-cbtyp.md) impostazioni specifiche da usare per i parame
 
 *sesid*
 
-Sessione per cui viene eseguito il callback.
+Sessione per la quale viene eseguito il callback.
 
 *Dbid*
 
@@ -58,37 +58,37 @@ Database per il quale viene eseguito il callback.
 
 *tableid*
 
-Cursore per cui viene eseguito il callback.
+Cursore per il quale viene eseguito il callback.
 
 *cbtyp*
 
-Punto dell'operazione in cui viene eseguito il callback. Vedere [JET_CBTYP](./jet-cbtyp.md) per un elenco di valori e il significato dei parametri seguenti in ogni caso.
+Punto nell'operazione in cui viene eseguito il callback. Vedere [JET_CBTYP](./jet-cbtyp.md) per un elenco di valori e il significato dei parametri seguenti in ogni caso.
 
 *pvArg1*
 
-Parametro utilizzato per comunicare con l'applicazione usando il callback . Vedere [JET_CBTYP](./jet-cbtyp.md) per informazioni sull'uso di questo parametro per ogni callback supportato dal motore di database.
+Parametro utilizzato per comunicare con l'applicazione utilizzando il callback. Vedere [JET_CBTYP](./jet-cbtyp.md) per informazioni sull'uso di questo parametro per ogni callback supportato dal motore di database.
 
 *pvArg2*
 
-Parametro utilizzato per comunicare con l'applicazione usando il callback . Vedere [JET_CBTYP](./jet-cbtyp.md) per informazioni sull'uso di questo parametro per ogni callback supportato dal motore di database.
+Parametro utilizzato per comunicare con l'applicazione utilizzando il callback. Vedere [JET_CBTYP](./jet-cbtyp.md) per informazioni sull'uso di questo parametro per ogni callback supportato dal motore di database.
 
 *pvContext*
 
-Parametro utilizzato per comunicare con l'applicazione usando il callback . Vedere [JET_CBTYP](./jet-cbtyp.md) per informazioni sull'uso di questo parametro per ogni callback supportato dal motore di database.
+Parametro utilizzato per comunicare con l'applicazione utilizzando il callback. Vedere [JET_CBTYP](./jet-cbtyp.md) per informazioni sull'uso di questo parametro per ogni callback supportato dal motore di database.
 
 *ulUnused*
 
-Parametro utilizzato per comunicare con l'applicazione usando il callback . Vedere [JET_CBTYP](./jet-cbtyp.md) per informazioni sull'uso di questo parametro per ogni callback supportato dal motore di database.
+Parametro utilizzato per comunicare con l'applicazione utilizzando il callback. Vedere [JET_CBTYP](./jet-cbtyp.md) per informazioni sull'uso di questo parametro per ogni callback supportato dal motore di database.
 
 #### <a name="return-value"></a>Valore restituito
 
-La funzione restituisce uno dei codici di errore [extensible Archiviazione Engine](./extensible-storage-engine-error-codes.md). Per informazioni su come restituire questi codici come HRESULT, vedere Errori del motore Archiviazione [estendibile](./extensible-storage-engine-errors.md). In caso di esito positivo, l'operazione che ha eseguito il callback può procedere normalmente. In alcuni casi, il callback può restituire un avviso che influisce su tale operazione. Vedere [JET_CBTYP](./jet-cbtyp.md) per informazioni sull'uso di questi avvisi da parte dell'operazione.
+La funzione restituisce uno dei codici di errore [extensible Archiviazione Engine](./extensible-storage-engine-error-codes.md). Per informazioni su come restituire questi codici come HRESULT, vedere [Extensible Archiviazione Engine Errors](./extensible-storage-engine-errors.md). In caso di esito positivo, l'operazione che ha emesso il callback può continuare normalmente. In alcuni casi, il callback può restituire un avviso che influisce su tale operazione. Vedere [JET_CBTYP](./jet-cbtyp.md) per informazioni sull'uso di questi avvisi da parte dell'operazione.
 
-In caso di errore, l'operazione che ha eseguito il callback può continuare normalmente o potrebbe non riuscire. Vedere [JET_CBTYP](./jet-cbtyp.md) per informazioni sull'uso del codice di errore da parte dell'operazione.
+In caso di errore, l'operazione che ha emesso il callback può continuare normalmente o non riuscire. Vedere [JET_CBTYP](./jet-cbtyp.md) per informazioni sull'uso del codice di errore da parte dell'operazione.
 
 #### <a name="remarks"></a>Commenti
 
-Se il callback passa un cursore all'applicazione, è importante sapere che questo cursore è intenzionalmente limitato a un set più piccolo di funzionalità per evitare ricorsione e altre bruttezza. Sono consentite le operazioni seguenti:
+Se il callback passa un cursore all'applicazione, è importante sapere che questo cursore è intenzionalmente limitato a un set più piccolo di funzionalità per evitare ricorsione e altri problemi. Sono consentite le operazioni seguenti:
 
   - [JetDupCursor](./jetdupcursor-function.md)
 
@@ -116,13 +116,13 @@ Se il callback passa un cursore all'applicazione, è importante sapere che quest
 
   - [JetRetrieveColumn](./jetretrievecolumn-function.md)
 
-  - [JetRetrieveColumns](./jetretrievecolumns-function.md)
+  - [Oggetti JetRetrieveColumns](./jetretrievecolumns-function.md)
 
   - [JetRetrieveKey](./jetretrievekey-function.md)
 
   - [JetSetColumn](./jetsetcolumn-function.md)
 
-  - [JetSetColumns](./jetsetcolumns-function.md)
+  - [Oggetti JetSetColumns](./jetsetcolumns-function.md)
 
   - [JetSetLS](./jetsetls-function.md)
 
@@ -132,26 +132,9 @@ Quando si progetta il callback, prendere in considerazione che, anche con queste
 
 #### <a name="requirements"></a>Requisiti
 
-<table>
-<colgroup>
-<col style="width: 50%" />
-<col style="width: 50%" />
-</colgroup>
-<tbody>
-<tr class="odd">
-<td><p><strong>Client</strong></p></td>
-<td><p>Richiede Windows Vista, Windows XP o Windows 2000 Professional.</p></td>
-</tr>
-<tr class="even">
-<td><p><strong>Server</strong></p></td>
-<td><p>Richiede Windows Server 2008, Windows Server 2003 o Windows 2000 Server.</p></td>
-</tr>
-<tr class="odd">
-<td><p><strong>Intestazione</strong></p></td>
-<td><p>Dichiarato in Esent.h.</p></td>
-</tr>
-</tbody>
-</table>
+
+| | | <p><strong>Client</strong></p> | <p>Richiede Windows Vista, Windows XP o Windows 2000 Professional.</p> | | <p><strong>Server</strong></p> | <p>Richiede Windows Server 2008, Windows Server 2003 o Windows 2000 Server.</p> | | <p><strong>Intestazione</strong></p> | <p>Dichiarato in Esent.h.</p> | 
+
 
 
 ### <a name="see-also"></a>Vedere anche

@@ -1,9 +1,9 @@
 ---
 title: Elemento ScheduleByMonthDayOfWeek (calendarTriggerType)
-description: Specifica una pianificazione mensile giornaliera della settimana.
+description: Specifica una pianificazione mensile del giorno della settimana.
 ms.assetid: 7ff17bea-fa26-40c4-90fa-d94a3690e464
 keywords:
-- Utilità di pianificazione elemento ScheduleByMonthDayOfWeek
+- Elemento ScheduleByMonthDayOfWeek Utilità di pianificazione
 topic_type:
 - apiref
 api_name:
@@ -13,16 +13,16 @@ api_type:
 ms.topic: reference
 ms.date: 05/31/2018
 api_location: ''
-ms.openlocfilehash: 3e92d6ad530466a2238c8239c9e262f85ae361d2
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: 185608ea5a8805511de8430c82e6eecabd9cc5b9622fed85d71e26dd39f20cc4
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "103742890"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120099881"
 ---
 # <a name="schedulebymonthdayofweek-calendartriggertype-element"></a>Elemento ScheduleByMonthDayOfWeek (calendarTriggerType)
 
-Specifica una pianificazione mensile giornaliera della settimana. Ad esempio, l'attività viene avviata in giorni specifici della settimana, settimane del mese e mesi dell'anno.
+Specifica una pianificazione mensile del giorno della settimana. Ad esempio, l'attività inizia in giorni specifici della settimana, settimane del mese e mesi dell'anno.
 
 ``` syntax
 <xs:element name="ScheduleByMonthDayOfWeek"
@@ -30,7 +30,7 @@ Specifica una pianificazione mensile giornaliera della settimana. Ad esempio, l'
  />
 ```
 
-L'elemento **ScheduleByMonthDayOfWeek** è definito dal tipo complesso [**monthlyDayOfWeekScheduleType**](taskschedulerschema-monthlydayofweekscheduletype-complextype.md) .
+**L'elemento ScheduleByMonthDayOfWeek** è definito dal tipo complesso [**monthlyDayOfWeekScheduleType.**](taskschedulerschema-monthlydayofweekscheduletype-complextype.md)
 
 ## <a name="parent-element"></a>Elemento padre
 
@@ -38,7 +38,7 @@ L'elemento **ScheduleByMonthDayOfWeek** è definito dal tipo complesso [**monthl
 
 | Elemento                                                                             | Derivato da                                                                       | Descrizione                                                                                |
 |-------------------------------------------------------------------------------------|------------------------------------------------------------------------------------|--------------------------------------------------------------------------------------------|
-| [**CalendarTrigger**](taskschedulerschema-calendartrigger-triggergroup-element.md) | [**calendarTriggerType**](taskschedulerschema-calendartriggertype-complextype.md) | Specifica un trigger giornaliero, settimanale, mensile o mensile (DOW) per il giorno della settimana.<br/> |
+| [**CalendarTrigger**](taskschedulerschema-calendartrigger-triggergroup-element.md) | [**calendarTriggerType**](taskschedulerschema-calendartriggertype-complextype.md) | Specifica un trigger giornaliero, settimanale, mensile o mensile.<br/> |
 
 
 
@@ -56,17 +56,17 @@ L'elemento **ScheduleByMonthDayOfWeek** è definito dal tipo complesso [**monthl
 
 ## <a name="remarks"></a>Commenti
 
-L'ora del giorno in cui l'attività viene avviata viene impostata dall'elemento [**StartBoundary**](taskschedulerschema-startboundary-triggerbasetype-element.md) .
+L'ora del giorno in cui l'attività viene avviata viene impostata [**dall'elemento StartBoundary.**](taskschedulerschema-startboundary-triggerbasetype-element.md)
 
-Per lo sviluppo di script, viene specificato un trigger di giorno della settimana mensile utilizzando l'oggetto [**MonthlyDOWTrigger**](monthlydowtrigger.md) .
+Per lo sviluppo di script, viene specificato un trigger mensile giorno della settimana usando [**l'oggetto MonthlyDOWTrigger.**](monthlydowtrigger.md)
 
-Per lo sviluppo in C++, viene specificato un trigger di giorno della settimana mensile usando l'interfaccia [**IMonthlyDOWTrigger**](/windows/desktop/api/taskschd/nn-taskschd-imonthlydowtrigger) .
+Per lo sviluppo C++, viene specificato un trigger giornaliero mensile tramite [**l'interfaccia IMonthlyDOWTrigger.**](/windows/desktop/api/taskschd/nn-taskschd-imonthlydowtrigger)
 
-Gli elementi figlio elencati sopra sono definiti dai tipi di elemento complessi [**monthlyDayOfWeekScheduleType**](taskschedulerschema-monthlydayofweekscheduletype-complextype.md) .
+Gli elementi figlio elencati in precedenza sono definiti dai tipi di elemento complessi [**monthlyDayOfWeekScheduleType.**](taskschedulerschema-monthlydayofweekscheduletype-complextype.md)
 
 ## <a name="examples"></a>Esempio
 
-Il codice XML seguente definisce un trigger di calendario mensile del giorno della settimana che avvia un'attività (alle 8:00 AM) il lunedì della prima settimana per ogni mese dell'anno.
+Il codice XML seguente definisce un trigger di calendario mensile giorno della settimana che avvia un'attività ( alle 8:00 AM) il lunedì della prima settimana per ogni mese dell'anno.
 
 
 ```XML
@@ -106,8 +106,8 @@ Il codice XML seguente definisce un trigger di calendario mensile del giorno del
 
 | Requisito | Valore |
 |-------------------------------------|------------------------------------------------------|
-| Client minimo supportato<br/> | \[Solo app desktop di Windows Vista\]<br/>       |
-| Server minimo supportato<br/> | \[Solo app desktop Windows Server 2008\]<br/> |
+| Client minimo supportato<br/> | Windows Solo \[ app desktop di Vista\]<br/>       |
+| Server minimo supportato<br/> | Windows Solo app desktop server 2008 \[\]<br/> |
 
 
 
@@ -115,7 +115,7 @@ Il codice XML seguente definisce un trigger di calendario mensile del giorno del
 
 <dl> <dt>
 
-[Elementi dello schema Utilità di pianificazione](task-scheduler-schema-elements.md)
+[Utilità di pianificazione elementi dello schema](task-scheduler-schema-elements.md)
 </dt> <dt>
 
 [Utilità di pianificazione](task-scheduler-start-page.md)

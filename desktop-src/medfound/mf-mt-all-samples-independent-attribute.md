@@ -1,19 +1,19 @@
 ---
-description: Specifica un tipo di supporto se ogni campione è indipendente dagli altri esempi nel flusso.
+description: Specifica per un tipo di supporto se ogni campione è indipendente dagli altri campioni nel flusso.
 ms.assetid: 40434f63-e191-45e1-b788-5f80fe7f49ae
-title: Attributo MF_MT_ALL_SAMPLES_INDEPENDENT (Mfapi. h)
+title: MF_MT_ALL_SAMPLES_INDEPENDENT attributo (Mfapi.h)
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: f82173e99a30e033b3d90f6cfec0dc2aa8b3af97
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 1ada34232ccbc7eb30fc9a5bcb64e96542b0375140de426fae951f5e0317c9e1
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "106309558"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120060751"
 ---
-# <a name="mf_mt_all_samples_independent-attribute"></a>\_ \_ Attributo indipendente di tutti gli esempi MF mt \_ \_
+# <a name="mf_mt_all_samples_independent-attribute"></a>Attributo MF \_ MT \_ ALL SAMPLES \_ \_ INDEPENDENT
 
-Specifica un tipo di supporto se ogni campione è indipendente dagli altri esempi nel flusso.
+Specifica per un tipo di supporto se ogni campione è indipendente dagli altri campioni nel flusso.
 
 ## <a name="data-type"></a>Tipo di dati
 
@@ -23,13 +23,13 @@ Considera come valore booleano.
 
 ## <a name="remarks"></a>Commenti
 
-Se questo attributo è **false**, alcuni esempi non possono essere usati senza fare riferimento ad altri esempi nel flusso. Se, ad esempio, un formato video contiene frame Delta, questo attributo deve essere **false**.
+Se questo attributo è **FALSE,** alcuni esempi non possono essere usati senza fare riferimento ad altri esempi nel flusso. Ad esempio, se un formato video contiene fotogrammi differenziali, questo attributo deve essere **FALSE.**
 
-Questo attributo corrisponde al campo **bTemporalCompression** nella struttura del [**tipo di \_ supporto \_ DirectShow am**](/windows/win32/api/strmif/ns-strmif-am_media_type) .
+Questo attributo corrisponde al **campo bTemporalCompression** nella DirectShow [**AM MEDIA \_ \_ TYPE.**](/windows/win32/api/strmif/ns-strmif-am_media_type)
 
-Impostare questo attributo su **true** per tutti i tipi di supporto non compressi.
+Impostare questo attributo su **TRUE per tutti** i tipi di supporti non compressi.
 
-La costante GUID per questo attributo viene esportata da mfuuid. lib.
+La costante GUID per questo attributo viene esportata da mfuuid.lib.
 
 ## <a name="requirements"></a>Requisiti
 
@@ -37,9 +37,9 @@ La costante GUID per questo attributo viene esportata da mfuuid. lib.
 
 | Requisito | Valore |
 |-------------------------------------|------------------------------------------------------------------------------------|
-| Client minimo supportato<br/> | App desktop di Windows Vista app \[ \| UWP\]<br/>                              |
-| Server minimo supportato<br/> | App UWP per \[ app desktop di Windows Server 2008 \|\]<br/>                        |
-| Intestazione<br/>                   | <dl> <dt>Mfapi. h</dt> </dl> |
+| Client minimo supportato<br/> | Windows App desktop vista \[ \| app UWP\]<br/>                              |
+| Server minimo supportato<br/> | Windows App desktop di Server 2008 \[ \| app UWP\]<br/>                        |
+| Intestazione<br/>                   | <dl> <dt>Mfapi.h</dt> </dl> |
 
 
 
@@ -47,13 +47,13 @@ La costante GUID per questo attributo viene esportata da mfuuid. lib.
 
 <dl> <dt>
 
-[Elenco alfabetico degli attributi di Media Foundation](alphabetical-list-of-media-foundation-attributes.md)
+[Elenco alfabetico degli Media Foundation personalizzati](alphabetical-list-of-media-foundation-attributes.md)
 </dt> <dt>
 
-[**IMFAttributes:: GetUInt32**](/windows/desktop/api/mfobjects/nf-mfobjects-imfattributes-getuint32)
+[**IMFAttributes::GetUINT32**](/windows/desktop/api/mfobjects/nf-mfobjects-imfattributes-getuint32)
 </dt> <dt>
 
-[**IMFAttributes:: seuint32**](/windows/desktop/api/mfobjects/nf-mfobjects-imfattributes-setuint32)
+[**IMFAttributes::SetUINT32**](/windows/desktop/api/mfobjects/nf-mfobjects-imfattributes-setuint32)
 </dt> <dt>
 
 [**IMFMediaType**](/windows/desktop/api/mfobjects/nn-mfobjects-imfmediatype)

@@ -1,28 +1,28 @@
 ---
 title: WriteXmlSimpleExample
-description: In questo esempio viene scritto un semplice documento XML.
+description: In questo esempio viene scritto un documento XML semplice.
 ms.assetid: 9af95856-cd17-414a-aa4c-6a9927acf81e
 keywords:
-- Servizi Web WriteXmlSimpleExample per Windows
+- WriteXmlSimpleExample Web Services for Windows
 - WWSAPI
-- WWS
+- Wws
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: b5456d9a8d571e0ae669ec8f910c14dc9a417911
-ms.sourcegitcommit: 2d531328b6ed82d4ad971a45a5131b430c5866f7
+ms.openlocfilehash: 66d2bebc9f4b6600af3a6131afef7f2f5c76c72856a102cbaee9c79d366c6b93
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "104328927"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120109731"
 ---
 # <a name="writexmlsimpleexample"></a>WriteXmlSimpleExample
 
-In questo esempio viene scritto un semplice documento XML.
+In questo esempio viene scritto un documento XML semplice.
 
--   [WriteXmlSimple. cpp](#writexmlsimplecpp)
+-   [WriteXmlSimple.cpp](#writexmlsimplecpp)
 -   [Makefile](#makefile)
 
-## <a name="writexmlsimplecpp"></a>WriteXmlSimple. cpp
+## <a name="writexmlsimplecpp"></a>WriteXmlSimple.cpp
 
 
 ```C++
@@ -235,9 +235,9 @@ clean:
 
 ```
 
- 
+ 
 
- 
+ 
 
 
 

@@ -1,19 +1,19 @@
 ---
-description: Informazioni sull'elemento PageResolution configurabile dall'utente. Questo argomento non è corrente. Per le informazioni più aggiornate, vedere Print Schema Specification( Specifica dello schema di stampa).
+description: Leggere l'elemento PageResolution configurabile dall'utente. Questo argomento non è corrente. Per le informazioni più aggiornate, vedere Specifica dello schema di stampa.
 ms.assetid: 88f9a9a3-520e-4044-9ab2-961de03878fa
 title: Pageresolution
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 760384ff900e7b35e37105fdb19e3635a434aa5a
-ms.sourcegitcommit: 91530c19d26ba4c57a6af1f37b57f211f580464e
+ms.openlocfilehash: 8c7f8768c7edbdb650e068734302add4dfa843b8b16db404bea5fbc50cb37e9e
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/19/2021
-ms.locfileid: "112394821"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120112291"
 ---
 # <a name="pageresolution"></a>Pageresolution
 
-Questo argomento non è corrente. Per le informazioni più aggiornate, vedere Print [Schema Specification](https://download.microsoft.com/download/D/E/C/DECA6E6B-3E81-48E7-B7EF-6D92A547D03C/print-schema-spec-2-0.zip).
+Questo argomento non è corrente. Per le informazioni più aggiornate, vedere Specifica [dello schema di stampa](https://download.microsoft.com/download/D/E/C/DECA6E6B-3E81-48E7-B7EF-6D92A547D03C/print-schema-spec-2-0.zip).
 
 Definisce la risoluzione della pagina dell'output stampato come valore qualitativo, in punti per pollice o in entrambi i modi.
 
@@ -69,10 +69,10 @@ Nella tabella seguente vengono descritte le caratteristiche delle variabili defi
 
 | Nome                                      | Tipo di dati          | Unità                  | Valori supportati                                                                                                                                                                      | Riepilogo                                                                                                                                                          |
 |-------------------------------------------|--------------------|-----------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| \_OptionName\_<br/>                 | string<br/>  | caratteri<br/> | Nome completo valido definito da Spazi [dei nomi in XML.](https://www.w3.org/TR/1999/REC-xml-names-19990114/) Se non viene specificato alcuno spazio dei nomi, viene utilizzato lo spazio dei nomi predefinito.<br/> | Nome dell'opzione.<br/>                                                                                                                               |
+| \_OptionName\_<br/>                 | string<br/>  | caratteri<br/> | Nome completo valido come definito da [Spazi dei nomi in XML.](https://www.w3.org/TR/1999/REC-xml-names-19990114/) Se non viene specificato alcuno spazio dei nomi, viene utilizzato lo spazio dei nomi predefinito.<br/> | Nome dell'opzione.<br/>                                                                                                                               |
 | \_IdentityOptionValue\_<br/>        | string<br/>  | n/d<br/>        | True, False.<br/>                                                                                                                                                               | Definisce un'opzione che, se selezionata, disabilita questa funzionalità.<br/>                                                                                     |
-| \_ResolutionXValue\_<br/>           | numero intero<br/> | DPI<br/>        | Maggiore di 0.<br/>                                                                                                                                                            | Specifica il componente x della risoluzione rispetto a PageImageableSize in DPI (relativo a PageMediaSize e alla direzione del feed dei supporti).<br/> |
-| \_ResolutionYValue\_<br/>           | numero intero<br/> | DPI<br/>        | Maggiore di 0.<br/>                                                                                                                                                            | Specifica il componente y della risoluzione rispetto a PageImageableSize in DPI (relativo a PageMediaSize e alla direzione del feed dei supporti).<br/> |
+| \_ResolutionXValue\_<br/>           | numero intero<br/> | DPI<br/>        | Maggiore di 0.<br/>                                                                                                                                                            | Specifica il componente x della risoluzione relativo a PageImageableSize in DPI (relativo alla direzione PageMediaSize e al feed del supporto).<br/> |
+| \_ResolutionYValue\_<br/>           | numero intero<br/> | DPI<br/>        | Maggiore di 0.<br/>                                                                                                                                                            | Specifica il componente y della risoluzione relativo a PageImageableSize in DPI (rispetto alla direzione PageMediaSize e feed del supporto).<br/> |
 | \_QualitativeResolutionValue\_<br/> | string<br/>  | n/d<br/>        | Default, Draft, High, Normal, Other.<br/>                                                                                                                                       | Specifica un'etichetta di qualità per la risoluzione.<br/>                                                                                                         |
 
 
@@ -81,7 +81,7 @@ Nella tabella seguente vengono descritte le caratteristiche delle variabili defi
 
 ## <a name="extensible-markup-language-xml-content"></a>Extensible Markup Language (XML) Content
 
-Le parole chiave dello schema di stampa pubblico sono definite nello spazio dei https://schemas.microsoft.com/windows/2003/08/printing/printschemakeywords nomi . Il contenuto Extensible Markup Language pubblico (XML) per questa parola chiave è definito di seguito:
+Le parole chiave pubbliche dello schema di stampa sono definite nello spazio https://schemas.microsoft.com/windows/2003/08/printing/printschemakeywords dei nomi . Il contenuto Extensible Markup Language (XML) pubblico per questa parola chiave è definito di seguito:
 
 ``` syntax
 <psf:Feature name="psk:PageResolution">

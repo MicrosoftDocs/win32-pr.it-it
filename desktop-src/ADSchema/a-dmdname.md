@@ -1,10 +1,10 @@
 ---
-title: Attributo DMD-Name
-description: Nome utilizzato per identificare la partizione dello schema. Non usato da AD.
+title: DMD-Name attributo
+description: Nome utilizzato per identificare la partizione dello schema. Non usato da Active Directory.
 ms.assetid: 0ee35c32-add7-4b20-8d83-59b4b91df6ad
 ms.tgt_platform: multiple
 keywords:
-- Schema AD DMD-Name attribute
+- DMD-Name schema AD dell'attributo
 - Schema AD dell'attributo dmdName
 topic_type:
 - apiref
@@ -14,28 +14,28 @@ api_type:
 - Schema
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: b25684af133748ca73c8ace31b0471a5d1e0a787
-ms.sourcegitcommit: b77ace27b0432e7cd3863191b11926be032fbe2f
+ms.openlocfilehash: 43650fdf846a605e3751ef16729295574321bacf9e67bc26c5a4c51d2e9a8da7
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/14/2020
-ms.locfileid: "103965100"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120085971"
 ---
-# <a name="dmd-name-attribute"></a>Attributo DMD-Name
+# <a name="dmd-name-attribute"></a>DMD-Name attributo
 
-Nome utilizzato per identificare la partizione dello schema. Non usato da AD.
+Nome utilizzato per identificare la partizione dello schema. Non usato da Active Directory.
 
 
 
 | Voce | Valore |
 |-------------------|---------------------------------------------|
 | CN                | DMD-Name                                    |
-| LDAP-Display-Name | dmdName                                     |
+| Ldap-Display-Name | dmdName                                     |
 | Dimensione              | \-                                          |
-| Privilegio aggiornamento  | \-                                          |
+| Aggiorna privilegio  | \-                                          |
 | Frequenza di aggiornamento  | \-                                          |
 | Attribute-Id      | 1.2.840.113556.1.2.598                      |
-| System-ID-GUID    | 167757b9-47f3-11d1-a9c3-0000f80367c1        |
+| System-Id-Guid    | 167757b9-47f3-11d1-a9c3-0000f80367c1        |
 | Sintassi            | [**String(Unicode)**](s-string-unicode.md) |
 
 
@@ -44,7 +44,7 @@ Nome utilizzato per identificare la partizione dello schema. Non usato da AD.
 
 -   [**Windows 2000 Server**](#windows-2000-server)
 -   [**Windows Server 2003**](#windows-server-2003)
--   [**ADAM**](#adam)
+-   [**Adam**](#adam)
 -   [**Windows Server 2003 R2**](#windows-server-2003-r2)
 -   [**Windows Server 2008**](#windows-server-2008)
 -   [**Windows Server 2008 R2**](#windows-server-2008-r2)
@@ -59,15 +59,15 @@ Nome utilizzato per identificare la partizione dello schema. Non usato da AD.
 | ID collegamento                | \-                              |
 | MAPI-Id                | 0x8C56                          |
 | System-Only            | Falso                           |
-| È a valore singolo       | Vero                            |
+| Is-Single-Valued       | Vero                            |
 | Indicizzato             | Falso                           |
 | Nel catalogo globale      | Falso                           |
-| NT-Security-descrittore | O:BAG: NON VALIDO: S:                    |
+| NT-Security-Descriptor | O:BAG:BAD:S:                    |
 | Range-Lower            | 1                               |
 | Range-Upper            | 1024                            |
 | Search-Flags           | 0x00000000                      |
 | System-Flags           | 0x00000010                      |
-| Classi utilizzate in        | [**DMD**](c-dmd.md)<br/> |
+| Classi usate in        | [**Dmd**](c-dmd.md)<br/> |
 
 
 
@@ -80,19 +80,19 @@ Nome utilizzato per identificare la partizione dello schema. Non usato da AD.
 | ID collegamento                | \-                              |
 | MAPI-Id                | 0x8C56                          |
 | System-Only            | Falso                           |
-| È a valore singolo       | Vero                            |
+| Is-Single-Valued       | Vero                            |
 | Indicizzato             | Falso                           |
 | Nel catalogo globale      | Falso                           |
-| NT-Security-descrittore | O:BAG: NON VALIDO: S:                    |
+| NT-Security-Descriptor | O:BAG:BAD:S:                    |
 | Range-Lower            | 1                               |
 | Range-Upper            | 1024                            |
 | Search-Flags           | 0x00000000                      |
 | System-Flags           | 0x00000010                      |
-| Classi utilizzate in        | [**DMD**](c-dmd.md)<br/> |
+| Classi usate in        | [**Dmd**](c-dmd.md)<br/> |
 
 
 
-## <a name="adam"></a>ADAM
+## <a name="adam"></a>Adam
 
 
 
@@ -101,15 +101,15 @@ Nome utilizzato per identificare la partizione dello schema. Non usato da AD.
 | ID collegamento                | \-                              |
 | MAPI-Id                | 0x8C56                          |
 | System-Only            | Falso                           |
-| È a valore singolo       | Vero                            |
+| Is-Single-Valued       | Vero                            |
 | Indicizzato             | Falso                           |
 | Nel catalogo globale      | Falso                           |
-| NT-Security-descrittore | O:BAG: NON VALIDO: S:                    |
+| NT-Security-Descriptor | O:BAG:BAD:S:                    |
 | Range-Lower            | 1                               |
 | Range-Upper            | 1024                            |
 | Search-Flags           | 0x00000000                      |
 | System-Flags           | 0x00000010                      |
-| Classi utilizzate in        | [**DMD**](c-dmd.md)<br/> |
+| Classi usate in        | [**Dmd**](c-dmd.md)<br/> |
 
 
 
@@ -122,15 +122,15 @@ Nome utilizzato per identificare la partizione dello schema. Non usato da AD.
 | ID collegamento                | \-                              |
 | MAPI-Id                | 0x8C56                          |
 | System-Only            | Falso                           |
-| È a valore singolo       | Vero                            |
+| Is-Single-Valued       | Vero                            |
 | Indicizzato             | Falso                           |
 | Nel catalogo globale      | Falso                           |
-| NT-Security-descrittore | O:BAG: NON VALIDO: S:                    |
+| NT-Security-Descriptor | O:BAG:BAD:S:                    |
 | Range-Lower            | 1                               |
 | Range-Upper            | 1024                            |
 | Search-Flags           | 0x00000000                      |
 | System-Flags           | 0x00000010                      |
-| Classi utilizzate in        | [**DMD**](c-dmd.md)<br/> |
+| Classi usate in        | [**Dmd**](c-dmd.md)<br/> |
 
 
 
@@ -143,15 +143,15 @@ Nome utilizzato per identificare la partizione dello schema. Non usato da AD.
 | ID collegamento                | \-                              |
 | MAPI-Id                | 0x8C56                          |
 | System-Only            | Falso                           |
-| È a valore singolo       | Vero                            |
+| Is-Single-Valued       | Vero                            |
 | Indicizzato             | Falso                           |
 | Nel catalogo globale      | Falso                           |
-| NT-Security-descrittore | O:BAG: NON VALIDO: S:                    |
+| NT-Security-Descriptor | O:BAG:BAD:S:                    |
 | Range-Lower            | 1                               |
 | Range-Upper            | 1024                            |
 | Search-Flags           | 0x00000000                      |
 | System-Flags           | 0x00000010                      |
-| Classi utilizzate in        | [**DMD**](c-dmd.md)<br/> |
+| Classi usate in        | [**Dmd**](c-dmd.md)<br/> |
 
 
 
@@ -164,15 +164,15 @@ Nome utilizzato per identificare la partizione dello schema. Non usato da AD.
 | ID collegamento                | \-                              |
 | MAPI-Id                | 0x8C56                          |
 | System-Only            | Falso                           |
-| È a valore singolo       | Vero                            |
+| Is-Single-Valued       | Vero                            |
 | Indicizzato             | Falso                           |
 | Nel catalogo globale      | Falso                           |
-| NT-Security-descrittore | O:BAG: NON VALIDO: S:                    |
+| NT-Security-Descriptor | O:BAG:BAD:S:                    |
 | Range-Lower            | 1                               |
 | Range-Upper            | 1024                            |
 | Search-Flags           | 0x00000000                      |
 | System-Flags           | 0x00000010                      |
-| Classi utilizzate in        | [**DMD**](c-dmd.md)<br/> |
+| Classi usate in        | [**Dmd**](c-dmd.md)<br/> |
 
 
 
@@ -185,15 +185,15 @@ Nome utilizzato per identificare la partizione dello schema. Non usato da AD.
 | ID collegamento                | \-                              |
 | MAPI-Id                | 0x8C56                          |
 | System-Only            | Falso                           |
-| È a valore singolo       | Vero                            |
+| Is-Single-Valued       | Vero                            |
 | Indicizzato             | Falso                           |
 | Nel catalogo globale      | Falso                           |
-| NT-Security-descrittore | O:BAG: NON VALIDO: S:                    |
+| NT-Security-Descriptor | O:BAG:BAD:S:                    |
 | Range-Lower            | 1                               |
 | Range-Upper            | 1024                            |
 | Search-Flags           | 0x00000000                      |
 | System-Flags           | 0x00000010                      |
-| Classi utilizzate in        | [**DMD**](c-dmd.md)<br/> |
+| Classi usate in        | [**Dmd**](c-dmd.md)<br/> |
 
 
 

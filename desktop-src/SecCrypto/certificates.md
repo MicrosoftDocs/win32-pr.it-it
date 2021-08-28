@@ -13,12 +13,12 @@ api_type:
 - COM
 api_location:
 - Capicom.dll
-ms.openlocfilehash: 8efb9221f39b8544eabe8f6c00d21f6cfdf20c14
-ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
+ms.openlocfilehash: 4ccd66085f96ac7f3567ca3bf993d7d31c9bc70437199701fe88165adf52d03e
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/28/2021
-ms.locfileid: "108098389"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120126721"
 ---
 # <a name="certificates-object"></a>Oggetto Certificates
 
@@ -57,12 +57,12 @@ ms.locfileid: "108098389"
 
 | Metodo                                | Descrizione                                                                                                                                                           |
 |:--------------------------------------|:----------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| [**Aggiungere**](certificates-add.md)       | Aggiunge un [**oggetto Certificate**](certificate.md) all'insieme.<br/> Ereditato da **CertificatesICertificates2**                                        |
-| [**Chiaro**](certificates-clear.md)   | Rimuove tutti [**gli oggetti**](certificate.md) Certificate dalla raccolta.<br/> Ereditato da **CertificatesICertificates2**                                |
-| [**Find**](certificates-find.md)     | Restituisce un **oggetto Certificates** che contiene tutti i certificati che corrispondono ai criteri di ricerca specificati.<br/> Ereditato da **CertificatesICertificates2** |
-| [**Rimuovi**](certificates-remove.md) | Rimuove un singolo [**oggetto Certificate**](certificate.md) dalla raccolta.<br/> Ereditato da **CertificatesICertificates2**                            |
-| [**Salva**](certificates-save.md)     | Salva i certificati in un file specificato.<br/> Ereditato da **CertificatesICertificates2**                                                                |
-| [**Selezionare**](certificates-select.md) | Visualizza una finestra di dialogo per la selezione dei certificati e restituisce una raccolta di tali certificati selezionati.<br/> Ereditato da **CertificatesICertificates2**  |
+| [**Aggiungere**](certificates-add.md)       | Aggiunge un [**oggetto Certificate**](certificate.md) alla raccolta.<br/> (Ereditato da **CertificatesICertificates2**)                                        |
+| [**Cancella**](certificates-clear.md)   | Rimuove tutti [**gli oggetti Certificate**](certificate.md) dalla raccolta.<br/> (Ereditato da **CertificatesICertificates2**)                                |
+| [**Find**](certificates-find.md)     | Restituisce un **oggetto Certificates** che contiene tutti i certificati che corrispondono ai criteri di ricerca specificati.<br/> (Ereditato da **CertificatesICertificates2**) |
+| [**Rimuovi**](certificates-remove.md) | Rimuove un singolo [**oggetto Certificate**](certificate.md) dalla raccolta.<br/> (Ereditato da **CertificatesICertificates2**)                            |
+| [**Salva**](certificates-save.md)     | Salva i certificati in un file specificato.<br/> (Ereditato da **CertificatesICertificates2**)                                                                |
+| [**Seleziona**](certificates-select.md) | Visualizza una finestra di dialogo per la selezione dei certificati e restituisce una raccolta di tali certificati selezionati.<br/> (Ereditato da **CertificatesICertificates2**)  |
 
 
 
@@ -70,13 +70,13 @@ ms.locfileid: "108098389"
 
 ### <a name="properties"></a>Proprietà
 
-Queste **proprietà sono** disponibili nell'oggetto Certificates.
+**L'oggetto Certificates** ha queste proprietà.
 
 
 
 | Proprietà                                             | Tipo di accesso          | Descrizione                                                                                                                                                                                                                     |
 |:-----------------------------------------------------|:---------------------|:--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| [**\_NewEnum**](certificates-newenum.md)<br/> | Sola lettura<br/> | Recupera [**un'interfaccia IEnumVARIANT**](/windows/win32/api/oaidl/nn-oaidl-ienumvariant) su un oggetto che può essere utilizzato per enumerare la raccolta. Questa proprietà è nascosta in Visual Basic Scripting Edition (VBScript).<br/> |
+| [**\_NewEnum**](certificates-newenum.md)<br/> | Sola lettura<br/> | Recupera [**un'interfaccia IEnumVARIANT**](/windows/win32/api/oaidl/nn-oaidl-ienumvariant) su un oggetto che può essere usato per enumerare la raccolta. Questa proprietà è nascosta all'interno di Visual Basic Scripting Edition (VBScript).<br/> |
 | [**Conteggio**](certificates-count.md)<br/>       | Sola lettura<br/> | Recupera il numero di [**oggetti Certificate**](certificate.md) nella raccolta.<br/>                                                                                                                                |
 | [**Elemento**](certificates-item.md)<br/>         | Sola lettura<br/> | Recupera un [**oggetto Certificate**](certificate.md) che rappresenta il certificato indicizzato della raccolta. Si tratta della proprietà predefinita.<br/> Ereditato da **CertificatesICertificates2ICertificates**)          |
 
@@ -98,7 +98,7 @@ Queste **proprietà sono** disponibili nell'oggetto Certificates.
 |----------------------------------|----------------------------------------------------------------------------------------|
 | Fine del supporto client<br/> | Windows Vista<br/>                                                               |
 | Fine del supporto server<br/> | Windows Server 2008<br/>                                                         |
-| Componente ridistribuibile<br/>       | CAPICOM 2.0 o versione successiva in Windows Server 2003 e Windows XP<br/>                  |
+| Componente ridistribuibile<br/>       | CAPICOM 2.0 o versioni successive in Windows Server 2003 e Windows XP<br/>                  |
 | DLL<br/>                   | <dl> <dt>Capicom.dll</dt> </dl> |
 
 

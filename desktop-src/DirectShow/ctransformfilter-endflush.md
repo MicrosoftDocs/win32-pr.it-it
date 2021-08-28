@@ -16,12 +16,12 @@ api_location:
 - Strmbase.dll
 - Strmbasd.lib
 - Strmbasd.dll
-ms.openlocfilehash: 9a4f38a6897443763f676951f193fab5606ad2a8
-ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
+ms.openlocfilehash: 593ce39dbba6ccf90838b4847bb0a548b67e4785bb21d3f299882e1eecdf8394
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/28/2021
-ms.locfileid: "108085060"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120083911"
 ---
 # <a name="ctransformfilterendflush-method"></a>Metodo CTransformFilter.EndFlush
 
@@ -48,7 +48,7 @@ Restituisce S \_ OK o un altro valore **HRESULT.**
 
 Al termine di un'operazione di scaricamento, il metodo [**CTransformInputPin::EndFlush**](ctransforminputpin-endflush.md) del pin di input chiama questo metodo. Questo metodo passa la `EndFlush` chiamata a valle.
 
-Se la classe derivata usa un thread di lavoro per recapitare i campioni, deve rimuovere tutti i dati in coda prima di inviare `EndFlush` la chiamata a valle. Per altre informazioni, vedere Flusso di dati [per sviluppatori di filtri.](data-flow-for-filter-developers.md)
+Se la classe derivata usa un thread di lavoro per recapitare gli esempi, deve rimuovere tutti i dati in coda prima di inviare la `EndFlush` chiamata a valle. Per altre informazioni, vedere [Data Flow for Filter Developers](data-flow-for-filter-developers.md).
 
 ## <a name="requirements"></a>Requisiti
 
@@ -56,7 +56,7 @@ Se la classe derivata usa un thread di lavoro per recapitare i campioni, deve ri
 
 | Requisito | Valore |
 |--------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Intestazione<br/>  | <dl> <dt>Transfrm.h (include Streams.h)</dt> </dl>                                                                                  |
+| Intestazione<br/>  | <dl> <dt>Transfrm.h (includere Flussi.h)</dt> </dl>                                                                                  |
 | Libreria<br/> | <dl> <dt>Strmbase.lib (build di vendita al dettaglio); </dt> <dt>Strmbasd.lib (build di debug)</dt> </dl> |
 
 

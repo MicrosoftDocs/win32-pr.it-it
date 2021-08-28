@@ -4,12 +4,12 @@ ms.assetid: f94c1450-9648-4aee-8f88-2a9213eba4a9
 title: PageWatermarkTransparency
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 46ba405c3cd4a269edc4585ad8cba4c81f2c05e9
-ms.sourcegitcommit: 91530c19d26ba4c57a6af1f37b57f211f580464e
+ms.openlocfilehash: f0cc9ad90ec39b4280faf35caf949d18e4e838479baae36fced53992c8eab2eb
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/19/2021
-ms.locfileid: "112394786"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120091890"
 ---
 # <a name="pagewatermarktransparency"></a>PageWatermarkTransparency
 

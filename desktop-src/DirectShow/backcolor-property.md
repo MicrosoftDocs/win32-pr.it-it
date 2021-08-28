@@ -1,15 +1,15 @@
 ---
-description: La proprietà BackColor imposta o Recupera il colore delle barre visualizzate intorno ai bordi del rettangolo video quando le proporzioni del video nativo non corrispondono a quelle dell'area di visualizzazione dell'oggetto.
+description: La proprietà BackColor imposta o recupera il colore delle barre visualizzate intorno ai bordi del rettangolo video quando le proporzioni del video nativo non sono uguali a quella dell'area di visualizzazione dell'oggetto.
 ms.assetid: 51576836-c648-4268-8475-0312dbd60963
 title: Proprietà BackColor (DirectShow)
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 37adb625080ca284c168c7286982e980f8919f3d
-ms.sourcegitcommit: a47bd86f517de76374e4fff33cfeb613eb259a7e
+ms.openlocfilehash: a48f192e3f067b4ae3093c1541702b1bedbf645df5367a254fd2b5866a7e51da
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/06/2021
-ms.locfileid: "106304263"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120084561"
 ---
 # <a name="backcolor-property-directshow"></a>Proprietà BackColor (DirectShow)
 
@@ -18,7 +18,7 @@ ms.locfileid: "106304263"
 
  
 
-La `BackColor` proprietà imposta o Recupera il colore delle barre visualizzate intorno ai bordi del rettangolo video quando le proporzioni del video nativo non corrispondono a quelle dell'area di visualizzazione dell'oggetto.
+La proprietà imposta o recupera il colore delle barre visualizzate intorno ai bordi del rettangolo video quando le proporzioni del video nativo non sono uguali a quella dell'area di visualizzazione `BackColor` dell'oggetto.
 
 ``` syntax
 [ iBackColor = ] MSWebDVD.BackColor
@@ -30,7 +30,7 @@ Restituisce un valore intero che rappresenta i valori RGB del colore di sfondo.
 
 ## <a name="remarks"></a>Commenti
 
-Questa proprietà è di lettura/scrittura e il valore predefinito è off-black (0x100010).
+Questa proprietà è di lettura/scrittura con un valore predefinito di off-black (0x100010).
 
  
 

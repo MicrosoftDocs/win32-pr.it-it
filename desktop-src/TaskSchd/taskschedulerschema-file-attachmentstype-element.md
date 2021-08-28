@@ -1,9 +1,9 @@
 ---
-title: Elemento file (attachmentsType)
+title: Elemento File (attachmentsType)
 description: Contiene il percorso di un file inviato come allegato in un messaggio di posta elettronica.
 ms.assetid: a53f591b-ac59-43b4-8cc2-661e76d307cc
 keywords:
-- Utilità di pianificazione elemento file
+- Elemento File Utilità di pianificazione
 topic_type:
 - apiref
 api_name:
@@ -13,14 +13,14 @@ api_type:
 ms.topic: reference
 ms.date: 05/31/2018
 api_location: ''
-ms.openlocfilehash: ed07d4b31f9054f6caefcff0585d9683faa90c7f
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: 793b23bc6b9d75ac809c42063fa9c300542705b718cd22253f6f2d3a1a76caa8
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "104400476"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120125851"
 ---
-# <a name="file-attachmentstype-element"></a>Elemento file (attachmentsType)
+# <a name="file-attachmentstype-element"></a>Elemento File (attachmentsType)
 
 Contiene il percorso di un file inviato come allegato in un messaggio di posta elettronica.
 
@@ -30,7 +30,7 @@ Contiene il percorso di un file inviato come allegato in un messaggio di posta e
  />
 ```
 
-L'elemento **file** è definito dal tipo complesso [**attachmentsType**](taskschedulerschema-attachmentstype-complextype.md) .
+**L'elemento File** è definito dal [**tipo complesso attachmentsType.**](taskschedulerschema-attachmentstype-complextype.md)
 
 ## <a name="parent-element"></a>Elemento padre
 
@@ -44,9 +44,9 @@ L'elemento **file** è definito dal tipo complesso [**attachmentsType**](tasksch
 
 ## <a name="remarks"></a>Commenti
 
-Per lo sviluppo in C++, vedere [**Proprietà Attachments di IEmailAction**](/windows/desktop/api/taskschd/nf-taskschd-iemailaction-get_attachments).
+Per lo sviluppo in C++, vedere [**Proprietà Attachments di IEmailAction.**](/windows/desktop/api/taskschd/nf-taskschd-iemailaction-get_attachments)
 
-Per lo sviluppo di script, vedere [**EmailAction. Attachments**](emailaction-attachments.md).
+Per lo sviluppo di script, [**vedere EmailAction.Attachments.**](emailaction-attachments.md)
 
 ## <a name="requirements"></a>Requisiti
 
@@ -54,8 +54,8 @@ Per lo sviluppo di script, vedere [**EmailAction. Attachments**](emailaction-att
 
 | Requisito | Valore |
 |-------------------------------------|------------------------------------------------------|
-| Client minimo supportato<br/> | \[Solo app desktop di Windows Vista\]<br/>       |
-| Server minimo supportato<br/> | \[Solo app desktop Windows Server 2008\]<br/> |
+| Client minimo supportato<br/> | Windows Solo \[ app desktop Vista\]<br/>       |
+| Server minimo supportato<br/> | Windows Solo app desktop di Server 2008 \[\]<br/> |
 
 
 

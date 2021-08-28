@@ -1,12 +1,12 @@
 ---
-title: Metodo IRemoteDesktopClientEvents OnDialogDismissed
-description: Chiamato dopo che una finestra di dialogo visualizzata dal controllo client viene rilasciata.
+title: Metodo OnDialogDismissed IRemoteDesktopClientEvents
+description: Chiamato dopo la chiusura di una finestra di dialogo visualizzata dal controllo client.
 ms.assetid: 77238519-7E8E-41C4-8689-3F23B9072036
 ms.tgt_platform: multiple
 keywords:
-- Servizi Desktop remoto del metodo OnDialogDismissed
-- Metodo OnDialogDismissed Servizi Desktop remoto, interfaccia IRemoteDesktopClientEvents
-- Interfaccia IRemoteDesktopClientEvents Servizi Desktop remoto, metodo OnDialogDismissed
+- Metodo OnDialogDismissed Servizi Desktop remoto
+- Metodo OnDialogDismissed Servizi Desktop remoto , interfaccia IRemoteDesktopClientEvents
+- Interfaccia IRemoteDesktopClientEvents Servizi Desktop remoto , metodo OnDialogDismissed
 topic_type:
 - apiref
 api_name:
@@ -17,16 +17,16 @@ api_type:
 - COM
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: effe87952dfafd4aecae3d0bb1d522815c6dca24
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: 90af79e84cfcb3aae8b20f81d18751129ab5c366d86b7c190e7aeb3c264fb1af
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "106301523"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120124921"
 ---
-# <a name="iremotedesktopclienteventsondialogdismissed-method"></a>Metodo IRemoteDesktopClientEvents:: OnDialogDismissed
+# <a name="iremotedesktopclienteventsondialogdismissed-method"></a>Metodo IRemoteDesktopClientEvents::OnDialogDismissed
 
-Chiamato dopo che una finestra di dialogo visualizzata dal controllo client viene rilasciata.
+Chiamato dopo la chiusura di una finestra di dialogo visualizzata dal controllo client.
 
 ## <a name="syntax"></a>Sintassi
 

@@ -1,9 +1,9 @@
 ---
 title: Elemento DisallowStartIfOnBatteries (settingsType)
-description: Specifica che l'attività non verrà avviata se il computer è in esecuzione sulle batterie.
+description: Specifica che l'attività non verrà avviata se il computer è in esecuzione con batterie.
 ms.assetid: 48c0fd32-4441-4628-8090-c736f2945b4d
 keywords:
-- Utilità di pianificazione elemento DisallowStartIfOnBatteries
+- Elemento DisallowStartIfOnBatteries Utilità di pianificazione
 topic_type:
 - apiref
 api_name:
@@ -13,16 +13,16 @@ api_type:
 ms.topic: reference
 ms.date: 05/31/2018
 api_location: ''
-ms.openlocfilehash: 8a8d93bcabd0e121c44f4a7212d11491624a08d0
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: efd78b3e868c41431521b4c584a4044b9086362cf55d86466eb38ed75fcee148
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "103743775"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120100041"
 ---
 # <a name="disallowstartifonbatteries-settingstype-element"></a>Elemento DisallowStartIfOnBatteries (settingsType)
 
-Specifica che l'attività non verrà avviata se il computer è in esecuzione sulle batterie.
+Specifica che l'attività non verrà avviata se il computer è in esecuzione con batterie.
 
 ``` syntax
 <xs:element name="DisallowStartIfOnBatteries"
@@ -30,7 +30,7 @@ Specifica che l'attività non verrà avviata se il computer è in esecuzione sul
  />
 ```
 
-L'elemento **DisallowStartIfOnBatteries** è definito dal tipo complesso [**settingsType**](taskschedulerschema-settingstype-complextype.md) .
+**L'elemento DisallowStartIfOnBatteries** è definito dal [**tipo complesso settingsType.**](taskschedulerschema-settingstype-complextype.md)
 
 ## <a name="parent-element"></a>Elemento padre
 
@@ -44,15 +44,15 @@ L'elemento **DisallowStartIfOnBatteries** è definito dal tipo complesso [**sett
 
 ## <a name="remarks"></a>Commenti
 
-L'impostazione predefinita per questo elemento è true.
+L'impostazione predefinita per questo elemento è True.
 
-Per lo sviluppo di script, è possibile accedere a queste informazioni tramite la proprietà [**TaskSettings. DisallowStartIfOnBatteries**](tasksettings-disallowstartifonbatteries.md) .
+Per lo sviluppo di script, queste informazioni sono accessibili tramite la [**proprietà TaskSettings.DisallowStartIfOnBatteries.**](tasksettings-disallowstartifonbatteries.md)
 
-Per lo sviluppo in C++, queste informazioni sono accessibili tramite la proprietà [**ITaskSettings::D isallowstartifonbatteries**](/windows/desktop/api/taskschd/nf-taskschd-itasksettings-get_disallowstartifonbatteries) .
+Per lo sviluppo C++, queste informazioni sono accessibili tramite la proprietà [**ITaskSettings::D isallowStartIfOnBatteries.**](/windows/desktop/api/taskschd/nf-taskschd-itasksettings-get_disallowstartifonbatteries)
 
 ## <a name="examples"></a>Esempio
 
-Nel codice XML seguente viene definito un elemento Settings che non consente l'esecuzione dell'attività se il computer è in esecuzione sulle batterie.
+Il codice XML seguente definisce un elemento settings che non consente l'esecuzione dell'attività se il computer è in esecuzione a batteria.
 
 
 ```XML
@@ -70,8 +70,8 @@ Nel codice XML seguente viene definito un elemento Settings che non consente l'e
 
 | Requisito | Valore |
 |-------------------------------------|------------------------------------------------------|
-| Client minimo supportato<br/> | \[Solo app desktop di Windows Vista\]<br/>       |
-| Server minimo supportato<br/> | \[Solo app desktop Windows Server 2008\]<br/> |
+| Client minimo supportato<br/> | Windows Solo \[ app desktop di Vista\]<br/>       |
+| Server minimo supportato<br/> | Windows Solo app desktop server 2008 \[\]<br/> |
 
 
 
@@ -79,7 +79,7 @@ Nel codice XML seguente viene definito un elemento Settings che non consente l'e
 
 <dl> <dt>
 
-[Elementi dello schema Utilità di pianificazione](task-scheduler-schema-elements.md)
+[Utilità di pianificazione schema](task-scheduler-schema-elements.md)
 </dt> </dl>
 
  

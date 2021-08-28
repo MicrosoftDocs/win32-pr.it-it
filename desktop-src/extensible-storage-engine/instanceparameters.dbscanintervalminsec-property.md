@@ -1,6 +1,6 @@
 ---
-description: 'Altre informazioni su: Proprietà InstanceParameters. DbScanIntervalMinSec'
-title: Proprietà InstanceParameters. DbScanIntervalMinSec
+description: Altre informazioni sulla proprietà InstanceParameters.DbScanIntervalMinSec
+title: InstanceParameters.DbScanIntervalMinSec - proprietà
 TOCTitle: 'DbScanIntervalMinSec property '
 ms:assetid: P:Microsoft.Isam.Esent.Interop.InstanceParameters.DbScanIntervalMinSec
 ms:mtpsurl: https://msdn.microsoft.com/library/microsoft.isam.esent.interop.instanceparameters.dbscanintervalminsec(v=EXCHG.10)
@@ -26,19 +26,19 @@ api_type:
 api_location:
 - Microsoft.Isam.Esent.Interop.dll
 ROBOTS: INDEX,FOLLOW
-ms.openlocfilehash: 6630f106675ac7ae7d5c82039d8321c0a78bee62
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 6681b891e2e70c0f4e2f335a039819df2a5f109b5baa99e6ea33bf12110a7d97
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104130554"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120063781"
 ---
-# <a name="instanceparametersdbscanintervalminsec-property"></a>Proprietà InstanceParameters. DbScanIntervalMinSec
+# <a name="instanceparametersdbscanintervalminsec-property"></a>InstanceParameters.DbScanIntervalMinSec - proprietà
 
-Ottiene o imposta l'intervallo minimo per la ripetizione dell'analisi del database, in secondi.
+Ottiene o imposta l'intervallo minimo in secondi per ripetere l'analisi del database.
 
-**Spazio dei nomi:**  [Microsoft. ISAM. esent. Interop](./microsoft.isam.esent.interop-namespace.md)  
-**Assembly:**  Microsoft. ISAM. esent. Interop (in Microsoft.Isam.Esent.Interop.dll)
+**Spazio dei nomi:**  [Microsoft.Isam.Esent.Interop](./microsoft.isam.esent.interop-namespace.md)  
+**Assembly:**  Microsoft.Isam.Esent.Interop (in Microsoft.Isam.Esent.Interop.dll)
 
 ## <a name="syntax"></a>Sintassi
 
@@ -62,7 +62,7 @@ public int DbScanIntervalMinSec { get; set; }
 
 #### <a name="property-value"></a>Valore proprietà
 
-Tipo: [System. Int32](/dotnet/api/system.int32)  
+Tipo: [System.Int32](/dotnet/api/system.int32)  
 
 ## <a name="see-also"></a>Vedi anche
 
@@ -70,6 +70,6 @@ Tipo: [System. Int32](/dotnet/api/system.int32)
 
 [Classe InstanceParameters](./instanceparameters-class.md)
 
-[Membri di InstanceParameters](./instanceparameters-members.md)
+[Membri instanceParameters](./instanceparameters-members.md)
 
-[Spazio dei nomi Microsoft. ISAM. esent. Interop](./microsoft.isam.esent.interop-namespace.md)
+[Spazio dei nomi Microsoft.Isam.Esent.Interop](./microsoft.isam.esent.interop-namespace.md)

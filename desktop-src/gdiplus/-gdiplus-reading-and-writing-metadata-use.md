@@ -4,20 +4,20 @@ ms.assetid: 2febea35-3fea-4a2d-baaf-7a4f935fc81f
 title: Lettura e scrittura di metadati
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 3e4ea0a8f389f31870b31a0b15480815bdd7cf1f
-ms.sourcegitcommit: b32433cc0394159c7263809ae67615ab5792d40d
+ms.openlocfilehash: f4b965285e2d8a4666ef86b78cdc5dbb9ed38c55ee7c84b4a93f1dbe80141efa
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/30/2021
-ms.locfileid: "113118296"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120114931"
 ---
 # <a name="reading-and-writing-metadata"></a>Lettura e scrittura di metadati
 
-Alcuni file di immagine contengono metadati che è possibile leggere per determinare le caratteristiche dell'immagine. Ad esempio, una fotografia digitale potrebbe contenere metadati che è possibile leggere per determinare la make e il modello della fotocamera usata per acquisire l'immagine. Con GDI+ di Windows è possibile leggere i metadati esistenti ed è anche possibile scrivere nuovi metadati nei file di immagine.
+Alcuni file di immagine contengono metadati che è possibile leggere per determinare le caratteristiche dell'immagine. Ad esempio, una fotografia digitale potrebbe contenere metadati che è possibile leggere per determinare la make e il modello della fotocamera usata per acquisire l'immagine. Con Windows GDI+, è possibile leggere i metadati esistenti ed è anche possibile scrivere nuovi metadati nei file di immagine.
 
 GDI+ offre un modo uniforme per archiviare e recuperare metadati dai file di immagine in vari formati. In GDI+, una parte di metadati è denominata elemento *di proprietà*. È possibile archiviare e recuperare metadati chiamando i metodi **SetPropertyItem** e **GetPropertyItem** della classe [**Image**](/windows/desktop/api/gdiplusheaders/nl-gdiplusheaders-image) e non è necessario preoccuparsi dei dettagli del modo in cui un particolare formato di file archivia i metadati.
 
-GDI+ supporta attualmente i metadati per i formati di file TIFF, JPEG, Exif e PNG. Il formato Exif, che specifica come archiviare le immagini acquisite da fotocamere digitali, è basato sui formati TIFF e JPEG. Exif usa il formato TIFF per i dati pixel non compressi e il formato JPEG per i dati pixel compressi.
+GDI+ attualmente supporta i metadati per i formati di file TIFF, JPEG, Exif e PNG. Il formato Exif, che specifica come archiviare le immagini acquisite da fotocamere digitali, si basa sui formati TIFF e JPEG. Exif usa il formato TIFF per i dati pixel non compressi e il formato JPEG per i dati pixel compressi.
 
 GDI+ definisce un set di tag di proprietà che identificano gli elementi delle proprietà. Alcuni tag sono per utilizzo generico. sono supportati da tutti i formati di file indicati nel paragrafo precedente. Altri tag sono a scopo speciale e si applicano solo a determinati formati. Se si tenta di salvare un elemento proprietà in un file che non supporta tale elemento proprietà, GDI+ ignora la richiesta. In particolare, il [**metodo Image::SetPropertyItem**](/windows/desktop/api/Gdiplusheaders/nf-gdiplusheaders-image-setpropertyitem) restituisce PropertyNotSupported.
 
@@ -195,7 +195,7 @@ Property Item 6
 
 
 
-L'output precedente mostra un numero ID esadecimale per ogni elemento di proprietà. È possibile cercare i numeri ID in [Costanti tag](-gdiplus-constant-image-property-tag-constants.md) proprietà immagine e scoprire che rappresentano i tag di proprietà seguenti.
+L'output precedente mostra un numero ID esadecimale per ogni elemento proprietà. È possibile cercare questi numeri ID nelle costanti [dei tag](-gdiplus-constant-image-property-tag-constants.md) delle proprietà delle immagini e scoprire che rappresentano i tag di proprietà seguenti.
 
 
 

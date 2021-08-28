@@ -1,6 +1,6 @@
 ---
-description: 'Altre informazioni su: funzione JetDupSession'
-title: JetDupSession (funzione)
+description: 'Altre informazioni su: Funzione JetDupSession'
+title: Funzione JetDupSession
 TOCTitle: JetDupSession Function
 ms:assetid: fa8fbaca-fe48-401e-9700-1303f4842ad9
 ms:mtpsurl: https://msdn.microsoft.com/library/Gg294141(v=EXCHG.10)
@@ -18,23 +18,23 @@ api_type:
 api_location:
 - ESENT.DLL
 ROBOTS: INDEX,FOLLOW
-ms.openlocfilehash: 7aa320c329032f5867f5f762351277cc4567baef
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 8c22be08630c446f6c5ba106b38be6bc24415325
+ms.sourcegitcommit: 9b5faa61c38b2d0c432b7f2dbee8c127b0e28a7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "103884197"
+ms.lasthandoff: 08/19/2021
+ms.locfileid: "122466628"
 ---
-# <a name="jetdupsession-function"></a>JetDupSession (funzione)
+# <a name="jetdupsession-function"></a>Funzione JetDupSession
 
 
 _**Si applica a:** Windows | Windows Server_
 
-## <a name="jetdupsession-function"></a>JetDupSession (funzione)
+## <a name="jetdupsession-function"></a>Funzione JetDupSession
 
-La funzione **JetDupSession** avvia una sessione e Inizializza e restituisce un handle di sessione ESE ([JET_SESID](./jet-sesid.md)). Le sessioni controllano l'accesso al database e vengono utilizzate per controllare l'ambito delle transazioni. La sessione può essere utilizzata per avviare, eseguire il commit o interrompere le transazioni. La sessione viene inoltre utilizzata per il fissaggio, la creazione o l'apertura di un database. La sessione viene utilizzata come contesto per tutte le operazioni DDL e DML. Per aumentare la concorrenza e l'accesso parallelo al database, è possibile iniziare più sessioni.
+La **funzione JetDupSession** avvia una sessione e inizializza e restituisce un handle di sessione ESE ([JET_SESID](./jet-sesid.md)). Le sessioni controllano tutti gli accessi al database e vengono usate per controllare l'ambito delle transazioni. La sessione può essere usata per avviare, eseguire il commit o interrompere le transazioni. La sessione viene usata anche per collegare, creare o aprire un database. La sessione viene usata come contesto per tutte le operazioni DDL e DML. Per aumentare la concorrenza e l'accesso parallelo al database, è possibile iniziare più sessioni.
 
-**Nota** Questa API agirà in tutti i modi come un [JetBeginSession](./jetbeginsession-function.md) chiamato nell'istanza della sessione passata. Questa funzione non è consigliata, [JetBeginSession](./jetbeginsession-function.md) è preferibile.
+**Nota:** Questa API agirà in tutti i modi come [una sessione JetBeginSession](./jetbeginsession-function.md) chiamata sull'istanza della sessione passata. Questa funzione non è consigliata, [è preferibile utilizzare JetBeginSession.](./jetbeginsession-function.md)
 
 ```cpp
     JET_ERR JET_API JetDupSession(
@@ -47,103 +47,40 @@ La funzione **JetDupSession** avvia una sessione e Inizializza e restituisce un 
 
 *sesid*
 
-Sessione da utilizzare come origine per la duplicazione o l'inizio della sessione.
+Sessione da utilizzare come origine per la duplicazione o l'avvio della sessione.
 
 *psesid*
 
-Un puntatore alla variabile che l'handle di sessione Inizializza per restituire correttamente.
+Puntatore alla variabile inizializzata dall'handle di sessione al completamento della restituzione.
 
 ### <a name="return-value"></a>Valore restituito
 
-Questa funzione restituisce il tipo di dati [JET_ERR](./jet-err.md) con uno dei seguenti codici restituiti. Per ulteriori informazioni sugli errori ESE possibili, vedere la pagina relativa agli errori e ai [parametri di gestione degli](./error-handling-parameters.md)errori del [motore di archiviazione estensibile](./extensible-storage-engine-errors.md) .
-
-<table>
-<colgroup>
-<col style="width: 50%" />
-<col style="width: 50%" />
-</colgroup>
-<thead>
-<tr class="header">
-<th><p>Codice restituito</p></th>
-<th><p>Descrizione</p></th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td><p>JET_errSuccess</p></td>
-<td><p>Operazione riuscita.</p></td>
-</tr>
-<tr class="even">
-<td><p>JET_errClientRequestToStopJetService</p></td>
-<td><p>Non è possibile completare l'operazione perché tutte le attività nell'istanza associata alla sessione sono state interrotte in seguito a una chiamata a <a href="gg269240(v=exchg.10).md">JetStopService</a>.</p></td>
-</tr>
-<tr class="odd">
-<td><p>JET_errInstanceUnavailable</p></td>
-<td><p>Non è possibile completare l'operazione perché l'istanza associata alla sessione ha rilevato un errore irreversibile che richiede che l'accesso a tutti i dati venga revocato per proteggere l'integrità dei dati.</p>
-<p>Questo errore verrà restituito solo da Windows XP e versioni successive.</p></td>
-</tr>
-<tr class="even">
-<td><p>JET_errInvalidParameter</p></td>
-<td><p>Uno dei parametri forniti contiene un valore imprevisto o contiene un valore che non ha senso se combinato con il valore di un altro parametro.</p></td>
-</tr>
-<tr class="odd">
-<td><p>JET_errNotInitialized</p></td>
-<td><p>Non è possibile completare l'operazione perché l'istanza associata alla sessione non è ancora stata inizializzata.</p></td>
-</tr>
-<tr class="even">
-<td><p>JET_errOutOfMemory</p></td>
-<td><p>L'operazione non è riuscita perché non è stato possibile allocare la memoria.</p></td>
-</tr>
-<tr class="odd">
-<td><p>JET_errOutOfSessions</p></td>
-<td><p>Il numero di sessioni consentite dal motore per l'avvio del client è limitato. Questo valore può essere modificato utilizzando <a href="gg294044(v=exchg.10).md">JetSetSystemParameter</a> con la costante <em>JET_paramMaxSessions</em> . Il numero predefinito di sessioni è 16. Per informazioni dettagliate sui <em>JET_paramMaxSessions</em>, vedere <a href="gg294139(v=exchg.10).md">parametri di sistema</a> .</p></td>
-</tr>
-<tr class="even">
-<td><p>JET_errRestoreInProgress</p></td>
-<td><p>Non è possibile completare l'operazione perché è in corso un'operazione di ripristino sull'istanza associata alla sessione.</p></td>
-</tr>
-<tr class="odd">
-<td><p>JET_errTermInProgress</p></td>
-<td><p>Non è possibile completare l'operazione perché l'istanza associata alla sessione viene arrestata.</p></td>
-</tr>
-</tbody>
-</table>
+Questa funzione restituisce il [JET_ERR](./jet-err.md) dati con uno dei codici restituiti seguenti. Per altre informazioni sui possibili errori ESE, vedere Errori del [motore Archiviazione estendibile](./extensible-storage-engine-errors.md) e Parametri [di gestione degli errori](./error-handling-parameters.md).
 
 
-In seguito all'esito positivo, l'handle di sessione viene inizializzato e può essere utilizzato per le operazioni di database.
+| <p>Codice restituito</p> | <p>Descrizione</p> | 
+|--------------------|--------------------|
+| <p>JET_errSuccess</p> | <p>Operazione riuscita.</p> | 
+| <p>JET_errClientRequestToStopJetService</p> | <p>Non è possibile completare l'operazione perché tutte le attività nell'istanza associata alla sessione sono cesse a causa di una chiamata a <a href="gg269240(v=exchg.10).md">JetStopService.</a></p> | 
+| <p>JET_errInstanceUnavailable</p> | <p>Non è possibile completare l'operazione perché l'istanza associata alla sessione ha rilevato un errore irreversibile che richiede la revoca dell'accesso a tutti i dati per proteggere l'integrità di questi dati.</p><p>Questo errore verrà restituito solo da Windows XP e versioni successive.</p> | 
+| <p>JET_errInvalidParameter</p> | <p>Uno dei parametri forniti conteneva un valore imprevisto o conteneva un valore che non aveva senso se combinato con il valore di un altro parametro.</p> | 
+| <p>JET_errNotInitialized</p> | <p>Non è possibile completare l'operazione perché l'istanza associata alla sessione non è ancora stata inizializzata.</p> | 
+| <p>JET_errOutOfMemory</p> | <p>L'operazione non è riuscita perché non è stato possibile allocare memoria.</p> | 
+| <p>JET_errOutOfSessions</p> | <p>Il numero di sessioni che il motore consentirà al client di avviare è limitato. Questo valore può essere modificato usando <a href="gg294044(v=exchg.10).md">JetSetSystemParameter</a> con la <em>JET_paramMaxSessions</em> costante. Il numero predefinito di sessioni è 16. Vedere <a href="gg294139(v=exchg.10).md">Parametri di sistema</a> per informazioni dettagliate <em>JET_paramMaxSessions</em>.</p> | 
+| <p>JET_errRestoreInProgress</p> | <p>Non è possibile completare l'operazione perché è in corso un'operazione di ripristino nell'istanza associata alla sessione.</p> | 
+| <p>JET_errTermInProgress</p> | <p>Non è possibile completare l'operazione perché è in corso l'arresto dell'istanza associata alla sessione.</p> | 
+
+
+
+In caso di esito positivo, l'handle di sessione viene inizializzato e può essere usato per le operazioni di database.
 
 In caso di errore, non sono disponibili sessioni o non è stato possibile inizializzare una nuova sessione.
 
 #### <a name="requirements"></a>Requisiti
 
-<table>
-<colgroup>
-<col style="width: 50%" />
-<col style="width: 50%" />
-</colgroup>
-<tbody>
-<tr class="odd">
-<td><p><strong>Client</strong></p></td>
-<td><p>Richiede Windows Vista, Windows XP o Windows 2000 Professional.</p></td>
-</tr>
-<tr class="even">
-<td><p><strong>Server</strong></p></td>
-<td><p>Richiede Windows Server 2008, Windows Server 2003 o Windows 2000 Server.</p></td>
-</tr>
-<tr class="odd">
-<td><p><strong>Intestazione</strong></p></td>
-<td><p>Dichiarata in esent. h.</p></td>
-</tr>
-<tr class="even">
-<td><p><strong>Libreria</strong></p></td>
-<td><p>Usare ESENT. lib.</p></td>
-</tr>
-<tr class="odd">
-<td><p><strong>DLL</strong></p></td>
-<td><p>Richiede ESENT.dll.</p></td>
-</tr>
-</tbody>
-</table>
+
+| | | <p><strong>Client</strong></p> | <p>Richiede Windows Vista, Windows XP o Windows 2000 Professional.</p> | | <p><strong>Server</strong></p> | <p>Richiede Windows Server 2008, Windows Server 2003 o Windows 2000 Server.</p> | | <p><strong>Intestazione</strong></p> | <p>Dichiarato in Esent.h.</p> | | <p><strong>Libreria</strong></p> | <p>Usare ESENT.lib.</p> | | <p><strong>DLL</strong></p> | <p>Richiede ESENT.dll.</p> | 
+
 
 
 #### <a name="see-also"></a>Vedere anche

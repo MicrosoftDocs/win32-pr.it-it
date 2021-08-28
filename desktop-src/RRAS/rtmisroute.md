@@ -1,9 +1,9 @@
 ---
-title: Funzione RtmIsRoute (RTM. h)
-description: La funzione RtmIsRoute determina se esistono una o più route per una rete di destinazione specificata. In tal caso, la funzione restituisce informazioni per la migliore route alla rete.
+title: Funzione RtmIsRoute (Rtm.h)
+description: La funzione RtmIsRoute determina se esistono una o più route a una rete di destinazione specificata. In tal caso, la funzione restituisce informazioni per la route migliore a tale rete.
 ms.assetid: f9939790-d0a6-487e-9674-a01d436dc962
 keywords:
-- RAS funzione RtmIsRoute
+- Funzione RtmIsRoute RAS
 topic_type:
 - apiref
 api_name:
@@ -14,18 +14,18 @@ api_type:
 - DllExport
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: e64621732f2f7a35223421e5f0fc86a309d332c1
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: 312b43a7cf66e17cc6016fe3ad35bd21cd1e7ae19ecd7864a10de4d977a92ac9
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "104478221"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120073811"
 ---
-# <a name="rtmisroute-function"></a>RtmIsRoute (funzione)
+# <a name="rtmisroute-function"></a>Funzione RtmIsRoute
 
-\[Questa API è stata sostituita dall'API di [Gestione tabelle di routing versione 2](about-routing-table-manager-version-2.md) e non sarà disponibile oltre Windows Server 2003. Le applicazioni devono usare l'API di Routing Table Manager versione 2.\]
+\[Questa API è stata sostituita dall'API di Gestione tabelle di routing versione [2](about-routing-table-manager-version-2.md) e non sarà disponibile oltre Windows Server 2003. Le applicazioni devono usare l'API gestione tabelle di routing versione 2.\]
 
-La funzione **RtmIsRoute** determina se esistono una o più route per una rete di destinazione specificata. In tal caso, la funzione restituisce informazioni per la migliore route alla rete.
+La **funzione RtmIsRoute** determina se esistono una o più route a una rete di destinazione specificata. In tal caso, la funzione restituisce informazioni per la route migliore a tale rete.
 
 ## <a name="syntax"></a>Sintassi
 
@@ -44,24 +44,24 @@ BOOL RtmIsRoute(
 
 <dl> <dt>
 
-*ProtocolFamily* \[ in\]
+*ProtocolFamily* \[ Pollici\]
 </dt> <dd>
 
-Specifica il tipo di struttura dei dati a cui punta il parametro di *rete* , ad [**esempio \_ rete IP**](ip-network.md), [**\_ rete IPX**](ipx-network.md).
+Specifica il tipo di struttura dei dati a cui punta il *parametro Network,* ad esempio [**IP \_ NETWORK,**](ip-network.md) [**IPX \_ NETWORK.**](ipx-network.md)
 
 </dd> <dt>
 
-*Rete* \[ in\]
+*Rete* \[ Pollici\]
 </dt> <dd>
 
-Puntatore a una struttura che specifica i dati del numero di rete specifici della famiglia di protocolli. Questi dati identificano la rete per cui il chiamante Cerca le informazioni sulla route.
+Puntatore a una struttura che specifica i dati relativi ai numeri di rete specifici della famiglia di protocolli. Questi dati identificano la rete per cui il chiamante cerca informazioni sulla route.
 
 </dd> <dt>
 
-*BestRoute* \[ out\]
+*BestRoute* \[ Cambio\]
 </dt> <dd>
 
-Puntatore a una struttura specifica della famiglia di protocolli che riceve le informazioni sulla route migliore correnti, se presenti.
+Puntatore a una struttura specifica della famiglia di protocolli che riceve le informazioni di route migliori correnti, se presenti.
 
 </dd> </dl>
 
@@ -73,11 +73,11 @@ Il valore restituito è uno dei codici seguenti.
 
 | Valore                                                                                                       | Descrizione                                                                                                                                              |
 |-------------------------------------------------------------------------------------------------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------|
-| <dl> <dt>**TRUE**</dt> </dl>                         | Esiste almeno una route per la rete specificata. La route migliore viene restituita nella struttura a cui punta il parametro *BestRoute* .<br/>      |
-| <dl> <dt>**FALSE**</dt> </dl>                        | Non è presente alcuna route per la rete specificata oppure l'operazione non è riuscita. Chiamare [**GetLastError**](/windows/win32/api/errhandlingapi/nf-errhandlingapi-getlasterror) per ottenere ulteriori informazioni:<br/> |
-| <dl> <dt>**Nessun \_ errore**</dt> </dl>                    | L'operazione è stata completata, ma non è presente alcuna route per la rete specificata.<br/>                                                                      |
-| <dl> <dt>**ERRORE \_ parametro non valido \_**</dt> </dl>    | Il valore del parametro *ProtocolFamily* non corrisponde ad alcuna famiglia di protocolli installata.<br/>                                             |
-| <dl> <dt>**ERRORE \_ senza \_ risorse di sistema \_**</dt> </dl> | Risorse insufficienti per eseguire l'operazione.<br/>                                                                                  |
+| <dl> <dt>**Vero**</dt> </dl>                         | Esiste almeno una route alla rete specificata. La route migliore viene restituita nella struttura a cui punta il *parametro BestRoute.*<br/>      |
+| <dl> <dt>**False**</dt> </dl>                        | Non è presente alcuna route alla rete specificata oppure l'operazione non è riuscita. Chiamare [**GetLastError**](/windows/win32/api/errhandlingapi/nf-errhandlingapi-getlasterror) per ottenere altre informazioni:<br/> |
+| <dl> <dt>**NESSUN \_ ERRORE**</dt> </dl>                    | L'operazione è riuscita, ma non esiste alcuna route per la rete specificata.<br/>                                                                      |
+| <dl> <dt>**ERRORE \_ PARAMETRO NON \_ VALIDO**</dt> </dl>    | Il valore del *parametro ProtocolFamily* non corrisponde ad alcuna famiglia di protocolli installata.<br/>                                             |
+| <dl> <dt>**ERRORE \_ NESSUNA RISORSA DI \_ \_ SISTEMA**</dt> </dl> | Risorse insufficienti per eseguire l'operazione.<br/>                                                                                  |
 
 
 
@@ -92,8 +92,8 @@ Il valore restituito è uno dei codici seguenti.
 | Client minimo supportato<br/> | Nessuno supportato<br/>                                                          |
 | Server minimo supportato<br/> | Windows 2000 Server \[solo app desktop\]<br/>                               |
 | Fine del supporto server<br/>    | Windows Server 2003<br/>                                                     |
-| Intestazione<br/>                   | <dl> <dt>RTM. h</dt> </dl>   |
-| Libreria<br/>                  | <dl> <dt>RTM. lib</dt> </dl> |
+| Intestazione<br/>                   | <dl> <dt>Rtm.h</dt> </dl>   |
+| Libreria<br/>                  | <dl> <dt>Rtm.lib</dt> </dl> |
 | DLL<br/>                      | <dl> <dt>Rtm.dll</dt> </dl> |
 
 
@@ -102,19 +102,19 @@ Il valore restituito è uno dei codici seguenti.
 
 <dl> <dt>
 
-[Riferimento di gestione tabelle di routing versione 1](routing-table-manager-version-1-reference.md)
+[Informazioni di riferimento su Gestione tabelle di routing versione 1](routing-table-manager-version-1-reference.md)
 </dt> <dt>
 
-[Funzioni di Routing Table Manager versione 1](routing-table-manager-version-1-functions.md)
+[Funzioni di Gestione tabelle di routing versione 1](routing-table-manager-version-1-functions.md)
 </dt> <dt>
 
-[**GetLastError**](/windows/win32/api/errhandlingapi/nf-errhandlingapi-getlasterror)
+[**Getlasterror**](/windows/win32/api/errhandlingapi/nf-errhandlingapi-getlasterror)
 </dt> <dt>
 
-[**\_rete IP**](ip-network.md)
+[**RETE \_ IP**](ip-network.md)
 </dt> <dt>
 
-[**\_rete IPX**](ipx-network.md)
+[**RETE \_ IPX**](ipx-network.md)
 </dt> <dt>
 
 [Identificatori della famiglia di protocolli RTMv1](routing-table-manager-version-1-protocol-family-identifiers.md)

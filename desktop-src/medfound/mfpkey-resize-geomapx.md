@@ -1,23 +1,23 @@
 ---
 description: Specifica la coordinata x dell'angolo superiore sinistro dell'apertura geometrica.
 ms.assetid: b2c71e16-abd5-465c-a420-5b7675382025
-title: Proprietà MFPKEY_RESIZE_GEOMAPX (Wmcodecdsp. h)
+title: MFPKEY_RESIZE_GEOMAPX proprietà (Wmcodecdsp.h)
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 439e99c2b3f0f0774e2a45087f04a0a7ceba76e5
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 7f35bc58f9d7cf63fb30b7d5a50aae35f71d013a01dc14f1be14cd69f29d1eaa
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104528657"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120113241"
 ---
-# <a name="mfpkey_resize_geomapx-property"></a>MFPKEY \_ Resize- \_ Proprietà GEOMAPX
+# <a name="mfpkey_resize_geomapx-property"></a>Proprietà \_ GEOMAPX MFPKEY RESIZE \_
 
 Specifica la coordinata x dell'angolo superiore sinistro dell'apertura geometrica.
 
 ## <a name="constant-for-ipropertybag"></a>Costante per IPropertyBag
 
-Disponibile solo tramite [**IPropertyStore**](/windows/win32/api/propsys/nn-propsys-ipropertystore).
+Disponibile solo tramite [**IPropertyStore.**](/windows/win32/api/propsys/nn-propsys-ipropertystore)
 
 ## <a name="data-type"></a>Tipo di dati
 
@@ -25,7 +25,7 @@ VT \_ I4
 
 ## <a name="applies-to"></a>Si applica a
 
--   [Ridimensionamento video DSP](videoresizer.md)
+-   [DSP di Ridimensionamento video](videoresizer.md)
 
 ## <a name="remarks"></a>Commenti
 
@@ -37,9 +37,9 @@ Il valore è un numero reale a virgola fissa. La parte intera del numero viene a
 
 | Requisito | Valore |
 |-------------------------------------|-----------------------------------------------------------------------------------------|
-| Client minimo supportato<br/> | \[Solo app desktop Windows XP\]<br/>                                             |
-| Server minimo supportato<br/> | \[Solo app desktop Windows Server 2003\]<br/>                                    |
-| Intestazione<br/>                   | <dl> <dt>Wmcodecdsp. h</dt> </dl> |
+| Client minimo supportato<br/> | Windows Solo \[ app desktop XP\]<br/>                                             |
+| Server minimo supportato<br/> | Windows Solo app desktop di Server 2003 \[\]<br/>                                    |
+| Intestazione<br/>                   | <dl> <dt>Wmcodecdsp.h</dt> </dl> |
 
 
 
@@ -47,7 +47,7 @@ Il valore è un numero reale a virgola fissa. La parte intera del numero viene a
 
 <dl> <dt>
 
-[Proprietà Media Foundation](media-foundation-properties.md)
+[Media Foundation proprietà](media-foundation-properties.md)
 </dt> </dl>
 
  

@@ -4,21 +4,21 @@ ms.assetid: efe6e8d7-2465-4374-8c99-a410091f8d46
 title: 'Creazione di una sequenza temporale: codice di esempio'
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 877bd79b055171dfa5bd12cff0ae257d60e76a16
-ms.sourcegitcommit: a47bd86f517de76374e4fff33cfeb613eb259a7e
+ms.openlocfilehash: 614d6e2dfa676b09bac2cc9c81fd67c795d73f61df2df4b603307943ac0ada71
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/06/2021
-ms.locfileid: "106304323"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120108231"
 ---
 # <a name="creating-a-timeline-example-code"></a>Creazione di una sequenza temporale: codice di esempio
 
-\[Questa API non è supportata e può essere modificata o non disponibile in futuro.\]
+\[Questa API non è supportata e potrebbe essere modificata o non disponibile in futuro.\]
 
-Nell'esempio di codice seguente viene illustrato come creare e visualizzare in anteprima una sequenza temporale nei [servizi di modifica DirectShow](directshow-editing-services.md).
+Nell'esempio di codice seguente viene illustrato come creare e visualizzare in anteprima una sequenza temporale in [DirectShow Servizi di modifica](directshow-editing-services.md).
 
 > [!Note]  
-> Per motivi di brevità, il codice di esempio non esegue alcun controllo degli errori. In un'applicazione reale, è consigliabile controllare i valori restituiti delle chiamate al metodo per assicurarsi che nessuno abbia avuto esito negativo.
+> Per motivi di brevità, il codice di esempio non esegue alcun controllo degli errori. In un'applicazione reale è necessario controllare i valori restituiti delle chiamate al metodo per assicurarsi che nessuno abbia avuto esito negativo.
 
  
 
@@ -135,7 +135,7 @@ void main( void )
 
 <dl> <dt>
 
-[Creazione di una sequenza temporale](constructing-a-timeline.md)
+[Costruzione di una sequenza temporale](constructing-a-timeline.md)
 </dt> </dl>
 
  

@@ -4,20 +4,20 @@ ms.assetid: ea98be7f-580d-4986-bd6b-d254a2c075e8
 title: Enumeratore dispositivo di sistema
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 2b80f7157843f11af307e6573abe3c76f30f23e5
-ms.sourcegitcommit: 63753fcfb0afbbe5ec283fb8316e62c2dc950f66
+ms.openlocfilehash: 4d635e744556769bafb2829f0238ccca0230fb58cbb9d82ee6a78b2f1b51ece4
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/22/2021
-ms.locfileid: "107908439"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120050101"
 ---
 # <a name="system-device-enumerator"></a>Enumeratore dispositivo di sistema
 
-System Device Enumerator enumera i filtri e i dispositivi hardware installati nel sistema. Le applicazioni possono usare questo componente per individuare i filtri e i dispositivi in una determinata categoria. Creare questo oggetto chiamando **CoCreateInstance.**
+L'enumeratore dispositivo di sistema enumera i filtri e i dispositivi hardware installati nel sistema. Le applicazioni possono usare questo componente per individuare filtri e dispositivi in una determinata categoria. Creare questo oggetto chiamando **CoCreateInstance**.
 
 
 
-| Label | Valore |
+| Etichetta | Valore |
 |------------------|------------------------------------------|
 | Identificatore di classe | CLSID \_ SystemDeviceEnum                  |
 | Interfacce       | [**ICreateDevEnum**](/windows/desktop/api/Strmif/nn-strmif-icreatedevenum) |
@@ -30,13 +30,13 @@ System Device Enumerator enumera i filtri e i dispositivi hardware installati ne
 
 <dl> <dt>
 
-[DirectShow Objects](directshow-objects.md)
+[DirectShow Oggetti](directshow-objects.md)
 </dt> <dt>
 
 [Enumerazione di dispositivi e filtri](enumerating-devices-and-filters.md)
 </dt> <dt>
 
-[Categorie di filtro](filter-categories.md)
+[Filtrare le categorie](filter-categories.md)
 </dt> </dl>
 
  

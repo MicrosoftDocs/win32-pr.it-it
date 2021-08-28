@@ -1,7 +1,7 @@
 ---
 description: Indica se l'oggetto è stato modificato dopo l'ultimo salvataggio nel flusso corrente.
 ms.assetid: 69840be6-062e-4505-8381-ea04e822c660
-title: Metodo CPersistStream. IsDirty (pStream. h)
+title: Metodo CPersistStream.IsDirty (Pstream.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -16,14 +16,14 @@ api_location:
 - Strmbase.dll
 - Strmbasd.lib
 - Strmbasd.dll
-ms.openlocfilehash: 4f3bc57998b63ece5ca32543fc00d1d3b5b4389b
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: 5e28285bd5660d6ba81fe77718cd9d38f325c51184a7bbd035cf3d7cb2ce6aa8
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "106328928"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120108441"
 ---
-# <a name="cpersiststreamisdirty-method"></a>Metodo CPersistStream. IsDirty
+# <a name="cpersiststreamisdirty-method"></a>Metodo CPersistStream.IsDirty
 
 Indica se l'oggetto è stato modificato dopo l'ultimo salvataggio nel flusso corrente.
 
@@ -42,11 +42,11 @@ Questo metodo non presenta parametri.
 
 ## <a name="return-value"></a>Valore restituito
 
-Restituisce \_ OK se il filtro deve essere salvato e \_ false se non è necessario salvarlo.
+Restituisce S \_ OK se il filtro richiede il salvataggio e S FALSE se non è necessario \_ salvare.
 
 ## <a name="remarks"></a>Commenti
 
-Questa funzione membro implementa il metodo **IPersistStream:: IsDirty** .
+Questa funzione membro implementa il **metodo IPersistStream::IsDirty.**
 
 ## <a name="requirements"></a>Requisiti
 
@@ -54,8 +54,8 @@ Questa funzione membro implementa il metodo **IPersistStream:: IsDirty** .
 
 | Requisito | Valore |
 |--------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Intestazione<br/>  | <dl> <dt>PStream. h (include Streams. h)</dt> </dl>                                                                                   |
-| Libreria<br/> | <dl> <dt>Strmbase. lib (compilazioni finali); </dt> <dt>Strmbasd. lib (build di debug)</dt> </dl> |
+| Intestazione<br/>  | <dl> <dt>Pstream.h (includere Flussi.h)</dt> </dl>                                                                                   |
+| Libreria<br/> | <dl> <dt>Strmbase.lib (build di vendita al dettaglio); </dt> <dt>Strmbasd.lib (build di debug)</dt> </dl> |
 
 
 

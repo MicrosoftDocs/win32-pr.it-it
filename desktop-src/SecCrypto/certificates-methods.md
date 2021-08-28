@@ -1,28 +1,28 @@
 ---
-description: "L'oggetto Certificates espone i metodi seguenti:"
+description: L'oggetto Certificates espone i metodi seguenti.
 ms.assetid: 45B5E21D-07EF-4998-B1A9-939DA86B6685
 title: Metodi dei certificati
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 1f8d4b3cb70a7f96a4495a527ee30ad71ee96a07
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 5097cb12674dab69e7d45b4ca4745ca0459fb4b5178189101532d3aa5dfa9c3e
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "103880998"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120126781"
 ---
 # <a name="certificates-methods"></a>Metodi dei certificati
 
-L'oggetto [**Certificates**](certificates.md) espone i metodi seguenti:
+[**L'oggetto**](certificates.md) Certificates espone i metodi seguenti.
 
 ## <a name="in-this-section"></a>Contenuto della sezione
 
--   [**Aggiungi metodo**](certificates-add.md)
+-   [**Metodo Add**](certificates-add.md)
 -   [**Metodo Clear**](certificates-clear.md)
 -   [**Metodo Find**](certificates-find.md)
--   [**Remove (metodo)**](certificates-remove.md)
+-   [**Metodo Remove**](certificates-remove.md)
 -   [**Metodo Save**](certificates-save.md)
--   [**Select (metodo)**](certificates-select.md)
+-   [**Selezionare il metodo**](certificates-select.md)
 
  
 

@@ -1,35 +1,35 @@
 ---
 title: Come creare un controllo Header
-description: In questo argomento viene illustrato come creare un controllo intestazione e posizionarlo all'interno dell'area client della finestra padre.
+description: Questo argomento illustra come creare un controllo intestazione e posizionarlo all'interno dell'area client della finestra padre.
 ms.assetid: 094AF70C-2761-439E-A1E3-0FD04212FE87
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: bce9bf9d7b117f5f61766ca326b91b0d19a2c903
-ms.sourcegitcommit: a716ca2a6a22a400f02c6b31699cf4da83ee3619
+ms.openlocfilehash: 6ae5bb3ae9c323d30384f5d058a61393bf6425c2a27dfe67faa9cbedd4b3289e
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/04/2020
-ms.locfileid: "104047623"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120063201"
 ---
 # <a name="how-to-create-a-header-control"></a>Come creare un controllo Header
 
-In questo argomento viene illustrato come creare un controllo intestazione e posizionarlo all'interno dell'area client della finestra padre. È possibile creare un controllo Header usando la funzione [**CreateWindowEx**](/windows/desktop/api/winuser/nf-winuser-createwindowexa) e specificando la classe della finestra di [**\_ intestazione WC**](common-control-window-classes.md) e gli stili appropriati del [controllo intestazione](header-control-styles.md). Questa classe della finestra viene registrata quando viene caricata la DLL del controllo comune. Per assicurarsi che questa DLL venga caricata, utilizzare la funzione [**InitCommonControlsEx**](/windows/desktop/api/Commctrl/nf-commctrl-initcommoncontrolsex) .
+Questo argomento illustra come creare un controllo intestazione e posizionarlo all'interno dell'area client della finestra padre. È possibile creare un controllo intestazione usando la [**funzione CreateWindowEx**](/windows/desktop/api/winuser/nf-winuser-createwindowexa) e specificando la classe della finestra [**WC \_ HEADER**](common-control-window-classes.md) e gli stili [del controllo intestazione appropriati.](header-control-styles.md) Questa classe della finestra viene registrata quando viene caricata la DLL del controllo comune. Per assicurarsi che questa DLL sia caricata, usare la [**funzione InitCommonControlsEx.**](/windows/desktop/api/Commctrl/nf-commctrl-initcommoncontrolsex)
 
 ## <a name="what-you-need-to-know"></a>Informazioni importanti
 
 ### <a name="technologies"></a>Tecnologie
 
--   [Controlli Windows](window-controls.md)
+-   [Windows Controlli](window-controls.md)
 
 ### <a name="prerequisites"></a>Prerequisiti
 
 -   C/C++
--   Programmazione dell'interfaccia utente di Windows
+-   Windows Interfaccia utente programmazione
 
 ## <a name="instructions"></a>Istruzioni
 
 
-Nell'esempio di codice C++ riportato di seguito viene prima chiamata la funzione [**InitCommonControlsEx**](/windows/desktop/api/Commctrl/nf-commctrl-initcommoncontrolsex) per caricare la dll del controllo comune. Chiama quindi la funzione [**CreateWindowEx**](/windows/desktop/api/winuser/nf-winuser-createwindowexa) per creare un controllo Header. Il controllo viene inizialmente nascosto. Il messaggio di [**\_ layout HDM**](hdm-layout.md) viene utilizzato per calcolare le dimensioni e la posizione del controllo all'interno della finestra padre. Il controllo viene quindi riposizionato e reso visibile.
+Nell'esempio di codice C++ seguente viene innanzitutto chiamata la [**funzione InitCommonControlsEx**](/windows/desktop/api/Commctrl/nf-commctrl-initcommoncontrolsex) per caricare la DLL del controllo comune. Chiama quindi la [**funzione CreateWindowEx**](/windows/desktop/api/winuser/nf-winuser-createwindowexa) per creare un controllo intestazione. Il controllo è inizialmente nascosto. Il [**messaggio \_ LAYOUT HDM**](hdm-layout.md) viene usato per calcolare le dimensioni e la posizione del controllo all'interno della finestra padre. Il controllo viene quindi riposizionato e reso visibile.
 
 
 
@@ -94,10 +94,10 @@ HWND DoCreateHeader(HWND hwndParent)
 [Informazioni sui controlli intestazione](header-controls.md)
 </dt> <dt>
 
-[Riferimento al controllo intestazione](bumper-header-control-header-control-reference.md)
+[Informazioni di riferimento sul controllo Header](bumper-header-control-header-control-reference.md)
 </dt> <dt>
 
-[Uso di controlli Header](using-header-controls.md)
+[Uso dei controlli intestazione](using-header-controls.md)
 </dt> </dl>
 
  

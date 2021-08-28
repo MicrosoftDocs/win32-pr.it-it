@@ -1,9 +1,9 @@
 ---
-title: Messaggio LB_GETCARETINDEX (winuser. h)
+title: LB_GETCARETINDEX messaggio (Winuser.h)
 description: Recupera l'indice dell'elemento con lo stato attivo in una casella di riepilogo a selezione multipla. L'elemento può essere selezionato o meno.
 ms.assetid: vs|controls|~\controls\listboxes\listboxreference\listboxmessages\lb_getcaretindex.htm
 keywords:
-- Controlli di Windows Message LB_GETCARETINDEX
+- LB_GETCARETINDEX di controllo Windows messaggio
 topic_type:
 - apiref
 api_name:
@@ -14,14 +14,14 @@ api_type:
 - HeaderDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 4b9e4b8b2c75d72cdec606942991e957d8109ac7
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: 74732bae571cdcba0cfe8096437bf681e7a339c5c0edb3f18d378ea610bdf8c2
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "104048710"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120085541"
 ---
-# <a name="lb_getcaretindex-message"></a>\_Messaggio GETCARETINDEX lb
+# <a name="lb_getcaretindex-message"></a>Messaggio LB \_ GETCARETINDEX
 
 Recupera l'indice dell'elemento con lo stato attivo in una casella di riepilogo a selezione multipla. L'elemento può essere selezionato o meno.
 
@@ -32,24 +32,24 @@ Recupera l'indice dell'elemento con lo stato attivo in una casella di riepilogo 
 *wParam* 
 </dt> <dd>
 
-Non utilizzato; deve essere zero.
+Non usato; deve essere zero.
 
 </dd> <dt>
 
 *lParam* 
 </dt> <dd>
 
-Non utilizzato; deve essere zero.
+Non usato; deve essere zero.
 
 </dd> </dl>
 
 ## <a name="return-value"></a>Valore restituito
 
-Il valore restituito è l'indice in base zero dell'elemento della casella di riepilogo con stato attivo oppure 0 se nessun elemento ha lo stato attivo.
+Il valore restituito è l'indice in base zero dell'elemento della casella di riepilogo con lo stato attivo oppure 0 se nessun elemento ha lo stato attivo.
 
 ## <a name="remarks"></a>Commenti
 
-Questo messaggio può essere usato anche per ottenere l'indice dell'elemento attualmente selezionato in una casella di riepilogo a selezione singola.
+Questo messaggio può essere utilizzato anche per ottenere l'indice dell'elemento attualmente selezionato in una casella di riepilogo a selezione singola.
 
 ## <a name="requirements"></a>Requisiti
 
@@ -57,9 +57,9 @@ Questo messaggio può essere usato anche per ottenere l'indice dell'elemento att
 
 | Requisito | Valore |
 |-------------------------------------|----------------------------------------------------------------------------------------------------------|
-| Client minimo supportato<br/> | \[Solo app desktop di Windows Vista\]<br/>                                                           |
-| Server minimo supportato<br/> | \[Solo app desktop Windows Server 2003\]<br/>                                                     |
-| Intestazione<br/>                   | <dl> <dt>Winuser. h (include Windows. h)</dt> </dl> |
+| Client minimo supportato<br/> | Windows Solo \[ app desktop Vista\]<br/>                                                           |
+| Server minimo supportato<br/> | Windows Solo app desktop di Server 2003 \[\]<br/>                                                     |
+| Intestazione<br/>                   | <dl> <dt>Winuser.h (includere Windows.h)</dt> </dl> |
 
 
 
@@ -67,7 +67,7 @@ Questo messaggio può essere usato anche per ottenere l'indice dell'elemento att
 
 <dl> <dt>
 
-[**\_SETCARETINDEX lb**](lb-setcaretindex.md)
+[**LB \_ SETCARETINDEX**](lb-setcaretindex.md)
 </dt> </dl>
 
  

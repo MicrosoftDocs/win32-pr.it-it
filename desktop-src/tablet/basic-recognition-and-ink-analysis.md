@@ -1,23 +1,23 @@
 ---
-description: Questo argomento introduce le API di analisi dell'input penna.
+description: Questo argomento presenta le API di analisi dell'input penna.
 ms.assetid: a3126930-2802-43c7-9e98-3a73498ac3f5
 title: Riconoscimento di base e analisi dell'input penna
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: b9858ceedba245a733d4dc0055dd0747507654f8
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 8c4bdfa0d93c25e397caf0f116f0f47b303e9571d342825673572011534404de
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104401519"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120111339"
 ---
 # <a name="basic-recognition-and-ink-analysis"></a>Riconoscimento di base e analisi dell'input penna
 
-Questo argomento introduce le API di analisi dell'input penna.
+Questo argomento presenta le API di analisi dell'input penna.
 
 ## <a name="simple-recognition"></a>Riconoscimento semplice
 
-Le funzionalità di base esposte dall'API di analisi dell'input penna sono l'accesso ai risultati del riconoscimento per un dato input penna. Si tratta di un'operazione semplice e semplice, come illustrato nel codice di esempio seguente.
+La funzionalità di base esposta dall'API di analisi dell'input penna è l'accesso ai risultati del riconoscimento per una determinata parte di input penna. Questa operazione è semplice e semplice, come illustrato nel codice di esempio seguente.
 
 
 ```C++
@@ -38,34 +38,34 @@ MessageBox.Show(myResults);
 
 
 
-I risultati dell'operazione di riconoscimento sono semplicemente un valore stringa che rappresenta il valore riconosciuto dell'input penna manoscritto. L'API di analisi dell'input penna espone molto più funzionalità di riconoscimento rispetto alla sola stringa riconosciuta, ma questa è l'operazione più comune.
+I risultati dell'operazione di riconoscimento sono semplicemente un valore stringa che rappresenta il valore riconosciuto dell'input penna scritto a mano. L'API di analisi dell'input penna espone molte più funzionalità di riconoscimento rispetto alla stringa riconosciuta, ma questa è l'operazione più comune.
 
 ## <a name="incremental-recognition"></a>Riconoscimento incrementale
 
-Il processo di riconoscimento richiede tempo per il completamento, bloccando l'accesso all'applicazione bloccando il thread dell'interfaccia utente dell'applicazione. Può quindi risultare costoso e frustrante per l'utente finale attendere in modo sincrono i risultati. Molte applicazioni Tablet PC richiedono il riconoscimento di più di poche righe di input penna e un approccio incrementale al riconoscimento dei tratti in un thread in background è la strategia ottimale. Il vantaggio di un approccio incrementale anziché un'operazione bulk consiste nel fatto che consente il riconoscimento dei tratti in un determinato periodo di tempo, distribuendo il lavoro sul thread in background anziché in modo sincrono nel thread in primo piano. Per supportare l'analisi incrementale, l'oggetto [**InkAnalyzer**](inkanalyzer.md) dispone di un metodo [**BackgroundAnalyze**](iinkanalyzer-backgroundanalyze.md) , che gestisce la creazione e la gestione di un thread in background per l'applicazione. Il controllo **InkAnalyzer** gestisce automaticamente anche gli elementi che devono essere riconosciuti e ciò che è già stato riconosciuto.
+Il completamento del processo di riconoscimento richiede tempo, bloccando l'accesso all'applicazione bloccando il thread dell'interfaccia utente dell'applicazione. Può quindi essere dissabile e frustrante per l'utente finale attendere i risultati in modo sincrono. Molte applicazioni Tablet PC richiedono il riconoscimento di più di poche righe di input penna e un approccio incrementale al riconoscimento dei tratti in un thread in background è la strategia ottimale. Il vantaggio di un approccio incrementale invece di un'operazione in blocco è che consente il riconoscimento dei tratti per un periodo di tempo, stendendo il lavoro sul thread in background anziché in modo sincrono sul thread in primo piano. Per supportare l'analisi incrementale, l'oggetto [**InkAnalyzer**](inkanalyzer.md) dispone di un metodo [**BackgroundAnalyze**](iinkanalyzer-backgroundanalyze.md) che gestisce la creazione e la gestione di un thread in background per l'applicazione. **InkAnalyzer** si occupa anche automaticamente di gestire ciò che deve essere riconosciuto e ciò che è già stato riconosciuto.
 
-Sono pertanto disponibili due meccanismi per il raggiungimento dei risultati del riconoscimento:
+Esistono quindi due meccanismi per ottenere i risultati del riconoscimento:
 
--   Il metodo [**Analyze**](iinkanalyzer-analyze.md) (analisi sincrona), che funziona meglio per:
+-   Il [**metodo Analyze**](iinkanalyzer-analyze.md) (analisi sincrona), che funziona meglio per:
 
-    -   Quantità ridotta di input penna.
+    -   Piccole quantità di input penna.
     -   Quando i risultati sono necessari prima di procedere all'operazione successiva nell'applicazione, ad esempio quando si visualizza un'interfaccia utente di correzione.
 
--   Metodo [**BackgroundAnalyze**](iinkanalyzer-backgroundanalyze.md) (analisi asincrona), che funziona meglio per:
+-   Il [**metodo BackgroundAnalyze**](iinkanalyzer-backgroundanalyze.md) (analisi asincrona), che funziona meglio per:
 
     -   Qualsiasi quantità di input penna.
-    -   Quando viene utilizzato con un timer che pulsa approssimativamente ogni 600 millisecondi.
+    -   Se utilizzato con un timer che pulsa circa ogni 600 millisecondi.
 
 > [!Note]  
-> 600 millisecondi è la raccomandazione corrente, ma questo intervallo è soggetto a modifiche in sospeso ulteriori test.
+> 600 millisecondi è la raccomandazione corrente, ma questo intervallo è soggetto a modifiche in attesa di ulteriori test.
 
  
 
-Per utilizzare l'operazione [**BackgroundAnalyze**](iinkanalyzer-backgroundanalyze.md) , l'oggetto [**InkCollector**](inkcollector-class.md) (o oggetti o controlli simili, ad esempio [**RealTimeStylus**](realtimestylus-class.md) (RTS), [**InkOverlay**](inkoverlay-class.md)o [InkCanvas](/dotnet/api/system.windows.controls.inkcanvas?view=netcore-3.1) in Windows Presentation Foundation) gestisce la raccolta e il rendering dei tratti di input penna. Se l'oggetto **InkCollector** è associato alle API di analisi dell'input penna, le applicazioni possono aggiornare i risultati del riconoscimento segnalando a [**InkAnalyzer**](inkanalyzer.md) ogni nuovo tratto aggiunto all'applicazione. Ciò consente all' **oggetto InkAnalyzer** di riconoscere i tratti in modo incrementale e in un thread in background.
+Per usare l'operazione [**BackgroundAnalyze,**](iinkanalyzer-backgroundanalyze.md) l'oggetto [**InkCollector**](inkcollector-class.md) (o oggetti o controlli simili come [**RealTimeStylus**](realtimestylus-class.md) (RTS), [**InkOverlay**](inkoverlay-class.md)o [InkCanvas](/dotnet/api/system.windows.controls.inkcanvas?view=netcore-3.1) in Windows Presentation Foundation) gestisce la raccolta e il rendering dei tratti input penna. Se **InkCollector** è associato alle API di analisi dell'input penna, le applicazioni possono mantenere aggiornati i risultati del riconoscimento informando [**InkAnalyzer**](inkanalyzer.md) di ogni nuovo tratto aggiunto all'applicazione. Ciò consente a **InkAnalyzer** di riconoscere i tratti in modo incrementale e su un thread in background.
 
-Per eseguire l'analisi in background incrementale, le applicazioni devono implementare tre passaggi (visualizzati per il codice gestito):
+Per eseguire l'analisi in background incrementale, le applicazioni devono implementare tre passaggi (illustrati per il codice gestito):
 
-1. Aggiungere il tratto a [**InkAnalyzer**](inkanalyzer.md) ogni volta che viene generato l'evento [**Stroke**](inkoverlay-stroke.md) dell'oggetto [**InkOverlay**](inkoverlay-class.md) :
+1. Aggiungere il tratto a [**InkAnalyzer**](inkanalyzer.md) ogni volta che viene generato l'evento [**Stroke**](inkoverlay-stroke.md) dell'oggetto [**InkOverlay:**](inkoverlay-class.md)
 
 
 ```C++
@@ -87,7 +87,7 @@ private void myInkOverlay_Stroke(object sender, InkCollectorStrokeEventArgs e)
 
 
 
-2. Richiamare le operazioni [**BackgroundAnalyze**](iinkanalyzer-backgroundanalyze.md) a un intervallo definito.
+2. Richiamare le [**operazioni BackgroundAnalyze**](iinkanalyzer-backgroundanalyze.md) a un intervallo impostato.
 
 
 ```C++
@@ -110,11 +110,11 @@ private void analysisTimer_Tick(object sender, System.EventArgs e)
 
 
 > [!Note]  
-> Nota le applicazioni non devono semplicemente richiamare l'operazione di analisi in background dopo ogni nuovo tratto. Questa operazione avrà esito negativo (restituendo un valore **false**) se è già in esecuzione un'operazione in background. Il motivo di questo comportamento consiste nel limitare il numero di thread in background e le operazioni di riconciliazione necessarie.
+> Nota Le applicazioni non devono semplicemente richiamare l'operazione di analisi in background dopo ogni nuovo tratto. Se un'operazione in background è già in esecuzione, l'operazione avrà esito negativo(restituisce il valore **false).** Il motivo di questo comportamento è limitare il numero di thread in background e le operazioni di riconciliazione necessarie.
 
  
 
-3. Ascolto dell'evento [ResultsUpdated](/previous-versions/ms567607(v=vs.100)) (codice gestito) o dell'evento [**results**](-ianalysisevents-results.md) (codice C++) per determinare quando il processo in background è terminato:
+3. Restare in ascolto [dell'evento ResultsUpdated](/previous-versions/ms567607(v=vs.100)) (codice gestito) o [**results**](-ianalysisevents-results.md) (codice C++) per determinare quando il processo in background è stato completato:
 
 
 ```C++
@@ -131,45 +131,45 @@ private void ia_Results(object sender, ResultsEventArgs e)
 
 
 
-Ora che l'elaborazione dell'input penna viene eseguita in un thread in background, l'applicazione è in grado di accettare le modifiche apportate all'input penna mentre l'operazione in background funziona. Questa operazione non è possibile se si usa un thread sincrono. Il lavoro viene eseguito sul thread dell'interfaccia utente, bloccando la possibilità di apportare modifiche. Le modifiche includono l'aggiunta di più input penna al documento, l'eliminazione di input penna o la trasformazione della posizione o dell'aspetto dell'input penna esistente. Le modifiche che si verificano durante l'operazione in background possono infatti invalidare i risultati. Se ad esempio si elimina un tratto da una parola, viene modificato il valore di riconoscimento della parola. L'API [**InkAnalyzer**](inkanalyzer.md) prevede un processo di riconciliazione incorporato che determina automaticamente le parti dell'operazione in background che risultano non valide in seguito alla modifica dell'input penna durante l'analisi.
+Ora che l'elaborazione dell'input penna viene eseguita su un thread in background, l'applicazione ha la possibilità di accettare modifiche all'input penna mentre l'operazione in background funziona. Se si usa un thread sincrono, questo non è possibile. Il lavoro viene eseguito nel thread dell'interfaccia utente, bloccando la possibilità di apportare modifiche. Le modifiche includono l'aggiunta di altro input penna al documento, l'eliminazione dell'input penna o la trasformazione della posizione o dell'aspetto dell'input penna esistente. Le modifiche che si verificano durante l'operazione in background possono di fatto invalidare i risultati. Ad esempio, l'eliminazione di un tratto da una parola modifica il valore di riconoscimento di tale parola. [**L'API InkAnalyzer**](inkanalyzer.md) ha un processo di riconciliazione incorporato che determina automaticamente quali parti dell'operazione in background diventano non valide in seguito alla modifica dell'input penna durante l'analisi.
 
-Il processo di riconciliazione automatica viene eseguito a causa di tre fattori:
+Il processo di riconciliazione automatica viene realizzato a causa di tre fattori:
 
-1.  Proprietà [**DirtyRegion**](iinkanalyzer-getdirtyregion.md) .
+1.  Proprietà [**DirtyRegion.**](iinkanalyzer-getdirtyregion.md)
 
-    -   Ogni volta che l'applicazione aggiunge (metodo [**AddStroke**](iinkanalyzer-addstroke.md) ) o rimuove (metodo [**RemoveStroke**](iinkanalyzer-removestroke.md) ) un tratto da o verso l' [**oggetto InkAnalyzer**](inkanalyzer.md), la posizione fisica del tratto viene acquisita e la volta successiva che viene richiamata un'operazione di analisi, l' **oggetto InkAnalyzer** garantisce che il tratto o l'area occupata da tale tratto venga analizzato.
-    -   Ogni volta che l'applicazione modifica l'input penna esistente, modifica il percorso o modifica altri attributi di disegno dell'input penna, è possibile aggiungere la posizione della modifica (i limiti dell'input penna) alla proprietà [**DirtyRegion**](iinkanalyzer-getdirtyregion.md) di [**InkAnalyzer**](inkanalyzer.md). In questo modo si garantisce che la volta successiva in cui l'applicazione avvierà l'operazione di analisi venga verificata la presenza di risultati corretti.
-    -   In questo modo, la proprietà [**DirtyRegion**](iinkanalyzer-getdirtyregion.md) tiene traccia, tra le esecuzioni di analisi, delle aree del documento e, a sua volta, che devono essere verificate la correttezza dei risultati di analisi e riconoscimento dell'input penna.
+    -   Ogni volta che l'applicazione aggiunge (metodo [**AddStroke)**](iinkanalyzer-addstroke.md) o rimuove (metodo [**RemoveStroke)**](iinkanalyzer-removestroke.md) un tratto da o verso [**InkAnalyzer**](inkanalyzer.md), la posizione fisica del tratto viene acquisita e alla successiva chiamata di un'operazione di analisi, **InkAnalyzer** assicura che il tratto o l'area occupata da tale tratto sia analizzata.
+    -   Ogni volta che l'applicazione modifica l'input penna esistente, modifica la posizione o modifica altri attributi di disegno dell'input penna, la posizione della modifica (i limiti dell'input penna) può essere aggiunta alla proprietà [**DirtyRegion**](iinkanalyzer-getdirtyregion.md) di [**InkAnalyzer**](inkanalyzer.md). In questo modo si garantisce che al successivo avvio dell'applicazione l'operazione di analisi in tali aree siano verificati i risultati corretti.
+    -   Di conseguenza, la proprietà [**DirtyRegion**](iinkanalyzer-getdirtyregion.md) tiene traccia, tra le esecuzioni di analisi, delle aree del documento e, a sua volta, dei tratti da controllare per verificare i risultati corretti dell'analisi dell'input penna e del riconoscimento.
 
 2.  Analisi limitata.
 
-    -   Ogni volta che l'applicazione richiama l'operazione di analisi, la proprietà [**DirtyRegion**](iinkanalyzer-getdirtyregion.md) identifica i tratti che devono essere analizzati. In questo modo l'operazione di analisi consente di limitare l'operazione solo alle aree dirty e ignorare tutte le altre aree, ottimizzando la quantità di tempo impiegato per la ripetizione dell'analisi dell'input penna.
-    -   [**InkAnalyzer**](inkanalyzer.md) non ignora completamente tutte le altre aree della pagina, ma può esaminare le aree adiacenti per determinare se le modifiche apportate nell'area dirty hanno effetto sulle aree adiacenti. Ad esempio, l'analizzatore classifica "is" nell'esempio di input penna seguente come singolo tipo **InkWord** della classe [**ContextNode**](icontextnode.md) :
+    -   Ogni volta che l'applicazione richiama l'operazione di analisi, la [**proprietà DirtyRegion**](iinkanalyzer-getdirtyregion.md) identifica i tratti da analizzare. Ciò consente all'operazione di analisi di limitare l'operazione solo alle aree dirty e ignorare tutte le altre aree, ottimizzando la quantità di tempo impiegato per la ri-analisi dell'input penna.
+    -   [**InkAnalyzer**](inkanalyzer.md) non ignora completamente tutte le altre aree della pagina, ma può invece esaminare le aree adiacenti per determinare se le modifiche apportate nell'area dirty influiscono sulle aree adiacenti. Ad esempio, l'analizzatore classifica "Is", nell'esempio di input penna seguente, come singolo **tipo InkWord** della [**classe ContextNode:**](icontextnode.md)
 
-!["is" scritto a mano](images/b0e45d31-a0e5-4157-a345-a3a32de2566e.jpg)
+![scritto a mano "is"](images/b0e45d31-a0e5-4157-a345-a3a32de2566e.jpg)
 
-L'eliminazione dei risultati "s" in un'area dirty (contrassegnata con una casella rossa).
+L'eliminazione delle "s" comporta un'area dirty (contrassegnata con una casella rossa).
 
 !["i" scritto a mano](images/272a25a7-c730-40e6-b7d8-214ccbb85569.jpg)
 
-Dopo l'analisi, l'analizzatore modifica la classificazione per "I" in un tipo **InkDrawing** , anche se è al di fuori dell'area dirty, perché senza il tratto "s" di supporto l'analizzatore di input penna ha una probabilità 50/50 dell'input penna Classificato come un disegno o una parola.
+Dopo l'analisi, l'analizzatore modifica la classificazione per "I" in un tipo **InkDrawing,** anche se non si trova all'esterno dell'area dirty, perché senza il tratto "s" di supporto, l'analizzatore input penna ha una probabilità di 50/50 che l'input penna venga classificato come disegno o parola.
 
--   Stato interno memorizzato nella cache.
+-   Stato memorizzato nella cache interna.
 
-    -   Quando un'applicazione richiama un'operazione di analisi in background, [**InkAnalyzer**](inkanalyzer.md) memorizza nella cache uno snapshot dei dati eliminati. Se si acquisisce uno snapshot, l' **oggetto InkAnalyzer** può lavorare per analizzare i dati indipendentemente dai dati usati dall'applicazione oppure usare lo snapshot come punto di confronto per determinare quali modifiche sono state apportate dall'applicazione durante l'analisi in background.
-    -   La memorizzazione nella cache dello stato e il confronto delle modifiche è preferibile rispetto al mantenimento di un elenco di tutte le modifiche apportate per un motivo principale: proxy di dati. Si tratta di uno scenario avanzato descritto più avanti in questo documento, ma prevede che l'applicazione aggiorni l' [**oggetto InkAnalyzer**](inkanalyzer.md) con solo i dati di input penna e non input penna correnti prima dell'operazione di analisi richiamata e prima di elaborare i risultati di un'operazione di analisi.
+    -   Quando un'applicazione richiama un'operazione di analisi in [**background, InkAnalyzer**](inkanalyzer.md) memorizza nella cache uno snapshot dei dati potati. Lo snapshot di **InkAnalyzer** può essere usato per analizzare i dati indipendentemente dai dati usati dall'applicazione oppure usare lo snapshot come punto di confronto per determinare le modifiche apportate dall'applicazione durante l'analisi in background.
+    -   Caching lo stato e il confronto delle modifiche è meglio che mantenere un elenco di tutte le modifiche che si sono verificate per un motivo principale: proxy dati. Si tratta di uno scenario avanzato descritto più avanti in questo documento, ma prevede l'aggiornamento di [**InkAnalyzer**](inkanalyzer.md) da parte dell'applicazione con solo i dati di input penna e non input penna correnti prima dell'operazione di analisi richiamata e prima dell'elaborazione dei risultati di un'operazione di analisi.
 
-## <a name="simple-ink-analysis"></a>Analisi input penna semplice
+## <a name="simple-ink-analysis"></a>Analisi dell'input penna semplice
 
-I due scenari precedenti, ovvero il riconoscimento semplice e il riconoscimento incrementale, descrivono come accedere ai valori di riconoscimento senza menzionare come accedere ai risultati dell'analisi dell'input penna o della classificazione. La configurazione predefinita di [**InkAnalyzer**](inkanalyzer.md)esegue sia algoritmi di analisi dell'input penna che algoritmi di riconoscimento. Questa configurazione produce i risultati più accurati, perché le due tecnologie interagiscono per migliorare l'accuratezza. Ovvero i motori di analisi dell'input penna consentono di separare il disegno dalla scrittura e normalizzare la scrittura angolata in un piano orizzontale, ovvero il piano di input ottimale per i motori di riconoscimento.
+I due scenari precedenti (riconoscimento semplice e riconoscimento incrementale) illustrano come accedere ai valori di riconoscimento senza menzionare come accedere ai risultati dell'analisi o della classificazione dell'input penna. La configurazione predefinita di [**InkAnalyzer**](inkanalyzer.md)esegue sia algoritmi di analisi dell'input penna che algoritmi di riconoscimento. Questa configurazione produce i risultati più accurati, perché le due tecnologie lavorano insieme per aumentare l'accuratezza. Ovvero, i motori di analisi dell'input penna consentono di separare il disegno dalla scrittura e normalizzare la scrittura angolare in un piano orizzontale, che è il piano di input ottimale per i motori di riconoscimento.
 
-Per accedere ai risultati dell'analisi dell'input penna, l'applicazione usa i metodi [**Analyze**](iinkanalyzer-analyze.md) o [**BackgroundAnalyze**](iinkanalyzer-backgroundanalyze.md) esattamente come descritto nei due scenari di riconoscimento precedenti. Non viene apportata alcuna modifica perché gli algoritmi di analisi e riconoscimento dell'input penna sono già in esecuzione quando vengono chiamati tali metodi. Tuttavia, l'accesso ai risultati è più complicato rispetto alla lettura del valore di una stringa. Nell'esempio di codice seguente, ad esempio, vengono illustrati il raggruppamento e le posizioni di tutti i segmenti **InkWord** e **InkDrawing** eseguendo il rendering di un rettangolo attorno al gruppo di tratti che costituiscono la classificazione.
+Per accedere ai risultati dell'analisi dell'input penna, l'applicazione usa i metodi [**Analyze**](iinkanalyzer-analyze.md) o [**BackgroundAnalyze**](iinkanalyzer-backgroundanalyze.md) esattamente come descritto nei due scenari di riconoscimento precedenti. Non cambia nulla perché gli algoritmi di analisi e riconoscimento dell'input penna sono già in esecuzione quando questi metodi vengono chiamati. Tuttavia, l'accesso ai risultati è più complicato rispetto alla lettura del valore di una stringa. Ad esempio, l'esempio di codice seguente illustra il raggruppamento e le posizioni di tutti i segmenti **InkWord** e **InkDrawing** tramite il rendering di un rettangolo intorno al gruppo di tratti che costituiscono la classificazione.
 
-Questo esempio usa semplicemente l'evento **Paint** del modulo per eseguire il rendering di rettangoli colorati intorno alle parole o ai disegni. Il metodo [**FindNodesOfType**](iinkanalyzer-findnodesoftype.md) restituisce una raccolta di oggetti esistente solo se l'operazione di analisi è stata eseguita e i risultati contengono le classificazioni con il tipo [**ContextNode**](icontextnode.md) specificato. Se nel documento non è presente alcun **ContextNode** del tipo desiderato, i passaggi per creare i rettangoli vengono ignorati.
+Questo esempio usa semplicemente l'evento Paint **form** per eseguire il rendering di rettangoli colorati intorno alle parole o ai disegni. Il [**metodo FindNodesOfType**](iinkanalyzer-findnodesoftype.md) restituisce una raccolta di oggetti che esiste solo se l'operazione di analisi è stata eseguita e i risultati contengono classificazioni con il [**tipo ContextNode**](icontextnode.md) specificato. Se nel documento non è presente alcun **ContextNode** del tipo desiderato, i passaggi per disegnare i rettangoli vengono ignorati.
 
-Ogni oggetto restituito dal metodo [**FindNodesOfType**](iinkanalyzer-findnodesoftype.md) avrà proprietà correlate a tale tipo di classificazione. L'oggetto **InkWordNode** , ad esempio, fa riferimento a tutti i tratti che costituiscono una singola parola nel documento e fa riferimento alla stringa riconosciuta per la parola. **InkDrawingNode** fa riferimento a tutti i tratti che compongono il singolo disegno nel documento e fanno riferimento al nome della forma per il disegno.
+Ogni oggetto restituito dal [**metodo FindNodesOfType**](iinkanalyzer-findnodesoftype.md) avrà proprietà correlate a tale tipo di classificazione. Ad **esempio, InkWordNode** fa riferimento a tutti i tratti che costituiscono una singola parola nel documento e fa riferimento alla stringa riconosciuta per tale parola. **InkDrawingNode** fa riferimento a tutti i tratti che costituiscono il singolo disegno nel documento e fa riferimento al nome della forma per tale disegno.
 
-Il metodo [**FindNodesOfType**](iinkanalyzer-findnodesoftype.md) è molto simile al metodo [**DivisionResult:: ResultByType**](/windows/desktop/api/msinkaut15/nf-msinkaut15-iinkdivisionresult-resultbytype) che ha restituito raccolte di [**DivisionUnits**](/windows/desktop/api/msinkaut15/nn-msinkaut15-iinkdivisionunits) di tipi di scrittura o di disegno.
+Il [**metodo FindNodesOfType**](iinkanalyzer-findnodesoftype.md) è molto simile al metodo [**DivisionResult::ResultByType**](/windows/desktop/api/msinkaut15/nf-msinkaut15-iinkdivisionresult-resultbytype) che ha restituito raccolte di [**DivisionUnits**](/windows/desktop/api/msinkaut15/nn-msinkaut15-iinkdivisionunits) di tipi di scrittura o disegno.
 
 
 ```C++
@@ -206,27 +206,27 @@ private void Form1_Paint(object sender, PaintEventArgs e)
 
 
 
-Per inserire l'esempio di codice precedente in prospettiva, prendere in considerazione l'esempio di input penna seguente:
+Per mettere in prospettiva l'esempio di codice precedente, si consideri l'esempio di input penna seguente:
 
-![esempio di input penna "questo è un input penna". con un cerchio sotto di esso](images/f11cc578-d2eb-4246-af77-6bc768b0b91c.jpg)
+![Esempio di input penna "this is some ink". con un cerchio sotto di esso](images/f11cc578-d2eb-4246-af77-6bc768b0b91c.jpg)
 
-Se si chiama il metodo [**FindNodesOfType**](iinkanalyzer-findnodesoftype.md) e si passa il campo statico per **InkWord**, l'analizzatore restituisce una raccolta di quattro oggetti **InkWordNode** :
+Se si chiama il [**metodo FindNodesOfType**](iinkanalyzer-findnodesoftype.md) e si passa il campo statico **per InkWord**, l'analizzatore restituisce una raccolta di quattro **oggetti InkWordNode:**
 
-![output dell'analizzatore, "questo è un input penna"](images/16ae768a-d97c-494e-9e3d-16bce1bcb432.jpg)
+![output dell'analizzatore, "this is some ink" (Questo è un input penna)](images/16ae768a-d97c-494e-9e3d-16bce1bcb432.jpg)
 
-Se si chiama il metodo [**FindNodesOfType**](iinkanalyzer-findnodesoftype.md) e si passa il campo statico per **InkDrawing**, l'analizzatore restituisce una raccolta di un oggetto **InkDrawingNode** :
+Se si chiama il [**metodo FindNodesOfType**](iinkanalyzer-findnodesoftype.md) e si passa il campo statico **per InkDrawing**, l'analizzatore restituisce una raccolta di un **oggetto InkDrawingNode:**
 
-![immagine che mostra "Oval", il risultato di InkDrawing Analyzer](images/624b6a53-b6b9-4ccf-9bb8-c4c5629b88cf.jpg)
+![immagine che mostra "oval", il risultato dell'analizzatore di disegno dell'input penna](images/624b6a53-b6b9-4ccf-9bb8-c4c5629b88cf.jpg)
 
-Una volta generato l'evento **Paint** , il codice di esempio esegue il rendering dei rettangoli intorno a ogni oggetto:
+Dopo che **Paint** generato l'evento , il codice di esempio esegue il rendering dei rettangoli intorno a ognuno degli oggetti :
 
-![disegno originale con rettangoli sottoposti a rendering intorno all'oggetto e alle parole](images/7fd9bcc3-8d7c-4cab-aa36-ba5ed78a25c0.jpg)
+![disegno originale con rettangoli di cui viene eseguito il rendering intorno all'oggetto e alle parole](images/7fd9bcc3-8d7c-4cab-aa36-ba5ed78a25c0.jpg)
 
-Questo esempio riguarda solo il metodo [**FindNodesOfType**](iinkanalyzer-findnodesoftype.md) , ma poiché i motori di analisi dell'input penna sono in grado di rilevare un set più completo di tipi di input penna, il metodo corrisponde anche a tutti i tipi di nodi rilevabili dai motori di analisi dell'input penna, ad esempio linee, paragrafi e altre strutture.
+Questo esempio tocca solo il metodo [**FindNodesOfType,**](iinkanalyzer-findnodesoftype.md) ma poiché i motori di analisi dell'input penna sono in grado di rilevare un set più completo di tipi di input penna, il metodo corrisponde anche a tutti i tipi di nodi rilevabili dai motori di analisi dell'input penna, ad esempio righe, paragrafi e altre strutture.
 
-## <a name="using-ink-analysis-with-point-erase"></a>Uso dell'analisi dell'input penna con cancellazione punti
+## <a name="using-ink-analysis-with-point-erase"></a>Uso dell'analisi dell'input penna con la cancellazione dei punti
 
-L'applicazione deve apportare modifiche nel modo in cui aggiorna i tratti quando esegue la cancellazione dei punti per garantire prestazioni ottimali. In primo luogo, a livello di applicazione, sostituire il punto dello stilo del tratto esistente con il punto dello stilo del nuovo tratto, quindi chiamare [**ClearStrokeData**](iinkanalyzer-clearstrokedata.md) su tale tratto e aggiornare l'area dirty con i limiti del tratto. In questo modo, l' [**oggetto InkAnalyzer**](inkanalyzer.md) recupererà i dati del tratto aggiornati al momento dell'avvio del successivo ciclo di analisi in background. Questa tecnica è illustrata nell'esempio seguente.
+L'applicazione deve apportare modifiche al modo in cui aggiorna i tratti durante l'esecuzione della cancellazione del punto per garantire prestazioni ottimali. In primo luogo, a livello dell'applicazione, sostituire il punto dello stilo del tratto esistente con il punto dello stilo del nuovo tratto, quindi chiamare [**ClearStrokeData**](iinkanalyzer-clearstrokedata.md) su tale tratto e aggiornare l'area dirty con i limiti del tratto. In questo modo [**InkAnalyzer recupererà**](inkanalyzer.md) i dati aggiornati del tratto all'avvio del successivo ciclo di analisi in background. Questa tecnica è illustrata nell'esempio seguente.
 
 
 ```C++
@@ -343,7 +343,7 @@ class PointEraseAnalysisSample : Application
 [Panoramica dell'analisi dell'input penna](ink-analysis-overview.md)
 </dt> <dt>
 
-[Utilizzo API analisi input penna](ink-analysis-api-usage.md)
+[Utilizzo dell'API analisi input penna](ink-analysis-api-usage.md)
 </dt> </dl>
 
  

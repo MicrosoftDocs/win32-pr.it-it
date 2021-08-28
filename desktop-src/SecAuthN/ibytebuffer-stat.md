@@ -1,7 +1,7 @@
 ---
-description: Il metodo stat recupera le informazioni statistiche dall'oggetto flusso.
+description: Il metodo Stat recupera informazioni statistiche dall'oggetto flusso.
 ms.assetid: 7dfb59e9-143a-402e-990a-a2b35e6443dd
-title: 'Metodo IByteBuffer:: stat (scardssp. h)'
+title: Metodo IByteBuffer::Stat (Scardssp.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -13,18 +13,18 @@ api_type:
 - COM
 api_location:
 - Scardssp.dll
-ms.openlocfilehash: bbbf033fc9ad5a25b3bcf5c22028ac1237f46c14
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: dd80b408765985b2e009b2e580eb1bf81b08cb5ea1f2e7aaa5ed628a76073a27
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "106317078"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120127401"
 ---
-# <a name="ibytebufferstat-method"></a>Metodo IByteBuffer:: stat
+# <a name="ibytebufferstat-method"></a>Metodo IByteBuffer::Stat
 
-\[Il metodo **Stat** è disponibile per l'uso nei sistemi operativi specificati nella sezione requisiti. Non è disponibile per l'utilizzo in Windows Server 2003 con Service Pack 1 (SP1) e versioni successive, Windows Vista, Windows Server 2008 e versioni successive del sistema operativo. L'interfaccia [**IStream**](/windows/desktop/api/objidl/nn-objidl-istream) fornisce funzionalità simili.\]
+\[Il **metodo Stat** è disponibile per l'uso nei sistemi operativi specificati nella sezione Requisiti. Non è disponibile per l'uso in Windows Server 2003 con Service Pack 1 (SP1) e versioni successive, Windows Vista, Windows Server 2008 e versioni successive del sistema operativo. [**L'interfaccia IStream**](/windows/desktop/api/objidl/nn-objidl-istream) offre funzionalità simili.\]
 
-Il metodo **Stat** recupera le informazioni statistiche dall'oggetto flusso.
+Il **metodo Stat** recupera informazioni statistiche dall'oggetto flusso.
 
 ## <a name="syntax"></a>Sintassi
 
@@ -42,31 +42,31 @@ HRESULT Stat(
 
 <dl> <dt>
 
-*pstatstg* \[ out\]
+*pstatstg* \[ Cambio\]
 </dt> <dd>
 
-Punta a una struttura **STATSTRUCT** in cui questo metodo inserisce informazioni su questo oggetto flusso. Questo puntatore è **null** se si verifica un errore.
+Punta a una **struttura STATSTRUCT** in cui questo metodo inserisce informazioni su questo oggetto flusso. Questo puntatore è **NULL** se si verifica un errore.
 
 </dd> <dt>
 
-*grfStatFlag* \[ in\]
+*grfStatFlag* \[ Pollici\]
 </dt> <dd>
 
-Specifica che questo metodo non restituisce alcuni dei campi nella struttura **STATSTRUCT** , salvando così un'operazione di allocazione della memoria. I valori vengono ricavati dall'enumerazione [**STATFLAG**](/windows/win32/api/wtypes/ne-wtypes-statflag)
+Specifica che questo metodo non restituisce alcuni campi nella struttura **STATSTRUCT,** salvando così un'operazione di allocazione della memoria. I valori vengono prelevati [**dall'enumerazione STATFLAG**](/windows/win32/api/wtypes/ne-wtypes-statflag)
 
 </dd> </dl>
 
 ## <a name="return-value"></a>Valore restituito
 
-Il valore restituito è un valore **HRESULT**. Il valore S \_ OK indica che la chiamata è stata eseguita correttamente.
+Il valore restituito è **HRESULT.** Il valore S \_ OK indica che la chiamata è riuscita.
 
 ## <a name="remarks"></a>Commenti
 
-Il metodo **IByteBuffer:: stat** recupera un puntatore alla struttura **STATSTRUCT** che contiene informazioni su questo flusso aperto.
+Il **metodo IByteBuffer::Stat** recupera un puntatore alla struttura **STATSTRUCT** che contiene informazioni su questo flusso aperto.
 
 ## <a name="examples"></a>Esempio
 
-Nell'esempio seguente viene illustrato come recuperare informazioni statistiche dal flusso.
+L'esempio seguente illustra il recupero di informazioni statistiche dal flusso.
 
 
 ```C++
@@ -90,12 +90,12 @@ else
 
 | Requisito | Valore |
 |-------------------------------------|-----------------------------------------------------------------------------------------|
-| Client minimo supportato<br/> | \[Solo app desktop Windows XP\]<br/>                                             |
-| Server minimo supportato<br/> | \[Solo app desktop Windows Server 2003\]<br/>                                    |
+| Client minimo supportato<br/> | Windows Solo \[ app desktop XP\]<br/>                                             |
+| Server minimo supportato<br/> | Windows Solo app desktop di Server 2003 \[\]<br/>                                    |
 | Fine del supporto client<br/>    | Windows XP<br/>                                                                   |
 | Fine del supporto server<br/>    | Windows Server 2003<br/>                                                          |
-| Intestazione<br/>                   | <dl> <dt>Scardssp. h</dt> </dl>   |
-| Libreria dei tipi<br/>             | <dl> <dt>Scardssp. tlb</dt> </dl> |
+| Intestazione<br/>                   | <dl> <dt>Scardssp.h</dt> </dl>   |
+| Libreria dei tipi<br/>             | <dl> <dt>Scardssp.tlb</dt> </dl> |
 | DLL<br/>                      | <dl> <dt>Scardssp.dll</dt> </dl> |
 | IID<br/>                      | IID \_ IByteBuffer è definito come E126F8FE-A7AF-11D0-B88A-00C04FD424B9<br/>          |
 

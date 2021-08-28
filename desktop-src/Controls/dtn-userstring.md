@@ -1,9 +1,9 @@
 ---
-title: Codice di notifica DTN_USERSTRING (COMmctrl. h)
-description: Inviato da un controllo di selezione data e ora (DTP) quando un utente completa la modifica di una stringa nel controllo.
+title: DTN_USERSTRING di notifica (Commctrl.h)
+description: Inviato da un controllo di selezione data e ora quando un utente completa la modifica di una stringa nel controllo.
 ms.assetid: a5b13582-323b-4804-912c-a988d902547d
 keywords:
-- Controlli di Windows per il codice di notifica DTN_USERSTRING
+- DTN_USERSTRING del codice di notifica Windows controlli
 topic_type:
 - apiref
 api_name:
@@ -16,16 +16,16 @@ api_type:
 - HeaderDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 4878875d23a0a5fce95aa4cc9ebfedfbdf24cb93
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: c6eabae4ed5a4fbe9ff0652b77fb7b6fbaf709b9030e3aa982af486ad6b7ed0d
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "103873437"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120062921"
 ---
-# <a name="dtn_userstring-notification-code"></a>\_Codice di notifica USERSTRING di DTN
+# <a name="dtn_userstring-notification-code"></a>Codice di notifica \_ DTN USERSTRING
 
-Inviato da un controllo di selezione data e ora (DTP) quando un utente completa la modifica di una stringa nel controllo. Questo codice di notifica viene inviato solo dai controlli DTP impostati sullo stile [**DTS \_ APPCANPARSE**](date-and-time-picker-control-styles.md) . Questo codice di notifica viene inviato sotto forma di messaggio [**di \_ notifica WM**](wm-notify.md) .
+Inviato da un controllo di selezione data e ora quando un utente completa la modifica di una stringa nel controllo. Questo codice di notifica viene inviato solo dai controlli DTP impostati sullo stile [**\_ APPCANPARSE DTS.**](date-and-time-picker-control-styles.md) Questo codice di notifica viene inviato sotto forma di messaggio [**WM \_ NOTIFY.**](wm-notify.md)
 
 
 ```C++
@@ -43,7 +43,7 @@ DTN_USERSTRING
 *lParam* 
 </dt> <dd>
 
-Puntatore a una struttura [**NMDATETIMESTRING**](/windows/win32/api/commctrl/ns-commctrl-nmdatetimestringa) che contiene informazioni sull'istanza del codice di notifica.
+Puntatore a una [**struttura NMDATETIMESTRING**](/windows/win32/api/commctrl/ns-commctrl-nmdatetimestringa) che contiene informazioni sull'istanza del codice di notifica.
 
 </dd> </dl>
 
@@ -53,7 +53,7 @@ Il proprietario del controllo deve restituire zero.
 
 ## <a name="remarks"></a>Commenti
 
-La gestione di questo codice di notifica consente al proprietario di fornire risposte personalizzate alle stringhe immesse nel controllo dall'utente. Il proprietario deve essere preparato per analizzare la stringa di input ed eseguire l'azione, se necessario.
+La gestione di questo codice di notifica consente al proprietario di fornire risposte personalizzate alle stringhe immesse nel controllo dall'utente. Il proprietario deve essere preparato ad analizzare la stringa di input ed eseguire un'azione, se necessario.
 
 ## <a name="requirements"></a>Requisiti
 
@@ -61,9 +61,9 @@ La gestione di questo codice di notifica consente al proprietario di fornire ris
 
 | Requisito | Valore |
 |-------------------------------------|---------------------------------------------------------------------------------------|
-| Client minimo supportato<br/> | \[Solo app desktop di Windows Vista\]<br/>                                        |
-| Server minimo supportato<br/> | \[Solo app desktop Windows Server 2003\]<br/>                                  |
-| Intestazione<br/>                   | <dl> <dt>Commctrl. h</dt> </dl> |
+| Client minimo supportato<br/> | Windows Solo \[ app desktop Vista\]<br/>                                        |
+| Server minimo supportato<br/> | Windows Solo app desktop di Server 2003 \[\]<br/>                                  |
+| Intestazione<br/>                   | <dl> <dt>Commctrl.h</dt> </dl> |
 | Nomi Unicode e ANSI<br/>   | **DTN \_ USERSTRINGW** (Unicode) e **DTN \_ USERSTRINGA** (ANSI)<br/>             |
 
 
