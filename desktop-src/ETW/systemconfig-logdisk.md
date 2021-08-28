@@ -28,12 +28,12 @@ api_name:
 api_type:
 - NA
 api_location: ''
-ms.openlocfilehash: c24ce209c51e0ac2d6167ae76d3f8289d73aa0fffa9ce607e51c8566cbb37c36
-ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
+ms.openlocfilehash: 326509ea080b052c0ff435e0a6e573bf54ac298c
+ms.sourcegitcommit: 61a4c522182aa1cacbf5669683d9570a3bf043b2
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119582231"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "122880757"
 ---
 # <a name="systemconfig_logdisk-class"></a>Classe SystemConfig \_ LogDisk
 
@@ -122,7 +122,7 @@ Tipo di accesso: sola lettura
 Qualificatori: **WmiDataId** (6), **Max** (4), **Format("s")**
 </dt> </dl>
 
-Lettera di unità del disco nel formato " <letter> :".
+Lettera di unità del disco nel formato " &lt; lettera &gt; :".
 
 </dd> <dt>
 
@@ -282,7 +282,7 @@ Numero di settori nel volume.
 
 </dd> <dt>
 
-**Dimensioni**
+**Size**
 </dt> <dd> <dl> <dt>
 
 Tipo di dati: **uint32**

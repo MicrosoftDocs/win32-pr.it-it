@@ -1,6 +1,6 @@
 ---
-description: 'Altre informazioni su: Enumerazione StopServiceGrbit'
-title: Enumerazione StopServiceGrbit (Microsoft. ISAM. esent. Interop. Windows8)
+description: Altre informazioni sull'enumerazione StopServiceGrbit
+title: Enumerazione StopServiceGrbit (Microsoft.Isam.Esent.Interop.Windows8)
 TOCTitle: StopServiceGrbit enumeration
 ms:assetid: T:Microsoft.Isam.Esent.Interop.Windows8.StopServiceGrbit
 ms:mtpsurl: https://msdn.microsoft.com/library/microsoft.isam.esent.interop.windows8.stopservicegrbit(v=EXCHG.10)
@@ -32,21 +32,21 @@ api_type:
 api_location:
 - Microsoft.Isam.Esent.Interop.dll
 ROBOTS: INDEX,FOLLOW
-ms.openlocfilehash: 54e54576dfb1023ec4e3bc55ddd198a77f0ddf25
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 6c8280bf4abfbc9eb5818d1aab460a17298db7b0
+ms.sourcegitcommit: 9b5faa61c38b2d0c432b7f2dbee8c127b0e28a7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "106308005"
+ms.lasthandoff: 08/19/2021
+ms.locfileid: "122477457"
 ---
 # <a name="stopservicegrbit-enumeration"></a>Enumerazione StopServiceGrbit
 
-Opzioni per [JetStopServiceInstance2 (JET_INSTANCE, StopServiceGrbit)](./windows8api.jetstopserviceinstance2-method.md).
+Opzioni per [JetStopServiceInstance2(JET_INSTANCE, StopServiceGrbit)](./windows8api.jetstopserviceinstance2-method.md).
 
 Questa enumerazione ha un attributo [FlagsAttribute](/dotnet/api/system.flagsattribute) che consente una combinazione bit per bit dei valori del relativo membro.
 
-**Spazio dei nomi:**  [Microsoft. ISAM. esent. Interop. Windows8](./microsoft.isam.esent.interop.windows8-namespace.md)  
-**Assembly:**  Microsoft. ISAM. esent. Interop (in Microsoft.Isam.Esent.Interop.dll)
+**Spazio dei**  [nomi: Microsoft.Isam.Esent.Interop.Windows8](./microsoft.isam.esent.interop.windows8-namespace.md)  
+**Assembly:**  Microsoft.Isam.Esent.Interop (in Microsoft.Isam.Esent.Interop.dll)
 
 ## <a name="syntax"></a>Sintassi
 
@@ -65,47 +65,18 @@ public enum StopServiceGrbit
 
 ## <a name="members"></a>Members
 
-<table>
-<colgroup>
-<col style="width: 33%" />
-<col style="width: 33%" />
-<col style="width: 33%" />
-</colgroup>
-<thead>
-<tr class="header">
-<th></th>
-<th>Nome del membro</th>
-<th>Descrizione</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td></td>
-<td>Tutti</td>
-<td>Arresta tutti i servizi ESE per l'istanza specificata.</td>
-</tr>
-<tr class="even">
-<td></td>
-<td>BackgroundUserTasks</td>
-<td>Arresta le attività di manutenzione in background specifiche del client riavviabili (B + deframmentazione albero).</td>
-</tr>
-<tr class="odd">
-<td></td>
-<td>QuiesceCaches</td>
-<td>Quiesces tutte le cache Dirty sul disco. Asincrona. Disattivazione viene annullato se il bit Resume viene chiamato successivamente.</td>
-</tr>
-<tr class="even">
-<td></td>
-<td>Riprendi</td>
-<td>Riprende le operazioni StopService rilasciate in precedenza, ovvero &quot; Riavvia il servizio &quot; . Può essere combinato con grbits sopra per riprendere servizi specifici o con 0x0 riprende tutti i servizi precedenti arrestati.
-<p>Avviso: questo bit può essere utilizzato solo per riprendere JET_bitStopServiceBackground e JET_bitStopServiceQuiesceCaches, se è stato eseguito un JET_bitStopServiceAll o JET_bitStopServiceAPI, il tentativo di utilizzare JET_bitStopServiceResume avrà esito negativo.</p></td>
-</tr>
-</tbody>
-</table>
+
+|  | Nome del membro | Descrizione | 
+|--|-------------|-------------|
+|  | Tutti | Arresta tutti i servizi ESE per l'istanza specificata. | 
+|  | BackgroundUserTasks | Arresta le attività di manutenzione in background specifiche del client riavviabili (deframmentazione albero B+). | 
+|  | QuiesceCaches | Inattiva tutte le cache dirty su disco. Asincrona. La disattivazione viene annullata se il bit Resume viene chiamato successivamente. | 
+|  | Riprendi | Riprende le operazioni StopService eseguite in precedenza, ad esempio "riavvia il servizio". Può essere combinato con i grbit precedenti per riprendere servizi specifici o con 0x0 riprende tutti i servizi arrestati in precedenza.<p>Avviso: questo bit può essere usato solo per riprendere JET_bitStopServiceBackground e JET_bitStopServiceQuiesceCaches, se è stato eseguito un JET_bitStopServiceAll o un JET_bitStopServiceAPI, il tentativo di usare JET_bitStopServiceResume avrà esito negativo.</p> | 
+
 
 
 ## <a name="see-also"></a>Vedi anche
 
 #### <a name="reference"></a>Riferimento
 
-[Spazio dei nomi Microsoft. ISAM. esent. Interop. Windows8](./microsoft.isam.esent.interop.windows8-namespace.md)
+[Spazio dei nomi Microsoft.Isam.Esent.Interop.Windows8](./microsoft.isam.esent.interop.windows8-namespace.md)

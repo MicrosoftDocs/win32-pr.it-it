@@ -1,5 +1,5 @@
 ---
-description: 'Altre informazioni: Funzione JetStopBackup'
+description: 'Altre informazioni su: Funzione JetStopBackup'
 title: Funzione JetStopBackup
 TOCTitle: JetStopBackup Function
 ms:assetid: b7545284-2fdb-4470-8466-fc2109ad63c5
@@ -18,12 +18,12 @@ api_type:
 api_location:
 - ESENT.DLL
 ROBOTS: INDEX,FOLLOW
-ms.openlocfilehash: fd5f7fe7096b0562aa9fc4ce8d15f77a4ccf205f
-ms.sourcegitcommit: 9b5faa61c38b2d0c432b7f2dbee8c127b0e28a7e
+ms.openlocfilehash: cd11857be7096ce30f2fcf06f8ab4f975185da57
+ms.sourcegitcommit: 4665ebce0c106bdb52eef36e544280b496b6f50b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/19/2021
-ms.locfileid: "122469698"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "122982364"
 ---
 # <a name="jetstopbackup-function"></a>Funzione JetStopBackup
 
@@ -48,28 +48,34 @@ Questa funzione non ha parametri.
 
 ### <a name="return-value"></a>Valore restituito
 
-Questa funzione restituisce il [JET_ERR](./jet-err.md) dati con uno dei codici restituiti seguenti. Per altre informazioni sui possibili errori ESE, vedere Errori del [motore Archiviazione estendibile](./extensible-storage-engine-errors.md) e Parametri [di gestione degli errori](./error-handling-parameters.md).
+Questa funzione restituisce il [JET_ERR](./jet-err.md) dati con uno dei codici restituiti seguenti. Per altre informazioni sui possibili errori ESE, vedere [Extensible Archiviazione Engine Errors](./extensible-storage-engine-errors.md) and [Error Handling Parameters](./error-handling-parameters.md).
 
 
 | <p>Codice restituito</p> | <p>Descrizione</p> | 
 |--------------------|--------------------|
 | <p>JET_errSuccess</p> | <p>Operazione riuscita.</p> | 
-| <p>JET_errRunningInMultiInstanceMode</p> | <p>Non è chiaro quale istanza preparare per la terminazione quando si usa <a href="gg269240(v=exchg.10).md">JetStopService</a> con la modalità a più istanze.</p><p><strong>Windows XP:</strong>  Questo valore restituito è stato introdotto in Windows XP.</p> | 
+| <p>JET_errRunningInMultiInstanceMode</p> | <p>Non è chiaro quale istanza preparare per la terminazione quando si usa <a href="gg269240(v=exchg.10).md">JetStopService</a> con la modalità a istanza multipla.</p><p><strong>Windows XP:</strong>  Questo valore restituito è stato introdotto in Windows XP.</p> | 
 
 
 
 Se questa funzione ha esito positivo, l'istanza inizierà a non riuscire con le nuove API di backup di streaming.
 
-Se questa funzione ha esito negativo, non verrà eseguita alcuna procedura per preparare la terminazione del backup nell'istanza e non verrà apportata alcuna modifica allo stato dell'istanza.
+Se questa funzione ha esito negativo, non verranno eseguiti passaggi per preparare la terminazione del backup nell'istanza e non verrà apportata alcuna modifica allo stato dell'istanza.
 
 #### <a name="remarks"></a>Commenti
 
-Il backup viene in genere attivato da un evento esterno al meccanismo del processo e, usando questa API, l'applicazione ESENT stessa effettua altre chiamate alle API di backup di streaming in modo che non riescano. La maggior parte delle API di backup di streaming inizierà a non riuscire JET_errBackupAbortByServer. Di conseguenza, qualsiasi avanzamento del backup di streaming (ad esempio [JetReadFileInstance](./jetreadfileinstance-function.md)) restituirà un errore. Le operazioni di backup che fanno parte della terminazione del backup ( ad esempio [JetEndExternalBackupInstance](./jetendexternalbackupinstance-function.md)) saranno comunque consentite.
+Il backup viene in genere attivato da un evento esterno al meccanismo del processo e, usando questa API, l'applicazione ESENT stessa effettua altre chiamate alle API di backup di streaming in modo che non riescano. La maggior parte delle API di backup di streaming inizierà a non riuscire con JET_errBackupAbortByServer. Di conseguenza, qualsiasi stato di avanzamento del backup del flusso (ad [esempio JetReadFileInstance](./jetreadfileinstance-function.md)) restituirà un errore. Le operazioni di backup che fanno parte della terminazione del backup ( ad esempio [JetEndExternalBackupInstance](./jetendexternalbackupinstance-function.md)) saranno comunque consentite.
 
 #### <a name="requirements"></a>Requisiti
 
 
-| | | <p><strong>Client</strong></p> | <p>Richiede Windows Vista, Windows XP o Windows 2000 Professional.</p> | | <p><strong>Server</strong></p> | <p>Richiede Windows Server 2008, Windows Server 2003 o Windows 2000 Server.</p> | | <p><strong>Intestazione</strong></p> | <p>Dichiarato in Esent.h.</p> | | <p><strong>Libreria</strong></p> | <p>Usare ESENT.lib.</p> | | <p><strong>DLL</strong></p> | <p>Richiede ESENT.dll.</p> | 
+| Requisito | Valore |
+|------------|----------|
+| <p><strong>Client</strong></p> | <p>Richiede Windows Vista, Windows XP o Windows 2000 Professional.</p> | 
+| <p><strong>Server</strong></p> | <p>Richiede Windows Server 2008, Windows Server 2003 o Windows 2000 Server.</p> | 
+| <p><strong>Intestazione</strong></p> | <p>Dichiarato in Esent.h.</p> | 
+| <p><strong>Libreria</strong></p> | <p>Usare ESENT.lib.</p> | 
+| <p><strong>DLL</strong></p> | <p>Richiede ESENT.dll.</p> | 
 
 
 

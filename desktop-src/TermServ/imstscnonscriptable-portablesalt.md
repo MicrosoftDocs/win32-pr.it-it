@@ -1,24 +1,24 @@
 ---
-title: Proprietà PortableSalt di IMsTscNonScriptable
+title: Proprietà PortableSalt IMsTscNonScriptable
 description: Questa proprietà non è più supportata.
 ms.assetid: 1f123ec8-27b6-4637-9c57-fe32a224be8a
 ms.tgt_platform: multiple
 keywords:
-- Servizi Desktop remoto proprietà PortableSalt
-- Servizi Desktop remoto proprietà PortableSalt, interfaccia IMsTscNonScriptable
-- Interfaccia IMsTscNonScriptable Servizi Desktop remoto, proprietà PortableSalt
-- Servizi Desktop remoto proprietà PortableSalt, oggetto MsTscAx
-- Oggetto MsTscAx Servizi Desktop remoto, proprietà PortableSalt
-- Servizi Desktop remoto proprietà PortableSalt, interfaccia IMsRdpClientNonScriptable
-- Interfaccia IMsRdpClientNonScriptable Servizi Desktop remoto, proprietà PortableSalt
-- Servizi Desktop remoto proprietà PortableSalt, interfaccia IMsRdpClientNonScriptable2
-- Interfaccia IMsRdpClientNonScriptable2 Servizi Desktop remoto, proprietà PortableSalt
-- Servizi Desktop remoto proprietà PortableSalt, interfaccia IMsRdpClientNonScriptable3
-- Interfaccia IMsRdpClientNonScriptable3 Servizi Desktop remoto, proprietà PortableSalt
-- Servizi Desktop remoto proprietà PortableSalt, interfaccia IMsRdpClientNonScriptable4
-- Interfaccia IMsRdpClientNonScriptable4 Servizi Desktop remoto, proprietà PortableSalt
-- Servizi Desktop remoto proprietà PortableSalt, interfaccia IMsRdpClientNonScriptable5
-- Interfaccia IMsRdpClientNonScriptable5 Servizi Desktop remoto, proprietà PortableSalt
+- Proprietà PortableSalt Servizi Desktop remoto
+- Proprietà PortableSalt Servizi Desktop remoto, interfaccia IMsTscNonScriptable
+- Interfaccia IMsTscNonScriptable Servizi Desktop remoto , proprietà PortableSalt
+- Proprietà PortableSalt Servizi Desktop remoto, oggetto MsTscAx
+- Oggetto MsTscAx Servizi Desktop remoto proprietà , PortableSalt
+- Proprietà PortableSalt Servizi Desktop remoto, interfaccia IMsRdpClientNonScriptable
+- Interfaccia IMsRdpClientNonScriptable Servizi Desktop remoto , proprietà PortableSalt
+- Proprietà PortableSalt Servizi Desktop remoto, interfaccia IMsRdpClientNonScriptable2
+- Interfaccia IMsRdpClientNonScriptable2 Servizi Desktop remoto proprietà , PortableSalt
+- Proprietà PortableSalt Servizi Desktop remoto, interfaccia IMsRdpClientNonScriptable3
+- Interfaccia IMsRdpClientNonScriptable3 Servizi Desktop remoto , proprietà PortableSalt
+- Proprietà PortableSalt Servizi Desktop remoto, interfaccia IMsRdpClientNonScriptable4
+- Interfaccia IMsRdpClientNonScriptable4 Servizi Desktop remoto , proprietà PortableSalt
+- Proprietà PortableSalt Servizi Desktop remoto, interfaccia IMsRdpClientNonScriptable5
+- Interfaccia IMsRdpClientNonScriptable5 Servizi Desktop remoto , proprietà PortableSalt
 topic_type:
 - apiref
 api_name:
@@ -47,14 +47,14 @@ api_type:
 - COM
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 0162073b8361cc89f7ab2e33f60406c0db935bdb
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: 724f9b394d6e70354b39036df90386a823da2e5874f9ecb0fc0b81f130e3571e
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "103742386"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120125041"
 ---
-# <a name="imstscnonscriptableportablesalt-property"></a>IMsTscNonScriptable::P proprietà ortableSalt
+# <a name="imstscnonscriptableportablesalt-property"></a>Proprietà IMsTscNonScriptable::P ortableSalt
 
 Questa proprietà non è più supportata.
 
@@ -77,11 +77,11 @@ HRESULT get_PortableSalt(
 
 ## <a name="property-value"></a>Valore proprietà
 
-Nuova parte del Salt portatile per una password con codifica portatile.
+Nuova parte salt portabile per una password con codifica portabile.
 
 ## <a name="error-codes"></a>Codici di errore
 
-Restituisce **E \_ NOTIMPL**.
+Restituisce **E \_ NOTIMPL.**
 
 ## <a name="requirements"></a>Requisiti
 
@@ -95,7 +95,7 @@ Restituisce **E \_ NOTIMPL**.
 | Fine del supporto server<br/>    | Nessuno supportato<br/>                                                              |
 | Libreria dei tipi<br/>             | <dl> <dt>MsTscAx.dll</dt> </dl> |
 | DLL<br/>                      | <dl> <dt>MsTscAx.dll</dt> </dl> |
-| IID<br/>                      | IID \_ IMsTscNonScriptable è definito come c1e6743a-41C1-4a74-832a-0dd06c1c7a0e<br/> |
+| IID<br/>                      | IID \_ IMsTscNonScriptable è definito come c1e6743a-41c1-4a74-832a-0dd06c1c7a0e<br/> |
 
 
 

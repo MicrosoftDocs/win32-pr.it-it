@@ -3,25 +3,25 @@ title: Creazione della prima interfaccia
 description: Creazione della prima interfaccia
 ms.assetid: fe2d8ff4-59c0-4cda-b6db-3b3654c71c97
 keywords:
-- Windows Media Player Skin, Guida alla creazione
-- interfacce, Guida alla creazione
-- creazione di interfacce, informazioni
+- Windows Media Player, guida alla creazione
+- interfaccia, guida alla creazione
+- creazione di interfaccia, informazioni
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 4bcfa29a35cc0afc19a4e57f41c03ab155c39334
-ms.sourcegitcommit: 2d531328b6ed82d4ad971a45a5131b430c5866f7
+ms.openlocfilehash: b7464512ae7ca26726354e75003e277d8e0a8429bad68fffe796d4fb899b52f2
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "104395695"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120123821"
 ---
 # <a name="building-your-first-skin"></a>Creazione della prima interfaccia
 
-Come spiegato più dettagliatamente in [informazioni sulle interfacce](about-skins.md), un'interfaccia viene definita in un file di definizione dell'interfaccia personalizzata e richiede uno o più file di immagine di supporto, file Microsoft JScript e file multimediali digitali. Questa esercitazione per un'interfaccia molto semplice richiede solo il file di definizione dell'interfaccia e tre file di immagine. Si procederà con quattro passaggi descritti negli argomenti seguenti:
+Come illustrato in dettaglio [in](about-skins.md)Informazioni sulle interfaccia, un'interfaccia è definita in un file di definizione dell'interfaccia e richiede uno o più file di grafica di supporto, file di Microsoft JScript e file multimediali digitali. Questa esercitazione per un'interfaccia molto semplice richiede solo il file di definizione dell'interfaccia e tre file di grafica. Verranno illustrati quattro passaggi descritti negli argomenti seguenti:
 
--   [Creazione del file di immagine principale](creating-the-primary-art-file.md)
+-   [Creazione del file di grafica principale](creating-the-primary-art-file.md)
 -   [Creazione del file di mapping](creating-the-mapping-file.md)
--   [Creazione dell'immagine del passaggio del mouse](creating-the-hover-image.md)
+-   [Creazione dell'immagine al passaggio del mouse](creating-the-hover-image.md)
 -   [Creazione del file di definizione dell'interfaccia](creating-the-skin-definition-file.md)
 
 ## <a name="related-topics"></a>Argomenti correlati
@@ -31,9 +31,9 @@ Come spiegato più dettagliatamente in [informazioni sulle interfacce](about-ski
 [**Guida alla creazione dell'interfaccia**](skin-creation-guide.md)
 </dt> </dl>
 
- 
+ 
 
- 
+ 
 
 
 

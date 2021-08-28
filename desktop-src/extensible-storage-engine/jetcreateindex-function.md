@@ -1,5 +1,5 @@
 ---
-description: 'Altre informazioni su: funzione JetCreateIndex'
+description: 'Altre informazioni su: Funzione JetCreateIndex'
 title: Funzione JetCreateIndex
 TOCTitle: JetCreateIndex Function
 ms:assetid: d164e74a-7719-4587-9059-8fb18b365133
@@ -20,12 +20,12 @@ api_type:
 api_location:
 - ESENT.DLL
 ROBOTS: INDEX,FOLLOW
-ms.openlocfilehash: c0208a5f0adac4ff5128b506123f3b68589cd0d3
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 698f9a050415568c06c8e10819cfed12a4a17181
+ms.sourcegitcommit: 9b5faa61c38b2d0c432b7f2dbee8c127b0e28a7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "106313104"
+ms.lasthandoff: 08/19/2021
+ms.locfileid: "122478397"
 ---
 # <a name="jetcreateindex-function"></a>Funzione JetCreateIndex
 
@@ -34,7 +34,7 @@ _**Si applica a:** Windows | Windows Server_
 
 ## <a name="jetcreateindex-function"></a>Funzione JetCreateIndex
 
-La funzione **JetCreateIndex** consente di creare un indice di dati in un database Extensible Storage Engine (ESE), che è possibile utilizzare per individuare rapidamente dati specifici.
+La **funzione JetCreateIndex** consente di creare un indice di dati in un database ESE (Extensible Archiviazione Engine), che è possibile usare per individuare rapidamente dati specifici.
 
 ```cpp
     JET_ERR JET_API JetCreateIndex(
@@ -54,110 +54,68 @@ La funzione **JetCreateIndex** consente di creare un indice di dati in un databa
 
 Contesto della sessione di database da usare per una particolare chiamata API.
 
-*TableID*
+*tableid*
 
-Tabella per la quale verrà creato un indice.
+Tabella per cui verrà creato un indice.
 
 *szIndexName*
 
-Puntatore a una stringa con terminazione null che specifica il nome dell'indice da creare.
+Puntatore a una stringa con terminazione Null che specifica il nome dell'indice da creare.
 
 Il nome dell'indice deve essere conforme alle linee guida seguenti:
 
-  - Deve contenere un numero di caratteri inferiore a JET_cbNameMost, escluso il carattere di terminazione null.
+  - Deve contenere meno caratteri rispetto JET_cbNameMost, senza includere il carattere null di terminazione.
 
-  - Deve contenere solo i caratteri delle seguenti categorie: da 0 a 9, da A A Z, da a a z e da tutti i caratteri di punteggiatura, ad eccezione di " \! " (punto esclamativo), "," (virgola), " \[ " (parentesi di apertura) e " \] " (parentesi di chiusura), ovvero i caratteri ASCII 0x20, 0x22 tramite 0x2D, 0x2F tramite 0x5A, 0x5c e 0x5D tramite 0x7F.
+  - Deve contenere solo caratteri delle categorie seguenti: da 0 a 9, da A a Z, da a a z e tutti i caratteri di punteggiatura ad eccezione di " \! " (punto esclamativo), "," (virgola), " " (parentesi quadra di apertura) e " " (parentesi quadra di chiusura), ovvero i caratteri ASCII 0x20, da 0x22 a 0x2d, da 0x2f a 0x5a, 0x5c e \[ 0x5d fino a \] 0x7f.
 
   - Non deve iniziare con uno spazio.
 
-  - Deve contenere almeno un carattere diverso dallo spazio.
+  - Deve contenere almeno un carattere diverso da uno spazio.
 
 *grbit*
 
-Gruppo di bit che contiene le opzioni da utilizzare per una particolare chiamata. Questo parametro può includere zero o più opzioni disponibili nella struttura [JET_INDEXCREATE](./jet-indexcreate-structure.md) .
+Gruppo di bit che contiene le opzioni da utilizzare per una chiamata specifica. Questo parametro può includere zero o più opzioni disponibili nella [JET_INDEXCREATE](./jet-indexcreate-structure.md) struttura .
 
 *szKey*
 
-Puntatore a una doppia stringa con terminazione null di token delimitati da null.
+Puntatore a una stringa con terminazione Null doppia di token delimitati da Null.
 
-Per ulteriori informazioni su questo parametro, vedere la struttura [JET_INDEXCREATE](./jet-indexcreate-structure.md) .
+Per altre informazioni su questo parametro, vedere la [JET_INDEXCREATE](./jet-indexcreate-structure.md) struttura .
 
 *cbKey*
 
-Lunghezza, in byte, del parametro *szKey* , inclusi i due caratteri null di terminazione.
+Lunghezza, in byte, del *parametro szKey,* inclusi i due caratteri Null di terminazione.
 
 *lDensity*
 
-Densità percentuale dell'albero iniziale B + dell'indice.
+Densità percentuale dell'albero B+ dell'indice iniziale.
 
-Per ulteriori informazioni su questo parametro, vedere la struttura [JET_INDEXCREATE](./jet-indexcreate-structure.md) .
+Per altre informazioni su questo parametro, vedere la [JET_INDEXCREATE](./jet-indexcreate-structure.md) struttura .
 
 ### <a name="return-value"></a>Valore restituito
 
-Questa funzione restituisce il tipo di dati [JET_ERR](./jet-err.md) con uno dei codici restituiti elencati nella tabella seguente. Per ulteriori informazioni sugli errori ESE possibili, vedere la pagina relativa agli errori e ai [parametri di gestione degli](./error-handling-parameters.md)errori del [motore di archiviazione estensibile](./extensible-storage-engine-errors.md) .
-
-<table>
-<colgroup>
-<col style="width: 50%" />
-<col style="width: 50%" />
-</colgroup>
-<thead>
-<tr class="header">
-<th><p>Codice restituito</p></th>
-<th><p>Significato</p></th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td><p>JET_errSuccess</p></td>
-<td><p>Operazione riuscita.</p></td>
-</tr>
-</tbody>
-</table>
+Questa funzione restituisce il [JET_ERR](./jet-err.md) dati con uno dei codici restituiti elencati nella tabella seguente. Per altre informazioni sui possibili errori ESE, vedere [Extensible Archiviazione Engine Errors](./extensible-storage-engine-errors.md) and [Error Handling Parameters](./error-handling-parameters.md).
 
 
-Per un elenco di altri errori che possono essere restituiti dalla funzione **JetCreateIndex** , vedere [JetCreateIndex2](./jetcreateindex2-function.md).
+| <p>Codice restituito</p> | <p>Significato</p> | 
+|--------------------|----------------|
+| <p>JET_errSuccess</p> | <p>Operazione riuscita.</p> | 
+
+
+
+Per un elenco di errori aggiuntivi che possono essere restituiti dalla **funzione JetCreateIndex,** vedere [JetCreateIndex2.](./jetcreateindex2-function.md)
 
 #### <a name="remarks"></a>Commenti
 
-La chiamata alla funzione **JetCreateIndex** è identica alla chiamata della funzione [JetCreateIndex2](./jetcreateindex2-function.md) con una struttura [JET_INDEXCREATE](./jet-indexcreate-structure.md) contenente le stesse impostazioni dei parametri di **JetCreateIndex** e un parametro *cIndexCreate* uguale a 1. Per i campi della struttura [JET_INDEXCREATE](./jet-indexcreate-structure.md) che non dispongono di parametri corrispondenti in **JetCreateIndex**, viene utilizzato un valore pari a 0.
+La chiamata della funzione **JetCreateIndex** è identica alla chiamata della funzione [JetCreateIndex2](./jetcreateindex2-function.md) con una struttura [JET_INDEXCREATE](./jet-indexcreate-structure.md) contenente le stesse impostazioni dei parametri di **JetCreateIndex** e un parametro *cIndexCreate* uguale a 1. Per i campi della [JET_INDEXCREATE](./jet-indexcreate-structure.md) che non hanno parametri corrispondenti in **JetCreateIndex**, viene utilizzato il valore 0.
 
-Si noti che **JetCreateIndex** è stato sostituito da [JetCreateIndex2](./jetcreateindex2-function.md).
+Si noti **che JetCreateIndex** è stato sostituito da [JetCreateIndex2.](./jetcreateindex2-function.md)
 
 #### <a name="requirements"></a>Requisiti
 
-<table>
-<colgroup>
-<col style="width: 50%" />
-<col style="width: 50%" />
-</colgroup>
-<tbody>
-<tr class="odd">
-<td><p>Client</p></td>
-<td><p>Richiede Windows Vista, Windows XP o Windows 2000 Professional.</p></td>
-</tr>
-<tr class="even">
-<td><p>Server</p></td>
-<td><p>Richiede Windows Server 2008, Windows Server 2003 o Windows 2000 Server.</p></td>
-</tr>
-<tr class="odd">
-<td><p>Intestazione</p></td>
-<td><p>Viene dichiarata in esent. h.</p></td>
-</tr>
-<tr class="even">
-<td><p>Libreria</p></td>
-<td><p>USA ESENT. lib.</p></td>
-</tr>
-<tr class="odd">
-<td><p>DLL</p></td>
-<td><p>Richiede ESENT.dll.</p></td>
-</tr>
-<tr class="even">
-<td><p>Unicode</p></td>
-<td><p>Viene implementato come <strong>JetCreateIndexW</strong> (Unicode) e <strong>JetCreateIndexA</strong> (ANSI).</p></td>
-</tr>
-</tbody>
-</table>
+
+| | | <p>Client</p> | <p>Richiede Windows Vista, Windows XP o Windows 2000 Professional.</p> | | <p>Server</p> | <p>Richiede Windows Server 2008, Windows Server 2003 o Windows 2000 Server.</p> | | <p>Intestazione</p> | <p>Viene dichiarato in Esent.h.</p> | | <p>Libreria</p> | <p>Usa ESENT.lib.</p> | | <p>DLL</p> | <p>Richiede ESENT.dll.</p> | | <p>Unicode</p> | <p>Viene implementato come <strong>JetCreateIndexW</strong> (Unicode) e <strong>JetCreateIndexA</strong> (ANSI).</p> | 
+
 
 
 #### <a name="see-also"></a>Vedere anche

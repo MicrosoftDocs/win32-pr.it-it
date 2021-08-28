@@ -1,5 +1,5 @@
 ---
-description: 'Altre informazioni su: funzione JetGetRecordPosition'
+description: Altre informazioni sulla funzione JetGetRecordPosition
 title: Funzione JetGetRecordPosition
 TOCTitle: JetGetRecordPosition Function
 ms:assetid: 811d9e68-0594-4f70-b854-c3ec966b2705
@@ -18,12 +18,12 @@ api_type:
 api_location:
 - ESENT.DLL
 ROBOTS: INDEX,FOLLOW
-ms.openlocfilehash: d4301b25ca111228b742ce7b35ab9ae28e170526
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: bd1e84b995485afd46119b78289c1cac23e19215
+ms.sourcegitcommit: 4665ebce0c106bdb52eef36e544280b496b6f50b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "104050112"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "122982434"
 ---
 # <a name="jetgetrecordposition-function"></a>Funzione JetGetRecordPosition
 
@@ -32,7 +32,7 @@ _**Si applica a:** Windows | Windows Server_
 
 ## <a name="jetgetrecordposition-function"></a>Funzione JetGetRecordPosition
 
-La funzione **JetGetRecordPosition** restituisce la posizione frazionaria del record corrente nell'indice corrente sotto forma di struttura [JET_RECPOS](./jet-recpos-structure.md) . Questa struttura descrive le posizioni frazionarie in termini di numero approssimativo di voci di indice prima del record corrente e di un numero totale approssimativo di voci nell'indice.
+La **funzione JetGetRecordPosition** restituisce la posizione frazionaria del record corrente nell'indice corrente sotto forma di JET_RECPOS [struttura.](./jet-recpos-structure.md) Questa struttura descrive le posizioni frazionarie in termini di un numero approssimativo di voci di indice prima del record corrente e di un numero totale approssimativo di voci nell'indice.
 
 ```cpp
     JET_ERR JET_API JetGetRecordPosition(
@@ -49,116 +49,58 @@ La funzione **JetGetRecordPosition** restituisce la posizione frazionaria del re
 
 Sessione da utilizzare per questa chiamata.
 
-*TableID*
+*tableid*
 
 Cursore da utilizzare per questa chiamata.
 
 *precpos*
 
-Descrizione della frazione da usare per ottenere la posizione del record corrente nell'indice corrente.
+Descrizione della frazione da utilizzare per ottenere la posizione del record corrente nell'indice corrente.
 
 *cbRecpos*
 
-Dimensione della memoria allocata in *precpos*.
+Dimensione della memoria allocata *in corrispondenza di precpos*.
 
 ### <a name="return-value"></a>Valore restituito
 
-Questa funzione restituisce il tipo di dati [JET_ERR](./jet-err.md) con uno dei seguenti codici restituiti. Per ulteriori informazioni sugli errori ESE possibili, vedere la pagina relativa agli errori e ai [parametri di gestione degli](./error-handling-parameters.md)errori del [motore di archiviazione estensibile](./extensible-storage-engine-errors.md) .
-
-<table>
-<colgroup>
-<col style="width: 50%" />
-<col style="width: 50%" />
-</colgroup>
-<thead>
-<tr class="header">
-<th><p>Codice restituito</p></th>
-<th><p>Descrizione</p></th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td><p>JET_errSuccess</p></td>
-<td><p>Operazione riuscita.</p></td>
-</tr>
-<tr class="even">
-<td><p>JET_errNotInitialized</p></td>
-<td><p>Non è possibile completare l'operazione perché l'istanza associata alla sessione non è ancora stata inizializzata.</p></td>
-</tr>
-<tr class="odd">
-<td><p>JET_errClientRequestToStopJetService</p></td>
-<td><p>Non è possibile completare l'operazione perché tutte le attività nell'istanza associata alla sessione sono state interrotte in seguito a una chiamata a <a href="gg269240(v=exchg.10).md">JetStopService</a>.</p></td>
-</tr>
-<tr class="even">
-<td><p>JET_errInstanceUnavailable</p></td>
-<td><p>Questa operazione non può essere completata perché l'istanza di associata alla sessione ha rilevato un errore irreversibile. È necessario che l'accesso a tutti i dati venga revocato per garantire la protezione dell'integrità dei dati.</p>
-<p><strong>Windows 2000:</strong>  Questo errore non verrà restituito dal sistema operativo Windows 2000.</p></td>
-</tr>
-<tr class="odd">
-<td><p>JET_errInvalidParameter</p></td>
-<td><p>Le dimensioni della memoria allocata in <em>precpos</em> non sono sufficienti.</p></td>
-</tr>
-<tr class="even">
-<td><p>JET_errNoCurrentRecord</p></td>
-<td><p>Il cursore non si trova attualmente in un record e non può restituire una posizione.</p></td>
-</tr>
-<tr class="odd">
-<td><p>JET_errRestoreInProgress</p></td>
-<td><p>Non è possibile completare l'operazione perché è in corso un'operazione di ripristino sull'istanza associata alla sessione.</p></td>
-</tr>
-<tr class="even">
-<td><p>JET_errSessionSharingViolation</p></td>
-<td><p>Non è possibile usare la stessa sessione per più di un thread nello stesso momento.</p>
-<p><strong>Windows 2000:</strong>  Questo errore non verrà restituito dal sistema operativo Windows 2000.</p></td>
-</tr>
-<tr class="odd">
-<td><p>JET_errTermInProgress</p></td>
-<td><p>Non è possibile completare l'operazione perché è in corso l'arresto dell'istanza associata alla sessione.</p></td>
-</tr>
-</tbody>
-</table>
+Questa funzione restituisce il [JET_ERR](./jet-err.md) dati con uno dei codici restituiti seguenti. Per altre informazioni sui possibili errori ESE, vedere Errori del [motore di Archiviazione](./extensible-storage-engine-errors.md) estendibile e Parametri di gestione degli [errori](./error-handling-parameters.md).
 
 
-In seguito all'esito positivo, il numero approssimativo di voci di indice che precede il record corrente nell'indice viene restituito in precpos- \> centriesLT. 1 viene restituito in precpos- \> centriesInRange. Il numero approssimativo di voci nell'indice viene restituito in precpos- \> centriesTotal.
+| <p>Codice restituito</p> | <p>Descrizione</p> | 
+|--------------------|--------------------|
+| <p>JET_errSuccess</p> | <p>Operazione riuscita.</p> | 
+| <p>JET_errNotInitialized</p> | <p>Non è possibile completare l'operazione perché l'istanza associata alla sessione non è stata ancora inizializzata.</p> | 
+| <p>JET_errClientRequestToStopJetService</p> | <p>Impossibile completare l'operazione perché tutte le attività nell'istanza associata alla sessione sono cesse a causa di una chiamata a <a href="gg269240(v=exchg.10).md">JetStopService.</a></p> | 
+| <p>JET_errInstanceUnavailable</p> | <p>Impossibile completare l'operazione perché l'istanza, associata alla sessione, ha rilevato un errore irreversibile. È necessario revocare l'accesso a tutti i dati per proteggere l'integrità di questi dati.</p><p><strong>Windows 2000:</strong>  Questo errore non verrà restituito dal sistema operativo Windows 2000.</p> | 
+| <p>JET_errInvalidParameter</p> | <p>Le dimensioni della memoria allocata <em>in precpos</em> non sono sufficienti.</p> | 
+| <p>JET_errNoCurrentRecord</p> | <p>Il cursore non è attualmente in un record e non può restituire una posizione.</p> | 
+| <p>JET_errRestoreInProgress</p> | <p>Non è possibile completare l'operazione perché è in corso un'operazione di ripristino nell'istanza associata alla sessione.</p> | 
+| <p>JET_errSessionSharingViolation</p> | <p>La stessa sessione non può essere usata per più thread contemporaneamente.</p><p><strong>Windows 2000:</strong>  Questo errore non verrà restituito dal sistema operativo Windows 2000.</p> | 
+| <p>JET_errTermInProgress</p> | <p>Impossibile completare l'operazione perché è in corso l'arresto dell'istanza associata alla sessione.</p> | 
 
-In caso di errore, non viene apportata alcuna modifica alla memoria allocata in *precpos*.
+
+
+In caso di esito positivo, il numero approssimativo di voci di indice che precedono il record corrente nell'indice viene restituito in precpos- \> centriesLT. 1 viene restituito in precpos- \> centriesInRange. Il numero approssimativo di voci nell'indice viene restituito in precpos- \> centriesTotal.
+
+In caso di errore, non vengono apportate modifiche alla memoria allocata *in precpos*.
 
 #### <a name="remarks"></a>Commenti
 
-Questa operazione restituisce dati variabili quando gli aggiornamenti vengono eseguiti continuamente nella tabella. Le modifiche apportate ai valori non corrisponderanno sempre alle aspettative basate sulla conoscenza degli aggiornamenti, poiché i valori sono approssimazioni basate sulle proprietà fisiche dell'indice. L'isolamento transazionale non si applica alle posizioni da **JetGetRecordPosition** poiché i valori dipendono da proprietà fisiche dell'indice che non sono isolate dalla transazione.
+Questa operazione restituisce dati variabili quando gli aggiornamenti vengono eseguiti in modo continuo nella tabella. Le modifiche nei valori non corrisponderanno sempre alle aspettative in base alla conoscenza degli aggiornamenti, poiché i valori sono approssimazioni basate sulle proprietà fisiche dell'indice. L'isolamento transazionale non si applica alle posizioni **da JetGetRecordPosition** perché i valori dipendono dalle proprietà fisiche dell'indice che non sono isolate dalla transazione.
 
-[JET_RECPOS](./jet-recpos-structure.md) non deve essere usato per descrivere un record all'interno di una tabella o per riposizionare un record vicino a un record esistente. Al contrario, è necessario recuperare i segnalibri per un record esistente e quindi utilizzarli per riposizionare lo stesso record.
+[JET_RECPOS](./jet-recpos-structure.md) deve essere usato per descrivere un record all'interno di una tabella o per riposizionare un record vicino a un record esistente. I segnalibri per un record esistente devono invece essere recuperati e quindi usati per riposizionare lo stesso record.
 
 #### <a name="requirements"></a>Requisiti
 
-<table>
-<colgroup>
-<col style="width: 50%" />
-<col style="width: 50%" />
-</colgroup>
-<tbody>
-<tr class="odd">
-<td><p><strong>Client</strong></p></td>
-<td><p>Richiede Windows Vista, Windows XP o Windows 2000 Professional.</p></td>
-</tr>
-<tr class="even">
-<td><p><strong>Server</strong></p></td>
-<td><p>Richiede Windows Server 2008, Windows Server 2003 o Windows 2000 Server.</p></td>
-</tr>
-<tr class="odd">
-<td><p><strong>Intestazione</strong></p></td>
-<td><p>Dichiarata in esent. h.</p></td>
-</tr>
-<tr class="even">
-<td><p><strong>Libreria</strong></p></td>
-<td><p>Usare ESENT. lib.</p></td>
-</tr>
-<tr class="odd">
-<td><p><strong>DLL</strong></p></td>
-<td><p>Richiede ESENT.dll.</p></td>
-</tr>
-</tbody>
-</table>
+
+| Requisito | Valore |
+|------------|----------|
+| <p><strong>Client</strong></p> | <p>Richiede Windows Vista, Windows XP o Windows 2000 Professional.</p> | 
+| <p><strong>Server</strong></p> | <p>Richiede Windows Server 2008, Windows Server 2003 o Windows 2000 Server.</p> | 
+| <p><strong>Intestazione</strong></p> | <p>Dichiarato in Esent.h.</p> | 
+| <p><strong>Libreria</strong></p> | <p>Usare ESENT.lib.</p> | 
+| <p><strong>DLL</strong></p> | <p>Richiede ESENT.dll.</p> | 
+
 
 
 #### <a name="see-also"></a>Vedere anche

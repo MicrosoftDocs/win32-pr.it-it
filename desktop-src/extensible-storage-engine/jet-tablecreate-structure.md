@@ -1,5 +1,5 @@
 ---
-description: 'Altre informazioni su: struttura JET_TABLECREATE'
+description: 'Altre informazioni su: JET_TABLECREATE Structure'
 title: Struttura JET_TABLECREATE
 TOCTitle: JET_TABLECREATE Structure
 ms:assetid: ff06325c-d61e-4239-b2d4-868f557f5f76
@@ -15,12 +15,12 @@ api_type:
 - COM
 api_location: ''
 ROBOTS: INDEX,FOLLOW
-ms.openlocfilehash: f96b73daaf446023a7fe3a5729dcb1c90b5f14e0
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 92695b9600ef18e716fa02cf58157c3c4781988e
+ms.sourcegitcommit: 9b5faa61c38b2d0c432b7f2dbee8c127b0e28a7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104128183"
+ms.lasthandoff: 08/19/2021
+ms.locfileid: "122468358"
 ---
 # <a name="jet_tablecreate-structure"></a>Struttura JET_TABLECREATE
 
@@ -29,7 +29,7 @@ _**Si applica a:** Windows | Windows Server_
 
 ## <a name="jet_tablecreate-structure"></a>Struttura JET_TABLECREATE
 
-La struttura **JET_TABLECREATE** contiene le informazioni necessarie per creare una tabella popolata con colonne e indici in un database ESE. La struttura **JET_TABLECREATE** viene utilizzata da [JetCreateTableColumnIndex](./jetcreatetablecolumnindex-function.md)
+La **JET_TABLECREATE** contiene le informazioni necessarie per creare una tabella popolata con colonne e indici in un database ESE. La **JET_TABLECREATE** viene usata da [JetCreateTableColumnIndex](./jetcreatetablecolumnindex-function.md)
 
 ```cpp
     typedef struct tagJET_TABLECREATE {
@@ -52,19 +52,19 @@ La struttura **JET_TABLECREATE** contiene le informazioni necessarie per creare 
 
 **cbStruct**
 
-Dimensioni in byte della struttura (per l'espansione futura). Deve essere impostato su sizeof (JET_TABLECREATE) in byte.
+Dimensioni di questa struttura in byte (per l'espansione futura). Deve essere impostato su sizeof( JET_TABLECREATE ) in byte.
 
 **szTableName**
 
 Nome della tabella da creare.
 
-Il nome deve essere utilizzato per soddisfare le condizioni seguenti:
+Il nome deve soddisfare le condizioni seguenti:
 
-  - Hanno un valore minore di JET_cbNameMost, escluso il valore NULL di terminazione.
+  - Avere un valore minore di JET_cbNameMost, senza includere il valore NULL di terminazione.
 
 <!-- end list -->
 
-  - Sono costituiti dal set di caratteri seguente: da 0 a 9, da A A Z, da a a z e da tutti gli altri segni di punteggiatura, ad eccezione di punto esclamativo ( \! ), virgola (,), parentesi quadra aperta ( \[ ) e parentesi quadra chiusa ( \] ), ovvero caratteri ASCII 0x20, 0x22 tramite 0x2D, 0x2F tramite 0x5A, 0x5c e 0x5D tramite 0x7F.
+  - Sono costituiti dal set di caratteri seguente: da 0 a 9, da A a Z, da a a z e da tutti gli altri segni di punteggiatura ad eccezione del punto esclamativo ( ), della virgola (,), della parentesi di apertura ( ) e della parentesi di chiusura ( ), ovvero i caratteri ASCII 0x20, da 0x22 a 0x2d, 0x2f fino a 0x5a, 0x5c e 0x5d attraverso \! \[ \] 0x7f.
 
 <!-- end list -->
 
@@ -72,23 +72,23 @@ Il nome deve essere utilizzato per soddisfare le condizioni seguenti:
 
 <!-- end list -->
 
-  - Sono costituiti da almeno un carattere diverso dallo spazio.
+  - È costituito da almeno un carattere non spazio.
 
 **szTemplateTableName**
 
-Nome di una tabella già esistente da cui ereditare DDL di base (Data Definition Language). L'utilizzo di una tabella modello consente la creazione semplificata di molte tabelle con colonne e indici identici.
+Nome di una tabella già esistente da cui ereditare il linguaggio DDL di base (Data Definition Language). L'uso di una tabella modello consente di creare facilmente molte tabelle con colonne e indici identici.
 
 **ulPages**
 
-Numero iniziale di pagine del database da allocare per la tabella. La specifica di un numero maggiore di uno può ridurre la frammentazione se nella tabella vengono inserite molte righe.
+Numero iniziale di pagine di database da allocare per la tabella. Se si specifica un numero maggiore di uno, è possibile ridurre la frammentazione se in questa tabella vengono inserite molte righe.
 
 **ulDensity**
 
-Densità della tabella, in punti percentuali. Il numero deve essere 0 o compreso tra 20 e 100. Il valore 0 indica che deve essere utilizzato il valore predefinito. Il valore predefinito è 80.
+Densità della tabella, in punti percentuali. Il numero deve essere 0 o compreso nell'intervallo compreso tra 20 e 100. Il passaggio di 0 indica che deve essere usato il valore predefinito. Il valore predefinito è 80.
 
 **rgcolumncreate**
 
-Matrice di strutture di [JET_COLUMNCREATE](./jet-columncreate-structure.md) , ciascuna delle quali corrisponde a una colonna da creare nella nuova tabella.
+Matrice di [JET_COLUMNCREATE,](./jet-columncreate-structure.md) ognuna delle quali corrisponde a una colonna da creare nella nuova tabella.
 
 **cColumns**
 
@@ -96,7 +96,7 @@ Numero di elementi [JET_COLUMNCREATE](./jet-columncreate-structure.md) in **rgco
 
 **rgindexcreate**
 
-Matrice di strutture di [JET_INDEXCREATE](./jet-indexcreate-structure.md) , ciascuna delle quali corrisponde a un indice da creare nella nuova tabella.
+Matrice di [JET_INDEXCREATE,](./jet-indexcreate-structure.md) ognuna delle quali corrisponde a un indice da creare nella nuova tabella.
 
 **cIndexes**
 
@@ -104,72 +104,32 @@ Numero di elementi [JET_INDEXCREATE](./jet-indexcreate-structure.md) in **rginde
 
 **grbit**
 
-Gruppo di bit che contiene le opzioni per la chiamata, che includono zero o più dei valori seguenti.
-
-<table>
-<colgroup>
-<col style="width: 50%" />
-<col style="width: 50%" />
-</colgroup>
-<thead>
-<tr class="header">
-<th><p>Valore</p></th>
-<th><p>Significato</p></th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td><p>JET_bitTableCreateFixedDDL</p></td>
-<td><p>L'impostazione di JET_bitTableCreateFixedDDL impedisce operazioni DDL nella tabella, ad esempio l'aggiunta o la rimozione di colonne.</p></td>
-</tr>
-<tr class="even">
-<td><p>JET_bitTableCreateTemplateTable</p></td>
-<td><p>Impostando JET_bitTableCreateTemplateTable la tabella è una tabella modello. Le nuove tabelle possono quindi specificare il nome della tabella come tabella del modello. L'impostazione JET_bitTableCreateTemplateTable implica JET_bitTableCreateFixedDDL.</p></td>
-</tr>
-<tr class="odd">
-<td><p>JET_bitTableCreateNoFixedVarColumnsInDerivedTables</p></td>
-<td><p>Deprecato. Non usare.</p></td>
-</tr>
-</tbody>
-</table>
+Gruppo di bit che contengono le opzioni per questa chiamata, che includono zero o più dei valori seguenti.
 
 
-**TableID**
+| <p>valore</p> | <p>Significato</p> | 
+|--------------|----------------|
+| <p>JET_bitTableCreateFixedDDL</p> | <p>L'JET_bitTableCreateFixedDDL impedisce le operazioni DDL sulla tabella, ad esempio l'aggiunta o la rimozione di colonne.</p> | 
+| <p>JET_bitTableCreateTemplateTable</p> | <p>L'JET_bitTableCreateTemplateTable fa sì che la tabella sia una tabella modello. Le nuove tabelle possono quindi specificare il nome di questa tabella come tabella modello. L'impostazione JET_bitTableCreateTemplateTable implica JET_bitTableCreateFixedDDL.</p> | 
+| <p>JET_bitTableCreateNoFixedVarColumnsInDerivedTables</p> | <p>Deprecato. Non usare.</p> | 
 
-Un campo di output che include il [JET_TABLEID](./jet-tableid.md) della nuova tabella se la chiamata API ha esito positivo. Se la chiamata API ha esito negativo, il valore non è definito.
 
-**Creata**
 
-Un campo di output che contiene il numero di oggetti creati se la chiamata API ha esito positivo. Se la chiamata API ha esito negativo, il valore non è definito.
+**tableid**
+
+Campo di output che contiene il [JET_TABLEID](./jet-tableid.md) della nuova tabella se la chiamata API ha esito positivo. Se la chiamata API ha esito negativo, il valore non è definito.
+
+**cCreated**
+
+Campo di output che contiene il numero di oggetti creati se la chiamata API ha esito positivo. Se la chiamata API ha esito negativo, il valore non è definito.
 
 Il numero di oggetti creati è uguale alla somma di colonne, tabelle e indici creati correttamente.
 
 ### <a name="requirements"></a>Requisiti
 
-<table>
-<colgroup>
-<col style="width: 50%" />
-<col style="width: 50%" />
-</colgroup>
-<tbody>
-<tr class="odd">
-<td><p><strong>Client</strong></p></td>
-<td><p>Richiede Windows Vista, Windows XP o Windows 2000 Professional.</p></td>
-</tr>
-<tr class="even">
-<td><p><strong>Server</strong></p></td>
-<td><p>Richiede Windows Server 2008, Windows Server 2003 o Windows 2000 Server.</p></td>
-</tr>
-<tr class="odd">
-<td><p><strong>Intestazione</strong></p></td>
-<td><p>Dichiarata in esent. h.</p></td>
-</tr>
-<tr class="even">
-<td><p><strong>Unicode</strong></p></td>
-<td><p>Implementato come <strong>JET_TABLECREATE_W</strong> (Unicode) e <strong>JET_TABLECREATE_A</strong> (ANSI).</p></td>
-</tr>
-</tbody>
-</table>
+
+| | | <p><strong>Client</strong></p> | <p>Richiede Windows Vista, Windows XP o Windows 2000 Professional.</p> | | <p><strong>Server</strong></p> | <p>Richiede Windows Server 2008, Windows Server 2003 o Windows 2000 Server.</p> | | <p><strong>Intestazione</strong></p> | <p>Dichiarato in Esent.h.</p> | | <p><strong>Unicode</strong></p> | <p>Implementato come <strong>JET_TABLECREATE_W</strong> (Unicode) <strong>e JET_TABLECREATE_A</strong> (ANSI).</p> | 
+
 
 
 ### <a name="see-also"></a>Vedere anche

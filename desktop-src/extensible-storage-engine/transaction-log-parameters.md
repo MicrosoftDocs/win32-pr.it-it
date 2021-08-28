@@ -1,5 +1,5 @@
 ---
-description: 'Altre informazioni su: Parametri del log delle transazioni'
+description: 'Altre informazioni: Parametri del log delle transazioni'
 title: Parametri del log delle transazioni
 TOCTitle: Transaction Log Parameters
 ms:assetid: 41ade693-2bae-4c84-9339-a68a1b7c23e6
@@ -15,12 +15,12 @@ api_type:
 - COM
 api_location: ''
 ROBOTS: INDEX,FOLLOW
-ms.openlocfilehash: 24c8665b42aad5c94db18e3a30a2b5ea09974627
-ms.sourcegitcommit: 9b5faa61c38b2d0c432b7f2dbee8c127b0e28a7e
+ms.openlocfilehash: 1d8f3ed19d01eece0b22e22b4a2a16d8d985751a
+ms.sourcegitcommit: 4665ebce0c106bdb52eef36e544280b496b6f50b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/19/2021
-ms.locfileid: "122465078"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "122982179"
 ---
 # <a name="transaction-log-parameters"></a>Parametri del log delle transazioni
 
@@ -34,29 +34,53 @@ Vedere anche
 
 ## <a name="transaction-log-parameters"></a>Parametri del log delle transazioni
 
-Questo argomento contiene i parametri usati per i log delle transazioni.
+In questo argomento sono contenuti i parametri utilizzati per i log delle transazioni.
 
 *JET_paramBaseName*  
 3  
 
-Questo parametro imposta il prefisso di tre lettere usato per molti dei file usati dal motore di database. Ad esempio, il file del checkpoint è denominato EDB. CHK per impostazione predefinita perché EDB è il nome di base predefinito. Il nome di base può essere usato per distinguere facilmente tra set di file che appartengono a istanze diverse o ad applicazioni diverse.
+Questo parametro imposta il prefisso di tre lettere usato per molti dei file usati dal motore di database. Ad esempio, il file del checkpoint è denominato EDB. ChK per impostazione predefinita perché EDB è il nome di base predefinito. Il nome di base può essere usato per distinguere facilmente tra set di file appartenenti a istanze diverse o ad applicazioni diverse.
 
 
-| | | <p>Valore predefinito:</p> | <p>"edb"</p> | | <p>Digitare:</p> | <p>string</p> | | <p>Intervallo valido:</p> | <p>3 caratteri</p> | | <p>Ambito:</p> | <p>Istanza</p> | | <p>Imposta dopo <a href="gg269354(v=exchg.10).md">JetCreateInstance</a>:</p> | <p>Sì</p> | | <p>Impostare dopo <a href="gg294068(v=exchg.10).md">JetInit</a>:</p> | <p>No</p> | | <p>Influisce sul layout fisico:</p> | <p>Sì</p> | | <p>Influisce sull'affidabilità:</p> | <p>No</p> | | <p>Influisce sulle prestazioni:</p> | <p>No</p> | | <p>Influisce sulle risorse:</p> | <p>No</p> | | <p>Disponibilità:</p> | <p>Tutti</p> | 
+| Etichetta | Valore |
+|--------|-------|
+| <p>Valore predefinito:</p> | <p>"edb"</p> | 
+| <p>Digitare:</p> | <p>Stringa</p> | 
+| <p>Intervallo valido:</p> | <p>3 caratteri</p> | 
+| <p>Ambito:</p> | <p>Istanza</p> | 
+| <p>Imposta dopo <a href="gg269354(v=exchg.10).md">JetCreateInstance:</a></p> | <p>Sì</p> | 
+| <p>Impostato dopo <a href="gg294068(v=exchg.10).md">JetInit:</a></p> | <p>No</p> | 
+| <p>Influisce sul layout fisico:</p> | <p>Sì</p> | 
+| <p>Influisce sull'affidabilità:</p> | <p>No</p> | 
+| <p>Influisce sulle prestazioni:</p> | <p>No</p> | 
+| <p>Influisce sulle risorse:</p> | <p>No</p> | 
+| <p>Disponibilità:</p> | <p>Tutti</p> | 
 
 
 
 *JET_paramCircularLog*  
 17  
 
-Questo parametro configura la modalità di gestione dei file di log delle transazioni dal motore di database.
+Questo parametro consente di configurare la modalità di gestione dei file di log delle transazioni da parte del motore di database.
 
-Quando la registrazione circolare è disattivata, tutti i file di log delle transazioni generati vengono mantenuti su disco fino a quando non sono più necessari perché è stato eseguito un backup completo del database. In questa modalità è possibile eseguire il ripristino da un backup meno recente e riprodurre in avanti tutti i file di log delle transazioni conservati in modo che nessun dato anda persa a causa dell'emergenza che ha forzato il ripristino. Per evitare che il disco riempia i file di log delle transazioni, sono necessari backup completi regolari.
+Quando la registrazione circolare è disattivata, tutti i file di log delle transazioni generati vengono mantenuti su disco fino a quando non sono più necessari perché è stato eseguito un backup completo del database. In questa modalità è possibile eseguire il ripristino da un backup precedente e riprodurre in avanti tutti i file di log delle transazioni conservati in modo che non si persa alcuna perdita di dati a causa dell'emergenza che ha forzato il ripristino. Sono necessari backup completi regolari per evitare che il disco si riempia di file di log delle transazioni.
 
-Quando la registrazione circolare è attivata, vengono conservati su disco solo i file di log delle transazioni più piccoli rispetto al checkpoint corrente. Il vantaggio di questa modalità è che i backup non sono necessari per ritirare i file di log delle transazioni meno recente. Il compromesso è che un ripristino senza perdita di dati non è più possibile.
+Quando la registrazione circolare è attivata, solo i file di log delle transazioni più piccoli rispetto al checkpoint corrente vengono mantenuti su disco. Il vantaggio di questa modalità è che i backup non sono necessari per ritirare i file di log delle transazioni meno recente. Il compromesso è che un ripristino senza perdita di dati non è più possibile.
 
 
-| | | <p>Valore predefinito:</p> | <p>Falso</p> | | <p>Digitare:</p> | <p>Boolean</p> | | <p>Intervallo valido:</p> | <p>False, True</p> | | <p>Ambito:</p> | <p>Istanza</p> | | <p>Imposta dopo <a href="gg269354(v=exchg.10).md">JetCreateInstance</a>:</p> | <p>Sì</p> | | <p>Impostare dopo <a href="gg294068(v=exchg.10).md">JetInit</a>:</p> | <p>No</p> | | <p>Influisce sul layout fisico:</p> | <p>Sì</p> | | <p>Influisce sull'affidabilità:</p> | <p>Sì</p> | | <p>Influisce sulle prestazioni:</p> | <p>No</p> | | <p>Influisce sulle risorse:</p> | <p>Sì</p> | | <p>Disponibilità:</p> | <p>Tutti</p> | 
+| Etichetta | Valore |
+|--------|-------|
+| <p>Valore predefinito:</p> | <p>Falso</p> | 
+| <p>Digitare:</p> | <p>Boolean</p> | 
+| <p>Intervallo valido:</p> | <p>False, True</p> | 
+| <p>Ambito:</p> | <p>Istanza</p> | 
+| <p>Imposta dopo <a href="gg269354(v=exchg.10).md">JetCreateInstance:</a></p> | <p>Sì</p> | 
+| <p>Impostato dopo <a href="gg294068(v=exchg.10).md">JetInit:</a></p> | <p>No</p> | 
+| <p>Influisce sul layout fisico:</p> | <p>Sì</p> | 
+| <p>Influisce sull'affidabilità:</p> | <p>Sì</p> | 
+| <p>Influisce sulle prestazioni:</p> | <p>No</p> | 
+| <p>Influisce sulle risorse:</p> | <p>Sì</p> | 
+| <p>Disponibilità:</p> | <p>Tutti</p> | 
 
 
 
@@ -68,7 +92,19 @@ Questo parametro controlla l'azione predefinita eseguita quando viene eseguito i
 Questo parametro influisce sull'affidabilità e sulle prestazioni delle transazioni. Per altri [dettagli, vedere JetCommitTransaction.](./jetcommittransaction-function.md)
 
 
-| | | <p>Valore predefinito:</p> | <p>0</p> | | <p>Digitare:</p> | <p>JET_GRBIT (integer)</p> | | <p>Intervallo valido:</p> | <p>Opzione valida per JetCommitTransaction</p> | | <p>Ambito:</p> | <p>Istanza o sessione</p> | | <p>Imposta dopo <a href="gg269354(v=exchg.10).md">JetCreateInstance</a>:</p> | <p>Sì</p> | | <p>Impostare dopo <a href="gg294068(v=exchg.10).md">JetInit</a>:</p> | <p>Sì</p> | | <p>Influisce sul layout fisico:</p> | <p>No</p> | | <p>Influisce sull'affidabilità:</p> | <p>Sì</p> | | <p>Influisce sulle prestazioni:</p> | <p>Sì</p> | | <p>Influisce sulle risorse:</p> | <p>No</p> | | <p>Disponibilità:</p> | <p>Tutti</p> | 
+| Etichetta | Valore |
+|--------|-------|
+| <p>Valore predefinito:</p> | <p>0</p> | 
+| <p>Digitare:</p> | <p>JET_GRBIT (integer)</p> | 
+| <p>Intervallo valido:</p> | <p>Opzione valida per JetCommitTransaction</p> | 
+| <p>Ambito:</p> | <p>Istanza o sessione</p> | 
+| <p>Imposta dopo <a href="gg269354(v=exchg.10).md">JetCreateInstance:</a></p> | <p>Sì</p> | 
+| <p>Impostato dopo <a href="gg294068(v=exchg.10).md">JetInit:</a></p> | <p>Sì</p> | 
+| <p>Influisce sul layout fisico:</p> | <p>No</p> | 
+| <p>Influisce sull'affidabilità:</p> | <p>Sì</p> | 
+| <p>Influisce sulle prestazioni:</p> | <p>Sì</p> | 
+| <p>Influisce sulle risorse:</p> | <p>No</p> | 
+| <p>Disponibilità:</p> | <p>Tutti</p> | 
 
 
 
@@ -80,7 +116,19 @@ Quando questo parametro è true e i file di log delle transazioni a cui punta il
 **Windows 2000:**  Quando si aggiorna un database da Windows NT a Windows 2000, è necessario usare questo parametro. Se il database non è in uno stato coerente e i vecchi file di log vengono eliminati, il contenuto del database andrà perso.
 
 
-| | | <p>Valore predefinito:</p> | <p><strong>Windows 2000:</strong>  False</p><p><strong>Windows XP:</strong>  Vero</p> | | <p>Digitare:</p> | <p>Boolean</p> | | <p>Intervallo valido:</p> | <p>False, True</p> | | <p>Ambito:</p> | <p>Istanza</p> | | <p>Imposta dopo <a href="gg269354(v=exchg.10).md">JetCreateInstance:</a></p> | <p>Sì</p> | | <p>Impostato dopo <a href="gg294068(v=exchg.10).md">JetInit:</a></p> | <p>No</p> | | <p>Influisce sul layout fisico:</p> | <p>Sì</p> | | <p>Influisce sull'affidabilità:</p> | <p>Sì</p> | | <p>Influisce sulle prestazioni:</p> | <p>No</p> | | <p>Influisce sulle risorse:</p> | <p>No</p> | | <p>Disponibilità:</p> | <p>Tutti</p> | 
+| Etichetta | Valore |
+|--------|-------|
+| <p>Valore predefinito:</p> | <p><strong>Windows 2000:</strong>  False</p><p><strong>Windows XP:</strong>  Vero</p> | 
+| <p>Digitare:</p> | <p>Boolean</p> | 
+| <p>Intervallo valido:</p> | <p>False, True</p> | 
+| <p>Ambito:</p> | <p>Istanza</p> | 
+| <p>Imposta dopo <a href="gg269354(v=exchg.10).md">JetCreateInstance:</a></p> | <p>Sì</p> | 
+| <p>Impostato dopo <a href="gg294068(v=exchg.10).md">JetInit:</a></p> | <p>No</p> | 
+| <p>Influisce sul layout fisico:</p> | <p>Sì</p> | 
+| <p>Influisce sull'affidabilità:</p> | <p>Sì</p> | 
+| <p>Influisce sulle prestazioni:</p> | <p>No</p> | 
+| <p>Influisce sulle risorse:</p> | <p>No</p> | 
+| <p>Disponibilità:</p> | <p>Tutti</p> | 
 
 
 
@@ -92,7 +140,19 @@ Se questo parametro è true, il motore di database non convaliderà il numero di
 **Windows XP:**  A Windows XP, questo parametro è obsoleto e non influisce sul funzionamento del motore di database.
 
 
-| | | <p>Valore predefinito:</p> | <p>Falso</p> | | <p>Digitare:</p> | <p>Boolean</p> | | <p>Intervallo valido:</p> | <p>False, True</p> | | <p>Ambito:</p> | <p>Istanza</p> | | <p>Imposta dopo <a href="gg269354(v=exchg.10).md">JetCreateInstance:</a></p> | <p>Sì</p> | | <p>Impostato dopo <a href="gg294068(v=exchg.10).md">JetInit:</a></p> | <p>No</p> | | <p>Influisce sul layout fisico:</p> | <p>No</p> | | <p>Influisce sull'affidabilità:</p> | <p>Sì</p> | | <p>Influisce sulle prestazioni:</p> | <p>No</p> | | <p>Influisce sulle risorse:</p> | <p>No</p> | | <p>Disponibilità:</p> | <p>Tutti</p> | 
+| Etichetta | Valore |
+|--------|-------|
+| <p>Valore predefinito:</p> | <p>Falso</p> | 
+| <p>Digitare:</p> | <p>Boolean</p> | 
+| <p>Intervallo valido:</p> | <p>False, True</p> | 
+| <p>Ambito:</p> | <p>Istanza</p> | 
+| <p>Imposta dopo <a href="gg269354(v=exchg.10).md">JetCreateInstance:</a></p> | <p>Sì</p> | 
+| <p>Impostato dopo <a href="gg294068(v=exchg.10).md">JetInit:</a></p> | <p>No</p> | 
+| <p>Influisce sul layout fisico:</p> | <p>No</p> | 
+| <p>Influisce sull'affidabilità:</p> | <p>Sì</p> | 
+| <p>Influisce sulle prestazioni:</p> | <p>No</p> | 
+| <p>Influisce sulle risorse:</p> | <p>No</p> | 
+| <p>Disponibilità:</p> | <p>Tutti</p> | 
 
 
 
@@ -112,7 +172,19 @@ Quando questa opzione è presente, il motore di database userà le convenzioni d
   - I file del checkpoint useranno . CHK per l'estensione di file
 
 
-| | | <p>Valore predefinito:</p> | <p>JET_bitESE98FileNames</p> | | <p>Digitare:</p> | <p>JET_GRBIT (integer)</p> | | <p>Intervallo valido:</p> | <p>0, JET_bitESE98FileNames</p> | | <p>Ambito:</p> | <p>Istanza</p> | | <p>Imposta dopo <a href="gg269354(v=exchg.10).md">JetCreateInstance:</a></p> | <p>Sì</p> | | <p>Impostato dopo <a href="gg294068(v=exchg.10).md">JetInit:</a></p> | <p>No</p> | | <p>Influisce sul layout fisico:</p> | <p>Sì</p> | | <p>Influisce sull'affidabilità:</p> | <p>No</p> | | <p>Influisce sulle prestazioni:</p> | <p>No</p> | | <p>Influisce sulle risorse:</p> | <p>No</p> | | <p>Disponibilità:</p> | <p>Windows Vista e versioni successive</p> | 
+| Etichetta | Valore |
+|--------|-------|
+| <p>Valore predefinito:</p> | <p>JET_bitESE98FileNames</p> | 
+| <p>Digitare:</p> | <p>JET_GRBIT (integer)</p> | 
+| <p>Intervallo valido:</p> | <p>0, JET_bitESE98FileNames</p> | 
+| <p>Ambito:</p> | <p>Istanza</p> | 
+| <p>Imposta dopo <a href="gg269354(v=exchg.10).md">JetCreateInstance:</a></p> | <p>Sì</p> | 
+| <p>Impostato dopo <a href="gg294068(v=exchg.10).md">JetInit:</a></p> | <p>No</p> | 
+| <p>Influisce sul layout fisico:</p> | <p>Sì</p> | 
+| <p>Influisce sull'affidabilità:</p> | <p>No</p> | 
+| <p>Influisce sulle prestazioni:</p> | <p>No</p> | 
+| <p>Influisce sulle risorse:</p> | <p>No</p> | 
+| <p>Disponibilità:</p> | <p>Windows Vista e versioni successive</p> | 
 
 
 
@@ -121,12 +193,24 @@ Quando questa opzione è presente, il motore di database userà le convenzioni d
 
 Questo parametro configurerà la quantità di memoria utilizzata per memorizzare nella cache i record del log prima che siano scritti nel file di log delle transazioni. L'unità per questo parametro è la dimensione del settore del volume che contiene i file di log delle transazioni. Le dimensioni del settore sono quasi sempre di 512 byte, pertanto è sicuro presupporre che le dimensioni per l'unità.
 
-Questo parametro influisce sulle prestazioni. Quando il motore di database è in condizioni di carico di aggiornamento elevato, questo buffer può diventare pieno molto rapidamente. Una dimensione della cache maggiore per il file di log delle transazioni è fondamentale per prestazioni di aggiornamento ottimali in condizioni di carico così elevate. Il valore predefinito è noto come troppo piccolo per questo caso.
+Questo parametro influisce sulle prestazioni. Quando il motore di database è in condizioni di carico di aggiornamento elevato, questo buffer può diventare pieno molto rapidamente. Una dimensione della cache maggiore per il file di log delle transazioni è fondamentale per prestazioni di aggiornamento ottimali in condizioni di carico così elevate. Il valore predefinito è noto per essere troppo piccolo per questo caso.
 
-**Windows XP e Windows 2000:**  In Windows XP e versioni precedenti, non è consigliabile impostare questo parametro su un numero di buffer maggiore (in byte) rispetto alla metà delle dimensioni di un file di log delle transazioni.
+**Windows XP e Windows 2000:**  In Windows XP e versioni precedenti, non è consigliabile impostare questo parametro su un numero di buffer maggiore (in byte) della metà delle dimensioni di un file di log delle transazioni.
 
 
-| | | <p>Valore predefinito:</p> | <p><strong>Windows 2000, Windows XP e Windows Server 2003:</strong> 80</p><p><strong>Windows Vista:</strong> 126</p> | | <p>Digitare:</p> | <p>Intero</p> | | <p>Intervallo valido:</p> | <p><strong>Windows 2000, Windows XP e Windows Server 2003:</strong> 80 – 2147483647</p><p><strong>Windows Vista:</strong> 1 - 2147483647</p> | | <p>Ambito:</p> | <p>Istanza</p> | | <p>Imposta dopo <a href="gg269354(v=exchg.10).md">JetCreateInstance</a>:</p> | <p>Sì</p> | | <p>Impostare dopo <a href="gg294068(v=exchg.10).md">JetInit</a>:</p> | <p>No</p> | | <p>Influisce sul layout fisico:</p> | <p>No</p> | | <p>Influisce sull'affidabilità:</p> | <p>No</p> | | <p>Influisce sulle prestazioni:</p> | <p>Sì</p> | | <p>Influisce sulle risorse:</p> | <p>Sì</p> | | <p>Disponibilità:</p> | <p>Tutti</p> | 
+| Etichetta | Valore |
+|--------|-------|
+| <p>Valore predefinito:</p> | <p><strong>Windows 2000, Windows XP e Windows Server 2003:</strong> 80</p><p><strong>Windows Vista:</strong> 126</p> | 
+| <p>Digitare:</p> | <p>Intero</p> | 
+| <p>Intervallo valido:</p> | <p><strong>Windows 2000, Windows XP e Windows Server 2003:</strong> 80 – 2147483647</p><p><strong>Windows Vista:</strong> 1 - 2147483647</p> | 
+| <p>Ambito:</p> | <p>Istanza</p> | 
+| <p>Imposta dopo <a href="gg269354(v=exchg.10).md">JetCreateInstance</a>:</p> | <p>Sì</p> | 
+| <p>Impostare dopo <a href="gg294068(v=exchg.10).md">JetInit</a>:</p> | <p>No</p> | 
+| <p>Influisce sul layout fisico:</p> | <p>No</p> | 
+| <p>Influisce sull'affidabilità:</p> | <p>No</p> | 
+| <p>Influisce sulle prestazioni:</p> | <p>Sì</p> | 
+| <p>Influisce sulle risorse:</p> | <p>Sì</p> | 
+| <p>Disponibilità:</p> | <p>Tutti</p> | 
 
 
 
@@ -138,7 +222,19 @@ Questo parametro configura il motore di database per l'esecuzione di un checkpoi
 **Windows XP:**  A Windows XP, questo parametro è obsoleto e non influisce sul funzionamento del motore di database.
 
 
-| | | <p>Valore predefinito:</p> | <p>1024</p> | | <p>Digitare:</p> | <p>Intero</p> | | <p>Intervallo valido:</p> | <p>0 – 2147483647</p> | | <p>Ambito:</p> | <p>Istanza</p> | | <p>Imposta dopo <a href="gg269354(v=exchg.10).md">JetCreateInstance</a>:</p> | <p>Sì</p> | | <p>Impostare dopo <a href="gg294068(v=exchg.10).md">JetInit</a>:</p> | <p>No</p> | | <p>Influisce sul layout fisico:</p> | <p>No</p> | | <p>Influisce sull'affidabilità:</p> | <p>Sì</p> | | <p>Influisce sulle prestazioni:</p> | <p>Sì</p> | | <p>Influisce sulle risorse:</p> | <p>No</p> | | <p>Disponibilità:</p> | <p>Tutti</p> | 
+| Etichetta | Valore |
+|--------|-------|
+| <p>Valore predefinito:</p> | <p>1024</p> | 
+| <p>Digitare:</p> | <p>Intero</p> | 
+| <p>Intervallo valido:</p> | <p>0 – 2147483647</p> | 
+| <p>Ambito:</p> | <p>Istanza</p> | 
+| <p>Imposta dopo <a href="gg269354(v=exchg.10).md">JetCreateInstance</a>:</p> | <p>Sì</p> | 
+| <p>Impostare dopo <a href="gg294068(v=exchg.10).md">JetInit</a>:</p> | <p>No</p> | 
+| <p>Influisce sul layout fisico:</p> | <p>No</p> | 
+| <p>Influisce sull'affidabilità:</p> | <p>Sì</p> | 
+| <p>Influisce sulle prestazioni:</p> | <p>Sì</p> | 
+| <p>Influisce sulle risorse:</p> | <p>No</p> | 
+| <p>Disponibilità:</p> | <p>Tutti</p> | 
 
 
 
@@ -148,7 +244,19 @@ Questo parametro configura il motore di database per l'esecuzione di un checkpoi
 Quando questo parametro è impostato su true, il motore di database creerà il file di log delle transazioni successivo quando viene utilizzato il file di log delle transazioni corrente. Lo scopo è ridurre al minimo il tempo impiegato per il passaggio da un file di log delle transazioni a quello successivo in un carico di aggiornamento elevato.
 
 
-| | | <p>Valore predefinito:</p> | <p>Vero</p> | | <p>Digitare:</p> | <p>Boolean</p> | | <p>Intervallo valido:</p> | <p>False, True</p> | | <p>Ambito:</p> | <p>Istanza</p> | | <p>Imposta dopo <a href="gg269354(v=exchg.10).md">JetCreateInstance</a>:</p> | <p>Sì</p> | | <p>Impostare dopo <a href="gg294068(v=exchg.10).md">JetInit</a>:</p> | <p>No</p> | | <p>Influisce sul layout fisico:</p> | <p>Sì</p> | | <p>Influisce sull'affidabilità:</p> | <p>No</p> | | <p>Influisce sulle prestazioni:</p> | <p>Sì</p> | | <p>Influisce sulle risorse:</p> | <p>Sì</p> | | <p>Disponibilità:</p> | <p>Windows XP e versioni successive</p> | 
+| Etichetta | Valore |
+|--------|-------|
+| <p>Valore predefinito:</p> | <p>Vero</p> | 
+| <p>Digitare:</p> | <p>Boolean</p> | 
+| <p>Intervallo valido:</p> | <p>False, True</p> | 
+| <p>Ambito:</p> | <p>Istanza</p> | 
+| <p>Imposta dopo <a href="gg269354(v=exchg.10).md">JetCreateInstance</a>:</p> | <p>Sì</p> | 
+| <p>Impostare dopo <a href="gg294068(v=exchg.10).md">JetInit</a>:</p> | <p>No</p> | 
+| <p>Influisce sul layout fisico:</p> | <p>Sì</p> | 
+| <p>Influisce sull'affidabilità:</p> | <p>No</p> | 
+| <p>Influisce sulle prestazioni:</p> | <p>Sì</p> | 
+| <p>Influisce sulle risorse:</p> | <p>Sì</p> | 
+| <p>Disponibilità:</p> | <p>Windows XP e versioni successive</p> | 
 
 
 
@@ -159,12 +267,24 @@ Questo parametro indica il percorso relativo o file system assoluto della cartel
 
 Saranno anche disponibili altri file di log di riserva denominati RES1. LOG e RES2. LOG archiviato insieme ai file di log ordinari. Il contenuto di questi file non è importante perché l'unico scopo è riservare spazio su disco per consentire l'arresto del motore normalmente in uno scenario con disco basso. Si tratta anche di un file di log temporaneo denominato in genere EDBTMP. Accedere a questa stessa cartella. Anche il contenuto di questo file non è importante. Questo file è un nuovo file di log preparato per l'uso.
 
-Le proprietà del volume host dei file di log delle transazioni e il relativo posizionamento rispetto agli altri file usati dal motore di database possono influire notevolmente sulle prestazioni.
+Le proprietà del volume host dei file di log delle transazioni e la relativa posizione rispetto agli altri file usati dal motore di database possono influire notevolmente sulle prestazioni.
 
-**Nota:**  Se viene specificato un percorso relativo, sarà relativo alla directory di lavoro corrente del processo che ospita l'applicazione che usa il motore di database.
+**Nota**  Se viene specificato un percorso relativo, sarà relativo alla directory di lavoro corrente del processo che ospita l'applicazione che usa il motore di database.
 
 
-| | | <p>Valore predefinito:</p> | <p>".\"</p> | | <p>Digitare:</p> | <p>Percorso cartella (stringa)</p> | | <p>Intervallo valido:</p> | <p>Da 0 a 246 caratteri</p> | | <p>Ambito:</p> | <p>Istanza</p> | | <p>Imposta dopo <a href="gg269354(v=exchg.10).md">JetCreateInstance</a>:</p> | <p>Sì</p> | | <p>Impostare dopo <a href="gg294068(v=exchg.10).md">JetInit</a>:</p> | <p>No</p> | | <p>Influisce sul layout fisico:</p> | <p>Sì</p> | | <p>Influisce sull'affidabilità:</p> | <p>Sì</p> | | <p>Influisce sulle prestazioni:</p> | <p>Sì</p> | | <p>Influisce sulle risorse:</p> | <p>No</p> | | <p>Disponibilità:</p> | <p>Tutti</p> | 
+| Etichetta | Valore |
+|--------|-------|
+| <p>Valore predefinito:</p> | <p>".\"</p> | 
+| <p>Digitare:</p> | <p>Percorso cartella (stringa)</p> | 
+| <p>Intervallo valido:</p> | <p>Da 0 a 246 caratteri</p> | 
+| <p>Ambito:</p> | <p>Istanza</p> | 
+| <p>Imposta dopo <a href="gg269354(v=exchg.10).md">JetCreateInstance</a>:</p> | <p>Sì</p> | 
+| <p>Impostare dopo <a href="gg294068(v=exchg.10).md">JetInit</a>:</p> | <p>No</p> | 
+| <p>Influisce sul layout fisico:</p> | <p>Sì</p> | 
+| <p>Influisce sull'affidabilità:</p> | <p>Sì</p> | 
+| <p>Influisce sulle prestazioni:</p> | <p>Sì</p> | 
+| <p>Influisce sulle risorse:</p> | <p>No</p> | 
+| <p>Disponibilità:</p> | <p>Tutti</p> | 
 
 
 
@@ -178,7 +298,19 @@ Questo parametro influisce sull'affidabilità. Se l'impostazione è troppo picco
 Questo parametro influisce sulle prestazioni. Se l'impostazione è molto grande, [JetInit](./jetinit-function.md) sarà lento perché il motore di database deve leggere almeno il file di log più piccolo durante l'inizializzazione. Se l'impostazione è molto grande, anche il passaggio tra i file di log richiederà più tempo. Se l'impostazione è molto piccola, sarà necessario creare più file di log per un determinato numero di aggiornamenti, con un sovraccarico maggiore.
 
 
-| | | <p>Valore predefinito:</p> | <p>5120</p> | | <p>Digitare:</p> | <p>Intero</p> | | <p>Intervallo valido:</p> | <p><strong>Windows 2000, Windows XP e Windows Server 2003:</strong> 128 – 32768</p><p><strong>Windows Vista:</strong> 64 – 32768</p> | | <p>Ambito:</p> | <p>Istanza</p> | | <p>Imposta dopo <a href="gg269354(v=exchg.10).md">JetCreateInstance</a>:</p> | <p>Sì</p> | | <p>Impostare dopo <a href="gg294068(v=exchg.10).md">JetInit</a>:</p> | <p>No</p> | | <p>Influisce sul layout fisico:</p> | <p>Sì</p> | | <p>Influisce sull'affidabilità:</p> | <p>Sì</p> | | <p>Influisce sulle prestazioni:</p> | <p>Sì</p> | | <p>Influisce sulle risorse:</p> | <p>Sì</p> | | <p>Disponibilità:</p> | <p>Tutti</p> | 
+| Etichetta | Valore |
+|--------|-------|
+| <p>Valore predefinito:</p> | <p>5120</p> | 
+| <p>Digitare:</p> | <p>Intero</p> | 
+| <p>Intervallo valido:</p> | <p><strong>Windows 2000, Windows XP e Windows Server 2003:</strong> 128 – 32768</p><p><strong>Windows Vista:</strong> 64 – 32768</p> | 
+| <p>Ambito:</p> | <p>Istanza</p> | 
+| <p>Imposta dopo <a href="gg269354(v=exchg.10).md">JetCreateInstance</a>:</p> | <p>Sì</p> | 
+| <p>Impostare dopo <a href="gg294068(v=exchg.10).md">JetInit</a>:</p> | <p>No</p> | 
+| <p>Influisce sul layout fisico:</p> | <p>Sì</p> | 
+| <p>Influisce sull'affidabilità:</p> | <p>Sì</p> | 
+| <p>Influisce sulle prestazioni:</p> | <p>Sì</p> | 
+| <p>Influisce sulle risorse:</p> | <p>Sì</p> | 
+| <p>Disponibilità:</p> | <p>Tutti</p> | 
 
 
 
@@ -190,7 +322,19 @@ Questo parametro tenta di ottimizzare lo scaricamento del buffer di log causato 
 **Windows XP:**  A Windows XP, questo parametro è obsoleto e non influisce sul funzionamento del motore di database.
 
 
-| | | <p>Valore predefinito:</p> | <p>3</p> | | <p>Digitare:</p> | <p>Intero</p> | | <p>Intervallo valido:</p> | <p>0 – 2147483647</p> | | <p>Ambito:</p> | <p>Istanza</p> | | <p>Imposta dopo <a href="gg269354(v=exchg.10).md">JetCreateInstance</a>:</p> | <p>Sì</p> | | <p>Impostare dopo <a href="gg294068(v=exchg.10).md">JetInit</a>:</p> | <p>No</p> | | <p>Influisce sul layout fisico:</p> | <p>No</p> | | <p>Influisce sull'affidabilità:</p> | <p>No</p> | | <p>Influisce sulle prestazioni:</p> | <p>Sì</p> | | <p>Influisce sulle risorse:</p> | <p>No</p> | | <p>Disponibilità:</p> | <p>Tutti</p> | 
+| Etichetta | Valore |
+|--------|-------|
+| <p>Valore predefinito:</p> | <p>3</p> | 
+| <p>Digitare:</p> | <p>Intero</p> | 
+| <p>Intervallo valido:</p> | <p>0 – 2147483647</p> | 
+| <p>Ambito:</p> | <p>Istanza</p> | 
+| <p>Imposta dopo <a href="gg269354(v=exchg.10).md">JetCreateInstance</a>:</p> | <p>Sì</p> | 
+| <p>Impostare dopo <a href="gg294068(v=exchg.10).md">JetInit</a>:</p> | <p>No</p> | 
+| <p>Influisce sul layout fisico:</p> | <p>No</p> | 
+| <p>Influisce sull'affidabilità:</p> | <p>No</p> | 
+| <p>Influisce sulle prestazioni:</p> | <p>Sì</p> | 
+| <p>Influisce sulle risorse:</p> | <p>No</p> | 
+| <p>Disponibilità:</p> | <p>Tutti</p> | 
 
 
 
@@ -202,52 +346,104 @@ Questo parametro è l'opzione master che controlla il ripristino dell'arresto an
 La disabilitazione del ripristino è utile in casi speciali in cui è noto che il contenuto di un database non è utile in caso di arresto anomalo del sistema. Il ripristino deve essere abilitato per tutti gli altri casi.
 
 
-| | | <p>Valore predefinito:</p> | <p>"On"</p> | | <p>Digitare:</p> | <p>string</p> | | <p>Intervallo valido:</p> | <p>Da 0 a 259 caratteri</p> | | <p>Ambito:</p> | <p>Istanza</p> | | <p>Imposta dopo <a href="gg269354(v=exchg.10).md">JetCreateInstance</a>:</p> | <p>Sì</p> | | <p>Impostare dopo <a href="gg294068(v=exchg.10).md">JetInit</a>:</p> | <p>No</p> | | <p>Influisce sul layout fisico:</p> | <p>Sì</p> | | <p>Influisce sull'affidabilità:</p> | <p>Sì</p> | | <p>Influisce sulle prestazioni:</p> | <p>Sì</p> | | <p>Influisce sulle risorse:</p> | <p>Sì</p> | | <p>Disponibilità:</p> | <p>Tutti</p> | 
+| Etichetta | Valore |
+|--------|-------|
+| <p>Valore predefinito:</p> | <p>"On"</p> | 
+| <p>Digitare:</p> | <p>Stringa</p> | 
+| <p>Intervallo valido:</p> | <p>Da 0 a 259 caratteri</p> | 
+| <p>Ambito:</p> | <p>Istanza</p> | 
+| <p>Imposta dopo <a href="gg269354(v=exchg.10).md">JetCreateInstance:</a></p> | <p>Sì</p> | 
+| <p>Impostato dopo <a href="gg294068(v=exchg.10).md">JetInit:</a></p> | <p>No</p> | 
+| <p>Influisce sul layout fisico:</p> | <p>Sì</p> | 
+| <p>Influisce sull'affidabilità:</p> | <p>Sì</p> | 
+| <p>Influisce sulle prestazioni:</p> | <p>Sì</p> | 
+| <p>Influisce sulle risorse:</p> | <p>Sì</p> | 
+| <p>Disponibilità:</p> | <p>Tutti</p> | 
 
 
 
 *JET_paramSystemPath*  
 0  
 
-Questo parametro indica il percorso file system assoluto o relativo della cartella che conterrà il file del checkpoint per l'istanza. Il percorso deve essere terminato con un carattere barra rovesciata, che indica che il percorso di destinazione è una cartella. Il file del checkpoint è un file semplice gestito per ogni istanza che memorizza il file di log delle transazioni meno recente che deve essere riprodotto per riportare tutti i database in tale istanza a uno stato coerente dopo un arresto anomalo. Il file del checkpoint è in genere denominato EDB. CHK.
+Questo parametro indica il percorso relativo o file system assoluto della cartella che conterrà il file del checkpoint per l'istanza di . Il percorso deve terminare con una barra rovesciata, che indica che il percorso di destinazione è una cartella. Il file del checkpoint è un file semplice gestito per ogni istanza che memorizza il file di log delle transazioni meno recente che deve essere riprodotto per portare tutti i database in tale istanza a uno stato coerente dopo un arresto anomalo. Il file del checkpoint è in genere denominato EDB. CHK.
 
-**Nota:**  Se viene specificato un percorso relativo, sarà relativo alla directory di lavoro corrente del processo che ospita l'applicazione che usa il motore di database.
+**Nota**  Se viene specificato un percorso relativo, sarà relativo alla directory di lavoro corrente del processo che ospita l'applicazione che usa il motore di database.
 
 
-| | | <p>Valore predefinito:</p> | <p>".\"</p> | | <p>Digitare:</p> | <p>Percorso cartella (stringa)</p> | | <p>Intervallo valido:</p> | <p>Da 0 a 246 caratteri</p> | | <p>Ambito:</p> | <p>Istanza</p> | | <p>Imposta dopo <a href="gg269354(v=exchg.10).md">JetCreateInstance</a>:</p> | <p>Sì</p> | | <p>Impostare dopo <a href="gg294068(v=exchg.10).md">JetInit</a>:</p> | <p>No</p> | | <p>Influisce sul layout fisico:</p> | <p>Sì</p> | | <p>Influisce sull'affidabilità:</p> | <p>No</p> | | <p>Influisce sulle prestazioni:</p> | <p>No</p> | | <p>Influisce sulle risorse:</p> | <p>No</p> | | <p>Disponibilità:</p> | <p>Tutti</p> | 
+| Etichetta | Valore |
+|--------|-------|
+| <p>Valore predefinito:</p> | <p>".\"</p> | 
+| <p>Digitare:</p> | <p>Percorso cartella (stringa)</p> | 
+| <p>Intervallo valido:</p> | <p>Da 0 a 246 caratteri</p> | 
+| <p>Ambito:</p> | <p>Istanza</p> | 
+| <p>Imposta dopo <a href="gg269354(v=exchg.10).md">JetCreateInstance:</a></p> | <p>Sì</p> | 
+| <p>Impostato dopo <a href="gg294068(v=exchg.10).md">JetInit:</a></p> | <p>No</p> | 
+| <p>Influisce sul layout fisico:</p> | <p>Sì</p> | 
+| <p>Influisce sull'affidabilità:</p> | <p>No</p> | 
+| <p>Influisce sulle prestazioni:</p> | <p>No</p> | 
+| <p>Influisce sulle risorse:</p> | <p>No</p> | 
+| <p>Disponibilità:</p> | <p>Tutti</p> | 
 
 
 
 *JET_paramWaitLogFlush*  
 13 
 
-Questo parametro tenta di ottimizzare lo scaricamento del buffer del log causato da un commit durevole attendendo un periodo di tempo specificato prima di forzare l'esecuzione di uno scaricamento nella speranza che un'altra transazione convade lo scaricamento.
+Questo parametro tenta di ottimizzare lo scaricamento del buffer di log causato da un commit durevole, attendendo un periodo di tempo specificato prima di forzare l'esecuzione di uno scaricamento nella attesa che un'altra transazione con questa possa condividere lo scaricamento.
 
 **Windows XP:**  A Windows XP, questo parametro è obsoleto e non influisce sul funzionamento del motore di database.
 
 
-| | | <p>Valore predefinito:</p> | <p>0</p> | | <p>Digitare:</p> | <p>Intero</p> | | <p>Intervallo valido:</p> | <p>0 – 2147483647</p> | | <p>Ambito:</p> | <p>Istanza o sessione</p> | | <p>Imposta dopo <a href="gg269354(v=exchg.10).md">JetCreateInstance</a>:</p> | <p>Sì</p> | | <p>Impostare dopo <a href="gg294068(v=exchg.10).md">JetInit</a>:</p> | <p>Sì</p> | | <p>Influisce sul layout fisico:</p> | <p>No</p> | | <p>Influisce sull'affidabilità:</p> | <p>No</p> | | <p>Influisce sulle prestazioni:</p> | <p>Sì</p> | | <p>Influisce sulle risorse:</p> | <p>No</p> | | <p>Disponibilità:</p> | <p>Tutti</p> | 
+| Etichetta | Valore |
+|--------|-------|
+| <p>Valore predefinito:</p> | <p>0</p> | 
+| <p>Digitare:</p> | <p>Intero</p> | 
+| <p>Intervallo valido:</p> | <p>0 – 2147483647</p> | 
+| <p>Ambito:</p> | <p>Istanza o sessione</p> | 
+| <p>Imposta dopo <a href="gg269354(v=exchg.10).md">JetCreateInstance:</a></p> | <p>Sì</p> | 
+| <p>Impostato dopo <a href="gg294068(v=exchg.10).md">JetInit:</a></p> | <p>Sì</p> | 
+| <p>Influisce sul layout fisico:</p> | <p>No</p> | 
+| <p>Influisce sull'affidabilità:</p> | <p>No</p> | 
+| <p>Influisce sulle prestazioni:</p> | <p>Sì</p> | 
+| <p>Influisce sulle risorse:</p> | <p>No</p> | 
+| <p>Disponibilità:</p> | <p>Tutti</p> | 
 
 
 
 *JET_paramLegacyFileNames*  
 136  
 
-Questo parametro viene usato per specificare le funzionalità di compatibilità dei nomi dei file da mantenere con lo schema di denominazione dei file Windows Server 2003 e precedente. Per altre informazioni sui diversi file e sulla relativa [denominazione,](./extensible-storage-engine-files.md)vedere Extensible Archiviazione Engine Files .
+Questo parametro viene utilizzato per specificare le funzionalità di compatibilità di denominazione dei file da mantenere con lo schema di denominazione dei file Windows Server 2003 e con lo schema di denominazione dei file precedente. Per altre informazioni sui diversi file e sulla relativa denominazione, [vedere Extensible Archiviazione Engine Files](./extensible-storage-engine-files.md).
 
-Il JET_bitESE98FileNames garantisce che l'estensione di file usata nei file di log delle transazioni e nel file di checkpoint sia uguale a quella usata in Windows Server 2003. Si noti che se si esegue l'aggiornamento da Windows Server 2003, questo bit non deve essere specificato, perché il motore a upgraderà automaticamente le estensioni di file se JET_paramCircularLog è impostato su **true** o manterrà l'estensione di log precedente se JET_paramCircularLog è **false**.
+Il JET_bitESE98FileNames garantisce che l'estensione di file usata nei file di log delle transazioni e il file del checkpoint siano uguali a quello usato in Windows Server 2003. Si noti che se si esegue l'aggiornamento da Windows Server 2003, questo bit non deve essere ancora specificato, perché il motore aggiorna automaticamente le estensioni di file se JET_paramCircularLog è impostato su **true** o mantiene l'estensione del log precedente se JET_paramCircularLog è **false.**
 
-**Nota:**  Per impostare un bit, è prima necessario recuperare il valore e quindi "o" nel bit di compatibilità desiderato.
+**Nota**  Per impostare un bit, è necessario innanzitutto recuperare il valore e quindi "or" nel bit di compatibilità desiderato.
 
 
-| | | <p>Valore predefinito:</p> | <p>JET_bitESE98FileNames</p> | | <p>Digitare:</p> | <p>JET_GRBIT (integer)</p> | | <p>Intervallo valido:</p> | <p>JET_bitESE98FileNames</p> | | <p>Ambito:</p> | <p>Istanza</p> | | <p>Imposta dopo <a href="gg269354(v=exchg.10).md">JetCreateInstance</a>:</p> | <p>Sì</p> | | <p>Impostare dopo <a href="gg294068(v=exchg.10).md">JetInit</a>:</p> | <p>No</p> | | <p>Influisce sul layout fisico:</p> | <p>Sì</p> | | <p>Influisce sull'affidabilità:</p> | <p>No</p> | | <p>Influisce sulle prestazioni:</p> | <p>No</p> | | <p>Influisce sulle risorse:</p> | <p>No</p> | | <p>Disponibilità:</p> | <p>A partire da Windows Server 2008 e Windows Vista</p> | 
+| Etichetta | Valore |
+|--------|-------|
+| <p>Valore predefinito:</p> | <p>JET_bitESE98FileNames</p> | 
+| <p>Digitare:</p> | <p>JET_GRBIT (integer)</p> | 
+| <p>Intervallo valido:</p> | <p>JET_bitESE98FileNames</p> | 
+| <p>Ambito:</p> | <p>Istanza</p> | 
+| <p>Imposta dopo <a href="gg269354(v=exchg.10).md">JetCreateInstance:</a></p> | <p>Sì</p> | 
+| <p>Impostato dopo <a href="gg294068(v=exchg.10).md">JetInit:</a></p> | <p>No</p> | 
+| <p>Influisce sul layout fisico:</p> | <p>Sì</p> | 
+| <p>Influisce sull'affidabilità:</p> | <p>No</p> | 
+| <p>Influisce sulle prestazioni:</p> | <p>No</p> | 
+| <p>Influisce sulle risorse:</p> | <p>No</p> | 
+| <p>Disponibilità:</p> | <p>A partire da Windows Server 2008 e Windows Vista</p> | 
 
 
 
 ## <a name="requirements"></a>Requisiti
 
 
-| | | <p><strong>Client</strong></p> | <p>Richiede Windows Vista, Windows XP o Windows 2000 Professional.</p> | | <p><strong>Server</strong></p> | <p>Richiede Windows Server 2008, Windows Server 2003 o Windows 2000 Server.</p> | | <p><strong>Intestazione</strong></p> | <p>Dichiarato in Esent.h.</p> | 
+| Requisito | Valore |
+|------------|----------|
+| <p><strong>Client</strong></p> | <p>Richiede Windows Vista, Windows XP o Windows 2000 Professional.</p> | 
+| <p><strong>Server</strong></p> | <p>Richiede Windows Server 2008, Windows Server 2003 o Windows 2000 Server.</p> | 
+| <p><strong>Intestazione</strong></p> | <p>Dichiarato in Esent.h.</p> | 
 
 
 

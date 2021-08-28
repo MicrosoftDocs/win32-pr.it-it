@@ -10,12 +10,12 @@ topic_type:
 api_name: ''
 api_type: ''
 api_location: ''
-ms.openlocfilehash: e1bb50e58b4db01b01b2122fd55c14bf73be0eb8601d732fa658752b33c35fcd
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 25d5af34a252243610a639bc89ed2a7a522775fa
+ms.sourcegitcommit: c276a8912787b2cda74dcf54eb96df961bb1188b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "117738975"
+ms.lasthandoff: 08/20/2021
+ms.locfileid: "122623357"
 ---
 # <a name="wmi-tasks-desktop-management"></a>Attività WMI: gestione desktop 
 
@@ -44,8 +44,8 @@ Nella tabella seguente sono elencati esempi di script che possono essere utilizz
 
 <table>
 <colgroup>
-<col style="width: 50%" />
-<col style="width: 50%" />
+<col  />
+<col  />
 </colgroup>
 <thead>
 <tr class="header">
@@ -59,7 +59,7 @@ Nella tabella seguente sono elencati esempi di script che possono essere utilizz
 <td>Usare la <a href="/windows/desktop/CIMWin32Prov/win32-computersystem"><strong>Win32_ComputerSystem</strong></a> e controllare il valore della <strong>proprietà PrimaryOwnerName.</strong><br/> <span data-codelanguage="VisualBasic"></span>
 <table>
 <colgroup>
-<col style="width: 100%" />
+<col  />
 </colgroup>
 <thead>
 <tr class="header">
@@ -81,7 +81,7 @@ Next</code></pre></td>
 <span data-codelanguage="PowerShell"></span>
 <table>
 <colgroup>
-<col style="width: 100%" />
+<col  />
 </colgroup>
 <thead>
 <tr class="header">
@@ -108,7 +108,7 @@ foreach ($objComputer in $colSettings)
 <span data-codelanguage="VisualBasic"></span>
 <table>
 <colgroup>
-<col style="width: 100%" />
+<col  />
 </colgroup>
 <thead>
 <tr class="header">
@@ -129,7 +129,7 @@ Next</code></pre></td>
 <span data-codelanguage="PowerShell"></span>
 <table>
 <colgroup>
-<col style="width: 100%" />
+<col  />
 </colgroup>
 <thead>
 <tr class="header">
@@ -160,7 +160,7 @@ foreach ($desktop in $desktops) {
 <span data-codelanguage="VisualBasic"></span>
 <table>
 <colgroup>
-<col style="width: 100%" />
+<col  />
 </colgroup>
 <thead>
 <tr class="header">
@@ -183,7 +183,7 @@ Next</code></pre></td>
 <span data-codelanguage="PowerShell"></span>
 <table>
 <colgroup>
-<col style="width: 100%" />
+<col  />
 </colgroup>
 <thead>
 <tr class="header">
@@ -197,9 +197,9 @@ $computer = &quot;.&quot;
 $desktops = Get-WmiObject -Class Win32_DesktopMonitor
 $hostname = hostname
 
-<# Display desktop details #> &quot; There are {0} Desktops on {1} as follows: &quot; -f $desktops. Conteggio, $hostname &quot; &quot; $i=1 numero di desktop in questo sistema
+<# Display desktop details #> &quot; There are {0} Desktops on as {1} follows: &quot; -f $desktops. Conteggio, $hostname &quot; &quot; $i=1 numero di desktop in questo sistema
 
-foreach ($desktop in $desktops) { &quot; Desktop {0} : {1} &quot; -f $i++, $Desktop.Caption &quot; Screen Height : {0} &quot; -f $desktop. Larghezza schermo ScreenHeight: &quot; {0} &quot; -f $desktop. ScreenWidth &quot; &quot; }</code></pre></td>
+foreach ($desktop in $desktops) { &quot; Desktop {0} : {1} &quot; -f $i++, $Desktop.Caption Screen &quot; Height : {0} &quot; -f $desktop. Larghezza schermo ScreenHeight: &quot; {0} &quot; -f $desktop. ScreenWidth &quot; &quot; }</code></pre></td>
 </tr>
 </tbody>
 </table>
@@ -213,7 +213,7 @@ foreach ($desktop in $desktops) { &quot; Desktop {0} : {1} &quot; -f $i++, $Desk
 <span data-codelanguage="VisualBasic"></span>
 <table>
 <colgroup>
-<col style="width: 100%" />
+<col  />
 </colgroup>
 <thead>
 <tr class="header">
@@ -244,7 +244,7 @@ End Function</code></pre></td>
 <span data-codelanguage="PowerShell"></span>
 <table>
 <colgroup>
-<col style="width: 100%" />
+<col  />
 </colgroup>
 <thead>
 <tr class="header">
@@ -281,7 +281,7 @@ foreach ($system in $computers) {
 <span data-codelanguage="VisualBasic"></span>
 <table>
 <colgroup>
-<col style="width: 100%" />
+<col  />
 </colgroup>
 <thead>
 <tr class="header">
@@ -302,7 +302,7 @@ Next</code></pre></td>
 <span data-codelanguage="PowerShell"></span>
 <table>
 <colgroup>
-<col style="width: 100%" />
+<col  />
 </colgroup>
 <thead>
 <tr class="header">
@@ -330,7 +330,7 @@ foreach ($objOperatingSystem in $colOperatingSystem)
 <span data-codelanguage="VisualBasic"></span>
 <table>
 <colgroup>
-<col style="width: 100%" />
+<col  />
 </colgroup>
 <thead>
 <tr class="header">
@@ -359,7 +359,7 @@ Next</code></pre></td>
 <span data-codelanguage="PowerShell"></span>
 <table>
 <colgroup>
-<col style="width: 100%" />
+<col  />
 </colgroup>
 <thead>
 <tr class="header">

@@ -17,12 +17,12 @@ api_location:
 topic_type:
 - APIRef
 - kbSyntax
-ms.openlocfilehash: 9b6afd5f3b383aff5c6d5168b259b13fe4429ac40d5b19a21c8e2f6a207cecd2
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 39fdb9e7236dea1c04eb55614d9ea9833f398a94
+ms.sourcegitcommit: c276a8912787b2cda74dcf54eb96df961bb1188b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119119235"
+ms.lasthandoff: 08/20/2021
+ms.locfileid: "122623127"
 ---
 # <a name="span-idvspixenginesourcefileinfospansourcefileinfo-structure"></a><span id="vspixengine.sourcefileinfo"></span>Struttura SourceFileInfo
 
@@ -47,20 +47,20 @@ Numero di byte nel checksum. Quando checkSumAlgorithm è uguale a CHECKSUMALGORI
 Specifica l'algoritmo utilizzato per generare il checksum del file. Gli algoritmi supportati sono MD5 e SHA1. Per altre informazioni, vedere l'enumerazione CHECKSUMALGORITHM.
 
 **checkSumFirstPart**  
-Prima parte del checksum a 8 byte.
+Prima parte di 8 byte del checksum.
 
 **checkSumSecondPart**  
 Seconda parte a 8 byte del checksum.
 
 **checkSumThirdPart**  
-Terza parte del checksum a 8 byte.
+Terza parte a 8 byte del checksum.
 
 **checkSumFourthPart**  
-Quarta parte del checksum a 8 byte.
+Quarta parte a 8 byte del checksum.
 
 ## <a name="requirements"></a>Requisiti
 
-<table><colgroup><col style="width: 50%" /><col style="width: 50%" /></colgroup><tbody><tr class="odd"><td><p>Intestazione</p></td><td>Vspixengine.h</td></tr></tbody></table>
+<table><colgroup><col  /><col  /></colgroup><tbody><tr class="odd"><td><p>Intestazione</p></td><td>Vspixengine.h</td></tr></tbody></table>
 
  
 

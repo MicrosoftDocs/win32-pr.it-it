@@ -1,9 +1,9 @@
 ---
 title: Evento LibraryConnect dell'oggetto AxWindowsMediaPlayer
-description: L'evento LibraryConnect si verifica quando una raccolta diventa disponibile.
+description: L'evento LibraryConnect si verifica quando una libreria diventa disponibile.
 ms.assetid: f67243ce-0e25-43a7-b754-6b0e80d72055
 keywords:
-- Evento LibraryConnect dell'oggetto AxWindowsMediaPlayer Media Player Windows
+- Evento LibraryConnect dell'oggetto AxWindowsMediaPlayer Windows Media Player
 topic_type:
 - apiref
 api_name:
@@ -14,16 +14,16 @@ api_type:
 - Assembly
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: c33353b8438c61e28a3d52975fe90b06f14f03a4
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: 940eed16004009e928309ae1a2e5d8f792b9fd0cb36fe8e836abfefb89e3ab95
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "106331886"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120123951"
 ---
 # <a name="libraryconnect-event-of-the-axwindowsmediaplayer-object"></a>Evento LibraryConnect dell'oggetto AxWindowsMediaPlayer
 
-L'evento LibraryConnect si verifica quando una raccolta diventa disponibile.
+L'evento LibraryConnect si verifica quando una libreria diventa disponibile.
 
 ``` syntax
 [C#]
@@ -41,13 +41,13 @@ Private Sub player_LibraryConnect(
 
 ## <a name="event-data"></a>Dati eventi
 
-Il gestore associato a questo evento è di tipo **AxWMPLib. \_ \_LibraryConnectEventHandler WMPOCXEvents**. Questo gestore riceve un argomento di tipo **AxWMPLib. \_ WMPOCXEvents \_ LibraryConnectEvent**, che contiene la proprietà seguente correlata a questo evento.
+Il gestore associato a questo evento è di tipo **AxWMPLib. \_ Libreria WMPOCXEventsConnectEventHandler \_**. Questo gestore riceve un argomento di tipo **AxWMPLib. \_ WMPOCXEvents \_ LibraryConnectEvent**, che contiene la proprietà seguente correlata a questo evento.
 
 
 
 | Proprietà | Descrizione                                                                                |
 |----------|--------------------------------------------------------------------------------------------|
-| pLibrary | **Wmplib. IWMPLibrary** Interfaccia che rappresenta la libreria connessa.<br/> |
+| pLibrary | **WMPLib.IWMPLibrary** Interfaccia che rappresenta la libreria connessa.<br/> |
 
 
 

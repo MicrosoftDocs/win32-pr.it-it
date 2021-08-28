@@ -16,12 +16,12 @@ api_type:
 - COM
 api_location:
 - Wbemdisp.dll
-ms.openlocfilehash: 2f5772429fa0cd7f2f45009ff1867141a845088b
-ms.sourcegitcommit: 61a4c522182aa1cacbf5669683d9570a3bf043b2
+ms.openlocfilehash: a75adbab65c735a298c6a1599718cc6df5b690dd
+ms.sourcegitcommit: c276a8912787b2cda74dcf54eb96df961bb1188b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/26/2021
-ms.locfileid: "122885484"
+ms.lasthandoff: 08/20/2021
+ms.locfileid: "122623327"
 ---
 # <a name="swbemobjectexgettext_-method"></a>Metodo SWbemObjectEx.GetText \_
 
@@ -118,7 +118,7 @@ Quando si costruisce [**SWbemNamedValueSet,**](swbemnamedvalueset.md)sono consen
 </colgroup>
 <thead>
 <tr class="header">
-<th>NOME</th>
+<th>Nome</th>
 <th>Valore</th>
 </tr>
 </thead>
@@ -135,7 +135,7 @@ Quando si costruisce [**SWbemNamedValueSet,**](swbemnamedvalueset.md)sono consen
 <td>PathLevel</td>
 <td><strong>VT-I4</strong><br/> Il valore predefinito è 0 (zero). I valori possibili sono:<br/>
 <ul>
-<li>0: viene creata una CLASSE o un elemento &lt; &gt; a seconda che <INSTANCE> l'oggetto sia una classe o un'istanza.</li>
+<li>0: viene <CLASS> creato un elemento o a seconda che <INSTANCE> l'oggetto sia una classe o un'istanza.</li>
 <li>1: viene <VALUE.NAMEDOBJECT> generato un elemento .</li>
 <li>2: viene <VALUE.OBJECTWITHLOCALPATH> generato un elemento .</li>
 <li>3: viene <VALUE.OBJECTWITHPATH> generato un elemento .</li>

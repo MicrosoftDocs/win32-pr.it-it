@@ -1,11 +1,11 @@
 ---
-title: Media. getAttributeCountByType, metodo
-description: Il metodo getAttributeCountByType Recupera il numero di attributi associati al nome dell'attributo e alla lingua specificati.
+title: Metodo Media.getAttributeCountByType
+description: Il metodo getAttributeCountByType recupera il numero di attributi associati al nome e alla lingua dell'attributo specificati.
 ms.assetid: 5644e823-a9b1-4b02-9dd6-015e524fde64
 keywords:
 - Metodo getAttributeCountByType Windows Media Player
-- Metodo getAttributeCountByType Windows Media Player, classe media
-- Media class Media Player Windows, metodo getAttributeCountByType
+- Metodo getAttributeCountByType Windows Media Player classe Media
+- Classe media Windows Media Player metodo , getAttributeCountByType
 topic_type:
 - apiref
 api_name:
@@ -16,16 +16,16 @@ api_type:
 - COM
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 613dca43c32322cd5e7de2b2b04605789009cbf6
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: 222f92a57ba9fbcd9971a5536be5f31078e2e09373fb1d168a7074911b027d79
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "106332554"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120123450"
 ---
-# <a name="mediagetattributecountbytype-method"></a>Media. getAttributeCountByType, metodo
+# <a name="mediagetattributecountbytype-method"></a>Metodo Media.getAttributeCountByType
 
-Il metodo **getAttributeCountByType** Recupera il numero di attributi associati al nome dell'attributo e alla lingua specificati.
+Il **metodo getAttributeCountByType** recupera il numero di attributi associati al nome e alla lingua dell'attributo specificati.
 
 ## <a name="syntax"></a>Sintassi
 
@@ -43,29 +43,29 @@ retVal = Media.getAttributeCountByType(
 
 <dl> <dt>
 
-*nome* \[ in\]
+*name* \[ Pollici\]
 </dt> <dd>
 
-**Stringa** contenente il nome dell'attributo. Per informazioni sugli attributi supportati da Windows Media Player, vedere la Guida di [riferimento](attribute-reference.md)agli attributi di Windows Media Player.
+**Stringa** contenente il nome dell'attributo. Per informazioni sugli attributi supportati da Windows Media Player, vedere le informazioni di Windows Media Player [sugli attributi](attribute-reference.md).
 
 </dd> <dt>
 
-*lingua* \[ di in\]
+*language* \[ Pollici\]
 </dt> <dd>
 
-**Stringa** che rappresenta la lingua. Se il valore è impostato su null o su "" (stringa vuota), viene utilizzata la stringa delle impostazioni locali corrente. In caso contrario, il valore deve essere una stringa di linguaggio RFC 1766 valida, ad esempio "en-US".
+**Stringa** che rappresenta la lingua. Se il valore è impostato su Null o "" (stringa vuota), viene usata la stringa delle impostazioni locali corrente. In caso contrario, il valore deve essere una stringa di lingua RFC 1766 valida, ad esempio "en-us".
 
 </dd> </dl>
 
 ## <a name="return-value"></a>Valore restituito
 
-Questo metodo restituisce un **numero** (**Long**) che contiene il numero di attributi.
+Questo metodo restituisce un **valore Number** (**long**) contenente il numero di attributi.
 
 ## <a name="remarks"></a>Commenti
 
-Questo metodo viene utilizzato per determinare il numero di attributi corrispondenti a un nome di attributo specifico per un determinato oggetto **multimediale** . I numeri di indice possono quindi essere passati al metodo **getItemInfoByType** . Questa operazione è utile, ad esempio, quando un elemento multimediale è stato categorizzato in più generi.
+Questo metodo viene usato per determinare il numero di attributi corrispondenti a un nome di attributo specifico per un **determinato oggetto Media.** I numeri di indice possono quindi essere passati al **metodo getItemInfoByType.** Ciò è utile, ad esempio, quando un elemento multimediale è stato categorizzato in più generi.
 
-Per usare questo metodo, è necessario l'accesso in lettura alla libreria. Per altre informazioni, vedere [accesso alla libreria](library-access.md).
+Per usare questo metodo, è necessario l'accesso in lettura alla libreria. Per altre informazioni, vedere [Accesso alla libreria](library-access.md).
 
 **Windows Media Player 10 Mobile:** Questa proprietà restituisce sempre 0.
 
@@ -75,7 +75,7 @@ Per usare questo metodo, è necessario l'accesso in lettura alla libreria. Per a
 
 | Requisito | Valore |
 |--------------------|------------------------------------------------------------------------------------|
-| Versione<br/> | Windows Media Player 9 serie o versione successiva.<br/>                                 |
+| Versione<br/> | Windows Media Player serie 9 o successive.<br/>                                 |
 | DLL<br/>     | <dl> <dt>Wmp.dll</dt> </dl> |
 
 
@@ -87,13 +87,13 @@ Per usare questo metodo, è necessario l'accesso in lettura alla libreria. Per a
 [**MediaObject**](media-object.md)
 </dt> <dt>
 
-[**Media. getItemInfoByType**](media-getiteminfobytype.md)
+[**Media.getItemInfoByType**](media-getiteminfobytype.md)
 </dt> <dt>
 
-[**Settings. mediaAccessRights**](settings-mediaaccessrights.md)
+[**Impostazioni.mediaAccessRights**](settings-mediaaccessrights.md)
 </dt> <dt>
 
-[**Settings. requestMediaAccessRights**](settings-requestmediaaccessrights.md)
+[**Impostazioni.requestMediaAccessRights**](settings-requestmediaaccessrights.md)
 </dt> </dl>
 
  

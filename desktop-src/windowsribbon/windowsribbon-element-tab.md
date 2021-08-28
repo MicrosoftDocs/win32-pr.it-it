@@ -13,18 +13,18 @@ api_type:
 ms.topic: reference
 ms.date: 05/31/2018
 api_location: ''
-ms.openlocfilehash: 64f5bffb6a81a1efd112c3f52f5d1276f893e9cfb059a5f240a6c8c73b990c3f
-ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
+ms.openlocfilehash: 349004f65713160acc75bdb6f77765ad9f0c3034
+ms.sourcegitcommit: c276a8912787b2cda74dcf54eb96df961bb1188b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119441641"
+ms.lasthandoff: 08/20/2021
+ms.locfileid: "122625957"
 ---
 # <a name="tab-element"></a>Elemento Tab
 
 Rappresenta una scheda [di base](windowsribbon-controls-tab.md) [o contestuale.](windowsribbon-controls-tabgroup.md)
 
-## <a name="usage"></a>Uso
+## <a name="usage"></a>Utilizzo
 
 ``` syntax
 <Tab
@@ -40,10 +40,10 @@ Rappresenta una scheda [di base](windowsribbon-controls-tab.md) [o contestuale.]
 
 <table>
 <colgroup>
-<col style="width: 25%" />
-<col style="width: 25%" />
-<col style="width: 25%" />
-<col style="width: 25%" />
+<col  />
+<col  />
+<col  />
+<col  />
 </colgroup>
 <thead>
 <tr class="header">

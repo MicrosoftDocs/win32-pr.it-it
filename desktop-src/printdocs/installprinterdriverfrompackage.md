@@ -1,7 +1,7 @@
 ---
 description: Installa un driver della stampante da un pacchetto driver presente nell'archivio driver dei server di stampa.
 ms.assetid: 5906d9c6-9fbf-4ec6-81ce-112a9ef6d7c0
-title: Funzione InstallPrinterDriverFromPackage (winspool. h)
+title: Funzione InstallPrinterDriverFromPackage (Winspool.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -15,14 +15,14 @@ api_type:
 - DllExport
 api_location:
 - Spoolss.dll
-ms.openlocfilehash: f817f5e73537f6a71d8236ad9532acdf02a53552
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 3248fc1a2392e2a04fd83c58ddcc08a110eec94779b634ce6a348639d4d2a5c2
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "104233724"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120112471"
 ---
-# <a name="installprinterdriverfrompackage-function"></a>InstallPrinterDriverFromPackage (funzione)
+# <a name="installprinterdriverfrompackage-function"></a>Funzione InstallPrinterDriverFromPackage
 
 Installa un driver della stampante da un pacchetto driver presente nell'archivio driver del server di stampa.
 
@@ -45,59 +45,59 @@ HRESULT InstallPrinterDriverFromPackage(
 
 <dl> <dt>
 
-*pszServer* \[ in\]
+*pszServer* \[ Pollici\]
 </dt> <dd>
 
-Puntatore a una stringa costante a terminazione null che specifica il nome del server di stampa. **Null** indica il computer locale.
+Puntatore a una stringa costante con terminazione Null che specifica il nome del server di stampa. **NULL** indica il computer locale.
 
 </dd> <dt>
 
-*pszInfPath* \[ in\]
+*pszInfPath* \[ Pollici\]
 </dt> <dd>
 
-Puntatore a una stringa costante a terminazione null che specifica il percorso dell'archivio driver per il file. inf del driver di stampa. **Null** indica che il driver si trova in un file inf fornito con Windows.
+Puntatore a una stringa costante con terminazione Null che specifica il percorso dell'archivio driver per il file inf del driver di stampa. **NULL** indica che il driver si trova in un file inf fornito con Windows.
 
 </dd> <dt>
 
-*pszDriverName* \[ in\]
+*pszDriverName* \[ Pollici\]
 </dt> <dd>
 
-Puntatore a una stringa costante a terminazione null che specifica il nome del driver.
+Puntatore a una stringa costante con terminazione Null che specifica il nome del driver.
 
 </dd> <dt>
 
-*pszEnvironment* \[ in\]
+*pszEnvironment* \[ Pollici\]
 </dt> <dd>
 
-Puntatore a una stringa costante a terminazione null che specifica l'architettura del processore, ad esempio Windows NT x86. Può essere **null**.
+Puntatore a una stringa costante con terminazione Null che specifica l'architettura del processore, ad esempio Windows NT x86. Può essere **NULL.**
 
 </dd> <dt>
 
-*dwFlags* \[ in\]
+*dwFlags* \[ Pollici\]
 </dt> <dd>
 
-Questo può essere solo 0 o IPDFP \_ Copia \_ tutti \_ i file. Il valore 0 indica che è necessario aggiungere il driver della stampante ed è necessario copiare tutti i file nella directory del driver della stampante più recenti rispetto ai file corrispondenti attualmente in uso. Il valore IPDFP \_ copy \_ All \_ files indica che è necessario aggiungere il driver della stampante e tutti i file nella directory del driver della stampante. I timestamp del file vengono ignorati quando *dwFlags* ha un valore IPDFP \_ Copia \_ tutti \_ i file.
+Può essere solo 0 o IPDFP \_ COPY \_ ALL \_ FILES. Il valore 0 indica che è necessario aggiungere il driver della stampante e copiare tutti i file nella directory del driver della stampante più recente rispetto ai file corrispondenti attualmente in uso. Il valore IPDFP COPY ALL FILES indica che è necessario aggiungere il driver della stampante e tutti i file nella directory del \_ \_ driver della \_ stampante. I timestamp dei file vengono ignorati *quando dwFlags* ha valore IPDFP \_ COPY ALL \_ \_ FILES.
 
 </dd> </dl>
 
 ## <a name="return-value"></a>Valore restituito
 
-Se l'operazione ha esito positivo, il valore restituito è \_ OK, altrimenti **HRESULT** conterrà un codice di errore.
+Se l'operazione ha esito positivo, il valore restituito è S OK, in caso contrario \_ **HRESULT** conterrà un codice di errore.
 
-Per ulteriori informazioni sui codici di errore COM, vedere [gestione degli errori](../com/error-handling-in-com.md).
+Per altre informazioni sui codici di errore COM, vedere [Gestione degli errori](../com/error-handling-in-com.md).
 
 ## <a name="remarks"></a>Commenti
 
 > [!Note]  
-> Si tratta di una funzione di blocco o sincrona e potrebbe non essere restituita immediatamente. La velocità di restituzione di questa funzione dipende da fattori di runtime quali lo stato della rete, la configurazione del server di stampa e i fattori di implementazione del driver della stampante difficili da prevedere durante la scrittura di un'applicazione. La chiamata di questa funzione da un thread che gestisce l'interazione con l'interfaccia utente potrebbe far sembrare che l'applicazione non risponda.
+> Si tratta di una funzione di blocco o sincrona e potrebbe non restituire immediatamente . La velocità di ritorno di questa funzione dipende da fattori in fase di esecuzione, ad esempio lo stato di rete, la configurazione del server di stampa e i fattori di implementazione del driver della stampante difficili da prevedere durante la scrittura di un'applicazione. La chiamata di questa funzione da un thread che gestisce l'interazione con l'interfaccia utente potrebbe far sembrare che l'applicazione non rispetti.
 
  
 
-L'archivio driver è in genere% windir% \\ inf o% windir% \\ system32 \\ DriverStore \\ FileRepository.
+L'archivio driver è in genere %windir% \\ inf o %windir% \\ System32 \\ DriverStore \\ FileRepository.
 
-**InstallPrinterDriverFromPackage** installa anche altri file nel pacchetto, ad esempio i profili colori e i processori di stampa.
+**InstallPrinterDriverFromPackage** installa anche altri file nel pacchetto, ad esempio profili colori e processori di stampa.
 
-Gli utenti devono disporre dei diritti di amministrazione della stampante per installare in un computer remoto o nel computer locale quando l'utente è connesso con Servizi terminal.
+Gli utenti devono disporre dei diritti di amministrazione della stampante per l'installazione in un computer remoto o nel computer locale quando l'utente è connesso con Servizi terminal.
 
 Solo i pacchetti firmati possono essere installati in un computer remoto.
 
@@ -107,10 +107,10 @@ Solo i pacchetti firmati possono essere installati in un computer remoto.
 
 | Requisito | Valore |
 |-------------------------------------|-----------------------------------------------------------------------------------------------------------|
-| Client minimo supportato<br/> | \[Solo app desktop di Windows Vista\]<br/>                                                            |
-| Server minimo supportato<br/> | \[Solo app desktop Windows Server 2008\]<br/>                                                      |
-| Intestazione<br/>                   | <dl> <dt>Winspool. h (include Windows. h)</dt> </dl> |
-| Libreria<br/>                  | <dl> <dt>Winspool. lib</dt> </dl>                   |
+| Client minimo supportato<br/> | Windows Solo \[ app desktop di Vista\]<br/>                                                            |
+| Server minimo supportato<br/> | Windows Solo app desktop server 2008 \[\]<br/>                                                      |
+| Intestazione<br/>                   | <dl> <dt>Winspool.h (include Windows.h)</dt> </dl> |
+| Libreria<br/>                  | <dl> <dt>Winspool.lib</dt> </dl>                   |
 | DLL<br/>                      | <dl> <dt>Spoolss.dll</dt> </dl>                    |
 | Nomi Unicode e ANSI<br/>   | **InstallPrinterDriverFromPackageW** (Unicode) e **InstallPrinterDriverFromPackageA** (ANSI)<br/> |
 

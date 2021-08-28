@@ -1,17 +1,17 @@
 ---
 description: Specifica la modalità del codec vocale.
 ms.assetid: 8425cdab-e43c-41ca-9c20-09ab6a5f06f4
-title: Proprietà MFPKEY_WMAVOICE_ENC_MusicSpeechClassMode (Wmcodecdsp. h)
+title: MFPKEY_WMAVOICE_ENC_MusicSpeechClassMode proprietà (Wmcodecdsp.h)
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 9776c76f2a8863afe73626f5a2940de2c0ccb7cf
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 303a86adbf9c443149ff78a47d19922284e38d2c0aeb56dcc13a74ca20cd54a1
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "106309108"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120113121"
 ---
-# <a name="mfpkey_wmavoice_enc_musicspeechclassmode-property"></a>\_Proprietà MFPKEY WMAVOICE \_ enc \_ MusicSpeechClassMode
+# <a name="mfpkey_wmavoice_enc_musicspeechclassmode-property"></a>Proprietà MFPKEY \_ WMAVOICE \_ ENC \_ MusicSpeechClassMode
 
 Specifica la modalità del codec vocale.
 
@@ -29,9 +29,9 @@ VT \_ I4
 
 ## <a name="remarks"></a>Commenti
 
-Il valore 1 informa il codec che il contenuto è di sola voce, il valore 2 indica che il codec determina automaticamente la modalità e qualsiasi altro valore informa il codec per l'utilizzo della modalità musica.
+Il valore 1 indica al codec che il contenuto è solo vocale, il valore 2 indica che il codec determina automaticamente la modalità e qualsiasi altro valore indica al codec di usare la modalità musica.
 
-Se la modalità automatica non codifica la voce mista e la musica in modo corretto, è possibile specificare la codifica per le singole sezioni del file usando la proprietà [MFPKEY \_ WMAVOICE \_ enc \_ EDL](mfpkey-wmavoice-enc-edlproperty.md) .
+Se la modalità automatica non codifica correttamente musica e voce mista, è possibile specificare la codifica per singole sezioni del file usando la proprietà [MFPKEY \_ WMAVOICE \_ ENC \_ EDL.](mfpkey-wmavoice-enc-edlproperty.md)
 
 ## <a name="requirements"></a>Requisiti
 
@@ -39,9 +39,9 @@ Se la modalità automatica non codifica la voce mista e la musica in modo corret
 
 | Requisito | Valore |
 |-------------------------------------|-----------------------------------------------------------------------------------------|
-| Client minimo supportato<br/> | \[Solo app desktop Windows XP\]<br/>                                             |
-| Server minimo supportato<br/> | \[Solo app desktop Windows Server 2003\]<br/>                                    |
-| Intestazione<br/>                   | <dl> <dt>Wmcodecdsp. h</dt> </dl> |
+| Client minimo supportato<br/> | Windows Solo \[ app desktop XP\]<br/>                                             |
+| Server minimo supportato<br/> | Windows Solo app desktop server 2003 \[\]<br/>                                    |
+| Intestazione<br/>                   | <dl> <dt>Wmcodecdsp.h</dt> </dl> |
 
 
 
@@ -49,7 +49,7 @@ Se la modalità automatica non codifica la voce mista e la musica in modo corret
 
 <dl> <dt>
 
-[Proprietà Media Foundation](media-foundation-properties.md)
+[Media Foundation proprietà](media-foundation-properties.md)
 </dt> </dl>
 
  

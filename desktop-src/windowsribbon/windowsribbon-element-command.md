@@ -3,7 +3,7 @@ title: Elemento Command
 description: Rappresenta una definizione di comando.
 ms.assetid: f332423d-d258-488d-9233-71687288b462
 keywords:
-- Elemento Command Della barra multifunzione di Windows
+- Elemento Command Windows barra multifunzione
 topic_type:
 - apiref
 api_name:
@@ -13,12 +13,12 @@ api_type:
 ms.topic: reference
 ms.date: 05/31/2018
 api_location: ''
-ms.openlocfilehash: 1e1df5b62c7b2d7c55345ba8d6da366d04697054
-ms.sourcegitcommit: 099ecdda1e83618b844387405da0db0ebda93a65
+ms.openlocfilehash: 0c29539c9c76342b8b88603ea3dd2926554228ac
+ms.sourcegitcommit: c276a8912787b2cda74dcf54eb96df961bb1188b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/04/2021
-ms.locfileid: "111443482"
+ms.lasthandoff: 08/20/2021
+ms.locfileid: "122626947"
 ---
 # <a name="command-element"></a>Elemento Command
 
@@ -47,10 +47,10 @@ Rappresenta una definizione di comando.
 
 <table>
 <colgroup>
-<col style="width: 25%" />
-<col style="width: 25%" />
-<col style="width: 25%" />
-<col style="width: 25%" />
+<col  />
+<col  />
+<col  />
+<col  />
 </colgroup>
 <thead>
 <tr class="header">
@@ -167,7 +167,7 @@ Può verificarsi una o più volte per ogni [**elemento Application.Commands.**](
 
 Gli elementi figlio **dell'elemento Command** possono essere presenti in qualsiasi ordine.
 
-In genere, le risorse command vengono dichiarate nel markup della barra multifunzione, ma possono anche essere impostate in fase di esecuzione con una chiamata a [**SetUICommandProperty**](/windows/desktop/api/uiribbon/nf-uiribbon-iuiframework-setuicommandproperty). Ad esempio, è possibile impostare la proprietà [ \_ PKEY \_ Keytip](windowsribbon-reference-properties-uipkey-keytip.md) dell'interfaccia utente per un oggetto Command anziché dichiarare un valore nel markup con [**l'elemento Command.Keytip.**](windowsribbon-element-command-keytip.md)
+In genere, le risorse command vengono dichiarate nel markup della barra multifunzione, ma possono anche essere impostate in fase di esecuzione con una chiamata a [**SetUICommandProperty**](/windows/desktop/api/uiribbon/nf-uiribbon-iuiframework-setuicommandproperty). Ad esempio, è possibile impostare la proprietà [ \_ \_ keytip PKEY](windowsribbon-reference-properties-uipkey-keytip.md) dell'interfaccia utente per un oggetto Command anziché dichiarare un valore nel markup con l'elemento [**Command.Keytip.**](windowsribbon-element-command-keytip.md)
 
 Nei casi in cui le proprietà Command, ad esempio etichette e immagini, non possono essere impostate con [**SetUICommandProperty,**](/windows/desktop/api/uiribbon/nf-uiribbon-iuiframework-setuicommandproperty) possono essere invalidate con una chiamata a [**InvalidateUICommand**](/windows/desktop/api/uiribbon/nf-uiribbon-iuiframework-invalidateuicommand). Dopo l'invalidazione, il framework esegue una query sull'applicazione host per i dettagli della risorsa.
 

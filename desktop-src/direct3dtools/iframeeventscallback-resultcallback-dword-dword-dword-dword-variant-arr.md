@@ -1,10 +1,10 @@
 ---
-description: Funzione di callback utilizzata per notificare all'host le informazioni sugli eventi nell'elenco degli eventi.
+description: Funzione di callback utilizzata per notificare all'host informazioni sugli eventi nell'elenco di eventi.
 MS-HAID: vspixengine.IFrameEventsCallback\_ResultCallback\_DWORD\_DWORD\_DWORD\_DWORD\_VARIANT\_arr
 MSHAttr:
 - PreferredSiteName:MSDN
 - PreferredLib:/library/windows/desktop
-title: 'Metodo IFrameEventsCallback:: ResultCallback'
+title: Metodo IFrameEventsCallback::ResultCallback
 ms.topic: reference
 ms.date: 05/31/2018
 ms.assetid: 5AB67A11-00C1-47AF-8C8C-8B2FDD095BCF
@@ -17,16 +17,16 @@ api_location:
 topic_type:
 - APIRef
 - kbSyntax
-ms.openlocfilehash: e746c54f2a82adb5042cd479e4ca04299c1b7402
-ms.sourcegitcommit: a47bd86f517de76374e4fff33cfeb613eb259a7e
+ms.openlocfilehash: 1b6cf33869fce9dc51df8dcd58f98b0cc17a5f44
+ms.sourcegitcommit: c276a8912787b2cda74dcf54eb96df961bb1188b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/06/2021
-ms.locfileid: "104225413"
+ms.lasthandoff: 08/20/2021
+ms.locfileid: "122623967"
 ---
-# <a name="span-idvspixengineiframeeventscallback_resultcallback_dword_dword_dword_dword_variant_arrspaniframeeventscallbackresultcallback-method"></a><span id="vspixengine.iframeeventscallback_resultcallback_dword_dword_dword_dword_variant_arr"></span>Metodo IFrameEventsCallback:: ResultCallback
+# <a name="span-idvspixengineiframeeventscallback_resultcallback_dword_dword_dword_dword_variant_arrspaniframeeventscallbackresultcallback-method"></a><span id="vspixengine.iframeeventscallback_resultcallback_dword_dword_dword_dword_variant_arr"></span>Metodo IFrameEventsCallback::ResultCallback
 
-Funzione di callback utilizzata per notificare all'host le informazioni sugli eventi nell'elenco degli eventi.
+Funzione di callback utilizzata per notificare all'host informazioni sugli eventi nell'elenco di eventi.
 
 ## <a name="syntax"></a>Sintassi
 
@@ -43,28 +43,28 @@ HRESULT ResultCallback(
 
 ## <a name="parameters"></a>Parametri
 
-*NumeroFrame*   
+*frameNumber*   
 Numero di frame associato agli eventi.
 
-*numElements*   
+*Elementi numElements*   
 Numero totale di campi in tutte le colonne di tutti gli eventi.
 
 *numRows*   
-Il numero di eventi nel risultato.
+Numero di eventi nel risultato.
 
-*numColumns*   
+*Numcolumns*   
 Numero di colonne (campi) in ogni riga.
 
-*\_pRowData count1*   
+*count1 \_ pRowData*   
 Informazioni sugli eventi; un elemento per ogni campo di ogni evento.
 
 ## <a name="return-value"></a>Valore restituito
 
-Se questo metodo ha esito positivo, restituisce **S \_ OK**. In caso contrario, restituisce un codice di errore **HRESULT** .
+Se questo metodo ha esito positivo, restituisce **S \_ OK**. In caso contrario, restituisce un **codice di errore HRESULT.**
 
 ## <a name="requirements"></a>Requisiti
 
-<table><colgroup><col style="width: 50%" /><col style="width: 50%" /></colgroup><tbody><tr class="odd"><td><p>Intestazione</p></td><td>Vspixengine. h</td></tr></tbody></table>
+<table><colgroup><col  /><col  /></colgroup><tbody><tr class="odd"><td><p>Intestazione</p></td><td>Vspixengine.h</td></tr></tbody></table>
 
 ## <a name="span-idsee_alsospansee-also"></a><span id="see_also"></span>Vedere anche
 

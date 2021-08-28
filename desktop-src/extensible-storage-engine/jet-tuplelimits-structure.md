@@ -15,12 +15,12 @@ api_type:
 - COM
 api_location: ''
 ROBOTS: INDEX,FOLLOW
-ms.openlocfilehash: c4e2c118b7b42dce82ec0a95c53853ec501a7152c08ad088bbddde251edadf3e
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: dc5a71328681e1ce415b1a34e9c8f718b460e7f0
+ms.sourcegitcommit: 9b5faa61c38b2d0c432b7f2dbee8c127b0e28a7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119472691"
+ms.lasthandoff: 08/19/2021
+ms.locfileid: "122471777"
 ---
 # <a name="jet_tuplelimits-structure"></a>JET_TUPLELIMITS struttura
 
@@ -29,7 +29,7 @@ _**Si applica a:** Windows | Windows Server_
 
 ## <a name="jet_tuplelimits-structure"></a>JET_TUPLELIMITS struttura
 
-La **JET_TUPLELIMITS** consente la personalizzazione delle caratteristiche dell'indice di tupla in base all'indice, anziché per ogni istanza, usando [JetSetSystemParameter](./jetsetsystemparameter-function.md).
+La **JET_TUPLELIMITS** consente la personalizzazione delle caratteristiche dell'indice di tupla in base all'indice, anziché in base all'istanza, usando [JetSetSystemParameter.](./jetsetsystemparameter-function.md)
 
 **Windows Server 2003:** La **JET_TUPLELIMITS** è stata introdotta in Windows Server 2003.
 
@@ -59,7 +59,7 @@ Lunghezza massima di una stringa da indicizzare. Ad esempio, se una colonna ha u
 
 **cchIncrement**
 
-Ciò consente di configurare lo stride in base all'indice.
+In questo modo lo stride può essere configurato in base all'indice.
 
 **Windows Vista:** Il **membro cchIncrement** è stato introdotto in Windows Vista. Prima di Windows Vista, la quantità di spostamento della finestra (lo "stride") era sempre 1, come illustrato nell'esempio nella sezione osservazioni.
 
@@ -71,52 +71,35 @@ Offset nel valore per iniziare a recuperare le tuple dal valore.
 
 ### <a name="remarks"></a>Commenti
 
-Un indice di tupla illustra una stringa e indicizza tutte le possibili sottostringhe di **chLengthMax.** Alla fine della stringa (o nella posizione **chToIndexMax,** a seconda di quale si verifica per prima), le sottostringhe di **almeno chLengthMin** verranno indicizzate.
+Un indice di tupla rappresenta una stringa e indicizza tutte le possibili sottostringhe di **chLengthMax.** Alla fine della stringa (o nella posizione **chToIndexMax,** a seconda di quale si verifica per prima), le sottostringhe di almeno **chLengthMin** verranno indicizzate.
 
 Un indice di tupla può essere usato per la ricerca di stringhe con caratteri jolly iniziali e finali.
 
-Supponendo che una riga con un campo di testo "RAIN IN SPAIN" venga creata con i parametri \! **chLengthMin**=2 e **chLengthMax**=3, nell'indice vengono create le voci seguenti:
+Supponendo una riga con un campo di testo "RAIN IN SPAIN", se viene creato un indice di tupla con i parametri \! **chLengthMin**=2 e **chLengthMax**=3, nell'indice vengono create le voci seguenti:
 
 "RAI"  
-"AIN"  
+"PIÙ CHE MAI"  
 "IN "  
 "N I"  
-"IN"  
+" IN"  
 "IN "  
 "N S"  
-"SP"  
+" SP"  
 "SPA"  
 "PAI"  
-"AIN"  
+"PIÙ CHE MAI"  
 "IN \! "  
 "N \! "
 
-Si noti che "IN" si verifica due volte e che l'ultima voce ("N ") è minore di \! 3 (**chLengthMax**). Si noti anche che l'algoritmo di suddivisione non è a conoscenza di spazi o parole e considera tutti i caratteri in modo identico.
+Si noti che "IN" si verifica due volte e che l'ultima voce ("N ") è minore di \! 3 (**chLengthMax**). Si noti anche che l'algoritmo di suddivisione non è in grado di riconoscere spazi o parole e considera tutti i caratteri in modo identico.
 
-**Windows XP: Windows** XP supporta gli indici di tupla, ma non dispone **di JET_TUPLELIMITS**. Il motore di database usa i valori predefiniti (**chLengthMin**=3, **chLengthMax**=10, **chToIndexMax**=32767). È comunque possibile modificare questi valori, ma vengono impostati per ogni istanza usando [JetSetSystemParameter](./jetsetsystemparameter-function.md) con [JET_paramIndexTuplesLengthMin](./index-parameters.md), [JET_paramIndexTuplesLengthMax](./index-parameters.md)e [JET_paramIndexTuplesToIndexMax](./index-parameters.md).
+**Windows XP:** Windows XP supporta gli indici di tupla, ma non **JET_TUPLELIMITS**. Il motore di database usa i valori predefiniti (**chLengthMin**=3, **chLengthMax**=10, **chToIndexMax**=32767). È comunque possibile modificare questi valori, ma vengono impostati per ogni istanza usando [JetSetSystemParameter](./jetsetsystemparameter-function.md) con [JET_paramIndexTuplesLengthMin](./index-parameters.md), [JET_paramIndexTuplesLengthMax](./index-parameters.md)e [JET_paramIndexTuplesToIndexMax](./index-parameters.md).
 
 ### <a name="requirements"></a>Requisiti
 
-<table>
-<colgroup>
-<col style="width: 50%" />
-<col style="width: 50%" />
-</colgroup>
-<tbody>
-<tr class="odd">
-<td><p><strong>Client</strong></p></td>
-<td><p>Richiede Windows Vista.</p></td>
-</tr>
-<tr class="even">
-<td><p><strong>Server</strong></p></td>
-<td><p>Richiede Windows Server 2008, Windows Server 2003.</p></td>
-</tr>
-<tr class="odd">
-<td><p><strong>Intestazione</strong></p></td>
-<td><p>Dichiarato in Esent.h.</p></td>
-</tr>
-</tbody>
-</table>
+
+| | | <p><strong>Client</strong></p> | <p>Richiede Windows Vista.</p> | | <p><strong>Server</strong></p> | <p>Richiede Windows Server 2008, Windows Server 2003.</p> | | <p><strong>Intestazione</strong></p> | <p>Dichiarato in Esent.h.</p> | 
+
 
 
 ### <a name="see-also"></a>Vedere anche
