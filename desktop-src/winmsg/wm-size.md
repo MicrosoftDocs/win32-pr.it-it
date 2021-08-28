@@ -1,22 +1,22 @@
 ---
-Description: Inviato a una finestra dopo la modifica delle dimensioni.
+Description: Inviato a una finestra dopo che le dimensioni sono state modificate.
 ms.assetid: e3e14dcd-9236-48bd-a692-6985d8146f81
-title: Messaggio WM_SIZE (winuser. h)
+title: WM_SIZE messaggio (Winuser.h)
 ms.topic: reference
 ms.custom: snippet-project
 ms.date: 07/27/2020
-ms.openlocfilehash: 04afafd3faafc4ea8c400472254dcf4ec4afa050
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: 473e4e63523c7b97968e54349e5882b7e589fc7238d717ccf96563b5ce93388e
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "106333633"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119548221"
 ---
-# <a name="wm_size-message"></a>\_Messaggio dimensioni WM
+# <a name="wm_size-message"></a>Messaggio \_ WM SIZE
 
-Inviato a una finestra dopo la modifica delle dimensioni.
+Inviato a una finestra dopo che le dimensioni sono state modificate.
 
-Una finestra riceve questo messaggio tramite la funzione [**WindowProc**](/windows/win32/api/winuser/nf-winuser-defwindowproca) .
+Una finestra riceve questo messaggio tramite la [**relativa funzione WindowProc.**](/windows/win32/api/winuser/nf-winuser-defwindowproca)
 
 
 ```C++
@@ -38,11 +38,11 @@ Tipo di ridimensionamento richiesto. Questo parametro può avere uno dei valori 
 
 | Valore                                                                                                                                                                                                                   | Significato                                                                                                            |
 |-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|--------------------------------------------------------------------------------------------------------------------|
-| <span id="SIZE_MAXHIDE"></span><span id="size_maxhide"></span><dl> <dt>**Dimensioni \_ MAXHIDE**</dt> <dt>4</dt> </dl>       | Il messaggio viene inviato a tutte le finestre popup quando un'altra finestra è ingrandita.<br/>                              |
-| <span id="SIZE_MAXIMIZED"></span><span id="size_maximized"></span><dl> <dt>**Dimensioni \_ Ingrandita**</dt> <dt>2</dt> </dl> | La finestra è stata ingrandita.<br/>                                                                          |
-| <span id="SIZE_MAXSHOW"></span><span id="size_maxshow"></span><dl> <dt>**Dimensioni \_ MAXSHOW**</dt> <dt>3</dt> </dl>       | Il messaggio viene inviato a tutte le finestre popup quando un'altra finestra è stata ripristinata alle dimensioni precedenti.<br/>      |
-| <span id="SIZE_MINIMIZED"></span><span id="size_minimized"></span><dl> <dt>**Dimensioni \_ RIDOTTO a icona**</dt> <dt>1</dt> </dl> | La finestra è stata ridotta a icona.<br/>                                                                          |
-| <span id="SIZE_RESTORED"></span><span id="size_restored"></span><dl> <dt>**Dimensioni \_ RIPRISTINAto**</dt> <dt>0</dt> </dl>    | La finestra è stata ridimensionata, ma non è stata applicata la **\_ riduzione delle dimensioni** né il valore **\_ ingrandito delle dimensioni** .<br/> |
+| <span id="SIZE_MAXHIDE"></span><span id="size_maxhide"></span><dl> <dt>**DIMENSIONI \_ MAXHIDE**</dt> <dt>4</dt> </dl>       | Il messaggio viene inviato a tutte le finestre popup quando un'altra finestra è ingrandita.<br/>                              |
+| <span id="SIZE_MAXIMIZED"></span><span id="size_maximized"></span><dl> <dt>**DIMENSIONI \_ INGRANDITA**</dt> <dt>2</dt> </dl> | La finestra è stata ingrandita.<br/>                                                                          |
+| <span id="SIZE_MAXSHOW"></span><span id="size_maxshow"></span><dl> <dt>**DIMENSIONI \_ MAXSHOW**</dt> <dt>3</dt> </dl>       | Il messaggio viene inviato a tutte le finestre popup quando un'altra finestra è stata ripristinata alle dimensioni precedenti.<br/>      |
+| <span id="SIZE_MINIMIZED"></span><span id="size_minimized"></span><dl> <dt>**DIMENSIONI \_ RIDOTTO A ICONA**</dt> <dt>1</dt> </dl> | La finestra è stata ridotta a icona.<br/>                                                                          |
+| <span id="SIZE_RESTORED"></span><span id="size_restored"></span><dl> <dt>**DIMENSIONI \_ RESTORED**</dt> <dt>0</dt> </dl>    | La finestra è stata ridimensionata, ma non viene applicato né il valore **SIZE \_ MINIMIZED** né **SIZE \_ MAXIMIZED.**<br/> |
 
 
 
@@ -53,9 +53,9 @@ Tipo di ridimensionamento richiesto. Questo parametro può avere uno dei valori 
 *lParam* 
 </dt> <dd>
 
-La parola di ordine inferiore di *lParam* specifica la nuova larghezza dell'area client.
+La parola più bassa di *lParam* specifica la nuova larghezza dell'area client.
 
-La parola di ordine superiore di *lParam* specifica la nuova altezza dell'area client.
+La parola più alta di *lParam* specifica la nuova altezza dell'area client.
 
 </dd> </dl>
 
@@ -63,7 +63,7 @@ La parola di ordine superiore di *lParam* specifica la nuova altezza dell'area c
 
 Tipo: **LRESULT**
 
-Se un'applicazione elabora il messaggio, deve restituire zero.
+Se un'applicazione elabora questo messaggio, deve restituire zero.
 
 ## <a name="example"></a>Esempio
 
@@ -110,16 +110,16 @@ LRESULT CALLBACK SimpleText::WndProc(HWND hwnd, UINT message, WPARAM wParam, LPA
 
 ```
 
-Esempio di [esempi di Windows classico](https://github.com/microsoft/Windows-classic-samples/blob/1d363ff4bd17d8e20415b92e2ee989d615cc0d91/Samples/Win7Samples/multimedia/DirectWrite/HelloWorld/SimpleText.cpp) in GitHub.
+Esempio di [Windows esempi classici](https://github.com/microsoft/Windows-classic-samples/blob/1d363ff4bd17d8e20415b92e2ee989d615cc0d91/Samples/Win7Samples/multimedia/DirectWrite/HelloWorld/SimpleText.cpp) in GitHub.
 
 ## <a name="remarks"></a>Commenti
 
-Se per una finestra figlio viene chiamata la funzione [**SetScrollPos**](https://msdn.microsoft.com/library/Cc411085(v=MSDN.10).aspx) o [**MoveWindow**](/windows/win32/api/winuser/nf-winuser-movewindow) come risultato del messaggio di **\_ dimensioni WM** , il parametro *bRedraw* o *bRepaint* deve essere diverso da zero per fare in modo che la finestra venga ridisegnata.
+Se la [**funzione SetScrollPos**](https://msdn.microsoft.com/library/Cc411085(v=MSDN.10).aspx) o [**MoveWindow**](/windows/win32/api/winuser/nf-winuser-movewindow) viene chiamata per una finestra figlio in seguito al messaggio **WM \_ SIZE,** il parametro *bRedraw* o *bRepaint* deve essere diverso da zero per fare in modo che la finestra venga ridisegnata.
 
-Sebbene la larghezza e l'altezza di una finestra siano valori a 32 bit, il parametro *lParam* contiene solo i 16 bit di ogni ordine inferiore.
+Anche se la larghezza e l'altezza di una finestra sono valori a 32 bit, il *parametro lParam* contiene solo i 16 bit più bassi di ognuno.
 
-La funzione [**DefWindowProc**](/windows/desktop/api/winuser/nf-winuser-defwindowproca) invia i messaggi di **\_ dimensioni WM** e di **\_ spostamento WM** quando elabora il messaggio [**WM \_ WINDOWPOSCHANGED**](wm-windowposchanged.md) .
-I messaggi WM **\_ size** e **WM \_ Move** non vengono inviati se un'applicazione gestisce il messaggio **WM \_ WINDOWPOSCHANGED** senza chiamare **DefWindowProc**.
+La [**funzione DefWindowProc**](/windows/desktop/api/winuser/nf-winuser-defwindowproca) invia i **messaggi WM \_ SIZE** e **WM \_ MOVE** quando elabora il [**messaggio WM \_ WINDOWPOSCHANGED.**](wm-windowposchanged.md)
+I **messaggi WM \_ SIZE** e **WM \_ MOVE** non vengono inviati se un'applicazione gestisce il messaggio **WM \_ WINDOWPOSCHANGED** senza **chiamare DefWindowProc.**
 
 ## <a name="requirements"></a>Requisiti
 
@@ -129,7 +129,7 @@ I messaggi WM **\_ size** e **WM \_ Move** non vengono inviati se un'applicazion
 |-------------------------------------|----------------------------------------------------------------------------------------------------------|
 | Client minimo supportato<br/> | Windows 2000 Professional \[solo app desktop\]<br/>                                               |
 | Server minimo supportato<br/> | Windows 2000 Server \[solo app desktop\]<br/>                                                     |
-| Intestazione<br/>                   | <dl> <dt>Winuser. h (include Windows. h)</dt> </dl> |
+| Intestazione<br/>                   | <dl> <dt>Winuser.h (includere Windows.h)</dt> </dl> |
 
 
 
@@ -146,10 +146,10 @@ I messaggi WM **\_ size** e **WM \_ Move** non vengono inviati se un'applicazion
 [**LOWORD**](/previous-versions/windows/desktop/legacy/ms632659(v=vs.85))
 </dt> <dt>
 
-[**MoveWindow**](/windows/win32/api/winuser/nf-winuser-movewindow)
+[**Movewindow**](/windows/win32/api/winuser/nf-winuser-movewindow)
 </dt> <dt>
 
-[**\_WINDOWPOSCHANGED WM**](wm-windowposchanged.md)
+[**WM \_ WINDOWPOSCHANGED**](wm-windowposchanged.md)
 </dt> <dt>
 
 **Informazioni concettuali**

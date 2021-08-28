@@ -1,7 +1,7 @@
 ---
-description: Recupera l'ID modello in questo oggetto dati file.
+description: Recupera l'ID modello in questo oggetto dati del file.
 ms.assetid: abc53dda-d3ed-461b-b3d8-a64845c44c81
-title: 'Metodo ID3DXFileData:: GetType (D3DX9Xof. h)'
+title: Metodo ID3DXFileData::GetType (D3DX9Xof.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -14,16 +14,16 @@ api_type:
 api_location:
 - D3dx9.lib
 - D3dx9.dll
-ms.openlocfilehash: 566052c06d5f7e55629a26442dd774a2f80fd647
-ms.sourcegitcommit: 14010c34b35fa268046c7683f021f86de08ddd0a
+ms.openlocfilehash: e386c27638ced2be41197bf5f0095a481365dd19bc39b69d5d13d1ac8ec8dc42
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/15/2021
-ms.locfileid: "104401993"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119748531"
 ---
-# <a name="id3dxfiledatagettype-method"></a>Metodo ID3DXFileData:: GetType
+# <a name="id3dxfiledatagettype-method"></a>Metodo ID3DXFileData::GetType
 
-Recupera l'ID modello in questo oggetto dati file.
+Recupera l'ID modello in questo oggetto dati del file.
 
 ## <a name="syntax"></a>Sintassi
 
@@ -40,12 +40,12 @@ HRESULT GetType(
 
 <dl> <dt>
 
-*pType* \[ in\]
+*pType* \[ Pollici\]
 </dt> <dd>
 
-Tipo: **[**GUID**](guid.md) \* const**
+Tipo: **[**CONST GUID**](guid.md) \***
 
-Puntatore al GUID che rappresenta il modello in questo oggetto dati file.
+Puntatore al GUID che rappresenta il modello in questo oggetto dati di file.
 
 </dd> </dl>
 
@@ -53,7 +53,7 @@ Puntatore al GUID che rappresenta il modello in questo oggetto dati file.
 
 Tipo: **[ **HRESULT**](https://msdn.microsoft.com/library/Bb401631(v=MSDN.10).aspx)**
 
-Se il metodo ha esito positivo, il valore restituito è \_ OK. Se il metodo ha esito negativo, verrà restituito il valore seguente: D3DXFERR \_ BADVALUE.
+Se il metodo ha esito positivo, il valore restituito è S \_ OK. Se il metodo ha esito negativo, verrà restituito il valore seguente: D3DXFERR \_ BADVALUE.
 
 ## <a name="requirements"></a>Requisiti
 
@@ -61,8 +61,8 @@ Se il metodo ha esito positivo, il valore restituito è \_ OK. Se il metodo ha e
 
 | Requisito | Valore |
 |--------------------|---------------------------------------------------------------------------------------|
-| Intestazione<br/>  | <dl> <dt>D3DX9Xof. h</dt> </dl> |
-| Libreria<br/> | <dl> <dt>D3dx9. lib</dt> </dl>  |
+| Intestazione<br/>  | <dl> <dt>D3DX9Xof.h</dt> </dl> |
+| Libreria<br/> | <dl> <dt>D3dx9.lib</dt> </dl>  |
 
 
 

@@ -1,15 +1,15 @@
 ---
 description: Il metodo SelectUpperButton seleziona il pulsante direzionale superiore dal menu visualizzato.
 ms.assetid: ace9e5b4-5461-46d6-94a5-420ec0825c70
-title: Metodo SelectUpperButton (Segment. h)
+title: Metodo SelectUpperButton (Segment.h)
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 85065da379672265aefc47f104ef0f1515c32a42
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: 78ffeb7b22f21ed2b238960991031a36a19fd4eb8104f253b78f3b6b81526937
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "106325906"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119683941"
 ---
 # <a name="selectupperbutton-method"></a>Metodo SelectUpperButton
 
@@ -18,7 +18,7 @@ ms.locfileid: "106325906"
 
  
 
-Il `SelectUpperButton` metodo consente di selezionare il pulsante direzionale superiore dal menu visualizzato.
+Il `SelectUpperButton` metodo seleziona il pulsante direzionale superiore dal menu visualizzato.
 
 ``` syntax
 MSWebDVD.SelectUpperButton()
@@ -34,7 +34,7 @@ Nessun valore restituito.
 
 | Requisito | Valore |
 |-------------------|--------------------------------------------------------------------------------------|
-| Intestazione<br/> | <dl> <dt>Segmento. h</dt> </dl> |
+| Intestazione<br/> | <dl> <dt>Segment.h</dt> </dl> |
 
 
 
@@ -42,7 +42,7 @@ Nessun valore restituito.
 
 <dl> <dt>
 
-[**ButtonsAvailable**](buttonsavailable-property.md)
+[**PulsantiDisponibili**](buttonsavailable-property.md)
 </dt> <dt>
 
 [**CurrentButton**](currentbutton-property.md)

@@ -1,9 +1,9 @@
 ---
-title: cella (Corecrt \_ Math. h)
-description: Restituisce il più piccolo valore integer maggiore o uguale al valore specificato.
+title: ceil (Corecrt \_ math.h)
+description: Restituisce il valore intero più piccolo maggiore o uguale al valore specificato.
 ms.assetid: 9823f321-14c3-4b27-9a4b-7a885cece39b
 keywords:
-- HLSL di cella
+- ceil HLSL
 topic_type:
 - apiref
 api_name:
@@ -14,20 +14,20 @@ api_type:
 - HeaderDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: ec86db320119b7f162ed48a748c1d1ff4335b6f3
-ms.sourcegitcommit: 14010c34b35fa268046c7683f021f86de08ddd0a
+ms.openlocfilehash: 87e898de0e638e93b4eea5d1f70f89ab7de125909a97f7bbbf058f6581c44c3d
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/15/2021
-ms.locfileid: "104995846"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119854951"
 ---
 # <a name="ceil"></a>ceil
 
-Restituisce il più piccolo valore integer maggiore o uguale al valore specificato.
+Restituisce il valore intero più piccolo maggiore o uguale al valore specificato.
 
 
 
-| cella *ret* (*x*) |
+| *ret* ceil(*x*) |
 |-----------------|
 
 
@@ -40,7 +40,7 @@ Restituisce il più piccolo valore integer maggiore o uguale al valore specifica
 
 | Elemento                                                   | Descrizione                            |
 |--------------------------------------------------------|----------------------------------------|
-| <span id="x"></span><span id="X"></span>*x*<br/> | \[nel \] valore specificato.<br/> |
+| <span id="x"></span><span id="X"></span>*X*<br/> | \[in \] Valore specificato.<br/> |
 
 
 
@@ -48,7 +48,7 @@ Restituisce il più piccolo valore integer maggiore o uguale al valore specifica
 
 ## <a name="return-value"></a>Valore restituito
 
-Valore integer più piccolo (restituito come tipo a virgola mobile) maggiore o uguale al parametro *x* .
+Valore intero più piccolo (restituito come tipo a virgola mobile) maggiore o uguale al *parametro x.*
 
 ## <a name="type-description"></a>Descrizione del tipo
 
@@ -56,23 +56,23 @@ Valore integer più piccolo (restituito come tipo a virgola mobile) maggiore o u
 
 | Nome  | [**Tipo di modello**](dx-graphics-hlsl-intrinsic-functions.md)                                                  | [**Tipo di componente**](dx-graphics-hlsl-intrinsic-functions.md) | Dimensione                           |
 |-------|----------------------------------------------------------------------------------------------------------------|----------------------------------------------------------------|--------------------------------|
-| *x*   | [**scalare**](dx-graphics-hlsl-intrinsic-functions.md), **vettore** o **matrice** | [**float**](/windows/desktop/WinProg/windows-data-types)                        | any                            |
-| *RET* | uguale all'input *x*                                                                                              | [**float**](/windows/desktop/WinProg/windows-data-types)                        | le stesse dimensioni di input *x* |
+| *x*   | [**scalare,**](dx-graphics-hlsl-intrinsic-functions.md) **vettore** o **matrice** | [**Galleggiante**](/windows/desktop/WinProg/windows-data-types)                        | any                            |
+| *Ret* | uguale all'input *x*                                                                                              | [**Galleggiante**](/windows/desktop/WinProg/windows-data-types)                        | stesse dimensioni dell'input *x* |
 
 
 
  
 
-## <a name="minimum-shader-model"></a>Modello Shader minimo
+## <a name="minimum-shader-model"></a>Modello di shader minimo
 
-Questa funzione è supportata nei modelli shader seguenti.
+Questa funzione è supportata nei modelli di shader seguenti.
 
 
 
 | Modello di shader                                                                       | Supportato |
 |------------------------------------------------------------------------------------|-----------|
-| [Shader Model 2 (DirectX HLSL)](dx-graphics-hlsl-sm2.md) e modelli shader più elevati | sì       |
-| [Shader Model 1 (DirectX HLSL)](dx-graphics-hlsl-sm1.md)                          | vs \_ 1 \_ 1  |
+| [Modello shader 2 (DirectX HLSL)](dx-graphics-hlsl-sm2.md) e modelli shader superiori | sì       |
+| [Modello shader 1 (HLSL DirectX)](dx-graphics-hlsl-sm1.md)                          | vs \_ 1 \_ 1  |
 
 
 
@@ -84,7 +84,7 @@ Questa funzione è supportata nei modelli shader seguenti.
 
 | Requisito | Valore |
 |-------------------|--------------------------------------------------------------------------------------------|
-| Intestazione<br/> | <dl> <dt>Corecrt \_ Math. h</dt> </dl> |
+| Intestazione<br/> | <dl> <dt>Corecrt \_ math.h</dt> </dl> |
 
 
 

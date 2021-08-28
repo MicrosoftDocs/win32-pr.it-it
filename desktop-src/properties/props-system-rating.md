@@ -1,19 +1,19 @@
 ---
-description: Sistema di classificazione che utilizza valori integer compresi tra 1 e 99. Si tratta del sistema di classificazione utilizzato dalla shell di Windows Vista.
+description: Sistema di classificazione che usa valori interi compresi tra 1 e 99. Questo è il sistema di classificazione usato dalla shell Windows Vista.
 ms.assetid: a6288d29-1ef3-4da1-bd30-577336ab6817
-title: System. rating
+title: System.Rating
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 7e411e313f0fa6042a8cbe3a076a7166928020af
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 9adc62e69ced0f82426f19badb1aebef0453084a9b951b749aed256aa64820a7
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "106311161"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119598131"
 ---
-# <a name="systemrating"></a>System. rating
+# <a name="systemrating"></a>System.Rating
 
-Sistema di classificazione che utilizza valori integer compresi tra 1 e 99. Si tratta del sistema di classificazione utilizzato dalla shell di Windows Vista.
+Sistema di classificazione che usa valori interi compresi tra 1 e 99. Questo è il sistema di classificazione usato dalla shell Windows Vista.
 
 ## <a name="windows-10-version-1703-windows-10-version-1607-windows-10-version-1511-windows-10-version-1507-windows-81-windows-8-windows-7"></a>Windows 10, versione 1703, Windows 10, versione 1607, Windows 10, versione 1511, Windows 10, versione 1507, Windows 8.1, Windows 8, Windows 7
 
@@ -139,15 +139,15 @@ propertyDescription
 
 ## <a name="remarks"></a>Commenti
 
-I valori PKEY sono definiti in Propkey. h.
+I valori PKEY sono definiti in Propkey.h.
 
-Per la compatibilità con i sistemi di classificazione che usano valori compresi tra 1 e 5, vedere la proprietà [System. SimpleRating](./props-system-simplerating.md). Si noti, tuttavia, che System. SimpleRating non viene utilizzato nella shell di Windows Vista.
+Per la compatibilità con i sistemi ratings che usano valori compresi tra 1 e 5, vedere la [proprietà System.SimpleRating](./props-system-simplerating.md). Si noti, tuttavia, che System.SimpleRating non viene usato nella shell Windows Vista.
 
-Nella tabella seguente viene descritto il significato del sistema di classificazione a stella utilizzato nell'interfaccia utente della shell in termini di valore [System. rating]() .
+La tabella seguente descrive il significato del sistema di classificazione a stella usato nell'interfaccia utente della shell in termini [di valore System.Rating.]()
 
 
 
-| System. rating | Classificazione a stelle |
+| System.Rating | Classificazione a stelle |
 |---------------|-------------|
 | 1-12          | 1 stella      |
 | 13-37         | 2 stelle     |
@@ -159,11 +159,11 @@ Nella tabella seguente viene descritto il significato del sistema di classificaz
 
  
 
-Quando un utente valuta un elemento scegliendo un valore di classificazione a stella nell'interfaccia utente, i valori effettivi di [System. rating]() vengono assegnati come illustrato nella tabella seguente:
+Quando un utente valuta un elemento scegliendo un valore di classificazione a stella nell'interfaccia utente, i valori [System.Rating]() effettivi vengono assegnati come illustrato nella tabella seguente:
 
 
 
-| Classificazione a stelle | Valore assegnato tramite interfaccia utente |
+| Classificazione a stelle | Valore assegnato tramite l'interfaccia utente |
 |-------------|---------------------------|
 | 1 stella      | 1                         |
 | 2 stelle     | 25                        |
@@ -175,11 +175,11 @@ Quando un utente valuta un elemento scegliendo un valore di classificazione a st
 
  
 
-Se il file ha un valore [System. SimpleRating](./props-system-simplerating.md) anziché un valore [System. rating]() , usare la tabella seguente per convertire e specificare i valori per System. rating.
+Se il file ha un [valore System.SimpleRating](./props-system-simplerating.md) anziché un valore [System.Rating,]() usare la tabella seguente per convertire e specificare i valori per System.Rating.
 
 
 
-| System. SimpleRating | System. rating |
+| System.SimpleRating | System.Rating |
 |---------------------|---------------|
 | 1                   | 1             |
 | 2                   | 25            |
@@ -191,13 +191,13 @@ Se il file ha un valore [System. SimpleRating](./props-system-simplerating.md) a
 
  
 
-Se il file contiene valori salvati in modo permanente di System [. rating]() e [System. SimpleRating](./props-system-simplerating.md) , usare sempre il valore System. rating quando viene richiesto direttamente, senza riferimento a System. SimpleRating.
+Se il file contiene valori persistenti [sia System.Rating]() che [System.SimpleRating,](./props-system-simplerating.md) usare sempre il valore System.Rating quando viene richiesto direttamente, senza riferimenti a System.SimpleRating.
 
 ## <a name="related-topics"></a>Argomenti correlati
 
 <dl> <dt>
 
-[propertyDescription](./propdesc-schema-propertydescription.md)
+[proprietàDescrizione](./propdesc-schema-propertydescription.md)
 </dt> <dt>
 
 [searchInfo](./propdesc-schema-searchinfo.md)
@@ -206,13 +206,13 @@ Se il file contiene valori salvati in modo permanente di System [. rating]() e [
 [labelInfo](./propdesc-schema-labelinfo.md)
 </dt> <dt>
 
-[typeInfo](./propdesc-schema-typeinfo.md)
+[Typeinfo](./propdesc-schema-typeinfo.md)
 </dt> <dt>
 
 [displayInfo](./propdesc-schema-displayinfo.md)
 </dt> <dt>
 
-[stringFormat](./propdesc-schema-stringformat.md)
+[Stringformat](./propdesc-schema-stringformat.md)
 </dt> <dt>
 
 [booleanFormat](./propdesc-schema-booleanformat.md)
@@ -221,13 +221,13 @@ Se il file contiene valori salvati in modo permanente di System [. rating]() e [
 [numberFormat](./propdesc-schema-numberformat.md)
 </dt> <dt>
 
-[dateTimeFormat](./propdesc-schema-datetimeformat.md)
+[Datetimeformat](./propdesc-schema-datetimeformat.md)
 </dt> <dt>
 
 [enumeratedList](./propdesc-schema-enumeratedlist.md)
 </dt> <dt>
 
-[drawControl](./propdesc-schema-drawcontrol.md)
+[DrawControl](./propdesc-schema-drawcontrol.md)
 </dt> <dt>
 
 [editControl](./propdesc-schema-editcontrol.md)

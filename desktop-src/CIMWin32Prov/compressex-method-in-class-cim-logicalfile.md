@@ -1,5 +1,5 @@
 ---
-description: Il metodo CompressEx comprime il file o la directory logica specificata nel percorso dell'oggetto. Questo metodo è una versione estesa del metodo Compress.
+description: Il metodo CompressEx comprime il file logico (o directory) specificato nel percorso dell'oggetto. Questo metodo è una versione estesa del metodo Compress.
 ms.assetid: 7d119865-c246-4cb5-9de4-48a4c42efd90
 ms.tgt_platform: multiple
 title: Metodo CompressEx della classe CIM_LogicalFile
@@ -14,23 +14,23 @@ api_type:
 - COM
 api_location:
 - CIMWin32.dll
-ms.openlocfilehash: 7570cbe3ebc00708023a18da42ef35ff3306d3b0
-ms.sourcegitcommit: c7add10d695482e1ceb72d62b8a4ebd84ea050f7
+ms.openlocfilehash: 3bd055f6cfbb2294c6a761a0019eab7e9102e77361a1267b2d9b7255ea7d00a1
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "103877361"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119547711"
 ---
-# <a name="compressex-method-of-the-cim_logicalfile-class"></a>Metodo CompressEx della classe CIM \_ LogicalFile
+# <a name="compressex-method-of-the-cim_logicalfile-class"></a>Metodo CompressEx della classe \_ CiM LogicalFile
 
-Il metodo **CompressEx** comprime il file o la directory logica specificata nel percorso dell'oggetto. Questo metodo è una versione estesa del metodo [**Compress**](compress-method-in-class-cim-logicalfile.md) .
+Il **metodo CompressEx** comprime il file logico (o directory) specificato nel percorso dell'oggetto. Questo metodo è una versione estesa del [**metodo Compress.**](compress-method-in-class-cim-logicalfile.md)
 
 > [!IMPORTANT]
-> Le classi CIM (Common Information Model) DMTF (Distributed Management Task Force) sono le classi padre sulle quali vengono compilate le classi WMI. Attualmente WMI supporta solo gli [schemi della versione CIM 2. x](https://dmtf.org/standards/cim/schemas).
+> Le classi CIM (Distributed Management Task Force) DMTF (Distributed Management Task Force) Common Information Model sono le classi padre su cui vengono compilate le classi WMI. WMI supporta attualmente solo gli [schemi della versione CIM 2.x](https://dmtf.org/standards/cim/schemas).
 
  
 
-In questo argomento viene utilizzata la sintassi Managed Object Format (MOF). Per ulteriori informazioni sull'utilizzo di questo metodo, vedere [chiamata a un metodo](/windows/desktop/WmiSdk/calling-a-method).
+Questo argomento usa Managed Object Format (MOF). Per altre informazioni sull'uso di questo metodo, vedere [Chiamata di un metodo](/windows/desktop/WmiSdk/calling-a-method).
 
 ## <a name="syntax"></a>Sintassi
 
@@ -49,30 +49,30 @@ uint32 CompressEx(
 
 <dl> <dt>
 
-*StopFileName* \[ out\]
+*StopFileName* \[ Cambio\]
 </dt> <dd>
 
-Nome del file o della directory in cui il metodo ha avuto esito negativo. Questo parametro è null se il metodo ha esito positivo.
+Nome del file (o directory) in cui il metodo non è riuscito. Questo parametro è Null se il metodo ha esito positivo.
 
 </dd> <dt>
 
 *StartFileName* \[ in, facoltativo\]
 </dt> <dd>
 
-File figlio (o directory) da utilizzare come punto di partenza per il metodo. In genere, questo parametro è il parametro *StopFileName* che specifica il file o la directory in cui si è verificato un errore dalla chiamata al metodo precedente. Se questo parametro è null, l'operazione viene eseguita sul file o sulla directory specificati nella chiamata [**ExecMethod**](/windows/desktop/WmiSdk/swbemservices-execmethod) .
+File figlio (o directory) da usare come punto di partenza per il metodo . In genere, questo parametro è il *parametro StopFileName* che specifica il file o la directory in cui si è verificato un errore dalla chiamata al metodo precedente. Se questo parametro è Null, l'operazione viene eseguita sul file (o sulla directory) specificato nella [**chiamata a ExecMethod.**](/windows/desktop/WmiSdk/swbemservices-execmethod)
 
 </dd> <dt>
 
 *Ricorsivo* \[ in, facoltativo\]
 </dt> <dd>
 
-Se è **true**, anche il metodo viene applicato in modo ricorsivo a file e directory all'interno della directory specificata dall'istanza [**CIM \_ LogicalFile**](cim-logicalfile.md) . Per le istanze di file, questo parametro viene ignorato.
+Se **TRUE,** il metodo viene applicato anche in modo ricorsivo ai file e alle directory all'interno della directory specificata [**dall'istanza \_ logicalFile CIM.**](cim-logicalfile.md) Per le istanze di file, questo parametro viene ignorato.
 
 </dd> </dl>
 
 ## <a name="return-value"></a>Valore restituito
 
-Restituisce un valore pari a 0 (zero) in caso di esito positivo e qualsiasi altro numero per indicare un errore.
+Restituisce il valore 0 (zero) in caso di esito positivo e qualsiasi altro numero per indicare un errore.
 
 <dl> <dt>
 
@@ -112,7 +112,7 @@ Oggetto non valido.
 
 </dd> <dt>
 
-**Oggetto già esistente**
+**L'oggetto esiste già**
 </dt> <dd>
 
 10
@@ -121,12 +121,12 @@ Oggetto già esistente.
 
 </dd> <dt>
 
-**File System non NTFS**
+**File system non NTFS**
 </dt> <dd>
 
 11
 
-File System non NTFS.
+File system non NTFS.
 
 </dd> <dt>
 
@@ -144,7 +144,7 @@ Piattaforma non Windows.
 
 13
 
-L'unità non è la stessa.
+Unità non uguale.
 
 </dd> <dt>
 
@@ -206,7 +206,7 @@ Questo metodo non è attualmente implementato da WMI. Per usare questo metodo, �
 | Client minimo supportato<br/> | Windows Vista<br/>                                                                |
 | Server minimo supportato<br/> | Windows Server 2008<br/>                                                          |
 | Spazio dei nomi<br/>                | \\CIMV2 radice<br/>                                                                  |
-| MOF<br/>                      | <dl> <dt>CIMWin32. mof</dt> </dl> |
+| MOF<br/>                      | <dl> <dt>CIMWin32.mof</dt> </dl> |
 | DLL<br/>                      | <dl> <dt>CIMWin32.dll</dt> </dl> |
 
 
@@ -215,10 +215,10 @@ Questo metodo non è attualmente implementato da WMI. Per usare questo metodo, �
 
 <dl> <dt>
 
-[\_LOGICALFILE CIM](compressex-method-in-class-cim-logicalfile.md)
+[CIM \_ LogicalFile](compressex-method-in-class-cim-logicalfile.md)
 </dt> <dt>
 
-[**\_LOGICALFILE CIM**](cim-logicalfile.md)
+[**CIM \_ LogicalFile**](cim-logicalfile.md)
 </dt> </dl>
 
  

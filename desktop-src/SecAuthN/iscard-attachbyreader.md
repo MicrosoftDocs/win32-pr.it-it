@@ -1,7 +1,7 @@
 ---
-description: Il metodo AttachByReader apre la smart card nel lettore denominato.
+description: Il metodo AttachByReader apre il smart card nel lettore denominato.
 ms.assetid: a92f3281-5018-4e90-bfa0-f03eb9373bb1
-title: 'Metodo IsValid:: AttachByReader (Scardmgr. h)'
+title: Metodo ISCard::AttachByReader (Scardmgr.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -13,18 +13,18 @@ api_type:
 - COM
 api_location:
 - Scardssp.dll
-ms.openlocfilehash: 2607ea2e13be2dcccc3c1b6beebd40c86822d0a5
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: b1227c94edbf5816a8f1e867436462a743e6961e3ca70bb7b8a521c289312f18
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "103968292"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120015681"
 ---
-# <a name="iscardattachbyreader-method"></a>Metodo IsValid:: AttachByReader
+# <a name="iscardattachbyreader-method"></a>Metodo ISCard::AttachByReader
 
-\[Il metodo **AttachByReader** è disponibile per l'uso nei sistemi operativi specificati nella sezione requisiti. Non è disponibile per l'utilizzo in Windows Server 2003 con Service Pack 1 (SP1) e versioni successive, Windows Vista, Windows Server 2008 e versioni successive del sistema operativo. I [moduli Smart Card](/previous-versions/windows/desktop/secsmart/smart-card-modules) offrono funzionalità simili.\]
+\[Il **metodo AttachByReader** è disponibile per l'uso nei sistemi operativi specificati nella sezione Requisiti. Non è disponibile per l'uso in Windows Server 2003 con Service Pack 1 (SP1) e versioni successive, Windows Vista, Windows Server 2008 e versioni successive del sistema operativo. I [moduli smart card offrono](/previous-versions/windows/desktop/secsmart/smart-card-modules) funzionalità simili.\]
 
-Il metodo **AttachByReader** apre la [*Smart Card*](../secgloss/s-gly.md) nel [*lettore*](../secgloss/r-gly.md)denominato.
+Il **metodo AttachByReader** apre il [*smart card*](../secgloss/s-gly.md) nel lettore [*denominato.*](../secgloss/r-gly.md)
 
 ## <a name="syntax"></a>Sintassi
 
@@ -43,24 +43,24 @@ HRESULT AttachByReader(
 
 <dl> <dt>
 
-*bstrReaderName* \[ in\]
+*bstrReaderName* \[ Pollici\]
 </dt> <dd>
 
-**BSTR** che contiene il nome del lettore di smart card.
+Oggetto **BSTR** che contiene il nome del lettore smart card lettura.
 
 </dd> <dt>
 
-*SHAREMODE* \[ in\]
+*ShareMode* \[ Pollici\]
 </dt> <dd>
 
-Modalità in cui richiedere l'accesso alla smart card.
+Modalità in cui richiedere l'accesso al smart card.
 
 
 
 | Valore                                                                                                                                            | Significato                                                       |
 |--------------------------------------------------------------------------------------------------------------------------------------------------|---------------------------------------------------------------|
-| <span id="EXCLUSIVE"></span><span id="exclusive"></span><dl> <dt>**ESCLUSIVO**</dt> </dl> | Nessun altro usa questa connessione alla smart card.<br/> |
-| <span id="SHARED"></span><span id="shared"></span><dl> <dt>**CONDIVISO**</dt> </dl>          | Questa connessione può essere utilizzata da altre applicazioni.<br/>        |
+| <span id="EXCLUSIVE"></span><span id="exclusive"></span><dl> <dt>**Esclusivo**</dt> </dl> | Nessun altro usa questa connessione al smart card.<br/> |
+| <span id="SHARED"></span><span id="shared"></span><dl> <dt>**condiviso**</dt> </dl>          | Altre applicazioni possono usare questa connessione.<br/>        |
 
 
 
@@ -68,7 +68,7 @@ Modalità in cui richiedere l'accesso alla smart card.
 
 </dd> <dt>
 
-*PrefProtocol* \[ in\]
+*PrefProtocol* \[ Pollici\]
 </dt> <dd>
 
 Valore del protocollo preferito.
@@ -95,8 +95,8 @@ Il metodo restituisce uno dei valori possibili seguenti.
 
 | Codice restituito                                                                                  | Descrizione                                                                                      |
 |----------------------------------------------------------------------------------------------|--------------------------------------------------------------------------------------------------|
-| <dl> <dt>**\_OK**</dt> </dl>         | L'apertura della smart card nel lettore denominato è stata completata correttamente.<br/>           |
-| <dl> <dt>**E \_ INVALIDARG**</dt> </dl> | Si è verificato un problema con uno o più parametri passati nella funzione.<br/> |
+| <dl> <dt>**S \_ OK**</dt> </dl>         | L'apertura nel smart card nel lettore denominato è stata completata correttamente.<br/>           |
+| <dl> <dt>**E \_ INVALIDARG**</dt> </dl> | Si è verificato un errore in uno o più parametri passati alla funzione.<br/> |
 
 
 
@@ -104,13 +104,13 @@ Il metodo restituisce uno dei valori possibili seguenti.
 
 ## <a name="remarks"></a>Commenti
 
-Oltre ai codici di errore COM elencati sopra, questa interfaccia può restituire un codice di errore della [*Smart Card*](../secgloss/s-gly.md) se è stata chiamata una funzione Smart Card per completare la richiesta. Per ulteriori informazioni, vedere [valori restituiti della smart card](authentication-return-values.md).
+Oltre ai codici di errore COM elencati [](../secgloss/s-gly.md) in precedenza, questa interfaccia può restituire un smart card di errore se è stata chiamata una funzione smart card per completare la richiesta. Per altre informazioni, vedere [Smart Card Return Values](authentication-return-values.md).
 
-Al termine dell'utilizzo del lettore, rilasciare l'allegato chiamando il metodo [**etach::D**](iscard-detach.md) .
+Al termine dell'uso del lettore, rilasciare l'allegato chiamando il metodo [**ISCard::D etach.**](iscard-detach.md)
 
 ## <a name="examples"></a>Esempio
 
-Nell'esempio seguente viene illustrata la connessione a una smart card in un lettore di smart card specificato.
+L'esempio seguente illustra il collegamento a un smart card in un lettore smart card specificato.
 
 
 ```C++
@@ -159,14 +159,14 @@ void main()
 
 | Requisito | Valore |
 |-------------------------------------|-----------------------------------------------------------------------------------------|
-| Client minimo supportato<br/> | \[Solo app desktop Windows XP\]<br/>                                             |
-| Server minimo supportato<br/> | \[Solo app desktop Windows Server 2003\]<br/>                                    |
+| Client minimo supportato<br/> | Windows Solo \[ app desktop XP\]<br/>                                             |
+| Server minimo supportato<br/> | Windows Solo app desktop server 2003 \[\]<br/>                                    |
 | Fine del supporto client<br/>    | Windows XP<br/>                                                                   |
 | Fine del supporto server<br/>    | Windows Server 2003<br/>                                                          |
-| Intestazione<br/>                   | <dl> <dt>Scardmgr. h</dt> </dl>   |
-| Libreria dei tipi<br/>             | <dl> <dt>Scardmgr. tlb</dt> </dl> |
+| Intestazione<br/>                   | <dl> <dt>Scardmgr.h</dt> </dl>   |
+| Libreria dei tipi<br/>             | <dl> <dt>Scardmgr.tlb</dt> </dl> |
 | DLL<br/>                      | <dl> <dt>Scardssp.dll</dt> </dl> |
-| IID<br/>                      | La \_ scheda IID è definita come 1461AAC3-6810-11D0-918F-00AA00C18068<br/>               |
+| IID<br/>                      | IID ISCard è definito come \_ 1461AAC3-6810-11D0-918F-00AA00C18068<br/>               |
 
 
 
@@ -177,10 +177,10 @@ void main()
 [**AttachByHandle**](iscard-attachbyhandle.md)
 </dt> <dt>
 
-[**Scollegare**](iscard-detach.md)
+[**Detach**](iscard-detach.md)
 </dt> <dt>
 
-[**Scheda di**](iscard.md)
+[**ISCard**](iscard.md)
 </dt> <dt>
 
 [**Ricollegare**](iscard-reattach.md)

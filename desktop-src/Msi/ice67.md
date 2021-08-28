@@ -1,39 +1,39 @@
 ---
-description: ICE67 verifica che la destinazione di un collegamento non annunciato appartenga allo stesso componente del collegamento stesso o che gli attributi del componente di destinazione garantiscano che non modifichi i percorsi di installazione.
+description: ICE67 verifica che la destinazione di un collegamento non annunciato appartenga allo stesso componente del collegamento stesso o che gli attributi del componente di destinazione garantisca che non cambino i percorsi di installazione.
 ms.assetid: 3fc462e7-4c11-4167-a157-6c1e0791901d
 title: ICE67
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 7ca140a2d7eace9b693e82763f6bf5824346b51e
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 1b25f3bba6bd6efaf20b55982524840348f39e8717dc53b7699a6f5f2886df01
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "103968236"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119787391"
 ---
 # <a name="ice67"></a>ICE67
 
-ICE67 verifica che la destinazione di un collegamento non annunciato appartenga allo stesso componente del collegamento stesso o che gli attributi del componente di destinazione garantiscano che non modifichi i percorsi di installazione.
+ICE67 verifica che la destinazione di un collegamento non annunciato appartenga allo stesso componente del collegamento stesso o che gli attributi del componente di destinazione garantisca che non cambino i percorsi di installazione.
 
-Se si verifica un errore durante la correzione di un avviso o di un errore segnalato da ICE67, il collegamento non può essere valido se lo stato del componente di destinazione è diverso da quello di origine. Ad esempio, quando il componente del file di destinazione è impostato per l'esecuzione dall'origine, una reinstallazione che modifica il componente in locale genera il componente contenente il collegamento che non viene reinstallato. Quindi il collegamento punta a una posizione non valida.
+Se non si corregge un avviso o un errore segnalato da ICE67, il collegamento può non essere valido se il componente di destinazione cambia stato e il componente di origine non lo fa. Ad esempio, quando il componente del file di destinazione è impostato per l'esecuzione dall'origine, una reinstallazione che modifica il componente in locale determina la non reinstallazione del componente contenente il collegamento. Il collegamento punta quindi a una posizione non valida.
 
-Si noti che in alcuni casi l'uso di un componente diverso per il collegamento è inevitabile. Se, ad esempio, il collegamento viene creato nel profilo utente e il file viene installato in una directory non del profilo, potrebbe non essere possibile utilizzare lo stesso componente per entrambe le parti di dati. Ciò comporta errori negli scenari multiutente, ad esempio quelli descritti in [ICE57](ice57.md). In questo caso, è possibile usare i tasti di scelta rapida annunciati per ottenere il comportamento desiderato. in alternativa, è sufficiente assicurarsi che il componente di destinazione non sia in grado di passare da Run-from-source a local.
+Si noti che in alcuni casi è inevitabile usare un componente diverso per il collegamento. Ad esempio, se il collegamento viene creato nel profilo utente e il file viene installato in una directory non di profilo, potrebbe non essere possibile usare lo stesso componente per entrambi i dati. Ciò comporta errori in scenari multi-utente, ad esempio quelli descritti in [ICE57.](ice57.md) In questo caso, è possibile usare i collegamenti annunciati per ottenere il comportamento desiderato oppure assicurarsi semplicemente che il componente di destinazione non possa passare dall'esecuzione dall'origine a quella locale.
 
 ## <a name="result"></a>Risultato
 
-ICE67 restituisce un errore o un avviso se la destinazione di un collegamento non annunciato non appartiene allo stesso componente del collegamento stesso o se gli attributi del componente di destinazione non assicurano che i percorsi di installazione non vengano modificati.
+ICE67 restituisce un errore o un avviso se la destinazione di un collegamento non annunciato non appartiene allo stesso componente del collegamento stesso o se gli attributi del componente di destinazione non garantiscono che i percorsi di installazione non cambino.
 
 ## <a name="example"></a>Esempio
 
-ICE67 segnala i seguenti avvisi ed errori per l'esempio illustrato.
+ICE67 segnala l'avviso e gli errori seguenti per l'esempio illustrato.
 
 ``` syntax
 The shortcut 'Shortcut1' is a non-advertised shortcut with a file target. The shortcut and target are installed by different components, and the target component can run locally or from source.
 ```
 
-Shortcut1 viene installato da Component2, ma il relativo file di destinazione, file1, viene installato da Component1. Il componente di destinazione è contrassegnato come facoltativo, ovvero può essere locale o di origine. Una possibile situazione che potrebbe causare un problema è il caso in cui Component1 modifiche da Run-from-source a local. In questo modo Shortcut1 potrebbe puntare a una posizione non valida.
+Shortcut1 viene installato da Component2, ma il relativo file di destinazione, File1, viene installato da component1. Il componente di destinazione è contrassegnato come facoltativo, ovvero può essere locale o run-from-source. Una possibile situazione che potrebbe causare un problema è se Component1 cambia da run-from-source a local. In questo modo Shortcut1 fa in modo che punti a una posizione non valida.
 
-Per correggere il problema, installare il collegamento come parte di Component1 oppure contrassegnare Component1 come LocalOnly o SourceOnly.
+Per correggere l'avviso, installare il collegamento come parte di Component1 o contrassegnare Component1 come LocalOnly o SourceOnly.
 
 [Tabella file](file-table.md) (parziale)
 
@@ -41,31 +41,31 @@ Per correggere il problema, installare il collegamento come parte di Component1 
 
 | File  | Componente\_ |
 |-------|-------------|
-| File1 | Component1  |
+| File1 | Componente1  |
 
 
 
  
 
-[Tabella collegamenti](shortcut-table.md) (parziale)
+[Tabella dei collegamenti](shortcut-table.md) (parziale)
 
 
 
 | Tasto di scelta rapida  | Componente\_ | Destinazione      |
 |-----------|-------------|-------------|
-| Shortcut1 | Component2  | \[\#File1\] |
+| Collegamento1 | Componente2  | \[\#File1\] |
 
 
 
  
 
-[Tabella componenti](component-table.md) (parziale)
+[Tabella dei componenti](component-table.md) (parziale)
 
 
 
 | Componente  | Attributi |
 |------------|------------|
-| Component1 | 2          |
+| Componente1 | 2          |
 
 
 
@@ -75,7 +75,7 @@ Per correggere il problema, installare il collegamento come parte di Component1 
 
 <dl> <dt>
 
-[Riferimento ghiaccio](ice-reference.md)
+[Informazioni di riferimento su ICE](ice-reference.md)
 </dt> </dl>
 
  

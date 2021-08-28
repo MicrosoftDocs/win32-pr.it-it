@@ -1,6 +1,6 @@
 ---
-title: RET-PS
-description: Accetta l'indirizzo di un'istruzione dallo stack di indirizzi restituiti e continua l'esecuzione. Nel caso della funzione Main, questa istruzione arresta l'esecuzione dello shader.
+title: ret - ps
+description: Accetta l'indirizzo di un'istruzione dallo stack di indirizzi restituiti e continua l'esecuzione da esso. Nel caso della funzione main, questa istruzione arresta l'esecuzione dello shader.
 ms.assetid: f853a137-8944-4f6e-89c0-7fd37d1a468e
 ms.topic: reference
 ms.date: 05/31/2018
@@ -9,58 +9,58 @@ topic_type:
 api_name: ''
 api_type: ''
 api_location: ''
-ms.openlocfilehash: b0535a4fcd66a1872b5eaa9ec97c292de710b48c
-ms.sourcegitcommit: fe03c5d92ca6a0d66a114b2303e99c0a19241ffb
+ms.openlocfilehash: b77d2bb63655a83716d74621a5ece097259b0a90461f902801c375a079f118f6
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/20/2019
-ms.locfileid: "104976346"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119853781"
 ---
-# <a name="ret---ps"></a>RET-PS
+# <a name="ret---ps"></a>ret - ps
 
-Accetta l'indirizzo di un'istruzione dallo stack di indirizzi restituiti e continua l'esecuzione. Nel caso della funzione Main, questa istruzione arresta l'esecuzione dello shader.
+Accetta l'indirizzo di un'istruzione dallo stack di indirizzi restituiti e continua l'esecuzione da esso. Nel caso della funzione main, questa istruzione arresta l'esecuzione dello shader.
 
 ## <a name="syntax"></a>Sintassi
 
 
 
-| RET |
+| Ret |
 |-----|
 
 
 
- 
+ 
 
 ## <a name="remarks"></a>Commenti
 
 
 
-| Versioni pixel shader | 1\_1 | 1\_2 | 1 \_ 3 | 1\_4 | 2 \_ 0 | 2 \_ x | 2 \_ SW | 3 \_ 0 | 3 \_ SW |
+| Versioni dei pixel shader | 1\_1 | 1\_2 | 1 \_ 3 | 1\_4 | 2 \_ 0 | 2 \_ x | 2 \_ sw | 3 \_ 0 | 3 \_ sw |
 |-----------------------|------|------|------|------|------|------|-------|------|-------|
-| RET                   |      |      |      |      |      | x    | x     | x    | x     |
+| Ret                   |      |      |      |      |      | x    | x     | x    | x     |
 
 
 
- 
+ 
 
-Questa istruzione accetta l'indirizzo di un'istruzione dallo stack di indirizzi restituiti e continua l'esecuzione. Nel caso della funzione Main, questa istruzione arresta l'esecuzione dello shader.
+Questa istruzione accetta l'indirizzo di un'istruzione dallo stack di indirizzi restituiti e continua l'esecuzione da esso. Nel caso della funzione main, questa istruzione arresta l'esecuzione dello shader.
 
-L'istruzione RET usa uno slot di istruzioni vertex shader.
+L'istruzione ret usa uno slot di istruzioni vertex shader.
 
-Se uno shader non contiene subroutine, l'utilizzo di RET alla fine del programma principale è facoltativo.
+Se uno shader non contiene subroutine, l'uso di ret alla fine del programma principale è facoltativo.
 
-Non sono consentite più istruzioni return nel programma principale o in una subroutine, la prima istruzione return viene considerata come la fine del programma principale o della subroutine.
+Non sono consentite più istruzioni return nel programma principale o in qualsiasi subroutine. La prima istruzione return viene considerata la fine del programma principale o della subroutine.
 
 ## <a name="related-topics"></a>Argomenti correlati
 
 <dl> <dt>
 
-[Istruzioni pixel shader](dx9-graphics-reference-asm-ps-instructions.md)
+[Istruzioni per pixel shader](dx9-graphics-reference-asm-ps-instructions.md)
 </dt> </dl>
 
- 
+ 
 
- 
+ 
 
 
 

@@ -1,11 +1,11 @@
 ---
-title: Classe ACS-Subnet
-description: Contiene i parametri di configurazione per un server ACS (servizio di controllo dell'allocazione della larghezza di banda).
+title: ACS-Subnet classe
+description: Contiene i parametri di configurazione per un server ACS (Bandwidth Allocation Control Service).
 ms.assetid: 454425ae-2bc3-4407-b328-b9873e70e2bb
 ms.tgt_platform: multiple
 keywords:
-- Schema di AD ACS-Subnet Class
-- Schema di Active Directory della classe aCSSubnet
+- ACS-Subnet schema AD della classe
+- Schema AD della classe aCSSubnet
 topic_type:
 - apiref
 api_name:
@@ -14,26 +14,26 @@ api_type:
 - Schema
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 5e372ae07a9ab523daf0b33a09e4d988a59497f2
-ms.sourcegitcommit: b77ace27b0432e7cd3863191b11926be032fbe2f
+ms.openlocfilehash: 71a08cbc8ba542c5f7c5377156ec52baadb89a9082afa8a7e09687826c4887f3
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/14/2020
-ms.locfileid: "103744506"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119702281"
 ---
-# <a name="acs-subnet-class"></a>Classe ACS-Subnet
+# <a name="acs-subnet-class"></a>ACS-Subnet classe
 
-Contiene i parametri di configurazione per un server ACS (servizio di controllo dell'allocazione della larghezza di banda).
+Contiene i parametri di configurazione per un server ACS (Bandwidth Allocation Control Service).
 
 
 
 | Voce | Valore |
 |-------------------|--------------------------------------|
 | CN                | ACS-Subnet                           |
-| LDAP-Display-Name | aCSSubnet                            |
-| Privilegio aggiornamento  | \-                                   |
+| Ldap-Display-Name | aCSSubnet                            |
+| Privilegio di aggiornamento  | \-                                   |
 | Frequenza di aggiornamento  | \-                                   |
-| Schema-ID-GUID    | 7f561289-5301-11d1-a9c5-0000f80367c1 |
+| Schema-Id-Guid    | 7f561289-5301-11d1-a9c5-0000f80367c1 |
 
 
 
@@ -58,18 +58,18 @@ Contiene i parametri di configurazione per un server ACS (servizio di controllo 
 | Object-Category             | 1                                                                                            |
 | Default-Object-Category     | \-                                                                                           |
 | Governs-Id                  | 1.2.840.113556.1.5.138                                                                       |
-| Valore predefinito-nascondiglio        | 1                                                                                            |
-| RDN-att-ID                  | [**Nome comune**](a-cn.md)<br/>                                                       |
+| Default-Hiding-Value        | 1                                                                                            |
+| Rdn-Att-Id                  | [**Nome comune**](a-cn.md)<br/>                                                       |
 | Sottoclasse di                 | [**In alto**](c-top.md)<br/>                                                              |
 | Possibili superiori          | [**Contenitore**](c-container.md)                                                             |
 | Classi ausiliarie           | \-                                                                                           |
-| NT-Security-descrittore      | O:BAG: NON VALIDO: S:                                                                                 |
-| Descrittore di sicurezza predefinito | D: (A;; RPWPCRCCDCLCLORCWOWDSDDTSW;;;D A) (A;; RPWPCRCCDCLCLORCWOWDSDDTSW;;; SY) (A;; RPLCLORC;;; Au |
+| NT-Security-Descriptor      | O:BAG:BAD:S:                                                                                 |
+| Descrittore di sicurezza predefinito | D:(A;; RPWPCRCCDCLCLORCWOWDSDDTSW;;;D A)(A;; RPWPCRCCDCLCLORCWOWDSDDTSW;;; SY)(A;; RPLCLORC;;; Au) |
 | System-Flags                | 0x00000010                                                                                   |
 
 
 
-## <a name="windows-2000-server-attributes"></a>Attributi del server Windows 2000
+## <a name="windows-2000-server-attributes"></a>Windows 2000 Server Attributes
 
 Questa classe contiene gli attributi seguenti per Windows 2000 Server:
 
@@ -77,105 +77,105 @@ Questa classe contiene gli attributi seguenti per Windows 2000 Server:
 
 | Attributo                                                                   | Obbligatorio | Derivato da                    |
 |-----------------------------------------------------------------------------|-----------|---------------------------------|
-| [**ACS-allocabile-RSVP-larghezza di banda**](a-acsallocablersvpbandwidth.md)         | Falso     | **ACS-subnet**                  |
-| [**ACS-cache-timeout**](a-acscachetimeout.md)                              | Falso     | **ACS-subnet**                  |
-| [**ACS-DSBM-DeadTime**](a-acsdsbmdeadtime.md)                              | Falso     | **ACS-subnet**                  |
-| [**ACS-DSBM-priorità**](a-acsdsbmpriority.md)                              | Falso     | **ACS-subnet**                  |
-| [**ACS-DSBM-Refresh**](a-acsdsbmrefresh.md)                                | Falso     | **ACS-subnet**                  |
-| [**ACS-Enable-ACS-Service**](a-acsenableacsservice.md)                     | Falso     | **ACS-subnet**                  |
-| [**ACS-Enable-RSVP-Accounting**](a-acsenablersvpaccounting.md)             | Falso     | **ACS-subnet**                  |
-| [**ACS-Enable-RSVP-Message-Logging**](a-acsenablersvpmessagelogging.md)    | Falso     | **ACS-subnet**                  |
-| [**ACS-a livello di registro eventi**](a-acseventloglevel.md)                           | Falso     | **ACS-subnet**                  |
-| [**ACS-Max-durata per flusso**](a-acsmaxdurationperflow.md)                | Falso     | **ACS-subnet**                  |
-| [**ACS-Max-No-of-account-files**](a-acsmaxnoofaccountfiles.md)             | Falso     | **ACS-subnet**                  |
-| [**ACS-Max-No-of-log-files**](a-acsmaxnooflogfiles.md)                     | Falso     | **ACS-subnet**                  |
-| [**ACS-max-picco-larghezza di banda**](a-acsmaxpeakbandwidth.md)                     | Falso     | **ACS-subnet**                  |
-| [**ACS-max-picco-larghezza di banda per flusso**](a-acsmaxpeakbandwidthperflow.md)     | Falso     | **ACS-subnet**                  |
-| [**ACS-max-size-of-RSVP-account-file**](a-acsmaxsizeofrsvpaccountfile.md)  | Falso     | **ACS-subnet**                  |
-| [**ACS-max-size-of-RSVP-log-file**](a-acsmaxsizeofrsvplogfile.md)          | Falso     | **ACS-subnet**                  |
-| [**ACS-max-token-rate-per-Flow**](a-acsmaxtokenrateperflow.md)             | Falso     | **ACS-subnet**                  |
-| [**ACS-non riservato-max-SDU-size**](a-acsnonreservedmaxsdusize.md)         | Falso     | **ACS-subnet**                  |
-| [**ACS-non riservato-min-Police-size**](a-acsnonreservedminpolicedsize.md) | Falso     | **ACS-subnet**                  |
-| [**ACS-non riservato-frequenza massima**](a-acsnonreservedpeakrate.md)              | Falso     | **ACS-subnet**                  |
-| [**ACS-non riservato-token-size**](a-acsnonreservedtokensize.md)            | Falso     | **ACS-subnet**                  |
-| [**ACS-non riservato-TX-Limit**](a-acsnonreservedtxlimit.md)                | Falso     | **ACS-subnet**                  |
-| [**ACS-non riservato-TX-size**](a-acsnonreservedtxsize.md)                  | Falso     | **ACS-subnet**                  |
-| [**ACS-RSVP-account-files-location**](a-acsrsvpaccountfileslocation.md)    | Falso     | **ACS-subnet**                  |
-| [**ACS-RSVP-log-files-location**](a-acsrsvplogfileslocation.md)            | Falso     | **ACS-subnet**                  |
-| [**Elenco di server ACS**](a-acsserverlist.md)                                  | Falso     | **ACS-subnet**                  |
-| [**Admin-Descrizione**](a-admindescription.md)                             | Falso     | [**In alto**](c-top.md)<br/> |
+| [**ACS-Allocable-RSVP-Bandwidth**](a-acsallocablersvpbandwidth.md)         | Falso     | **ACS-Subnet**                  |
+| [**ACS-Cache-Timeout**](a-acscachetimeout.md)                              | Falso     | **ACS-Subnet**                  |
+| [**ACS-DSBM-DeadTime**](a-acsdsbmdeadtime.md)                              | Falso     | **ACS-Subnet**                  |
+| [**ACS-DSBM-Priority**](a-acsdsbmpriority.md)                              | Falso     | **ACS-Subnet**                  |
+| [**ACS-DSBM-Refresh**](a-acsdsbmrefresh.md)                                | Falso     | **ACS-Subnet**                  |
+| [**ACS-Enable-ACS-Service**](a-acsenableacsservice.md)                     | Falso     | **ACS-Subnet**                  |
+| [**ACS-Enable-RSVP-Accounting**](a-acsenablersvpaccounting.md)             | Falso     | **ACS-Subnet**                  |
+| [**ACS-Enable-RSVP-Message-Logging**](a-acsenablersvpmessagelogging.md)    | Falso     | **ACS-Subnet**                  |
+| [**ACS-Event-Log-Level**](a-acseventloglevel.md)                           | Falso     | **ACS-Subnet**                  |
+| [**ACS-Max-Duration-Per-Flow**](a-acsmaxdurationperflow.md)                | Falso     | **ACS-Subnet**                  |
+| [**ACS-max-no-of-account-files**](a-acsmaxnoofaccountfiles.md)             | Falso     | **ACS-Subnet**                  |
+| [**ACS-max-no-of-log-files**](a-acsmaxnooflogfiles.md)                     | Falso     | **ACS-Subnet**                  |
+| [**ACS-Max-Peak-Bandwidth**](a-acsmaxpeakbandwidth.md)                     | Falso     | **ACS-Subnet**                  |
+| [**ACS-Max-Peak-Bandwidth-Per-Flow**](a-acsmaxpeakbandwidthperflow.md)     | Falso     | **ACS-Subnet**                  |
+| [**ACS-max-size-of-RSVP-account-file**](a-acsmaxsizeofrsvpaccountfile.md)  | Falso     | **ACS-Subnet**                  |
+| [**ACS-max-size-of-RSVP-log-file**](a-acsmaxsizeofrsvplogfile.md)          | Falso     | **ACS-Subnet**                  |
+| [**ACS-Max-Token-Rate-Per-Flow**](a-acsmaxtokenrateperflow.md)             | Falso     | **ACS-Subnet**                  |
+| [**ACS-Non-Reserved-Max-SDU-Size**](a-acsnonreservedmaxsdusize.md)         | Falso     | **ACS-Subnet**                  |
+| [**ACS-Non-Reserved-Min-Policed-Size**](a-acsnonreservedminpolicedsize.md) | Falso     | **ACS-Subnet**                  |
+| [**ACS-Non-Reserved-Peak-Rate**](a-acsnonreservedpeakrate.md)              | Falso     | **ACS-Subnet**                  |
+| [**ACS-Non-Reserved-Token-Size**](a-acsnonreservedtokensize.md)            | Falso     | **ACS-Subnet**                  |
+| [**ACS-Non-Reserved-Tx-Limit**](a-acsnonreservedtxlimit.md)                | Falso     | **ACS-Subnet**                  |
+| [**ACS-Non-Reserved-Tx-Size**](a-acsnonreservedtxsize.md)                  | Falso     | **ACS-Subnet**                  |
+| [**ACS-RSVP-Account-Files-Location**](a-acsrsvpaccountfileslocation.md)    | Falso     | **ACS-Subnet**                  |
+| [**ACS-RSVP-Log-Files-Location**](a-acsrsvplogfileslocation.md)            | Falso     | **ACS-Subnet**                  |
+| [**ACS-Server-List**](a-acsserverlist.md)                                  | Falso     | **ACS-Subnet**                  |
+| [**Descrizione dell'amministratore**](a-admindescription.md)                             | Falso     | [**In alto**](c-top.md)<br/> |
 | [**Admin-Display-Name**](a-admindisplayname.md)                            | Falso     | [**In alto**](c-top.md)<br/> |
 | [**Attributi consentiti**](a-allowedattributes.md)                           | Falso     | [**In alto**](c-top.md)<br/> |
-| [**Consentito-attributi-valido**](a-allowedattributeseffective.md)        | Falso     | [**In alto**](c-top.md)<br/> |
-| [**Classi consentite-figlio**](a-allowedchildclasses.md)                      | Falso     | [**In alto**](c-top.md)<br/> |
-| [**Consentito-classi figlio-valide**](a-allowedchildclasseseffective.md)   | Falso     | [**In alto**](c-top.md)<br/> |
-| [**Testa di ponte-server-list-BL**](a-bridgeheadserverlistbl.md)               | Falso     | [**In alto**](c-top.md)<br/> |
-| [**Nome canonico**](a-canonicalname.md)                                   | Falso     | [**In alto**](c-top.md)<br/> |
+| [**Allowed-Attributes-Effective**](a-allowedattributeseffective.md)        | Falso     | [**In alto**](c-top.md)<br/> |
+| [**Classi figlio consentite**](a-allowedchildclasses.md)                      | Falso     | [**In alto**](c-top.md)<br/> |
+| [**Allowed-Child-Classes-Effective**](a-allowedchildclasseseffective.md)   | Falso     | [**In alto**](c-top.md)<br/> |
+| [**Bridgehead-Server-List-BL**](a-bridgeheadserverlistbl.md)               | Falso     | [**In alto**](c-top.md)<br/> |
+| [**Canonical-Name**](a-canonicalname.md)                                   | Falso     | [**In alto**](c-top.md)<br/> |
 | [**Nome comune**](a-cn.md)                                                 | Falso     | [**In alto**](c-top.md)<br/> |
 | [**Creazione timestamp**](a-createtimestamp.md)                              | Falso     | [**In alto**](c-top.md)<br/> |
 | [**Descrizione**](a-description.md)                                        | Falso     | [**In alto**](c-top.md)<br/> |
 | [**Nome visualizzato**](a-displayname.md)                                       | Falso     | [**In alto**](c-top.md)<br/> |
-| [**Display-Name-stampabile**](a-displaynameprintable.md)                    | Falso     | [**In alto**](c-top.md)<br/> |
-| [**DSA-firma**](a-dsasignature.md)                                     | Falso     | [**In alto**](c-top.md)<br/> |
-| [**DS-Core-propagazione-dati**](a-dscorepropagationdata.md)                 | Falso     | [**In alto**](c-top.md)<br/> |
-| [**Nome estensione**](a-extensionname.md)                                   | Falso     | [**In alto**](c-top.md)<br/> |
+| [**Display-Name-Printable**](a-displaynameprintable.md)                    | Falso     | [**In alto**](c-top.md)<br/> |
+| [**Firma DSA**](a-dsasignature.md)                                     | Falso     | [**In alto**](c-top.md)<br/> |
+| [**DS-Core-Propagation-Data**](a-dscorepropagationdata.md)                 | Falso     | [**In alto**](c-top.md)<br/> |
+| [**Extension-Name**](a-extensionname.md)                                   | Falso     | [**In alto**](c-top.md)<br/> |
 | [**Bandiere**](a-flags.md)                                                    | Falso     | [**In alto**](c-top.md)<br/> |
-| [**Da-entry**](a-fromentry.md)                                           | Falso     | [**In alto**](c-top.md)<br/> |
-| [**FRS-computer-Reference-BL**](a-frscomputerreferencebl.md)               | Falso     | [**In alto**](c-top.md)<br/> |
-| [**FRS-member-Reference-BL**](a-frsmemberreferencebl.md)                   | Falso     | [**In alto**](c-top.md)<br/> |
+| [**From-Entry**](a-fromentry.md)                                           | Falso     | [**In alto**](c-top.md)<br/> |
+| [**Frs-Computer-Reference-BL**](a-frscomputerreferencebl.md)               | Falso     | [**In alto**](c-top.md)<br/> |
+| [**FRS-Member-Reference-BL**](a-frsmemberreferencebl.md)                   | Falso     | [**In alto**](c-top.md)<br/> |
 | [**FSMO-Role-Owner**](a-fsmoroleowner.md)                                  | Falso     | [**In alto**](c-top.md)<br/> |
 | [**Tipo di istanza**](a-instancetype.md)                                     | Vero      | [**In alto**](c-top.md)<br/> |
 | [**Is-Critical-System-Object**](a-iscriticalsystemobject.md)               | Falso     | [**In alto**](c-top.md)<br/> |
-| [**Viene eliminato**](a-isdeleted.md)                                           | Falso     | [**In alto**](c-top.md)<br/> |
-| [**Is-member-of-DL**](a-memberof.md)                                       | Falso     | [**In alto**](c-top.md)<br/> |
-| [**Is-Privilege-Holder**](a-isprivilegeholder.md)                          | Falso     | [**In alto**](c-top.md)<br/> |
+| [**Is-Deleted**](a-isdeleted.md)                                           | Falso     | [**In alto**](c-top.md)<br/> |
+| [**Membro di DL**](a-memberof.md)                                       | Falso     | [**In alto**](c-top.md)<br/> |
+| [**Titolare dei privilegi**](a-isprivilegeholder.md)                          | Falso     | [**In alto**](c-top.md)<br/> |
 | [**Ultimo elemento padre noto**](a-lastknownparent.md)                              | Falso     | [**In alto**](c-top.md)<br/> |
 | [**Oggetti gestiti**](a-managedobjects.md)                                 | Falso     | [**In alto**](c-top.md)<br/> |
-| [**Mastered-by**](a-masteredby.md)                                         | Falso     | [**In alto**](c-top.md)<br/> |
-| [**Modifica-timestamp**](a-modifytimestamp.md)                              | Falso     | [**In alto**](c-top.md)<br/> |
-| [**MS-DS-coerenza-figlio-conteggio**](a-ms-ds-consistencychildcount.md)      | Falso     | [**In alto**](c-top.md)<br/> |
+| [**Mastered-By**](a-masteredby.md)                                         | Falso     | [**In alto**](c-top.md)<br/> |
+| [**Modifica timestamp**](a-modifytimestamp.md)                              | Falso     | [**In alto**](c-top.md)<br/> |
+| [**MS-DS-Consistency-Child-Count**](a-ms-ds-consistencychildcount.md)      | Falso     | [**In alto**](c-top.md)<br/> |
 | [**MS-DS-Consistency-Guid**](a-ms-ds-consistencyguid.md)                   | Falso     | [**In alto**](c-top.md)<br/> |
-| [**-SCP-BL**](a-netbootscpbl.md)                                    | Falso     | [**In alto**](c-top.md)<br/> |
-| [**Non-Security-member-BL**](a-nonsecuritymemberbl.md)                     | Falso     | [**In alto**](c-top.md)<br/> |
-| [**NT-Security-descrittore**](a-ntsecuritydescriptor.md)                    | Vero      | [**In alto**](c-top.md)<br/> |
+| [**netboot-SCP-BL**](a-netbootscpbl.md)                                    | Falso     | [**In alto**](c-top.md)<br/> |
+| [**Non-Security-Member-BL**](a-nonsecuritymemberbl.md)                     | Falso     | [**In alto**](c-top.md)<br/> |
+| [**NT-Security-Descriptor**](a-ntsecuritydescriptor.md)                    | Vero      | [**In alto**](c-top.md)<br/> |
 | [**Obj-Dist-Name**](a-distinguishedname.md)                                | Falso     | [**In alto**](c-top.md)<br/> |
-| [**Categoria oggetto**](a-objectcategory.md)                                 | Vero      | [**In alto**](c-top.md)<br/> |
-| [**Classe Object**](a-objectclass.md)                                       | Vero      | [**In alto**](c-top.md)<br/> |
-| [**GUID oggetto**](a-objectguid.md)                                         | Falso     | [**In alto**](c-top.md)<br/> |
+| [**Categoria di oggetti**](a-objectcategory.md)                                 | Vero      | [**In alto**](c-top.md)<br/> |
+| [**Classe object**](a-objectclass.md)                                       | Vero      | [**In alto**](c-top.md)<br/> |
+| [**Guid oggetto**](a-objectguid.md)                                         | Falso     | [**In alto**](c-top.md)<br/> |
 | [**Versione oggetto**](a-objectversion.md)                                   | Falso     | [**In alto**](c-top.md)<br/> |
-| [**Altri oggetti-well-known**](a-otherwellknownobjects.md)                 | Falso     | [**In alto**](c-top.md)<br/> |
-| [**Elenco di eliminazione-attributo parziale**](a-partialattributedeletionlist.md)   | Falso     | [**In alto**](c-top.md)<br/> |
-| [**Set di attributi parziali**](a-partialattributeset.md)                      | Falso     | [**In alto**](c-top.md)<br/> |
-| [**Possibili-inferiori**](a-possibleinferiors.md)                           | Falso     | [**In alto**](c-top.md)<br/> |
-| [**Nome-oggetto-proxy**](a-proxiedobjectname.md)                          | Falso     | [**In alto**](c-top.md)<br/> |
+| [**Altri oggetti noti**](a-otherwellknownobjects.md)                 | Falso     | [**In alto**](c-top.md)<br/> |
+| [**Partial-Attribute-Deletion-List**](a-partialattributedeletionlist.md)   | Falso     | [**In alto**](c-top.md)<br/> |
+| [**Partial-Attribute-Set**](a-partialattributeset.md)                      | Falso     | [**In alto**](c-top.md)<br/> |
+| [**Possibili eserezioni**](a-possibleinferiors.md)                           | Falso     | [**In alto**](c-top.md)<br/> |
+| [**Proxied-Object-Name**](a-proxiedobjectname.md)                          | Falso     | [**In alto**](c-top.md)<br/> |
 | [**Indirizzi proxy**](a-proxyaddresses.md)                                 | Falso     | [**In alto**](c-top.md)<br/> |
-| [**Query-criteri-BL**](a-querypolicybl.md)                                  | Falso     | [**In alto**](c-top.md)<br/> |
-| [**RDN**](a-name.md)                                                       | Falso     | [**In alto**](c-top.md)<br/> |
-| [**REPL-Property-meta-dati**](a-replpropertymetadata.md)                   | Falso     | [**In alto**](c-top.md)<br/> |
-| [**REPL-UpToDate-Vector**](a-repluptodatevector.md)                        | Falso     | [**In alto**](c-top.md)<br/> |
+| [**Query-Policy-BL**](a-querypolicybl.md)                                  | Falso     | [**In alto**](c-top.md)<br/> |
+| [**Rdn**](a-name.md)                                                       | Falso     | [**In alto**](c-top.md)<br/> |
+| [**Repl-Property-Meta-Data**](a-replpropertymetadata.md)                   | Falso     | [**In alto**](c-top.md)<br/> |
+| [**Repl-UpToDate-Vector**](a-repluptodatevector.md)                        | Falso     | [**In alto**](c-top.md)<br/> |
 | [**Report**](a-directreports.md)                                          | Falso     | [**In alto**](c-top.md)<br/> |
-| [**Reps-da**](a-repsfrom.md)                                             | Falso     | [**In alto**](c-top.md)<br/> |
-| [**Da Reps a**](a-repsto.md)                                                 | Falso     | [**In alto**](c-top.md)<br/> |
+| [**Reps-From**](a-repsfrom.md)                                             | Falso     | [**In alto**](c-top.md)<br/> |
+| [**Reps-To**](a-repsto.md)                                                 | Falso     | [**In alto**](c-top.md)<br/> |
 | [**Revisione**](a-revision.md)                                              | Falso     | [**In alto**](c-top.md)<br/> |
-| [**SD-diritti-efficacia**](a-sdrightseffective.md)                          | Falso     | [**In alto**](c-top.md)<br/> |
-| [**Server-riferimento-BL**](a-serverreferencebl.md)                          | Falso     | [**In alto**](c-top.md)<br/> |
-| [**Mostra-in-solo visualizzazione avanzata**](a-showinadvancedviewonly.md)              | Falso     | [**In alto**](c-top.md)<br/> |
-| [**Site-Object-BL**](a-siteobjectbl.md)                                    | Falso     | [**In alto**](c-top.md)<br/> |
+| [**SD-Rights-Effective**](a-sdrightseffective.md)                          | Falso     | [**In alto**](c-top.md)<br/> |
+| [**Server-Reference-BL**](a-serverreferencebl.md)                          | Falso     | [**In alto**](c-top.md)<br/> |
+| [**Show-In-Advanced-View-Only**](a-showinadvancedviewonly.md)              | Falso     | [**In alto**](c-top.md)<br/> |
+| [**Oggetto sito -BL**](a-siteobjectbl.md)                                    | Falso     | [**In alto**](c-top.md)<br/> |
 | [**Riferimenti secondari**](a-subrefs.md)                                               | Falso     | [**In alto**](c-top.md)<br/> |
 | [**SubSchemaSubEntry**](a-subschemasubentry.md)                            | Falso     | [**In alto**](c-top.md)<br/> |
 | [**Flag di sistema**](a-systemflags.md)                                       | Falso     | [**In alto**](c-top.md)<br/> |
-| [**USN-modificato**](a-usnchanged.md)                                         | Falso     | [**In alto**](c-top.md)<br/> |
-| [**USN creato**](a-usncreated.md)                                         | Falso     | [**In alto**](c-top.md)<br/> |
-| [**USN-DSA-Last-obj-rimosso**](a-usndsalastobjremoved.md)                  | Falso     | [**In alto**](c-top.md)<br/> |
-| [**USN-tra siti**](a-usnintersite.md)                                     | Falso     | [**In alto**](c-top.md)<br/> |
-| [**USN-ultimo-obj-REM**](a-usnlastobjrem.md)                                 | Falso     | [**In alto**](c-top.md)<br/> |
-| [**USN-origine**](a-usnsource.md)                                           | Falso     | [**In alto**](c-top.md)<br/> |
-| [**WBEM-percorso**](a-wbempath.md)                                             | Falso     | [**In alto**](c-top.md)<br/> |
+| [**USN modificato**](a-usnchanged.md)                                         | Falso     | [**In alto**](c-top.md)<br/> |
+| [**Creato da USN**](a-usncreated.md)                                         | Falso     | [**In alto**](c-top.md)<br/> |
+| [**USN-DSA-Last-Obj-Removed**](a-usndsalastobjremoved.md)                  | Falso     | [**In alto**](c-top.md)<br/> |
+| [**USN -Intersite**](a-usnintersite.md)                                     | Falso     | [**In alto**](c-top.md)<br/> |
+| [**USN-Last-Obj-Rem**](a-usnlastobjrem.md)                                 | Falso     | [**In alto**](c-top.md)<br/> |
+| [**USN-Source**](a-usnsource.md)                                           | Falso     | [**In alto**](c-top.md)<br/> |
+| [**Wbem-Path**](a-wbempath.md)                                             | Falso     | [**In alto**](c-top.md)<br/> |
 | [**Oggetti noti**](a-wellknownobjects.md)                            | Falso     | [**In alto**](c-top.md)<br/> |
-| [**Quando-modificato**](a-whenchanged.md)                                       | Falso     | [**In alto**](c-top.md)<br/> |
-| [**Data di creazione**](a-whencreated.md)                                       | Falso     | [**In alto**](c-top.md)<br/> |
-| [**WWW-Home-pagina**](a-wwwhomepage.md)                                      | Falso     | [**In alto**](c-top.md)<br/> |
-| [**WWW-pagina-altro**](a-url.md)                                             | Falso     | [**In alto**](c-top.md)<br/> |
+| [**Quando viene modificato**](a-whenchanged.md)                                       | Falso     | [**In alto**](c-top.md)<br/> |
+| [**Creazione in data e ora**](a-whencreated.md)                                       | Falso     | [**In alto**](c-top.md)<br/> |
+| [**Www-Home-Page**](a-wwwhomepage.md)                                      | Falso     | [**In alto**](c-top.md)<br/> |
+| [**WWW-Page-Other**](a-url.md)                                             | Falso     | [**In alto**](c-top.md)<br/> |
 
 
 
@@ -191,18 +191,18 @@ Questa classe contiene gli attributi seguenti per Windows 2000 Server:
 | Object-Category             | 1                                                                                            |
 | Default-Object-Category     | \-                                                                                           |
 | Governs-Id                  | 1.2.840.113556.1.5.138                                                                       |
-| Valore predefinito-nascondiglio        | 1                                                                                            |
-| RDN-att-ID                  | [**Nome comune**](a-cn.md)<br/>                                                       |
+| Default-Hiding-Value        | 1                                                                                            |
+| Rdn-Att-Id                  | [**Nome comune**](a-cn.md)<br/>                                                       |
 | Sottoclasse di                 | [**In alto**](c-top.md)<br/>                                                              |
 | Possibili superiori          | [**Contenitore**](c-container.md)                                                             |
 | Classi ausiliarie           | \-                                                                                           |
-| NT-Security-descrittore      | O:BAG: NON VALIDO: S:                                                                                 |
-| Descrittore di sicurezza predefinito | D: (A;; RPWPCRCCDCLCLORCWOWDSDDTSW;;;D A) (A;; RPWPCRCCDCLCLORCWOWDSDDTSW;;; SY) (A;; RPLCLORC;;; Au |
+| NT-Security-Descriptor      | O:BAG:BAD:S:                                                                                 |
+| Descrittore di sicurezza predefinito | D:(A;; RPWPCRCCDCLCLORCWOWDSDDTSW;;;D A)(A;; RPWPCRCCDCLCLORCWOWDSDDTSW;;; SY)(A;; RPLCLORC;;; Au) |
 | System-Flags                | 0x00000010                                                                                   |
 
 
 
-## <a name="windows-server-2003-attributes"></a>Attributi di Windows Server 2003
+## <a name="windows-server-2003-attributes"></a>Windows Attributi di Server 2003
 
 Questa classe contiene gli attributi seguenti per Windows Server 2003:
 
@@ -210,123 +210,123 @@ Questa classe contiene gli attributi seguenti per Windows Server 2003:
 
 | Attributo                                                                   | Obbligatorio | Derivato da                    |
 |-----------------------------------------------------------------------------|-----------|---------------------------------|
-| [**ACS-allocabile-RSVP-larghezza di banda**](a-acsallocablersvpbandwidth.md)         | Falso     | **ACS-subnet**                  |
-| [**ACS-cache-timeout**](a-acscachetimeout.md)                              | Falso     | **ACS-subnet**                  |
-| [**ACS-DSBM-DeadTime**](a-acsdsbmdeadtime.md)                              | Falso     | **ACS-subnet**                  |
-| [**ACS-DSBM-priorità**](a-acsdsbmpriority.md)                              | Falso     | **ACS-subnet**                  |
-| [**ACS-DSBM-Refresh**](a-acsdsbmrefresh.md)                                | Falso     | **ACS-subnet**                  |
-| [**ACS-Enable-ACS-Service**](a-acsenableacsservice.md)                     | Falso     | **ACS-subnet**                  |
-| [**ACS-Enable-RSVP-Accounting**](a-acsenablersvpaccounting.md)             | Falso     | **ACS-subnet**                  |
-| [**ACS-Enable-RSVP-Message-Logging**](a-acsenablersvpmessagelogging.md)    | Falso     | **ACS-subnet**                  |
-| [**ACS-a livello di registro eventi**](a-acseventloglevel.md)                           | Falso     | **ACS-subnet**                  |
-| [**ACS-Max-durata per flusso**](a-acsmaxdurationperflow.md)                | Falso     | **ACS-subnet**                  |
-| [**ACS-Max-No-of-account-files**](a-acsmaxnoofaccountfiles.md)             | Falso     | **ACS-subnet**                  |
-| [**ACS-Max-No-of-log-files**](a-acsmaxnooflogfiles.md)                     | Falso     | **ACS-subnet**                  |
-| [**ACS-max-picco-larghezza di banda**](a-acsmaxpeakbandwidth.md)                     | Falso     | **ACS-subnet**                  |
-| [**ACS-max-picco-larghezza di banda per flusso**](a-acsmaxpeakbandwidthperflow.md)     | Falso     | **ACS-subnet**                  |
-| [**ACS-max-size-of-RSVP-account-file**](a-acsmaxsizeofrsvpaccountfile.md)  | Falso     | **ACS-subnet**                  |
-| [**ACS-max-size-of-RSVP-log-file**](a-acsmaxsizeofrsvplogfile.md)          | Falso     | **ACS-subnet**                  |
-| [**ACS-max-token-rate-per-Flow**](a-acsmaxtokenrateperflow.md)             | Falso     | **ACS-subnet**                  |
-| [**ACS-non riservato-max-SDU-size**](a-acsnonreservedmaxsdusize.md)         | Falso     | **ACS-subnet**                  |
-| [**ACS-non riservato-min-Police-size**](a-acsnonreservedminpolicedsize.md) | Falso     | **ACS-subnet**                  |
-| [**ACS-non riservato-frequenza massima**](a-acsnonreservedpeakrate.md)              | Falso     | **ACS-subnet**                  |
-| [**ACS-non riservato-token-size**](a-acsnonreservedtokensize.md)            | Falso     | **ACS-subnet**                  |
-| [**ACS-non riservato-TX-Limit**](a-acsnonreservedtxlimit.md)                | Falso     | **ACS-subnet**                  |
-| [**ACS-non riservato-TX-size**](a-acsnonreservedtxsize.md)                  | Falso     | **ACS-subnet**                  |
-| [**ACS-RSVP-account-files-location**](a-acsrsvpaccountfileslocation.md)    | Falso     | **ACS-subnet**                  |
-| [**ACS-RSVP-log-files-location**](a-acsrsvplogfileslocation.md)            | Falso     | **ACS-subnet**                  |
-| [**Elenco di server ACS**](a-acsserverlist.md)                                  | Falso     | **ACS-subnet**                  |
-| [**Admin-Descrizione**](a-admindescription.md)                             | Falso     | [**In alto**](c-top.md)<br/> |
+| [**ACS-Allocable-RSVP-Bandwidth**](a-acsallocablersvpbandwidth.md)         | Falso     | **ACS-Subnet**                  |
+| [**ACS-Cache-Timeout**](a-acscachetimeout.md)                              | Falso     | **ACS-Subnet**                  |
+| [**ACS-DSBM-DeadTime**](a-acsdsbmdeadtime.md)                              | Falso     | **ACS-Subnet**                  |
+| [**Priorità ACS-DSBM**](a-acsdsbmpriority.md)                              | Falso     | **ACS-Subnet**                  |
+| [**ACS-DSBM-Refresh**](a-acsdsbmrefresh.md)                                | Falso     | **ACS-Subnet**                  |
+| [**ACS-Enable-ACS-Service**](a-acsenableacsservice.md)                     | Falso     | **ACS-Subnet**                  |
+| [**ACS-Enable-RSVP-Accounting**](a-acsenablersvpaccounting.md)             | Falso     | **ACS-Subnet**                  |
+| [**ACS-Enable-RSVP-Message-Logging**](a-acsenablersvpmessagelogging.md)    | Falso     | **ACS-Subnet**                  |
+| [**ACS-Event-Log-Level**](a-acseventloglevel.md)                           | Falso     | **ACS-Subnet**                  |
+| [**ACS-Max-Duration-Per-Flow**](a-acsmaxdurationperflow.md)                | Falso     | **ACS-Subnet**                  |
+| [**ACS-max-no-of-account-files**](a-acsmaxnoofaccountfiles.md)             | Falso     | **ACS-Subnet**                  |
+| [**ACS-max-no-of-log-files**](a-acsmaxnooflogfiles.md)                     | Falso     | **ACS-Subnet**                  |
+| [**ACS-Max-Peak-Bandwidth**](a-acsmaxpeakbandwidth.md)                     | Falso     | **ACS-Subnet**                  |
+| [**ACS-Max-Peak-Bandwidth-Per-Flow**](a-acsmaxpeakbandwidthperflow.md)     | Falso     | **ACS-Subnet**                  |
+| [**ACS-max-size-of-RSVP-account-file**](a-acsmaxsizeofrsvpaccountfile.md)  | Falso     | **ACS-Subnet**                  |
+| [**ACS-max-size-of-RSVP-log-file**](a-acsmaxsizeofrsvplogfile.md)          | Falso     | **ACS-Subnet**                  |
+| [**ACS-Max-Token-Rate-Per-Flow**](a-acsmaxtokenrateperflow.md)             | Falso     | **ACS-Subnet**                  |
+| [**ACS-Non-Reserved-Max-SDU-Size**](a-acsnonreservedmaxsdusize.md)         | Falso     | **ACS-Subnet**                  |
+| [**ACS-Non-Reserved-Min-Policed-Size**](a-acsnonreservedminpolicedsize.md) | Falso     | **ACS-Subnet**                  |
+| [**ACS-Non-Reserved-Peak-Rate**](a-acsnonreservedpeakrate.md)              | Falso     | **ACS-Subnet**                  |
+| [**ACS-Non-Reserved-Token-Size**](a-acsnonreservedtokensize.md)            | Falso     | **ACS-Subnet**                  |
+| [**ACS-Non-Reserved-Tx-Limit**](a-acsnonreservedtxlimit.md)                | Falso     | **ACS-Subnet**                  |
+| [**ACS-Non-Reserved-Tx-Size**](a-acsnonreservedtxsize.md)                  | Falso     | **ACS-Subnet**                  |
+| [**ACS-RSVP-Account-Files-Location**](a-acsrsvpaccountfileslocation.md)    | Falso     | **ACS-Subnet**                  |
+| [**ACS-RSVP-Log-Files-Location**](a-acsrsvplogfileslocation.md)            | Falso     | **ACS-Subnet**                  |
+| [**ACS-Server-List**](a-acsserverlist.md)                                  | Falso     | **ACS-Subnet**                  |
+| [**Admin-Description**](a-admindescription.md)                             | Falso     | [**In alto**](c-top.md)<br/> |
 | [**Admin-Display-Name**](a-admindisplayname.md)                            | Falso     | [**In alto**](c-top.md)<br/> |
 | [**Attributi consentiti**](a-allowedattributes.md)                           | Falso     | [**In alto**](c-top.md)<br/> |
-| [**Consentito-attributi-valido**](a-allowedattributeseffective.md)        | Falso     | [**In alto**](c-top.md)<br/> |
+| [**Allowed-Attributes-Effective**](a-allowedattributeseffective.md)        | Falso     | [**In alto**](c-top.md)<br/> |
 | [**Classi consentite-figlio**](a-allowedchildclasses.md)                      | Falso     | [**In alto**](c-top.md)<br/> |
-| [**Consentito-classi figlio-valide**](a-allowedchildclasseseffective.md)   | Falso     | [**In alto**](c-top.md)<br/> |
-| [**Testa di ponte-server-list-BL**](a-bridgeheadserverlistbl.md)               | Falso     | [**In alto**](c-top.md)<br/> |
-| [**Nome canonico**](a-canonicalname.md)                                   | Falso     | [**In alto**](c-top.md)<br/> |
+| [**Allowed-Child-Classes-Effective**](a-allowedchildclasseseffective.md)   | Falso     | [**In alto**](c-top.md)<br/> |
+| [**Testa di ponte-Server-List-BL**](a-bridgeheadserverlistbl.md)               | Falso     | [**In alto**](c-top.md)<br/> |
+| [**Canonical-Name**](a-canonicalname.md)                                   | Falso     | [**In alto**](c-top.md)<br/> |
 | [**Nome comune**](a-cn.md)                                                 | Falso     | [**In alto**](c-top.md)<br/> |
-| [**Creazione timestamp**](a-createtimestamp.md)                              | Falso     | [**In alto**](c-top.md)<br/> |
+| [**Create-Time-Stamp**](a-createtimestamp.md)                              | Falso     | [**In alto**](c-top.md)<br/> |
 | [**Descrizione**](a-description.md)                                        | Falso     | [**In alto**](c-top.md)<br/> |
 | [**Nome visualizzato**](a-displayname.md)                                       | Falso     | [**In alto**](c-top.md)<br/> |
-| [**Display-Name-stampabile**](a-displaynameprintable.md)                    | Falso     | [**In alto**](c-top.md)<br/> |
-| [**DSA-firma**](a-dsasignature.md)                                     | Falso     | [**In alto**](c-top.md)<br/> |
-| [**DS-Core-propagazione-dati**](a-dscorepropagationdata.md)                 | Falso     | [**In alto**](c-top.md)<br/> |
-| [**Nome estensione**](a-extensionname.md)                                   | Falso     | [**In alto**](c-top.md)<br/> |
+| [**Display-Name-Printable**](a-displaynameprintable.md)                    | Falso     | [**In alto**](c-top.md)<br/> |
+| [**Firma DSA**](a-dsasignature.md)                                     | Falso     | [**In alto**](c-top.md)<br/> |
+| [**DS-Core-Propagation-Data**](a-dscorepropagationdata.md)                 | Falso     | [**In alto**](c-top.md)<br/> |
+| [**Extension-Name**](a-extensionname.md)                                   | Falso     | [**In alto**](c-top.md)<br/> |
 | [**Bandiere**](a-flags.md)                                                    | Falso     | [**In alto**](c-top.md)<br/> |
-| [**Da-entry**](a-fromentry.md)                                           | Falso     | [**In alto**](c-top.md)<br/> |
-| [**FRS-computer-Reference-BL**](a-frscomputerreferencebl.md)               | Falso     | [**In alto**](c-top.md)<br/> |
-| [**FRS-member-Reference-BL**](a-frsmemberreferencebl.md)                   | Falso     | [**In alto**](c-top.md)<br/> |
+| [**From-Entry**](a-fromentry.md)                                           | Falso     | [**In alto**](c-top.md)<br/> |
+| [**Frs-Computer-Reference-BL**](a-frscomputerreferencebl.md)               | Falso     | [**In alto**](c-top.md)<br/> |
+| [**FRS-Member-Reference-BL**](a-frsmemberreferencebl.md)                   | Falso     | [**In alto**](c-top.md)<br/> |
 | [**FSMO-Role-Owner**](a-fsmoroleowner.md)                                  | Falso     | [**In alto**](c-top.md)<br/> |
 | [**Tipo di istanza**](a-instancetype.md)                                     | Vero      | [**In alto**](c-top.md)<br/> |
 | [**Is-Critical-System-Object**](a-iscriticalsystemobject.md)               | Falso     | [**In alto**](c-top.md)<br/> |
-| [**Viene eliminato**](a-isdeleted.md)                                           | Falso     | [**In alto**](c-top.md)<br/> |
-| [**Is-member-of-DL**](a-memberof.md)                                       | Falso     | [**In alto**](c-top.md)<br/> |
-| [**Is-Privilege-Holder**](a-isprivilegeholder.md)                          | Falso     | [**In alto**](c-top.md)<br/> |
+| [**Is-Deleted**](a-isdeleted.md)                                           | Falso     | [**In alto**](c-top.md)<br/> |
+| [**Membro di DL**](a-memberof.md)                                       | Falso     | [**In alto**](c-top.md)<br/> |
+| [**Titolare del privilegio**](a-isprivilegeholder.md)                          | Falso     | [**In alto**](c-top.md)<br/> |
 | [**Ultimo elemento padre noto**](a-lastknownparent.md)                              | Falso     | [**In alto**](c-top.md)<br/> |
 | [**Oggetti gestiti**](a-managedobjects.md)                                 | Falso     | [**In alto**](c-top.md)<br/> |
-| [**Mastered-by**](a-masteredby.md)                                         | Falso     | [**In alto**](c-top.md)<br/> |
-| [**Modifica-timestamp**](a-modifytimestamp.md)                              | Falso     | [**In alto**](c-top.md)<br/> |
-| [**MS-COM-PartitionSetLink**](a-mscom-partitionsetlink.md)                 | Falso     | [**In alto**](c-top.md)<br/> |
-| [**MS-COM-UserLink**](a-mscom-userlink.md)                                 | Falso     | [**In alto**](c-top.md)<br/> |
-| [**ms-DS-approx-immed-subordinates**](a-msds-approx-immed-subordinates.md) | Falso     | [**In alto**](c-top.md)<br/> |
-| [**MS-DS-coerenza-figlio-conteggio**](a-ms-ds-consistencychildcount.md)      | Falso     | [**In alto**](c-top.md)<br/> |
+| [**Mastered-By**](a-masteredby.md)                                         | Falso     | [**In alto**](c-top.md)<br/> |
+| [**Modifica timestamp**](a-modifytimestamp.md)                              | Falso     | [**In alto**](c-top.md)<br/> |
+| [**ms-COM-PartitionSetLink**](a-mscom-partitionsetlink.md)                 | Falso     | [**In alto**](c-top.md)<br/> |
+| [**ms-COM-UserLink**](a-mscom-userlink.md)                                 | Falso     | [**In alto**](c-top.md)<br/> |
+| [**ms-DS-Approx-Immed-Subordinates**](a-msds-approx-immed-subordinates.md) | Falso     | [**In alto**](c-top.md)<br/> |
+| [**MS-DS-Consistency-Child-Count**](a-ms-ds-consistencychildcount.md)      | Falso     | [**In alto**](c-top.md)<br/> |
 | [**MS-DS-Consistency-Guid**](a-ms-ds-consistencyguid.md)                   | Falso     | [**In alto**](c-top.md)<br/> |
-| [**ms-DS-Mastered-by**](a-msds-masteredby.md)                              | Falso     | [**In alto**](c-top.md)<br/> |
-| [**ms-DS-members-for-AZ-Role-BL**](a-msds-membersforazrolebl.md)           | Falso     | [**In alto**](c-top.md)<br/> |
-| [**ms-DS-NC-REPL-cursori**](a-msds-ncreplcursors.md)                       | Falso     | [**In alto**](c-top.md)<br/> |
-| [**ms-DS-NC-REPL-inbound-neighbors**](a-msds-ncreplinboundneighbors.md)    | Falso     | [**In alto**](c-top.md)<br/> |
-| [**ms-DS-NC-REPL-Outbound-Neighbors**](a-msds-ncreploutboundneighbors.md)  | Falso     | [**In alto**](c-top.md)<br/> |
-| [**ms-DS-non membri-BL**](a-msds-nonmembersbl.md)                         | Falso     | [**In alto**](c-top.md)<br/> |
+| [**ms-DS-Mastered-By**](a-msds-masteredby.md)                              | Falso     | [**In alto**](c-top.md)<br/> |
+| [**ms-DS-Members-For-Az-Role-BL**](a-msds-membersforazrolebl.md)           | Falso     | [**In alto**](c-top.md)<br/> |
+| [**ms-DS-NC-Repl-Cursors**](a-msds-ncreplcursors.md)                       | Falso     | [**In alto**](c-top.md)<br/> |
+| [**ms-DS-NC-Repl-Inbound-Neighbors**](a-msds-ncreplinboundneighbors.md)    | Falso     | [**In alto**](c-top.md)<br/> |
+| [**ms-DS-NC-Repl-Outbound-Neighbors**](a-msds-ncreploutboundneighbors.md)  | Falso     | [**In alto**](c-top.md)<br/> |
+| [**ms-DS-Non-Members-BL**](a-msds-nonmembersbl.md)                         | Falso     | [**In alto**](c-top.md)<br/> |
 | [**ms-DS-Object-Reference-BL**](a-msds-objectreferencebl.md)               | Falso     | [**In alto**](c-top.md)<br/> |
-| [**ms-DS-Operations-for-AZ-Role-BL**](a-msds-operationsforazrolebl.md)     | Falso     | [**In alto**](c-top.md)<br/> |
-| [**ms-DS-Operations-for-AZ-Task-BL**](a-msds-operationsforaztaskbl.md)     | Falso     | [**In alto**](c-top.md)<br/> |
-| [**ms-DS-REPL-attribute-meta-data**](a-msds-replattributemetadata.md)      | Falso     | [**In alto**](c-top.md)<br/> |
-| [**ms-DS-REPL-value-meta-dati**](a-msds-replvaluemetadata.md)              | Falso     | [**In alto**](c-top.md)<br/> |
-| [**ms-DS-Tasks-for-AZ-Role-BL**](a-msds-tasksforazrolebl.md)               | Falso     | [**In alto**](c-top.md)<br/> |
-| [**ms-DS-Tasks-for-AZ-Task-BL**](a-msds-tasksforaztaskbl.md)               | Falso     | [**In alto**](c-top.md)<br/> |
+| [**ms-DS-Operations-For-Az-Role-BL**](a-msds-operationsforazrolebl.md)     | Falso     | [**In alto**](c-top.md)<br/> |
+| [**ms-DS-Operations-For-Az-Task-BL**](a-msds-operationsforaztaskbl.md)     | Falso     | [**In alto**](c-top.md)<br/> |
+| [**ms-DS-Repl-Attribute-Meta-Data**](a-msds-replattributemetadata.md)      | Falso     | [**In alto**](c-top.md)<br/> |
+| [**ms-DS-Repl-Value-Meta-Data**](a-msds-replvaluemetadata.md)              | Falso     | [**In alto**](c-top.md)<br/> |
+| [**ms-DS-Tasks-For-Az-Role-BL**](a-msds-tasksforazrolebl.md)               | Falso     | [**In alto**](c-top.md)<br/> |
+| [**ms-DS-Tasks-For-Az-Task-BL**](a-msds-tasksforaztaskbl.md)               | Falso     | [**In alto**](c-top.md)<br/> |
 | [**ms-Exch-Owner-BL**](a-ownerbl.md)                                       | Falso     | [**In alto**](c-top.md)<br/> |
-| [**-SCP-BL**](a-netbootscpbl.md)                                    | Falso     | [**In alto**](c-top.md)<br/> |
-| [**Non-Security-member-BL**](a-nonsecuritymemberbl.md)                     | Falso     | [**In alto**](c-top.md)<br/> |
-| [**NT-Security-descrittore**](a-ntsecuritydescriptor.md)                    | Vero      | [**In alto**](c-top.md)<br/> |
+| [**netboot-SCP-BL**](a-netbootscpbl.md)                                    | Falso     | [**In alto**](c-top.md)<br/> |
+| [**Non-Security-Member-BL**](a-nonsecuritymemberbl.md)                     | Falso     | [**In alto**](c-top.md)<br/> |
+| [**NT-Security-Descriptor**](a-ntsecuritydescriptor.md)                    | Vero      | [**In alto**](c-top.md)<br/> |
 | [**Obj-Dist-Name**](a-distinguishedname.md)                                | Falso     | [**In alto**](c-top.md)<br/> |
-| [**Categoria oggetto**](a-objectcategory.md)                                 | Vero      | [**In alto**](c-top.md)<br/> |
-| [**Classe Object**](a-objectclass.md)                                       | Vero      | [**In alto**](c-top.md)<br/> |
-| [**GUID oggetto**](a-objectguid.md)                                         | Falso     | [**In alto**](c-top.md)<br/> |
+| [**Categoria di oggetti**](a-objectcategory.md)                                 | Vero      | [**In alto**](c-top.md)<br/> |
+| [**Classe object**](a-objectclass.md)                                       | Vero      | [**In alto**](c-top.md)<br/> |
+| [**Guid oggetto**](a-objectguid.md)                                         | Falso     | [**In alto**](c-top.md)<br/> |
 | [**Versione oggetto**](a-objectversion.md)                                   | Falso     | [**In alto**](c-top.md)<br/> |
-| [**Altri oggetti-well-known**](a-otherwellknownobjects.md)                 | Falso     | [**In alto**](c-top.md)<br/> |
-| [**Elenco di eliminazione-attributo parziale**](a-partialattributedeletionlist.md)   | Falso     | [**In alto**](c-top.md)<br/> |
-| [**Set di attributi parziali**](a-partialattributeset.md)                      | Falso     | [**In alto**](c-top.md)<br/> |
-| [**Possibili-inferiori**](a-possibleinferiors.md)                           | Falso     | [**In alto**](c-top.md)<br/> |
-| [**Nome-oggetto-proxy**](a-proxiedobjectname.md)                          | Falso     | [**In alto**](c-top.md)<br/> |
+| [**Altri oggetti noti**](a-otherwellknownobjects.md)                 | Falso     | [**In alto**](c-top.md)<br/> |
+| [**Partial-Attribute-Deletion-List**](a-partialattributedeletionlist.md)   | Falso     | [**In alto**](c-top.md)<br/> |
+| [**Partial-Attribute-Set**](a-partialattributeset.md)                      | Falso     | [**In alto**](c-top.md)<br/> |
+| [**Possibili eserezioni**](a-possibleinferiors.md)                           | Falso     | [**In alto**](c-top.md)<br/> |
+| [**Proxied-Object-Name**](a-proxiedobjectname.md)                          | Falso     | [**In alto**](c-top.md)<br/> |
 | [**Indirizzi proxy**](a-proxyaddresses.md)                                 | Falso     | [**In alto**](c-top.md)<br/> |
-| [**Query-criteri-BL**](a-querypolicybl.md)                                  | Falso     | [**In alto**](c-top.md)<br/> |
-| [**RDN**](a-name.md)                                                       | Falso     | [**In alto**](c-top.md)<br/> |
-| [**REPL-Property-meta-dati**](a-replpropertymetadata.md)                   | Falso     | [**In alto**](c-top.md)<br/> |
-| [**REPL-UpToDate-Vector**](a-repluptodatevector.md)                        | Falso     | [**In alto**](c-top.md)<br/> |
+| [**Query-Policy-BL**](a-querypolicybl.md)                                  | Falso     | [**In alto**](c-top.md)<br/> |
+| [**Rdn**](a-name.md)                                                       | Falso     | [**In alto**](c-top.md)<br/> |
+| [**Repl-Property-Meta-Data**](a-replpropertymetadata.md)                   | Falso     | [**In alto**](c-top.md)<br/> |
+| [**Repl-UpToDate-Vector**](a-repluptodatevector.md)                        | Falso     | [**In alto**](c-top.md)<br/> |
 | [**Report**](a-directreports.md)                                          | Falso     | [**In alto**](c-top.md)<br/> |
-| [**Reps-da**](a-repsfrom.md)                                             | Falso     | [**In alto**](c-top.md)<br/> |
-| [**Da Reps a**](a-repsto.md)                                                 | Falso     | [**In alto**](c-top.md)<br/> |
+| [**Reps-From**](a-repsfrom.md)                                             | Falso     | [**In alto**](c-top.md)<br/> |
+| [**Reps-To**](a-repsto.md)                                                 | Falso     | [**In alto**](c-top.md)<br/> |
 | [**Revisione**](a-revision.md)                                              | Falso     | [**In alto**](c-top.md)<br/> |
-| [**SD-diritti-efficacia**](a-sdrightseffective.md)                          | Falso     | [**In alto**](c-top.md)<br/> |
-| [**Server-riferimento-BL**](a-serverreferencebl.md)                          | Falso     | [**In alto**](c-top.md)<br/> |
-| [**Mostra-in-solo visualizzazione avanzata**](a-showinadvancedviewonly.md)              | Falso     | [**In alto**](c-top.md)<br/> |
-| [**Site-Object-BL**](a-siteobjectbl.md)                                    | Falso     | [**In alto**](c-top.md)<br/> |
-| [**Classe strutturale-oggetto**](a-structuralobjectclass.md)                  | Falso     | [**In alto**](c-top.md)<br/> |
+| [**SD-Rights-Effective**](a-sdrightseffective.md)                          | Falso     | [**In alto**](c-top.md)<br/> |
+| [**Server-Reference-BL**](a-serverreferencebl.md)                          | Falso     | [**In alto**](c-top.md)<br/> |
+| [**Show-In-Advanced-View-Only**](a-showinadvancedviewonly.md)              | Falso     | [**In alto**](c-top.md)<br/> |
+| [**Oggetto sito -BL**](a-siteobjectbl.md)                                    | Falso     | [**In alto**](c-top.md)<br/> |
+| [**Structural-Object-Class**](a-structuralobjectclass.md)                  | Falso     | [**In alto**](c-top.md)<br/> |
 | [**Riferimenti secondari**](a-subrefs.md)                                               | Falso     | [**In alto**](c-top.md)<br/> |
 | [**SubSchemaSubEntry**](a-subschemasubentry.md)                            | Falso     | [**In alto**](c-top.md)<br/> |
 | [**Flag di sistema**](a-systemflags.md)                                       | Falso     | [**In alto**](c-top.md)<br/> |
-| [**USN-modificato**](a-usnchanged.md)                                         | Falso     | [**In alto**](c-top.md)<br/> |
-| [**USN creato**](a-usncreated.md)                                         | Falso     | [**In alto**](c-top.md)<br/> |
-| [**USN-DSA-Last-obj-rimosso**](a-usndsalastobjremoved.md)                  | Falso     | [**In alto**](c-top.md)<br/> |
-| [**USN-tra siti**](a-usnintersite.md)                                     | Falso     | [**In alto**](c-top.md)<br/> |
-| [**USN-ultimo-obj-REM**](a-usnlastobjrem.md)                                 | Falso     | [**In alto**](c-top.md)<br/> |
-| [**USN-origine**](a-usnsource.md)                                           | Falso     | [**In alto**](c-top.md)<br/> |
-| [**WBEM-percorso**](a-wbempath.md)                                             | Falso     | [**In alto**](c-top.md)<br/> |
+| [**USN modificato**](a-usnchanged.md)                                         | Falso     | [**In alto**](c-top.md)<br/> |
+| [**Creato da USN**](a-usncreated.md)                                         | Falso     | [**In alto**](c-top.md)<br/> |
+| [**USN-DSA-Last-Obj-Removed**](a-usndsalastobjremoved.md)                  | Falso     | [**In alto**](c-top.md)<br/> |
+| [**USN intersito**](a-usnintersite.md)                                     | Falso     | [**In alto**](c-top.md)<br/> |
+| [**USN-Last-Obj-Rem**](a-usnlastobjrem.md)                                 | Falso     | [**In alto**](c-top.md)<br/> |
+| [**USN-Source**](a-usnsource.md)                                           | Falso     | [**In alto**](c-top.md)<br/> |
+| [**Wbem-Path**](a-wbempath.md)                                             | Falso     | [**In alto**](c-top.md)<br/> |
 | [**Oggetti noti**](a-wellknownobjects.md)                            | Falso     | [**In alto**](c-top.md)<br/> |
-| [**Quando-modificato**](a-whenchanged.md)                                       | Falso     | [**In alto**](c-top.md)<br/> |
-| [**Data di creazione**](a-whencreated.md)                                       | Falso     | [**In alto**](c-top.md)<br/> |
-| [**WWW-Home-pagina**](a-wwwhomepage.md)                                      | Falso     | [**In alto**](c-top.md)<br/> |
-| [**WWW-pagina-altro**](a-url.md)                                             | Falso     | [**In alto**](c-top.md)<br/> |
+| [**Quando viene modificato**](a-whenchanged.md)                                       | Falso     | [**In alto**](c-top.md)<br/> |
+| [**Quando creato**](a-whencreated.md)                                       | Falso     | [**In alto**](c-top.md)<br/> |
+| [**Www-Home-Page**](a-wwwhomepage.md)                                      | Falso     | [**In alto**](c-top.md)<br/> |
+| [**WWW-Page-Other**](a-url.md)                                             | Falso     | [**In alto**](c-top.md)<br/> |
 
 
 
@@ -342,18 +342,18 @@ Questa classe contiene gli attributi seguenti per Windows Server 2003:
 | Object-Category             | 1                                                                                            |
 | Default-Object-Category     | \-                                                                                           |
 | Governs-Id                  | 1.2.840.113556.1.5.138                                                                       |
-| Valore predefinito-nascondiglio        | 1                                                                                            |
-| RDN-att-ID                  | [**Nome comune**](a-cn.md)<br/>                                                       |
+| Default-Hiding-Value        | 1                                                                                            |
+| Rdn-Att-Id                  | [**Nome comune**](a-cn.md)<br/>                                                       |
 | Sottoclasse di                 | [**In alto**](c-top.md)<br/>                                                              |
 | Possibili superiori          | [**Contenitore**](c-container.md)                                                             |
 | Classi ausiliarie           | \-                                                                                           |
-| NT-Security-descrittore      | O:BAG: NON VALIDO: S:                                                                                 |
-| Descrittore di sicurezza predefinito | D: (A;; RPWPCRCCDCLCLORCWOWDSDDTSW;;;D A) (A;; RPWPCRCCDCLCLORCWOWDSDDTSW;;; SY) (A;; RPLCLORC;;; Au |
+| NT-Security-Descriptor      | O:BAG:BAD:S:                                                                                 |
+| Descrittore di sicurezza predefinito | D:(A;; RPWPCRCCDCLCLORCWOWDSDDTSW;;;D A)(A;; RPWPCRCCDCLCLORCWOWDSDDTSW;;; SY)(A;; RPLCLORC;;; Au) |
 | System-Flags                | 0x00000010                                                                                   |
 
 
 
-## <a name="windows-server-2003-r2-attributes"></a>Attributi di Windows Server 2003 R2
+## <a name="windows-server-2003-r2-attributes"></a>Windows Attributi di Server 2003 R2
 
 Questa classe contiene gli attributi seguenti per Windows Server 2003 R2:
 
@@ -361,126 +361,126 @@ Questa classe contiene gli attributi seguenti per Windows Server 2003 R2:
 
 | Attributo                                                                   | Obbligatorio | Derivato da                    |
 |-----------------------------------------------------------------------------|-----------|---------------------------------|
-| [**ACS-allocabile-RSVP-larghezza di banda**](a-acsallocablersvpbandwidth.md)         | Falso     | **ACS-subnet**                  |
-| [**ACS-cache-timeout**](a-acscachetimeout.md)                              | Falso     | **ACS-subnet**                  |
-| [**ACS-DSBM-DeadTime**](a-acsdsbmdeadtime.md)                              | Falso     | **ACS-subnet**                  |
-| [**ACS-DSBM-priorità**](a-acsdsbmpriority.md)                              | Falso     | **ACS-subnet**                  |
-| [**ACS-DSBM-Refresh**](a-acsdsbmrefresh.md)                                | Falso     | **ACS-subnet**                  |
-| [**ACS-Enable-ACS-Service**](a-acsenableacsservice.md)                     | Falso     | **ACS-subnet**                  |
-| [**ACS-Enable-RSVP-Accounting**](a-acsenablersvpaccounting.md)             | Falso     | **ACS-subnet**                  |
-| [**ACS-Enable-RSVP-Message-Logging**](a-acsenablersvpmessagelogging.md)    | Falso     | **ACS-subnet**                  |
-| [**ACS-a livello di registro eventi**](a-acseventloglevel.md)                           | Falso     | **ACS-subnet**                  |
-| [**ACS-Max-durata per flusso**](a-acsmaxdurationperflow.md)                | Falso     | **ACS-subnet**                  |
-| [**ACS-Max-No-of-account-files**](a-acsmaxnoofaccountfiles.md)             | Falso     | **ACS-subnet**                  |
-| [**ACS-Max-No-of-log-files**](a-acsmaxnooflogfiles.md)                     | Falso     | **ACS-subnet**                  |
-| [**ACS-max-picco-larghezza di banda**](a-acsmaxpeakbandwidth.md)                     | Falso     | **ACS-subnet**                  |
-| [**ACS-max-picco-larghezza di banda per flusso**](a-acsmaxpeakbandwidthperflow.md)     | Falso     | **ACS-subnet**                  |
-| [**ACS-max-size-of-RSVP-account-file**](a-acsmaxsizeofrsvpaccountfile.md)  | Falso     | **ACS-subnet**                  |
-| [**ACS-max-size-of-RSVP-log-file**](a-acsmaxsizeofrsvplogfile.md)          | Falso     | **ACS-subnet**                  |
-| [**ACS-max-token-rate-per-Flow**](a-acsmaxtokenrateperflow.md)             | Falso     | **ACS-subnet**                  |
-| [**ACS-non riservato-max-SDU-size**](a-acsnonreservedmaxsdusize.md)         | Falso     | **ACS-subnet**                  |
-| [**ACS-non riservato-min-Police-size**](a-acsnonreservedminpolicedsize.md) | Falso     | **ACS-subnet**                  |
-| [**ACS-non riservato-frequenza massima**](a-acsnonreservedpeakrate.md)              | Falso     | **ACS-subnet**                  |
-| [**ACS-non riservato-token-size**](a-acsnonreservedtokensize.md)            | Falso     | **ACS-subnet**                  |
-| [**ACS-non riservato-TX-Limit**](a-acsnonreservedtxlimit.md)                | Falso     | **ACS-subnet**                  |
-| [**ACS-non riservato-TX-size**](a-acsnonreservedtxsize.md)                  | Falso     | **ACS-subnet**                  |
-| [**ACS-RSVP-account-files-location**](a-acsrsvpaccountfileslocation.md)    | Falso     | **ACS-subnet**                  |
-| [**ACS-RSVP-log-files-location**](a-acsrsvplogfileslocation.md)            | Falso     | **ACS-subnet**                  |
-| [**Elenco di server ACS**](a-acsserverlist.md)                                  | Falso     | **ACS-subnet**                  |
-| [**Admin-Descrizione**](a-admindescription.md)                             | Falso     | [**In alto**](c-top.md)<br/> |
+| [**ACS-Allocable-RSVP-Bandwidth**](a-acsallocablersvpbandwidth.md)         | Falso     | **ACS-Subnet**                  |
+| [**ACS-Cache-Timeout**](a-acscachetimeout.md)                              | Falso     | **ACS-Subnet**                  |
+| [**ACS-DSBM-DeadTime**](a-acsdsbmdeadtime.md)                              | Falso     | **ACS-Subnet**                  |
+| [**Priorità ACS-DSBM**](a-acsdsbmpriority.md)                              | Falso     | **ACS-Subnet**                  |
+| [**ACS-DSBM-Refresh**](a-acsdsbmrefresh.md)                                | Falso     | **ACS-Subnet**                  |
+| [**ACS-Enable-ACS-Service**](a-acsenableacsservice.md)                     | Falso     | **ACS-Subnet**                  |
+| [**ACS-Enable-RSVP-Accounting**](a-acsenablersvpaccounting.md)             | Falso     | **ACS-Subnet**                  |
+| [**ACS-Enable-RSVP-Message-Logging**](a-acsenablersvpmessagelogging.md)    | Falso     | **ACS-Subnet**                  |
+| [**ACS-Event-Log-Level**](a-acseventloglevel.md)                           | Falso     | **ACS-Subnet**                  |
+| [**ACS-Max-Duration-Per-Flow**](a-acsmaxdurationperflow.md)                | Falso     | **ACS-Subnet**                  |
+| [**ACS-Max-No-Of-Account-Files**](a-acsmaxnoofaccountfiles.md)             | Falso     | **ACS-Subnet**                  |
+| [**ACS-max-no-of-log-files**](a-acsmaxnooflogfiles.md)                     | Falso     | **ACS-Subnet**                  |
+| [**ACS-Max-Peak-Bandwidth**](a-acsmaxpeakbandwidth.md)                     | Falso     | **ACS-Subnet**                  |
+| [**ACS-Max-Peak-Bandwidth-Per-Flow**](a-acsmaxpeakbandwidthperflow.md)     | Falso     | **ACS-Subnet**                  |
+| [**ACS-Max-Size-Of-RSVP-Account-File**](a-acsmaxsizeofrsvpaccountfile.md)  | Falso     | **ACS-Subnet**                  |
+| [**ACS-Max-Size-Of-RSVP-Log-File**](a-acsmaxsizeofrsvplogfile.md)          | Falso     | **ACS-Subnet**                  |
+| [**ACS-Max-Token-Rate-Per-Flow**](a-acsmaxtokenrateperflow.md)             | Falso     | **ACS-Subnet**                  |
+| [**ACS-Non-Reserved-Max-SDU-Size**](a-acsnonreservedmaxsdusize.md)         | Falso     | **ACS-Subnet**                  |
+| [**ACS-Non-Reserved-Min-Policed-Size**](a-acsnonreservedminpolicedsize.md) | Falso     | **ACS-Subnet**                  |
+| [**ACS-Non-Reserved-Peak-Rate**](a-acsnonreservedpeakrate.md)              | Falso     | **ACS-Subnet**                  |
+| [**ACS-Non-Reserved-Token-Size**](a-acsnonreservedtokensize.md)            | Falso     | **ACS-Subnet**                  |
+| [**ACS-Non-Reserved-Tx-Limit**](a-acsnonreservedtxlimit.md)                | Falso     | **ACS-Subnet**                  |
+| [**ACS-Non-Reserved-Tx-Size**](a-acsnonreservedtxsize.md)                  | Falso     | **ACS-Subnet**                  |
+| [**ACS-RSVP-Account-Files-Location**](a-acsrsvpaccountfileslocation.md)    | Falso     | **ACS-Subnet**                  |
+| [**ACS-RSVP-Log-Files-Location**](a-acsrsvplogfileslocation.md)            | Falso     | **ACS-Subnet**                  |
+| [**ACS-Server-List**](a-acsserverlist.md)                                  | Falso     | **ACS-Subnet**                  |
+| [**Descrizione dell'amministratore**](a-admindescription.md)                             | Falso     | [**In alto**](c-top.md)<br/> |
 | [**Admin-Display-Name**](a-admindisplayname.md)                            | Falso     | [**In alto**](c-top.md)<br/> |
 | [**Attributi consentiti**](a-allowedattributes.md)                           | Falso     | [**In alto**](c-top.md)<br/> |
-| [**Consentito-attributi-valido**](a-allowedattributeseffective.md)        | Falso     | [**In alto**](c-top.md)<br/> |
-| [**Classi consentite-figlio**](a-allowedchildclasses.md)                      | Falso     | [**In alto**](c-top.md)<br/> |
-| [**Consentito-classi figlio-valide**](a-allowedchildclasseseffective.md)   | Falso     | [**In alto**](c-top.md)<br/> |
-| [**Testa di ponte-server-list-BL**](a-bridgeheadserverlistbl.md)               | Falso     | [**In alto**](c-top.md)<br/> |
-| [**Nome canonico**](a-canonicalname.md)                                   | Falso     | [**In alto**](c-top.md)<br/> |
+| [**Allowed-Attributes-Effective**](a-allowedattributeseffective.md)        | Falso     | [**In alto**](c-top.md)<br/> |
+| [**Classi figlio consentite**](a-allowedchildclasses.md)                      | Falso     | [**In alto**](c-top.md)<br/> |
+| [**Allowed-Child-Classes-Effective**](a-allowedchildclasseseffective.md)   | Falso     | [**In alto**](c-top.md)<br/> |
+| [**Bridgehead-Server-List-BL**](a-bridgeheadserverlistbl.md)               | Falso     | [**In alto**](c-top.md)<br/> |
+| [**Canonical-Name**](a-canonicalname.md)                                   | Falso     | [**In alto**](c-top.md)<br/> |
 | [**Nome comune**](a-cn.md)                                                 | Falso     | [**In alto**](c-top.md)<br/> |
 | [**Creazione timestamp**](a-createtimestamp.md)                              | Falso     | [**In alto**](c-top.md)<br/> |
 | [**Descrizione**](a-description.md)                                        | Falso     | [**In alto**](c-top.md)<br/> |
 | [**Nome visualizzato**](a-displayname.md)                                       | Falso     | [**In alto**](c-top.md)<br/> |
-| [**Display-Name-stampabile**](a-displaynameprintable.md)                    | Falso     | [**In alto**](c-top.md)<br/> |
-| [**DSA-firma**](a-dsasignature.md)                                     | Falso     | [**In alto**](c-top.md)<br/> |
-| [**DS-Core-propagazione-dati**](a-dscorepropagationdata.md)                 | Falso     | [**In alto**](c-top.md)<br/> |
-| [**Nome estensione**](a-extensionname.md)                                   | Falso     | [**In alto**](c-top.md)<br/> |
+| [**Display-Name-Printable**](a-displaynameprintable.md)                    | Falso     | [**In alto**](c-top.md)<br/> |
+| [**Firma DSA**](a-dsasignature.md)                                     | Falso     | [**In alto**](c-top.md)<br/> |
+| [**DS-Core-Propagation-Data**](a-dscorepropagationdata.md)                 | Falso     | [**In alto**](c-top.md)<br/> |
+| [**Extension-Name**](a-extensionname.md)                                   | Falso     | [**In alto**](c-top.md)<br/> |
 | [**Bandiere**](a-flags.md)                                                    | Falso     | [**In alto**](c-top.md)<br/> |
-| [**Da-entry**](a-fromentry.md)                                           | Falso     | [**In alto**](c-top.md)<br/> |
-| [**FRS-computer-Reference-BL**](a-frscomputerreferencebl.md)               | Falso     | [**In alto**](c-top.md)<br/> |
-| [**FRS-member-Reference-BL**](a-frsmemberreferencebl.md)                   | Falso     | [**In alto**](c-top.md)<br/> |
+| [**From-Entry**](a-fromentry.md)                                           | Falso     | [**In alto**](c-top.md)<br/> |
+| [**Frs-Computer-Reference-BL**](a-frscomputerreferencebl.md)               | Falso     | [**In alto**](c-top.md)<br/> |
+| [**FRS-Member-Reference-BL**](a-frsmemberreferencebl.md)                   | Falso     | [**In alto**](c-top.md)<br/> |
 | [**FSMO-Role-Owner**](a-fsmoroleowner.md)                                  | Falso     | [**In alto**](c-top.md)<br/> |
 | [**Tipo di istanza**](a-instancetype.md)                                     | Vero      | [**In alto**](c-top.md)<br/> |
 | [**Is-Critical-System-Object**](a-iscriticalsystemobject.md)               | Falso     | [**In alto**](c-top.md)<br/> |
-| [**Viene eliminato**](a-isdeleted.md)                                           | Falso     | [**In alto**](c-top.md)<br/> |
-| [**Is-member-of-DL**](a-memberof.md)                                       | Falso     | [**In alto**](c-top.md)<br/> |
-| [**Is-Privilege-Holder**](a-isprivilegeholder.md)                          | Falso     | [**In alto**](c-top.md)<br/> |
+| [**Is-Deleted**](a-isdeleted.md)                                           | Falso     | [**In alto**](c-top.md)<br/> |
+| [**Membro di DL**](a-memberof.md)                                       | Falso     | [**In alto**](c-top.md)<br/> |
+| [**Titolare dei privilegi**](a-isprivilegeholder.md)                          | Falso     | [**In alto**](c-top.md)<br/> |
 | [**Ultimo elemento padre noto**](a-lastknownparent.md)                              | Falso     | [**In alto**](c-top.md)<br/> |
 | [**Oggetti gestiti**](a-managedobjects.md)                                 | Falso     | [**In alto**](c-top.md)<br/> |
-| [**Mastered-by**](a-masteredby.md)                                         | Falso     | [**In alto**](c-top.md)<br/> |
-| [**Modifica-timestamp**](a-modifytimestamp.md)                              | Falso     | [**In alto**](c-top.md)<br/> |
-| [**MS-COM-PartitionSetLink**](a-mscom-partitionsetlink.md)                 | Falso     | [**In alto**](c-top.md)<br/> |
-| [**MS-COM-UserLink**](a-mscom-userlink.md)                                 | Falso     | [**In alto**](c-top.md)<br/> |
-| [**MS-DFSR-ComputerReferenceBL**](a-msdfsr-computerreferencebl.md)         | Falso     | [**In alto**](c-top.md)<br/> |
-| [**MS-DFSR-MemberReferenceBL**](a-msdfsr-memberreferencebl.md)             | Falso     | [**In alto**](c-top.md)<br/> |
-| [**ms-DS-approx-immed-subordinates**](a-msds-approx-immed-subordinates.md) | Falso     | [**In alto**](c-top.md)<br/> |
-| [**MS-DS-coerenza-figlio-conteggio**](a-ms-ds-consistencychildcount.md)      | Falso     | [**In alto**](c-top.md)<br/> |
+| [**Mastered-By**](a-masteredby.md)                                         | Falso     | [**In alto**](c-top.md)<br/> |
+| [**Modifica timestamp**](a-modifytimestamp.md)                              | Falso     | [**In alto**](c-top.md)<br/> |
+| [**ms-COM-PartitionSetLink**](a-mscom-partitionsetlink.md)                 | Falso     | [**In alto**](c-top.md)<br/> |
+| [**ms-COM-UserLink**](a-mscom-userlink.md)                                 | Falso     | [**In alto**](c-top.md)<br/> |
+| [**ms-DFSR-ComputerReferenceBL**](a-msdfsr-computerreferencebl.md)         | Falso     | [**In alto**](c-top.md)<br/> |
+| [**ms-DFSR-MemberReferenceBL**](a-msdfsr-memberreferencebl.md)             | Falso     | [**In alto**](c-top.md)<br/> |
+| [**ms-DS-Approx-Immed-Subordinates**](a-msds-approx-immed-subordinates.md) | Falso     | [**In alto**](c-top.md)<br/> |
+| [**MS-DS-Consistency-Child-Count**](a-ms-ds-consistencychildcount.md)      | Falso     | [**In alto**](c-top.md)<br/> |
 | [**MS-DS-Consistency-Guid**](a-ms-ds-consistencyguid.md)                   | Falso     | [**In alto**](c-top.md)<br/> |
-| [**ms-DS-Mastered-by**](a-msds-masteredby.md)                              | Falso     | [**In alto**](c-top.md)<br/> |
-| [**ms-DS-members-for-AZ-Role-BL**](a-msds-membersforazrolebl.md)           | Falso     | [**In alto**](c-top.md)<br/> |
-| [**ms-DS-NC-REPL-cursori**](a-msds-ncreplcursors.md)                       | Falso     | [**In alto**](c-top.md)<br/> |
-| [**ms-DS-NC-REPL-inbound-neighbors**](a-msds-ncreplinboundneighbors.md)    | Falso     | [**In alto**](c-top.md)<br/> |
-| [**ms-DS-NC-REPL-Outbound-Neighbors**](a-msds-ncreploutboundneighbors.md)  | Falso     | [**In alto**](c-top.md)<br/> |
-| [**ms-DS-non membri-BL**](a-msds-nonmembersbl.md)                         | Falso     | [**In alto**](c-top.md)<br/> |
+| [**ms-DS-Mastered-By**](a-msds-masteredby.md)                              | Falso     | [**In alto**](c-top.md)<br/> |
+| [**ms-DS-Members-For-Az-Role-BL**](a-msds-membersforazrolebl.md)           | Falso     | [**In alto**](c-top.md)<br/> |
+| [**ms-DS-NC-Repl-Cursors**](a-msds-ncreplcursors.md)                       | Falso     | [**In alto**](c-top.md)<br/> |
+| [**ms-DS-NC-Repl-Inbound-Neighbors**](a-msds-ncreplinboundneighbors.md)    | Falso     | [**In alto**](c-top.md)<br/> |
+| [**ms-DS-NC-Repl-Outbound-Neighbors**](a-msds-ncreploutboundneighbors.md)  | Falso     | [**In alto**](c-top.md)<br/> |
+| [**ms-DS-Non-Members-BL**](a-msds-nonmembersbl.md)                         | Falso     | [**In alto**](c-top.md)<br/> |
 | [**ms-DS-Object-Reference-BL**](a-msds-objectreferencebl.md)               | Falso     | [**In alto**](c-top.md)<br/> |
-| [**ms-DS-Operations-for-AZ-Role-BL**](a-msds-operationsforazrolebl.md)     | Falso     | [**In alto**](c-top.md)<br/> |
-| [**ms-DS-Operations-for-AZ-Task-BL**](a-msds-operationsforaztaskbl.md)     | Falso     | [**In alto**](c-top.md)<br/> |
-| [**ms-DS-REPL-attribute-meta-data**](a-msds-replattributemetadata.md)      | Falso     | [**In alto**](c-top.md)<br/> |
-| [**ms-DS-REPL-value-meta-dati**](a-msds-replvaluemetadata.md)              | Falso     | [**In alto**](c-top.md)<br/> |
-| [**ms-DS-Tasks-for-AZ-Role-BL**](a-msds-tasksforazrolebl.md)               | Falso     | [**In alto**](c-top.md)<br/> |
-| [**ms-DS-Tasks-for-AZ-Task-BL**](a-msds-tasksforaztaskbl.md)               | Falso     | [**In alto**](c-top.md)<br/> |
+| [**ms-DS-Operations-For-Az-Role-BL**](a-msds-operationsforazrolebl.md)     | Falso     | [**In alto**](c-top.md)<br/> |
+| [**ms-DS-Operations-For-Az-Task-BL**](a-msds-operationsforaztaskbl.md)     | Falso     | [**In alto**](c-top.md)<br/> |
+| [**ms-DS-Repl-Attribute-Meta-Data**](a-msds-replattributemetadata.md)      | Falso     | [**In alto**](c-top.md)<br/> |
+| [**ms-DS-Repl-Value-Meta-Data**](a-msds-replvaluemetadata.md)              | Falso     | [**In alto**](c-top.md)<br/> |
+| [**ms-DS-Tasks-For-Az-Role-BL**](a-msds-tasksforazrolebl.md)               | Falso     | [**In alto**](c-top.md)<br/> |
+| [**ms-DS-Tasks-For-Az-Task-BL**](a-msds-tasksforaztaskbl.md)               | Falso     | [**In alto**](c-top.md)<br/> |
 | [**ms-Exch-Owner-BL**](a-ownerbl.md)                                       | Falso     | [**In alto**](c-top.md)<br/> |
-| [**Attributo msSFU-30-POSIX-member-of**](a-mssfu30posixmemberof.md)                  | Falso     | [**In alto**](c-top.md)<br/> |
-| [**-SCP-BL**](a-netbootscpbl.md)                                    | Falso     | [**In alto**](c-top.md)<br/> |
-| [**Non-Security-member-BL**](a-nonsecuritymemberbl.md)                     | Falso     | [**In alto**](c-top.md)<br/> |
-| [**NT-Security-descrittore**](a-ntsecuritydescriptor.md)                    | Vero      | [**In alto**](c-top.md)<br/> |
+| [**msSFU-30-Posix-Member-Of**](a-mssfu30posixmemberof.md)                  | Falso     | [**In alto**](c-top.md)<br/> |
+| [**netboot-SCP-BL**](a-netbootscpbl.md)                                    | Falso     | [**In alto**](c-top.md)<br/> |
+| [**Non security-Member-BL**](a-nonsecuritymemberbl.md)                     | Falso     | [**In alto**](c-top.md)<br/> |
+| [**NT-Security-Descriptor**](a-ntsecuritydescriptor.md)                    | Vero      | [**In alto**](c-top.md)<br/> |
 | [**Obj-Dist-Name**](a-distinguishedname.md)                                | Falso     | [**In alto**](c-top.md)<br/> |
-| [**Categoria oggetto**](a-objectcategory.md)                                 | Vero      | [**In alto**](c-top.md)<br/> |
-| [**Classe Object**](a-objectclass.md)                                       | Vero      | [**In alto**](c-top.md)<br/> |
-| [**GUID oggetto**](a-objectguid.md)                                         | Falso     | [**In alto**](c-top.md)<br/> |
+| [**Categoria di oggetti**](a-objectcategory.md)                                 | Vero      | [**In alto**](c-top.md)<br/> |
+| [**Classe object**](a-objectclass.md)                                       | Vero      | [**In alto**](c-top.md)<br/> |
+| [**Object-Guid**](a-objectguid.md)                                         | Falso     | [**In alto**](c-top.md)<br/> |
 | [**Versione oggetto**](a-objectversion.md)                                   | Falso     | [**In alto**](c-top.md)<br/> |
-| [**Altri oggetti-well-known**](a-otherwellknownobjects.md)                 | Falso     | [**In alto**](c-top.md)<br/> |
-| [**Elenco di eliminazione-attributo parziale**](a-partialattributedeletionlist.md)   | Falso     | [**In alto**](c-top.md)<br/> |
-| [**Set di attributi parziali**](a-partialattributeset.md)                      | Falso     | [**In alto**](c-top.md)<br/> |
-| [**Possibili-inferiori**](a-possibleinferiors.md)                           | Falso     | [**In alto**](c-top.md)<br/> |
-| [**Nome-oggetto-proxy**](a-proxiedobjectname.md)                          | Falso     | [**In alto**](c-top.md)<br/> |
+| [**Altri oggetti noti**](a-otherwellknownobjects.md)                 | Falso     | [**In alto**](c-top.md)<br/> |
+| [**Partial-Attribute-Deletion-List**](a-partialattributedeletionlist.md)   | Falso     | [**In alto**](c-top.md)<br/> |
+| [**Partial-Attribute-Set**](a-partialattributeset.md)                      | Falso     | [**In alto**](c-top.md)<br/> |
+| [**Possibili inevasi**](a-possibleinferiors.md)                           | Falso     | [**In alto**](c-top.md)<br/> |
+| [**Proxied-Object-Name**](a-proxiedobjectname.md)                          | Falso     | [**In alto**](c-top.md)<br/> |
 | [**Indirizzi proxy**](a-proxyaddresses.md)                                 | Falso     | [**In alto**](c-top.md)<br/> |
-| [**Query-criteri-BL**](a-querypolicybl.md)                                  | Falso     | [**In alto**](c-top.md)<br/> |
-| [**RDN**](a-name.md)                                                       | Falso     | [**In alto**](c-top.md)<br/> |
-| [**REPL-Property-meta-dati**](a-replpropertymetadata.md)                   | Falso     | [**In alto**](c-top.md)<br/> |
-| [**REPL-UpToDate-Vector**](a-repluptodatevector.md)                        | Falso     | [**In alto**](c-top.md)<br/> |
+| [**Query-Policy-BL**](a-querypolicybl.md)                                  | Falso     | [**In alto**](c-top.md)<br/> |
+| [**Rdn**](a-name.md)                                                       | Falso     | [**In alto**](c-top.md)<br/> |
+| [**Repl-Property-Meta-Data**](a-replpropertymetadata.md)                   | Falso     | [**In alto**](c-top.md)<br/> |
+| [**Repl-UpToDate-Vector**](a-repluptodatevector.md)                        | Falso     | [**In alto**](c-top.md)<br/> |
 | [**Report**](a-directreports.md)                                          | Falso     | [**In alto**](c-top.md)<br/> |
-| [**Reps-da**](a-repsfrom.md)                                             | Falso     | [**In alto**](c-top.md)<br/> |
-| [**Da Reps a**](a-repsto.md)                                                 | Falso     | [**In alto**](c-top.md)<br/> |
+| [**Reps-From**](a-repsfrom.md)                                             | Falso     | [**In alto**](c-top.md)<br/> |
+| [**Reps-To**](a-repsto.md)                                                 | Falso     | [**In alto**](c-top.md)<br/> |
 | [**Revisione**](a-revision.md)                                              | Falso     | [**In alto**](c-top.md)<br/> |
-| [**SD-diritti-efficacia**](a-sdrightseffective.md)                          | Falso     | [**In alto**](c-top.md)<br/> |
-| [**Server-riferimento-BL**](a-serverreferencebl.md)                          | Falso     | [**In alto**](c-top.md)<br/> |
-| [**Mostra-in-solo visualizzazione avanzata**](a-showinadvancedviewonly.md)              | Falso     | [**In alto**](c-top.md)<br/> |
+| [**SD-Rights-Effective**](a-sdrightseffective.md)                          | Falso     | [**In alto**](c-top.md)<br/> |
+| [**Server-Reference-BL**](a-serverreferencebl.md)                          | Falso     | [**In alto**](c-top.md)<br/> |
+| [**Show-In-Advanced-View-Only**](a-showinadvancedviewonly.md)              | Falso     | [**In alto**](c-top.md)<br/> |
 | [**Site-Object-BL**](a-siteobjectbl.md)                                    | Falso     | [**In alto**](c-top.md)<br/> |
-| [**Classe strutturale-oggetto**](a-structuralobjectclass.md)                  | Falso     | [**In alto**](c-top.md)<br/> |
-| [**Riferimenti secondari**](a-subrefs.md)                                               | Falso     | [**In alto**](c-top.md)<br/> |
+| [**Classe structural-object**](a-structuralobjectclass.md)                  | Falso     | [**In alto**](c-top.md)<br/> |
+| [**Sottori ref**](a-subrefs.md)                                               | Falso     | [**In alto**](c-top.md)<br/> |
 | [**SubSchemaSubEntry**](a-subschemasubentry.md)                            | Falso     | [**In alto**](c-top.md)<br/> |
 | [**Flag di sistema**](a-systemflags.md)                                       | Falso     | [**In alto**](c-top.md)<br/> |
-| [**USN-modificato**](a-usnchanged.md)                                         | Falso     | [**In alto**](c-top.md)<br/> |
-| [**USN creato**](a-usncreated.md)                                         | Falso     | [**In alto**](c-top.md)<br/> |
-| [**USN-DSA-Last-obj-rimosso**](a-usndsalastobjremoved.md)                  | Falso     | [**In alto**](c-top.md)<br/> |
-| [**USN-tra siti**](a-usnintersite.md)                                     | Falso     | [**In alto**](c-top.md)<br/> |
-| [**USN-ultimo-obj-REM**](a-usnlastobjrem.md)                                 | Falso     | [**In alto**](c-top.md)<br/> |
-| [**USN-origine**](a-usnsource.md)                                           | Falso     | [**In alto**](c-top.md)<br/> |
-| [**WBEM-percorso**](a-wbempath.md)                                             | Falso     | [**In alto**](c-top.md)<br/> |
+| [**Modifica di USN**](a-usnchanged.md)                                         | Falso     | [**In alto**](c-top.md)<br/> |
+| [**Creato da USN**](a-usncreated.md)                                         | Falso     | [**In alto**](c-top.md)<br/> |
+| [**USN-DSA-Last-Obj-Removed**](a-usndsalastobjremoved.md)                  | Falso     | [**In alto**](c-top.md)<br/> |
+| [**USN-Intersite**](a-usnintersite.md)                                     | Falso     | [**In alto**](c-top.md)<br/> |
+| [**USN-Last-Obj-Rem**](a-usnlastobjrem.md)                                 | Falso     | [**In alto**](c-top.md)<br/> |
+| [**USN-Source**](a-usnsource.md)                                           | Falso     | [**In alto**](c-top.md)<br/> |
+| [**Wbem-Path**](a-wbempath.md)                                             | Falso     | [**In alto**](c-top.md)<br/> |
 | [**Oggetti noti**](a-wellknownobjects.md)                            | Falso     | [**In alto**](c-top.md)<br/> |
-| [**Quando-modificato**](a-whenchanged.md)                                       | Falso     | [**In alto**](c-top.md)<br/> |
-| [**Data di creazione**](a-whencreated.md)                                       | Falso     | [**In alto**](c-top.md)<br/> |
-| [**WWW-Home-pagina**](a-wwwhomepage.md)                                      | Falso     | [**In alto**](c-top.md)<br/> |
-| [**WWW-pagina-altro**](a-url.md)                                             | Falso     | [**In alto**](c-top.md)<br/> |
+| [**Quando viene modificato**](a-whenchanged.md)                                       | Falso     | [**In alto**](c-top.md)<br/> |
+| [**Creazione in data e ora**](a-whencreated.md)                                       | Falso     | [**In alto**](c-top.md)<br/> |
+| [**Www-Home-Page**](a-wwwhomepage.md)                                      | Falso     | [**In alto**](c-top.md)<br/> |
+| [**WWW-Page-Other**](a-url.md)                                             | Falso     | [**In alto**](c-top.md)<br/> |
 
 
 
@@ -496,18 +496,18 @@ Questa classe contiene gli attributi seguenti per Windows Server 2003 R2:
 | Object-Category             | 1                                                                                            |
 | Default-Object-Category     | \-                                                                                           |
 | Governs-Id                  | 1.2.840.113556.1.5.138                                                                       |
-| Valore predefinito-nascondiglio        | 1                                                                                            |
-| RDN-att-ID                  | [**Nome comune**](a-cn.md)<br/>                                                       |
+| Default-Hiding-Value        | 1                                                                                            |
+| Rdn-Att-Id                  | [**Nome comune**](a-cn.md)<br/>                                                       |
 | Sottoclasse di                 | [**In alto**](c-top.md)<br/>                                                              |
 | Possibili superiori          | [**Contenitore**](c-container.md)                                                             |
 | Classi ausiliarie           | \-                                                                                           |
-| NT-Security-descrittore      | O:BAG: NON VALIDO: S:                                                                                 |
-| Descrittore di sicurezza predefinito | D: (A;; RPWPCRCCDCLCLORCWOWDSDDTSW;;;D A) (A;; RPWPCRCCDCLCLORCWOWDSDDTSW;;; SY) (A;; RPLCLORC;;; Au |
+| NT-Security-Descriptor      | O:BAG:BAD:S:                                                                                 |
+| Descrittore di sicurezza predefinito | D:(A;; RPWPCRCCDCLCLORCWOWDSDDTSW;;;D A)(A;; RPWPCRCCDCLCLORCWOWDSDDTSW;;; SY)(A;; RPLCLORC;;; Au) |
 | System-Flags                | 0x00000010                                                                                   |
 
 
 
-## <a name="windows-server-2008-attributes"></a>Attributi di Windows Server 2008
+## <a name="windows-server-2008-attributes"></a>Windows Attributi di Server 2008
 
 Questa classe contiene gli attributi seguenti per Windows Server 2008:
 
@@ -515,137 +515,137 @@ Questa classe contiene gli attributi seguenti per Windows Server 2008:
 
 | Attributo                                                                      | Obbligatorio | Derivato da                    |
 |--------------------------------------------------------------------------------|-----------|---------------------------------|
-| [**ACS-allocabile-RSVP-larghezza di banda**](a-acsallocablersvpbandwidth.md)            | Falso     | **ACS-subnet**                  |
-| [**ACS-cache-timeout**](a-acscachetimeout.md)                                 | Falso     | **ACS-subnet**                  |
-| [**ACS-DSBM-DeadTime**](a-acsdsbmdeadtime.md)                                 | Falso     | **ACS-subnet**                  |
-| [**ACS-DSBM-priorità**](a-acsdsbmpriority.md)                                 | Falso     | **ACS-subnet**                  |
-| [**ACS-DSBM-Refresh**](a-acsdsbmrefresh.md)                                   | Falso     | **ACS-subnet**                  |
-| [**ACS-Enable-ACS-Service**](a-acsenableacsservice.md)                        | Falso     | **ACS-subnet**                  |
-| [**ACS-Enable-RSVP-Accounting**](a-acsenablersvpaccounting.md)                | Falso     | **ACS-subnet**                  |
-| [**ACS-Enable-RSVP-Message-Logging**](a-acsenablersvpmessagelogging.md)       | Falso     | **ACS-subnet**                  |
-| [**ACS-a livello di registro eventi**](a-acseventloglevel.md)                              | Falso     | **ACS-subnet**                  |
-| [**ACS-Max-durata per flusso**](a-acsmaxdurationperflow.md)                   | Falso     | **ACS-subnet**                  |
-| [**ACS-Max-No-of-account-files**](a-acsmaxnoofaccountfiles.md)                | Falso     | **ACS-subnet**                  |
-| [**ACS-Max-No-of-log-files**](a-acsmaxnooflogfiles.md)                        | Falso     | **ACS-subnet**                  |
-| [**ACS-max-picco-larghezza di banda**](a-acsmaxpeakbandwidth.md)                        | Falso     | **ACS-subnet**                  |
-| [**ACS-max-picco-larghezza di banda per flusso**](a-acsmaxpeakbandwidthperflow.md)        | Falso     | **ACS-subnet**                  |
-| [**ACS-max-size-of-RSVP-account-file**](a-acsmaxsizeofrsvpaccountfile.md)     | Falso     | **ACS-subnet**                  |
-| [**ACS-max-size-of-RSVP-log-file**](a-acsmaxsizeofrsvplogfile.md)             | Falso     | **ACS-subnet**                  |
-| [**ACS-max-token-rate-per-Flow**](a-acsmaxtokenrateperflow.md)                | Falso     | **ACS-subnet**                  |
-| [**ACS-non riservato-max-SDU-size**](a-acsnonreservedmaxsdusize.md)            | Falso     | **ACS-subnet**                  |
-| [**ACS-non riservato-min-Police-size**](a-acsnonreservedminpolicedsize.md)    | Falso     | **ACS-subnet**                  |
-| [**ACS-non riservato-frequenza massima**](a-acsnonreservedpeakrate.md)                 | Falso     | **ACS-subnet**                  |
-| [**ACS-non riservato-token-size**](a-acsnonreservedtokensize.md)               | Falso     | **ACS-subnet**                  |
-| [**ACS-non riservato-TX-Limit**](a-acsnonreservedtxlimit.md)                   | Falso     | **ACS-subnet**                  |
-| [**ACS-non riservato-TX-size**](a-acsnonreservedtxsize.md)                     | Falso     | **ACS-subnet**                  |
-| [**ACS-RSVP-account-files-location**](a-acsrsvpaccountfileslocation.md)       | Falso     | **ACS-subnet**                  |
-| [**ACS-RSVP-log-files-location**](a-acsrsvplogfileslocation.md)               | Falso     | **ACS-subnet**                  |
-| [**Elenco di server ACS**](a-acsserverlist.md)                                     | Falso     | **ACS-subnet**                  |
-| [**Admin-Descrizione**](a-admindescription.md)                                | Falso     | [**In alto**](c-top.md)<br/> |
+| [**ACS-Allocable-RSVP-Bandwidth**](a-acsallocablersvpbandwidth.md)            | Falso     | **ACS-Subnet**                  |
+| [**ACS-Cache-Timeout**](a-acscachetimeout.md)                                 | Falso     | **ACS-Subnet**                  |
+| [**ACS-DSBM-DeadTime**](a-acsdsbmdeadtime.md)                                 | Falso     | **ACS-Subnet**                  |
+| [**Priorità ACS-DSBM**](a-acsdsbmpriority.md)                                 | Falso     | **ACS-Subnet**                  |
+| [**ACS-DSBM-Refresh**](a-acsdsbmrefresh.md)                                   | Falso     | **ACS-Subnet**                  |
+| [**ACS-Enable-ACS-Service**](a-acsenableacsservice.md)                        | Falso     | **ACS-Subnet**                  |
+| [**ACS-Enable-RSVP-Accounting**](a-acsenablersvpaccounting.md)                | Falso     | **ACS-Subnet**                  |
+| [**ACS-Enable-RSVP-Message-Logging**](a-acsenablersvpmessagelogging.md)       | Falso     | **ACS-Subnet**                  |
+| [**ACS-Event-Log-Level**](a-acseventloglevel.md)                              | Falso     | **ACS-Subnet**                  |
+| [**ACS-Max-Duration-Per-Flow**](a-acsmaxdurationperflow.md)                   | Falso     | **ACS-Subnet**                  |
+| [**ACS-Max-No-Of-Account-Files**](a-acsmaxnoofaccountfiles.md)                | Falso     | **ACS-Subnet**                  |
+| [**ACS-max-no-of-log-files**](a-acsmaxnooflogfiles.md)                        | Falso     | **ACS-Subnet**                  |
+| [**ACS-Max-Peak-Bandwidth**](a-acsmaxpeakbandwidth.md)                        | Falso     | **ACS-Subnet**                  |
+| [**ACS-Max-Peak-Bandwidth-Per-Flow**](a-acsmaxpeakbandwidthperflow.md)        | Falso     | **ACS-Subnet**                  |
+| [**ACS-Max-Size-Of-RSVP-Account-File**](a-acsmaxsizeofrsvpaccountfile.md)     | Falso     | **ACS-Subnet**                  |
+| [**ACS-max-size-of-RSVP-log-file**](a-acsmaxsizeofrsvplogfile.md)             | Falso     | **ACS-Subnet**                  |
+| [**ACS-Max-Token-Rate-Per-Flow**](a-acsmaxtokenrateperflow.md)                | Falso     | **ACS-Subnet**                  |
+| [**ACS-Non-Reserved-Max-SDU-Size**](a-acsnonreservedmaxsdusize.md)            | Falso     | **ACS-Subnet**                  |
+| [**ACS-Non-Reserved-Min-Policed-Size**](a-acsnonreservedminpolicedsize.md)    | Falso     | **ACS-Subnet**                  |
+| [**ACS-Non-Reserved-Peak-Rate**](a-acsnonreservedpeakrate.md)                 | Falso     | **ACS-Subnet**                  |
+| [**ACS-Non-Reserved-Token-Size**](a-acsnonreservedtokensize.md)               | Falso     | **ACS-Subnet**                  |
+| [**ACS-Non-Reserved-Tx-Limit**](a-acsnonreservedtxlimit.md)                   | Falso     | **ACS-Subnet**                  |
+| [**ACS-Non-Reserved-Tx-Size**](a-acsnonreservedtxsize.md)                     | Falso     | **ACS-Subnet**                  |
+| [**ACS-RSVP-Account-Files-Location**](a-acsrsvpaccountfileslocation.md)       | Falso     | **ACS-Subnet**                  |
+| [**ACS-RSVP-Log-Files-Location**](a-acsrsvplogfileslocation.md)               | Falso     | **ACS-Subnet**                  |
+| [**ACS-Server-List**](a-acsserverlist.md)                                     | Falso     | **ACS-Subnet**                  |
+| [**Admin-Description**](a-admindescription.md)                                | Falso     | [**In alto**](c-top.md)<br/> |
 | [**Admin-Display-Name**](a-admindisplayname.md)                               | Falso     | [**In alto**](c-top.md)<br/> |
 | [**Attributi consentiti**](a-allowedattributes.md)                              | Falso     | [**In alto**](c-top.md)<br/> |
-| [**Consentito-attributi-valido**](a-allowedattributeseffective.md)           | Falso     | [**In alto**](c-top.md)<br/> |
+| [**Allowed-Attributes-Effective**](a-allowedattributeseffective.md)           | Falso     | [**In alto**](c-top.md)<br/> |
 | [**Classi consentite-figlio**](a-allowedchildclasses.md)                         | Falso     | [**In alto**](c-top.md)<br/> |
-| [**Consentito-classi figlio-valide**](a-allowedchildclasseseffective.md)      | Falso     | [**In alto**](c-top.md)<br/> |
-| [**Testa di ponte-server-list-BL**](a-bridgeheadserverlistbl.md)                  | Falso     | [**In alto**](c-top.md)<br/> |
-| [**Nome canonico**](a-canonicalname.md)                                      | Falso     | [**In alto**](c-top.md)<br/> |
+| [**Allowed-Child-Classes-Effective**](a-allowedchildclasseseffective.md)      | Falso     | [**In alto**](c-top.md)<br/> |
+| [**Testa di ponte-Server-List-BL**](a-bridgeheadserverlistbl.md)                  | Falso     | [**In alto**](c-top.md)<br/> |
+| [**Canonical-Name**](a-canonicalname.md)                                      | Falso     | [**In alto**](c-top.md)<br/> |
 | [**Nome comune**](a-cn.md)                                                    | Falso     | [**In alto**](c-top.md)<br/> |
-| [**Creazione timestamp**](a-createtimestamp.md)                                 | Falso     | [**In alto**](c-top.md)<br/> |
+| [**Create-Time-Stamp**](a-createtimestamp.md)                                 | Falso     | [**In alto**](c-top.md)<br/> |
 | [**Descrizione**](a-description.md)                                           | Falso     | [**In alto**](c-top.md)<br/> |
 | [**Nome visualizzato**](a-displayname.md)                                          | Falso     | [**In alto**](c-top.md)<br/> |
-| [**Display-Name-stampabile**](a-displaynameprintable.md)                       | Falso     | [**In alto**](c-top.md)<br/> |
-| [**DSA-firma**](a-dsasignature.md)                                        | Falso     | [**In alto**](c-top.md)<br/> |
-| [**DS-Core-propagazione-dati**](a-dscorepropagationdata.md)                    | Falso     | [**In alto**](c-top.md)<br/> |
-| [**Nome estensione**](a-extensionname.md)                                      | Falso     | [**In alto**](c-top.md)<br/> |
+| [**Display-Name-Printable**](a-displaynameprintable.md)                       | Falso     | [**In alto**](c-top.md)<br/> |
+| [**Firma DSA**](a-dsasignature.md)                                        | Falso     | [**In alto**](c-top.md)<br/> |
+| [**DS-Core-Propagation-Data**](a-dscorepropagationdata.md)                    | Falso     | [**In alto**](c-top.md)<br/> |
+| [**Extension-Name**](a-extensionname.md)                                      | Falso     | [**In alto**](c-top.md)<br/> |
 | [**Bandiere**](a-flags.md)                                                       | Falso     | [**In alto**](c-top.md)<br/> |
-| [**Da-entry**](a-fromentry.md)                                              | Falso     | [**In alto**](c-top.md)<br/> |
-| [**FRS-computer-Reference-BL**](a-frscomputerreferencebl.md)                  | Falso     | [**In alto**](c-top.md)<br/> |
-| [**FRS-member-Reference-BL**](a-frsmemberreferencebl.md)                      | Falso     | [**In alto**](c-top.md)<br/> |
+| [**From-Entry**](a-fromentry.md)                                              | Falso     | [**In alto**](c-top.md)<br/> |
+| [**Frs-Computer-Reference-BL**](a-frscomputerreferencebl.md)                  | Falso     | [**In alto**](c-top.md)<br/> |
+| [**FRS-Member-Reference-BL**](a-frsmemberreferencebl.md)                      | Falso     | [**In alto**](c-top.md)<br/> |
 | [**FSMO-Role-Owner**](a-fsmoroleowner.md)                                     | Falso     | [**In alto**](c-top.md)<br/> |
 | [**Tipo di istanza**](a-instancetype.md)                                        | Vero      | [**In alto**](c-top.md)<br/> |
 | [**Is-Critical-System-Object**](a-iscriticalsystemobject.md)                  | Falso     | [**In alto**](c-top.md)<br/> |
-| [**Viene eliminato**](a-isdeleted.md)                                              | Falso     | [**In alto**](c-top.md)<br/> |
-| [**Is-member-of-DL**](a-memberof.md)                                          | Falso     | [**In alto**](c-top.md)<br/> |
-| [**Is-Privilege-Holder**](a-isprivilegeholder.md)                             | Falso     | [**In alto**](c-top.md)<br/> |
+| [**Is-Deleted**](a-isdeleted.md)                                              | Falso     | [**In alto**](c-top.md)<br/> |
+| [**Is-Member-Of-DL**](a-memberof.md)                                          | Falso     | [**In alto**](c-top.md)<br/> |
+| [**Titolare del privilegio Is**](a-isprivilegeholder.md)                             | Falso     | [**In alto**](c-top.md)<br/> |
 | [**Ultimo elemento padre noto**](a-lastknownparent.md)                                 | Falso     | [**In alto**](c-top.md)<br/> |
 | [**Oggetti gestiti**](a-managedobjects.md)                                    | Falso     | [**In alto**](c-top.md)<br/> |
-| [**Mastered-by**](a-masteredby.md)                                            | Falso     | [**In alto**](c-top.md)<br/> |
-| [**Modifica-timestamp**](a-modifytimestamp.md)                                 | Falso     | [**In alto**](c-top.md)<br/> |
-| [**MS-COM-PartitionSetLink**](a-mscom-partitionsetlink.md)                    | Falso     | [**In alto**](c-top.md)<br/> |
-| [**MS-COM-UserLink**](a-mscom-userlink.md)                                    | Falso     | [**In alto**](c-top.md)<br/> |
-| [**MS-DFSR-ComputerReferenceBL**](a-msdfsr-computerreferencebl.md)            | Falso     | [**In alto**](c-top.md)<br/> |
-| [**MS-DFSR-MemberReferenceBL**](a-msdfsr-memberreferencebl.md)                | Falso     | [**In alto**](c-top.md)<br/> |
-| [**ms-DS-approx-immed-subordinates**](a-msds-approx-immed-subordinates.md)    | Falso     | [**In alto**](c-top.md)<br/> |
-| [**ms-DS-AuthenticatedTo-Accounting**](a-msds-authenticatedtoaccountlist.md) | Falso     | [**In alto**](c-top.md)<br/> |
-| [**MS-DS-coerenza-figlio-conteggio**](a-ms-ds-consistencychildcount.md)         | Falso     | [**In alto**](c-top.md)<br/> |
+| [**Mastered-By**](a-masteredby.md)                                            | Falso     | [**In alto**](c-top.md)<br/> |
+| [**Modifica timestamp**](a-modifytimestamp.md)                                 | Falso     | [**In alto**](c-top.md)<br/> |
+| [**ms-COM-PartitionSetLink**](a-mscom-partitionsetlink.md)                    | Falso     | [**In alto**](c-top.md)<br/> |
+| [**ms-COM-UserLink**](a-mscom-userlink.md)                                    | Falso     | [**In alto**](c-top.md)<br/> |
+| [**ms-DFSR-ComputerReferenceBL**](a-msdfsr-computerreferencebl.md)            | Falso     | [**In alto**](c-top.md)<br/> |
+| [**ms-DFSR-MemberReferenceBL**](a-msdfsr-memberreferencebl.md)                | Falso     | [**In alto**](c-top.md)<br/> |
+| [**ms-DS-Approx-Immed-Subordinates**](a-msds-approx-immed-subordinates.md)    | Falso     | [**In alto**](c-top.md)<br/> |
+| [**ms-DS-AuthenticatedTo-Accountlist**](a-msds-authenticatedtoaccountlist.md) | Falso     | [**In alto**](c-top.md)<br/> |
+| [**MS-DS-Consistency-Child-Count**](a-ms-ds-consistencychildcount.md)         | Falso     | [**In alto**](c-top.md)<br/> |
 | [**MS-DS-Consistency-Guid**](a-ms-ds-consistencyguid.md)                      | Falso     | [**In alto**](c-top.md)<br/> |
-| [**ms-DS-is-domain-for**](a-msds-isdomainfor.md)                              | Falso     | [**In alto**](c-top.md)<br/> |
-| [**ms-DS-is-Full-replica-for**](a-msds-isfullreplicafor.md)                   | Falso     | [**In alto**](c-top.md)<br/> |
-| [**ms-DS-is-partial-replica-for**](a-msds-ispartialreplicafor.md)             | Falso     | [**In alto**](c-top.md)<br/> |
+| [**ms-DS-Is-Domain-For**](a-msds-isdomainfor.md)                              | Falso     | [**In alto**](c-top.md)<br/> |
+| [**ms-DS-is-full-replica-for**](a-msds-isfullreplicafor.md)                   | Falso     | [**In alto**](c-top.md)<br/> |
+| [**ms-DS-Is-Partial-Replica-For**](a-msds-ispartialreplicafor.md)             | Falso     | [**In alto**](c-top.md)<br/> |
 | [**ms-DS-KrbTgt-Link-BL**](a-msds-krbtgtlinkbl.md)                            | Falso     | [**In alto**](c-top.md)<br/> |
-| [**ms-DS-Mastered-by**](a-msds-masteredby.md)                                 | Falso     | [**In alto**](c-top.md)<br/> |
-| [**ms-DS-members-for-AZ-Role-BL**](a-msds-membersforazrolebl.md)              | Falso     | [**In alto**](c-top.md)<br/> |
-| [**ms-DS-NC-REPL-cursori**](a-msds-ncreplcursors.md)                          | Falso     | [**In alto**](c-top.md)<br/> |
-| [**ms-DS-NC-REPL-inbound-neighbors**](a-msds-ncreplinboundneighbors.md)       | Falso     | [**In alto**](c-top.md)<br/> |
-| [**ms-DS-NC-REPL-Outbound-Neighbors**](a-msds-ncreploutboundneighbors.md)     | Falso     | [**In alto**](c-top.md)<br/> |
-| [**ms-DS-NC-RO-replica-locations-BL**](a-msds-nc-ro-replica-locations-bl.md)  | Falso     | [**In alto**](c-top.md)<br/> |
+| [**ms-DS-Mastered-By**](a-msds-masteredby.md)                                 | Falso     | [**In alto**](c-top.md)<br/> |
+| [**ms-DS-Members-For-Az-Role-BL**](a-msds-membersforazrolebl.md)              | Falso     | [**In alto**](c-top.md)<br/> |
+| [**ms-DS-NC-Repl-Cursors**](a-msds-ncreplcursors.md)                          | Falso     | [**In alto**](c-top.md)<br/> |
+| [**ms-DS-NC-Repl-Inbound-Neighbors**](a-msds-ncreplinboundneighbors.md)       | Falso     | [**In alto**](c-top.md)<br/> |
+| [**ms-DS-NC-Repl-Outbound-Neighbors**](a-msds-ncreploutboundneighbors.md)     | Falso     | [**In alto**](c-top.md)<br/> |
+| [**ms-DS-NC-RO-Replica-Locations-BL**](a-msds-nc-ro-replica-locations-bl.md)  | Falso     | [**In alto**](c-top.md)<br/> |
 | [**ms-DS-NC-Type**](a-msds-nctype.md)                                         | Falso     | [**In alto**](c-top.md)<br/> |
-| [**ms-DS-non membri-BL**](a-msds-nonmembersbl.md)                            | Falso     | [**In alto**](c-top.md)<br/> |
+| [**ms-DS-Non-Members-BL**](a-msds-nonmembersbl.md)                            | Falso     | [**In alto**](c-top.md)<br/> |
 | [**ms-DS-Object-Reference-BL**](a-msds-objectreferencebl.md)                  | Falso     | [**In alto**](c-top.md)<br/> |
-| [**ms-DS-Operations-for-AZ-Role-BL**](a-msds-operationsforazrolebl.md)        | Falso     | [**In alto**](c-top.md)<br/> |
-| [**ms-DS-Operations-for-AZ-Task-BL**](a-msds-operationsforaztaskbl.md)        | Falso     | [**In alto**](c-top.md)<br/> |
-| [**ms-DS-nome-entità**](a-msds-principalname.md)                           | Falso     | [**In alto**](c-top.md)<br/> |
-| [**ms-DS-PSO-applicato**](a-msds-psoapplied.md)                                 | Falso     | [**In alto**](c-top.md)<br/> |
-| [**ms-DS-REPL-attribute-meta-data**](a-msds-replattributemetadata.md)         | Falso     | [**In alto**](c-top.md)<br/> |
-| [**ms-DS-REPL-value-meta-dati**](a-msds-replvaluemetadata.md)                 | Falso     | [**In alto**](c-top.md)<br/> |
-| [**ms-DS-Revealed-DSA**](a-msds-revealeddsas.md)                             | Falso     | [**In alto**](c-top.md)<br/> |
-| [**ms-DS-Revealed-list-BL**](a-msds-revealedlistbl.md)                        | Falso     | [**In alto**](c-top.md)<br/> |
-| [**ms-DS-Tasks-for-AZ-Role-BL**](a-msds-tasksforazrolebl.md)                  | Falso     | [**In alto**](c-top.md)<br/> |
-| [**ms-DS-Tasks-for-AZ-Task-BL**](a-msds-tasksforaztaskbl.md)                  | Falso     | [**In alto**](c-top.md)<br/> |
+| [**ms-DS-Operations-For-Az-Role-BL**](a-msds-operationsforazrolebl.md)        | Falso     | [**In alto**](c-top.md)<br/> |
+| [**ms-DS-Operations-For-Az-Task-BL**](a-msds-operationsforaztaskbl.md)        | Falso     | [**In alto**](c-top.md)<br/> |
+| [**ms-DS-Principal-Name**](a-msds-principalname.md)                           | Falso     | [**In alto**](c-top.md)<br/> |
+| [**Ms-DS-PSO-Applied**](a-msds-psoapplied.md)                                 | Falso     | [**In alto**](c-top.md)<br/> |
+| [**ms-DS-Repl-Attribute-Meta-Data**](a-msds-replattributemetadata.md)         | Falso     | [**In alto**](c-top.md)<br/> |
+| [**ms-DS-Repl-Value-Meta-Data**](a-msds-replvaluemetadata.md)                 | Falso     | [**In alto**](c-top.md)<br/> |
+| [**ms-DS-Revealed-DSAs**](a-msds-revealeddsas.md)                             | Falso     | [**In alto**](c-top.md)<br/> |
+| [**ms-DS-Revealed-List-BL**](a-msds-revealedlistbl.md)                        | Falso     | [**In alto**](c-top.md)<br/> |
+| [**ms-DS-Tasks-For-Az-Role-BL**](a-msds-tasksforazrolebl.md)                  | Falso     | [**In alto**](c-top.md)<br/> |
+| [**ms-DS-Tasks-For-Az-Task-BL**](a-msds-tasksforaztaskbl.md)                  | Falso     | [**In alto**](c-top.md)<br/> |
 | [**ms-Exch-Owner-BL**](a-ownerbl.md)                                          | Falso     | [**In alto**](c-top.md)<br/> |
-| [**Attributo msSFU-30-POSIX-member-of**](a-mssfu30posixmemberof.md)                     | Falso     | [**In alto**](c-top.md)<br/> |
-| [**-SCP-BL**](a-netbootscpbl.md)                                       | Falso     | [**In alto**](c-top.md)<br/> |
-| [**Non-Security-member-BL**](a-nonsecuritymemberbl.md)                        | Falso     | [**In alto**](c-top.md)<br/> |
-| [**NT-Security-descrittore**](a-ntsecuritydescriptor.md)                       | Vero      | [**In alto**](c-top.md)<br/> |
+| [**msSFU-30-Posix-Member-Of**](a-mssfu30posixmemberof.md)                     | Falso     | [**In alto**](c-top.md)<br/> |
+| [**netboot-SCP-BL**](a-netbootscpbl.md)                                       | Falso     | [**In alto**](c-top.md)<br/> |
+| [**Non security-Member-BL**](a-nonsecuritymemberbl.md)                        | Falso     | [**In alto**](c-top.md)<br/> |
+| [**NT-Security-Descriptor**](a-ntsecuritydescriptor.md)                       | Vero      | [**In alto**](c-top.md)<br/> |
 | [**Obj-Dist-Name**](a-distinguishedname.md)                                   | Falso     | [**In alto**](c-top.md)<br/> |
-| [**Categoria oggetto**](a-objectcategory.md)                                    | Vero      | [**In alto**](c-top.md)<br/> |
-| [**Classe Object**](a-objectclass.md)                                          | Vero      | [**In alto**](c-top.md)<br/> |
-| [**GUID oggetto**](a-objectguid.md)                                            | Falso     | [**In alto**](c-top.md)<br/> |
+| [**Categoria di oggetti**](a-objectcategory.md)                                    | Vero      | [**In alto**](c-top.md)<br/> |
+| [**Classe object**](a-objectclass.md)                                          | Vero      | [**In alto**](c-top.md)<br/> |
+| [**Object-Guid**](a-objectguid.md)                                            | Falso     | [**In alto**](c-top.md)<br/> |
 | [**Versione oggetto**](a-objectversion.md)                                      | Falso     | [**In alto**](c-top.md)<br/> |
-| [**Altri oggetti-well-known**](a-otherwellknownobjects.md)                    | Falso     | [**In alto**](c-top.md)<br/> |
-| [**Elenco di eliminazione-attributo parziale**](a-partialattributedeletionlist.md)      | Falso     | [**In alto**](c-top.md)<br/> |
-| [**Set di attributi parziali**](a-partialattributeset.md)                         | Falso     | [**In alto**](c-top.md)<br/> |
-| [**Possibili-inferiori**](a-possibleinferiors.md)                              | Falso     | [**In alto**](c-top.md)<br/> |
-| [**Nome-oggetto-proxy**](a-proxiedobjectname.md)                             | Falso     | [**In alto**](c-top.md)<br/> |
+| [**Altri oggetti noti**](a-otherwellknownobjects.md)                    | Falso     | [**In alto**](c-top.md)<br/> |
+| [**Partial-Attribute-Deletion-List**](a-partialattributedeletionlist.md)      | Falso     | [**In alto**](c-top.md)<br/> |
+| [**Partial-Attribute-Set**](a-partialattributeset.md)                         | Falso     | [**In alto**](c-top.md)<br/> |
+| [**Possibili inevasi**](a-possibleinferiors.md)                              | Falso     | [**In alto**](c-top.md)<br/> |
+| [**Proxied-Object-Name**](a-proxiedobjectname.md)                             | Falso     | [**In alto**](c-top.md)<br/> |
 | [**Indirizzi proxy**](a-proxyaddresses.md)                                    | Falso     | [**In alto**](c-top.md)<br/> |
-| [**Query-criteri-BL**](a-querypolicybl.md)                                     | Falso     | [**In alto**](c-top.md)<br/> |
-| [**RDN**](a-name.md)                                                          | Falso     | [**In alto**](c-top.md)<br/> |
-| [**REPL-Property-meta-dati**](a-replpropertymetadata.md)                      | Falso     | [**In alto**](c-top.md)<br/> |
-| [**REPL-UpToDate-Vector**](a-repluptodatevector.md)                           | Falso     | [**In alto**](c-top.md)<br/> |
+| [**Query-Policy-BL**](a-querypolicybl.md)                                     | Falso     | [**In alto**](c-top.md)<br/> |
+| [**Rdn**](a-name.md)                                                          | Falso     | [**In alto**](c-top.md)<br/> |
+| [**Repl-Property-Meta-Data**](a-replpropertymetadata.md)                      | Falso     | [**In alto**](c-top.md)<br/> |
+| [**Repl-UpToDate-Vector**](a-repluptodatevector.md)                           | Falso     | [**In alto**](c-top.md)<br/> |
 | [**Report**](a-directreports.md)                                             | Falso     | [**In alto**](c-top.md)<br/> |
-| [**Reps-da**](a-repsfrom.md)                                                | Falso     | [**In alto**](c-top.md)<br/> |
-| [**Da Reps a**](a-repsto.md)                                                    | Falso     | [**In alto**](c-top.md)<br/> |
+| [**Reps-From**](a-repsfrom.md)                                                | Falso     | [**In alto**](c-top.md)<br/> |
+| [**Reps-To**](a-repsto.md)                                                    | Falso     | [**In alto**](c-top.md)<br/> |
 | [**Revisione**](a-revision.md)                                                 | Falso     | [**In alto**](c-top.md)<br/> |
-| [**SD-diritti-efficacia**](a-sdrightseffective.md)                             | Falso     | [**In alto**](c-top.md)<br/> |
-| [**Server-riferimento-BL**](a-serverreferencebl.md)                             | Falso     | [**In alto**](c-top.md)<br/> |
-| [**Mostra-in-solo visualizzazione avanzata**](a-showinadvancedviewonly.md)                 | Falso     | [**In alto**](c-top.md)<br/> |
+| [**SD-Rights-Effective**](a-sdrightseffective.md)                             | Falso     | [**In alto**](c-top.md)<br/> |
+| [**Server-Reference-BL**](a-serverreferencebl.md)                             | Falso     | [**In alto**](c-top.md)<br/> |
+| [**Show-In-Advanced-View-Only**](a-showinadvancedviewonly.md)                 | Falso     | [**In alto**](c-top.md)<br/> |
 | [**Site-Object-BL**](a-siteobjectbl.md)                                       | Falso     | [**In alto**](c-top.md)<br/> |
-| [**Classe strutturale-oggetto**](a-structuralobjectclass.md)                     | Falso     | [**In alto**](c-top.md)<br/> |
+| [**Structural-Object-Class**](a-structuralobjectclass.md)                     | Falso     | [**In alto**](c-top.md)<br/> |
 | [**Riferimenti secondari**](a-subrefs.md)                                                  | Falso     | [**In alto**](c-top.md)<br/> |
 | [**SubSchemaSubEntry**](a-subschemasubentry.md)                               | Falso     | [**In alto**](c-top.md)<br/> |
 | [**Flag di sistema**](a-systemflags.md)                                          | Falso     | [**In alto**](c-top.md)<br/> |
-| [**USN-modificato**](a-usnchanged.md)                                            | Falso     | [**In alto**](c-top.md)<br/> |
-| [**USN creato**](a-usncreated.md)                                            | Falso     | [**In alto**](c-top.md)<br/> |
-| [**USN-DSA-Last-obj-rimosso**](a-usndsalastobjremoved.md)                     | Falso     | [**In alto**](c-top.md)<br/> |
-| [**USN-tra siti**](a-usnintersite.md)                                        | Falso     | [**In alto**](c-top.md)<br/> |
-| [**USN-ultimo-obj-REM**](a-usnlastobjrem.md)                                    | Falso     | [**In alto**](c-top.md)<br/> |
-| [**USN-origine**](a-usnsource.md)                                              | Falso     | [**In alto**](c-top.md)<br/> |
-| [**WBEM-percorso**](a-wbempath.md)                                                | Falso     | [**In alto**](c-top.md)<br/> |
+| [**USN modificato**](a-usnchanged.md)                                            | Falso     | [**In alto**](c-top.md)<br/> |
+| [**Creato da USN**](a-usncreated.md)                                            | Falso     | [**In alto**](c-top.md)<br/> |
+| [**USN-DSA-Last-Obj-Removed**](a-usndsalastobjremoved.md)                     | Falso     | [**In alto**](c-top.md)<br/> |
+| [**USN intersito**](a-usnintersite.md)                                        | Falso     | [**In alto**](c-top.md)<br/> |
+| [**USN-Last-Obj-Rem**](a-usnlastobjrem.md)                                    | Falso     | [**In alto**](c-top.md)<br/> |
+| [**USN-Source**](a-usnsource.md)                                              | Falso     | [**In alto**](c-top.md)<br/> |
+| [**Wbem-Path**](a-wbempath.md)                                                | Falso     | [**In alto**](c-top.md)<br/> |
 | [**Oggetti noti**](a-wellknownobjects.md)                               | Falso     | [**In alto**](c-top.md)<br/> |
-| [**Quando-modificato**](a-whenchanged.md)                                          | Falso     | [**In alto**](c-top.md)<br/> |
-| [**Data di creazione**](a-whencreated.md)                                          | Falso     | [**In alto**](c-top.md)<br/> |
-| [**WWW-Home-pagina**](a-wwwhomepage.md)                                         | Falso     | [**In alto**](c-top.md)<br/> |
-| [**WWW-pagina-altro**](a-url.md)                                                | Falso     | [**In alto**](c-top.md)<br/> |
+| [**Quando viene modificato**](a-whenchanged.md)                                          | Falso     | [**In alto**](c-top.md)<br/> |
+| [**Quando creato**](a-whencreated.md)                                          | Falso     | [**In alto**](c-top.md)<br/> |
+| [**Www-Home-Page**](a-wwwhomepage.md)                                         | Falso     | [**In alto**](c-top.md)<br/> |
+| [**WWW-Page-Other**](a-url.md)                                                | Falso     | [**In alto**](c-top.md)<br/> |
 
 
 
@@ -661,18 +661,18 @@ Questa classe contiene gli attributi seguenti per Windows Server 2008:
 | Object-Category             | 1                                                                                            |
 | Default-Object-Category     | \-                                                                                           |
 | Governs-Id                  | 1.2.840.113556.1.5.138                                                                       |
-| Valore predefinito-nascondiglio        | 1                                                                                            |
-| RDN-att-ID                  | [**Nome comune**](a-cn.md)<br/>                                                       |
+| Default-Hiding-Value        | 1                                                                                            |
+| Rdn-Att-Id                  | [**Nome comune**](a-cn.md)<br/>                                                       |
 | Sottoclasse di                 | [**In alto**](c-top.md)<br/>                                                              |
 | Possibili superiori          | [**Contenitore**](c-container.md)                                                             |
 | Classi ausiliarie           | \-                                                                                           |
-| NT-Security-descrittore      | O:BAG: NON VALIDO: S:                                                                                 |
-| Descrittore di sicurezza predefinito | D: (A;; RPWPCRCCDCLCLORCWOWDSDDTSW;;;D A) (A;; RPWPCRCCDCLCLORCWOWDSDDTSW;;; SY) (A;; RPLCLORC;;; Au |
+| NT-Security-Descriptor      | O:BAG:BAD:S:                                                                                 |
+| Descrittore di sicurezza predefinito | D:(A;; RPWPCRCCDCLCLORCWOWDSDDTSW;;;D A)(A;; RPWPCRCCDCLCLORCWOWDSDDTSW;;; SY)(A;; RPLCLORC;;; Au) |
 | System-Flags                | 0x00000010                                                                                   |
 
 
 
-## <a name="windows-server-2008-r2-attributes"></a>Attributi di Windows Server 2008 R2
+## <a name="windows-server-2008-r2-attributes"></a>Windows Attributi di Server 2008 R2
 
 Questa classe contiene gli attributi seguenti per Windows Server 2008 R2:
 
@@ -680,144 +680,144 @@ Questa classe contiene gli attributi seguenti per Windows Server 2008 R2:
 
 | Attributo                                                                        | Obbligatorio | Derivato da                    |
 |----------------------------------------------------------------------------------|-----------|---------------------------------|
-| [**ACS-allocabile-RSVP-larghezza di banda**](a-acsallocablersvpbandwidth.md)              | Falso     | **ACS-subnet**                  |
-| [**ACS-cache-timeout**](a-acscachetimeout.md)                                   | Falso     | **ACS-subnet**                  |
-| [**ACS-DSBM-DeadTime**](a-acsdsbmdeadtime.md)                                   | Falso     | **ACS-subnet**                  |
-| [**ACS-DSBM-priorità**](a-acsdsbmpriority.md)                                   | Falso     | **ACS-subnet**                  |
-| [**ACS-DSBM-Refresh**](a-acsdsbmrefresh.md)                                     | Falso     | **ACS-subnet**                  |
-| [**ACS-Enable-ACS-Service**](a-acsenableacsservice.md)                          | Falso     | **ACS-subnet**                  |
-| [**ACS-Enable-RSVP-Accounting**](a-acsenablersvpaccounting.md)                  | Falso     | **ACS-subnet**                  |
-| [**ACS-Enable-RSVP-Message-Logging**](a-acsenablersvpmessagelogging.md)         | Falso     | **ACS-subnet**                  |
-| [**ACS-a livello di registro eventi**](a-acseventloglevel.md)                                | Falso     | **ACS-subnet**                  |
-| [**ACS-Max-durata per flusso**](a-acsmaxdurationperflow.md)                     | Falso     | **ACS-subnet**                  |
-| [**ACS-Max-No-of-account-files**](a-acsmaxnoofaccountfiles.md)                  | Falso     | **ACS-subnet**                  |
-| [**ACS-Max-No-of-log-files**](a-acsmaxnooflogfiles.md)                          | Falso     | **ACS-subnet**                  |
-| [**ACS-max-picco-larghezza di banda**](a-acsmaxpeakbandwidth.md)                          | Falso     | **ACS-subnet**                  |
-| [**ACS-max-picco-larghezza di banda per flusso**](a-acsmaxpeakbandwidthperflow.md)          | Falso     | **ACS-subnet**                  |
-| [**ACS-max-size-of-RSVP-account-file**](a-acsmaxsizeofrsvpaccountfile.md)       | Falso     | **ACS-subnet**                  |
-| [**ACS-max-size-of-RSVP-log-file**](a-acsmaxsizeofrsvplogfile.md)               | Falso     | **ACS-subnet**                  |
-| [**ACS-max-token-rate-per-Flow**](a-acsmaxtokenrateperflow.md)                  | Falso     | **ACS-subnet**                  |
-| [**ACS-non riservato-max-SDU-size**](a-acsnonreservedmaxsdusize.md)              | Falso     | **ACS-subnet**                  |
-| [**ACS-non riservato-min-Police-size**](a-acsnonreservedminpolicedsize.md)      | Falso     | **ACS-subnet**                  |
-| [**ACS-non riservato-frequenza massima**](a-acsnonreservedpeakrate.md)                   | Falso     | **ACS-subnet**                  |
-| [**ACS-non riservato-token-size**](a-acsnonreservedtokensize.md)                 | Falso     | **ACS-subnet**                  |
-| [**ACS-non riservato-TX-Limit**](a-acsnonreservedtxlimit.md)                     | Falso     | **ACS-subnet**                  |
-| [**ACS-non riservato-TX-size**](a-acsnonreservedtxsize.md)                       | Falso     | **ACS-subnet**                  |
-| [**ACS-RSVP-account-files-location**](a-acsrsvpaccountfileslocation.md)         | Falso     | **ACS-subnet**                  |
-| [**ACS-RSVP-log-files-location**](a-acsrsvplogfileslocation.md)                 | Falso     | **ACS-subnet**                  |
-| [**Elenco di server ACS**](a-acsserverlist.md)                                       | Falso     | **ACS-subnet**                  |
-| [**Admin-Descrizione**](a-admindescription.md)                                  | Falso     | [**In alto**](c-top.md)<br/> |
+| [**ACS-Allocable-RSVP-Bandwidth**](a-acsallocablersvpbandwidth.md)              | Falso     | **ACS-Subnet**                  |
+| [**ACS-Cache-Timeout**](a-acscachetimeout.md)                                   | Falso     | **ACS-Subnet**                  |
+| [**ACS-DSBM-DeadTime**](a-acsdsbmdeadtime.md)                                   | Falso     | **ACS-Subnet**                  |
+| [**Priorità ACS-DSBM**](a-acsdsbmpriority.md)                                   | Falso     | **ACS-Subnet**                  |
+| [**ACS-DSBM-Refresh**](a-acsdsbmrefresh.md)                                     | Falso     | **ACS-Subnet**                  |
+| [**ACS-Enable-ACS-Service**](a-acsenableacsservice.md)                          | Falso     | **ACS-Subnet**                  |
+| [**ACS-Enable-RSVP-Accounting**](a-acsenablersvpaccounting.md)                  | Falso     | **ACS-Subnet**                  |
+| [**ACS-Enable-RSVP-Message-Logging**](a-acsenablersvpmessagelogging.md)         | Falso     | **ACS-Subnet**                  |
+| [**ACS-Event-Log-Level**](a-acseventloglevel.md)                                | Falso     | **ACS-Subnet**                  |
+| [**ACS-Max-Duration-Per-Flow**](a-acsmaxdurationperflow.md)                     | Falso     | **ACS-Subnet**                  |
+| [**ACS-max-no-of-account-files**](a-acsmaxnoofaccountfiles.md)                  | Falso     | **ACS-Subnet**                  |
+| [**ACS-max-no-of-log-files**](a-acsmaxnooflogfiles.md)                          | Falso     | **ACS-Subnet**                  |
+| [**ACS-Max-Peak-Bandwidth**](a-acsmaxpeakbandwidth.md)                          | Falso     | **ACS-Subnet**                  |
+| [**ACS-Max-Peak-Bandwidth-Per-Flow**](a-acsmaxpeakbandwidthperflow.md)          | Falso     | **ACS-Subnet**                  |
+| [**ACS-max-size-of-RSVP-account-file**](a-acsmaxsizeofrsvpaccountfile.md)       | Falso     | **ACS-Subnet**                  |
+| [**ACS-max-size-of-RSVP-log-file**](a-acsmaxsizeofrsvplogfile.md)               | Falso     | **ACS-Subnet**                  |
+| [**ACS-Max-Token-Rate-Per-Flow**](a-acsmaxtokenrateperflow.md)                  | Falso     | **ACS-Subnet**                  |
+| [**ACS-Non-Reserved-Max-SDU-Size**](a-acsnonreservedmaxsdusize.md)              | Falso     | **ACS-Subnet**                  |
+| [**ACS-Non-Reserved-Min-Policed-Size**](a-acsnonreservedminpolicedsize.md)      | Falso     | **ACS-Subnet**                  |
+| [**ACS-Non-Reserved-Peak-Rate**](a-acsnonreservedpeakrate.md)                   | Falso     | **ACS-Subnet**                  |
+| [**ACS-Non-Reserved-Token-Size**](a-acsnonreservedtokensize.md)                 | Falso     | **ACS-Subnet**                  |
+| [**ACS-Non-Reserved-Tx-Limit**](a-acsnonreservedtxlimit.md)                     | Falso     | **ACS-Subnet**                  |
+| [**ACS-Non-Reserved-Tx-Size**](a-acsnonreservedtxsize.md)                       | Falso     | **ACS-Subnet**                  |
+| [**ACS-RSVP-Account-Files-Location**](a-acsrsvpaccountfileslocation.md)         | Falso     | **ACS-Subnet**                  |
+| [**ACS-RSVP-Log-Files-Location**](a-acsrsvplogfileslocation.md)                 | Falso     | **ACS-Subnet**                  |
+| [**ACS-Server-List**](a-acsserverlist.md)                                       | Falso     | **ACS-Subnet**                  |
+| [**Admin-Description**](a-admindescription.md)                                  | Falso     | [**In alto**](c-top.md)<br/> |
 | [**Admin-Display-Name**](a-admindisplayname.md)                                 | Falso     | [**In alto**](c-top.md)<br/> |
 | [**Attributi consentiti**](a-allowedattributes.md)                                | Falso     | [**In alto**](c-top.md)<br/> |
-| [**Consentito-attributi-valido**](a-allowedattributeseffective.md)             | Falso     | [**In alto**](c-top.md)<br/> |
+| [**Allowed-Attributes-Effective**](a-allowedattributeseffective.md)             | Falso     | [**In alto**](c-top.md)<br/> |
 | [**Classi consentite-figlio**](a-allowedchildclasses.md)                           | Falso     | [**In alto**](c-top.md)<br/> |
-| [**Consentito-classi figlio-valide**](a-allowedchildclasseseffective.md)        | Falso     | [**In alto**](c-top.md)<br/> |
-| [**Testa di ponte-server-list-BL**](a-bridgeheadserverlistbl.md)                    | Falso     | [**In alto**](c-top.md)<br/> |
-| [**Nome canonico**](a-canonicalname.md)                                        | Falso     | [**In alto**](c-top.md)<br/> |
+| [**Allowed-Child-Classes-Effective**](a-allowedchildclasseseffective.md)        | Falso     | [**In alto**](c-top.md)<br/> |
+| [**Testa di ponte-Server-List-BL**](a-bridgeheadserverlistbl.md)                    | Falso     | [**In alto**](c-top.md)<br/> |
+| [**Canonical-Name**](a-canonicalname.md)                                        | Falso     | [**In alto**](c-top.md)<br/> |
 | [**Nome comune**](a-cn.md)                                                      | Falso     | [**In alto**](c-top.md)<br/> |
-| [**Creazione timestamp**](a-createtimestamp.md)                                   | Falso     | [**In alto**](c-top.md)<br/> |
+| [**Create-Time-Stamp**](a-createtimestamp.md)                                   | Falso     | [**In alto**](c-top.md)<br/> |
 | [**Descrizione**](a-description.md)                                             | Falso     | [**In alto**](c-top.md)<br/> |
 | [**Nome visualizzato**](a-displayname.md)                                            | Falso     | [**In alto**](c-top.md)<br/> |
-| [**Display-Name-stampabile**](a-displaynameprintable.md)                         | Falso     | [**In alto**](c-top.md)<br/> |
-| [**DSA-firma**](a-dsasignature.md)                                          | Falso     | [**In alto**](c-top.md)<br/> |
-| [**DS-Core-propagazione-dati**](a-dscorepropagationdata.md)                      | Falso     | [**In alto**](c-top.md)<br/> |
-| [**Nome estensione**](a-extensionname.md)                                        | Falso     | [**In alto**](c-top.md)<br/> |
+| [**Display-Name-Printable**](a-displaynameprintable.md)                         | Falso     | [**In alto**](c-top.md)<br/> |
+| [**Firma DSA**](a-dsasignature.md)                                          | Falso     | [**In alto**](c-top.md)<br/> |
+| [**DS-Core-Propagation-Data**](a-dscorepropagationdata.md)                      | Falso     | [**In alto**](c-top.md)<br/> |
+| [**Extension-Name**](a-extensionname.md)                                        | Falso     | [**In alto**](c-top.md)<br/> |
 | [**Bandiere**](a-flags.md)                                                         | Falso     | [**In alto**](c-top.md)<br/> |
-| [**Da-entry**](a-fromentry.md)                                                | Falso     | [**In alto**](c-top.md)<br/> |
-| [**FRS-computer-Reference-BL**](a-frscomputerreferencebl.md)                    | Falso     | [**In alto**](c-top.md)<br/> |
-| [**FRS-member-Reference-BL**](a-frsmemberreferencebl.md)                        | Falso     | [**In alto**](c-top.md)<br/> |
+| [**From-Entry**](a-fromentry.md)                                                | Falso     | [**In alto**](c-top.md)<br/> |
+| [**Frs-Computer-Reference-BL**](a-frscomputerreferencebl.md)                    | Falso     | [**In alto**](c-top.md)<br/> |
+| [**FRS-Member-Reference-BL**](a-frsmemberreferencebl.md)                        | Falso     | [**In alto**](c-top.md)<br/> |
 | [**FSMO-Role-Owner**](a-fsmoroleowner.md)                                       | Falso     | [**In alto**](c-top.md)<br/> |
 | [**Tipo di istanza**](a-instancetype.md)                                          | Vero      | [**In alto**](c-top.md)<br/> |
 | [**Is-Critical-System-Object**](a-iscriticalsystemobject.md)                    | Falso     | [**In alto**](c-top.md)<br/> |
-| [**Viene eliminato**](a-isdeleted.md)                                                | Falso     | [**In alto**](c-top.md)<br/> |
-| [**Is-member-of-DL**](a-memberof.md)                                            | Falso     | [**In alto**](c-top.md)<br/> |
-| [**Is-Privilege-Holder**](a-isprivilegeholder.md)                               | Falso     | [**In alto**](c-top.md)<br/> |
-| [**Riciclato**](a-isrecycled.md)                                              | Falso     | [**In alto**](c-top.md)<br/> |
+| [**Is-Deleted**](a-isdeleted.md)                                                | Falso     | [**In alto**](c-top.md)<br/> |
+| [**Is-Member-Of-DL**](a-memberof.md)                                            | Falso     | [**In alto**](c-top.md)<br/> |
+| [**Titolare del privilegio Is**](a-isprivilegeholder.md)                               | Falso     | [**In alto**](c-top.md)<br/> |
+| [**Is-Recycled**](a-isrecycled.md)                                              | Falso     | [**In alto**](c-top.md)<br/> |
 | [**Ultimo elemento padre noto**](a-lastknownparent.md)                                   | Falso     | [**In alto**](c-top.md)<br/> |
 | [**Oggetti gestiti**](a-managedobjects.md)                                      | Falso     | [**In alto**](c-top.md)<br/> |
-| [**Mastered-by**](a-masteredby.md)                                              | Falso     | [**In alto**](c-top.md)<br/> |
-| [**Modifica-timestamp**](a-modifytimestamp.md)                                   | Falso     | [**In alto**](c-top.md)<br/> |
-| [**MS-COM-PartitionSetLink**](a-mscom-partitionsetlink.md)                      | Falso     | [**In alto**](c-top.md)<br/> |
-| [**MS-COM-UserLink**](a-mscom-userlink.md)                                      | Falso     | [**In alto**](c-top.md)<br/> |
-| [**MS-DFSR-ComputerReferenceBL**](a-msdfsr-computerreferencebl.md)              | Falso     | [**In alto**](c-top.md)<br/> |
-| [**MS-DFSR-MemberReferenceBL**](a-msdfsr-memberreferencebl.md)                  | Falso     | [**In alto**](c-top.md)<br/> |
-| [**ms-DS-approx-immed-subordinates**](a-msds-approx-immed-subordinates.md)      | Falso     | [**In alto**](c-top.md)<br/> |
-| [**ms-DS-AuthenticatedTo-Accounting**](a-msds-authenticatedtoaccountlist.md)   | Falso     | [**In alto**](c-top.md)<br/> |
-| [**MS-DS-coerenza-figlio-conteggio**](a-ms-ds-consistencychildcount.md)           | Falso     | [**In alto**](c-top.md)<br/> |
+| [**Mastered-By**](a-masteredby.md)                                              | Falso     | [**In alto**](c-top.md)<br/> |
+| [**Modifica timestamp**](a-modifytimestamp.md)                                   | Falso     | [**In alto**](c-top.md)<br/> |
+| [**ms-COM-PartitionSetLink**](a-mscom-partitionsetlink.md)                      | Falso     | [**In alto**](c-top.md)<br/> |
+| [**ms-COM-UserLink**](a-mscom-userlink.md)                                      | Falso     | [**In alto**](c-top.md)<br/> |
+| [**ms-DFSR-ComputerReferenceBL**](a-msdfsr-computerreferencebl.md)              | Falso     | [**In alto**](c-top.md)<br/> |
+| [**ms-DFSR-MemberReferenceBL**](a-msdfsr-memberreferencebl.md)                  | Falso     | [**In alto**](c-top.md)<br/> |
+| [**ms-DS-Approx-Immed-Subordinates**](a-msds-approx-immed-subordinates.md)      | Falso     | [**In alto**](c-top.md)<br/> |
+| [**ms-DS-AuthenticatedTo-Accountlist**](a-msds-authenticatedtoaccountlist.md)   | Falso     | [**In alto**](c-top.md)<br/> |
+| [**MS-DS-Consistency-Child-Count**](a-ms-ds-consistencychildcount.md)           | Falso     | [**In alto**](c-top.md)<br/> |
 | [**MS-DS-Consistency-Guid**](a-ms-ds-consistencyguid.md)                        | Falso     | [**In alto**](c-top.md)<br/> |
-| [**ms-DS-Enabled-feature-BL**](a-msds-enabledfeaturebl.md)                      | Falso     | [**In alto**](c-top.md)<br/> |
-| [**ms-DS-host-Service-account-BL**](a-msds-hostserviceaccountbl.md)             | Falso     | [**In alto**](c-top.md)<br/> |
-| [**ms-DS-is-domain-for**](a-msds-isdomainfor.md)                                | Falso     | [**In alto**](c-top.md)<br/> |
-| [**ms-DS-is-Full-replica-for**](a-msds-isfullreplicafor.md)                     | Falso     | [**In alto**](c-top.md)<br/> |
-| [**ms-DS-is-partial-replica-for**](a-msds-ispartialreplicafor.md)               | Falso     | [**In alto**](c-top.md)<br/> |
+| [**ms-DS-Enabled-Feature-BL**](a-msds-enabledfeaturebl.md)                      | Falso     | [**In alto**](c-top.md)<br/> |
+| [**ms-DS-Host-Service-Account-BL**](a-msds-hostserviceaccountbl.md)             | Falso     | [**In alto**](c-top.md)<br/> |
+| [**ms-DS-Is-Domain-For**](a-msds-isdomainfor.md)                                | Falso     | [**In alto**](c-top.md)<br/> |
+| [**ms-DS-is-full-replica-for**](a-msds-isfullreplicafor.md)                     | Falso     | [**In alto**](c-top.md)<br/> |
+| [**ms-DS-Is-Partial-Replica-For**](a-msds-ispartialreplicafor.md)               | Falso     | [**In alto**](c-top.md)<br/> |
 | [**ms-DS-KrbTgt-Link-BL**](a-msds-krbtgtlinkbl.md)                              | Falso     | [**In alto**](c-top.md)<br/> |
-| [**ms-DS-ultimo-noto-RDN**](a-msds-lastknownrdn.md)                              | Falso     | [**In alto**](c-top.md)<br/> |
-| [**ms-DS-locale-effettivo-eliminazione-ora**](a-msds-localeffectivedeletiontime.md) | Falso     | [**In alto**](c-top.md)<br/> |
-| [**ms-DS-local-effective-riciclo-tempo**](a-msds-localeffectiverecycletime.md)   | Falso     | [**In alto**](c-top.md)<br/> |
-| [**ms-DS-Mastered-by**](a-msds-masteredby.md)                                   | Falso     | [**In alto**](c-top.md)<br/> |
-| [**ms-DS-members-for-AZ-Role-BL**](a-msds-membersforazrolebl.md)                | Falso     | [**In alto**](c-top.md)<br/> |
-| [**ms-DS-NC-REPL-cursori**](a-msds-ncreplcursors.md)                            | Falso     | [**In alto**](c-top.md)<br/> |
-| [**ms-DS-NC-REPL-inbound-neighbors**](a-msds-ncreplinboundneighbors.md)         | Falso     | [**In alto**](c-top.md)<br/> |
-| [**ms-DS-NC-REPL-Outbound-Neighbors**](a-msds-ncreploutboundneighbors.md)       | Falso     | [**In alto**](c-top.md)<br/> |
-| [**ms-DS-NC-RO-replica-locations-BL**](a-msds-nc-ro-replica-locations-bl.md)    | Falso     | [**In alto**](c-top.md)<br/> |
-| [**ms-DS-NC-Type**](a-msds-nctype.md)                                           | Falso     | [**In alto**](c-top.md)<br/> |
-| [**ms-DS-non membri-BL**](a-msds-nonmembersbl.md)                              | Falso     | [**In alto**](c-top.md)<br/> |
+| [**ms-DS-Last-Known-RDN**](a-msds-lastknownrdn.md)                              | Falso     | [**In alto**](c-top.md)<br/> |
+| [**ms-DS-local-Effective-Deletion-Time**](a-msds-localeffectivedeletiontime.md) | Falso     | [**In alto**](c-top.md)<br/> |
+| [**ms-DS-local-Effective-Recycle-Time**](a-msds-localeffectiverecycletime.md)   | Falso     | [**In alto**](c-top.md)<br/> |
+| [**ms-DS-Mastered-By**](a-msds-masteredby.md)                                   | Falso     | [**In alto**](c-top.md)<br/> |
+| [**ms-DS-Members-For-Az-Role-BL**](a-msds-membersforazrolebl.md)                | Falso     | [**In alto**](c-top.md)<br/> |
+| [**ms-DS-NC-Repl-Cursors**](a-msds-ncreplcursors.md)                            | Falso     | [**In alto**](c-top.md)<br/> |
+| [**ms-DS-NC-Repl-Inbound-Neighbors**](a-msds-ncreplinboundneighbors.md)         | Falso     | [**In alto**](c-top.md)<br/> |
+| [**ms-DS-NC-Repl-Outbound-Neighbors**](a-msds-ncreploutboundneighbors.md)       | Falso     | [**In alto**](c-top.md)<br/> |
+| [**ms-DS-NC-RO-Replica-Locations-BL**](a-msds-nc-ro-replica-locations-bl.md)    | Falso     | [**In alto**](c-top.md)<br/> |
+| [**Ms-DS-NC-Type**](a-msds-nctype.md)                                           | Falso     | [**In alto**](c-top.md)<br/> |
+| [**ms-DS-Non-Members-BL**](a-msds-nonmembersbl.md)                              | Falso     | [**In alto**](c-top.md)<br/> |
 | [**ms-DS-Object-Reference-BL**](a-msds-objectreferencebl.md)                    | Falso     | [**In alto**](c-top.md)<br/> |
-| [**ms-DS-OIDToGroup-link-BL**](a-msds-oidtogrouplinkbl.md)                      | Falso     | [**In alto**](c-top.md)<br/> |
-| [**ms-DS-Operations-for-AZ-Role-BL**](a-msds-operationsforazrolebl.md)          | Falso     | [**In alto**](c-top.md)<br/> |
-| [**ms-DS-Operations-for-AZ-Task-BL**](a-msds-operationsforaztaskbl.md)          | Falso     | [**In alto**](c-top.md)<br/> |
-| [**ms-DS-nome-entità**](a-msds-principalname.md)                             | Falso     | [**In alto**](c-top.md)<br/> |
-| [**ms-DS-PSO-applicato**](a-msds-psoapplied.md)                                   | Falso     | [**In alto**](c-top.md)<br/> |
-| [**ms-DS-REPL-attribute-meta-data**](a-msds-replattributemetadata.md)           | Falso     | [**In alto**](c-top.md)<br/> |
-| [**ms-DS-REPL-value-meta-dati**](a-msds-replvaluemetadata.md)                   | Falso     | [**In alto**](c-top.md)<br/> |
-| [**ms-DS-Revealed-DSA**](a-msds-revealeddsas.md)                               | Falso     | [**In alto**](c-top.md)<br/> |
-| [**ms-DS-Revealed-list-BL**](a-msds-revealedlistbl.md)                          | Falso     | [**In alto**](c-top.md)<br/> |
-| [**ms-DS-Tasks-for-AZ-Role-BL**](a-msds-tasksforazrolebl.md)                    | Falso     | [**In alto**](c-top.md)<br/> |
-| [**ms-DS-Tasks-for-AZ-Task-BL**](a-msds-tasksforaztaskbl.md)                    | Falso     | [**In alto**](c-top.md)<br/> |
+| [**ms-DS-OIDToGroup-Link-BL**](a-msds-oidtogrouplinkbl.md)                      | Falso     | [**In alto**](c-top.md)<br/> |
+| [**ms-DS-Operations-For-Az-Role-BL**](a-msds-operationsforazrolebl.md)          | Falso     | [**In alto**](c-top.md)<br/> |
+| [**ms-DS-Operations-For-Az-Task-BL**](a-msds-operationsforaztaskbl.md)          | Falso     | [**In alto**](c-top.md)<br/> |
+| [**ms-DS-Principal-Name**](a-msds-principalname.md)                             | Falso     | [**In alto**](c-top.md)<br/> |
+| [**Ms-DS-PSO-Applied**](a-msds-psoapplied.md)                                   | Falso     | [**In alto**](c-top.md)<br/> |
+| [**ms-DS-Repl-Attribute-Meta-Data**](a-msds-replattributemetadata.md)           | Falso     | [**In alto**](c-top.md)<br/> |
+| [**ms-DS-Repl-Value-Meta-Data**](a-msds-replvaluemetadata.md)                   | Falso     | [**In alto**](c-top.md)<br/> |
+| [**Ms-DS-Revealed-DSAs**](a-msds-revealeddsas.md)                               | Falso     | [**In alto**](c-top.md)<br/> |
+| [**ms-DS-Revealed-List-BL**](a-msds-revealedlistbl.md)                          | Falso     | [**In alto**](c-top.md)<br/> |
+| [**ms-DS-Tasks-For-Az-Role-BL**](a-msds-tasksforazrolebl.md)                    | Falso     | [**In alto**](c-top.md)<br/> |
+| [**ms-DS-Tasks-For-Az-Task-BL**](a-msds-tasksforaztaskbl.md)                    | Falso     | [**In alto**](c-top.md)<br/> |
 | [**ms-Exch-Owner-BL**](a-ownerbl.md)                                            | Falso     | [**In alto**](c-top.md)<br/> |
-| [**Attributo msSFU-30-POSIX-member-of**](a-mssfu30posixmemberof.md)                       | Falso     | [**In alto**](c-top.md)<br/> |
-| [**-SCP-BL**](a-netbootscpbl.md)                                         | Falso     | [**In alto**](c-top.md)<br/> |
-| [**Non-Security-member-BL**](a-nonsecuritymemberbl.md)                          | Falso     | [**In alto**](c-top.md)<br/> |
-| [**NT-Security-descrittore**](a-ntsecuritydescriptor.md)                         | Vero      | [**In alto**](c-top.md)<br/> |
+| [**msSFU-30-Posix-Member-Of**](a-mssfu30posixmemberof.md)                       | Falso     | [**In alto**](c-top.md)<br/> |
+| [**netboot-SCP-BL**](a-netbootscpbl.md)                                         | Falso     | [**In alto**](c-top.md)<br/> |
+| [**Non-Security-Member-BL**](a-nonsecuritymemberbl.md)                          | Falso     | [**In alto**](c-top.md)<br/> |
+| [**NT-Security-Descriptor**](a-ntsecuritydescriptor.md)                         | Vero      | [**In alto**](c-top.md)<br/> |
 | [**Obj-Dist-Name**](a-distinguishedname.md)                                     | Falso     | [**In alto**](c-top.md)<br/> |
-| [**Categoria oggetto**](a-objectcategory.md)                                      | Vero      | [**In alto**](c-top.md)<br/> |
-| [**Classe Object**](a-objectclass.md)                                            | Vero      | [**In alto**](c-top.md)<br/> |
-| [**GUID oggetto**](a-objectguid.md)                                              | Falso     | [**In alto**](c-top.md)<br/> |
+| [**Categoria di oggetti**](a-objectcategory.md)                                      | Vero      | [**In alto**](c-top.md)<br/> |
+| [**Classe object**](a-objectclass.md)                                            | Vero      | [**In alto**](c-top.md)<br/> |
+| [**Guid oggetto**](a-objectguid.md)                                              | Falso     | [**In alto**](c-top.md)<br/> |
 | [**Versione oggetto**](a-objectversion.md)                                        | Falso     | [**In alto**](c-top.md)<br/> |
-| [**Altri oggetti-well-known**](a-otherwellknownobjects.md)                      | Falso     | [**In alto**](c-top.md)<br/> |
-| [**Elenco di eliminazione-attributo parziale**](a-partialattributedeletionlist.md)        | Falso     | [**In alto**](c-top.md)<br/> |
-| [**Set di attributi parziali**](a-partialattributeset.md)                           | Falso     | [**In alto**](c-top.md)<br/> |
-| [**Possibili-inferiori**](a-possibleinferiors.md)                                | Falso     | [**In alto**](c-top.md)<br/> |
-| [**Nome-oggetto-proxy**](a-proxiedobjectname.md)                               | Falso     | [**In alto**](c-top.md)<br/> |
+| [**Altri oggetti noti**](a-otherwellknownobjects.md)                      | Falso     | [**In alto**](c-top.md)<br/> |
+| [**Partial-Attribute-Deletion-List**](a-partialattributedeletionlist.md)        | Falso     | [**In alto**](c-top.md)<br/> |
+| [**Partial-Attribute-Set**](a-partialattributeset.md)                           | Falso     | [**In alto**](c-top.md)<br/> |
+| [**Possibili inevasi**](a-possibleinferiors.md)                                | Falso     | [**In alto**](c-top.md)<br/> |
+| [**Proxied-Object-Name**](a-proxiedobjectname.md)                               | Falso     | [**In alto**](c-top.md)<br/> |
 | [**Indirizzi proxy**](a-proxyaddresses.md)                                      | Falso     | [**In alto**](c-top.md)<br/> |
-| [**Query-criteri-BL**](a-querypolicybl.md)                                       | Falso     | [**In alto**](c-top.md)<br/> |
-| [**RDN**](a-name.md)                                                            | Falso     | [**In alto**](c-top.md)<br/> |
-| [**REPL-Property-meta-dati**](a-replpropertymetadata.md)                        | Falso     | [**In alto**](c-top.md)<br/> |
-| [**REPL-UpToDate-Vector**](a-repluptodatevector.md)                             | Falso     | [**In alto**](c-top.md)<br/> |
+| [**Query-Policy-BL**](a-querypolicybl.md)                                       | Falso     | [**In alto**](c-top.md)<br/> |
+| [**Rdn**](a-name.md)                                                            | Falso     | [**In alto**](c-top.md)<br/> |
+| [**Repl-Property-Meta-Data**](a-replpropertymetadata.md)                        | Falso     | [**In alto**](c-top.md)<br/> |
+| [**Repl-UpToDate-Vector**](a-repluptodatevector.md)                             | Falso     | [**In alto**](c-top.md)<br/> |
 | [**Report**](a-directreports.md)                                               | Falso     | [**In alto**](c-top.md)<br/> |
-| [**Reps-da**](a-repsfrom.md)                                                  | Falso     | [**In alto**](c-top.md)<br/> |
-| [**Da Reps a**](a-repsto.md)                                                      | Falso     | [**In alto**](c-top.md)<br/> |
+| [**Reps-From**](a-repsfrom.md)                                                  | Falso     | [**In alto**](c-top.md)<br/> |
+| [**Reps-To**](a-repsto.md)                                                      | Falso     | [**In alto**](c-top.md)<br/> |
 | [**Revisione**](a-revision.md)                                                   | Falso     | [**In alto**](c-top.md)<br/> |
-| [**SD-diritti-efficacia**](a-sdrightseffective.md)                               | Falso     | [**In alto**](c-top.md)<br/> |
-| [**Server-riferimento-BL**](a-serverreferencebl.md)                               | Falso     | [**In alto**](c-top.md)<br/> |
-| [**Mostra-in-solo visualizzazione avanzata**](a-showinadvancedviewonly.md)                   | Falso     | [**In alto**](c-top.md)<br/> |
+| [**SD-Rights-Effective**](a-sdrightseffective.md)                               | Falso     | [**In alto**](c-top.md)<br/> |
+| [**Server-Reference-BL**](a-serverreferencebl.md)                               | Falso     | [**In alto**](c-top.md)<br/> |
+| [**Show-In-Advanced-View-Only**](a-showinadvancedviewonly.md)                   | Falso     | [**In alto**](c-top.md)<br/> |
 | [**Site-Object-BL**](a-siteobjectbl.md)                                         | Falso     | [**In alto**](c-top.md)<br/> |
-| [**Classe strutturale-oggetto**](a-structuralobjectclass.md)                       | Falso     | [**In alto**](c-top.md)<br/> |
-| [**Riferimenti secondari**](a-subrefs.md)                                                    | Falso     | [**In alto**](c-top.md)<br/> |
+| [**Classe structural-object**](a-structuralobjectclass.md)                       | Falso     | [**In alto**](c-top.md)<br/> |
+| [**Sottori ref**](a-subrefs.md)                                                    | Falso     | [**In alto**](c-top.md)<br/> |
 | [**SubSchemaSubEntry**](a-subschemasubentry.md)                                 | Falso     | [**In alto**](c-top.md)<br/> |
 | [**Flag di sistema**](a-systemflags.md)                                            | Falso     | [**In alto**](c-top.md)<br/> |
-| [**USN-modificato**](a-usnchanged.md)                                              | Falso     | [**In alto**](c-top.md)<br/> |
-| [**USN creato**](a-usncreated.md)                                              | Falso     | [**In alto**](c-top.md)<br/> |
-| [**USN-DSA-Last-obj-rimosso**](a-usndsalastobjremoved.md)                       | Falso     | [**In alto**](c-top.md)<br/> |
-| [**USN-tra siti**](a-usnintersite.md)                                          | Falso     | [**In alto**](c-top.md)<br/> |
-| [**USN-ultimo-obj-REM**](a-usnlastobjrem.md)                                      | Falso     | [**In alto**](c-top.md)<br/> |
-| [**USN-origine**](a-usnsource.md)                                                | Falso     | [**In alto**](c-top.md)<br/> |
-| [**WBEM-percorso**](a-wbempath.md)                                                  | Falso     | [**In alto**](c-top.md)<br/> |
+| [**Modifica di USN**](a-usnchanged.md)                                              | Falso     | [**In alto**](c-top.md)<br/> |
+| [**Creato da USN**](a-usncreated.md)                                              | Falso     | [**In alto**](c-top.md)<br/> |
+| [**USN-DSA-Last-Obj-Removed**](a-usndsalastobjremoved.md)                       | Falso     | [**In alto**](c-top.md)<br/> |
+| [**USN-Intersite**](a-usnintersite.md)                                          | Falso     | [**In alto**](c-top.md)<br/> |
+| [**USN-Last-Obj-Rem**](a-usnlastobjrem.md)                                      | Falso     | [**In alto**](c-top.md)<br/> |
+| [**USN-Source**](a-usnsource.md)                                                | Falso     | [**In alto**](c-top.md)<br/> |
+| [**Wbem-Path**](a-wbempath.md)                                                  | Falso     | [**In alto**](c-top.md)<br/> |
 | [**Oggetti noti**](a-wellknownobjects.md)                                 | Falso     | [**In alto**](c-top.md)<br/> |
-| [**Quando-modificato**](a-whenchanged.md)                                            | Falso     | [**In alto**](c-top.md)<br/> |
-| [**Data di creazione**](a-whencreated.md)                                            | Falso     | [**In alto**](c-top.md)<br/> |
-| [**WWW-Home-pagina**](a-wwwhomepage.md)                                           | Falso     | [**In alto**](c-top.md)<br/> |
-| [**WWW-pagina-altro**](a-url.md)                                                  | Falso     | [**In alto**](c-top.md)<br/> |
+| [**Quando viene modificato**](a-whenchanged.md)                                            | Falso     | [**In alto**](c-top.md)<br/> |
+| [**Quando viene creato**](a-whencreated.md)                                            | Falso     | [**In alto**](c-top.md)<br/> |
+| [**Www-Home-Page**](a-wwwhomepage.md)                                           | Falso     | [**In alto**](c-top.md)<br/> |
+| [**WWW-Page-Other**](a-url.md)                                                  | Falso     | [**In alto**](c-top.md)<br/> |
 
 
 
@@ -833,18 +833,18 @@ Questa classe contiene gli attributi seguenti per Windows Server 2008 R2:
 | Object-Category             | 1                                                                                            |
 | Default-Object-Category     | \-                                                                                           |
 | Governs-Id                  | 1.2.840.113556.1.5.138                                                                       |
-| Valore predefinito-nascondiglio        | 1                                                                                            |
-| RDN-att-ID                  | [**Nome comune**](a-cn.md)<br/>                                                       |
+| Default-Hiding-Value        | 1                                                                                            |
+| Rdn-Att-Id                  | [**Nome comune**](a-cn.md)<br/>                                                       |
 | Sottoclasse di                 | [**In alto**](c-top.md)<br/>                                                              |
 | Possibili superiori          | [**Contenitore**](c-container.md)                                                             |
 | Classi ausiliarie           | \-                                                                                           |
-| NT-Security-descrittore      | O:BAG: NON VALIDO: S:                                                                                 |
-| Descrittore di sicurezza predefinito | D: (A;; RPWPCRCCDCLCLORCWOWDSDDTSW;;;D A) (A;; RPWPCRCCDCLCLORCWOWDSDDTSW;;; SY) (A;; RPLCLORC;;; Au |
+| NT-Security-Descriptor      | O:BAG:BAD:S:                                                                                 |
+| Descrittore di sicurezza predefinito | D:(A;; RPWPCRCCDCLCLORCWOWDSDDTSW;;;D A)(A;; RPWPCRCCDCLCLORCWOWDSDDTSW;;; SY)(A;; RPLCLORC;;; Au) |
 | System-Flags                | 0x00000010                                                                                   |
 
 
 
-## <a name="windows-server-2012-attributes"></a>Attributi di Windows Server 2012
+## <a name="windows-server-2012-attributes"></a>Windows Server 2012 Attributi
 
 Questa classe contiene gli attributi seguenti per Windows Server 2012:
 
@@ -852,150 +852,150 @@ Questa classe contiene gli attributi seguenti per Windows Server 2012:
 
 | Attributo                                                                                    | Obbligatorio | Derivato da                    |
 |----------------------------------------------------------------------------------------------|-----------|---------------------------------|
-| [**ACS-allocabile-RSVP-larghezza di banda**](a-acsallocablersvpbandwidth.md)                          | Falso     | **ACS-subnet**                  |
-| [**ACS-cache-timeout**](a-acscachetimeout.md)                                               | Falso     | **ACS-subnet**                  |
-| [**ACS-DSBM-DeadTime**](a-acsdsbmdeadtime.md)                                               | Falso     | **ACS-subnet**                  |
-| [**ACS-DSBM-priorità**](a-acsdsbmpriority.md)                                               | Falso     | **ACS-subnet**                  |
-| [**ACS-DSBM-Refresh**](a-acsdsbmrefresh.md)                                                 | Falso     | **ACS-subnet**                  |
-| [**ACS-Enable-ACS-Service**](a-acsenableacsservice.md)                                      | Falso     | **ACS-subnet**                  |
-| [**ACS-Enable-RSVP-Accounting**](a-acsenablersvpaccounting.md)                              | Falso     | **ACS-subnet**                  |
-| [**ACS-Enable-RSVP-Message-Logging**](a-acsenablersvpmessagelogging.md)                     | Falso     | **ACS-subnet**                  |
-| [**ACS-a livello di registro eventi**](a-acseventloglevel.md)                                            | Falso     | **ACS-subnet**                  |
-| [**ACS-Max-durata per flusso**](a-acsmaxdurationperflow.md)                                 | Falso     | **ACS-subnet**                  |
-| [**ACS-Max-No-of-account-files**](a-acsmaxnoofaccountfiles.md)                              | Falso     | **ACS-subnet**                  |
-| [**ACS-Max-No-of-log-files**](a-acsmaxnooflogfiles.md)                                      | Falso     | **ACS-subnet**                  |
-| [**ACS-max-picco-larghezza di banda**](a-acsmaxpeakbandwidth.md)                                      | Falso     | **ACS-subnet**                  |
-| [**ACS-max-picco-larghezza di banda per flusso**](a-acsmaxpeakbandwidthperflow.md)                      | Falso     | **ACS-subnet**                  |
-| [**ACS-max-size-of-RSVP-account-file**](a-acsmaxsizeofrsvpaccountfile.md)                   | Falso     | **ACS-subnet**                  |
-| [**ACS-max-size-of-RSVP-log-file**](a-acsmaxsizeofrsvplogfile.md)                           | Falso     | **ACS-subnet**                  |
-| [**ACS-max-token-rate-per-Flow**](a-acsmaxtokenrateperflow.md)                              | Falso     | **ACS-subnet**                  |
-| [**ACS-non riservato-max-SDU-size**](a-acsnonreservedmaxsdusize.md)                          | Falso     | **ACS-subnet**                  |
-| [**ACS-non riservato-min-Police-size**](a-acsnonreservedminpolicedsize.md)                  | Falso     | **ACS-subnet**                  |
-| [**ACS-non riservato-frequenza massima**](a-acsnonreservedpeakrate.md)                               | Falso     | **ACS-subnet**                  |
-| [**ACS-non riservato-token-size**](a-acsnonreservedtokensize.md)                             | Falso     | **ACS-subnet**                  |
-| [**ACS-non riservato-TX-Limit**](a-acsnonreservedtxlimit.md)                                 | Falso     | **ACS-subnet**                  |
-| [**ACS-non riservato-TX-size**](a-acsnonreservedtxsize.md)                                   | Falso     | **ACS-subnet**                  |
-| [**ACS-RSVP-account-files-location**](a-acsrsvpaccountfileslocation.md)                     | Falso     | **ACS-subnet**                  |
-| [**ACS-RSVP-log-files-location**](a-acsrsvplogfileslocation.md)                             | Falso     | **ACS-subnet**                  |
-| [**Elenco di server ACS**](a-acsserverlist.md)                                                   | Falso     | **ACS-subnet**                  |
-| [**Admin-Descrizione**](a-admindescription.md)                                              | Falso     | [**In alto**](c-top.md)<br/> |
+| [**ACS-Allocable-RSVP-Bandwidth**](a-acsallocablersvpbandwidth.md)                          | Falso     | **ACS-Subnet**                  |
+| [**ACS-Cache-Timeout**](a-acscachetimeout.md)                                               | Falso     | **ACS-Subnet**                  |
+| [**ACS-DSBM-DeadTime**](a-acsdsbmdeadtime.md)                                               | Falso     | **ACS-Subnet**                  |
+| [**Priorità ACS-DSBM**](a-acsdsbmpriority.md)                                               | Falso     | **ACS-Subnet**                  |
+| [**ACS-DSBM-Refresh**](a-acsdsbmrefresh.md)                                                 | Falso     | **ACS-Subnet**                  |
+| [**ACS-Enable-ACS-Service**](a-acsenableacsservice.md)                                      | Falso     | **ACS-Subnet**                  |
+| [**ACS-Enable-RSVP-Accounting**](a-acsenablersvpaccounting.md)                              | Falso     | **ACS-Subnet**                  |
+| [**ACS-Enable-RSVP-Message-Logging**](a-acsenablersvpmessagelogging.md)                     | Falso     | **ACS-Subnet**                  |
+| [**ACS-Event-Log-Level**](a-acseventloglevel.md)                                            | Falso     | **ACS-Subnet**                  |
+| [**ACS-Max-Duration-Per-Flow**](a-acsmaxdurationperflow.md)                                 | Falso     | **ACS-Subnet**                  |
+| [**ACS-Max-No-Of-Account-Files**](a-acsmaxnoofaccountfiles.md)                              | Falso     | **ACS-Subnet**                  |
+| [**ACS-max-no-of-log-files**](a-acsmaxnooflogfiles.md)                                      | Falso     | **ACS-Subnet**                  |
+| [**ACS-Max-Peak-Bandwidth**](a-acsmaxpeakbandwidth.md)                                      | Falso     | **ACS-Subnet**                  |
+| [**ACS-Max-Peak-Bandwidth-Per-Flow**](a-acsmaxpeakbandwidthperflow.md)                      | Falso     | **ACS-Subnet**                  |
+| [**ACS-Max-Size-Of-RSVP-Account-File**](a-acsmaxsizeofrsvpaccountfile.md)                   | Falso     | **ACS-Subnet**                  |
+| [**ACS-Max-Size-Of-RSVP-Log-File**](a-acsmaxsizeofrsvplogfile.md)                           | Falso     | **ACS-Subnet**                  |
+| [**ACS-Max-Token-Rate-Per-Flow**](a-acsmaxtokenrateperflow.md)                              | Falso     | **ACS-Subnet**                  |
+| [**ACS-Non-Reserved-Max-SDU-Size**](a-acsnonreservedmaxsdusize.md)                          | Falso     | **ACS-Subnet**                  |
+| [**ACS-Non-Reserved-Min-Policed-Size**](a-acsnonreservedminpolicedsize.md)                  | Falso     | **ACS-Subnet**                  |
+| [**ACS-Non-Reserved-Peak-Rate**](a-acsnonreservedpeakrate.md)                               | Falso     | **ACS-Subnet**                  |
+| [**ACS-Non-Reserved-Token-Size**](a-acsnonreservedtokensize.md)                             | Falso     | **ACS-Subnet**                  |
+| [**ACS-Non-Reserved-Tx-Limit**](a-acsnonreservedtxlimit.md)                                 | Falso     | **ACS-Subnet**                  |
+| [**ACS-Non-Reserved-Tx-Size**](a-acsnonreservedtxsize.md)                                   | Falso     | **ACS-Subnet**                  |
+| [**ACS-RSVP-Account-Files-Location**](a-acsrsvpaccountfileslocation.md)                     | Falso     | **ACS-Subnet**                  |
+| [**ACS-RSVP-Log-Files-Location**](a-acsrsvplogfileslocation.md)                             | Falso     | **ACS-Subnet**                  |
+| [**ACS-Server-List**](a-acsserverlist.md)                                                   | Falso     | **ACS-Subnet**                  |
+| [**Admin-Description**](a-admindescription.md)                                              | Falso     | [**In alto**](c-top.md)<br/> |
 | [**Admin-Display-Name**](a-admindisplayname.md)                                             | Falso     | [**In alto**](c-top.md)<br/> |
 | [**Attributi consentiti**](a-allowedattributes.md)                                            | Falso     | [**In alto**](c-top.md)<br/> |
-| [**Consentito-attributi-valido**](a-allowedattributeseffective.md)                         | Falso     | [**In alto**](c-top.md)<br/> |
+| [**Allowed-Attributes-Effective**](a-allowedattributeseffective.md)                         | Falso     | [**In alto**](c-top.md)<br/> |
 | [**Classi consentite-figlio**](a-allowedchildclasses.md)                                       | Falso     | [**In alto**](c-top.md)<br/> |
-| [**Consentito-classi figlio-valide**](a-allowedchildclasseseffective.md)                    | Falso     | [**In alto**](c-top.md)<br/> |
-| [**Testa di ponte-server-list-BL**](a-bridgeheadserverlistbl.md)                                | Falso     | [**In alto**](c-top.md)<br/> |
-| [**Nome canonico**](a-canonicalname.md)                                                    | Falso     | [**In alto**](c-top.md)<br/> |
+| [**Allowed-Child-Classes-Effective**](a-allowedchildclasseseffective.md)                    | Falso     | [**In alto**](c-top.md)<br/> |
+| [**Testa di ponte-Server-List-BL**](a-bridgeheadserverlistbl.md)                                | Falso     | [**In alto**](c-top.md)<br/> |
+| [**Canonical-Name**](a-canonicalname.md)                                                    | Falso     | [**In alto**](c-top.md)<br/> |
 | [**Nome comune**](a-cn.md)                                                                  | Falso     | [**In alto**](c-top.md)<br/> |
-| [**Creazione timestamp**](a-createtimestamp.md)                                               | Falso     | [**In alto**](c-top.md)<br/> |
+| [**Create-Time-Stamp**](a-createtimestamp.md)                                               | Falso     | [**In alto**](c-top.md)<br/> |
 | [**Descrizione**](a-description.md)                                                         | Falso     | [**In alto**](c-top.md)<br/> |
 | [**Nome visualizzato**](a-displayname.md)                                                        | Falso     | [**In alto**](c-top.md)<br/> |
-| [**Display-Name-stampabile**](a-displaynameprintable.md)                                     | Falso     | [**In alto**](c-top.md)<br/> |
-| [**DSA-firma**](a-dsasignature.md)                                                      | Falso     | [**In alto**](c-top.md)<br/> |
-| [**DS-Core-propagazione-dati**](a-dscorepropagationdata.md)                                  | Falso     | [**In alto**](c-top.md)<br/> |
-| [**Nome estensione**](a-extensionname.md)                                                    | Falso     | [**In alto**](c-top.md)<br/> |
+| [**Display-Name-Printable**](a-displaynameprintable.md)                                     | Falso     | [**In alto**](c-top.md)<br/> |
+| [**Firma DSA**](a-dsasignature.md)                                                      | Falso     | [**In alto**](c-top.md)<br/> |
+| [**DS-Core-Propagation-Data**](a-dscorepropagationdata.md)                                  | Falso     | [**In alto**](c-top.md)<br/> |
+| [**Extension-Name**](a-extensionname.md)                                                    | Falso     | [**In alto**](c-top.md)<br/> |
 | [**Bandiere**](a-flags.md)                                                                     | Falso     | [**In alto**](c-top.md)<br/> |
-| [**Da-entry**](a-fromentry.md)                                                            | Falso     | [**In alto**](c-top.md)<br/> |
-| [**FRS-computer-Reference-BL**](a-frscomputerreferencebl.md)                                | Falso     | [**In alto**](c-top.md)<br/> |
-| [**FRS-member-Reference-BL**](a-frsmemberreferencebl.md)                                    | Falso     | [**In alto**](c-top.md)<br/> |
+| [**From-Entry**](a-fromentry.md)                                                            | Falso     | [**In alto**](c-top.md)<br/> |
+| [**Frs-Computer-Reference-BL**](a-frscomputerreferencebl.md)                                | Falso     | [**In alto**](c-top.md)<br/> |
+| [**FRS-Member-Reference-BL**](a-frsmemberreferencebl.md)                                    | Falso     | [**In alto**](c-top.md)<br/> |
 | [**FSMO-Role-Owner**](a-fsmoroleowner.md)                                                   | Falso     | [**In alto**](c-top.md)<br/> |
 | [**Tipo di istanza**](a-instancetype.md)                                                      | Vero      | [**In alto**](c-top.md)<br/> |
 | [**Is-Critical-System-Object**](a-iscriticalsystemobject.md)                                | Falso     | [**In alto**](c-top.md)<br/> |
-| [**Viene eliminato**](a-isdeleted.md)                                                            | Falso     | [**In alto**](c-top.md)<br/> |
-| [**Is-member-of-DL**](a-memberof.md)                                                        | Falso     | [**In alto**](c-top.md)<br/> |
-| [**Is-Privilege-Holder**](a-isprivilegeholder.md)                                           | Falso     | [**In alto**](c-top.md)<br/> |
-| [**Riciclato**](a-isrecycled.md)                                                          | Falso     | [**In alto**](c-top.md)<br/> |
+| [**Is-Deleted**](a-isdeleted.md)                                                            | Falso     | [**In alto**](c-top.md)<br/> |
+| [**Is-Member-Of-DL**](a-memberof.md)                                                        | Falso     | [**In alto**](c-top.md)<br/> |
+| [**Titolare del privilegio Is**](a-isprivilegeholder.md)                                           | Falso     | [**In alto**](c-top.md)<br/> |
+| [**Is-Recycled**](a-isrecycled.md)                                                          | Falso     | [**In alto**](c-top.md)<br/> |
 | [**Ultimo elemento padre noto**](a-lastknownparent.md)                                               | Falso     | [**In alto**](c-top.md)<br/> |
 | [**Oggetti gestiti**](a-managedobjects.md)                                                  | Falso     | [**In alto**](c-top.md)<br/> |
-| [**Mastered-by**](a-masteredby.md)                                                          | Falso     | [**In alto**](c-top.md)<br/> |
-| [**Modifica-timestamp**](a-modifytimestamp.md)                                               | Falso     | [**In alto**](c-top.md)<br/> |
-| [**MS-COM-PartitionSetLink**](a-mscom-partitionsetlink.md)                                  | Falso     | [**In alto**](c-top.md)<br/> |
-| [**MS-COM-UserLink**](a-mscom-userlink.md)                                                  | Falso     | [**In alto**](c-top.md)<br/> |
-| [**MS-DFSR-ComputerReferenceBL**](a-msdfsr-computerreferencebl.md)                          | Falso     | [**In alto**](c-top.md)<br/> |
-| [**MS-DFSR-MemberReferenceBL**](a-msdfsr-memberreferencebl.md)                              | Falso     | [**In alto**](c-top.md)<br/> |
-| [**ms-DS-approx-immed-subordinates**](a-msds-approx-immed-subordinates.md)                  | Falso     | [**In alto**](c-top.md)<br/> |
-| [**ms-DS-AuthenticatedTo-Accounting**](a-msds-authenticatedtoaccountlist.md)               | Falso     | [**In alto**](c-top.md)<br/> |
-| [**ms-DS-Claim-shares-possible-values-with-BL**](a-msds-claimsharespossiblevalueswithbl.md) | Falso     | [**In alto**](c-top.md)<br/> |
-| [**MS-DS-coerenza-figlio-conteggio**](a-ms-ds-consistencychildcount.md)                       | Falso     | [**In alto**](c-top.md)<br/> |
+| [**Mastered-By**](a-masteredby.md)                                                          | Falso     | [**In alto**](c-top.md)<br/> |
+| [**Modifica timestamp**](a-modifytimestamp.md)                                               | Falso     | [**In alto**](c-top.md)<br/> |
+| [**ms-COM-PartitionSetLink**](a-mscom-partitionsetlink.md)                                  | Falso     | [**In alto**](c-top.md)<br/> |
+| [**ms-COM-UserLink**](a-mscom-userlink.md)                                                  | Falso     | [**In alto**](c-top.md)<br/> |
+| [**ms-DFSR-ComputerReferenceBL**](a-msdfsr-computerreferencebl.md)                          | Falso     | [**In alto**](c-top.md)<br/> |
+| [**ms-DFSR-MemberReferenceBL**](a-msdfsr-memberreferencebl.md)                              | Falso     | [**In alto**](c-top.md)<br/> |
+| [**ms-DS-Approx-Immed-Subordinates**](a-msds-approx-immed-subordinates.md)                  | Falso     | [**In alto**](c-top.md)<br/> |
+| [**ms-DS-AuthenticatedTo-Accountlist**](a-msds-authenticatedtoaccountlist.md)               | Falso     | [**In alto**](c-top.md)<br/> |
+| [**ms-DS-Claim-Shares-Possible-Values-With-BL**](a-msds-claimsharespossiblevalueswithbl.md) | Falso     | [**In alto**](c-top.md)<br/> |
+| [**MS-DS-Consistency-Child-Count**](a-ms-ds-consistencychildcount.md)                       | Falso     | [**In alto**](c-top.md)<br/> |
 | [**MS-DS-Consistency-Guid**](a-ms-ds-consistencyguid.md)                                    | Falso     | [**In alto**](c-top.md)<br/> |
-| [**ms-DS-Enabled-feature-BL**](a-msds-enabledfeaturebl.md)                                  | Falso     | [**In alto**](c-top.md)<br/> |
-| [**ms-DS-host-Service-account-BL**](a-msds-hostserviceaccountbl.md)                         | Falso     | [**In alto**](c-top.md)<br/> |
-| [**ms-DS-is-domain-for**](a-msds-isdomainfor.md)                                            | Falso     | [**In alto**](c-top.md)<br/> |
-| [**ms-DS-is-Full-replica-for**](a-msds-isfullreplicafor.md)                                 | Falso     | [**In alto**](c-top.md)<br/> |
-| [**ms-DS-is-partial-replica-for**](a-msds-ispartialreplicafor.md)                           | Falso     | [**In alto**](c-top.md)<br/> |
-| [**ms-DS-is-primary-computer-for**](a-msds-isprimarycomputerfor.md)                         | Falso     | [**In alto**](c-top.md)<br/> |
+| [**ms-DS-Enabled-Feature-BL**](a-msds-enabledfeaturebl.md)                                  | Falso     | [**In alto**](c-top.md)<br/> |
+| [**ms-DS-Host-Service-Account-BL**](a-msds-hostserviceaccountbl.md)                         | Falso     | [**In alto**](c-top.md)<br/> |
+| [**ms-DS-Is-Domain-For**](a-msds-isdomainfor.md)                                            | Falso     | [**In alto**](c-top.md)<br/> |
+| [**ms-DS-is-full-replica-for**](a-msds-isfullreplicafor.md)                                 | Falso     | [**In alto**](c-top.md)<br/> |
+| [**ms-DS-Is-Partial-Replica-For**](a-msds-ispartialreplicafor.md)                           | Falso     | [**In alto**](c-top.md)<br/> |
+| [**ms-DS-Is-Primary-Computer-For**](a-msds-isprimarycomputerfor.md)                         | Falso     | [**In alto**](c-top.md)<br/> |
 | [**ms-DS-KrbTgt-Link-BL**](a-msds-krbtgtlinkbl.md)                                          | Falso     | [**In alto**](c-top.md)<br/> |
-| [**ms-DS-ultimo-noto-RDN**](a-msds-lastknownrdn.md)                                          | Falso     | [**In alto**](c-top.md)<br/> |
-| [**ms-DS-locale-effettivo-eliminazione-ora**](a-msds-localeffectivedeletiontime.md)             | Falso     | [**In alto**](c-top.md)<br/> |
-| [**ms-DS-local-effective-riciclo-tempo**](a-msds-localeffectiverecycletime.md)               | Falso     | [**In alto**](c-top.md)<br/> |
-| [**ms-DS-Mastered-by**](a-msds-masteredby.md)                                               | Falso     | [**In alto**](c-top.md)<br/> |
-| [**ms-DS-members-for-AZ-Role-BL**](a-msds-membersforazrolebl.md)                            | Falso     | [**In alto**](c-top.md)<br/> |
-| [**ms-DS-members-of-Resource-Property-List-BL**](a-msds-membersofresourcepropertylistbl.md) | Falso     | [**In alto**](c-top.md)<br/> |
-| [**ms-DS-NC-REPL-cursori**](a-msds-ncreplcursors.md)                                        | Falso     | [**In alto**](c-top.md)<br/> |
-| [**ms-DS-NC-REPL-inbound-neighbors**](a-msds-ncreplinboundneighbors.md)                     | Falso     | [**In alto**](c-top.md)<br/> |
-| [**ms-DS-NC-REPL-Outbound-Neighbors**](a-msds-ncreploutboundneighbors.md)                   | Falso     | [**In alto**](c-top.md)<br/> |
-| [**ms-DS-NC-RO-replica-locations-BL**](a-msds-nc-ro-replica-locations-bl.md)                | Falso     | [**In alto**](c-top.md)<br/> |
+| [**ms-DS-Last-Known-RDN**](a-msds-lastknownrdn.md)                                          | Falso     | [**In alto**](c-top.md)<br/> |
+| [**ms-DS-local-Effective-Deletion-Time**](a-msds-localeffectivedeletiontime.md)             | Falso     | [**In alto**](c-top.md)<br/> |
+| [**ms-DS-local-Effective-Recycle-Time**](a-msds-localeffectiverecycletime.md)               | Falso     | [**In alto**](c-top.md)<br/> |
+| [**ms-DS-Mastered-By**](a-msds-masteredby.md)                                               | Falso     | [**In alto**](c-top.md)<br/> |
+| [**ms-DS-Members-For-Az-Role-BL**](a-msds-membersforazrolebl.md)                            | Falso     | [**In alto**](c-top.md)<br/> |
+| [**ms-DS-Members-Of-Resource-Property-List-BL**](a-msds-membersofresourcepropertylistbl.md) | Falso     | [**In alto**](c-top.md)<br/> |
+| [**ms-DS-NC-Repl-Cursors**](a-msds-ncreplcursors.md)                                        | Falso     | [**In alto**](c-top.md)<br/> |
+| [**ms-DS-NC-Repl-Inbound-Neighbors**](a-msds-ncreplinboundneighbors.md)                     | Falso     | [**In alto**](c-top.md)<br/> |
+| [**ms-DS-NC-Repl-Outbound-Neighbors**](a-msds-ncreploutboundneighbors.md)                   | Falso     | [**In alto**](c-top.md)<br/> |
+| [**ms-DS-NC-RO-Replica-Locations-BL**](a-msds-nc-ro-replica-locations-bl.md)                | Falso     | [**In alto**](c-top.md)<br/> |
 | [**ms-DS-NC-Type**](a-msds-nctype.md)                                                       | Falso     | [**In alto**](c-top.md)<br/> |
-| [**ms-DS-non membri-BL**](a-msds-nonmembersbl.md)                                          | Falso     | [**In alto**](c-top.md)<br/> |
+| [**ms-DS-Non-Members-BL**](a-msds-nonmembersbl.md)                                          | Falso     | [**In alto**](c-top.md)<br/> |
 | [**ms-DS-Object-Reference-BL**](a-msds-objectreferencebl.md)                                | Falso     | [**In alto**](c-top.md)<br/> |
-| [**ms-DS-OIDToGroup-link-BL**](a-msds-oidtogrouplinkbl.md)                                  | Falso     | [**In alto**](c-top.md)<br/> |
-| [**ms-DS-Operations-for-AZ-Role-BL**](a-msds-operationsforazrolebl.md)                      | Falso     | [**In alto**](c-top.md)<br/> |
-| [**ms-DS-Operations-for-AZ-Task-BL**](a-msds-operationsforaztaskbl.md)                      | Falso     | [**In alto**](c-top.md)<br/> |
-| [**ms-DS-nome-entità**](a-msds-principalname.md)                                         | Falso     | [**In alto**](c-top.md)<br/> |
-| [**ms-DS-PSO-applicato**](a-msds-psoapplied.md)                                               | Falso     | [**In alto**](c-top.md)<br/> |
-| [**ms-DS-REPL-attribute-meta-data**](a-msds-replattributemetadata.md)                       | Falso     | [**In alto**](c-top.md)<br/> |
-| [**ms-DS-REPL-value-meta-dati**](a-msds-replvaluemetadata.md)                               | Falso     | [**In alto**](c-top.md)<br/> |
-| [**ms-DS-Revealed-DSA**](a-msds-revealeddsas.md)                                           | Falso     | [**In alto**](c-top.md)<br/> |
-| [**ms-DS-Revealed-list-BL**](a-msds-revealedlistbl.md)                                      | Falso     | [**In alto**](c-top.md)<br/> |
-| [**ms-DS-Tasks-for-AZ-Role-BL**](a-msds-tasksforazrolebl.md)                                | Falso     | [**In alto**](c-top.md)<br/> |
-| [**ms-DS-Tasks-for-AZ-Task-BL**](a-msds-tasksforaztaskbl.md)                                | Falso     | [**In alto**](c-top.md)<br/> |
-| [**ms-DS-TDO-uscita-BL**](a-msds-tdoegressbl.md)                                            | Falso     | [**In alto**](c-top.md)<br/> |
-| [**ms-DS-TDO-ingress-BL**](a-msds-tdoingressbl.md)                                          | Falso     | [**In alto**](c-top.md)<br/> |
-| [**ms-DS-valore-tipo-riferimento-BL**](a-msds-valuetypereferencebl.md)                         | Falso     | [**In alto**](c-top.md)<br/> |
+| [**ms-DS-OIDToGroup-Link-BL**](a-msds-oidtogrouplinkbl.md)                                  | Falso     | [**In alto**](c-top.md)<br/> |
+| [**ms-DS-Operations-For-Az-Role-BL**](a-msds-operationsforazrolebl.md)                      | Falso     | [**In alto**](c-top.md)<br/> |
+| [**ms-DS-Operations-For-Az-Task-BL**](a-msds-operationsforaztaskbl.md)                      | Falso     | [**In alto**](c-top.md)<br/> |
+| [**ms-DS-Principal-Name**](a-msds-principalname.md)                                         | Falso     | [**In alto**](c-top.md)<br/> |
+| [**Ms-DS-PSO-Applied**](a-msds-psoapplied.md)                                               | Falso     | [**In alto**](c-top.md)<br/> |
+| [**ms-DS-Repl-Attribute-Meta-Data**](a-msds-replattributemetadata.md)                       | Falso     | [**In alto**](c-top.md)<br/> |
+| [**ms-DS-Repl-Value-Meta-Data**](a-msds-replvaluemetadata.md)                               | Falso     | [**In alto**](c-top.md)<br/> |
+| [**Ms-DS-Revealed-DSAs**](a-msds-revealeddsas.md)                                           | Falso     | [**In alto**](c-top.md)<br/> |
+| [**ms-DS-Revealed-List-BL**](a-msds-revealedlistbl.md)                                      | Falso     | [**In alto**](c-top.md)<br/> |
+| [**ms-DS-Tasks-For-Az-Role-BL**](a-msds-tasksforazrolebl.md)                                | Falso     | [**In alto**](c-top.md)<br/> |
+| [**ms-DS-Tasks-For-Az-Task-BL**](a-msds-tasksforaztaskbl.md)                                | Falso     | [**In alto**](c-top.md)<br/> |
+| [**ms-DS-TDO-Egress-BL**](a-msds-tdoegressbl.md)                                            | Falso     | [**In alto**](c-top.md)<br/> |
+| [**ms-DS-TDO-Ingress-BL**](a-msds-tdoingressbl.md)                                          | Falso     | [**In alto**](c-top.md)<br/> |
+| [**Ms-DS-Value-Type-Reference-BL**](a-msds-valuetypereferencebl.md)                         | Falso     | [**In alto**](c-top.md)<br/> |
 | [**ms-Exch-Owner-BL**](a-ownerbl.md)                                                        | Falso     | [**In alto**](c-top.md)<br/> |
-| [**Attributo msSFU-30-POSIX-member-of**](a-mssfu30posixmemberof.md)                                   | Falso     | [**In alto**](c-top.md)<br/> |
-| [**-SCP-BL**](a-netbootscpbl.md)                                                     | Falso     | [**In alto**](c-top.md)<br/> |
-| [**Non-Security-member-BL**](a-nonsecuritymemberbl.md)                                      | Falso     | [**In alto**](c-top.md)<br/> |
-| [**NT-Security-descrittore**](a-ntsecuritydescriptor.md)                                     | Vero      | [**In alto**](c-top.md)<br/> |
+| [**msSFU-30-Posix-Member-Of**](a-mssfu30posixmemberof.md)                                   | Falso     | [**In alto**](c-top.md)<br/> |
+| [**netboot-SCP-BL**](a-netbootscpbl.md)                                                     | Falso     | [**In alto**](c-top.md)<br/> |
+| [**Non-Security-Member-BL**](a-nonsecuritymemberbl.md)                                      | Falso     | [**In alto**](c-top.md)<br/> |
+| [**NT-Security-Descriptor**](a-ntsecuritydescriptor.md)                                     | Vero      | [**In alto**](c-top.md)<br/> |
 | [**Obj-Dist-Name**](a-distinguishedname.md)                                                 | Falso     | [**In alto**](c-top.md)<br/> |
-| [**Categoria oggetto**](a-objectcategory.md)                                                  | Vero      | [**In alto**](c-top.md)<br/> |
-| [**Classe Object**](a-objectclass.md)                                                        | Vero      | [**In alto**](c-top.md)<br/> |
-| [**GUID oggetto**](a-objectguid.md)                                                          | Falso     | [**In alto**](c-top.md)<br/> |
+| [**Categoria di oggetti**](a-objectcategory.md)                                                  | Vero      | [**In alto**](c-top.md)<br/> |
+| [**Classe object**](a-objectclass.md)                                                        | Vero      | [**In alto**](c-top.md)<br/> |
+| [**Guid oggetto**](a-objectguid.md)                                                          | Falso     | [**In alto**](c-top.md)<br/> |
 | [**Versione oggetto**](a-objectversion.md)                                                    | Falso     | [**In alto**](c-top.md)<br/> |
-| [**Altri oggetti-well-known**](a-otherwellknownobjects.md)                                  | Falso     | [**In alto**](c-top.md)<br/> |
-| [**Elenco di eliminazione-attributo parziale**](a-partialattributedeletionlist.md)                    | Falso     | [**In alto**](c-top.md)<br/> |
-| [**Set di attributi parziali**](a-partialattributeset.md)                                       | Falso     | [**In alto**](c-top.md)<br/> |
-| [**Possibili-inferiori**](a-possibleinferiors.md)                                            | Falso     | [**In alto**](c-top.md)<br/> |
-| [**Nome-oggetto-proxy**](a-proxiedobjectname.md)                                           | Falso     | [**In alto**](c-top.md)<br/> |
+| [**Altri oggetti noti**](a-otherwellknownobjects.md)                                  | Falso     | [**In alto**](c-top.md)<br/> |
+| [**Partial-Attribute-Deletion-List**](a-partialattributedeletionlist.md)                    | Falso     | [**In alto**](c-top.md)<br/> |
+| [**Partial-Attribute-Set**](a-partialattributeset.md)                                       | Falso     | [**In alto**](c-top.md)<br/> |
+| [**Possibili eserezioni**](a-possibleinferiors.md)                                            | Falso     | [**In alto**](c-top.md)<br/> |
+| [**Proxied-Object-Name**](a-proxiedobjectname.md)                                           | Falso     | [**In alto**](c-top.md)<br/> |
 | [**Indirizzi proxy**](a-proxyaddresses.md)                                                  | Falso     | [**In alto**](c-top.md)<br/> |
-| [**Query-criteri-BL**](a-querypolicybl.md)                                                   | Falso     | [**In alto**](c-top.md)<br/> |
-| [**RDN**](a-name.md)                                                                        | Falso     | [**In alto**](c-top.md)<br/> |
-| [**REPL-Property-meta-dati**](a-replpropertymetadata.md)                                    | Falso     | [**In alto**](c-top.md)<br/> |
-| [**REPL-UpToDate-Vector**](a-repluptodatevector.md)                                         | Falso     | [**In alto**](c-top.md)<br/> |
+| [**Query-Policy-BL**](a-querypolicybl.md)                                                   | Falso     | [**In alto**](c-top.md)<br/> |
+| [**Rdn**](a-name.md)                                                                        | Falso     | [**In alto**](c-top.md)<br/> |
+| [**Repl-Property-Meta-Data**](a-replpropertymetadata.md)                                    | Falso     | [**In alto**](c-top.md)<br/> |
+| [**Repl-UpToDate-Vector**](a-repluptodatevector.md)                                         | Falso     | [**In alto**](c-top.md)<br/> |
 | [**Report**](a-directreports.md)                                                           | Falso     | [**In alto**](c-top.md)<br/> |
-| [**Reps-da**](a-repsfrom.md)                                                              | Falso     | [**In alto**](c-top.md)<br/> |
-| [**Da Reps a**](a-repsto.md)                                                                  | Falso     | [**In alto**](c-top.md)<br/> |
+| [**Reps-From**](a-repsfrom.md)                                                              | Falso     | [**In alto**](c-top.md)<br/> |
+| [**Reps-To**](a-repsto.md)                                                                  | Falso     | [**In alto**](c-top.md)<br/> |
 | [**Revisione**](a-revision.md)                                                               | Falso     | [**In alto**](c-top.md)<br/> |
-| [**SD-diritti-efficacia**](a-sdrightseffective.md)                                           | Falso     | [**In alto**](c-top.md)<br/> |
-| [**Server-riferimento-BL**](a-serverreferencebl.md)                                           | Falso     | [**In alto**](c-top.md)<br/> |
-| [**Mostra-in-solo visualizzazione avanzata**](a-showinadvancedviewonly.md)                               | Falso     | [**In alto**](c-top.md)<br/> |
+| [**SD-Rights-Effective**](a-sdrightseffective.md)                                           | Falso     | [**In alto**](c-top.md)<br/> |
+| [**Server-Reference-BL**](a-serverreferencebl.md)                                           | Falso     | [**In alto**](c-top.md)<br/> |
+| [**Show-In-Advanced-View-Only**](a-showinadvancedviewonly.md)                               | Falso     | [**In alto**](c-top.md)<br/> |
 | [**Site-Object-BL**](a-siteobjectbl.md)                                                     | Falso     | [**In alto**](c-top.md)<br/> |
-| [**Classe strutturale-oggetto**](a-structuralobjectclass.md)                                   | Falso     | [**In alto**](c-top.md)<br/> |
-| [**Riferimenti secondari**](a-subrefs.md)                                                                | Falso     | [**In alto**](c-top.md)<br/> |
+| [**Classe structural-object**](a-structuralobjectclass.md)                                   | Falso     | [**In alto**](c-top.md)<br/> |
+| [**Sottori ref**](a-subrefs.md)                                                                | Falso     | [**In alto**](c-top.md)<br/> |
 | [**SubSchemaSubEntry**](a-subschemasubentry.md)                                             | Falso     | [**In alto**](c-top.md)<br/> |
 | [**Flag di sistema**](a-systemflags.md)                                                        | Falso     | [**In alto**](c-top.md)<br/> |
-| [**USN-modificato**](a-usnchanged.md)                                                          | Falso     | [**In alto**](c-top.md)<br/> |
-| [**USN creato**](a-usncreated.md)                                                          | Falso     | [**In alto**](c-top.md)<br/> |
-| [**USN-DSA-Last-obj-rimosso**](a-usndsalastobjremoved.md)                                   | Falso     | [**In alto**](c-top.md)<br/> |
-| [**USN-tra siti**](a-usnintersite.md)                                                      | Falso     | [**In alto**](c-top.md)<br/> |
-| [**USN-ultimo-obj-REM**](a-usnlastobjrem.md)                                                  | Falso     | [**In alto**](c-top.md)<br/> |
-| [**USN-origine**](a-usnsource.md)                                                            | Falso     | [**In alto**](c-top.md)<br/> |
-| [**WBEM-percorso**](a-wbempath.md)                                                              | Falso     | [**In alto**](c-top.md)<br/> |
+| [**Modifica di USN**](a-usnchanged.md)                                                          | Falso     | [**In alto**](c-top.md)<br/> |
+| [**Creato da USN**](a-usncreated.md)                                                          | Falso     | [**In alto**](c-top.md)<br/> |
+| [**USN-DSA-Last-Obj-Removed**](a-usndsalastobjremoved.md)                                   | Falso     | [**In alto**](c-top.md)<br/> |
+| [**USN-Intersite**](a-usnintersite.md)                                                      | Falso     | [**In alto**](c-top.md)<br/> |
+| [**USN-Last-Obj-Rem**](a-usnlastobjrem.md)                                                  | Falso     | [**In alto**](c-top.md)<br/> |
+| [**USN-Source**](a-usnsource.md)                                                            | Falso     | [**In alto**](c-top.md)<br/> |
+| [**Wbem-Path**](a-wbempath.md)                                                              | Falso     | [**In alto**](c-top.md)<br/> |
 | [**Oggetti noti**](a-wellknownobjects.md)                                             | Falso     | [**In alto**](c-top.md)<br/> |
-| [**Quando-modificato**](a-whenchanged.md)                                                        | Falso     | [**In alto**](c-top.md)<br/> |
-| [**Data di creazione**](a-whencreated.md)                                                        | Falso     | [**In alto**](c-top.md)<br/> |
-| [**WWW-Home-pagina**](a-wwwhomepage.md)                                                       | Falso     | [**In alto**](c-top.md)<br/> |
-| [**WWW-pagina-altro**](a-url.md)                                                              | Falso     | [**In alto**](c-top.md)<br/> |
+| [**Quando viene modificato**](a-whenchanged.md)                                                        | Falso     | [**In alto**](c-top.md)<br/> |
+| [**Quando viene creato**](a-whencreated.md)                                                        | Falso     | [**In alto**](c-top.md)<br/> |
+| [**Www-Home-Page**](a-wwwhomepage.md)                                                       | Falso     | [**In alto**](c-top.md)<br/> |
+| [**WWW-Page-Other**](a-url.md)                                                              | Falso     | [**In alto**](c-top.md)<br/> |
 
 
 

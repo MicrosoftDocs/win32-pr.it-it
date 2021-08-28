@@ -1,17 +1,17 @@
 ---
-description: Offset tra l'ora di presentazione e i timestamp dei sorgenti multimediali.
+description: Offset tra l'ora di presentazione e i timestamp delle origini multimediali.
 ms.assetid: 450f3c39-063e-4bf3-838a-0f7c240d6647
-title: Attributo MF_EVENT_PRESENTATION_TIME_OFFSET (Mfapi. h)
+title: MF_EVENT_PRESENTATION_TIME_OFFSET attributo (Mfapi.h)
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 030d9d10eb5daf4fa1c920ad027397710b937881
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: c5ff2285bc624d42f17d4662cf93e3f46a65fcbef465e731874ef255c40c076d
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "103879602"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120013081"
 ---
-# <a name="mf_event_presentation_time_offset-attribute"></a>\_ \_ \_ Attributo offset ora presentazione evento MF \_
+# <a name="mf_event_presentation_time_offset-attribute"></a>Attributo MF \_ EVENT \_ PRESENTATION TIME \_ \_ OFFSET
 
 Offset tra l'ora di presentazione e i timestamp dell'origine multimediale.
 
@@ -21,12 +21,12 @@ Offset tra l'ora di presentazione e i timestamp dell'origine multimediale.
 
 ## <a name="remarks"></a>Commenti
 
-L'offset viene calcolato come segue: offset = tempo di presentazione-ora di origine. Questo attributo viene usato con gli eventi seguenti:
+L'offset viene calcolato come segue: offset = tempo di presentazione - ora di origine. Questo attributo viene usato con gli eventi seguenti:
 
 -   [MESessionNotifyPresentationTime](mesessionnotifypresentationtime.md)
 -   [MESessionStarted](mesessionstarted.md)
 
-La costante GUID per questo attributo viene esportata da mfuuid. lib.
+La costante GUID per questo attributo viene esportata da mfuuid.lib.
 
 ## <a name="requirements"></a>Requisiti
 
@@ -34,9 +34,9 @@ La costante GUID per questo attributo viene esportata da mfuuid. lib.
 
 | Requisito | Valore |
 |-------------------------------------|------------------------------------------------------------------------------------|
-| Client minimo supportato<br/> | \[Solo app desktop di Windows Vista\]<br/>                                     |
-| Server minimo supportato<br/> | \[Solo app desktop Windows Server 2008\]<br/>                               |
-| Intestazione<br/>                   | <dl> <dt>Mfapi. h</dt> </dl> |
+| Client minimo supportato<br/> | Windows Solo \[ app desktop di Vista\]<br/>                                     |
+| Server minimo supportato<br/> | Windows Solo app desktop server 2008 \[\]<br/>                               |
+| Intestazione<br/>                   | <dl> <dt>Mfapi.h</dt> </dl> |
 
 
 
@@ -44,16 +44,16 @@ La costante GUID per questo attributo viene esportata da mfuuid. lib.
 
 <dl> <dt>
 
-[Elenco alfabetico degli attributi di Media Foundation](alphabetical-list-of-media-foundation-attributes.md)
+[Elenco alfabetico di Media Foundation attributi](alphabetical-list-of-media-foundation-attributes.md)
 </dt> <dt>
 
 [Attributi dell'evento](event-attributes.md)
 </dt> <dt>
 
-[**IMFAttributes:: GetUInt64**](/windows/desktop/api/mfobjects/nf-mfobjects-imfattributes-getuint64)
+[**IMFAttributes::GetUINT64**](/windows/desktop/api/mfobjects/nf-mfobjects-imfattributes-getuint64)
 </dt> <dt>
 
-[**IMFAttributes:: UINT64**](/windows/desktop/api/mfobjects/nf-mfobjects-imfattributes-setuint64)
+[**IMFAttributes::SetUINT64**](/windows/desktop/api/mfobjects/nf-mfobjects-imfattributes-setuint64)
 </dt> </dl>
 
  

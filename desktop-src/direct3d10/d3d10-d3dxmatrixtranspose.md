@@ -1,5 +1,5 @@
 ---
-description: 'Funzione D3DXMatrixTranspose (D3DX10Math.h): restituisce il trasposto di matrice di una matrice.'
+description: 'Funzione D3DXMatrixTranspose (D3DX10Math.h): restituisce la trasposizione della matrice di una matrice.'
 ms.assetid: 934b17cc-39c4-425c-839b-69e080f0efd7
 title: Funzione D3DXMatrixTranspose (D3DX10Math.h)
 ms.topic: reference
@@ -14,12 +14,12 @@ api_type:
 api_location:
 - D3DX10.lib
 - D3DX10.dll
-ms.openlocfilehash: e20fd8a29ba3f9adec7134a011f8f470c60f7011
-ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
+ms.openlocfilehash: 1d192064c550630cfe84350a1903ba66989519e66ee1e13bc8850cfe11d8520e
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/28/2021
-ms.locfileid: "108108859"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120120311"
 ---
 # <a name="d3dxmatrixtranspose-function-d3dx10mathh"></a>Funzione D3DXMatrixTranspose (D3DX10Math.h)
 
@@ -46,7 +46,7 @@ D3DXMATRIX* D3DXMatrixTranspose(
 
 Tipo: **[ **D3DXMATRIX**](../direct3d9/d3dxmatrix.md)\***
 
-Puntatore alla [**struttura D3DXMATRIX**](d3d10-d3dxmatrix.md) che rappresenta il risultato dell'operazione.
+Puntatore alla [**struttura D3DXMATRIX**](d3d10-d3dxmatrix.md) che è il risultato dell'operazione.
 
 </dd> <dt>
 

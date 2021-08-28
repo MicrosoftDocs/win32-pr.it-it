@@ -15,12 +15,12 @@ api_type:
 - COM
 api_location: ''
 ROBOTS: INDEX,FOLLOW
-ms.openlocfilehash: 4f29f3c6a9ca3262b3cd09d726634afd70db9c6a
-ms.sourcegitcommit: 9b5faa61c38b2d0c432b7f2dbee8c127b0e28a7e
+ms.openlocfilehash: 52b8a36946776ad43120f13e85d9ef7678594337
+ms.sourcegitcommit: 4665ebce0c106bdb52eef36e544280b496b6f50b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/19/2021
-ms.locfileid: "122471457"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "122983134"
 ---
 # <a name="jet_retrievecolumn-structure"></a>Struttura JET_RETRIEVECOLUMN
 
@@ -68,10 +68,10 @@ Dimensione, in byte, dei dati recuperati da un'operazione di recupero colonna.
 Gruppo di bit che contengono le opzioni per il recupero delle colonne, che includono zero o più dei valori seguenti.
 
 
-| <p>valore</p> | <p>Significato</p> | 
+| <p>Valore</p> | <p>Significato</p> | 
 |--------------|----------------|
 | <p>JET_bitRetrieveCopy</p> | <p>Recupera il valore modificato anziché il valore originale. Se il valore non è stato modificato, viene recuperato il valore originale. In questo modo, è possibile recuperare un valore che non è ancora stato inserito o aggiornato quando viene inserito o aggiornato un record.</p> | 
-| <p>JET_bitRetrieveFromIndex</p> | <p>Recupera i valori di colonna dall'indice senza accedere al record, se possibile. In questo modo, è possibile evitare il caricamento non necessario dei record quando i dati necessari sono disponibili dalle voci di indice stesse. Nei casi in cui non è possibile recuperare il valore della colonna originale dall'indice, a causa di trasformazioni irreversibili o troncamento dei dati, si accede al record e i dati vengono recuperati come di consueto. Si tratta di un'opzione per le prestazioni e deve essere specificata solo quando è probabile che il valore della colonna possa essere recuperato dall'indice. Questa opzione non deve essere specificata se l'indice corrente è l'indice cluster, poiché le voci di indice per l'indice cluster o primario sono i record stessi. Questo bit non può essere impostato se JET_bitRetrieveFromPrimaryBookmark è impostato.</p> | 
+| <p>JET_bitRetrieveFromIndex</p> | <p>Recupera i valori di colonna dall'indice senza accedere al record, se possibile. In questo modo, è possibile evitare il caricamento non necessario dei record quando i dati necessari sono disponibili dalle voci di indice stesse. Nei casi in cui non è possibile recuperare il valore della colonna originale dall'indice, a causa di trasformazioni irreversibili o troncamento dei dati, si accede al record e i dati vengono recuperati come di consueto. Si tratta di un'opzione per le prestazioni e deve essere specificata solo quando è probabile che il valore della colonna possa essere recuperato dall'indice. Questa opzione non deve essere specificata se l'indice corrente è l'indice cluster, poiché le voci di indice per l'indice cluster o primario sono i record stessi. Questo bit non può essere impostato se JET_bitRetrieveFromPrimaryBookmark è impostato anche .</p> | 
 | <p>JET_bitRetrieveFromPrimaryBookmark</p> | <p>Recupera i valori di colonna dal segnalibro dell'indice e può differire dal valore dell'indice quando una colonna viene visualizzata sia nell'indice primario che nell'indice corrente. Questa opzione non deve essere specificata se l'indice corrente è l'indice cluster o primario. Questo bit non può essere impostato se JET_bitRetrieveFromIndex è impostato.</p> | 
 | <p>JET_bitRetrieveTag</p> | <p>Recupera il numero di sequenza di un valore di colonna multivalore in pretinfo- &gt; itagSequence. Il campo itagSequence viene spesso usato come input per il recupero di valori di colonna multivalore da un record. Tuttavia, quando si recuperano valori da un indice, è anche possibile associare la voce di indice a un numero di sequenza specifico e recuperare anche questo numero di sequenza. Il recupero del numero di sequenza può essere un'operazione dispersa e deve essere eseguito solo se necessario.</p> | 
 | <p>JET_ bitRetrieveNull</p> | <p>Recupera i valori NULL della colonna multivalore. Se questa opzione non viene specificata, i valori NULL della colonna multivalore verranno ignorati automaticamente.</p> | 
@@ -100,7 +100,11 @@ Codici di errore e avvisi restituiti dal recupero della colonna.
 ### <a name="requirements"></a>Requisiti
 
 
-| | | <p><strong>Client</strong></p> | <p>Richiede Windows Vista, Windows XP o Windows 2000 Professional.</p> | | <p><strong>Server</strong></p> | <p>Richiede Windows Server 2008, Windows Server 2003 o Windows 2000 Server.</p> | | <p><strong>Intestazione</strong></p> | <p>Dichiarato in Esent.h.</p> | 
+| Requisito | Valore |
+|------------|----------|
+| <p><strong>Client</strong></p> | <p>Richiede Windows Vista, Windows XP o Windows 2000 Professional.</p> | 
+| <p><strong>Server</strong></p> | <p>Richiede Windows Server 2008, Windows Server 2003 o Windows 2000 Server.</p> | 
+| <p><strong>Intestazione</strong></p> | <p>Dichiarato in Esent.h.</p> | 
 
 
 

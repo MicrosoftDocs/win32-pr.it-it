@@ -1,23 +1,23 @@
 ---
 title: Considerazioni sulla programmazione dell'host del dispositivo
-description: Non sono consentiti URL di presentazione vuoti nella descrizione del dispositivo. Se il dispositivo non dispone di un URL di presentazione, rimuovere i tag dell'URL di presentazione dalla descrizione del dispositivo.
+description: Non è consentito un URL di presentazione vuoto nella descrizione del dispositivo. Se il dispositivo non ha un URL di presentazione, rimuovere i tag URL di presentazione dalla descrizione del dispositivo.
 ms.assetid: 3ab76290-ee98-4b17-a192-e7aca16cec80
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 0258fa4d3026d6b8a431247af36c3aaefb9fa4c1
-ms.sourcegitcommit: 2d531328b6ed82d4ad971a45a5131b430c5866f7
+ms.openlocfilehash: ee462968723e4a903a27b42323bf757bda900a1314277d7b3a1e0cf14459a262
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "104045064"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119655861"
 ---
 # <a name="device-host-programming-considerations"></a>Considerazioni sulla programmazione dell'host del dispositivo
 
-Non sono consentiti URL di presentazione vuoti nella descrizione del dispositivo. Se il dispositivo non dispone di un URL di presentazione, rimuovere i tag dell'URL di presentazione dalla descrizione del dispositivo.
+Non è consentito un URL di presentazione vuoto nella descrizione del dispositivo. Se il dispositivo non ha un URL di presentazione, rimuovere i tag URL di presentazione dalla descrizione del dispositivo.
 
- 
+ 
 
- 
+ 
 
 
 

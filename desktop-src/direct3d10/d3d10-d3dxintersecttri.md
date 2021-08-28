@@ -14,12 +14,12 @@ api_type:
 api_location:
 - D3DX10.lib
 - D3DX10.dll
-ms.openlocfilehash: c8bf502cca48701a7d71a083e515f9988cafe303
-ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
+ms.openlocfilehash: 29f0ae90c8a6fee1f675a6128fce1b2b8276490f61e93e707e5471f734449b94
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/28/2021
-ms.locfileid: "108113239"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119853391"
 ---
 # <a name="d3dxintersecttri-function-d3dx10mathh"></a>Funzione D3DXIntersectTri (D3DX10math.h)
 
@@ -52,7 +52,7 @@ BOOL D3DXIntersectTri(
 
 Tipo: **const [**D3DXVECTOR3**](../direct3d9/d3dxvector3.md) \***
 
-Puntatore a una [**struttura D3DXVECTOR3,**](d3d10-d3dxvector3.md) che descrive la posizione del primo vertice triangolare.
+Puntatore a una [**struttura D3DXVECTOR3,**](d3d10-d3dxvector3.md) che descrive la prima posizione del vertice del triangolo.
 
 </dd> <dt>
 
@@ -61,7 +61,7 @@ Puntatore a una [**struttura D3DXVECTOR3,**](d3d10-d3dxvector3.md) che descrive 
 
 Tipo: **const [**D3DXVECTOR3**](../direct3d9/d3dxvector3.md) \***
 
-Puntatore a una [**struttura D3DXVECTOR3,**](d3d10-d3dxvector3.md) che descrive la posizione del secondo vertice triangolare.
+Puntatore a una [**struttura D3DXVECTOR3,**](d3d10-d3dxvector3.md) che descrive la seconda posizione del vertice del triangolo.
 
 </dd> <dt>
 
@@ -70,7 +70,7 @@ Puntatore a una [**struttura D3DXVECTOR3,**](d3d10-d3dxvector3.md) che descrive 
 
 Tipo: **const [**D3DXVECTOR3**](../direct3d9/d3dxvector3.md) \***
 
-Puntatore a una [**struttura D3DXVECTOR3,**](d3d10-d3dxvector3.md) che descrive la posizione del terzo vertice triangolare.
+Puntatore a una [**struttura D3DXVECTOR3,**](d3d10-d3dxvector3.md) che descrive la posizione del terzo vertice del triangolo.
 
 </dd> <dt>
 
@@ -123,15 +123,15 @@ Distanza dei parametri di intersezione dei raggi.
 
 Tipo: **[ **BOOL**](../winprog/windows-data-types.md)**
 
-Restituisce **TRUE** se il raggio interseca l'area del triangolo. In caso contrario, **restituisce FALSE.**
+Restituisce **TRUE** se il raggio interseca l'area del triangolo. In caso contrario, restituisce **FALSE.**
 
 ## <a name="remarks"></a>Commenti
 
-Qualsiasi punto nel piano V1V2V3 può essere rappresentato dalla coordinata barycentric (U,V). Il parametro U controlla quanto V2 viene ponderato nel risultato e il parametro V controlla quanto V3 viene ponderato nel risultato. Infine, il valore 1 - (U + V) controlla quanto \[ \] V1 viene ponderato nel risultato.
+Qualsiasi punto nel piano V1V2V3 può essere rappresentato dalla coordinata barycentrica (U,V). Il parametro U controlla quanto V2 viene ponderato nel risultato e il parametro V controlla la quantità di V3 ponderata nel risultato. Infine, il valore 1 - (U + V) controlla quanto \[ \] V1 viene ponderato nel risultato.
 
-Le coordinate barycentriche sono una forma di coordinate generali. In questo contesto, l'uso di coordinate barycentrice rappresenta una modifica nei sistemi di coordinate. Ciò che vale per le coordinate cartesiane è vero per le coordinate barycentriche.
+Le coordinate barycentriche sono una forma di coordinate generali. In questo contesto, l'uso di coordinate barycentriche rappresenta una modifica nei sistemi di coordinate. Ciò che vale per le coordinate cartesiane è vero per le coordinate barycentriche.
 
-Le coordinate barycentriche definiscono un punto all'interno di un triangolo in termini di vertici del triangolo. Per una descrizione più dettagliata delle coordinate barycentric, vedere Descrizione delle [coordinate barycentriche di Mathworld.](https://mathworld.wolfram.com/BarycentricCoordinates.html)
+Le coordinate barycentriche definiscono un punto all'interno di un triangolo in termini di vertici del triangolo. Per una descrizione più approfondita delle coordinate barycentriche, vedere Descrizione delle coordinate [barycentriche di Mathworld.](https://mathworld.wolfram.com/BarycentricCoordinates.html)
 
 ## <a name="requirements"></a>Requisiti
 

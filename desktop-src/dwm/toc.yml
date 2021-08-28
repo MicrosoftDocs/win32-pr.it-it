@@ -1,41 +1,41 @@
 - name: Gestione finestre desktop (DWM)
   href: dwm-overview.md
   items:
-    - name: Panoramica di DWM
+    - name: Panoramiche di DWM
       href: desktop-window-manager-overviews.md
       items:
         - name: Abilitare e controllare la composizione DWM
           href: composition-ovw.md
-        - name: Panoramica di DWM Blur behind
+        - name: Panoramica della sfocatura DWM
           href: blur-ovw.md
         - name: Panoramica dell'anteprima di DWM
           href: thumbnail-ovw.md
-        - name: Accesso e controllo dei dati del frame DWM
+        - name: Accesso e controllo dei dati dei frame DWM
           href: frametiming-ovw.md
         - name: Considerazioni sulle prestazioni e procedure consigliate
           href: bestpractices-ovw.md
-        - name: Cornice della finestra personalizzata mediante DWM
+        - name: Cornice di finestra personalizzata con DWM
           href: customframe.md
-    - name: Esempi di DWM
+    - name: Esempi DWM
       href: dwm-samples.md
       items:
         - name: Personalizzare l'anteprima di un'icona e una bitmap di anteprima in tempo reale
           href: dwm-sample-customizethumbnail.md
-    - name: Riferimento per DWM
+    - name: Informazioni di riferimento su DWM
       href: reference.md
       items:
-        - name: Costanti ed enumerazioni di DWM
+        - name: Costanti ed enumerazioni DWM
           href: enums.md
           items:
-            - name: Sfocature di DWM dietro costanti
+            - name: Sfocatura DWM dietro le costanti
               href: dwm-bb-constants.md
-            - name: Le costanti di composizione sono abilitate da DWM
+            - name: Costanti di composizione DWM Enable
               href: dwm-ec-constants.md
             - name: DWM_SOURCE_FRAME_SAMPLING
               href: /windows/desktop/api/Dwmapi/ne-dwmapi-dwm_source_frame_sampling
             - name: DWM_TAB_WINDOW_REQUIREMENTS
               href: /windows/desktop/api/dwmapi/ne-dwmapi-dwm_tab_window_requirements
-            - name: Costanti DWM_TNP
+            - name: DWM_TNP costanti
               href: dwm-tnp-constants.md
             - name: DWMFLIP3DWINDOWPOLICY
               href: /windows/desktop/api/Dwmapi/ne-dwmapi-dwmflip3dwindowpolicy
@@ -92,7 +92,7 @@
               href: /windows/desktop/api/Dwmapi/nf-dwmapi-dwmmodifypreviousdxframeduration
             - name: DwmQueryThumbnailSourceSize
               href: /windows/desktop/api/Dwmapi/nf-dwmapi-dwmquerythumbnailsourcesize
-            - name: Funzionalità DwmRegisterThumbnail
+            - name: DwmRegisterThumbnail
               href: /windows/desktop/api/Dwmapi/nf-dwmapi-dwmregisterthumbnail
             - name: DwmRenderGesture
               href: /windows/desktop/api/Dwmapi/nf-dwmapi-dwmrendergesture

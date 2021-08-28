@@ -1,7 +1,7 @@
 ---
 description: Definisce i codici di errore della chiave multimediale per il motore multimediale.
 ms.assetid: F6E13260-74A2-40D0-A704-4E1CDB16B8D8
-title: Enumerazione MF_MEDIA_ENGINE_KEYERR
+title: MF_MEDIA_ENGINE_KEYERR enumerazione
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -13,14 +13,14 @@ api_type:
 - HeaderDef
 api_location:
 - mfmediaengine.h
-ms.openlocfilehash: 22dd22a7771f5d1e9466709f0b0da9ee936ef2b9
-ms.sourcegitcommit: c16214e53680dc71d1c07111b51f72b82a4512d8
+ms.openlocfilehash: 5a3573f721f31ffbe3858c7d6fb3c713468bc347f04a1b5d85c5839a1e18511b
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/03/2021
-ms.locfileid: "104351346"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120113931"
 ---
-# <a name="mf_media_engine_keyerr-enumeration"></a>\_ \_ Enumerazione KEYERR del motore multimediale MF \_
+# <a name="mf_media_engine_keyerr-enumeration"></a>Enumerazione MF \_ MEDIA \_ ENGINE \_ KEYERR
 
 Definisce i codici di errore della chiave multimediale per il motore multimediale.
 
@@ -44,28 +44,28 @@ typedef enum _MF_MEDIA_ENGINE_KEYERR {
 
 <dl> <dt>
 
-<span id="MF_MEDIAENGINE_KEYERR_UNKNOWN"></span><span id="mf_mediaengine_keyerr_unknown"></span>**MF \_ MEDIAENGINE \_ KEYERR \_ sconosciuto**
+<span id="MF_MEDIAENGINE_KEYERR_UNKNOWN"></span><span id="mf_mediaengine_keyerr_unknown"></span>**MF \_ MEDIAENGINE \_ KEYERR \_ UNKNOWN**
 </dt> <dd>
 
 Si è verificato un errore sconosciuto.
 
 </dd> <dt>
 
-<span id="MF_MEDIAENGINE_KEYERR_CLIENT"></span><span id="mf_mediaengine_keyerr_client"></span>**\_ \_ client KEYERR MF \_ MEDIAENGINE**
+<span id="MF_MEDIAENGINE_KEYERR_CLIENT"></span><span id="mf_mediaengine_keyerr_client"></span>**MF \_ MEDIAENGINE \_ KEYERR \_ CLIENT**
 </dt> <dd>
 
 Si è verificato un errore con il client.
 
 </dd> <dt>
 
-<span id="MF_MEDIAENGINE_KEYERR_SERVICE"></span><span id="mf_mediaengine_keyerr_service"></span>**\_ \_ servizio KEYERR MF \_ MEDIAENGINE**
+<span id="MF_MEDIAENGINE_KEYERR_SERVICE"></span><span id="mf_mediaengine_keyerr_service"></span>**SERVIZIO MF \_ MEDIAENGINE \_ \_ KEYERR**
 </dt> <dd>
 
 Si è verificato un errore con il servizio.
 
 </dd> <dt>
 
-<span id="MF_MEDIAENGINE_KEYERR_OUTPUT"></span><span id="mf_mediaengine_keyerr_output"></span>**\_ \_ output KEYERR MF \_ MEDIAENGINE**
+<span id="MF_MEDIAENGINE_KEYERR_OUTPUT"></span><span id="mf_mediaengine_keyerr_output"></span>**OUTPUT DI \_ MF MEDIAENGINE \_ \_ KEYERR**
 </dt> <dd>
 
 Si è verificato un errore con l'output.
@@ -75,20 +75,20 @@ Si è verificato un errore con l'output.
 <span id="MF_MEDIAENGINE_KEYERR_HARDWARECHANGE_"></span><span id="mf_mediaengine_keyerr_hardwarechange_"></span>**MF \_ MEDIAENGINE \_ KEYERR \_ HARDWARECHANGE** 
 </dt> <dd>
 
-Si è verificato un errore relativo a una modifica dell'hardware.
+Si è verificato un errore correlato a una modifica hardware.
 
 </dd> <dt>
 
-<span id="MF_MEDIAENGINE_KEYERR_DOMAIN"></span><span id="mf_mediaengine_keyerr_domain"></span>**\_dominio MF MEDIAENGINE \_ KEYERR \_**
+<span id="MF_MEDIAENGINE_KEYERR_DOMAIN"></span><span id="mf_mediaengine_keyerr_domain"></span>**DOMINIO MF \_ MEDIAENGINE \_ \_ KEYERR**
 </dt> <dd>
 
-Si è verificato un errore relativo al dominio.
+Si è verificato un errore con il dominio.
 
 </dd> </dl>
 
 ## <a name="remarks"></a>Commenti
 
-**MF \_ Il \_ motore multimediale \_ KEYERR** viene usato con il parametro *Code* di [**IMFMediaKeySessionNotify:: Error**](/windows/desktop/api/mfmediaengine/nf-mfmediaengine-imfmediakeysessionnotify-keyerror) e il valore del *codice* restituito da [**IMFMediaKeySession:: GetError**](imfmediakeysession-geterror.md).
+**MF \_ MEDIA \_ ENGINE \_ KEYERR** viene usato con il parametro *di* codice [**IMFMediaKeySessionNotify::KeyError**](/windows/desktop/api/mfmediaengine/nf-mfmediaengine-imfmediakeysessionnotify-keyerror) e il valore del codice restituito da [**IMFMediaKeySession::GetError**](imfmediakeysession-geterror.md). 
 
 ## <a name="requirements"></a>Requisiti
 
@@ -96,9 +96,9 @@ Si è verificato un errore relativo al dominio.
 
 | Requisito | Valore |
 |-------------------------------------|----------------------------------------------------------------------------------------------|
-| Client minimo supportato<br/> | Windows 8.1 \[ solo app desktop\]<br/>                                                 |
-| Server minimo supportato<br/> | Solo app desktop Windows Server 2012 R2 \[\]<br/>                                      |
-| IDL<br/>                      | <dl> <dt>Mfmediaengine. idl</dt> </dl> |
+| Client minimo supportato<br/> | \[Windows 8.1 solo app desktop\]<br/>                                                 |
+| Server minimo supportato<br/> | Windows Server 2012 Solo app desktop R2 \[\]<br/>                                      |
+| Idl<br/>                      | <dl> <dt>Mfmediaengine.idl</dt> </dl> |
 
 
 
@@ -106,7 +106,7 @@ Si è verificato un errore relativo al dominio.
 
 <dl> <dt>
 
-[Enumerazioni di Media Foundation](media-foundation-enumerations.md)
+[Media Foundation enumerazioni](media-foundation-enumerations.md)
 </dt> </dl>
 
  

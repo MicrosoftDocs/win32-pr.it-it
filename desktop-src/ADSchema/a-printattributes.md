@@ -1,10 +1,10 @@
 ---
-title: Attributo Print-Attributes
-description: Maschera di maschera degli attributi della stampante.
+title: Print-Attributes attributo
+description: Maschera di bit degli attributi della stampante.
 ms.assetid: 4c766fdf-f020-4e9d-96a4-09d9c2814935
 ms.tgt_platform: multiple
 keywords:
-- Schema AD Print-Attributes attribute
+- Print-Attributes schema AD dell'attributo
 - Schema AD dell'attributo printAttributes
 topic_type:
 - apiref
@@ -14,28 +14,28 @@ api_type:
 - Schema
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: abcc81d4d3cd680356ca42351637ac1e114bbd26
-ms.sourcegitcommit: b77ace27b0432e7cd3863191b11926be032fbe2f
+ms.openlocfilehash: 542857a1acdd3611ddbebf9f154fc49942c7ef034c989fcd86f2bca665e5fad6
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/14/2020
-ms.locfileid: "103875570"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120065771"
 ---
-# <a name="print-attributes-attribute"></a>Attributo Print-Attributes
+# <a name="print-attributes-attribute"></a>Print-Attributes attributo
 
-Maschera di maschera degli attributi della stampante.
+Maschera di bit degli attributi della stampante.
 
 
 
 | Voce | Valore |
 |-------------------|--------------------------------------|
 | CN                | Print-Attributes                     |
-| LDAP-Display-Name | printAttributes                      |
+| Ldap-Display-Name | printAttributes                      |
 | Dimensione              | 4 byte                              |
-| Privilegio aggiornamento  | \-                                   |
+| Privilegio di aggiornamento  | \-                                   |
 | Frequenza di aggiornamento  | \-                                   |
 | Attribute-Id      | 1.2.840.113556.1.4.247               |
-| System-ID-GUID    | 281416d7-1968-11d0-a28f-00aa003049e2 |
+| System-Id-Guid    | 281416d7-1968-11d0-a28f-00aa003049e2 |
 | Sintassi            | [**Enumerazione**](s-enumeration.md) |
 
 
@@ -58,15 +58,15 @@ Maschera di maschera degli attributi della stampante.
 | ID collegamento                | \-                                             |
 | MAPI-Id                | \-                                             |
 | System-Only            | Falso                                          |
-| È a valore singolo       | Vero                                           |
+| Is-Single-Valued       | Vero                                           |
 | Indicizzato             | Falso                                          |
 | Nel catalogo globale      | Falso                                          |
-| NT-Security-descrittore | O:BAG: NON VALIDO: S:                                   |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                   |
 | Range-Lower            | \-                                             |
 | Range-Upper            | \-                                             |
 | Search-Flags           | 0x00000000                                     |
 | System-Flags           | 0x00000010                                     |
-| Classi utilizzate in        | [**Coda di stampa**](c-printqueue.md)<br/> |
+| Classi usate in        | [**Coda di stampa**](c-printqueue.md)<br/> |
 
 
 
@@ -79,15 +79,15 @@ Maschera di maschera degli attributi della stampante.
 | ID collegamento                | \-                                             |
 | MAPI-Id                | \-                                             |
 | System-Only            | Falso                                          |
-| È a valore singolo       | Vero                                           |
+| Is-Single-Valued       | Vero                                           |
 | Indicizzato             | Falso                                          |
 | Nel catalogo globale      | Falso                                          |
-| NT-Security-descrittore | O:BAG: NON VALIDO: S:                                   |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                   |
 | Range-Lower            | \-                                             |
 | Range-Upper            | \-                                             |
 | Search-Flags           | 0x00000000                                     |
 | System-Flags           | 0x00000010                                     |
-| Classi utilizzate in        | [**Coda di stampa**](c-printqueue.md)<br/> |
+| Classi usate in        | [**Coda di stampa**](c-printqueue.md)<br/> |
 
 
 
@@ -100,15 +100,15 @@ Maschera di maschera degli attributi della stampante.
 | ID collegamento                | \-                                                                                                                        |
 | MAPI-Id                | \-                                                                                                                        |
 | System-Only            | Falso                                                                                                                     |
-| È a valore singolo       | Vero                                                                                                                      |
+| Is-Single-Valued       | Vero                                                                                                                      |
 | Indicizzato             | Falso                                                                                                                     |
 | Nel catalogo globale      | Falso                                                                                                                     |
-| NT-Security-descrittore | O:BAG: NON VALIDO: S:                                                                                                              |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                                                                                              |
 | Range-Lower            | \-                                                                                                                        |
 | Range-Upper            | \-                                                                                                                        |
 | Search-Flags           | 0x00000000                                                                                                                |
 | System-Flags           | 0x00000010                                                                                                                |
-| Classi utilizzate in        | [**MS-Print-ConnectionPolicy**](c-msprint-connectionpolicy.md)<br/> [**Coda di stampa**](c-printqueue.md)<br/> |
+| Classi usate in        | [**ms-Print-ConnectionPolicy**](c-msprint-connectionpolicy.md)<br/> [**Coda di stampa**](c-printqueue.md)<br/> |
 
 
 
@@ -121,15 +121,15 @@ Maschera di maschera degli attributi della stampante.
 | ID collegamento                | \-                                                                                                                        |
 | MAPI-Id                | \-                                                                                                                        |
 | System-Only            | Falso                                                                                                                     |
-| È a valore singolo       | Vero                                                                                                                      |
+| Is-Single-Valued       | Vero                                                                                                                      |
 | Indicizzato             | Falso                                                                                                                     |
 | Nel catalogo globale      | Falso                                                                                                                     |
-| NT-Security-descrittore | O:BAG: NON VALIDO: S:                                                                                                              |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                                                                                              |
 | Range-Lower            | \-                                                                                                                        |
 | Range-Upper            | \-                                                                                                                        |
 | Search-Flags           | 0x00000000                                                                                                                |
 | System-Flags           | 0x00000010                                                                                                                |
-| Classi utilizzate in        | [**MS-Print-ConnectionPolicy**](c-msprint-connectionpolicy.md)<br/> [**Coda di stampa**](c-printqueue.md)<br/> |
+| Classi usate in        | [**ms-Print-ConnectionPolicy**](c-msprint-connectionpolicy.md)<br/> [**Coda di stampa**](c-printqueue.md)<br/> |
 
 
 
@@ -142,15 +142,15 @@ Maschera di maschera degli attributi della stampante.
 | ID collegamento                | \-                                                                                                                        |
 | MAPI-Id                | \-                                                                                                                        |
 | System-Only            | Falso                                                                                                                     |
-| È a valore singolo       | Vero                                                                                                                      |
+| Is-Single-Valued       | Vero                                                                                                                      |
 | Indicizzato             | Falso                                                                                                                     |
 | Nel catalogo globale      | Falso                                                                                                                     |
-| NT-Security-descrittore | O:BAG: NON VALIDO: S:                                                                                                              |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                                                                                              |
 | Range-Lower            | \-                                                                                                                        |
 | Range-Upper            | \-                                                                                                                        |
 | Search-Flags           | 0x00000000                                                                                                                |
 | System-Flags           | 0x00000010                                                                                                                |
-| Classi utilizzate in        | [**MS-Print-ConnectionPolicy**](c-msprint-connectionpolicy.md)<br/> [**Coda di stampa**](c-printqueue.md)<br/> |
+| Classi usate in        | [**ms-Print-ConnectionPolicy**](c-msprint-connectionpolicy.md)<br/> [**Coda di stampa**](c-printqueue.md)<br/> |
 
 
 
@@ -163,15 +163,15 @@ Maschera di maschera degli attributi della stampante.
 | ID collegamento                | \-                                                                                                                        |
 | MAPI-Id                | \-                                                                                                                        |
 | System-Only            | Falso                                                                                                                     |
-| È a valore singolo       | Vero                                                                                                                      |
+| Is-Single-Valued       | Vero                                                                                                                      |
 | Indicizzato             | Falso                                                                                                                     |
 | Nel catalogo globale      | Falso                                                                                                                     |
-| NT-Security-descrittore | O:BAG: NON VALIDO: S:                                                                                                              |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                                                                                              |
 | Range-Lower            | \-                                                                                                                        |
 | Range-Upper            | \-                                                                                                                        |
 | Search-Flags           | 0x00000000                                                                                                                |
 | System-Flags           | 0x00000010                                                                                                                |
-| Classi utilizzate in        | [**MS-Print-ConnectionPolicy**](c-msprint-connectionpolicy.md)<br/> [**Coda di stampa**](c-printqueue.md)<br/> |
+| Classi usate in        | [**ms-Print-ConnectionPolicy**](c-msprint-connectionpolicy.md)<br/> [**Coda di stampa**](c-printqueue.md)<br/> |
 
 
 

@@ -1,10 +1,10 @@
 ---
-title: Allowed-Child-Classes-attributo valido
-description: Elenco di classi che è possibile modificare.
+title: Attributo Allowed-Child-Classes-Effective
+description: Elenco di classi che possono essere modificate.
 ms.assetid: e7c30918-3aac-4c08-bd98-60ddc704769f
 ms.tgt_platform: multiple
 keywords:
-- Consentito-classi figlio-schema AD attributo valido
+- Schema AD dell'attributo Allowed-Child-Classes-Effective
 - Schema AD dell'attributo allowedChildClassesEffective
 topic_type:
 - apiref
@@ -14,28 +14,28 @@ api_type:
 - Schema
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 3c9ead0a7f8e03b545d28c5f4c3bf266c3acba54
-ms.sourcegitcommit: b77ace27b0432e7cd3863191b11926be032fbe2f
+ms.openlocfilehash: 51c70b5315e9e2400e2320532e03fedcee5fb8aff79eeec222f27593bacfbc14
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/14/2020
-ms.locfileid: "103875865"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119656931"
 ---
-# <a name="allowed-child-classes-effective-attribute"></a>Allowed-Child-Classes-attributo valido
+# <a name="allowed-child-classes-effective-attribute"></a>Attributo Allowed-Child-Classes-Effective
 
-Elenco di classi che è possibile modificare.
+Elenco di classi che possono essere modificate.
 
 
 
 | Voce | Valore |
 |-------------------|-----------------------------------------------------------------|
-| CN                | Consentito-classi figlio-valide                                 |
-| LDAP-Display-Name | allowedChildClassesEffective                                    |
+| CN                | Allowed-Child-Classes-Effective                                 |
+| Ldap-Display-Name | allowedChildClassesEffective                                    |
 | Dimensione              | \-                                                              |
-| Privilegio aggiornamento  | \-                                                              |
+| Privilegio di aggiornamento  | \-                                                              |
 | Frequenza di aggiornamento  | \-                                                              |
 | Attribute-Id      | 1.2.840.113556.1.4.912                                          |
-| System-ID-GUID    | 9a7ad943-ca53-11d1-bbd0-0080c76670c0                            |
+| System-Id-Guid    | 9a7ad943-ca53-11d1-bbd0-0080c76670c0                            |
 | Sintassi            | [**String(Object-Identifier)**](s-string-object-identifier.md) |
 
 
@@ -44,7 +44,7 @@ Elenco di classi che è possibile modificare.
 
 -   [**Windows 2000 Server**](#windows-2000-server)
 -   [**Windows Server 2003**](#windows-server-2003)
--   [**ADAM**](#adam)
+-   [**Adam**](#adam)
 -   [**Windows Server 2003 R2**](#windows-server-2003-r2)
 -   [**Windows Server 2008**](#windows-server-2008)
 -   [**Windows Server 2008 R2**](#windows-server-2008-r2)
@@ -59,15 +59,15 @@ Elenco di classi che è possibile modificare.
 | ID collegamento                | \-                              |
 | MAPI-Id                | \-                              |
 | System-Only            | Vero                            |
-| È a valore singolo       | Falso                           |
+| Is-Single-Valued       | Falso                           |
 | Indicizzato             | Falso                           |
 | Nel catalogo globale      | Falso                           |
-| NT-Security-descrittore | O:BAG: NON VALIDO: S:                    |
+| NT-Security-Descriptor | O:BAG:BAD:S:                    |
 | Range-Lower            | \-                              |
 | Range-Upper            | \-                              |
 | Search-Flags           | 0x00000000                      |
 | System-Flags           | 0x08000014                      |
-| Classi utilizzate in        | [**In alto**](c-top.md)<br/> |
+| Classi usate in        | [**In alto**](c-top.md)<br/> |
 
 
 
@@ -80,19 +80,19 @@ Elenco di classi che è possibile modificare.
 | ID collegamento                | \-                              |
 | MAPI-Id                | \-                              |
 | System-Only            | Vero                            |
-| È a valore singolo       | Falso                           |
+| Is-Single-Valued       | Falso                           |
 | Indicizzato             | Falso                           |
 | Nel catalogo globale      | Falso                           |
-| NT-Security-descrittore | O:BAG: NON VALIDO: S:                    |
+| NT-Security-Descriptor | O:BAG:BAD:S:                    |
 | Range-Lower            | \-                              |
 | Range-Upper            | \-                              |
 | Search-Flags           | 0x00000000                      |
 | System-Flags           | 0x08000014                      |
-| Classi utilizzate in        | [**In alto**](c-top.md)<br/> |
+| Classi usate in        | [**In alto**](c-top.md)<br/> |
 
 
 
-## <a name="adam"></a>ADAM
+## <a name="adam"></a>Adam
 
 
 
@@ -101,15 +101,15 @@ Elenco di classi che è possibile modificare.
 | ID collegamento                | \-                              |
 | MAPI-Id                | \-                              |
 | System-Only            | Vero                            |
-| È a valore singolo       | Falso                           |
+| Is-Single-Valued       | Falso                           |
 | Indicizzato             | Falso                           |
 | Nel catalogo globale      | Falso                           |
-| NT-Security-descrittore | O:BAG: NON VALIDO: S:                    |
+| NT-Security-Descriptor | O:BAG:BAD:S:                    |
 | Range-Lower            | \-                              |
 | Range-Upper            | \-                              |
 | Search-Flags           | 0x00000000                      |
 | System-Flags           | 0x08000014                      |
-| Classi utilizzate in        | [**In alto**](c-top.md)<br/> |
+| Classi usate in        | [**In alto**](c-top.md)<br/> |
 
 
 
@@ -122,15 +122,15 @@ Elenco di classi che è possibile modificare.
 | ID collegamento                | \-                              |
 | MAPI-Id                | \-                              |
 | System-Only            | Vero                            |
-| È a valore singolo       | Falso                           |
+| Is-Single-Valued       | Falso                           |
 | Indicizzato             | Falso                           |
 | Nel catalogo globale      | Falso                           |
-| NT-Security-descrittore | O:BAG: NON VALIDO: S:                    |
+| NT-Security-Descriptor | O:BAG:BAD:S:                    |
 | Range-Lower            | \-                              |
 | Range-Upper            | \-                              |
 | Search-Flags           | 0x00000000                      |
 | System-Flags           | 0x08000014                      |
-| Classi utilizzate in        | [**In alto**](c-top.md)<br/> |
+| Classi usate in        | [**In alto**](c-top.md)<br/> |
 
 
 
@@ -143,15 +143,15 @@ Elenco di classi che è possibile modificare.
 | ID collegamento                | \-                              |
 | MAPI-Id                | \-                              |
 | System-Only            | Vero                            |
-| È a valore singolo       | Falso                           |
+| Is-Single-Valued       | Falso                           |
 | Indicizzato             | Falso                           |
 | Nel catalogo globale      | Falso                           |
-| NT-Security-descrittore | O:BAG: NON VALIDO: S:                    |
+| NT-Security-Descriptor | O:BAG:BAD:S:                    |
 | Range-Lower            | \-                              |
 | Range-Upper            | \-                              |
 | Search-Flags           | 0x00000000                      |
 | System-Flags           | 0x08000014                      |
-| Classi utilizzate in        | [**In alto**](c-top.md)<br/> |
+| Classi usate in        | [**In alto**](c-top.md)<br/> |
 
 
 
@@ -164,15 +164,15 @@ Elenco di classi che è possibile modificare.
 | ID collegamento                | \-                              |
 | MAPI-Id                | \-                              |
 | System-Only            | Vero                            |
-| È a valore singolo       | Falso                           |
+| Is-Single-Valued       | Falso                           |
 | Indicizzato             | Falso                           |
 | Nel catalogo globale      | Falso                           |
-| NT-Security-descrittore | O:BAG: NON VALIDO: S:                    |
+| NT-Security-Descriptor | O:BAG:BAD:S:                    |
 | Range-Lower            | \-                              |
 | Range-Upper            | \-                              |
 | Search-Flags           | 0x00000000                      |
 | System-Flags           | 0x08000014                      |
-| Classi utilizzate in        | [**In alto**](c-top.md)<br/> |
+| Classi usate in        | [**In alto**](c-top.md)<br/> |
 
 
 
@@ -185,15 +185,15 @@ Elenco di classi che è possibile modificare.
 | ID collegamento                | \-                              |
 | MAPI-Id                | \-                              |
 | System-Only            | Vero                            |
-| È a valore singolo       | Falso                           |
+| Is-Single-Valued       | Falso                           |
 | Indicizzato             | Falso                           |
 | Nel catalogo globale      | Falso                           |
-| NT-Security-descrittore | O:BAG: NON VALIDO: S:                    |
+| NT-Security-Descriptor | O:BAG:BAD:S:                    |
 | Range-Lower            | \-                              |
 | Range-Upper            | \-                              |
 | Search-Flags           | 0x00000000                      |
 | System-Flags           | 0x08000014                      |
-| Classi utilizzate in        | [**In alto**](c-top.md)<br/> |
+| Classi usate in        | [**In alto**](c-top.md)<br/> |
 
 
 

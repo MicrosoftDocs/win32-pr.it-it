@@ -1,11 +1,11 @@
 ---
-title: Attributo MS-SQL-location
-description: Stringa definita dall'utente. Il valore predefinito è location.
+title: Attributo MS-SQL-Location
+description: Stringa definita dall'utente. Il valore predefinito è impostato su Posizione.
 ms.assetid: e0d8a83f-a979-49a8-a92d-842c18c8f9fd
 ms.tgt_platform: multiple
 keywords:
-- Schema AD dell'attributo MS-SQL-location
-- Schema AD dell'attributo mS-SQL-location
+- Schema AD dell'attributo MS-SQL-Location
+- Schema AD dell'attributo mS-SQL-Location
 topic_type:
 - apiref
 api_name:
@@ -14,28 +14,28 @@ api_type:
 - Schema
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 0ffa71a40e7deff12385e0e45eb16d8dcc998269
-ms.sourcegitcommit: b77ace27b0432e7cd3863191b11926be032fbe2f
+ms.openlocfilehash: 003da9f90c77d3ee79a77c8132ab8afa4a6e1431018405cc07f67bbf607f41ce
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/14/2020
-ms.locfileid: "106302975"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119705271"
 ---
-# <a name="ms-sql-location-attribute"></a>Attributo MS-SQL-location
+# <a name="ms-sql-location-attribute"></a>Attributo MS-SQL-Location
 
-Stringa definita dall'utente. Il valore predefinito è location.
+Stringa definita dall'utente. Il valore predefinito è impostato su Posizione.
 
 
 
 | Voce | Valore |
 |-------------------|---------------------------------------------|
-| CN                | MS-SQL-posizione                             |
-| LDAP-Display-Name | mS-SQL-posizione                             |
+| CN                | MS-SQL-Location                             |
+| Ldap-Display-Name | mS-SQL-Location                             |
 | Dimensione              | \-                                          |
-| Privilegio aggiornamento  | Amministratore di dominio                        |
-| Frequenza di aggiornamento  | Durante l'installazione del sistema.                            |
+| Privilegio di aggiornamento  | Amministratore di dominio                        |
+| Frequenza di aggiornamento  | Al momento dell'installazione del sistema.                            |
 | Attribute-Id      | 1.2.840.113556.1.4.1366                     |
-| System-ID-GUID    | 561c9644-ccee-11d2-9993-0000f87a57d4        |
+| System-Id-Guid    | 561c9644-ccee-11d2-9993-0000f87a57d4        |
 | Sintassi            | [**String(Unicode)**](s-string-unicode.md) |
 
 
@@ -58,15 +58,15 @@ Stringa definita dall'utente. Il valore predefinito è location.
 | ID collegamento                | \-                                                        |
 | MAPI-Id                | \-                                                        |
 | System-Only            | Falso                                                     |
-| È a valore singolo       | Vero                                                      |
+| Is-Single-Valued       | Vero                                                      |
 | Indicizzato             | Falso                                                     |
 | Nel catalogo globale      | Falso                                                     |
-| NT-Security-descrittore | O:BAG: NON VALIDO: S:                                              |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                              |
 | Range-Lower            | \-                                                        |
 | Range-Upper            | \-                                                        |
 | Search-Flags           | 0x00000000                                                |
 | System-Flags           | 0x00000010                                                |
-| Classi utilizzate in        | [**MS-SQL-SQLServer**](c-ms-sql-sqlserver.md)<br/> |
+| Classi usate in        | [**MS-SQL-SQLServer**](c-ms-sql-sqlserver.md)<br/> |
 
 
 
@@ -79,15 +79,15 @@ Stringa definita dall'utente. Il valore predefinito è location.
 | ID collegamento                | \-                                                        |
 | MAPI-Id                | \-                                                        |
 | System-Only            | Falso                                                     |
-| È a valore singolo       | Vero                                                      |
+| Is-Single-Valued       | Vero                                                      |
 | Indicizzato             | Falso                                                     |
 | Nel catalogo globale      | Falso                                                     |
-| NT-Security-descrittore | O:BAG: NON VALIDO: S:                                              |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                              |
 | Range-Lower            | \-                                                        |
 | Range-Upper            | \-                                                        |
 | Search-Flags           | 0x00000000                                                |
 | System-Flags           | 0x00000010                                                |
-| Classi utilizzate in        | [**MS-SQL-SQLServer**](c-ms-sql-sqlserver.md)<br/> |
+| Classi usate in        | [**MS-SQL-SQLServer**](c-ms-sql-sqlserver.md)<br/> |
 
 
 
@@ -100,15 +100,15 @@ Stringa definita dall'utente. Il valore predefinito è location.
 | ID collegamento                | \-                                                        |
 | MAPI-Id                | \-                                                        |
 | System-Only            | Falso                                                     |
-| È a valore singolo       | Vero                                                      |
+| Is-Single-Valued       | Vero                                                      |
 | Indicizzato             | Falso                                                     |
 | Nel catalogo globale      | Falso                                                     |
-| NT-Security-descrittore | O:BAG: NON VALIDO: S:                                              |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                              |
 | Range-Lower            | \-                                                        |
 | Range-Upper            | \-                                                        |
 | Search-Flags           | 0x00000000                                                |
 | System-Flags           | 0x00000010                                                |
-| Classi utilizzate in        | [**MS-SQL-SQLServer**](c-ms-sql-sqlserver.md)<br/> |
+| Classi usate in        | [**MS-SQL-SQLServer**](c-ms-sql-sqlserver.md)<br/> |
 
 
 
@@ -121,15 +121,15 @@ Stringa definita dall'utente. Il valore predefinito è location.
 | ID collegamento                | \-                                                        |
 | MAPI-Id                | \-                                                        |
 | System-Only            | Falso                                                     |
-| È a valore singolo       | Vero                                                      |
+| A valore singolo       | Vero                                                      |
 | Indicizzato             | Falso                                                     |
 | Nel catalogo globale      | Falso                                                     |
-| NT-Security-descrittore | O:BAG: NON VALIDO: S:                                              |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                              |
 | Range-Lower            | \-                                                        |
 | Range-Upper            | \-                                                        |
 | Search-Flags           | 0x00000000                                                |
 | System-Flags           | 0x00000010                                                |
-| Classi utilizzate in        | [**MS-SQL-SQLServer**](c-ms-sql-sqlserver.md)<br/> |
+| Classi usate in        | [**MS-SQL-SQLServer**](c-ms-sql-sqlserver.md)<br/> |
 
 
 
@@ -142,15 +142,15 @@ Stringa definita dall'utente. Il valore predefinito è location.
 | ID collegamento                | \-                                                        |
 | MAPI-Id                | \-                                                        |
 | System-Only            | Falso                                                     |
-| È a valore singolo       | Vero                                                      |
+| A valore singolo       | Vero                                                      |
 | Indicizzato             | Falso                                                     |
 | Nel catalogo globale      | Falso                                                     |
-| NT-Security-descrittore | O:BAG: NON VALIDO: S:                                              |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                              |
 | Range-Lower            | \-                                                        |
 | Range-Upper            | \-                                                        |
 | Search-Flags           | 0x00000000                                                |
 | System-Flags           | 0x00000010                                                |
-| Classi utilizzate in        | [**MS-SQL-SQLServer**](c-ms-sql-sqlserver.md)<br/> |
+| Classi usate in        | [**MS-SQL-SQLServer**](c-ms-sql-sqlserver.md)<br/> |
 
 
 
@@ -163,15 +163,15 @@ Stringa definita dall'utente. Il valore predefinito è location.
 | ID collegamento                | \-                                                        |
 | MAPI-Id                | \-                                                        |
 | System-Only            | Falso                                                     |
-| È a valore singolo       | Vero                                                      |
+| A valore singolo       | Vero                                                      |
 | Indicizzato             | Falso                                                     |
 | Nel catalogo globale      | Falso                                                     |
-| NT-Security-descrittore | O:BAG: NON VALIDO: S:                                              |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                              |
 | Range-Lower            | \-                                                        |
 | Range-Upper            | \-                                                        |
 | Search-Flags           | 0x00000000                                                |
 | System-Flags           | 0x00000010                                                |
-| Classi utilizzate in        | [**MS-SQL-SQLServer**](c-ms-sql-sqlserver.md)<br/> |
+| Classi usate in        | [**MS-SQL-SQLServer**](c-ms-sql-sqlserver.md)<br/> |
 
 
 

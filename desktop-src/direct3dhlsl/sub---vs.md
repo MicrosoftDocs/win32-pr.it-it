@@ -1,6 +1,6 @@
 ---
-title: Sub-vs
-description: Sottrae le origini. | Sub-vs
+title: sub - vs
+description: Sottrae le origini. | sub - vs
 ms.assetid: ccd7ca57-05a9-4ee8-8bda-c8c875476aaf
 ms.topic: reference
 ms.date: 05/31/2018
@@ -9,14 +9,14 @@ topic_type:
 api_name: ''
 api_type: ''
 api_location: ''
-ms.openlocfilehash: a4bf15522798e1da5ec0bde5b729f241ff9dabde
-ms.sourcegitcommit: 92e74c99f8f4d097676959d0c317f533c2400a80
+ms.openlocfilehash: f52098bd48d8530d0214cf104bde027908fea9b0d21f895a382cc118133f5b3e
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/09/2021
-ms.locfileid: "103969175"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119853161"
 ---
-# <a name="sub---vs"></a>Sub-vs
+# <a name="sub---vs"></a>sub - vs
 
 Sottrae le origini.
 
@@ -24,7 +24,7 @@ Sottrae le origini.
 
 
 
-| Sub DST, src0, src1 |
+| sub dst, src0, src1 |
 |---------------------|
 
 
@@ -33,7 +33,7 @@ Sottrae le origini.
 
 dove
 
--   DST è il registro di destinazione.
+-   dst è il registro di destinazione.
 -   src0 è un registro di origine.
 -   src1 è un registro di origine.
 
@@ -41,7 +41,7 @@ dove
 
 
 
-| Versioni vertex shader | 1\_1 | 2 \_ 0 | 2 \_ x | 2 \_ SW | 3 \_ 0 | 3 \_ SW |
+| Versioni vertex shader | 1\_1 | 2 \_ 0 | 2 \_ x | 2 \_ sw | 3 \_ 0 | 3 \_ sw |
 |------------------------|------|------|------|-------|------|-------|
 | sub                    | x    | x    | x    | x     | x    | x     |
 
@@ -65,7 +65,7 @@ dest.w = src0.w - src1.w
 
 <dl> <dt>
 
-[Istruzioni vertex shader](dx9-graphics-reference-asm-vs-instructions.md)
+[Istruzioni per vertex shader](dx9-graphics-reference-asm-vs-instructions.md)
 </dt> </dl>
 
  

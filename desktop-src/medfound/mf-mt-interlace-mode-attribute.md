@@ -1,19 +1,19 @@
 ---
-description: Descrive in che modo i frame in un tipo di supporto video sono interlacciati.
+description: Descrive come interlacciare i fotogrammi in un tipo di supporto video.
 ms.assetid: 19aa0147-ac49-4a2e-ac75-e967fec9ca68
-title: Attributo MF_MT_INTERLACE_MODE (Mfapi. h)
+title: MF_MT_INTERLACE_MODE attributo (Mfapi.h)
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 1826978c39ff8cd80b2aa66b91161ee8b476944f
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 569b41e121caaeb431cf842221bfc215d5ba411c75a26e557e300ba03690cc39
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104129543"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120013011"
 ---
-# <a name="mf_mt_interlace_mode-attribute"></a>\_ \_ Attributo modalità di intreccio MF mt \_
+# <a name="mf_mt_interlace_mode-attribute"></a>Attributo \_ MF MT \_ INTERLACE \_ MODE
 
-Descrive in che modo i frame in un tipo di supporto video sono interlacciati.
+Descrive come interlacciare i fotogrammi in un tipo di supporto video.
 
 ## <a name="data-type"></a>Tipo di dati
 
@@ -21,9 +21,9 @@ Descrive in che modo i frame in un tipo di supporto video sono interlacciati.
 
 ## <a name="remarks"></a>Commenti
 
-Il valore di questo attributo è un membro dell'enumerazione [**MFVideoInterlaceMode**](/windows/desktop/api/mfobjects/ne-mfobjects-mfvideointerlacemode) .
+Il valore di questo attributo è un membro [**dell'enumerazione MFVideoInterlaceMode.**](/windows/desktop/api/mfobjects/ne-mfobjects-mfvideointerlacemode)
 
-La costante GUID per questo attributo viene esportata da mfuuid. lib.
+La costante GUID per questo attributo viene esportata da mfuuid.lib.
 
 ## <a name="requirements"></a>Requisiti
 
@@ -31,9 +31,9 @@ La costante GUID per questo attributo viene esportata da mfuuid. lib.
 
 | Requisito | Valore |
 |-------------------------------------|------------------------------------------------------------------------------------|
-| Client minimo supportato<br/> | App desktop di Windows Vista app \[ \| UWP\]<br/>                              |
-| Server minimo supportato<br/> | App UWP per \[ app desktop di Windows Server 2008 \|\]<br/>                        |
-| Intestazione<br/>                   | <dl> <dt>Mfapi. h</dt> </dl> |
+| Client minimo supportato<br/> | Windows App desktop Di Vista \[ \| app UWP\]<br/>                              |
+| Server minimo supportato<br/> | Windows App UWP per app desktop server 2008 \[ \|\]<br/>                        |
+| Intestazione<br/>                   | <dl> <dt>Mfapi.h</dt> </dl> |
 
 
 
@@ -41,13 +41,13 @@ La costante GUID per questo attributo viene esportata da mfuuid. lib.
 
 <dl> <dt>
 
-[Elenco alfabetico degli attributi di Media Foundation](alphabetical-list-of-media-foundation-attributes.md)
+[Elenco alfabetico di Media Foundation attributi](alphabetical-list-of-media-foundation-attributes.md)
 </dt> <dt>
 
-[**IMFAttributes:: GetUInt32**](/windows/desktop/api/mfobjects/nf-mfobjects-imfattributes-getuint32)
+[**IMFAttributes::GetUINT32**](/windows/desktop/api/mfobjects/nf-mfobjects-imfattributes-getuint32)
 </dt> <dt>
 
-[**IMFAttributes:: seuint32**](/windows/desktop/api/mfobjects/nf-mfobjects-imfattributes-setuint32)
+[**IMFAttributes::SetUINT32**](/windows/desktop/api/mfobjects/nf-mfobjects-imfattributes-setuint32)
 </dt> <dt>
 
 [**IMFMediaType**](/windows/desktop/api/mfobjects/nn-mfobjects-imfmediatype)

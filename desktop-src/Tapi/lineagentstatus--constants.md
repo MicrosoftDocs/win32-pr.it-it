@@ -1,43 +1,43 @@
 ---
-description: Le \_ costanti LINEAGENTSTATUS elencano lo stato di aggiornamento dei membri della struttura LINEAGENTSTATUS per un agente.
+description: Le costanti LINEAGENTSTATUS \_ elencano lo stato di aggiornamento dei membri della struttura LINEAGENTSTATUS per un agente.
 ms.assetid: 068a2b24-a430-4cf5-b70d-5574e981a899
-title: Costanti LINEAGENTSTATUS_ (TAPI. h)
+title: LINEAGENTSTATUS_ costanti (Tapi.h)
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 4d1fb7afb2703a50d97d0423662a10c92743beb9
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: e1d792fc31c1d56afaa483a9aa6890db1f52398d7107ef944cf53352734044b2
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "106332909"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119682041"
 ---
-# <a name="lineagentstatus_-constants"></a>\_Costanti LINEAGENTSTATUS
+# <a name="lineagentstatus_-constants"></a>Costanti \_ LINEAGENTSTATUS
 
-Le **\_ costanti LINEAGENTSTATUS** elencano lo stato di aggiornamento dei membri della struttura [**LINEAGENTSTATUS**](/windows/desktop/api/Tapi/ns-tapi-lineagentstatus) per un agente.
+Le **costanti LINEAGENTSTATUS \_ elencano** lo stato di aggiornamento dei membri della [**struttura LINEAGENTSTATUS**](/windows/desktop/api/Tapi/ns-tapi-lineagentstatus) per un agente.
 
 <dl> <dt>
 
-<span id="LINEAGENTSTATUS_ACTIVITY"></span><span id="lineagentstatus_activity"></span>**\_attività LINEAGENTSTATUS**
+<span id="LINEAGENTSTATUS_ACTIVITY"></span><span id="lineagentstatus_activity"></span>**ATTIVITÀ \_ LINEAGENTSTATUS**
 </dt> <dd> <dl> <dt>
 
 
 
-Il membro **dwActivityID**, **dwActivitySize** o **dwActivityOffset** in [**LINEAGENTSTATUS**](/windows/desktop/api/Tapi/ns-tapi-lineagentstatus) è stato aggiornato.
+Il **membro dwActivityID**, **dwActivitySize** o **dwActivityOffset** in [**LINEAGENTSTATUS**](/windows/desktop/api/Tapi/ns-tapi-lineagentstatus) è stato aggiornato.
 
 
 </dt> </dl> </dd> <dt>
 
-<span id="LINEAGENTSTATUS_ACTIVITYLIST"></span><span id="lineagentstatus_activitylist"></span>**\_attività LINEAGENTSTATUS**
+<span id="LINEAGENTSTATUS_ACTIVITYLIST"></span><span id="lineagentstatus_activitylist"></span>**LINEAGENTSTATUS \_ ACTIVITYLIST**
 </dt> <dd> <dl> <dt>
 
 
 
-Il [**LINEAGENTACTIVITYLIST**](/windows/desktop/api/Tapi/ns-tapi-lineagentactivitylist) è stato aggiornato. L'applicazione può chiamare [**lineGetAgentActivityList**](/windows/desktop/api/Tapi/nf-tapi-linegetagentactivitylista) per ottenere l'elenco aggiornato.
+[**LINEAGENTACTIVITYLIST**](/windows/desktop/api/Tapi/ns-tapi-lineagentactivitylist) è stato aggiornato. L'applicazione può chiamare [**lineGetAgentActivityList**](/windows/desktop/api/Tapi/nf-tapi-linegetagentactivitylista) per ottenere l'elenco aggiornato.
 
 
 </dt> </dl> </dd> <dt>
 
-<span id="LINEAGENTSTATUS_CAPSCHANGE"></span><span id="lineagentstatus_capschange"></span>**\_CAPSCHANGE LINEAGENTSTATUS**
+<span id="LINEAGENTSTATUS_CAPSCHANGE"></span><span id="lineagentstatus_capschange"></span>**LINEAGENTSTATUS \_ CAPSCHANGE**
 </dt> <dd> <dl> <dt>
 
 
@@ -47,62 +47,62 @@ Le funzionalità di [**LINEAGENTCAPS**](/windows/desktop/api/Tapi/ns-tapi-lineag
 
 </dt> </dl> </dd> <dt>
 
-<span id="LINEAGENTSTATUS_GROUP"></span><span id="lineagentstatus_group"></span>**\_gruppo LINEAGENTSTATUS**
+<span id="LINEAGENTSTATUS_GROUP"></span><span id="lineagentstatus_group"></span>**GRUPPO \_ LINEAGENTSTATUS**
 </dt> <dd> <dl> <dt>
 
 
 
-Il [**LINEAGENTSTATUS**](/windows/desktop/api/Tapi/ns-tapi-lineagentstatus) è stato aggiornato.
+[**LINEAGENTSTATUS è**](/windows/desktop/api/Tapi/ns-tapi-lineagentstatus) stato aggiornato.
 
 
 </dt> </dl> </dd> <dt>
 
-<span id="LINEAGENTSTATUS_GROUPLIST"></span><span id="lineagentstatus_grouplist"></span>**gruppo di LINEAGENTSTATUS \_**
+<span id="LINEAGENTSTATUS_GROUPLIST"></span><span id="lineagentstatus_grouplist"></span>**LINEAGENTSTATUS \_ GROUPLIST**
 </dt> <dd> <dl> <dt>
 
 
 
-Il [**LINEAGENTGROUPLIST**](/windows/desktop/api/Tapi/ns-tapi-lineagentgrouplist) è stato aggiornato. L'applicazione può chiamare [**lineGetAgentGroupList**](/windows/desktop/api/Tapi/nf-tapi-linegetagentgrouplista) per ottenere l'elenco aggiornato.
+[**LINEAGENTGROUPLIST**](/windows/desktop/api/Tapi/ns-tapi-lineagentgrouplist) è stato aggiornato. L'applicazione può chiamare [**lineGetAgentGroupList**](/windows/desktop/api/Tapi/nf-tapi-linegetagentgrouplista) per ottenere l'elenco aggiornato.
 
 
 </dt> </dl> </dd> <dt>
 
-<span id="LINEAGENTSTATUS_NEXTSTATE"></span><span id="lineagentstatus_nextstate"></span>**\_NEXTSTATE LINEAGENTSTATUS**
+<span id="LINEAGENTSTATUS_NEXTSTATE"></span><span id="lineagentstatus_nextstate"></span>**LINEAGENTSTATUS \_ NEXTSTATE**
 </dt> <dd> <dl> <dt>
 
 
 
-Il membro **dwNextState** in [**LINEAGENTSTATUS**](/windows/desktop/api/Tapi/ns-tapi-lineagentstatus) è stato aggiornato.
+Il **membro dwNextState** in [**LINEAGENTSTATUS**](/windows/desktop/api/Tapi/ns-tapi-lineagentstatus) è stato aggiornato.
 
 
 </dt> </dl> </dd> <dt>
 
-<span id="LINEAGENTSTATUS_STATE"></span><span id="lineagentstatus_state"></span>**\_stato LINEAGENTSTATUS**
+<span id="LINEAGENTSTATUS_STATE"></span><span id="lineagentstatus_state"></span>**STATO \_ LINEAGENTSTATUS**
 </dt> <dd> <dl> <dt>
 
 
 
-Il membro **dwState** in [**LINEAGENTSTATUS**](/windows/desktop/api/Tapi/ns-tapi-lineagentstatus) è stato aggiornato.
+Il **membro dwState** in [**LINEAGENTSTATUS**](/windows/desktop/api/Tapi/ns-tapi-lineagentstatus) è stato aggiornato.
 
 
 </dt> </dl> </dd> <dt>
 
-<span id="LINEAGENTSTATUS_VALIDNEXTSTATES"></span><span id="lineagentstatus_validnextstates"></span>**\_VALIDNEXTSTATES LINEAGENTSTATUS**
+<span id="LINEAGENTSTATUS_VALIDNEXTSTATES"></span><span id="lineagentstatus_validnextstates"></span>**LINEAGENTSTATUS \_ VALIDNEXTSTATES**
 </dt> <dd> <dl> <dt>
 
 
 
-Il membro **dwValidNextStates** in [**LINEAGENTSTATUS**](/windows/desktop/api/Tapi/ns-tapi-lineagentstatus) è stato aggiornato.
+Il **membro dwValidNextStates** in [**LINEAGENTSTATUS**](/windows/desktop/api/Tapi/ns-tapi-lineagentstatus) è stato aggiornato.
 
 
 </dt> </dl> </dd> <dt>
 
-<span id="LINEAGENTSTATUS_VALIDSTATES"></span><span id="lineagentstatus_validstates"></span>**\_VALIDSTATES LINEAGENTSTATUS**
+<span id="LINEAGENTSTATUS_VALIDSTATES"></span><span id="lineagentstatus_validstates"></span>**LINEAGENTSTATUS \_ VALIDSTATES**
 </dt> <dd> <dl> <dt>
 
 
 
-Il membro **dwValidStates** in [**LINEAGENTSTATUS**](/windows/desktop/api/Tapi/ns-tapi-lineagentstatus) è stato aggiornato.
+Il **membro dwValidStates** in [**LINEAGENTSTATUS**](/windows/desktop/api/Tapi/ns-tapi-lineagentstatus) è stato aggiornato.
 
 
 </dt> </dl> </dd> </dl>
@@ -113,8 +113,8 @@ Il membro **dwValidStates** in [**LINEAGENTSTATUS**](/windows/desktop/api/Tapi/n
 
 | Requisito | Valore |
 |-------------------------|-----------------------------------------------------------------------------------|
-| Versione TAPI<br/> | Richiede TAPI 2,0 o versione successiva<br/>                                             |
-| Intestazione<br/>       | <dl> <dt>TAPI. h</dt> </dl> |
+| Versione TAPI<br/> | Richiede TAPI 2.0 o versione successiva<br/>                                             |
+| Intestazione<br/>       | <dl> <dt>Tapi.h</dt> </dl> |
 
 
 

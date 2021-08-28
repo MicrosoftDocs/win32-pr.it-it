@@ -1,7 +1,7 @@
 ---
-description: Il metodo SetSignedIntegerValue aggiunge un nuovo valore LONG (tipo VT \_ I4) o sovrascrive uno esistente.
+description: Il metodo SetSignedIntegerValue aggiunge un nuovo valore LONG (tipo VT \_ I4) o ne sovrascrive uno esistente.
 ms.assetid: b0bb2992-2906-446c-be9a-20bff13f8e1d
-title: 'Metodo IPortableDeviceValues:: SetSignedIntegerValue (PortableDeviceTypes. h)'
+title: Metodo IPortableDeviceValues::SetSignedIntegerValue (PortableDeviceTypes.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -14,16 +14,16 @@ api_type:
 api_location:
 - PortableDeviceGUIDs.lib
 - PortableDeviceGUIDs.dll
-ms.openlocfilehash: 26a5d01ec69203c39008de394e3693acc833d262
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: 71e5354c730671a4be5f344bb2503683f497003ddccecbd250490304f607e9ad
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "106326857"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119704731"
 ---
-# <a name="iportabledevicevaluessetsignedintegervalue-method"></a>Metodo IPortableDeviceValues:: SetSignedIntegerValue
+# <a name="iportabledevicevaluessetsignedintegervalue-method"></a>Metodo IPortableDeviceValues::SetSignedIntegerValue
 
-Il metodo **SetSignedIntegerValue** aggiunge un nuovo valore **Long** (tipo VT \_ I4) o sovrascrive uno esistente.
+Il **metodo SetSignedIntegerValue** aggiunge un nuovo **valore LONG** (tipo VT \_ I4) o ne sovrascrive uno esistente.
 
 ## <a name="syntax"></a>Sintassi
 
@@ -41,29 +41,29 @@ HRESULT SetSignedIntegerValue(
 
 <dl> <dt>
 
-*chiave* \[ di in\]
+*chiave* \[ Pollici\]
 </dt> <dd>
 
-Oggetto **REFPROPERTYKEY** che specifica l'elemento da creare o sovrascrivere.
+**RefPROPERTYKEY che** specifica l'elemento da creare o sovrascrivere.
 
 </dd> <dt>
 
-*Valore* \[ di in\]
+*Valore* \[ Pollici\]
 </dt> <dd>
 
-Oggetto **Long** che specifica il nuovo valore.
+Valore **LONG** che specifica il nuovo valore.
 
 </dd> </dl>
 
 ## <a name="return-value"></a>Valore restituito
 
-Il metodo restituisce un valore **HRESULT**. I valori possibili includono, ma non sono limitati a, quelli indicati nella tabella seguente.
+Il metodo restituisce un **HRESULT**. I valori possibili includono, ma non sono limitati a, quelli indicati nella tabella seguente.
 
 
 
 | Codice restituito                                                                          | Descrizione                      |
 |--------------------------------------------------------------------------------------|----------------------------------|
-| <dl> <dt>**\_OK**</dt> </dl> | Il metodo è riuscito.<br/> |
+| <dl> <dt>**S \_ OK**</dt> </dl> | Il metodo è riuscito.<br/> |
 
 
 
@@ -71,7 +71,7 @@ Il metodo restituisce un valore **HRESULT**. I valori possibili includono, ma no
 
 ## <a name="remarks"></a>Commenti
 
-Se un valore esistente ha la stessa chiave specificata dal parametro *Key* , sovrascrive il valore esistente senza alcun avviso.
+Se un valore esistente ha la stessa chiave specificata dal parametro *key,* sovrascrive il valore esistente senza alcun avviso.
 
 ## <a name="requirements"></a>Requisiti
 
@@ -79,8 +79,8 @@ Se un valore esistente ha la stessa chiave specificata dal parametro *Key* , sov
 
 | Requisito | Valore |
 |--------------------|----------------------------------------------------------------------------------------------------|
-| Intestazione<br/>  | <dl> <dt>PortableDeviceTypes. h</dt> </dl>   |
-| Libreria<br/> | <dl> <dt>PortableDeviceGUIDs. lib</dt> </dl> |
+| Intestazione<br/>  | <dl> <dt>PortableDeviceTypes.h</dt> </dl>   |
+| Libreria<br/> | <dl> <dt>PortableDeviceGUIDs.lib</dt> </dl> |
 
 
 

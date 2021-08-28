@@ -1,29 +1,29 @@
 ---
-description: Generato quando l'acquisizione della licenza è stata completata. Per ulteriori informazioni, vedere MELicenseAcquisitionStart.
+description: Generato al termine dell'acquisizione della licenza. Per altre informazioni, vedere MELicenseAcquisitionStart.
 ms.assetid: f577131b-887a-4912-8278-1165a801c2b3
-title: Evento MELicenseAcquisitionCompleted (Mfobjects. h)
+title: Evento MELicenseAcquisitionCompleted (Mfobjects.h)
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 545fa012f974637f5d268a7d8257daaf9b393f06
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 22ac7d24f99083153223614e7421dd8bd83468991c4d9a63fbb8e5933963f1e5
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "106309635"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120013611"
 ---
-# <a name="melicenseacquisitioncompleted-event"></a>Evento MELicenseAcquisitionCompleted
+# <a name="melicenseacquisitioncompleted-event"></a>EVENTO MELicenseAcquisitionCompleted
 
-Generato quando l'acquisizione della licenza è stata completata. Per ulteriori informazioni, vedere [MELicenseAcquisitionStart](melicenseacquisitionstart.md).
+Generato al termine dell'acquisizione della licenza. Per altre informazioni, vedere [MELicenseAcquisitionStart.](melicenseacquisitionstart.md)
 
 ## <a name="event-values"></a>Valori dell'evento
 
-I valori possibili recuperati da [**IMFMediaEvent:: GetValue**](/windows/desktop/api/mfobjects/nf-mfobjects-imfmediaevent-getvalue) includono i seguenti.
+I valori possibili recuperati [**da IMFMediaEvent::GetValue**](/windows/desktop/api/mfobjects/nf-mfobjects-imfmediaevent-getvalue) includono i seguenti.
 
 
 
 | VARTYPE              | Descrizione                           |
 |----------------------|---------------------------------------|
-| VT \_ vuoto<br/> | Nessun dato dell'evento.<br/> <br/> |
+| VT \_ EMPTY<br/> | Nessun dato dell'evento.<br/> <br/> |
 
 
 
@@ -33,9 +33,9 @@ I valori possibili recuperati da [**IMFMediaEvent:: GetValue**](/windows/desktop
 
 | Requisito | Valore |
 |-------------------------------------|----------------------------------------------------------------------------------------------------------|
-| Client minimo supportato<br/> | \[Solo app desktop di Windows Vista\]<br/>                                                           |
-| Server minimo supportato<br/> | \[Solo app desktop Windows Server 2008\]<br/>                                                     |
-| Intestazione<br/>                   | <dl> <dt>Mfobjects. h (include Mfidl. h)</dt> </dl> |
+| Client minimo supportato<br/> | Windows Solo \[ app desktop Vista\]<br/>                                                           |
+| Server minimo supportato<br/> | Windows Solo app desktop di Server 2008 \[\]<br/>                                                     |
+| Intestazione<br/>                   | <dl> <dt>Mfobjects.h (includere Mfidl.h)</dt> </dl> |
 
 
 
@@ -43,7 +43,7 @@ I valori possibili recuperati da [**IMFMediaEvent:: GetValue**](/windows/desktop
 
 <dl> <dt>
 
-[Eventi Media Foundation](media-foundation-events.md)
+[Media Foundation eventi](media-foundation-events.md)
 </dt> </dl>
 
  

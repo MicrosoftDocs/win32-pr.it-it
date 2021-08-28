@@ -1,25 +1,25 @@
 ---
 title: CalculatorWsdl
-description: Questo è un esempio di WSDL/schema per gli esempi del servizio di calcolatrice.
+description: Si tratta di un esempio wsdl/schema per gli esempi di servizio calculator.
 ms.assetid: 6dbea7dc-2d5c-4e6d-9941-9a93943e1914
 keywords:
 - Servizi Web CalculatorWsdl per Windows
 - WWSAPI
-- WWS
+- Wws
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 5f60dc25615134bf3f28428d310c58855781993d
-ms.sourcegitcommit: 40dd8501397fc79a643deb528c6c57ac2e9726ce
+ms.openlocfilehash: b43de4acbd6568a3ecd35d9a8075218fbda3779845cb3743bfb85a514f0cc891
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/24/2020
-ms.locfileid: "103719963"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119703631"
 ---
 # <a name="calculatorwsdl"></a>CalculatorWsdl
 
-Questo è un esempio di WSDL/schema per gli esempi del servizio di calcolatrice.
+Si tratta di un esempio wsdl/schema per gli esempi di servizio calculator.
 
-## <a name="calculatorwsdl"></a>Calculator. WSDL
+## <a name="calculatorwsdl"></a>Calculator.wsdl
 
 ``` syntax
 <wsdl:definitions 
@@ -122,9 +122,9 @@ Questo è un esempio di WSDL/schema per gli esempi del servizio di calcolatrice.
 </wsdl:definitions>
 ```
 
- 
+ 
 
- 
+ 
 
 
 

@@ -1,8 +1,8 @@
 ---
-description: La \_ classe WMI dell'associazione ClientApplicationSetting Win32 mette in correlazione un file eseguibile e un'applicazione Component Object Model (com) che contiene le opzioni di configurazione com per il file eseguibile.
+description: La classe WMI di associazione Win32 ClientApplicationSetting mette in relazione un file eseguibile e un'applicazione Component Object Model (COM) che contiene le opzioni di configurazione COM per \_ il file eseguibile.
 ms.assetid: c43d80ee-0f29-4452-b51f-f18543bc1d35
 ms.tgt_platform: multiple
-title: Classe Win32_ClientApplicationSetting
+title: Win32_ClientApplicationSetting classe
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -16,18 +16,18 @@ api_type:
 - DllExport
 api_location:
 - CIMWin32.dll
-ms.openlocfilehash: fda1f1305904fa919bb2080fe5de02f0e5850a8a
-ms.sourcegitcommit: c7add10d695482e1ceb72d62b8a4ebd84ea050f7
+ms.openlocfilehash: 359478d7cf6069e17ae02358f4ea48ffc44169f6822f4f8b3e33dad332fab020
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "103966271"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119546371"
 ---
-# <a name="win32_clientapplicationsetting-class"></a>Win32 \_ ClientApplicationSetting (classe)
+# <a name="win32_clientapplicationsetting-class"></a>Classe ClientApplicationSetting Win32 \_
 
-La [classe WMI](/windows/desktop/WmiSdk/retrieving-a-class) dell'associazione **\_ ClientApplicationSetting Win32** mette in correlazione un file eseguibile e un'applicazione Component Object Model (com) che contiene le opzioni di configurazione com per il file eseguibile.
+La classe [WMI](/windows/desktop/WmiSdk/retrieving-a-class) di associazione **\_ Win32 ClientApplicationSetting** mette in relazione un file eseguibile e un'applicazione Component Object Model (COM) che contiene le opzioni di configurazione COM per il file eseguibile.
 
-La sintassi seguente è semplificata dal codice MOF (Managed Object Format) e include tutte le proprietà ereditate. Le proprietà sono elencate in ordine alfabetico e non in ordine MOF.
+La sintassi seguente è semplificata dal codice MOF (Managed Object Format) e include tutte le proprietà ereditate. Le proprietà sono elencate in ordine alfabetico, non in ordine MOF.
 
 ## <a name="syntax"></a>Sintassi
 
@@ -42,13 +42,13 @@ class Win32_ClientApplicationSetting
 
 ## <a name="members"></a>Members
 
-La classe **Win32 \_ ClientApplicationSetting** presenta questi tipi di membri:
+La **classe Win32 \_ ClientApplicationSetting** ha questi tipi di membri:
 
 -   [Proprietà](#properties)
 
 ### <a name="properties"></a>Proprietà
 
-La classe **Win32 \_ ClientApplicationSetting** dispone di queste proprietà.
+La **classe Win32 \_ ClientApplicationSetting** ha queste proprietà.
 
 <dl> <dt>
 
@@ -61,7 +61,7 @@ Tipo di dati: **Win32 \_ DCOMApplication**
 Tipo di accesso: sola lettura
 </dt> <dt>
 
-Qualificatori: [**Key**](/windows/desktop/WmiSdk/key-qualifier), [**MappingStrings**](/windows/desktop/WmiSdk/standard-qualifiers) ("WMI \| Win32 \_ DCOMApplication")
+Qualificatori: [**key**](/windows/desktop/WmiSdk/key-qualifier), [**MappingStrings**](/windows/desktop/WmiSdk/standard-qualifiers) ("WMI \| Win32 \_ DCOMApplication")
 </dt> </dl>
 
 Riferimento all'istanza di che rappresenta l'applicazione COM che contiene le opzioni di configurazione del file eseguibile.
@@ -71,13 +71,13 @@ Riferimento all'istanza di che rappresenta l'applicazione COM che contiene le op
 **Client**
 </dt> <dd> <dl> <dt>
 
-Tipo di dati **: \_ DataFile CIM**
+Tipo di dati: **CIM \_ DataFile**
 </dt> <dt>
 
 Tipo di accesso: sola lettura
 </dt> <dt>
 
-Qualificatori: [**Key**](/windows/desktop/WmiSdk/key-qualifier), [**MappingStrings**](/windows/desktop/WmiSdk/standard-qualifiers) (" \| DataFile CIM CIM \_ ")
+Qualificatori: [**key**](/windows/desktop/WmiSdk/key-qualifier), [**MappingStrings**](/windows/desktop/WmiSdk/standard-qualifiers) \| ("CIM CIM \_ DataFile")
 </dt> </dl>
 
 Riferimento all'istanza di che rappresenta il file eseguibile che utilizza le impostazioni COM.
@@ -86,7 +86,7 @@ Riferimento all'istanza di che rappresenta il file eseguibile che utilizza le im
 
 ## <a name="remarks"></a>Commenti
 
-**Win32 \_ ClientApplicationSetting** non supporta l'enumerazione.
+**Win32 \_ ClientApplicationSetting non** supporta l'enumerazione.
 
 ## <a name="requirements"></a>Requisiti
 
@@ -97,7 +97,7 @@ Riferimento all'istanza di che rappresenta il file eseguibile che utilizza le im
 | Client minimo supportato<br/> | Windows Vista<br/>                                                                |
 | Server minimo supportato<br/> | Windows Server 2008<br/>                                                          |
 | Spazio dei nomi<br/>                | \\CIMV2 radice<br/>                                                                  |
-| MOF<br/>                      | <dl> <dt>CIMWin32. mof</dt> </dl> |
+| MOF<br/>                      | <dl> <dt>CIMWin32.mof</dt> </dl> |
 | DLL<br/>                      | <dl> <dt>CIMWin32.dll</dt> </dl> |
 
 

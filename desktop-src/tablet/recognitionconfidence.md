@@ -1,7 +1,7 @@
 ---
-description: Indica il livello di confidenza del IInkAnalyzer nell'accuratezza del risultato del riconoscimento.
+description: Indica il livello di attendibilità di IInkAnalyzer nell'accuratezza del risultato del riconoscimento.
 ms.assetid: fd4fc350-b4db-4f9a-a5ae-00065e33606c
-title: Enumerazione RecognitionConfidence (IACom. h)
+title: Enumerazione RecognitionConfidence (IACom.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -13,16 +13,16 @@ api_type:
 - HeaderDef
 api_location:
 - IACom.h
-ms.openlocfilehash: e0358aacf789c391d99c10fc0fea64670dc4710e
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: b5943b303c01a681b1df9d6d919df1822a5f2345c85fb5c52e3ab865ee58dd0f
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "106318687"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119596631"
 ---
 # <a name="recognitionconfidence-enumeration"></a>Enumerazione RecognitionConfidence
 
-Indica il livello di confidenza del [**IInkAnalyzer**](iinkanalyzer.md) nell'accuratezza del risultato del riconoscimento.
+Indica il livello di attendibilità di [**IInkAnalyzer**](iinkanalyzer.md) nell'accuratezza del risultato del riconoscimento.
 
 ## <a name="syntax"></a>Sintassi
 
@@ -42,37 +42,37 @@ typedef enum RecognitionConfidence {
 
 <dl> <dt>
 
-<span id="RecognitionConfidence_Strong"></span><span id="recognitionconfidence_strong"></span><span id="RECOGNITIONCONFIDENCE_STRONG"></span>**RecognitionConfidence \_ forte**
+<span id="RecognitionConfidence_Strong"></span><span id="recognitionconfidence_strong"></span><span id="RECOGNITIONCONFIDENCE_STRONG"></span>**RecognitionConfidence \_ Strong**
 </dt> <dd>
 
-Confidenza assoluta nel risultato o in alternativa.
+Attendibilità totale nel risultato o alternativa.
 
 </dd> <dt>
 
-<span id="RecognitionConfidence_Intermediate"></span><span id="recognitionconfidence_intermediate"></span><span id="RECOGNITIONCONFIDENCE_INTERMEDIATE"></span>**RecognitionConfidence \_ intermedio**
+<span id="RecognitionConfidence_Intermediate"></span><span id="recognitionconfidence_intermediate"></span><span id="RECOGNITIONCONFIDENCE_INTERMEDIATE"></span>**RecognitionConfidence \_ Intermediate**
 </dt> <dd>
 
-Confidenza intermedia nel risultato o in alternativa.
+Attendibilità intermedia nel risultato o alternativa.
 
 </dd> <dt>
 
-<span id="RecognitionConfidence_Poor"></span><span id="recognitionconfidence_poor"></span><span id="RECOGNITIONCONFIDENCE_POOR"></span>**RecognitionConfidence \_ poor**
+<span id="RecognitionConfidence_Poor"></span><span id="recognitionconfidence_poor"></span><span id="RECOGNITIONCONFIDENCE_POOR"></span>**RecognitionConfidence \_ Poor**
 </dt> <dd>
 
-Scarsa confidenza nel risultato o in alternativa.
+Scarsa attendibilità nel risultato o alternativa.
 
 </dd> <dt>
 
-<span id="RecognitionConfidence_Unknown"></span><span id="recognitionconfidence_unknown"></span><span id="RECOGNITIONCONFIDENCE_UNKNOWN"></span>**RecognitionConfidence \_ sconosciuto**
+<span id="RecognitionConfidence_Unknown"></span><span id="recognitionconfidence_unknown"></span><span id="RECOGNITIONCONFIDENCE_UNKNOWN"></span>**RecognitionConfidence \_ Unknown**
 </dt> <dd>
 
-Il [**IInkAnalysisRecognizer**](iinkanalysisrecognizer.md) che ha generato il testo riconosciuto non supporta i livelli di confidenza.
+[**IInkAnalysisRecognizer**](iinkanalysisrecognizer.md) che ha generato il testo riconosciuto non supporta i livelli di attendibilità.
 
 </dd> </dl>
 
 ## <a name="remarks"></a>Commenti
 
-[**IInkAnalyzer**](iinkanalyzer.md) utilizza uno o più oggetti [**IInkAnalysisRecognizer**](iinkanalysisrecognizer.md) per convertire la grafia in testo.
+[**IInkAnalyzer**](iinkanalyzer.md) usa uno o più [**oggetti IInkAnalysisRecognizer**](iinkanalysisrecognizer.md) per convertire la grafia in testo.
 
 ## <a name="requirements"></a>Requisiti
 
@@ -80,9 +80,9 @@ Il [**IInkAnalysisRecognizer**](iinkanalysisrecognizer.md) che ha generato il te
 
 | Requisito | Valore |
 |-------------------------------------|---------------------------------------------------------------------------------------------------------------|
-| Client minimo supportato<br/> | Solo app desktop Windows XP Tablet PC Edition \[\]<br/>                                                 |
+| Client minimo supportato<br/> | Windows Solo app desktop tablet PC Edition \[ XP\]<br/>                                                 |
 | Server minimo supportato<br/> | Nessuno supportato<br/>                                                                                     |
-| Intestazione<br/>                   | <dl> <dt>IACom. h (richiede anche IACom \_ i. c)</dt> </dl> |
+| Intestazione<br/>                   | <dl> <dt>IACom.h (richiede anche IACom \_ i.c)</dt> </dl> |
 
 
 
@@ -90,16 +90,16 @@ Il [**IInkAnalysisRecognizer**](iinkanalysisrecognizer.md) che ha generato il te
 
 <dl> <dt>
 
-[**Metodo IAnalysisAlternate:: GetRecognitionConfidence**](ianalysisalternate-getrecognitionconfidence.md)
+[**Metodo IAnalysisAlternate::GetRecognitionConfidence**](ianalysisalternate-getrecognitionconfidence.md)
 </dt> <dt>
 
-[**IContextNode:: GetPropertyData**](icontextnode-getpropertydata.md)
+[**IContextNode::GetPropertyData**](icontextnode-getpropertydata.md)
 </dt> <dt>
 
 [Proprietà del nodo di contesto](context-node-properties.md)
 </dt> <dt>
 
-[Riferimento all'analisi dell'input penna](ink-analysis-reference.md)
+[Informazioni di riferimento per l'analisi dell'input penna](ink-analysis-reference.md)
 </dt> </dl>
 
  

@@ -1,15 +1,15 @@
 ---
 description: Inviato da IMFMediaSource che incapsula il dispositivo per indicare che il dispositivo è stato rimosso.
 ms.assetid: 107AFF19-B444-4B62-9217-46A99AC3632C
-title: Evento MEVideoCaptureDeviceRemoved (Mfobjects. h)
+title: Evento MEVideoCaptureDeviceRemoved (Mfobjects.h)
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 8e3276f53f86bdce78825b94828577eab9e40954
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: f209dc4be6e8f45639b060de1328cb04c932463f6b76355b7538b5649a69634e
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "106315044"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120013481"
 ---
 # <a name="mevideocapturedeviceremoved-event"></a>Evento MEVideoCaptureDeviceRemoved
 
@@ -17,13 +17,13 @@ Inviato da [**IMFMediaSource**](/windows/desktop/api/mfidl/nn-mfidl-imfmediasour
 
 ## <a name="event-values"></a>Valori dell'evento
 
-I valori possibili recuperati da [**IMFMediaEvent:: GetValue**](/windows/desktop/api/mfobjects/nf-mfobjects-imfmediaevent-getvalue) includono i seguenti.
+I valori possibili recuperati [**da IMFMediaEvent::GetValue**](/windows/desktop/api/mfobjects/nf-mfobjects-imfmediaevent-getvalue) includono i seguenti.
 
 
 
 | VARTYPE               | Descrizione                           |
 |-----------------------|---------------------------------------|
-| VT \_ vuoto <br/> | Nessun dato dell'evento.<br/> <br/> |
+| VT \_ EMPTY <br/> | Nessun dato dell'evento.<br/> <br/> |
 
 
 
@@ -37,9 +37,9 @@ Questo evento viene inviato da [**IMFMediaSource**](/windows/desktop/api/mfidl/n
 
 | Requisito | Valore |
 |-------------------------------------|----------------------------------------------------------------------------------------------------------|
-| Client minimo supportato<br/> | \[Solo app desktop di Windows 8\]<br/>                                                               |
-| Server minimo supportato<br/> | \[Solo app desktop Windows Server 2012\]<br/>                                                     |
-| Intestazione<br/>                   | <dl> <dt>Mfobjects. h (include Mfidl. h)</dt> </dl> |
+| Client minimo supportato<br/> | \[Windows 8 solo app desktop\]<br/>                                                               |
+| Server minimo supportato<br/> | \[Windows Server 2012 solo app desktop\]<br/>                                                     |
+| Intestazione<br/>                   | <dl> <dt>Mfobjects.h (includere Mfidl.h)</dt> </dl> |
 
 
 
@@ -47,7 +47,7 @@ Questo evento viene inviato da [**IMFMediaSource**](/windows/desktop/api/mfidl/n
 
 <dl> <dt>
 
-[Eventi Media Foundation](media-foundation-events.md)
+[Media Foundation eventi](media-foundation-events.md)
 </dt> </dl>
 
  

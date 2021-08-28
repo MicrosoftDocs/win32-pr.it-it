@@ -3,15 +3,15 @@ title: AuthenticationLevel
 description: Imposta il livello di autenticazione per le applicazioni che non chiamano CoInitializeSecurity o per le applicazioni che chiamano CoInitializeSecurity e specificano un AppID.
 ms.assetid: 137cbffe-6f45-43f4-bf35-b064b3607fcc
 keywords:
-- Valore AuthenticationLevel del registro di sistema COM
+- Valore del Registro di sistema AuthenticationLevel COM
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 697b04bcf4992c8a6943bcb515fa0a4eae616fec
-ms.sourcegitcommit: 2d531328b6ed82d4ad971a45a5131b430c5866f7
+ms.openlocfilehash: 7968382ea97243c1116dd6785be34a0d1c3e6eafc6cb9ee13f16b939029a6611
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "104332636"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120120531"
 ---
 # <a name="authenticationlevel"></a>AuthenticationLevel
 
@@ -21,37 +21,37 @@ Imposta il livello di autenticazione per le applicazioni che non chiamano [**CoI
 
 ```
 HKEY_LOCAL_MACHINE\SOFTWARE\Classes\AppID
-   {AppID_GUID}
-      AuthenticationLevel = value
+   {AppID_GUID}
+      AuthenticationLevel = value
 ```
 
 ## <a name="remarks"></a>Commenti
 
-Si tratta di un valore **reg \_ DWORD** equivalente alle \_ costanti del \_ livello auth C RPC \_ .
+Si tratta di **un \_ valore DWORD REG** equivalente alle costanti RPC C \_ \_ AUTHN \_ LEVEL.
 
 
 
 | Valore | Costante                             |
 |-------|--------------------------------------|
-| 1     | \_ \_ livello auth C \_ RPC \_           |
-| 2     | \_connessione a \_ livello auth \_ C \_ RPC        |
-| 3     | \_chiamata al \_ livello auth \_ C \_ RPC           |
-| 4     | \_ \_ \_ PKT livello auth C RPC \_            |
-| 5     | \_ \_ \_ integrità PKT del livello auth \_ C \_ RPC |
-| 6     | \_ \_ \_ privacy PKT a livello di autenticazione C \_ RPC \_   |
+| 1     | RPC \_ C \_ AUTHN \_ LEVEL \_ NONE           |
+| 2     | RPC \_ C \_ AUTHN \_ LEVEL \_ CONNECT        |
+| 3     | CHIAMATA A LIVELLO DI AUTENTICAZIONE \_ RPC C \_ \_ \_           |
+| 4     | PKT \_ DI LIVELLO RPC C \_ AUTHN \_ \_            |
+| 5     | INTEGRITÀ \_ \_ PKT A \_ LIVELLO DI \_ AUTENTICAZIONE \_ RPC C |
+| 6     | PRIVACY PKT DI LIVELLO \_ RPC C \_ AUTHN \_ \_ \_   |
 
 
 
- 
+ 
 
-Il valore di **AuthenticationLevel** è simile al valore di [**LegacyAuthenticationLevel**](legacyauthenticationlevel.md) . Se il valore **AuthenticationLevel** è presente, viene usato al posto del valore **LegacyAuthenticationLevel** per tale AppID.
+Il **valore AuthenticationLevel** è simile al [**valore LegacyAuthenticationLevel.**](legacyauthenticationlevel.md) Se il **valore AuthenticationLevel** è presente, viene usato al posto del **valore LegacyAuthenticationLevel** per l'AppID.
 
-Se il valore **AuthenticationLevel** è di tipo errato o non è compreso nell'intervallo, [**CoInitializeSecurity**](/windows/desktop/api/combaseapi/nf-combaseapi-coinitializesecurity) ha esito negativo, causando l'esito negativo del marshalling dell'interfaccia. In questo modo si impedisce all'applicazione di effettuare tutte le chiamate (Cross-Apartment, cross-thread, tra processi o tra computer).
+Se il **valore AuthenticationLevel** è di tipo errato o non è compreso nell'intervallo, [**CoInitializeSecurity**](/windows/desktop/api/combaseapi/nf-combaseapi-coinitializesecurity) ha esito negativo, causando l'esito negativo del marshalling dell'interfaccia. In questo modo l'applicazione non effettua alcuna chiamata (cross-apartment, cross-thread, cross-process o cross-computer).
 
-I valori **AuthenticationLevel** e [**AccessPermission**](accesspermission.md) sono indipendenti. Se non è presente, viene usato il valore predefinito. Le regole seguenti elencano l'interazione tra il valore di **AuthenticationLevel** e il valore di **AccessPermission** :
+I **valori AuthenticationLevel** e [**AccessPermission**](accesspermission.md) sono indipendenti. Se non ne è presente uno, viene usato il valore predefinito. Le regole seguenti elencano l'interazione tra **il valore AuthenticationLevel** e il **valore AccessPermission:**
 
--   Se **AuthenticationLevel** è None, i valori [**AccessPermission**](accesspermission.md) e [**DefaultAccessPermission**](defaultaccesspermission.md) vengono ignorati (per tale applicazione).
--   Se **AuthenticationLevel** non è presente e [**LegacyAuthenticationLevel**](legacyauthenticationlevel.md) è None, i valori [**AccessPermission**](accesspermission.md) e [**DefaultAccessPermission**](defaultaccesspermission.md) vengono ignorati (per tale applicazione).
+-   Se **AuthenticationLevel è** NONE, i [**valori AccessPermission**](accesspermission.md) e [**DefaultAccessPermission**](defaultaccesspermission.md) vengono ignorati (per l'applicazione).
+-   Se **AuthenticationLevel non** è presente e [**LegacyAuthenticationLevel**](legacyauthenticationlevel.md) è NONE, i [**valori AccessPermission**](accesspermission.md) e [**DefaultAccessPermission**](defaultaccesspermission.md) vengono ignorati (per l'applicazione).
 
 ## <a name="related-topics"></a>Argomenti correlati
 
@@ -69,9 +69,9 @@ I valori **AuthenticationLevel** e [**AccessPermission**](accesspermission.md) s
 [Sicurezza in COM](security-in-com.md)
 </dt> </dl>
 
- 
+ 
 
- 
+ 
 
 
 

@@ -1,17 +1,17 @@
 ---
-description: Windows Search costanti ed enumerazioni
+description: Windows Costanti ed enumerazioni di ricerca
 ms.assetid: 27b25e6b-49e6-4c70-947e-d67bd1335924
-title: Windows Search costanti ed enumerazioni
+title: Windows Costanti ed enumerazioni di ricerca
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 6b18cee15be8bc9cec3bae22b55da6e6bf6c4624
-ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
+ms.openlocfilehash: a4afc7ad8d1659921a3605e1f27b95e5b2303ad69a75e1807a230c9b21733523
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/28/2021
-ms.locfileid: "108104679"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119594931"
 ---
-# <a name="windows-search-constants-and-enumerations"></a>Windows Search costanti ed enumerazioni
+# <a name="windows-search-constants-and-enumerations"></a>Windows Costanti ed enumerazioni di ricerca
 
 
 Questa sezione documenta le costanti e le enumerazioni seguenti:
@@ -56,7 +56,7 @@ Questa sezione documenta le costanti e le enumerazioni seguenti:
 
 [**ACCESSO \_ PROXY**](/windows/desktop/api/Searchapi/ne-searchapi-proxy_access)
 
-[**OPZIONE \_ GESTIONE PARSER \_ \_ QUERY**](/windows/win32/api/structuredquery/ne-structuredquery-query_parser_manager_option)
+[**OPZIONE \_ DI GESTIONE \_ PARSER DI \_ QUERY**](/windows/win32/api/structuredquery/ne-structuredquery-query_parser_manager_option)
 
 [**ROWSETEVENT \_ ITEMSTATE**](/windows/win32/api/searchapi/ne-searchapi-rowsetevent_itemstate)
 
@@ -64,17 +64,17 @@ Questa sezione documenta le costanti e le enumerazioni seguenti:
 
 [**FASE \_ DI INDICIZZAZIONE DELLA \_ RICERCA**](/windows/desktop/api/Searchapi/ne-searchapi-search_indexing_phase)
 
-[**TIPO \_ DI RICERCA DI \_ \_ MODIFICA**](/windows/desktop/api/Searchapi/ne-searchapi-search_kind_of_change)
+[**TIPO \_ DI MODIFICA DI \_ \_ RICERCA**](/windows/desktop/api/Searchapi/ne-searchapi-search_kind_of_change)
 
-[**SEARCH \_ NOTIFICATION \_ PRIORITY**](/windows/desktop/api/Searchapi/ne-searchapi-search_notification_priority)
+[**PRIORITÀ \_ DELLE NOTIFICHE DI \_ RICERCA**](/windows/desktop/api/Searchapi/ne-searchapi-search_notification_priority)
 
 [**SINTASSI \_ DELLE QUERY \_ DI RICERCA**](/windows/desktop/api/Searchapi/ne-searchapi-search_query_syntax)
 
-[**ESPANSIONE DEI \_ TERMINI \_ DI RICERCA**](/windows/desktop/api/Searchapi/ne-searchapi-search_term_expansion)
+[**ESPANSIONE \_ DEI TERMINI DI \_ RICERCA**](/windows/desktop/api/Searchapi/ne-searchapi-search_term_expansion)
 
-[**STRUCTURED \_ QUERY \_ MULTIOPTION**](/windows/win32/api/structuredquery/ne-structuredquery-structured_query_multioption)
+[**MULTIOPTION \_ \_ PER QUERY STRUTTURATE**](/windows/win32/api/structuredquery/ne-structuredquery-structured_query_multioption)
 
-[**ERRORE DI \_ ANALISI \_ QUERY \_ STRUTTURATA**](/windows/win32/api/structuredquery/ne-structuredquery-structured_query_parse_error)
+[**ERRORE \_ DI ANALISI QUERY \_ \_ STRUTTURATA**](/windows/win32/api/structuredquery/ne-structuredquery-structured_query_parse_error)
 
 [**OPZIONE STRUCTURED \_ QUERY \_ RESOLVE \_**](/windows/desktop/api/Structuredquery/ne-structuredquery-structured_query_resolve_option)
 

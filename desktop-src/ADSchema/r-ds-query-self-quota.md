@@ -1,10 +1,10 @@
 ---
-title: DS-query-auto-quota estesa a destra
-description: Controllare l'accesso a destra che consente a un utente di eseguire query sulle quote dell'utente.
+title: Diritto esteso DS-Query-Self-Quota
+description: Diritto di accesso di controllo che consente a un utente di eseguire query sulle quote dell'utente.
 ms.assetid: 4cd1523b-8026-454e-9d10-e07d2fb24cea
 ms.tgt_platform: multiple
 keywords:
-- DS-query-schema AD esteso a destra con quota automatica
+- Schema ad Active Directory esteso DS-Query-Self-Quota
 topic_type:
 - apiref
 api_name:
@@ -13,23 +13,23 @@ api_type:
 - Schema
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 4d1bd8e0bcfe5de174b0725d7081df641841068f
-ms.sourcegitcommit: b77ace27b0432e7cd3863191b11926be032fbe2f
+ms.openlocfilehash: 56a45460631ed42729de12870ff2843a885a9afd0a9338ba09c0536965873bd0
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/14/2020
-ms.locfileid: "104123117"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119702801"
 ---
-# <a name="ds-query-self-quota-extended-right"></a>DS-query-auto-quota estesa a destra
+# <a name="ds-query-self-quota-extended-right"></a>Diritto esteso DS-Query-Self-Quota
 
-Controllare l'accesso a destra che consente a un utente di eseguire query sulle quote dell'utente.
+Diritto di accesso di controllo che consente a un utente di eseguire query sulle quote dell'utente.
 
 
 
 | Voce | Valore |
 |--------------|--------------------------------------|
-| CN           | DS-query-auto-quota                  |
-| Display-Name | Query di quota automatica                     |
+| CN           | DS-Query-Self-Quota                  |
+| Display-Name | Quota self-query                     |
 | Rights-GUID  | 4ecc03fe-ffc0-4947-b630-eb672a8a9dbc |
 
 
@@ -37,7 +37,7 @@ Controllare l'accesso a destra che consente a un utente di eseguire query sulle 
 ## <a name="implementations"></a>Implementazioni
 
 -   [**Windows Server 2003**](#windows-server-2003)
--   [**ADAM**](#adam)
+-   [**Adam**](#adam)
 -   [**Windows Server 2003 R2**](#windows-server-2003-r2)
 -   [**Windows Server 2008**](#windows-server-2008)
 -   [**Windows Server 2008 R2**](#windows-server-2008-r2)
@@ -49,19 +49,19 @@ Controllare l'accesso a destra che consente a un utente di eseguire query sulle 
 
 | Voce | Valore |
 |-------------------------|-------------------------------------------------------------------|
-| Applies-To              | [**ms-DS-quota-contenitore**](c-msds-quotacontainer.md)<br/> |
-| Localization-display-ID | 71                                                                |
+| Applies-To              | [**ms-DS-Quota-Container**](c-msds-quotacontainer.md)<br/> |
+| Localization-Display-ID | 71                                                                |
 
 
 
-## <a name="adam"></a>ADAM
+## <a name="adam"></a>Adam
 
 
 
 | Voce | Valore |
 |-------------------------|-------------------------------------------------------------------|
-| Applies-To              | [**ms-DS-quota-contenitore**](c-msds-quotacontainer.md)<br/> |
-| Localization-display-ID | 71                                                                |
+| Applies-To              | [**ms-DS-Quota-Container**](c-msds-quotacontainer.md)<br/> |
+| Localization-Display-ID | 71                                                                |
 
 
 
@@ -71,8 +71,8 @@ Controllare l'accesso a destra che consente a un utente di eseguire query sulle 
 
 | Voce | Valore |
 |-------------------------|-------------------------------------------------------------------|
-| Applies-To              | [**ms-DS-quota-contenitore**](c-msds-quotacontainer.md)<br/> |
-| Localization-display-ID | 71                                                                |
+| Applies-To              | [**ms-DS-Quota-Container**](c-msds-quotacontainer.md)<br/> |
+| Localization-Display-ID | 71                                                                |
 
 
 
@@ -82,8 +82,8 @@ Controllare l'accesso a destra che consente a un utente di eseguire query sulle 
 
 | Voce | Valore |
 |-------------------------|-------------------------------------------------------------------|
-| Applies-To              | [**ms-DS-quota-contenitore**](c-msds-quotacontainer.md)<br/> |
-| Localization-display-ID | 71                                                                |
+| Applies-To              | [**ms-DS-Quota-Container**](c-msds-quotacontainer.md)<br/> |
+| Localization-Display-ID | 71                                                                |
 
 
 
@@ -93,8 +93,8 @@ Controllare l'accesso a destra che consente a un utente di eseguire query sulle 
 
 | Voce | Valore |
 |-------------------------|-------------------------------------------------------------------|
-| Applies-To              | [**ms-DS-quota-contenitore**](c-msds-quotacontainer.md)<br/> |
-| Localization-display-ID | 71                                                                |
+| Applies-To              | [**ms-DS-Quota-Container**](c-msds-quotacontainer.md)<br/> |
+| Localization-Display-ID | 71                                                                |
 
 
 
@@ -104,8 +104,8 @@ Controllare l'accesso a destra che consente a un utente di eseguire query sulle 
 
 | Voce | Valore |
 |-------------------------|-------------------------------------------------------------------|
-| Applies-To              | [**ms-DS-quota-contenitore**](c-msds-quotacontainer.md)<br/> |
-| Localization-display-ID | 71                                                                |
+| Applies-To              | [**ms-DS-Quota-Container**](c-msds-quotacontainer.md)<br/> |
+| Localization-Display-ID | 71                                                                |
 
 
 

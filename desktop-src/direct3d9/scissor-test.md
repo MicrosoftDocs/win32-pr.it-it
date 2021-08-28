@@ -1,25 +1,25 @@
 ---
-description: Il test a forbice esegue il ritaglio dei pixel esterni al rettangolo della forbice, una sottosezione rettangolare definita dall'utente della destinazione di rendering.
+description: Il test di forbice culla i pixel esterni al rettangolo di forbice, una sottosezioni rettangolare definita dall'utente della destinazione di rendering.
 ms.assetid: deff4f54-4a2f-4d9a-98a7-a69d5fc0853d
-title: Test a forbice (Direct3D 9)
+title: Test di scissor (Direct3D 9)
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 66c4298182ab2bb6302c19111e2970d23cef311d
-ms.sourcegitcommit: a47bd86f517de76374e4fff33cfeb613eb259a7e
+ms.openlocfilehash: f1d44b7670d67e7944e9d6e2587ed0011a6244eecef509495b90c71ff0753073
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/06/2021
-ms.locfileid: "106304376"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119746517"
 ---
-# <a name="scissor-test-direct3d-9"></a>Test a forbice (Direct3D 9)
+# <a name="scissor-test-direct3d-9"></a>Test di scissor (Direct3D 9)
 
-Il test a forbice esegue il ritaglio dei pixel esterni al rettangolo della forbice, una sottosezione rettangolare definita dall'utente della destinazione di rendering.
+Il test di forbice culla i pixel esterni al rettangolo di forbice, una sottosezioni rettangolare definita dall'utente della destinazione di rendering.
 
-Il rettangolo a forbice può essere usato per indicare l'area della destinazione di rendering in cui viene disegnato il mondo del gioco. L'area esterna al rettangolo viene abbattuti e potrebbe essere dedicata all'interfaccia utente grafica del gioco. Il test a forbice non può eliminare aree non rettangolari.
+Il rettangolo di forbice può essere usato per indicare l'area della destinazione di rendering in cui viene disegnato il mondo del gioco. L'area esterna al rettangolo è culled e può essere dedicata all'interfaccia utente grafica di un gioco. Il test di forbice non può eliminare aree non rettangolari.
 
-I rettangoli a forbice non possono essere impostati su un numero maggiore rispetto alla destinazione di rendering, ma possono essere impostati su un numero maggiore rispetto al viewport.
+I rettangoli di forbice non possono essere impostati più grandi della destinazione di rendering, ma possono essere impostati più grandi del viewport.
 
-Il rettangolo a forbice è gestito da uno stato di rendering del dispositivo. Un test a forbice viene abilitato o disabilitato impostando RenderState su **true** o **false**. Questo test viene eseguito dopo il calcolo del colore del frammento ma prima del test alfa. [**IDirect3DDevice9:: SetRenderTarget**](/windows/desktop/api) Reimposta il rettangolo della forbice sulla destinazione di rendering completa, analoga alla reimpostazione del viewport. [**IDirect3DDevice9:: SetScissorRect**](/windows/desktop/api) viene registrato da Stateblocks e [**IDirect3DDevice9:: CreateStateBlock**](/windows/desktop/api) con l'impostazione All State (D3DSBT \_ All value in [**D3DSTATEBLOCKTYPE**](./d3dstateblocktype.md)). Il test a forbice influisca anche sull'operazione [**IDirect3DDevice9:: Clear**](/windows/win32/api/d3d9helper/nf-d3d9helper-idirect3ddevice9-clear) del dispositivo.
+Il rettangolo di forbice è gestito da uno stato di rendering del dispositivo. Un test di scissor viene abilitato o disabilitato impostando renderstate su **TRUE** o **FALSE.** Questo test viene eseguito dopo il calcolo del colore del frammento, ma prima del test alfa. [**IDirect3DDevice9::SetRenderTarget**](/windows/desktop/api) reimposta il rettangolo di forbice sulla destinazione di rendering completa, analogamente alla reimpostazione del viewport. [**IDirect3DDevice9::SetScissorRect**](/windows/desktop/api) viene registrato da stateblocks e [**IDirect3DDevice9::CreateStateBlock con**](/windows/desktop/api) l'impostazione all state (valore D3DSBT \_ ALL in [**D3DSTATEBLOCKTYPE).**](./d3dstateblocktype.md) Il test di scissor influisce anche [**sull'operazione IDirect3DDevice9::Clear del**](/windows/win32/api/d3d9helper/nf-d3d9helper-idirect3ddevice9-clear) dispositivo.
 
 
 ```
@@ -36,17 +36,17 @@ D3D9CAPS.RasterCaps -> D3DPRASTERCAPS_SCISSORTEST;
 
 
 
-Il rettangolo a forbice predefinito è il viewport completo.
+Il rettangolo di forbice predefinito è il riquadro di visualizzazione completo.
 
-Il test a forbice viene eseguito subito dopo il completamento dell'elaborazione dei pixel da parte di un pixel shader o della pipeline della funzione fissa, come illustrato nella figura seguente.
+Il test dello scissor viene eseguito subito dopo il completamento dell'elaborazione pixel da un pixel shader o dalla pipeline di funzioni fisse, come illustrato nel diagramma seguente.
 
-![diagramma del momento in cui viene eseguito il test a forbice rispetto ad altri passaggi](images/scissor-test.png)
+![diagramma del momento in cui viene eseguito il test delle forbici rispetto ad altri passaggi](images/scissor-test.png)
 
 ## <a name="related-topics"></a>Argomenti correlati
 
 <dl> <dt>
 
-[Pipeline pixel](pixel-pipeline.md)
+[Pixel Pipeline](pixel-pipeline.md)
 </dt> </dl>
 
  

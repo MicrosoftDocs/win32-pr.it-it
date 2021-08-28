@@ -1,17 +1,17 @@
 ---
 description: Numero di messaggi non letti nel dispositivo.
 ms.assetid: 309700af-c5b7-48a6-a85f-763452f586ad
-title: System. Devices. TextMessages
+title: System.Devices.TextMessages
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: d2bc26513957bbeca7a96f136874f95d586852ac
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: d5bdafbd430d8b373fb713a8be8969a361dfe11075ca712a115fef4e96967e41
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "106313498"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119599151"
 ---
-# <a name="systemdevicestextmessages"></a>System. Devices. TextMessages
+# <a name="systemdevicestextmessages"></a>System.Devices.TextMessages
 
 Numero di messaggi non letti nel dispositivo.
 
@@ -107,7 +107,7 @@ propertyDescription
 
 ## <a name="remarks"></a>Commenti
 
-I valori PKEY sono definiti in Propkey. h.
+I valori PKEY sono definiti in Propkey.h.
 
 ## <a name="related-topics"></a>Argomenti correlati
 
@@ -122,13 +122,13 @@ I valori PKEY sono definiti in Propkey. h.
 [labelInfo](./propdesc-schema-labelinfo.md)
 </dt> <dt>
 
-[typeInfo](./propdesc-schema-typeinfo.md)
+[Typeinfo](./propdesc-schema-typeinfo.md)
 </dt> <dt>
 
 [displayInfo](./propdesc-schema-displayinfo.md)
 </dt> <dt>
 
-[stringFormat](./propdesc-schema-stringformat.md)
+[Stringformat](./propdesc-schema-stringformat.md)
 </dt> <dt>
 
 [booleanFormat](./propdesc-schema-booleanformat.md)
@@ -137,7 +137,7 @@ I valori PKEY sono definiti in Propkey. h.
 [numberFormat](./propdesc-schema-numberformat.md)
 </dt> <dt>
 
-[dateTimeFormat](./propdesc-schema-datetimeformat.md)
+[Datetimeformat](./propdesc-schema-datetimeformat.md)
 </dt> <dt>
 
 [enumeratedList](./propdesc-schema-enumeratedlist.md)

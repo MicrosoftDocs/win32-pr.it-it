@@ -1,6 +1,6 @@
 ---
-description: 'Altre informazioni su: metodo API. RetrieveColumnAsByte'
-title: API. RetrieveColumnAsByte, metodo
+description: Altre informazioni sul metodo Api.RetrieveColumnAsByte
+title: Metodo Api.RetrieveColumnAsByte
 TOCTitle: 'RetrieveColumnAsByte method '
 ms:assetid: Overload:Microsoft.Isam.Esent.Interop.Api.RetrieveColumnAsByte
 ms:mtpsurl: https://msdn.microsoft.com/library/microsoft.isam.esent.interop.api.retrievecolumnasbyte(v=EXCHG.10)
@@ -14,17 +14,17 @@ dev_langs:
 - JScript
 - VB
 - other
-ms.openlocfilehash: 20a995f31a062586bf931e06e045aa00483af8dd
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: f90fe2f4cd254e5ee603cb47a6224914007a96c070a25b76cf27c09223dd07dd
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "104568651"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "117902438"
 ---
-# <a name="apiretrievecolumnasbyte-method"></a>API. RetrieveColumnAsByte, metodo
+# <a name="apiretrievecolumnasbyte-method"></a>Metodo Api.RetrieveColumnAsByte
 
-Includi membri protetti  
-Includi membri ereditati  
+Includere membri protetti  
+Includere i membri ereditati  
 
 ## <a name="overload-list"></a>Elenco di overload
 
@@ -39,13 +39,13 @@ Includi membri ereditati
 <tbody>
 <tr class="odd">
 <td><img src="../images/dn292146.pubmethod(exchg.10).gif" title="Metodo pubblico" alt="Public method" /><img src="../images/dn292146.static(exchg.10).gif" title="Membro statico" alt="Static member" /></td>
-<td><a href="dn334047(v=exchg.10).md">RetrieveColumnAsByte (JET_SESID, JET_TABLEID, JET_COLUMNID)</a></td>
-<td>Recupera un valore di colonna byte dal record corrente. Il record è il record associato alla voce di indice in corrispondenza della posizione corrente del cursore.</td>
+<td><a href="dn334047(v=exchg.10).md">RetrieveColumnAsByte(JET_SESID, JET_TABLEID, JET_COLUMNID)</a></td>
+<td>Recupera un valore di colonna byte dal record corrente. Il record è il record associato alla voce di indice nella posizione corrente del cursore.</td>
 </tr>
 <tr class="even">
 <td><img src="../images/dn292146.pubmethod(exchg.10).gif" title="Metodo pubblico" alt="Public method" /><img src="../images/dn292146.static(exchg.10).gif" title="Membro statico" alt="Static member" /></td>
-<td><a href="dn334074(v=exchg.10).md">RetrieveColumnAsByte (JET_SESID, JET_TABLEID, JET_COLUMNID, RetrieveColumnGrbit)</a></td>
-<td>Recupera un valore di colonna byte dal record corrente. Il record è il record associato alla voce di indice in corrispondenza della posizione corrente del cursore.</td>
+<td><a href="dn334074(v=exchg.10).md">RetrieveColumnAsByte(JET_SESID, JET_TABLEID, JET_COLUMNID, RetrieveColumnGrbit)</a></td>
+<td>Recupera un valore di colonna byte dal record corrente. Il record è il record associato alla voce di indice nella posizione corrente del cursore.</td>
 </tr>
 </tbody>
 </table>
@@ -59,6 +59,6 @@ Inizio
 
 [Classe API](./api-class.md)
 
-[Membri API](./api-members.md)
+[Membri api](./api-members.md)
 
-[Spazio dei nomi Microsoft. ISAM. esent. Interop](./microsoft.isam.esent.interop-namespace.md)
+[Spazio dei nomi Microsoft.Isam.Esent.Interop](./microsoft.isam.esent.interop-namespace.md)

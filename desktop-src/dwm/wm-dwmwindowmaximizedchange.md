@@ -1,9 +1,9 @@
 ---
-title: Messaggio WM_DWMWINDOWMAXIMIZEDCHANGE (winuser. h)
-description: Inviato quando una finestra composta da Gestione finestre desktop (DWM) viene ingrandita.
+title: WM_DWMWINDOWMAXIMIZEDCHANGE messaggio (Winuser.h)
+description: Inviato quando una finestra composta Gestione finestre desktop (DWM) è ingrandita.
 ms.assetid: db8cd104-388e-4211-9e4e-f169aef9651c
 keywords:
-- Messaggio WM_DWMWINDOWMAXIMIZEDCHANGE Gestione finestre desktop
+- WM_DWMWINDOWMAXIMIZEDCHANGE messaggio Gestione finestre desktop
 topic_type:
 - apiref
 api_name:
@@ -14,16 +14,16 @@ api_type:
 - HeaderDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 2dc49af267ea826eb9e35a627e14f6fc8b381df0
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: 93cfa4ac380b6ff439fb2bf4805846c0b774a90bcfdcd83673ead2334a3c7094
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "104400661"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120117751"
 ---
-# <a name="wm_dwmwindowmaximizedchange-message"></a>\_Messaggio DWMWINDOWMAXIMIZEDCHANGE WM
+# <a name="wm_dwmwindowmaximizedchange-message"></a>Messaggio WM \_ DWMWINDOWMAXIMIZEDCHANGE
 
-Inviato quando una finestra composta da Gestione finestre desktop (DWM) viene ingrandita.
+Inviato quando una finestra composta Gestione finestre desktop (DWM) è ingrandita.
 
 ## <a name="parameters"></a>Parametri
 
@@ -45,11 +45,11 @@ Non usato.
 
 ## <a name="return-value"></a>Valore restituito
 
-Se un'applicazione elabora il messaggio, deve restituire zero.
+Se un'applicazione elabora questo messaggio, deve restituire zero.
 
 ## <a name="remarks"></a>Commenti
 
-Una finestra riceve questo messaggio tramite la funzione [**WindowProc**](/previous-versions/windows/desktop/legacy/ms633573(v=vs.85)) .
+Una finestra riceve questo messaggio tramite la [**relativa funzione WindowProc.**](/previous-versions/windows/desktop/legacy/ms633573(v=vs.85))
 
 ## <a name="requirements"></a>Requisiti
 
@@ -57,9 +57,9 @@ Una finestra riceve questo messaggio tramite la funzione [**WindowProc**](/previ
 
 | Requisito | Valore |
 |-------------------------------------|--------------------------------------------------------------------------------------|
-| Client minimo supportato<br/> | \[Solo app desktop di Windows Vista\]<br/>                                       |
-| Server minimo supportato<br/> | \[Solo app desktop Windows Server 2008\]<br/>                                 |
-| Intestazione<br/>                   | <dl> <dt>Winuser. h</dt> </dl> |
+| Client minimo supportato<br/> | Windows Solo \[ app desktop Vista\]<br/>                                       |
+| Server minimo supportato<br/> | Windows Solo app desktop di Server 2008 \[\]<br/>                                 |
+| Intestazione<br/>                   | <dl> <dt>Winuser</dt> </dl> |
 
 
 

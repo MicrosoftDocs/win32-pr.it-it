@@ -11,12 +11,12 @@
           items:
             - name: Transazioni
               href: transactions.md
-        - name: Scrittura di un Gestione risorse
+        - name: Scrittura di un Resource Manager
           href: writing-a-resource-manager.md
           items:
             - name: Gestori transazioni
               href: transaction-managers.md
-            - name: Gestione risorse
+            - name: Resource Manager
               href: resource-managers.md
             - name: Integrazioni
               href: enlistments.md
@@ -24,14 +24,14 @@
               href: recovery-processing.md
             - name: Considerazioni sulla programmazione per la scrittura di gestori di risorse
               href: programming-considerations.md
-        - name: Interoperabilità con altre funzionalità di Windows
+        - name: Interoperabilità con altre Windows funzionalità
           href: interoperability-with-other-windows-features.md
-        - name: Diritti di accesso e sicurezza di KTM
+        - name: KTM Security and Access Rights
           href: ktm-security-and-access-rights.md
-    - name: Riferimento a KTM
+    - name: Riferimento KTM
       href: ktm-reference.md
       items:
-        - name: Enumerazioni di gestione transazioni kernel
+        - name: Enumerazioni del gestore transazioni kernel
           href: kernel-transaction-manager-enumerations.md
           items:
             - name: TRANSACTION_OUTCOME
@@ -124,16 +124,16 @@
               href: /windows/win32/api/KtmTypes/ns-ktmtypes-transaction_notification
             - name: TRANSACTION_NOTIFICATION_RECOVERY_ARGUMENT
               href: /windows/win32/api/KtmTypes/ns-ktmtypes-transaction_notification_recovery_argument
-        - name: Costanti di gestione transazioni kernel
+        - name: Costanti di Gestione transazioni kernel
           href: kernel-transaction-manager-constants.md
           items:
-            - name: Maschere di accesso all'elenco
+            - name: Maschere di accesso all'integrazione
               href: enlistment-access-masks.md
             - name: NOTIFICATION_MASK
               href: notification-mask.md
-            - name: Maschere di accesso Gestione risorse
+            - name: Resource Manager di accesso
               href: resource-manager-access-masks.md
             - name: Maschere di accesso alle transazioni
               href: transaction-access-masks.md
-            - name: Maschere di accesso di gestione transazioni
+            - name: Maschere di accesso per la gestione transazioni
               href: transaction-manager-access-masks.md

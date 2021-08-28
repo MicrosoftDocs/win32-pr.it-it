@@ -1,28 +1,28 @@
 ---
-title: Polling dello stato del processo
-description: Per impostazione predefinita, un'applicazione deve eseguire il polling delle modifiche allo stato di un processo.
+title: Polling per lo stato del processo
+description: Per impostazione predefinita, un'applicazione deve eseguire il polling delle modifiche nello stato di un processo.
 ms.assetid: b12ee1e0-d3d9-4d31-b2af-7491480968f0
 keywords:
-- trasferimento BITS processo, polling
-- polling dei bit di stato del processo
+- trasferimento di bit del processo, polling
+- polling per lo stato del processo BITS
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 2df7fcde49d7359ff8cfa38326eba1e1e0bfeac5
-ms.sourcegitcommit: 2d531328b6ed82d4ad971a45a5131b430c5866f7
+ms.openlocfilehash: af7f1f47a891968e686ae1ffc083bfa9b00d79c8bdc22e2c78ea523ef7ec707e
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "103855530"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119701721"
 ---
-# <a name="polling-for-the-status-of-the-job"></a>Polling dello stato del processo
+# <a name="polling-for-the-status-of-the-job"></a>Polling per lo stato del processo
 
-Per impostazione predefinita, un'applicazione deve eseguire il polling delle modifiche allo stato di un processo. Per acquisire le modifiche nello stato del processo, chiamare il metodo [**Metodo ibackgroundcopyjob:: GetState**](/windows/desktop/api/Bits/nf-bits-ibackgroundcopyjob-getstate) . Per acquisire le modifiche del numero di byte e di file trasferiti, chiamare il metodo [**Metodo ibackgroundcopyjob:: getProgress**](/windows/desktop/api/Bits/nf-bits-ibackgroundcopyjob-getprogress) . Per recuperare le informazioni sullo stato di avanzamento della parte di risposta di un processo di caricamento-risposta, chiamare il metodo [**IBackgroundCopyJob2:: GetReplyProgress**](/windows/desktop/api/Bits1_5/nf-bits1_5-ibackgroundcopyjob2-getreplyprogress) . Per un esempio in cui vengono utilizzate le informazioni sullo stato di avanzamento, vedere [determinare lo stato di avanzamento di un processo](determining-the-progress-of-a-job.md).
+Per impostazione predefinita, un'applicazione deve eseguire il polling delle modifiche nello stato di un processo. Per acquisire le modifiche nello stato del processo, chiamare il [**metodo IBackgroundCopyJob::GetState.**](/windows/desktop/api/Bits/nf-bits-ibackgroundcopyjob-getstate) Per acquisire le modifiche nel numero di byte e file trasferiti, chiamare il [**metodo IBackgroundCopyJob::GetProgress.**](/windows/desktop/api/Bits/nf-bits-ibackgroundcopyjob-getprogress) Per recuperare informazioni sullo stato sulla parte di risposta di un processo di caricamento-risposta, chiamare il metodo [**IBackgroundCopyJob2::GetReplyProgress.**](/windows/desktop/api/Bits1_5/nf-bits1_5-ibackgroundcopyjob2-getreplyprogress) Per un esempio in cui vengono utilizzate le informazioni sullo stato, vedere [Determinazione dello stato di avanzamento di un processo](determining-the-progress-of-a-job.md).
 
-L' [**enumerazione \_ \_ dello stato del processo BG**](/windows/desktop/api/Bits/ne-bits-bg_job_state) definisce gli Stati di un processo e la struttura dello stato di [**\_ \_ avanzamento del processo BG**](/windows/desktop/api/Bits/ns-bits-bg_job_progress) contiene informazioni sul numero di byte e file trasferiti.
+[**L'enumerazione BG \_ JOB \_ STATE**](/windows/desktop/api/Bits/ne-bits-bg_job_state) definisce gli stati di un processo e la struttura [**BG JOB \_ \_ PROGRESS**](/windows/desktop/api/Bits/ns-bits-bg_job_progress) contiene informazioni sul numero di byte e file trasferiti.
 
-Per utilizzare il polling, è necessario creare un meccanismo per avviare il polling. Ad esempio, creare un timer o usare un pulsante "Aggiorna" nell'interfaccia utente. Tuttavia, potrebbe essere più facile eseguire la registrazione per la notifica degli eventi e ricevere eventi quando lo stato o lo stato di avanzamento viene modificato. Per informazioni sulla notifica degli eventi, vedere la pagina relativa alla [registrazione di un callback com](registering-a-com-callback.md).
+Per usare il polling, è necessario creare un meccanismo per avviare il polling. Ad esempio, creare un timer o usare un pulsante "Aggiorna" nell'interfaccia utente. Tuttavia, potrebbe essere più semplice registrarsi per la notifica degli eventi e ricevere eventi quando lo stato o lo stato cambia. Per informazioni sulla notifica degli eventi, vedere [Registrazione di un callback COM](registering-a-com-callback.md).
 
-Nell'esempio seguente viene usato un timer per eseguire il polling dello stato di un processo. Nell'esempio si presuppone che il puntatore all'interfaccia [**Metodo ibackgroundcopyjob**](/windows/desktop/api/Bits/nn-bits-ibackgroundcopyjob) sia valido.
+Nell'esempio seguente viene utilizzato un timer per eseguire il polling dello stato di un processo. Nell'esempio si presuppone che il [**puntatore a interfaccia IBackgroundCopyJob**](/windows/desktop/api/Bits/nn-bits-ibackgroundcopyjob) sia valido.
 
 
 ```C++
@@ -71,9 +71,9 @@ CloseHandle(hTimer);
 
 
 
- 
+ 
 
- 
+ 
 
 
 

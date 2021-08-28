@@ -1,23 +1,23 @@
 ---
-title: ftou (SM4-ASM)
-description: Conversione da virgola mobile a Unsigned Integer.
+title: ftou (sm4 - asm)
+description: Conversione da virgola mobile a intero senza segno.
 ms.assetid: 0E3E090B-72C0-4CED-AFA5-2DDCF67D7263
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: a4a5e65e4bb9d4e71e4a2000f00861cf63e7c181
-ms.sourcegitcommit: fe03c5d92ca6a0d66a114b2303e99c0a19241ffb
+ms.openlocfilehash: aedea930ef2cf0b691261e64940990510d0ec1be9c0dbce8aa5422ecfe90d49c
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/20/2019
-ms.locfileid: "104335487"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "117907465"
 ---
-# <a name="ftou-sm4---asm"></a>ftou (SM4-ASM)
+# <a name="ftou-sm4---asm"></a>ftou (sm4 - asm)
 
-Conversione da virgola mobile a Unsigned Integer.
+Conversione da virgola mobile a intero senza segno.
 
 
 
-| ftou dest \[ . mask \] , \[ - \] src0 \[ \_ ABS \] \[ . Swizzle\] |
+| ftou dest \[ .mask \] , \[ - \] src0 \[ \_ abs \] \[ .swizzle\] |
 |----------------------------------------------------|
 
 
@@ -26,7 +26,7 @@ Conversione da virgola mobile a Unsigned Integer.
 
 
 
-| Ftoi dest \[ . mask \] , \[ - \] src0 \[ \_ ABS \] \[ . Swizzle\] |
+| ftoi dest \[ .mask \] , \[ - \] src0 \[ \_ abs \] \[ .swizzle\] |
 |----------------------------------------------------|
 
 
@@ -37,8 +37,8 @@ Conversione da virgola mobile a Unsigned Integer.
 
 | Elemento                                                            | Descrizione                                                    |
 |-----------------------------------------------------------------|----------------------------------------------------------------|
-| <span id="dest"></span><span id="DEST"></span>*dest*<br/> | \[nell' \] indirizzo del risultato dell'operazione. <br/> |
-| <span id="src0"></span><span id="SRC0"></span>*src0*<br/> | \[nel \] valore da convertire.<br/>                        |
+| <span id="dest"></span><span id="DEST"></span>*Dest*<br/> | \[in \] Indirizzo del risultato dell'operazione. <br/> |
+| <span id="src0"></span><span id="SRC0"></span>*src0*<br/> | \[in \] Valore da convertire.<br/>                        |
 
 
 
@@ -46,15 +46,15 @@ Conversione da virgola mobile a Unsigned Integer.
 
 ## <a name="remarks"></a>Commenti
 
-La conversione viene eseguita per ogni componente. L'arrotondamento viene sempre eseguito verso zero, dopo la convenzione C per i cast da float a int.
+La conversione viene eseguita per componente. L'arrotondamento viene sempre eseguito verso zero, seguendo la convenzione C per i cast da float a int.
 
-Le applicazioni che richiedono una semantica di arrotondamento diversa possono richiamare le istruzioni **round** prima di eseguire il cast su Integer.
+Le applicazioni che richiedono una semantica di arrotondamento diversa possono richiamare le **istruzioni di arrotondamento** prima di eseguire il cast a integer.
 
-Gli input vengono fissati nell'intervallo \[ 0,0 f... 4294967295.999 f \] prima della conversione e i valori NaN di input producono un risultato pari a zero.
+Gli input sono \[ 0,0f... 4294967295.999f prima della conversione e i valori NaN di \] input producono un risultato zero.
 
-I modificatori di valore assoluto e negazione facoltativi vengono applicati ai valori di origine prima della conversione.
+I modificatori di valori negati e assoluti facoltativi vengono applicati ai valori di origine prima della conversione.
 
-Questa istruzione si applica alle fasi dello shader seguenti:
+Questa istruzione si applica alle fasi di shader seguenti:
 
 
 
@@ -66,20 +66,20 @@ Questa istruzione si applica alle fasi dello shader seguenti:
 
  
 
-## <a name="minimum-shader-model"></a>Modello Shader minimo
+## <a name="minimum-shader-model"></a>Modello di shader minimo
 
-Questa funzione è supportata nei modelli shader seguenti.
+Questa funzione è supportata nei modelli di shader seguenti.
 
 
 
 | Modello di shader                                              | Supportato |
 |-----------------------------------------------------------|-----------|
-| [Modello Shader 5](d3d11-graphics-reference-sm5.md)        | sì       |
-| [Modello Shader 4,1](dx-graphics-hlsl-sm4.md)              | sì       |
-| [Modello Shader 4](dx-graphics-hlsl-sm4.md)                | sì       |
-| [Shader Model 3 (DirectX HLSL)](dx-graphics-hlsl-sm3.md) | no        |
-| [Shader Model 2 (DirectX HLSL)](dx-graphics-hlsl-sm2.md) | no        |
-| [Shader Model 1 (DirectX HLSL)](dx-graphics-hlsl-sm1.md) | no        |
+| [Modello shader 5](d3d11-graphics-reference-sm5.md)        | sì       |
+| [Modello shader 4.1](dx-graphics-hlsl-sm4.md)              | sì       |
+| [Modello shader 4](dx-graphics-hlsl-sm4.md)                | sì       |
+| [Modello shader 3 (DirectX HLSL)](dx-graphics-hlsl-sm3.md) | no        |
+| [Modello shader 2 (DirectX HLSL)](dx-graphics-hlsl-sm2.md) | no        |
+| [Modello shader 1 (HLSL DirectX)](dx-graphics-hlsl-sm1.md) | no        |
 
 
 
@@ -89,7 +89,7 @@ Questa funzione è supportata nei modelli shader seguenti.
 
 <dl> <dt>
 
-[Assembly Shader Model 4 (DirectX HLSL)](dx-graphics-hlsl-sm4-asm.md)
+[Assembly del modello shader 4 (HLSL DirectX)](dx-graphics-hlsl-sm4-asm.md)
 </dt> </dl>
 
  
