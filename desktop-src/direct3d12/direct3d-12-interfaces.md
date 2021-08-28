@@ -6,12 +6,12 @@ ms.localizationpriority: low
 ms.topic: article
 ms.date: 04/19/2019
 ms.custom: 19H1
-ms.openlocfilehash: 0cc8fcecec2e2a0966ed34e23eb65ed9acd37e76
-ms.sourcegitcommit: 0dec0044816af3f2b2e6403659e1cf11138c90cd
+ms.openlocfilehash: f204484b3565564f72e815bd21cf8e449ee55e4c
+ms.sourcegitcommit: 61a4c522182aa1cacbf5669683d9570a3bf043b2
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "121812882"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "122884301"
 ---
 # <a name="core-interfaces"></a>Interfacce di base
 
@@ -58,12 +58,13 @@ Le interfacce seguenti sono dichiarate in d3d12.h.
 | [**ID3D12QueryHeap**](/windows/win32/api/d3d12/nn-d3d12-id3d12queryheap) | Gestisce un heap di query. Un heap di query contiene una matrice di query, a cui fanno riferimento gli indici. |
 | [**ID3D12Resource**](/windows/win32/api/d3d12/nn-d3d12-id3d12resource) | Incapsula una capacità generalizzata della CPU e della GPU di leggere e scrivere nella memoria fisica o negli heap. Contiene astrazioni per organizzare e modificare matrici di dati semplici, nonché dati multidimensionali ottimizzati per il campionamento di shader. |
 | [**ID3D12RootSignature**](/windows/win32/api/d3d12/nn-d3d12-id3d12rootsignature) | La firma radice definisce le risorse associate alla pipeline grafica. Una firma radice viene configurata dall'app e collega gli elenchi di comandi alle risorse richieste dagli shader. Attualmente sono disponibili una grafica e una firma radice di calcolo per ogni app. |
-| [**ID3D12RootSignatureDeserializer**](/windows/win32/api/d3d12/nn-d3d12-id3d12rootsignaturedeserializer) | Contiene un metodo per restituire la struttura dei dati [**D3D12-ROOT-SIGNATURE-DESC**](/windows/win32/api/d3d12/ns-d3d12-d3d12_root_signature_desc) deserializzata di una firma radice serializzata versione 1.0.  |
+| [**ID3D12RootSignatureDeserializer**](/windows/win32/api/d3d12/nn-d3d12-id3d12rootsignaturedeserializer) | Contiene un metodo per restituire la struttura di dati [**D3D12-ROOT-SIGNATURE-DESC**](/windows/win32/api/d3d12/ns-d3d12-d3d12_root_signature_desc) deserializzata di una firma radice serializzata versione 1.0.  |
+| [**ID3D12SDKConfiguration**](/windows/win32/api/d3d12/nn-d3d12-id3d12sdkconfiguration) | Fornisce metodi di configurazione dell'SDK. |
 | [**ID3D12ShaderCacheSession**](/windows/win32/api/d3d12/nn-d3d12-id3d12shadercachesession) | Rappresenta una sessione della cache shader. |
-| [**ID3D12StateObject**](/windows/win32/api/d3d12/nn-d3d12-id3d12stateobject) | Rappresenta una quantità variabile di stato di configurazione, inclusi gli shader, che un'applicazione gestisce come singola unità e che viene assegnato a un driver in modo atomico per l'elaborazione, ad esempio la compilazione o l'ottimizzazione.  |
-| [**ID3D12StateObjectProperties**](/windows/win32/api/d3d12/nn-d3d12-id3d12stateobjectproperties) | Fornisce metodi per ottenere e impostare le proprietà di un [**OGGETTO ID3D12StateObject.**](/windows/win32/api/d3d12/nn-d3d12-id3d12stateobject)  |
+| [**ID3D12StateObject**](/windows/win32/api/d3d12/nn-d3d12-id3d12stateobject) | Rappresenta una quantità variabile di stato di configurazione, inclusi gli shader, che un'applicazione gestisce come singola unità e che viene assegnato atomicamente a un driver per l'elaborazione, ad esempio la compilazione o l'ottimizzazione.  |
+| [**ID3D12StateObjectProperties**](/windows/win32/api/d3d12/nn-d3d12-id3d12stateobjectproperties) | Fornisce metodi per ottenere e impostare le proprietà di un [**oggetto ID3D12StateObject.**](/windows/win32/api/d3d12/nn-d3d12-id3d12stateobject)  |
 | [**ID3D12Tools**](/windows/win32/api/d3d12/nn-d3d12-id3d12tools) | Questa interfaccia viene usata per configurare il runtime per strumenti come PIX. Non è previsto o supportato per qualsiasi altro scenario. |
-| [**ID3D12VersionedRootSignatureDeserializer**](/windows/win32/api/d3d12/nn-d3d12-id3d12versionedrootsignaturedeserializer) | Contiene metodi per restituire la struttura dei dati [**D3D12-ROOT-SIGNATURE-DESC1**](/windows/win32/api/d3d12/ns-d3d12-d3d12_root_signature_desc1) deserializzata di qualsiasi versione di una firma radice serializzata.  |
+| [**ID3D12VersionedRootSignatureDeserializer**](/windows/win32/api/d3d12/nn-d3d12-id3d12versionedrootsignaturedeserializer) | Contiene metodi per restituire la struttura di dati [**D3D12-ROOT-SIGNATURE-DESC1**](/windows/win32/api/d3d12/ns-d3d12-d3d12_root_signature_desc1) deserializzata di qualsiasi versione di una firma radice serializzata.  |
 
 ## <a name="related-topics"></a>Argomenti correlati
 

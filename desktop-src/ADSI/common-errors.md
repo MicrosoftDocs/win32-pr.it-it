@@ -5,12 +5,12 @@ ms.assetid: fdee4f0a-b39e-4011-af4f-9fe408f6ca6c
 ms.tgt_platform: multiple
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 0efcbbbce67d9928c9ecda3840f34a1cbf6faae79ca4d9fe72830a5b57881177
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 85c0949d13139b132cd7c1a7a96ff6a95cd3b5e4
+ms.sourcegitcommit: 61a4c522182aa1cacbf5669683d9570a3bf043b2
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "118692195"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "122884064"
 ---
 # <a name="common-errors-adsi"></a>Errori comuni (ADSI)
 
@@ -51,7 +51,7 @@ Per [altri esempi di](generic-com-error-codes.md) errori COM che possono verific
 
 Qualsiasi codice di errore nel formato esadecimale 8007xxxx è un codice di errore Win32 standard. Se si convertono le ultime quattro cifre da esadecimale a decimale, è possibile accedere all'errore dalla riga di comando Windows 2000:
 
-**net helpmsg <number>**
+**net helpmsg &lt; number&gt;**
 
 Nella riga di comando precedente " number " è il numero decimale ottenuto convertendo le ultime quattro cifre del codice di errore da &lt; &gt; esadecimale. Questa riga di comando fornirà una descrizione più utile dell'errore Win32, che può essere di grande aiuto per il debug dello script.
 

@@ -18,12 +18,12 @@ api_type:
 api_location:
 - ESENT.DLL
 ROBOTS: INDEX,FOLLOW
-ms.openlocfilehash: 7457e747a0539965efe0fab9ebfd69660178a2ea
-ms.sourcegitcommit: 9b5faa61c38b2d0c432b7f2dbee8c127b0e28a7e
+ms.openlocfilehash: f8a9ce96be028329dea18f32459fbde88b80b75f
+ms.sourcegitcommit: 4665ebce0c106bdb52eef36e544280b496b6f50b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/19/2021
-ms.locfileid: "122480337"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "122985624"
 ---
 # <a name="jetretrievecolumn-function"></a>Funzione JetRetrieveColumn
 
@@ -82,11 +82,11 @@ Se questo parametro è **NULL,** le dimensioni effettive del valore della colonn
 Gruppo di bit che contengono le opzioni da utilizzare per questa chiamata, che includono zero o più degli elementi seguenti:
 
 
-| <p>valore</p> | <p>Significato</p> | 
+| <p>Valore</p> | <p>Significato</p> | 
 |--------------|----------------|
 | <p>JET_bitRetrieveCopy</p> | <p>Questo flag fa in modo che il recupero della colonna recuperi il valore modificato anziché il valore originale. Se il valore non è stato modificato, viene recuperato il valore originale. In questo modo, un valore non ancora inserito o aggiornato può essere recuperato durante l'operazione di inserimento o aggiornamento di un record.</p> | 
-| <p>JET_bitRetrieveFromIndex</p> | <p>Questa opzione viene utilizzata per recuperare i valori di colonna dall'indice, se possibile, senza accedere al record. In questo modo, è possibile evitare il caricamento non necessario dei record quando i dati necessari sono disponibili dalle voci di indice stesse. Nei casi in cui non è possibile recuperare il valore della colonna originale dall'indice, a causa di trasformazioni irreversibili o troncamento dei dati, si accede al record e i dati vengono recuperati normalmente. Si tratta di un'opzione per le prestazioni e deve essere specificata solo quando è probabile che il valore della colonna possa essere recuperato dall'indice. Questa opzione non deve essere specificata se l'indice corrente è l'indice cluster, poiché le voci di indice per l'indice cluster o primario sono i record stessi. Questo bit non può essere impostato se JET_bitRetrieveFromPrimaryBookmark è impostato anche .</p> | 
-| <p>JET_bitRetrieveFromPrimaryBookmark</p> | <p>Questa opzione viene utilizzata per recuperare i valori di colonna dal segnalibro dell'indice e può differire dal valore dell'indice quando una colonna viene visualizzata sia nell'indice primario che nell'indice corrente. Questa opzione non deve essere specificata se l'indice corrente è l'indice cluster o primario. Questo bit non può essere impostato se JET_bitRetrieveFromIndex è impostato anche .</p> | 
+| <p>JET_bitRetrieveFromIndex</p> | <p>Questa opzione viene utilizzata per recuperare i valori di colonna dall'indice, se possibile, senza accedere al record. In questo modo, è possibile evitare il caricamento non necessario dei record quando i dati necessari sono disponibili dalle voci di indice stesse. Nei casi in cui non è possibile recuperare il valore della colonna originale dall'indice, a causa di trasformazioni irreversibili o troncamento dei dati, si accede al record e i dati vengono recuperati come di consueto. Si tratta di un'opzione per le prestazioni e deve essere specificata solo quando è probabile che il valore della colonna possa essere recuperato dall'indice. Questa opzione non deve essere specificata se l'indice corrente è l'indice cluster, poiché le voci di indice per l'indice cluster o primario sono i record stessi. Questo bit non può essere impostato se JET_bitRetrieveFromPrimaryBookmark è impostato anche .</p> | 
+| <p>JET_bitRetrieveFromPrimaryBookmark</p> | <p>Questa opzione viene utilizzata per recuperare i valori di colonna dal segnalibro dell'indice e può differire dal valore dell'indice quando una colonna viene visualizzata sia nell'indice primario che nell'indice corrente. Questa opzione non deve essere specificata se l'indice corrente è l'indice cluster o primario. Questo bit non può essere impostato se JET_bitRetrieveFromIndex è impostato.</p> | 
 | <p>JET_bitRetrieveTag</p> | <p>Questa opzione viene usata per recuperare il numero di sequenza di un valore di colonna multivalore in pretinfo- &gt; itagSequence. Il campo itagSequence è in genere un input per il recupero di valori di colonna multivalore da un record. Tuttavia, quando si recuperano valori da un indice, è anche possibile associare la voce di indice a un numero di sequenza specifico e recuperare anche questo numero di sequenza. Il recupero del numero di sequenza può essere un'operazione dispersa e deve essere eseguito solo se necessario.</p> | 
 | <p>JET_bitRetrieveNull</p> | <p>Questa opzione viene utilizzata per recuperare i valori NULL della colonna multivalore. <strong></strong> Se questa opzione non viene specificata, i valori <strong>NULL</strong> della colonna multivalore verranno ignorati automaticamente.</p> | 
 | <p>JET_bitRetrieveIgnoreDefault</p> | <p>Questa opzione influisce solo sulle colonne multivalore e fa in modo che un valore <strong>NULL</strong> sia restituito quando il numero di sequenza richiesto è 1 e non sono presenti valori impostati per la colonna nel record.</p> | 
@@ -103,11 +103,11 @@ Se *pretinfo* viene specificato come **NULL,** la funzione si comporta come se f
 Questo parametro viene usato per fornire uno o più degli elementi seguenti:
 
 
-| <p>valore</p> | <p>Significato</p> | 
+| <p>Valore</p> | <p>Significato</p> | 
 |--------------|----------------|
 | <p>ibLongValue</p> | <p>Fornisce un offset binario in un valore di colonna long durante il recupero di una parte di un valore di colonna.</p> | 
 | <p>itagSequence</p> | <p>Fornisce il numero di sequenza del valore di colonna multivalore desiderato. Si noti che questo campo viene impostato solo se JET_bitRetrieveTag specificato. In caso contrario, non viene modificato.</p> | 
-| <p>columnidNextTagged</p> | <p>Restituisce l'ID della colonna restituita quando si recuperano tutte le colonne contrassegnate, di tipo sparse e multivalore usando il passaggio <em>di columnid</em> pari a 0 (zero).</p> | 
+| <p>columnidNextTagged</p> | <p>Restituisce l'ID della colonna restituita quando si recuperano tutte le colonne contrassegnate, di tipo sparse e multivalore che usano il passaggio <em>di columnid</em> pari a 0 (zero).</p> | 
 
 
 
@@ -159,7 +159,13 @@ Quando si recuperano tutte le colonne con tag, multivalore e di tipo sparse, imp
 #### <a name="requirements"></a>Requisiti
 
 
-| | | <p><strong>Client</strong></p> | <p>Richiede Windows Vista, Windows XP o Windows 2000 Professional.</p> | | <p><strong>Server</strong></p> | <p>Richiede Windows Server 2008, Windows Server 2003 o Windows 2000 Server.</p> | | <p><strong>Intestazione</strong></p> | <p>Dichiarato in Esent.h.</p> | | <p><strong>Libreria</strong></p> | <p>Usare ESENT.lib.</p> | | <p><strong>DLL</strong></p> | <p>Richiede ESENT.dll.</p> | 
+| Requisito | Valore |
+|------------|----------|
+| <p><strong>Client</strong></p> | <p>Richiede Windows Vista, Windows XP o Windows 2000 Professional.</p> | 
+| <p><strong>Server</strong></p> | <p>Richiede Windows Server 2008, Windows Server 2003 o Windows 2000 Server.</p> | 
+| <p><strong>Intestazione</strong></p> | <p>Dichiarato in Esent.h.</p> | 
+| <p><strong>Libreria</strong></p> | <p>Usare ESENT.lib.</p> | 
+| <p><strong>DLL</strong></p> | <p>Richiede ESENT.dll.</p> | 
 
 
 

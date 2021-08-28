@@ -19,12 +19,12 @@ api_type:
 api_location:
 - ESENT.DLL
 ROBOTS: INDEX,FOLLOW
-ms.openlocfilehash: 8ad6c3584f27421b14ef44ed86b423778a570b63
-ms.sourcegitcommit: 9b5faa61c38b2d0c432b7f2dbee8c127b0e28a7e
+ms.openlocfilehash: 6080380fd8326504e7b1182b439571e3904f0d53
+ms.sourcegitcommit: 4665ebce0c106bdb52eef36e544280b496b6f50b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/19/2021
-ms.locfileid: "122465848"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "122986064"
 ---
 # <a name="jetcommittransaction2-function"></a>Funzione JetCommitTransaction2
 
@@ -55,7 +55,7 @@ Sessione da utilizzare per questa chiamata.
 Gruppo di bit che specificano zero o più valori elencati nella tabella seguente.
 
 
-| <p>valore</p> | <p>Significato</p> | 
+| <p>Valore</p> | <p>Significato</p> | 
 |--------------|----------------|
 | <p>JET_bitCommitLazyFlush</p> | <p>Il commit della transazione viene eseguito normalmente, ma questa API non attende lo scaricamento della transazione nel file di log delle transazioni prima di tornare al chiamante. In questo modo si riduce drasticamente la durata di un'operazione di commit a costo della durabilità. Qualsiasi transazione non scaricata nel log prima di un arresto anomalo verrà automaticamente interrotta durante il ripristino dell'arresto anomalo durante la chiamata successiva alla <a href="gg294068(v=exchg.10).md">funzione JetInit.</a></p><p>Se JET_bitWaitLastLevel0Commit o JET_bitWaitAllLevel0Commit, questa opzione viene ignorata.</p><p>Se questa chiamata a <strong>JetCommitTransaction2</strong> non corrisponde alla prima chiamata alla <a href="gg294083(v=exchg.10).md">funzione JetBeginTransaction</a> per questa sessione, questa opzione viene ignorata. Ciò è dovuto al fatto che l'azione finale che si verifica nel punto di salvataggio più esterno è il fattore determinante per stabilire se viene effettivamente eseguito il commit su disco dell'intera transazione.</p> | 
 | <p>JET_bitWaitAllLevel0Commit</p> | <p>Tutte le transazioni di cui è stato eseguito il commit in precedenza da qualsiasi sessione che non sono ancora state scaricate nel file di log delle transazioni verranno scaricate immediatamente. Questa API attenderà che le transazioni siano state scaricate prima di tornare al chiamante.</p><p>Questa opzione può essere usata anche se la sessione non è attualmente in una transazione.</p><p>Questa opzione non può essere usata in combinazione con altre opzioni.</p><p>Questa opzione è disponibile nelle versioni del sistema operativo Windows Server a partire da Windows Server 2003.</p> | 
@@ -73,7 +73,7 @@ ID commit associato a questo record di commit.
 
 ### <a name="return-value"></a>Valore restituito
 
-Questa funzione restituisce il [JET_ERR](./jet-err.md) dati con uno dei codici restituiti elencati nella tabella seguente. Per altre informazioni sui possibili errori ESE [(Extensible](./extensible-storage-engine-errors.md) Archiviazione Engine), vedere Errori del motore di Archiviazione estendibile e Parametri [di gestione degli errori](./error-handling-parameters.md).
+Questa funzione restituisce il [JET_ERR](./jet-err.md) dati con uno dei codici restituiti elencati nella tabella seguente. Per altre informazioni sui possibili errori ESE (Extensible Archiviazione Engine), vedere [Errori](./extensible-storage-engine-errors.md) del motore di Archiviazione estendibile e Parametri [di gestione degli errori](./error-handling-parameters.md).
 
 
 | <p>Codice restituito</p> | <p>Descrizione</p> | 
@@ -101,7 +101,13 @@ Deve essere presente una chiamata a **JetCommitTransaction2** o [JetRollback](./
 #### <a name="requirements"></a>Requisiti
 
 
-| | | <p><strong>Client</strong></p> | <p>Richiede Windows 8.</p> | | <p><strong>Server</strong></p> | <p>Richiede Windows Server 2012.</p> | | <p><strong>Intestazione</strong></p> | <p>Dichiarato in Esent.h.</p> | | <p><strong>Libreria</strong></p> | <p>Usare ESENT.lib.</p> | | <p><strong>DLL</strong></p> | <p>Richiede ESENT.dll.</p> | 
+| Requisito | Valore |
+|------------|----------|
+| <p><strong>Client</strong></p> | <p>Richiede Windows 8.</p> | 
+| <p><strong>Server</strong></p> | <p>Richiede Windows Server 2012.</p> | 
+| <p><strong>Intestazione</strong></p> | <p>Dichiarato in Esent.h.</p> | 
+| <p><strong>Libreria</strong></p> | <p>Usare ESENT.lib.</p> | 
+| <p><strong>DLL</strong></p> | <p>Richiede ESENT.dll.</p> | 
 
 
 

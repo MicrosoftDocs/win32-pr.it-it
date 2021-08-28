@@ -25,12 +25,12 @@ api_type:
 - DllExport
 api_location:
 - vmms.exe
-ms.openlocfilehash: 478b4617f56c73e425d833842b313767f85c385e9142314a7ca8978b5783f492
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 41af5f29f54dc0b5c7e63203c43160539bcaa870
+ms.sourcegitcommit: 61a4c522182aa1cacbf5669683d9570a3bf043b2
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "118950230"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "122886586"
 ---
 # <a name="msvm_storagealert-class"></a>Classe Msvm \_ StorageAlert
 
@@ -83,9 +83,9 @@ Tipo di accesso: sola lettura
 Qualificatori: **ModelCorrespondence** ("CIM \_ AlertIndication.AlertingManagedElement", "CIM \_ AlertIndication.OtherAlertingElementFormat")
 </dt> </dl>
 
-Specifica il formato della **proprietà AlertingManagedElement.** Il formato è CIMObjectPath, con il formato *<NamespacePath> : . " <ClassName> <Prop1> = \\ <Value1> \\ ", <Prop2> = \\ " <Value2> \\ " " "*, che specifica un'istanza nello schema CIM.
+Specifica il formato della **proprietà AlertingManagedElement.** Il formato è CIMObjectPath, con il formato *&lt; NamespacePath &gt; : &lt; ClassName &gt; . &lt; Prop1 &gt; = \\ " &lt; Value1 &gt; \\ ", " &lt; Prop2 &gt; = \\ " &lt; Value2 &gt; \\ "*, che specifica un'istanza nello schema CIM.
 
-Questa proprietà viene ereditata dalla **classe \_ CIM AlertIndication.**
+Questa proprietà viene ereditata dalla **classe CIM \_ AlertIndication.**
 
 I valori possibili sono:
 
@@ -181,9 +181,9 @@ Tipo di dati: **stringa**
 Tipo di accesso: sola lettura
 </dt> </dl>
 
-Identifica in modo univoco, nell'ambito **della proprietà OwningEntity,** il formato della **proprietà** Message. I valori possibili per questa proprietà sono:
+Identifica in modo univoco, nell'ambito **della proprietà OwningEntity,** il formato della **proprietà Message.** I valori possibili per questa proprietà sono:
 
-32930 ("Archiviazione di velocità effettiva insufficiente del pool QoS")
+32930 ("messaggio Archiviazione di velocità effettiva insufficiente del pool QoS")
 
 </dd> <dt>
 
@@ -198,11 +198,11 @@ Tipo di accesso: sola lettura
 
 Stringa che definisce i valori "Other" per **AlertingManagedElement.** Questo valore DEVE essere impostato su un valore non NULL quando **AlertingManagedElement** è impostato su un valore pari a 1 ("Altro"). Per tutti gli altri valori **di AlertingManagedElement,** il valore di questa stringa deve essere impostato su NULL.
 
-Questa proprietà viene ereditata dalla **classe \_ CIM AlertIndication.**
+Questa proprietà viene ereditata dalla **classe CIM \_ AlertIndication.**
 
 </dd> <dt>
 
-**OwningEntity**
+**ProprietàEntity**
 </dt> <dd> <dl> <dt>
 
 Tipo di dati: **stringa**
@@ -247,7 +247,7 @@ Tipo di dati: **uint16**
 Tipo di accesso: sola lettura
 </dt> </dl>
 
-Descrive la probabile causa della situazione che ha causato l'indicazione di avviso.
+Descrive la causa probabile della situazione che ha causato l'indicazione di avviso.
 
 <dl> <dt>
 
@@ -299,7 +299,7 @@ Quando un client riceve un evento **Msvm \_ StorageAlert,** se il valore della p
 
 <dl> <dt>
 
-[**CIM \_ AlertIndication**](cim-alertindication.md)
+[**Avviso \_ CIMIndication**](cim-alertindication.md)
 </dt> <dt>
 
 [**Msvm \_ LogicalDisk**](msvm-logicaldisk.md)

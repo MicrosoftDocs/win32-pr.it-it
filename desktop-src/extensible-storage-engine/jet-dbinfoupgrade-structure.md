@@ -15,12 +15,12 @@ api_type:
 - COM
 api_location: ''
 ROBOTS: INDEX,FOLLOW
-ms.openlocfilehash: 57c9265f45412bd31e087a52ab2b923c9c55c430
-ms.sourcegitcommit: 9b5faa61c38b2d0c432b7f2dbee8c127b0e28a7e
+ms.openlocfilehash: 0e2e6d6e812b5f56c89eba2e4b19d2730d589548
+ms.sourcegitcommit: 4665ebce0c106bdb52eef36e544280b496b6f50b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/19/2021
-ms.locfileid: "122467658"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "122985204"
 ---
 # <a name="jet_dbinfoupgrade-structure"></a>Struttura JET_DBINFOUPGRADE
 
@@ -29,7 +29,7 @@ _**Si applica a:** Windows | Windows Server_
 
 ## <a name="jet_dbinfoupgrade-structure"></a>Struttura JET_DBINFOUPGRADE
 
-La **JET_DBINFOUPGRADE** contiene informazioni sullo stato di aggiornamento del database. Questo valore viene recuperato solo se **JET_DBINFOUPGRADE** stato passato a [JetGetDatabaseInfo](./jetgetdatabaseinfo-function.md) o [JetGetDatabaseFileInfo.](./jetgetdatabasefileinfo-function.md) Questa struttura non è necessaria per le versioni correnti del sistema operativo del motore di database.
+La **JET_DBINFOUPGRADE** contiene informazioni sullo stato di aggiornamento del database. Questo valore viene recuperato solo se **JET_DBINFOUPGRADE** stato passato a [JetGetDatabaseInfo](./jetgetdatabaseinfo-function.md) o [JetGetDatabaseFileInfo](./jetgetdatabasefileinfo-function.md). Questa struttura non è necessaria per le versioni correnti del sistema operativo del motore di database.
 
 ```cpp
     typedef struct {
@@ -94,7 +94,11 @@ Una **JET_DBINFOUPGRADE** viene popolata da una chiamata a [JetGetDatabaseInfo](
 ### <a name="requirements"></a>Requisiti
 
 
-| | | <p><strong>Client</strong></p> | <p>Richiede Windows Vista, Windows XP o Windows 2000 Professional.</p> | | <p><strong>Server</strong></p> | <p>Richiede Windows Server 2008, Windows Server 2003 o Windows 2000 Server.</p> | | <p><strong>Intestazione</strong></p> | <p>Dichiarato in Esent.h.</p> | 
+| Requisito | Valore |
+|------------|----------|
+| <p><strong>Client</strong></p> | <p>Richiede Windows Vista, Windows XP o Windows 2000 Professional.</p> | 
+| <p><strong>Server</strong></p> | <p>Richiede Windows Server 2008, Windows Server 2003 o Windows 2000 Server.</p> | 
+| <p><strong>Intestazione</strong></p> | <p>Dichiarato in Esent.h.</p> | 
 
 
 

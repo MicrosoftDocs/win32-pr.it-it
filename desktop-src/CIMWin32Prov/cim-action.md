@@ -23,12 +23,12 @@ api_type:
 - DllExport
 api_location:
 - CIMWin32.dll
-ms.openlocfilehash: 171912934b7161a763bac75ceeb06a7ece0c521b4cefb163d67a9e2f42c34302
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 346c3d0e0100c0c61040b047849a7a81e430e8c6
+ms.sourcegitcommit: 61a4c522182aa1cacbf5669683d9570a3bf043b2
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119080995"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "122881197"
 ---
 # <a name="cim_action-class"></a>Classe di azione CIM \_
 
@@ -74,7 +74,7 @@ La **classe \_ Action CIM** include questi metodi.
 
 | Metodo                                              | Descrizione                                                   |
 |:----------------------------------------------------|:--------------------------------------------------------------|
-| [**evocare**](invoke-method-in-class-cim-action.md) | Consente di eseguire un'azione specifica. Non implementato da WMI.<br/> |
+| [**Evocare**](invoke-method-in-class-cim-action.md) | Consente di eseguire un'azione specifica. Non implementato da WMI.<br/> |
 
 
 
@@ -665,7 +665,7 @@ Mac OS 9
 
 <span id="Inferno"></span><span id="inferno"></span><span id="INFERNO"></span>
 
-<span id="Inferno"></span><span id="inferno"></span><span id="INFERNO"></span>**Insinale** (47)
+<span id="Inferno"></span><span id="inferno"></span><span id="INFERNO"></span>**Infernale** (47)
 
 
 </dt> <dd></dd> <dt>
@@ -794,8 +794,8 @@ Versione dell'operazione.
 
 La versione dell'operazione deve essere in uno dei formati seguenti:
 
--   <major>.<minor>.<revision>
--   <major>.<minor><letter><revision>
+-   &lt;major &gt; . &lt; minor &gt; . &lt; Revisione&gt;
+-   &lt;major &gt; . &lt; revisione &gt; &lt; di lettere &gt; &lt; secondarie&gt;
 
 </dd> </dl>
 

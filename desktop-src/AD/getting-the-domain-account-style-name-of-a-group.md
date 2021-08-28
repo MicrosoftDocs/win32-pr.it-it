@@ -1,22 +1,22 @@
 ---
 title: Recupero del nome Account-Style dominio di un gruppo
-description: Utenti, gruppi, computer e altre entità di sicurezza possono essere rappresentati in forma di account di dominio.
+description: Utenti, gruppi, computer e altre entità di sicurezza possono essere rappresentati nel formato dell'account di dominio.
 ms.assetid: 85627d2d-2845-4998-9957-ce0c8b6473bd
 ms.tgt_platform: multiple
 keywords:
-- groups AD , recupero del nome di dominio in stile account di un gruppo
+- groups AD , recupero del nome di dominio di tipo account di un gruppo
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 1cc1b5a076ab3e63059fb79fa784039a8fb2ffb0b1c6396392140b64fa36e16f
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: eac1a93689ab91d0fe4e349fefd99355a9273912
+ms.sourcegitcommit: 61a4c522182aa1cacbf5669683d9570a3bf043b2
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "118189090"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "122881420"
 ---
 # <a name="getting-the-domain-account-style-name-of-a-group"></a>Recupero del nome Account-Style dominio di un gruppo
 
-Utenti, gruppi, computer e altre entità di sicurezza possono essere rappresentati in forma di account di dominio. L'account di dominio (il nome di accesso usato nelle versioni precedenti di Windows NT) ha il formato seguente:
+Utenti, gruppi, computer e altre entità di sicurezza possono essere rappresentati nel formato dell'account di dominio. L'account di dominio (il nome di accesso usato nelle versioni precedenti di Windows NT) ha il formato seguente:
 
 
 ```C++
@@ -25,7 +25,7 @@ Utenti, gruppi, computer e altre entità di sicurezza possono essere rappresenta
 
 
 
-Dove " " è il nome del dominio Windows NT che contiene l'utente e " " è la proprietà <domain> <account> **samAccountName** dell'utente specificato. Ad esempio: "Fabrikam \\ jeffsmith".
+Dove " dominio " è il nome del Windows NT che contiene l'utente e " account " è la proprietà &lt; &gt; &lt; &gt; **samAccountName** dell'utente specificato. Ad esempio: "Fabrikam \\ jeffsmith".
 
 Il modulo dell'account di dominio può specificare il fiduciario in una ACE in un descrittore di sicurezza. Viene usato anche per il nome di accesso nei computer che eseguono Windows NT 4.0 e versioni precedenti.
 

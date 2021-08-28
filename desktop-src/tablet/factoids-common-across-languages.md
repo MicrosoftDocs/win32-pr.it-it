@@ -1,68 +1,31 @@
 ---
-description: Un numero di factoids descrive l'input comune a tutti i riconoscitori del linguaggio e non deve avere formati diversi per le diverse lingue. La tabella seguente elenca factoids comuni in tutti i linguaggi.
+description: Alcuni factoid descrivono l'input comune a tutti i riconoscitori linguistici e non devono avere formati diversi per lingue diverse. Nella tabella seguente sono elencati i factoid comuni in tutti i linguaggi.
 ms.assetid: dae4a28d-0332-4bb2-b040-13a959c7945e
-title: Factoids comuni tra lingue diverse
+title: Factoid comuni tra lingue diverse
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 1faefbb9991562535f711f867c45bd614c595941
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 407a82c72367d0123414f72b083b1d3416cfc958
+ms.sourcegitcommit: 9b5faa61c38b2d0c432b7f2dbee8c127b0e28a7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "106307492"
+ms.lasthandoff: 08/19/2021
+ms.locfileid: "122473877"
 ---
-# <a name="factoids-common-across-languages"></a>Factoids comuni tra lingue diverse
+# <a name="factoids-common-across-languages"></a>Factoid comuni tra lingue diverse
 
-Un numero di factoids descrive l'input comune a tutti i riconoscitori del linguaggio e non deve avere formati diversi per le diverse lingue. La tabella seguente elenca factoids comuni in tutti i linguaggi.
+Alcuni factoid descrivono l'input comune a tutti i riconoscitori linguistici e non devono avere formati diversi per lingue diverse. Nella tabella seguente sono elencati i factoid comuni in tutti i linguaggi.
 
 
 
-<table>
-<colgroup>
-<col style="width: 33%" />
-<col style="width: 33%" />
-<col style="width: 33%" />
-</colgroup>
-<thead>
-<tr class="header">
-<th>Factoid</th>
-<th>Definizione</th>
-<th>Esempio</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td><strong>Cifre</strong></td>
-<td>Imposta la distorsione per una singola cifra. Il riconoscimento è distorto per restituire solo le cifre singole quando questo controllo è impostato.<br/></td>
-<td>0-9<br/></td>
-</tr>
-<tr class="even">
-<td><strong>Posta elettronica</strong></td>
-<td>Imposta la distorsione per un indirizzo di posta elettronica.<br/></td>
-<td>someone@example.com<br/></td>
-</tr>
-<tr class="odd">
-<td><strong>Web</strong></td>
-<td>Imposta la distorsione per diversi formati di URL.<br/>
-<blockquote>
-[!Note]<br />
-Le impostazioni predefinite per il riconoscimento includono il controllo <strong>Web</strong> . Per questo motivo, è possibile che non si noti una grande differenza tra il controllo dell'oggetto <strong>Web</strong> e l'impostazione predefinita. Tuttavia, il controllo <strong>Web</strong> consente di eliminare gli spazi tra le parole in un URL.
-</blockquote>
-<br/></td>
-<td>http: \\ Microsoft.NET<br/> https://microsoft.us/<br/> https: \\ www.Microsoft.au \<br/> https://microsoft.com<br/> www.microsoft_world. com<br/> www.microsoft.us \<br/> http: \\www.microsoft.com\myfile.htm<br/> http: \\www.microsoft.com\myfile.html<br/> http: \\ www. Microsoft. com\myfile.asp<br/> http: \\ www.Microsoft.uk<br/> http: \\ www.Microsoft.info<br/> www.microsoft.biz<br/></td>
-</tr>
-<tr class="even">
-<td><strong>Default</strong></td>
-<td>Restituisce le impostazioni predefinite del riconoscimento.<br/></td>
-<td>L'impostazione predefinita per factoids per le lingue occidentali include il dizionario di sistema, il dizionario utenti, le varie punteggiatura e il factoids <strong>Web</strong> e il <strong>numero</strong> .<br/> L'impostazione predefinita per factoids per le lingue asiatiche orientali include tutti i caratteri supportati dal riconoscimento.<br/></td>
-</tr>
-<tr class="odd">
-<td><strong>Nessuno</strong></td>
-<td>Disabilita tutti factoids, dizionari e il modello di linguaggio.<br/></td>
-<td>Questo controllo del controllo deve essere usato solo quando non si vuole che il riconoscimento usi alcuna regola di grammatica o dizionari, incluso il dizionario di sistema. Questo controllo è utile per l'input di stringhe casuali, ad esempio codici prodotto. Non usare il flag di coercizione con questo controllo del controllo.<br/></td>
-</tr>
-</tbody>
-</table>
+
+| Factoid | Definizione | Esempio | 
+|---------|------------|----------|
+| <strong>Cifre</strong> | Imposta la distorsione per una singola cifra. Il riconoscitore è orientato a restituire solo cifre singole quando questo factoid è impostato.<br /> | 0-9<br /> | 
+| <strong>Posta elettronica</strong> | Imposta la distorsione per un indirizzo di posta elettronica.<br /> | someone@example.com<br /> | 
+| <strong>Web</strong> | Imposta la distorsione per vari formati di URL.<br /><blockquote>[!Note]<br />Le impostazioni predefinite per il riconoscimento includono il factoid <strong>Web.</strong> Per questo, è possibile che non si noti una grande differenza tra il factoid <strong>Web</strong> e l'impostazione predefinita. Tuttavia, il factoid <strong>Web</strong> consente di eliminare gli spazi tra le parole in un URL.</blockquote><br /> | http: \\ microsoft.net<br /> https://microsoft.us/<br /> https: \\ www.microsoft.au \<br />https://microsoft.com<br /> www.microsoft_world.com<br /> www.microsoft.us \<br /> http: \\www.microsoft.com\myfile.htm<br /> http: \\www.microsoft.com\myfile.html<br /> http: \\ www.microsoft.com\myfile.asp<br /> http: \\ www.microsoft.uk<br /> http: \\ www.microsoft.info<br /> www.microsoft.biz<br /> | 
+| <strong>Default</strong> | Restituisce il riconoscitore alle impostazioni predefinite.<br /> | L'impostazione predefinita per i factoid per le lingue occidentali include il dizionario di sistema, il dizionario utente, varie punteggiatura e i factoid <strong>Web</strong> e <strong>Number.</strong><br /> L'impostazione predefinita per i factoid per le lingue dell'Asia orientale include tutti i caratteri supportati dal sistema di riconoscimento.<br /> | 
+| <strong>Nessuno</strong> | Disabilita tutti i factoid, i dizionari e il modello linguistico.<br /> | Questo factoid deve essere usato solo quando non si vuole che il sistema di riconoscimento usi regole grammaticali o dizionari, incluso il dizionario di sistema. Questo factoid è utile per l'input di stringhe casuali, ad esempio codici prodotto. Non usare il flag Coerce con questo factoid.<br /> | 
+
 
 
 

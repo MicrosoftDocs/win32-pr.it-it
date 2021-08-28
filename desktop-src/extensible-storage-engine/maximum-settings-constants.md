@@ -1,6 +1,6 @@
 ---
 description: 'Altre informazioni su: Costanti Impostazioni massime'
-title: Costanti Impostazioni massime
+title: Numero massimo Impostazioni costanti
 TOCTitle: Maximum Settings Constants
 ms:assetid: 1111051f-55af-4c33-be38-6a3973c2c815
 ms:mtpsurl: https://msdn.microsoft.com/library/Gg269189(v=EXCHG.10)
@@ -15,19 +15,19 @@ api_type:
 - COM
 api_location: ''
 ROBOTS: INDEX,FOLLOW
-ms.openlocfilehash: fa6ff7044dcd43e4b51c801784d29955f3d34a15
-ms.sourcegitcommit: 4665ebce0c106bdb52eef36e544280b496b6f50b
+ms.openlocfilehash: 38184176e5803cfd22d7b63f9d85e5b62f7ecff1
+ms.sourcegitcommit: 9b5faa61c38b2d0c432b7f2dbee8c127b0e28a7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/26/2021
-ms.locfileid: "122982224"
+ms.lasthandoff: 08/19/2021
+ms.locfileid: "122478967"
 ---
-# <a name="maximum-settings-constants"></a>Costanti Impostazioni massime
+# <a name="maximum-settings-constants"></a>Numero massimo Impostazioni costanti
 
 
 _**Si applica a:** Windows | Windows Server_
 
-## <a name="maximum-settings-constants"></a>Costanti Impostazioni massime
+## <a name="maximum-settings-constants"></a>Numero massimo Impostazioni costanti
 
 Queste costanti forniscono le impostazioni massime consentite per gli elementi in un database ESE.
 
@@ -49,7 +49,7 @@ Queste costanti forniscono le impostazioni massime consentite per gli elementi i
 | <p>JET_cbKeyMost4KBytePage<br />1000</p> | <p>Dimensione massima configurabile consentita per una chiave di indice in un database che usa pagine di 4096 byte. Vedere <a href="gg269186(v=exchg.10).md">JET_INDEXCREATE</a> per altre informazioni.</p><p><strong>Windows Vista:</strong> JET_cbKeyMost4KBytePage è stato introdotto in Windows Vista.</p> | 
 | <p>JET_cbKeyMost8KBytePage<br />2000</p> | <p>Dimensione massima configurabile consentita per una chiave di indice in un database che usa pagine di 8192 byte. Vedere <a href="gg269186(v=exchg.10).md">JET_INDEXCREATE</a> per altre informazioni.</p><p><strong>Windows Vista:</strong> JET_cbKeyMost8KBytePage è stato introdotto in Windows Vista</p> | 
 | <p>JET_cbKeyMostMin<br />255</p> | <p>Dimensione massima minima consentita per una chiave di indice. Vedere <a href="gg269186(v=exchg.10).md">JET_INDEXCREATE</a> per altre informazioni.</p><p><strong>Windows Vista:</strong> JET_cbKeyMostMin è stato introdotto in Windows Vista.</p> | 
-| <p>JET_cbLimitKeyMost<br />256</p> | <p>Dimensione massima della chiave quando la chiave viene formata usando un limite <em>grbit,</em>ad esempio JET_bitStrLimit, usato nella <a href="gg269329(v=exchg.10).md">funzione JetMakeKey.</a></p> | 
+| <p>JET_cbLimitKeyMost<br />256</p> | <p>Dimensione massima della chiave quando la chiave viene formata usando un <em>grbit</em>limite, ad esempio JET_bitStrLimit, usato nella <a href="gg269329(v=exchg.10).md">funzione JetMakeKey.</a></p> | 
 | <p>JET_cbPrimaryKeyMost<br />255</p> | <p>Dimensione massima dell'indice primario. Questo è ora obsoleto.</p> | 
 | <p>JET_cbSecondaryKeyMost<br />255</p> | <p>Dimensione massima dell'indice secondario. Questo è ora obsoleto.</p> | 
 | <p>JET_ccolKeyMost<br />12</p> | <p>Numero massimo di componenti in una chiave di ordinamento o di indice.</p><p><strong>Windows Vista:</strong> In Windows Vista e versioni successive di Windows il valore è 16.</p> | 
@@ -63,10 +63,6 @@ Queste costanti forniscono le impostazioni massime consentite per gli elementi i
 ### <a name="requirements"></a>Requisiti
 
 
-| Requisito | Valore |
-|------------|----------|
-| <p><strong>Client</strong></p> | <p>Richiede Windows Vista, Windows XP o Windows 2000 Professional.</p> | 
-| <p><strong>Server</strong></p> | <p>Richiede Windows Server 2008, Windows Server 2003 o Windows 2000 Server.</p> | 
-| <p><strong>Intestazione</strong></p> | <p>Dichiarato in Esent.h.</p> | 
+| | | <p><strong>Client</strong></p> | <p>Richiede Windows Vista, Windows XP o Windows 2000 Professional.</p> | | <p><strong>Server</strong></p> | <p>Richiede Windows Server 2008, Windows Server 2003 o Windows 2000 Server.</p> | | <p><strong>Intestazione</strong></p> | <p>Dichiarato in Esent.h.</p> | 
 
 

@@ -4,22 +4,22 @@ ms.assetid: 35e1ccc2-ffc1-47a6-aba8-5a5cb442e8ae
 title: ParameterRef
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 1ff3b0e16f53e8399a5bbbb5974a05fd6886cdd2
-ms.sourcegitcommit: 5d4e99f4c8f42f5f543e52cb9beb9fb13ec56c5f
+ms.openlocfilehash: fb3655ab62c8d11b4e9ee777d01a8e6bf5d63a1f
+ms.sourcegitcommit: 61a4c522182aa1cacbf5669683d9570a3bf043b2
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/19/2021
-ms.locfileid: "112407184"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "122884114"
 ---
 # <a name="parameterref"></a>ParameterRef
 
-Questo argomento non è corrente. Per le informazioni più aggiornate, vedere Print [Schema Specification](https://download.microsoft.com/download/D/E/C/DECA6E6B-3E81-48E7-B7EF-6D92A547D03C/print-schema-spec-2-0.zip).
+Questo argomento non è corrente. Per le informazioni più aggiornate, vedere Specifica [dello schema di stampa](https://download.microsoft.com/download/D/E/C/DECA6E6B-3E81-48E7-B7EF-6D92A547D03C/print-schema-spec-2-0.zip).
 
-Un elemento ParameterRef definisce un riferimento a un elemento ParameterInit. Un elemento ScoredProperty che contiene un elemento ParameterRef non ha un elemento Value impostato in modo esplicito. L'elemento ScoredProperty riceve invece il valore dall'elemento ParameterInit a cui fa riferimento un elemento ParameterRef.
+Un elemento ParameterRef definisce un riferimento a un elemento ParameterInit. Un elemento ScoredProperty che contiene un elemento ParameterRef non dispone di un elemento Value impostato in modo esplicito. L'elemento ScoredProperty riceve invece il valore dall'elemento ParameterInit a cui fa riferimento un elemento ParameterRef.
 
-## <a name="element-tag"></a>Element Tag
+## <a name="element-tag"></a>Tag di elemento
 
-<ParameterRef>
+&lt;ParameterRef&gt;
 
 ## <a name="xml-attributes"></a>Attributi XML
 
@@ -35,7 +35,7 @@ Nella tabella seguente sono elencati gli attributi XML che possono essere relati
 
  
 
-Per altre informazioni, vedere la [sezione Attributi](xml-attributes.md) XML.
+Per altre informazioni, vedere la [sezione Attributi XML.](xml-attributes.md)
 
 ## <a name="element-information"></a>Informazioni sull'elemento
 
@@ -43,10 +43,10 @@ Nella tabella seguente sono elencati gli elementi che possono essere elementi pa
 
 
 
-| Categoria                   | Dettagli                                                                                           |
+| Category                   | Dettagli                                                                                           |
 |----------------------------|---------------------------------------------------------------------------------------------------|
 | Elementi padre<br/> | ScoredProperty <br/>                                                                        |
-| Elementi figlio<br/>  | Non consentito.<br/>                                                                        |
+| Elementi figlio<br/>  | Nessuna consentita.<br/>                                                                        |
 | Questo elemento<br/>    | Non sono consentiti dati di tipo carattere.<br/> Gli elementi di pari livello figlio duplicati non sono consentiti.<br/> |
 
 
@@ -55,7 +55,7 @@ Nella tabella seguente sono elencati gli elementi che possono essere elementi pa
 
 ## <a name="configuration-dependencies"></a>Dipendenze di configurazione
 
-Gli elementi ParameterRef potrebbero non avere dipendenze di configurazione.
+Gli elementi ParameterRef non possono avere dipendenze di configurazione.
 
 ## <a name="example"></a>Esempio
 

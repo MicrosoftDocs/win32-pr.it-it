@@ -1,19 +1,19 @@
 ---
-description: Questo <searchConnectorDescriptionList> elemento contiene un elenco di connettori di ricerca che eseguono il mapping alle posizioni incluse nella libreria. Ogni connettore di ricerca viene definito da un <searchConnectorDescription> elemento. Questo elemento è facoltativo e non ha attributi.
+description: Questo &lt; elemento searchConnectorDescriptionList contiene un elenco di connettori di ricerca mappati alle &gt; posizioni incluse in questa libreria. Ogni connettore di ricerca è definito da un &lt; elemento searchConnectorDescription. &gt; Questo elemento è facoltativo e non ha attributi.
 ms.assetid: 58A7BC21-0EB8-4bcf-98EE-31A56A4BC58C
-title: Elemento searchConnectorDescriptionList (schema della libreria)
+title: Elemento searchConnectorDescriptionList (schema di libreria)
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: a4d7295796f205ca0d20f220ba827abfd5470bdb
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 04edc3a3cb7353529dccca66ffa15e1604bdd1c0
+ms.sourcegitcommit: 61a4c522182aa1cacbf5669683d9570a3bf043b2
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "104980463"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "122885607"
 ---
-# <a name="searchconnectordescriptionlist-element-library-schema"></a>Elemento searchConnectorDescriptionList (schema della libreria)
+# <a name="searchconnectordescriptionlist-element-library-schema"></a>Elemento searchConnectorDescriptionList (schema di libreria)
 
-Questo <searchConnectorDescriptionList> elemento contiene un elenco di connettori di ricerca che eseguono il mapping alle posizioni incluse nella libreria. Ogni connettore di ricerca viene definito da un <searchConnectorDescription> elemento. Questo elemento è facoltativo e non ha attributi.
+Questo &lt; elemento searchConnectorDescriptionList contiene un elenco di connettori di ricerca mappati alle &gt; posizioni incluse in questa libreria. Ogni connettore di ricerca è definito da un &lt; elemento searchConnectorDescription. &gt; Questo elemento è facoltativo e non ha attributi.
 
 ## <a name="syntax"></a>Sintassi
 
@@ -42,16 +42,16 @@ Questo <searchConnectorDescriptionList> elemento contiene un elenco di connettor
 
 ## <a name="remarks"></a>Commenti
 
-Non è possibile includere in una libreria i connettori di ricerca per gli ambiti di ricerca federata e di gestori di protocollo di Windows.
+I connettori di ricerca per Windows di ricerca federata e gli ambiti del gestore di protocollo non possono essere inclusi in una libreria.
 
 ## <a name="related-topics"></a>Argomenti correlati
 
 <dl> <dt>
 
-[Schema Descrizione libreria](library-schema-entry.md)
+[Schema di descrizione della libreria](library-schema-entry.md)
 </dt> <dt>
 
-[Cerca nello schema di descrizione del connettore](/previous-versions//dd743009(v=vs.85))
+[Schema di descrizione del connettore di ricerca](/previous-versions//dd743009(v=vs.85))
 </dt> </dl>
 
  

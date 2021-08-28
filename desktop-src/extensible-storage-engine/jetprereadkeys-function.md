@@ -18,12 +18,12 @@ api_type:
 api_location:
 - ESENT.DLL
 ROBOTS: INDEX,FOLLOW
-ms.openlocfilehash: 067fe72e2e00fc01b433dbda819d5e89336fc68c
-ms.sourcegitcommit: 9b5faa61c38b2d0c432b7f2dbee8c127b0e28a7e
+ms.openlocfilehash: 24547a7970270943546e5fcfbc026ff24be144b0
+ms.sourcegitcommit: 4665ebce0c106bdb52eef36e544280b496b6f50b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/19/2021
-ms.locfileid: "122467188"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "122986644"
 ---
 # <a name="jetprereadkeys-function"></a>Funzione JetPrereadKeys
 
@@ -98,5 +98,11 @@ Questa funzione restituisce il [JET_ERR](./jet-err.md) dati con uno dei codici r
 #### <a name="requirements"></a>Requisiti
 
 
-| | | <p><strong>Client</strong></p> | <p>Richiede Windows 7.</p> | | <p><strong>Server</strong></p> | <p>Richiede Windows Server 2008 R2.</p> | | <p><strong>Intestazione</strong></p> | <p>Dichiarato in Esent.h.</p> | | <p><strong>Libreria</strong></p> | <p>Usare ESENT.lib.</p> | | <p><strong>DLL</strong></p> | <p>Richiede ESENT.dll.</p> | 
+| Requisito | Valore |
+|------------|----------|
+| <p><strong>Client</strong></p> | <p>Richiede Windows 7.</p> | 
+| <p><strong>Server</strong></p> | <p>Richiede Windows Server 2008 R2.</p> | 
+| <p><strong>Intestazione</strong></p> | <p>Dichiarato in Esent.h.</p> | 
+| <p><strong>Libreria</strong></p> | <p>Usare ESENT.lib.</p> | 
+| <p><strong>DLL</strong></p> | <p>Richiede ESENT.dll.</p> | 
 

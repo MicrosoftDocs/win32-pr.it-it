@@ -1,19 +1,19 @@
 ---
-description: L' <scopeItem> elemento rappresenta una singola voce nella tabella dell'ambito di esclusione/inclusione.
+description: "&lt;L'elemento scopeItem &gt; rappresenta una singola voce nella tabella dell'ambito di esclusione/inclusione."
 ms.assetid: 18a58b3b-771c-4829-b3d4-253383b4bee8
 title: Elemento scopeItem (schema del connettore di ricerca)
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 3c2033202be6d904880ec9c4efa1c60db4bb7e50
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 46a585acd065efcbc58091d4c8bebce733ed2c73
+ms.sourcegitcommit: 61a4c522182aa1cacbf5669683d9570a3bf043b2
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104128491"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "122880450"
 ---
 # <a name="scopeitem-element-search-connector-schema"></a>Elemento scopeItem (schema del connettore di ricerca)
 
-L' <scopeItem> elemento rappresenta una singola voce nella tabella dell'ambito di esclusione/inclusione. <scopeItem> estende il tipo shellLinkType standard aggiungendo tre nuovi elementi che controllano l'inclusione e l'esclusione di cartelle, controllano la profondità dei risultati e specificano la posizione dell'ambito. Se l' <scope> elemento esiste, questo elemento è obbligatorio. Ha tre elementi figlio e nessun attributo.
+&lt;L'elemento scopeItem &gt; rappresenta una singola voce nella tabella dell'ambito di esclusione/inclusione. &lt;scopeItem estende il tipo shellLinkType standard aggiungendo tre nuovi elementi che controllano l'inclusione e l'esclusione di cartelle, controllano la profondità dei risultati e specificano la posizione &gt; dell'ambito. Se &lt; &gt; l'elemento scope esiste, questo elemento è obbligatorio. Ha tre elementi figlio e nessun attributo.
 
 ## <a name="syntax"></a>Sintassi
 
@@ -57,9 +57,9 @@ L' <scopeItem> elemento rappresenta una singola voce nella tabella dell'ambito d
 
 | Elemento padre                                                           | Elementi figlio                                                                        |
 |--------------------------------------------------------------------------|---------------------------------------------------------------------------------------|
-| [Elemento Scope (Schema connettore di ricerca)](search-schema-sconn-scope.md) | [elemento Scope (Schema connettore di ricerca)](search-schema-sconn-scope-mode.md).        |
-|                                                                          | [elemento Scope (Schema connettore di ricerca)](search-schema-sconn-scope-depth.md).       |
-|                                                                          | [elemento URL scopeItem (Schema connettore di ricerca)](search-schema-sconn-scope-url.md). |
+| [Elemento scope (schema del connettore di ricerca)](search-schema-sconn-scope.md) | [Elemento scope (schema del connettore di ricerca)](search-schema-sconn-scope-mode.md).        |
+|                                                                          | [Elemento scope (schema del connettore di ricerca)](search-schema-sconn-scope-depth.md).       |
+|                                                                          | [Elemento url scopeItem (schema del connettore di ricerca)](search-schema-sconn-scope-url.md). |
 
 
 
@@ -67,11 +67,11 @@ L' <scopeItem> elemento rappresenta una singola voce nella tabella dell'ambito d
 
 ## <a name="remarks"></a>Commenti
 
-Usare gli <scope> <scopeItem> elementi e per identificare i percorsi in cui eseguire la ricerca e quali percorsi devono essere esclusi dalla ricerca.
+Usare gli elementi scope e scopeItem per identificare i percorsi in cui eseguire la ricerca &lt; e i percorsi da escludere dalla &gt; &lt; &gt; ricerca.
 
 ## <a name="example"></a>Esempio
 
-Nell'esempio seguente viene illustrato un ambito di ricerca che include C: \\ ExampleFolder e tutte le relative cartelle figlio ad eccezione di c: \\ ExampleFolder \\ ExcludeMe.
+L'esempio seguente illustra un ambito di ricerca che include C: ExampleFolder e tutte le cartelle figlio ad \\ eccezione di C: \\ ExampleFolder \\ ExcludeMe.
 
 
 ```

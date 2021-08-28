@@ -5,12 +5,12 @@ ms.tgt_platform: multiple
 title: Errori da 1081 a 1090
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 5a80399ef61bce644813447559a76bf9710873be
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 4c1ce7b1a8c575067fe2231108e0d314af2f8dc8
+ms.sourcegitcommit: 61a4c522182aa1cacbf5669683d9570a3bf043b2
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "106310363"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "122879708"
 ---
 # <a name="errors-1081-through-1090"></a>Errori da 1081 a 1090
 
@@ -36,10 +36,10 @@ Descrive gli errori del provider SNMP WMI da 1081 a 1090.
 
 <dl> <dt>
 
-<span id="_1081__Fatal_____fileName_line____Symbol__identifier__not_present_in_imported_module__identifier__"></span><span id="_1081__fatal_____filename_line____symbol__identifier__not_present_in_imported_module__identifier__"></span><span id="_1081__FATAL_____FILENAME_LINE____SYMBOL__IDENTIFIER__NOT_PRESENT_IN_IMPORTED_MODULE__IDENTIFIER__"></span>**<1081,> irreversibile: " <fileName> riga \#>: simbolo <identifier> non presente nel modulo importato <identifier> "**
+<span id="_1081__Fatal_____fileName_line____Symbol__identifier__not_present_in_imported_module__identifier__"></span><span id="_1081__fatal_____filename_line____symbol__identifier__not_present_in_imported_module__identifier__"></span><span id="_1081__FATAL_____FILENAME_LINE____SYMBOL__IDENTIFIER__NOT_PRESENT_IN_IMPORTED_MODULE__IDENTIFIER__"></span>**<1081, Fatal>: " &lt; fileName &gt; line>: Identificatore di simbolo non presente \# &lt; &gt; nell'identificatore del modulo &lt; importato &gt; "**
 </dt> <dd>
 
-Errore semantico del modulo nel riferimento incrociato, specifico di SNMPv1 o SNMPv2C. Un simbolo importato da un modulo non viene risolto in alcun elemento del modulo. Questo errore si verifica se si fa effettivamente riferimento a tale simbolo nel MIB.
+Errore semantico del modulo nel riferimento incrociato, specifico di SNMPv1 o SNMPv2C. Un simbolo importato da un modulo non viene risolto in alcun elemento in tale modulo. Se si fa effettivamente riferimento a tale simbolo nel MIB, si verifica questo errore.
 
 </dd> </dl>
 
@@ -47,10 +47,10 @@ Errore semantico del modulo nel riferimento incrociato, specifico di SNMPv1 o SN
 
 <dl> <dt>
 
-<span id="_1082__Fatal_____fileName___line____Invalid_STATUS_clause__clause__"></span><span id="_1082__fatal_____filename___line____invalid_status_clause__clause__"></span><span id="_1082__FATAL_____FILENAME___LINE____INVALID_STATUS_CLAUSE__CLAUSE__"></span>**<1082,> irreversibile: " <fileName> : <riga \#>: clausola di stato non valida <clause> "**
+<span id="_1082__Fatal_____fileName___line____Invalid_STATUS_clause__clause__"></span><span id="_1082__fatal_____filename___line____invalid_status_clause__clause__"></span><span id="_1082__FATAL_____FILENAME___LINE____INVALID_STATUS_CLAUSE__CLAUSE__"></span>**<1082, Fatal>: " &lt; fileName &gt; :<line \#>: Clausola STATUS &lt; non valida &gt; "**
 </dt> <dd>
 
-Chiamata macro **oggetto-identità** , errore semantico del modulo specifico di SNMPv2C. La clausola STATUS della chiamata dell'identità di un **oggetto** deve essere "Current", "deprecated" o "obsolete".
+Chiamata alla macro **OBJECT-IDENTITY,** errore semantico del modulo specifico di SNMPv2C. La clausola STATUS di una chiamata **OBJECT-IDENTITY** deve essere "current", "deprecata" o "obsoleta".
 
 </dd> </dl>
 
@@ -58,10 +58,10 @@ Chiamata macro **oggetto-identità** , errore semantico del modulo specifico di 
 
 <dl> <dt>
 
-<span id="_1084__Fatal____fileName__line____MODULE-IDENTITY_required_after_the_IMPORTS_section_for_all_SNMPv2_modules_"></span><span id="_1084__fatal____filename__line____module-identity_required_after_the_imports_section_for_all_snmpv2_modules_"></span><span id="_1084__FATAL____FILENAME__LINE____MODULE-IDENTITY_REQUIRED_AFTER_THE_IMPORTS_SECTION_FOR_ALL_SNMPV2_MODULES_"></span>**<1084,> irreversibile: "fileName><line \#>: module-Identity required after the IMports section for all SNMPv2 modules"**
+<span id="_1084__Fatal____fileName__line____MODULE-IDENTITY_required_after_the_IMPORTS_section_for_all_SNMPv2_modules_"></span><span id="_1084__fatal____filename__line____module-identity_required_after_the_imports_section_for_all_snmpv2_modules_"></span><span id="_1084__FATAL____FILENAME__LINE____MODULE-IDENTITY_REQUIRED_AFTER_THE_IMPORTS_SECTION_FOR_ALL_SNMPV2_MODULES_"></span>**<1084, Fatal>: "fileName><line>: MODULE-IDENTITY obbligatorio dopo la sezione IMPORTS per tutti i moduli \# SNMPv2"**
 </dt> <dd>
 
-Chiamata macro **modulo-identità** , errore semantico del modulo specifico di SNMPv2C. Deve essere presente una sola chiamata di **identità del modulo** in un SNMPv2c MIB, immediatamente dopo la sezione Imports.
+Chiamata di macro **MODULE-IDENTITY,** errore semantico del modulo specifico di SNMPv2C. Deve essere presente una sola chiamata **MODULE-IDENTITY** in un MIB SNMPv2C, immediatamente dopo la sezione IMPORTS.
 
 </dd> </dl>
 
@@ -69,10 +69,10 @@ Chiamata macro **modulo-identità** , errore semantico del modulo specifico di S
 
 <dl> <dt>
 
-<span id="_1085__Warning_____fileName__line____No_groups_found_in_module__name_._Could_not_fabricate_MODULE-IDENTITY._Attempt_to_load_the_module_into_the_SMIR_will_fail_"></span><span id="_1085__warning_____filename__line____no_groups_found_in_module__name_._could_not_fabricate_module-identity._attempt_to_load_the_module_into_the_smir_will_fail_"></span><span id="_1085__WARNING_____FILENAME__LINE____NO_GROUPS_FOUND_IN_MODULE__NAME_._COULD_NOT_FABRICATE_MODULE-IDENTITY._ATTEMPT_TO_LOAD_THE_MODULE_INTO_THE_SMIR_WILL_FAIL_"></span>**<1085, avviso>: " <fileName><riga \#>: non sono stati trovati gruppi nel modulo <name> . Non è stato possibile fabbricare l'identità del modulo. Il tentativo di caricare il modulo in archivio SMIR avrà esito negativo "**
+<span id="_1085__Warning_____fileName__line____No_groups_found_in_module__name_._Could_not_fabricate_MODULE-IDENTITY._Attempt_to_load_the_module_into_the_SMIR_will_fail_"></span><span id="_1085__warning_____filename__line____no_groups_found_in_module__name_._could_not_fabricate_module-identity._attempt_to_load_the_module_into_the_smir_will_fail_"></span><span id="_1085__WARNING_____FILENAME__LINE____NO_GROUPS_FOUND_IN_MODULE__NAME_._COULD_NOT_FABRICATE_MODULE-IDENTITY._ATTEMPT_TO_LOAD_THE_MODULE_INTO_THE_SMIR_WILL_FAIL_"></span>**<1085, Avviso>: " fileName<&lt; riga>: Nessun gruppo &gt; trovato nel nome del modulo \# &lt; &gt; . Impossibile creare MODULE-IDENTITY. Il tentativo di caricare il modulo in SMIR avrà esito negativo"**
 </dt> <dd>
 
-Avviso specifico del modulo SNMPv1 semantico. Questo errore viene generato se non vengono trovati gruppi di oggetti in un modulo.
+Avviso semantico del modulo specifico di SNMPv1. Questo errore viene generato se non vengono trovati gruppi di oggetti in un modulo.
 
 </dd> </dl>
 
@@ -80,10 +80,10 @@ Avviso specifico del modulo SNMPv1 semantico. Questo errore viene generato se no
 
 <dl> <dt>
 
-<span id="_1086__Warning_____fileName__line____No_groups_found_in_module__name__"></span><span id="_1086__warning_____filename__line____no_groups_found_in_module__name__"></span><span id="_1086__WARNING_____FILENAME__LINE____NO_GROUPS_FOUND_IN_MODULE__NAME__"></span>**<1086, avviso>: " <fileName><riga \#>: non sono stati trovati gruppi nel modulo <name> "**
+<span id="_1086__Warning_____fileName__line____No_groups_found_in_module__name__"></span><span id="_1086__warning_____filename__line____no_groups_found_in_module__name__"></span><span id="_1086__WARNING_____FILENAME__LINE____NO_GROUPS_FOUND_IN_MODULE__NAME__"></span>**<1086, Avviso>: " &lt; fileName &gt;<riga \#>: Nessun &lt; gruppo trovato nel nome del modulo &gt; "**
 </dt> <dd>
 
-Avviso specifico del modulo SNMPv1 semantico. Questo errore viene generato se non vengono trovati gruppi di oggetti in un modulo.
+Avviso semantico del modulo specifico di SNMPv1. Questo errore viene generato se non vengono trovati gruppi di oggetti in un modulo.
 
 </dd> </dl>
 
@@ -91,10 +91,10 @@ Avviso specifico del modulo SNMPv1 semantico. Questo errore viene generato se no
 
 <dl> <dt>
 
-<span id="_1087._Fatal_____fileName__line____Invalid_STATUS_clause__clause__for_a_TEXTUAL-CONVENTION_macro_"></span><span id="_1087._fatal_____filename__line____invalid_status_clause__clause__for_a_textual-convention_macro_"></span><span id="_1087._FATAL_____FILENAME__LINE____INVALID_STATUS_CLAUSE__CLAUSE__FOR_A_TEXTUAL-CONVENTION_MACRO_"></span>**<1087.> irreversibile: " <fileName><linea \#>: clausola di stato non valida <clause> per una macro della convenzione testuale"**
+<span id="_1087._Fatal_____fileName__line____Invalid_STATUS_clause__clause__for_a_TEXTUAL-CONVENTION_macro_"></span><span id="_1087._fatal_____filename__line____invalid_status_clause__clause__for_a_textual-convention_macro_"></span><span id="_1087._FATAL_____FILENAME__LINE____INVALID_STATUS_CLAUSE__CLAUSE__FOR_A_TEXTUAL-CONVENTION_MACRO_"></span>**<1087. Errore>: &lt; "fileName &gt;<riga \#>: clausola STATUS non valida per una macro &lt; &gt; TEXTUAL-CONVENTION"**
 </dt> <dd>
 
-Assegnazione del tipo, errore semantico del modulo specifico di SNMPv2C. La clausola status di una chiamata della macro della **convenzione testuale** deve essere "Current", "deprecated" o "obsolete".
+Assegnazione di tipo, errore semantico del modulo specifico di SNMPv2C. La clausola status di una chiamata di macro **TEXTUAL-CONVENTION** deve essere "current", "deprecato" o "obsoleto".
 
 </dd> </dl>
 
@@ -102,10 +102,10 @@ Assegnazione del tipo, errore semantico del modulo specifico di SNMPv2C. La clau
 
 <dl> <dt>
 
-<span id="_1089__Fatal_____fileName___line____Symbol__identifier__in_AUGMENTS_clause_does_not_resolve_to_a_row_OBJECT-TYPE_"></span><span id="_1089__fatal_____filename___line____symbol__identifier__in_augments_clause_does_not_resolve_to_a_row_object-type_"></span><span id="_1089__FATAL_____FILENAME___LINE____SYMBOL__IDENTIFIER__IN_AUGMENTS_CLAUSE_DOES_NOT_RESOLVE_TO_A_ROW_OBJECT-TYPE_"></span><**1089,> irreversibile: " <fileName> : <linea \#>: il simbolo <identifier> nella clausola augments non viene risolto in un oggetto di riga, tipo"**
+<span id="_1089__Fatal_____fileName___line____Symbol__identifier__in_AUGMENTS_clause_does_not_resolve_to_a_row_OBJECT-TYPE_"></span><span id="_1089__fatal_____filename___line____symbol__identifier__in_augments_clause_does_not_resolve_to_a_row_object-type_"></span><span id="_1089__FATAL_____FILENAME___LINE____SYMBOL__IDENTIFIER__IN_AUGMENTS_CLAUSE_DOES_NOT_RESOLVE_TO_A_ROW_OBJECT-TYPE_"></span><**1089, Errore irreversibile>: " fileName :<line>: L'identificatore di simbolo nella clausola AUGMENTS non viene risolto in &lt; &gt; una riga \# &lt; &gt; OBJECT-TYPE"**
 </dt> <dd>
 
-Errore di semantica del modulo specifico del **tipo di oggetto** SNMPv2C. Se è presente una clausola AUGMENTs, l'identificatore nella clausola AUGMENTs deve essere risolto in un tipo di oggetto Table.
+Errore semantico del modulo specifico della chiamata di macro **OBJECT-TYPE** SNMPv2C. Se è presente una clausola AUGMENTS, l'identificatore nella clausola AUGMENTS deve essere risolto in una tabella OBJECT-TYPE.
 
 </dd> </dl>
 
@@ -113,10 +113,10 @@ Errore di semantica del modulo specifico del **tipo di oggetto** SNMPv2C. Se è 
 
 <dl> <dt>
 
-<span id="_1090__Fatal_____fileName___line___IMPLIED_clause_is_useful_only_for_the_last_INDEX_object_"></span><span id="_1090__fatal_____filename___line___implied_clause_is_useful_only_for_the_last_index_object_"></span><span id="_1090__FATAL_____FILENAME___LINE___IMPLIED_CLAUSE_IS_USEFUL_ONLY_FOR_THE_LAST_INDEX_OBJECT_"></span>**<1090,> irreversibile: " <fileName> : <\# la clausola implicita> è utile solo per l'ultimo oggetto index"**
+<span id="_1090__Fatal_____fileName___line___IMPLIED_clause_is_useful_only_for_the_last_INDEX_object_"></span><span id="_1090__fatal_____filename___line___implied_clause_is_useful_only_for_the_last_index_object_"></span><span id="_1090__FATAL_____FILENAME___LINE___IMPLIED_CLAUSE_IS_USEFUL_ONLY_FOR_THE_LAST_INDEX_OBJECT_"></span>**<1090, Fatal>: " &lt; fileName :<line> IMPLIED clause is useful only for the last INDEX object" (Errore irreversibile>: " fileName :<riga> clausola IMPLIED è utile solo per &gt; \# l'ultimo oggetto INDEX"**
 </dt> <dd>
 
-Errore di semantica del modulo specifico del **tipo di oggetto** SNMPv2C. La clausola implicita può essere associata solo all'ultimo oggetto nella clausola INDEX.
+Errore semantico del modulo specifico della chiamata di macro **OBJECT-TYPE** SNMPv2C. La clausola IMPLIED può essere associata solo all'ultimo oggetto nella clausola INDEX.
 
 </dd> </dl>
 

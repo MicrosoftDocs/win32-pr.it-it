@@ -1,9 +1,9 @@
 ---
 title: Panoramica dell'API Direct2D
-description: Viene fornita una panoramica del modello a oggetti Direct2D.
+description: Fornisce una panoramica del modello a oggetti Direct2D.
 ms.assetid: b1362ef6-40fc-4fa5-ba5b-22c622c39f04
 keywords:
-- Direct2D, informazioni
+- Direct2D, informazioni su
 - Direct2D, file di intestazione
 - Direct2D, modello a oggetti
 - Direct2D, interfacce
@@ -25,22 +25,22 @@ keywords:
 - Direct2D, primitive
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 54f318e3542d54ee92817193ef6b749a3ba1cf4678407ca7a12f28c6c187ae86
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: f757ea6f1dd2b5db0d0c96297098bc6a8443bf25
+ms.sourcegitcommit: 61a4c522182aa1cacbf5669683d9570a3bf043b2
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119074995"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "122882845"
 ---
 # <a name="direct2d-api-overview"></a>Panoramica dell'API Direct2D
 
-Direct2D fornisce un'API, simile a Direct3D, da usare con C o C++. L'API espone un'ampia gamma di funzionalità correlate al disegno:
+Direct2D fornisce un'API, simile a Direct3D, per l'uso con C o C++. L'API espone un'ampia gamma di funzionalità correlate al disegno:
 
--   Destinazioni di rendering per la visualizzazione e il rendering fuori schermo con Direct2D, Direct3D o GDI.
--   Oggetti per la gestione dello stato di disegno, ad esempio trasformazioni dello spazio delle coordinate e modalità di antialiasing.
+-   Destinazioni di rendering per la visualizzazione e il rendering fuori schermo usando Direct2D, Direct3D o GDI.
+-   Oggetti per la gestione dello stato del disegno, ad esempio trasformazioni dello spazio delle coordinate e modalità di antialiasing.
 -   Rappresentazioni per i dati geometrici e funzioni per l'elaborazione geometrica.
 -   Funzionalità di rendering per bitmap, geometrie e testo.
--   Effettua il provisioning per l'uso di contenuto grafico creato con GDI o Direct3D.
+-   Esegue il provisioning per l'uso di contenuto grafico creato con GDI o Direct3D.
 
 Questo argomento offre una panoramica degli oggetti che costituiscono l'API Direct2D. Contiene le sezioni seguenti:
 
@@ -52,7 +52,7 @@ Questo argomento offre una panoramica degli oggetti che costituiscono l'API Dire
     -   [Eseguire il rendering delle risorse di destinazione](#render-target-resources)
     -   [Comandi di disegno](#drawing-commands)
     -   [Gestione degli errori](#error-handling)
--   [Risorse di disegno](#drawing-resources)
+-   [Disegno di risorse](#drawing-resources)
     -   [Pennelli](#brushes)
     -   [Geometrie](#geometries)
     -   [Bitmap](#bitmaps)
@@ -68,12 +68,12 @@ L'API Direct2D è definita dai file di intestazione seguenti.
 |---------------------|------------------------------------------------------------------------------------------------------------------------------|
 | d2d1.h              | Definisce le versioni C e C++ dell'API Direct2D primaria.                                                                      |
 | d2d1helper.h        | Definisce funzioni, classi e strutture helper C++.                                                                       |
-| d2dbasetypes.h      | Definisce primitive di disegno per Direct2D, ad esempio punti e rettangoli. Questa intestazione è inclusa in d2d1.h.                 |
+| d2dbasetypes.h      | Definisce le primitive di disegno per Direct2D, ad esempio punti e rettangoli. Questa intestazione è inclusa in d2d1.h.                 |
 | d2derr.h            | Definisce i codici di errore per Direct2D. Questa intestazione è inclusa in d2d1.h.                                                   |
 | d2d1 \_ 1.h           | Definisce le versioni C e C++ dell'API Direct2D primaria per Windows 8 e versioni successive.                                              |
 | d2d1 \_ 1helper.h     | Definisce funzioni, classi e strutture helper C++ per Windows 8 e versioni successive.                                               |
 | d2d1effects.h       | Definisce le versioni C e C++ degli effetti immagine parte dell'API Direct2D per Windows 8 e versioni successive.                            |
-| d2d1effecthelpers.h | Definisce funzioni helper C++, classi e strutture degli effetti immagine parte dell'API Direct2D per Windows 8 e versioni successive. |
+| d2d1effecthelpers.h | Definisce funzioni, classi e strutture helper C++ della parte degli effetti immagine dell'API Direct2D per Windows 8 e versioni successive. |
 
 
 
@@ -81,7 +81,7 @@ L'API Direct2D è definita dai file di intestazione seguenti.
 
 Per usare Direct2D, l'applicazione deve includere il file di intestazione d2d1.h.
 
-Per compilare un'applicazione Direct2D, aggiungere d2d1.lib all'elenco di librerie. È possibile trovare d2d1.h e d2d1.lib in [Windows Software Development Kit (SDK) per Windows 7](https://msdn.microsoft.com/windows/bb980924.aspx).
+Per compilare un'applicazione Direct2D, aggiungere d2d1.lib all'elenco di librerie. È possibile trovare d2d1.h e d2d1.lib in [Windows Software Development Kit (SDK) per](https://msdn.microsoft.com/windows/bb980924.aspx)Windows 7 .
 
 Le sezioni seguenti descrivono alcune delle interfacce comuni fornite dall'API Direct2D.
 
@@ -89,10 +89,10 @@ Le sezioni seguenti descrivono alcune delle interfacce comuni fornite dall'API D
 
 Alla radice dell'API Direct2D sono presenti le [**interfacce ID2D1Factory**](/windows/win32/api/d2d1/nn-d2d1-id2d1factory) e [**ID2D1Resource.**](/windows/win32/api/d2d1/nn-d2d1-id2d1resource) Un **oggetto ID2D1Factory** crea **oggetti ID2D1Resource** e funge da punto di partenza per l'uso di Direct2D. Tutti gli altri oggetti Direct2D ereditano **dall'interfaccia ID2D1Resource.** Esistono due tipi di risorse Direct2D: risorse indipendenti dal dispositivo e risorse dipendenti dal dispositivo.
 
--   Le risorse indipendenti dal dispositivo non sono associate a un particolare dispositivo di rendering e possono essere mantenute per tutta la durata di un'applicazione.
--   Le risorse dipendenti dal dispositivo sono associate a un particolare dispositivo di rendering e non funzionano più se il dispositivo viene rimosso.
+-   Le risorse indipendenti dal dispositivo non sono associate a un particolare dispositivo di rendering e possono essere mantenute per la durata di un'applicazione.
+-   Le risorse dipendenti dal dispositivo sono associate a un particolare dispositivo di rendering e cessano di funzionare se tale dispositivo viene rimosso.
 
-Per altre informazioni sulle risorse e sulla condivisione delle risorse, vedere Panoramica [delle](resources-and-resource-domains.md)risorse.
+Per altre informazioni sulle risorse e sulla condivisione delle risorse, vedere Panoramica [delle risorse.](resources-and-resource-domains.md)
 
 ## <a name="the-id2d1factory-interface"></a>Interfaccia ID2D1Factory
 
@@ -101,7 +101,7 @@ Per altre informazioni sulle risorse e sulla condivisione delle risorse, vedere 
 Una factory definisce un set di metodi Create *Resource* che possono produrre le risorse di disegno seguenti:
 
 -   Le destinazioni di rendering sono oggetti che eseguono il rendering dei comandi di disegno.
--   I blocchi di stato di disegno sono oggetti che archiviano informazioni sullo stato del disegno, ad esempio la trasformazione corrente e la modalità di anti-aliasing.
+-   I blocchi di stato di disegno sono oggetti che archiviano informazioni sullo stato del disegno, ad esempio la trasformazione corrente e la modalità di antialiasing.
 -   Le geometrie sono oggetti che rappresentano forme semplici e potenzialmente complesse.
 
 Uno degli oggetti più utili che una factory può creare è [**ID2D1RenderTarget,**](/windows/win32/api/d2d1/nn-d2d1-id2d1rendertarget)descritto nella sezione seguente.
@@ -112,7 +112,7 @@ Una destinazione di rendering è una risorsa che eredita [**dall'interfaccia ID2
 
 -   [**Gli oggetti ID2D1HwndRenderTarget**](/windows/win32/api/d2d1/nn-d2d1-id2d1hwndrendertarget) eseguono il rendering del contenuto in una finestra.
 -   [**Il rendering degli oggetti ID2D1DCRenderTarget**](/windows/win32/api/d2d1/nn-d2d1-id2d1dcrendertarget) viene eseguito in un contesto di dispositivo GDI.
--   Gli oggetti di destinazione di rendering bitmap eseguono il rendering del contenuto in una bitmap fuori schermo.
+-   Gli oggetti di destinazione del rendering bitmap eseguono il rendering del contenuto in una bitmap fuori schermo.
 -   Gli oggetti destinazione di rendering DXGI eseguono il rendering su una superficie DXGI per l'uso con Direct3D.
 
 Poiché una destinazione di rendering è associata a un particolare dispositivo di rendering, è una risorsa dipendente dal dispositivo e smette di funzionare se il dispositivo viene rimosso.
@@ -161,7 +161,7 @@ Un pennello, rappresentato [**dall'interfaccia ID2D1Brush,**](/windows/win32/api
 -   [**ID2D1RadialGradientBrush disegna**](/windows/win32/api/d2d1/nn-d2d1-id2d1radialgradientbrush) un'area con una sfumatura radiale che unisce due o più colori intorno a un'ellisse.
 -   [**ID2D1BitmapBrush disegna**](/windows/win32/api/d2d1/nn-d2d1-id2d1bitmapbrush) un'area con una bitmap.
 
-Per creare un pennello, usa uno dei metodi [**ID2D1RenderTarget::**](/windows/win32/api/d2d1/nn-d2d1-id2d1rendertarget)Create Brush, ad esempio *<Type>* [**CreateRadialGradientBrush.**](/windows/win32/api/d2d1/nf-d2d1-id2d1rendertarget-createradialgradientbrush(constd2d1_radial_gradient_brush_properties__constd2d1_brush_properties__id2d1gradientstopcollection_id2d1radialgradientbrush)) I pennelli possono essere usati con i metodi Draw e Fill di una destinazione di rendering, per disegnare un tratto o un contorno di forma o come maschera di opacità.
+Per creare un pennello, usa uno dei metodi [**ID2D1RenderTarget::**](/windows/win32/api/d2d1/nn-d2d1-id2d1rendertarget)Create *&lt; Type &gt;* Brush, ad esempio [**CreateRadialGradientBrush.**](/windows/win32/api/d2d1/nf-d2d1-id2d1rendertarget-createradialgradientbrush(constd2d1_radial_gradient_brush_properties__constd2d1_brush_properties__id2d1gradientstopcollection_id2d1radialgradientbrush)) I pennelli possono essere usati con i metodi Draw e Fill di una destinazione di rendering, per disegnare un tratto o un contorno di forma o come maschera di opacità.
 
 Per altre informazioni sui pennelli, vedere [Cenni preliminari sui pennelli.](direct2d-brushes-overview.md)
 
@@ -173,7 +173,7 @@ Oltre alle primitive di disegno di base, ad esempio punti, rettangoli ed ellissi
 
 Le interfacce geometry forniscono metodi per modificare le forme ampliando o semplificando le geometrie esistenti o generando l'intersezione o l'unione di più geometrie. Forniscono anche metodi per determinare se le geometrie si intersecano o si sovrappongono, recuperano informazioni sui limiti, calcolano l'area o la lunghezza di una geometria e interpolano le posizioni lungo una geometria. Direct2D offre anche la possibilità di creare una mesh di triangoli a scorrimento da una geometria.
 
-Per creare una geometria, usare uno dei metodi [**ID2D1Factory**](/windows/win32/api/d2d1/nn-d2d1-id2d1factory)::Create Geometry, ad esempio *<Type>* [**CreatePathGeometry.**](/windows/win32/api/d2d1/nf-d2d1-id2d1factory-createpathgeometry) Una geometria è una risorsa indipendente dal dispositivo.
+Per creare una geometria, usare uno dei metodi [**ID2D1Factory**](/windows/win32/api/d2d1/nn-d2d1-id2d1factory)::Create *&lt; Type &gt;* Geometry, ad esempio [**CreatePathGeometry.**](/windows/win32/api/d2d1/nf-d2d1-id2d1factory-createpathgeometry) Una geometria è una risorsa indipendente dal dispositivo.
 
 Per eseguire il rendering di una geometria, si usano i [**metodi DrawGeometry**](/windows/win32/api/d2d1/nf-d2d1-id2d1rendertarget-drawgeometry) e [**FillGeometry**](/windows/win32/api/d2d1/nf-d2d1-id2d1rendertarget-fillgeometry) di una destinazione di rendering.
 

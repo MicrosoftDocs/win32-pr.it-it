@@ -16,12 +16,12 @@ api_type:
 - COM
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 98354d5e1e4f796442dd0347a4ed2796cafdf7297d3829af9b8839d48df00c3a
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: a9577f7d9030a12a12596fe2cdc2a999922658ce
+ms.sourcegitcommit: 61a4c522182aa1cacbf5669683d9570a3bf043b2
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "117930314"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "122887180"
 ---
 # <a name="iwmpclosedcaptionsamilang-property"></a>Proprietà IWMPClosedCaption::SAMILang
 
@@ -50,7 +50,7 @@ Oggetto **System.String** che rappresenta il nome specificato nell'identificator
 
 ## <a name="remarks"></a>Commenti
 
-Un file SAMI può contenere testo per una o più lingue. Le lingue disponibili per i sottotitoli codificati sono definite tra <STYLE> i tag e </STYLE> nel file SAMI. Un identificatore di lingua viene specificato con una stringa alfanumerica univoca preceduta da un punto (.). Il nome specificato per una lingua può essere qualsiasi stringa. Ad esempio, per definire l'inglese degli Stati Uniti è possibile usare quanto segue:
+Un file SAMI può contenere testo per una o più lingue. Le lingue disponibili per i sottotitoli codificati sono definite tra i tag &lt; STYLE e nel file &gt; </STYLE> SAMI. Un identificatore di lingua viene specificato con una stringa alfanumerica univoca preceduta da un punto (.). Il nome specificato per una lingua può essere qualsiasi stringa. Ad esempio, per definire l'inglese degli Stati Uniti è possibile usare quanto segue:
 
 
 ```
@@ -69,7 +69,7 @@ La stringa impostata tramite **SAMILang** deve corrispondere **all'attributo Nam
 
 | Requisito | Valore |
 |----------------------|------------------------------------------------------------------------------------------------------------------------|
-| Versione<br/>   | Windows Media Player serie 9 o successive<br/>                                                                      |
+| Versione<br/>   | Windows Media Player serie 9 o successiva<br/>                                                                      |
 | Spazio dei nomi<br/> | **WMPLib**<br/>                                                                                                  |
 | Assembly<br/>  | <dl> <dt>Interop.WMPLib.dll (Interop.WMPLib.dll.dll)</dt> </dl> |
 

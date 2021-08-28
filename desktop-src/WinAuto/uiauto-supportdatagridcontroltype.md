@@ -1,16 +1,16 @@
 ---
 title: Tipo di controllo DataGrid
-description: In questo argomento vengono fornite informazioni sul supporto di automazione interfaccia utente Microsoft per il tipo di controllo DataGrid.
+description: Questo argomento fornisce informazioni sul supporto di Microsoft Automazione interfaccia utente per il tipo di controllo DataGrid.
 ms.assetid: 2381b302-37d6-4159-bb7d-862ae41af695
 keywords:
 - Automazione interfaccia utente, supporto per il tipo di controllo DataGrid
 - Automazione interfaccia utente, tipo di controllo DataGrid
-- Automazione interfaccia utente, struttura ad albero per il tipo di controllo DataGrid
-- Automazione interfaccia utente, proprietà per il tipo di controllo DataGrid
-- Automazione interfaccia utente, pattern di controllo per il tipo di controllo DataGrid
-- Automazione interfaccia utente, eventi per il tipo di controllo DataGrid
+- Automazione interfaccia utente,struttura ad albero per il tipo di controllo DataGrid
+- Automazione interfaccia utente,proprietà per il tipo di controllo DataGrid
+- Automazione interfaccia utente,pattern di controllo per il tipo di controllo DataGrid
+- Automazione interfaccia utente,eventi per il tipo di controllo DataGrid
 - strutture ad albero, tipo di controllo DataGrid
-- Proprietà, tipo di controllo DataGrid
+- proprietà, tipo di controllo DataGrid
 - pattern di controllo, tipo di controllo DataGrid
 - eventi, tipo di controllo DataGrid
 - supporto per il tipo di controllo DataGrid
@@ -21,20 +21,20 @@ keywords:
 - tipi di controllo, DataGrid
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: c8af1e35e062c778285d1cb7edcca9ac6192792b
-ms.sourcegitcommit: 2d531328b6ed82d4ad971a45a5131b430c5866f7
+ms.openlocfilehash: 7fa37093402fc3c4c195b4b68ecc74652af2d6a6
+ms.sourcegitcommit: 9b5faa61c38b2d0c432b7f2dbee8c127b0e28a7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "103955405"
+ms.lasthandoff: 08/19/2021
+ms.locfileid: "122475597"
 ---
 # <a name="datagrid-control-type"></a>Tipo di controllo DataGrid
 
-In questo argomento vengono fornite informazioni sul supporto di automazione interfaccia utente Microsoft per il tipo di controllo **DataGrid** .
+Questo argomento fornisce informazioni sul supporto di Microsoft Automazione interfaccia utente per il **tipo di controllo DataGrid.**
 
-Il tipo di controllo **DataGrid** consente a un utente di usare facilmente gli elementi contenenti dati o elementi di automazione presentati in colonne o righe. I controlli griglia dati contengono righe di elementi e colonne di informazioni su tali elementi. Un controllo visualizzazione elenco in Esplora risorse di Windows Vista è un esempio che supporta il tipo di controllo **DataGrid** .
+Il **tipo di controllo DataGrid** consente a un utente di usare facilmente elementi che contengono dati o elementi di automazione presentati in colonne o righe. I controlli griglia dati contengono righe di elementi e colonne di informazioni su tali elementi. Un controllo visualizzazione elenco in Windows Vista Explorer è un esempio che supporta il **tipo di controllo DataGrid.**
 
-Nelle sezioni seguenti vengono definiti la struttura ad albero, le proprietà, i pattern di controllo e gli eventi di automazione interfaccia utente necessari per il tipo di controllo **DataGrid** . I requisiti di automazione interfaccia utente si applicano a tutti i controlli griglia di dati in cui la piattaforma/Framework dell'interfaccia utente integra il supporto di automazione interfaccia utente per i tipi di controllo e i pattern
+Le sezioni seguenti definiscono la struttura ad Automazione interfaccia utente struttura ad albero, le proprietà, i pattern di controllo e gli eventi per il **tipo di controllo DataGrid.** I Automazione interfaccia utente si applicano a tutti i controlli griglia dati in cui il framework o la piattaforma dell'interfaccia utente si integra Automazione interfaccia utente per i tipi di controllo e i pattern di controllo.
 
 In questo argomento sono contenute le sezioni seguenti.
 
@@ -47,175 +47,115 @@ In questo argomento sono contenute le sezioni seguenti.
 
 ## <a name="typical-tree-structure"></a>Struttura ad albero tipica
 
-Nella tabella seguente viene illustrata una tipica visualizzazione del controllo e del contenuto dell'albero di automazione interfaccia utente relativo ai controlli griglia dati e viene descritto il possibile contenuto di ogni visualizzazione. Per altre informazioni sull'albero di automazione interfaccia utente, vedere [Cenni preliminari sull'albero di automazione interfaccia utente](uiauto-treeoverview.md).
+La tabella seguente illustra un controllo tipico e una visualizzazione contenuto dell'albero Automazione interfaccia utente relativo ai controlli griglia dati e descrive gli elementi che possono essere contenuti in ogni visualizzazione. Per altre informazioni sull'albero Automazione interfaccia utente, vedere Automazione interfaccia utente [Tree Overview](uiauto-treeoverview.md).
 
 
 
-<table>
-<colgroup>
-<col style="width: 50%" />
-<col style="width: 50%" />
-</colgroup>
-<thead>
-<tr class="header">
-<th>Visualizzazione controlli</th>
-<th>Visualizzazione contenuto</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td><ul>
-<li>DataGrid
-<ul>
-<li>Header (0, 1 o 2)
-<ul>
-<li>HeaderItem (numero di colonne o righe)</li>
-</ul></li>
-<li>DataItem (0 o più, può essere strutturato in una gerarchia)</li>
-</ul></li>
-</ul></td>
-<td><ul>
-<li>DataGrid
-<ul>
-<li>DataItem (0 o più, può essere strutturato in una gerarchia)</li>
-</ul></li>
-</ul></td>
-</tr>
-</tbody>
-</table>
+
+| Visualizzazione controlli | Visualizzazione contenuto | 
+|--------------|--------------|
+| <ul><li>DataGrid<ul><li>Header (0, 1 o 2)<ul><li>HeaderItem (numero di colonne o righe)</li></ul></li><li>DataItem (0 o più; può essere strutturato in una gerarchia)</li></ul></li></ul> | <ul><li>DataGrid<ul><li>DataItem (0 o più; può essere strutturato in una gerarchia)</li></ul></li></ul> | 
 
 
 
- 
+
+ 
 
 ## <a name="relevant-properties"></a>Proprietà rilevanti
 
-La tabella seguente elenca le proprietà di automazione interfaccia utente il cui valore o la cui definizione è particolarmente rilevante per il tipo di controllo **DataGrid** . Per altre informazioni sulle proprietà di automazione interfaccia utente, vedere [recupero di proprietà da elementi di automazione interfaccia utente](uiauto-propertiesforclients.md).
+La tabella seguente elenca le Automazione interfaccia utente il cui valore o la cui definizione è particolarmente rilevante per il **tipo di controllo DataGrid.** Per altre informazioni sulle Automazione interfaccia utente, vedere [Recupero di proprietà da Automazione interfaccia utente elementi](uiauto-propertiesforclients.md).
 
 
 
-| Proprietà di automazione interfaccia utente                                                                                              | Valore        | Note                                                                                                                                                                                                                                                                                                        |
+| Proprietà di automazione interfaccia utente                                                                                              | valore        | Note                                                                                                                                                                                                                                                                                                        |
 |---------------------------------------------------------------------------------------------------------------------|--------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| [**\_AUTOMATIONIDPROPERTYID UIA**](uiauto-automation-element-propids.md)                 | Vedere le note.   | Il valore di questa proprietà deve essere univoco tra tutti gli elementi peer nella visualizzazione non elaborata della struttura ad albero di automazione interfaccia utente.                                                                                                                                                                                                 |
-| [**\_BOUNDINGRECTANGLEPROPERTYID UIA**](uiauto-automation-element-propids.md)       | Vedere le note.   | Il rettangolo più esterno che contiene l'intero controllo.                                                                                                                                                                                                                                                     |
-| [**\_CLICKABLEPOINTPROPERTYID UIA**](uiauto-automation-element-propids.md)             | Vedere le note.   | Supportata se è presente un rettangolo di delimitazione. Se non tutti i punti all'interno del rettangolo di delimitazione sono selezionabili e l'elemento esegue un hit testing specializzato, eseguire l'override e fornire un punto selezionabile.                                                                                                         |
-| [**\_CONTROLTYPEPROPERTYID UIA**](uiauto-automation-element-propids.md)                   | **DataGrid** |                                                                                                                                                                                                                                                                                                              |
-| [**\_ISCONTENTELEMENTPROPERTYID UIA**](uiauto-automation-element-propids.md)         | true         | Il valore di questa proprietà deve essere sempre **true**. Ciò significa che il controllo griglia dati deve essere sempre presente nella visualizzazione contenuto dell'albero di automazione interfaccia utente.                                                                                                                                                      |
-| [**\_ISCONTROLELEMENTPROPERTYID UIA**](uiauto-automation-element-propids.md)         | true         | Il valore di questa proprietà deve sempre essere **true**. Questo significa che il controllo griglia dati deve essere sempre incluso nella visualizzazione controlli dell'albero di automazione interfaccia utente.                                                                                                                                                |
-| [**\_ISKEYBOARDFOCUSABLEPROPERTYID UIA**](uiauto-automation-element-propids.md)   | Vedere le note.   | Se il controllo può ricevere lo stato attivo, deve supportare questa proprietà.                                                                                                                                                                                                                                    |
-| [**\_LABELEDBYPROPERTYID UIA**](uiauto-automation-element-propids.md)                       | Vedere le note.   | Se è presente un'etichetta di testo statico, questa proprietà deve esporre un riferimento a tale controllo.                                                                                                                                                                                                                      |
-| [**\_LOCALIZEDCONTROLTYPEPROPERTYID UIA**](uiauto-automation-element-propids.md) | Vedere le note.   | Stringa localizzata corrispondente al tipo di controllo **DataGrid** . Il valore predefinito è "griglia dati" per en-US o inglese (Stati Uniti).                                                                                                                                                                      |
-| [**\_NAMEPROPERTYID UIA**](uiauto-automation-element-propids.md)                                 | Vedere le note.   | Il controllo griglia dati in genere ottiene il valore per la proprietà **Name** da un'etichetta di testo statico. Se non è presente un'etichetta di testo statico, lo sviluppatore dell'applicazione deve assegnare un valore a per la proprietà **Name** . Il valore della proprietà **Name** non deve mai essere il contenuto testuale del controllo di modifica. |
+| [**UIA \_ AutomationIdPropertyId**](uiauto-automation-element-propids.md)                 | Vedere le note.   | Il valore di questa proprietà deve essere univoco tra tutti gli elementi peer nella visualizzazione non elaborata dell'Automazione interfaccia utente albero.                                                                                                                                                                                                 |
+| [**UIA \_ BoundingRectanglePropertyId**](uiauto-automation-element-propids.md)       | Vedere le note.   | Il rettangolo più esterno che contiene l'intero controllo.                                                                                                                                                                                                                                                     |
+| [**UIA \_ ClickablePointPropertyId**](uiauto-automation-element-propids.md)             | Vedere le note.   | Supportata se è presente un rettangolo di delimitazione. Se non tutti i punti all'interno del rettangolo di delimitazione sono selezionabili e l'elemento esegue hit testing specializzati, eseguire l'override e fornire un punto selezionabile.                                                                                                         |
+| [**UIA \_ ControlTypePropertyId**](uiauto-automation-element-propids.md)                   | **DataGrid** |                                                                                                                                                                                                                                                                                                              |
+| [**\_IsContentElementPropertyId dell'interfaccia utente**](uiauto-automation-element-propids.md)         | true         | Il valore di questa proprietà deve essere sempre **TRUE.** Ciò significa che il controllo griglia dati deve essere sempre nella visualizzazione contenuto dell'Automazione interfaccia utente dati.                                                                                                                                                      |
+| [**UIA \_ IsControlElementPropertyId**](uiauto-automation-element-propids.md)         | true         | Il valore di questa proprietà deve essere sempre **TRUE.** Ciò significa che il controllo Griglia dati deve essere sempre incluso nella visualizzazione controlli dell'Automazione interfaccia utente dati.                                                                                                                                                |
+| [**UIA \_ IsKeyboardFocusablePropertyId**](uiauto-automation-element-propids.md)   | Vedere le note.   | Se il controllo può ricevere lo stato attivo, deve supportare questa proprietà.                                                                                                                                                                                                                                    |
+| [**UIA \_ LabeledByPropertyId**](uiauto-automation-element-propids.md)                       | Vedere le note.   | Se è presente un'etichetta di testo statico, questa proprietà deve esporre un riferimento a tale controllo.                                                                                                                                                                                                                      |
+| [**UIA \_ LocalizedControlTypePropertyId**](uiauto-automation-element-propids.md) | Vedere le note.   | Stringa localizzata corrispondente al **tipo di controllo DataGrid.** Il valore predefinito è "griglia dati" per en-US o inglese (Stati Uniti).                                                                                                                                                                      |
+| [**UIA \_ NamePropertyId**](uiauto-automation-element-propids.md)                                 | Vedere le note.   | Il controllo Griglia dati in genere ottiene il valore per la relativa **proprietà Name** da un'etichetta di testo statico. Se non è presente un'etichetta di testo statico, uno sviluppatore di applicazioni deve assegnare un valore a per la **proprietà** Name. Il valore della **proprietà Name** non deve mai essere il contenuto testuale del controllo di modifica. |
 
 
 
- 
+ 
 
 ## <a name="required-control-patterns"></a>Pattern di controllo obbligatori
 
-La tabella seguente elenca i pattern di controllo di automazione interfaccia utente che devono essere supportati da tutti i controlli griglia dati. Per altre informazioni sui pattern di controllo, vedere [UI Automation Control Patterns Overview](uiauto-controlpatternsoverview.md).
+Nella tabella seguente sono elencati i Automazione interfaccia utente che devono essere supportati da tutti i controlli griglia dati. Per altre informazioni sui pattern di controllo, vedere [UI Automation Control Patterns Overview](uiauto-controlpatternsoverview.md).
 
 
 
 | Pattern di controllo                                         | Supporto  | Note                                                                                                                                                                             |
 |---------------------------------------------------------|----------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| [**IGridProvider**](/windows/desktop/api/UIAutomationCore/nn-uiautomationcore-igridprovider)           | Necessario | Il controllo griglia dati stesso supporta sempre il pattern di controllo [Grid](uiauto-implementinggrid.md) perché gli elementi che contiene contengono metadati disposti in una griglia. |
+| [**IGridProvider**](/windows/desktop/api/UIAutomationCore/nn-uiautomationcore-igridprovider)           | Obbligatoria | Il controllo griglia dati stesso supporta sempre il pattern di controllo [Grid](uiauto-implementinggrid.md) perché gli elementi in esso contenuti hanno metadati disposti in una griglia. |
 | [**IScrollProvider**](/windows/desktop/api/UIAutomationCore/nn-uiautomationcore-iscrollprovider)       | Dipende da  | La possibilità di scorrere la griglia dati dipende dal contenuto e dalla presenza o meno delle barre di scorrimento.                                                                                       |
 | [**ISelectionProvider**](/windows/desktop/api/UIAutomationCore/nn-uiautomationcore-iselectionprovider) | Dipende da  | La possibilità di selezionare la griglia dati dipende dal contenuto.                                                                                                                           |
-| [**ITableProvider**](/windows/desktop/api/UIAutomationCore/nn-uiautomationcore-itableprovider)         | Dipende da  | Un controllo griglia di dati che dispone di un'intestazione deve supportare il pattern di controllo [Table](uiauto-implementingtable.md) .                                                                   |
+| [**ITableProvider**](/windows/desktop/api/UIAutomationCore/nn-uiautomationcore-itableprovider)         | Dipende da  | Un controllo Griglia dati con un'intestazione deve supportare il [pattern di controllo](uiauto-implementingtable.md) Tabella.                                                                   |
 
 
 
- 
+ 
 
 Gli elementi di dati nei contenitori di griglia dati supporteranno almeno:
 
--   Pattern di controllo [SelectionItem](uiauto-implementingselectionitem.md) (se la griglia dati è selezionabile)
--   Pattern di controllo [ScrollItem](uiauto-implementingscrollitem.md) (se la griglia dati è scorrevole)
--   Pattern di controllo [GridItem](uiauto-implementinggriditem.md)
--   Pattern di controllo [TableItem](uiauto-implementingtableitem.md) (se la griglia dati ha un'intestazione)
+-   [Pattern di controllo SelectionItem](uiauto-implementingselectionitem.md) (se la griglia dei dati è selezionabile)
+-   [Pattern di controllo ScrollItem](uiauto-implementingscrollitem.md) (se la griglia dei dati è scorrevole)
+-   [Pattern di controllo GridItem](uiauto-implementinggriditem.md)
+-   [Pattern di controllo TableItem](uiauto-implementingtableitem.md) (se la griglia dei dati ha un'intestazione)
 
 ## <a name="required-events"></a>Eventi obbligatori
 
-La tabella seguente elenca gli eventi di automazione interfaccia utente necessari per supportare i controlli griglia dati. Per altre informazioni sugli eventi, vedere [UI Automation Events Overview](uiauto-eventsoverview.md).
+Nella tabella seguente sono elencati Automazione interfaccia utente eventi che i controlli Griglia dati devono supportare. Per altre informazioni sugli eventi, vedere [UI Automation Events Overview](uiauto-eventsoverview.md).
 
 
 
-| Evento di automazione interfaccia utente                                                                                                                                        | Note                                                                                                                                                    |
+| Automazione interfaccia utente evento                                                                                                                                        | Note                                                                                                                                                    |
 |------------------------------------------------------------------------------------------------------------------------------------------------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------|
-| [**\_AUTOMATIONFOCUSCHANGEDEVENTID UIA**](uiauto-event-ids.md)                                                           |                                                                                                                                                          |
-| [**UIA \_**](uiauto-automation-element-propids.md) Evento di modifica della proprietà BoundingRectanglePropertyId.                      |                                                                                                                                                          |
-| [**UIA \_**](uiauto-automation-element-propids.md) Evento di modifica della proprietà IsEnabledPropertyId.                                      | Se il controllo supporta la proprietà [**IsEnabled**](uiauto-automation-element-propids.md) , deve supportare questo evento.                                 |
-| [**UIA \_**](uiauto-automation-element-propids.md) Evento di modifica della proprietà IsOffscreenPropertyId.                                  | Se il controllo supporta la proprietà [**IsOffscreen**](uiauto-automation-element-propids.md) , deve supportare questo evento.                               |
-| [**\_LAYOUTINVALIDATEDEVENTID UIA**](uiauto-event-ids.md)                                                                     |                                                                                                                                                          |
-| [**\_STRUCTURECHANGEDEVENTID UIA**](uiauto-event-ids.md)                                                                       |                                                                                                                                                          |
-| [**UIA \_**](uiauto-control-pattern-propids.md) Evento di modifica della proprietà MultipleViewCurrentViewPropertyId.             | Se il controllo supporta la proprietà CurrentView del pattern di controllo [MultipleView](uiauto-implementingmultipleview.md) , deve supportare questo evento. |
-| [**UIA \_**](uiauto-control-pattern-propids.md) Evento di modifica della proprietà ScrollHorizontallyScrollablePropertyId.   | Se il controllo supporta il pattern di controllo [Scroll](uiauto-implementingscroll.md) , deve supportare questo evento.                                         |
-| [**UIA \_**](uiauto-control-pattern-propids.md) Evento di modifica della proprietà ScrollHorizontalScrollPercentPropertyId. | Se il controllo supporta il pattern di controllo [Scroll](uiauto-implementingscroll.md) , deve supportare questo evento.                                         |
-| [**UIA \_**](uiauto-control-pattern-propids.md) Evento di modifica della proprietà ScrollHorizontalViewSizePropertyId.           | Se il controllo supporta il pattern di controllo [Scroll](uiauto-implementingscroll.md) , deve supportare questo evento.                                         |
-| [**UIA \_**](uiauto-control-pattern-propids.md) Evento di modifica della proprietà ScrollVerticalScrollPercentPropertyId.     | Se il controllo supporta il pattern di controllo [Scroll](uiauto-implementingscroll.md) , deve supportare questo evento.                                         |
-| [**UIA \_**](uiauto-control-pattern-propids.md) Evento di modifica della proprietà ScrollVerticallyScrollablePropertyId.       | Se il controllo supporta il pattern di controllo [Scroll](uiauto-implementingscroll.md) , deve supportare questo evento.                                         |
-| [**UIA \_**](uiauto-control-pattern-propids.md) Evento di modifica della proprietà ScrollVerticalViewSizePropertyId.               | Se il controllo supporta il pattern di controllo [Scroll](uiauto-implementingscroll.md) , deve supportare questo evento.                                         |
-| [**\_InvalidatedEventId selezione \_ UIA**](uiauto-event-ids.md)                                                            |                                                                                                                                                          |
+| [**UIA \_ AutomationFocusChangedEventId**](uiauto-event-ids.md)                                                           |                                                                                                                                                          |
+| [**Interfaccia \_ utente Evento di modifica della proprietà BoundingRectanglePropertyId.**](uiauto-automation-element-propids.md)                      |                                                                                                                                                          |
+| [**Interfaccia \_ utente Evento di modifica della proprietà IsEnabledPropertyId.**](uiauto-automation-element-propids.md)                                      | Se il controllo supporta la [**proprietà IsEnabled,**](uiauto-automation-element-propids.md) deve supportare questo evento.                                 |
+| [**Interfaccia \_ utente Evento di modifica della proprietà IsOffscreenPropertyId.**](uiauto-automation-element-propids.md)                                  | Se il controllo supporta la [**proprietà IsOffscreen,**](uiauto-automation-element-propids.md) deve supportare questo evento.                               |
+| [**UIA \_ LayoutInvalidatedEventId**](uiauto-event-ids.md)                                                                     |                                                                                                                                                          |
+| [**UIA \_ StructureChangedEventId**](uiauto-event-ids.md)                                                                       |                                                                                                                                                          |
+| [**Interfaccia \_ utente Evento di modifica della proprietà MultipleViewCurrentViewPropertyId.**](uiauto-control-pattern-propids.md)             | Se il controllo supporta la proprietà CurrentView del pattern [di controllo MultipleView,](uiauto-implementingmultipleview.md) deve supportare questo evento. |
+| [**Interfaccia \_ utente Evento di modifica della proprietà ScrollHorizontallyScrollablePropertyId.**](uiauto-control-pattern-propids.md)   | Se il controllo supporta il pattern [di controllo Scroll,](uiauto-implementingscroll.md) deve supportare questo evento.                                         |
+| [**Interfaccia \_ utente Evento di modifica della proprietà ScrollHorizontalScrollPercentPropertyId.**](uiauto-control-pattern-propids.md) | Se il controllo supporta il pattern [di controllo Scroll,](uiauto-implementingscroll.md) deve supportare questo evento.                                         |
+| [**Interfaccia \_ utente Evento di modifica della proprietà ScrollHorizontalViewSizePropertyId.**](uiauto-control-pattern-propids.md)           | Se il controllo supporta il pattern [di controllo Scroll,](uiauto-implementingscroll.md) deve supportare questo evento.                                         |
+| [**Interfaccia \_ utente Evento di modifica della proprietà ScrollVerticalScrollPercentPropertyId.**](uiauto-control-pattern-propids.md)     | Se il controllo supporta il pattern [di controllo Scroll,](uiauto-implementingscroll.md) deve supportare questo evento.                                         |
+| [**Interfaccia \_ utente Evento di modifica della proprietà ScrollVerticallyScrollablePropertyId.**](uiauto-control-pattern-propids.md)       | Se il controllo supporta il pattern [di controllo Scroll,](uiauto-implementingscroll.md) deve supportare questo evento.                                         |
+| [**Interfaccia \_ utente Evento di modifica della proprietà ScrollVerticalViewSizePropertyId.**](uiauto-control-pattern-propids.md)               | Se il controllo supporta il pattern [di controllo Scroll,](uiauto-implementingscroll.md) deve supportare questo evento.                                         |
+| [**UIA \_ Selection \_ InvalidatedEventId**](uiauto-event-ids.md)                                                            |                                                                                                                                                          |
 
 
 
- 
+ 
 
 ## <a name="datagrid-control-type-example"></a>Esempio di tipo di controllo DataGrid
 
-Nell'immagine seguente viene illustrato un controllo visualizzazione elenco che implementa il tipo di controllo **DataGrid** .
+L'immagine seguente illustra un controllo di visualizzazione elenco che implementa il **tipo di controllo DataGrid.**
 
-![screenshot del controllo visualizzazione elenco con il tipo di controllo DataGrid](images/datagridxmpl.jpg)
+![Screenshot del controllo visualizzazione elenco con tipo di controllo datagrid](images/datagridxmpl.jpg)
 
-La visualizzazione controlli e la visualizzazione contenuto dell'albero di automazione interfaccia utente che riguarda il controllo visualizzazione elenco sono visualizzate di seguito. I pattern di controllo per ogni elemento di automazione sono indicati tra parentesi.
-
-
-
-<table>
-<colgroup>
-<col style="width: 50%" />
-<col style="width: 50%" />
-</colgroup>
-<thead>
-<tr class="header">
-<th>Albero di automazione interfaccia utente-visualizzazione controlli</th>
-<th>Albero di automazione interfaccia utente-visualizzazione contenuto</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>DataGrid (ordinamento, tabella, selezione, griglia)
-<ul>
-<li>Intestazione
-<ul>
-<li>&quot;Nome HeaderItem &quot; (Invoke)</li>
-<li>Data di HeaderItem &quot; modificata &quot; (Invoke)</li>
-<li>&quot;Dimensioni HeaderItem &quot; (Invoke)</li>
-</ul></li>
-<li>Gruppo &quot; Contoso &quot; (TableItem, GridItem, SelectionItem, Table *, Grid*)
-<ul>
-<li>&quot;Receivable.docdegli account DataItem &quot; (SelectionItem, Invoke, TableItem *, GridItem*)</li>
-<li>&quot;Payable.docdegli account DataItem &quot; (SelectionItem, Invoke, TableItem *, GridItem*)</li>
-</ul></li>
-</ul></td>
-<td>DataGrid (Table, Grid, Selection)
-<ul>
-<li>Gruppo &quot; Contoso &quot; (TableItem, GridItem, SelectionItem, Table *, Grid*)
-<ul>
-<li>&quot;Receivable.docdegli account DataItem &quot; (SelectionItem, Invoke, TableItem *, GridItem*)</li>
-<li>&quot;Payable.docdegli account DataItem &quot; (SelectionItem, Invoke, TableItem *, GridItem*)</li>
-</ul></li>
-</ul></td>
-</tr>
-</tbody>
-</table>
+La visualizzazione controlli e la visualizzazione contenuto dell'Automazione interfaccia utente struttura ad albero che riguarda il controllo visualizzazione elenco vengono visualizzate di seguito. I pattern di controllo per ogni elemento di automazione sono indicati tra parentesi.
 
 
 
- 
 
-\*Nell'esempio precedente viene illustrata una griglia di dati che contiene più livelli di controlli. Il controllo **Group** ("contoso") contiene due controlli **DataItem** ("Accounts Receivable.doc" e "Accounts Payable.doc"). Una  / coppia di **GridItem** DataGrid è indipendente da una coppia in un altro livello. I controlli **DataItem** in un **gruppo** possono essere esposti anche come tipo di controllo [ListItem](uiauto-supportlistitemcontroltype.md) , consentendo loro di essere presentati più chiaramente come oggetti selezionabili, anziché come elementi dati semplici. Questo esempio non include i sottoelementi degli elementi di dati raggruppati. Per un altro esempio di più livelli di controlli, vedere il tipo di controllo [DataItem](uiauto-supportdataitemcontroltype.md) .
+| Automazione interfaccia utente struttura ad albero - Visualizzazione controlli | Automazione interfaccia utente albero - Visualizzazione contenuto | 
+|-----------------------------------|-----------------------------------|
+| DataGrid (ordinamento, tabella, selezione, griglia)<ul><li>Intestazione<ul><li>HeaderItem "Nome" (Invoke)</li><li>HeaderItem "Ultima modifica" (Invoke)</li><li>HeaderItem "Dimensione" (Invoke)</li></ul></li><li>Gruppo "Contoso" (TableItem, GridItem, SelectionItem, Table *, Grid*)<ul><li>DataItem "Accounts Receivable.doc" (SelectionItem, Invoke,*TableItem, GridItem*)</li><li>DataItem "Accounts Payable.doc" (SelectionItem, Invoke,*TableItem, GridItem*)</li></ul></li></ul> | DataGrid (Table, Grid, Selection)<ul><li>Gruppo "Contoso" (TableItem, GridItem, SelectionItem, Table *, Grid*)<ul><li>DataItem "Accounts Receivable.doc" (SelectionItem, Invoke,*TableItem, GridItem*)</li><li>DataItem "Accounts Payable.doc" (SelectionItem, Invoke,*TableItem, GridItem*)</li></ul></li></ul> | 
+
+
+
+
+ 
+
+\*Nell'esempio precedente viene illustrata una griglia dei dati che contiene più livelli di controlli. Il **controllo Group** ("Contoso") contiene due controlli **DataItem** ("Accounts Receivable.doc" e "Accounts Payable.doc"). Una **coppia DataGrid** / **GridItem** è indipendente da una coppia a un altro livello. I **controlli DataItem** in **un gruppo** possono anche essere esposti come tipo di controllo [ListItem,](uiauto-supportlistitemcontroltype.md) consentendone la presentazione più chiaramente come oggetti selezionabili, anziché come elementi di dati semplici. Questo esempio non include i sottoelementi degli elementi di dati raggruppati. Per un altro esempio di più livelli di controlli, vedere il [tipo di controllo DataItem.](uiauto-supportdataitemcontroltype.md)
 
 ## <a name="related-topics"></a>Argomenti correlati
 
@@ -230,9 +170,9 @@ La visualizzazione controlli e la visualizzazione contenuto dell'albero di autom
 [Cenni preliminari su automazione interfaccia utente](uiauto-uiautomationoverview.md)
 </dt> </dl>
 
- 
+ 
 
- 
+ 
 
 
 

@@ -1,21 +1,21 @@
 ---
-description: La compressione a blocchi è una tecnica di compressione delle trame per ridurre le dimensioni della trama.
+description: La compressione a blocchi è una tecnica di compressione della trama per ridurre le dimensioni della trama.
 ms.assetid: add98d8f-6846-4dd6-b0e2-a4b6e89cbcc5
 title: Compressione a blocchi (Direct3D 10)
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: edf93a9d475b21b54baa59f9324a7f69b043bb0c21787c0c2892bfdbe2f6c66d
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 90068e932d94a7b76e871313e60a50260dbaf479
+ms.sourcegitcommit: 9b5faa61c38b2d0c432b7f2dbee8c127b0e28a7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "118101308"
+ms.lasthandoff: 08/19/2021
+ms.locfileid: "122480557"
 ---
 # <a name="block-compression-direct3d-10"></a>Compressione a blocchi (Direct3D 10)
 
-La compressione a blocchi è una tecnica di compressione delle trame per ridurre le dimensioni della trama. Rispetto a una trama con 32 bit per colore, una trama compressa in blocchi può essere fino al 75% più piccola. Le applicazioni in genere vedono un aumento delle prestazioni quando si usa la compressione dei blocchi a causa del footprint di memoria più ridotto.
+La compressione a blocchi è una tecnica di compressione della trama per ridurre le dimensioni della trama. Rispetto a una trama con 32 bit per colore, una trama compressa in blocchi può essere fino al 75% più piccola. Le applicazioni in genere visualizzano un aumento delle prestazioni quando si usa la compressione dei blocchi a causa del footprint di memoria più ridotto.
 
-Anche se la compressione a blocchi è in perdita, funziona bene ed è consigliata per tutte le trame che vengono trasformate e filtrate in base alla pipeline. Le trame mappate direttamente allo schermo (elementi dell'interfaccia utente come icone e testo) non sono scelte valide per la compressione perché gli artefatti sono più evidenti.
+Anche se con perdita di dati, la compressione a blocchi funziona bene ed è consigliata per tutte le trame che vengono trasformate e filtrate dalla pipeline. Le trame mappate direttamente allo schermo (elementi dell'interfaccia utente come icone e testo) non sono scelte valide per la compressione perché gli artefatti sono più evidenti.
 
 Una trama compressa a blocchi deve essere creata come multiplo di dimensioni 4 in tutte le dimensioni e non può essere usata come output della pipeline.
 
@@ -35,29 +35,29 @@ Una trama compressa a blocchi deve essere creata come multiplo di dimensioni 4 i
 
 ## <a name="how-does-block-compression-work"></a>Come funziona la compressione a blocchi?
 
-La compressione a blocchi è una tecnica per ridurre la quantità di memoria necessaria per archiviare i dati sui colori. Archiviando alcuni colori nelle dimensioni originali e altri colori usando uno schema di codifica, è possibile ridurre notevolmente la quantità di memoria necessaria per archiviare l'immagine. Poiché l'hardware decodifica automaticamente i dati compressi, non vi sono problemi di prestazioni per l'uso di trame compresse.
+La compressione a blocchi è una tecnica per ridurre la quantità di memoria necessaria per archiviare i dati relativi ai colori. Archiviando alcuni colori nelle dimensioni originali e altri usando uno schema di codifica, è possibile ridurre notevolmente la quantità di memoria necessaria per archiviare l'immagine. Poiché l'hardware decodifica automaticamente i dati compressi, non vi sono problemi di prestazioni per l'uso di trame compresse.
 
-Per verificare il funzionamento della compressione, vedere i due esempi seguenti. Il primo esempio descrive la quantità di memoria usata per l'archiviazione di dati non compressi. Il secondo esempio descrive la quantità di memoria usata per l'archiviazione di dati compressi.
+Per verificare il funzionamento della compressione, esaminare i due esempi seguenti. Nel primo esempio viene descritta la quantità di memoria utilizzata per l'archiviazione di dati non compressi. Nel secondo esempio viene descritta la quantità di memoria utilizzata per l'archiviazione di dati compressi.
 
 ### <a name="storing-uncompressed-data"></a>Archiviazione di dati non compressi
 
-La figura seguente rappresenta una trama 4×4 non compressa. Si supponga che ogni colore contenga un singolo componente di colore (rosso, ad esempio) e sia archiviato in un byte di memoria.
+La figura seguente rappresenta una trama 4×4 non compressa. Si supponga che ogni colore contenga un singolo componente di colore (rosso, ad esempio) e che sia archiviato in un byte di memoria.
 
-![Illustrazione di una trama 4x4 non compressa](images/d3d10-block-compress-1.png)
+![illustrazione di una trama 4x4 non compressa](images/d3d10-block-compress-1.png)
 
 I dati non compressi vengono disposti in memoria in sequenza e richiedono 16 byte, come illustrato nella figura seguente.
 
-![Illustrazione dei dati non compressi nella memoria sequenziale](images/d3d10-block-compress-2.png)
+![illustrazione dei dati non compressi nella memoria sequenziale](images/d3d10-block-compress-2.png)
 
 ### <a name="storing-compressed-data"></a>Archiviazione di dati compressi
 
 Dopo aver visto la quantità di memoria utilizzata da un'immagine non compressa, esaminare la quantità di memoria risparmiata da un'immagine compressa. Il formato di compressione [BC4](#bc4) archivia 2 colori (1 byte ciascuno) e 16 indici a 3 bit (48 bit o 6 byte) usati per interpolare i colori originali nella trama, come illustrato nella figura seguente.
 
-![Illustrazione del formato di compressione bc4](images/d3d10-block-compress-3.png)
+![illustrazione del formato di compressione bc4](images/d3d10-block-compress-3.png)
 
-Lo spazio totale necessario per archiviare i dati compressi è di 8 byte, ovvero un risparmio di memoria del 50% rispetto all'esempio non compresso. Il risparmio è ancora maggiore quando si usa più di un componente di colore.
+Lo spazio totale necessario per archiviare i dati compressi è di 8 byte, con un risparmio di memoria del 50% rispetto all'esempio non compresso. Il risparmio è ancora maggiore quando si usa più di un componente colore.
 
-Il notevole risparmio di memoria offerto dalla compressione dei blocchi può comportare un aumento delle prestazioni. Queste prestazioni sono a costo della qualità dell'immagine (a causa dell'interpolazione dei colori); tuttavia, la qualità inferiore spesso non è evidente.
+Il notevole risparmio di memoria offerto dalla compressione dei blocchi può comportare un aumento delle prestazioni. Queste prestazioni hanno un costo in termini di qualità delle immagini (a causa dell'interpolazione dei colori). tuttavia, la qualità inferiore spesso non è evidente.
 
 La sezione successiva illustra come Direct3D 10 semplifica l'uso della compressione a blocchi nell'applicazione.
 
@@ -73,31 +73,31 @@ D3DX10CreateTextureFromFile(...);
 
 
 
-Creare quindi una vista per associare la trama alla pipeline. Poiché una trama compressa a blocchi può essere usata solo come input per una fase shader, si vuole creare una visualizzazione di risorse shader chiamando [**CreateShaderResourceView**](/windows/desktop/api/D3D10/nf-d3d10-id3d10device-createshaderresourceview).
+Creare quindi una vista per associare la trama alla pipeline. Poiché una trama compressa in blocchi può essere usata solo come input per una fase shader, si vuole creare una visualizzazione shader-risorsa chiamando [**CreateShaderResourceView.**](/windows/desktop/api/D3D10/nf-d3d10-id3d10device-createshaderresourceview)
 
-Usare una trama compressa a blocchi nello stesso modo in cui si usa una trama non compressa. Se l'applicazione otterrà un puntatore di memoria ai dati compressi in blocchi, è necessario prendere in considerazione la spaziatura interna della memoria in un mipmap che fa sì che le dimensioni dichiarate siano diverse dalle dimensioni effettive.
+Usare una trama compressa a blocchi nello stesso modo in cui si usa una trama non compressa. Se l'applicazione otterrà un puntatore di memoria ai dati compressi in blocchi, è necessario prendere in considerazione la spaziatura interna della memoria in un mipmap che fa sì che le dimensioni dichiarate differiranno dalle dimensioni effettive.
 
 ### <a name="virtual-size-versus-physical-size"></a>Dimensioni virtuali e dimensioni fisiche
 
-Se si dispone di codice dell'applicazione che usa un puntatore di memoria per la memoria di una trama compressa in blocchi, è necessario tenere presente una considerazione importante che potrebbe richiedere una modifica nel codice dell'applicazione. Una trama compressa a blocchi deve essere un multiplo di 4 in tutte le dimensioni perché gli algoritmi di compressione a blocchi operano su blocchi texel 4x4. Si tratta di un problema per un mipmap le cui dimensioni iniziali sono divisibile per 4, ma i livelli suddivisi non lo sono. Il diagramma seguente illustra la differenza nell'area tra le dimensioni virtuali (dichiarate) e le dimensioni fisiche (effettive) di ogni livello mipmap.
+Se si dispone di codice dell'applicazione che usa un puntatore di memoria per la memoria di una trama compressa a blocchi, è importante tenere presente che potrebbe essere necessaria una modifica nel codice dell'applicazione. Una trama compressa a blocchi deve essere un multiplo di 4 in tutte le dimensioni perché gli algoritmi di compressione a blocchi operano su blocchi texel 4x4. Questo sarà un problema per un mipmap le cui dimensioni iniziali sono divisibile per 4, ma i livelli suddivisi non lo sono. Il diagramma seguente illustra la differenza nell'area tra le dimensioni virtuali (dichiarate) e le dimensioni fisiche (effettive) di ogni livello mipmap.
 
 ![Diagramma dei livelli mipmap non compressi e compressi](images/d3d10-block-compress-pad.png)
 
 Il lato sinistro del diagramma mostra le dimensioni del livello mipmap generate per una trama non compressa di 60×40. Le dimensioni di primo livello vengono prese dalla chiamata API che genera la trama. ogni livello successivo è la metà delle dimensioni del livello precedente. Per una trama non compressa, non esiste alcuna differenza tra le dimensioni virtuali (dichiarate) e le dimensioni fisiche (effettive).
 
-Il lato destro del diagramma mostra le dimensioni del livello mipmap generate per la stessa trama da 60×40 con compressione. Si noti che sia il secondo che il terzo livello hanno spaziatura interna della memoria per rendere i fattori di dimensioni di 4 per ogni livello. Questa operazione è necessaria in modo che gli algoritmi possano operare su 4×4 blocchi di texel. Questo è evidente se si considerano livelli mipmap inferiori a 4×4; le dimensioni di questi livelli mipmap molto piccoli verranno arrotondate al fattore più vicino di 4 quando viene allocata la memoria della trama.
+Il lato destro del diagramma mostra le dimensioni del livello mipmap generate per la stessa trama da 60×40 con compressione. Si noti che sia il secondo che il terzo livello hanno una spaziatura interna della memoria per fare in modo che le dimensioni fattori di 4 per ogni livello. Ciò è necessario in modo che gli algoritmi possano operare su blocchi texel 4×4. Questo è evidente se si considerano livelli di mipmap inferiori a 4×4; Le dimensioni di questi livelli di mipmap molto piccoli verranno arrotondate per es. al fattore più vicino di 4 quando viene allocata la memoria della trama.
 
-L'hardware di campionamento usa le dimensioni virtuali. Quando la trama viene campionata, la spaziatura interna della memoria viene ignorata. Per i livelli mipmap inferiori a 4×4, verranno usati solo i primi quattro texel per una mappa 2×2 e solo il primo texel verrà usato da un blocco 1×1. Non esiste tuttavia una struttura API che esponga le dimensioni fisiche (inclusa la spaziatura interna della memoria).
+L'hardware di campionamento usa le dimensioni virtuali; Quando la trama viene campionata, il riempimento della memoria viene ignorato. Per i livelli di mipmap inferiori a 4×4, verranno usati solo i primi quattro texel per una mappa 2×2 e solo il primo texel verrà usato da un blocco 1×1. Non esiste tuttavia una struttura API che esponga le dimensioni fisiche (inclusa la spaziatura interna della memoria).
 
-In sintesi, prestare attenzione a usare blocchi di memoria allineati durante la copia di aree contenenti dati compressi a blocchi. A tale scopo in un'applicazione che ottiene un puntatore di memoria, assicurarsi che il puntatore usi l'altezza della superficie per prendere in considerazione le dimensioni della memoria fisica.
+In breve, prestare attenzione a usare blocchi di memoria allineati quando si copiano aree contenenti dati compressi in blocchi. Per eseguire questa operazione in un'applicazione che ottiene un puntatore di memoria, assicurarsi che il puntatore usi l'intonazione della superficie per prendere in considerazione le dimensioni della memoria fisica.
 
 ## <a name="compression-algorithms"></a>Algoritmi di compressione
 
-Le tecniche di compressione a blocchi in Direct3D suddivideno i dati di trama non compressi in 4×4 blocchi, comprimono ogni blocco e quindi archiviano i dati. Per questo motivo, si prevede che le trame siano compresse devono avere dimensioni di trama multiple di 4.
+Le tecniche di compressione a blocchi in Direct3D suddivideno i dati di trama non compressi in blocchi 4×4, comprimono ogni blocco e quindi archiviano i dati. Per questo motivo, si prevede che le trame siano compresse e devono avere dimensioni di trama multiple di 4.
 
 ![Diagramma della compressione a blocchi](images/d3d10-compression-1.png)
 
-Il diagramma precedente mostra una trama partizionata in blocchi texel. Il primo blocco mostra il layout dei 16 texel con etichetta a-p, ma ogni blocco ha la stessa organizzazione di dati.
+Il diagramma precedente mostra una trama partizionata in blocchi di texel. Il primo blocco mostra il layout dei 16 texel con etichetta a-p, ma ogni blocco ha la stessa organizzazione di dati.
 
 Direct3D implementa diversi schemi di compressione, ognuno dei quali implementa un compromesso diverso tra il numero di componenti archiviati, il numero di bit per componente e la quantità di memoria utilizzata. Usare questa tabella per scegliere il formato più adatto al tipo di dati e alla risoluzione dei dati più adatta all'applicazione.
 
@@ -105,9 +105,9 @@ Direct3D implementa diversi schemi di compressione, ognuno dei quali implementa 
 
 | Origine dati                     | Risoluzione della compressione dei dati (in bit) | Scegliere questo formato di compressione |
 |---------------------------------|---------------------------------------|--------------------------------|
-| Colore e alfa a tre componenti | Colore (5:6:5), Alfa (1) o nessun carattere alfa  | BC1                            |
-| Colore e alfa a tre componenti | Colore (5:6:5), Alfa (4)              | [RB2](#bc2)                    |
-| Colore e alfa a tre componenti | Colore (5:6:5), Alfa (8)              | [BC3](#bc3)                    |
+| Colore a tre componenti e alfa | Color (5:6:5), Alpha (1) o no alpha  | BC1                            |
+| Colore a tre componenti e alfa | Color (5:6:5), Alpha (4)              | [RB2](#bc2)                    |
+| Colore a tre componenti e alfa | Color (5:6:5), Alpha (8)              | [BC3](#bc3)                    |
 | Colore a un componente             | Un componente (8)                     | [BC4](#bc4)                    |
 | Colore a due componenti             | Due componenti (8:8)                  | [BC5](#bc5)                    |
 
@@ -117,13 +117,13 @@ Direct3D implementa diversi schemi di compressione, ognuno dei quali implementa 
 
 ### <a name="bc1"></a>BC1
 
-Usare il primo formato di compressione blocchi (BC1) (DXGI FORMAT BC1 TYPELESS, DXGI FORMAT BC1 UNORM o DXGI BC1 UNORM SRGB) per archiviare i dati dei colori a tre componenti usando un colore \_ \_ \_ \_ \_ \_ \_ \_ \_ 5:6:5 (5 bit rosso, 6 bit verdi, 5 bit blu). Questo vale anche se i dati contengono anche caratteri alfa a 1 bit. Supponendo che una trama 4×4 utilizzi il formato dati più grande possibile, il formato BC1 riduce la memoria necessaria da 48 byte (16 colori × 3 componenti/colore × 1 byte/componente) a 8 byte di memoria.
+Usare il primo formato di compressione a blocchi (BC1) (DXGI FORMAT BC1 TYPELESS, DXGI FORMAT BC1 UNORM o DXGI BC1 UNORM SRGB) per archiviare i dati dei colori a tre componenti usando un colore \_ \_ \_ \_ \_ \_ \_ \_ \_ 5:6:5 (rosso a 5 bit, verde a 6 bit, blu a 5 bit). Questo vale anche se i dati contengono anche alfa a 1 bit. Supponendo una trama 4×4 con il formato dati più grande possibile, il formato BC1 riduce la memoria necessaria da 48 byte (16 colori × 3 componenti/colore × 1 byte/componente) a 8 byte di memoria.
 
-L'algoritmo funziona su 4×4 blocchi di texel. Anziché archiviare 16 colori, l'algoritmo salva 2 colori di riferimento (colore 0 e colore 1) e indici di \_ \_ colori a 16 a 2 bit (blocchi a-p), come illustrato nel diagramma seguente.
+L'algoritmo funziona su 4×4 blocchi di texel. Anziché archiviare 16 colori, l'algoritmo salva 2 colori di riferimento (colore 0 e colore 1) e indici di colori a \_ \_ 16 a 2 bit (blocchi a-p), come illustrato nel diagramma seguente.
 
 ![Diagramma del layout per la compressione bc1](images/d3d10-compression-bc1.png)
 
-Gli indici dei colori (a-p) vengono usati per cercare i colori originali da una tabella dei colori. La tabella dei colori contiene 4 colori. I primi due colori, ovvero \_ il colore 0 e il \_ colore 1, sono i colori minimo e massimo. Gli altri due colori, il \_ colore 2 e il \_ colore 3, sono colori intermedi calcolati con l'interpolazione lineare.
+Gli indici dei colori (a-p) vengono usati per cercare i colori originali da una tabella dei colori. La tabella dei colori contiene 4 colori. I primi due colori, ovvero il colore 0 e \_ il colore \_ 1, sono i colori minimo e massimo. Gli altri due colori, il \_ colore 2 e \_ il colore 3, sono colori intermedi calcolati con l'interpolazione lineare.
 
 
 ```
@@ -147,7 +147,7 @@ color_3 = 11
 
 Infine, ognuno dei colori nei blocchi a-p viene confrontato con i quattro colori nella tabella dei colori e l'indice per il colore più vicino viene archiviato nei blocchi a 2 bit.
 
-Questo algoritmo si presta ai dati che contengono anche alfa a 1 bit. L'unica differenza è che il colore 3 è impostato su 0 (che rappresenta un colore trasparente) e il colore 2 è una combinazione lineare di colore \_ \_ \_ 0 e \_ colore 1.
+Questo algoritmo si presta a dati che contengono anche alfa a 1 bit. L'unica differenza è che il colore 3 è impostato su 0 (che rappresenta un colore trasparente) e il colore 2 è una combinazione lineare di colore 0 e \_ \_ colore \_ \_ 1.
 
 
 ```
@@ -159,20 +159,9 @@ color_3 = 0;
 
 
 
-<table>
-<colgroup>
-<col style="width: 100%" />
-</colgroup>
-<tbody>
-<tr class="odd">
-<td>Differenze tra Direct3D 9 e Direct3D 10:<br/> Questo formato esiste sia in Direct3D 9 che in 10.<br/>
-<ul>
-<li>In Direct3D 9 il formato BC1 è denominato D3DFMT_DXT1.</li>
-<li>In Direct3D 10 il formato BC1 è rappresentato da DXGI_FORMAT_BC1_UNORM o DXGI_FORMAT_BC1_UNORM_SRGB.</li>
-</ul></td>
-</tr>
-</tbody>
-</table>
+
+| | | Differenze tra Direct3D 9 e Direct3D 10:<br /> Questo formato esiste sia in Direct3D 9 che in 10.<br /><ul><li>In Direct3D 9 il formato BC1 è denominato D3DFMT_DXT1.</li><li>In Direct3D 10 il formato BC1 è rappresentato da DXGI_FORMAT_BC1_UNORM o DXGI_FORMAT_BC1_UNORM_SRGB.</li></ul> | 
+
 
 
 
@@ -180,26 +169,15 @@ color_3 = 0;
 
 ### <a name="bc2"></a>RB2
 
-Usare il formato BC2 (DXGI \_ FORMAT \_ BC2 \_ TYPELESS, DXGI \_ FORMAT BC2 UNORM o \_ \_ DXGI \_ BC2 UNORM SRGB) per archiviare i dati che contengono dati di colore e alfa con bassa \_ \_ coerenza (usare [BC3](#bc3) per dati alfa altamente coerenti). Il formato BC2 archivia i dati RGB come colore 5:6:5 (5 bit rosso, 6 bit verde, blu a 5 bit) e alfa come valore a 4 bit separato. Supponendo una trama 4×4 con il formato di dati più grande possibile, questa tecnica di compressione riduce la memoria necessaria da 64 byte (16 colori × 4 componenti/colore × 1 byte/componente) a 16 byte di memoria.
+Usare il formato BC2 (DXGI \_ FORMAT \_ BC2 \_ TYPELESS, DXGI \_ FORMAT BC2 UNORM o \_ \_ DXGI \_ BC2 UNORM SRGB) \_ \_ [](#bc3) per archiviare i dati che contengono dati di colore e alfa con bassa coesistenza (usare BC3 per dati alfa altamente coerenti). Il formato BC2 archivia i dati RGB come colore 5:6:5 (5 bit rosso, 6 bit verde, 5 bit blu) e alfa come valore separato a 4 bit. Supponendo che una trama 4×4 utilizzi il formato dati più grande possibile, questa tecnica di compressione riduce la memoria necessaria da 64 byte (16 colori × 4 componenti/colore × 1 byte/componente) a 16 byte di memoria.
 
-Il formato BC2 archivia i colori con lo stesso numero di bit e layout di dati del [formato BC1.](#bc1) TUTTAVIA, BC2 richiede altri 64 bit di memoria per archiviare i dati alfa, come illustrato nel diagramma seguente.
+Il formato BC2 archivia i colori con lo stesso numero di bit e layout dei dati del [formato BC1.](#bc1) Tuttavia, BC2 richiede altri 64 bit di memoria per archiviare i dati alfa, come illustrato nel diagramma seguente.
 
 ![Diagramma del layout per la compressione bc2](images/d3d10-compression-bc2.png)
 
-<table>
-<colgroup>
-<col style="width: 100%" />
-</colgroup>
-<tbody>
-<tr class="odd">
-<td>Differenze tra Direct3D 9 e Direct3D 10:<br/> Questo formato esiste sia in Direct3D 9 che in 10.<br/>
-<ul>
-<li>In Direct3D 9 il formato BC2 è denominato D3DFMT_DXT2 e D3DFMT_DXT3.</li>
-<li>In Direct3D 10 il formato BC2 è rappresentato da DXGI_FORMAT_BC2_UNORM o DXGI_FORMAT_BC2_UNORM_SRGB.</li>
-</ul></td>
-</tr>
-</tbody>
-</table>
+
+| | | Differenze tra Direct3D 9 e Direct3D 10:<br /> Questo formato esiste sia in Direct3D 9 che in 10.<br /><ul><li>In Direct3D 9 il formato BC2 è denominato D3DFMT_DXT2 e D3DFMT_DXT3.</li><li>In Direct3D 10 il formato BC2 è rappresentato da DXGI_FORMAT_BC2_UNORM o DXGI_FORMAT_BC2_UNORM_SRGB.</li></ul> | 
+
 
 
 
@@ -207,9 +185,9 @@ Il formato BC2 archivia i colori con lo stesso numero di bit e layout di dati de
 
 ### <a name="bc3"></a>BC3
 
-Usare il formato BC3 (DXGI \_ FORMAT \_ BC3 \_ TYPELESS, DXGI \_ FORMAT BC3 UNORM o \_ \_ DXGI \_ BC3 \_ UNORM \_ SRGB) [](#bc2) per archiviare dati di colore altamente coerenti (usare BC2 con dati alfa meno coerenti). Il formato BC3 archivia i dati sui colori usando i dati di colore 5:6:5 (5 bit rosso, 6 bit verde, 5 bit blu) e i dati alfa usando un byte. Supponendo una trama 4×4 con il formato di dati più grande possibile, questa tecnica di compressione riduce la memoria necessaria da 64 byte (16 colori × 4 componenti/colore × 1 byte/componente) a 16 byte di memoria.
+Usare il formato BC3 (DXGI \_ FORMAT \_ BC3 \_ TYPELESS, DXGI \_ FORMAT BC3 UNORM o \_ \_ DXGI \_ BC3 \_ UNORM \_ SRGB) [](#bc2) per archiviare dati di colore altamente coerenti (usare BC2 con dati alfa meno coerenti). Il formato BC3 archivia i dati di colore usando il colore 5:6:5 (5 bit rosso, 6 bit verde, 5 bit blu) e i dati alfa usando un byte. Supponendo che una trama 4×4 utilizzi il formato dati più grande possibile, questa tecnica di compressione riduce la memoria necessaria da 64 byte (16 colori × 4 componenti/colore × 1 byte/componente) a 16 byte di memoria.
 
-Il formato BC3 archivia i colori con lo stesso numero di bit e layout di dati del [formato BC1.](#bc1) Tuttavia, BC3 richiede altri 64 bit di memoria per archiviare i dati alfa. Il formato BC3 gestisce i valori alfa archiviando due valori di riferimento e interpolandoli tra di essi (in modo analogo al modo in cui BC1 archivia il colore RGB).
+Il formato BC3 archivia i colori con lo stesso numero di bit e layout dei dati del [formato BC1.](#bc1) Bc3, tuttavia, richiede altri 64 bit di memoria per archiviare i dati alfa. Il formato BC3 gestisce alpha archiviando due valori di riferimento e interpolando tra di essi (in modo analogo al modo in cui BC1 archivia il colore RGB).
 
 L'algoritmo funziona su 4×4 blocchi di texel. Anziché archiviare 16 valori alfa, l'algoritmo archivia 2 indici alfa di riferimento (alfa 0 e alfa 1) e 16 indici di colore \_ a 3 bit (da alfa a p), come illustrato nel diagramma \_ seguente.
 
@@ -217,7 +195,7 @@ L'algoritmo funziona su 4×4 blocchi di texel. Anziché archiviare 16 valori alf
 
 Il formato BC3 usa gli indici alfa (a-p) per cercare i colori originali da una tabella di ricerca che contiene 8 valori. I primi due valori, alfa 0 e alfa 1, sono i valori minimo e massimo. Gli altri sei valori intermedi vengono calcolati usando \_ \_ l'interpolazione lineare.
 
-L'algoritmo determina il numero di valori alfa interpolati esaminando i due valori alfa di riferimento. Se alpha \_ 0 è maggiore di alpha \_ 1, BC3 interpola 6 valori alfa; in caso contrario, interpola 4. Quando BC3 interpola solo 4 valori alfa, imposta due valori alfa aggiuntivi (0 per completamente trasparente e 255 per completamente opaco). BC3 comprime i valori alfa nell'area texel 4×4 archiviando il codice di bit corrispondente ai valori alfa interpolati che corrispondono maggiormente al valore alfa originale per un determinato texel.
+L'algoritmo determina il numero di valori alfa interpolati esaminando i due valori alfa di riferimento. Se alpha \_ 0 è maggiore di alpha \_ 1, BC3 interpola 6 valori alfa; in caso contrario, interpola 4. Quando BC3 interpola solo 4 valori alfa, imposta due valori alfa aggiuntivi (0 per completamente trasparente e 255 per completamente opaco). BC3 comprime i valori alfa nell'area 4×4 texel archiviando il codice di bit corrispondente ai valori alfa interpolati che corrispondono maggiormente al valore alfa originale per un determinato texel.
 
 
 ```
@@ -247,20 +225,9 @@ else
 
 
 
-<table>
-<colgroup>
-<col style="width: 100%" />
-</colgroup>
-<tbody>
-<tr class="odd">
-<td>Differenze tra Direct3D 9 e Direct3D 10:<br/>
-<ul>
-<li>In Direct3D 9 il formato BC3 è denominato D3DFMT_DXT4 e D3DFMT_DXT5.</li>
-<li>In Direct3D 10 il formato BC3 è rappresentato da DXGI_FORMAT_BC3_UNORM o DXGI_FORMAT_BC3_UNORM_SRGB.</li>
-</ul></td>
-</tr>
-</tbody>
-</table>
+
+| | | Differenze tra Direct3D 9 e Direct3D 10:<br /><ul><li>In Direct3D 9 il formato BC3 è denominato D3DFMT_DXT4 e D3DFMT_DXT5.</li><li>In Direct3D 10 il formato BC3 è rappresentato da DXGI_FORMAT_BC3_UNORM o DXGI_FORMAT_BC3_UNORM_SRGB.</li></ul> | 
+
 
 
 
@@ -268,15 +235,15 @@ else
 
 ### <a name="bc4"></a>BC4
 
-Usare il formato BC4 per archiviare i dati di colore a un componente usando 8 bit per ogni colore. A causa della maggiore accuratezza (rispetto a [BC1), BC4](#bc1)è ideale per l'archiviazione di dati a virgola mobile nell'intervallo da 0 a 1 usando il formato DXGI FORMAT BC4 UNORM e da -1 a +1 usando il formato \[ \] \_ \_ \_ \[ \] DXGI \_ FORMAT \_ BC4 \_ SNORM. Supponendo una trama 4×4 che usa il formato dati più grande possibile, questa tecnica di compressione riduce la memoria necessaria da 16 byte (16 colori × 1 componente/colore × 1 byte/componente) a 8 byte.
+Usare il formato BC4 per archiviare i dati dei colori a un componente usando 8 bit per ogni colore. Come risultato della maggiore accuratezza (rispetto a [BC1), BC4](#bc1)è ideale per archiviare dati a virgola mobile nell'intervallo compreso tra 0 e 1 usando il formato DXGI FORMAT BC4 UNORM e da -1 a +1 usando il formato \[ \] \_ \_ \_ \[ \] SNORM DXGI \_ FORMAT \_ \_ BC4. Supponendo che una trama a 4×4 utilizzi il formato dati più grande possibile, questa tecnica di compressione riduce la memoria necessaria da 16 byte (16 colori × 1 componente/colore × 1 byte/componente) a 8 byte.
 
-L'algoritmo funziona su 4×4 blocchi di texel. Anziché archiviare 16 colori, l'algoritmo archivia 2 colori di riferimento (rosso 0 e rosso 1) e indici di colori a \_ \_ 16 a 3 bit (da rosso a p rosso), come illustrato nel diagramma seguente.
+L'algoritmo funziona su 4×4 blocchi di texel. Anziché archiviare 16 colori, l'algoritmo archivia 2 colori di riferimento (rosso 0 e rosso 1) e 16 indici di colori a 3 bit (da rosso a p rosso), come illustrato nel diagramma \_ \_ seguente.
 
 ![Diagramma del layout per la compressione bc4](images/d3d10-compression-bc4.png)
 
 L'algoritmo usa gli indici a 3 bit per cercare i colori da una tabella dei colori che contiene 8 colori. I primi due colori, rosso \_ 0 e \_ rosso 1, sono i colori minimo e massimo. L'algoritmo calcola i colori rimanenti usando l'interpolazione lineare.
 
-L'algoritmo determina il numero di valori di colore interpolati esaminando i due valori di riferimento. Se il rosso 0 è maggiore del rosso \_ \_ 1, BC4 interpola 6 valori di colore; in caso contrario, interpola 4. Quando BC4 interpola solo 4 valori di colore, imposta due valori di colore aggiuntivi (0,0f per completamente trasparente e 1,0f per l'opacità completa). BC4 comprime i valori alfa nell'area texel 4×4 archiviando il codice di bit corrispondente ai valori alfa interpolati che corrispondono maggiormente al valore alfa originale per un determinato texel.
+L'algoritmo determina il numero di valori di colore interpolati esaminando i due valori di riferimento. Se red \_ 0 è maggiore di \_ red 1, BC4 interpola 6 valori di colore; in caso contrario, interpola 4. Quando BC4 interpola solo 4 valori di colore, imposta due valori di colore aggiuntivi (0,0f per completamente trasparente e 1,0f per l'opacità completa). BC4 comprime i valori alfa nell'area 4×4 texel archiviando il codice di bit corrispondente ai valori alfa interpolati che corrispondono maggiormente al valore alfa originale per un determinato texel.
 
 -   [BC4 \_ UNORM](/windows)
 -   [BC4 \_ SNORM](/windows)
@@ -313,11 +280,11 @@ else
 
 
 
-Ai colori di riferimento vengono assegnati indici a 3 bit (da 000 a 111 poiché sono presenti 8 valori), che verranno salvati in blocchi rosso da a a p rosso durante la compressione.
+Ai colori di riferimento vengono assegnati indici a 3 bit (da 000 a 111 poiché sono presenti 8 valori), che verranno salvati in blocchi rosso da a a rosso p durante la compressione.
 
 ### <a name="bc4_snorm"></a>BC4 \_ SNORM
 
-DXGI FORMAT BC4 SNORM è esattamente lo stesso, ad eccezione del fatto che i dati vengono codificati nell'intervallo SNORM e quando \_ \_ vengono \_ interpolati 4 valori di colore. L'interpolazione dei dati a componente singolo viene eseguita come nell'esempio di codice seguente.
+DXGI FORMAT BC4 SNORM è esattamente lo stesso, ad eccezione del fatto che i dati sono codificati nell'intervallo SNORM e quando \_ \_ vengono \_ interpolati 4 valori di colore. L'interpolazione dei dati a componente singolo viene eseguita come nell'esempio di codice seguente.
 
 
 ```
@@ -347,19 +314,19 @@ else
 
 
 
-Ai colori di riferimento vengono assegnati indici a 3 bit (da 000 a 111 poiché sono presenti 8 valori), che verranno salvati in blocchi rosso da a a p rosso durante la compressione.
+Ai colori di riferimento vengono assegnati indici a 3 bit (da 000 a 111 poiché sono presenti 8 valori), che verranno salvati in blocchi rosso da a a rosso p durante la compressione.
 
 ### <a name="bc5"></a>BC5
 
-Usare il formato BC5 per archiviare i dati dei colori a due componenti usando 8 bit per ogni colore. A causa della maggiore accuratezza (rispetto a [BC1), BC5](#bc1)è ideale per l'archiviazione di dati a virgola mobile nell'intervallo da 0 a 1 usando il formato DXGI FORMAT BC5 UNORM e da -1 a +1 usando il formato \[ \] \_ \_ \_ \[ \] DXGI \_ FORMAT \_ BC5 \_ SNORM. Supponendo una trama 4×4 con il formato di dati più grande possibile, questa tecnica di compressione riduce la memoria necessaria da 32 byte (16 colori × 2 componenti/colore × 1 byte/componente) a 16 byte.
+Usare il formato BC5 per archiviare i dati dei colori a due componenti usando 8 bit per ogni colore. Come risultato della maggiore accuratezza (rispetto a [BC1), BC5](#bc1)è ideale per archiviare dati a virgola mobile nell'intervallo compreso tra 0 e 1 usando il formato DXGI FORMAT BC5 UNORM e da -1 a +1 usando il formato \[ \] \_ \_ \_ \[ \] SNORM DXGI \_ FORMAT \_ \_ BC5. Supponendo che una trama 4×4 utilizzi il formato dati più grande possibile, questa tecnica di compressione riduce la memoria necessaria da 32 byte (16 colori × 2 componenti/colore × 1 byte/componente) a 16 byte.
 
-L'algoritmo funziona su 4×4 blocchi di texel. Anziché archiviare 16 colori per entrambi i componenti, l'algoritmo archivia 2 colori di riferimento per ogni componente (rosso \_ 0, rosso \_ 1, verde 0 e \_ verde 1) e 16 indici di colore a 3 bit per ogni componente (da rosso a p rosso e verde da a p verde), come illustrato nel \_ diagramma seguente.
+L'algoritmo funziona su 4×4 blocchi di texel. Anziché archiviare 16 colori per entrambi i componenti, l'algoritmo archivia 2 colori di riferimento per ogni componente (rosso 0, rosso 1, verde 0 e verde 1) e indici di \_ \_ colore a \_ 16 a 3 bit per ogni componente (da rosso a p rosso e verde da a p verde), come illustrato nel \_ diagramma seguente.
 
 ![Diagramma del layout per la compressione bc5](images/d3d10-compression-bc5.png)
 
-L'algoritmo usa gli indici a 3 bit per cercare i colori da una tabella dei colori che contiene 8 colori. I primi due colori, rosso 0 e rosso 1 (o verde 0 e \_ \_ verde \_ 1), sono i colori \_ minimo e massimo. L'algoritmo calcola i colori rimanenti usando l'interpolazione lineare.
+L'algoritmo usa gli indici a 3 bit per cercare i colori da una tabella dei colori che contiene 8 colori. I primi due colori, ovvero rosso 0 e rosso 1 (o verde 0 e \_ \_ verde \_ 1), sono i colori minimo \_ e massimo. L'algoritmo calcola i colori rimanenti usando l'interpolazione lineare.
 
-L'algoritmo determina il numero di valori di colore interpolati esaminando i due valori di riferimento. Se il rosso 0 è maggiore del rosso \_ \_ 1, BC5 interpola 6 valori di colore; in caso contrario, interpola 4. Quando BC5 interpola solo 4 valori di colore, imposta i due valori di colore rimanenti su 0,0f e 1,0f.
+L'algoritmo determina il numero di valori di colore interpolati esaminando i due valori di riferimento. Se red \_ 0 è maggiore di \_ red 1, BC5 interpola 6 valori di colore; in caso contrario, interpola 4. Quando BC5 interpola solo 4 valori di colore, imposta i due valori di colore rimanenti su 0,0f e 1,0f.
 
 -   [BC5 \_ UNORM](/windows)
 -   [BC5 \_ SNORM](/windows)
@@ -396,11 +363,11 @@ else
 
 
 
-Ai colori di riferimento vengono assegnati indici a 3 bit (da 000 a 111 poiché sono presenti 8 valori), che verranno salvati in blocchi rosso da a a p rosso durante la compressione.
+Ai colori di riferimento vengono assegnati indici a 3 bit (da 000 a 111 poiché sono presenti 8 valori), che verranno salvati in blocchi rosso da a a rosso p durante la compressione.
 
 ### <a name="bc5_snorm"></a>BC5 \_ SNORM
 
-DXGI FORMAT BC5 SNORM è esattamente lo stesso, ad eccezione del fatto che i dati vengono codificati nell'intervallo SNORM e, quando vengono interpolati 4 valori di dati, i due valori aggiuntivi sono \_ \_ \_ -1,0f e 1,0f. L'interpolazione dei dati a componente singolo viene eseguita come nell'esempio di codice seguente. I calcoli per i componenti verdi sono simili.
+DXGI FORMAT BC5 SNORM è esattamente lo stesso, ad eccezione del fatto che i dati sono codificati nell'intervallo SNORM e quando 4 valori di dati sono interpolati, i due valori aggiuntivi sono \_ \_ \_ -1,0f e 1,0f. L'interpolazione dei dati a componente singolo viene eseguita come nell'esempio di codice seguente. I calcoli per i componenti verdi sono simili.
 
 
 ```
@@ -430,11 +397,11 @@ else
 
 
 
-Ai colori di riferimento vengono assegnati indici a 3 bit (da 000 a 111 poiché sono presenti 8 valori), che verranno salvati in blocchi rosso da a a p rosso durante la compressione.
+Ai colori di riferimento vengono assegnati indici a 3 bit (da 000 a 111 poiché sono presenti 8 valori), che verranno salvati in blocchi rosso da a a rosso p durante la compressione.
 
 ## <a name="format-conversion-using-direct3d-101"></a>Conversione del formato con Direct3D 10.1
 
-Direct3D 10.1 consente copie tra trame prestrutturate e trame compresse a blocchi con la stessa larghezza di bit. Le funzioni che possono eseguire questa operazione sono [**CopyResource**](/windows/desktop/api/D3D10/nf-d3d10-id3d10device-copyresource) e [**CopySubresourceRegion.**](/windows/desktop/api/D3D10/nf-d3d10-id3d10device-copysubresourceregion)
+Direct3D 10.1 consente di eseguire copie tra trame di tipo prestrutturato e trame compresse a blocchi delle stesse larghezze di bit. Le funzioni che possono eseguire questa operazione sono [**CopyResource**](/windows/desktop/api/D3D10/nf-d3d10-id3d10device-copyresource) e [**CopySubresourceRegion**](/windows/desktop/api/D3D10/nf-d3d10-id3d10device-copysubresourceregion).
 
 A partire da Direct3D 10.1, è possibile usare [**CopyResource**](/windows/desktop/api/D3D10/nf-d3d10-id3d10device-copyresource) e [**CopySubresourceRegion**](/windows/desktop/api/D3D10/nf-d3d10-id3d10device-copysubresourceregion) per copiare tra alcuni tipi di formato. Questo tipo di operazione di copia esegue un tipo di conversione del formato che reinterpreta i dati delle risorse come un tipo di formato diverso. Si consideri questo esempio che illustra la differenza tra la reinterpretazione dei dati con il comportamento di un tipo di conversione più tipico:
 
@@ -457,7 +424,7 @@ Per reinterpretare 'f' come tipo di 'u', usare [memcpy](/cpp/c-runtime-library/r
 
 Nella reinterpretazione precedente, il valore sottostante dei dati non cambia; [memcpy](/cpp/c-runtime-library/reference/memcpy-wmemcpy) reinterpreta il float come intero senza segno.
 
-Per eseguire il tipo di conversione più tipico, usare l'assegnazione:
+Per eseguire il tipo più tipico di conversione, usare l'assegnazione:
 
 
 ```

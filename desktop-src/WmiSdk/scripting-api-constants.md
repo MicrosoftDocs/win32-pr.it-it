@@ -1,5 +1,5 @@
 ---
-description: L'API di scripting per WMI contiene flag, valori comuni e codici di errore.
+description: L'API scripting per WMI contiene flag, valori comuni e codici di errore.
 ms.assetid: feaab757-3167-420b-8f42-edced4cd4c53
 ms.tgt_platform: multiple
 title: Costanti dell'API di scripting
@@ -10,18 +10,18 @@ topic_type:
 api_name: ''
 api_type: ''
 api_location: ''
-ms.openlocfilehash: 84e52c329fc311e7f99a6564ac51f90574308e31fa1eaa90bfb6d0bcdddc69b4
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: ebbfbc1061d8bca03f52dd8cb7583fbe23ebb33a
+ms.sourcegitcommit: 61a4c522182aa1cacbf5669683d9570a3bf043b2
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119130873"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "122885248"
 ---
 # <a name="scripting-api-constants"></a>Costanti dell'API di scripting
 
 WMI usa diversi tipi di costanti nel parametro *iflags* delle chiamate al metodo [nell'API scripting per WMI](scripting-api-for-wmi.md).
 
-Visual Basic applicazioni possono includere la libreria dei tipi per l'API di scripting Wbemdisp.tlb. Gli script non sono in grado di accedere alle costanti nella libreria dei tipi a meno che non usino i tag o dal formato <REFERENCE> <OBJECT> di file XML WSH (Windows Script Host), come descritto in Uso della libreria dei tipi di [scripting WMI](using-the-wmi-scripting-type-library.md). In caso contrario, uno script deve utilizzare il valore della costante .
+Visual Basic applicazioni possono includere la libreria dei tipi per l'API di scripting Wbemdisp.tlb. Gli script non possono accedere alle costanti nella libreria dei tipi a meno che non usino i tag REFERENCE o OBJECT dal &lt; formato di file XML &gt; &lt; &gt; WSH (Windows Script Host), [](using-the-wmi-scripting-type-library.md)come descritto in Uso della libreria dei tipi di scripting WMI . In caso contrario, uno script deve usare il valore della costante .
 
 ## <a name="constants"></a>Costanti
 
@@ -37,7 +37,7 @@ Definire i livelli di autenticazione di sicurezza.
 <span id="WbemChangeFlagEnum"></span><span id="wbemchangeflagenum"></span><span id="WBEMCHANGEFLAGENUM"></span>[**WbemChangeFlagEnum**](/windows/desktop/api/Wbemdisp/ne-wbemdisp-wbemchangeflagenum)
 </dt> <dd>
 
-Definire la modalità di esecuzione di un'operazione di scrittura in una classe o in un'istanza.
+Definire la modalità di esecuzione di un'operazione di scrittura in una classe o in un'istanza di .
 
 </dd> <dt>
 
@@ -58,7 +58,7 @@ Definire le impostazioni per il confronto tra oggetti e vengono usate da [**SWbe
 <span id="WbemConnectOptionsEnum"></span><span id="wbemconnectoptionsenum"></span><span id="WBEMCONNECTOPTIONSENUM"></span>[**WbemConnectOptionsEnum**](/windows/desktop/api/Wbemdisp/ne-wbemdisp-wbemconnectoptionsenum)
 </dt> <dd>
 
-Definisce un flag di sicurezza utilizzato come parametro nelle chiamate al metodo [**SWbemLocator.ConnectServer**](swbemlocator-connectserver.md) quando una connessione a WMI in un computer remoto ha esito negativo.
+Definisce un flag di sicurezza utilizzato come parametro nelle chiamate al metodo [**SWbemLocator.ConnectServer**](swbemlocator-connectserver.md) quando si verifica un errore di connessione a WMI in un computer remoto.
 
 </dd> <dt>
 
@@ -120,7 +120,7 @@ Definisce le costanti di timeout. Questa costante viene usata [**da SWbemEventSo
 
 ## <a name="combining-flags"></a>Combinazione di flag
 
-È possibile combinare i flag per influire su più aspetti della chiamata API.
+È possibile combinare flag per influire su più aspetti della chiamata API.
 
 Ad esempio, per creare una chiamata [*semisincronous,*](gloss-s.md) il parametro *iFlags* in una chiamata [**cQuery \_SWbemServices.Exe**](swbemservices-execquery.md) deve contenere due flag: **WbemFlagReturnImmediately** e **WbemFlagForwardOnly**. Il valore di **WbemFlagReturnImmediately** è 16 e il valore di **WbemFlagForwardOnly** è 32. Poiché non è possibile accedere alle costanti in base al nome, i valori di questi flag vengono combinati, producendo un *valore iFlags* pari a 48.
 

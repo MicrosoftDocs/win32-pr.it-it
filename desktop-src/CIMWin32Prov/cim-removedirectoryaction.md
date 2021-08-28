@@ -25,19 +25,19 @@ api_type:
 - DllExport
 api_location:
 - CIMWin32.dll
-ms.openlocfilehash: 8dd926b3c01b3ae38b39dbe758904b81aa99cd5d155af34d5dbcc19bda3a43fa
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: c314bb5fb0013637068fe4720d55fdcad9cd3ab5
+ms.sourcegitcommit: 61a4c522182aa1cacbf5669683d9570a3bf043b2
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119920421"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "122880104"
 ---
 # <a name="cim_removedirectoryaction-class"></a>Classe CIM \_ RemoveDirectoryAction
 
-La **classe CIM \_ RemoveDirectoryAction rimuove** le directory per gli elementi software.
+La **classe CIM \_ RemoveDirectoryAction** rimuove le directory per gli elementi software.
 
 > [!IMPORTANT]
-> Le classi CIM (Distributed Management Task Force) DMTF (Distributed Management Task Force) Common Information Model sono le classi padre su cui vengono compilate le classi WMI. WMI supporta attualmente solo gli [schemi della versione CIM 2.x](https://dmtf.org/standards/cim/schemas).
+> Le classi CIM (Distributed Management Task Force) DMTF (Common Information Model Distributed Management Task Force) sono le classi padre su cui vengono compilate le classi WMI. WMI attualmente supporta solo gli schemi [della versione CIM 2.x](https://dmtf.org/standards/cim/schemas).
 
  
 
@@ -78,7 +78,7 @@ La **classe CIM \_ RemoveDirectoryAction** include questi metodi.
 
 | Metodo                                                             | Descrizione                                                   |
 |:-------------------------------------------------------------------|:--------------------------------------------------------------|
-| [**evocare**](invoke-method-in-class-cim-removedirectoryaction.md) | Consente di eseguire un'azione specifica. Non implementato da WMI.<br/> |
+| [**Evocare**](invoke-method-in-class-cim-removedirectoryaction.md) | Consente di eseguire un'azione specifica. Non implementato da WMI.<br/> |
 
 
 
@@ -93,25 +93,25 @@ La **classe CIM \_ RemoveDirectoryAction** ha queste proprietà.
 **ActionID**
 </dt> <dd> <dl> <dt>
 
-Tipo di dati: **string**
+Tipo di dati: **stringa**
 </dt> <dt>
 
 Tipo di accesso: sola lettura
 </dt> <dt>
 
-Qualificatori: [**key,**](/windows/desktop/WmiSdk/key-qualifier) [**maxlen**](/windows/desktop/WmiSdk/standard-qualifiers) (256)
+Qualificatori: [**key**](/windows/desktop/WmiSdk/key-qualifier), [**maxlen**](/windows/desktop/WmiSdk/standard-qualifiers) (256)
 </dt> </dl>
 
 Identificatore univoco assegnato a una determinata azione per un elemento software.
 
-Questa proprietà viene ereditata [**dall'azione CIM \_**](cim-action.md).
+Questa proprietà viene ereditata da [**CIM \_ Action**](cim-action.md).
 
 </dd> <dt>
 
 **Didascalia**
 </dt> <dd> <dl> <dt>
 
-Tipo di dati: **string**
+Tipo di dati: **stringa**
 </dt> <dt>
 
 Tipo di accesso: sola lettura
@@ -122,14 +122,14 @@ Qualificatori: [**maxlen**](/windows/desktop/WmiSdk/standard-qualifiers) (64)
 
 Breve descrizione testuale dell'oggetto.
 
-Questa proprietà viene ereditata [**dall'azione CIM \_**](cim-action.md).
+Questa proprietà viene ereditata da [**CIM \_ Action**](cim-action.md).
 
 </dd> <dt>
 
 **Descrizione**
 </dt> <dd> <dl> <dt>
 
-Tipo di dati: **string**
+Tipo di dati: **stringa**
 </dt> <dt>
 
 Tipo di accesso: sola lettura
@@ -137,7 +137,7 @@ Tipo di accesso: sola lettura
 
 Descrizione dell'oggetto.
 
-Questa proprietà viene ereditata [**dall'azione CIM \_**](cim-action.md).
+Questa proprietà viene ereditata da [**CIM \_ Action**](cim-action.md).
 
 </dd> <dt>
 
@@ -150,22 +150,22 @@ Tipo di dati: **uint16**
 Tipo di accesso: sola lettura
 </dt> </dl>
 
-Indica se un particolare oggetto [**Azione CIM \_**](cim-action.md) fa parte di una sequenza di azioni per eseguire la transizione dell'elemento software corrente allo stato successivo, ad esempio "Installa", o per rimuovere l'elemento software corrente, ad esempio "Disinstalla".
+Indica se un particolare oggetto [**CIM \_ Action**](cim-action.md) fa parte di una sequenza di azioni per la transizione dell'elemento software corrente allo stato successivo, ad esempio "Installa", o per rimuovere l'elemento software corrente, ad esempio "Disinstalla".
 
-Questa proprietà viene ereditata [**dall'azione CIM \_**](cim-action.md).
+Questa proprietà viene ereditata da [**CIM \_ Action**](cim-action.md).
 
 <dt>
 
 <span id="Install"></span><span id="install"></span><span id="INSTALL"></span>
 
-**Installa** (0)
+**Installare** (0)
 
 
 </dt> <dd></dd> <dt>
 
 <span id="Uninstall"></span><span id="uninstall"></span><span id="UNINSTALL"></span>
 
-**Disinstallazione** (1)
+**Disinstallare** (1)
 
 
 </dt> <dd></dd> </dl>
@@ -175,7 +175,7 @@ Questa proprietà viene ereditata [**dall'azione CIM \_**](cim-action.md).
 **Directoryname**
 </dt> <dd> <dl> <dt>
 
-Tipo di dati: **string**
+Tipo di dati: **stringa**
 </dt> <dt>
 
 Tipo di accesso: sola lettura
@@ -206,7 +206,7 @@ Se **TRUE,** la directory deve essere vuota per essere rimossa.
 **Nome**
 </dt> <dd> <dl> <dt>
 
-Tipo di dati: **string**
+Tipo di dati: **stringa**
 </dt> <dt>
 
 Tipo di accesso: sola lettura
@@ -217,25 +217,25 @@ Qualificatori: [**propagati**](/windows/desktop/WmiSdk/standard-qualifiers) ("[*
 
 Identifica l'elemento software.
 
-Questa proprietà viene ereditata [**dall'azione CIM \_**](cim-action.md).
+Questa proprietà viene ereditata da [**CIM \_ Action**](cim-action.md).
 
 </dd> <dt>
 
 **SoftwareElementID**
 </dt> <dd> <dl> <dt>
 
-Tipo di dati: **string**
+Tipo di dati: **stringa**
 </dt> <dt>
 
 Tipo di accesso: sola lettura
 </dt> <dt>
 
-Qualificatori: [**propagati**](/windows/desktop/WmiSdk/standard-qualifiers) ("[**CIM \_ SoftwareElement**](cim-softwareelement.md).**SoftwareElementID**"), [**chiave CIM \_**](/windows/desktop/WmiSdk/standard-wmi-qualifiers), [**maxlen**](/windows/desktop/WmiSdk/standard-qualifiers) (256)
+Qualificatori: [**propagati**](/windows/desktop/WmiSdk/standard-qualifiers) ("[**CIM \_ SoftwareElement**](cim-softwareelement.md).**SoftwareElementID**"), [**chiave \_ CIM,**](/windows/desktop/WmiSdk/standard-wmi-qualifiers) [**maxlen**](/windows/desktop/WmiSdk/standard-qualifiers) (256)
 </dt> </dl>
 
-Identificatore dell'elemento software.
+Identificatore per l'elemento software.
 
-Questa proprietà viene ereditata [**dall'azione CIM \_**](cim-action.md).
+Questa proprietà viene ereditata da [**CIM \_ Action**](cim-action.md).
 
 </dd> <dt>
 
@@ -253,7 +253,7 @@ Qualificatori: [**propagati**](/windows/desktop/WmiSdk/standard-qualifiers) ("[*
 
 Stato di un elemento software.
 
-Questa proprietà viene ereditata [**dall'azione CIM \_**](cim-action.md).
+Questa proprietà viene ereditata da [**CIM \_ Action**](cim-action.md).
 
 <dt>
 
@@ -264,7 +264,7 @@ Questa proprietà viene ereditata [**dall'azione CIM \_**](cim-action.md).
 
 </dt> <dd>
 
-Descrive i dettagli necessari per la corretta distribuzione e i dettagli (condizioni e azioni) necessari per creare un elemento software nello stato installabile ,ovvero lo stato successivo.
+Descrive i dettagli necessari per la corretta distribuzione e i dettagli (condizioni e azioni) necessari per creare un elemento software nello stato installabile, ovvero lo stato successivo.
 
 </dd> <dt>
 
@@ -275,7 +275,7 @@ Descrive i dettagli necessari per la corretta distribuzione e i dettagli (condiz
 
 </dt> <dd>
 
-Descrive i dettagli necessari per una corretta installazione e i dettagli (condizioni e azioni) necessari per creare un elemento software nello stato eseguibile (ovvero lo stato successivo).
+Descrive i dettagli necessari per una corretta installazione e i dettagli (condizioni e azioni) necessari per creare un elemento software nello stato eseguibile, ovvero lo stato successivo.
 
 </dd> <dt>
 
@@ -286,7 +286,7 @@ Descrive i dettagli necessari per una corretta installazione e i dettagli (condi
 
 </dt> <dd>
 
-Descrive i dettagli necessari per l'esecuzione corretta e i dettagli (condizioni e azioni) necessari per creare un elemento software nello stato di esecuzione ,ovvero lo stato successivo.
+Descrive i dettagli necessari per l'esecuzione corretta e i dettagli (condizioni e azioni) necessari per creare un elemento software nello stato in esecuzione, ovvero lo stato successivo.
 
 </dd> <dt>
 
@@ -317,7 +317,7 @@ Qualificatori: [**propagati**](/windows/desktop/WmiSdk/standard-qualifiers) ("[*
 
 Sistema operativo di destinazione dell'elemento software proprietario.
 
-Questa proprietà viene ereditata [**dall'azione CIM \_**](cim-action.md).
+Questa proprietà viene ereditata da [**CIM \_ Action**](cim-action.md).
 
 <dt>
 
@@ -845,8 +845,8 @@ Versione dell'operazione.
 
 La versione dell'operazione deve essere in uno dei formati seguenti:
 
--   <major>.<minor>.<revision>
--   <major>.<minor><letter><revision>
+-   &lt;oggetto &gt; principale. &lt; &gt;secondario. &lt; Revisione&gt;
+-   &lt;oggetto &gt; principale. &lt; revisione &gt; &lt; lettera &gt; &lt; secondaria&gt;
 
 Questa proprietà viene ereditata [**dall'azione CIM \_**](cim-action.md).
 

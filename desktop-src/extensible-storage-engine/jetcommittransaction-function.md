@@ -18,12 +18,12 @@ api_type:
 api_location:
 - ESENT.DLL
 ROBOTS: INDEX,FOLLOW
-ms.openlocfilehash: d9592c9b596a7794cc130b7ed599b7c8562ff8b2
-ms.sourcegitcommit: 9b5faa61c38b2d0c432b7f2dbee8c127b0e28a7e
+ms.openlocfilehash: b19e193fa0dc911112d0bd8ed8e672de6fc57a2b
+ms.sourcegitcommit: 4665ebce0c106bdb52eef36e544280b496b6f50b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/19/2021
-ms.locfileid: "122477627"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "122983534"
 ---
 # <a name="jetcommittransaction-function"></a>Funzione JetCommitTransaction
 
@@ -52,11 +52,11 @@ Sessione da utilizzare per questa chiamata.
 Gruppo di bit che specifica zero o più delle opzioni seguenti.
 
 
-| <p>valore</p> | <p>Significato</p> | 
+| <p>Valore</p> | <p>Significato</p> | 
 |--------------|----------------|
 | <p>JET_bitCommitLazyFlush</p> | <p>Il commit della transazione viene eseguito normalmente, ma questa API non attende che la transazione venga scaricata nel file di log delle transazioni prima di tornare al chiamante. In questo modo si riduce drasticamente la durata di un'operazione di commit a s costo della durabilità. Qualsiasi transazione che non viene scaricata nel log prima di un arresto anomalo del sistema verrà interrotta automaticamente durante il recupero dall'arresto anomalo del sistema durante la chiamata successiva <a href="gg294068(v=exchg.10).md">a JetInit.</a></p><p>Se JET_bitWaitLastLevel0Commit o JET_bitWaitAllLevel0Commit, questa opzione viene ignorata.</p><p>Se questa chiamata a <strong>JetCommitTransaction</strong> non corrisponde alla prima chiamata a <a href="gg294083(v=exchg.10).md">JetBeginTransaction</a> per questa sessione, questa opzione viene ignorata. Ciò è dovuto al fatto che l'azione finale che si verifica nel punto di salvataggio più esterno è il fattore determinante per determinare se viene effettivamente eseguito il commit su disco dell'intera transazione.</p> | 
 | <p>JET_bitWaitAllLevel0Commit</p> | <p>Tutte le transazioni di cui in precedenza è stato eseguito il commit da qualsiasi sessione che non sono ancora state scaricate nel file di log delle transazioni verranno scaricate immediatamente. Questa API attenderà che le transazioni siano state scaricate prima di tornare al chiamante.</p><p>Questa opzione può essere utilizzata anche se la sessione non è attualmente in una transazione.</p><p>Questa opzione non può essere usata in combinazione con altre opzioni.</p><p>Questa opzione è disponibile solo a Windows Server 2003.</p> | 
-| <p>JET_bitWaitLastLevel0Commit</p> | <p>Se in precedenza la sessione ha eseguito il commit di transazioni e non sono ancora state scaricate nel file di log delle transazioni, devono essere scaricate immediatamente. Questa API attenderà che le transazioni siano state scaricate prima di tornare al chiamante. Ciò è utile se in precedenza l'applicazione ha eseguito il commit di più transazioni usando JET_bitCommitLazyFlush e ora vuole scaricarle tutte su disco.</p><p>Questa opzione può essere utilizzata anche se la sessione non è attualmente in una transazione.</p><p>Questa opzione non può essere usata in combinazione con altre opzioni.</p> | 
+| <p>JET_bitWaitLastLevel0Commit</p> | <p>Se in precedenza la sessione ha eseguito il commit di transazioni e non sono ancora state scaricate nel file di log delle transazioni, devono essere scaricate immediatamente. Questa API attenderà che le transazioni siano state scaricate prima di tornare al chiamante. Ciò è utile se in precedenza l'applicazione ha eseguito il commit di diverse transazioni usando JET_bitCommitLazyFlush e ora vuole scaricarle tutte su disco.</p><p>Questa opzione può essere utilizzata anche se la sessione non è attualmente in una transazione.</p><p>Questa opzione non può essere usata in combinazione con altre opzioni.</p> | 
 
 
 
@@ -90,7 +90,13 @@ Deve essere presente una chiamata a **JetCommitTransaction** o [JetRollback](./j
 #### <a name="requirements"></a>Requisiti
 
 
-| | | <p><strong>Client</strong></p> | <p>Richiede Windows Vista, Windows XP o Windows 2000 Professional.</p> | | <p><strong>Server</strong></p> | <p>Richiede Windows Server 2008, Windows Server 2003 o Windows 2000 Server.</p> | | <p><strong>Intestazione</strong></p> | <p>Dichiarato in Esent.h.</p> | | <p><strong>Libreria</strong></p> | <p>Usare ESENT.lib.</p> | | <p><strong>DLL</strong></p> | <p>Richiede ESENT.dll.</p> | 
+| Requisito | Valore |
+|------------|----------|
+| <p><strong>Client</strong></p> | <p>Richiede Windows Vista, Windows XP o Windows 2000 Professional.</p> | 
+| <p><strong>Server</strong></p> | <p>Richiede Windows Server 2008, Windows Server 2003 o Windows 2000 Server.</p> | 
+| <p><strong>Intestazione</strong></p> | <p>Dichiarato in Esent.h.</p> | 
+| <p><strong>Libreria</strong></p> | <p>Usare ESENT.lib.</p> | 
+| <p><strong>DLL</strong></p> | <p>Richiede ESENT.dll.</p> | 
 
 
 
