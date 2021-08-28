@@ -4,12 +4,12 @@ ms.assetid: 14d14662-910a-4f3f-914e-6ccfc602c822
 title: Compressione bitmap
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: dcefec93bb5583ba066e35d5143410d1c249bb09
-ms.sourcegitcommit: 0dec0044816af3f2b2e6403659e1cf11138c90cd
+ms.openlocfilehash: 462b41bffe207aecc82deece7e2090cfe6389635
+ms.sourcegitcommit: 8eb9ae480cf2cb3524d83a1e7adcdaa875d625e0
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "121812847"
+ms.lasthandoff: 08/27/2021
+ms.locfileid: "123096447"
 ---
 # <a name="bitmap-compression"></a>Compressione bitmap
 
@@ -21,11 +21,11 @@ Quando il **membro Compression** della struttura dell'intestazione delle informa
 
 
 
-| Valore | Significato                                                                                                                                                     |
-|-------|-------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| 0     | Fine della riga.                                                                                                                                                |
-| 1     | Fine della bitmap.                                                                                                                                              |
-| 2     | Delta. I 2 byte che segue l'escape contengono valori senza segno che indicano gli offset orizzontale e verticale del pixel successivo dalla posizione corrente. |
+| Valore | Significato                                                                                                                                                |
+|-------|--------------------------------------------------------------------------------------------------------------------------------------------------------|
+| 0     | Fine della riga.                                                                                                                                           |
+| 1     | Fine della bitmap.                                                                                                                                         |
+| 2     | Delta. I 2 byte che segue l'escape contengono valori senza segno che indicano l'offset a destra e fino al pixel successivo dalla posizione corrente. |
 
 
 
@@ -51,7 +51,7 @@ La bitmap si espande come segue (i valori a due cifre rappresentano un indice di
 06 06 06 06 06 
 45 56 67 
 78 78 
-move current position 5 right and 1 down 
+move current position 5 right and 1 up 
 78 78 
 end of line 
 1E 1E 1E 1E 1E 1E 1E 1E 1E 
@@ -75,7 +75,7 @@ L'esempio seguente mostra i valori esadecimali di una bitmap compressa a 4 bit:
 
 
 
-La bitmap si espande come segue (i valori a una cifra rappresentano un indice di colore per un singolo pixel):
+La bitmap si espande come segue (i valori a cifra singola rappresentano un indice di colore per un singolo pixel):
 
 
 ```C++
@@ -83,7 +83,7 @@ La bitmap si espande come segue (i valori a una cifra rappresentano un indice di
 0 6 0 6 0 
 4 5 5 6 6 7 
 7 8 7 8 
-move current position 5 right and 1 down 
+move current position 5 right and 1 up 
 7 8 7 8 
 end of line 
 1 E 1 E 1 E 1 E 1 

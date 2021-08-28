@@ -1,29 +1,29 @@
 ---
-title: Funzioni di supporto del pool privato
-description: Contiene le funzioni di supporto per i progetti console di installazione, identificazione e registrazione.
+title: Funzioni helper pool privato
+description: Contiene le funzioni helper per i progetti console di configurazione, identificazione e registrazione.
 ms.assetid: 90FED859-0DCD-43D5-9940-675127232968
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: dab289c5e97c9d19e088b2ec195a83eacb37ef3a
-ms.sourcegitcommit: 2d531328b6ed82d4ad971a45a5131b430c5866f7
+ms.openlocfilehash: 187079da11436cdb3ab0ab360ca8473563c72fbc1fd1ff40ff4f23e0c579f940
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "103713420"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119977031"
 ---
-# <a name="private-pool-helper-functions"></a>Funzioni di supporto del pool privato
+# <a name="private-pool-helper-functions"></a>Funzioni helper pool privato
 
-Le sezioni seguenti contengono codice necessario per supportare i progetti di installazione, identificazione e console di registrazione.
+Le sezioni seguenti contengono il codice necessario per supportare i progetti console di configurazione, identificazione e registrazione.
 
--   [Targetver. h](#targetverh)
--   [Stdafx. h](#stdafxh)
--   [Biohelper. h](#biohelperh)
--   [Config. cpp](#configcpp)
--   [Visualizza. cpp](#displaycpp)
+-   [Targetver.h](#targetverh)
+-   [Stdafx.h](#stdafxh)
+-   [BioHelper.h](#biohelperh)
+-   [Config.cpp](#configcpp)
+-   [Display.cpp](#displaycpp)
 
-## <a name="targetverh"></a>Targetver. h
+## <a name="targetverh"></a>Targetver.h
 
-Questo esempio è stato creato per i sistemi operativi Windows 7 e versioni successive.
+Questo esempio è stato creato per Windows 7 e versioni successive.
 
 
 ```C++
@@ -78,7 +78,7 @@ typedef std::string TSTRING;
 
 
 
-## <a name="biohelperh"></a>Biohelper. h
+## <a name="biohelperh"></a>BioHelper.h
 
 
 ```C++
@@ -164,9 +164,9 @@ ConvertRejectDetailToString(
 
 
 
-## <a name="configcpp"></a>Config. cpp
+## <a name="configcpp"></a>Config.cpp
 
-Il file seguente contiene le routine di gestione della configurazione.
+Il file seguente contiene routine di gestione della configurazione.
 
 
 ```C++
@@ -1346,9 +1346,9 @@ ConvertUuidToString(
 
 
 
-## <a name="displaycpp"></a>Visualizza. cpp
+## <a name="displaycpp"></a>Display.cpp
 
-Il file seguente contiene le routine di formattazione dell'output.
+Il file seguente contiene routine di formattazione dell'output.
 
 
 ```C++
@@ -1521,9 +1521,9 @@ ConvertRejectDetailToString(
 
 
 
- 
+ 
 
- 
+ 
 
 
 

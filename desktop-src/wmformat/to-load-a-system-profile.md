@@ -7,20 +7,20 @@ keywords:
 - profili di sistema, caricamento
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 73e745cb2fed32d650a22febef827ed7662f4448
-ms.sourcegitcommit: 48d1c892045445bcbd0f22bafa2fd3861ffaa6e7
+ms.openlocfilehash: becd98903921b81ce1eaf7d2317659c7760bb99c4e55e07efe336719d5d34ed4
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/19/2020
-ms.locfileid: "104398581"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119807481"
 ---
 # <a name="to-load-a-system-profile"></a>Per caricare un profilo di sistema
 
-Per apportare modifiche a un profilo di sistema, è necessario caricarlo in un oggetto profilo. Gestione profili fornisce due opzioni per il caricamento dei profili di sistema: per identificatore e per indice.
+Per apportare modifiche a un profilo di sistema, è necessario caricarlo in un oggetto profilo. Gestione profili offre due opzioni per il caricamento dei profili di sistema: in base all'identificatore e all'indice.
 
-Un identificatore del profilo di sistema è un valore GUID assegnato al profilo di sistema al momento della creazione. Per un elenco delle costanti GUID associate ai profili di sistema versione 8, vedere profili di [sistema](system-profiles.md). È possibile trovare le costanti GUID per le versioni precedenti nel file di intestazione WMSysPrf. h. Per ulteriori informazioni su questo e altri file di intestazione inclusi con Windows Media Format SDK, vedere [file di libreria e impostazioni del compilatore](library-files-and-compiler-settings.md).
+Un identificatore del profilo di sistema è un valore GUID assegnato al profilo di sistema al momento della creazione. Per un elenco delle costanti GUID associate ai profili di sistema versione 8, vedere [Profili di sistema](system-profiles.md). Le costanti GUID per le versioni precedenti sono disponibili nel file di intestazione WMSysPrf.h. Per altre informazioni su questo e altri file di intestazione inclusi in Windows Media Format SDK, vedere File di [libreria e compilatori Impostazioni](library-files-and-compiler-settings.md).
 
-Nell'esempio di codice seguente viene illustrato come caricare un profilo di sistema utilizzando l'identificatore del profilo di sistema. Per il corretto funzionamento di questo codice, è necessario includere WMSysPrf. h e stdio. h. Per ulteriori informazioni sull'utilizzo di questo codice, vedere [utilizzo degli esempi di codice](using-the-code-examples.md).
+Il codice di esempio seguente illustra come caricare un profilo di sistema usando l'identificatore del profilo di sistema. Per il funzionamento di questo codice, è necessario includere WMSysPrf.h e stdio.h. Per altre informazioni sull'uso di questo codice, vedere [Uso degli esempi di codice](using-the-code-examples.md).
 
 
 ```C++
@@ -50,7 +50,7 @@ pProfileMgr = NULL;
 
 
 
-Se non si conosce il profilo che si vuole usare, è possibile scorrere tutti i profili di sistema di una determinata versione usando i metodi [**GetSystemProfileCount**](/previous-versions/windows/desktop/api/Wmsdkidl/nf-wmsdkidl-iwmprofilemanager-getsystemprofilecount) e [**LoadSystemProfile**](/previous-versions/windows/desktop/api/Wmsdkidl/nf-wmsdkidl-iwmprofilemanager-loadsystemprofile) dell'interfaccia [**IWMProfileManager**](/previous-versions/windows/desktop/api/wmsdkidl/nn-wmsdkidl-iwmprofilemanager) . Questi metodi gestiscono solo una versione dei profili di sistema alla volta. Per ulteriori informazioni sulla modifica della versione del profilo di sistema, vedere [per modificare le versioni del profilo di sistema](to-change-system-profile-versions.md).
+Se non si conosce il profilo da usare, è possibile scorrere tutti i profili di sistema di una determinata versione usando i metodi [**GetSystemProfileCount**](/previous-versions/windows/desktop/api/Wmsdkidl/nf-wmsdkidl-iwmprofilemanager-getsystemprofilecount) e [**LoadSystemProfile**](/previous-versions/windows/desktop/api/Wmsdkidl/nf-wmsdkidl-iwmprofilemanager-loadsystemprofile) dell'interfaccia [**IWMProfileManager.**](/previous-versions/windows/desktop/api/wmsdkidl/nn-wmsdkidl-iwmprofilemanager) Questi metodi si occupano solo di una versione dei profili di sistema alla volta. Per altre informazioni sulla modifica della versione del profilo di sistema, vedere [Per modificare le versioni del profilo di sistema](to-change-system-profile-versions.md).
 
 ## <a name="related-topics"></a>Argomenti correlati
 
@@ -59,9 +59,9 @@ Se non si conosce il profilo che si vuole usare, è possibile scorrere tutti i p
 [**Uso dei profili di sistema**](using-system-profiles.md)
 </dt> </dl>
 
- 
+ 
 
- 
+ 
 
 
 

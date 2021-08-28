@@ -1,6 +1,6 @@
 ---
-title: Variabili dello stato della trasformazione
-description: Variabili dello stato della trasformazione
+title: Variabili di stato della trasformazione
+description: Variabili di stato della trasformazione
 ms.assetid: 3a6be5ac-ac7a-4c3e-8b65-0404849ae67c
 keywords:
 - Variabili di stato della trasformazione OpenGL
@@ -12,16 +12,16 @@ api_type:
 - NA
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 8c7b53e0abae08447df86d8968a33a361be08a1e
-ms.sourcegitcommit: 63753fcfb0afbbe5ec283fb8316e62c2dc950f66
+ms.openlocfilehash: 3c79b4363419d97a64184dd2408a9f6221ada52adc49adbb28eb3d049a4b2a36
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/22/2021
-ms.locfileid: "107908829"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119011919"
 ---
-# <a name="transformation-state-variables"></a>Variabili dello stato della trasformazione
+# <a name="transformation-state-variables"></a>Variabili di stato della trasformazione
 
-<dl> <dt><span id="GL_MODELVIEW_MATRIX"></span><span id="gl_modelview_matrix"></span>MATRICE \_ DI GL MODELVIEW \_</dt> <dd> 
+<dl> <dt><span id="GL_MODELVIEW_MATRIX"></span><span id="gl_modelview_matrix"></span>MATRICE \_ DI MODELVIEW \_ GL</dt> <dd> 
 
 | Proprietà | Valore |
 |------------------|------------------------------------|
@@ -47,11 +47,11 @@ ms.locfileid: "107908829"
 
  
 
-</dd> <dt><span id="GL_TEXTURE_MATRIX"></span><span id="gl_texture_matrix"></span>MATRICE \_ TRAME GL \_</dt> <dd> 
+</dd> <dt><span id="GL_TEXTURE_MATRIX"></span><span id="gl_texture_matrix"></span>MATRICE DI TRAMA GL \_ \_</dt> <dd> 
 
 | Proprietà | Valore |
 |------------------|--------------------------------------------------------------------------------|
-| Descrizione:     | Stack di matrici di trame                                                           |
+| Descrizione:     | Stack matrice di trame                                                           |
 | Gruppo di attributi: |                                                                                |
 | Valore iniziale:   | Identità                                                                       |
 | Comando Get:     | [**glGetFloatv**](glgetbooleanv--glgetdoublev--glgetfloatv--glgetintegerv.md) |
@@ -99,7 +99,7 @@ ms.locfileid: "107908829"
 
  
 
-</dd> <dt><span id="GL_PROJECTION_STACK_DEPTH"></span><span id="gl_projection_stack_depth"></span>PROFONDITÀ \_ \_ DELLO STACK DI PROIEZIONE \_ GL</dt> <dd> 
+</dd> <dt><span id="GL_PROJECTION_STACK_DEPTH"></span><span id="gl_projection_stack_depth"></span>GL \_ PROJECTION \_ STACK \_ DEPTH</dt> <dd> 
 
 | Proprietà | Valore |
 |------------------|----------------------------------------------------------------------------------|
@@ -112,7 +112,7 @@ ms.locfileid: "107908829"
 
  
 
-</dd> <dt><span id="GL_TEXTURE_STACK_DEPTH"></span><span id="gl_texture_stack_depth"></span>PROFONDITÀ \_ STACK \_ TRAME GL \_</dt> <dd> 
+</dd> <dt><span id="GL_TEXTURE_STACK_DEPTH"></span><span id="gl_texture_stack_depth"></span>GL \_ TEXTURE \_ STACK \_ DEPTH</dt> <dd> 
 
 | Proprietà | Valore |
 |------------------|----------------------------------------------------------------------------------|
@@ -125,7 +125,7 @@ ms.locfileid: "107908829"
 
  
 
-</dd> <dt><span id="GL_MATRIX_MODE"></span><span id="gl_matrix_mode"></span>MODALITÀ \_ MATRICE GL \_</dt> <dd> 
+</dd> <dt><span id="GL_MATRIX_MODE"></span><span id="gl_matrix_mode"></span>MODALITÀ MATRICE GL \_ \_</dt> <dd> 
 
 | Proprietà | Valore |
 |------------------|----------------------------------------------------------------------------------|

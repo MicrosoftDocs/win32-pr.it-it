@@ -1,5 +1,5 @@
 ---
-title: attributo documentIdentifier
+title: Attributo documentIdentifier
 description: Il tipo di attributo documentIdentifier specifica un identificatore univoco per un documento.
 ms.assetid: 93a99e32-4487-463c-9189-b78312d8e94e
 ms.tgt_platform: multiple
@@ -13,14 +13,14 @@ api_type:
 - Schema
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 784a673b1461c4b68189493aac2623a0c5e0e3cb
-ms.sourcegitcommit: b77ace27b0432e7cd3863191b11926be032fbe2f
+ms.openlocfilehash: 3e34a53988358a9e4a1a7699454f8a8e5f4aed0fc59f298dc0bbdb3ed772b610
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/14/2020
-ms.locfileid: "103874990"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120077831"
 ---
-# <a name="documentidentifier-attribute"></a>attributo documentIdentifier
+# <a name="documentidentifier-attribute"></a>Attributo documentIdentifier
 
 Il tipo di attributo documentIdentifier specifica un identificatore univoco per un documento.
 
@@ -29,12 +29,12 @@ Il tipo di attributo documentIdentifier specifica un identificatore univoco per 
 | Voce | Valore |
 |-------------------|---------------------------------------------|
 | CN                | documentIdentifier                          |
-| LDAP-Display-Name | documentIdentifier                          |
+| Ldap-Display-Name | documentIdentifier                          |
 | Dimensione              | \-                                          |
-| Privilegio aggiornamento  | \-                                          |
+| Privilegio di aggiornamento  | \-                                          |
 | Frequenza di aggiornamento  | \-                                          |
 | Attribute-Id      | 0.9.2342.19200300.100.1.11                  |
-| System-ID-GUID    | 0b21ce82-ff63-46d9-90fb-c8b9f24e97b9        |
+| System-Id-Guid    | 0b21ce82-ff63-46d9-90fb-c8b9f24e97b9        |
 | Sintassi            | [**String(Unicode)**](s-string-unicode.md) |
 
 
@@ -56,15 +56,15 @@ Il tipo di attributo documentIdentifier specifica un identificatore univoco per 
 | ID collegamento                | \-                                        |
 | MAPI-Id                | \-                                        |
 | System-Only            | Falso                                     |
-| È a valore singolo       | Falso                                     |
+| Is-Single-Valued       | Falso                                     |
 | Indicizzato             | Falso                                     |
 | Nel catalogo globale      | Falso                                     |
-| NT-Security-descrittore | O:BAG: NON VALIDO: S:                              |
+| NT-Security-Descriptor | O:BAG:BAD:S:                              |
 | Range-Lower            | 1                                         |
 | Range-Upper            | 256                                       |
 | Search-Flags           | 0x00000000                                |
 | System-Flags           | 0x00000000                                |
-| Classi utilizzate in        | [**documento**](c-document.md)<br/> |
+| Classi usate in        | [**Documento**](c-document.md)<br/> |
 
 
 
@@ -77,15 +77,15 @@ Il tipo di attributo documentIdentifier specifica un identificatore univoco per 
 | ID collegamento                | \-                                        |
 | MAPI-Id                | \-                                        |
 | System-Only            | Falso                                     |
-| È a valore singolo       | Falso                                     |
+| Is-Single-Valued       | Falso                                     |
 | Indicizzato             | Falso                                     |
 | Nel catalogo globale      | Falso                                     |
-| NT-Security-descrittore | O:BAG: NON VALIDO: S:                              |
+| NT-Security-Descriptor | O:BAG:BAD:S:                              |
 | Range-Lower            | 1                                         |
 | Range-Upper            | 256                                       |
 | Search-Flags           | 0x00000000                                |
 | System-Flags           | 0x00000000                                |
-| Classi utilizzate in        | [**documento**](c-document.md)<br/> |
+| Classi usate in        | [**Documento**](c-document.md)<br/> |
 
 
 
@@ -98,15 +98,15 @@ Il tipo di attributo documentIdentifier specifica un identificatore univoco per 
 | ID collegamento                | \-                                        |
 | MAPI-Id                | \-                                        |
 | System-Only            | Falso                                     |
-| È a valore singolo       | Falso                                     |
+| Is-Single-Valued       | Falso                                     |
 | Indicizzato             | Falso                                     |
 | Nel catalogo globale      | Falso                                     |
-| NT-Security-descrittore | O:BAG: NON VALIDO: S:                              |
+| NT-Security-Descriptor | O:BAG:BAD:S:                              |
 | Range-Lower            | 1                                         |
 | Range-Upper            | 256                                       |
 | Search-Flags           | 0x00000000                                |
 | System-Flags           | 0x00000000                                |
-| Classi utilizzate in        | [**documento**](c-document.md)<br/> |
+| Classi usate in        | [**Documento**](c-document.md)<br/> |
 
 
 
@@ -119,15 +119,15 @@ Il tipo di attributo documentIdentifier specifica un identificatore univoco per 
 | ID collegamento                | \-                                        |
 | MAPI-Id                | \-                                        |
 | System-Only            | Falso                                     |
-| È a valore singolo       | Falso                                     |
+| Is-Single-Valued       | Falso                                     |
 | Indicizzato             | Falso                                     |
 | Nel catalogo globale      | Falso                                     |
-| NT-Security-descrittore | O:BAG: NON VALIDO: S:                              |
+| NT-Security-Descriptor | O:BAG:BAD:S:                              |
 | Range-Lower            | 1                                         |
 | Range-Upper            | 256                                       |
 | Search-Flags           | 0x00000000                                |
 | System-Flags           | 0x00000000                                |
-| Classi utilizzate in        | [**documento**](c-document.md)<br/> |
+| Classi usate in        | [**Documento**](c-document.md)<br/> |
 
 
 
@@ -140,15 +140,15 @@ Il tipo di attributo documentIdentifier specifica un identificatore univoco per 
 | ID collegamento                | \-                                        |
 | MAPI-Id                | \-                                        |
 | System-Only            | Falso                                     |
-| È a valore singolo       | Falso                                     |
+| Is-Single-Valued       | Falso                                     |
 | Indicizzato             | Falso                                     |
 | Nel catalogo globale      | Falso                                     |
-| NT-Security-descrittore | O:BAG: NON VALIDO: S:                              |
+| NT-Security-Descriptor | O:BAG:BAD:S:                              |
 | Range-Lower            | 1                                         |
 | Range-Upper            | 256                                       |
 | Search-Flags           | 0x00000000                                |
 | System-Flags           | 0x00000000                                |
-| Classi utilizzate in        | [**documento**](c-document.md)<br/> |
+| Classi usate in        | [**Documento**](c-document.md)<br/> |
 
 
 

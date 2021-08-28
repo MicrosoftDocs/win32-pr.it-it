@@ -4,20 +4,20 @@ ms.assetid: 162bda20-0c62-4eac-8c1f-fd107e42c528
 title: Determinazione del contesto di installazione
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 24367e2367f845dfef2e4947a32d9dec84d644cf
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 89c3ea847a410c5d253061e93153da4462e3cdd8ae8da12b4b6b701812d37d89
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "106314288"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119764261"
 ---
 # <a name="determining-installation-context"></a>Determinazione del contesto di installazione
 
-Un'applicazione può chiamare le funzioni [**MsiEnumProducts**](/windows/desktop/api/Msi/nf-msi-msienumproductsa) o [**MsiEnumProductsEx**](/windows/desktop/api/Msi/nf-msi-msienumproductsexa) per enumerare i prodotti installati o annunciati nel sistema. Questa funzione può enumerare tutti i prodotti installati nel [contesto di installazione](installation-context.md)per computer. Può enumerare i prodotti installati nel contesto per utente per l'utente corrente. L'applicazione può recuperare informazioni sul contesto di questi prodotti chiamando le funzioni [**MsiGetProductInfoEx**](/windows/desktop/api/Msi/nf-msi-msigetproductinfoexa) o [**MsiGetProductInfo**](/windows/desktop/api/Msi/nf-msi-msigetproductinfoa) .
+Un'applicazione può chiamare [**le funzioni MsiEnumProducts**](/windows/desktop/api/Msi/nf-msi-msienumproductsa) o [**MsiEnumProductsEx**](/windows/desktop/api/Msi/nf-msi-msienumproductsexa) per enumerare i prodotti installati o annunciati nel sistema. Questa funzione può enumerare tutti i prodotti installati nel contesto di installazione per [computer.](installation-context.md) Può enumerare i prodotti installati nel contesto per utente per l'utente corrente. L'applicazione può recuperare informazioni sul contesto di questi prodotti chiamando le [**funzioni MsiGetProductInfoEx**](/windows/desktop/api/Msi/nf-msi-msigetproductinfoexa) [**o MsiGetProductInfo.**](/windows/desktop/api/Msi/nf-msi-msigetproductinfoa)
 
-Il Windows Installer può installare i prodotti per l'esecuzione con privilegi elevati (di sistema) per gli utenti non amministratori. Questa operazione richiede l'autorizzazione di un utente amministratore. Un prodotto installato con privilegi elevati è denominato "gestito". Tutti i prodotti installati per computer vengono gestiti. I prodotti installati per utente vengono gestiti solo se un agente di sistema locale esegue un annuncio durante la rappresentazione di un utente. Questo è il metodo usato dalla distribuzione software tramite [criteri di gruppo](/previous-versions/windows/desktop/Policy/group-policy-start-page). Le applicazioni per utente installate mentre i criteri [AlwaysInstallElevated](alwaysinstallelevated.md) sono impostati non vengono considerati gestiti. Chiamando [**MsiIsProductElevated**](/windows/desktop/api/Msi/nf-msi-msiisproductelevateda), un'applicazione può verificare se un determinato prodotto è gestito.
+Il Windows installer può installare i prodotti per l'esecuzione con privilegi elevati (di sistema) per gli utenti non amministratori. Questa operazione richiede l'autorizzazione di un utente amministratore. Un prodotto installato con privilegi elevati è denominato "gestito". Vengono gestiti tutti i prodotti installati per computer. I prodotti installati per utente vengono gestiti solo se un agente di sistema locale esegue un annuncio durante la rappresentazione di un utente. Questo è il metodo usato dalla distribuzione software [tramite Criteri di gruppo](/previous-versions/windows/desktop/Policy/group-policy-start-page). Le applicazioni per utente installate mentre [i criteri AlwaysInstallElevated](alwaysinstallelevated.md) sono impostati non vengono considerate gestite. Chiamando [**MsiIsProductElevated,**](/windows/desktop/api/Msi/nf-msi-msiisproductelevateda)un'applicazione può controllare se un determinato prodotto è gestito.
 
-Nell'esempio seguente viene illustrato il modo in cui un'applicazione determina il contesto utilizzando [**MsiEnumProducts**](/windows/desktop/api/Msi/nf-msi-msienumproductsa), [**MsiGetProductInfo**](/windows/desktop/api/Msi/nf-msi-msigetproductinfoa)e [**MsiIsProductElevated**](/windows/desktop/api/Msi/nf-msi-msiisproductelevateda).
+L'esempio seguente illustra come un'applicazione determina il contesto usando [**MsiEnumProducts**](/windows/desktop/api/Msi/nf-msi-msienumproductsa), [**MsiGetProductInfo**](/windows/desktop/api/Msi/nf-msi-msigetproductinfoa)e [**MsiIsProductElevated**](/windows/desktop/api/Msi/nf-msi-msiisproductelevateda).
 
 
 ```C++
@@ -167,10 +167,10 @@ UINT DetermineContextForAllProducts()
 [**MsiIsProductElevated**](/windows/desktop/api/Msi/nf-msi-msiisproductelevateda)
 </dt> <dt>
 
-[Installazione di un pacchetto con privilegi elevati per un amministratore non](installing-a-package-with-elevated-privileges-for-a-non-admin.md)
+[Installazione di un pacchetto con privilegi elevati per un utente non amministratore](installing-a-package-with-elevated-privileges-for-a-non-admin.md)
 </dt> <dt>
 
-[Annuncio di un'applicazione Per-User da installare con privilegi elevati](advertising-a-per-user-application-to-be-installed-with-elevated-privileges.md)
+[Annuncio di Per-User'applicazione da installare con privilegi elevati](advertising-a-per-user-application-to-be-installed-with-elevated-privileges.md)
 </dt> <dt>
 
 [Contesto di installazione](installation-context.md)

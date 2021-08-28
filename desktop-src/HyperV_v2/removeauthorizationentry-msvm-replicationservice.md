@@ -1,7 +1,7 @@
 ---
 description: Rimuove una voce di autorizzazione da un server di ripristino.
 ms.assetid: 1647b35d-1c2f-4fb5-84c0-10b357326abf
-title: Metodo RemoveAuthorizationEntry della classe Msvm_ReplicationService
+title: Metodo RemoveAuthorizationEntry della Msvm_ReplicationService classe
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -13,14 +13,14 @@ api_type:
 - COM
 api_location:
 - vmms.exe
-ms.openlocfilehash: d0bb0d24c9cf4936c6e0187e5091b9fac14ee28c
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 12276ded5e9021fb775ee6f6be4eb2e5a92c4375a5bce9e3debca7972df2ee86
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "106318307"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119980071"
 ---
-# <a name="removeauthorizationentry-method-of-the-msvm_replicationservice-class"></a>Metodo RemoveAuthorizationEntry della classe MSVM \_ ReplicationService
+# <a name="removeauthorizationentry-method-of-the-msvm_replicationservice-class"></a>Metodo RemoveAuthorizationEntry della classe Msvm \_ ReplicationService
 
 Rimuove una voce di autorizzazione da un server di ripristino.
 
@@ -40,14 +40,14 @@ uint32 RemoveAuthorizationEntry(
 
 <dl> <dt>
 
-*AllowedPrimaryHostSystem* \[ in\]
+*AllowedPrimaryHostSystem* \[ Pollici\]
 </dt> <dd>
 
-Server primario per il quale verrà rimossa la voce di autorizzazione dal server. Corrisponde alla proprietà **AllowedPrimaryHostSystem** della classe [**MSVM \_ ReplicationAuthorizationSettingData**](msvm-replicationauthorizationsettingdata.md) .
+Server primario per il quale la voce di autorizzazione verrà rimossa dal server. Corrisponde alla proprietà **AllowedPrimaryHostSystem** della [**classe Msvm \_ ReplicationAuthorizationSettingData.**](msvm-replicationauthorizationsettingdata.md)
 
 </dd> <dt>
 
-*Processo* \[ di out\]
+*Processo* \[ Cambio\]
 </dt> <dd>
 
 Se l'operazione viene eseguita in modo asincrono, questo metodo restituirà 4096 e questo parametro conterrà un riferimento a un oggetto derivato da [**CIM \_ ConcreteJob**](/previous-versions//cc136808(v=vs.85)).
@@ -60,10 +60,10 @@ Questo metodo restituisce uno dei valori seguenti.
 
 <dl> <dt>
 
-**Completato senza errori** (0)
+**Completata senza errori** (0)
 </dt> <dt>
 
-**Parametri del metodo controllati-processo avviato** (4096)
+**Parametri del metodo verificati - Processo avviato** (4096)
 </dt> <dt>
 
 **Non riuscito** (32768)
@@ -75,25 +75,25 @@ Questo metodo restituisce uno dei valori seguenti.
 **Non supportato** (32770)
 </dt> <dt>
 
-**Stato sconosciuto** (32771)
+**Lo stato è sconosciuto** (32771)
 </dt> <dt>
 
 **Timeout** (32772)
 </dt> <dt>
 
-**Parametro non valido** (32773)
+**Parametro non** valido (32773)
 </dt> <dt>
 
 **Sistema in uso** (32774)
 </dt> <dt>
 
-**Stato non valido per l'operazione** (32775)
+**Stato non valido per questa operazione** (32775)
 </dt> <dt>
 
-**Tipo di dati non corretto** (32776)
+**Tipo di dati non** corretto (32776)
 </dt> <dt>
 
-**Sistema non disponibile** (32777)
+**Il sistema non è disponibile** (32777)
 </dt> <dt>
 
 **Memoria insufficiente** (32778)
@@ -112,10 +112,10 @@ La rimozione di una voce di autorizzazione arresterà la replica per tutte le ma
 
 | Requisito | Valore |
 |-------------------------------------|---------------------------------------------------------------------------------------------------------|
-| Client minimo supportato<br/> | \[Solo app desktop di Windows 8\]<br/>                                                              |
-| Server minimo supportato<br/> | \[Solo app desktop Windows Server 2012\]<br/>                                                    |
-| Spazio dei nomi<br/>                | \\Virtualizzazione radice \\ v2<br/>                                                                     |
-| MOF<br/>                      | <dl> <dt>WindowsVirtualization. v2. mof</dt> </dl> |
+| Client minimo supportato<br/> | \[Windows 8 solo app desktop\]<br/>                                                              |
+| Server minimo supportato<br/> | \[Windows Server 2012 solo app desktop\]<br/>                                                    |
+| Spazio dei nomi<br/>                | Root \\ Virtualization \\ V2<br/>                                                                     |
+| MOF<br/>                      | <dl> <dt>WindowsVirtualization.V2.mof</dt> </dl> |
 | DLL<br/>                      | <dl> <dt>Vmms.exe</dt> </dl>                     |
 
 
@@ -133,7 +133,7 @@ La rimozione di una voce di autorizzazione arresterà la replica per tutte le ma
 [**SetAuthorizationEntry**](setauthorizationentry-msvm-replicationservice.md)
 </dt> <dt>
 
-[**\_ReplicationService MSVM**](msvm-replicationservice.md)
+[**Msvm \_ ReplicationService**](msvm-replicationservice.md)
 </dt> </dl>
 
  

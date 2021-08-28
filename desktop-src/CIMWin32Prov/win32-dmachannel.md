@@ -1,8 +1,8 @@
 ---
-description: La \_ classe WMI DMAChannel Win32 rappresenta un canale di accesso diretto alla memoria (DMA) in un sistema di computer che esegue Windows.
+description: La classe WMI DMAChannel Win32 rappresenta un canale DMA (Direct Memory Access) in un \_ computer che esegue Windows.
 ms.assetid: cc517aac-7bd4-4937-8b07-2597076fca2c
 ms.tgt_platform: multiple
-title: Classe Win32_DMAChannel
+title: Win32_DMAChannel classe
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -33,18 +33,18 @@ api_type:
 - DllExport
 api_location:
 - CIMWin32.dll
-ms.openlocfilehash: 0c2b36ff17931133d0dc4529e34f31ac24e00653
-ms.sourcegitcommit: c7add10d695482e1ceb72d62b8a4ebd84ea050f7
+ms.openlocfilehash: f1edce18d0dc8283a134972e8f0e2f79ce0ff98148bf6333d4048adbc14f2d88
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "103878150"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120077341"
 ---
-# <a name="win32_dmachannel-class"></a>Win32 \_ DMAChannel (classe)
+# <a name="win32_dmachannel-class"></a>Classe DMAChannel Win32 \_
 
-La [classe WMI](/windows/desktop/WmiSdk/retrieving-a-class) **\_ DMAChannel Win32** rappresenta un canale di accesso diretto alla memoria (DMA) in un sistema di computer che esegue Windows. DMA è un metodo di trasferimento dei dati da un dispositivo a memoria (o viceversa) senza l'aiuto del microprocessore. La lavagna di sistema usa un controller DMA per gestire un numero fisso di canali, ciascuno dei quali può essere usato da uno (e un solo) dispositivo alla volta.
+La classe [WMI](/windows/desktop/WmiSdk/retrieving-a-class) **\_ DMAChannel Win32** rappresenta un canale DMA (Direct Memory Access) in un computer che esegue Windows. DMA è un metodo di spostamento dei dati da un dispositivo alla memoria (o viceversa) senza l'aiuto del microprocessore. La scheda di sistema usa un controller DMA per gestire un numero fisso di canali, ognuno dei quali può essere usato da un solo dispositivo alla volta.
 
-La sintassi seguente è semplificata dal codice MOF (Managed Object Format) e include tutte le proprietà ereditate. Le proprietà sono elencate in ordine alfabetico e non in ordine MOF.
+La sintassi seguente è semplificata dal codice MOF (Managed Object Format) e include tutte le proprietà ereditate. Le proprietà sono elencate in ordine alfabetico, non in ordine MOF.
 
 ## <a name="syntax"></a>Sintassi
 
@@ -76,31 +76,31 @@ class Win32_DMAChannel : CIM_DMA
 
 ## <a name="members"></a>Members
 
-La classe **Win32 \_ DMAChannel** presenta questi tipi di membri:
+La **classe \_ DMAChannel Win32** ha questi tipi di membri:
 
 -   [Proprietà](#properties)
 
 ### <a name="properties"></a>Proprietà
 
-La classe **Win32 \_ DMAChannel** dispone di queste proprietà.
+La **classe \_ DMAChannel Win32** dispone di queste proprietà.
 
 <dl> <dt>
 
 **AddressSize**
 </dt> <dd> <dl> <dt>
 
-Tipo di dati: **UInt16**
+Tipo di dati: **uint16**
 </dt> <dt>
 
 Tipo di accesso: sola lettura
 </dt> <dt>
 
-Qualificatori: [**MappingStrings**](/windows/desktop/WmiSdk/standard-qualifiers) ("MIF. \|Informazioni sul DMA della risorsa \| di sistema DMTF 001,3 "), [**unità**](/windows/desktop/WmiSdk/standard-qualifiers) (" bits ")
+Qualificatori: [**MappingStrings**](/windows/desktop/WmiSdk/standard-qualifiers) ("MIF. DMTF \| System Resource DMA Info \| 001.3"), [**Units**](/windows/desktop/WmiSdk/standard-qualifiers) ("bits")
 </dt> </dl>
 
-Dimensioni dell'indirizzo del canale DMA in bit. I valori consentiti sono 8, 16, 32 o 64 bit. Se è sconosciuto, immettere 0 (zero).
+Dimensioni dell'indirizzo del canale DMA in bit. I valori consentiti sono 8, 16, 32 o 64 bit. Se sconosciuto, immettere 0 (zero).
 
-Questa proprietà viene ereditata da [**CIM \_ DMA**](cim-dma.md).
+Questa proprietà viene ereditata da [**CIM \_ DMA.**](cim-dma.md)
 
 <dt>
 
@@ -144,16 +144,16 @@ Questa proprietà viene ereditata da [**CIM \_ DMA**](cim-dma.md).
 **Disponibilità**
 </dt> <dd> <dl> <dt>
 
-Tipo di dati: **UInt16**
+Tipo di dati: **uint16**
 </dt> <dt>
 
 Tipo di accesso: sola lettura
 </dt> <dt>
 
-Qualificatori: [**MappingStrings**](/windows/desktop/WmiSdk/standard-qualifiers) ("MIF. DMTF \| DMA \| 001,2 ")
+Qualificatori: [**MappingStrings**](/windows/desktop/WmiSdk/standard-qualifiers) ("MIF. DMTF \| DMA \| 001.2")
 </dt> </dl>
 
-Disponibilità del DMA. Questa proprietà viene ereditata da [**CIM \_ DMA**](cim-dma.md).
+Disponibilità di DMA. Questa proprietà viene ereditata da [**CIM \_ DMA.**](cim-dma.md)
 
 <dt>
 
@@ -180,7 +180,7 @@ Disponibilità del DMA. Questa proprietà viene ereditata da [**CIM \_ DMA**](ci
 
 <span id="In_Use_Not_Available"></span><span id="in_use_not_available"></span><span id="IN_USE_NOT_AVAILABLE"></span>
 
-<span id="In_Use_Not_Available"></span><span id="in_use_not_available"></span><span id="IN_USE_NOT_AVAILABLE"></span>**In uso/non disponibile** (4)
+<span id="In_Use_Not_Available"></span><span id="in_use_not_available"></span><span id="IN_USE_NOT_AVAILABLE"></span>**In uso/Non disponibile** (4)
 
 
 </dt> <dd>
@@ -196,45 +196,45 @@ In uso o non disponibile
 
 </dt> <dd>
 
-In uso e disponibile o condivisibile
+In uso e disponibile o condivisione
 
 </dd> </dl>
 
 </dd> <dt>
 
-**BurstMode**
+**Modalità burst**
 </dt> <dd> <dl> <dt>
 
-Tipo di dati: **Boolean**
+Tipo di dati: **booleano**
 </dt> <dt>
 
 Tipo di accesso: sola lettura
 </dt> <dt>
 
-Qualificatori: [**MappingStrings**](/windows/desktop/WmiSdk/standard-qualifiers) ("MIF. DMTF \| DMA \| 001,3 ")
+Qualificatori: [**MappingStrings**](/windows/desktop/WmiSdk/standard-qualifiers) ("MIF. DMTF \| DMA \| 001.3")
 </dt> </dl>
 
-Indica se il canale DMA supporta la modalità a impulsi.
+Indica se il canale DMA supporta o meno la modalità burst.
 
-Questa proprietà viene ereditata da [**CIM \_ DMA**](cim-dma.md).
+Questa proprietà viene ereditata da [**CIM \_ DMA.**](cim-dma.md)
 
 </dd> <dt>
 
 **ByteMode**
 </dt> <dd> <dl> <dt>
 
-Tipo di dati: **UInt16**
+Tipo di dati: **uint16**
 </dt> <dt>
 
 Tipo di accesso: sola lettura
 </dt> <dt>
 
-Qualificatori: [**MappingStrings**](/windows/desktop/WmiSdk/standard-qualifiers) ("MIF. DMTF \| informazioni DMA risorse di sistema \| 001,7 ")
+Qualificatori: [**MappingStrings**](/windows/desktop/WmiSdk/standard-qualifiers) ("MIF. DMTF \| System Resource DMA Info \| 001.7")
 </dt> </dl>
 
 Modalità di esecuzione DMA.
 
-Questa proprietà viene ereditata da [**CIM \_ DMA**](cim-dma.md).
+Questa proprietà viene ereditata da [**CIM \_ DMA.**](cim-dma.md)
 
 <dt>
 
@@ -254,7 +254,7 @@ Questa proprietà viene ereditata da [**CIM \_ DMA**](cim-dma.md).
 
 <span id="Not_execute_in__count_by_byte__mode"></span><span id="not_execute_in__count_by_byte__mode"></span><span id="NOT_EXECUTE_IN__COUNT_BY_BYTE__MODE"></span>
 
-<span id="Not_execute_in__count_by_byte__mode"></span><span id="not_execute_in__count_by_byte__mode"></span><span id="NOT_EXECUTE_IN__COUNT_BY_BYTE__MODE"></span>**Non eseguito in modalità' conteggio per byte '** (3)
+<span id="Not_execute_in__count_by_byte__mode"></span><span id="not_execute_in__count_by_byte__mode"></span><span id="NOT_EXECUTE_IN__COUNT_BY_BYTE__MODE"></span>**Non eseguito in modalità 'count by byte'** (3)
 
 
 </dt> <dd>
@@ -265,12 +265,12 @@ Non viene eseguito in modalità "conteggio per byte"
 
 <span id="Execute_in__count_by_byte__mode"></span><span id="execute_in__count_by_byte__mode"></span><span id="EXECUTE_IN__COUNT_BY_BYTE__MODE"></span>
 
-<span id="Execute_in__count_by_byte__mode"></span><span id="execute_in__count_by_byte__mode"></span><span id="EXECUTE_IN__COUNT_BY_BYTE__MODE"></span>**Esegui in modalità "conteggio per byte"** (4)
+<span id="Execute_in__count_by_byte__mode"></span><span id="execute_in__count_by_byte__mode"></span><span id="EXECUTE_IN__COUNT_BY_BYTE__MODE"></span>**Esecuzione in modalità 'count by byte'** (4)
 
 
 </dt> <dd>
 
-Esegui in modalità "conteggio per byte"
+Esecuzione in modalità "conteggio per byte"
 
 </dd> </dl>
 
@@ -279,36 +279,36 @@ Esegui in modalità "conteggio per byte"
 **Didascalia**
 </dt> <dd> <dl> <dt>
 
-Tipo di dati: **String**
+Tipo di dati: **string**
 </dt> <dt>
 
 Tipo di accesso: sola lettura
 </dt> <dt>
 
-Qualificatori: [**maxlen**](/windows/desktop/WmiSdk/standard-qualifiers) (64), [**DisplayName**](/windows/desktop/WmiSdk/standard-qualifiers) ("Caption")
+Qualificatori: [**MaxLen**](/windows/desktop/WmiSdk/standard-qualifiers) (64), [**DisplayName**](/windows/desktop/WmiSdk/standard-qualifiers) ("Caption")
 </dt> </dl>
 
-Breve descrizione dell'oggetto stringa a una riga.
+Breve descrizione dell'oggetto, una stringa di una riga.
 
-Questa proprietà viene ereditata da [**CIM \_ ManagedSystemElement**](cim-managedsystemelement.md).
+Questa proprietà viene ereditata da [**CIM \_ ManagedSystemElement.**](cim-managedsystemelement.md)
 
 </dd> <dt>
 
 **ChannelTiming**
 </dt> <dd> <dl> <dt>
 
-Tipo di dati: **UInt16**
+Tipo di dati: **uint16**
 </dt> <dt>
 
 Tipo di accesso: sola lettura
 </dt> <dt>
 
-Qualificatori: [**MappingStrings**](/windows/desktop/WmiSdk/standard-qualifiers) ("MIF. DMTF \| informazioni DMA risorse di sistema \| 001,9 ")
+Qualificatori: [**MappingStrings**](/windows/desktop/WmiSdk/standard-qualifiers) ("MIF. DMTF \| System Resource DMA Info \| 001.9")
 </dt> </dl>
 
 Temporizzazione canale DMA.
 
-Questa proprietà viene ereditata da [**CIM \_ DMA**](cim-dma.md).
+Questa proprietà viene ereditata da [**CIM \_ DMA.**](cim-dma.md)
 
 <dt>
 
@@ -335,14 +335,14 @@ Questa proprietà viene ereditata da [**CIM \_ DMA**](cim-dma.md).
 
 <span id="Type_A"></span><span id="type_a"></span><span id="TYPE_A"></span>
 
-**Digitare A** (4)
+**Tipo A** (4)
 
 
 </dt> <dd></dd> <dt>
 
 <span id="Type_B"></span><span id="type_b"></span><span id="TYPE_B"></span>
 
-**Digitare B** (5)
+**Tipo B** (5)
 
 
 </dt> <dd></dd> <dt>
@@ -359,61 +359,61 @@ Questa proprietà viene ereditata da [**CIM \_ DMA**](cim-dma.md).
 **CreationClassName**
 </dt> <dd> <dl> <dt>
 
-Tipo di dati: **String**
+Tipo di dati: **string**
 </dt> <dt>
 
 Tipo di accesso: sola lettura
 </dt> <dt>
 
-Qualificatori: [**maxlen**](/windows/desktop/WmiSdk/standard-qualifiers) (256), [**\_ chiave CIM**](/windows/desktop/WmiSdk/standard-wmi-qualifiers)
+Qualificatori: [**MaxLen**](/windows/desktop/WmiSdk/standard-qualifiers) (256), [**chiave \_ CIM**](/windows/desktop/WmiSdk/standard-wmi-qualifiers)
 </dt> </dl>
 
-Nome della prima classe concreta da visualizzare nella catena di ereditarietà utilizzata per la creazione di un'istanza. Se utilizzata con le altre proprietà chiave della classe, la proprietà consente di identificare in modo univoco tutte le istanze di questa classe e le relative sottoclassi.
+Nome della prima classe concreta da visualizzare nella catena di ereditarietà utilizzata nella creazione di un'istanza di . Se usata con le altre proprietà chiave della classe , la proprietà consente l'identificazione univoca di tutte le istanze di questa classe e delle relative sottoclassi.
 
-Questa proprietà viene ereditata da [**CIM \_ DMA**](cim-dma.md).
+Questa proprietà viene ereditata da [**CIM \_ DMA.**](cim-dma.md)
 
 </dd> <dt>
 
 **CSCreationClassName**
 </dt> <dd> <dl> <dt>
 
-Tipo di dati: **String**
+Tipo di dati: **string**
 </dt> <dt>
 
 Tipo di accesso: sola lettura
 </dt> <dt>
 
-Qualificatori: [**propagati**](/windows/desktop/WmiSdk/standard-qualifiers) ("[**CIM \_ ComputerSystem**](cim-computersystem.md).**CreationClassName**"), [**MaxLen**](/windows/desktop/WmiSdk/standard-qualifiers) (256), [**\_ chiave CIM**](/windows/desktop/WmiSdk/standard-wmi-qualifiers)
+Qualificatori: [**propagati**](/windows/desktop/WmiSdk/standard-qualifiers) ("[**CIM \_ ComputerSystem**](cim-computersystem.md).**CreationClassName**"), [**MaxLen**](/windows/desktop/WmiSdk/standard-qualifiers) (256), [**CHIAVE \_ CIM**](/windows/desktop/WmiSdk/standard-wmi-qualifiers)
 </dt> </dl>
 
-Nome della classe di creazione dell'ambito del sistema del computer.
+Nome della classe di creazione del computer di ambito.
 
-Questa proprietà viene ereditata da [**CIM \_ DMA**](cim-dma.md).
+Questa proprietà viene ereditata da [**CIM \_ DMA.**](cim-dma.md)
 
 </dd> <dt>
 
 **CSName**
 </dt> <dd> <dl> <dt>
 
-Tipo di dati: **String**
+Tipo di dati: **string**
 </dt> <dt>
 
 Tipo di accesso: sola lettura
 </dt> <dt>
 
-Qualificatori: [**propagati**](/windows/desktop/WmiSdk/standard-qualifiers) ("[**CIM \_ ComputerSystem**](cim-computersystem.md).**Nome**"), [**\_ chiave CIM**](/windows/desktop/WmiSdk/standard-wmi-qualifiers), [**maxlen**](/windows/desktop/WmiSdk/standard-qualifiers) (256)
+Qualificatori: [**propagati**](/windows/desktop/WmiSdk/standard-qualifiers) ("[**CIM \_ ComputerSystem**](cim-computersystem.md).**Name**"), [**CIM \_ Key,**](/windows/desktop/WmiSdk/standard-wmi-qualifiers) [**MaxLen**](/windows/desktop/WmiSdk/standard-qualifiers) (256)
 </dt> </dl>
 
-Nome del sistema di ambito del computer.
+Nome del computer di ambito.
 
-Questa proprietà viene ereditata da [**CIM \_ DMA**](cim-dma.md).
+Questa proprietà viene ereditata da [**CIM \_ DMA.**](cim-dma.md)
 
 </dd> <dt>
 
 **Descrizione**
 </dt> <dd> <dl> <dt>
 
-Tipo di dati: **String**
+Tipo di dati: **string**
 </dt> <dt>
 
 Tipo di accesso: sola lettura
@@ -424,68 +424,68 @@ Qualificatori: [**DisplayName**](/windows/desktop/WmiSdk/standard-qualifiers) ("
 
 Descrizione dell'oggetto.
 
-Questa proprietà viene ereditata da [**CIM \_ ManagedSystemElement**](cim-managedsystemelement.md).
+Questa proprietà viene ereditata da [**CIM \_ ManagedSystemElement.**](cim-managedsystemelement.md)
 
 </dd> <dt>
 
 **DMAChannel**
 </dt> <dd> <dl> <dt>
 
-Tipo di dati: **UInt32**
+Tipo di dati: **uint32**
 </dt> <dt>
 
 Tipo di accesso: sola lettura
 </dt> <dt>
 
-Qualificatori: [**Key**](/windows/desktop/WmiSdk/key-qualifier), [**MappingStrings**](/windows/desktop/WmiSdk/standard-qualifiers) ("MIF. DMTF \| DMA \| 001,1 ")
+Qualificatori: [**Key**](/windows/desktop/WmiSdk/key-qualifier), [**MappingStrings**](/windows/desktop/WmiSdk/standard-qualifiers) ("MIF. DMTF \| DMA \| 001.1")
 </dt> </dl>
 
-Numero del canale DMA, parte del valore della chiave dell'oggetto.
+Numero di canale DMA, parte del valore della chiave dell'oggetto.
 
-Questa proprietà viene ereditata da [**CIM \_ DMA**](cim-dma.md).
+Questa proprietà viene ereditata da [**CIM \_ DMA.**](cim-dma.md)
 
 </dd> <dt>
 
 **InstallDate**
 </dt> <dd> <dl> <dt>
 
-Tipo di dati: **DateTime**
+Tipo di dati: **datetime**
 </dt> <dt>
 
 Tipo di accesso: sola lettura
 </dt> <dt>
 
-Qualificatori: [**MappingStrings**](/windows/desktop/WmiSdk/standard-qualifiers) ("MIF. DMTF \| ComponentID \| 001,5 "), [**DisplayName**](/windows/desktop/WmiSdk/standard-qualifiers) (" data di installazione ")
+Qualificatori: [**MappingStrings**](/windows/desktop/WmiSdk/standard-qualifiers) ("MIF. DMTF \| ComponentID \| 001.5"), [**DisplayName**](/windows/desktop/WmiSdk/standard-qualifiers) ("Install Date")
 </dt> </dl>
 
 Data e ora di installazione dell'oggetto. Questa proprietà non richiede un valore per indicare che l'oggetto è installato.
 
-Questa proprietà viene ereditata da [**CIM \_ ManagedSystemElement**](cim-managedsystemelement.md).
+Questa proprietà viene ereditata da [**CIM \_ ManagedSystemElement.**](cim-managedsystemelement.md)
 
 </dd> <dt>
 
 **MaxTransferSize**
 </dt> <dd> <dl> <dt>
 
-Tipo di dati: **UInt32**
+Tipo di dati: **uint32**
 </dt> <dt>
 
 Tipo di accesso: sola lettura
 </dt> <dt>
 
-Qualificatori: [**MappingStrings**](/windows/desktop/WmiSdk/standard-qualifiers) ("MIF. \|Informazioni sul DMA della risorsa \| di sistema DMTF 001,4 "), [**unità**](/windows/desktop/WmiSdk/standard-qualifiers) (" bytes ")
+Qualificatori: [**MappingStrings**](/windows/desktop/WmiSdk/standard-qualifiers) ("MIF. DMTF \| System Resource DMA Info \| 001.4"), [**Units**](/windows/desktop/WmiSdk/standard-qualifiers) ("bytes")
 </dt> </dl>
 
-Numero massimo di byte che possono essere trasferiti da questo canale DMA. Se è sconosciuto, immettere 0 (zero).
+Numero massimo di byte che possono essere trasferiti da questo canale DMA. Se sconosciuto, immettere 0 (zero).
 
-Questa proprietà viene ereditata da [**CIM \_ DMA**](cim-dma.md).
+Questa proprietà viene ereditata da [**CIM \_ DMA.**](cim-dma.md)
 
 </dd> <dt>
 
 **Nome**
 </dt> <dd> <dl> <dt>
 
-Tipo di dati: **String**
+Tipo di dati: **stringa**
 </dt> <dt>
 
 Tipo di accesso: sola lettura
@@ -494,25 +494,25 @@ Tipo di accesso: sola lettura
 Qualificatori: [**DisplayName**](/windows/desktop/WmiSdk/standard-qualifiers) ("Name")
 </dt> </dl>
 
-Etichetta con cui l'oggetto è noto. Quando è sottoclassata, è possibile eseguire l'override della proprietà in modo che sia una proprietà chiave.
+Etichetta con cui l'oggetto è noto. Quando è sottoclassata, la proprietà può essere sottoposta a override per essere una proprietà chiave.
 
-Questa proprietà viene ereditata da [**CIM \_ ManagedSystemElement**](cim-managedsystemelement.md).
+Questa proprietà viene ereditata da [**CIM \_ ManagedSystemElement.**](cim-managedsystemelement.md)
 
 </dd> <dt>
 
 **Porta**
 </dt> <dd> <dl> <dt>
 
-Tipo di dati: **UInt32**
+Tipo di dati: **uint32**
 </dt> <dt>
 
 Tipo di accesso: sola lettura
 </dt> <dt>
 
-Qualificatori: [**MappingStrings**](/windows/desktop/WmiSdk/standard-qualifiers) (" \| strutture di sistema Win32API \| [**cm porta DMA \_ \_ \_ descrittore risorse parziali**](/windows-hardware/drivers/ddi/content/wdm/ns-wdm-_cm_partial_resource_descriptor) \| \| ")
+Qualificatori: [**MappingStrings**](/windows/desktop/WmiSdk/standard-qualifiers) ("Win32API \| System Structures CM PARTIAL RESOURCE \| [**\_ \_ \_ DESCRIPTOR**](/windows-hardware/drivers/ddi/content/wdm/ns-wdm-_cm_partial_resource_descriptor) \| Dma \| Port")
 </dt> </dl>
 
-Porta DMA utilizzata dalla scheda bus host. Questa operazione è significativa per i bus di tipo MCA.
+Porta DMA usata dall'adattatore del bus host. Questo è significativo per i bus di tipo MCA.
 
 Example: 12
 
@@ -521,18 +521,18 @@ Example: 12
 **Status**
 </dt> <dd> <dl> <dt>
 
-Tipo di dati: **String**
+Tipo di dati: **stringa**
 </dt> <dt>
 
 Tipo di accesso: sola lettura
 </dt> <dt>
 
-Qualificatori: [**maxlen**](/windows/desktop/WmiSdk/standard-qualifiers) (10), [**DisplayName**](/windows/desktop/WmiSdk/standard-qualifiers) ("status")
+Qualificatori: [**MaxLen**](/windows/desktop/WmiSdk/standard-qualifiers) (10), [**DisplayName**](/windows/desktop/WmiSdk/standard-qualifiers) ("Status")
 </dt> </dl>
 
-Stato corrente dell'oggetto. È possibile definire diversi stati operativi e non operativi. Gli stati operativi includono: "OK", "degradato" e "errore Predator" (un elemento, ad esempio un'unità disco rigido abilitata per SMART, potrebbe funzionare correttamente, ma prevedere un errore nel prossimo futuro). Gli Stati non operativi includono: "Error", "starting", "stoping" e "Service". Il secondo "servizio" può essere applicato durante il mirroring di un disco, il ricaricamento di un elenco di autorizzazioni utente o altre attività amministrative. Non tutto questo lavoro è online, ma l'elemento gestito non è né "OK" né in uno degli altri Stati.
+Stato corrente dell'oggetto. È possibile definire vari stati operativi e non operativi. Gli stati operativi includono: "OK", "Degraded" e "Pred Fail" (un elemento, ad esempio un disco rigido abilitato per SMART, potrebbe funzionare correttamente ma prevedere un errore nel prossimo futuro). Gli stati non di operazione includono: "Error", "Starting", "Stopping" e "Service". Quest'ultimo, "Servizio", può essere applicato durante il ridimensionamento del mirror di un disco, il ricaricamento di un elenco di autorizzazioni utente o altro lavoro amministrativo. Non tutte queste operazioni sono online, ma l'elemento gestito non è né "OK" né in uno degli altri stati.
 
-Questa proprietà viene ereditata da [**CIM \_ ManagedSystemElement**](cim-managedsystemelement.md).
+Questa proprietà viene ereditata da [**CIM \_ ManagedSystemElement.**](cim-managedsystemelement.md)
 
 Sono inclusi i valori seguenti:
 
@@ -547,77 +547,77 @@ Sono inclusi i valori seguenti:
 
 <span id="Error"></span><span id="error"></span><span id="ERROR"></span>
 
-**Errore** ("errore")
+**Errore** ("Errore")
 
 
 </dt> <dd></dd> <dt>
 
 <span id="Degraded"></span><span id="degraded"></span><span id="DEGRADED"></span>
 
-Ridotto **("danneggiato"** )
+**Degradato** ("Degraded")
 
 
 </dt> <dd></dd> <dt>
 
 <span id="Unknown"></span><span id="unknown"></span><span id="UNKNOWN"></span>
 
-**Sconosciuto** ("sconosciuto")
+**Sconosciuto** ("Sconosciuto")
 
 
 </dt> <dd></dd> <dt>
 
 <span id="Pred_Fail"></span><span id="pred_fail"></span><span id="PRED_FAIL"></span>
 
-**Errore di predazione** ("Predator fail")
+**Pred Fail** ("Pred Fail")
 
 
 </dt> <dd></dd> <dt>
 
 <span id="Starting"></span><span id="starting"></span><span id="STARTING"></span>
 
-**Avvio** di ("avvio")
+**Avvio** ("Avvio")
 
 
 </dt> <dd></dd> <dt>
 
 <span id="Stopping"></span><span id="stopping"></span><span id="STOPPING"></span>
 
-**Arresto** in corso ("arresto")
+**Arresto** ("Arresto")
 
 
 </dt> <dd></dd> <dt>
 
 <span id="Service"></span><span id="service"></span><span id="SERVICE"></span>
 
-**Servizio** ("servizio")
+**Servizio** ("Servizio")
 
 
 </dt> <dd></dd> <dt>
 
 <span id="Stressed"></span><span id="stressed"></span><span id="STRESSED"></span>
 
-**Sottolineato** (sottolineato)
+**Stressed** ("Stressed")
 
 
 </dt> <dd></dd> <dt>
 
 <span id="NonRecover"></span><span id="nonrecover"></span><span id="NONRECOVER"></span>
 
-**Noncover** ("noncover")
+**NonRecover** ("NonRecover")
 
 
 </dt> <dd></dd> <dt>
 
 <span id="No_Contact"></span><span id="no_contact"></span><span id="NO_CONTACT"></span>
 
-**Nessun contatto** ("nessun contatto")
+**Nessun contatto** ("Nessun contatto")
 
 
 </dt> <dd></dd> <dt>
 
 <span id="Lost_Comm"></span><span id="lost_comm"></span><span id="LOST_COMM"></span>
 
-**Comunicazione persa** ("comunicazione persa")
+**Lost Comm** ("Lost Comm")
 
 
 </dt> <dd></dd> </dl>
@@ -627,18 +627,18 @@ Ridotto **("danneggiato"** )
 **TransferWidths**
 </dt> <dd> <dl> <dt>
 
-Tipo di dati: matrice **UInt16**
+Tipo di dati: **matrice uint16**
 </dt> <dt>
 
 Tipo di accesso: sola lettura
 </dt> <dt>
 
-Qualificatori: [**MappingStrings**](/windows/desktop/WmiSdk/standard-qualifiers) ("MIF. \|Informazioni sul DMA della risorsa \| di sistema DMTF 001,2 "), [**unità**](/windows/desktop/WmiSdk/standard-qualifiers) (" bits ")
+Qualificatori: [**MappingStrings**](/windows/desktop/WmiSdk/standard-qualifiers) ("MIF. DMTF \| System Resource DMA Info \| 001.2"), [**Units**](/windows/desktop/WmiSdk/standard-qualifiers) ("bits")
 </dt> </dl>
 
-Matrice di tutte le larghezze di trasferimento (in bit) supportate da questo canale DMA. Se è sconosciuto, immettere 0 (zero).
+Matrice di tutte le larghezze di trasferimento (in bit) supportate da questo canale DMA. Se sconosciuto, immettere 0 (zero).
 
-Questa proprietà viene ereditata da [**CIM \_ DMA**](cim-dma.md).
+Questa proprietà viene ereditata da [**CIM \_ DMA.**](cim-dma.md)
 
 <dt>
 
@@ -689,18 +689,18 @@ Questa proprietà viene ereditata da [**CIM \_ DMA**](cim-dma.md).
 **TypeCTiming**
 </dt> <dd> <dl> <dt>
 
-Tipo di dati: **UInt16**
+Tipo di dati: **uint16**
 </dt> <dt>
 
 Tipo di accesso: sola lettura
 </dt> <dt>
 
-Qualificatori: [**MappingStrings**](/windows/desktop/WmiSdk/standard-qualifiers) ("MIF. DMTF \| informazioni DMA risorse di sistema \| 001,10 ")
+Qualificatori: [**MappingStrings**](/windows/desktop/WmiSdk/standard-qualifiers) ("MIF. DMTF \| System Resource DMA Info \| 001.10")
 </dt> </dl>
 
-Supporto per l'intervallo di tipo C (picchi).
+Supporto per la temporizzazione di tipo C (burst).
 
-Questa proprietà viene ereditata da [**CIM \_ DMA**](cim-dma.md).
+Questa proprietà viene ereditata da [**CIM \_ DMA.**](cim-dma.md)
 
 <dt>
 
@@ -744,18 +744,18 @@ Questa proprietà viene ereditata da [**CIM \_ DMA**](cim-dma.md).
 **WordMode**
 </dt> <dd> <dl> <dt>
 
-Tipo di dati: **UInt16**
+Tipo di dati: **uint16**
 </dt> <dt>
 
 Tipo di accesso: sola lettura
 </dt> <dt>
 
-Qualificatori: [**MappingStrings**](/windows/desktop/WmiSdk/standard-qualifiers) ("MIF. DMTF \| informazioni DMA risorse di sistema \| 001,8 ")
+Qualificatori: [**MappingStrings**](/windows/desktop/WmiSdk/standard-qualifiers) ("MIF. DMTF \| System Resource DMA Info \| 001.8")
 </dt> </dl>
 
 Modalità di esecuzione DMA.
 
-Questa proprietà viene ereditata da [**CIM \_ DMA**](cim-dma.md).
+Questa proprietà viene ereditata da [**CIM \_ DMA.**](cim-dma.md)
 
 <dt>
 
@@ -775,7 +775,7 @@ Questa proprietà viene ereditata da [**CIM \_ DMA**](cim-dma.md).
 
 <span id="Not_execute_in__count_by_word__mode"></span><span id="not_execute_in__count_by_word__mode"></span><span id="NOT_EXECUTE_IN__COUNT_BY_WORD__MODE"></span>
 
-<span id="Not_execute_in__count_by_word__mode"></span><span id="not_execute_in__count_by_word__mode"></span><span id="NOT_EXECUTE_IN__COUNT_BY_WORD__MODE"></span>**Non eseguito in modalità' conteggio per parola '** (3)
+<span id="Not_execute_in__count_by_word__mode"></span><span id="not_execute_in__count_by_word__mode"></span><span id="NOT_EXECUTE_IN__COUNT_BY_WORD__MODE"></span>**Non viene eseguito in modalità 'count by word'** (3)
 
 
 </dt> <dd>
@@ -786,12 +786,12 @@ Non viene eseguito in modalità "conteggio per parola"
 
 <span id="Execute_in__count_by_word__mode"></span><span id="execute_in__count_by_word__mode"></span><span id="EXECUTE_IN__COUNT_BY_WORD__MODE"></span>
 
-<span id="Execute_in__count_by_word__mode"></span><span id="execute_in__count_by_word__mode"></span><span id="EXECUTE_IN__COUNT_BY_WORD__MODE"></span>**Esegui in modalità "conteggio per parola"** (4)
+<span id="Execute_in__count_by_word__mode"></span><span id="execute_in__count_by_word__mode"></span><span id="EXECUTE_IN__COUNT_BY_WORD__MODE"></span>**Esecuzione in modalità "conteggio per parola"** (4)
 
 
 </dt> <dd>
 
-Esegui in modalità "conteggio per parola"
+Eseguire in modalità "conteggio per parola"
 
 </dd> </dl>
 
@@ -799,7 +799,7 @@ Esegui in modalità "conteggio per parola"
 
 ## <a name="remarks"></a>Commenti
 
-La classe **Win32 \_ DMAChannel** è derivata da [**CIM \_ DMA**](cim-dma.md).
+La **classe \_ DMAChannel Win32** è derivata da [**CIM \_ DMA**](cim-dma.md).
 
 ## <a name="requirements"></a>Requisiti
 
@@ -810,7 +810,7 @@ La classe **Win32 \_ DMAChannel** è derivata da [**CIM \_ DMA**](cim-dma.md).
 | Client minimo supportato<br/> | Windows Vista<br/>                                                                |
 | Server minimo supportato<br/> | Windows Server 2008<br/>                                                          |
 | Spazio dei nomi<br/>                | \\CIMV2 radice<br/>                                                                  |
-| MOF<br/>                      | <dl> <dt>CIMWin32. mof</dt> </dl> |
+| MOF<br/>                      | <dl> <dt>CIMWin32.mof</dt> </dl> |
 | DLL<br/>                      | <dl> <dt>CIMWin32.dll</dt> </dl> |
 
 
@@ -819,10 +819,10 @@ La classe **Win32 \_ DMAChannel** è derivata da [**CIM \_ DMA**](cim-dma.md).
 
 <dl> <dt>
 
-[**\_DMA CIM**](cim-dma.md)
+[**CIM \_ DMA**](cim-dma.md)
 </dt> <dt>
 
-[Classi hardware del sistema del computer](computer-system-hardware-classes.md)
+[Classi hardware del sistema informatico](computer-system-hardware-classes.md)
 </dt> </dl>
 
  

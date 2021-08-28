@@ -1,40 +1,40 @@
 ---
-title: Attributi di struttura e di Unione
-description: Utilizzare l'opzione \_ \ attributi per specificare la caratteristica di un'Unione in una chiamata di procedura remota. Usare l'attributo Ignore per definire determinati membri di struttura o di Unione come locali per l'applicazione client.
+title: Attributi di struttura e unione
+description: Usare \_ l'opzione \ attributes per specificare la caratteristica di un'unione in una chiamata di procedura remota. Usare l'attributo ignore per designare determinati membri di struttura o unione come locali per l'applicazione client.
 ms.assetid: e06e5184-fa92-4446-964b-d56d0e5f2872
 keywords:
-- MIDL, attributi, struttura e unione IDL
+- IDL MIDL, attributi, struttura e unione
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 5b2a7764d56c8557bd71923021a9f324a118ac81
-ms.sourcegitcommit: 2d531328b6ed82d4ad971a45a5131b430c5866f7
+ms.openlocfilehash: cc179632bb7e0d64b777f3c8a08b9de2af7bbf818978d6bb0a7ee2ea8b515542
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "104471142"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119066671"
 ---
-# <a name="structure-and-union-attributes"></a>Attributi di struttura e di Unione
+# <a name="structure-and-union-attributes"></a>Attributi di struttura e unione
 
-Utilizzare gli **attributi \_ Switch** \* per specificare la caratteristica di un'Unione in una chiamata di procedura remota. Usare l'attributo [**Ignore**](ignore.md) per definire determinati membri di struttura o di Unione come locali per l'applicazione client.
+Usare gli **attributi switch \_** per specificare la caratteristica di \* un'unione in una chiamata di procedura remota. Usare [**l'attributo ignore**](ignore.md) per designare determinati membri di struttura o unione come locali per l'applicazione client.
 
 
 
 | Attributo                           | Utilizzo                                                                                                                         |
 |-------------------------------------|-------------------------------------------------------------------------------------------------------------------------------|
-| [**commutatore**](switch.md)            | Seleziona discriminante per un'Unione incapsulata.                                                                           |
-| [**opzione \_**](switch-is.md)     | Identifica discriminante per un'Unione non incapsulata.                                                                      |
-| [**tipo di opzione \_**](switch-type.md) | Identifica il tipo di discriminante per un'Unione non incapsulata.                                                          |
-| [**ignorare**](ignore.md)            | Indica che un puntatore contenuto in una struttura o in un'Unione e l'oggetto indicato dal puntatore non devono essere trasmessi. |
+| [**Interruttore**](switch.md)            | Seleziona il discriminante per un'unione incapsulata.                                                                           |
+| [**\_l'opzione è**](switch-is.md)     | Identifica la discriminante per un'unione non incapsulata.                                                                      |
+| [**tipo di \_ commutatore**](switch-type.md) | Identifica il tipo di discriminante per un'unione non incapsulata.                                                          |
+| [**Ignorare**](ignore.md)            | Indica che un puntatore contenuto in una struttura o in un'unione e l'oggetto indicato dal puntatore non devono essere trasmessi. |
 
 
 
- 
+ 
 
-Per specificare le caratteristiche dei membri di struttura o di Unione, è inoltre possibile utilizzare la [matrice e gli attributi del puntatore ridimensionati](array-and-sized-pointer-attributes.md) .
+È anche possibile usare gli attributi [di matrice e ridimensionato del puntatore](array-and-sized-pointer-attributes.md) per specificare le caratteristiche dei membri della struttura o dell'unione.
 
- 
+ 
 
- 
+ 
 
 
 

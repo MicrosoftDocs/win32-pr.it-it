@@ -1,7 +1,7 @@
 ---
 description: La funzione SetBoolInBlob imposta un valore booleano in una determinata posizione all'interno di un BLOB.
 ms.assetid: 354d22be-b8c4-4068-8356-19b30ac188d0
-title: Funzione SetBoolInBlob (Netmon. h)
+title: Funzione SetBoolInBlob (Netmon.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -13,16 +13,16 @@ api_type:
 - DllExport
 api_location:
 - Npptools.dll
-ms.openlocfilehash: 5cfbb9a3410d511ab143f1d77584a0144435c230
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 95785714919ad99026c8e179c11f992a79efc4d99d0de4caab20fd00f63cbffc
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104528639"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120128821"
 ---
-# <a name="setboolinblob-function"></a>SetBoolInBlob (funzione)
+# <a name="setboolinblob-function"></a>Funzione SetBoolInBlob
 
-La funzione **SetBoolInBlob** imposta un valore booleano in una determinata posizione all'interno di un BLOB.
+La **funzione SetBoolInBlob** imposta un valore booleano in una determinata posizione all'interno di un BLOB.
 
 ## <a name="syntax"></a>Sintassi
 
@@ -43,35 +43,35 @@ DWORD SetBoolInBlob(
 
 <dl> <dt>
 
-*hBlob* \[ in\]
+*hBlob* \[ Pollici\]
 </dt> <dd>
 
-Handle per un BLOB.
+Handle a un BLOB.
 
 </dd> <dt>
 
-*pOwnerName* \[ in\]
+*pOwnerName* \[ Pollici\]
 </dt> <dd>
 
-Puntatore al nome del **proprietario** del BLOB.
+Puntatore al nome **del proprietario** DEL BLOB.
 
 </dd> <dt>
 
-*pCategoryName* \[ in\]
+*pCategoryName* \[ Pollici\]
 </dt> <dd>
 
 Puntatore al nome della **categoria** BLOB.
 
 </dd> <dt>
 
-*pTagName* \[ in\]
+*pTagName* \[ Pollici\]
 </dt> <dd>
 
 Puntatore al nome del **tag** BLOB.
 
 </dd> <dt>
 
-*Bool* \[ in\]
+*Bool* \[ Pollici\]
 </dt> <dd>
 
 Valore booleano impostato nella posizione specificata.
@@ -80,7 +80,7 @@ Valore booleano impostato nella posizione specificata.
 
 ## <a name="return-value"></a>Valore restituito
 
-Se la funzione ha esito positivo, il valore restituito è NMERR \_ Success.
+Se la funzione ha esito positivo, il valore restituito è NMERR \_ SUCCESS.
 
 Se la funzione ha esito negativo, il valore restituito è un valore NMERR che indica l'errore.
 
@@ -92,8 +92,8 @@ Se la funzione ha esito negativo, il valore restituito è un valore NMERR che in
 |-------------------------------------|-----------------------------------------------------------------------------------------|
 | Client minimo supportato<br/> | Windows 2000 Professional \[solo app desktop\]<br/>                              |
 | Server minimo supportato<br/> | Windows 2000 Server \[solo app desktop\]<br/>                                    |
-| Intestazione<br/>                   | <dl> <dt>Netmon. h</dt> </dl>     |
-| Libreria<br/>                  | <dl> <dt>Npptools. lib</dt> </dl> |
+| Intestazione<br/>                   | <dl> <dt>Netmon.h</dt> </dl>     |
+| Libreria<br/>                  | <dl> <dt>Npptools.lib</dt> </dl> |
 | DLL<br/>                      | <dl> <dt>Npptools.dll</dt> </dl> |
 
 

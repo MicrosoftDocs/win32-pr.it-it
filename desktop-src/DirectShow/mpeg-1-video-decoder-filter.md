@@ -1,84 +1,25 @@
 ---
-description: Filtro del decodificatore video MPEG-1
+description: Filtro decodificatore video MPEG-1
 ms.assetid: 272d2f31-6e57-4ce5-ac86-b4d47f661fea
-title: Filtro del decodificatore video MPEG-1
+title: Filtro decodificatore video MPEG-1
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 6e72e575baf6761a34078ee4413b6dd095871a646d9539d08c9357ffd8af5efd
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: cf865d0e8cf45bcbde20a2d5b6f4035a4a17f970
+ms.sourcegitcommit: 9b5faa61c38b2d0c432b7f2dbee8c127b0e28a7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "120051021"
+ms.lasthandoff: 08/19/2021
+ms.locfileid: "122468228"
 ---
-# <a name="mpeg-1-video-decoder-filter"></a>Filtro del decodificatore video MPEG-1
+# <a name="mpeg-1-video-decoder-filter"></a>Filtro decodificatore video MPEG-1
 
 Decodifica il video MPEG-1.
 
 
 
-<table>
-<colgroup>
-<col style="width: 50%" />
-<col style="width: 50%" />
-</colgroup>
-<tbody>
-<tr class="odd">
-<td>Interfacce di filtro</td>
-<td><a href="/windows/desktop/api/Strmif/nn-strmif-ibasefilter"><strong>IBaseFilter</strong></a>, <strong>ISpecifyPropertyPages</strong></td>
-</tr>
-<tr class="even">
-<td>Tipi di supporti pin di input</td>
-<td>MEDIATYPE_Video, FORMAT_MPEGVideo<br/> Sono validi i sottotipi seguenti:<br/>
-<ul>
-<li><strong>MEDIASUBTYPE_MPEG1Packet</strong></li>
-<li><strong>MEDIASUBTYPE_MPEG1Payload</strong></li>
-</ul></td>
-</tr>
-<tr class="odd">
-<td>Interfacce pin di input</td>
-<td><a href="/windows/desktop/api/Strmif/nn-strmif-ipin"><strong>IPin</strong></a>, <a href="/windows/desktop/api/Strmif/nn-strmif-imeminputpin"> <strong>IMemInputPin</strong></a></td>
-</tr>
-<tr class="even">
-<td>Tipi di supporti pin di output</td>
-<td>Tipo principale: <strong>MEDIATYPE_Video</strong>,<br/> Tipo di formato: <strong>FORMAT_VideoInfo</strong> o <strong>FORMAT_VideoInfo2</strong><br/> Sottotipi:<br/>
-<ul>
-<li><strong>MEDIASUBTYPE_RGB24</strong></li>
-<li><strong>MEDIASUBTYPE_RGB32</strong></li>
-<li><strong>MEDIASUBTYPE_RGB8</strong></li>
-<li><strong>MEDIASUBTYPE_RGB555</strong></li>
-<li><strong>MEDIASUBTYPE_RGB565</strong></li>
-<li><strong>MEDIASUBTYPE_UYVY</strong></li>
-<li><strong>MEDIASUBTYPE_Y41P</strong></li>
-<li><strong>MEDIASUBTYPE_YUY2</strong></li>
-</ul></td>
-</tr>
-<tr class="odd">
-<td>Interfacce pin di output</td>
-<td><a href="/windows/desktop/api/Strmif/nn-strmif-ipin"><strong>IPin</strong></a>, <a href="/windows/desktop/api/Strmif/nn-strmif-iqualitycontrol"> <strong>IQualityControl</strong></a></td>
-</tr>
-<tr class="even">
-<td>CLSID del filtro</td>
-<td><strong>CLSID_CMpegVideoCodec</strong></td>
-</tr>
-<tr class="odd">
-<td>CLSID pagina delle proprietà</td>
-<td><strong>CLSID_MpegVideoDecodePropertyPage</strong></td>
-</tr>
-<tr class="even">
-<td>File eseguibile</td>
-<td>quartz.dll</td>
-</tr>
-<tr class="odd">
-<td><a href="merit.md">Merito</a></td>
-<td>0x40000001</td>
-</tr>
-<tr class="even">
-<td><a href="filter-categories.md">Categoria filtro</a></td>
-<td>CLSID_LegacyAmFilterCategory</td>
-</tr>
-</tbody>
-</table>
+
+| | | Filtrare le interfacce | <a href="/windows/desktop/api/Strmif/nn-strmif-ibasefilter"><strong>IBaseFilter</strong></a>, <strong>ISpecifyPropertyPages</strong> | | Tipi di supporti pin di input | MEDIATYPE_Video, FORMAT_MPEGVideo<br /> Sono validi i sottotipi seguenti:<br /><ul><li><strong>MEDIASUBTYPE_MPEG1Packet</strong></li><li><strong>MEDIASUBTYPE_MPEG1Payload</strong></li></ul> | | Interfacce pin di input | <a href="/windows/desktop/api/Strmif/nn-strmif-ipin"><strong>IPin</strong></a>, <a href="/windows/desktop/api/Strmif/nn-strmif-imeminputpin"><strong>IMemInputPin | |</strong></a> Tipi di supporti pin di output | Tipo principale: <strong>MEDIATYPE_Video</strong>,<br /> Tipo di formato: <strong>FORMAT_VideoInfo</strong> <strong>o FORMAT_VideoInfo2</strong><br /> Sottotipi:<br /><ul><li><strong>MEDIASUBTYPE_RGB24</strong></li><li><strong>MEDIASUBTYPE_RGB32</strong></li><li><strong>MEDIASUBTYPE_RGB8</strong></li><li><strong>MEDIASUBTYPE_RGB555</strong></li><li><strong>MEDIASUBTYPE_RGB565</strong></li><li><strong>MEDIASUBTYPE_UYVY</strong></li><li><strong>MEDIASUBTYPE_Y41P</strong></li><li><strong>MEDIASUBTYPE_YUY2</strong></li></ul> | | Interfacce pin di output | <a href="/windows/desktop/api/Strmif/nn-strmif-ipin"><strong>IPin</strong></a>, <a href="/windows/desktop/api/Strmif/nn-strmif-iqualitycontrol"><strong>IQualityControl</strong></a> | | Filtrare i | CLSID <strong>CLSID_CMpegVideoCodec</strong> | | ClSID della pagina delle proprietà | <strong>CLSID_MpegVideoDecodePropertyPage</strong> | | File eseguibile | quartz.dll | | <a href="merit.md">Merito</a> | 0x40000001 | | <a href="filter-categories.md">Filtro categoria</a> | CLSID_LegacyAmFilterCategory | 
+
 
 
 
@@ -86,7 +27,7 @@ Decodifica il video MPEG-1.
 
 ## <a name="remarks"></a>Commenti
 
-Questo filtro può essere decodificato in un oggetto Surface DirectDraw. Il filtro usa MMX se la macchina supporta MMX.
+Questo filtro può decodificare in un oggetto DirectDraw Surface. Il filtro usa MMX se il computer supporta MMX.
 
 ## <a name="related-topics"></a>Argomenti correlati
 

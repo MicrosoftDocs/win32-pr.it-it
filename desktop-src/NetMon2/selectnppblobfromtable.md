@@ -1,7 +1,7 @@
 ---
-description: La funzione SelectNPPBlobFromTable seleziona una scheda di interfaccia di rete da una tabella BLOB NPP specificata.
+description: La funzione SelectNPPBlobFromTable seleziona una scheda di interfaccia di rete da una tabella BLOB NPP fornita.
 ms.assetid: 7f8010ed-472a-49b2-8d97-92851b6c14cd
-title: Funzione SelectNPPBlobFromTable (Netmon. h)
+title: Funzione SelectNPPBlobFromTable (Netmon.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -13,16 +13,16 @@ api_type:
 - DllExport
 api_location:
 - Npptools.dll
-ms.openlocfilehash: d8f504d76d43b8a398947f435f7bd488678ea394
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 14d9ca14d027efc1540f5a5d2ae78e948da68dd59247252989b617d07229bb42
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104226252"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120074411"
 ---
-# <a name="selectnppblobfromtable-function"></a>SelectNPPBlobFromTable (funzione)
+# <a name="selectnppblobfromtable-function"></a>Funzione SelectNPPBlobFromTable
 
-La funzione **SelectNPPBlobFromTable** seleziona una scheda di interfaccia di rete da una tabella BLOB NPP specificata.
+La **funzione SelectNPPBlobFromTable** seleziona una scheda di interfaccia di rete da una tabella BLOB NPP fornita.
 
 ## <a name="syntax"></a>Sintassi
 
@@ -41,40 +41,40 @@ DWORD SelectNPPBlobFromTable(
 
 <dl> <dt>
 
-*HWND* \[ in\]
+*hwnd* \[ Pollici\]
 </dt> <dd>
 
-Handle per la finestra che visualizza la finestra di dialogo **Seleziona rete** .
+Handle per la finestra in cui viene visualizzata **la finestra di dialogo** Seleziona una rete.
 
 </dd> <dt>
 
-*pBlobTable* \[ in\]
+*pBlobTable* \[ Pollici\]
 </dt> <dd>
 
-Puntatore alla tabella BLOB fornita. Network Monitor usa questa tabella per popolare la finestra di dialogo **Seleziona una rete** .
+Puntatore alla tabella BLOB fornita. Network Monitor questa tabella viene utilizzata per popolare la **finestra di dialogo** Seleziona una rete.
 
 </dd> <dt>
 
-*hBlob* \[ out\]
+*hBlob* \[ Cambio\]
 </dt> <dd>
 
-Handle per il BLOB che rappresenta la scheda di interfaccia di rete selezionata.
+Handle al BLOB che rappresenta la scheda di interfaccia di rete selezionata.
 
 </dd> </dl>
 
 ## <a name="return-value"></a>Valore restituito
 
-Se la funzione ha esito positivo e l'utente seleziona una scheda di interfaccia di rete, il valore restituito è NMERR \_ Success; il BLOB a cui punta *hBlob* viene compilato.
+Se la funzione ha esito positivo e l'utente seleziona una scheda di interfaccia di rete, il valore restituito è NMERR SUCCESS. Il BLOB a cui \_ *punta hBlob* viene compilato.
 
-Se l'utente non seleziona una scheda di interfaccia di rete, il valore restituito è NMERR non è stato \_ \_ selezionato alcun NPP \_ .
+Se l'utente non seleziona una scheda di interfaccia di rete, il valore restituito è NMERR \_ NO \_ NPP \_ SELECTED.
 
 Se la funzione ha esito negativo, il valore restituito è un altro valore NMERR.
 
 ## <a name="remarks"></a>Commenti
 
-Quando viene chiamato, Network Monitor Visualizza la finestra di dialogo **Seleziona rete** che può essere usata per selezionare una scheda di interfaccia di rete. Il BLOB di NPP che rappresenta la scheda di interfaccia di rete selezionata torna all'applicazione chiamante.
+Quando viene chiamato, Network Monitor viene visualizzata **la finestra** di dialogo Seleziona una rete, che è possibile usare per selezionare una scheda di interfaccia di rete. Il BLOB NPP che rappresenta la scheda di interfaccia di rete selezionata torna all'applicazione chiamante.
 
-Per informazioni sui vari modi in cui è possibile selezionare NIC, vedere [selezione di una scheda di interfaccia di rete](selecting-a-network-interface-card.md)
+Per informazioni sui vari modi in cui è possibile selezionare le schede di interfaccia di rete, vedere [Selezione di una scheda di interfaccia di rete](selecting-a-network-interface-card.md)
 
 ## <a name="requirements"></a>Requisiti
 
@@ -84,8 +84,8 @@ Per informazioni sui vari modi in cui è possibile selezionare NIC, vedere [sele
 |-------------------------------------|-----------------------------------------------------------------------------------------|
 | Client minimo supportato<br/> | Windows 2000 Professional \[solo app desktop\]<br/>                              |
 | Server minimo supportato<br/> | Windows 2000 Server \[solo app desktop\]<br/>                                    |
-| Intestazione<br/>                   | <dl> <dt>Netmon. h</dt> </dl>     |
-| Libreria<br/>                  | <dl> <dt>Npptools. lib</dt> </dl> |
+| Intestazione<br/>                   | <dl> <dt>Netmon.h</dt> </dl>     |
+| Libreria<br/>                  | <dl> <dt>Npptools.lib</dt> </dl> |
 | DLL<br/>                      | <dl> <dt>Npptools.dll</dt> </dl> |
 
 

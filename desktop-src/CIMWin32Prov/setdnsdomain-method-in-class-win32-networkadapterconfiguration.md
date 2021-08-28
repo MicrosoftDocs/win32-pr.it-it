@@ -14,18 +14,18 @@ api_type:
 - COM
 api_location:
 - CIMWin32.dll
-ms.openlocfilehash: c440d8cb5c720bf6922707f04bc75e2383755c1e
-ms.sourcegitcommit: c7add10d695482e1ceb72d62b8a4ebd84ea050f7
+ms.openlocfilehash: a5fd02168c19a5424ef455380bd9e1251f2e8f6c48a9dd8ea5ec4e9e1a1b1e4d
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104225744"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119759911"
 ---
-# <a name="setdnsdomain-method-of-the-win32_networkadapterconfiguration-class"></a>Metodo SetDNSDomain della \_ classe NetworkAdapterConfiguration Win32
+# <a name="setdnsdomain-method-of-the-win32_networkadapterconfiguration-class"></a>Metodo SetDNSDomain della classe NetworkAdapterConfiguration Win32 \_
 
-Il metodo della [classe WMI](/windows/desktop/WmiSdk/retrieving-a-class) **SetDNSDomain** consente l'impostazione del dominio DNS.
+Il metodo della classe [WMI](/windows/desktop/WmiSdk/retrieving-a-class) **SetDNSDomain** consente l'impostazione del dominio DNS.
 
-In questo argomento viene utilizzata la sintassi Managed Object Format (MOF). Per ulteriori informazioni sull'utilizzo di questo metodo, vedere [chiamata a un metodo](/windows/desktop/WmiSdk/calling-a-method).
+Questo argomento usa Managed Object Format (MOF). Per altre informazioni sull'uso di questo metodo, vedere [Chiamata di un metodo](/windows/desktop/WmiSdk/calling-a-method).
 
 ## <a name="syntax"></a>Sintassi
 
@@ -42,10 +42,10 @@ uint32 SetDNSDomain(
 
 <dl> <dt>
 
-*Dnsdomain* \[ in\]
+*DNSDomain* \[ Pollici\]
 </dt> <dd>
 
-Dominio a cui è associato il DNS, rappresentato da un nome di organizzazione seguito da un punto e un'estensione che indica il tipo di organizzazione.
+Dominio a cui è associato il DNS, rappresentato da un nome di organizzazione seguito da un punto e da un'estensione che indica il tipo di organizzazione.
 
 Esempio: "microsoft.com"
 
@@ -53,25 +53,25 @@ Esempio: "microsoft.com"
 
 ## <a name="return-value"></a>Valore restituito
 
-Restituisce un valore pari a 0 (zero) per un completamento corretto quando non è richiesto il riavvio, 1 (uno) per un completamento corretto quando è necessario un riavvio e un numero diverso se si verifica un errore. Per ulteriori informazioni sui codici di errore, vedere [**costanti di errore WMI**](/windows/desktop/WmiSdk/wmi-error-constants) o [**WbemErrorEnum**](/windows/desktop/api/wbemdisp/ne-wbemdisp-wbemerrorenum). Per i valori **HRESULT** generali, vedere [codici di errore di sistema](/windows/desktop/Debug/system-error-codes).
+Restituisce il valore 0 (zero) per un completamento corretto quando non è necessario alcun riavvio, 1 (uno) per un completamento corretto quando è necessario un riavvio e un numero diverso se si verifica un errore. Per altre informazioni sui codici di errore, vedere [**Costanti di errore WMI**](/windows/desktop/WmiSdk/wmi-error-constants) o [**WbemErrorEnum**](/windows/desktop/api/wbemdisp/ne-wbemdisp-wbemerrorenum). Per i valori **HRESULT** generali, vedere [Codici di errore di sistema](/windows/desktop/Debug/system-error-codes).
 
 <dl> <dt>
 
-**Operazione completata, non è necessario riavviare il computer**
+**Completamento riuscito, nessun riavvio necessario**
 </dt> <dd>
 
 0
 
-Operazione completata, non è necessario riavviare il computer.
+Completamento riuscito, nessun riavvio necessario.
 
 </dd> <dt>
 
-**Operazione completata, riavvio richiesto**
+**Completamento riuscito, riavvio necessario**
 </dt> <dd>
 
 1
 
-Operazione completata, è necessario riavviare il computer.
+Completamento riuscito, riavvio necessario.
 
 </dd> <dt>
 
@@ -93,12 +93,12 @@ Errore sconosciuto.
 
 </dd> <dt>
 
-**subnet mask non valido**
+**Non valido subnet mask**
 </dt> <dd>
 
 66
 
-Subnet mask non valido.
+Non è subnet mask.
 
 </dd> <dt>
 
@@ -107,7 +107,7 @@ Subnet mask non valido.
 
 67
 
-Si è verificato un errore durante l'elaborazione di un'istanza di restituita.
+Si è verificato un errore durante l'elaborazione di un'istanza restituita.
 
 </dd> <dt>
 
@@ -120,7 +120,7 @@ Parametro di input non valido.
 
 </dd> <dt>
 
-**Sono stati specificati più di 5 gateway**
+**Più di 5 gateway specificati**
 </dt> <dd>
 
 69
@@ -138,7 +138,7 @@ Indirizzo IP non valido.
 
 </dd> <dt>
 
-**Indirizzo IP gateway non valido**
+**Indirizzo IP del gateway non valido**
 </dt> <dd>
 
 71
@@ -147,12 +147,12 @@ Indirizzo IP del gateway non valido.
 
 </dd> <dt>
 
-**Si è verificato un errore durante l'accesso al registro di sistema per le informazioni richieste**
+**Si è verificato un errore durante l'accesso al Registro di sistema per le informazioni richieste**
 </dt> <dd>
 
 72
 
-Si è verificato un errore durante l'accesso al registro di sistema per le informazioni richieste.
+Si è verificato un errore durante l'accesso al Registro di sistema per le informazioni richieste.
 
 </dd> <dt>
 
@@ -201,12 +201,12 @@ Percorso di sistema non valido.
 
 </dd> <dt>
 
-**Copia del file non riuscita**
+**La copia del file non è riuscita**
 </dt> <dd>
 
 78
 
-Copia del file non riuscita.
+La copia del file non è riuscita.
 
 </dd> <dt>
 
@@ -228,7 +228,7 @@ Impossibile configurare il servizio TCP/IP.
 
 </dd> <dt>
 
-**Non è possibile configurare il servizio DHCP**
+**Impossibile configurare il servizio DHCP**
 </dt> <dd>
 
 81
@@ -237,16 +237,16 @@ Impossibile configurare il servizio DHCP.
 
 </dd> <dt>
 
-**Non è possibile rinnovare il lease DHCP**
+**Impossibile rinnovare il lease DHCP**
 </dt> <dd>
 
 82
 
-Non è possibile rinnovare il lease DHCP.
+Impossibile rinnovare il lease DHCP.
 
 </dd> <dt>
 
-**Non è possibile rilasciare il lease DHCP**
+**Impossibile rilasciare il lease DHCP**
 </dt> <dd>
 
 83
@@ -264,7 +264,7 @@ IP non abilitato sulla scheda.
 
 </dd> <dt>
 
-**IPX non abilitato sull'adapter**
+**IPX non abilitato sulla scheda**
 </dt> <dd>
 
 85
@@ -273,12 +273,12 @@ IPX non abilitato sulla scheda.
 
 </dd> <dt>
 
-**Errore limite numero frame/rete**
+**Errore di limiti del numero di frame/rete**
 </dt> <dd>
 
 86
 
-Errore dei limiti del numero di rete o del frame.
+Errore di limiti del numero di frame o di rete.
 
 </dd> <dt>
 
@@ -309,12 +309,12 @@ Numero di rete duplicato.
 
 </dd> <dt>
 
-**Parametro fuori limite**
+**Parametro fuori dai limiti**
 </dt> <dd>
 
 90
 
-Parametro fuori limite.
+Parametro al di fuori dei limiti.
 
 </dd> <dt>
 
@@ -350,20 +350,20 @@ Esiste già.
 
 94
 
-Il percorso, il file o l'oggetto non è stato trovato.
+Percorso, file o oggetto non trovato.
 
 </dd> <dt>
 
-**Non è possibile inviare una notifica al servizio**
+**Impossibile inviare una notifica al servizio**
 </dt> <dd>
 
 95
 
-Impossibile notificare il servizio.
+Impossibile inviare una notifica al servizio.
 
 </dd> <dt>
 
-**Non è possibile inviare una notifica al servizio DNS**
+**Impossibile inviare una notifica al servizio DNS**
 </dt> <dd>
 
 96
@@ -390,7 +390,7 @@ Non tutti i lease DHCP possono essere rilasciati o rinnovati.
 
 </dd> <dt>
 
-**DHCP non abilitato sull'adapter**
+**DHCP non abilitato sulla scheda**
 </dt> <dd>
 
 100
@@ -408,15 +408,15 @@ DHCP non abilitato sulla scheda.
 
 ## <a name="remarks"></a>Commenti
 
-Si tratta di una chiamata al metodo dipendente dall'istanza che viene applicata a ogni adapter. L'impostazione si applica all'adapter di destinazione.
+Si tratta di una chiamata al metodo dipendente dall'istanza che si applica in base all'adattatore. L'impostazione si applica all'adapter di destinazione.
 
 ## <a name="examples"></a>Esempio
 
-L'esempio di codice di [assegnazione del dominio DNS per una scheda di rete](https://Gallery.TechNet.Microsoft.Com/6044a0a4-d320-4c18-a94b-c125796d219b) in TechNet Gallery USA **SetDNSDomain** per impostare il dominio DNS per una scheda di rete associata a TCP/IP.
+L'esempio di codice [VBScript](https://Gallery.TechNet.Microsoft.Com/6044a0a4-d320-4c18-a94b-c125796d219b) Assign the DNS Domain for a Network Adapter (Assegnare il dominio DNS per una scheda di rete) nella raccolta TechNet usa **SetDNSDomain** per impostare il dominio DNS per una scheda di rete associata a TCP/IP.
 
-L'esempio di codice per la [modifica della configurazione TCP/IP per un computer](https://Gallery.TechNet.Microsoft.Com/3d5ae334-1d75-4cea-8079-78c6bd836faf) VBScript nella raccolta TechNet utilizza **SetDNSDomain** per modificare le impostazioni TCP/IP per una scheda di rete.
+L'esempio di [codice Modify the TCP/IP Configuration for a Computer](https://Gallery.TechNet.Microsoft.Com/3d5ae334-1d75-4cea-8079-78c6bd836faf) VBScript in TechNet Gallery usa **SetDNSDomain** per modificare le impostazioni TCP/IP per una scheda di rete.
 
-L'esempio [Enable DHCP settings on a computer](https://Gallery.TechNet.Microsoft.Com/41e6ab51-78c0-4413-b086-03fde33ea125) VBScript nella raccolta TechNet USA **SetDNSDomain** per configurare tutte le impostazioni in genere necessarie per abilitare DHCP in un computer.
+L'esempio DISE enable [DHCP Impostazioni on a Computer](https://Gallery.TechNet.Microsoft.Com/41e6ab51-78c0-4413-b086-03fde33ea125) VBScript nella raccolta TechNet usa **SetDNSDomain** per configurare tutte le impostazioni generalmente necessarie per abilitare DHCP in un computer.
 
 ## <a name="requirements"></a>Requisiti
 
@@ -427,7 +427,7 @@ L'esempio [Enable DHCP settings on a computer](https://Gallery.TechNet.Microsoft
 | Client minimo supportato<br/> | Windows Vista<br/>                                                                |
 | Server minimo supportato<br/> | Windows Server 2008<br/>                                                          |
 | Spazio dei nomi<br/>                | \\CIMV2 radice<br/>                                                                  |
-| MOF<br/>                      | <dl> <dt>CIMWin32. mof</dt> </dl> |
+| MOF<br/>                      | <dl> <dt>CIMWin32.mof</dt> </dl> |
 | DLL<br/>                      | <dl> <dt>CIMWin32.dll</dt> </dl> |
 
 
@@ -436,16 +436,16 @@ L'esempio [Enable DHCP settings on a computer](https://Gallery.TechNet.Microsoft
 
 <dl> <dt>
 
-[Classi hardware del sistema del computer](computer-system-hardware-classes.md)
+[Classi hardware del sistema computer](computer-system-hardware-classes.md)
 </dt> <dt>
 
-[**\_NetworkAdapterConfiguration Win32**](win32-networkadapterconfiguration.md)
+[**Win32 \_ NetworkAdapterConfiguration**](win32-networkadapterconfiguration.md)
 </dt> <dt>
 
-[Attività WMI: rete](/windows/desktop/WmiSdk/wmi-tasks--networking)
+[Attività WMI: Rete](/windows/desktop/WmiSdk/wmi-tasks--networking)
 </dt> <dt>
 
-[Attività WMI: account e domini](/windows/desktop/WmiSdk/wmi-tasks--accounts-and-domains)
+[Attività WMI: Account e domini](/windows/desktop/WmiSdk/wmi-tasks--accounts-and-domains)
 </dt> <dt>
 
 [Supporto di IPv6 e IPv4 in WMI](/windows/desktop/WmiSdk/ipv6-and-ipv4-support-in-wmi)

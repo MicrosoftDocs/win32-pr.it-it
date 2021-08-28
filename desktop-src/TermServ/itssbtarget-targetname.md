@@ -24,12 +24,12 @@ api_type:
 - COM
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 7da653b581c512e0397bb4c486d7c21d6844d41b
-ms.sourcegitcommit: 4665ebce0c106bdb52eef36e544280b496b6f50b
+ms.openlocfilehash: 971ae66d162464c49d7eb4206f1fbddf206707c2
+ms.sourcegitcommit: 9b5faa61c38b2d0c432b7f2dbee8c127b0e28a7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/26/2021
-ms.locfileid: "122982594"
+ms.lasthandoff: 08/19/2021
+ms.locfileid: "122467868"
 ---
 # <a name="itssbtargettargetname-property"></a>Proprietà ITsSbTarget::TargetName
 
@@ -58,19 +58,14 @@ Variabile **BSTR** che specifica il nome di destinazione.
 
 ## <a name="remarks"></a>Commenti
 
-Questa proprietà era di sola lettura prima di Windows Server 2012.
+Questa proprietà era di sola lettura prima Windows Server 2012.
 
 ## <a name="requirements"></a>Requisiti
 
 
 
 
-| Requisito | Valore |
-|--------|-------|
-| Client minimo supportato<br /> | Nessuno supportato<br /> | 
-| Server minimo supportato<br /> | Windows Server 2012<br /> | 
-| IDL<br /> | <dl><dt>Sbtsv.idl</dt></dl> | 
-| IID<br /> | IID_ITsSbTarget è definito come:<ul><li>16616ECC-272D-411D-B324-126893033856</li><li>e85e10ea-db0b-4752-b456-5fd5840901c0 in Windows Server 2008 R2</li></ul> | 
+| | | Client minimo supportato<br /> | Nessuno supportato<br /> | | Server minimo supportato<br /> | Windows Server 2012<br /> | | IDL<br /> | <dl><dt>Sbtsv.idl</dt></dl> | | IID<br /> | IID_ITsSbTarget è definito come:<ul><li>16616ECC-272D-411D-B324-126893033856</li><li>e85e10ea-db0b-4752-b456-5fd5840901c0 in Windows Server 2008 R2</li></ul> | 
 
 
 

@@ -1,7 +1,7 @@
 ---
-description: La funzione Register Export deve essere implementata in tutte le dll del parser. L'implementazione di Register crea e compila un database delle proprietà per un protocollo. Network Monitor utilizza il database per determinare le proprietà supportate dal protocollo.
+description: La funzione Register export deve essere implementata in tutte le DLL del parser. L'implementazione di Register crea e compila un database delle proprietà per un protocollo. Network Monitor usa il database per determinare le proprietà supportate dal protocollo.
 ms.assetid: b8a2752d-30a6-48f2-90b3-b1430ae983d2
-title: Funzione Register parser callback (Netmon. h)
+title: Funzione di callback Register Parser (Netmon.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -13,16 +13,16 @@ api_type:
 - UserDefined
 api_location:
 - Netmon.h
-ms.openlocfilehash: bc49cc083cf6ba46594473a041d9a1ad138efa22
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 4c24f719018f155fab26df4673b7dc3be18546675532657cb8fb3a0271763af2
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "106310495"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120128921"
 ---
-# <a name="register-parser-callback-function"></a>Funzione di callback Register parser
+# <a name="register-parser-callback-function"></a>Funzione di callback Register Parser
 
-La funzione **Register** Export deve essere implementata in tutte le dll del parser. L'implementazione di **Register** crea e compila un [*database delle proprietà*](p.md) per un protocollo. Network Monitor utilizza il database per determinare le proprietà supportate dal protocollo.
+La **funzione register** export deve essere implementata in tutte le DLL del parser. L'implementazione **di Register** crea e compila un database [*delle proprietà*](p.md) per un protocollo. Network Monitor usa il database per determinare le proprietà supportate dal protocollo.
 
 ## <a name="syntax"></a>Sintassi
 
@@ -39,10 +39,10 @@ VOID Register(
 
 <dl> <dt>
 
-*hProtocol* \[ in\]
+*hProtocol* \[ Pollici\]
 </dt> <dd>
 
-Handle del protocollo fornito da Network Monitor quando si chiama **Register**. L'handle *hProtocol* è necessario quando si chiamano le funzioni di supporto di esportazione.
+Handle del protocollo fornito Network Monitor quando si chiama **Register**. *L'handle hProtocol* è necessario quando si chiamano le funzioni helper di esportazione.
 
 </dd> </dl>
 
@@ -52,22 +52,22 @@ No.
 
 ## <a name="remarks"></a>Osservazioni
 
-Network Monitor inizia a chiamare la funzione **Register** non appena viene caricata un'acquisizione. Network Monitor chiama la funzione **Register** per ogni protocollo che può identificare. La funzione [CreateProtocol](createprotocol.md) passa un puntatore alla funzione **Register** .
+Network Monitor inizia a chiamare la **funzione Register** non appena viene caricata un'acquisizione. Network Monitor chiama la **funzione Register** per ogni protocollo che può identificare. La [funzione CreateProtocol](createprotocol.md) passa un puntatore alla **funzione Register.**
 
-L'implementazione del **Registro** include le chiamate alle funzioni seguenti.
+L'implementazione **di Register** include chiamate alle funzioni seguenti.
 
--   Una chiamata alle funzioni [CreatePropertyDatabase](createpropertydatabase.md) e [AddProperty](/previous-versions/bb251873(v=msdn.10)) per creare un database di tutte le proprietà supportate dal protocollo.
--   Una chiamata alla funzione [CreateHandoffTable](createhandofftable.md) è obbligatoria se il protocollo usa un [*set di continuità*](h.md).
+-   Chiamata alle funzioni [CreatePropertyDatabase](createpropertydatabase.md) e [AddProperty](/previous-versions/bb251873(v=msdn.10)) per creare un database di tutte le proprietà supportate dal protocollo.
+-   Una chiamata alla [funzione CreateHandoffTable](createhandofftable.md) è necessaria se il protocollo usa un [*set handoff*](h.md).
 
-Se la DLL del parser contiene più parser e il parser è in grado di rilevare più di un protocollo, è necessario implementare una funzione **Register** per ogni protocollo.
+Se la DLL del parser contiene più parser e il parser può rilevare più di un protocollo, è necessario implementare una funzione **Register** per ogni protocollo.
 
 
 
 | Per informazioni su                                        | Vedere                                                    |
 |-----------------------------------------------------------|--------------------------------------------------------|
-| Quali sono i parser e come funzionano con Network Monitor. | [Parser](parsers.md)                                 |
-| I punti di ingresso inclusi nella DLL del parser.        | [Architettura DLL parser](parser-dll-architecture.md) |
-| Come implementare il **Registro**  è incluso un esempio.       | [Implementazione del registro](implementing-register.md)     |
+| Che cosa sono i parser e come funzionano con Network Monitor. | [Parser](parsers.md)                                 |
+| Punti di ingresso inclusi nella DLL del parser.        | [Architettura della DLL del parser](parser-dll-architecture.md) |
+| Come implementare **Register include**  un esempio.       | [Implementazione del registro](implementing-register.md)     |
 
 
 
@@ -81,7 +81,7 @@ Se la DLL del parser contiene più parser e il parser è in grado di rilevare pi
 |-------------------------------------|-------------------------------------------------------------------------------------|
 | Client minimo supportato<br/> | Windows 2000 Professional \[solo app desktop\]<br/>                          |
 | Server minimo supportato<br/> | Windows 2000 Server \[solo app desktop\]<br/>                                |
-| Intestazione<br/>                   | <dl> <dt>Netmon. h</dt> </dl> |
+| Intestazione<br/>                   | <dl> <dt>Netmon.h</dt> </dl> |
 
 
 

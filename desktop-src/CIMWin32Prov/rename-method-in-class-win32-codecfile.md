@@ -2,7 +2,7 @@
 description: Rinomina il file di codec specificato nel percorso dell'oggetto.
 ms.assetid: fd6ce02c-d513-4643-ac27-313c32732f1e
 ms.tgt_platform: multiple
-title: Rinominare il metodo della classe Win32_CodecFile
+title: Metodo Rename della classe Win32_CodecFile
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -14,18 +14,18 @@ api_type:
 - COM
 api_location:
 - CIMWin32.dll
-ms.openlocfilehash: a4eb931a0155518ad9644ebb1cce0b604be80602
-ms.sourcegitcommit: c7add10d695482e1ceb72d62b8a4ebd84ea050f7
+ms.openlocfilehash: c1054ffe0c016c5e06159a13cbdf68d5cfa7521e96727867a74d25a635888165
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "103966276"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120077461"
 ---
-# <a name="rename-method-of-the-win32_codecfile-class"></a>Rinominare il metodo della \_ classe Win32 Codecfile
+# <a name="rename-method-of-the-win32_codecfile-class"></a>Metodo Rename della classe CodecFile Win32 \_
 
-Il metodo **Rinomina** [classe WMI](/windows/desktop/WmiSdk/retrieving-a-class) Rinomina il file di codec specificato nel percorso dell'oggetto. Una ridenominazione non è supportata se la destinazione si trova in un'altra unità o se è necessario sovrascrivere un file logico esistente.
+Il **metodo Rinomina** classe [WMI](/windows/desktop/WmiSdk/retrieving-a-class) rinomina il file di codec specificato nel percorso dell'oggetto. La ridenominazione non è supportata se la destinazione si trova in un'altra unità o se è necessario sovrascrivere un file logico esistente.
 
-In questo argomento viene utilizzata la sintassi Managed Object Format (MOF). Per ulteriori informazioni sull'utilizzo di questo metodo, vedere [chiamata a un metodo](/windows/desktop/WmiSdk/calling-a-method).
+Questo argomento usa Managed Object Format (MOF). Per altre informazioni sull'uso di questo metodo, vedere [Chiamata di un metodo](/windows/desktop/WmiSdk/calling-a-method).
 
 ## <a name="syntax"></a>Sintassi
 
@@ -45,7 +45,7 @@ uint32 Rename(
 *FileName* 
 </dt> <dd>
 
-Nome completo del nuovo file (o directory). Esempio: c: \\ temp \\newfile.txt.
+Nuovo nome completo del file (o directory). Esempio: \\ c:temp \\newfile.txt.
 
 </dd> </dl>
 
@@ -65,7 +65,7 @@ La richiesta è stata completata.
 **2**
 </dt> <dd>
 
-Accesso negato.
+L'accesso è stato negato.
 
 </dd> <dt>
 
@@ -128,7 +128,7 @@ Si è verificata una violazione di condivisione.
 **16**
 </dt> <dd>
 
-Il file di avvio specificato non è valido.
+Il file iniziale specificato non è valido.
 
 </dd> <dt>
 
@@ -155,7 +155,7 @@ Un parametro specificato non è valido.
 | Client minimo supportato<br/> | Windows Vista<br/>                                                                |
 | Server minimo supportato<br/> | Windows Server 2008<br/>                                                          |
 | Spazio dei nomi<br/>                | \\CIMV2 radice<br/>                                                                  |
-| MOF<br/>                      | <dl> <dt>CIMWin32. mof</dt> </dl> |
+| MOF<br/>                      | <dl> <dt>CIMWin32.mof</dt> </dl> |
 | DLL<br/>                      | <dl> <dt>CIMWin32.dll</dt> </dl> |
 
 
@@ -167,7 +167,7 @@ Un parametro specificato non è valido.
 [Classi del sistema operativo](/previous-versions//aa392727(v=vs.85))
 </dt> <dt>
 
-[**Codecfile Win32 \_**](win32-codecfile.md)
+[**Win32 \_ CodecFile**](win32-codecfile.md)
 </dt> </dl>
 
  

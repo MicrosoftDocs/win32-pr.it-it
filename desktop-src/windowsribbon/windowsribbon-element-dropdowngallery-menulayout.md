@@ -1,9 +1,9 @@
 ---
-title: Proprietà DropDownGallery. MenuLayout
+title: DropDownGallery.MenuLayout - proprietà
 description: Rappresenta un contenitore per i layout del menu a discesa DropDownGallery.
 ms.assetid: 7251e889-377d-4d7f-b049-bd81a202774d
 keywords:
-- Barra multifunzione di Windows DropDownGallery. MenuLayout
+- Proprietà DropDownGallery.MenuLayout Windows barra multifunzione
 topic_type:
 - apiref
 api_name:
@@ -12,16 +12,16 @@ api_type:
 - NA
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 7d1b6ad3f07f369dfef90b1e6c52c34793e60520
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: 7b3fa4c0e2cca92aa2f95f73e0c817314bb71a8260db21a89cb40ec78fff7765
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "106302374"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119810681"
 ---
-# <a name="dropdowngallerymenulayout-property"></a>Proprietà DropDownGallery. MenuLayout
+# <a name="dropdowngallerymenulayout-property"></a>DropDownGallery.MenuLayout - proprietà
 
-Rappresenta un contenitore per i layout del menu a discesa [**DropDownGallery**](windowsribbon-element-dropdowngallery.md) .
+Rappresenta un contenitore per i layout del menu a discesa [**DropDownGallery.**](windowsribbon-element-dropdowngallery.md)
 
 ## <a name="usage"></a>Utilizzo
 
@@ -60,18 +60,18 @@ Non ci sono attributi.
 
 facoltativo.
 
-Può verificarsi al massimo una volta per ogni elemento [**DropDownGallery**](windowsribbon-element-dropdowngallery.md) .
+Può verificarsi al massimo una volta per [**ogni elemento DropDownGallery.**](windowsribbon-element-dropdowngallery.md)
 
 > [!Note]  
-> È consentito un massimo di un elemento figlio ([**VerticalMenuLayout**](windowsribbon-element-verticalmenulayout.md) o [**FlowMenuLayout**](windowsribbon-element-flowmenulayout.md)).
+> È consentito un massimo di un elemento figlio ([**VerticalMenuLayout**](windowsribbon-element-verticalmenulayout.md) [**o FlowMenuLayout**](windowsribbon-element-flowmenulayout.md)).
 
  
 
 ## <a name="examples"></a>Esempio
 
-Nell'esempio seguente viene illustrato il markup di base per [**DropDownGallery**](windowsribbon-element-dropdowngallery.md).
+Nell'esempio seguente viene illustrato il markup di base per [**l'oggetto DropDownGallery.**](windowsribbon-element-dropdowngallery.md)
 
-Questa sezione di codice mostra la dichiarazione di controllo **DropDownGallery. MenuLayout** .
+Questa sezione di codice illustra la **dichiarazione del controllo DropDownGallery.MenuLayout.**
 
 
 ```XML
@@ -108,8 +108,8 @@ Questa sezione di codice mostra la dichiarazione di controllo **DropDownGallery.
 
 | Requisito | Valore |
 |-------------------------------------|---------------------------------------------------------|
-| Client minimo supportato<br/> | \[Solo app desktop di Windows 7\]<br/>              |
-| Server minimo supportato<br/> | Solo app desktop Windows Server 2008 R2 \[\]<br/> |
+| Client minimo supportato<br/> | Windows 7 \[ app desktop\]<br/>              |
+| Server minimo supportato<br/> | Windows Solo app desktop server 2008 R2 \[\]<br/> |
 
 
 
@@ -117,7 +117,7 @@ Questa sezione di codice mostra la dichiarazione di controllo **DropDownGallery.
 
 <dl> <dt>
 
-[**Controllo raccolta a discesa**](windowsribbon-element-dropdowngallery.md)
+[**Controllo Raccolta a discesa**](windowsribbon-element-dropdowngallery.md)
 </dt> <dt>
 
 [Uso delle raccolte](ribbon-controls-galleries.md)

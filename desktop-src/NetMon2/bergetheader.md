@@ -1,7 +1,7 @@
 ---
-description: La funzione BERGetHeader decodifica un'intestazione Choice.
+description: La funzione BERGetHeader decodifica un'intestazione di scelta.
 ms.assetid: 2574a9b3-c28e-43d1-904f-d45888617584
-title: Funzione BERGetHeader (Netmon. h)
+title: Funzione BERGetHeader (Netmon.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -13,16 +13,16 @@ api_type:
 - DllExport
 api_location:
 - Nmapi.dll
-ms.openlocfilehash: 5e2213b15b6b4d2cbaa15b3b9aa9de028e20a62d
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: d6dfd50856202e78177d2ad259b16638f466d9bca236a691c65802ce2758c948
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "106311641"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119012311"
 ---
-# <a name="bergetheader-function"></a>BERGetHeader (funzione)
+# <a name="bergetheader-function"></a>Funzione BERGetHeader
 
-La funzione **BERGetHeader** decodifica un'intestazione Choice.
+La **funzione BERGetHeader** decodifica un'intestazione di scelta.
 
 ## <a name="syntax"></a>Sintassi
 
@@ -46,7 +46,7 @@ BOOL BERGetHeader(
 *pCurrentPointer* 
 </dt> <dd>
 
-Puntatore all'intestazione Choice.
+Puntatore all'intestazione choice.
 
 </dd> <dt>
 
@@ -67,7 +67,7 @@ Puntatore alla lunghezza dell'intestazione restituita.
 *pDataLength* 
 </dt> <dd>
 
-Puntatore alla lunghezza dei dati restituiti.
+Puntatore alla lunghezza dei dati restituita.
 
 </dd> <dt>
 
@@ -80,9 +80,9 @@ Puntatore al contenuto dell'intestazione.
 
 ## <a name="return-value"></a>Valore restituito
 
-Se la funzione ha esito positivo, ovvero viene trovata un'intestazione Choice BER valida, il valore restituito è **true**.
+Se la funzione ha esito positivo, ovvero viene trovata un'intestazione beR choice valida, il valore restituito è **TRUE.**
 
-Se la funzione ha esito negativo, il valore restituito è **false**.
+Se la funzione ha esito negativo, il valore restituito è **FALSE.**
 
 ## <a name="requirements"></a>Requisiti
 
@@ -92,8 +92,8 @@ Se la funzione ha esito negativo, il valore restituito è **false**.
 |-------------------------------------|---------------------------------------------------------------------------------------|
 | Client minimo supportato<br/> | Windows 2000 Professional \[solo app desktop\]<br/>                            |
 | Server minimo supportato<br/> | Windows 2000 Server \[solo app desktop\]<br/>                                  |
-| Intestazione<br/>                   | <dl> <dt>Netmon. h</dt> </dl>   |
-| Libreria<br/>                  | <dl> <dt>Parser. lib</dt> </dl> |
+| Intestazione<br/>                   | <dl> <dt>Netmon.h</dt> </dl>   |
+| Libreria<br/>                  | <dl> <dt>Parser.lib</dt> </dl> |
 | DLL<br/>                      | <dl> <dt>Nmapi.dll</dt> </dl>  |
 
 
