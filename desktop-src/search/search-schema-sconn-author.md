@@ -1,19 +1,19 @@
 ---
-description: <author>L'elemento facoltativo specifica l'autore di questa libreria. Questo elemento non ha elementi figlio e nessun attributo.
+description: "&lt;L'elemento author &gt; facoltativo specifica l'autore di questa libreria. Questo elemento non ha elementi figlio e nessun attributo."
 ms.assetid: c91042d5-9564-463a-9104-97b927027fc9
 title: Elemento author (schema del connettore di ricerca)
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 3b0a6b0eb8103f1f1c962984be488a162b645a128f0477ab851d2819aacc3e74
-ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
+ms.openlocfilehash: 6f5b99197db6c32be6b6e526a739a5e3fe1f00ef
+ms.sourcegitcommit: 61a4c522182aa1cacbf5669683d9570a3bf043b2
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119885181"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "122887422"
 ---
 # <a name="author-element-search-connector-schema"></a>Elemento author (schema del connettore di ricerca)
 
-<author>L'elemento facoltativo specifica l'autore di questa libreria. Questo elemento non ha elementi figlio e nessun attributo.
+&lt;L'elemento author &gt; facoltativo specifica l'autore di questa libreria. Questo elemento non ha elementi figlio e nessun attributo.
 
 ## <a name="syntax"></a>Sintassi
 

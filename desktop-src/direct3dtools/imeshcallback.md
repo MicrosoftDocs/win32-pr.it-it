@@ -17,12 +17,12 @@ api_location:
 topic_type:
 - APIRef
 - kbSyntax
-ms.openlocfilehash: 2eb80d06fd0a5c4723f3607c3e28ebd9790527a41c4c0ae8b7e36c96ac3aeb2f
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 586d9457595b6bb4df9b89a87bdfb64a2b888c40
+ms.sourcegitcommit: 4e94fc75fad7b2a0f3c92a26f97e89924e59b7a9
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119484911"
+ms.lasthandoff: 08/24/2021
+ms.locfileid: "122786567"
 ---
 # <a name="span-idvspixengineimeshcallbackspanimeshcallback-interface"></a><span id="vspixengine.imeshcallback"></span>Interfaccia IMeshCallback
 
@@ -38,13 +38,13 @@ Callback per restituire un buffer contenente la mesh di una fase della pipeline.
 
 **L'interfaccia IMeshCallback** include questi metodi.
 
-<table><colgroup><col style="width: 50%" /><col style="width: 50%" /></colgroup><thead><tr class="header"><th style="text-align: left;">Metodo</th><th style="text-align: left;">Descrizione</th></tr></thead><tbody><tr class="odd"><td style="text-align: left;"><a href="/windows/desktop/direct3dtools/imeshcallback-resultcallback-dword-byte-arr"><strong>Oggetto ResultCallback</strong></a></td><td style="text-align: left;"><p>Non usato.</p></td></tr></tbody></table>
+<table><colgroup><col  /><col  /></colgroup><thead><tr class="header"><th >Metodo</th><th >Descrizione</th></tr></thead><tbody><tr class="odd"><td ><a href="/windows/desktop/direct3dtools/imeshcallback-resultcallback-dword-byte-arr"><strong>ResultCallback</strong></a></td><td ><p>Non usato.</p></td></tr></tbody></table>
 
  
 
 ## <a name="requirements"></a>Requisiti
 
-<table><colgroup><col style="width: 50%" /><col style="width: 50%" /></colgroup><tbody><tr class="odd"><td><p>Intestazione</p></td><td>Vspixengine.h</td></tr></tbody></table>
+<table><colgroup><col  /><col  /></colgroup><tbody><tr class="odd"><td><p>Intestazione</p></td><td>Vspixengine.h</td></tr></tbody></table>
 
  
 

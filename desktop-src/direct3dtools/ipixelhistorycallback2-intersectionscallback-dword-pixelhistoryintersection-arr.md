@@ -1,10 +1,10 @@
 ---
-description: Callback che notifica all'host le informazioni di intersezione della Cronologia pixel restituite dalla richiesta associata.
+description: Callback che notifica all'host le informazioni sull'intersezione della cronologia pixel restituite dalla richiesta ascaited.
 MS-HAID: vspixengine.IPixelHistoryCallback2\_IntersectionsCallback\_DWORD\_PixelHistoryIntersection\_arr
 MSHAttr:
 - PreferredSiteName:MSDN
 - PreferredLib:/library/windows/desktop
-title: 'Metodo IPixelHistoryCallback2:: IntersectionsCallback'
+title: Metodo IPixelHistoryCallback2::IntersectionsCallback
 ms.topic: reference
 ms.date: 05/31/2018
 ms.assetid: 478B2495-93E4-4BB1-BC86-802D2AFAF97D
@@ -17,16 +17,16 @@ api_location:
 topic_type:
 - APIRef
 - kbSyntax
-ms.openlocfilehash: 30bde17a2c504b2afdaf9c13a7b6d7014590b1dc
-ms.sourcegitcommit: a47bd86f517de76374e4fff33cfeb613eb259a7e
+ms.openlocfilehash: a019a0000e21cc3a6036379b8a6e9908ea52fdbb
+ms.sourcegitcommit: c276a8912787b2cda74dcf54eb96df961bb1188b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/06/2021
-ms.locfileid: "104124344"
+ms.lasthandoff: 08/20/2021
+ms.locfileid: "122624497"
 ---
-# <a name="span-idvspixengineipixelhistorycallback2_intersectionscallback_dword_pixelhistoryintersection_arrspanipixelhistorycallback2intersectionscallback-method"></a><span id="vspixengine.ipixelhistorycallback2_intersectionscallback_dword_pixelhistoryintersection_arr"></span>Metodo IPixelHistoryCallback2:: IntersectionsCallback
+# <a name="span-idvspixengineipixelhistorycallback2_intersectionscallback_dword_pixelhistoryintersection_arrspanipixelhistorycallback2intersectionscallback-method"></a><span id="vspixengine.ipixelhistorycallback2_intersectionscallback_dword_pixelhistoryintersection_arr"></span>Metodo IPixelHistoryCallback2::IntersectionsCallback
 
-Callback che notifica all'host le informazioni di intersezione della Cronologia pixel restituite dalla richiesta associata.
+Callback che notifica all'host le informazioni sull'intersezione della cronologia pixel restituite dalla richiesta ascaited.
 
 ## <a name="syntax"></a>Sintassi
 
@@ -40,19 +40,19 @@ HRESULT IntersectionsCallback(
 
 ## <a name="parameters"></a>Parametri
 
-*conteggio*   
-Numero di intersezioni di Cronologia pixel.
+*Conteggio*   
+Numero di intersezioni della cronologia pixel.
 
-*intersezioni count0 \_*   
-Intersezioni della Cronologia pixel.
+*Intersezioni count0 \_*   
+Intersezioni della cronologia pixel.
 
 ## <a name="return-value"></a>Valore restituito
 
-Se questo metodo ha esito positivo, restituisce **S \_ OK**. In caso contrario, restituisce un codice di errore **HRESULT** .
+Se questo metodo ha esito positivo, restituisce **S \_ OK**. In caso contrario, restituisce un **codice di errore HRESULT.**
 
 ## <a name="requirements"></a>Requisiti
 
-<table><colgroup><col style="width: 50%" /><col style="width: 50%" /></colgroup><tbody><tr class="odd"><td><p>Intestazione</p></td><td>Vspixengine. h</td></tr></tbody></table>
+<table><colgroup><col  /><col  /></colgroup><tbody><tr class="odd"><td><p>Intestazione</p></td><td>Vspixengine.h</td></tr></tbody></table>
 
 ## <a name="span-idsee_alsospansee-also"></a><span id="see_also"></span>Vedere anche
 

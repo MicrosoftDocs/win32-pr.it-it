@@ -4,12 +4,12 @@ ms.assetid: df24a132-665e-4eb7-992b-d7a6144257f5
 title: D3DXFX
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: ad9077c8c7e3da479dd8963484bc289b84093ac0
-ms.sourcegitcommit: b6fe9acffad983c14864b8fe0296f6025cb1f961
+ms.openlocfilehash: 6858f659b1561a526a284b3ea2dca0e1d9a11a31
+ms.sourcegitcommit: c276a8912787b2cda74dcf54eb96df961bb1188b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/26/2021
-ms.locfileid: "107995078"
+ms.lasthandoff: 08/20/2021
+ms.locfileid: "122624087"
 ---
 # <a name="d3dxfx"></a>D3DXFX
 
@@ -21,8 +21,8 @@ Le costanti nella tabella seguente sono definite in d3dx9effect.h.
 
 <table>
 <colgroup>
-<col style="width: 50%" />
-<col style="width: 50%" />
+<col  />
+<col  />
 </colgroup>
 <tbody>
 <tr class="odd">
@@ -31,15 +31,15 @@ Le costanti nella tabella seguente sono definite in d3dx9effect.h.
 </tr>
 <tr class="even">
 <td>D3DXFX_DONOTSAVESTATE</td>
-<td>Non viene salvato alcuno stato quando si chiama <a href="id3dxeffect--begin.md"><strong>Begin</strong></a> o restored quando si chiama <a href="id3dxeffect--end.md"><strong>End.</strong></a></td>
+<td>Non viene salvato alcuno stato quando si <a href="id3dxeffect--begin.md"><strong>chiama Begin</strong></a> o ripristinato quando si chiama <a href="id3dxeffect--end.md"><strong>End</strong></a>.</td>
 </tr>
 <tr class="odd">
 <td>D3DXFX_DONOTSAVESAMPLERSTATE</td>
-<td>Un blocco di stato salva lo stato quando si chiama <a href="id3dxeffect--begin.md"><strong>Begin</strong></a> e ripristina lo stato quando si chiama <a href="id3dxeffect--end.md"><strong>End.</strong></a></td>
+<td>Un blocco di stato salva lo stato quando si chiama <a href="id3dxeffect--begin.md"><strong>Begin</strong></a> e ripristina lo stato quando si chiama <a href="id3dxeffect--end.md"><strong>End</strong></a>.</td>
 </tr>
 <tr class="even">
 <td>D3DXFX_DONOTSAVESHADERSTATE</td>
-<td>Un blocco di stato salva lo stato (ad eccezione degli shader e delle costanti shader) quando chiama <a href="id3dxeffect--begin.md"><strong>Begin</strong></a> e ripristina lo stato quando si chiama <a href="id3dxeffect--end.md"><strong>End.</strong></a></td>
+<td>Un blocco di stato salva lo stato (ad eccezione di shader e costanti shader) quando si chiama <a href="id3dxeffect--begin.md"><strong>Begin</strong></a> e ripristina lo stato quando si chiama <a href="id3dxeffect--end.md"><strong>End</strong></a>.</td>
 </tr>
 <tr class="odd">
 <td>Flag di creazione degli effetti</td>
@@ -47,14 +47,14 @@ Le costanti nella tabella seguente sono definite in d3dx9effect.h.
 </tr>
 <tr class="even">
 <td>D3DXFX_NOT_CLONEABLE</td>
-<td>L'effetto non sarà clonabile e non conterrà dati binari dello shader. <a href="id3dxbaseeffect--getpassdesc.md"><strong>GetPassDesc non</strong></a> restituirà puntatori a funzione shader. L'impostazione di questo flag riduce l'utilizzo della memoria degli effetti di circa il 50% perché elimina la necessità che il sistema di effetti manteni una copia degli shader in memoria. Questo flag viene usato da <a href="d3dxcreateeffect.md"><strong>D3DXCreateEffect</strong></a>, <a href="d3dxcreateeffectfromfile.md"><strong>D3DXCreateEffectFromFile</strong></a>e <a href="d3dxcreateeffectfromresource.md"><strong>D3DXCreateEffectFromResource</strong></a>.</td>
+<td>L'effetto non sarà clonabile e non conterrà dati binari dello shader. <a href="id3dxbaseeffect--getpassdesc.md"><strong>GetPassDesc</strong></a> non restituirà puntatori a funzione shader. L'impostazione di questo flag riduce l'utilizzo della memoria degli effetti di circa il 50% perché elimina la necessità che il sistema degli effetti manteni una copia degli shader in memoria. Questo flag viene usato da <a href="d3dxcreateeffect.md"><strong>D3DXCreateEffect</strong></a>, <a href="d3dxcreateeffectfromfile.md"><strong>D3DXCreateEffectFromFile</strong></a>e <a href="d3dxcreateeffectfromresource.md"><strong>D3DXCreateEffectFromResource</strong></a>.</td>
 </tr>
 <tr class="odd">
 <td>D3DXFX_LARGEADDRESSAWARE</td>
 <td>Abilita l'allocazione di una risorsa effetto nello spazio degli indirizzi uppder di un computer. Una limitazione importante è che non è possibile usare stringhe e gestire in modo intercambiabile. Ad esempio, gli elementi seguenti non funzionano più. <span data-codelanguage=""></span>
 <table>
 <colgroup>
-<col style="width: 100%" />
+<col  />
 </colgroup>
 <tbody>
 <tr class="odd">

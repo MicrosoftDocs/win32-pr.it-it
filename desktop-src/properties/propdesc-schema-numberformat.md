@@ -1,21 +1,21 @@
 ---
-description: 'Specifica il modo in cui IPropertyDescription:: FormatForDisplay deve formattare il valore della proprietà come stringa. Questa operazione è applicabile solo se <displayInfo displayType=&\#0034;Number&\#0034;> .'
+description: Specifica il modo in cui IPropertyDescription::FormatForDisplay deve formattare il valore della proprietà come stringa. Questa opzione è applicabile solo se <displayInfo displayType=&\#0034;Number&\#0034;> .
 ms.assetid: 9e8cfe5c-e17a-40d6-958f-a1bd1130c699
 title: numberFormat
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 6750a9fb4dcf6a7a56c350fccf80241644b956da
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 6601e6647d8fa1ac8b8cb262d47192810583c93f
+ms.sourcegitcommit: c276a8912787b2cda74dcf54eb96df961bb1188b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "106310120"
+ms.lasthandoff: 08/20/2021
+ms.locfileid: "122622687"
 ---
 # <a name="numberformat"></a>numberFormat
 
-Specifica il modo in cui [**IPropertyDescription:: FormatForDisplay**](/windows/win32/api/propsys/nf-propsys-ipropertydescription-formatfordisplay) deve formattare il valore della proprietà come stringa. Questa operazione è applicabile solo se <displayInfo displayType="Number"> . Deve essere presente un solo elemento [NumberFormat]() per ogni elemento [displayInfo](./propdesc-schema-displayinfo.md) .
+Specifica il modo in [**cui IPropertyDescription::FormatForDisplay deve**](/windows/win32/api/propsys/nf-propsys-ipropertydescription-formatfordisplay) formattare il valore della proprietà come stringa. Questa opzione è applicabile solo se <displayInfo displayType="Number"> . Deve essere presente un solo [elemento numberFormat]() per ogni [elemento displayInfo.](./propdesc-schema-displayinfo.md)
 
-Se sono presenti più elementi, viene usato l'ultimo. Se non viene fornito alcun elemento [NumberFormat]() , le impostazioni predefinite degli attributi vengono applicate alla descrizione della proprietà.
+Se sono presenti più elementi, viene usato l'ultimo. Se non [viene specificato alcun elemento numberFormat,]() le impostazioni predefinite dell'attributo vengono applicate alla descrizione della proprietà.
 
 ## <a name="syntax"></a>Sintassi
 
@@ -61,7 +61,7 @@ Se sono presenti più elementi, viene usato l'ultimo. Se non viene fornito alcun
 
 | Elemento padre                                   | Elementi figlio |
 |--------------------------------------------------|----------------|
-| [displayInfo](./propdesc-schema-displayinfo.md) | nessuno           |
+| [displayInfo](./propdesc-schema-displayinfo.md) | Nessuno           |
 
 
 
@@ -73,8 +73,8 @@ Se sono presenti più elementi, viene usato l'ultimo. Se non viene fornito alcun
 
 <table>
 <colgroup>
-<col style="width: 50%" />
-<col style="width: 50%" />
+<col  />
+<col  />
 </colgroup>
 <thead>
 <tr class="header">
@@ -84,8 +84,8 @@ Se sono presenti più elementi, viene usato l'ultimo. Se non viene fornito alcun
 </thead>
 <tbody>
 <tr class="odd">
-<td>formato</td>
-<td>Pubblica. facoltativo. Il valore predefinito è &quot; Generale &quot; . Specifica il formato di visualizzazione. I valori validi sono i seguenti. 
+<td>formatAs</td>
+<td>Pubblica. facoltativo. Il valore predefinito è &quot; &quot; Generale. Specifica il formato di visualizzazione. I valori validi sono i seguenti. 
 <table>
 <thead>
 <tr class="header">
@@ -104,11 +104,11 @@ Se sono presenti più elementi, viene usato l'ultimo. Se non viene fornito alcun
 </tr>
 <tr class="odd">
 <td>ByteSize</td>
-<td>Formatta il valore come byte, &quot; KB &quot; , &quot; MB &quot; o GB a &quot; seconda dei &quot; casi. Richiede che la proprietà sia UInt64.</td>
+<td>Formatta il valore come byte, &quot; &quot; &quot; KB, MB &quot; o GB in base alle &quot; &quot; esigenze. Richiede che la proprietà sia UInt64.</td>
 </tr>
 <tr class="even">
 <td>KBSize</td>
-<td>Formatta il valore come &quot; KB &quot; , indipendentemente dal valore. Richiede che la proprietà sia UInt64.</td>
+<td>Formatta il valore come &quot; &quot; KB, indipendentemente dal valore. Richiede che la proprietà sia UInt64.</td>
 </tr>
 <tr class="odd">
 <td>SampleSize</td>
@@ -116,27 +116,27 @@ Se sono presenti più elementi, viene usato l'ultimo. Se non viene fornito alcun
 </tr>
 <tr class="even">
 <td>Velocità in bit</td>
-<td>Formatta il valore in &quot; Kbps &quot; . Richiede che la proprietà sia UInt32. Il valore deve essere archiviato in &quot; unità bits al secondo &quot; .</td>
+<td>Formatta il valore in &quot; &quot; Kbps. Richiede che la proprietà sia UInt32. Il valore deve essere archiviato in &quot; unità bit al &quot; secondo.</td>
 </tr>
 <tr class="odd">
 <td>SampleRate</td>
-<td>Formatta il valore in &quot; kHz &quot; . Richiede che la proprietà sia UInt32. Il valore deve essere archiviato in &quot; &quot; unità Hertz.</td>
+<td>Formatta il valore in &quot; &quot; KHz. Richiede che la proprietà sia UInt32. Il valore deve essere archiviato in &quot; unità &quot; Hertz.</td>
 </tr>
 <tr class="even">
 <td>FrameRate</td>
-<td>Formatta il valore in frame al secondo. Richiede che la proprietà sia UInt32. Il valore deve essere archiviato in &quot; unità con frame kilo al secondo &quot; .</td>
+<td>Formatta il valore in fotogrammi al secondo. Richiede che la proprietà sia UInt32. Il valore deve essere archiviato in &quot; unità kilo-frames-al &quot; secondo.</td>
 </tr>
 <tr class="odd">
 <td>Pixel</td>
-<td>Formatta il valore in unità pixel. Richiede che la proprietà sia UInt32.</td>
+<td>Formatta il valore in unità di pixel. Richiede che la proprietà sia UInt32.</td>
 </tr>
 <tr class="even">
 <td>DPI</td>
 <td>Formatta il valore in punti per pollice. Richiede che la proprietà sia UInt32.</td>
 </tr>
 <tr class="odd">
-<td>Duration</td>
-<td>Formatta il valore come Duration. Usare <formatDurationAs> per specificare il formato della durata. Richiede che la proprietà sia UInt64.</td>
+<td>Durata</td>
+<td>Formatta il valore come durata. Usare <formatDurationAs> per specificare il formato della durata. Richiede che la proprietà sia UInt64.</td>
 </tr>
 </tbody>
 </table>
@@ -145,7 +145,7 @@ Se sono presenti più elementi, viene usato l'ultimo. Se non viene fornito alcun
 </tr>
 <tr class="even">
 <td>formatDurationAs</td>
-<td>Pubblica. facoltativo. Il valore predefinito è &quot; hh: mm: SS &quot; . Si applica solo se <em>formats &quot; = &quot; Duration</em>. Richiede che la proprietà sia UInt64. I valori validi sono i seguenti. 
+<td>Pubblica. facoltativo. Il valore predefinito &quot; è hh:mm:ss &quot; . Si applica solo se <em>formatAs= &quot; Duration &quot; </em>. Richiede che la proprietà sia UInt64. I valori validi sono i seguenti. 
 <table>
 <thead>
 <tr class="header">
@@ -163,7 +163,7 @@ Se sono presenti più elementi, viene usato l'ultimo. Se non viene fornito alcun
 <td>Valore predefinito. Formatta il valore in ore, minuti e secondi.</td>
 </tr>
 <tr class="odd">
-<td>HH: mm: SS. fff</td>
+<td>hh:mm:ss.fff</td>
 <td>Formatta il valore in ore, minuti, secondi e millisecondi.</td>
 </tr>
 </tbody>

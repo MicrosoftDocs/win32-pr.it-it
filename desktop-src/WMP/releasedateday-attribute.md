@@ -1,6 +1,6 @@
 ---
 title: Attributo ReleaseDateDay
-description: L'attributo ReleaseDateDay è la parte relativa al giorno della data della versione originale dell'elemento.
+description: L'attributo ReleaseDateDay è la parte del giorno della data della versione originale dell'elemento.
 ms.assetid: 5a38941f-9366-4995-9919-5f0025f0d778
 keywords:
 - Attributo ReleaseDateDay Windows Media Player
@@ -12,16 +12,16 @@ api_type:
 - NA
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 5d3ced8e5cb2416c08aadfc2fdac3cd6f99fa481
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: df82859bc5f7154294c188025efb1c8a143c4120d62c3d4e43c68f54fa2bb6b8
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "106332512"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120123241"
 ---
 # <a name="releasedateday-attribute"></a>Attributo ReleaseDateDay
 
-L'attributo **ReleaseDateDay** è la parte relativa al giorno della data della versione originale dell'elemento.
+**L'attributo ReleaseDateDay** è la parte del giorno della data della versione originale dell'elemento.
 
 ## <a name="applies-to"></a>Si applica a
 
@@ -33,7 +33,7 @@ L'attributo **ReleaseDateDay** è la parte relativa al giorno della data della v
 
 Questo attributo viene archiviato solo nel database di libreria (o nella cache).
 
-Per determinare se è possibile modificare il valore di questo attributo, usare il metodo [Media. isReadOnlyItem](media-isreadonlyitem.md) .
+Per determinare se è possibile modificare il valore di questo attributo, usare il [metodo Media.isReadOnlyItem.](media-isreadonlyitem.md)
 
 ## <a name="requirements"></a>Requisiti
 
@@ -49,7 +49,7 @@ Per determinare se è possibile modificare il valore di questo attributo, usare 
 
 <dl> <dt>
 
-[**Riferimento agli attributi**](attribute-reference.md)
+[**Riferimento all'attributo**](attribute-reference.md)
 </dt> </dl>
 
  

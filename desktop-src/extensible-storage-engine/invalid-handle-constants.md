@@ -1,5 +1,5 @@
 ---
-description: 'Altre informazioni su: costanti handle non valide'
+description: 'Altre informazioni su: Costanti handle non valide'
 title: Costanti handle non valide
 TOCTitle: Invalid Handle Constants
 ms:assetid: 594d7804-725f-4f72-b5f0-56f099c1c17b
@@ -15,12 +15,12 @@ api_type:
 - COM
 api_location: ''
 ROBOTS: INDEX,FOLLOW
-ms.openlocfilehash: f5614b36acfca8b5be4c13849d459d25f984336a
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 28a52b2fc7a51572cc7bb78ad7631df41438310a
+ms.sourcegitcommit: 9b5faa61c38b2d0c432b7f2dbee8c127b0e28a7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "104058160"
+ms.lasthandoff: 08/19/2021
+ms.locfileid: "122473277"
 ---
 # <a name="invalid-handle-constants"></a>Costanti handle non valide
 
@@ -31,73 +31,21 @@ _**Si applica a:** Windows | Windows Server_
 
 Le costanti seguenti indicano handle non validi per diversi aspetti di ESE.
 
-<table>
-<colgroup>
-<col style="width: 50%" />
-<col style="width: 50%" />
-</colgroup>
-<thead>
-<tr class="header">
-<th><p>Costante/valore</p></th>
-<th><p>Descrizione</p></th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td><p>JET_instanceNil<br />
-(~ (JET_INSTANCE) 0)</p></td>
-<td><p>Handle non valido per un'istanza di database.<br />
-<strong>Windows XP:</strong> Introdotta in Windows XP.</p></td>
-</tr>
-<tr class="even">
-<td><p>JET_sesidNil<br />
-(~ (JET_SESID) 0)</p></td>
-<td><p>Handle non valido per un ID di sessione.</p></td>
-</tr>
-<tr class="odd">
-<td><p>JET_tableidNil<br />
-(~ (JET_TABLEID) 0)</p></td>
-<td><p>Handle non valido per un ID tabella.</p></td>
-</tr>
-<tr class="even">
-<td><p>JET_bitNil<br />
-((JET_GRBIT) 0)</p></td>
-<td><p>Handle non valido per un gruppo di bit.</p></td>
-</tr>
-<tr class="odd">
-<td><p>JET_LSNil<br />
-(~ (JET_LS) 0)</p></td>
-<td><p>Handle non valido per l'archiviazione locale.</p></td>
-</tr>
-<tr class="even">
-<td><p>JET_dbidNil<br />
-((JET_DBID) 0xFFFFFFFF)</p></td>
-<td><p>Handle non valido per l'ID del database.</p></td>
-</tr>
-</tbody>
-</table>
+
+| <p>Costante/valore</p> | <p>Descrizione</p> | 
+|-----------------------|--------------------|
+| <p>JET_instanceNil<br />(~(JET_INSTANCE)0)</p> | <p>Handle non valido per un'istanza di database.<br /><strong>Windows XP:</strong> Introdotto in Windows XP.</p> | 
+| <p>JET_sesidNil<br />(~(JET_SESID)0)</p> | <p>Handle non valido per un ID sessione.</p> | 
+| <p>JET_tableidNil<br />(~(JET_TABLEID)0)</p> | <p>Handle non valido per un ID tabella.</p> | 
+| <p>JET_bitNil<br />((JET_GRBIT)0)</p> | <p>Handle non valido per un gruppo di bit.</p> | 
+| <p>JET_LSNil<br />(~(JET_LS)0)</p> | <p>Handle non valido per l'Archiviazione.</p> | 
+| <p>JET_dbidNil<br />((JET_DBID) 0xFFFFFFFF)</p> | <p>Handle non valido per l'ID database.</p> | 
+
 
 
 ### <a name="requirements"></a>Requisiti
 
-<table>
-<colgroup>
-<col style="width: 50%" />
-<col style="width: 50%" />
-</colgroup>
-<tbody>
-<tr class="odd">
-<td><p><strong>Client</strong></p></td>
-<td><p>Richiede Windows Vista, Windows XP o Windows 2000 Professional.</p></td>
-</tr>
-<tr class="even">
-<td><p><strong>Server</strong></p></td>
-<td><p>Richiede Windows Server 2008, Windows Server 2003 o Windows 2000 Server.</p></td>
-</tr>
-<tr class="odd">
-<td><p><strong>Intestazione</strong></p></td>
-<td><p>Dichiarata in esent. h.</p></td>
-</tr>
-</tbody>
-</table>
+
+| | | <p><strong>Client</strong></p> | <p>Richiede Windows Vista, Windows XP o Windows 2000 Professional.</p> | | <p><strong>Server</strong></p> | <p>Richiede Windows Server 2008, Windows Server 2003 o Windows 2000 Server.</p> | | <p><strong>Intestazione</strong></p> | <p>Dichiarato in Esent.h.</p> | 
+
 

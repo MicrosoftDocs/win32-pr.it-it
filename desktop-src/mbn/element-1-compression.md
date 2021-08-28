@@ -16,18 +16,18 @@ api_location: ''
 topic_type:
 - APIRef
 - kbSyntax
-ms.openlocfilehash: c3be80fd71504f068da3ab8d40974b6ee397074e1b476e21c1f5f6901235671a
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 7d25f2b1946e55e8a5768c0f599330d26ad5cc6c
+ms.sourcegitcommit: 9b5faa61c38b2d0c432b7f2dbee8c127b0e28a7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119035929"
+ms.lasthandoff: 08/19/2021
+ms.locfileid: "122480007"
 ---
 # <a name="span-idwwan_profile_v4element_1_compressionspanmodemdmconfigprofilecompression-v4"></a><span id="WWAN_profile_v4.element_1_Compression"></span>ModemDMConfigProfile \/ ... \/ Compressione (v4)
 
-Specifica se la compressione verrà utilizzata nel collegamento dati per l'intestazione e il trasferimento dei dati.
+Specifica se verrà utilizzata la compressione nel collegamento dati per l'intestazione e il trasferimento dei dati.
 
-Per altre informazioni, vedere la documentazione relativa all'elemento [**Compression**](./schema-compression-contexttype-element.md) v1.
+Per altre informazioni, vedere la documentazione per l'elemento [**Compression**](./schema-compression-contexttype-element.md) v1.
 
 ## <a name="element-hierarchy"></a>Gerarchia degli elementi
 
@@ -61,41 +61,19 @@ Nessuno.
 
 ### <a name="span-idparent_elementsspanspan-idparent_elementsspanparent-elements"></a><span id="parent_elements"></span><span id="PARENT_ELEMENTS"></span>Elementi padre
 
-<table>
-<colgroup>
-<col style="width: 50%" />
-<col style="width: 50%" />
-</colgroup>
-<thead>
-<tr class="header">
-<th>Elemento padre</th>
-<th>Descrizione</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td><a href="element-1-context.md">Contesto</a></td>
-<td><p>Specifica i parametri necessari per stabilire una connessione dati.</p></td>
-</tr>
-</tbody>
-</table>
+
+| Elemento padre | Descrizione | 
+|----------------|-------------|
+| <a href="element-1-context.md">Contesto</a> | <p>Specifica i parametri necessari per stabilire una connessione dati.</p> | 
+
 
  
 
 ## <a name="requirements"></a>Requisiti
 
-<table>
-<colgroup>
-<col style="width: 50%" />
-<col style="width: 50%" />
-</colgroup>
-<tbody>
-<tr class="odd">
-<td><p>Spazio dei nomi</p></td>
-<td><p>https://www.microsoft.com/networking/WWAN/profile/v4</p></td>
-</tr>
-</tbody>
-</table>
+
+| | | <p>Spazio dei nomi</p> | <p>https://www.microsoft.com/networking/WWAN/profile/v4</p> | 
+
 
  
 

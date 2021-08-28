@@ -1,21 +1,21 @@
 ---
-description: Nell'esempio seguente viene riavviato il sistema locale utilizzando la funzione InitiateSystemShutdown.
+description: L'esempio seguente riavvia il sistema locale usando la funzione InitiateSystemShutdown.
 ms.assetid: 928c2d48-daa5-4c27-816b-766adedba7eb
-title: Visualizzazione della finestra di dialogo Shutdown
+title: Visualizzazione della finestra di dialogo Arresta
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: eedfee9e96fa1e6183cbe1d9322a603b65ae4b86
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: dfae7475d1a0d861c06bf83dfcab95e0c939b44f1837a543584642f15ac43bb3
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "106311918"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120100621"
 ---
-# <a name="displaying-the-shutdown-dialog-box"></a>Visualizzazione della finestra di dialogo Shutdown
+# <a name="displaying-the-shutdown-dialog-box"></a>Visualizzazione della finestra di dialogo Arresta
 
-Nell'esempio seguente viene riavviato il sistema locale utilizzando la funzione [**InitiateSystemShutdown**](/windows/desktop/api/Winreg/nf-winreg-initiatesystemshutdowna) . Il sistema Visualizza una finestra di dialogo con un messaggio personalizzato e un messaggio all'utente per chiudere le applicazioni entro l'intervallo di timeout specificato (30 secondi). Una volta trascorso l'intervallo di timeout, il sistema viene riavviato.
+L'esempio seguente riavvia il sistema locale usando la [**funzione InitiateSystemShutdown.**](/windows/desktop/api/Winreg/nf-winreg-initiatesystemshutdowna) Il sistema visualizza una finestra di dialogo con un messaggio personalizzato e un messaggio all'utente per chiudere le applicazioni entro l'intervallo di timeout specificato (30 secondi). Al termine dell'intervallo di timeout, il sistema viene riavviato.
 
-\_ \_ Prima di chiamare [**InitiateSystemShutdown**](/windows/desktop/api/Winreg/nf-winreg-initiatesystemshutdowna), l'applicazione deve abilitare il privilegio di arresto del nome se. Per ulteriori informazioni, vedere [privilegi](../secauthz/privileges.md).
+L'applicazione deve abilitare il edizione Standard \_ SHUTDOWN NAME prima di chiamare \_ [**InitiateSystemShutdown**](/windows/desktop/api/Winreg/nf-winreg-initiatesystemshutdowna). Per altre informazioni, vedere [Privilegi](../secauthz/privileges.md).
 
 
 ```C++
@@ -79,7 +79,7 @@ BOOL MySystemShutdown( LPTSTR lpMsg )
 
 
 
-Se la funzione [**AbortSystemShutdown**](/windows/desktop/api/Winreg/nf-winreg-abortsystemshutdowna) viene eseguita nel periodo di timeout specificato da [**InitiateSystemShutdown**](/windows/desktop/api/Winreg/nf-winreg-initiatesystemshutdowna), il sistema non viene arrestato. Se, ad esempio, PreventSystemShutdown viene chiamato dopo MySystemShutdown, il sistema chiude la finestra di dialogo e non riavvia il sistema.
+Se la [**funzione AbortSystemShutdown**](/windows/desktop/api/Winreg/nf-winreg-abortsystemshutdowna) viene eseguita nel periodo di timeout specificato da [**InitiateSystemShutdown,**](/windows/desktop/api/Winreg/nf-winreg-initiatesystemshutdowna)il sistema non viene arrestato. Ad esempio, se PreventSystemShutdown viene chiamato dopo MySystemShutdown, il sistema chiude la finestra di dialogo e non riavvia il sistema.
 
 
 ```C++

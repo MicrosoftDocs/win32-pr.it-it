@@ -17,12 +17,12 @@ api_location:
 topic_type:
 - APIRef
 - kbSyntax
-ms.openlocfilehash: 396b82b9bfc767fc73615a59a4d1e8577c5afb14a7a95f25298e33465174306d
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: ee77cc9c21185bc296fe370f3c353e1540c66db1
+ms.sourcegitcommit: c276a8912787b2cda74dcf54eb96df961bb1188b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "117722209"
+ms.lasthandoff: 08/20/2021
+ms.locfileid: "122621957"
 ---
 # <a name="span-idvspixengineigenericbufferdatacallbackspanigenericbufferdatacallback-interface"></a><span id="vspixengine.igenericbufferdatacallback"></span>Interfaccia IGenericBufferDataCallback
 
@@ -36,15 +36,15 @@ Callback per restituire il contenuto di un oggetto in formato XML.
 
 ### <a name="span-idmethodsspanmethods"></a><span id="methods"></span>Metodi
 
-**L'interfaccia IGenericBufferDataCallback** include questi metodi.
+Questi metodi sono disponibili **nell'interfaccia IGenericBufferDataCallback.**
 
-<table><colgroup><col style="width: 50%" /><col style="width: 50%" /></colgroup><thead><tr class="header"><th style="text-align: left;">Metodo</th><th style="text-align: left;">Descrizione</th></tr></thead><tbody><tr class="odd"><td style="text-align: left;"><a href="/windows/desktop/direct3dtools/igenericbufferdatacallback-resultcallback-dword-byte-arr-bstr"><strong>Oggetto ResultCallback</strong></a></td><td style="text-align: left;"><p>Callback che notifica all'host le informazioni generiche sul buffer restituite dalla richiesta ascaited.</p></td></tr></tbody></table>
+<table><colgroup><col  /><col  /></colgroup><thead><tr class="header"><th style="text-align: left;">Metodo</th><th style="text-align: left;">Descrizione</th></tr></thead><tbody><tr class="odd"><td style="text-align: left;"><a href="/windows/desktop/direct3dtools/igenericbufferdatacallback-resultcallback-dword-byte-arr-bstr"><strong>ResultCallback</strong></a></td><td style="text-align: left;"><p>Callback che notifica all'host le informazioni generiche sul buffer restituite dalla richiesta assocaited.</p></td></tr></tbody></table>
 
  
 
 ## <a name="requirements"></a>Requisiti
 
-<table><colgroup><col style="width: 50%" /><col style="width: 50%" /></colgroup><tbody><tr class="odd"><td><p>Intestazione</p></td><td>Vspixengine.h</td></tr></tbody></table>
+<table><colgroup><col  /><col  /></colgroup><tbody><tr class="odd"><td><p>Intestazione</p></td><td>Vspixengine.h</td></tr></tbody></table>
 
  
 

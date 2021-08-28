@@ -4,12 +4,12 @@ description: In questo argomento viene illustrato come inizializzare un disposit
 ms.assetid: 02a20ada-b3aa-435e-8d66-117a19222f9f
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 3d6e223a283f45052b4e0a5bc450d4d6e036dee4d714aa3716e4965cec48f800
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 546bee6631816beb699f282a3b4f46bbbc142afc
+ms.sourcegitcommit: 4e94fc75fad7b2a0f3c92a26f97e89924e59b7a9
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "117913432"
+ms.lasthandoff: 08/24/2021
+ms.locfileid: "122786767"
 ---
 # <a name="how-to-create-a-device-and-immediate-context"></a>Procedura: Creare un dispositivo e un contesto immediato
 
@@ -17,9 +17,9 @@ In questo argomento viene illustrato come inizializzare un [dispositivo](overvie
 
 **Per creare un dispositivo e un contesto immediato**
 
-Compilare la [**struttura \_ \_ \_ DESC DXGI SWAP CHAIN**](/windows/desktop/api/dxgi/ns-dxgi-dxgi_swap_chain_desc) con informazioni sui formati e le dimensioni del buffer. Per altre informazioni, vedere Creazione di una catena di scambio.
+Compilare la [**struttura DXGI \_ SWAP CHAIN \_ \_ DESC**](/windows/desktop/api/dxgi/ns-dxgi-dxgi_swap_chain_desc) con informazioni sui formati e le dimensioni del buffer. Per altre informazioni, vedere Creazione di una catena di scambio.
 
-L'esempio di codice seguente illustra come compilare la struttura [**DXGI \_ SWAP \_ CHAIN \_ DESC.**](/windows/desktop/api/dxgi/ns-dxgi-dxgi_swap_chain_desc)
+L'esempio di codice seguente illustra come compilare la [**struttura \_ \_ \_ DESC DXGI SWAP CHAIN.**](/windows/desktop/api/dxgi/ns-dxgi-dxgi_swap_chain_desc)
 
 
 ```
@@ -40,7 +40,7 @@ sd.Windowed = TRUE;
 
 
 
-Usando la struttura [**\_ \_ \_ DESC DXGI SWAP CHAIN**](/windows/desktop/api/dxgi/ns-dxgi-dxgi_swap_chain_desc) del passaggio [**1, chiamare D3D11CreateDeviceAndSwapChain**](/windows/desktop/api/D3D11/nf-d3d11-d3d11createdeviceandswapchain) per inizializzare il dispositivo e la catena di scambio contemporaneamente.
+Usando la [**struttura DXGI \_ SWAP CHAIN \_ \_ DESC**](/windows/desktop/api/dxgi/ns-dxgi-dxgi_swap_chain_desc) del primo passaggio, chiamare [**D3D11CreateDeviceAndSwapChain**](/windows/desktop/api/D3D11/nf-d3d11-d3d11createdeviceandswapchain) per inizializzare il dispositivo e la catena di scambio contemporaneamente.
 
 
 ```
@@ -68,13 +68,13 @@ if( FAILED (hr = D3D11CreateDeviceAndSwapChain( NULL,
 
 
 > [!Note]  
-> Se si richiede un dispositivo [**D3D \_ FEATURE \_ LEVEL \_ 11 \_ 1**](/windows/desktop/api/D3DCommon/ne-d3dcommon-d3d_feature_level) in un computer con solo il runtime Direct3D 11.0, [**D3D11CreateDeviceAndSwapChain**](/windows/desktop/api/D3D11/nf-d3d11-d3d11createdeviceandswapchain) esce immediatamente con **E \_ INVALIDARG**. Per richiedere in modo sicuro tutti i livelli di funzionalità possibili in un computer con il runtime DirectX 11.0 o DirectX 11.1, usare questo codice:
+> Se si richiede un [**dispositivo D3D \_ FEATURE LEVEL \_ \_ 11 \_ 1**](/windows/desktop/api/D3DCommon/ne-d3dcommon-d3d_feature_level) in un computer con solo il runtime Direct3D 11.0, [**D3D11CreateDeviceAndSwapChain**](/windows/desktop/api/D3D11/nf-d3d11-d3d11createdeviceandswapchain) termina immediatamente con **E \_ INVALIDARG.** Per richiedere in modo sicuro tutti i possibili livelli di funzionalità in un computer con il runtime DirectX 11.0 o DirectX 11.1, usare questo codice:
 >
-> <span codelanguage=""></span>
+> 
 >
 > <table>
 > <colgroup>
-> <col style="width: 100%" />
+> <col  />
 > </colgroup>
 > <tbody>
 > <tr class="odd">
@@ -101,13 +101,13 @@ if( FAILED (hr = D3D11CreateDeviceAndSwapChain( NULL,
 > </table>
 >  
 >
-> Creare una visualizzazione di destinazione di rendering chiamando [**ID3D11Device::CreateRenderTargetView**](/windows/desktop/api/D3D11/nf-d3d11-id3d11device-createrendertargetview) e associando il buffer nascosto come destinazione di rendering chiamando [**ID3D11DeviceContext::OMSetRenderTargets**](/windows/desktop/api/D3D11/nf-d3d11-id3d11devicecontext-omsetrendertargets).
+> Creare una visualizzazione di destinazione di rendering chiamando [**ID3D11Device::CreateRenderTargetView**](/windows/desktop/api/D3D11/nf-d3d11-id3d11device-createrendertargetview) e associare il buffer nascosto come destinazione di rendering chiamando [**ID3D11DeviceContext::OMSetRenderTargets.**](/windows/desktop/api/D3D11/nf-d3d11-id3d11devicecontext-omsetrendertargets)
 >
-> <span codelanguage=""></span>
+> 
 >
 > <table>
 > <colgroup>
-> <col style="width: 100%" />
+> <col  />
 > </colgroup>
 > <tbody>
 > <tr class="odd">
@@ -127,13 +127,13 @@ if( FAILED (hr = D3D11CreateDeviceAndSwapChain( NULL,
 > </tbody>
 > </table> 
 >
-> Creare un viewport per definire quali parti della destinazione di rendering saranno visibili. Definire il viewport usando la struttura [**\_ VIEWPORT D3D11**](/windows/desktop/api/D3D11/ns-d3d11-d3d11_viewport) e impostare il viewport usando il [**metodo ID3D11DeviceContext::RSSetViewports.**](/windows/desktop/api/D3D11/nf-d3d11-id3d11devicecontext-rssetviewports)
+> Creare un viewport per definire quali parti della destinazione di rendering saranno visibili. Definire il viewport usando la [**struttura \_ VIEWPORT D3D11**](/windows/desktop/api/D3D11/ns-d3d11-d3d11_viewport) e impostare il viewport usando il [**metodo ID3D11DeviceContext::RSSetViewports.**](/windows/desktop/api/D3D11/nf-d3d11-id3d11devicecontext-rssetviewports)
 >
-> <span codelanguage="ManagedCPlusPlus"></span>
+> 
 >
 > <table>
 > <colgroup>
-> <col style="width: 100%" />
+> <col  />
 > </colgroup>
 > <thead>
 > <tr class="header">

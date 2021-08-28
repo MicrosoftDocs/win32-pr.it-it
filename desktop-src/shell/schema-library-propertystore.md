@@ -1,19 +1,19 @@
 ---
-description: <propertyStore>L'elemento specifica un set di una o più proprietà usate da questa libreria. Questo elemento è facoltativo e non ha attributi.
+description: "&lt;L'elemento propertyStore &gt; specifica un set di una o più proprietà usate da questa libreria. Questo elemento è facoltativo e non ha attributi."
 ms.assetid: 19532C1F-686F-4c14-8BA8-0043E77BE594
 title: Elemento propertyStore (schema della libreria)
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: d0ff30972a358916e715ff1b374a555c6db24ee6d512d114bcf47f57ac8a1954
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 089e87e6e7bdfa568ffa2e8903f6347cb6dc7b3d
+ms.sourcegitcommit: 61a4c522182aa1cacbf5669683d9570a3bf043b2
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "118452976"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "122880427"
 ---
 # <a name="propertystore-element-library-schema"></a>Elemento propertyStore (schema della libreria)
 
-<propertyStore>L'elemento specifica un set di una o più proprietà usate da questa libreria. Questo elemento è facoltativo e non ha attributi.
+&lt;L'elemento propertyStore &gt; specifica un set di una o più proprietà usate da questa libreria. Questo elemento è facoltativo e non ha attributi.
 
 ## <a name="syntax"></a>Sintassi
 
@@ -35,7 +35,7 @@ ms.locfileid: "118452976"
 
 | Elemento padre                                                               | Elementi figlio                                                   |
 |------------------------------------------------------------------------------|------------------------------------------------------------------|
-| [Elemento libraryDescription (schema della libreria)](schema-librarydescription.md) | [Elemento property (schema di libreria)](schema-library-property.md) |
+| [Elemento libraryDescription (schema della libreria)](schema-librarydescription.md) | [Elemento property (schema della libreria)](schema-library-property.md) |
 
 
 
@@ -43,7 +43,7 @@ ms.locfileid: "118452976"
 
 ## <a name="remarks"></a>Commenti
 
-<propertyStore>L'elemento può avere uno o più elementi <property> figlio.
+&lt;L'elemento propertyStore &gt; può avere uno o più elementi figlio di &lt; &gt; proprietà.
 
 ## <a name="related-topics"></a>Argomenti correlati
 

@@ -1,24 +1,24 @@
 ---
-title: Attributo SingleClick di la
-description: Attributo SingleClick di la
+title: Attributo VmL SingleClick
+description: Attributo VmL SingleClick
 ms.assetid: fc7f0a87-b72e-478c-8fb4-2298f7177631
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: f0b6e2b83637e4091eceffb27b4267756605c339
-ms.sourcegitcommit: 592c9bbd22ba69802dc353bcb5eb30699f9e9403
+ms.openlocfilehash: edf0f70bb488e4f329cb4c1c3d1bbd757595d69a3d22d6de3062439239ac89a9
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/20/2020
-ms.locfileid: "103963119"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120099061"
 ---
-# <a name="vml-singleclick-attribute"></a>Attributo SingleClick di la
+# <a name="vml-singleclick-attribute"></a>Attributo VmL SingleClick
 
-In questo argomento viene descritto la, una funzionalità deprecata a partire da Windows Internet Explorer 9. Le pagine Web e le applicazioni che si basano su la devono essere migrate a SVG o ad altri standard ampiamente supportati.
+Questo argomento descrive VML, una funzionalità deprecata a Windows Internet Explorer 9. È necessario eseguire la migrazione di pagine Web e applicazioni basate su VML a SVG o ad altri standard ampiamente supportati.
 
 > [!Note]  
-> Al 2011 dicembre, questo argomento è stato archiviato. Di conseguenza, non viene più gestita attivamente. Per altre informazioni, vedere [contenuto archiviato](/previous-versions/windows/internet-explorer/ie-developer/). Per informazioni, suggerimenti e indicazioni per la versione corrente di Windows Internet Explorer, vedere il [centro per sviluppatori di Internet Explorer](https://msdn.microsoft.com/ie/).
+> A partire da dicembre 2011, questo argomento è stato archiviato. Di conseguenza, non viene più gestito attivamente. Per altre informazioni, vedere [Contenuto archiviato](/previous-versions/windows/internet-explorer/ie-developer/). Per informazioni, raccomandazioni e indicazioni sulla versione corrente di Windows Internet Explorer, vedere Internet Explorer [Developer Center](https://msdn.microsoft.com/ie/).
 
- 
+ 
 
 Definisce se il testo è selezionabile con un solo clic. Proprietà di lettura/scrittura. **VgTriState**.
 
@@ -26,16 +26,16 @@ Definisce se il testo è selezionabile con un solo clic. Proprietà di lettura/s
 
 [TextBox](msdn-online-vml-textbox-element.md)
 
-**Sintassi Tag**
+**Sintassi dei tag**
 
-<v: *elemento* Style = "SingleClick: *Expression* " >
+<v: *element* style="singleclick: *expression* ">
 
 **Osservazioni:**
 
-Se **true**, il testo è selezionabile con un solo clic. Il valore predefinito è **False**.
+Se **True,** il testo è selezionabile con un solo clic. Il valore predefinito è **False**.
 
-*Attributo Microsoft Office Extensions*
+*Microsoft Office Attributo Extensions*
 
- 
+ 
 
- 
+ 

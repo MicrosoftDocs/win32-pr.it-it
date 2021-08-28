@@ -1,11 +1,11 @@
 ---
-title: Proprietà AxWindowsMediaPlayer. URL
-description: La proprietà URL Ottiene o imposta il nome dell'elemento multimediale da riprodurre.
+title: AxWindowsMediaPlayer.URL - proprietà
+description: La proprietà URL ottiene o imposta il nome dell'elemento multimediale da riprodurre.
 ms.assetid: 521a3b39-efd6-45a7-895b-a9ae69e0bf39
 keywords:
-- Proprietà URL Media Player Windows
-- Proprietà URL Media Player Windows, classe AxWindowsMediaPlayer
-- Classe AxWindowsMediaPlayer Media Player Windows, proprietà URL
+- Proprietà URL Windows Media Player
+- Proprietà URL Windows Media Player classe AxWindowsMediaPlayer
+- Classe AxWindowsMediaPlayer Windows Media Player , proprietà URL
 topic_type:
 - apiref
 api_name:
@@ -16,16 +16,16 @@ api_type:
 - COM
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: a3ed9e601aa581e988bac1a233f06c4f5c552353
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: d953f2d85fc1fd83edcd37a491cb2f7cbabc3e3dfaf61e48feb1cd30e6d01934
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "106330898"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120123881"
 ---
-# <a name="axwindowsmediaplayerurl-property"></a>Proprietà AxWindowsMediaPlayer. URL
+# <a name="axwindowsmediaplayerurl-property"></a>AxWindowsMediaPlayer.URL - proprietà
 
-La proprietà URL Ottiene o imposta il nome dell'elemento multimediale da riprodurre.
+La proprietà URL ottiene o imposta il nome dell'elemento multimediale da riprodurre.
 
 ## <a name="syntax"></a>Sintassi
 
@@ -46,19 +46,19 @@ Public Property URL As System.String
 
 ## <a name="property-value"></a>Valore proprietà
 
-System. String che rappresenta l'URL dell'elemento multimediale.
+Oggetto System.String che rappresenta l'URL dell'elemento multimediale.
 
 ## <a name="remarks"></a>Commenti
 
 Questa proprietà può essere impostata solo su un URL in un'area di sicurezza uguale o meno restrittiva rispetto all'area di sicurezza del programma chiamante o della pagina Web.
 
-Le applicazioni che aprono elementi multimediali da dietro un firewall avranno prestazioni migliori se l'indirizzo viene specificato usando il nome del Domain Name Server (DNS) invece dell'indirizzo IP.
+Le applicazioni che aprono elementi multimediali da dietro un firewall avranno prestazioni migliori se l'indirizzo viene specificato usando il nome DNS (Domain Name Server) anziché l'indirizzo IP.
 
-Non chiamare questo metodo dal codice del gestore eventi. L' **URL** chiamante da un gestore eventi può produrre risultati imprevisti.
+Non chiamare questo metodo dal codice del gestore eventi. La **chiamata dell'URL** da un gestore eventi può produrre risultati imprevisti.
 
 ## <a name="examples"></a>Esempio
 
-Nell'esempio seguente viene consentito all'utente di specificare un file multimediale immettendo un percorso di file in una casella di testo. Quando si fa clic su un pulsante, la proprietà URL viene impostata sul file specificato e il file viene riprodotto. L'oggetto AxWMPLib. AxWindowsMediaPlayer è rappresentato dalla variabile denominata Player.
+L'esempio seguente consente all'utente di specificare un file multimediale immettendo un percorso di file in una casella di testo. Quando si fa clic su un pulsante, la proprietà URL viene impostata sul file specificato e il file viene riprodotto. L'oggetto AxWMPLib.AxWindowsMediaPlayer è rappresentato dalla variabile denominata player.
 
 
 ```CSharp
@@ -96,7 +96,7 @@ End Sub
 
 | Requisito | Valore |
 |----------------------|----------------------------------------------------------------------------------------------------------------------------|
-| Versione<br/>   | Windows Media Player 9 serie o versione successiva<br/>                                                                          |
+| Versione<br/>   | Windows Media Player serie 9 o successive<br/>                                                                          |
 | Spazio dei nomi<br/> | **AxWMPLib**<br/>                                                                                                    |
 | Assembly<br/>  | <dl> <dt>AxInterop.WMPLib.dll (AxInterop.WMPLib.dll.dll)</dt> </dl> |
 

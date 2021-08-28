@@ -1,19 +1,19 @@
 ---
-description: Evento per utente generato da un client di posta elettronica quando si tenta di inviare un messaggio nei controlli padre.
+description: Evento per utente generato da un client di posta elettronica quando si tenta di inviare un messaggio in Controllo genitori.
 ms.assetid: c49919a2-2a03-475d-9cfa-20a960184202
-title: Evento WPCEVENT_EMAIL_SENT (Wpcevent. h)
+title: WPCEVENT_EMAIL_SENT evento (Wpcevent.h)
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: dd222e946f0b7c78116ace9d8d01de2e2709a7ca
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: bfe3d5fb08764aa83677fcca66af7f1e3b868f2b1bdf393741865bf64fd23049
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "106318391"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120112731"
 ---
-# <a name="wpcevent_email_sent-event"></a>\_Evento WPCEVENT inviato tramite posta elettronica \_
+# <a name="wpcevent_email_sent-event"></a>Evento WPCEVENT \_ EMAIL \_ SENT
 
-Evento per utente generato da un client di posta elettronica quando si tenta di inviare un messaggio nei controlli padre.
+Evento per utente generato da un client di posta elettronica quando si tenta di inviare un messaggio in Controllo genitori.
 
 
 ```C++
@@ -57,14 +57,14 @@ Riga dell'oggetto del messaggio ricevuto.
 *Motivo* 
 </dt> <dd>
 
-Valore dell'enumerazione [**WPCFLAG che \_**](/windows/win32/api/wpcevent/ne-wpcevent-wpcflag_isblocked) indica le informazioni sugli eventi che vengono bloccati dall'utilizzo e sui controlli.
+Valore [**dell'enumerazione WPCFLAG \_ ISBLOCKED**](/windows/win32/api/wpcevent/ne-wpcevent-wpcflag_isblocked) che indica quali eventi non possono essere utilizzati e quali controlli sono presenti.
 
 </dd> <dt>
 
 *RecipCount* 
 </dt> <dd>
 
-Numero degli indirizzi di posta elettronica che ricevono il messaggio e che hanno identità definite nel campo del destinatario.
+Numero di destinatari di posta elettronica che ricevono il messaggio e che dispongono di identità definite nel campo del destinatario.
 
 </dd> <dt>
 
@@ -92,7 +92,7 @@ Stringa delimitata che contiene i nomi di tutti gli allegati al messaggio.
 *ReceivedTime* 
 </dt> <dd>
 
-Data e ora in cui è stato tentato di ricevere il messaggio.
+Ora in cui è stato tentato di ricevere il messaggio.
 
 </dd> <dt>
 
@@ -109,9 +109,9 @@ Nome dell'account di posta elettronica per l'utente.
 
 | Requisito | Valore |
 |-------------------------------------|---------------------------------------------------------------------------------------|
-| Client minimo supportato<br/> | \[Solo app desktop di Windows Vista\]<br/>                                        |
+| Client minimo supportato<br/> | Windows Solo \[ app desktop di Vista\]<br/>                                        |
 | Server minimo supportato<br/> | Nessuno supportato<br/>                                                             |
-| Intestazione<br/>                   | <dl> <dt>Wpcevent. h</dt> </dl> |
+| Intestazione<br/>                   | <dl> <dt>Wpcevent.h</dt> </dl> |
 
 
 
@@ -119,10 +119,10 @@ Nome dell'account di posta elettronica per l'utente.
 
 <dl> <dt>
 
-[Uso delle API di registrazione per i controlli padre](using-logging-apis-for-parental-controls.md)
+[Uso delle API di registrazione per Controllo genitori](using-logging-apis-for-parental-controls.md)
 </dt> <dt>
 
-[**\_argomenti \_ CONVERSATIONINITEVENT di WPC**](/windows/win32/api/wpcevent/ne-wpcevent-wpc_args_conversationinitevent)
+[**WPC \_ ARGS \_ CONVERSATIONINITEVENT**](/windows/win32/api/wpcevent/ne-wpcevent-wpc_args_conversationinitevent)
 </dt> </dl>
 
  

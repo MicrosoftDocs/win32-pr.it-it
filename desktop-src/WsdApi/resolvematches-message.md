@@ -4,23 +4,23 @@ ms.assetid: 0eaa4348-968e-4b45-9509-8b15476edaa1
 title: Messaggio ResolveMatches
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 1daffe985f3956e57ad69fd7c4fc4d199f0b24bd5fdab5677b7ef83765e5fcdd
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 42f2604859d39530377883179ec104dd078e9b6f
+ms.sourcegitcommit: c276a8912787b2cda74dcf54eb96df961bb1188b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119756801"
+ms.lasthandoff: 08/20/2021
+ms.locfileid: "122627757"
 ---
 # <a name="resolvematches-message"></a>Messaggio ResolveMatches
 
-Un messaggio ResolveMatches è un WS-Discovery inviato in risposta al messaggio [Resolve](resolve-message.md) di un client da un servizio corrispondente. Per altre informazioni sui messaggi ResolveMatches, vedere la sezione 6.2 della [specifica WS-Discovery](https://specs.xmlsoap.org/ws/2005/04/discovery/ws-discovery.pdf).
+Un messaggio ResolveMatches è un WS-Discovery inviato in risposta al messaggio [Resolve](resolve-message.md) di un client da un servizio corrispondente. Per altre informazioni sui messaggi ResolveMatches, vedere la sezione 6.2 della specifica [WS-Discovery](https://specs.xmlsoap.org/ws/2005/04/discovery/ws-discovery.pdf).
 
-Un messaggio ResolveMatches viene inviato dall'unicast UDP alla porta 3702 (la porta da cui è stato inviato il messaggio [Resolve](resolve-message.md) del client). ResolveMatches deve essere inviato entro 4 secondi dal messaggio Resolve. in caso contrario, Windows firewall potrebbe eliminare il pacchetto.
+Un messaggio ResolveMatches viene inviato da UDP unicast alla porta 3702 (la porta da cui è stato inviato il messaggio [Resolve](resolve-message.md) del client). ResolveMatches deve essere inviato entro 4 secondi dal messaggio Resolve. in caso contrario, Windows firewall potrebbe eliminare il pacchetto.
 
 Qualsiasi applicazione DPWS che invia [messaggi Resolve](resolve-message.md) riceverà messaggi ResolveMatches.
 
 > [!Note]  
-> Questo argomento illustra un messaggio DPWS di esempio generato da client e host WSDAPI. WSDAPI analizza e accetta altri messaggi conformi a DPWS non conformi a questo esempio. Non usare questo esempio per verificare l'interoperabilità di DPWS. utilizzare [WSDAPI Basic Interoperability Tool (WSDBIT).](https://msdn.microsoft.com/library/cc264250.aspx)
+> Questo argomento illustra un messaggio DPWS di esempio generato da client e host WSDAPI. WSDAPI anaserà e accetterà altri messaggi conformi a DPWS che non sono conformi a questo esempio. Non usare questo esempio per verificare l'interoperabilità DPWS. usare [WSDAPI Basic Interoperability Tool (WSDBIT).](https://msdn.microsoft.com/library/cc264250.aspx)
 
  
 
@@ -76,9 +76,9 @@ Un messaggio ResolveMatches ha i punti di interesse seguenti.
 
 <table>
 <colgroup>
-<col style="width: 33%" />
-<col style="width: 33%" />
-<col style="width: 33%" />
+<col  />
+<col  />
+<col  />
 </colgroup>
 <thead>
 <tr class="header">
@@ -100,7 +100,7 @@ Un messaggio ResolveMatches ha i punti di interesse seguenti.
 <td><pre class="syntax" data-space="preserve"><code><wsa:RelatesTo>
     urn:uuid:38d1c3d9-8d73-4424-8861-6b7ee2af24d3
 </wsa:RelatesTo></code></pre></td>
-<td>Identificatore del messaggio a cui risponde il servizio. Questa intestazione corrisponde a MessageId nel messaggio <a href="resolve-message.md">Resolve.</a></td>
+<td>Identificatore del messaggio a cui il servizio risponde. Questa intestazione corrisponde a MessageId nel <a href="resolve-message.md">messaggio Resolve.</a></td>
 </tr>
 <tr class="odd">
 <td>AppSequence</td>
@@ -108,7 +108,7 @@ Un messaggio ResolveMatches ha i punti di interesse seguenti.
     SequenceId=&quot;urn:uuid:369a7d7b-5f87-48a4-aa9a-189edf2a8772&quot;
     MessageNumber=&quot;6&quot;>
 </wsd:AppSequence></code></pre></td>
-<td>Contiene informazioni di sequenziazione dell'applicazione, che consentono di mantenere la sequenza dei messaggi anche se vengono ricevuti non in ordine. AppSequence viene convalidato come descritto in <a href="appsequence-validation-rules.md">Regole di convalida di AppSequence.</a></td>
+<td>Contiene informazioni di sequenziazione dell'applicazione, che consentono di mantenere la sequenza di messaggi anche se vengono ricevuti in ordine. AppSequence viene convalidato come descritto in Regole di convalida <a href="appsequence-validation-rules.md">di AppSequence</a>.</td>
 </tr>
 <tr class="even">
 <td>Indirizzo</td>
@@ -122,7 +122,7 @@ Un messaggio ResolveMatches ha i punti di interesse seguenti.
 <td><pre class="syntax" data-space="preserve"><code><wsd:XAddrs>
     https://192.168.0.2:5357/37f86d35-e6ac-4241-964f-1d9ae46fb366
 </wsd:XAddrs></code></pre></td>
-<td>XAddrs sono indirizzi di trasporto che possono essere usati per la comunicazione tra client e servizio. Gli addr vengono convalidati come descritto in <a href="xaddr-validation-rules.md">XAddr Validation Rules</a>.</td>
+<td>Gli XAddr sono indirizzi di trasporto che possono essere usati per la comunicazione tra client e servizio. I componenti aggiuntivi vengono convalidati come descritto in <a href="xaddr-validation-rules.md">XAddr Validation Rules</a>.</td>
 </tr>
 </tbody>
 </table>

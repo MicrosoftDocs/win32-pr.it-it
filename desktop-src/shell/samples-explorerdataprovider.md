@@ -9,12 +9,12 @@ api_type: ''
 api_location: ''
 topic_type:
 - kbArticle
-ms.openlocfilehash: 31e1d42e4660e0e73830876cfdeb0a5c8a5957cd
-ms.sourcegitcommit: 9b5faa61c38b2d0c432b7f2dbee8c127b0e28a7e
+ms.openlocfilehash: b30a1c6cb31038d69c9feb85f0382fd5f4bb89bf
+ms.sourcegitcommit: 4e94fc75fad7b2a0f3c92a26f97e89924e59b7a9
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/19/2021
-ms.locfileid: "122471887"
+ms.lasthandoff: 08/24/2021
+ms.locfileid: "122786707"
 ---
 # <a name="explorer-data-provider-sample"></a>Esempio di provider di dati Explorer
 
@@ -42,7 +42,7 @@ In questo argomento sono contenute le sezioni seguenti.
 
 ## <a name="downloading-the-sample"></a>Download dell'esempio
 
-| Località      | URL del percorso                                                                                             |
+| Location      | URL del percorso                                                                                             |
 |---------------|------------------------------------------------------------------------------------------------------|
 | GitHub  | [Esempio di ExplorerDataProvider](https://github.com/microsoft/Windows-classic-samples/tree/master/Samples/Win7Samples/winui/shell/shellextensibility/explorerdataprovider) |
 
@@ -62,7 +62,7 @@ Per compilare l'esempio usando Microsoft Visual Studio (scelta preferita):
 > [!Note]  
 > Nella versione di questo esempio inclusa in Windows SDK, la configurazione per la build di rilascio a 64 bit non include il file ExplorerDataProvider.def nell'opzione **Module Definition File** del linker. È necessario specificare il file manualmente prima di compilare in un ambiente a 64 bit. Aggiungere la riga `ModuleDefinitionFile="ExplorerDataProvider.def"` alla sezione VCLinkerTool (inizia dalla riga 329) del file ExplorerDataProvider.vcproj, come illustrato di seguito:
 >
-> <span codelanguage=""></span>
+> 
 >
 > 
 | | | <pre><code>LinkIncremental="1"&gt; AdditionalLibraryDirectories=""c:\Program Files\Microsoft SDKs\Windows\v6.0\Lib\x64""&gt; ModuleDefinitionFile="ExplorerDataProvider.def"&gt; GenerateDebugInformation="true"</code></pre> | 

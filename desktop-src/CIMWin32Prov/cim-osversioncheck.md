@@ -1,5 +1,5 @@
 ---
-description: La classe CIM OSVersionCheck specifica le versioni del sistema operativo in grado di \_ supportare un elemento software.
+description: La classe CIM OSVersionCheck specifica le versioni del sistema \_ operativo che possono supportare un elemento software.
 ms.assetid: 6796cfc4-3b6f-43a4-b5f0-854a95284238
 ms.tgt_platform: multiple
 title: CIM_OSVersionCheck classe
@@ -25,16 +25,16 @@ api_type:
 - DllExport
 api_location:
 - CIMWin32.dll
-ms.openlocfilehash: f2ab63d04d23abddad04d4abad812754fbfc6eed2d3352fbc26fc41e172af81a
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 2dce98d850bb140d6af40bbd9b012e23bebe7316
+ms.sourcegitcommit: 61a4c522182aa1cacbf5669683d9570a3bf043b2
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "118422138"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "122880662"
 ---
 # <a name="cim_osversioncheck-class"></a>Classe CIM \_ OSVersionCheck
 
-La **classe CIM \_ OSVersionCheck** specifica le versioni del sistema operativo in grado di supportare un elemento software. Il controllo può essere eseguito per una versione specifica, minima, massima o di un intervallo di versioni del sistema operativo. Per specificare una versione specifica del sistema operativo, le versioni minima e massima devono essere uguali. Per specificare la versione minima, è necessario specificare solo la versione minima. Per specificare una versione massima, è necessario specificare solo la versione massima. Per specificare un intervallo, è necessario specificare sia le versioni minime che le versioni massime.
+La **classe CIM \_ OSVersionCheck** specifica le versioni del sistema operativo che possono supportare un elemento software. Il controllo può essere eseguito per una versione specifica, minima, massima o di un intervallo di versioni del sistema operativo. Per specificare una versione specifica del sistema operativo, le versioni minima e massima devono essere uguali. Per specificare la versione minima, è necessario specificare solo la versione minima. Per specificare una versione massima, è necessario specificare solo la versione massima. Per specificare un intervallo, è necessario specificare sia le versioni minime che le versioni massime.
 
 Il tipo di sistema operativo è specificato nella **proprietà TargetOperatingSystem** dell'elemento software proprietario. I dettagli dei controlli vengono confrontati con i dettagli corrispondenti trovati in un oggetto [**CIM \_ OperatingSystem**](cim-operatingsystem.md) a cui fa riferimento un'associazione [**CIM \_ InstalledOS**](cim-installedos.md) per l'oggetto [**CIM \_ ComputerSystem**](cim-computersystem.md) che descrive l'ambiente. Almeno una **classe CIM \_ OperatingSystem** deve soddisfare i dettagli della condizione perché il controllo sia soddisfatto. In altre parole, non tutti i sistemi operativi nel sistema informatico pertinente devono soddisfare la condizione. Inoltre, la **proprietà OSType** della **classe CIM \_ OperatingSystem** deve corrispondere al tipo della **proprietà TargetOperatingSystem.**
 
@@ -80,7 +80,7 @@ La **classe CIM \_ OSVersionCheck** include questi metodi.
 
 | Metodo                                                      | Descrizione                                                   |
 |:------------------------------------------------------------|:--------------------------------------------------------------|
-| [**evocare**](invoke-method-in-class-cim-osversioncheck.md) | Consente di eseguire un'azione specifica. Non implementato da WMI.<br/> |
+| [**Evocare**](invoke-method-in-class-cim-osversioncheck.md) | Consente di eseguire un'azione specifica. Non implementato da WMI.<br/> |
 
 
 
@@ -176,8 +176,8 @@ Versione massima del sistema operativo richiesto.
 
 Il valore è codificato in uno dei formati seguenti:
 
--   <major>.<minor>.<revision>
--   <major>.<minor><letter><revision>
+-   &lt;major &gt; . &lt; minor &gt; . &lt; Revisione&gt;
+-   &lt;major &gt; . &lt; revisione &gt; &lt; di lettere &gt; &lt; secondarie&gt;
 
 </dd> <dt>
 
@@ -197,8 +197,8 @@ Versione minima del sistema operativo richiesto.
 
 Il valore è codificato in uno dei formati seguenti:
 
--   <major>.<minor>.<revision>
--   <major>.<minor><letter><revision>
+-   &lt;major &gt; . &lt; minor &gt; . &lt; Revisione&gt;
+-   &lt;major &gt; . &lt; revisione &gt; &lt; di lettere &gt; &lt; secondarie&gt;
 
 </dd> <dt>
 
@@ -719,7 +719,7 @@ Mac OS 9
 
 <span id="Inferno"></span><span id="inferno"></span><span id="INFERNO"></span>
 
-<span id="Inferno"></span><span id="inferno"></span><span id="INFERNO"></span>**Insinale** (47)
+<span id="Inferno"></span><span id="inferno"></span><span id="INFERNO"></span>**Infernale** (47)
 
 
 </dt> <dd></dd> <dt>
@@ -844,8 +844,8 @@ Versione dell'operazione.
 
 La versione dell'operazione deve essere in uno dei formati seguenti:
 
--   <major>.<minor>.<revision>
--   <major>.<minor><letter><revision>
+-   &lt;major &gt; . &lt; minor &gt; . &lt; Revisione&gt;
+-   &lt;major &gt; . &lt; revisione &gt; &lt; di lettere &gt; &lt; secondarie&gt;
 
 Questa proprietà viene ereditata da [**CIM \_ Check**](cim-check.md).
 

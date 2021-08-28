@@ -24,12 +24,12 @@ api_type:
 - DllExport
 api_location:
 - CIMWin32.dll
-ms.openlocfilehash: bc90b16e9507595f35330cce7b697cd357ccfe3c451deae802ebe00ef5ed2f59
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 660b467c48e3f762d3e8ea716ed00cda35e8574d
+ms.sourcegitcommit: 61a4c522182aa1cacbf5669683d9570a3bf043b2
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119920361"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "122887203"
 ---
 # <a name="cim_removefileaction-class"></a>Classe CIM \_ RemoveFileAction
 
@@ -76,7 +76,7 @@ La **classe CIM \_ RemoveFileAction** include questi metodi.
 
 | Metodo                                                        | Descrizione                                                   |
 |:--------------------------------------------------------------|:--------------------------------------------------------------|
-| [**evocare**](invoke-method-in-class-cim-removefileaction.md) | Consente di eseguire un'azione specifica. Non implementato da WMI.<br/> |
+| [**Evocare**](invoke-method-in-class-cim-removefileaction.md) | Consente di eseguire un'azione specifica. Non implementato da WMI.<br/> |
 
 
 
@@ -699,7 +699,7 @@ Mac OS 9
 
 <span id="Inferno"></span><span id="inferno"></span><span id="INFERNO"></span>
 
-<span id="Inferno"></span><span id="inferno"></span><span id="INFERNO"></span>**Insinale** (47)
+<span id="Inferno"></span><span id="inferno"></span><span id="INFERNO"></span>**Infernale** (47)
 
 
 </dt> <dd></dd> <dt>
@@ -828,8 +828,8 @@ Versione dell'operazione.
 
 La versione dell'operazione deve essere in uno dei formati seguenti:
 
--   <major>.<minor>.<revision>
--   <major>.<minor><letter><revision>
+-   &lt;major &gt; . &lt; minor &gt; . &lt; Revisione&gt;
+-   &lt;major &gt; . &lt; revisione &gt; &lt; di lettere &gt; &lt; secondarie&gt;
 
 Questa proprietà viene ereditata da [**CIM \_ Action**](cim-action.md).
 

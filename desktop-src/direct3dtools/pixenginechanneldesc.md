@@ -1,5 +1,5 @@
 ---
-description: Rappresenta una descrizione di un canale di colore (di esempio).
+description: Rappresenta una descrizione di un canale a colori (campione).
 MS-HAID: vspixengine.PixEngineChannelDesc
 MSHAttr:
 - PreferredSiteName:MSDN
@@ -17,16 +17,16 @@ api_location:
 topic_type:
 - APIRef
 - kbSyntax
-ms.openlocfilehash: 17bfbb670892db10e787f7877a74bd376500f34236121c7db0cc9a1c472f3513
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 81fdceda178afa3fb5bb31818de7dc9cd563ccc4
+ms.sourcegitcommit: c276a8912787b2cda74dcf54eb96df961bb1188b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "117905248"
+ms.lasthandoff: 08/20/2021
+ms.locfileid: "122623766"
 ---
 # <a name="span-idvspixenginepixenginechanneldescspanpixenginechanneldesc-structure"></a><span id="vspixengine.pixenginechanneldesc"></span>Struttura PixEngineChannelDesc
 
-Rappresenta una descrizione di un canale di colore (di esempio).
+Rappresenta una descrizione di un canale a colori (campione).
 
 ## <a name="syntax"></a>Sintassi
 
@@ -48,7 +48,7 @@ Numero di bit da spostare per estrarre i bit di esempio.
 
 ## <a name="requirements"></a>Requisiti
 
-<table><colgroup><col style="width: 50%" /><col style="width: 50%" /></colgroup><tbody><tr class="odd"><td><p>Intestazione</p></td><td>Vspixengine.h</td></tr></tbody></table>
+<table><colgroup><col  /><col  /></colgroup><tbody><tr class="odd"><td><p>Intestazione</p></td><td>Vspixengine.h</td></tr></tbody></table>
 
  
 

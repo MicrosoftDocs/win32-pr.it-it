@@ -1,17 +1,17 @@
 ---
 description: Questo filtro decodifica il video MPEG-1, MPEG-2, H.264.
 ms.assetid: d8195c3a-97ac-4ad1-a097-18878c8fda6f
-title: Microsoft MPEG-2 Video Decoder (Wmcodecdsp.h)
+title: Decodificatore video MPEG-2 Microsoft (Wmcodecdsp.h)
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: b7bcd49aeff922bced12fa8d236259d0775d0fb1c6f9f7d0a05df1204f77f6c4
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 4afdd9609124ba1057f597c4b7a907654c62a321
+ms.sourcegitcommit: 4665ebce0c106bdb52eef36e544280b496b6f50b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119791431"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "122982194"
 ---
-# <a name="microsoft-mpeg-2-video-decoder"></a>Microsoft MPEG-2 Video Decoder
+# <a name="microsoft-mpeg-2-video-decoder"></a>Decodificatore video MPEG-2 Microsoft
 
 Questo filtro decodifica il video MPEG-1, MPEG-2, H.264.
 
@@ -25,7 +25,7 @@ Questo filtro decodifica il video MPEG-1, MPEG-2, H.264.
 
  
 
-Nel Registro di sistema il nome descrittivo di questo filtro è "Microsoft DTV-DVD Video Decoder".
+Nel Registro di sistema il nome descrittivo di questo filtro è "Decodificatore video DTV-DVD Microsoft".
 
 
 
@@ -33,7 +33,7 @@ Filtrare le informazioni
 
 Interfacce di filtro
 
-[**IAMDecoderCaps**](/windows/desktop/api/Strmif/nn-strmif-iamdecodercaps)<br/> [**Filtro IBaseFilter**](/windows/desktop/api/Strmif/nn-strmif-ibasefilter)<br/> [**ICodecAPI**](/windows/desktop/api/Strmif/nn-strmif-icodecapi)<br/>
+[**IAMDecoderCaps**](/windows/desktop/api/Strmif/nn-strmif-iamdecodercaps)<br/> [**IBaseFilter**](/windows/desktop/api/Strmif/nn-strmif-ibasefilter)<br/> [**ICodecAPI**](/windows/desktop/api/Strmif/nn-strmif-icodecapi)<br/>
 
 Tipi di supporti pin di input
 
@@ -41,23 +41,23 @@ Pin di input video:
 
 -   MEDIATYPE \_ DVD \_ ENCRYPTED \_ PACK, MEDIASUBTYPE \_ MPEG2 \_ VIDEO
 -   MEDIATYPE \_ MPEG2 \_ PES, MEDIASUBTYPE \_ MPEG2 \_ VIDEO
--   MEDIATYPE \_ Video, MEDIASUBTYPE \_ MPEG1Packet
--   MEDIATYPE \_ Video, MEDIASUBTYPE \_ MPEG1Payload
+-   VIDEO \_ MEDIATYPE, MEDIASUBTYPE \_ MPEG1Packet
+-   VIDEO \_ MEDIATYPE, MEDIASUBTYPE \_ MPEG1Payload
 -   VIDEO \_ MEDIATYPE, MEDIASUBTYPE \_ MPEG2 \_ VIDEO
 
-Segnaposto di input per le immagini secondarie:<br/>
+Segnaposto di input dell'immagine secondaria:<br/>
 
--   IMMAGINE SECONDARIA \_ DVD \_ ENCRYPTED \_ PACK, MEDIASUBTYPE \_ DVD \_
+-   MEDIATYPE \_ DVD \_ ENCRYPTED \_ PACK, MEDIASUBTYPE \_ DVD \_ SUBPICTURE
 
 A partire Windows 7, il pin di input video supporta anche i tipi di input seguenti:<br/>
 
--   **MEDIATYPE \_ Video**, **MEDIASUBTYPE \_ AVC1**
--   **MEDIATYPE \_ Video**, **MEDIASUBTYPE \_ H264**
--   **MEDIATYPE \_ Video**, **MEDIASUBTYPE \_ h264**
--   **MEDIATYPE \_ Video**, **MEDIASUBTYPE \_ X264**
+-   **MEDIATYPE \_ Video,** **MEDIASUBTYPE \_ AVC1**
+-   **MEDIATYPE \_ Video,** **MEDIASUBTYPE \_ H264**
+-   **MEDIATYPE \_ Video,** **MEDIASUBTYPE \_ h264**
+-   **MEDIATYPE \_ Video,** **MEDIASUBTYPE \_ X264**
 -   **MEDIATYPE \_ Video,** **MEDIASUBTYPE \_ x264**
 
-Per [altre informazioni, vedere H.264 Video Types](h-264-video-types.md) (Tipi di video H.264). Il tipo di supporto di input può cambiare in modo dinamico tra i tipi MPEG2 e H.264.<br/>
+Per altre informazioni, vedere Tipi [di video H.264.](h-264-video-types.md) Il tipo di supporto di input può cambiare in modo dinamico tra i tipi MPEG2 e H.264.<br/>
 
 Interfacce pin di input
 
@@ -67,32 +67,32 @@ Tipi di supporti pin di output
 
 Pin di output video:
 
--   Video \_ MEDIATYPE, DXVA \_ ModeMPEG2 \_ A (DXVA 1.0)
--   Video \_ MEDIATYPE, DXVA \_ ModeMPEG2 \_ C (DXVA 1.0)
+-   Video \_ MEDIATYPE, modalità DXVAMPEG2 \_ \_ A (DXVA 1.0)
+-   Video \_ MEDIATYPE, modalità DXVAMPEG2 \_ \_ C (DXVA 1.0)
 -   MEDIATYPE \_ Video, MEDIASUBTYPE \_ I420 (decodifica software o DXVA2.0)
--   MEDIATYPE \_ Video, MEDIASUBTYPE \_ NV12 (Decodifica software o DXVA2.0)
--   MEDIATYPE \_ Video, MEDIASUBTYPE \_ YUY2 (Decodifica software o DXVA2.0)
+-   MEDIATYPE \_ Video, MEDIASUBTYPE \_ NV12 (decodifica software o DXVA2.0)
+-   MEDIATYPE \_ Video, MEDIASUBTYPE \_ YUY2 (decodifica software o DXVA2.0)
 -   MEDIATYPE \_ Video, MEDIASUBTYPE \_ IMC3 (solo DXVA2.0)
 -   MEDIATYPE \_ Video, MEDIASUBTYPE \_ IMC4 (solo DXVA2.0)
 -   MEDIATYPE \_ Video, MEDIASUBTYPE \_ S340 (solo DXVA2.0)
 -   MEDIATYPE \_ Video, MEDIASUBTYPE \_ YV12 (solo DXVA2.0)
 
-Pin di output riga 21:<br/>
+Pin di output della riga 21:<br/>
 
 -   MEDIATYPE \_ AUXLine21Data, MEDIASUBTYPE \_ Line21 \_ GOPPacket
 
 Segnaposto di output dell'immagine secondaria:<br/>
 
--   MEDIATYPE \_ Video, MEDIASUBTYPE \_ AI44
--   MEDIATYPE \_ Video, MEDIASUBTYPE \_ ARGB32
--   MEDIATYPE \_ Video, MEDIASUBTYPE \_ ARGB4444
--   MEDIATYPE \_ Video, MEDIASUBTYPE \_ AYUV
+-   VIDEO \_ MEDIATYPE, MEDIASUBTYPE \_ AI44
+-   VIDEO \_ MEDIATYPE, MEDIASUBTYPE \_ ARGB32
+-   VIDEO \_ MEDIATYPE, MEDIASUBTYPE \_ ARGB4444
+-   VIDEO \_ MEDIATYPE, MEDIASUBTYPE \_ AYUV
 
 Interfacce pin di output
 
-[**IAMVideoAcceleratorNotify**](/previous-versions/windows/desktop/api/videoacc/nn-videoacc-iamvideoacceleratornotify) (solo pin di output video)<br/> [**IKsPropertySet**](ikspropertyset.md)<br/> [**IMediaSeeking**](/windows/desktop/api/Strmif/nn-strmif-imediaseeking)<br/> [**IPin**](/windows/desktop/api/Strmif/nn-strmif-ipin)<br/> [**IQualityControl**](/windows/desktop/api/Strmif/nn-strmif-iqualitycontrol)<br/> [**IVPConfig**](/previous-versions/windows/desktop/api/Vpconfig/nn-vpconfig-ivpconfig)<br/>
+[**IAMVideoAcceleratorNotify (solo**](/previous-versions/windows/desktop/api/videoacc/nn-videoacc-iamvideoacceleratornotify) pin di output video)<br/> [**IKsPropertySet**](ikspropertyset.md)<br/> [**IMediaSeeking**](/windows/desktop/api/Strmif/nn-strmif-imediaseeking)<br/> [**IPin**](/windows/desktop/api/Strmif/nn-strmif-ipin)<br/> [**IQualityControl**](/windows/desktop/api/Strmif/nn-strmif-iqualitycontrol)<br/> [**IVPConfig**](/previous-versions/windows/desktop/api/Vpconfig/nn-vpconfig-ivpconfig)<br/>
 
-CLSID del filtro
+Filtro CLSID
 
 **CLSID \_ CMPEG2VidDecoderDS** (definito in wmcodecdsp.h)
 
@@ -102,7 +102,7 @@ msmpeg2vdec.dll
 
 [Merito](merit.md)
 
-**LE DUE SIE \_ NORMAL** - 1
+**MERITO \_ NORMAL** - 1
 
 [Categoria filtro](filter-categories.md)
 
@@ -114,12 +114,12 @@ msmpeg2vdec.dll
 
 ## <a name="remarks"></a>Commenti
 
-Questo filtro ha due pin di input e tre pin di output.
+Questo filtro include due pin di input e tre pin di output.
 
 Pin di input:
 
 -   Input video
--   Input dell'immagine secondaria
+-   Input di immagini secondarie
 
 Pin di output:
 
@@ -135,34 +135,14 @@ Per MPEG-1 e MPEG-2, il decodificatore supporta i formati seguenti:
 
 
 
-<table>
-<colgroup>
-<col style="width: 50%" />
-<col style="width: 50%" />
-</colgroup>
-<tbody>
-<tr class="odd">
-<td>Profili/livelli</td>
-<td>Qualsiasi combinazione dei profili e dei livelli seguenti:<br/>
-<ul>
-<li>Profili: Simple, Main</li>
-<li>Livelli: Basso, Principale, Alto, Alto 1440</li>
-</ul></td>
-</tr>
-<tr class="even">
-<td>Formati chroma</td>
-<td>4:2:0 chroma</td>
-</tr>
-<tr class="odd">
-<td>Risoluzione massima</td>
-<td>1920 × 1088 pixel</td>
-</tr>
-<tr class="even">
-<td>Dxva</td>
-<td>Il decodificatore supporta DirectX Video Acceleration (DXVA) versione 1 e versione 2.</td>
-</tr>
-</tbody>
-</table>
+
+| Etichetta | Valore |
+|--------|-------|
+| Profili/livelli | Qualsiasi combinazione dei profili e dei livelli seguenti:<br /><ul><li>Profili: Semplice, Principale</li><li>Livelli: Low, Main, High, High 1440</li></ul> | 
+| Formati di Chroma | 4:2:0 chroma | 
+| Risoluzione massima | 1920 × 1088 pixel | 
+| DXVA | Il decodificatore supporta DirectX Video Acceleration (DXVA) versione 1 e 2. | 
+
 
 
 
@@ -172,7 +152,7 @@ Il decodificatore non supporta i bitstream scalabili. L'input deve essere un flu
 
 Il decodificatore non supporta i formati chroma 4:2:2.
 
-### <a name="h264-support"></a>Supporto H.264
+### <a name="h264-support"></a>Supporto di H.264
 
 Per H.264, il decodificatore supporta i formati seguenti:
 
@@ -184,7 +164,7 @@ Per H.264, il decodificatore supporta i formati seguenti:
 | Formati chroma     | 4:2:0 chroma o monocroma                                                                                                                                                                                                                                                |
 | Risoluzione minima | 48 × 48 pixel                                                                                                                                                                                                                                                            |
 | Risoluzione massima | 1920 × 1088 pixel                                                                                                                                                                                                                                                        |
-| Dxva               | Il decodificatore supporta DXVA versione 2, ma non DXVA versione 1. La decodifica DXVA è supportata solo per i bitstream di bit baseline, main e high profile compatibili con Main. I bitstream di base compatibili con main sono definiti come **profilo \_ idc**=66 e **flag \_ set1 \_ vincolato**=1. |
+| DXVA               | Il decodificatore supporta DXVA versione 2, ma non DXVA versione 1. La decodifica DXVA è supportata solo per i bitstream di bit baseline, main e high profile compatibili con Main. I bitstream di base compatibili con main sono definiti come **profilo \_ idc**=66 e **flag \_ set1 \_ vincolato**=1. |
 
 
 
@@ -240,7 +220,7 @@ Il filtro supporta le proprietà seguenti tramite [**ICodecAPI:**](/windows/desk
 
 | Requisito | Valore |
 |-------------------------------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Client minimo supportato<br/> | Windows Vista Home Premium, Windows Vista Ultimate, Windows 7 Home Premium, Windows 7 Professional, Windows 7 Enterprise, Windows 7 Ultimate \[ desktop apps only\]<br/> |
+| Client minimo supportato<br/> | Windows Vista Home Premium, Windows Vista Ultimate, Windows 7 Home Premium, Windows 7 Professional, Windows 7 Enterprise, Windows 7 Ultimate desktop apps \[ only\]<br/> |
 | Server minimo supportato<br/> | Nessuno supportato<br/>                                                                                                                                                     |
 | Intestazione<br/>                   | <dl> <dt>Wmcodecdsp.h</dt> </dl>                                                                                       |
 

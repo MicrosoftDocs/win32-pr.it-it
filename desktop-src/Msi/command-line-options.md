@@ -4,12 +4,12 @@ ms.assetid: a70d8cc8-af47-4472-aabc-97481d97080d
 title: Opzioni della riga di comando
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: c72592046bdd30429d373f23f1d2cb39bc9497ee
-ms.sourcegitcommit: c276a8912787b2cda74dcf54eb96df961bb1188b
+ms.openlocfilehash: d4a45d59922a6c2c1d6cd0b5f8cd61b393944e23
+ms.sourcegitcommit: 61a4c522182aa1cacbf5669683d9570a3bf043b2
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/20/2021
-ms.locfileid: "122630907"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "122880630"
 ---
 # <a name="command-line-options"></a>Opzioni della riga di comando
 
@@ -81,7 +81,7 @@ La lunghezza del <em>nome file</em> non deve essere superiore a otto caratteri.
 <tr class="even">
 <td><strong>/p</strong></td>
 <td><em>PatchPackage[;p atchPackage2</em> ]</td>
-<td>Applica una patch. Per applicare una patch a un'immagine amministrativa installata, è necessario combinare le opzioni seguenti:<br/> /p <em> <PatchPackage> [;p atchPackage2 ] </em> /a<em><Package></em><br/></td>
+<td>Applica una patch. Per applicare una patch a un'immagine amministrativa installata, è necessario combinare le opzioni seguenti:<br/> /p <em> &lt; PatchPackage &gt; [;p atchPackage2 ]</em> /a<em><Package></em><br/></td>
 </tr>
 <tr class="odd">
 <td><strong>/q</strong></td>
@@ -140,7 +140,7 @@ Sintassi non corretta:
 
 I valori delle proprietà che sono stringhe letterali devono essere racchiusi tra virgolette. Includere gli spazi vuoti nella stringa tra i segni.
 
-**msiexec /i A: \\Example.msi PROPERTY="Spazio vuoto incorporato"**
+**msiexec /i A: \\Example.msi PROPERTY="Embedded White Space"**
 
 Per cancellare una proprietà pubblica tramite la riga di comando, impostarne il valore su una stringa vuota.
 

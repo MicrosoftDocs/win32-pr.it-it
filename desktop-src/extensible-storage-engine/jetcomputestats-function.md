@@ -18,12 +18,12 @@ api_type:
 api_location:
 - ESENT.DLL
 ROBOTS: INDEX,FOLLOW
-ms.openlocfilehash: 1324722ed0bd239f4c5b26fbd3340d45f325e53c
-ms.sourcegitcommit: 9b5faa61c38b2d0c432b7f2dbee8c127b0e28a7e
+ms.openlocfilehash: d990e4ded7dc2485bec6b5ecf92d9999aad57ce5
+ms.sourcegitcommit: 4665ebce0c106bdb52eef36e544280b496b6f50b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/19/2021
-ms.locfileid: "122465818"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "122981974"
 ---
 # <a name="jetcomputestats-function"></a>Funzione JetComputeStats
 
@@ -79,12 +79,18 @@ Questa operazione può richiedere un utilizzo di risorse, perché ogni indice in
 
 I dati calcolati da questa operazione iniziano a diventare non aggiornati e la tabella viene successivamente aggiornata.
 
-Gli aggiornamenti al database apportati **da JetComputeStats** vengono evasi in modalità differita. Ciò significa che non verrà eseguita alcuna operazione di scaricamento del log e un arresto anomalo del sistema dopo la restituzione di JET_errSuccess da parte di **JetComputeStats** può comunque causare la perdita di questi aggiornamenti.
+Gli aggiornamenti al database apportati **da JetComputeStats** vengono evasi in modalità differita. Ciò significa che non verrà eseguita alcuna operazione di scaricamento del log e un arresto anomalo del sistema in seguito a un ritorno di JET_errSuccess da parte di **JetComputeStats** può comunque causare la perdita di questi aggiornamenti.
 
 #### <a name="requirements"></a>Requisiti
 
 
-| | | <p><strong>Client</strong></p> | <p>Richiede Windows Vista, Windows XP o Windows 2000 Professional.</p> | | <p><strong>Server</strong></p> | <p>Richiede Windows Server 2008, Windows Server 2003 o Windows 2000 Server.</p> | | <p><strong>Intestazione</strong></p> | <p>Dichiarato in Esent.h.</p> | | <p><strong>Libreria</strong></p> | <p>Usare ESENT.lib.</p> | | <p><strong>DLL</strong></p> | <p>Richiede ESENT.dll.</p> | 
+| Requisito | Valore |
+|------------|----------|
+| <p><strong>Client</strong></p> | <p>Richiede Windows Vista, Windows XP o Windows 2000 Professional.</p> | 
+| <p><strong>Server</strong></p> | <p>Richiede Windows Server 2008, Windows Server 2003 o Windows 2000 Server.</p> | 
+| <p><strong>Intestazione</strong></p> | <p>Dichiarato in Esent.h.</p> | 
+| <p><strong>Libreria</strong></p> | <p>Usare ESENT.lib.</p> | 
+| <p><strong>DLL</strong></p> | <p>Richiede ESENT.dll.</p> | 
 
 
 

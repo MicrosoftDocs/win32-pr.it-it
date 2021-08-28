@@ -1,12 +1,12 @@
 ---
 title: Metodo GetPatchProperties della classe Win32_RDMSVirtualDesktopCollection
-description: Recupera le proprietà di un processo di provisioning degli aggiornamenti software per le macchine virtuali in un insieme di desktop virtuali.
+description: Recupera le proprietà di un processo di provisioning degli aggiornamenti software per le macchine virtuali in una raccolta di desktop virtuali.
 ms.assetid: 9f228d89-0613-49c7-8169-48491c3a2d9b
 ms.tgt_platform: multiple
 keywords:
-- Servizi Desktop remoto del metodo GetPatchProperties
-- Metodo GetPatchProperties Servizi Desktop remoto, classe Win32_RDMSVirtualDesktopCollection
-- Classe Win32_RDMSVirtualDesktopCollection Servizi Desktop remoto, metodo GetPatchProperties
+- Metodo GetPatchProperties Servizi Desktop remoto
+- Metodo GetPatchProperties Servizi Desktop remoto , Win32_RDMSVirtualDesktopCollection classe
+- Win32_RDMSVirtualDesktopCollection classe Servizi Desktop remoto metodo , GetPatchProperties
 topic_type:
 - apiref
 api_name:
@@ -17,16 +17,16 @@ api_type:
 - COM
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 2f0ca45c97512818aa5f8a9ea851d18fa5554c32
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: 969a73e372dee430b280d4d16c267c6d8b75dda236c3ae7362d2392cb1bf8bf3
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "104518184"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120099511"
 ---
-# <a name="getpatchproperties-method-of-the-win32_rdmsvirtualdesktopcollection-class"></a>Metodo GetPatchProperties della \_ classe RDMSVirtualDesktopCollection Win32
+# <a name="getpatchproperties-method-of-the-win32_rdmsvirtualdesktopcollection-class"></a>Metodo GetPatchProperties della classe \_ WIN32 RDMSVirtualDesktopCollection
 
-Recupera le proprietà di un processo di provisioning degli aggiornamenti software per le macchine virtuali in un insieme di desktop virtuali.
+Recupera le proprietà di un processo di provisioning degli aggiornamenti software per le macchine virtuali in una raccolta di desktop virtuali.
 
 ## <a name="syntax"></a>Sintassi
 
@@ -46,28 +46,28 @@ uint32 GetPatchProperties(
 
 <dl> <dt>
 
-*StartTime* \[ out\]
+*StartTime* \[ Cambio\]
 </dt> <dd>
 
-Data e ora in cui installare gli aggiornamenti.
+Data e ora di installazione degli aggiornamenti.
 
 </dd> <dt>
 
-*ForceLogOffTime* \[ out\]
+*ForceLogOffTime* \[ Cambio\]
 </dt> <dd>
 
 Data e ora in cui il sistema disconnetterà gli utenti delle macchine virtuali.
 
 </dd> <dt>
 
-*JobGuid* \[ out\]
+*JobGuid* \[ Cambio\]
 </dt> <dd>
 
-**GUID** che identifica in modo univoco il processo di provisioning.
+GUID **che** identifica in modo univoco il processo di provisioning.
 
 </dd> <dt>
 
-*Stato* \[ di out\]
+*Stato* \[ Cambio\]
 </dt> <dd>
 
 Stato del processo di provisioning.
@@ -86,8 +86,8 @@ Restituisce 0 in caso di esito positivo, in caso contrario restituisce un codice
 |-------------------------------------|---------------------------------------------------------------------------------------------|
 | Client minimo supportato<br/> | Nessuno supportato<br/>                                                                   |
 | Server minimo supportato<br/> | Windows Server 2012<br/>                                                              |
-| Spazio dei nomi<br/>                | Radice \\ CIMv2 \\ RDBMS<br/>                                                                |
-| MOF<br/>                      | <dl> <dt>RDManagement. mof</dt> </dl> |
+| Spazio dei nomi<br/>                | Rdms \\ CIMv2 \\ radice<br/>                                                                |
+| MOF<br/>                      | <dl> <dt>RDManagement.mof</dt> </dl> |
 | DLL<br/>                      | <dl> <dt>RDMS.dll</dt> </dl>         |
 
 
@@ -96,7 +96,7 @@ Restituisce 0 in caso di esito positivo, in caso contrario restituisce un codice
 
 <dl> <dt>
 
-[**\_RDMSVirtualDesktopCollection Win32**](win32-rdmsvirtualdesktopcollection.md)
+[**Win32 \_ RDMSVirtualDesktopCollection**](win32-rdmsvirtualdesktopcollection.md)
 </dt> </dl>
 
  

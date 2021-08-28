@@ -1,24 +1,24 @@
 ---
-title: Attributo FocusSize di la
-description: Attributo FocusSize di la
+title: Attributo VmL FocusSize
+description: Attributo VmL FocusSize
 ms.assetid: 6ca5af2c-3064-423f-a7bb-202f23bf95da
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 8149973932e9601be2caa0306eefcec08951b238
-ms.sourcegitcommit: 592c9bbd22ba69802dc353bcb5eb30699f9e9403
+ms.openlocfilehash: 322bea9f9d78ff76cd631cc36149939bb5b3db5f87dc9c80e9f2a5100f031c1e
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/20/2020
-ms.locfileid: "104047337"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120099261"
 ---
-# <a name="vml-focussize-attribute"></a>Attributo FocusSize di la
+# <a name="vml-focussize-attribute"></a>Attributo VmL FocusSize
 
-In questo argomento viene descritto la, una funzionalità deprecata a partire da Windows Internet Explorer 9. Le pagine Web e le applicazioni che si basano su la devono essere migrate a SVG o ad altri standard ampiamente supportati.
+Questo argomento descrive VML, una funzionalità deprecata a Windows Internet Explorer 9. È necessario eseguire la migrazione di pagine Web e applicazioni basate su VML a SVG o ad altri standard ampiamente supportati.
 
 > [!Note]  
-> Al 2011 dicembre, questo argomento è stato archiviato. Di conseguenza, non viene più gestita attivamente. Per altre informazioni, vedere [contenuto archiviato](/previous-versions/windows/internet-explorer/ie-developer/). Per informazioni, suggerimenti e indicazioni per la versione corrente di Windows Internet Explorer, vedere il [centro per sviluppatori di Internet Explorer](https://msdn.microsoft.com/ie/).
+> A partire da dicembre 2011, questo argomento è stato archiviato. Di conseguenza, non viene più gestito attivamente. Per altre informazioni, vedere [Contenuto archiviato](/previous-versions/windows/internet-explorer/ie-developer/). Per informazioni, consigli e indicazioni sulla versione corrente di Windows Internet Explorer, vedere Internet Explorer [Developer Center.](https://msdn.microsoft.com/ie/)
 
- 
+ 
 
 Definisce le dimensioni dello stato attivo per i riempimenti radiali. Proprietà di lettura/scrittura. **VgVector2D**.
 
@@ -26,25 +26,25 @@ Definisce le dimensioni dello stato attivo per i riempimenti radiali. Proprietà
 
 [Fill](msdn-online-vml-fill-element.md)
 
-**Sintassi Tag**
+**Sintassi dei tag**
 
-<v: *element* focussize = " *Expression* " >
+<v: *elemento* focussize=" *espressione* ">
 
 **Sintassi dello script**
 
-*element* . focussize = "*Expression*"
+*element* .focussize="*expression*"
 
-*espressione* = *elemento*. focussize
+*expression* = *elemento*.focussize
 
 **Osservazioni:**
 
-I valori sono frazioni della larghezza e dell'altezza della forma. Il primo è una percentuale del riempimento al bordo destro della forma e la seconda è una percentuale del riempimento nella parte inferiore della forma. Il valore predefinito è 0,0. Un valore **FocusSize** pari a 100%, 100% e un **FocusPosition** di 0, 0 renderebbe il totale di color2 che dominano completamente la Blend. Per le miscele bilanciate è consigliabile utilizzare valori di dimensioni ridotte di circa il 10%.
+I valori sono frazioni della larghezza e dell'altezza della forma. Il primo è una percentuale di riempimento sul bordo destro della forma e il secondo è una percentuale del riempimento alla fine della forma. Il valore predefinito è 0,0. Un **valore FocusSize** pari a 100%,100% e **focusPosition** pari a 0,0 rende color2 dominare completamente la fusione. Per le blend bilanciate sono consigliati valori di piccole dimensioni di circa il 10%,10%.
 
-*Attributo standard la*
+*Attributo standard VML*
 
 **Esempio**
 
-Il riempimento radiale creerà una Blend che inizia al centro come blu e diventa rossa su tutti e quattro i bordi. Il centro della Blend viene definito da **FocusPosition** e la dimensione del colore iniziale interno è determinata da **FocusSize**.
+Il riempimento radiale creerà una sfumatura che inizia al centro come blu e diventa rossa su tutti e quattro i bordi. Il centro della fusione è definito da **FocusPosition** e le dimensioni del colore iniziale interno sono determinate da **FocusSize**.
 
 
 ```HTML
@@ -60,6 +60,6 @@ Il riempimento radiale creerà una Blend che inizia al centro come blu e diventa
 
 
 
- 
+ 
 
- 
+ 

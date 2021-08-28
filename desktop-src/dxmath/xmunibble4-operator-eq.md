@@ -11,12 +11,12 @@ api_name: ''
 api_type:
 - NA
 api_location: ''
-ms.openlocfilehash: fe5a244f92c11cb0874709c6712748daf1d7196fca7250db49f9e94c3cf11122
-ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
+ms.openlocfilehash: 3ca5c952642ff71913e6796d10708db2c313854e
+ms.sourcegitcommit: c276a8912787b2cda74dcf54eb96df961bb1188b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119725761"
+ms.lasthandoff: 08/20/2021
+ms.locfileid: "122627745"
 ---
 # <a name="xmunibble4-operator--operators"></a>Operatore XMUNIBBLE4 = operatori
 
@@ -30,19 +30,19 @@ Assegna i dati del componente vettoriale all'istanza corrente [**di XMUNIBBLE4.*
 
 <table>
 <colgroup>
-<col style="width: 50%" />
-<col style="width: 50%" />
+<col  />
+<col  />
 </colgroup>
 <thead>
 <tr class="header">
-<th style="text-align: left;">Operatore</th>
-<th style="text-align: left;">Descrizione</th>
+<th >Operatore</th>
+<th >Descrizione</th>
 </tr>
 </thead>
 <tbody>
 <tr class="odd">
-<td style="text-align: left;"><a href="/windows/desktop/api/directxpackedvector/nf-directxpackedvector-xmunibble4-operator-assign(uint16_t)"><strong>XMUNIBBLE4::operator = (const uint16_t)</strong></a></td>
-<td style="text-align: left;">Assegna i dati del componente vettoriale in un'istanza di <code>uint16_t</code> all'istanza corrente di <code>XMUNIBBLE4</code> . <br/>
+<td ><a href="/windows/desktop/api/directxpackedvector/nf-directxpackedvector-xmunibble4-operator-assign(uint16_t)"><strong>XMUNIBBLE4::operator = (const uint16_t)</strong></a></td>
+<td >Assegna i dati del componente vettoriale in un'istanza di <code>uint16_t</code> all'istanza corrente di <code>XMUNIBBLE4</code> . <br/>
 <blockquote>
 [!Note]<br />
 Questo operatore è disponibile solo in C++.
@@ -50,8 +50,8 @@ Questo operatore è disponibile solo in C++.
 <br/></td>
 </tr>
 <tr class="even">
-<td style="text-align: left;"><a href="/windows/desktop/api//rrascfg/nf-rrascfg-ieapproviderconfig-initialize"><strong>XMUNIBBLE4::operator = (const XMUNIBBLE4&)</strong></a></td>
-<td style="text-align: left;">Assegna i dati del componente vettoriale da un'istanza <code>XMUNIBBLE4</code> di all'istanza corrente di <code>XMUNIBBLE4</code> . <br/> Questo operatore assegna i dati del componente vettoriale da un'istanza di <a href="/windows/desktop/api/directxpackedvector/ns-directxpackedvector-xmunibble4"><strong>XMUNIBBLE4</strong></a> all'istanza corrente di <code>XMUNIBBLE4</code> . <br/></td>
+<td ><a href="/windows/desktop/api//rrascfg/nf-rrascfg-ieapproviderconfig-initialize"><strong>XMUNIBBLE4::operator = (const XMUNIBBLE4&)</strong></a></td>
+<td >Assegna i dati del componente vettoriale da un'istanza <code>XMUNIBBLE4</code> di all'istanza corrente di <code>XMUNIBBLE4</code> . <br/> Questo operatore assegna i dati del componente vettoriale da un'istanza di <a href="/windows/desktop/api/directxpackedvector/ns-directxpackedvector-xmunibble4"><strong>XMUNIBBLE4</strong></a> all'istanza corrente di <code>XMUNIBBLE4</code> . <br/></td>
 </tr>
 </tbody>
 </table>

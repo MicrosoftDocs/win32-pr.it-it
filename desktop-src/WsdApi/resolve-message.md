@@ -1,35 +1,35 @@
 ---
-description: Messaggio WS-Discovery usato da un client per cercare i servizi nella rete in base al nome.
+description: Messaggio WS-Discovery utilizzato da un client per cercare i servizi in rete in base al nome.
 ms.assetid: b963bd2a-47cb-4f8d-8272-a586e6d6a047
 title: Risolvere il messaggio
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 54887db566ee428e6bfe9ec2de9016a637884b092611a85e607c55aaa4176abc
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: f1ed3ab1778fada267a72207309eb8cb515727d5
+ms.sourcegitcommit: c276a8912787b2cda74dcf54eb96df961bb1188b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "118991611"
+ms.lasthandoff: 08/20/2021
+ms.locfileid: "122627767"
 ---
 # <a name="resolve-message"></a>Risolvere il messaggio
 
-Un messaggio di risoluzione è WS-Discovery usato da un client per cercare i servizi in rete in base al nome. Un client invierà un messaggio Resolve solo quando verrà inviato un messaggio HTTP, ad esempio una richiesta [get](get--metadata-exchange--http-request-and-message.md) metadata exchange o un messaggio di servizio. Per altre informazioni sulla risoluzione dei messaggi, vedere la sezione 6.1 della [specifica WS-Discovery.](https://specs.xmlsoap.org/ws/2005/04/discovery/ws-discovery.pdf)
+Un messaggio di risoluzione è un WS-Discovery usato da un client per cercare i servizi in rete in base al nome. Un client invierà un messaggio Resolve solo quando verrà inviato un messaggio HTTP, ad esempio una richiesta [get](get--metadata-exchange--http-request-and-message.md) metadata exchange o un messaggio del servizio. Per altre informazioni sulla risoluzione dei messaggi, vedere la sezione 6.1 della [specifica WS-Discovery](https://specs.xmlsoap.org/ws/2005/04/discovery/ws-discovery.pdf).
 
 Un messaggio di risoluzione viene inviato dal multicast UDP alla porta 3702. I messaggi Unicast Resolve non sono supportati.
 
-I client DPWS inviano messaggi Resolve. L'elenco seguente illustra gli scenari in cui WSDAPI invierà un messaggio resolve.
+I client DPWS inviano messaggi Resolve. L'elenco seguente illustra gli scenari in cui WSDAPI invierà un messaggio Resolve.
 
--   Un client di individuazione delle funzioni invia un messaggio di risoluzione se non sono inclusi XAddrs in [un messaggio ProbeMatches.](probematches-message.md)
+-   Un client di individuazione delle funzioni invia un messaggio Resolve se non sono inclusi XAddr in [un messaggio ProbeMatches.](probematches-message.md)
 -   Un client che chiama [**i metodi IWSDiscoveryProvider::SearchById**](/windows/desktop/api/WsdDisco/nf-wsddisco-iwsdiscoveryprovider-searchbyid) invierà un messaggio Resolve.
--   Un client che chiama [**WSDCreateDeviceProxy**](/windows/desktop/api/WsdClient/nf-wsdclient-wsdcreatedeviceproxy) può inviare un messaggio Resolve se un indirizzo di dispositivo logico viene passato a *pszDeviceId*.
--   Un client che chiama [**WSDCreateDeviceProxyAdvanced**](/windows/desktop/api/WsdClient/nf-wsdclient-wsdcreatedeviceproxyadvanced) invierà un messaggio Resolve se la funzione viene chiamata con il parametro pDeviceAddress impostato su **NULL.**
+-   Un client che [**chiama WSDCreateDeviceProxy**](/windows/desktop/api/WsdClient/nf-wsdclient-wsdcreatedeviceproxy) può inviare un messaggio Resolve se un indirizzo del dispositivo logico viene passato a *pszDeviceId*.
+-   Un client che [**chiama WSDCreateDeviceProxyAdvanced**](/windows/desktop/api/WsdClient/nf-wsdclient-wsdcreatedeviceproxyadvanced) invierà un messaggio Resolve se la funzione viene chiamata con il parametro pDeviceAddress impostato su **NULL.**
 
 > [!Note]  
-> Questo argomento illustra un messaggio DPWS di esempio generato da client e host WSDAPI. WSDAPI anaserà e accetterà altri messaggi conformi a DPWS che non sono conformi a questo esempio. Non usare questo esempio per verificare l'interoperabilità DPWS. usare [WSDAPI Basic Interoperability Tool (WSDBIT).](https://msdn.microsoft.com/library/cc264250.aspx)
+> Questo argomento illustra un messaggio DPWS di esempio generato da client e host WSDAPI. WSDAPI analizza e accetta altri messaggi conformi a DPWS non conformi a questo esempio. Non usare questo esempio per verificare l'interoperabilità di DPWS. utilizzare [WSDAPI Basic Interoperability Tool (WSDBIT).](https://msdn.microsoft.com/library/cc264250.aspx)
 
  
 
-Il messaggio SOAP seguente mostra un messaggio resolve di esempio.
+Nel messaggio SOAP seguente viene illustrato un messaggio Resolve di esempio.
 
 ``` syntax
 <?xml version="1.0" encoding="utf-8" ?>
@@ -66,9 +66,9 @@ Un messaggio Risolvi presenta i punti di interesse seguenti.
 
 <table>
 <colgroup>
-<col style="width: 33%" />
-<col style="width: 33%" />
-<col style="width: 33%" />
+<col  />
+<col  />
+<col  />
 </colgroup>
 <thead>
 <tr class="header">
@@ -83,7 +83,7 @@ Un messaggio Risolvi presenta i punti di interesse seguenti.
 <td><pre class="syntax" data-space="preserve"><code><wsa:Action>
     https://schemas.xmlsoap.org/ws/2005/04/discovery/Resolve
 </wsa:Action></code></pre></td>
-<td>L'azione Risolvi SOAP identifica il messaggio come messaggio di risoluzione.</td>
+<td>L'azione Resolve SOAP identifica il messaggio come messaggio Resolve.</td>
 </tr>
 <tr class="even">
 <td>MessageID</td>

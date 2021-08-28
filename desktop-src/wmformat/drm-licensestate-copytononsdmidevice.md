@@ -1,9 +1,9 @@
 ---
 title: DRM_LicenseState_CopyToNonSDMIDevice
-description: La \_ Proprietà DRM LicenseState \_ CopyToNonSDMIDevice contiene una \_ \_ \_ struttura di dati di stato di licenza WM che contiene i dettagli sul modo in cui questo diritto è stato applicato al contenuto.
+description: La proprietà DRM \_ LicenseState \_ CopyToNonSDMIDevice contiene una struttura WM LICENSE STATE DATA che contiene informazioni dettagliate su come questo diritto è \_ stato applicato al \_ \_ contenuto.
 ms.assetid: aa0099b0-c6f8-4e27-a1f4-b98155d277aa
 keywords:
-- DRM_LicenseState_CopyToNonSDMIDevice formato Windows Media
+- DRM_LicenseState_CopyToNonSDMIDevice windows Media Format
 topic_type:
 - apiref
 api_name:
@@ -12,16 +12,16 @@ api_type:
 - NA
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: bfebf4392ecffb6220b0eeda6e49e3c6ca89084c
-ms.sourcegitcommit: 592c9bbd22ba69802dc353bcb5eb30699f9e9403
+ms.openlocfilehash: 9546adc9c4cad2e2a56bcf1b295b5823121396daf86e4fd94ac7a54e3787d807
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/20/2020
-ms.locfileid: "104337766"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120110473"
 ---
-# <a name="drm_licensestate_copytononsdmidevice"></a>\_CopyToNonSDMIDevice LICENSESTATE \_ DRM
+# <a name="drm_licensestate_copytononsdmidevice"></a>DRM \_ LicenseState \_ CopyToNonSDMIDevice
 
-La proprietà **DRM \_ LicenseState \_ CopyToNonSDMIDevice** contiene una struttura di [**\_ \_ \_ dati di stato di licenza WM**](/previous-versions/windows/desktop/legacy/dd757942(v=vs.85)) che contiene i dettagli sul modo in cui questo diritto è stato applicato al contenuto.
+La **proprietà DRM \_ LicenseState \_ CopyToNonSDMIDevice** contiene una struttura [**WM LICENSE STATE \_ \_ \_ DATA**](/previous-versions/windows/desktop/legacy/dd757942(v=vs.85)) che contiene informazioni dettagliate su come questo diritto è stato applicato al contenuto.
 
 ## <a name="global-constant"></a>Costante globale
 
@@ -29,11 +29,11 @@ g \_ wszWMDRM \_ LicenseState \_ CopyToNonSDMIDevice
 
 ## <a name="data-type"></a>Tipo di dati
 
-**\_binario di tipo WMT \_**
+**TIPO \_ BINARIO WMT \_**
 
 ## <a name="remarks"></a>Commenti
 
-Si tratta di una proprietà di sola lettura che viene recuperata utilizzando [**IWMDRMReader:: GetDRMProperty**](/previous-versions/windows/desktop/api/Wmsdkidl/nf-wmsdkidl-iwmdrmreader-getdrmproperty).
+Si tratta di una proprietà di sola lettura recuperata tramite [**IWMDRMReader::GetDRMProperty**](/previous-versions/windows/desktop/api/Wmsdkidl/nf-wmsdkidl-iwmdrmreader-getdrmproperty).
 
 ## <a name="see-also"></a>Vedi anche
 
@@ -42,6 +42,6 @@ Si tratta di una proprietà di sola lettura che viene recuperata utilizzando [**
 [**Proprietà DRM**](drm-properties.md)
 </dt> </dl>
 
- 
+ 
 
- 
+ 

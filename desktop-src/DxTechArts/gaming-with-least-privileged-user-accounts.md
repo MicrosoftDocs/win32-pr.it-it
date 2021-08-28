@@ -4,12 +4,12 @@ description: Questo articolo descrive in che modo gli sviluppatori di giochi pos
 ms.assetid: 1b7cc3c9-b180-14b1-53c8-57f9e545d009
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 939d22b1d8bf381e98c5b6a7222be29b565c3d9e1f0758788aff94b0915b1807
-ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
+ms.openlocfilehash: 8db15302eb856aaeb05c68fae4746110dd42cb4a
+ms.sourcegitcommit: 61a4c522182aa1cacbf5669683d9570a3bf043b2
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119340741"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "122887386"
 ---
 # <a name="gaming-with-least-privileged-user-accounts"></a>Giochi con Least-Privileged account utente
 
@@ -24,15 +24,15 @@ Questo articolo descrive in che modo gli sviluppatori di giochi possono creare g
 
 ## <a name="introduction"></a>Introduzione
 
-Windows gestisce gli utenti con gli account. Attualmente, più dell'80% degli utenti di computer a casa condivide il computer con altri membri della famiglia. Quando più utenti condividono un computer Windows, vengono creati più account utente e ogni utente accede con un singolo account per accedere al computer. Con la crescente consapevolezza per la sicurezza, più persone gestiscono i computer con account utente con privilegi minimi, noti anche come account utente limitati, che non hanno il controllo completo sul sistema. Gli account amministratore hanno in genere accesso illimitato a ogni parte del computer. Questo può influire sul funzionamento Windows giochi basati su applicazioni.
+Windows gestisce gli utenti con gli account. Attualmente, più dell'80% degli utenti di computer a casa condivide il computer con altri membri della famiglia. Quando più utenti condividono un Windows, vengono creati più account utente e ogni utente accede con un singolo account per accedere al computer. Con la crescente consapevolezza per la sicurezza, più persone gestiscono i computer con account utente con privilegi minimi, noti anche come account utente limitati, che non hanno il controllo completo sul sistema. Gli account amministratore hanno in genere accesso illimitato a ogni parte del computer. Questo può influire sul funzionamento Windows giochi basati su codice.
 
 Gli sviluppatori di giochi che scrivono giochi possono ottenere vantaggi aggiuntivi per lavorare con account utente con privilegi minimi. In Windows Vista e versioni successive vengono applicati account utente con privilegi minimi, il che significa che ogni account nel sistema, ad eccezione dell'amministratore locale, è un account utente con privilegi minimi. Ciò influirà sul modo in cui i giochi che non seguono le linee guida (applicazioni legacy) vengono eseguiti Windows Vista e versioni successive. Ad esempio, quando un'applicazione tenta di scrivere in una cartella o in un valore del Registro di sistema per cui non dispone dell'autorizzazione, la scrittura di file viene reindirizzata a un archivio file virtuale per l'utente. Questo archivio file virtuale risiederà in una cartella a cui l'utente ha accesso in scrittura. Questo comportamento potrebbe non sembrare irreversivo come l'esito negativo del tentativo di scrittura. Tuttavia, le applicazioni che creano file virtualizzati possono confondere gli utenti perché i file non verranno scritti nel percorso previsto dagli utenti. Ad esempio, i giochi che scrivono file con punteggio elevato nella stessa cartella della cartella eseguibile scriveranno questi file in una cartella virtualizzata. Di conseguenza, un utente non può visualizzare il punteggio elevato ottenuto da un altro utente perché ogni utente ha un archivio file virtualizzato separato.
 
 I giochi che seguono le linee guida in questo articolo verranno eseguiti con account utente con privilegi minimi e, di conseguenza, manterranno la compatibilità con Windows Vista e versioni successive.
 
-## <a name="file-access-for-least-privileged-user-accounts"></a>Accesso ai file per Least-Privileged account utente
+## <a name="file-access-for-least-privileged-user-accounts"></a>Accesso ai file per Least-Privileged utente
 
-Windows supporta due file system: FAT32 e NTFS. FAT32 è una versione legacy file system supportata solo per la compatibilità con le versioni precedenti. NTFS supporta autorizzazioni di file più potenti e affidabili. L'uso di NTFS è in espansione perché i rivenditori stanno spedendo nuovi computer con Windows preinstallati in un disco rigido partizionato NTFS. In un sistema XP Windows NTFS, gli utenti con account utente con privilegi minimi hanno solo accesso limitato a diverse cartelle. Tuttavia, avrebbero accesso completo in un sistema basato su FAT32 Windows XP.
+Windows supporta due file system: FAT32 e NTFS. FAT32 è una versione legacy file system supportata solo per la compatibilità con le versioni precedenti. NTFS supporta autorizzazioni di file più potenti e affidabili. L'uso di NTFS è in espansione perché i rivenditori stanno spedendo nuovi computer con Windows preinstallati in un disco rigido partizionato NTFS. In un sistema WINDOWS XP basato su NTFS, gli utenti con account utente con privilegi minimi hanno solo accesso limitato a diverse cartelle. Tuttavia, avrebbero accesso completo in un sistema basato su FAT32 Windows XP.
 
 La tabella seguente elenca il percorso predefinito di queste cartelle e le relative autorizzazioni.
 
@@ -40,10 +40,10 @@ La tabella seguente elenca il percorso predefinito di queste cartelle e le relat
 
 | Percorso                                               | Contenuto della cartella              | Lettura | Scrittura | Creazione/Eliminazione |
 |----------------------------------------------------|------------------------------|------|-------|---------------|
-| <Drive>: \\ Windows                            | Il Windows operativo | X    |       |               |
-| <Drive>: \\ Programmi                      | File eseguibili dell'applicazione | X    |       |               |
-| <Drive>: \\ documenti e nome Impostazioni utente \\\* | File di ogni utente            | X    | X     | X             |
-| <Drive>: \\ documenti e Impostazioni tutti gli \\ utenti  | Tutti i file utente               | X    | X     | X             |
+| &lt;Unità &gt; : \\ Windows                            | Il Windows operativo | X    |       |               |
+| &lt;Unità: &gt; \\ Programmi                      | File eseguibili dell'applicazione | X    |       |               |
+| &lt;Unità &gt; : Documenti e nome \\ \\ Impostazioni utente\* | File di ogni utente            | X    | X     | X             |
+| &lt;Unità: &gt; Documenti e Impostazioni tutti gli \\ \\ utenti  | Tutti i file utente               | X    | X     | X             |
 
 
 
@@ -155,16 +155,16 @@ Vale la pena notare che durante l'installazione le informazioni del Registro di 
 
 Quando si disinstalla il gioco, è necessario un impegno aggiuntivo per rimuovere ogni valore che il gioco ha scritto nel registro. Poiché il programma di disinstallazione viene eseguito da una sola persona, in genere l'amministratore, la semplice eliminazione delle informazioni rilevanti in HKEY LOCAL MACHINE e HKEY CURRENT USER non rimuoverà i valori per \_ \_ gli altri \_ \_ utenti. Un modo per rimuovere le informazioni per utente nel Registro di sistema è enumerare la radice hive del Registro di sistema HKEY \_ USERS. Ogni sottochiave in HKEY \_ USERS corrisponde all'hive HKEY \_ CURRENT USER per un determinato utente nel \_ sistema. Enumerando HKEY USERS e rimuovendo le informazioni specifiche del gioco in ogni sottochiave, il programma di disinstallazione può garantire che nessuna informazione \_ sia stata lasciata indietro.
 
-## <a name="patching-with-least-privileged-user-accounts"></a>Applicazione di patch con Least-Privileged utente
+## <a name="patching-with-least-privileged-user-accounts"></a>Applicazione di patch Least-Privileged account utente
 
 L'applicazione di patch a un gioco comporta l'aggiornamento dei file del gioco. Di conseguenza, in genere richiede l'accesso in scrittura alla cartella del programma del gioco. L'applicazione di patch a un gioco è un processo semplice quando viene eseguito da un amministratore perché ha accesso illimitato alla cartella del programma del gioco. Al contrario, è stato tradizionalmente difficile, se non impossibile, per un utente con privilegi minimi applicare patch ai giochi a causa della restrizione di accesso. A questo [Windows è](/windows/desktop/Msi/windows-installer-portal) stato migliorato il programma di installazione per rendere possibile l'applicazione di patch agli account utente con privilegi minimi. Per sfruttare i vantaggi di questa funzionalità, i giochi sono invitati a usare Windows programma di installazione per l'installazione e l'applicazione di patch.
 
-A partire Windows Installer 3.0, le patch dell'applicazione possono essere applicate dagli utenti con privilegi minimi quando vengono soddisfatte determinate condizioni. Queste condizioni sono:
+A partire Windows Installer 3.0, le patch delle applicazioni possono essere applicate dagli utenti con privilegi minimi quando vengono soddisfatte determinate condizioni. Queste condizioni sono:
 
 -   L'applicazione è stata installata Windows Installer 3.0.
 -   L'applicazione è stata installata in origine per computer.
 -   L'applicazione viene installata da supporti rimovibili, ad esempio CD-ROM o DVD (Digital Video Disc).
--   Le patch vengono firmate digitalmente da un certificato identificato dal pacchetto del programma di installazione originale (.msi file).
+-   Le patch sono firmate digitalmente da un certificato identificato dal pacchetto del programma di installazione originale (.msi file).
 -   Le patch possono essere convalidate in base alla firma digitale.
 -   Il pacchetto di installazione originale non ha disabilitato l'applicazione di patch all'account utente con privilegi minimi.
 -   L'amministratore di sistema non ha disabilitato l'applicazione di patch all'account utente con privilegi minimi tramite criteri di sistema.

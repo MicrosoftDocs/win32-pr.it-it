@@ -7,25 +7,25 @@ MSHAttr:
 title: MmsConfiguration
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 2cb98506476558ed0e39df11bab4b9446de4fd3c
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 843cb0fc67211bec13295a92e467e8358d407312
+ms.sourcegitcommit: 9b5faa61c38b2d0c432b7f2dbee8c127b0e28a7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104226055"
+ms.lasthandoff: 08/19/2021
+ms.locfileid: "122480287"
 ---
 # <a name="span-idwwan_profile_v4element_mmsconfigurationspanmmsconfiguration"></a><span id="WWAN_profile_v4.element_MmsConfiguration"></span>MmsConfiguration
 
-Informazioni di configurazione per il servizio messaggistica multimediale (MMS).
+Informazioni di configurazione per MmS (Multimedia Messaging Service).
 
 Oltre a impostare gli elementi di configurazione all'interno di questo elemento, un profilo MMS deve avere le impostazioni seguenti.
 
--   L'elemento [**Name**](element-name.md) deve contenere un nome univoco a livello di sistema.
--   Il relativo [**ProfileCreationType**](./schema-profilecreationtype-mbnprofile-element.md) deve essere impostato su **UserProvisioned**.
--   Il [**SimIccID**](/windows/win32/api/mbnapi/nf-mbnapi-imbnsubscriberinformation-get_simiccid) deve contenere il ICCID della SIM a cui è destinato questo profilo.
--   Il relativo [**ConnectionMode**](./schema-connectionmode-mbnprofile-element.md) deve essere impostato su **Manual**.
--   Il [**PurposeGroupGuid**](element-purposegroupguid.md) deve contenere il GUID per il gruppo di scopi di MMS.
--   Il valore di [**IsAdditionalPdpContextProfile**](/previous-versions/windows/desktop/legacy/mt156987(v=vs.85)) deve essere impostato su **true**.
+-   [**L'elemento Name**](element-name.md) deve contenere un nome univoco a livello di sistema.
+-   [**ProfileCreationType deve**](./schema-profilecreationtype-mbnprofile-element.md) essere impostato su **UserProvisioned.**
+-   [**SimIccID deve**](/windows/win32/api/mbnapi/nf-mbnapi-imbnsubscriberinformation-get_simiccid) contenere l'ICCID della SIM a cui è destinato questo profilo.
+-   ConnectionMode [**deve**](./schema-connectionmode-mbnprofile-element.md) essere impostato su **Manual.**
+-   [**PurposeGroupGuid deve**](element-purposegroupguid.md) contenere il GUID per il gruppo di scopi MMS.
+-   [**IsAdditionalPdpContextProfile**](/previous-versions/windows/desktop/legacy/mt156987(v=vs.85)) deve essere impostato su **true.**
 
 ## <a name="element-hierarchy"></a>Gerarchia degli elementi
 
@@ -53,77 +53,35 @@ Oltre a impostare gli elementi di configurazione all'interno di questo elemento,
 
 ### <a name="span-idattributesspanspan-idattributesspanattributes"></a><span id="attributes"></span><span id="ATTRIBUTES"></span>Attributi
 
-Nessuna.
+Nessuno.
 
 ### <a name="span-idchild_elementsspanspan-idchild_elementsspanspan-idchild_elementsspanchild-elements"></a><span id="Child_Elements"></span><span id="child_elements"></span><span id="CHILD_ELEMENTS"></span>Elementi figlio
 
-<table>
-<colgroup>
-<col style="width: 50%" />
-<col style="width: 50%" />
-</colgroup>
-<thead>
-<tr class="header">
-<th>Elemento figlio</th>
-<th>Descrizione</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td><a href="element-mmsmaximummessagesize.md">MmsMaximumMessageSize</a></td>
-<td><p>Specifica la dimensione massima dei messaggi MMS, espressa in kilobyte. facoltativo.</p></td>
-</tr>
-<tr class="even">
-<td><a href="element-mmscport.md">MmscPort</a></td>
-<td><p>Specifica il numero di porta del server MMSC per il dispositivo. Specificare 0 per indicare che non è specificata alcuna porta specifica. facoltativo.</p></td>
-</tr>
-<tr class="odd">
-<td><a href="element-mmscurl.md">MmscUrl</a></td>
-<td><p>Specifica l'URL del server MMSC per il dispositivo. facoltativo.</p></td>
-</tr>
-</tbody>
-</table>
+
+| Elemento figlio | Descrizione | 
+|---------------|-------------|
+| <a href="element-mmsmaximummessagesize.md">MmsMaximumMessageSize</a> | <p>Specifica le dimensioni massime dei messaggi MMS, in kilobyte. facoltativo.</p> | 
+| <a href="element-mmscport.md">MmscPort</a> | <p>Specifica il numero di porta del server MMSC per il dispositivo. Specificare 0 per indicare che non è specificata alcuna porta specifica. facoltativo.</p> | 
+| <a href="element-mmscurl.md">MmscUrl</a> | <p>Specifica l'URL del server MMSC per il dispositivo. facoltativo.</p> | 
+
 
  
 
 ### <a name="span-idparent_elementsspanspan-idparent_elementsspanparent-elements"></a><span id="parent_elements"></span><span id="PARENT_ELEMENTS"></span>Elementi padre
 
-<table>
-<colgroup>
-<col style="width: 50%" />
-<col style="width: 50%" />
-</colgroup>
-<thead>
-<tr class="header">
-<th>Elemento padre</th>
-<th>Descrizione</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td><a href="element-mbnprofileext.md">MBNProfileExt</a></td>
-<td><p>L'elemento <strong>MBNProfileExt</strong> è un'estensione dell'elemento MBNProfile precedente. Identifica un profilo a banda larga mobile con un set di opzioni più completo rispetto all'elemento MBNProfile.</p>
-<p>In un profilo possono essere presenti più elementi MbnProfileExt, che descrivono le impostazioni del profilo per un determinato set di condizioni operative. Usare l'elemento figlio <a href="element-profileconditionedon.md"><strong>ProfileConditionedOn</strong></a> di <strong>MBNProfileExt</strong> per specificare le condizioni operative che rendono il profilo attivo un profilo specifico.</p></td>
-</tr>
-</tbody>
-</table>
+
+| Elemento padre | Descrizione | 
+|----------------|-------------|
+| <a href="element-mbnprofileext.md">MBNProfileExt</a> | <p><strong>L'elemento MBNProfileExt</strong> è un'estensione dell'elemento MBNProfile precedente. Identifica un profilo Mobile Broadband con un set di opzioni più ricco rispetto all'elemento MBNProfile.</p><p>In un profilo possono essere presenti più elementi MbnProfileExt, che descrivono le impostazioni del profilo per un particolare set di condizioni operative. Usare <a href="element-profileconditionedon.md"><strong>l'elemento figlio ProfileConditionedOn</strong></a> di <strong>MBNProfileExt</strong> per specificare le condizioni operative che rendono un profilo specifico il profilo attivo.</p> | 
+
 
  
 
 ## <a name="requirements"></a>Requisiti
 
-<table>
-<colgroup>
-<col style="width: 50%" />
-<col style="width: 50%" />
-</colgroup>
-<tbody>
-<tr class="odd">
-<td><p>Spazio dei nomi</p></td>
-<td><p>https://www.microsoft.com/networking/WWAN/profile/v4</p></td>
-</tr>
-</tbody>
-</table>
+
+| | | <p>Spazio dei nomi</p> | <p>https://www.microsoft.com/networking/WWAN/profile/v4</p> | 
+
 
  
 

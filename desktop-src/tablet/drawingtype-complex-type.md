@@ -1,5 +1,5 @@
 ---
-description: Definisce il tipo che contiene l'input penna che è stato classificato dal motore di analisi del Journal come elemento di disegno (in contrapposizione a un elemento InkWord).
+description: Definisce il tipo che contiene l'input penna classificato dal motore di analisi journal come elemento Drawing (anziché un elemento InkWord).
 ms.assetid: 9a47c245-a5cf-414c-b5cc-bdb66b47596f
 title: Tipo complesso DrawingType
 ms.topic: reference
@@ -12,16 +12,16 @@ api_name:
 api_type:
 - Schema
 api_location: ''
-ms.openlocfilehash: f5a614c2b89cd887aaf40fd7c8f7a34e1196c11b
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: ddee1f2fe357b2a92892eca08f40983d4f2cfb2a7115a6a2f44f9c4503abc53d
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "106319572"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120110951"
 ---
 # <a name="drawingtype-complex-type"></a>Tipo complesso DrawingType
 
-Definisce il tipo che contiene l'input penna che è stato classificato dal motore di analisi del Journal come [elemento di disegno](drawing-element.md) (in contrapposizione a un [elemento InkWord](inkword-element.md)).
+Definisce il tipo che contiene l'input penna classificato dal motore di analisi journal come elemento [Drawing](drawing-element.md) (anziché un [elemento InkWord](inkword-element.md)).
 
 ``` syntax
 <xs:complexType name="DrawingType" />
@@ -33,7 +33,7 @@ Definisce il tipo che contiene l'input penna che è stato classificato dal motor
 
 | Requisito | Valore |
 |-------------------------------------|---------------------------------------------------------------|
-| Client minimo supportato<br/> | Solo app desktop Windows XP Tablet PC Edition \[\]<br/> |
+| Client minimo supportato<br/> | Windows Solo app desktop tablet PC Edition \[ XP\]<br/> |
 | Server minimo supportato<br/> | Nessuno supportato<br/>                                     |
 
 

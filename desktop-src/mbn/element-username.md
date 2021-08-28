@@ -16,18 +16,18 @@ api_location: ''
 topic_type:
 - APIRef
 - kbSyntax
-ms.openlocfilehash: b08d80957fa61150dd5ffa9b447e2e45ccbde0c5b8162520e8d030034c4eeeb1
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 1e3202b321c547309635a4ba5bb53d1b22276c72
+ms.sourcegitcommit: 4665ebce0c106bdb52eef36e544280b496b6f50b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "118975341"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "122981934"
 ---
 # <a name="span-idwwan_profile_v4element_usernamespanmbnprofileextusername-v4"></a><span id="WWAN_profile_v4.element_UserName"></span>MBNProfileExt \/ ... \/ UserName (v4)
 
 Nome utente da utilizzare per l'accesso.
 
-Per altre informazioni, vedere la documentazione per l'elemento [**UserName**](./schema-username-userlogoncred-element.md) v1.
+Per altri dettagli, vedere la documentazione per l'elemento [**UserName**](./schema-username-userlogoncred-element.md) v1.
 
 ## <a name="element-hierarchy"></a>Gerarchia degli elementi
 
@@ -63,41 +63,21 @@ Nessuno.
 
 ### <a name="span-idparent_elementsspanspan-idparent_elementsspanparent-elements"></a><span id="parent_elements"></span><span id="PARENT_ELEMENTS"></span>Elementi padre
 
-<table>
-<colgroup>
-<col style="width: 50%" />
-<col style="width: 50%" />
-</colgroup>
-<thead>
-<tr class="header">
-<th>Elemento padre</th>
-<th>Descrizione</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td><a href="element-userlogoncred.md">UserLogonCred</a></td>
-<td><p>Credenziali di accesso per una connessione.</p></td>
-</tr>
-</tbody>
-</table>
+
+| Elemento padre | Descrizione | 
+|----------------|-------------|
+| <a href="element-userlogoncred.md">UserLogonCred</a> | <p>Credenziali di accesso per una connessione.</p> | 
+
 
  
 
 ## <a name="requirements"></a>Requisiti
 
-<table>
-<colgroup>
-<col style="width: 50%" />
-<col style="width: 50%" />
-</colgroup>
-<tbody>
-<tr class="odd">
-<td><p>Spazio dei nomi</p></td>
-<td><p>https://www.microsoft.com/networking/WWAN/profile/v4</p></td>
-</tr>
-</tbody>
-</table>
+
+| Requisito | Valore |
+|------------|----------|
+| <p>Spazio dei nomi</p> | <p>https://www.microsoft.com/networking/WWAN/profile/v4</p> | 
+
 
  
 
