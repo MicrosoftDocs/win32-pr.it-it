@@ -1,5 +1,5 @@
 ---
-description: 'Metodo RequestStateChange della classe Msvm_Memory : richiede una modifica dello stato.'
+description: 'Metodo RequestStateChange della classe Msvm_Memory: richiede una modifica dello stato.'
 ms.assetid: 836ee3a1-e28e-4f84-8e1c-09f4a2ff0a25
 title: Metodo RequestStateChange della classe Msvm_Memory
 ms.topic: reference
@@ -13,12 +13,12 @@ api_type:
 - COM
 api_location:
 - vmms.exe
-ms.openlocfilehash: c168e3be7350b1422edd9ac87556aab886daf49c
-ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
+ms.openlocfilehash: 5d8ec62d1834bf7f1e83fb33891ddd76d1c48fce587bb343fc9582827e776525
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/28/2021
-ms.locfileid: "108118859"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "117811542"
 ---
 # <a name="requeststatechange-method-of-the-msvm_memory-class"></a>Metodo RequestStateChange della classe Msvm \_ Memory
 
@@ -106,14 +106,14 @@ Nuovo stato. Le informazioni vengono inserite nella **proprietà RequestedState*
 
 <span id="Reset"></span><span id="reset"></span><span id="RESET"></span>
 
-**Reimposta** (11)
+**Reimpostazione** (11)
 
 
 </dt> <dd></dd> <dt>
 
 <span id="DMTF_Reserved"></span><span id="dmtf_reserved"></span><span id="DMTF_RESERVED"></span>
 
-**DmTF riservato** (..)
+**DMTF riservato** (..)
 
 
 </dt> <dd></dd> <dt>
@@ -128,7 +128,7 @@ Nuovo stato. Le informazioni vengono inserite nella **proprietà RequestedState*
 *Processo* \[ Cambio\]
 </dt> <dd>
 
-Può contenere un riferimento a [**CIM \_ ConcreteJob**](cim-concretejob.md) creato per tenere traccia della transizione di stato avviata dalla chiamata al metodo.
+Può contenere un riferimento al [**processo \_ concreto CIM**](cim-concretejob.md) creato per tenere traccia della transizione di stato avviata dalla chiamata al metodo.
 
 </dd> <dt>
 
@@ -137,7 +137,7 @@ Può contenere un riferimento a [**CIM \_ ConcreteJob**](cim-concretejob.md) cre
 
 Periodo di timeout che specifica la quantità massima di tempo prevista dal client per la transizione al nuovo stato. Il formato dell'intervallo deve essere usato per specificare TimeoutPeriod. Il valore 0 o un parametro Null indica che il client non ha requisiti di tempo per la transizione.
 
-Se questa proprietà non contiene 0 o null e l'implementazione non supporta questo parametro, verrà restituito un codice restituito "Utilizzo del parametro di timeout non supportato".
+Se questa proprietà non contiene 0 o Null e l'implementazione non supporta questo parametro, verrà restituito un codice restituito "Utilizzo del parametro di timeout non supportato".
 
 </dd> </dl>
 
@@ -147,7 +147,7 @@ Questo metodo restituisce uno dei valori seguenti:
 
 <dl> <dt>
 
-**Completata senza errori** (0)
+**Completato senza errori** (0)
 </dt> <dt>
 
 **Non supportato** (1)
@@ -160,7 +160,7 @@ Questo metodo restituisce uno dei valori seguenti:
 | Requisito | Valore |
 |-------------------------------------|---------------------------------------------------------------------------------------------------------|
 | Client minimo supportato<br/> | Windows 8.1<br/>                                                                                  |
-| Server minimo supportato<br/> | Windows Server 2012 R2<br/>                                                                       |
+| Server minimo supportato<br/> | R2 per Windows Server 2012<br/>                                                                       |
 | Spazio dei nomi<br/>                | Virtualizzazione \\ radice \\ v2<br/>                                                                     |
 | MOF<br/>                      | <dl> <dt>WindowsVirtualization.V2.mof</dt> </dl> |
 | DLL<br/>                      | <dl> <dt>Vmms.exe</dt> </dl>                     |
@@ -171,7 +171,7 @@ Questo metodo restituisce uno dei valori seguenti:
 
 <dl> <dt>
 
-[**Memoria \_ msvm**](msvm-memory.md)
+[**Memoria \_ Msvm**](msvm-memory.md)
 </dt> </dl>
 
  

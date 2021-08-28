@@ -15,12 +15,12 @@ api_type:
 - COM
 api_location: ''
 ROBOTS: INDEX,FOLLOW
-ms.openlocfilehash: 544438541affba1121850d5ad5a7a60d54d398bd
-ms.sourcegitcommit: 9b5faa61c38b2d0c432b7f2dbee8c127b0e28a7e
+ms.openlocfilehash: cb2779c75d525e45e9140d8f70665a09fe202b21
+ms.sourcegitcommit: 4665ebce0c106bdb52eef36e544280b496b6f50b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/19/2021
-ms.locfileid: "122471387"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "122988114"
 ---
 # <a name="jet_unicodeindex-structure"></a>JET_UNICODEINDEX struttura
 
@@ -29,7 +29,7 @@ _**Si applica a:** Windows | Windows Server_
 
 ## <a name="jet_unicodeindex-structure"></a>JET_UNICODEINDEX struttura
 
-La **JET_UNICODEINDEX** consente di personalizzare il modo in cui i dati Unicode vengono normalizzati quando viene creato un indice su una colonna Unicode.
+La **JET_UNICODEINDEX** struttura consente di personalizzare la normalizzazione dei dati Unicode quando viene creato un indice su una colonna Unicode.
 
 ```cpp
 typedef struct tagJET_UNICODEINDEX {
@@ -42,7 +42,7 @@ typedef struct tagJET_UNICODEINDEX {
 
 **lcid**
 
-ID delle impostazioni locali da usare durante la normalizzazione dei dati. È possibile usare tutte le impostazioni locali purché nel computer siano language pack le impostazioni locali appropriate. L'unica eccezione è che le impostazioni locali indipendenti dalla lingua (LCID pari a zero) non sono valide.
+ID delle impostazioni locali da usare per la normalizzazione dei dati. È possibile usare qualsiasi impostazione locale, purché language pack sia stato installato nel computer. L'unica eccezione è che le impostazioni locali indipendenti dalla lingua (LCID pari a zero) non sono valide.
 
 **dwMapFlags**
 
@@ -59,7 +59,7 @@ Questi flag vengono passati a [LCMapString](/windows/win32/api/winnls/nf-winnls-
 **dwMapFlags** presenta le restrizioni seguenti.
 
 
-| <p>valore</p> | <p>Significato</p> | 
+| <p>Valore</p> | <p>Significato</p> | 
 |--------------|----------------|
 | <p>LCMAP_SORTKEY</p> | <p>Mandatory.</p> | 
 | <p>LCMAP_BYTEREV</p> | <p>facoltativo.</p> | 
@@ -75,7 +75,11 @@ Questi flag vengono passati a [LCMapString](/windows/win32/api/winnls/nf-winnls-
 ### <a name="requirements"></a>Requisiti
 
 
-| | | <p><strong>Client</strong></p> | <p>Richiede Windows Vista, Windows XP o Windows 2000 Professional.</p> | | <p><strong>Server</strong></p> | <p>Richiede Windows Server 2008, Windows Server 2003 o Windows 2000 Server.</p> | | <p><strong>Intestazione</strong></p> | <p>Dichiarato in Esent.h.</p> | 
+| Requisito | Valore |
+|------------|----------|
+| <p><strong>Client</strong></p> | <p>Richiede Windows Vista, Windows XP o Windows 2000 Professional.</p> | 
+| <p><strong>Server</strong></p> | <p>Richiede Windows Server 2008, Windows Server 2003 o Windows 2000 Server.</p> | 
+| <p><strong>Intestazione</strong></p> | <p>Dichiarato in Esent.h.</p> | 
 
 
 

@@ -1,11 +1,11 @@
 ---
-title: Attributo CA-Connect
+title: CA-Connect attributo
 description: Stringa di connessione per l'associazione a un'autorità di certificazione.
 ms.assetid: afdea6d9-7dfe-4c15-a5a5-9a19fbf8abb8
 ms.tgt_platform: multiple
 keywords:
-- Schema AD CA-Connect attribute
-- Schema di AD dell'attributo caconnect
+- CA-Connect schema AD dell'attributo
+- Schema AD dell'attributo cAConnect
 topic_type:
 - apiref
 api_name:
@@ -14,14 +14,14 @@ api_type:
 - Schema
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 0c59dc7bda256230810a20a3b78a224e6b4655ce
-ms.sourcegitcommit: b77ace27b0432e7cd3863191b11926be032fbe2f
+ms.openlocfilehash: 0aab7ad32b5db84ddc6a85df36ef4cf1ae70cb5ef16bec3ac12d426aa3cfb632
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/14/2020
-ms.locfileid: "103875846"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119553081"
 ---
-# <a name="ca-connect-attribute"></a>Attributo CA-Connect
+# <a name="ca-connect-attribute"></a>CA-Connect attributo
 
 Stringa di connessione per l'associazione a un'autorità di certificazione.
 
@@ -30,12 +30,12 @@ Stringa di connessione per l'associazione a un'autorità di certificazione.
 | Voce | Valore |
 |-------------------|---------------------------------------------|
 | CN                | CA-Connect                                  |
-| LDAP-Display-Name | caconnect                                   |
+| Ldap-Display-Name | cAConnect                                   |
 | Dimensione              | \-                                          |
-| Privilegio aggiornamento  | \-                                          |
+| Privilegio di aggiornamento  | \-                                          |
 | Frequenza di aggiornamento  | \-                                          |
 | Attribute-Id      | 1.2.840.113556.1.4.687                      |
-| System-ID-GUID    | 963d2735-48be-11d1-a9c3-0000f80367c1        |
+| System-Id-Guid    | 963d2735-48be-11d1-a9c3-0000f80367c1        |
 | Sintassi            | [**String(Unicode)**](s-string-unicode.md) |
 
 
@@ -58,15 +58,15 @@ Stringa di connessione per l'associazione a un'autorità di certificazione.
 | ID collegamento                | \-                                                                     |
 | MAPI-Id                | \-                                                                     |
 | System-Only            | Falso                                                                  |
-| È a valore singolo       | Vero                                                                   |
+| Is-Single-Valued       | Vero                                                                   |
 | Indicizzato             | Falso                                                                  |
 | Nel catalogo globale      | Falso                                                                  |
-| NT-Security-descrittore | O:BAG: NON VALIDO: S:                                                           |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                                           |
 | Range-Lower            | \-                                                                     |
 | Range-Upper            | \-                                                                     |
 | Search-Flags           | 0x00000000                                                             |
 | System-Flags           | 0x00000010                                                             |
-| Classi utilizzate in        | [**Autorità di certificazione**](c-certificationauthority.md)<br/> |
+| Classi usate in        | [**Autorità di certificazione**](c-certificationauthority.md)<br/> |
 
 
 
@@ -79,15 +79,15 @@ Stringa di connessione per l'associazione a un'autorità di certificazione.
 | ID collegamento                | \-                                                                     |
 | MAPI-Id                | \-                                                                     |
 | System-Only            | Falso                                                                  |
-| È a valore singolo       | Vero                                                                   |
+| Is-Single-Valued       | Vero                                                                   |
 | Indicizzato             | Falso                                                                  |
 | Nel catalogo globale      | Falso                                                                  |
-| NT-Security-descrittore | O:BAG: NON VALIDO: S:                                                           |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                                           |
 | Range-Lower            | \-                                                                     |
 | Range-Upper            | \-                                                                     |
 | Search-Flags           | 0x00000000                                                             |
 | System-Flags           | 0x00000010                                                             |
-| Classi utilizzate in        | [**Autorità di certificazione**](c-certificationauthority.md)<br/> |
+| Classi usate in        | [**Autorità di certificazione**](c-certificationauthority.md)<br/> |
 
 
 
@@ -100,15 +100,15 @@ Stringa di connessione per l'associazione a un'autorità di certificazione.
 | ID collegamento                | \-                                                                     |
 | MAPI-Id                | \-                                                                     |
 | System-Only            | Falso                                                                  |
-| È a valore singolo       | Vero                                                                   |
+| Is-Single-Valued       | Vero                                                                   |
 | Indicizzato             | Falso                                                                  |
 | Nel catalogo globale      | Falso                                                                  |
-| NT-Security-descrittore | O:BAG: NON VALIDO: S:                                                           |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                                           |
 | Range-Lower            | \-                                                                     |
 | Range-Upper            | \-                                                                     |
 | Search-Flags           | 0x00000000                                                             |
 | System-Flags           | 0x00000010                                                             |
-| Classi utilizzate in        | [**Autorità di certificazione**](c-certificationauthority.md)<br/> |
+| Classi usate in        | [**Autorità di certificazione**](c-certificationauthority.md)<br/> |
 
 
 
@@ -121,15 +121,15 @@ Stringa di connessione per l'associazione a un'autorità di certificazione.
 | ID collegamento                | \-                                                                     |
 | MAPI-Id                | \-                                                                     |
 | System-Only            | Falso                                                                  |
-| È a valore singolo       | Vero                                                                   |
+| Is-Single-Valued       | Vero                                                                   |
 | Indicizzato             | Falso                                                                  |
 | Nel catalogo globale      | Falso                                                                  |
-| NT-Security-descrittore | O:BAG: NON VALIDO: S:                                                           |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                                           |
 | Range-Lower            | \-                                                                     |
 | Range-Upper            | \-                                                                     |
 | Search-Flags           | 0x00000000                                                             |
 | System-Flags           | 0x00000010                                                             |
-| Classi utilizzate in        | [**Autorità di certificazione**](c-certificationauthority.md)<br/> |
+| Classi usate in        | [**Autorità di certificazione**](c-certificationauthority.md)<br/> |
 
 
 
@@ -142,15 +142,15 @@ Stringa di connessione per l'associazione a un'autorità di certificazione.
 | ID collegamento                | \-                                                                     |
 | MAPI-Id                | \-                                                                     |
 | System-Only            | Falso                                                                  |
-| È a valore singolo       | Vero                                                                   |
+| Is-Single-Valued       | Vero                                                                   |
 | Indicizzato             | Falso                                                                  |
 | Nel catalogo globale      | Falso                                                                  |
-| NT-Security-descrittore | O:BAG: NON VALIDO: S:                                                           |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                                           |
 | Range-Lower            | \-                                                                     |
 | Range-Upper            | \-                                                                     |
 | Search-Flags           | 0x00000000                                                             |
 | System-Flags           | 0x00000010                                                             |
-| Classi utilizzate in        | [**Autorità di certificazione**](c-certificationauthority.md)<br/> |
+| Classi usate in        | [**Autorità di certificazione**](c-certificationauthority.md)<br/> |
 
 
 
@@ -163,15 +163,15 @@ Stringa di connessione per l'associazione a un'autorità di certificazione.
 | ID collegamento                | \-                                                                     |
 | MAPI-Id                | \-                                                                     |
 | System-Only            | Falso                                                                  |
-| È a valore singolo       | Vero                                                                   |
+| Is-Single-Valued       | Vero                                                                   |
 | Indicizzato             | Falso                                                                  |
 | Nel catalogo globale      | Falso                                                                  |
-| NT-Security-descrittore | O:BAG: NON VALIDO: S:                                                           |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                                           |
 | Range-Lower            | \-                                                                     |
 | Range-Upper            | \-                                                                     |
 | Search-Flags           | 0x00000000                                                             |
 | System-Flags           | 0x00000010                                                             |
-| Classi utilizzate in        | [**Autorità di certificazione**](c-certificationauthority.md)<br/> |
+| Classi usate in        | [**Autorità di certificazione**](c-certificationauthority.md)<br/> |
 
 
 

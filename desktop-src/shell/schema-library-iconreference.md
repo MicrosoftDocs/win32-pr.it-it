@@ -1,6 +1,6 @@
 ---
-description: <iconReference>L'elemento specifica un'icona personalizzata per questa libreria. Questo elemento è facoltativo e non dispone di attributi o elementi figlio.
-title: Elemento iconReference (schema della libreria)
+description: "&lt;L'elemento iconReference &gt; specifica un'icona personalizzata per questa libreria. Questo elemento è facoltativo e non dispone di attributi o elementi figlio."
+title: Elemento iconReference (schema di libreria)
 ms.topic: article
 ms.date: 05/31/2018
 ms.assetid: 7A35B014-1E01-4da2-AA64-4CFC3436C6D9
@@ -9,16 +9,16 @@ api_type: ''
 api_location: ''
 topic_type:
 - kbArticle
-ms.openlocfilehash: 84e200fa4969dc376661bd32851296d80c74120939afc995754cb2937ea04be3
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: db34a387200f3078da08747191242ae7414be410
+ms.sourcegitcommit: 61a4c522182aa1cacbf5669683d9570a3bf043b2
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119820231"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "122884267"
 ---
-# <a name="iconreference-element-library-schema"></a>Elemento iconReference (schema della libreria)
+# <a name="iconreference-element-library-schema"></a>Elemento iconReference (schema di libreria)
 
-<iconReference>L'elemento specifica un'icona personalizzata per questa libreria. Questo elemento è facoltativo e non dispone di attributi o elementi figlio.
+&lt;L'elemento iconReference &gt; specifica un'icona personalizzata per questa libreria. Questo elemento è facoltativo e non dispone di attributi o elementi figlio.
 
 ## <a name="syntax"></a>Sintassi
 
@@ -59,7 +59,7 @@ Il riferimento all'icona deve essere specificato in un formato adatto per la [**
 [Elemento libraryDescription (schema della libreria)](schema-librarydescription.md)
 </dt> <dt>
 
-[Elemento name (schema della libreria)](schema-library-name.md)
+[Elemento name (schema di libreria)](schema-library-name.md)
 </dt> <dt>
 
 [Elemento ownerSID (schema della libreria)](schema-library-ownersid.md)
@@ -71,7 +71,7 @@ Il riferimento all'icona deve essere specificato in un formato adatto per la [**
 [Elemento searchConnectorDescription (schema della libreria)](schema-library-searchconnectordescription.md)
 </dt> <dt>
 
-[Elemento searchConnectorDescriptionList (schema della libreria)](schema-library-searchconnectordescriptionlist.md)
+[Elemento searchConnectorDescriptionList (schema di libreria)](schema-library-searchconnectordescriptionlist.md)
 </dt> <dt>
 
 [Elemento templateInfo (schema della libreria)](schema-library-templateinfo.md)

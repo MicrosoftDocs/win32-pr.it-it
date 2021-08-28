@@ -4,12 +4,12 @@ ms.assetid: 36307589-de0e-4eaf-b439-e7ba3cd96fb3
 title: Linee guida per i messaggi ICE
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 0951f8573fce1b9dbe81b107fba2f2beb674ed063fae53182a7d2694ded35abb
-ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
+ms.openlocfilehash: d603175dbecc12b0b9524db1a02d9ca677f61c87
+ms.sourcegitcommit: 61a4c522182aa1cacbf5669683d9570a3bf043b2
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119821671"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "122887451"
 ---
 # <a name="ice-message-guidelines"></a>Linee guida per i messaggi ICE
 
@@ -17,7 +17,7 @@ Le azioni personalizzate ICE comunicano chiamando [**MsiProcessMessage**](/windo
 
 Quando si crea una stringa di messaggio per un'azione personalizzata ICE, formattare la stringa come indicato di seguito.
 
-*Nome di ICE* <tab> *Tipo di messaggio* <tab> *Descrizione* <tab> *URL o percorso della Guida* <tab> *Nome tabella* <tab> *Nome colonna* <tab> *Chiave primaria* <tab> *Chiave primaria* <tab> *Chiave primaria* . . . (ripetere per tutte le chiavi primarie necessarie)
+*Nome di ICE* &lt; tab &gt; *Tipo di messaggio* &lt; scheda &gt; *Descrizione* scheda URL della Guida &lt; &gt;  &lt; &gt;  &lt; &gt;  &lt; &gt;  &lt; &gt;  &lt; &gt;  o posizione scheda Nome tabella scheda Nome colonna scheda Chiave primaria scheda Chiave primaria scheda Chiave primaria . . . (ripetere per tutte le chiavi primarie necessarie)
 
 I primi tre campi della stringa sono obbligatori in ogni messaggio.
 
@@ -50,7 +50,7 @@ Il secondo messaggio inviato dall'esempio ICE:
 
 "ICE01 \\ t3 \\ tLast modified 05/06/1999 by <insert author's name here>".
 
-Terzo messaggio pubblicato dall'esempio ICE.
+Terzo messaggio pubblicato dall'ice di esempio.
 
 "ICE01 \\ t3 \\ tSimple ICE to illustrating the ICE concept".
 

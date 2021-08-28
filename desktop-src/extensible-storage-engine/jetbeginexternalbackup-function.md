@@ -1,6 +1,6 @@
 ---
-description: 'Altre informazioni su: funzione JetBeginExternalBackup'
-title: JetBeginExternalBackup (funzione)
+description: 'Altre informazioni su: Funzione JetBeginExternalBackup'
+title: Funzione JetBeginExternalBackup
 TOCTitle: JetBeginExternalBackup Function
 ms:assetid: 702e6cbf-4648-40f2-b2eb-6194759d4cde
 ms:mtpsurl: https://msdn.microsoft.com/library/Gg269292(v=EXCHG.10)
@@ -18,25 +18,25 @@ api_type:
 api_location:
 - ESENT.DLL
 ROBOTS: INDEX,FOLLOW
-ms.openlocfilehash: d410adb592c3d56d2f9880ec809749396318258a
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 8d0e47a117c044899a8b078290be622cfecdae91
+ms.sourcegitcommit: 9b5faa61c38b2d0c432b7f2dbee8c127b0e28a7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "106318100"
+ms.lasthandoff: 08/19/2021
+ms.locfileid: "122482907"
 ---
-# <a name="jetbeginexternalbackup-function"></a>JetBeginExternalBackup (funzione)
+# <a name="jetbeginexternalbackup-function"></a>Funzione JetBeginExternalBackup
 
 
 _**Si applica a:** Windows | Windows Server_
 
-## <a name="jetbeginexternalbackup-function"></a>JetBeginExternalBackup (funzione)
+## <a name="jetbeginexternalbackup-function"></a>Funzione JetBeginExternalBackup
 
-La funzione **JetBeginExternalBackup** avvia un backup esterno mentre il motore e il database sono online e attivi. **JetBeginExternalBackup** è il primo di una serie di funzioni che devono essere chiamate per eseguire un backup online (non basato su VSS) riuscito.
+La **funzione JetBeginExternalBackup** avvia un backup esterno mentre il motore e il database sono online e attivi. **JetBeginExternalBackup** è il primo di una serie di funzioni che devono essere chiamate per eseguire correttamente un backup online (non basato su VSS).
 
-Un backup esterno può essere utilizzato per implementare backup completi, incrementali o differenziali.
+Un backup esterno può essere usato per implementare backup completi, incrementali o differenziali.
 
-Il backup sarà fuzzy, in quanto il backup sarà coerente a un singolo momento della cronologia delle transazioni, ma non è possibile controllare il punto nel tempo esatto.
+Il backup sarà fuzzy, in quanto il backup sarà coerente con un singolo punto nel tempo nella cronologia delle transazioni, ma non è possibile controllare il punto esatto nel tempo.
 
 ```cpp
     JET_ERR JET_API JetBeginExternalBackup(
@@ -48,171 +48,65 @@ Il backup sarà fuzzy, in quanto il backup sarà coerente a un singolo momento d
 
 *grbit*
 
-Gruppo di bit che specifica zero o più delle opzioni seguenti.
+Gruppo di bit che specificano zero o più delle opzioni seguenti.
 
-<table>
-<colgroup>
-<col style="width: 50%" />
-<col style="width: 50%" />
-</colgroup>
-<thead>
-<tr class="header">
-<th><p>Valore</p></th>
-<th><p>Significato</p></th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td><p>JET_bitBackupAtomic</p></td>
-<td><p>Questo flag è deprecato. L'utilizzo di questo bit comporterà la restituzione JET_errInvalidgrbit.</p></td>
-</tr>
-<tr class="even">
-<td><p>JET_bitBackupIncremental</p></td>
-<td><p>Crea un backup incrementale anziché un backup completo. Ciò significa che verrà eseguito il backup solo dei file di log dall'ultimo backup completo o incrementale.</p></td>
-</tr>
-<tr class="odd">
-<td><p>JET_bitBackupSnapshot</p></td>
-<td><p>Riservato per utilizzi futuri. Definito per Windows XP.</p></td>
-</tr>
-</tbody>
-</table>
+
+| <p>valore</p> | <p>Significato</p> | 
+|--------------|----------------|
+| <p>JET_bitBackupAtomic</p> | <p>Questo flag è deprecato. L'utilizzo di questo bit comporta la JET_errInvalidgrbit restituita.</p> | 
+| <p>JET_bitBackupIncremental</p> | <p>Crea un backup incrementale anziché un backup completo. Ciò significa che verrà eseguito il backup solo dei file di log dall'ultimo backup completo o incrementale.</p> | 
+| <p>JET_bitBackupSnapshot</p> | <p>Riservato per utilizzi futuri. Definito per Windows XP.</p> | 
+
 
 
 ### <a name="return-value"></a>Valore restituito
 
-Questa funzione restituisce il tipo di dati [JET_ERR](./jet-err.md) con uno dei seguenti codici restituiti. Per ulteriori informazioni sugli errori ESE possibili, vedere la pagina relativa agli errori e ai [parametri di gestione degli](./error-handling-parameters.md)errori del [motore di archiviazione estensibile](./extensible-storage-engine-errors.md) .
-
-<table>
-<colgroup>
-<col style="width: 50%" />
-<col style="width: 50%" />
-</colgroup>
-<thead>
-<tr class="header">
-<th><p>Codice restituito</p></th>
-<th><p>Descrizione</p></th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td><p>JET_errSuccess</p></td>
-<td><p>Operazione riuscita.</p></td>
-</tr>
-<tr class="even">
-<td><p>JET_errBackupInProgress</p></td>
-<td><p>Se è già in corso un backup o un backup di snapshot esterno, verrà restituito questo errore fino a quando non viene chiamato <strong>JetBeginExternalBackup</strong> (o una delle varianti). ESE consente un solo backup online alla volta.</p></td>
-</tr>
-<tr class="odd">
-<td><p>JET_errBackupNotAllowedYet</p></td>
-<td><p>L'istanza o il motore di database è in fase di ripristino oppure in fase di arresto o chiusura.</p></td>
-</tr>
-<tr class="even">
-<td><p>JET_errCheckpointCorrupt</p></td>
-<td><p>In un backup completo non è stato possibile leggere il file del checkpoint oppure il file non è stato verificato.</p></td>
-</tr>
-<tr class="odd">
-<td><p>JET_errCheckpointFileNotFound</p></td>
-<td><p>In un backup completo non è stato possibile trovare il file del checkpoint.</p></td>
-</tr>
-<tr class="even">
-<td><p>JET_errClientRequestToStopJetService</p></td>
-<td><p>Non è possibile completare l'operazione perché tutte le attività nell'istanza associata alla sessione sono state interrotte in seguito a una chiamata a <a href="gg269240(v=exchg.10).md">JetStopService</a>.</p></td>
-</tr>
-<tr class="odd">
-<td><p>JET_errInstanceUnavailable</p></td>
-<td><p>Non è possibile completare l'operazione perché l'istanza associata alla sessione ha rilevato un errore irreversibile che richiede che l'accesso a tutti i dati venga revocato per proteggere l'integrità dei dati.</p>
-<p><strong>Windows XP:  </strong> Questo valore restituito è stato introdotto in Windows XP.</p></td>
-</tr>
-<tr class="even">
-<td><p>JET_errInvalidBackup</p></td>
-<td><p>La registrazione circolare è abilitata e il tipo di backup specificato viene JET_bitBackupIncremental. Per informazioni su come controllare la registrazione circolare o non circolare, vedere <a href="gg269235(v=exchg.10).md">JET_paramCircularLog</a> negli <strong>errori del log delle transazioni</strong> .</p></td>
-</tr>
-<tr class="odd">
-<td><p>JET_errInvalidgrbit</p></td>
-<td><p>Uno o più membri di <em>grbit</em> non sono validi.</p></td>
-</tr>
-<tr class="even">
-<td><p>JET_errLoggingDisabled</p></td>
-<td><p>Il ripristino o la registrazione è disabilitata. Se la registrazione è disabilitata, non è possibile eseguire un backup in linea. Per ulteriori informazioni sulla registrazione e il ripristino, vedere <a href="gg269235(v=exchg.10).md">JET_paramRecovery</a>.</p></td>
-</tr>
-<tr class="odd">
-<td><p>JET_errLogWriteFail</p></td>
-<td><p>Il motore ha smesso di scrivere nell'unità di log, a causa di errori di i/o del disco e completi.</p></td>
-</tr>
-<tr class="even">
-<td><p>JET_errMissingFullBackup</p></td>
-<td><p>Il backup incrementale è stato specificato (con JET_bitBackupIncremental) e non è mai stato eseguito un backup completo per uno dei database collegati per il set di registrazione.</p></td>
-</tr>
-<tr class="odd">
-<td><p>JET_errNotInitialized</p></td>
-<td><p>Non è possibile completare l'operazione perché l'istanza associata alla sessione non è ancora stata inizializzata.</p></td>
-</tr>
-<tr class="even">
-<td><p>JET_errOutOfMemory</p></td>
-<td><p>L'operazione non è riuscita perché non è stato possibile allocare memoria sufficiente per il completamento.</p></td>
-</tr>
-<tr class="odd">
-<td><p>JET_errRestoreInProgress</p></td>
-<td><p>Non è possibile completare l'operazione perché è in corso un'operazione di ripristino sull'istanza associata alla sessione.</p></td>
-</tr>
-<tr class="even">
-<td><p>JET_errRunningInMultiInstanceMode</p></td>
-<td><p>L'operazione non è riuscita perché è stato effettuato un tentativo di usare il motore in modalità legacy (modalità di compatibilità di Windows 2000) in cui è supportata una sola istanza quando sono già presenti più istanze.</p></td>
-</tr>
-<tr class="odd">
-<td><p>JET_errTermInProgress</p></td>
-<td><p>Non è possibile completare l'operazione perché è in corso l'arresto dell'istanza associata alla sessione.</p></td>
-</tr>
-</tbody>
-</table>
+Questa funzione restituisce il [JET_ERR](./jet-err.md) dati con uno dei codici restituiti seguenti. Per altre informazioni sui possibili errori ESE, vedere [Extensible Archiviazione Engine Errors](./extensible-storage-engine-errors.md) and [Error Handling Parameters](./error-handling-parameters.md).
 
 
-Se la funzione ha esito positivo, viene avviato un backup esterno e viene inizializzato il motore dello stato di backup. È ora possibile chiamare le API successive per completare la sequenza di backup esterna e trasmettere o leggere il file di database, il file di patch del database (se supportato) e il file di log. È possibile registrare un evento in cui è stato avviato un backup esterno.
+| <p>Codice restituito</p> | <p>Descrizione</p> | 
+|--------------------|--------------------|
+| <p>JET_errSuccess</p> | <p>Operazione riuscita.</p> | 
+| <p>JET_errBackupInProgress</p> | <p>Se è già in corso un backup esterno o un backup di snapshot, verrà restituito questo errore finché non viene chiamato <strong>JetBeginExternalBackup</strong> (o una delle relative varianti). ESE consente un solo backup online alla volta.</p> | 
+| <p>JET_errBackupNotAllowedYet</p> | <p>L'istanza o il motore di database è in fase di recupero o di arresto o chiusura.</p> | 
+| <p>JET_errCheckpointCorrupt</p> | <p>In un backup completo non è stato possibile leggere il file del checkpoint o verificare il file.</p> | 
+| <p>JET_errCheckpointFileNotFound</p> | <p>In un backup completo non è stato possibile trovare il file del checkpoint.</p> | 
+| <p>JET_errClientRequestToStopJetService</p> | <p>L'operazione non può essere completata perché tutte le attività nell'istanza associata alla sessione sono scadute in seguito a una chiamata a <a href="gg269240(v=exchg.10).md">JetStopService.</a></p> | 
+| <p>JET_errInstanceUnavailable</p> | <p>L'operazione non può essere completata perché l'istanza associata alla sessione ha rilevato un errore irreversibile che richiede la revoca dell'accesso a tutti i dati per proteggere l'integrità di questi dati.</p><p><strong>Windows XP:</strong> Questo valore restituito è stato introdotto in Windows XP.</p> | 
+| <p>JET_errInvalidBackup</p> | <p>La registrazione circolare è abilitata e il tipo di backup specificato è JET_bitBackupIncremental. Per <a href="gg269235(v=exchg.10).md">informazioni su come controllare la</a> registrazione circolare o non <strong>circolare,</strong> vedere JET_paramCircularLog in Errori del log delle transazioni.</p> | 
+| <p>JET_errInvalidgrbit</p> | <p>Uno o più membri <em>grbit</em> non sono validi.</p> | 
+| <p>JET_errLoggingDisabled</p> | <p>Il ripristino o la registrazione è disabilitata. Non è possibile eseguire un backup online se la registrazione è disabilitata. Per altre informazioni sulla registrazione e il ripristino, <a href="gg269235(v=exchg.10).md">vedere JET_paramRecovery</a>.</p> | 
+| <p>JET_errLogWriteFail</p> | <p>Il motore ha interrotto la scrittura nell'unità di log a causa di errori di I/O del disco o del log pieno.</p> | 
+| <p>JET_errMissingFullBackup</p> | <p>Il backup incrementale è stato specificato (con JET_bitBackupIncremental) e non è mai stato eseguito un backup completo per uno dei database collegati per il set di registrazione.</p> | 
+| <p>JET_errNotInitialized</p> | <p>Impossibile completare l'operazione perché l'istanza associata alla sessione non è ancora stata inizializzata.</p> | 
+| <p>JET_errOutOfMemory</p> | <p>L'operazione non è riuscita perché non è stato possibile allocare memoria sufficiente per completarla.</p> | 
+| <p>JET_errRestoreInProgress</p> | <p>Impossibile completare l'operazione perché è in corso un'operazione di ripristino nell'istanza associata alla sessione.</p> | 
+| <p>JET_errRunningInMultiInstanceMode</p> | <p>L'operazione non è riuscita perché è stato effettuato un tentativo di usare il motore in modalità legacy (modalità di compatibilità Windows 2000) in cui è supportata una sola istanza quando in realtà esistono già più istanze.</p> | 
+| <p>JET_errTermInProgress</p> | <p>Impossibile completare l'operazione perché è in corso l'arresto dell'istanza associata alla sessione.</p> | 
+
+
+
+Se la funzione ha esito positivo, viene avviato un backup esterno e viene inizializzato il motore di stato del backup. È ora possibile chiamare le API successive per completare la sequenza di backup esterna e trasmettere o leggere il file di database, il file di patch del database (se supportato) e il file di log. È possibile che sia stato registrato un evento che indica l'inizio di un backup esterno.
 
 Se la funzione ha esito negativo, la sessione di backup non verrà avviata. Se è in corso un'altra sessione di backup, non verrà annullata.
 
 #### <a name="remarks"></a>Commenti
 
-Il processo di backup esterno, come avviato da **JetBeginExternalBackup**, è progettato per consentire a un dispositivo di destinazione un backup di transazione fuzzy dell'intera istanza in un dispositivo di destinazione come flusso. Il backup conterrà tutti i file di database collegati all'istanza di utilizzando [JetAttachDatabase](./jetattachdatabase-function.md) (per un backup completo), seguiti dai file di patch del database associati (se supportati) e infine dai file di log delle transazioni generati durante il processo di backup. Il risultato finale sarà un set di file che possono essere ripristinati dal flusso, possibilmente combinati con i file di database e di log esistenti e infine ripristinati in uno stato coerente.
+Il processo di backup esterno (avviato da **JetBeginExternalBackup)** è progettato per consentire un backup online delle transazioni fuzzy dell'intera istanza in un dispositivo di destinazione come flusso. Il backup conterrà tutti i file di database collegati all'istanza tramite [JetAttachDatabase](./jetattachdatabase-function.md) (per un backup completo), seguiti dai file di patch del database associati (se supportati) e infine dai file di log delle transazioni generati durante il processo di backup. Il risultato finale sarà un set di file che possono essere ripristinati dal flusso, eventualmente combinati con i file di database e di log esistenti, e infine ripristinati in uno stato coerente.
 
-L'ordine generale delle operazioni per un backup completo è costituito dalle chiamate seguenti. In primo luogo, **JetBeginExternalBackup** viene chiamato per avviare il processo di backup. Viene quindi chiamato [JetGetAttachInfo](./jetgetattachinfo-function.md) per ottenere l'elenco di database collegati all'istanza di di cui è necessario eseguire il backup. Per ognuno di questi database, viene chiamato [JetOpenFile](./jetopenfile-function.md) , seguito da una serie di chiamate [JetReadFile](./jetreadfile-function.md) e quindi da una chiamata a [JetCloseFile](./jetclosefile-function.md). Viene quindi chiamato [JetGetLogInfo](./jetgetloginfo-function.md) per ottenere un elenco dei file di patch e di log del database di cui eseguire il backup. Per ognuno di questi file viene effettuata un'altra sequenza di chiamate a [JetOpenFile](./jetopenfile-function.md), [JetReadFile](./jetreadfile-function.md)e [JetCloseFile](./jetclosefile-function.md) . Quindi, eventuali file di log delle transazioni indesiderati vengono eliminati utilizzando [JetTruncateLog](./jettruncatelog-function.md). Infine, il backup viene terminato con una chiamata a [JetEndExternalBackup](./jetendexternalbackup-function.md).
+L'ordine generale delle operazioni per un backup completo è costituito dalle chiamate seguenti. In primo **luogo, viene chiamato JetBeginExternalBackup** per avviare il processo di backup. Viene quindi [chiamato JetGetAttachInfo](./jetgetattachinfo-function.md) per ottenere l'elenco dei database collegati all'istanza di di cui è necessario eseguire il backup. Per ognuno di questi database, viene chiamato [JetOpenFile,](./jetopenfile-function.md) seguito da una serie di chiamate [JetReadFile](./jetreadfile-function.md) e quindi da una chiamata a [JetCloseFile.](./jetclosefile-function.md) Viene quindi [chiamato JetGetLogInfo](./jetgetloginfo-function.md) per ottenere un elenco di file di log e patch di database di cui eseguire il backup. Per ognuno di questi file, viene effettuata un'altra sequenza di chiamate [JetOpenFile,](./jetopenfile-function.md) [JetReadFile](./jetreadfile-function.md)e [JetCloseFile.](./jetclosefile-function.md) Quindi, tutti i file di log delle transazioni indesiderati vengono eliminati [usando JetTruncateLog](./jettruncatelog-function.md). Infine, il backup viene terminato da una chiamata a [JetEndExternalBackup.](./jetendexternalbackup-function.md)
 
-È anche possibile modificare questa serie di passaggi per eseguire un backup incrementale dell'istanza. Un backup incrementale enumera ed esegue il backup dei file di log. I backup incrementali sono possibili solo se la registrazione circolare non è abilitata.
+È anche possibile modificare questo set di passaggi per eseguire un backup incrementale dell'istanza. Un backup incrementale enumera ed esegue il backup dei file di log. I backup incrementali sono possibili solo se la registrazione circolare non è abilitata.
 
-È anche possibile modificare questa serie di passaggi per consentire l'esecuzione di backup differenziali successivi dell'istanza. Per eseguire un backup differenziale, non chiamare [JetTruncateLog](./jettruncatelog-function.md) nel backup completo o incrementale precedente. Se non si chiama [JetTruncateLog](./jettruncatelog-function.md), i backup successivi vengono abilitati come differenziali rispetto all'ultimo backup completo o incrementale. I backup differenziali sono possibili solo se la registrazione circolare non è abilitata.
+È anche possibile modificare questo set di passaggi per consentire l'esecuzione di backup differenziali successivi dell'istanza. Per eseguire un backup differenziale, non chiamare [JetTruncateLog](./jettruncatelog-function.md) nel backup completo o incrementale precedente. Se non si chiama [JetTruncateLog](./jettruncatelog-function.md), si abilitano i backup successivi come differenziali rispetto all'ultimo backup completo o incrementale. I backup differenziali sono possibili solo se la registrazione circolare non è abilitata.
 
-Il file di patch del database è un file ausiliario speciale usato per archiviare le immagini della pagina del database in determinate circostanze durante il backup. Questo file deve essere presente nella stessa posizione del database associato durante un'operazione di ripristino. Questo file viene usato solo in Windows 2000. Di conseguenza, tutte le applicazioni scritte per funzionare con Windows 2000 e altre versioni devono supportare i file delle patch del database, se sono presenti, ma anche non devono avere esito negativo se non sono presenti.
+Il file di patch del database è un file ausiliario speciale usato per archiviare le immagini delle pagine del database in determinate circostanze durante il backup. Questo file deve essere presente nello stesso percorso del database associato durante un'operazione di ripristino. Questo file viene usato solo in Windows 2000. Di conseguenza, qualsiasi applicazione scritta per funzionare con Windows 2000 e altre versioni deve supportare i file di patch del database, se presenti, ma non deve avere esito negativo se non sono presenti.
 
 #### <a name="requirements"></a>Requisiti
 
-<table>
-<colgroup>
-<col style="width: 50%" />
-<col style="width: 50%" />
-</colgroup>
-<tbody>
-<tr class="odd">
-<td><p><strong>Client</strong></p></td>
-<td><p>Richiede Windows Vista, Windows XP o Windows 2000 Professional.</p></td>
-</tr>
-<tr class="even">
-<td><p><strong>Server</strong></p></td>
-<td><p>Richiede Windows Server 2008, Windows Server 2003 o Windows 2000 Server.</p></td>
-</tr>
-<tr class="odd">
-<td><p><strong>Intestazione</strong></p></td>
-<td><p>Dichiarata in esent. h.</p></td>
-</tr>
-<tr class="even">
-<td><p><strong>Libreria</strong></p></td>
-<td><p>Usare ESENT. lib.</p></td>
-</tr>
-<tr class="odd">
-<td><p><strong>DLL</strong></p></td>
-<td><p>Richiede ESENT.dll.</p></td>
-</tr>
-</tbody>
-</table>
+
+| | | <p><strong>Client</strong></p> | <p>Richiede Windows Vista, Windows XP o Windows 2000 Professional.</p> | | <p><strong>Server</strong></p> | <p>Richiede Windows Server 2008, Windows Server 2003 o Windows 2000 Server.</p> | | <p><strong>Intestazione</strong></p> | <p>Dichiarato in Esent.h.</p> | | <p><strong>Libreria</strong></p> | <p>Usare ESENT.lib.</p> | | <p><strong>DLL</strong></p> | <p>Richiede ESENT.dll.</p> | 
+
 
 
 #### <a name="see-also"></a>Vedere anche

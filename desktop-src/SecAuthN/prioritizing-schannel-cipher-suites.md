@@ -1,47 +1,47 @@
 ---
-description: 'Cryptography API: Next Generation (CNG) fornisce funzioni che eseguono query, aggiungono, rimuovono e assegnano priorità ai pacchetti di crittografia supportati da un provider. Le modifiche apportate tramite queste funzioni hanno effetto immediato e non richiedono il riavvio di un server attivo.'
+description: "L'API CNG (Cryptography API: Next Generation) fornisce funzioni che ese forniscono funzioni per l'esecuzione di query, l'aggiunta, la rimozione e l'assegnazione di priorità ai pacchetti di crittografia supportati da un provider. Le modifiche apportate tramite queste funzioni vengono applicate immediatamente e non richiedono il riavvio di un server attivo."
 ms.assetid: e919be5c-ac2c-446c-a422-971805b1f672
 title: Assegnazione delle priorità ai pacchetti di crittografia Schannel
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: f885c4d51006233be252a02c7cc3bebd26a4e6c3
-ms.sourcegitcommit: de72a1294df274b0a71dc0fdc42d757e5f6df0f3
+ms.openlocfilehash: 4436d2f72ebaa1f8d551d935ea9f16d2c03cd7c75fc7d40a73f1a27c7406ad6c
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/05/2021
-ms.locfileid: "104234575"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118920770"
 ---
 # <a name="prioritizing-schannel-cipher-suites"></a>Assegnazione delle priorità ai pacchetti di crittografia Schannel
 
-[Cryptography API: Next Generation](../seccng/cng-portal.md) (CNG) fornisce funzioni che eseguono query, aggiungono, rimuovono e assegnano priorità ai pacchetti di crittografia supportati da un provider. Le modifiche apportate tramite queste funzioni hanno effetto immediato e non richiedono il riavvio di un server attivo.
+[L'API CNG (Cryptography API: Next Generation)](../seccng/cng-portal.md) fornisce funzioni che ese forniscono funzioni per l'esecuzione di query, l'aggiunta, la rimozione e l'assegnazione di priorità ai pacchetti di crittografia supportati da un provider. Le modifiche apportate tramite queste funzioni vengono applicate immediatamente e non richiedono il riavvio di un server attivo.
 
 > [!Note]
-> È anche possibile modificare l'elenco di pacchetti di crittografia configurando le impostazioni di criteri di gruppo per l'ordine dei pacchetti di **crittografia SSL** tramite lo snap-in oggetto Criteri di gruppo in Microsoft Management Console.
+> È anche possibile modificare l'elenco dei pacchetti di crittografia configurando le impostazioni dei criteri di gruppo **SSL Cipher Suite Order** usando lo snap-in Criteri di gruppo Object Microsoft Management Console.
 > 
-> **Per configurare l'impostazione di criteri di gruppo **per l'ordine del pacchetto di crittografia SSL****
+> **Per configurare **l'impostazione di Criteri** di gruppo SSL Cipher Suite Order**
 > 
-> 1.  Al prompt dei comandi, immettere **gpedit. msc**. Viene visualizzato il **Editor oggetti Criteri di gruppo** .
-> 2.  Espandere **Configurazione computer**, **modelli amministrativi**, **rete**, quindi fare clic su **impostazioni di configurazione SSL**.
-> 3.  In **impostazioni di configurazione SSL** fare clic sull'impostazione dell' **ordine del pacchetto di crittografia SSL** .
-> 4.  Nel riquadro dell' **ordine del pacchetto di crittografia SSL** scorrere fino alla fine del riquadro.
-> 5.  Seguire le istruzioni riportate nell'etichetta **come modificare questa impostazione**.
+> 1.  Al prompt dei comandi immettere **gpedit.msc**. Verrà **Editor oggetti Criteri di gruppo** la finestra di dialogo.
+> 2.  Espandere **Configurazione computer**, **Modelli amministrativi**, **Rete**, quindi fare clic su Configurazione **SSL Impostazioni**.
+> 3.  In Ssl Configuration Impostazioni (Configurazione **SSL)** fare clic **sull'impostazione SSL Cipher Suite Order (Ordine della suite di crittografia SSL).**
+> 4.  Nel riquadro **SSL Cipher Suite Order (Ordine della suite** di crittografia SSL) scorrere fino alla parte inferiore del riquadro.
+> 5.  Seguire le istruzioni con **l'etichetta Come modificare questa impostazione.**
 > 
-> Per rendere effettive le modifiche, è necessario riavviare il computer dopo aver modificato questa impostazione.
+> È necessario riavviare il computer dopo aver modificato questa impostazione per l'applicazione delle modifiche.
 
  
 
 L'elenco dei pacchetti di crittografia è limitato a 1023 caratteri.
 
-Per definire la priorità dei pacchetti di crittografia Schannel, vedere gli esempi seguenti.
+Per classificare in ordine di priorità i pacchetti di crittografia Schannel, vedere gli esempi seguenti.
 
--   [Elenco di pacchetti di crittografia supportati](#listing-supported-cipher-suites)
+-   [Elenco dei pacchetti di crittografia supportati](#listing-supported-cipher-suites)
 -   [Aggiunta, rimozione e assegnazione di priorità ai pacchetti di crittografia](#adding-removing-and-prioritizing-cipher-suites)
 
-## <a name="listing-supported-cipher-suites"></a>Elenco di pacchetti di crittografia supportati
+## <a name="listing-supported-cipher-suites"></a>Elenco dei pacchetti di crittografia supportati
 
-Chiamare la funzione [**BCryptEnumContextFunctions**](/windows/win32/api/bcrypt/nf-bcrypt-bcryptenumcontextfunctions) per elencare i pacchetti di crittografia supportati da un provider in ordine di priorità.
+Chiamare la [**funzione BCryptEnumContextFunctions**](/windows/win32/api/bcrypt/nf-bcrypt-bcryptenumcontextfunctions) per elencare i pacchetti di crittografia supportati da un provider in ordine di priorità.
 
-Nell'esempio seguente viene illustrato come utilizzare la funzione [**BCryptEnumContextFunctions**](/windows/win32/api/bcrypt/nf-bcrypt-bcryptenumcontextfunctions) per elencare i pacchetti di crittografia supportati.
+L'esempio seguente illustra come usare la [**funzione BCryptEnumContextFunctions**](/windows/win32/api/bcrypt/nf-bcrypt-bcryptenumcontextfunctions) per elencare i pacchetti di crittografia supportati.
 
 
 ```C++
@@ -95,13 +95,13 @@ Cleanup:
 
 ## <a name="adding-removing-and-prioritizing-cipher-suites"></a>Aggiunta, rimozione e assegnazione di priorità ai pacchetti di crittografia
 
-Chiamare le funzioni [**BCryptAddContextFunction**](/windows/win32/api/bcrypt/nf-bcrypt-bcryptaddcontextfunction) e [**BCryptRemoveContextFunction**](/windows/win32/api/bcrypt/nf-bcrypt-bcryptremovecontextfunction) per aggiungere e rimuovere i pacchetti di crittografia dall'elenco dei pacchetti di crittografia supportati.
+Chiamare le [**funzioni BCryptAddContextFunction**](/windows/win32/api/bcrypt/nf-bcrypt-bcryptaddcontextfunction) e [**BCryptRemoveContextFunction**](/windows/win32/api/bcrypt/nf-bcrypt-bcryptremovecontextfunction) per aggiungere e rimuovere pacchetti di crittografia dall'elenco dei pacchetti di crittografia supportati.
 
-Quando si aggiunge un pacchetto di crittografia, impostare il valore del parametro *dwPosition* della funzione [**BCryptAddContextFunction**](/windows/win32/api/bcrypt/nf-bcrypt-bcryptaddcontextfunction) su **crypt \_ Priority \_ Top** per aggiungerlo all'inizio dell'elenco in ordine di priorità o per **crittografare la priorità in \_ \_ basso** per aggiungerlo alla fine dell'elenco.
+Quando si aggiunge un pacchetto di crittografia, impostare il valore del parametro *dwPosition* della funzione [**BCryptAddContextFunction**](/windows/win32/api/bcrypt/nf-bcrypt-bcryptaddcontextfunction) su **CRYPT \_ PRIORITY \_ TOP** per aggiungerlo all'inizio dell'elenco con priorità oppure su **CRYPT \_ PRIORITY \_ BOTTOM** per aggiungerlo alla fine dell'elenco.
 
 Per classificare in ordine di priorità l'elenco dei pacchetti di crittografia, rimuovere tutti i pacchetti di crittografia dall'elenco e quindi aggiungere i pacchetti di crittografia all'elenco nell'ordine desiderato.
 
-Nell'esempio seguente viene illustrato come aggiungere un pacchetto di crittografia all'inizio dell'elenco con priorità per il provider Microsoft Schannel predefinito.
+L'esempio seguente illustra come aggiungere un pacchetto di crittografia all'inizio dell'elenco con priorità per il provider Microsoft Schannel predefinito.
 
 
 ```C++
@@ -129,7 +129,7 @@ void main()
 
 
 
-Nell'esempio seguente viene illustrato come rimuovere un pacchetto di crittografia dall'elenco con priorità per il provider Microsoft Schannel predefinito.
+L'esempio seguente illustra come rimuovere un pacchetto di crittografia dall'elenco con priorità per il provider Microsoft Schannel predefinito.
 
 
 ```C++

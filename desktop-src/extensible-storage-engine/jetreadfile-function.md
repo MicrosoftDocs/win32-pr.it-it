@@ -18,12 +18,12 @@ api_type:
 api_location:
 - ESENT.DLL
 ROBOTS: INDEX,FOLLOW
-ms.openlocfilehash: b7f089e87fad910232bae85e14f1d6d2ab6e00b0
-ms.sourcegitcommit: 9b5faa61c38b2d0c432b7f2dbee8c127b0e28a7e
+ms.openlocfilehash: 0c670a6ed5cdcbb4b0fa4ead2415a1e55121dfce
+ms.sourcegitcommit: 4665ebce0c106bdb52eef36e544280b496b6f50b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/19/2021
-ms.locfileid: "122470278"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "122985854"
 ---
 # <a name="jetreadfile-function"></a>Funzione JetReadFile
 
@@ -63,7 +63,7 @@ Riceve la quantità effettiva di dati del file recuperati.
 
 ### <a name="return-value"></a>Valore restituito
 
-Questa funzione restituisce il [JET_ERR](./jet-err.md) dati con uno dei codici restituiti seguenti. Per altre informazioni sui possibili errori ESE, vedere Errori del [motore Archiviazione estendibile](./extensible-storage-engine-errors.md) e Parametri [di gestione degli errori](./error-handling-parameters.md).
+Questa funzione restituisce il [JET_ERR](./jet-err.md) dati con uno dei codici restituiti seguenti. Per altre informazioni sui possibili errori ESE, vedere Errori del [motore di Archiviazione](./extensible-storage-engine-errors.md) estendibile e Parametri di gestione degli [errori](./error-handling-parameters.md).
 
 
 | <p>Codice restituito</p> | <p>Descrizione</p> | 
@@ -76,7 +76,7 @@ Questa funzione restituisce il [JET_ERR](./jet-err.md) dati con uno dei codici r
 | <p>JET_errNoBackup</p> | <p>L'operazione non è riuscita perché non è in corso alcun backup esterno.</p> | 
 | <p>JET_errNotInitialized</p> | <p>Non è possibile completare l'operazione perché l'istanza associata alla sessione non è ancora stata inizializzata.</p> | 
 | <p>Jet_errreadverifyfailure</p> | <p>L'operazione non è riuscita perché è stato rilevato un danneggiamento dei dati non ripristinabili durante la lettura di una pagina di database da un file di database o da un file di patch del database.</p> | 
-| <p>JET_errLogReadVerifyFailure</p> | <p>L'operazione non è riuscita perché è stato rilevato un danneggiamento dei dati non ripristinabili durante la lettura di un file di log delle transazioni. Questo errore verrà restituito solo da Windows XP e versioni successive.</p> | 
+| <p>JET_errLogReadVerifyFailure</p> | <p>L'operazione non è riuscita perché è stato rilevato un danneggiamento dei dati non ripristinabile durante la lettura di un file di log delle transazioni. Questo errore verrà restituito solo da Windows XP e versioni successive.</p> | 
 | <p>JET_errRestoreInProgress</p> | <p>Non è possibile completare l'operazione perché è in corso un'operazione di ripristino nell'istanza associata alla sessione.</p> | 
 | <p>JET_errRunningInMultiInstanceMode</p> | <p>L'operazione non è riuscita perché è stato effettuato un tentativo di usare il motore in modalità legacy (modalità di compatibilità Windows 2000) in cui è supportata una sola istanza quando in realtà esistono già più istanze.</p> | 
 | <p>JET_errTermInProgress</p> | <p>Non è possibile completare l'operazione perché è in corso l'arresto dell'istanza associata alla sessione.</p> | 
@@ -95,9 +95,9 @@ Per ottimizzare le prestazioni di backup, è necessario usare un buffer di outpu
 
 Non sono supportate più **chiamate simultanee a JetReadFile** usando lo stesso handle di file. Ciò significa che non è possibile accodare diversi buffer per la lettura simultanea nello stesso file per ottenere una velocità effettiva sequenziale elevata. In alternativa, è necessario usare un singolo buffer di grandi dimensioni.
 
-Se l'istanza è configurata in modo che sia abilitato lo scrubbing della pagina del database (vedere JET_paramZeroDatabaseDuringBackup in Parametri di sistema), i dati eliminati verranno rimossi dal database come effetto collaterale di una chiamata a **JetReadFile** sul file di database.
+Se l'istanza è configurata in modo che sia abilitato lo scrubbing delle pagine del database (vedere JET_paramZeroDatabaseDuringBackup in Parametri di sistema), i dati eliminati verranno rimossi dal database come effetto collaterale di una chiamata a **JetReadFile** sul file di database.
 
-È molto importante comprendere l'interazione tra backup e danneggiamento dei dati. Se il motore di database rileva il danneggiamento dei dati durante un backup, il backup del database interessato o dell'intera istanza avrà esito negativo. Si tratta di una decisione di progettazione consapevole destinata a proteggersi dalla perdita di dati. Se il motore di database ha consentito l'esito positivo di un backup in cui era presente un danneggiamento dei dati, è possibile che un backup precedente non danneggiato possa essere eliminato di conseguenza. Questo sarebbe un problema perché sarebbe possibile correggere il danneggiamento dei dati nell'istanza in tempo reale ripristinando il backup e riproducendo tutti i file di log delle transazioni nel database. Questo scenario di perdita di dati zero presuppone che la registrazione circolare non sia abilitata (vedere [JET_paramCircularLog](./transaction-log-parameters.md) in Parametri [di sistema](./extensible-storage-engine-system-parameters.md)).
+È molto importante comprendere l'interazione tra backup e danneggiamento dei dati. Se il motore di database rileva il danneggiamento dei dati durante un backup, il backup del database interessato o dell'intera istanza avrà esito negativo. Si tratta di una decisione di progettazione consapevole destinata a proteggersi dalla perdita di dati. Se il motore di database ha consentito l'esito positivo di un backup in cui era presente un danneggiamento dei dati, è possibile che un backup precedente non danneggiato possa essere eliminato di conseguenza. Questo sarebbe un problema perché sarebbe possibile correggere il danneggiamento dei dati nell'istanza in tempo reale ripristinando tale backup e riproducendo tutti i file di log delle transazioni in tale database. Questo scenario di perdita di dati zero presuppone che la registrazione circolare non sia abilitata (vedere [JET_paramCircularLog](./transaction-log-parameters.md) in Parametri [di sistema](./extensible-storage-engine-system-parameters.md)).
 
 È anche importante comprendere che quando è presente il danneggiamento dei dati, il backup di streaming sarà la posizione più probabile in cui verrà rilevato per primo. Questo è il caso perché il backup di streaming è l'unico processo che esegue regolarmente l'analisi di ogni singola pagina del file di database. È anche probabile che il backup di streaming sia il primo processo per rilevare i primi segnali di errore hardware come manifestati da errori intermittenti di danneggiamento dei dati. Ciò è dovuto alla quantità di dati recuperati dal backup e alla velocità con cui vengono recuperati.
 
@@ -106,7 +106,13 @@ Il danneggiamento dei dati viene rilevato dal motore di database tramite l'uso d
 #### <a name="requirements"></a>Requisiti
 
 
-| | | <p><strong>Client</strong></p> | <p>Richiede Windows Vista, Windows XP o Windows 2000 Professional.</p> | | <p><strong>Server</strong></p> | <p>Richiede Windows Server 2008, Windows Server 2003 o Windows 2000 Server.</p> | | <p><strong>Intestazione</strong></p> | <p>Dichiarato in Esent.h.</p> | | <p><strong>Libreria</strong></p> | <p>Usare ESENT.lib.</p> | | <p><strong>DLL</strong></p> | <p>Richiede ESENT.dll.</p> | 
+| Requisito | Valore |
+|------------|----------|
+| <p><strong>Client</strong></p> | <p>Richiede Windows Vista, Windows XP o Windows 2000 Professional.</p> | 
+| <p><strong>Server</strong></p> | <p>Richiede Windows Server 2008, Windows Server 2003 o Windows 2000 Server.</p> | 
+| <p><strong>Intestazione</strong></p> | <p>Dichiarato in Esent.h.</p> | 
+| <p><strong>Libreria</strong></p> | <p>Usare ESENT.lib.</p> | 
+| <p><strong>DLL</strong></p> | <p>Richiede ESENT.dll.</p> | 
 
 
 

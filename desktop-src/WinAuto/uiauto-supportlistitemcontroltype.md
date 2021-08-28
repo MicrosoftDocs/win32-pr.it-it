@@ -1,6 +1,6 @@
 ---
 title: Tipo di controllo ListItem
-description: Questo argomento fornisce informazioni sul supporto microsoft Automazione interfaccia utente per il tipo di controllo ListItem.
+description: Questo argomento fornisce informazioni sul supporto di Microsoft Automazione interfaccia utente per il tipo di controllo ListItem.
 ms.assetid: 8cb579ab-92c9-4311-aad7-5363f4cf2eaf
 keywords:
 - Automazione interfaccia utente,supporto per il tipo di controllo ListItem
@@ -21,20 +21,20 @@ keywords:
 - tipi di controllo,ListItem
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: c7fc7df30fc9aeebbabd5a5fdb9572c9f4b81bda4507eac751f283841a14054a
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 3cf7275212d44b795f354cb895c2d64727e375ea
+ms.sourcegitcommit: 9b5faa61c38b2d0c432b7f2dbee8c127b0e28a7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "118825553"
+ms.lasthandoff: 08/19/2021
+ms.locfileid: "122483197"
 ---
 # <a name="listitem-control-type"></a>Tipo di controllo ListItem
 
-Questo argomento fornisce informazioni sul supporto di Microsoft Automazione interfaccia utente per il **tipo di controllo ListItem.**
+Questo argomento fornisce informazioni sul supporto microsoft Automazione interfaccia utente per il **tipo di controllo ListItem.**
 
 I controlli elemento elenco sono un esempio di controlli che implementano il **tipo di controllo ListItem.**
 
-Le sezioni seguenti definiscono la struttura ad Automazione interfaccia utente, le proprietà, i pattern di controllo e gli eventi necessari per il **tipo di controllo ListItem.** I Automazione interfaccia utente si applicano a tutti i controlli elemento elenco in cui il framework o la piattaforma dell'interfaccia utente Automazione interfaccia utente supporto per i tipi di controllo e i pattern di controllo.
+Le sezioni seguenti definiscono la struttura ad Automazione interfaccia utente, le proprietà, i pattern di controllo e gli eventi necessari per il **tipo di controllo ListItem.** I Automazione interfaccia utente requisiti si applicano a tutti i controlli elemento elenco in cui il framework o la piattaforma dell'interfaccia utente Automazione interfaccia utente supporto per i tipi di controllo e i pattern di controllo.
 
 In questo argomento sono contenute le sezioni seguenti.
 
@@ -47,37 +47,15 @@ In questo argomento sono contenute le sezioni seguenti.
 
 ## <a name="typical-tree-structure"></a>Struttura ad albero tipica
 
-La tabella seguente illustra un controllo tipico e una visualizzazione contenuto dell'albero Automazione interfaccia utente che riguarda i controlli elemento elenco e descrive cosa può essere contenuto in ogni visualizzazione. Per altre informazioni sull'albero Automazione interfaccia utente, vedere panoramica Automazione interfaccia utente [albero](uiauto-treeoverview.md).
+La tabella seguente illustra un controllo tipico e una visualizzazione contenuto dell'albero Automazione interfaccia utente che riguarda i controlli elemento elenco e descrive cosa può essere contenuto in ogni visualizzazione. Per altre informazioni sull'albero Automazione interfaccia utente, vedere Panoramica Automazione interfaccia utente [albero](uiauto-treeoverview.md).
 
 
 
-<table>
-<colgroup>
-<col style="width: 50%" />
-<col style="width: 50%" />
-</colgroup>
-<thead>
-<tr class="header">
-<th>Visualizzazione controlli</th>
-<th>Visualizzazione contenuto</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td><ul>
-<li>ListItem
-<ul>
-<li>Image (0 o più)</li>
-<li>Text (0 o più)</li>
-<li>Edit (0 o più)</li>
-</ul></li>
-</ul></td>
-<td><ul>
-<li>ListItem</li>
-</ul></td>
-</tr>
-</tbody>
-</table>
+
+| Visualizzazione controlli | Visualizzazione contenuto | 
+|--------------|--------------|
+| <ul><li>ListItem<ul><li>Image (0 o più)</li><li>Text (0 o più)</li><li>Edit (0 o più)</li></ul></li></ul> | <ul><li>ListItem</li></ul> | 
+
 
 
 
@@ -91,13 +69,13 @@ Nella tabella seguente sono elencate le Automazione interfaccia utente il cui va
 
 
 
-| Proprietà di automazione interfaccia utente                                                                                              | Valore        | Note                                                                                                                                                                                                                                                                                                                                                                                                                             |
+| Proprietà di automazione interfaccia utente                                                                                              | valore        | Note                                                                                                                                                                                                                                                                                                                                                                                                                             |
 |---------------------------------------------------------------------------------------------------------------------|--------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | [**UIA \_ AutomationIdPropertyId**](uiauto-automation-element-propids.md)                 | Vedere le note.   | Il valore di questa proprietà deve essere univoco tra tutti gli elementi peer nella visualizzazione non elaborata dell'Automazione interfaccia utente albero. Allocare la **proprietà AutomationId** per un elemento dell'elenco se l'elemento è noto per essere coerente tra istanze diverse dell'interfaccia utente. Se l'elemento dell'elenco viene popolato in modo dinamico e non prevedibile, lasciare vuota la **proprietà AutomationId.**                                                          |
 | [**UIA \_ BoundingRectanglePropertyId**](uiauto-automation-element-propids.md)       | Vedere le note.   | Il valore di questa proprietà include l'area dei contenuti immagine e testo dell'elemento dell'elenco.                                                                                                                                                                                                                                                                                                                              |
 | [**UIA \_ ClickablePointPropertyId**](uiauto-automation-element-propids.md)             | Dipende da      | Se il controllo elenco ha un punto selezionabile (un punto su cui è possibile fare clic per fare in modo che l'elenco prenda lo stato attivo), tale punto deve essere esposto tramite questa proprietà. Se il controllo elenco è completamente coperto da elementi di elenco discendenti, restituirà l'errore [**UIA \_ E \_ NOCLICKABLEPOINT**](uiauto-error-codes.md) per indicare che il client deve richiedere un elemento all'interno del controllo elenco per un punto selezionabile. |
 | [**UIA \_ ControlTypePropertyId**](uiauto-automation-element-propids.md)                   | **ListItem** | Questo valore è uguale per tutti i framework dell'interfaccia utente.                                                                                                                                                                                                                                                                                                                                                                                     |
-| [**UIA \_ HelpTextPropertyId**](uiauto-automation-element-propids.md)                         | Vedere le note.   | Il testo della Guida per gli elenchi deve spiegare il motivo per cui all'utente viene chiesto di effettuare una selezione da un elenco di opzioni, che è in genere lo stesso tipo di informazioni visualizzate tramite una descrizione comando. Ad esempio, "Selezionare un elemento per impostare la risoluzione dello schermo per il monitor".                                                                                                                                                    |
+| [**UIA \_ HelpTextPropertyId**](uiauto-automation-element-propids.md)                         | Vedere le note.   | Il testo della Guida per gli elenchi deve spiegare il motivo per cui all'utente viene chiesto di effettuare una selezione da un elenco di opzioni, che è in genere lo stesso tipo di informazioni visualizzate tramite una descrizione comando. Ad esempio, "Selezionare un elemento per impostare la risoluzione dello schermo per il monitoraggio".                                                                                                                                                    |
 | [**UIA \_ IsContentElementPropertyId**](uiauto-automation-element-propids.md)         | **TRUE**     | Il controllo elenco è sempre incluso nella visualizzazione contenuto dell'Automazione interfaccia utente albero.                                                                                                                                                                                                                                                                                                                                                |
 | [**UIA \_ IsControlElementPropertyId**](uiauto-automation-element-propids.md)         | **TRUE**     | Il controllo elenco è sempre incluso nella visualizzazione controlli dell'Automazione interfaccia utente albero.                                                                                                                                                                                                                                                                                                                                                |
 | [**UIA \_ IsKeyboardFocusablePropertyId**](uiauto-automation-element-propids.md)   | Vedere le note.   | Se il contenitore può accettare l'input da tastiera, questo valore della proprietà deve essere **TRUE.**                                                                                                                                                                                                                                                                                                                                           |
@@ -125,7 +103,7 @@ Nella tabella seguente sono elencati i Automazione interfaccia utente di control
 | [**IInvokeProvider**](/windows/desktop/api/UIAutomationCore/nn-uiautomationcore-iinvokeprovider)                 | Dipende da | Se l'elemento dispone di un comando che può [](uiauto-implementinginvoke.md) essere eseguito su di esso, separato dalla selezione, è necessario che sia implementato il pattern di controllo Invoke. In genere si tratta di un'azione associata all'esecuzione del doppio clic sul controllo elemento elenco. Ad esempio, l'avvio di un documento Windows Explorer o la riproduzione di un file musicale in Microsoft Windows Media Player.        |
 | [**IScrollItemProvider**](/windows/desktop/api/UIAutomationCore/nn-uiautomationcore-iscrollitemprovider)         | Dipende da | Se l'elemento dell'elenco è contenuto in un contenitore scorrevole, è necessario implementato il pattern di [controllo ScrollItem.](uiauto-implementingscrollitem.md)                                                                                                                                                                                                                       |
 | [**ISelectionItemProvider**](/windows/desktop/api/UIAutomationCore/nn-uiautomationcore-iselectionitemprovider)   | Dipende da | Un controllo elemento elenco che supporta la selezione deve implementare il [pattern di controllo SelectionItem.](uiauto-implementingselectionitem.md) Ciò consente ai controlli elemento elenco di indicare quando sono selezionati.                                                                                                                                                                             |
-| [**IToggleProvider**](/windows/desktop/api/UIAutomationCore/nn-uiautomationcore-itoggleprovider)                 | Dipende da | Se l'elemento dell'elenco è controllabile e l'azione non esegue una modifica dello stato di selezione, è necessario implementato il pattern di controllo [Toggle.](uiauto-implementingtoggle.md)                                                                                                                                                                                                            |
+| [**IToggleProvider**](/windows/desktop/api/UIAutomationCore/nn-uiautomationcore-itoggleprovider)                 | Dipende da | Se l'elemento dell'elenco è controllabile e l'azione non esegue una modifica dello stato di selezione, è necessario che sia implementato il pattern di controllo [Toggle.](uiauto-implementingtoggle.md)                                                                                                                                                                                                            |
 | [**IValueProvider**](/windows/desktop/api/UIAutomationCore/nn-uiautomationcore-ivalueprovider)                   | Dipende da | Se l'elemento può essere modificato, [deve](uiauto-implementingvalue.md) essere implementato il pattern di controllo Value. Le modifiche al controllo elemento elenco causeranno modifiche ai valori delle proprietà [**UIA \_ NamePropertyId**](uiauto-automation-element-propids.md) e [**UIA \_ ValueValuePropertyId.**](uiauto-control-pattern-propids.md) |
 
 

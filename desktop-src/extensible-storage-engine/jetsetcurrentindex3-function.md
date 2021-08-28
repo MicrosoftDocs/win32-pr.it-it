@@ -1,5 +1,5 @@
 ---
-description: Altre informazioni sulla funzione JetSetCurrentIndex3
+description: 'Altre informazioni su: Funzione JetSetCurrentIndex3'
 title: Funzione JetSetCurrentIndex3
 TOCTitle: JetSetCurrentIndex3 Function
 ms:assetid: 50050bd3-4b74-4be7-985c-754ced8aded1
@@ -20,12 +20,12 @@ api_type:
 api_location:
 - ESENT.DLL
 ROBOTS: INDEX,FOLLOW
-ms.openlocfilehash: 861741de07093be29f84d4e2ae0364d5132251ec
-ms.sourcegitcommit: 9b5faa61c38b2d0c432b7f2dbee8c127b0e28a7e
+ms.openlocfilehash: 36aadb42cdf942c802a65f92b5c450535575793b
+ms.sourcegitcommit: 4665ebce0c106bdb52eef36e544280b496b6f50b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/19/2021
-ms.locfileid: "122471337"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "122986654"
 ---
 # <a name="jetsetcurrentindex3-function"></a>Funzione JetSetCurrentIndex3
 
@@ -34,7 +34,7 @@ _**Si applica a:** Windows | Windows Server_
 
 ## <a name="jetsetcurrentindex3-function"></a>Funzione JetSetCurrentIndex3
 
-La **funzione JetSetCurrentIndex3** viene usata per impostare l'indice corrente di un cursore. L'indice corrente di un cursore definisce i record di una tabella visibili al cursore e l'ordine in cui vengono visualizzati selezionando il set di voci di indice da usare per esporre tali record.
+La **funzione JetSetCurrentIndex3** viene usata per impostare l'indice corrente di un cursore. L'indice corrente di un cursore definisce quali record di una tabella sono visibili al cursore e l'ordine in cui vengono visualizzati selezionando il set di voci di indice da utilizzare per esporre tali record.
 
 ```cpp
     JET_ERR JET_API JetSetCurrentIndex3(
@@ -60,25 +60,25 @@ Cursore da utilizzare per questa chiamata.
 
 Nome dell'indice da selezionare per il cursore.
 
-Se questo parametro è NULL o una stringa vuota, verrà selezionato l'indice cluster. Se per la tabella è definito un indice primario, tale indice verrà selezionato perché corrisponde all'indice cluster. Se per la tabella non è definito alcun indice primario, verrà selezionato l'indice sequenziale. L'indice sequenziale non ha una definizione di indice. Per [altre informazioni, vedere JetCreateIndex.](./jetcreateindex-function.md)
+Se questo parametro è NULL o una stringa vuota, verrà selezionato l'indice cluster. Se viene definito un indice primario per la tabella, tale indice verrà selezionato perché corrisponde all'indice cluster. Se per la tabella non è definito alcun indice primario, verrà selezionato l'indice sequenziale. L'indice sequenziale non ha una definizione di indice. Per [altre informazioni, vedere JetCreateIndex.](./jetcreateindex-function.md)
 
-Se *pindexid non* è NULL, il nome dell'indice verrà ignorato e l'indice verrà selezionato in base all'ID indice.
+Se *pindexid non* è NULL, il nome dell'indice verrà ignorato e l'indice verrà selezionato in base al relativo ID di indice.
 
 *grbit*
 
-Gruppo di bit che contengono le opzioni da utilizzare per questa chiamata, che includono zero o più delle opzioni seguenti.
+Gruppo di bit che contengono le opzioni da utilizzare per questa chiamata, che includono zero o più degli elementi seguenti.
 
 
-| <p>valore</p> | <p>Significato</p> | 
+| <p>Valore</p> | <p>Significato</p> | 
 |--------------|----------------|
-| <p>JET_bitMoveFirst</p> | <p>Questa opzione indica che il cursore deve essere posizionato sulla prima voce dell'indice specificato. Se l'indice cluster viene selezionato (indice primario o sequenziale) e l'indice corrente è un indice secondario, JET_bitMoveFirst viene presupposto. Se l'indice corrente viene selezionato, questa opzione viene ignorata e non viene apportata alcuna modifica alla posizione del cursore.</p> | 
-| <p>JET_bitNoMove</p> | <p>Questa opzione indica che il cursore deve essere posizionato sulla voce di indice del nuovo indice corrispondente al record associato alla voce di indice nella posizione corrente del cursore sull'indice precedente.</p><p>Se la definizione per il nuovo indice contiene almeno una colonna chiave multivalore, la voce dell'indice di destinazione è ambigua. In questo caso, <em>l'oggetto itagSequence</em> specificato viene usato per selezionare il multivalore della colonna chiave multivalore più significativa usata per posizionare il cursore. È necessario passare solo un singolo <em>itagSequence</em> anche nel caso di più colonne chiave multivalore perché il motore espande solo tutti i valori per la colonna chiave multivalore più significativa. Per <a href="gg294099(v=exchg.10).md">altri dettagli, vedere JetCreateIndex.</a></p><p>Se JET_bitMoveFirst specificato, questa opzione viene ignorata.</p><p>Se l'indice corrente viene selezionato, questa opzione viene ignorata e non viene apportata alcuna modifica alla posizione del cursore. Quando questo parametro non è presente, si presuppone che il relativo valore sia JET_bitMoveFirst.</p> | 
+| <p>JET_bitMoveFirst</p> | <p>Questa opzione indica che il cursore deve essere posizionato sulla prima voce dell'indice specificato. Se l'indice cluster viene selezionato (indice primario o indice sequenziale) e l'indice corrente è un indice secondario, si presuppone JET_bitMoveFirst indice. Se viene selezionato l'indice corrente, questa opzione viene ignorata e non viene apportata alcuna modifica alla posizione del cursore.</p> | 
+| <p>JET_bitNoMove</p> | <p>Questa opzione indica che il cursore deve essere posizionato sulla voce di indice del nuovo indice corrispondente al record associato alla voce di indice nella posizione corrente del cursore sull'indice precedente.</p><p>Se la definizione per il nuovo indice contiene almeno una colonna chiave multivalore, la voce dell'indice di destinazione è ambigua. In questo caso, <em>l'oggetto itagSequence</em> specificato viene usato per selezionare il multivalore della colonna chiave multivalore più significativa usato per posizionare il cursore. È necessario passare solo una singola <em>itagSequence</em> anche nel caso di più colonne chiave multivalore perché il motore espande tutti i valori solo per la colonna chiave multivalore più significativa. Per <a href="gg294099(v=exchg.10).md">altri dettagli, vedere JetCreateIndex.</a></p><p>Se JET_bitMoveFirst specificato, questa opzione viene ignorata.</p><p>Se viene selezionato l'indice corrente, questa opzione viene ignorata e non viene apportata alcuna modifica alla posizione del cursore. Quando questo parametro non è presente, si presuppone che il relativo valore sia JET_bitMoveFirst.</p> | 
 
 
 
 *itagSequence*
 
-Numero di sequenza del valore della colonna multivalore che verrà usato per posizionare il cursore sul nuovo indice.
+Numero di sequenza del valore della colonna multivalore che verrà utilizzato per posizionare il cursore sul nuovo indice.
 
 Questo parametro viene usato solo in combinazione con JET_bitNoMove. Per altri dettagli, vedere la descrizione di questa opzione.
 
@@ -86,28 +86,28 @@ Quando questo parametro non è presente o è impostato su zero, si presuppone ch
 
 ### <a name="return-value"></a>Valore restituito
 
-Questa funzione restituisce il [JET_ERR](./jet-err.md) dati con uno dei codici restituiti seguenti. Per altre informazioni sui possibili errori ESE, vedere Errori del [motore Archiviazione estendibile](./extensible-storage-engine-errors.md) e Parametri [di gestione degli errori](./error-handling-parameters.md).
+Questa funzione restituisce il [JET_ERR](./jet-err.md) dati con uno dei codici restituiti seguenti. Per altre informazioni sui possibili errori ESE, vedere [Extensible Archiviazione Engine Errors](./extensible-storage-engine-errors.md) and [Error Handling Parameters](./error-handling-parameters.md).
 
 
 | <p>Codice restituito</p> | <p>Descrizione</p> | 
 |--------------------|--------------------|
 | <p>JET_errSuccess</p> | <p>Operazione riuscita.</p> | 
 | <p>JET_errBadItagSequence</p> | <p>Viene selezionato un indice secondario con l'opzione JET_bitNoMove e non è presente alcun valore per la prima colonna chiave multivalore nella definizione del nuovo indice corrispondente al numero di sequenza specificato.</p> | 
-| <p>JET_errClientRequestToStopJetService</p> | <p>Non è possibile completare l'operazione perché tutte le attività nell'istanza associata alla sessione sono cesse a causa di una chiamata a <a href="gg269240(v=exchg.10).md">JetStopService.</a></p> | 
+| <p>JET_errClientRequestToStopJetService</p> | <p>Non è possibile completare l'operazione perché tutte le attività nell'istanza associata alla sessione sono cessare in seguito a una chiamata a <a href="gg269240(v=exchg.10).md">JetStopService.</a></p> | 
 | <p>JET_errInstanceUnavailable</p> | <p>Non è possibile completare l'operazione perché l'istanza associata alla sessione ha rilevato un errore irreversibile che richiede la revoca dell'accesso a tutti i dati per proteggere l'integrità di questi dati.</p><p>Questo errore verrà restituito solo da Windows XP e versioni successive.</p> | 
-| <p>JET_errInvalidIndexId</p> | <p>Il contenuto dell'ID indice non è valido o è scaduto e deve essere aggiornato. Questo problema può verificarsi <strong>per JetSetCurrentIndex3</strong> quando:</p><ul><li><p>pindexid- &gt; cbStruct non ha le dimensioni previste (Windows Server 2003 e versioni successive).</p></li><li><p>Il motore è stato arrestato dopo il recupero dell'ID indice.</p></li><li><p>Tutti i cursori che fanno riferimento alla tabella contenente l'indice corrispondente all'ID indice sono stati chiusi e il motore ha rimosso la definizione per tale indice dalla cache dello schema.</p></li><li><p>L'ID indice viene usato con un cursore aperto nella tabella errata.</p></li><li><p>L'indice è stato eliminato o non è ancora visibile alla sessione.</p></li></ul> | 
-| <p>JET_errInvalidName</p> | <p>Uno dei nomi di oggetto specificati non è valido. Tutti i nomi degli oggetti devono essere conformi allo stesso set di regole. Le regole sono le seguenti:</p><ul><li><p>I nomi degli oggetti devono essere costituiti da caratteri ASCII.</p></li><li><p>I nomi degli oggetti devono avere almeno un carattere di lunghezza.</p></li><li><p>I nomi degli oggetti non possono superare JET_cbNameMost (64) caratteri.</p></li><li><p>I nomi degli oggetti non possono iniziare con uno spazio.</p></li><li><p>I nomi degli oggetti non possono contenere caratteri di controllo ASCII (da 0x00 a 0x1F).</p></li><li><p>I nomi degli oggetti non possono contenere un punto esclamativo (!), un punto (.), una parentesi quadra aperta ([) o una parentesi quadra chiusa (]).</p></li><li><p>Dopo la convalida, per il nome dell'oggetto verrà usata solo la parte della stringa fino al primo spazio (se presente). Ciò significa che anche i nomi degli oggetti non possono contenere uno spazio.</p></li></ul> | 
-| <p>JET_errInvalidParameter</p> | <p>Uno dei parametri forniti conteneva un valore imprevisto o conteneva un valore che non aveva senso se combinato con il valore di un altro parametro. Ciò può verificarsi per <strong>JetSetCurrentIndex3</strong> quando <em>pindexid</em> non è NULL e pindexid- cbStruct non ha le dimensioni previste (Windows XP e versioni &gt; precedenti).</p> | 
+| <p>JET_errInvalidIndexId</p> | <p>Il contenuto dell'ID indice non è valido o è scaduto e deve essere aggiornato. Questa operazione può verificarsi <strong>per JetSetCurrentIndex3</strong> quando:</p><ul><li><p>pindexid- cbStruct non ha le dimensioni previste &gt; (Windows Server 2003 e versioni successive).</p></li><li><p>Il motore è stato arrestato dopo il recupero dell'ID indice.</p></li><li><p>Tutti i cursori che fanno riferimento alla tabella contenente l'indice corrispondente all'ID di indice sono stati chiusi e il motore ha rimosso la definizione per tale indice dalla cache degli schemi.</p></li><li><p>L'ID di indice viene utilizzato con un cursore aperto nella tabella errata.</p></li><li><p>L'indice è stato eliminato o non è ancora visibile alla sessione.</p></li></ul> | 
+| <p>JET_errInvalidName</p> | <p>Uno dei nomi di oggetto specificati non è valido. Tutti i nomi degli oggetti devono essere conformi allo stesso set di regole. Le regole sono le seguenti:</p><ul><li><p>I nomi degli oggetti devono essere costituiti da caratteri ASCII.</p></li><li><p>I nomi degli oggetti devono avere una lunghezza di almeno un carattere.</p></li><li><p>I nomi degli oggetti non possono superare JET_cbNameMost (64) caratteri.</p></li><li><p>I nomi degli oggetti non possono iniziare con uno spazio.</p></li><li><p>I nomi degli oggetti non possono contenere caratteri di controllo ASCII (da 0x00 a 0x1F).</p></li><li><p>I nomi degli oggetti non possono contenere un punto esclamativo (!), un punto (.), una parentesi quadra aperta ([) o una parentesi quadra chiusa (]).</p></li><li><p>Dopo la convalida, per il nome dell'oggetto verrà usata solo la parte della stringa fino al primo spazio (se presente). Ciò significa che anche i nomi degli oggetti potrebbero non contenere uno spazio.</p></li></ul> | 
+| <p>JET_errInvalidParameter</p> | <p>Uno dei parametri forniti contiene un valore imprevisto o contiene un valore che non ha senso se combinato con il valore di un altro parametro. Questo problema può verificarsi per <strong>JetSetCurrentIndex3</strong> quando <em>pindexid</em> non è NULL e pindexid- cbStruct non ha le dimensioni previste &gt; (Windows XP e versioni precedenti).</p> | 
 | <p>JET_errNoCurrentRecord</p> | <p>Viene selezionato un indice secondario con l'opzione JET_bitNoMove e nel nuovo indice non è presente alcuna voce di indice corrispondente al record associato alla voce di indice nella posizione corrente del cursore sull'indice precedente.</p> | 
 | <p>JET_errNotInitialized</p> | <p>Non è possibile completare l'operazione perché l'istanza associata alla sessione non è ancora stata inizializzata.</p> | 
-| <p>JET_errOutOfCursors</p> | <p>Il motore ha esaurito il pool di risorse usate per aprire i cursori. Il numero massimo di cursori che possono essere aperti in qualsiasi momento viene controllato usando <a href="gg269201(v=exchg.10).md">JET_paramMaxCursors</a>. Per <a href="gg294044(v=exchg.10).md">altre informazioni, vedere JetSetSystemParameter.</a> Ciò può verificarsi per <strong>JetSetCurrentIndex3</strong> quando è stato selezionato un indice secondario e il motore non può aprire un cursore interno per usare tale indice.</p> | 
+| <p>JET_errOutOfCursors</p> | <p>Il motore ha esaurito il pool di risorse usate per aprire i cursori. Il numero massimo di cursori che è possibile aprire contemporaneamente viene controllato tramite <a href="gg269201(v=exchg.10).md">JET_paramMaxCursors</a>. Per <a href="gg294044(v=exchg.10).md">altre informazioni, vedere JetSetSystemParameter.</a> Questa operazione può verificarsi <strong>per JetSetCurrentIndex3</strong> quando è stato selezionato un indice secondario e il motore non è in grado di aprire un cursore interno per utilizzare tale indice.</p> | 
 | <p>JET_errRestoreInProgress</p> | <p>Non è possibile completare l'operazione perché è in corso un'operazione di ripristino nell'istanza associata alla sessione.</p> | 
 | <p>JET_errSessionSharingViolation</p> | <p>La stessa sessione non può essere usata per più thread contemporaneamente.</p><p>Questo errore verrà restituito solo da Windows XP e versioni successive.</p> | 
 | <p>JET_errTermInProgress</p> | <p>Non è possibile completare l'operazione perché è in corso l'arresto dell'istanza associata alla sessione.</p> | 
 
 
 
-In caso di esito positivo, l'indice corrente del cursore viene impostato sull'indice richiesto. È ora possibile cercare le voci di indice [usando JetSeek](./jetseek-function.md) in base alla definizione dell'indice richiesto. Le voci di indice possono anche essere enumerate usando [JetMove](./jetmove-function.md) nell'ordine specificato dalla definizione dell'indice. La posizione corrente del cursore è impostata sulla prima voce di indice nell'indice (JET_bitMoveFirst) o su una voce di indice specifica correlata alla posizione corrente del cursore sull'indice precedente (JET_bitNoMove). Non verrà apportata alcuna modifica allo stato del database.
+In caso di esito positivo, l'indice corrente del cursore viene impostato sull'indice richiesto. È ora possibile cercare le voci di indice [usando JetSeek](./jetseek-function.md) in base alla definizione dell'indice richiesto. Le voci di indice possono anche essere enumerate utilizzando [JetMove](./jetmove-function.md) nell'ordine specificato dalla definizione dell'indice. La posizione corrente del cursore è impostata sulla prima voce di indice nell'indice (JET_bitMoveFirst) o su una voce di indice specifica correlata alla posizione corrente del cursore sull'indice precedente (JET_bitNoMove). Non verrà apportata alcuna modifica allo stato del database.
 
 In caso di errore, l'indice corrente e la posizione corrente del cursore sono in uno stato non definito. Non verrà apportata alcuna modifica allo stato del database.
 
@@ -118,7 +118,14 @@ Se l'hint per l'ID dell'indice non è obsoleto, l'API ha semplicemente esito neg
 #### <a name="requirements"></a>Requisiti
 
 
-| | | <p><strong>Client</strong></p> | <p>Richiede Windows Vista, Windows XP o Windows 2000 Professional.</p> | | <p><strong>Server</strong></p> | <p>Richiede Windows Server 2008, Windows Server 2003 o Windows 2000 Server.</p> | | <p><strong>Intestazione</strong></p> | <p>Dichiarato in Esent.h.</p> | | <p><strong>Libreria</strong></p> | <p>Usare ESENT.lib.</p> | | <p><strong>DLL</strong></p> | <p>Richiede ESENT.dll.</p> | | <p><strong>Unicode</strong></p> | <p>Implementato come <strong>JetSetCurrentIndex3W</strong> (Unicode) e <strong>JetSetCurrentIndex3A</strong> (ANSI).</p> | 
+| Requisito | Valore |
+|------------|----------|
+| <p><strong>Client</strong></p> | <p>Richiede Windows Vista, Windows XP o Windows 2000 Professional.</p> | 
+| <p><strong>Server</strong></p> | <p>Richiede Windows Server 2008, Windows Server 2003 o Windows 2000 Server.</p> | 
+| <p><strong>Intestazione</strong></p> | <p>Dichiarato in Esent.h.</p> | 
+| <p><strong>Libreria</strong></p> | <p>Usare ESENT.lib.</p> | 
+| <p><strong>DLL</strong></p> | <p>Richiede ESENT.dll.</p> | 
+| <p><strong>Unicode</strong></p> | <p>Implementato come <strong>JetSetCurrentIndex3W</strong> (Unicode) e <strong>JetSetCurrentIndex3A</strong> (ANSI).</p> | 
 
 
 

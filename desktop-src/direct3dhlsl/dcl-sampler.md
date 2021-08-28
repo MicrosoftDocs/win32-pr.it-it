@@ -9,12 +9,12 @@ topic_type:
 api_name: ''
 api_type: ''
 api_location: ''
-ms.openlocfilehash: 86e0e04558c9ca1c10f89e924605c8999a7f7346d2278850d7cd6449968fd13c
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: cb3835e1c0e2cfb5ffbb49523617b9d233810494
+ms.sourcegitcommit: c276a8912787b2cda74dcf54eb96df961bb1188b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "118515540"
+ms.lasthandoff: 08/20/2021
+ms.locfileid: "122627097"
 ---
 # <a name="dcl_sampler-sm4---asm"></a>Campionatore dcl \_ (sm4 - asm)
 
@@ -33,8 +33,8 @@ Dichiara un registro del campionatore.
 
 <table>
 <colgroup>
-<col style="width: 50%" />
-<col style="width: 50%" />
+<col  />
+<col  />
 </colgroup>
 <thead>
 <tr class="header">

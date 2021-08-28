@@ -1,6 +1,6 @@
 ---
 title: attributo proxy
-description: L'attributo \ proxy\ impedisce la registrazione di Automazione come gestore proxy/stub per un'interfaccia duale.
+description: L'attributo \proxy\ impedisce ad Automazione di registrarsi come gestore proxy/stub per un'interfaccia duale.
 ms.assetid: 88e59938-83c9-436a-931c-f4396fdcf653
 keywords:
 - attributo proxy MIDL
@@ -21,7 +21,7 @@ ms.locfileid: "118641420"
 ---
 # <a name="proxy-attribute"></a>attributo proxy
 
-**\[ L'attributo proxy \]** impedisce la registrazione di Automazione come gestore proxy/stub per un'interfaccia duale.
+**\[ L'attributo proxy \]** impedisce ad Automazione di registrarsi come gestore proxy/stub per un'interfaccia duale.
 
 ``` syntax
 [ 
@@ -42,14 +42,14 @@ interface interface-name <> : base-interface <>
 *string-uuid* 
 </dt> <dd>
 
-Specifica una stringa costituita da 8 cifre esadecimali seguite da un trattino, quindi da tre gruppi di 4 cifre esadecimali ciascuna seguita da un trattino e quindi da 12 cifre esadecimali. È possibile racchiudere la stringa UUID tra virgolette, tranne quando si usa l'opzione del compilatore MIDL [**/osf**](-osf.md).
+Specifica una stringa costituita da 8 cifre esadecimali seguite da un trattino, quindi tre gruppi di 4 cifre esadecimali, ognuno seguito da un trattino e quindi da 12 cifre esadecimali. È possibile racchiudere la stringa UUID tra virgolette, tranne quando si usa l'opzione del compilatore MIDL [**/osf**](-osf.md).
 
 </dd> <dt>
 
 *interface-attribute-list* 
 </dt> <dd>
 
-Specifica un elenco di zero o più attributi IDL applicabili all'intera interfaccia. Quando sono presenti due o più attributi di interfaccia, devono essere separati da virgole.
+Specifica un elenco di zero o più attributi IDL che si applicano all'intera interfaccia. Quando sono presenti due o più attributi di interfaccia, devono essere separati da virgole.
 
 </dd> <dt>
 
@@ -63,13 +63,13 @@ Nome dell'interfaccia.
 *interfaccia di base* 
 </dt> <dd>
 
-Specifica il nome di un'interfaccia da cui questa interfaccia derivata eredita funzioni membro, codici di stato e attributi dell'interfaccia. L'interfaccia derivata non eredita le definizioni dei tipi. A tale scopo, usare la [**parola chiave import**](import.md) per importare il file IDL dell'interfaccia di base.
+Specifica il nome di un'interfaccia da cui questa interfaccia derivata eredita funzioni membro, codici di stato e attributi di interfaccia. L'interfaccia derivata non eredita le definizioni dei tipi. A tale scopo, usare la [**parola chiave import**](import.md) per importare il file IDL dell'interfaccia di base.
 
 </dd> </dl>
 
 ## <a name="remarks"></a>Commenti
 
-\[ **L'uso dell'attributo proxy** \] per un'interfaccia duale impedisce al TLB di assumere il controllo degli stub generati. Se questo attributo viene specificato, non è necessario annullare la registrazione del proxy della libreria dei tipi quando viene annullata la registrazione della libreria dei tipi.
+L'uso \[ **dell'attributo proxy** \] per un'interfaccia duale impedisce al TLB di assumere gli stub generati. Se questo attributo viene specificato, la registrazione del proxy della libreria dei tipi non deve essere annullata quando viene annullata la registrazione della libreria dei tipi.
 
 ### <a name="flags"></a>Flags
 
@@ -78,7 +78,7 @@ Specifica il nome di un'interfaccia da cui questa interfaccia derivata eredita f
 <span id="TYPEFLAG_PROXY"></span><span id="typeflag_proxy"></span>TYPEFLAG \_ PROXY
 </dt> <dd>
 
-Le interfacce possono essere contrassegnate con il flag TYPEFLAG PROXY per indicare che verranno usando una libreria a collegamento dinamico \_ proxy/stub. Questo flag specifica che non è necessario annullare la registrazione del proxy della libreria dei tipi quando viene annullata la registrazione della libreria dei tipi.
+Le interfacce possono essere contrassegnate con il flag TYPEFLAG PROXY per indicare che verrà utilizzata una libreria di collegamento dinamico \_ proxy/stub. Questo flag specifica che la registrazione del proxy della libreria dei tipi non deve essere annullata quando viene annullata la registrazione della libreria dei tipi.
 
 </dd> </dl>
 

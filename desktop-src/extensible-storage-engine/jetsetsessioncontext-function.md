@@ -18,12 +18,12 @@ api_type:
 api_location:
 - ESENT.DLL
 ROBOTS: INDEX,FOLLOW
-ms.openlocfilehash: 61df6b5396a5bffcef4f7e32e9a2c32477d019e0
-ms.sourcegitcommit: 9b5faa61c38b2d0c432b7f2dbee8c127b0e28a7e
+ms.openlocfilehash: 7ac368caaff5ec652a6dc7ad490e7418e62888b7
+ms.sourcegitcommit: 4665ebce0c106bdb52eef36e544280b496b6f50b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/19/2021
-ms.locfileid: "122465288"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "122986634"
 ---
 # <a name="jetsetsessioncontext-function"></a>Funzione JetSetSessionContext
 
@@ -53,7 +53,7 @@ Identificatore univoco a cui verrà associata la sessione.
 
 ### <a name="return-value"></a>Valore restituito
 
-Questa funzione restituisce il [JET_ERR](./jet-err.md) dati con uno dei codici restituiti seguenti. Per altre informazioni sui possibili errori ESE, vedere Errori del [motore Archiviazione estendibile](./extensible-storage-engine-errors.md) e Parametri [di gestione degli errori](./error-handling-parameters.md).
+Questa funzione restituisce il [JET_ERR](./jet-err.md) dati con uno dei codici restituiti seguenti. Per altre informazioni sui possibili errori ESE, vedere Errori del [motore di Archiviazione](./extensible-storage-engine-errors.md) estendibile e Parametri di gestione degli [errori](./error-handling-parameters.md).
 
 
 | <p>Codice restituito</p> | <p>Descrizione</p> | 
@@ -77,7 +77,7 @@ Se questa funzione ha esito negativo, lo stato della sessione rimarrà invariato
 
 Una sessione è in genere associata a un thread specifico per la durata di una transazione. Questo comportamento è progettato per consentire alle applicazioni di rilevare ed evitare la condivisione concettualmente sconsigliata di una singola sessione tra più thread. In alcuni casi, questo semplice controllo non funziona con l'architettura dell'applicazione. Ad esempio, se l'applicazione ospita oggetti sul lato server usando un pool di thread e le transazioni si estendono su più chiamate server a un determinato oggetto, questa protezione potrebbe causare l'esito negativo di alcune di queste chiamate con JET_errSessionSharingViolation anche se il modello di utilizzo è corretto. Questa situazione è comune per i server oggetti COM.
 
-**JetSetSessionContext e** [JetResetSessionContext](./jetresetsessioncontext-function.md) risolvono questo problema rendendo il controllo di condivisione della sessione un po' più flessibile. Quando l'applicazione inizia a effettuare una serie di chiamate API ESE usando una sessione specifica, imposta innanzitutto il contesto della sessione su un valore specificato. Questa azione associa la sessione al thread chiamante. Nell'esempio specificato, questo contesto può essere l'indirizzo dell'oggetto che contiene l'handle di sessione JET. Dopo aver effettuato le chiamate API ESE, l'applicazione reimposta il contesto di sessione. Questa azione dissocia la sessione dal thread chiamante. L'oggetto e la relativa sessione possono quindi essere usati da un altro thread anche se la sessione ha una transazione attiva.
+**JetSetSessionContext** e [JetResetSessionContext](./jetresetsessioncontext-function.md) risolvono questo problema rendendo il controllo di condivisione della sessione un po' più flessibile. Quando l'applicazione inizia a effettuare una serie di chiamate API ESE usando una sessione specifica, imposta innanzitutto il contesto della sessione su un valore specificato. Questa azione associa la sessione al thread chiamante. Nell'esempio specificato, questo contesto può essere l'indirizzo dell'oggetto che contiene l'handle di sessione JET. Dopo aver effettuato le chiamate API ESE, l'applicazione reimposta il contesto di sessione. Questa azione dissocia la sessione dal thread chiamante. L'oggetto e la relativa sessione possono quindi essere usati da un altro thread anche se la sessione ha una transazione attiva.
 
 È importante notare che è necessario chiamare **JetSetSessionContext** prima di aprire una transazione in tale sessione oppure l'associazione non funzionerà.
 
@@ -86,7 +86,13 @@ Una sessione è in genere associata a un thread specifico per la durata di una t
 #### <a name="requirements"></a>Requisiti
 
 
-| | | <p><strong>Client</strong></p> | <p>Richiede Windows Vista, Windows XP o Windows 2000 Professional.</p> | | <p><strong>Server</strong></p> | <p>Richiede Windows Server 2008, Windows Server 2003 o Windows 2000 Server.</p> | | <p><strong>Intestazione</strong></p> | <p>Dichiarato in Esent.h.</p> | | <p><strong>Libreria</strong></p> | <p>Usare ESENT.lib.</p> | | <p><strong>DLL</strong></p> | <p>Richiede ESENT.dll.</p> | 
+| Requisito | Valore |
+|------------|----------|
+| <p><strong>Client</strong></p> | <p>Richiede Windows Vista, Windows XP o Windows 2000 Professional.</p> | 
+| <p><strong>Server</strong></p> | <p>Richiede Windows Server 2008, Windows Server 2003 o Windows 2000 Server.</p> | 
+| <p><strong>Intestazione</strong></p> | <p>Dichiarato in Esent.h.</p> | 
+| <p><strong>Libreria</strong></p> | <p>Usare ESENT.lib.</p> | 
+| <p><strong>DLL</strong></p> | <p>Richiede ESENT.dll.</p> | 
 
 
 

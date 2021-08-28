@@ -7,18 +7,18 @@ MSHAttr:
 title: ProfileCreationType (in ModemDMConfigProfile)
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: dbd0a4a3a634a892f81f4be54093f51638d6c4ca
-ms.sourcegitcommit: 61a4c522182aa1cacbf5669683d9570a3bf043b2
+ms.openlocfilehash: 4650465244fca041efcdaa53b737074f70536edc
+ms.sourcegitcommit: 4665ebce0c106bdb52eef36e544280b496b6f50b
 ms.translationtype: MT
 ms.contentlocale: it-IT
 ms.lasthandoff: 08/26/2021
-ms.locfileid: "122885093"
+ms.locfileid: "122986434"
 ---
 # <a name="span-idwwan_profile_v4element_1_profilecreationtypespanprofilecreationtype-in-modemdmconfigprofile"></a><span id="WWAN_profile_v4.element_1_ProfileCreationType"></span>ProfileCreationType (in ModemDMConfigProfile)
 
-Specifica come è stato creato il profilo DM modem.
+Specifica la modalità di creazione del profilo dm del modem.
 
-Questo valore viene usato per decidere se un utente può eliminare il profilo. Gli utenti possono eliminare solo **i profili UserProvisioned.**
+Questo valore viene usato per decidere se un utente può eliminare il profilo. Gli utenti possono eliminare **solo i profili UserProvisioned.**
 
 ## <a name="element-hierarchy"></a>Gerarchia degli elementi
 
@@ -64,7 +64,9 @@ Gli elementi seguenti hanno lo stesso nome di questo elemento, ma il contenuto o
 ## <a name="requirements"></a>Requisiti
 
 
-| | | <p>Spazio dei nomi</p> | <p>https://www.microsoft.com/networking/WWAN/profile/v4</p> | 
+| Requisito | Valore |
+|------------|----------|
+| <p>Spazio dei nomi</p> | <p>https://www.microsoft.com/networking/WWAN/profile/v4</p> | 
 
 
  

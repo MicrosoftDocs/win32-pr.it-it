@@ -4,12 +4,12 @@ ms.assetid: dfe44c8c-43ec-461f-952f-b87256b82ee6
 title: Funzioni di output di debug
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 252e1020ca99bd5b4f2f46d7f2169fa6835dea83a25d599dba142f370bb794f9
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 6ee1bdbc9cce98ce1704b62a8354b81951df33c4
+ms.sourcegitcommit: 61a4c522182aa1cacbf5669683d9570a3bf043b2
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119537741"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "122884236"
 ---
 # <a name="debug-output-functions"></a>Funzioni di output di debug
 
@@ -29,9 +29,9 @@ Le [DirectShow base forniscono](directshow-base-classes.md) diverse macro per la
 | [**DisplayType**](displaytype.md)                     | Invia informazioni su un tipo di supporto al percorso di output di debug.                                   |
 | [**DumpGraph**](dumpgraph.md)                         | Invia informazioni su un grafico di filtro al percorso di output di debug.                                 |
 | [**GuidNames**](guidnames.md)                         | Matrice globale contenente stringhe che rappresentano i GUID definiti in Uuids.h.                        |
-| [**Nome**](name.md)                                   | Genera una stringa di solo debug.                                                                       |
-| [**Nota**](note.md)                                   | Invia una stringa al percorso di output di debug.                                                         |
-| [**Ricordare**](remind.md)                               | Genera un promemoria in fase di compilazione.                                                                |
+| [**NOME**](name.md)                                   | Genera una stringa di solo debug.                                                                       |
+| [**NOTA**](note.md)                                   | Invia una stringa al percorso di output di debug.                                                         |
+| [**RICORDARE**](remind.md)                               | Genera un promemoria in fase di compilazione.                                                                |
 
 
 
@@ -49,9 +49,9 @@ In Windows Vista o versioni successive, si trovano nel percorso seguente:
 
 **HKEY \_ LOCAL \_ MACHINE** \\ **SOFTWARE** \\ **Microsoft** \\ **DirectShow** \\ **Debug**
 
-Per i filtri di terze parti, il percorso dipende dalla versione del DirectShow [di base](directshow-base-classes.md) usata per compilare il filtro. La versione inclusa in Windows SDK per Windows Vista usa il percorso più recente. Nelle versioni precedenti è stato usato il percorso precedente.
+Per i filtri di terze parti, il percorso dipende dalla versione del DirectShow [di base](directshow-base-classes.md) usata per compilare il filtro. La versione inclusa nell'SDK Windows per Windows Vista usa il percorso più recente. Le versioni precedenti usava il percorso precedente.
 
-Nelle osservazioni seguenti, l'etichetta *<DebugRoot>* viene usata per indicare questi due percorsi. Sostituire il percorso corretto, a seconda della versione di Windows o della versione delle classi di base.
+Nelle osservazioni seguenti viene usata l'etichetta *&lt; DebugRoot &gt;* per indicare questi due percorsi. Sostituire il percorso corretto, a seconda della versione di Windows o della versione delle classi di base.
 
 **Registrazione di debug**
 
@@ -82,7 +82,7 @@ DbgLog((LOG_TRACE, 3, TEXT("This is a debug message")));
 
 Ogni modulo può impostare il proprio livello di debug per ogni tipo di messaggio. Un *modulo è* una DLL o un eseguibile che può essere caricato usando la **funzione LoadLibrary.** I livelli di debug di un modulo vengono visualizzati nel Registro di sistema sotto la chiave seguente:
 
-**HKEY \_ LOCAL \_ MACHINE**\\**<DebugRoot>**\\**<ModuleName>**\\**<MessageType>**
+**HKEY \_ LOCAL \_ MACHINE** \\ **&lt; DebugRoot &gt;** \\ **&lt; ModuleName &gt;** \\ **&lt; MessageType &gt;**
 
 dove *<Message Type>* è il tipo di messaggio meno il valore iniziale di "LOG", ad esempio \_ **LOCKING** per i messaggi LOG \_ LOCKING. Quando viene caricato un modulo, la libreria di debug trova i livelli di registrazione del modulo nel Registro di sistema. Se le chiavi del Registro di sistema non esistono, vengono create dalla libreria di debug.
 
@@ -103,7 +103,7 @@ La libreria di debug usa il livello maggiore, il livello globale o il livello de
 
 Il percorso di output di debug è determinato da un'altra chiave del Registro di sistema:
 
-**HKEY \_ Local \_ MACHINE** \\ **<DebugRoot>** \\ **<Modile Name>** \\ **LogToFile**
+**HKEY \_ LOCAL \_ MACHINE** \\ **&lt; DebugRoot &gt;** \\ **<Modile Name>** \\ **LogToFile**
 
 Se il valore di questa chiave è `Console` , l'output passa alla finestra della console. Se il valore è `Deb` , , o una stringa `Debug` `Debugger` vuota, l'output viene visualizzato nella finestra del debugger. In caso contrario, l'output viene scritto in un file specificato dalla chiave del Registro di sistema.
 

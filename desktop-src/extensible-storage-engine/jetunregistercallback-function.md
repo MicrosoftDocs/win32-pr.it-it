@@ -1,5 +1,5 @@
 ---
-description: 'Altre informazioni su: Funzione JetUnregisterCallback'
+description: Altre informazioni sulla funzione JetUnregisterCallback
 title: Funzione JetUnregisterCallback
 TOCTitle: JetUnregisterCallback Function
 ms:assetid: de5c7afa-07e1-4687-989b-b56125a9712e
@@ -18,12 +18,12 @@ api_type:
 api_location:
 - ESENT.DLL
 ROBOTS: INDEX,FOLLOW
-ms.openlocfilehash: 5cb60d8b0d06ff6af9d950c53d8bdf8f4eedb774
-ms.sourcegitcommit: 9b5faa61c38b2d0c432b7f2dbee8c127b0e28a7e
+ms.openlocfilehash: 87c308f4895eb3e78a35338fe39afb3d775da095
+ms.sourcegitcommit: 4665ebce0c106bdb52eef36e544280b496b6f50b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/19/2021
-ms.locfileid: "122466247"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "122986494"
 ---
 # <a name="jetunregistercallback-function"></a>Funzione JetUnregisterCallback
 
@@ -59,7 +59,7 @@ Cursore da utilizzare per questa chiamata.
 
 Maschera di bit composta dai motivi di callback per cui l'applicazione non desidera più ricevere notifiche.
 
-Per creare questa maschera di bit, è sufficiente o insieme i motivi di callback validi [dall'JET_CBTYP](./jet-cbtyp.md) predefinita.
+Per creare questa maschera di bit, semplicemente o insieme, i motivi di callback validi [dall'JET_CBTYP](./jet-cbtyp.md) enumerazione.
 
 *hCallbackId*
 
@@ -67,14 +67,14 @@ Handle del callback registrato restituito da [JetRegisterCallback.](./jetregiste
 
 ### <a name="return-value"></a>Valore restituito
 
-Questa funzione restituisce il [JET_ERR](./jet-err.md) dati con uno dei codici restituiti seguenti. Per altre informazioni sui possibili errori ESE, vedere [Extensible Archiviazione Engine Errors](./extensible-storage-engine-errors.md) and [Error Handling Parameters](./error-handling-parameters.md).
+Questa funzione restituisce il [JET_ERR](./jet-err.md) dati con uno dei codici restituiti seguenti. Per altre informazioni sui possibili errori ESE, vedere Errori del [motore di Archiviazione](./extensible-storage-engine-errors.md) estendibile e Parametri di gestione degli [errori](./error-handling-parameters.md).
 
 
 | <p>Codice restituito</p> | <p>Descrizione</p> | 
 |--------------------|--------------------|
 | <p>JET_errSuccess</p> | <p>Operazione riuscita.</p> | 
-| <p>JET_errClientRequestToStopJetService</p> | <p>L'operazione non può essere completata perché tutte le attività nell'istanza associata alla sessione sono scadute in seguito a una chiamata a <a href="gg269240(v=exchg.10).md">JetStopService.</a></p> | 
-| <p>JET_errInstanceUnavailable</p> | <p>L'operazione non può essere completata perché l'istanza associata alla sessione ha rilevato un errore irreversibile che richiede la revoca dell'accesso a tutti i dati per proteggere l'integrità di questi dati.</p><p><strong>Windows XP:</strong>  Questo valore restituito è stato introdotto in Windows XP.</p> | 
+| <p>JET_errClientRequestToStopJetService</p> | <p>Impossibile completare l'operazione perché tutte le attività nell'istanza associata alla sessione sono cesse a causa di una chiamata a <a href="gg269240(v=exchg.10).md">JetStopService.</a></p> | 
+| <p>JET_errInstanceUnavailable</p> | <p>Impossibile completare l'operazione perché l'istanza associata alla sessione ha rilevato un errore irreversibile che richiede la revoca dell'accesso a tutti i dati per proteggere l'integrità di questi dati.</p><p><strong>Windows XP:</strong>  Questo valore restituito è stato introdotto in Windows XP.</p> | 
 | <p>JET_errNotInitialized</p> | <p>Impossibile completare l'operazione perché l'istanza associata alla sessione non è ancora stata inizializzata.</p> | 
 | <p>JET_errRestoreInProgress</p> | <p>Impossibile completare l'operazione perché è in corso un'operazione di ripristino nell'istanza associata alla sessione.</p> | 
 | <p>JET_errSessionSharingViolation</p> | <p>La stessa sessione non può essere usata per più thread contemporaneamente.</p><p><strong>Windows XP:</strong>  Questo valore restituito è stato introdotto in Windows XP.</p> | 
@@ -84,7 +84,7 @@ Questa funzione restituisce il [JET_ERR](./jet-err.md) dati con uno dei codici r
 
 Se questa funzione ha esito positivo, la registrazione del callback specificato verrà annullata per i motivi di callback specificati con la tabella associata al cursore specificato. Non verrà apportata alcuna modifica allo stato del database.
 
-Se questa funzione ha esito negativo, la registrazione del callback specificato non verrà annullata. Non verrà apportata alcuna modifica allo stato del database.
+Se questa funzione ha esito negativo, non verrà annullata la registrazione del callback specificato. Non verrà apportata alcuna modifica allo stato del database.
 
 #### <a name="remarks"></a>Commenti
 
@@ -93,7 +93,13 @@ La maschera di bit specificata deve corrispondere esattamente alla maschera di b
 #### <a name="requirements"></a>Requisiti
 
 
-| | | <p><strong>Client</strong></p> | <p>Richiede Windows Vista o Windows XP.</p> | | <p><strong>Server</strong></p> | <p>Richiede Windows Server 2008 o Windows Server 2003.</p> | | <p><strong>Intestazione</strong></p> | <p>Dichiarato in Esent.h.</p> | | <p><strong>Libreria</strong></p> | <p>Usare ESENT.lib.</p> | | <p><strong>DLL</strong></p> | <p>Richiede ESENT.dll.</p> | 
+| Requisito | Valore |
+|------------|----------|
+| <p><strong>Client</strong></p> | <p>Richiede Windows Vista o Windows XP.</p> | 
+| <p><strong>Server</strong></p> | <p>Richiede Windows Server 2008 o Windows Server 2003.</p> | 
+| <p><strong>Intestazione</strong></p> | <p>Dichiarato in Esent.h.</p> | 
+| <p><strong>Libreria</strong></p> | <p>Usare ESENT.lib.</p> | 
+| <p><strong>DLL</strong></p> | <p>Richiede ESENT.dll.</p> | 
 
 
 

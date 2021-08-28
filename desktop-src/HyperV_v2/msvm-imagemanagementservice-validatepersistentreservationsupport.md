@@ -1,7 +1,7 @@
 ---
-description: Verifica se un file system può supportare un disco rigido virtuale con prenotazioni permanenti abilitate.
+description: Convalida se un file system può supportare un disco rigido virtuale con prenotazioni persistenti abilitate.
 ms.assetid: c5fed9d5-0fa6-4b96-ae6e-84468b011e2a
-title: Metodo ValidatePersistentReservationSupport della classe Msvm_ImageManagementService
+title: Metodo ValidatePersistentReservationSupport della Msvm_ImageManagementService classe
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -13,16 +13,16 @@ api_type:
 - COM
 api_location:
 - vmms.exe
-ms.openlocfilehash: 596e5cf840ee65dc0b3ad5315462db4666c8b262
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 36f1384ca9b56c24a40925a08fb87595fd57acef3e50c1d5d09593d9cfd7f545
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "103966790"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118147723"
 ---
-# <a name="validatepersistentreservationsupport-method-of-the-msvm_imagemanagementservice-class"></a>Metodo ValidatePersistentReservationSupport della classe MSVM \_ servizio
+# <a name="validatepersistentreservationsupport-method-of-the-msvm_imagemanagementservice-class"></a>Metodo ValidatePersistentReservationSupport della classe Msvm \_ ImageManagementService
 
-Verifica se un file system può supportare un disco rigido virtuale con prenotazioni permanenti abilitate.
+Convalida se un file system può supportare un disco rigido virtuale con prenotazioni persistenti abilitate.
 
 ## <a name="syntax"></a>Sintassi
 
@@ -40,17 +40,17 @@ uint32 ValidatePersistentReservationSupport(
 
 <dl> <dt>
 
-*Percorso* \[ in\]
+*Percorso* \[ Pollici\]
 </dt> <dd>
 
-Percorso completo che specifica il percorso di un file di immagine disco o di una directory in cui può essere inserito un file di immagine disco.
+Percorso completo che specifica il percorso di un file di immagine disco o di una directory in cui potrebbe essere inserito un file di immagine del disco.
 
 </dd> <dt>
 
-*Processo* \[ di out\]
+*Processo* \[ Cambio\]
 </dt> <dd>
 
-Riferimento al processo (può essere null se l'attività è stata completata correttamente).
+Riferimento al processo (può essere Null se l'attività viene completata correttamente).
 
 </dd> </dl>
 
@@ -60,10 +60,10 @@ Questo metodo restituisce uno dei valori seguenti:
 
 <dl> <dt>
 
-**Completato senza errori** (0)
+**Completata senza errori** (0)
 </dt> <dt>
 
-**Parametri del metodo controllati-processo avviato** (4096)
+**Parametri del metodo verificati - Processo avviato** (4096)
 </dt> <dt>
 
 **Non riuscito** (32768)
@@ -75,25 +75,25 @@ Questo metodo restituisce uno dei valori seguenti:
 **Non supportato** (32770)
 </dt> <dt>
 
-**Stato sconosciuto** (32771)
+**Lo stato è sconosciuto** (32771)
 </dt> <dt>
 
 **Timeout** (32772)
 </dt> <dt>
 
-**Parametro non valido** (32773)
+**Parametro non** valido (32773)
 </dt> <dt>
 
-Il **sistema è in uso** (32774)
+**Il sistema è in uso** (32774)
 </dt> <dt>
 
-**Stato non valido per l'operazione** (32775)
+**Stato non valido per questa operazione** (32775)
 </dt> <dt>
 
-**Tipo di dati non corretto** (32776)
+**Tipo di dati non** corretto (32776)
 </dt> <dt>
 
-**Sistema non disponibile** (32777)
+**Il sistema non è disponibile** (32777)
 </dt> <dt>
 
 **Memoria insufficiente** (32778)
@@ -109,9 +109,9 @@ Il **sistema è in uso** (32774)
 | Requisito | Valore |
 |-------------------------------------|---------------------------------------------------------------------------------------------------------|
 | Client minimo supportato<br/> | Windows 8.1<br/>                                                                                  |
-| Server minimo supportato<br/> | Windows Server 2012 R2<br/>                                                                       |
-| Spazio dei nomi<br/>                | \\Virtualizzazione radice \\ v2<br/>                                                                     |
-| MOF<br/>                      | <dl> <dt>WindowsVirtualization. v2. mof</dt> </dl> |
+| Server minimo supportato<br/> | R2 per Windows Server 2012<br/>                                                                       |
+| Spazio dei nomi<br/>                | Virtualizzazione \\ radice \\ v2<br/>                                                                     |
+| MOF<br/>                      | <dl> <dt>WindowsVirtualization.V2.mof</dt> </dl> |
 | DLL<br/>                      | <dl> <dt>Vmms.exe</dt> </dl>                     |
 
 
@@ -120,7 +120,7 @@ Il **sistema è in uso** (32774)
 
 <dl> <dt>
 
-[**\_Servizio MSVM**](msvm-imagemanagementservice.md)
+[**Msvm \_ ImageManagementService**](msvm-imagemanagementservice.md)
 </dt> </dl>
 
  

@@ -1,6 +1,6 @@
 ---
-description: 'Altre informazioni su: funzione JetGetInstanceInfo'
-title: JetGetInstanceInfo (funzione)
+description: 'Altre informazioni su: Funzione JetGetInstanceInfo'
+title: Funzione JetGetInstanceInfo
 TOCTitle: JetGetInstanceInfo Function
 ms:assetid: ffccdac0-3631-4753-876a-90ddfdd0252f
 ms:mtpsurl: https://msdn.microsoft.com/library/Gg294149(v=EXCHG.10)
@@ -20,21 +20,21 @@ api_type:
 api_location:
 - ESENT.DLL
 ROBOTS: INDEX,FOLLOW
-ms.openlocfilehash: b8c8e9a279f536622cfdfccb8bc8882914aeee64
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 9dfc8bec0e6cee6e127dc99135d82db3ee3001ab
+ms.sourcegitcommit: 9b5faa61c38b2d0c432b7f2dbee8c127b0e28a7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "103883469"
+ms.lasthandoff: 08/19/2021
+ms.locfileid: "122478347"
 ---
-# <a name="jetgetinstanceinfo-function"></a>JetGetInstanceInfo (funzione)
+# <a name="jetgetinstanceinfo-function"></a>Funzione JetGetInstanceInfo
 
 
 _**Si applica a:** Windows | Windows Server_
 
-## <a name="jetgetinstanceinfo-function"></a>JetGetInstanceInfo (funzione)
+## <a name="jetgetinstanceinfo-function"></a>Funzione JetGetInstanceInfo
 
-La funzione **JetGetInstanceInfo** recupera le informazioni sulle istanze in esecuzione.
+La **funzione JetGetInstanceInfo** recupera informazioni sulle istanze in esecuzione.
 
 **Windows XP: JetGetInstanceInfo** è stato introdotto in Windows XP.
 
@@ -49,87 +49,36 @@ La funzione **JetGetInstanceInfo** recupera le informazioni sulle istanze in ese
 
 *pcInstanceInfo*
 
-Puntatore a un buffer che riceverà il numero di elementi archiviati in *paInstanceInfo*.
+Puntatore a un buffer che riceverà il numero di elementi archiviati in *paInstanceInfo.*
 
 *paInstanceInfo*
 
-Puntatore a un buffer che riceverà l'indirizzo del primo elemento di una matrice di strutture.
+Puntatore a un buffer che riceverà l'indirizzo del primo elemento di una matrice di strutture .
 
 ### <a name="return-value"></a>Valore restituito
 
-Questa funzione restituisce il tipo di dati [JET_ERR](./jet-err.md) con uno dei seguenti codici restituiti. Per ulteriori informazioni sugli errori ESE possibili, vedere la pagina relativa agli errori e ai [parametri di gestione degli](./error-handling-parameters.md)errori del [motore di archiviazione estensibile](./extensible-storage-engine-errors.md) .
+Questa funzione restituisce il [JET_ERR](./jet-err.md) dati con uno dei codici restituiti seguenti. Per altre informazioni sui possibili errori ESE, vedere [Extensible Archiviazione Engine Errors](./extensible-storage-engine-errors.md) and [Error Handling Parameters](./error-handling-parameters.md).
 
-<table>
-<colgroup>
-<col style="width: 50%" />
-<col style="width: 50%" />
-</colgroup>
-<thead>
-<tr class="header">
-<th><p>Codice restituito</p></th>
-<th><p>Descrizione</p></th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td><p>JET_errSuccess</p></td>
-<td><p>Operazione riuscita.</p></td>
-</tr>
-<tr class="even">
-<td><p>JET_errInvalidParameter</p></td>
-<td><p>Uno dei parametri forniti contiene un valore imprevisto o contiene un valore che non ha senso se combinato con il valore di un altro parametro. Questo errore viene restituito da <strong>JetGetInstanceInfo</strong> quando:</p>
-<ul>
-<li><p><em>pcInstanceInfo</em> o <em>paInstanceInfo</em> sono null.</p></li>
-</ul></td>
-</tr>
-<tr class="odd">
-<td><p>JET_errOutOfMemory</p></td>
-<td><p>Memoria insufficiente per elaborare la richiesta.</p></td>
-</tr>
-</tbody>
-</table>
+
+| <p>Codice restituito</p> | <p>Descrizione</p> | 
+|--------------------|--------------------|
+| <p>JET_errSuccess</p> | <p>Operazione riuscita.</p> | 
+| <p>JET_errInvalidParameter</p> | <p>Uno dei parametri forniti contiene un valore imprevisto o contiene un valore che non ha senso se combinato con il valore di un altro parametro. Questo errore verrà restituito da <strong>JetGetInstanceInfo</strong> quando:</p><ul><li><p><em>pcInstanceInfo</em> o <em>paInstanceInfo</em> sono NULL.</p></li></ul> | 
+| <p>JET_errOutOfMemory</p> | <p>Memoria insufficiente per elaborare la richiesta.</p> | 
+
 
 
 #### <a name="remarks"></a>Commenti
 
-Tramite il motore di database viene allocata una matrice di strutture di [JET_INSTANCE_INFO](./jet-instance-info-structure.md) . Il chiamante è responsabile della liberazione della memoria con [JetFreeBuffer](./jetfreebuffer-function.md).
+Il motore di database alloca una matrice [JET_INSTANCE_INFO](./jet-instance-info-structure.md) strutture. Il chiamante è responsabile del liberare la memoria con [JetFreeBuffer](./jetfreebuffer-function.md).
 
-Se non sono presenti istanze attive, **JetGetInstanceInfo** restituirà JET_errSuccess e *pcInstanceInfo* riceverà un valore pari a 0.
+Se non sono presenti istanze attive, **JetGetInstanceInfo** restituirà JET_errSuccess e *pcInstanceInfo* riceverà il valore 0.
 
 #### <a name="requirements"></a>Requisiti
 
-<table>
-<colgroup>
-<col style="width: 50%" />
-<col style="width: 50%" />
-</colgroup>
-<tbody>
-<tr class="odd">
-<td><p><strong>Client</strong></p></td>
-<td><p>Richiede Windows Vista o Windows XP.</p></td>
-</tr>
-<tr class="even">
-<td><p><strong>Server</strong></p></td>
-<td><p>Richiede Windows Server 2008 o Windows Server 2003.</p></td>
-</tr>
-<tr class="odd">
-<td><p><strong>Intestazione</strong></p></td>
-<td><p>Dichiarata in esent. h.</p></td>
-</tr>
-<tr class="even">
-<td><p><strong>Libreria</strong></p></td>
-<td><p>Usare ESENT. lib.</p></td>
-</tr>
-<tr class="odd">
-<td><p><strong>DLL</strong></p></td>
-<td><p>Richiede ESENT.dll.</p></td>
-</tr>
-<tr class="even">
-<td><p><strong>Unicode</strong></p></td>
-<td><p>Implementato come <strong>JetGetInstanceInfoW</strong> (Unicode) e <strong>JetGetInstanceInfoA</strong> (ANSI).</p></td>
-</tr>
-</tbody>
-</table>
+
+| | | <p><strong>Client</strong></p> | <p>Richiede Windows Vista o Windows XP.</p> | | <p><strong>Server</strong></p> | <p>Richiede Windows Server 2008 o Windows Server 2003.</p> | | <p><strong>Intestazione</strong></p> | <p>Dichiarato in Esent.h.</p> | | <p><strong>Libreria</strong></p> | <p>Usare ESENT.lib.</p> | | <p><strong>DLL</strong></p> | <p>Richiede ESENT.dll.</p> | | <p><strong>Unicode</strong></p> | <p>Implementato come <strong>JetGetInstanceInfoW</strong> (Unicode) e <strong>JetGetInstanceInfoA</strong> (ANSI).</p> | 
+
 
 
 #### <a name="see-also"></a>Vedere anche

@@ -15,12 +15,12 @@ api_type:
 - COM
 api_location: ''
 ROBOTS: INDEX,FOLLOW
-ms.openlocfilehash: ee2f2ab2fca7a849f889d46badcc86a8a5438fa8
-ms.sourcegitcommit: 9b5faa61c38b2d0c432b7f2dbee8c127b0e28a7e
+ms.openlocfilehash: 625de51bf265be02fa48beb2872797cd5bd6ba26
+ms.sourcegitcommit: 4665ebce0c106bdb52eef36e544280b496b6f50b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/19/2021
-ms.locfileid: "122478507"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "122986914"
 ---
 # <a name="jet_opentemporarytable-structure"></a>JET_OPENTEMPORARYTABLE struttura
 
@@ -62,7 +62,7 @@ Definizioni di colonna per le colonne create nella tabella temporanea.
 Oltre alle normali opzioni di definizione delle colonne, è possibile specificare zero o più delle opzioni seguenti che sono rilevanti solo nel contesto di una tabella temporanea.
 
 
-| <p>valore</p> | <p>Significato</p> | 
+| <p>Valore</p> | <p>Significato</p> | 
 |--------------|----------------|
 | <p>JET_bitColumnTTDescending</p> | <p>L'ordinamento della colonna chiave per la tabella temporanea deve essere decrescente anziché crescente. Se questa opzione viene specificata senza JET_bitColumnTTKey, questa opzione viene ignorata.</p> | 
 | <p>JET_bitColumnTTKey</p> | <p>La colonna sarà una colonna chiave per la tabella temporanea.</p><p>L'ordine delle definizioni di colonna con questa opzione specificata nella matrice di input determinerà la precedenza di ogni colonna chiave per la tabella temporanea. La prima definizione di colonna nella matrice con questa opzione impostata sarà la colonna chiave più significativa e così via. Se vengono richieste più colonne chiave di quelle supportate dal motore di database, questa opzione viene ignorata per le colonne chiave non supportate.</p> | 
@@ -86,7 +86,7 @@ Quando questo parametro non è presente, verranno usati i flag di normalizzazion
 Gruppo di bit che specifica zero o più delle opzioni seguenti.
 
 
-| <p>valore</p> | <p>Significato</p> | 
+| <p>Valore</p> | <p>Significato</p> | 
 |--------------|----------------|
 | <p>JET_bitTTIndexed</p> | <p>Questa opzione richiede che la tabella temporanea sia sufficientemente flessibile da consentire l'uso di <a href="gg294103(v=exchg.10).md">JetSeek</a> per la ricerca di record in base alla chiave di indice.</p><p>Se questa funzionalità non è necessaria, è meglio non richiederla. Se questa funzionalità non è richiesta, gestione tabelle temporanee potrebbe essere in grado di scegliere una strategia per la gestione della tabella temporanea che comporta un miglioramento delle prestazioni.</p> | 
 | <p>JET_bitTTUnique</p> | <p>Richiede che i record con chiavi di indice duplicate siano rimossi dal set finale di record nella tabella temporanea.</p><p>Prima di Windows Server 2003, il motore di database presupponeva sempre che questa opzione fosse attiva a causa del fatto che anche tutti gli indici cluster devono essere una chiave primaria e pertanto devono essere univoci. A Windows Server 2003, è ora possibile creare una tabella temporanea che non rimuove i duplicati quando viene specificata anche l'opzione JET_bitTTForwardOnly.</p><p>Non è possibile sapere quale duplicato avrà esito positivo e quali duplicati verranno eliminati, in generale. Tuttavia, quando viene richiesta JET_bitTTErrorOnDuplicateInsertion'opzione , il primo record con una determinata chiave di indice da inserire nella tabella temporanea avrà sempre esito positivo.</p> | 
@@ -111,7 +111,7 @@ Dimensione massima per una chiave che rappresenta una determinata riga.
 
 È possibile impostare le dimensioni massime delle chiavi per controllare la modalità di troncamento delle chiavi. Il troncamento delle chiavi è importante perché può influire sul momento in cui le righe vengono considerate distinte.
 
-Se questo parametro è impostato su 0 o JET_cbKeyMostMin (255), le dimensioni massime della chiave e la relativa semantica rimarranno identiche alle dimensioni massime della chiave supportate da Windows Server 2003 e dalle versioni precedenti. Questo parametro può anche essere impostato su un valore maggiore come funzione delle dimensioni della pagina del database per l'istanza (JET_paramDatabasePageSize). Vedere JET_paramKeyMost per altre informazioni.
+Se questo parametro è impostato su 0 o JET_cbKeyMostMin (255), le dimensioni massime della chiave e la relativa semantica rimarranno identiche alle dimensioni massime della chiave supportate da Windows Server 2003 e versioni precedenti. Questo parametro può anche essere impostato su un valore più grande come funzione delle dimensioni della pagina del database per l'istanza (JET_paramDatabasePageSize). Vedere JET_paramKeyMost per altre informazioni.
 
 **cbVarSegMac**
 
@@ -126,7 +126,11 @@ Handle di tabella per la tabella temporanea creata in seguito a una chiamata riu
 ### <a name="requirements"></a>Requisiti
 
 
-| | | <p><strong>Client</strong></p> | <p>Richiede Windows Vista.</p> | | <p><strong>Server</strong></p> | <p>Richiede Windows Server 2008.</p> | | <p><strong>Intestazione</strong></p> | <p>Dichiarato in Esent.h.</p> | 
+| Requisito | Valore |
+|------------|----------|
+| <p><strong>Client</strong></p> | <p>Richiede Windows Vista.</p> | 
+| <p><strong>Server</strong></p> | <p>Richiede Windows Server 2008.</p> | 
+| <p><strong>Intestazione</strong></p> | <p>Dichiarato in Esent.h.</p> | 
 
 
 

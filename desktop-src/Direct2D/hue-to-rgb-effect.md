@@ -1,30 +1,30 @@
 ---
-title: Effetto tonalità-RGB
-description: Converte un'immagine HSL (Hue, Saturation, luminosità) o HSV (Hue, Saturation, value) nello spazio colori RGB.
+title: Effetto Da tonalità a RGB
+description: Converte un'immagine HSL (Hue, Saturation, Lightness) o HSV (Hue, Saturation, Value) nello spazio colore RGB.
 ms.assetid: 18e92535-9e89-bf8d-b8c3-a49b645fc417
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 82064d01281ab0edf2327f00cf6e852a0bebae53
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: 3abc45ec09cc77935c332a702648472e6be7edeb06bdf9237e4232f467b1e073
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "103964150"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118003132"
 ---
-# <a name="hue-to-rgb-effect"></a>Effetto tonalità-RGB
+# <a name="hue-to-rgb-effect"></a>Effetto Da tonalità a RGB
 
-Converte un'immagine HSL (Hue, Saturation, luminosità) o HSV (Hue, Saturation, value) nello spazio colori RGB.
+Converte un'immagine HSL (Hue, Saturation, Lightness) o HSV (Hue, Saturation, Value) nello spazio colore RGB.
 
-HSL e HSV sono due modelli diversi per la rappresentazione di un colore RGB in uno spazio di colore cilindrico. Sono utili perché consentono di ragionare su un colore usando concetti più intuitivi, ad esempio Hue e Intensity, e combinando i valori rosso, verde e blu.
+HSL e HSV sono due modelli diversi per rappresentare un colore RGB in uno spazio colore cilindrico. Sono utili perché consentono di ragionare su un colore usando concetti più intuitivi, ad esempio tonalità e intensità, rispetto alla combinazione di valori rosso, verde e blu.
 
-Questo effetto passa tutti i valori alfa di input.
+Questo effetto passa attraverso qualsiasi valore alfa di input.
 
 Il CLSID per questo effetto è CLSID \_ D2D1HueToRgb.
 
-Per invertire il comportamento di questo effetto, usare l' [effetto RGB a tonalità](rgb-to-hue-effect.md).
+Per invertire il comportamento di questo effetto, usare [l'effetto RGB to Hue](rgb-to-hue-effect.md).
 
 -   [Codice di esempio](#sample-code)
--   [Proprietà effetto](#effect-properties)
+-   [Proprietà dell'effetto](#effect-properties)
 -   [Requisiti](#requirements)
 -   [Argomenti correlati](#related-topics)
 
@@ -42,9 +42,9 @@ m_d2dContext->DrawImage(hueToRgbEffect.Get());
 m_d2dContext->EndDraw();
 ```
 
-## <a name="effect-properties"></a>Proprietà effetto
+## <a name="effect-properties"></a>Proprietà degli effetti
 
-Le proprietà per l'effetto contrasto sono definite dall'enumerazione [**d2d1 \_ HUETORGB \_ prop**](/windows/desktop/api/d2d1effects_2/ne-d2d1effects_2-d2d1_huetorgb_prop) .
+Le proprietà per l'effetto di contrasto sono definite dall'enumerazione [**D2D1 \_ HUETORGB \_ PROP.**](/windows/desktop/api/d2d1effects_2/ne-d2d1effects_2-d2d1_huetorgb_prop)
 
 ## <a name="requirements"></a>Requisiti
 
@@ -52,10 +52,10 @@ Le proprietà per l'effetto contrasto sono definite dall'enumerazione [**d2d1 \_
 
 | Requisito | Valore |
 |--------------------------|---------------------------------------------------|
-| Client minimo supportato | App \[ Windows 10 desktop app \| Windows Store\] |
-| Server minimo supportato | App \[ Windows 10 desktop app \| Windows Store\] |
-| Intestazione                   | d2d1effects \_ 2. h                                  |
-| Libreria                  | d2d1. lib, dxguid. lib                              |
+| Client minimo supportato | \[Windows 10 app desktop \| Windows Store\] |
+| Server minimo supportato | \[Windows 10 app desktop \| Windows Store\] |
+| Intestazione                   | d2d1effects \_ 2.h                                  |
+| Libreria                  | d2d1.lib, dxguid.lib                              |
 
 
 

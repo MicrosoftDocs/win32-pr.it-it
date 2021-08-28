@@ -1,29 +1,29 @@
 ---
-description: Connessione automaticaOnInternet
+description: AutoConnectOnInternet
 MS-HAID: WWAN\_profile\_v4.element\_AutoConnectOnInternet
 MSHAttr:
 - PreferredSiteName:MSDN
 - PreferredLib:/library/windows/desktop
-title: Connessione automaticaOnInternet
+title: AutoConnectOnInternet
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: da1e62713d664d821282fdcf13b016a574bda8ab
-ms.sourcegitcommit: 61a4c522182aa1cacbf5669683d9570a3bf043b2
+ms.openlocfilehash: e277b544a03b1c37aaa7f58123cbe8d0928bebf0
+ms.sourcegitcommit: 4665ebce0c106bdb52eef36e544280b496b6f50b
 ms.translationtype: MT
 ms.contentlocale: it-IT
 ms.lasthandoff: 08/26/2021
-ms.locfileid: "122880513"
+ms.locfileid: "122985484"
 ---
-# <a name="span-idwwan_profile_v4element_autoconnectoninternetspanautoconnectoninternet"></a><span id="WWAN_profile_v4.element_AutoConnectOnInternet"></span>Connessione automaticaOnInternet
+# <a name="span-idwwan_profile_v4element_autoconnectoninternetspanautoconnectoninternet"></a><span id="WWAN_profile_v4.element_AutoConnectOnInternet"></span>AutoConnectOnInternet
 
 Specifica se il dispositivo Mobile Broadband si connetterà automaticamente a una rete.
 
-Per altre informazioni, vedere la documentazione per l'elemento [**AutoConnectOnInternet**](./schema-autoconnectoninternet-mbnprofile-element.md) v1.
+Per altre informazioni, vedere la documentazione relativa all'elemento [**AutoConnectOnInternet**](./schema-autoconnectoninternet-mbnprofile-element.md) v1.
 
 ## <a name="element-hierarchy"></a>Gerarchia degli elementi
 
 [&lt;MBNProfileExt&gt;](element-mbnprofileext.md)  
-**&lt;Connessione automaticaOnInternet&gt;**
+**&lt;AutoConnectOnInternet&gt;**
 
 ## <a name="syntax"></a>Sintassi
 
@@ -50,7 +50,7 @@ Nessuno.
 
 | Elemento padre | Descrizione | 
 |----------------|-------------|
-| <a href="element-mbnprofileext.md">MBNProfileExt</a> | <p><strong>L'elemento MBNProfileExt</strong> è un'estensione dell'elemento MBNProfile precedente. Identifica un profilo Mobile Broadband con un set più ricco di opzioni rispetto all'elemento MBNProfile.</p><p>In un profilo possono essere presenti più elementi MbnProfileExt che descrivono le impostazioni del profilo per un determinato set di condizioni operative. Usare <a href="element-profileconditionedon.md"><strong>l'elemento figlio ProfileConditionedOn</strong></a> di <strong>MBNProfileExt</strong> per specificare le condizioni operative che rendono un profilo specifico il profilo attivo.</p> | 
+| <a href="element-mbnprofileext.md">MBNProfileExt</a> | <p><strong>L'elemento MBNProfileExt</strong> è un'estensione dell'elemento MBNProfile precedente. Identifica un profilo Mobile Broadband con un set di opzioni più ricco rispetto all'elemento MBNProfile.</p><p>In un profilo possono essere presenti più elementi MbnProfileExt, che descrivono le impostazioni del profilo per un particolare set di condizioni operative. Usare <a href="element-profileconditionedon.md"><strong>l'elemento figlio ProfileConditionedOn</strong></a> di <strong>MBNProfileExt</strong> per specificare le condizioni operative che rendono un profilo specifico il profilo attivo.</p> | 
 
 
  
@@ -58,7 +58,9 @@ Nessuno.
 ## <a name="requirements"></a>Requisiti
 
 
-| | | <p>Spazio dei nomi</p> | <p>https://www.microsoft.com/networking/WWAN/profile/v4</p> | 
+| Requisito | Valore |
+|------------|----------|
+| <p>Spazio dei nomi</p> | <p>https://www.microsoft.com/networking/WWAN/profile/v4</p> | 
 
 
  

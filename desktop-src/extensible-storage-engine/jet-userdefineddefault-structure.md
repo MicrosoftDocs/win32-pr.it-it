@@ -1,5 +1,5 @@
 ---
-description: 'Altre informazioni su: JET_USERDEFINEDDEFAULT struttura'
+description: 'Altre informazioni su: JET_USERDEFINEDDEFAULT Structure'
 title: JET_USERDEFINEDDEFAULT struttura
 TOCTitle: JET_USERDEFINEDDEFAULT Structure
 ms:assetid: 1f0a5419-9fae-4a93-a271-2f9772ecc996
@@ -15,12 +15,12 @@ api_type:
 - COM
 api_location: ''
 ROBOTS: INDEX,FOLLOW
-ms.openlocfilehash: e8c34c7677a100488dfbc533aed3ca07f5b3af4c
-ms.sourcegitcommit: 4665ebce0c106bdb52eef36e544280b496b6f50b
+ms.openlocfilehash: a8e5cfe4fadf0dead2e11787255089d251a98f67
+ms.sourcegitcommit: 9b5faa61c38b2d0c432b7f2dbee8c127b0e28a7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/26/2021
-ms.locfileid: "122988094"
+ms.lasthandoff: 08/19/2021
+ms.locfileid: "122479307"
 ---
 # <a name="jet_userdefineddefault-structure"></a>JET_USERDEFINEDDEFAULT struttura
 
@@ -81,12 +81,7 @@ Questo membro deve sempre essere impostato su NULL.
 ### <a name="requirements"></a>Requisiti
 
 
-| Requisito | Valore |
-|------------|----------|
-| <p><strong>Client</strong></p> | <p>Richiede Windows Vista, Windows XP o Windows 2000 Professional.</p> | 
-| <p><strong>Server</strong></p> | <p>Richiede Windows Server 2008, Windows Server 2003 o Windows 2000 Server.</p> | 
-| <p><strong>Intestazione</strong></p> | <p>Dichiarato in Esent.h.</p> | 
-| <p><strong>Unicode</strong></p> | <p>Implementato come <strong>JET_ USERDEFINEDDEFAULT_W</strong> (Unicode) <strong>e JET_ USERDEFINEDDEFAULT_A</strong> (ANSI).</p> | 
+| | | <p><strong>Client</strong></p> | <p>Richiede Windows Vista, Windows XP o Windows 2000 Professional.</p> | | <p><strong>Server</strong></p> | <p>Richiede Windows Server 2008, Windows Server 2003 o Windows 2000 Server.</p> | | <p><strong>Intestazione</strong></p> | <p>Dichiarato in Esent.h.</p> | | <p><strong>Unicode</strong></p> | <p>Implementato come <strong>JET_ USERDEFINEDDEFAULT_W</strong> (Unicode) <strong>e JET_ USERDEFINEDDEFAULT_A</strong> (ANSI).</p> | 
 
 
 

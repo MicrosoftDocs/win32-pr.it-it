@@ -4,7 +4,7 @@ MS-HAID: vspixengine.IOfflineAnalysisCallback\_OfflineAnalysisProgress\_DWORD\_D
 MSHAttr:
 - PreferredSiteName:MSDN
 - PreferredLib:/library/windows/desktop
-title: 'Metodo IOfflineAnalysisCallback:: OfflineAnalysisProgress'
+title: Metodo IOfflineAnalysisCallback::OfflineAnalysisProgress
 ms.topic: reference
 ms.date: 05/31/2018
 ms.assetid: 17847FD7-A10A-4E52-90AD-ADE446D87E73
@@ -17,14 +17,14 @@ api_location:
 topic_type:
 - APIRef
 - kbSyntax
-ms.openlocfilehash: 4184be5d8d40b0ef46fe5e0029e9e4b1f38cf120
-ms.sourcegitcommit: a47bd86f517de76374e4fff33cfeb613eb259a7e
+ms.openlocfilehash: 445fae5409b966f10aaa75331d55dcdc862a3afd
+ms.sourcegitcommit: c276a8912787b2cda74dcf54eb96df961bb1188b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/06/2021
-ms.locfileid: "104401329"
+ms.lasthandoff: 08/20/2021
+ms.locfileid: "122631729"
 ---
-# <a name="span-idvspixengineiofflineanalysiscallback_offlineanalysisprogress_dword_doublespaniofflineanalysiscallbackofflineanalysisprogress-method"></a><span id="vspixengine.iofflineanalysiscallback_offlineanalysisprogress_dword_double"></span>Metodo IOfflineAnalysisCallback:: OfflineAnalysisProgress
+# <a name="span-idvspixengineiofflineanalysiscallback_offlineanalysisprogress_dword_doublespaniofflineanalysiscallbackofflineanalysisprogress-method"></a><span id="vspixengine.iofflineanalysiscallback_offlineanalysisprogress_dword_double"></span>Metodo IOfflineAnalysisCallback::OfflineAnalysisProgress
 
 Funzione di callback utilizzata per notificare all'host lo stato di avanzamento dell'analisi offline.
 
@@ -41,19 +41,19 @@ HRESULT OfflineAnalysisComplete(
 
 ## <a name="parameters"></a>Parametri
 
-*cookie*   
-Un cookie che identifica in modo univoco la richiesta e può essere usato per segnalare l'annullamento.
+*Cookie*   
+Cookie che identifica in modo univoco la richiesta e può essere usato per segnalare l'annullamento.
 
-*corso*   
+*Progresso*   
 Percentuale di avanzamento.
 
 ## <a name="return-value"></a>Valore restituito
 
-Se questo metodo ha esito positivo, restituisce **S \_ OK**. In caso contrario, restituisce un codice di errore **HRESULT** .
+Se questo metodo ha esito positivo, restituisce **S \_ OK**. In caso contrario, restituisce un **codice di errore HRESULT.**
 
 ## <a name="requirements"></a>Requisiti
 
-<table><colgroup><col style="width: 50%" /><col style="width: 50%" /></colgroup><tbody><tr class="odd"><td><p>Intestazione</p></td><td>Vspixengine. h</td></tr></tbody></table>
+<table><colgroup><col  /><col  /></colgroup><tbody><tr class="odd"><td><p>Intestazione</p></td><td>Vspixengine.h</td></tr></tbody></table>
 
 ## <a name="span-idsee_alsospansee-also"></a><span id="see_also"></span>Vedere anche
 

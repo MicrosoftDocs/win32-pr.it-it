@@ -19,12 +19,12 @@ api_type:
 api_location:
 - ESENT.DLL
 ROBOTS: INDEX,FOLLOW
-ms.openlocfilehash: 3a28439932d9c0eb76675ed4e88d5595c64b5ace
-ms.sourcegitcommit: 9b5faa61c38b2d0c432b7f2dbee8c127b0e28a7e
+ms.openlocfilehash: 1b5446306bd4035c68f33db2966b1cfadd0b6d82
+ms.sourcegitcommit: 4665ebce0c106bdb52eef36e544280b496b6f50b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/19/2021
-ms.locfileid: "122470767"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "122987234"
 ---
 # <a name="jetstopserviceinstance2-function"></a>Funzione JetStopServiceInstance2
 
@@ -53,7 +53,7 @@ Istanza di destinazione. Il **JET_INSTANCE** di dati è un handle per l'istanza 
 Gruppo di bit che specifica uno o più valori elencati e definiti nella tabella seguente.
 
 
-| <p>valore</p> | <p>Descrizione</p> | 
+| <p>Valore</p> | <p>Descrizione</p> | 
 |--------------|--------------------|
 | <p>JET_bitStopServiceAll</p> | <p>Arresta tutti i servizi ESE (Extensible Archiviazione Engine) per l'istanza specificata.</p> | 
 | <p>JET_bitStopServiceBackgroundUserTasks</p> | <p>Arresta le attività di manutenzione in background riavviabili specificate dal client ,ad esempio B+ Tree Defrag.</p> | 
@@ -64,7 +64,7 @@ Gruppo di bit che specifica uno o più valori elencati e definiti nella tabella 
 
 ### <a name="return-value"></a>Valore restituito
 
-Questa funzione restituisce il [JET_ERR](./jet-err.md) dati con uno dei codici restituiti seguenti. Per altre informazioni sui possibili errori ESE, vedere Errori del [motore Archiviazione estendibile](./extensible-storage-engine-errors.md) e Parametri [di gestione degli errori](./error-handling-parameters.md).
+Questa funzione restituisce il [JET_ERR](./jet-err.md) dati con uno dei codici restituiti seguenti. Per altre informazioni sui possibili errori ESE, vedere Errori del [motore di Archiviazione](./extensible-storage-engine-errors.md) estendibile e Parametri di gestione degli [errori](./error-handling-parameters.md).
 
 
 | <p>Codice restituito</p> | <p>Descrizione</p> | 
@@ -75,20 +75,26 @@ Questa funzione restituisce il [JET_ERR](./jet-err.md) dati con uno dei codici r
 
 #### <a name="remarks"></a>Commenti
 
-Questa funzione consente a un'applicazione JET di spostare la cache del database in uno stato pulito o quasi pulito (con I/O del sistema operativo inattivo), in modo che se l'applicazione fosse terminata, il ripristino sarebbe rapido. Questo approccio è preferibile rispetto alla terminazione di JET chiamando le funzioni [JetTerm](./jetterm-function.md) o [JetDetachDatabase,](./jetdetachdatabase-function.md) in modo che nello scenario più comune l'applicazione sia semplicemente non sospensione e successivamente l'applicazione abbia l'intera cache ed è pronta per l'esecuzione il prima possibile.
+Questa funzione consente a un'applicazione JET di spostare la cache del database in uno stato pulito o quasi pulito (con I/O del sistema operativo inattivo), in modo che se l'applicazione fosse terminata, il ripristino sarebbe rapido. Questo approccio è preferibile rispetto alla terminazione di JET chiamando le funzioni [JetTerm](./jetterm-function.md) o [JetDetachDatabase,](./jetdetachdatabase-function.md) in modo che nello scenario più comune l'applicazione non sia più pronta e in un secondo momento l'applicazione abbia l'intera cache ed è pronta per l'uso il prima possibile.
 
-Se questa funzione ha esito positivo, prepara la cache del database per una sospensione imminente. Questa funzione accoda il lavoro a un thread di lavoro in background e torna immediatamente al chiamante. La funzione deve essere chiamata in base a PLM VisibilityNotice anziché chiamare dal gestore eventi di sospensione dell'applicazione per garantire che JET abbia tempo per scaricare i buffer dirty prima che PLM sospende/termini il processo. Internamente, JET attiva un invio immediato di manutenzione del checkpoint in caso di modifica della configurazione (aggiornamento del checkpoint o questo nuovo bit di cache inattivo). Per altre informazioni sugli eventi VisibilityNotice, vedere [Classe VisibilityChangedEventArgs](/uwp/api/windows.ui.core.visibilitychangedeventargs).
+Se questa funzione ha esito positivo, prepara la cache del database per una sospensione imminente. Questa funzione accoda il lavoro a un thread di lavoro in background e torna immediatamente al chiamante. La funzione deve essere chiamata in base a PLM VisibilityNotice anziché chiamare dal gestore eventi di sospensione dell'applicazione per garantire che JET abbia tempo per scaricare i buffer dirty prima che PLM sospende/termini il processo. Internamente, JET attiva un invio immediato di manutenzione del checkpoint in caso di modifica della configurazione (aggiornamento del checkpoint o questo nuovo bit di cache inattiva). Per altre informazioni sugli eventi VisibilityNotice, vedere [Classe VisibilityChangedEventArgs](/uwp/api/windows.ui.core.visibilitychangedeventargs).
 
 Questa funzione deve essere chiamata due volte. Viene chiamato dopo che l'applicazione riceve l'avviso di sospensione dal sistema operativo, ma prima che l'applicazione sia stata sospesa. Viene quindi chiamato di nuovo dopo la ripresa dell'applicazione da parte del sistema operativo. Ad esempio:
 
-Quando viene chiamato a Suspend: JET_ERR JET_API JetStopServiceInstance2( istanza, JET_bitStopServiceQuiesceCaches);
+Quando viene chiamato per Sospendere: JET_ERR JET_API JetStopServiceInstance2( istanza, JET_bitStopServiceQuiesceCaches);
 
 Alla ripresa: JET_ERR JET_API JetStopServiceInstance2( istanza, JET_bitStopServiceQuiesceCaches| JET_bitStopServiceResume );
 
 #### <a name="requirements"></a>Requisiti
 
 
-| | | <p><strong>Client</strong></p> | <p>Richiede Windows 8.</p> | | <p><strong>Server</strong></p> | <p>Richiede Windows Server 2012.</p> | | <p><strong>Intestazione</strong></p> | <p>Dichiarato in Esent.h.</p> | | <p><strong>Libreria</strong></p> | <p>Usare ESENT.lib.</p> | | <p><strong>DLL</strong></p> | <p>Richiede ESENT.dll.</p> | 
+| Requisito | Valore |
+|------------|----------|
+| <p><strong>Client</strong></p> | <p>Richiede Windows 8.</p> | 
+| <p><strong>Server</strong></p> | <p>Richiede Windows Server 2012.</p> | 
+| <p><strong>Intestazione</strong></p> | <p>Dichiarato in Esent.h.</p> | 
+| <p><strong>Libreria</strong></p> | <p>Usare ESENT.lib.</p> | 
+| <p><strong>DLL</strong></p> | <p>Richiede ESENT.dll.</p> | 
 
 
 
