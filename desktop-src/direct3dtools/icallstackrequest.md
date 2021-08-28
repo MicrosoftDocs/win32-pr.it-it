@@ -17,12 +17,12 @@ api_location:
 topic_type:
 - APIRef
 - kbSyntax
-ms.openlocfilehash: dcb3864e16a06891e7fad8ebe59de7dc8f58bde51d2345d10ba2270ac92b480c
-ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
+ms.openlocfilehash: ff3910750608fdb1f9ee40eb00d8d9e938de48a9
+ms.sourcegitcommit: 4e94fc75fad7b2a0f3c92a26f97e89924e59b7a9
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119562331"
+ms.lasthandoff: 08/24/2021
+ms.locfileid: "122787357"
 ---
 # <a name="span-idvspixengineicallstackrequestspanicallstackrequest-interface"></a><span id="vspixengine.icallstackrequest"></span>Interfaccia ICallStackRequest
 
@@ -36,15 +36,15 @@ Richiesta di dati callstack.
 
 ### <a name="span-idmethodsspanmethods"></a><span id="methods"></span>Metodi
 
-**L'interfaccia ICallStackRequest** include questi metodi.
+Questi metodi sono disponibili nell'interfaccia **ICallStackRequest.**
 
-<table><colgroup><col style="width: 50%" /><col style="width: 50%" /></colgroup><thead><tr class="header"><th style="text-align: left;">Metodo</th><th style="text-align: left;">Descrizione</th></tr></thead><tbody><tr class="odd"><td style="text-align: left;"><a href="/windows/desktop/direct3dtools/icallstackrequest-requestasync-eventid-icallstackcallback-ptr-dword-dword"><strong>RequestAsync</strong></a></td><td style="text-align: left;"><p>Richiesta asincrona per ottenere gli RVA dello stack di chiamate (indirizzi virtuali relativi) dell'evento specificato.</p></td></tr></tbody></table>
+<table><colgroup><col  /><col  /></colgroup><thead><tr class="header"><th >Metodo</th><th >Descrizione</th></tr></thead><tbody><tr class="odd"><td ><a href="/windows/desktop/direct3dtools/icallstackrequest-requestasync-eventid-icallstackcallback-ptr-dword-dword"><strong>RequestAsync</strong></a></td><td ><p>Richiesta asincrona per ottenere gli RVA dello stack di chiamate (indirizzi virtuali relativi) dell'evento specificato.</p></td></tr></tbody></table>
 
  
 
 ## <a name="requirements"></a>Requisiti
 
-<table><colgroup><col style="width: 50%" /><col style="width: 50%" /></colgroup><tbody><tr class="odd"><td><p>Intestazione</p></td><td>Vspixengine.h</td></tr></tbody></table>
+<table><colgroup><col  /><col  /></colgroup><tbody><tr class="odd"><td><p>Intestazione</p></td><td>Vspixengine.h</td></tr></tbody></table>
 
  
 

@@ -18,12 +18,12 @@ api_type:
 api_location:
 - ESENT.DLL
 ROBOTS: INDEX,FOLLOW
-ms.openlocfilehash: bfd4fc15f3ea7d4f6275f0d4dd31ed96729715b6089397fff7ee73fc7d0c6e9b
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 4997be8f268d676fbd4a164281061b488e948168
+ms.sourcegitcommit: 9b5faa61c38b2d0c432b7f2dbee8c127b0e28a7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119614936"
+ms.lasthandoff: 08/19/2021
+ms.locfileid: "122474387"
 ---
 # <a name="jetossnapshotprepareinstance-function"></a>Funzione JetOSSnapshotPrepareInstance
 
@@ -60,38 +60,16 @@ Opzioni per questa chiamata. Questo parametro è riservato per usi futuri. L'uni
 
 ### <a name="return-value"></a>Valore restituito
 
-Questa funzione restituisce il [JET_ERR](./jet-err.md) dati con uno dei codici restituiti seguenti. Per altre informazioni sui possibili errori ESE, vedere [Errori del motore Archiviazione](./extensible-storage-engine-errors.md) estendibile e Parametri di gestione degli [errori](./error-handling-parameters.md).
+Questa funzione restituisce il [JET_ERR](./jet-err.md) dati con uno dei codici restituiti seguenti. Per altre informazioni sui possibili errori ESE, vedere Errori del [motore Archiviazione estendibile](./extensible-storage-engine-errors.md) e Parametri [di gestione degli errori](./error-handling-parameters.md).
 
-<table>
-<colgroup>
-<col style="width: 50%" />
-<col style="width: 50%" />
-</colgroup>
-<thead>
-<tr class="header">
-<th><p>Codice restituito</p></th>
-<th><p>Descrizione</p></th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td><p>JET_errSuccess</p></td>
-<td><p>Operazione riuscita.</p></td>
-</tr>
-<tr class="even">
-<td><p>JET_errInvalidParameter</p></td>
-<td><p>Il puntatore id snapshot è <strong>NULL</strong> o il <em>parametro grbit</em> non è valido.</p></td>
-</tr>
-<tr class="odd">
-<td><p>JET_errOSSnapshotInvalidSequence</p></td>
-<td><p>Una sessione snapshot è già in corso.</p></td>
-</tr>
-<tr class="even">
-<td><p>JET_errOSSnapshotInvalidSnapId</p></td>
-<td><p>L'identificatore per la sessione snapshot non è valido.</p></td>
-</tr>
-</tbody>
-</table>
+
+| <p>Codice restituito</p> | <p>Descrizione</p> | 
+|--------------------|--------------------|
+| <p>JET_errSuccess</p> | <p>Operazione riuscita.</p> | 
+| <p>JET_errInvalidParameter</p> | <p>Il puntatore id snapshot è <strong>NULL</strong> o il <em>parametro grbit</em> non è valido.</p> | 
+| <p>JET_errOSSnapshotInvalidSequence</p> | <p>Una sessione snapshot è già in corso.</p> | 
+| <p>JET_errOSSnapshotInvalidSnapId</p> | <p>L'identificatore per la sessione snapshot non è valido.</p> | 
+
 
 
 Se questa funzione ha esito positivo, l'istanza specificata farà parte della sessione snapshot.
@@ -110,34 +88,9 @@ Se **JetOSSnapshotPrepareInstance** non viene chiamato tra l'inizio della sessio
 
 #### <a name="requirements"></a>Requisiti
 
-<table>
-<colgroup>
-<col style="width: 50%" />
-<col style="width: 50%" />
-</colgroup>
-<tbody>
-<tr class="odd">
-<td><p><strong>Client</strong></p></td>
-<td><p>Richiede Windows Vista.</p></td>
-</tr>
-<tr class="even">
-<td><p><strong>Server</strong></p></td>
-<td><p>Richiede Windows Server 2008.</p></td>
-</tr>
-<tr class="odd">
-<td><p><strong>Intestazione</strong></p></td>
-<td><p>Dichiarato in Esent.h.</p></td>
-</tr>
-<tr class="even">
-<td><p><strong>Libreria</strong></p></td>
-<td><p>Usare ESENT.lib.</p></td>
-</tr>
-<tr class="odd">
-<td><p><strong>DLL</strong></p></td>
-<td><p>Richiede ESENT.dll.</p></td>
-</tr>
-</tbody>
-</table>
+
+| | | <p><strong>Client</strong></p> | <p>Richiede Windows Vista.</p> | | <p><strong>Server</strong></p> | <p>Richiede Windows Server 2008.</p> | | <p><strong>Intestazione</strong></p> | <p>Dichiarato in Esent.h.</p> | | <p><strong>Libreria</strong></p> | <p>Usare ESENT.lib.</p> | | <p><strong>DLL</strong></p> | <p>Richiede ESENT.dll.</p> | 
+
 
 
 #### <a name="see-also"></a>Vedere anche

@@ -1,15 +1,15 @@
 ---
-description: Il filtro EVR (Enhanced Video Renderer) è un mixer video a 16 canali e un renderer. Ha la stessa funzionalità di base e lo stesso modello di plug-in del sink Media Foundation multimediale EVR.
+description: Il filtro Enhanced Video Renderer (EVR) è un mixer video a 16 canali e un renderer. Ha la stessa funzionalità di base e lo stesso modello di plug-in del sink Media Foundation multimediale EVR.
 ms.assetid: ead99cb3-2be2-42c6-ac22-be0c2ddf28d5
 title: Filtro renderer video avanzato
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 4e6b99eefe8f31074c755f4f74b4cd8749e44de996f49592cea5827d6fa1e123
-ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
+ms.openlocfilehash: 7ed63ba80864f98012a178ed775e5812ee5abe88
+ms.sourcegitcommit: 9b5faa61c38b2d0c432b7f2dbee8c127b0e28a7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119537071"
+ms.lasthandoff: 08/19/2021
+ms.locfileid: "122475527"
 ---
 # <a name="enhanced-video-renderer-filter"></a>Filtro renderer video avanzato
 
@@ -18,84 +18,15 @@ ms.locfileid: "119537071"
 
  
 
-Il filtro EVR (Enhanced Video Renderer) è un mixer video a 16 canali e un renderer. Ha la stessa funzionalità di base e lo stesso modello di plug-in del sink Media Foundation multimediale EVR.
+Il filtro Enhanced Video Renderer (EVR) è un mixer video a 16 canali e un renderer. Ha la stessa funzionalità di base e lo stesso modello di plug-in del sink Media Foundation multimediale EVR.
 
 Il DirectShow EVR è documentato nella documentazione di Media Foundation SDK. Per altre informazioni, vedere [Renderer video avanzato](../medfound/enhanced-video-renderer.md).
 
 
 
-<table>
-<colgroup>
-<col style="width: 50%" />
-<col style="width: 50%" />
-</colgroup>
-<tbody>
-<tr class="odd">
-<td>Interfacce di filtro (tramite <strong>QueryInterface</strong>)</td>
-<td>DirectShow interfacce:
-<ul>
-<li><a href="/windows/desktop/api/Strmif/nn-strmif-iamcertifiedoutputprotection"><strong>IAMCertifiedOutputProtection</strong></a></li>
-<li><a href="/windows/desktop/api/Strmif/nn-strmif-iamfiltermiscflags"><strong>IAMFilterMiscFlags</strong></a></li>
-<li><a href="/windows/desktop/api/Strmif/nn-strmif-ibasefilter"><strong>IBaseFilter</strong></a></li>
-<li><a href="ikspropertyset.md"><strong>IKsPropertySet</strong></a></li>
-<li><a href="/windows/desktop/api/Strmif/nn-strmif-imediaeventsink"><strong>IMediaEventSink</strong></a></li>
-<li><a href="/windows/desktop/api/Strmif/nn-strmif-imediaseeking"><strong>IMediaSeeking</strong></a></li>
-<li><a href="/windows/desktop/api/Strmif/nn-strmif-iqualitycontrol"><strong>IQualityControl</strong></a></li>
-<li><a href="/previous-versions/windows/desktop/api/Amvideo/nn-amvideo-iqualprop"><strong>IQualProp</strong></a></li>
-</ul>
-Media Foundation interfacce:<br/>
-<ul>
-<li><a href="/windows/desktop/api/evr/nn-evr-ievrfilterconfig"><strong>IEVRFilterConfig</strong></a></li>
-<li><a href="/windows/desktop/api/mfidl/nn-mfidl-imfgetservice"><strong>IMFGetService</strong></a></li>
-<li><a href="/windows/desktop/api/evr/nn-evr-imfvideopositionmapper"><strong>IMFVideoPositionMapper</strong></a></li>
-<li><a href="/windows/desktop/api/evr/nn-evr-imfvideorenderer"><strong>IMFVideoRenderer</strong></a></li>
-</ul></td>
-</tr>
-<tr class="even">
-<td>Tipi di supporti pin di input</td>
-<td>Variabile, a seconda del driver di grafica.</td>
-</tr>
-<tr class="odd">
-<td>Interfacce pin di input (tramite <strong>QueryInterface</strong>)</td>
-<td>DirectShow interfacce:
-<ul>
-<li><a href="/windows/desktop/api/Strmif/nn-strmif-imeminputpin"><strong>IMemInputPin</strong></a></li>
-<li><a href="/windows/desktop/api/Strmif/nn-strmif-ipin"><strong>IPin</strong></a></li>
-<li><a href="/windows/desktop/api/Strmif/nn-strmif-iqualitycontrol"><strong>IQualityControl</strong></a></li>
-</ul>
-Media Foundation interfacce:<br/>
-<ul>
-<li><a href="/windows/desktop/api/dxva2api/nn-dxva2api-idirectxvideomemoryconfiguration"><strong>IDirectXVideoMemoryConfiguration</strong></a></li>
-<li><a href="/windows/desktop/api/evr9/nn-evr9-ievrvideostreamcontrol"><strong>IEVRVideoStreamControl</strong></a></li>
-<li><a href="/windows/desktop/api/mfidl/nn-mfidl-imfgetservice"><strong>IMFGetService</strong></a></li>
-</ul></td>
-</tr>
-<tr class="even">
-<td>Tipi di supporti pin di output</td>
-<td>Non applicabile.</td>
-</tr>
-<tr class="odd">
-<td>Interfacce pin di output</td>
-<td>Non applicabile.</td>
-</tr>
-<tr class="even">
-<td>Filtro CLSID</td>
-<td>CLSID_EnhancedVideoRenderer</td>
-</tr>
-<tr class="odd">
-<td>File eseguibile</td>
-<td>evr.dll</td>
-</tr>
-<tr class="even">
-<td><a href="merit.md">Merito</a></td>
-<td>MERIT_DO_NOT_USE</td>
-</tr>
-<tr class="odd">
-<td><a href="filter-categories.md">Categoria filtro</a></td>
-<td>CLSID_LegacyAmFilterCategory</td>
-</tr>
-</tbody>
-</table>
+
+| | | Filtrare le interfacce (tramite <strong>QueryInterface)</strong>| DirectShow interfacce:<ul><li><a href="/windows/desktop/api/Strmif/nn-strmif-iamcertifiedoutputprotection"><strong>IAMCertifiedOutputProtection</strong></a></li><li><a href="/windows/desktop/api/Strmif/nn-strmif-iamfiltermiscflags"><strong>IAMFilterMiscFlags</strong></a></li><li><a href="/windows/desktop/api/Strmif/nn-strmif-ibasefilter"><strong>IBaseFilter</strong></a></li><li><a href="ikspropertyset.md"><strong>IKsPropertySet</strong></a></li><li><a href="/windows/desktop/api/Strmif/nn-strmif-imediaeventsink"><strong>IMediaEventSink</strong></a></li><li><a href="/windows/desktop/api/Strmif/nn-strmif-imediaseeking"><strong>IMediaSeeking</strong></a></li><li><a href="/windows/desktop/api/Strmif/nn-strmif-iqualitycontrol"><strong>IQualityControl</strong></a></li><li><a href="/previous-versions/windows/desktop/api/Amvideo/nn-amvideo-iqualprop"><strong>IQualProp</strong></a></li></ul>Media Foundation interfacce:<br /><ul><li><a href="/windows/desktop/api/evr/nn-evr-ievrfilterconfig"><strong>IEVRFilterConfig</strong></a></li><li><a href="/windows/desktop/api/mfidl/nn-mfidl-imfgetservice"><strong>IMFGetService</strong></a></li><li><a href="/windows/desktop/api/evr/nn-evr-imfvideopositionmapper"><strong>IMFVideoPositionMapper</strong></a></li><li><a href="/windows/desktop/api/evr/nn-evr-imfvideorenderer"><strong>IMFVideoRenderer</strong></a></li></ul> | | Tipi di supporti pin di input | Variabile, a seconda del driver di grafica. | | Interfacce pin di input (tramite <strong>QueryInterface)</strong>| DirectShow interfacce:<ul><li><a href="/windows/desktop/api/Strmif/nn-strmif-imeminputpin"><strong>IMemInputPin</strong></a></li><li><a href="/windows/desktop/api/Strmif/nn-strmif-ipin"><strong>IPin</strong></a></li><li><a href="/windows/desktop/api/Strmif/nn-strmif-iqualitycontrol"><strong>IQualityControl</strong></a></li></ul>Media Foundation interfacce:<br /><ul><li><a href="/windows/desktop/api/dxva2api/nn-dxva2api-idirectxvideomemoryconfiguration"><strong>IDirectXVideoMemoryConfiguration</strong></a></li><li><a href="/windows/desktop/api/evr9/nn-evr9-ievrvideostreamcontrol"><strong>IEVRVideoStreamControl</strong></a></li><li><a href="/windows/desktop/api/mfidl/nn-mfidl-imfgetservice"><strong>IMFGetService</strong></a></li></ul> | | Tipi di supporti pin di output | Non applicabile. | | Interfacce pin di output | Non applicabile. | | Filtrare i | CLSID CLSID_EnhancedVideoRenderer | | File eseguibile | evr.dll | | <a href="merit.md">Merito</a> | MERIT_DO_NOT_USE | | <a href="filter-categories.md">Filtro categoria</a> | CLSID_LegacyAmFilterCategory | 
+
 
 
 
@@ -127,13 +58,13 @@ Il driver di grafica determina quali formati video sono supportati, ma in genere
 
 I formati di flusso secondari disponibili possono dipendere dal formato del flusso di riferimento.
 
-L'EVR inoltra i comandi di ricerca a monte tramite il pin 0. I pin del flusso secondario non inoltrano i comandi di ricerca. È responsabilità del filtro di origine o della barra di divisione mantenere sincronizzati i flussi secondari con il flusso di riferimento.
+L'EVR inoltra i comandi di ricerca a monte fino al pin 0. I pin del flusso secondario non inoltrano i comandi di ricerca. È responsabilità del filtro di origine o della barra di divisione mantenere sincronizzati i flussi secondari con il flusso di riferimento.
 
 ## <a name="requirements"></a>Requisiti
 
 
 
-| Requisito | Valore |
+| Requisito | valore |
 |-------------------------------------|------------------------------------------------------|
 | Client minimo supportato<br/> | Windows Solo \[ app desktop di Vista\]<br/>       |
 | Server minimo supportato<br/> | Windows Solo app desktop server 2008 \[\]<br/> |

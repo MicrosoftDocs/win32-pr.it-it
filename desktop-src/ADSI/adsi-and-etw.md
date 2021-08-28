@@ -7,12 +7,12 @@ keywords:
 - traccia eventi ADSI
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: a59b2db3775c8c578ad361667a2d89c36240caf4b3bbb4bcd5cdd2798011514b
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 50ff881a408e2f6d7a6b661e7556c8d39366f726
+ms.sourcegitcommit: 9b5faa61c38b2d0c432b7f2dbee8c127b0e28a7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119023979"
+ms.lasthandoff: 08/19/2021
+ms.locfileid: "122469198"
 ---
 # <a name="event-tracing-in-adsi"></a>Traccia eventi in ADSI
 
@@ -26,11 +26,11 @@ Se non è possibile ottenere lo schema dal disco o dal server, ADSI usa uno sche
 
 ## <a name="changing-and-setting-the-password"></a>Modifica e impostazione della password
 
-[**ChangePassword**](/windows/desktop/api/Iads/nf-iads-iadsuser-changepassword) e [**SetPassword**](/windows/desktop/api/Iads/nf-iads-iadsuser-setpassword) utilizzano più meccanismi per eseguire l'operazione richiesta in base alla configurazione disponibile , come descritto in Impostazione e modifica delle password utente [con il provider LDAP](setting-user-passwords-for-ldap-providers.md). Quando **ChangePassword** e **SetPassword** hanno esito negativo, può essere difficile determinare esattamente il motivo e Traccia eventi consente di risolvere i problemi con questi metodi.
+[**ChangePassword**](/windows/desktop/api/Iads/nf-iads-iadsuser-changepassword) e [**SetPassword**](/windows/desktop/api/Iads/nf-iads-iadsuser-setpassword) utilizzano più meccanismi per eseguire l'operazione richiesta in base alla configurazione disponibile , come descritto in Impostazione e modifica delle password utente con [il provider LDAP](setting-user-passwords-for-ldap-providers.md). Quando **ChangePassword** e **SetPassword** hanno esito negativo, può essere difficile determinare esattamente il motivo e Traccia eventi consente di risolvere i problemi con questi metodi.
 
 ## <a name="adsi-bind-cache"></a>Cache di binding ADSI
 
-ADSI tenta internamente di riutilizzare le connessioni LDAP quando possibile (vedere [Connessione Caching](connection-caching.md)). Durante la risoluzione dei problemi, è utile verificare se è stata aperta una nuova connessione per la comunicazione con il server o se è stata usata una connessione esistente. Può anche essere utile tracciare il ciclo di vita della cache di connessione (talvolta definita cache di binding) e la relativa creazione o chiusura e se è stata verificata una segnalazione di connessione. Nel caso di un'associazione [serverless,](/windows/desktop/AD/serverless-binding-and-rootdse)ADSI chiama il localizzatore dc per selezionare un server per il dominio del contesto dell'utente. ADSI gestisce quindi una cache del mapping dominio-server per le connessioni successive. Traccia eventi consente di tracciare la selezione del controller di dominio ed è quindi utile per la risoluzione dei problemi relativi alla connessione.
+ADSI tenta internamente di riutilizzare le connessioni LDAP quando possibile (vedere [Connessione Caching](connection-caching.md)). Durante la risoluzione dei problemi, è utile verificare se è stata aperta una nuova connessione per la comunicazione con il server o se è stata usata una connessione esistente. Può anche essere utile tracciare il ciclo di vita della cache di connessione (talvolta definita cache di binding) e la relativa creazione o chiusura e se è stata verificata una segnalazione di connessione. Nel caso di un binding [serverless,](/windows/desktop/AD/serverless-binding-and-rootdse)ADSI chiama il localizzatore DC per selezionare un server per il dominio del contesto dell'utente. ADSI gestisce quindi una cache del mapping dominio-server per le connessioni successive. Traccia eventi consente di tracciare la selezione del controller di dominio ed è quindi utile per la risoluzione dei problemi relativi alla connessione.
 
 ## <a name="enabling-tracing-and-starting-a-tracing-session"></a>Abilitazione della traccia e avvio di una sessione di traccia
 
@@ -63,71 +63,9 @@ Questi flag determinano [quali metodi ADSI](active-directory-service-interfaces-
 
 
 
-<table>
-<colgroup>
-<col style="width: 50%" />
-<col style="width: 50%" />
-</colgroup>
-<tbody>
-<tr class="odd">
-<td><strong>DEBUG_SCHEMA</strong><br/></td>
-<td><ul>
-<li>LdapGetSchema</li>
-<li>GetSchemaInfoTime</li>
-<li>LdapReadSchemaInfoFromServer</li>
-<li>ProcessSchemaInfo</li>
-<li>HelperReadLdapSchemaInfo</li>
-<li>ProcessClassInfoArray</li>
-<li>ReadSchemaInfoFromRegistry</li>
-<li>StoreSchemaInfoFromRegistry</li>
-<li>AttributeTypeDescription</li>
-<li>ObjectClassDescription</li>
-<li>DITContentRuleDescription</li>
-<li>DirectoryString</li>
-<li>DirectoryStrings</li>
-<li>DITContentRuleDescription</li>
-</ul>
-<br/></td>
-</tr>
-<tr class="even">
-<td><strong>DEBUG_CHANGEPWD</strong><br/></td>
-<td><ul>
-<li>CADsUser::ChangePassword</li>
-</ul>
-<br/></td>
-</tr>
-<tr class="odd">
-<td><strong>DEBUG_SETPWD</strong><br/></td>
-<td><ul>
-<li>CADsUser::SetPassword</li>
-</ul>
-<br/></td>
-</tr>
-<tr class="even">
-<td><strong>DEBUG_BINDCACHE</strong><br/></td>
-<td><ul>
-<li>GetServerBasedObject</li>
-<li>GetServerLessBasedObject</li>
-<li>GetGCDomainName</li>
-<li>GetDefaultDomainName</li>
-<li>GetUserDomainFlatName</li>
-<li>BindCacheLookup</li>
-<li>EquivalentPortNumbers</li>
-<li>CanCredentialsBeReused</li>
-<li>BindCacheAdd</li>
-<li>BindCacheAddRef</li>
-<li>AddReferralLink</li>
-<li>CommonRemoveEntry</li>
-<li>BindCacheDerefHelper</li>
-<li>NotifyNewConnection</li>
-<li>QueryForConnection</li>
-<li>LdapOpenBindWithCredentials</li>
-<li>LdapOpenBindWithDefaultCredentials</li>
-</ul>
-<br/></td>
-</tr>
-</tbody>
-</table>
+
+| | | <strong>DEBUG_SCHEMA</strong><br /> | <ul><li>LdapGetSchema</li><li>GetSchemaInfoTime</li><li>LdapReadSchemaInfoFromServer</li><li>ProcessSchemaInfo</li><li>HelperReadLdapSchemaInfo</li><li>ProcessClassInfoArray</li><li>ReadSchemaInfoFromRegistry</li><li>StoreSchemaInfoFromRegistry</li><li>AttributeTypeDescription</li><li>ObjectClassDescription</li><li>DITContentRuleDescription</li><li>DirectoryString</li><li>DirectoryStrings</li><li>DITContentRuleDescription</li></ul><br /> | | <strong>DEBUG_CHANGEPWD</strong><br /> | <ul><li>CADsUser::ChangePassword</li></ul><br /> | | <strong>DEBUG_SETPWD</strong><br /> | <ul><li>CADsUser::SetPassword</li></ul><br /> | | <strong>DEBUG_BINDCACHE</strong><br /> | <ul><li>GetServerBasedObject</li><li>GetServerLessBasedObject</li><li>GetGCDomainName</li><li>GetDefaultDomainName</li><li>GetUserDomainFlatName</li><li>BindCacheLookup</li><li>EquivalentPortNumbers</li><li>CanCredentialsBeReused</li><li>BindCacheAdd</li><li>BindCacheAddRef</li><li>AddReferralLink</li><li>CommonRemoveEntry</li><li>BindCacheDerefHelper</li><li>NotifyNewConnection</li><li>QueryForConnection</li><li>LdapOpenBindWithCredentials</li><li>LdapOpenBindWithDefaultCredentials</li></ul><br /> | 
+
 
 
 
@@ -154,7 +92,7 @@ Per terminare la traccia, eseguire il comando seguente:
 
 **tracelog.exe -stop** *sessionname*
 
-Nell'esempio precedente *sessionname* è lo stesso nome di quello fornito con il comando che ha avviato la sezione di traccia.
+Nell'esempio precedente *sessionname* ha lo stesso nome di quello fornito con il comando che ha avviato la sezione di traccia.
 
 ## <a name="remarks"></a>Commenti
 

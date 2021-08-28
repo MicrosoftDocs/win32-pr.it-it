@@ -5,12 +5,12 @@ ms.tgt_platform: multiple
 title: wmic
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: a0248ea4ac6a584816da20e8feb8d278d7feab0a018739fa4328c3023179d4b0
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 0bee63220bec5cae1c41480187c78211f46ed020
+ms.sourcegitcommit: 61a4c522182aa1cacbf5669683d9570a3bf043b2
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "117921001"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "122881079"
 ---
 # <a name="wmic"></a>wmic
 
@@ -18,7 +18,7 @@ L'utilità della riga di comando WMI (WMIC) fornisce un'interfaccia della riga d
 
 ## <a name="alias"></a>Alias
 
-Un alias è una ridenominazione semplice di una classe, una proprietà o un metodo che semplifica l'uso e la lettura di WMI. È possibile determinare quali alias sono disponibili per WMIC tramite **/?** . È anche possibile determinare gli alias per una classe specifica usando **<className> /?** . Per altre informazioni, vedere [Alias WMIC](/previous-versions/windows/it-pro/windows-server-2003/cc736307(v=ws.10)).
+Un alias è una ridenominazione semplice di una classe, una proprietà o un metodo che semplifica l'uso e la lettura di WMI. È possibile determinare quali alias sono disponibili per WMIC tramite **/?** . È anche possibile determinare gli alias per una classe specifica usando **&lt; className &gt; /?** . Per altre informazioni, vedere [Alias WMIC](/previous-versions/windows/it-pro/windows-server-2003/cc736307(v=ws.10)).
 
 ## <a name="switch"></a>Commutatore
 
@@ -26,26 +26,26 @@ Un'opzione è un'opzione WMIC che è possibile impostare a livello globale o fac
 
 ## <a name="verbs"></a>Verbi
 
-Per usare i verbi in WMIC, immettere il nome dell'alias seguito dal verbo. Se un alias non supporta un verbo, viene visualizzato il messaggio "Il provider non è in grado di eseguire l'operazione tentata". Per altre informazioni, vedere [Verbi WMIC](/previous-versions/windows/it-pro/windows-server-2003/cc784966(v=ws.10)).
+Per usare i verbi in WMIC, immettere il nome dell'alias seguito dal verbo. Se un alias non supporta un verbo, viene visualizzato il messaggio "Provider is not capable of the attempted operation". Per altre informazioni, vedere [Verbi WMIC](/previous-versions/windows/it-pro/windows-server-2003/cc784966(v=ws.10)).
 
 La maggior parte degli alias supporta i verbi seguenti.
 
 <dl> <dt>
 
-<span id="ASSOC"></span><span id="assoc"></span>Assoc
+<span id="ASSOC"></span><span id="assoc"></span>ASSOC
 </dt> <dd>
 
 Restituisce il risultato della query in cui<oggetto wmi>è il percorso degli oggetti restituiti dai comandi `Associators of (<wmi_object>)` **PATH** **o CLASS.** *\_* I risultati sono istanze associate all'oggetto . Quando ASSOC viene usato con un alias, vengono restituite le classi con la classe sottostante l'alias. Per impostazione predefinita, l'output viene restituito in formato HTML.
 
-Il verbo ASSOC ha le opzioni seguenti.
+Il verbo ASSOC include le opzioni seguenti.
 
 
 
 | Opzione                         | Descrizione                                                                                                       |
 |--------------------------------|-------------------------------------------------------------------------------------------------------------------|
-| /RESULTCLASS:<classname> | Gli endpoint restituiti associati all'oggetto di origine devono appartenere o essere derivati dalla classe specificata.      |
-| /RESULTROLE:<rolename>   | Gli endpoint restituiti devono svolgere un ruolo specifico nelle associazioni con l'oggetto di origine.                              |
-| /ASSOCCLASS:<assocclass> | Gli endpoint restituiti devono essere associati all'origine tramite la classe specificata o una delle classi derivate. |
+| /RESULTCLASS: &lt; classname&gt; | Gli endpoint restituiti associati all'oggetto di origine devono appartenere o essere derivati dalla classe specificata.      |
+| /RESULTROLE: &lt; rolename&gt;   | Gli endpoint restituiti devono svolgere un ruolo specifico nelle associazioni con l'oggetto di origine.                              |
+| /ASSOCCLASS: &lt; assocclass&gt; | Gli endpoint restituiti devono essere associati all'origine tramite la classe specificata o una delle classi derivate. |
 
 
 
@@ -55,7 +55,7 @@ Esempio: **ASSOC del sistema operativo**
 
 </dd> <dt>
 
-<span id="CALL"></span><span id="call"></span>Chiamare
+<span id="CALL"></span><span id="call"></span>CHIAMARE
 </dt> <dd>
 
 Esegue un metodo.
@@ -69,16 +69,16 @@ Esempio: **SERVICE WHERE CAPTION='TELNET' CALL STARTSERVICE**
 
 </dd> <dt>
 
-<span id="CREATE"></span><span id="create"></span>Creare
+<span id="CREATE"></span><span id="create"></span>CREARE
 </dt> <dd>
 
-Crea una nuova istanza e imposta i valori delle proprietà. Non è possibile usare CREATE per creare una nuova classe.
+Crea una nuova istanza di e imposta i valori delle proprietà. Non è possibile usare CREATE per creare una nuova classe.
 
 Esempio: **ENVIRONMENT CREATE NAME="TEMP"; VARIABLEVALUE="NEW"**
 
 </dd> <dt>
 
-<span id="DELETE"></span><span id="delete"></span>Elimina
+<span id="DELETE"></span><span id="delete"></span>ELIMINA
 </dt> <dd>
 
 Elimina l'istanza corrente o il set di istanze. È possibile usare DELETE per eliminare una classe.
@@ -87,7 +87,7 @@ Esempio: **PROCESS WHERE NAME="CALC.EXE" DELETE**
 
 </dd> <dt>
 
-<span id="GET"></span><span id="get"></span>Ottieni
+<span id="GET"></span><span id="get"></span>OTTIENI
 </dt> <dd>
 
 Recuperare valori di proprietà specifici.
@@ -101,7 +101,7 @@ GET include le opzioni seguenti.
 | /VALUE                               | L'output viene formattato con ogni valore elencato in una riga separata e con il nome della proprietà .                                           |
 | /ALL                                 | L'output viene formattato come tabella.                                                                                                            |
 | /TRANSLATE:<translation table> | Tradurre l'output usando la tabella di conversione denominata dal comando . Le tabelle di conversione BasicXml e NoComma sono incluse in WMIC. |
-| /EVERY:<interval>              | Ripetere il comando ogni <interval> secondo.                                                                                         |
+| /EVERY: &lt; intervallo&gt;              | Ripetere il comando a &lt; intervalli &gt; di secondi.                                                                                         |
 | /FORMAT:<format specifier>     | Specifica una parola chiave o un nome di file XSL per formattare i dati.                                                                                  |
 
 
@@ -112,7 +112,7 @@ Esempio: **PROCESS GET NAME**
 
 </dd> <dt>
 
-<span id="LIST"></span><span id="list"></span>Elenco
+<span id="LIST"></span><span id="list"></span>ELENCO
 </dt> <dd>
 
 Mostra i dati. LIST è il verbo predefinito.
@@ -140,7 +140,7 @@ LIST include le opzioni seguenti.
 | Opzione                               | Descrizione                                                                                                                                |
 |--------------------------------------|--------------------------------------------------------------------------------------------------------------------------------------------|
 | /TRANSLATE:<translation table> | Tradurre l'output usando la tabella di conversione denominata dal comando . Le tabelle di conversione BasicXml e NoComma sono incluse in WMIC. |
-| /EVERY:<interval>              | Ripetere il comando ogni <interval> secondo.                                                                                         |
+| /EVERY: &lt; intervallo&gt;              | Ripetere il comando a &lt; intervalli &gt; di secondi.                                                                                         |
 | /FORMAT:<format specifier>     | Specifica una parola chiave o un nome di file XSL per formattare i dati.                                                                                  |
 
 
@@ -151,7 +151,7 @@ Esempio: **PROCESS LIST BRIEF**
 
 </dd> <dt>
 
-<span id="SET"></span><span id="set"></span>Impostare
+<span id="SET"></span><span id="set"></span>IMPOSTARE
 </dt> <dd>
 
 Assegna valori alle proprietà. Esempio: **ENVIRONMENT SET NAME="TEMP",** **VARIABLEVALUE="NEW"**
@@ -160,7 +160,7 @@ Assegna valori alle proprietà. Esempio: **ENVIRONMENT SET NAME="TEMP",** **VARI
 
 ## <a name="switches"></a>Commutatori
 
-Le opzioni globali vengono usate per impostare i valori predefiniti per l'ambiente WMIC. È possibile visualizzare il valore corrente delle condizioni impostate da queste opzioni immettendo il **comando CONTEXT.**
+Le opzioni globali vengono usate per impostare le impostazioni predefinite per l'ambiente WMIC. È possibile visualizzare il valore corrente delle condizioni impostate da queste opzioni immettendo il **comando CONTEXT.**
 
 <dl> <dt>
 
@@ -176,7 +176,7 @@ Esempio: **/NAMESPACE: \\ \\ root**
 <span id="_ROLE"></span><span id="_role"></span>/ROLE
 </dt> <dd>
 
-Lo spazio dei nomi WMIC cerca in genere alias e altre informazioni WMIC.
+WMIC dello spazio dei nomi cerca in genere alias e altre informazioni WMIC.
 
 Esempio: **/ROLE: \\ \\ root**
 
@@ -185,7 +185,7 @@ Esempio: **/ROLE: \\ \\ root**
 <span id="_NODE"></span><span id="_node"></span>/NODE
 </dt> <dd>
 
-Nomi computer, delimitati da virgole. Tutti i comandi vengono eseguiti in modo sincrono su tutti i computer elencati in questo valore. I nomi dei file devono essere preceduti &. I nomi dei computer all'interno di un file devono essere delimitati da virgole o su righe separate.
+Nomi di computer delimitati da virgole. Tutti i comandi vengono eseguiti in modo sincrono su tutti i computer elencati in questo valore. I nomi di file devono essere preceduti da &. I nomi dei computer all'interno di un file devono essere delimitati da virgole o su righe separate.
 
 </dd> <dt>
 
@@ -228,7 +228,7 @@ Esempio: **/PRIVILEGES:ENABLE** o **/PRIVILEGES:DISABLE**
 <span id="_TRACE"></span><span id="_trace"></span>/TRACE
 </dt> <dd>
 
-Consente di visualizzare l'esito positivo o negativo di tutte le funzioni utilizzate per eseguire i comandi WMIC.
+Consente di visualizzare l'esito positivo o negativo di tutte le funzioni usate per eseguire i comandi WMIC.
 
 Esempio: **/TRACE:ON** o **/TRACE:OFF**
 
@@ -255,7 +255,7 @@ Esempio: **/INTERACTIVE:ON** o **/INTERACTIVE:OFF**
 <span id="_FAILFAST_on_off_TimeoutInMilliseconds"></span><span id="_failfast_on_off_timeoutinmilliseconds"></span><span id="_FAILFAST_ON_OFF_TIMEOUTINMILLISECONDS"></span>/FAILFAST **on** \| **off** \| *TimeoutInMilliseconds*
 </dt> <dd>
 
-Se IL COMPUTER /NODE viene pinged prima di inviare comandi WMIC a essi. Se un computer non risponde, i comandi WMIC non vengono inviati.
+Se nei computer /NODE viene emittente il ping dei computer prima di inviare comandi WMIC. Se un computer non risponde, i comandi WMIC non vengono inviati.
 
 Esempio: "/FAILFAST:ON" o "/FAILFAST:OFF"
 
@@ -266,7 +266,7 @@ Esempio: "/FAILFAST:ON" o "/FAILFAST:OFF"
 <span id="_USER"></span><span id="_user"></span>/USER
 </dt> <dd>
 
-Nome utente utilizzato da WMIC per l'accesso ai computer /NODE o ai computer specificati negli alias. Verrà richiesto di specificare la password. Non è possibile utilizzare un nome utente con il computer locale.
+Nome utente utilizzato da WMIC quando si accede ai computer /NODE o ai computer specificati negli alias. Verrà richiesto di specificare la password. Non è possibile usare un nome utente con il computer locale.
 
 Esempio: **/USER:**_JSMITH_
 
@@ -275,7 +275,7 @@ Esempio: **/USER:**_JSMITH_
 <span id="_PASSWORD"></span><span id="_password"></span>/PASSWORD
 </dt> <dd>
 
-Password utilizzata da WMIC per l'accesso ai computer /NODE. La password è visibile nella riga di comando.
+Password usata da WMIC quando si accede ai computer /NODE. La password è visibile nella riga di comando.
 
 Esempio: **/PASSWORD:**_password_
 
@@ -284,7 +284,7 @@ Esempio: **/PASSWORD:**_password_
 <span id="_OUTPUT"></span><span id="_output"></span>/OUTPUT
 </dt> <dd>
 
-Specifica una modalità per tutti i reindirizzamenti di output. L'output non viene visualizzato nella riga di comando e la destinazione viene cancellata prima dell'inizio dell'output. I valori validi sono STDOUT, CLIPBOARD o un nome file.
+Specifica una modalità per tutti i reindirizzamenti di output. L'output non viene visualizzato nella riga di comando e la destinazione viene cancellata prima dell'inizio dell'output. I valori validi sono STDOUT, CLIPBOARD o un nome di file.
 
 Esempio: **/OUTPUT:CLIPBOARD**
 
@@ -293,7 +293,7 @@ Esempio: **/OUTPUT:CLIPBOARD**
 <span id="_APPEND"></span><span id="_append"></span>/APPEND
 </dt> <dd>
 
-Specifica una modalità per tutti i reindirizzamenti di output. L'output non viene visualizzato nella riga di comando e la destinazione non viene cancellata prima dell'inizio dell'output e l'output viene aggiunto alla fine del contenuto corrente della destinazione. I valori validi sono STDOUT, CLIPBOARD o un nome file.
+Specifica una modalità per tutti i reindirizzamenti di output. L'output non viene visualizzato nella riga di comando e la destinazione non viene cancellata prima dell'inizio dell'output e l'output viene aggiunto alla fine del contenuto corrente della destinazione. I valori validi sono STDOUT, CLIPBOARD o un nome di file.
 
 Esempio: **/APPEND:CLIPBOARD**
 
@@ -310,20 +310,20 @@ Esempio: **/AGGREGATE:OFF** o **/AGGREGATE:ON**
 
 ## <a name="commands"></a>Comandi
 
-I comandi WMIC seguenti sono sempre disponibili. Per altre informazioni, vedere [Comandi WMIC.](/previous-versions/windows/it-pro/windows-server-2003/cc779647(v=ws.10))
+I comandi WMIC seguenti sono sempre disponibili. Per altre informazioni, vedere [Comandi WMIC](/previous-versions/windows/it-pro/windows-server-2003/cc779647(v=ws.10)).
 
 <dl> <dt>
 
-<span id="CLASS"></span><span id="class"></span>Classe
+<span id="CLASS"></span><span id="class"></span>CLASSE
 </dt> <dd>
 
-Eseguire l'escape dalla modalità alias predefinita di WMIC per accedere direttamente alle classi nello schema WMI. Per altre informazioni sulle classi WMI disponibili, vedere [Classi WMI.](wmi-classes.md)
+Eseguire l'escape dalla modalità alias predefinita di WMIC per accedere direttamente alle classi nello schema WMI. Per altre informazioni sulle classi WMI disponibili, vedere [Classi WMI](wmi-classes.md).
 
-Esempio: **WMIC /OUTPUT:c: \\ClassOutput.htm CLASSE \_ SoundDevice Win32**
+Esempio: **WMIC /OUTPUT:c:ClassOutput.htm \\ CLASS Win32 \_ SoundDevice**
 
 </dd> <dt>
 
-<span id="PATH"></span><span id="path"></span>Percorso
+<span id="PATH"></span><span id="path"></span>PERCORSO
 </dt> <dd>
 
 Eseguire l'escape dalla modalità alias predefinita di WMIC per accedere direttamente alle istanze nello schema WMI.
@@ -332,7 +332,7 @@ Esempio: **WMIC /OUTPUT:c: \\PathOutput.txt PATH Win32 \_ SoundDevice GET /VALUE
 
 </dd> <dt>
 
-<span id="CONTEXT"></span><span id="context"></span>Contesto
+<span id="CONTEXT"></span><span id="context"></span>CONTESTO
 </dt> <dd>
 
 Visualizzare i valori correnti di tutte le opzioni globali.
@@ -341,7 +341,7 @@ Esempio: **WMIC CONTEXT**
 
 </dd> <dt>
 
-<span id="QUIT"></span><span id="quit"></span>Smettere
+<span id="QUIT"></span><span id="quit"></span>SMETTERE
 </dt> <dd>
 
 Uscire da WMIC.
@@ -350,7 +350,7 @@ Esempio: **WMIC QUIT**
 
 </dd> <dt>
 
-<span id="EXIT"></span><span id="exit"></span>Uscita
+<span id="EXIT"></span><span id="exit"></span>USCITA
 </dt> <dd>
 
 Uscire da WMIC.
@@ -361,7 +361,7 @@ Esempio: **WMIC EXIT**
 
 ## <a name="examples"></a>Esempio
 
-L'esempio Script per l'impostazione di [IP/Subnet/Gateway/DNS](https://Gallery.TechNet.Microsoft.Com/Batch-per-settare-487c1b3f) con wmic nella raccolta TechNet descrive come modificare e aggiornare le impostazioni IP, subnet, gateway e DNS.
+L'esempio Script per l'impostazione di [IP/Subnet/Gateway/DNS](https://Gallery.TechNet.Microsoft.Com/Batch-per-settare-487c1b3f) con wmic in TechNet Gallery descrive come modificare e aggiornare le impostazioni IP, Subnet, Gateway e DNS.
 
 ## <a name="requirements"></a>Requisiti
 

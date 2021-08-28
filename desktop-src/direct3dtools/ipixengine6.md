@@ -1,5 +1,5 @@
 ---
-description: Estensioni all'interfaccia IPixEngine5 contenenti aggiunte per determinare la versione del motore remoto.
+description: Estensioni all'interfaccia IPixEngine5 contenenti aggiunte per determinare la versione remota del motore.
 MS-HAID: vspixengine.IPixEngine6
 MSHAttr:
 - PreferredSiteName:MSDN
@@ -17,16 +17,16 @@ api_location:
 topic_type:
 - APIRef
 - kbSyntax
-ms.openlocfilehash: 77a984f941cce8cac32eda50b691baf3a8234e819ca3b332dc5fd916eb33eb61
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 7b467a0046bb5f1320cf10f6f9594e69300d4a97
+ms.sourcegitcommit: 4e94fc75fad7b2a0f3c92a26f97e89924e59b7a9
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "118282289"
+ms.lasthandoff: 08/24/2021
+ms.locfileid: "122787327"
 ---
 # <a name="span-idvspixengineipixengine6spanipixengine6-interface"></a><span id="vspixengine.ipixengine6"></span>Interfaccia IPixEngine6
 
-Estensioni all'interfaccia IPixEngine5 contenenti aggiunte per determinare la versione del motore remoto.
+Estensioni all'interfaccia IPixEngine5 contenenti aggiunte per determinare la versione remota del motore.
 
 ## <a name="members"></a>Membri
 
@@ -38,13 +38,13 @@ Estensioni all'interfaccia IPixEngine5 contenenti aggiunte per determinare la ve
 
 **L'interfaccia IPixEngine6** include questi metodi.
 
-<table><colgroup><col style="width: 50%" /><col style="width: 50%" /></colgroup><thead><tr class="header"><th style="text-align: left;">Metodo</th><th style="text-align: left;">Descrizione</th></tr></thead><tbody><tr class="odd"><td style="text-align: left;"><a href="/windows/desktop/direct3dtools/ipixengine6-getremotingversion-remotingversion-ptr"><strong>GetRemotingVersion</strong></a></td><td style="text-align: left;"><p>Ottiene la versione remota del motore.</p></td></tr></tbody></table>
+<table><colgroup><col  /><col  /></colgroup><thead><tr class="header"><th >Metodo</th><th >Descrizione</th></tr></thead><tbody><tr class="odd"><td ><a href="/windows/desktop/direct3dtools/ipixengine6-getremotingversion-remotingversion-ptr"><strong>GetRemotingVersion</strong></a></td><td ><p>Ottiene la versione remota del motore.</p></td></tr></tbody></table>
 
  
 
 ## <a name="requirements"></a>Requisiti
 
-<table><colgroup><col style="width: 50%" /><col style="width: 50%" /></colgroup><tbody><tr class="odd"><td><p>Intestazione</p></td><td>Vspixengine.h</td></tr></tbody></table>
+<table><colgroup><col  /><col  /></colgroup><tbody><tr class="odd"><td><p>Intestazione</p></td><td>Vspixengine.h</td></tr></tbody></table>
 
  
 

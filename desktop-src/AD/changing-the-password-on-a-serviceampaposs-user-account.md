@@ -1,31 +1,31 @@
 ---
-title: Modifica della password per l'account utente di un servizio
-description: Per un'istanza del servizio che esegue l'accesso con un account utente, anziché l'account LocalSystem, gestione controllo servizi (SCM) nel computer host archivia la password dell'account, che usa per accedere al servizio all'avvio del servizio.
+title: Modifica della password nell'account utente di un servizio
+description: Per un'istanza del servizio che accede con un account utente, anziché con l'account LocalSystem, Gestione controllo servizi (SCM) nel computer host archivia la password dell'account, che usa per accedere al servizio all'avvio del servizio.
 ms.assetid: d9cef772-bd85-4103-901e-3cf786b29163
 ms.tgt_platform: multiple
 keywords:
-- Modifica della password nell'annuncio di un account utente di un servizio
+- Modifica della password nell'account utente di un servizio AD
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 3bf16b018796979d3710825472a5f9abab72cd24
-ms.sourcegitcommit: 803f3ccd65bdefe36bd851b9c6e7280be9489016
+ms.openlocfilehash: e66f0d7b4dc668697b7a0a8d5b120735f3a445cf
+ms.sourcegitcommit: 61a4c522182aa1cacbf5669683d9570a3bf043b2
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/17/2020
-ms.locfileid: "104472675"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "122881627"
 ---
-# <a name="changing-the-password-on-a-services-user-account"></a>Modifica della password per l'account utente di un servizio
+# <a name="changing-the-password-on-a-services-user-account"></a>Modifica della password nell'account utente di un servizio
 
-Per un'istanza del servizio che esegue l'accesso con un account utente, anziché l'account LocalSystem, gestione controllo servizi (SCM) nel computer host archivia la password dell'account, che usa per accedere al servizio all'avvio del servizio. Come per qualsiasi account utente, è necessario modificare periodicamente la password per mantenere la sicurezza. Quando si modifica la password per un account del servizio, aggiornare la password archiviata da SCM. Nell'esempio di codice seguente viene illustrato come eseguire entrambe le operazioni.
+Per un'istanza del servizio che accede con un account utente, anziché con l'account LocalSystem, Gestione controllo servizi (SCM) nel computer host archivia la password dell'account, che usa per accedere al servizio all'avvio del servizio. Come per qualsiasi account utente, è necessario modificare periodicamente la password per mantenere la sicurezza. Quando si modifica la password in un account del servizio, aggiornare la password archiviata da Gestione controllo servizi. Nell'esempio di codice seguente viene illustrato come eseguire entrambe le operazioni.
 
-Gli esempi di codice usano [**IADsUser. sepassword**](/windows/desktop/api/iads/nf-iads-iadsuser-setpassword) per impostare la password dell'account. Questo metodo usa il nome distinto dell'account. Nell'esempio viene quindi aperto un handle per il servizio installato nel computer host specificato e viene utilizzata la funzione [**ChangeServiceConfig**](/windows/desktop/api/winsvc/nf-winsvc-changeserviceconfiga) per aggiornare la password memorizzata nella cache da SCM. Questa funzione usa il nome Sam (" <domain> \\ <username> ") dell'account.
+Gli esempi di codice usano [**IADsUser.SetPassword**](/windows/desktop/api/iads/nf-iads-iadsuser-setpassword) per impostare la password dell'account. Questo metodo usa il nome distinto dell'account. L'esempio apre quindi un handle per il servizio installato nel computer host specificato e usa la [**funzione ChangeServiceConfig**](/windows/desktop/api/winsvc/nf-winsvc-changeserviceconfiga) per aggiornare la password memorizzata nella cache da Gestione configurazione di sistema. Questa funzione usa il nome SAM (" &lt; nome utente dominio ") &gt; \\ &lt; &gt; dell'account.
 
 > [!Note]  
 > Questo codice deve essere eseguito da un amministratore di dominio.
 
- 
+ 
 
-Per un servizio replicabile in cui ogni replica utilizza un account di accesso diverso, è possibile aggiornare le password per tutte le repliche enumerando le istanze del servizio. Per ulteriori informazioni e un esempio di codice, vedere [enumerazione delle repliche di un servizio](enumerating-the-replicas-of-a-service.md).
+Per un servizio replicabile in cui ogni replica usa un account di accesso diverso, è possibile aggiornare le password per tutte le repliche enumerando le istanze del servizio. Per altre informazioni e un esempio di codice, vedere [Enumerazione delle repliche di un servizio](enumerating-the-replicas-of-a-service.md).
 
 
 ```C++
@@ -153,6 +153,6 @@ return dwStatus;
 
 
 
- 
+ 
 
- 
+ 

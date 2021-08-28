@@ -1,6 +1,6 @@
 ---
-description: 'Altre informazioni su: struttura JET_RECSIZE'
-title: Struttura JET_RECSIZE
+description: 'Altre informazioni su: JET_RECSIZE struttura'
+title: JET_RECSIZE struttura
 TOCTitle: JET_RECSIZE Structure
 ms:assetid: bb2a63bb-7956-46c2-9791-0d0678a6c366
 ms:mtpsurl: https://msdn.microsoft.com/library/Gg294072(v=EXCHG.10)
@@ -15,23 +15,23 @@ api_type:
 - COM
 api_location: ''
 ROBOTS: INDEX,FOLLOW
-ms.openlocfilehash: e4e6b2f313a5411ba5bfeea73db3b01afe007612
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: a7ea4520a75e83c77a6403a583e9131a15df337b
+ms.sourcegitcommit: 4665ebce0c106bdb52eef36e544280b496b6f50b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "103749855"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "122988230"
 ---
-# <a name="jet_recsize-structure"></a>Struttura JET_RECSIZE
+# <a name="jet_recsize-structure"></a>JET_RECSIZE struttura
 
 
 _**Si applica a:** Windows | Windows Server_
 
-## <a name="jet_recsize-structure"></a>Struttura JET_RECSIZE
+## <a name="jet_recsize-structure"></a>JET_RECSIZE struttura
 
-La struttura **JET_RECSIZE** viene utilizzata da [JetGetRecordSize](./jetgetrecordsize-function.md) per restituire informazioni sui requisiti di utilizzo di un record in spazio dati utente, numero di colonne set, numero di valori e spazio overhead della struttura dei record ESE.
+La **JET_RECSIZE** viene usata da [JetGetRecordSize](./jetgetrecordsize-function.md) per restituire informazioni sui requisiti di utilizzo di un record nello spazio dati utente, nel numero di colonne del set, nel numero di valori e nello spazio di sovraccarico della struttura dei record ESE.
 
-**Windows Vista:** La struttura **JET_RECSIZE** è stata introdotta in Windows Vista.
+**Windows Vista:** La **JET_RECSIZE** è stata introdotta in Windows Vista.
 
 ```cpp
     typedef struct {
@@ -52,23 +52,23 @@ La struttura **JET_RECSIZE** viene utilizzata da [JetGetRecordSize](./jetgetreco
 
 Set di dati utente nel record.
 
-**Nota**  La dimensione della chiave non è inclusa in questo oggetto.
+**Nota**  La dimensione della chiave non è inclusa in questo.
 
 **cbLongValueData**
 
-Dati utente associati al record ma archiviati nella struttura ad albero di valori Long.
+Dati utente associati al record ma archiviati nell'albero a valori lunghi.
 
-**Nota**  Non vengono conteggiati valori Long intrinseci.
+**Nota**  In questo modo non vengono conteggiati i valori long intrinseci.
 
 **cbOverhead**
 
-Overhead della struttura di record ESE per questo record. Sono incluse le dimensioni della chiave del record.
+Sovraccarico della struttura dei record ESE per questo record. Sono incluse le dimensioni della chiave del record.
 
 **cbLongValueOverhead**
 
-Overhead dei dati con valori Long.
+Sovraccarico dei dati a valore lungo.
 
-**Nota**  Non vengono conteggiati valori Long intrinseci.
+**Nota**  In questo modo non vengono conteggiati i valori long intrinseci.
 
 **cNonTaggedColumns**
 
@@ -76,13 +76,13 @@ Numero totale di colonne fisse e variabili impostate in questo record.
 
 **cTaggedColumns**
 
-Numero totale di colonne con tag impostati in questo record.
+Numero totale di colonne con tag impostate in questo record.
 
 **cLongValues**
 
-Numero totale di valori Long archiviati nell'albero dei valori Long per questo record.
+Numero totale di valori long archiviati nell'albero long-value per questo record.
 
-**Nota**  Non vengono conteggiati valori Long intrinseci.
+**Nota**  In questo modo non vengono conteggiati i valori long intrinseci.
 
 **cMultiValues**
 
@@ -94,26 +94,13 @@ Il numero totale di valori nel record sarà **cMultiValues**  +  **cNonTaggedCol
 
 ### <a name="requirements"></a>Requisiti
 
-<table>
-<colgroup>
-<col style="width: 50%" />
-<col style="width: 50%" />
-</colgroup>
-<tbody>
-<tr class="odd">
-<td><p><strong>Client</strong></p></td>
-<td><p>Richiede Windows Vista.</p></td>
-</tr>
-<tr class="even">
-<td><p><strong>Server</strong></p></td>
-<td><p>Richiede Windows Server 2008.</p></td>
-</tr>
-<tr class="odd">
-<td><p><strong>Intestazione</strong></p></td>
-<td><p>Dichiarata in esent. h.</p></td>
-</tr>
-</tbody>
-</table>
+
+| Requisito | Valore |
+|------------|----------|
+| <p><strong>Client</strong></p> | <p>Richiede Windows Vista.</p> | 
+| <p><strong>Server</strong></p> | <p>Richiede Windows Server 2008.</p> | 
+| <p><strong>Intestazione</strong></p> | <p>Dichiarato in Esent.h.</p> | 
+
 
 
 ### <a name="see-also"></a>Vedere anche

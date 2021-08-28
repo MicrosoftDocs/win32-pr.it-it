@@ -1,6 +1,6 @@
 ---
-description: 'Altre informazioni su: funzione JetIndexRecordCount'
-title: JetIndexRecordCount (funzione)
+description: 'Altre informazioni su: Funzione JetIndexRecordCount'
+title: Funzione JetIndexRecordCount
 TOCTitle: JetIndexRecordCount Function
 ms:assetid: 62d39738-cd91-4cfb-9483-f4a2dd845d9a
 ms:mtpsurl: https://msdn.microsoft.com/library/Gg269267(v=EXCHG.10)
@@ -18,21 +18,21 @@ api_type:
 api_location:
 - ESENT.DLL
 ROBOTS: INDEX,FOLLOW
-ms.openlocfilehash: 3324ad2fe68d106c7f4d2dcdcd1c3dd6ddefd608
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 4105dec0217c1fea2e00d92c9d217fcf2d7e40b4
+ms.sourcegitcommit: 9b5faa61c38b2d0c432b7f2dbee8c127b0e28a7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104524966"
+ms.lasthandoff: 08/19/2021
+ms.locfileid: "122480437"
 ---
-# <a name="jetindexrecordcount-function"></a>JetIndexRecordCount (funzione)
+# <a name="jetindexrecordcount-function"></a>Funzione JetIndexRecordCount
 
 
 _**Si applica a:** Windows | Windows Server_
 
-## <a name="jetindexrecordcount-function"></a>JetIndexRecordCount (funzione)
+## <a name="jetindexrecordcount-function"></a>Funzione JetIndexRecordCount
 
-La funzione **JetIndexRecordCount** conta il numero di voci nell'indice corrente dalla posizione corrente in poi. La posizione corrente è inclusa nel conteggio. Il conteggio può essere maggiore del numero totale di record nella tabella se l'indice corrente è su una colonna multivalore e le istanze della colonna hanno più valori. Se la tabella è vuota, verrà restituito 0 per il conteggio.
+La **funzione JetIndexRecordCount** conta il numero di voci nell'indice corrente dalla posizione corrente in avanti. La posizione corrente è inclusa nel conteggio. Il conteggio può essere maggiore del numero totale di record nella tabella se l'indice corrente si trova su una colonna multivalore e le istanze della colonna hanno più valori. Se la tabella è vuota, per il conteggio verrà restituito 0.
 
 ```cpp
     JET_ERR JET_API JetIndexRecordCount(
@@ -49,119 +49,57 @@ La funzione **JetIndexRecordCount** conta il numero di voci nell'indice corrente
 
 Sessione da utilizzare per questa chiamata.
 
-*TableID*
+*tableid*
 
 Cursore da utilizzare per questa chiamata.
 
 *pcrec*
 
-Puntatore a un valore long senza segno per la ricezione del conteggio.
+Puntatore a un valore long senza segno per ricevere il conteggio.
 
 *crecMax*
 
-Numero massimo di record da contare. Il valore 0 di *crecMax* indica che il conteggio è illimitato.
+Numero massimo di record da contare. Un *valore crecMax* pari a 0 indica che il conteggio è illimitato.
 
 ### <a name="return-value"></a>Valore restituito
 
-Questa funzione restituisce il tipo di dati [JET_ERR](./jet-err.md) con uno dei seguenti codici restituiti. Per ulteriori informazioni sugli errori ESE possibili, vedere la pagina relativa agli errori e ai [parametri di gestione degli](./error-handling-parameters.md)errori del [motore di archiviazione estensibile](./extensible-storage-engine-errors.md) .
-
-<table>
-<colgroup>
-<col style="width: 50%" />
-<col style="width: 50%" />
-</colgroup>
-<thead>
-<tr class="header">
-<th><p>Codice restituito</p></th>
-<th><p>Descrizione</p></th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td><p>JET_errSuccess</p></td>
-<td><p>Operazione riuscita.</p></td>
-</tr>
-<tr class="even">
-<td><p>JET_errClientRequestToStopJetService</p></td>
-<td><p>Non è possibile completare l'operazione perché tutte le attività nell'istanza associata alla sessione sono state interrotte in seguito a una chiamata a <a href="gg269240(v=exchg.10).md">JetStopService</a>.</p></td>
-</tr>
-<tr class="odd">
-<td><p>JET_errInstanceUnavailable</p></td>
-<td><p>Non è possibile completare l'operazione perché l'istanza associata alla sessione ha rilevato un errore irreversibile che richiede che l'accesso a tutti i dati venga revocato per proteggere l'integrità dei dati.</p>
-<p><strong>Windows XP:</strong>  Questo valore restituito è stato introdotto in Windows XP.</p></td>
-</tr>
-<tr class="even">
-<td><p>JET_errNoCurrentRecord</p></td>
-<td><p>Il cursore non si trova attualmente in un record e la tabella non è vuota.</p>
-<p><strong>Windows XP, Windows server 2003, windows 2000 Server e windows 2000 Professional:</strong>  Se il cursore è posizionato in corrispondenza di un indice o di un intervallo di indici vuoti, <strong>JetIndexRecordCount</strong> restituisce erroneamente JET_errNoCurrentRecord.</p></td>
-</tr>
-<tr class="odd">
-<td><p>JET_errNotInitialized</p></td>
-<td><p>Non è possibile completare l'operazione perché l'istanza associata alla sessione non è ancora stata inizializzata.</p></td>
-</tr>
-<tr class="even">
-<td><p>JET_errRestoreInProgress</p></td>
-<td><p>Non è possibile completare l'operazione perché è in corso un'operazione di ripristino nell'istanza di associata alla sessione.</p></td>
-</tr>
-<tr class="odd">
-<td><p>JET_errSessionSharingViolation</p></td>
-<td><p>Non è possibile usare la stessa sessione per più di un thread nello stesso momento.</p>
-<p><strong>Windows XP:</strong>  Questo valore restituito è stato introdotto in Windows XP.</p></td>
-</tr>
-<tr class="even">
-<td><p>JET_errTermInProgress</p></td>
-<td><p>Non è possibile completare l'operazione perché è in corso l'arresto dell'istanza associata alla sessione.</p></td>
-</tr>
-</tbody>
-</table>
+Questa funzione restituisce il [JET_ERR](./jet-err.md) dati con uno dei codici restituiti seguenti. Per altre informazioni sui possibili errori ESE, vedere [Extensible Archiviazione Engine Errors](./extensible-storage-engine-errors.md) and [Error Handling Parameters](./error-handling-parameters.md).
 
 
-Se questa funzione ha esito positivo, il numero esatto di voci di indice, inclusa la posizione corrente e fino a *crecMax* (se non è 0), viene restituito nella lunghezza senza segno a cui punta *pcrec*.
+| <p>Codice restituito</p> | <p>Descrizione</p> | 
+|--------------------|--------------------|
+| <p>JET_errSuccess</p> | <p>Operazione riuscita.</p> | 
+| <p>JET_errClientRequestToStopJetService</p> | <p>L'operazione non può essere completata perché tutte le attività nell'istanza associata alla sessione sono scadute in seguito a una chiamata a <a href="gg269240(v=exchg.10).md">JetStopService.</a></p> | 
+| <p>JET_errInstanceUnavailable</p> | <p>L'operazione non può essere completata perché l'istanza associata alla sessione ha rilevato un errore irreversibile che richiede la revoca dell'accesso a tutti i dati per proteggere l'integrità di questi dati.</p><p><strong>Windows XP:</strong>  Questo valore restituito è stato introdotto in Windows XP.</p> | 
+| <p>JET_errNoCurrentRecord</p> | <p>Il cursore non si trova attualmente in un record e la tabella non è vuota.</p><p><strong>Windows XP, Windows Server 2003, Windows 2000 Server e Windows 2000 Professional:</strong>  Se il cursore è posizionato in corrispondenza di un indice vuoto o di un intervallo di indici, <strong>JetIndexRecordCount</strong> restituisce erroneamente JET_errNoCurrentRecord.</p> | 
+| <p>JET_errNotInitialized</p> | <p>Impossibile completare l'operazione perché l'istanza associata alla sessione non è ancora stata inizializzata.</p> | 
+| <p>JET_errRestoreInProgress</p> | <p>Impossibile completare l'operazione perché è in corso un'operazione di ripristino nell'istanza associata alla sessione.</p> | 
+| <p>JET_errSessionSharingViolation</p> | <p>La stessa sessione non può essere usata per più thread contemporaneamente.</p><p><strong>Windows XP:</strong>  Questo valore restituito è stato introdotto in Windows XP.</p> | 
+| <p>JET_errTermInProgress</p> | <p>Impossibile completare l'operazione perché è in corso l'arresto dell'istanza associata alla sessione.</p> | 
 
-Se questa funzione ha esito negativo, non viene apportata alcuna modifica alla memoria allocata in *precpos*.
+
+
+Se questa funzione ha esito positivo, il numero esatto di voci di indice, inclusa la posizione corrente e fino a *crecMax* (se non è 0), viene restituito nell'oggetto unsigned long a cui punta *pcrec*.
+
+Se questa funzione ha esito negativo, non vengono apportate modifiche alla memoria allocata *in corrispondenza di precpos*.
 
 #### <a name="remarks"></a>Commenti
 
-Se la tabella non è vuota, il cursore deve essere posizionato sul record dal quale iniziare il conteggio. Il conteggio includerà questo record e verrà conteggiato fino al limite specificato in *crecMax*. Se *crecMax* è 0, l'operazione continuerà a contare fino alla fine dell'indice.
+Se la tabella non è vuota, il cursore deve essere posizionato sul record da cui iniziare il conteggio. Il conteggio includerà questo record e verrà conteggiato in avanti fino al limite specificato in *crecMax*. Se *crecMax è* 0, l'operazione continuerà a contare fino alla fine dell'indice.
 
-Gli intervalli di indice possono essere utilizzati per creare limitazioni di fine Indice artificiali per il conteggio. In questo modo, è possibile conteggiare esattamente intervalli secondari di un indice. Il cursore deve essere posizionato sulla prima riga nell'intervallo. È necessario impostare la fine della chiave di intervallo, quindi utilizzare [JetSetIndexRange](./jetsetindexrange-function.md) per impostare l'intervallo superiore, in modo inclusivo o esclusivo. Infine, è necessario chiamare **JetIndexRecordCount** per contare esattamente l'intervallo.
+Gli intervalli di indici possono essere usati per costruire limitazioni artificiali di fine indice per il conteggio. In questo modo, gli intervallo secondari di un indice possono essere conteggiati esattamente. Il cursore deve essere posizionato sulla prima riga dell'intervallo. È necessario impostare la fine della chiave dell'intervallo e quindi [usare JetSetIndexRange](./jetsetindexrange-function.md) per impostare l'intervallo superiore, in modo inclusivo o esclusivo. Infine, **è necessario chiamare JetIndexRecordCount** per contare esattamente l'intervallo.
 
-**JetIndexRecordCount** rispetta la semantica delle transazioni e restituisce un conteggio accurato per questa particolare sessione nello stato transazionale corrente.
+**JetIndexRecordCount** rispetta la semantica delle transazioni e restituisce un conteggio accurato per questa sessione specifica nello stato transazionale corrente.
 
-**JetIndexRecordCount** accede alle pagine foglia dell'indice per conteggiare esattamente le voci. Di conseguenza, può eseguire una grande quantità di operazioni di I/O e può essere lenta. Per evitare un carico eccessivo, è necessario utilizzare la limitazione *crecMax* . Se un intervallo è di grandi dimensioni, potrebbe essere possibile contare l'intervallo in modo approssimativo usando [JetGetRecordPosition](./jetgetrecordposition-function.md).
+**JetIndexRecordCount accede** alle pagine foglia dell'indice per contare esattamente le voci. Di conseguenza, può eseguire una grande quantità di operazioni di I/O e può essere lento. La *limitazione crecMax* deve essere usata per evitare un carico eccessivo. Se un intervallo è grande, potrebbe essere possibile contare l'intervallo in modo approssimativo usando [JetGetRecordPosition.](./jetgetrecordposition-function.md)
 
-**Windows XP, Windows server 2003, windows 2000 Server e windows 2000 Professional:**  Se il cursore è posizionato in corrispondenza di un indice o di un intervallo di indici vuoti, **JetIndexRecordCount** restituisce erroneamente JET_errNoCurrentRecord anziché restituire un numero di record pari a zero. L'applicazione deve verificare se l'indice o l'intervallo di indici è vuoto in questo caso.
+**Windows XP, Windows Server 2003, Windows 2000 Server e Windows 2000 Professional:**  Se il cursore è posizionato in corrispondenza di un indice vuoto o di un intervallo di indici, **JetIndexRecordCount** restituisce erroneamente JET_errNoCurrentRecord anziché restituire un numero di record pari a zero. In questo caso, l'applicazione deve verificare se l'indice o l'intervallo di indici è vuoto.
 
 #### <a name="requirements"></a>Requisiti
 
-<table>
-<colgroup>
-<col style="width: 50%" />
-<col style="width: 50%" />
-</colgroup>
-<tbody>
-<tr class="odd">
-<td><p><strong>Client</strong></p></td>
-<td><p>Richiede Windows Vista, Windows XP o Windows 2000 Professional.</p></td>
-</tr>
-<tr class="even">
-<td><p><strong>Server</strong></p></td>
-<td><p>Richiede Windows Server 2008, Windows Server 2003 o Windows 2000 Server.</p></td>
-</tr>
-<tr class="odd">
-<td><p><strong>Intestazione</strong></p></td>
-<td><p>Dichiarata in esent. h.</p></td>
-</tr>
-<tr class="even">
-<td><p><strong>Libreria</strong></p></td>
-<td><p>Usare ESENT. lib.</p></td>
-</tr>
-<tr class="odd">
-<td><p><strong>DLL</strong></p></td>
-<td><p>Richiede ESENT.dll.</p></td>
-</tr>
-</tbody>
-</table>
+
+| | | <p><strong>Client</strong></p> | <p>Richiede Windows Vista, Windows XP o Windows 2000 Professional.</p> | | <p><strong>Server</strong></p> | <p>Richiede Windows Server 2008, Windows Server 2003 o Windows 2000 Server.</p> | | <p><strong>Intestazione</strong></p> | <p>Dichiarato in Esent.h.</p> | | <p><strong>Libreria</strong></p> | <p>Usare ESENT.lib.</p> | | <p><strong>DLL</strong></p> | <p>Richiede ESENT.dll.</p> | 
+
 
 
 #### <a name="see-also"></a>Vedere anche

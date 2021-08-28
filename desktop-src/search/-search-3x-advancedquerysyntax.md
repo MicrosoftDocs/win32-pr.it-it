@@ -1,19 +1,19 @@
 ---
-description: Sintassi di query avanzata (AQS) è la sintassi di query predefinita usata da Windows ricerca per eseguire query sull'indice e per perfezionare e restringere i parametri di ricerca.
+description: Advanced Query Syntax (AQS) è la sintassi di query predefinita usata da Windows Ricerca per eseguire query sull'indice e per perfezionare e restringere i parametri di ricerca.
 ms.assetid: 76e33903-d063-48c0-9afe-912c3daa8237
 title: Uso della sintassi di query avanzata a livello di codice
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 0ebde3119199d84f67315c2db73343d5dffc58ad
-ms.sourcegitcommit: 61a4c522182aa1cacbf5669683d9570a3bf043b2
+ms.openlocfilehash: 24e480866120289605a7465af96d8aaa8dc2beda
+ms.sourcegitcommit: c276a8912787b2cda74dcf54eb96df961bb1188b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/26/2021
-ms.locfileid: "122880695"
+ms.lasthandoff: 08/20/2021
+ms.locfileid: "122627227"
 ---
 # <a name="using-advanced-query-syntax-programmatically"></a>Uso della sintassi di query avanzata a livello di codice
 
-Sintassi di query avanzata (AQS) è la sintassi di query predefinita usata da Windows ricerca per eseguire query sull'indice e per perfezionare e restringere i parametri di ricerca. AQS viene utilizzato dagli sviluppatori per compilare query a livello di codice (e dagli utenti per restringere i parametri di ricerca). L'AQS canonico è stato introdotto Windows 7 e deve essere usato in Windows 7 e versioni successive per generare query AQS a livello di codice.
+Advanced Query Syntax (AQS) è la sintassi di query predefinita usata da Windows Ricerca per eseguire query sull'indice e per perfezionare e restringere i parametri di ricerca. AQS viene utilizzato dagli sviluppatori per compilare query a livello di codice (e dagli utenti per restringere i parametri di ricerca). L'AQS canonico è stato introdotto Windows 7 e deve essere usato in Windows 7 e versioni successive per generare query AQS a livello di codice.
 
 Questo argomento è organizzato come segue:
 
@@ -50,7 +50,7 @@ Una query è costituita da query di base connesse con AND, OR e NOT, come illust
 
 Se una query ha due o più utilizzi di AND o OR, verrà eseguita l'associazione da sinistra a destra, indipendentemente dal fatto che sia AND o OR. Ovvero, la query "apple AND pear OR prugna" verrà interpretata come se fosse scritta come "(apple AND pear) OR prugna" e la query "apple OR pear AND plum", verrà interpretata come se fosse scritta come "(apple OR pear) AND prugna". Pertanto, se un documento contiene la parola prugna, ma né apple, né pera, la prima query lo restituirà, ma la seconda query non lo restituirà. È quindi consigliabile usare parentesi esplicite per qualsiasi query che combina AND e OR per evitare errori o fraintendenze.
 
-Una query di base cerca gli elementi che soddisfano una restrizione su una proprietà. L'unica parte richiesta di una query di base è la restrizione o il valore di ricerca. Se non si specifica una proprietà, Windows ricerca cerca tutte le proprietà. &lt;restr &gt; rappresenta la restrizione di ricerca.
+Una query di base cerca gli elementi che soddisfano una restrizione su una proprietà. L'unica parte richiesta di una query di base è la restrizione o il valore di ricerca. Se non si specifica una proprietà, Windows ricerca cerca tutte le proprietà. <restr> rappresenta la restrizione di ricerca.
 
 Sono validi i moduli seguenti per una query di base:
 
@@ -138,7 +138,7 @@ System.Size:>1kb
 
 ### <a name="properties"></a>Proprietà
 
-Le proprietà sono indicate da una parola chiave, che può essere un nome di proprietà canonico in Windows 7 e versioni successive. AQS nell'interfaccia Windows può usare l'etichetta anziché il nome canonico della proprietà, ad esempio author anziché [System.Author](../properties/props-system-author.md). In Windows Vista e versioni precedenti era possibile usare etichette in inglese indipendentemente dalla lingua dell'interfaccia utente. In Windows 7 e versioni successive, Windows ricerca riconosce le parole chiave solo nella lingua dell'interfaccia utente predefinita corrente.
+Le proprietà sono definite da una parola chiave, che può essere un nome di proprietà canonico in Windows 7 e versioni successive. AQS nell'interfaccia Windows può usare l'etichetta anziché il nome canonico della proprietà, ad esempio author anziché [System.Author](../properties/props-system-author.md). In Windows Vista e versioni precedenti era possibile usare etichette in inglese indipendentemente dalla lingua dell'interfaccia utente. In Windows 7 e versioni successive, Windows ricerca riconosce le parole chiave solo nella lingua dell'interfaccia utente predefinita corrente.
 
 ### <a name="support-for-custom-properties"></a>Supporto per le proprietà personalizzate
 
@@ -148,7 +148,7 @@ In Windows Vista e versioni precedenti, le proprietà personalizzate non erano d
 
 A Windows 8, le proprietà DateTime (ad esempio [System.DateModified](../properties/props-system-datemodified.md)) supportano il formato di data e ora canonico specificato da [ISO-8601,](https://www.w3.org/TR/NOTE-datetime)includendo facoltativamente il fuso orario UTC.
 
--   **Windows 8 e precedenti, data-ora** senza fuso orario UTC: *AAAA* - *MM* - *GGThh*:*mm*:*ss*
+-   **Windows 8 e precedenti, data-ora senza fuso orario UTC:** *AAAA* - *MM* - *GGThh*:*mm*:*ss*
 
     Questo formato specifica un'ora locale, indipendentemente dalle impostazioni locali dell'utente o del sistema.
 
@@ -158,10 +158,10 @@ A Windows 8, le proprietà DateTime (ad esempio [System.DateModified](../propert
 
 ## <a name="keyword-use-in-local-languages"></a>Uso di parole chiave nelle lingue locali
 
-In Windows 7 e versioni successive, le parole chiave mnemoniche funzionano solo nella lingua del sistema, ad esempio parole chiave tedesche solo in un sistema operativo tedesco e parole chiave in inglese solo in un sistema operativo in lingua inglese. [System.Author](../properties/props-system-author.md) è una parola chiave canonica e il valore mnemonico per la proprietà System.Author è Author, ad esempio. L'introduzione di parole chiave canoniche compensa il fatto che le parole chiave mnemoniche in inglese non sono più universalmente riconosciute in tutti i sistemi operativi indipendentemente dalla lingua, come è stato fatto in Windows Vista e versioni precedenti.
+In Windows 7 e versioni successive, le parole chiave mnemoniche funzionano solo nella lingua del sistema, ad esempio parole chiave tedesche solo in un sistema operativo tedesco e parole chiave in inglese solo in un sistema operativo in lingua inglese. [System.Author](../properties/props-system-author.md) è una parola chiave canonica e il valore mnemonico per la proprietà System.Author è Author, ad esempio. L'introduzione di parole chiave canoniche compensa il fatto che le parole chiave mnemoniche dell'inglese non sono più universalmente riconosciute in tutti i sistemi operativi indipendentemente dalla lingua, come nel caso di Windows Vista e versioni precedenti.
 
 > [!Note]  
-> In Windows 7 e versioni successive, Windows Ricerca riconosce le parole chiave solo nella lingua predefinita corrente e non in inglese, a meno che l'inglese non sia l'impostazione predefinita corrente. È consigliabile che gli sviluppatori usino sempre la sintassi canonica in modo che l'applicazione non abbia problemi di linguaggio con le parole chiave.
+> In Windows 7 e versioni successive, Windows ricerca riconosce le parole chiave solo nella lingua predefinita corrente e non in inglese, a meno che l'inglese non sia l'impostazione predefinita corrente. È consigliabile che gli sviluppatori usino sempre la sintassi canonica in modo che l'applicazione non abbia problemi di linguaggio con le parole chiave.
 
  
 
@@ -184,7 +184,7 @@ Le convenzioni per la sintassi delle parole chiave canoniche sono le seguenti:
     -   `System.FileCount:>100`
 
 > [!Note]  
-> Non esiste una sintassi canonica per i numeri Windows 7 e versioni successive. Poiché i formati a virgola mobile variano a seconda delle impostazioni locali, l'uso di una query canonica che include una costante a virgola mobile non è supportato. Le costanti integer, al contrario, possono essere scritte usando solo cifre (nessun separatore per migliaia) e possono essere usate in modo sicuro nelle query canoniche Windows 7 e versioni successive.
+> Non esiste una sintassi canonica per i numeri Windows 7 e versioni successive. Poiché i formati a virgola mobile variano a seconda delle impostazioni locali, l'uso di una query canonica che include una costante a virgola mobile non è supportato. Le costanti integer, al contrario, possono essere scritte usando solo cifre (senza separatori per migliaia) e possono essere usate in modo sicuro nelle query canoniche in Windows 7 e versioni successive.
 
  
 
@@ -209,7 +209,7 @@ Per altre informazioni sulle proprietà canoniche e sul sistema di proprietà in
 
 ### <a name="query-operators"></a>Operatori di query
 
-Se una proprietà, p, ha più valori per un elemento, una query AQS per p: restr restituisce l'elemento se restr è true per almeno &lt; &gt; uno dei &lt; &gt; valori.  ( &lt; restr &gt; rappresenta una restrizione.
+Se una proprietà, p, ha più valori per un elemento, una query AQS per p: restituisce l'elemento se è true per almeno <restr> <restr> uno dei valori.  ( <restr> rappresenta una restrizione).
 
 La sintassi elencata nella tabella seguente è costituita da un operatore, un simbolo dell'operatore, un esempio e una descrizione di esempio. L'operatore e il simbolo possono essere usati in qualsiasi linguaggio e inclusi in qualsiasi query. Non usare gli operatori COP \_ IMPLICIT o COP APPLICATION \_ \_ SPECIFIC. Alcuni operatori hanno simboli intercambiabili.
 
@@ -408,7 +408,7 @@ Oltre a eseguire ricerche in date e intervalli di date specifici, AQS riconosce 
 
 ## <a name="scope-restrictions"></a>Restrizioni di ambito
 
-Gli utenti possono limitare l'ambito delle ricerche a percorsi di cartelle o archivi dati specifici. Ad esempio, se si usano diversi account di posta elettronica e si vuole limitare una query a Microsoft Outlook o Microsoft Outlook Express, è possibile usare o `System.Search.Store:mapi` `System.Search.Store:oe` rispettivamente. La tabella seguente illustra alcuni esempi di come limitare una ricerca in base all'archivio dati.
+Gli utenti possono limitare l'ambito delle ricerche a percorsi di cartelle o archivi dati specifici. Ad esempio, se si usano più account di posta elettronica e si vuole limitare una query a Microsoft Outlook o Microsoft Outlook Express, è possibile usare o `System.Search.Store:mapi` `System.Search.Store:oe` rispettivamente. La tabella seguente illustra alcuni esempi di come limitare una ricerca in base all'archivio dati.
 
 
 

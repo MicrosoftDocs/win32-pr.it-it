@@ -6,12 +6,12 @@ keywords:
 - SSL in modalità kernel
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 3c9dcfeb87b1a98539d7bd6a3b8b82dcfd5ee41fc9ad4c4c306f4c399aebd18a
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: fdfbc66e72f4e3e79c53207cbe9f4b77d3887b36
+ms.sourcegitcommit: 9b5faa61c38b2d0c432b7f2dbee8c127b0e28a7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "118393919"
+ms.lasthandoff: 08/19/2021
+ms.locfileid: "122475497"
 ---
 # <a name="kernel-mode-ssl"></a>SSL in modalità kernel
 
@@ -24,7 +24,7 @@ Le sezioni seguenti descrivono il supporto SSL in modalità kernel:
 
 ## <a name="kernel-modes-ssl-in-windows-server-2003-with-sp1"></a>Modalità kernel SSL in Windows Server 2003 con SP1
 
-In Windows Server 2003 con SP1, l'API server HTTP offre la possibilità di eseguire la sicurezza SSL in modalità kernel (la modalità utente SSL è l'impostazione predefinita). La funzionalità modalità kernel migliora le prestazioni SSL spostando le operazioni di crittografia e decrittografia nel kernel, riducendo così il numero di transizioni tra la modalità kernel e la modalità utente.
+In Windows Server 2003 con SP1, l'API server HTTP offre la possibilità di eseguire la sicurezza SSL in modalità kernel (ssl in modalità utente è l'impostazione predefinita). La funzionalità modalità kernel migliora le prestazioni SSL spostando le operazioni di crittografia e decrittografia nel kernel, riducendo così il numero di transizioni tra la modalità kernel e la modalità utente.
 
 Le funzionalità seguenti non sono supportate quando SSL viene eseguito in modalità kernel:
 
@@ -80,37 +80,13 @@ Nella tabella seguente sono elencati i valori di configurazione del Registro di 
 
 
 
-<table>
-<colgroup>
-<col style="width: 50%" />
-<col style="width: 50%" />
-</colgroup>
-<thead>
-<tr class="header">
-<th>Valore del Registro di sistema</th>
-<th>Descrizione</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>EnableKernelSSL</td>
-<td><strong>Windows Server 2008 e Windows Vista:</strong> Questo valore del Registro di sistema è obsoleto.<br/></td>
-</tr>
-<tr class="even">
-<td>EnableSslCloseNotify</td>
-<td>Valore <strong>DWORD impostato</strong> su <strong>TRUE</strong> per abilitare la notifica di chiusura o <strong>FALSE</strong> per disabilitare il requisito close-notify. La notifica di chiusura è disabilitata per impostazione predefinita.<br/> Quando la notifica di chiusura è abilitata, l'applicazione client deve inviare un messaggio di notifica di chiusura prima di chiudere le connessioni TCP. L'API del server HTTP invia anche una notifica di chiusura prima di chiudere la connessione.<br/> Quando la notifica di chiusura è abilitata e il client invia un messaggio di notifica di chiusura, l'API del server HTTP riuserà la sessione SSL nelle connessioni future al client. Se il client non invia una notifica di chiusura, l'API server HTTP non riuserà la stessa sessione SSL nelle connessioni future. Di conseguenza, viene attivato un handshake SSL completo sulla nuova connessione, riducendo così le prestazioni. <br/>
-<blockquote>
-[!Note]<br />
-L'abilitazione della notifica di chiusura consente di ridurre gli attacchi di troncamento alle richieste e alle risposte HTTPS.
-</blockquote>
-<br/> <br/> Quando la notifica di chiusura è disabilitata, l'API del server HTTP riutilizza la sessione SSL per le connessioni future.<br/></td>
-</tr>
-<tr class="odd">
-<td>DisableSslCertChainCacheOnlyUrlRetrieval</td>
-<td>Valore <strong>DWORD</strong> impostato su <strong>TRUE per</strong> consentire all'API del server HTTP di recuperare certificati intermedi da Internet o dall'archivio locale oppure <strong>FALSE</strong> per recuperare i certificati intermedi solo dall'archivio locale. Il valore predefinito del Registro di sistema è <strong>FALSE.</strong><br/> Per impostazione predefinita, l'API server HTTP compila una catena di certificati client recuperando i certificati intermedi dall'archivio autorità di certificazione intermedia con l'account del computer locale. L'impostazione di questo valore su <strong>TRUE</strong> consente all'API del server HTTP di recuperare i certificati intermedi non solo dall'archivio locale, ma anche dall'autorità di certificazione intermedia su Internet.<br/></td>
-</tr>
-</tbody>
-</table>
+
+| Valore del Registro di sistema | Descrizione | 
+|----------------|-------------|
+| EnableKernelSSL | <strong>Windows Server 2008 e Windows Vista:</strong> Questo valore del Registro di sistema è obsoleto.<br /> | 
+| EnableSslCloseNotify | Valore <strong>DWORD impostato</strong> su <strong>TRUE</strong> per abilitare la notifica di chiusura o <strong>FALSE</strong> per disabilitare il requisito close-notify. La notifica di chiusura è disabilitata per impostazione predefinita.<br /> Quando la notifica di chiusura è abilitata, l'applicazione client deve inviare un messaggio di notifica di chiusura prima di chiudere le connessioni TCP. L'API del server HTTP invia anche una notifica di chiusura prima di chiudere la connessione.<br /> Quando la notifica di chiusura è abilitata e il client invia un messaggio di notifica di chiusura, l'API server HTTP riutilizzerà la sessione SSL nelle connessioni future al client. Se il client non invia una notifica di chiusura, l'API del server HTTP non riuserà la stessa sessione SSL nelle connessioni future. Di conseguenza, viene attivato un handshake SSL completo sulla nuova connessione, riducendo così le prestazioni. <br /><blockquote>[!Note]<br />L'abilitazione della notifica di chiusura consente di attenuare gli attacchi di troncamento alle richieste e alle risposte HTTPS.</blockquote><br /><br /> Quando la notifica di chiusura è disabilitata, l'API del server HTTP riutilizza la sessione SSL per le connessioni future.<br /> | 
+| DisableSslCertChainCacheOnlyUrlRetrieval | Valore <strong>DWORD</strong> impostato su <strong>TRUE per</strong> consentire all'API del server HTTP di recuperare certificati intermedi da Internet o dall'archivio locale oppure <strong>FALSE</strong> per recuperare i certificati intermedi solo dall'archivio locale. Il valore predefinito del Registro di sistema è <strong>FALSE.</strong><br /> Per impostazione predefinita, l'API server HTTP compila una catena di certificati client recuperando i certificati intermedi dall'archivio autorità di certificazione intermedia nell'account del computer locale. L'impostazione di questo valore su <strong>TRUE</strong> consente all'API del server HTTP di recuperare i certificati intermedi non solo dall'archivio locale, ma anche dall'autorità di certificazione intermedia su Internet.<br /> | 
+
 
 
 

@@ -13,12 +13,12 @@ api_type:
 ms.topic: reference
 ms.date: 05/31/2018
 api_location: ''
-ms.openlocfilehash: 66df429785a9fb90d2de8c89d23792c1754e2fde8eeb4770912e65a41a622c3a
-ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
+ms.openlocfilehash: 079ae2680a2610993c3cd54ac64afdfcbafa25c9
+ms.sourcegitcommit: c276a8912787b2cda74dcf54eb96df961bb1188b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119855041"
+ms.lasthandoff: 08/20/2021
+ms.locfileid: "122627467"
 ---
 # <a name="include-directive"></a>\#Direttiva include
 
@@ -46,8 +46,8 @@ La differenza tra le due forme di sintassi è l'ordine in cui il preprocessore c
 
 <table>
 <colgroup>
-<col style="width: 50%" />
-<col style="width: 50%" />
+<col  />
+<col  />
 </colgroup>
 <thead>
 <tr class="header">

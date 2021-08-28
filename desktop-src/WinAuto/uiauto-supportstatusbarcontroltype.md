@@ -3,7 +3,7 @@ title: Tipo di controllo StatusBar
 description: Questo argomento fornisce informazioni sul supporto di Microsoft Automazione interfaccia utente per il tipo di controllo StatusBar.
 ms.assetid: a28df0a1-95a8-4941-a00d-1f5570589626
 keywords:
-- Automazione interfaccia utente, supporto per il tipo di controllo StatusBar
+- Automazione interfaccia utente,supporto per il tipo di controllo StatusBar
 - Automazione interfaccia utente, tipo di controllo StatusBar
 - Automazione interfaccia utente,struttura ad albero per il tipo di controllo StatusBar
 - Automazione interfaccia utente,proprietà per il tipo di controllo StatusBar
@@ -21,12 +21,12 @@ keywords:
 - tipi di controllo, StatusBar
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: f52f3f04db86a8c8ff0e9cad9a3938a17e996e8210960912c3abc5039468e178
-ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
+ms.openlocfilehash: 032c0122bc472a8b2deace8cc48d41926778a11b
+ms.sourcegitcommit: 9b5faa61c38b2d0c432b7f2dbee8c127b0e28a7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119614251"
+ms.lasthandoff: 08/19/2021
+ms.locfileid: "122473697"
 ---
 # <a name="statusbar-control-type"></a>Tipo di controllo StatusBar
 
@@ -34,7 +34,7 @@ Questo argomento fornisce informazioni sul supporto di Microsoft Automazione int
 
 In un controllo barra di stato sono in genere presenti informazioni su un oggetto visualizzato in una finestra di un'applicazione, i componenti dell'oggetto o informazioni contestuali collegate alle operazioni di tale oggetto all'interno dell'applicazione.
 
-Le sezioni seguenti definiscono la struttura ad Automazione interfaccia utente struttura ad albero, le proprietà, i pattern di controllo e gli eventi per il **tipo di controllo StatusBar.** I Automazione interfaccia utente di controllo si applicano a tutti i controlli barra di stato in cui il framework o la piattaforma dell'interfaccia utente Automazione interfaccia utente il supporto per i tipi di controllo e i pattern di controllo.
+Le sezioni seguenti definiscono la struttura ad Automazione interfaccia utente struttura ad albero, le proprietà, i pattern di controllo e gli eventi per il **tipo di controllo StatusBar.** I Automazione interfaccia utente di controllo si applicano a tutti i controlli barra di stato in cui il framework o la piattaforma dell'interfaccia utente si integra Automazione interfaccia utente per i tipi di controllo e i pattern di controllo.
 
 In questo argomento sono contenute le sezioni seguenti.
 
@@ -47,44 +47,15 @@ In questo argomento sono contenute le sezioni seguenti.
 
 ## <a name="typical-tree-structure"></a>Struttura ad albero tipica
 
-La tabella seguente illustra un controllo tipico e una visualizzazione contenuto dell'albero Automazione interfaccia utente relativo ai controlli barra di stato e descrive cosa può essere contenuto in ogni visualizzazione. Per altre informazioni sull'albero Automazione interfaccia utente, vedere panoramica Automazione interfaccia utente [albero.](uiauto-treeoverview.md)
+La tabella seguente illustra un controllo tipico e una visualizzazione contenuto dell'albero Automazione interfaccia utente relativo ai controlli barra di stato e descrive gli elementi che possono essere contenuti in ogni visualizzazione. Per altre informazioni sull'albero Automazione interfaccia utente, vedere panoramica [Automazione interfaccia utente albero.](uiauto-treeoverview.md)
 
 
 
-<table>
-<colgroup>
-<col style="width: 50%" />
-<col style="width: 50%" />
-</colgroup>
-<thead>
-<tr class="header">
-<th>Visualizzazione controlli</th>
-<th>Visualizzazione contenuto</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td><ul>
-<li>StatusBar
-<ul>
-<li>Edit (0 o più)</li>
-<li>ProgressBar (0 o più)</li>
-<li>Image (0 o più)</li>
-<li>Button (0 o più)</li>
-</ul></li>
-</ul></td>
-<td><ul>
-<li>StatusBar
-<ul>
-<li>Edit (0 o più)</li>
-<li>ProgressBar (0 o più)</li>
-<li>Image (0 o più)</li>
-<li>Button (0 o più)</li>
-</ul></li>
-</ul></td>
-</tr>
-</tbody>
-</table>
+
+| Visualizzazione controlli | Visualizzazione contenuto | 
+|--------------|--------------|
+| <ul><li>StatusBar<ul><li>Edit (0 o più)</li><li>ProgressBar (0 o più)</li><li>Image (0 o più)</li><li>Button (0 o più)</li></ul></li></ul> | <ul><li>StatusBar<ul><li>Edit (0 o più)</li><li>ProgressBar (0 o più)</li><li>Image (0 o più)</li><li>Button (0 o più)</li></ul></li></ul> | 
+
 
 
 
@@ -96,13 +67,13 @@ La tabella seguente elenca le proprietà Automazione interfaccia utente il cui v
 
 
 
-| Proprietà di automazione interfaccia utente                                                                                              | Valore         | Note                                                                                                                                                                                                               |
+| Proprietà di automazione interfaccia utente                                                                                              | valore         | Note                                                                                                                                                                                                               |
 |---------------------------------------------------------------------------------------------------------------------|---------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | [**UIA \_ AutomationIdPropertyId**](uiauto-automation-element-propids.md)                 | Vedere le note.    | Il valore di questa proprietà deve essere univoco tra tutti gli elementi peer nella visualizzazione non elaborata dell'Automazione interfaccia utente albero.                                                                                                        |
 | [**UIA \_ BoundingRectanglePropertyId**](uiauto-automation-element-propids.md)       | Vedere le note.    | Il rettangolo di delimitazione di una barra di stato deve includere tutti i controlli in esso contenuti.                                                                                                                      |
-| [**UIA \_ ClickablePointPropertyId**](uiauto-automation-element-propids.md)             | Vedere le note.    | Supportata se è presente un rettangolo di delimitazione. Se sono presenti aree all'interno del rettangolo di delimitazione che non sono selezionabili e l'elemento esegue un hit testing specializzato, eseguire l'override di questo metodo e fornire un punto selezionabile. |
+| [**UIA \_ ClickablePointPropertyId**](uiauto-automation-element-propids.md)             | Vedere le note.    | Supportata se è presente un rettangolo di delimitazione. Se sono presenti aree all'interno del rettangolo di delimitazione che non sono selezionabili e l'elemento esegue un hit testing specializzato, eseguire l'override di questo oggetto e fornire un punto selezionabile. |
 | [**UIA \_ ControlTypePropertyId**](uiauto-automation-element-propids.md)                   | **StatusBar** |                                                                                                                                                                                                                     |
-| [**IsContentElementPropertyId dell'interfaccia \_ utente**](uiauto-automation-element-propids.md)         | true          | Il controllo barra di stato è sempre incluso nella visualizzazione contenuto dell'Automazione interfaccia utente albero.                                                                                                                            |
+| [**\_IsContentElementPropertyId dell'interfaccia utente**](uiauto-automation-element-propids.md)         | true          | Il controllo barra di stato è sempre incluso nella visualizzazione contenuto dell'Automazione interfaccia utente albero.                                                                                                                            |
 | [**UIA \_ IsControlElementPropertyId**](uiauto-automation-element-propids.md)         | true          | Il controllo barra di stato è sempre incluso nella visualizzazione controlli dell'Automazione interfaccia utente albero.                                                                                                                            |
 | [**UIA \_ IsKeyboardFocusablePropertyId**](uiauto-automation-element-propids.md)   | Dipende da       | Se il controllo può ricevere lo stato attivo, deve supportare questa proprietà.                                                                                                                                           |
 | [**UIA \_ IsOffscreenPropertyId**](uiauto-automation-element-propids.md)                   | Dipende da       | Se un controllo barra di stato non è attualmente visibile, restituirà TRUE per questa proprietà.                                                                                                                            |
@@ -135,7 +106,7 @@ La tabella seguente elenca gli eventi Automazione interfaccia utente che i contr
 
 
 
-| Automazione interfaccia utente evento                                                                                                                   | Note                                                                             |
+| Automazione interfaccia utente eventi                                                                                                                   | Note                                                                             |
 |---------------------------------------------------------------------------------------------------------------------------------------|-----------------------------------------------------------------------------------|
 | [**UIA \_ AutomationFocusChangedEventId**](uiauto-event-ids.md)                                      |                                                                                   |
 | [**Interfaccia \_ utente Evento di modifica della proprietà BoundingRectanglePropertyId.**](uiauto-automation-element-propids.md) |                                                                                   |
@@ -149,7 +120,7 @@ La tabella seguente elenca gli eventi Automazione interfaccia utente che i contr
 
 ## <a name="remarks"></a>Commenti
 
-È consigliabile usare i controlli di modifica come elementi della griglia figlio in una barra di stato. L'uso dei controlli di modifica semplifica l'associazione dello scopo del campo di stato al relativo valore usando il nome dell'elemento e la proprietà value. Poiché i controlli di testo non devono supportare il pattern di controllo **Value,** non devono essere usati come elementi della griglia figlio.
+È consigliabile usare i controlli di modifica come elementi figlio della griglia in una barra di stato. L'uso dei controlli di modifica rende più semplice associare lo scopo del campo di stato al relativo valore usando il nome dell'elemento e la proprietà value. Poiché i controlli di testo non devono supportare il pattern di controllo **Value,** non devono essere usati come elementi figlio della griglia.
 
 ## <a name="related-topics"></a>Argomenti correlati
 

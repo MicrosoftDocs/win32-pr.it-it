@@ -1,19 +1,19 @@
 ---
-description: <depth>L'elemento specifica se l'ambito del connettore di ricerca deve includere URL figlio. I valori consentiti sono Deep e Shallow. Questo elemento non ha elementi figlio e nessun attributo.
+description: "&lt;L'elemento depth specifica se l'ambito del connettore di &gt; ricerca deve includere URL figlio. I valori consentiti sono Deep e Shallow. Questo elemento non ha elementi figlio e nessun attributo."
 ms.assetid: 859decab-cbe3-4cec-b37c-6d0e7c353876
 title: Elemento depth (schema del connettore di ricerca)
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 245156088cd68fcf67103c18b987a9b459b0b760b3a04a1ced817badd25aada8
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 430ad3d047331a4bb3ffc58bd134d2364aaa0838
+ms.sourcegitcommit: 61a4c522182aa1cacbf5669683d9570a3bf043b2
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "117862526"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "122886771"
 ---
 # <a name="depth-element-search-connector-schema"></a>Elemento depth (schema del connettore di ricerca)
 
-<depth>L'elemento specifica se l'ambito del connettore di ricerca deve includere URL figlio. I valori consentiti sono `Deep` e `Shallow`. Questo elemento non ha elementi figlio e nessun attributo.
+&lt;L'elemento depth specifica se l'ambito del connettore di &gt; ricerca deve includere URL figlio. I valori consentiti sono `Deep` e `Shallow`. Questo elemento non ha elementi figlio e nessun attributo.
 
 ## <a name="syntax"></a>Sintassi
 
@@ -68,11 +68,11 @@ ms.locfileid: "117862526"
 
 ## <a name="remarks"></a>Commenti
 
-Se la profondità è approfondita, gli utenti possono esplorare o cercare elementi a livello di URL di scopeItem o all'interno di qualsiasi URL figlio.
+Se la profondità è profonda, gli utenti possono esplorare o cercare elementi nel livello URL dell'elemento scopeItem o all'interno di qualsiasi URL figlio.
 
 ## <a name="example"></a>Esempio
 
-L'esempio seguente illustra un ambito di ricerca che include C: CartellaA e tutte le relative cartelle figlio e \\ C: \\ CartellaB ma nessuna delle relative cartelle figlio.
+L'esempio seguente illustra un ambito di ricerca che include C: FolderA e tutte le relative cartelle figlio e \\ C: \\ FolderB ma nessuna delle relative cartelle figlio.
 
 
 ```

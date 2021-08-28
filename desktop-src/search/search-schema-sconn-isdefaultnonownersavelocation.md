@@ -1,19 +1,19 @@
 ---
-description: L'elemento booleano facoltativo <isDefaultNonOwnerSaveLocation> specifica se il percorso descritto nel connettore di ricerca deve essere utilizzato come percorso di salvataggio predefinito quando un utente di un altro computer in un gruppo Home sceglie di salvare un elemento.
+description: L'elemento booleano facoltativo &lt; isDefaultNonOwnerSaveLocation specifica se il percorso descritto nel connettore di ricerca deve essere usato come percorso di salvataggio predefinito quando un utente di un altro computer in un gruppo Home sceglie di salvare un &gt; elemento.
 ms.assetid: 4286b122-2454-4dc3-9c06-9967b7a763dd
 title: Elemento isDefaultNonOwnerSaveLocation (schema del connettore di ricerca)
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: edd39ab76ae1b99d6518ca40407d328f5da9778c
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 3e2a20912b10864d856bd4513e31a37eeee5c2a0
+ms.sourcegitcommit: 61a4c522182aa1cacbf5669683d9570a3bf043b2
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "106306083"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "122881933"
 ---
 # <a name="isdefaultnonownersavelocation-element-search-connector-schema"></a>Elemento isDefaultNonOwnerSaveLocation (schema del connettore di ricerca)
 
-L'elemento booleano facoltativo <isDefaultNonOwnerSaveLocation> specifica se il percorso descritto nel connettore di ricerca deve essere utilizzato come percorso di salvataggio predefinito quando un utente di un altro computer in un gruppo Home sceglie di salvare un elemento. Questo elemento non ha elementi figlio e nessun attributo.
+L'elemento booleano facoltativo &lt; isDefaultNonOwnerSaveLocation specifica se il percorso descritto nel connettore di ricerca deve essere usato come percorso di salvataggio predefinito quando un utente di un altro computer in un gruppo Home sceglie di salvare un &gt; elemento. Questo elemento non ha elementi figlio e nessun attributo.
 
 ## <a name="syntax"></a>Sintassi
 
@@ -47,7 +47,7 @@ L'elemento booleano facoltativo <isDefaultNonOwnerSaveLocation> specifica se il 
 
 ## <a name="remarks"></a>Commenti
 
-Se true, quando un utente di un altro computer in un gruppo Home sceglie di salvare un elemento, Esplora risorse Salva l'elemento nel percorso specificato nell' <simpleLocation> elemento.
+Se true, quando un utente di un altro computer in un gruppo Home sceglie di salvare un elemento, Windows Explorer salva l'elemento nel percorso specificato &lt; nell'elemento &gt; simpleLocation.
 
 ## <a name="example"></a>Esempio
 

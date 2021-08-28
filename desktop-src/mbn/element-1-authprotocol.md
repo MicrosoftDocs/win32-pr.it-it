@@ -16,20 +16,20 @@ api_location: ''
 topic_type:
 - APIRef
 - kbSyntax
-ms.openlocfilehash: 99a4b02ec173e070f4a6d615f3632f11f4949b64
-ms.sourcegitcommit: 4d4a6e9ad5de37e467cd3164276771b71e1f113f
+ms.openlocfilehash: 46840bf958688ff8a1a1da4a796c07bfe21bd89d
+ms.sourcegitcommit: 9b5faa61c38b2d0c432b7f2dbee8c127b0e28a7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/05/2021
-ms.locfileid: "106388855"
+ms.lasthandoff: 08/19/2021
+ms.locfileid: "122469408"
 ---
 # <a name="span-idwwan_profile_v4element_1_authprotocolspanmodemdmconfigprofileauthprotocol-v4"></a><span id="WWAN_profile_v4.element_1_AuthProtocol"></span>ModemDMConfigProfile \/ ... \/ AuthProtocol (v4)
 
->Specifica il protocollo di autenticazione da utilizzare per l'attivazione di un contesto del protocollo PDP (Packet Data Protocol).
+>Specifica il protocollo di autenticazione da utilizzare per l'attivazione di un contesto PDP (Packet Data Protocol).
 
-Si noti che in V4 è disponibile un nuovo valore di enumerazione per questo elemento. La **selezione di autoselezione** indica che un protocollo di autenticazione deve essere prelevato da uno o più livelli inferiori.
+Si noti che nella versione 4 è disponibile un nuovo valore di enumerazione per questo elemento. **La selezione** automatica indica che un protocollo di autenticazione deve essere selezionato dai livelli inferiori.
 
-Per ulteriori informazioni, vedere la documentazione per l'elemento V1 [**AuthProtocol**](./schema-authprotocol-contexttype-element.md) .
+Per altre informazioni, vedere la documentazione per l'elemento [**AuthProtocol**](./schema-authprotocol-contexttype-element.md) v1.
 
 ## <a name="element-hierarchy"></a>Gerarchia degli elementi
 
@@ -55,49 +55,27 @@ Per ulteriori informazioni, vedere la documentazione per l'elemento V1 [**AuthPr
 
 ### <a name="span-idattributesspanspan-idattributesspanattributes"></a><span id="attributes"></span><span id="ATTRIBUTES"></span>Attributi
 
-Nessuna.
+Nessuno.
 
 ### <a name="span-idchild_elementsspanspan-idchild_elementsspanspan-idchild_elementsspanchild-elements"></a><span id="Child_Elements"></span><span id="child_elements"></span><span id="CHILD_ELEMENTS"></span>Elementi figlio
 
-Nessuna.
+Nessuno.
 
 ### <a name="span-idparent_elementsspanspan-idparent_elementsspanparent-elements"></a><span id="parent_elements"></span><span id="PARENT_ELEMENTS"></span>Elementi padre
 
-<table>
-<colgroup>
-<col style="width: 50%" />
-<col style="width: 50%" />
-</colgroup>
-<thead>
-<tr class="header">
-<th>Elemento padre</th>
-<th>Descrizione</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td><a href="element-1-context.md">Contesto</a></td>
-<td><p>Specifica i parametri necessari per stabilire una connessione dati.</p></td>
-</tr>
-</tbody>
-</table>
+
+| Elemento padre | Descrizione | 
+|----------------|-------------|
+| <a href="element-1-context.md">Contesto</a> | <p>Specifica i parametri necessari per stabilire una connessione dati.</p> | 
+
 
  
 
 ## <a name="requirements"></a>Requisiti
 
-<table>
-<colgroup>
-<col style="width: 50%" />
-<col style="width: 50%" />
-</colgroup>
-<tbody>
-<tr class="odd">
-<td><p>Spazio dei nomi</p></td>
-<td><p>https://www.microsoft.com/networking/WWAN/profile/v4</p></td>
-</tr>
-</tbody>
-</table>
+
+| | | <p>Spazio dei nomi</p> | <p>https://www.microsoft.com/networking/WWAN/profile/v4</p> | 
+
 
  
 

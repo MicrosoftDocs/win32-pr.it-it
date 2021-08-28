@@ -5,7 +5,7 @@ ms.assetid: 6fc4a6a3-f5c0-402b-b9e7-870dfaa3370d
 keywords:
 - Automazione interfaccia utente,supporto per il tipo di controllo RadioButton
 - Automazione interfaccia utente,Tipo di controllo RadioButton
-- Automazione interfaccia utente,struttura ad albero per il tipo di controllo RadioButton
+- Automazione interfaccia utente struttura ad albero per il tipo di controllo RadioButton
 - Automazione interfaccia utente,proprietà per il tipo di controllo RadioButton
 - Automazione interfaccia utente,pattern di controllo per il tipo di controllo RadioButton
 - Automazione interfaccia utente,eventi per il tipo di controllo RadioButton
@@ -21,16 +21,16 @@ keywords:
 - tipi di controllo, RadioButton
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 358a71f74b40d8465c910f8afe258183c8ea4d5c322fb70e6b6ea946ef7d44ba
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: a854eec792943a6fc094796de1e3ea6849c6a5e2
+ms.sourcegitcommit: 9b5faa61c38b2d0c432b7f2dbee8c127b0e28a7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "118825484"
+ms.lasthandoff: 08/19/2021
+ms.locfileid: "122480637"
 ---
 # <a name="radiobutton-control-type"></a>Tipo di controllo RadioButton
 
-In questo argomento vengono fornite informazioni sul supporto Automazione interfaccia utente Microsoft per il **tipo di controllo RadioButton.**
+Questo argomento fornisce informazioni sul supporto di Microsoft Automazione interfaccia utente per il **tipo di controllo RadioButton.**
 
 Un pulsante di opzione è composto da un pulsante circolare e testo definito dall'applicazione (etichetta), un'icona o una bitmap che indica una scelta che l'utente può effettuare selezionando il pulsante. Un'applicazione usa in genere i pulsanti di opzione in una casella di gruppo per consentire all'utente di effettuare la scelta da un set di opzioni correlate che si escludono a vicenda. Ad esempio, l'applicazione potrebbe visualizzare un gruppo di pulsanti di opzione da cui l'utente può selezionare una preferenza di formato per il testo selezionato nell'area client. L'utente può selezionare un formato allineato a sinistra, a destra oppure centrato selezionando il pulsante di opzione corrispondente. In genere, l'utente può selezionare una sola opzione alla volta da un set di pulsanti di opzione.
 
@@ -39,7 +39,7 @@ Un pulsante di opzione è composto da un pulsante circolare e testo definito dal
 
  
 
-Le sezioni seguenti definiscono la struttura ad Automazione interfaccia utente struttura ad albero, le proprietà, i pattern di controllo e gli eventi per il **tipo di controllo RadioButton.** I Automazione interfaccia utente si applicano a tutti i controlli pulsante in cui il framework o la piattaforma dell'interfaccia utente Automazione interfaccia utente il supporto per i tipi di controllo e i pattern di controllo.
+Le sezioni seguenti definiscono la struttura ad Automazione interfaccia utente struttura ad albero, le proprietà, i pattern di controllo e gli eventi per il **tipo di controllo RadioButton.** I Automazione interfaccia utente si applicano a tutti i controlli pulsante in cui il framework o la piattaforma dell'interfaccia utente si integra Automazione interfaccia utente per i tipi di controllo e i pattern di controllo.
 
 In questo argomento sono contenute le sezioni seguenti.
 
@@ -52,32 +52,15 @@ In questo argomento sono contenute le sezioni seguenti.
 
 ## <a name="typical-tree-structure"></a>Struttura ad albero tipica
 
-La tabella seguente illustra un controllo tipico e una visualizzazione contenuto dell'albero Automazione interfaccia utente relativo ai controlli pulsante di opzione e descrive gli elementi che possono essere contenuti in ogni visualizzazione. Per altre informazioni sull'albero Automazione interfaccia utente, vedere panoramica Automazione interfaccia utente [albero.](uiauto-treeoverview.md)
+La tabella seguente illustra un controllo tipico e una visualizzazione contenuto dell'albero Automazione interfaccia utente relativo ai controlli pulsante di opzione e descrive cosa può essere contenuto in ogni visualizzazione. Per altre informazioni sull'albero Automazione interfaccia utente, vedere Automazione interfaccia utente [Tree Overview](uiauto-treeoverview.md).
 
 
 
-<table>
-<colgroup>
-<col style="width: 50%" />
-<col style="width: 50%" />
-</colgroup>
-<thead>
-<tr class="header">
-<th>Visualizzazione controlli</th>
-<th>Visualizzazione contenuto</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td><ul>
-<li>RadioButton</li>
-</ul></td>
-<td><ul>
-<li>RadioButton</li>
-</ul></td>
-</tr>
-</tbody>
-</table>
+
+| Visualizzazione controlli | Visualizzazione contenuto | 
+|--------------|--------------|
+| <ul><li>RadioButton</li></ul> | <ul><li>RadioButton</li></ul> | 
+
 
 
 
@@ -91,13 +74,13 @@ La tabella seguente elenca le Automazione interfaccia utente il cui valore o la 
 
 
 
-| Proprietà di automazione interfaccia utente                                                                                              | Valore           | Note                                                                                                                                         |
+| Proprietà di automazione interfaccia utente                                                                                              | valore           | Note                                                                                                                                         |
 |---------------------------------------------------------------------------------------------------------------------|-----------------|-----------------------------------------------------------------------------------------------------------------------------------------------|
 | [**UIA \_ AutomationIdPropertyId**](uiauto-automation-element-propids.md)                 | Vedere le note.      | Il valore di questa proprietà deve essere univoco tra tutti gli elementi peer nella visualizzazione non elaborata dell'Automazione interfaccia utente albero.                                  |
 | [**UIA \_ BoundingRectanglePropertyId**](uiauto-automation-element-propids.md)       | Vedere le note.      | Il rettangolo più esterno che contiene l'intero controllo.                                                                                      |
 | [**UIA \_ ClickablePointPropertyId**](uiauto-automation-element-propids.md)             | Vedere le note.      | Il punto selezionabile deve essere un punto che, quando selezionato, seleziona il pulsante di opzione.                                                             |
 | [**UIA \_ ControlTypePropertyId**](uiauto-automation-element-propids.md)                   | **RadioButton** |                                                                                                                                               |
-| [**IsContentElementPropertyId dell'interfaccia \_ utente**](uiauto-automation-element-propids.md)         | true            | Il controllo pulsante di opzione è sempre incluso nella visualizzazione contenuto dell'Automazione interfaccia utente albero.                                                    |
+| [**\_IsContentElementPropertyId dell'interfaccia utente**](uiauto-automation-element-propids.md)         | true            | Il controllo pulsante di opzione è sempre incluso nella visualizzazione contenuto dell'Automazione interfaccia utente albero.                                                    |
 | [**UIA \_ IsControlElementPropertyId**](uiauto-automation-element-propids.md)         | true            | Il controllo pulsante di opzione è sempre incluso nella visualizzazione controlli dell'Automazione interfaccia utente albero.                                                    |
 | [**UIA \_ IsKeyboardFocusablePropertyId**](uiauto-automation-element-propids.md)   | Vedere le note.      | Se il controllo può ricevere lo stato attivo, deve supportare questa proprietà.                                                                     |
 | [**UIA \_ LabeledByPropertyId**](uiauto-automation-element-propids.md)                       | NULL            | I controlli pulsante di opzione sono auto-etichettati in base al relativo contenuto.                                                                                     |
@@ -116,7 +99,7 @@ Nella tabella seguente sono elencati i Automazione interfaccia utente di control
 
 | Pattern di controllo/proprietà del pattern                                               | Supporto/valore | Note                                                                                                                                                                                                                                                                                                                                                                                                             |
 |--------------------------------------------------------------------------------|---------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| [**ISelectionItemProvider**](/windows/desktop/api/UIAutomationCore/nn-uiautomationcore-iselectionitemprovider)                | Necessario      | Tutti i controlli pulsante di opzione devono supportare il pattern [di controllo SelectionItem](uiauto-implementingselectionitem.md) per consentire la selezione di se stessi.                                                                                                                                                                                                                                                             |
+| [**ISelectionItemProvider**](/windows/desktop/api/UIAutomationCore/nn-uiautomationcore-iselectionitemprovider)                | Obbligatoria      | Tutti i controlli pulsante di opzione devono supportare il pattern [di controllo SelectionItem](uiauto-implementingselectionitem.md) per consentire la selezione di se stessi.                                                                                                                                                                                                                                                             |
 | [**Selectioncontainer**](/windows/desktop/api/UIAutomationCore/nf-uiautomationcore-iselectionitemprovider-get_selectioncontainer) | Vedere le note.    | La [**proprietà SelectionContainer**](/windows/desktop/api/UIAutomationCore/nf-uiautomationcore-iselectionitemprovider-get_selectioncontainer) deve sempre essere completata in modo che un client Automazione interfaccia utente possa determinare quali altri pulsanti di opzione all'interno di un contesto specifico sono correlati tra loro. Per la versione Microsoft Win32 del pulsante di opzione, questa proprietà non è supportata perché non è possibile ottenere queste informazioni dal framework legacy. |
 | [**IToggleProvider**](/windows/desktop/api/UIAutomationCore/nn-uiautomationcore-itoggleprovider)                              | Mai         | Dopo aver impostato questa proprietà, il pulsante di opzione non può scorrere tra i propri stati. Il [pattern di](uiauto-implementingtoggle.md) controllo Toggle non deve mai essere supportato in un pulsante di opzione.                                                                                                                                                                                                                                      |
 

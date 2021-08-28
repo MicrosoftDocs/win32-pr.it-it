@@ -1,5 +1,5 @@
 ---
-description: Callback per restituire le versioni di tutte le interfacce supportate. In questo modo il consumer non è sincronizzato con il motore di acquisizione.
+description: Callback per restituire le versioni di tutte le interfacce supportate. Ciò consente al consumer di non essere sincronizzato con il motore di acquisizione.
 MS-HAID: vspixengine.IVersionCallback
 MSHAttr:
 - PreferredSiteName:MSDN
@@ -17,16 +17,16 @@ api_location:
 topic_type:
 - APIRef
 - kbSyntax
-ms.openlocfilehash: c3ff23d325ff7b9d2783c9e35ca523253cea2880453c46f94a7d915cb47e8f8f
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 905c6f085695ba20b7cdd3a363c3af5a833d598a
+ms.sourcegitcommit: 4e94fc75fad7b2a0f3c92a26f97e89924e59b7a9
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119119415"
+ms.lasthandoff: 08/24/2021
+ms.locfileid: "122787487"
 ---
 # <a name="span-idvspixengineiversioncallbackspaniversioncallback-interface"></a><span id="vspixengine.iversioncallback"></span>Interfaccia IVersionCallback
 
-Callback per restituire le versioni di tutte le interfacce supportate. In questo modo il consumer non è sincronizzato con il motore di acquisizione.
+Callback per restituire le versioni di tutte le interfacce supportate. Ciò consente al consumer di non essere sincronizzato con il motore di acquisizione.
 
 ## <a name="members"></a>Membri
 
@@ -38,13 +38,13 @@ Callback per restituire le versioni di tutte le interfacce supportate. In questo
 
 **L'interfaccia IVersionCallback** include questi metodi.
 
-<table><colgroup><col style="width: 50%" /><col style="width: 50%" /></colgroup><thead><tr class="header"><th style="text-align: left;">Metodo</th><th style="text-align: left;">Descrizione</th></tr></thead><tbody><tr class="odd"><td style="text-align: left;"><a href="/windows/desktop/direct3dtools/iversioncallback-versiontableready-guid-arr-uint"><strong>VersionTableReady</strong></a></td><td style="text-align: left;"><p>Funzione di callback utilizzata per notificare all'host quali interfacce sono supportate.</p></td></tr></tbody></table>
+<table><colgroup><col  /><col  /></colgroup><thead><tr class="header"><th >Metodo</th><th >Descrizione</th></tr></thead><tbody><tr class="odd"><td ><a href="/windows/desktop/direct3dtools/iversioncallback-versiontableready-guid-arr-uint"><strong>VersionTableReady</strong></a></td><td ><p>Funzione di callback utilizzata per notificare all'host le interfacce supportate.</p></td></tr></tbody></table>
 
  
 
 ## <a name="requirements"></a>Requisiti
 
-<table><colgroup><col style="width: 50%" /><col style="width: 50%" /></colgroup><tbody><tr class="odd"><td><p>Intestazione</p></td><td>Vspixengine.h</td></tr></tbody></table>
+<table><colgroup><col  /><col  /></colgroup><tbody><tr class="odd"><td><p>Intestazione</p></td><td>Vspixengine.h</td></tr></tbody></table>
 
  
 

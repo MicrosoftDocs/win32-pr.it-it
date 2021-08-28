@@ -8,21 +8,21 @@ keywords:
 - Active Directory, uso, autenticazione reciproca, Windows socket con un SCP
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: be8f3e65b044198c5ebf703b1c62ac03eb07a4d57b6bc5dcf7c5463247815f1b
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 3ede3f05744e402cb483e46d6eb116f653e20d9e
+ms.sourcegitcommit: 61a4c522182aa1cacbf5669683d9570a3bf043b2
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119025769"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "122881380"
 ---
 # <a name="mutual-authentication-in-a-windows-sockets-service-with-scp"></a>Autenticazione reciproca in un Windows Sockets con SCP
 
-Negli argomenti di questa sezione sono inclusi esempi di codice che illustrano come eseguire l'autenticazione reciproca con un servizio che si pubblica tramite un punto di connessione del servizio. Gli esempi si basano su un servizio Microsoft Windows Sockets che usa un pacchetto SSPI per gestire la negoziazione di autenticazione reciproca tra un client e il servizio. Utilizzare le procedure seguenti per implementare l'autenticazione reciproca all'interno di questo scenario.
+Negli argomenti di questa sezione sono inclusi esempi di codice che illustrano come eseguire l'autenticazione reciproca con un servizio che si pubblica tramite un punto di connessione del servizio. Gli esempi sono basati su un servizio Microsoft Windows Sockets che usa un pacchetto SSPI per gestire la negoziazione di autenticazione reciproca tra un client e il servizio. Utilizzare le procedure seguenti per implementare l'autenticazione reciproca all'interno di questo scenario.
 
 **Per registrare i nomi SPN in una directory quando viene installato un servizio**
 
 1.  Chiamare la [**funzione DsGetSpn**](/windows/desktop/api/Ntdsapi/nf-ntdsapi-dsgetspna) per comporre i nomi dell'entità servizio (SPN) per il servizio.
-2.  Chiamare la [**funzione DsWriteAccountSpn per**](/windows/desktop/api/Ntdsapi/nf-ntdsapi-dswriteaccountspna) registrare i nomi SPN nell'account del servizio o nell'account computer nel cui contesto verrà eseguito il servizio. Questo passaggio deve essere eseguito da un amministratore di dominio. un'eccezione è che un servizio in esecuzione con l'account LocalSystem può registrare il proprio nome SPN nel formato " <service class> / <host> " nell'account computer dell'host del servizio.
+2.  Chiamare la [**funzione DsWriteAccountSpn per**](/windows/desktop/api/Ntdsapi/nf-ntdsapi-dswriteaccountspna) registrare i nomi SPN nell'account del servizio o nell'account computer nel cui contesto verrà eseguito il servizio. Questo passaggio deve essere eseguito da un amministratore di dominio. un'eccezione è che un servizio in esecuzione con l'account LocalSystem può registrare il proprio nome SPN nel formato " host " <service class> / &lt; nell'account &gt; computer dell'host del servizio.
 
 **Per verificare la configurazione all'avvio del servizio**
 
@@ -52,7 +52,7 @@ Negli argomenti di questa sezione sono inclusi esempi di codice che illustrano c
 
 Per altre informazioni e un esempio di codice per questo scenario di autenticazione reciproca, vedere:
 
--   [Come un client autentica un servizio socket Windows SCP](how-a-client-authenticates-an-scp-based-windows-sockets-service.md)
+-   [Come un client autentica un servizio Sockets Windows SCP](how-a-client-authenticates-an-scp-based-windows-sockets-service.md)
 -   [Composizione e registrazione di nomi SPN per un servizio Windows Sockets basato su SCP](composing-and-registering-spns-for-an-scp-based-windows-sockets-service.md)
 -   [Come un Windows Sockets autentica un client](how-a-windows-sockets-service-authenticates-a-client.md)
 

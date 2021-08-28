@@ -1,5 +1,5 @@
 ---
-description: Altre informazioni sulla funzione JetOSSnapshotAbort
+description: 'Altre informazioni su: Funzione JetOSSnapshotAbort'
 title: Funzione JetOSSnapshotAbort
 TOCTitle: JetOSSnapshotAbort Function
 ms:assetid: 629455af-b526-4366-9b9a-112757f72c32
@@ -18,12 +18,12 @@ api_type:
 api_location:
 - ESENT.DLL
 ROBOTS: INDEX,FOLLOW
-ms.openlocfilehash: 70f4a7cc3db5b5c6ef90c59de05cd9c0acea9d1dfb4ac1eeeba119ded5e89c14
-ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
+ms.openlocfilehash: 08e56bc95798559453c383549570f9470b55fa82
+ms.sourcegitcommit: 9b5faa61c38b2d0c432b7f2dbee8c127b0e28a7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119559811"
+ms.lasthandoff: 08/19/2021
+ms.locfileid: "122474417"
 ---
 # <a name="jetossnapshotabort-function"></a>Funzione JetOSSnapshotAbort
 
@@ -32,7 +32,7 @@ _**Si applica a:** Windows | Windows Server_
 
 ## <a name="jetossnapshotabort-function"></a>Funzione JetOSSnapshotAbort
 
-La **funzione JetOSSnapshotAbort** notifica al motore che può riprendere le normali operazioni di I/O dopo che un periodo di blocco è terminato con uno snapshot non riuscito.
+La **funzione JetOSSnapshotAbort** notifica al motore che è possibile riprendere le normali operazioni di I/O dopo che un periodo di blocco è terminato con uno snapshot non riuscito.
 
 **Windows Server 2003:****JetOSSnapshotAbort** è stato introdotto in Windows Server 2003.  
 
@@ -55,74 +55,30 @@ Opzioni per questa chiamata. Questo parametro è riservato per un uso futuro e l
 
 ### <a name="return-value"></a>Valore restituito
 
-Questa funzione restituisce il [JET_ERR](./jet-err.md) dati con uno dei codici restituiti seguenti. Per altre informazioni sui possibili errori ESE, vedere Errori del [motore di](./extensible-storage-engine-errors.md) Archiviazione estendibile e Parametri di gestione [degli errori](./error-handling-parameters.md).
-
-<table>
-<colgroup>
-<col style="width: 50%" />
-<col style="width: 50%" />
-</colgroup>
-<thead>
-<tr class="header">
-<th><p>Codice restituito</p></th>
-<th><p>Descrizione</p></th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td><p>JET_errSuccess</p></td>
-<td><p>Operazione riuscita.</p></td>
-</tr>
-<tr class="even">
-<td><p>JET_errInvalidParameter</p></td>
-<td><p>La sessione snapshot non è valida o il parametro grbit non è valido.</p></td>
-</tr>
-<tr class="odd">
-<td><p>JET_errOSSnapshotInvalidSnapId</p></td>
-<td><p>L'identificatore per la sessione snapshot non è valido.</p></td>
-</tr>
-</tbody>
-</table>
+Questa funzione restituisce il [JET_ERR](./jet-err.md) dati con uno dei codici restituiti seguenti. Per altre informazioni sui possibili errori ESE, vedere [Extensible Archiviazione Engine Errors](./extensible-storage-engine-errors.md) and [Error Handling Parameters](./error-handling-parameters.md).
 
 
-Se questa funzione ha esito positivo, la sessione snapshot verrà terminare e il normale comportamento del motore riprenderà. Una nuova sessione snapshot può essere avviata in un secondo momento.
+| <p>Codice restituito</p> | <p>Descrizione</p> | 
+|--------------------|--------------------|
+| <p>JET_errSuccess</p> | <p>Operazione riuscita.</p> | 
+| <p>JET_errInvalidParameter</p> | <p>La sessione snapshot non è valida o il parametro grbit non è valido.</p> | 
+| <p>JET_errOSSnapshotInvalidSnapId</p> | <p>L'identificatore per la sessione snapshot non è valido.</p> | 
+
+
+
+Se questa funzione ha esito positivo, la sessione snapshot terminerà e verrà ripreso il normale comportamento del motore. Una nuova sessione snapshot può essere avviata in un secondo momento.
 
 Se questa funzione ha esito negativo, la sessione snapshot non verrà interrotta.
 
 #### <a name="remarks"></a>Commenti
 
-Questa funzione deve essere chiamata al posto di [JetOSSnapshotThaw](./jetossnapshotthaw-function.md) per informare il motore che lo snapshot è stato interrotto per motivi non correlati al motore. Queste informazioni possono essere usate in un secondo momento per inviare messaggi del registro eventi sulla sessione snapshot o per determinare altre azioni appropriate.
+Questa funzione deve essere chiamata al posto di [JetOSSnapshotThaw](./jetossnapshotthaw-function.md) per informare il motore che lo snapshot è stato interrotto per motivi non correlati al motore. Queste informazioni possono essere usate in un secondo momento per inviare messaggi del registro eventi relativi alla sessione snapshot o per determinare altre azioni appropriate.
 
 #### <a name="requirements"></a>Requisiti
 
-<table>
-<colgroup>
-<col style="width: 50%" />
-<col style="width: 50%" />
-</colgroup>
-<tbody>
-<tr class="odd">
-<td><p><strong>Client</strong></p></td>
-<td><p>Richiede Windows Vista.</p></td>
-</tr>
-<tr class="even">
-<td><p><strong>Server</strong></p></td>
-<td><p>Richiede Windows Server 2008 o Windows Server 2003.</p></td>
-</tr>
-<tr class="odd">
-<td><p><strong>Intestazione</strong></p></td>
-<td><p>Dichiarato in Esent.h.</p></td>
-</tr>
-<tr class="even">
-<td><p><strong>Libreria</strong></p></td>
-<td><p>Usare ESENT.lib.</p></td>
-</tr>
-<tr class="odd">
-<td><p><strong>DLL</strong></p></td>
-<td><p>Richiede ESENT.dll.</p></td>
-</tr>
-</tbody>
-</table>
+
+| | | <p><strong>Client</strong></p> | <p>Richiede Windows Vista.</p> | | <p><strong>Server</strong></p> | <p>Richiede Windows Server 2008 o Windows Server 2003.</p> | | <p><strong>Intestazione</strong></p> | <p>Dichiarato in Esent.h.</p> | | <p><strong>Libreria</strong></p> | <p>Usare ESENT.lib.</p> | | <p><strong>DLL</strong></p> | <p>Richiede ESENT.dll.</p> | 
+
 
 
 #### <a name="see-also"></a>Vedere anche

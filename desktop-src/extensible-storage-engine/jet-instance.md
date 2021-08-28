@@ -15,12 +15,12 @@ api_type:
 - COM
 api_location: ''
 ROBOTS: INDEX,FOLLOW
-ms.openlocfilehash: 1fc288c17c90070d48669c7ad6f1554d52c83278
-ms.sourcegitcommit: 9b5faa61c38b2d0c432b7f2dbee8c127b0e28a7e
+ms.openlocfilehash: c4e80edf41a83f205747c269cad98e4f5175030a
+ms.sourcegitcommit: 4665ebce0c106bdb52eef36e544280b496b6f50b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/19/2021
-ms.locfileid: "122481767"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "122982844"
 ---
 # <a name="jet_instance"></a>JET_INSTANCE
 
@@ -39,7 +39,7 @@ Il **JET_INSTANCE** dati contiene un handle per l'istanza del database da utiliz
 
 JET_INSTANCE
 
-È **possibile usare NULL** o [JET_instanceNil](./invalid-handle-constants.md) per indicare un handle di istanza non valido.
+È possibile usare **NULL** [o JET_instanceNil](./invalid-handle-constants.md) per indicare un handle di istanza non valido.
 
 ### <a name="remarks"></a>Commenti
 
@@ -52,7 +52,11 @@ Questo handle viene ottenuto quando si crea un'istanza del database chiamando le
 ### <a name="requirements"></a>Requisiti
 
 
-| | | <p><strong>Client</strong></p> | <p>Richiede Windows Vista, Windows XP o Windows 2000 Professional.</p> | | <p><strong>Server</strong></p> | <p>Richiede Windows Server 2008, Windows Server 2003 o Windows 2000 Server.</p> | | <p><strong>Intestazione</strong></p> | <p>Dichiarato in Esent.h.</p> | 
+| Requisito | Valore |
+|------------|----------|
+| <p><strong>Client</strong></p> | <p>Richiede Windows Vista, Windows XP o Windows 2000 Professional.</p> | 
+| <p><strong>Server</strong></p> | <p>Richiede Windows Server 2008, Windows Server 2003 o Windows 2000 Server.</p> | 
+| <p><strong>Intestazione</strong></p> | <p>Dichiarato in Esent.h.</p> | 
 
 
 

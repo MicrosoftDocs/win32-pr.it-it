@@ -10,12 +10,12 @@ topic_type:
 api_name: ''
 api_type: ''
 api_location: ''
-ms.openlocfilehash: 46e8c850ffd04fe4ac5bc9af1b130632338b61ec79c92d154f5769ffd54cb2fb
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 458a75303ffa82963ad60c682f70a7385617cc70
+ms.sourcegitcommit: c276a8912787b2cda74dcf54eb96df961bb1188b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "117739447"
+ms.lasthandoff: 08/20/2021
+ms.locfileid: "122627427"
 ---
 # <a name="wmi-tasks-dates-and-times"></a>Attività WMI: date e ore
 
@@ -30,7 +30,7 @@ La procedura seguente descrive come eseguire uno script.
 1.  Copiare il codice e salvarlo in un file con estensione vbs, ad esempio *filename.vbs*. Assicurarsi che l'editor di testo non aggiunge un'.txt al file.
 2.  Aprire una finestra del prompt dei comandi e passare alla directory in cui è stato salvato il file.
 3.  Digitare **cscript filename.vbs** al prompt dei comandi.
-4.  Se non è possibile accedere a un registro eventi, verificare se si è in esecuzione da un prompt dei comandi con privilegi elevati. Alcuni registri eventi, ad esempio il registro eventi di sicurezza, possono essere protetti dai controlli di accesso utente.
+4.  Se non è possibile accedere a un registro eventi, verificare se è in esecuzione da un prompt dei comandi con privilegi elevati. Alcuni registri eventi, ad esempio il registro eventi di sicurezza, possono essere protetti dai controlli di accesso utente.
 
 > [!Note]  
 > Per impostazione predefinita, cscript visualizza l'output di uno script nella finestra del prompt dei comandi. Poiché gli script WMI possono produrre grandi quantità di output, potrebbe essere necessario reindirizzare l'output a un file. Digitare **cscript filename.vbs > outfile.txt** prompt dei comandi per reindirizzare l'output dello *script* filename.vbsa *outfile.txt*.
@@ -43,8 +43,8 @@ Nella tabella seguente sono elencati esempi di script che possono essere usati p
 
 <table>
 <colgroup>
-<col style="width: 50%" />
-<col style="width: 50%" />
+<col  />
+<col  />
 </colgroup>
 <thead>
 <tr class="header">
@@ -58,7 +58,7 @@ Nella tabella seguente sono elencati esempi di script che possono essere usati p
 <td>Usare <a href="swbemdatetime.md"><strong>l'oggetto SWbemDateTime</strong></a> per convertirli in date e ore regolari.<br/> <span data-codelanguage="VisualBasic"></span>
 <table>
 <colgroup>
-<col style="width: 100%" />
+<col  />
 </colgroup>
 <thead>
 <tr class="header">
@@ -84,7 +84,7 @@ Next</code></pre></td>
 <span data-codelanguage="VisualBasic"></span>
 <table>
 <colgroup>
-<col style="width: 100%" />
+<col  />
 </colgroup>
 <thead>
 <tr class="header">
@@ -111,7 +111,7 @@ End Function </code></pre></td>
 <span data-codelanguage="VisualBasic"></span>
 <table>
 <colgroup>
-<col style="width: 100%" />
+<col  />
 </colgroup>
 <thead>
 <tr class="header">
@@ -143,7 +143,7 @@ Next</code></pre></td>
 <span data-codelanguage="PowerShell"></span>
 <table>
 <colgroup>
-<col style="width: 100%" />
+<col  />
 </colgroup>
 <thead>
 <tr class="header">
@@ -182,7 +182,7 @@ Foreach ($time in $times) {
 <span data-codelanguage="VisualBasic"></span>
 <table>
 <colgroup>
-<col style="width: 100%" />
+<col  />
 </colgroup>
 <thead>
 <tr class="header">
@@ -209,7 +209,7 @@ Next</code></pre></td>
 <span data-codelanguage="PowerShell"></span>
 <table>
 <colgroup>
-<col style="width: 100%" />
+<col  />
 </colgroup>
 <thead>
 <tr class="header">
@@ -235,7 +235,7 @@ if ($computer -eq &quot;.&quot;) {$computer = Hostname}
 </tr>
 <tr class="even">
 <td><p>... assicurarsi che &quot; il 02/10/2000 venga interpretato come 2 ottobre &quot; 2000, non &quot; 10 febbraio 2000? &quot;</p></td>
-<td><p>Gestire le <a href="gloss-c.md"><em></em></a> date in formato <a href="datetime.md">CIM DATETIME</a> e usare i metodi <a href="swbemdatetime.md"><strong>SWbemDateTime,</strong></a> ad esempio <a href="swbemdatetime-getvardate.md"><strong>GetVarDate,</strong></a> per convertirle in formati <a href="/windows/desktop/api/minwinbase/ns-minwinbase-filetime"><strong>FILETIME</strong></a> <strong>o VT_Date.</strong> Poiché il formato DATETIME è indipendente dalle impostazioni locali, è possibile scrivere uno script che viene eseguito in qualsiasi computer. Usare <strong>l'oggetto SWbemDateTime</strong> per convertirli in date e ore regolari. Per <a href="date-and-time-format.md">altre informazioni sulla conversione</a> di date e ore, vedere Formato di data e ora.</p></td>
+<td><p>Gestire le date in formato <a href="gloss-c.md"><em>CIM</em></a> <a href="datetime.md">DATETIME</a> e usare i metodi <a href="swbemdatetime.md"><strong>SWbemDateTime,</strong></a> ad esempio <a href="swbemdatetime-getvardate.md"><strong>GetVarDate,</strong></a> per convertirle in e da <a href="/windows/desktop/api/minwinbase/ns-minwinbase-filetime"><strong>formati FILETIME</strong></a> o <strong>VT_Date</strong> dati. Poiché il formato DATETIME è indipendente dalle impostazioni locali, è possibile scrivere uno script che viene eseguito in qualsiasi computer. Usare <strong>l'oggetto SWbemDateTime</strong> per convertirli in date e ore regolari. Per <a href="date-and-time-format.md">altre informazioni sulla conversione</a> di date e ore, vedere Formato di data e ora.</p></td>
 </tr>
 <tr class="odd">
 <td><p>... convertire un valore datetime WMI in un valore DateTime .NET?</p></td>
@@ -244,7 +244,7 @@ if ($computer -eq &quot;.&quot;) {$computer = Hostname}
 <span data-codelanguage="PowerShell"></span>
 <table>
 <colgroup>
-<col style="width: 100%" />
+<col  />
 </colgroup>
 <thead>
 <tr class="header">

@@ -1,75 +1,75 @@
 ---
-description: Microsoft Windows Search USA i gestori delle proprietà per estrarre i valori delle proprietà dagli elementi e usa lo schema del sistema di proprietà per determinare la modalità di indicizzazione di una proprietà specifica.
+description: Microsoft Windows Ricerca usa i gestori delle proprietà per estrarre i valori delle proprietà dagli elementi e usa lo schema del sistema di proprietà per determinare la modalità di indicizzazione di una proprietà specifica.
 ms.assetid: b475329a-1ed7-43a4-8e11-3700889a4ce9
-title: Sviluppo di gestori di proprietà per Windows Search
+title: Sviluppo di gestori di proprietà per Windows ricerca
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 7ac96e47738040321025b7f600e2c91109b08d51
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 3933353d8bf00c3a68a2259daf94a1ce4f13d295
+ms.sourcegitcommit: c276a8912787b2cda74dcf54eb96df961bb1188b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104225959"
+ms.lasthandoff: 08/20/2021
+ms.locfileid: "122627326"
 ---
-# <a name="developing-property-handlers-for-windows-search"></a>Sviluppo di gestori di proprietà per Windows Search
+# <a name="developing-property-handlers-for-windows-search"></a>Sviluppo di gestori di proprietà per Windows ricerca
 
-Microsoft Windows Search USA i gestori delle proprietà per estrarre i valori delle proprietà dagli elementi e usa lo schema del sistema di proprietà per determinare la modalità di indicizzazione di una proprietà specifica. Per leggere e indicizzare i valori delle proprietà, i gestori delle proprietà vengono richiamati out-of-process da Windows Search per migliorare la sicurezza e l'affidabilità. Al contrario, i gestori delle proprietà vengono richiamati in-process da Esplora risorse per leggere e scrivere i valori delle proprietà.
+Microsoft Windows Ricerca usa i gestori delle proprietà per estrarre i valori delle proprietà dagli elementi e usa lo schema del sistema di proprietà per determinare la modalità di indicizzazione di una proprietà specifica. Per leggere e indicizzare i valori delle proprietà, i gestori delle proprietà vengono richiamati out-of-process Windows ricerca per migliorare la sicurezza e l'affidabilità. Al contrario, i gestori delle proprietà vengono richiamati in-process Windows Explorer per leggere e scrivere i valori delle proprietà.
 
-Questo argomento integra l'argomento del [sistema di proprietà](../properties/building-property-handlers.md) con informazioni specifiche di Windows Search e contiene le sezioni seguenti:
+Questo argomento integra [l'argomento Sistema di](../properties/building-property-handlers.md) proprietà con informazioni specifiche Windows ricerca e contiene le sezioni seguenti:
 
 -   [Decisioni di progettazione per i gestori di proprietà](#design-decisions-for-property-handlers)
-    -   [Decisioni sulle proprietà](#property-decisions)
+    -   [Decisioni relative alle proprietà](#property-decisions)
     -   [Supporto full-text](#full-text-support)
-    -   [Considerazioni sul Implementatation del sistema operativo](#operating-system-implementatation-considerations)
--   [Scrittura dei file di descrizione delle proprietà](#writing-property-description-files)
+    -   [Considerazioni sull'implementatazione del sistema operativo](#operating-system-implementatation-considerations)
+-   [Scrittura di file di descrizione delle proprietà](#writing-property-description-files)
 -   [Implementazione di gestori di proprietà](#implementing-property-handlers)
     -   [IInitializeWithStream](#iinitializewithstream)
-    -   [IPropertyStore](#ipropertystore)
+    -   [Ipropertystore](#ipropertystore)
     -   [IPropertyStoreCapabilities](#ipropertystorecapabilities)
 -   [Verifica dell'indicizzazione degli elementi](#ensuring-your-items-get-indexed)
 -   [Installazione e registrazione di gestori di proprietà](#installing-and-registering-property-handlers)
--   [Test e risoluzione dei problemi relativi ai gestori di proprietà](#testing-and-troubleshooting-property-handlers)
-    -   [Test di installazione e configurazione](#installation-and-setup-tests)
-    -   [Risoluzione dei problemi relativi ai gestori di proprietà](#troubleshooting-property-handlers)
--   [Utilizzo di System-Supplied gestori di proprietà](#using-system-supplied-property-handlers)
+-   [Test e risoluzione dei problemi dei gestori delle proprietà](#testing-and-troubleshooting-property-handlers)
+    -   [Test di installazione e installazione](#installation-and-setup-tests)
+    -   [Risoluzione dei problemi relativi ai gestori delle proprietà](#troubleshooting-property-handlers)
+-   [Uso System-Supplied gestori di proprietà](#using-system-supplied-property-handlers)
 -   [Argomenti correlati](#related-topics)
 
  
 
 ## <a name="design-decisions-for-property-handlers"></a>Decisioni di progettazione per i gestori di proprietà
 
-L'implementazione dei gestori delle proprietà prevede i passaggi seguenti:
+L'implementazione di gestori di proprietà prevede i passaggi seguenti:
 
-1.  Prendere decisioni di progettazione relative alle proprietà che si desidera supportare.
-2.  Creazione di un file di descrizione della proprietà (. propdesc) per le proprietà non già presenti nel sistema di proprietà.
+1.  Prendere decisioni di progettazione relative alle proprietà da supportare.
+2.  Creazione di un file di descrizione della proprietà (con estensione propdesc) per le proprietà non già presenti nel sistema di proprietà.
 3.  Implementazione e test del gestore della proprietà.
-4.  Installazione e registrazione dei file di descrizione della proprietà e del gestore della proprietà.
-5.  Test dell'installazione e della registrazione del gestore proprietà.
+4.  Installazione e registrazione del gestore delle proprietà e dei file di descrizione delle proprietà.
+5.  Test dell'installazione e della registrazione del gestore delle proprietà.
 
-Prima di iniziare, è necessario prendere in considerazione le seguenti domande di progettazione:
+Prima di iniziare, è necessario considerare le domande di progettazione seguenti:
 
--   Quali proprietà sono supportate dal formato di file?
--   Queste proprietà sono già nello schema del sistema?
--   È possibile utilizzare un gestore di proprietà esistente fornito dal sistema?
+-   Quali proprietà supportano o devono essere supportate dal formato di file?
+-   Queste proprietà sono già presenti nello schema di sistema?
+-   È possibile usare un gestore delle proprietà fornito dal sistema esistente?
 -   Quali proprietà possono essere visualizzate agli utenti finali?
 -   Quali proprietà possono essere modificate dagli utenti?
--   Il supporto per la ricerca full-text proviene da un gestore di proprietà o da un filtro?
+-   Il supporto per la ricerca full-text deve essere derivato da un gestore delle proprietà o da un filtro?
 -   È necessario supportare le applicazioni legacy? In tal caso, cosa si implementa?
 
 > [!Note]  
-> Prima di continuare, vedere [uso di System-Supplied gestori di proprietà](#using-system-supplied-property-handlers) per verificare se è possibile usare un gestore di proprietà fornito dal sistema, risparmiando tempo e risorse di sviluppo.
+> Prima di continuare, vedere [Using System-Supplied Property Handlers](#using-system-supplied-property-handlers) per verificare se è possibile usare un gestore delle proprietà fornito dal sistema, risparmiando tempo e risorse di sviluppo.
 
  
 
-Dopo aver preso queste decisioni, è possibile scrivere descrizioni formali delle proprietà personalizzate in modo che il motore di ricerca di Windows possa iniziare a indicizzare i file e le proprietà. Queste descrizioni formali sono file XML, descritti nello [schema della descrizione della proprietà](/previous-versions//cc144127(v=vs.85)).
+Dopo aver preso queste decisioni, è possibile scrivere descrizioni formali delle proprietà personalizzate in modo che il motore di ricerca Windows possa iniziare a indicizzare i file e le proprietà. Queste descrizioni formali sono file XML, descritti in [Schema di descrizione delle proprietà](/previous-versions//cc144127(v=vs.85)).
 
-### <a name="property-decisions"></a>Decisioni sulle proprietà
+### <a name="property-decisions"></a>Decisioni relative alle proprietà
 
-Quando si considerano le proprietà da supportare, è necessario identificare le esigenze di indicizzazione e ricerca degli utenti. Ad esempio, si potrebbe essere in grado di identificare 100 proprietà potenzialmente utili per il tipo di file, ma gli utenti potrebbero essere interessati alla ricerca solo in pochi. Inoltre, è possibile che si desideri visualizzare un gruppo diverso, più grande o più piccolo, di tali proprietà per gli utenti in Esplora risorse e consentire agli utenti di modificare solo un subset di tali proprietà visualizzate.
+Quando si considerano le proprietà da supportare, è necessario identificare le esigenze di indicizzazione e ricerca degli utenti. Ad esempio, è possibile identificare cento proprietà potenzialmente utili per il tipo di file, ma gli utenti potrebbero essere interessati a cercare solo in pochi. È anche possibile visualizzare un gruppo diverso, più grande o più piccolo, di tali proprietà agli utenti in Windows Explorer e consentire agli utenti di modificare solo un subset di tali proprietà visualizzate.
 
-Il tipo di file può supportare qualsiasi proprietà personalizzata definita dall'utente, oltre a un set di proprietà definite dal sistema. Prima di creare una proprietà personalizzata, verificare le [proprietà di sistema](https://msdn.microsoft.com/library/bb763010(VS.85).aspx) per verificare se la proprietà che si desidera supportare è già definita da una proprietà di sistema. Assicurarsi sempre di supportare le proprietà più importanti definite dal sistema.
+Il tipo di file può supportare qualsiasi proprietà personalizzata definita dall'utente, nonché un set di proprietà definite dal sistema. Prima di creare una proprietà [](https://msdn.microsoft.com/library/bb763010(VS.85).aspx) personalizzata, vedere Proprietà di sistema per verificare se la proprietà che si vuole supportare è già definita da una proprietà di sistema. Assicurarsi sempre di supportare le proprietà più importanti definite dal sistema.
 
-Per progettare le proprietà è consigliabile usare una matrice:
+È consigliabile usare una matrice per progettare le proprietà:
 
 
 
@@ -77,20 +77,20 @@ Per progettare le proprietà è consigliabile usare una matrice:
 |---------------|---------------|-----------------|--------------|
 | property1     | S             | S               | N            |
 | Proprietà...   | S             | S               | N            |
-| propertyN     | N             | N               | N            |
+| propertyn     | N             | N               | N            |
 
 
 
  
 
-Per ognuna di queste proprietà, è necessario determinare gli attributi che devono avere e quindi descriverli formalmente in file XML di descrizione della proprietà (. propdesc). Gli attributi includono il tipo di dati della proprietà, l'etichetta, la stringa della guida e altro ancora. Per le proprietà indicizzabili, è necessario prestare particolare attenzione ai seguenti attributi di proprietà trovati nell'elemento XML [searchInfo](../properties/propdesc-schema-searchinfo.md)   del file di descrizione della proprietà.
+Per ognuna di queste proprietà, è necessario determinare quali attributi deve avere e quindi descriverli formalmente nei file XML di descrizione delle proprietà (con estensione propdesc). Gli attributi includono il tipo di dati, l'etichetta, la stringa della Guida e altro ancora. Per le proprietà indicizzabili, è necessario prestare particolare attenzione agli attributi di proprietà seguenti presenti nell'elemento XML [searchInfo](../properties/propdesc-schema-searchinfo.md)   del file di descrizione della proprietà.
 
 
 
 <table>
 <colgroup>
-<col style="width: 50%" />
-<col style="width: 50%" />
+<col  />
+<col  />
 </colgroup>
 <thead>
 <tr class="header">
@@ -101,27 +101,27 @@ Per ognuna di queste proprietà, è necessario determinare gli attributi che dev
 <tbody>
 <tr class="odd">
 <td>inInvertedIndex</td>
-<td>facoltativo. Indica se il valore di una proprietà di stringa deve essere suddiviso in parole e ogni parola archiviata nell'indice invertito. L'indice invertito consente una ricerca efficiente di parole e frasi sul valore della proprietà usando CONTAINs o FREETEXT (ad esempio, SELECT... DOVE contiene &quot; someText &quot; ). Se è impostato su <strong>false</strong>, le ricerche vengono eseguite sull'intera stringa. La maggior parte delle proprietà di stringa deve avere questo valore impostato su <strong>true</strong>; per le proprietà non di stringa è necessario impostare questo valore su <strong>false</strong>. Il valore predefinito è <strong>false</strong>.</td>
+<td>facoltativo. Indica se un valore della proprietà stringa deve essere suddiviso in parole e ogni parola archiviata nell'indice invertito. L'indice invertito consente una ricerca efficiente di parole e frasi sul valore della proprietà usando CONTAINS o FREETEXT (ad esempio, SELECT ... WHERE CONTAINS &quot; sometext &quot; ). Se impostato su <strong>FALSE,</strong>le ricerche vengono eseguite sull'intera stringa. La maggior parte delle proprietà stringa deve essere impostata su <strong>TRUE.</strong> Le proprietà non stringa devono essere impostate su <strong>FALSE.</strong> Il valore predefinito è <strong>FALSE.</strong></td>
 </tr>
 <tr class="even">
 <td>isColumn</td>
-<td>facoltativo. Indica se la proprietà deve essere archiviata nel database di ricerca di Windows come colonna. L'archiviazione della proprietà come colonna consente il recupero, l'ordinamento, il raggruppamento e il filtro, ovvero l'utilizzo di qualsiasi predicato eccetto CONTAINs o FREETEXT per l'intero valore della colonna. Le proprietà visualizzate per l'utente devono essere impostate su <strong>true</strong> , a meno che non si tratti di una proprietà testuale molto grande, ad esempio il corpo di un documento, in cui verrebbe eseguita la ricerca nell'indice invertito. Il valore predefinito è <strong>false</strong>.</td>
+<td>facoltativo. Indica se la proprietà deve essere archiviata nel database Windows ricerca come colonna. L'archiviazione della proprietà come colonna consente di recuperare, ordinare, raggruppare e filtrare ,ovvero usando qualsiasi predicato ad eccezione di CONTAINS o FREETEXT, sull'intero valore della colonna. Le proprietà visualizzate all'utente devono essere impostate su <strong>TRUE,</strong> a meno che non si tratta di una proprietà testuale molto grande (ad esempio il corpo di un documento) che verrà cercata nell'indice invertito. Il valore predefinito è <strong>FALSE.</strong></td>
 </tr>
 <tr class="odd">
 <td>isColumnSparse</td>
-<td>facoltativo. Indica se una proprietà non occupa alcuno spazio se il valore è <strong>null</strong>. Una proprietà non di tipo sparse occupa spazio per ogni elemento, anche se il valore è <strong>null</strong>. Se la proprietà è multivalore, questo attributo è sempre <strong>true</strong>. Questo attributo deve essere <strong>false</strong> solo se è presente un valore per ogni elemento. Il valore predefinito è <strong>true</strong>.</td>
+<td>facoltativo. Indica se una proprietà non occupa spazio se il valore è <strong>NULL.</strong> Una proprietà non di tipo sparse occupa spazio per ogni elemento, anche se il valore è <strong>NULL.</strong> Se la proprietà è multivalore, questo attributo è sempre <strong>TRUE.</strong> Questo attributo deve essere <strong>FALSE</strong> solo se è presente un valore per ogni elemento. Il valore predefinito è <strong>TRUE.</strong></td>
 </tr>
 <tr class="even">
 <td>columnIndexType</td>
-<td>facoltativo. Per ottimizzare l'esecuzione di query, il motore di ricerca di Windows può creare indici secondari per le proprietà con la colonna =<strong>true</strong>. Questa operazione richiede più spazio di elaborazione e spazio su disco durante l'indicizzazione, ma migliora le prestazioni durante l'esecuzione di query. Se la proprietà tende a essere ordinata, raggruppata o filtrata (ovvero usando =,! =, <, >, LIKE, corrisponde) spesso dagli utenti, questo attributo deve essere impostato su &quot; ondisk &quot; . Il valore predefinito è &quot; NotIndexed &quot; . I valori seguenti sono validi:
+<td>facoltativo. Per ottimizzare l'esecuzione di query, Windows motore di ricerca può creare indici secondari per le proprietà con isColumn=<strong>TRUE.</strong> Ciò richiede più elaborazione e spazio su disco durante l'indicizzazione, ma migliora le prestazioni durante l'esecuzione di query. Se la proprietà tende a essere ordinata, raggruppata o filtrata di frequente (ovvero usando =, !=, <, >, LIKE, MATCHES), questo attributo deve essere impostato su &quot; &quot; OnDisk. Il valore predefinito &quot; è NotIndexed &quot; . I valori seguenti sono validi:
 <ul>
 <li>NotIndexed: non viene creato alcun indice secondario.</li>
-<li>Ondisk: creare e archiviare un indice secondario sul disco.</li>
+<li>OnDisk: creare e archiviare un indice secondario su disco.</li>
 </ul></td>
 </tr>
 <tr class="odd">
-<td>maxSize</td>
-<td>facoltativo. Indica la dimensione massima consentita per il valore della proprietà archiviato nel database di ricerca di Windows. Questo limite si applica agli elementi ciascun indvidual di un vettore, non all'intero vettore. I valori che superano questa dimensione vengono troncati. Il valore predefinito è &quot; 128 &quot; (byte).<br/> Attualmente, Windows Search non usa maxSize durante il calcolo della quantità di dati accettati da un file. Al contrario, il limite usato da Windows Search è il prodotto delle dimensioni del file e il valore di MaxGrowFactor (file size N * MaxGrowFactor) letto dal registro di sistema in HKEY_LOCAL_MACHINE->software->Microsoft->Windows Search->Gathering Manager->MaxGrowFactor. Il valore predefinito di MaxGrowFactor è quattro (4). Di conseguenza, se il tipo di file tende a essere ridotto in dimensioni totali ma con proprietà più grandi, è possibile che Windows Search non accetti tutti i dati di proprietà che si desidera creare. Tuttavia, è possibile aumentare il MaxGrowFactor in base alle esigenze. <br/></td>
+<td>Maxsize</td>
+<td>facoltativo. Indica le dimensioni massime consentite per il valore della proprietà archiviato nel database Windows di ricerca. Questo limite si applica agli elementi indvidual di un vettore, non al vettore nel suo complesso. I valori oltre queste dimensioni vengono troncati. Il valore predefinito &quot; è 128 &quot; (byte).<br/> Attualmente, Windows ricerca non usa maxSize per calcolare la quantità di dati accettati da un file. Il limite utilizzato da Ricerca Windows è invece il prodotto delle dimensioni del file e maxGrowFactor (dimensioni file N * MaxGrowFactor) letto dal Registro di sistema in HKEY_LOCAL_MACHINE->Software->Microsoft->Windows Search->Gathering Manager->MaxGrowFactor. Il valore predefinito di MaxGrowFactor è quattro (4). Di conseguenza, se il tipo di file tende a essere di piccole dimensioni ma ha proprietà più grandi, Windows Ricerca potrebbe non accettare tutti i dati delle proprietà che si desidera generare. Tuttavia, è possibile aumentare MaxGrowFactor in base alle proprie esigenze. <br/></td>
 </tr>
 </tbody>
 </table>
@@ -131,72 +131,72 @@ Per ognuna di queste proprietà, è necessario determinare gli attributi che dev
  
 
 > [!Note]  
-> Per l'attributo columnIndexType, il vantaggio di una query più veloce deve essere ponderato rispetto al tempo di indicizzazione e ai costi di spazio maggiori che gli indici secondari possono sostenere. Questo costo viene tuttavia pagato solo per gli elementi con un valore non **null** , quindi per la maggior parte delle proprietà questo attributo può essere impostato su "ondisk".
+> Per l'attributo columnIndexType, il vantaggio delle query più veloci deve essere ponderato rispetto ai costi maggiori di tempo e spazio di indicizzazione che gli indici secondari possono sostenere. Tuttavia, questo costo viene pagato solo per gli elementi con un valore diverso da **Null,** pertanto per la maggior parte delle proprietà questo attributo può essere impostato su "OnDisk".
 
  
 
 ### <a name="full-text-support"></a>Supporto full-text
 
-In generale, la ricerca full-text è supportata dai componenti chiamati [filtri](-search-3x-wds-extidx-filters.md); Tuttavia, per i tipi di file basati su testo con formati di file non complicati, i gestori di proprietà possono essere in grado di fornire questa funzionalità con un minor sforzo di sviluppo. È consigliabile esaminare la sezione del [contenuto full-text](../properties/building-property-handlers-property-handlers.md) per un confronto tra le funzionalità di filtro e di gestione delle proprietà che consentono di decidere quale sia la soluzione migliore per il tipo di file. Di particolare importanza è il fatto che i filtri possono gestire gli identificatori di codice in più lingue (LCID) per ogni file, mentre i gestori di proprietà non possono.
+In generale, la ricerca full-text è supportata da componenti denominati [filtri](-search-3x-wds-extidx-filters.md). Tuttavia, per i tipi di file basati su testo con formati di file non complicati, i gestori delle proprietà possono essere in grado di fornire questa funzionalità con meno sforzo di sviluppo. È consigliabile esaminare la sezione Full-Text Contents (Contenuto [full-text)](../properties/building-property-handlers-property-handlers.md) per un confronto tra funzionalità di filtro e gestore delle proprietà che consentono di decidere cosa è meglio per il tipo di file. Di particolare importanza è il fatto che i filtri possono gestire più identificatori di codice del linguaggio (PID) per ogni file, mentre i gestori delle proprietà non possono.
 
 > [!Note]  
-> Poiché i gestori di proprietà non possono suddividere il contenuto nel modo in cui i filtri possono, i file di grandi dimensioni (anche se sono formati di file non complicati) devono essere completamente caricati in memoria.
+> Poiché i gestori di proprietà non possono creare blocchi di contenuto come i filtri, i file di grandi dimensioni (anche se sono formati di file non complicati) devono essere caricati completamente in memoria.
 
  
 
-### <a name="operating-system-implementatation-considerations"></a>Considerazioni sul Implementatation del sistema operativo
+### <a name="operating-system-implementatation-considerations"></a>Considerazioni sull'implementatazione del sistema operativo
 
-### <a name="implementation-information-for-windows-7"></a>Informazioni di implementazione per Windows 7
+### <a name="implementation-information-for-windows-7"></a>Informazioni sull'implementazione Windows 7
 
-In Windows 7 e versioni successive, si verifica un nuovo comportamento quando si registra un gestore di proprietà, un [**IFilter**](/windows/win32/api/filter/nn-filter-ifilter)o una nuova estensione. Quando viene installato un nuovo gestore di proprietà e/o **IFilter** , i file con le estensioni corrispondenti vengono automaticamente reindicizzati.
+In Windows 7 e versioni successive è presente un nuovo comportamento quando si registra un gestore delle proprietà, [**IFilter**](/windows/win32/api/filter/nn-filter-ifilter)o una nuova estensione. Quando viene installato un nuovo gestore delle proprietà e/o **IFilter,** i file con le estensioni corrispondenti vengono reindicizzati automaticamente.
 
-In Windows 7 è consigliabile installare un [**IFilter**](/windows/win32/api/filter/nn-filter-ifilter) insieme ai gestori di proprietà corrispondenti e che **IFilter** venga registrato prima del gestore della proprietà. La registrazione del gestore delle proprietà avvia la reindicizzazione immediata dei file indicizzati in precedenza senza dover prima riavviare il computer e sfrutta tutti gli IFilter registrati in precedenza ai fini dell'indicizzazione del contenuto.
+In Windows 7 è consigliabile installare un [**IFilter**](/windows/win32/api/filter/nn-filter-ifilter) insieme ai gestori delle proprietà corrispondenti e che il filtro **IFilter** venga registrato prima del gestore della proprietà. La registrazione del gestore delle proprietà avvia la nuova indicizzazione immediata dei file indicizzati in precedenza senza prima richiedere un riavvio e sfrutta tutti gli IFilter registrati in precedenza ai fini dell'indicizzazione del contenuto.
 
-Se è installato solo un [**IFilter**](/windows/win32/api/filter/nn-filter-ifilter) , senza un gestore proprietà corrispondente, la reindicizzazione automatica viene eseguita dopo il riavvio del servizio di indicizzazione o il riavvio del sistema.
+Se è installato solo [**un filtro IFilter,**](/windows/win32/api/filter/nn-filter-ifilter) senza un gestore delle proprietà corrispondente, la reindicizzazione automatica viene eseguita dopo un riavvio del servizio di indicizzazione o un riavvio del sistema.
 
-Per i flag di descrizione della proprietà specifici di Windows 7, vedere gli argomenti di riferimento seguenti:
+Per i flag di descrizione delle proprietà Windows 7, vedere gli argomenti di riferimento seguenti:
 
 -   [GETPROPERTYSTOREFLAGS](/windows/win32/api/propsys/ne-propsys-getpropertystoreflags)
--   [tipo di PROPDESC \_ COLUMNINDEX \_](/windows/win32/api/propsys/ne-propsys-propdesc_columnindex_type)
--   [\_flag SEARCHINFO \_ PROPDESC](/windows/win32/api/propsys/ne-propsys-propdesc_searchinfo_flags)
+-   [TIPO PROPDESC \_ \_ COLUMNINDEX](/windows/win32/api/propsys/ne-propsys-propdesc_columnindex_type)
+-   [FLAG PROPDESC \_ SEARCHINFO \_](/windows/win32/api/propsys/ne-propsys-propdesc_searchinfo_flags)
 
 ### <a name="implementation-information-for-windows-vista-and-earlier"></a>Informazioni di implementazione per Windows Vista e versioni precedenti
 
-Prima di Windows Vista, i filtri fornivano il supporto per l'analisi e l'enumerazione di contenuto e proprietà del file. Con l'introduzione del sistema di proprietà, i gestori delle proprietà gestiscono le proprietà dei file mentre i filtri gestiscono il contenuto del file. Per Windows Vista, è necessario sviluppare solo un'implementazione parziale dell'interfaccia [**IFilter**](/windows/win32/api/filter/nn-filter-ifilter)in coordinamento con un gestore di proprietà, come descritto in [procedure consigliate per la creazione di gestori di filtro in Windows Search](-search-3x-wds-extidx-filters.md).
+Prima di Windows Vista, i filtri hanno fornito il supporto per l'analisi e l'enumerazione del contenuto e delle proprietà dei file. Con l'introduzione del sistema di proprietà, i gestori delle proprietà gestiscono le proprietà dei file mentre i filtri gestiscono il contenuto del file. Per Windows Vista, è necessario sviluppare solo un'implementazione parziale dell'interfaccia [**IFilter**](/windows/win32/api/filter/nn-filter-ifilter)in coordinamento con un gestore delle proprietà, come descritto in Procedure consigliate per la creazione di gestori filtri in Windows [Ricerca](-search-3x-wds-extidx-filters.md).
 
-Sebbene il sistema di proprietà sia incluso anche nell'installazione di Windows Search per Windows XP, le applicazioni di terze parti e legacy possono richiedere che i filtri gestiscano sia il contenuto che le proprietà. Pertanto, se si sta sviluppando sulla piattaforma Windows XP, è necessario fornire un'implementazione di filtro completo e un gestore di proprietà per il tipo di file o la proprietà personalizzata.
+Anche se il sistema di proprietà è incluso nell'installazione Windows Search per Windows XP, le applicazioni di terze parti e legacy possono richiedere che i filtri gestino sia il contenuto che le proprietà. Pertanto, se si sviluppa nella piattaforma Windows XP, è necessario fornire un'implementazione completa del filtro, nonché un gestore delle proprietà per il tipo di file o la proprietà personalizzata.
 
  
 
-## <a name="writing-property-description-files"></a>Scrittura dei file di descrizione delle proprietà
+## <a name="writing-property-description-files"></a>Scrittura di file di descrizione delle proprietà
 
-La struttura dei file XML di descrizione della proprietà (con estensione propdesc) è descritta nell'argomento [PropertyDescription](../properties/propdesc-schema-propertydescription.md) . Di particolare interesse per la ricerca sono gli attributi dell'elemento [searchInfo](../properties/propdesc-schema-searchinfo.md) . Dopo aver deciso quali proprietà supportare, è necessario creare e registrare i file di descrizione delle proprietà per ogni proprietà. Quando si registrano i file con estensione propdesc, questi vengono inclusi nell'elenco di descrizioni delle proprietà dello schema e diventano nomi di colonna all'interno dell'archivio delle proprietà del motore di ricerca.
+La struttura dei file XML di descrizione della proprietà (con estensione propdesc) è descritta [nell'argomento propertyDescription.](../properties/propdesc-schema-propertydescription.md) Di particolare interesse per la ricerca sono gli attributi [dell'elemento searchInfo.](../properties/propdesc-schema-searchinfo.md) Dopo aver deciso quali proprietà supportare, è necessario creare e registrare i file di descrizione delle proprietà per ogni proprietà. Quando si registrano i file propdesc, questi vengono inclusi nell'elenco di descrizione delle proprietà dello schema e diventano nomi di colonna all'interno dell'archivio delle proprietà del motore di ricerca.
 
-È possibile registrare le descrizioni delle proprietà personalizzate utilizzando la funzione [PSRegisterPropertySchema](/windows/win32/api/propsys/nf-propsys-psregisterpropertyschema) , un'API wrapper che chiama IPropertySystem:: RegisterPropertySchema del sottosistema dello schema. Questa funzione informa il sottosistema dello schema dell'aggiunta di file di schema di descrizione della proprietà (. propdesc), usando i percorsi di file nei file con estensione propdesc nel computer locale, in genere la directory di installazione dell'applicazione in "programmi". In genere, un'installazione o un'applicazione (ad esempio, il programma di installazione del gestore di proprietà) chiamerà questo metodo dopo l'installazione dei file con estensione propdesc.
+È possibile registrare le descrizioni delle proprietà personalizzate usando la [funzione PSRegisterPropertySchema,](/windows/win32/api/propsys/nf-propsys-psregisterpropertyschema) un'API wrapper che chiama IPropertySystem::RegisterPropertySchema del sottosistema dello schema. Questa funzione informa il sottosistema dello schema dell'aggiunta di file dello schema di descrizione delle proprietà (propdesc), usando percorsi di file ai file propdesc nel computer locale, in genere la directory di installazione dell'applicazione in "Programmi". In genere, un'installazione o un'applicazione (ad esempio, il programma di installazione del gestore delle proprietà) chiamerà questo metodo dopo l'installazione dei file propdesc.
 
  
 
 ## <a name="implementing-property-handlers"></a>Implementazione di gestori di proprietà
 
-Lo sviluppo di un gestore di proprietà comporta l'implementazione delle interfacce seguenti:
+Lo sviluppo di un gestore delle proprietà comporta l'implementazione delle interfacce seguenti:
 
--   IInitialzeWithStream: fornisce l'inizializzazione basata sul flusso del gestore della proprietà.
+-   IInitialzeWithStream: fornisce l'inizializzazione basata su flusso del gestore delle proprietà.
 -   IPropertyStore: enumera, ottiene e imposta i valori delle proprietà.
--   IPropertyStoreCapabilities: facoltativo. Indica se gli utenti possono modificare una proprietà da un'interfaccia utente.
+-   IPropertyStoreCapabilities: facoltativo. Identifica se gli utenti possono modificare una proprietà da un'interfaccia utente.
 
 ### <a name="iinitializewithstream"></a>IInitializeWithStream
 
-Come descritto nell'argomento relativo al [sistema di proprietà](../properties/building-property-handlers.md) , è consigliabile implementare i gestori di proprietà con **IInitializeWithStream** per eseguire l'inizializzazione basata sul flusso. Se si sceglie di non implementare IInitializeWithStream, il gestore della proprietà deve rifiutare esplicitamente l'esecuzione nel processo di isolamento impostando il flag DisableProcessIsolation nella chiave del registro di sistema del gestore proprietà. La disabilitazione dell'isolamento dei processi è in genere destinata solo ai gestori di proprietà legacy e deve essere evitata con qualsiasi nuovo codice.
+Come descritto [nell'argomento Sistema di](../properties/building-property-handlers.md) proprietà, è consigliabile implementare gestori di proprietà con **IInitializeWithStream** per eseguire l'inizializzazione basata sul flusso. Se si sceglie di non implementare IInitializeWithStream, il gestore della proprietà deve rifiutare esplicitamente l'esecuzione nel processo di isolamento impostando il flag DisableProcessIsolation nella chiave del Registro di sistema del gestore delle proprietà. La disabilitazione dell'isolamento dei processi è in genere destinata solo ai gestori di proprietà legacy e deve essere evitata in modo faticoso da qualsiasi nuovo codice.
 
-### <a name="ipropertystore"></a>IPropertyStore
+### <a name="ipropertystore"></a>Ipropertystore
 
-Per creare un gestore di proprietà, è necessario implementare l'interfaccia [**IPropertyStore**](/windows/win32/api/propsys/nn-propsys-ipropertystore) con i metodi seguenti.
+Per creare un gestore delle proprietà, è necessario implementare [**l'interfaccia IPropertyStore**](/windows/win32/api/propsys/nn-propsys-ipropertystore) con i metodi seguenti.
 
 
 
 | Metodo   | Descrizione                                                         |
 |----------|---------------------------------------------------------------------|
-| Commit   | Salva una modifica apportata a una proprietà nel file.                                |
+| Commit   | Salva una modifica di proprietà nel file.                                |
 | GetAt    | Recupera una chiave di proprietà dalla matrice di proprietà di un elemento.        |
 | GetCount | Ottiene il numero di proprietà associate al file.                 |
 | GetValue | Recupera i dati per una proprietà specifica.                             |
@@ -210,10 +210,10 @@ Per creare un gestore di proprietà, è necessario implementare l'interfaccia [*
 
  
 
-Importanti considerazioni per l'implementazione di questa interfaccia sono incluse nella documentazione di [**IPropertyStore**](/windows/win32/api/propsys/nn-propsys-ipropertystore) .
+Considerazioni importanti per l'implementazione di questa interfaccia sono incluse nella documentazione [**di IPropertyStore.**](/windows/win32/api/propsys/nn-propsys-ipropertystore)
 
 > [!Note]  
-> Se il gestore delle proprietà emette più valori per la stessa proprietà per un determinato elemento, solo l'ultimo valore emesso viene archiviato nel catalogo.
+> Se il gestore della proprietà genera più valori per la stessa proprietà per un determinato elemento, nel catalogo viene archiviato solo l'ultimo valore generato.
 
  
 
@@ -221,21 +221,21 @@ Importanti considerazioni per l'implementazione di questa interfaccia sono inclu
 
 ### <a name="ipropertystorecapabilities"></a>IPropertyStoreCapabilities
 
-I gestori di proprietà possono implementare facoltativamente questa interfaccia per disabilitare la capacità di un utente di modificare proprietà specifiche. Queste proprietà sono in genere modificabili nella pagina dei dettagli e nel riquadro, ma non sono consentite nel gestore delle proprietà di implementazione. Implementare correttamente questa interfaccia offre un'esperienza utente migliore rispetto all'alternativa, ovvero un semplice errore di run-time dalla Shell.
+I gestori di proprietà possono implementare facoltativamente questa interfaccia per disabilitare la possibilità di un utente di modificare proprietà specifiche. Queste proprietà sono in genere modificabili nella pagina Dettagli e nel riquadro, ma la modifica non è consentita nel gestore delle proprietà di implementazione. L'implementazione corretta di questa interfaccia offre un'esperienza utente migliore rispetto all'alternativa, ovvero un semplice errore di run-time dalla shell.
 
  
 
 ## <a name="ensuring-your-items-get-indexed"></a>Verifica dell'indicizzazione degli elementi
 
-Ora che è stato implementato il gestore delle proprietà, è necessario assicurarsi che gli elementi per i quali viene registrato il gestore vengano indicizzati. È possibile utilizzare [gestione catalogo](-search-3x-wds-mngidx-catalog-manager.md) per avviare la reindicizzazione ed è inoltre possibile utilizzare il [gestore dell'ambito di ricerca per indicizzazione](-search-3x-wds-extidx-csm.md) per configurare le regole predefinite che indicano gli URL per cui l'indicizzatore deve eseguire la ricerca per indicizzazione. Un'altra opzione consiste nel seguire l'esempio di codice REINDEX negli [esempi di Windows Search SDK](https://www.microsoft.com/downloads/details.aspx?FamilyID=645300AE-5E7A-4CE7-95F0-49793F8F76E8).
+Dopo aver implementato il gestore delle proprietà, è necessario assicurarsi che gli elementi registrati per il gestore siano indicizzati. È possibile usare [Gestione](-search-3x-wds-mngidx-catalog-manager.md) cataloghi per avviare nuovamente l'indicizzazione ed è anche possibile usare il [Gestione ambito ricerca per indicizzazione](-search-3x-wds-extidx-csm.md) per configurare regole predefinite che indicano gli URL per cui l'indicizzatore deve eseguire la ricerca per indicizzazione. Un'altra opzione è seguire l'esempio di codice ReIndex negli esempi Windows [SDK di ricerca](https://www.microsoft.com/downloads/details.aspx?FamilyID=645300AE-5E7A-4CE7-95F0-49793F8F76E8).
 
-Per ulteriori informazioni, vedere [utilizzo di gestione catalogo](-search-3x-wds-mngidx-catalog-manager.md) e [utilizzo di gestione ambito ricerca per indicizzazione](-search-3x-wds-extidx-csm.md).
+Per altre informazioni, vedere [Uso di Gestione cataloghi](-search-3x-wds-mngidx-catalog-manager.md) e Uso della [Gestione ambito ricerca per indicizzazione](-search-3x-wds-extidx-csm.md).
 
  
 
 ## <a name="installing-and-registering-property-handlers"></a>Installazione e registrazione di gestori di proprietà
 
-Con il gestore di proprietà implementato, deve essere registrato e la relativa estensione del nome file associata al gestore. Nell'esempio seguente vengono illustrate le chiavi del registro di sistema e i valori necessari per eseguire questa operazione.
+Con il gestore della proprietà implementato, deve essere registrato e la relativa estensione di file associata al gestore. L'esempio seguente illustra le chiavi e i valori del Registro di sistema necessari per eseguire questa operazione.
 
 ```
 HKEY_CLASSES_ROOT
@@ -261,71 +261,71 @@ HKEY_LOCAL_MACHINE
 
  
 
-## <a name="testing-and-troubleshooting-property-handlers"></a>Test e risoluzione dei problemi relativi ai gestori di proprietà
+## <a name="testing-and-troubleshooting-property-handlers"></a>Test e risoluzione dei problemi dei gestori delle proprietà
 
-Nell'elenco seguente vengono forniti consigli sui tipi di test da eseguire:
+L'elenco seguente offre consigli sui tipi di test da eseguire:
 
 -   Testare il recupero dell'output da ogni singola proprietà supportata dal tipo di file.
--   Usare i valori di proprietà Big, ad esempio, usare un metatag di grandi dimensioni nei documenti HTML.
--   Verificare che il gestore delle proprietà non perda gli handle di file modificando l'output del gestore proprietà o utilizzando uno strumento come oh.exe prima e dopo l'enumerazione delle proprietà del file.
--   Testare tutti i tipi di file associati al gestore della proprietà. Verificare, ad esempio, che il filtro HTML funzioni con i tipi di file con estensione htm e HTML.
--   Eseguire test con file danneggiati. Il gestore delle proprietà dovrebbe avere esito negativo normalmente.
--   Se un'applicazione supporta la crittografia, verificare che il gestore della proprietà non restituisca il testo crittografato.
+-   Usare valori di proprietà di grandi dimensioni, ad esempio usare un metatag di grandi dimensioni nei documenti HTML.
+-   Verificare che il gestore della proprietà non pervade gli handle di file modificandolo dopo aver restituito l'output dal gestore delle proprietà o usando uno strumento come oh.exe prima e dopo l'enumerazione delle proprietà del file.
+-   Testare tutti i tipi di file associati al gestore della proprietà. Ad esempio, verificare che il filtro HTML funzioni con .htm e .html di file.
+-   Eseguire il test con file danneggiati. Il gestore della proprietà deve avere esito negativo correttamente.
+-   Se un'applicazione supporta la crittografia, verificare che il gestore della proprietà non restituisce testo crittografato.
 -   Se il gestore delle proprietà supporta la ricerca full-text:
     -   Usare più caratteri Unicode speciali nel contenuto del file e testarne l'output.
-    -   Testare la gestione di documenti di dimensioni molto grandi per assicurarsi che il gestore di proprietà funzioni come previsto.
+    -   Testare la gestione di documenti di grandi dimensioni per assicurarsi che il gestore delle proprietà funzioni come previsto.
 
-### <a name="installation-and-setup-tests"></a>Test di installazione e configurazione
+### <a name="installation-and-setup-tests"></a>Test di installazione e installazione
 
 Infine, è necessario testare le routine di installazione e disinstallazione.
 
--   L'installazione deve essere ripristinata da installazioni non riuscite, ad esempio dall'annullamento e dal riavvio del programma di installazione.
--   Uninstall deve eliminare tutti i file associati al gestore della proprietà.
--   La disinstallazione non deve eliminare file diversi da quelli associati all'installazione del gestore della proprietà.
--   Le chiavi del registro di sistema associate al gestore proprietà devono essere rimosse quando viene disinstallato.
+-   L'installazione deve essere ripristinata da installazioni non riuscite, ad esempio annullando e quindi riavviando l'installazione.
+-   La disinstallazione deve eliminare tutti i file associati al gestore delle proprietà.
+-   La disinstallazione non deve eliminare file diversi da quelli associati all'installazione del gestore delle proprietà.
+-   Le chiavi del Registro di sistema associate al gestore delle proprietà devono essere rimosse quando vengono disinstallate.
 -   La disinstallazione deve funzionare anche se i file vengono eliminati dalla directory di installazione.
 
-### <a name="troubleshooting-property-handlers"></a>Risoluzione dei problemi relativi ai gestori di proprietà
+### <a name="troubleshooting-property-handlers"></a>Risoluzione dei problemi relativi ai gestori delle proprietà
 
-Di seguito sono riportati alcuni errori comuni eseguiti durante lo sviluppo dei gestori delle proprietà:
+Di seguito sono riportati alcuni errori comuni che si verificano durante lo sviluppo di gestori di proprietà:
 
--   Installazione di file con estensione propdesc o dll in una directory utente.
--   Registrazione dei componenti mediante percorsi relativi.
--   Registrazione dei componenti in HKEY \_ Current \_ User anziché HKEY \_ Local \_ computer.
--   Si dimentica di impostare DisableProcessIsolation per i gestori non di flusso.
--   Posizionamento del file di test in una posizione non indicizzata.
+-   Installazione di file con estensione propdesc o DLL in una directory utente.
+-   Registrazione dei componenti tramite percorsi relativi.
+-   Registrazione dei componenti in HKEY \_ CURRENT USER anziché in \_ HKEY LOCAL \_ \_ MACHINE.
+-   Dimenticando di impostare DisableProcessIsolation per i gestori non di flusso.
+-   Inserimento del file di test in un percorso non indicizzato.
 
-Se si verificano problemi durante l'utilizzo dell'indicizzatore da parte del gestore delle proprietà, di seguito sono riportati alcuni suggerimenti utili per risolvere i problemi:
+Se si verificano problemi quando il gestore delle proprietà lavora con l'indicizzatore, ecco alcuni suggerimenti per la risoluzione dei problemi:
 
--   Verificare che le descrizioni delle proprietà (file con estensione propdesc) siano contrassegnate come colonna = "**true**", visualizzabile = "**true**" e Queryable = "**true**" nel modo appropriato.
--   Verificare che i file con estensione propdesc si trovino in un percorso globale.
--   Verificare che i file con estensione propdesc siano stati registrati usando percorsi assoluti.
+-   Verificare che le descrizioni delle proprietà (file con estensione propdesc) siano contrassegnate come isColumn="**true**", isViewable="**true**", e isQueryable="**true**" nel modo appropriato.
+-   Verificare che i file propdesc siano in un percorso globale.
+-   Verificare di aver registrato i file con estensione propdesc usando percorsi assoluti.
 -   Verificare che nel registro eventi non siano stati registrati errori durante la registrazione del file con estensione propdesc.
--   Verificare che le dll si trovino in un percorso globale (e non nel profilo utente).
--   Verificare che le dll siano registrate in HKEY \_ Local \_ Machine \\ software \\ Classes.
--   Verificare che le dll siano registrate usando percorsi completi (o le \_ stringhe reg Expand \_ SZ che si espandono in percorsi assoluti usando le variabili di ambiente note dall'account di sistema).
--   Verificare che il gestore delle proprietà funzioni in Esplora risorse.
--   Sebbene sia consigliabile usare IInitializeWithStream, se è necessario usare IInitializeWithFile o IInitializeWithItem, verificare di specificare DisableProcessIsolation.
--   Verificare che il pannello di controllo opzioni di indicizzazione elenchi il tipo di file come tipo di file indicizzato.
--   Verificare che il file di test si trovi in una posizione indicizzata.
--   Verificare che il file di test sia stato modificato dopo l'installazione del gestore della proprietà.
+-   Verificare che le DLL si trovano in una posizione globale (e non nel profilo utente).
+-   Verificare che le DLL siano registrate in HKEY \_ LOCAL \_ MACHINE Software \\ \\ Classes.
+-   Verificare che le DLL siano registrate usando percorsi completi (o stringhe REG EXPAND SZ che si espandono a percorsi assoluti usando variabili di ambiente \_ \_ note dall'account di sistema).
+-   Verificare che il gestore delle proprietà funzioni in Windows Explorer.
+-   Anche se è consigliabile usare IInitializeWithStream, se è necessario usare IInitializeWithFile o IInitializeWithItem, verificare di specificare DisableProcessIsolation.
+-   Verificare che nella sezione Opzioni di Pannello di controllo il tipo di file sia elencato come tipo di file indicizzato.
+-   Verificare che il file di test si trova in un percorso indicizzato.
+-   Verificare che il file di test sia stato modificato dopo l'installazione del gestore delle proprietà.
 
-Se il file di test si trova in una posizione indicizzata e l'indicizzatore ha già sottoposto a ricerca per indicizzazione, è necessario modificare il file in qualche modo per attivare una reindicizzazione del file.
+Se il file di test si trova in un percorso indicizzato e l'indicizzatore ha già sottoposto a ricerca per indicizzazione tale percorso, è necessario modificare il file in qualche modo per attivare una reindicizzazione del file.
 
  
 
-## <a name="using-system-supplied-property-handlers"></a>Utilizzo di System-Supplied gestori di proprietà
+## <a name="using-system-supplied-property-handlers"></a>Uso System-Supplied gestori di proprietà
 
 Windows include diversi gestori di proprietà forniti dal sistema che è possibile usare se il formato del tipo di file è compatibile. Se si definisce una nuova estensione di file che usa uno di questi formati, è possibile usare i gestori forniti dal sistema registrando l'identificatore di classe del gestore (CLSID) per l'estensione di file.
 
-È possibile utilizzare il CLSID elencato nella tabella seguente per registrare i gestori di proprietà forniti dal sistema per il tipo di formato di file.
+È possibile usare il CLSID elencato nella tabella seguente per registrare i gestori delle proprietà forniti dal sistema per il tipo di formato di file.
 
 
 
 | Formato          | CLSID                                  |
 |-----------------|----------------------------------------|
-| DocFile OLE     | {8d80504a-0826-40c5-97e1-ebc68f953792} |
-| Salva XML del gioco   | {ECDD6472-2B9B-4b4b-AE36-F316DF3C8D60} |
+| OLE DocFile     | {8d80504a-0826-40c5-97e1-ebc68f953792} |
+| Salvare il codice XML del gioco   | {ECDD6472-2B9B-4b4b-AE36-F316DF3C8D60} |
 | Gestore XPS/OPC | {45670FA8-ED97-4F44-BC93-305082590BFB} |
 | XML             | {c73f6f30-97a0-4ad1-a08f-540d4e9bc7b9} |
 
@@ -333,15 +333,15 @@ Windows include diversi gestori di proprietà forniti dal sistema che è possibi
 
  
 
-Prima di creare una proprietà personalizzata, è necessario assicurarsi che non esista una proprietà definita dal sistema che è invece possibile usare. È possibile enumerare le proprietà definite dal sistema chiamando [**PSEnumeratePropertyDescriptions**](/windows/win32/api/propsys/nf-propsys-psenumeratepropertydescriptions) o utilizzando lo strumento da riga di comando prop.exe.
+Prima di creare una proprietà personalizzata, è necessario assicurarsi che non sia disponibile una proprietà definita dal sistema che è possibile usare. È possibile enumerare le proprietà definite dal sistema chiamando [**PSEnumeratePropertyDescriptions**](/windows/win32/api/propsys/nf-propsys-psenumeratepropertydescriptions) o usando lo prop.exe da riga di comando.
 
-Lo schema del sistema definisce il modo in cui queste proprietà interagiscono con l'indicizzatore e non è possibile modificarlo. Inoltre, l'applicazione utilizzata per creare, modificare e salvare il tipo di file deve essere conforme anche a un determinato comportamento. Se, ad esempio, l'applicazione implementa il salvataggio sicuro (in base al quale viene creato un file temporaneo durante la modifica e quindi ReplaceFile () viene usato per scambiare la nuova versione per il vecchio), deve trasferire tutte le proprietà dal file originale al nuovo file. In caso contrario, il file perde le proprietà aggiunte dagli utenti o da altre applicazioni.
+Lo schema di sistema definisce il modo in cui queste proprietà interagiscono con l'indicizzatore e non è possibile modificarlo. Inoltre, l'applicazione utilizzata per creare, modificare e salvare il tipo di file deve essere conforme anche a determinati comportamenti. Ad esempio, se l'applicazione implementa il salvataggio sicuro (in cui viene creato un file temporaneo durante la modifica e quindi ReplaceFile() viene usato per scambiare la nuova versione con la versione precedente), deve trasferire tutte le proprietà dal file originale al nuovo file. In caso negativo, il file perde le proprietà aggiunte da utenti o altre applicazioni.
 
  
 
 **Esempio**
 
-Di seguito viene illustrata la registrazione del gestore DocFile OLE fornito dal sistema per un tipo di file con un oggetto. Estensione OLEDocFile.
+Di seguito viene illustrata la registrazione del gestore OLE DocFile fornito dal sistema per un tipo di file con . Estensione OLEDocFile.
 
 ```
 HKEY_CLASSES_ROOT
@@ -352,7 +352,7 @@ HKEY_CLASSES_ROOT
                (Default) = {9DBD2C50-62AD-11d0-B806-00C04FD706EC}
 ```
 
-Di seguito viene illustrata la registrazione delle informazioni sull'elenco di proprietà in modo che le proprietà di. I file OLEDocFile vengono visualizzati nel riquadro e nella scheda Dettagli.
+Di seguito viene illustrata la registrazione delle informazioni sull'elenco delle proprietà in modo che le proprietà di . I file OLEDocFile vengono visualizzati nella scheda Dettagli e nel riquadro.
 
 ```
 HKEY_CLASSES_ROOT
@@ -397,7 +397,7 @@ System.FileOwner;System.ComputerName
 **Informazioni concettuali**
 </dt> <dt>
 
-[Procedure consigliate per la creazione di gestori di filtro in Windows Search](-search-3x-wds-extidx-filters.md)
+[Procedure consigliate per la creazione di gestori di filtri in Windows ricerca](-search-3x-wds-extidx-filters.md)
 </dt> <dt>
 
 [Processo di indicizzazione](-search-indexing-process-overview.md)
@@ -418,7 +418,7 @@ System.FileOwner;System.ComputerName
 [Proprietà di sistema](https://msdn.microsoft.com/library/bb763010(VS.85).aspx)
 </dt> <dt>
 
-[Esempi di Windows Search SDK](https://www.microsoft.com/downloads/details.aspx?FamilyID=645300AE-5E7A-4CE7-95F0-49793F8F76E8)
+[Windows Esempi di SDK di ricerca](https://www.microsoft.com/downloads/details.aspx?FamilyID=645300AE-5E7A-4CE7-95F0-49793F8F76E8)
 </dt> </dl>
 
  

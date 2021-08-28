@@ -17,12 +17,12 @@ api_location:
 topic_type:
 - APIRef
 - kbSyntax
-ms.openlocfilehash: 5c30b0d8641ff28b12d3f10b62957b5cf7be8f8b
-ms.sourcegitcommit: 4e94fc75fad7b2a0f3c92a26f97e89924e59b7a9
+ms.openlocfilehash: 52f60bd5ad14e68a0ed1935ade404d99a378e9a0
+ms.sourcegitcommit: c276a8912787b2cda74dcf54eb96df961bb1188b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/24/2021
-ms.locfileid: "122786341"
+ms.lasthandoff: 08/20/2021
+ms.locfileid: "122629075"
 ---
 # <a name="span-idvspixengineiframeeventsrequestspaniframeeventsrequest-interface"></a><span id="vspixengine.iframeeventsrequest"></span>Interfaccia IFrameEventsRequest
 
@@ -36,9 +36,9 @@ Richiesta di restituzione dell'elenco di eventi in un frame.
 
 ### <a name="span-idmethodsspanmethods"></a><span id="methods"></span>Metodi
 
-**L'interfaccia IFrameEventsRequest** include questi metodi.
+Questi metodi sono disponibili nell'interfaccia **IFrameEventsRequest.**
 
-<table><colgroup><col  /><col  /></colgroup><thead><tr class="header"><th >Metodo</th><th >Descrizione</th></tr></thead><tbody><tr class="odd"><td ><a href="/windows/desktop/direct3dtools/iframeeventsrequest-requestasync-dword-dword-dword-arr-iframeeventscallback-ptr-dword-dword"><strong>RequestAsync</strong></a></td><td ><p>Richiesta asincrona per ottenere le informazioni specificate su un singolo frame specificato.</p></td></tr><tr class="even"><td ><a href="/windows/desktop/direct3dtools/iframeeventsrequest-requestsupportedcolumnsasync-iframeeventscallback-ptr-dword"><strong>RequestSupportedColumnsAsync</strong></a></td><td ><p>Richiesta asincrona per ottenere informazioni sulle colonne (campi) supportate da questo tipo di richiesta di eventi frame.</p></td></tr></tbody></table>
+<table><colgroup><col  /><col  /></colgroup><thead><tr class="header"><th style="text-align: left;">Metodo</th><th style="text-align: left;">Descrizione</th></tr></thead><tbody><tr class="odd"><td style="text-align: left;"><a href="/windows/desktop/direct3dtools/iframeeventsrequest-requestasync-dword-dword-dword-arr-iframeeventscallback-ptr-dword-dword"><strong>RequestAsync</strong></a></td><td style="text-align: left;"><p>Richiesta asincrona per ottenere informazioni specificate su un singolo frame specificato.</p></td></tr><tr class="even"><td style="text-align: left;"><a href="/windows/desktop/direct3dtools/iframeeventsrequest-requestsupportedcolumnsasync-iframeeventscallback-ptr-dword"><strong>RequestSupportedColumnsAsync</strong></a></td><td style="text-align: left;"><p>Richiesta asincrona per ottenere informazioni sulle colonne (campi) supportate da questo tipo di richiesta eventi frame.</p></td></tr></tbody></table>
 
  
 

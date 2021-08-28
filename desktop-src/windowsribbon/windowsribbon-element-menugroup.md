@@ -13,12 +13,12 @@ api_type:
 ms.topic: reference
 ms.date: 05/31/2018
 api_location: ''
-ms.openlocfilehash: 854b33d1e11df15b5b383bf004986edc18418f6204ae1298c3171a6653cf5301
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: dad52aebe4a90d132827f01400fc7a1f2bbf1fde
+ms.sourcegitcommit: c276a8912787b2cda74dcf54eb96df961bb1188b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "118707095"
+ms.lasthandoff: 08/20/2021
+ms.locfileid: "122624717"
 ---
 # <a name="menugroup-element"></a>Elemento MenuGroup
 
@@ -40,10 +40,10 @@ Rappresenta un contenitore di controlli da visualizzare in una raccolta, in un m
 
 <table>
 <colgroup>
-<col style="width: 25%" />
-<col style="width: 25%" />
-<col style="width: 25%" />
-<col style="width: 25%" />
+<col  />
+<col  />
+<col  />
+<col  />
 </colgroup>
 <thead>
 <tr class="header">

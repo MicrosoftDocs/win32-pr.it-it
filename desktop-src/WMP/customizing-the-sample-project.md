@@ -6,25 +6,25 @@ keywords:
 - Windows Media Player negozi online, personalizzazione di progetti di esempio
 - negozi online, personalizzazione di progetti di esempio
 - negozi online di tipo 2, personalizzazione di progetti di esempio
-- Windows Media Player negozi online, progetti di esempio
+- Windows Media Player online, progetti di esempio
 - negozi online, progetti di esempio
 - negozi online di tipo 2, progetti di esempio
 - personalizzazione di progetti di esempio
 - esempi,tipo 2 negozi online
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 5fdb57327904d81ac85114af0df9037d6c2c054938f16048f6ca72e711063cc4
-ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
+ms.openlocfilehash: f0e83d6384529ea9b67c5132ec9cc1846da5e438
+ms.sourcegitcommit: 61a4c522182aa1cacbf5669683d9570a3bf043b2
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119902081"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "122881810"
 ---
 # <a name="customizing-the-sample-project"></a>Personalizzazione del modello di Project
 
 Quando si crea il proprio negozio online, è necessario modificare le implementazioni dei metodi seguenti nel file denominato YourProject.cpp:
 
--   **CYourProject::allowPlay**. Usare questa funzione per applicare le regole business per la riproduzione di contenuto protetto.
+-   **CYourProject::allowPlay**. Usare questa funzione per applicare le regole di business per la riproduzione di contenuto protetto.
 -   **CYourProject::allow CDBurn**. Usare questa funzione per applicare le regole di business per consentire agli utenti di copiare contenuto protetto in un CD.
 -   **CYourProject::allowPDATransfer**. Usare questa funzione per applicare le regole business per consentire agli utenti di trasferire contenuto protetto in un dispositivo portatile.
 -   **CYourProject::startBackgroundProcessing**. Usare questa funzione per avviare le attività di elaborazione in background necessarie. Ad esempio, è possibile usarlo come opportunità per verificare la presenza di licenze scadute.
@@ -37,9 +37,9 @@ Quando si crea il proprio negozio online, è necessario modificare le implementa
 
 Il **metodo allowPlay** fornisce un puntatore all'interfaccia **IWMPMedia** come parametro. Questa interfaccia è l'Windows Media Player che rappresenta gli oggetti multimediali. Chiamando i metodi su questa interfaccia, è possibile usare gli attributi e le proprietà di un singolo elemento multimediale.
 
-I **metodi allowCDBurn** **e allowPDATransfer** forniscono un puntatore all'interfaccia **IWMPPlaylist** come parametro. Questa interfaccia è l'interfaccia Windows Media Player che rappresenta gli oggetti playlist. Chiamando i metodi su questa interfaccia, è possibile usare gli attributi e le proprietà di una playlist, aggiungere elementi a una playlist o rimuovere elementi da una playlist.
+I **metodi allowCDBurn** **e allowPDATransfer** forniscono un puntatore all'interfaccia **IWMPPlaylist** come parametro. Questa interfaccia è l'Windows Media Player che rappresenta gli oggetti playlist. Chiamando i metodi su questa interfaccia, è possibile usare gli attributi e le proprietà di una playlist, aggiungere elementi a una playlist o rimuovere elementi da una playlist.
 
-Per informazioni su come rimuovere un elemento da una playlist a livello di codice, vedere l'implementazione di **CAllowBaseDialog <T> ::OnRemoveMediaFromPlaylist**. Per altre informazioni sull'uso di oggetti multimediali e playlist, vedere [Player Object Model for Scripting Languages](player-object-model-for-scripting-languages.md).
+Per informazioni su come rimuovere un elemento da una playlist a livello di codice, vedere l'implementazione di **CAllowBaseDialog &lt; T &gt; ::OnRemoveMediaFromPlaylist**. Per altre informazioni sull'uso di oggetti multimediali e playlist, vedere [Player Object Model for Scripting Languages](player-object-model-for-scripting-languages.md).
 
 ## <a name="code-that-can-be-removed"></a>Codice che può essere rimosso
 
@@ -51,8 +51,8 @@ Per informazioni su come rimuovere un elemento da una playlist a livello di codi
 
 Da YourProject.cpp rimuovere il codice seguente:
 
--   Implementazione di **CAllowBaseDialog <T> ::OnInitDialog**.
--   Implementazione di **CAllowBaseDialog <T> ::OnRemoveMediaFromPlaylist**.
+-   Implementazione di **CAllowBaseDialog &lt; T &gt; ::OnInitDialog**.
+-   Implementazione di **CAllowBaseDialog &lt; T &gt; ::OnRemoveMediaFromPlaylist**.
 
 ## <a name="related-topics"></a>Argomenti correlati
 

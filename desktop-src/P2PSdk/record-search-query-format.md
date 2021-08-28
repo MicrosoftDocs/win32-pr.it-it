@@ -4,12 +4,12 @@ ms.assetid: 2c5ab425-6959-418a-8d9a-c8155257fc7e
 title: Formato query di ricerca record
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 23457cfde6955927b3efdcce5ae2dff94480c7cf56849b418547fe2503a36830
-ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
+ms.openlocfilehash: f26a130d937177d4f903bfe52b121b2d67f8720d
+ms.sourcegitcommit: 61a4c522182aa1cacbf5669683d9570a3bf043b2
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119517961"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "122887003"
 ---
 # <a name="record-search-query-format"></a>Formato query di ricerca record
 
@@ -193,9 +193,9 @@ Alcuni caratteri possono essere usati per esprimere criteri di corrispondenza o 
 
 | Modello di caratteri | Descrizione                                                                                                                                                                                                                                                                                                                                                                                                                             |
 |-------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| \*                | Carattere jolly. Quando questo carattere viene rilevato in un valore di clausola, corrisponde a 0-n caratteri di qualsiasi valore, inclusi spazi vuoti e caratteri non alfanumerici. Esempio:<br/> "<clause attrib="peercreatorid" type="string" compare="equal">James \* P</clause>"<br/> Questa clausola corrisponde a **tutti i valori peercreatorid** con il nome "James" e un cognome che inizia con "P".<br/> |
+| \*                | Carattere jolly. Quando questo carattere viene rilevato in un valore di clausola, corrisponde a 0-n caratteri di qualsiasi valore, inclusi spazi vuoti e caratteri non alfanumerici. Ad esempio:<br/> " <clause attrib="peercreatorid" type="string" compare="equal"> James P \* &lt; /clause &gt; "<br/> Questa clausola corrisponde a **tutti i valori peercreatorid** con il nome "James" e un cognome che inizia con "P".<br/> |
 | \\\*              | Asterisco preceduto da un carattere di escape. Questa sequenza corrisponde a un carattere asterisco.                                                                                                                                                                                                                                                                                                                                                                       |
-| ?                 | Carattere jolly a carattere singolo. Quando questo carattere viene rilevato in un valore di clausola, corrisponde a qualsiasi carattere singolo, inclusi gli spazi vuoti e i caratteri non alfanumerici. Per esempio:<br/> "<clause attrib="filename" type="string" compare="equal">data-0?.xml</clause>"<br/> Questa clausola corrisponde **ai valori** dei nomi file, ad esempio "data-01.xml" e "data-0B.xml".<br/>                              |
+| ?                 | Carattere jolly a carattere singolo. Quando questo carattere viene rilevato in un valore di clausola, corrisponde a qualsiasi carattere singolo, inclusi gli spazi vuoti e i caratteri non alfanumerici. Per esempio:<br/> " <clause attrib="filename" type="string" compare="equal"> data-0?.xml&lt; /clause &gt; "<br/> Questa clausola corrisponde **ai valori** dei nomi file come "data-01.xml" e "data-0B.xml".<br/>                              |
 | \\?               | Punto interrogativo preceduto da un carattere di escape. Questa sequenza corrisponde a un carattere punto interrogativo.                                                                                                                                                                                                                                                                                                                                                              |
 | \\\\              | Barra rovesciata preceduta da un carattere di escape. Questa sequenza corrisponde a un singolo carattere barra rovesciata.                                                                                                                                                                                                                                                                                                                                                               |
 

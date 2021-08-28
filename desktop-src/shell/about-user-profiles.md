@@ -9,12 +9,12 @@ api_type: ''
 api_location: ''
 topic_type:
 - kbArticle
-ms.openlocfilehash: f0463a38623baa427a6ddaf3ea19b47704b90e3ef36cf91dea2469e0cd2baa00
-ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
+ms.openlocfilehash: cc6715a63c86913d5a525805e6178b3230505d0b
+ms.sourcegitcommit: 61a4c522182aa1cacbf5669683d9570a3bf043b2
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119884771"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "122879537"
 ---
 # <a name="about-user-profiles"></a>Informazioni sui profili utente
 
@@ -40,7 +40,7 @@ I profili utente offrono i vantaggi seguenti:
 
 ## <a name="user-profile-tiles-in-windows-7-and-later"></a>Riquadri del profilo utente in Windows 7 e versioni successive
 
-In Windows 7 o versioni successive, a ogni profilo utente è associata un'immagine presentata come riquadro utente. Questi riquadri vengono visualizzati agli utenti **nella pagina Pannello di controllo** utente e nella relativa pagina **secondaria** Gestisci account. I file di immagine per gli account Utente predefinito e Guest predefinito vengono visualizzati anche qui se si hanno diritti di accesso di amministratore.
+In Windows 7 o versioni successive, a ogni profilo utente è associata un'immagine presentata come riquadro utente. Questi riquadri vengono visualizzati agli utenti nella **pagina Pannello di controllo** utente e nella relativa **pagina secondaria** Gestisci account. I file di immagine per gli account Utente predefinito e Guest predefinito vengono visualizzati anche qui se si hanno diritti di accesso di amministratore.
 
 > [!Note]  
 > È **possibile accedere alla** pagina secondaria Gestisci account tramite il collegamento Gestisci un altro **account** nell'elemento Pannello di controllo utente. 
@@ -50,19 +50,19 @@ In Windows 7 o versioni successive, a ogni profilo utente è associata un'immagi
 -   %ProgramData% \\ Immagini \\ dell'account utente Microsoft \\Guest.bmp
 -   %ProgramData% \\ Immagini \\ dell'account utente Microsoft \\User.bmp
 
-L'immagine del riquadro dell'utente viene archiviata nella cartella %SystemDrive% \\ Users \\ <username> \\ AppData \\ Local Temp come \\ <username>.bmp. Tutti i caratteri barra ( \\ ) vengono convertiti in caratteri di segno più (+). Ad esempio, DOMAIN \\ user viene convertito in DOMAIN+user.
+L'immagine del riquadro dell'utente viene archiviata nella cartella %SystemDrive% Users username AppData Local Temp come \\ \\ &lt; nome &gt; \\ utente \\ \\ &lt; &gt;.bmp. Tutti i caratteri barra ( \\ ) vengono convertiti in caratteri di segno più (+). Ad esempio, DOMAIN \\ user viene convertito in DOMAIN+user.
 
 Il file di immagine viene visualizzato nella cartella **Temp dell'utente:**
 
 -   Dopo che l'utente ha completato la configurazione iniziale del sistema(OOBE).
 -   Quando l'utente avvia per la **prima volta l'Pannello di controllo** utente.
--   Quando l'utente passa alla **pagina secondaria Gestisci account** dell'elemento **Pannello di controllo** utente. Vengono inoltre visualizzati i riquadri per tutti gli altri utenti nel computer.
+-   Quando l'utente passa alla **pagina secondaria** Gestisci account dell'elemento **account Pannello di controllo** utente. Vengono inoltre visualizzati i riquadri per tutti gli altri utenti nel computer.
 
 Queste istanze sono le uniche volte in cui le immagini vengono create o aggiornate. Di conseguenza, quando si usa il percorso  della cartella Temp a livello di codice è necessario tenere presenti diverse avvertenze:
 
-1.  Non è garantito che il riquadro dell'utente sia presente. Se l'utente elimina il file .bmp, ad esempio manualmente o tramite un'utilità che elimina i file temporanei,  il riquadro utente  non viene ricreato automaticamente fino a quando l'utente non avvia l'elemento Pannello di controllo Account utente o la pagina secondaria Gestisci account.
+1.  Non è garantito che il riquadro dell'utente sia presente. Se l'utente elimina il file .bmp, ad esempio manualmente o tramite un'utilità che elimina i file temporanei, il riquadro utente  non viene ricreato automaticamente fino a quando l'utente non avvia l'elemento account utente **Pannello di controllo** o la pagina secondaria Gestisci account.
 
-2.  I riquadri utente per altri utenti nel computer potrebbero non essere presenti nella cartella Temp dell'utente **attualmente** connesso. Ad esempio, se l'utente A crea l'utente B tramite l'elemento **Pannello di controllo** Account  utente, il riquadro dell'utente B  viene creato nella cartella Temporanea dell'utente A quando Windows invia l'utente A alla pagina secondaria Gestisci account. Poiché la struttura di directory non viene creata per l'utente B fino a quando non esegue l'accesso, la cartella **Temp** dell'utente A è l'unico percorso in cui è archiviato il riquadro dell'utente B. Quando l'utente B esegue l'accesso, l'unica immagine archiviata nella cartella **Temp** dell'utente B è la propria.
+2.  I riquadri utente per altri utenti nel computer potrebbero non essere presenti nella cartella Temp dell'utente **attualmente** connesso. Ad esempio, se l'utente A crea l'utente **B** tramite l'elemento Pannello di controllo Account  utente, il riquadro dell'utente  B viene creato nella cartella Temporanea dell'utente A quando Windows invia l'utente A alla pagina secondaria Gestisci account. Poiché la struttura di directory non viene creata per l'utente B fino a quando non esegue l'accesso, la cartella **Temp** dell'utente A è l'unico percorso in cui è archiviato il riquadro dell'utente B. Quando l'utente B esegue l'accesso, l'unica immagine archiviata nella cartella **Temp** dell'utente B è la propria.
 
     1.  Per ottenere tutti i riquadri utente per gli utenti in un sistema, le applicazioni potrebbero dover eseguire ricerche nella directory **Temp di ogni** utente.
     2.  Poiché l'elenco di controllo di  accesso (ACL) di queste directory temporanee consente l'accesso a SYSTEM, Administrator e all'utente corrente, le applicazioni devono elevare i privilegi di accesso per altri utenti.

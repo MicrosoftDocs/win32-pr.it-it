@@ -7,12 +7,12 @@ keywords:
 - nome dell'entità servizio AD, modalità di composizione di un servizio
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: fdd4c0ac9c871c76e9e8771a688d203898674e477426ebd788ee34fe894011a0
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 35fb659eec3bb2d0f50fd109b39f356df1429535
+ms.sourcegitcommit: 61a4c522182aa1cacbf5669683d9570a3bf043b2
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "118188645"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "122881399"
 ---
 # <a name="how-a-service-composes-its-spns"></a>Modalità di composizione dei nomi SPN da parte di un servizio
 
@@ -20,7 +20,7 @@ Un servizio può usare due funzioni per comporre i nomi SPN: [**DsGetSpn**](/win
 
 Un programma di installazione del servizio usa in genere la funzione [**DsGetSpn**](/windows/desktop/api/Ntdsapi/nf-ntdsapi-dsgetspna) per comporre nomi SPN, che viene quindi registrato nell'account di accesso del servizio usando [**la funzione DsWriteAccountSpn.**](/windows/desktop/api/Ntdsapi/nf-ntdsapi-dswriteaccountspna) **DsGetSpn può** eseguire le funzioni seguenti.
 
--   Creare un nome SPN semplice con il <service class> / <host> formato " " per un servizio basato su host.
+-   Creare un nome SPN semplice con il formato " <service class> / &lt; host " per un &gt; servizio basato su host.
 -   Creare un nome SPN complesso che includa il componente " service name " usato dai servizi replicabili o dal componente " port " che distingue più istanze di un servizio &lt; &gt; in un singolo &lt; &gt; host.
 -   Creare un singolo nome SPN con il componente " host " impostato sul nome di un host specificato o sul nome &lt; del computer locale per impostazione &gt; predefinita.
 -   Creare una matrice di nomi SPN per più istanze del servizio che verranno eseguite in più host in tutta la foresta. Ogni nome SPN specifica il nome dell'host per un'istanza del servizio.

@@ -65,19 +65,19 @@ api_type:
 - DllExport
 api_location:
 - vmms.exe
-ms.openlocfilehash: 04cf87a40b48e5f0fc505fe5bc921229ce208fe910d9418431ddae3187b2c5d0
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 9b1950431f79c8b41cc8fc29d14b66580f5fface
+ms.sourcegitcommit: 61a4c522182aa1cacbf5669683d9570a3bf043b2
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "118950700"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "122886964"
 ---
 # <a name="msvm_serialcontroller-class"></a>Classe Msvm \_ SerialController
 
-Rappresenta le funzionalità e la gestione del controller seriale. I controller seriali sono dispositivi logici che sono sempre presenti in una macchina virtuale e pertanto non vengono allocati tramite un pool di risorse. Un'istanza del controller seriale è sempre presente in una macchina virtuale. I controller seriali hanno un numero fisso di istanze di porta. Questa implementazione supporta due porte per ogni controller.
+Rappresenta le funzionalità e la gestione del controller seriale. I controller seriali sono dispositivi logici che sono sempre presenti in una macchina virtuale e quindi non vengono allocati tramite un pool di risorse. Un'istanza del controller seriale è sempre presente in una macchina virtuale. I controller seriali hanno un numero fisso di istanze di porta. Questa implementazione supporta due porte per ogni controller.
 
 > [!Note]  
-> I controller seriali sono facoltativi [nelle macchine virtuali di seconda generazione.](virtualization-glossary.md)
+> I controller seriali sono facoltativi nelle [macchine virtuali di seconda generazione.](virtualization-glossary.md)
 
  
 
@@ -147,7 +147,7 @@ La **classe Msvm \_ SerialController** ha questi tipi di membri:
 
 ### <a name="methods"></a>Metodi
 
-La **classe \_ SerialController msvm** include questi metodi.
+La **classe Msvm \_ SerialController** dispone di questi metodi.
 
 
 
@@ -158,7 +158,7 @@ La **classe \_ SerialController msvm** include questi metodi.
 | **QuiesceDevice**                                                      | Questo metodo non è supportato.<br/> |
 | [**RequestStateChange**](msvm-serialcontroller-requeststatechange.md) | Richiede una modifica dello stato.<br/>      |
 | [**Reset**](msvm-serialcontroller-reset.md)                           | Reimposta il dispositivo.<br/>            |
-| **Proprietà di ripristino**                                                  | Questo metodo non è supportato.<br/> |
+| **RestoreProperties**                                                  | Questo metodo non è supportato.<br/> |
 | **SaveProperties**                                                     | Questo metodo non è supportato.<br/> |
 | **SetPowerState**                                                      | Questo metodo non è supportato.<br/> |
 
@@ -168,7 +168,7 @@ La **classe \_ SerialController msvm** include questi metodi.
 
 ### <a name="properties"></a>Proprietà
 
-La **classe \_ SerialController msvm** ha queste proprietà.
+La **classe Msvm \_ SerialController** ha queste proprietà.
 
 <dl> <dt>
 
@@ -181,7 +181,7 @@ Tipo di dati: **matrice uint16**
 Tipo di accesso: sola lettura
 </dt> </dl>
 
-Disponibilità e stato aggiuntivi del dispositivo. Questa proprietà viene ereditata da [**CIM \_ LogicalDevice.**](/windows/desktop/CIMWin32Prov/cim-logicaldevice)
+Qualsiasi disponibilità e stato aggiuntivi del dispositivo. Questa proprietà viene ereditata da [**CIM \_ LogicalDevice.**](/windows/desktop/CIMWin32Prov/cim-logicaldevice)
 
 
 
@@ -241,7 +241,7 @@ Tipo di dati: **matrice uint16**
 Tipo di accesso: sola lettura
 </dt> </dl>
 
-Buffering e altre funzionalità del controller seriale che potrebbero essere intrinseche nell'hardware del chip. Questa proprietà viene ereditata da [**CIM \_ SerialController.**](/windows/desktop/CIMWin32Prov/cim-serialcontroller)
+Memorizzazione nel buffer e altre funzionalità del controller seriale che potrebbero essere intrinseche nell'hardware del chip. Questa proprietà viene ereditata da [**CIM \_ SerialController.**](/windows/desktop/CIMWin32Prov/cim-serialcontroller)
 
 </dd> <dt>
 
@@ -261,7 +261,7 @@ Matrice di stringhe in formato libero che fornisce spiegazioni più dettagliate 
 **Didascalia**
 </dt> <dd> <dl> <dt>
 
-Tipo di dati: **string**
+Tipo di dati: **stringa**
 </dt> <dt>
 
 Tipo di accesso: sola lettura
@@ -280,7 +280,7 @@ Tipo di dati: **uint16**
 Tipo di accesso: sola lettura
 </dt> </dl>
 
-Indica la capacità della strumentazione di comunicare con l'elemento gestito sottostante. Un **valore Null** indica che questa proprietà non è implementata. Questa proprietà viene ereditata da [**CIM \_ ManagedSystemElement.**](/windows/desktop/CIMWin32Prov/cim-managedsystemelement)
+Indica la possibilità della strumentazione di comunicare con l'elemento gestito sottostante. Un **valore Null** indica che questa proprietà non è implementata. Questa proprietà viene ereditata da [**CIM \_ ManagedSystemElement.**](/windows/desktop/CIMWin32Prov/cim-managedsystemelement)
 
 <dl> <dt>
 
@@ -299,7 +299,7 @@ Indica la capacità della strumentazione di comunicare con l'elemento gestito so
 <span id="No_Contact"></span><span id="no_contact"></span><span id="NO_CONTACT"></span>**Nessun contatto** (4)
 </dt> <dt>
 
-<span id="DMTF_Reserved"></span><span id="dmtf_reserved"></span><span id="DMTF_RESERVED"></span>**DmTF Reserved** (..)
+<span id="DMTF_Reserved"></span><span id="dmtf_reserved"></span><span id="DMTF_RESERVED"></span>**DMTF riservato** (..)
 </dt> <dt>
 
 <span id="Vendor_Reserved_"></span><span id="vendor_reserved_"></span><span id="VENDOR_RESERVED_"></span>**Fornitore riservato** (0x8000.. )
@@ -310,20 +310,20 @@ Indica la capacità della strumentazione di comunicare con l'elemento gestito so
 **CreationClassName**
 </dt> <dd> <dl> <dt>
 
-Tipo di dati: **string**
+Tipo di dati: **stringa**
 </dt> <dt>
 
 Tipo di accesso: sola lettura
 </dt> </dl>
 
-Nome della classe o della sottoclasse utilizzata nella creazione di un'istanza di . Questa proprietà viene ereditata da [**CIM \_ LogicalDevice.**](/windows/desktop/CIMWin32Prov/cim-logicaldevice)
+Nome della classe o della sottoclasse utilizzata nella creazione di un'istanza. Questa proprietà viene ereditata da [**CIM \_ LogicalDevice.**](/windows/desktop/CIMWin32Prov/cim-logicaldevice)
 
 </dd> <dt>
 
 **Descrizione**
 </dt> <dd> <dl> <dt>
 
-Tipo di dati: **string**
+Tipo di dati: **stringa**
 </dt> <dt>
 
 Tipo di accesso: sola lettura
@@ -342,7 +342,7 @@ Tipo di dati: **uint16**
 Tipo di accesso: sola lettura
 </dt> </dl>
 
-Completa la proprietà **PrimaryStatus** con dettagli aggiuntivi sullo stato. Un **valore Null** indica che questa proprietà non è implementata. Questa proprietà viene ereditata da [**CIM \_ ManagedSystemElement.**](/windows/desktop/CIMWin32Prov/cim-managedsystemelement)
+Completa la **proprietà PrimaryStatus** con dettagli aggiuntivi sullo stato. Un **valore Null** indica che questa proprietà non è implementata. Questa proprietà viene ereditata da [**CIM \_ ManagedSystemElement.**](/windows/desktop/CIMWin32Prov/cim-managedsystemelement)
 
 <dl> <dt>
 
@@ -352,7 +352,7 @@ Completa la proprietà **PrimaryStatus** con dettagli aggiuntivi sullo stato. Un
 <span id="No_Additional_Information"></span><span id="no_additional_information"></span><span id="NO_ADDITIONAL_INFORMATION"></span>**Nessuna informazione aggiuntiva** (1)
 </dt> <dt>
 
-<span id="Stressed"></span><span id="stressed"></span><span id="STRESSED"></span>**Stressed** (2)
+<span id="Stressed"></span><span id="stressed"></span><span id="STRESSED"></span>**Stressato** (2)
 </dt> <dt>
 
 <span id="Predictive_Failure"></span><span id="predictive_failure"></span><span id="PREDICTIVE_FAILURE"></span>**Errore predittivo** (3)
@@ -361,10 +361,10 @@ Completa la proprietà **PrimaryStatus** con dettagli aggiuntivi sullo stato. Un
 <span id="Non-Recoverable_Error"></span><span id="non-recoverable_error"></span><span id="NON-RECOVERABLE_ERROR"></span>**Errore non ripristinabile** (4)
 </dt> <dt>
 
-<span id="Supporting_Entity_in_Error"></span><span id="supporting_entity_in_error"></span><span id="SUPPORTING_ENTITY_IN_ERROR"></span>**Entità di supporto in caso di** errore (5)
+<span id="Supporting_Entity_in_Error"></span><span id="supporting_entity_in_error"></span><span id="SUPPORTING_ENTITY_IN_ERROR"></span>**Entità di supporto in errore** (5)
 </dt> <dt>
 
-<span id="DMTF_Reserved"></span><span id="dmtf_reserved"></span><span id="DMTF_RESERVED"></span>**DmTF Reserved** (..)
+<span id="DMTF_Reserved"></span><span id="dmtf_reserved"></span><span id="DMTF_RESERVED"></span>**DMTF riservato** (..)
 </dt> <dt>
 
 <span id="Vendor_Reserved_"></span><span id="vendor_reserved_"></span><span id="VENDOR_RESERVED_"></span>**Fornitore riservato** (0x8000.. )
@@ -375,20 +375,20 @@ Completa la proprietà **PrimaryStatus** con dettagli aggiuntivi sullo stato. Un
 **Deviceid**
 </dt> <dd> <dl> <dt>
 
-Tipo di dati: **string**
+Tipo di dati: **stringa**
 </dt> <dt>
 
 Tipo di accesso: sola lettura
 </dt> </dl>
 
-Questa proprietà viene ereditata da [**CIM \_ LogicalDevice**](/windows/desktop/CIMWin32Prov/cim-logicaldevice)ed è sempre impostata su "Microsoft: *<GUID>* ".
+Questa proprietà viene ereditata da [**CIM \_ LogicalDevice**](/windows/desktop/CIMWin32Prov/cim-logicaldevice)ed è sempre impostata su "Microsoft:*&lt; &gt; GUID".*
 
 </dd> <dt>
 
 **ElementName**
 </dt> <dd> <dl> <dt>
 
-Tipo di dati: **string**
+Tipo di dati: **stringa**
 </dt> <dt>
 
 Tipo di accesso: sola lettura
@@ -398,7 +398,7 @@ Nome visualizzato per l'oggetto . Questa proprietà viene ereditata da [**CIM \_
 
 </dd> <dt>
 
-**Impostazione predefinita abilitata**
+**EnabledDefault**
 </dt> <dd> <dl> <dt>
 
 Tipo di dati: **uint16**
@@ -460,13 +460,13 @@ Indica se l'errore segnalato nella **proprietà LastErrorCode** è ora cancellat
 **ErrorDescription**
 </dt> <dd> <dl> <dt>
 
-Tipo di dati: **string**
+Tipo di dati: **stringa**
 </dt> <dt>
 
 Tipo di accesso: sola lettura
 </dt> </dl>
 
-Stringa che fornisce ulteriori informazioni sull'errore registrato nella proprietà **LastErrorCode** e informazioni su eventuali azioni correttive che possono essere eseguite. Questa proprietà viene ereditata da [**CIM \_ LogicalDevice,**](/windows/desktop/CIMWin32Prov/cim-logicaldevice)ma non viene usata.
+Stringa che fornisce altre informazioni sull'errore registrato nella proprietà **LastErrorCode** e informazioni su eventuali azioni correttive che possono essere eseguite. Questa proprietà viene ereditata da [**CIM \_ LogicalDevice,**](/windows/desktop/CIMWin32Prov/cim-logicaldevice)ma non viene usata.
 
 </dd> <dt>
 
@@ -479,7 +479,7 @@ Tipo di dati: **uint16**
 Tipo di accesso: sola lettura
 </dt> </dl>
 
-Integrità corrente dell'elemento. Ciò esprime l'integrità di questo elemento, ma non necessariamente dei relativi sottocomponenti. I valori possibili sono da 0 a 30, dove 5 indica che l'elemento è completamente integro e 30 indica che l'elemento è completamente non funzionante. Questa proprietà viene ereditata da [**CIM \_ ManagedSystemElement.**](/windows/desktop/CIMWin32Prov/cim-managedsystemelement)
+Integrità corrente dell'elemento. Ciò esprime l'integrità di questo elemento, ma non necessariamente quella dei relativi sottocomponenti. I valori possibili sono da 0 a 30, dove 5 indica che l'elemento è completamente integro e 30 indica che l'elemento è completamente non funzionante. Questa proprietà viene ereditata da [**CIM \_ ManagedSystemElement.**](/windows/desktop/CIMWin32Prov/cim-managedsystemelement)
 
 </dd> <dt>
 
@@ -492,7 +492,7 @@ Tipo di dati: **matrice di** stringhe
 Tipo di accesso: sola lettura
 </dt> </dl>
 
-Matrice di stringhe in formato libero che fornisce spiegazioni e dettagli sulle voci nella matrice di proprietà **OtherIdentifyingInfo.** Questa proprietà viene ereditata da [**CIM \_ LogicalDevice**](/windows/desktop/CIMWin32Prov/cim-logicaldevice)ed è sempre impostata su **Null.**
+Matrice di stringhe in formato libero che forniscono spiegazioni e dettagli dietro le voci nella matrice di proprietà **OtherIdentifyingInfo.** Questa proprietà viene ereditata da [**CIM \_ LogicalDevice**](/windows/desktop/CIMWin32Prov/cim-logicaldevice)ed è sempre impostata su **Null.**
 
 </dd> <dt>
 
@@ -512,13 +512,13 @@ Data e ora di creazione della configurazione della macchina virtuale. Questa pro
 **InstanceID**
 </dt> <dd> <dl> <dt>
 
-Tipo di dati: **string**
+Tipo di dati: **stringa**
 </dt> <dt>
 
 Tipo di accesso: sola lettura
 </dt> <dt>
 
-Qualificatori: **Chiave**
+Qualificatori: **chiave**
 </dt> </dl>
 
 Identifica in modo univoco un'istanza di questa classe. Questa proprietà viene ereditata da [**CIM \_ ManagedElement.**](/previous-versions/windows/desktop/iscsitarg/cim-managedelement)
@@ -560,7 +560,7 @@ Tipo di dati: **uint32**
 Tipo di accesso: sola lettura
 </dt> </dl>
 
-Numero massimo di entità indirizzabili direttamente supportate da questo controller. Se il numero è sconosciuto o illimitato, è necessario usare il valore 0. Protocollo usato dal controller per accedere ai dispositivi controllati. Questa proprietà viene ereditata dal [**\_ controller CIM.**](/windows/desktop/CIMWin32Prov/cim-controller)
+Numero massimo di entità indirizzabili direttamente supportate da questo controller. Se il numero è sconosciuto o illimitato, deve essere usato il valore 0. Protocollo usato dal controller per accedere ai dispositivi controllati. Questa proprietà viene ereditata dal [**\_ controller CIM.**](/windows/desktop/CIMWin32Prov/cim-controller)
 
 </dd> <dt>
 
@@ -580,7 +580,7 @@ La proprietà è stata deprecata. Questa proprietà viene ereditata da [**CIM \_
 **Nome**
 </dt> <dd> <dl> <dt>
 
-Tipo di dati: **string**
+Tipo di dati: **stringa**
 </dt> <dt>
 
 Tipo di accesso: sola lettura
@@ -749,7 +749,7 @@ Tipo di dati: **uint16**
 Tipo di accesso: sola lettura
 </dt> </dl>
 
-Fornisce informazioni di alto livello sullo stato. Questa proprietà deve essere usata insieme alla proprietà **DetailedStatus** per fornire lo stato di integrità generale e dettagliato dell'elemento e dei relativi sottocomponenti. Un **valore Null** indica che questa proprietà non è implementata. Questa proprietà viene ereditata da [**CIM \_ ManagedSystemElement.**](/windows/desktop/CIMWin32Prov/cim-managedsystemelement)
+Fornisce informazioni sullo stato di alto livello. Questa proprietà deve essere usata insieme alla proprietà **DetailedStatus** per fornire lo stato di integrità generale e dettagliato dell'elemento e dei relativi sottocomponenti. Un **valore Null** indica che questa proprietà non è implementata. Questa proprietà viene ereditata da [**CIM \_ ManagedSystemElement.**](/windows/desktop/CIMWin32Prov/cim-managedsystemelement)
 
 <dl> <dt>
 
@@ -968,7 +968,7 @@ Tipo di dati: **uint16**
 Tipo di accesso: sola lettura
 </dt> </dl>
 
-Indica lo stato di destinazione a cui è in fase di transizione l'istanza. Questa proprietà viene ereditata da [**CIM \_ EnabledLogicalElement,**](/previous-versions//cc136818(v=vs.85))ma non viene usata.
+Indica lo stato di destinazione a cui l'istanza è in fase di transizione. Questa proprietà viene ereditata da [**CIM \_ EnabledLogicalElement,**](/previous-versions//cc136818(v=vs.85))ma non viene usata.
 
 </dd> </dl>
 

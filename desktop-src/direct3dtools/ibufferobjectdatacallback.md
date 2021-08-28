@@ -17,12 +17,12 @@ api_location:
 topic_type:
 - APIRef
 - kbSyntax
-ms.openlocfilehash: 24e0bbce1b42dfb5e23e3fdbbf43cb72cf3a5e75
-ms.sourcegitcommit: 4e94fc75fad7b2a0f3c92a26f97e89924e59b7a9
+ms.openlocfilehash: 36a6c37eab6d6af45b1c22fc2a3f80f6313e301b
+ms.sourcegitcommit: c276a8912787b2cda74dcf54eb96df961bb1188b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/24/2021
-ms.locfileid: "122786507"
+ms.lasthandoff: 08/20/2021
+ms.locfileid: "122624947"
 ---
 # <a name="span-idvspixengineibufferobjectdatacallbackspanibufferobjectdatacallback-interface"></a><span id="vspixengine.ibufferobjectdatacallback"></span>Interfaccia IBufferObjectDataCallback
 
@@ -38,7 +38,7 @@ Callback per restituire il contenuto di un oggetto in formato buffer per quelli 
 
 **L'interfaccia IBufferObjectDataCallback** include questi metodi.
 
-<table><colgroup><col  /><col  /></colgroup><thead><tr class="header"><th >Metodo</th><th >Descrizione</th></tr></thead><tbody><tr class="odd"><td ><a href="/windows/desktop/direct3dtools/ibufferobjectdatacallback-resultcallback-bstr"><strong>Oggetto ResultCallback</strong></a></td><td ><p>Callback che notifica all'host le informazioni sul buffer scritte in un file dalla richiesta ascaited.</p></td></tr></tbody></table>
+<table><colgroup><col  /><col  /></colgroup><thead><tr class="header"><th style="text-align: left;">Metodo</th><th style="text-align: left;">Descrizione</th></tr></thead><tbody><tr class="odd"><td style="text-align: left;"><a href="/windows/desktop/direct3dtools/ibufferobjectdatacallback-resultcallback-bstr"><strong>Oggetto ResultCallback</strong></a></td><td style="text-align: left;"><p>Callback che notifica all'host le informazioni sul buffer scritte in un file dalla richiesta ascaited.</p></td></tr></tbody></table>
 
  
 
