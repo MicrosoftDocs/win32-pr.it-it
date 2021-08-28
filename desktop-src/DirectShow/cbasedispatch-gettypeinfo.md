@@ -16,12 +16,12 @@ api_location:
 - Strmbase.dll
 - Strmbasd.lib
 - Strmbasd.dll
-ms.openlocfilehash: a9b1e21133b4fa561c743fefc6282c777b444e6f
-ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
+ms.openlocfilehash: 294b9758aa79ab033c1e3cf8932056ca10e7bf2424de97a1cf9f3b509f1906bf
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/28/2021
-ms.locfileid: "108120119"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120076681"
 ---
 # <a name="cbasedispatchgettypeinfo-method"></a>Metodo CBaseDispatch.GetTypeInfo
 
@@ -83,7 +83,7 @@ Restituisce un **valore HRESULT.** Di seguito sono indicati alcuni valori possib
 |---------------------------------------------------------------------------------------------------------|------------------------------------------------|
 | <dl> <dt>**S \_ OK**</dt> </dl>                    | Operazione completata.<br/>                            |
 | <dl> <dt>**PUNTATORE \_ E**</dt> </dl>               | Argomento del puntatore **NULL.**<br/>          |
-| <dl> <dt>**TIPO \_ E \_ ELEMENTNOTFOUND**</dt> </dl> | Il *parametro itinfo* non è zero.<br/> |
+| <dl> <dt>**TYPE \_ E \_ ELEMENTNOTFOUND**</dt> </dl> | Il *parametro itinfo* non è zero.<br/> |
 
 
 
@@ -99,7 +99,7 @@ Questo metodo si comporta come **il metodo IDispatch::GetTypeInfo.** Include tut
 
 | Requisito | Valore |
 |--------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Intestazione<br/>  | <dl> <dt>Ctlutil.h (include Streams.h)</dt> </dl>                                                                                   |
+| Intestazione<br/>  | <dl> <dt>Ctlutil.h (includere Flussi.h)</dt> </dl>                                                                                   |
 | Libreria<br/> | <dl> <dt>Strmbase.lib (build di vendita al dettaglio); </dt> <dt>Strmbasd.lib (build di debug)</dt> </dl> |
 
 

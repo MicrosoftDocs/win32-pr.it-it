@@ -1,37 +1,37 @@
 ---
-description: Windows 8 e Windows Server 2012 presentano la possibilità per il software in esecuzione in una macchina virtuale di rilevare che è possibile che si sia verificato un evento di spostamento temporale.
+description: Windows 8 e Windows Server 2012 la possibilità per il software in esecuzione in una macchina virtuale di rilevare che potrebbe essere stato generato un evento di spostamento dell'ora.
 ms.assetid: 0793E46B-8464-425E-8C5B-77C14DA90004
 title: Identificatore di generazione macchina virtuale
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 7df6ecbb600dbc7ae2efe14d36cb17cc75816444
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: d810a1a65e95f4dde0ccf9779b1e955f2630623e362ffbf94ab8ca36d51d116e
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "106317177"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119899011"
 ---
 # <a name="virtual-machine-generation-identifier"></a>Identificatore di generazione macchina virtuale
 
-Windows 8 e Windows Server 2012 presentano la possibilità per il software in esecuzione in una macchina virtuale di rilevare che è possibile che si sia verificato un evento di spostamento temporale. Gli eventi di spostamento temporale possono verificarsi a causa di un'applicazione di uno snapshot della macchina virtuale o del ripristino di un backup di una macchina virtuale. Per ulteriori informazioni su questa funzionalità, vedere l' [ID di generazione della macchina virtuale white paper](https://download.microsoft.com/download/3/1/C/31CFC307-98CA-4CA5-914C-D9772691E214/VirtualMachineGenerationID.docx).
+Windows 8 e Windows Server 2012 la possibilità per il software in esecuzione in una macchina virtuale di rilevare che potrebbe essere stato generato un evento di spostamento dell'ora. Gli eventi di spostamento temporale possono verificarsi in seguito a un'applicazione di uno snapshot di macchina virtuale o al ripristino di un backup della macchina virtuale. Per altre informazioni su questa funzionalità, vedere l'ID [di generazione macchina virtuale white paper](https://download.microsoft.com/download/3/1/C/31CFC307-98CA-4CA5-914C-D9772691E214/VirtualMachineGenerationID.docx).
 
 ## <a name="prerequisites"></a>Prerequisiti
 
-Per usare l'identificatore di generazione della macchina virtuale all'interno di una macchina virtuale, la macchina virtuale deve essere conforme a quanto segue.
+Per usare l'identificatore di generazione della macchina virtuale dall'interno di una macchina virtuale, la macchina virtuale deve essere conforme a quanto segue.
 
--   La macchina virtuale deve essere in esecuzione in un hypervisor che implementa il supporto per gli identificatori di generazione delle macchine virtuali. Attualmente, questi sono i seguenti:
+-   La macchina virtuale deve essere in esecuzione in un hypervisor che implementa il supporto per gli identificatori di generazione della macchina virtuale. Attualmente, questi sono i seguenti:
     -   Windows 8
     -   Windows Server 2012
     -   Microsoft Hyper-V Server 2012
--   Nella macchina virtuale deve essere in esecuzione un sistema operativo guest con supporto per l'identificatore di generazione della macchina virtuale. Attualmente, questi sono i seguenti.
+-   La macchina virtuale deve eseguire un sistema operativo guest con supporto per l'identificatore di generazione della macchina virtuale. Attualmente, questi sono i seguenti.
 
-    I sistemi operativi seguenti hanno il supporto nativo per l'identificatore di generazione della macchina virtuale.
+    I sistemi operativi seguenti dispongono del supporto nativo per l'identificatore di generazione della macchina virtuale.
 
     -   Windows 8
     -   Windows Server 2012
     -   
 
-    Il funzionamento seguente può essere utilizzato come sistema operativo guest se i servizi di integrazione Hyper-V da Windows 8 o Windows Server 2012 sono installati.
+    Il sistema operativo seguente può essere usato come sistema operativo guest se i servizi di integrazione Hyper-V Windows 8 o Windows Server 2012 sono installati.
 
     -   Windows Server 2008 R2 con Service Pack 1 (SP1)
     -   Windows 7 con Service Pack 1 (SP1):
@@ -41,16 +41,16 @@ Per usare l'identificatore di generazione della macchina virtuale all'interno di
     -   Windows Vista con Service Pack 2 (SP2)
     -   Windows XP con Service Pack 3 (SP3)
 
-## <a name="obtaining-the-virtual-machine-generation-identifier"></a>Acquisizione dell'identificatore di generazione della macchina virtuale
+## <a name="obtaining-the-virtual-machine-generation-identifier"></a>Recupero dell'identificatore di generazione della macchina virtuale
 
-Per ottenere a livello di codice l'identificatore di generazione della macchina virtuale, seguire questa procedura.
+Per ottenere l'identificatore di generazione della macchina virtuale a livello di codice, seguire questa procedura.
 
 > [!Note]  
-> Per il corretto funzionamento, è necessario eseguire le operazioni seguenti con privilegi di amministratore o di sistema.
+> Per il corretto funzionamento, è necessario eseguire quanto segue con privilegi di amministratore o di sistema.
 
  
 
-1.  Includere il file di intestazione "vmgenerationcounter. h" nell'app. Il file di intestazione contiene le definizioni seguenti:
+1.  Includere il file di intestazione "vmgenerationcounter.h" nell'app. Il file di intestazione contiene queste definizioni:
     ```C++
     DEFINE_GUID(
         GUID_DEVINTERFACE_VM_GENCOUNTER,
@@ -82,25 +82,25 @@ Per ottenere a livello di codice l'identificatore di generazione della macchina 
 
     
 
-2.  Aprire un handle per il " \\ \\ . \\ VmGenerationCounter "dispositivo che utilizza la funzione [**CreateFile**](/windows/desktop/api/fileapi/nf-fileapi-createfilea) . In alternativa, è possibile usare la gestione PnP per utilizzare il GUID dell'interfaccia del dispositivo **\_ DEVINTERFACE \_ VM \_ GENCOUNTER** ({3ff2c92b-6598-4E60-8e1c-0ccf4927e319}). Questi oggetti non saranno presenti se l'app non è in esecuzione in una macchina virtuale.
-3.  Inviare il comando IOCTL [**\_ VMGENCOUNTER \_ Read**](/windows/desktop/api/Vmgenerationcounter/ni-vmgenerationcounter-ioctl_vmgencounter_read) IOCTL al driver per recuperare l'identificatore di generazione.
+2.  Aprire un handle per " \\ \\ . \\ VmGenerationCounter" con la [**funzione CreateFile.**](/windows/desktop/api/fileapi/nf-fileapi-createfilea) In alternativa, è possibile usare il gestore PnP per usare il GUID dell'interfaccia del dispositivo **\_ DEVINTERFACE \_ VM \_ GENCOUNTER** ({3ff2c92b-6598-4e60-8e1c-0ccf4927e319}). Questi oggetti non saranno presenti se l'app non è in esecuzione in una macchina virtuale.
+3.  Inviare [**l'IOCTL \_ IOCTL DI VMGENCOUNTER \_ READ**](/windows/desktop/api/Vmgenerationcounter/ni-vmgenerationcounter-ioctl_vmgencounter_read) al driver per recuperare l'identificatore di generazione.
 
-    IOCTL [**\_ VMGENCOUNTER \_ Read**](/windows/desktop/api/Vmgenerationcounter/ni-vmgenerationcounter-ioctl_vmgencounter_read) IOCTL opera in una delle due modalità, *polling* e basato su *eventi*.
+    [**IOCTL \_ IOCTL IOCTL VMGENCOUNTER \_ READ**](/windows/desktop/api/Vmgenerationcounter/ni-vmgenerationcounter-ioctl_vmgencounter_read) opera in una delle due modalità, *polling* e *basata su eventi.*
 
-    Per eseguire IOCTL in modalità di polling, è necessario inviare il IOCTL con un buffer di input di lunghezza zero. In risposta a questo, il driver recupera l'identificatore di generazione corrente, lo scrive nel buffer di output e completa l'IOCTL.
+    Per rilasciare l'IOCTL in modalità di polling, inviare l'IOCTL con un buffer di input di lunghezza zero. In risposta a questa situazione, il driver recupera l'identificatore di generazione corrente, lo scrive nel buffer di output e completa l'ioCTL.
 
-    Per eseguire IOCTL in modalità basata su eventi, inviare il comando IOCTL con un buffer di input che contiene un identificatore di generazione esistente. In risposta a questo, il driver attende fino a quando l'identificatore di generazione corrente diventa diverso dall'identificatore di generazione passato. Quando l'identificatore di generazione viene modificato, il driver scrive l'identificatore di generazione corrente nel buffer di output e completa l'IOCTL.
+    Per rilasciare ioCTL in modalità guidata da eventi, inviare l'IOCTL con un buffer di input che contiene un identificatore di generazione esistente. In risposta a questa situazione, il driver attende fino a quando l'identificatore di generazione corrente non diventa diverso dall'identificatore di generazione passato. Quando l'identificatore di generazione cambia, il driver scrive l'identificatore di generazione corrente nel buffer di output e completa l'ioCTL.
 
-    In entrambe le modalità, il formato e la lunghezza del buffer di output sono determinati dalla struttura della [**macchina virtuale \_ GENCOUNTER**](/windows/desktop/api/Vmgenerationcounter/ns-vmgenerationcounter-vm_gencounter) .
+    In entrambe le modalità, il formato e la lunghezza del buffer di output sono dettati dalla struttura [**\_ GENCOUNTER della**](/windows/desktop/api/Vmgenerationcounter/ns-vmgenerationcounter-vm_gencounter) macchina virtuale.
 
-    La modalità di polling è supportata in tutti i sistemi operativi guest elencati sopra. La modalità basata su eventi è supportata solo in Windows Vista con SP2, Windows Server 2008 con SP2 e sistemi operativi successivi. Nei sistemi operativi precedenti, l'IOCTL avrà esito negativo e l'errore del codice di errore **\_ non è \_ supportato** quando viene eseguito in modalità basata su eventi.
+    La modalità di polling è supportata in tutti i sistemi operativi guest elencati in precedenza. La modalità guidata da eventi è supportata solo in Windows Vista con SP2, Windows Server 2008 con SP2 e sistemi operativi successivi. Nei sistemi operativi precedenti, IOCTL avrà esito negativo con il codice di errore **ERROR \_ NOT \_ SUPPORTED** quando viene generato in modalità guidata da eventi.
 
-    È possibile che l'identificatore di generazione cambi tra il momento in cui viene recuperato dal driver e il momento in cui il comando IOCTL viene completato. Ciò può comportare la ricezione di dati non aggiornati nell'app client. Per evitare questo problema, l'app client può usare la modalità guidata dagli eventi per assicurarsi che vengano apprese informazioni sugli aggiornamenti all'identificatore di generazione. Accettando l'identificatore corrente dell'app client come input, la modalità basata su eventi evita potenziali race condition che potrebbero causare la mancata notifica da parte del chiamante.
+    È possibile che l'identificatore di generazione cambi tra il momento in cui viene recuperato dal driver e l'ora di completamento dell'IOCTL. Ciò può comportare la ricezione di dati non obsoleti da parte dell'app client. Per evitare questo problema, l'app client può usare la modalità guidata da eventi per assicurarsi che apprenderà eventuali aggiornamenti all'identificatore di generazione. Prendendo come input l'identificatore corrente dell'app client, la modalità guidata dagli eventi evita potenziali race conditions che potrebbero causare la mancata notifica da parte del chiamante.
 
 Nell'esempio di codice seguente viene illustrato come eseguire le azioni precedenti per ottenere l'identificatore di generazione della macchina virtuale.
 
 > [!Note]  
-> Il codice seguente deve essere eseguito con privilegi di amministratore o di sistema per funzionare correttamente.
+> Per il corretto funzionamento, è necessario eseguire il codice seguente con privilegi di amministratore o di sistema.
 
  
 
@@ -216,9 +216,9 @@ Cleanup:
 
 
 
-## <a name="determining-if-a-time-shift-event-has-occurred"></a>Determinare se si è verificato un evento di spostamento temporale
+## <a name="determining-if-a-time-shift-event-has-occurred"></a>Determinare se si è verificato un evento di spostamento dell'ora
 
-Dopo aver ottenuto l'identificatore di generazione della macchina virtuale, è necessario archiviarlo per un uso futuro. Prima che l'app esegua un'operazione sensibile al tempo, ad esempio il commit in un database, è necessario ottenere nuovamente l'identificatore di generazione e confrontarlo con il valore archiviato. Se l'identificatore è stato modificato, significa che si è verificato un evento di spostamento temporale e che l'app deve agire in modo appropriato.
+Dopo aver ottenuto l'identificatore di generazione della macchina virtuale, è necessario archiviarlo per un uso futuro. Prima che l'app esegua un'operazione sensibile al tempo, ad esempio il commit in un database, è necessario ottenere nuovamente l'identificatore di generazione e confrontarlo con il valore archiviato. Se l'identificatore è stato modificato, significa che si è verificato un evento di spostamento dell'ora e l'app deve agire in modo appropriato.
 
  
 

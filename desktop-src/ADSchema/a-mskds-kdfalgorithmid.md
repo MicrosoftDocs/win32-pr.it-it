@@ -1,11 +1,11 @@
 ---
-title: attributo ms-KDS-KDF-AlgorithmID
-description: Nome dell'algoritmo della funzione di derivazione della chiave utilizzata per calcolare le chiavi.
+title: Attributo ms-Kds-KDF-AlgorithmID
+description: Nome dell'algoritmo della funzione di derivazione della chiave usata per calcolare le chiavi.
 ms.assetid: 4dfb3ded-b968-414b-9453-f24813042cab
 ms.tgt_platform: multiple
 keywords:
-- Schema AD dell'attributo ms-KDS-KDF-AlgorithmID
-- msKds-schema AD attributo KDFAlgorithmID
+- Schema AD dell'attributo ms-Kds-KDF-AlgorithmID
+- Schema AD dell'attributo msKds-KDFAlgorithmID
 topic_type:
 - apiref
 api_name:
@@ -14,28 +14,28 @@ api_type:
 - Schema
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 1164c76b533fddb676a33c90a2e51ed7f89d65a8
-ms.sourcegitcommit: b77ace27b0432e7cd3863191b11926be032fbe2f
+ms.openlocfilehash: 92375b6b2ca5d3396fffcf0523aa1b3c9cd1794ea6817ce7a32b0bdf18276229
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/14/2020
-ms.locfileid: "103875334"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119582961"
 ---
-# <a name="ms-kds-kdf-algorithmid-attribute"></a>attributo ms-KDS-KDF-AlgorithmID
+# <a name="ms-kds-kdf-algorithmid-attribute"></a>Attributo ms-Kds-KDF-AlgorithmID
 
-Nome dell'algoritmo della funzione di derivazione della chiave utilizzata per calcolare le chiavi.
+Nome dell'algoritmo della funzione di derivazione della chiave usata per calcolare le chiavi.
 
 
 
 | Voce | Valore |
 |-------------------|---------------------------------------------|
-| CN                | MS-KDS-KDF-AlgorithmID                      |
-| LDAP-Display-Name | msKds-KDFAlgorithmID                        |
+| CN                | ms-Kds-KDF-AlgorithmID                      |
+| Ldap-Display-Name | msKds-KDFAlgorithmID                        |
 | Dimensione              | \-                                          |
-| Privilegio aggiornamento  | \-                                          |
+| Privilegio di aggiornamento  | \-                                          |
 | Frequenza di aggiornamento  | \-                                          |
 | Attribute-Id      | 1.2.840.113556.1.4.2169                     |
-| System-ID-GUID    | db2c48b2-d14d-ec4e-9f58-ad579d8b440e        |
+| System-Id-Guid    | db2c48b2-d14d-ec4e-9f58-ad579d8b440e        |
 | Sintassi            | [**String(Unicode)**](s-string-unicode.md) |
 
 
@@ -53,15 +53,15 @@ Nome dell'algoritmo della funzione di derivazione della chiave utilizzata per ca
 | ID collegamento                | \-                                                                                                                                                  |
 | MAPI-Id                | \-                                                                                                                                                  |
 | System-Only            | Falso                                                                                                                                               |
-| È a valore singolo       | Vero                                                                                                                                                |
+| Is-Single-Valued       | Vero                                                                                                                                                |
 | Indicizzato             | Falso                                                                                                                                               |
 | Nel catalogo globale      | Falso                                                                                                                                               |
-| NT-Security-descrittore | O:BAG: NON VALIDO: S:                                                                                                                                        |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                                                                                                                        |
 | Range-Lower            | \-                                                                                                                                                  |
 | Range-Upper            | \-                                                                                                                                                  |
 | Search-Flags           | 0x00000280                                                                                                                                          |
 | System-Flags           | 0x00000010                                                                                                                                          |
-| Classi utilizzate in        | [**MS-KDS-prov-ServerConfiguration**](c-mskds-provserverconfiguration.md)<br/> [**MS-KDS-prov-RootKey**](c-mskds-provrootkey.md)<br/> |
+| Classi usate in        | [**ms-Kds-Prov-ServerConfiguration**](c-mskds-provserverconfiguration.md)<br/> [**ms-Kds-Prov-RootKey**](c-mskds-provrootkey.md)<br/> |
 
 
 

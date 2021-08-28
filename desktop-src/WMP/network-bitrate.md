@@ -1,9 +1,9 @@
 ---
-title: Rete. bitrate
-description: La proprietà bitrate recupera la velocità in bit corrente ricevuta.
+title: Network.bitRate
+description: La proprietà bitRate recupera la velocità in bit corrente ricevuta.
 ms.assetid: e970a43a-1773-4dc0-ac2f-115f698bc1f4
 keywords:
-- Media Player Windows di rete. bitrate
+- Network.bitRate Windows Media Player
 topic_type:
 - apiref
 api_name:
@@ -14,32 +14,32 @@ api_type:
 - DllExport
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 4373d667ea41d55b5b0e12f1a47289f15d7b115b
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: ec142885bdd718903e956f8e86b59c3753cb024ecccc5efb2f8494797ea6a818
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "106326120"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119901781"
 ---
-# <a name="networkbitrate"></a>Rete. bitrate
+# <a name="networkbitrate"></a>Network.bitRate
 
-La proprietà **bitrate** recupera la velocità in bit corrente ricevuta.
+La **proprietà bitRate** recupera la velocità in bit corrente ricevuta.
 
 ## <a name="syntax"></a>Sintassi
 
-*Player*. *rete*. **velocità in bit**
+*lettore*. *rete*. **bitRate**
 
 ## <a name="possible-values"></a>Valori possibili
 
-Questa proprietà è un **numero** di sola lettura (**Long**).
+Questa proprietà è un numero di sola **lettura** (**long**).
 
 ## <a name="remarks"></a>Commenti
 
-Questo valore è una combinazione della velocità in bit dei flussi video e audio correnti.
+Questo valore è una combinazione delle velocità in bit dei flussi video e audio correnti.
 
 ## <a name="examples"></a>Esempio
 
-Nell'esempio JScript seguente viene utilizzata la *rete*. **bitrate** per visualizzare la velocità in bit dei supporti correnti. Le informazioni vengono visualizzate in un DIV HTML creato con ID = "BR". L'oggetto **Player** è stato creato con ID = "Player".
+Nell'esempio JScript seguente viene utilizzata *la rete*. **bitRate** per visualizzare la velocità in bit del supporto corrente. Le informazioni vengono visualizzate in un DIV HTML creato con ID = "BR". **L'oggetto** Player è stato creato con ID = "Player".
 
 
 ```JScript
@@ -71,7 +71,7 @@ Nell'esempio JScript seguente viene utilizzata la *rete*. **bitrate** per visual
 
 | Requisito | Valore |
 |--------------------|------------------------------------------------------------------------------------|
-| Versione<br/> | Windows Media Player versione 7,0 o successiva.<br/>                              |
+| Versione<br/> | Windows Media Player versione 7.0 o successiva.<br/>                              |
 | DLL<br/>     | <dl> <dt>Wmp.dll</dt> </dl> |
 
 

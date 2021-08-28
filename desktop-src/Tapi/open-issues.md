@@ -1,20 +1,20 @@
 ---
-description: L'elenco seguente contiene problemi con le classi base MSP di TAPI 3.
+description: L'elenco seguente contiene i problemi relativi alle classi di base DI TAPI 3 MSP.
 ms.assetid: 09fbcf3e-2d33-4888-ac8c-11809f18f16a
 title: Problemi non risolti
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: f12f0c181e9e83d2e45e5a539a24b92921161512
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 9453a903c333bf41ed6ba3addf8af0a02b5007d29ea83895962795c61414ba71
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104485308"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120100581"
 ---
 # <a name="open-issues"></a>Problemi non risolti
 
--   Prima della versione finale di Windows 2000, il percorso di arresto della chiamata può cambiare leggermente per rendere più semplice l'arresto di una chiamata a un'operazione asincrona (aiuta a proteggersi da deadlock per MSPs che supportano video).
--   I metodi e i membri della classe thread di lavoro, delle classi di base terminal e dei terminali statici derivati sono documentati solo in base ai file di intestazione.
+-   Prima della versione finale di Windows 2000, il percorso di arresto delle chiamate può cambiare leggermente per semplificare l'arresto di una chiamata a un'operazione asincrona (consente di proteggere da deadlock per gli MSP che supportano il video).
+-   I metodi e i membri della classe del thread di lavoro, delle classi di base dei terminali e dei terminali statici derivati sono documentati solo dai file di intestazione stessi.
 
  
 

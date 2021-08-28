@@ -1,21 +1,21 @@
 ---
-description: Criteri per i metadati delle foto per la proprietà System. Photo. DateTaken.
+description: Criteri dei metadati delle foto per la proprietà System.Photo.DateTaken.
 ms.assetid: 800aa01b-6064-45df-a40e-6537819df4d7
-title: Criteri per i metadati delle foto di System. Photo. DateTaken
+title: Criteri metadati foto System.Photo.DateTaken
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: cc1d3fb50a9a94e4bb13b35a0a5726572d78429f
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 691476c704d3fdbc4ff5e01467031f2b41884ccb16be537904484a9d01c8fa18
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "106319107"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119087077"
 ---
-# <a name="systemphotodatetaken-photo-metadata-policy"></a>Criteri per i metadati delle foto di System. Photo. DateTaken
+# <a name="systemphotodatetaken-photo-metadata-policy"></a>Criteri metadati foto System.Photo.DateTaken
 
-Criteri per i metadati delle foto per la proprietà [System. Photo. DateTaken](../properties/props-system-photo-datetaken.md) .
+Criteri dei metadati delle foto per [la proprietà System.Photo.DateTaken.](../properties/props-system-photo-datetaken.md)
 
-### <a name="pkey"></a>PKEY
+### <a name="pkey"></a>Chiave PKEY
 
 PKEY \_ Photo \_ DateTaken
 
@@ -27,9 +27,9 @@ JPEG, TIFF
 
 No
 
-### <a name="output-propvariant-type"></a>Tipo di PROPVARIANT di output
+### <a name="output-propvariant-type"></a>Tipo PROPVARIANT di output
 
-FILETIME VT \_
+VT \_ FILETIME
 
 ### <a name="input-type"></a>Tipo di input
 
@@ -37,21 +37,21 @@ Datetime
 
 ### <a name="conflict-resolution-policy"></a>Criteri di risoluzione dei conflitti
 
-I valori di schemi diversi vengono risolti.
+I valori di schemi diversi vengono riconciliati.
 
 ### <a name="jpeg-policy"></a>Criteri JPEG
 
-### <a name="read-paths"></a>Leggi percorsi
+### <a name="read-paths"></a>Percorsi di lettura
 
 
 
 | JSON | Percorso                                  | Formato disco |
 |-------|---------------------------------------|-------------|
-| 1     | /App1/IFD/EXIF/{ushort = 36867}         | ascii       |
-| 2     | /App13/IRB/8bimiptc/IPTC/date creato | unicode     |
-| 3     | /XMP/XMP: creato                   | unicode     |
-| 4     | /App1/IFD/EXIF/{ushort = 36868}         | ascii       |
-| 5     | /App13/IRB/8bimiptc/IPTC/date creato | unicode     |
+| 1     | /app1/ifd/exif/{ushort=36867}         | ascii       |
+| 2     | /app13/irb/8bimiptc/iptc/date created | unicode     |
+| 3     | /xmp/xmp:CreateDate                   | unicode     |
+| 4     | /app1/ifd/exif/{ushort=36868}         | ascii       |
+| 5     | /app13/irb/8bimiptc/iptc/date created | unicode     |
 | 6     | /xmp/exif:DateTimeOriginal            | unicode     |
 
 
@@ -64,10 +64,10 @@ I valori di schemi diversi vengono risolti.
 
 | JSON | Percorso                                  | Formato disco |
 |-------|---------------------------------------|-------------|
-| 1     | /App1/IFD/EXIF/{ushort = 36867}         | ascii       |
-| 2     | /App13/IRB/8bimiptc/IPTC/date creato | unicode     |
-| 3     | /XMP/XMP: creato                   | unicode     |
-| 4     | /App1/IFD/EXIF/{ushort = 36868}         | ascii       |
+| 1     | /app1/ifd/exif/{ushort=36867}         | ascii       |
+| 2     | /app13/irb/8bimiptc/iptc/date created | unicode     |
+| 3     | /xmp/xmp:CreateDate                   | unicode     |
+| 4     | /app1/ifd/exif/{ushort=36868}         | ascii       |
 | 5     | /xmp/exif:DateTimeOriginal            | unicode     |
 
 
@@ -80,14 +80,14 @@ I valori di schemi diversi vengono risolti.
 
 | JSON | Percorso                                  |
 |-------|---------------------------------------|
-| 1     | /App1/IFD/EXIF/{ushort = 36867}         |
-| 2     | /App1/IFD/EXIF/{ushort = 37521}         |
-| 3     | /App1/IFD/EXIF/{ushort = 36868}         |
-| 4     | /App1/IFD/EXIF/{ushort = 37522}         |
+| 1     | /app1/ifd/exif/{ushort=36867}         |
+| 2     | /app1/ifd/exif/{ushort=37521}         |
+| 3     | /app1/ifd/exif/{ushort=36868}         |
+| 4     | /app1/ifd/exif/{ushort=37522}         |
 | 5     | /xmp/exif:DateTimeOriginal            |
-| 6     | /XMP/XMP: creato                   |
-| 7     | /App13/IRB/8bimiptc/IPTC/date creato |
-| 8     | /App13/IRB/8bimiptc/IPTC/time creato |
+| 6     | /xmp/xmp:CreateDate                   |
+| 7     | /app13/irb/8bimiptc/iptc/date created |
+| 8     | /app13/irb/8bimiptc/iptc/time created |
 
 
 
@@ -95,18 +95,18 @@ I valori di schemi diversi vengono risolti.
 
 ### <a name="tiff-policy"></a>Criteri TIFF
 
-### <a name="read-paths"></a>Leggi percorsi
+### <a name="read-paths"></a>Percorsi di lettura
 
 
 
 | JSON | Percorso                                | Formato disco |
 |-------|-------------------------------------|-------------|
-| 1     | /IFD/EXIF/{ushort = 36867}            | ascii       |
-| 2     | /IFD/IPTC/date creato              | unicode     |
-| 3     | /IFD/XMP/XMP: creato             | unicode     |
-| 4     | /IFD/EXIF/{ushort = 36868}            | ascii       |
-| 5     | /IFD/IPTC/date creato              | unicode     |
-| 6     | /IFD/IRB/8bimiptc/IPTC/date creato | unicode     |
+| 1     | /ifd/exif/{ushort=36867}            | ascii       |
+| 2     | /ifd/iptc/date created              | unicode     |
+| 3     | /ifd/xmp/xmp:CreateDate             | unicode     |
+| 4     | /ifd/exif/{ushort=36868}            | ascii       |
+| 5     | /ifd/iptc/date created              | unicode     |
+| 6     | /ifd/irb/8bimiptc/iptc/date created | unicode     |
 | 7     | /ifd/xmp/exif:DateTimeOriginal      | unicode     |
 
 
@@ -119,33 +119,33 @@ I valori di schemi diversi vengono risolti.
 
 | JSON | Percorso                                | Formato disco |
 |-------|-------------------------------------|-------------|
-| 1     | /IFD/EXIF/{ushort = 36867}            | ascii       |
-| 2     | /IFD/IPTC/date creato              | unicode     |
-| 3     | /IFD/XMP/XMP: creato             | unicode     |
-| 4     | /IFD/EXIF/{ushort = 36868}            | ascii       |
-| 5     | /IFD/IRB/8bimiptc/IPTC/date creato | unicode     |
+| 1     | /ifd/exif/{ushort=36867}            | ascii       |
+| 2     | /ifd/iptc/date created              | unicode     |
+| 3     | /ifd/xmp/xmp:CreateDate             | unicode     |
+| 4     | /ifd/exif/{ushort=36868}            | ascii       |
+| 5     | /ifd/irb/8bimiptc/iptc/date created | unicode     |
 | 6     | /ifd/xmp/exif:DateTimeOriginal      | unicode     |
 
 
 
  
 
-### <a name="remove-paths"></a>Rimuovi percorsi
+### <a name="remove-paths"></a>Rimuovere i percorsi
 
 
 
 | JSON | Percorso                                |
 |-------|-------------------------------------|
-| 1     | /IFD/EXIF/{ushort = 36867}            |
-| 2     | /IFD/EXIF/{ushort = 37521}            |
-| 3     | /IFD/EXIF/{ushort = 36868}            |
-| 4     | /IFD/EXIF/{ushort = 37522}            |
+| 1     | /ifd/exif/{ushort=36867}            |
+| 2     | /ifd/exif/{ushort=37521}            |
+| 3     | /ifd/exif/{ushort=36868}            |
+| 4     | /ifd/exif/{ushort=37522}            |
 | 5     | /ifd/xmp/exif:DateTimeOriginal      |
-| 6     | /IFD/XMP/XMP: creato             |
-| 7     | /IFD/IPTC/date creato              |
-| 8     | /IFD/IPTC/time creato              |
-| 9     | /IFD/IRB/8bimiptc/IPTC/date creato |
-| 10    | /IFD/IRB/8bimiptc/IPTC/time creato |
+| 6     | /ifd/xmp/xmp:CreateDate             |
+| 7     | /ifd/iptc/date created              |
+| 8     | /ifd/iptc/time created              |
+| 9     | /ifd/irb/8bimiptc/iptc/date created |
+| 10    | /ifd/irb/8bimiptc/iptc/time created |
 
 
 
@@ -153,13 +153,13 @@ I valori di schemi diversi vengono risolti.
 
 ### <a name="png-policy"></a>Criteri PNG
 
-### <a name="read-paths"></a>Leggi percorsi
+### <a name="read-paths"></a>Percorsi di lettura
 
 
 
 | JSON | Percorso                      | Formato disco |
 |-------|---------------------------|-------------|
-| 1     | /\[\*\]Tempo di creazione/testo | ascii       |
+| 1     | /\[\*\]tEXt/Creation Time | ascii       |
 
 
 
@@ -171,19 +171,19 @@ I valori di schemi diversi vengono risolti.
 
 | JSON | Percorso                      | Formato disco |
 |-------|---------------------------|-------------|
-| 2     | /\[\*\]Tempo di creazione/testo | ascii       |
+| 2     | /\[\*\]tEXt/Creation Time | ascii       |
 
 
 
  
 
-### <a name="remove-paths"></a>Rimuovi percorsi
+### <a name="remove-paths"></a>Rimuovere i percorsi
 
 
 
 | JSON | Percorso                      |
 |-------|---------------------------|
-| 3     | /\[\*\]Tempo di creazione/testo |
+| 3     | /\[\*\]tEXt/Creation Time |
 
 
 
@@ -195,7 +195,7 @@ I valori di schemi diversi vengono risolti.
 
 <dl> <dt>
 
-[System. Photo. DateTaken](../properties/props-system-photo-datetaken.md)
+[System.Photo.DateTaken](../properties/props-system-photo-datetaken.md)
 </dt> </dl>
 
  

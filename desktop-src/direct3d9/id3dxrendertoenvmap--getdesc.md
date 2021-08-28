@@ -1,7 +1,7 @@
 ---
 description: Recupera la descrizione della superficie di rendering.
 ms.assetid: 3c2612fa-540d-4d7a-9821-bf37fa3b6da4
-title: 'Metodo ID3DXRenderToEnvMap:: getdesc (D3dx9core. h)'
+title: Metodo ID3DXRenderToEnvMap::GetDesc (D3dx9core.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -14,14 +14,14 @@ api_type:
 api_location:
 - d3dx9.lib
 - d3dx9.dll
-ms.openlocfilehash: d0b9faf5bdd4c57f7320749aef2010f457dd682e
-ms.sourcegitcommit: 14010c34b35fa268046c7683f021f86de08ddd0a
+ms.openlocfilehash: 7cfe9f3e8e857806895ec8be249d51f63ffe4818f24bbbf12d842754a885e855
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/15/2021
-ms.locfileid: "103761998"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119847306"
 ---
-# <a name="id3dxrendertoenvmapgetdesc-method"></a>Metodo ID3DXRenderToEnvMap:: getdesc
+# <a name="id3dxrendertoenvmapgetdesc-method"></a>Metodo ID3DXRenderToEnvMap::GetDesc
 
 Recupera la descrizione della superficie di rendering.
 
@@ -40,12 +40,12 @@ HRESULT GetDesc(
 
 <dl> <dt>
 
-*pDesc* \[ out\]
+*pDesc* \[ Cambio\]
 </dt> <dd>
 
-Tipo: **[ **D3DXRTE \_ desc**](d3dxrte-desc.md)\***
+Tipo: **[ **D3DXRTE \_ DESC**](d3dxrte-desc.md)\***
 
-Puntatore a una struttura [**D3DXRTE \_ desc**](d3dxrte-desc.md) che descrive la superficie di rendering.
+Puntatore a [**una struttura \_ DESC D3DXRTE**](d3dxrte-desc.md) che descrive la superficie di rendering.
 
 </dd> </dl>
 
@@ -61,8 +61,8 @@ Se il metodo ha esito positivo, il valore restituito è D3D \_ OK. Se il metodo 
 
 | Requisito | Valore |
 |--------------------|----------------------------------------------------------------------------------------|
-| Intestazione<br/>  | <dl> <dt>D3dx9core. h</dt> </dl> |
-| Libreria<br/> | <dl> <dt>D3dx9. lib</dt> </dl>   |
+| Intestazione<br/>  | <dl> <dt>D3dx9core.h</dt> </dl> |
+| Libreria<br/> | <dl> <dt>D3dx9.lib</dt> </dl>   |
 
 
 

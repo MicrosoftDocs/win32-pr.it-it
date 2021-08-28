@@ -1,9 +1,9 @@
 ---
-title: Messaggio LVM_REMOVEALLGROUPS (COMmctrl. h)
-description: Rimuove tutti i gruppi da un controllo visualizzazione elenco.
+title: LVM_REMOVEALLGROUPS messaggio (Commctrl.h)
+description: Rimuove tutti i gruppi da un controllo di visualizzazione elenco.
 ms.assetid: b8971f35-dc04-4729-8ac1-8cabbc86caa6
 keywords:
-- Controlli di Windows Message LVM_REMOVEALLGROUPS
+- LVM_REMOVEALLGROUPS dei messaggi Windows controlli
 topic_type:
 - apiref
 api_name:
@@ -14,35 +14,35 @@ api_type:
 - HeaderDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: c307233b794aea930c5419a6c1464526d84b4eb5
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: 3c4550fcabd46574ba7c8806ddbb8b9ee23d1a684dfd56e8d27138607a1bd52b
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "103740983"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119915461"
 ---
-# <a name="lvm_removeallgroups-message"></a>\_Messaggio REMOVEALLGROUPS LVM
+# <a name="lvm_removeallgroups-message"></a>Messaggio LVM \_ REMOVEALLGROUPS
 
-Rimuove tutti i gruppi da un controllo visualizzazione elenco.
+Rimuove tutti i gruppi da un controllo di visualizzazione elenco.
 
 ## <a name="parameters"></a>Parametri
 
 <dl> <dt>
 
 *wParam* 
-</dt> <dd>Deve essere **null**.</dd> <dt>
+</dt> <dd>Deve essere **NULL.**</dd> <dt>
 
 *lParam* 
-</dt> <dd>Deve essere **null**.</dd> </dl>
+</dt> <dd>Deve essere **NULL.**</dd> </dl>
 
 ## <a name="return-value"></a>Valore restituito
 
-Il valore restituito non viene utilizzato.
+Il valore restituito non viene usato.
 
 ## <a name="remarks"></a>Commenti
 
 > [!Note]  
-> Per utilizzare questo messaggio, è necessario fornire un manifesto che specifichi Comclt32.dll versione 6,0. Per altre informazioni sui manifesti, vedere [Abilitazione degli stili di visualizzazione](cookbook-overview.md).
+> Per usare questo messaggio, è necessario fornire un manifesto che specifica Comclt32.dll versione 6.0. Per altre informazioni sui manifesti, vedere [Abilitazione degli stili di visualizzazione](cookbook-overview.md).
 
  
 
@@ -52,9 +52,9 @@ Il valore restituito non viene utilizzato.
 
 | Requisito | Valore |
 |-------------------------------------|---------------------------------------------------------------------------------------|
-| Client minimo supportato<br/> | \[Solo app desktop di Windows Vista\]<br/>                                        |
-| Server minimo supportato<br/> | \[Solo app desktop Windows Server 2003\]<br/>                                  |
-| Intestazione<br/>                   | <dl> <dt>Commctrl. h</dt> </dl> |
+| Client minimo supportato<br/> | Windows Solo \[ app desktop di Vista\]<br/>                                        |
+| Server minimo supportato<br/> | Windows Solo app desktop server 2003 \[\]<br/>                                  |
+| Intestazione<br/>                   | <dl> <dt>Commctrl.h</dt> </dl> |
 
 
 

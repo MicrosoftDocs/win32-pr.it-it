@@ -1,11 +1,11 @@
 ---
-title: Proprietà BySymbolicLink di IMsRdpCameraRedirConfigCollection
-description: Restituisce un oggetto IMsRdpCameraRedirConfig dalla raccolta che corrisponde al collegamento simbolico specificato dell'interfaccia **KSCATEGORY_VIDEO_CAMERA** per la fotocamera.
+title: Proprietà IMsRdpCameraRedirConfigCollection BySymbolicLink
+description: Restituisce un oggetto IMsRdpCameraRedirConfig dalla raccolta che corrisponde al collegamento simbolico specificato dell'interfaccia KSCATEGORY_VIDEO_CAMERA **per** la fotocamera.
 ms.tgt_platform: multiple
 keywords:
-- Servizi Desktop remoto proprietà BySymbolicLink
-- Servizi Desktop remoto proprietà BySymbolicLink, interfaccia IMsRdpCameraRedirConfigCollection
-- Interfaccia IMsRdpCameraRedirConfigCollection Servizi Desktop remoto, proprietà BySymbolicLink
+- Proprietà BySymbolicLink Servizi Desktop remoto
+- Proprietà BySymbolicLink Servizi Desktop remoto , interfaccia IMsRdpCameraRedirConfigCollection
+- Interfaccia IMsRdpCameraRedirConfigCollection Servizi Desktop remoto , proprietà BySymbolicLink
 topic_type:
 - apiref
 api_name:
@@ -17,16 +17,16 @@ api_type:
 - COM
 ms.topic: reference
 ms.date: 12/16/2020
-ms.openlocfilehash: d4888c7e468e0522240d8ef922563ab28eb33e77
-ms.sourcegitcommit: 04e801237156e90b48111d60bddf437f87f5cdfe
+ms.openlocfilehash: a46cd3daf8cc4270473433bb0c4c20dee0616dba3619b056d33136e0d4dd8f5e
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/19/2020
-ms.locfileid: "106303650"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120033631"
 ---
-# <a name="imsrdpcameraredirconfigcollectionbysymboliclink-property"></a>IMsRdpCameraRedirConfigCollection::. Proprietà BySymbolicLink
+# <a name="imsrdpcameraredirconfigcollectionbysymboliclink-property"></a>IMsRdpCameraRedirConfigCollection::. BySymbolicLink - proprietà
 
-Restituisce un oggetto [IMsRdpCameraRedirConfig](imsrdpcameraredirconfig.md) dalla raccolta che corrisponde al collegamento simbolico specificato dell'interfaccia **KSCATEGORY_VIDEO_CAMERA** per la fotocamera.
+Restituisce un [oggetto IMsRdpCameraRedirConfig](imsrdpcameraredirconfig.md) dalla raccolta che corrisponde al collegamento simbolico specificato dell'interfaccia KSCATEGORY_VIDEO_CAMERA **per** la fotocamera.
 
 Questa proprietà è di sola lettura.
 
@@ -50,7 +50,7 @@ Oggetto [IMsRdpCameraRedirConfig](imsrdpcameraredirconfig.md) che corrisponde al
 | Client minimo supportato| Windows 10, versione 1803 (build 17134)      |
 | Libreria dei tipi            | MsTscAx.dll                        |
 | DLL                  | MsTscAx.dll     |
-| IID                      | IID \_ IMsRdpCameraRedirConfigCollection è definito come AE45252B-aaab-4504-B681-649D6073A37A          |
+| IID                      | IMsRdpCameraRedirConfigCollection IID è definito come \_ AE45252B-AAAB-4504-B681-649D6073A37A          |
 
 ## <a name="see-also"></a>Vedi anche
 

@@ -1,11 +1,11 @@
 ---
-title: attributo ms-DS-host-Service-account-BL
-description: Collegamento a ritroso per gli account del servizio per collegare i computer associati all'account del servizio.
+title: Attributo ms-DS-Host-Service-Account-BL
+description: Collegamento all'indietro degli account di servizio per collegare i computer associati all'account del servizio.
 ms.assetid: 4f32221c-3561-4f38-b82b-637114029b2d
 ms.tgt_platform: multiple
 keywords:
-- Schema AD dell'attributo ms-DS-host-Service-account-BL
-- attributo msDS-HostServiceAccountBL-schema AD
+- Schema AD dell'attributo ms-DS-Host-Service-Account-BL
+- Schema AD dell'attributo msDS-HostServiceAccountBL
 topic_type:
 - apiref
 api_name:
@@ -14,28 +14,28 @@ api_type:
 - Schema
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 244df74fbd4b0008e562f4c75f2af8e7df886ca9
-ms.sourcegitcommit: b77ace27b0432e7cd3863191b11926be032fbe2f
+ms.openlocfilehash: 258c7d94ba016528ce141d2bd292eba0c832976de6f03bb2e367d6d458fd123f
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/14/2020
-ms.locfileid: "106303521"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118426520"
 ---
-# <a name="ms-ds-host-service-account-bl-attribute"></a>attributo ms-DS-host-Service-account-BL
+# <a name="ms-ds-host-service-account-bl-attribute"></a>Attributo ms-DS-Host-Service-Account-BL
 
-Collegamento a ritroso per gli account del servizio per collegare i computer associati all'account del servizio.
+Collegamento all'indietro degli account di servizio per collegare i computer associati all'account del servizio.
 
 
 
 | Voce | Valore |
 |-------------------|-----------------------------------------|
-| CN                | ms-DS-host-Service-account-BL           |
-| LDAP-Display-Name | msDS-HostServiceAccountBL               |
+| CN                | ms-DS-Host-Service-Account-BL           |
+| Ldap-Display-Name | msDS-HostServiceAccountBL               |
 | Dimensione              | \-                                      |
-| Privilegio aggiornamento  | \-                                      |
+| Aggiorna privilegio  | \-                                      |
 | Frequenza di aggiornamento  | \-                                      |
 | Attribute-Id      | 1.2.840.113556.1.4.2057                 |
-| System-ID-GUID    | 79abe4eb-88f3-48e7-89d6-f4bc7e98c331    |
+| System-Id-Guid    | 79abe4eb-88f3-48e7-89d6-f4bc7e98c331    |
 | Sintassi            | [**Object(DS-DN)**](s-object-ds-dn.md) |
 
 
@@ -54,15 +54,15 @@ Collegamento a ritroso per gli account del servizio per collegare i computer ass
 | ID collegamento                | 2167                            |
 | MAPI-Id                | \-                              |
 | System-Only            | Falso                           |
-| È a valore singolo       | Falso                           |
+| A valore singolo       | Falso                           |
 | Indicizzato             | Falso                           |
 | Nel catalogo globale      | Falso                           |
-| NT-Security-descrittore | O:BAG: NON VALIDO: S:                    |
+| NT-Security-Descriptor | O:BAG:BAD:S:                    |
 | Range-Lower            | \-                              |
 | Range-Upper            | \-                              |
 | Search-Flags           | 0x00000000                      |
 | System-Flags           | 0x00000011                      |
-| Classi utilizzate in        | [**In alto**](c-top.md)<br/> |
+| Classi usate in        | [**In alto**](c-top.md)<br/> |
 
 
 
@@ -75,15 +75,15 @@ Collegamento a ritroso per gli account del servizio per collegare i computer ass
 | ID collegamento                | 2167                            |
 | MAPI-Id                | \-                              |
 | System-Only            | Falso                           |
-| È a valore singolo       | Falso                           |
+| A valore singolo       | Falso                           |
 | Indicizzato             | Falso                           |
 | Nel catalogo globale      | Falso                           |
-| NT-Security-descrittore | O:BAG: NON VALIDO: S:                    |
+| NT-Security-Descriptor | O:BAG:BAD:S:                    |
 | Range-Lower            | \-                              |
 | Range-Upper            | \-                              |
 | Search-Flags           | 0x00000000                      |
 | System-Flags           | 0x00000011                      |
-| Classi utilizzate in        | [**In alto**](c-top.md)<br/> |
+| Classi usate in        | [**In alto**](c-top.md)<br/> |
 
 
 

@@ -1,7 +1,7 @@
 ---
-description: Specifica le funzioni di callback che devono essere utilizzate da Gestione componenti facoltativa.
+description: Specifica le funzioni di callback che devono essere usate dalla gestione componenti facoltativa.
 ms.assetid: 454cc07e-4a00-4c53-9759-47563a8ed62f
-title: Struttura OCM_CLIENT_CALLBACKS
+title: OCM_CLIENT_CALLBACKS struttura
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -12,16 +12,16 @@ api_name:
 api_type:
 - NA
 api_location: ''
-ms.openlocfilehash: cc2c1d95e2b05de1ad7285e065e9742a24e0e5a5
-ms.sourcegitcommit: c7add10d695482e1ceb72d62b8a4ebd84ea050f7
+ms.openlocfilehash: 453eeaa49a7211793503f39f0b050904bcf7de41a83e2b06dce647fb4177e41e
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "106304564"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120058871"
 ---
-# <a name="ocm_client_callbacks-structure"></a>Struttura di callback del \_ client OCM \_
+# <a name="ocm_client_callbacks-structure"></a>Struttura CALLBACK CLIENT OCM \_ \_
 
-Specifica le funzioni di callback che devono essere utilizzate da Gestione componenti facoltativa.
+Specifica le funzioni di callback che devono essere usate dalla gestione componenti facoltativa.
 
 ## <a name="syntax"></a>Sintassi
 
@@ -47,7 +47,7 @@ typedef struct _OCM_CLIENT_CALLBACKS {
 **FillInSetupDataA**
 </dt> <dd>
 
-Funzione di callback da inserire nella struttura dei dati di installazione che fornisce informazioni sull'ambiente in cui è in esecuzione il gestore OC.
+Funzione di callback per compilare la struttura dei dati di configurazione che fornisce informazioni sull'ambiente in cui è in esecuzione OC Manager.
 
 </dd> <dt>
 
@@ -58,24 +58,24 @@ Funzione di callback che registra eventuali errori.
 
 </dd> <dt>
 
-**Riavvio del computer**
+**SetReboot**
 </dt> <dd>
 
-Funzione di callback che indica la necessità di riavviare il computer.
+Funzione di callback che indica la necessità di riavviare.
 
 </dd> <dt>
 
 **ShowHideWizardPage**
 </dt> <dd>
 
-Funzione di callback che indica se mostrare o nascondere la procedura guidata. Questa operazione ha effetto solo se viene visualizzato il tabellone.
+Funzione di callback che indica se visualizzare o nascondere la procedura guidata. Ciò ha effetto solo se viene visualizzato il manifesto.
 
 </dd> <dt>
 
 **BillboardProgressCallback**
 </dt> <dd>
 
-Funzione di callback che chiama il feedback sullo stato di avanzamento per il tabellone.
+Funzione di callback che chiama il feedback sullo stato di avanzamento al manifesto.
 
 </dd> <dt>
 
@@ -95,7 +95,7 @@ Funzione di callback che imposta i dati sulle prestazioni.
 
 ## <a name="remarks"></a>Commenti
 
-Le funzioni di callback sono dichiarate come indicato di seguito.
+Le funzioni di callback vengono dichiarate come indicato di seguito.
 
 ``` syntax
 typedef

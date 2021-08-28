@@ -3,21 +3,21 @@
   items:
     - name: Novità di Risparmio energia
       href: what-s-new-in-power-management.md
-    - name: Informazioni sul risparmio energia
+    - name: Informazioni su Risparmio energia
       href: about-power-management.md
       items:
-        - name: Risparmio energia di Windows
+        - name: Windows Risparmio energia
           href: windows-power-management.md
-        - name: Stato di alimentazione del sistema
+        - name: Stato alimentazione sistema
           href: system-power-status.md
         - name: Stati di alimentazione del sistema
           href: system-power-states.md
-        - name: Eventi di risparmio energia di sistema
+        - name: Eventi di risparmio energia del sistema
           href: system-power-management-events.md
-        - name: Messaggi di WM_POWERBROADCAST
+        - name: WM_POWERBROADCAST messaggi
           href: wm-powerbroadcast-messages.md
           items:
-            - name: Registrazione per eventi di alimentazione
+            - name: Registrazione per Power Events
               href: registering-for-power-events.md
         - name: Criteri di sospensione del sistema
           href: system-sleep-criteria.md
@@ -25,41 +25,41 @@
           href: system-wake-up-events.md
         - name: Informazioni sulla batteria
           href: battery-information.md
-        - name: Interfaccia di controllo retroilluminazione
+        - name: Interfaccia di controllo backlight
           href: backlight-control-interface.md
         - name: Combinazioni per il risparmio di energia
           href: power-schemes.md
           items:
-            - name: Impostazioni di criteri di risparmio energia
+            - name: Criteri di Impostazioni
               href: power-policy-settings.md
-            - name: Gestione dello schema di risparmio energia
+            - name: Gestione di combinazioni per il risparmio di energia
               href: managing-power-schemes.md
             - name: Sostituzioni amministratore
               href: administrator-overrides.md
-        - name: Risparmio energia del dispositivo
+        - name: Risparmio energia dei dispositivi
           href: device-power-management.md
-    - name: Uso del risparmio energia
+    - name: Uso di Risparmio energia
       href: using-power-management.md
       items:
-        - name: Enumerazione dei dispositivi della batteria
+        - name: Enumerazione dei dispositivi a batteria
           href: enumerating-battery-devices.md
-        - name: Uso dell'API per la potenza del dispositivo
+        - name: Uso dell'API Di alimentazione del dispositivo
           href: using-the-device-power-api.md
-    - name: Riferimento al risparmio energia
+    - name: Informazioni di riferimento su Risparmio energia
       href: power-management-reference.md
       items:
         - name: Costanti di risparmio energia
           href: power-management-constants.md
           items:
-            - name: Costanti dei criteri di scaricamento
+            - name: Costanti dei criteri di scarica
               href: discharge-policy-constants.md
-            - name: Costanti flag globali
+            - name: Costanti dei flag globali
               href: global-flags-constants.md
             - name: Costanti dei criteri di controllo delle prestazioni del processore
               href: processor-performance-control-policy-constants.md
-            - name: GUID dell'impostazione di risparmio energia
+            - name: GUID delle impostazioni di risparmio energia
               href: power-setting-guids.md
-        - name: Codici di controllo del risparmio energia
+        - name: Codici di controllo di risparmio energia
           href: power-management-control-codes.md
           items:
             - name: IOCTL_BATTERY_QUERY_INFORMATION
@@ -76,7 +76,7 @@
               href: ioctl-video-query-supported-brightness.md
             - name: IOCTL_VIDEO_SET_DISPLAY_BRIGHTNESS
               href: ioctl-video-set-display-brightness.md
-        - name: Tipi di enumerazione risparmio energia
+        - name: Tipi di enumerazione di Risparmio energia
           href: power-management-enumeration-types.md
           items:
             - name: EFFECTIVE_POWER_MODE
@@ -207,7 +207,7 @@
               href: /windows/desktop/api/PowrProf/nf-powrprof-powerreadpossiblefriendlyname
             - name: PowerReadPossibleValue
               href: /windows/desktop/api/PowrProf/nf-powrprof-powerreadpossiblevalue
-            - name: PowerReadSettingAttributes
+            - name: Attributi di PowerReadSettingAttributes
               href: /windows/desktop/api/PowrProf/nf-powrprof-powerreadsettingattributes
             - name: PowerReadValueIncrement
               href: /windows/desktop/api/PowrProf/nf-powrprof-powerreadvalueincrement
@@ -267,7 +267,7 @@
               href: /windows/desktop/api/PowrProf/nf-powrprof-powerwritepossiblefriendlyname
             - name: PowerWritePossibleValue
               href: /windows/desktop/api/PowrProf/nf-powrprof-powerwritepossiblevalue
-            - name: PowerWriteSettingAttributes
+            - name: Attributi di PowerWriteSettingAttributes
               href: /windows/desktop/api/PowrProf/nf-powrprof-powerwritesettingattributes
             - name: PowerWriteValueIncrement
               href: /windows/desktop/api/PowrProf/nf-powrprof-powerwritevalueincrement
@@ -312,7 +312,7 @@
           items:
             - name: WM_POWER
               href: wm-power.md
-            - name: WM_POWERBROADCAST
+            - name: Wm_powerbroadcast
               href: wm-powerbroadcast.md
         - name: Strutture di risparmio energia
           href: power-management-structures.md

@@ -58,7 +58,7 @@
                   href: iis-logging.md
                 - name: Registrazione binaria centralizzata
                   href: centralized-binary-logging.md
-            - name: Authentication
+            - name: Autenticazione
               href: authentication-in-http-version-2-0.md
               items:
                 - name: Configurazione dell'autenticazione dinamica
@@ -76,7 +76,7 @@
                   href: configuring-the-url-group.md
                 - name: Configurazione dei timer a livello di API del server HTTP
                   href: configuring-the-http-server-api-wide-timers.md
-            - name: Proprietà Timeouts del server
+            - name: Proprietà Timeout server
               href: server-timeouts-property.md
               items:
                 - name: Configurazione dei timeout specifici dell'applicazione
@@ -85,11 +85,11 @@
               href: kernel-mode-cache-in-http-2-0.md
         - name: Attività del server HTTP
           href: http-server-tasks.md
-        - name: Panoramica dell'API del server HTTP
+        - name: Panoramica dell'API server HTTP
           href: http-server-api-overview.md
         - name: Routine di completamento HTTP
           href: http-completion-routines.md
-        - name: Cache dei frammenti
+        - name: Cache frammenti
           href: fragment-cache.md
         - name: UrlPrefix Strings (Stringhe UrlPrefix)
           href: urlprefix-strings.md
@@ -322,7 +322,7 @@
                   href: /windows/win32/api/http/nf-http-http_not_equal_version
                 - name: HTTP_SET_VERSION
                   href: /windows/win32/api/http/nf-http-http_set_version
-            - name: Tipi di enumerazione dell'API server HTTP versione 1.0
+            - name: Tipi di enumerazione dell'API del server HTTP versione 1.0
               href: http-server-api-version-1-0-enumeration-types.md
               items:
                 - name: HTTP_CACHE_POLICY_TYPE
@@ -340,7 +340,7 @@
         - name: Informazioni di riferimento sulle API del server HTTP versione 2.0
           href: http-server-api-version-2-0-reference.md
           items:
-            - name: Tipi di dati dell'API server HTTP versione 2.0
+            - name: Tipi di dati dell'API del server HTTP versione 2.0
               href: http-server-api-version-2-0-data-types.md
             - name: Funzioni dell'API server HTTP versione 2.0
               href: http-server-api-version-2-0-functions.md
@@ -470,13 +470,13 @@
               items:
                 - name: HTTP_AUTH_ENABLE_ costanti
                   href: http-auth-enable--constants.md
-                - name: HTTP_LOG_FIELD_ costanti
+                - name: costanti HTTP_LOG_FIELD_
                   href: http-log-field--constants.md
                 - name: HTTP_LOGGING_FLAG_ costanti
                   href: http-logging-flag--constants.md
-                - name: HTTP_RESPONSE_FLAG_ costanti
+                - name: costanti HTTP_RESPONSE_FLAG_
                   href: http-response-flag--constants.md
-            - name: Tipi di enumerazione dell'API server HTTP versione 2.0
+            - name: Tipi di enumerazione dell'API del server HTTP versione 2.0
               href: http-server-api-version-2-0-enumeration-types.md
               items:
                 - name: HTTP_503_RESPONSE_VERBOSITY

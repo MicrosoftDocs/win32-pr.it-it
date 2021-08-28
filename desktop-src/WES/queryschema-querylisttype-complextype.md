@@ -1,9 +1,9 @@
 ---
 title: Tipo complesso QueryListType
-description: Definisce un elenco di query che possono contenere un set di selettori ed eliminati utilizzati per includere eventi in o escludere eventi dal set di risultati.
+description: Definisce un elenco di query che possono contenere un set di selettori ed eliminatori utilizzati per includere o escludere eventi dal set di risultati.
 ms.assetid: 3b9944e8-5913-4a77-a8fd-7efa43f3063f
 keywords:
-- Log eventi di tipo complesso QueryListType
+- EventLog di tipo complesso QueryListType
 topic_type:
 - apiref
 api_name:
@@ -13,16 +13,16 @@ api_type:
 ms.topic: reference
 ms.date: 05/31/2018
 api_location: ''
-ms.openlocfilehash: 58cc6e83fb681f6244288088ea217097dd109c23
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: e1692427538dcd500cd4190839ffcc148c7358e0aee7f5a27b4906192a0810b9
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "106301548"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119904161"
 ---
 # <a name="querylisttype-complex-type"></a>Tipo complesso QueryListType
 
-Definisce un elenco di query che possono contenere un set di selettori ed eliminati utilizzati per includere eventi in o escludere eventi dal set di risultati.
+Definisce un elenco di query che possono contenere un set di selettori ed eliminatori utilizzati per includere o escludere eventi dal set di risultati.
 
 ``` syntax
 <xs:complexType name="QueryListType">
@@ -42,7 +42,7 @@ Definisce un elenco di query che possono contenere un set di selettori ed elimin
 
 | Elemento                                                  | Tipo                                                   | Descrizione                                                                                                                     |
 |----------------------------------------------------------|--------------------------------------------------------|---------------------------------------------------------------------------------------------------------------------------------|
-| [**Query**](queryschema-query-querylisttype-element.md) | [**QueryType**](queryschema-querytype-complextype.md) | Definisce un set di selettori ed eliminati utilizzati per includere eventi in o escludere eventi dal set di risultati.<br/> |
+| [**Query**](queryschema-query-querylisttype-element.md) | [**Tipo di query**](queryschema-querytype-complextype.md) | Definisce un set di selettori ed eliminatori utilizzati per includere o escludere eventi dal set di risultati.<br/> |
 
 
 
@@ -52,8 +52,8 @@ Definisce un elenco di query che possono contenere un set di selettori ed elimin
 
 | Requisito | Valore |
 |-------------------------------------|------------------------------------------------------|
-| Client minimo supportato<br/> | \[Solo app desktop di Windows Vista\]<br/>       |
-| Server minimo supportato<br/> | \[Solo app desktop Windows Server 2008\]<br/> |
+| Client minimo supportato<br/> | Windows Solo \[ app desktop Vista\]<br/>       |
+| Server minimo supportato<br/> | Windows Solo app desktop di Server 2008 \[\]<br/> |
 
 
 

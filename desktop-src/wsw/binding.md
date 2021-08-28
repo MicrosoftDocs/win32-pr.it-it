@@ -1,31 +1,31 @@
 ---
 title: associazione di canale
-description: Le associazioni specificano il protocollo wire e il comportamento locale per un canale.
+description: Le associazioni specificano il protocollo di collegamento e il comportamento locale per un canale.
 ms.assetid: 82d465c5-b23d-4403-b360-8c710fbc6e1c
 keywords:
 - Associazione di servizi Web per Windows
 - WWSAPI
-- WWS
+- Wws
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 723a729b87dc26849dbd1f84038805c5e47a0ea4
-ms.sourcegitcommit: 2d531328b6ed82d4ad971a45a5131b430c5866f7
+ms.openlocfilehash: 7ae6e1b666f6b83915595f9fb138cc6ba2d81a434bbedd9871f27ba8fd6c6bbd
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "104330495"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119026729"
 ---
 # <a name="channel-binding"></a>associazione di canale
 
-Le associazioni specificano il protocollo wire e il comportamento locale per un canale. Le associazioni sono costituite dai componenti seguenti:
+Le associazioni specificano il protocollo di collegamento e il comportamento locale per un canale. Le associazioni sono costituito da componenti seguenti:
 
--   [**Binding di \_ canale \_ WS**](/windows/desktop/api/WebServices/ne-webservices-ws_channel_binding)che identifica il protocollo di trasferimento da utilizzare.
--   [**Descrizione della \_ sicurezza \_ WS**](/windows/desktop/api/WebServices/ns-webservices-ws_security_description), che specifica come proteggere il canale.
--   Set [**WS \_ Channel \_ Property**](/windows/desktop/api/WebServices/ns-webservices-ws_channel_property)s, che specifica altre impostazioni facoltative (vedere anche l' [**\_ \_ \_ ID della proprietà del canale WS**](/windows/desktop/api/WebServices/ne-webservices-ws_channel_property_id)).
+-   [**WS \_ CHANNEL \_ BINDING**](/windows/desktop/api/WebServices/ne-webservices-ws_channel_binding)che identifica il protocollo di trasferimento da usare.
+-   [**DESCRIZIONE \_ DELLA SICUREZZA WS \_**](/windows/desktop/api/WebServices/ns-webservices-ws_security_description)che specifica come proteggere il canale.
+-   Set [**WS \_ CHANNEL \_ PROPERTY**](/windows/desktop/api/WebServices/ns-webservices-ws_channel_property)s, che specifica impostazioni facoltative aggiuntive (vedere anche [**ID PROPRIETÀ \_ \_ CANALE \_ WS**](/windows/desktop/api/WebServices/ne-webservices-ws_channel_property_id)).
 
- 
+ 
 
- 
+ 
 
 
 

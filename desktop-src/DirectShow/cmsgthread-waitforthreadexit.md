@@ -1,7 +1,7 @@
 ---
 description: Si blocca fino alla chiusura del thread.
 ms.assetid: 1ee547b5-cd73-4ce8-8e66-c2062714d0f0
-title: Metodo CMsgThread. WaitForThreadExit (Msgthrd. h)
+title: Metodo CMsgThread.WaitForThreadExit (Msgthrd.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -16,14 +16,14 @@ api_location:
 - Strmbase.dll
 - Strmbasd.lib
 - Strmbasd.dll
-ms.openlocfilehash: c8b48573c4297a2d5d5d008eba88fd8ea437333c
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: de9861a1c7cae3055be288c4624b9e0b98c7b719e1534c1841ddb17770d91cf3
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "106330220"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119915711"
 ---
-# <a name="cmsgthreadwaitforthreadexit-method"></a>CMsgThread. WaitForThreadExit, metodo
+# <a name="cmsgthreadwaitforthreadexit-method"></a>Metodo CMsgThread.WaitForThreadExit
 
 Si blocca fino alla chiusura del thread.
 
@@ -51,11 +51,11 @@ Puntatore al codice di uscita restituito dal thread.
 
 ## <a name="return-value"></a>Valore restituito
 
-Restituisce **true** o **false**, il cui significato è determinato dalla classe che fornisce la funzione membro [**CMsgThread:: ThreadMessageProc**](cmsgthread-threadmessageproc.md) sottoposta a override e la funzione membro chiamante.
+Restituisce **TRUE** o **FALSE,** il cui significato è determinato dalla classe che fornisce la funzione membro [**CMsgThread::ThreadMessageProc**](cmsgthread-threadmessageproc.md) sottoposta a override e la funzione membro chiamante.
 
 ## <a name="remarks"></a>Commenti
 
-Verificare che il thread di lavoro sia stato chiuso completamente prima di completare la distruzione della classe derivata; in caso contrario, il thread potrebbe essere ancora eseguito dopo che la libreria di collegamento dinamico (DLL) è stata scaricata dallo spazio degli indirizzi del processo. Anche se l'unica istruzione lasciata per uscire è un'istruzione a singolo ritorno, si verificherà un'eccezione. L'unico modo affidabile per assicurarsi che il thread sia stato terminato consiste nel segnalare al thread di uscire (usando un oggetto [**CMsg**](cmsg.md) negoziato privatamente inviato alla funzione membro [**CMsgThread::P utthreadmsg**](cmsgthread-putthreadmsg.md) ) e quindi chiamare questa funzione membro. Questa operazione deve essere eseguita nel distruttore per la classe derivata.
+Assicurarsi che il thread di lavoro sia stato chiuso completamente prima di completare l'eliminazione della classe derivata. In caso contrario, il thread potrebbe comunque essere eseguito dopo lo scaricamento della libreria a collegamento dinamico (DLL) dallo spazio indirizzi del processo. Anche se l'unica istruzione da uscire è un'istruzione a restituzione singola, verrà generata un'eccezione. L'unico modo affidabile per assicurarsi che il thread sia terminato è segnalare l'uscita del thread (usando un oggetto [**CMsg**](cmsg.md) negoziato privatamente inviato alla funzione membro [**CMsgThread::P utThreadMsg)**](cmsgthread-putthreadmsg.md) e quindi chiamare questa funzione membro. È necessario eseguire questa operazione nel distruttore per la classe derivata.
 
 ## <a name="requirements"></a>Requisiti
 
@@ -63,8 +63,8 @@ Verificare che il thread di lavoro sia stato chiuso completamente prima di compl
 
 | Requisito | Valore |
 |--------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Intestazione<br/>  | <dl> <dt>Msgthrd. h (include Streams. h)</dt> </dl>                                                                                   |
-| Libreria<br/> | <dl> <dt>Strmbase. lib (compilazioni finali); </dt> <dt>Strmbasd. lib (build di debug)</dt> </dl> |
+| Intestazione<br/>  | <dl> <dt>Msgthrd.h (include Flussi.h)</dt> </dl>                                                                                   |
+| Libreria<br/> | <dl> <dt>Strmbase.lib (build di vendita al dettaglio); </dt> <dt>Strmbasd.lib (build di debug)</dt> </dl> |
 
 
 

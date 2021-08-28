@@ -1,9 +1,9 @@
 ---
-title: Messaggio LVM_GETITEMSPACING (COMmctrl. h)
-description: Determina la spaziatura tra gli elementi in un controllo visualizzazione elenco. È possibile inviare questo messaggio in modo esplicito o usando la \_ macro GetItemSpacing di ListView.
+title: LVM_GETITEMSPACING messaggio (Commctrl.h)
+description: Determina la spaziatura tra gli elementi in un controllo visualizzazione elenco. Puoi inviare questo messaggio in modo esplicito o usando la \_ macro ListView GetItemSpacing.
 ms.assetid: 4e43fb43-468c-4b8a-9e3b-1694e90ffef8
 keywords:
-- Controlli di Windows Message LVM_GETITEMSPACING
+- LVM_GETITEMSPACING controlli di Windows messaggio
 topic_type:
 - apiref
 api_name:
@@ -14,16 +14,16 @@ api_type:
 - HeaderDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 5ea08a7fc1004ffb46d710da6d1c2a8b0fb18e57
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: 687a1aa75d71b96cebe855bb97ea57f0a9c628ed49b1ef7a51a7557b23b5ce41
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "103964742"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120088891"
 ---
-# <a name="lvm_getitemspacing-message"></a>\_Messaggio GETITEMSPACING LVM
+# <a name="lvm_getitemspacing-message"></a>Messaggio \_ LVM GETITEMSPACING
 
-Determina la spaziatura tra gli elementi in un controllo visualizzazione elenco. È possibile inviare questo messaggio in modo esplicito o usando la macro [**\_ GetItemSpacing di ListView**](/windows/desktop/api/Commctrl/nf-commctrl-listview_getitemspacing) .
+Determina la spaziatura tra gli elementi in un controllo visualizzazione elenco. Puoi inviare questo messaggio in modo esplicito o usando la macro [**\_ ListView GetItemSpacing.**](/windows/desktop/api/Commctrl/nf-commctrl-listview_getitemspacing)
 
 ## <a name="parameters"></a>Parametri
 
@@ -32,7 +32,7 @@ Determina la spaziatura tra gli elementi in un controllo visualizzazione elenco.
 *wParam* 
 </dt> <dd>
 
-Visualizzazione per la quale recuperare la spaziatura dell'elemento. Questo parametro è **true** per la visualizzazione icona piccola o **false** per la visualizzazione icone.
+Visualizzazione per la quale recuperare la spaziatura dell'elemento. Questo parametro è **TRUE per** la visualizzazione icona piccola o **FALSE per** la visualizzazione icona.
 
 </dd> <dt>
 
@@ -49,9 +49,9 @@ Restituisce la quantità di spaziatura tra gli elementi. La spaziatura orizzonta
 
 | Requisito | Valore |
 |-------------------------------------|---------------------------------------------------------------------------------------|
-| Client minimo supportato<br/> | \[Solo app desktop di Windows Vista\]<br/>                                        |
-| Server minimo supportato<br/> | \[Solo app desktop Windows Server 2003\]<br/>                                  |
-| Intestazione<br/>                   | <dl> <dt>Commctrl. h</dt> </dl> |
+| Client minimo supportato<br/> | Windows Solo \[ app desktop Vista\]<br/>                                        |
+| Server minimo supportato<br/> | Windows Solo app desktop di Server 2003 \[\]<br/>                                  |
+| Intestazione<br/>                   | <dl> <dt>Commctrl.h</dt> </dl> |
 
 
 

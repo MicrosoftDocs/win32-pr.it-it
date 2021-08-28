@@ -1,7 +1,7 @@
 ---
 description: Specifica lo stato di integrità di un'applicazione.
 ms.assetid: CA06AA34-A549-4CFC-9B52-D2E0B200C3E9
-title: Enumerazione APPLICATION_STATE
+title: APPLICATION_STATE enumerazione
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -13,14 +13,14 @@ api_type:
 - IDLDef
 api_location:
 - VmApplicationHealthMonitor.idl
-ms.openlocfilehash: 4b7e288f41c863dc3f0365db3c6aae867605e5c9
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 5f873e7a30a4cff6dc4cc89eaea225201a367f7c24ead11ad95da04c2ff1ab32
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "106312339"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119914161"
 ---
-# <a name="application_state-enumeration"></a>\_Enumerazione dello stato dell'applicazione
+# <a name="application_state-enumeration"></a>Enumerazione APPLICATION \_ STATE
 
 Specifica lo stato di integrità di un'applicazione.
 
@@ -56,7 +56,7 @@ Lo stato dell'applicazione è critico.
 
 ## <a name="remarks"></a>Commenti
 
-Per utilizzare questo elemento di programmazione, è necessario installare i componenti di integrazione di Windows 8 nella macchina virtuale in cui è in esecuzione l'applicazione.
+Per usare questo elemento di programmazione, è necessario Windows 8 componenti di integrazione di nella macchina virtuale in cui è in esecuzione l'applicazione.
 
 ## <a name="requirements"></a>Requisiti
 
@@ -64,10 +64,10 @@ Per utilizzare questo elemento di programmazione, è necessario installare i com
 
 | Requisito | Valore |
 |-------------------------------------|-----------------------------------------------------------------------------------------------------------|
-| Client minimo supportato<br/> | \[Solo app desktop di Windows 8\]<br/>                                                                |
-| Server minimo supportato<br/> | \[Solo app desktop Windows Server 2012\]<br/>                                                      |
+| Client minimo supportato<br/> | \[Windows 8 solo app desktop\]<br/>                                                                |
+| Server minimo supportato<br/> | \[Windows Server 2012 solo app desktop\]<br/>                                                      |
 | Versione<br/>                  | Componenti di integrazione per Windows 8<br/>                                                           |
-| IDL<br/>                      | <dl> <dt>VmApplicationHealthMonitor. idl</dt> </dl> |
+| Idl<br/>                      | <dl> <dt>VmApplicationHealthMonitor.idl</dt> </dl> |
 
 
 

@@ -1,28 +1,28 @@
 ---
-description: Messaggio WS-Transfer utilizzato per richiedere metadati.
+description: Messaggio WS-Transfer usato per richiedere i metadati.
 ms.assetid: 18bf27aa-6ae5-4419-ae68-6df9eda10cd4
-title: Get (metadata Exchange) HTTP Request and Message
+title: Richiesta e messaggio HTTP Get (Exchange)
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 994e02b990dc87cf8551e215bc7eae94dbcf7852
-ms.sourcegitcommit: c276a8912787b2cda74dcf54eb96df961bb1188b
+ms.openlocfilehash: 1c9cf6241b38f7fa81cc5d9a7c21a0f5e1a406aa
+ms.sourcegitcommit: 61a4c522182aa1cacbf5669683d9570a3bf043b2
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/20/2021
-ms.locfileid: "122632069"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "122885252"
 ---
-# <a name="get-metadata-exchange-http-request-and-message"></a>Get (metadata Exchange) HTTP Request and Message
+# <a name="get-metadata-exchange-http-request-and-message"></a>Richiesta e messaggio HTTP Get (Exchange)
 
-Un messaggio Get è un messaggio WS-Transfer usato per richiedere metadati. Per altre informazioni su Come ottenere i messaggi, vedere la sezione 3.1 della [specifica WS-Transfer.](https://specs.xmlsoap.org/ws/2004/09/transfer/WS-Transfer.pdf) Poiché lo scambio di metadati viene eseguito tramite HTTP, un messaggio Get è il payload di una richiesta HTTP.
+Un messaggio Get è un messaggio WS-Transfer usato per richiedere i metadati. Per altre informazioni su Get messages, vedere la sezione 3.1 della [specifica WS-Transfer.](https://specs.xmlsoap.org/ws/2004/09/transfer/WS-Transfer.pdf) Poiché lo scambio di metadati viene eseguito tramite HTTP, un messaggio Get è il payload di una richiesta HTTP.
 
 I client DPWS inviano messaggi Get. I client di individuazione delle funzioni, i client WSDAPI che chiamano [**WSDCreateDeviceProxy**](/windows/desktop/api/WsdClient/nf-wsdclient-wsdcreatedeviceproxy)e i client WSDAPI che chiamano [**WSDCreateDeviceProxyAdvanced**](/windows/desktop/api/WsdClient/nf-wsdclient-wsdcreatedeviceproxyadvanced) inviano questo messaggio.
 
 > [!Note]  
-> Questo argomento illustra un messaggio DPWS di esempio generato da client e host WSDAPI. WSDAPI analizza e accetta altri messaggi conformi a DPWS non conformi a questo esempio. Non usare questo esempio per verificare l'interoperabilità di DPWS. utilizzare [WSDAPI Basic Interoperability Tool (WSDBIT).](https://msdn.microsoft.com/library/cc264250.aspx)
+> Questo argomento illustra un messaggio DPWS di esempio generato da client e host WSDAPI. WSDAPI anaserà e accetterà altri messaggi conformi a DPWS che non sono conformi a questo esempio. Non usare questo esempio per verificare l'interoperabilità DPWS. usare [WSDAPI Basic Interoperability Tool (WSDBIT).](https://msdn.microsoft.com/library/cc264250.aspx)
 
  
 
-L'esempio seguente mostra una richiesta HTTP Get di esempio.
+Nell'esempio seguente viene illustrata una richiesta GET HTTP di esempio.
 
 ``` syntax
 POST /37f86d35-e6ac-4241-964f-1d9ae46fb366
@@ -57,7 +57,7 @@ Una richiesta Get HTTP ha i punti di interesse seguenti.
 <tr class="odd">
 <td>percorso URL</td>
 <td><pre class="syntax" data-space="preserve"><code>POST /37f86d35-e6ac-4241-964f-1d9ae46fb366</code></pre></td>
-<td>Percorso URL in cui è stata inviata la richiesta HTTP Get.</td>
+<td>Percorso URL in cui è stata pubblicata la richiesta Get HTTP.</td>
 </tr>
 <tr class="even">
 <td>Host e porta</td>
@@ -123,17 +123,17 @@ Un messaggio Get ha i punti di interesse seguenti.
 <tbody>
 <tr class="odd">
 <td>A</td>
-<td><pre class="syntax" data-space="preserve"><code><wsa:To>
+<td><pre class="syntax" data-space="preserve"><code>&lt;wsa:To&gt;
     urn:uuid:37f86d35-e6ac-4241-964f-1d9ae46fb366
-</wsa:To></code></pre></td>
-<td>Identificatore del dispositivo a cui vengono chieti i metadati.</td>
+&lt;/wsa:To&gt;</code></pre></td>
+<td>Identificatore del dispositivo a cui vengono chiesi i metadati.</td>
 </tr>
 <tr class="even">
 <td>Recupero</td>
-<td><pre class="syntax" data-space="preserve"><code><wsa:Action>
+<td><pre class="syntax" data-space="preserve"><code>&lt;wsa:Action&gt;
     https://schemas.xmlsoap.org/ws/2004/09/transfer/Get
 </wsa:Action</code></pre></td>
-<td>L'azione Get SOAP identifica il messaggio come get message.</td>
+<td>L'azione Get SOAP identifica il messaggio come messaggio Get.</td>
 </tr>
 <tr class="odd">
 <td>MessageID</td>
@@ -156,7 +156,7 @@ Un messaggio Get ha i punti di interesse seguenti.
 [Messaggi di individuazione e Exchange metadati](discovery-and-metadata-exchange-message-patterns.md)
 </dt> <dt>
 
-[GetResponse Message](getresponse--metadata-exchange--message.md)
+[Messaggio GetResponse](getresponse--metadata-exchange--message.md)
 </dt> </dl>
 
  

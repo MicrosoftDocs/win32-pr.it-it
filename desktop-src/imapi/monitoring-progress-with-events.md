@@ -4,18 +4,18 @@ description: Diverse interfacce consentono di implementare un gestore eventi per
 ms.assetid: 1f15a5fe-f5d7-4e09-805f-2d0380bf2bb2
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 1ae3b425fc096234abf59d3a082fbe8a06f3f554
-ms.sourcegitcommit: ebd3ce6908ff865f1ef66f2fc96769be0aad82e1
+ms.openlocfilehash: a871120ca872a3258d32290273dda11360f1d5abb356d1ec48f6130d87e45648
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/19/2020
-ms.locfileid: "103872437"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119849011"
 ---
 # <a name="monitoring-progress-with-events"></a>Monitoraggio dello stato di avanzamento con gli eventi
 
 Diverse interfacce consentono di implementare un gestore eventi per ricevere informazioni sullo stato di avanzamento. Ad esempio, un oggetto evento può essere collegato al writer di dati per ricevere lo stato dell'operazione di scrittura.
 
-Un gestore eventi viene implementato come subroutine in uno script. Nell'esempio seguente viene illustrato come definire la subroutine e utilizzare il metodo **WScript. ConnectObject** per connettere il gestore eventi all'oggetto.
+Un gestore eventi viene implementato come subroutine in uno script. Nell'esempio seguente viene illustrato come definire la subroutine e usare il **metodo WScript.ConnectObject** per connettere il gestore eventi all'oggetto .
 
 
 ```VB
@@ -38,9 +38,9 @@ END SUB
 
 
 
-Il nome specificato per il nome del gestore eventi deve contenere il suffisso di sottolineatura (" \_ "). Per creare il nome della subroutine, concatenare il nome del metodo al nome del gestore eventi. Se ad esempio si usa "dataWriterEvent \_ " come nome del gestore eventi e il nome del metodo è "Update", il nome della subroutine sarà dataWriterEvent \_ Update.
+Il nome specificato per il nome del gestore eventi deve contenere il suffisso di sottolineatura (" \_ "). Per formare il nome della subroutine, concatenare il nome del metodo al nome del gestore eventi. Ad esempio, se si usa "dataWriterEvent " come nome del gestore eventi e il nome del metodo è "Update", il nome della \_ subroutine sarà dataWriterEvent \_ Update.
 
-Nell'esempio seguente viene illustrato un approccio alternativo alla connessione del gestore eventi all'oggetto.
+Nell'esempio seguente viene illustrato un approccio alternativo alla connessione del gestore eventi all'oggetto .
 
 
 ```VB
@@ -57,9 +57,9 @@ END SUB
 
 
 
-Se un sistema contiene un secondo dispositivo Burn per il monitoraggio, è necessario creare un altro oggetto **MsftDiscFormat2Data** e un gestore eventi.
+Se un sistema contiene un secondo dispositivo masterizzato da monitorare, è necessario creare un altro oggetto **MsftDiscFormat2Data** e un gestore eventi.
 
-L'esempio seguente si basa sull'esempio di [masterizzazione di un'immagine del disco](burning-a-disc.md) . Nell'esempio viene scritta un'immagine ISO in un disco vuoto e viene utilizzato un gestore eventi per fornire aggiornamenti sullo stato di avanzamento.
+L'esempio seguente si basa sull'esempio [Disasserzione di un'immagine disco.](burning-a-disc.md) L'esempio scrive un'immagine ISO in un disco vuoto e usa un gestore eventi per fornire gli aggiornamenti dello stato di avanzamento.
 
 
 ```VB
@@ -190,10 +190,10 @@ END SUB
 
 <dl> <dt>
 
-[Uso di IMAPi](using-imapi.md)
+[Uso di IMAPI](using-imapi.md)
 </dt> <dt>
 
-[**IStream**](/windows/desktop/api/objidl/nn-objidl-istream)
+[**Istream**](/windows/desktop/api/objidl/nn-objidl-istream)
 </dt> <dt>
 
 [**IDiscMaster2**](/windows/desktop/api/imapi2/nn-imapi2-idiscmaster2)
@@ -205,6 +205,6 @@ END SUB
 [**IFileSystemImage**](/windows/desktop/api/imapi2fs/nn-imapi2fs-ifilesystemimage)
 </dt> </dl>
 
- 
+ 
 
- 
+ 

@@ -12,12 +12,12 @@ api_type:
 - NA
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 3c5a2d029727f4ff4a9eee353230e0843a39f082
-ms.sourcegitcommit: 63753fcfb0afbbe5ec283fb8316e62c2dc950f66
+ms.openlocfilehash: dfeb867f979a0f5f2da838cdd225c91da2b67913c18cdda89c5d40a3f8ed6b88
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/22/2021
-ms.locfileid: "107909849"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120034911"
 ---
 # <a name="lighting-state-variables"></a>Variabili di stato di illuminazione
 
@@ -34,7 +34,7 @@ ms.locfileid: "107909849"
 
  
 
-</dd> <dt><span id="GL_COLOR_MATERIAL"></span><span id="gl_color_material"></span>MATERIALE COLORE GL \_ \_</dt> <dd> 
+</dd> <dt><span id="GL_COLOR_MATERIAL"></span><span id="gl_color_material"></span>MATERIALE A COLORI GL \_ \_</dt> <dd> 
 
 | Proprietà | Valore |
 |------------------|------------------------------------|
@@ -53,14 +53,14 @@ ms.locfileid: "107909849"
 |------------------|----------------------------------------------------------------------------------|
 | Descrizione:     | Proprietà dei materiali che tracciano il colore corrente                                       |
 | Gruppo di attributi: | illuminazione                                                                         |
-| Valore iniziale:   | GL \_ AMBIENTE \_ E \_ DIFFUSIONE                                                        |
+| Valore iniziale:   | AMBIENTE \_ GL \_ E \_ DIFFUSE                                                        |
 | Comando Get:     | [**glGetIntegerv**](glgetbooleanv--glgetdoublev--glgetfloatv--glgetintegerv.md) |
 
 
 
  
 
-</dd> <dt><span id="GL_COLOR_MATERIAL_FACE"></span><span id="gl_color_material_face"></span>GL \_ COLOR \_ MATERIAL \_ FACE</dt> <dd> 
+</dd> <dt><span id="GL_COLOR_MATERIAL_FACE"></span><span id="gl_color_material_face"></span>VISO MATERIALE \_ A \_ COLORI \_ GL</dt> <dd> 
 
 | Proprietà | Valore |
 |------------------|----------------------------------------------------------------------------------|
@@ -77,7 +77,7 @@ ms.locfileid: "107909849"
 
 | Proprietà | Valore |
 |------------------|------------------------------------------|
-| Descrizione:     | Colore materiale ambientale                   |
+| Descrizione:     | Colore del materiale ambientale                   |
 | Gruppo di attributi: | illuminazione                                 |
 | Valore iniziale:   | (0.2,0.2,0.2,1.0)                        |
 | Comando Get:     | [**glGetMaterialfv**](glgetmaterial.md) |
@@ -125,7 +125,7 @@ ms.locfileid: "107909849"
 
  
 
-</dd> <dt><span id="GL_SHININESS"></span><span id="gl_shininess"></span>GL \_ SHININESS</dt> <dd> 
+</dd> <dt><span id="GL_SHININESS"></span><span id="gl_shininess"></span>GL \_ BRILLANTEZZA</dt> <dd> 
 
 | Proprietà | Valore |
 |------------------|------------------------------------------|
@@ -235,7 +235,7 @@ ms.locfileid: "107909849"
 |------------------|------------------------------------|
 | Descrizione:     | Fattore di attenuazione costante        |
 | Gruppo di attributi: | illuminazione                           |
-| Valore iniziale:   | 1,0                                |
+| Valore iniziale:   | 1.0                                |
 | Comando Get:     | [**glGetLightfv**](glgetlight.md) |
 
 
@@ -255,7 +255,7 @@ ms.locfileid: "107909849"
 
  
 
-</dd> <dt><span id="GL_QUADRATIC_ATTENUATION"></span><span id="gl_quadratic_attenuation"></span>\_ATTENUAZIONE \_ QUADRATICA GL</dt> <dd> 
+</dd> <dt><span id="GL_QUADRATIC_ATTENUATION"></span><span id="gl_quadratic_attenuation"></span>ATTENUAZIONE \_ QUADRATICA GL \_</dt> <dd> 
 
 | Proprietà | Valore |
 |------------------|------------------------------------|
@@ -268,11 +268,11 @@ ms.locfileid: "107909849"
 
  
 
-</dd> <dt><span id="GL_SPOT_DIRECTION"></span><span id="gl_spot_direction"></span>DIREZIONE \_ DEL PUNTO \_ GL</dt> <dd> 
+</dd> <dt><span id="GL_SPOT_DIRECTION"></span><span id="gl_spot_direction"></span>DIREZIONE DEI SPOT GL \_ \_</dt> <dd> 
 
 | Proprietà | Valore |
 |------------------|------------------------------------|
-| Descrizione:     | Direzione riflettore della *luce i*   |
+| Descrizione:     | Direzione della luce in evidenza *i*   |
 | Gruppo di attributi: | illuminazione                           |
 | Valore iniziale:   | (0.0,0.0,-1.0)                     |
 | Comando Get:     | [**glGetLightfv**](glgetlight.md) |
@@ -281,7 +281,7 @@ ms.locfileid: "107909849"
 
  
 
-</dd> <dt><span id="GL_SPOT_EXPONENT"></span><span id="gl_spot_exponent"></span>ESPONENTE DI GL \_ SPOT \_</dt> <dd> 
+</dd> <dt><span id="GL_SPOT_EXPONENT"></span><span id="gl_spot_exponent"></span>GL \_ SPOT \_ EXPONENT</dt> <dd> 
 
 | Proprietà | Valore |
 |------------------|------------------------------------|
@@ -320,11 +320,11 @@ ms.locfileid: "107909849"
 
  
 
-</dd> <dt><span id="GL_COLOR_INDEXES"></span><span id="gl_color_indexes"></span>INDICI \_ DEI \_ COLORI GL</dt> <dd> 
+</dd> <dt><span id="GL_COLOR_INDEXES"></span><span id="gl_color_indexes"></span>INDICI COLORI GL \_ \_</dt> <dd> 
 
 | Proprietà | Valore |
 |------------------|--------------------------------------------------------------------------------|
-| Descrizione:     | *C (a)*, *C (d)* e *C (s)* per l'illuminazione dell'indice colori                         |
+| Descrizione:     | *C (a)*, *C (d)* e *C (s) per l'illuminazione* dell'indice colori                         |
 | Gruppo di attributi: | illuminazione/abilitazione                                                                |
 | Valore iniziale:   | 0,1,1                                                                          |
 | Comando Get:     | [**glGetFloatv**](glgetbooleanv--glgetdoublev--glgetfloatv--glgetintegerv.md) |

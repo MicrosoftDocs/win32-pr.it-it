@@ -1,5 +1,5 @@
 ---
-description: Stima il rischio di esecuzione di codice sconosciuto quando un gestore viene chiamato su un determinato file. Questo rischio si basa su una conoscenza del gestore e del contenuto del codice del file.
+description: Stima il rischio di esecuzione di codice sconosciuto quando viene chiamato un gestore su un determinato file. Questo rischio si basa sulla comprensione del gestore e del contenuto del codice del file.
 title: Funzione EstimateFileRiskLevel
 ms.topic: reference
 ms.date: 05/31/2018
@@ -13,18 +13,18 @@ api_type:
 api_location:
 - Winshfhc.dll
 ms.assetid: 33a5589a-201b-4d94-afbf-5965a39e2748
-ms.openlocfilehash: 2def6cb5bc2ed59a98e9e513aba1b5b578cd8681
-ms.sourcegitcommit: 3caaa3c92dcb1ef12f84464d14ce6262e65e988e
+ms.openlocfilehash: 8cf7514be0d784085acd74536036c159c9f8e9217287e86bea2f75defbb94801
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/12/2021
-ms.locfileid: "109841432"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120090611"
 ---
 # <a name="estimatefilerisklevel-function"></a>Funzione EstimateFileRiskLevel
 
-\[Questa funzione è disponibile in Windows XP con Service Pack 2 (SP2) tramite Windows Vista. Potrebbe essere stato modificato o non disponibile nelle versioni successive di Windows. Le applicazioni client devono invece usare [**IAttachmentExecute**](/windows/desktop/api/shobjidl_core/nn-shobjidl_core-iattachmentexecute) per presentare un ambiente utente che fornisce download e scambio sicuri di file tramite allegati di posta elettronica e messaggistica.\]
+\[Questa funzione è disponibile in Windows XP con Service Pack 2 (SP2) Windows Vista. Potrebbe essere modificato o non disponibile nelle versioni successive di Windows. Le applicazioni client devono invece usare [**IAttachmentExecute**](/windows/desktop/api/shobjidl_core/nn-shobjidl_core-iattachmentexecute) per presentare un ambiente utente che fornisce download e scambio sicuri di file tramite allegati di messaggistica e posta elettronica.\]
 
-Stima il rischio di esecuzione di codice sconosciuto quando un gestore viene chiamato su un determinato file. Questo rischio si basa su una conoscenza del gestore e del contenuto del codice del file.
+Stima il rischio di esecuzione di codice sconosciuto quando viene chiamato un gestore su un determinato file. Questo rischio si basa sulla comprensione del gestore e del contenuto del codice del file.
 
 ## <a name="syntax"></a>Sintassi
 
@@ -49,7 +49,7 @@ HRESULT EstimateFileRiskLevel(
 
 Tipo: **LPCWSTR**
 
-Puntatore a una stringa con terminazione Null che contiene il percorso del file sottoposto a controllo rispetto al gestore.
+Puntatore a una stringa con terminazione Null che contiene il percorso del file da verificare rispetto al gestore.
 
 </dd> <dt>
 
@@ -58,7 +58,7 @@ Puntatore a una stringa con terminazione Null che contiene il percorso del file 
 
 Tipo: **LPCWSTR**
 
-Puntatore a una stringa con terminazione Null che contiene l'estensione del file da controllare, con o senza il relativo punto iniziale. Ad esempio, ".txt" o "txt".
+Puntatore a una stringa con terminazione Null che contiene l'estensione del file controllato, con o senza il punto iniziale. Ad esempio, ".txt" o "txt".
 
 </dd> <dt>
 
@@ -151,8 +151,8 @@ Questa funzione non è dichiarata in un'intestazione pubblica o inclusa in un fi
 
 | Requisito | Valore |
 |-------------------------------------|----------------------------------------------------------------------------------------------------------------|
-| Client minimo supportato<br/> | Solo Windows XP con app desktop SP2 \[\]<br/>                                                           |
-| Server minimo supportato<br/> | Solo app desktop di Windows Server 2003 \[\]<br/>                                                           |
+| Client minimo supportato<br/> | Windows XP solo con app desktop SP2 \[\]<br/>                                                           |
+| Server minimo supportato<br/> | Windows Solo app desktop di Server 2003 \[\]<br/>                                                           |
 | DLL<br/>                      | <dl> <dt>Winshfhc.dll (versione 5.1 o successiva)</dt> </dl> |
 
 

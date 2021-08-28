@@ -1,23 +1,23 @@
 ---
-description: Criteri per i metadati delle foto per la proprietà System. rating.
+description: Criteri dei metadati delle foto per la proprietà System.Rating.
 ms.assetid: e4d2c12e-617a-431e-9062-62acf6ef21c8
-title: Criteri per i metadati delle foto System. rating
+title: Criteri dei metadati delle foto System.Rating
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 47c4f7d89b1ff1ea8326c2d26fba0d331db1eab1
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 25278ad7d881a0acadc5199fd07227bb650aaae4da2b6342070a64d69fd75240
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "104347176"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119086984"
 ---
-# <a name="systemrating-photo-metadata-policy"></a>Criteri per i metadati delle foto System. rating
+# <a name="systemrating-photo-metadata-policy"></a>Criteri dei metadati delle foto System.Rating
 
-Criteri per i metadati delle foto per la proprietà [System. rating](../properties/props-system-rating.md) .
+Criteri dei metadati delle foto per [la proprietà System.Rating.](../properties/props-system-rating.md)
 
-### <a name="pkey"></a>PKEY
+### <a name="pkey"></a>Chiave PKEY
 
-\_Classificazione pkey
+Classificazione \_ PKEY
 
 ### <a name="containers"></a>Contenitori
 
@@ -27,28 +27,28 @@ JPEG, TIFF
 
 No
 
-### <a name="output-propvariant-type"></a>Tipo di PROPVARIANT di output
+### <a name="output-propvariant-type"></a>Tipo PROPVARIANT di output
 
-\_UI4 VT
+VT \_ UI4
 
-### <a name="input-propvariant-type"></a>Tipo di PROPVARIANT di input
+### <a name="input-propvariant-type"></a>Tipo PROPVARIANT di input
 
-Può essere VT \_ Ui1, VT \_ UI2 o VT \_ UI4. Il valore può essere compreso tra 0 e 99.
+Può essere VT \_ UI1, VT \_ UI2 o VT \_ UI4. Il valore può essere compreso tra 0 e 99.
 
 ### <a name="conflict-resolution-policy"></a>Criteri di risoluzione dei conflitti
 
-I valori di schemi diversi vengono risolti.
+I valori di schemi diversi vengono riconciliati.
 
 ### <a name="jpeg-policy"></a>Criteri JPEG
 
-### <a name="read-paths"></a>Leggi percorsi
+### <a name="read-paths"></a>Percorsi di lettura
 
 
 
 | JSON | Percorso                       | Formato disco |
 |-------|----------------------------|-------------|
-| 1     | /App1/IFD/{ushort = 18249}   | ushort      |
-| 2     | /xmp/MicrosoftPhoto: valutazione | unicode     |
+| 1     | /app1/ifd/{ushort=18249}   | ushort      |
+| 2     | /xmp/MicrosoftPhoto:Rating | unicode     |
 
 
 
@@ -60,8 +60,8 @@ I valori di schemi diversi vengono risolti.
 
 | JSON | Percorso                       | Formato disco |
 |-------|----------------------------|-------------|
-| 1     | /App1/IFD/{ushort = 18249}   | ushort      |
-| 2     | /xmp/MicrosoftPhoto: valutazione | unicode     |
+| 1     | /app1/ifd/{ushort=18249}   | ushort      |
+| 2     | /xmp/MicrosoftPhoto:Rating | unicode     |
 
 
 
@@ -73,8 +73,8 @@ I valori di schemi diversi vengono risolti.
 
 | JSON | Percorso                       |
 |-------|----------------------------|
-| 1     | /App1/IFD/{ushort = 18249}   |
-| 2     | /XMP/microsoftphoto: valutazione |
+| 1     | /app1/ifd/{ushort=18249}   |
+| 2     | /xmp/microsoftphoto:rating |
 
 
 
@@ -82,14 +82,14 @@ I valori di schemi diversi vengono risolti.
 
 ### <a name="tiff-policies"></a>Criteri TIFF
 
-### <a name="read-paths"></a>Leggi percorsi
+### <a name="read-paths"></a>Percorsi di lettura
 
 
 
 | JSON | Percorso                           | Formato disco |
 |-------|--------------------------------|-------------|
-| 1     | /IFD/{ushort = 18249}            | ushort      |
-| 2     | /ifd/xmp/MicrosoftPhoto: valutazione | unicode     |
+| 1     | /ifd/{ushort=18249}            | ushort      |
+| 2     | /ifd/xmp/MicrosoftPhoto:Rating | unicode     |
 
 
 
@@ -101,8 +101,8 @@ I valori di schemi diversi vengono risolti.
 
 | JSON | Percorso                           | Formato disco |
 |-------|--------------------------------|-------------|
-| 1     | /IFD/{ushort = 18249}            | ushort      |
-| 2     | /ifd/xmp/MicrosoftPhoto: valutazione | unicode     |
+| 1     | /ifd/{ushort=18249}            | ushort      |
+| 2     | /ifd/xmp/MicrosoftPhoto:Rating | unicode     |
 
 
 
@@ -114,8 +114,8 @@ I valori di schemi diversi vengono risolti.
 
 | JSON | Percorso                           |
 |-------|--------------------------------|
-| 1     | /IFD/{ushort = 18249}            |
-| 2     | /IFD/XMP/microsoftphoto: valutazione |
+| 1     | /ifd/{ushort=18249}            |
+| 2     | /ifd/xmp/microsoftphoto:rating |
 
 
 
@@ -127,7 +127,7 @@ I valori di schemi diversi vengono risolti.
 
 <dl> <dt>
 
-[System. rating](../properties/props-system-rating.md)
+[System.Rating](../properties/props-system-rating.md)
 </dt> </dl>
 
  

@@ -20,12 +20,12 @@ api_type:
 api_location:
 - ESENT.DLL
 ROBOTS: INDEX,FOLLOW
-ms.openlocfilehash: 4da3dc4c0d211039378b5cc1301a84e35f67ab24
-ms.sourcegitcommit: 9b5faa61c38b2d0c432b7f2dbee8c127b0e28a7e
+ms.openlocfilehash: c1d72fa8b5cda24435cec0f4ec5f0751862bc14c
+ms.sourcegitcommit: 4665ebce0c106bdb52eef36e544280b496b6f50b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/19/2021
-ms.locfileid: "122475797"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "122986544"
 ---
 # <a name="jetsetsystemparameter-function"></a>Funzione JetSetSystemParameter
 
@@ -78,7 +78,7 @@ Fornisce il valore per il parametro di sistema selezionato se il parametro di si
 
 ### <a name="return-value"></a>Valore restituito
 
-Questa funzione restituisce il [JET_ERR](./jet-err.md) dati con uno dei codici restituiti seguenti. Per altre informazioni sui possibili errori ESE, vedere Errori del [motore Archiviazione estendibile](./extensible-storage-engine-errors.md) e Parametri [di gestione degli errori](./error-handling-parameters.md).
+Questa funzione restituisce il [JET_ERR](./jet-err.md) dati con uno dei codici restituiti seguenti. Per altre informazioni sui possibili errori ESE, vedere Errori del [motore di Archiviazione](./extensible-storage-engine-errors.md) estendibile e Parametri di gestione degli [errori](./error-handling-parameters.md).
 
 
 | <p>Codice restituito</p> | <p>Descrizione</p> | 
@@ -89,7 +89,7 @@ Questa funzione restituisce il [JET_ERR](./jet-err.md) dati con uno dei codici r
 | <p>JET_errIndexTuplesInvalidLimits</p> | <p>I parametri dell'indice di tupla specificati non sono validi. Questo errore può essere restituito da <strong>JetSetSystemParameter</strong> solo quando si imposta <a href="gg294119(v=exchg.10).md">JET_paramIndexTuplesLengthMin,</a> <a href="gg294119(v=exchg.10).md">JET_paramIndexTuplesLengthMax</a>o <a href="gg294119(v=exchg.10).md">JET_paramIndexTuplesToIndexMax</a> su un valore non valido.</p><p><strong>Windows XP e Windows Server 2003:</strong>  Questa operazione può verificarsi solo Windows XP e Windows Server 2003.</p> | 
 | <p>JET_errInitInProgress</p> | <p>Non è possibile completare l'operazione perché è in corso l'inizializzazione dell'istanza associata alla sessione.</p> | 
 | <p>JET_errInstanceUnavailable</p> | <p>Non è possibile completare l'operazione perché l'istanza associata alla sessione ha rilevato un errore irreversibile che richiede la revoca dell'accesso a tutti i dati per proteggere l'integrità di questi dati.</p><p><strong>Windows XP:</strong>  Questo errore verrà restituito solo da Windows XP e versioni successive.</p> | 
-| <p>JET_errInvalidParameter</p> | <p>Uno dei parametri forniti conteneva un valore imprevisto o conteneva un valore che non aveva senso se combinato con il valore di un altro parametro. Ciò può verificarsi per <strong>JetSetSystemParameter</strong> quando:</p><ul><li><p>L'ID del parametro di sistema specificato non è valido o non è supportato.</p></li><li><p>È stato effettuato un tentativo di impostare un parametro di sistema con valori stringa con una stringa la cui lunghezza non rientra nell'intervallo valido per il parametro.</p></li><li><p>È stato effettuato un tentativo di impostare un parametro di sistema con valori di stringa con un percorso di file in cui la lunghezza della relativa rappresentazione di percorso assoluto non rientra nell'intervallo valido per tale parametro.</p><p><strong>Windows Vista:</strong>  Questo problema può verificarsi solo in Windows Vista e versioni successive.</p></li><li><p>È stato effettuato un tentativo di impostare un parametro di sistema con valori interi con un numero intero non compreso nell'intervallo valido per il parametro.</p></li><li><p>È stato effettuato un tentativo di <strong></strong>impostare JET_paramUnicodeIndexDefault con un puntatore<a href="gg294097(v=exchg.10).md">null JET_UNICODEINDEX,</a> un LCID non valido o un set non supportato di flag LCMapString.</p><p><strong>Windows Vista:</strong>  Questo problema può verificarsi solo in Windows Vista e versioni successive.</p></li><li><p>Impossibile impostare il parametro di sistema specificato perché è di sola lettura.</p></li><li><p>È stato effettuato un tentativo di impostare un parametro di sistema dopo la chiamata a <a href="gg294068(v=exchg.10).md">JetInit,</a> il motore di database è in modalità a istanza singola e non è stata specificata una sessione.</p><p><strong>Windows XP e Windows Server 2003:</strong>  Questa operazione può verificarsi solo Windows XP e Windows Server 2003.</p></li><li><p>Il parametro di sistema specificato è solo globale ed è stato effettuato un tentativo di impostare un valore specifico dell'istanza per tale parametro di sistema.</p><p><strong>Windows XP e Windows Server 2003:</strong>  Questa operazione può verificarsi solo Windows XP e Windows Server 2003.</p></li><li><p>Il parametro di sistema specificato è solo per istanza ed è stato effettuato un tentativo di impostare il valore globale per tale parametro di sistema.</p><p><strong>Windows XP e Windows Server 2003:</strong>  Questa operazione può verificarsi solo Windows XP e Windows Server 2003.</p></li></ul> | 
+| <p>JET_errInvalidParameter</p> | <p>Uno dei parametri forniti conteneva un valore imprevisto o conteneva un valore che non aveva senso se combinato con il valore di un altro parametro. Questo problema può verificarsi <strong>per JetSetSystemParameter</strong> quando:</p><ul><li><p>L'ID del parametro di sistema specificato non è valido o non è supportato.</p></li><li><p>È stato effettuato un tentativo di impostare un parametro di sistema con valori stringa con una stringa la cui lunghezza non rientra nell'intervallo valido per il parametro.</p></li><li><p>È stato effettuato un tentativo di impostare un parametro di sistema con valori di stringa con un percorso di file in cui la lunghezza della relativa rappresentazione di percorso assoluto non rientra nell'intervallo valido per tale parametro.</p><p><strong>Windows Vista:</strong>  Questo problema può verificarsi solo in Windows Vista e versioni successive.</p></li><li><p>È stato effettuato un tentativo di impostare un parametro di sistema con valori interi con un numero intero non compreso nell'intervallo valido per il parametro.</p></li><li><p>È stato effettuato un tentativo di <strong></strong>impostare JET_paramUnicodeIndexDefault con un puntatore<a href="gg294097(v=exchg.10).md">null JET_UNICODEINDEX,</a> un LCID non valido o un set non supportato di flag LCMapString.</p><p><strong>Windows Vista:</strong>  Questo problema può verificarsi solo in Windows Vista e versioni successive.</p></li><li><p>Impossibile impostare il parametro di sistema specificato perché è di sola lettura.</p></li><li><p>È stato effettuato un tentativo di impostare un parametro di sistema dopo la chiamata a <a href="gg294068(v=exchg.10).md">JetInit,</a> il motore di database è in modalità a istanza singola e non è stata specificata una sessione.</p><p><strong>Windows XP e Windows Server 2003:</strong>  Questa operazione può verificarsi solo Windows XP e Windows Server 2003.</p></li><li><p>Il parametro di sistema specificato è solo globale ed è stato effettuato un tentativo di impostare un valore specifico dell'istanza per tale parametro di sistema.</p><p><strong>Windows XP e Windows Server 2003:</strong>  Questa operazione può verificarsi solo Windows XP e Windows Server 2003.</p></li><li><p>Il parametro di sistema specificato è solo per istanza ed è stato effettuato un tentativo di impostare il valore globale per tale parametro di sistema.</p><p><strong>Windows XP e Windows Server 2003:</strong>  Questa operazione può verificarsi solo Windows XP e Windows Server 2003.</p></li></ul> | 
 | <p>JET_errInvalidPath</p> | <p>Il percorso file system specificato non è valido. Questo errore può essere restituito da <strong>JetSetSystemParameter solo</strong> quando si impostano parametri di sistema che rappresentano file system percorsi. Ad esempio, <a href="gg269235(v=exchg.10).md">JET_paramSystemPath</a> può restituire questo errore.</p> | 
 | <p>JET_errNotInitialized</p> | <p>Non è possibile completare l'operazione perché l'istanza associata alla sessione non è ancora stata inizializzata.</p> | 
 | <p>JET_errRestoreInProgress</p> | <p>Non è possibile completare l'operazione perché è in corso un'operazione di ripristino nell'istanza associata alla sessione.</p> | 
@@ -99,7 +99,7 @@ Questa funzione restituisce il [JET_ERR](./jet-err.md) dati con uno dei codici r
 
 
 
-In caso di esito positivo, l'impostazione per il parametro di sistema verrà impostata sul valore specificato.
+In caso di esito positivo, l'impostazione per il parametro di sistema verrà impostata sul valore fornito.
 
 In caso di errore, l'impostazione per il parametro di sistema rimarrà invariata.
 
@@ -114,7 +114,14 @@ Ogni parametro di sistema ha un valore predefinito. Questi valori predefiniti si
 #### <a name="requirements"></a>Requisiti
 
 
-| | | <p><strong>Client</strong></p> | <p>Richiede Windows Vista, Windows XP o Windows 2000 Professional.</p> | | <p><strong>Server</strong></p> | <p>Richiede Windows Server 2008, Windows Server 2003 o Windows 2000 Server.</p> | | <p><strong>Intestazione</strong></p> | <p>Dichiarato in Esent.h.</p> | | <p><strong>Libreria</strong></p> | <p>Usare ESENT.lib.</p> | | <p><strong>DLL</strong></p> | <p>Richiede ESENT.dll.</p> | | <p><strong>Unicode</strong></p> | <p>Implementato come <strong>JetSetSystemParameterW</strong> (Unicode) e <strong>JetSetSystemParameterA</strong> (ANSI).</p> | 
+| Requisito | Valore |
+|------------|----------|
+| <p><strong>Client</strong></p> | <p>Richiede Windows Vista, Windows XP o Windows 2000 Professional.</p> | 
+| <p><strong>Server</strong></p> | <p>Richiede Windows Server 2008, Windows Server 2003 o Windows 2000 Server.</p> | 
+| <p><strong>Intestazione</strong></p> | <p>Dichiarato in Esent.h.</p> | 
+| <p><strong>Libreria</strong></p> | <p>Usare ESENT.lib.</p> | 
+| <p><strong>DLL</strong></p> | <p>Richiede ESENT.dll.</p> | 
+| <p><strong>Unicode</strong></p> | <p>Implementato come <strong>JetSetSystemParameterW</strong> (Unicode) e <strong>JetSetSystemParameterA</strong> (ANSI).</p> | 
 
 
 

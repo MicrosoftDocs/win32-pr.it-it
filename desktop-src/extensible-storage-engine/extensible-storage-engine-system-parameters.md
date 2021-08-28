@@ -15,12 +15,12 @@ api_type:
 - COM
 api_location: ''
 ROBOTS: INDEX,FOLLOW
-ms.openlocfilehash: 531e599c66279312f80216f1eb09fc612636821227e76f3572645ab6b4ee5137
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 501f98ec1b360e3eaa10988c140f30b86dcacb5a
+ms.sourcegitcommit: 4665ebce0c106bdb52eef36e544280b496b6f50b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "118256448"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "122987344"
 ---
 # <a name="extensible-storage-engine-system-parameters"></a>Extensible Archiviazione Engine System Parameters
 
@@ -65,55 +65,18 @@ JET_paramX
 
 Descrizione del JET_paramX di sistema.
 
-<table>
-<colgroup>
-<col style="width: 50%" />
-<col style="width: 50%" />
-</colgroup>
-<tbody>
-<tr class="odd">
-<td><p>Valore predefinito:</p></td>
-<td><p>Valore predefinito del parametro.</p></td>
-</tr>
-<tr class="even">
-<td><p>Digitare:</p></td>
-<td><p>Tipo di dati del parametro.</p></td>
-</tr>
-<tr class="odd">
-<td><p>Intervallo valido:</p></td>
-<td><p>Valori validi per il parametro.</p></td>
-</tr>
-<tr class="even">
-<td><p>Ambito:</p></td>
-<td><p>Il parametro è Globale o per istanza?</p></td>
-</tr>
-<tr class="odd">
-<td><p>Imposta dopo <a href="gg269354(v=exchg.10).md">JetCreateInstance:</a></p></td>
-<td><p>È possibile impostare il parametro se sono presenti istanze?</p></td>
-</tr>
-<tr class="even">
-<td><p>Impostato dopo <a href="gg294068(v=exchg.10).md">JetInit:</a></p></td>
-<td><p>È possibile impostare il parametro quando viene inizializzato?</p></td>
-</tr>
-<tr class="odd">
-<td><p>Influisce sul layout fisico:</p></td>
-<td><p>Il parametro influisce sui file su disco?</p></td>
-</tr>
-<tr class="even">
-<td><p>Influisce sull'affidabilità:</p></td>
-<td><p>Il parametro influisce sull'affidabilità del motore?</p></td>
-</tr>
-<tr class="odd">
-<td><p>Influisce sulle prestazioni:</p></td>
-<td><p>Il parametro influisce sulle prestazioni del motore?</p></td>
-</tr>
-<tr class="even">
-<td><p>Influisce sulle risorse:</p></td>
-<td><p>Il parametro influisce sulle risorse del motore?</p></td>
-</tr>
-<tr class="odd">
-<td><p>Disponibilità:</p></td>
-<td><p>Versioni di Windows che supportano il parametro .</p></td>
-</tr>
-</tbody>
-</table>
+
+| Etichetta | Valore |
+|--------|-------|
+| <p>Valore predefinito:</p> | <p>Valore predefinito del parametro.</p> | 
+| <p>Digitare:</p> | <p>Tipo di dati del parametro.</p> | 
+| <p>Intervallo valido:</p> | <p>Valori validi per il parametro.</p> | 
+| <p>Ambito:</p> | <p>Il parametro è Globale o per istanza?</p> | 
+| <p>Imposta dopo <a href="gg269354(v=exchg.10).md">JetCreateInstance:</a></p> | <p>È possibile impostare il parametro se sono presenti istanze?</p> | 
+| <p>Impostato dopo <a href="gg294068(v=exchg.10).md">JetInit:</a></p> | <p>È possibile impostare il parametro quando viene inizializzato?</p> | 
+| <p>Influisce sul layout fisico:</p> | <p>Il parametro influisce sui file su disco?</p> | 
+| <p>Influisce sull'affidabilità:</p> | <p>Il parametro influisce sull'affidabilità del motore?</p> | 
+| <p>Influisce sulle prestazioni:</p> | <p>Il parametro influisce sulle prestazioni del motore?</p> | 
+| <p>Influisce sulle risorse:</p> | <p>Il parametro influisce sulle risorse del motore?</p> | 
+| <p>Disponibilità:</p> | <p>Versioni di Windows che supportano il parametro .</p> | 
+

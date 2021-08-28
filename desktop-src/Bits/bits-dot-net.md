@@ -1,50 +1,50 @@
 ---
-title: Uso di BITS da .NET con dll di riferimento
-description: Negli esempi seguenti viene illustrato come chiamare l'interfaccia COM BITS da un programma .NET
+title: Uso di BITS da .NET tramite DLL di riferimento
+description: Gli esempi seguenti illustrano come chiamare nell'interfaccia COM BITS da un programma .NET
 ms.assetid: 1058970C-CE81-47D6-950E-3B6289E956B6
 ms.topic: article
 ms.date: 11/13/2018
-ms.openlocfilehash: c359bafe4f1937d49a6ec21896af32606a2ae894
-ms.sourcegitcommit: 00e0a8e56d28c4c720b97f0cf424c29f547460d7
+ms.openlocfilehash: 00f7d6287d86dd1816d7e4b0a7c6e18c9ae4916c5c85b01d0280758cf9d00b5b
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/26/2019
-ms.locfileid: "103719582"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119529151"
 ---
-# <a name="calling-into-bits-from-net-and-c-using-reference-dlls"></a>Chiamata a BITS da .NET e C# usando le DLL di riferimento
+# <a name="calling-into-bits-from-net-and-c-using-reference-dlls"></a>Chiamata a BITS da .NET e C# tramite DLL di riferimento
 
-Un modo per chiamare le classi COM BITS da un programma .NET consiste nel creare un file DLL di riferimento che inizia con i file [IDL](/windows/desktop/Midl/midl-start-page) (Interface Definition Language) bits nell'Windows SDK, usando gli strumenti [MIDL](/windows/desktop/Midl/using-the-midl-compiler-2) e [Tlbimp](/dotnet/framework/tools/tlbimp-exe-type-library-importer) . La DLL di riferimento è un set di wrapper della classe per le classi COM BITS. è quindi possibile usare le classi wrapper direttamente da .NET.
+Un modo per chiamare le classi COM BITS da un programma .NET è creare un file DLL di riferimento a partire dai file [IDL](/windows/desktop/Midl/midl-start-page) BITS (Interface Definition Language) in Windows SDK, usando gli strumenti [MIDL](/windows/desktop/Midl/using-the-midl-compiler-2) e [TLBIMP.](/dotnet/framework/tools/tlbimp-exe-type-library-importer) La DLL di riferimento è un set di wrapper di classi per le classi COM BITS. È quindi possibile usare le classi wrapper direttamente da .NET.
 
-Un'alternativa all'uso di dll di riferimento create automaticamente consiste nell'usare un wrapper BITS .NET di terze parti da [GitHub](https://github.com/) e [NuGet](https://www.nuget.org/). Questi wrapper hanno spesso uno stile di programmazione .NET più naturale, ma potrebbero ritardare le modifiche e gli aggiornamenti nelle interfacce BITS.
+Un'alternativa all'uso di DLL di riferimento create automaticamente consiste nell'usare un wrapper BITS .NET di terze parti da GitHub [e](https://github.com/) [NuGet](https://www.nuget.org/). Questi wrapper hanno spesso uno stile di programmazione .NET più naturale, ma potrebbero essere in ritardo rispetto alle modifiche e agli aggiornamenti nelle interfacce BITS.
 
-## <a name="creating-the-reference-dlls"></a>Creazione di dll di riferimento
+## <a name="creating-the-reference-dlls"></a>Creazione delle DLL di riferimento
 ### <a name="bits-idl-files"></a>File IDL BITS
 
-Si inizierà con il set di file IDL BITS. Si tratta di file che definiscono completamente l'interfaccia COM BITS. I file si trovano nella directory di **Windows Kit** e sono denominati bits *versione*. IDL (ad esempio, bits10_2. idl) ad eccezione del file della versione 1,0, che è solo BITS. idl. Quando vengono create nuove versioni di bit, vengono creati anche i nuovi file IDL di BITS.
+Si inizierà con il set di file IDL BITS. Si tratta di file che definiscono completamente l'interfaccia COM BITS. I file si trovano nella directory **Windows Kits** e sono denominati bits *version*.idl (ad esempio, bits10_2.idl) ad eccezione del file versione 1.0 che è solo Bits.idl. Quando vengono create nuove versioni di BITS, vengono creati anche nuovi file IDL BITS.
 
-Potrebbe inoltre essere necessario modificare una copia dei file IDL BITS SDK per utilizzare le funzionalità BITS che non vengono convertite automaticamente in equivalenti .NET. Le modifiche al file IDL possibili verranno discusse più avanti.
+È anche possibile modificare una copia dei file IDL BITS dell'SDK per usare funzionalità BITS che non vengono convertite automaticamente in equivalenti .NET. Le possibili modifiche ai file IDL vengono illustrate più avanti.
 
-I file IDL BITS includono diversi altri file IDL per riferimento. Nidificano, in modo che, se si usa una versione, includa tutte le versioni inferiori.
+I file IDL BITS includono diversi altri file IDL per riferimento. Nidificano anche, in modo che, se si usa una versione, includa tutte le versioni inferiori.
 
-Per ogni versione di bit di destinazione nel programma è necessaria una DLL di riferimento per tale versione. Se, ad esempio, si desidera scrivere un programma che funziona su BITS 1,5 e su, ma dispone di funzionalità aggiuntive quando BITS 10,2 è presente, è necessario convertire i file bits1_5. idl e bits10_2. idl.
+Per ogni versione di BITS che si vuole usare come destinazione nel programma è necessaria una DLL di riferimento per tale versione. Ad esempio, se si vuole scrivere un programma che funziona su BITS 1.5 e versione precedente, ma con funzionalità aggiuntive quando è presente BITS 10.2, è necessario convertire entrambi i file bits1_5.idl e bits10_2.idl.
 
 
 ### <a name="midl-and-tlbimp-utilities"></a>Utilità MIDL e TLBIMP
 
-L'utilità [MIDL](/windows/desktop/Midl/using-the-midl-compiler-2) (Microsoft Interface Definition Language) converte i file IDL che descrivono l'interfaccia com bits in un file TLB (libreria di tipi). Lo strumento MIDL dipende dall'utilità CL (preprocessore C) per leggere correttamente il file di linguaggio IDL. L'utilità CL fa parte di Visual Studio e viene installata quando si includono funzionalità C/C++ nell'installazione di Visual Studio.
+[L'utilità MIDL](/windows/desktop/Midl/using-the-midl-compiler-2) (Microsoft Interface Definition Language) converte i file IDL che descrivono l'interfaccia COM BITS in un file TLB (libreria dei tipi). Lo strumento MIDL dipende dall'utilità CL (preprocessore C) per leggere correttamente il file di linguaggio IDL. L'utilità CL fa parte Visual Studio e viene installata quando si includono le funzionalità C/C++ nell'Visual Studio installazione.
 
-Tramite l'utilità MIDL viene in genere creato un set di file C e H (codice del linguaggio c e intestazione del linguaggio C). È possibile disattivare questi file aggiuntivi inviando l'output al dispositivo NUL:. Se, ad esempio, si imposta l'opzione/dlldata NUL:, non è possibile creare un file dlldata. c. I comandi di esempio seguenti mostrano quali opzioni devono essere impostate su NUL:.
+L'utilità MIDL crea in genere un set di file C e H (codice del linguaggio C e intestazione del linguaggio C). È possibile eliminare questi file aggiuntivi inviando l'output al dispositivo NUL: . Ad esempio, l'impostazione dell'opzione /dlldata NUL: elimina la creazione di un file dlldata.c. I comandi di esempio seguenti illustrano quali opzioni devono essere impostate su NUL:.
 
-L'utilità [Tlbimp](/dotnet/framework/tools/tlbimp-exe-type-library-importer) (utilità di importazione della libreria dei tipi) legge in un file tlb e crea il file dll di riferimento corrispondente. 
+[L'utilità TLBIMP](/dotnet/framework/tools/tlbimp-exe-type-library-importer) (Type Library Importer) legge in un file TLB e crea il file DLL di riferimento corrispondente. 
 
 
 ### <a name="example-commands-for-midl-and-tlbimp"></a>Comandi di esempio per MIDL e TLBIMP
 
-Questo è un esempio del set completo di comandi per generare un set di file di riferimento. Potrebbe essere necessario modificare i comandi in base all'installazione di Visual Studio e Windows SDK e basandosi sulle funzionalità BITS e sulle versioni del sistema operativo di destinazione. 
+Questo è un esempio del set completo di comandi per generare un set di file di riferimento. Potrebbe essere necessario modificare i comandi in base all'installazione di Visual Studio e Windows SDK e in base alle funzionalità BITS e alle versioni del sistema operativo di destinazione. 
 
-Nell'esempio viene creata una directory in cui inserire i file DLL di riferimento e viene creata una variabile di ambiente BITSTEMP in modo che punti a tale directory. 
+Nell'esempio viene creata una directory in cui inserire i file DLL di riferimento e viene creata una variabile di ambiente BITSTEMP che punta a tale directory. 
 
-I comandi di esempio eseguono quindi il file vsdevcmd.bat creato dal programma di installazione di Visual Studio. Questo file BAT imposterà i percorsi e alcune variabili di ambiente in modo che i comandi MIDL e TLBIMP vengano eseguiti. Vengono inoltre impostate le variabili WindowsSdkDir e WindowsSDKLibVersion in modo che puntino alle directory Windows SDK più recenti.
+I comandi di esempio eseguono vsdevcmd.bat file creato dal programma di Visual Studio programma di installazione. Questo file BAT configura i percorsi e alcune variabili di ambiente in modo che i comandi MIDL e TLBIMP verranno eseguiti. Configura anche le variabili WindowsSdkDir e WindowsSDKLibVersion in modo che puntino alle directory più recenti Windows SDK.
 
 ```console
 REM Create a working directory
@@ -85,25 +85,25 @@ DEL "%BITSTEMP%"\bits*.tlb
 POPD
 
 ```
-Dopo l'esecuzione di questi comandi, nella directory BITSTEMP sarà presente un set di dll di riferimento.
+Una volta eseguiti questi comandi, nella directory BITSTEMP sarà presente un set di DLL di riferimento.
 
-### <a name="adding-the-reference-dlls-to-your-project"></a>Aggiunta di dll di riferimento al progetto
+### <a name="adding-the-reference-dlls-to-your-project"></a>Aggiunta delle DLL di riferimento al progetto
 
-Per usare una DLL di riferimento in un progetto C#, aprire il progetto C# in Visual Studio. Nella Esplora soluzioni fare clic con il pulsante destro del mouse sui riferimenti e scegliere Aggiungi riferimento. Fare quindi clic sul pulsante Sfoglia e quindi sul pulsante Aggiungi. Passare alla directory con le DLL di riferimento, selezionarle e fare clic su Aggiungi. Nella finestra Gestione riferimenti verranno controllate le DLL di riferimento. Fare quindi clic su OK.
+Per usare una DLL di riferimento in un progetto C#, aprire il progetto C# in Visual Studio. Nel riquadro Esplora soluzioni fare clic con il pulsante destro del mouse su Riferimenti e scegliere Aggiungi riferimento. Fare quindi clic sul pulsante Sfoglia e quindi sul pulsante Aggiungi. Passare alla directory con le DLL di riferimento, selezionarle e fare clic su Aggiungi. Nella finestra Gestione riferimenti verranno controllate le DLL di riferimento. Fare quindi clic su OK.
 
 Le DLL di riferimento BITS vengono ora aggiunte al progetto.
 
-Le informazioni nei file DLL di riferimento verranno incorporate nel programma finale. Non è necessario spedire i file DLL di riferimento al programma. è sufficiente spedire il. EXE. 
+Le informazioni nei file DLL di riferimento verranno incorporate nel programma finale. Non è necessario spedire i file DLL di riferimento con il programma. è sufficiente spedire il .EXE. 
 
-È possibile modificare se le DLL di riferimento sono incorporate nel file EXE finale. Utilizzare la proprietà [Incorpora tipi di interoperabilità](/dotnet/framework/interop/how-to-add-references-to-type-libraries) per impostare se le DLL di riferimento verranno incorporate o meno. Questa operazione può essere eseguita in base ai singoli riferimenti. Il valore predefinito è true per incorporare le dll.
+È possibile modificare se le DLL di riferimento sono incorporate nel file EXE finale. Usare la [proprietà Incorpora tipi di](/dotnet/framework/interop/how-to-add-references-to-type-libraries) interoperabilità per impostare se le DLL di riferimento verranno incorporate. Questa operazione può essere eseguita in base al riferimento. Il valore predefinito è True per incorporare le DLL.
 
-## <a name="modifying-idl-files-for-more-complete-net-code"></a>Modifica di file IDL per codice .NET più completo
+## <a name="modifying-idl-files-for-more-complete-net-code"></a>Modifica dei file IDL per un codice .NET più completo
 
-I file IDL (Microsoft Interface Definition Language) BITS possono essere utilizzati senza modifiche per creare il file DLL BackgroundCopyManager. Tuttavia, nella DLL di riferimento .NET risultante mancano alcune unioni non convertibili e sono presenti nomi difficili da usare per alcune strutture ed enumerazioni. In questa sezione vengono descritte alcune delle modifiche che è possibile apportare per rendere la DLL .NET più completa e più semplice da utilizzare.
+I file IDL BITS (Microsoft Interface Definition Language) possono essere usati senza modifiche per rendere il file DLL BackgroundCopyManager. Tuttavia, la DLL di riferimento .NET risultante manderà alcune unioni non traducibili e avrà nomi difficili da usare per alcune strutture ed enumerazioni. Questa sezione descrive alcune delle modifiche che è possibile apportare per rendere la DLL .NET più completa e più facile da usare.
 
 ### <a name="simpler-enum-names"></a>Nomi ENUM più semplici
 
-I file IDL BITS definiscono in genere valori enum come il seguente:
+I file IDL BITS definiscono in genere valori di enumerazione come i seguenti:
 ```
     typedef enum
     {
@@ -111,7 +111,7 @@ I file IDL BITS definiscono in genere valori enum come il seguente:
             BG_AUTH_TARGET_PROXY
     } BG_AUTH_TARGET;
 ```
-Il BG_AUTH_TARGET è il nome del typedef. l'enumerazione effettiva non è denominata. Questa operazione in genere non provoca problemi con il codice C, ma non viene convertita correttamente per l'uso con un programma .NET. Verrà creato automaticamente un nuovo nome, ma potrebbe essere simile _MIDL___MIDL_itf_bits4_0_0005_0001_0001 anziché un valore leggibile. È possibile risolvere questo problema aggiornando i file MIDL in modo da includere un nome di enumerazione.
+Il BG_AUTH_TARGET è il nome del typedef. L'enumerazione effettiva non è denominata. Questo non causa in genere problemi con il codice C, ma non si traduce bene per l'uso con un programma .NET. Verrà creato automaticamente un nuovo nome, ma potrebbe essere simile a _MIDL___MIDL_itf_bits4_0_0005_0001_0001 anziché a un valore leggibile dall'utente. È possibile risolvere questo problema aggiornando i file MIDL in modo da includere un nome di enumerazione.
 
 ```
     typedef enum BG_AUTH_TARGET
@@ -121,11 +121,11 @@ Il BG_AUTH_TARGET è il nome del typedef. l'enumerazione effettiva non è denomi
     } BG_AUTH_TARGET;
 ```
 
-Il nome dell'enumerazione può essere uguale al nome del typedef. Alcuni programmatori hanno una convenzione di denominazione in cui vengono mantenuti diversi, ad esempio inserendo un carattere di sottolineatura prima del nome dell'enum, ma questo confonderà solo le conversioni di .NET. 
+Il nome dell'enumerazione può essere uguale al nome typedef. Alcuni programmatori hanno una convenzione di denominazione in cui vengono mantenuti diversi (ad esempio, inserendo un carattere di sottolineatura prima del nome dell'enumerazione), ma questo confonde solo le traduzioni .NET. 
 
 ### <a name="string-types-in-unions"></a>Tipi stringa nelle unioni
 
-I file IDL BITS passano le stringhe usando la convenzione LPWSTR (puntatore lungo alla stringa di caratteri wide). Sebbene questa operazione funzioni quando si passano parametri di funzione, ad esempio il metodo job. GetDisplayName ([out] LPWSTR * pVal), non funziona quando le stringhe fanno parte di unioni. Il file bits5_0. idl, ad esempio, include l'Unione BITS_FILE_PROPERTY_VALUE:
+I file IDL BITS passano stringhe usando la convenzione LPWSTR (puntatore lungo a stringa di caratteri wide). Anche se funziona quando si passano parametri di funzione (ad esempio il metodo Job.GetDisplayName([out] LPWSTR *pVal), non funziona quando le stringhe fanno parte delle unioni. Ad esempio, il file bits5_0.idl include l'BITS_FILE_PROPERTY_VALUE union:
 
 ```
 typedef [switch_type(BITS_FILE_PROPERTY_ID)] union
@@ -136,11 +136,11 @@ typedef [switch_type(BITS_FILE_PROPERTY_ID)] union
 BITS_FILE_PROPERTY_VALUE;
 ```
 
-Il campo LPWSTR non verrà incluso nella versione .NET dell'Unione. Per risolvere il problema, impostare LPWSTR su WCHAR *. Il campo risultante (denominato stringa) verrà passato come IntPtr. Convertirlo in una stringa usando System. Runtime. InteropServices. Marshal. PtrToStringAuto (value. Stringa); Metodo.
+Il campo LPWSTR non verrà incluso nella versione .NET dell'unione. Per risolvere il problema, modificare LPWSTR in WCHAR*. Il campo risultante (denominato String) verrà passato come IntPtr. Convertirlo in una stringa usando System.Runtime.InteropServices.Marshal.PtrToStringAuto(value. String); Metodo.
 
-### <a name="unions-in-structures"></a>Unioni in strutture
+### <a name="unions-in-structures"></a>Unioni nelle strutture
 
-Talvolta le unioni incorporate nelle strutture non verranno incluse nella struttura. Ad esempio, in Bits1_5. idl il BG_AUTH_CREDENTIALS viene definito come segue:
+In alcuni casi le unioni incorporate nelle strutture non verranno incluse nella struttura. Ad esempio, nel file Bits1_5.idl il BG_AUTH_CREDENTIALS è definito come segue:
 ```
     typedef struct
     {
@@ -151,7 +151,7 @@ Talvolta le unioni incorporate nelle strutture non verranno incluse nella strutt
     BG_AUTH_CREDENTIALS;
 ```
 
-Il BG_AUTH_CREDENTIALS_UNION viene definito come un'Unione come segue:
+La BG_AUTH_CREDENTIALS_UNION è definita come unione come segue:
 ```
     typedef [switch_type(BG_AUTH_SCHEME)] union
     {
@@ -160,9 +160,9 @@ Il BG_AUTH_CREDENTIALS_UNION viene definito come un'Unione come segue:
             [default] ;
     } BG_AUTH_CREDENTIALS_UNION;
 ```
-Il campo delle credenziali nel BG_AUTH_CREDENTIALS non verrà incluso nella definizione della classe .NET.
+Il campo Credentials (Credenziali) BG_AUTH_CREDENTIALS non verrà incluso nella definizione della classe .NET.
 
-Si noti che l'Unione è definita in modo da essere sempre un BG_BASIC_CREDENTIALS indipendentemente dall'BG_AUTH_SCHEME. Poiché l'Unione non viene usata come Unione, è possibile passare solo una BG_BASIC_CREDENTIALS come la seguente:
+Si noti che l'unione è definita come sempre BG_BASIC_CREDENTIALS indipendentemente dal BG_AUTH_SCHEME. Poiché l'unione non viene usata come unione, è possibile passare una BG_BASIC_CREDENTIALS simile alla seguente:
 ```
     typedef struct
     {
@@ -173,11 +173,11 @@ Si noti che l'Unione è definita in modo da essere sempre un BG_BASIC_CREDENTIAL
     BG_AUTH_CREDENTIALS;
 ```
 
-## <a name="using-bits-from-c"></a>Utilizzo di BITS da C #
+## <a name="using-bits-from-c"></a>Uso di BITS da C #
 
 ### <a name="recommended-using-statement"></a>Istruzione using consigliata
 
-La configurazione di alcune istruzioni using in C# ridurrà il numero di caratteri che è necessario digitare per utilizzare le diverse versioni BITS. Il nome "BITSReference" deriva dal nome della DLL di riferimento.
+La configurazione di alcune istruzioni using in C# ridurrà il numero di caratteri da digitare per usare le diverse versioni BITS. Il nome "BITSReference" deriva dal nome della DLL di riferimento.
 
 ```csharp
 // Set up the BITS namespaces
@@ -189,7 +189,7 @@ using BITS10_2 = BITSReference10_2;
 
 ### <a name="quick-sample-download-a-file"></a>Esempio rapido: scaricare un file
 
-Di seguito è riportato un frammento breve ma completo del codice C# per scaricare un file da un URL. 
+Di seguito è riportato un frammento breve ma completo di codice C# per scaricare un file da un URL. 
 
 ```csharp
     var mgr = new BITS.BackgroundCopyManager1_5();
@@ -222,31 +222,31 @@ Di seguito è riportato un frammento breve ma completo del codice C# per scarica
     // Job is complete
 ```
 
-In questo codice di esempio viene creato un gestore BITS denominato Mgr. Corrisponde direttamente all'interfaccia [IBackgroundCopyManager](/windows/desktop/api/bits/nn-bits-ibackgroundcopymanager) . 
+In questo codice di esempio viene creato un gestore BITS denominato mgr. Corrisponde direttamente [all'interfaccia IBackgroundCopyManager.](/windows/desktop/api/bits/nn-bits-ibackgroundcopymanager) 
 
-Dal gestore viene creato un nuovo processo. Il processo è un parametro out nel metodo CreateJob. Viene passato anche il nome del processo (che non deve essere univoco) e il tipo di download, che è un processo di download. Viene compilato anche un GUID BITS per l'identificatore di processo.
+Dal manager viene creato un nuovo processo. Il processo è un parametro out nel metodo CreateJob. Vengono passati anche il nome del processo (che non deve essere univoco) e il tipo di download, ovvero un processo di download. Viene compilato anche un GUID BITS per l'identificatore del processo.
 
-Una volta creato il processo, aggiungere un nuovo file di download al processo con il metodo AddFile. È necessario passare due stringhe, una per il file remoto (l'URL o la condivisione file) e una per il file locale. 
+Dopo aver creato il processo, aggiungere un nuovo file di download al processo con il metodo AddFile. È necessario passare due stringhe, una per il file remoto (URL o condivisione file) e una per il file locale. 
 
-Dopo l'aggiunta del file, chiamare Resume sul processo per avviarlo. Il codice attende quindi che il processo sia in uno stato finale (errore o trasferito) e quindi completato.
+Dopo aver aggiunto il file, chiamare Resume sul processo per avviarlo. Il codice attende quindi fino a quando il processo non si trova nello stato finale (ERROR o TRANSFERRED) e viene quindi completato.
 
 ### <a name="bits-versions-casting-and-queryinterface"></a>Versioni BITS, cast e QueryInterface
 
-Si noterà che è spesso necessario usare una versione iniziale di un oggetto BITS e una versione più recente del programma.  
+Spesso è necessario usare sia una versione precedente di un oggetto BITS che una versione più recente nel programma.  
 
-Quando si crea un oggetto processo, ad esempio, si otterrà un metodo ibackgroundcopyjob (parte di BITS versione 1,0) anche quando si usa un oggetto Manager più recente e è disponibile un oggetto Metodo ibackgroundcopyjob più recente. Poiché il metodo CreateJob non accetta un'interfaccia per la versione più recente, non è possibile creare direttamente la versione più recente.
+Ad esempio, quando si crea un oggetto processo, si otterrà un IBackgroundCopyJob (parte di BITS versione 1.0) anche quando si usa un oggetto di gestione più recente ed è disponibile un oggetto IBackgroundCopyJob più recente. Poiché il metodo CreateJob non accetta un'interfaccia per la versione più recente, non è possibile creare direttamente la versione più recente.
 
-Usare un cast .NET per eseguire la conversione da un oggetto di tipo precedente a un oggetto di tipo più recente. Il cast chiamerà automaticamente un COM QueryInterface nel modo appropriato. 
+Usare un cast .NET per eseguire la conversione da un oggetto di tipo meno recente a un oggetto di tipo più recente. Il cast chiamerà automaticamente un oggetto QueryInterface COM in base alle esigenze. 
 
-In questo esempio è presente un oggetto BITS metodo ibackgroundcopyjob denominato "Job" e si vuole convertirlo in un oggetto IBackgroundCopyJob5 denominato "job5" in modo che sia possibile chiamare il metodo BITS 5,0 GetProperty. È sufficiente eseguire il cast al tipo IBackgroundCopyJob5 come segue:
+In questo esempio è presente un oggetto IBackgroundCopyJob BITS denominato "job" e si vuole convertirlo in un oggetto IBackgroundCopyJob5 denominato "job5" in modo da poter chiamare il metodo GetProperty di BITS 5.0. È sufficiente eseguire il cast al tipo IBackgroundCopyJob5 come il seguente:
 
 ```csharp
 var job5 = (BITS5.IBackgroundCopyJob5)job;
 ```
 
-La variabile job5 viene inizializzata da .NET utilizzando la funzione QueryInterface corretta. 
+La variabile job5 verrà inizializzata da .NET usando l'interfaccia QueryInterface corretta. 
 
-Se il codice potrebbe essere eseguito in un sistema che non supporta una particolare versione di bit, è possibile provare il cast e rilevare System. InvalidCastException. 
+Se il codice può essere eseguito in un sistema che non supporta una particolare versione di BITS, è possibile provare il cast e intercettare System.InvalidCastException. 
 
 ```csharp
 BITS5.IBackgroundCopyJob5 job5 = null;
@@ -260,9 +260,9 @@ catch (System.InvalidCastException)
 }
 ```
 
-Un problema comune è quando si tenta di eseguire il cast nel tipo di oggetto errato. Il sistema .NET non conosce la relazione reale tra le interfacce BITS. Se si richiede un tipo di interfaccia errato, .NET tenterà di crearla e avrà esito negativo con un'eccezione InvalidCastException e HResult 0X80004002 (E_NOINTERFACE).
+Un problema comune è quando si tenta di eseguire il cast nel tipo di oggetto errato. Il sistema .NET non conosce la relazione reale tra le interfacce BITS. Se si richiede un tipo di interfaccia errato, .NET tenterà di renderla valida e avrà esito negativo con invalidCastException e HResult 0x80004002 (E_NOINTERFACE).
 
 ### <a name="working-with-bits-versions-10_1-and-10_2"></a>Uso delle versioni BITS 10_1 e 10_2
 
-In alcune versioni di Windows 10 non è possibile creare direttamente un oggetto BITS IBackgroundCopyManager usando le interfacce 10,1 o 10,2. Sarà invece necessario usare più versioni dei file di riferimento della DLL BackgroundCopyManager. Ad esempio, è possibile usare la versione 1,5 per creare un oggetto IBackgroundCopyManager, quindi eseguire il cast del processo o degli oggetti file risultante usando le versioni 10,1 o 10,2.
+In alcune versioni di Windows 10 non è possibile creare direttamente un oggetto IBackgroundCopyManager BITS usando le interfacce 10.1 o 10.2. Sarà invece necessario usare più versioni dei file di riferimento della DLL BackgroundCopyManager. Ad esempio, è possibile usare la versione 1.5 per creare un oggetto IBackgroundCopyManager e quindi eseguire il cast degli oggetti processo o file risultanti usando le versioni 10.1 o 10.2.
 

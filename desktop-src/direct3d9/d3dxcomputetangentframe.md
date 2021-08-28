@@ -1,7 +1,7 @@
 ---
-description: Vettori di calcolo tangente, binormali e normali per una rete mesh.
+description: Calcolare vettori tangenti, binormali e normali per una mesh.
 ms.assetid: 54edb9a5-440d-4191-a58f-296e5b804e0c
-title: Funzione D3DXComputeTangentFrame (D3DX9Mesh. h)
+title: Funzione D3DXComputeTangentFrame (D3DX9Mesh.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -14,16 +14,16 @@ api_type:
 api_location:
 - d3dx9.lib
 - d3dx9.dll
-ms.openlocfilehash: 4b95d8f046499716a2c7972593093dfb409b11f6
-ms.sourcegitcommit: 14010c34b35fa268046c7683f021f86de08ddd0a
+ms.openlocfilehash: 532b265f387179d88581f6f0a05227162de6a8402e324e7be2e13a16ca4a3ed1
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/15/2021
-ms.locfileid: "106323426"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119849831"
 ---
-# <a name="d3dxcomputetangentframe-function"></a>D3DXComputeTangentFrame (funzione)
+# <a name="d3dxcomputetangentframe-function"></a>Funzione D3DXComputeTangentFrame
 
-Vettori di calcolo tangente, binormali e normali per una rete mesh.
+Calcolare vettori tangenti, binormali e normali per una mesh.
 
 ## <a name="syntax"></a>Sintassi
 
@@ -41,7 +41,7 @@ HRESULT D3DXComputeTangentFrame(
 
 <dl> <dt>
 
-*pMesh* \[ in\]
+*pMesh* \[ Pollici\]
 </dt> <dd>
 
 Tipo: **[ **ID3DXMesh**](id3dxmesh.md)\***
@@ -50,19 +50,19 @@ Puntatore a un oggetto mesh [**ID3DXMesh**](id3dxmesh.md) di input.
 
 </dd> <dt>
 
-*dwOptions* \[ in\]
+*dwOptions* \[ Pollici\]
 </dt> <dd>
 
 Tipo: **[ **DWORD**](../winprog/windows-data-types.md)**
 
-Combinazione di uno o più flag [**D3DXTANGENT**](./d3dxtangent.md) .
+Combinazione di uno o [**più flag D3DXTANGENT.**](./d3dxtangent.md)
 
-Utilizzare **null** per specificare le opzioni seguenti:
+Usare **NULL** per specificare le opzioni seguenti:
 
--   Ponderare la lunghezza del vettore normale in base all'angolo, in radianti, in base ai due bordi che lasciano il vertice.
--   Calcola le coordinate cartesiane ortogonali dalle coordinate di trama UV.
--   Non è possibile eseguire il wrapper delle trame nelle direzioni U o V
--   Le derivazioni parziali rispetto alle coordinate di trama vengono normalizzate.
+-   Ponderare la lunghezza normale del vettore in base all'angolo, in radianti, sottotendato dai due bordi che lasciano il vertice.
+-   Calcolare le coordinate cartesiane ortogonali dalle coordinate della trama UV.
+-   Le trame non vengono incapsulate nelle direzioni U o V
+-   I derivati parziali rispetto alle coordinate della trama vengono normalizzati.
 -   I vertici vengono ordinati in senso antiorario intorno a ogni triangolo.
 -   Usare vettori normali per vertice già presenti nella mesh di input.
 -   I risultati verranno archiviati nella mesh di input originale. La funzione avrà esito negativo se è necessario creare nuovi vertici.
@@ -73,7 +73,7 @@ Utilizzare **null** per specificare le opzioni seguenti:
 
 Tipo: **[ **HRESULT**](https://msdn.microsoft.com/library/Bb401631(v=MSDN.10).aspx)**
 
-Se la funzione ha esito positivo, il valore restituito è \_ OK. Se la funzione ha esito negativo, il valore restituito può essere uno dei seguenti: D3DERR \_ INVALIDCALL, D3DXERR \_ INVALIDDATA, E \_ OutOfMemory.
+Se la funzione ha esito positivo, il valore restituito è S \_ OK. Se la funzione ha esito negativo, il valore restituito può essere uno dei seguenti: D3DERR \_ INVALIDCALL, D3DXERR \_ INVALIDDATA, E \_ OUTOFMEMORY.
 
 ## <a name="remarks"></a>Commenti
 
@@ -90,9 +90,9 @@ D3DXComputeTangentFrameEx(pMesh, D3DDECLUSAGE_TEXCOORD, 0,
 
 
 
-Le singolarità vengono gestite come richiesto raggruppando i bordi e suddividendo i vertici. Se è necessario suddividere i vertici, la funzione avrà esito negativo. Il vettore normale calcolato a ogni vertice è sempre normalizzato per avere una lunghezza di unità.
+Le singolarità vengono gestite in base alle esigenze raggruppando gli bordi e suddividendo i vertici. Se è necessario suddividere i vertici, la funzione avrà esito negativo. Il vettore normale calcolato in ogni vertice viene sempre normalizzato in modo da avere una lunghezza unità.
 
-La soluzione più affidabile per calcolare le coordinate cartesiane ortogonali consiste nel non impostare i flag D3DXTANGENT \_ ORTHOGONALIZE \_ \_ e D3DXTANGENT \_ ORTHOGONALIZE \_ da \_ V, in modo che le coordinate ortogonali vengano calcolate da entrambe le coordinate di trama UV. Tuttavia, in questo caso, se U o V è zero, la funzione calcolerà le coordinate ortogonali usando D3DXTANGENT \_ ORTHOGONALIZE \_ \_ rispettivamente da V o D3DXTANGENT \_ ORTHOGONALIZE \_ from \_ U.
+La soluzione più affidabile per il calcolo delle coordinate cartesiane ortogonali consiste nel non impostare flag D3DXTANGENT \_ ORTHOGONALIZE \_ FROM you e \_ D3DXTANGENT \_ ORTHOGONALIZE FROM V, in modo che le coordinate \_ \_ ortogonali siano calcolate da entrambe le coordinate della trama UV. Tuttavia, in questo caso, se U o V è zero, la funzione calcola le coordinate ortogonali usando D3DXTANGENT \_ ORTHOGONALIZE FROM V o \_ \_ D3DXTANGENT \_ ORTHOGONALIZE \_ FROM U \_ rispettivamente.
 
 ## <a name="requirements"></a>Requisiti
 
@@ -100,8 +100,8 @@ La soluzione più affidabile per calcolare le coordinate cartesiane ortogonali c
 
 | Requisito | Valore |
 |--------------------|----------------------------------------------------------------------------------------|
-| Intestazione<br/>  | <dl> <dt>D3DX9Mesh. h</dt> </dl> |
-| Libreria<br/> | <dl> <dt>D3dx9. lib</dt> </dl>   |
+| Intestazione<br/>  | <dl> <dt>D3DX9Mesh.h</dt> </dl> |
+| Libreria<br/> | <dl> <dt>D3dx9.lib</dt> </dl>   |
 
 
 

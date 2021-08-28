@@ -1,5 +1,5 @@
 ---
-description: 'Altre informazioni su: struttura JET_DBINFOMISC3'
+description: 'Altre informazioni su: JET_DBINFOMISC3 struttura'
 title: Struttura JET_DBINFOMISC3
 TOCTitle: JET_DBINFOMISC3 Structure
 ms:assetid: ffb23ac1-21ad-4dc6-98f8-aa4e6ef395ac
@@ -15,12 +15,12 @@ api_type:
 - COM
 api_location: ''
 ROBOTS: INDEX,FOLLOW
-ms.openlocfilehash: 761afe13638d7905b5d4a639b7100108ce6ec977
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 9b3f0d56702da29b4ddd0557c7d8f1f18e8addd8
+ms.sourcegitcommit: 4665ebce0c106bdb52eef36e544280b496b6f50b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104226072"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "122987291"
 ---
 # <a name="jet_dbinfomisc3-structure"></a>Struttura JET_DBINFOMISC3
 
@@ -29,7 +29,7 @@ _**Si applica a:** Windows | Windows Server_
 
 ## <a name="jet_dbinfomisc3-structure"></a>Struttura JET_DBINFOMISC3
 
-La struttura **JET_DBINFOMISC3** include informazioni varie su un database. Si tratta delle informazioni contenute nell'intestazione del database.
+La **JET_DBINFOMISC3** contiene informazioni varie su un database. Si tratta delle informazioni contenute nell'intestazione del database.
 
 ```cpp
     typedef struct {
@@ -77,106 +77,36 @@ La struttura **JET_DBINFOMISC3** include informazioni varie su un database. Si t
 
 **ulVersion**
 
-Versione nativa del motore di database che ha creato il database. Vedere [JetGetVersion](./jetgetversion-function.md) per recuperare la versione nativa per il motore di database corrente.
+Versione nativa del motore di database che ha creato il database. Vedere [JetGetVersion per](./jetgetversion-function.md) recuperare la versione nativa per il motore di database corrente.
 
 **ulUpdate**
 
-Tiene traccia degli aggiornamenti del formato del database incrementale che sono compatibili con le versioni precedenti.
+Tiene traccia degli aggiornamenti incrementali del formato del database compatibili con le versioni precedenti.
 
-<table>
-<colgroup>
-<col style="width: 50%" />
-<col style="width: 50%" />
-</colgroup>
-<thead>
-<tr class="header">
-<th><p>ulVersion, ulUpdate =</p></th>
-<th><p>Significato</p></th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td><p>0x620, 0</p></td>
-<td><p>Formato beta originale del sistema operativo (4/22/97).</p></td>
-</tr>
-<tr class="even">
-<td><p>0x620, 1</p></td>
-<td><p>Aggiungere le colonne nel catalogo per l'indicizzazione condizionale e quella precedente (5/29/97).</p></td>
-</tr>
-<tr class="odd">
-<td><p>0x620, 2</p></td>
-<td><p>Aggiungere il flag fLocalizedText in IDB (6/5/97).</p></td>
-</tr>
-<tr class="even">
-<td><p>0x620, 3</p></td>
-<td><p>Aggiungere SPLIT_BUFFER alle pagine radice dell'albero dello spazio (10/30/97).</p></td>
-</tr>
-<tr class="odd">
-<td><p>0x620, 2</p></td>
-<td><p>Ripristinare la revisione affinché ESE97 rimanga compatibile con le versioni successive (1/28/98).</p></td>
-</tr>
-<tr class="even">
-<td><p>0x620, 3</p></td>
-<td><p>Aggiungere nuove colonne con tag al catalogo ( &quot; CallbackData &quot; e &quot; CallbackDependencies &quot; ).</p></td>
-</tr>
-<tr class="odd">
-<td><p>0x620, 4</p></td>
-<td><p>Supporto di SLV: signSLV, fSLVExists nell'intestazione DB (5/5/98).</p></td>
-</tr>
-<tr class="even">
-<td><p>0x620, 5</p></td>
-<td><p>Nuovo albero dello spazio SLV (5/29/98).</p></td>
-</tr>
-<tr class="odd">
-<td><p>0x620, 6</p></td>
-<td><p>Mappa dello spazio SLV (10/12/98).</p></td>
-</tr>
-<tr class="even">
-<td><p>0x620, 7</p></td>
-<td><p>IDXSEG a 4 byte (12/10/98).</p></td>
-</tr>
-<tr class="odd">
-<td><p>0x620, 8</p></td>
-<td><p>Nuovo formato di colonna modello (1/25/99).</p></td>
-</tr>
-<tr class="even">
-<td><p>0x620, 9</p></td>
-<td><p>Colonne modello ordinate (6/24/99).</p></td>
-</tr>
-<tr class="odd">
-<td><p>0x620, A</p></td>
-<td><p>Codebase unita (3/26/2003).</p></td>
-</tr>
-<tr class="even">
-<td><p>0x620, B</p></td>
-<td><p>Nuovo formato di checksum (1/08/2004).</p></td>
-</tr>
-<tr class="odd">
-<td><p>0x620, C</p></td>
-<td><p>Aumento della lunghezza massima della chiave a 1000/2000 byte per le pagine 4/8KB (1/15/2004).</p></td>
-</tr>
-<tr class="even">
-<td><p>0x620, D</p></td>
-<td><p>Hint dello spazio del catalogo space_header. V2 (7/15/2007).</p></td>
-</tr>
-<tr class="odd">
-<td><p>0x620, E</p></td>
-<td><p>Aggiungere il nuovo formato di nodo/extent a gestione spazio, usarlo per i pool di spazio riservati (8/9/2007).</p></td>
-</tr>
-<tr class="even">
-<td><p>0x620, F</p></td>
-<td><p>Compressione per valori Long intrinseci (10/30/2007).</p></td>
-</tr>
-<tr class="odd">
-<td><p>0x620, 10</p></td>
-<td><p>Compressione per valori Long separati (12/05/2007).</p></td>
-</tr>
-<tr class="even">
-<td><p>0x620, 11</p></td>
-<td><p>Nuove dimensioni del blocco LV per pagine di grandi dimensioni (12/29/2007).</p></td>
-</tr>
-</tbody>
-</table>
+
+| <p>ulVersion, ulUpdate =</p> | <p>Significato</p> | 
+|------------------------------|----------------|
+| <p>0x620,0</p> | <p>Formato beta del sistema operativo originale (22/4/97).</p> | 
+| <p>0x620,1</p> | <p>Aggiungere colonne nel catalogo per l'indicizzazione condizionale e OLD (29/5/97).</p> | 
+| <p>0x620,2</p> | <p>Aggiungere il flag fLocalizedText in IDB (6/5/97).</p> | 
+| <p>0x620,3</p> | <p>Aggiungere SPLIT_BUFFER alle pagine radice dell'albero spazi (30/10/97).</p> | 
+| <p>0x620,2</p> | <p>Ripristinare la revisione in modo che ESE97 rimanga compatibile con il futuro (28/1/01/98).</p> | 
+| <p>0x620,3</p> | <p>Aggiungere nuove colonne contrassegnate al catalogo ("CallbackData" e "CallbackDependencies").</p> | 
+| <p>0x620,4</p> | <p>Supporto SLV: signSLV, fSLVExists nell'intestazione db (5/5/98).</p> | 
+| <p>0x620,5</p> | <p>Nuovo albero dello spazio SLV (29/5/98).</p> | 
+| <p>0x620,6</p> | <p>Mappa spaziale SLV (10/12/98).</p> | 
+| <p>0x620,7</p> | <p>IDXSEG a 4 byte (10/12/98).</p> | 
+| <p>0x620,8</p> | <p>Nuovo formato di colonna modello (25/1/99).</p> | 
+| <p>0x620,9</p> | <p>Colonne modello ordinate (24/6/99).</p> | 
+| <p>0x620,A</p> | <p>Codebase unita (26/3/2003).</p> | 
+| <p>0x620,B</p> | <p>Nuovo formato di checksum (1/08/2004).</p> | 
+| <p>0x620,C</p> | <p>Aumento della lunghezza massima della chiave a 1000/2000 byte per pagine da 4/8 kb (15/1/15/2004).</p> | 
+| <p>0x620,D</p> | <p>Hint per lo spazio del catalogo, space_header.v2 (15/7/2007).</p> | 
+| <p>0x620,E</p> | <p>Aggiungere il nuovo formato di nodo/extent a Gestione spazi, usarlo per i pool riservati di spazio (9/8/2007).</p> | 
+| <p>0x620,F</p> | <p>Compressione per valori long intrinseci (30/10/2007).</p> | 
+| <p>0x620,10</p> | <p>Compressione per valori long separati (12/05/2007).</p> | 
+| <p>0x620,11</p> | <p>Nuove dimensioni del blocco LV per pagine di grandi dimensioni (29/12/2007).</p> | 
+
 
 
 **signDb**
@@ -185,124 +115,94 @@ Firma del database (inclusa l'ora di creazione). Questa struttura è di 28 byte.
 
 **dbstate**
 
-Si tratta dello stato del database.
+Questo è lo stato del database.
 
 Per questo membro sono disponibili le opzioni seguenti.
 
-<table>
-<colgroup>
-<col style="width: 50%" />
-<col style="width: 50%" />
-</colgroup>
-<thead>
-<tr class="header">
-<th><p>Valore</p></th>
-<th><p>Significato</p></th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td><p>JET_dbstateJustCreated<br />
-1</p></td>
-<td><p>Il database è stato appena creato.</p></td>
-</tr>
-<tr class="even">
-<td><p>JET_dbstateDirtyShutdown<br />
-2</p></td>
-<td><p>Il database richiede l'esecuzione di un ripristino software o hardware per poter essere utilizzato o spostabile. Non provare a spostare i database in questo stato.</p></td>
-</tr>
-<tr class="odd">
-<td><p>JET_dbstateCleanShutdown<br />
-3</p></td>
-<td><p>Il database è in uno stato pulito. Il database può essere collegato senza file di log.</p></td>
-</tr>
-<tr class="even">
-<td><p>JET_dbstateBeingConverted<br />
-4</p></td>
-<td><p>È in corso l'aggiornamento del database.</p></td>
-</tr>
-<tr class="odd">
-<td><p>JET_dbstateForceDetach<br />
-5</p></td>
-<td><p>Interno.</p></td>
-</tr>
-</tbody>
-</table>
+
+| <p>Valore</p> | <p>Significato</p> | 
+|--------------|----------------|
+| <p>JET_dbstateJustCreated<br />1</p> | <p>Il database è stato appena creato.</p> | 
+| <p>JET_dbstateDirtyShutdown<br />2</p> | <p>Il database richiede l'esecuzione del ripristino rigido o soft per diventare utilizzabile o spostabile. Non è consigliabile provare a spostare i database in questo stato.</p> | 
+| <p>JET_dbstateCleanShutdown<br />3</p> | <p>Il database è in uno stato pulito. Il database può essere collegato senza file di log.</p> | 
+| <p>JET_dbstateBeingConverted<br />4</p> | <p>È in corso l'aggiornamento del database.</p> | 
+| <p>JET_dbstateForceDetach<br />5</p> | <p>Interno.</p> | 
+
 
 
 **lgposConsistent**
 
-Null se il database è in uno stato dirty. Si tratta della posizione del log utilizzata quando il database è stato portato per l'ultima volta a uno stato di chiusura normale.
+Null se il database è in uno stato dirty. Si tratta della posizione del log usata quando il database è stato portato per l'ultima volta a uno stato di arresto pulito.
 
 **logtimeConsistent**
 
-Null se il database è in uno stato dirty. Si tratta dell'ora in cui il database è stato portato per l'ultima volta a uno stato di chiusura normale.
+Null se il database è in uno stato dirty. Si tratta dell'ora dell'ultima volta in cui il database è stato portato a uno stato di arresto pulito.
 
 **logtimeAttach**
 
-Ora dell'ultima connessione del database con [JetAttachDatabase](./jetattachdatabase-function.md).
+Ora dell'ultimo collegamento del database [con JetAttachDatabase.](./jetattachdatabase-function.md)
 
 **lgposAttach**
 
-Posizione del log utilizzata per l'ultima volta che il database è stato collegato a [JetAttachDatabase](./jetattachdatabase-function.md).
+Posizione del log utilizzata l'ultima volta che il database è stato collegato con [JetAttachDatabase.](./jetattachdatabase-function.md)
 
 **logtimeDetach**
 
-Data e ora dell'ultimo scollegamento del database con [JetDetachDatabase](./jetdetachdatabase-function.md).
+Ora dell'ultimo scollegamento del database [con JetDetachDatabase](./jetdetachdatabase-function.md).
 
 **lgposDetach**
 
-Posizione del log utilizzata per l'ultima volta in cui il database è stato scollegato con [JetDetachDatabase](./jetdetachdatabase-function.md).
+Posizione del log utilizzata l'ultima volta che il database è stato scollegato [con JetDetachDatabase](./jetdetachdatabase-function.md).
 
 **signLog**
 
-Supporta l'infrastruttura ESE e non può essere utilizzato nel codice.
+Supporta l'infrastruttura ESE e non può essere usato nel codice.
 
 **bkinfoFullPrev**
 
-Supporta l'infrastruttura ESE e non può essere utilizzato nel codice.
+Supporta l'infrastruttura ESE e non può essere usato nel codice.
 
 **bkinfoIncPrev**
 
-Supporta l'infrastruttura ESE e non può essere utilizzato nel codice.
+Supporta l'infrastruttura ESE e non può essere usato nel codice.
 
 **bkinfoFullCur**
 
-Supporta l'infrastruttura ESE e non può essere utilizzato nel codice.
+Supporta l'infrastruttura ESE e non può essere usato nel codice.
 
 **fShadowingDisabled**
 
-Supporta l'infrastruttura ESE e non può essere utilizzato nel codice.
+Supporta l'infrastruttura ESE e non può essere usato nel codice.
 
 **fUpgradeDb**
 
-Supporta l'infrastruttura ESE e non può essere utilizzato nel codice.
+Supporta l'infrastruttura ESE e non può essere usato nel codice.
 
 **dwMajorVersion**
 
-Rappresenta i numeri di versione di Windows NT durante l'aggiornamento degli indici dei database. Utilizzato per l'aggiornamento degli indici.
+Rappresenta i Windows NT di versione quando gli indici dei database sono stati aggiornati. Usato per aggiornare gli indici.
 
 **dwMinorVersion**
 
-Rappresenta i numeri di versione di Windows NT durante l'aggiornamento degli indici dei database. Utilizzato per l'aggiornamento degli indici.
+Rappresenta i Windows NT di versione quando gli indici dei database sono stati aggiornati. Usato per aggiornare gli indici.
 
 **dwBuildNumber**
 
-Rappresenta i numeri di versione di Windows NT durante l'aggiornamento degli indici dei database. Utilizzato per l'aggiornamento degli indici.
+Rappresenta i Windows NT di versione quando gli indici dei database sono stati aggiornati. Usato per aggiornare gli indici.
 
 **lSPNumber**
 
-Rappresenta i numeri di versione di Windows NT durante l'aggiornamento degli indici dei database. Utilizzato per l'aggiornamento degli indici.
+Rappresenta i Windows NT di versione quando gli indici dei database sono stati aggiornati. Usato per aggiornare gli indici.
 
 **cbPageSize**
 
-Dimensioni di pagina del database. 0 indica che le dimensioni della pagina sono pari a 4 KB.
+Dimensioni della pagina del database. 0 indica che le dimensioni della pagina sono di 4 KB.
 
-Questo valore viene recuperato solo se JET_DbInfoMisc è stato passato a [JetGetDatabaseInfo](./jetgetdatabaseinfo-function.md) o [JetGetDatabaseFileInfo](./jetgetdatabasefileinfo-function.md).
+Questo valore viene recuperato solo se JET_DbInfoMisc passato a [JetGetDatabaseInfo](./jetgetdatabaseinfo-function.md) [o JetGetDatabaseFileInfo](./jetgetdatabasefileinfo-function.md).
 
 **genMinRequired**
 
-Rappresenta la generazione minima di log necessaria per la riproduzione dei log. Questa operazione è in genere identica alla generazione del checkpoint.
+Rappresenta la generazione minima di log necessaria per la riproduzione dei log. Questa operazione è in genere la stessa della generazione del checkpoint.
 
 **genMaxRequired**
 
@@ -314,51 +214,51 @@ Rappresenta la data e l'ora di creazione del file di log genMax.
 
 **ulRepairCount**
 
-Numero di volte in cui è stata richiamata una riparazione su questo database.
+Numero di volte in cui è stato chiamato un ripristino in questo database.
 
 **logtimeRepair**
 
-Rappresenta la data e l'ora in cui è stato eseguito l'ultimo ripristino.
+Rappresenta la data e l'ora dell'ultimo ripristino eseguito.
 
 **ulRepairCountOld**
 
-Il numero di volte in cui la riparazione è stata eseguita nel database prima dell'ultima deframmentazione.
+Numero di volte in cui il ripristino è stato eseguito nel database prima dell'ultima deframmentazione.
 
 **ulECCFixSuccess**
 
-Il numero di volte in cui è stato corretto un errore di un bit che ha generato una pagina corretta.
+Numero di volte in cui un errore di un bit è stato corretto e ha restituito una pagina corretta.
 
 **logtimeECCFixSuccess**
 
-Rappresenta la data e l'ora in cui è stato corretto l'ultimo errore di un bit ed è stata generata una pagina corretta.
+Rappresenta la data e l'ora in cui l'ultimo errore di bit è stato corretto e ha restituito una pagina valida.
 
 **ulECCFixSuccessOld**
 
-Rappresenta il numero di volte in cui è stato corretto un errore di un bit e ha generato una pagina corretta prima dell'ultima correzione.
+Rappresenta il numero di volte in cui un errore di un bit è stato corretto e ha restituito una pagina corretta prima dell'ultimo ripristino.
 
 **ulECCFixFail**
 
-Il numero di volte in cui è stato corretto un errore di un bit e il risultato è una pagina non valida.
+Numero di volte in cui un errore di un bit è stato corretto e ha restituito una pagina non corretta.
 
 **logtimeECCFixFail**
 
-Rappresenta la data e l'ora in cui è stato corretto l'ultimo errore di un bit ed è stata generata una pagina non valida.
+Rappresenta la data e l'ora in cui l'ultimo errore di bit è stato corretto e ha restituito una pagina non valida.
 
 **ulECCFixFailOld**
 
-Il numero di volte in cui è stato corretto un errore di un bit che ha generato una pagina errata prima dell'ultima correzione.
+Numero di volte in cui un errore di un bit è stato corretto e ha restituito una pagina non corretta prima dell'ultimo ripristino.
 
 **ulBadChecksum**
 
-Il numero di volte in cui è stato trovato un errore ECC/checksum non correggibile.
+Numero di volte in cui è stato rilevato un errore ECC/checksum non corretto.
 
 **logtimeBadChecksum**
 
-Rappresenta la data e l'ora in cui è stato rilevato l'ultimo errore ECC/checksum non correggibile.
+Rappresenta la data e l'ora in cui è stato trovato l'ultimo errore ECC/checksum non corretto.
 
 **ulBadChecksumOld**
 
-Il numero di volte in cui è stato trovato un errore ECC/checksum non correggibile prima dell'ultimo ripristino.
+Numero di volte in cui è stato rilevato un errore ECC/checksum non corretto prima dell'ultimo ripristino.
 
 **genCommitted**
 
@@ -366,26 +266,13 @@ Generazione del log corrente. Può essere minore di genMaxRequired se JET_paramW
 
 ### <a name="requirements"></a>Requisiti
 
-<table>
-<colgroup>
-<col style="width: 50%" />
-<col style="width: 50%" />
-</colgroup>
-<tbody>
-<tr class="odd">
-<td><p><strong>Client</strong></p></td>
-<td><p>Richiede Windows Vista, Windows XP o Windows 2000 Professional.</p></td>
-</tr>
-<tr class="even">
-<td><p><strong>Server</strong></p></td>
-<td><p>Richiede Windows Server 2008, Windows Server 2003 o Windows 2000 Server.</p></td>
-</tr>
-<tr class="odd">
-<td><p><strong>Intestazione</strong></p></td>
-<td><p>Dichiarata in esent. h.</p></td>
-</tr>
-</tbody>
-</table>
+
+| Requisito | Valore |
+|------------|----------|
+| <p><strong>Client</strong></p> | <p>Richiede Windows Vista, Windows XP o Windows 2000 Professional.</p> | 
+| <p><strong>Server</strong></p> | <p>Richiede Windows Server 2008, Windows Server 2003 o Windows 2000 Server.</p> | 
+| <p><strong>Intestazione</strong></p> | <p>Dichiarato in Esent.h.</p> | 
+
 
 
 ### <a name="see-also"></a>Vedere anche

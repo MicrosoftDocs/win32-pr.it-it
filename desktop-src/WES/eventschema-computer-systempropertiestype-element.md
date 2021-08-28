@@ -1,9 +1,9 @@
 ---
-title: Computer (SystemPropertiesType)-elemento
+title: Elemento Computer (SystemPropertiesType)
 description: nome del computer in cui si è verificato l'evento.
 ms.assetid: 87967597-23b1-4d6f-993b-3744c6471ed0
 keywords:
-- Log eventi elemento computer
+- Elemento Computer EventLog
 topic_type:
 - apiref
 api_name:
@@ -13,14 +13,14 @@ api_type:
 ms.topic: reference
 ms.date: 05/31/2018
 api_location: ''
-ms.openlocfilehash: cde997a05a9b7ba7f6fea53a8433186b07399b91
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: 4d165f3ce930712ea505a49f4e1db1a18c60174f9e56deb662e02f5611fb95e5
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "104119683"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119904981"
 ---
-# <a name="computer-systempropertiestype-element"></a>Computer (SystemPropertiesType)-elemento
+# <a name="computer-systempropertiestype-element"></a>Elemento Computer (SystemPropertiesType)
 
 nome del computer in cui si è verificato l'evento.
 
@@ -30,7 +30,7 @@ nome del computer in cui si è verificato l'evento.
  />
 ```
 
-L'elemento **computer** è definito dal tipo complesso [**SystemPropertiesType**](eventschema-systempropertiestype-complextype.md) .
+**L'elemento Computer** è definito dal [**tipo complesso SystemPropertiesType.**](eventschema-systempropertiestype-complextype.md)
 
 ## <a name="requirements"></a>Requisiti
 
@@ -38,8 +38,8 @@ L'elemento **computer** è definito dal tipo complesso [**SystemPropertiesType**
 
 | Requisito | Valore |
 |-------------------------------------|------------------------------------------------------|
-| Client minimo supportato<br/> | \[Solo app desktop di Windows Vista\]<br/>       |
-| Server minimo supportato<br/> | \[Solo app desktop Windows Server 2008\]<br/> |
+| Client minimo supportato<br/> | Windows Solo \[ app desktop Vista\]<br/>       |
+| Server minimo supportato<br/> | Windows Solo app desktop di Server 2008 \[\]<br/> |
 
 
 
@@ -50,7 +50,7 @@ L'elemento **computer** è definito dal tipo complesso [**SystemPropertiesType**
 **Elemento padre**
 </dt> <dt>
 
-[**Sistema (EventType)**](eventschema-system-eventtype-element.md)
+[**System (EventType)**](eventschema-system-eventtype-element.md)
 </dt> </dl>
 
  

@@ -1,7 +1,7 @@
 ---
-description: Il metodo GetI recupera l'elemento in corrispondenza della posizione specificata.
+description: Il metodo GetI recupera l'elemento nella posizione specificata.
 ms.assetid: fc775230-491a-49b6-b631-e7d5b8c82d8c
-title: Metodo CBaseList. GetI (Wxlist. h)
+title: Metodo CBaseList.GetI (Wxlist.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -16,16 +16,16 @@ api_location:
 - Strmbase.dll
 - Strmbasd.lib
 - Strmbasd.dll
-ms.openlocfilehash: 2473401aeaee201456b4eede39ffb492f40ee2b6
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: 6f543a38c3394943e3ccb1eeb8bb97d29297a4ca230966940245a2f8a8c121b6
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "106328661"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120087441"
 ---
-# <a name="cbaselistgeti-method"></a>CBaseList. GetI, metodo
+# <a name="cbaselistgeti-method"></a>Metodo CBaseList.GetI
 
-Il `GetI` metodo recupera l'elemento in corrispondenza della posizione specificata.
+Il `GetI` metodo recupera l'elemento nella posizione specificata.
 
 ## <a name="syntax"></a>Sintassi
 
@@ -55,7 +55,7 @@ Restituisce un puntatore all'elemento.
 
 ## <a name="remarks"></a>Commenti
 
-Se *pos* è **null**, il metodo restituisce **null**.
+Se *pos* è **NULL,** il metodo restituisce **NULL.**
 
 ## <a name="requirements"></a>Requisiti
 
@@ -63,8 +63,8 @@ Se *pos* è **null**, il metodo restituisce **null**.
 
 | Requisito | Valore |
 |--------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Intestazione<br/>  | <dl> <dt>Wxlist. h (include Streams. h)</dt> </dl>                                                                                    |
-| Libreria<br/> | <dl> <dt>Strmbase. lib (compilazioni finali); </dt> <dt>Strmbasd. lib (build di debug)</dt> </dl> |
+| Intestazione<br/>  | <dl> <dt>Wxlist.h (includere Flussi.h)</dt> </dl>                                                                                    |
+| Libreria<br/> | <dl> <dt>Strmbase.lib (build di vendita al dettaglio); </dt> <dt>Strmbasd.lib (build di debug)</dt> </dl> |
 
 
 

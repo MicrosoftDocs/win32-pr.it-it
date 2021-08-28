@@ -9,12 +9,12 @@ api_type: ''
 api_location: ''
 topic_type:
 - kbArticle
-ms.openlocfilehash: b93764f8014a5d9446811ef622f7c5afc20acbc6193d938c98642afaae5392fa
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 3309f18cbd5a7e2769b264e516b019d9f3ed3b06
+ms.sourcegitcommit: 61a4c522182aa1cacbf5669683d9570a3bf043b2
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "118452877"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "122885437"
 ---
 # <a name="crumb-argument-the-windows-shell"></a>Argomento CRUMB (shell Windows)
 
@@ -40,7 +40,7 @@ crumb=<column>:<value>[,<label>][,<column>:<value>[,<label>]]&
 
 
 
-La <column> parte è qualsiasi proprietà nel sistema di proprietà e <value> portion è un valore valido per tale proprietà. La <label> parte è un alias facoltativo per la proprietà visualizzata come suggerimento dell'interfaccia utente.
+La parte della colonna è qualsiasi proprietà nel sistema di proprietà e la parte del valore &lt; è un valore valido per tale &gt; &lt; &gt; proprietà. La <label> parte è un alias facoltativo per la proprietà visualizzata come suggerimento dell'interfaccia utente.
 
 ### <a name="general-examples"></a>Esempi generali
 
@@ -66,7 +66,7 @@ Quando si specifica una `location` proprietà, sono supportati due parametri agg
 | Parametro | Valori                  | Descrizione                                                                                                                                                                       |
 |-----------|-------------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | Inclusione | include, exclude        | Specifica se la query deve includere o escludere elementi da tale percorso. L'impostazione predefinita è "Include". Windows Vista non supporta le esclusioni senza inclusioni. (Vedere l'esempio) |
-| ricorsione | ricorsivo, non ricorsivo | Specifica se la ricerca deve essere ricorsiva di tutte le sottocartelle a partire dal valore definito nel percorso:<value>. L'impostazione predefinita è "Recursive".                             |
+| ricorsione | ricorsivo, non ricorsivo | Specifica se la ricerca deve essere ricorsiva in tutte le sottocartelle a partire dal valore definito nel percorso: &lt; value &gt; . L'impostazione predefinita è "Recursive".                             |
 
 
 
@@ -143,10 +143,10 @@ Nella tabella seguente sono elencati i valori CSIDL. Per altre [**informazioni, 
 | COMMONVIDEO                 | MY%20VIDEO                      | Modelli di cartella Video comuni a tutti gli utenti.                                                                                                                                         |
 | CONNECTIONSFOLDER           | CONNECTIONSFOLDER               | cartella contenente i dati di connessione.                                                                                                                                                     |
 | CARTELLA DEL PANNELLO DI CONTROLLO        | CONTROLPANELFOLDER              | Cartella virtuale contenente le icone per le Pannello di controllo applicazioni.                                                                                                                    |
-| Biscotti                     | Biscotti                         | Directory del file system che funge da repository comune per i cookie Internet. Un percorso tipico è C: \\ Documenti e Impostazioni nome utente \\ \\ Cookie.                                        |
+| BISCOTTI                     | BISCOTTI                         | Directory del file system che funge da repository comune per i cookie Internet. Un percorso tipico è C: \\ Documenti e Impostazioni nome utente \\ \\ Cookie.                                        |
 | DESKTOP                     | DESKTOP                         | Microsoft Windows Desktop. Cartella virtuale che rappresenta la radice dello spazio dei nomi.                                                                                                           |
 | PREFERITI                   | PREFERITI                       | Directory del file system che funge da repository comune per gli elementi preferiti dell'utente. Un percorso tipico è C: \\ Documenti e Impostazioni \\ \\ preferiti.                             |
-| Caratteri                       | Caratteri                           | Cartella virtuale contenente i tipi di carattere installati. Un percorso tipico è C: \\ Tipi di carattere \\ WINDOWS.                                                                                                       |
+| CARATTERI                       | CARATTERI                           | Cartella virtuale contenente i tipi di carattere installati. Un percorso tipico è C: \\ Tipi di carattere \\ WINDOWS.                                                                                                       |
 | CRONOLOGIA                     | CRONOLOGIA                         | Directory del file system che funge da repository comune per gli elementi della cronologia Internet.                                                                                                   |
 | INTERNETFOLDER              | INTERNETFOLDER                  | Cartella che contiene dati Internet.                                                                                                                                                    |
 | APPDATA LOCALE               | LOCAL%20APPDATA                 | Directory del file system che funge da repository di dati per applicazioni locali (non mobili). Un percorso tipico è C: \\ Documents and Impostazioni username Local Impostazioni Application \\ \\ \\ Data. |
@@ -156,7 +156,7 @@ Nella tabella seguente sono elencati i valori CSIDL. Per altre [**informazioni, 
 | IMMAGINI PERSONALI                 | MY%20PICTURES                   | Cartella Immagini. Un percorso tipico è C: \\ Documents and Impostazioni username Documenti My \\ \\ \\ Pictures.                                                                                 |
 | MY VIDEO                    | MY%20VIDEO                      | Cartella Video. Un percorso tipico è C: \\ Documenti e Impostazioni nome utente Documenti My \\ \\ \\ Video.                                                                                       |
 | NETHOOD                     | NETHOOD                         | Cartella virtuale che rappresenta la radice della gerarchia dello spazio dei nomi di rete.                                                                                                               |
-| CARTELLA RISORSE DI RETE       | NETWORKDPLACESFOLDER            | Una file system contenente gli oggetti collegamento che possono esistere nella cartella virtuale Risorse di rete. Non è uguale a NETHOOD, che rappresenta la radice dello spazio dei nomi di rete.   |
+| CARTELLA RISORSE DI RETE       | NETWORKDPLACESFOLDER            | Una file system contenente gli oggetti collegamento che possono esistere nella cartella virtuale Risorse di rete. Non corrisponde a NETHOOD, che rappresenta la radice dello spazio dei nomi di rete.   |
 | COLLEGAMENTI OEM                   | OEM%20LINKS                     | Cartella contenente i collegamenti ai siti OEM.                                                                                                                                                  |
 | PERSONAL                    | PERSONAL                        | Directory del file system che funge da repository comune per i documenti di un utente. Un percorso tipico è C: \\ Documenti e Impostazioni nome utente \\ \\ Documenti.                                 |
 | CARTELLA PRINTERS             | CARTELLA PRINTERS                 | Cartella virtuale contenente le stampanti installate.                                                                                                                                          |
@@ -166,13 +166,13 @@ Nella tabella seguente sono elencati i valori CSIDL. Per altre [**informazioni, 
 | FILE DI PROGRAMMA               | PROGRAM%20FILES                 | Cartella Programmi. Un percorso tipico è C: \\ Programmi.                                                                                                                             |
 | PROGRAMMI COMUNI        | PROGRAMFILESCOMMON              | Cartella Programmi comune a tutti gli utenti.                                                                                                                                              |
 | PROGRAMMI COMUNI x86    | PROGRAMFILESCOMMONX86           | Cartella Programmi comune a tutti gli utenti nei computer x86.                                                                                                                              |
-| FILE DI PROGRAMMASx86            | PROGRAMFILESx86                 | Cartella Programmi nei computer x86.                                                                                                                                                  |
-| Recente                      | Recente                          | Directory del file system che contiene i documenti usati più di recente dell'utente. Un percorso tipico è C: \\ Documenti e Impostazioni nome utente \\ \\ Recente.                                           |
+| PROGRAM FILESx86            | PROGRAMFILESx86                 | Cartella Programmi nei computer x86.                                                                                                                                                  |
+| RECENTE                      | RECENTE                          | Directory del file system che contiene i documenti usati più di recente dell'utente. Un percorso tipico è C: \\ Documenti e Impostazioni nome utente \\ \\ Recenti.                                           |
 | CARTELLA CESTINO          | RECYCLEBINFOLDER                | Cartella virtuale contenente gli oggetti nella cartella dell'Cestino.                                                                                                                       |
-| RESOURCEDIR                 | RESOURCEDIR                     | Directory delle risorse.                                                                                                                                                                |
-| Sendto                      | Sendto                          | Directory del file system che contiene le voci di menu Invia a. Un percorso tipico è C: \\ Documenti e Impostazioni nome utente \\ \\ SendTo.                                                                |
-| START MENU                  | START%20MENU                    | Directory del file system contenente menu Start elementi. Un percorso tipico è C: \\ Documenti e Impostazioni menu Start del nome \\ \\ utente.                                                                 |
-| Avvio                     | Avvio                         | Directory del file system che corrisponde al gruppo di programmi di avvio dell'utente.                                                                                                            |
+| RESOURCEDIR                 | RESOURCEDIR                     | Directory della risorsa.                                                                                                                                                                |
+| SENDTO                      | SENDTO                          | Directory del file system che contiene le voci di menu Invia a. Un percorso tipico è C: \\ Documenti e Impostazioni nome utente \\ \\ SendTo.                                                                |
+| START MENU                  | START%20MENU                    | Directory del file system contenente menu Start elementi. Un percorso tipico è C: \\ Documenti e nome utente Impostazioni menu \\ \\ Start.                                                                 |
+| AVVIO                     | AVVIO                         | Directory del file system che corrisponde al gruppo di programmi di avvio dell'utente.                                                                                                            |
 | SYSTEMx86                   | SYSTEMx86                       | Cartella di sistema nei computer x86.                                                                                                                                                         |
 | TEMPLATES                   | TEMPLATES                       | Directory del file system che funge da repository comune per i modelli di documento.                                                                                                       |
 | SYSTEM                      | SYSTEM                          | Cartella di sistema. Un percorso tipico è C: \\ Windows \\ System.                                                                                                                                  |

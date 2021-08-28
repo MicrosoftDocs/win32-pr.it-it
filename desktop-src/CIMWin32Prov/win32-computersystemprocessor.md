@@ -1,8 +1,8 @@
 ---
-description: La \_ classe WMI dell'associazione ComputerSystemProcessor Win32 mette in relazione un computer e un processore in esecuzione su tale sistema.
+description: La classe WMI di associazione ComputerSystemProcessor Win32 mette in relazione un \_ computer e un processore in esecuzione in tale sistema.
 ms.assetid: e630ebea-19bf-43c7-a8a0-7acfda3a752b
 ms.tgt_platform: multiple
-title: Classe Win32_ComputerSystemProcessor
+title: Win32_ComputerSystemProcessor classe
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -16,18 +16,18 @@ api_type:
 - DllExport
 api_location:
 - CIMWin32.dll
-ms.openlocfilehash: 2f836d8f5e9053029763c38d2c4f2116987b08fe
-ms.sourcegitcommit: c7add10d695482e1ceb72d62b8a4ebd84ea050f7
+ms.openlocfilehash: bfaf26800a9cb75052699fcd44076f67553a4a36df0c8597b5c9c6e2855d7370
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104126270"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118417723"
 ---
-# <a name="win32_computersystemprocessor-class"></a>Win32 \_ ComputerSystemProcessor (classe)
+# <a name="win32_computersystemprocessor-class"></a>Classe ComputerSystemProcessor Win32 \_
 
-La [classe WMI](/windows/desktop/WmiSdk/retrieving-a-class) dell'associazione **\_ ComputerSystemProcessor Win32** mette in relazione un computer e un processore in esecuzione su tale sistema.
+La classe WMI **di associazione \_ ComputerSystemProcessor Win32** mette in relazione un computer e un processore in esecuzione in tale sistema. [](/windows/desktop/WmiSdk/retrieving-a-class)
 
-La sintassi seguente è semplificata dal codice MOF (Managed Object Format) e include tutte le proprietà ereditate. Le proprietà sono elencate in ordine alfabetico e non in ordine MOF.
+La sintassi seguente è semplificata dal codice MOF (Managed Object Format) e include tutte le proprietà ereditate. Le proprietà sono elencate in ordine alfabetico, non in ordine MOF.
 
 ## <a name="syntax"></a>Sintassi
 
@@ -42,51 +42,51 @@ class Win32_ComputerSystemProcessor : Win32_SystemDevices
 
 ## <a name="members"></a>Members
 
-La classe **Win32 \_ ComputerSystemProcessor** presenta questi tipi di membri:
+La **classe \_ ComputerSystemProcessor Win32** include questi tipi di membri:
 
 -   [Proprietà](#properties)
 
 ### <a name="properties"></a>Proprietà
 
-La classe **Win32 \_ ComputerSystemProcessor** dispone di queste proprietà.
+La **classe \_ ComputerSystemProcessor Win32** ha queste proprietà.
 
 <dl> <dt>
 
 **GroupComponent**
 </dt> <dd> <dl> <dt>
 
-Tipo di dati: **Win32 \_ ComputerSystem**
+Tipo di dati: **\_ ComputerSystem Win32**
 </dt> <dt>
 
 Tipo di accesso: sola lettura
 </dt> <dt>
 
-Qualificatori: [**override**](/windows/desktop/WmiSdk/standard-qualifiers) ("GroupComponent"), [**MappingStrings**](/windows/desktop/WmiSdk/standard-qualifiers) ("WMI \| Win32 \_ ComputerSystem")
+Qualificatori: [**override**](/windows/desktop/WmiSdk/standard-qualifiers) ("GroupComponent"), [**MappingStrings**](/windows/desktop/WmiSdk/standard-qualifiers) ("ComputerSystem \| Win32 \_ WMI")
 </dt> </dl>
 
-**\_ ComputerSystem Win32** che descrive le proprietà del computer in cui è in esecuzione il processore.
+Oggetto **\_ ComputerSystem Win32** che descrive le proprietà del computer in cui è in esecuzione il processore.
 
 </dd> <dt>
 
 **PartComponent**
 </dt> <dd> <dl> <dt>
 
-Tipo di dati **: \_ processore Win32**
+Tipo di dati: **Processore Win32 \_**
 </dt> <dt>
 
 Tipo di accesso: sola lettura
 </dt> <dt>
 
-Qualificatori: [**override**](/windows/desktop/WmiSdk/standard-qualifiers) ("PartComponent"), [**MappingStrings**](/windows/desktop/WmiSdk/standard-qualifiers) (" \| processore Win32 WMI \_ ")
+Qualificatori: [**override**](/windows/desktop/WmiSdk/standard-qualifiers) ("PartComponent"), [**MappingStrings**](/windows/desktop/WmiSdk/standard-qualifiers) ("Processore \| Wmi Win32") \_
 </dt> </dl>
 
-[**\_ Processore Win32**](win32-processor.md) che descrive le proprietà di un processore che esegue il computer.
+Processore [**Win32 \_ che**](win32-processor.md) descrive le proprietà di un processore che esegue il computer.
 
 </dd> </dl>
 
 ## <a name="remarks"></a>Commenti
 
-La classe **Win32 \_ ComputerSystemProcessor** è derivata da [**Win32 \_ SystemDevices**](win32-systemdevices.md).
+La **classe \_ ComputerSystemProcessor Win32** è derivata da [**\_ SystemDevices Win32.**](win32-systemdevices.md)
 
 ## <a name="requirements"></a>Requisiti
 
@@ -97,7 +97,7 @@ La classe **Win32 \_ ComputerSystemProcessor** è derivata da [**Win32 \_ System
 | Client minimo supportato<br/> | Windows Vista<br/>                                                                |
 | Server minimo supportato<br/> | Windows Server 2008<br/>                                                          |
 | Spazio dei nomi<br/>                | \\CIMV2 radice<br/>                                                                  |
-| MOF<br/>                      | <dl> <dt>CIMWin32. mof</dt> </dl> |
+| MOF<br/>                      | <dl> <dt>CIMWin32.mof</dt> </dl> |
 | DLL<br/>                      | <dl> <dt>CIMWin32.dll</dt> </dl> |
 
 
@@ -106,7 +106,7 @@ La classe **Win32 \_ ComputerSystemProcessor** è derivata da [**Win32 \_ System
 
 <dl> <dt>
 
-[**\_SystemDevices Win32**](win32-systemdevices.md)
+[**Sistema \_ Win32Dispositori**](win32-systemdevices.md)
 </dt> <dt>
 
 [Classi del sistema operativo](/previous-versions//aa392727(v=vs.85))

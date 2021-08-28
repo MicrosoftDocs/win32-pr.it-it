@@ -1,7 +1,7 @@
 ---
 description: Determina se una determinata stringa host può essere risolta in un indirizzo IP.
 ms.assetid: 83e52ca7-2ea0-419d-b09d-9301c1982b98
-title: isResolvableEx (funzione)
+title: Funzione isResolvableEx
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -12,14 +12,14 @@ api_name:
 api_type:
 - NA
 api_location: ''
-ms.openlocfilehash: 1172aaed93a9fc6cede5ae5393c5dd430613a466
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 580f5400b59a1142de90843e2be26790aef25a9311f7aa6f732aebeef606c701
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "106317011"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119899171"
 ---
-# <a name="isresolvableex-function"></a>isResolvableEx (funzione)
+# <a name="isresolvableex-function"></a>Funzione isResolvableEx
 
 Determina se una determinata stringa host può essere risolta in un indirizzo IP.
 
@@ -27,7 +27,7 @@ Determina se una determinata stringa host può essere risolta in un indirizzo IP
 
 <dl> <dt>
 
-*host* 
+*Host* 
 </dt> <dd>
 
 Stringa contenente l'host HTTP fornito a FindProxyForUrl.
@@ -54,7 +54,7 @@ isResolvableEx(host);
 
 <dl> <dt>
 
-[Definizioni API helper proxy compatibili con IPv6](ipv6-aware-proxy-helper-api-definitions.md)
+[Definizioni dell'API helper proxy con supporto IPv6](ipv6-aware-proxy-helper-api-definitions.md)
 </dt> <dt>
 
 [Estensioni IPv6 per il formato di file di configurazione automatica dello strumento di navigazione](ipv6-extensions-to-navigator-auto-config-file-format.md)

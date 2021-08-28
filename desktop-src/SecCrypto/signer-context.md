@@ -1,7 +1,7 @@
 ---
 description: Contiene un BLOB firmato.
 ms.assetid: c12d9007-c779-4363-8e28-6387a665a0d6
-title: Struttura SIGNER_CONTEXT
+title: SIGNER_CONTEXT struttura
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -12,19 +12,19 @@ api_name:
 api_type:
 - NA
 api_location: ''
-ms.openlocfilehash: 4ebc7d5380438fc6cd28a43136273387c1919713
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: c1c67733886aa44a9a4f2179b16fee36a95f4462876ebe5d873b5e9b0ff2d2a6
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "106317694"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "117973584"
 ---
-# <a name="signer_context-structure"></a>Struttura del contesto del FIRMATARIo \_
+# <a name="signer_context-structure"></a>Struttura SIGNER \_ CONTEXT
 
-La struttura del **\_ contesto del firmatario** contiene un [*BLOB*](../secgloss/b-gly.md)firmato.
+La **struttura SIGNER \_ CONTEXT** contiene un OGGETTO [*BLOB firmato.*](../secgloss/b-gly.md)
 
 > [!Note]  
-> Questa struttura non è definita in alcun file di intestazione. Per usare questa struttura, è necessario definirla come illustrato in questo argomento.
+> Questa struttura non è definita in alcun file di intestazione. Per usare questa struttura, è necessario definirla manualmente come illustrato in questo argomento.
 
  
 
@@ -48,14 +48,14 @@ typedef struct _SIGNER_CONTEXT {
 **cbSize**
 </dt> <dd>
 
-Dimensione, in byte, della struttura.
+Dimensione, in byte, della struttura .
 
 </dd> <dt>
 
 **cbBlob**
 </dt> <dd>
 
-Dimensione, in byte, del membro **pbBlob** .
+Dimensione, in byte, del **membro pbBlob.**
 
 </dd> <dt>
 
@@ -72,8 +72,8 @@ Puntatore al BLOB firmato.
 
 | Requisito | Valore |
 |-------------------------------------|------------------------------------------------------|
-| Client minimo supportato<br/> | \[Solo app desktop Windows XP\]<br/>          |
-| Server minimo supportato<br/> | \[Solo app desktop Windows Server 2003\]<br/> |
+| Client minimo supportato<br/> | Windows Solo \[ app desktop XP\]<br/>          |
+| Server minimo supportato<br/> | Windows Solo app desktop di Server 2003 \[\]<br/> |
 
 
 
@@ -81,7 +81,7 @@ Puntatore al BLOB firmato.
 
 <dl> <dt>
 
-[**SignerSign**](signersign.md)
+[**Firma del firmatario**](signersign.md)
 </dt> <dt>
 
 [**SignerSignEx**](signersignex.md)

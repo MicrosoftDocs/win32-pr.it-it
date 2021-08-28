@@ -1,9 +1,9 @@
 ---
 title: Elemento HeaderFields (sendEmailType)
-description: Specifica i campi di intestazione e i relativi valori usati nell'intestazione del messaggio di posta elettronica.
+description: Specifica i campi di intestazione e i relativi valori utilizzati nell'intestazione del messaggio di posta elettronica.
 ms.assetid: 6261f32e-3012-4ce7-b407-699374596333
 keywords:
-- Utilità di pianificazione elemento HeaderFields
+- Elemento HeaderFields Utilità di pianificazione
 topic_type:
 - apiref
 api_name:
@@ -13,16 +13,16 @@ api_type:
 ms.topic: reference
 ms.date: 05/31/2018
 api_location: ''
-ms.openlocfilehash: 9d108f1c31b8253046ccdbf09312df4f54c7335d
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: 2af801385c74fa26221556b713faf8db915037ef4cf7439d71a2e2d4004193d8
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "104518190"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120100031"
 ---
 # <a name="headerfields-sendemailtype-element"></a>Elemento HeaderFields (sendEmailType)
 
-Specifica i campi di intestazione e i relativi valori usati nell'intestazione del messaggio di posta elettronica.
+Specifica i campi di intestazione e i relativi valori utilizzati nell'intestazione del messaggio di posta elettronica.
 
 ``` syntax
 <xs:element name="HeaderFields"
@@ -30,7 +30,7 @@ Specifica i campi di intestazione e i relativi valori usati nell'intestazione de
  />
 ```
 
-L'elemento **HeaderFields** è definito dal tipo complesso [**sendEmailType**](taskschedulerschema-sendemailtype-complextype.md) .
+**L'elemento HeaderFields** è definito dal [**tipo complesso sendEmailType.**](taskschedulerschema-sendemailtype-complextype.md)
 
 ## <a name="parent-element"></a>Elemento padre
 
@@ -54,9 +54,9 @@ L'elemento **HeaderFields** è definito dal tipo complesso [**sendEmailType**](t
 
 ## <a name="remarks"></a>Commenti
 
-Per lo sviluppo in C++, vedere [**la proprietà HeaderFields di IEmailAction**](/windows/desktop/api/taskschd/nf-taskschd-iemailaction-get_headerfields).
+Per lo sviluppo in C++, vedere [**Proprietà HeaderFields di IEmailAction.**](/windows/desktop/api/taskschd/nf-taskschd-iemailaction-get_headerfields)
 
-Per lo sviluppo di script, vedere [**EmailAction. HeaderFields**](emailaction-headerfields.md).
+Per lo sviluppo di script, [**vedere EmailAction.HeaderFields.**](emailaction-headerfields.md)
 
 ## <a name="requirements"></a>Requisiti
 
@@ -64,8 +64,8 @@ Per lo sviluppo di script, vedere [**EmailAction. HeaderFields**](emailaction-he
 
 | Requisito | Valore |
 |-------------------------------------|------------------------------------------------------|
-| Client minimo supportato<br/> | \[Solo app desktop di Windows Vista\]<br/>       |
-| Server minimo supportato<br/> | \[Solo app desktop Windows Server 2008\]<br/> |
+| Client minimo supportato<br/> | Windows Solo \[ app desktop Vista\]<br/>       |
+| Server minimo supportato<br/> | Windows Solo app desktop di Server 2008 \[\]<br/> |
 
 
 

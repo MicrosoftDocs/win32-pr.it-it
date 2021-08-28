@@ -3,7 +3,7 @@ title: Elemento SecurityDescriptor (registrationInfoType)
 description: Specifica il descrittore di sicurezza dell'attività.
 ms.assetid: 79821b20-226a-4e7e-8ca1-6c9cf9f1b56e
 keywords:
-- Utilità di pianificazione elemento SecurityDescriptor
+- Elemento SecurityDescriptor Utilità di pianificazione
 topic_type:
 - apiref
 api_name:
@@ -13,12 +13,12 @@ api_type:
 ms.topic: reference
 ms.date: 05/31/2018
 api_location: ''
-ms.openlocfilehash: 20f352e20f1017029558a0de0a99186a978edbf0
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: 83742ebbbc6b8fb653610bf8e20c00094a3c8a3984123765adf6e953935c9011
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "104048036"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120099861"
 ---
 # <a name="securitydescriptor-registrationinfotype-element"></a>Elemento SecurityDescriptor (registrationInfoType)
 
@@ -30,7 +30,7 @@ Specifica il descrittore di sicurezza dell'attività.
  />
 ```
 
-L'elemento **securityDescriptor** è definito dal tipo complesso [**registrationInfoType**](taskschedulerschema-registrationinfotype-complextype.md) .
+**L'elemento SecurityDescriptor** è definito dal tipo complesso [**registrationInfoType.**](taskschedulerschema-registrationinfotype-complextype.md)
 
 ## <a name="parent-element"></a>Elemento padre
 
@@ -38,15 +38,15 @@ L'elemento **securityDescriptor** è definito dal tipo complesso [**registration
 
 | Elemento                                                                           | Derivato da                                                                         | Descrizione                                                                                                                         |
 |-----------------------------------------------------------------------------------|--------------------------------------------------------------------------------------|-------------------------------------------------------------------------------------------------------------------------------------|
-| [**RegistrationInfo**](taskschedulerschema-registrationinfo-tasktype-element.md) | [**registrationInfoType**](taskschedulerschema-registrationinfotype-complextype.md) | Specifica le informazioni amministrative sull'attività, ad esempio l'autore dell'attività e la data di registrazione dell'attività.<br/> |
+| [**RegistrationInfo**](taskschedulerschema-registrationinfo-tasktype-element.md) | [**registrationInfoType**](taskschedulerschema-registrationinfotype-complextype.md) | Specifica informazioni amministrative sull'attività, ad esempio l'autore dell'attività e la data di registrazione dell'attività.<br/> |
 
 
 
 ## <a name="remarks"></a>Commenti
 
-Per lo sviluppo di script, il descrittore di sicurezza di un'attività viene specificato mediante la proprietà [**RegistrationInfo. SecurityDescriptor**](registrationinfo-securitydescriptor.md) .
+Per lo sviluppo di script, il descrittore di sicurezza di un'attività viene specificato tramite la [**proprietà RegistrationInfo.SecurityDescriptor.**](registrationinfo-securitydescriptor.md)
 
-Per lo sviluppo in C++, il descrittore di sicurezza di un'attività viene specificato mediante la proprietà [**IRegistrationInfo:: securityDescriptor**](/windows/desktop/api/taskschd/nf-taskschd-iregistrationinfo-get_securitydescriptor) .
+Per lo sviluppo C++, il descrittore di sicurezza di un'attività viene specificato tramite la [**proprietà IRegistrationInfo::SecurityDescriptor.**](/windows/desktop/api/taskschd/nf-taskschd-iregistrationinfo-get_securitydescriptor)
 
 ## <a name="requirements"></a>Requisiti
 
@@ -54,8 +54,8 @@ Per lo sviluppo in C++, il descrittore di sicurezza di un'attività viene specif
 
 | Requisito | Valore |
 |-------------------------------------|------------------------------------------------------|
-| Client minimo supportato<br/> | \[Solo app desktop di Windows Vista\]<br/>       |
-| Server minimo supportato<br/> | \[Solo app desktop Windows Server 2008\]<br/> |
+| Client minimo supportato<br/> | Windows Solo \[ app desktop di Vista\]<br/>       |
+| Server minimo supportato<br/> | Windows Solo app desktop server 2008 \[\]<br/> |
 
 
 
@@ -63,7 +63,7 @@ Per lo sviluppo in C++, il descrittore di sicurezza di un'attività viene specif
 
 <dl> <dt>
 
-[Elementi dello schema Utilità di pianificazione](task-scheduler-schema-elements.md)
+[Utilità di pianificazione schema](task-scheduler-schema-elements.md)
 </dt> <dt>
 
 [Utilità di pianificazione](task-scheduler-start-page.md)

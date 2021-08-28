@@ -4,26 +4,26 @@
     - name: Introduzione
       href: getting-started.md
       items:
-        - name: Panoramica della piattaforma sensore e posizione di Windows
+        - name: Panoramica del sensore Windows e della piattaforma di posizione
           href: introduction-to-the-sensor-and-location-platform-in-windows.md
-        - name: Privacy e sicurezza nella piattaforma sensore e posizione
+        - name: Privacy e sicurezza in Sensor and Location Platform
           href: privacy-and-security-in-the-sensor-and-location-platform.md
         - name: Requisiti generali per lo sviluppo di applicazioni
           href: general-requirements-for-application-development.md
-        - name: Informazioni sugli esempi e sugli strumenti
+        - name: Informazioni su esempi e strumenti
           href: about-the-samples.md
-    - name: Informazioni sull'API del sensore
+    - name: Informazioni sull'API Sensor
       href: about-the-sensor-api.md
       items:
-        - name: Oggetto di gestione dei sensori
+        - name: Oggetto Sensor Manager
           href: the-sensor-manager.md
         - name: Oggetto Sensor
           href: the-sensor-object.md
-        - name: Oggetto raccolta di sensori
+        - name: Oggetto raccolta Sensor
           href: the-sensor-collection-object.md
-        - name: Oggetto report dati sensori
+        - name: Oggetto report dei dati del sensore
           href: the-sensor-data-report-object.md
-        - name: Informazioni sugli eventi dell'API del sensore
+        - name: Informazioni sugli eventi dell'API Sensor
           href: about-sensor-events.md
         - name: Informazioni sulle costanti del sensore
           href: about-sensor-constants.md
@@ -31,39 +31,39 @@
           href: managing-user-permissions.md
         - name: Informazioni sui sensori logici
           href: about-logical-sensors.md
-    - name: Guida alla programmazione dell'API del sensore
+    - name: Guida alla programmazione dell'API Sensor
       href: sensor-api-programming-guide.md
       items:
-        - name: Recupero di un oggetto Sensor
+        - name: Recupero di un oggetto sensore
           href: retrieving-a-sensor.md
         - name: Richiesta di autorizzazioni utente
           href: requesting-user-permissions.md
         - name: Recupero e impostazione delle proprietà dei sensori
           href: setting-and-retrieving-sensor-properties.md
-        - name: Verifica dei campi dati dei sensori supportati
+        - name: Controllo dei campi dati dei sensori supportati
           href: checking-for-supported-sensor-data-fields.md
-        - name: Uso degli eventi dell'API del sensore
+        - name: Uso degli eventi dell'API Sensor
           href: using-sensor-api-events.md
-        - name: Recupero dei valori dei dati del sensore
+        - name: Recupero dei valori dei dati dei sensori
           href: retrieving-sensor-data-fields.md
         - name: Recupero di tipi di vettore
           href: retrieving-vector-types.md
         - name: Uso di sensori logici
           href: using-logical-sensors.md
-        - name: Creazione di interfacce utente Light-Aware
+        - name: Creazione Light-Aware interfacce utente
           href: creating-light-aware-user-interfaces.md
           items:
-            - name: Nozioni fondamentali sulle interfacce utente Light-Aware
+            - name: Nozioni fondamentali Light-Aware utente
               href: fundamentals-of-light-aware-user-interfaces.md
-            - name: Esempi di interfacce utente Light-Aware
+            - name: Esempi di Light-Aware utente
               href: examples-of-light-aware-user-interfaces.md
             - name: Ottimizzazione dell'esperienza utente
               href: optimizing-the-user-experience.md
-            - name: Informazioni e interpretazione dei valori Lux
+            - name: Comprensione e interpretazione dei valori di Unis
               href: understanding-and-interpreting-lux-values.md
-            - name: Uso dei dati del sensore chiaro
+            - name: Uso dei dati dei sensori di luce
               href: handling-data-from-multiple-light-sensors.md
-    - name: Informazioni di riferimento sulla programmazione dell'API del sensore
+    - name: Informazioni di riferimento sulla programmazione dell'API Sensor
       href: sensor-api-programming-reference.md
       items:
         - name: Interfacce COM
@@ -79,18 +79,18 @@
             - name: ILogicalSensorManager
               href: /previous-versions/windows/desktop/legacy/dd318934(v=vs.85)
               items:
-                - name: Metodo Connect
+                - name: Connessione Metodo
                   href: /previous-versions/windows/desktop/legacy/dd374029(v=vs.85)
-                - name: Disconnetti (metodo)
+                - name: Metodo Disconnect
                   href: /previous-versions/windows/desktop/legacy/dd374030(v=vs.85)
-                - name: Uninstall (metodo)
+                - name: Metodo Uninstall
                   href: /previous-versions/windows/desktop/legacy/dd374031(v=vs.85)
             - name: ISensor
               href: /windows/desktop/api/sensorsapi/nn-sensorsapi-isensor
               items:
-                - name: GetCategory (metodo)
+                - name: Metodo GetCategory
                   href: /windows/desktop/api/sensorsapi/nf-sensorsapi-isensor-getcategory
-                - name: GetData (metodo)
+                - name: Metodo GetData
                   href: /windows/desktop/api/sensorsapi/nf-sensorsapi-isensor-getdata
                 - name: Metodo GetEventInterest
                   href: /windows/desktop/api/sensorsapi/nf-sensorsapi-isensor-geteventinterest
@@ -112,7 +112,7 @@
                   href: /windows/desktop/api/sensorsapi/nf-sensorsapi-isensor-seteventinterest
                 - name: Metodo SetEventSink
                   href: /windows/desktop/api/sensorsapi/nf-sensorsapi-isensor-seteventsink
-                - name: Metodo seproperties
+                - name: Metodo SetProperties
                   href: /windows/desktop/api/sensorsapi/nf-sensorsapi-isensor-setproperties
                 - name: Metodo SupportsDataField
                   href: /windows/desktop/api/sensorsapi/nf-sensorsapi-isensor-supportsdatafield
@@ -129,7 +129,7 @@
                   href: /windows/desktop/api/sensorsapi/nf-sensorsapi-isensorcollection-getat
                 - name: Metodo GetCount
                   href: /windows/desktop/api/sensorsapi/nf-sensorsapi-isensorcollection-getcount
-                - name: Remove (metodo)
+                - name: Metodo Remove
                   href: /windows/desktop/api/sensorsapi/nf-sensorsapi-isensorcollection-remove
                 - name: Metodo RemoveByID
                   href: /windows/desktop/api/sensorsapi/nf-sensorsapi-isensorcollection-removebyid
@@ -140,7 +140,7 @@
                   href: /windows/desktop/api/sensorsapi/nf-sensorsapi-isensordatareport-getsensorvalue
                 - name: Metodo GetSensorValues
                   href: /windows/desktop/api/sensorsapi/nf-sensorsapi-isensordatareport-getsensorvalues
-                - name: GetTimestamp (metodo)
+                - name: Metodo GetTimestamp
                   href: /windows/desktop/api/sensorsapi/nf-sensorsapi-isensordatareport-gettimestamp
             - name: ISensorEvents
               href: /windows/desktop/api/sensorsapi/nn-sensorsapi-isensorevents
@@ -174,7 +174,7 @@
         - name: Tipi di enumerazione
           href: enumeration-types.md
           items:
-            - name: MagnetometerAccuracy
+            - name: MagnetometroAccuracy
               href: /windows/desktop/api/sensorsapi/ne-sensorsapi-magnetometeraccuracy
             - name: SensorConnectionType
               href: /windows/desktop/api/sensorsapi/ne-sensorsapi-sensorconnectiontype
@@ -183,7 +183,7 @@
         - name: Costanti
           href: constants.md
           items:
-            - name: 'Categorie di sensori, tipi e campi dati'
+            - name: 'Categorie, tipi e campi dati dei sensori'
               href: sensor-categories--types--and-datafields.md
               items:
                 - name: SENSOR_CATEGORY_ALL
@@ -214,5 +214,5 @@
               href: sensor-properties.md
             - name: Costanti evento
               href: event-constants.md
-    - name: Glossario dell'API del sensore
+    - name: Glossario dell'API Sensor
       href: sensors-glossary.md

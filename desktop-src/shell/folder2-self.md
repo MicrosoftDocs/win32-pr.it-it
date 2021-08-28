@@ -1,7 +1,7 @@
 ---
 description: Contiene l'oggetto FolderItem della cartella.
 ms.assetid: 0964505d-4138-4444-91d4-46c707c45688
-title: Proprietà Cartella2. self (shldisp. h)
+title: Proprietà Folder2.Self (Shldisp.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -13,16 +13,16 @@ api_type:
 - COM
 api_location:
 - Shell32.dll
-ms.openlocfilehash: f49666096f35f9871f8a3b3c141d4bc169dea0c7
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: a3f363300ae38817d39a9a6fb253f8d4a7bf34f4357b47e7e961b5cee5d5bb12
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104225796"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119093097"
 ---
-# <a name="folder2self-property"></a>Proprietà Cartella2. self
+# <a name="folder2self-property"></a>Folder2.Self - proprietà
 
-Contiene l'oggetto [**FolderItem**](folderitem.md) della cartella.
+Contiene l'oggetto [**FolderItem della**](folderitem.md) cartella.
 
 Questa proprietà è di sola lettura.
 
@@ -37,13 +37,13 @@ Self = Folder2.Self
 
 ## <a name="property-value"></a>Valore proprietà
 
-Oggetto che restituisce l'oggetto [**FolderItem**](folderitem.md) della cartella.
+Oggetto che restituisce l'oggetto [**FolderItem della**](folderitem.md) cartella.
 
 ## <a name="examples"></a>Esempio
 
-Nell'esempio seguente viene usato **auto** per recuperare [**FolderItem**](folderitem.md) per la cartella C: \\ Windows. L'utilizzo corretto viene visualizzato per JScript, VBScript e Visual Basic.
+Nell'esempio seguente **viene utilizzato Self** per recuperare [**FolderItem**](folderitem.md) per la cartella C: \\ Windows cartella . Viene visualizzato un utilizzo appropriato per JScript, VBScript e Visual Basic.
 
-JScript
+JScript:
 
 
 ```JScript
@@ -70,7 +70,7 @@ JScript
 
 
 
-VBScript
+Vbscript:
 
 
 ```VB
@@ -136,11 +136,11 @@ End Sub
 
 | Requisito | Valore |
 |-------------------------------------|---------------------------------------------------------------------------------------------------------------|
-| Client minimo supportato<br/> | Windows 2000 Professional, \[ solo app desktop Windows XP\]<br/>                                        |
-| Server minimo supportato<br/> | \[Solo app desktop Windows Server 2003\]<br/>                                                          |
-| Intestazione<br/>                   | <dl> <dt>Shldisp. h</dt> </dl>                          |
-| IDL<br/>                      | <dl> <dt>Shldisp. idl</dt> </dl>                        |
-| DLL<br/>                      | <dl> <dt>Shell32.dll (versione 5,0 o successiva)</dt> </dl> |
+| Client minimo supportato<br/> | Windows 2000 Professional, Windows solo app desktop XP \[\]<br/>                                        |
+| Server minimo supportato<br/> | Windows Solo app desktop server 2003 \[\]<br/>                                                          |
+| Intestazione<br/>                   | <dl> <dt>Shldisp.h</dt> </dl>                          |
+| Idl<br/>                      | <dl> <dt>Shldisp.idl</dt> </dl>                        |
+| DLL<br/>                      | <dl> <dt>Shell32.dll (versione 5.0 o successiva)</dt> </dl> |
 
 
 

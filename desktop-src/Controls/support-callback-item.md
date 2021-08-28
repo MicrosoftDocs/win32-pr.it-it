@@ -1,37 +1,37 @@
 ---
 title: Come supportare gli elementi di callback
-description: In questo argomento viene illustrato come fornire supporto per gli elementi di callback.
+description: Questo argomento illustra come fornire supporto per gli elementi di callback.
 ms.assetid: BD32666F-9445-4871-AE21-5DC9F5FC9C1B
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 056f64c086aeda94ccf928d93ae2c5db5e2187a4
-ms.sourcegitcommit: a716ca2a6a22a400f02c6b31699cf4da83ee3619
+ms.openlocfilehash: df078b8be8cd02f56592a74de4242b515974a740df01d3cd4bd36074d5f8e022
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/04/2020
-ms.locfileid: "103963570"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119968221"
 ---
 # <a name="how-to-support-callback-items"></a>Come supportare gli elementi di callback
 
-In questo argomento viene illustrato come fornire supporto per gli elementi di callback.
+Questo argomento illustra come fornire supporto per gli elementi di callback.
 
 ## <a name="what-you-need-to-know"></a>Informazioni importanti
 
 ### <a name="technologies"></a>Tecnologie
 
--   [Controlli Windows](window-controls.md)
+-   [Windows Controlli](window-controls.md)
 
 ### <a name="prerequisites"></a>Prerequisiti
 
 -   C/C++
--   Programmazione dell'interfaccia utente di Windows
+-   Windows Interfaccia utente programmazione
 
 ## <a name="instructions"></a>Istruzioni
 
 
-Se l'applicazione userà gli elementi di callback in un controllo ComboBoxEx, è necessario prepararsi a gestire il codice di notifica [ \_ GETDISPINFO CBEN](cben-getdispinfo.md) . Un controllo ComboBoxEx Invia questa notifica ogni volta che è necessario che il proprietario fornisca informazioni specifiche sull'elemento. Per altre informazioni sugli elementi di callback, vedere [elementi callback](comboboxex-controls.md).
+Se l'applicazione userà elementi di callback in un controllo ComboBoxEx, deve essere preparata per gestire il codice di notifica [ \_ GETDISPINFO CBEN.](cben-getdispinfo.md) Un controllo ComboBoxEx invia questa notifica ogni volta che il proprietario deve fornire informazioni specifiche sull'elemento. Per altre informazioni sugli elementi di callback, vedere [Elementi di callback](comboboxex-controls.md).
 
-La funzione definita dall'applicazione seguente elabora [CBEN \_ GETDISPINFO](cben-getdispinfo.md) fornendo attributi per un determinato elemento. Si noti che imposta il membro **mask** della struttura [**COMBOBOXEXITEM**](/windows/win32/api/commctrl/ns-commctrl-comboboxexitema) in ingresso su CBEIF \_ di \_ elemento. Impostando **mask** su questo valore, il controllo mantiene le informazioni sull'elemento in modo che non sia necessario richiedere nuovamente le informazioni.
+La funzione definita dall'applicazione seguente elabora [CBEN \_ GETDISPINFO](cben-getdispinfo.md) fornendo attributi per un determinato elemento. Si noti che imposta il **membro mask** della struttura [**COMBOBOXEXITEM**](/windows/win32/api/commctrl/ns-commctrl-comboboxexitema) in ingresso su CBEIF \_ DI \_ SETITEM. Se **si imposta mask** su questo valore, il controllo mantiene le informazioni sull'elemento in modo che non sia necessario richiedere nuovamente le informazioni.
 
 ## <a name="complete-example"></a>Esempio completo
 
@@ -70,10 +70,10 @@ void WINAPI DoItemCallback(PNMCOMBOBOXEX pNMCBex)
 [Informazioni sui controlli ComboBoxEx](comboboxex-controls.md)
 </dt> <dt>
 
-[Riferimento al controllo ComboBoxEx](bumper-comboboxex-comboboxex-control-reference.md)
+[Informazioni di riferimento sul controllo ComboBoxEx](bumper-comboboxex-comboboxex-control-reference.md)
 </dt> <dt>
 
-[Uso di controlli ComboBoxEx](/windows/desktop/Controls/using-comboboxex)
+[Uso dei controlli ComboBoxEx](/windows/desktop/Controls/using-comboboxex)
 </dt> <dt>
 
 [ComboBoxEx](comboboxex-control-reference.md)

@@ -15,7 +15,7 @@ ms.locfileid: "118067551"
 
 La [**classe Graphics**](/windows/desktop/api/gdiplusgraphics/nl-gdiplusgraphics-graphics) fornisce diversi metodi **DrawImage,** alcuni dei quali hanno parametri del rettangolo di origine e di destinazione che è possibile usare per ritagliare e ridimensionare le immagini.
 
-Nell'esempio seguente viene costruito un [**oggetto Image**](/windows/desktop/api/gdiplusheaders/nl-gdiplusheaders-image) dal file Apple.gif. Il codice disegna l'intera immagine apple nelle dimensioni originali. Il codice chiama quindi il **metodo DrawImage** di un [**oggetto Graphics**](/windows/desktop/api/gdiplusgraphics/nl-gdiplusgraphics-graphics) per disegnare una parte dell'immagine apple in un rettangolo di destinazione più grande dell'immagine apple originale.
+L'esempio seguente costruisce un [**oggetto Image**](/windows/desktop/api/gdiplusheaders/nl-gdiplusheaders-image) dal file Apple.gif. Il codice disegna l'intera immagine apple nelle dimensioni originali. Il codice chiama quindi il **metodo DrawImage** di un [**oggetto Graphics**](/windows/desktop/api/gdiplusgraphics/nl-gdiplusgraphics-graphics) per disegnare una parte dell'immagine apple in un rettangolo di destinazione più grande dell'immagine apple originale.
 
 Il **metodo DrawImage** determina quale parte della apple disegnare esaminando il rettangolo di origine, specificato dal terzo, quarto, quinto e sesto argomento. In questo caso, la apple viene ritagliata al 75% della larghezza e al 75% dell'altezza.
 

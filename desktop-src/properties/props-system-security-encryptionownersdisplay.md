@@ -4,12 +4,12 @@ ms.assetid: fa47b242-0a5c-437e-9d25-3472bc70ca69
 title: System.Security.EncryptionOwnersDisplay
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 081f2004cdd3617ee6ca4f0e8a940f397966a49f
-ms.sourcegitcommit: 51ef825fb48f15e1aa30e8795988f10dc2b2155c
+ms.openlocfilehash: 3e5137f351f4aea358cbf853bc0dda5ed38b679b9b0d89d1e7c63232df8110fb
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/14/2021
-ms.locfileid: "112068477"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120058411"
 ---
 # <a name="systemsecurityencryptionownersdisplay"></a>System.Security.EncryptionOwnersDisplay
 

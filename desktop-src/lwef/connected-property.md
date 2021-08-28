@@ -4,12 +4,12 @@ description: Proprietà Connected
 ms.assetid: 61b7f550-d8d6-4719-a0d4-0bf3a8cf096c
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 6af3a44e97236060733adc55ec6e44eddd0b1d8879250b2a28b54c0bca384cac
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: d19326f7770bbd4a42f6ff66a4517cd6151f3c54
+ms.sourcegitcommit: 61a4c522182aa1cacbf5669683d9570a3bf043b2
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119726092"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "122884925"
 ---
 # <a name="connected-property"></a>Proprietà Connected
 
@@ -43,7 +43,7 @@ Restituisce o imposta un valore che indica se il controllo corrente è connesso 
 
 ## <a name="remarks"></a>Commenti
 
-In molte situazioni, specificando il controllo viene creata automaticamente una connessione con il server Microsoft Agent. Ad esempio, se si specifica il CLSID del controllo Microsoft Agent nel tag in una pagina Web, viene aperta automaticamente una connessione server e la chiusura della pagina chiude <OBJECT> la connessione. Analogamente, per Visual Basic o altre lingue che consentono di rilasciare un controllo in un form, l'esecuzione del programma apre automaticamente una connessione e l'uscita dal programma chiude la connessione. Se il server non è attualmente in esecuzione, viene avviato automaticamente.
+In molte situazioni, specificando il controllo viene creata automaticamente una connessione con il server Microsoft Agent. Ad esempio, se si specifica il CLSID del controllo Microsoft Agent nel tag OBJECT in una pagina Web, viene aperta automaticamente una connessione server e la chiusura della pagina chiude &lt; &gt; la connessione. Analogamente, per Visual Basic o altre lingue che consentono di rilasciare un controllo in un form, l'esecuzione del programma apre automaticamente una connessione e l'uscita dal programma chiude la connessione. Se il server non è attualmente in esecuzione, viene avviato automaticamente.
 
 Tuttavia, se si vuole creare un controllo Agent in fase di esecuzione, potrebbe anche essere necessario aprire in modo esplicito una nuova connessione al server usando la **proprietà Connected.** Ad esempio, in Visual Basic è possibile creare un oggetto ActiveX in fase di esecuzione usando l'istruzione Set con la parola chiave **New** (o la funzione CreateObject). Anche se questo crea l'oggetto , potrebbe non creare la connessione al server. È possibile usare la **proprietà Connected** prima di qualsiasi codice che chiama l'interfaccia di programmazione di Microsoft Agent, come illustrato nell'esempio seguente:
 
@@ -120,7 +120,7 @@ La creazione di un controllo con questa tecnica non espone gli eventi del contro
 
 
 > [!Note]  
-> Non è possibile chiudere la connessione al server rilasciando i riferimenti in cui è stato aggiunto il componente. Ad esempio, non è possibile chiudere la connessione al server nelle pagine Web in cui si usa il tag per dichiarare il controllo o in un'applicazione Visual Basic in cui si rilascia il controllo <OBJECT> in un form. Mentre il rilascio di tutti i riferimenti a Agent ridurrà l'working set di Agent, la connessione rimane finché non si passa alla pagina successiva o non si esce dall'applicazione.
+> Non è possibile chiudere la connessione al server rilasciando i riferimenti in cui è stato aggiunto il componente. Ad esempio, non è possibile chiudere la connessione al server nelle pagine Web in cui si usa il tag OBJECT per dichiarare il controllo o in un'applicazione Visual Basic in cui si rilascia il controllo in &lt; &gt; un form. Mentre il rilascio di tutti i riferimenti all'agente ridurrà la working set di Agent, la connessione rimane finché non si passa alla pagina successiva o si esce dall'applicazione.
 
  
 

@@ -1,7 +1,7 @@
 ---
-description: Caratteristiche del materiale PRT (pre-Computed Radiance Transfer) di sfericità (SH).
+description: Caratteristiche del materiale Spherical armoniche (SH) precomputed radiance transfer (PRT).
 ms.assetid: 2be49f96-ac61-46aa-8d56-d8eee8dca9ed
-title: Struttura D3DXSHMATERIAL (D3dx9mesh. h)
+title: Struttura D3DXSHMATERIAL (D3dx9mesh.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -13,16 +13,16 @@ api_type:
 - HeaderDef
 api_location:
 - d3dx9mesh.h
-ms.openlocfilehash: 0600cc0c1ebe086f0d6679182125350b1ee8ca98
-ms.sourcegitcommit: 14010c34b35fa268046c7683f021f86de08ddd0a
+ms.openlocfilehash: 4bfbf00c7d8654ad851ca8c691c9f028c09648219dbe76bb4ef07fe3b830e4d8
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/15/2021
-ms.locfileid: "106322592"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119849721"
 ---
 # <a name="d3dxshmaterial-structure"></a>Struttura D3DXSHMATERIAL
 
-Caratteristiche del materiale PRT (pre-Computed Radiance Transfer) di sfericità (SH).
+Caratteristiche del materiale Spherical armoniche (SH) precomputed radiance transfer (PRT).
 
 ## <a name="syntax"></a>Sintassi
 
@@ -51,36 +51,36 @@ Tipo: **[ **D3DCOLORVALUE**](d3dcolorvalue.md)**
 
 </dd> <dd>
 
-Diffonde l'albedo della superficie. Questo valore viene ignorato se l'oggetto è un mirror.
+Albedo diffuso della superficie. Questo valore viene ignorato se l'oggetto è un mirror.
 
 </dd> <dt>
 
 **bMirror**
 </dt> <dd>
 
-Tipo: **[ **bool**](../winprog/windows-data-types.md)**
+Tipo: **[ **BOOL**](../winprog/windows-data-types.md)**
 
 </dd> <dd>
 
-Deve essere impostato su **false**.
+Deve essere impostato su **FALSE.**
 
 </dd> <dt>
 
 **bSubSurf**
 </dt> <dd>
 
-Tipo: **[ **bool**](../winprog/windows-data-types.md)**
+Tipo: **[ **BOOL**](../winprog/windows-data-types.md)**
 
 </dd> <dd>
 
-Impostare su **true** per abilitare la dispersione della sottosuperficie; qualsiasi oggetto che esegue la dispersione della sottosuperficie non può essere un mirror.
+Impostare su **TRUE per** abilitare la dispersione sottosurface; qualsiasi oggetto che esegue la dispersione sottosurface non può essere un mirror.
 
 </dd> <dt>
 
 **RelativeIndexOfRefraction**
 </dt> <dd>
 
-Tipo: **[ **float**](../winprog/windows-data-types.md)**
+Tipo: **[ **FLOAT**](../winprog/windows-data-types.md)**
 
 </dd> <dd>
 
@@ -95,28 +95,28 @@ Tipo: **[ **D3DCOLORVALUE**](d3dcolorvalue.md)**
 
 </dd> <dd>
 
-Il coefficiente di assorbimento è un parametro dell'equazione di rendering del volume utilizzato per modellare la propagazione leggera in un supporto partecipante.
+Il coefficiente di assorbimento è un parametro dell'equazione di rendering del volume usata per modellare la propagazione della luce in un supporto partecipante.
 
 </dd> <dt>
 
-**ReducedScattering**
+**Riduzione della scalabilità**
 </dt> <dd>
 
 Tipo: **[ **D3DCOLORVALUE**](d3dcolorvalue.md)**
 
 </dd> <dd>
 
-Il coefficiente di dispersione ridotto è un parametro per l'equazione di rendering del volume utilizzato per modellare la propagazione leggera in un supporto partecipante.
+Il coefficiente di dispersione ridotto è un parametro dell'equazione di rendering del volume usata per modellare la propagazione della luce in un supporto partecipante.
 
 </dd> </dl>
 
 ## <a name="remarks"></a>Commenti
 
-Le scene non spettrali usano il canale rosso dai materiali anziché il valore della luminanza.
+Le scene non spettrale usano il canale rosso dei materiali anziché il valore di luminance.
 
-Per ulteriori informazioni su PRT, vedere:
+Per altre informazioni su PRT, vedere:
 
--   Procedura di Jensen, Henrik Wann, et al. Siggraph: modello pratico per il trasporto leggero della sottosuperficie, 2001.
+-   Jensen, Enrichk Wann, et al. Siggraph Proceedings: A Practical Model for Subsurface Light Transport, 2001.
 
 ## <a name="requirements"></a>Requisiti
 
@@ -124,7 +124,7 @@ Per ulteriori informazioni su PRT, vedere:
 
 | Requisito | Valore |
 |-------------------|----------------------------------------------------------------------------------------|
-| Intestazione<br/> | <dl> <dt>D3dx9mesh. h</dt> </dl> |
+| Intestazione<br/> | <dl> <dt>D3dx9mesh.h</dt> </dl> |
 
 
 

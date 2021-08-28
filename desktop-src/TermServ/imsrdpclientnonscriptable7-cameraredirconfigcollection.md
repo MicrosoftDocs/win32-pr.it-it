@@ -1,11 +1,11 @@
 ---
-title: Proprietà CameraRedirConfigCollection di IMsRdpClientNonScriptable7
+title: Proprietà IMsRdpClientNonScriptable7 CameraRedirConfigCollection
 description: Ottiene la raccolta di fotocamere (e le configurazioni associate) disponibili per il reindirizzamento.
 ms.tgt_platform: multiple
 keywords:
-- Servizi Desktop remoto proprietà CameraRedirConfigCollection
-- Servizi Desktop remoto proprietà CameraRedirConfigCollection, interfaccia IMsRdpClientNonScriptable7
-- Interfaccia IMsRdpClientNonScriptable7 Servizi Desktop remoto, proprietà CameraRedirConfigCollection
+- Proprietà CameraRedirConfigCollection Servizi Desktop remoto
+- Proprietà CameraRedirConfigCollection Servizi Desktop remoto, interfaccia IMsRdpClientNonScriptable7
+- Interfaccia IMsRdpClientNonScriptable7 Servizi Desktop remoto , proprietà CameraRedirConfigCollection
 topic_type:
 - apiref
 api_name:
@@ -17,14 +17,14 @@ api_type:
 - COM
 ms.topic: reference
 ms.date: 12/16/2020
-ms.openlocfilehash: 817d3d73b4abbf8aa8b4126fd99ed7d11c3fff51
-ms.sourcegitcommit: 04e801237156e90b48111d60bddf437f87f5cdfe
+ms.openlocfilehash: ea90c06403c1ba44e129867f2d739990a37ee178ebe5d0b8f4afd684b17eb09e
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/19/2020
-ms.locfileid: "104341396"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120033171"
 ---
-# <a name="imsrdpclientnonscriptable7cameraredirconfigcollection-property"></a>Proprietà IMsRdpClientNonScriptable7:: CameraRedirConfigCollection
+# <a name="imsrdpclientnonscriptable7cameraredirconfigcollection-property"></a>Proprietà IMsRdpClientNonScriptable7::CameraRedirConfigCollection
 
 Ottiene la raccolta di fotocamere (e le configurazioni associate) disponibili per il reindirizzamento.
 
@@ -50,7 +50,7 @@ Oggetto [IMsRdpCameraRedirConfigCollection](imsrdpcameraredirconfigcollection.md
 | Client minimo supportato| Windows 10, versione 1803 (build 17134)      |
 | Libreria dei tipi            | MsTscAx.dll                        |
 | DLL                  | MsTscAx.dll     |
-| IID                      | IID \_ IMsRdpClientNonScriptable7 è definito come 71B4A60A-FE21-46D8-A39B-8E32BA0C5ECC          |
+| IID                      | IMsRdpClientNonScriptable7 IID è definito come \_ 71B4A60A-FE21-46D8-A39B-8E32BA0C5ECC          |
 
 ## <a name="see-also"></a>Vedi anche
 

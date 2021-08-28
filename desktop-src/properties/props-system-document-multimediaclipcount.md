@@ -4,12 +4,12 @@ ms.assetid: bc9af024-19b0-4bd2-827a-a4ac9c05dc05
 title: System.Document. MultimediaClipCount
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: b6b32cd31d9a85df140809cb246070df29b3e29e
-ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
+ms.openlocfilehash: d5f15c11c5dc733c977ec01d22e201f03bb2894c9aba5271fd8be8be9a5163c1
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/28/2021
-ms.locfileid: "108101079"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119845191"
 ---
 # <a name="systemdocumentmultimediaclipcount"></a>System.Document. MultimediaClipCount
 
@@ -37,7 +37,7 @@ I valori PKEY sono definiti in Propkey.h.
 
 <dl> <dt>
 
-[proprietàDescrizione](./propdesc-schema-propertydescription.md)
+[propertyDescription](./propdesc-schema-propertydescription.md)
 </dt> <dt>
 
 [searchInfo](./propdesc-schema-searchinfo.md)
@@ -67,7 +67,7 @@ I valori PKEY sono definiti in Propkey.h.
 [enumeratedList](./propdesc-schema-enumeratedlist.md)
 </dt> <dt>
 
-[DrawControl](./propdesc-schema-drawcontrol.md)
+[drawControl](./propdesc-schema-drawcontrol.md)
 </dt> <dt>
 
 [editControl](./propdesc-schema-editcontrol.md)

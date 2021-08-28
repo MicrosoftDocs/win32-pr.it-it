@@ -4,7 +4,7 @@ description: Tipo di servizio fornito da MSMQ installato nel computer.
 ms.assetid: 7366d400-5a8f-4aba-ab8c-22dee2f07e9f
 ms.tgt_platform: multiple
 keywords:
-- Schema di AD dell'attributo MSMQ-Service-Type
+- Schema AD dell'attributo MSMQ-Service-Type
 - Schema AD dell'attributo mSMQServiceType
 topic_type:
 - apiref
@@ -14,12 +14,12 @@ api_type:
 - Schema
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: e20b19ac03f98e67022a509cd7ce10ead3959cf0
-ms.sourcegitcommit: b77ace27b0432e7cd3863191b11926be032fbe2f
+ms.openlocfilehash: fc926ba290637b0b045c399a5bc93010e21f41990b0d2e9e14fb591d8e821490
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/14/2020
-ms.locfileid: "103875654"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119582301"
 ---
 # <a name="msmq-service-type-attribute"></a>Attributo MSMQ-Service-Type
 
@@ -30,12 +30,12 @@ Tipo di servizio fornito da MSMQ installato nel computer.
 | Voce | Valore |
 |-------------------|--------------------------------------|
 | CN                | Tipo di servizio MSMQ                    |
-| LDAP-Display-Name | mSMQServiceType                      |
+| Ldap-Display-Name | mSMQServiceType                      |
 | Dimensione              | \-                                   |
-| Privilegio aggiornamento  | \-                                   |
+| Aggiorna privilegio  | \-                                   |
 | Frequenza di aggiornamento  | \-                                   |
 | Attribute-Id      | 1.2.840.113556.1.4.930               |
-| System-ID-GUID    | 9a0dc32d-c100-11d1-bbc5-0080c76670c0 |
+| System-Id-Guid    | 9a0dc32d-c100-11d1-nette5-0080c76670c0 |
 | Sintassi            | [**Enumerazione**](s-enumeration.md) |
 
 
@@ -58,15 +58,15 @@ Tipo di servizio fornito da MSMQ installato nel computer.
 | ID collegamento                | \-                                                           |
 | MAPI-Id                | \-                                                           |
 | System-Only            | Falso                                                        |
-| È a valore singolo       | Vero                                                         |
+| Is-Single-Valued       | Vero                                                         |
 | Indicizzato             | Falso                                                        |
 | Nel catalogo globale      | Vero                                                         |
-| NT-Security-descrittore | O:BAG: NON VALIDO: S:                                                 |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                                 |
 | Range-Lower            | \-                                                           |
 | Range-Upper            | \-                                                           |
 | Search-Flags           | 0x00000000                                                   |
 | System-Flags           | 0x00000010                                                   |
-| Classi utilizzate in        | [**Configurazione MSMQ**](c-msmqconfiguration.md)<br/> |
+| Classi usate in        | [**Configurazione MSMQ**](c-msmqconfiguration.md)<br/> |
 
 
 
@@ -79,15 +79,15 @@ Tipo di servizio fornito da MSMQ installato nel computer.
 | ID collegamento                | \-                                                           |
 | MAPI-Id                | \-                                                           |
 | System-Only            | Falso                                                        |
-| È a valore singolo       | Vero                                                         |
+| Is-Single-Valued       | Vero                                                         |
 | Indicizzato             | Falso                                                        |
 | Nel catalogo globale      | Vero                                                         |
-| NT-Security-descrittore | O:BAG: NON VALIDO: S:                                                 |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                                 |
 | Range-Lower            | \-                                                           |
 | Range-Upper            | \-                                                           |
 | Search-Flags           | 0x00000000                                                   |
 | System-Flags           | 0x00000010                                                   |
-| Classi utilizzate in        | [**Configurazione MSMQ**](c-msmqconfiguration.md)<br/> |
+| Classi usate in        | [**Configurazione MSMQ**](c-msmqconfiguration.md)<br/> |
 
 
 
@@ -100,15 +100,15 @@ Tipo di servizio fornito da MSMQ installato nel computer.
 | ID collegamento                | \-                                                           |
 | MAPI-Id                | \-                                                           |
 | System-Only            | Falso                                                        |
-| È a valore singolo       | Vero                                                         |
+| Is-Single-Valued       | Vero                                                         |
 | Indicizzato             | Falso                                                        |
 | Nel catalogo globale      | Vero                                                         |
-| NT-Security-descrittore | O:BAG: NON VALIDO: S:                                                 |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                                 |
 | Range-Lower            | \-                                                           |
 | Range-Upper            | \-                                                           |
 | Search-Flags           | 0x00000000                                                   |
 | System-Flags           | 0x00000010                                                   |
-| Classi utilizzate in        | [**Configurazione MSMQ**](c-msmqconfiguration.md)<br/> |
+| Classi usate in        | [**Configurazione MSMQ**](c-msmqconfiguration.md)<br/> |
 
 
 
@@ -121,15 +121,15 @@ Tipo di servizio fornito da MSMQ installato nel computer.
 | ID collegamento                | \-                                                           |
 | MAPI-Id                | \-                                                           |
 | System-Only            | Falso                                                        |
-| È a valore singolo       | Vero                                                         |
+| Is-Single-Valued       | Vero                                                         |
 | Indicizzato             | Falso                                                        |
 | Nel catalogo globale      | Vero                                                         |
-| NT-Security-descrittore | O:BAG: NON VALIDO: S:                                                 |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                                 |
 | Range-Lower            | \-                                                           |
 | Range-Upper            | \-                                                           |
 | Search-Flags           | 0x00000000                                                   |
 | System-Flags           | 0x00000010                                                   |
-| Classi utilizzate in        | [**Configurazione MSMQ**](c-msmqconfiguration.md)<br/> |
+| Classi usate in        | [**Configurazione di MSMQ**](c-msmqconfiguration.md)<br/> |
 
 
 
@@ -142,15 +142,15 @@ Tipo di servizio fornito da MSMQ installato nel computer.
 | ID collegamento                | \-                                                           |
 | MAPI-Id                | \-                                                           |
 | System-Only            | Falso                                                        |
-| È a valore singolo       | Vero                                                         |
+| Is-Single-Valued       | Vero                                                         |
 | Indicizzato             | Falso                                                        |
 | Nel catalogo globale      | Vero                                                         |
-| NT-Security-descrittore | O:BAG: NON VALIDO: S:                                                 |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                                 |
 | Range-Lower            | \-                                                           |
 | Range-Upper            | \-                                                           |
 | Search-Flags           | 0x00000000                                                   |
 | System-Flags           | 0x00000010                                                   |
-| Classi utilizzate in        | [**Configurazione MSMQ**](c-msmqconfiguration.md)<br/> |
+| Classi usate in        | [**Configurazione di MSMQ**](c-msmqconfiguration.md)<br/> |
 
 
 
@@ -163,15 +163,15 @@ Tipo di servizio fornito da MSMQ installato nel computer.
 | ID collegamento                | \-                                                           |
 | MAPI-Id                | \-                                                           |
 | System-Only            | Falso                                                        |
-| È a valore singolo       | Vero                                                         |
+| Is-Single-Valued       | Vero                                                         |
 | Indicizzato             | Falso                                                        |
 | Nel catalogo globale      | Vero                                                         |
-| NT-Security-descrittore | O:BAG: NON VALIDO: S:                                                 |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                                 |
 | Range-Lower            | \-                                                           |
 | Range-Upper            | \-                                                           |
 | Search-Flags           | 0x00000000                                                   |
 | System-Flags           | 0x00000010                                                   |
-| Classi utilizzate in        | [**Configurazione MSMQ**](c-msmqconfiguration.md)<br/> |
+| Classi usate in        | [**Configurazione di MSMQ**](c-msmqconfiguration.md)<br/> |
 
 
 

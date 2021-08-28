@@ -6,12 +6,12 @@ keywords:
 - Microsoft Agent, introduzione
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 2532187df7cf894ebc1395038bf3092e3fb04ff2240d2c7a83cab7d7cf0da4be
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 74169ce1e4dbd98e1e0589bca35f93cad0aea1a9
+ms.sourcegitcommit: 61a4c522182aa1cacbf5669683d9570a3bf043b2
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "118749231"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "122885191"
 ---
 # <a name="introduction-to-microsoft-agent"></a>Introduzione a Microsoft Agent
 
@@ -23,7 +23,7 @@ Microsoft Agent consente agli sviluppatori di software e agli autori Web di inco
 
 L'approccio dell'interfaccia di conversazione facilitato dai servizi Microsoft Agent non sostituisce la progettazione dell'interfaccia utente grafica (GUI) convenzionale. Al contrario, l'interazione tra i caratteri può essere facilmente confusa con i componenti convenzionali dell'interfaccia, ad esempio finestre, menu e controlli, per estendere e migliorare l'interfaccia dell'applicazione.
 
-Le interfacce di programmazione di Microsoft Agent semplificano l'animazione di un carattere per rispondere all'input dell'utente. I caratteri animati vengono visualizzati nella propria finestra, offrendo la massima flessibilità per la posizione in cui possono essere visualizzati sullo schermo. Microsoft Agent include un controllo ActiveX che rende i servizi accessibili ai linguaggi di programmazione che supportano ActiveX, inclusi i linguaggi di scripting Web, ad esempio Visual Basic Scripting Edition (VBScript). Ciò significa che l'interazione tra caratteri può essere programmata anche da pagine HTML che usano il <OBJECT> tag .
+Le interfacce di programmazione di Microsoft Agent semplificano l'animazione di un carattere per rispondere all'input dell'utente. I caratteri animati vengono visualizzati nella propria finestra, offrendo la massima flessibilità per la posizione in cui possono essere visualizzati sullo schermo. Microsoft Agent include un controllo ActiveX che rende i servizi accessibili ai linguaggi di programmazione che supportano ActiveX, inclusi i linguaggi di scripting Web, ad esempio Visual Basic Scripting Edition (VBScript). Ciò significa che l'interazione tra caratteri può essere programmata anche da pagine HTML che usano il &lt; &gt; tag OBJECT.
 
 Cercare le modifiche apportate alle funzionalità di riconoscimento vocale e riconoscimento vocale di Microsoft Agent per Windows Vista al collegamento seguente.
 

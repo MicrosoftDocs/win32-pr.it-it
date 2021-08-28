@@ -1,7 +1,7 @@
 ---
-description: Recupera il percorso dell'archivio certificati rappresentato da questo oggetto.
+description: Recupera il percorso dell'archivio certificati rappresentato da questo oggetto .
 ms.assetid: 756ee7cb-5f9f-4fb2-bf10-79b543895189
-title: Proprietà Store. location
+title: Store.Location - proprietà
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -13,18 +13,18 @@ api_type:
 - COM
 api_location:
 - Capicom.dll
-ms.openlocfilehash: 42afe40dffde5a0375928d355508ec75a4076f17
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: b03fd93196eba3c0b3592d89ff3dfb3f5e8236f481296bfd9369beedc44fea91
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "106333152"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "117972551"
 ---
-# <a name="storelocation-property"></a>Proprietà Store. location
+# <a name="storelocation-property"></a>Store.Location - proprietà
 
-\[La proprietà **location** è disponibile per l'uso nei sistemi operativi specificati nella sezione requisiti. Usare invece la [**classe X509Store**](/dotnet/api/system.security.cryptography.x509certificates.x509store?view=netcore-3.1) nello spazio dei nomi [**System. Security. Cryptography. X509Certificates**](/dotnet/api/system.security.cryptography.x509certificates.publickey.-ctor?view=netcore-3.1) .\]
+\[La **proprietà Location** è disponibile per l'uso nei sistemi operativi specificati nella sezione Requisiti. Usare invece la [**classe X509Store**](/dotnet/api/system.security.cryptography.x509certificates.x509store?view=netcore-3.1) nello spazio dei [**nomi System.Security.Cryptography.X509Certificates.**](/dotnet/api/system.security.cryptography.x509certificates.publickey.-ctor?view=netcore-3.1)\]
 
-La proprietà **location** Recupera il percorso dell'archivio certificati rappresentato da questo oggetto.
+La **proprietà Location** recupera il percorso dell'archivio certificati rappresentato da questo oggetto.
 
 ## <a name="syntax"></a>Sintassi
 
@@ -37,11 +37,11 @@ Store.Location As CAPICOM_STORE_LOCATION
 
 ## <a name="property-value"></a>Valore proprietà
 
-Il valore del [**\_ \_ percorso dell'archivio CAPICOM**](capicom-store-location.md) che rappresenta il percorso dell'archivio certificati.
+Valore [**CAPICOM \_ STORE \_ LOCATION**](capicom-store-location.md) che rappresenta il percorso dell'archivio certificati.
 
 ## <a name="remarks"></a>Commenti
 
-Il valore della proprietà **location** corrisponde al valore fornito per il parametro *StoreLocation* del metodo [**Open**](store-open.md) quando l'archivio è stato aperto.
+Il valore della **proprietà Location** è uguale al valore fornito per il parametro *StoreLocation* del metodo [**Open**](store-open.md) quando l'archivio è stato aperto.
 
 ## <a name="requirements"></a>Requisiti
 
@@ -49,7 +49,7 @@ Il valore della proprietà **location** corrisponde al valore fornito per il par
 
 | Requisito | Valore |
 |----------------------------|----------------------------------------------------------------------------------------|
-| Componente ridistribuibile<br/> | CAPICOM 2,1 o versioni successive in Windows Server 2003 e Windows XP<br/>                  |
+| Componente ridistribuibile<br/> | CAPICOM 2.1 o versioni successive in Windows Server 2003 e Windows XP<br/>                  |
 | DLL<br/>             | <dl> <dt>Capicom.dll</dt> </dl> |
 
 
@@ -58,7 +58,7 @@ Il valore della proprietà **location** corrisponde al valore fornito per il par
 
 <dl> <dt>
 
-[**Store**](store.md)
+[**Archiviazione**](store.md)
 </dt> </dl>
 
  

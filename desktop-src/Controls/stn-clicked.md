@@ -1,9 +1,9 @@
 ---
-title: Codice di notifica STN_CLICKED (winuser. h)
-description: "\\_Quando l'utente fa clic su un controllo statico con stile di notifica SS, viene inviato il codice di notifica con clic su STN \\_ . La finestra padre del controllo riceve questo codice di notifica tramite il \\_ messaggio di comando WM."
+title: STN_CLICKED di notifica (Winuser.h)
+description: Il codice di notifica STN CLICKED viene inviato quando l'utente fa clic su un controllo \_ statico con lo stile SS \_ NOTIFY. La finestra padre del controllo riceve questo codice di notifica tramite il messaggio WM \_ COMMAND.
 ms.assetid: deeac9e9-c23e-4ffb-a1d7-18782efb7a5c
 keywords:
-- Controlli di Windows per il codice di notifica STN_CLICKED
+- STN_CLICKED codice di notifica Windows controlli
 topic_type:
 - apiref
 api_name:
@@ -14,16 +14,16 @@ api_type:
 - HeaderDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 91f63bc496469f6edc26b4f9176f3f9157464bdd
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: 984bbe63444593707de7e410ebd9cb47fb60bac4766ea6ee57660f034e45924d
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "103873365"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119797871"
 ---
-# <a name="stn_clicked-notification-code"></a>\_Codice di notifica fatto clic su STN
+# <a name="stn_clicked-notification-code"></a>Codice di notifica \_ STN CLICKED
 
-\_Quando l'utente fa clic su un controllo statico con stile di [**\_ notifica SS**](static-control-styles.md) , viene inviato il codice di notifica con clic su STN. La finestra padre del controllo riceve questo codice di notifica tramite il messaggio di [**\_ comando WM**](/windows/desktop/menurc/wm-command) .
+Il codice di notifica STN CLICKED viene inviato quando l'utente fa clic su un controllo \_ statico con lo stile [**SS \_ NOTIFY.**](static-control-styles.md) La finestra padre del controllo riceve questo codice di notifica tramite il [**messaggio WM \_ COMMAND.**](/windows/desktop/menurc/wm-command)
 
 
 ```C++
@@ -42,7 +42,7 @@ STN_CLICKED
 *wParam* 
 </dt> <dd>
 
-[**LOWORD**](/previous-versions/windows/desktop/legacy/ms632659(v=vs.85)) contiene l'identificatore del controllo statico. [**HIWORD**](/previous-versions/windows/desktop/legacy/ms632657(v=vs.85)) specifica il codice di notifica.
+La [**parola chiave LOWORD**](/previous-versions/windows/desktop/legacy/ms632659(v=vs.85)) contiene l'identificatore del controllo statico. HIWORD [**specifica**](/previous-versions/windows/desktop/legacy/ms632657(v=vs.85)) il codice di notifica.
 
 </dd> <dt>
 
@@ -59,9 +59,9 @@ Handle per il controllo statico.
 
 | Requisito | Valore |
 |-------------------------------------|----------------------------------------------------------------------------------------------------------|
-| Client minimo supportato<br/> | \[Solo app desktop di Windows Vista\]<br/>                                                           |
-| Server minimo supportato<br/> | \[Solo app desktop Windows Server 2003\]<br/>                                                     |
-| Intestazione<br/>                   | <dl> <dt>Winuser. h (include Windows. h)</dt> </dl> |
+| Client minimo supportato<br/> | Windows Solo \[ app desktop di Vista\]<br/>                                                           |
+| Server minimo supportato<br/> | Windows Solo app desktop server 2003 \[\]<br/>                                                     |
+| Intestazione<br/>                   | <dl> <dt>Winuser.h (includere Windows.h)</dt> </dl> |
 
 
 
@@ -72,7 +72,7 @@ Handle per il controllo statico.
 **Riferimento**
 </dt> <dt>
 
-[\_DBLCLK STN](stn-dblclk.md)
+[STN \_ DBLCLK](stn-dblclk.md)
 </dt> <dt>
 
 **Informazioni concettuali**
@@ -90,7 +90,7 @@ Handle per il controllo statico.
 [**LOWORD**](/previous-versions/windows/desktop/legacy/ms632659(v=vs.85))
 </dt> <dt>
 
-[**\_comando WM**](/windows/desktop/menurc/wm-command)
+[**COMANDO \_ WM**](/windows/desktop/menurc/wm-command)
 </dt> </dl>
 
  

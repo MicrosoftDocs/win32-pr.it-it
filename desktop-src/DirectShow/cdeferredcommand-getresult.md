@@ -1,7 +1,7 @@
 ---
-description: Il metodo GetResult recupera l'elenco di argomenti risultante, se disponibile.
+description: Il metodo GetResult recupera l'elenco di argomenti risultante, se presente.
 ms.assetid: a2a8b17c-3dcf-4f59-89c3-f42070d2a8eb
-title: Metodo CDeferredCommand. GetResult (Ctlutil. h)
+title: Metodo CDeferredCommand.GetResult (Ctlutil.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -16,16 +16,16 @@ api_location:
 - Strmbase.dll
 - Strmbasd.lib
 - Strmbasd.dll
-ms.openlocfilehash: e8c1638dc33be6457dd682f37e2ddd49e73a111a
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: 2176d6787bd520517cccbf484bdf6642921d499aaeb97c2917d64fa148323b66
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "106333469"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120076421"
 ---
-# <a name="cdeferredcommandgetresult-method"></a>Metodo CDeferredCommand. GetResult
+# <a name="cdeferredcommandgetresult-method"></a>Metodo CDeferredCommand.GetResult
 
-Il `GetResult` metodo recupera l'elenco di argomenti risultante, se disponibile.
+Il `GetResult` metodo recupera l'elenco di argomenti risultante, se presente.
 
 ## <a name="syntax"></a>Sintassi
 
@@ -42,7 +42,7 @@ Questo metodo non presenta parametri.
 
 ## <a name="return-value"></a>Valore restituito
 
-Restituisce un puntatore a un **Variant** contenente l'elenco di argomenti del metodo, se esistente.
+Restituisce un puntatore a **un variant** contenente l'elenco di argomenti del metodo, se esistente.
 
 ## <a name="requirements"></a>Requisiti
 
@@ -50,8 +50,8 @@ Restituisce un puntatore a un **Variant** contenente l'elenco di argomenti del m
 
 | Requisito | Valore |
 |--------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Intestazione<br/>  | <dl> <dt>Ctlutil. h (include Streams. h)</dt> </dl>                                                                                   |
-| Libreria<br/> | <dl> <dt>Strmbase. lib (compilazioni finali); </dt> <dt>Strmbasd. lib (build di debug)</dt> </dl> |
+| Intestazione<br/>  | <dl> <dt>Ctlutil.h (include Flussi.h)</dt> </dl>                                                                                   |
+| Libreria<br/> | <dl> <dt>Strmbase.lib (build di vendita al dettaglio); </dt> <dt>Strmbasd.lib (build di debug)</dt> </dl> |
 
 
 
