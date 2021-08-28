@@ -7,20 +7,20 @@ MSHAttr:
 title: IgnorePassword
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: ceb24eafebac1ab657a4a721031b05e043f3a2f9
-ms.sourcegitcommit: 9b5faa61c38b2d0c432b7f2dbee8c127b0e28a7e
+ms.openlocfilehash: e85c41bab92d127a81a8b86a4ac575d448605d0e
+ms.sourcegitcommit: 4665ebce0c106bdb52eef36e544280b496b6f50b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/19/2021
-ms.locfileid: "122465648"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "122982794"
 ---
 # <a name="span-idwwan_profile_v4element_ignorepasswordspanmbnprofileextignorepassword-v4"></a><span id="WWAN_profile_v4.element_IgnorePassword"></span>MBNProfileExt \/ ... \/ IgnorePassword (v4)
 
 Specifica la modalità di gestione delle password durante l'aggiornamento dei profili.
 
-Se impostato su **TRUE** e al momento dell'operazione di aggiornamento esiste un profilo con lo stesso nome, la password di tale profilo verrà presa e archiviata nel nuovo profilo.
+Se è **impostato su TRUE** ed esiste un profilo con lo stesso nome al momento dell'operazione di aggiornamento, la password di tale profilo verrà prelevata e archiviata nel nuovo profilo.
 
-Per altre informazioni, vedere la documentazione per l'elemento [**IgnorePassword**](./schema-ignorepassword-userlogoncred-element.md) v1.
+Per altri dettagli, vedere la documentazione relativa all'elemento [**IgnorePassword**](./schema-ignorepassword-userlogoncred-element.md) v1.
 
 ## <a name="element-hierarchy"></a>Gerarchia degli elementi
 
@@ -67,7 +67,9 @@ Nessuno.
 ## <a name="requirements"></a>Requisiti
 
 
-| | | <p>Spazio dei nomi</p> | <p>https://www.microsoft.com/networking/WWAN/profile/v4</p> | 
+| Requisito | Valore |
+|------------|----------|
+| <p>Spazio dei nomi</p> | <p>https://www.microsoft.com/networking/WWAN/profile/v4</p> | 
 
 
  

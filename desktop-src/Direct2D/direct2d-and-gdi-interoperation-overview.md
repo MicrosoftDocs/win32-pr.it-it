@@ -13,12 +13,12 @@ keywords:
 - Interoperatività Direct3D,Direct2D
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 951bebc9ea7ca63496a9cdc93fa33ddb74817661e7f5bc072b55d207bfcbdeb7
-ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
+ms.openlocfilehash: 6a1f3be132aba742eb1df4b8a893dad245f851a0
+ms.sourcegitcommit: c276a8912787b2cda74dcf54eb96df961bb1188b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119918243"
+ms.lasthandoff: 08/20/2021
+ms.locfileid: "122631563"
 ---
 # <a name="direct2d-and-gdi-interoperability-overview"></a>Cenni preliminari sull'interoperabilità di Direct2D e GDI
 
@@ -89,7 +89,7 @@ GetClientRect(m_hwnd, &rc);
 
 <table>
 <colgroup>
-<col style="width: 100%" />
+<col  />
 </colgroup>
 <thead>
 <tr class="header">
@@ -246,7 +246,7 @@ Quando si usa [**un ID2D1DCRenderTarget,**](/windows/win32/api/d2d1/nn-d2d1-id2d
 
 Si supponga, ad esempio, di usare la destinazione di rendering per disegnare una scena che contiene geometrie e testo con antialias. Se si usa una trasformazione GDI per applicare una trasformazione di scala al controller di dominio e ridimensionare la scena in modo che sia 10 volte più grande, si otterranno pixelizzazione e bordi frastagliati. Se, tuttavia, si applicasse una trasformazione simile usando Direct2D, la qualità visiva della scena non verrebbe compromessa.
 
-In alcuni casi, potrebbe non essere ovvio che GDI sta eseguendo un'elaborazione aggiuntiva che potrebbe ridurre la qualità del contenuto Direct2D. Ad esempio, in una compilazione da destra a sinistra (RTL) di Windows, il contenuto di cui viene eseguito il rendering da [**id2D1DCRenderTarget**](/windows/win32/api/d2d1/nn-d2d1-id2d1dcrendertarget) potrebbe essere invertito orizzontalmente quando GDI lo copia nella destinazione. Il fatto che il contenuto sia effettivamente invertito dipende dalle impostazioni correnti del controller di dominio.
+In alcuni casi, potrebbe non essere ovvio che GDI sta eseguendo un'elaborazione aggiuntiva che potrebbe ridurre la qualità del contenuto Direct2D. Ad esempio, in una compilazione da destra a sinistra (RTL) di Windows, il contenuto sottoposto a rendering da [**id2D1DCRenderTarget**](/windows/win32/api/d2d1/nn-d2d1-id2d1dcrendertarget) potrebbe essere invertito orizzontalmente quando GDI lo copia nella destinazione. Il fatto che il contenuto sia effettivamente invertito dipende dalle impostazioni correnti del controller di dominio.
 
 A seconda del tipo di contenuto di cui viene eseguito il rendering, è possibile impedire l'inversione. Se il contenuto Direct2D include testo ClearType, questa inversione degraderà la qualità del testo.
 

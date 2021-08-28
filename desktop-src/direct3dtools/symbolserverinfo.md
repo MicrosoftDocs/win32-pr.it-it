@@ -1,5 +1,5 @@
 ---
-description: Rappresenta le informazioni sul server dei simboli di debug.
+description: Rappresenta informazioni sul server di simboli di debug.
 MS-HAID: vspixengine.SymbolServerInfo
 MSHAttr:
 - PreferredSiteName:MSDN
@@ -17,16 +17,16 @@ api_location:
 topic_type:
 - APIRef
 - kbSyntax
-ms.openlocfilehash: 65bf07a8ff915668c6c059b831bd049d9a25d9a0
-ms.sourcegitcommit: a47bd86f517de76374e4fff33cfeb613eb259a7e
+ms.openlocfilehash: 28f85445e6affc006c5c0898df1c85d71693a66d
+ms.sourcegitcommit: c276a8912787b2cda74dcf54eb96df961bb1188b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/06/2021
-ms.locfileid: "104124155"
+ms.lasthandoff: 08/20/2021
+ms.locfileid: "122632089"
 ---
 # <a name="span-idvspixenginesymbolserverinfospansymbolserverinfo-structure"></a><span id="vspixengine.symbolserverinfo"></span>Struttura SymbolServerInfo
 
-Rappresenta le informazioni sul server dei simboli di debug.
+Rappresenta informazioni sul server di simboli di debug.
 
 ## <a name="syntax"></a>Sintassi
 
@@ -53,14 +53,14 @@ Stringa COM che specifica l'elenco di simboli da escludere.
 Stringa COM che specifica l'elenco di simboli da includere.
 
 **useExcludeList**  
-true se l'elenco di esclusioni viene ignorato; in caso contrario, false.
+true se l'elenco di esclusione viene ignorato; in caso contrario, false.
 
 **useMSSymbolServer**  
-true se si utilizza il server di simboli Microsoft; in caso contrario, false.
+true se si usa il server di simboli Microsoft; in caso contrario, false.
 
 ## <a name="requirements"></a>Requisiti
 
-<table><colgroup><col style="width: 50%" /><col style="width: 50%" /></colgroup><tbody><tr class="odd"><td><p>Intestazione</p></td><td>Vspixengine. h</td></tr></tbody></table>
+<table><colgroup><col  /><col  /></colgroup><tbody><tr class="odd"><td><p>Intestazione</p></td><td>Vspixengine.h</td></tr></tbody></table>
 
  
 

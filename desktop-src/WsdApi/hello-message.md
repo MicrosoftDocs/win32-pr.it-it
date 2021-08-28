@@ -4,12 +4,12 @@ ms.assetid: a7402e02-9bdc-49ec-ba93-8a32f55b9dd8
 title: Hello Message
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 49562d212bb113bba2c1fca0a352b0f1a81cea76
-ms.sourcegitcommit: c276a8912787b2cda74dcf54eb96df961bb1188b
+ms.openlocfilehash: a3fe850c4df51fba75c33e202a0bd742226cfb38
+ms.sourcegitcommit: 61a4c522182aa1cacbf5669683d9570a3bf043b2
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/20/2021
-ms.locfileid: "122627587"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "122882566"
 ---
 # <a name="hello-message"></a>Hello Message
 
@@ -79,9 +79,9 @@ Un messaggio Hello ha i punti di interesse seguenti.
 <tbody>
 <tr class="odd">
 <td>Ciao</td>
-<td><pre class="syntax" data-space="preserve"><code><wsa:Action>
+<td><pre class="syntax" data-space="preserve"><code>&lt;wsa:Action&gt;
     https://schemas.xmlsoap.org/ws/2005/04/discovery/Hello
-</wsa:Action></code></pre></td>
+&lt;/wsa:Action&gt;</code></pre></td>
 <td>L'azione Hello SOAP identifica il messaggio come messaggio Hello.</td>
 </tr>
 <tr class="even">
@@ -89,19 +89,19 @@ Un messaggio Hello ha i punti di interesse seguenti.
 <td><pre class="syntax" data-space="preserve"><code><wsd:AppSequence InstanceId=&quot;2&quot;
     SequenceId=&quot;urn:uuid:369a7d7b-5f87-48a4-aa9a-189edf2a8772&quot;
     MessageNumber=&quot;14&quot;>
-</wsd:AppSequence></code></pre></td>
+&lt;/wsd:AppSequence&gt;</code></pre></td>
 <td>Contiene informazioni di sequenziazione dell'applicazione, che consentono di mantenere la sequenza dei messaggi anche se vengono ricevuti non in ordine. AppSequence viene convalidato come descritto in <a href="appsequence-validation-rules.md">Regole di convalida di AppSequence.</a></td>
 </tr>
 <tr class="odd">
 <td>Indirizzo</td>
-<td><pre class="syntax" data-space="preserve"><code><wsa:Address>
+<td><pre class="syntax" data-space="preserve"><code>&lt;wsa:Address&gt;
     urn:uuid:37f86d35-e6ac-4241-964f-1d9ae46fb366
-</wsa:Address></code></pre></td>
+&lt;/wsa:Address&gt;</code></pre></td>
 <td>Contiene l'indirizzo dell'endpoint. È possibile fare riferimento a questo indirizzo in un <a href="resolve-message.md">messaggio di</a> risoluzione.</td>
 </tr>
 <tr class="even">
 <td>Tipi</td>
-<td><pre class="syntax" data-space="preserve"><code><wsd:Types>wsdp:Device</wsd:Types></code></pre></td>
+<td><pre class="syntax" data-space="preserve"><code>&lt;wsd:Types&gt;wsdp:Device</wsd:Types></code></pre></td>
 <td>Contiene i WS-Discovery tipi annunciati dall'host.</td>
 </tr>
 </tbody>

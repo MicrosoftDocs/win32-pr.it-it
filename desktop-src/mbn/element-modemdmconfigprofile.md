@@ -7,12 +7,12 @@ MSHAttr:
 title: ModemDMConfigProfile
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 58ea408fb35fef5b9b2f89255e6ecb28f59b2370
-ms.sourcegitcommit: 61a4c522182aa1cacbf5669683d9570a3bf043b2
+ms.openlocfilehash: 80684cdf2d47d203318afbfd7b5e6bc02de1d3dc
+ms.sourcegitcommit: 4665ebce0c106bdb52eef36e544280b496b6f50b
 ms.translationtype: MT
 ms.contentlocale: it-IT
 ms.lasthandoff: 08/26/2021
-ms.locfileid: "122882902"
+ms.locfileid: "122982744"
 ---
 # <a name="span-idwwan_profile_v4element_modemdmconfigprofilespanmodemdmconfigprofile"></a><span id="WWAN_profile_v4.element_ModemDMConfigProfile"></span>ModemDMConfigProfile
 
@@ -60,7 +60,7 @@ Nessuno.
 | Elemento figlio | Descrizione | 
 |---------------|-------------|
 | <a href="element-1-adminenable.md">AdminEnable</a> | <p>Specifica se il profilo è abilitato a livello amministrativo. Si tratta di un nuovo elemento per la versione 4.</p> | 
-| <a href="element-1-adminroamcontrol.md">AdminRoamControl</a> | <p>Specifica se il profilo è controllato dal roaming amministrativo. Questo elemento è nuovo per la versione 4. Il valore di questo elemento è un <a href="simpletype-roamcontroltype.md"><strong>valore roamControlType.</strong></a> Si tratta di un elemento facoltativo. se non viene specificato alcun valore, l'impostazione predefinita <strong>è AllRoamAllowed.</strong></p> | 
+| <a href="element-1-adminroamcontrol.md">AdminRoamControl</a> | <p>Specifica se il profilo è controllato dal roaming amministrativo. Questo elemento è nuovo per la versione 4. Il valore di questo elemento è un <a href="simpletype-roamcontroltype.md"><strong>valore roamControlType.</strong></a> Si tratta di un elemento facoltativo. se non viene specificato alcun valore, l'impostazione predefinita è <strong>AllRoamAllowed.</strong></p> | 
 | <a href="element-1-apnid.md">ApnID</a> | <p>ID APN associato a questo profilo. Questo elemento è nuovo nella versione 4 ed è facoltativo.</p> | 
 | <a href="element-1-context.md">Contesto</a> | <p>Specifica i parametri necessari per stabilire una connessione dati.</p> | 
 | <a href="element-1-name.md">Nome</a> | <p>Nome del profilo. Per altre informazioni, vedere la documentazione per l'elemento <a href="../mbn/schema-name-mbnprofile-element.md"><strong>Nome</strong></a> v1.</p> | 
@@ -79,7 +79,9 @@ Questo elemento più esterno (documento) potrebbe non essere contenuto da altri 
 ## <a name="requirements"></a>Requisiti
 
 
-| | | <p>Spazio dei nomi</p> | <p>https://www.microsoft.com/networking/WWAN/profile/v4</p> | 
+| Requisito | Valore |
+|------------|----------|
+| <p>Spazio dei nomi</p> | <p>https://www.microsoft.com/networking/WWAN/profile/v4</p> | 
 
 
  

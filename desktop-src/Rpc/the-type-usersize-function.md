@@ -6,16 +6,16 @@ keywords:
 - type_UserSize
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: a5b7c5d0918489dbc41baaa4e799aa1dbbda67723cf8104e0641ced24b9b5bf6
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: e2f997d12e11f643eb2faf9990454a8508d15636
+ms.sourcegitcommit: 61a4c522182aa1cacbf5669683d9570a3bf043b2
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "118923541"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "122886035"
 ---
 # <a name="the-type_usersize-function"></a>Funzione \_ UserSize di tipo
 
-La **<type> \_ funzione UserSize** è una funzione helper per gli attributi \[ [wire \_ marshal](/windows/desktop/Midl/wire-marshal) \] e user \[ [ \_ marshal.](/windows/desktop/Midl/user-marshal) \] Gli stub chiamano questa funzione per ridimensionare il buffer di dati RPC per l'oggetto dati utente prima che venga effettuato il marshalling dei dati sul lato client o server. La funzione è definita come:
+La **&lt; funzione &gt; \_ UserSize di** tipo è una funzione helper per gli attributi wire \[ [ \_ marshal](/windows/desktop/Midl/wire-marshal) \] e user \[ [ \_ marshal.](/windows/desktop/Midl/user-marshal) \] Gli stub chiamano questa funzione per ridimensionare il buffer di dati RPC per l'oggetto dati utente prima che venga effettuato il marshalling dei dati sul lato client o server. La funzione è definita come:
 
 ``` syntax
 unsigned long __RPC_USER  <type>_UserSize(
@@ -24,7 +24,7 @@ unsigned long __RPC_USER  <type>_UserSize(
     <type>  __RPC_FAR *pMyObj);
 ```
 
-nel nome della funzione indica il tipo userm, come specificato nella definizione del tipo <type> **\[ \_ wire marshal \]** o user **\[ \_ marshal. \]** Questo tipo può essere non ritrasmettibile o persino, se usato con l'attributo **\[ \_ di marshalling \]** utente, sconosciuto al compilatore MIDL. Il nome del tipo di cavo (il nome del tipo trasmesso in rete) non viene usato nel prototipo di funzione. Si noti, tuttavia, che il tipo wire definisce il layout per i dati come specificato da OSF DCE. Tutti i dati devono essere convertiti nel formato di rappresentazione dei dati di rete (NDR).
+Il &lt; tipo nel nome della funzione indica il tipo userm, come specificato nella definizione del tipo wire &gt; **\[ \_ marshal \]** o user **\[ \_ marshal. \]** Questo tipo può essere non ritrasmettibile o persino, se usato con l'attributo **\[ \_ di marshalling \]** utente, sconosciuto al compilatore MIDL. Il nome del tipo di cavo (il nome del tipo trasmesso in rete) non viene usato nel prototipo di funzione. Si noti, tuttavia, che il tipo wire definisce il layout per i dati come specificato da OSF DCE. Tutti i dati devono essere convertiti nel formato di rappresentazione dei dati di rete (NDR).
 
 Il *parametro pFlags* è un puntatore a un campo flag **long** senza segno. La parola superiore del flag contiene flag di formato NDR come definito da DCE OSF per le rappresentazioni a virgola mobile, ordine dei byte e caratteri. La parola inferiore contiene un flag di contesto di marshalling come definito dal canale COM. Il layout esatto dei flag all'interno del campo è illustrato nella tabella seguente.
 
@@ -54,9 +54,9 @@ Il *parametro pMyObj* è un puntatore a un oggetto di tipo utente.
 
 Il valore restituito è il nuovo offset o posizione del buffer. La funzione deve restituire la dimensione cumulativa, ovvero la dimensione iniziale più la possibile spaziatura interna più le dimensioni dei dati.
 
-La **<type> \_ funzione UserSize** può restituire una sovrastima delle dimensioni necessarie. Le dimensioni effettive del buffer inviato sono definite dalle dimensioni dei dati, non dalla dimensione di allocazione del buffer.
+La **&lt; funzione &gt; \_ UserSize** di tipo può restituire una sovrastima delle dimensioni necessarie. Le dimensioni effettive del buffer inviato sono definite dalle dimensioni dei dati, non dalla dimensione di allocazione del buffer.
 
-La **<type> \_ funzione UserSize** non viene chiamata se le dimensioni del cavo possono essere calcolate in fase di compilazione. Si noti che per la maggior parte delle unioni, anche se non sono presenti puntatori, le dimensioni effettive della rappresentazione cablata possono essere determinate solo in fase di esecuzione.
+La **&lt; funzione &gt; \_ UserSize di** tipo non viene chiamata se le dimensioni del cavo possono essere calcolate in fase di compilazione. Si noti che per la maggior parte delle unioni, anche se non sono presenti puntatori, le dimensioni effettive della rappresentazione cablata possono essere determinate solo in fase di esecuzione.
 
 ## <a name="related-topics"></a>Argomenti correlati
 

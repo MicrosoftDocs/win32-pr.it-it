@@ -1,5 +1,5 @@
 ---
-description: '<span id="vspixengine.remotecommandtype"></span>Enumerazione RemoteCommandType: enumerazione utilizzata per comunicare tra il motore di acquisizione e un host (ad esempio Visual Studio Diagnostica della grafica).'
+description: '<span id="vspixengine.remotecommandtype"></span>Enumerazione RemoteCommandType: enumerazione utilizzata per comunicare tra il motore di acquisizione e un host ,ad esempio Visual Studio Diagnostica della grafica.'
 MS-HAID: vspixengine.RemoteCommandType
 MSHAttr:
 - PreferredSiteName:MSDN
@@ -17,16 +17,16 @@ api_location:
 topic_type:
 - APIRef
 - kbSyntax
-ms.openlocfilehash: ed57b9b044613351e99096a8c8cb741b8ad7a269
-ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
+ms.openlocfilehash: 73accd6f73a7c33219c83a3285837d2e1c7c133a
+ms.sourcegitcommit: c276a8912787b2cda74dcf54eb96df961bb1188b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/28/2021
-ms.locfileid: "108110507"
+ms.lasthandoff: 08/20/2021
+ms.locfileid: "122631719"
 ---
 # <a name="span-idvspixengineremotecommandtypespanremotecommandtype-enumeration"></a><span id="vspixengine.remotecommandtype"></span>Enumerazione RemoteCommandType
 
-Enumerazione utilizzata per comunicare tra il motore di acquisizione e un host, ad esempio Visual Studio Diagnostica della grafica.
+Enumerazione utilizzata per comunicare tra il motore di acquisizione e un host,ad esempio Visual Studio Diagnostica della grafica.
 
 ## <a name="syntax"></a>Sintassi
 
@@ -48,7 +48,7 @@ Avvia un'acquisizione (come quando si tocca la schermata di stampa). Inviato da 
 
 ## <a name="requirements"></a>Requisiti
 
-<table><colgroup><col style="width: 50%" /><col style="width: 50%" /></colgroup><tbody><tr class="odd"><td><p>Intestazione</p></td><td>Vspixengine.h</td></tr></tbody></table>
+<table><colgroup><col  /><col  /></colgroup><tbody><tr class="odd"><td><p>Intestazione</p></td><td>Vspixengine.h</td></tr></tbody></table>
 
  
 

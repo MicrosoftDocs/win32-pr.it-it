@@ -4,12 +4,12 @@ ms.assetid: 3b5f4360-887a-4a21-8f16-faa84da34328
 title: Tabella UpgradedFilesToIgnore (Patchwiz.dll)
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 2f51143fcf7db350d5ee8aa1e43d49984914bcf9f05a2f8f5f787834a69b7e1a
-ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
+ms.openlocfilehash: 4b3af0a4a8c3385c2d028cdb66ad276d3f480ca8
+ms.sourcegitcommit: 61a4c522182aa1cacbf5669683d9570a3bf043b2
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119809551"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "122884498"
 ---
 # <a name="upgradedfilestoignore-table-patchwizdll"></a>Tabella UpgradedFilesToIgnore (Patchwiz.dll)
 
@@ -42,7 +42,7 @@ Chiave esterna per la colonna Aggiornato della [tabella UpgradedImages (Patchwiz
 <span id="FTK"></span><span id="ftk"></span>FTK
 </dt> <dd>
 
-Chiave esterna nella tabella [File dell'immagine](file-table.md) aggiornata. Un valore nel formato " " corrisponde a tutte le chiavi della tabella <prefix> \* file nella tabella File che iniziano con tale prefisso. Nessun testo può seguire l'asterisco.
+Chiave esterna nella tabella [File dell'immagine](file-table.md) aggiornata. Un valore nel formato " prefisso " corrisponde a tutte le chiavi di &lt; tabella file nella tabella File che &gt; \* iniziano con tale prefisso. Nessun testo può seguire l'asterisco.
 
 </dd> </dl>
 

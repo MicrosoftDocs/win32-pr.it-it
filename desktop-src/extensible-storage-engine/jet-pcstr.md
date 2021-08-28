@@ -15,12 +15,12 @@ api_type:
 - COM
 api_location: ''
 ROBOTS: INDEX,FOLLOW
-ms.openlocfilehash: 9ed32b23f99ad9e19d5384bfab1f81ff5ee6a181
-ms.sourcegitcommit: 9b5faa61c38b2d0c432b7f2dbee8c127b0e28a7e
+ms.openlocfilehash: 6a698afffb415bb4418f46cfe16091ceda03cb59
+ms.sourcegitcommit: 4665ebce0c106bdb52eef36e544280b496b6f50b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/19/2021
-ms.locfileid: "122478467"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "122985164"
 ---
 # <a name="jet_pcstr"></a>JET_PCSTR
 
@@ -46,6 +46,10 @@ Stringa ASCII costante con terminazione Null (char \* ).
 ### <a name="requirements"></a>Requisiti
 
 
-| | | <p><strong>Client</strong></p> | <p>Richiede Windows Vista.</p> | | <p><strong>Server</strong></p> | <p>Richiede Windows Server 2008.</p> | | <p><strong>Intestazione</strong></p> | <p>Dichiarato in Esent.h.</p> | 
+| Requisito | Valore |
+|------------|----------|
+| <p><strong>Client</strong></p> | <p>Richiede Windows Vista.</p> | 
+| <p><strong>Server</strong></p> | <p>Richiede Windows Server 2008.</p> | 
+| <p><strong>Intestazione</strong></p> | <p>Dichiarato in Esent.h.</p> | 
 
 

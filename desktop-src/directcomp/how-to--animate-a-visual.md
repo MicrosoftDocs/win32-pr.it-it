@@ -1,6 +1,6 @@
 ---
 title: Come applicare animazioni
-description: In questo argomento viene illustrato come animare le proprietà di un oggetto visivo utilizzando Microsoft DirectComposition.
+description: Questo argomento illustra come animare le proprietà di un oggetto visivo usando Microsoft DirectComposition.
 ms.assetid: 932A3BCD-C290-47AE-80FB-94EE3E34837F
 keywords:
 - animazione di un oggetto visivo DirectComposition
@@ -8,19 +8,19 @@ keywords:
 - applicazione di animazioni DirectComposition
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: d83f01ba00e750b6a06aa13246ef1616635f415a
-ms.sourcegitcommit: 592c9bbd22ba69802dc353bcb5eb30699f9e9403
+ms.openlocfilehash: ecba1bde3c430acbb49f640dc7611452f0967746
+ms.sourcegitcommit: 9b5faa61c38b2d0c432b7f2dbee8c127b0e28a7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/20/2020
-ms.locfileid: "104047127"
+ms.lasthandoff: 08/19/2021
+ms.locfileid: "122474227"
 ---
 # <a name="how-to-apply-animations"></a>Come applicare animazioni
 
 > [!NOTE]
-> Per le app in Windows 10, è consigliabile usare le API Windows. UI. Composition anziché DirectComposition. Per altre informazioni, vedere [modernizzare l'app desktop usando il livello visivo](/windows/uwp/composition/visual-layer-in-desktop-apps).
+> Per le app Windows 10, è consigliabile usare le API Windows.UI.Composition anziché DirectComposition. Per altre informazioni, vedi [Modernizzare l'app desktop usando il livello visivo](/windows/uwp/composition/visual-layer-in-desktop-apps).
 
-In questo argomento viene illustrato come animare le proprietà di un oggetto visivo utilizzando Microsoft DirectComposition. Nell'esempio riportato in questo argomento viene animata la proprietà Effect di un oggetto visivo, causando la modifica dell'opacità dell'oggetto visivo da zero (trasparente) a uno (completamente opaco) in un periodo di due secondi.
+Questo argomento illustra come animare le proprietà di un oggetto visivo usando Microsoft DirectComposition. L'esempio in questo argomento aggiunge un'animazione alla proprietà Effect di un oggetto visivo, causando la modifica dell'opacità dell'oggetto visivo da zero (trasparente) a uno (completamente opaco) per un periodo di due secondi.
 
 ## <a name="what-you-need-to-know"></a>Informazioni importanti
 
@@ -28,7 +28,7 @@ In questo argomento viene illustrato come animare le proprietà di un oggetto vi
 
 -   [DirectComposition](directcomposition-portal.md)
 -   [Grafica Direct3D 11](/windows/desktop/direct3d11/atoc-dx-graphics-direct3d-11)
--   [Infrastruttura grafica DirectX (DXGI)](/windows/desktop/direct3ddxgi/dx-graphics-dxgi)
+-   [DirectX Graphic Infrastructure (DXGI)](/windows/desktop/direct3ddxgi/dx-graphics-dxgi)
 
 ### <a name="prerequisites"></a>Prerequisiti
 
@@ -38,16 +38,16 @@ In questo argomento viene illustrato come animare le proprietà di un oggetto vi
 
 ## <a name="instructions"></a>Istruzioni
 
-### <a name="step-1-initialize-directcomposition-objects"></a>Passaggio 1: inizializzare gli oggetti DirectComposition
+### <a name="step-1-initialize-directcomposition-objects"></a>Passaggio 1: Inizializzare gli oggetti DirectComposition
 
 1.  Creare l'oggetto dispositivo e l'oggetto di destinazione della composizione.
 2.  Creare un oggetto visivo, impostarne il contenuto e aggiungerlo alla struttura ad albero visuale.
 
-Per ulteriori informazioni, vedere [come inizializzare DirectComposition](initialize-directcomposition.md).
+Per altre informazioni, vedere [Come inizializzare DirectComposition.](initialize-directcomposition.md)
 
-### <a name="step-2-create-an-animation-object"></a>Passaggio 2: creare un oggetto animazione
+### <a name="step-2-create-an-animation-object"></a>Passaggio 2: Creare un oggetto di animazione
 
-Usare il metodo [**CreateAnimation**](/windows/win32/api/dcomp/nf-dcomp-idcompositiondevice-createanimation) per creare un oggetto di animazione.
+Usare il [**metodo CreateAnimation**](/windows/win32/api/dcomp/nf-dcomp-idcompositiondevice-createanimation) per creare un oggetto animazione.
 
 
 ```C++
@@ -68,9 +68,9 @@ hr = m_pDevice->CreateAnimation(&m_pFadeInAnimation);
 
 
 
-### <a name="step-3-define-the-animation-function"></a>Passaggio 3: definire la funzione di animazione
+### <a name="step-3-define-the-animation-function"></a>Passaggio 3: Definire la funzione di animazione
 
-Usare i metodi dell'oggetto [**IDCompositionAnimation**](/windows/desktop/api/DcompAnimation/nn-dcompanimation-idcompositionanimation) per definire la funzione di animazione. Il codice seguente definisce una funzione di animazione semplice. Quando viene applicato a una proprietà dell'oggetto, la funzione di animazione modifica in modo incrementale il valore della proprietà da 0 a 1 nel corso di 2 secondi.
+Usare i metodi dell'oggetto [**IDCompositionAnimation**](/windows/desktop/api/DcompAnimation/nn-dcompanimation-idcompositionanimation) per definire la funzione di animazione. Il codice seguente definisce una semplice funzione di animazione. Quando viene applicata a una proprietà dell'oggetto, la funzione di animazione modifica in modo incrementale il valore della proprietà da 0 a 1 nel corso di 2 secondi.
 
 
 ```C++
@@ -80,9 +80,9 @@ m_pFadeInAnimation->End(2.0f, 1.0f);
 
 
 
-### <a name="step-4-apply-the-animation-object-to-a-visual-property-or-to-a-property-of-a-directcomposition-object"></a>Passaggio 4: applicare l'oggetto animazione a una proprietà visiva o a una proprietà di un oggetto DirectComposition
+### <a name="step-4-apply-the-animation-object-to-a-visual-property-or-to-a-property-of-a-directcomposition-object"></a>Passaggio 4: Applicare l'oggetto animazione a una proprietà visiva o a una proprietà di un oggetto DirectComposition
 
-In Microsoft DirectComposition qualsiasi proprietà dell'oggetto che accetta un valore scalare può essere animata impostando un oggetto animazione come valore della proprietà. Nell'esempio seguente viene applicato un oggetto Animation alla proprietà Opacity di un oggetto gruppo di effetti. Quindi, l'oggetto gruppo effetti viene applicato alla proprietà Effect di un oggetto visivo.
+In Microsoft DirectComposition qualsiasi proprietà dell'oggetto che accetta un valore scalare può essere animata impostando un oggetto animazione come valore della proprietà . L'esempio seguente applica un oggetto animazione alla proprietà Opacity di un oggetto gruppo di effetti. L'oggetto gruppo di effetti viene quindi applicato alla proprietà Effect di un oggetto visivo.
 
 
 ```C++
@@ -96,48 +96,25 @@ hr = m_pDevice->CreateEffectGroup(&m_pEffectGroup);
 
 <span codelanguage="ManagedCPlusPlus"></span>
 
-<table>
-<colgroup>
-<col style="width: 100%" />
-</colgroup>
-<thead>
-<tr class="header">
-<th>C++</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td><pre><code>if (SUCCEEDED(hr))
-{
-    hr = m_pEffectGroup->SetOpacity(m_pFadeInAnimation);
-}</code></pre></td>
-</tr>
-</tbody>
-</table>
+
+| C++ | 
+|-----|
+| <pre><code>if (SUCCEEDED(hr)){    hr = m_pEffectGroup-&gt;SetOpacity(m_pFadeInAnimation);}</code></pre> | 
+
 
 <span codelanguage="ManagedCPlusPlus"></span>
 
-<table>
-<colgroup>
-<col style="width: 100%" />
-</colgroup>
-<thead>
-<tr class="header">
-<th>C++</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td><pre><code>hr = m_pVisual->SetEffect(m_pEffectGroup);</code></pre></td>
-</tr>
-</tbody>
-</table>
+
+| C++ | 
+|-----|
+| <pre><code>hr = m_pVisual-&gt;SetEffect(m_pEffectGroup);</code></pre> | 
 
 
 
-### <a name="step-5-commit-the-composition"></a>Passaggio 5: eseguire il commit della composizione
 
-Chiamare il metodo [**IDCompositionDevice:: commit**](/windows/win32/api/dcomp/nf-dcomp-idcompositiondevice-commit) per eseguire il commit dell'oggetto visivo in DirectComposition per il rendering nella finestra di destinazione. Quando viene eseguito il rendering dell'oggetto visivo, l'animazione causa la modifica dell'opacità dell'oggetto visivo da trasparente a completamente opaco in un periodo di due secondi.
+### <a name="step-5-commit-the-composition"></a>Passaggio 5: Eseguire il commit della composizione
+
+Chiamare il [**metodo IDCompositionDevice::Commit per**](/windows/win32/api/dcomp/nf-dcomp-idcompositiondevice-commit) eseguire il commit dell'oggetto visivo in DirectComposition per il rendering nella finestra di destinazione. Durante il rendering dell'oggetto visivo, l'animazione fa sì che l'opacità dell'oggetto visivo cambi da trasparente a completamente opaca in un periodo di due secondi.
 
 
 ```C++
@@ -146,7 +123,7 @@ hr = m_pDevice->Commit();
 
 
 
-### <a name="step-6-free-the-directcomposition-objects"></a>Passaggio 6: liberare gli oggetti DirectComposition
+### <a name="step-6-free-the-directcomposition-objects"></a>Passaggio 6: Liberare gli oggetti DirectComposition
 
 Assicurarsi di liberare l'oggetto animazione quando non è più necessario.
 
@@ -157,7 +134,7 @@ SafeRelease(&m_pFadeInAnimation);
 
 
 
-Ricordarsi inoltre di liberare gli altri oggetti DirectComposition prima che l'applicazione venga chiusa, inclusi l'oggetto dispositivo, l'oggetto di destinazione composizione e l'oggetto visivo. Per ulteriori informazioni, vedere [come inizializzare DirectComposition](initialize-directcomposition.md).
+Ricordarsi anche di liberare gli altri oggetti DirectComposition prima della chiusura dell'applicazione, inclusi l'oggetto dispositivo, l'oggetto di destinazione della composizione e l'oggetto visivo. Per altre informazioni, vedere [Come inizializzare DirectComposition.](initialize-directcomposition.md)
 
 ## <a name="complete-example"></a>Esempio completo
 
@@ -1011,6 +988,6 @@ HRESULT DemoApp::GetImageFilenames(TCHAR szDir[MAX_PATH])
 [Animazione](animation.md)
 </dt> </dl>
 
- 
+ 
 
- 
+ 

@@ -1,5 +1,5 @@
 ---
-description: 'Altre informazioni su: JET_SETINFO struttura'
+description: 'Altre informazioni su: JET_SETINFO Structure'
 title: JET_SETINFO struttura
 TOCTitle: JET_SETINFO Structure
 ms:assetid: cbc41175-e48f-46b0-aeb1-1120fa2cd981
@@ -15,12 +15,12 @@ api_type:
 - COM
 api_location: ''
 ROBOTS: INDEX,FOLLOW
-ms.openlocfilehash: 379fd60a001312152dbe181c27a3e8158ceca79b4cfa9075a530b6c73f4337cf
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 4198598a95134291e9b9aa88eb9dcdf4ada79045
+ms.sourcegitcommit: 4665ebce0c106bdb52eef36e544280b496b6f50b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "118253442"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "122983814"
 ---
 # <a name="jet_setinfo-structure"></a>JET_SETINFO struttura
 
@@ -29,7 +29,7 @@ _**Si applica a:** Windows | Windows Server_
 
 ## <a name="jet_setinfo-structure"></a>JET_SETINFO struttura
 
-La **JET_SETINFO** contiene parametri di input facoltativi per [JetSetColumn.](./jetsetcolumn-function.md) È **possibile passare** un puntatore NULL dove verrebbe passato un puntatore a questa struttura. Il significato del passaggio di un valore **NULL** equivale al passaggio di **JET_SETINFO** con **cbStruct** impostato su sizeof(JET_SETINFO), **ibLongValue** impostato su 0 (zero) e **itagSequence** impostato su 1.
+La **JET_SETINFO** contiene parametri di input facoltativi per [JetSetColumn.](./jetsetcolumn-function.md) In **caso contrario,** è possibile passare un puntatore NULL in cui verrebbe passato un puntatore a questa struttura. Il significato del passaggio di **null** è lo stesso del passaggio **di JET_SETINFO** con **cbStruct** impostato su sizeof(JET_SETINFO), **ibLongValue** impostato su 0 (zero) e **itagSequence** impostato su 1.
 
 ```cpp
 typedef struct {
@@ -43,7 +43,7 @@ typedef struct {
 
 **cbStruct**
 
-Dimensione, in byte, del **JET_SETINFO**. Questo valore conferma la presenza dei campi seguenti.
+Dimensione, in byte, **dell'oggetto JET_SETINFO**. Questo valore conferma la presenza dei campi seguenti.
 
 **ibLongValue**
 
@@ -57,26 +57,13 @@ Con una colonna che può contenere più valori, è possibile usare solo un numer
 
 ### <a name="requirements"></a>Requisiti
 
-<table>
-<colgroup>
-<col style="width: 50%" />
-<col style="width: 50%" />
-</colgroup>
-<tbody>
-<tr class="odd">
-<td><p><strong>Client</strong></p></td>
-<td><p>Richiede Windows Vista, Windows XP o Windows 2000 Professional.</p></td>
-</tr>
-<tr class="even">
-<td><p><strong>Server</strong></p></td>
-<td><p>Richiede Windows Server 2008, Windows Server 2003 o Windows 2000 Server.</p></td>
-</tr>
-<tr class="odd">
-<td><p><strong>Intestazione</strong></p></td>
-<td><p>Dichiarato in Esent.h.</p></td>
-</tr>
-</tbody>
-</table>
+
+| Requisito | Valore |
+|------------|----------|
+| <p><strong>Client</strong></p> | <p>Richiede Windows Vista, Windows XP o Windows 2000 Professional.</p> | 
+| <p><strong>Server</strong></p> | <p>Richiede Windows Server 2008, Windows Server 2003 o Windows 2000 Server.</p> | 
+| <p><strong>Intestazione</strong></p> | <p>Dichiarato in Esent.h.</p> | 
+
 
 
 ### <a name="see-also"></a>Vedere anche

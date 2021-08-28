@@ -17,12 +17,12 @@ api_location:
 topic_type:
 - APIRef
 - kbSyntax
-ms.openlocfilehash: b47232fe54b17c61ab9df90997e6ac63c48aee0caa31508f47dc43afc14270f2
-ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
+ms.openlocfilehash: 102b2819f496c6091c799b777f5601550dad876d
+ms.sourcegitcommit: c276a8912787b2cda74dcf54eb96df961bb1188b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "120095141"
+ms.lasthandoff: 08/20/2021
+ms.locfileid: "122627287"
 ---
 # <a name="span-idvspixenginechecksumalgorithmspanchecksumalgorithm-enumeration"></a><span id="vspixengine.checksumalgorithm"></span>Enumerazione CHECKSUMALGORITHM
 
@@ -38,17 +38,17 @@ Enumerazione utilizzata per indicare l'algoritmo di checksum da utilizzare.
 ## <a name="constants"></a>Costanti
 
 <span id="None"></span><span id="none"></span><span id="NONE"></span>**Nessuno**  
-Valore che indica che non è necessario utilizzare alcun checksum.
+Valore che indica che non deve essere usato alcun checksum.
 
 <span id="MD5"></span><span id="md5"></span>**MD5**  
-Valore che indica che devono essere utilizzati i checksum MD5.
+Valore che indica che devono essere usati i checksum MD5.
 
 <span id="SHA1"></span><span id="sha1"></span>**SHA1**  
-Valore che indica che devono essere utilizzati i checksum SHA1.
+Valore che indica che devono essere usati checksum SHA1.
 
 ## <a name="requirements"></a>Requisiti
 
-<table><colgroup><col style="width: 50%" /><col style="width: 50%" /></colgroup><tbody><tr class="odd"><td><p>Intestazione</p></td><td>Vspixengine.h</td></tr></tbody></table>
+<table><colgroup><col  /><col  /></colgroup><tbody><tr class="odd"><td><p>Intestazione</p></td><td>Vspixengine.h</td></tr></tbody></table>
 
  
 

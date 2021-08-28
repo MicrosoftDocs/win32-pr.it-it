@@ -1,19 +1,19 @@
 ---
-description: <property>L'elemento facoltativo specifica le proprietà utilizzate dal provider di posizione.
+description: "&lt;L'elemento &gt; proprietà facoltativo specifica le proprietà usate dal provider di posizione."
 ms.assetid: c1120dea-cb0b-4746-a5c1-4c83cda6dd7c
 title: Elemento property di locationProvider (schema del connettore di ricerca)
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 623d54ef98986c603acc709bcd39ca1ac5504b89
-ms.sourcegitcommit: 9b5faa61c38b2d0c432b7f2dbee8c127b0e28a7e
+ms.openlocfilehash: ad478fd1d1c00ad5c7f866831cdfdf898557546b
+ms.sourcegitcommit: 61a4c522182aa1cacbf5669683d9570a3bf043b2
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/19/2021
-ms.locfileid: "122471557"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "122883341"
 ---
 # <a name="property-element-of-locationprovider-search-connector-schema"></a>Elemento property di locationProvider (schema del connettore di ricerca)
 
-<property>L'elemento facoltativo specifica le proprietà utilizzate dal provider di posizione. Queste proprietà sono specifiche di questo provider di località, quindi non esiste alcun set predefinito di nomi da usare. <property>L'elemento ha due attributi, come descritto in questo argomento.
+&lt;L'elemento &gt; proprietà facoltativo specifica le proprietà usate dal provider di posizione. Queste proprietà sono specifiche di questo provider di località, quindi non esiste alcun set predefinito di nomi da usare. &lt;L'elemento property ha due &gt; attributi, come descritto in questo argomento.
 
 ## <a name="syntax"></a>Sintassi
 
@@ -36,7 +36,7 @@ ms.locfileid: "122471557"
 
 
 
-## <a name="property-element-information"></a><property> Informazioni sugli elementi
+## <a name="ltpropertygt-element-information"></a>&lt;Informazioni &gt; sull'elemento property
 
 
 
@@ -49,7 +49,7 @@ ms.locfileid: "122471557"
  
 
 
-## <a name="property-attributes"></a><property> Attributi
+## <a name="ltpropertygt-attributes"></a>&lt;Attributi &gt; delle proprietà
 
 
 

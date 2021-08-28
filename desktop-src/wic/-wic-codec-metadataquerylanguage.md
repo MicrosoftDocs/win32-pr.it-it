@@ -4,16 +4,16 @@ ms.assetid: 5ffa0a69-b53d-4be3-b802-deaaa743e6bd
 title: Panoramica del linguaggio di query sui metadati
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 1c69effefd288f13c72239a41c5ace1a518775337cc496a2defa864d179cd6cc
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 41e141c543cae90ff99d8c0509a0f5802dba1139
+ms.sourcegitcommit: 61a4c522182aa1cacbf5669683d9570a3bf043b2
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "117668234"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "122885218"
 ---
 # <a name="metadata-query-language-overview"></a>Panoramica del linguaggio di query sui metadati
 
-Questo argomento presenta il linguaggio di query dei metadati per Windows Imaging Component (WIC). Usare il linguaggio di query dei metadati per creare espressioni che trovano dati specifici (elementi di metadati) e posizioni (blocchi di metadati) all'interno dei metadati di un'immagine.
+Questo argomento presenta il linguaggio di query dei metadati per Windows Imaging Component (WIC). Il linguaggio di query dei metadati consente di creare espressioni che trovano dati specifici (elementi di metadati) e posizioni (blocchi di metadati) all'interno dei metadati di un'immagine.
 
 In questo argomento sono contenute le sezioni seguenti.
 
@@ -21,24 +21,24 @@ In questo argomento sono contenute le sezioni seguenti.
 -   [Introduzione](#introduction)
 -   [Anatomia di un'espressione di percorso](#anatomy-of-a-path-expression)
     -   [Selezione blocco](#block-selection)
-    -   [Selezione dell'elemento](#item-selection)
+    -   [Selezione di elementi](#item-selection)
     -   [Carattere di escape](#escape-character)
     -   [Espressioni di esempio](#sample-expressions)
--   [Espressioni dei criteri dei metadati delle foto](#photo-metadata-policy-expressions)
+-   [Espressioni di criteri di metadati foto](#photo-metadata-policy-expressions)
 -   [Riepilogo del linguaggio di query sui metadati](#metadata-query-language-summary)
 -   [Argomenti correlati](#related-topics)
 
 ## <a name="prerequisites"></a>Prerequisiti
 
-Per comprendere questo argomento, è necessario avere familiarità con il sistema di metadati [WIC,](-wic-about-metadata.md) come descritto in Panoramica dei metadati WIC e accesso ai metadati, come descritto in [Panoramica](-wic-codec-readingwritingmetadata.md)della lettura e della scrittura di metadati immagine .
+Per comprendere questo argomento, è necessario avere familiarità con il sistema di metadati [WIC,](-wic-about-metadata.md) come descritto in WiC Metadata Overview and accessing metadata (Panoramica dei metadati WIC e accesso ai metadati), come descritto in [Overview of Reading and Writing Image Metadata](-wic-codec-readingwritingmetadata.md).
 
 ## <a name="introduction"></a>Introduzione
 
-Si interagisce con la piattaforma di metadati principalmente tramite due componenti Component Object Model (COM): un lettore di query, rappresentato [**dall'interfaccia IWICMetadataQueryReader**](/windows/desktop/api/Wincodec/nn-wincodec-iwicmetadataqueryreader) e un writer di query, rappresentato dall'interfaccia [**IWICMetadataQueryWriter.**](/windows/desktop/api/Wincodec/nn-wincodec-iwicmetadataquerywriter) Questi componenti consentono di leggere o scrivere metadati usando il linguaggio di query dei metadati. Il linguaggio di query descrive la sintassi di un'espressione di percorso e i componenti di query usano questa espressione di percorso per accedere ai metadati desiderati. Questa espressione di percorso descrive la posizione di un blocco o di un elemento di metadati.
+L'interazione con la piattaforma di metadati viene eseguita principalmente tramite due componenti Component Object Model (COM): un lettore di query, rappresentato [**dall'interfaccia IWICMetadataQueryReader,**](/windows/desktop/api/Wincodec/nn-wincodec-iwicmetadataqueryreader) e un writer di query, rappresentato dall'interfaccia [**IWICMetadataQueryWriter.**](/windows/desktop/api/Wincodec/nn-wincodec-iwicmetadataquerywriter) Questi componenti consentono di leggere o scrivere metadati usando il linguaggio di query dei metadati. Il linguaggio di query descrive la sintassi di un'espressione di percorso e i componenti della query usano questa espressione di percorso per accedere ai metadati desiderati. Questa espressione di percorso descrive la posizione di un blocco o di un elemento di metadati.
 
-Un blocco di metadati è un gruppo denominato di metadati in un formato specifico. Un blocco di metadati può contenere singoli elementi di metadati, ad esempio un autore o un'ora di creazione e blocchi di metadati aggiuntivi. Il nome di un blocco di metadati è determinato dal formato. Ad esempio, un blocco di metadati contenente i metadati app1 sarà denominato "app1". I formati di metadati comuni includono App1, Exif, IFD e XMP.
+Un blocco di metadati è un gruppo denominato di metadati in un formato specifico. Un blocco di metadati può contenere singoli elementi di metadati, ad esempio un autore o un'ora di creazione e blocchi di metadati aggiuntivi. Il nome di un blocco di metadati è determinato dal relativo formato. Ad esempio, un blocco di metadati contenente i metadati App1 sarà denominato "app1". I formati di metadati comuni includono App1, Exif, IFD e XMP.
 
-Un elemento di metadati è una coppia nome/valore che descrive caratteristiche come autore, titolo e classificazione.
+Un elemento di metadati è una coppia nome/valore che descrive caratteristiche quali autore, titolo e classificazione.
 
 Un'espressione di percorso contiene uno o più nomi di blocchi di metadati. Può anche specificare un elemento di metadati all'interno di un blocco di metadati. L'espressione di percorso seguente rappresenta un blocco App1 che contiene un blocco IFD che contiene l'elemento di metadati:
 
@@ -46,26 +46,26 @@ Un'espressione di percorso contiene uno o più nomi di blocchi di metadati. Può
 
 Il diagramma seguente illustra la struttura di un'immagine JPEG di esempio con quattro blocchi di metadati radice: App0, App1, XMP e un blocco sconosciuto. Ogni elemento evidenziato annota il tipo di metadati (blocco o elemento) e l'espressione di query usata per recuperare i dati.
 
-![Immagine jpeg con callout di metadati](graphics/jpegwithcallouts.png)
+![Immagine jpeg con callout dei metadati](graphics/jpegwithcallouts.png)
 
 > [!Note]  
-> Il contenuto di questo diagramma viene fatto riferimento in tutto il documento e viene usato in molti esempi.
+> In questo documento viene fatto riferimento al contenuto di questo diagramma e vengono usati in molti esempi.
 
  
 
 ## <a name="anatomy-of-a-path-expression"></a>Anatomia di un'espressione di percorso
 
-Per accedere ai metadati usando le API WIC, nella maggior parte dei casi è necessario usare un'espressione di query completa. Questo argomento illustra le espressioni completamente qualificate per l'accesso ai metadati. Se sono necessarie informazioni sui casi in cui vengono usate espressioni non completamente qualificate, vedere la sezione Espressione criteri metadati foto più avanti in questo documento.
+Per accedere ai metadati usando le API WIC, nella maggior parte dei casi è necessario usare un'espressione di query completa. In questo argomento vengono illustrate espressioni completi per l'accesso ai metadati. Se sono necessarie informazioni sui casi in cui vengono usate espressioni non qualificate, vedere la sezione Photo Metadata Policy Expression più avanti in questo documento.
 
-Che cos'è un'espressione di query completa? In WIC un'espressione completa è una stringa che inizia con la barra del carattere di percorso (/), seguita da un percorso di navigazione a un blocco di metadati o a un elemento di metadati specifico. Ogni passaggio all'interno del percorso di navigazione è separato da una barra, formando un'espressione per accedere a un blocco di metadati o a un elemento di metadati. Ad esempio, di seguito è riportata un'espressione di query completa che accede a Microsoft Photo Rating in un blocco IFD annidato in un blocco App1:
+Che cos'è un'espressione di query completa? In WIC un'espressione completa è una stringa che inizia con la barra del carattere di percorso (/), seguita da un percorso di navigazione a un blocco di metadati o a un elemento di metadati specifico. Ogni passaggio all'interno del percorso di navigazione è separato da una barra, che forma un'espressione per l'accesso a un blocco di metadati o a un elemento di metadati. Ad esempio, di seguito è riportata un'espressione di query completa che accede a Microsoft Photo Rating in un blocco IFD annidato in un blocco App1:
 
 -   /app1/ifd/{ushort=18249}
 
-Quando WIC analizza questa espressione, cerca innanzitutto il blocco di metadati App1 all'interno dei metadati dell'immagine. Se viene trovato il blocco App1, continua la ricerca del blocco di metadati IFD annidato. Se viene trovato il blocco IFD, cerca l'elemento di metadati specifico, in questo caso la classificazione MicrosoftPhoto sotto il tag 18249, all'interno del blocco di metadati IFD. Se in qualsiasi momento WIC non trova un blocco di metadati o un elemento, interrompe la query.
+Quando WIC analizza questa espressione, cerca prima di tutto il blocco di metadati App1 all'interno dei metadati dell'immagine. Se il blocco App1 viene trovato, continua la ricerca del blocco di metadati IFD annidato. Se viene trovato il blocco IFD, cerca l'elemento di metadati specifico, in questo caso la classificazione MicrosoftPhoto sotto il tag 18249, all'interno del blocco di metadati IFD. Se in qualsiasi momento WIC non trova un blocco di metadati o un elemento, interrompe la query.
 
 ### <a name="block-selection"></a>Selezione blocco
 
-L'espressione di query dei metadati WIC più semplice è un'espressione per ottenere un lettore/writer di query per un blocco di metadati specifico. L'ottenimento di un lettore/writer di query consente di indirizzare le query successive direttamente a un blocco di metadati annidato senza gestire il relativo blocco padre. Un'espressione di query di selezione del blocco è un percorso di navigazione al blocco di metadati desiderato. Ad esempio, nella figura precedente sono presenti cinque blocchi di metadati, due dei quali sono annidati in altri blocchi di metadati. Di seguito sono riportate le espressioni di percorso per ogni blocco di metadati nell'esempio JPEG:
+L'espressione di query dei metadati WIC più semplice è un'espressione per ottenere un lettore/writer di query per un blocco di metadati specifico. L'acquisizione di un lettore/writer di query consente di indirizzare le query successive direttamente a un blocco di metadati annidati senza gestire il relativo blocco padre. Un'espressione di query di selezione blocchi è un percorso di navigazione al blocco di metadati desiderato. Nella figura precedente, ad esempio, sono presenti cinque blocchi di metadati, due dei quali sono annidati in altri blocchi di metadati. Di seguito sono riportate le espressioni di percorso per ogni blocco di metadati nell'esempio JPEG:
 
 -   /app0
 -   /app1
@@ -73,13 +73,13 @@ L'espressione di query dei metadati WIC più semplice è un'espressione per otte
 -   /app1/ifd/exif
 -   /xmp
 
-Quando si usa un lettore/writer di query per eseguire una query, restituisce un nuovo lettore/writer di query che esegue query nell'ambito del blocco di metadati specificato. Ad esempio, se si esegue la query "/app1", viene ottenuto un nuovo lettore di query e le query al nuovo lettore sono relative al blocco App1. Ciò significa che la query "/ifd" è valida per il nuovo lettore perché il blocco App1 contiene un blocco IFD. Tuttavia, "/xmp" non funziona perché questo blocco App1 non contiene un blocco di metadati XMP.
+Quando si usa un lettore/writer di query per eseguire una query, viene restituito un nuovo lettore/writer di query che consente di eseguire query nell'ambito del blocco di metadati specificato. Ad esempio, se si esegue la query "/app1", viene ottenuto un nuovo lettore di query e le query al nuovo lettore sono relative al blocco App1. Ciò significa che la query "/ifd" è valida per il nuovo lettore perché il blocco App1 contiene un blocco IFD. Tuttavia, "/xmp" non funziona perché questo blocco App1 non contiene un blocco di metadati XMP.
 
-Il linguaggio di query supporta anche una notazione di indice. La notazione dell'indice fornisce l'accesso a un blocco di metadati specifico quando esistono più blocchi dello stesso tipo. Per l'esempio JPEG, è possibile usare l'espressione di percorso indicizzato seguente:
+Il linguaggio di query supporta anche una notazione dell'indice. La notazione dell'indice fornisce l'accesso a un blocco di metadati specifico quando esistono più blocchi dello stesso tipo. Per l'esempio JPEG, è possibile usare l'espressione di percorso indicizzato seguente:
 
--   /\[0 \] \[ app1/0 \] ifd
+-   /\[0 \] app1/ \[ 0 \] ifd
 
-Nel linguaggio di query tutti gli indici iniziano da zero. Nell'espressione precedente il primo zero esegue query per il primo blocco App1 e il secondo zero esegue una query sul primo blocco IFD annidato. La notazione dell'indice può comunque essere usata anche quando non esistono più blocchi dello stesso tipo. Se l'esempio JPEG includesse un secondo blocco App1 con un blocco IFD incorporato, l'espressione "/ \[ 1 app1/ifd" verrebbe usata per accedere al secondo \] blocco App1.
+Nel linguaggio di query tutti gli indici iniziano da zero. Nell'espressione precedente il primo zero esegue una query per il primo blocco App1 e il secondo zero esegue una query sul primo blocco IFD annidato. La notazione dell'indice può comunque essere usata anche quando non esistono più blocchi dello stesso tipo. Se nell'esempio JPEG è incluso un secondo blocco App1 con un blocco IFD incorporato, viene usata l'espressione "/ \[ 1 app1/ifd" per accedere al secondo \] blocco App1.
 
 La notazione dell'indice diventa più comune quando si gestiscono blocchi TEXt PNG perché è probabile che l'immagine PNG abbia più di un blocco tEXt.
 
@@ -88,26 +88,26 @@ La notazione dell'indice diventa più comune quando si gestiscono blocchi TEXt P
 
  
 
-### <a name="item-selection"></a>Selezione dell'elemento
+### <a name="item-selection"></a>Selezione di elementi
 
 È possibile accedere agli elementi di metadati in un blocco di metadati compilando le espressioni di selezione del blocco. Si considerino le proprietà di classificazione XMP e Microsoft Photo nell'esempio JPEG. Questi metadati sono presenti in due blocchi di metadati: i blocchi App1/IFD e XMP. Pertanto, è possibile usare più di un'espressione per accedere agli stessi dati. L'espressione seguente accede alla classificazione MicrosoftPhoto nel blocco XMP:
 
 -   /xmp/xmp:Rating
 
-La parte "xmp:" dell'espressione è un identificatore descrittivo dello schema. XMP è uno standard estendibile e consente alle entità di terze parti di pubblicare i propri schemi che definiscono come archiviare determinati elementi di metadati. Uno schema XMP è completamente identificato da un URL, ma WIC fornisce un set di identificatori descrittivi per schemi noti. Per altre informazioni, vedere [l'argomento Query sui metadati del formato immagine](-wic-native-image-format-metadata-queries.md) nativa.
+La parte "xmp:" dell'espressione è un identificatore descrittivo dello schema. XMP è uno standard estendibile e consente a entità di terze parti di pubblicare i propri schemi che definiscono come archiviare determinati elementi di metadati. Uno schema XMP è completamente identificato da un URL, ma WIC fornisce un set di identificatori descrittivi per gli schemi noti. Per altre informazioni, vedere [l'argomento Query sui metadati del formato immagine](-wic-native-image-format-metadata-queries.md) nativa.
 
-Per le immagini JPEG, le informazioni sulla classificazione possono essere archiviate anche all'interno del blocco IFD annidato app1. Tuttavia, a differenza dell'esempio di classificazione XMP, il blocco IFD non usa un nome di schema per accedere alle informazioni sulla classificazione. Si usa invece un'espressione dati. L'espressione seguente viene usata per accedere alla classificazione MicrosoftPhoto nel blocco IFD annidato App1:
+Per le immagini JPEG, le informazioni sulla classificazione possono essere archiviate anche all'interno del blocco IFD annidato App1. Tuttavia, a differenza dell'esempio di classificazione XMP, il blocco IFD non usa un nome di schema per accedere alle informazioni sulla classificazione. In alternativa, si usa un'espressione dati. L'espressione seguente viene usata per accedere alla classificazione MicrosoftPhoto nel blocco IFD annidato App1:
 
 -   /app1/ifd/{ushort=18249}
 
-In questa espressione, la parte "/app1/ifd" dell'espressione è il percorso di navigazione del blocco IFD (come descritto in precedenza nella sezione Selezione blocco). La seconda parte dell'espressione "/{ushort=18249}" accede ai dati. Questa parte dell'espressione indica al parser di query di trovare i dati incorporati nel tag short senza segno con l'identificatore di tag 18249.
+In questa espressione la parte "/app1/ifd" dell'espressione è il percorso di navigazione del blocco IFD (come descritto in precedenza nella sezione Selezione blocco). La seconda parte dell'espressione "/{ushort=18249}" accede ai dati. Questa parte dell'espressione indica al parser di query di trovare i dati incorporati nel tag short senza segno con l'identificatore di tag 18249.
 
 > [!Note]  
-> Per un elenco dei formati di metadati comuni supportati da ogni formato di immagine, vedere l'argomento Query sui metadati del formato [immagine](-wic-native-image-format-metadata-queries.md) nativa.
+> Per un elenco dei formati di metadati comuni supportati da ogni formato di immagine in , vedere l'argomento Query sui [metadati in formato immagine](-wic-native-image-format-metadata-queries.md) nativa.
 
  
 
-{ushort=18249} è un'espressione dati e può assumere diverse forme. Un'espressione dati è un'espressione in due parti contenente il tag o la chiave dei metadati richiesti, in questo caso "18249" e il tipo di dati della chiave, in questo caso "ushort". Le due parti sono separate da un segno di uguale (=). WICsporta la maggior parte dei tipi di dati C/C++ comuni. Il linguaggio di query accetta i tipi di dati seguenti:
+{ushort=18249} è un'espressione dati e può assumere diverse forme. Un'espressione dati è un'espressione in due parti contenente il tag o la chiave di metadati richiesta, in questo caso "18249" e il tipo di dati della chiave, in questo caso "ushort". Le due parti sono separate da un segno di uguale (=). WICsporta la maggior parte dei tipi di dati C/C++ comuni. Il linguaggio di query accetta i tipi di dati seguenti:
 
 -   char
 -   uchar
@@ -153,7 +153,7 @@ Nella tabella seguente vengono fornite alcune espressioni di esempio e descrizio
 
 | Expression                     | Descrizione                                                                                                                                                                                                                                                                                                                                                      |
 |--------------------------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| ifd/xmp/exif:Author            | Corrisponde al percorso di navigazione seguente: IFD block -> XMP block -> "Author" nello schema "Exif".                                                                                                                                                                                                                                            |
+| ifd/xmp/exif:Author            | Corrisponde al percorso di navigazione seguente: blocco IFD -> blocco XMP -> proprietà "Author" nello schema "Exif".                                                                                                                                                                                                                                            |
 | /\[1 \] ifd/ \[ 0 \] xmp/exif:Author | Uguale al primo elemento in questa tabella, ad eccezione del fatto che il prefisso descrive l'elemento da esplorare \[ \# \] in caso di conflitto di nomi.                                                                                                                                                                                                                                |
 | /ifd/{ushort=700}/Author       | Uguale al primo elemento di questa tabella, ad eccezione del fatto che usa un'espressione dati per fare riferimento al blocco XMP anziché al nome di blocco "xmp" (il blocco XMP è incorporato nell'identificatore di tag breve senza segno 700). Inoltre, la proprietà "Author" non specifica uno schema. Il parser di query tenterà di trovare la corrispondenza con la proprietà in tutti gli schemi e restituirà la prima corrispondenza. |
 | /ifd/xmp                       | Fornisce un percorso di navigazione a un blocco di metadati. Se il blocco viene trovato, viene restituito un nuovo reader/writer di metadati.                                                                                                                                                                                                                                                 |
@@ -179,7 +179,7 @@ La tabella seguente fornisce alcuni esempi non validi e i motivi per cui verrebb
 
 ## <a name="photo-metadata-policy-expressions"></a>Espressioni di criteri di metadati foto
 
-Come indicato in precedenza, un'espressione di query completa inizia con una barra (/). Le espressioni che non iniziano con la barra vengono valutate come espressioni di criteri. Un'espressione dei criteri consente di eseguire una query sui metadati delle foto per ottenere informazioni relative Windows [proprietà della shell.](https://msdn.microsoft.com/library/ms788673(VS.85).aspx) Nella sezione Selezione dati più indietro in questo documento è stata usata l'espressione "/xmp/xmp:Rating" per accedere alla proprietà rating XMP. È anche possibile eseguire query su questa proprietà usando l'espressione di criteri seguente:
+Come indicato in precedenza, un'espressione di query completa inizia con una barra (/). Le espressioni che non iniziano con la barra vengono valutate come espressioni di criteri. Un'espressione di criteri consente di eseguire una query sui metadati delle foto per ottenere informazioni relative Windows [proprietà della shell.](https://msdn.microsoft.com/library/ms788673(VS.85).aspx) Nella sezione Selezione dati più indietro in questo documento è stata usata l'espressione "/xmp/xmp:Rating" per accedere alla proprietà rating XMP. È anche possibile eseguire query su questa proprietà usando l'espressione di criteri seguente:
 
 -   System.SimpleRating
 
@@ -202,7 +202,7 @@ Le espressioni di criteri dei metadati foto offrono un livello più elevato di a
 
 ## <a name="metadata-query-language-summary"></a>Riepilogo del linguaggio di query sui metadati
 
-La tabella seguente è una definizione formale del linguaggio di query dei metadati WIC. Ogni simbolo di grammatica rappresenta un'espressione che è costituito da altri simboli. L'espressione può essere un altro simbolo o una sequenza di altri simboli separati dalla barra verticale ( \| ), che indica una scelta "or". L'intera espressione a destra è una possibile sostituzione per il simbolo specificato a sinistra. 
+La tabella seguente è una definizione formale del linguaggio di query dei metadati WIC. Ogni simbolo di grammatica rappresenta un'espressione che è costituito da altri simboli. L'espressione può essere un altro simbolo o una sequenza di altri simboli separati dalla barra verticale ( ), che \| indica una scelta "or". L'intera espressione a destra è una possibile sostituzione per il simbolo specificato a sinistra. 
 
 | Simbolo                   | Expression                                                                                                                                                                  |
 |--------------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
@@ -210,12 +210,12 @@ La tabella seguente è una definizione formale del linguaggio di query dei metad
 | \<property path>    | \<metadata item> \| \<property path> '/' \<property path>                                                                                                    |
 | \<metadata item>    | \<index name> \| \<item name> \| \<schema name> ':' \<item name>                                                                                        |
 | \<schema name>      | \<item name>                                                                                                                                                           |
-| \<item name>        | \<metadata item> \| <indexed item><index>                                                                                                                  |
+| \<item name>        | \<metadata item>\| <indexed item>&lt; Indice&gt;                                                                                                                  |
 | \<indexed item>     | \<item> \| \<implied metadata>\<item>                                                                                                                        |
 | \<implied metadata> | '<' \<name> '>'                                                                                                                                                    |
-| \<item>             | \<name> \| \<index> \<data> \| \<data>                                                                                                                  |
+| \<item>             | \<name>\| \& &gt; \<data> lt;index \|\<data>                                                                                                                  |
 | \<data>             | '{' \<data type> '=' \<value> '}'                                                                                                                                 |
-| \<index>            | '\[' \<number> \| \<star> '\]'                                                                                                                                    |
+| \&lt;index&gt;            | '\[' \<number> \| \<star> '\]'                                                                                                                                    |
 | \<data type>        | 'char' \| 'uchar' \| 'short' \| 'ushort' \| 'long' \| 'ulong' \| 'int' \| 'uint' \| 'longlong' \| 'ulonglong' \| 'float' \| \| 'double' 'str' \| 'wstr' \| 'guid' \| 'bool' |
 | \<data value>       | \<number> \| \<name> \| \<guid>                                                                                                                              |
 | \<star>             | '\*'                                                                                                                                                                        |

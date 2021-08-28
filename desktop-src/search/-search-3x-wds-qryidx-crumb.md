@@ -1,19 +1,19 @@
 ---
-description: Informazioni su come usare l'argomento CRUMB Windows ricerca come mezzo per controllare l'ambito di una ricerca.
+description: Informazioni su come usare l'argomento CRUMB in Windows ricerca come mezzo per controllare l'ambito di una ricerca.
 ms.assetid: b0b974ae-0573-45e4-888e-07138604b62e
 title: Argomento CRUMB (Windows ricerca)
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 5ec64fdcf9b15e0b7c87ea2ff0b122e22a8f8917bbacb9d9c3c3da274123f607
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: b2a1ae426881473a631a11b40ec8e567f600daa4
+ms.sourcegitcommit: 61a4c522182aa1cacbf5669683d9570a3bf043b2
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "118463243"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "122886824"
 ---
 # <a name="crumb-argument-windows-search"></a>Argomento CRUMB (Windows ricerca)
 
-L'argomento supporta istruzioni AQS (Advanced Query Syntax) complete ed è particolarmente utile per controllare `crumb` l'ambito di una ricerca. Oltre agli argomenti AQS, l'argomento può assumere un parametro speciale in Windows Vista e i parametri e in XP, come descritto più `crumb` `location` avanti in questo `kind` `store` argomento.
+L'argomento supporta istruzioni AQS (Advanced Query Syntax) complete ed è particolarmente utile per controllare `crumb` l'ambito di una ricerca. Oltre ai parametri AQS, l'argomento può assumere un parametro speciale in Windows Vista e i parametri e in XP, come descritto più `crumb` `location` avanti in questo `kind` `store` argomento.
 
 Questo argomento è organizzato come segue:
 
@@ -39,7 +39,7 @@ crumb=<column>:<value>[,<label>][,<column>:<value>[,<label>]]&
 
 
 
-La <column> parte è qualsiasi proprietà nel sistema di proprietà e <value> portion è un valore valido per tale proprietà. La <label> parte è un alias facoltativo per la proprietà visualizzata come suggerimento dell'interfaccia utente.
+La parte della colonna è qualsiasi proprietà nel sistema di proprietà e la parte del valore &lt; è un valore valido per tale &gt; &lt; &gt; proprietà. La <label> parte è un alias facoltativo per la proprietà visualizzata come suggerimento dell'interfaccia utente.
 
 ### <a name="general-examples"></a>Esempi generali
 
@@ -56,7 +56,7 @@ crumb=location:c%3a%5cMyVacationPix,Vacation&
 
 ## <a name="using-crumb-with-vista-location"></a>Uso di crumb con Vista (posizione)
 
-Nel parametro crumb, Windows Vista supporta AQS completo e anche la proprietà , che ha un'implementazione speciale disponibile solo `location` in Windows Vista. È possibile usare una stringa AQS o la proprietà `location` all'interno di un singolo parametro crumb, ma non entrambi. Se il parametro crumb include AQS, tutti gli altri elementi nel parametro crumb vengono ignorati.
+Nel parametro crumb Windows Vista supporta AQS completo e anche la proprietà , che ha un'implementazione speciale disponibile solo `location` in Windows Vista. È possibile usare una stringa AQS o la proprietà `location` all'interno di un singolo parametro crumb, ma non entrambi. Se il parametro crumb include AQS, tutti gli altri elementi nel parametro crumb vengono ignorati.
 
 La `location` proprietà consente di specificare un percorso in cui eseguire la ricerca. Windows Vista può ignorare l'indicizzatore e attraversare direttamente la directory se il percorso non rientra nell'ambito della ricerca per indicizzazione dell'indicizzatore. Di conseguenza, queste ricerche possono essere più lente delle ricerche che usano l'indicizzatore.
 
@@ -67,7 +67,7 @@ Quando si specifica una `location` proprietà, sono supportati due parametri agg
 | Parametro | Valori                  | Descrizione                                                                                                                                                                       |
 |-----------|-------------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | Inclusione | include, exclude        | Specifica se la query deve includere o escludere elementi da tale percorso. L'impostazione predefinita è "Include". Windows Vista non supporta le esclusioni senza inclusioni. (Vedere l'esempio) |
-| ricorsione | ricorsivo, non ricorsivo | Specifica se la ricerca deve essere ricorsiva di tutte le sottocartelle a partire dal valore definito nel percorso:<value>. L'impostazione predefinita è "Recursive".                             |
+| ricorsione | ricorsivo, non ricorsivo | Specifica se la ricerca deve essere ricorsiva in tutte le sottocartelle a partire dal valore definito nel percorso: &lt; value &gt; . L'impostazione predefinita è "Recursive".                             |
 
 
 
@@ -102,7 +102,7 @@ search-ms:crumb=location:c%3a%5cDocuments&crumb=kind:pics&
 
 
 
-Nel primo esempio viene eseguita una ricerca di "vacation" a partire dal percorso shell://Personal (un collegamento speciale alla cartella Documenti dell'utente), inclusa la cartella e tutte le sottocartelle. Vedere la tabella seguente.
+Nel primo esempio viene eseguita una ricerca di "vacation" a partire dal percorso shell://Personal (un collegamento speciale alla cartella Documenti dell'utente), incluse la cartella e tutte le sottocartelle. Vedere la tabella seguente.
 
 Nel secondo esempio viene eseguita una ricerca all'interno di C: \\ Immagini, ma non in C: \\ Immagini \\ duplicate.
 
@@ -125,7 +125,7 @@ crumb=location:shell%3a<LocationName>&
 
 ## <a name="using-crumb-with-windows-xp-kind-and-store"></a>Uso di crumb con Windows XP (tipo e archivio)
 
-Ad Windows ricerca in Windows XP (WDS 3.x), i termini "kind" e "store" di AQS hanno un'implementazione speciale. I valori "kind" sono gli stessi [usati in WDS 2.x.](../lwef/-search-2x-wds-perceivedtype.md) I valori "store" includono quanto segue:
+Ad Windows ricerca in Windows XP (WDS 3.x), i termini AQS "kind" e "store" hanno un'implementazione speciale. I valori "kind" sono gli stessi [usati in WDS 2.x.](../lwef/-search-2x-wds-perceivedtype.md) I valori "store" includono quanto segue:
 
 -   Mapi
 -   file

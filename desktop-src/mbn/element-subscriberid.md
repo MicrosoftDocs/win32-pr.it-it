@@ -7,12 +7,12 @@ MSHAttr:
 title: SubscriberID
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 71a97eb32d38e058189a6523b0c8c77fb5b006d2
-ms.sourcegitcommit: 4665ebce0c106bdb52eef36e544280b496b6f50b
+ms.openlocfilehash: 0f8d45c17d089775293c9fc8cdee3ee50fda58f1
+ms.sourcegitcommit: 61a4c522182aa1cacbf5669683d9570a3bf043b2
 ms.translationtype: MT
 ms.contentlocale: it-IT
 ms.lasthandoff: 08/26/2021
-ms.locfileid: "122985404"
+ms.locfileid: "122885380"
 ---
 # <a name="span-idwwan_profile_v4element_subscriberidspansubscriberid"></a><span id="WWAN_profile_v4.element_SubscriberID"></span>SubscriberID
 
@@ -60,9 +60,7 @@ Nessuno.
 ## <a name="requirements"></a>Requisiti
 
 
-| Requisito | Valore |
-|------------|----------|
-| <p>Spazio dei nomi</p> | <p>https://www.microsoft.com/networking/WWAN/profile/v4</p> | 
+| | | <p>Spazio dei nomi</p> | <p>https://www.microsoft.com/networking/WWAN/profile/v4</p> | 
 
 
  

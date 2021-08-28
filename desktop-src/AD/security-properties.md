@@ -8,16 +8,16 @@ keywords:
 - Attributi di sicurezza utente AD
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 5dfe23252002f2ffbbba3f8e8a8faf5a2d36ce348bdbd7503c0d99a816a81902
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: dbd5dfdbe84234f15b76ceb1799c69cdc0a5bafb
+ms.sourcegitcommit: 61a4c522182aa1cacbf5669683d9570a3bf043b2
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119024889"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "122881220"
 ---
 # <a name="user-security-attributes"></a>Attributi di sicurezza utente
 
-Oltre a denominare le proprietà per gli oggetti utente, ad esempio [**objectGUID**](/windows/desktop/ADSchema/a-objectguid), [**objectSid**](/windows/desktop/ADSchema/a-objectsid), [**cn**](/windows/desktop/ADSchema/a-cn), [**distinguishedName**](/windows/desktop/ADSchema/a-distinguishedname)e così via, sono disponibili altre proprietà di sicurezza usate per l'accesso, l'accesso alla rete e il controllo di accesso. Queste proprietà vengono usate dal sistema di Windows 2000. Queste proprietà possono essere visualizzate e gestite dallo snap-in Utenti e computer di Active Directory.
+Oltre a denominare le proprietà per gli oggetti utente, ad esempio [**objectGUID**](/windows/desktop/ADSchema/a-objectguid), [**objectSid**](/windows/desktop/ADSchema/a-objectsid), [**cn**](/windows/desktop/ADSchema/a-cn), [**distinguishedName**](/windows/desktop/ADSchema/a-distinguishedname)e così via, sono disponibili altre proprietà di sicurezza usate per l'accesso, l'accesso alla rete e il controllo di accesso. Queste proprietà vengono usate dal sistema Windows 2000. Queste proprietà possono essere visualizzate e gestite dallo snap-in Utenti e computer di Active Directory.
 
 <dl> <dt>
 
@@ -31,9 +31,9 @@ Oltre a denominare le proprietà per gli oggetti utente, ad esempio [**objectGUI
 <span id="altSecurityIdentities"></span><span id="altsecurityidentities"></span><span id="ALTSECURITYIDENTITIES"></span>[**altSecurityIdentities**](/windows/desktop/ADSchema/a-altsecurityidentities)
 </dt> <dd>
 
-[**L'attributo altSecurityIdentities**](/windows/desktop/ADSchema/a-altsecurityidentities) è un attributo multivalore che contiene i mapping per i certificati X.509 o gli account utente Kerberos esterni a questo utente ai fini dell'autenticazione. Diversi pacchetti di sicurezza, tra cui il pacchetto di autenticazione a chiave pubblica e Kerberos, usano questi dati per autenticare gli utenti quando presentano la forma alternativa di identificazione, ad esempio certificato, ticket Kerberos UNIX e così via. Creare un token Windows 2000 basato sull'account utente corrispondente in modo che possa accedere alle risorse di sistema.
+[**L'attributo altSecurityIdentities**](/windows/desktop/ADSchema/a-altsecurityidentities) è un attributo multivalore che contiene i mapping per i certificati X.509 o gli account utente Kerberos esterni a questo utente ai fini dell'autenticazione. Diversi pacchetti di sicurezza, tra cui il pacchetto di autenticazione a chiave pubblica e Kerberos, usano questi dati per autenticare gli utenti quando presentano la forma alternativa di identificazione, ad esempio certificato, ticket Kerberos UNIX e così via. Creare un token Windows 2000 in base all'account utente corrispondente in modo che possa accedere alle risorse di sistema.
 
-Per i certificati X.509, i valori devono essere i nomi dell'autorità di certificazione e del soggetto nei certificati 509v3, emessi da un'autorità di certificazione pubblica esterna, che esevranno essere mappati all'account utente usato per trovare un account per l'autenticazione. Il pacchetto SSL (Schannel) usa la sintassi seguente: X509: <somecertinfotype> somecertinfo. Ad esempio, il valore seguente specifica il DN dell'autorità emittente " " con il \<I\> DN "C=US,O=InternetCA,CN=APublicCertificateAuthority" e il DN dell'oggetto " " con il \<S\> DN "C=US,O=Fabrikam,OU=Sales,CN=Jeff Smith".
+Per i certificati X.509, i valori devono essere i nomi dell'autorità di certificazione e del soggetto nei certificati 509v3, emessi da un'autorità di certificazione pubblica esterna, che esevranno essere mappati all'account utente usato per trovare un account per l'autenticazione. Il pacchetto SSL (Schannel) usa la sintassi seguente: X509: &lt; somecertinfotype &gt; somecertinfo. Ad esempio, il valore seguente specifica il DN dell'autorità emittente " " con il \<I\> DN "C=US,O=InternetCA,CN=APublicCertificateAuthority" e il DN dell'oggetto " " con il \<S\> DN "C=US,O=Fabrikam,OU=Sales,CN=Jeff Smith".
 
 
 ```C++
@@ -88,7 +88,7 @@ Non replicata. [**L'attributo badPwdCount**](/windows/desktop/ADSchema/a-badpwdc
 
 [**L'attributo homeDirectory**](/windows/desktop/ADSchema/a-homedirectory) specifica il percorso della home directory per l'utente. La stringa può essere Null.
 
-Se [**homeDrive è**](/windows/desktop/ADSchema/a-homedrive) impostato e specifica una lettera di unità, [**homeDirectory**](/windows/desktop/ADSchema/a-homedirectory) deve essere un percorso UNC. Il percorso deve essere un percorso UNC di rete della directory della \\ \\ condivisione del server \\ \\ form. Questo valore può essere una stringa Null.
+Se [**homeDrive è**](/windows/desktop/ADSchema/a-homedrive) impostato e specifica una lettera di unità, [**homeDirectory**](/windows/desktop/ADSchema/a-homedirectory) deve essere un percorso UNC. Il percorso deve essere un percorso UNC di rete della directory di \\ \\ condivisione del server \\ \\ form. Questo valore può essere una stringa Null.
 
 Se [**homeDrive**](/windows/desktop/ADSchema/a-homedrive) non è impostato, [**homeDirectory**](/windows/desktop/ADSchema/a-homedirectory) deve essere un percorso locale, ad esempio C: \\ mylocaldir.
 
@@ -106,7 +106,7 @@ Se [**homeDrive**](/windows/desktop/ADSchema/a-homedrive) non è impostato, [**h
 
 
 
-dove " \<drive letter\> " è la lettera dell'unità di cui eseguire il mapping. Esempio:
+dove " \<drive letter\> " è la lettera dell'unità di cui eseguire il mapping. Ad esempio:
 
 
 ```C++
@@ -136,7 +136,7 @@ Non replicata. [**L'attributo lastLogon**](/windows/desktop/ADSchema/a-lastlogon
 <span id="lmPwdHistory"></span><span id="lmpwdhistory"></span><span id="LMPWDHISTORY"></span>[**lmPwdHistory**](/windows/desktop/ADSchema/a-lmpwdhistory)
 </dt> <dd>
 
-[**L'attributo lmPwdHistory**](/windows/desktop/ADSchema/a-lmpwdhistory) è la cronologia delle password dell'utente in formato unidiredirezione LAN Manager (LM). L'OWF LM viene usato per la compatibilità con i client DIN Manager 2.x, Windows 95 e Windows 98. Questo attributo viene usato solo dal sistema operativo. Tenere presente che non è possibile derivare la password in testo non crittografato dal formato OWF della password.
+[**L'attributo lmPwdHistory**](/windows/desktop/ADSchema/a-lmpwdhistory) è la cronologia delle password dell'utente in formato unidiredirezione LAN Manager (LM). L'OWF LM viene usato per la compatibilità con i client LAN Manager 2.x, Windows 95 e Windows 98. Questo attributo viene usato solo dal sistema operativo. Tenere presente che non è possibile derivare la password in testo non crittografato dal formato OWF della password.
 
 </dd> <dt>
 
@@ -164,7 +164,7 @@ Non replicata. [**L'attributo logonCount**](/windows/desktop/ADSchema/a-logoncou
 <span id="memberOf"></span><span id="memberof"></span><span id="MEMBEROF"></span>[**Memberof**](/windows/desktop/ADSchema/a-memberof)
 </dt> <dd>
 
-[**L'attributo memberOf**](/windows/desktop/ADSchema/a-memberof) è un attributo multivalore che contiene gruppi di cui l'utente è un membro diretto, ad eccezione del gruppo primario, rappresentato da [**primaryGroupId**](/windows/desktop/ADSchema/a-primarygroupid). L'appartenenza al gruppo dipende dal controller di dominio (DC) da cui viene recuperato questo attributo:
+[**L'attributo memberOf**](/windows/desktop/ADSchema/a-memberof) è un attributo multivalore che contiene gruppi di cui l'utente è un membro diretto, ad eccezione del gruppo primario, rappresentato da [**primaryGroupId**](/windows/desktop/ADSchema/a-primarygroupid). L'appartenenza al gruppo dipende dal controller di dominio da cui viene recuperato questo attributo:
 
 -   In un controller di dominio per il dominio che contiene l'utente, [**memberOf**](/windows/desktop/ADSchema/a-memberof) per l'utente è completo rispetto all'appartenenza per i gruppi in tale dominio; tuttavia, **memberOf** non contiene l'appartenenza dell'utente ai gruppi locali e globali del dominio in altri domini.
 -   In un server GC, [**memberOf**](/windows/desktop/ADSchema/a-memberof) per l'utente è completo rispetto a tutte le appartenenze a gruppi universali.
@@ -187,7 +187,7 @@ Questo attributo non viene archiviato, ma è un attributo di back link calcolato
 <span id="otherMailbox"></span><span id="othermailbox"></span><span id="OTHERMAILBOX"></span>[**Other(Altro)**](/windows/desktop/ADSchema/a-othermailbox)
 </dt> <dd>
 
-[**L'attributo otherAttribute**](/windows/desktop/ADSchema/a-othermailbox) è un attributo multivalore che contiene altri indirizzi di posta elettronica aggiuntivi in un modulo, ad esempio "CCMAIL: JeffSmith".
+[**L'attributo otherMail**](/windows/desktop/ADSchema/a-othermailbox) è un attributo multivalore che contiene altri indirizzi di posta elettronica aggiuntivi in un modulo, ad esempio "CCMAIL: JeffSmith".
 
 </dd> <dt>
 
@@ -201,7 +201,7 @@ La data di scadenza della password non è un attributo dell'oggetto utente. Si t
 <span id="primaryGroupID"></span><span id="primarygroupid"></span><span id="PRIMARYGROUPID"></span>[**primaryGroupId**](/windows/desktop/ADSchema/a-primarygroupid)
 </dt> <dd>
 
-[**L'attributo primaryGroupId**](/windows/desktop/ADSchema/a-primarygroupid) è un attributo a valore singolo che contiene [**il primaryGroupToken**](/windows/desktop/ADSchema/a-primarygrouptoken) del gruppo che è il gruppo primario dell'oggetto. Il gruppo primario dell'oggetto non è incluso [**nell'attributo memberOf.**](/windows/desktop/ADSchema/a-memberof) Ad esempio, per impostazione predefinita, il gruppo primario di un oggetto utente è **primaryGroupToken** del gruppo Domain Users, ma il gruppo Domain Users non fa parte dell'attributo **memberOf dell'oggetto** utente.
+[**L'attributo primaryGroupId**](/windows/desktop/ADSchema/a-primarygroupid) è un attributo a valore singolo che contiene [**il primaryGroupToken**](/windows/desktop/ADSchema/a-primarygrouptoken) del gruppo che è il gruppo primario dell'oggetto. Il gruppo primario dell'oggetto non è incluso [**nell'attributo memberOf.**](/windows/desktop/ADSchema/a-memberof) Ad esempio, per impostazione predefinita, il gruppo primario di un oggetto utente è **il primaryGroupToken** del gruppo Domain Users, ma il gruppo Domain Users non fa parte dell'attributo **memberOf dell'oggetto** utente.
 
 </dd> <dt>
 
@@ -279,8 +279,8 @@ I flag seguenti descrivono il tipo di account. È possibile impostare un solo va
 |---------------------------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | ACCOUNT \_ NORMALE UF \_             | Si tratta di un tipo di account predefinito che rappresenta un utente tipico.                                                                                                                                                                                  |
 | UF \_ TEMP \_ DUPLICATE \_ ACCOUNT    | Si tratta di un account per gli utenti il cui account primario si trova in un altro dominio. Questo account fornisce l'accesso utente a questo dominio, ma non a qualsiasi dominio che considera attendibile questo dominio. User Manager fa riferimento a questo tipo di account come account utente locale. |
-| ACCOUNT DI \_ ATTENDIBILITÀ WORKSTATION UF \_ \_ | Si tratta di un account computer per una workstation Windows NT/Windows 2000 Professional o Windows NT Server/Windows 2000 Server membro di questo dominio.                                                                                     |
-| ACCOUNT TRUST DEL SERVER UF \_ \_ \_      | Si tratta di un account computer per un controller Windows NT backup di backup che è membro di questo dominio.                                                                                                                                           |
+| ACCOUNT DI \_ ATTENDIBILITÀ WORKSTATION UF \_ \_ | Si tratta di un account computer per un server Windows NT Workstation/Windows 2000 Professional o Windows NT Server/Windows 2000 membro di questo dominio.                                                                                     |
+| ACCOUNT TRUST DEL SERVER UF \_ \_ \_      | Si tratta di un account computer per Windows NT controller di dominio di Backup di backup che è membro di questo dominio.                                                                                                                                           |
 | ACCOUNT TRUST TRA DOMINI UF \_ \_ \_ | Si tratta di un account di attendibilità per un Windows NT che considera attendibile altri domini.                                                                                                                                                            |
 
 
@@ -299,7 +299,7 @@ I flag seguenti descrivono il tipo di account. È possibile impostare un solo va
 <span id="userSharedFolder"></span><span id="usersharedfolder"></span><span id="USERSHAREDFOLDER"></span>[**userSharedFolder**](/windows/desktop/ADSchema/a-usersharedfolder)
 </dt> <dd>
 
-[**L'attributo userSharedFolder**](/windows/desktop/ADSchema/a-usersharedfolder) specifica un percorso UNC della cartella documenti condivisi dell'utente. Il percorso deve essere un percorso UNC di rete della directory della \\ \\ condivisione del server \\ \\ form. Questo valore può essere una stringa Null.
+[**L'attributo userSharedFolder**](/windows/desktop/ADSchema/a-usersharedfolder) specifica un percorso UNC della cartella documenti condivisi dell'utente. Il percorso deve essere un percorso UNC di rete della directory di \\ \\ condivisione del server \\ \\ form. Questo valore può essere una stringa Null.
 
 </dd> <dt>
 

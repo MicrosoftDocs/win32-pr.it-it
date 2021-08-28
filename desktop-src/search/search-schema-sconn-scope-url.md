@@ -1,19 +1,19 @@
 ---
-description: L' <url> elemento specifica un URL che rappresenta l'ambito del connettore di ricerca. Questo elemento non ha elementi figlio e nessun attributo.
+description: "&lt;L'elemento url specifica un URL che rappresenta &gt; l'ambito del connettore di ricerca. Questo elemento non ha elementi figlio e nessun attributo."
 ms.assetid: 5afd84aa-98e3-4118-845a-d4efad19a488
-title: Elemento URL scopeItem (schema del connettore di ricerca)
+title: Elemento url scopeItem (schema del connettore di ricerca)
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: c573308fe406fe4500f6bb8e88b3762fa0bbac05
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 63a1db669f7365f04bed49c769ab695ab674b20b
+ms.sourcegitcommit: 61a4c522182aa1cacbf5669683d9570a3bf043b2
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "103878786"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "122886708"
 ---
-# <a name="scopeitem-url-element-search-connector-schema"></a>Elemento URL scopeItem (schema del connettore di ricerca)
+# <a name="scopeitem-url-element-search-connector-schema"></a>Elemento url scopeItem (schema del connettore di ricerca)
 
-L' <url> elemento specifica un URL che rappresenta l'ambito del connettore di ricerca. Questo elemento non ha elementi figlio e nessun attributo.
+&lt;L'elemento url specifica un URL che rappresenta &gt; l'ambito del connettore di ricerca. Questo elemento non ha elementi figlio e nessun attributo.
 
 ## <a name="syntax"></a>Sintassi
 
@@ -60,11 +60,11 @@ L' <url> elemento specifica un URL che rappresenta l'ambito del connettore di ri
 
 ## <a name="remarks"></a>Commenti
 
-Il valore può essere un percorso di file system locale o un URL.
+Il valore può essere un percorso file system locale o un URL.
 
 ## <a name="example"></a>Esempio
 
-Nell'esempio seguente viene illustrato un ambito di ricerca che include C: \\ ExampleFolder e tutte le relative cartelle figlio ad eccezione di c: \\ ExampleFolder \\ ExcludeMe.
+L'esempio seguente illustra un ambito di ricerca che include C: ExampleFolder e tutte le relative cartelle \\ figlio ad eccezione di C: \\ ExampleFolder \\ ExcludeMe.
 
 
 ```

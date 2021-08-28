@@ -7,20 +7,20 @@ MSHAttr:
 title: IgnorePassword (v4)
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 0286fcc7a025bc565916e68b817c6a79f378f26d
-ms.sourcegitcommit: 4d4a6e9ad5de37e467cd3164276771b71e1f113f
+ms.openlocfilehash: bbb7be6d4344e6126501223f238642b97efbb059
+ms.sourcegitcommit: 4665ebce0c106bdb52eef36e544280b496b6f50b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/05/2021
-ms.locfileid: "106388791"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "122987114"
 ---
 # <a name="span-idwwan_profile_v4element_1_ignorepasswordspanmodemdmconfigprofileignorepassword-v4"></a><span id="WWAN_profile_v4.element_1_IgnorePassword"></span>ModemDMConfigProfile \/ ... \/ IgnorePassword (v4)
 
-Specifica il modo in cui vengono gestite le password durante l'aggiornamento dei profili.
+Specifica la modalità di gestione delle password durante l'aggiornamento dei profili.
 
-Se è impostato su **true** e al momento dell'operazione di aggiornamento esiste un profilo con lo stesso nome, la password del profilo verrà acquisita e archiviata nel nuovo profilo.
+Se impostato su **TRUE** e al momento dell'operazione di aggiornamento esiste un profilo con lo stesso nome, la password di tale profilo verrà presa e archiviata nel nuovo profilo.
 
-Per altri dettagli, vedere la documentazione per l'elemento V1 [**IgnorePassword**](./schema-ignorepassword-userlogoncred-element.md) .
+Per altre informazioni, vedere la documentazione per l'elemento [**IgnorePassword**](./schema-ignorepassword-userlogoncred-element.md) v1.
 
 ## <a name="element-hierarchy"></a>Gerarchia degli elementi
 
@@ -48,49 +48,29 @@ Per altri dettagli, vedere la documentazione per l'elemento V1 [**IgnorePassword
 
 ### <a name="span-idattributesspanspan-idattributesspanattributes"></a><span id="attributes"></span><span id="ATTRIBUTES"></span>Attributi
 
-Nessuna.
+Nessuno.
 
 ### <a name="span-idchild_elementsspanspan-idchild_elementsspanspan-idchild_elementsspanchild-elements"></a><span id="Child_Elements"></span><span id="child_elements"></span><span id="CHILD_ELEMENTS"></span>Elementi figlio
 
-Nessuna.
+Nessuno.
 
 ### <a name="span-idparent_elementsspanspan-idparent_elementsspanparent-elements"></a><span id="parent_elements"></span><span id="PARENT_ELEMENTS"></span>Elementi padre
 
-<table>
-<colgroup>
-<col style="width: 50%" />
-<col style="width: 50%" />
-</colgroup>
-<thead>
-<tr class="header">
-<th>Elemento padre</th>
-<th>Descrizione</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td><a href="element-1-userlogoncred.md">UserLogonCred</a></td>
-<td><p>Credenziali di accesso per una connessione.</p></td>
-</tr>
-</tbody>
-</table>
+
+| Elemento padre | Descrizione | 
+|----------------|-------------|
+| <a href="element-1-userlogoncred.md">UserLogonCred</a> | <p>Credenziali di accesso per una connessione.</p> | 
+
 
  
 
 ## <a name="requirements"></a>Requisiti
 
-<table>
-<colgroup>
-<col style="width: 50%" />
-<col style="width: 50%" />
-</colgroup>
-<tbody>
-<tr class="odd">
-<td><p>Spazio dei nomi</p></td>
-<td><p>https://www.microsoft.com/networking/WWAN/profile/v4</p></td>
-</tr>
-</tbody>
-</table>
+
+| Requisito | Valore |
+|------------|----------|
+| <p>Spazio dei nomi</p> | <p>https://www.microsoft.com/networking/WWAN/profile/v4</p> | 
+
 
  
 

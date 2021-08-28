@@ -4,12 +4,12 @@ description: Uso di VBScript
 ms.assetid: a078eb60-aa12-42ea-850c-7b845fc8037c
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 7afa94bd5b3576e80cf8a0c17857bbb0902bd254e95113d87ae9d1d1fca1e38b
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: f0bc64419af4d8dc47de5a2393fcf5cb259374ed
+ms.sourcegitcommit: 61a4c522182aa1cacbf5669683d9570a3bf043b2
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "118975501"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "122881013"
 ---
 # <a name="using-vbscript"></a>Uso di VBScript
 
@@ -17,7 +17,7 @@ ms.locfileid: "118975501"
 
 VBScript è un linguaggio di programmazione incluso in Microsoft Internet Explorer. Per altri browser, contattare il fornitore per assistenza. È consigliabile usare VBScript 2.0 (o versione successiva) con Agent. Anche se le versioni precedenti di VBScript possono funzionare con Agent, non dispongono di alcune funzioni che è possibile usare. È possibile scaricare VBScript 2.0 e ottenere altre informazioni su VBScript nel sito download Microsoft e nel sito Microsoft VBScript.
 
-Per programmare Microsoft Agent da VBScript, usare il codice HTML <SCRIPT> tags. To access the programming interface, use the name of control you assign in the <OBJECT> tag, followed by the subobject (if any), the name of the method or property, and any parameters or values supported by the method or property:
+Per programmare Microsoft Agent da VBScript, usare i tag HTML &lt; &gt; SCRIPT. Per accedere all'interfaccia di programmazione, usare il nome del controllo assegnato nel tag OBJECT, seguito dall'oggetto secondario (se presente), dal nome del metodo o della proprietà ed eventuali parametri o valori supportati dal metodo o dalla &lt; &gt; proprietà:
 
 ``` syntax
 agent[.object].Method parameter, [parameter]
@@ -32,7 +32,7 @@ statements
 End Sub
 ```
 
-È anche possibile specificare un gestore eventi usando <SCRIPT> tag's **For...Event** syntax:
+È anche possibile specificare un gestore eventi usando &lt; &gt; for... del tag **SCRIPT. Sintassi** dell'evento:
 
 ``` syntax
 <SCRIPT LANGUAGE=VBScript For=agent Event=event[(parameter[,parameter])]>
@@ -42,7 +42,7 @@ statements
 
 Anche se Microsoft Internet Explorer supporta questa seconda sintassi, non tutti i browser lo supportano. Per compatibilità, usare solo la sintassi precedente per gli eventi.
 
-Con VBScript (2.0 o versione successiva), è possibile verificare se Microsoft Agent è installato provando a creare l'oggetto e verificando se esiste. L'esempio seguente illustra come verificare la presenza del controllo Agent senza attivare un download automatico del controllo (come accade se si includesse un tag per <OBJECT> il controllo nella pagina):
+Con VBScript (2.0 o versione successiva), è possibile verificare se Microsoft Agent è installato provando a creare l'oggetto e verificando se esiste. L'esempio seguente illustra come verificare la presenza del controllo Agent senza attivare un download automatico del controllo (come accade se si includesse un tag OBJECT per il controllo &lt; &gt; nella pagina):
 
 ``` syntax
 <!-- WARNING - This code requires VBScript 2.0.

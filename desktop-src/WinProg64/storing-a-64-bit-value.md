@@ -1,89 +1,55 @@
 ---
 title: Archiviazione di un valore a 64 bit
-description: Per archiviare un valore di puntatore a 64 bit, utilizzare ULONG \_ ptr. Un \_ valore PTR ULONG è 32 bit quando viene compilato con un compilatore a 32 bit e 64 bit quando viene compilato con un compilatore a 64 bit.
+description: Per archiviare un valore del puntatore a 64 bit, usare ULONG \_ PTR. Un valore ULONG PTR è a 32 bit quando viene compilato con un compilatore a 32 bit e a 64 bit quando viene compilato con un \_ compilatore a 64 bit.
 ms.assetid: 0712e084-cf5e-470a-8f5d-0db2ef638f42
 keywords:
-- archiviazione dei valori a 64 bit programmazione Windows a 64 bit
+- archiviazione di valori a 64 bit a 64 bit Windows programmazione
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: a6cee4826caf93dbd464957fb5fb76f024bd9f41
-ms.sourcegitcommit: 2d531328b6ed82d4ad971a45a5131b430c5866f7
+ms.openlocfilehash: ac6be70aba73af9640a69aa60055afcfb03ade7a
+ms.sourcegitcommit: 9b5faa61c38b2d0c432b7f2dbee8c127b0e28a7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "104330031"
+ms.lasthandoff: 08/19/2021
+ms.locfileid: "122469068"
 ---
 # <a name="storing-a-64-bit-value"></a>Archiviazione di un valore a 64 bit
 
-Per archiviare un valore di puntatore a 64 bit, utilizzare **ULONG \_ ptr**. Un **valore \_ ptr ULONG** è 32 bit quando viene compilato con un compilatore a 32 bit e 64 bit quando viene compilato con un compilatore a 64 bit.
+Per archiviare un valore del puntatore a 64 bit, usare **ULONG \_ PTR.** Un **valore \_ ULONG PTR** è a 32 bit quando viene compilato con un compilatore a 32 bit e a 64 bit quando viene compilato con un compilatore a 64 bit.
 
-Negli esempi seguenti viene usato codice reale che è stato trasferito in Windows a 64 bit. Il commento sulla procedura per rendere compatibile il codice a 64 bit è incluso.
+Negli esempi seguenti viene utilizzato codice reale che è stato portato a un Windows a 64 bit. Sono inclusi commenti sui passaggi per rendere il codice compatibile a 64 bit.
 
-## <a name="example-1-getting-an-address"></a>Esempio 1: recupero di un indirizzo
+## <a name="example-1-getting-an-address"></a>Esempio 1: Recupero di un indirizzo
 
-Il codice seguente illustra un modo portatile per ottenere un indirizzo.
-
-
-
-<table>
-<colgroup>
-<col style="width: 50%" />
-<col style="width: 50%" />
-</colgroup>
-<tbody>
-<tr class="odd">
-<td>Uso di ULONG (metodo solo a 32 bit)</td>
-<td><pre class="syntax" data-space="preserve"><code>ULONG getAnAddress( )
-Int *somePointer
-Return( (ULONG) somePointer );</code></pre></td>
-</tr>
-<tr class="even">
-<td>Uso di ULONG_PTR (metodo portatile)</td>
-<td><pre class="syntax" data-space="preserve"><code>ULONG_PTR getAnAddress( )
-Int *somePointer
-Return( (ULONG_PTR) somePointer );</code></pre></td>
-</tr>
-</tbody>
-</table>
+Il codice seguente illustra un modo portabile per ottenere un indirizzo.
 
 
 
- 
 
-## <a name="example-2-calculating-an-address"></a>Esempio 2: calcolo di un indirizzo
-
-Il codice seguente illustra un modo portatile per calcolare un indirizzo.
+| | | Uso di ULONG (metodo solo a 32 bit) | <pre class="syntax" data-space="preserve"><code>ULONG getAnAddress( )Int *somePointerReturn( (ULONG) somePointer );</code></pre> | | Uso ULONG_PTR (metodo portabile) | <pre class="syntax" data-space="preserve"><code>ULONG_PTR getAnAddress( )Int *somePointerReturn( (ULONG_PTR) somePointer );</code></pre> | 
 
 
 
-<table>
-<colgroup>
-<col style="width: 50%" />
-<col style="width: 50%" />
-</colgroup>
-<tbody>
-<tr class="odd">
-<td>Uso di ULONG (metodo solo a 32 bit)</td>
-<td><pre class="syntax" data-space="preserve"><code>Int *somePointer;
-Int *someOtherPointer;
-somePointer = (int *)( (ULONG)someOtherPointer + 0x20 );</code></pre></td>
-</tr>
-<tr class="even">
-<td>Uso di ULONG_PTR (metodo portatile)</td>
-<td><pre class="syntax" data-space="preserve"><code>Int *somePointer;
-Int *someOtherPointer;
-somePointer = (int *)( (ULONG_PTR)someOtherPointer + 0x20 );</code></pre></td>
-</tr>
-</tbody>
-</table>
+
+ 
+
+## <a name="example-2-calculating-an-address"></a>Esempio 2: Calcolo di un indirizzo
+
+Nel codice seguente viene illustrato un modo portabile per calcolare un indirizzo.
 
 
 
- 
 
- 
+| | | Uso di ULONG (metodo solo a 32 bit) | <pre class="syntax" data-space="preserve"><code>Int *somePointer;Int *someOtherPointer;somePointer = (int *)( (ULONG)someOtherPointer + 0x20 );</code></pre> | | Uso ULONG_PTR (metodo portabile) | <pre class="syntax" data-space="preserve"><code>Int *somePointer;Int *someOtherPointer;somePointer = (int *)( (ULONG_PTR)someOtherPointer + 0x20 );</code></pre> | 
 
- 
+
+
+
+ 
+
+ 
+
+ 
 
 
 

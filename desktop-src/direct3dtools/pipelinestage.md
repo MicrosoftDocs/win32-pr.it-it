@@ -1,5 +1,5 @@
 ---
-description: Rappresenta una fase della pipeline, inclusi i dettagli dello shader utilizzato.
+description: Rappresenta una fase della pipeline, inclusi i dettagli dello shader usato.
 MS-HAID: vspixengine.PipeLineStage
 MSHAttr:
 - PreferredSiteName:MSDN
@@ -17,16 +17,16 @@ api_location:
 topic_type:
 - APIRef
 - kbSyntax
-ms.openlocfilehash: 5ddd0cbcf417da7967b135a10227ce6687cb2ea5
-ms.sourcegitcommit: a47bd86f517de76374e4fff33cfeb613eb259a7e
+ms.openlocfilehash: 10f1d1780404303109a72fe1a12023bc35b2c0ca
+ms.sourcegitcommit: c276a8912787b2cda74dcf54eb96df961bb1188b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/06/2021
-ms.locfileid: "103965627"
+ms.lasthandoff: 08/20/2021
+ms.locfileid: "122625167"
 ---
 # <a name="span-idvspixenginepipelinestagespanpipelinestage-structure"></a><span id="vspixengine.pipelinestage"></span>Struttura PipeLineStage
 
-Rappresenta una fase della pipeline, inclusi i dettagli dello shader utilizzato.
+Rappresenta una fase della pipeline, inclusi i dettagli dello shader usato.
 
 ## <a name="syntax"></a>Sintassi
 
@@ -37,7 +37,7 @@ Rappresenta una fase della pipeline, inclusi i dettagli dello shader utilizzato.
 
 ## <a name="members"></a>Members
 
-**StageId**  
+**Id fase**  
 ID della fase della pipeline.
 
 **Debuggable**  
@@ -46,8 +46,8 @@ true se la fase della pipeline supporta il debug; in caso contrario, false.
 **StageName**  
 Stringa COM contenente il nome della fase della pipeline.
 
-**GuaranteedOutput**  
-true se la fase della pipeline contiene sempre l'output della pipeline. in caso contrario, false.
+**Output garantito**  
+true se la fase della pipeline include sempre l'output della pipeline; in caso contrario, false.
 
 **DebugEntryPoint**  
 Stringa COM contenente il nome del punto di ingresso dello shader, se presente.
@@ -56,11 +56,11 @@ Stringa COM contenente il nome del punto di ingresso dello shader, se presente.
 Stringa COM contenente il percorso del file di origine dello shader.
 
 **ShaderByteStreamPtr**  
-FILEPTR per il flusso di byte dello shader. Questa operazione viene passata di nuovo per eseguire il debug.
+Oggetto FILEPTR per il flusso di byte dello shader. Viene passato nuovamente per eseguire il debug.
 
 ## <a name="requirements"></a>Requisiti
 
-<table><colgroup><col style="width: 50%" /><col style="width: 50%" /></colgroup><tbody><tr class="odd"><td><p>Intestazione</p></td><td>Vspixengine. h</td></tr></tbody></table>
+<table><colgroup><col  /><col  /></colgroup><tbody><tr class="odd"><td><p>Intestazione</p></td><td>Vspixengine.h</td></tr></tbody></table>
 
  
 

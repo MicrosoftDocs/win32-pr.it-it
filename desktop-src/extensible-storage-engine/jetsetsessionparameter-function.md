@@ -19,12 +19,12 @@ api_type:
 api_location:
 - ESENT.DLL
 ROBOTS: INDEX,FOLLOW
-ms.openlocfilehash: 9ce9c50908621f005ec69aa75da4afdfa722b8aa
-ms.sourcegitcommit: 4665ebce0c106bdb52eef36e544280b496b6f50b
+ms.openlocfilehash: 9451844edc9f55bda75e5ec80e4958b3c474c919
+ms.sourcegitcommit: 9b5faa61c38b2d0c432b7f2dbee8c127b0e28a7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/26/2021
-ms.locfileid: "122988404"
+ms.lasthandoff: 08/19/2021
+ms.locfileid: "122476357"
 ---
 # <a name="jetsetsessionparameter-function"></a>Funzione JetSetSessionParameter
 
@@ -72,7 +72,7 @@ Questa funzione restituisce il [JET_ERR](./jet-err.md) dati con uno dei codici r
 | <p>JET_errSuccess</p> | <p>Operazione riuscita.</p> | 
 | <p>JET_errAlreadyInitialized</p> | <p>L'istanza è stata inizializzata tramite una chiamata alla <a href="gg294068(v=exchg.10).md">funzione JetInit</a> e questa operazione non può essere eseguita di conseguenza. Ciò può verificarsi quando si tenta di configurare un parametro di sistema dopo che una modifica al valore del parametro non può più influire sullo stato del motore di database.</p> | 
 | <p>JET_errClientRequestToStopJetService</p> | <p>Non è possibile completare l'operazione perché tutte le attività nell'istanza associata alla sessione sono cessare in seguito a una chiamata alla <a href="gg269240(v=exchg.10).md">funzione JetStopService.</a></p> | 
-| <p>JET_errIndexTuplesInvalidLimits</p> | <p>I parametri dell'indice di tupla specificati non sono validi. Questo errore viene restituito solo <em>quando il parametro JET_paramIndexTuplesLengthMin</em>, <em>JET_paramIndexTuplesLengthMax</em>o <em>JET_paramIndexTuplesToIndexMax</em> è impostato su un valore non valido. Per informazioni su questi parametri, vedere <a href="gg294119(v=exchg.10).md">Parametri di indice.</a></p> | 
+| <p>JET_errIndexTuplesInvalidLimits</p> | <p>I parametri dell'indice di tupla specificati non sono validi. Questo errore viene restituito solo <em>quando il JET_paramIndexTuplesLengthMin</em>, <em>JET_paramIndexTuplesLengthMax</em>o JET_paramIndexTuplesToIndexMax <em>parametro</em> è impostato su un valore non valido. Per informazioni su questi parametri, vedere <a href="gg294119(v=exchg.10).md">Parametri di indice.</a></p> | 
 | <p>JET_errInitInProgress</p> | <p>Non è possibile completare l'operazione perché è in corso l'inizializzazione dell'istanza associata alla sessione.</p> | 
 | <p>JET_errInstanceUnavailable</p> | <p>Non è possibile completare l'operazione perché l'istanza associata alla sessione ha rilevato un errore irreversibile che richiede la revoca dell'accesso a tutti i dati per proteggere l'integrità di questi dati.</p> | 
 | <p>JET_errInvalidParameter</p> | <p>Uno dei parametri forniti contiene un valore imprevisto o contiene un valore che non ha senso se combinato con il valore di un altro parametro. Questa situazione può verificarsi quando si verifica quanto segue:</p><ul><li><p>L'ID del parametro di sistema specificato non è valido o non è supportato.</p></li><li><p>Si è tentato di impostare un parametro di sistema con valori stringa con una stringa la cui lunghezza non rientra nell'intervallo valido per il parametro.</p></li><li><p>Si è tentato di impostare un parametro di sistema con valori di stringa con un percorso di file in cui la lunghezza della relativa rappresentazione del percorso assoluto non rientra nell'intervallo valido per tale parametro.</p></li><li><p>Si è tentato di impostare un parametro di sistema con valori interi con un numero intero non compreso nell'intervallo valido per il parametro.</p></li><li><p>Si è tentato di impostare JET_paramUnicodeIndexDefault con un puntatore <a href="gg294097(v=exchg.10).md">JET_UNICODEINDEX</a> Null, un LCID non valido o un set non supportato di flag <strong>LCMapString.</strong></p></li><li><p>Impossibile impostare il parametro di sistema specificato perché è di sola lettura.</p></li><li><p>È stato effettuato un tentativo di impostare un parametro di sistema dopo la chiamata della funzione <a href="gg294068(v=exchg.10).md">JetInit,</a> il motore di database è in modalità a istanza singola e non è stata specificata una sessione.</p></li><li><p>Il parametro di sistema specificato è solo globale ed è stato effettuato un tentativo di impostare un valore specifico dell'istanza per tale parametro di sistema.</p></li><li><p>Il parametro di sistema specificato è solo per istanza ed è stato effettuato un tentativo di impostare il valore globale per tale parametro di sistema.</p></li></ul> | 
@@ -92,13 +92,7 @@ In caso di errore, il valore del parametro di sistema rimarrà invariato.
 #### <a name="requirements"></a>Requisiti
 
 
-| Requisito | Valore |
-|------------|----------|
-| <p><strong>Client</strong></p> | <p>Richiede Windows 8.</p> | 
-| <p><strong>Server</strong></p> | <p>Richiede Windows Server 2012.</p> | 
-| <p><strong>Intestazione</strong></p> | <p>Dichiarato in Esent.h.</p> | 
-| <p><strong>Libreria</strong></p> | <p>Usare ESENT.lib.</p> | 
-| <p><strong>DLL</strong></p> | <p>Richiede ESENT.dll.</p> | 
+| | | <p><strong>Client</strong></p> | <p>Richiede Windows 8.</p> | | <p><strong>Server</strong></p> | <p>Richiede Windows Server 2012.</p> | | <p><strong>Intestazione</strong></p> | <p>Dichiarato in Esent.h.</p> | | <p><strong>Libreria</strong></p> | <p>Usare ESENT.lib.</p> | | <p><strong>DLL</strong></p> | <p>Richiede ESENT.dll.</p> | 
 
 
 

@@ -1,34 +1,34 @@
 ---
-description: GRUPPO su...
+description: L'oggetto GROUP ON...
 ms.assetid: 37f027c1-c2af-4d62-8b5f-918499fc2d7c
-title: RAGGRUPPA IN... SOPRA... Istruzione
+title: GROUP ON ... OLTRE... Affermazione
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 94d7087305f0a5a86f0288ed92ec4bda5b8c882c
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: df21bb53babd25ae3e407032c6cf9d3774323e85
+ms.sourcegitcommit: 61a4c522182aa1cacbf5669683d9570a3bf043b2
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104128542"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "122882013"
 ---
-# <a name="group-on--over--statement"></a>RAGGRUPPA IN... SOPRA... Istruzione
+# <a name="group-on--over--statement"></a>GROUP ON ... OLTRE... Affermazione
 
-GRUPPO su... SOPRA... l'istruzione restituisce un set di righe gerarchico in cui i risultati della ricerca sono divisi in gruppi in base a una colonna specificata e a intervalli di raggruppamento facoltativi. Se si raggruppa sulla colonna [System. Kind](../properties/props-system-kind.md) , il set di risultati è diviso in più gruppi: uno per i documenti, uno per le comunicazioni e così via. Se si esegue il raggruppamento in [System. Size](../properties/props-system-size.md) e l'intervallo di gruppi 100 KB, il set di risultati è diviso in tre gruppi: elementi di dimensioni < 100 KB, elementi di dimensioni >= 100 KB ed elementi senza valore size. È anche possibile aggregare i raggruppamenti con funzioni.
+L'oggetto GROUP ON... OLTRE... L'istruzione restituisce un set di righe gerarchico in cui i risultati della ricerca sono suddivisi in gruppi basati su una colonna specificata e intervalli di raggruppamento facoltativi. Se si raggruppa la colonna [System.Kind,](../properties/props-system-kind.md) il set di risultati viene diviso in più gruppi: uno per i documenti, uno per le comunicazioni e così via. Se si raggruppa in base a [System.Size](../properties/props-system-size.md) e all'intervallo di gruppi 100 KB, il set di risultati viene diviso in tre gruppi: elementi di dimensioni < 100 KB, elementi di dimensioni >= 100 KB e elementi senza valore di dimensione. È anche possibile aggregare raggruppamenti con funzioni.
 
-In questo argomento vengono illustrati gli argomenti seguenti:
+In questo argomento vengono trattati gli argomenti seguenti:
 
 -   [Sintassi](#syntax)
 -   [Intervalli di gruppi](#group-ranges)
--   [Assegnazione di etichette ai gruppi](#labeling-groups)
--   [Ordinamento di gruppi](#ordering-groups)
+-   [Etichettatura di gruppi](#labeling-groups)
+-   [Ordinamento dei gruppi](#ordering-groups)
 -   [Annidamento di gruppi](#nesting-groups)
--   [Raggruppamento di proprietà vettoriali](#grouping-on-vector-properties)
+-   [Raggruppamento in base alle proprietà del vettore](#grouping-on-vector-properties)
 -   [Altri esempi](#more-examples)
 -   [Argomenti correlati](#related-topics)
 
 ## <a name="syntax"></a>Sintassi
 
-GRUPPO su... SOPRA... la sintassi dell'istruzione è la seguente:
+L'oggetto GROUP ON ... OLTRE... L'istruzione ha la sintassi seguente:
 
 
 ```
@@ -40,7 +40,7 @@ GROUP ON <column> ['['<group ranges>']']]
 
 
 
-dove gli intervalli di raggruppamento vengono definiti come segue:
+dove gli intervalli di raggruppamento sono definiti come segue:
 
 
 ```
@@ -50,28 +50,28 @@ dove gli intervalli di raggruppamento vengono definiti come segue:
 
 
 
-Il gruppo in <column> può essere un [identificatore](-search-sql-identifiers.md) regolare o delimitato per una proprietà nell'archivio delle proprietà.
+La colonna GROUP ON &lt; può essere un identificatore normale o delimitato per una proprietà &gt; nell'archivio delle proprietà. [](-search-sql-identifiers.md)
 
-Il parametro facoltativo <group ranges> è un elenco di uno o più valori (numero, data o stringa) usati per dividere i risultati in gruppi. <range limit>Identifica un punto di divisione nel set di risultati restituito e <label> identifica un'etichetta intuitiva per un gruppo. È possibile dividere il set di risultati in tutti i gruppi necessari.
+L'elemento facoltativo è un elenco di uno o più valori (numero, data o stringa) usati per <group ranges> dividere i risultati in gruppi. identifica <range limit> un punto di divisione nel set di risultati restituito e identifica <label> un'etichetta descrittiva per un gruppo. È possibile dividere il set di risultati in tutti i gruppi necessari.
 
-Il primo gruppo di risultati include gli elementi con il valore minimo possibile per la proprietà specificata fino al limite del primo intervallo escluso. È possibile fare riferimento a questo gruppo con la parola chiave MINVALUE. Il secondo gruppo è a cui è possibile fare riferimento con l'identificatore di limite intervallo e include gli elementi il cui valore per la proprietà specificata è maggiore o uguale al limite di intervallo. Gli elementi che non dispongono di un valore per la proprietà specificata vengono restituiti per ultimi e possono essere definiti con la parola chiave **null** .
+Il primo gruppo di risultati include gli elementi con il valore minimo possibile per la proprietà specificata, ma senza includere il primo limite di intervallo. È possibile fare riferimento a questo gruppo con la parola chiave MINVALUE. È possibile fare riferimento al secondo gruppo con l'identificatore di limite di intervallo stesso e include gli elementi il cui valore per la proprietà specificata è uguale o maggiore del limite di intervallo. Tutti gli elementi che non hanno un valore per la proprietà specificata vengono restituiti per ultimi e possono essere indicati con la **parola chiave NULL.**
 
-Ad esempio, un limite di intervallo di ' 2006-01-01' per la proprietà [System. DateCreated](../properties/props-system-datecreated.md) divide il set di risultati in elementi con date precedenti a 2006-01-01 (gruppo MinValue), elementi con date in o dopo 2006-01-01 (2006-01-01 gruppo) ed elementi senza data (gruppo **null** ).
+Ad esempio, un limite di intervallo "2006-01-01" per la proprietà [System.DateCreated](../properties/props-system-datecreated.md) divide il set di risultati in elementi con date precedenti al 01/01/2006 (gruppo MINVALUE), elementi con date in data successiva al 01/01/2006 (gruppo 2006-01-01) e elementi senza data (gruppo **NULL).**
 
-All'interno di ogni gruppo, i risultati vengono ordinati in base ai valori nella colonna gruppo per impostazione predefinita. La clausola [Order by](-search-sql-orderby.md) facoltativa può contenere un identificatore di direzione di ASC per Ascending (da basso a alto) o DESC per la decrescente (da alto a basso) e l' [ordine nella clausola Group by](-search-sql-orderingroup.md) può ordinare ogni gruppo usando regole diverse. Per ulteriori informazioni, vedere la sezione [gruppi di ordini](#ordering-groups) riportata di seguito.
+All'interno di ogni gruppo, i risultati vengono ordinati in base ai valori nella colonna GROUP ON per impostazione predefinita. La clausola [ORDER BY](-search-sql-orderby.md) facoltativa può contenere un identificatore di direzione di ASC per l'ordine crescente (da basso a alto) o DESC per l'ordine decrescente (dall'alto al basso) e la clausola ORDER IN [GROUP BY](-search-sql-orderingroup.md) può ordinare ogni gruppo usando regole diverse. Per altre [informazioni, vedere la sezione](#ordering-groups) Ordinamento dei gruppi più avanti.
 
 ## <a name="group-ranges"></a>Intervalli di gruppi
 
-Nella tabella seguente viene illustrato il modo in cui i risultati vengono suddivisi in gruppi in base ai limiti di intervallo:
+La tabella seguente illustra come i risultati vengono divisi in gruppi in base ai limiti di intervallo:
 
 
 
-| Esempio ( <column> \[ intervalli di gruppi \] )        | Risultato                                                                                                                                                                                                                                                                         |
+| Esempio ( &lt; intervalli &gt; \[ di gruppi di colonne \] )        | Risultato                                                                                                                                                                                                                                                                         |
 |--------------------------------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| System. size \[ 1000, 5000\]                       | I risultati sono raggruppati in quattro bucket: **MinValue**: Size < 1000<br/> **1000:** 1000 <= Size < 5000<br/> **5000:** Dimensioni >= 5000<br/> **Valore null:** Nessun valore per le dimensioni<br/>                                                                      |
-| System. Author \[ before (' m'), After (' r ')\]         | I risultati sono raggruppati in quattro bucket: **MinValue:** autore < carattere prima di "m"<br/> **m:** carattere prima di "m" <= autore < carattere dopo "r"<br/> **r:** carattere dopo "r" <= autore<br/> **Valore null:** Nessun valore per autore<br/>      |
-| System. Author \[ MinValue/' da a l', "m"/da a z '\] | I risultati sono raggruppati in tre bucket: **da a a l:** autore < "m"<br/> **da m a z:** "m" <= autore <br/> **Valore null:** Nessun valore per autore<br/>                                                                                                               |
-| System. DateCreated \[ ' 2005-1-01',' 2006-6-01'\]   | I risultati sono raggruppati in quattro bucket:<br/> **MinValue:** DateCreated < 2005-1-01<br/> **2005-1-01:** 2005-1-01 <= DateCreated < 2006-6-01<br/> **2006-1-01:** DateCreated >= 2006-6-01<br/> **Valore null:** Nessun valore per DateCreated<br/> |
+| System.Size \[ 1000, 5000\]                       | I risultati sono raggruppati in quattro bucket: **MINVALUE:** dimensioni < 1000<br/> **1000:** 1000 <= Dimensioni < 5000<br/> **5000:** Dimensioni >= 5000<br/> **NULL:** Nessun valore per Size<br/>                                                                      |
+| System.Author \[ BEFORE('m'),AFTER('r')\]         | I risultati sono raggruppati in quattro bucket: **MINVALUE:** Autore < carattere prima di "m"<br/> **m:** carattere prima di "m" <= autore < carattere dopo "r"<br/> **r:** carattere dopo "r" <= Autore<br/> **NULL:** Nessun valore per Author<br/>      |
+| System.Author \[ MINVALUE/'a to l',"m"/'m to z'\] | I risultati sono raggruppati in tre bucket: **a to l:** Author < "m"<br/> **da m a z:** "m" <= Autore <br/> **NULL:** Nessun valore per Author<br/>                                                                                                               |
+| System.DateCreated \[ '2005-1-01','2006-6-01'\]   | I risultati sono raggruppati in quattro bucket:<br/> **MINVALUE:** DateCreated < 2005-1-01<br/> **2005-1-01:** 2005-1-01 <= DateCreated < 2006-6-01<br/> **2006-1-01:** DateCreated >= 2006-6-01<br/> **NULL:** Nessun valore per DateCreated<br/> |
 
 
 
@@ -81,15 +81,15 @@ Nella tabella seguente viene illustrato il modo in cui i risultati vengono suddi
 
 > [!IMPORTANT]
 >
-> Errata `GROUP ON System.Author['m','z','a']`
+> Errato: `GROUP ON System.Author['m','z','a']`
 >
-> Corretto `GROUP ON System.Author['a','m','z']`
+> Corretta: `GROUP ON System.Author['a','m','z']`
 
  
 
  
 
-## <a name="labeling-groups"></a>Assegnazione di etichette ai gruppi
+## <a name="labeling-groups"></a>Etichettatura di gruppi
 
 Per migliorare la leggibilità, è possibile etichettare i gruppi usando la sintassi seguente:
 
@@ -100,9 +100,9 @@ GROUP ON <column> [<range limit>/'<label>',<range limit>/'<label>']
 
 
 
-L'etichetta è separata dal limite di intervallo con una barra ed è racchiusa tra virgolette singole. Se non si specifica un'etichetta, il nome del gruppo è la stringa limite intervallo.
+L'etichetta è separata dal limite dell'intervallo con una barra ed è racchiusa tra virgolette singole. Se non si specifica un'etichetta, il nome del gruppo è la stringa del limite di intervallo.
 
-Di seguito è riportato un esempio di assegnazione di etichette ai gruppi:
+Di seguito è riportato un esempio di etichettatura dei gruppi:
 
 
 ```
@@ -112,9 +112,9 @@ GROUP ON System.Size [(MINVALUE/'Small','100')/'Medium','50000'/'Large']
 
 
 
-In Windows 7 o versioni successive è anche possibile usare un' \[ altra etichetta generica \] per combinare più intervalli di raggruppamento. I risultati di tutti i gruppi identificati con questa etichetta verranno combinati in un gruppo con questa etichetta. Questo gruppo di risultati viene restituito dopo tutti gli altri gruppi ad eccezione del gruppo **null** . Il gruppo **null** contiene i risultati per gli elementi che non hanno un valore per la proprietà specificata. Prima di Windows 7 l' \[ altra \] etichetta veniva considerata come qualsiasi altra etichetta di gruppo.
+In Windows 7 o versioni successive è anche possibile usare un'etichetta \[ OTHER \] generica per combinare più intervalli di raggruppamento. I risultati di tutti i gruppi identificati con questa etichetta verranno combinati in un unico gruppo con questa etichetta. Questo gruppo di risultati viene restituito dopo tutti gli altri gruppi ad eccezione del **gruppo NULL.** Il **gruppo NULL** contiene i risultati per gli elementi che non hanno un valore per la proprietà specificata. Prima di Windows 7, \[ l'etichetta OTHER \] viene considerata come qualsiasi altra etichetta di gruppo.
 
-Il codice seguente è un esempio di utilizzo dell' \[ altra \] etichetta per i gruppi che verrebbero creati in Windows 7 o versioni successive:
+Il codice seguente è un esempio dell'uso dell'etichetta OTHER per i gruppi che verranno \[ \] creati in Windows 7 o versioni successive:
 
 
 ```
@@ -128,13 +128,13 @@ La tabella seguente illustra i gruppi che verrebbero creati dal codice di raggru
 
 
 
-| Group     | System.Author | System. FileName |
+| Group     | System.Author | System.FileName |
 |-----------|---------------|-----------------|
 | 0         | 1Bill         | Lorem.docx      |
 | Q         | Regina         | Ipsum.docx      |
 |           | Robin         | dolor.docx      |
 | S         | Zara          | amet.docx       |
-| \[ALTRI\] | Abner         | nonummy.docx    |
+| \[ALTRO\] | Abner         | nonummy.docx    |
 |           | Bob           | laoreet.docx    |
 |           | Xaria         | magna.docx      |
 | **NULL**  |               | aliquam.docx    |
@@ -143,19 +143,19 @@ La tabella seguente illustra i gruppi che verrebbero creati dal codice di raggru
 
  
 
-## <a name="ordering-groups"></a>Ordinamento di gruppi
+## <a name="ordering-groups"></a>Ordinamento dei gruppi
 
-Sono disponibili tre modi per ordinare gli elementi nei gruppi:
+Esistono tre modi per ordinare gli elementi in gruppi:
 
--   Ordinamento predefinito: se non si specifica diversamente, i risultati vengono ordinati in base ai valori della colonna GROUP ON, in ordine crescente.
+-   Ordinamento predefinito: se non si specifica diversamente, i risultati vengono ordinati in base ai valori nella colonna GROUP ON, in ordine crescente.
 -   ORDER BY: è possibile specificare l'ordine decrescente in una clausola ORDER BY. È necessario ordinare i risultati in base alla colonna GROUP ON.
--   ORDER IN GROUP BY: è possibile specificare un ordine diverso per ogni gruppo. Se si esegue il raggruppamento in [System. Kind](../properties/props-system-kind.md), è possibile ordinare i documenti in base a [System. Author](../properties/props-system-author.md) e Music by [System. Music. Artist](../properties/props-system-music-artist.md).
+-   ORDER IN GROUP BY: è possibile specificare un ordine diverso per ogni gruppo. Se si raggruppa in [Base a System.Kind](../properties/props-system-kind.md), è possibile ordinare i documenti in base [a System.Author](../properties/props-system-author.md) e music in base [a System.Musica. Artista.](../properties/props-system-music-artist.md)
 
-Per ulteriori informazioni sull'ordinamento dei risultati, vedere le pagine di riferimento della clausola [Order by](-search-sql-orderby.md) e [Order in Group](-search-sql-orderingroup.md) .
+Per altre informazioni sull'ordinamento dei risultati, vedere le pagine di riferimento relative alla [clausola ORDER BY](-search-sql-orderby.md) e alla clausola [ORDER IN GROUP.](-search-sql-orderingroup.md)
 
 ## <a name="nesting-groups"></a>Annidamento di gruppi
 
-È possibile annidare gruppi con più clausole GROUP ON. L'ordine specificato nella query viene riflesso direttamente nella gerarchia dei gruppi di output, come illustrato nell'esempio seguente.
+È possibile annidare gruppi con più clausole GROUP ON. L'ordine specificato nella query si riflette direttamente nella gerarchia dei gruppi di output, come illustrato nell'esempio seguente.
 
 
 ```
@@ -168,7 +168,7 @@ GROUP ON <System.Kind>
 
 
 
-| System. Kind    | System.Author | System. DateCreated |
+| System.Kind    | System.Author | System.DateCreated |
 |----------------|---------------|--------------------|
 | documenti      | Willa         | 2006-01-02         |
 |                |               | 2006-01-05         |
@@ -185,9 +185,9 @@ GROUP ON <System.Kind>
 
  
 
-## <a name="grouping-on-vector-properties"></a>Raggruppamento di proprietà vettoriali
+## <a name="grouping-on-vector-properties"></a>Raggruppamento in base alle proprietà del vettore
 
-Raggruppamento di proprietà vettoriali, proprietà che possono contenere uno o più valori contemporaneamente, confronta i valori del vettore singolarmente per impostazione predefinita. Se, ad esempio, è presente un documento, Lorem.docx con la proprietà System. Author di "Theresa; Zara "e un altro documento, Ipsum.docx con la proprietà System. Author come" Zara ", la query restituisce il set di risultati in due gruppi, come illustrato di seguito:
+Il raggruppamento in base alle proprietà del vettore, che possono contenere uno o più valori contemporaneamente, confronta i valori del vettore singolarmente per impostazione predefinita. Ad esempio, se è presente un documento, Lorem.docx, con la proprietà System.Author impostata su "Theresa; Zara" e un altro documento, Ipsum.docx, con la proprietà System.Author impostata su "Zara", la query restituisce il set di risultati in due gruppi, come illustrato di seguito:
 
 
 ```
@@ -199,9 +199,9 @@ GROUP ON <System.Author>
 
 
 
-| System.Author | System. FileName |
+| System.Author | System.FileName |
 |---------------|-----------------|
-| Teresa       | Lorem.docx      |
+| Theresa       | Lorem.docx      |
 | Zara          | Lorem.docx      |
 |               | Ipsum.docx      |
 
@@ -209,7 +209,7 @@ GROUP ON <System.Author>
 
  
 
-Come si può notare, il raggruppamento di proprietà Vector restituisce righe duplicate. Lorem.docx viene visualizzato due volte perché contiene due autori.
+Come si può vedere, il raggruppamento in base alle proprietà del vettore restituisce righe duplicate. Lorem.docx due volte perché ha due autori.
 
  
 

@@ -1,5 +1,5 @@
 ---
-description: L'oggetto SafeWia è un &\# 0034; Safe per lo scripting&\# 0034; punto di ingresso per tutte le funzionalità di scripting Windows Image Acquisition (WIA).
+description: L'oggetto SafeWia è un &0034; sicuro per la creazione di \# script&0034; punto di ingresso per tutte le funzionalità di \# scripting di Windows Image Acquisition (WIA).
 ms.assetid: 6b10bb8e-8500-4f2c-ae18-5db78ef75f74
 title: Oggetto SafeWia
 ms.topic: reference
@@ -13,33 +13,33 @@ api_type:
 - COM
 api_location:
 - Wiascr.dll
-ms.openlocfilehash: 1f227180b7420f5c70ef64d7d1d3feb0f13ae164
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: ef324934abee38e2581b6e05c0fdac92145e4f43
+ms.sourcegitcommit: 9b5faa61c38b2d0c432b7f2dbee8c127b0e28a7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "106307340"
+ms.lasthandoff: 08/19/2021
+ms.locfileid: "122473847"
 ---
 # <a name="safewia-object"></a>Oggetto SafeWia
 
-L'oggetto **SafeWia** è un punto di ingresso "Safe per lo scripting" per tutte le funzionalità di scripting Windows Image Acquisition (WIA). Qualsiasi applicazione che utilizza il modello di scripting WIA deve creare un oggetto **SafeWia** o [**WIA**](-wia-wia.md) . Usare tale oggetto per enumerare e creare i dispositivi e ricevere notifiche di eventi hardware.
+**L'oggetto SafeWia** è un punto di ingresso "sicuro per lo scripting" per tutte le Windows di scripting wia (Image Acquisition). Qualsiasi applicazione che usa il modello di scripting WIA deve creare un **oggetto SafeWia** [**o Wia.**](-wia-wia.md) Usare tale oggetto per enumerare e creare dispositivi e ricevere notifiche di eventi hardware.
 
 ## <a name="members"></a>Membri
 
-L'oggetto **SafeWia** dispone di questi tipi di membri:
+**L'oggetto SafeWia** ha questi tipi di membri:
 
 -   [Metodi](#methods)
 -   [Proprietà](#properties)
 
 ### <a name="methods"></a>Metodi
 
-L'oggetto **SafeWia** dispone di questi metodi.
+**L'oggetto SafeWia** dispone di questi metodi.
 
 
 
 | Metodo                             | Descrizione                                                                                                                                                                                                                |
 |:-----------------------------------|:---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| [**Creare**](-wia-iwia-create.md) | Il metodo [**create**](-wia-iwia-create.md) dell'oggetto [**WIA**](-wia-wia.md) esegue una connessione al dispositivo WIA specificato e restituisce un oggetto [**Item**](-wia-item.md) che rappresenta il dispositivo.<br/> |
+| [**Creare**](-wia-iwia-create.md) | Il [**metodo Create**](-wia-iwia-create.md) dell'oggetto [**Wia**](-wia-wia.md) crea una connessione al dispositivo WIA specificato e restituisce un [**oggetto Item**](-wia-item.md) che rappresenta il dispositivo.<br/> |
 
 
 
@@ -47,36 +47,15 @@ L'oggetto **SafeWia** dispone di questi metodi.
 
 ### <a name="properties"></a>Proprietà
 
-L'oggetto **SafeWia** dispone di queste proprietà.
+**L'oggetto SafeWia** ha queste proprietà.
 
 
 
-<table>
-<colgroup>
-<col style="width: 33%" />
-<col style="width: 33%" />
-<col style="width: 33%" />
-</colgroup>
-<thead>
-<tr class="header">
-<th style="text-align: left;">Proprietà</th>
-<th style="text-align: left;">Tipo di accesso</th>
-<th style="text-align: left;">Descrizione</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td style="text-align: left;"><a href="-wia-iwia-devices.md"><strong>Dispositivi</strong></a><br/></td>
-<td style="text-align: left;">Sola lettura<br/></td>
-<td style="text-align: left;">Raccolta di oggetti <a href="-wia-deviceinfo.md"><strong>deviceInfo</strong></a> che rappresenta tutti i dispositivi installati nel computer. Di sola lettura. <br/>
-<blockquote>
-[!Note]<br />
-Questa raccolta è in base 0.
-</blockquote>
-<br/></td>
-</tr>
-</tbody>
-</table>
+
+| Proprietà | Tipo di accesso | Descrizione | 
+|----------|-------------|-------------|
+| <a href="-wia-iwia-devices.md"><strong>Dispositivi</strong></a><br /> | Sola lettura<br /> | Raccolta di <a href="-wia-deviceinfo.md"><strong>oggetti DeviceInfo</strong></a> che rappresenta tutti i dispositivi installati nel computer. Di sola lettura. <br /><blockquote>[!Note]<br />Questa raccolta è basata su 0.</blockquote><br /> | 
+
 
 
 
@@ -86,12 +65,12 @@ Questa raccolta è in base 0.
 
 
 
-| Requisito | Valore |
+| Requisito | valore |
 |-------------------------------------|---------------------------------------------------------------------------------------------------------------|
-| Client minimo supportato<br/> | Windows 2000 Professional, \[ solo app desktop Windows XP\]<br/>                                        |
-| Server minimo supportato<br/> | \[Solo app desktop Windows Server 2003\]<br/>                                                          |
-| DLL<br/>                      | <dl> <dt>Wiascr.dll (versione 4,90 o successiva)</dt> </dl> |
-| IID<br/>                      | \_SAFEWIA CLSID<br/>                                                                                     |
+| Client minimo supportato<br/> | Windows 2000 Professional, Windows solo app desktop XP \[\]<br/>                                        |
+| Server minimo supportato<br/> | Windows Solo app desktop server 2003 \[\]<br/>                                                          |
+| DLL<br/>                      | <dl> <dt>Wiascr.dll (versione 4.90 o successiva)</dt> </dl> |
+| IID<br/>                      | CLSID \_ SafeWia<br/>                                                                                     |
 
 
 
@@ -99,7 +78,7 @@ Questa raccolta è in base 0.
 
 <dl> <dt>
 
-[**WIA**](-wia-wia.md)
+[**Wia**](-wia-wia.md)
 </dt> </dl>
 
  

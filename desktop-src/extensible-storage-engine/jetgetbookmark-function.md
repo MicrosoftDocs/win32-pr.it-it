@@ -18,12 +18,12 @@ api_type:
 api_location:
 - ESENT.DLL
 ROBOTS: INDEX,FOLLOW
-ms.openlocfilehash: 5b75e40205dc25d467a010499ef0083c7ad87c47
-ms.sourcegitcommit: 9b5faa61c38b2d0c432b7f2dbee8c127b0e28a7e
+ms.openlocfilehash: 7806770d528d83f18d6f3eb061dc3043e15a0e53
+ms.sourcegitcommit: 4665ebce0c106bdb52eef36e544280b496b6f50b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/19/2021
-ms.locfileid: "122477967"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "122984844"
 ---
 # <a name="jetgetbookmark-function"></a>Funzione JetGetBookmark
 
@@ -109,12 +109,18 @@ I segnalibri devono in genere essere considerati come blocchi di dati opachi. No
 
   - Un segnalibro è sempre minore o uguale JET_cbBookmarkMost (256) byte, prima di Windows Vista.
     
-**Windows Vista:** In Windows Vista e versioni successive, i segnalibri possono essere più grandi JET_cbBookmarkMost byte (256). La dimensione massima di un segnalibro è uguale al valore corrente di JET_paramKeyMost + 1.
+**Windows Vista:** In Windows Vista e versioni successive, i segnalibri possono essere più grandi di JET_cbBookmarkMost (256) byte. La dimensione massima di un segnalibro è uguale al valore corrente di JET_paramKeyMost + 1.
 
 #### <a name="requirements"></a>Requisiti
 
 
-| | | <p><strong>Client</strong></p> | <p>Richiede Windows Vista, Windows XP o Windows 2000 Professional.</p> | | <p><strong>Server</strong></p> | <p>Richiede Windows Server 2008, Windows Server 2003 o Windows 2000 Server.</p> | | <p><strong>Intestazione</strong></p> | <p>Dichiarato in Esent.h.</p> | | <p><strong>Libreria</strong></p> | <p>Usare ESENT.lib.</p> | | <p><strong>DLL</strong></p> | <p>Richiede ESENT.dll.</p> | 
+| Requisito | Valore |
+|------------|----------|
+| <p><strong>Client</strong></p> | <p>Richiede Windows Vista, Windows XP o Windows 2000 Professional.</p> | 
+| <p><strong>Server</strong></p> | <p>Richiede Windows Server 2008, Windows Server 2003 o Windows 2000 Server.</p> | 
+| <p><strong>Intestazione</strong></p> | <p>Dichiarato in Esent.h.</p> | 
+| <p><strong>Libreria</strong></p> | <p>Usare ESENT.lib.</p> | 
+| <p><strong>DLL</strong></p> | <p>Richiede ESENT.dll.</p> | 
 
 
 

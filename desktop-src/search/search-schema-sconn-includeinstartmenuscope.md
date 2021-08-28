@@ -1,19 +1,19 @@
 ---
-description: L'elemento <includeInStartMenuScope> booleano facoltativo specifica se questo connettore di ricerca deve essere incluso nell menu Start di ricerca.
+description: L'elemento &lt; booleano facoltativo includeInStartMenuScope specifica se questo connettore di ricerca deve essere incluso nell'ambito menu Start &gt; di ricerca.
 ms.assetid: 934a3834-9ddc-4c15-b738-68ea74adc24c
 title: Elemento includeInStartMenuScope (schema del connettore di ricerca)
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 60941ef06f3f7220c7bbbae652f5e8256c6256660ea8e9ece2ddd330858958b6
-ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
+ms.openlocfilehash: e20696dc6d2bc41b3f693e771a59541204e376e7
+ms.sourcegitcommit: 61a4c522182aa1cacbf5669683d9570a3bf043b2
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119937951"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "122882393"
 ---
 # <a name="includeinstartmenuscope-element-search-connector-schema"></a>Elemento includeInStartMenuScope (schema del connettore di ricerca)
 
-L'elemento <includeInStartMenuScope> booleano facoltativo specifica se questo connettore di ricerca deve essere incluso nell menu Start di ricerca. Il valore predefinito è true per i connettori di ricerca che usano il file system come origine dati e false per i connettori di ricerca usati dai gestori delle proprietà. Questo elemento non ha elementi figlio e nessun attributo.
+L'elemento &lt; booleano facoltativo includeInStartMenuScope specifica se questo connettore di ricerca deve essere incluso nell'ambito menu Start &gt; di ricerca. Il valore predefinito è true per i connettori di ricerca che usano il file system come origine dati e false per i connettori di ricerca usati dai gestori delle proprietà. Questo elemento non ha elementi figlio e nessun attributo.
 
 ## <a name="syntax"></a>Sintassi
 

@@ -1,6 +1,6 @@
 ---
-description: 'Altre informazioni su: funzione JetEnableMultiInstance'
-title: JetEnableMultiInstance (funzione)
+description: Altre informazioni sulla funzione JetEnableMultiInstance
+title: Funzione JetEnableMultiInstance
 TOCTitle: JetEnableMultiInstance Function
 ms:assetid: d88a7b2a-c0d1-47de-9239-3631150d92da
 ms:mtpsurl: https://msdn.microsoft.com/library/Gg294107(v=EXCHG.10)
@@ -20,21 +20,21 @@ api_type:
 api_location:
 - ESENT.DLL
 ROBOTS: INDEX,FOLLOW
-ms.openlocfilehash: 61fb058b14d9a8abeb282d4227b110ba50304a7d
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 618552b01a4702790fca0d234ee40aff0de39f45
+ms.sourcegitcommit: 9b5faa61c38b2d0c432b7f2dbee8c127b0e28a7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "106319635"
+ms.lasthandoff: 08/19/2021
+ms.locfileid: "122481367"
 ---
-# <a name="jetenablemultiinstance-function"></a>JetEnableMultiInstance (funzione)
+# <a name="jetenablemultiinstance-function"></a>Funzione JetEnableMultiInstance
 
 
 _**Si applica a:** Windows | Windows Server_
 
-## <a name="jetenablemultiinstance-function"></a>JetEnableMultiInstance (funzione)
+## <a name="jetenablemultiinstance-function"></a>Funzione JetEnableMultiInstance
 
-La funzione **JetEnableMultiInstance** configura il motore di database per l'utilizzo con più istanze nello stesso processo. Una matrice facoltativa di parametri di sistema globale è disponibile per il primo chiamante che consente la modifica alla modalità a istanze diverse.
+La **funzione JetEnableMultiInstance** configura il motore di database per l'uso con più istanze nello stesso processo. Una matrice facoltativa di parametri di sistema globali è disponibile per il primo chiamante, consentendo la modifica alla modalità a istanze multipla.
 
 **Windows XP: JetEnableMultiInstance** è stato introdotto in Windows XP.
 
@@ -50,100 +50,44 @@ La funzione **JetEnableMultiInstance** configura il motore di database per l'uti
 
 *psetsysparam*
 
-Matrice di parametri di sistema globale da impostare se e solo se il motore entra in modalità a istanze diverse in seguito a questa chiamata. Se *csetsysparam* è zero, *psetsysparam* viene ignorato.
+Matrice di parametri di sistema globali da impostare se e solo se il motore entra in modalità a istanze multipla come risultato di questa chiamata. Se *csetsysparam* è zero, *psetsysparam viene* ignorato.
 
 *csetsysparam*
 
-Il numero di elementi per la matrice di parametri globali da impostare se e solo se il motore entra in modalità a istanze diverse in seguito a questa chiamata. Se *csetsysparam* è zero, *psetsysparam* viene ignorato.
+Numero di elementi per la matrice di parametri globali da impostare se e solo se il motore entra in modalità a istanze multipla come risultato di questa chiamata. Se *csetsysparam* è zero, *psetsysparam viene* ignorato.
 
 *pcsetsucceed*
 
-Puntatore al numero di parametri di sistema globale configurati correttamente in seguito a questa chiamata.
+Puntatore al conteggio dei parametri di sistema globali configurati correttamente in seguito a questa chiamata.
 
 ### <a name="return-value"></a>Valore restituito
 
-Questa funzione restituisce il tipo di dati [JET_ERR](./jet-err.md) con uno dei seguenti codici restituiti. Per ulteriori informazioni sugli errori ESE possibili, vedere la pagina relativa agli errori e ai [parametri di gestione degli](./error-handling-parameters.md)errori del [motore di archiviazione estensibile](./extensible-storage-engine-errors.md) .
-
-<table>
-<colgroup>
-<col style="width: 50%" />
-<col style="width: 50%" />
-</colgroup>
-<thead>
-<tr class="header">
-<th><p>Codice restituito</p></th>
-<th><p>Descrizione</p></th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td><p>JET_errSuccess</p></td>
-<td><p>Operazione riuscita.</p></td>
-</tr>
-<tr class="even">
-<td><p>JET_errIndexTuplesInvalidLimits</p></td>
-<td><p>I parametri specificati per l'indice tupla non sono consentiti. Questo errore può essere restituito da <strong>JetEnableMultiInstance</strong> solo quando si imposta <a href="gg294119(v=exchg.10).md">JET_paramIndexTuplesLengthMin</a>, <a href="gg294119(v=exchg.10).md">JET_paramIndexTuplesLengthMax</a>o <a href="gg294119(v=exchg.10).md">JET_paramIndexTuplesToIndexMax</a> su un valore non valido.</p>
-<p><strong>Windows XP:</strong>  Questo valore restituito è stato introdotto in Windows XP.</p></td>
-</tr>
-<tr class="odd">
-<td><p>JET_errInvalidPath</p></td>
-<td><p>Il percorso di file system specificato non è valido. Questo errore può essere restituito da <strong>JetEnableMultiInstance</strong> solo quando si impostano parametri di sistema che rappresentano file System percorsi. Ad esempio, <a href="gg269235(v=exchg.10).md">JET_paramSystemPath</a> possibile restituire l'errore.</p></td>
-</tr>
-<tr class="even">
-<td><p>JET_errRunningInOneInstanceMode</p></td>
-<td><p>L'operazione non è riuscita perché non è valida quando il motore di database funziona in modalità a istanza singola (modalità di compatibilità di Windows 2000).</p></td>
-</tr>
-<tr class="odd">
-<td><p>JET_errSystemParamsAlreadySet</p></td>
-<td><p><strong>JetEnableMultiInstance</strong> non riuscito perché il motore è già in modalità a istanze diverse.</p>
-<p><strong>Nota  </strong> Questa operazione si verificherà anche se non viene specificato alcun parametro di sistema.</p></td>
-</tr>
-</tbody>
-</table>
+Questa funzione restituisce il [JET_ERR](./jet-err.md) dati con uno dei codici restituiti seguenti. Per altre informazioni sui possibili errori ESE, vedere [Extensible Archiviazione Engine Errors](./extensible-storage-engine-errors.md) and [Error Handling Parameters](./error-handling-parameters.md).
 
 
-Se questa funzione ha esito positivo, il motore di database verrà configurato per l'esecuzione in modalità a istanze diverse. Anche il motore è stato configurato correttamente con l'elenco facoltativo di parametri di sistema globali.
+| <p>Codice restituito</p> | <p>Descrizione</p> | 
+|--------------------|--------------------|
+| <p>JET_errSuccess</p> | <p>Operazione riuscita.</p> | 
+| <p>JET_errIndexTuplesInvalidLimits</p> | <p>I parametri dell'indice di tupla specificati non sono consentiti. Questo errore può essere restituito da <strong>JetEnableMultiInstance</strong> solo quando si imposta <a href="gg294119(v=exchg.10).md">JET_paramIndexTuplesLengthMin</a>, <a href="gg294119(v=exchg.10).md">JET_paramIndexTuplesLengthMax</a>o <a href="gg294119(v=exchg.10).md">JET_paramIndexTuplesToIndexMax</a> su un valore non valido.</p><p><strong>Windows XP:</strong>  Questo valore restituito è stato introdotto in Windows XP.</p> | 
+| <p>JET_errInvalidPath</p> | <p>Il percorso file system specificato non è valido. Questo errore può essere restituito da <strong>JetEnableMultiInstance solo</strong> quando si impostano parametri di sistema che rappresentano file system percorsi. Ad esempio, <a href="gg269235(v=exchg.10).md">JET_paramSystemPath</a> può restituire questo errore.</p> | 
+| <p>JET_errRunningInOneInstanceMode</p> | <p>L'operazione non è riuscita perché non è valida quando il motore di database funziona in modalità a istanza singola (Windows compatibilità 2000).</p> | 
+| <p>JET_errSystemParamsAlreadySet</p> | <p><strong>JetEnableMultiInstance</strong> non è riuscito perché il motore è già in modalità a istanza multipla.</p><p><strong>Nota  </strong> Ciò si verifica anche se non viene specificato alcun parametro di sistema.</p> | 
 
-Se questa funzione ha esito negativo, il motore di database rimarrà nella modalità corrente. Se *pcsetsucceed* è diverso da zero, il numero di parametri di sistema rimarrà impostato.
+
+
+Se questa funzione ha esito positivo, il motore di database verrà configurato per l'esecuzione in modalità a istanze multipla. Anche il motore è stato configurato correttamente con l'elenco facoltativo di parametri di sistema globali.
+
+Se questa funzione ha esito negativo, il motore di database rimarrà nella modalità corrente. Se *pcsetsucceed è* diverso da zero, il numero di parametri di sistema rimarrà impostato.
 
 #### <a name="remarks"></a>Commenti
 
-Questa funzione deve essere utilizzata solo se l'applicazione deve configurare un determinato set di parametri di sistema in modo atomico quando si configura il motore di database per l'utilizzo in uno scenario multiutente nello stesso processo. Se è disponibile un altro metodo di sincronizzazione, è preferibile chiamare [JetCreateInstance](./jetcreateinstance-function.md) e [JetSetSystemParameter](./jetsetsystemparameter-function.md) separatamente.
+Questa funzione deve essere usata solo se l'applicazione deve configurare un determinato set di parametri di sistema in modo atomico quando si configura il motore di database per l'uso in uno scenario multi-utente nello stesso processo. Se è disponibile un altro metodo di sincronizzazione, è preferibile chiamare [JetCreateInstance](./jetcreateinstance-function.md) e [JetSetSystemParameter](./jetsetsystemparameter-function.md) separatamente.
 
 #### <a name="requirements"></a>Requisiti
 
-<table>
-<colgroup>
-<col style="width: 50%" />
-<col style="width: 50%" />
-</colgroup>
-<tbody>
-<tr class="odd">
-<td><p><strong>Client</strong></p></td>
-<td><p>Richiede Windows Vista o Windows XP.</p></td>
-</tr>
-<tr class="even">
-<td><p><strong>Server</strong></p></td>
-<td><p>Richiede Windows Server 2008 o Windows Server 2003.</p></td>
-</tr>
-<tr class="odd">
-<td><p><strong>Intestazione</strong></p></td>
-<td><p>Dichiarata in esent. h.</p></td>
-</tr>
-<tr class="even">
-<td><p><strong>Libreria</strong></p></td>
-<td><p>Usare ESENT. lib.</p></td>
-</tr>
-<tr class="odd">
-<td><p><strong>DLL</strong></p></td>
-<td><p>Richiede ESENT.dll.</p></td>
-</tr>
-<tr class="even">
-<td><p><strong>Unicode</strong></p></td>
-<td><p>Implementato come <strong>JetEnableMultiInstanceW</strong> (Unicode) e <strong>JetEnableMultiInstanceA</strong> (ANSI).</p></td>
-</tr>
-</tbody>
-</table>
+
+| | | <p><strong>Client</strong></p> | <p>Richiede Windows Vista o Windows XP.</p> | | <p><strong>Server</strong></p> | <p>Richiede Windows Server 2008 o Windows Server 2003.</p> | | <p><strong>Intestazione</strong></p> | <p>Dichiarato in Esent.h.</p> | | <p><strong>Libreria</strong></p> | <p>Usare ESENT.lib.</p> | | <p><strong>DLL</strong></p> | <p>Richiede ESENT.dll.</p> | | <p><strong>Unicode</strong></p> | <p>Implementato come <strong>JetEnableMultiInstanceW</strong> (Unicode) e <strong>JetEnableMultiInstanceA</strong> (ANSI).</p> | 
+
 
 
 #### <a name="see-also"></a>Vedere anche
