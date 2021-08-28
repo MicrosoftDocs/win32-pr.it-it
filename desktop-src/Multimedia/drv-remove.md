@@ -1,9 +1,9 @@
 ---
-title: Messaggio DRV_REMOVE (mmsystem. h)
-description: Notifica al driver che sta per essere rimosso dal sistema. Quando un driver riceve questo messaggio, è necessario rimuovere tutte le sezioni create nel registro di sistema.
+title: DRV_REMOVE messaggio (Mmsystem.h)
+description: Notifica al driver che sta per essere rimosso dal sistema. Quando un driver riceve questo messaggio, deve rimuovere tutte le sezioni create nel Registro di sistema.
 ms.assetid: e4f6ce7c-29e5-4256-b08a-13571256207c
 keywords:
-- DRV_REMOVE messaggi multimediali di Windows
+- DRV_REMOVE di messaggi Windows multimediali
 topic_type:
 - apiref
 api_name:
@@ -14,16 +14,16 @@ api_type:
 - HeaderDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: ccfc94d648f83e618a20323ed7bbe3694616bc06
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: 0c08302d69e934ec77908b247f3c8f6368de8de4eab36809b6102b74858adde5
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "104048745"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119496421"
 ---
-# <a name="drv_remove-message"></a>DRV- \_ Rimuovi messaggio
+# <a name="drv_remove-message"></a>Messaggio DRV \_ REMOVE
 
-Notifica al driver che sta per essere rimosso dal sistema. Quando un driver riceve questo messaggio, è necessario rimuovere tutte le sezioni create nel registro di sistema.
+Notifica al driver che sta per essere rimosso dal sistema. Quando un driver riceve questo messaggio, deve rimuovere tutte le sezioni create nel Registro di sistema.
 
 ## <a name="parameters"></a>Parametri
 
@@ -32,7 +32,7 @@ Notifica al driver che sta per essere rimosso dal sistema. Quando un driver rice
 <span id="dwDriverId"></span><span id="dwdriverid"></span><span id="DWDRIVERID"></span>*dwDriverId*
 </dt> <dd>
 
-Identificatore del driver installabile. Si tratta dello stesso valore restituito in precedenza dal driver dal messaggio [**\_ aperto DRV**](drv-open.md) .
+Identificatore del driver installabile. Si tratta dello stesso valore restituito in precedenza dal driver dal [**messaggio DRV \_ OPEN.**](drv-open.md)
 
 </dd> <dt>
 
@@ -49,7 +49,7 @@ Nessun valore restituito.
 
 ## <a name="remarks"></a>Commenti
 
-I parametri *lParam1* e *lParam2* non vengono usati.
+I *parametri lParam1* *e lParam2* non vengono usati.
 
 ## <a name="requirements"></a>Requisiti
 
@@ -59,7 +59,7 @@ I parametri *lParam1* e *lParam2* non vengono usati.
 |-------------------------------------|-----------------------------------------------------------------------------------------------------------|
 | Client minimo supportato<br/> | Windows 2000 Professional \[solo app desktop\]<br/>                                                |
 | Server minimo supportato<br/> | Windows 2000 Server \[solo app desktop\]<br/>                                                      |
-| Intestazione<br/>                   | <dl> <dt>Mmsystem. h (include Windows. h)</dt> </dl> |
+| Intestazione<br/>                   | <dl> <dt>Mmsystem.h (includere Windows.h)</dt> </dl> |
 
 
 

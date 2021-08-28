@@ -1,7 +1,7 @@
 ---
-description: La funzione FreeMediaType Elimina il blocco di formato in una \_ struttura del tipo di supporto am \_ .
+description: La funzione FreeMediaType elimina il blocco di formato in una struttura AM \_ MEDIA \_ TYPE.
 ms.assetid: b7ec335e-518d-4aa6-8cde-8cb92184d0b0
-title: Funzione FreeMediaType (mtype. h)
+title: Funzione FreeMediaType (Mtype.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -16,16 +16,16 @@ api_location:
 - Strmbase.dll
 - Strmbasd.lib
 - Strmbasd.dll
-ms.openlocfilehash: 9f332ccc9a60473a9d814481b759221dc6468d5c
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: 4806a87674bf83964ad5b285934effd74b789ecebe7f92f642188b156bf1f48c
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "106331439"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118000506"
 ---
-# <a name="freemediatype-function"></a>FreeMediaType (funzione)
+# <a name="freemediatype-function"></a>Funzione FreeMediaType
 
-La funzione **FreeMediaType** Elimina il blocco di formato in una struttura del [**\_ \_ tipo di supporto am**](/windows/win32/api/strmif/ns-strmif-am_media_type) .
+La **funzione FreeMediaType** elimina il blocco di formato in una [**struttura AM MEDIA \_ \_ TYPE.**](/windows/win32/api/strmif/ns-strmif-am_media_type)
 
 ## <a name="syntax"></a>Sintassi
 
@@ -45,7 +45,7 @@ void FreeMediaType(
 *mt* \[ Ref\]
 </dt> <dd>
 
-Riferimento a una struttura [**del \_ \_ tipo di supporto am**](/windows/win32/api/strmif/ns-strmif-am_media_type) .
+Riferimento a una [**struttura AM \_ MEDIA \_ TYPE.**](/windows/win32/api/strmif/ns-strmif-am_media_type)
 
 </dd> </dl>
 
@@ -55,9 +55,9 @@ Questa funzione non restituisce un valore.
 
 ## <a name="remarks"></a>Commenti
 
-Il blocco di formato viene allocato nell'heap. Il membro **pbFormat** del [**\_ \_ tipo di supporto am**](/windows/win32/api/strmif/ns-strmif-am_media_type) punta al blocco di formato. Usare questa funzione per liberare solo il blocco di formato. Per eliminare una struttura **del \_ \_ tipo di supporto am** allocata, chiamare [**DeleteMediaType**](deletemediatype.md).
+Il blocco di formato viene allocato nell'heap. Il **membro pbFormat** di [**AM MEDIA \_ \_ TYPE**](/windows/win32/api/strmif/ns-strmif-am_media_type) punta al blocco di formato. Usare questa funzione per liberare solo il blocco di formato. Per eliminare una struttura **AM \_ MEDIA TYPE \_ allocata,** [**chiamare DeleteMediaType**](deletemediatype.md).
 
-Questa funzione è definita nella libreria di [classi base DirectShow](directshow-base-classes.md) . Se si preferisce non eseguire il collegamento alla libreria di classi di base, è possibile usare il codice seguente:
+Questa funzione è definita nella libreria DirectShow [classi base.](directshow-base-classes.md) Se si preferisce non collegarsi alla libreria di classi di base, è possibile usare il codice seguente:
 
 
 ```C++
@@ -88,8 +88,8 @@ void _FreeMediaType(AM_MEDIA_TYPE& mt)
 
 | Requisito | Valore |
 |--------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Intestazione<br/>  | <dl> <dt>Mtype. h (include Streams. h)</dt> </dl>                                                                                     |
-| Libreria<br/> | <dl> <dt>Strmbase. lib (compilazioni finali); </dt> <dt>Strmbasd. lib (build di debug)</dt> </dl> |
+| Intestazione<br/>  | <dl> <dt>Mtype.h (includere Flussi.h)</dt> </dl>                                                                                     |
+| Libreria<br/> | <dl> <dt>Strmbase.lib (build di vendita al dettaglio); </dt> <dt>Strmbasd.lib (build di debug)</dt> </dl> |
 
 
 
@@ -100,7 +100,7 @@ void _FreeMediaType(AM_MEDIA_TYPE& mt)
 [**DeleteMediaType**](deletemediatype.md)
 </dt> <dt>
 
-[**Funzioni di tipo multimediale**](media-type-functions.md)
+[**Funzioni per i tipi di supporti**](media-type-functions.md)
 </dt> </dl>
 
  

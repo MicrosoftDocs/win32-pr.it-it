@@ -1,30 +1,30 @@
 ---
-title: Proprietà DesktopHeight di IMsTscAx
-description: Specifica l'altezza, in pixel, del controllo corrente sul desktop remoto iniziale.
+title: Proprietà IMsTscAx DesktopHeight
+description: Specifica l'altezza del controllo corrente, in pixel, sul desktop remoto iniziale.
 ms.assetid: 7071053b-bdd1-408b-ab69-965c504fafb0
 ms.tgt_platform: multiple
 keywords:
-- Servizi Desktop remoto proprietà DesktopHeight
-- Servizi Desktop remoto proprietà DesktopHeight, interfaccia IMsTscAx
-- Interfaccia IMsTscAx Servizi Desktop remoto, proprietà DesktopHeight
-- Servizi Desktop remoto proprietà DesktopHeight, interfaccia IMsRdpClient
-- Interfaccia IMsRdpClient Servizi Desktop remoto, proprietà DesktopHeight
-- Servizi Desktop remoto proprietà DesktopHeight, interfaccia IMsRdpClient2
-- Interfaccia IMsRdpClient2 Servizi Desktop remoto, proprietà DesktopHeight
-- Servizi Desktop remoto proprietà DesktopHeight, interfaccia IMsRdpClient3
-- Interfaccia IMsRdpClient3 Servizi Desktop remoto, proprietà DesktopHeight
-- Servizi Desktop remoto proprietà DesktopHeight, interfaccia IMsRdpClient4
-- Interfaccia IMsRdpClient4 Servizi Desktop remoto, proprietà DesktopHeight
-- Servizi Desktop remoto proprietà DesktopHeight, interfaccia IMsRdpClient5
-- Interfaccia IMsRdpClient5 Servizi Desktop remoto, proprietà DesktopHeight
-- Servizi Desktop remoto proprietà DesktopHeight, interfaccia IMsRdpClient6
-- Interfaccia IMsRdpClient6 Servizi Desktop remoto, proprietà DesktopHeight
-- Servizi Desktop remoto proprietà DesktopHeight, interfaccia IMsRdpClient7
-- Interfaccia IMsRdpClient7 Servizi Desktop remoto, proprietà DesktopHeight
-- Servizi Desktop remoto proprietà DesktopHeight, interfaccia IMsRdpClient8
-- Interfaccia IMsRdpClient8 Servizi Desktop remoto, proprietà DesktopHeight
-- Servizi Desktop remoto proprietà DesktopHeight, interfaccia IMsRdpClient9
-- Interfaccia IMsRdpClient9 Servizi Desktop remoto, proprietà DesktopHeight
+- Proprietà DesktopHeight Servizi Desktop remoto
+- Proprietà DesktopHeight Servizi Desktop remoto, interfaccia IMsTscAx
+- Interfaccia IMsTscAx Servizi Desktop remoto proprietà DesktopHeight
+- Proprietà DesktopHeight Servizi Desktop remoto, interfaccia IMsRdpClient
+- Interfaccia IMsRdpClient Servizi Desktop remoto proprietà DesktopHeight
+- Proprietà DesktopHeight Servizi Desktop remoto, interfaccia IMsRdpClient2
+- Interfaccia IMsRdpClient2 Servizi Desktop remoto , proprietà DesktopHeight
+- Proprietà DesktopHeight Servizi Desktop remoto, interfaccia IMsRdpClient3
+- Interfaccia IMsRdpClient3 Servizi Desktop remoto proprietà DesktopHeight
+- Proprietà DesktopHeight Servizi Desktop remoto, interfaccia IMsRdpClient4
+- Interfaccia IMsRdpClient4 Servizi Desktop remoto , proprietà DesktopHeight
+- Proprietà DesktopHeight Servizi Desktop remoto, interfaccia IMsRdpClient5
+- Interfaccia IMsRdpClient5 Servizi Desktop remoto proprietà DesktopHeight
+- Proprietà DesktopHeight Servizi Desktop remoto, interfaccia IMsRdpClient6
+- Interfaccia IMsRdpClient6 Servizi Desktop remoto proprietà DesktopHeight
+- Proprietà DesktopHeight Servizi Desktop remoto, interfaccia IMsRdpClient7
+- Interfaccia IMsRdpClient7 Servizi Desktop remoto , proprietà DesktopHeight
+- Proprietà DesktopHeight Servizi Desktop remoto, interfaccia IMsRdpClient8
+- Interfaccia IMsRdpClient8 Servizi Desktop remoto , proprietà DesktopHeight
+- Proprietà DesktopHeight Servizi Desktop remoto, interfaccia IMsRdpClient9
+- Interfaccia IMsRdpClient9 Servizi Desktop remoto , proprietà DesktopHeight
 topic_type:
 - apiref
 api_name:
@@ -64,16 +64,16 @@ api_type:
 - COM
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: fb75467b35703420ce49fd99ea032b139d721505
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: c4e55d5a1f529435f0cdf6db3dcf801e7f24dda1a69e0bc1cad393942b672d4a
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "103964505"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119513101"
 ---
-# <a name="imstscaxdesktopheight-property"></a>IMsTscAx::D Proprietà esktopHeight
+# <a name="imstscaxdesktopheight-property"></a>Proprietà IMsTscAx::D esktopHeight
 
-Specifica l'altezza, in pixel, del controllo corrente sul desktop remoto iniziale.
+Specifica l'altezza del controllo corrente, in pixel, sul desktop remoto iniziale.
 
 Si tratta di una proprietà di lettura/scrittura.
 
@@ -98,11 +98,11 @@ Nuova altezza, in pixel.
 
 ## <a name="error-codes"></a>Codici di errore
 
-Se l'operazione ha esito positivo, restituire **S \_ OK** .
+Restituisce **S \_ OK in** caso di esito positivo.
 
 ## <a name="remarks"></a>Commenti
 
-L'impostazione della proprietà **DesktopHeight** è facoltativa, ma deve essere impostata prima di chiamare il metodo [**Connect**](imstscax-connect.md) . Se non viene specificata un'altezza del desktop o è impostata su zero, l'altezza del desktop viene impostata sull'altezza del controllo. I valori minimo e massimo dipendono dalla versione del sistema operativo del client Desktop remoto.
+**L'impostazione della proprietà DesktopHeight** è facoltativa, ma deve essere impostata prima di chiamare il [**Connessione**](imstscax-connect.md) metodo . Se non viene specificata un'altezza del desktop o è impostata su zero, l'altezza del desktop viene impostata sull'altezza del controllo . I valori minimo e massimo dipendono dalla versione del sistema operativo del client Desktop remoto client.
 
 <dl> <dt>
 
@@ -127,9 +127,9 @@ Windows Vista
 
 </dd> </dl>
 
-Una volta stabilita una connessione, tutte le modifiche apportate all'altezza del controllo non modificano l'altezza del desktop remoto. Al contrario, il controllo Visualizza le barre di scorrimento o Centra il desktop remoto, in base alle esigenze. Per modificare le dimensioni del desktop di una connessione attiva, usare il metodo [**IMsRdpClient8:: Reconnect**](imsrdpclient8-reconnect.md) .
+Dopo aver stabilito una connessione, qualsiasi modifica all'altezza del controllo non modifica l'altezza del desktop remoto. Al contrario, il controllo apre le barre di scorrimento o centra il desktop remoto, in base alle esigenze. Per modificare le dimensioni del desktop di una connessione attiva, usare il [**metodo IMsRdpClient8::Reconnect.**](imsrdpclient8-reconnect.md)
 
-Per ulteriori informazioni su Connessione Web Desktop remoto, vedere [requisiti per connessione Web Desktop remoto](requirements-for-remote-desktop-web-connection.md).
+Per altre informazioni sui Connessione Web Desktop remoto, vedere [Requisiti per Connessione Web Desktop remoto](requirements-for-remote-desktop-web-connection.md).
 
 ## <a name="requirements"></a>Requisiti
 
@@ -141,7 +141,7 @@ Per ulteriori informazioni su Connessione Web Desktop remoto, vedere [requisiti 
 | Server minimo supportato<br/> | Windows Server 2008<br/>                                                         |
 | Libreria dei tipi<br/>             | <dl> <dt>MsTscAx.dll</dt> </dl> |
 | DLL<br/>                      | <dl> <dt>MsTscAx.dll</dt> </dl> |
-| IID<br/>                      | IID \_ IMsTscAx è definito come 8C11EFAE-92C3-11D1-BC1E-00C04FA31489<br/>            |
+| IID<br/>                      | IMsTscAx IID è definito come \_ 8C11EFAE-92C3-11D1-BC1E-00C04FA31489<br/>            |
 
 
 

@@ -14,18 +14,18 @@ api_type:
 - COM
 api_location:
 - CIMWin32.dll
-ms.openlocfilehash: d7a74838d9f6c532d3433240a5b8a70846b63776
-ms.sourcegitcommit: c7add10d695482e1ceb72d62b8a4ebd84ea050f7
+ms.openlocfilehash: 582e255223b6eb971fd447c7884ff730662a1b344c107791b1a57a074c2c1354
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "103966375"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119504771"
 ---
-# <a name="create-method-of-the-win32_share-class"></a>Metodo Create della \_ classe Share Win32
+# <a name="create-method-of-the-win32_share-class"></a>Metodo Create della classe Win32 \_ Share
 
-Il metodo **create**   [WMI class](/windows/desktop/WmiSdk/retrieving-a-class) avvia la condivisione per una risorsa server.
+Il **metodo Crea**   [classe WMI](/windows/desktop/WmiSdk/retrieving-a-class) avvia la condivisione per una risorsa server.
 
-In questo argomento viene utilizzata la sintassi Managed Object Format (MOF). Per ulteriori informazioni sull'utilizzo di questo metodo, vedere [chiamata a un metodo](/windows/desktop/WmiSdk/calling-a-method).
+Questo argomento usa Managed Object Format (MOF). Per altre informazioni sull'uso di questo metodo, vedere [Chiamata di un metodo](/windows/desktop/WmiSdk/calling-a-method).
 
 ## <a name="syntax"></a>Sintassi
 
@@ -48,28 +48,28 @@ uint32 Create(
 
 <dl> <dt>
 
-*Percorso* \[ in\]
+*Percorso* \[ Pollici\]
 </dt> <dd>
 
-Percorso locale della condivisione di Windows.
+Percorso locale della condivisione Windows locale.
 
-Esempio, "C: \\ Program Files".
+Ad esempio, "C: \\ Programmi".
 
 </dd> <dt>
 
-*Nome* \[ in\]
+*Nome* \[ Pollici\]
 </dt> <dd>
 
-Passa l'alias a un percorso configurato come una condivisione in un computer in cui è in esecuzione Windows.
+Passa l'alias a un percorso configurato come condivisione in un computer che esegue Windows.
 
-Esempio "public".
+Ad esempio, "public".
 
 </dd> <dt>
 
-*Tipo* \[ di in\]
+*Tipo* \[ Pollici\]
 </dt> <dd>
 
-Passa il tipo di risorsa condivisa. I tipi includono le unità disco, le code di stampa, le comunicazioni interprocesso (IPC) e i dispositivi generali. Può essere uno dei valori seguenti.
+Passa il tipo di risorsa condivisa. I tipi includono unità disco, code di stampa, comunicazioni interprocesso (IPC) e dispositivi generali. Può essere uno dei valori seguenti.
 
 <dt>
 
@@ -82,7 +82,7 @@ Passa il tipo di risorsa condivisa. I tipi includono le unità disco, le code di
 
 <span id="Print_Queue"></span><span id="print_queue"></span><span id="PRINT_QUEUE"></span>
 
-**Coda di stampa** (1)
+**Coda di** stampa (1)
 
 
 </dt> <dd></dd> <dt>
@@ -103,21 +103,21 @@ Passa il tipo di risorsa condivisa. I tipi includono le unità disco, le code di
 
 <span id="Disk_Drive_Admin"></span><span id="disk_drive_admin"></span><span id="DISK_DRIVE_ADMIN"></span>
 
-**Amministrazione unità disco** (2147483648)
+**Amministratore unità disco** (2147483648)
 
 
 </dt> <dd></dd> <dt>
 
 <span id="Print_Queue_Admin"></span><span id="print_queue_admin"></span><span id="PRINT_QUEUE_ADMIN"></span>
 
-**Amministrazione coda di stampa** (2147483649)
+**Amministratore coda di** stampa (2147483649)
 
 
 </dt> <dd></dd> <dt>
 
 <span id="Device_Admin"></span><span id="device_admin"></span><span id="DEVICE_ADMIN"></span>
 
-**Amministratore del dispositivo** (2147483650)
+**Amministratore del** dispositivo (2147483650)
 
 
 </dt> <dd></dd> <dt>
@@ -132,40 +132,40 @@ Passa il tipo di risorsa condivisa. I tipi includono le unità disco, le code di
 *MaximumAllowed* \[ in, facoltativo\]
 </dt> <dd>
 
-Limite per il numero massimo di utenti autorizzati a usare simultaneamente questa risorsa.
+Limite al numero massimo di utenti autorizzati a usare contemporaneamente questa risorsa.
 
 Esempio: 10. Questo parametro è facoltativo.
 
 </dd> <dt>
 
-*Descrizione* \[ di in, facoltativo\]
+*Descrizione* \[ in, facoltativo\]
 </dt> <dd>
 
 Commento facoltativo per descrivere la risorsa condivisa. Questo parametro è facoltativo.
 
 </dd> <dt>
 
-*Password* \[ di in, facoltativo\]
+*Password* \[ in, facoltativo\]
 </dt> <dd>
 
-Password (quando il server è in esecuzione con sicurezza a livello di condivisione) per la risorsa condivisa. Se il server è in esecuzione con sicurezza a livello di utente, questo parametro viene ignorato. Questo parametro è facoltativo.
+Password (quando il server è in esecuzione con sicurezza a livello di condivisione) per la risorsa condivisa. Se il server viene eseguito con sicurezza a livello di utente, questo parametro viene ignorato. Questo parametro è facoltativo.
 
 </dd> <dt>
 
-*Accesso* \[ a in, facoltativo\]
+*Accesso* \[ in, facoltativo\]
 </dt> <dd>
 
-Descrittore di sicurezza per le autorizzazioni a livello utente. Un descrittore di sicurezza contiene informazioni sulle autorizzazioni, il proprietario e le funzionalità di accesso della risorsa. Se questo parametro non viene specificato o è **null**, tutti hanno accesso in lettura alla condivisione. Per ulteriori informazioni, vedere [**Win32 \_ securityDescriptor**](/previous-versions/windows/desktop/secrcw32prov/win32-securitydescriptor) e [modifica della sicurezza di accesso per gli oggetti a protezione diretta](/windows/desktop/WmiSdk/changing-access-security-on-securable-objects).
+Descrittore di sicurezza per le autorizzazioni a livello di utente. Un descrittore di sicurezza contiene informazioni sulle autorizzazioni, sul proprietario e sulle funzionalità di accesso della risorsa. Se questo parametro non viene fornito o è **NULL,** tutti gli utenti hanno accesso in lettura alla condivisione. Per altre informazioni, vedere [**Descrittore di sicurezza Win32 \_**](/previous-versions/windows/desktop/secrcw32prov/win32-securitydescriptor) e Modifica della sicurezza [degli accessi in oggetti a protezione diretta](/windows/desktop/WmiSdk/changing-access-security-on-securable-objects).
 
 </dd> </dl>
 
 ## <a name="return-value"></a>Valore restituito
 
-Restituisce uno dei valori elencati nell'elenco seguente o qualsiasi altro valore per indicare un errore. Per ulteriori codici di errore, vedere [**costanti di errore WMI**](/windows/desktop/WmiSdk/wmi-error-constants) o [**WbemErrorEnum**](/windows/desktop/api/wbemdisp/ne-wbemdisp-wbemerrorenum). Per i valori **HRESULT** generali, vedere [codici di errore di sistema](/windows/desktop/Debug/system-error-codes).
+Restituisce uno dei valori elencati nell'elenco seguente o qualsiasi altro valore per indicare un errore. Per altri codici di errore, vedere [**Costanti di errore WMI**](/windows/desktop/WmiSdk/wmi-error-constants) o [**WbemErrorEnum**](/windows/desktop/api/wbemdisp/ne-wbemdisp-wbemerrorenum). Per i valori **HRESULT** generali, vedere [Codici di errore di sistema](/windows/desktop/Debug/system-error-codes).
 
 <dl> <dt>
 
-**Operazione riuscita** (0)
+**Operazione** riuscita (0)
 </dt> <dt>
 
 **Accesso negato** (2)
@@ -180,7 +180,7 @@ Restituisce uno dei valori elencati nell'elenco seguente o qualsiasi altro valor
 **Livello non valido** (10)
 </dt> <dt>
 
-**Parametro non valido** (21)
+**Parametro non** valido (21)
 </dt> <dt>
 
 **Condivisione duplicata** (22)
@@ -189,10 +189,10 @@ Restituisce uno dei valori elencati nell'elenco seguente o qualsiasi altro valor
 **Percorso reindirizzato** (23)
 </dt> <dt>
 
-**Dispositivo o directory sconosciuta** (24)
+**Dispositivo o directory sconosciuto** (24)
 </dt> <dt>
 
-**Nome NET non trovato** (25)
+**Nome di rete non trovato** (25)
 </dt> <dt>
 
 **Altro** (26 4294967295)
@@ -202,11 +202,11 @@ Restituisce uno dei valori elencati nell'elenco seguente o qualsiasi altro valor
 
 **Create** è un metodo statico.
 
-È possibile eseguire correttamente **create** solo i membri del gruppo locale Administrators o account Operators o quelli con appartenenza a gruppi di operatori di comunicazione, stampa o server. L'operatore Print può aggiungere solo code di stampa. L'operatore di comunicazione può aggiungere solo le code del dispositivo di comunicazione.
+Solo i membri del gruppo locale Administrators o Account Operators o quelli con appartenenza al gruppo operatore Communication, Print o Server possono eseguire **correttamente Create**. L'operatore Print può aggiungere solo code di stampa. L'operatore Communication può aggiungere solo code di dispositivi di comunicazione.
 
 ## <a name="examples"></a>Esempio
 
-L'esempio PowerShell [Export and import fileshares](https://Gallery.TechNet.Microsoft.Com/Export-and-Import-84d4fce1) Esporta e importa le condivisioni file e imposta le autorizzazioni di condivisione. Analogamente, l'esempio [creare una condivisione e impostare le autorizzazioni](https://gallery.technet.microsoft.com/scriptcenter/Create-a-Share-and-Set-eb177a79) crea anche una nuova condivisione e imposta le autorizzazioni di condivisione.
+[L'esempio di PowerShell](https://Gallery.TechNet.Microsoft.Com/Export-and-Import-84d4fce1) Esporta e importa file consente di esportare e importare condivisioni file e di impostare le autorizzazioni di condivisione. Analogamente, [l'esempio Crea una condivisione e Imposta autorizzazioni](https://gallery.technet.microsoft.com/scriptcenter/Create-a-Share-and-Set-eb177a79) crea anche una nuova condivisione e imposta le autorizzazioni di condivisione.
 
 Il codice di PowerShell seguente crea una condivisione.
 
@@ -224,7 +224,7 @@ gwmi win32_share
 
 
 
-Nell'esempio di codice precedente vengono restituiti gli elementi seguenti:
+L'esempio di codice precedente restituisce quanto segue:
 
 ``` syntax
 __GENUS          : 2
@@ -269,7 +269,7 @@ Path        : C:\Share
 Description : 
 ```
 
-Nell' \# esempio di codice C riportato di seguito viene descritto come chiamare il metodo create.
+Nell'esempio di codice C \# seguente viene descritto come chiamare il metodo create.
 
 
 ```CSharp
@@ -315,7 +315,7 @@ catch (SystemException e)
 | Client minimo supportato<br/> | Windows Vista<br/>                                                                |
 | Server minimo supportato<br/> | Windows Server 2008<br/>                                                          |
 | Spazio dei nomi<br/>                | \\CIMV2 radice<br/>                                                                  |
-| MOF<br/>                      | <dl> <dt>CIMWin32. mof</dt> </dl> |
+| MOF<br/>                      | <dl> <dt>CIMWin32.mof</dt> </dl> |
 | DLL<br/>                      | <dl> <dt>CIMWin32.dll</dt> </dl> |
 
 
@@ -327,7 +327,7 @@ catch (SystemException e)
 [Classi del sistema operativo](/previous-versions//aa392727(v=vs.85))
 </dt> <dt>
 
-[**\_Condivisione Win32**](win32-share.md)
+[**Condivisione \_ Win32**](win32-share.md)
 </dt> </dl>
 
  

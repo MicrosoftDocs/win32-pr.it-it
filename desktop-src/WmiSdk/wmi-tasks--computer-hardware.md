@@ -10,12 +10,12 @@ topic_type:
 api_name: ''
 api_type: ''
 api_location: ''
-ms.openlocfilehash: 8dcbf9437cf7f3ede54f8d1e72ae678fdc5cb3de
-ms.sourcegitcommit: c276a8912787b2cda74dcf54eb96df961bb1188b
+ms.openlocfilehash: 8af8a31822c2969f4934ace6f31c12b66583eed8245c1b6a4577ac4f44426595
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/20/2021
-ms.locfileid: "122624567"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "117739473"
 ---
 # <a name="wmi-tasks-computer-hardware"></a>Attività WMI: Hardware del computer
 
@@ -27,7 +27,7 @@ Gli esempi di script illustrati in questo argomento ottengono dati solo dal comp
 
 La procedura seguente descrive come eseguire uno script.
 
-1.  Copiare il codice e salvarlo in un file con estensione vbs, ad esempio *filename.vbs*. Assicurarsi che l'editor di testo non aggiunge un'.txt al file.
+1.  Copiare il codice e salvarlo in un file con estensione vbs, ad esempio *filename.vbs*. Assicurarsi che l'editor di testo non .txt'estensione al file.
 2.  Aprire una finestra del prompt dei comandi e passare alla directory in cui è stato salvato il file.
 3.  Digitare **cscript filename.vbs** al prompt dei comandi.
 4.  Se non è possibile accedere a un registro eventi, verificare se è in esecuzione da un prompt dei comandi con privilegi elevati. Alcuni registri eventi, ad esempio il registro eventi di sicurezza, possono essere protetti dai controlli di accesso utente.
@@ -43,8 +43,8 @@ Nella tabella seguente sono elencati esempi di script che possono essere usati p
 
 <table>
 <colgroup>
-<col  />
-<col  />
+<col style="width: 50%" />
+<col style="width: 50%" />
 </colgroup>
 <thead>
 <tr class="header">
@@ -58,7 +58,7 @@ Nella tabella seguente sono elencati esempi di script che possono essere usati p
 <td>Usare la classe <a href="/windows/desktop/CIMWin32Prov/win32-operatingsystem"><strong>Win32_OperatingSystem</strong></a> e <strong>la proprietà FreePhysicalMemory.</strong><br/> <span data-codelanguage="VisualBasic"></span>
 <table>
 <colgroup>
-<col  />
+<col style="width: 100%" />
 </colgroup>
 <thead>
 <tr class="header">
@@ -79,7 +79,7 @@ Next</code></pre></td>
 <span data-codelanguage="PowerShell"></span>
 <table>
 <colgroup>
-<col  />
+<col style="width: 100%" />
 </colgroup>
 <thead>
 <tr class="header">
@@ -98,12 +98,12 @@ Next</code></pre></td>
 </tr>
 <tr class="even">
 <td>... determinare se un computer dispone di un'unità DVD?</td>
-<td><p>Usare la <a href="/windows/desktop/CIMWin32Prov/win32-cdromdrive"><strong>Win32_CDROMDrive</strong></a> classe e verificare la presenza del DVD acronimo nella <strong>proprietà Name</strong> o <strong>DeviceID.</strong></p>
+<td><p>Usare la <a href="/windows/desktop/CIMWin32Prov/win32-cdromdrive"><strong>Win32_CDROMDrive</strong></a> classe e verificare la presenza del DVD acronimo nella <strong>proprietà Name</strong> <strong>o DeviceID.</strong></p>
 <div class="code">
 <span data-codelanguage="VisualBasic"></span>
 <table>
 <colgroup>
-<col  />
+<col style="width: 100%" />
 </colgroup>
 <thead>
 <tr class="header">
@@ -126,7 +126,7 @@ Next</code></pre></td>
 <span data-codelanguage="PowerShell"></span>
 <table>
 <colgroup>
-<col  />
+<col style="width: 100%" />
 </colgroup>
 <thead>
 <tr class="header">
@@ -150,7 +150,7 @@ $drives | Format-Table DeviceID, Description, Name -autosize</code></pre></td>
 <span data-codelanguage="VisualBasic"></span>
 <table>
 <colgroup>
-<col  />
+<col style="width: 100%" />
 </colgroup>
 <thead>
 <tr class="header">
@@ -172,7 +172,7 @@ Next</code></pre></td>
 <span data-codelanguage="PowerShell"></span>
 <table>
 <colgroup>
-<col  />
+<col style="width: 100%" />
 </colgroup>
 <thead>
 <tr class="header">
@@ -190,12 +190,12 @@ Next</code></pre></td>
 </tr>
 <tr class="even">
 <td>... determinare se un computer dispone di più processori?</td>
-<td><p>Usare la <a href="/windows/desktop/CIMWin32Prov/win32-computersystem"><strong>Win32_ComputerSystem</strong></a> e la <strong>proprietà NumberOfProcessors</strong>.</p>
+<td><p>Usare la <a href="/windows/desktop/CIMWin32Prov/win32-computersystem"><strong>Win32_ComputerSystem</strong></a> classe e la <strong>proprietà NumberOfProcessors</strong>.</p>
 <div class="code">
 <span data-codelanguage="VisualBasic"></span>
 <table>
 <colgroup>
-<col  />
+<col style="width: 100%" />
 </colgroup>
 <thead>
 <tr class="header">
@@ -217,7 +217,7 @@ Next</code></pre></td>
 <span data-codelanguage="PowerShell"></span>
 <table>
 <colgroup>
-<col  />
+<col style="width: 100%" />
 </colgroup>
 <thead>
 <tr class="header">
@@ -241,7 +241,7 @@ Next</code></pre></td>
 <span data-codelanguage="VisualBasic"></span>
 <table>
 <colgroup>
-<col  />
+<col style="width: 100%" />
 </colgroup>
 <thead>
 <tr class="header">
@@ -260,7 +260,7 @@ Wscript.Echo &quot;Number of PCMCIA slots: &quot; & colItems.Count</code></pre><
 <span data-codelanguage="PowerShell"></span>
 <table>
 <colgroup>
-<col  />
+<col style="width: 100%" />
 </colgroup>
 <thead>
 <tr class="header">
@@ -289,7 +289,7 @@ if (!$pcmcia.count) {
 <span data-codelanguage="VisualBasic"></span>
 <table>
 <colgroup>
-<col  />
+<col style="width: 100%" />
 </colgroup>
 <thead>
 <tr class="header">
@@ -316,7 +316,7 @@ Next</code></pre></td>
 <span data-codelanguage="PowerShell"></span>
 <table>
 <colgroup>
-<col  />
+<col style="width: 100%" />
 </colgroup>
 <thead>
 <tr class="header">
@@ -350,7 +350,7 @@ foreach ($device in $baddevices) {
 <span data-codelanguage="VisualBasic"></span>
 <table>
 <colgroup>
-<col  />
+<col style="width: 100%" />
 </colgroup>
 <thead>
 <tr class="header">
@@ -387,7 +387,7 @@ Next</code></pre></td>
 <span data-codelanguage="PowerShell"></span>
 <table>
 <colgroup>
-<col  />
+<col style="width: 100%" />
 </colgroup>
 <thead>
 <tr class="header">
@@ -478,7 +478,7 @@ param ($value)
 <span data-codelanguage="VisualBasic"></span>
 <table>
 <colgroup>
-<col  />
+<col style="width: 100%" />
 </colgroup>
 <thead>
 <tr class="header">
@@ -507,7 +507,7 @@ Next</code></pre></td>
 <span data-codelanguage="VisualBasic"></span>
 <table>
 <colgroup>
-<col  />
+<col style="width: 100%" />
 </colgroup>
 <thead>
 <tr class="header">
@@ -530,7 +530,7 @@ Next</code></pre></td>
 <span data-codelanguage="PowerShell"></span>
 <table>
 <colgroup>
-<col  />
+<col style="width: 100%" />
 </colgroup>
 <thead>
 <tr class="header">
@@ -558,7 +558,7 @@ foreach ($proc in $processors)
 <span data-codelanguage="VisualBasic"></span>
 <table>
 <colgroup>
-<col  />
+<col style="width: 100%" />
 </colgroup>
 <thead>
 <tr class="header">
@@ -581,7 +581,7 @@ Next</code></pre></td>
 <span data-codelanguage="PowerShell"></span>
 <table>
 <colgroup>
-<col  />
+<col style="width: 100%" />
 </colgroup>
 <thead>
 <tr class="header">
@@ -611,7 +611,7 @@ foreach ($objSMBIOS in $colSMBIOS)
 <span data-codelanguage="VisualBasic"></span>
 <table>
 <colgroup>
-<col  />
+<col style="width: 100%" />
 </colgroup>
 <thead>
 <tr class="header">
@@ -635,7 +635,7 @@ Next</code></pre></td>
 <span data-codelanguage="PowerShell"></span>
 <table>
 <colgroup>
-<col  />
+<col style="width: 100%" />
 </colgroup>
 <thead>
 <tr class="header">
@@ -665,7 +665,7 @@ foreach ($objItem in $colItems)
 <span data-codelanguage="VisualBasic"></span>
 <table>
 <colgroup>
-<col  />
+<col style="width: 100%" />
 </colgroup>
 <thead>
 <tr class="header">
@@ -684,7 +684,7 @@ Wscript.Echo &quot;Number of tape drives: &quot; & colItems.Count</code></pre></
 <span data-codelanguage="PowerShell"></span>
 <table>
 <colgroup>
-<col  />
+<col style="width: 100%" />
 </colgroup>
 <thead>
 <tr class="header">

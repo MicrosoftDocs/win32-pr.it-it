@@ -1,7 +1,7 @@
 ---
-description: Avviare l'acquisizione delle modifiche di stato in un blocco di parametri.
+description: Avviare l'acquisizione delle modifiche dello stato in un blocco di parametri.
 ms.assetid: cdf6f572-1a21-4c1d-a113-13b48bacd060
-title: 'Metodo ID3DXEffect:: BeginParameterBlock (D3DX9Effect. h)'
+title: Metodo ID3DXEffect::BeginParameterBlock (D3DX9Effect.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -14,16 +14,16 @@ api_type:
 api_location:
 - D3dx9.lib
 - D3dx9.dll
-ms.openlocfilehash: 60a43304c8e0e3d64ac6469c1c075c57b5411e3a
-ms.sourcegitcommit: 14010c34b35fa268046c7683f021f86de08ddd0a
+ms.openlocfilehash: b7345a045d152d5637b656bf4e9090b9645baf33645905e5e956737a1e6ede30
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/15/2021
-ms.locfileid: "104058618"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119494281"
 ---
-# <a name="id3dxeffectbeginparameterblock-method"></a>Metodo ID3DXEffect:: BeginParameterBlock
+# <a name="id3dxeffectbeginparameterblock-method"></a>Metodo ID3DXEffect::BeginParameterBlock
 
-Avviare l'acquisizione delle modifiche di stato in un blocco di parametri.
+Avviare l'acquisizione delle modifiche dello stato in un blocco di parametri.
 
 ## <a name="syntax"></a>Sintassi
 
@@ -46,7 +46,7 @@ Se il metodo ha esito positivo, il valore restituito è D3D \_ OK. Se il metodo 
 
 ## <a name="remarks"></a>Commenti
 
-Lo stato del parametro dell'effetto di acquisizione cambia fino a quando non viene chiamato EndParameterBlock. I parametri degli effetti includono qualsiasi modifica dello stato al di fuori di un passaggio. Eliminare i blocchi di parametri se non sono più necessari chiamando DeleteParameterBlock.
+Acquisisci modifiche dello stato del parametro dell'effetto fino a quando non viene chiamato EndParameterBlock. I parametri dell'effetto includono qualsiasi modifica dello stato all'esterno di un passaggio. Eliminare i blocchi di parametri se non sono più necessari chiamando DeleteParameterBlock.
 
 ## <a name="requirements"></a>Requisiti
 
@@ -54,8 +54,8 @@ Lo stato del parametro dell'effetto di acquisizione cambia fino a quando non vie
 
 | Requisito | Valore |
 |--------------------|------------------------------------------------------------------------------------------|
-| Intestazione<br/>  | <dl> <dt>D3DX9Effect. h</dt> </dl> |
-| Libreria<br/> | <dl> <dt>D3dx9. lib</dt> </dl>     |
+| Intestazione<br/>  | <dl> <dt>D3DX9Effect.h</dt> </dl> |
+| Libreria<br/> | <dl> <dt>D3dx9.lib</dt> </dl>     |
 
 
 

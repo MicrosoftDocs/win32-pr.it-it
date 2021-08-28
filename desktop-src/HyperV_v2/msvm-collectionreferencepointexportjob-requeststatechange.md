@@ -13,12 +13,12 @@ api_type:
 - COM
 api_location:
 - vmms.exe
-ms.openlocfilehash: 84956e206654de022c3151aa5a442651f9c2375a
-ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
+ms.openlocfilehash: 205eb26a7d34c34d966ed0026afd03e8af4f4bbd8c8455742225fe664f4bd460
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/28/2021
-ms.locfileid: "108119239"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119431521"
 ---
 # <a name="requeststatechange-method-of-the-msvm_collectionreferencepointexportjob-class"></a>Metodo RequestStateChange della classe Msvm \_ CollectionReferencePointExportJob
 
@@ -49,7 +49,7 @@ RequestStateChange modifica lo stato di un processo. I valori possibili sono i s
 
 <span id="Start"></span><span id="start"></span><span id="START"></span>
 
-<span id="Start"></span><span id="start"></span><span id="START"></span>**Inizio** (2)
+<span id="Start"></span><span id="start"></span><span id="START"></span>**Start** (2)
 
 
 </dt> <dd>
@@ -60,18 +60,18 @@ Modifica lo stato in "In esecuzione".
 
 <span id="Suspend"></span><span id="suspend"></span><span id="SUSPEND"></span>
 
-<span id="Suspend"></span><span id="suspend"></span><span id="SUSPEND"></span>**Sospendi** (3)
+<span id="Suspend"></span><span id="suspend"></span><span id="SUSPEND"></span>**Suspend** (3)
 
 
 </dt> <dd>
 
-Arresta temporaneamente il processo. L'intenzione è riavviare successivamente il processo con "Start". Potrebbe essere possibile immettere lo stato "Servizio" durante la sospensione. Si tratta di un processo specifico.
+Arresta temporaneamente il processo. L'intenzione è riavviare successivamente il processo con "Avvia". Potrebbe essere possibile entrare nello stato "Servizio" durante la sospensione. Si tratta di un processo specifico.
 
 </dd> <dt>
 
 <span id="Terminate"></span><span id="terminate"></span><span id="TERMINATE"></span>
 
-<span id="Terminate"></span><span id="terminate"></span><span id="TERMINATE"></span>**Termina** (4)
+<span id="Terminate"></span><span id="terminate"></span><span id="TERMINATE"></span>**Terminate** (4)
 
 
 </dt> <dd>
@@ -87,7 +87,7 @@ Arresta il processo in modo pulito, salva i dati, mantiene lo stato e arresta tu
 
 </dt> <dd>
 
-Termina immediatamente il processo senza alcun requisito per salvare i dati o mantenere lo stato.
+Termina immediatamente il processo senza che sia necessario salvare i dati o mantenere lo stato.
 
 </dd> <dt>
 

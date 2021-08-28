@@ -1,19 +1,19 @@
 ---
-description: Indica se l'elemento è un allegato.
+description: Identifica se l'elemento è un allegato.
 ms.assetid: f2f227b1-1490-41b0-a361-b36d7bcd3069
-title: System. unconnettiment
+title: System.IsAttachment
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 4d09bf4952de748854ec1d9d361c8b61a9aed7d0
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: f40a2dce9e7b62af70a3b9344c9bad17da77adea7839142900d40a47f5c9ca97
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "104485780"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119774821"
 ---
-# <a name="systemisattachment"></a>System. unconnettiment
+# <a name="systemisattachment"></a>System.IsAttachment
 
-Indica se l'elemento è un allegato.
+Identifica se l'elemento è un allegato.
 
 ## <a name="windows-10-version-1703-windows-10-version-1607-windows-10-version-1511-windows-10-version-1507-windows-81-windows-8-windows-7"></a>Windows 10, versione 1703, Windows 10, versione 1607, Windows 10, versione 1511, Windows 10, versione 1507, Windows 8.1, Windows 8, Windows 7
 
@@ -48,7 +48,7 @@ propertyDescription
 
 ## <a name="remarks"></a>Commenti
 
-I valori PKEY sono definiti in Propkey. h.
+I valori PKEY sono definiti in Propkey.h.
 
 ## <a name="related-topics"></a>Argomenti correlati
 
@@ -63,13 +63,13 @@ I valori PKEY sono definiti in Propkey. h.
 [labelInfo](./propdesc-schema-labelinfo.md)
 </dt> <dt>
 
-[typeInfo](./propdesc-schema-typeinfo.md)
+[Typeinfo](./propdesc-schema-typeinfo.md)
 </dt> <dt>
 
 [displayInfo](./propdesc-schema-displayinfo.md)
 </dt> <dt>
 
-[stringFormat](./propdesc-schema-stringformat.md)
+[Stringformat](./propdesc-schema-stringformat.md)
 </dt> <dt>
 
 [booleanFormat](./propdesc-schema-booleanformat.md)
@@ -78,7 +78,7 @@ I valori PKEY sono definiti in Propkey. h.
 [numberFormat](./propdesc-schema-numberformat.md)
 </dt> <dt>
 
-[dateTimeFormat](./propdesc-schema-datetimeformat.md)
+[Datetimeformat](./propdesc-schema-datetimeformat.md)
 </dt> <dt>
 
 [enumeratedList](./propdesc-schema-enumeratedlist.md)

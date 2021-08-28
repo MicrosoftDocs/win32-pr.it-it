@@ -12,12 +12,12 @@ api_type:
 - NA
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 6210f93c23dc52f19f3e01ea01ebe8fc9d631c8c
-ms.sourcegitcommit: 63753fcfb0afbbe5ec283fb8316e62c2dc950f66
+ms.openlocfilehash: 1586861eee26f93bca85b8c0f03e9f746e983046bbda755b67a792d65d660b53
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/22/2021
-ms.locfileid: "107909839"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119776891"
 ---
 # <a name="rasterization-state-variables"></a>Variabili di stato di rasterizzazione
 
@@ -27,7 +27,7 @@ ms.locfileid: "107909839"
 |------------------|------------------------------------|
 | Descrizione:     | Dimensioni dei punti                         |
 | Gruppo di attributi: | point                              |
-| Valore iniziale:   | 1,0                                |
+| Valore iniziale:   | 1.0                                |
 | Comando Get:     | [**glGetFloatv**](glgetfloatv.md) |
 
 
@@ -38,7 +38,7 @@ ms.locfileid: "107909839"
 
 | Proprietà | Valore |
 |------------------|------------------------------------|
-| Descrizione:     | Aliasing dei punti su                  |
+| Descrizione:     | Aliasing dei punti in                  |
 | Gruppo di attributi: | point/enable                       |
 | Valore iniziale:   | GL \_ FALSE                          |
 | Comando Get:     | [**glIsEnabled**](glisenabled.md) |
@@ -53,7 +53,7 @@ ms.locfileid: "107909839"
 |------------------|--------------------------------------------------------------------------------|
 | Descrizione:     | Spessore linea                                                                     |
 | Gruppo di attributi: | line                                                                           |
-| Valore iniziale:   | 1,0                                                                            |
+| Valore iniziale:   | 1.0                                                                            |
 | Comando Get:     | [**glGetFloatv**](glgetbooleanv--glgetdoublev--glgetfloatv--glgetintegerv.md) |
 
 
@@ -64,7 +64,7 @@ ms.locfileid: "107909839"
 
 | Proprietà | Valore |
 |------------------|------------------------------------|
-| Descrizione:     | Antialiasing linea su               |
+| Descrizione:     | Antialiasing di riga in               |
 | Gruppo di attributi: | line/enable                        |
 | Valore iniziale:   | GL \_ FALSE                          |
 | Comando Get:     | [**glIsEnabled**](glisenabled.md) |
@@ -73,13 +73,13 @@ ms.locfileid: "107909839"
 
  
 
-</dd> <dt><span id="GL_LINE_STIPPLE_PATTERN"></span><span id="gl_line_stipple_pattern"></span>MODELLO \_ DI \_ STIPPLE DELLA RIGA \_ GL</dt> <dd> 
+</dd> <dt><span id="GL_LINE_STIPPLE_PATTERN"></span><span id="gl_line_stipple_pattern"></span>MODELLO \_ GL LINE \_ STIPPLE \_</dt> <dd> 
 
 | Proprietà | Valore |
 |------------------|----------------------------------------------------------------------------------|
-| Descrizione:     | Stipple di linea                                                                     |
+| Descrizione:     | Stippla di linea                                                                     |
 | Gruppo di attributi: | line                                                                             |
-| Valore iniziale:   | 1 di                                                                              |
+| Valore iniziale:   | 1                                                                              |
 | Comando Get:     | [**glGetIntegerv**](glgetbooleanv--glgetdoublev--glgetfloatv--glgetintegerv.md) |
 
 
@@ -90,7 +90,7 @@ ms.locfileid: "107909839"
 
 | Proprietà | Valore |
 |------------------|----------------------------------------------------------------------------------|
-| Descrizione:     | Ripetizione della punta della riga                                                              |
+| Descrizione:     | Ripetizione di stipple di riga                                                              |
 | Gruppo di attributi: | line                                                                             |
 | Valore iniziale:   | 1                                                                                |
 | Comando Get:     | [**glGetIntegerv**](glgetbooleanv--glgetdoublev--glgetfloatv--glgetintegerv.md) |
@@ -129,7 +129,7 @@ ms.locfileid: "107909839"
 
 | Proprietà | Valore |
 |------------------|----------------------------------------------------------------------------------|
-| Descrizione:     | Poligoni rivolti anteriore/posteriore                                           |
+| Descrizione:     | Cull front-facing/back-facing polygons                                           |
 | Gruppo di attributi: | polygon                                                                          |
 | Valore iniziale:   | GL \_ BACK                                                                         |
 | Comando Get:     | [**glGetIntegerv**](glgetbooleanv--glgetdoublev--glgetfloatv--glgetintegerv.md) |
@@ -177,7 +177,7 @@ ms.locfileid: "107909839"
 
  
 
-</dd> <dt><span id="GL_POLYGON_STIPPLE"></span><span id="gl_polygon_stipple"></span>GL \_ POLYGON \_ STIPPLE</dt> <dd> 
+</dd> <dt><span id="GL_POLYGON_STIPPLE"></span><span id="gl_polygon_stipple"></span>\_ \_ STIPPLE POLIGONO GL</dt> <dd> 
 
 | Proprietà | Valore |
 |------------------|------------------------------------|
@@ -194,8 +194,8 @@ ms.locfileid: "107909839"
 
 | Proprietà | Valore |
 |------------------|----------------------------------------------------|
-| Descrizione:     | Modello a stipple poligono                            |
-| Gruppo di attributi: | stipple poligono                                    |
+| Descrizione:     | Modello a punta poligono                            |
+| Gruppo di attributi: | polygon-stipple                                    |
 | Valore iniziale:   | 1 di                                                |
 | Comando Get:     | [**glGetPolygonStipple**](glgetpolygonstipple.md) |
 

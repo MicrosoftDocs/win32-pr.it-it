@@ -3,35 +3,35 @@ title: Informazioni sui timer multimediali
 description: Informazioni sui timer multimediali
 ms.assetid: 42101923-3f46-4234-bfcf-a0d06c382fa1
 keywords:
-- Windows Multimedia, timer
-- Multimedia, timer
+- Windows multimediali, timer
+- multimediali, timer
 - input multimediale, timer
 - timer multimediali, informazioni
 - timer, informazioni
-- timer multimediali, eventi di pianificazione
-- timer, eventi di pianificazione
-- pianificazione degli eventi del timer
+- timer multimediali, pianificazione di eventi
+- timer, pianificazione di eventi
+- pianificazione di eventi timer
 - temporizzazione ad alta risoluzione
-- Funzione setimer
-- CreateWaitableTimer (funzione)
-- Messaggi di WM_TIMER
+- Funzione SetTimer
+- Funzione CreateWaitableTimer
+- WM_TIMER messaggi
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 0c36e5f19a92b6b47a3b1976bd85aadef88ab3ec
-ms.sourcegitcommit: ebd3ce6908ff865f1ef66f2fc96769be0aad82e1
+ms.openlocfilehash: 99b5d899c93f0f292d7ef45e8584ae9e2b5e0e001037c456dcc4900f1c0d3f26
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/19/2020
-ms.locfileid: "104046681"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119498211"
 ---
 # <a name="about-multimedia-timers"></a>Informazioni sui timer multimediali
 
-I servizi timer multimediali consentono alle applicazioni di pianificare gli eventi del timer con la massima risoluzione (o accuratezza) possibile per la piattaforma hardware. Questi servizi timer multimediali consentono di pianificare gli eventi del timer a una risoluzione superiore rispetto ad altri servizi timer.
+I servizi timer multimediali consentono alle applicazioni di pianificare gli eventi timer con la massima risoluzione (o accuratezza) possibile per la piattaforma hardware. Questi servizi timer multimediali consentono di pianificare gli eventi timer con una risoluzione più elevata rispetto ad altri servizi timer.
 
-Questi servizi timer sono utili per le applicazioni che richiedono tempi di risoluzione elevata. Ad esempio, un sequencer MIDI richiede un timer ad alta risoluzione, perché deve mantenere la velocità degli eventi MIDI entro una risoluzione di 1 millisecondo.
+Questi servizi timer sono utili per le applicazioni che richiedono tempi ad alta risoluzione. Ad esempio, un sequencer MIDI richiede un timer ad alta risoluzione perché deve mantenere il ritmo degli eventi MIDI entro una risoluzione di 1 millisecondo.
 
-Le applicazioni che non usano la temporizzazione ad alta risoluzione devono usare la funzione [setimer](/windows/win32/api/winuser/nf-winuser-settimer) anziché i servizi timer multimediali. I servizi timer forniti da **setimer** inviano messaggi del [ \_ timer WM](../winmsg/wm-timer.md) a una coda di messaggi, mentre i servizi timer multimediali chiamano una funzione di callback. Le applicazioni che vogliono un timer in attesa devono usare la funzione [CreateWaitableTimer](/windows/win32/api/synchapi/nf-synchapi-createwaitabletimerw) .
+Le applicazioni che non usano tempi ad alta risoluzione devono usare la [funzione SetTimer](/windows/win32/api/winuser/nf-winuser-settimer) anziché i servizi timer multimediali. I servizi timer forniti da **SetTimer** pubblicano [messaggi WM \_ TIMER](../winmsg/wm-timer.md) in una coda di messaggi, mentre i servizi timer multimediali chiamano una funzione di callback. Le applicazioni che vogliono un timer waitable devono usare la [funzione CreateWaitableTimer.](/windows/win32/api/synchapi/nf-synchapi-createwaitabletimerw)
 
- 
+ 
 
- 
+ 

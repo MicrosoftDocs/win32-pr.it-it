@@ -1,22 +1,22 @@
 ---
-description: L'esempio seguente usa l'interfaccia IWiaVideo per creare un'anteprima di streaming video e ottenere un'immagine ancora da quel video di streaming. Nell'esempio si presuppone che si disponga di un handle valido per una finestra (HWND).
+description: L'esempio seguente usa l'interfaccia IWiaVideo per creare un'anteprima video in streaming e ottenere un'immagine ancora da tale video in streaming. Nell'esempio si presuppone che l'utente abbia un handle valido per una finestra (HWND).
 ms.assetid: bca00825-32a7-40b2-9ca9-23475e3218a8
-title: Acquisizione di un'immagine ancora dal video in streaming
+title: Acquisizione di un'immagine non ancorata da un video di streaming
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: cf43acdb1bd472a9d5a5dca2344b2f4ad37f474a
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 7af209ec0261418ab18d01414d040c9015a2436e055675a94608b1089f66fa58
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "106312453"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119772870"
 ---
-# <a name="capturing-a-still-image-from-streaming-video"></a>Acquisizione di un'immagine ancora dal video in streaming
+# <a name="capturing-a-still-image-from-streaming-video"></a>Acquisizione di un'immagine non ancorata da un video di streaming
 
-L'esempio seguente usa l'interfaccia [**IWiaVideo**](/windows/desktop/api/Wiavideo/nn-wiavideo-iwiavideo) per creare un'anteprima di streaming video e ottenere un'immagine ancora da quel video di streaming. Nell'esempio si presuppone che si disponga di un handle valido per una finestra (HWND).
+L'esempio seguente usa [**l'interfaccia IWiaVideo**](/windows/desktop/api/Wiavideo/nn-wiavideo-iwiavideo) per creare un'anteprima video in streaming e ottenere un'immagine ancora da tale video in streaming. Nell'esempio si presuppone che l'utente abbia un handle valido per una finestra (HWND).
 
 > [!Note]  
-> Windows Image Acquisition (WIA) non supporta i dispositivi video in Windows Server 2003, Windows Vista o versioni successive. Per queste versioni di Windows, usare [DirectShow](/previous-versions//ms783323(v=vs.85)) per acquisire immagini dal video.
+> Windows Acquisizione di immagini (WIA) non supporta i dispositivi video in Windows Server 2003, Windows Vista o versioni successive. Per queste versioni del Windows, [usare](/previous-versions//ms783323(v=vs.85)) DirectShow per acquisire immagini dal video.
 
  
 

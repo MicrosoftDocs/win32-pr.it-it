@@ -1,5 +1,5 @@
 ---
-description: Rappresenta un vettore 4D con coordinate integer con segno.
+description: Rappresenta un vettore 4D con coordinate intere con segno.
 MS-HAID: vspixengine.PixEngineInt4
 MSHAttr:
 - PreferredSiteName:MSDN
@@ -17,16 +17,16 @@ api_location:
 topic_type:
 - APIRef
 - kbSyntax
-ms.openlocfilehash: 7b128593c30b2ca8f9de634e3ce9c7f9ba894089
-ms.sourcegitcommit: a47bd86f517de76374e4fff33cfeb613eb259a7e
+ms.openlocfilehash: 416e62e06b1f9b03bd2dbe55c67f7047896c4585
+ms.sourcegitcommit: c276a8912787b2cda74dcf54eb96df961bb1188b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/06/2021
-ms.locfileid: "103876437"
+ms.lasthandoff: 08/20/2021
+ms.locfileid: "122631130"
 ---
 # <a name="span-idvspixenginepixengineint4spanpixengineint4-structure"></a><span id="vspixengine.pixengineint4"></span>Struttura PixEngineInt4
 
-Rappresenta un vettore 4D con coordinate integer con segno.
+Rappresenta un vettore 4D con coordinate intere con segno.
 
 ## <a name="syntax"></a>Sintassi
 
@@ -38,7 +38,7 @@ Rappresenta un vettore 4D con coordinate integer con segno.
 ## <a name="members"></a>Members
 
 **X**  
-Posizione del componente asse X.
+Posizione del componente dell'asse X.
 
 **S**  
 Posizione del componente dell'asse Y.
@@ -51,7 +51,7 @@ Posizione del componente dell'asse W.
 
 ## <a name="requirements"></a>Requisiti
 
-<table><colgroup><col style="width: 50%" /><col style="width: 50%" /></colgroup><tbody><tr class="odd"><td><p>Intestazione</p></td><td>Vspixengine. h</td></tr></tbody></table>
+<table><colgroup><col  /><col  /></colgroup><tbody><tr class="odd"><td><p>Intestazione</p></td><td>Vspixengine.h</td></tr></tbody></table>
 
  
 

@@ -9,12 +9,12 @@ topic_type:
 api_name: ''
 api_type: ''
 api_location: ''
-ms.openlocfilehash: bc3a074641ce5b15a3d837e8bd91dfdae09fe627
-ms.sourcegitcommit: adba238660d8a5f4fe98fc6f5d105d56aac3a400
+ms.openlocfilehash: 4249d094f142af8a9015f4e8a3b32d4e39cd42fb
+ms.sourcegitcommit: c276a8912787b2cda74dcf54eb96df961bb1188b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/09/2021
-ms.locfileid: "111826685"
+ms.lasthandoff: 08/20/2021
+ms.locfileid: "122629554"
 ---
 # <a name="samplelevel-directx-hlsl-texture-object"></a>SampleLevel (oggetto Texture HLSL DirectX)
 
@@ -34,8 +34,8 @@ Questa funzione è simile a [Sample,](dx-graphics-hlsl-to-sample.md) ad eccezion
 
 <table>
 <colgroup>
-<col style="width: 50%" />
-<col style="width: 50%" />
+<col  />
+<col  />
 </colgroup>
 <thead>
 <tr class="header">
@@ -50,7 +50,7 @@ Questa funzione è simile a [Sample,](dx-graphics-hlsl-to-sample.md) ad eccezion
 </tr>
 <tr class="even">
 <td><span id="S"></span><span id="s"></span><em>S</em><br/></td>
-<td>[in] Stato <a href="dx-graphics-hlsl-sampler.md">del campionatore.</a> Si tratta di un oggetto dichiarato in un file di effetto che contiene assegnazioni di stato.<br/></td>
+<td>[in] Stato <a href="dx-graphics-hlsl-sampler.md">del campionatore.</a> Si tratta di un oggetto dichiarato in un file degli effetti che contiene assegnazioni di stato.<br/></td>
 </tr>
 <tr class="odd">
 <td><span id="Location"></span><span id="location"></span><span id="LOCATION"></span><em>Posizione</em><br/></td>
@@ -86,11 +86,11 @@ Questa funzione è simile a [Sample,](dx-graphics-hlsl-to-sample.md) ad eccezion
 <p>Se l'oggetto trama è una matrice, l'ultimo componente è l'indice della matrice.</p></td>
 </tr>
 <tr class="even">
-<td><p><span id="LOD"></span><span id="lod"></span><em>Lod</em></p></td>
+<td><p><span id="LOD"></span><span id="lod"></span><em>LOD</em></p></td>
 <td><p>[in] Numero che specifica il livello mipmap. Se il valore è = 0, viene usato lo zero (mappa principale). Il valore frazionario (se specificato) viene usato per eseguire l'interpolazione tra due livelli mipmap.</p></td>
 </tr>
 <tr class="odd">
-<td><p><span id="Offset"></span><span id="offset"></span><span id="OFFSET"></span><em>compensare</em></p></td>
+<td><p><span id="Offset"></span><span id="offset"></span><span id="OFFSET"></span><em>Compensare</em></p></td>
 <td><p>[in] Offset facoltativo delle coordinate della trama, che può essere usato per qualsiasi tipo di oggetto trama. L'offset viene applicato alla posizione prima del campionamento. Gli offset di trama devono essere statici. Il tipo di argomento dipende dal tipo di oggetto trama. Per altre informazioni, vedere <a href="/windows/win32/direct3dhlsl/dx-graphics-hlsl-to-sample#applying-texture-coordinate-offsets">Applicazione degli offset delle coordinate di trama.</a></p>
 
 <table>
@@ -103,7 +103,7 @@ Questa funzione è simile a [Sample,](dx-graphics-hlsl-to-sample.md) ad eccezion
 <tbody>
 <tr class="odd">
 <td>Texture1D, Texture1DArray</td>
-<td>INT</td>
+<td>int</td>
 </tr>
 <tr class="even">
 <td>Texture2D, Texture2DArray</td>

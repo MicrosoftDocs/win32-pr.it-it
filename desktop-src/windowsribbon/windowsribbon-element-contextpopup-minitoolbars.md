@@ -1,9 +1,9 @@
 ---
-title: Proprietà ContextPopup. MiniToolbars
+title: ContextPopup.MiniToolbars - proprietà
 description: Rappresenta un contenitore per gli elementi MiniToolbar.
 ms.assetid: 5c17e070-0520-44e6-a066-476107691205
 keywords:
-- Barra multifunzione di Windows ContextPopup. MiniToolbars
+- Proprietà ContextPopup.MiniToolbars Windows ribbon
 topic_type:
 - apiref
 api_name:
@@ -12,16 +12,16 @@ api_type:
 - NA
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: ee1e85e6b170b4b7408a17687bd26725e9183161
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: 18f4a083d894f798d83bd153fe74b9fb0560e2fbdb8132ec7874db0a2e533824
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "104478610"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119772131"
 ---
-# <a name="contextpopupminitoolbars-property"></a>Proprietà ContextPopup. MiniToolbars
+# <a name="contextpopupminitoolbars-property"></a>ContextPopup.MiniToolbars - proprietà
 
-Rappresenta un contenitore per gli elementi [**MiniToolbar**](windowsribbon-element-minitoolbar.md) .
+Rappresenta un contenitore per [**gli elementi MiniToolbar.**](windowsribbon-element-minitoolbar.md)
 
 ## <a name="usage"></a>Utilizzo
 
@@ -41,7 +41,7 @@ Non ci sono attributi.
 
 | Elemento                                                             | Descrizione                                        |
 |---------------------------------------------------------------------|----------------------------------------------------|
-| [**MiniToolbar**](windowsribbon-element-minitoolbar.md)<br/> | Può essere presente una o più volte<br/> <br/> |
+| [**MiniToolbar**](windowsribbon-element-minitoolbar.md)<br/> | Può verificarsi una o più volte<br/> <br/> |
 
 
 
@@ -59,15 +59,15 @@ Non ci sono attributi.
 
 facoltativo.
 
-Può essere presente al massimo una volta per ogni [**ContextPopup**](windowsribbon-element-contextpopup.md).
+Può verificarsi al massimo una volta per [**ogni ContextPopup**](windowsribbon-element-contextpopup.md).
 
-Poiché i controlli in [**MiniToolbar**](windowsribbon-element-minitoolbar.md) non sono accessibili da tastiera, i comandi da essi esposti dovrebbero essere disponibili altrove nell'interfaccia utente della barra multifunzione.
+Poiché i controlli in [**MiniToolbar**](windowsribbon-element-minitoolbar.md) non sono accessibili tramite tastiera, i comandi che espongono devono essere disponibili altrove nell'interfaccia utente della barra multifunzione.
 
 ## <a name="examples"></a>Esempio
 
-Nell'esempio seguente viene illustrato il markup di base per una visualizzazione [**ContextPopup**](windowsribbon-element-contextpopup.md) .
+L'esempio seguente illustra il markup di base per [**una visualizzazione ContextPopup.**](windowsribbon-element-contextpopup.md)
 
-Questa sezione di codice mostra la dichiarazione di controllo **ContextPopup. MiniToolbars** .
+Questa sezione di codice illustra la dichiarazione del controllo **ContextPopup.MiniToolbars.**
 
 
 ```XML
@@ -160,8 +160,8 @@ Questa sezione di codice mostra la dichiarazione di controllo **ContextPopup. Mi
 
 | Requisito | Valore |
 |-------------------------------------|---------------------------------------------------------|
-| Client minimo supportato<br/> | \[Solo app desktop di Windows 7\]<br/>              |
-| Server minimo supportato<br/> | Solo app desktop Windows Server 2008 R2 \[\]<br/> |
+| Client minimo supportato<br/> | Windows 7 \[ app desktop\]<br/>              |
+| Server minimo supportato<br/> | Windows Solo app desktop server 2008 R2 \[\]<br/> |
 
 
 
@@ -169,7 +169,7 @@ Questa sezione di codice mostra la dichiarazione di controllo **ContextPopup. Mi
 
 <dl> <dt>
 
-[Controllo popup contesto](windowsribbon-controls-contextpopup.md)
+[Controllo Popup di contesto](windowsribbon-controls-contextpopup.md)
 </dt> </dl>
 
  

@@ -3,34 +3,34 @@ title: Implementazione di IMediaObject AllocateStreamingResources
 description: Implementazione di IMediaObject AllocateStreamingResources
 ms.assetid: 630550fe-2cca-4bfa-a824-a355f7fc5e02
 keywords:
-- Plug-in di Windows Media Player, risorse di streaming di esempio Echo
+- Windows Media Player plug-in, risorse di streaming di esempio Echo
 - plug-in, risorse di streaming di esempio Echo
-- plug-in di elaborazione dei segnali digitali, risorse di streaming di esempio Echo
+- plug-in di elaborazione del segnale digitale, risorse di streaming di esempio Echo
 - Plug-in DSP, risorse di streaming di esempio Echo
 - Esempio di plug-in Echo DSP, risorse di streaming
 - Esempio di plug-in Echo DSP, buffer di ritardo
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 5f1e347e35eaabbcbcc00a586e4cba0d8ad31cc6
-ms.sourcegitcommit: 2d531328b6ed82d4ad971a45a5131b430c5866f7
+ms.openlocfilehash: 291b1f9627d9dfb78ae2aff9d34b6fadd47cbf28a5c2f0830f5833d9e83cde21
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "104396242"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119508961"
 ---
-# <a name="implementing-imediaobjectallocatestreamingresources"></a>Implementazione di IMediaObject:: AllocateStreamingResources
+# <a name="implementing-imediaobjectallocatestreamingresources"></a>Implementazione di IMediaObject::AllocateStreamingResources
 
-Nell'esempio Echo il metodo **AllocateStreamingResources** crea il buffer di ritardo. A tale scopo, effettuare le operazioni seguenti:
+Nell'esempio Echo il **metodo AllocateStreamingResources** crea il buffer di ritardo. A tale scopo, eseguire le operazioni seguenti:
 
-1.  Calcolo di una dimensione per il buffer che corrisponde al tempo di ritardo specificato per il tipo di supporto specificato.
-2.  Allocando una nuova memoria o riallocando la dimensione del buffer, se esiste già.
-3.  Chiamata a un metodo che riempie il buffer con i valori che rappresentano il silenzio.
+1.  Calcolo di una dimensione per il buffer corrispondente al tempo di ritardo specificato per il tipo di supporto specificato.
+2.  Allocare nuova memoria o riallocare le dimensioni del buffer, se esiste già.
+3.  Chiamata di un metodo che riempie il buffer con valori che rappresentano il silenzio.
 
-Il valore di Silence è diverso a seconda della profondità del bit. Per audio a 8 bit, il silenzio è rappresentato dal valore esadecimale 80; per audio a 16 bit, il silenzio è rappresentato da zero.
+Il valore di silence è diverso a seconda della profondità in bit. Per l'audio a 8 bit, il silenzio è rappresentato dal valore esadecimale 80; per l'audio a 16 bit, il silenzio è rappresentato da zero.
 
-## <a name="calculating-the-delay-buffer-size"></a>Calcolo della dimensione del buffer di ritardo
+## <a name="calculating-the-delay-buffer-size"></a>Calcolo delle dimensioni del buffer di ritardo
 
-Per calcolare le dimensioni necessarie per il buffer di ritardo, è necessario innanzitutto recuperare una struttura **WAVEFORMATEX** contenente informazioni sui dati audio. Nell'esempio seguente viene recuperato un puntatore a questa struttura dalla struttura **del \_ \_ tipo di supporto DMO** di input:
+Per calcolare le dimensioni necessarie per il buffer di ritardo, è prima necessario recuperare una **struttura WAVEFORMATEX** contenente informazioni sui dati audio. L'esempio seguente recupera un puntatore a questa struttura dall'input **DMO \_ MEDIA \_ TYPE:**
 
 
 ```
@@ -44,7 +44,7 @@ if (NULL == pWave)
 
 
 
-Una volta archiviato un puntatore alla struttura **WAVEFORMATEX** corretta, è possibile esaminarne i membri e usarli per calcolare le dimensioni del buffer richieste. Nell'esempio di codice seguente viene illustrato quanto segue:
+Dopo aver archiviato un puntatore alla struttura **WAVEFORMATEX** appropriata, è possibile esaminarne i membri e usarli per calcolare le dimensioni del buffer necessarie. L'esempio di codice seguente illustra questa operazione:
 
 
 ```
@@ -54,11 +54,11 @@ m_cbDelayBuffer = (m_dwDelayTime * pWave->nSamplesPerSec * pWave->nBlockAlign) /
 
 
 
-Questo algoritmo calcola la dimensione del buffer moltiplicando il tempo di ritardo, in millisecondi, per il numero di campioni per millisecondo, moltiplicando quindi il risultato per il numero di canali, quindi moltiplicando il risultato per il numero di byte per campione. Il numero di canali e il numero di byte per campione non sono evidenti. sono codificati nel membro nBlockAlign. Dividendo per 1000, il valore nSamplesPerSec viene ridotto a campioni per millisecondo; il millisecondo è l'unità desiderata perché il tempo di ritardo è espresso in millisecondi.
+Questo algoritmo calcola le dimensioni del buffer moltiplicando il tempo di ritardo, in millisecondi, per il numero di campioni al millisecondo, quindi moltiplicando il risultato per il numero di canali e quindi moltiplicando il risultato per il numero di byte per campione. Il numero di canali e il numero di byte per campione non sono ovvi; vengono codificati nel membro nBlockAlign. La divisione per 1000 riduce il valore nSamplesPerSec a campioni al millisecondo. il millisecondo è l'unità desiderata perché il tempo di ritardo è espresso in millisecondi.
 
-## <a name="allocating-the-delay-buffer-memory"></a>Allocazione della memoria del buffer di ritardo
+## <a name="allocating-the-delay-buffer-memory"></a>Allocazione della memoria buffer ritardata
 
-Una volta calcolati i requisiti di memoria, è possibile allocare il buffer. Potrebbe essere necessario eliminare il buffer, se esistente, ad esempio quando l'utente richiama la pagina delle proprietà per modificare il valore di tempo di ritardo. Il codice seguente illustra l'allocazione del buffer di ritardo:
+Dopo aver calcolato i requisiti di memoria, è possibile allocare il buffer. Potrebbe essere necessario eliminare il buffer se esiste, ad esempio quando l'utente richiama la pagina delle proprietà per modificare il valore del tempo di ritardo. Il codice seguente illustra l'allocazione del buffer di ritardo:
 
 
 ```
@@ -80,7 +80,7 @@ if (!m_pbDelayBuffer)
 
 
 
-Se il buffer viene allocato correttamente, è necessario spostare il puntatore mobile nell'intestazione del buffer, come illustrato nell'esempio seguente:
+Se il buffer viene allocato correttamente, è necessario spostare il puntatore mobile nella parte superiore del buffer, come illustrato nell'esempio seguente:
 
 
 ```
@@ -90,9 +90,9 @@ m_pbDelayPointer = m_pbDelayBuffer;
 
 
 
-## <a name="filling-the-delay-buffer-with-silence"></a>Riempimento del buffer di ritardo con silenziosità
+## <a name="filling-the-delay-buffer-with-silence"></a>Riempimento del buffer di ritardo con silenzio
 
-È opportuno scrivere un metodo per riempire il buffer di ritardo con i valori che rappresentano il silenzio. Il metodo deve ricevere il puntatore alla struttura WAVEFORMATEX valida e quindi ispezionare il membro wBitsPerSample per determinare se l'audio è a 8 bit o superiore. Nell'esempio seguente viene compilato il buffer di ritardo con il valore corretto per il silenzio:
+È utile scrivere un metodo per riempire il buffer di ritardo con valori che rappresentano il silenzio. Il metodo deve ricevere il puntatore alla struttura WAVEFORMATEX valida e quindi controllare il membro wBitsPerSample per determinare se l'audio è a 8 bit o superiore. Nell'esempio seguente il buffer di ritardo viene riempito con il valore corretto per silence:
 
 
 ```
@@ -109,7 +109,7 @@ void CEcho::FillBufferWithSilence(WAVEFORMATEX *pWfex)
 
 
 
-Ricordarsi di aggiungere la dichiarazione in diretta per la funzione al file di intestazione Echo. h nella sezione privata:
+Ricordarsi di aggiungere la dichiarazione con inoltro per la funzione al file di intestazione Echo.h nella sezione privata:
 
 
 ```
@@ -118,7 +118,7 @@ void FillBufferWithSilence(WAVEFORMATEX *pWfex);
 
 
 
-È necessario aggiungere il codice alla fine di AllocateStreamingResources per chiamare questo metodo ogni volta che il buffer di ritardo viene creato o ridimensionato. Il codice di esempio seguente passa il puntatore WAVEFORMATEX denominato pWave al nuovo metodo:
+È necessario aggiungere codice alla fine di AllocateStreamingResources per chiamare questo metodo ogni volta che il buffer di ritardo viene creato o ridimensionato. Il codice di esempio seguente passa il puntatore WAVEFORMATEX denominato pWave al nuovo metodo:
 
 
 ```
@@ -128,9 +128,9 @@ FillBufferWithSilence(pWave);
 
 
 
-## <a name="reallocating-the-delay-buffer-memory"></a>Riallocazione della memoria del buffer di ritardo
+## <a name="reallocating-the-delay-buffer-memory"></a>Riallocazione della memoria buffer ritardata
 
-Quando l'utente modifica il tempo di ritardo utilizzando la pagina delle proprietà, è necessario modificare anche la dimensione del buffer di ritardo. Il codice è già stato aggiunto a AllocateStreamingResources per ridimensionare il buffer, ma è necessario aggiungere una riga di codice a CEcho::p \_ intervallo di tempo ut per chiamare il metodo di allocazione delle risorse ogni volta che il valore della proprietà cambia. Il codice è il seguente:
+Quando l'utente modifica il tempo di ritardo usando la pagina delle proprietà, anche le dimensioni del buffer di ritardo devono cambiare. Il codice è già stato aggiunto a AllocateStreamingResources per ridimensionare il buffer, ma è necessario aggiungere una riga di codice a CEcho::p ut delay per chiamare il metodo di allocazione delle risorse ogni volta che il valore della proprietà \_ cambia. Il codice è il seguente:
 
 
 ```
@@ -147,9 +147,9 @@ AllocateStreamingResources();
 [**Uso delle risorse di streaming**](working-with-streaming-resources.md)
 </dt> </dl>
 
- 
+ 
 
- 
+ 
 
 
 

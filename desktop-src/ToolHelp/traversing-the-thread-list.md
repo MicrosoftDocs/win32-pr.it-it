@@ -1,19 +1,19 @@
 ---
-title: Attraversamento dell'elenco dei thread
+title: Attraversamento dell'elenco di thread
 description: La funzione di esempio seguente elenca i thread in esecuzione per un processo specificato.
 ms.assetid: 67194627-8239-46d2-93e7-eb8e5f6c56e6
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 300b162af296b0c556cce3d3d62e59bd4278b1d1
-ms.sourcegitcommit: 2d531328b6ed82d4ad971a45a5131b430c5866f7
+ms.openlocfilehash: e66ebd58ebb50a2a7d96fa41c9f9449dbe5d85744c0ba09405ef0ffaf5fcedd0
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "103712958"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119513831"
 ---
-# <a name="traversing-the-thread-list"></a>Attraversamento dell'elenco dei thread
+# <a name="traversing-the-thread-list"></a>Attraversamento dell'elenco di thread
 
-La funzione di esempio seguente elenca i thread in esecuzione per un processo specificato. In primo luogo, la `ListProcessThreads` funzione acquisisce uno snapshot dei thread attualmente in esecuzione nel sistema usando [**CreateToolhelp32Snapshot**](/windows/desktop/api/TlHelp32/nf-tlhelp32-createtoolhelp32snapshot), quindi esamina l'elenco registrato nello snapshot usando le funzioni [**Thread32First**](/windows/desktop/api/TlHelp32/nf-tlhelp32-thread32first) e [**Thread32Next**](/windows/desktop/api/TlHelp32/nf-tlhelp32-thread32next) . Il parametro per `ListProcessThreads` è l'identificatore del processo di cui devono essere elencati i thread.
+La funzione di esempio seguente elenca i thread in esecuzione per un processo specificato. In primo luogo, la funzione crea uno snapshot dei thread attualmente in esecuzione nel sistema usando `ListProcessThreads` [**CreateToolhelp32Snapshot**](/windows/desktop/api/TlHelp32/nf-tlhelp32-createtoolhelp32snapshot)e quindi esegue l'elenco registrato nello snapshot usando le funzioni [**Thread32First**](/windows/desktop/api/TlHelp32/nf-tlhelp32-thread32first) e [**Thread32Next.**](/windows/desktop/api/TlHelp32/nf-tlhelp32-thread32next) Il parametro per `ListProcessThreads` è l'identificatore del processo di cui devono essere elencati i thread.
 
 
 ```C++
@@ -103,12 +103,12 @@ void printError( TCHAR* msg )
 
 <dl> <dt>
 
-[Thread a piedi](thread-walking.md)
+[Thread Walking](thread-walking.md)
 </dt> </dl>
 
- 
+ 
 
- 
+ 
 
 
 

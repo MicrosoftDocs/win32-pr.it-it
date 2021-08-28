@@ -1,9 +1,9 @@
 ---
-title: Messaggio di MCIWNDM_CAN_EJECT (VFW. h)
-description: MCIWNDM \_ può \_ rimuovere il messaggio determina se un dispositivo MCI può espellerne i supporti. È possibile inviare questo messaggio in modo esplicito o utilizzando la macro MCIWndCanEject.
+title: MCIWNDM_CAN_EJECT messaggio (Vfw.h)
+description: Il messaggio MCIWNDM \_ CAN \_ EJECT determina se un dispositivo MCI può espellere i supporti. È possibile inviare questo messaggio in modo esplicito o tramite la macro MCIWndCanEject.
 ms.assetid: e9bd33c4-0ad8-4c0a-8b75-52011b58904d
 keywords:
-- MCIWNDM_CAN_EJECT messaggi multimediali di Windows
+- MCIWNDM_CAN_EJECT messaggio Windows Multimediali
 topic_type:
 - apiref
 api_name:
@@ -14,16 +14,16 @@ api_type:
 - HeaderDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 00ba54c9263e23fdd9830be892e4559ae3755c07
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: fde4c9fec3972fe0e22b0a562454e1ef680e9ccae3851c272d28468fc2c91f74
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "103743687"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119429671"
 ---
-# <a name="mciwndm_can_eject-message"></a>MCIWNDM \_ può \_ rimuovere il messaggio
+# <a name="mciwndm_can_eject-message"></a>MCIWNDM \_ PUÒ \_ INVIARE UN MESSAGGIO
 
-**MCIWNDM \_ può \_ rimuovere** il messaggio determina se un dispositivo MCI può espellerne i supporti. È possibile inviare questo messaggio in modo esplicito o utilizzando la macro [**MCIWndCanEject**](/windows/desktop/api/Vfw/nf-vfw-mciwndcaneject) .
+Il **messaggio MCIWNDM \_ CAN \_ EJECT** determina se un dispositivo MCI può espellere i supporti. È possibile inviare questo messaggio in modo esplicito o tramite la macro [**MCIWndCanEject.**](/windows/desktop/api/Vfw/nf-vfw-mciwndcaneject)
 
 
 ```C++
@@ -36,7 +36,7 @@ lParam = 0;
 
 ## <a name="return-value"></a>Valore restituito
 
-Restituisce **true** se il dispositivo può espellere il relativo supporto o **false** in caso contrario.
+Restituisce **TRUE se** il dispositivo può rimuovere il supporto o FALSE in caso **contrario.**
 
 ## <a name="requirements"></a>Requisiti
 
@@ -46,7 +46,7 @@ Restituisce **true** se il dispositivo può espellere il relativo supporto o **f
 |-------------------------------------|----------------------------------------------------------------------------------|
 | Client minimo supportato<br/> | Windows 2000 Professional \[solo app desktop\]<br/>                       |
 | Server minimo supportato<br/> | Windows 2000 Server \[solo app desktop\]<br/>                             |
-| Intestazione<br/>                   | <dl> <dt>VFW. h</dt> </dl> |
+| Intestazione<br/>                   | <dl> <dt>Vfw.h</dt> </dl> |
 
 
 

@@ -1,5 +1,5 @@
 ---
-description: 'Funzione D3DXMatrixPerspectiveOffCenterRH (D3DX10Math.h): crea una matrice di proiezione prospettica personalizzata e con la mano destra.'
+description: 'Funzione D3DXMatrixPerspectiveOffCenterRH (D3DX10Math.h): crea una matrice di proiezione prospettica personalizzata con la mano destra.'
 ms.assetid: 51509bfc-2f49-4ba7-8918-3c44d857d4b2
 title: Funzione D3DXMatrixPerspectiveOffCenterRH (D3DX10Math.h)
 ms.topic: reference
@@ -14,12 +14,12 @@ api_type:
 api_location:
 - D3DX10.lib
 - D3DX10.dll
-ms.openlocfilehash: 3f80c32953dbc591d5d8bc7a95fc707e93fe384c
-ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
+ms.openlocfilehash: 883ddb49684d4e5f5ca7cfb3585a26653a7f0ef4960b59e3c74aafecdd7e2f93
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/28/2021
-ms.locfileid: "108109039"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119498031"
 ---
 # <a name="d3dxmatrixperspectiveoffcenterrh-function-d3dx10mathh"></a>Funzione D3DXMatrixPerspectiveOffCenterRH (D3DX10Math.h)
 
@@ -117,7 +117,7 @@ Puntatore a una struttura D3DXMATRIX che è una matrice di proiezione prospettic
 
 ## <a name="remarks"></a>Commenti
 
-Tutti i parametri della funzione D3DXMatrixPerspectiveOffCenterRH sono distanze nello spazio della fotocamera. I parametri descrivono le dimensioni del volume della vista.
+Tutti i parametri della funzione D3DXMatrixPerspectiveOffCenterRH sono distanze nello spazio della fotocamera. I parametri descrivono le dimensioni del volume di visualizzazione.
 
 Il valore restituito per questa funzione è lo stesso valore restituito nel parametro pOut. In questo modo, la funzione D3DXMatrixPerspectiveOffCenterRH può essere usata come parametro per un'altra funzione.
 

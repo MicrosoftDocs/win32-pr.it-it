@@ -1,7 +1,7 @@
 ---
-description: Recupera il numero di elementi figlio in questo oggetto dati del file.
+description: Recupera il numero di elementi figlio in questo oggetto dati di file.
 ms.assetid: ebc6905b-a453-4a15-adae-956ce7034084
-title: 'Metodo ID3DXFileData:: GetChildren (D3DX9Xof. h)'
+title: Metodo ID3DXFileData::GetChildren (D3DX9Xof.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -14,16 +14,16 @@ api_type:
 api_location:
 - D3dx9.lib
 - D3dx9.dll
-ms.openlocfilehash: dd6932801f3d4b079efa6f1ed2688505dbd7828b
-ms.sourcegitcommit: 14010c34b35fa268046c7683f021f86de08ddd0a
+ms.openlocfilehash: dca2197a321efea6cf86ee0f38b1778935e5f4cb336b55b5d662e49a4465162a
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/15/2021
-ms.locfileid: "106322988"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119493841"
 ---
-# <a name="id3dxfiledatagetchildren-method"></a>Metodo ID3DXFileData:: GetChildren
+# <a name="id3dxfiledatagetchildren-method"></a>Metodo ID3DXFileData::GetChildren
 
-Recupera il numero di elementi figlio in questo oggetto dati del file.
+Recupera il numero di elementi figlio in questo oggetto dati di file.
 
 ## <a name="syntax"></a>Sintassi
 
@@ -40,10 +40,10 @@ HRESULT GetChildren(
 
 <dl> <dt>
 
-*puiChildren* \[ in\]
+*puiChildren* \[ Pollici\]
 </dt> <dd>
 
-Tipo: **[ **size \_ T**](../winprog/windows-data-types.md)\***
+Tipo: **[ **SIZE \_ T**](../winprog/windows-data-types.md)\***
 
 Indirizzo di un puntatore per ricevere il numero di elementi figlio in questo oggetto dati file.
 
@@ -53,7 +53,7 @@ Indirizzo di un puntatore per ricevere il numero di elementi figlio in questo og
 
 Tipo: **[ **HRESULT**](https://msdn.microsoft.com/library/Bb401631(v=MSDN.10).aspx)**
 
-Se il metodo ha esito positivo, il valore restituito è \_ OK. Se il metodo ha esito negativo, verrà restituito il valore seguente: D3DXFERR \_ BADVALUE.
+Se il metodo ha esito positivo, il valore restituito è S \_ OK. Se il metodo ha esito negativo, verrà restituito il valore seguente: D3DXFERR \_ BADVALUE.
 
 ## <a name="requirements"></a>Requisiti
 
@@ -61,8 +61,8 @@ Se il metodo ha esito positivo, il valore restituito è \_ OK. Se il metodo ha e
 
 | Requisito | Valore |
 |--------------------|---------------------------------------------------------------------------------------|
-| Intestazione<br/>  | <dl> <dt>D3DX9Xof. h</dt> </dl> |
-| Libreria<br/> | <dl> <dt>D3dx9. lib</dt> </dl>  |
+| Intestazione<br/>  | <dl> <dt>D3DX9Xof.h</dt> </dl> |
+| Libreria<br/> | <dl> <dt>D3dx9.lib</dt> </dl>  |
 
 
 

@@ -1,11 +1,11 @@
 ---
 title: Proprietà durata IWMPMedia
-description: La proprietà Duration ottiene la durata in secondi dell'elemento multimediale corrente.
+description: La proprietà duration ottiene la durata in secondi dell'elemento multimediale corrente.
 ms.assetid: f8a0bf3e-eeaf-46f5-90c8-d3b11ce4eb39
 keywords:
-- Proprietà durata Media Player di Windows
-- Proprietà Duration Media Player Windows, interfaccia IWMPMedia
-- Interfaccia IWMPMedia Windows Media Player, proprietà Duration
+- Proprietà duration Windows Media Player
+- Proprietà duration Windows Media Player, interfaccia IWMPMedia
+- Interfaccia IWMPMedia Windows Media Player , proprietà duration
 topic_type:
 - apiref
 api_name:
@@ -17,16 +17,16 @@ api_type:
 - COM
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: f796cab042713082ce2066659f62736855e62787
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: 38703c37e73ba6312970b8e5b929441c3c5c9ccd1f034ab244dc97c36c2d2162
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "106332409"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119506021"
 ---
-# <a name="iwmpmediaduration-property"></a>IWMPMedia::d proprietà uration
+# <a name="iwmpmediaduration-property"></a>Proprietà IWMPMedia::d uration
 
-La proprietà **Duration** ottiene la durata in secondi dell'elemento multimediale corrente.
+La **proprietà duration** ottiene la durata in secondi dell'elemento multimediale corrente.
 
 Questa proprietà è di sola lettura.
 
@@ -49,21 +49,21 @@ Public ReadOnly Property duration As System.Double
 
 ## <a name="property-value"></a>Valore proprietà
 
-**System. Double** che rappresenta la durata in secondi.
+**System.Double che** rappresenta la durata in secondi.
 
 ## <a name="remarks"></a>Commenti
 
-Se questa proprietà viene utilizzata con un elemento multimediale diverso da quello specificato in AxWindowsMediaPlayer. currentMedia, potrebbe non contenere un valore valido.
+Se questa proprietà viene usata con un elemento multimediale diverso da quello specificato in AxWindowsMediaPlayer.currentMedia, potrebbe non contenere un valore valido.
 
-Per recuperare la durata per i file che non si trovano nella libreria dell'utente, è necessario attendere che Windows Media Player Apra il file; ovvero, il **OpenState** corrente deve essere uguale a **MediaOpen**. Per verificarlo, è possibile gestire **AxWindowsMediaPlayer. \_ Evento \_ OpenStateChange WMPOCXEvents** o verificando periodicamente il valore di **AxWindowsMediaPlayer. openState**.
+Per recuperare la durata dei file non presenti nella libreria dell'utente, è necessario attendere Windows Media Player aprire il file. ciò significa che **l'oggetto OpenState corrente** deve essere uguale a **MediaOpen.** È possibile verificarlo gestendo **AxWindowsMediaPlayer. \_ Evento \_ OpenStateChange WMPOCXEvents** o controllando periodicamente il valore di **AxWindowsMediaPlayer.openState.**
 
-Per le playlist, la durata di ogni elemento multimediale può essere recuperata quando viene aperto il singolo elemento multimediale, anziché quando viene aperta la playlist.
+Per le playlist, la durata di ogni elemento multimediale può essere recuperata all'apertura del singolo elemento multimediale, anziché all'apertura della playlist.
 
-Prima di utilizzare questa proprietà, è necessario disporre dell'accesso in lettura alla libreria. Per altre informazioni, vedere [accesso alla libreria](library-access.md).
+Prima di usare questa proprietà, è necessario avere accesso in lettura alla libreria. Per altre informazioni, vedere [Accesso alla libreria.](library-access.md)
 
 ## <a name="examples"></a>Esempio
 
-Nell'esempio seguente viene usato **Duration** per visualizzare l'ora rimanente dell'elemento multimediale corrente in un'etichetta. Un timer aggiorna il testo nell'etichetta ogni secondo.
+Nell'esempio seguente viene **utilizzata la durata** per visualizzare il tempo rimanente nell'elemento multimediale corrente in un'etichetta. Un timer aggiorna il testo nell'etichetta ogni secondo.
 
 
 ```CSharp
@@ -119,7 +119,7 @@ End Sub
 
 | Requisito | Valore |
 |----------------------|------------------------------------------------------------------------------------------------------------------------|
-| Versione<br/>   | Windows Media Player 9 serie o versione successiva<br/>                                                                      |
+| Versione<br/>   | Windows Media Player serie 9 o successive<br/>                                                                      |
 | Spazio dei nomi<br/> | **WMPLib**<br/>                                                                                                  |
 | Assembly<br/>  | <dl> <dt>Interop.WMPLib.dll (Interop.WMPLib.dll.dll)</dt> </dl> |
 
@@ -129,19 +129,19 @@ End Sub
 
 <dl> <dt>
 
-[**AxWindowsMediaPlayer. currentMedia (VB e C#)**](axwmplib-axwindowsmediaplayer-currentmedia--vb-and-c.md)
+[**AxWindowsMediaPlayer.currentMedia (VB e C#)**](axwmplib-axwindowsmediaplayer-currentmedia--vb-and-c.md)
 </dt> <dt>
 
-[**AxWindowsMediaPlayer. openState (VB e C#)**](axwmplib-axwindowsmediaplayer-openstate--vb-and-c.md)
+[**AxWindowsMediaPlayer.openState (VB e C#)**](axwmplib-axwindowsmediaplayer-openstate--vb-and-c.md)
 </dt> <dt>
 
-[**Evento AxWindowsMediaPlayer. OpenStateChange (VB e C#)**](axwmplib-axwindowsmediaplayer-openstatechange.md)
+[**Evento AxWindowsMediaPlayer.OpenStateChange (VB e C#)**](axwmplib-axwindowsmediaplayer-openstatechange.md)
 </dt> <dt>
 
 [**Interfaccia IWMPMedia (VB e C#)**](iwmpmedia--vb-and-c.md)
 </dt> <dt>
 
-[**IWMPMedia. durationString (VB e C#)**](wmplibiwmpmedia-iwmpmedia-durationstring--vb-and-c.md)
+[**IWMPMedia.durationString (VB e C#)**](wmplibiwmpmedia-iwmpmedia-durationstring--vb-and-c.md)
 </dt> </dl>
 
  

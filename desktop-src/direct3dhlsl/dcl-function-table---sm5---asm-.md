@@ -1,23 +1,23 @@
 ---
-title: dcl_function_table (SM5-ASM)
+title: dcl_function_table (sm5 - asm)
 description: Dichiarare una tabella di funzioni.
 ms.assetid: 3693A03F-5E4B-40E8-B436-2FE3462C8DB8
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 0710f53171ad2a86097dca96afb2756b1b067fef
-ms.sourcegitcommit: fe03c5d92ca6a0d66a114b2303e99c0a19241ffb
+ms.openlocfilehash: 549653ee7316a664b628d5cdc692c091bdf042ad24e89b983c0fd3aac8a67ba8
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/20/2019
-ms.locfileid: "104993253"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119490891"
 ---
-# <a name="dcl_function_table-sm5---asm"></a>\_tabella delle funzioni DCL \_ (SM5-ASM)
+# <a name="dcl_function_table-sm5---asm"></a>Tabella delle funzioni dcl \_ \_ (sm5 - asm)
 
 Dichiarare una tabella di funzioni.
 
 
 
-| \_tabella della funzione DCL \_ ft \# = {FB \# , FB \# ,...} |
+| dcl \_ function table ft = \_ \# {fb \# , fb , \# ...} |
 |-----------------------------------------------|
 
 
@@ -28,7 +28,7 @@ Dichiarare una tabella di funzioni.
 
 | Elemento                                                      | Descrizione                                   |
 |-----------------------------------------------------------|-----------------------------------------------|
-| <span id="ft"></span><span id="FT"></span>*ft*<br/> | \[nelle \] voci della tabella di funzioni.<br/> |
+| <span id="ft"></span><span id="FT"></span>*Ft*<br/> | \[in \] Voci della tabella della funzione.<br/> |
 
 
 
@@ -36,19 +36,19 @@ Dichiarare una tabella di funzioni.
 
 ## <a name="remarks"></a>Commenti
 
-Questa funzione dichiara una tabella di funzioni come un set di corpi di funzione dichiarati in precedenza.
+Questa funzione dichiara una tabella di funzioni come set di corpi di funzione dichiarati in precedenza.
 
-Si tratta di un vtable C++, ad eccezione del fatto che è presente una voce per ogni sito di chiamata per un'interfaccia anziché per ogni metodo.
+È simile a una vtable C++, ad eccezione del fatto che è presente una voce per ogni sito di chiamata per un'interfaccia anziché per ogni metodo.
 
-Non esiste alcun limite al numero di corpi delle funzioni che possono essere elencati in una tabella di funzioni.
+Non esiste alcun limite al numero di corpi di funzione che possono essere elencati in una tabella di funzioni.
 
-È possibile fare riferimento più volte a una determinata funzione del corpo della funzione \# in una o più tabelle di funzioni, come modalità di condivisione del codice comune.
+È possibile fare riferimento più volte a un determinato corpo della funzione fb in una o più tabelle di funzioni, in modo da \# condividere il codice comune.
 
-Questa istruzione si applica alle fasi dello shader seguenti:
+Questa istruzione si applica alle fasi di shader seguenti:
 
 
 
-| Vertice | Hull | Dominio | Geometria | Pixel | Calcolo |
+| Vertice | Scafo | Dominio | Geometria | Pixel | Calcolo |
 |--------|------|--------|----------|-------|---------|
 | X      | X    | X      | X        | X     | X       |
 
@@ -56,20 +56,20 @@ Questa istruzione si applica alle fasi dello shader seguenti:
 
  
 
-## <a name="minimum-shader-model"></a>Modello Shader minimo
+## <a name="minimum-shader-model"></a>Modello di shader minimo
 
-Questa istruzione è supportata nei modelli shader seguenti:
+Questa istruzione è supportata nei modelli di shader seguenti:
 
 
 
 | Modello di shader                                              | Supportato |
 |-----------------------------------------------------------|-----------|
-| [Modello Shader 5](d3d11-graphics-reference-sm5.md)        | sì       |
-| [Modello Shader 4,1](dx-graphics-hlsl-sm4.md)              | no        |
-| [Modello Shader 4](dx-graphics-hlsl-sm4.md)                | no        |
-| [Shader Model 3 (DirectX HLSL)](dx-graphics-hlsl-sm3.md) | no        |
-| [Shader Model 2 (DirectX HLSL)](dx-graphics-hlsl-sm2.md) | no        |
-| [Shader Model 1 (DirectX HLSL)](dx-graphics-hlsl-sm1.md) | no        |
+| [Modello shader 5](d3d11-graphics-reference-sm5.md)        | sì       |
+| [Modello shader 4.1](dx-graphics-hlsl-sm4.md)              | no        |
+| [Modello shader 4](dx-graphics-hlsl-sm4.md)                | no        |
+| [Modello shader 3 (DirectX HLSL)](dx-graphics-hlsl-sm3.md) | no        |
+| [Modello shader 2 (DirectX HLSL)](dx-graphics-hlsl-sm2.md) | no        |
+| [Modello shader 1 (HLSL DirectX)](dx-graphics-hlsl-sm1.md) | no        |
 
 
 
@@ -79,7 +79,7 @@ Questa istruzione è supportata nei modelli shader seguenti:
 
 <dl> <dt>
 
-[Assembly Shader Model 5 (DirectX HLSL)](shader-model-5-assembly--directx-hlsl-.md)
+[Assembly del modello shader 5 (HLSL DirectX)](shader-model-5-assembly--directx-hlsl-.md)
 </dt> </dl>
 
  

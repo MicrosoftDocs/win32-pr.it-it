@@ -1,5 +1,5 @@
 ---
-description: Elimina uno snapshot esistente della raccolta di sistemi virtuali. Questo metodo può essere un effetto collaterale per eliminare altri snapshot che dipendono dallo snapshot interessato.
+description: Elimina uno snapshot esistente della raccolta di sistemi virtuali. Questo metodo può causare l'eliminazione di altri snapshot dipendenti dagli snapshot interessati.
 ms.assetid: 79a529d5-35bb-4e63-a1b7-8943de9580e8
 title: Metodo DestroySnapshot della classe Msvm_CollectionSnapshotService
 ms.topic: reference
@@ -13,16 +13,16 @@ api_type:
 - COM
 api_location:
 - vmms.exe
-ms.openlocfilehash: 399737a95db7725718b2e0ec620d2b6b7a7ae93e
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: bacdb760580057516b6663bf53f5cd02a83f76148fa782ab875ca7385c053cb4
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "106310019"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119431496"
 ---
-# <a name="destroysnapshot-method-of-the-msvm_collectionsnapshotservice-class"></a>Metodo DestroySnapshot della classe MSVM \_ CollectionSnapshotService
+# <a name="destroysnapshot-method-of-the-msvm_collectionsnapshotservice-class"></a>Metodo DestroySnapshot della classe Msvm \_ CollectionSnapshotService
 
-Elimina uno snapshot esistente della raccolta di sistemi virtuali. Questo metodo può essere un effetto collaterale per eliminare altri snapshot che dipendono dallo snapshot interessato.
+Elimina uno snapshot esistente della raccolta di sistemi virtuali. Questo metodo può causare l'eliminazione di altri snapshot dipendenti dagli snapshot interessati.
 
 ## <a name="syntax"></a>Sintassi
 
@@ -40,23 +40,23 @@ uint32 DestroySnapshot(
 
 <dl> <dt>
 
-*AffectedSnapshotCollection* \[ in\]
+*AffectedSnapshotCollection* \[ Pollici\]
 </dt> <dd>
 
-Riferimento a una [**\_ raccolta CIM**](cim-collection.md) che descrive la raccolta di snapshot del sistema virtuale interessata.
+Riferimento a una [**raccolta CIM \_ che**](cim-collection.md) descrive la raccolta di snapshot del sistema virtuale interessata.
 
 </dd> <dt>
 
-*Processo* \[ di out\]
+*Processo* \[ Cambio\]
 </dt> <dd>
 
-Riferimento facoltativo restituito se l'operazione viene eseguita in modo asincrono. Se presente, il riferimento restituito a un'istanza di [**CIM \_ ConcreteJob**](cim-concretejob.md) può essere usato per monitorare lo stato di avanzamento e per ottenere il risultato del metodo.
+Riferimento facoltativo restituito se l'operazione viene eseguita in modo asincrono. Se presente, il riferimento restituito a un'istanza di [**CIM \_ ConcreteJob**](cim-concretejob.md) può essere usato per monitorare lo stato di avanzamento e ottenere il risultato del metodo .
 
 </dd> </dl>
 
 ## <a name="return-value"></a>Valore restituito
 
-In caso di esito positivo, restituisce 0 (completa) o 4096 (processo avviato); in caso contrario, restituisce un errore.
+In caso di esito positivo, restituisce 0 (Completato) o 4096 (Processo avviato). In caso contrario, restituisce un errore.
 
 <dl> <dt>
 
@@ -66,13 +66,13 @@ In caso di esito positivo, restituisce 0 (completa) o 4096 (processo avviato); i
 **Non supportato** (1)
 </dt> <dt>
 
-**Non riuscito** (2)
+**Operazione non** riuscita (2)
 </dt> <dt>
 
 **Timeout** (3)
 </dt> <dt>
 
-**Parametro non valido** (4)
+**Parametro non** valido (4)
 </dt> <dt>
 
 **Stato non valido** (5)
@@ -84,13 +84,13 @@ In caso di esito positivo, restituisce 0 (completa) o 4096 (processo avviato); i
 **DMTF riservato** (..)
 </dt> <dt>
 
-**Parametri del metodo controllati-processo avviato** (4096)
+**Parametri del metodo controllati - Processo avviato** (4096)
 </dt> <dt>
 
-**Metodo riservato** (4097.. 32767)
+**Metodo riservato** (4097..32767)
 </dt> <dt>
 
-**Specifico del fornitore** (32768.. 65535)
+**Specifico del** fornitore (32768..65535)
 </dt> </dl>
 
 ## <a name="requirements"></a>Requisiti
@@ -99,10 +99,10 @@ In caso di esito positivo, restituisce 0 (completa) o 4096 (processo avviato); i
 
 | Requisito | Valore |
 |-------------------------------------|---------------------------------------------------------------------------------------------------------|
-| Client minimo supportato<br/> | \[Solo app desktop Windows 10\]<br/>                                                             |
+| Client minimo supportato<br/> | \[Windows 10 solo app desktop\]<br/>                                                             |
 | Server minimo supportato<br/> | Windows Server 2016<br/>                                                                          |
-| Spazio dei nomi<br/>                | \\Virtualizzazione radice \\ v2<br/>                                                                     |
-| MOF<br/>                      | <dl> <dt>WindowsVirtualization. v2. mof</dt> </dl> |
+| Spazio dei nomi<br/>                | Virtualizzazione \\ radice \\ v2<br/>                                                                     |
+| MOF<br/>                      | <dl> <dt>WindowsVirtualization.V2.mof</dt> </dl> |
 | DLL<br/>                      | <dl> <dt>Vmms.exe</dt> </dl>                     |
 
 
@@ -111,7 +111,7 @@ In caso di esito positivo, restituisce 0 (completa) o 4096 (processo avviato); i
 
 <dl> <dt>
 
-[**\_CollectionSnapshotService MSVM**](msvm-collectionsnapshotservice.md)
+[**Msvm \_ CollectionSnapshotService**](msvm-collectionsnapshotservice.md)
 </dt> </dl>
 
  

@@ -1,5 +1,5 @@
 ---
-description: 'Metodo IAMTimelineObj::GetDirtyRange2 : non supportato.'
+description: 'Metodo IAMTimelineObj::GetDirtyRange2: non supportato.'
 ms.assetid: 3acd36f2-52f4-4734-a753-c6a6ce7e9187
 title: Metodo IAMTimelineObj::GetDirtyRange2 (Qedit.h)
 ms.topic: reference
@@ -14,17 +14,17 @@ api_type:
 api_location:
 - strmiids.lib
 - strmiids.dll
-ms.openlocfilehash: 14c573403bf946b54bbfcc74ae41145a3f1c5c7a
-ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
+ms.openlocfilehash: db616db1c3ddb6bf6dab0624452963261eb49c2256bcc388e282c03b1d2a357e
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/28/2021
-ms.locfileid: "108119519"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "117999156"
 ---
 # <a name="iamtimelineobjgetdirtyrange2-method"></a>Metodo IAMTimelineObj::GetDirtyRange2
 
 > [!Note]  
-> \[Deprecato. Questa API potrebbe essere rimossa dalle versioni future di Windows.\]
+> \[Deprecato. Questa API potrebbe essere rimossa dalle versioni future Windows.\]
 
  
 
@@ -72,7 +72,7 @@ Se questo metodo ha esito positivo, restituisce **S \_ OK**. In caso contrario, 
  
 
 > [!Note]  
-> Per ottenere Qedit.h, scaricare Microsoft Windows SDK [Update per Windows Vista e .NET Framework 3.0.](https://msdn.microsoft.com/windowsvista/bb980924.aspx) Qedit.h non è disponibile nel Microsoft Windows SDK per Windows 7 e .NET Framework 3.5 Service Pack 1.
+> Per ottenere Qedit.h, scaricare l'aggiornamento di Microsoft Windows SDK per Windows [Vista e .NET Framework 3.0.](https://msdn.microsoft.com/windowsvista/bb980924.aspx) Qedit.h non è disponibile in Microsoft Windows SDK per Windows 7 e .NET Framework 3.5 Service Pack 1.
 
  
 

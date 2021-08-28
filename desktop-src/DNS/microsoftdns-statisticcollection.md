@@ -1,21 +1,21 @@
 ---
 title: MicrosoftDNS_StatisticCollection
-description: La \_ classe MicrosoftDNS StatisticCollection rappresenta una raccolta di statistiche del server DNS correlate.
+description: La classe MicrosoftDNS \_ StatisticCollection rappresenta una raccolta di statistiche del server DNS correlate.
 ms.assetid: 74e080e9-a676-4a82-ae8b-ee904622eb9a
 keywords:
 - MicrosoftDNS_StatisticCollection
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: c44f9c65714fb3b1db58b5a6439ade5531792501
-ms.sourcegitcommit: 2d531328b6ed82d4ad971a45a5131b430c5866f7
+ms.openlocfilehash: 42fda276433290ab2b151b4b6a34abae7a0113ee3db75054f6c66c0536009dfa
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "104044471"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120109091"
 ---
 # <a name="microsoftdns_statisticcollection"></a>MicrosoftDNS \_ StatisticCollection
 
-La \_ classe MicrosoftDNS StatisticCollection rappresenta una raccolta di statistiche del server DNS correlate.
+La classe MicrosoftDNS \_ StatisticCollection rappresenta una raccolta di statistiche del server DNS correlate.
 
 La sintassi seguente è semplificata dal codice MOF.
 
@@ -46,7 +46,7 @@ Rappresentazione numerica della raccolta di statistiche.
 
 </dd> <dt>
 
-<span id="MicrosoftDNS_Statistic_Statistics__"></span><span id="microsoftdns_statistic_statistics__"></span><span id="MICROSOFTDNS_STATISTIC_STATISTICS__"></span>**\_Statistiche statistica MicrosoftDNS\[\]**
+<span id="MicrosoftDNS_Statistic_Statistics__"></span><span id="microsoftdns_statistic_statistics__"></span><span id="MICROSOFTDNS_STATISTIC_STATISTICS__"></span>**Statistiche di \_ MicrosoftDNS\[\]**
 </dt> <dd>
 
 Matrice di valori associati alla statistica.
@@ -57,19 +57,19 @@ Matrice di valori associati alla statistica.
 
 <dl> <dt>
 
-<span id="This_class_has_no_methods."></span><span id="this_class_has_no_methods."></span><span id="THIS_CLASS_HAS_NO_METHODS."></span>Questa classe non dispone di metodi.
+<span id="This_class_has_no_methods."></span><span id="this_class_has_no_methods."></span><span id="THIS_CLASS_HAS_NO_METHODS."></span>Questa classe non ha metodi.
 </dt> <dd></dd> </dl>
 
 ## <a name="related-topics"></a>Argomenti correlati
 
 <dl> <dt>
 
-[**\_Statistica MicrosoftDNS**](microsoftdns-statistic.md)
+[**Statistica \_ MicrosoftDNS**](microsoftdns-statistic.md)
 </dt> </dl>
 
- 
+ 
 
- 
+ 
 
 
 

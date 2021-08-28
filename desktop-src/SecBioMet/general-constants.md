@@ -1,6 +1,6 @@
 ---
-title: Costanti generali (tipi WinBio \_ . h)
-description: Specificare lunghezza massima SID, handle, ID, lunghezza massima della stringa e dimensioni massime del buffer di esempio.
+title: Costanti generali (Winbio \_ types.h)
+description: Specificare la lunghezza massima del SID, gli handle, gli ID, la lunghezza massima della stringa e le dimensioni massime del buffer di campionamento.
 ms.assetid: 62e87bd8-a708-4d00-aaa8-9cac8e3736a7
 topic_type:
 - apiref
@@ -19,29 +19,29 @@ api_type:
 - HeaderDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: a5e35aa4c2cc676935cfb80fdec8729daf64d5f3
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: 686e94c936855d3b5466071fba7d8b629a492579de11a53a62d8b23345707c53
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "103964217"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119740450"
 ---
-# <a name="general-constants-winbio_typesh"></a>Costanti generali (tipi WinBio \_ . h)
+# <a name="general-constants-winbio_typesh"></a>Costanti generali (Winbio \_ types.h)
 
-In Windows Biometric Framework vengono utilizzate le costanti seguenti.
+Le costanti seguenti vengono usate in tutto il Windows Biometric Framework.
 
 
 
 | Costante/valore                                                                                                                                                                                                                                                                   | Descrizione                                                                                 |
 |:---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|:--------------------------------------------------------------------------------------------|
-| <span id="SECURITY_MAX_SID_SIZE"></span><span id="security_max_sid_size"></span><dl> <dt>**\_dimensioni massime \_ SID sicurezza \_**</dt> </dl>                                                                                          | Lunghezza massima del valore di un ID di sicurezza (SID). Attualmente è 68.<br/>   |
-| <span id="WINBIO_UNIT_ID"></span><span id="winbio_unit_id"></span><dl> <dt>**\_ID unità \_ WINBIO**</dt> </dl>                                                                                                                | ID del numero di unità biometriche.<br/>                                                   |
-| <span id="WINBIO_SESSION_HANDLE"></span><span id="winbio_session_handle"></span><dl> <dt>**\_handle della sessione WINBIO \_**</dt> </dl>                                                                                           | Un long integer senza segno contenente l'handle per una sessione biometrica aperta.<br/> |
-| <span id="WINBIO_FRAMEWORK_HANDLE"></span><span id="winbio_framework_handle"></span><dl> <dt>**\_handle WINBIO Framework \_**</dt> </dl>                                                                                     | Valore long integer senza segno contenente l'handle per una sessione di Framework aperta.<br/> |
-| <span id="WINBIO_UUID"></span><span id="winbio_uuid"></span><dl> <dt>**\_UUID WINBIO**</dt> </dl>                                                                                                                          | Un valore GUID.<br/>                                                                          |
-| <span id="WINBIO_STRING"></span><span id="winbio_string"></span><dl> <dt>**\_stringa WINBIO**</dt> </dl>                                                                                                                    | Matrice di byte che contiene una stringa Unicode con terminazione null.<br/>                     |
-| <span id="WINBIO_MAX_STRING_LEN_"></span><span id="winbio_max_string_len_"></span><dl> <dt>**WINBIO \_ \_ \_ lunghezza massima stringa**</dt> </dl>                                                                                       | Lunghezza massima di un valore **\_ stringa WINBIO** . Attualmente è 256.<br/>         |
-| <span id="WINBIO_MAX_SAMPLE_BUFFER_SIZE"></span><span id="winbio_max_sample_buffer_size"></span><dl> <dt>**WINBIO \_ \_ \_ \_ Dimensioni massime del buffer di esempio**</dt> <dt>0x7FFFFFFF</dt> </dl> | Il numero massimo di byte in una singola acquisizione di dati biometrici.<br/>                  |
+| <span id="SECURITY_MAX_SID_SIZE"></span><span id="security_max_sid_size"></span><dl> <dt>**DIMENSIONI \_ MASSIME \_ SID \_ DI SICUREZZA**</dt> </dl>                                                                                          | Lunghezza massima di un valore dell'identificatore di sicurezza (SID). Attualmente è 68.<br/>   |
+| <span id="WINBIO_UNIT_ID"></span><span id="winbio_unit_id"></span><dl> <dt>**ID UNITÀ WINBIO \_ \_**</dt> </dl>                                                                                                                | Numero ID di un'unità biometrica.<br/>                                                   |
+| <span id="WINBIO_SESSION_HANDLE"></span><span id="winbio_session_handle"></span><dl> <dt>**HANDLE DI SESSIONE WINBIO \_ \_**</dt> </dl>                                                                                           | Oggetto non firmato long integer contenente l'handle per una sessione biometrica aperta.<br/> |
+| <span id="WINBIO_FRAMEWORK_HANDLE"></span><span id="winbio_framework_handle"></span><dl> <dt>**HANDLE DI \_ WINBIO FRAMEWORK \_**</dt> </dl>                                                                                     | Oggetto senza segno long integer che contiene l'handle per una sessione del framework aperta.<br/> |
+| <span id="WINBIO_UUID"></span><span id="winbio_uuid"></span><dl> <dt>**WINBIO \_ UUID**</dt> </dl>                                                                                                                          | Un valore GUID.<br/>                                                                          |
+| <span id="WINBIO_STRING"></span><span id="winbio_string"></span><dl> <dt>**STRINGA \_ WINBIO**</dt> </dl>                                                                                                                    | Matrice di byte contenente una stringa Unicode con terminazione Null.<br/>                     |
+| <span id="WINBIO_MAX_STRING_LEN_"></span><span id="winbio_max_string_len_"></span><dl> <dt>**WINBIO \_ NUMERO \_ MASSIMO \_ DI STRINGHE**</dt> </dl>                                                                                       | Lunghezza massima di un **valore WINBIO \_ STRING.** Attualmente è 256.<br/>         |
+| <span id="WINBIO_MAX_SAMPLE_BUFFER_SIZE"></span><span id="winbio_max_sample_buffer_size"></span><dl> <dt>**WINBIO \_ DIMENSIONI \_ MASSIME \_ BUFFER \_ DI**</dt> <dt>ESEMPIO 0x7FFFFFFF</dt> </dl> | Numero massimo di byte in un singolo data capture biometrico.<br/>                  |
 
 
 
@@ -51,9 +51,9 @@ In Windows Biometric Framework vengono utilizzate le costanti seguenti.
 
 | Requisito | Valore |
 |-------------------------------------|---------------------------------------------------------------------------------------------------------------|
-| Client minimo supportato<br/> | \[Solo app desktop di Windows 7\]<br/>                                                                    |
-| Server minimo supportato<br/> | Solo app desktop Windows Server 2008 R2 \[\]<br/>                                                       |
-| Intestazione<br/>                   | <dl> <dt>\_Tipi WinBio. h (includere WinBio. h)</dt> </dl> |
+| Client minimo supportato<br/> | Windows 7 \[ app desktop\]<br/>                                                                    |
+| Server minimo supportato<br/> | Windows Solo app desktop server 2008 R2 \[\]<br/>                                                       |
+| Intestazione<br/>                   | <dl> <dt>Winbio \_ types.h (include Winbio.h)</dt> </dl> |
 
 
 

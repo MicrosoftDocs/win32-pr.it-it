@@ -5,22 +5,22 @@ ms.tgt_platform: multiple
 title: Proprietà di SWbemSecurity
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 582df355954e3a2f548820d51df5233c53539720
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 8c0087d6f968db39febc33c04355c1af75388ad328edc03735e1a74b3987c839
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "106315719"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119503271"
 ---
 # <a name="swbemsecurity-properties"></a>Proprietà di SWbemSecurity
 
-L'oggetto [**SWbemSecurity**](swbemsecurity.md) espone le proprietà seguenti.
+[**L'oggetto SWbemSecurity**](swbemsecurity.md) espone le proprietà seguenti.
 
 ## <a name="in-this-section"></a>Contenuto della sezione
 
--   [**Proprietà AuthenticationLevel**](swbemsecurity-authenticationlevel.md)
--   [**Proprietà ImpersonationLevel**](swbemsecurity-impersonationlevel.md)
--   [**Proprietà Privileges**](swbemsecurity-privileges.md)
+-   [**AuthenticationLevel - proprietà**](swbemsecurity-authenticationlevel.md)
+-   [**ImpersonationLevel - proprietà**](swbemsecurity-impersonationlevel.md)
+-   [**Privileges - proprietà**](swbemsecurity-privileges.md)
 
  
 

@@ -1,11 +1,11 @@
 ---
-title: Proprietà TaskSettings. Enabled
-description: Per gli script, ottiene o imposta un valore booleano che indica che l'attività è abilitata. L'attività può essere eseguita solo quando questa impostazione è true.
+title: TaskSettings.Enabled - proprietà
+description: Per lo scripting, ottiene o imposta un valore booleano che indica che l'attività è abilitata. L'attività può essere eseguita solo quando questa impostazione è True.
 ms.assetid: af8aa237-3402-4a82-b6ef-b713e1757d3a
 keywords:
-- Utilità di pianificazione proprietà abilitata
-- Utilità di pianificazione proprietà Enabled, oggetto TaskSettings
-- Oggetto TaskSettings Utilità di pianificazione, proprietà Enabled
+- Impostazione delle proprietà abilitata Utilità di pianificazione
+- Proprietà Enabled Utilità di pianificazione, oggetto TaskSettings
+- Oggetto TaskSettings Utilità di pianificazione proprietà Enabled
 topic_type:
 - apiref
 api_name:
@@ -16,16 +16,16 @@ api_type:
 - COM
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 6805d7b754ac2c3553d5fde91826ffa192b91d97
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: 0e7853177aecae963e4899a67d2ba5b39d1eaebdc75e25ce6e14523963a70c45
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "104400748"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119738162"
 ---
-# <a name="tasksettingsenabled-property"></a>Proprietà TaskSettings. Enabled
+# <a name="tasksettingsenabled-property"></a>TaskSettings.Enabled - proprietà
 
-Per gli script, ottiene o imposta un valore booleano che indica che l'attività è abilitata. L'attività può essere eseguita solo quando questa impostazione è true.
+Per lo scripting, ottiene o imposta un valore booleano che indica che l'attività è abilitata. L'attività può essere eseguita solo quando questa impostazione è True.
 
 Si tratta di una proprietà di lettura/scrittura.
 
@@ -40,11 +40,11 @@ TaskSettings.Enabled As Boolean
 
 ## <a name="property-value"></a>Valore proprietà
 
-Se true, l'attività è abilitata. Se false, l'attività non è abilitata.
+Se True, l'attività è abilitata. Se False, l'attività non è abilitata.
 
 ## <a name="remarks"></a>Commenti
 
-Durante la lettura o la scrittura di codice XML per un'attività, questa impostazione viene specificata nell'elemento [**Enabled (settingsType)**](taskschedulerschema-enabled-settingstype-element.md) dello schema utilità di pianificazione.
+Durante la lettura o la scrittura di codice XML per un'attività, questa impostazione viene specificata nell'elemento [**Enabled (settingsType)**](taskschedulerschema-enabled-settingstype-element.md) dello schema Utilità di pianificazione.
 
 ## <a name="requirements"></a>Requisiti
 
@@ -52,9 +52,9 @@ Durante la lettura o la scrittura di codice XML per un'attività, questa imposta
 
 | Requisito | Valore |
 |-------------------------------------|-----------------------------------------------------------------------------------------|
-| Client minimo supportato<br/> | \[Solo app desktop di Windows Vista\]<br/>                                          |
-| Server minimo supportato<br/> | \[Solo app desktop Windows Server 2008\]<br/>                                    |
-| Libreria dei tipi<br/>             | <dl> <dt>Taskschd. tlb</dt> </dl> |
+| Client minimo supportato<br/> | Windows Solo \[ app desktop Vista\]<br/>                                          |
+| Server minimo supportato<br/> | Windows Solo app desktop di Server 2008 \[\]<br/>                                    |
+| Libreria dei tipi<br/>             | <dl> <dt>Taskschd.tlb</dt> </dl> |
 | DLL<br/>                      | <dl> <dt>Taskschd.dll</dt> </dl> |
 
 

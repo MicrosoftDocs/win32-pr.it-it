@@ -1,17 +1,17 @@
 ---
 description: Indica se il contenitore dell'endpoint di associazione del dispositivo supporta l'individuazione limitata.
 ms.assetid: e65c1b11-2222-4d15-aac1-5e034d3cfa3c
-title: System. Devices. AepContainer. SupportsLimitedDiscovery
+title: System.Devices.AepContainer.SupportsLimitedDiscovery
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 9181ec4ceb1c91cc12d6e1a1a81cc4c6a6ff8da0
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 3b8cc2147c5eee525d8e5fe91e24030dcdfbdbe78b986d579c90b7fd720e0473
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "106313512"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119775820"
 ---
-# <a name="systemdevicesaepcontainersupportslimiteddiscovery"></a>System. Devices. AepContainer. SupportsLimitedDiscovery
+# <a name="systemdevicesaepcontainersupportslimiteddiscovery"></a>System.Devices.AepContainer.SupportsLimitedDiscovery
 
 Indica se il contenitore dell'endpoint di associazione del dispositivo supporta l'individuazione limitata
 
@@ -33,13 +33,13 @@ propertyDescription
 
 ## <a name="remarks"></a>Commenti
 
-I valori PKEY sono definiti in Propkey. h.
+I valori PKEY sono definiti in Propkey.h.
 
 ## <a name="related-topics"></a>Argomenti correlati
 
 <dl> <dt>
 
-[propertyDescription](./propdesc-schema-propertydescription.md)
+[proprietàDescrizione](./propdesc-schema-propertydescription.md)
 </dt> <dt>
 
 [searchInfo](./propdesc-schema-searchinfo.md)
@@ -48,13 +48,13 @@ I valori PKEY sono definiti in Propkey. h.
 [labelInfo](./propdesc-schema-labelinfo.md)
 </dt> <dt>
 
-[typeInfo](./propdesc-schema-typeinfo.md)
+[Typeinfo](./propdesc-schema-typeinfo.md)
 </dt> <dt>
 
 [displayInfo](./propdesc-schema-displayinfo.md)
 </dt> <dt>
 
-[stringFormat](./propdesc-schema-stringformat.md)
+[Stringformat](./propdesc-schema-stringformat.md)
 </dt> <dt>
 
 [booleanFormat](./propdesc-schema-booleanformat.md)
@@ -63,13 +63,13 @@ I valori PKEY sono definiti in Propkey. h.
 [numberFormat](./propdesc-schema-numberformat.md)
 </dt> <dt>
 
-[dateTimeFormat](./propdesc-schema-datetimeformat.md)
+[Datetimeformat](./propdesc-schema-datetimeformat.md)
 </dt> <dt>
 
 [enumeratedList](./propdesc-schema-enumeratedlist.md)
 </dt> <dt>
 
-[drawControl](./propdesc-schema-drawcontrol.md)
+[DrawControl](./propdesc-schema-drawcontrol.md)
 </dt> <dt>
 
 [editControl](./propdesc-schema-editcontrol.md)

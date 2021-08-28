@@ -1,10 +1,10 @@
 ---
-description: Callback che notifica all'host gli errori restituiti dalla richiesta associata.
+description: Callback che notifica all'host degli errori restituiti dalla richiesta associata.
 MS-HAID: vspixengine.IPixErrorCallback\_ErrorListCallback\_DWORD\_Issue\_arr\_DWORD\_Issue\_arr
 MSHAttr:
 - PreferredSiteName:MSDN
 - PreferredLib:/library/windows/desktop
-title: 'Metodo IPixErrorCallback:: ErrorListCallback'
+title: Metodo IPixErrorCallback::ErrorListCallback
 ms.topic: reference
 ms.date: 05/31/2018
 ms.assetid: B345846D-4853-4F6B-AB79-42265720451D
@@ -17,16 +17,16 @@ api_location:
 topic_type:
 - APIRef
 - kbSyntax
-ms.openlocfilehash: 91754cd7db13165efcb66e9bc87b8e4661842fce
-ms.sourcegitcommit: a47bd86f517de76374e4fff33cfeb613eb259a7e
+ms.openlocfilehash: 32c8bb53e98ebaa31c758e50371c88534cfc074a
+ms.sourcegitcommit: c276a8912787b2cda74dcf54eb96df961bb1188b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/06/2021
-ms.locfileid: "106304300"
+ms.lasthandoff: 08/20/2021
+ms.locfileid: "122626367"
 ---
-# <a name="span-idvspixengineipixerrorcallback_errorlistcallback_dword_issue_arr_dword_issue_arrspanipixerrorcallbackerrorlistcallback-method"></a><span id="vspixengine.ipixerrorcallback_errorlistcallback_dword_issue_arr_dword_issue_arr"></span>Metodo IPixErrorCallback:: ErrorListCallback
+# <a name="span-idvspixengineipixerrorcallback_errorlistcallback_dword_issue_arr_dword_issue_arrspanipixerrorcallbackerrorlistcallback-method"></a><span id="vspixengine.ipixerrorcallback_errorlistcallback_dword_issue_arr_dword_issue_arr"></span>Metodo IPixErrorCallback::ErrorListCallback
 
-Callback che notifica all'host gli errori restituiti dalla richiesta associata.
+Callback che notifica all'host degli errori restituiti dalla richiesta associata.
 
 ## <a name="syntax"></a>Sintassi
 
@@ -42,25 +42,25 @@ HRESULT ErrorListCallback(
 
 ## <a name="parameters"></a>Parametri
 
-*conteggio*   
+*Conteggio*   
 Numero di errori.
 
-*\_errore count0*   
+*count0 \_ errorList*   
 Errori.
 
-*conteggio*   
+*Conteggio*   
 Numero di avvisi.
 
-*\_avviso count0*   
+*count0 \_ warningList*   
 Avvisi.
 
 ## <a name="return-value"></a>Valore restituito
 
-Se questo metodo ha esito positivo, restituisce **S \_ OK**. In caso contrario, restituisce un codice di errore **HRESULT** .
+Se questo metodo ha esito positivo, restituisce **S \_ OK**. In caso contrario, restituisce un **codice di errore HRESULT.**
 
 ## <a name="requirements"></a>Requisiti
 
-<table><colgroup><col style="width: 50%" /><col style="width: 50%" /></colgroup><tbody><tr class="odd"><td><p>Intestazione</p></td><td>Vspixengine. h</td></tr></tbody></table>
+<table><colgroup><col  /><col  /></colgroup><tbody><tr class="odd"><td><p>Intestazione</p></td><td>Vspixengine.h</td></tr></tbody></table>
 
 ## <a name="span-idsee_alsospansee-also"></a><span id="see_also"></span>Vedere anche
 

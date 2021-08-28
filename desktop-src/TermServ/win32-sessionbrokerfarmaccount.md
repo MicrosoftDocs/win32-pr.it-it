@@ -1,11 +1,11 @@
 ---
-title: Classe Win32_SessionBrokerFarmAccount
-description: La \_ classe Win32 SessionBrokerFarmAccount non è più disponibile per l'uso in Windows Server 2012. | Classe Win32_SessionBrokerFarmAccount
+title: Win32_SessionBrokerFarmAccount classe
+description: La classe \_ Win32 SessionBrokerFarmAccount non è più disponibile per l'uso a Windows Server 2012. | Win32_SessionBrokerFarmAccount classe
 ms.assetid: a76ade0f-cd94-438c-bc07-30dc4b4ee6c8
 ms.tgt_platform: multiple
 keywords:
-- Classe Win32_SessionBrokerFarmAccount Servizi Desktop remoto
-- Classe Win32_SessionBrokerFarmAccount Servizi Desktop remoto, descritta
+- Win32_SessionBrokerFarmAccount classe Servizi Desktop remoto
+- Win32_SessionBrokerFarmAccount classe Servizi Desktop remoto , descritto
 topic_type:
 - apiref
 api_name:
@@ -24,18 +24,18 @@ api_type:
 - DllExport
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: a31f076ddc6f9361be12a57dc60ada24ed75e4bb
-ms.sourcegitcommit: 92e74c99f8f4d097676959d0c317f533c2400a80
+ms.openlocfilehash: b8b7d55f973dc19c03182a4199b64f91f9de5a0774cc8c8f9d77d67eeb715c24
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/09/2021
-ms.locfileid: "103761849"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119422491"
 ---
-# <a name="win32_sessionbrokerfarmaccount-class"></a>Win32 \_ SessionBrokerFarmAccount (classe)
+# <a name="win32_sessionbrokerfarmaccount-class"></a>Classe \_ SessionBrokerFarmAccount Win32
 
-\[La classe **Win32 \_ SessionBrokerFarmAccount** non è più disponibile per l'uso in Windows Server 2012.\]
+\[La **classe \_ Win32 SessionBrokerFarmAccount** non è più disponibile per l'uso a Windows Server 2012.\]
 
-Definisce un account farm Broker di sessione.
+Definisce un account della farm del broker di sessione.
 
 La sintassi seguente è semplificata dal codice MOF (Managed Object Format) e include tutte le proprietà ereditate.
 
@@ -58,20 +58,20 @@ class Win32_SessionBrokerFarmAccount
 
 ## <a name="members"></a>Members
 
-La classe **Win32 \_ SessionBrokerFarmAccount** presenta questi tipi di membri:
+La **classe \_ Win32 SessionBrokerFarmAccount** include questi tipi di membri:
 
 -   [Metodi](#methods)
 -   [Proprietà](#properties)
 
 ### <a name="methods"></a>Metodi
 
-La classe **Win32 \_ SessionBrokerFarmAccount** presenta questi metodi.
+La **classe \_ Win32 SessionBrokerFarmAccount** dispone di questi metodi.
 
 
 
 | Metodo                                                      | Descrizione                          |
 |:------------------------------------------------------------|:-------------------------------------|
-| [**DeleteEx**](deleteex-win32-sessionbrokerfarmaccount.md) | Elimina l'account farm.<br/> |
+| [**DeleteEx**](deleteex-win32-sessionbrokerfarmaccount.md) | Elimina l'account della farm.<br/> |
 
 
 
@@ -79,111 +79,111 @@ La classe **Win32 \_ SessionBrokerFarmAccount** presenta questi metodi.
 
 ### <a name="properties"></a>Proprietà
 
-La classe **Win32 \_ SessionBrokerFarmAccount** dispone di queste proprietà.
+La **classe \_ Win32 SessionBrokerFarmAccount** ha queste proprietà.
 
 <dl> <dt>
 
 **AccountDomain**
 </dt> <dd> <dl> <dt>
 
-Tipo di dati: **String**
+Tipo di dati: **string**
 </dt> <dt>
 
-Tipo di accesso: lettura/scrittura
+Tipo di accesso: Lettura/scrittura
 </dt> </dl>
 
-Nome del dominio a cui appartiene l'account farm.
+Nome del dominio a cui appartiene l'account della farm.
 
 </dd> <dt>
 
 **AccountName**
 </dt> <dd> <dl> <dt>
 
-Tipo di dati: **String**
+Tipo di dati: **string**
 </dt> <dt>
 
-Tipo di accesso: lettura/scrittura
+Tipo di accesso: Lettura/scrittura
 </dt> </dl>
 
-Nome dell'account farm.
+Nome dell'account della farm.
 
 </dd> <dt>
 
 **AccountPassword**
 </dt> <dd> <dl> <dt>
 
-Tipo di dati: **String**
+Tipo di dati: **string**
 </dt> <dt>
 
-Tipo di accesso: lettura/scrittura
+Tipo di accesso: Lettura/scrittura
 </dt> </dl>
 
-Password dell'account farm.
+Password dell'account della farm.
 
 </dd> <dt>
 
 **AccountSPN1**
 </dt> <dd> <dl> <dt>
 
-Tipo di dati: **String**
+Tipo di dati: **string**
 </dt> <dt>
 
 Tipo di accesso: sola lettura
 </dt> </dl>
 
-Primo nome dell'entità servizio (SPN) associato all'account farm.
+Primo nome dell'entità servizio (SPN) associato all'account della farm.
 
 </dd> <dt>
 
 **AccountSPN2**
 </dt> <dd> <dl> <dt>
 
-Tipo di dati: **String**
+Tipo di dati: **string**
 </dt> <dt>
 
 Tipo di accesso: sola lettura
 </dt> </dl>
 
-Secondo SPN associato all'account della farm.
+Secondo nome SPN associato all'account della farm.
 
 </dd> <dt>
 
 **ComputerDNSName**
 </dt> <dd> <dl> <dt>
 
-Tipo di dati: **String**
+Tipo di dati: **string**
 </dt> <dt>
 
-Tipo di accesso: lettura/scrittura
+Tipo di accesso: Lettura/scrittura
 </dt> </dl>
 
 Nome DNS del computer associato all'account della farm.
 
 </dd> <dt>
 
-**Farmname**
+**FarmName**
 </dt> <dd> <dl> <dt>
 
-Tipo di dati: **String**
+Tipo di dati: **string**
 </dt> <dt>
 
 Tipo di accesso: sola lettura
 </dt> <dt>
 
-Qualificatori: [ **chiave**](/windows/desktop/WmiSdk/key-qualifier)
+Qualificatori: [ **key**](/windows/desktop/WmiSdk/key-qualifier)
 </dt> </dl>
 
-Nome della farm di broker di sessione.
+Nome della farm del broker di sessione.
 
 </dd> <dt>
 
 **Manuale**
 </dt> <dd> <dl> <dt>
 
-Tipo di dati: **Boolean**
+Tipo di dati: **booleano**
 </dt> <dt>
 
-Tipo di accesso: lettura/scrittura
+Tipo di accesso: Lettura/scrittura
 </dt> </dl>
 
 Indica se la password per l'account viene aggiornata manualmente.
@@ -201,7 +201,7 @@ Indica se la password per l'account viene aggiornata manualmente.
 | Fine del supporto client<br/>    | Nessuno supportato<br/>                                                              |
 | Fine del supporto server<br/>    | Windows Server 2008 R2<br/>                                                      |
 | Spazio dei nomi<br/>                | Radice \\ CIMv2 \\ TerminalServices<br/>                                               |
-| MOF<br/>                      | <dl> <dt>TssdWmi. mof</dt> </dl> |
+| MOF<br/>                      | <dl> <dt>TssdWmi.mof</dt> </dl> |
 | DLL<br/>                      | <dl> <dt>TssdWmi.dll</dt> </dl> |
 
 

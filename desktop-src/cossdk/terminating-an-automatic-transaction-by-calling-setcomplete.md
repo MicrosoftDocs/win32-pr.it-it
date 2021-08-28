@@ -1,23 +1,23 @@
 ---
-description: Terminazione di una transazione automatica mediante una chiamata a Tocomplete
+description: Terminazione di una transazione automatica chiamando SetComplete
 ms.assetid: 5bd06cfd-1ee0-48ac-84ab-3737d76bccc0
-title: Terminazione di una transazione automatica mediante una chiamata a Tocomplete
+title: Terminazione di una transazione automatica chiamando SetComplete
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: ba4bf09e631acf69a9b663d68d7eb82cfaa4490f
-ms.sourcegitcommit: c7add10d695482e1ceb72d62b8a4ebd84ea050f7
+ms.openlocfilehash: 5d1d84d18b45309d750864d514728b8e23a3326e5edeba0bf144105bcbaa4797
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "106304724"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119499661"
 ---
-# <a name="terminating-an-automatic-transaction-by-calling-setcomplete"></a>Terminazione di una transazione automatica mediante una chiamata a Tocomplete
+# <a name="terminating-an-automatic-transaction-by-calling-setcomplete"></a>Terminazione di una transazione automatica chiamando SetComplete
 
-Per utilizzare in modo efficace le transazioni automatiche, ogni componente transazionale deve indicare che ha completato il lavoro. Quando un'istanza dell'oggetto completa correttamente l'attività, deve impostare i flag coerenti e done su true chiamando il metodo [**IObjectContext:: Tocomplete**](/windows/desktop/api/ComSvcs/nf-comsvcs-iobjectcontext-setcomplete) , esposto tramite l'interfaccia [**IObjectContext**](/windows/desktop/api/ComSvcs/nn-comsvcs-iobjectcontext) e l'oggetto [**ObjectContext**](/windows/desktop/api/ComSvcs/nn-comsvcs-objectcontext) .
+Per utilizzare le transazioni automatiche in modo efficace, ogni componente transazionale deve indicare che ha completato il proprio lavoro. Quando un'istanza dell'oggetto completa correttamente l'attività, deve impostare i flag coerenti e completati su True chiamando il metodo [**IObjectContext::SetComplete,**](/windows/desktop/api/ComSvcs/nf-comsvcs-iobjectcontext-setcomplete) esposto tramite [**l'interfaccia IObjectContext**](/windows/desktop/api/ComSvcs/nn-comsvcs-iobjectcontext) e l'oggetto [**ObjectContext.**](/windows/desktop/api/ComSvcs/nn-comsvcs-objectcontext)
 
-Il modo più efficiente per completare una transazione automatica consiste nell'disattivare in modo esplicito l'oggetto radice utilizzando il metodo [**Tocomplete**](/windows/desktop/api/ComSvcs/nf-comsvcs-iobjectcontext-setcomplete) . Indicando in modo esplicito che un oggetto radice ha completato il proprio lavoro, è possibile ridurre la lunghezza della transazione.
+Il modo più efficiente per completare una transazione automatica è disattivare in modo esplicito l'oggetto radice usando il [**metodo SetComplete.**](/windows/desktop/api/ComSvcs/nf-comsvcs-iobjectcontext-setcomplete) Indicando in modo esplicito che un oggetto radice ha completato il lavoro, è possibile ridurre la lunghezza della transazione.
 
-Nell'esempio di Visual Basic seguente viene illustrato come indicare che un oggetto transazionale ha completato correttamente il proprio lavoro:
+Nell'Visual Basic seguente viene illustrato come indicare che un oggetto transazionale ha completato correttamente il lavoro:
 
 
 ```VB
@@ -39,7 +39,7 @@ End Sub
 
 <dl> <dt>
 
-[Flag coerenti e done](consistent-and-done-flags.md)
+[Flag coerenti e con completamento](consistent-and-done-flags.md)
 </dt> <dt>
 
 [Gestione delle transazioni automatiche in COM+](managing-automatic-transactions-in-com-.md)

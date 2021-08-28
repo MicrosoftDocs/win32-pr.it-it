@@ -4,16 +4,16 @@ description: Funzioni AVIFile
 ms.assetid: 89abf60a-1714-4836-93ae-a8a6bf2c24b6
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: dd1d424e12507a2ebf0d929f614c717de961e68f
-ms.sourcegitcommit: 2d531328b6ed82d4ad971a45a5131b430c5866f7
+ms.openlocfilehash: 20e71c6a7d01865162733df3de247ca7bb41f2d065c592060724a8e211922540
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "104471806"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "117989459"
 ---
 # <a name="avifile-functions"></a>Funzioni AVIFile
 
-Con AVIFile vengono usate le funzioni seguenti.
+Le funzioni seguenti vengono usate con AVIFile.
 
 -   [**AVIBuildFilter**](/windows/desktop/api/Vfw/nf-vfw-avibuildfiltera)
 -   [**AVIClearClipboard**](/windows/desktop/api/Vfw/nf-vfw-aviclearclipboard)
@@ -70,12 +70,12 @@ Con AVIFile vengono usate le funzioni seguenti.
 
 <dl> <dt>
 
-[Riferimento a AVIFile](avifile-reference.md)
+[Informazioni di riferimento su AVIFile](avifile-reference.md)
 </dt> </dl>
 
- 
+ 
 
- 
+ 
 
 
 

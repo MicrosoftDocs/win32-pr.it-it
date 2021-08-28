@@ -5,7 +5,7 @@ ms.assetid: 2d3b29af-0b6c-4405-8334-9a47a30ff6de
 keywords:
 - Metodo getStringCollectionByQuery Windows Media Player
 - Metodo getStringCollectionByQuery Windows Media Player, interfaccia IWMPMediaCollection2
-- Interfaccia IWMPMediaCollection2 Windows Media Player, metodo getStringCollectionByQuery
+- Interfaccia IWMPMediaCollection2 Windows Media Player metodo , getStringCollectionByQuery
 topic_type:
 - apiref
 api_name:
@@ -16,16 +16,16 @@ api_type:
 - COM
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 322781bc9ddec3e6f8d74d7229f16ce38e519f05
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: 054dd5b76cb6dcf3e6cb29ba624cd1f5c0f281d69c4b2b5e5125f5de9b4e7b04
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "106329063"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "117745969"
 ---
-# <a name="iwmpmediacollection2getstringcollectionbyquery-method"></a>Metodo IWMPMediaCollection2:: getStringCollectionByQuery
+# <a name="iwmpmediacollection2getstringcollectionbyquery-method"></a>Metodo IWMPMediaCollection2::getStringCollectionByQuery
 
-Il `getStringCollectionByQuery` metodo restituisce un'interfaccia **IWMPStringCollection** che consente di accedere al set di tutti i valori stringa per un attributo specificato che soddisfano le condizioni della query.
+Il `getStringCollectionByQuery` metodo restituisce **un'interfaccia IWMPStringCollection** che fornisce l'accesso al set di tutti i valori stringa per un attributo specificato che soddisfano le condizioni della query.
 
 ## <a name="syntax"></a>Sintassi
 
@@ -61,50 +61,50 @@ Implements IWMPMediaCollection2.getStringCollectionByQuery
 
 <dl> <dt>
 
-*bstrAttribute* \[ in\]
+*bstrAttribute* \[ Pollici\]
 </dt> <dd>
 
-**System. String** che rappresenta il nome dell'attributo.
+**System.String che** rappresenta il nome dell'attributo.
 
 </dd> <dt>
 
-*pQuery* \[ in\]
+*pQuery* \[ Pollici\]
 </dt> <dd>
 
-Interfaccia **wmplib. IWMPQuery** che rappresenta la query che definisce le condizioni utilizzate per recuperare la raccolta di stringhe.
+Interfaccia **WMPLib.IWMPQuery** che rappresenta la query che definisce le condizioni usate per recuperare la raccolta di stringhe.
 
 </dd> <dt>
 
-*bstrMediaType* \[ in\]
+*bstrMediaType* \[ Pollici\]
 </dt> <dd>
 
-**System. String** che rappresenta il tipo di supporto. Deve contenere uno dei valori seguenti: "audio", "video", "Photo", "playlist" o "other".
+**System.String che** rappresenta il tipo di supporto. Deve contenere uno dei valori seguenti: "audio", "video", "photo", "playlist" o "other".
 
 </dd> <dt>
 
-*bstrSortAttribute* \[ in\]
+*bstrSortAttribute* \[ Pollici\]
 </dt> <dd>
 
-**System. String** che rappresenta il nome dell'attributo utilizzato per l'ordinamento. Una stringa di lunghezza zero ("") indica che non viene applicato alcun ordinamento.
+**System.String che è il** nome dell'attributo usato per l'ordinamento. Una stringa di lunghezza zero ("") indica che non viene applicato alcun ordinamento.
 
 </dd> <dt>
 
-*fSortAscending* \[ in\]
+*fSortAscending* \[ Pollici\]
 </dt> <dd>
 
-Valore **System. Boolean** che indica se il set di valori di stringa deve essere ordinato in ordine crescente.
+Valore **System.Boolean** che indica se il set di valori stringa deve essere ordinato in ordine crescente.
 
 </dd> </dl>
 
 ## <a name="return-value"></a>Valore restituito
 
-Interfaccia **wmplib. IWMPStringCollection** per il set recuperato di valori stringa.
+Interfaccia **WMPLib.IWMPStringCollection per** il set recuperato di valori stringa.
 
 ## <a name="remarks"></a>Commenti
 
-Le query composte con **IWMPQuery** non fanno distinzione tra maiuscole e minuscole
+Le query composte che **usano IWMPQuery non** supportano la distinzione tra maiuscole e minuscole.
 
-Quando la query composta specificata dal parametro *pQuery* contiene una condizione compilata sull'attributo **mediaType** , tale condizione viene ignorata. Viene sempre usato il valore per il parametro *bstrMediaType* . Se, ad esempio, la query composta contiene la condizione "MediaType Equals audio" e il valore per il parametro *bstrMediaType* è "video", la playlist risultante conterrà solo elementi video.
+Quando la query composta specificata dal *parametro pQuery* contiene una condizione compilata in base all'attributo **MediaType,** tale condizione viene ignorata. Il valore per il *parametro bstrMediaType* viene sempre usato. Ad esempio, se la query composta contiene la condizione "MediaType Equals audio" e il valore per il *parametro bstrMediaType* è "video", la playlist risultante conterrà solo elementi video.
 
 ## <a name="requirements"></a>Requisiti
 

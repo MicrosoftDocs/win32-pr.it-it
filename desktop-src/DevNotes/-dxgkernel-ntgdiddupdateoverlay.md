@@ -1,7 +1,7 @@
 ---
 description: Riposiziona o modifica gli attributi visivi di una superficie di sovrapposizione.
 ms.assetid: 6d39166c-0efc-450d-adf4-9f4dfdf7c57f
-title: Funzione NtGdiDdUpdateOverlay (Ntgdi. h)
+title: Funzione NtGdiDdUpdateOverlay (Ntgdi.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -16,16 +16,16 @@ api_location:
 - Ext-MS-Win-GDI-Internal-Desktop-L1-1-0.dll
 - GDI32.dll
 - GDI32Full.dll
-ms.openlocfilehash: bbe610c27d83061bda0996ce9acc082efa95e3a7
-ms.sourcegitcommit: c7add10d695482e1ceb72d62b8a4ebd84ea050f7
+ms.openlocfilehash: c65e906529e8afa11f2a16a1171c1d4a7c31ae29bac70d8200997b7a7b88a131
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "103965937"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120108941"
 ---
-# <a name="ntgdiddupdateoverlay-function"></a>NtGdiDdUpdateOverlay (funzione)
+# <a name="ntgdiddupdateoverlay-function"></a>Funzione NtGdiDdUpdateOverlay
 
-\[Questa funzione è soggetta a modifiche a ogni revisione del sistema operativo. Usare invece Microsoft DirectDraw e Microsoft Direct3DAPIs; Queste API isolano le applicazioni da tali modifiche del sistema operativo e nascondono molte altre difficoltà legate all'interazione diretta con i driver di visualizzazione.\]
+\[Questa funzione è soggetta a modifiche con ogni revisione del sistema operativo. Usare invece Microsoft DirectDraw e Microsoft Direct3DAPIs. queste API isolano le applicazioni da tali modifiche del sistema operativo e nascondono molte altre difficoltà nell'interazione diretta con i driver di visualizzazione.\]
 
 Riposiziona o modifica gli attributi visivi di una superficie di sovrapposizione.
 
@@ -46,24 +46,24 @@ DWORD APIENTRY NtGdiDdUpdateOverlay(
 
 <dl> <dt>
 
-*hSurfaceDestination* \[ in\]
+*hSurfaceDestination* \[ Pollici\]
 </dt> <dd>
 
-Handle per l'oggetto DirectDraw in modalità kernel creato in precedenza.
+Handle all'oggetto DirectDraw in modalità kernel creato in precedenza.
 
 </dd> <dt>
 
-*hSurfaceSource* \[ in\]
+*hSurfaceSource* \[ Pollici\]
 </dt> <dd>
 
-Handle per una [**struttura \_ \_ locale della superficie DD**](/windows/win32/api/ddrawint/ns-ddrawint-dd_surface_local) che descrive la superficie della sovrimpressione.
+Handle a una [**struttura DD \_ SURFACE \_ LOCAL**](/windows/win32/api/ddrawint/ns-ddrawint-dd_surface_local) che descrive la superficie di sovrapposizione.
 
 </dd> <dt>
 
-*puUpdateOverlayData* \[ in uscita\]
+*puUpdateOverlayData* \[ in, out\]
 </dt> <dd>
 
-Puntatore a una struttura [**DD \_ UPDATEOVERLAYDATA**](/windows/win32/api/ddrawint/ns-ddrawint-dd_updateoverlaydata) che contiene le informazioni necessarie per aggiornare la sovrimpressione.
+Puntatore a [**una struttura DD \_ UPDATEOVERLAYDATA**](/windows/win32/api/ddrawint/ns-ddrawint-dd_updateoverlaydata) che contiene le informazioni necessarie per aggiornare la sovrimpressione.
 
 </dd> </dl>
 
@@ -75,8 +75,8 @@ Puntatore a una struttura [**DD \_ UPDATEOVERLAYDATA**](/windows/win32/api/ddraw
 
 | Codice restituito                                                                                              | Descrizione                                                                                                                                                                                                                                                                                                                                                                |
 |----------------------------------------------------------------------------------------------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| <dl> <dt>**\_driver DDHAL \_ gestito**</dt> </dl>    | Il driver ha eseguito l'operazione e ha restituito un codice restituito valido per l'operazione. Se il codice è DD \_ OK, DirectDraw o Direct3D procede con la funzione. In caso contrario, DirectDraw o Direct3D restituisce il codice di errore fornito dal driver e interrompe la funzione.<br/>                                                                                 |
-| <dl> <dt>**\_NOTHANDLED driver \_ DDHAL**</dt> </dl> | Il driver non ha commenti sull'operazione richiesta. Se è necessario che il driver implementi un particolare callback, DirectDraw o Direct3D segnala una condizione di errore. In caso contrario, DirectDraw o Direct3D gestisce l'operazione come se il callback del driver non fosse stato definito eseguendo l'implementazione di DirectDraw o Direct3D indipendente dal dispositivo.<br/> |
+| <dl> <dt>**DRIVER DDHAL \_ \_ GESTITO**</dt> </dl>    | Il driver ha eseguito l'operazione e ha restituito un codice restituito valido per tale operazione. Se questo codice è DD \_ OK, DirectDraw o Direct3D procede con la funzione . In caso contrario, DirectDraw o Direct3D restituisce il codice di errore fornito dal driver e interrompe la funzione.<br/>                                                                                 |
+| <dl> <dt>**DRIVER DDHAL \_ \_ NON GESTITO**</dt> </dl> | Il driver non ha alcun commento sull'operazione richiesta. Se è necessario che il driver abbia implementato un callback specifico, DirectDraw o Direct3D segnala una condizione di errore. In caso contrario, DirectDraw o Direct3D gestisce l'operazione come se il callback del driver non fosse stato definito eseguendo l'implementazione indipendente dal dispositivo DirectDraw o Direct3D.<br/> |
 
 
 
@@ -90,7 +90,7 @@ Puntatore a una struttura [**DD \_ UPDATEOVERLAYDATA**](/windows/win32/api/ddraw
 |-------------------------------------|------------------------------------------------------------------------------------|
 | Client minimo supportato<br/> | Windows 2000 Professional \[solo app desktop\]<br/>                         |
 | Server minimo supportato<br/> | Windows 2000 Server \[solo app desktop\]<br/>                               |
-| Intestazione<br/>                   | <dl> <dt>Ntgdi. h</dt> </dl> |
+| Intestazione<br/>                   | <dl> <dt>Ntgdi.h</dt> </dl> |
 
 
 
@@ -98,7 +98,7 @@ Puntatore a una struttura [**DD \_ UPDATEOVERLAYDATA**](/windows/win32/api/ddraw
 
 <dl> <dt>
 
-[Supporto client di livello inferiore grafica](-dxgkernel-low-level-client-support.md)
+[Supporto client di basso livello per grafica](-dxgkernel-low-level-client-support.md)
 </dt> </dl>
 
  

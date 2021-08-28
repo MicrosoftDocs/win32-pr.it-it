@@ -1,36 +1,36 @@
 ---
-title: Modalità di accesso all'archiviazione strutturata
-description: I meccanismi di controllo dell'accesso simultaneo a un oggetto, da parte di più processi e utenti, sono essenziali.
+title: Modalità di accesso Archiviazione strutturate
+description: I meccanismi per controllare l'accesso simultaneo a un oggetto, da parte di più processi e utenti, sono essenziali.
 ms.assetid: 2d524c2b-f2b4-49f2-9be8-2037846eb9e9
 keywords:
-- Archiviazione strutturata Strctd STG, nozioni fondamentali, funzioni API, flag per l'accesso
+- Structured Archiviazione Strctd Stg , nozioni fondamentali, funzioni API, flag per l'accesso
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: e2e46a231cb5168d15564f0b86b064c8bfd19e38
-ms.sourcegitcommit: 2d531328b6ed82d4ad971a45a5131b430c5866f7
+ms.openlocfilehash: 5b7d1dda6605bb16a8c2fd4897a2b10670eb0877f49090a4994a004a0fd6d411
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "106297843"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "117960085"
 ---
-# <a name="structured-storage-access-modes"></a>Modalità di accesso all'archiviazione strutturata
+# <a name="structured-storage-access-modes"></a>Modalità di accesso Archiviazione strutturate
 
-I meccanismi di controllo dell'accesso simultaneo a un oggetto, da parte di più processi e utenti, sono essenziali. COM fornisce questi meccanismi definendo le modalità di accesso per gli oggetti di archiviazione e di flusso. La modalità di accesso specificata per un oggetto di archiviazione padre viene ereditata dai relativi elementi figlio, sebbene sia possibile inserire restrizioni aggiuntive sul flusso o sull'archiviazione figlio. Un oggetto di archiviazione o flusso annidato può essere aperto nella stessa modalità o in una modalità più limitata rispetto a quello del relativo elemento padre, ma non può essere aperto in modalità meno limitata rispetto a quello del relativo padre.
+I meccanismi per controllare l'accesso simultaneo a un oggetto, da parte di più processi e utenti, sono essenziali. COM fornisce questi meccanismi definendo le modalità di accesso per gli oggetti di archiviazione e di flusso. La modalità di accesso specificata per un oggetto di archiviazione padre viene ereditata dai relativi elementi figlio, anche se è possibile applicare restrizioni aggiuntive all'archiviazione o al flusso figlio. Un oggetto di archiviazione o flusso annidato può essere aperto nella stessa modalità o in una modalità più limitata rispetto a quella dell'elemento padre, ma non può essere aperto in una modalità meno limitata rispetto a quella dell'elemento padre.
 
-Per specificare le modalità di accesso, è possibile usare i valori elencati in [**costanti STGM**](stgm-constants.md). Questi valori vengono usati come flag per essere passati come argomenti ai metodi nell'interfaccia [**IStorage**](/windows/desktop/api/Objidl/nn-objidl-istorage) e alle funzioni API associate. In genere, diversi flag vengono combinati nel parametro *grfMode*, usando un'operazione **o** un valore booleano.
+È possibile specificare le modalità di accesso usando i valori elencati in [**StGM Constants**](stgm-constants.md). Questi valori fungono da flag da passare come argomenti ai metodi [**nell'interfaccia IStorage**](/windows/desktop/api/Objidl/nn-objidl-istorage) e nelle funzioni API associate. In genere, diversi flag vengono combinati nel parametro *grfMode*, usando **un'operazione OR booleana.**
 
-I flag rientrano in sei gruppi. È possibile specificare solo un flag di ogni gruppo alla volta:
+I flag rientrano in sei gruppi. È possibile specificare un solo flag per volta per ogni gruppo:
 
 -   [Flag di transazione](transaction-flags.md)
--   [Flag di creazione archiviazione](storage-creation-flags.md)
+-   [Archiviazione Flag di creazione](storage-creation-flags.md)
 -   [Flag di creazione temporanei](temporary-creation-flags.md)
 -   [Flag di priorità](priority-flags.md)
 -   [Flag di autorizzazione di accesso](access-permission-flags.md)
 -   [Flag di accesso condiviso](shared-access-flags.md)
 
- 
+ 
 
- 
+ 
 
 
 

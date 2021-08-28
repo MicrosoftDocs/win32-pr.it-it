@@ -11,12 +11,12 @@ api_name: ''
 api_type:
 - NA
 api_location: ''
-ms.openlocfilehash: 69937ab8625e4abbde835929391b1f5e8ee6ccbc2143543a8d8e25760df8d254
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 13280fd5da109012ac90ff55a778f8f5cd6a5b95
+ms.sourcegitcommit: c276a8912787b2cda74dcf54eb96df961bb1188b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119117851"
+ms.lasthandoff: 08/20/2021
+ms.locfileid: "122627727"
 ---
 # <a name="operator--operators"></a>operator \* = operatori
 
@@ -28,19 +28,19 @@ Operatori di assegnazione di moltiplicazione
 
 <table>
 <colgroup>
-<col style="width: 50%" />
-<col style="width: 50%" />
+<col  />
+<col  />
 </colgroup>
 <thead>
 <tr class="header">
-<th style="text-align: left;">Operatore</th>
-<th style="text-align: left;">Descrizione</th>
+<th >Operatore</th>
+<th >Descrizione</th>
 </tr>
 </thead>
 <tbody>
 <tr class="odd">
-<td style="text-align: left;"><a href="/previous-versions/windows/desktop/legacy/ff729806(v=vs.85)"><strong>XMVECTOR::operator *= (XMVECTOR&,float)</strong></a></td>
-<td style="text-align: left;">Moltiplica <code>XMVECTOR</code> un'istanza per un valore a virgola mobile e restituisce un riferimento all'istanza aggiornata. <br/> Moltiplica ogni componente dell'istanza corrente del tipo di dati XMVECTOR per un valore a virgola mobile specificato, restituisce un riferimento <code>operator *=</code> all'istanza <a href="xmvector-data-type.md"><strong></strong></a> corrente aggiornata. <br/>
+<td ><a href="/previous-versions/windows/desktop/legacy/ff729806(v=vs.85)"><strong>XMVECTOR::operator *= (XMVECTOR&,float)</strong></a></td>
+<td >Moltiplica <code>XMVECTOR</code> un'istanza per un valore a virgola mobile e restituisce un riferimento all'istanza aggiornata. <br/> Moltiplica ogni componente dell'istanza corrente del tipo di dati XMVECTOR per un valore a virgola mobile specificato, restituisce un riferimento <code>operator *=</code> all'istanza <a href="xmvector-data-type.md"><strong></strong></a> corrente aggiornata. <br/>
 <blockquote>
 [!Note]<br />
 Questo operatore è disponibile solo in C++.
@@ -48,8 +48,8 @@ Questo operatore è disponibile solo in C++.
 <br/></td>
 </tr>
 <tr class="even">
-<td style="text-align: left;"><a href="/previous-versions/windows/desktop/legacy/ee421388(v=vs.85)"><strong>XMVECTOR::operator *= (XMVECTOR&,XMVECTOR)</strong></a></td>
-<td style="text-align: left;">Moltiplica <code>XMVECTOR</code> un'istanza per una seconda istanza, restituisce un riferimento all'istanza iniziale aggiornata. <br/> Moltiplica ogni componente dell'istanza corrente del tipo di dati <code>operator *=</code> <a href="xmvector-data-type.md"><strong>XMVECTOR</strong></a> per il componente corrispondente in una seconda istanza specificata di , restituisce un riferimento all'istanza <code>XMVECTOR</code> iniziale aggiornata. <br/>
+<td ><a href="/previous-versions/windows/desktop/legacy/ee421388(v=vs.85)"><strong>XMVECTOR::operator *= (XMVECTOR&,XMVECTOR)</strong></a></td>
+<td >Moltiplica <code>XMVECTOR</code> un'istanza per una seconda istanza, restituisce un riferimento all'istanza iniziale aggiornata. <br/> Moltiplica ogni componente dell'istanza corrente del tipo di dati <code>operator *=</code> <a href="xmvector-data-type.md"><strong>XMVECTOR</strong></a> per il componente corrispondente in una seconda istanza specificata di , restituisce un riferimento all'istanza <code>XMVECTOR</code> iniziale aggiornata. <br/>
 <blockquote>
 [!Note]<br />
 Questo operatore è disponibile solo in C++.
