@@ -1,23 +1,23 @@
 ---
-title: Visualizzatori libreria di tipi e strumenti di conversione
-description: Visualizzatori libreria di tipi e strumenti di conversione
+title: Visualizzatori libreria dei tipi e strumenti di conversione
+description: Visualizzatori libreria dei tipi e strumenti di conversione
 ms.assetid: 35c29e2c-3ee3-4e73-b925-6aa0ccb50a00
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 64bf4ac71b3c2c2ff9cc63b196485b9e0aaa4e13
-ms.sourcegitcommit: 2d531328b6ed82d4ad971a45a5131b430c5866f7
+ms.openlocfilehash: df1b0687769367edad4fd1c7325be943dfae74aae643789791396089cd6c6ea0
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "103708026"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118309007"
 ---
-# <a name="type-library-viewers-and-conversion-tools"></a>Visualizzatori libreria di tipi e strumenti di conversione
+# <a name="type-library-viewers-and-conversion-tools"></a>Visualizzatori libreria dei tipi e strumenti di conversione
 
-Le librerie dei tipi contengono la specifica per uno o più elementi COM, tra cui classi, interfacce, enumerazioni e altro ancora. Questi file vengono archiviati in un formato binario standard. Una libreria dei tipi può essere un file autonomo con estensione TLB oppure può essere archiviata come risorsa in un file eseguibile, che può avere un'estensione di file ocx, dll o exe. I visualizzatori della libreria dei tipi e gli strumenti di conversione descritti di seguito leggono questo formato per ottenere informazioni sugli elementi COM nella libreria.
+Le librerie dei tipi contengono la specifica per uno o più elementi COM, tra cui classi, interfacce, enumerazioni e altro ancora. Questi file vengono archiviati in un formato binario standard. Una libreria dei tipi può essere un file autonomo con estensione tlb oppure può essere archiviata come risorsa in un file eseguibile, che può avere estensione ocx, .dll o .exe. I visualizzatori della libreria dei tipi e gli strumenti di conversione descritti di seguito leggono questo formato per ottenere informazioni sugli elementi COM nella libreria.
 
-Prima di poter programmare un oggetto in un determinato linguaggio di programmazione, è necessario essere in grado di visualizzare la relativa libreria dei tipi in tale lingua. Questa operazione fornisce la sintassi corretta per classi, interfacce, metodi, proprietà ed eventi dell'oggetto COM.
+Prima di programmare un oggetto in un particolare linguaggio di programmazione, è necessario poter visualizzare la libreria dei tipi in tale linguaggio. In questo modo è possibile utilizzare la sintassi appropriata per classi, interfacce, metodi, proprietà ed eventi dell'oggetto COM.
 
-I prodotti di sviluppo Microsoft forniscono gli strumenti seguenti che è possibile usare per generare, estrarre e visualizzare le informazioni sulla libreria dei tipi.
+I prodotti di sviluppo Microsoft offrono gli strumenti seguenti che è possibile usare per generare, estrarre e visualizzare informazioni sulla libreria dei tipi.
 
 ## <a name="c"></a>C++
 
@@ -31,15 +31,15 @@ I prodotti di sviluppo Microsoft forniscono gli strumenti seguenti che è possib
 
 ## <a name="java"></a>Java
 
--   [JActiveX](jactivex-command-line-tool.md)
--   [Creazione guidata libreria di tipi Java](java-type-library-wizard.md)
--   [JavaTLB](javatlb-command-line-tool.md)
+-   [Jactivex](jactivex-command-line-tool.md)
+-   [Creazione guidata libreria dei tipi Java](java-type-library-wizard.md)
+-   [Javatlb](javatlb-command-line-tool.md)
 
-Per una panoramica del modo in cui questi strumenti interagiscono con le librerie dei tipi, vedere [come strumenti di sviluppo usare le librerie dei tipi](how-developer-tools-use-type-libraries.md).
+Per una panoramica dell'interazione di questi strumenti con le librerie dei tipi, [vedere Come Strumenti di sviluppo le librerie dei tipi.](how-developer-tools-use-type-libraries.md)
 
- 
+ 
 
- 
+ 
 
 
 

@@ -1,5 +1,5 @@
 ---
-description: 'Altre informazioni: Funzione JetRetrieveKey'
+description: 'Altre informazioni su: Funzione JetRetrieveKey'
 title: Funzione JetRetrieveKey
 TOCTitle: JetRetrieveKey Function
 ms:assetid: a96d0a7c-f1db-48bc-807d-4e6357aec726
@@ -18,12 +18,12 @@ api_type:
 api_location:
 - ESENT.DLL
 ROBOTS: INDEX,FOLLOW
-ms.openlocfilehash: 65925ce2425dcf717b7db94f5b83ca48a68c8f31
-ms.sourcegitcommit: 9b5faa61c38b2d0c432b7f2dbee8c127b0e28a7e
+ms.openlocfilehash: 938cc8161326afaa9d0d5b3bf905bf976e850b40
+ms.sourcegitcommit: 4665ebce0c106bdb52eef36e544280b496b6f50b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/19/2021
-ms.locfileid: "122466221"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "122985594"
 ---
 # <a name="jetretrievekey-function"></a>Funzione JetRetrieveKey
 
@@ -76,15 +76,15 @@ Se il buffer di output è troppo piccolo, verranno comunque restituite le dimens
 Gruppo di bit che contengono le opzioni da utilizzare per questa chiamata, che includono zero o più delle opzioni seguenti.
 
 
-| <p>valore</p> | <p>Significato</p> | 
+| <p>Valore</p> | <p>Significato</p> | 
 |--------------|----------------|
-| <p>JET_bitRetrieveCopy</p> | <p>Se specificato, il motore restituirà la chiave di ricerca per il cursore. La chiave di ricerca viene creata usando una o più chiamate precedenti a <a href="gg269329(v=exchg.10).md">JetMakeKey</a> allo scopo di cercare tale chiave usando <a href="gg294103(v=exchg.10).md">JetSeek</a> o impostando un intervallo di indici tramite <a href="gg294112(v=exchg.10).md">JetSetIndexRange</a>.</p> | 
+| <p>JET_bitRetrieveCopy</p> | <p>Se specificato, il motore restituirà la chiave di ricerca per il cursore. La chiave di ricerca viene creata usando una o più chiamate precedenti a <a href="gg269329(v=exchg.10).md">JetMakeKey</a> allo scopo di cercare tale chiave usando <a href="gg294103(v=exchg.10).md">JetSeek</a> o impostando un intervallo di indici usando <a href="gg294112(v=exchg.10).md">JetSetIndexRange</a>.</p> | 
 
 
 
 ### <a name="return-value"></a>Valore restituito
 
-Questa funzione restituisce il [JET_ERR](./jet-err.md) dati con uno dei codici restituiti seguenti. Per altre informazioni sui possibili errori ESE, vedere Errori del [motore Archiviazione estendibile](./extensible-storage-engine-errors.md) e Parametri [di gestione degli errori](./error-handling-parameters.md).
+Questa funzione restituisce il [JET_ERR](./jet-err.md) dati con uno dei codici restituiti seguenti. Per altre informazioni sui possibili errori ESE, vedere Errori del [motore di Archiviazione](./extensible-storage-engine-errors.md) estendibile e Parametri di gestione degli [errori](./error-handling-parameters.md).
 
 
 | <p>Codice restituito</p> | <p>Descrizione</p> | 
@@ -92,13 +92,13 @@ Questa funzione restituisce il [JET_ERR](./jet-err.md) dati con uno dei codici r
 | <p>JET_errSuccess</p> | <p>Operazione riuscita.</p> | 
 | <p>JET_errClientRequestToStopJetService</p> | <p>Non è possibile completare l'operazione perché tutte le attività nell'istanza associata alla sessione sono cesse a causa di una chiamata a <a href="gg269240(v=exchg.10).md">JetStopService.</a></p> | 
 | <p>JET_errInstanceUnavailable</p> | <p>Non è possibile completare l'operazione perché l'istanza associata alla sessione ha rilevato un errore irreversibile che richiede la revoca dell'accesso a tutti i dati per proteggere l'integrità di questi dati. Questo errore verrà restituito solo da Windows XP e versioni successive.</p> | 
-| <p>JET_errKeyNotMade</p> | <p>Non esiste alcuna chiave di ricerca corrente per il cursore. Questa operazione si verifica <strong>per JetRetrieveKey</strong> se JET_bitRetrieveCopy specificato e non è stata costruita una chiave di ricerca per questo cursore usando una chiamata precedente a <a href="gg269329(v=exchg.10).md">JetMakeKey</a>. La chiave di ricerca verrà eliminata da una chiamata precedente a qualsiasi API di navigazione sul cursore diverso <a href="gg294117(v=exchg.10).md">da JetMove</a>.</p> | 
+| <p>JET_errKeyNotMade</p> | <p>Non esiste alcuna chiave di ricerca corrente per il cursore. Ciò si verifica per <strong>JetRetrieveKey</strong> se JET_bitRetrieveCopy specificato e non è stata costruita una chiave di ricerca per questo cursore usando una chiamata precedente a <a href="gg269329(v=exchg.10).md">JetMakeKey</a>. La chiave di ricerca verrà eliminata da una chiamata precedente a qualsiasi API di navigazione sul cursore diverso <a href="gg294117(v=exchg.10).md">da JetMove</a>.</p> | 
 | <p>JET_errNoCurrentRecord</p> | <p>Il cursore non è posizionato su un record. I motivi possono essere diversi. Ad esempio, ciò si verifica se il cursore è attualmente posizionato dopo l'ultimo record nell'indice corrente.</p> | 
 | <p>JET_errNotInitialized</p> | <p>Non è possibile completare l'operazione perché l'istanza associata alla sessione non è ancora stata inizializzata.</p> | 
 | <p>JET_errRestoreInProgress</p> | <p>Non è possibile completare l'operazione perché è in corso un'operazione di ripristino nell'istanza associata alla sessione.</p> | 
 | <p>JET_errSessionSharingViolation</p> | <p>La stessa sessione non può essere usata per più thread contemporaneamente. Questo errore verrà restituito solo da Windows XP e versioni successive.</p> | 
 | <p>JET_errTermInProgress</p> | <p>Non è possibile completare l'operazione perché è in corso l'arresto dell'istanza associata alla sessione.</p> | 
-| <p>JET_wrnBufferTruncated</p> | <p>L'operazione è stata completata correttamente, ma il buffer di output era troppo piccolo per ricevere l'intera chiave. Il buffer di output è stato riempito con la maggior parte della chiave adatta. Se richiesto, sono state restituite anche le dimensioni effettive della chiave.</p><p><strong>Nota:</strong>   Questo errore non verrà restituito se JET_bitRetrieveCopy specificato. Per altre informazioni, vedere la sezione Osservazioni.</p> | 
+| <p>JET_wrnBufferTruncated</p> | <p>L'operazione è stata completata correttamente, ma il buffer di output era troppo piccolo per ricevere l'intera chiave. Il buffer di output è stato riempito con la maggior parte della chiave adatta. Se richiesto, sono state restituite anche le dimensioni effettive della chiave.</p><p><strong>Nota</strong>   Questo errore non verrà restituito se JET_bitRetrieveCopy specificato. Per altre informazioni, vedere la sezione Osservazioni.</p> | 
 
 
 
@@ -123,7 +123,13 @@ In questa API è presente un bug importante in tutte le versioni. Se la chiave d
 #### <a name="requirements"></a>Requisiti
 
 
-| | | <p><strong>Client</strong></p> | <p>Richiede Windows Vista, Windows XP o Windows 2000 Professional.</p> | | <p><strong>Server</strong></p> | <p>Richiede Windows Server 2008, Windows Server 2003 o Windows 2000 Server.</p> | | <p><strong>Intestazione</strong></p> | <p>Dichiarato in Esent.h.</p> | | <p><strong>Libreria</strong></p> | <p>Usare ESENT.lib.</p> | | <p><strong>DLL</strong></p> | <p>Richiede ESENT.dll.</p> | 
+| Requisito | Valore |
+|------------|----------|
+| <p><strong>Client</strong></p> | <p>Richiede Windows Vista, Windows XP o Windows 2000 Professional.</p> | 
+| <p><strong>Server</strong></p> | <p>Richiede Windows Server 2008, Windows Server 2003 o Windows 2000 Server.</p> | 
+| <p><strong>Intestazione</strong></p> | <p>Dichiarato in Esent.h.</p> | 
+| <p><strong>Libreria</strong></p> | <p>Usare ESENT.lib.</p> | 
+| <p><strong>DLL</strong></p> | <p>Richiede ESENT.dll.</p> | 
 
 
 

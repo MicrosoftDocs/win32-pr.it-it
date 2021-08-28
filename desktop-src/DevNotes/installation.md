@@ -4,12 +4,12 @@ ms.assetid: 02A7866F-0F72-4437-A882-EEE9C2E28EC7
 title: Installazione (note per gli sviluppatori)
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 47597613da49fdffb3cb0b70b09dfb490e021cad
-ms.sourcegitcommit: 6fc8a7419bd01787cf6a1c52c355a4a2d1aec471
+ms.openlocfilehash: 161019342bdacf6587f35e4bfe4e5aa82317e41e9cbde90c5560c276753089ee
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/10/2021
-ms.locfileid: "111989276"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120001811"
 ---
 # <a name="installation-developer-notes"></a>Installazione (note per gli sviluppatori)
 

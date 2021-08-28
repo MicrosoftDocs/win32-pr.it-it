@@ -14,18 +14,18 @@ api_type:
 - Schema
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 3a5d501cd8b34a8d1c391a75d9caa8243db8e3a94088a898b0c2b7672b2d0aab
-ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
+ms.openlocfilehash: 0c0c295f8343ad7bc5224800988b43d25e05133b
+ms.sourcegitcommit: 61a4c522182aa1cacbf5669683d9570a3bf043b2
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119656631"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "122880677"
 ---
 # <a name="ds-heuristics-attribute"></a>DS-Heuristics attributo
 
 Contiene le impostazioni globali per l'intera foresta.
 
-Sono disponibili informazioni sui bit di esclusione adminSDholder nel sito Web Guida e supporto tecnico Microsoft in un numero di articolo 817433, Le autorizzazioni delegate non sono disponibili e l'ereditarietà viene [disabilitata automaticamente.](https://support.microsoft.com/default.aspx?scid=kb;EN-US;817433)
+Sono disponibili informazioni sui bit di esclusione adminSDholder nel sito Web Guida e supporto tecnico Microsoft in un numero di articolo 817433, Autorizzazioni delegate non disponibili e ereditarietà [disabilitata automaticamente.](https://support.microsoft.com/default.aspx?scid=kb;EN-US;817433)
 
 
 
@@ -46,7 +46,7 @@ Sono disponibili informazioni sui bit di esclusione adminSDholder nel sito Web G
 
 -   [**Windows 2000 Server**](#windows-2000-server)
 -   [**Windows Server 2003**](#windows-server-2003)
--   [**Adam**](#adam)
+-   [**ADAM**](#adam)
 -   [**Windows Server 2003 R2**](#windows-server-2003-r2)
 -   [**Windows Server 2008**](#windows-server-2008)
 -   [**Windows Server 2008 R2**](#windows-server-2008-r2)
@@ -94,7 +94,7 @@ Sono disponibili informazioni sui bit di esclusione adminSDholder nel sito Web G
 
 
 
-## <a name="adam"></a>Adam
+## <a name="adam"></a>ADAM
 
 
 
@@ -124,7 +124,7 @@ Sono disponibili informazioni sui bit di esclusione adminSDholder nel sito Web G
 | ID collegamento                | \-                                               |
 | MAPI-Id                | \-                                               |
 | System-Only            | Falso                                            |
-| Is-Single-Valued       | Vero                                             |
+| A valore singolo       | Vero                                             |
 | Indicizzato             | Falso                                            |
 | Nel catalogo globale      | Falso                                            |
 | NT-Security-Descriptor | O:BAG:BAD:S:                                     |
@@ -145,7 +145,7 @@ Sono disponibili informazioni sui bit di esclusione adminSDholder nel sito Web G
 | ID collegamento                | \-                                               |
 | MAPI-Id                | \-                                               |
 | System-Only            | Falso                                            |
-| Is-Single-Valued       | Vero                                             |
+| A valore singolo       | Vero                                             |
 | Indicizzato             | Falso                                            |
 | Nel catalogo globale      | Falso                                            |
 | NT-Security-Descriptor | O:BAG:BAD:S:                                     |
@@ -166,7 +166,7 @@ Sono disponibili informazioni sui bit di esclusione adminSDholder nel sito Web G
 | ID collegamento                | \-                                               |
 | MAPI-Id                | \-                                               |
 | System-Only            | Falso                                            |
-| Is-Single-Valued       | Vero                                             |
+| A valore singolo       | Vero                                             |
 | Indicizzato             | Falso                                            |
 | Nel catalogo globale      | Falso                                            |
 | NT-Security-Descriptor | O:BAG:BAD:S:                                     |
@@ -187,7 +187,7 @@ Sono disponibili informazioni sui bit di esclusione adminSDholder nel sito Web G
 | ID collegamento                | \-                                               |
 | MAPI-Id                | \-                                               |
 | System-Only            | Falso                                            |
-| Is-Single-Valued       | Vero                                             |
+| A valore singolo       | Vero                                             |
 | Indicizzato             | Falso                                            |
 | Nel catalogo globale      | Falso                                            |
 | NT-Security-Descriptor | O:BAG:BAD:S:                                     |
@@ -201,7 +201,7 @@ Sono disponibili informazioni sui bit di esclusione adminSDholder nel sito Web G
 
 ## <a name="remarks"></a>Commenti
 
-Ogni foresta Active Directory contiene un attributo DS-Heuristics che contiene le impostazioni per l'intera foresta. LDS-Heuristics attributo è un attributo dell'oggetto "CN=Directory Service,CN=Windows NT,CN=Services,CN=Configuration". <Domain>
+Ogni foresta Active Directory contiene un attributo DS-Heuristics che contiene le impostazioni per l'intera foresta. LDS-Heuristics attributo è un attributo dell'oggetto "CN=Directory Service,CN=Windows NT,CN=Services,CN=Configuration, &lt; &gt; Domain".
 
 DS-Heuristics è una stringa Unicode in cui ogni carattere contiene un valore per una singola impostazione a livello di dominio. La DS-Heuristics stringa ha il formato seguente.
 
@@ -213,13 +213,13 @@ Per fornire la convalida dei dati, ogni decimo carattere viene impostato sul num
 
 Si presuppone che qualsiasi carattere non impostato sia "0". Se lDS-Heuristics'attributo non è impostato, si presuppone che tutti i valori siano "0". Attualmente sono in uso 25 caratteri e non è necessario riempire la stringa per riempire tutti i 25 caratteri. Ad esempio, se il carattere più alto usato è 7, la stringa "0000002" è accettabile.
 
-Per informazioni dettagliate su ogni carattere, vedere [dSHeuristics in \[ MS-ADTS \] Active Directory Technical Specification](/openspecs/windows_protocols/ms-adts/e5899be4-862e-496f-9a38-33950617d2c5).
+Per informazioni dettagliate su ogni carattere, [vedere dSHeuristics in \[ MS-ADTS \] Active Directory Technical Specification](/openspecs/windows_protocols/ms-adts/e5899be4-862e-496f-9a38-33950617d2c5).
 
 ### <a name="anr-search-filters"></a>Filtri di ricerca ANR
 
-I caratteri 1, 2 e 4 vengono usati per modificare il comportamento dei filtri di ricerca ANR. Se il carattere 1 è impostato su "1", l'espansione del filtro ANR per includere il cognome **GivenName**(quando viene trovato  -   spazio) è disabilitata. Se il carattere 2 è impostato su "1", l'espansione del filtro ANR per includere **cognome**  -  **GivenName** è disabilitata. Se nella stringa di ricerca è presente uno spazio incorporato, la stringa di ricerca verrà in genere suddivisa in due stringhe, che vengono confrontate a coppie con gli **attributi GivenName** e **Surname.** L'impostazione dei caratteri 1 e 2 su "1" impedirà il tentativo di corrispondenza. Questa corrispondenza potrebbe essere disabilitata se l'amministratore è sicuro che la ricerca di "Jeff Smith" venga sempre specificata come "jeff smith" e non come "smith, jeff". In genere viene eliminata solo una o l'altra corrispondenza, in base alla convenzione locale.
+I caratteri 1, 2 e 4 vengono usati per modificare il comportamento dei filtri di ricerca ANR. Se il carattere 1 è impostato su "1", l'espansione del filtro ANR per includere cognome **GivenName**(quando viene trovato  -   spazio) è disabilitata. Se il carattere 2 è impostato su "1", l'espansione del filtro ANR per includere **cognome**  -  **GivenName** è disabilitata. Se nella stringa di ricerca è presente uno spazio incorporato, la stringa di ricerca verrà in genere divisa in due stringhe, che vengono confrontate a coppie con gli attributi **GivenName** e **Surname.** L'impostazione dei caratteri 1 e 2 su "1" impedirà il tentativo di corrispondenza. Questa corrispondenza potrebbe essere disabilitata se l'amministratore è certo che le ricerche di "Jeff Smith" verrebbero sempre fornite come "jeff smith" e non come "smith, jeff". In genere viene eliminata solo una o l'altra corrispondenza, in base alla convenzione locale.
 
-Se il carattere 4 è impostato su "1", Active Directory eseguirà la "risoluzione dei nomi alternativi preventiva". In altre termini, se la stringa di ricerca corrisponde esattamente al nome alternativo di esattamente un oggetto nell'ambito di ricerca, viene restituito un oggetto come risultato della ricerca e il resto di ANR viene ignorato. Si noti che mentre il resto della ricerca ANR è disponibile tramite LDAP, la risoluzione dei nomi alternativi preventiva (nota anche come "snap soprannome") è disponibile solo tramite MAPI.
+Se il carattere 4 è impostato su "1", Active Directory eseguirà la "risoluzione dei nomi alternativi preventiva". Ciò significa che se la stringa di ricerca corrisponde esattamente al nome alternativo di un oggetto nell'ambito di ricerca, tale oggetto viene restituito come risultato della ricerca e il resto di ANR viene ignorato. Si noti che mentre il resto della ricerca ANR è disponibile tramite LDAP, la risoluzione dei nomi alternativi preventiva (nota anche come "snap soprannome") è disponibile solo tramite MAPI.
 
 ## <a name="see-also"></a>Vedi anche
 

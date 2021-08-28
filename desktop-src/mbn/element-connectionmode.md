@@ -7,12 +7,12 @@ MSHAttr:
 title: ConnectionMode
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: d69d8b7118f5e46a5923dfdcf783471be2488e45
-ms.sourcegitcommit: 9b5faa61c38b2d0c432b7f2dbee8c127b0e28a7e
+ms.openlocfilehash: 55af96a96bfae012e77093688cf8665c3763fb65
+ms.sourcegitcommit: 61a4c522182aa1cacbf5669683d9570a3bf043b2
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/19/2021
-ms.locfileid: "122465018"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "122879911"
 ---
 # <a name="span-idwwan_profile_v4element_connectionmodespanconnectionmode"></a><span id="WWAN_profile_v4.element_ConnectionMode"></span>ConnectionMode
 
@@ -22,8 +22,8 @@ Per altre informazioni, vedere la documentazione relativa all'elemento [**Connec
 
 ## <a name="element-hierarchy"></a>Gerarchia degli elementi
 
-[<MBNProfileExt>](element-mbnprofileext.md)  
-**<ConnectionMode>**
+[&lt;MBNProfileExt&gt;](element-mbnprofileext.md)  
+**&lt;ConnectionMode&gt;**
 
 ## <a name="syntax"></a>Sintassi
 

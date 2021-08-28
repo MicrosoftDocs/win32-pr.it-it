@@ -18,12 +18,12 @@ api_type:
 api_location:
 - ESENT.DLL
 ROBOTS: INDEX,FOLLOW
-ms.openlocfilehash: c0b5d3410ddb7f4210317508739b4f7dd00dd592
-ms.sourcegitcommit: 9b5faa61c38b2d0c432b7f2dbee8c127b0e28a7e
+ms.openlocfilehash: e6c26aa69f1ac51cdd9d70ca93c4fc42df5356ee
+ms.sourcegitcommit: 4665ebce0c106bdb52eef36e544280b496b6f50b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/19/2021
-ms.locfileid: "122470777"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "122987664"
 ---
 # <a name="jetgetcursorinfo-function"></a>Funzione JetGetCursorInfo
 
@@ -68,7 +68,7 @@ Deve essere impostato su 0 (zero), in caso contrario non usato. È presente per 
 
 ### <a name="return-value"></a>Valore restituito
 
-Questa funzione restituisce il [JET_ERR](./jet-err.md) dati con uno dei codici restituiti seguenti. Per altre informazioni sui possibili errori ESE, vedere Errori del [motore Archiviazione estendibile](./extensible-storage-engine-errors.md) e Parametri [di gestione degli errori](./error-handling-parameters.md).
+Questa funzione restituisce il [JET_ERR](./jet-err.md) dati con uno dei codici restituiti seguenti. Per altre informazioni sui possibili errori ESE, vedere Errori del [motore di Archiviazione](./extensible-storage-engine-errors.md) estendibile e Parametri di gestione degli [errori](./error-handling-parameters.md).
 
 
 | <p>Codice restituito</p> | <p>Descrizione</p> | 
@@ -82,7 +82,7 @@ Questa funzione restituisce il [JET_ERR](./jet-err.md) dati con uno dei codici r
 | <p>JET_errRestoreInProgress</p> | <p>Non è possibile completare l'operazione perché è in corso un'operazione di ripristino nell'istanza associata alla sessione.</p> | 
 | <p>JET_errSessionSharingViolation</p> | <p>La stessa sessione non può essere usata per più thread contemporaneamente. Questo errore verrà restituito solo da Windows XP e versioni successive.</p> | 
 | <p>JET_errTermInProgress</p> | <p>Non è possibile completare l'operazione perché è in corso l'arresto dell'istanza associata alla sessione.</p> | 
-| <p>JET_errWriteConflict</p> | <p>Il record corrente del cursore è stato aggiornato da un'altra sessione e un aggiornamento di questo record da parte di questa sessione causa un conflitto di scrittura.</p> | 
+| <p>JET_errWriteConflict</p> | <p>Il record corrente del cursore è stato aggiornato da un'altra sessione e un aggiornamento di questo record da parte di questa sessione comporta un conflitto di scrittura.</p> | 
 
 
 
@@ -92,12 +92,18 @@ In caso di errore, se viene restituito un codice di errore negativo, il cursore 
 
 #### <a name="remarks"></a>Commenti
 
-Questa operazione non influisce sullo stato del cursore o dei dati. Restituisce solo un codice di errore che indica se un aggiornamento al record corrente da parte della sessione chiamante ha come risultato un JET_errWriteConflict o è sconosciuto per restituire JET_errWriteConflict. Se un'altra sessione ha già aggiornato questo record per usarlo, è certo che un aggiornamento di questo record da parte di questa sessione comporta un conflitto di scrittura. Ciò sarà vero fino a quando questa sessione non esegue il commit o il rollback delle transazioni a livello di transazione 0 (zero). Tuttavia, se **JetGetCursorInfo** restituisce JET_errSuccess, è comunque possibile che un'altra sessione aggiornerà questo record prima della sessione corrente e pertanto è comunque possibile che un aggiornamento del record corrente da parte di questa sessione nella transazione corrente restituisca un conflitto di scrittura.
+Questa operazione non influisce sullo stato del cursore o dei dati. Restituisce solo un codice di errore che indica se è noto che un aggiornamento al record corrente da parte della sessione chiamante ha come risultato un JET_errWriteConflict o è sconosciuto per restituire JET_errWriteConflict. Se un'altra sessione ha già aggiornato questo record per usarlo, è certo che un aggiornamento di questo record da parte di questa sessione comporta un conflitto di scrittura. Ciò sarà vero fino a quando questa sessione non esegue il commit o il rollback delle transazioni a livello di transazione 0 (zero). Tuttavia, se **JetGetCursorInfo** restituisce JET_errSuccess, è comunque possibile che un'altra sessione aggiornerà questo record prima della sessione corrente e pertanto è comunque possibile che un aggiornamento del record corrente da parte di questa sessione nella transazione corrente restituisca un conflitto di scrittura.
 
 #### <a name="requirements"></a>Requisiti
 
 
-| | | <p><strong>Client</strong></p> | <p>Richiede Windows Vista, Windows XP o Windows 2000 Professional.</p> | | <p><strong>Server</strong></p> | <p>Richiede Windows Server 2008, Windows Server 2003 o Windows 2000 Server.</p> | | <p><strong>Intestazione</strong></p> | <p>Dichiarato in Esent.h.</p> | | <p><strong>Libreria</strong></p> | <p>Usare ESENT.lib.</p> | | <p><strong>DLL</strong></p> | <p>Richiede ESENT.dll.</p> | 
+| Requisito | Valore |
+|------------|----------|
+| <p><strong>Client</strong></p> | <p>Richiede Windows Vista, Windows XP o Windows 2000 Professional.</p> | 
+| <p><strong>Server</strong></p> | <p>Richiede Windows Server 2008, Windows Server 2003 o Windows 2000 Server.</p> | 
+| <p><strong>Intestazione</strong></p> | <p>Dichiarato in Esent.h.</p> | 
+| <p><strong>Libreria</strong></p> | <p>Usare ESENT.lib.</p> | 
+| <p><strong>DLL</strong></p> | <p>Richiede ESENT.dll.</p> | 
 
 
 

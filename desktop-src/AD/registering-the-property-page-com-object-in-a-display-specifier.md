@@ -1,52 +1,52 @@
 ---
 title: Registrazione dell'oggetto COM della pagina delle proprietà in un identificatore di visualizzazione
-description: In questo argomento viene illustrato come registrare una DLL di estensione contenente una finestra delle proprietà di Active Directory con il registro di sistema di Windows e Active Directory.
+description: Questo argomento illustra come registrare una DLL di estensione che contiene una finestra delle proprietà di Active Directory con il registro Windows e Active Directory.
 ms.assetid: e2d6142b-c2fe-4435-b4af-83f7cd45218b
 ms.tgt_platform: multiple
 keywords:
 - Registrazione dell'oggetto COM della pagina delle proprietà in un identificatore di visualizzazione Active Directory
-- Active Directory oggetto COM della pagina delle proprietà, registrazione in un identificatore di visualizzazione
+- oggetto COM della pagina delle proprietà Active Directory, registrazione in un identificatore di visualizzazione
 - identificatori di visualizzazione Active Directory, registrazione dell'oggetto COM della pagina delle proprietà in
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 2c5b08ac0ea6329026a6d367e71064bde917b1a6
-ms.sourcegitcommit: 803f3ccd65bdefe36bd851b9c6e7280be9489016
+ms.openlocfilehash: 0f6685e406cb1bfdc16f73dd2fddd94a195fe74a
+ms.sourcegitcommit: 61a4c522182aa1cacbf5669683d9570a3bf043b2
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/17/2020
-ms.locfileid: "104117538"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "122881239"
 ---
 # <a name="registering-the-property-page-com-object-in-a-display-specifier"></a>Registrazione dell'oggetto COM della pagina delle proprietà in un identificatore di visualizzazione
 
-Quando si utilizza COM per creare una DLL di estensione della finestra delle proprietà per Active Directory Domain Services, è necessario registrare l'estensione anche con il registro di sistema di Windows e Active Directory Domain Services. La registrazione dell'estensione consente di Active Directory snap-in MMC amministrativi e la shell di Windows per riconoscere l'estensione.
+Quando si usa COM per creare una DLL di estensione della finestra delle proprietà per Active Directory Domain Services, è necessario registrare anche l'estensione con il registro Windows e Active Directory Domain Services. La registrazione dell'estensione consente agli snap-in mmc amministrativi di Active Directory e Windows shell di riconoscere l'estensione.
 
-## <a name="registering-in-the-windows-registry"></a>Registrazione nel registro di sistema di Windows
+## <a name="registering-in-the-windows-registry"></a>Registrazione nel Registro Windows dati
 
-Come tutti i server COM, un'estensione della finestra delle proprietà deve essere registrata nel registro di sistema di Windows. L'estensione viene registrata con la chiave seguente.
+Come tutti i server COM, un'estensione della finestra delle proprietà deve essere registrata nel registro Windows sistema. L'estensione viene registrata nella chiave seguente.
 
 ```
 HKEY_CLASSES_ROOT
-   CLSID
-      <clsid>
+   CLSID
+      <clsid>
 ```
 
-*<clsid>* rappresentazione di stringa del CLSID come prodotto dalla funzione [**StringFromCLSID**](/windows/win32/api/combaseapi/nf-combaseapi-stringfromclsid) . Sotto la *<clsid>* chiave è presente una chiave **InprocServer32** che identifica l'oggetto come server in-process a 32 bit. Nella chiave **InprocServer32** il percorso della dll viene specificato nel valore predefinito e il modello di Threading viene specificato nel valore **ThreadingModel** . Tutte le estensioni della finestra delle proprietà devono utilizzare il modello di threading "Apartment".
+*&lt; clsid &gt;* è la rappresentazione di stringa del CLSID come prodotto dalla [**funzione StringFromCLSID.**](/windows/win32/api/combaseapi/nf-combaseapi-stringfromclsid) Sotto la *&lt; chiave &gt; clsid* è presente una chiave **InProcServer32** che identifica l'oggetto come server in-process a 32 bit. Nella chiave **InProcServer32** il percorso della DLL viene specificato nel valore predefinito e il modello di threading viene specificato nel **valore ThreadingModel.** Tutte le estensioni della finestra delle proprietà devono usare il modello di threading "Apartment".
 
 ## <a name="registering-with-active-directory-domain-services"></a>Registrazione con Active Directory Domain Services
 
-La registrazione dell'estensione della finestra delle proprietà è specifica di un'impostazione locale. Se l'estensione della finestra delle proprietà si applica a tutte le impostazioni locali, deve essere registrata nell'oggetto [**displaySpecifier**](/windows/desktop/ADSchema/c-displayspecifier) della classe di oggetti in tutti i sottocontenitori delle impostazioni locali nel contenitore degli identificatori di visualizzazione. Se l'estensione della finestra delle proprietà è localizzata per determinate impostazioni locali, registrarla nell'oggetto **displaySpecifier** del sottocontenitore delle impostazioni locali. Per ulteriori informazioni sul contenitore e le impostazioni locali per gli identificatori di visualizzazione, vedere la pagina relativa agli [identificatori di visualizzazione](display-specifiers.md) e al [contenitore DisplaySpecifiers](displayspecifiers-container.md).
+La registrazione dell'estensione della finestra delle proprietà è specifica di un'impostazione locale. Se l'estensione della finestra delle proprietà si applica a tutte le impostazioni locali, deve essere registrata nell'oggetto [**displaySpecifier**](/windows/desktop/ADSchema/c-displayspecifier) della classe di oggetti in tutti i sottocontenitori delle impostazioni locali nel contenitore Identificatori di visualizzazione. Se l'estensione della finestra delle proprietà è localizzata per determinate impostazioni locali, registrarla nell'oggetto **displaySpecifier** nel sottocontenitore delle impostazioni locali. Per altre informazioni sul contenitore Identificatori di visualizzazione e sulle impostazioni locali, vedere [Identificatori di visualizzazione](display-specifiers.md) e [Contenitore DisplaySpecifiers](displayspecifiers-container.md).
 
-Sono disponibili tre attributi dell'identificatore di visualizzazione in cui è possibile registrare un'estensione della finestra delle proprietà. Si tratta di [**adminPropertyPages**](/windows/desktop/ADSchema/a-adminpropertypages), [**shellPropertyPages**](/windows/desktop/ADSchema/a-shellpropertypages)e [**adminMultiselectPropertyPages**](/windows/desktop/ADSchema/a-adminmultiselectpropertypages).
+Esistono tre attributi dell'identificatore di visualizzazione in cui è possibile registrare un'estensione della finestra delle proprietà. Si tratta [**di adminPropertyPages,**](/windows/desktop/ADSchema/a-adminpropertypages) [**shellPropertyPages**](/windows/desktop/ADSchema/a-shellpropertypages)e [**adminMultiselectPropertyPages**](/windows/desktop/ADSchema/a-adminmultiselectpropertypages).
 
-L'attributo [**adminPropertyPages**](/windows/desktop/ADSchema/a-adminpropertypages) identifica le pagine delle proprietà amministrative da visualizzare in Active Directory snap-in amministrativi. La pagina delle proprietà viene visualizzata quando l'utente visualizza le proprietà degli oggetti della classe appropriata in uno degli snap-in di MMC di amministrazione Active Directory.
+[**L'attributo adminPropertyPages**](/windows/desktop/ADSchema/a-adminpropertypages) identifica le pagine delle proprietà amministrative da visualizzare negli snap-in amministrativi di Active Directory. La pagina delle proprietà viene visualizzata quando l'utente visualizza le proprietà per gli oggetti della classe appropriata in uno degli snap-in MMC amministrativi di Active Directory.
 
-L'attributo [**shellPropertyPages**](/windows/desktop/ADSchema/a-shellpropertypages) identifica le pagine delle proprietà degli utenti finali da visualizzare nella shell di Windows. La pagina delle proprietà viene visualizzata quando l'utente visualizza le proprietà degli oggetti della classe appropriata in Esplora risorse. A partire dai sistemi operativi Windows Server 2003, la shell di Windows non Visualizza più gli oggetti da Active Directory Domain Services.
+[**L'attributo shellPropertyPages**](/windows/desktop/ADSchema/a-shellpropertypages) identifica le pagine delle proprietà dell'utente finale da visualizzare nella Windows shell. La pagina delle proprietà viene visualizzata quando l'utente visualizza le proprietà per gli oggetti della classe appropriata nel Windows Explorer. A partire dai sistemi operativi Windows Server 2003, la shell Windows non visualizza più gli oggetti Active Directory Domain Services.
 
-[**AdminMultiselectPropertyPages**](/windows/desktop/ADSchema/a-adminmultiselectpropertypages) è disponibile solo nei sistemi operativi Windows Server 2003. La pagina delle proprietà viene visualizzata quando l'utente visualizza le proprietà per più di un oggetto della classe appropriata in uno degli snap-in di MMC di amministrazione Active Directory.
+[**AdminMultiselectPropertyPages**](/windows/desktop/ADSchema/a-adminmultiselectpropertypages) è disponibile solo nei sistemi operativi Windows Server 2003. La pagina delle proprietà viene visualizzata quando l'utente visualizza le proprietà di più oggetti della classe appropriata in uno degli snap-in MMC amministrativi di Active Directory.
 
 Tutti questi attributi sono multivalore.
 
-I valori per gli attributi [**adminPropertyPages**](/windows/desktop/ADSchema/a-adminpropertypages) e [**shellPropertyPages**](/windows/desktop/ADSchema/a-shellpropertypages) richiedono il formato seguente.
+I valori per gli [**attributi adminPropertyPages**](/windows/desktop/ADSchema/a-adminpropertypages) [**e shellPropertyPages**](/windows/desktop/ADSchema/a-shellpropertypages) richiedono il formato seguente.
 
 
 ```C++
@@ -55,7 +55,7 @@ I valori per gli attributi [**adminPropertyPages**](/windows/desktop/ADSchema/a-
 
 
 
-I valori per l'attributo [**adminMultiselectPropertyPages**](/windows/desktop/ADSchema/a-adminmultiselectpropertypages) richiedono il formato seguente.
+I valori per [**l'attributo adminMultiselectPropertyPages**](/windows/desktop/ADSchema/a-adminmultiselectpropertypages) richiedono il formato seguente.
 
 
 ```C++
@@ -64,11 +64,11 @@ I valori per l'attributo [**adminMultiselectPropertyPages**](/windows/desktop/AD
 
 
 
-Il " &lt; numero &gt; di ordine" è un numero senza segno che rappresenta la posizione della pagina nel foglio. Quando viene visualizzata una finestra delle proprietà, i valori vengono ordinati usando un confronto tra il " &lt; numero di ordine" di ogni valore &gt; . Se più di un valore ha lo stesso " &lt; numero &gt; di ordine", gli oggetti COM della pagina delle proprietà vengono caricati nell'ordine in cui vengono letti dal server Active Directory. Se possibile, è necessario usare un "numero di ordine" non esistente, &lt; &gt; ovvero uno non usato da altri valori nella proprietà. Non esiste una posizione di inizio prescritta e sono consentiti gap nella &lt; sequenza "Order Number &gt; ".
+Il " &lt; numero di ordine " è un numero senza segno che rappresenta la posizione della pagina nel &gt; foglio. Quando viene visualizzata una finestra delle proprietà, i valori vengono ordinati usando un confronto del " numero di ordine" &lt; di ogni &gt; valore. Se più valori hanno lo stesso " numero di ordine ", gli oggetti COM della pagina delle proprietà vengono caricati nell'ordine in cui vengono letti &lt; &gt; dal server Active Directory. Se possibile, è consigliabile usare un " numero di ordine " non esistente, cio' non usato da &lt; altri valori nella proprietà &gt; . Non è stata specificata alcuna posizione iniziale e sono consentiti spazi nella sequenza " &lt; numero di &gt; ordine ".
 
-" &lt; CLSID &gt; " è la rappresentazione di stringa del CLSID come prodotto dalla funzione [**StringFromCLSID**](/windows/win32/api/combaseapi/nf-combaseapi-stringfromclsid) .
+" &lt; clsid " è la rappresentazione di stringa &gt; del CLSID come prodotto dalla [**funzione StringFromCLSID.**](/windows/win32/api/combaseapi/nf-combaseapi-stringfromclsid)
 
-" &lt; Dati facoltativi &gt; " è un valore stringa non obbligatorio. Questo valore può essere recuperato dall'oggetto COM della pagina delle proprietà usando il puntatore [**IDataObject**](/windows/win32/api/objidl/nn-objidl-idataobject) passato al metodo [**IShellExtInit:: Initialize**](/windows/win32/api/shobjidl_core/nf-shobjidl_core-ishellextinit-initialize) . L'oggetto COM della pagina delle proprietà ottiene questi dati chiamando [**IDataObject:: GetData**](/windows/win32/api/objidl/nf-objidl-idataobject-getdata) con il formato degli Appunti [**\_ DSPROPERTYPAGEINFO di CFSTR**](cfstr-dspropertypageinfo.md) . Fornisce un **HGLOBAL** che contiene una struttura [**DSPROPERTYPAGEINFO**](/windows/desktop/api/Dsclient/ns-dsclient-dspropertypageinfo) la struttura **DSPROPERTYPAGEINFO** contiene una stringa Unicode che contiene i &lt; dati facoltativi &gt; . " &lt; Dati facoltativi &gt; " non consentito con l'attributo [**adminMultiselectPropertyPages**](/windows/desktop/ADSchema/a-adminmultiselectpropertypages) . Nell'esempio di codice C/C++ riportato di seguito viene illustrato come recuperare i &lt; dati facoltativi &gt; .
+" &lt; dati &gt; facoltativi " è un valore stringa che non è obbligatorio. Questo valore può essere recuperato dall'oggetto COM della pagina delle proprietà usando il puntatore [**IDataObject**](/windows/win32/api/objidl/nn-objidl-idataobject) passato al relativo [**metodo IShellExtInit::Initialize.**](/windows/win32/api/shobjidl_core/nf-shobjidl_core-ishellextinit-initialize) L'oggetto COM della pagina delle proprietà ottiene questi dati chiamando [**IDataObject::GetData**](/windows/win32/api/objidl/nf-objidl-idataobject-getdata) con il formato degli Appunti [**CFSTR \_ DSPROPERTYPAGEINFO.**](cfstr-dspropertypageinfo.md) Fornisce un **HGLOBAL** che contiene una struttura [**DSPROPERTYPAGEINFO**](/windows/desktop/api/Dsclient/ns-dsclient-dspropertypageinfo) La struttura **DSPROPERTYPAGEINFO** contiene una stringa Unicode che contiene i " &lt; dati &gt; facoltativi ". I " &lt; dati &gt; facoltativi " non sono consentiti con l'attributo [**adminMultiselectPropertyPages.**](/windows/desktop/ADSchema/a-adminmultiselectpropertypages) Nell'esempio di codice C/C++ seguente viene illustrato come recuperare i " &lt; dati facoltativi &gt; ".
 
 
 ```C++
@@ -99,9 +99,9 @@ if(SUCCEEDED(hr))
 
 
 
-Un'estensione della finestra delle proprietà può implementare più di una pagina delle proprietà. un possibile utilizzo di " &lt; dati facoltativi &gt; " consiste nel denominare le pagine da visualizzare. In questo modo si offre la flessibilità di scegliere di implementare più oggetti COM, uno per ogni pagina o un singolo oggetto COM per gestire più pagine.
+Un'estensione della finestra delle proprietà può implementare più di una pagina delle proprietà. un possibile uso dei " &lt; dati &gt; facoltativi " è assegnare un nome alle pagine da visualizzare. In questo modo è possibile scegliere di implementare più oggetti COM, uno per ogni pagina o un singolo oggetto COM per gestire più pagine.
 
-L'esempio di codice seguente è un valore di esempio che può essere usato per gli attributi [**adminPropertyPages**](/windows/desktop/ADSchema/a-adminpropertypages), [**shellPropertyPages**](/windows/desktop/ADSchema/a-shellpropertypages)o [**adminMultiselectPropertyPages**](/windows/desktop/ADSchema/a-adminmultiselectpropertypages) .
+L'esempio di codice seguente è un valore di esempio che può essere usato per gli attributi [**adminPropertyPages,**](/windows/desktop/ADSchema/a-adminpropertypages) [**shellPropertyPages**](/windows/desktop/ADSchema/a-shellpropertypages)o [**adminMultiselectPropertyPages.**](/windows/desktop/ADSchema/a-adminmultiselectpropertypages)
 
 
 ```C++
@@ -111,25 +111,25 @@ L'esempio di codice seguente è un valore di esempio che può essere usato per g
 
 
 > [!IMPORTANT]
-> Per la shell di Windows, i dati degli identificatori di visualizzazione vengono recuperati all'accesso dell'utente e memorizzati nella cache per la sessione utente. Per gli snap-in amministrativi, i dati dell'identificatore di visualizzazione vengono recuperati quando lo snap-in viene caricato e viene memorizzato nella cache per la durata del processo. Per la shell di Windows, ciò indica che le modifiche apportate agli identificatori di visualizzazione diventano effettive dopo che un utente si disconnette e quindi si riconnette. Per gli snap-in amministrativi, le modifiche diventano effettive quando viene caricato lo snap-in o il file della console.
+> Per la Windows shell, i dati dell'identificatore di visualizzazione vengono recuperati all'accesso utente e memorizzati nella cache per la sessione utente. Per gli snap-in amministrativi, i dati dell'identificatore di visualizzazione vengono recuperati al caricamento dello snap-in e vengono memorizzati nella cache per la durata del processo. Per la Windows shell, ciò indica che le modifiche apportate agli identificatori di visualizzazione vengono applicate dopo che un utente si disconnette e quindi accede di nuovo. Per gli snap-in amministrativi, le modifiche vengono applicate quando viene caricato lo snap-in o il file della console.
 
- 
+ 
 
 ## <a name="adding-a-value-to-the-property-sheet-extension-attributes"></a>Aggiunta di un valore agli attributi di estensione della finestra delle proprietà
 
-Nella procedura riportata di seguito viene descritto come registrare un'estensione della finestra delle proprietà in uno degli attributi di estensione della finestra delle proprietà.
+La procedura seguente descrive come registrare un'estensione della finestra delle proprietà in uno degli attributi di estensione della finestra delle proprietà.
 
 **Registrazione di un'estensione della finestra delle proprietà in uno degli attributi di estensione della finestra delle proprietà**
 
-1.  Verificare che l'estensione non esista già nei valori dell'attributo.
-2.  Aggiungere il nuovo valore alla fine dell'elenco di ordini delle pagine delle proprietà. Imposta la &lt; parte "Order Number &gt; " del valore dell'attributo sul valore successivo dopo il numero di ordine esistente più elevato.
-3.  Il metodo [**IADs::P UTEX**](/windows/desktop/api/iads/nf-iads-iads-putex) viene usato per aggiungere il nuovo valore all'attributo. Il parametro *lnControlCode* deve essere impostato sulla **\_ Proprietà Ads \_ Append** , in modo che il nuovo valore venga aggiunto ai valori esistenti e non sovrascriva quindi i valori esistenti. Per eseguire il commit della modifica nella directory, è necessario chiamare il metodo [**IADs:: SetInfo**](/windows/desktop/api/iads/nf-iads-iads-setinfo) in seguito.
+1.  Assicurarsi che l'estensione non esista già nei valori dell'attributo.
+2.  Aggiungere il nuovo valore alla fine dell'elenco di ordinamento della pagina delle proprietà. Viene impostata la parte " order number " del valore dell'attributo &lt; sul valore successivo dopo il numero di ordine esistente più &gt; alto.
+3.  Il [**metodo IADs::P utEx**](/windows/desktop/api/iads/nf-iads-iads-putex) viene usato per aggiungere il nuovo valore all'attributo. Il *parametro lnControlCode* deve essere impostato su **ADS PROPERTY \_ \_ APPEND** in modo che il nuovo valore sia aggiunto ai valori esistenti e non sovrascriva quindi i valori esistenti. Il [**metodo IADs::SetInfo**](/windows/desktop/api/iads/nf-iads-iads-setinfo) deve essere chiamato successivamente per eseguire il commit della modifica nella directory.
 
 Tenere presente che la stessa estensione della finestra delle proprietà può essere registrata per più di una classe di oggetti.
 
-Il metodo [**IADs::P UTEX**](/windows/desktop/api/iads/nf-iads-iads-putex) viene usato per aggiungere il nuovo valore all'attributo. Il parametro *lnControlCode* deve essere impostato sulla **\_ Proprietà Ads \_ Append**, in modo che il nuovo valore venga aggiunto ai valori esistenti e non sovrascriva quindi i valori esistenti. Per eseguire il commit della modifica nella directory, è necessario chiamare il metodo [**IADs:: seinfo**](/windows/desktop/api/iads/nf-iads-iads-setinfo) .
+Il [**metodo IADs::P utEx**](/windows/desktop/api/iads/nf-iads-iads-putex) viene usato per aggiungere il nuovo valore all'attributo. Il *parametro lnControlCode* deve essere impostato su **ADS PROPERTY \_ \_ APPEND,** in modo che il nuovo valore sia aggiunto ai valori esistenti e non sovrascriva quindi i valori esistenti. Il [**metodo IADs::SetInfo**](/windows/desktop/api/iads/nf-iads-iads-setinfo) deve essere chiamato dopo per eseguire il commit della modifica nella directory.
 
-Nell'esempio di codice seguente viene aggiunta un'estensione della finestra delle proprietà alla classe gruppo nelle impostazioni locali predefinite del computer. Tenere presente che la funzione **AddPropertyPageToDisplaySpecifier** verifica il CLSID dell'estensione della finestra delle proprietà nei valori esistenti, ottiene il numero di ordine più elevato e aggiunge il valore per la pagina delle proprietà utilizzando [**IADs::P UTEX**](/windows/desktop/api/iads/nf-iads-iads-putex) con la **\_ Proprietà Ads \_ Accoda** il codice di controllo.
+Nell'esempio di codice seguente viene aggiunta un'estensione della finestra delle proprietà alla classe group nelle impostazioni locali predefinite del computer. Tenere presente che la funzione **AddPropertyPageToDisplaySpecifier** verifica il CLSID dell'estensione della finestra delle proprietà nei valori esistenti, ottiene il numero di ordine più alto e aggiunge il valore per la pagina delle proprietà usando [**IADs::P utEx**](/windows/desktop/api/iads/nf-iads-iads-putex) con il codice di controllo **ADS \_ PROPERTY \_ APPEND.**
 
 
 ```C++
@@ -434,6 +434,6 @@ HRESULT GetDisplaySpecifier(IADsContainer *pContainer, LPOLESTR szDispSpec, IADs
 
 
 
- 
+ 
 
- 
+ 

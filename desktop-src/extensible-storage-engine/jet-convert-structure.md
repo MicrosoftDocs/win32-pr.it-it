@@ -1,5 +1,5 @@
 ---
-description: 'Altre informazioni su: JET_CONVERT Structure'
+description: 'Altre informazioni su: JET_CONVERT struttura'
 title: JET_CONVERT struttura
 TOCTitle: JET_CONVERT Structure
 ms:assetid: 33a0ff95-e9af-44c0-bf80-03d785771d5e
@@ -15,12 +15,12 @@ api_type:
 - COM
 api_location: ''
 ROBOTS: INDEX,FOLLOW
-ms.openlocfilehash: 804f76e274a04e4f1eff0b3b8de5b2ca8c3064a8aa9d915c3d2514da64f2eeda
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: ce3fbcc7de9c7904689de3df923a87d575b1b92b
+ms.sourcegitcommit: 4665ebce0c106bdb52eef36e544280b496b6f50b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119731111"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "122986784"
 ---
 # <a name="jet_convert-structure"></a>JET_CONVERT struttura
 
@@ -29,7 +29,7 @@ _**Si applica a:** Windows | Windows Server_
 
 ## <a name="jet_convert-structure"></a>JET_CONVERT struttura
 
-La **JET_CONVERT** contiene il nome di una DLL della versione precedente di ESE usata per la lettura di un database creato con tale versione precedente. Vengono inoltre forniti altri flag per controllare la natura della conversione.
+La **JET_CONVERT** contiene il nome di una DLL della versione precedente di ESE utilizzata per la lettura di database creati con tale versione precedente. Vengono inoltre forniti altri flag per controllare la natura della conversione.
 
 **Windows Server 2003:** La funzionalità di [JetCompact che](./jetcompact-function.md) ha eseguito una conversione è stata rimossa dal prodotto in Windows Server 2003. È supportato solo in Windows 2000 e Windows XP.
 
@@ -61,30 +61,14 @@ Riservato per l'utilizzo nel sistema.
 
 ### <a name="requirements"></a>Requisiti
 
-<table>
-<colgroup>
-<col style="width: 50%" />
-<col style="width: 50%" />
-</colgroup>
-<tbody>
-<tr class="odd">
-<td><p><strong>Client</strong></p></td>
-<td><p>Richiede Windows Vista, Windows XP o Windows 2000 Professional.</p></td>
-</tr>
-<tr class="even">
-<td><p><strong>Server</strong></p></td>
-<td><p>Richiede Windows Server 2008, Windows Server 2003 o Windows 2000 Server.</p></td>
-</tr>
-<tr class="odd">
-<td><p><strong>Intestazione</strong></p></td>
-<td><p>Dichiarato in Esent.h.</p></td>
-</tr>
-<tr class="even">
-<td><p><strong>Unicode</strong></p></td>
-<td><p>Implementato come <strong>JET_CONVERT_W</strong> (Unicode) <strong>e JET_CONVERT_A</strong> (ANSI).</p></td>
-</tr>
-</tbody>
-</table>
+
+| Requisito | Valore |
+|------------|----------|
+| <p><strong>Client</strong></p> | <p>Richiede Windows Vista, Windows XP o Windows 2000 Professional.</p> | 
+| <p><strong>Server</strong></p> | <p>Richiede Windows Server 2008, Windows Server 2003 o Windows 2000 Server.</p> | 
+| <p><strong>Intestazione</strong></p> | <p>Dichiarato in Esent.h.</p> | 
+| <p><strong>Unicode</strong></p> | <p>Implementato come <strong>JET_CONVERT_W</strong> (Unicode) <strong>e JET_CONVERT_A</strong> (ANSI).</p> | 
+
 
 
 ### <a name="see-also"></a>Vedere anche

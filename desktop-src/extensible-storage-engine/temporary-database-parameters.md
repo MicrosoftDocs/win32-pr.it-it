@@ -1,6 +1,6 @@
 ---
-description: 'Altre informazioni su: parametri di database temporanei'
-title: Parametri di database temporanei
+description: 'Altre informazioni su: Parametri di database temporanei'
+title: Parametri del database temporaneo
 TOCTitle: Temporary Database Parameters
 ms:assetid: fa1cd867-6ce4-4de5-b31d-5b886f7c1e77
 ms:mtpsurl: https://msdn.microsoft.com/library/Gg294140(v=EXCHG.10)
@@ -15,229 +15,105 @@ api_type:
 - COM
 api_location: ''
 ROBOTS: INDEX,FOLLOW
-ms.openlocfilehash: c137472d03f1088da061c20b52050ae1a1f6629e
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 427ed51c2757075ccb28fd70e5554c49dc8db4e8
+ms.sourcegitcommit: 4665ebce0c106bdb52eef36e544280b496b6f50b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "104233352"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "122986824"
 ---
-# <a name="temporary-database-parameters"></a>Parametri di database temporanei
+# <a name="temporary-database-parameters"></a>Parametri del database temporaneo
 
 
 _**Si applica a:** Windows | Windows Server_
 
-## <a name="temporary-database-parameters"></a>Parametri di database temporanei
+## <a name="temporary-database-parameters"></a>Parametri del database temporaneo
 
-In questo argomento sono contenuti i parametri utilizzati per il database temporaneo.
+Questo argomento contiene i parametri usati per il database temporaneo.
 
 *JET_paramEnableTempTableVersioning*  
 46  
 
-Questo parametro controlla l'utilizzo delle transazioni nelle tabelle temporanee. Quando questo parametro è false, le tabelle temporanee saranno più veloci, ma non sarà possibile eseguire il rollback degli aggiornamenti effettuati in una transazione.
+Questo parametro controlla l'uso delle transazioni nelle tabelle temporanee. Quando questo parametro è false, le tabelle temporanee saranno più veloci, ma non sarà possibile eseguire il rollback degli aggiornamenti apportati in una transazione.
 
-<table>
-<colgroup>
-<col style="width: 50%" />
-<col style="width: 50%" />
-</colgroup>
-<tbody>
-<tr class="odd">
-<td><p>Valore predefinito:</p></td>
-<td><p>Vero</p></td>
-</tr>
-<tr class="even">
-<td><p>Digitare:</p></td>
-<td><p>Boolean</p></td>
-</tr>
-<tr class="odd">
-<td><p>Intervallo valido:</p></td>
-<td><p>False, True</p></td>
-</tr>
-<tr class="even">
-<td><p>Ambito:</p></td>
-<td><p>Istanza</p></td>
-</tr>
-<tr class="odd">
-<td><p>Imposta dopo <a href="gg269354(v=exchg.10).md">JetCreateInstance</a>:</p></td>
-<td><p>Sì</p></td>
-</tr>
-<tr class="even">
-<td><p>Imposta dopo <a href="gg294068(v=exchg.10).md">JetInit</a>:</p></td>
-<td><p>No</p></td>
-</tr>
-<tr class="odd">
-<td><p>Influiscono sul layout fisico:</p></td>
-<td><p>No</p></td>
-</tr>
-<tr class="even">
-<td><p>Influire sull'affidabilità:</p></td>
-<td><p>Sì</p></td>
-</tr>
-<tr class="odd">
-<td><p>Influire sulle prestazioni:</p></td>
-<td><p>Sì</p></td>
-</tr>
-<tr class="even">
-<td><p>Influiscono sulle risorse:</p></td>
-<td><p>Sì</p></td>
-</tr>
-<tr class="odd">
-<td><p>Disponibilità:</p></td>
-<td><p>Tutti</p></td>
-</tr>
-</tbody>
-</table>
+
+| Etichetta | Valore |
+|--------|-------|
+| <p>Valore predefinito:</p> | <p>Vero</p> | 
+| <p>Digitare:</p> | <p>Boolean</p> | 
+| <p>Intervallo valido:</p> | <p>False, True</p> | 
+| <p>Ambito:</p> | <p>Istanza</p> | 
+| <p>Imposta dopo <a href="gg269354(v=exchg.10).md">JetCreateInstance</a>:</p> | <p>Sì</p> | 
+| <p>Impostare dopo <a href="gg294068(v=exchg.10).md">JetInit</a>:</p> | <p>No</p> | 
+| <p>Influisce sul layout fisico:</p> | <p>No</p> | 
+| <p>Influisce sull'affidabilità:</p> | <p>Sì</p> | 
+| <p>Influisce sulle prestazioni:</p> | <p>Sì</p> | 
+| <p>Influisce sulle risorse:</p> | <p>Sì</p> | 
+| <p>Disponibilità:</p> | <p>Tutti</p> | 
+
 
 
 *JET_paramPageTempDBMin*  
 19  
 
-Questo parametro controlla la dimensione iniziale del database temporaneo. Le dimensioni sono le pagine del database. Una dimensione pari a zero indica che devono essere utilizzate le dimensioni predefinite di un database normale.
+Questo parametro controlla le dimensioni iniziali del database temporaneo. Le dimensioni sono in pagine di database. Una dimensione pari a zero indica che devono essere usate le dimensioni predefinite di un database comune.
 
-È spesso consigliabile che le piccole applicazioni configurino il database temporaneo in modo che sia il più piccolo possibile. L'impostazione di questo parametro su 14 consentirà di ottenere il database temporaneo più piccolo possibile. Si noti che è possibile eliminare completamente il database temporaneo impostando **JET_paramMaxTemporaryTables** su zero.
+È spesso consigliabile per le applicazioni di piccole dimensioni configurare il database temporaneo in modo che sia il più piccolo possibile. L'impostazione di questo parametro su 14 consente di ottenere il database temporaneo più piccolo possibile. Si noti che è anche possibile eliminare completamente il database temporaneo impostando **JET_paramMaxTemporaryTables** su zero.
 
-<table>
-<colgroup>
-<col style="width: 50%" />
-<col style="width: 50%" />
-</colgroup>
-<tbody>
-<tr class="odd">
-<td><p>Valore predefinito:</p></td>
-<td><p>0</p></td>
-</tr>
-<tr class="even">
-<td><p>Digitare:</p></td>
-<td><p>Integer</p></td>
-</tr>
-<tr class="odd">
-<td><p>Intervallo valido:</p></td>
-<td><p>0 – 2147483647</p></td>
-</tr>
-<tr class="even">
-<td><p>Ambito:</p></td>
-<td><p>Istanza</p></td>
-</tr>
-<tr class="odd">
-<td><p>Imposta dopo <a href="gg269354(v=exchg.10).md">JetCreateInstance</a>:</p></td>
-<td><p>Sì</p></td>
-</tr>
-<tr class="even">
-<td><p>Imposta dopo <a href="gg294068(v=exchg.10).md">JetInit</a>:</p></td>
-<td><p>No</p></td>
-</tr>
-<tr class="odd">
-<td><p>Influiscono sul layout fisico:</p></td>
-<td><p>Sì</p></td>
-</tr>
-<tr class="even">
-<td><p>Influire sull'affidabilità:</p></td>
-<td><p>No</p></td>
-</tr>
-<tr class="odd">
-<td><p>Influire sulle prestazioni:</p></td>
-<td><p>Sì</p></td>
-</tr>
-<tr class="even">
-<td><p>Influiscono sulle risorse:</p></td>
-<td><p>Sì</p></td>
-</tr>
-<tr class="odd">
-<td><p>Disponibilità:</p></td>
-<td><p>Tutti</p></td>
-</tr>
-</tbody>
-</table>
+
+| Etichetta | Valore |
+|--------|-------|
+| <p>Valore predefinito:</p> | <p>0</p> | 
+| <p>Digitare:</p> | <p>Intero</p> | 
+| <p>Intervallo valido:</p> | <p>0 – 2147483647</p> | 
+| <p>Ambito:</p> | <p>Istanza</p> | 
+| <p>Imposta dopo <a href="gg269354(v=exchg.10).md">JetCreateInstance</a>:</p> | <p>Sì</p> | 
+| <p>Impostare dopo <a href="gg294068(v=exchg.10).md">JetInit</a>:</p> | <p>No</p> | 
+| <p>Influisce sul layout fisico:</p> | <p>Sì</p> | 
+| <p>Influisce sull'affidabilità:</p> | <p>No</p> | 
+| <p>Influisce sulle prestazioni:</p> | <p>Sì</p> | 
+| <p>Influisce sulle risorse:</p> | <p>Sì</p> | 
+| <p>Disponibilità:</p> | <p>Tutti</p> | 
+
 
 
 *JET_paramTempPath*  
 1  
 
-Questo parametro indica il percorso file system relativo o assoluto della cartella o del file che conterrà il database temporaneo per l'istanza di. Se il percorso è una cartella che conterrà il database temporaneo, deve terminare con un carattere barra rovesciata. Il database temporaneo viene utilizzato per contenere dati volatili generati durante il processo di gestione delle chiamate alle informazioni API ESE, creazione di indici o archiviazione del contenuto di una tabella temporanea.
+Questo parametro indica il percorso relativo o file system assoluto della cartella o del file che conterrà il database temporaneo per l'istanza. Se il percorso è una cartella che conterrà il database temporaneo, è necessario terminarlo con un carattere barra rovesciata. Il database temporaneo viene usato per contenere i dati volatili generati nel processo di gestione delle chiamate di informazioni sull'API ESE, creazione di indici o archiviazione del contenuto di una tabella temporanea.
 
-**Nota**  Se viene specificato un percorso relativo, sarà relativo alla directory di lavoro corrente del processo che ospita l'applicazione che utilizza il motore di database.
+**Nota:**  Se viene specificato un percorso relativo, sarà relativo alla directory di lavoro corrente del processo che ospita l'applicazione che usa il motore di database.
 
-<table>
-<colgroup>
-<col style="width: 50%" />
-<col style="width: 50%" />
-</colgroup>
-<tbody>
-<tr class="odd">
-<td><p>Valore predefinito:</p></td>
-<td><p>&quot;tmp. edb&quot;</p></td>
-</tr>
-<tr class="even">
-<td><p>Digitare:</p></td>
-<td><p>Path (stringa)</p></td>
-</tr>
-<tr class="odd">
-<td><p>Intervallo valido:</p></td>
-<td><p>da 0 a 247 caratteri</p></td>
-</tr>
-<tr class="even">
-<td><p>Ambito:</p></td>
-<td><p>Istanza</p></td>
-</tr>
-<tr class="odd">
-<td><p>Imposta dopo <a href="gg269354(v=exchg.10).md">JetCreateInstance</a>:</p></td>
-<td><p>Sì</p></td>
-</tr>
-<tr class="even">
-<td><p>Imposta dopo <a href="gg294068(v=exchg.10).md">JetInit</a>:</p></td>
-<td><p>No</p></td>
-</tr>
-<tr class="odd">
-<td><p>Influiscono sul layout fisico:</p></td>
-<td><p>Sì</p></td>
-</tr>
-<tr class="even">
-<td><p>Influire sull'affidabilità:</p></td>
-<td><p>No</p></td>
-</tr>
-<tr class="odd">
-<td><p>Influire sulle prestazioni:</p></td>
-<td><p>No</p></td>
-</tr>
-<tr class="even">
-<td><p>Influiscono sulle risorse:</p></td>
-<td><p>No</p></td>
-</tr>
-<tr class="odd">
-<td><p>Disponibilità:</p></td>
-<td><p>Tutti</p></td>
-</tr>
-</tbody>
-</table>
+
+| Etichetta | Valore |
+|--------|-------|
+| <p>Valore predefinito:</p> | <p>"tmp.edb"</p> | 
+| <p>Digitare:</p> | <p>Percorso (stringa)</p> | 
+| <p>Intervallo valido:</p> | <p>Da 0 a 247 caratteri</p> | 
+| <p>Ambito:</p> | <p>Istanza</p> | 
+| <p>Imposta dopo <a href="gg269354(v=exchg.10).md">JetCreateInstance</a>:</p> | <p>Sì</p> | 
+| <p>Impostare dopo <a href="gg294068(v=exchg.10).md">JetInit</a>:</p> | <p>No</p> | 
+| <p>Influisce sul layout fisico:</p> | <p>Sì</p> | 
+| <p>Influisce sull'affidabilità:</p> | <p>No</p> | 
+| <p>Influisce sulle prestazioni:</p> | <p>No</p> | 
+| <p>Influisce sulle risorse:</p> | <p>No</p> | 
+| <p>Disponibilità:</p> | <p>Tutti</p> | 
+
 
 
 ### <a name="requirements"></a>Requisiti
 
-<table>
-<colgroup>
-<col style="width: 50%" />
-<col style="width: 50%" />
-</colgroup>
-<tbody>
-<tr class="odd">
-<td><p><strong>Client</strong></p></td>
-<td><p>Richiede Windows Vista, Windows XP o Windows 2000 Professional.</p></td>
-</tr>
-<tr class="even">
-<td><p><strong>Server</strong></p></td>
-<td><p>Richiede Windows Server 2008, Windows Server 2003 o Windows 2000 Server.</p></td>
-</tr>
-<tr class="odd">
-<td><p><strong>Intestazione</strong></p></td>
-<td><p>Dichiarata in esent. h.</p></td>
-</tr>
-</tbody>
-</table>
+
+| Requisito | Valore |
+|------------|----------|
+| <p><strong>Client</strong></p> | <p>Richiede Windows Vista, Windows XP o Windows 2000 Professional.</p> | 
+| <p><strong>Server</strong></p> | <p>Richiede Windows Server 2008, Windows Server 2003 o Windows 2000 Server.</p> | 
+| <p><strong>Intestazione</strong></p> | <p>Dichiarato in Esent.h.</p> | 
+
 
 
 ### <a name="see-also"></a>Vedere anche
 
-[File del motore di archiviazione estendibile](./extensible-storage-engine-files.md)  
+[Extensible Archiviazione Engine Files](./extensible-storage-engine-files.md)  
 [JetCreateInstance](./jetcreateinstance-function.md)  
 [JetInit](./jetinit-function.md)

@@ -1,7 +1,7 @@
 ---
-description: 'Il metodo InsertSpace2 suddivide tutti gli oggetti esistenti al momento specificato e inserisce uno spazio tra di essi. Questo metodo è equivalente a IAMTimelineTrack:: InsertSpace, ma accetta valori REFTIME.'
+description: Il metodo InsertSpace2 suddivide tutti gli oggetti esistenti all'ora specificata e inserisce spazio tra di essi. Questo metodo è equivalente a IAMTimelineTrack::InsertSpace, ma accetta valori REFTIME.
 ms.assetid: 818a1dad-0c8d-4728-82d6-cd52c6c830a2
-title: 'Metodo IAMTimelineTrack:: InsertSpace2 (qedit. h)'
+title: Metodo IAMTimelineTrack::InsertSpace2 (Qedit.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -14,21 +14,21 @@ api_type:
 api_location:
 - strmiids.lib
 - strmiids.dll
-ms.openlocfilehash: 401c20d766fe9751c35cb59c03bca739494b3f8a
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: 2f851e6bdccb755977210fcd67e7ce0bb6cb270ec3ff6a4f1fed4806a035a11a
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "106325627"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120052251"
 ---
-# <a name="iamtimelinetrackinsertspace2-method"></a>Metodo IAMTimelineTrack:: InsertSpace2
+# <a name="iamtimelinetrackinsertspace2-method"></a>Metodo IAMTimelineTrack::InsertSpace2
 
 > [!Note]  
-> \[Deprecato. Questa API può essere rimossa dalle versioni successive di Windows.\]
+> \[Deprecato. Questa API potrebbe essere rimossa dalle versioni future di Windows.\]
 
  
 
-Il `InsertSpace2` metodo suddivide tutti gli oggetti esistenti al momento specificato e inserisce uno spazio tra di essi. Questo metodo è equivalente a [**IAMTimelineTrack:: InsertSpace**](iamtimelinetrack-insertspace.md), ma accetta valori [**REFTIME**](reftime.md) .
+Il `InsertSpace2` metodo suddivide tutti gli oggetti esistenti all'ora specificata e inserisce uno spazio tra di essi. Questo metodo è equivalente a [**IAMTimelineTrack::InsertSpace,**](iamtimelinetrack-insertspace.md)ma accetta [**valori REFTIME.**](reftime.md)
 
 ## <a name="syntax"></a>Sintassi
 
@@ -56,22 +56,22 @@ Ora in cui creare la divisione e il punto iniziale dello spazio inserito, in sec
 *rtEnd* 
 </dt> <dd>
 
-Punto finale dello spazio inserito, in secondi.
+Punto finale dello spazio inserito, espresso in secondi.
 
 </dd> </dl>
 
 ## <a name="return-value"></a>Valore restituito
 
-Restituisce un valore **HRESULT** . Tra i possibili valori restituiti sono inclusi i seguenti:
+Restituisce un **valore HRESULT.** I valori restituiti possibili sono i seguenti:
 
 
 
 | Codice restituito                                                                                   | Descrizione                                            |
 |-----------------------------------------------------------------------------------------------|--------------------------------------------------------|
-| <dl> <dt>**S \_ false**</dt> </dl>       | Nessun oggetto all'ora specificata.<br/> |
-| <dl> <dt>**\_OK**</dt> </dl>          | Esito positivo.<br/>                                    |
+| <dl> <dt>**S \_ FALSE**</dt> </dl>       | Non sono presenti oggetti all'ora specificata.<br/> |
+| <dl> <dt>**S \_ OK**</dt> </dl>          | Operazione completata.<br/>                                    |
 | <dl> <dt>**E \_ INVALIDARG**</dt> </dl>  | Argomento non valido.<br/>                           |
-| <dl> <dt>**E \_ OutOfMemory**</dt> </dl> | Memoria insufficiente.<br/>                        |
+| <dl> <dt>**E \_ OUTOFMEMORY**</dt> </dl> | Memoria insufficiente.<br/>                        |
 
 
 
@@ -80,12 +80,12 @@ Restituisce un valore **HRESULT** . Tra i possibili valori restituiti sono inclu
 ## <a name="remarks"></a>Commenti
 
 > [!Note]  
-> Il file di intestazione qedit. h non è compatibile con le intestazioni Direct3D successive alla versione 7.
+> Il file di intestazione Qedit.h non è compatibile con le intestazioni Direct3D successive alla versione 7.
 
  
 
 > [!Note]  
-> Per ottenere qedit. h, scaricare l' [aggiornamento Microsoft Windows SDK per Windows Vista e .NET Framework 3,0](https://msdn.microsoft.com/windowsvista/bb980924.aspx). Qedit. h non è disponibile nel Microsoft Windows SDK per Windows 7 e .NET Framework 3,5 Service Pack 1.
+> Per ottenere Qedit.h, scaricare [Microsoft Windows SDK Update per Windows Vista e .NET Framework 3.0.](https://msdn.microsoft.com/windowsvista/bb980924.aspx) Qedit.h non è disponibile in Microsoft Windows SDK per Windows 7 e .NET Framework 3.5 Service Pack 1.
 
  
 
@@ -95,8 +95,8 @@ Restituisce un valore **HRESULT** . Tra i possibili valori restituiti sono inclu
 
 | Requisito | Valore |
 |--------------------|-----------------------------------------------------------------------------------------|
-| Intestazione<br/>  | <dl> <dt>Qedit. h</dt> </dl>      |
-| Libreria<br/> | <dl> <dt>Strmiids. lib</dt> </dl> |
+| Intestazione<br/>  | <dl> <dt>Qedit.h</dt> </dl>      |
+| Libreria<br/> | <dl> <dt>Strmiids.lib</dt> </dl> |
 
 
 

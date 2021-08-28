@@ -4,12 +4,12 @@ ms.assetid: af962d0d-5f20-4cc4-b28d-986f16689f23
 title: System.PropGroup.Advanced
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 8b6ec22421cb63af7048442bd4d7a99e2a39a7ea
-ms.sourcegitcommit: 5d4e99f4c8f42f5f543e52cb9beb9fb13ec56c5f
+ms.openlocfilehash: 6a2ad0da76ae939310c2c99fc0d8f577e00741fc63062cd0fa606761ac02866a
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/19/2021
-ms.locfileid: "112403884"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118969970"
 ---
 # <a name="systempropgroupadvanced"></a>System.PropGroup.Advanced
 

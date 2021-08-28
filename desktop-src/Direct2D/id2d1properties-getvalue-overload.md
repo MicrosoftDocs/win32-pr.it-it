@@ -1,9 +1,9 @@
 ---
-title: Metodi GetValue ID2D1Properties
+title: Metodi GetValue id2D1Properties
 description: Ottiene il valore della proprietà in base all'indice.
 ms.assetid: 27535422-C213-4595-915E-445F72416C5E
 keywords:
-- Metodi di overload GetValue metodi Direct2D
+- Metodi di overload GetValue Direct2D
 topic_type:
 - apiref
 api_type:
@@ -12,14 +12,14 @@ ms.topic: reference
 ms.date: 05/31/2018
 api_name: ''
 api_location: ''
-ms.openlocfilehash: c96166473109d6909457b9ac7a645b6e00e15698
-ms.sourcegitcommit: 592c9bbd22ba69802dc353bcb5eb30699f9e9403
+ms.openlocfilehash: 1f84d127f892a5182a3ff32d5d80a349097b200b1a9fb1fc2f5ccf8f7fe9ba54
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/20/2020
-ms.locfileid: "106300096"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119917401"
 ---
-# <a name="id2d1propertiesgetvalue-methods"></a>Metodi ID2D1Properties:: GetValue
+# <a name="id2d1propertiesgetvalue-methods"></a>Metodi ID2D1Properties::GetValue
 
 Ottiene il valore della proprietà in base all'indice.
 
@@ -29,11 +29,11 @@ Ottiene il valore della proprietà in base all'indice.
 
 | Metodo                                                                                      | Descrizione                                                                                |
 |:--------------------------------------------------------------------------------------------|:-------------------------------------------------------------------------------------------|
-| [**GetValue (U)**](/windows/win32/api/d2d1_1/nf-d2d1_1-id2d1properties-getvalue(u))                                            | Ottiene il valore della proprietà in base all'indice. Si tratta di un overload del modello.<br/>           |
-| [**GetValue (U, T \* )**](/windows/win32/api/d2d1_1/nf-d2d1_1-id2d1properties-getvalue(u_t))                                       | Ottiene il valore della proprietà in base all'indice. Si tratta di un overload del modello.<br/>           |
-| [**GetValue (U, BYTE \* , UInt32)**](/windows/win32/api/d2d1_1/nf-d2d1_1-id2d1properties-getvalue(u_byte_uint32))                            | Ottiene il valore della proprietà specificata in base all'indice. Si tratta di un overload del modello.<br/> |
-| [**GetValue (UINT32, BYTE \* , UInt32)**](/windows/win32/api/d2d1_1/nf-d2d1_1-id2d1properties-getvalue(uint32_byte_uint32))                        | Ottiene il valore della proprietà specificata in base all'indice.<br/>                              |
-| [**GetValue (UINT32, \_ \_ tipo di proprietà d2d1, byte \* , UInt32)**](/windows/win32/api/d2d1_1/nf-d2d1_1-id2d1properties-getvalue(uint32_byte_uint32)) | Ottiene il valore della proprietà specificata in base all'indice.<br/>                              |
+| [**GetValue(U)**](/windows/win32/api/d2d1_1/nf-d2d1_1-id2d1properties-getvalue(u))                                            | Ottiene il valore della proprietà in base all'indice. Si tratta di un overload del modello.<br/>           |
+| [**GetValue(U, T \* )**](/windows/win32/api/d2d1_1/nf-d2d1_1-id2d1properties-getvalue(u_t))                                       | Ottiene il valore della proprietà in base all'indice. Si tratta di un overload del modello.<br/>           |
+| [**GetValue(U, \* BYTE, UINT32)**](/windows/win32/api/d2d1_1/nf-d2d1_1-id2d1properties-getvalue(u_byte_uint32))                            | Ottiene il valore della proprietà specificata in base all'indice. Si tratta di un overload del modello.<br/> |
+| [**GetValue(UINT32, \* BYTE, UINT32)**](/windows/win32/api/d2d1_1/nf-d2d1_1-id2d1properties-getvalue(uint32_byte_uint32))                        | Ottiene il valore della proprietà specificata in base all'indice.<br/>                              |
+| [**GetValue(UINT32, TIPO DI PROPRIETÀ D2D1, \_ \_ \* BYTE, UINT32)**](/windows/win32/api/d2d1_1/nf-d2d1_1-id2d1properties-getvalue(uint32_byte_uint32)) | Ottiene il valore della proprietà specificata in base all'indice.<br/>                              |
 
 
 

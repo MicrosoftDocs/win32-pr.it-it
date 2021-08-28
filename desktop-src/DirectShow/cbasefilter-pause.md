@@ -16,12 +16,12 @@ api_location:
 - Strmbase.dll
 - Strmbasd.lib
 - Strmbasd.dll
-ms.openlocfilehash: ee91393a574d0135e66e5a9c1e1e6b0325a0b4de
-ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
+ms.openlocfilehash: daa6ba7a4c2effd1928a59281e299f6203e5dd2bcd1f7aca975efc10ab633a20
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/28/2021
-ms.locfileid: "108120089"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120056411"
 ---
 # <a name="cbasefilterpause-method"></a>Metodo CBaseFilter.Pause
 
@@ -46,7 +46,7 @@ Restituisce S OK in caso di esito positivo o un \_ **valore HRESULT** che indica
 
 ## <a name="remarks"></a>Commenti
 
-Questo metodo chiama [**il metodo CBasePin::Active**](cbasepin-active.md) su ogni segnaposto connesso del filtro.
+Questo metodo chiama il [**metodo CBasePin::Active**](cbasepin-active.md) su ognuno dei pin connessi del filtro.
 
 ## <a name="requirements"></a>Requisiti
 
@@ -54,7 +54,7 @@ Questo metodo chiama [**il metodo CBasePin::Active**](cbasepin-active.md) su ogn
 
 | Requisito | Valore |
 |--------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Intestazione<br/>  | <dl> <dt>Amfilter.h (include Streams.h)</dt> </dl>                                                                                  |
+| Intestazione<br/>  | <dl> <dt>Amfilter.h (include Flussi.h)</dt> </dl>                                                                                  |
 | Libreria<br/> | <dl> <dt>Strmbase.lib (build di vendita al dettaglio); </dt> <dt>Strmbasd.lib (build di debug)</dt> </dl> |
 
 

@@ -13,18 +13,18 @@ api_name:
 api_type:
 - NA
 api_location: ''
-ms.openlocfilehash: 67877cfc07a247d6b5e3309270d145bc64fbb814416fa4288c6e85ff2ad2e986
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 9ba975b9b35cd000844b3956e141c86b1be52531
+ms.sourcegitcommit: 61a4c522182aa1cacbf5669683d9570a3bf043b2
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "118315137"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "122884999"
 ---
 # <a name="standard-qualifiers"></a>Qualificatori standard
 
 Tutte le implementazioni conformi a CIM devono gestire un set standard di qualificatori. Per qualsiasi oggetto specifico non sono elencati tutti i qualificatori. In genere, le classi di estensione forniscono qualificatori aggiuntivi per facilitare il provisioning di istanze di classe e altre operazioni sulla classe.
 
-È responsabilità del provider applicare i qualificatori. WMI non impone qualificatori, ma li usa solo per informare l'utente sull'uso della proprietà.
+È responsabilità del provider applicare i qualificatori. WMI non impone qualificatori, ma li usa solo per informare l'utente sulla modalità di utilizzo della proprietà.
 
 > [!Note]  
 > WMI è conforme alla specifica CIM 2.5.
@@ -42,7 +42,7 @@ Di seguito sono elencati i qualificatori standard WMI.
 
 <dt>
 
-<span id="Abstract"></span><span id="abstract"></span><span id="ABSTRACT"></span>**astratto**
+<span id="Abstract"></span><span id="abstract"></span><span id="ABSTRACT"></span>**Astratto**
 </dt> <dd>
 
 Tipo di dati: **booleano**
@@ -142,7 +142,7 @@ Si applica a: metodi
 
 Indica se il metodo crea istanze. Questi metodi non sono vincolati ad agire su una singola istanza o su una singola classe. Ad esempio, un costruttore può creare istanze di associazione e istanze della classe che definisce il costruttore.
 
-Il **qualificatore** Costruttore è destinato solo alle informazioni e non è previsto che sia agito dal gestore di oggetti. Il gestore oggetti non deve chiamare i metodi del costruttore quando viene creato un oggetto . Inoltre, quando viene chiamato un costruttore, il gestore oggetti non deve richiamare alcun metodo costruttore definito per qualsiasi classe padre della classe originale. Il valore predefinito è **FALSE.**
+Il **qualificatore** Costruttore è destinato solo alle informazioni e non è previsto che sia agito dal gestore oggetti. Il gestore oggetti non deve chiamare i metodi del costruttore quando viene creato un oggetto . Inoltre, quando viene chiamato un costruttore, il gestore oggetti non deve richiamare alcun metodo costruttore definito per qualsiasi classe padre della classe originale. Il valore predefinito è **FALSE.**
 
 </dd> <dt>
 
@@ -177,7 +177,7 @@ Utilizzo: questo qualificatore può essere usato solo se è presente il qualific
 
 Tipo di dati: **stringa**
 
-Si applica a: any
+Si applica a: qualsiasi
 
 Descrizione di un elemento denominato. Il valore predefinito è **NULL.**
 
@@ -192,14 +192,14 @@ Si applica a: metodi
 
 Indica se il metodo elimina le istanze. I metodi che usano il qualificatore **distruttore** eliminano le istanze a cui viene applicato il distruttore e non sono vincolati ad agire su una singola istanza o classe. Ad esempio, un distruttore potrebbe eliminare le istanze di associazione e le istanze della classe che definisce il distruttore.
 
-Il **qualificatore distruttore** è destinato solo alle informazioni e non è previsto che sia agito dal gestore oggetti. Non è obbligatorio che il gestore di oggetti chiami un metodo con il **qualificatore Distruttore** quando un'istanza viene eliminata. Inoltre, quando viene chiamato un distruttore, il gestore oggetti non deve richiamare alcun metodo del distruttore definito per qualsiasi classe padre della classe originale. Il valore predefinito è **FALSE.**
+Il **qualificatore del** distruttore è destinato solo alle informazioni e non è previsto che sia utilizzato dal gestore oggetti. Non è necessario che il gestore di oggetti chiami un metodo con il qualificatore **di distruttore** quando viene eliminata un'istanza. Inoltre, quando viene chiamato un distruttore, il gestore oggetti non deve richiamare metodi di distruttore definiti per qualsiasi classe padre della classe originale. Il valore predefinito è **FALSE.**
 
 </dd> <dt>
 
 <span id="DisplayName"></span><span id="displayname"></span><span id="DISPLAYNAME"></span>**Displayname**
 </dt> <dd>
 
-Tipo di dati: **stringa**
+Tipo di dati: **string**
 
 Si applica a: any
 
@@ -210,15 +210,15 @@ Nome visualizzato nell'interfaccia utente anziché il nome effettivo dell'elemen
 <span id="EmbeddedInstance"></span><span id="embeddedinstance"></span><span id="EMBEDDEDINSTANCE"></span>**EmbeddedInstance**
 </dt> <dd>
 
-Tipo di dati: **stringa**
+Tipo di dati: **string**
 
 Si applica a: any
 
-L'elemento di tipo stringa completo contiene un'istanza incorporata. Il valore del qualificatore specifica il nome di una classe CIM nello stesso spazio dei nomi della classe proprietaria dell'elemento completo. L'istanza incorporata è un'istanza della classe specificata, incluse le istanze delle relative sottoclassi. Il valore predefinito è **NULL.**
+L'elemento di tipo stringa qualificato contiene un'istanza incorporata. Il valore del qualificatore specifica il nome di una classe CIM nello stesso spazio dei nomi della classe proprietaria dell'elemento qualificato. L'istanza incorporata è un'istanza della classe specificata, incluse le istanze delle relative sottoclassi. Il valore predefinito è **NULL.**
 
 </dd> <dt>
 
-<span id="Gauge"></span><span id="gauge"></span><span id="GAUGE"></span>**misuratore**
+<span id="Gauge"></span><span id="gauge"></span><span id="GAUGE"></span>**Misuratore**
 </dt> <dd>
 
 Tipo di dati: **booleano**
@@ -227,7 +227,7 @@ Si applica a: any
 
 Indica se la proprietà rappresenta un numero intero non negativo, che può aumentare o diminuire, ma non superare mai un valore massimo. Il valore predefinito è **FALSE.**
 
-Il valore massimo della proprietà non può essere maggiore di 2^*n* - 1. *N* può essere 8, 16, 32 o 64 a seconda del tipo di dati della proprietà a cui viene applicato questo qualificatore. Il valore di un misuratore ha il valore massimo ogni volta che le informazioni modellate sono maggiori o uguali a tale valore massimo. Se le informazioni modellate successivamente diminuiscono al di sotto del valore massimo, anche il misuratore diminuisce. Questo qualificatore è applicabile solo alle proprietà con un tipo di dati Integer senza segno.
+Il valore massimo della proprietà non può essere maggiore di 2^*n* - 1. *N* può essere 8, 16, 32 o 64 a seconda del tipo di dati della proprietà a cui viene applicato questo qualificatore. Il valore di un misuratore ha il valore massimo ogni volta che le informazioni modellate sono maggiori o uguali a tale valore massimo. Se le informazioni modellate successivamente diminuiscono al di sotto del valore massimo, anche il misuratore diminuisce. Questo qualificatore è applicabile solo alle proprietà con un tipo di dati unsigned integer.
 
 </dd> <dt>
 
@@ -260,7 +260,7 @@ Tipo di dati: **booleano**
 
 Si applica a: proprietà, riferimenti
 
-Indica se la proprietà fa parte dell'handle dello spazio dei nomi. Se più proprietà hanno il [**qualificatore Key,**](key-qualifier.md) tutte queste proprietà formano collettivamente la chiave (una chiave composta). Quando vengono riunite, le proprietà chiave devono fornire un riferimento univoco per ogni istanza della classe. Se questo qualificatore viene inserito in una proprietà, è consentito solo il **valore TRUE.**
+Indica se la proprietà fa parte dell'handle dello spazio dei nomi. Se più proprietà hanno il [**qualificatore Key,**](key-qualifier.md) tutte queste proprietà formano collettivamente la chiave (una chiave composta). Quando vengono riunite, le proprietà chiave devono fornire un riferimento univoco per ogni istanza della classe. Se questo qualificatore viene inserito in una proprietà, è consentito solo il valore **TRUE.**
 
 </dd> <dt>
 
@@ -269,7 +269,7 @@ Indica se la proprietà fa parte dell'handle dello spazio dei nomi. Se più prop
 
 Si applica a: proprietà
 
-Indica che la proprietà è a elevato utilizzo di risorse per restituire e richiede molto tempo e memoria del processore. WMI migliora le prestazioni delle query non tentando di restituire le proprietà contrassegnate con il qualificatore **Lazy.**
+Indica che la proprietà è a elevato utilizzo di risorse da restituire e richiede una grande quantità di memoria e tempo del processore. WMI migliora le prestazioni delle query non tentando di restituire le proprietà contrassegnate con il qualificatore **lazy.**
 
 </dd> <dt>
 
@@ -280,7 +280,7 @@ Tipo di dati: **matrice di stringhe**
 
 Si applica a: classi, proprietà, associazioni, indicazioni, riferimenti
 
-Set di valori che indicano un percorso in cui è possibile trovare altre informazioni sull'origine di una proprietà, una classe, un'associazione, un'indicazione o un riferimento. La stringa di mapping può essere un percorso di directory, un URL, una chiave del Registro di sistema, un file di inclusione, un riferimento a una classe CIM o un altro formato. Il valore predefinito è **NULL.**
+Set di valori che indicano un percorso a una posizione in cui è possibile trovare altre informazioni sull'origine di una proprietà, una classe, un'associazione, un'indicazione o un riferimento. La stringa di mapping può essere un percorso di directory, un URL, una chiave del Registro di sistema, un file di inclusione, un riferimento a una classe CIM o un altro formato. Il valore predefinito è **NULL.**
 
 </dd> <dt>
 
@@ -291,7 +291,7 @@ Tipo di dati: **int**
 
 Si applica a: riferimenti
 
-Numero massimo di valori che un determinato riferimento può avere per ogni set di altri valori di riferimento nell'associazione. Il valore predefinito è **NULL.** Ad esempio, se un'associazione mette in relazione istanze A a istanze B e deve essere presente al massimo un'istanza A per ogni istanza B, il riferimento ad A deve avere un massimo di un qualificatore.
+Numero massimo di valori che un riferimento specificato può avere per ogni set di altri valori di riferimento nell'associazione. Il valore predefinito è **NULL.** Ad esempio, se un'associazione mette in relazione le istanze A con le istanze B e deve essere presente al massimo un'istanza A per ogni istanza B, il riferimento ad A deve avere un massimo di un qualificatore.
 
 </dd> <dt>
 
@@ -302,9 +302,9 @@ Tipo di dati: **int**
 
 Si applica a: proprietà, metodi, parametri
 
-Lunghezza massima (in caratteri) di un **elemento di** dati stringa e indica il supporto di matrici a lunghezza fissa.
+Lunghezza massima (in caratteri) di un elemento **di** dati stringa e indica il supporto di matrici a lunghezza fissa.
 
-Se viene rilevata una matrice a lunghezza fissa, il qualificatore **MaxLen** contiene la lunghezza fissa trovata durante l'analisi. Se viene rilevata una matrice a lunghezza variabile, questo qualificatore non viene usato. **MaxLen** viene usato per suggerire il numero massimo di elementi che devono essere archiviati in una matrice. Quando si esegue l'override del valore predefinito, è possibile specificare qualsiasi valore intero senza segno (**uint32**). Il valore **NULL** (impostazione predefinita) implica una lunghezza illimitata.
+Se viene rilevata una matrice a lunghezza fissa, il qualificatore **MaxLen** contiene la lunghezza fissa trovata durante l'analisi. Se viene rilevata una matrice a lunghezza variabile, questo qualificatore non viene usato. **MaxLen** viene usato per suggerire il numero massimo di elementi che devono essere archiviati in una matrice. Quando si esegue l'override del valore predefinito, è possibile specificare qualsiasi valore intero senza segno (**uint32**). Un valore **NULL (impostazione** predefinita) implica una lunghezza illimitata.
 
 </dd> <dt>
 
@@ -315,7 +315,7 @@ Tipo di dati: **int**
 
 Si applica a: proprietà, metodi, parametri
 
-Valore massimo dell'oggetto . Il valore predefinito è **NULL.**
+Valore massimo dell'oggetto. Il valore predefinito è **NULL.**
 
 </dd> <dt>
 
@@ -361,7 +361,7 @@ Le proprietà dell'oggetto vengono identificate usando la sintassi seguente.
 <span id="Nonlocal"></span><span id="nonlocal"></span><span id="NONLOCAL"></span>**Non locale**
 </dt> <dd>
 
-Tipo di dati: **stringa**
+Tipo di dati: **string**
 
 Si applica a: riferimenti
 
@@ -374,11 +374,11 @@ Utilizzo: questo qualificatore non può essere usato con il **qualificatore Nonl
 <span id="NonlocalType"></span><span id="nonlocaltype"></span><span id="NONLOCALTYPE"></span>**NonlocalType**
 </dt> <dd>
 
-Tipo di dati: **stringa**
+Tipo di dati: **string**
 
 Si applica a: riferimenti
 
-Tipo di posizione di un'istanza. Il valore è <namespacetype> . Il valore predefinito è **NULL.**
+Tipo di posizione di un'istanza. Il valore è &lt; namespacetype &gt; . Il valore predefinito è **NULL.**
 
 Utilizzo: questo qualificatore non può essere usato con il **qualificatore non** locale.
 
@@ -393,7 +393,7 @@ Si applica a: proprietà
 
 Valore che indica che la proprietà associata è **NULL** (la proprietà non ha un valore valido o significativo). Il valore predefinito è **NULL.**
 
-Le convenzioni e le restrizioni usate per definire i **valori NULL** sono le stesse applicabili al qualificatore **ValueMap.** Si noti che questo qualificatore non può essere sottoposto a override. Non è ragionevole consentire a una sottoclasse di restituire un **valore NULL** diverso da quello della classe padre.
+Le convenzioni e le restrizioni usate per definire i **valori NULL** sono le stesse applicabili al qualificatore **ValueMap.** Si noti che non è possibile eseguire l'override di questo qualificatore. Non è ragionevole consentire a una sottoclasse di restituire un **valore NULL** diverso da quello della classe padre.
 
 </dd> <dt>
 
@@ -408,7 +408,7 @@ Indica se il parametro restituisce valori da un metodo. Il valore predefinito è
 
 </dd> <dt>
 
-<span id="Override"></span><span id="override"></span><span id="OVERRIDE"></span>**prevalere**
+<span id="Override"></span><span id="override"></span><span id="OVERRIDE"></span>**Prevalere**
 </dt> <dd>
 
 Tipo di dati: **stringa**
@@ -484,7 +484,7 @@ Si applica a: classi, associazioni, indicazioni, schemi
 
 Numero di revisione secondario dell'oggetto schema. Il valore predefinito è **NULL.**
 
-Utilizzo: il **qualificatore Di** versione deve essere presente per specificare il numero di versione principale quando viene usato il **qualificatore** Revisione.
+Utilizzo: il **qualificatore Versione** deve essere presente per specificare il numero di versione principale quando viene usato il **qualificatore** Revisione.
 
 </dd> <dt>
 
@@ -499,7 +499,7 @@ Nome dello schema in cui è definita la funzionalità. Il valore predefinito è 
 
 </dd> <dt>
 
-<span id="Source"></span><span id="source"></span><span id="SOURCE"></span>**fonte**
+<span id="Source"></span><span id="source"></span><span id="SOURCE"></span>**Fonte**
 </dt> <dd>
 
 Tipo di dati: **stringa**
@@ -508,7 +508,7 @@ Si applica a: classi, associazioni, indicazioni, riferimenti
 
 Posizione di un'istanza di . Il valore predefinito è **NULL.**
 
-Il valore del qualificatore è <*namespacetype*>://<*namespacehandle*>.
+Il valore del qualificatore è <*namespacetype*>://<*namespacehandle>.*
 
 Utilizzo: il **qualificatore Source** non può essere usato con il **qualificatore SourceType.**
 
@@ -610,7 +610,7 @@ Si applica a: proprietà, metodi, parametri
 
 Set di valori che traslano un valore intero in una stringa associata. Il valore predefinito è **NULL.**
 
-Questa proprietà specifica anche una matrice di valori stringa di cui eseguire il mapping a una proprietà di enumerazione. Questo qualificatore può essere applicato a una proprietà integer o a una proprietà stringa e il mapping può essere implicito o esplicito. Se il mapping è implicito, i valori delle proprietà integer o stringa rappresentano le posizioni ordinali nella **matrice Values.** Se il mapping è esplicito, la proprietà deve essere un numero intero e i valori validi della proprietà sono elencati nella matrice definita dal qualificatore **ValueMap.** Per altre informazioni, vedere [Mappa valori](value-map.md).
+Questa proprietà specifica anche una matrice di valori stringa di cui eseguire il mapping a una proprietà di enumerazione. Questo qualificatore può essere applicato a una proprietà integer o a una proprietà stringa e il mapping può essere implicito o esplicito. Se il mapping è implicito, i valori di proprietà integer o stringa rappresentano le posizioni ordinali nella **matrice Values.** Se il mapping è esplicito, la proprietà deve essere un numero intero e i valori validi della proprietà sono elencati nella matrice definita dal qualificatore **ValueMap.** Per altre informazioni, vedere [Mappa valori](value-map.md).
 
 Se non è presente un qualificatore **ValueMap,** la matrice **Values** viene indicizzata (relativa a zero) usando il valore nella proprietà associata, nel tipo restituito del metodo o nel parametro del metodo. Se è **presente un qualificatore ValueMap,** l'indice dei valori viene definito dalla posizione del valore della proprietà nella mappa valori.
 
@@ -660,7 +660,7 @@ Tipo di dati: **booleano**
 
 Si applica a: proprietà
 
-Indica se la proprietà è scrivibile durante la creazione dell'istanza. Questo qualificatore può essere usato insieme al **qualificatore WriteAtCreate.** Il valore predefinito è **FALSE.**
+Indica se la proprietà è scrivibile durante la creazione dell'istanza. Questo qualificatore può essere usato insieme al qualificatore **WriteAtCreate.** Il valore predefinito è **FALSE.**
 
 </dd> <dt>
 
@@ -671,13 +671,13 @@ Tipo di dati: **booleano**
 
 Si applica a: proprietà
 
-Indica se la proprietà è scrivibile in fase di aggiornamento dell'istanza. Questo qualificatore può essere usato insieme al **qualificatore WriteAtCreate.** Il valore predefinito è **FALSE.**
+Indica se la proprietà è scrivibile in fase di aggiornamento dell'istanza. Questo qualificatore può essere usato insieme al qualificatore **WriteAtCreate.** Il valore predefinito è **FALSE.**
 
 </dd> </dl>
 
 ## <a name="examples"></a>Esempio
 
-Per altre informazioni sul recupero di qualificatori, vedere l'esempio di codice [di PowerShell Get-WmiClassMethodsAndWritableWmiProperties](https://Gallery.TechNet.Microsoft.Com/10670e14-4cf1-4ce5-99d0-fc4ca80dac2c) in TechNet Gallery.
+Per altre informazioni sul recupero dei qualificatori, vedere l'esempio di codice [di PowerShell Get-WmiClassMethodsAndWritableWmiProperties](https://Gallery.TechNet.Microsoft.Com/10670e14-4cf1-4ce5-99d0-fc4ca80dac2c) in TechNet Gallery.
 
 ## <a name="requirements"></a>Requisiti
 

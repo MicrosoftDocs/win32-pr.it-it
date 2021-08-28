@@ -1,23 +1,23 @@
 ---
-description: La \_ classe CIM SettingCheck espone i metodi seguenti.
+description: La classe CIM \_ SettingCheck espone i metodi seguenti.
 ms.assetid: 6E6F170A-A5D1-49FA-B258-5D05EA3777C1
 ms.tgt_platform: multiple
-title: Metodi di CIM_SettingCheck
+title: metodi CIM_SettingCheck
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: c447938946b1b63ba8272159d37cb52be5c3d196
-ms.sourcegitcommit: c7add10d695482e1ceb72d62b8a4ebd84ea050f7
+ms.openlocfilehash: ccf2f6120c0567f19e76ce3c55e6e8f9d5556715d67fe3a6eaf7b17937878a7e
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104401429"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119919561"
 ---
-# <a name="cim_settingcheck-methods"></a>\_Metodi CIM SettingCheck
+# <a name="cim_settingcheck-methods"></a>Metodi \_ CiM SettingCheck
 
-La classe [**CIM \_ SettingCheck**](cim-settingcheck.md) espone i metodi seguenti.
+La [**classe CIM \_ SettingCheck**](cim-settingcheck.md) espone i metodi seguenti.
 
 > [!IMPORTANT]
-> Le classi CIM (Common Information Model) DMTF (Distributed Management Task Force) sono le classi padre sulle quali vengono compilate le classi WMI. Attualmente WMI supporta solo gli [schemi della versione CIM 2. x](https://dmtf.org/standards/cim/schemas).
+> Le classi CIM (Distributed Management Task Force) DMTF (Distributed Management Task Force) Common Information Model sono le classi padre su cui vengono compilate le classi WMI. WMI supporta attualmente solo gli [schemi della versione CIM 2.x](https://dmtf.org/standards/cim/schemas).
 
  
 

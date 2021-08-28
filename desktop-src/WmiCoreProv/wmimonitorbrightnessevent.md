@@ -1,5 +1,5 @@
 ---
-description: Rappresenta una modifica della luminosità di un monitoraggio.
+description: Rappresenta una modifica della luminosità di un monitor.
 ms.assetid: c2eb5630-a52f-4ad4-aaee-1cc8afef8c9e
 title: Classe WmiMonitorBrightnessEvent
 ms.topic: reference
@@ -16,16 +16,16 @@ api_type:
 - DllExport
 api_location:
 - WmiProv.dll
-ms.openlocfilehash: 7e53f90627c959db0140b01cf3b3d385afcc6e73
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 4affedabdb7fde7cec93d3cf8eb675f343054635eb0b4a504d74d96dc3eb8d42
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "106315742"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118321409"
 ---
 # <a name="wmimonitorbrightnessevent-class"></a>Classe WmiMonitorBrightnessEvent
 
-La classe di evento **WmiMonitorBrightnessEvent** WMI rappresenta una modifica della luminosità di un monitoraggio.
+La **classe di evento WMI WmiMonitorBrightnessEvent** rappresenta una modifica della luminosità di un monitoraggio.
 
 ## <a name="syntax"></a>Sintassi
 
@@ -40,20 +40,20 @@ class WmiMonitorBrightnessEvent : WMIEvent
 
 ## <a name="members"></a>Members
 
-La classe **WmiMonitorBrightnessEvent** dispone di questi tipi di membri:
+La **classe WmiMonitorBrightnessEvent** ha questi tipi di membri:
 
 -   [Proprietà](#properties)
 
 ### <a name="properties"></a>Proprietà
 
-La classe **WmiMonitorBrightnessEvent** dispone di queste proprietà.
+La **classe WmiMonitorBrightnessEvent** ha queste proprietà.
 
 <dl> <dt>
 
 **Attivo**
 </dt> <dd> <dl> <dt>
 
-Tipo di dati: **Boolean**
+Tipo di dati: **booleano**
 </dt> <dt>
 
 Tipo di accesso: sola lettura
@@ -66,20 +66,20 @@ Indica il monitoraggio attivo.
 **Luminosità**
 </dt> <dd> <dl> <dt>
 
-Tipo di dati: **Uint8**
+Tipo di dati: **uint8**
 </dt> <dt>
 
 Tipo di accesso: sola lettura
 </dt> </dl>
 
-Luminosità del monitoraggio corrente come percentuale.
+Luminosità del monitor corrente come percentuale.
 
 </dd> <dt>
 
 **InstanceName**
 </dt> <dd> <dl> <dt>
 
-Tipo di dati: **String**
+Tipo di dati: **stringa**
 </dt> <dt>
 
 Tipo di accesso: sola lettura
@@ -88,7 +88,7 @@ Tipo di accesso: sola lettura
 Qualificatori: **chiave**
 </dt> </dl>
 
-Nome dell'istanza di monitoraggio specifica.
+Nome dell'istanza del monitoraggio specifica.
 
 </dd> </dl>
 
@@ -100,8 +100,8 @@ Nome dell'istanza di monitoraggio specifica.
 |-------------------------------------|----------------------------------------------------------------------------------------|
 | Client minimo supportato<br/> | Windows Vista<br/>                                                               |
 | Server minimo supportato<br/> | Windows Server 2008<br/>                                                         |
-| Spazio dei nomi<br/>                | \\WMI radice<br/>                                                                   |
-| MOF<br/>                      | <dl> <dt>WmiCore. mof</dt> </dl> |
+| Spazio dei nomi<br/>                | Wmi \\ radice<br/>                                                                   |
+| MOF<br/>                      | <dl> <dt>WmiCore.mof</dt> </dl> |
 | DLL<br/>                      | <dl> <dt>WmiProv.dll</dt> </dl> |
 
 

@@ -10,12 +10,12 @@ keywords:
 - Area FileList
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 73ebe106bdada4da55eef8891a3c93ee82aba3cc4da9194e1fcd4c7e71bcd4e3
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: ac85478bd42737f0a240b356bb6b3b73e838a8ee
+ms.sourcegitcommit: 61a4c522182aa1cacbf5669683d9570a3bf043b2
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "118745688"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "122884526"
 ---
 # <a name="customizing-a-folders-web-view"></a>Personalizzazione della visualizzazione Web di una cartella
 
@@ -31,7 +31,7 @@ Una visualizzazione Web è un modo potente e flessibile per usare Windows Explor
 
 ## <a name="introduction"></a>Introduzione
 
-Windows offre agli utenti due modi principali per visualizzare ed esplorare lo spazio dei nomi shell. L'interfaccia più familiare, lo stile classico, è simile a quella Windows File Manager. Il riquadro destro elenca i contenuti della cartella attualmente selezionata in uno dei cinque formati seguenti: Icona grande, Icona piccola, Elenco, Dettagli e Anteprima. La differenza principale rispetto Windows File Manager è il riquadro sinistro, che ha un aspetto molto simile alla barra esplora risorse Windows Internet Explorer. Può essere ridimensionata o rimossa e può visualizzare diversi riquadri oltre al noto albero file system, ad esempio un riquadro di ricerca.
+Windows offre agli utenti due modi principali per visualizzare ed esplorare lo spazio dei nomi shell. La più familiare, lo stile classico, è simile al noto Windows File Manager. Il riquadro destro elenca i contenuti della cartella attualmente selezionata in uno dei cinque formati seguenti: Icona grande, Icona piccola, Elenco, Dettagli e Anteprima. La differenza principale rispetto Windows File Manager è il riquadro sinistro, che ha un aspetto molto simile alla barra esplora risorse Windows Internet Explorer. Può essere ridimensionata o rimossa e può visualizzare diversi riquadri oltre al noto albero file system, ad esempio un riquadro di ricerca.
 
 > [!Note]  
 > Le informazioni contenute in questo documento non si applicano Windows XP, le tecniche illustrate si applicano solo alle versioni precedenti di Windows.
@@ -52,7 +52,7 @@ La figura seguente mostra una visualizzazione Web della cartella Stampanti (illu
 
 Analogamente alle pagine Web convenzionali, le visualizzazioni Web sono controllate da un modello basato su HTML. La creazione di un modello di visualizzazione Web è quasi identica alla creazione di una pagina Web e offre lo stesso livello di flessibilità nel contenuto e nel layout delle informazioni. I modelli di visualizzazione Web possono usare html dinamico (DHTML) e script per rispondere a eventi, ad esempio un utente che fa clic su un elemento. Possono anche ospitare oggetti che consentono di ottenere e visualizzare informazioni dalla cartella o dal relativo contenuto.
 
-L'utente può scegliere una visualizzazione Web avviando  Windows Explorer, scegliendo Opzioni cartella dal **menu** Visualizza e selezionando questa opzione: Abilita contenuto Web **nelle cartelle**. Tuttavia, l'utente può anche avviare Internet Explorer e puntare il browser al file system facendo clic sul **menu** Visualizza, scegliendo Barra di Explorer **e** facendo clic su **Cartelle.** In una visualizzazione Web non c'è praticamente alcuna differenza tra Internet Explorer e Windows Explorer.
+L'utente può scegliere una visualizzazione Web avviando  Windows Explorer, scegliendo Opzioni cartella dal **menu** Visualizza e selezionando questa opzione: Abilita contenuto Web **nelle cartelle**. Tuttavia, l'utente può anche avviare Internet Explorer e puntare il browser al file system facendo clic sul **menu** Visualizza, scegliendo Barra di Explorer e facendo clic su **Cartelle.** In una visualizzazione Web non c'è praticamente alcuna differenza tra Internet Explorer e Windows Explorer.
 
 Sul lato sinistro del riquadro destro la visualizzazione Web Stampanti visualizza un banner con il nome e l'icona della cartella, seguito da un blocco di informazioni sulla cartella. Il consueto elenco di file occupa il lato destro della pagina.
 
@@ -66,7 +66,7 @@ Questo semplice esempio per la cartella Stampanti non è affatto l'unico modo pe
 
 ## <a name="using-the-web-view-template"></a>Uso del modello di visualizzazione Web
 
-La modalità di visualizzazione dei dati in una visualizzazione Web può essere personalizzata in modo limitato modificando il file Desktop.ini cartella. Per [informazioni dettagliate, vedere Personalizzazione Desktop.ini](/windows/desktop/shell/how-to-customize-folders-with-desktop-ini) cartelle con il servizio. Un modo molto più flessibile e potente per personalizzare una visualizzazione Web è creare un modello di visualizzazione Web personalizzato.
+La modalità di visualizzazione dei dati in una visualizzazione Web può essere personalizzata in modo limitato modificando il file Desktop.ini cartella. Per [informazioni dettagliate, vedere Personalizzazione Desktop.ini](/windows/desktop/shell/how-to-customize-folders-with-desktop-ini) cartelle con i file . Un modo molto più flessibile e potente per personalizzare una visualizzazione Web è creare un modello di visualizzazione Web personalizzato.
 
 Il modello di visualizzazione Web controlla ciò che viene visualizzato in una visualizzazione Web e come. Usa tecniche standard html, DHTML e di scripting per ottenere e visualizzare informazioni e interagire con l'utente. Questa sezione illustra come creare una visualizzazione Web esaminando un modello semplice, Generic.htt.
 
@@ -365,7 +365,7 @@ Quando una visualizzazione Web viene ridimensionata, la larghezza dell'area Info
 
 ### <a name="loading-and-initializing-the-web-view"></a>Caricamento e inizializzazione della visualizzazione Web
 
-Quando viene caricata una visualizzazione Web, il layout deve essere adattato all'area di visualizzazione disponibile. Poiché non è stato ancora selezionato alcun elemento, le visualizzazioni Web visualizzano in genere alcune informazioni predefinite che si applicano all'intera cartella. Per gestire l'inizializzazione, <BODY> il tag per Generic.htt rileva [l'evento onload](/previous-versions//ms531409(v=vs.85)) e chiama la **funzione Init.**
+Quando viene caricata una visualizzazione Web, il layout deve essere adattato all'area di visualizzazione disponibile. Poiché non è stato ancora selezionato alcun elemento, le visualizzazioni Web visualizzano in genere alcune informazioni predefinite che si applicano all'intera cartella. Per gestire l'inizializzazione, il tag BODY per &lt; &gt; Generic.htt rileva [l'evento onload](/previous-versions//ms531409(v=vs.85)) e chiama la **funzione Init.**
 
 
 ```
@@ -470,7 +470,7 @@ document.all.Info.style.pixelHeight = document.body.clientHeight
 
 ### <a name="retrieving-and-displaying-folder-information"></a>Recupero e visualizzazione di informazioni sulle cartelle
 
-Quando un utente seleziona un elemento, l'oggetto FileList genera un [evento SelectionChanged.](#retrieving-and-displaying-folder-information) Questo evento viene gestito da uno script JScript. Per semplicità, lo script disponibile in Generic.htt presuppone che sia possibile selezionare un solo elemento alla volta.
+Quando un utente seleziona un elemento, l'oggetto FileList genera un [evento SelectionChanged.](#retrieving-and-displaying-folder-information) Questo evento viene gestito da un JScript script. Per semplicità, lo script disponibile in Generic.htt presuppone che sia possibile selezionare un solo elemento alla volta.
 
 
 ```

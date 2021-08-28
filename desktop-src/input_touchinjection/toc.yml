@@ -1,7 +1,7 @@
 - name: Touch Injection
   href: touch-injection-portal.md
   items:
-    - name: Riferimento all'Injection tocco
+    - name: Informazioni di riferimento per l'inserimento del tocco
       href: touch-injection-reference.md
       items:
         - name: Costanti

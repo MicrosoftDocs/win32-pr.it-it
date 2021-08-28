@@ -1,11 +1,11 @@
 ---
 title: Proprietà bufferingTime di IWMPNetwork
-description: La proprietà bufferingTime Ottiene o imposta la quantità di tempo in millisecondi allocata per il buffering dei dati in ingresso prima che inizi la riproduzione.
+description: La proprietà bufferingTime ottiene o imposta la quantità di tempo in millisecondi allocata per il buffering dei dati in ingresso prima dell'inizio della riproduzione.
 ms.assetid: b5936b21-a17b-4801-a5fc-c6d6521e05aa
 keywords:
-- Finestra delle proprietà di bufferingTime Media Player
-- Proprietà di bufferingTime Media Player Windows, interfaccia IWMPNetwork
-- Interfaccia IWMPNetwork Windows Media Player, proprietà bufferingTime
+- BufferingTime - proprietà Windows Media Player
+- Proprietà bufferingTime Windows Media Player, interfaccia IWMPNetwork
+- Interfaccia IWMPNetwork Windows Media Player proprietà , bufferingTime
 topic_type:
 - apiref
 api_name:
@@ -16,16 +16,16 @@ api_type:
 - COM
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 8594d53797b028dd74a8ef11cb8f2fa64b3654cd
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: 3d224e35dd9c87dad627e71f2ae07d3d0b9e24ee1b094cfa5dea549e86c69a65
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "106324526"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119999991"
 ---
-# <a name="iwmpnetworkbufferingtime-property"></a>Proprietà IWMPNetwork:: bufferingTime
+# <a name="iwmpnetworkbufferingtime-property"></a>Proprietà IWMPNetwork::bufferingTime
 
-La proprietà **bufferingTime** Ottiene o imposta la quantità di tempo in millisecondi allocata per il buffering dei dati in ingresso prima che inizi la riproduzione.
+La **proprietà bufferingTime** ottiene o imposta la quantità di tempo in millisecondi allocata per il buffering dei dati in ingresso prima dell'inizio della riproduzione.
 
 ## <a name="syntax"></a>Sintassi
 
@@ -46,11 +46,11 @@ Public Property bufferingTime As System.Int32
 
 ## <a name="property-value"></a>Valore proprietà
 
-**System. Int32** che rappresenta il tempo di memorizzazione nel buffer, in millisecondi, compreso tra 0 e 60.000 e il valore predefinito 5.000.
+**System.Int32** che rappresenta il tempo di memorizzazione nel buffer in millisecondi, compreso tra zero e 60.000 con un valore predefinito di 5.000.
 
 ## <a name="examples"></a>Esempio
 
-Nell'esempio di codice seguente viene usato **bufferingTime** per specificare il numero di secondi allocati per il buffering dei dati in ingresso. Una casella di testo consente all'utente di immettere un nuovo valore per **bufferingTime** e la proprietà viene aggiornata in risposta all'evento Click di un pulsante. L'oggetto **AxWMPLib. AxWindowsMediaPlayer** è rappresentato dalla variabile denominata Player.
+Nell'esempio di codice seguente viene **utilizzato bufferingTime per** specificare il numero di secondi allocati per il buffering dei dati in ingresso. Una casella di testo consente all'utente di immettere un nuovo valore per **bufferingTime** e la proprietà viene aggiornata in risposta all'evento Click di un pulsante. **L'oggetto AxWMPLib.AxWindowsMediaPlayer** è rappresentato dalla variabile denominata player.
 
 
 ```CSharp
@@ -105,7 +105,7 @@ End Sub
 
 | Requisito | Valore |
 |----------------------|------------------------------------------------------------------------------------------------------------------------|
-| Versione<br/>   | Windows Media Player 9 serie o versione successiva<br/>                                                                      |
+| Versione<br/>   | Windows Media Player serie 9 o successive<br/>                                                                      |
 | Spazio dei nomi<br/> | **WMPLib**<br/>                                                                                                  |
 | Assembly<br/>  | <dl> <dt>Interop.WMPLib.dll (Interop.WMPLib.dll.dll)</dt> </dl> |
 

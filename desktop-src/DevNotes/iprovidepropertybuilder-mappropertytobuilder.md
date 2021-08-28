@@ -1,7 +1,7 @@
 ---
-description: Verifica se un generatore deve essere associato a una particolare proprietà.
+description: Controlla se un generatore deve essere associato a una determinata proprietà.
 ms.assetid: 8fab2dc2-3549-4559-b704-6783d929274e
-title: 'Metodo IProvidePropertyBuilder:: MapPropertyToBuilder'
+title: Metodo IProvidePropertyBuilder::MapPropertyToBuilder
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -13,16 +13,16 @@ api_type:
 - COM
 api_location:
 - Vsp.dll
-ms.openlocfilehash: 5fa755449bfb97940235fe45f9e299aa828e6faa
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: 35ff9e82164251c4490355bbf0499b7fa690415d388b95f7f9c7fd0e6bd7dd3c
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "106325214"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120001691"
 ---
-# <a name="iprovidepropertybuildermappropertytobuilder-method"></a>Metodo IProvidePropertyBuilder:: MapPropertyToBuilder
+# <a name="iprovidepropertybuildermappropertytobuilder-method"></a>Metodo IProvidePropertyBuilder::MapPropertyToBuilder
 
-Verifica se un generatore deve essere associato a una particolare proprietà.
+Controlla se un generatore deve essere associato a una determinata proprietà.
 
 ## <a name="syntax"></a>Sintassi
 
@@ -42,14 +42,14 @@ void MapPropertyToBuilder(
 
 <dl> <dt>
 
-*DISPID* \[ in\]
+*dispid* \[ Pollici\]
 </dt> <dd>
 
 DISPID della proprietà in questione.
 
 </dd> <dt>
 
-*pdwCtlBldType* \[ out\]
+*pdwCtlBldType* \[ Cambio\]
 </dt> <dd>
 
 Generatore di cui eseguire il mapping. Questo parametro può essere una combinazione dei valori seguenti.
@@ -58,7 +58,7 @@ Generatore di cui eseguire il mapping. Questo parametro può essere una combinaz
 
 | Valore                                                                                                                                                                                                                                                          | Significato                                                                       |
 |----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|-------------------------------------------------------------------------------|
-| <span id="CTLBLDTYPE_FSTDPROPBUILDER"></span><span id="ctlbldtype_fstdpropbuilder"></span><dl> <dt>**CTLBLDTYPE \_ FSTDPROPBUILDER**</dt> <dt>1</dt> </dl>    | Richiama un generatore di sistema standard (non supportato in Visual Studio).<br/> |
+| <span id="CTLBLDTYPE_FSTDPROPBUILDER"></span><span id="ctlbldtype_fstdpropbuilder"></span><dl> <dt>**CTLBLDTYPE \_ FSTDPROPBUILDER**</dt> <dt>1</dt> </dl>    | Richiamare un'system builder standard (non supportata in Visual Studio).<br/> |
 | <span id="CTLBLDTYPE_FINTERNALBUILDER"></span><span id="ctlbldtype_finternalbuilder"></span><dl> <dt>**CTLBLDTYPE \_ FINTERNALBUILDER**</dt> <dt>2</dt> </dl> | Richiamare un generatore personalizzato.<br/>                                           |
 | <span id="CTLBLDTYPE_EDITSOBJDIRECTLY"></span><span id="ctlbldtype_editsobjdirectly"></span><dl> <dt>**CTLBLDTYPE \_ EDITSOBJDIRECTLY**</dt> <dt>4</dt> </dl> | Il compilatore modifica l'oggetto. Si tratta di un comportamento comune.<br/>              |
 
@@ -68,7 +68,7 @@ Generatore di cui eseguire il mapping. Questo parametro può essere una combinaz
 
 </dd> <dt>
 
-*pbstrGuidBldr* \[ out\]
+*pbstrGuidBldr* \[ Cambio\]
 </dt> <dd>
 
 GUID che identifica il generatore per questa proprietà.
@@ -78,13 +78,13 @@ GUID che identifica il generatore per questa proprietà.
 *builderAvailable* \[ out, retval\]
 </dt> <dd>
 
-Questo parametro è **true** se questa proprietà supporta attualmente un generatore.
+Questo parametro è **TRUE** se questa proprietà supporta attualmente un generatore.
 
 </dd> </dl>
 
 ## <a name="return-value"></a>Valore restituito
 
-Restituisce un valore **HRESULT** .
+Restituisce un **valore HRESULT.**
 
 ## <a name="requirements"></a>Requisiti
 

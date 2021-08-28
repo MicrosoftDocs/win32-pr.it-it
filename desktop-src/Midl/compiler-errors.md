@@ -13,12 +13,12 @@ api_type:
 ms.topic: reference
 ms.date: 05/31/2018
 api_location: ''
-ms.openlocfilehash: 1f4f20e248ae714e4ebd948e9b600be2152c3197
-ms.sourcegitcommit: c276a8912787b2cda74dcf54eb96df961bb1188b
+ms.openlocfilehash: 04bfb8f3465849215711ff70b9d9d67e40817f4e
+ms.sourcegitcommit: 61a4c522182aa1cacbf5669683d9570a3bf043b2
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/20/2021
-ms.locfileid: "122626607"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "122884604"
 ---
 # <a name="compiler-errors"></a>Errori del compilatore
 
@@ -40,11 +40,11 @@ Durante la compilazione MIDL vengono generati i messaggi di errore seguenti:
 <tbody>
 <tr class="odd">
 <td><span id="MIDL2000"></span><span id="midl2000"></span><dl> <dt><strong>MIDL2000</strong></dt> </dl></td>
-<td><dl> <dt><span id="must_specify__c_ext_for_abstract_declarators"></span><span id="MUST_SPECIFY__C_EXT_FOR_ABSTRACT_DECLARATORS"></span>deve specificare /c_ext per i dichiaratori astratti</dt> <dd> I dichiaratori astratti rappresentano un'estensione Microsoft per RPC e non sono definiti nella RPC DCE. Pertanto, se il file include dichiaratori astratti, non è possibile eseguire la compilazione con l'opzione <a href="-osf.md"><strong>/osf,</strong></a> che impone una rigida compatibilità DCE. MIDL 3.0 e versioni successive usano <a href="-c-ext.md"><strong>l'opzione /c_ext</strong></a> come impostazione predefinita. <strong>L'opzione /osf</strong> disattiva l'opzione <strong>/c_ext</strong> . Per informazioni sui dichiaratori astratti, vedere <a href="/windows/desktop/Rpc/the-acf-body">Corpo ACF.</a><br/> </dd> </dl></td>
+<td><dl> <dt><span id="must_specify__c_ext_for_abstract_declarators"></span><span id="MUST_SPECIFY__C_EXT_FOR_ABSTRACT_DECLARATORS"></span>deve specificare /c_ext per i dichiaratori astratti</dt> <dd> I dichiaratori astratti rappresentano un'estensione Microsoft per RPC e non sono definiti in RPC DCE. Pertanto, se il file include dichiaratori astratti, non è possibile eseguire la compilazione con <a href="-osf.md"><strong>l'opzione /osf,</strong></a> che impone la compatibilità DCE rigida. MIDL versioni 3.0 e successive usano <a href="-c-ext.md"><strong>l'opzione /c_ext</strong></a> come impostazione predefinita. <strong>L'opzione /osf</strong> disattiva l'opzione <strong>/c_ext.</strong> Per informazioni sui dichiaratori astratti, vedere <a href="/windows/desktop/Rpc/the-acf-body">Corpo ACF</a>.<br/> </dd> </dl></td>
 </tr>
 <tr class="even">
 <td><span id="MIDL2001"></span><span id="midl2001"></span><dl> <dt><strong>MIDL2001</strong></dt> </dl></td>
-<td><dl> <dt><span id="instantiation_of_data_is_illegal__you_must_use__extern__or__static_"></span><span id="INSTANTIATION_OF_DATA_IS_ILLEGAL__YOU_MUST_USE__EXTERN__OR__STATIC_"></span>la creazione di un'istanza dei dati non è valida. è necessario usare &quot; extern &quot; o &quot; static&quot;</dt> <dd> La dichiarazione e l'inizializzazione nel file IDL non sono compatibili con RPC DCE. Questa funzionalità è un'estensione Microsoft che non è disponibile quando si esegue la compilazione in modalità DCE-compatibility (<a href="-osf.md"><strong>/osf</strong></a>).<br/> </dd> </dl></td>
+<td><dl> <dt><span id="instantiation_of_data_is_illegal__you_must_use__extern__or__static_"></span><span id="INSTANTIATION_OF_DATA_IS_ILLEGAL__YOU_MUST_USE__EXTERN__OR__STATIC_"></span>la creazione di un'istanza dei dati non è valida. è necessario usare &quot; extern &quot; o &quot; static&quot;</dt> <dd> La dichiarazione e l'inizializzazione nel file IDL non sono compatibili con RPC DCE. Questa funzionalità è un'estensione Microsoft che non è disponibile quando si esegue la compilazione in modalità dce-compatibility (<a href="-osf.md"><strong>/osf</strong></a>).<br/> </dd> </dl></td>
 </tr>
 <tr class="odd">
 <td><span id="MIDL2002"></span><span id="midl2002"></span><dl> <dt><strong>MIDL2002</strong></dt> </dl></td>
@@ -52,27 +52,27 @@ Durante la compilazione MIDL vengono generati i messaggi di errore seguenti:
 </tr>
 <tr class="even">
 <td><span id="MIDL2003"></span><span id="midl2003"></span><dl> <dt><strong>MIDL2003</strong></dt> </dl></td>
-<td><dl> <dt><span id="redefinition"></span><span id="REDEFINITION"></span>Ridefinizione</dt> <dd> Questo messaggio di errore può essere visualizzato nelle circostanze seguenti: un tipo è stato ridefinito; Un prototipo di procedura è stato ridefinito; esiste già un membro di una struttura o di un'unione con lo stesso nome. Nel prototipo esiste già un parametro con lo stesso nome.<br/> </dd> </dl></td>
+<td><dl> <dt><span id="redefinition"></span><span id="REDEFINITION"></span>Ridefinizione</dt> <dd> Questo messaggio di errore può essere visualizzato nelle circostanze seguenti: un tipo è stato ridefinito. un prototipo di routine è stato ridefinito; esiste già un membro di una struttura o di un'unione con lo stesso nome. Nel prototipo esiste già un parametro con lo stesso nome.<br/> </dd> </dl></td>
 </tr>
 <tr class="odd">
 <td><span id="MIDL2004"></span><span id="midl2004"></span><dl> <dt><strong>MIDL2004</strong></dt> </dl></td>
-<td><dl> <dt><span id="_auto_handle__binding_will_be_used"></span><span id="_AUTO_HANDLE__BINDING_WILL_BE_USED"></span>[auto_handle] verrà usata l'associazione</dt> <dd> Nessun tipo di handle è stato definito come tipo di handle predefinito. Il compilatore presuppone che verrà usato un handle automatico come handle di associazione per la procedura specificata.<br/> </dd> </dl></td>
+<td><dl> <dt><span id="_auto_handle__binding_will_be_used"></span><span id="_AUTO_HANDLE__BINDING_WILL_BE_USED"></span>Verrà usata l'associazione [auto_handle]</dt> <dd> Nessun tipo di handle è stato definito come tipo di handle predefinito. Il compilatore presuppone che come handle di associazione per la procedura specificata verrà usato un handle automatico.<br/> </dd> </dl></td>
 </tr>
 <tr class="even">
 <td><span id="MIDL2005"></span><span id="midl2005"></span><dl> <dt><strong>MIDL2005</strong></dt> </dl></td>
-<td><dl> <dt><span id="out_of_memory"></span><span id="OUT_OF_MEMORY"></span>memoria insufficiente</dt> <dd> Memoria insufficiente del compilatore durante la compilazione. Ridurre le dimensioni o la complessità del file IDL o allocare altra memoria al processo.<br/> </dd> </dl></td>
+<td><dl> <dt><span id="out_of_memory"></span><span id="OUT_OF_MEMORY"></span>Memoria insufficiente</dt> <dd> La memoria del compilatore è esaurita durante la compilazione. Ridurre le dimensioni o la complessità del file IDL o allocare più memoria al processo.<br/> </dd> </dl></td>
 </tr>
 <tr class="odd">
 <td><span id="MIDL2006"></span><span id="midl2006"></span><dl> <dt><strong>MIDL2006</strong></dt> </dl></td>
-<td><dl> <dt><span id="recursive_definition"></span><span id="RECURSIVE_DEFINITION"></span>definizione ricorsiva</dt> <dd> Una struttura o un'unione è stata definita in modo ricorsivo. Questo errore può verificarsi quando non viene specificata una specifica del puntatore in una definizione di struttura annidata.<br/> </dd> </dl></td>
+<td><dl> <dt><span id="recursive_definition"></span><span id="RECURSIVE_DEFINITION"></span>definizione ricorsiva</dt> <dd> Una struttura o un'unione è stata definita in modo ricorsivo. Questo errore può verificarsi quando viene mancata una specifica del puntatore in una definizione di struttura annidata.<br/> </dd> </dl></td>
 </tr>
 <tr class="even">
 <td><span id="MIDL2007"></span><span id="midl2007"></span><dl> <dt><strong>MIDL2007</strong></dt> </dl></td>
-<td><dl> <dt><span id="import_ignored__file_already_imported"></span><span id="IMPORT_IGNORED__FILE_ALREADY_IMPORTED"></span>importazione ignorata; file già importato</dt> <dd> L'importazione di un file IDL è un'operazione idempotente. Includerlo più di una volta non ha alcun effetto. Tutte le operazioni di importazione, ad esempio la prima, vengono ignorate.<br/> </dd> </dl></td>
+<td><dl> <dt><span id="import_ignored__file_already_imported"></span><span id="IMPORT_IGNORED__FILE_ALREADY_IMPORTED"></span>importazione ignorata; file già importato</dt> <dd> L'importazione di un file IDL è un'operazione idempotente. L'inclusione di più volte non ha alcun effetto. Tutte le operazioni di importazione, ad esempio la prima, vengono ignorate.<br/> </dd> </dl></td>
 </tr>
 <tr class="odd">
 <td><span id="MIDL2008"></span><span id="midl2008"></span><dl> <dt><strong>MIDL2008</strong></dt> </dl></td>
-<td><dl> <dt><span id="sparse_enums_require__c_ext_or__ms_ext"></span><span id="SPARSE_ENUMS_REQUIRE__C_EXT_OR__MS_EXT"></span>Le enumerazioni sparse richiedono /c_ext o /ms_ext</dt> <dd> L'assegnazione di valori alle costanti di enumerazione non è compatibile con RPC DCE. Se si desidera utilizzare le estensioni Microsoft a MIDL che consentono l'assegnazione di valori alle costanti di enumerazione, non è possibile eseguire la compilazione con l'opzione <a href="-osf.md"><strong>/osf,</strong></a> che impone la rigida compatibilità DCE. MIDL 3.0 e versioni successive usano le opzioni <a href="-c-ext.md"><strong>/c_ext</strong></a> <a href="-ms-ext.md"><strong>e /ms_ext</strong></a> come impostazione predefinita. <strong>L'opzione /osf</strong> disattiva queste opzioni di estensione.<br/> </dd> </dl></td>
+<td><dl> <dt><span id="sparse_enums_require__c_ext_or__ms_ext"></span><span id="SPARSE_ENUMS_REQUIRE__C_EXT_OR__MS_EXT"></span>Le enumerazioni di tipo sparse richiedono /c_ext o /ms_ext</dt> <dd> L'assegnazione di valori alle costanti di enumerazione non è compatibile con RPC DCE. Se si vogliono usare le estensioni Microsoft a MIDL che consentono l'assegnazione di valori alle costanti di enumerazione, non è possibile eseguire la compilazione con l'opzione <a href="-osf.md"><strong>/osf,</strong></a> che impone una rigida compatibilità DCE. MIDL versioni 3.0 e successive usano le opzioni <a href="-c-ext.md"><strong>/c_ext</strong></a> <a href="-ms-ext.md"><strong>e /ms_ext</strong></a> come impostazione predefinita. <strong>L'opzione /osf</strong> disattiva queste opzioni di estensione.<br/> </dd> </dl></td>
 </tr>
 <tr class="even">
 <td><span id="MIDL2009"></span><span id="midl2009"></span><dl> <dt><strong>MIDL2009</strong></dt> </dl></td>
@@ -84,15 +84,15 @@ Durante la compilazione MIDL vengono generati i messaggi di errore seguenti:
 </tr>
 <tr class="even">
 <td><span id="MIDL2011"></span><span id="midl2011"></span><dl> <dt><strong>MIDL2011</strong></dt> </dl></td>
-<td><dl> <dt><span id="unresolved_type_declaration"></span><span id="UNRESOLVED_TYPE_DECLARATION"></span>dichiarazione di tipo non risolta</dt> <dd> Il tipo indicato nel campo delle informazioni aggiuntive sugli errori non è stato definito altrove nel file IDL.<br/> </dd> </dl></td>
+<td><dl> <dt><span id="unresolved_type_declaration"></span><span id="UNRESOLVED_TYPE_DECLARATION"></span>dichiarazione di tipo non risolta</dt> <dd> Il tipo indicato nel campo aggiuntivo error-information non è stato definito altrove nel file IDL.<br/> </dd> </dl></td>
 </tr>
 <tr class="odd">
 <td><span id="MIDL2012"></span><span id="midl2012"></span><dl> <dt><strong>MIDL2012</strong></dt> </dl></td>
-<td><dl> <dt><span id="use_of_wide-character_constants_requires__ms_ext_or__c_ext"></span><span id="USE_OF_WIDE-CHARACTER_CONSTANTS_REQUIRES__MS_EXT_OR__C_EXT"></span>L'uso di costanti a caratteri wide richiede /ms_ext o /c_ext</dt> <dd> Le costanti carattere wide sono un'estensione Microsoft di DCE IDL. Per usare il tipo di dati <a href="wchar-t.md"><strong>wchar_t</strong></a>, non è possibile compilare con l'opzione <a href="-osf.md"><strong>/osf,</strong></a> che esegue l'override delle opzioni predefinite del compilatore MIDL <a href="-ms-ext.md"><strong>/ms_ext</strong></a> e <a href="-c-ext.md"><strong>/c_ext</strong></a>.<br/> </dd> </dl></td>
+<td><dl> <dt><span id="use_of_wide-character_constants_requires__ms_ext_or__c_ext"></span><span id="USE_OF_WIDE-CHARACTER_CONSTANTS_REQUIRES__MS_EXT_OR__C_EXT"></span>L'uso di costanti a caratteri wide richiede /ms_ext o /c_ext</dt> <dd> Le costanti a caratteri wide sono un'estensione Microsoft per DCE IDL. Per usare il tipo di <a href="wchar-t.md"><strong>dati wchar_t</strong></a>, non è possibile eseguire la compilazione con l'opzione <a href="-osf.md"><strong>/osf,</strong></a> che esegue l'override delle opzioni predefinite del compilatore MIDL <a href="-ms-ext.md"><strong>/ms_ext</strong></a> <a href="-c-ext.md"><strong>e /c_ext</strong></a>.<br/> </dd> </dl></td>
 </tr>
 <tr class="even">
 <td><span id="MIDL2013"></span><span id="midl2013"></span><dl> <dt><strong>MIDL2013</strong></dt> </dl></td>
-<td><dl> <dt><span id="use_of_wide_character_strings_requires__ms_ext_or__c_ext"></span><span id="USE_OF_WIDE_CHARACTER_STRINGS_REQUIRES__MS_EXT_OR__C_EXT"></span>L'uso di stringhe di caratteri wide richiede /ms_ext o /c_ext</dt> <dd> Le costanti stringa di caratteri wide sono un'estensione Microsoft di DCE IDL. Per usare il tipo di dati <a href="wchar-t.md"><strong>wchar_t</strong></a>, non è possibile compilare con l'opzione <a href="-osf.md"><strong>/osf,</strong></a> che esegue l'override delle opzioni predefinite del compilatore MIDL <a href="-ms-ext.md"><strong>/ms_ext</strong></a> e <a href="-c-ext.md"><strong>/c_ext</strong></a>.<br/> </dd> </dl></td>
+<td><dl> <dt><span id="use_of_wide_character_strings_requires__ms_ext_or__c_ext"></span><span id="USE_OF_WIDE_CHARACTER_STRINGS_REQUIRES__MS_EXT_OR__C_EXT"></span>L'uso di stringhe di caratteri wide richiede /ms_ext o /c_ext</dt> <dd> Le costanti di stringa di caratteri wide sono un'estensione Microsoft per DCE IDL. Per usare il tipo di <a href="wchar-t.md"><strong>dati wchar_t</strong></a>, non è possibile eseguire la compilazione con l'opzione <a href="-osf.md"><strong>/osf,</strong></a> che esegue l'override delle opzioni predefinite del compilatore MIDL <a href="-ms-ext.md"><strong>/ms_ext</strong></a> <a href="-c-ext.md"><strong>e /c_ext</strong></a>.<br/> </dd> </dl></td>
 </tr>
 <tr class="odd">
 <td><span id="MIDL2014"></span><span id="midl2014"></span><dl> <dt><strong>MIDL2014</strong></dt> </dl></td>
@@ -104,7 +104,7 @@ Durante la compilazione MIDL vengono generati i messaggi di errore seguenti:
 </tr>
 <tr class="odd">
 <td><span id="MIDL2016"></span><span id="midl2016"></span><dl> <dt><strong>MIDL2016</strong></dt> </dl></td>
-<td><dl> <dt><span id="two_library_blocks"></span><span id="TWO_LIBRARY_BLOCKS"></span>due blocchi di libreria</dt> <dd> Due blocchi di libreria (anche con nomi diversi) nello stesso file di origine non sono validi. Combinare tutti gli elementi in un unico blocco di libreria.<br/> </dd> </dl></td>
+<td><dl> <dt><span id="two_library_blocks"></span><span id="TWO_LIBRARY_BLOCKS"></span>due blocchi di libreria</dt> <dd> Due blocchi di libreria (anche con nomi diversi) nello stesso file di origine non sono validi. Combinare tutti gli elementi in un singolo blocco di libreria.<br/> </dd> </dl></td>
 </tr>
 <tr class="even">
 <td><span id="MIDL2017"></span><span id="midl2017"></span><dl> <dt><strong>MIDL2017</strong></dt> </dl></td>
@@ -120,7 +120,7 @@ Durante la compilazione MIDL vengono generati i messaggi di errore seguenti:
 </tr>
 <tr class="odd">
 <td><span id="MIDL2020"></span><span id="midl2020"></span><dl> <dt><strong>MIDL2020</strong></dt> </dl></td>
-<td><dl> <dt><span id="error_generating_type_library"></span><span id="ERROR_GENERATING_TYPE_LIBRARY"></span>errore durante la generazione della libreria dei tipi</dt> <dd> Non è stato possibile generare la libreria dei tipi. Una possibile causa di questo errore è la specifica di un percorso del file IDL di lunghezza superiore a 126 caratteri. Oleaut32.dll non supporta nomi di percorso più lunghi di 126 caratteri.<br/> </dd> </dl></td>
+<td><dl> <dt><span id="error_generating_type_library"></span><span id="ERROR_GENERATING_TYPE_LIBRARY"></span>errore durante la generazione della libreria dei tipi</dt> <dd> Impossibile generare la libreria dei tipi. Una possibile causa di questo errore è la specifica di un percorso del file IDL di lunghezza superiore a 126 caratteri. Oleaut32.dll non supporta nomi di percorso più lunghi di 126 caratteri.<br/> </dd> </dl></td>
 </tr>
 <tr class="even">
 <td><span id="MIDL2021"></span><span id="midl2021"></span><dl> <dt><strong>MIDL2021</strong></dt> </dl></td>
@@ -128,19 +128,19 @@ Durante la compilazione MIDL vengono generati i messaggi di errore seguenti:
 </tr>
 <tr class="odd">
 <td><span id="MIDL2022"></span><span id="midl2022"></span><dl> <dt><strong>MIDL2022</strong></dt> </dl></td>
-<td><dl> <dt><span id="illegal_or_missing_value_for_entry_attribute"></span><span id="ILLEGAL_OR_MISSING_VALUE_FOR_ENTRY_ATTRIBUTE"></span>valore non valido o mancante per l'attributo entry</dt> <dd> L'argomento per l'attributo entry può essere una stringa che specifica un punto di ingresso denominato o un numero ordinale che definisce il punto di ingresso. Questo argomento è mancante o contiene un valore non valido.<br/> </dd> </dl></td>
+<td><dl> <dt><span id="illegal_or_missing_value_for_entry_attribute"></span><span id="ILLEGAL_OR_MISSING_VALUE_FOR_ENTRY_ATTRIBUTE"></span>Valore non valido o mancante per l'attributo entry</dt> <dd> L'argomento per l'attributo entry può essere una stringa che specifica un punto di ingresso denominato o un numero ordinale che definisce il punto di ingresso. Questo argomento è mancante o contiene un valore non valido.<br/> </dd> </dl></td>
 </tr>
 <tr class="even">
 <td><span id="MIDL2023"></span><span id="midl2023"></span><dl> <dt><strong>MIDL2023</strong></dt> </dl></td>
-<td><dl> <dt><span id="error_recovery_assumes"></span><span id="ERROR_RECOVERY_ASSUMES"></span>il ripristino degli errori presuppone</dt> <dd> Il compilatore MIDL ha rilevato caratteri non validi nel file IDL.<br/> </dd> </dl></td>
+<td><dl> <dt><span id="error_recovery_assumes"></span><span id="ERROR_RECOVERY_ASSUMES"></span>il ripristino degli errori presuppone che</dt> <dd> Il compilatore MIDL ha rilevato caratteri non validi nel file IDL.<br/> </dd> </dl></td>
 </tr>
 <tr class="odd">
 <td><span id="MIDL2024"></span><span id="midl2024"></span><dl> <dt><strong>MIDL2024</strong></dt> </dl></td>
-<td><dl> <dt><span id="error_recovery_discards"></span><span id="ERROR_RECOVERY_DISCARDS"></span>eliminazione del ripristino degli errori</dt> <dd> Il compilatore MIDL ha rilevato caratteri non validi nel file IDL. Verranno ignorati i caratteri non validi.<br/> </dd> </dl></td>
+<td><dl> <dt><span id="error_recovery_discards"></span><span id="ERROR_RECOVERY_DISCARDS"></span>error recovery discards</dt> <dd> Il compilatore MIDL ha rilevato caratteri non validi nel file IDL. I caratteri non validi verranno ignorati.<br/> </dd> </dl></td>
 </tr>
 <tr class="even">
 <td><span id="MIDL2025"></span><span id="midl2025"></span><dl> <dt><strong>MIDL2025</strong></dt> </dl></td>
-<td><dl> <dt><span id="syntax_error"></span><span id="SYNTAX_ERROR"></span>Errore di sintassi</dt> <dd> Il compilatore ha rilevato un errore di sintassi nella riga specificata.<br/> </dd> </dl></td>
+<td><dl> <dt><span id="syntax_error"></span><span id="SYNTAX_ERROR"></span>errore di sintassi</dt> <dd> Il compilatore ha rilevato un errore di sintassi nella riga specificata.<br/> </dd> </dl></td>
 </tr>
 <tr class="odd">
 <td><span id="MIDL2026"></span><span id="midl2026"></span><dl> <dt><strong>MIDL2026</strong></dt> </dl></td>
@@ -152,11 +152,11 @@ Durante la compilazione MIDL vengono generati i messaggi di errore seguenti:
 </tr>
 <tr class="odd">
 <td><span id="MIDL2028"></span><span id="midl2028"></span><dl> <dt><strong>MIDL2028</strong></dt> </dl></td>
-<td><dl> <dt><span id="feature_not_implemented"></span><span id="FEATURE_NOT_IMPLEMENTED"></span>funzionalità non implementata</dt> <dd> La funzionalità MIDL, anche se parte della definizione del linguaggio, non è implementata in RPC Microsoft e non è supportata dal compilatore MIDL. Ad esempio, le funzionalità del linguaggio seguenti non vengono implementate: bitset, pipe e il tipo di carattere internazionale. La funzionalità del linguaggio non implementata viene visualizzata nel campo aggiuntivo error-information del messaggio di errore.<br/> </dd> </dl></td>
+<td><dl> <dt><span id="feature_not_implemented"></span><span id="FEATURE_NOT_IMPLEMENTED"></span>funzionalità non implementata</dt> <dd> La funzionalità MIDL, anche se parte della definizione del linguaggio, non è implementata in Microsoft RPC e non è supportata dal compilatore MIDL. Ad esempio, le funzionalità del linguaggio seguenti non sono implementate: bitset, pipe e il tipo di carattere internazionale. La funzionalità del linguaggio non implementata viene visualizzata nel campo aggiuntivo delle informazioni sull'errore del messaggio di errore.<br/> </dd> </dl></td>
 </tr>
 <tr class="even">
 <td><span id="MIDL2029"></span><span id="midl2029"></span><dl> <dt><strong>MIDL2029</strong></dt> </dl></td>
-<td><dl> <dt><span id="type_not_implemented"></span><span id="TYPE_NOT_IMPLEMENTED"></span>Tipo non implementato</dt> <dd> Il tipo di dati specificato, anche se una parola chiave MIDL valida, non viene implementato in Microsoft RPC.<br/> </dd> </dl></td>
+<td><dl> <dt><span id="type_not_implemented"></span><span id="TYPE_NOT_IMPLEMENTED"></span>Tipo non implementato</dt> <dd> Il tipo di dati specificato, anche se una parola chiave MIDL valida, non è implementato in Microsoft RPC.<br/> </dd> </dl></td>
 </tr>
 <tr class="odd">
 <td><span id="MIDL2030"></span><span id="midl2030"></span><dl> <dt><strong>MIDL2030</strong></dt> </dl></td>
@@ -168,19 +168,19 @@ Durante la compilazione MIDL vengono generati i messaggi di errore seguenti:
 </tr>
 <tr class="odd">
 <td><span id="MIDL2032"></span><span id="midl2032"></span><dl> <dt><strong>MIDL2032</strong></dt> </dl></td>
-<td><dl> <dt><span id="expression_uses_incompatible_types"></span><span id="EXPRESSION_USES_INCOMPATIBLE_TYPES"></span>expression usa tipi incompatibili</dt> <dd> I lati sinistro e destro dell'operatore in un'espressione sono di tipi incompatibili.<br/> </dd> </dl></td>
+<td><dl> <dt><span id="expression_uses_incompatible_types"></span><span id="EXPRESSION_USES_INCOMPATIBLE_TYPES"></span>L'espressione usa tipi incompatibili</dt> <dd> I lati sinistro e destro dell'operatore in un'espressione sono di tipi incompatibili.<br/> </dd> </dl></td>
 </tr>
 <tr class="even">
 <td><span id="MIDL2033"></span><span id="midl2033"></span><dl> <dt><strong>MIDL2033</strong></dt> </dl></td>
-<td><dl> <dt><span id="nonarray_expression_uses_index_operator"></span><span id="NONARRAY_EXPRESSION_USES_INDEX_OPERATOR"></span>L'espressione non matrice usa l'operatore index</dt> <dd> L'espressione usa l'operazione di indicizzazione della matrice su un elemento di dati che non è di tipo matrice.<br/> </dd> </dl></td>
+<td><dl> <dt><span id="nonarray_expression_uses_index_operator"></span><span id="NONARRAY_EXPRESSION_USES_INDEX_OPERATOR"></span>L'espressione nonarray usa l'operatore index</dt> <dd> L'espressione usa l'operazione di indicizzazione di matrice su un elemento di dati che non è di tipo matrice.<br/> </dd> </dl></td>
 </tr>
 <tr class="odd">
 <td><span id="MIDL2034"></span><span id="midl2034"></span><dl> <dt><strong>MIDL2034</strong></dt> </dl></td>
-<td><dl> <dt><span id="left-hand_side_of_expression_does_not_evaluate_to_struct_union_enum"></span><span id="LEFT-HAND_SIDE_OF_EXPRESSION_DOES_NOT_EVALUATE_TO_STRUCT_UNION_ENUM"></span>Il lato sinistro dell'espressione non restituisce struct/union/enum</dt> <dd> L'operatore di riferimento diretto o indiretto . o è stato applicato a un oggetto dati che non &quot; &quot; è una struttura, &quot; -> &quot; un'unione o un'enumerazione. Non è possibile ottenere un riferimento diretto o indiretto usando l'oggetto specificato.<br/> </dd> </dl></td>
+<td><dl> <dt><span id="left-hand_side_of_expression_does_not_evaluate_to_struct_union_enum"></span><span id="LEFT-HAND_SIDE_OF_EXPRESSION_DOES_NOT_EVALUATE_TO_STRUCT_UNION_ENUM"></span>il lato sinistro dell'espressione non restituisce struct/union/enum</dt> <dd> L'operatore di riferimento diretto o indiretto . o è stato applicato a un oggetto dati che non &quot; &quot; è una struttura, &quot; -> &quot; un'unione o un'enumerazione. Non è possibile ottenere un riferimento diretto o indiretto usando l'oggetto specificato.<br/> </dd> </dl></td>
 </tr>
 <tr class="even">
 <td><span id="MIDL2035"></span><span id="midl2035"></span><dl> <dt><strong>MIDL2035</strong></dt> </dl></td>
-<td><dl> <dt><span id="constant_expression_expected"></span><span id="CONSTANT_EXPRESSION_EXPECTED"></span>Prevista espressione costante</dt> <dd> Nella sintassi era prevista un'espressione costante. Ad esempio, i limiti di matrice richiedono un'espressione costante. Il compilatore genera questo messaggio di errore quando il limite di matrice è definito con una variabile o un simbolo non definito.<br/> </dd> </dl></td>
+<td><dl> <dt><span id="constant_expression_expected"></span><span id="CONSTANT_EXPRESSION_EXPECTED"></span>prevista espressione costante</dt> <dd> Era prevista un'espressione costante nella sintassi. Ad esempio, i limiti di matrice richiedono un'espressione costante. Il compilatore genera questo messaggio di errore quando il limite della matrice è definito con una variabile o un simbolo non definito.<br/> </dd> </dl></td>
 </tr>
 <tr class="odd">
 <td><span id="MIDL2036"></span><span id="midl2036"></span><dl> <dt><strong>MIDL2036</strong></dt> </dl></td>
@@ -188,23 +188,23 @@ Durante la compilazione MIDL vengono generati i messaggi di errore seguenti:
 </tr>
 <tr class="even">
 <td><span id="MIDL2037"></span><span id="midl2037"></span><dl> <dt><strong>MIDL2037</strong></dt> </dl></td>
-<td><dl> <dt><span id="expression_not_implemented"></span><span id="EXPRESSION_NOT_IMPLEMENTED"></span>espressione non implementata</dt> <dd> Una funzionalità supportata nelle versioni precedenti del compilatore MIDL non è supportata nella versione del compilatore fornita con RPC Microsoft. Rimuovere l'espressione specificata.<br/> </dd> </dl></td>
+<td><dl> <dt><span id="expression_not_implemented"></span><span id="EXPRESSION_NOT_IMPLEMENTED"></span>Espressione non implementata</dt> <dd> Una funzionalità supportata nelle versioni precedenti del compilatore MIDL non è supportata nella versione del compilatore fornita con Microsoft RPC. Rimuove l'espressione specificata.<br/> </dd> </dl></td>
 </tr>
 <tr class="odd">
 <td><span id="MIDL2038"></span><span id="midl2038"></span><dl> <dt><strong>MIDL2038</strong></dt> </dl></td>
-<td><dl> <dt><span id="no__pointer_default__attribute_specified__assuming__unique__for_all_unattributed_pointers"></span><span id="NO__POINTER_DEFAULT__ATTRIBUTE_SPECIFIED__ASSUMING__UNIQUE__FOR_ALL_UNATTRIBUTED_POINTERS"></span>nessun attributo [pointer_default] specificato, presupponendo che [unique] per tutti i puntatori senza attributi</dt> <dd> Il compilatore MIDL offre tre casi predefiniti diversi per i puntatori che non dispongono di attributi puntatore. Per impostazione predefinita, i parametri di funzione che sono puntatori di primo livello sono puntatori [<a href="ref.md"><strong>ref</strong></a>]. I puntatori incorporati in strutture e puntatori ad altri puntatori (non puntatori di primo livello) sono predefiniti per il tipo specificato dall'attributo [<a href="pointer-default.md"><strong>pointer_default</strong></a>]. Quando non viene<strong>fornito alcun attributo [ pointer_default</strong>], per impostazione predefinita questi puntatori non di livello superiore sono puntatori univoci. Questo messaggio di errore indica l'ultimo caso: non viene fornito alcun attributo [<strong>pointer_default</strong>] ed è presente almeno un puntatore non di primo livello che verrà considerato come puntatore univoco. Per altre informazioni, vedere <a href="/windows/desktop/Rpc/default-pointer-types">Tipi di puntatore predefiniti</a>.<br/> </dd> </dl></td>
+<td><dl> <dt><span id="no__pointer_default__attribute_specified__assuming__unique__for_all_unattributed_pointers"></span><span id="NO__POINTER_DEFAULT__ATTRIBUTE_SPECIFIED__ASSUMING__UNIQUE__FOR_ALL_UNATTRIBUTED_POINTERS"></span>nessun attributo [pointer_default] specificato, presupponendo [unique] per tutti i puntatori senza attributi</dt> <dd> Il compilatore MIDL offre tre casi predefiniti diversi per i puntatori che non hanno attributi del puntatore. Per impostazione predefinita, i parametri di funzione che sono puntatori di primo livello sono puntatori [<a href="ref.md"><strong>ref</strong></a>]. I puntatori incorporati nelle strutture e i puntatori ad altri puntatori (non i puntatori di primo livello) vengono predefiniti al tipo specificato<a href="pointer-default.md"><strong>dall'attributo</strong></a>[ pointer_default ]. Quando non viene<strong>specificato pointer_default</strong>[ pointer_default ] , questi puntatori di livello non superiore vengono automaticamente specificati come puntatori univoci. Questo messaggio di errore indica l'ultimo caso: non viene fornito alcun attributo [<strong>pointer_default</strong>] ed è presente almeno un puntatore non di primo livello che verrà considerato come un puntatore univoco. Per altre informazioni, vedere <a href="/windows/desktop/Rpc/default-pointer-types">Tipi di puntatore predefiniti.</a><br/> </dd> </dl></td>
 </tr>
 <tr class="even">
 <td><span id="MIDL2039"></span><span id="midl2039"></span><dl> <dt><strong>MIDL2039</strong></dt> </dl></td>
-<td><dl> <dt><span id="interface_is_not_automation_marshaling_conformant"></span><span id="INTERFACE_IS_NOT_AUTOMATION_MARSHALING_CONFORMANT"></span>l'interfaccia non è conforme al marshalling di automazione</dt> <dd> L'interfaccia non soddisfa i requisiti per un'interfaccia di automazione OLE. Verificare che l'interfaccia sia derivata da <strong>IUnknown</strong> o <strong>IDispatch</strong>.<br/> </dd> </dl></td>
+<td><dl> <dt><span id="interface_is_not_automation_marshaling_conformant"></span><span id="INTERFACE_IS_NOT_AUTOMATION_MARSHALING_CONFORMANT"></span>L'interfaccia non è conforme al marshalling di automazione</dt> <dd> L'interfaccia non soddisfa i requisiti per un'interfaccia di automazione OLE. Verificare che l'interfaccia sia derivata da <strong>IUnknown</strong> o <strong>IDispatch.</strong><br/> </dd> </dl></td>
 </tr>
 <tr class="odd">
 <td><span id="MIDL2040"></span><span id="midl2040"></span><dl> <dt><strong>MIDL2040</strong></dt> </dl></td>
-<td><dl> <dt><span id="_out__only_parameter_cannot_be_a_pointer_to_an_open_structure"></span><span id="_OUT__ONLY_PARAMETER_CANNOT_BE_A_POINTER_TO_AN_OPEN_STRUCTURE"></span>[out] solo il parametro non può essere un puntatore a una struttura aperta</dt> <dd> Un parametro [<a href="out-idl.md"><strong>out</strong></a>]-only è stato usato come puntatore a una struttura, nota come struttura aperta, i cui intervalli trasmessi e le cui dimensioni vengono determinate in fase di esecuzione. Lo stub del server non conosce la quantità di spazio da allocare per una struttura aperta. Usare un puntatore a un puntatore alla struttura aperta e assicurarsi che l'applicazione server alloca spazio sufficiente.<br/> </dd> </dl></td>
+<td><dl> <dt><span id="_out__only_parameter_cannot_be_a_pointer_to_an_open_structure"></span><span id="_OUT__ONLY_PARAMETER_CANNOT_BE_A_POINTER_TO_AN_OPEN_STRUCTURE"></span>[out] Solo il parametro non può essere un puntatore a una struttura aperta</dt> <dd> Un parametro [<a href="out-idl.md"><strong>out</strong></a>]-only è stato usato come puntatore a una struttura, nota come struttura aperta, i cui intervalli trasmessi e le cui dimensioni vengono determinate in fase di esecuzione. Lo stub del server non conosce la quantità di spazio da allocare per una struttura aperta. Utilizzare un puntatore a un puntatore alla struttura aperta e assicurarsi che l'applicazione server alloca spazio sufficiente.<br/> </dd> </dl></td>
 </tr>
 <tr class="even">
 <td><span id="MIDL2041"></span><span id="midl2041"></span><dl> <dt><strong>MIDL2041</strong></dt> </dl></td>
-<td><dl> <dt><span id="_out__only_parameter_cannot_be_an_unsized_string"></span><span id="_OUT__ONLY_PARAMETER_CANNOT_BE_AN_UNSIZED_STRING"></span>[out] solo il parametro non può essere una stringa non disized</dt> <dd> Una matrice con l'attributo string è stata dichiarata come parametro [<a href="out-idl.md"><strong>out</strong></a>]-only senza alcuna specifica di dimensione. Lo stub del server richiede informazioni sulle dimensioni per allocare memoria per la stringa. È possibile rimuovere l'attributo stringa e aggiungere l'attributo [<a href="size-is.md"><strong>size_is</strong></a>] oppure modificare il parametro in un parametro [<strong>in, out</strong>].<br/> </dd> </dl></td>
+<td><dl> <dt><span id="_out__only_parameter_cannot_be_an_unsized_string"></span><span id="_OUT__ONLY_PARAMETER_CANNOT_BE_AN_UNSIZED_STRING"></span>[out] Solo il parametro non può essere una stringa non disascisata</dt> <dd> Una matrice con l'attributo string è stata dichiarata come parametro [<a href="out-idl.md"><strong>out</strong></a>]-only senza alcuna specifica di dimensione. Lo stub del server richiede informazioni sulle dimensioni per allocare memoria per la stringa. È possibile rimuovere l'attributo stringa e aggiungere l'attributo [<a href="size-is.md"><strong>size_is</strong></a>] oppure modificare il parametro in un parametro [<strong>in, out</strong>].<br/> </dd> </dl></td>
 </tr>
 <tr class="odd">
 <td><span id="MIDL2042"></span><span id="midl2042"></span><dl> <dt><strong>MIDL2042</strong></dt> </dl></td>
@@ -212,11 +212,11 @@ Durante la compilazione MIDL vengono generati i messaggi di errore seguenti:
 </tr>
 <tr class="even">
 <td><span id="MIDL2043"></span><span id="midl2043"></span><dl> <dt><strong>MIDL2043</strong></dt> </dl></td>
-<td><dl> <dt><span id="open_structure_cannot_be_a_parameter"></span><span id="OPEN_STRUCTURE_CANNOT_BE_A_PARAMETER"></span>open structure non può essere un parametro</dt> <dd> Una struttura aperta contiene una matrice conforme come ultimo elemento. Una struttura o un'unione viene troncata quando l'ultimo elemento di tale struttura o unione è una matrice conforme.<br/> </dd> </dl></td>
+<td><dl> <dt><span id="open_structure_cannot_be_a_parameter"></span><span id="OPEN_STRUCTURE_CANNOT_BE_A_PARAMETER"></span>open structure non può essere un parametro</dt> <dd> Una struttura aperta contiene una matrice conforme come ultimo elemento. Una struttura o unione viene troncata quando l'ultimo elemento di tale struttura o unione è una matrice conforme.<br/> </dd> </dl></td>
 </tr>
 <tr class="odd">
 <td><span id="MIDL2044"></span><span id="midl2044"></span><dl> <dt><strong>MIDL2044</strong></dt> </dl></td>
-<td><dl> <dt><span id="_out__context_handle_generic_handle_must_be_specified_as_a_pointer_to_that_handle_type"></span><span id="_OUT__CONTEXT_HANDLE_GENERIC_HANDLE_MUST_BE_SPECIFIED_AS_A_POINTER_TO_THAT_HANDLE_TYPE"></span>[out] handle di contesto/handle generico deve essere specificato come puntatore a tale tipo di handle</dt> <dd> Un parametro handle definito dal contesto o definito dall'utente con l'attributo direzionale [<a href="out-idl.md"><strong>out</strong></a>] deve essere un puntatore a un puntatore.<br/> </dd> </dl></td>
+<td><dl> <dt><span id="_out__context_handle_generic_handle_must_be_specified_as_a_pointer_to_that_handle_type"></span><span id="_OUT__CONTEXT_HANDLE_GENERIC_HANDLE_MUST_BE_SPECIFIED_AS_A_POINTER_TO_THAT_HANDLE_TYPE"></span>[out] Handle di contesto/handle generico deve essere specificato come puntatore a tale tipo di handle</dt> <dd> Un parametro handle definito dal contesto o definito dall'utente con l'attributo direzionale [<a href="out-idl.md"><strong>out</strong></a>] deve essere un puntatore a un puntatore.<br/> </dd> </dl></td>
 </tr>
 <tr class="even">
 <td><span id="MIDL2045"></span><span id="midl2045"></span><dl> <dt><strong>MIDL2045</strong></dt> </dl></td>
@@ -236,31 +236,31 @@ Durante la compilazione MIDL vengono generati i messaggi di errore seguenti:
 </tr>
 <tr class="even">
 <td><span id="MIDL2049"></span><span id="midl2049"></span><dl> <dt><strong>MIDL2049</strong></dt> </dl></td>
-<td><dl> <dt><span id="only_the_first_parameter_can_be_a_binding_handle__you_must_specify_the__ms_ext_switch"></span><span id="ONLY_THE_FIRST_PARAMETER_CAN_BE_A_BINDING_HANDLE__YOU_MUST_SPECIFY_THE__MS_EXT_SWITCH"></span>solo il primo parametro può essere un handle di associazione. è necessario specificare l'opzione /ms_ext</dt> <dd> DCE RPC consente solo al primo parametro di essere un handle di associazione. La compilazione con l'opzione <a href="-osf.md"><strong>/osf</strong></a> disattiva l'opzione <a href="-ms-ext.md"><strong>/ms_ext</strong></a> predefinita che supporta più parametri di handle e gestisce i parametri in una posizione diversa da quella più a sinistra.<br/> </dd> </dl></td>
+<td><dl> <dt><span id="only_the_first_parameter_can_be_a_binding_handle__you_must_specify_the__ms_ext_switch"></span><span id="ONLY_THE_FIRST_PARAMETER_CAN_BE_A_BINDING_HANDLE__YOU_MUST_SPECIFY_THE__MS_EXT_SWITCH"></span>solo il primo parametro può essere un handle di associazione. È necessario specificare l'opzione /ms_ext</dt> <dd> DCE RPC consente solo al primo parametro di essere un handle di associazione. La compilazione con l'opzione <a href="-osf.md"><strong>/osf</strong></a> disattiva l'opzione <a href="-ms-ext.md"><strong>/ms_ext</strong></a> predefinita che supporta più parametri di handle e parametri di handle in una posizione diversa da quella più a sinistra.<br/> </dd> </dl></td>
 </tr>
 <tr class="odd">
 <td><span id="MIDL2050"></span><span id="midl2050"></span><dl> <dt><strong>MIDL2050</strong></dt> </dl></td>
-<td><dl> <dt><span id="cannot_use__comm_status__on_both_a_parameter_and_a_return_type"></span><span id="CANNOT_USE__COMM_STATUS__ON_BOTH_A_PARAMETER_AND_A_RETURN_TYPE"></span>impossibile usare [comm_status] sia in un parametro che in un tipo restituito</dt> <dd> Sia la routine che uno dei relativi parametri hanno<a href="comm-status.md"><strong>l'attributo</strong></a>[ comm_status ]. <strong>L'attributo [ comm_status</strong>] specifica che un solo oggetto dati alla volta può essere di tipo <a href="error-status-t.md"><strong>error_status_t</strong></a>.<br/> </dd> </dl></td>
+<td><dl> <dt><span id="cannot_use__comm_status__on_both_a_parameter_and_a_return_type"></span><span id="CANNOT_USE__COMM_STATUS__ON_BOTH_A_PARAMETER_AND_A_RETURN_TYPE"></span>non può usare [comm_status] sia su un parametro che su un tipo restituito</dt> <dd> Sia la routine che uno dei relativi parametri hanno<a href="comm-status.md"><strong>l'attributo</strong></a>[ comm_status ]. <strong>L'attributo</strong>[ comm_status ] specifica che un solo oggetto dati alla volta può essere di <a href="error-status-t.md"><strong>tipo error_status_t</strong></a>.<br/> </dd> </dl></td>
 </tr>
 <tr class="even">
 <td><span id="MIDL2051"></span><span id="midl2051"></span><dl> <dt><strong>MIDL2051</strong></dt> </dl></td>
-<td><dl> <dt><span id="__local__attribute_on_a_procedure_requires__ms_ext"></span><span id="__LOCAL__ATTRIBUTE_ON_A_PROCEDURE_REQUIRES__MS_EXT"></span> L'attributo [local] in una routine richiede /ms_ext</dt> <dd> <a href="local.md"><strong>L'attributo</strong></a>[ local ] è un'estensione Microsoft per DCE IDL. Per usare questo attributo in una funzione, non è possibile eseguire la compilazione con <a href="-osf.md"><strong>l'opzione /osf.</strong></a> <strong>L'opzione /osf</strong> esegue l'override delle opzioni predefinite del compilatore MIDL <a href="-ms-ext.md"><strong>/ms_ext</strong></a> <a href="-c-ext.md"><strong>e /c_ext</strong></a>.<br/> </dd> </dl></td>
+<td><dl> <dt><span id="__local__attribute_on_a_procedure_requires__ms_ext"></span><span id="__LOCAL__ATTRIBUTE_ON_A_PROCEDURE_REQUIRES__MS_EXT"></span> L'attributo [local] in una procedura richiede /ms_ext</dt> <dd> <a href="local.md"><strong>L'attributo</strong></a>[ local ] è un'estensione Microsoft di DCE IDL. Per usare questo attributo in una funzione, non è possibile eseguire la compilazione con <a href="-osf.md"><strong>l'opzione /osf.</strong></a> <strong>L'opzione /osf</strong> esegue l'override delle opzioni predefinite del compilatore MIDL <a href="-ms-ext.md"><strong>/ms_ext</strong></a> <a href="-c-ext.md"><strong>e /c_ext</strong></a>.<br/> </dd> </dl></td>
 </tr>
 <tr class="odd">
 <td><span id="MIDL2052"></span><span id="midl2052"></span><dl> <dt><strong>MIDL2052</strong></dt> </dl></td>
-<td><dl> <dt><span id="property_attributes_may_only_be_used_with_procedures"></span><span id="PROPERTY_ATTRIBUTES_MAY_ONLY_BE_USED_WITH_PROCEDURES"></span>Gli attributi di proprietà possono essere usati solo con le routine</dt> <dd> Uso non corretto di un attributo [<a href="propget.md"><strong>propget</strong></a>], [<a href="propput.md"><strong>propput</strong></a>] o [<a href="propputref.md"><strong>propputref</strong></a>]. Assicurarsi di aver digitato correttamente il nome della funzione della proprietà e che la proprietà e la funzione hanno lo stesso nome.<br/> </dd> </dl></td>
+<td><dl> <dt><span id="property_attributes_may_only_be_used_with_procedures"></span><span id="PROPERTY_ATTRIBUTES_MAY_ONLY_BE_USED_WITH_PROCEDURES"></span>Gli attributi di proprietà possono essere usati solo con le routine</dt> <dd> Utilizzo non corretto di un attributo [<a href="propget.md"><strong>propget</strong></a>], [<a href="propput.md"><strong>propput</strong></a>] o [<a href="propputref.md"><strong>propputref</strong></a>]. Verificare di aver digitato correttamente il nome della funzione della proprietà e che la proprietà e la funzione hanno lo stesso nome.<br/> </dd> </dl></td>
 </tr>
 <tr class="even">
 <td><span id="MIDL2053"></span><span id="midl2053"></span><dl> <dt><strong>MIDL2053</strong></dt> </dl></td>
-<td><dl> <dt><span id="a_procedure_may_not_have_more_than_one_property_attribute"></span><span id="A_PROCEDURE_MAY_NOT_HAVE_MORE_THAN_ONE_PROPERTY_ATTRIBUTE"></span>una routine non può avere più di un attributo di proprietà</dt> <dd> Al massimo, è possibile specificare solo uno degli attributi [<a href="propget.md"><strong>propget</strong></a>], [<a href="propput.md"><strong>propput</strong></a>], o [<a href="propputref.md"><strong>propputref</strong></a>] per una funzione.<br/> </dd> </dl></td>
+<td><dl> <dt><span id="a_procedure_may_not_have_more_than_one_property_attribute"></span><span id="A_PROCEDURE_MAY_NOT_HAVE_MORE_THAN_ONE_PROPERTY_ATTRIBUTE"></span>Una routine non può avere più di un attributo di proprietà</dt> <dd> Al massimo, è possibile specificare solo uno degli attributi [<a href="propget.md"><strong>propget</strong></a>], [<a href="propput.md"><strong>propput</strong></a>] o [<a href="propputref.md"><strong>propputref</strong></a>] per una funzione.<br/> </dd> </dl></td>
 </tr>
 <tr class="odd">
 <td><span id="MIDL2054"></span><span id="midl2054"></span><dl> <dt><strong>MIDL2054</strong></dt> </dl></td>
-<td><dl> <dt><span id="the_procedure_has_an_illegal_combination_of_operation_attributes"></span><span id="THE_PROCEDURE_HAS_AN_ILLEGAL_COMBINATION_OF_OPERATION_ATTRIBUTES"></span>la procedura ha una combinazione non valida di attributi dell'operazione</dt> <dd> Alcuni attributi non possono essere usati in connessione con altri attributi. Controllare le informazioni di riferimento sul linguaggio MIDL per i requisiti e la sintassi esatti degli attributi usati in questa procedura.<br/> </dd> </dl></td>
+<td><dl> <dt><span id="the_procedure_has_an_illegal_combination_of_operation_attributes"></span><span id="THE_PROCEDURE_HAS_AN_ILLEGAL_COMBINATION_OF_OPERATION_ATTRIBUTES"></span>la procedura ha una combinazione non valida di attributi dell'operazione</dt> <dd> Alcuni attributi non possono essere utilizzati in connessione ad altri attributi. Controllare le informazioni di riferimento sul linguaggio MIDL per i requisiti e la sintassi esatti degli attributi usati in questa procedura.<br/> </dd> </dl></td>
 </tr>
 <tr class="even">
 <td><span id="MIDL2055"></span><span id="midl2055"></span><dl> <dt><strong>MIDL2055</strong></dt> </dl></td>
-<td><dl> <dt><span id="field_deriving_from_a_conformant_array_must_be_the_last_member_of_the_structure"></span><span id="FIELD_DERIVING_FROM_A_CONFORMANT_ARRAY_MUST_BE_THE_LAST_MEMBER_OF_THE_STRUCTURE"></span>il campo derivante da una matrice conforme deve essere l'ultimo membro della struttura</dt> <dd> La struttura contiene una matrice conforme che non è l'ultimo elemento della struttura . La matrice conforme deve essere visualizzata come ultimo elemento della struttura.<br/> </dd> </dl></td>
+<td><dl> <dt><span id="field_deriving_from_a_conformant_array_must_be_the_last_member_of_the_structure"></span><span id="FIELD_DERIVING_FROM_A_CONFORMANT_ARRAY_MUST_BE_THE_LAST_MEMBER_OF_THE_STRUCTURE"></span>il campo che deriva da una matrice conforme deve essere l'ultimo membro della struttura</dt> <dd> La struttura contiene una matrice conforme che non è l'ultimo elemento della struttura. La matrice conforme deve essere visualizzata come ultimo elemento della struttura.<br/> </dd> </dl></td>
 </tr>
 <tr class="odd">
 <td><span id="MIDL2056"></span><span id="midl2056"></span><dl> <dt><strong>MIDL2056</strong></dt> </dl></td>
@@ -268,35 +268,35 @@ Durante la compilazione MIDL vengono generati i messaggi di errore seguenti:
 </tr>
 <tr class="even">
 <td><span id="MIDL2057"></span><span id="midl2057"></span><dl> <dt><strong>MIDL2057</strong></dt> </dl></td>
-<td><dl> <dt><span id="no__default__case_specified_for_discriminated_union"></span><span id="NO__DEFAULT__CASE_SPECIFIED_FOR_DISCRIMINATED_UNION"></span>nessun case [predefinito] specificato per l'unione discriminata</dt> <dd> È stata specificata un'unione discriminata senza un caso predefinito.<br/> </dd> </dl></td>
+<td><dl> <dt><span id="no__default__case_specified_for_discriminated_union"></span><span id="NO__DEFAULT__CASE_SPECIFIED_FOR_DISCRIMINATED_UNION"></span>nessuna distinzione tra maiuscole e minuscole [predefinita] specificata per l'unione discriminata</dt> <dd> È stata specificata un'unione discriminante senza un case predefinito.<br/> </dd> </dl></td>
 </tr>
 <tr class="odd">
 <td><span id="MIDL2058"></span><span id="midl2058"></span><dl> <dt><strong>MIDL2058</strong></dt> </dl></td>
-<td><dl> <dt><span id="attribute_expression_cannot_be_resolved"></span><span id="ATTRIBUTE_EXPRESSION_CANNOT_BE_RESOLVED"></span>Impossibile risolvere l'espressione dell'attributo</dt> <dd> L'espressione associata all'attributo non può essere risolta. Questo errore si verifica in genere quando una variabile visualizzata nell'espressione non è definita. Ad esempio, l'errore può verificarsi quando la variabile <em>s</em> non è definita e viene usata dall'attributo [<a href="size-is.md"><strong>size_is</strong></a>].<br/> </dd> </dl></td>
+<td><dl> <dt><span id="attribute_expression_cannot_be_resolved"></span><span id="ATTRIBUTE_EXPRESSION_CANNOT_BE_RESOLVED"></span>L'espressione attribute non può essere risolta</dt> <dd> L'espressione associata all'attributo non può essere risolta. Questo errore si verifica in genere quando una variabile visualizzata nell'espressione non è definita. Ad esempio, l'errore può verificarsi quando la variabile <em>s</em> non è definita e viene usata dall'attributo [<a href="size-is.md"><strong>size_is</strong></a>].<br/> </dd> </dl></td>
 </tr>
 <tr class="even">
 <td><span id="MIDL2059"></span><span id="midl2059"></span><dl> <dt><strong>MIDL2059</strong></dt> </dl></td>
-<td><dl> <dt><span id="attribute_expression_must_be_of_integral_type__no_support_for_64-bit_expressions"></span><span id="ATTRIBUTE_EXPRESSION_MUST_BE_OF_INTEGRAL_TYPE__NO_SUPPORT_FOR_64-BIT_EXPRESSIONS"></span>L'espressione dell'attributo deve essere di tipo integrale, non è supportato per le espressioni a 64 bit</dt> <dd> La variabile o l'espressione di attributo specificata deve essere un tipo integrale. Questo errore si verifica quando il tipo attribute-expression non viene risolto in un integer.<br/> </dd> </dl></td>
+<td><dl> <dt><span id="attribute_expression_must_be_of_integral_type__no_support_for_64-bit_expressions"></span><span id="ATTRIBUTE_EXPRESSION_MUST_BE_OF_INTEGRAL_TYPE__NO_SUPPORT_FOR_64-BIT_EXPRESSIONS"></span>L'espressione attribute deve essere di tipo integrale, non è supportato per le espressioni a 64 bit</dt> <dd> La variabile o l'espressione di attributo specificata deve essere un tipo integrale. Questo errore si verifica quando il tipo attribute-expression non viene risolto in un integer.<br/> </dd> </dl></td>
 </tr>
 <tr class="odd">
 <td><span id="MIDL2060"></span><span id="midl2060"></span><dl> <dt><strong>MIDL2060</strong></dt> </dl></td>
-<td><dl> <dt><span id="_byte_count__requires__ms_ext"></span><span id="_BYTE_COUNT__REQUIRES__MS_EXT"></span>[byte_count] richiede /ms_ext</dt> <dd> <a href="byte-count.md"><strong>L'attributo</strong></a>[ byte_count ] è un'estensione Microsoft per DCE IDL. Per usare questo attributo non è possibile eseguire la compilazione con l'opzione <a href="-osf.md"><strong>/osf,</strong></a> che esegue l'override delle opzioni predefinite del compilatore MIDL <a href="-ms-ext.md"><strong>/ms_ext</strong></a> <a href="-c-ext.md"><strong>e /c_ext</strong></a>.<br/> </dd> </dl></td>
+<td><dl> <dt><span id="_byte_count__requires__ms_ext"></span><span id="_BYTE_COUNT__REQUIRES__MS_EXT"></span>[byte_count] richiede /ms_ext</dt> <dd> <a href="byte-count.md"><strong>L'attributo</strong></a>[ byte_count ] è un'estensione Microsoft di DCE IDL. Per usare questo attributo non è possibile compilare con l'opzione <a href="-osf.md"><strong>/osf,</strong></a> che esegue l'override delle opzioni predefinite del compilatore MIDL <a href="-ms-ext.md"><strong>/ms_ext</strong></a> <a href="-c-ext.md"><strong>e /c_ext</strong></a>.<br/> </dd> </dl></td>
 </tr>
 <tr class="even">
 <td><span id="MIDL2061"></span><span id="midl2061"></span><dl> <dt><strong>MIDL2061</strong></dt> </dl></td>
-<td><dl> <dt><span id="_byte_count__can_be_applied_only_to_out_parameters_of_pointer_type"></span><span id="_BYTE_COUNT__CAN_BE_APPLIED_ONLY_TO_OUT_PARAMETERS_OF_POINTER_TYPE"></span>[byte_count] può essere applicato solo ai parametri out del tipo di puntatore</dt> <dd> <a href="byte-count.md"><strong>L'attributo</strong></a>[ byte_count ] può essere applicato solo ai parametri [<a href="out-idl.md"><strong>out</strong></a>] e tutti i parametri [<strong>out</strong>] devono essere tipi puntatore.<br/> </dd> </dl></td>
+<td><dl> <dt><span id="_byte_count__can_be_applied_only_to_out_parameters_of_pointer_type"></span><span id="_BYTE_COUNT__CAN_BE_APPLIED_ONLY_TO_OUT_PARAMETERS_OF_POINTER_TYPE"></span>[byte_count] può essere applicato solo a parametri out di tipo puntatore</dt> <dd> <a href="byte-count.md"><strong>L'attributo</strong></a>[ byte_count ] può essere applicato solo ai parametri [<a href="out-idl.md"><strong>out</strong></a>] e tutti i parametri [<strong>out</strong>] devono essere tipi puntatore.<br/> </dd> </dl></td>
 </tr>
 <tr class="odd">
 <td><span id="MIDL2062"></span><span id="midl2062"></span><dl> <dt><strong>MIDL2062</strong></dt> </dl></td>
-<td><dl> <dt><span id="_byte_count__cannot_be_specified_on_a_pointer_to_a_conformant_array_or_structure"></span><span id="_BYTE_COUNT__CANNOT_BE_SPECIFIED_ON_A_POINTER_TO_A_CONFORMANT_ARRAY_OR_STRUCTURE"></span>[byte_count] non può essere specificato su un puntatore a una matrice o a una struttura conforme</dt> <dd> <a href="byte-count.md"><strong>L'attributo</strong></a>[ byte_count ] non può essere applicato a una matrice o a una struttura conforme.<br/> </dd> </dl></td>
+<td><dl> <dt><span id="_byte_count__cannot_be_specified_on_a_pointer_to_a_conformant_array_or_structure"></span><span id="_BYTE_COUNT__CANNOT_BE_SPECIFIED_ON_A_POINTER_TO_A_CONFORMANT_ARRAY_OR_STRUCTURE"></span>[byte_count] non può essere specificato su un puntatore a una matrice o a una struttura conforme</dt> <dd> <a href="byte-count.md"><strong>L'attributo [ byte_count</strong></a>] non può essere applicato a una matrice o a una struttura conforme.<br/> </dd> </dl></td>
 </tr>
 <tr class="even">
 <td><span id="MIDL2063"></span><span id="midl2063"></span><dl> <dt><strong>MIDL2063</strong></dt> </dl></td>
-<td><dl> <dt><span id="parameter_specifying_the_byte_count_is_not__in__only_or_byte_count_parameter_is_not__out__only"></span><span id="PARAMETER_SPECIFYING_THE_BYTE_COUNT_IS_NOT__IN__ONLY_OR_BYTE_COUNT_PARAMETER_IS_NOT__OUT__ONLY"></span>il parametro che specifica il numero di byte non è solo [in] o il parametro byte count non è solo [out]</dt> <dd> Il valore associato a [<a href="byte-count.md"><strong>byte_count</strong></a>] deve essere trasmesso dal client al server. deve essere un parametro [<a href="in.md"><strong>in</strong></a>]. Il parametro<strong>[ byte_count</strong>] non deve essere un parametro [<strong>in, out</strong>].<br/> </dd> </dl></td>
+<td><dl> <dt><span id="parameter_specifying_the_byte_count_is_not__in__only_or_byte_count_parameter_is_not__out__only"></span><span id="PARAMETER_SPECIFYING_THE_BYTE_COUNT_IS_NOT__IN__ONLY_OR_BYTE_COUNT_PARAMETER_IS_NOT__OUT__ONLY"></span>il parametro che specifica il conteggio dei byte non è solo [in] o il parametro byte count non è solo [out]</dt> <dd> Il valore associato a [<a href="byte-count.md"><strong>byte_count</strong></a>] deve essere trasmesso dal client al server; deve essere un parametro [<a href="in.md"><strong>in</strong></a>]. Il parametro [<strong>byte_count</strong>] non deve essere un parametro [<strong>in, out</strong>].<br/> </dd> </dl></td>
 </tr>
 <tr class="odd">
 <td><span id="MIDL2064"></span><span id="midl2064"></span><dl> <dt><strong>MIDL2064</strong></dt> </dl></td>
-<td><dl> <dt><span id="parameter_specifying_the_byte_count_is_not_an_integral_type"></span><span id="PARAMETER_SPECIFYING_THE_BYTE_COUNT_IS_NOT_AN_INTEGRAL_TYPE"></span>il parametro che specifica il numero di byte non è un tipo integrale</dt> <dd> Il valore associato al conteggio dei byte deve essere di tipo <a href="int.md"><strong>integer int</strong></a>, <a href="small.md"><strong>small</strong></a>, <a href="short.md"><strong>short</strong></a>o <a href="long.md"><strong>long</strong></a>.<br/> </dd> </dl></td>
+<td><dl> <dt><span id="parameter_specifying_the_byte_count_is_not_an_integral_type"></span><span id="PARAMETER_SPECIFYING_THE_BYTE_COUNT_IS_NOT_AN_INTEGRAL_TYPE"></span>il parametro che specifica il numero di byte non è un tipo integrale</dt> <dd> Il valore associato al numero di byte deve essere di tipo integer <a href="int.md"><strong>int</strong></a>, <a href="small.md"><strong>small</strong></a>, <a href="short.md"><strong>short</strong></a>o <a href="long.md"><strong>long.</strong></a><br/> </dd> </dl></td>
 </tr>
 <tr class="even">
 <td><span id="MIDL2065"></span><span id="midl2065"></span><dl> <dt><strong>MIDL2065</strong></dt> </dl></td>
@@ -308,27 +308,27 @@ Durante la compilazione MIDL vengono generati i messaggi di errore seguenti:
 </tr>
 <tr class="even">
 <td><span id="MIDL2067"></span><span id="midl2067"></span><dl> <dt><strong>MIDL2067</strong></dt> </dl></td>
-<td><dl> <dt><span id="_case__expression_is_not_of_integral_type"></span><span id="_CASE__EXPRESSION_IS_NOT_OF_INTEGRAL_TYPE"></span>[case] expression non è di tipo integrale</dt> <dd> L'espressione specificata per l'etichetta case non è di tipo Integer.<br/> </dd> </dl></td>
+<td><dl> <dt><span id="_case__expression_is_not_of_integral_type"></span><span id="_CASE__EXPRESSION_IS_NOT_OF_INTEGRAL_TYPE"></span>L'espressione [case] non è di tipo integrale</dt> <dd> L'espressione specificata per l'etichetta case non è di tipo Integer.<br/> </dd> </dl></td>
 </tr>
 <tr class="odd">
 <td><span id="MIDL2068"></span><span id="midl2068"></span><dl> <dt><strong>MIDL2068</strong></dt> </dl></td>
-<td><dl> <dt><span id="specifying__context_handle__on_a_type_other_than_void___requires__ms_ext"></span><span id="SPECIFYING__CONTEXT_HANDLE__ON_A_TYPE_OTHER_THAN_VOID___REQUIRES__MS_EXT"></span>se si specifica [context_handle] in un tipo diverso da void * richiede /ms_ext</dt> <dd> Per la compatibilità DCE-RPC, l'handle di contesto deve essere un puntatore di tipo <strong>void *</strong>. Se si desidera che gli handle di contesto siano associati a tipi diversi da <strong>void *</strong>, non usare l'opzione del compilatore MIDL <a href="-osf.md"><strong>/osf</strong></a>, che esegue l'override dell'opzione predefinita del compilatore MIDL <a href="-ms-ext.md"><strong>/ms_ext</strong></a>.<br/> </dd> </dl></td>
+<td><dl> <dt><span id="specifying__context_handle__on_a_type_other_than_void___requires__ms_ext"></span><span id="SPECIFYING__CONTEXT_HANDLE__ON_A_TYPE_OTHER_THAN_VOID___REQUIRES__MS_EXT"></span>se si specifica [context_handle] in un tipo diverso da void * è necessario /ms_ext</dt> <dd> Per la compatibilità DCE-RPC, l'handle di contesto deve essere un puntatore di <strong>tipo void *</strong>. Se si vuole che gli handle di contesto siano associati a tipi diversi da <strong>void *</strong>, non usare l'opzione del compilatore MIDL <a href="-osf.md"><strong>/osf</strong></a>, che esegue l'override dell'opzione predefinita del compilatore MIDL <a href="-ms-ext.md"><strong>/ms_ext</strong></a>.<br/> </dd> </dl></td>
 </tr>
 <tr class="even">
 <td><span id="MIDL2069"></span><span id="midl2069"></span><dl> <dt><strong>MIDL2069</strong></dt> </dl></td>
-<td><dl> <dt><span id="cannot_specify_more_than_one_parameter_with_each_of_comm_status_fault_status"></span><span id="CANNOT_SPECIFY_MORE_THAN_ONE_PARAMETER_WITH_EACH_OF_COMM_STATUS_FAULT_STATUS"></span>non può specificare più di un parametro con ogni comm_status/fault_status</dt> <dd> Una routine può avere un solo parametro con<a href="comm-status.md"><strong>l'attributo</strong></a>[ comm_status ]. Può avere al massimo un parametro con<a href="fault-status.md"><strong>l'attributo</strong></a>[ fault_status ].<br/> </dd> </dl></td>
+<td><dl> <dt><span id="cannot_specify_more_than_one_parameter_with_each_of_comm_status_fault_status"></span><span id="CANNOT_SPECIFY_MORE_THAN_ONE_PARAMETER_WITH_EACH_OF_COMM_STATUS_FAULT_STATUS"></span>non è possibile specificare più di un parametro con comm_status/fault_status</dt> <dd> Una routine può avere un solo parametro con<a href="comm-status.md"><strong>l'attributo</strong></a>[ comm_status ]. Può avere al massimo un parametro con<a href="fault-status.md"><strong>l'attributo</strong></a>[ fault_status ].<br/> </dd> </dl></td>
 </tr>
 <tr class="odd">
 <td><span id="MIDL2070"></span><span id="midl2070"></span><dl> <dt><strong>MIDL2070</strong></dt> </dl></td>
-<td><dl> <dt><span id="comm_status_fault_status_parameter_must_be_an__out__only_pointer_parameter"></span><span id="COMM_STATUS_FAULT_STATUS_PARAMETER_MUST_BE_AN__OUT__ONLY_POINTER_PARAMETER"></span>comm_status/fault_status parametro del puntatore [out]</dt> <dd> I tipi di codice di errore [<a href="comm-status.md"><strong>comm_status</strong></a>] e [<a href="fault-status.md"><strong>fault_status</strong></a>] vengono trasmessi dal server al client e pertanto devono essere specificati come parametro [<a href="out-idl.md"><strong>out</strong></a>]. A causa dei vincoli nel linguaggio di programmazione C, tutti i parametri [<strong>out</strong>] devono essere puntatori.<br/> </dd> </dl></td>
+<td><dl> <dt><span id="comm_status_fault_status_parameter_must_be_an__out__only_pointer_parameter"></span><span id="COMM_STATUS_FAULT_STATUS_PARAMETER_MUST_BE_AN__OUT__ONLY_POINTER_PARAMETER"></span>comm_status/fault_status parametro deve essere un parametro puntatore solo [out]</dt> <dd> I tipi di codice di errore [<a href="comm-status.md"><strong>comm_status</strong></a>] e [<a href="fault-status.md"><strong>fault_status</strong></a>] vengono trasmessi dal server al client e pertanto devono essere specificati come parametro [<a href="out-idl.md"><strong>out</strong></a>]. A causa dei vincoli nel linguaggio di programmazione C, tutti i parametri [<strong>out</strong>] devono essere puntatori.<br/> </dd> </dl></td>
 </tr>
 <tr class="even">
 <td><span id="MIDL2071"></span><span id="midl2071"></span><dl> <dt><strong>MIDL2071</strong></dt> </dl></td>
-<td><dl> <dt><span id="endpoint_syntax_error"></span><span id="ENDPOINT_SYNTAX_ERROR"></span>Errore di sintassi dell'endpoint</dt> <dd> La sintassi dell'endpoint non è corretta.<br/> </dd> </dl></td>
+<td><dl> <dt><span id="endpoint_syntax_error"></span><span id="ENDPOINT_SYNTAX_ERROR"></span>errore di sintassi dell'endpoint</dt> <dd> La sintassi dell'endpoint non è corretta.<br/> </dd> </dl></td>
 </tr>
 <tr class="odd">
 <td><span id="MIDL2072"></span><span id="midl2072"></span><dl> <dt><strong>MIDL2072</strong></dt> </dl></td>
-<td><dl> <dt><span id="inapplicable_attribute"></span><span id="INAPPLICABLE_ATTRIBUTE"></span>attributo inapplicable</dt> <dd> L'attributo specificato non può essere applicato in questo costrutto. Ad esempio, l'attributo string si applica alle matrici <a href="char-idl.md"><strong>char</strong></a> o ai puntatori <strong>char</strong> e non può essere applicato a una struttura costituita da <a href="short.md"><strong>due numeri interi</strong></a> brevi: <br/>
+<td><dl> <dt><span id="inapplicable_attribute"></span><span id="INAPPLICABLE_ATTRIBUTE"></span>attributo inapplicable</dt> <dd> L'attributo specificato non può essere applicato in questo costrutto. Ad esempio, l'attributo string si <strong></strong> applica alle matrici <a href="char-idl.md"><strong>di</strong></a> caratteri o ai puntatori char e non può essere applicato a una struttura costituita da <a href="short.md"><strong>due valori short</strong></a> integer: <br/>
 <pre class="syntax" data-space="preserve"><code>typedef [string] struct moo 
 {
     short x;
@@ -338,11 +338,11 @@ Durante la compilazione MIDL vengono generati i messaggi di errore seguenti:
 </tr>
 <tr class="even">
 <td><span id="MIDL2073"></span><span id="midl2073"></span><dl> <dt><strong>MIDL2073</strong></dt> </dl></td>
-<td><dl> <dt><span id="_allocate__requires__ms_ext"></span><span id="_ALLOCATE__REQUIRES__MS_EXT"></span>[allocate] richiede /ms_ext</dt> <dd> <a href="allocate.md"><strong>L'attributo allocate</strong></a> rappresenta un'estensione Microsoft non definita come parte di DCE RPC. Per usare questo attributo, non è possibile eseguire la compilazione con l'opzione <a href="-osf.md"><strong>/osf,</strong></a> che esegue l'override dell'opzione predefinita del compilatore MIDL <a href="-ms-ext.md"><strong>/ms_ext</strong></a><br/> </dd> </dl></td>
+<td><dl> <dt><span id="_allocate__requires__ms_ext"></span><span id="_ALLOCATE__REQUIRES__MS_EXT"></span>[allocate] richiede /ms_ext</dt> <dd> <a href="allocate.md"><strong>L'attributo allocate</strong></a> rappresenta un'estensione Microsoft non definita come parte della RPC DCE. Per usare questo attributo, non è possibile eseguire la compilazione con l'opzione <a href="-osf.md"><strong>/osf,</strong></a> che esegue l'override dell'opzione predefinita del compilatore MIDL <a href="-ms-ext.md"><strong>/ms_ext</strong></a><br/> </dd> </dl></td>
 </tr>
 <tr class="odd">
 <td><span id="MIDL2074"></span><span id="midl2074"></span><dl> <dt><strong>MIDL2074</strong></dt> </dl></td>
-<td><dl> <dt><span id="invalid__allocate__mode"></span><span id="INVALID__ALLOCATE__MODE"></span>modalità non valida [allocare]</dt> <dd> È stata specificata una modalità non valida per il costrutto di attributo [<a href="allocate.md"><strong>allocate</strong></a>]. Le quattro modalità valide sono single_node, all_nodes, on_null e sempre.<br/> </dd> </dl></td>
+<td><dl> <dt><span id="invalid__allocate__mode"></span><span id="INVALID__ALLOCATE__MODE"></span>modalità [allocate] non valida</dt> <dd> È stata specificata una modalità non valida per il costrutto di attributo [<a href="allocate.md"><strong>allocate</strong></a>]. Le quattro modalità valide sono single_node, all_nodes, on_null e sempre.<br/> </dd> </dl></td>
 </tr>
 <tr class="even">
 <td><span id="MIDL2075"></span><span id="midl2075"></span><dl> <dt><strong>MIDL2075</strong></dt> </dl></td>
@@ -358,7 +358,7 @@ Durante la compilazione MIDL vengono generati i messaggi di errore seguenti:
 </tr>
 <tr class="odd">
 <td><span id="MIDL2078"></span><span id="midl2078"></span><dl> <dt><strong>MIDL2078</strong></dt> </dl></td>
-<td><dl> <dt><span id="no__switch_is__attribute_specified_at_use_of_union"></span><span id="NO__SWITCH_IS__ATTRIBUTE_SPECIFIED_AT_USE_OF_UNION"></span>nessun attributo [switch_is] specificato all'uso dell'unione</dt> <dd> Non è stato specificato alcun discriminante per l'unione. <a href="switch-is.md"><strong>L'attributo</strong></a>[ switch_is ] indica la discriminante usata per selezionare tra i campi unione.<br/> </dd> </dl></td>
+<td><dl> <dt><span id="no__switch_is__attribute_specified_at_use_of_union"></span><span id="NO__SWITCH_IS__ATTRIBUTE_SPECIFIED_AT_USE_OF_UNION"></span>nessun attributo [switch_is] specificato all'uso di union</dt> <dd> Non è stato specificato alcun discriminante per l'unione. <a href="switch-is.md"><strong>L'attributo</strong></a>[ switch_is ] indica la discriminante usata per selezionare tra i campi unione.<br/> </dd> </dl></td>
 </tr>
 <tr class="even">
 <td><span id="MIDL2079"></span><span id="midl2079"></span><dl> <dt><strong>MIDL2079</strong></dt> </dl></td>
@@ -394,7 +394,7 @@ Durante la compilazione MIDL vengono generati i messaggi di errore seguenti:
 </tr>
 <tr class="even">
 <td><span id="MIDL2087"></span><span id="midl2087"></span><dl> <dt><strong>MIDL2087</strong></dt> </dl></td>
-<td><dl> <dt><span id="presented_type_for__transmit_as__and__represent_as__must_not_derive_from_a_conformant_varying_array__its_pointer_equivalent__or_a_conformant_varying_structure"></span><span id="PRESENTED_TYPE_FOR__TRANSMIT_AS__AND__REPRESENT_AS__MUST_NOT_DERIVE_FROM_A_CONFORMANT_VARYING_ARRAY__ITS_POINTER_EQUIVALENT__OR_A_CONFORMANT_VARYING_STRUCTURE"></span>il tipo presentato per [transmit_as] e [represent_as] non deve derivare da una matrice conforme/variabile, dal relativo equivalente puntatore o da una struttura conforme/variabile</dt> <dd> Il tipo a cui è<a href="transmit-as.md"><strong>stato applicato [ transmit_as</strong></a>] non può derivare da una matrice o una struttura conforme (una matrice o una struttura le cui dimensioni sono determinate in fase di esecuzione).<br/> </dd> </dl></td>
+<td><dl> <dt><span id="presented_type_for__transmit_as__and__represent_as__must_not_derive_from_a_conformant_varying_array__its_pointer_equivalent__or_a_conformant_varying_structure"></span><span id="PRESENTED_TYPE_FOR__TRANSMIT_AS__AND__REPRESENT_AS__MUST_NOT_DERIVE_FROM_A_CONFORMANT_VARYING_ARRAY__ITS_POINTER_EQUIVALENT__OR_A_CONFORMANT_VARYING_STRUCTURE"></span>il tipo presentato per [transmit_as] e [represent_as] non deve derivare da una matrice conforme/variabile, dal relativo equivalente puntatore o da una struttura conforme/variabile</dt> <dd> Il tipo a cui è<a href="transmit-as.md"><strong>stato applicato</strong></a>[ transmit_as ] non può derivare da una matrice o una struttura conforme (una matrice o una struttura le cui dimensioni sono determinate in fase di esecuzione).<br/> </dd> </dl></td>
 </tr>
 <tr class="odd">
 <td><span id="MIDL2088"></span><span id="midl2088"></span><dl> <dt><strong>MIDL2088</strong></dt> </dl></td>
@@ -450,15 +450,15 @@ Durante la compilazione MIDL vengono generati i messaggi di errore seguenti:
 </tr>
 <tr class="even">
 <td><span id="MIDL2101"></span><span id="midl2101"></span><dl> <dt><strong>MIDL2101</strong></dt> </dl></td>
-<td><dl> <dt><span id="this_parameter_does_not_exist_in_the_IDL_file"></span><span id="this_parameter_does_not_exist_in_the_idl_file"></span><span id="THIS_PARAMETER_DOES_NOT_EXIST_IN_THE_IDL_FILE"></span>Questo parametro non esiste nel file IDL</dt> <dd> Un parametro specificato in ACF non esiste nella definizione nel file IDL. Tutti i parametri, le funzioni e le definizioni di tipo visualizzati in ACF devono corrispondere a parametri, funzioni e tipi definiti in precedenza nel file IDL.<br/> </dd> </dl></td>
+<td><dl> <dt><span id="this_parameter_does_not_exist_in_the_IDL_file"></span><span id="this_parameter_does_not_exist_in_the_idl_file"></span><span id="THIS_PARAMETER_DOES_NOT_EXIST_IN_THE_IDL_FILE"></span>questo parametro non esiste nel file IDL</dt> <dd> Un parametro specificato in ACF non esiste nella definizione nel file IDL. Tutti i parametri, le funzioni e le definizioni dei tipi visualizzati nel file ACF devono corrispondere a parametri, funzioni e tipi definiti in precedenza nel file IDL.<br/> </dd> </dl></td>
 </tr>
 <tr class="odd">
 <td><span id="MIDL2102"></span><span id="midl2102"></span><dl> <dt><strong>MIDL2102</strong></dt> </dl></td>
-<td><dl> <dt><span id="this_array-bounds_construct_is_not_supported"></span><span id="THIS_ARRAY-BOUNDS_CONSTRUCT_IS_NOT_SUPPORTED"></span>Questo costrutto di limiti di matrice non è supportato</dt> <dd> MIDL supporta attualmente l'espressione dei limiti superiore e inferiore di una matrice nel formato Array[Lower .. Upper] solo quando la costante che specifica il limite inferiore della matrice viene risolta nel valore zero.<br/> </dd> </dl></td>
+<td><dl> <dt><span id="this_array-bounds_construct_is_not_supported"></span><span id="THIS_ARRAY-BOUNDS_CONSTRUCT_IS_NOT_SUPPORTED"></span>Questo costrutto di limiti di matrice non è supportato</dt> <dd> MIDL attualmente supporta l'espressione dei limiti superiore e inferiore di una matrice nel formato Array[Lower .. Upper] solo quando la costante che specifica il limite inferiore della matrice viene risolta nel valore zero.<br/> </dd> </dl></td>
 </tr>
 <tr class="even">
 <td><span id="MIDL2103"></span><span id="midl2103"></span><dl> <dt><strong>MIDL2103</strong></dt> </dl></td>
-<td><dl> <dt><span id="array_bound_specification_is_illegal"></span><span id="ARRAY_BOUND_SPECIFICATION_IS_ILLEGAL"></span>specifica associata a matrice non valida</dt> <dd> La specifica utente dei limiti di matrice per la matrice a dimensione fissa non è valida. Ad esempio: <br/>
+<td><dl> <dt><span id="array_bound_specification_is_illegal"></span><span id="ARRAY_BOUND_SPECIFICATION_IS_ILLEGAL"></span>La specifica del limite di matrici non è valida</dt> <dd> La specifica utente dei limiti di matrice per la matrice di dimensioni fisse non è valida. Ad esempio: <br/>
 <pre class="syntax" data-space="preserve"><code>typedef short Array[-1]</code></pre>
 </dd> </dl></td>
 </tr>
@@ -468,19 +468,19 @@ Durante la compilazione MIDL vengono generati i messaggi di errore seguenti:
 </tr>
 <tr class="even">
 <td><span id="MIDL2105"></span><span id="midl2105"></span><dl> <dt><strong>MIDL2105</strong></dt> </dl></td>
-<td><dl> <dt><span id="pointee_array_does_not_derive_any_size"></span><span id="POINTEE_ARRAY_DOES_NOT_DERIVE_ANY_SIZE"></span>pointee/array non deriva alcuna dimensione</dt> <dd> Una matrice conforme è stata specificata senza alcuna specifica di dimensione. È possibile specificare le dimensioni con<a href="max-is.md"><strong>l'attributo</strong></a>[ max_is ] o [<a href="size-is.md"><strong>size_is</strong></a>].<br/> </dd> </dl></td>
+<td><dl> <dt><span id="pointee_array_does_not_derive_any_size"></span><span id="POINTEE_ARRAY_DOES_NOT_DERIVE_ANY_SIZE"></span>pointee/array non deriva alcuna dimensione</dt> <dd> È stata specificata una matrice conforme senza alcuna specifica delle dimensioni. È possibile specificare le dimensioni con<a href="max-is.md"><strong>l'attributo</strong></a>[ max_is ] o [<a href="size-is.md"><strong>size_is</strong></a>].<br/> </dd> </dl></td>
 </tr>
 <tr class="odd">
 <td><span id="MIDL2106"></span><span id="midl2106"></span><dl> <dt><strong>MIDL2106</strong></dt> </dl></td>
-<td><dl> <dt><span id="only_fixed_arrays_and_SAFEARRAYs_are_legal_in_a_type_library"></span><span id="only_fixed_arrays_and_safearrays_are_legal_in_a_type_library"></span><span id="ONLY_FIXED_ARRAYS_AND_SAFEARRAYS_ARE_LEGAL_IN_A_TYPE_LIBRARY"></span>solo le matrici fisse e SAFEARRAYs sono legali in una libreria dei tipi</dt> <dd> È stato usato un tipo di matrice all'interno di un'istruzione di libreria che non può essere usata in una libreria dei tipi.<br/> </dd> </dl></td>
+<td><dl> <dt><span id="only_fixed_arrays_and_SAFEARRAYs_are_legal_in_a_type_library"></span><span id="only_fixed_arrays_and_safearrays_are_legal_in_a_type_library"></span><span id="ONLY_FIXED_ARRAYS_AND_SAFEARRAYS_ARE_LEGAL_IN_A_TYPE_LIBRARY"></span>solo le matrici fisse e SAFEARRAY sono legali in una libreria dei tipi</dt> <dd> È stato usato un tipo matrice all'interno di un'istruzione di libreria che non può essere usata in una libreria dei tipi.<br/> </dd> </dl></td>
 </tr>
 <tr class="even">
 <td><span id="MIDL2107"></span><span id="midl2107"></span><dl> <dt><strong>MIDL2107</strong></dt> </dl></td>
-<td><dl> <dt><span id="SAFEARRAYs_are_only_legal_inside_a_library_block"></span><span id="safearrays_are_only_legal_inside_a_library_block"></span><span id="SAFEARRAYS_ARE_ONLY_LEGAL_INSIDE_A_LIBRARY_BLOCK"></span>SAFEARRAYs è legale solo all'interno di un blocco di libreria</dt> <dd> Il compilatore MIDL non riconosce SAFEARRAY come tipo di dati valido se non durante la generazione di una libreria dei tipi.<br/> </dd> </dl></td>
+<td><dl> <dt><span id="SAFEARRAYs_are_only_legal_inside_a_library_block"></span><span id="safearrays_are_only_legal_inside_a_library_block"></span><span id="SAFEARRAYS_ARE_ONLY_LEGAL_INSIDE_A_LIBRARY_BLOCK"></span>SAFEARRAYs è legale solo all'interno di un blocco di libreria</dt> <dd> Il compilatore MIDL non riconosce SAFEARRAY come tipo di dati valido, se non durante la generazione di una libreria dei tipi.<br/> </dd> </dl></td>
 </tr>
 <tr class="odd">
 <td><span id="MIDL2108"></span><span id="midl2108"></span><dl> <dt><strong>MIDL2108</strong></dt> </dl></td>
-<td><dl> <dt><span id="badly_formed_character_constant"></span><span id="BADLY_FORMED_CHARACTER_CONSTANT"></span>costante carattere con formato non corretto</dt> <dd> Il carattere di fine riga non è consentito nelle costanti carattere.<br/> </dd> </dl></td>
+<td><dl> <dt><span id="badly_formed_character_constant"></span><span id="BADLY_FORMED_CHARACTER_CONSTANT"></span>Costante di caratteri con formato non corretto</dt> <dd> Il carattere di fine riga non è consentito nelle costanti carattere.<br/> </dd> </dl></td>
 </tr>
 <tr class="even">
 <td><span id="MIDL2109"></span><span id="midl2109"></span><dl> <dt><strong>MIDL2109</strong></dt> </dl></td>
@@ -492,19 +492,19 @@ Durante la compilazione MIDL vengono generati i messaggi di errore seguenti:
 </tr>
 <tr class="even">
 <td><span id="MIDL2111"></span><span id="midl2111"></span><dl> <dt><strong>MIDL2111</strong></dt> </dl></td>
-<td><dl> <dt><span id="identifier_length_exceeds_31_characters"></span><span id="IDENTIFIER_LENGTH_EXCEEDS_31_CHARACTERS"></span>la lunghezza dell'identificatore supera i 31 caratteri</dt> <dd> Gli identificatori sono limitati a 31 caratteri alfanumerici. I nomi degli identificatori di lunghezza superiore a 31 caratteri vengono troncati.<br/> </dd> </dl></td>
+<td><dl> <dt><span id="identifier_length_exceeds_31_characters"></span><span id="IDENTIFIER_LENGTH_EXCEEDS_31_CHARACTERS"></span>La lunghezza dell'identificatore supera i 31 caratteri</dt> <dd> Gli identificatori sono limitati a 31 caratteri alfanumerici. I nomi degli identificatori di lunghezza superiore a 31 caratteri vengono troncati.<br/> </dd> </dl></td>
 </tr>
 <tr class="odd">
 <td><span id="MIDL2112"></span><span id="midl2112"></span><dl> <dt><strong>MIDL2112</strong></dt> </dl></td>
-<td><dl> <dt><span id="end_of_line_found_in_string"></span><span id="END_OF_LINE_FOUND_IN_STRING"></span>fine della riga trovata nella stringa</dt> <dd> Nella stringa è stato rilevato il carattere di fine riga. Verificare di aver incluso il carattere virgolette doppie che termina la stringa.<br/> </dd> </dl></td>
+<td><dl> <dt><span id="end_of_line_found_in_string"></span><span id="END_OF_LINE_FOUND_IN_STRING"></span>fine della riga trovata nella stringa</dt> <dd> Il carattere di fine riga è stato rilevato nella stringa. Verificare di aver incluso il carattere virgolette doppie che termina la stringa.<br/> </dd> </dl></td>
 </tr>
 <tr class="even">
 <td><span id="MIDL2113"></span><span id="midl2113"></span><dl> <dt><strong>MIDL2113</strong></dt> </dl></td>
-<td><dl> <dt><span id="string_constant_exceeds_limit_of_255_characters"></span><span id="STRING_CONSTANT_EXCEEDS_LIMIT_OF_255_CHARACTERS"></span>la costante stringa supera il limite di 255 caratteri</dt> <dd> La stringa ha superato la lunghezza massima consentita di 255 caratteri.<br/> </dd> </dl></td>
+<td><dl> <dt><span id="string_constant_exceeds_limit_of_255_characters"></span><span id="STRING_CONSTANT_EXCEEDS_LIMIT_OF_255_CHARACTERS"></span>La costante stringa supera il limite di 255 caratteri</dt> <dd> La stringa ha superato la lunghezza massima consentita di 255 caratteri.<br/> </dd> </dl></td>
 </tr>
 <tr class="odd">
 <td><span id="MIDL2114"></span><span id="midl2114"></span><dl> <dt><strong>MIDL2114</strong></dt> </dl></td>
-<td><dl> <dt><span id="identifier_exceeds_limit_of_255_characters_and_has_been_truncated"></span><span id="IDENTIFIER_EXCEEDS_LIMIT_OF_255_CHARACTERS_AND_HAS_BEEN_TRUNCATED"></span>L'identificatore supera il limite di 255 caratteri ed è stato troncato</dt> <dd> L'identificatore ha superato la lunghezza massima consentita di 255 caratteri. I caratteri in eccesso nell'identificatore vengono troncati.<br/> </dd> </dl></td>
+<td><dl> <dt><span id="identifier_exceeds_limit_of_255_characters_and_has_been_truncated"></span><span id="IDENTIFIER_EXCEEDS_LIMIT_OF_255_CHARACTERS_AND_HAS_BEEN_TRUNCATED"></span>l'identificatore supera il limite di 255 caratteri ed è stato troncato</dt> <dd> L'identificatore ha superato la lunghezza massima consentita di 255 caratteri. I caratteri in eccesso nell'identificatore vengono troncati.<br/> </dd> </dl></td>
 </tr>
 <tr class="even">
 <td><span id="MIDL2115"></span><span id="midl2115"></span><dl> <dt><strong>MIDL2115</strong></dt> </dl></td>
@@ -532,39 +532,39 @@ Durante la compilazione MIDL vengono generati i messaggi di errore seguenti:
 </tr>
 <tr class="even">
 <td><span id="MIDL2121"></span><span id="midl2121"></span><dl> <dt><strong>MIDL2121</strong></dt> </dl></td>
-<td><dl> <dt><span id="_out__only_parameter_must_not_derive_from_a_top-level__unique__or__ptr__pointer_array"></span><span id="_OUT__ONLY_PARAMETER_MUST_NOT_DERIVE_FROM_A_TOP-LEVEL__UNIQUE__OR__PTR__POINTER_ARRAY"></span>[out] solo il parametro non deve derivare da un puntatore/matrice [univoco] o [ptr] di primo livello</dt> <dd> Un puntatore univoco non può essere un parametro [<a href="out-idl.md"><strong>out</strong></a>]-only. Per definizione, un puntatore univoco può passare <strong>da NULL</strong> a non<strong>NULL.</strong> Nessuna informazione sul parametro [<strong>out</strong>]-only viene passata da client a server.<br/> </dd> </dl></td>
+<td><dl> <dt><span id="_out__only_parameter_must_not_derive_from_a_top-level__unique__or__ptr__pointer_array"></span><span id="_OUT__ONLY_PARAMETER_MUST_NOT_DERIVE_FROM_A_TOP-LEVEL__UNIQUE__OR__PTR__POINTER_ARRAY"></span>[out] solo il parametro non deve derivare da un puntatore/matrice [unique] o [ptr] di primo livello</dt> <dd> Un puntatore univoco non può essere un parametro [<a href="out-idl.md"><strong>out</strong></a>]-only. Per definizione, un puntatore univoco può passare da <strong>NULL</strong> a non<strong>NULL.</strong> Nessuna informazione sul parametro [<strong>out</strong>]-only viene passata dal client al server.<br/> </dd> </dl></td>
 </tr>
 <tr class="odd">
 <td><span id="MIDL2122"></span><span id="midl2122"></span><dl> <dt><strong>MIDL2122</strong></dt> </dl></td>
-<td><dl> <dt><span id="attribute_is_not_applicable_to_this_non-rpcable_union"></span><span id="ATTRIBUTE_IS_NOT_APPLICABLE_TO_THIS_NON-RPCABLE_UNION"></span>L'attributo non è applicabile a questa unione non rpcable</dt> <dd> Solo gli attributi [<a href="switch-is.md"><strong>switch_is</strong></a>] e [<a href="switch-type.md"><strong>switch_type</strong></a>] si applicano a un'unione trasmessa come parte di una chiamata di procedura remota.<br/> </dd> </dl></td>
+<td><dl> <dt><span id="attribute_is_not_applicable_to_this_non-rpcable_union"></span><span id="ATTRIBUTE_IS_NOT_APPLICABLE_TO_THIS_NON-RPCABLE_UNION"></span>l'attributo non è applicabile a questa unione non rpcable</dt> <dd> Solo gli attributi [<a href="switch-is.md"><strong>switch_is</strong></a>] e [<a href="switch-type.md"><strong>switch_type</strong></a>] si applicano a un'unione trasmessa come parte di una chiamata di procedura remota.<br/> </dd> </dl></td>
 </tr>
 <tr class="even">
 <td><span id="MIDL2123"></span><span id="midl2123"></span><dl> <dt><strong>MIDL2123</strong></dt> </dl></td>
-<td><dl> <dt><span id="expression_used_for_a_size_attribute_must_not_derive_from_an__out_-only_parameter"></span><span id="EXPRESSION_USED_FOR_A_SIZE_ATTRIBUTE_MUST_NOT_DERIVE_FROM_AN__OUT_-ONLY_PARAMETER"></span>L'espressione usata per un attributo size non deve derivare da un parametro solo [out]</dt> <dd> Il valore di un parametro [<a href="out-idl.md"><strong>out</strong></a>]-only non viene trasmesso al server e non può essere usato per determinare la lunghezza o le dimensioni del parametro [<a href="in.md"><strong>in</strong></a>].<br/> </dd> </dl></td>
+<td><dl> <dt><span id="expression_used_for_a_size_attribute_must_not_derive_from_an__out_-only_parameter"></span><span id="EXPRESSION_USED_FOR_A_SIZE_ATTRIBUTE_MUST_NOT_DERIVE_FROM_AN__OUT_-ONLY_PARAMETER"></span>L'espressione usata per un attributo size non deve derivare da un parametro [out]-only</dt> <dd> Il valore di un parametro [<a href="out-idl.md"><strong>out</strong></a>]-only non viene trasmesso al server e non può essere usato per determinare la lunghezza o le dimensioni del parametro [<a href="in.md"><strong>in</strong></a>].<br/> </dd> </dl></td>
 </tr>
 <tr class="odd">
 <td><span id="MIDL2124"></span><span id="midl2124"></span><dl> <dt><strong>MIDL2124</strong></dt> </dl></td>
-<td><dl> <dt><span id="expression_used_for_a_length_attribute_for_an__in__parameter_cannot_derive_from_an__out_-only_parameter"></span><span id="EXPRESSION_USED_FOR_A_LENGTH_ATTRIBUTE_FOR_AN__IN__PARAMETER_CANNOT_DERIVE_FROM_AN__OUT_-ONLY_PARAMETER"></span>L'espressione usata per un attributo length per un parametro [in] non può derivare da un parametro solo [out]</dt> <dd> Il valore di un parametro [<a href="out-idl.md"><strong>out</strong></a>]-only non viene trasmesso al server e non può essere usato per determinare la lunghezza o le dimensioni del parametro [<a href="in.md"><strong>in</strong></a>].<br/> </dd> </dl></td>
+<td><dl> <dt><span id="expression_used_for_a_length_attribute_for_an__in__parameter_cannot_derive_from_an__out_-only_parameter"></span><span id="EXPRESSION_USED_FOR_A_LENGTH_ATTRIBUTE_FOR_AN__IN__PARAMETER_CANNOT_DERIVE_FROM_AN__OUT_-ONLY_PARAMETER"></span>L'espressione usata per un attributo length per un parametro [in] non può derivare da un parametro [out]-only</dt> <dd> Il valore di un parametro [<a href="out-idl.md"><strong>out</strong></a>]-only non viene trasmesso al server e non può essere usato per determinare la lunghezza o le dimensioni del parametro [<a href="in.md"><strong>in</strong></a>].<br/> </dd> </dl></td>
 </tr>
 <tr class="even">
 <td><span id="MIDL2125"></span><span id="midl2125"></span><dl> <dt><strong>MIDL2125</strong></dt> </dl></td>
-<td><dl> <dt><span id="use_of__int__needs__c_ext"></span><span id="USE_OF__INT__NEEDS__C_EXT"></span>L'uso &quot; di int &quot; richiede /c_ext</dt> <dd> MIDL è un linguaggio fortemente tipizzato. Tutti i parametri trasmessi in rete devono essere derivati da uno dei tipi di base MIDL. Il tipo <a href="int.md"><strong>int</strong></a> non è definito come parte di MIDL. I dati trasmessi devono includere un identificatore di dimensioni: <a href="small.md"><strong>small,</strong></a> <strong>short</strong>o <strong>long.</strong> I dati non trasmessi in rete possono essere inclusi in un'interfaccia. Usare <a href="-c-ext.md"><strong>l'opzione /c_ext</strong></a> .<br/> </dd> </dl></td>
+<td><dl> <dt><span id="use_of__int__needs__c_ext"></span><span id="USE_OF__INT__NEEDS__C_EXT"></span>l'uso &quot; di int &quot; needs /c_ext</dt> <dd> MIDL è un linguaggio fortemente tipizzato. Tutti i parametri trasmessi in rete devono essere derivati da uno dei tipi di base MIDL. Il tipo <a href="int.md"><strong>int</strong></a> non è definito come parte di MIDL. I dati trasmessi devono includere un identificatore di dimensioni: <a href="small.md"><strong>small</strong></a>, <strong>short</strong>o <strong>long</strong>. I dati non trasmessi in rete possono essere inclusi in un'interfaccia. usare <a href="-c-ext.md"><strong>l'opzione /c_ext</strong></a> .<br/> </dd> </dl></td>
 </tr>
 <tr class="odd">
 <td><span id="MIDL2126"></span><span id="midl2126"></span><dl> <dt><strong>MIDL2126</strong></dt> </dl></td>
-<td><dl> <dt><span id="struct_union_field_must_not_be__void_"></span><span id="STRUCT_UNION_FIELD_MUST_NOT_BE__VOID_"></span>Il campo struct/union non deve essere &quot; void&quot;</dt> <dd> I campi in una struttura o unione devono essere dichiarati come di un tipo di base specifico supportato da MIDL o di un tipo derivato dai tipi di base. I tipi Void non sono consentiti nelle operazioni remote.<br/> </dd> </dl></td>
+<td><dl> <dt><span id="struct_union_field_must_not_be__void_"></span><span id="STRUCT_UNION_FIELD_MUST_NOT_BE__VOID_"></span>Il campo struct/union non deve essere &quot; void&quot;</dt> <dd> I campi di una struttura o di un'unione devono essere dichiarati come di un tipo di base specifico supportato da MIDL o da un tipo derivato dai tipi di base. I tipi Void non sono consentiti nelle operazioni remote.<br/> </dd> </dl></td>
 </tr>
 <tr class="even">
 <td><span id="MIDL2127"></span><span id="midl2127"></span><dl> <dt><strong>MIDL2127</strong></dt> </dl></td>
-<td><dl> <dt><span id="array_element_must_not_be_void"></span><span id="ARRAY_ELEMENT_MUST_NOT_BE_VOID"></span>L'elemento della matrice non deve essere void</dt> <dd> Un elemento di matrice non può essere void.<br/> </dd> </dl></td>
+<td><dl> <dt><span id="array_element_must_not_be_void"></span><span id="ARRAY_ELEMENT_MUST_NOT_BE_VOID"></span>L'elemento array non deve essere void</dt> <dd> Un elemento della matrice non può essere void.<br/> </dd> </dl></td>
 </tr>
 <tr class="odd">
 <td><span id="MIDL2128"></span><span id="midl2128"></span><dl> <dt><strong>MIDL2128</strong></dt> </dl></td>
-<td><dl> <dt><span id="use_of_type_qualifiers_and_or_modifiers_needs__c_ext"></span><span id="USE_OF_TYPE_QUALIFIERS_AND_OR_MODIFIERS_NEEDS__C_EXT"></span>L'uso di qualificatori di tipo e/o modificatori richiede /c_ext</dt> <dd> I modificatori di tipo <strong>_cdecl</strong> e <strong>_far</strong> possono essere compilati solo se si specifica l'opzione <a href="-c-ext.md"><strong>/c_ext.</strong></a><br/> </dd> </dl></td>
+<td><dl> <dt><span id="use_of_type_qualifiers_and_or_modifiers_needs__c_ext"></span><span id="USE_OF_TYPE_QUALIFIERS_AND_OR_MODIFIERS_NEEDS__C_EXT"></span>L'uso di qualificatori di tipo e/o modificatori richiede /c_ext</dt> <dd> I modificatori di tipo <strong>_cdecl</strong> <strong>e _far</strong> possono essere compilati solo se si specifica l'opzione <a href="-c-ext.md"><strong>/c_ext.</strong></a><br/> </dd> </dl></td>
 </tr>
 <tr class="even">
 <td><span id="MIDL2129"></span><span id="midl2129"></span><dl> <dt><strong>MIDL2129</strong></dt> </dl></td>
-<td><dl> <dt><span id="struct_union_field_must_not_derive_from_a_function"></span><span id="STRUCT_UNION_FIELD_MUST_NOT_DERIVE_FROM_A_FUNCTION"></span>Il campo struct/union non deve derivare da una funzione</dt> <dd> I campi di una struttura o unione devono essere tipi di base MIDL o tipi derivati da questi tipi di base. Le funzioni non sono legali nei campi di struttura o unione.<br/> </dd> </dl></td>
+<td><dl> <dt><span id="struct_union_field_must_not_derive_from_a_function"></span><span id="STRUCT_UNION_FIELD_MUST_NOT_DERIVE_FROM_A_FUNCTION"></span>Il campo struct/union non deve derivare da una funzione</dt> <dd> I campi di una struttura o di un'unione devono essere tipi di base MIDL o tipi derivati da questi tipi di base. Le funzioni non sono legali nei campi di struttura o unione.<br/> </dd> </dl></td>
 </tr>
 <tr class="odd">
 <td><span id="MIDL2130"></span><span id="midl2130"></span><dl> <dt><strong>MIDL2130</strong></dt> </dl></td>
@@ -612,7 +612,7 @@ Durante la compilazione MIDL vengono generati i messaggi di errore seguenti:
 </tr>
 <tr class="even">
 <td><span id="MIDL2141"></span><span id="midl2141"></span><dl> <dt><strong>MIDL2141</strong></dt> </dl></td>
-<td><dl> <dt><span id="use_of_a_parameter_deriving_from_a_type_containing_type-modifiers_type-qualifiers_needs__c_ext"></span><span id="USE_OF_A_PARAMETER_DERIVING_FROM_A_TYPE_CONTAINING_TYPE-MODIFIERS_TYPE-QUALIFIERS_NEEDS__C_EXT"></span>L'uso di un parametro derivante da un tipo contenente modificatori di tipo/qualificatori di tipo richiede /c_ext</dt> <dd> L'uso di parole chiave come <strong>far</strong>, <strong>near</strong>, <a href="const.md"><strong>const</strong></a>e <strong>volatile</strong> nel file IDL è un'estensione Microsoft per DCE RPC. Queste parole chiave non sono disponibili quando si esegue la compilazione con l'opzione <a href="-osf.md"><strong>/osf,</strong></a> che disattiva l'opzione <a href="-c-ext.md"><strong>di estensione /c_ext</strong></a> predefinita.<br/> </dd> </dl></td>
+<td><dl> <dt><span id="use_of_a_parameter_deriving_from_a_type_containing_type-modifiers_type-qualifiers_needs__c_ext"></span><span id="USE_OF_A_PARAMETER_DERIVING_FROM_A_TYPE_CONTAINING_TYPE-MODIFIERS_TYPE-QUALIFIERS_NEEDS__C_EXT"></span>L'uso di un parametro derivante da un tipo contenente modificatori di tipo/qualificatori di tipo richiede /c_ext</dt> <dd> L'uso di parole chiave come <strong>far</strong>, <strong>near</strong>, <a href="const.md"><strong>const</strong></a>e <strong>volatile</strong> nel file IDL è un'estensione Microsoft per DCE RPC. Queste parole chiave non sono disponibili quando si esegue la compilazione con l'opzione <a href="-osf.md"><strong>/osf,</strong></a> che disattiva <a href="-c-ext.md"><strong>l'opzione di estensione /c_ext</strong></a> predefinita.<br/> </dd> </dl></td>
 </tr>
 <tr class="odd">
 <td><span id="MIDL2142"></span><span id="midl2142"></span><dl> <dt><strong>MIDL2142</strong></dt> </dl></td>
@@ -620,7 +620,7 @@ Durante la compilazione MIDL vengono generati i messaggi di errore seguenti:
 </tr>
 <tr class="even">
 <td><span id="MIDL2143"></span><span id="midl2143"></span><dl> <dt><strong>MIDL2143</strong></dt> </dl></td>
-<td><dl> <dt><span id="parameter_must_not_derive_from_a_nonrpccapable_union"></span><span id="PARAMETER_MUST_NOT_DERIVE_FROM_A_NONRPCCAPABLE_UNION"></span>il parametro non deve derivare da un'unione che supporta nonrpc</dt> <dd> L'unione deve essere associata a un oggetto discriminante. Usare gli attributi [<a href="switch-is.md"><strong>switch_is</strong></a>] e [<a href="switch-type.md"><strong>switch_type</strong></a>].<br/> </dd> </dl></td>
+<td><dl> <dt><span id="parameter_must_not_derive_from_a_nonrpccapable_union"></span><span id="PARAMETER_MUST_NOT_DERIVE_FROM_A_NONRPCCAPABLE_UNION"></span>il parametro non deve derivare da un'unione che supporta nonrpc</dt> <dd> L'unione deve essere associata a un oggetto discriminante. Usare gli attributi [<a href="switch-is.md"><strong>switch_is</strong></a>] e [<a href="switch-type.md"><strong>switch_type</strong></a>] .<br/> </dd> </dl></td>
 </tr>
 <tr class="odd">
 <td><span id="MIDL2144"></span><span id="midl2144"></span><dl> <dt><strong>MIDL2144</strong></dt> </dl></td>
@@ -636,7 +636,7 @@ Durante la compilazione MIDL vengono generati i messaggi di errore seguenti:
 </tr>
 <tr class="even">
 <td><span id="MIDL2147"></span><span id="midl2147"></span><dl> <dt><strong>MIDL2147</strong></dt> </dl></td>
-<td><dl> <dt><span id="return_type_must_not_derive_from_a_nonrpccapable_union"></span><span id="RETURN_TYPE_MUST_NOT_DERIVE_FROM_A_NONRPCCAPABLE_UNION"></span>Il tipo restituito non deve derivare da un'unione che supporta nonrpc</dt> <dd> L'unione deve essere associata a un oggetto discriminante. Usare gli attributi [<a href="switch-is.md"><strong>switch_is</strong></a>] e [<a href="switch-type.md"><strong>switch_type</strong></a>].<br/> </dd> </dl></td>
+<td><dl> <dt><span id="return_type_must_not_derive_from_a_nonrpccapable_union"></span><span id="RETURN_TYPE_MUST_NOT_DERIVE_FROM_A_NONRPCCAPABLE_UNION"></span>Il tipo restituito non deve derivare da un'unione che supporta nonrpc</dt> <dd> L'unione deve essere associata a un oggetto discriminante. Usare gli attributi [<a href="switch-is.md"><strong>switch_is</strong></a>] e [<a href="switch-type.md"><strong>switch_type</strong></a>] .<br/> </dd> </dl></td>
 </tr>
 <tr class="odd">
 <td><span id="MIDL2148"></span><span id="midl2148"></span><dl> <dt><strong>MIDL2148</strong></dt> </dl></td>
@@ -668,7 +668,7 @@ Durante la compilazione MIDL vengono generati i messaggi di errore seguenti:
 </tr>
 <tr class="even">
 <td><span id="MIDL2155"></span><span id="midl2155"></span><dl> <dt><strong>MIDL2155</strong></dt> </dl></td>
-<td><dl> <dt><span id="declaration_must_be_of_the_form__const__type__declarator_____initializing_expression_"></span><span id="DECLARATION_MUST_BE_OF_THE_FORM__CONST__TYPE__DECLARATOR_____INITIALIZING_EXPRESSION_"></span>la dichiarazione deve avere il formato: const <type><declarator> = <initializing expression></dt> <dd> La dichiarazione non è compatibile con la sintassi RPC DCE. Usare <a href="-ms-ext.md"><strong>l'opzione /ms_ext</strong></a> <a href="-c-ext.md"><strong>o /c_ext</strong></a> modalità del compilatore MIDL.<br/> </dd> </dl></td>
+<td><dl> <dt><span id="declaration_must_be_of_the_form__const__type__declarator_____initializing_expression_"></span><span id="DECLARATION_MUST_BE_OF_THE_FORM__CONST__TYPE__DECLARATOR_____INITIALIZING_EXPRESSION_"></span>la dichiarazione deve essere nel formato: tipo &lt; const&gt;<declarator> = <initializing expression></dt> <dd> La dichiarazione non è compatibile con la sintassi RPC DCE. Usare <a href="-ms-ext.md"><strong>l'opzione /ms_ext</strong></a> <a href="-c-ext.md"><strong>o /c_ext</strong></a> modalità del compilatore MIDL.<br/> </dd> </dl></td>
 </tr>
 <tr class="odd">
 <td><span id="MIDL2156"></span><span id="midl2156"></span><dl> <dt><strong>MIDL2156</strong></dt> </dl></td>
@@ -738,7 +738,7 @@ Durante la compilazione MIDL vengono generati i messaggi di errore seguenti:
 </tr>
 <tr class="odd">
 <td><span id="MIDL2172"></span><span id="midl2172"></span><dl> <dt><strong>MIDL2172</strong></dt> </dl></td>
-<td><dl> <dt><span id="no__pointer_default__attribute_specified__assuming__ptr__for_all_unattributed_pointers_in_interface"></span><span id="NO__POINTER_DEFAULT__ATTRIBUTE_SPECIFIED__ASSUMING__PTR__FOR_ALL_UNATTRIBUTED_POINTERS_IN_INTERFACE"></span>nessun attributo [pointer_default] specificato, presupponendo [ptr] per tutti i puntatori senza attributi nell'interfaccia</dt> <dd> L'implementazione IDL DCE specifica che tutti i puntatori in ogni file IDL devono essere associati agli attributi del puntatore. Quando un attributo puntatore esplicito non viene assegnato al parametro o al tipo di puntatore e non viene specificato alcun attributo [<a href="pointer-default.md"><strong>pointer_default</strong></a>] nel file IDL, l'attributo puntatore completo <a href="ptr.md"><strong>ptr</strong></a> viene associato al puntatore. È possibile modificare gli attributi del puntatore usando attributi puntatore espliciti, specificando un attributo [<strong>pointer_default</strong>] o specificando l'opzione <a href="-ms-ext.md"><strong>/ms_ext per</strong></a> modificare l'impostazione predefinita per i puntatori senza attributi in [<a href="unique.md"><strong>unique</strong></a>].<br/> </dd> </dl></td>
+<td><dl> <dt><span id="no__pointer_default__attribute_specified__assuming__ptr__for_all_unattributed_pointers_in_interface"></span><span id="NO__POINTER_DEFAULT__ATTRIBUTE_SPECIFIED__ASSUMING__PTR__FOR_ALL_UNATTRIBUTED_POINTERS_IN_INTERFACE"></span>nessun attributo [pointer_default] specificato, presupponendo [ptr] per tutti i puntatori senza attributi nell'interfaccia</dt> <dd> L'implementazione IDL DCE specifica che tutti i puntatori in ogni file IDL devono essere associati agli attributi del puntatore. Quando un attributo del puntatore esplicito non viene assegnato al parametro o al tipo di puntatore e non viene specificato alcun attributo [<a href="pointer-default.md"><strong>pointer_default</strong></a>] nel file IDL, l'attributo puntatore completo <a href="ptr.md"><strong>ptr</strong></a> viene associato al puntatore. È possibile modificare gli attributi del puntatore usando attributi puntatore espliciti, specificando un attributo [<strong>pointer_default</strong>] o specificando l'opzione <a href="-ms-ext.md"><strong>/ms_ext per</strong></a> modificare l'impostazione predefinita per i puntatori senza attributi in [<a href="unique.md"><strong>unique</strong></a>].<br/> </dd> </dl></td>
 </tr>
 <tr class="even">
 <td><span id="MIDL2173"></span><span id="midl2173"></span><dl> <dt><strong>MIDL2173</strong></dt> </dl></td>
@@ -778,7 +778,7 @@ Durante la compilazione MIDL vengono generati i messaggi di errore seguenti:
 </tr>
 <tr class="odd">
 <td><span id="MIDL2182"></span><span id="midl2182"></span><dl> <dt><strong>MIDL2182</strong></dt> </dl></td>
-<td><dl> <dt><span id="parameter_that_is_not_a_binding_handle_must_not_derive_from_handle_t"></span><span id="PARAMETER_THAT_IS_NOT_A_BINDING_HANDLE_MUST_NOT_DERIVE_FROM_HANDLE_T"></span>Il parametro che non è un handle di associazione non deve derivare da handle_t</dt> <dd> Il tipo di handle <a href="handle-t.md"><strong>primitivo handle_t</strong></a> non è un tipo di dati valido trasmesso in rete. Modificare il tipo di parametro in un tipo diverso <strong>da handle_t</strong>o rimuovere il parametro.<br/> </dd> </dl></td>
+<td><dl> <dt><span id="parameter_that_is_not_a_binding_handle_must_not_derive_from_handle_t"></span><span id="PARAMETER_THAT_IS_NOT_A_BINDING_HANDLE_MUST_NOT_DERIVE_FROM_HANDLE_T"></span>Il parametro che non è un handle di associazione non deve derivare da handle_t</dt> <dd> Il tipo di handle <a href="handle-t.md"><strong>primitivo handle_t</strong></a> non è un tipo di dati valido trasmesso in rete. Modificare il tipo di parametro in un tipo diverso <strong>da handle_t</strong>o rimuovere il parametro .<br/> </dd> </dl></td>
 </tr>
 <tr class="even">
 <td><span id="MIDL2183"></span><span id="midl2183"></span><dl> <dt><strong>MIDL2183</strong></dt> </dl></td>
@@ -786,7 +786,7 @@ Durante la compilazione MIDL vengono generati i messaggi di errore seguenti:
 </tr>
 <tr class="odd">
 <td><span id="MIDL2184"></span><span id="midl2184"></span><dl> <dt><strong>MIDL2184</strong></dt> </dl></td>
-<td><dl> <dt><span id="type_deriving_from_handle_t_must_not_have__transmit_as__applied_to_it"></span><span id="TYPE_DERIVING_FROM_HANDLE_T_MUST_NOT_HAVE__TRANSMIT_AS__APPLIED_TO_IT"></span>Al tipo derivante handle_t non deve essere applicato [transmit_as]</dt> <dd> Il tipo di handle <a href="handle-t.md"><strong>primitivo handle_t</strong></a> non viene trasmesso in rete.<br/> </dd> </dl></td>
+<td><dl> <dt><span id="type_deriving_from_handle_t_must_not_have__transmit_as__applied_to_it"></span><span id="TYPE_DERIVING_FROM_HANDLE_T_MUST_NOT_HAVE__TRANSMIT_AS__APPLIED_TO_IT"></span>Al tipo derivante da handle_t non deve essere applicato [transmit_as]</dt> <dd> Il tipo di handle <a href="handle-t.md"><strong>primitivo handle_t</strong></a> non viene trasmesso in rete.<br/> </dd> </dl></td>
 </tr>
 <tr class="even">
 <td><span id="MIDL2185"></span><span id="midl2185"></span><dl> <dt><strong>MIDL2185</strong></dt> </dl></td>
@@ -812,7 +812,7 @@ Durante la compilazione MIDL vengono generati i messaggi di errore seguenti:
 </tr>
 <tr class="odd">
 <td><span id="MIDL2190"></span><span id="midl2190"></span><dl> <dt><strong>MIDL2190</strong></dt> </dl></td>
-<td><dl> <dt><span id="_switch_is__must_be_specified_only_on_a_type_deriving_from_a_nonencapsulated_union"></span><span id="_SWITCH_IS__MUST_BE_SPECIFIED_ONLY_ON_A_TYPE_DERIVING_FROM_A_NONENCAPSULATED_UNION"></span>[switch_is] deve essere specificato solo su un tipo derivante da un'unione non incapsulata</dt> <dd> La parola chiave [<a href="switch-is.md"><strong>switch_is</strong></a>] viene applicata in modo non corretto. Può essere usato solo con <a href="nonencapsulated-unions.md">tipi di unione non incapsulati.</a><br/> </dd> </dl></td>
+<td><dl> <dt><span id="_switch_is__must_be_specified_only_on_a_type_deriving_from_a_nonencapsulated_union"></span><span id="_SWITCH_IS__MUST_BE_SPECIFIED_ONLY_ON_A_TYPE_DERIVING_FROM_A_NONENCAPSULATED_UNION"></span>[switch_is] deve essere specificato solo in un tipo derivato da un'unione non incapsulata</dt> <dd> La parola chiave [<a href="switch-is.md"><strong>switch_is</strong></a>] viene applicata in modo non corretto. Può essere usato solo con <a href="nonencapsulated-unions.md">tipi di unione non incapsulati.</a><br/> </dd> </dl></td>
 </tr>
 <tr class="even">
 <td><span id="MIDL2191"></span><span id="midl2191"></span><dl> <dt><strong>MIDL2191</strong></dt> </dl></td>
@@ -828,7 +828,7 @@ Durante la compilazione MIDL vengono generati i messaggi di errore seguenti:
 </tr>
 <tr class="odd">
 <td><span id="MIDL2194"></span><span id="midl2194"></span><dl> <dt><strong>MIDL2194</strong></dt> </dl></td>
-<td><dl> <dt><span id="parameter_deriving_from_handle_t_must_not_be_an__out__parameter"></span><span id="PARAMETER_DERIVING_FROM_HANDLE_T_MUST_NOT_BE_AN__OUT__PARAMETER"></span>il parametro derivante da handle_t non deve essere un parametro [out]</dt> <dd> Un handle del tipo primitivo <a href="handle-t.md"><strong>handle_t</strong></a> significativo solo sul lato dell'applicazione in cui è definito. Il tipo <strong>handle_t</strong> non viene trasmesso in rete.<br/> </dd> </dl></td>
+<td><dl> <dt><span id="parameter_deriving_from_handle_t_must_not_be_an__out__parameter"></span><span id="PARAMETER_DERIVING_FROM_HANDLE_T_MUST_NOT_BE_AN__OUT__PARAMETER"></span>il parametro derivante da handle_t non deve essere un parametro [out]</dt> <dd> Un handle del tipo primitivo <a href="handle-t.md"><strong>handle_t</strong></a> significativo solo sul lato dell'applicazione in cui è definito. Il <strong>tipo handle_t</strong> non viene trasmesso in rete.<br/> </dd> </dl></td>
 </tr>
 <tr class="even">
 <td><span id="MIDL2195"></span><span id="midl2195"></span><dl> <dt><strong>MIDL2195</strong></dt> </dl></td>
@@ -836,7 +836,7 @@ Durante la compilazione MIDL vengono generati i messaggi di errore seguenti:
 </tr>
 <tr class="odd">
 <td><span id="MIDL2196"></span><span id="midl2196"></span><dl> <dt><strong>MIDL2196</strong></dt> </dl></td>
-<td><dl> <dt><span id="_cpp_quote__requires__ms_ext"></span><span id="_CPP_QUOTE__REQUIRES__MS_EXT"></span>&quot;cpp_quote richiede &quot; /ms_ext</dt> <dd> <a href="cpp-quote.md"><strong>L cpp_quote</strong></a> attributo è un'estensione Microsoft per DCE IDL. Non usare l'opzione del compilatore MIDL <a href="-osf.md"><strong>/osf</strong></a>, che esegue l'override <a href="-ms-ext.md"><strong>di /ms_ext</strong></a>.<br/> </dd> </dl></td>
+<td><dl> <dt><span id="_cpp_quote__requires__ms_ext"></span><span id="_CPP_QUOTE__REQUIRES__MS_EXT"></span>&quot;cpp_quote richiede &quot; /ms_ext</dt> <dd> <a href="cpp-quote.md"><strong>L cpp_quote'attributo</strong></a> è un'estensione Microsoft per DCE IDL. Non usare l'opzione del compilatore MIDL <a href="-osf.md"><strong>/osf</strong></a>, che esegue l'override <a href="-ms-ext.md"><strong>di /ms_ext</strong></a>.<br/> </dd> </dl></td>
 </tr>
 <tr class="even">
 <td><span id="MIDL2197"></span><span id="midl2197"></span><dl> <dt><strong>MIDL2197</strong></dt> </dl></td>
@@ -956,7 +956,7 @@ Durante la compilazione MIDL vengono generati i messaggi di errore seguenti:
 </tr>
 <tr class="odd">
 <td><span id="MIDL2226"></span><span id="midl2226"></span><dl> <dt><strong>MIDL2226</strong></dt> </dl></td>
-<td><dl> <dt><span id="array_element_must_not_derive_from_error_status_t"></span><span id="ARRAY_ELEMENT_MUST_NOT_DERIVE_FROM_ERROR_STATUS_T"></span>L'elemento array non deve derivare da error_status_t</dt> <dd> In questa versione di Microsoft RPC, il <a href="error-status-t.md"><strong>tipo</strong></a> error_status_t può essere visualizzato solo come parametro o tipo restituito. Non può essere presente nelle matrici.<br/> </dd> </dl></td>
+<td><dl> <dt><span id="array_element_must_not_derive_from_error_status_t"></span><span id="ARRAY_ELEMENT_MUST_NOT_DERIVE_FROM_ERROR_STATUS_T"></span>L'elemento array non deve derivare da error_status_t</dt> <dd> In questa versione di Microsoft RPC il <a href="error-status-t.md"><strong>tipo</strong></a> error_status_t può essere visualizzato solo come parametro o tipo restituito. Non può essere presente nelle matrici.<br/> </dd> </dl></td>
 </tr>
 <tr class="even">
 <td><span id="MIDL2227"></span><span id="midl2227"></span><dl> <dt><strong>MIDL2227</strong></dt> </dl></td>
@@ -1044,7 +1044,7 @@ Durante la compilazione MIDL vengono generati i messaggi di errore seguenti:
 </tr>
 <tr class="odd">
 <td><span id="MIDL2248"></span><span id="midl2248"></span><dl> <dt><strong>MIDL2248</strong></dt> </dl></td>
-<td><dl> <dt><span id="_allocate_all_nodes___on_an__in_out__parameter_may_orphan_the_original_memory"></span><span id="_ALLOCATE_ALL_NODES___ON_AN__IN_OUT__PARAMETER_MAY_ORPHAN_THE_ORIGINAL_MEMORY"></span>[allocate(all_nodes)] in un parametro [in,out] può orfanare la memoria originale</dt> <dd> L'uso di [<a href="allocate.md"><strong>allocate</strong></a>(all_nodes)] in un parametro [<a href="in.md"><strong>in</strong></a>, <a href="out-idl.md"><strong>out</strong></a>] deve riallocare la memoria contigua per la direzione [<strong>out</strong>], rendendo così orfano il parametro [<strong>in</strong>]. Questo utilizzo non è consigliato.<br/> </dd> </dl></td>
+<td><dl> <dt><span id="_allocate_all_nodes___on_an__in_out__parameter_may_orphan_the_original_memory"></span><span id="_ALLOCATE_ALL_NODES___ON_AN__IN_OUT__PARAMETER_MAY_ORPHAN_THE_ORIGINAL_MEMORY"></span>[allocate(all_nodes)] in un parametro [in,out] può orfare la memoria originale</dt> <dd> L'uso di [<a href="allocate.md"><strong>allocate</strong></a>(all_nodes)] in un parametro [<a href="in.md"><strong>in</strong></a>, <a href="out-idl.md"><strong>out</strong></a>] deve riallocare la memoria contigua per la direzione [<strong>out</strong>], rendendo così orfano il parametro [<strong>in</strong>]. Questo utilizzo non è consigliato.<br/> </dd> </dl></td>
 </tr>
 <tr class="even">
 <td><span id="MIDL2249"></span><span id="midl2249"></span><dl> <dt><strong>MIDL2249</strong></dt> </dl></td>
@@ -1096,7 +1096,7 @@ Durante la compilazione MIDL vengono generati i messaggi di errore seguenti:
 </tr>
 <tr class="even">
 <td><span id="MIDL2261"></span><span id="midl2261"></span><dl> <dt><strong>MIDL2261</strong></dt> </dl></td>
-<td><dl> <dt><span id="definitions_and_declarations_outside_of_interface_body_requires__ms_ext"></span><span id="DEFINITIONS_AND_DECLARATIONS_OUTSIDE_OF_INTERFACE_BODY_REQUIRES__MS_EXT"></span>Le definizioni e le dichiarazioni all'esterno del corpo dell'interfaccia richiedono /ms_ext</dt> <dd> L'inserimento di dichiarazioni e definizioni all'esterno di qualsiasi corpo dell'interfaccia è un'estensione Microsoft e richiede l'uso <a href="-ms-ext.md"><strong>dell'opzione /ms_ext.</strong></a><br/> </dd> </dl></td>
+<td><dl> <dt><span id="definitions_and_declarations_outside_of_interface_body_requires__ms_ext"></span><span id="DEFINITIONS_AND_DECLARATIONS_OUTSIDE_OF_INTERFACE_BODY_REQUIRES__MS_EXT"></span>Le definizioni e le dichiarazioni all'esterno del corpo dell'interfaccia richiedono /ms_ext</dt> <dd> L'inserimento di dichiarazioni e definizioni all'esterno di qualsiasi corpo <a href="-ms-ext.md"><strong>dell'interfaccia</strong></a> è un'estensione Microsoft e richiede l'uso dell'opzione /ms_ext .<br/> </dd> </dl></td>
 </tr>
 <tr class="odd">
 <td><span id="MIDL2262"></span><span id="midl2262"></span><dl> <dt><strong>MIDL2262</strong></dt> </dl></td>
@@ -1104,7 +1104,7 @@ Durante la compilazione MIDL vengono generati i messaggi di errore seguenti:
 </tr>
 <tr class="even">
 <td><span id="MIDL2263"></span><span id="midl2263"></span><dl> <dt><strong>MIDL2263</strong></dt> </dl></td>
-<td><dl> <dt><span id="only_one_of__implicit_handle____auto_handle___or__explicit_handle__allowed"></span><span id="ONLY_ONE_OF__IMPLICIT_HANDLE____AUTO_HANDLE___OR__EXPLICIT_HANDLE__ALLOWED"></span>è consentito solo uno dei valori [implicit_handle], [auto_handle] o [explicit_handle]</dt> <dd> Ogni interfaccia può avere solo uno di questi tre attributi.<br/> </dd> </dl></td>
+<td><dl> <dt><span id="only_one_of__implicit_handle____auto_handle___or__explicit_handle__allowed"></span><span id="ONLY_ONE_OF__IMPLICIT_HANDLE____AUTO_HANDLE___OR__EXPLICIT_HANDLE__ALLOWED"></span>è consentito solo uno dei valori consentiti [implicit_handle], [auto_handle] o [explicit_handle]</dt> <dd> Ogni interfaccia può avere solo uno di questi tre attributi.<br/> </dd> </dl></td>
 </tr>
 <tr class="odd">
 <td><span id="MIDL2264"></span><span id="midl2264"></span><dl> <dt><strong>MIDL2264</strong></dt> </dl></td>
@@ -1116,11 +1116,11 @@ Durante la compilazione MIDL vengono generati i messaggi di errore seguenti:
 </tr>
 <tr class="odd">
 <td><span id="MIDL2266"></span><span id="midl2266"></span><dl> <dt><strong>MIDL2266</strong></dt> </dl></td>
-<td><dl> <dt><span id="_callback__with_-env_dos_win16_not_supported_for__Oi__using__Os"></span><span id="_callback__with_-env_dos_win16_not_supported_for__oi__using__os"></span><span id="_CALLBACK__WITH_-ENV_DOS_WIN16_NOT_SUPPORTED_FOR__OI__USING__OS"></span>[callback] con -env dos/win16 non supportato per /Oi, con /Os</dt> <dd> I callback negli ambienti a 16 bit possono essere gestiti solo dagli stub di ottimizzazione <a href="-os.md"><strong>/Os.</strong></a> Gli stub per questa routine verranno generati usando <strong>l'ottimizzazione /Os.</strong><br/> </dd> </dl></td>
+<td><dl> <dt><span id="_callback__with_-env_dos_win16_not_supported_for__Oi__using__Os"></span><span id="_callback__with_-env_dos_win16_not_supported_for__oi__using__os"></span><span id="_CALLBACK__WITH_-ENV_DOS_WIN16_NOT_SUPPORTED_FOR__OI__USING__OS"></span>[callback] con -env dos/win16 non supportato per /Oi, con /Os</dt> <dd> I callback negli ambienti a 16 bit possono essere gestiti solo dagli stub <a href="-os.md"><strong>di ottimizzazione /Os.</strong></a> Gli stub per questa routine verranno generati usando <strong>l'ottimizzazione /Os.</strong><br/> </dd> </dl></td>
 </tr>
 <tr class="even">
 <td><span id="MIDL2267"></span><span id="midl2267"></span><dl> <dt><strong>MIDL2267</strong></dt> </dl></td>
-<td><dl> <dt><span id="float_double_not_supported_as_top-level_parameter_for__Oi_mode__using__Os"></span><span id="float_double_not_supported_as_top-level_parameter_for__oi_mode__using__os"></span><span id="FLOAT_DOUBLE_NOT_SUPPORTED_AS_TOP-LEVEL_PARAMETER_FOR__OI_MODE__USING__OS"></span>float/double non supportato come parametro di primo livello per la modalità /Oi, con /Os</dt> <dd> I tipi float e double possono essere gestiti solo come parametri dagli stub di ottimizzazione <a href="-os.md"><strong>/Os.</strong></a> Gli stub per questa routine verranno generati usando <strong>l'ottimizzazione /Os.</strong> I tipi float e double all'interno di strutture, matrici o unioni possono comunque essere gestiti con<strong>/Os</strong>.<br/> </dd> </dl></td>
+<td><dl> <dt><span id="float_double_not_supported_as_top-level_parameter_for__Oi_mode__using__Os"></span><span id="float_double_not_supported_as_top-level_parameter_for__oi_mode__using__os"></span><span id="FLOAT_DOUBLE_NOT_SUPPORTED_AS_TOP-LEVEL_PARAMETER_FOR__OI_MODE__USING__OS"></span>float/double non supportato come parametro di primo livello per la modalità /Oi, con /Os</dt> <dd> I tipi float e double possono essere gestiti solo come parametri dagli stub <a href="-os.md"><strong>di ottimizzazione /Os.</strong></a> Gli stub per questa routine verranno generati usando <strong>l'ottimizzazione /Os.</strong> I tipi float e double all'interno di strutture, matrici o unioni possono comunque essere gestiti con<strong>/Os</strong>.<br/> </dd> </dl></td>
 </tr>
 <tr class="odd">
 <td><span id="MIDL2268"></span><span id="midl2268"></span><dl> <dt><strong>MIDL2268</strong></dt> </dl></td>
@@ -1128,7 +1128,7 @@ Durante la compilazione MIDL vengono generati i messaggi di errore seguenti:
 </tr>
 <tr class="even">
 <td><span id="MIDL2269"></span><span id="midl2269"></span><dl> <dt><strong>MIDL2269</strong></dt> </dl></td>
-<td><dl> <dt><span id="procedures_in_an_object_interface_must_return_an_HRESULT"></span><span id="procedures_in_an_object_interface_must_return_an_hresult"></span><span id="PROCEDURES_IN_AN_OBJECT_INTERFACE_MUST_RETURN_AN_HRESULT"></span>Le routine in un'interfaccia a oggetti devono restituire un HRESULT</dt> <dd> Tutte le routine in un'interfaccia a oggetti che non hanno l'attributo -[<a href="local.md"><strong>local</strong></a>] devono restituire <strong>un HRESULT</strong> / <strong>SCODE</strong>.<br/> </dd> </dl></td>
+<td><dl> <dt><span id="procedures_in_an_object_interface_must_return_an_HRESULT"></span><span id="procedures_in_an_object_interface_must_return_an_hresult"></span><span id="PROCEDURES_IN_AN_OBJECT_INTERFACE_MUST_RETURN_AN_HRESULT"></span>Le routine in un'interfaccia oggetto devono restituire un HRESULT</dt> <dd> Tutte le routine in un'interfaccia oggetto che non hanno l'attributo -[<a href="local.md"><strong>local</strong></a>] devono restituire <strong>un valore HRESULT</strong> / <strong>SCODE.</strong><br/> </dd> </dl></td>
 </tr>
 <tr class="odd">
 <td><span id="MIDL2270"></span><span id="midl2270"></span><dl> <dt><strong>MIDL2270</strong></dt> </dl></td>
@@ -1136,7 +1136,7 @@ Durante la compilazione MIDL vengono generati i messaggi di errore seguenti:
 </tr>
 <tr class="even">
 <td><span id="MIDL2271"></span><span id="midl2271"></span><dl> <dt><strong>MIDL2271</strong></dt> </dl></td>
-<td><dl> <dt><span id="_object__interfaces_must_derive_from_another__object__interface_such_as_IUnknown"></span><span id="_object__interfaces_must_derive_from_another__object__interface_such_as_iunknown"></span><span id="_OBJECT__INTERFACES_MUST_DERIVE_FROM_ANOTHER__OBJECT__INTERFACE_SUCH_AS_IUNKNOWN"></span>Le interfacce [object] devono derivare da un'altra interfaccia [object], ad esempio IUnknown</dt> <dd> L'ereditarietà dell'interfaccia è consentita solo quando si usano le interfacce oggetto.<br/> </dd> </dl></td>
+<td><dl> <dt><span id="_object__interfaces_must_derive_from_another__object__interface_such_as_IUnknown"></span><span id="_object__interfaces_must_derive_from_another__object__interface_such_as_iunknown"></span><span id="_OBJECT__INTERFACES_MUST_DERIVE_FROM_ANOTHER__OBJECT__INTERFACE_SUCH_AS_IUNKNOWN"></span>Le interfacce [object] devono derivare da un'altra interfaccia [object], ad esempio IUnknown</dt> <dd> L'ereditarietà dell'interfaccia è consentita solo quando si usano interfacce di oggetti.<br/> </dd> </dl></td>
 </tr>
 <tr class="odd">
 <td><span id="MIDL2272"></span><span id="midl2272"></span><dl> <dt><strong>MIDL2272</strong></dt> </dl></td>
@@ -1144,43 +1144,43 @@ Durante la compilazione MIDL vengono generati i messaggi di errore seguenti:
 </tr>
 <tr class="even">
 <td><span id="MIDL2273"></span><span id="midl2273"></span><dl> <dt><strong>MIDL2273</strong></dt> </dl></td>
-<td><dl> <dt><span id="_IID_IS__expression_must_be_a_pointer_to_IID_structure"></span><span id="_iid_is__expression_must_be_a_pointer_to_iid_structure"></span><span id="_IID_IS__EXPRESSION_MUST_BE_A_POINTER_TO_IID_STRUCTURE"></span>[IID_IS] l'espressione deve essere un puntatore alla struttura IID</dt> <dd> Il tipo di base<a href="iid-is.md"><strong>dell'espressione</strong></a>[ iid_is ] deve essere un tipo UUID/GUID/IID.<br/> </dd> </dl></td>
+<td><dl> <dt><span id="_IID_IS__expression_must_be_a_pointer_to_IID_structure"></span><span id="_iid_is__expression_must_be_a_pointer_to_iid_structure"></span><span id="_IID_IS__EXPRESSION_MUST_BE_A_POINTER_TO_IID_STRUCTURE"></span>[IID_IS] expression deve essere un puntatore alla struttura IID</dt> <dd> Il tipo di base<a href="iid-is.md"><strong>dell'espressione</strong></a>[ iid_is ] deve essere un tipo UUID/GUID/IID.<br/> </dd> </dl></td>
 </tr>
 <tr class="odd">
 <td><span id="MIDL2274"></span><span id="midl2274"></span><dl> <dt><strong>MIDL2274</strong></dt> </dl></td>
-<td><dl> <dt><span id="_call_as__type_must_be_a__local__procedure"></span><span id="_CALL_AS__TYPE_MUST_BE_A__LOCAL__PROCEDURE"></span>Il tipo [call_as] deve essere una routine [local]</dt> <dd> Alla destinazione di un tipo [<a href="call-as.md"><strong>call_as</strong></a>] , se definito, deve essere applicato [ <a href="local.md"><strong>local</strong></a>].<br/> </dd> </dl></td>
+<td><dl> <dt><span id="_call_as__type_must_be_a__local__procedure"></span><span id="_CALL_AS__TYPE_MUST_BE_A__LOCAL__PROCEDURE"></span>[call_as] type deve essere una procedura [local]</dt> <dd> Alla destinazione di un tipo [<a href="call-as.md"><strong>call_as</strong></a>], se definito, deve essere applicato [ <a href="local.md"><strong>local</strong></a>].<br/> </dd> </dl></td>
 </tr>
 <tr class="even">
 <td><span id="MIDL2275"></span><span id="midl2275"></span><dl> <dt><strong>MIDL2275</strong></dt> </dl></td>
-<td><dl> <dt><span id="undefined__call_as__must_not_be_used_in_an_object_interface"></span><span id="UNDEFINED__CALL_AS__MUST_NOT_BE_USED_IN_AN_OBJECT_INTERFACE"></span>non definito [call_as] non deve essere usato in un'interfaccia a oggetti</dt> <dd> È necessario definire la destinazione di un tipo [<a href="call-as.md"><strong>call_as</strong></a>]. Assicurarsi di aver fornito <strong>call_as</strong> routine per le applicazioni chiamanti e chiamate.<br/> </dd> </dl></td>
+<td><dl> <dt><span id="undefined__call_as__must_not_be_used_in_an_object_interface"></span><span id="UNDEFINED__CALL_AS__MUST_NOT_BE_USED_IN_AN_OBJECT_INTERFACE"></span>undefined [call_as] non deve essere usato in un'interfaccia oggetto</dt> <dd> È necessario definire la destinazione di un tipo [<a href="call-as.md"><strong>call_as</strong></a>]. Assicurarsi di aver specificato <strong>call_as</strong> routine sia per le applicazioni chiamanti che per le applicazioni chiamate.<br/> </dd> </dl></td>
 </tr>
 <tr class="odd">
 <td><span id="MIDL2276"></span><span id="midl2276"></span><dl> <dt><strong>MIDL2276</strong></dt> </dl></td>
-<td><dl> <dt><span id="_auto_handle__may_not_be_used_with__encode__or__decode_"></span><span id="_AUTO_HANDLE__MAY_NOT_BE_USED_WITH__ENCODE__OR__DECODE_"></span>[auto_handle] non può essere usato con [encode] o [decode]</dt> <dd> Gli attributi [ <a href="encode.md"><strong>encode</strong></a>] e [ <a href="decode.md"><strong>decode</strong></a>] possono essere usati solo con handle espliciti o handle impliciti.<br/> </dd> </dl></td>
+<td><dl> <dt><span id="_auto_handle__may_not_be_used_with__encode__or__decode_"></span><span id="_AUTO_HANDLE__MAY_NOT_BE_USED_WITH__ENCODE__OR__DECODE_"></span>[auto_handle] non può essere usato con [encode] o [decode]</dt> <dd> Gli attributi [ <a href="encode.md"><strong>encode</strong></a>] e [ <a href="decode.md"><strong>decode</strong></a>] possono essere usati solo con handle espliciti o impliciti.<br/> </dd> </dl></td>
 </tr>
 <tr class="even">
 <td><span id="MIDL2277"></span><span id="midl2277"></span><dl> <dt><strong>MIDL2277</strong></dt> </dl></td>
-<td><dl> <dt><span id="normal_procedures_are_not_allowed_in_an_interface_with__encode__or__decode_"></span><span id="NORMAL_PROCEDURES_ARE_NOT_ALLOWED_IN_AN_INTERFACE_WITH__ENCODE__OR__DECODE_"></span>Le procedure normali non sono consentite in un'interfaccia con [encode] o [decode]</dt> <dd> Anche le interfacce contenenti [<a href="encode.md"><strong>encode</strong></a>] o [<a href="decode.md"><strong>decode</strong></a>] non possono avere procedure remote.<br/> </dd> </dl></td>
+<td><dl> <dt><span id="normal_procedures_are_not_allowed_in_an_interface_with__encode__or__decode_"></span><span id="NORMAL_PROCEDURES_ARE_NOT_ALLOWED_IN_AN_INTERFACE_WITH__ENCODE__OR__DECODE_"></span>Le routine normal non sono consentite in un'interfaccia con [encode] o [decode]</dt> <dd> Anche le interfacce contenenti [<a href="encode.md"><strong>encode</strong></a>] o [<a href="decode.md"><strong>decode</strong></a>] procedure non possono avere procedure remote.<br/> </dd> </dl></td>
 </tr>
 <tr class="odd">
 <td><span id="MIDL2278"></span><span id="midl2278"></span><dl> <dt><strong>MIDL2278</strong></dt> </dl></td>
-<td><dl> <dt><span id="top-level_conformance_or_variance_not_allowed_with__encode__or__decode_"></span><span id="TOP-LEVEL_CONFORMANCE_OR_VARIANCE_NOT_ALLOWED_WITH__ENCODE__OR__DECODE_"></span>conformità o varianza di primo livello non consentita con [encode] o [decode]</dt> <dd> I tipi con conformità o varianza di primo livello non possono usare la serializzazione dei tipi, poiché non è possibile fornire ridimensionamento/allungamento. Le strutture che le contengono possono tuttavia usare la serializzazione dei tipi.<br/> </dd> </dl></td>
+<td><dl> <dt><span id="top-level_conformance_or_variance_not_allowed_with__encode__or__decode_"></span><span id="TOP-LEVEL_CONFORMANCE_OR_VARIANCE_NOT_ALLOWED_WITH__ENCODE__OR__DECODE_"></span>conformità o varianza di primo livello non consentita con [encode] o [decode]</dt> <dd> I tipi con conformità o varianza di primo livello non possono usare la serializzazione dei tipi, poiché non è possibile fornire il ridimensionamento o la lunghezza. Le strutture che le contengono, tuttavia, possono usare la serializzazione dei tipi.<br/> </dd> </dl></td>
 </tr>
 <tr class="even">
 <td><span id="MIDL2279"></span><span id="midl2279"></span><dl> <dt><strong>MIDL2279</strong></dt> </dl></td>
-<td><dl> <dt><span id="_out__parameters_may_not_have__const_"></span><span id="_OUT__PARAMETERS_MAY_NOT_HAVE__CONST_"></span>I parametri [out] potrebbero non avere &quot; const&quot;</dt> <dd> Poiché un parametro [<a href="out-idl.md"><strong>out</strong></a>] viene modificato, non deve essere dichiarato come costante sa.<br/> </dd> </dl></td>
+<td><dl> <dt><span id="_out__parameters_may_not_have__const_"></span><span id="_OUT__PARAMETERS_MAY_NOT_HAVE__CONST_"></span>I parametri [out] non possono avere &quot; const&quot;</dt> <dd> Poiché viene modificato un parametro [<a href="out-idl.md"><strong>out</strong></a>], non deve essere dichiarato come costante sa.<br/> </dd> </dl></td>
 </tr>
 <tr class="odd">
 <td><span id="MIDL2280"></span><span id="midl2280"></span><dl> <dt><strong>MIDL2280</strong></dt> </dl></td>
-<td><dl> <dt><span id="return_values_may_not_have__const_"></span><span id="RETURN_VALUES_MAY_NOT_HAVE__CONST_"></span>I valori restituiti non possono avere &quot; const&quot;</dt> <dd> Poiché un valore di funzione viene impostato quando la funzione viene restituita, questo valore non deve essere dichiarato come costante.<br/> </dd> </dl></td>
+<td><dl> <dt><span id="return_values_may_not_have__const_"></span><span id="RETURN_VALUES_MAY_NOT_HAVE__CONST_"></span>I valori restituiti non possono avere &quot; const&quot;</dt> <dd> Poiché un valore di funzione viene impostato quando la funzione restituisce un risultato, questo valore non deve essere dichiarato come costante.<br/> </dd> </dl></td>
 </tr>
 <tr class="even">
 <td><span id="MIDL2281"></span><span id="midl2281"></span><dl> <dt><strong>MIDL2281</strong></dt> </dl></td>
-<td><dl> <dt><span id="invalid_use_of__retval__attribute"></span><span id="INVALID_USE_OF__RETVAL__ATTRIBUTE"></span>Uso non valido &quot; dell'attributo &quot; retval</dt> <dd> Verificare di non aver usato l'attributo [<a href="optional.md"><strong>facoltativo</strong></a>] e che il parametro [<a href="retval.md"><strong>retval</strong></a>] sia l'ultimo parametro nell'elenco.<br/> </dd> </dl></td>
+<td><dl> <dt><span id="invalid_use_of__retval__attribute"></span><span id="INVALID_USE_OF__RETVAL__ATTRIBUTE"></span>uso non valido &quot; dell'attributo &quot; retval</dt> <dd> Verificare di non aver usato l'attributo [<a href="optional.md"><strong>facoltativo</strong></a>] e che il parametro [<a href="retval.md"><strong>retval</strong></a>] sia l'ultimo parametro nell'elenco.<br/> </dd> </dl></td>
 </tr>
 <tr class="odd">
 <td><span id="MIDL2282"></span><span id="midl2282"></span><dl> <dt><strong>MIDL2282</strong></dt> </dl></td>
-<td><dl> <dt><span id="multiple_calling_conventions_illegal"></span><span id="MULTIPLE_CALLING_CONVENTIONS_ILLEGAL"></span>più convenzioni di chiamata non validi</dt> <dd> A una singola routine può essere applicata una sola convenzione di chiamata.<br/> </dd> </dl></td>
+<td><dl> <dt><span id="multiple_calling_conventions_illegal"></span><span id="MULTIPLE_CALLING_CONVENTIONS_ILLEGAL"></span>convenzioni di chiamata multiple non valida</dt> <dd> È possibile applicare una sola convenzione di chiamata a una singola routine.<br/> </dd> </dl></td>
 </tr>
 <tr class="even">
 <td><span id="MIDL2283"></span><span id="midl2283"></span><dl> <dt><strong>MIDL2283</strong></dt> </dl></td>
@@ -1188,15 +1188,15 @@ Durante la compilazione MIDL vengono generati i messaggi di errore seguenti:
 </tr>
 <tr class="odd">
 <td><span id="MIDL2284"></span><span id="midl2284"></span><dl> <dt><strong>MIDL2284</strong></dt> </dl></td>
-<td><dl> <dt><span id="_out__interface_pointers_must_use_double_indirection"></span><span id="_OUT__INTERFACE_POINTERS_MUST_USE_DOUBLE_INDIRECTION"></span>I puntatori a interfaccia [out] devono usare il riferimento indiretto doppio</dt> <dd> Poiché il valore modificato è il puntatore all'interfaccia, deve essere presente un altro livello di riferimento indiretto sopra il puntatore per consentirne la restituita.<br/> </dd> </dl></td>
+<td><dl> <dt><span id="_out__interface_pointers_must_use_double_indirection"></span><span id="_OUT__INTERFACE_POINTERS_MUST_USE_DOUBLE_INDIRECTION"></span>I puntatori a interfaccia [out] devono usare il riferimento indiretto double</dt> <dd> Poiché il valore modificato è il puntatore all'interfaccia, deve essere presente un altro livello di riferimento indiretto sopra il puntatore per consentirne la restituita.<br/> </dd> </dl></td>
 </tr>
 <tr class="even">
 <td><span id="MIDL2285"></span><span id="midl2285"></span><dl> <dt><strong>MIDL2285</strong></dt> </dl></td>
-<td><dl> <dt><span id="procedure_used_twice_as_the_caller_in__call_as_"></span><span id="PROCEDURE_USED_TWICE_AS_THE_CALLER_IN__CALL_AS_"></span>Procedura usata due volte come chiamante in [call_as]</dt> <dd> Una determinata routine [<a href="local.md"><strong>local</strong></a>] può essere usata una sola volta come destinazione di un [<a href="call-as.md"><strong>call_as</strong></a>], per evitare conflitti tra nomi.<br/> </dd> </dl></td>
+<td><dl> <dt><span id="procedure_used_twice_as_the_caller_in__call_as_"></span><span id="PROCEDURE_USED_TWICE_AS_THE_CALLER_IN__CALL_AS_"></span>Procedura utilizzata due volte come chiamante in [call_as]</dt> <dd> Una determinata routine [<a href="local.md"><strong>local</strong></a>] può essere usata una sola volta come destinazione di [<a href="call-as.md"><strong>call_as</strong></a>], per evitare conflitti di nome.<br/> </dd> </dl></td>
 </tr>
 <tr class="odd">
 <td><span id="MIDL2286"></span><span id="midl2286"></span><dl> <dt><strong>MIDL2286</strong></dt> </dl></td>
-<td><dl> <dt><span id="_call_as__target_must_have__local__in_an_object_interface"></span><span id="_CALL_AS__TARGET_MUST_HAVE__LOCAL__IN_AN_OBJECT_INTERFACE"></span>[call_as] la destinazione deve avere [local] in un'interfaccia a oggetti</dt> <dd> La destinazione di una [<a href="call-as.md"><strong>call_as</strong></a>] deve essere una routine [<a href="local.md"><strong>local</strong></a>] definita nell'interfaccia corrente.<br/> </dd> </dl></td>
+<td><dl> <dt><span id="_call_as__target_must_have__local__in_an_object_interface"></span><span id="_CALL_AS__TARGET_MUST_HAVE__LOCAL__IN_AN_OBJECT_INTERFACE"></span>[call_as] la destinazione deve avere [local] in un'interfaccia oggetto</dt> <dd> La destinazione di [<a href="call-as.md"><strong>call_as</strong></a>] deve essere una routine [<a href="local.md"><strong>local</strong></a>] definita nell'interfaccia corrente.<br/> </dd> </dl></td>
 </tr>
 <tr class="even">
 <td><span id="MIDL2287"></span><span id="midl2287"></span><dl> <dt><strong>MIDL2287</strong></dt> </dl></td>
@@ -1204,11 +1204,11 @@ Durante la compilazione MIDL vengono generati i messaggi di errore seguenti:
 </tr>
 <tr class="odd">
 <td><span id="MIDL2288"></span><span id="midl2288"></span><dl> <dt><strong>MIDL2288</strong></dt> </dl></td>
-<td><dl> <dt><span id="procedures_with__maybe__or__message__attributes_may_not_have__out__params__or_return_values_must_be_of_type_HRESULT_or_error_status_t"></span><span id="procedures_with__maybe__or__message__attributes_may_not_have__out__params__or_return_values_must_be_of_type_hresult_or_error_status_t"></span><span id="PROCEDURES_WITH__MAYBE__OR__MESSAGE__ATTRIBUTES_MAY_NOT_HAVE__OUT__PARAMS__OR_RETURN_VALUES_MUST_BE_OF_TYPE_HRESULT_OR_ERROR_STATUS_T"></span>Le routine con attributi [maybe] o [message] possono non avere parametri [out] o i valori restituiti devono essere di tipo HRESULT o error_status_t</dt> <dd> Poiché le procedure<a href="maybe.md"><strong>[ forse</strong></a>] non restituiscono mai, non è possibile ottenere valori restituiti.<br/> </dd> </dl></td>
+<td><dl> <dt><span id="procedures_with__maybe__or__message__attributes_may_not_have__out__params__or_return_values_must_be_of_type_HRESULT_or_error_status_t"></span><span id="procedures_with__maybe__or__message__attributes_may_not_have__out__params__or_return_values_must_be_of_type_hresult_or_error_status_t"></span><span id="PROCEDURES_WITH__MAYBE__OR__MESSAGE__ATTRIBUTES_MAY_NOT_HAVE__OUT__PARAMS__OR_RETURN_VALUES_MUST_BE_OF_TYPE_HRESULT_OR_ERROR_STATUS_T"></span>Le routine con attributi [maybe] o [message] possono non avere parametri [out] o i valori restituiti devono essere di tipo HRESULT o error_status_t</dt> <dd> Poiché le routine [<a href="maybe.md"><strong>forse</strong></a>] non restituiscono mai, non è possibile ottenere i valori restituiti.<br/> </dd> </dl></td>
 </tr>
 <tr class="even">
 <td><span id="MIDL2289"></span><span id="midl2289"></span><dl> <dt><strong>MIDL2289</strong></dt> </dl></td>
-<td><dl> <dt><span id="pointer_to_function_must_be_used"></span><span id="POINTER_TO_FUNCTION_MUST_BE_USED"></span>È necessario usare il puntatore alla funzione</dt> <dd> Anche se le definizioni di tipo funzione sono consentite in <a href="-c-ext.md"><strong>modalità /c_ext,</strong></a> possono essere usate solo come puntatori a funzioni. Non possono mai essere trasmessi come parametro o come valore restituito di una procedura remota.<br/> </dd> </dl></td>
+<td><dl> <dt><span id="pointer_to_function_must_be_used"></span><span id="POINTER_TO_FUNCTION_MUST_BE_USED"></span>È necessario usare il puntatore alla funzione</dt> <dd> Sebbene le definizioni di tipo funzione siano consentite in <a href="-c-ext.md"><strong>modalità /c_ext,</strong></a> possono essere usate solo come puntatori alle funzioni. Non possono mai essere trasmessi come parametro o come valore restituito di una procedura remota.<br/> </dd> </dl></td>
 </tr>
 <tr class="odd">
 <td><span id="MIDL2290"></span><span id="midl2290"></span><dl> <dt><strong>MIDL2290</strong></dt> </dl></td>
@@ -1220,7 +1220,7 @@ Durante la compilazione MIDL vengono generati i messaggi di errore seguenti:
 </tr>
 <tr class="odd">
 <td><span id="MIDL2292"></span><span id="midl2292"></span><dl> <dt><strong>MIDL2292</strong></dt> </dl></td>
-<td><dl> <dt><span id="_pragma_pack_pop__without_matching__pragma_pack_push_"></span><span id="_PRAGMA_PACK_POP__WITHOUT_MATCHING__PRAGMA_PACK_PUSH_"></span>#pragma pack(pop) senza corrispondenza #pragma pack(push)</dt> <dd> #pragma pack(push) e #pragma pack(pop) devono essere visualizzati in coppie corrispondenti. È stato specificato almeno un #pragma pack(push)s.<br/> </dd> </dl></td>
+<td><dl> <dt><span id="_pragma_pack_pop__without_matching__pragma_pack_push_"></span><span id="_PRAGMA_PACK_POP__WITHOUT_MATCHING__PRAGMA_PACK_PUSH_"></span>#pragma pack(pop) senza corrispondenza #pragma pack(push)</dt> <dd> #pragma pack(push) e #pragma pack(pop) devono essere presenti in coppie corrispondenti. È stato specificato almeno #pragma pack(push)s.<br/> </dd> </dl></td>
 </tr>
 <tr class="even">
 <td><span id="MIDL2293"></span><span id="midl2293"></span><dl> <dt><strong>MIDL2293</strong></dt> </dl></td>
@@ -1323,23 +1323,23 @@ Lo Mktyplib.exe è obsoleto. In alternativa, usare il compilatore MIDL.
 </tr>
 <tr class="odd">
 <td><span id="MIDL2314"></span><span id="midl2314"></span><dl> <dt><strong>MIDL2314</strong></dt> </dl></td>
-<td><dl> <dt><span id="explicit_pointer_attribute__ptr___ref__ignored_for_interface_pointers"></span><span id="EXPLICIT_POINTER_ATTRIBUTE__PTR___REF__IGNORED_FOR_INTERFACE_POINTERS"></span>attributo puntatore esplicito [ptr] [ref] ignorato per i puntatori a interfaccia</dt> <dd> I puntatori alle interfacce non possono avere attributi IDL.<br/> </dd> </dl></td>
+<td><dl> <dt><span id="explicit_pointer_attribute__ptr___ref__ignored_for_interface_pointers"></span><span id="EXPLICIT_POINTER_ATTRIBUTE__PTR___REF__IGNORED_FOR_INTERFACE_POINTERS"></span>explicit pointer attribute [ptr] [ref] ignored for interface pointers (Attributo puntatore esplicito [ptr] [ref] ignorato per i puntatori a interfaccia)</dt> <dd> I puntatori alle interfacce non possono avere attributi IDL.<br/> </dd> </dl></td>
 </tr>
 <tr class="even">
 <td><span id="MIDL2315"></span><span id="midl2315"></span><dl> <dt><strong>MIDL2315</strong></dt> </dl></td>
-<td><a href="-oi.md"><strong>Modalità /Oi</strong></a> non implementate per PowerMac, passaggio a <a href="-os.md"> <strong>/Os</strong></a><br/></td>
+<td><a href="-oi.md"><strong>Modalità /Oi</strong></a> non implementate per PowerMac, passaggio <a href="-os.md"> <strong>a /Os</strong></a><br/></td>
 </tr>
 <tr class="odd">
 <td><span id="MIDL2316"></span><span id="midl2316"></span><dl> <dt><strong>MIDL2316</strong></dt> </dl></td>
-<td><dl> <dt><span id="illegal_expression_type_used_in_attribute"></span><span id="ILLEGAL_EXPRESSION_TYPE_USED_IN_ATTRIBUTE"></span>tipo di espressione non valido usato nell'attributo</dt> <dd> Il valore predefinito per il puntatore deve essere una costante.<br/> </dd> </dl></td>
+<td><dl> <dt><span id="illegal_expression_type_used_in_attribute"></span><span id="ILLEGAL_EXPRESSION_TYPE_USED_IN_ATTRIBUTE"></span>Tipo di espressione non valido usato nell'attributo</dt> <dd> Il valore predefinito per il puntatore deve essere una costante.<br/> </dd> </dl></td>
 </tr>
 <tr class="even">
 <td><span id="MIDL2317"></span><span id="midl2317"></span><dl> <dt><strong>MIDL2317</strong></dt> </dl></td>
-<td><dl> <dt><span id="illegal_type_used_in_pipe"></span><span id="ILLEGAL_TYPE_USED_IN_PIPE"></span>tipo non valido usato nella pipe</dt> <dd> Le pipe sono limitate ai tipi di dati IDL di base. Ad esempio, non è possibile specificare una pipe di matrici.<br/> </dd> </dl></td>
+<td><dl> <dt><span id="illegal_type_used_in_pipe"></span><span id="ILLEGAL_TYPE_USED_IN_PIPE"></span>Tipo non valido usato nella pipe</dt> <dd> Le pipe sono limitate ai tipi di dati IDL di base. Ad esempio, non è possibile specificare una pipe di matrici.<br/> </dd> </dl></td>
 </tr>
 <tr class="odd">
 <td><span id="MIDL2318"></span><span id="midl2318"></span><dl> <dt><strong>MIDL2318</strong></dt> </dl></td>
-<td><dl> <dt><span id="procedure_uses_pipes__using__Oicf"></span><span id="procedure_uses_pipes__using__oicf"></span><span id="PROCEDURE_USES_PIPES__USING__OICF"></span>la stored procedure usa le pipe, con /Oicf</dt> <dd> La modalità selezionata non supporta le pipe. Il compilatore MIDL ha rilevato l'uso di una o più pipe nell'interfaccia. Pertanto, compila il file IDL in <a href="-oi.md"><strong>modalità /Oicf.</strong></a><br/> </dd> </dl></td>
+<td><dl> <dt><span id="procedure_uses_pipes__using__Oicf"></span><span id="procedure_uses_pipes__using__oicf"></span><span id="PROCEDURE_USES_PIPES__USING__OICF"></span>la procedura usa le pipe, con /Oicf</dt> <dd> La modalità selezionata non supporta le pipe. Il compilatore MIDL ha rilevato l'uso di una o più pipe nell'interfaccia. Pertanto, compila il file IDL in <a href="-oi.md"><strong>modalità /Oicf.</strong></a><br/> </dd> </dl></td>
 </tr>
 <tr class="even">
 <td><span id="MIDL2319"></span><span id="midl2319"></span><dl> <dt><strong>MIDL2319</strong></dt> </dl></td>
@@ -1347,59 +1347,59 @@ Lo Mktyplib.exe è obsoleto. In alternativa, usare il compilatore MIDL.
 </tr>
 <tr class="odd">
 <td><span id="MIDL2320"></span><span id="midl2320"></span><dl> <dt><strong>MIDL2320</strong></dt> </dl></td>
-<td><dl> <dt><span id="conflicting_optimization_requirements__cannot_optimize"></span><span id="CONFLICTING_OPTIMIZATION_REQUIREMENTS__CANNOT_OPTIMIZE"></span>requisiti di ottimizzazione in conflitto, non è possibile ottimizzare</dt> <dd> Questo errore indica spesso che sono stati specificati sia <a href="-os.md"><strong>/Os</strong></a> che <a href="-oi.md"><strong>/Oi</strong></a> (o una variante delle modalità del compilatore <strong>MIDL /Oi</strong>). Può anche significare che le funzionalità specificate nei file IDL e ACL richiedono l'uso di entrambe le modalità. È necessario selezionare una modalità o l'altra per l'ottimizzazione.<br/> </dd> </dl></td>
+<td><dl> <dt><span id="conflicting_optimization_requirements__cannot_optimize"></span><span id="CONFLICTING_OPTIMIZATION_REQUIREMENTS__CANNOT_OPTIMIZE"></span>requisiti di ottimizzazione in conflitto, non è possibile ottimizzare</dt> <dd> Questo errore indica spesso che sono stati specificati <a href="-os.md"><strong>sia /Os</strong></a> che <a href="-oi.md"><strong>/Oi</strong></a> (o una variante delle modalità del compilatore <strong>MIDL /Oi).</strong> Può anche significare che le funzionalità specificate nei file IDL e ACL richiedono l'uso di entrambe le modalità. È necessario selezionare una modalità o l'altra per ottimizzare.<br/> </dd> </dl></td>
 </tr>
 <tr class="even">
 <td><span id="MIDL2321"></span><span id="midl2321"></span><dl> <dt><strong>MIDL2321</strong></dt> </dl></td>
-<td><dl> <dt><span id="pipes_cannot_be_array_elements__or_members_of_structures_or_unions"></span><span id="PIPES_CANNOT_BE_ARRAY_ELEMENTS__OR_MEMBERS_OF_STRUCTURES_OR_UNIONS"></span>Le pipe non possono essere elementi di matrice o membri di strutture o unioni</dt> <dd> I tipi di dati della pipe possono essere solo parametri di primo livello.<br/> </dd> </dl></td>
+<td><dl> <dt><span id="pipes_cannot_be_array_elements__or_members_of_structures_or_unions"></span><span id="PIPES_CANNOT_BE_ARRAY_ELEMENTS__OR_MEMBERS_OF_STRUCTURES_OR_UNIONS"></span>Le pipe non possono essere elementi di matrice o membri di strutture o unioni</dt> <dd> I tipi di dati pipe possono essere solo parametri di primo livello.<br/> </dd> </dl></td>
 </tr>
 <tr class="odd">
 <td><span id="MIDL2322"></span><span id="midl2322"></span><dl> <dt><strong>MIDL2322</strong></dt> </dl></td>
-<td><dl> <dt><span id="invalid_pipe_usage"></span><span id="INVALID_PIPE_USAGE"></span>utilizzo della pipe non valido</dt> <dd> Non è possibile usare pipe con gli attributi [<a href="transmit-as.md"><strong>transmit_as</strong></a>], [<a href="represent-as.md"><strong>represent_as</strong></a>] o [<a href="user-marshal.md"><strong>user_marshal</strong></a>]. Inoltre, le pipe non possono essere usate come tipi restituiti.<br/> </dd> </dl></td>
+<td><dl> <dt><span id="invalid_pipe_usage"></span><span id="INVALID_PIPE_USAGE"></span>Utilizzo della pipe non valido</dt> <dd> Non è possibile usare pipe con gli attributi [<a href="transmit-as.md"><strong>transmit_as</strong></a>], [<a href="represent-as.md"><strong>represent_as</strong></a>], o [<a href="user-marshal.md"><strong>user_marshal</strong></a>] . Inoltre, le pipe non possono essere usate come tipi restituiti.<br/> </dd> </dl></td>
 </tr>
 <tr class="even">
 <td><span id="MIDL2323"></span><span id="midl2323"></span><dl> <dt><strong>MIDL2323</strong></dt> </dl></td>
-<td><dl> <dt><span id="feature_requires_the_advanced_interpreted_optimization_option__use_-Oicf"></span><span id="feature_requires_the_advanced_interpreted_optimization_option__use_-oicf"></span><span id="FEATURE_REQUIRES_THE_ADVANCED_INTERPRETED_OPTIMIZATION_OPTION__USE_-OICF"></span>la funzionalità richiede l'opzione di ottimizzazione interpretata avanzata. usare -Oicf</dt> <dd> Questo errore indica che le opzioni della riga di comando del compilatore MIDL, ad esempio <a href="-robust.md"><strong>/robust,</strong></a> richiedono l'uso della <a href="-oi.md"><strong>modalità /Oicf.</strong></a><br/> </dd> </dl></td>
+<td><dl> <dt><span id="feature_requires_the_advanced_interpreted_optimization_option__use_-Oicf"></span><span id="feature_requires_the_advanced_interpreted_optimization_option__use_-oicf"></span><span id="FEATURE_REQUIRES_THE_ADVANCED_INTERPRETED_OPTIMIZATION_OPTION__USE_-OICF"></span>la funzionalità richiede l'opzione di ottimizzazione interpretata avanzata. use -Oicf</dt> <dd> Questo errore indica che le opzioni della riga di comando del compilatore MIDL, ad esempio <a href="-robust.md"><strong>/robust,</strong></a> richiedono l'uso della <a href="-oi.md"><strong>modalità /Oicf.</strong></a><br/> </dd> </dl></td>
 </tr>
 <tr class="odd">
 <td><span id="MIDL2324"></span><span id="midl2324"></span><dl> <dt><strong>MIDL2324</strong></dt> </dl></td>
-<td><dl> <dt><span id="feature_requires_the_advanced_interpreted_optimization_option__use_-Oicf"></span><span id="feature_requires_the_advanced_interpreted_optimization_option__use_-oicf"></span><span id="FEATURE_REQUIRES_THE_ADVANCED_INTERPRETED_OPTIMIZATION_OPTION__USE_-OICF"></span>la funzionalità richiede l'opzione di ottimizzazione interpretata avanzata. usare -Oicf</dt> <dd> Questo avviso indica che le opzioni della riga di comando del compilatore MIDL, ad esempio <a href="-robust.md"><strong>/robust,</strong></a> richiedono l'uso della <a href="-oi.md"><strong>modalità /Oicf.</strong></a><br/> </dd> </dl></td>
+<td><dl> <dt><span id="feature_requires_the_advanced_interpreted_optimization_option__use_-Oicf"></span><span id="feature_requires_the_advanced_interpreted_optimization_option__use_-oicf"></span><span id="FEATURE_REQUIRES_THE_ADVANCED_INTERPRETED_OPTIMIZATION_OPTION__USE_-OICF"></span>la funzionalità richiede l'opzione di ottimizzazione interpretata avanzata. use -Oicf</dt> <dd> Questo avviso indica che le opzioni della riga di comando del compilatore MIDL, ad esempio <a href="-robust.md"><strong>/robust,</strong></a> richiedono l'uso della <a href="-oi.md"><strong>modalità /Oicf.</strong></a><br/> </dd> </dl></td>
 </tr>
 <tr class="even">
 <td><span id="MIDL2329"></span><span id="midl2329"></span><dl> <dt><strong>MIDL2329</strong></dt> </dl></td>
-<td><dl> <dt><span id="the_optimization_option_is_being_phased_out__use_-Oic"></span><span id="the_optimization_option_is_being_phased_out__use_-oic"></span><span id="THE_OPTIMIZATION_OPTION_IS_BEING_PHASED_OUT__USE_-OIC"></span>l'opzione di ottimizzazione è in fase di implementazione. Usare -Oic</dt> <dd> La <a href="-oi.md"><strong>modalità di ottimizzazione /Oi1</strong></a> è stata specificata nella riga di comando MIDL. Questa modalità non è più supportata ed <strong>è necessario usare /Oicf.</strong><br/> </dd> </dl></td>
+<td><dl> <dt><span id="the_optimization_option_is_being_phased_out__use_-Oic"></span><span id="the_optimization_option_is_being_phased_out__use_-oic"></span><span id="THE_OPTIMIZATION_OPTION_IS_BEING_PHASED_OUT__USE_-OIC"></span>l'opzione di ottimizzazione è in fase di uscita, usare -Oic</dt> <dd> La <a href="-oi.md"><strong>modalità di ottimizzazione /Oi1</strong></a> è stata specificata nella riga di comando MIDL. Questa modalità non è più supportata e <strong>deve essere usato /Oicf.</strong><br/> </dd> </dl></td>
 </tr>
 <tr class="odd">
 <td><span id="MIDL2330"></span><span id="midl2330"></span><dl> <dt><strong>MIDL2330</strong></dt> </dl></td>
-<td><dl> <dt><span id="the_optimization_option_is_being_phased_out__use_-Oicf"></span><span id="the_optimization_option_is_being_phased_out__use_-oicf"></span><span id="THE_OPTIMIZATION_OPTION_IS_BEING_PHASED_OUT__USE_-OICF"></span>l'opzione di ottimizzazione è in fase di implementazione. Usare -Oicf</dt> <dd> La <a href="-oi.md"><strong>modalità di ottimizzazione /Oi2</strong></a> è stata specificata nella riga di comando MIDL. Questa modalità non è più supportata ed <strong>è necessario usare /Oicf.</strong><br/> </dd> </dl></td>
+<td><dl> <dt><span id="the_optimization_option_is_being_phased_out__use_-Oicf"></span><span id="the_optimization_option_is_being_phased_out__use_-oicf"></span><span id="THE_OPTIMIZATION_OPTION_IS_BEING_PHASED_OUT__USE_-OICF"></span>l'opzione di ottimizzazione è in fase di uscita, usare -Oicf</dt> <dd> La <a href="-oi.md"><strong>modalità di ottimizzazione /Oi2</strong></a> è stata specificata nella riga di comando MIDL. Questa modalità non è più supportata e <strong>deve essere usato /Oicf.</strong><br/> </dd> </dl></td>
 </tr>
 <tr class="even">
 <td><span id="MIDL2331"></span><span id="midl2331"></span><dl> <dt><strong>MIDL2331</strong></dt> </dl></td>
-<td><dl> <dt><span id="the_optimization_option_is_being_phased_out__use_-ic"></span><span id="THE_OPTIMIZATION_OPTION_IS_BEING_PHASED_OUT__USE_-IC"></span>l'opzione di ottimizzazione è in fase di uscita. Usare -ic</dt> <dd> La modalità di ottimizzazione i1 è stata specificata in un attributo ACF [optimize]. Questa modalità non è più supportata ed è necessario usare invece icf.<br/> File ACF di esempio:<br/>
+<td><dl> <dt><span id="the_optimization_option_is_being_phased_out__use_-ic"></span><span id="THE_OPTIMIZATION_OPTION_IS_BEING_PHASED_OUT__USE_-IC"></span>l'opzione di ottimizzazione è in fase di uscita, usare -ic</dt> <dd> La modalità di ottimizzazione i1 è stata specificata in un attributo ACF [optimize]. Questa modalità non è più supportata ed è consigliabile usare invece icf.<br/> File ACF di esempio:<br/>
 <pre class="syntax" data-space="preserve"><code>[optimize(&quot;i1&quot;)] roo();    //MIDL 2331</code></pre>
 </dd> </dl></td>
 </tr>
 <tr class="odd">
 <td><span id="MIDL2332"></span><span id="midl2332"></span><dl> <dt><strong>MIDL2332</strong></dt> </dl></td>
-<td><dl> <dt><span id="the_optimization_option_is_being_phased_out__use_-icf"></span><span id="THE_OPTIMIZATION_OPTION_IS_BEING_PHASED_OUT__USE_-ICF"></span>l'opzione di ottimizzazione è in fase di uscita. Usare -icf</dt> <dd> La modalità di ottimizzazione i2 è stata specificata in un attributo ACF [optimize]. Questa modalità non è più supportata ed è necessario usare invece icf.<br/> File ACF di esempio:<br/>
+<td><dl> <dt><span id="the_optimization_option_is_being_phased_out__use_-icf"></span><span id="THE_OPTIMIZATION_OPTION_IS_BEING_PHASED_OUT__USE_-ICF"></span>l'opzione di ottimizzazione è in fase di uscita, usare -icf</dt> <dd> La modalità di ottimizzazione i2 è stata specificata in un attributo ACF [optimize]. Questa modalità non è più supportata ed è consigliabile usare invece icf.<br/> File ACF di esempio:<br/>
 <pre class="syntax" data-space="preserve"><code>[optimize(&quot;i2&quot;)] roo();    //MIDL 2332</code></pre>
 </dd> </dl></td>
 </tr>
 <tr class="even">
 <td><span id="MIDL2333"></span><span id="midl2333"></span><dl> <dt><strong>MIDL2333</strong></dt> </dl></td>
-<td><dl> <dt><span id="the_-old_and_-new_switches_are_obsolete__use_-oldtlb_and_-newtlb"></span><span id="THE_-OLD_AND_-NEW_SWITCHES_ARE_OBSOLETE__USE_-OLDTLB_AND_-NEWTLB"></span>Le opzioni -old e -new sono obsolete. Usare -oldtlb e -newtlb</dt> <dd> Questo messaggio è obsoleto e non viene più omesso da MIDL.<br/> </dd> </dl></td>
+<td><dl> <dt><span id="the_-old_and_-new_switches_are_obsolete__use_-oldtlb_and_-newtlb"></span><span id="THE_-OLD_AND_-NEW_SWITCHES_ARE_OBSOLETE__USE_-OLDTLB_AND_-NEWTLB"></span>le opzioni -old e -new sono obsolete, usare -oldtlb e -newtlb</dt> <dd> Questo messaggio è obsoleto e non viene più omesso da MIDL.<br/> </dd> </dl></td>
 </tr>
 <tr class="odd">
 <td><span id="MIDL2334"></span><span id="midl2334"></span><dl> <dt><strong>MIDL2334</strong></dt> </dl></td>
-<td><dl> <dt><span id="illegal_argument_value"></span><span id="ILLEGAL_ARGUMENT_VALUE"></span>valore di argomento non valido</dt> <dd> Le varianti consentite dell'opzione della riga di comando /O includono <a href="-os.md"><strong>/Os</strong></a>, <a href="-oi.md"><strong>/Oi</strong></a>, <strong>/Oic</strong>, <strong>/Oicf</strong>e <strong>/Oif</strong>.<br/> </dd> </dl></td>
+<td><dl> <dt><span id="illegal_argument_value"></span><span id="ILLEGAL_ARGUMENT_VALUE"></span>Valore dell'argomento non valido</dt> <dd> Le varianti consentite dell'opzione della riga di comando /O includono <a href="-os.md"><strong>/Os</strong></a>, <a href="-oi.md"><strong>/Oi</strong></a>, <strong>/Oic</strong>, <strong>/Oicf</strong>e <strong>/Oif</strong>.<br/> </dd> </dl></td>
 </tr>
 <tr class="even">
 <td><span id="MIDL2335"></span><span id="midl2335"></span><dl> <dt><strong>MIDL2335</strong></dt> </dl></td>
-<td><dl> <dt><span id="illegal_expression_type_in_constant"></span><span id="ILLEGAL_EXPRESSION_TYPE_IN_CONSTANT"></span>tipo di espressione non valido nella costante</dt> <dd> L'espressione non restituisce una costante.<br/> </dd> </dl></td>
+<td><dl> <dt><span id="illegal_expression_type_in_constant"></span><span id="ILLEGAL_EXPRESSION_TYPE_IN_CONSTANT"></span>Tipo di espressione non valido nella costante</dt> <dd> L'espressione non restituisce una costante.<br/> </dd> </dl></td>
 </tr>
 <tr class="odd">
 <td><span id="MIDL2336"></span><span id="midl2336"></span><dl> <dt><strong>MIDL2336</strong></dt> </dl></td>
-<td><dl> <dt><span id="illegal_expression_type_in_enum"></span><span id="ILLEGAL_EXPRESSION_TYPE_IN_ENUM"></span>tipo di espressione non valido nell'enumerazione</dt> <dd> Un valore enumerato in una <a href="enum.md"><strong>definizione di enumerazione</strong></a> non restituisce un tipo integrale.<br/> </dd> </dl></td>
+<td><dl> <dt><span id="illegal_expression_type_in_enum"></span><span id="ILLEGAL_EXPRESSION_TYPE_IN_ENUM"></span>Tipo di espressione non valido nell'enumerazione</dt> <dd> Un valore enumerato in una <a href="enum.md"><strong>definizione di enumerazione</strong></a> non restituisce un tipo integrale.<br/> </dd> </dl></td>
 </tr>
 <tr class="even">
 <td><span id="MIDL2337"></span><span id="midl2337"></span><dl> <dt><strong>MIDL2337</strong></dt> </dl></td>
@@ -1407,15 +1407,15 @@ Lo Mktyplib.exe è obsoleto. In alternativa, usare il compilatore MIDL.
 </tr>
 <tr class="odd">
 <td><span id="MIDL2338"></span><span id="midl2338"></span><dl> <dt><strong>MIDL2338</strong></dt> </dl></td>
-<td><dl> <dt><span id="switches_are_contradictory"></span><span id="SWITCHES_ARE_CONTRADICTORY"></span>Opzioni contraddittorie</dt> <dd> Non è possibile usare entrambe le opzioni della riga di comando <a href="-osf.md"><strong>/osf</strong></a> e <a href="-ms-ext.md"><strong>/ms_ext</strong></a> quando si compila un file IDL. È necessario scegliere uno o l'altro.<br/> </dd> </dl></td>
+<td><dl> <dt><span id="switches_are_contradictory"></span><span id="SWITCHES_ARE_CONTRADICTORY"></span>le opzioni sono contraddittorie</dt> <dd> Non è possibile usare entrambe le opzioni della riga di comando <a href="-osf.md"><strong>/osf</strong></a> e <a href="-ms-ext.md"><strong>/ms_ext</strong></a> quando si compila un file IDL. È necessario scegliere uno o l'altro.<br/> </dd> </dl></td>
 </tr>
 <tr class="even">
 <td><span id="MIDL2339"></span><span id="midl2339"></span><dl> <dt><strong>MIDL2339</strong></dt> </dl></td>
-<td><dl> <dt><span id="MIDL_cannot_generate_HOOKOLE_information_for_the_non-rpc-able_union"></span><span id="midl_cannot_generate_hookole_information_for_the_non-rpc-able_union"></span><span id="MIDL_CANNOT_GENERATE_HOOKOLE_INFORMATION_FOR_THE_NON-RPC-ABLE_UNION"></span>MIDL non può generare informazioni HOOKOLE per l'unione non rpc-able</dt> <dd> Questo errore è obsoleto. Viene fornito esclusivamente per garantire la compatibilità con le versioni precedenti.<br/> </dd> </dl></td>
+<td><dl> <dt><span id="MIDL_cannot_generate_HOOKOLE_information_for_the_non-rpc-able_union"></span><span id="midl_cannot_generate_hookole_information_for_the_non-rpc-able_union"></span><span id="MIDL_CANNOT_GENERATE_HOOKOLE_INFORMATION_FOR_THE_NON-RPC-ABLE_UNION"></span>MIDL non è in grado di generare informazioni HOOKOLE per l'unione non rpc</dt> <dd> Questo errore è obsoleto. Viene fornito esclusivamente per la compatibilità con le versioni precedenti.<br/> </dd> </dl></td>
 </tr>
 <tr class="odd">
 <td><span id="MIDL2340"></span><span id="midl2340"></span><dl> <dt><strong>MIDL2340</strong></dt> </dl></td>
-<td><dl> <dt><span id="no_case_expression_found_for_union"></span><span id="NO_CASE_EXPRESSION_FOUND_FOR_UNION"></span>nessuna espressione case trovata per union</dt> <dd> Ogni campo di un'unione deve avere un'istruzione case con un'espressione costante.<br/> </dd> </dl></td>
+<td><dl> <dt><span id="no_case_expression_found_for_union"></span><span id="NO_CASE_EXPRESSION_FOUND_FOR_UNION"></span>Nessuna espressione case trovata per union</dt> <dd> Ogni campo di un'unione deve avere un'istruzione case con un'espressione costante.<br/> </dd> </dl></td>
 </tr>
 <tr class="even">
 <td><span id="MIDL2341"></span><span id="midl2341"></span><dl> <dt><strong>MIDL2341</strong></dt> </dl></td>
@@ -1427,11 +1427,11 @@ Lo Mktyplib.exe è obsoleto. In alternativa, usare il compilatore MIDL.
 </tr>
 <tr class="even">
 <td><span id="MIDL2343"></span><span id="midl2343"></span><dl> <dt><strong>MIDL2343</strong></dt> </dl></td>
-<td><dl> <dt><span id="all_pipe_interface_pointers_must_use_single_indirection"></span><span id="ALL_PIPE_INTERFACE_POINTERS_MUST_USE_SINGLE_INDIRECTION"></span>tutti i puntatori di interfaccia della pipe devono usare un riferimento indiretto singolo</dt> <dd> Non è possibile usare un puntatore a un puntatore a un'interfaccia pipe in questo modo.<br/> </dd> </dl></td>
+<td><dl> <dt><span id="all_pipe_interface_pointers_must_use_single_indirection"></span><span id="ALL_PIPE_INTERFACE_POINTERS_MUST_USE_SINGLE_INDIRECTION"></span>Tutti i puntatori a interfaccia della pipe devono usare un riferimento indiretto singolo</dt> <dd> Non è possibile usare un puntatore a un puntatore a un'interfaccia pipe in questo modo.<br/> </dd> </dl></td>
 </tr>
 <tr class="odd">
 <td><span id="MIDL2344"></span><span id="midl2344"></span><dl> <dt><strong>MIDL2344</strong></dt> </dl></td>
-<td><dl> <dt><span id="_iid_is____cannot_be_used_with_a_pipe_interface_pointer"></span><span id="_IID_IS____CANNOT_BE_USED_WITH_A_PIPE_INTERFACE_POINTER"></span>[iid_is()] non può essere usato con un puntatore di interfaccia pipe</dt> <dd> Questo messaggio è obsoleto. Questo messaggio non viene più usato dal compilatore.<br/> </dd> </dl></td>
+<td><dl> <dt><span id="_iid_is____cannot_be_used_with_a_pipe_interface_pointer"></span><span id="_IID_IS____CANNOT_BE_USED_WITH_A_PIPE_INTERFACE_POINTER"></span>[iid_is()] non può essere usato con un puntatore a interfaccia pipe</dt> <dd> Questo messaggio è obsoleto. Questo messaggio non viene più usato dal compilatore.<br/> </dd> </dl></td>
 </tr>
 <tr class="even">
 <td><span id="MIDL2345"></span><span id="midl2345"></span><dl> <dt><strong>MIDL2345</strong></dt> </dl></td>
@@ -1487,7 +1487,7 @@ Lo Mktyplib.exe è obsoleto. In alternativa, usare il compilatore MIDL.
 </tr>
 <tr class="odd">
 <td><span id="MIDL2358"></span><span id="midl2358"></span><dl> <dt><strong>MIDL2358</strong></dt> </dl></td>
-<td><dl> <dt><span id="error_status_t_should_have_both__comm_status__and__fault_status_"></span><span id="ERROR_STATUS_T_SHOULD_HAVE_BOTH__COMM_STATUS__AND__FAULT_STATUS_"></span>error_status_t deve avere sia [comm_status] che [fault_status]</dt> <dd> È stata specificata una procedura con gli attributi IDL [maybe] o [message] ma il tipo restituito ha solo gli attributi ACF [comm_status] o [fault_status]. Entrambi gli attributi ACF sono obbligatori.<br/> File ACF di esempio:<br/>
+<td><dl> <dt><span id="error_status_t_should_have_both__comm_status__and__fault_status_"></span><span id="ERROR_STATUS_T_SHOULD_HAVE_BOTH__COMM_STATUS__AND__FAULT_STATUS_"></span>error_status_t deve avere sia [comm_status] che [fault_status]</dt> <dd> È stata specificata una routine con gli attributi IDL [maybe] o [message] ma il tipo restituito ha solo gli attributi ACF [comm_status] o [fault_status]. Entrambi gli attributi ACF sono obbligatori.<br/> File ACF di esempio:<br/>
 <pre class="syntax" data-space="preserve"><code>[comm_status] roo();    //MIDL 2358
 [fault_status] bar();    //MIDL 2358
 [comm_status, fault_status] baz();    //OK</code></pre>
@@ -1569,15 +1569,15 @@ void bar (large *s, int a);</code></pre>
 </tr>
 <tr class="odd">
 <td><span id="MIDL2375"></span><span id="midl2375"></span><dl> <dt><strong>MIDL2375</strong></dt> </dl></td>
-<td><dl> <dt><span id="_encode__or__decode__with__robust_requires__Oicf"></span><span id="_encode__or__decode__with__robust_requires__oicf"></span><span id="_ENCODE__OR__DECODE__WITH__ROBUST_REQUIRES__OICF"></span>[encode] o [decode] con /robust richiede /Oicf</dt> <dd> Non è possibile eseguire la serializzazione quando viene <a href="-robust.md"><strong>specificata l'opzione /robust.</strong></a><br/> </dd> </dl></td>
+<td><dl> <dt><span id="_encode__or__decode__with__robust_requires__Oicf"></span><span id="_encode__or__decode__with__robust_requires__oicf"></span><span id="_ENCODE__OR__DECODE__WITH__ROBUST_REQUIRES__OICF"></span>[encode] o [decode] con /robust richiede /Oicf</dt> <dd> Non è possibile eseguire la serializzazione quando <a href="-robust.md"><strong>viene specificata l'opzione /robust.</strong></a><br/> </dd> </dl></td>
 </tr>
 <tr class="even">
 <td><span id="MIDL2377"></span><span id="midl2377"></span><dl> <dt><strong>MIDL2377</strong></dt> </dl></td>
-<td><dl> <dt><span id="conflicting_attributes_specified"></span><span id="CONFLICTING_ATTRIBUTES_SPECIFIED"></span>attributi in conflitto specificati</dt> <dd> Sono stati<a href="context-handle-serialize.md"><strong>specificati sia [ context_handle_serialize</strong></a>] che [<a href="context-handle-noserialize.md"><strong>context_handle_noserialize</strong></a>].<br/> </dd> </dl></td>
+<td><dl> <dt><span id="conflicting_attributes_specified"></span><span id="CONFLICTING_ATTRIBUTES_SPECIFIED"></span>attributi in conflitto specificati</dt> <dd> Sono stati<a href="context-handle-serialize.md"><strong>specificati sia</strong></a>[ context_handle_serialize ] che [<a href="context-handle-noserialize.md"><strong>context_handle_noserialize</strong></a>] .<br/> </dd> </dl></td>
 </tr>
 <tr class="odd">
 <td><span id="MIDL2378"></span><span id="midl2378"></span><dl> <dt><strong>MIDL2378</strong></dt> </dl></td>
-<td><dl> <dt><span id="_serialize____noserialize__can_be_applied_to_context_handles"></span><span id="_SERIALIZE____NOSERIALIZE__CAN_BE_APPLIED_TO_CONTEXT_HANDLES"></span>[serialize], [noserialize] può essere applicato a context_handles</dt> <dd> Gli attributi ACF [context_handle_serialize] o [context_handle_noserialize] possono essere applicati solo ai tipi che sono handle di contesto.<br/> File IDL di esempio:<br/>
+<td><dl> <dt><span id="_serialize____noserialize__can_be_applied_to_context_handles"></span><span id="_SERIALIZE____NOSERIALIZE__CAN_BE_APPLIED_TO_CONTEXT_HANDLES"></span>[serialize], [noserialize] può essere applicato a context_handles</dt> <dd> Gli attributi ACF [context_handle_serialize] o [context_handle_noserialize] possono essere applicati solo a tipi che sono handle di contesto.<br/> File IDL di esempio:<br/>
 <pre class="syntax" data-space="preserve"><code>typedef /*[context_handle] */ void *PV;    //Note: PV is *not* a context handle.</code></pre>
 File ACF di esempio:<br/>
 <pre class="syntax" data-space="preserve"><code>typedef [context_handle_serialize] PV;    //MIDL 2378</code></pre>
@@ -1585,15 +1585,15 @@ File ACF di esempio:<br/>
 </tr>
 <tr class="even">
 <td><span id="MIDL2379"></span><span id="midl2379"></span><dl> <dt><strong>MIDL2379</strong></dt> </dl></td>
-<td><dl> <dt><span id="The_compiler_reached_a_limit_for_a_format_string_representation._See_documentation_for_advice."></span><span id="the_compiler_reached_a_limit_for_a_format_string_representation._see_documentation_for_advice."></span><span id="THE_COMPILER_REACHED_A_LIMIT_FOR_A_FORMAT_STRING_REPRESENTATION._SEE_DOCUMENTATION_FOR_ADVICE."></span>Il compilatore ha raggiunto un limite per una rappresentazione di stringa di formato. Per consigli, vedere la documentazione.</dt> <dd> Il compilatore MIDL ha un limite di 64 KB per le stringhe di formato. Questo errore si verifica in genere quando i file IDL includono altri file IDL. Il file IDL composito generato da tutte le istruzioni include supera i limiti delle tabelle di rappresentazione dei tipi dell'interprete del motore di marshalling. Provare a usare la direttiva import anziché la direttiva include nei file IDL. Per altre informazioni, vedere <a href="importing-system-header-files.md">Importazione di file di intestazione di sistema</a>, <a href="include.md"><strong>includere</strong></a>e <a href="import.md"><strong>importare</strong></a>.<br/> </dd> </dl></td>
+<td><dl> <dt><span id="The_compiler_reached_a_limit_for_a_format_string_representation._See_documentation_for_advice."></span><span id="the_compiler_reached_a_limit_for_a_format_string_representation._see_documentation_for_advice."></span><span id="THE_COMPILER_REACHED_A_LIMIT_FOR_A_FORMAT_STRING_REPRESENTATION._SEE_DOCUMENTATION_FOR_ADVICE."></span>Il compilatore ha raggiunto un limite per una rappresentazione di stringa di formato. Per consigli, vedere la documentazione.</dt> <dd> Il compilatore MIDL ha un limite di 64 KB per le stringhe di formato. Questo errore si verifica in genere quando i file IDL includono altri file IDL. Il file IDL composito generato da tutte le istruzioni include supera i limiti delle tabelle di rappresentazione del tipo dell'interprete del motore di marshalling. Provare a usare la direttiva import anziché la direttiva include nei file IDL. Per altre informazioni, vedere <a href="importing-system-header-files.md">Importazione di file di intestazione di sistema</a>, <a href="include.md"><strong>includere</strong></a>e <a href="import.md"><strong>importare</strong></a>.<br/> </dd> </dl></td>
 </tr>
 <tr class="odd">
 <td><span id="MIDL2380"></span><span id="midl2380"></span><dl> <dt><strong>MIDL2380</strong></dt> </dl></td>
-<td><dl> <dt><span id="wire_format_may_be_incorrect__you_may_need_to_use_-ms_conf_struct__see_documentation_for_advice"></span><span id="WIRE_FORMAT_MAY_BE_INCORRECT__YOU_MAY_NEED_TO_USE_-MS_CONF_STRUCT__SEE_DOCUMENTATION_FOR_ADVICE"></span>il formato wire potrebbe non essere corretto, potrebbe essere necessario usare -ms_conf_struct, vedere la documentazione per consigli</dt> <dd> Il compilatore MIDL non è stato in grado di generare un formato trasmissibile per i dati. Un modo comune per ottenere questo errore è definire un ms_conf_struct <strong>all'interno</strong> di una struttura complessa.<br/> </dd> </dl></td>
+<td><dl> <dt><span id="wire_format_may_be_incorrect__you_may_need_to_use_-ms_conf_struct__see_documentation_for_advice"></span><span id="WIRE_FORMAT_MAY_BE_INCORRECT__YOU_MAY_NEED_TO_USE_-MS_CONF_STRUCT__SEE_DOCUMENTATION_FOR_ADVICE"></span>Il formato wire potrebbe non essere corretto. Potrebbe essere necessario usare -ms_conf_struct, vedere la documentazione per consigli</dt> <dd> Il compilatore MIDL non è stato in grado di generare un formato trasmissibile per i dati. Un modo comune per ottenere questo <strong></strong> errore è definire un'ms_conf_struct all'interno di una struttura complessa.<br/> </dd> </dl></td>
 </tr>
 <tr class="even">
 <td><span id="MIDL2381"></span><span id="midl2381"></span><dl> <dt><strong>MIDL2381</strong></dt> </dl></td>
-<td><dl> <dt><span id="a_stack_size_or_an_offset_bigger_than_64_K_limit._See_documentation_for_advice."></span><span id="a_stack_size_or_an_offset_bigger_than_64_k_limit._see_documentation_for_advice."></span><span id="A_STACK_SIZE_OR_AN_OFFSET_BIGGER_THAN_64_K_LIMIT._SEE_DOCUMENTATION_FOR_ADVICE."></span>una dimensione dello stack o un offset maggiore del limite di 64 K. Per consigli, vedere la documentazione.</dt> <dd> La chiamata comporta uno stack maggiore di 64 KB. Provare a passare i dati in blocchi più piccoli.<br/> </dd> </dl></td>
+<td><dl> <dt><span id="a_stack_size_or_an_offset_bigger_than_64_K_limit._See_documentation_for_advice."></span><span id="a_stack_size_or_an_offset_bigger_than_64_k_limit._see_documentation_for_advice."></span><span id="A_STACK_SIZE_OR_AN_OFFSET_BIGGER_THAN_64_K_LIMIT._SEE_DOCUMENTATION_FOR_ADVICE."></span>una dimensione dello stack o un offset maggiore del limite di 64 K. Per consigli, vedere la documentazione.</dt> <dd> La chiamata comporta uno stack di dimensioni superiori a 64 KB. Provare a passare i dati in blocchi più piccoli.<br/> </dd> </dl></td>
 </tr>
 <tr class="odd">
 <td><span id="MIDL2382"></span><span id="midl2382"></span><dl> <dt><strong>MIDL2382</strong></dt> </dl></td>
@@ -1601,15 +1601,15 @@ File ACF di esempio:<br/>
 </tr>
 <tr class="even">
 <td><span id="MIDL2383"></span><span id="midl2383"></span><dl> <dt><strong>MIDL2383</strong></dt> </dl></td>
-<td><dl> <dt><span id="The_array_element_size_is_bigger_than_64_KB_limit."></span><span id="the_array_element_size_is_bigger_than_64_kb_limit."></span><span id="THE_ARRAY_ELEMENT_SIZE_IS_BIGGER_THAN_64_KB_LIMIT."></span>La dimensione dell'elemento della matrice è maggiore del limite di 64 KB.</dt> <dd> Tutte le dimensioni di tutti gli elementi della matrice devono essere inferiori a 64 KB.<br/> </dd> </dl></td>
+<td><dl> <dt><span id="The_array_element_size_is_bigger_than_64_KB_limit."></span><span id="the_array_element_size_is_bigger_than_64_kb_limit."></span><span id="THE_ARRAY_ELEMENT_SIZE_IS_BIGGER_THAN_64_KB_LIMIT."></span>La dimensione dell'elemento della matrice è maggiore del limite di 64 KB.</dt> <dd> Le dimensioni di tutti gli elementi della matrice devono essere inferiori a 64 KB.<br/> </dd> </dl></td>
 </tr>
 <tr class="odd">
 <td><span id="MIDL2384"></span><span id="midl2384"></span><dl> <dt><strong>MIDL2384</strong></dt> </dl></td>
-<td><dl> <dt><span id="there_can_be_only_one__Icid__parameter_in_a_method__and_it_should_be_last_or_second_to_last_if_last_parameter_has__retval_"></span><span id="there_can_be_only_one__icid__parameter_in_a_method__and_it_should_be_last_or_second_to_last_if_last_parameter_has__retval_"></span><span id="THERE_CAN_BE_ONLY_ONE__ICID__PARAMETER_IN_A_METHOD__AND_IT_SHOULD_BE_LAST_OR_SECOND_TO_LAST_IF_LAST_PARAMETER_HAS__RETVAL_"></span>può essere presente un solo parametro [Icid] in un metodo e deve essere ultimo o secondo all'ultimo se l'ultimo parametro ha [retval]</dt> <dd> Un parametro con l'attributo [<a href="lcid.md"><strong>lcid</strong></a>] deve verificarsi per ultimo. L'unica eccezione si verifica quando è presente anche un parametro con l'attributo [<a href="retval.md"><strong>retval</strong></a>]. Quando si verificano entrambi, il secondo all'ultimo parametro nell'elenco di parametri deve avere l'attributo [ <strong>lcid</strong>]. L'ultimo parametro deve avere l'attributo [<strong>retval</strong>].<br/> </dd> </dl></td>
+<td><dl> <dt><span id="there_can_be_only_one__Icid__parameter_in_a_method__and_it_should_be_last_or_second_to_last_if_last_parameter_has__retval_"></span><span id="there_can_be_only_one__icid__parameter_in_a_method__and_it_should_be_last_or_second_to_last_if_last_parameter_has__retval_"></span><span id="THERE_CAN_BE_ONLY_ONE__ICID__PARAMETER_IN_A_METHOD__AND_IT_SHOULD_BE_LAST_OR_SECOND_TO_LAST_IF_LAST_PARAMETER_HAS__RETVAL_"></span>può essere presente un solo parametro [Icid] in un metodo e deve essere l'ultimo o il secondo all'ultimo se l'ultimo parametro ha [retval]</dt> <dd> Un parametro con l'attributo [<a href="lcid.md"><strong>lcid</strong></a>] deve verificarsi per ultimo. L'unica eccezione si verifica quando è presente anche un parametro con l'attributo [<a href="retval.md"><strong>retval</strong></a>]. Quando si verificano entrambi, il secondo all'ultimo parametro nell'elenco di parametri deve avere l'attributo [ <strong>lcid</strong>]. L'ultimo parametro deve avere l'attributo [<strong>retval</strong>].<br/> </dd> </dl></td>
 </tr>
 <tr class="even">
 <td><span id="MIDL2385"></span><span id="midl2385"></span><dl> <dt><strong>MIDL2385</strong></dt> </dl></td>
-<td><dl> <dt><span id="incorrect_syntax_for_midl_pragma"></span><span id="INCORRECT_SYNTAX_FOR_MIDL_PRAGMA"></span>Sintassi non corretta per midl_pragma</dt> <dd> Il compilatore MIDL ha rilevato un errore di sintassi sconosciuto in un'istruzione midl_pragma.<br/> </dd> </dl></td>
+<td><dl> <dt><span id="incorrect_syntax_for_midl_pragma"></span><span id="INCORRECT_SYNTAX_FOR_MIDL_PRAGMA"></span>sintassi non corretta per midl_pragma</dt> <dd> Il compilatore MIDL ha rilevato un errore di sintassi sconosciuto in midl_pragma istruzione .<br/> </dd> </dl></td>
 </tr>
 <tr class="odd">
 <td><span id="MIDL2386"></span><span id="midl2386"></span><dl> <dt><strong>MIDL2386</strong></dt> </dl></td>
@@ -1625,7 +1625,7 @@ File ACF di esempio:<br/>
 </tr>
 <tr class="even">
 <td><span id="MIDL2389"></span><span id="midl2389"></span><dl> <dt><strong>MIDL2389</strong></dt> </dl></td>
-<td><dl> <dt><span id="parameter_offset_exceed_64-KB_limit_for_interpreted_procedures"></span><span id="parameter_offset_exceed_64-kb_limit_for_interpreted_procedures"></span><span id="PARAMETER_OFFSET_EXCEED_64-KB_LIMIT_FOR_INTERPRETED_PROCEDURES"></span>l'offset del parametro supera il limite di 64 KB per le procedure interpretate</dt> <dd> Questo errore indica in genere che una routine ha troppi parametri.<br/> </dd> </dl></td>
+<td><dl> <dt><span id="parameter_offset_exceed_64-KB_limit_for_interpreted_procedures"></span><span id="parameter_offset_exceed_64-kb_limit_for_interpreted_procedures"></span><span id="PARAMETER_OFFSET_EXCEED_64-KB_LIMIT_FOR_INTERPRETED_PROCEDURES"></span>L'offset del parametro supera il limite di 64 KB per le procedure interpretate</dt> <dd> Questo errore indica in genere che una procedura ha troppi parametri.<br/> </dd> </dl></td>
 </tr>
 <tr class="odd">
 <td><span id="MIDL2390"></span><span id="midl2390"></span><dl> <dt><strong>MIDL2390</strong></dt> </dl></td>
@@ -1633,25 +1633,25 @@ File ACF di esempio:<br/>
 </tr>
 <tr class="even">
 <td><span id="MIDL2391"></span><span id="midl2391"></span><dl> <dt><strong>MIDL2391</strong></dt> </dl></td>
-<td><dl> <dt><span id="dispinterface_members_must_be_methods__properties_or_interfaces"></span><span id="DISPINTERFACE_MEMBERS_MUST_BE_METHODS__PROPERTIES_OR_INTERFACES"></span>I membri dell'interfaccia dispatch devono essere metodi, proprietà o interfacce</dt> <dd> Un'interfaccia dispatch non può contenere definizioni di tipo, strutture, enumerazioni o unioni.<br/> </dd> </dl></td>
+<td><dl> <dt><span id="dispinterface_members_must_be_methods__properties_or_interfaces"></span><span id="DISPINTERFACE_MEMBERS_MUST_BE_METHODS__PROPERTIES_OR_INTERFACES"></span>I membri dell'interfaccia dispatch devono essere metodi, proprietà o interfacce</dt> <dd> Un'interfaccia dispatch non può contenere definizioni di tipi, strutture, enumerazioni o unioni.<br/> </dd> </dl></td>
 </tr>
 <tr class="odd">
 <td><span id="MIDL2392"></span><span id="midl2392"></span><dl> <dt><strong>MIDL2392</strong></dt> </dl></td>
-<td><dl> <dt><span id="_local__procedure_without__call_as_"></span><span id="_LOCAL__PROCEDURE_WITHOUT__CALL_AS_"></span>Routine [local] senza [call_as]</dt> <dd> Anche le routine oggetto con<a href="local.md"><strong>l'attributo</strong></a>[ local ] richiedono l'attributo [<a href="call-as.md"><strong>call_as</strong></a>].<br/> </dd> </dl></td>
+<td><dl> <dt><span id="_local__procedure_without__call_as_"></span><span id="_LOCAL__PROCEDURE_WITHOUT__CALL_AS_"></span>Procedura [local] senza [call_as]</dt> <dd> Le routine oggetto con<a href="local.md"><strong>l'attributo</strong></a>[ local ] richiedono anche l'attributo [<a href="call-as.md"><strong>call_as</strong></a>].<br/> </dd> </dl></td>
 </tr>
 <tr class="even">
 <td><span id="MIDL2393"></span><span id="midl2393"></span><dl> <dt><strong>MIDL2393</strong></dt> </dl></td>
-<td><dl> <dt><span id="multi_dimensional_vector__switching_to__Oicf"></span><span id="multi_dimensional_vector__switching_to__oicf"></span><span id="MULTI_DIMENSIONAL_VECTOR__SWITCHING_TO__OICF"></span>vettore multidimensionale, passaggio a /Oicf</dt> <dd> La <a href="-os.md"><strong>modalità di ottimizzazione /Os</strong></a> non supporta matrici di dimensioni non multidimensionali. Il compilatore ha automaticamente commutato la modalità di ottimizzazione su<strong>/Oicf</strong> per questa funzione. <br/> Questo avviso può essere eliminato a livello globale modificando la modalità del compilatore specificando<strong>/Oicf</strong> nella riga di comando MIDL o usando un avviso <strong>midl_pragma</strong> (disabilitazione: 2393) nel file IDL. La modalità di ottimizzazione può essere modificata per una singola funzione aggiungendo l'attributo [<strong>optimize( &quot; icf &quot; )</strong>] alla funzione nel file ACF.<br/> L'esempio seguente illustra questo avviso:<br/>
+<td><dl> <dt><span id="multi_dimensional_vector__switching_to__Oicf"></span><span id="multi_dimensional_vector__switching_to__oicf"></span><span id="MULTI_DIMENSIONAL_VECTOR__SWITCHING_TO__OICF"></span>vettore multidimensionale, passaggio a /Oicf</dt> <dd> La <a href="-os.md"><strong>modalità di ottimizzazione /Os</strong></a> non supporta matrici di dimensioni multidimensionali non multidimensionali. Il compilatore ha automaticamente commutato la modalità di ottimizzazione su<strong>/Oicf</strong> per questa funzione. <br/> Questo avviso può essere eliminato a livello globale modificando la modalità del compilatore specificando /<strong>Oicf</strong> nella riga di comando MIDL o usando <strong>midl_pragma</strong> warning (disable: 2393) nel file IDL. La modalità di ottimizzazione può essere modificata per una singola funzione aggiungendo l'attributo [<strong>optimize( &quot; icf &quot; )</strong>] alla funzione nel file ACF.<br/> L'esempio seguente illustra questo avviso:<br/>
 <pre class="syntax" data-space="preserve"><code>void roo(long s1, [size_is(s1)] long a[][30];    //MIDL2393
 void bar(long s1, long s2, [size_is(s1,s2) long **a);//MIDL2393</code></pre>
 </dd> </dl></td>
 </tr>
 <tr class="odd">
 <td><span id="MIDL2395"></span><span id="midl2395"></span><dl> <dt><strong>MIDL2395</strong></dt> </dl></td>
-<td><dl> <dt><span id="type_or_construct_not_supported_in_a_library_block_because_Oleaut32.dll_support_for_64-KB_polymorphic_types_is_missing"></span><span id="type_or_construct_not_supported_in_a_library_block_because_oleaut32.dll_support_for_64-kb_polymorphic_types_is_missing"></span><span id="TYPE_OR_CONSTRUCT_NOT_SUPPORTED_IN_A_LIBRARY_BLOCK_BECAUSE_OLEAUT32.DLL_SUPPORT_FOR_64-KB_POLYMORPHIC_TYPES_IS_MISSING"></span>tipo o costrutto non supportato in un blocco di libreria perché manca Oleaut32.dll supporto per i tipi polimorfici da 64 KB</dt> <dd> L'automazione OLE non supporta tipi polimorfici ,ad esempio _int3264, INT_PTR e così via. Questi tipi hanno rappresentazioni di dati incompatibili tra piattaforme a 32 bit e a 64 bit. La chiamata remota avrà esito negativo in fase di esecuzione su piattaforme a 64 bit.<br/>
+<td><dl> <dt><span id="type_or_construct_not_supported_in_a_library_block_because_Oleaut32.dll_support_for_64-KB_polymorphic_types_is_missing"></span><span id="type_or_construct_not_supported_in_a_library_block_because_oleaut32.dll_support_for_64-kb_polymorphic_types_is_missing"></span><span id="TYPE_OR_CONSTRUCT_NOT_SUPPORTED_IN_A_LIBRARY_BLOCK_BECAUSE_OLEAUT32.DLL_SUPPORT_FOR_64-KB_POLYMORPHIC_TYPES_IS_MISSING"></span>tipo o costrutto non supportato in un blocco di libreria perché Oleaut32.dll supporto per i tipi polimorfici da 64 KB è mancante</dt> <dd> L'automazione OLE non supporta i tipi polimorfici, ad esempio _int3264, INT_PTR e così via. Questi tipi hanno rappresentazioni dei dati incompatibili tra piattaforme a 32 bit e a 64 bit. La chiamata remota avrà esito negativo in fase di esecuzione nelle piattaforme a 64 bit.<br/>
 <blockquote>
 [!Note]<br />
-Si noti che Windows versione 2000, i file TLB a 64 bit sono supportati dall'automazione OLE convertendo le informazioni TLB a 32 bit in fase di esecuzione. Pertanto, solo la generazione di TLB a 32 bit è supportata da MIDL.
+Si noti che a Windows versione 2000, i file TLB a 64 bit sono supportati dall'automazione OLE convertendo le informazioni TLB a 32 bit in fase di esecuzione. Pertanto, MIDL supporta solo la generazione di TLB a 32 bit.
 </blockquote>
 <br/> Se MIDL viene usato solo per generare un file di intestazione, l'opzione <a href="-notlb.md"><strong>/notlb</strong></a> elimina la generazione del file TLB.<br/> </dd> </dl></td>
 </tr>
@@ -1665,15 +1665,15 @@ Si noti che Windows versione 2000, i file TLB a 64 bit sono supportati dall'auto
 </tr>
 <tr class="even">
 <td><span id="MIDL2398"></span><span id="midl2398"></span><dl> <dt><strong>MIDL2398</strong></dt> </dl></td>
-<td><dl> <dt><span id="cannot_execute_MIDL_engine"></span><span id="cannot_execute_midl_engine"></span><span id="CANNOT_EXECUTE_MIDL_ENGINE"></span>impossibile eseguire il motore MIDL</dt> <dd> A data della versione Windows 2000 (MIDL versione 5.03.279), il compilatore MIDL viene implementato usando due file eseguibili: Midl.exe (driver) e Midlc.exe (motore del compilatore). Questo errore indica che il Midl.exe non è in grado di avviare Midlc.exe. Assicurarsi che Midlc.exe si trova nella stessa directory Midl.exe e che siano della stessa versione.<br/> L'errore potrebbe essere stato causato dalla Midl.exe ma non Midlx.exe dalla distribuzione più recente. Eseguire <strong>midl</strong> e/o <strong>midlc</strong> dalla riga di comando senza parametri per visualizzare il numero di versione del file eseguibile.<br/> </dd> </dl></td>
+<td><dl> <dt><span id="cannot_execute_MIDL_engine"></span><span id="cannot_execute_midl_engine"></span><span id="CANNOT_EXECUTE_MIDL_ENGINE"></span>impossibile eseguire il motore MIDL</dt> <dd> A Windows 2000 (MIDL versione 5.03.279), il compilatore MIDL viene implementato usando due file eseguibili: Midl.exe (il driver ) e Midlc.exe (il motore del compilatore). Questo errore indica che il Midl.exe non è in grado di avviare Midlc.exe. Assicurarsi che Midlc.exe si trova nella stessa directory Midl.exe e che siano della stessa versione.<br/> L'errore potrebbe essere stato causato dalla copia Midl.exe ma non Midlx.exe dalla distribuzione più recente. Eseguire <strong>midl</strong> e/o <strong>midlc</strong> dalla riga di comando senza parametri per visualizzare il numero di versione del file eseguibile.<br/> </dd> </dl></td>
 </tr>
 <tr class="odd">
 <td><span id="MIDL2399"></span><span id="midl2399"></span><dl> <dt><strong>MIDL2399</strong></dt> </dl></td>
-<td><dl> <dt><span id="bad_commands_from_driver"></span><span id="BAD_COMMANDS_FROM_DRIVER"></span>Comandi non supportati dal driver</dt> <dd> A data della versione Windows 2000 (MIDL versione 5.03.279), il compilatore MIDL viene implementato usando due file eseguibili: Midl.exe (driver) e Midlc.exe (motore del compilatore). Questo errore indica che il file temporaneo usato per passare i comandi da Midl.exe a Midlc.exe è mancante o danneggiato. Assicurarsi che Midlc.exe si trova nella stessa directory Midl.exe e che siano della stessa versione.<br/> L'errore potrebbe essere stato causato dal tentativo di eseguire Midlc.exe direttamente o copiando Midl.exe ma non Midlc.exe dalla distribuzione più recente. Eseguire <strong>midl</strong> e/o <strong>midlc</strong> dalla riga di comando senza parametri per visualizzare il numero di versione del file eseguibile.<br/> </dd> </dl></td>
+<td><dl> <dt><span id="bad_commands_from_driver"></span><span id="BAD_COMMANDS_FROM_DRIVER"></span>comandi non supportati dal driver</dt> <dd> A Windows 2000 (MIDL versione 5.03.279), il compilatore MIDL viene implementato usando due file eseguibili: Midl.exe (il driver ) e Midlc.exe (il motore del compilatore). Questo errore indica che il file temporaneo usato per passare i comandi da Midl.exe a Midlc.exe è mancante o danneggiato. Assicurarsi che Midlc.exe si trova nella stessa directory Midl.exe e che siano della stessa versione.<br/> L'errore potrebbe essere stato causato dal tentativo di eseguire Midlc.exe direttamente o copiando Midl.exe ma non Midlc.exe dalla distribuzione più recente. Eseguire <strong>midl</strong> e/o <strong>midlc</strong> dalla riga di comando senza parametri per visualizzare il numero di versione del file eseguibile.<br/> </dd> </dl></td>
 </tr>
 <tr class="even">
 <td><span id="MIDL2400"></span><span id="midl2400"></span><dl> <dt><strong>MIDL2400</strong></dt> </dl></td>
-<td><dl> <dt><span id="for_ole_automation__optional_parameters_should_be_VARIANT_or_VARIANT__"></span><span id="for_ole_automation__optional_parameters_should_be_variant_or_variant__"></span><span id="FOR_OLE_AUTOMATION__OPTIONAL_PARAMETERS_SHOULD_BE_VARIANT_OR_VARIANT__"></span>per l'automazione ole, i parametri facoltativi devono essere VARIANT o VARIANT *</dt> <dd> Automazione OLE richiede che tutti i parametri [facoltativi] siano di tipo <strong>VARIANT</strong> o <strong>VARIANT*.</strong><br/> Nell'automazione OLE l'uso di parametri non VARIANT può causare l'esito negativo della chiamata in fase di esecuzione o il passaggio di dati non definiti per i parametri [<a href="optional.md"><strong>facoltativi].</strong></a><br/> </dd> </dl></td>
+<td><dl> <dt><span id="for_ole_automation__optional_parameters_should_be_VARIANT_or_VARIANT__"></span><span id="for_ole_automation__optional_parameters_should_be_variant_or_variant__"></span><span id="FOR_OLE_AUTOMATION__OPTIONAL_PARAMETERS_SHOULD_BE_VARIANT_OR_VARIANT__"></span>per l'automazione ole, i parametri facoltativi devono essere VARIANT o VARIANT *</dt> <dd> L'automazione OLE richiede che tutti i parametri [facoltativi] siano di tipo <strong>VARIANT</strong> o <strong>VARIANT*.</strong><br/> Nell'automazione OLE l'uso di parametri non VARIANT può causare l'esito negativo della chiamata in fase di esecuzione o il passaggio di dati non definiti per i parametri [<a href="optional.md"><strong>facoltativi</strong></a>].<br/> </dd> </dl></td>
 </tr>
 <tr class="odd">
 <td><span id="MIDL2401"></span><span id="midl2401"></span><dl> <dt><strong>MIDL2401</strong></dt> </dl></td>
@@ -1681,58 +1681,58 @@ Si noti che Windows versione 2000, i file TLB a 64 bit sono supportati dall'auto
 </tr>
 <tr class="even">
 <td><span id="MIDL2402"></span><span id="midl2402"></span><dl> <dt><strong>MIDL2402</strong></dt> </dl></td>
-<td><dl> <dt><span id="_optional__attribute_is_inapplicable_outside_of_a_library_block"></span><span id="_OPTIONAL__ATTRIBUTE_IS_INAPPLICABLE_OUTSIDE_OF_A_LIBRARY_BLOCK"></span>L'attributo [facoltativo] non è disponibile all'esterno di un blocco di libreria</dt> <dd> La funzionalità implicita dell'attributo [ <a href="optional.md"><strong>facoltativo</strong></a>] non è applicabile ai proxy generati per un'interfaccia all'esterno di un blocco di libreria.<br/> </dd> </dl></td>
+<td><dl> <dt><span id="_optional__attribute_is_inapplicable_outside_of_a_library_block"></span><span id="_OPTIONAL__ATTRIBUTE_IS_INAPPLICABLE_OUTSIDE_OF_A_LIBRARY_BLOCK"></span>Attributo [facoltativo] non valido all'esterno di un blocco di libreria</dt> <dd> La funzionalità implicita dell'attributo [ <a href="optional.md"><strong>facoltativo</strong></a>] non è applicabile ai proxy generati per un'interfaccia all'esterno di un blocco di libreria.<br/> </dd> </dl></td>
 </tr>
 <tr class="odd">
 <td><span id="MIDL2403"></span><span id="midl2403"></span><dl> <dt><strong>MIDL2403</strong></dt> </dl></td>
-<td><dl> <dt><span id="The_data_type_of_the__Icid__parameter_must_be_long"></span><span id="the_data_type_of_the__icid__parameter_must_be_long"></span><span id="THE_DATA_TYPE_OF_THE__ICID__PARAMETER_MUST_BE_LONG"></span>Il tipo di dati del parametro [Icid] deve essere long</dt> <dd> Automazione OLE richiede che i parametri con l'attributo [<strong>Icid</strong>] siano di tipo <a href="long.md"><strong>long</strong></a>.<br/> </dd> </dl></td>
+<td><dl> <dt><span id="The_data_type_of_the__Icid__parameter_must_be_long"></span><span id="the_data_type_of_the__icid__parameter_must_be_long"></span><span id="THE_DATA_TYPE_OF_THE__ICID__PARAMETER_MUST_BE_LONG"></span>Il tipo di dati del parametro [Icid] deve essere long</dt> <dd> L'automazione OLE richiede che i parametri con<strong>l'attributo [ Icid</strong>] siano di tipo <a href="long.md"><strong>long.</strong></a><br/> </dd> </dl></td>
 </tr>
 <tr class="even">
 <td><span id="MIDL2404"></span><span id="midl2404"></span><dl> <dt><strong>MIDL2404</strong></dt> </dl></td>
-<td><dl> <dt><span id="procedures_with__propput____propget__or__propref__can_t_have_more_than_one_required_parameter_after__optional__one"></span><span id="PROCEDURES_WITH__PROPPUT____PROPGET__OR__PROPREF__CAN_T_HAVE_MORE_THAN_ONE_REQUIRED_PARAMETER_AFTER__OPTIONAL__ONE"></span>Le routine con [propput], [propget] o [propref] non possono avere più di un parametro obbligatorio dopo [facoltativo] uno</dt> <dd> Non possono essere presenti più parametri senza [<a href="optional.md"><strong>facoltativo</strong></a>] dopo l'ultimo parametro con [<strong>facoltativo</strong>] quando si usa [<a href="propput.md"><strong>propput</strong></a>], [<a href="propget.md"><strong>propget</strong></a>], o [ <a href="propputref.md"><strong>propputref</strong></a>].<br/> </dd> </dl></td>
+<td><dl> <dt><span id="procedures_with__propput____propget__or__propref__can_t_have_more_than_one_required_parameter_after__optional__one"></span><span id="PROCEDURES_WITH__PROPPUT____PROPGET__OR__PROPREF__CAN_T_HAVE_MORE_THAN_ONE_REQUIRED_PARAMETER_AFTER__OPTIONAL__ONE"></span>Le routine con [propput], [propget] o [propref] non possono avere più di un parametro obbligatorio dopo uno [facoltativo]</dt> <dd> Non può essere presente più di un parametro senza [<a href="optional.md"><strong>facoltativo</strong></a>] dopo l'ultimo parametro con [<strong>facoltativo</strong>] quando si usa [<a href="propput.md"><strong>propput</strong></a>], [<a href="propget.md"><strong>propget</strong></a>] o [ <a href="propputref.md"><strong>propputref</strong></a>].<br/> </dd> </dl></td>
 </tr>
 <tr class="odd">
 <td><span id="MIDL2405"></span><span id="midl2405"></span><dl> <dt><strong>MIDL2405</strong></dt> </dl></td>
-<td><dl> <dt><span id="_comm_status__or__fault_status__with_pickling_requires_-Oicf"></span><span id="_comm_status__or__fault_status__with_pickling_requires_-oicf"></span><span id="_COMM_STATUS__OR__FAULT_STATUS__WITH_PICKLING_REQUIRES_-OICF"></span>[comm_status] o [fault_status] con pickling richiede -Oicf</dt> <dd> La modalità di ottimizzazione<strong>Oi</strong> precedente non supporta le procedure o i parametri con [ <a href="comm-status.md"><strong>comm_status</strong></a>] o [ <a href="fault-status.md"><strong>fault_status</strong></a>] con pickling (ovvero usando [ <a href="encode.md"><strong>encode</strong></a>] e/o [ <a href="decode.md"><strong>decode</strong></a>]).<br/> Questo avviso può essere eliminato a livello globale specificando -<strong>Oicf</strong> nella riga di comando MIDL o per una singola funzione aggiungendo l'attributo [optimize( icf:)] alla funzione nel &quot; file ACF.<br/> In generale, la modalità<strong>di ottimizzazione Oicf</strong> è consigliata rispetto alla modalità<strong>Oi.</strong><br/> </dd> </dl></td>
+<td><dl> <dt><span id="_comm_status__or__fault_status__with_pickling_requires_-Oicf"></span><span id="_comm_status__or__fault_status__with_pickling_requires_-oicf"></span><span id="_COMM_STATUS__OR__FAULT_STATUS__WITH_PICKLING_REQUIRES_-OICF"></span>[comm_status] o [fault_status] con pickling richiede -Oicf</dt> <dd> La modalità di ottimizzazione<strong>Oi</strong> precedente non supporta le procedure o i parametri con [ <a href="comm-status.md"><strong>comm_status</strong></a>] o [ <a href="fault-status.md"><strong>fault_status</strong></a>] con pickling (ovvero usando [ <a href="encode.md"><strong>encode</strong></a>] e/o [ <a href="decode.md"><strong>decode</strong></a>]).<br/> Questo avviso può essere eliminato a livello globale specificando<strong>- Oicf</strong> nella riga di comando MIDL o per una singola funzione aggiungendo l'attributo [optimize( icf:)] alla funzione nel &quot; file ACF.<br/> In generale, la modalità<strong>di ottimizzazione Oicf</strong> è consigliata rispetto alla<strong>modalità Oi.</strong><br/> </dd> </dl></td>
 </tr>
 <tr class="even">
 <td><span id="MIDL2406"></span><span id="midl2406"></span><dl> <dt><strong>MIDL2406</strong></dt> </dl></td>
-<td><dl> <dt><span id="midl_driver_and_compiler_version_mismatch"></span><span id="MIDL_DRIVER_AND_COMPILER_VERSION_MISMATCH"></span>Mancata corrispondenza tra il driver midl e la versione del compilatore</dt> <dd> A data della versione Windows 2000 (MIDL versione 5.03.279) il compilatore MIDL viene implementato usando due file eseguibili: Midl.exe (driver) e Midlc.exe (motore del compilatore). Questo errore indica che la versione di Midl.exe non corrisponde alla versione di Midlc.exe.<br/> L'errore potrebbe essere stato causato dalla Midl.exe ma non Midlc.exe dalla distribuzione più recente. Eseguire <strong>midl</strong> e/o <strong>midlc</strong> dalla riga di comando senza parametri per visualizzare il numero di versione del file eseguibile.<br/> </dd> </dl></td>
+<td><dl> <dt><span id="midl_driver_and_compiler_version_mismatch"></span><span id="MIDL_DRIVER_AND_COMPILER_VERSION_MISMATCH"></span>Mancata corrispondenza tra versione del driver midl e del compilatore</dt> <dd> A Windows 2000 (MIDL versione 5.03.279) il compilatore MIDL viene implementato usando due file eseguibili: Midl.exe (il driver ) e Midlc.exe (motore del compilatore). Questo errore indica che la versione di Midl.exe non corrisponde alla versione di Midlc.exe.<br/> L'errore potrebbe essere stato causato dalla copia Midl.exe ma non Midlc.exe dalla distribuzione più recente. Eseguire <strong>midl</strong> e/o <strong>midlc</strong> dalla riga di comando senza parametri per visualizzare il numero di versione del file eseguibile.<br/> </dd> </dl></td>
 </tr>
 <tr class="odd">
 <td><span id="MIDL2407"></span><span id="midl2407"></span><dl> <dt><strong>MIDL2407</strong></dt> </dl></td>
-<td><dl> <dt><span id="no_intermediate_file_specified__use_Midl.exe"></span><span id="no_intermediate_file_specified__use_midl.exe"></span><span id="NO_INTERMEDIATE_FILE_SPECIFIED__USE_MIDL.EXE"></span>nessun file intermedio specificato: usare Midl.exe</dt> <dd> A data della versione Windows 2000 (MIDL versione 5.03.279), il compilatore MIDL viene implementato usando due file eseguibili: Midl.exe (driver) e Midlc.exe (motore del compilatore). Questo errore indica che la Midlc.exe è stata eseguita direttamente invece di usare Midl.exe.<br/> </dd> </dl></td>
+<td><dl> <dt><span id="no_intermediate_file_specified__use_Midl.exe"></span><span id="no_intermediate_file_specified__use_midl.exe"></span><span id="NO_INTERMEDIATE_FILE_SPECIFIED__USE_MIDL.EXE"></span>nessun file intermedio specificato: usare Midl.exe</dt> <dd> A Windows 2000 (MIDL versione 5.03.279), il compilatore MIDL viene implementato usando due file eseguibili: Midl.exe (il driver ) e Midlc.exe (il motore del compilatore). Questo errore indica che Midlc.exe è stato eseguito direttamente anziché usare Midl.exe.<br/> </dd> </dl></td>
 </tr>
 <tr class="even">
 <td><span id="MIDL2408"></span><span id="midl2408"></span><dl> <dt><strong>MIDL2408</strong></dt> </dl></td>
-<td><dl> <dt><span id="processing_problem_with_a_parameter_in_a_procedure"></span><span id="PROCESSING_PROBLEM_WITH_A_PARAMETER_IN_A_PROCEDURE"></span>problema di elaborazione con un parametro in una procedura</dt> <dd> Questo errore può essere visualizzato quando si importano dati da un TLB e quando una routine ha un parametro non valido. <br/> Se viene visualizzato questo errore, segnalare un bug a Microsoft. Specificare i file IDL, i file ACF, il file TLB e la riga di comando MIDL completa.<br/> </dd> </dl></td>
+<td><dl> <dt><span id="processing_problem_with_a_parameter_in_a_procedure"></span><span id="PROCESSING_PROBLEM_WITH_A_PARAMETER_IN_A_PROCEDURE"></span>problema di elaborazione con un parametro in una procedura</dt> <dd> Questo errore può verificarsi quando si importano dati da un TLB e quando una procedura ha un parametro non valido. <br/> Se viene visualizzato questo errore, segnalare un bug a Microsoft. Specificare i file IDL, i file ACF, il file TLB e la riga di comando MIDL completa.<br/> </dd> </dl></td>
 </tr>
 <tr class="odd">
 <td><span id="MIDL2409"></span><span id="midl2409"></span><dl> <dt><strong>MIDL2409</strong></dt> </dl></td>
-<td><dl> <dt><span id="processing_problem_with_a_field_in_a_structure"></span><span id="PROCESSING_PROBLEM_WITH_A_FIELD_IN_A_STRUCTURE"></span>problema di elaborazione con un campo in una struttura</dt> <dd> Questo errore può essere visualizzato quando si importano dati da un TLB e quando una struttura ha una struttura o un campo unione non valido.<br/> Se viene visualizzato questo errore, segnalare un bug a Microsoft. Specificare i file IDL, i file ACF, il file TLB e la riga di comando MIDL completa.<br/> </dd> </dl></td>
+<td><dl> <dt><span id="processing_problem_with_a_field_in_a_structure"></span><span id="PROCESSING_PROBLEM_WITH_A_FIELD_IN_A_STRUCTURE"></span>problema di elaborazione con un campo in una struttura</dt> <dd> Questo errore può verificarsi quando si importano dati da un TLB e quando una struttura ha una struttura o un campo unione non valido.<br/> Se viene visualizzato questo errore, segnalare un bug a Microsoft. Specificare i file IDL, i file ACF, il file TLB e la riga di comando MIDL completa.<br/> </dd> </dl></td>
 </tr>
 <tr class="even">
 <td><span id="MIDL2410"></span><span id="midl2410"></span><dl> <dt><strong>MIDL2410</strong></dt> </dl></td>
-<td><dl> <dt><span id="internal_compiler_inconsistency_detected__the_format_string_offset_is_invalid._See_the_documentation_for_more_information."></span><span id="internal_compiler_inconsistency_detected__the_format_string_offset_is_invalid._see_the_documentation_for_more_information."></span><span id="INTERNAL_COMPILER_INCONSISTENCY_DETECTED__THE_FORMAT_STRING_OFFSET_IS_INVALID._SEE_THE_DOCUMENTATION_FOR_MORE_INFORMATION."></span>Rilevata incoerenza interna del compilatore: l'offset della stringa di formato non è valido. Per altre informazioni, vedere la documentazione.</dt> <dd> Il compilatore MIDL ha rilevato un valore non valido nelle strutture di dati interne. Ciò può essere causato da strutture ricorsive o dal compilatore che viola i propri limiti di rappresentazione per i dati interni. Per identificare e/o risolvere il problema, provare a semplificare il file IDL. A tale scopo, è possibile semplificare i parametri complessi e le strutture di dati ricorsive o ridurre il file IDL suddividendo il file. Questo messaggio può essere accompagnato da una stampa diagnostica con informazioni aggiuntive sul problema.<br/> Se viene visualizzato questo errore, segnalare un bug a Microsoft. Specificare i file IDL, i file ACF, la riga di comando MIDL completa e l'eventuale output di diagnostica.<br/> </dd> </dl></td>
+<td><dl> <dt><span id="internal_compiler_inconsistency_detected__the_format_string_offset_is_invalid._See_the_documentation_for_more_information."></span><span id="internal_compiler_inconsistency_detected__the_format_string_offset_is_invalid._see_the_documentation_for_more_information."></span><span id="INTERNAL_COMPILER_INCONSISTENCY_DETECTED__THE_FORMAT_STRING_OFFSET_IS_INVALID._SEE_THE_DOCUMENTATION_FOR_MORE_INFORMATION."></span>rilevata incoerenza interna del compilatore: l'offset della stringa di formato non è valido. Per altre informazioni, vedere la documentazione.</dt> <dd> Il compilatore MIDL ha rilevato un valore non valido nelle strutture di dati interne. Ciò può essere causato da strutture ricorsive o dalla violazione da parte del compilatore dei propri limiti di rappresentazione per i dati interni. Per identificare e/o risolvere il problema, provare a semplificare il file IDL. A tale scopo, è possibile semplificare i parametri complessi e le strutture di dati ricorsive o ridurre le dimensioni del file IDL suddividendo il file. Questo messaggio può essere accompagnato da una stampa diagnostica con informazioni aggiuntive sul problema.<br/> Se viene visualizzato questo errore, segnalare un bug a Microsoft. Specificare i file IDL, i file ACF, la riga di comando MIDL completa e l'eventuale output di diagnostica.<br/> </dd> </dl></td>
 </tr>
 <tr class="odd">
 <td><span id="MIDL2411"></span><span id="midl2411"></span><dl> <dt><strong>MIDL2411</strong></dt> </dl></td>
-<td><dl> <dt><span id="internal_compiler_inconsistency_detected__the_type_offset_is_invalid._See_the_documentation_for_more_information."></span><span id="internal_compiler_inconsistency_detected__the_type_offset_is_invalid._see_the_documentation_for_more_information."></span><span id="INTERNAL_COMPILER_INCONSISTENCY_DETECTED__THE_TYPE_OFFSET_IS_INVALID._SEE_THE_DOCUMENTATION_FOR_MORE_INFORMATION."></span>Rilevata incoerenza del compilatore interna: l'offset del tipo non è valido. Per altre informazioni, vedere la documentazione.</dt> <dd> Il compilatore MIDL ha rilevato un valore non valido nelle strutture di dati interne. Ciò può essere causato da strutture ricorsive o dal compilatore che viola i propri limiti di rappresentazione per i dati interni. Per identificare e/o risolvere il problema, provare a semplificare il file IDL. A tale scopo, è possibile semplificare i parametri complessi e le strutture di dati ricorsive oppure ridurre le dimensioni del file IDL suddividendo il file. Questo messaggio può essere accompagnato da una stampa diagnostica con informazioni aggiuntive sul problema.<br/> Se viene visualizzato questo errore, segnalare un bug a Microsoft. Specificare i file IDL, i file ACF, la riga di comando MIDL completa e l'eventuale output di diagnostica.<br/> </dd> </dl></td>
+<td><dl> <dt><span id="internal_compiler_inconsistency_detected__the_type_offset_is_invalid._See_the_documentation_for_more_information."></span><span id="internal_compiler_inconsistency_detected__the_type_offset_is_invalid._see_the_documentation_for_more_information."></span><span id="INTERNAL_COMPILER_INCONSISTENCY_DETECTED__THE_TYPE_OFFSET_IS_INVALID._SEE_THE_DOCUMENTATION_FOR_MORE_INFORMATION."></span>rilevata incoerenza interna del compilatore: l'offset del tipo non è valido. Per altre informazioni, vedere la documentazione.</dt> <dd> Il compilatore MIDL ha rilevato un valore non valido nelle strutture di dati interne. Ciò può essere causato da strutture ricorsive o dalla violazione da parte del compilatore dei propri limiti di rappresentazione per i dati interni. Per identificare e/o risolvere il problema, provare a semplificare il file IDL. A tale scopo, è possibile semplificare parametri complessi e strutture di dati ricorsive oppure ridurre le dimensioni del file IDL suddividendo il file. Questo messaggio può essere accompagnato da una stampa diagnostica con informazioni aggiuntive sul problema.<br/> Se viene visualizzato questo errore, segnalare un bug a Microsoft. Specificare i file IDL, i file ACF, la riga di comando MIDL completa e l'eventuale output di diagnostica.<br/> </dd> </dl></td>
 </tr>
 <tr class="even">
 <td><span id="MIDL2412"></span><span id="midl2412"></span><dl> <dt><strong>MIDL2412</strong></dt> </dl></td>
-<td><dl> <dt><span id="SAFEARRAY_roo__syntax_is_not_supported_outside_of_the_library_block__use_LPSAFEARRAY_for_proxy"></span><span id="safearray_roo__syntax_is_not_supported_outside_of_the_library_block__use_lpsafearray_for_proxy"></span><span id="SAFEARRAY_ROO__SYNTAX_IS_NOT_SUPPORTED_OUTSIDE_OF_THE_LIBRARY_BLOCK__USE_LPSAFEARRAY_FOR_PROXY"></span>La sintassi SAFEARRAY(roo) non è supportata all'esterno del blocco di libreria. Usare LPSAFEARRAY per il proxy</dt> <dd> Le SAFEARRAY tipisse in modo esplicito non sono consentite all'esterno di un blocco di libreria. In alternativa, usare LPSAFEARRAY.<br/> L'esempio seguente illustra questo errore:<br/>
+<td><dl> <dt><span id="SAFEARRAY_roo__syntax_is_not_supported_outside_of_the_library_block__use_LPSAFEARRAY_for_proxy"></span><span id="safearray_roo__syntax_is_not_supported_outside_of_the_library_block__use_lpsafearray_for_proxy"></span><span id="SAFEARRAY_ROO__SYNTAX_IS_NOT_SUPPORTED_OUTSIDE_OF_THE_LIBRARY_BLOCK__USE_LPSAFEARRAY_FOR_PROXY"></span>La sintassi SAFEARRAY(roo) non è supportata all'esterno del blocco di libreria. Usare LPSAFEARRAY per il proxy</dt> <dd> Le librerie SAFEARRAYs tipisse in modo esplicito non sono consentite all'esterno di un blocco di libreria. In alternativa, usare LPSAFEARRAY.<br/> L'esempio seguente illustra questo errore:<br/>
 <pre class="syntax" data-space="preserve"><code>void roo(SAFEARRAY(long) *a); //MIDL2412 when outside a library block
 void roo(LPSAFEAEEAY a);         //OK</code></pre>
 </dd> </dl></td>
 </tr>
 <tr class="odd">
 <td><span id="MIDL2413"></span><span id="midl2413"></span><dl> <dt><strong>MIDL2413</strong></dt> </dl></td>
-<td><dl> <dt><span id="bit_fields_are_not_supported"></span><span id="BIT_FIELDS_ARE_NOT_SUPPORTED"></span>I campi di bit non sono supportati</dt> <dd> I campi di bit di tipo C non sono supportati da MIDL. Questo vale sia per la generazione di proxy che per la generazione di TLB.<br/> </dd> </dl></td>
+<td><dl> <dt><span id="bit_fields_are_not_supported"></span><span id="BIT_FIELDS_ARE_NOT_SUPPORTED"></span>I campi di bit non sono supportati</dt> <dd> I campi di bit di tipo C non sono supportati da MIDL. Questo vale per la generazione di proxy e per la generazione di TLB.<br/> </dd> </dl></td>
 </tr>
 <tr class="even">
 <td><span id="MIDL2414"></span><span id="midl2414"></span><dl> <dt><strong>MIDL2414</strong></dt> </dl></td>
-<td><dl> <dt><span id="floating_point_or_complex_return_types_with__decode__are_not_supported_in_-Oicf__using_-OI"></span><span id="floating_point_or_complex_return_types_with__decode__are_not_supported_in_-oicf__using_-oi"></span><span id="FLOATING_POINT_OR_COMPLEX_RETURN_TYPES_WITH__DECODE__ARE_NOT_SUPPORTED_IN_-OICF__USING_-OI"></span>I tipi restituiti a virgola mobile o complessi con [decodifica] non sono supportati in -Oicf, con -OI</dt> <dd> Le procedure con tipi restituiti a virgola mobile o struttura/unione non sono supportate nel pickling di stile -Oicf. Un'operazione da eseguire per 32 bit è l'uso della modalità di ottimizzazione -Oi durante la serializzazione dei dati (usando [encode] e/o [decodifica]). Tuttavia, poiché il vecchio interprete di stile -Oi e il supporto per il pickling devono essere gradualmente separati dopo la versione di Windows 2000, l'uso dei puntatori è fortemente consigliato come soluzione per questo problema. Si noti anche che in genere, la modifica di un metodo di interfaccia per usare un puntatore [out, ref] anziché il valore restituito che causa il problema è completamente compatibile con le versioni precedenti in transito e può essere facilmente nascosta dal livello dell'app. <br/> Questo avviso può essere eliminato a livello globale specificando -Oi nella riga di comando MIDL o per una singola funzione aggiungendo l'attributo [optimize( i )] alla funzione nel &quot; &quot; file ACF.<br/> L'esempio seguente illustra il problema:<br/> roo.idl: <br/>
+<td><dl> <dt><span id="floating_point_or_complex_return_types_with__decode__are_not_supported_in_-Oicf__using_-OI"></span><span id="floating_point_or_complex_return_types_with__decode__are_not_supported_in_-oicf__using_-oi"></span><span id="FLOATING_POINT_OR_COMPLEX_RETURN_TYPES_WITH__DECODE__ARE_NOT_SUPPORTED_IN_-OICF__USING_-OI"></span>I tipi restituiti a virgola mobile o complessi con [decode] non sono supportati in -Oicf, usando -OI</dt> <dd> Le routine con tipi restituiti a virgola mobile o struttura/unione non sono supportate nel selettore di stile -Oicf. Per risolvere il problema a 32 bit, è possibile usare la modalità di ottimizzazione -Oi durante la serializzazione dei dati (usando [encode] e/o [decode]). Tuttavia, poiché l'interprete in stile -Oi precedente e il supporto per il pickling devono essere gradualmente rilasciati dopo il rilascio di Windows 2000, l'uso dei puntatori è fortemente consigliato come soluzione per questo problema. Si noti anche che in genere, la modifica di un metodo di interfaccia per l'uso di un puntatore [out, ref] anziché del valore restituito che causa il problema è completamente compatibile con le versioni precedenti in rete e può essere facilmente nascosta dal livello dell'app. <br/> Questo avviso può essere eliminato a livello globale specificando -Oi nella riga di comando MIDL o per una singola funzione aggiungendo l'attributo [optimize( i )] alla funzione nel &quot; &quot; file ACF.<br/> L'esempio seguente illustra il problema:<br/> roo.idl: <br/>
 <pre class="syntax" data-space="preserve"><code>double GetDouble();</code></pre>
 roo.acf: <br/>
 <pre class="syntax" data-space="preserve"><code>[decode] GetDouble();</code></pre>
@@ -1740,11 +1740,11 @@ Un'opzione per aggirare questa limitazione è passare un parametro [out] per con
 <pre class="syntax" data-space="preserve"><code>void GetDouble([out] double *result); //top level pointer is a [ref] pointer</code></pre>
 roo.acf: <br/>
 <pre class="syntax" data-space="preserve"><code>[decode] GetDouble();</code></pre>
-Come accennato in precedenza, la soluzione descritta in precedenza è ideale non solo per le nuove interfacce, ma anche per quelle precedenti. La rappresentazione cablata per il nuovo argomento out è uguale a per il valore &quot; &quot; restituito (si noti void come nuovo valore restituito).<br/> </dd> </dl></td>
+Come accennato in precedenza, la soluzione descritta in precedenza è ideale non solo per le nuove interfacce, ma anche come soluzione per quelle meno recenti. La rappresentazione in transito per il nuovo argomento out è uguale a per il valore &quot; &quot; restituito (si noti void come nuovo valore restituito).<br/> </dd> </dl></td>
 </tr>
 <tr class="odd">
 <td><span id="MIDL2415"></span><span id="midl2415"></span><dl> <dt><strong>MIDL2415</strong></dt> </dl></td>
-<td><dl> <dt><span id="the_return_type_is_not_supported_for_64-bit_when_using__decode_"></span><span id="THE_RETURN_TYPE_IS_NOT_SUPPORTED_FOR_64-BIT_WHEN_USING__DECODE_"></span>Il tipo restituito non è supportato per la versione a 64 bit quando si usa [decodifica]</dt> <dd> Le procedure con tipi restituiti a virgola mobile o struttura/unione non sono supportate in modalità a 64 bit quando si esegue la serializzazione dei dati (usando [ <a href="encode.md"><strong>encode</strong></a>] e/o [ <a href="decode.md"><strong>decode</strong></a>]). Ciò è correlato all'interprete oi e al serializzatore di dati di vecchio stile non supportati nella piattaforma a 64 bit. Per altre informazioni, vedere la descrizione di MIDL2414. <br/> L'esempio seguente illustra questo errore:<br/> roo.idl: <br/>
+<td><dl> <dt><span id="the_return_type_is_not_supported_for_64-bit_when_using__decode_"></span><span id="THE_RETURN_TYPE_IS_NOT_SUPPORTED_FOR_64-BIT_WHEN_USING__DECODE_"></span>Il tipo restituito non è supportato per la versione a 64 bit quando si usa [decode]</dt> <dd> Le routine con tipi restituiti a virgola mobile o struttura/unione non sono supportate in modalità a 64 bit quando si esegue la serializzazione dei dati (usando [ <a href="encode.md"><strong>encode</strong></a>] e/o [ <a href="decode.md"><strong>decode</strong></a>]). Ciò è correlato al fatto che l'interprete -Oi e il serializzatore di dati di tipo precedente non sono supportati nella piattaforma a 64 bit. Per altre informazioni, vedere la descrizione di MIDL2414. <br/> L'esempio seguente illustra questo errore:<br/> roo.idl: <br/>
 <pre class="syntax" data-space="preserve"><code>double GetDouble();</code></pre>
 roo.acf: <br/>
 <pre class="syntax" data-space="preserve"><code>[decode] GetDouble();</code></pre>
@@ -1752,7 +1752,7 @@ Di seguito è consigliabile risolvere il problema sia per le interfacce nuove ch
 <pre class="syntax" data-space="preserve"><code>void GetDouble([out] double *result); //top level pointer is a [ref] pointer.</code></pre>
 roo.acf: <br/>
 <pre class="syntax" data-space="preserve"><code>[decode] GetDouble();</code></pre>
-Si noti che questa soluzione è completamente compatibile con le versioni precedenti in transito, poiché la rappresentazione di collegamento di un puntatore [ref, out] o double è uguale a quella di un double.<br/> </dd> </dl></td>
+Si noti che questa soluzione è completamente compatibile con le versioni precedenti in transito, perché la rappresentazione di collegamento di un puntatore [ref, out] o double è uguale a quella di un double.<br/> </dd> </dl></td>
 </tr>
 <tr class="even">
 <td><span id="MIDL2416"></span><span id="midl2416"></span><dl> <dt><strong>MIDL2416</strong></dt> </dl></td>
@@ -1772,7 +1772,7 @@ void roo(st2 *s);    //MIDL2416</code></pre>
 </tr>
 <tr class="odd">
 <td><span id="MIDL2417"></span><span id="midl2417"></span><dl> <dt><strong>MIDL2417</strong></dt> </dl></td>
-<td><dl> <dt><span id="transmitted_type_must_either_be_a_pointer_or_have_a_constant_size_for__wire_marshal__and__user_marshal_"></span><span id="TRANSMITTED_TYPE_MUST_EITHER_BE_A_POINTER_OR_HAVE_A_CONSTANT_SIZE_FOR__WIRE_MARSHAL__AND__USER_MARSHAL_"></span>Il tipo trasmesso deve essere un puntatore o avere una dimensione costante per [wire_marshal] e [user_marshal]</dt> <dd> I tipi di primo livello con attributi [ <a href="wire-marshal.md"><strong>wire_marshal</strong></a>] o [ <a href="user-marshal.md"><strong>user_marshal</strong></a>] devono avere una dimensione ben definita in fase di compilazione. Non possono essere o contenere matrici conformi o di dimensioni variabili.<br/> L'esempio seguente illustra questo errore:<br/>
+<td><dl> <dt><span id="transmitted_type_must_either_be_a_pointer_or_have_a_constant_size_for__wire_marshal__and__user_marshal_"></span><span id="TRANSMITTED_TYPE_MUST_EITHER_BE_A_POINTER_OR_HAVE_A_CONSTANT_SIZE_FOR__WIRE_MARSHAL__AND__USER_MARSHAL_"></span>il tipo trasmesso deve essere un puntatore o avere una dimensione costante per [wire_marshal] e [user_marshal]</dt> <dd> I tipi di primo livello con attributi [ <a href="wire-marshal.md"><strong>wire_marshal</strong></a>] o [ <a href="user-marshal.md"><strong>user_marshal</strong></a>] devono avere dimensioni ben definite in fase di compilazione. Non possono essere o contenere matrici conformi o di dimensioni variabili.<br/> L'esempio seguente illustra questo errore:<br/>
 <pre class="syntax" data-space="preserve"><code>typedef struct        //Type contains variable-sized array
 {
     long s;
@@ -1789,7 +1789,7 @@ void roo(st2 *s);        //MIDL2417</code></pre>
 </tr>
 <tr class="even">
 <td><span id="MIDL2418"></span><span id="midl2418"></span><dl> <dt><strong>MIDL2418</strong></dt> </dl></td>
-<td><dl> <dt><span id="procedures_with__propget__must_have_at_least_one_parameter_or_a_return_value"></span><span id="PROCEDURES_WITH__PROPGET__MUST_HAVE_AT_LEAST_ONE_PARAMETER_OR_A_RETURN_VALUE"></span>Le routine con [propget] devono avere almeno un parametro o un valore restituito</dt> <dd> Le routine con l'attributo [propget] devono avere alcuni mezzi per restituire il valore della proprietà. Devono avere almeno un parametro [<a href="-out.md"><strong>out</strong></a>] o un valore restituito.<br/> </dd> </dl></td>
+<td><dl> <dt><span id="procedures_with__propget__must_have_at_least_one_parameter_or_a_return_value"></span><span id="PROCEDURES_WITH__PROPGET__MUST_HAVE_AT_LEAST_ONE_PARAMETER_OR_A_RETURN_VALUE"></span>Le routine con [propget] devono avere almeno un parametro o un valore restituito</dt> <dd> Le routine con l'attributo [propget] devono avere un modo per restituire il valore della proprietà. Devono avere almeno un parametro [<a href="-out.md"><strong>out</strong></a>] o un valore restituito.<br/> </dd> </dl></td>
 </tr>
 <tr class="odd">
 <td><span id="MIDL2461"></span><span id="midl2461"></span><dl> <dt><strong>MIDL2461</strong></dt> </dl></td>
@@ -1797,7 +1797,7 @@ void roo(st2 *s);        //MIDL2417</code></pre>
 </tr>
 <tr class="even">
 <td><span id="MIDL2465"></span><span id="midl2465"></span><dl> <dt><strong>MIDL2465</strong></dt> </dl></td>
-<td><dl> <dt><span id="Structures_containing_conformant_arrays_must_be_passed_by_reference"></span><span id="structures_containing_conformant_arrays_must_be_passed_by_reference"></span><span id="STRUCTURES_CONTAINING_CONFORMANT_ARRAYS_MUST_BE_PASSED_BY_REFERENCE"></span>Le strutture contenenti matrici conformi devono essere passate per riferimento</dt> <dd> I parametri di primo livello in RPC devono avere una dimensione ben definita in fase di compilazione. Non possono essere né contenere matrici conformi o di dimensioni variabili. Inoltre, gli utenti non possono codificare/decodificare un tipo senza dimensioni ben definite. Le applicazioni devono passare uno struct conforme/uno struct conforme in base al riferimento.<br/> L'esempio seguente illustra questo errore:<br/>
+<td><dl> <dt><span id="Structures_containing_conformant_arrays_must_be_passed_by_reference"></span><span id="structures_containing_conformant_arrays_must_be_passed_by_reference"></span><span id="STRUCTURES_CONTAINING_CONFORMANT_ARRAYS_MUST_BE_PASSED_BY_REFERENCE"></span>Le strutture contenenti matrici conformi devono essere passate per riferimento</dt> <dd> I parametri di primo livello in RPC devono avere una dimensione ben definita in fase di compilazione. Non possono essere né contenere matrici conformi o di dimensioni variabili. Inoltre, gli utenti non possono codificare/decodificare un tipo senza dimensioni ben definite. Le applicazioni devono passare uno struct conforme o uno struct variabile conforme per riferimento.<br/> L'esempio seguente illustra questo errore:<br/>
 <pre class="syntax" data-space="preserve"><code>typedef struct        //Type contains variable-sized array
 {
     long s;
@@ -1812,12 +1812,12 @@ typedef [encode,decode] st1; //MIDL2465</code></pre>
 </tr>
 <tr class="odd">
 <td><span id="MIDL9008"></span><span id="midl9008"></span><dl> <dt><strong>MIDL9008</strong></dt> </dl></td>
-<td><dl> <dt><span id="_internal_compiler_problem__system_error_code__-_the_compiler_cannot_continue_for_an_unknown_reason._See_documentation_for_a_workaround."></span><span id="_internal_compiler_problem__system_error_code__-_the_compiler_cannot_continue_for_an_unknown_reason._see_documentation_for_a_workaround."></span><span id="_INTERNAL_COMPILER_PROBLEM__SYSTEM_ERROR_CODE__-_THE_COMPILER_CANNOT_CONTINUE_FOR_AN_UNKNOWN_REASON._SEE_DOCUMENTATION_FOR_A_WORKAROUND."></span> problema interno del <system error code> - compilatore il compilatore non può continuare per un motivo sconosciuto. Per una soluzione alternativa, vedere la documentazione.</dt> <dd> Il compilatore non è stato in grado di continuare e la causa dell'errore è sconosciuta. Il numero di errore esadecimale è un identificatore di errore di sistema. La compilazione potrebbe non essere riuscita a causa di un problema esterno, ad esempio una condizione di memoria insufficiente. In tal caso, è possibile trovare altre informazioni in Winerror.h o Ntstatus.h. <br/> Questo errore viene generato in genere in due situazioni:<br/>
+<td><dl> <dt><span id="_internal_compiler_problem__system_error_code__-_the_compiler_cannot_continue_for_an_unknown_reason._See_documentation_for_a_workaround."></span><span id="_internal_compiler_problem__system_error_code__-_the_compiler_cannot_continue_for_an_unknown_reason._see_documentation_for_a_workaround."></span><span id="_INTERNAL_COMPILER_PROBLEM__SYSTEM_ERROR_CODE__-_THE_COMPILER_CANNOT_CONTINUE_FOR_AN_UNKNOWN_REASON._SEE_DOCUMENTATION_FOR_A_WORKAROUND."></span> problema interno del <system error code> - compilatore. Il compilatore non può continuare per un motivo sconosciuto. Per una soluzione alternativa, vedere la documentazione.</dt> <dd> Il compilatore non è stato in grado di continuare e la causa dell'errore è sconosciuta. Il numero di errore esadecimale è un identificatore di errore di sistema. La compilazione potrebbe non essere riuscita a causa di un problema esterno, ad esempio una condizione di memoria insufficiente. In tal caso, è possibile trovare altre informazioni in Winerror.h o Ntstatus.h. <br/> Questo errore viene in genere generato in due situazioni:<br/>
 <ul>
-<li>Il compilatore MIDL non è riuscito a eseguire il ripristino dopo aver rilevato un errore nel file IDL. Se MIDL ha restituito messaggi di errore relativi al file IDL, provare a correggerli e a ricompilare. Se non sono presenti messaggi di errore, è possibile che il compilatore abbia avuto esito negativo prima che possa segnalare un errore. Cercare un errore di sintassi nella riga per cui viene segnalato l'errore interno del compilatore.</li>
-<li>Il compilatore MIDL non è stato in grado di generare codice corretto in un'opzione di ottimizzazione specificata. Provare a modificare le modalità del compilatore, a compilare l'ottimizzazione in modalità mista<a href="-os.md"><strong>(/Os)</strong></a>o a rimuovere tutte le ottimizzazioni. In caso contrario, ricompilare usando il flag /NO_FORMAT_OPT per eliminare l'ottimizzazione predefinita di MIDL dei descrittori di procedure e tipi.</li>
+<li>Il compilatore MIDL non è riuscito a eseguire il ripristino dopo aver rilevato un errore nel file IDL. Se MIDL ha restituito messaggi di errore relativi al file IDL, provare a correggerli e a ricompilare. Se non sono presenti messaggi di errore, è possibile che il compilatore abbia avuto esito negativo prima di poter segnalare un errore. Cercare un errore di sintassi nella riga per cui viene segnalato l'errore interno del compilatore.</li>
+<li>Il compilatore MIDL non è stato in grado di generare codice corretto con un'opzione di ottimizzazione specificata. Provare a modificare le modalità del compilatore, a compilare l'ottimizzazione in modalità mista<a href="-os.md"><strong>(/Os)</strong></a>o a rimuovere tutte le ottimizzazioni. In caso contrario, ricompilare usando il flag /NO_FORMAT_OPT per eliminare l'ottimizzazione predefinita di MIDL dei descrittori di procedure e tipi.</li>
 </ul>
-Occasionalmente questo errore si verifica anche quando il file IDL è corretto e non vengono usate opzioni di ottimizzazione. In questo caso, provare a riscrivere la sezione di codice nelle vicinanze della posizione in cui è stato segnalato l'errore rimuovendo eventuali modifiche recenti, semplificando o riorganizzare i tipi di dati, modificando i prototipi oppure iniziando a impostare come commento parti del file IDL per individuare il codice del problema.<br/> Se nessuna di queste opzioni funziona o se si pensa che il problema possa essere correlato a un bug in Midl.exe, inviare una notifica a Microsoft, fornendo tutti i dettagli pertinenti.<br/> </dd> </dl></td>
+In alcuni casi questo errore si verifica anche quando il file IDL è corretto e non vengono usate opzioni di ottimizzazione. In questo caso, provare a riscrivere la sezione di codice nelle vicinanze della posizione in cui è stato segnalato l'errore rimuovendo eventuali modifiche recenti, semplificando o ridisposizione dei tipi di dati, modificando i prototipi oppure iniziando a impostare come commento parti del file IDL per individuare il codice del problema.<br/> Se nessuna di queste opzioni funziona o se si pensa che il problema possa essere correlato a un bug in Midl.exe, inviare una notifica a Microsoft, fornendo tutti i dettagli pertinenti.<br/> </dd> </dl></td>
 </tr>
 </tbody>
 </table>

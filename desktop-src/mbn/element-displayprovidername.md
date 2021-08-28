@@ -7,20 +7,20 @@ MSHAttr:
 title: DisplayProviderName
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: b0b342353ba06cf911a3da97d48eea83ecc2faf7
-ms.sourcegitcommit: 9b5faa61c38b2d0c432b7f2dbee8c127b0e28a7e
+ms.openlocfilehash: 638f3222d99935dc758adcd4a1df1b1546ddb87a
+ms.sourcegitcommit: 61a4c522182aa1cacbf5669683d9570a3bf043b2
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/19/2021
-ms.locfileid: "122479937"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "122885476"
 ---
 # <a name="span-idwwan_profile_v2element_displayprovidernamespandisplayprovidername"></a><span id="WWAN_profile_v2.element_DisplayProviderName"></span>DisplayProviderName
 
-[**L'elemento DisplayProviderName**](element-displayprovidername.md) è un [**providerNameType facoltativo**](./schema-providernametype-simpletype.md) che contiene il nome della connessione di rete da visualizzare nel Windows Gestione connessioni. Questo nome verrà visualizzato solo se il sottoscrittore si trova in una rete domestica e non è in roaming. Il nome della rete mobile viene visualizzato in base alle informazioni del dispositivo mobile a banda larga.
+[**L'elemento DisplayProviderName**](element-displayprovidername.md) è un [**providerNameType**](./schema-providernametype-simpletype.md) facoltativo che contiene il nome della connessione di rete da visualizzare nel Windows Gestione connessioni. Questo nome verrà visualizzato solo se il sottoscrittore si trova in una rete domestica e non in roaming. Il nome della rete mobile viene visualizzato in base alle informazioni del dispositivo Mobile Broadband.
 
 ## <a name="element-hierarchy"></a>Gerarchia degli elementi
 
-**<DisplayProviderName>**
+**&lt;DisplayProviderName&gt;**
 
 ## <a name="syntax"></a>Sintassi
 

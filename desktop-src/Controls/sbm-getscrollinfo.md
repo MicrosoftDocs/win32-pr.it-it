@@ -1,9 +1,9 @@
 ---
-title: Messaggio SBM_GETSCROLLINFO (winuser. h)
-description: Il \_ messaggio GETSCROLLINFO SBM viene inviato per recuperare i parametri di una barra di scorrimento.
+title: SBM_GETSCROLLINFO messaggio (Winuser.h)
+description: Il messaggio SBM \_ GETSCROLLINFO viene inviato per recuperare i parametri di una barra di scorrimento.
 ms.assetid: 3b43430f-b55f-43ec-8558-baf5c953064f
 keywords:
-- Controlli di Windows Message SBM_GETSCROLLINFO
+- SBM_GETSCROLLINFO dei messaggi Windows controlli
 topic_type:
 - apiref
 api_name:
@@ -14,18 +14,18 @@ api_type:
 - HeaderDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: c4cb05b05ba2686d755c5fa34adcff0016433346
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: b5fde18fe30e9d944e547305094e7ea69e6745d4e1e112d8697367cd82833588
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "106302640"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119919471"
 ---
-# <a name="sbm_getscrollinfo-message"></a>\_Messaggio GETSCROLLINFO SBM
+# <a name="sbm_getscrollinfo-message"></a>Messaggio SBM \_ GETSCROLLINFO
 
-Il **messaggio \_ GETSCROLLINFO SBM** viene inviato per recuperare i parametri di una barra di scorrimento.
+Il **messaggio SBM \_ GETSCROLLINFO** viene inviato per recuperare i parametri di una barra di scorrimento.
 
-Le applicazioni non devono inviare direttamente questo messaggio. Devono invece usare la funzione [**GetScrollInfo**](/windows/desktop/api/Winuser/nf-winuser-getscrollinfo) . Una finestra riceve questo messaggio tramite la funzione [*WindowProc*](/previous-versions/windows/desktop/legacy/ms633573(v=vs.85)) . Le applicazioni che implementano un controllo barra di scorrimento personalizzato devono rispondere a questi messaggi affinché la funzione **GetScrollInfo** funzioni correttamente.
+Le applicazioni non devono inviare questo messaggio direttamente. In alternativa, devono usare la [**funzione GetScrollInfo.**](/windows/desktop/api/Winuser/nf-winuser-getscrollinfo) Una finestra riceve questo messaggio tramite la relativa [*funzione WindowProc.*](/previous-versions/windows/desktop/legacy/ms633573(v=vs.85)) Le applicazioni che implementano un controllo barra di scorrimento personalizzato devono rispondere a questi messaggi perché la **funzione GetScrollInfo** funzioni correttamente.
 
 ## <a name="parameters"></a>Parametri
 
@@ -41,19 +41,19 @@ Questo parametro non viene usato.
 *lParam* 
 </dt> <dd>
 
-Puntatore a una struttura [**ScrollInfo**](/windows/win32/api/winuser/ns-winuser-scrollinfo) . Prima di chiamare [**GetScrollInfo**](/windows/desktop/api/Winuser/nf-winuser-getscrollinfo), impostare il membro **cbSize** della struttura su **sizeof**(**ScrollInfo**) e impostare il membro **fmask** per specificare i parametri della barra di scorrimento da recuperare. Prima di restituire, il messaggio copia i parametri specificati nei membri appropriati della struttura.
+Puntatore a una [**struttura SCROLLINFO.**](/windows/win32/api/winuser/ns-winuser-scrollinfo) Prima di [**chiamare GetScrollInfo,**](/windows/desktop/api/Winuser/nf-winuser-getscrollinfo)impostare il membro **cbSize** della struttura su **sizeof**(**SCROLLINFO**) e impostare il membro **fMask** per specificare i parametri della barra di scorrimento da recuperare. Prima della restituzione, il messaggio copia i parametri specificati nei membri appropriati della struttura .
 
-Il membro **fmask** può essere costituito da uno o più dei valori seguenti.
+Il **membro fMask** può essere uno o più dei valori seguenti.
 
 
 
 | Valore                                                                                                                                                      | Significato                                                                             |
 |------------------------------------------------------------------------------------------------------------------------------------------------------------|-------------------------------------------------------------------------------------|
-| <span id="SIF_ALL"></span><span id="sif_all"></span><dl> <dt>**\_tutte le sfi**</dt> </dl>                | Combinazione della \_ pagina sif, SIF \_ pos, SIF \_ Range e SIF \_ TRACKPOS.<br/>       |
-| <span id="SIF_PAGE"></span><span id="sif_page"></span><dl> <dt>**\_pagina sif**</dt> </dl>             | Copia la pagina di scorrimento nel membro nPage.<br/>                              |
-| <span id="SIF_POS"></span><span id="sif_pos"></span><dl> <dt>**SIF \_ pos**</dt> </dl>                | Copia la posizione di scorrimento nel membro nPos. <br/>                          |
-| <span id="SIF_RANGE"></span><span id="sif_range"></span><dl> <dt>**\_intervallo sif**</dt> </dl>          | Copia l'intervallo di scorrimento nei membri nMin e nMax. <br/>                   |
-| <span id="SIF_TRACKPOS"></span><span id="sif_trackpos"></span><dl> <dt>**\_TRACKPOS sif**</dt> </dl> | Copia la posizione di rilevamento della casella di scorrimento corrente nel membro nTrackPos.<br/> |
+| <span id="SIF_ALL"></span><span id="sif_all"></span><dl> <dt>**SIF \_ ALL**</dt> </dl>                | Combinazione di SIF \_ PAGE, SIF \_ POS, SIF \_ RANGE e SIF \_ TRACKPOS.<br/>       |
+| <span id="SIF_PAGE"></span><span id="sif_page"></span><dl> <dt>**PAGINA \_ SIF**</dt> </dl>             | Copia la pagina di scorrimento nel membro nPage.<br/>                              |
+| <span id="SIF_POS"></span><span id="sif_pos"></span><dl> <dt>**SIF \_ POS**</dt> </dl>                | Copia la posizione di scorrimento nel membro nPos. <br/>                          |
+| <span id="SIF_RANGE"></span><span id="sif_range"></span><dl> <dt>**INTERVALLO \_ SIF**</dt> </dl>          | Copia l'intervallo di scorrimento nei membri nMin e nMax. <br/>                   |
+| <span id="SIF_TRACKPOS"></span><span id="sif_trackpos"></span><dl> <dt>**SIF \_ TRACKPOS**</dt> </dl> | Copia la posizione di rilevamento della casella di scorrimento corrente nel membro nTrackPos.<br/> |
 
 
 
@@ -63,13 +63,13 @@ Il membro **fmask** può essere costituito da uno o più dei valori seguenti.
 
 ## <a name="return-value"></a>Valore restituito
 
-Se il messaggio recupera tutti i valori, il valore restituito è **true**; in caso contrario, è **false**.
+Se il messaggio ha recuperato valori, il valore restituito è **TRUE.** in caso contrario, è **FALSE.**
 
 ## <a name="remarks"></a>Commenti
 
-I messaggi che indicano la posizione della barra di scorrimento, [**WM \_ HSCROLL**](wm-hscroll.md) e [**WM \_ VSCROLL**](wm-vscroll.md), forniscono solo 16 bit di dati sulla posizione. Tuttavia, la struttura [**ScrollInfo**](/windows/win32/api/winuser/ns-winuser-scrollinfo) usata da **SBM \_ GETSCROLLINFO**, [**SBM \_ SETSCROLLINFO**](sbm-setscrollinfo.md), [**GETSCROLLINFO**](/windows/desktop/api/Winuser/nf-winuser-getscrollinfo)e [**SETSCROLLINFO**](/windows/desktop/api/Winuser/nf-winuser-setscrollinfo) fornisce 32 bit dei dati relativi alla posizione della barra di scorrimento. È possibile usare questi messaggi e funzioni durante l'elaborazione dei messaggi **WM \_ HSCROLL** o **WM \_ VSCROLL** per ottenere i dati relativi alla posizione della barra di scorrimento a 32 bit.
+I messaggi che indicano la posizione della barra di scorrimento, [**WM \_ HSCROLL**](wm-hscroll.md) e [**WM \_ VSCROLL,**](wm-vscroll.md)forniscono solo 16 bit di dati di posizione. Tuttavia, la struttura [**SCROLLINFO**](/windows/win32/api/winuser/ns-winuser-scrollinfo) usata da **SBM \_ GETSCROLLINFO,** [**SBM \_ SETSCROLLINFO,**](sbm-setscrollinfo.md) [**GetScrollInfo**](/windows/desktop/api/Winuser/nf-winuser-getscrollinfo)e [**SetScrollInfo**](/windows/desktop/api/Winuser/nf-winuser-setscrollinfo) fornisce 32 bit di dati sulla posizione della barra di scorrimento. È possibile usare questi messaggi e funzioni durante l'elaborazione dei messaggi **WM \_ HSCROLL** o **WM \_ VSCROLL** per ottenere dati sulla posizione della barra di scorrimento a 32 bit.
 
-Per ottenere la posizione a 32 bit della casella di scorrimento (Thumb) durante un \_ codice di richiesta SB THUMBTRACK in un messaggio [**WM \_ HSCROLL**](wm-hscroll.md) o [**WM \_ VSCROLL**](wm-vscroll.md) , inviare **SBM \_ GETSCROLLINFO** con il \_ valore sif TRACKPOS nel membro **fmask** della struttura [**ScrollInfo**](/windows/win32/api/winuser/ns-winuser-scrollinfo) . Il messaggio restituisce la posizione di rilevamento della casella di scorrimento nel membro **nTrackPos** della struttura **ScrollInfo** . Questo consente di ottenere la posizione della casella di scorrimento quando l'utente lo sposta. In alternativa, è possibile usare la funzione [**GetScrollInfo**](/windows/desktop/api/Winuser/nf-winuser-getscrollinfo) per ottenere le stesse informazioni.
+Per ottenere la posizione a 32 bit della casella di scorrimento (thumb) durante un codice di richiesta SB THUMBTRACK in un messaggio \_ [**WM \_ HSCROLL**](wm-hscroll.md) o [**WM \_ VSCROLL,**](wm-vscroll.md) inviare **SBM \_ GETSCROLLINFO** con il valore SIF TRACKPOS nel membro \_ **fMask** della struttura [**SCROLLINFO.**](/windows/win32/api/winuser/ns-winuser-scrollinfo) Il messaggio restituisce la posizione di rilevamento della casella di scorrimento nel **membro nTrackPos** della **struttura SCROLLINFO.** In questo modo è possibile ottenere la posizione della casella di scorrimento quando l'utente la sposta. In alternativa, è possibile usare la [**funzione GetScrollInfo**](/windows/desktop/api/Winuser/nf-winuser-getscrollinfo) per ottenere le stesse informazioni.
 
 ## <a name="requirements"></a>Requisiti
 
@@ -77,9 +77,9 @@ Per ottenere la posizione a 32 bit della casella di scorrimento (Thumb) durante 
 
 | Requisito | Valore |
 |-------------------------------------|----------------------------------------------------------------------------------------------------------|
-| Client minimo supportato<br/> | \[Solo app desktop di Windows Vista\]<br/>                                                           |
-| Server minimo supportato<br/> | \[Solo app desktop Windows Server 2003\]<br/>                                                     |
-| Intestazione<br/>                   | <dl> <dt>Winuser. h (include Windows. h)</dt> </dl> |
+| Client minimo supportato<br/> | Windows Solo \[ app desktop di Vista\]<br/>                                                           |
+| Server minimo supportato<br/> | Windows Solo app desktop server 2003 \[\]<br/>                                                     |
+| Intestazione<br/>                   | <dl> <dt>Winuser.h (includere Windows.h)</dt> </dl> |
 
 
 
@@ -93,7 +93,7 @@ Per ottenere la posizione a 32 bit della casella di scorrimento (Thumb) durante 
 [**GetScrollInfo**](/windows/desktop/api/Winuser/nf-winuser-getscrollinfo)
 </dt> <dt>
 
-[**\_SETSCROLLINFO SBM**](sbm-setscrollinfo.md)
+[**SBM \_ SETSCROLLINFO**](sbm-setscrollinfo.md)
 </dt> <dt>
 
 [**SCROLLINFO**](/windows/win32/api/winuser/ns-winuser-scrollinfo)

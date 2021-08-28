@@ -1,5 +1,5 @@
 ---
-description: La classe CIM MemoryCheck specifica una condizione per la quantità minima di memoria che \_ deve essere disponibile in un sistema.
+description: La classe CIM MemoryCheck specifica una condizione per la quantità minima di \_ memoria che deve essere disponibile in un sistema.
 ms.assetid: a7d22f31-a285-41c4-b069-47c54865ddf5
 ms.tgt_platform: multiple
 title: CIM_MemoryCheck classe
@@ -24,19 +24,19 @@ api_type:
 - DllExport
 api_location:
 - CIMWin32.dll
-ms.openlocfilehash: 1f867f82ad96cb639e0fbe54955647989876b3a61be4792901ecb47b43b72deb
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 558475078ab28dfdc455bb03d2586348d14fa235
+ms.sourcegitcommit: 61a4c522182aa1cacbf5669683d9570a3bf043b2
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119921471"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "122884654"
 ---
-# <a name="cim_memorycheck-class"></a>Classe CIM \_ MemoryCheck
+# <a name="cim_memorycheck-class"></a>Classe CiM \_ MemoryCheck
 
-La **classe CIM \_ MemoryCheck** specifica una condizione per la quantità minima di memoria che deve essere disponibile in un sistema. La quantità è specificata nella **proprietà MemorySize.** I dettagli dei controlli vengono confrontati con il valore della proprietà **FreePhysicalMemory** dell'oggetto [**CIM \_ OperatingSystem**](cim-operatingsystem.md) a cui fa riferimento un'associazione [**CIM \_ InstalledOS**](cim-installedos.md) per l'oggetto [**CIM \_ ComputerSystem**](cim-computersystem.md) che descrive l'ambiente. Quando il valore della **proprietà FreePhysicalMemory** è maggiore o uguale al valore specificato in **MemorySize,** la condizione viene soddisfatta.
+La **classe CIM \_ MemoryCheck** specifica una condizione per la quantità minima di memoria che deve essere disponibile in un sistema. La quantità viene specificata nella **proprietà MemorySize.** I dettagli dei controlli vengono confrontati con il valore della proprietà **FreePhysicalMemory** dell'oggetto [**CIM \_ OperatingSystem**](cim-operatingsystem.md) a cui fa riferimento un'associazione [**CIM \_ InstalledOS**](cim-installedos.md) per l'oggetto [**\_ CiM ComputerSystem**](cim-computersystem.md) che descrive l'ambiente. Quando il valore della **proprietà FreePhysicalMemory** è maggiore o uguale al valore specificato in **MemorySize,** la condizione viene soddisfatta.
 
 > [!IMPORTANT]
-> Le classi CIM (Distributed Management Task Force) DMTF (Common Information Model Distributed Management Task Force) sono le classi padre su cui vengono compilate le classi WMI. WMI attualmente supporta solo gli schemi [della versione CIM 2.x](https://dmtf.org/standards/cim/schemas).
+> Le classi CIM (Distributed Management Task Force) DMTF (Distributed Management Task Force) Common Information Model sono le classi padre su cui vengono compilate le classi WMI. WMI supporta attualmente solo gli [schemi della versione CIM 2.x](https://dmtf.org/standards/cim/schemas).
 
  
 
@@ -63,20 +63,20 @@ class CIM_MemoryCheck : CIM_Check
 
 ## <a name="members"></a>Members
 
-La **classe CIM \_ MemoryCheck** ha questi tipi di membri:
+La **classe CiM \_ MemoryCheck** ha questi tipi di membri:
 
 -   [Metodi](#methods)
 -   [Proprietà](#properties)
 
 ### <a name="methods"></a>Metodi
 
-La **classe CIM \_ MemoryCheck** include questi metodi.
+La **classe CiM \_ MemoryCheck** include questi metodi.
 
 
 
 | Metodo                                                   | Descrizione                                                   |
 |:---------------------------------------------------------|:--------------------------------------------------------------|
-| [**evocare**](invoke-method-in-class-cim-memorycheck.md) | Consente di eseguire un'azione specifica. Non implementato da WMI.<br/> |
+| [**Evocare**](invoke-method-in-class-cim-memorycheck.md) | Consente di eseguire un'azione specifica. Non implementato da WMI.<br/> |
 
 
 
@@ -91,7 +91,7 @@ La **classe CIM \_ MemoryCheck** ha queste proprietà.
 **Didascalia**
 </dt> <dd> <dl> <dt>
 
-Tipo di dati: **stringa**
+Tipo di dati: **string**
 </dt> <dt>
 
 Tipo di accesso: sola lettura
@@ -102,25 +102,25 @@ Qualificatori: [**Maxlen**](/windows/desktop/WmiSdk/standard-qualifiers) (64)
 
 Breve descrizione testuale dell'oggetto.
 
-Questa proprietà viene ereditata da [**CIM \_ Check**](cim-check.md).
+Questa proprietà viene ereditata dal [**controllo CIM \_**](cim-check.md).
 
 </dd> <dt>
 
 **CheckID**
 </dt> <dd> <dl> <dt>
 
-Tipo di dati: **stringa**
+Tipo di dati: **string**
 </dt> <dt>
 
 Tipo di accesso: sola lettura
 </dt> <dt>
 
-Qualificatori: [**key**](/windows/desktop/WmiSdk/key-qualifier), [**maxlen**](/windows/desktop/WmiSdk/standard-qualifiers) (256)
+Qualificatori: [**key,**](/windows/desktop/WmiSdk/key-qualifier) [**maxlen**](/windows/desktop/WmiSdk/standard-qualifiers) (256)
 </dt> </dl>
 
 Identificatore utilizzato insieme ad altre chiavi per identificare in modo univoco il controllo.
 
-Questa proprietà viene ereditata da [**CIM \_ Check**](cim-check.md).
+Questa proprietà viene ereditata dal [**controllo CIM \_**](cim-check.md).
 
 </dd> <dt>
 
@@ -133,18 +133,18 @@ Tipo di dati: **booleano**
 Tipo di accesso: sola lettura
 </dt> </dl>
 
-Se **TRUE,** è previsto che la condizione esista nell'ambiente. Ad esempio, è previsto che un file si trova in un sistema, quindi il [**metodo Invoke**](invoke-method-in-class-cim-check.md) deve restituire **TRUE.**
+Se **TRUE,** si prevede che la condizione esista nell'ambiente. Ad esempio, si prevede che un file si trova in un sistema, quindi il [**metodo Invoke**](invoke-method-in-class-cim-check.md) deve restituire **TRUE.**
 
-Se **FALSE,** non è previsto che la condizione esista. Ad esempio, un file non si trova in un sistema, quindi il [**metodo Invoke**](invoke-method-in-class-cim-check.md) deve restituire **FALSE.**
+Se **FALSE,** la condizione non deve esistere. Ad esempio, un file non si trova in un sistema, quindi il [**metodo Invoke**](invoke-method-in-class-cim-check.md) deve restituire **FALSE.**
 
-Questa proprietà viene ereditata da [**CIM \_ Check**](cim-check.md).
+Questa proprietà viene ereditata dal [**controllo CIM \_**](cim-check.md).
 
 </dd> <dt>
 
 **Descrizione**
 </dt> <dd> <dl> <dt>
 
-Tipo di dati: **stringa**
+Tipo di dati: **string**
 </dt> <dt>
 
 Tipo di accesso: sola lettura
@@ -152,7 +152,7 @@ Tipo di accesso: sola lettura
 
 Descrizione degli oggetti .
 
-Questa proprietà viene ereditata da [**CIM \_ Check**](cim-check.md).
+Questa proprietà viene ereditata dal [**controllo CIM \_**](cim-check.md).
 
 </dd> <dt>
 
@@ -168,16 +168,16 @@ Tipo di accesso: sola lettura
 Qualificatori: [**ModelCorrespondence**](/windows/desktop/WmiSdk/standard-qualifiers) ("[**CIM \_ OperatingSystem**](cim-operatingsystem.md).**FreePhysicalMemory**"), [**unità**](/windows/desktop/WmiSdk/standard-qualifiers) ("kilobyte")
 </dt> </dl>
 
-Quantità di memoria che deve esistere in un sistema informatico per un elemento software per l'esecuzione corretta.
+Quantità di memoria che deve esistere in un computer perché un elemento software venga eseguito correttamente.
 
-Per altre informazioni sull'uso **dei valori uint64** negli script, vedere [Scripting in WMI](/windows/desktop/WmiSdk/creating-a-wmi-script).
+Per altre informazioni sull'uso **dei valori uint64** negli script, vedere [Scripting in WMI.](/windows/desktop/WmiSdk/creating-a-wmi-script)
 
 </dd> <dt>
 
 **Nome**
 </dt> <dd> <dl> <dt>
 
-Tipo di dati: **stringa**
+Tipo di dati: **string**
 </dt> <dt>
 
 Tipo di accesso: sola lettura
@@ -188,25 +188,25 @@ Qualificatori: [**propagati**](/windows/desktop/WmiSdk/standard-qualifiers) ("[*
 
 Nome usato per identificare l'elemento software
 
-Questa proprietà viene ereditata da [**CIM \_ Check**](cim-check.md).
+Questa proprietà viene ereditata dal [**controllo CIM \_**](cim-check.md).
 
 </dd> <dt>
 
 **SoftwareElementID**
 </dt> <dd> <dl> <dt>
 
-Tipo di dati: **stringa**
+Tipo di dati: **string**
 </dt> <dt>
 
 Tipo di accesso: sola lettura
 </dt> <dt>
 
-Qualificatori: [**propagati**](/windows/desktop/WmiSdk/standard-qualifiers) ("[**CIM \_ SoftwareElement**](cim-softwareelement.md).**SoftwareElementID**"), [**chiave \_ CIM,**](/windows/desktop/WmiSdk/standard-wmi-qualifiers) [**maxlen**](/windows/desktop/WmiSdk/standard-qualifiers) (256)
+Qualificatori: [**propagati**](/windows/desktop/WmiSdk/standard-qualifiers) ("[**CIM \_ SoftwareElement**](cim-softwareelement.md).**SoftwareElementID**"), [**chiave CIM \_**](/windows/desktop/WmiSdk/standard-wmi-qualifiers), [**maxlen**](/windows/desktop/WmiSdk/standard-qualifiers) (256)
 </dt> </dl>
 
 Si tratta di un identificatore per questo elemento software.
 
-Questa proprietà viene ereditata da [**CIM \_ Check**](cim-check.md).
+Questa proprietà viene ereditata dal [**controllo CIM \_**](cim-check.md).
 
 </dd> <dt>
 
@@ -224,7 +224,7 @@ Qualificatori: [**propagati**](/windows/desktop/WmiSdk/standard-qualifiers) ("[*
 
 Stato dell'elemento software di un elemento software.
 
-Questa proprietà viene ereditata da [**CIM \_ Check**](cim-check.md).
+Questa proprietà viene ereditata dal [**controllo CIM \_**](cim-check.md).
 
 <dt>
 
@@ -235,7 +235,7 @@ Questa proprietà viene ereditata da [**CIM \_ Check**](cim-check.md).
 
 </dt> <dd>
 
-Descrive i dettagli necessari per la corretta distribuzione e i dettagli (condizioni e azioni) necessari per creare un elemento software nello stato installabile, ovvero lo stato successivo.
+Descrive i dettagli necessari per la corretta distribuzione e i dettagli (condizioni e azioni) necessari per creare un elemento software nello stato installabile ,ovvero lo stato successivo.
 
 </dd> <dt>
 
@@ -246,7 +246,7 @@ Descrive i dettagli necessari per la corretta distribuzione e i dettagli (condiz
 
 </dt> <dd>
 
-Descrive i dettagli necessari per una corretta installazione e i dettagli (condizioni e azioni) necessari per creare un elemento software nello stato eseguibile, ovvero lo stato successivo.
+Descrive i dettagli necessari per una corretta installazione e i dettagli (condizioni e azioni) necessari per creare un elemento software nello stato eseguibile (ovvero lo stato successivo).
 
 </dd> <dt>
 
@@ -257,7 +257,7 @@ Descrive i dettagli necessari per una corretta installazione e i dettagli (condi
 
 </dt> <dd>
 
-Descrive i dettagli necessari per l'esecuzione corretta e i dettagli (condizioni e azioni) necessari per creare un elemento software nello stato in esecuzione, ovvero lo stato successivo.
+Descrive i dettagli necessari per l'esecuzione corretta e i dettagli (condizioni e azioni) necessari per creare un elemento software nello stato di esecuzione ,ovvero lo stato successivo.
 
 </dd> <dt>
 
@@ -288,7 +288,7 @@ Qualificatori: [**propagati**](/windows/desktop/WmiSdk/standard-qualifiers) ("[*
 
 Sistema operativo di destinazione dell'elemento software.
 
-Questa proprietà viene ereditata da [**CIM \_ Check**](cim-check.md).
+Questa proprietà viene ereditata dal [**controllo CIM \_**](cim-check.md).
 
 <dt>
 
@@ -406,7 +406,7 @@ HP-UX
 
 </dt> <dd>
 
-Macchina virtuale Microsoft (VM) per Java
+Microsoft Virtual Machine (VM) per Java
 
 </dd> <dt>
 
@@ -646,7 +646,7 @@ BS2000/OSD
 
 </dt> <dd>
 
-BSD UNIX
+UNIX BSD
 
 </dd> <dt>
 
@@ -673,7 +673,7 @@ BSD UNIX
 
 <span id="OS9"></span><span id="os9"></span>
 
-<span id="OS9"></span><span id="os9"></span>**Sistema operativo 9** (45)
+<span id="OS9"></span><span id="os9"></span>**OS9** (45)
 
 
 </dt> <dd>
@@ -691,7 +691,7 @@ Mac OS 9
 
 <span id="Inferno"></span><span id="inferno"></span><span id="INFERNO"></span>
 
-<span id="Inferno"></span><span id="inferno"></span><span id="INFERNO"></span>**Insinale** (47)
+<span id="Inferno"></span><span id="inferno"></span><span id="INFERNO"></span>**Ilva** (47)
 
 
 </dt> <dd></dd> <dt>
@@ -803,23 +803,23 @@ Sistema operativo Palm
 **Version**
 </dt> <dd> <dl> <dt>
 
-Tipo di dati: **stringa**
+Tipo di dati: **string**
 </dt> <dt>
 
 Tipo di accesso: sola lettura
 </dt> <dt>
 
-Qualificatori: [**propagati**](/windows/desktop/WmiSdk/standard-qualifiers) ("[**CIM \_ SoftwareElement**](cim-softwareelement.md).**Version**"), [**CIM \_ key,**](/windows/desktop/WmiSdk/standard-wmi-qualifiers) [**Maxlen**](/windows/desktop/WmiSdk/standard-qualifiers) (64), [**Mappingstrings**](/windows/desktop/WmiSdk/standard-qualifiers) ("MIF. DMTF \| ComponentID \| 001.3")
+Qualificatori: [**propagati**](/windows/desktop/WmiSdk/standard-qualifiers) ("[**CIM \_ SoftwareElement**](cim-softwareelement.md).**Versione**"), [**chiave CIM, \_**](/windows/desktop/WmiSdk/standard-wmi-qualifiers) [**Maxlen**](/windows/desktop/WmiSdk/standard-qualifiers) (64), [**Mappingstrings**](/windows/desktop/WmiSdk/standard-qualifiers) ("MIF. DMTF \| ComponentID \| 001.3")
 </dt> </dl>
 
 Versione dell'operazione.
 
 La versione dell'operazione deve essere in uno dei formati seguenti:
 
--   <major>.<minor>.<revision>
--   <major>.<minor><letter><revision>
+-   &lt;oggetto &gt; principale. &lt; &gt;secondario. &lt; Revisione&gt;
+-   &lt;oggetto &gt; principale. &lt; revisione &gt; &lt; lettera &gt; &lt; secondaria&gt;
 
-Questa proprietà viene ereditata da [**CIM \_ Check**](cim-check.md).
+Questa proprietà viene ereditata dal [**controllo CIM \_**](cim-check.md).
 
 </dd> </dl>
 
@@ -829,7 +829,7 @@ WMI non implementa questa classe.
 
 La **classe CIM \_ MemoryCheck** viene ereditata da [**CIM \_ Check**](cim-check.md).
 
-Questa documentazione è derivata dalle descrizioni della classe CIM pubblicate da DMTF. Microsoft potrebbe aver apportato modifiche per correggere gli errori minori, essere conforme agli standard della documentazione di Microsoft SDK o fornire altre informazioni.
+Questa documentazione è derivata dalle descrizioni della classe CIM pubblicate da DMTF. Microsoft potrebbe aver apportato modifiche per correggere errori secondari, essere conforme agli standard della documentazione di Microsoft SDK o fornire altre informazioni.
 
 ## <a name="requirements"></a>Requisiti
 

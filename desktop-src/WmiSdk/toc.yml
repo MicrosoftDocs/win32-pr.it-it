@@ -475,7 +475,7 @@
                     - name: Creazione di un'istanza
                       href: creating-an-instance.md
                       items:
-                        - name: Creazione e dichiarazione di un'istanza con C++
+                        - name: Creazione e dichiarazione di un'istanza tramite C++
                           href: creating-and-declaring-an-instance-using-c-.md
                         - name: Creazione di un'istanza tramite MOF
                           href: creating-an-instance-using-mof.md
@@ -527,7 +527,7 @@
                       href: implementing-the-primary-interface-for-an-instance-provider.md
                     - name: Miglioramento dell'efficienza di un provider di istanze
                       href: improving-the-efficiency-of-an-instance-provider.md
-                    - name: Supporto di Partial-Instance operazioni
+                    - name: Supporto delle Partial-Instance di distribuzione
                       href: supporting-partial-instance-operations.md
                 - name: Scrittura di un provider di metodi
                   href: writing-a-method-provider.md
@@ -641,7 +641,7 @@
                   href: setting-the-authentication-service-using-vbscript.md
                 - name: Impostazione della sicurezza in una chiamata asincrona in VBScript
                   href: setting-security-on-an-asynchronous-call-in-vbscript.md
-                - name: Esecuzione di operazioni con privilegi tramite VBScript
+                - name: Esecuzione di operazioni con privilegi con VBScript
                   href: executing-privileged-operations-using-vbscript.md
                 - name: Configurazione di IIS 5 e versioni successive per lo scripting ASP WMI
                   href: configuring-iis-5-for-wmi-asp-scripting.md
@@ -705,7 +705,7 @@
               href: troubleshooting-wmi-client-applications.md
             - name: Traccia dell'attività WMI
               href: tracing-wmi-activity.md
-            - name: Provider di debug
+            - name: Debug di provider
               href: debugging-providers.md
             - name: Classi di configurazione e risoluzione dei problemi del provider
               href: provider-configuration-and-troubleshooting-classes.md
@@ -869,12 +869,12 @@
               items:
                 - name: Classi di provider di criteri
                   href: policy-provider-classes.md
-                - name: Classi wmi per la risoluzione dei problemi
+                - name: Classi per la risoluzione dei problemi WMI
                   href: wmi-troubleshooting-classes.md
                   items:
-                    - name: Classi di risoluzione dei problemi relativi agli eventi del provider
+                    - name: Classi di risoluzione dei problemi degli eventi del provider
                       href: provider-event-troubleshooting-classes.md
-                    - name: Classi per la risoluzione dei problemi di ConsumerProvider
+                    - name: Classi consumerprovider per la risoluzione dei problemi
                       href: consumerprovider-troubleshooting-classes.md
                     - name: Classi di risoluzione dei problemi degli eventi del servizio WMI
                       href: wmi-service-event-troubleshooting-classes.md
@@ -925,6 +925,14 @@
               href: wmiperfclass-provider.md
             - name: WmiPerfInst Provider
               href: wmiperfinst-provider.md
+            - name: Classi di inventario delle applicazioni
+              href: applicationanddeviceinventory-portal.md
+            - name: Win32_InstalledWin32Program classe
+              href: win32-installedwin32program.md
+            - name: Win32_InstalledStoreProgram classe
+              href: win32-installedstoreprogram.md
+            - name: Win32_InstalledProgramFramework classe
+              href: win32-installedprogramframework.md
         - name: Classi C++ del framework del provider WMI
           href: wmi-c-classes.md
           items:
@@ -1306,21 +1314,21 @@
                           href: /previous-versions/windows/desktop/legacy/aa385641(v=vs.85)
                         - name: 'Metodo operator==(constCHString&, constLPCWSTR&)'
                           href: /previous-versions/windows/desktop/legacy/aa385645(v=vs.85)
-                        - name: 'Metodo operator>(constCHString&, constCHString&)'
+                        - name: 'Metodo>(constCHString&, constCHString&)'
                           href: /previous-versions/windows/desktop/legacy/aa385665(v=vs.85)
                         - name: 'Metodo>(constCHString&, constLPCWSTR&)'
                           href: /previous-versions/windows/desktop/legacy/aa385672(v=vs.85)
                         - name: 'Metodo operator>=(constCHString&, constCHString&)'
                           href: /previous-versions/windows/desktop/legacy/aa385652(v=vs.85)
-                        - name: 'Operatore>metodo =(constCHString&, constLPCWSTR&)'
+                        - name: 'Metodo>operatore =(constCHString&, constLPCWSTR&)'
                           href: /previous-versions/windows/desktop/legacy/aa385661(v=vs.85)
-                        - name: 'Metodo operator<(constCHString&, constCHString&)'
+                        - name: 'Metodo<(constCHString&, constCHString&)'
                           href: /previous-versions/windows/desktop/legacy/aa385689(v=vs.85)
                         - name: 'Metodo<(constCHString&, constLPCWSTR&)'
                           href: /previous-versions/windows/desktop/legacy/aa385695(v=vs.85)
                         - name: 'Metodo operator<=(constCHString&, constCHString&)'
                           href: /previous-versions/windows/desktop/legacy/aa385676(v=vs.85)
-                        - name: 'Operatore<metodo =(constCHString&, constLPCWSTR&)'
+                        - name: 'Metodo<operatore =(constCHString&, constLPCWSTR&)'
                           href: /previous-versions/windows/desktop/legacy/aa385683(v=vs.85)
                         - name: 'Metodo operator!=(constCHString&, constCHString&)'
                           href: /previous-versions/windows/desktop/legacy/aa385704(v=vs.85)
@@ -1418,7 +1426,7 @@
                 - name: MethodContext
                   href: /windows/desktop/api/MethodCo/nl-methodco-methodcontext
                   items:
-                    - name: Metodi di MethodContext
+                    - name: Metodi MethodContext
                       href: methodcontext-methods.md
                       items:
                         - name: Metodo GetStatusObject
@@ -1435,7 +1443,7 @@
                           href: /windows/desktop/api/RefPtrCo/nf-refptrco-trefpointercollection-add
                         - name: Metodo BeginEnum
                           href: /windows/desktop/api/RefPtrCo/nf-refptrco-trefpointercollection-beginenum
-                        - name: Metodo empty
+                        - name: Metodo vuoto
                           href: /windows/desktop/api/RefPtrCo/nf-refptrco-trefpointercollection-empty
                         - name: Metodo EndEnum
                           href: /windows/desktop/api/RefPtrCo/nf-refptrco-trefpointercollection-endenum
@@ -1482,7 +1490,7 @@
                           href: /windows/desktop/api/WbemTime/nf-wbemtime-wbemtime-gettime_t
                         - name: Metodo IsOk
                           href: /windows/desktop/api/WbemTime/nf-wbemtime-wbemtime-isok
-                        - name: operatori - operatori
+                        - name: Operatori operator-
                           href: wbemtime--operator-minus.md
                           items:
                             - name: Metodo operator-(constWBEMTime&)
@@ -1491,15 +1499,15 @@
                               href: /windows/win32/api/wbemtime/nf-wbemtime-wbemtime-operator-sub(constwbemtimespan_)
                         - name: 'Metodo WBEMTime::operator !='
                           href: /windows/win32/api/wbemtime/nf-wbemtime-wbemtime-operator-not-equal-to
-                        - name: 'Metodo di < WBEMTime::operator'
+                        - name: 'Metodo < WBEMTime::operator'
                           href: /windows/desktop/api/wbemtime/nf-wbemtime-wbemtime-operator-less-than
-                        - name: 'Metodo WBEMTime::operator <='
+                        - name: 'WBEMTime::operator <= metodo'
                           href: /windows/desktop/api/wbemtime/nf-wbemtime-wbemtime-operator-less-than-equal-to
                         - name: 'Metodo WBEMTime::operator =='
                           href: /windows/win32/api/wbemtime/nf-wbemtime-wbemtime-operator-equal-equal-to
-                        - name: 'Metodo di > WBEMTime::operator'
+                        - name: 'Metodo > WBEMTime::operator'
                           href: /windows/win32/api/wbemtime/nf-wbemtime-wbemtime-operator-greater-than
-                        - name: 'Metodo WBEMTime::operator >='
+                        - name: 'WBEMTime::operator >= metodo'
                           href: /windows/win32/api/wbemtime/nf-wbemtime-wbemtime-operator-greater-than-equal-to
                         - name: Metodo operator+
                           href: /windows/win32/api/wbemtime/nf-wbemtime-wbemtime-operator-add
@@ -1543,14 +1551,14 @@
                     - name: Metodi WBEMTimeSpan
                       href: wbemtimespan-methods.md
                       items:
-                        - name: Costruttori di WbemTimeSpan
+                        - name: Costruttori WbemTimeSpan
                           href: wbemtimespan-wbemtimespan.md
                           items:
                             - name: Costruttore WBEMTimeSpan()
                               href: /windows/desktop/api/wbemtime/nf-wbemtime-wbemtimespan-wbemtimespan(constbstr)
                             - name: Costruttore WBEMTimeSpan(BSTR)
                               href: /windows/desktop/api/wbemtime/nf-wbemtime-wbemtimespan-wbemtimespan(constbstr)
-                            - name: 'Costruttore WBEMTimeSpan(int, int, int, int, int, int)'
+                            - name: 'Costruttore WBEMTimeSpan(int, int, int, int, int, int, int)'
                               href: /windows/desktop/api/wbemtime/nf-wbemtime-wbemtimespan-wbemtimespan(int_int_int_int_int_int_int)
                         - name: Clear (metodo)
                           href: /windows/desktop/api/WbemTime/nf-wbemtime-wbemtimespan-clear
@@ -1574,13 +1582,13 @@
                           href: /windows/win32/api/wbemtime/nf-wbemtime-wbemtimespan-operator-equal-equal-to
                         - name: Metodo operator !=
                           href: /windows/win32/api/wbemtime/nf-wbemtime-wbemtimespan-operator-not-equal-to
-                        - name: Operatore > metodo
+                        - name: Metodo di > operatore
                           href: /windows/win32/api/wbemtime/nf-wbemtime-wbemtimespan-operator-greater-than
-                        - name: Operatore >= metodo
+                        - name: operator >= metodo
                           href: /windows/win32/api/wbemtime/nf-wbemtime-wbemtimespan-operator-greater-than-equal-to
-                        - name: Operatore < metodo
+                        - name: Metodo di < operatore
                           href: /windows/desktop/api/wbemtime/nf-wbemtime-wbemtimespan-operator-less-than
-                        - name: Operatore <= metodo
+                        - name: operator <= metodo
                           href: /windows/desktop/api/wbemtime/nf-wbemtime-wbemtimespan-operator-less-than-equal-to
         - name: API COM per WMI
           href: com-api-for-wmi.md
@@ -1590,7 +1598,7 @@
             - name: IEnumWbemClassObject
               href: /windows/desktop/api/Wbemcli/nn-wbemcli-ienumwbemclassobject
               items:
-                - name: Metodi IEnumWbemClassObject
+                - name: Metodi di IEnumWbemClassObject
                   href: ienumwbemclassobject-methods.md
                   items:
                     - name: Clone (metodo)
@@ -1606,7 +1614,7 @@
             - name: IMofCompiler
               href: /windows/desktop/api/Wbemcli/nn-wbemcli-imofcompiler
               items:
-                - name: Metodi IMofCompiler
+                - name: Metodi di IMofCompiler
                   href: imofcompiler-methods.md
                   items:
                     - name: Metodo CompileBuffer
@@ -1664,14 +1672,14 @@
             - name: IWbemCausalityAccess
               href: iwbemcausalityaccess.md
               items:
-                - name: Metodi IWbemCausalityAccess
+                - name: Metodi di IWbemCausalityAccess
                   href: iwbemcausalityaccess-methods.md
                   items:
                     - name: Metodo GetRequestId
                       href: iwbemcausalityaccess-getrequestid.md
                     - name: Metodo IsChildOf
                       href: iwbemcausalityaccess-ischildof.md
-            - name: Oggetto IWbemClassObject
+            - name: IWbemClassObject
               href: /windows/desktop/api/WbemCli/nn-wbemcli-iwbemclassobject
               items:
                 - name: Metodi di IWbemClassObject
@@ -1741,10 +1749,10 @@
                       href: /windows/desktop/api/Wbemcli/nf-wbemcli-iwbemconfigurerefresher-addrefresher
                     - name: Remove (metodo)
                       href: /windows/desktop/api/Wbemcli/nf-wbemcli-iwbemconfigurerefresher-remove
-            - name: Oggetto IWbemContext
+            - name: IWbemContext
               href: /windows/desktop/api/WbemCli/nn-wbemcli-iwbemcontext
               items:
-                - name: Metodi IWbemContext
+                - name: Metodi di IWbemContext
                   href: iwbemcontext-methods.md
                   items:
                     - name: Metodo BeginEnumeration
@@ -1870,7 +1878,7 @@
             - name: IWbemLocator
               href: /windows/desktop/api/Wbemcli/nn-wbemcli-iwbemlocator
               items:
-                - name: Metodi IWbemLocator
+                - name: Metodi di IWbemLocator
                   href: iwbemlocator-methods.md
                   items:
                     - name: Metodo ConnectServer
@@ -1878,7 +1886,7 @@
             - name: IWbemObjectAccess
               href: /windows/desktop/api/Wbemcli/nn-wbemcli-iwbemobjectaccess
               items:
-                - name: Metodi IWbemObjectAccess
+                - name: Metodi di IWbemObjectAccess
                   href: iwbemobjectaccess-methods.md
                   items:
                     - name: Metodo GetPropertyHandle
@@ -1914,7 +1922,7 @@
             - name: IWbemObjectSinkEx
               href: /windows/desktop/api/Wbemcli/nn-wbemcli-iwbemobjectsinkex
               items:
-                - name: Metodi IWbemObjectSinkEx
+                - name: Metodi di IWbemObjectSinkEx
                   href: iwbemobjectsinkex-methods.md
                   items:
                     - name: Metodo PromptUser
@@ -1938,7 +1946,7 @@
             - name: IWbemPath
               href: /windows/desktop/api/Wmiutils/nn-wmiutils-iwbempath
               items:
-                - name: Metodi IWbemPath
+                - name: Metodi di IWbemPath
                   href: iwbempath-methods.md
                   items:
                     - name: Metodo CreateClassPart
@@ -2263,24 +2271,24 @@
                           href: swbemdatetime-setfiletime.md
                         - name: Metodo SetVarDate
                           href: swbemdatetime-setvardate.md
-                    - name: Proprietà SWbemDateTime
+                    - name: Proprietà di SWbemDateTime
                       href: swbemdatetime-properties.md
                       items:
-                        - name: Proprietà Day
+                        - name: Day - proprietà
                           href: swbemdatetime-day.md
                         - name: DaySpecified - proprietà
                           href: swbemdatetime-dayspecified.md
-                        - name: Proprietà Hours
+                        - name: Hours - proprietà
                           href: swbemdatetime-hours.md
                         - name: HoursSpecified - proprietà
                           href: swbemdatetime-hoursspecified.md
-                        - name: Proprietà IsInterval
+                        - name: IsInterval - proprietà
                           href: swbemdatetime-isinterval.md
-                        - name: Proprietà Microseconds
+                        - name: Microseconds - proprietà
                           href: swbemdatetime-microseconds.md
                         - name: MicrosecondsSpecified - proprietà
                           href: swbemdatetime-microsecondsspecified.md
-                        - name: Proprietà Minutes
+                        - name: Minutes - proprietà
                           href: swbemdatetime-minutes.md
                         - name: MinutesSpecified - proprietà
                           href: swbemdatetime-minutesspecified.md
@@ -2288,19 +2296,19 @@
                           href: swbemdatetime-month.md
                         - name: MonthSpecified - proprietà
                           href: swbemdatetime-monthspecified.md
-                        - name: Proprietà Seconds
+                        - name: Seconds - proprietà
                           href: swbemdatetime-seconds.md
                         - name: SecondsSpecified - proprietà
                           href: swbemdatetime-secondsspecified.md
-                        - name: Proprietà UTC
+                        - name: Utc - proprietà
                           href: swbemdatetime-utc.md
                         - name: UTCSpecified - proprietà
                           href: swbemdatetime-utcspecified.md
                         - name: Value (proprietà)
                           href: swbemdatetime-value.md
-                        - name: Proprietà Year
+                        - name: Year - proprietà
                           href: swbemdatetime-year.md
-                        - name: Proprietà YearSpecified
+                        - name: YearSpecified - proprietà
                           href: swbemdatetime-yearspecified.md
                 - name: SWbemEventSource
                   href: swbemeventsource.md
@@ -2327,7 +2335,7 @@
                           href: swbemlasterror-compareto-.md
                         - name: GetObjectText_ metodo
                           href: swbemlasterror-getobjecttext-.md
-                    - name: Proprietà SWbemLastError
+                    - name: Proprietà di SWbemLastError
                       href: swbemlasterror-properties.md
                       items:
                         - name: Path_ proprietà
@@ -2342,7 +2350,7 @@
                       items:
                         - name: Metodo ConnectServer
                           href: swbemlocator-connectserver.md
-                    - name: Proprietà SWbemLocator
+                    - name: Proprietà di SWbemLocator
                       href: swbemlocator-properties.md
                       items:
                         - name: Security_ proprietà
@@ -2350,7 +2358,7 @@
                 - name: SWbemMethod
                   href: swbemmethod.md
                   items:
-                    - name: Proprietà SWbemMethod
+                    - name: Proprietà di SWbemMethod
                       href: swbemmethod-properties.md
                       items:
                         - name: InParameters - proprietà
@@ -2359,7 +2367,7 @@
                           href: swbemmethod-name.md
                         - name: Proprietà Origin
                           href: swbemmethod-origin.md
-                        - name: Proprietà OutParameters
+                        - name: OutParameters - proprietà
                           href: swbemmethod-outparameters.md
                         - name: Qualifiers_ proprietà
                           href: swbemmethod-qualifiers-.md
@@ -2371,7 +2379,7 @@
                       items:
                         - name: Item (metodo)
                           href: swbemmethodset-item.md
-                    - name: Proprietà SWbemMethodSet
+                    - name: Proprietà di SWbemMethodSet
                       href: swbemmethodset-properties.md
                       items:
                         - name: 'Count, proprietà'
@@ -2379,7 +2387,7 @@
                 - name: SWbemNamedValue
                   href: swbemnamedvalue.md
                   items:
-                    - name: Proprietà SWbemNamedValue
+                    - name: Proprietà di SWbemNamedValue
                       href: swbemnamedvalue-properties.md
                       items:
                         - name: Name (proprietà)
@@ -2402,12 +2410,12 @@
                           href: swbemnamedvalueset-item.md
                         - name: Remove (metodo)
                           href: swbemnamedvalueset-remove.md
-                    - name: Proprietà SWbemNamedValueSet
+                    - name: Proprietà di SWbemNamedValueSet
                       href: swbemnamedvalueset-properties.md
                       items:
                         - name: 'Count, proprietà'
                           href: swbemnamedvalueset-count.md
-                - name: SWbemObject
+                - name: Oggetto SWbem
                   href: swbemobject.md
                   items:
                     - name: Metodi di SWbemObject
@@ -2977,7 +2985,7 @@
                   href: strings.md
                 - name: Qualificatori ValueMap e Value
                   href: value-map.md
-                - name: Vuoto
+                - name: VUOTO
                   href: void.md
                 - name: Comandi per il preprocessore
                   href: preprocessor-commands.md
@@ -3009,7 +3017,7 @@
             - name: Tipi di contatori delle prestazioni WMI
               href: wmi-performance-counter-types.md
               items:
-                - name: Tipi di contatori di base
+                - name: Tipi di contatore di base
                   href: base-counter-types.md
                 - name: Tipi di contatore dell'algoritmo di base
                   href: basic-algorithm-counter-types.md
@@ -3039,7 +3047,7 @@
             - name: Qualificatori WMI
               href: wmi-qualifiers.md
               items:
-                - name: Meta qualificatori
+                - name: Qualificatori di metadati
                   href: meta-qualifiers.md
                 - name: Qualificatori facoltativi
                   href: optional-qualifiers.md

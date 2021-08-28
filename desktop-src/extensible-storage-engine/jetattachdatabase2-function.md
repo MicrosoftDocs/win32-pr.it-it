@@ -20,12 +20,12 @@ api_type:
 api_location:
 - ESENT.DLL
 ROBOTS: INDEX,FOLLOW
-ms.openlocfilehash: 069339aefbac335bf1c7bb4b35efe4466b526225
-ms.sourcegitcommit: 9b5faa61c38b2d0c432b7f2dbee8c127b0e28a7e
+ms.openlocfilehash: 02f896d41c5804fd85a3cb5f31b6c509c3099357
+ms.sourcegitcommit: 4665ebce0c106bdb52eef36e544280b496b6f50b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/19/2021
-ms.locfileid: "122475937"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "122983524"
 ---
 # <a name="jetattachdatabase2-function"></a>Funzione JetAttachDatabase2
 
@@ -63,13 +63,13 @@ Il passaggio di zero indica che il motore di database non applica il massimo.
 
 *grbit*
 
-Gruppo di bit che contengono le opzioni da utilizzare per questa chiamata, che includono zero o più dei seguenti:
+Gruppo di bit che contengono le opzioni da utilizzare per questa chiamata, che includono zero o più dei valori seguenti:
 
 
-| <p>valore</p> | <p>Significato</p> | 
+| <p>Valore</p> | <p>Significato</p> | 
 |--------------|----------------|
 | <p>JET_bitDbDeleteCorruptIndexes</p> | <p>Se <a href="gg269337(v=exchg.10).md">JET_paramEnableIndexChecking</a> è stato impostato, tutti gli indici sui dati Unicode verranno eliminati. Per altre informazioni, vedere le sezione Osservazioni.</p> | 
-| <p>JET_bitDbDeleteUnicodeIndexes</p> | <p>Tutti gli indici sui dati Unicode verranno eliminati, indipendentemente dall'impostazione <a href="gg269337(v=exchg.10).md">di JET_paramEnableIndexChecking</a>. Per altre informazioni, vedere le sezione Osservazioni.</p> | 
+| <p>JET_bitDbDeleteUnicodeIndexes</p> | <p>Tutti gli indici sui dati Unicode verranno eliminati, indipendentemente dall'impostazione di <a href="gg269337(v=exchg.10).md">JET_paramEnableIndexChecking</a>. Per altre informazioni, vedere le sezione Osservazioni.</p> | 
 | <p>JET_bitDbReadOnly</p> | <p>Impedisce modifiche al database.</p> | 
 | <p>JET_bitDbUpgrade</p> | <p>Riservato per utilizzi futuri.</p> | 
 
@@ -105,7 +105,14 @@ Per [le osservazioni, vedere JetAttachDatabase.](./jetattachdatabase-function.md
 #### <a name="requirements"></a>Requisiti
 
 
-| | | <p><strong>Client</strong></p> | <p>Richiede Windows Vista, Windows XP o Windows 2000 Professional.</p> | | <p><strong>Server</strong></p> | <p>Richiede Windows Server 2008, Windows Server 2003 o Windows 2000 Server.</p> | | <p><strong>Intestazione</strong></p> | <p>Dichiarato in Esent.h.</p> | | <p><strong>Libreria</strong></p> | <p>Usare ESENT.lib.</p> | | <p><strong>DLL</strong></p> | <p>Richiede ESENT.dll.</p> | | <p><strong>Unicode</strong></p> | <p>Implementato come <strong>JetAttachDatabase2W</strong> (Unicode) e <strong>JetAttachDatabase2A</strong> (ANSI).</p> | 
+| Requisito | Valore |
+|------------|----------|
+| <p><strong>Client</strong></p> | <p>Richiede Windows Vista, Windows XP o Windows 2000 Professional.</p> | 
+| <p><strong>Server</strong></p> | <p>Richiede Windows Server 2008, Windows Server 2003 o Windows 2000 Server.</p> | 
+| <p><strong>Intestazione</strong></p> | <p>Dichiarato in Esent.h.</p> | 
+| <p><strong>Libreria</strong></p> | <p>Usare ESENT.lib.</p> | 
+| <p><strong>DLL</strong></p> | <p>Richiede ESENT.dll.</p> | 
+| <p><strong>Unicode</strong></p> | <p>Implementato come <strong>JetAttachDatabase2W</strong> (Unicode) e <strong>JetAttachDatabase2A</strong> (ANSI).</p> | 
 
 
 

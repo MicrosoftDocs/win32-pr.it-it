@@ -3,9 +3,9 @@ title: Metodo IWMDRMDevice SetMeterResponse
 description: Il metodo SetMeterResponse imposta la risposta di misurazione.
 ms.assetid: 3f2e7d7c-6470-4d53-96b0-d3eebdb08329
 keywords:
-- Metodo SetMeterResponse Windows Media Gestione dispositivi
-- Metodo SetMeterResponse Windows Media Gestione dispositivi, interfaccia IWMDRMDevice
-- Interfaccia IWMDRMDevice Windows Media Gestione dispositivi, metodo SetMeterResponse
+- Metodo SetMeterResponse in Gestione dispositivi multimediali di Windows
+- Metodo SetMeterResponse windows Media Device Manager, interfaccia IWMDRMDevice
+- Interfaccia IWMDRMDevice windows Media Device Manager, metodo SetMeterResponse
 topic_type:
 - apiref
 api_name:
@@ -17,16 +17,16 @@ api_type:
 - COM
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 8ed70b158215eb831296ad083af8cd2c001cb38f
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: b05941619d30ea067dc594e05b7b427ec5d825ef3e0c3c441cdfb3c723e94d4c
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "106327395"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119619571"
 ---
-# <a name="iwmdrmdevicesetmeterresponse-method"></a>Metodo IWMDRMDevice:: SetMeterResponse
+# <a name="iwmdrmdevicesetmeterresponse-method"></a>Metodo IWMDRMDevice::SetMeterResponse
 
-Il metodo **SetMeterResponse** imposta la risposta di misurazione.
+Il **metodo SetMeterResponse** imposta la risposta di misurazione.
 
 ## <a name="syntax"></a>Sintassi
 
@@ -45,21 +45,21 @@ HRESULT SetMeterResponse(
 
 <dl> <dt>
 
-*pbMeterResponse* \[ in\]
+*pbMeterResponse* \[ Pollici\]
 </dt> <dd>
 
 Risposta di misurazione da impostare.
 
 </dd> <dt>
 
-*cbMeterResponse* \[ in\]
+*cbMeterResponse* \[ Pollici\]
 </dt> <dd>
 
-Dimensioni in byte della risposta di misurazione.
+Dimensioni della risposta di misurazione, in byte.
 
 </dd> <dt>
 
-*pdwFlags* \[ out\]
+*pdwFlags* \[ Cambio\]
 </dt> <dd>
 
 Flag di risposta. Questo valore deve essere uno dei flag seguenti.
@@ -68,8 +68,8 @@ Flag di risposta. Questo valore deve essere uno dei flag seguenti.
 
 | Flag                            | Descrizione              |
 |---------------------------------|--------------------------|
-| \_risposta contatore \_ WMDRM \_ tutti     | Tutte le risposte del contatore.     |
-| \_risposta contatore \_ WMDRM \_ parziale | Risposte parziali del contatore. |
+| RISPOSTA DEL CONTATORE WMDRM \_ \_ \_ ALL     | Tutte le risposte del contatore.     |
+| RISPOSTA DEL CONTATORE WMDRM \_ \_ \_ PARZIALE | Risposte parziali del contatore. |
 
 
 
@@ -79,13 +79,13 @@ Flag di risposta. Questo valore deve essere uno dei flag seguenti.
 
 ## <a name="return-value"></a>Valore restituito
 
-Il metodo restituisce un valore **HRESULT**. I valori possibili includono, ma non sono limitati a, quelli indicati nella tabella seguente.
+Il metodo restituisce un **valore HRESULT.** I valori possibili includono, ma non sono limitati a, quelli indicati nella tabella seguente.
 
 
 
 | Codice restituito                                                                          | Descrizione                      |
 |--------------------------------------------------------------------------------------|----------------------------------|
-| <dl> <dt>**\_OK**</dt> </dl> | Il metodo è riuscito.<br/> |
+| <dl> <dt>**S \_ OK**</dt> </dl> | Il metodo è riuscito.<br/> |
 
 
 
@@ -97,8 +97,8 @@ Il metodo restituisce un valore **HRESULT**. I valori possibili includono, ma no
 
 | Requisito | Valore |
 |--------------------|-----------------------------------------------------------------------------------------|
-| Intestazione<br/>  | <dl> <dt>WMDDRMSP. idl</dt> </dl> |
-| Libreria<br/> | <dl> <dt>Mssachlp. lib</dt> </dl> |
+| Intestazione<br/>  | <dl> <dt>WMDDRMSP.idl</dt> </dl> |
+| Libreria<br/> | <dl> <dt>Mssachlp.lib</dt> </dl> |
 
 
 

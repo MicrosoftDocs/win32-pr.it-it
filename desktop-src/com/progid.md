@@ -6,12 +6,12 @@ keywords:
 - Chiave del Registro di sistema PROGID COM
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 486f7e30bb0caff72eca3ad68191aaf50ab70280
-ms.sourcegitcommit: d0eb44d0a95f5e5efbfec3d3e9c143f5cba25bc3
+ms.openlocfilehash: f2d56295db12bbf8a4d629112636814fa60df481
+ms.sourcegitcommit: 61a4c522182aa1cacbf5669683d9570a3bf043b2
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/17/2021
-ms.locfileid: "112262723"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "122884833"
 ---
 # <a name="progid"></a>ProgID
 
@@ -27,13 +27,13 @@ HKEY_LOCAL_MACHINE\SOFTWARE\Classes\CLSID
 
 ## <a name="remarks"></a>Commenti
 
-Ogni classe di oggetto inseribile ha un ProgID. Per informazioni sulla creazione di un ProgID, vedere la [ <ProgID> chiave](-progid--key.md).
+Ogni classe di oggetto inseribile ha un ProgID. Per informazioni sulla creazione di un ProgID, vedere la [ &lt; chiave ProgID &gt; ](-progid--key.md).
 
 ## <a name="related-topics"></a>Argomenti correlati
 
 <dl> <dt>
 
-[<ProgID> Chiave](-progid--key.md)
+[&lt;Chiave &gt; ProgID](-progid--key.md)
 </dt> <dt>
 
 [**VersionIndependentProgID**](versionindependentprogid.md)

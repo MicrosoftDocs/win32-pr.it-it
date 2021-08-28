@@ -1,9 +1,9 @@
 ---
-title: Messaggio di EM_CANPASTE (RichEdit. h)
+title: EM_CANPASTE messaggio (Richedit.h)
 description: Determina se un controllo Rich Edit può incollare un formato degli Appunti specificato.
 ms.assetid: 1b858ad8-1312-407b-b12a-c63668ba9f72
 keywords:
-- Controlli di Windows Message EM_CANPASTE
+- EM_CANPASTE controlli di Windows messaggio
 topic_type:
 - apiref
 api_name:
@@ -14,14 +14,14 @@ api_type:
 - HeaderDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: aad400b610a033b6f67177da99876a892d294ec8
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: 24f2d831cd3b3d04fcb7859d2b5936b7354fbb6b638558d605c9f8c5a6ee6333
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "104048525"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119916061"
 ---
-# <a name="em_canpaste-message"></a>\_Messaggio CANPASTE em
+# <a name="em_canpaste-message"></a>Messaggio \_ EM CANPASTE
 
 Determina se un controllo Rich Edit può incollare un formato degli Appunti specificato.
 
@@ -32,22 +32,22 @@ Determina se un controllo Rich Edit può incollare un formato degli Appunti spec
 *wParam* 
 </dt> <dd>
 
-Specifica i [formati degli Appunti](/windows/desktop/dataxchg/clipboard-formats) da provare. Per provare qualsiasi formato attualmente negli Appunti, impostare questo parametro su zero.
+Specifica i formati [degli Appunti da](/windows/desktop/dataxchg/clipboard-formats) provare. Per provare qualsiasi formato attualmente presente negli Appunti, impostare questo parametro su zero.
 
 </dd> <dt>
 
 *lParam* 
 </dt> <dd>
 
-Questo parametro non viene utilizzato. deve essere zero.
+Questo parametro non viene usato. deve essere zero.
 
 </dd> </dl>
 
 ## <a name="return-value"></a>Valore restituito
 
-Se il formato degli Appunti può essere incollato, il valore restituito è un valore diverso da zero.
+Se è possibile incollare il formato degli Appunti, il valore restituito è un valore diverso da zero.
 
-Se il formato degli Appunti non può essere incollato, il valore restituito è zero.
+Se non è possibile incollare il formato degli Appunti, il valore restituito è zero.
 
 ## <a name="requirements"></a>Requisiti
 
@@ -55,9 +55,9 @@ Se il formato degli Appunti non può essere incollato, il valore restituito è z
 
 | Requisito | Valore |
 |-------------------------------------|---------------------------------------------------------------------------------------|
-| Client minimo supportato<br/> | \[Solo app desktop di Windows Vista\]<br/>                                        |
-| Server minimo supportato<br/> | \[Solo app desktop Windows Server 2003\]<br/>                                  |
-| Intestazione<br/>                   | <dl> <dt>RichEdit. h</dt> </dl> |
+| Client minimo supportato<br/> | Windows Solo \[ app desktop Vista\]<br/>                                        |
+| Server minimo supportato<br/> | Windows Solo app desktop di Server 2003 \[\]<br/>                                  |
+| Intestazione<br/>                   | <dl> <dt>Richedit.h</dt> </dl> |
 
 
 

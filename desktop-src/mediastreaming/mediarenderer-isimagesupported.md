@@ -1,11 +1,11 @@
 ---
-title: Proprietà MediaRenderer. IsImageSupported
-description: Ottiene un valore che indica se ricevitore è in grado di visualizzare immagini.
+title: MediaRenderer.IsImageSupported - proprietà
+description: Ottiene un valore che indica se la dmr è in grado di visualizzare le immagini.
 ms.assetid: 3e356ccc-1165-4eaa-9f6e-3332ea84a133
 keywords:
-- API di streaming multimediale della proprietà IsImageSupported
-- API di streaming multimediale della proprietà IsImageSupported, interfaccia MediaRenderer
-- API di streaming multimediale dell'interfaccia MediaRenderer, proprietà IsImageSupported
+- Proprietà IsImageSupported API Streaming multimediale
+- Proprietà IsImageSupported API Streaming multimediale, interfaccia MediaRenderer
+- Interfaccia MediaRenderer API Media Streaming , proprietà IsImageSupported
 topic_type:
 - apiref
 api_name:
@@ -15,16 +15,16 @@ api_type:
 ms.topic: reference
 ms.date: 05/31/2018
 api_location: ''
-ms.openlocfilehash: e7e76f55747ab1ff13c0ba1dcb1c2b08bf3bd50c
-ms.sourcegitcommit: 4f5016b1fbfd703dbf769c508db464c2518c0fa5
+ms.openlocfilehash: 666dd41c823f91be581528691dc55fc937b6fc66362a8bd3744d3a597c50d8a9
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/06/2019
-ms.locfileid: "104045947"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119712751"
 ---
-# <a name="mediarendererisimagesupported-property"></a>Proprietà MediaRenderer. IsImageSupported
+# <a name="mediarendererisimagesupported-property"></a>MediaRenderer.IsImageSupported - proprietà
 
-Ottiene un valore che indica se ricevitore è in grado di visualizzare immagini.
+Ottiene un valore che indica se la dmr è in grado di visualizzare le immagini.
 
 Questa proprietà è di sola lettura.
 
@@ -33,7 +33,7 @@ Questa proprietà è di sola lettura.
 
 ```C++
 HRESULT get_IsImageSupported(
-  [out] boolean *value
+  [out] boolean *value
 );
 ```
 
@@ -41,7 +41,7 @@ HRESULT get_IsImageSupported(
 
 ## <a name="property-value"></a>Valore proprietà
 
-Valore booleano che è **true** se ricevitore è in grado di visualizzare le immagini e **false** in caso contrario.
+Valore booleano True **se** la dmr è in grado di visualizzare le immagini e **False** in caso contrario.
 
 ## <a name="see-also"></a>Vedi anche
 
@@ -50,9 +50,9 @@ Valore booleano che è **true** se ricevitore è in grado di visualizzare le imm
 [**MediaRenderer**](mediarenderer.md)
 </dt> </dl>
 
- 
+ 
 
- 
+ 
 
 
 

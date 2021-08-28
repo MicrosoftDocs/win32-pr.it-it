@@ -16,16 +16,16 @@ api_location:
 - Strmbase.dll
 - Strmbasd.lib
 - Strmbasd.dll
-ms.openlocfilehash: 7c0d9ec403b53c3197c001e966ce7efd5eb8bed2
-ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
+ms.openlocfilehash: 8307f3823758eee2f70368e41d3f2dc01333fd538fe2feed30d31b7db876f118
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/28/2021
-ms.locfileid: "108099339"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120052741"
 ---
 # <a name="cbasepininactive-method"></a>Metodo CBasePin.Inactive
 
-Il `Inactive` metodo notifica al pin che il filtro non è più attivo.
+Il `Inactive` metodo notifica al segnaposto che il filtro non è più attivo.
 
 ## <a name="syntax"></a>Sintassi
 
@@ -48,9 +48,9 @@ Restituisce S \_ OK.
 
 Quando il filtro si arresta, la [**classe CBaseFilter**](cbasefilter.md) chiama questo metodo su tutti i pin connessi del filtro.
 
-Questo metodo non esegue alcuna operazione nella classe di base. Le classi derivate devono eseguire l'override di questo metodo per liberare tutte le risorse ottenute dal [**metodo CBasePin::Active.**](cbasepin-active.md) ad esempio per decommettere gli allocatori del pin.
+Questo metodo non esegue alcuna operazione nella classe di base. Le classi derivate devono eseguire l'override di questo metodo per liberare tutte le risorse ottenute dal [**metodo CBasePin::Active;**](cbasepin-active.md) ad esempio per decommettere gli allocatori del pin.
 
-Lo stato interno del gestore del grafico filtri non viene aggiornato fino a quando non viene restituito questo metodo, quindi non testare lo stato di questo metodo.
+Lo stato interno del gestore del grafo del filtro non viene aggiornato fino al termine di questo metodo, quindi non testare lo stato da questo metodo.
 
 ## <a name="requirements"></a>Requisiti
 
@@ -58,7 +58,7 @@ Lo stato interno del gestore del grafico filtri non viene aggiornato fino a quan
 
 | Requisito | Valore |
 |--------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Intestazione<br/>  | <dl> <dt>Amfilter.h (include Streams.h)</dt> </dl>                                                                                  |
+| Intestazione<br/>  | <dl> <dt>Amfilter.h (includere Flussi.h)</dt> </dl>                                                                                  |
 | Libreria<br/> | <dl> <dt>Strmbase.lib (build di vendita al dettaglio); </dt> <dt>Strmbasd.lib (build di debug)</dt> </dl> |
 
 

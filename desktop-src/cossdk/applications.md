@@ -12,12 +12,12 @@ api_name:
 api_type:
 - COM
 api_location: ''
-ms.openlocfilehash: 23ce8d7dc343e9cbca9aab642aee99424c5fffdde8ef0f15a52d2959bf492095
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 085983bf390998910f36a87ac41aaa15e783b55d
+ms.sourcegitcommit: 61a4c522182aa1cacbf5669683d9570a3bf043b2
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "118549426"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "122884829"
 ---
 # <a name="applications-collection"></a>Raccolta di applicazioni
 
@@ -129,7 +129,7 @@ Le proprietà seguenti sono supportate [**dall'oggetto COMAdminCatalogObject all
 |----------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | Descrizione    | Indica se i controlli di accesso vengono eseguiti solo a livello di processo o a livello di processo e di componente. È consigliabile usare le costanti nell'enumerazione e non i valori numerici. |
 | Access         | ReadWrite                                                                                                                                                                                                       |
-| Tipo           | Valori long possibili: COMAdminAccessChecksApplicationLevel (0) COMAdminAccessChecksApplicationComponentLevel (1)                                                                                                |
+| Tipo           | Valori possibili lunghi: COMAdminAccessChecksApplicationLevel (0) COMAdminAccessChecksApplicationComponentLevel (1)                                                                                                |
 | Predefinito        | COMAdminAccessChecksApplicationComponentLevel (1)                                                                                                                                                               |
 | Sistema minimo | Windows 2000                                                                                                                                                                                                    |
 
@@ -143,9 +143,9 @@ Le proprietà seguenti sono supportate [**dall'oggetto COMAdminCatalogObject all
 
 | Voce | Valore |
 |----------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Descrizione    | L'attivazione locale indica che gli oggetti all'interno dell'applicazione vengono eseguiti all'interno di un processo server locale dedicato (applicazione server). L'attivazione in-process indica che gli oggetti vengono eseguiti nel processo dell'autore (applicazione di libreria). |
+| Descrizione    | L'attivazione locale indica che gli oggetti all'interno dell'applicazione vengono eseguiti all'interno di un processo server locale dedicato (applicazione server). L'attivazione in-process indica che gli oggetti vengono eseguiti nel processo dell'autore (applicazione libreria). |
 | Access         | ReadWrite                                                                                                                                                                                                                           |
-| Tipo           | Valori long possibili:COMAdminActivationInproc (0)COMAdminActivationLocal (1)                                                                                                                                                        |
+| Tipo           | Valori possibili long:COMAdminActivationInproc (0)COMAdminActivationLocal (1)                                                                                                                                                        |
 | Predefinito        | COMAdminActivationLocal (1)                                                                                                                                                                                                         |
 | Sistema minimo | Windows 2000                                                                                                                                                                                                                        |
 
@@ -177,7 +177,7 @@ Le proprietà seguenti sono supportate [**dall'oggetto COMAdminCatalogObject all
 |----------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | Descrizione    | Percorso completo dell'applicazione. Queste informazioni sono necessarie quando si configurano assembly side-by-side (SxS). Gli assembly side-by-side (SxS) consentono alle applicazioni ASP di specificare la versione di una DLL di sistema supportata da SxS da usare, ad esempio MSVCRT, MSXML, COMCTL, GDIPLUS e così via. Ad esempio, se l'applicazione ASP si basa su MSVCRT versione 2.0, è possibile assicurarsi che l'applicazione usi ancora MSVCRT versione 2.0 anche dopo l'applicazione dei Service Pack al server. Qualsiasi nuova versione di MSVCRT è ancora installata nel computer, ma la versione 2.0 rimane e viene usata dall'applicazione. Le DLL supportate da SxS vengono archiviate in %WINDIR% \\ WinSxS. |
 | Access         | ReadWrite                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                  |
-| Type           | string                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                     |
+| Type           | Stringa                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                     |
 | Predefinito        | ""                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                         |
 | Sistema minimo | Windows XP                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                 |
 
@@ -186,7 +186,7 @@ Le proprietà seguenti sono supportate [**dall'oggetto COMAdminCatalogObject all
  
 
 > [!Note]  
-> In qualsiasi pool di applicazioni è possibile usare una sola versione di una DLL di sistema, anche se questa funzionalità è configurabile a livello di applicazione. Ad esempio, se l'applicazione App1 usa MSVCRT, la versione 2.5 e l'applicazione App2 usa MSVCRT, versione 2.4, App1 e App2 non devono essere nello stesso pool di applicazioni. In caso contrario, l'applicazione caricata per prima ha la versione di MSVCRT caricata e l'altra applicazione è obbligata a usarla fino a quando le applicazioni non vengono scaricate.
+> È possibile usare una sola versione di una DLL di sistema in qualsiasi pool di applicazioni, anche se questa funzionalità è configurabile a livello di applicazione. Ad esempio, se l'applicazione App1 usa MSVCRT, la versione 2.5 e l'applicazione App2 usa MSVCRT, versione 2.4, App1 e App2 non devono essere nello stesso pool di applicazioni. In caso contrario, l'applicazione caricata per prima ha la versione di MSVCRT caricata e l'altra applicazione viene forzata a usarla fino a quando le applicazioni non vengono scaricate.
 
  
 
@@ -214,9 +214,9 @@ Per altre informazioni, vedere "Assembly side-by-side" in Modifiche ai servizi [
 
 | Voce | Valore |
 |----------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Descrizione    | Nome del server remoto utilizzato durante l'esportazione del proxy di applicazione. È il nome del server a cui punta il proxy dell'applicazione quando viene installato in un computer client. |
+| Descrizione    | Nome del server remoto utilizzato durante l'esportazione del proxy dell'applicazione. È il nome del server a cui punta il proxy dell'applicazione quando viene installato in un computer client. |
 | Access         | ReadWrite                                                                                                                                                              |
-| Type           | string                                                                                                                                                                 |
+| Type           | Stringa                                                                                                                                                                 |
 | Predefinito        | ""                                                                                                                                                                     |
 | Sistema minimo | Windows 2000                                                                                                                                                           |
 
@@ -230,25 +230,25 @@ Per altre informazioni, vedere "Assembly side-by-side" in Modifiche ai servizi [
 
 | Voce | Valore |
 |----------------|---------------------------------------------------|
-| Descrizione    | GUID che rappresenta l'ID partizione applicativa. |
+| Descrizione    | GUID che rappresenta l'ID partizione applicazione. |
 | Access         | ReadOnly                                          |
-| Type           | string                                            |
-| Predefinito        | <Generated>                                 |
+| Type           | Stringa                                            |
+| Predefinito        | &lt;Generato&gt;                                 |
 | Sistema minimo | Windows Server 2003                               |
 
 
 
  
 
-### <a name="authentication"></a>Autenticazione
+### <a name="authentication"></a>Authentication
 
 
 
 | Voce | Valore |
 |----------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Descrizione    | Imposta il livello di autenticazione per le chiamate, con valori corrispondenti alle impostazioni di autenticazione RPC (Remote Procedure Call). Quando si sceglie COMAdminAuthenticationDefault, viene usata l'impostazione nella proprietà DefaultAuthenticationLevel all'interno della raccolta [**LocalComputer.**](localcomputer.md) |
+| Descrizione    | Imposta il livello di autenticazione per le chiamate, con valori corrispondenti alle impostazioni di autenticazione RPC (Remote Procedure Call). Quando si sceglie COMAdminAuthenticationDefault, viene usata l'impostazione nella proprietà DefaultAuthenticationLevel all'interno [**della raccolta LocalComputer.**](localcomputer.md) |
 | Access         | ReadWrite                                                                                                                                                                                                                                                                                             |
-| Tipo           | Valori possibili lunghi:COMAdminAuthenticationDefault (0)COMAdminAuthenticationNone (1) COMAdminAuthenticationConnect (2)COMAdminAuthenticationCall (3)COMAdminAuthenticationPacket (4)COMAdminAuthenticationIntegrity (5)COMAdminAuthenticationPrivacy (6)                                              |
+| Tipo           | Valori possibili long:COMAdminAuthenticationDefault (0)COMAdminAuthenticationNone (1) COMAdminAuthenticationConnect (2)COMAdminAuthenticationCall (3)COMAdminAuthenticationPacket (4)COMAdminAuthenticationIntegrity (5)COMAdminAuthenticationPrivacy (6)                                              |
 | Predefinito        | COMAdminAuthenticationPacket (4)                                                                                                                                                                                                                                                                      |
 | Sistema minimo | Windows 2000                                                                                                                                                                                                                                                                                          |
 
@@ -257,7 +257,7 @@ Per altre informazioni, vedere "Assembly side-by-side" in Modifiche ai servizi [
  
 
 > [!Note]  
-> Per le applicazioni libreria (in-process), le uniche impostazioni valide sono COMAdminAuthenticationDefault e COMAdminAuthenticationNone . È consigliabile usare le costanti nell'enumerazione e non i valori numerici.
+> Per le applicazioni di libreria (in-process), le uniche impostazioni valide sono COMAdminAuthenticationDefault e COMAdminAuthenticationNone. È consigliabile usare le costanti nell'enumerazione e non i valori numerici.
 
  
 
@@ -267,9 +267,9 @@ Per altre informazioni, vedere "Assembly side-by-side" in Modifiche ai servizi [
 
 | Voce | Valore |
 |----------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Descrizione    | Determina l'identità presentata quando vengono rappresentate le chiamate.                                                                                                                                                                      |
+| Descrizione    | Determina quale identità viene presentata quando vengono rappresentate le chiamate.                                                                                                                                                                      |
 | Access         | ReadWrite                                                                                                                                                                                                                               |
-| Tipo           | Valori possibili lunghi:COMAdminAuthenticationCapabilitiesNone (0x0)COMAdminAuthenticationCapabilitiesSecureReference (0x2)COMAdminAuthenticationCapabilitiesStaticCloaking (0x20)COMAdminAuthenticationCapabilitiesDynamicCloaking (0x40) |
+| Tipo           | Valori long possibili:COMAdminAuthenticationCapabilitiesNone (0x0)COMAdminAuthenticationCapabilitiesSecureReference (0x2)COMAdminAuthenticationCapabilitiesStaticCloaking (0x20)COMAdminAuthenticationCapabilitiesDynamicCloaking (0x40) |
 | Predefinito        | COMAdminAuthenticationCapabilitiesDynamicCloaking (0x40)                                                                                                                                                                                |
 | Sistema minimo | Windows 2000                                                                                                                                                                                                                            |
 
@@ -283,7 +283,7 @@ Per altre informazioni, vedere "Assembly side-by-side" in Modifiche ai servizi [
 
 | Voce | Valore |
 |----------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Descrizione    | Determina se sono consentite modifiche alle impostazioni dell'applicazione o a quelle dei relativi componenti, a livello di codice o tramite lo strumento di amministrazione di Servizi componenti. |
+| Descrizione    | Determina se sono consentite modifiche alle impostazioni dell'applicazione o a quelle dei relativi componenti, a livello di codice o tramite lo strumento di amministrazione Servizi componenti. |
 | Access         | ReadWrite                                                                                                                                                                     |
 | Tipo           | Bool                                                                                                                                                                          |
 | Predefinito        | Vero                                                                                                                                                                          |
@@ -299,9 +299,9 @@ Per altre informazioni, vedere "Assembly side-by-side" in Modifiche ai servizi [
 
 | Voce | Valore |
 |----------------|----------------------------------------------------------------------------------------------------------------------------|
-| Descrizione    | Stringa della riga di comando da utilizzare nel debug. L'applicazione può essere avviata in un debugger con la riga di comando specificata. |
+| Descrizione    | Stringa della riga di comando da usare nel debug. L'applicazione può essere avviata in un debugger con la riga di comando specificata. |
 | Access         | ReadWrite                                                                                                                  |
-| Type           | string                                                                                                                     |
+| Type           | Stringa                                                                                                                     |
 | Predefinito        | ""                                                                                                                         |
 | Sistema minimo | Windows 2000                                                                                                               |
 
@@ -333,7 +333,7 @@ Per altre informazioni, vedere "Assembly side-by-side" in Modifiche ai servizi [
 |----------------|---------------------------------------------------------------|
 | Descrizione    | Stringa informativo per descrivere chi ha creato l'applicazione. |
 | Access         | ReadWrite                                                     |
-| Type           | string                                                        |
+| Type           | Stringa                                                        |
 | Predefinito        | ""                                                            |
 | Sistema minimo | Windows 2000                                                  |
 
@@ -363,9 +363,9 @@ Per altre informazioni, vedere "Assembly side-by-side" in Modifiche ai servizi [
 
 | Voce | Valore |
 |----------------|----------------------------------------------------------------------------------------|
-| Descrizione    | Nome e percorso del file per mantenere il log per il gestore delle risorse di compensazione (CRM). |
+| Descrizione    | Nome e percorso del file per mantenere il log per crm (Compensating Resource Manager). |
 | Access         | ReadWrite                                                                              |
-| Type           | string                                                                                 |
+| Type           | Stringa                                                                                 |
 | Predefinito        | ""                                                                                     |
 | Sistema minimo | Windows 2000                                                                           |
 
@@ -397,7 +397,7 @@ Per altre informazioni, vedere "Assembly side-by-side" in Modifiche ai servizi [
 |----------------|----------------------------|
 | Descrizione    | Descrive l'applicazione. |
 | Access         | ReadWrite                  |
-| Type           | string                     |
+| Type           | Stringa                     |
 | Predefinito        | ""                         |
 | Sistema minimo | Windows 2000               |
 
@@ -466,7 +466,7 @@ Per altre informazioni, vedere "Assembly side-by-side" in Modifiche ai servizi [
 |----------------|--------------------------------------------------------------|
 | Descrizione    | Percorso della directory in cui vengono salvati i file di dump. |
 | Access         | ReadWrite                                                    |
-| Type           | string                                                       |
+| Type           | Stringa                                                       |
 | Predefinito        | "%systemroot% \\ system32 \\ com \\ dmp"                           |
 | Sistema minimo | Windows XP                                                   |
 
@@ -503,8 +503,8 @@ Per altre informazioni, vedere "Assembly side-by-side" in Modifiche ai servizi [
 |----------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | Descrizione    | GUID che rappresenta l'applicazione. Questa proprietà viene restituita quando [**il metodo**](/windows/desktop/api/ComAdmin/nf-comadmin-icatalogobject-get_key) della proprietà Key viene chiamato su un oggetto di questa raccolta. |
 | Access         | WriteOnce                                                                                                                                                            |
-| Type           | string                                                                                                                                                               |
-| Predefinito        | <Generated>                                                                                                                                                    |
+| Type           | Stringa                                                                                                                                                               |
+| Predefinito        | &lt;Generato&gt;                                                                                                                                                    |
 | Sistema minimo | Windows 2000                                                                                                                                                         |
 
 
@@ -529,7 +529,7 @@ Per altre informazioni, vedere "Assembly side-by-side" in Modifiche ai servizi [
 
 La proprietà Identity non è abilitata per le applicazioni di libreria, che vengono eseguite nel processo client.
 
-La proprietà Password deve essere impostata contemporaneamente a Identity, prima di usare [**SaveChanges**](/windows/desktop/api/ComAdmin/nf-comadmin-icatalogcollection-savechanges), perché la password e l'identità vengono convalidate prima del salvataggio. Se la password e l'identità non vengono sincronizzate, l'applicazione non può essere avviata fino a quando non viene reimpostata da un amministratore.
+La proprietà Password deve essere impostata contemporaneamente a Identity, prima di usare [**SaveChanges**](/windows/desktop/api/ComAdmin/nf-comadmin-icatalogcollection-savechanges), perché la password e l'identità vengono convalidate prima di essere salvate. Se la password e l'identità non vengono sincronizzate, l'applicazione non può essere avviata fino a quando non viene reimpostata da un amministratore.
 
 ### <a name="impersonationlevel"></a>ImpersonationLevel
 
@@ -585,7 +585,7 @@ La proprietà Password deve essere impostata contemporaneamente a Identity, prim
 
 | Voce | Valore |
 |----------------|----------------------------------------------------------------------------------|
-| Descrizione    | Indica il numero massimo di file da generare prima della sovrascrittura. |
+| Descrizione    | Indica il numero massimo di file da generare prima che si verifichi la sovrascrittura. |
 | Access         | ReadWrite                                                                        |
 | Tipo           | Long (1-200)                                                                     |
 | Predefinito        | 5                                                                                |
@@ -595,7 +595,7 @@ La proprietà Password deve essere impostata contemporaneamente a Identity, prim
 
  
 
-### <a name="name"></a>Nome
+### <a name="name"></a>NOME
 
 
 
@@ -603,7 +603,7 @@ La proprietà Password deve essere impostata contemporaneamente a Identity, prim
 |----------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | Descrizione    | Nome dell'applicazione. Gli spazi aggiuntivi all'inizio e alla fine della stringa vengono privati. Questa proprietà viene restituita quando il metodo della proprietà [**Name**](/windows/desktop/api/ComAdmin/nf-comadmin-icatalogobject-get_name) viene chiamato su un oggetto di questa raccolta. |
 | Access         | ReadWrite                                                                                                                                                                                                                            |
-| Type           | string                                                                                                                                                                                                                               |
+| Type           | Stringa                                                                                                                                                                                                                               |
 | Predefinito        | "Nuova applicazione"                                                                                                                                                                                                                    |
 | Sistema minimo | Windows 2000                                                                                                                                                                                                                         |
 
@@ -624,7 +624,7 @@ La proprietà Password deve essere impostata contemporaneamente a Identity, prim
 |----------------|----------------------------------------------------------------------------|
 | Descrizione    | Imposta la password utilizzata dal processo server per accedere con l'identità . |
 | Access         | WriteOnly                                                                  |
-| Type           | string                                                                     |
+| Type           | Stringa                                                                     |
 | Predefinito        | ""                                                                         |
 | Sistema minimo | Windows 2000                                                               |
 
@@ -632,7 +632,7 @@ La proprietà Password deve essere impostata contemporaneamente a Identity, prim
 
  
 
-La password deve essere impostata contemporaneamente a Identity, prima di usare [**SaveChanges**](/windows/desktop/api/ComAdmin/nf-comadmin-icatalogcollection-savechanges), perché la password e l'identità vengono convalidate prima di essere salvate. Se la password e l'identità non vengono sincronizzate, l'applicazione non può essere avviata fino a quando non viene reimpostata da un amministratore.
+La password deve essere impostata contemporaneamente a Identity, prima di usare [**SaveChanges**](/windows/desktop/api/ComAdmin/nf-comadmin-icatalogcollection-savechanges), perché la password e l'identità vengono convalidate prima del salvataggio. Se la password e l'identità non vengono sincronizzate, l'applicazione non può essere avviata fino a quando non viene reimpostata da un amministratore.
 
 ### <a name="qcauthenticatemsgs"></a>QCAuthenticateMsgs
 
@@ -823,7 +823,7 @@ La password deve essere impostata contemporaneamente a Identity, prima di usare 
 |----------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | Descrizione    | Nome del servizio corrispondente all'applicazione configurata per l'esecuzione come applicazione di servizio. Se questo valore è **NULL,** l'applicazione non è configurata per l'esecuzione come servizio. In caso contrario, è possibile trovare le informazioni di configurazione per il servizio usando il nome del servizio. |
 | Access         | ReadOnly                                                                                                                                                                                                                                                                         |
-| Type           | string                                                                                                                                                                                                                                                                           |
+| Type           | Stringa                                                                                                                                                                                                                                                                           |
 | Predefinito        | ""                                                                                                                                                                                                                                                                               |
 | Sistema minimo | Windows XP                                                                                                                                                                                                                                                                       |
 
@@ -871,7 +871,7 @@ La password deve essere impostata contemporaneamente a Identity, prima di usare 
 |----------------|------------------------------------------------------------------------------|
 | Descrizione    | Endpoint DELL'URL in corrispondenza del quale l'applicazione viene esposta tramite il protocollo SOAP. |
 | Access         | ReadWrite                                                                    |
-| Type           | string                                                                       |
+| Type           | Stringa                                                                       |
 | Predefinito        | ""                                                                           |
 | Sistema minimo | Windows Server 2003                                                          |
 
@@ -887,7 +887,7 @@ La password deve essere impostata contemporaneamente a Identity, prima di usare 
 |----------------|-------------------------------------------------------------------------------|
 | Descrizione    | Indirizzo di posta elettronica in cui l'applicazione viene esposta tramite il protocollo SOAP. |
 | Access         | ReadWrite                                                                     |
-| Type           | string                                                                        |
+| Type           | Stringa                                                                        |
 | Predefinito        | ""                                                                            |
 | Sistema minimo | Windows Server 2003                                                           |
 
@@ -903,7 +903,7 @@ La password deve essere impostata contemporaneamente a Identity, prima di usare 
 |----------------|----------------------------------------------------------------------------------------------------------------------|
 | Descrizione    | Directory radice virtuale IIS in cui si trovano gli script di accesso che espongono l'applicazione tramite il protocollo SOAP. |
 | Access         | ReadWrite                                                                                                            |
-| Type           | string                                                                                                               |
+| Type           | Stringa                                                                                                               |
 | Predefinito        | ""                                                                                                                   |
 | Sistema minimo | Windows Server 2003                                                                                                  |
 

@@ -1,5 +1,5 @@
 ---
-description: Richiede che lo stato del processo di migrazione venga modificato nello stato specificato.
+description: Richiede che lo stato del processo di migrazione sia stato modificato nello stato specificato.
 ms.assetid: f0be5ea8-7e21-407e-b84d-8bd4ca5a6a2c
 title: Metodo RequestStateChange della classe Msvm_MigrationJob
 ms.topic: reference
@@ -13,16 +13,16 @@ api_type:
 - COM
 api_location:
 - vmms.exe
-ms.openlocfilehash: 31011de619780ae36f390ee87038300a3b42fef2
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: a7a5934049860e92aa9986a301fe3d75bed8022bda064653ee9e405ad16f6619
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "106311776"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119014319"
 ---
-# <a name="requeststatechange-method-of-the-msvm_migrationjob-class"></a>Metodo RequestStateChange della classe MSVM \_ MigrationJob
+# <a name="requeststatechange-method-of-the-msvm_migrationjob-class"></a>Metodo RequestStateChange della classe Msvm \_ MigrationJob
 
-Richiede che lo stato del processo di migrazione venga modificato nello stato specificato. Richiamando il metodo **RequestStateChange** più volte è possibile che le richieste precedenti vengano sovrascritte o perse. Se viene restituito 0, l'attività è stata completata correttamente. Qualsiasi altro codice restituito indica una condizione di errore.
+Richiede che lo stato del processo di migrazione sia stato modificato nello stato specificato. La chiamata del **metodo RequestStateChange** più volte può comportare la sovrascrittura o la perdita di richieste precedenti. Se viene restituito 0, l'attività è stata completata correttamente. Qualsiasi altro codice restituito indica una condizione di errore.
 
 ## <a name="syntax"></a>Sintassi
 
@@ -40,7 +40,7 @@ uint32 RequestStateChange(
 
 <dl> <dt>
 
-*RequestedState* \[ in\]
+*RequestedState* \[ Pollici\]
 </dt> <dd>
 
 Nuovo stato di un processo.
@@ -49,12 +49,12 @@ Nuovo stato di un processo.
 
 <span id="Start"></span><span id="start"></span><span id="START"></span>
 
-<span id="Start"></span><span id="start"></span><span id="START"></span>**Avvio** (2)
+<span id="Start"></span><span id="start"></span><span id="START"></span>**Inizio** (2)
 
 
 </dt> <dd>
 
-Imposta lo stato su "Running".
+Modifica lo stato in "In esecuzione".
 
 </dd> <dt>
 
@@ -65,7 +65,7 @@ Imposta lo stato su "Running".
 
 </dt> <dd>
 
-Arresta temporaneamente il processo. Lo scopo è quello di riavviare successivamente il processo con "Start". Potrebbe essere possibile immettere lo stato "servizio" mentre è sospeso. (Si tratta di un processo specifico).
+Arresta temporaneamente il processo. L'intenzione è riavviare successivamente il processo con "Start". Potrebbe essere possibile immettere lo stato "Servizio" durante la sospensione. Si tratta di un processo specifico.
 
 </dd> <dt>
 
@@ -76,7 +76,7 @@ Arresta temporaneamente il processo. Lo scopo è quello di riavviare successivam
 
 </dt> <dd>
 
-Arresta il processo in modo corretto, salvando i dati, mantenendo lo stato e chiudendo tutti i processi sottostanti in modo ordinato.
+Arresta il processo in modo pulito, salvando i dati, mantenendo lo stato e arrestando tutti i processi sottostanti in modo ordinato.
 
 </dd> <dt>
 
@@ -87,7 +87,7 @@ Arresta il processo in modo corretto, salvando i dati, mantenendo lo stato e chi
 
 </dt> <dd>
 
-Termina immediatamente il processo senza alcuna necessità di salvare i dati o mantenere lo stato.
+Termina immediatamente il processo senza alcun requisito per salvare i dati o mantenere lo stato.
 
 </dd> <dt>
 
@@ -104,7 +104,7 @@ Inserisce il processo in uno stato del servizio specifico del fornitore. Potrebb
 
 <span id="DMTF_Reserved"></span><span id="dmtf_reserved"></span><span id="DMTF_RESERVED"></span>
 
-<span id="DMTF_Reserved"></span><span id="dmtf_reserved"></span><span id="DMTF_RESERVED"></span>**DMTF riservato**
+<span id="DMTF_Reserved"></span><span id="dmtf_reserved"></span><span id="DMTF_RESERVED"></span>**DmTF riservato**
 
 
 </dt> <dd>
@@ -124,10 +124,10 @@ Riservato.
 
 </dd> </dl> </dd> <dt>
 
-*TimeoutPeriod* \[ in\]
+*TimeoutPeriod* \[ Pollici\]
 </dt> <dd>
 
-Periodo di timeout che specifica la quantità massima di tempo per cui il client prevede che la transizione al nuovo stato venga eseguita. Per specificare il periodo di timeout, è necessario utilizzare il formato intervallo. Il valore 0 o **null** indica che il client non dispone di requisiti temporali per la transizione. Se questa proprietà non contiene 0 o **null** e l'implementazione non supporta questo parametro, deve essere restituito un codice restituito 4098 (utilizzo del parametro timeout non supportato).
+Periodo di timeout che specifica la quantità massima di tempo prevista dal client per la transizione al nuovo stato. Il formato dell'intervallo deve essere usato per specificare il periodo di timeout. Il valore 0 o **Null** indica che il client non ha requisiti di tempo per la transizione. Se questa proprietà non contiene 0 o **Null** e l'implementazione non supporta questo parametro, deve essere restituito un codice restituito 4098 (utilizzo del parametro di timeout non supportato).
 
 </dd> </dl>
 
@@ -177,10 +177,10 @@ Periodo di timeout che specifica la quantità massima di tempo per cui il client
 
 | Requisito | Valore |
 |-------------------------------------|---------------------------------------------------------------------------------------------------------|
-| Client minimo supportato<br/> | \[Solo app desktop di Windows 8\]<br/>                                                              |
-| Server minimo supportato<br/> | \[Solo app desktop Windows Server 2012\]<br/>                                                    |
-| Spazio dei nomi<br/>                | \\Virtualizzazione radice \\ v2<br/>                                                                     |
-| MOF<br/>                      | <dl> <dt>WindowsVirtualization. v2. mof</dt> </dl> |
+| Client minimo supportato<br/> | \[Windows 8 solo app desktop\]<br/>                                                              |
+| Server minimo supportato<br/> | \[Windows Server 2012 solo app desktop\]<br/>                                                    |
+| Spazio dei nomi<br/>                | Virtualizzazione \\ radice \\ V2<br/>                                                                     |
+| MOF<br/>                      | <dl> <dt>WindowsVirtualization.V2.mof</dt> </dl> |
 | DLL<br/>                      | <dl> <dt>Vmms.exe</dt> </dl>                     |
 
 
@@ -189,7 +189,7 @@ Periodo di timeout che specifica la quantità massima di tempo per cui il client
 
 <dl> <dt>
 
-[**\_MigrationJob MSVM**](msvm-migrationjob.md)
+[**Processo di \_ migrazione msvm**](msvm-migrationjob.md)
 </dt> </dl>
 
  

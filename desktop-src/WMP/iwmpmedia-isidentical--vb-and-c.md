@@ -1,9 +1,9 @@
 ---
-title: IWMPMedia. è identico (VB e C)
-description: La proprietà IsValid (il metodo Get è \_ identico in C \) ottiene un valore che indica se l'elemento multimediale specificato è uguale a quello corrente.
+title: IWMPMedia.isIdentical (VB e C )
+description: La proprietà isIdentical (il metodo get isIdentical in C\ ) ottiene un valore che indica se l'elemento multimediale specificato è uguale \_ a quello corrente.
 ms.assetid: 1406a0ff-2dc8-4cde-8b71-4a39b8608fb1
 keywords:
-- Windows Media Player IWMPMedia. è identico (VB e C)
+- IWMPMedia.isIdentical (VB e C ) Windows Media Player
 topic_type:
 - apiref
 api_name:
@@ -14,16 +14,16 @@ api_type:
 - Assembly
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: b3a488ad300362c1f8dccfd0fa6f6c7e4dee7676
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: 24e8de133003bdddcf0438e5a13dc3fa74227ede7bf42350e2b7c3c96f2c197e
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "106331390"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120003581"
 ---
-# <a name="iwmpmediaisidentical-vb-and-c"></a>IWMPMedia. è identico (VB e C#)
+# <a name="iwmpmediaisidentical-vb-and-c"></a>IWMPMedia.isIdentical (VB e C#)
 
-La **proprietà IsValid (il** metodo **Get è \_ identico** in C#) ottiene un valore che indica se l'elemento multimediale specificato è uguale a quello corrente.
+La **proprietà isIdentical** (metodo **get \_ isIdentical** in C#) ottiene un valore che indica se l'elemento multimediale specificato è uguale a quello corrente.
 
 
 ```
@@ -49,19 +49,19 @@ System.Boolean get_isIdentical (
 
 *pIWMPMedia*
 
-Interfaccia **wmplib. IWMPMedia** per l'elemento multimediale da confrontare con l'elemento multimediale corrente.
+Interfaccia **WMPLib.IWMPMedia** per l'elemento multimediale da confrontare con l'elemento multimediale corrente.
 
 ## <a name="property-value"></a>Valore della proprietà
 
-Valore **System. Boolean** che indica se i due elementi multimediali sono identici.
+Valore **System.Boolean** che indica se i due elementi multimediali sono identici.
 
 ## <a name="remarks"></a>Commenti
 
-**IWMPMedia. is identico** è una proprietà in Visual Basic che accetta un parametro. In C# viene indicato come il metodo **IWMPMedia. Get è \_ identico** .
+**IWMPMedia.isIdentical** è una proprietà in Visual Basic che accetta un parametro. In C# viene definito metodo **IWMPMedia.get \_ isIdentical.**
 
 ## <a name="examples"></a>Esempio
 
-Nell'esempio seguente viene utilizzata **la proprietà IsValid** ( **get \_ unidential** Method in C#) per verificare se un elemento multimediale denominato newMedia è uguale all'elemento multimediale corrente. Se non sono uguali, viene riprodotto il nuovo elemento multimediale. In caso contrario, i supporti correnti continueranno a essere riprodotti senza interruzioni. L'oggetto **AxWMPLib. AxWindowsMediaPlayer** è rappresentato dalla variabile denominata Player.
+Nell'esempio seguente viene utilizzata la proprietà **isIdentical** (metodo **get \_ isIdentical** in C#) per verificare se un elemento multimediale denominato newMedia è uguale all'elemento multimediale corrente. Se non sono uguali, viene riprodotto il nuovo elemento multimediale. In caso contrario, il supporto corrente continua a essere riprodotto senza interruzioni. **L'oggetto AxWMPLib.AxWindowsMediaPlayer** è rappresentato dalla variabile denominata player.
 
 
 ```CSharp
@@ -99,7 +99,7 @@ End If
 
 | Requisito | Valore |
 |----------------------|------------------------------------------------------------------------------------------------------------------------|
-| Versione<br/>   | Windows Media Player 9 serie o versione successiva<br/>                                                                      |
+| Versione<br/>   | Windows Media Player serie 9 o successive<br/>                                                                      |
 | Spazio dei nomi<br/> | **WMPLib**<br/>                                                                                                  |
 | Assembly<br/>  | <dl> <dt>Interop.WMPLib.dll (Interop.WMPLib.dll.dll)</dt> </dl> |
 

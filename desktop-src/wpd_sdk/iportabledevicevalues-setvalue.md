@@ -1,7 +1,7 @@
 ---
 description: Il metodo SetValue aggiunge un nuovo valore PROPVARIANT o ne sovrascrive uno esistente.
 ms.assetid: 69630a21-79e9-4c96-8ed7-9a41ebb991cd
-title: 'Metodo IPortableDeviceValues:: SetValue (PortableDeviceTypes. h)'
+title: Metodo IPortableDeviceValues::SetValue (PortableDeviceTypes.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -14,16 +14,16 @@ api_type:
 api_location:
 - PortableDeviceGUIDs.lib
 - PortableDeviceGUIDs.dll
-ms.openlocfilehash: 4c2ba6c5b6f015e5961356ff8e246605bfeddd31
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: f6af975b2876a177207df4f57bfe1f76d78a4b7239ce6d9c4cfcab52f0cf9042
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "106326846"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120055041"
 ---
-# <a name="iportabledevicevaluessetvalue-method"></a>Metodo IPortableDeviceValues:: SetValue
+# <a name="iportabledevicevaluessetvalue-method"></a>Metodo IPortableDeviceValues::SetValue
 
-Il **Metodo SetValue aggiunge** un nuovo valore **PROPVARIANT** o ne sovrascrive uno esistente.
+Il **metodo SetValue** aggiunge un nuovo **valore PROPVARIANT** o ne sovrascrive uno esistente.
 
 ## <a name="syntax"></a>Sintassi
 
@@ -41,29 +41,29 @@ HRESULT SetValue(
 
 <dl> <dt>
 
-*chiave* \[ di in\]
+*chiave* \[ Pollici\]
 </dt> <dd>
 
-Oggetto **REFPROPERTYKEY** che specifica l'elemento da creare o sovrascrivere.
+**REFPROPERTYKEY che** specifica l'elemento da creare o sovrascrivere.
 
 </dd> <dt>
 
-*pValue* \[ in\]
+*pValue* \[ Pollici\]
 </dt> <dd>
 
-Oggetto **PROPVARIANT** che specifica il nuovo valore. L'SDK copia il valore, in modo che il chiamante possa rilasciare la variabile locale chiamando **PropVariantClear** dopo la chiamata a questo metodo.
+Oggetto **PROPVARIANT** che specifica il nuovo valore. L'SDK copia il valore, in modo che il chiamante possa rilasciare la variabile locale chiamando **PropVariantClear** dopo aver chiamato questo metodo.
 
 </dd> </dl>
 
 ## <a name="return-value"></a>Valore restituito
 
-Il metodo restituisce un valore **HRESULT**. I valori possibili includono, ma non sono limitati a, quelli indicati nella tabella seguente.
+Il metodo restituisce un **valore HRESULT.** I valori possibili includono, ma non sono limitati a, quelli indicati nella tabella seguente.
 
 
 
 | Codice restituito                                                                          | Descrizione                      |
 |--------------------------------------------------------------------------------------|----------------------------------|
-| <dl> <dt>**\_OK**</dt> </dl> | Il metodo è riuscito.<br/> |
+| <dl> <dt>**S \_ OK**</dt> </dl> | Il metodo è riuscito.<br/> |
 
 
 
@@ -71,11 +71,11 @@ Il metodo restituisce un valore **HRESULT**. I valori possibili includono, ma no
 
 ## <a name="remarks"></a>Commenti
 
-Quando VARTYPE per *pValue* è VT \_ vector o VT \_ Ui1, non è supportata l'impostazione di un buffer di dimensioni **null** o zero. Ad esempio, non sono consentiti né pValue. Campo CAUB. pElems = **null** né pValue. Campo CAUB. cElems = 0.
+Quando VARTYPE per *pValue* è VT VECTOR o \_ VT UI1, l'impostazione di un buffer NULL o \_ di dimensioni zero non è supportata.  Ad esempio, né pValue.caub.pElems = **NULL** né pValue.caub.cElems = 0 sono consentiti.
 
-Questo metodo può essere utilizzato per recuperare un valore di qualsiasi tipo dalla raccolta. Tuttavia, se si conosce il tipo di valore in anticipo, utilizzare uno dei metodi **set** specializzati di questa interfaccia per evitare il sovraccarico dell'utilizzo diretto dei valori PROPVARIANT.
+Questo metodo può essere utilizzato per recuperare un valore di qualsiasi tipo dalla raccolta. Tuttavia, se si conosce in anticipo il tipo di valore, usare uno dei metodi **Set...** specializzati di questa interfaccia per evitare l'overhead di utilizzo diretto dei valori PROPVARIANT.
 
-Se un valore esistente ha la stessa chiave specificata dal parametro *Key* , sovrascrive il valore esistente senza alcun avviso. La memoria della chiave esistente viene rilasciata in modo appropriato.
+Se un valore esistente ha la stessa chiave specificata dal parametro *key,* sovrascrive il valore esistente senza alcun avviso. La memoria della chiave esistente viene rilasciata in modo appropriato.
 
 ## <a name="requirements"></a>Requisiti
 
@@ -83,8 +83,8 @@ Se un valore esistente ha la stessa chiave specificata dal parametro *Key* , sov
 
 | Requisito | Valore |
 |--------------------|----------------------------------------------------------------------------------------------------|
-| Intestazione<br/>  | <dl> <dt>PortableDeviceTypes. h</dt> </dl>   |
-| Libreria<br/> | <dl> <dt>PortableDeviceGUIDs. lib</dt> </dl> |
+| Intestazione<br/>  | <dl> <dt>PortableDeviceTypes.h</dt> </dl>   |
+| Libreria<br/> | <dl> <dt>PortableDeviceGUIDs.lib</dt> </dl> |
 
 
 
@@ -95,10 +95,10 @@ Se un valore esistente ha la stessa chiave specificata dal parametro *Key* , sov
 [**Interfaccia IPortableDeviceValues**](iportabledevicevalues.md)
 </dt> <dt>
 
-[**IPortableDeviceValues:: GetValue**](iportabledevicevalues-getvalue.md)
+[**IPortableDeviceValues::GetValue**](iportabledevicevalues-getvalue.md)
 </dt> <dt>
 
-[**IPortableDeviceValues:: RemoveValue**](iportabledevicevalues-removevalue.md)
+[**IPortableDeviceValues::RemoveValue**](iportabledevicevalues-removevalue.md)
 </dt> </dl>
 
  

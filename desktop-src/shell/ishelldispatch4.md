@@ -13,19 +13,19 @@ api_type:
 api_location:
 - Shell32.dll
 ms.assetid: 4fe37e38-ee71-41f0-b620-35fdc18f9dbb
-ms.openlocfilehash: daec9c922a0bac05154c1108f236ddf336a2e380
-ms.sourcegitcommit: 3caaa3c92dcb1ef12f84464d14ce6262e65e988e
+ms.openlocfilehash: 057ef4082bac8d04c006d951db7d2d251be2f8c62e88af65bc1a69678514af81
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/12/2021
-ms.locfileid: "109843062"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118969010"
 ---
 # <a name="ishelldispatch4-object"></a>Oggetto IShellDispatch4
 
 Estende [**l'oggetto IShellDispatch3.**](ishelldispatch3.md) Oltre alle proprietà e ai metodi supportati da **IShellDispatch3,** **IShellDispatch4** supporta quattro metodi aggiuntivi.
 
 > [!Note]  
-> **IShellDispatch4 viene** implementato e accessibile tramite [**l'oggetto Shell.**](shell.md)
+> **IShellDispatch4 viene implementato** e accessibile tramite l'oggetto [**Shell.**](shell.md)
 
  
 
@@ -44,9 +44,9 @@ Estende [**l'oggetto IShellDispatch3.**](ishelldispatch3.md) Oltre alle propriet
 | Metodo                                                     | Descrizione                                                         |
 |:-----------------------------------------------------------|:--------------------------------------------------------------------|
 | [**ExplorerPolicy**](ishelldispatch4-explorerpolicy.md)   | Ottiene il valore per un criterio di Internet Explorer specificati.<br/> |
-| [**GetSetting**](ishelldispatch4-getsetting.md)           | Recupera un'impostazione shell globale.<br/>                        |
+| [**GetSetting**](ishelldispatch4-getsetting.md)           | Recupera un'impostazione globale della shell.<br/>                        |
 | [**ToggleDesktop**](ishelldispatch4-toggledesktop.md)     | Visualizza o nasconde il desktop.<br/>                           |
-| [**Sicurezza di Windows**](ishelldispatch4-windowssecurity.md) | Consente di visualizzare **Sicurezza di Windows** finestra di dialogo.<br/>            |
+| [**WindowsSicurezza**](ishelldispatch4-windowssecurity.md) | Consente di visualizzare **Sicurezza di Windows** finestra di dialogo.<br/>            |
 
 
 
@@ -54,7 +54,7 @@ Estende [**l'oggetto IShellDispatch3.**](ishelldispatch3.md) Oltre alle propriet
 
 ## <a name="remarks"></a>Commenti
 
-Per una descrizione dei servizi Windows, vedere la [documentazione relativa ai](../services/services.md) servizi.
+Per una descrizione dei Windows, vedere la documentazione [relativa ai](../services/services.md) servizi.
 
 ## <a name="requirements"></a>Requisiti
 
@@ -62,8 +62,8 @@ Per una descrizione dei servizi Windows, vedere la [documentazione relativa ai](
 
 | Requisito | Valore |
 |-------------------------------------|---------------------------------------------------------------------------------------------------------------|
-| Client minimo supportato<br/> | Solo app desktop di Windows XP \[\]<br/>                                                                   |
-| Server minimo supportato<br/> | Solo app desktop di Windows Server 2003 \[\]<br/>                                                          |
+| Client minimo supportato<br/> | Windows Solo \[ app desktop XP\]<br/>                                                                   |
+| Server minimo supportato<br/> | Windows Solo app desktop di Server 2003 \[\]<br/>                                                          |
 | Intestazione<br/>                   | <dl> <dt>Shldisp.h</dt> </dl>                          |
 | Idl<br/>                      | <dl> <dt>Shldisp.idl</dt> </dl>                        |
 | DLL<br/>                      | <dl> <dt>Shell32.dll (versione 6.0 o successiva)</dt> </dl> |

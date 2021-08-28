@@ -16,12 +16,12 @@ api_location:
 - Strmbase.dll
 - Strmbasd.lib
 - Strmbasd.dll
-ms.openlocfilehash: 857dbdeee9a2add9ab77cae0ff97d69699d2dd2e
-ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
+ms.openlocfilehash: 6355876c2237ec62813366c0a4fa32ffaff3d3c745a11ffde83fca81356edb00
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/28/2021
-ms.locfileid: "108099129"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120055178"
 ---
 # <a name="cmediacontrolgettypeinfo-method"></a>Metodo CMediaControl.GetTypeInfo
 
@@ -47,7 +47,7 @@ HRESULT GetTypeInfo(
 *itinfo* 
 </dt> <dd>
 
-Informazioni sul tipo da restituire. Passare zero per recuperare le informazioni sul tipo per **l'implementazione di IDispatch.**
+Digitare le informazioni da restituire. Passare zero per recuperare le informazioni sul tipo per **l'implementazione di IDispatch.**
 
 </dd> <dt>
 
@@ -67,7 +67,7 @@ Indirizzo di un puntatore all'oggetto informazioni sul tipo richiesto.
 
 ## <a name="return-value"></a>Valore restituito
 
-Restituisce un PUNTATORE E \_ se *pptinfo* non è valido. Restituisce TYPE \_ E \_ ELEMENTNOTFOUND se *itinfo* è diverso da zero. Restituisce S \_ OK se ha esito positivo. In caso contrario, **restituisce un HRESULT** da una delle chiamate per recuperare il tipo.
+Restituisce un puntatore E \_ se *pptinfo* non è valido. Restituisce TYPE \_ E \_ ELEMENTNOTFOUND se *itinfo* è diverso da zero. Restituisce S \_ OK se ha esito positivo. In caso contrario, restituisce **un HRESULT** da una delle chiamate per recuperare il tipo.
 
 ## <a name="requirements"></a>Requisiti
 
@@ -75,7 +75,7 @@ Restituisce un PUNTATORE E \_ se *pptinfo* non è valido. Restituisce TYPE \_ E 
 
 | Requisito | Valore |
 |--------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Intestazione<br/>  | <dl> <dt>Ctlutil.h (include Streams.h)</dt> </dl>                                                                                   |
+| Intestazione<br/>  | <dl> <dt>Ctlutil.h (include Flussi.h)</dt> </dl>                                                                                   |
 | Libreria<br/> | <dl> <dt>Strmbase.lib (build di vendita al dettaglio); </dt> <dt>Strmbasd.lib (build di debug)</dt> </dl> |
 
 

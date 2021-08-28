@@ -4,20 +4,20 @@ ms.assetid: eff36db1-3920-4dd6-b786-c8db5c43e5ea
 title: Cina
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 1640c71cff5d91dd34bf13ba05e0bbcb2c3f5d57
-ms.sourcegitcommit: a47bd86f517de76374e4fff33cfeb613eb259a7e
+ms.openlocfilehash: b66fdd425dabd2f7fdbad09091cd2fccc4113cbba91ee15857af8f0d15b98069
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/06/2021
-ms.locfileid: "106304331"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120055541"
 ---
 # <a name="china"></a>Cina
 
-Per una spiegazione delle tabelle seguenti, vedere [tabelle e assegnazioni](tables-and-assignments.md).
+Per una spiegazione delle tabelle seguenti, vedere [Tabelle e assegnazioni.](tables-and-assignments.md)
 
-Gli indici di frequenza nelle tabelle Cina sono adatti per l'uso come numeri di canale.
+Gli indici di frequenza nelle tabelle cina sono adatti per l'uso come numeri di canale.
 
-### <a name="china-broadcast-assignments"></a>Assegnazioni broadcast in Cina
+### <a name="china-broadcast-assignments"></a>Assegnazioni di trasmissioni in Cina
 
 
 ```C++
@@ -221,7 +221,7 @@ Gli indici di frequenza nelle tabelle Cina sono adatti per l'uso come numeri di 
 
 <dl> <dt>
 
-[Ottimizzazione della TV analoga internazionale](international-analog-tv-tuning.md)
+[International Analog TV Tuning](international-analog-tv-tuning.md)
 </dt> </dl>
 
  

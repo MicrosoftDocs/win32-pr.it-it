@@ -1,9 +1,9 @@
 ---
-title: Metodi AddArc di ID2D1GeometrySink (D2d1. h)
-description: Crea un singolo arco e lo aggiunge alla geometria del percorso.
+title: Metodi AddArc ID2D1GeometrySink (D2d1.h)
+description: Crea un singolo arco e lo aggiunge alla geometria del tracciato.
 ms.assetid: 845fed36-8425-45fd-a12e-7537e5ba3c4f
 keywords:
-- Metodo AddArc Direct2D
+- Metodi AddArc Direct2D
 topic_type:
 - apiref
 api_location:
@@ -12,16 +12,16 @@ api_type:
 - DllExport
 ms.date: 07/02/2019
 ms.topic: reference
-ms.openlocfilehash: 5330ba7abf00ec4a99bc132c94d53414d9c430ee
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: c84036db8eb7a39237b39972448b0331a11ded940c11ae9642a313c499355c4e
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "106330075"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119917841"
 ---
-# <a name="id2d1geometrysinkaddarc-methods"></a>Metodi ID2D1GeometrySink:: AddArc
+# <a name="id2d1geometrysinkaddarc-methods"></a>Metodi ID2D1GeometrySink::AddArc
 
-Crea un singolo arco e lo aggiunge alla geometria del percorso.
+Crea un singolo arco e lo aggiunge alla geometria del tracciato.
 
 ### <a name="overload-list"></a>Elenco di overload
 
@@ -29,8 +29,8 @@ Crea un singolo arco e lo aggiunge alla geometria del percorso.
 
 | Metodo                                                                                | Descrizione                                         |
 |:--------------------------------------------------------------------------------------|:----------------------------------------------------|
-| [**AddArc ( \_ segmento di arco D2D1 \_&)**](/windows/win32/api/d2d1/nf-d2d1-id2d1geometrysink-addarc(constd2d1_arc_segment_))  | Aggiunge un singolo arco alla geometria del percorso.<br/>  |
-| [**AddArc ( \_ segmento di arco d2d1 \_ \* )**](/windows/win32/api/d2d1/nf-d2d1-id2d1geometrysink-addarc(constd2d1_arc_segment_)) | Aggiunge un singolo arco alla geometria del percorso. <br/> |
+| [**AddArc(D2D1 \_ ARC \_ SEGMENT&)**](/windows/win32/api/d2d1/nf-d2d1-id2d1geometrysink-addarc(constd2d1_arc_segment_))  | Aggiunge un singolo arco alla geometria del tracciato.<br/>  |
+| [**AddArc(D2D1 \_ ARC \_ SEGMENT \* )**](/windows/win32/api/d2d1/nf-d2d1-id2d1geometrysink-addarc(constd2d1_arc_segment_)) | Aggiunge un singolo arco alla geometria del tracciato. <br/> |
 
 
 
@@ -40,8 +40,8 @@ Crea un singolo arco e lo aggiunge alla geometria del percorso.
 
 | Requisito | Valore |
 |--------------------|-------------------------------------------------------------------------------------|
-| Intestazione<br/>  | <dl> <dt>D2d1. h</dt> </dl>   |
-| Libreria<br/> | <dl> <dt>D2d1. lib</dt> </dl> |
+| Intestazione<br/>  | <dl> <dt>D2d1.h</dt> </dl>   |
+| Libreria<br/> | <dl> <dt>D2d1.lib</dt> </dl> |
 | DLL<br/>     | <dl> <dt>D2d1.dll</dt> </dl> |
 
 

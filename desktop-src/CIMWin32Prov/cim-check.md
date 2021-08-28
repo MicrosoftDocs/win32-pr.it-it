@@ -23,20 +23,20 @@ api_type:
 - DllExport
 api_location:
 - CIMWin32.dll
-ms.openlocfilehash: 079eded352c81bc7a066a02616cf314435e7c862b7a34b1b957a0a633f73c20e
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 42852346af5e4f19038594627e9b7f567e2d3e86
+ms.sourcegitcommit: 61a4c522182aa1cacbf5669683d9570a3bf043b2
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "117835066"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "122885309"
 ---
 # <a name="cim_check-class"></a>Classe CIM \_ Check
 
-La **classe CIM \_ Check** rappresenta una condizione o una caratteristica che dovrebbe essere true in un ambiente definito o con ambito da un'istanza di [**una classe CIM \_ ComputerSystem.**](cim-computersystem.md) I controlli associati a un particolare elemento software sono organizzati in uno dei due gruppi usando la **proprietà Phase** dell'associazione [**CIM \_ SoftwareElementChecks.**](cim-softwareelementchecks.md)
+La **classe CIM \_ Check** rappresenta una condizione o una caratteristica che dovrebbe essere true in un ambiente definito o con ambito da un'istanza di [**una classe CIM \_ ComputerSystem.**](cim-computersystem.md) I controlli associati a un particolare elemento software sono organizzati in uno dei due gruppi usando la proprietà **Phase** dell'associazione [**CIM \_ SoftwareElementChecks.**](cim-softwareelementchecks.md)
 
-Le condizioni che devono essere soddisfatte quando un elemento software si trova in un ambiente specifico sono note come condizioni in stato. Le condizioni che devono essere soddisfatte per la transizione dell'elemento software corrente allo stato successivo sono note come condizioni di stato successivo.
+Le condizioni che devono essere soddisfatte quando un elemento software si trova in un ambiente specifico sono note come condizioni in stato. Le condizioni che devono essere soddisfatte per la transizione dell'elemento software corrente allo stato successivo sono note come condizioni dello stato successivo.
 
-Un [**oggetto CIM \_ ComputerSystem**](cim-computersystem.md) rappresenta l'ambiente in cui è già installato [**un oggetto CIM \_ SoftwareElement**](cim-softwareelement.md) o in cui verrà installato **cim \_ SoftwareElement.** Nel caso in cui un elemento software sia già installato, l'associazione [**CIM \_ InstalledSoftwareElement**](cim-installedsoftwareelement.md) viene usata per identificare l'oggetto **CIM \_ ComputerSystem** che rappresenta l'"ambiente". Quando un elemento software viene distribuito e installato in un computer diverso, **l'oggetto CIM \_ ComputerSystem** per il sistema di destinazione è l'ambiente.
+Un [**oggetto CIM \_ ComputerSystem**](cim-computersystem.md) rappresenta l'ambiente in cui è già installato [**un elemento \_ CIM SoftwareElement**](cim-softwareelement.md) o in cui verrà installato **cim \_ SoftwareElement.** Nel caso in cui un elemento software sia già installato, l'associazione [**CIM \_ InstalledSoftwareElement**](cim-installedsoftwareelement.md) viene usata per identificare l'oggetto **CIM \_ ComputerSystem** che rappresenta l'"ambiente". Quando un elemento software viene distribuito e installato in un computer diverso, **l'oggetto CIM \_ ComputerSystem** per il sistema di destinazione è l'ambiente.
 
 > [!IMPORTANT]
 > Le classi CIM (Distributed Management Task Force) DMTF (Common Information Model Distributed Management Task Force) sono le classi padre su cui vengono compilate le classi WMI. WMI attualmente supporta solo gli schemi [della versione CIM 2.x](https://dmtf.org/standards/cim/schemas).
@@ -78,7 +78,7 @@ La **classe CIM \_ Check** include questi metodi.
 
 | Metodo                                             | Descrizione                                                   |
 |:---------------------------------------------------|:--------------------------------------------------------------|
-| [**evocare**](invoke-method-in-class-cim-check.md) | Consente di eseguire un'azione specifica. Non implementato da WMI.<br/> |
+| [**Evocare**](invoke-method-in-class-cim-check.md) | Consente di eseguire un'azione specifica. Non implementato da WMI.<br/> |
 
 
 
@@ -614,7 +614,7 @@ BS2000/OSD
 
 </dt> <dd>
 
-UNIX BSD
+BSD UNIX
 
 </dd> <dt>
 
@@ -641,7 +641,7 @@ UNIX BSD
 
 <span id="OS9"></span><span id="os9"></span>
 
-<span id="OS9"></span><span id="os9"></span>**OS9** (45)
+<span id="OS9"></span><span id="os9"></span>**Sistema operativo 9** (45)
 
 
 </dt> <dd>
@@ -659,7 +659,7 @@ Mac OS 9
 
 <span id="Inferno"></span><span id="inferno"></span><span id="INFERNO"></span>
 
-<span id="Inferno"></span><span id="inferno"></span><span id="INFERNO"></span>**Ilva** (47)
+<span id="Inferno"></span><span id="inferno"></span><span id="INFERNO"></span>**Infernale** (47)
 
 
 </dt> <dd></dd> <dt>
@@ -771,29 +771,29 @@ Sistema operativo Palm
 **Version**
 </dt> <dd> <dl> <dt>
 
-Tipo di dati: **string**
+Tipo di dati: **stringa**
 </dt> <dt>
 
 Tipo di accesso: sola lettura
 </dt> <dt>
 
-Qualificatori: [**propagati**](/windows/desktop/WmiSdk/standard-qualifiers) ("[**CIM \_ SoftwareElement**](cim-softwareelement.md).**Versione**"), [**chiave CIM, \_**](/windows/desktop/WmiSdk/standard-wmi-qualifiers) [**Maxlen**](/windows/desktop/WmiSdk/standard-qualifiers) (64), [**Mappingstrings**](/windows/desktop/WmiSdk/standard-qualifiers) ("MIF. DMTF \| ComponentID \| 001.3")
+Qualificatori: [**propagati**](/windows/desktop/WmiSdk/standard-qualifiers) ("[**CIM \_ SoftwareElement**](cim-softwareelement.md).**Version**"), [**CIM \_ key,**](/windows/desktop/WmiSdk/standard-wmi-qualifiers) [**Maxlen**](/windows/desktop/WmiSdk/standard-qualifiers) (64), [**Mappingstrings**](/windows/desktop/WmiSdk/standard-qualifiers) ("MIF. DMTF \| ComponentID \| 001.3")
 </dt> </dl>
 
 Versione dell'operazione.
 
 La versione dell'operazione deve essere in uno dei formati seguenti:
 
--   <major>.<minor>.<revision>
--   <major>.<minor><letter><revision>
+-   &lt;major &gt; . &lt; minor &gt; . &lt; Revisione&gt;
+-   &lt;major &gt; . &lt; revisione &gt; &lt; di lettere &gt; &lt; secondarie&gt;
 
 </dd> </dl>
 
 ## <a name="remarks"></a>Commenti
 
-WMI non implementa questa classe. Per altre informazioni sulle classi derivate da **CIM \_ Check,** vedere [Classi Win32.](win32-provider.md)
+WMI non implementa questa classe. Per altre informazioni sulle classi derivate da **CIM \_ Check,** vedere [Classi Win32](win32-provider.md).
 
-Questa documentazione è derivata dalle descrizioni della classe CIM pubblicate da DMTF. Microsoft potrebbe aver apportato modifiche per correggere errori secondari, essere conforme agli standard della documentazione di Microsoft SDK o fornire altre informazioni.
+Questa documentazione è derivata dalle descrizioni della classe CIM pubblicate da DMTF. Microsoft potrebbe aver apportato modifiche per correggere gli errori minori, essere conforme agli standard della documentazione di Microsoft SDK o fornire altre informazioni.
 
 ## <a name="requirements"></a>Requisiti
 
