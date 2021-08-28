@@ -18,12 +18,12 @@ api_type:
 api_location:
 - ESENT.DLL
 ROBOTS: INDEX,FOLLOW
-ms.openlocfilehash: b22f1454cad9962d429a497acb2b91f92d44b3e9a43c36ddb74cde06a54782c3
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: ad8f40f53ec23a5a555efeb270370d384d6dc9a6
+ms.sourcegitcommit: 4665ebce0c106bdb52eef36e544280b496b6f50b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "118072894"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "122989054"
 ---
 # <a name="jetclosefile-function"></a>Funzione JetCloseFile
 
@@ -32,7 +32,7 @@ _**Si applica a:** Windows | Windows Server_
 
 ## <a name="jetclosefile-function"></a>Funzione JetCloseFile
 
-La **funzione JetCloseFile** chiude un file aperto con [JetOpenFile](./jetopenfile-function.md) dopo l'estrazione dei dati da tale file [tramite JetReadFile](./jetreadfile-function.md).
+La **funzione JetCloseFile** chiude un file aperto con [JetOpenFile](./jetopenfile-function.md) dopo l'estrazione dei dati da tale file tramite [JetReadFile](./jetreadfile-function.md).
 
 ```cpp
     JET_ERR JET_API JetCloseFile(
@@ -48,103 +48,42 @@ Handle del file da leggere.
 
 ### <a name="return-value"></a>Valore restituito
 
-Questa funzione restituisce il [JET_ERR](./jet-err.md) dati con uno dei codici restituiti seguenti. Per altre informazioni sui possibili errori ESE, vedere [Extensible Archiviazione Engine Errors](./extensible-storage-engine-errors.md) and [Error Handling Parameters](./error-handling-parameters.md).
+Questa funzione restituisce il [JET_ERR](./jet-err.md) dati con uno dei codici restituiti seguenti. Per altre informazioni sui possibili errori ESE, vedere Errori del [motore di Archiviazione](./extensible-storage-engine-errors.md) estendibile e Parametri di gestione degli [errori](./error-handling-parameters.md).
 
-<table>
-<colgroup>
-<col style="width: 50%" />
-<col style="width: 50%" />
-</colgroup>
-<thead>
-<tr class="header">
-<th><p>Codice restituito</p></th>
-<th><p>Descrizione</p></th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td><p>JET_errSuccess</p></td>
-<td><p>Operazione riuscita.</p></td>
-</tr>
-<tr class="even">
-<td><p>JET_errClientRequestToStopJetService</p></td>
-<td><p>Non è possibile completare l'operazione perché tutte le attività nell'istanza associata alla sessione sono affatto in seguito a una chiamata a <a href="gg269240(v=exchg.10).md">JetStopService.</a></p></td>
-</tr>
-<tr class="odd">
-<td><p>JET_errInstanceUnavailable</p></td>
-<td><p>Non è possibile completare l'operazione perché l'istanza associata alla sessione ha rilevato un errore irreversibile che richiede la revoca dell'accesso a tutti i dati per proteggere l'integrità di questi dati.</p>
-<p>Questo errore verrà restituito solo da Windows XP e versioni successive.</p></td>
-</tr>
-<tr class="even">
-<td><p>JET_errInvalidParameter</p></td>
-<td><p>Uno dei parametri forniti contiene un valore imprevisto o contiene un valore che non ha senso se combinato con il valore di un altro parametro. Questa operazione può verificarsi <strong>per JetCloseFile</strong> quando:</p>
-<ul>
-<li><p>L'handle di istanza specificato non è valido (Windows XP e versioni successive).</p></li>
-<li><p>L'handle di file specificato non è valido.</p></li>
-</ul></td>
-</tr>
-<tr class="odd">
-<td><p>JET_errNoBackup</p></td>
-<td><p>L'operazione non è riuscita perché non è in corso alcun backup esterno.</p></td>
-</tr>
-<tr class="even">
-<td><p>JET_errNotInitialized</p></td>
-<td><p>Non è possibile completare l'operazione perché l'istanza associata alla sessione non è ancora stata inizializzata.</p></td>
-</tr>
-<tr class="odd">
-<td><p>JET_errRestoreInProgress</p></td>
-<td><p>Non è possibile completare l'operazione perché è in corso un'operazione di ripristino nell'istanza associata alla sessione.</p></td>
-</tr>
-<tr class="even">
-<td><p>JET_errRunningInMultiInstanceMode</p></td>
-<td><p>L'operazione non è riuscita perché è stato effettuato un tentativo di usare il motore in modalità legacy (modalità di compatibilità Windows 2000) in cui è supportata una sola istanza quando in realtà esistono già più istanze.</p></td>
-</tr>
-<tr class="odd">
-<td><p>JET_errTermInProgress</p></td>
-<td><p>Non è possibile completare l'operazione perché è in corso l'arresto dell'istanza associata alla sessione.</p></td>
-</tr>
-</tbody>
-</table>
+
+| <p>Codice restituito</p> | <p>Descrizione</p> | 
+|--------------------|--------------------|
+| <p>JET_errSuccess</p> | <p>Operazione riuscita.</p> | 
+| <p>JET_errClientRequestToStopJetService</p> | <p>Non è possibile completare l'operazione perché tutte le attività nell'istanza associata alla sessione sono cesse a causa di una chiamata a <a href="gg269240(v=exchg.10).md">JetStopService.</a></p> | 
+| <p>JET_errInstanceUnavailable</p> | <p>Non è possibile completare l'operazione perché l'istanza associata alla sessione ha rilevato un errore irreversibile che richiede la revoca dell'accesso a tutti i dati per proteggere l'integrità di questi dati.</p><p>Questo errore verrà restituito solo da Windows XP e versioni successive.</p> | 
+| <p>JET_errInvalidParameter</p> | <p>Uno dei parametri forniti conteneva un valore imprevisto o conteneva un valore che non aveva senso se combinato con il valore di un altro parametro. Questo problema può verificarsi <strong>per JetCloseFile</strong> quando:</p><ul><li><p>L'handle di istanza specificato non è valido (Windows XP e versioni successive),</p></li><li><p>L'handle di file specificato non è valido.</p></li></ul> | 
+| <p>JET_errNoBackup</p> | <p>L'operazione non è riuscita perché non è in corso alcun backup esterno.</p> | 
+| <p>JET_errNotInitialized</p> | <p>Non è possibile completare l'operazione perché l'istanza associata alla sessione non è ancora stata inizializzata.</p> | 
+| <p>JET_errRestoreInProgress</p> | <p>Non è possibile completare l'operazione perché è in corso un'operazione di ripristino nell'istanza associata alla sessione.</p> | 
+| <p>JET_errRunningInMultiInstanceMode</p> | <p>L'operazione non è riuscita perché è stato effettuato un tentativo di usare il motore in modalità legacy (modalità di compatibilità Windows 2000) in cui è supportata una sola istanza quando in realtà esistono già più istanze.</p> | 
+| <p>JET_errTermInProgress</p> | <p>Non è possibile completare l'operazione perché è in corso l'arresto dell'istanza associata alla sessione.</p> | 
+
 
 
 In caso di esito positivo, l'handle di file viene chiuso. Se un file di database è stato chiuso, il file di patch del database associato (se presente) viene eliminato.
 
-In caso di errore, non si verifica alcuna modifica.
+In caso di errore, non viene apportata alcuna modifica.
 
 #### <a name="remarks"></a>Commenti
 
-Il motore di database supporta attualmente un solo file aperto alla volta tramite [JetOpenFile.](./jetopenfile-function.md) Se un handle di file viene aperto [tramite JetOpenFile,](./jetopenfile-function.md) è necessario chiuderlo usando **JetCloseFile** prima di poter aprire un altro file.
+Il motore di database attualmente supporta solo un file aperto tramite [JetOpenFile](./jetopenfile-function.md) alla volta. Se un handle di file viene aperto [usando JetOpenFile,](./jetopenfile-function.md) è necessario chiuderlo usando **JetCloseFile** prima di poter aprire un altro file.
 
 #### <a name="requirements"></a>Requisiti
 
-<table>
-<colgroup>
-<col style="width: 50%" />
-<col style="width: 50%" />
-</colgroup>
-<tbody>
-<tr class="odd">
-<td><p><strong>Client</strong></p></td>
-<td><p>Richiede Windows Vista, Windows XP o Windows 2000 Professional.</p></td>
-</tr>
-<tr class="even">
-<td><p><strong>Server</strong></p></td>
-<td><p>Richiede Windows Server 2008, Windows Server 2003 o Windows 2000 Server.</p></td>
-</tr>
-<tr class="odd">
-<td><p><strong>Intestazione</strong></p></td>
-<td><p>Dichiarato in Esent.h.</p></td>
-</tr>
-<tr class="even">
-<td><p><strong>Libreria</strong></p></td>
-<td><p>Usare ESENT.lib.</p></td>
-</tr>
-<tr class="odd">
-<td><p><strong>DLL</strong></p></td>
-<td><p>Richiede ESENT.dll.</p></td>
-</tr>
-</tbody>
-</table>
+
+| Requisito | Valore |
+|------------|----------|
+| <p><strong>Client</strong></p> | <p>Richiede Windows Vista, Windows XP o Windows 2000 Professional.</p> | 
+| <p><strong>Server</strong></p> | <p>Richiede Windows Server 2008, Windows Server 2003 o Windows 2000 Server.</p> | 
+| <p><strong>Intestazione</strong></p> | <p>Dichiarato in Esent.h.</p> | 
+| <p><strong>Libreria</strong></p> | <p>Usare ESENT.lib.</p> | 
+| <p><strong>DLL</strong></p> | <p>Richiede ESENT.dll.</p> | 
+
 
 
 #### <a name="see-also"></a>Vedere anche

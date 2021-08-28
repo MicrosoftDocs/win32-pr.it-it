@@ -1,19 +1,19 @@
 ---
-description: <url>L'elemento specifica un URL per il percorso per questo connettore di ricerca.
+description: "&lt;L'elemento url specifica un URL per il percorso per questo &gt; connettore di ricerca."
 ms.assetid: fdc9e138-2e98-4f01-ab7b-0c3dfad5a4dd
 title: Elemento simpleLocation url (schema del connettore di ricerca)
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: fce95943017f4905414f65b75086d4babdf3750505fece0b73255e0e63623e9b
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 8818eacdaecd33353d4340270770e80b4a63ceee
+ms.sourcegitcommit: 61a4c522182aa1cacbf5669683d9570a3bf043b2
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "118226326"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "122883110"
 ---
 # <a name="simplelocation-url-element-search-connector-schema"></a>Elemento simpleLocation url (schema del connettore di ricerca)
 
-<url>L'elemento specifica un URL per il percorso per questo connettore di ricerca. Questo valore può essere un NORMALE URL file:// definito nel documento RFC 1738 ( documento o URL che usa il protocollo https://www.ietf.org/rfc/rfc1738.txt) knownfolders: . Questo elemento non ha elementi figlio e nessun attributo.
+&lt;L'elemento url specifica un URL per il percorso per questo &gt; connettore di ricerca. Questo valore può essere un NORMALE URL file:// come definito nel documento RFC 1738 ( document o o un URL che usa https://www.ietf.org/rfc/rfc1738.txt) il protocollo knownfolders:. Questo elemento non ha elementi figlio e nessun attributo.
 
 ## <a name="syntax"></a>Sintassi
 
@@ -53,7 +53,7 @@ ms.locfileid: "118226326"
 
 ## <a name="remarks"></a>Commenti
 
-Per un elenco dei GUID di cartella noti, vedere [KNOWNFOLDERID.](/windows/desktop/shell/knownfolderid) Usare il formato seguente per il valore di questo elemento quando si usa il protocollo knownfolder: .
+Vedere [KNOWNFOLDERID per](/windows/desktop/shell/knownfolderid) un elenco di GUID di cartella noti. Usare il formato seguente per il valore di questo elemento quando si usa il protocollo knownfolder: .
 
 
 ```
@@ -62,7 +62,7 @@ Per un elenco dei GUID di cartella noti, vedere [KNOWNFOLDERID.](/windows/deskto
 
 
 
-Nella tabella seguente vengono illustrati Windows 7 GUID di cartelle note.
+La tabella seguente illustra i Windows GUID di 7 cartelle note.
 
 
 
@@ -71,7 +71,7 @@ Nella tabella seguente vengono illustrati Windows 7 GUID di cartelle note.
 | FOLDERID \_ AdminTools             | {724EF170-A42D-4FEF-9F-26-B6-0E-84-6F-BA-4F} |
 | FOLDERID \_ AppUpdates             | {a305ce99-f527-492b-8b-1a-7e-76-fa-98-d6-e4} |
 | FOLDERID \_ AddNewPrograms         | {de61d971-5ebc-4f02-a3-a9-6c-82-89-5e-5c-04} |
-| FOLDERID \_ CDBurning              | {9E52AB10-F80D-49DF-AC-B8-43-30-F5-68-78-55} |
+| FOLDERID \_ CDIng              | {9E52AB10-F80D-49DF-AC-B8-43-30-F5-68-78-55} |
 | FOLDERID \_ ChangeRemovePrograms   | {df7266ac-9274-4867-8d-55-3b-d6-61-de-87-2d} |
 | FOLDERID \_ CommonAdminTools       | {D0384E7D-BAC3-4797-8F-14-CB-A2-29-B3-92-B5} |
 | FOLDERID \_ CommonOEMLinks         | {C1BAE2D0-10DF-4334-BE-DD-7A-A2-0B-22-7A-9D} |
@@ -90,9 +90,9 @@ Nella tabella seguente vengono illustrati Windows 7 GUID di cartelle note.
 | Documenti \_ FOLDERID              | {FDD39AD0-238F-46AF-AD-B4-6C-85-48-03-69-C7} |
 | FOLDERID \_ DocumentsLibrary       | {7b0db17d-9cd2-4a93-97-33-46-cc-89-02-2e-7c} |
 | Download \_ di FOLDERID              | {374de290-123f-4565-91-64-39-c4-92-5e-46-7b} |
-| Preferiti \_ FOLDERID              | {1777F761-68AD-4D8A-87-BD-30-B7-59-FA-33-DD} |
+| FOLDERID \_ Preferiti              | {1777F761-68AD-4D8A-87-BD-30-B7-59-FA-33-DD} |
 | Tipi di carattere FOLDERID \_                  | {FD228CB7-AE11-4AE3-86-4C-16-F3-91-0A-B8-FE} |
-| Giochi \_ FOLDERID                  | {cac52c1a-b53d-4edc-92-d7-6b-2e-8a-c1-94-34} |
+| FOLDERID \_ Games                  | {cac52c1a-b53d-4edc-92-d7-6b-2e-8a-c1-94-34} |
 | FOLDERID \_ GameTasks              | {54fae61-4dd8-4787-80-b6-9-2-20-c4-b7-0}     |
 | Cronologia \_ FOLDERID                | {D9DC8A3B-B784-432E-A7-81-5A-11-30-A7-59-63} |
 | FOLDERID \_ HomeGroup              | {52528a6b-b9e3-4add-b6-d-58-8c-2d-ba-84-2d}  |
@@ -106,7 +106,7 @@ Nella tabella seguente vengono illustrati Windows 7 GUID di cartelle note.
 | FOLDERID \_ LocalizedResourcesDir  | {2A00375E-224C-49DE-B8-D1-44-0D-F7-EF-3D-DC} |
 | FOLDERID \_ Musica                  | {4BD8D571-6D19-48D3-BE-97-42-22-20-08-0E-43} |
 | FOLDERID \_ MusicLibrary           | {2112ab0a-c86a-4ffe-a3-68-d-e9-6e-47-1-2e}   |
-| FOLDERID \_ NetHood                | {C5ABBF53-E17F-4121-89-00-86-62-6F-C2-C9-73} |
+| FOLDERID \_ Net 1                | {C5ABBF53-E17F-4121-89-00-86-62-6F-C2-C9-73} |
 | FOLDERID \_ NetworkFolder          | {D20BEEC4-5CA8-4905-AE-3B-BF-25-1E-A0-9B-53} |
 | FOLDERID \_ OriginalImages         | {2C36C0AA-5812-4b87-bf-d0-4c-d0-df-b1-9b-39} |
 | FOLDERID \_ PhotoAlbums            | {69D2CF90-FC33-4FB7-9A-0C-EB-B0-F0-FC-B4-3C} |
@@ -164,7 +164,7 @@ Nella tabella seguente vengono illustrati Windows 7 GUID di cartelle note.
 | FOLDERID \_ UserProfiles           | {0762D272-C50A-4BB0-A3-82-69-7D-CD-72-9B-80} |
 | FOLDERID \_ UserProgramFiles       | {5cd7aee2-2219-4a67-b8-5d-6c-9c-e1-56-60-cb} |
 | FOLDERID \_ UserProgramFilesCommon | {bcbd3057-ca5c-4622-b4-2d-bc-56-db-0a-e5-16} |
-| Video \_ folderID                 | {18989B1D-99B5-455B-84-1C-AB-7C-74-E4-DD-FC} |
+| Video \_ FOLDERID                 | {18989B1D-99B5-455B-84-1C-AB-7C-74-E4-DD-FC} |
 | FOLDERID \_ VideosLibrary {        | 491e922f-5643-4af4-a7-eb-4e-7a-13-8d-81-74}  |
 | FOLDERID \_ Windows {              | F38BF404-1D43-42F2-93-05-67-DE-0B-28-FC-23}  |
 

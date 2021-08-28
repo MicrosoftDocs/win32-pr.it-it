@@ -18,12 +18,12 @@ api_type:
 api_location:
 - ESENT.DLL
 ROBOTS: INDEX,FOLLOW
-ms.openlocfilehash: c24a0d1cf45d370482b4890451569900aac946e3
-ms.sourcegitcommit: 9b5faa61c38b2d0c432b7f2dbee8c127b0e28a7e
+ms.openlocfilehash: c94e5dc01d2aff69b699894f88287122cb9530cf
+ms.sourcegitcommit: 4665ebce0c106bdb52eef36e544280b496b6f50b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/19/2021
-ms.locfileid: "122465298"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "122984284"
 ---
 # <a name="jetsetls-function"></a>Funzione JetSetLS
 
@@ -59,24 +59,24 @@ Cursore da utilizzare per questa chiamata.
 
 Handle di contesto da associare al cursore o alla tabella.
 
-Quando JET_bitLSReset viene specificato, il valore effettivo di questo parametro viene ignorato e viene JET_LSNil usato.
+Quando JET_bitLSReset specificato, il valore effettivo di questo parametro viene ignorato e viene JET_LSNil usato.
 
 *grbit*
 
-Gruppo di bit che contengono le opzioni da utilizzare per questa chiamata, che includono zero o più delle opzioni seguenti.
+Gruppo di bit che contengono le opzioni da utilizzare per questa chiamata, che includono zero o più dei valori seguenti.
 
 
-| <p>valore</p> | <p>Significato</p> | 
+| <p>Valore</p> | <p>Significato</p> | 
 |--------------|----------------|
-| <p>JET_bitLSCursor</p> | <p>Questa opzione indica che l'handle di contesto deve essere associato al cursore specificato.</p><p>Se non JET_bitLSCursor né JET_bitLSTable specificato, JET_bitLSCursor si presuppone.</p><p>Non è valido usare questa opzione con JET_bitLSTable. L'operazione avrà esito negativo JET_errInvalidgrbit se viene tentata.</p> | 
-| <p>JET_bitLSReset</p> | <p>Questa opzione indica che l'handle di contesto specificato deve essere ignorato e che l'handle di contesto per l'oggetto scelto deve essere reimpostato JET_LSNil.</p><p>È importante notare che questa azione non comporta un callback per pulire il valore precedente dell'handle di contesto per l'oggetto scelto. È possibile eseguire la pulizia corretta dell'handle di contesto precedente <a href="gg269234(v=exchg.10).md">usando JetGetLS</a> con JET_bitLSReset. Per <a href="gg269234(v=exchg.10).md">altre informazioni, vedere JetGetLS.</a></p> | 
+| <p>JET_bitLSCursor</p> | <p>Questa opzione indica che l'handle di contesto deve essere associato al cursore specificato.</p><p>Se non JET_bitLSCursor né JET_bitLSTable, JET_bitLSCursor si presuppone che siano specificati.</p><p>Non è valido usare questa opzione con JET_bitLSTable. L'operazione avrà esito negativo JET_errInvalidgrbit se viene tentata.</p> | 
+| <p>JET_bitLSReset</p> | <p>Questa opzione indica che l'handle di contesto specificato deve essere ignorato e che l'handle di contesto per l'oggetto scelto deve essere reimpostato su JET_LSNil.</p><p>È importante notare che questa azione non comporta un callback per pulire il valore precedente dell'handle di contesto per l'oggetto scelto. È possibile eseguire la pulizia corretta dell'handle di contesto precedente <a href="gg269234(v=exchg.10).md">usando JetGetLS</a> con JET_bitLSReset. Per <a href="gg269234(v=exchg.10).md">altre informazioni, vedere JetGetLS.</a></p> | 
 | <p>JET_bitLSTable</p> | <p>Questa opzione indica che l'handle di contesto deve essere associato alla tabella associata al cursore specificato.</p><p>Non è valido usare questa opzione con JET_bitLSCursor. L'operazione avrà esito negativo JET_errInvalidgrbit se viene tentata.</p> | 
 
 
 
 ### <a name="return-value"></a>Valore restituito
 
-Questa funzione restituisce il [JET_ERR](./jet-err.md) dati con uno dei codici restituiti seguenti. Per altre informazioni sui possibili errori ESE, vedere Errori del [motore Archiviazione estendibile](./extensible-storage-engine-errors.md) e Parametri [di gestione degli errori](./error-handling-parameters.md).
+Questa funzione restituisce il [JET_ERR](./jet-err.md) dati con uno dei codici restituiti seguenti. Per altre informazioni sui possibili errori ESE, vedere Errori del [motore di Archiviazione](./extensible-storage-engine-errors.md) estendibile e Parametri di gestione degli [errori](./error-handling-parameters.md).
 
 
 | <p>Codice restituito</p> | <p>Descrizione</p> | 
@@ -99,14 +99,20 @@ In caso di errore, non è stata apportata alcuna modifica allo stato dell'oggett
 
 #### <a name="remarks"></a>Commenti
 
-L'Archiviazione locale per un cursore o una tabella deve essere visualizzato come cache volatile. L'applicazione deve prima provare a recuperare l'handle di contesto usando [JetGetLS.](./jetgetls-function.md) Se il valore non è impostato,ovvero è JET_LSNil), l'applicazione deve creare un nuovo contesto e caricarlo nella cache usando **JetSetLS**. L'applicazione può ripulire la cache usando una chiamata a [JetGetLS](./jetgetls-function.md) con JET_bitLSReset. Se il motore di database elimina la cache, verrà generato un callback di runtime per offrire all'applicazione la possibilità di pulire il contesto. Il tipo di callback verrà JET_cbtypFreeCursorLS handle di contesto associato a un cursore e JET_cbtypFreeTableLS per un handle di contesto associato a una tabella. In entrambi i casi, l'handle di contesto verrà passato come pvArg1. Vedere [JET_CALLBACK](./jet-callback-callback-function.md) per altre informazioni.
+L'Archiviazione locale per un cursore o una tabella deve essere visualizzato come cache volatile. L'applicazione deve prima provare a recuperare l'handle di contesto usando [JetGetLS.](./jetgetls-function.md) Se il valore non è impostato ,ovvero è JET_LSNil), l'applicazione deve creare un nuovo contesto e caricarlo nella cache usando **JetSetLS**. L'applicazione può ripulire la cache usando una chiamata a [JetGetLS](./jetgetls-function.md) con JET_bitLSReset. Se il motore di database elimina la cache, verrà generato un callback di runtime per offrire all'applicazione la possibilità di pulire il contesto. Il tipo di callback verrà JET_cbtypFreeCursorLS handle di contesto associato a un cursore e JET_cbtypFreeTableLS per un handle di contesto associato a una tabella. In entrambi i casi, l'handle di contesto verrà passato come pvArg1. Per [altre JET_CALLBACK,](./jet-callback-callback-function.md) vedere JET_CALLBACK.
 
-Il callback di runtime deve essere configurato correttamente per l'istanza associata alla sessione specificata prima di Archiviazione possibile usare localmente. Questo callback può essere impostato usando [JetSetSystemParameter](./jetsetsystemparameter-function.md) con [JET_paramRuntimeCallback](./callback-parameters.md). Per altre informazioni, vedere [JetSetSystemParameter](./jetsetsystemparameter-function.md) [e JET_paramRuntimeCallback](./callback-parameters.md) parametri di sistema.
+Il callback di runtime deve essere configurato correttamente per l'istanza associata alla sessione specificata prima che sia possibile Archiviazione locale. Questo callback può essere impostato usando [JetSetSystemParameter](./jetsetsystemparameter-function.md) con [JET_paramRuntimeCallback](./callback-parameters.md). Per altre informazioni, vedere [JetSetSystemParameter](./jetsetsystemparameter-function.md) [e JET_paramRuntimeCallback](./callback-parameters.md) in Parametri di sistema.
 
 #### <a name="requirements"></a>Requisiti
 
 
-| | | <p><strong>Client</strong></p> | <p>Richiede Windows Vista o Windows XP.</p> | | <p><strong>Server</strong></p> | <p>Richiede Windows Server 2008 o Windows Server 2003.</p> | | <p><strong>Intestazione</strong></p> | <p>Dichiarato in Esent.h.</p> | | <p><strong>Libreria</strong></p> | <p>Usare ESENT.lib.</p> | | <p><strong>DLL</strong></p> | <p>Richiede ESENT.dll.</p> | 
+| Requisito | Valore |
+|------------|----------|
+| <p><strong>Client</strong></p> | <p>Richiede Windows Vista o Windows XP.</p> | 
+| <p><strong>Server</strong></p> | <p>Richiede Windows Server 2008 o Windows Server 2003.</p> | 
+| <p><strong>Intestazione</strong></p> | <p>Dichiarato in Esent.h.</p> | 
+| <p><strong>Libreria</strong></p> | <p>Usare ESENT.lib.</p> | 
+| <p><strong>DLL</strong></p> | <p>Richiede ESENT.dll.</p> | 
 
 
 

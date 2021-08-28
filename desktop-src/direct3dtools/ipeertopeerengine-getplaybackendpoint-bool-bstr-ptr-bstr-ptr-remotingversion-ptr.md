@@ -1,5 +1,5 @@
 ---
-description: Ottiene l'indirizzo endpoint di un motore remoto.
+description: Ottiene l'indirizzo dell'endpoint di un motore remoto.
 MS-HAID: vspixengine.IPeerToPeerEngine\_GetPlaybackEndpoint\_BOOL\_BSTR\_ptr\_BSTR\_ptr\_RemotingVersion\_ptr
 MSHAttr:
 - PreferredSiteName:MSDN
@@ -17,16 +17,16 @@ api_location:
 topic_type:
 - APIRef
 - kbSyntax
-ms.openlocfilehash: 6b8d099762da58cefaaa208026c9b60fc5103f4e6b2551ba679da83a76f2f8bb
-ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
+ms.openlocfilehash: 06fea01d134aa58f9dc3839a48fa2f1bd910fc0b
+ms.sourcegitcommit: c276a8912787b2cda74dcf54eb96df961bb1188b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "120094791"
+ms.lasthandoff: 08/20/2021
+ms.locfileid: "122629750"
 ---
 # <a name="span-idvspixengineipeertopeerengine_getplaybackendpoint_bool_bstr_ptr_bstr_ptr_remotingversion_ptrspanipeertopeerenginegetplaybackendpoint-method"></a><span id="vspixengine.ipeertopeerengine_getplaybackendpoint_bool_bstr_ptr_bstr_ptr_remotingversion_ptr"></span>Metodo IPeerToPeerEngine::GetPlaybackEndpoint
 
-Ottiene l'indirizzo endpoint di un motore remoto.
+Ottiene l'indirizzo dell'endpoint di un motore remoto.
 
 ## <a name="syntax"></a>Sintassi
 
@@ -43,16 +43,16 @@ HRESULT GetPlaybackEndpoint(
 ## <a name="parameters"></a>Parametri
 
 *bUseAuthentication*   
-true se il motore remoto utilizza l'autenticazione; in caso contrario, false.
+true se il motore remoto usa l'autenticazione; in caso contrario, false.
 
 *pEndpoint*   
 Al ritorno, una stringa COM contenente l'indirizzo endpoint del computer di riproduzione remota.
 
 *sessionKey*   
-In caso di restituzione, stringa COM contenente la chiave di sessione utilizzata per la crittografia.
+In caso di restituzione, stringa COM contenente la chiave di sessione usata per la crittografia.
 
 *pRemoteVersion*   
-Al ritorno, la versione del motore remoto.
+In caso di restituzione, la versione del motore remoto.
 
 ## <a name="return-value"></a>Valore restituito
 
@@ -60,7 +60,7 @@ Se questo metodo ha esito positivo, restituisce **S \_ OK**. In caso contrario, 
 
 ## <a name="requirements"></a>Requisiti
 
-<table><colgroup><col style="width: 50%" /><col style="width: 50%" /></colgroup><tbody><tr class="odd"><td><p>Intestazione</p></td><td>Vspixengine.h</td></tr></tbody></table>
+<table><colgroup><col  /><col  /></colgroup><tbody><tr class="odd"><td><p>Intestazione</p></td><td>Vspixengine.h</td></tr></tbody></table>
 
 ## <a name="span-idsee_alsospansee-also"></a><span id="see_also"></span>Vedere anche
 

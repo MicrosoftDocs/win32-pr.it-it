@@ -4,12 +4,12 @@ ms.assetid: 8c59577b-34ea-4675-aaea-a2732fd5ce14
 title: Gestione file (Servizi componenti)
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 31685287e783dc5ae45d564897a37733568cc150d9af43322d5f435100e8f199
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 936375060b43e8abfd99f2d282e1cc05aada0d0e
+ms.sourcegitcommit: 61a4c522182aa1cacbf5669683d9570a3bf043b2
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "118307316"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "122882547"
 ---
 # <a name="file-management"></a>Gestione dei file
 
@@ -21,7 +21,7 @@ Per abilitare il trasferimento dei file dell'applicazione, COMREPL gestisce auto
 
 | Cartella                   | Scopo                                                                                                                                                                                                                                                                                                                                                                                                               |
 |--------------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| ReplicaSource<br/> | Le applicazioni esportate durante la fase di preparazione vengono archiviate qui.<br/> Questa cartella viene sovrascritta ogni volta che viene eseguita la fase di preparazione in un determinato computer di origine. Questa cartella non viene mai eliminata in modo esplicito, quindi la replica alle destinazioni può essere verificata in qualsiasi momento dopo la preparazione dell'origine.<br/> Ogni applicazione viene archiviata nella propria sottocartella denominata <appName> + <appID> .<br/> |
+| ReplicaSource<br/> | Le applicazioni esportate durante la fase di preparazione vengono archiviate qui.<br/> Questa cartella viene sovrascritta ogni volta che viene eseguita la fase di preparazione in un determinato computer di origine. Questa cartella non viene mai eliminata in modo esplicito, quindi la replica alle destinazioni può essere verificata in qualsiasi momento dopo la preparazione dell'origine.<br/> Ogni applicazione viene archiviata nella propria sottocartella denominata &lt; appName &gt; + &lt; appID &gt; .<br/> |
 
 
 

@@ -3,7 +3,7 @@ title: Elemento Ribbon
 description: Rappresenta il controllo della barra multifunzione nella visualizzazione della barra multifunzione.
 ms.assetid: 51083180-4e86-4c90-9fd1-a58c12bcc756
 keywords:
-- Barra multifunzione - Windows barra multifunzione
+- Elemento barra multifunzione Windows barra multifunzione
 topic_type:
 - apiref
 api_name:
@@ -13,12 +13,12 @@ api_type:
 ms.topic: reference
 ms.date: 05/31/2018
 api_location: ''
-ms.openlocfilehash: e5dd422013bdaf81d5d6aac6d0a34f4c9479af26cd79f64b854299caa3cac3f5
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 70841866ec656dc840fb467d598cc42bf919283b
+ms.sourcegitcommit: c276a8912787b2cda74dcf54eb96df961bb1188b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "118202202"
+ms.lasthandoff: 08/20/2021
+ms.locfileid: "122630917"
 ---
 # <a name="ribbon-element"></a>Elemento Ribbon
 
@@ -40,10 +40,10 @@ Rappresenta il controllo della barra multifunzione nella visualizzazione della b
 
 <table>
 <colgroup>
-<col style="width: 25%" />
-<col style="width: 25%" />
-<col style="width: 25%" />
-<col style="width: 25%" />
+<col  />
+<col  />
+<col  />
+<col  />
 </colgroup>
 <thead>
 <tr class="header">

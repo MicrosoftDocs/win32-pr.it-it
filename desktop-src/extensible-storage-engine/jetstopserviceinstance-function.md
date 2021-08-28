@@ -18,12 +18,12 @@ api_type:
 api_location:
 - ESENT.DLL
 ROBOTS: INDEX,FOLLOW
-ms.openlocfilehash: 55f9a8c6e91a70e447f03bc19bcd191d01ba0e08
-ms.sourcegitcommit: 4665ebce0c106bdb52eef36e544280b496b6f50b
+ms.openlocfilehash: 74604ed5fb01e92638c0b139f5d29b95b551faef
+ms.sourcegitcommit: 9b5faa61c38b2d0c432b7f2dbee8c127b0e28a7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/26/2021
-ms.locfileid: "122984304"
+ms.lasthandoff: 08/19/2021
+ms.locfileid: "122482747"
 ---
 # <a name="jetstopserviceinstance-function"></a>Funzione JetStopServiceInstance
 
@@ -50,7 +50,7 @@ Istanza in esecuzione da usare per la chiamata API.
 
 ### <a name="return-value"></a>Valore restituito
 
-Questa funzione restituisce il [JET_ERR](./jet-err.md) dati con uno dei codici restituiti seguenti. Per altre informazioni sui possibili errori ESE, vedere Errori del [motore di Archiviazione](./extensible-storage-engine-errors.md) estendibile e Parametri di gestione degli [errori](./error-handling-parameters.md).
+Questa funzione restituisce il [JET_ERR](./jet-err.md) dati con uno dei codici restituiti seguenti. Per altre informazioni sui possibili errori ESE, vedere [Extensible Archiviazione Engine Errors](./extensible-storage-engine-errors.md) and [Error Handling Parameters](./error-handling-parameters.md).
 
 
 | <p>Codice restituito</p> | <p>Descrizione</p> | 
@@ -60,32 +60,26 @@ Questa funzione restituisce il [JET_ERR](./jet-err.md) dati con uno dei codici r
 
 
 
-Se questa funzione ha esito positivo, si prepara per una terminazione futura. I passaggi eserciti per preparare una terminazione includono:
+Se questa funzione ha esito positivo, si prepara per una terminazione futura. Di seguito sono riportati i passaggi necessari per preparare una chiusura:
 
   - Arrestare la deframmentazione online se è in esecuzione.
 
-  - Avviare una pulizia dell'archivio versioni.
+  - Avviare la pulizia di un archivio versioni.
 
-  - Ridurre la profondità del checkpoint iniziando a scaricare le pagine dirty nella gestione buffer.
+  - Ridurre la profondità del checkpoint iniziando a scaricare le pagine dirty in Gestione buffer.
 
   - Impedire chiamate future alla maggior parte delle funzioni per tale istanza.
 
-Se questa funzione ha esito negativo, non verrà eseguito alcun processo di preparazione per la terminazione di un'istanza, quindi non verrà apportata alcuna modifica allo stato dell'istanza.
+Se questa funzione ha esito negativo, non verrà eseguito alcuno dei passaggi per preparare la terminazione di un'istanza, quindi non verrà apportata alcuna modifica allo stato dell'istanza.
 
 #### <a name="remarks"></a>Commenti
 
-Questa funzione ridurrà il lavoro che l'istanza dovrà eseguire quando viene terminata, ma non termina l'istanza. Di conseguenza, questa funzione è solo un'ottimizzazione e non è obbligatoria da usare. Si noti che la quantità di lavoro svolto in preparazione è stata inferiore Windows 2000 e Windows XP. Al termine della funzione, la chiamata di funzioni che non sono più consentite restituirà JET_errClientRequestToStopJetService. Le funzioni che sono ancora consentite dopo questa chiamata sono: [JetRollback,](./jetrollback-function.md) [JetCloseTable,](./jetclosetable-function.md) [JetEndSession,](./jetendsession-function.md) [JetCloseDatabase,](./jetclosedatabase-function.md) [JetDetachDatabase](./jetdetachdatabase-function.md) e [JetResetSessionContext.](./jetresetsessioncontext-function.md)
+Questa funzione ridurrà il lavoro che l'istanza dovrà eseguire quando viene terminata, ma non termina l'istanza. Di conseguenza, questa funzione è solo un'ottimizzazione e non è obbligatoria da usare. Si noti che la quantità di lavoro svolto in preparazione è stata inferiore Windows 2000 e Windows XP. Una volta che la funzione ha esito positivo, la chiamata di funzioni che non sono più consentite restituirà JET_errClientRequestToStopJetService. Le funzioni ancora consentite dopo questa chiamata sono: [JetRollback](./jetrollback-function.md), [JetCloseTable](./jetclosetable-function.md), [JetEndSession](./jetendsession-function.md), [JetCloseDatabase](./jetclosedatabase-function.md), [JetDetachDatabase](./jetdetachdatabase-function.md) e [JetResetSessionContext](./jetresetsessioncontext-function.md).
 
 #### <a name="requirements"></a>Requisiti
 
 
-| Requisito | Valore |
-|------------|----------|
-| <p><strong>Client</strong></p> | <p>Richiede Windows Vista o Windows XP.</p> | 
-| <p><strong>Server</strong></p> | <p>Richiede Windows Server 2008 o Windows Server 2003.</p> | 
-| <p><strong>Intestazione</strong></p> | <p>Dichiarato in Esent.h.</p> | 
-| <p><strong>Libreria</strong></p> | <p>Usare ESENT.lib.</p> | 
-| <p><strong>DLL</strong></p> | <p>Richiede ESENT.dll.</p> | 
+| | | <p><strong>Client</strong></p> | <p>Richiede Windows Vista o Windows XP.</p> | | <p><strong>Server</strong></p> | <p>Richiede Windows Server 2008 o Windows Server 2003.</p> | | <p><strong>Intestazione</strong></p> | <p>Dichiarato in Esent.h.</p> | | <p><strong>Libreria</strong></p> | <p>Usare ESENT.lib.</p> | | <p><strong>DLL</strong></p> | <p>Richiede ESENT.dll.</p> | 
 
 
 

@@ -1,6 +1,6 @@
 ---
-description: 'Altre informazioni su: Meta Parameters'
-title: Parametri meta
+description: 'Altre informazioni su: Meta parameters (Parametri meta)'
+title: Meta Parameters
 TOCTitle: Meta Parameters
 ms:assetid: 947e9342-7916-4e62-85e5-2d18805000c0
 ms:mtpsurl: https://msdn.microsoft.com/library/Gg269346(v=EXCHG.10)
@@ -15,21 +15,21 @@ api_type:
 - COM
 api_location: ''
 ROBOTS: INDEX,FOLLOW
-ms.openlocfilehash: 455b46465733a906b879dcedc4b5a2f4e6ef1f9e
-ms.sourcegitcommit: 9b5faa61c38b2d0c432b7f2dbee8c127b0e28a7e
+ms.openlocfilehash: 2f821d3aea8055f6c1344ed9d5107417adbaf604
+ms.sourcegitcommit: 4665ebce0c106bdb52eef36e544280b496b6f50b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/19/2021
-ms.locfileid: "122472477"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "122985514"
 ---
-# <a name="meta-parameters"></a>Parametri meta
+# <a name="meta-parameters"></a>Meta Parameters
 
 
 _**Si applica a:** Windows | Windows Server_
 
-## <a name="meta-parameters"></a>Parametri meta
+## <a name="meta-parameters"></a>Meta Parameters
 
-Questo argomento contiene i parametri usati per controllare altri parametri.
+In questo argomento sono contenuti i parametri utilizzati per controllare altri parametri.
 
 JET_paramConfiguration  
 129  
@@ -39,11 +39,11 @@ Inoltre, il parametro stesso può avere altri effetti sul comportamento del moto
 
 Al momento sono disponibili due configurazioni supportate:
 
-  - Configurazione di piccole dimensioni (0): il motore di database è ottimizzato per l'uso della memoria.
+  - Configurazione piccola (0): il motore di database è ottimizzato per l'uso della memoria.
 
   - Configurazione legacy (1): il motore di database ha le impostazioni predefinite tradizionali.
 
-Small Configuration modifica i valori predefiniti dei parametri di sistema seguenti con i valori specificati:
+Configurazione di piccole dimensioni modifica i valori predefiniti dei parametri di sistema seguenti con i valori specificati:
 
 
 | <p>Parametro di sistema</p> | <p>Nuovo valore predefinito</p> | 
@@ -82,20 +82,32 @@ Small Configuration ha anche diversi altri effetti sul motore di database, tra c
 
   - Tutte le risorse gestite dai parametri di sistema vengono allocate dall'heap in base alle esigenze
 
-  - Le dimensioni delle altre risorse interne usate dal motore di database vengono ridotte
+  - Le altre risorse interne usate dal motore di database vengono ridotte di dimensioni
 
-  - Varie attività di manutenzione vengono ridimensionate per evitare attività di thread in background
+  - Varie attività di manutenzione vengono ridimensionate per evitare l'attività del thread in background
 
 
-| | | <p>Valore predefinito:</p> | <p>1 (legacy)</p> | | <p>Digitare:</p> | <p>Intero</p> | | <p>Intervallo valido:</p> | <p>0 – 1</p> | | <p>Ambito:</p> | <p>Istanza</p> | | <p>Imposta dopo <a href="gg269354(v=exchg.10).md">JetCreateInstance</a>:</p> | <p>Sì</p> | | <p>Impostare dopo <a href="gg294068(v=exchg.10).md">JetInit</a>:</p> | <p>No</p> | | <p>Influisce sul layout fisico:</p> | <p>No</p> | | <p>Influisce sull'affidabilità:</p> | <p>No</p> | | <p>Influisce sulle prestazioni:</p> | <p>Sì</p> | | <p>Influisce sulle risorse:</p> | <p>Sì</p> | | <p>Disponibilità:</p> | <p>A partire da Windows Server 2008 e Windows Vista</p> | 
+| Etichetta | Valore |
+|--------|-------|
+| <p>Valore predefinito:</p> | <p>1 (legacy)</p> | 
+| <p>Digitare:</p> | <p>Intero</p> | 
+| <p>Intervallo valido:</p> | <p>0 – 1</p> | 
+| <p>Ambito:</p> | <p>Istanza</p> | 
+| <p>Imposta dopo <a href="gg269354(v=exchg.10).md">JetCreateInstance:</a></p> | <p>Sì</p> | 
+| <p>Impostato dopo <a href="gg294068(v=exchg.10).md">JetInit:</a></p> | <p>No</p> | 
+| <p>Influisce sul layout fisico:</p> | <p>No</p> | 
+| <p>Influisce sull'affidabilità:</p> | <p>No</p> | 
+| <p>Influisce sulle prestazioni:</p> | <p>Sì</p> | 
+| <p>Influisce sulle risorse:</p> | <p>Sì</p> | 
+| <p>Disponibilità:</p> | <p>A partire Windows Server 2008 e Windows Vista</p> | 
 
 
 
 JET_paramEnableAdvanced  
 130  
-Questo parametro viene usato per controllare quando il motore di database accetta o rifiuta le modifiche a un subset dei parametri di sistema. Questo parametro viene usato in combinazione con JET_paramConfiguration per impedire l'impostazione di alcuni parametri di sistema rispetto alle impostazioni predefinite della configurazione selezionata.
+Questo parametro viene utilizzato per controllare quando il motore di database accetta o rifiuta le modifiche apportate a un subset dei parametri di sistema. Questo parametro viene usato in combinazione con JET_paramConfiguration per impedire che alcuni parametri di sistema vengano impostati in base alle impostazioni predefinite della configurazione selezionata.
 
-I parametri di sistema seguenti verranno protetti dall'impostazione quando questo parametro è impostato su False:
+I parametri di sistema seguenti non verranno impostati quando questo parametro è impostato su False:
 
   - JET_paramMaxSessionsfon
 
@@ -178,14 +190,30 @@ I parametri di sistema seguenti verranno protetti dall'impostazione quando quest
   - JET_paramCheckpointIOMax
 
 
-| | | <p>Valore predefinito:</p> | <p>Vero</p> | | <p>Digitare:</p> | <p>Boolean</p> | | <p>Intervallo valido:</p> | <p>False, True</p> | | <p>Ambito:</p> | <p>Istanza</p> | | <p>Imposta dopo <a href="gg269354(v=exchg.10).md">JetCreateInstance</a>:</p> | <p>Sì</p> | | <p>Impostare dopo <a href="gg294068(v=exchg.10).md">JetInit</a>:</p> | <p>Sì</p> | | <p>Influisce sul layout fisico:</p> | <p>No</p> | | <p>Influisce sull'affidabilità:</p> | <p>No</p> | | <p>Influisce sulle prestazioni:</p> | <p>No</p> | | <p>Influisce sulle risorse:</p> | <p>No</p> | | <p>Disponibilità:</p> | <p>A partire da Windows Server 2008 e Windows Vista</p> | 
+| Etichetta | Valore |
+|--------|-------|
+| <p>Valore predefinito:</p> | <p>Vero</p> | 
+| <p>Digitare:</p> | <p>Boolean</p> | 
+| <p>Intervallo valido:</p> | <p>False, True</p> | 
+| <p>Ambito:</p> | <p>Istanza</p> | 
+| <p>Imposta dopo <a href="gg269354(v=exchg.10).md">JetCreateInstance:</a></p> | <p>Sì</p> | 
+| <p>Impostato dopo <a href="gg294068(v=exchg.10).md">JetInit:</a></p> | <p>Sì</p> | 
+| <p>Influisce sul layout fisico:</p> | <p>No</p> | 
+| <p>Influisce sull'affidabilità:</p> | <p>No</p> | 
+| <p>Influisce sulle prestazioni:</p> | <p>No</p> | 
+| <p>Influisce sulle risorse:</p> | <p>No</p> | 
+| <p>Disponibilità:</p> | <p>A partire da Windows Server 2008 e Windows Vista</p> | 
 
 
 
 ### <a name="requirements"></a>Requisiti
 
 
-| | | <p><strong>Client</strong></p> | <p>Richiede Windows Vista.</p> | | <p><strong>Server</strong></p> | <p>Richiede Windows Server 2008.</p> | | <p><strong>Intestazione</strong></p> | <p>Dichiarato in Esent.h.</p> | 
+| Requisito | Valore |
+|------------|----------|
+| <p><strong>Client</strong></p> | <p>Richiede Windows Vista.</p> | 
+| <p><strong>Server</strong></p> | <p>Richiede Windows Server 2008.</p> | 
+| <p><strong>Intestazione</strong></p> | <p>Dichiarato in Esent.h.</p> | 
 
 
 

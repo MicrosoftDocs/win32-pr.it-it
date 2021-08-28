@@ -26,12 +26,12 @@ api_type:
 - DllExport
 api_location:
 - CIMWin32.dll
-ms.openlocfilehash: 4c10da966b4568a3296b93e2cbb8cd2408601d344b71d3dfcc5a21f9ca7bd2ed
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: d9410c9dcddc99a9bffcf5d2e6e5b867f38f6e5c
+ms.sourcegitcommit: 61a4c522182aa1cacbf5669683d9570a3bf043b2
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "118420388"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "122883297"
 ---
 # <a name="cim_versioncompatibilitycheck-class"></a>Classe CIM \_ VersionCompatibilityCheck
 
@@ -80,7 +80,7 @@ La **classe CIM \_ VersionCompatibilityCheck** include questi metodi.
 
 | Metodo                                                                 | Descrizione                                                   |
 |:-----------------------------------------------------------------------|:--------------------------------------------------------------|
-| [**evocare**](invoke-method-in-class-cim-versioncompatibilitycheck.md) | Consente di eseguire un'azione specifica. Non implementato da WMI.<br/> |
+| [**Evocare**](invoke-method-in-class-cim-versioncompatibilitycheck.md) | Consente di eseguire un'azione specifica. Non implementato da WMI.<br/> |
 
 
 
@@ -825,8 +825,8 @@ Versione dell'operazione.
 
 La versione dell'operazione deve essere in uno dei formati seguenti:
 
--   <major>.<minor>.<revision>
--   <major>.<minor><letter><revision>
+-   &lt;oggetto &gt; principale. &lt; &gt;secondario. &lt; Revisione&gt;
+-   &lt;oggetto &gt; principale. &lt; revisione &gt; &lt; lettera &gt; &lt; secondaria&gt;
 
 Questa proprietà viene ereditata dal [**controllo CIM \_**](cim-check.md).
 

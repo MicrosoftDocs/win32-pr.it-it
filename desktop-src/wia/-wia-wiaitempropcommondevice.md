@@ -1,7 +1,7 @@
 ---
-description: Oltre alle proprietà delle informazioni sul dispositivo, i dispositivi Windows Image Acquisition (WIA) dispongono di valori di proprietà archiviati nel registro di sistema che le applicazioni leggono e scrivono.
+description: Oltre alle proprietà relative alle informazioni sul dispositivo, i dispositivi wi-Windows (WIA) hanno valori di proprietà archiviati nel Registro di sistema che le applicazioni leggono e scrivono.
 ms.assetid: 9948318b-7171-45fa-b46f-48f9357fdb32
-title: Costanti di proprietà del dispositivo comuni (Wiadef. h)
+title: Costanti comuni delle proprietà dei dispositivi (Wiadef.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -15,42 +15,42 @@ api_type:
 - HeaderDef
 api_location:
 - wiadef.h
-ms.openlocfilehash: 23c8faf8317fa7bf2008baffe3e6bf0e89a27a8c
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: c5eda1266c8c99f1125e03dfbacc3eb325a69d1d
+ms.sourcegitcommit: c276a8912787b2cda74dcf54eb96df961bb1188b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104526400"
+ms.lasthandoff: 08/20/2021
+ms.locfileid: "122632179"
 ---
-# <a name="common-device-property-constants"></a>Costanti della proprietà del dispositivo comune
+# <a name="common-device-property-constants"></a>Costanti comuni delle proprietà dei dispositivi
 
-Oltre alle proprietà delle informazioni sul dispositivo, i dispositivi Windows Image Acquisition (WIA) dispongono di valori di proprietà archiviati nel registro di sistema che le applicazioni leggono e scrivono. Sono associati all'oggetto [**IWiaItem**](/windows/desktop/api/wia_xp/nn-wia_xp-iwiaitem) o [**IWiaItem2**](-wia-iwiaitem2.md) . Le proprietà del dispositivo rappresentano informazioni sul dispositivo, ad esempio lo stato della connessione e l'ora del dispositivo. A ogni proprietà del dispositivo è associata una stringa di proprietà del dispositivo.
+Oltre alle proprietà relative alle informazioni sul dispositivo, i dispositivi wi-Windows (WIA) hanno valori di proprietà archiviati nel Registro di sistema che le applicazioni leggono e scrivono. Sono associati all'oggetto [**IWiaItem**](/windows/desktop/api/wia_xp/nn-wia_xp-iwiaitem) o [**all'oggetto IWiaItem2.**](-wia-iwiaitem2.md) Le proprietà del dispositivo rappresentano informazioni sul dispositivo, ad esempio lo stato della connessione e l'ora del dispositivo. A ogni proprietà del dispositivo è associata una stringa di proprietà del dispositivo.
 
-Le costanti della proprietà del dispositivo elencate di seguito sono comuni alla maggior parte o a tutti i dispositivi hardware WIA.
+Le costanti delle proprietà del dispositivo elencate di seguito sono comuni alla maggior parte o a tutti i dispositivi hardware WIA.
 
-Il prefisso "WIA \_ DPA \_ " indica una proprietà del dispositivo per tutti i dispositivi e rappresenta la convenzione di denominazione usata in C/C++. Per finalità di scripting queste costanti usano il prefisso "Device" e fanno parte del tipo enumerato [WiaItemPropertyId](-wia-wiaitempropertyid.md) . Il nome del membro corrispondente da tale enumerazione dello script viene visualizzato tra parentesi accanto al nome della costante C/C++ nell'elenco seguente.
+Il prefisso "WIA DPA" indica una proprietà del dispositivo per tutti i dispositivi ed è la convenzione di denominazione \_ \_ usata in C/C++. A scopo di scripting, queste costanti usano il prefisso "Device" e fanno parte del [tipo enumerato WiaItemPropertyId.](-wia-wiaitempropertyid.md) Il nome del membro corrispondente dell'enumerazione dello script viene visualizzato tra parentesi accanto al nome della costante C/C++ nell'elenco seguente.
 
 
 
 <table>
 <colgroup>
-<col style="width: 50%" />
-<col style="width: 50%" />
+<col  />
+<col  />
 </colgroup>
 <thead>
 <tr class="header">
-<th style="text-align: left;">Costante/valore</th>
-<th style="text-align: left;">Descrizione</th>
+<th >Costante/valore</th>
+<th >Descrizione</th>
 </tr>
 </thead>
 <tbody>
 <tr class="odd">
-<td style="text-align: left;"><span id="WIA_DPA_CONNECT_STATUS"></span><span id="wia_dpa_connect_status"></span><dl> <dt><strong>WIA_DPA_CONNECT_STATUS</strong></dt> <dt>DeviceConnectStatus</dt> </dl></td>
-<td style="text-align: left;">Stato corrente della connessione per il dispositivo. Minidriver crea e gestisce questa proprietà.<br/> Tipo: <strong>VT_I4</strong>, accesso: sola lettura, valori validi: <a href="-wia-property-attributes.md">WIA_PROP_NONE</a><br/> La proprietà può includere i valori possibili seguenti.<br/> 
+<td ><span id="WIA_DPA_CONNECT_STATUS"></span><span id="wia_dpa_connect_status"></span><dl> <dt><strong>WIA_DPA_CONNECT_STATUS</strong></dt> <dt>DeviceConnectStatus</dt> </dl></td>
+<td >Stato corrente della connessione per il dispositivo. Il minidriver crea e gestisce questa proprietà.<br/> Tipo: <strong>VT_I4</strong>, Accesso: Sola lettura, Valori validi: <a href="-wia-property-attributes.md">WIA_PROP_NONE</a><br/> La proprietà può avere i valori possibili seguenti.<br/> 
 <table>
 <thead>
 <tr class="header">
-<th>Stato connessione</th>
+<th>Connessione Stato</th>
 <th>Definizione</th>
 </tr>
 </thead>
@@ -69,16 +69,16 @@ Il prefisso "WIA \_ DPA \_ " indica una proprietà del dispositivo per tutti i d
 <p> </p></td>
 </tr>
 <tr class="even">
-<td style="text-align: left;"><span id="WIA_DPA_DEVICE_TIME"></span><span id="wia_dpa_device_time"></span><dl> <dt><strong>WIA_DPA_DEVICE_TIME</strong></dt> <dt>DeviceDeviceTime</dt> </dl></td>
-<td style="text-align: left;"><p>Ora di clock corrente archiviata nel dispositivo. Minidriver crea e gestisce questa proprietà.</p>
-<p>Tipo: <strong>VT_UI2</strong>  |  <strong>VT_VECTOR</strong>, accesso: lettura/scrittura o sola lettura, valori validi: <a href="-wia-property-attributes.md">WIA_PROP_NONE</a></p>
-<p>Questa proprietà è supportata solo dai dispositivi che hanno un clock interno. Se è possibile impostare l'orologio del dispositivo, questa proprietà è di lettura/scrittura; in caso contrario, è di sola lettura.</p>
-<p>I dispositivi WIA segnalano l'ora in una struttura <a href="/windows/desktop/api/minwinbase/ns-minwinbase-systemtime">SYSTEMTIME</a> .</p></td>
+<td ><span id="WIA_DPA_DEVICE_TIME"></span><span id="wia_dpa_device_time"></span><dl> <dt><strong>WIA_DPA_DEVICE_TIME</strong></dt> <dt>DeviceDeviceTime</dt> </dl></td>
+<td ><p>Ora dell'orologio corrente archiviata nel dispositivo. Il minidriver crea e gestisce questa proprietà.</p>
+<p>Tipo: <strong>VT_UI2</strong>  |  <strong>VT_VECTOR</strong>, Accesso: Lettura/Scrittura o Sola lettura, Valori validi: <a href="-wia-property-attributes.md">WIA_PROP_NONE</a></p>
+<p>Questa proprietà è supportata solo dai dispositivi con un orologio interno. Se è possibile impostare l'orologio del dispositivo, questa proprietà è di lettura/scrittura. in caso contrario, è di sola lettura.</p>
+<p>I dispositivi WIA segnalano l'ora in <a href="/windows/desktop/api/minwinbase/ns-minwinbase-systemtime">una struttura SYSTEMTIME.</a></p></td>
 </tr>
 <tr class="odd">
-<td style="text-align: left;"><span id="WIA_DPA_FIRMWARE_VERSION"></span><span id="wia_dpa_firmware_version"></span><dl> <dt><strong>WIA_DPA_FIRMWARE_VERSION</strong></dt> <dt>DeviceFirmwareVersion</dt> </dl></td>
-<td style="text-align: left;"><p>Versione del firmware del dispositivo. Questo valore deve essere un valore stringa, ad esempio &quot; 1.0.4 &quot; o &quot; 1,0 ABC &quot; . Minidriver crea e gestisce questa proprietà. Se il minidriver WIA non fornisce una risorsa di versione, il servizio WIA fornisce il valore &quot; 0.0.0.0 &quot; come valore predefinito. Un'applicazione legge questa proprietà per determinare la versione della DLL di minidriver WIA.</p>
-<p>Tipo: <strong>VT_BSTR</strong>, accesso: sola lettura, valori validi: <a href="-wia-property-attributes.md">WIA_PROP_NONE</a></p></td>
+<td ><span id="WIA_DPA_FIRMWARE_VERSION"></span><span id="wia_dpa_firmware_version"></span><dl> <dt><strong>WIA_DPA_FIRMWARE_VERSION</strong></dt> <dt>DeviceFirmwareVersion</dt> </dl></td>
+<td ><p>Versione del firmware del dispositivo. Questo valore deve essere un valore stringa, ad esempio &quot; 1.0.4 &quot; o &quot; 1.0abc. &quot; Il minidriver crea e gestisce questa proprietà. Se il minidriver WIA non fornisce una risorsa versione, il servizio WIA fornisce il valore &quot; 0.0.0.0 &quot; come valore predefinito. Un'applicazione legge questa proprietà per determinare la versione della DLL del minidriver WIA.</p>
+<p>Tipo: <strong>VT_BSTR</strong>, Accesso: Sola lettura, Valori validi: <a href="-wia-property-attributes.md">WIA_PROP_NONE</a></p></td>
 </tr>
 </tbody>
 </table>
@@ -91,9 +91,9 @@ Il prefisso "WIA \_ DPA \_ " indica una proprietà del dispositivo per tutti i d
 
 | Requisito | Valore |
 |-------------------------------------|-------------------------------------------------------------------------------------|
-| Client minimo supportato<br/> | Windows 2000 Professional, \[ solo app desktop Windows XP\]<br/>              |
-| Server minimo supportato<br/> | \[Solo app desktop Windows Server 2003\]<br/>                                |
-| Intestazione<br/>                   | <dl> <dt>Wiadef. h</dt> </dl> |
+| Client minimo supportato<br/> | Windows 2000 Professional, Windows solo app desktop XP \[\]<br/>              |
+| Server minimo supportato<br/> | Windows Solo app desktop di Server 2003 \[\]<br/>                                |
+| Intestazione<br/>                   | <dl> <dt>Wiadef.h</dt> </dl> |
 
 
 

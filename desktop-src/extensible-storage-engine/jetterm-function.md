@@ -18,12 +18,12 @@ api_type:
 api_location:
 - ESENT.DLL
 ROBOTS: INDEX,FOLLOW
-ms.openlocfilehash: 832f98d32f164e91cd9dfc8befac4cbd0e518632
-ms.sourcegitcommit: 9b5faa61c38b2d0c432b7f2dbee8c127b0e28a7e
+ms.openlocfilehash: a22e9f21ab1c3d296a770c53bc6ad5847264b703
+ms.sourcegitcommit: 4665ebce0c106bdb52eef36e544280b496b6f50b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/19/2021
-ms.locfileid: "122481157"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "122988414"
 ---
 # <a name="jetterm-function"></a>Funzione JetTerm
 
@@ -34,7 +34,7 @@ _**Si applica a:** Windows | Windows Server_
 
 La **funzione JetTerm** avvia l'arresto di un'istanza inizializzata da [JetInit](./jetinit-function.md).
 
-**È anche** possibile usare JetTerm per eliminare un'istanza non inizializzata creata da [JetCreateInstance.](./jetcreateinstance-function.md)
+**JetTerm** può essere usato anche per eliminare un'istanza non inizializzata creata da [JetCreateInstance.](./jetcreateinstance-function.md)
 
 ```cpp
     JET_ERR JET_API JetTerm(
@@ -54,7 +54,7 @@ Specifica l'istanza di da utilizzare per questa chiamata.
 
 ### <a name="return-value"></a>Valore restituito
 
-Questa funzione restituisce il [JET_ERR](./jet-err.md) dati con uno dei codici restituiti seguenti. Per altre informazioni sui possibili errori ESE, vedere Errori del [motore Archiviazione estendibile](./extensible-storage-engine-errors.md) e Parametri [di gestione degli errori](./error-handling-parameters.md).
+Questa funzione restituisce il [JET_ERR](./jet-err.md) dati con uno dei codici restituiti seguenti. Per altre informazioni sui possibili errori ESE, vedere Errori del [motore di Archiviazione](./extensible-storage-engine-errors.md) estendibile e Parametri di gestione degli [errori](./error-handling-parameters.md).
 
 
 | <p>Codice restituito</p> | <p>Descrizione</p> | 
@@ -65,7 +65,7 @@ Questa funzione restituisce il [JET_ERR](./jet-err.md) dati con uno dei codici r
 | <p>JET_errTermInProgress</p> | <p>Impossibile completare l'operazione perché l'istanza è in fase di arresto.</p> | 
 | <p>JET_errRestoreInProgress</p> | <p>Non è possibile completare l'operazione perché è in corso un'operazione di ripristino nell'istanza di .</p> | 
 | <p>JET_errBackupInProgress</p> | <p>Impossibile completare l'operazione perché è in corso un'operazione di backup nell'istanza di .</p> | 
-| <p>JET_errTooManyActiveUsers</p> | <p>Impossibile arrestare l'istanza perché sono attualmente presenti sessioni con transazioni attive per l'istanza specificata. Questo errore si verifica solo se JET_bitTermComplete viene usato .</p> | 
+| <p>JET_errTooManyActiveUsers</p> | <p>Impossibile arrestare l'istanza perché sono attualmente presenti sessioni con transazioni attive per l'istanza specificata. Questo errore si verifica solo se viene JET_bitTermComplete'oggetto .</p> | 
 
 
 
@@ -80,7 +80,13 @@ Se il processo host di un'istanza viene chiuso per qualsiasi motivo prima che **
 #### <a name="requirements"></a>Requisiti
 
 
-| | | <p><strong>Client</strong></p> | <p>Richiede Windows Vista, Windows XP o Windows 2000 Professional.</p> | | <p><strong>Server</strong></p> | <p>Richiede Windows Server 2008, Windows Server 2003 o Windows 2000 Server.</p> | | <p><strong>Intestazione</strong></p> | <p>Dichiarato in Esent.h.</p> | | <p><strong>Libreria</strong></p> | <p>Usare ESENT.lib.</p> | | <p><strong>DLL</strong></p> | <p>Richiede ESENT.dll.</p> | 
+| Requisito | Valore |
+|------------|----------|
+| <p><strong>Client</strong></p> | <p>Richiede Windows Vista, Windows XP o Windows 2000 Professional.</p> | 
+| <p><strong>Server</strong></p> | <p>Richiede Windows Server 2008, Windows Server 2003 o Windows 2000 Server.</p> | 
+| <p><strong>Intestazione</strong></p> | <p>Dichiarato in Esent.h.</p> | 
+| <p><strong>Libreria</strong></p> | <p>Usare ESENT.lib.</p> | 
+| <p><strong>DLL</strong></p> | <p>Richiede ESENT.dll.</p> | 
 
 
 

@@ -7,12 +7,12 @@ MSHAttr:
 title: IMSI
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 6c5e8c0fa64a19f7c2966672d3bc4ab5b2162861
-ms.sourcegitcommit: 9b5faa61c38b2d0c432b7f2dbee8c127b0e28a7e
+ms.openlocfilehash: 5322ba1059a3c7ba4ae60f921cf4a33a3720b8fc
+ms.sourcegitcommit: 4665ebce0c106bdb52eef36e544280b496b6f50b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/19/2021
-ms.locfileid: "122477127"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "122988784"
 ---
 # <a name="span-idwwan_profile_v4element_imsispanimsi"></a><span id="WWAN_profile_v4.element_IMSI"></span>IMSI
 
@@ -20,9 +20,9 @@ Specifica che questo profilo è attivo solo quando l'IMSI corrente usato nell'IC
 
 ## <a name="element-hierarchy"></a>Gerarchia degli elementi
 
-[<MBNProfileExt>](element-mbnprofileext.md)  
-[<ProfileConditionedOn>](element-profileconditionedon.md)  
-**<IMSI>**
+[&lt;MBNProfileExt&gt;](element-mbnprofileext.md)  
+[&lt;ProfileConditionedOn&gt;](element-profileconditionedon.md)  
+**&lt;IMSI&gt;**
 
 ## <a name="syntax"></a>Sintassi
 
@@ -57,7 +57,9 @@ Nessuno.
 ## <a name="requirements"></a>Requisiti
 
 
-| | | <p>Spazio dei nomi</p> | <p>https://www.microsoft.com/networking/WWAN/profile/v4</p> | 
+| Requisito | Valore |
+|------------|----------|
+| <p>Spazio dei nomi</p> | <p>https://www.microsoft.com/networking/WWAN/profile/v4</p> | 
 
 
  

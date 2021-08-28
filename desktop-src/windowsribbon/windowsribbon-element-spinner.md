@@ -1,6 +1,6 @@
 ---
 title: Elemento spinner
-description: Rappresenta un controllo Spinner.
+description: Rappresenta un controllo Casella di selezione.
 ms.assetid: 6a174ec9-0fde-4171-a363-0e330ac31a8b
 keywords:
 - Elemento casella di selezione Windows barra multifunzione
@@ -13,18 +13,18 @@ api_type:
 ms.topic: reference
 ms.date: 05/31/2018
 api_location: ''
-ms.openlocfilehash: 847806e395998f8bc82c302f4403c5bc2b651323ec6c7089803bc66e5f18dc4c
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: df3ea9c7ff4710837b859003b617c92ed288e261
+ms.sourcegitcommit: c276a8912787b2cda74dcf54eb96df961bb1188b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "118439516"
+ms.lasthandoff: 08/20/2021
+ms.locfileid: "122631659"
 ---
 # <a name="spinner-element"></a>Elemento spinner
 
-Rappresenta un [controllo Spinner.](windowsribbon-controls-spinner.md)
+Rappresenta un [controllo Casella di selezione.](windowsribbon-controls-spinner.md)
 
-## <a name="usage"></a>Uso
+## <a name="usage"></a>Utilizzo
 
 ``` syntax
 <Spinner
@@ -37,10 +37,10 @@ Rappresenta un [controllo Spinner.](windowsribbon-controls-spinner.md)
 
 <table>
 <colgroup>
-<col style="width: 25%" />
-<col style="width: 25%" />
-<col style="width: 25%" />
-<col style="width: 25%" />
+<col  />
+<col  />
+<col  />
+<col  />
 </colgroup>
 <thead>
 <tr class="header">
@@ -55,8 +55,8 @@ Rappresenta un [controllo Spinner.](windowsribbon-controls-spinner.md)
 <td><strong>CommandName</strong><br/></td>
 <td>xs:positiveInteger o xs:string<br/></td>
 <td>No<br/></td>
-<td>Associa l'elemento a un <a href="windowsribbon-element-command.md"><strong>oggetto Command</strong></a>.<br/> <br/>
-<dt><span></span><span></span><strong></strong> (xs:positiveInteger o xs:string)<br/> </dt> <dd> Stringa, valore intero compreso tra 2 e 59999, inclusivo o valore esadecimale compreso tra 0x2 e 0xea5f, inclusi. <br/> Il valore deve essere univoco all'interno del documento XML della barra multifunzione. <br/> Lunghezza massima: 100 caratteri. <br/> </dd> </dl></td>
+<td>Associa l'elemento a un <a href="windowsribbon-element-command.md"><strong>oggetto Command.</strong></a><br/> <br/>
+<dt><span></span><span></span><strong></strong> (xs:positiveInteger o xs:string)<br/> </dt> <dd> Stringa, valore intero compreso tra 2 e 59999 inclusi o valore esadecimale compreso tra 0x2 e 0xea5f inclusi. <br/> Il valore deve essere univoco all'interno del documento XML della barra multifunzione. <br/> Lunghezza massima: 100 caratteri. <br/> </dd> </dl></td>
 </tr>
 </tbody>
 </table>
@@ -91,7 +91,7 @@ Può verificarsi una o più volte per ogni [**elemento ControlGroup**](windowsri
 
 Nell'esempio seguente viene illustrato il markup di base per [spinner](windowsribbon-controls-spinner.md).
 
-Questa sezione di codice illustra le **dichiarazioni di Comando spinner,** con un [**elemento Group**](windowsribbon-element-group.md) che funziona come contenitore padre per l'elemento **Spinner.**
+Questa sezione di codice illustra le **dichiarazioni spinner** Command, con un [**elemento Group**](windowsribbon-element-group.md) che funziona come contenitore padre per l'elemento **Spinner.**
 
 
 ```XML
@@ -109,7 +109,7 @@ Questa sezione di codice illustra le **dichiarazioni di Comando spinner,** con u
 
 
 
-Questa sezione di codice illustra le **dichiarazioni del controllo Spinner.**
+Questa sezione di codice illustra le dichiarazioni **del controllo Spinner.**
 
 
 ```XML
@@ -131,7 +131,7 @@ Questa sezione di codice illustra le **dichiarazioni del controllo Spinner.**
 
 <dl> <dt>
 
-[Controllo spinner](windowsribbon-controls-spinner.md)
+[Controllo casella di selezione](windowsribbon-controls-spinner.md)
 </dt> </dl>
 
  

@@ -1,40 +1,40 @@
 ---
 title: Tipi VML di base
-description: Questo argomento descrive VML, una funzionalità deprecata a Windows Internet Explorer 9. Eseguire la migrazione di pagine Web e applicazioni che si basano su VML a SVG o ad altri standard ampiamente supportati.
+description: Questo argomento descrive VML, una funzionalità deprecata a Windows Internet Explorer 9. Eseguire la migrazione di pagine Web e applicazioni basate su VML a SVG o ad altri standard ampiamente supportati.
 ms.assetid: 07c17e7b-5ac4-4a8d-a468-559307408d5b
 keywords:
 - Vector Markup Language (VML), tipi di base
 - VML (Vector Markup Language),tipi di base
 - grafica vettoriale, tipi VML di base
 - Vector Markup Language (VML), tipi
-- VML (Vector Markup Language),tipi
+- VML (Vector Markup Language), tipi
 - grafica vettoriale, tipi VML
 - tipi VML di base
 - tipo booleano
-- tipo fraction
-- ordinate type
+- tipo frazione
+- tipo ordinate
 - tipo di lunghezza
-- tipo di misura
-- tipo angolo
+- Tipo di misura
+- tipo di angolo
 - tipo di colore
 - tipo di carattere
 - tipo bitmap
 - Tipo vector
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 70dbb2e540e809b88b446cceda9973f8988c7241cae7f4f96402a0edc7906550
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: a640dbacf875284008714ae404ba462b61652067
+ms.sourcegitcommit: 61a4c522182aa1cacbf5669683d9570a3bf043b2
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "118347820"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "122883273"
 ---
 # <a name="basic-vml-types"></a>Tipi VML di base
 
-Questo argomento descrive VML, una funzionalità deprecata a Windows Internet Explorer 9. Le pagine Web e le applicazioni che si basano su VML devono essere migrate a SVG o ad altri standard ampiamente supportati.
+Questo argomento descrive VML, una funzionalità deprecata a Windows Internet Explorer 9. È necessario eseguire la migrazione di pagine Web e applicazioni basate su VML a SVG o ad altri standard ampiamente supportati.
 
 > [!Note]  
-> A partire da dicembre 2011, questo argomento è stato archiviato. Di conseguenza, non viene più gestito attivamente. Per altre informazioni, vedere [Contenuto archiviato.](/previous-versions/windows/internet-explorer/ie-developer/) Per informazioni, consigli e indicazioni sulla versione corrente di Windows Internet Explorer, vedere Internet Explorer [Developer Center.](https://msdn.microsoft.com/ie/)
+> A partire da dicembre 2011, questo argomento è stato archiviato. Di conseguenza, non viene più gestito attivamente. Per altre informazioni, vedere [Contenuto archiviato](/previous-versions/windows/internet-explorer/ie-developer/). Per informazioni, consigli e indicazioni sulla versione corrente di Windows Internet Explorer, vedere Internet Explorer [Developer Center](https://msdn.microsoft.com/ie/).
 
  
 
@@ -51,9 +51,9 @@ Questo argomento descrive VML, una funzionalità deprecata a Windows Internet Ex
 -   [Angolo](#angle)
     -   [Rappresentazioni alternative](#alternative-representations)
 -   [color](#color)
-    -   [Unità colore](#color-units)
+    -   [Unità di colore](#color-units)
     -   [Colori HTML](#html-colors)
-    -   [Colori schema](#scheme-colors)
+    -   [Colori dello schema](#scheme-colors)
     -   [Colori di sistema](#system-colors)
     -   [Colori puri](#pure-colors)
     -   [Regolazioni del colore](#color-adjustments)
@@ -73,8 +73,8 @@ Questa proposta usa un numero ridotto di tipi di base, elencati nella tabella se
 | [boolean](#boolean)   |                   | 1 bit                      | Valore booleano: true o false.                                                                      |
 | [Frazione](#fraction) |                   | numero 2 6                 | Valore numerico, ridimensionato di 2 6 (65536) e archiviato come intero con segno.                               |
 | [Ordinata](#ordinate) |                   | Segno più intero a 30 bit   | Parte di una coordinata (ad esempio, in un percorso ), i valori definiti da coord.                                |
-| [length](#length)     |                   | [Emu](#length)             | Lunghezza fisica, ad esempio la larghezza di una linea o le dimensioni di un tipo di carattere.                                |
-| [Misura](#measure)   |                   | EMU o numero 2 6          | Lunghezza fisica, incluso un numero di pixel del dispositivo o una frazione di un'altra quantità. |
+| [length](#length)     |                   | [EMU](#length)             | Lunghezza fisica, ad esempio la larghezza di una riga o la dimensione di un tipo di carattere.                                |
+| [Misura](#measure)   |                   | EMU o numero 2 6          | Lunghezza fisica, incluso un numero di pixel del dispositivo, o una frazione di un'altra quantità. |
 | [Angolo](#angle)       |                   | gradi 2 6                | Angolo; positive è in senso orario.                                                                     |
 | [color](#color)       | [c](#color)       | complex                    | Elemento che consente di derivare un colore.                                                        |
 | [Carattere](#font)         | [Carattere](#font)     | complex                    | Descrizione di un tipo di carattere.                                                                             |
@@ -85,9 +85,9 @@ Questa proposta usa un numero ridotto di tipi di base, elencati nella tabella se
 
  
 
-La "rappresentazione fondamentale" è la rappresentazione con la massima precisione che la proposta richiede un'implementazione conforme da mantenere; I dati andranno persi se l'implementazione non è in grado di rappresentare i dati con la precisione richiesta. I tipi di colore, tipo di carattere e vettore corrispondono agli elementi che hanno a loro volta una struttura. In un certo senso, non sono tipi di base; Tuttavia, è utile considerarle come tali nell'ambito di questa proposta.
+La "rappresentazione fondamentale" è la rappresentazione di precisione più elevata che la proposta richiede un'implementazione conforme da mantenere; I dati andranno persi se l'implementazione non è in grado di rappresentare i dati con la precisione richiesta. I tipi di colore, carattere e vettore corrispondono agli elementi che hanno struttura. In un certo senso, non sono tipi di base; Tuttavia, è utile considerarli come tali all'interno di questa proposta.
 
-A ogni tipo di base non complesso è associato un elemento con lo stesso nome. Questi nomi di elemento sono riservati e non possono essere usati per altri scopi all'interno delle estensioni, anche se l'uso si trova all'interno di un elemento di estensione onview="skip". Per questo motivo, un'implementazione che rileva codice XML sconosciuto può fornire un'efficiente archiviazione interna del codice XML sconosciuto, purché i valori siano racchiusi tra gli elementi "type".
+A ogni tipo di base non complesso è associato un elemento con lo stesso nome. Questi nomi di elemento sono riservati e non possono essere usati per altri scopi all'interno delle estensioni, anche se l'uso si trova all'interno di un elemento di estensione onview="skip". Per questo motivo, un'implementazione che rileva codice XML sconosciuto può fornire un'archiviazione interna efficiente del codice XML sconosciuto, purché i valori siano racchiusi tra gli elementi "type".
 
 
 ```HTML
@@ -97,9 +97,9 @@ A ogni tipo di base non complesso è associato un elemento con lo stesso nome. Q
 
 
 
-Nel primo esempio precedente la stringa "1.578" deve essere archiviata come sequenza di caratteri (l'implementazione non sa se si tratta di una stringa o di un numero); Nel secondo esempio l'elemento fraction indica che il contenuto è un numero, pertanto può essere convertito nella rappresentazione della frazione ad alta precisione.
+Nel primo esempio precedente, la stringa "1.578" deve essere archiviata come sequenza di caratteri (l'implementazione non sa se si tratta di una stringa o di un numero); Nel secondo esempio, l'elemento fraction indica che il contenuto è un numero, quindi può essere convertito nella rappresentazione frazionaria a precisione elevata.
 
-Ai tipi complessi (inclusa la bitmap) sono associati nomi di elemento usati per delimitare il valore. Ciò semplifica l'analisi assicurandosi che le attività di analisi più complesse siano associate a tag di elemento univoci.
+Ai tipi complessi (inclusa la bitmap) sono associati nomi di elementi usati per delimitare il valore. Ciò semplifica l'analisi assicurando che le attività di analisi più complesse siano associate a tag di elemento univoci.
 
 [![torna all'inizio ](images/top.gif) Torna all'inizio](#top)
 
@@ -155,11 +155,11 @@ Tutti i valori numerici (ad esempio, i valori delle quantità senza dimensione) 
 
 Una quantità con il suffisso f deve essere un numero intero. I numeri frazionari non sono consentiti. L'intero risultante deve essere rappresentabile come numero con segno del complemento a 32 bit a 2; Pertanto, l'intervallo effettivo della rappresentazione è 32768 (in realtà, minore di 32768 e maggiore o uguale a -32768).
 
-Un'implementazione conforme è necessaria per mantenere i valori espressi come valori f. I valori rappresentati come numeri decimali possono essere convertiti in un valore f e archiviati in questo modo. Un'applicazione è autorizzata a registrare i valori generati internamente in qualsiasi unità appropriata. Tuttavia, un valore letto da un documento esistente deve essere mantenuto con la precisione originale completa o deve essere convertito in un valore f.
+Un'implementazione conforme è necessaria per mantenere i valori espressi come valori f. I valori rappresentati come numeri decimali possono essere convertiti in un valore f e archiviati in questo modo. Un'applicazione è autorizzata a registrare i valori generati internamente in qualsiasi unità appropriata. tuttavia, un valore letto da un documento esistente deve essere mantenuto con la precisione originale completa o deve essere convertito in un valore f.
 
 Se l'implementazione non è in grado di eseguire questa operazione, deve avvisare l'utente che i dati potrebbero andare persi. È accettabile generare un avviso di questo tipo una volta quando vengono rilevati dati generati esternamente per la prima volta.
 
-Quando un valore decimale viene convertito in formato f, l'implementazione può usare qualsiasi modalità di arrotondamento aritmetico. Tuttavia, un numero intero deve essere convertito esattamente nel formato f. È consigliabile che le implementazioni eseecutori esecutivano la conversione arrotondando a meno infinito e che la conversione sia sempre esatta.
+Quando un valore decimale viene convertito in formato f, l'implementazione può usare qualsiasi modalità di arrotondamento aritmetico. Tuttavia, un numero intero deve essere convertito esattamente nel formato f. È consigliabile che le implementazioni esecutori esecutivano la conversione arrotondando in meno infinito e che la conversione sia sempre esatta.
 
 [![torna all'inizio ](images/top.gif) Torna all'inizio](#top)
 
@@ -173,11 +173,11 @@ ordinate
 
 
 
-Le unità del sistema di coordinate stabilite da coord sono di qualche tipo nominale, che viene definito ordinata. Si tratta di una misura di lunghezza, ma viene usata solo in relazione al rettangolo stabilito dal coord. Qualsiasi valore di tipo ordinate verrà ridimensionato in base ai valori *w* e *h* del coord e al rapporto risultante usato per stabilire una misura reale nel dispositivo di output.
+Le unità del sistema di coordinate stabilite da coord sono di qualche tipo nominale, che viene definito ordinata. Si tratta di una misura di lunghezza, ma viene usata solo in relazione al rettangolo stabilito da coord. Qualsiasi valore di tipo ordinate verrà ridimensionato in base ai valori *w* e *h* del coord e al rapporto risultante usato per stabilire una misura reale nel dispositivo di output.
 
-Un'implementazione conforme deve essere in grado di gestire valori ordinati fino a 30 bit più segno (ad esempio, un intero con segno a 31 bit, non un intero con segno a 32 bit). È tuttavia consigliabile che le implementazioni tentino di produrre coordinate per il percorso e elementi simili con circa 16 bit di precisione. In questo modo si riduce al minimo la possibilità di underflow o overflow in un'implementazione non conforme.
+Un'implementazione conforme deve essere in grado di gestire valori ordinati fino a 30 bit più segno (ad esempio, un intero con segno a 31 bit, non un intero con segno a 32 bit). È tuttavia consigliabile che le implementazioni tentino di produrre coordinate per il percorso e elementi simili con circa 16 bit di precisione. In questo modo si riduce al minimo la possibilità di un underflow o di un overflow in un'implementazione non conforme.
 
-I valori ordinati sono sempre integrali. Un separatore decimale non può essere visualizzato in un valore di tipo ordinate. Nessun identificatore di unità può essere aggiunto a valori di tipo ordinate.
+I valori ordinati sono sempre integrali. Un separatore decimale non può essere visualizzato in un valore di tipo ordinate. Non è possibile aggiungere identificatori di unità a valori di tipo ordinate.
 
 [![torna all'inizio ](images/top.gif) Torna all'inizio](#top)
 
@@ -193,7 +193,7 @@ length
 
 Una lunghezza è una misura reale o, talvolta, una misura in pixel del dispositivo. È consigliabile che le implementazioni evitino l'uso di pixel del dispositivo (px).
 
-Tutti i qualificatori [di unità CSS1](https://www.w3.org/pub/WWW/TR/REC-CSS1) standard sono consentiti per una lunghezza. È anche possibile usare il qualificatore emu. Questo qualificatore si riferisce a un'unità, ovvero l'EMU (English Metric Unit), che è un denominatore comune delle quantità di misura usate in modo diffuso nella grafica computerizzata. L'EMU <sup></sup> è pollici/914400, ad esempio sono presenti 914400 EMU per pollice. La tabella seguente elenca il numero di EMUL in un numero ridotto di unità comunemente incontrate.
+Tutti i qualificatori [di unità CSS1](https://www.w3.org/pub/WWW/TR/REC-CSS1) standard sono consentiti per una lunghezza. È anche possibile usare il qualificatore emu. Questo qualificatore si riferisce a un'unità, ovvero l'EMU (English Metric Unit), che è un denominatore comune delle quantità di misura in uso diffuso nella grafica computerizzata. L'EMU <sup></sup> è pollici/914400, ad esempio sono presenti 914400 EMU per pollice. La tabella seguente elenca il numero di EMUL in un numero ridotto di unità comunemente incontrate.
 
 
 
@@ -216,13 +216,13 @@ Un'implementazione conforme è necessaria per mantenere valori che sono numeri e
 
 Se l'implementazione non è in grado di eseguire questa operazione, deve avvisare l'utente che i dati potrebbero andare persi. È accettabile generare un avviso di questo tipo una volta quando vengono rilevati dati generati esternamente per la prima volta.
 
-In pratica, le lunghezze fisiche vengono usate per relativamente poche misurazioni in questa proposta. I dati che in genere sono più importanti sono i dati del percorso e vengono codificati nel sistema di coordinate definito, per ogni forma, da coord.
+In pratica, le lunghezze fisiche vengono usate per relativamente poche misurazioni in questa proposta. I dati che in genere sono più importanti sono i dati del percorso e sono codificati nel sistema di coordinate definito, per ogni forma, da coord.
 
 ### <a name="alternative-representations"></a>Rappresentazioni alternative
 
 Le rappresentazioni di lunghezza standard del codice HTML sono definite da [CSS1.](https://www.w3.org/pub/WWW/TR/REC-CSS1#length-units) Le unità relative, ad eccezione del pixel, non sono significative nel contesto in cui le lunghezze vengono usate nella proposta e non devono essere usate. Se il documento registra le dimensioni in pixel (destinazione) desiderate, definisce la traslazione dei pixel in EMU; In caso contrario, deve essere usato il valore predefinito di 90 dpi definito da [CSS1.](https://www.w3.org/pub/WWW/TR/REC-CSS1#length-units)
 
-Ad eccezione di emu, qualsiasi valore può essere specificato come frazione decimale. Quando un valore decimale viene convertito in EMU, l'implementazione può usare qualsiasi modalità di arrotondamento aritmetico. L'unico modo per un'applicazione di creazione per garantire un determinato risultato è specificarlo in emu.
+Ad eccezione di emu, qualsiasi valore può essere specificato come frazione decimale. Quando un valore decimale viene convertito in EMU, l'implementazione può usare qualsiasi modalità di arrotondamento aritmetico. L'unico modo per un'applicazione di creazione per garantire un risultato specifico è specificarlo in emu.
 
 Se non viene specificato alcun identificatore di unità in un valore di lunghezza, l'implementazione deve presupporre emu.
 
@@ -238,7 +238,7 @@ measure
 
 
 
-Una misura è una quantità che può essere una [lunghezza](#length) o una [frazione.](#fraction) Ciò è molto simile alle misurazioni della lunghezza HTML e CSS, che in molti casi possono essere misurazioni fisiche o percentuali di un'altra quantità. Se non viene specificato alcun identificatore di unità, è necessario presumere che il valore sia una frazione decimale, pertanto questo comportamento viene ereditato dalla frazione e non dalla lunghezza.
+Una misura è una quantità che può essere una [lunghezza](#length) o una [frazione.](#fraction) Ciò è molto simile alle misurazioni della lunghezza HTML e CSS, che in molti casi possono essere misurazioni fisiche o percentuali di un'altra quantità. Se non viene specificato alcun identificatore di unità, il valore deve essere considerato una frazione decimale, pertanto questo comportamento viene ereditato dalla frazione e non dalla lunghezza.
 
 A differenza della lunghezza, un valore in pixel ha un significato definito dal contesto, pertanto la conversione in emu è in genere inappropriata. Esistono tre possibili rappresentazioni fondamentali che l'implementazione deve mantenere( ad esempio, una rappresentazione non può essere convertita in un'altra senza perdita di informazioni).
 
@@ -349,8 +349,8 @@ Nelle definizioni XPointer l'origine della posizione è l'elemento contenente il
 | lineOrFill       | line, fill                                                                                                  | 1     | Valore della riga se non è impostato sul valore predefinito; in caso contrario, il valore di riempimento. In questo modo viene restituito in modo efficace il colore che si trova sul bordo della forma.                                           |
 | fillThenLine     | riempimento, riga                                                                                                  | 1     | Valore di riempimento se non è predefinito, in caso contrario il valore della riga. In questo modo viene restituito il colore principale della forma (se la forma non è riempita, il risultato sarà il colore della linea).   |
 | shadow           | predecessore(1,forma)<br/> child(1, shadow)<br/> child(1, color)<br/>                         | 2     | Colore dell'ombreggiatura (si tratta di una funzionalità di livello 2).                                                                                                                      |
-| scheme           | Vedere di seguito                                                                                                   | 1     | Colore della combinazione dello schema definito per il documento. vedere di seguito.                                                                                                       |
-| scheme(*index*)  | Vedere di seguito                                                                                                   | 1     | Indice colori *schema,* a partire da 0; vedere di seguito.                                                                                                                         |
+| scheme           | Vedere di seguito                                                                                                   | 1     | Colore dello schema dello schema definito per il documento. vedere di seguito.                                                                                                       |
+| scheme(*index*)  | Vedere di seguito                                                                                                   | 1     | Indice dei *colori dello schema,* a partire da 0; vedere di seguito.                                                                                                                         |
 | this             | Implicita                                                                                                     | 2     | L'operazione (riempimento o disegno di un tracciato) è definita in altro modo (ad esempio, come bitmap) e il colore specifica una "modifica" ai colori così implicita. |
 | palette(*index*) | Implicita                                                                                                     | 3     | Si comporta come questo, ad eccezione del fatto che viene identificata esattamente una voce in una tabella dei colori bitmap. Consentito solo se dichiarato in modo esplicito.                             |
 | Nessuno             | \-                                                                                                          | 2     | Indica l'assenza di un colore. può essere usato per annullare un'operazione di disegno che usa il colore.                                                                          |
@@ -360,7 +360,7 @@ Nelle definizioni XPointer l'origine della posizione è l'elemento contenente il
 
  
 
-Questo colore consente a un valore di colore di specificare una modifica a un colore derivato in altro modo; in particolare, è possibile che venga specificata una singola operazione per tutti i colori di una bitmap. Il colore della tavolozza(*index*) identifica una voce specifica in una bitmap mappata al riquadro. L'uso di questa proprietà è definito solo per la registrazione di una voce della tabella dei colori che deve essere considerata trasparente in una bitmap di questo tipo.
+Questo colore consente a un valore di colore di specificare una modifica a un colore derivato in altro modo; in particolare, è possibile che venga specificata una singola operazione per tutti i colori di una bitmap. Il colore della tavolozza(*index*) identifica una voce specifica in una bitmap mappata alla tavolozza. L'uso di questo oggetto viene definito solo per la registrazione di una voce della tabella dei colori che deve essere considerata trasparente in una bitmap di questo tipo.
 
 La definizione di un valore di colore non deve fare riferimento a se stessa, né direttamente né indirettamente. Se viene rilevata una definizione di questo tipo, è consigliabile, ma non obbligatorio, che l'implementazione tratti il valore non definito come nero.
 
@@ -446,7 +446,7 @@ Aqua = " \# 00FFFF"
 
 ### <a name="scheme-colors"></a>Colori dello schema
 
-I colori dello schema a cui fa riferimento lo schema vengono definiti a livello di documento usando il metatag con un attributo name di "Schema colori tema".
+I colori dello schema a cui fa riferimento schema vengono definiti a livello di documento usando il metatag con un attributo name di "Schema colori tema".
 
 
 ```HTML
@@ -485,7 +485,7 @@ I colori dello schema non partecipano alla combinazione predefinita se non viene
 
 Le applicazioni talvolta registrano i colori in base alle impostazioni del sistema operativo all'interno della grafica. In genere sono temporanei e non devono essere scritti; Le definizioni systemcolor esistono esclusivamente per supportare questa operazione. Un colore di sistema viene introdotto definendo un tag appropriato in un nuovo spazio dei nomi e inserendo le informazioni appropriate nel contenuto dell'elemento.
 
-Questa proposta definisce un tag di questo tipo per codificare i Windows dell'interfaccia utente definiti nel file di intestazione winuser.h.
+Questa proposta definisce un tag di questo tipo per codificare Windows colori dell'interfaccia utente definiti nel file di intestazione winuser.h.
 
 
 ```HTML
@@ -509,7 +509,7 @@ pure
 
 
 
-Se l'elemento viene visualizzato in un valore di colore, è un suggerimento che il colore non deve essere approssimato <pure/> da un motivo dithering. Si tratta di una funzionalità di livello 1 e un'implementazione conforme non deve rispettarla. La designazione è importante per la grafica visualizzata su dispositivi a media risoluzione, ad esempio schermi video, in cui piccole funzionalità (ad esempio linee) possono causare aliasing non valido con colori con dithering. Nei dispositivi come le stampanti, che in genere dithering di tutti i colori tranne i pochi colori completamente saturati, il dithering è in genere sufficientemente fine per evitare questo problema.
+Se l'elemento pure/ viene visualizzato in un valore di colore, è un suggerimento che il colore non deve essere approssimato &lt; &gt; da un motivo dithering. Si tratta di una funzionalità di livello 1 e un'implementazione conforme non deve rispettarla. La designazione è importante per la grafica visualizzata su dispositivi a media risoluzione, ad esempio schermi video, in cui piccole funzionalità (ad esempio linee) possono causare aliasing non valido con colori con dithering. Nei dispositivi come le stampanti, che in genere dithering di tutti i colori tranne i pochi colori completamente saturati, il dithering è in genere sufficientemente fine per evitare questo problema.
 
 [![torna all'inizio ](images/top.gif) Torna all'inizio](#top)
 
@@ -554,7 +554,7 @@ color.adj
 
 Il parametro delle prime sei operazioni è un singolo valore numerico integrale compreso nell'intervallo da 0 a 255. La regolazione viene eseguita sul valore RGB a 3 x 8 bit come segue:
 
-1.  Se viene specificato , il valore RGB viene sostituito da yyy, dove y è il valore <gray/> di luminance (y') calcolato dal valore sRGB in dopo ITU-r BT.709. Il calcolo è il seguente:
+1.  Se viene specificato gray/, il valore RGB viene sostituito da yyy, dove y è il valore di luminance (y') calcolato dal valore &lt; &gt; sRGB in seguendo itU-r BT.709. Il calcolo è il seguente:
     ```HTML
     y = 0 2125xr + 0 7154xg + 0 0721xb
     ```
@@ -578,7 +578,7 @@ Il parametro delle prime sei operazioni è un singolo valore numerico integrale 
 
     In ogni caso, se il valore del componente calcolato, c, supera 255, viene usato 255 e, se è minore di 0, viene usato 0.
 
-3.  Se viene specificato , il valore 128 viene sottratto o aggiunto a ogni componente a seconda che il componente sia minore o meno <INVERT128/> di 128.
+3.  Se si specifica INVERT128/, il valore 128 viene sottratto o aggiunto a ogni componente a seconda che il componente sia minore o meno &lt; &gt; di 128.
     ```HTML
     if c < 128
         then
@@ -589,7 +589,7 @@ Il parametro delle prime sei operazioni è un singolo valore numerico integrale 
 
     
 
-4.  Se <invert/> viene specificato , ogni componente viene sostituito da 255 meno il valore del componente.
+4.  Se &lt; viene specificato invert/, &gt; ogni componente viene sostituito da 255 meno il valore del componente.
     ```HTML
     c := 255-c
     ```

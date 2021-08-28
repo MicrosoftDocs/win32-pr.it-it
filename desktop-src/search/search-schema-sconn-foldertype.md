@@ -1,19 +1,19 @@
 ---
-description: <folderType>L'elemento specifica il GUID per il tipo di cartella. Questo elemento è obbligatorio se <templateInfo> l'elemento esiste. Non dispone di attributi e di elementi figlio.
+description: "&lt;L'elemento folderType &gt; specifica il GUID per il tipo di cartella. Questo elemento è obbligatorio se &lt; l'elemento templateInfo &gt; esiste. Non ha attributi e nessun elemento figlio."
 ms.assetid: 2361bbf5-adeb-4189-a8ff-5fdd1c9b0ec6
 title: Elemento folderType (schema del connettore di ricerca)
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 4c6b9d5682a85126a467c051b9f1103a4ac10f2f6936cc24dd4438a5f8c75d44
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: b693a1ff7007e6d63e108d16abe77ee421b3821a
+ms.sourcegitcommit: 61a4c522182aa1cacbf5669683d9570a3bf043b2
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "117862600"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "122882464"
 ---
 # <a name="foldertype-element-search-connector-schema"></a>Elemento folderType (schema del connettore di ricerca)
 
-<folderType>L'elemento specifica il GUID per il tipo di cartella. Questo elemento è obbligatorio se <templateInfo> l'elemento esiste. Non dispone di attributi e di elementi figlio.
+&lt;L'elemento folderType &gt; specifica il GUID per il tipo di cartella. Questo elemento è obbligatorio se &lt; l'elemento templateInfo &gt; esiste. Non ha attributi e nessun elemento figlio.
 
 ## <a name="syntax"></a>Sintassi
 

@@ -15,12 +15,12 @@ api_type:
 - COM
 api_location: ''
 ROBOTS: INDEX,FOLLOW
-ms.openlocfilehash: fbdc03342187cfc2adfa1dcd3ed650f532e1dbc0
-ms.sourcegitcommit: 4665ebce0c106bdb52eef36e544280b496b6f50b
+ms.openlocfilehash: d898a5943b5b80e738a331971595995d0fdee4eb
+ms.sourcegitcommit: 9b5faa61c38b2d0c432b7f2dbee8c127b0e28a7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/26/2021
-ms.locfileid: "122982944"
+ms.lasthandoff: 08/19/2021
+ms.locfileid: "122482297"
 ---
 # <a name="jet_columnid"></a>JET_COLUMNID
 
@@ -52,10 +52,6 @@ Le colonne in tabelle diverse possono avere lo stesso ID colonna.
 ### <a name="requirements"></a>Requisiti
 
 
-| Requisito | Valore |
-|------------|----------|
-| <p><strong>Client</strong></p> | <p>Richiede Windows Vista, Windows XP o Windows 2000 Professional.</p> | 
-| <p><strong>Server</strong></p> | <p>Richiede Windows Server 2008, Windows Server 2003 o Windows 2000 Server.</p> | 
-| <p><strong>Intestazione</strong></p> | <p>Dichiarato in Esent.h.</p> | 
+| | | <p><strong>Client</strong></p> | <p>Richiede Windows Vista, Windows XP o Windows 2000 Professional.</p> | | <p><strong>Server</strong></p> | <p>Richiede Windows Server 2008, Windows Server 2003 o Windows 2000 Server.</p> | | <p><strong>Intestazione</strong></p> | <p>Dichiarato in Esent.h.</p> | 
 
 

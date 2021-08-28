@@ -1,5 +1,5 @@
 ---
-description: Rappresenta le informazioni su un frame in stack.
+description: Rappresenta informazioni su un frame sullock chiamate.
 MS-HAID: vspixengine.CallStackFrame
 MSHAttr:
 - PreferredSiteName:MSDN
@@ -17,16 +17,16 @@ api_location:
 topic_type:
 - APIRef
 - kbSyntax
-ms.openlocfilehash: fbe527c59a64e91f46a390344ea576c7560ef1f2
-ms.sourcegitcommit: a47bd86f517de76374e4fff33cfeb613eb259a7e
+ms.openlocfilehash: c6cb4b0e32213165149d7df8c7bf334049e37399
+ms.sourcegitcommit: c276a8912787b2cda74dcf54eb96df961bb1188b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/06/2021
-ms.locfileid: "106304040"
+ms.lasthandoff: 08/20/2021
+ms.locfileid: "122631339"
 ---
 # <a name="span-idvspixenginecallstackframespancallstackframe-structure"></a><span id="vspixengine.callstackframe"></span>Struttura CallStackFrame
 
-Rappresenta le informazioni su un frame in stack.
+Rappresenta informazioni su un frame sullock chiamate.
 
 ## <a name="syntax"></a>Sintassi
 
@@ -37,21 +37,21 @@ Rappresenta le informazioni su un frame in stack.
 
 ## <a name="members"></a>Members
 
-**functionName**  
+**Functionname**  
 Stringa COM contenente il nome della funzione associata.
 
 **sourceFile**  
 Stringa COM contenente il percorso del file di origine associato.
 
-**moduleName**  
+**Modulename**  
 Stringa COM contenente il nome del modulo di codice associato.
 
-**lineNumber**  
+**Linenumber**  
 Numero di riga associato.
 
 ## <a name="requirements"></a>Requisiti
 
-<table><colgroup><col style="width: 50%" /><col style="width: 50%" /></colgroup><tbody><tr class="odd"><td><p>Intestazione</p></td><td>Vspixengine. h</td></tr></tbody></table>
+<table><colgroup><col  /><col  /></colgroup><tbody><tr class="odd"><td><p>Intestazione</p></td><td>Vspixengine.h</td></tr></tbody></table>
 
  
 

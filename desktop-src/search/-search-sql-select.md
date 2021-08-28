@@ -4,12 +4,12 @@ ms.assetid: 334aa2b9-0ef2-4a4b-9352-de5ded95afa6
 title: Istruzione SELECT
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 1df8cc5f4b6bab673d20c981e44386d3fdbd651b5a2753d8c965ee55023a6562
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 7b3655f279a149017da841f296ad29c18518bc96
+ms.sourcegitcommit: 61a4c522182aa1cacbf5669683d9570a3bf043b2
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "118227196"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "122883432"
 ---
 # <a name="select-statement"></a>Istruzione SELECT
 
@@ -26,7 +26,7 @@ FROM [machinename.]SystemIndex
 
 
 
-Di seguito viene illustrata la parte di colonna della sintassi dell'istruzione SELECT:
+Di seguito viene illustrata la parte della colonna della sintassi dell'istruzione SELECT:
 
 
 ```
@@ -44,7 +44,7 @@ Gli identificatori di colonna devono essere colonne di nomi di proprietà valide
 
 Quando la query restituisce un documento che non dispone della colonna richiesta, il valore di tale colonna per il documento è **NULL.**
 
-È necessario specificare almeno un nome di colonna in un'istruzione SELECT. Nella query Structured Query Language (SQL) è possibile usare l'asterisco ( ) per specificare che devono essere restituite tutte \* le colonne di una tabella. Tuttavia, nessun set definito e fisso di proprietà si applica a tutti i documenti. Per questo motivo, l'SQL asterisco non è consentito <columns> nell'identificatore dell'istruzione SELECT.
+È necessario specificare almeno un nome di colonna in un'istruzione SELECT. Nella query Structured Query Language (SQL) è possibile usare l'asterisco ( ) per specificare che devono essere restituite tutte \* le colonne di una tabella. Tuttavia, nessun set definito e fisso di proprietà si applica a tutti i documenti. Per questo motivo, l SQL asterisco non è consentito nell'identificatore &lt; &gt; di colonne dell'istruzione SELECT.
 
 ## <a name="getting-the-top-n-results"></a>Recupero dei primi n risultati
 
@@ -63,7 +63,7 @@ A volte potrebbe essere necessario eseguire il cast dei dati stringa estratti da
 
 ## <a name="examples"></a>Esempio
 
-Negli esempi seguenti vengono restituiti il nome e l'URL dei documenti corrispondenti.
+Gli esempi seguenti restituiscono il nome e l'URL dei documenti corrispondenti.
 
 
 ```

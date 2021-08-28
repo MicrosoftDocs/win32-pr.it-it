@@ -18,12 +18,12 @@ api_type:
 api_location:
 - ESENT.DLL
 ROBOTS: INDEX,FOLLOW
-ms.openlocfilehash: d27531b9d70098746f60238a264c4762ff8f2058
-ms.sourcegitcommit: 9b5faa61c38b2d0c432b7f2dbee8c127b0e28a7e
+ms.openlocfilehash: a1005f9804e0ccf9c4aa5080b3985906471b1386
+ms.sourcegitcommit: 4665ebce0c106bdb52eef36e544280b496b6f50b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/19/2021
-ms.locfileid: "122474467"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "122988914"
 ---
 # <a name="jetopentemptable3-function"></a>Funzione JetOpenTempTable3
 
@@ -61,7 +61,7 @@ Esistono limitazioni importanti per le opzioni di definizione delle colonne che 
 Oltre alle normali opzioni di definizione delle colonne, è possibile specificare zero o più delle opzioni seguenti che sono rilevanti solo nel contesto di una tabella temporanea.
 
 
-| <p>valore</p> | <p>Significato</p> | 
+| <p>Valore</p> | <p>Significato</p> | 
 |--------------|----------------|
 | <p>JET_bitColumnTTDescending</p> | <p>Questa opzione indica che l'ordinamento della colonna chiave per la tabella temporanea deve essere decrescente anziché crescente. Se questa opzione viene specificata senza JET_bitColumnTTKey, questa opzione viene ignorata.</p> | 
 | <p>JET_bitColumnTTKey</p> | <p>Questa opzione indica che la colonna sarà una colonna chiave per la tabella temporanea.</p><p>L'ordine delle definizioni di colonna con questa opzione specificata nella matrice di input determinerà la precedenza di ogni colonna chiave per la tabella temporanea. La prima definizione di colonna nella matrice con questo set di opzioni sarà la colonna chiave più significativa e così via. Se vengono richieste più colonne chiave di quelle supportate dal motore di database, questa opzione viene ignorata per le colonne chiave non supportate.</p> | 
@@ -85,7 +85,7 @@ Quando questo parametro non è presente, verranno usati i flag di normalizzazion
 Gruppo di bit che contengono le opzioni da utilizzare per questa chiamata, che includono zero o più degli elementi seguenti.
 
 
-| <p>valore</p> | <p>Significato</p> | 
+| <p>Valore</p> | <p>Significato</p> | 
 |--------------|----------------|
 | <p>JET_bitTTErrorOnDuplicateInsertion</p> | <p>Questa opzione richiede che qualsiasi tentativo di inserire un record con la stessa chiave di indice di un record inserito in precedenza avrà immediatamente esito negativo con JET_errKeyDuplicate. Se questa opzione non è richiesta, un duplicato può essere rilevato immediatamente e non riuscire o essere rimosso automaticamente in un secondo momento a seconda della strategia scelta dal motore di database per implementare la tabella temporanea in base alla funzionalità richiesta.</p><p>Se questa funzionalità non è necessaria, è meglio non richiederla. Se questa funzionalità non è richiesta, gestione tabelle temporanee potrebbe essere in grado di scegliere una strategia per la gestione della tabella temporanea che comporta un miglioramento delle prestazioni.</p> | 
 | <p>JET_bitTTForceMaterialization</p> | <p>Questa opzione forza la gestione tabelle temporanee ad abbandonare qualsiasi tentativo di scegliere una strategia intelligente per la gestione della tabella temporanea che comporta prestazioni migliorate.</p> | 
@@ -117,25 +117,25 @@ Questa funzione restituisce il [JET_ERR](./jet-err.md) dati con uno dei codici r
 | <p>Codice restituito</p> | <p>Descrizione</p> | 
 |--------------------|--------------------|
 | <p>JET_errSuccess</p> | <p>Operazione riuscita.</p> | 
-| <p>JET_errCannotMaterializeForwardOnlySort</p> | <p><strong>JetOpenTempTable3</strong> non è riuscito perché JET_bitTTForwardOnly è stato specificato e non è stato possibile creare la tabella temporanea specificata usando l'ottimizzazione forward-only. Questo errore verrà restituito solo da Windows Server 2003 e versioni successive.</p> | 
+| <p>JET_errCannotMaterializeForwardOnlySort</p> | <p><strong>JetOpenTempTable3</strong> non è riuscito perché JET_bitTTForwardOnly è stato specificato e non è stato possibile creare la tabella temporanea come specificato usando l'ottimizzazione forward-only. Questo errore verrà restituito solo da Windows Server 2003 e versioni successive.</p> | 
 | <p>JET_errClientRequestToStopJetService</p> | <p>Non è possibile completare l'operazione perché tutte le attività nell'istanza associata alla sessione sono cessare in seguito a una chiamata a <a href="gg269240(v=exchg.10).md">JetStopService.</a></p> | 
 | <p>JET_errIndexInvalidDef</p> | <p>Impossibile creare l'indice perché è stata specificata una definizione di indice non valida. <strong>JetOpenTempTable3</strong> restituirà questo errore quando:</p><ul><li><p>Vengono specificate le impostazioni locali indipendenti dalla lingua.</p></li><li><p>È stato specificato un set non valido di flag di normalizzazione.</p></li></ul><p>Questo errore verrà restituito solo da Windows 2000.</p> | 
 | <p>JET_errInstanceUnavailable</p> | <p>Non è possibile completare l'operazione perché l'istanza associata alla sessione ha rilevato un errore irreversibile che richiede la revoca dell'accesso a tutti i dati per proteggere l'integrità di questi dati. Questo errore verrà restituito solo da Windows XP e versioni successive.</p> | 
 | <p>JET_errInvalidCodePage</p> | <p>Il <strong>membro cp</strong> della struttura <a href="gg294130(v=exchg.10).md">JET_COLUMNDEF</a> non è stato impostato su una tabella codici valida. Gli unici valori validi per le colonne di testo sono Inglese (1252) e Unicode (1200). Il valore 0 indica che verrà usato il valore predefinito (inglese, 1252).</p> | 
 | <p>JET_errInvalidColumnType</p> | <p>Il <strong>membro coltyp</strong> della <a href="gg294130(v=exchg.10).md">struttura JET_COLUMNDEF</a> non è stato impostato su un tipo di colonna valido.</p> | 
-| <p>JET_errInvalidLanguageId</p> | <p>Non è stato possibile creare l'indice perché si è tentato di usare un ID impostazioni locali non valido. L'ID delle impostazioni locali potrebbe non essere completamente valido o il language pack potrebbe non essere installato.</p> | 
-| <p>JET_errInvalidLCMapStringFlags</p> | <p>Impossibile creare l'indice perché è stato effettuato un tentativo di utilizzare un set non valido di flag di normalizzazione. Questo errore verrà restituito solo da Windows XP e versioni successive. In Windows 2000, i flag di normalizzazione non validi JET_errIndexInvalidDef invece.</p> | 
-| <p>JET_errInvalidSesid</p> | <p>L'handle di sessione non è valido o fa riferimento a una sessione chiusa. Questo errore non viene restituito in tutte le circostanze. Gli handle vengono convalidati solo con il massimo sforzo.</p> | 
+| <p>JET_errInvalidLanguageId</p> | <p>Impossibile creare l'indice perché è stato effettuato un tentativo di usare un ID impostazioni locali non valido. L'ID delle impostazioni locali potrebbe non essere completamente valido o il language pack potrebbe non essere installato.</p> | 
+| <p>JET_errInvalidLCMapStringFlags</p> | <p>Impossibile creare l'indice perché è stato effettuato un tentativo di usare un set non valido di flag di normalizzazione. Questo errore verrà restituito solo da Windows XP e versioni successive. In Windows 2000, i flag di normalizzazione non validi JET_errIndexInvalidDef invece.</p> | 
+| <p>JET_errInvalidSesid</p> | <p>L'handle di sessione non è valido o fa riferimento a una sessione chiusa. Questo errore non viene restituito in tutte le circostanze. Gli handle vengono convalidati solo in modo ottimale.</p> | 
 | <p>JET_errNotInitialized</p> | <p>Non è possibile completare l'operazione perché l'istanza associata alla sessione non è ancora stata inizializzata.</p> | 
-| <p>JET_errOutOfCursors</p> | <p>L'operazione non è riuscita perché il motore non è in grado di allocare le risorse necessarie per aprire un nuovo cursore. Le risorse cursore vengono <a href="gg294044(v=exchg.10).md">configurate usando JetSetSystemParameter</a> <a href="gg269201(v=exchg.10).md">con JET_paramMaxCursors</a>.</p> | 
-| <p>JET_errOutOfMemory</p> | <p>L'operazione non è riuscita perché non è stato possibile allocare memoria sufficiente per completarla.</p><p><strong>JetOpenTempTable3 può</strong> restituire JET_errOutOfMemory se lo spazio indirizzi del processo host diventa troppo frammentato. Il gestore tabelle temporanee alloca sempre un blocco di 1 MB di spazio di indirizzi per ogni tabella temporanea creata indipendentemente dalla quantità di dati da archiviare.</p> | 
+| <p>JET_errOutOfCursors</p> | <p>L'operazione non è riuscita perché il motore non è in grado di allocare le risorse necessarie per aprire un nuovo cursore. Le risorse cursore vengono <a href="gg294044(v=exchg.10).md">configurate tramite JetSetSystemParameter</a> <a href="gg269201(v=exchg.10).md">con JET_paramMaxCursors</a>.</p> | 
+| <p>JET_errOutOfMemory</p> | <p>L'operazione non è riuscita perché non è stato possibile allocare memoria sufficiente per completarla.</p><p><strong>JetOpenTempTable3</strong> può restituire JET_errOutOfMemory se lo spazio indirizzi del processo host diventa troppo frammentato. Il gestore tabelle temporaneo alloca sempre un blocco di 1 MB di spazio indirizzi per ogni tabella temporanea creata indipendentemente dalla quantità di dati da archiviare.</p> | 
 | <p>JET_errRestoreInProgress</p> | <p>Non è possibile completare l'operazione perché è in corso un'operazione di ripristino nell'istanza associata alla sessione.</p> | 
 | <p>JET_errSessionSharingViolation</p> | <p>La stessa sessione non può essere usata per più thread contemporaneamente.</p><p>Questo errore verrà restituito solo da Windows XP e versioni successive.</p> | 
 | <p>JET_errTermInProgress</p> | <p>Non è possibile completare l'operazione perché è in corso l'arresto dell'istanza associata alla sessione.</p> | 
-| <p>JET_errTooManyColumns</p> | <p>Si è tentato di aggiungere troppe colonne alla tabella. Una tabella non può contenere più JET_ccolFixedMost colonne fisse, non più di JET_ccolVarMost colonne a lunghezza variabile e non più di JET_ccolTaggedMost colonne con tag.</p> | 
-| <p>JET_errTooManyOpenIndexes</p> | <p>L'operazione non è riuscita perché il motore non è in grado di allocare le risorse necessarie per memorizzare nella cache gli indici della tabella. Il numero di indici il cui schema può essere memorizzato nella cache viene configurato usando <a href="gg294044(v=exchg.10).md">JetSetSystemParameter</a> <a href="gg269201(v=exchg.10).md">con JET_paramMaxOpenTables</a>.</p> | 
-| <p>JET_errTooManyOpenTables</p> | <p>L'operazione non è riuscita perché il motore non è in grado di allocare le risorse necessarie per memorizzare nella cache lo schema della tabella. Il numero di tabelle il cui schema può essere memorizzato nella cache viene configurato <a href="gg294044(v=exchg.10).md">usando JetSetSystemParameter</a> <a href="gg269201(v=exchg.10).md">con JET_paramMaxOpenTables</a>.</p> | 
-| <p>JET_errTooManySorts</p> | <p>L'operazione non è riuscita perché il motore non è in grado di allocare le risorse necessarie per creare una tabella temporanea. Le risorse della tabella temporanea vengono <a href="gg294044(v=exchg.10).md">configurate usando JetSetSystemParameter</a> <a href="gg294140(v=exchg.10).md">con JET_paramMaxTemporaryTables</a>.</p> | 
+| <p>JET_errTooManyColumns</p> | <p>È stato effettuato un tentativo di aggiungere troppe colonne alla tabella. Una tabella non può avere più JET_ccolFixedMost colonne fisse, non più di JET_ccolVarMost colonne a lunghezza variabile e non più di JET_ccolTaggedMost colonne con tag.</p> | 
+| <p>JET_errTooManyOpenIndexes</p> | <p>L'operazione non è riuscita perché il motore non è in grado di allocare le risorse necessarie per memorizzare nella cache gli indici della tabella. Il numero di indici il cui schema può essere memorizzato nella cache viene configurato usando <a href="gg294044(v=exchg.10).md">JetSetSystemParameter</a> <a href="gg269201(v=exchg.10).md">con</a>JET_paramMaxOpenTables .</p> | 
+| <p>JET_errTooManyOpenTables</p> | <p>L'operazione non è riuscita perché il motore non è in grado di allocare le risorse necessarie per memorizzare nella cache lo schema della tabella. Il numero di tabelle il cui schema può essere memorizzato nella cache viene configurato usando <a href="gg294044(v=exchg.10).md">JetSetSystemParameter</a> con <a href="gg269201(v=exchg.10).md">JET_paramMaxOpenTables</a>.</p> | 
+| <p>JET_errTooManySorts</p> | <p>L'operazione non è riuscita perché il motore non è in grado di allocare le risorse necessarie per creare una tabella temporanea. Le risorse tabella temporanea vengono configurate <a href="gg294044(v=exchg.10).md">usando JetSetSystemParameter</a> <a href="gg294140(v=exchg.10).md">con JET_paramMaxTemporaryTables</a>.</p> | 
 
 
 
@@ -146,7 +146,13 @@ In caso di errore, la tabella temporanea non verrà creata e non verrà restitui
 #### <a name="requirements"></a>Requisiti
 
 
-| | | <p><strong>Client</strong></p> | <p>Richiede Windows Vista, Windows XP o Windows 2000 Professional.</p> | | <p><strong>Server</strong></p> | <p>Richiede Windows Server 2008, Windows Server 2003 o Windows 2000 Server.</p> | | <p><strong>Intestazione</strong></p> | <p>Dichiarato in Esent.h.</p> | | <p><strong>Libreria</strong></p> | <p>Usare ESENT.lib.</p> | | <p><strong>DLL</strong></p> | <p>Richiede ESENT.dll.</p> | 
+| Requisito | Valore |
+|------------|----------|
+| <p><strong>Client</strong></p> | <p>Richiede Windows Vista, Windows XP o Windows 2000 Professional.</p> | 
+| <p><strong>Server</strong></p> | <p>Richiede Windows Server 2008, Windows Server 2003 o Windows 2000 Server.</p> | 
+| <p><strong>Intestazione</strong></p> | <p>Dichiarato in Esent.h.</p> | 
+| <p><strong>Libreria</strong></p> | <p>Usare ESENT.lib.</p> | 
+| <p><strong>DLL</strong></p> | <p>Richiede ESENT.dll.</p> | 
 
 
 

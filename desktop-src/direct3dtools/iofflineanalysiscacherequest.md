@@ -1,5 +1,5 @@
 ---
-description: Richieste di informazioni sul fatto che una richiesta offline sia memorizzata o meno nella cache.
+description: Richiede informazioni sulla memorizzazione o meno di una richiesta offline nella cache.
 MS-HAID: vspixengine.IOfflineAnalysisCacheRequest
 MSHAttr:
 - PreferredSiteName:MSDN
@@ -17,16 +17,16 @@ api_location:
 topic_type:
 - APIRef
 - kbSyntax
-ms.openlocfilehash: 01551f7b0347b3b6f0920e47a2666a480c67439d
-ms.sourcegitcommit: 4e94fc75fad7b2a0f3c92a26f97e89924e59b7a9
+ms.openlocfilehash: 6ef4a30f76ac3e0f186d9cd903214b8075bb7476
+ms.sourcegitcommit: c276a8912787b2cda74dcf54eb96df961bb1188b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/24/2021
-ms.locfileid: "122786327"
+ms.lasthandoff: 08/20/2021
+ms.locfileid: "122629322"
 ---
 # <a name="span-idvspixengineiofflineanalysiscacherequestspaniofflineanalysiscacherequest-interface"></a><span id="vspixengine.iofflineanalysiscacherequest"></span>Interfaccia IOfflineAnalysisCacheRequest
 
-Richieste di informazioni sul fatto che una richiesta offline sia memorizzata o meno nella cache.
+Richiede informazioni sulla memorizzazione o meno di una richiesta offline nella cache.
 
 ## <a name="members"></a>Membri
 
@@ -38,7 +38,7 @@ Richieste di informazioni sul fatto che una richiesta offline sia memorizzata o 
 
 **L'interfaccia IOfflineAnalysisCacheRequest** include questi metodi.
 
-<table><colgroup><col  /><col  /></colgroup><thead><tr class="header"><th >Metodo</th><th >Descrizione</th></tr></thead><tbody><tr class="odd"><td ><a href="/windows/desktop/direct3dtools/iofflineanalysiscacherequest-requestofflineanalysisreportavailabilityasync-dword-dword-arr-iofflineanalysiscachecallback-ptr"><strong>RequestOfflineAnalysisReportAvailabilityAsync</strong></a></td><td ><p>Richieste di memorizzare nella cache il report di analisi offline dei frame specificati.</p></td></tr></tbody></table>
+<table><colgroup><col  /><col  /></colgroup><thead><tr class="header"><th style="text-align: left;">Metodo</th><th style="text-align: left;">Descrizione</th></tr></thead><tbody><tr class="odd"><td style="text-align: left;"><a href="/windows/desktop/direct3dtools/iofflineanalysiscacherequest-requestofflineanalysisreportavailabilityasync-dword-dword-arr-iofflineanalysiscachecallback-ptr"><strong>RequestOfflineAnalysisReportAvailabilityAsync</strong></a></td><td style="text-align: left;"><p>Richieste di memorizzare nella cache il report di analisi offline dei frame specificati.</p></td></tr></tbody></table>
 
  
 

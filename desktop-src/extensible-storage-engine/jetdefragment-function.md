@@ -20,12 +20,12 @@ api_type:
 api_location:
 - ESENT.DLL
 ROBOTS: INDEX,FOLLOW
-ms.openlocfilehash: 2f9fdce5268e6981fa018f58ed14b31c2c078cce
-ms.sourcegitcommit: 4665ebce0c106bdb52eef36e544280b496b6f50b
+ms.openlocfilehash: 9916039ee20f9d1c13865ce5dc3ba4d2de053029
+ms.sourcegitcommit: 9b5faa61c38b2d0c432b7f2dbee8c127b0e28a7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/26/2021
-ms.locfileid: "122985947"
+ms.lasthandoff: 08/19/2021
+ms.locfileid: "122482857"
 ---
 # <a name="jetdefragment-function"></a>Funzione JetDefragment
 
@@ -34,7 +34,7 @@ _**Si applica a:** Windows | Windows Server_
 
 ## <a name="jetdefragment-function"></a>Funzione JetDefragment
 
-La **funzione JetDefragment avvia** e arresta le attività di deframmentazione del database che migliorano l'organizzazione dei dati all'interno di un database. Questa operazione viene eseguita per limitare l'aumento delle dimensioni del database usando l'allocazione dei dischi esistente in modo più efficiente all'interno del database. Può anche ridurre le working set assicurando che i dati sono più imballati. Infine, può migliorare le prestazioni dell'applicazione velocizzando le operazioni comuni tramite una migliore organizzazione dei dati.
+La **funzione JetDefragment avvia** e arresta le attività di deframmentazione del database che migliorano l'organizzazione dei dati all'interno di un database. Questa operazione viene eseguita per limitare l'aumento delle dimensioni del database usando l'allocazione dei dischi esistente in modo più efficiente all'interno del database. Può anche ridurre le working set assicurando che i dati sono più strettamente imballati. Infine, può migliorare le prestazioni dell'applicazione velocizzando le operazioni comuni tramite una migliore organizzazione dei dati.
 
 La deframmentazione del database è un'operazione online e non interrompe la normale attività del database, ad esempio operazioni di query o aggiornamenti dei dati. **JetDefragment** inoltre non esegue una copia di tutti i dati esistenti. Al contrario, deframmenta un database sul posto. Infine, **JetDefragment recupera** lo spazio interno del database per il nuovo utilizzo, ma non rilascia spazio in eccesso al sistema operativo file system.
 
@@ -84,7 +84,7 @@ Quando questo parametro è impostato su NULL o se *pcSeconds* punta a un valore 
 Gruppo di bit che specifica zero o più delle opzioni seguenti.
 
 
-| <p>Valore</p> | <p>Significato</p> | 
+| <p>valore</p> | <p>Significato</p> | 
 |--------------|----------------|
 | <p>JET_bitDefragmentAvailSpaceTreesOnly</p> | <p>Deframmenta la parte di spazio disponibile dell'allocazione dello spazio del database ESE. Lo spazio del database è suddiviso in due tipi: spazio di proprietà e spazio disponibile. Lo spazio di proprietà viene allocato a una tabella o a un indice mentre lo spazio disponibile è pronto per l'uso rispettivamente all'interno della tabella o dell'indice. Lo spazio disponibile è molto più dinamico nel comportamento e richiede la deframmentazione in linea più dello spazio di proprietà o dei dati della tabella o dell'indice.</p> | 
 | <p>JET_bitDefragmentBatchStart</p> | <p>Avvia una nuova attività di deframmentazione.</p> | 
@@ -131,14 +131,7 @@ La sessione utilizzata per avviare l'attività di deframmentazione online può e
 #### <a name="requirements"></a>Requisiti
 
 
-| Requisito | Valore |
-|------------|----------|
-| <p><strong>Client</strong></p> | <p>Richiede Windows Vista, Windows XP o Windows 2000 Professional.</p> | 
-| <p><strong>Server</strong></p> | <p>Richiede Windows Server 2008, Windows Server 2003 o Windows 2000 Server.</p> | 
-| <p><strong>Intestazione</strong></p> | <p>Dichiarato in Esent.h.</p> | 
-| <p><strong>Libreria</strong></p> | <p>Usare ESENT.lib.</p> | 
-| <p><strong>DLL</strong></p> | <p>Richiede ESENT.dll.</p> | 
-| <p><strong>Unicode</strong></p> | <p>Implementato come <strong>JetDefragmentW</strong> (Unicode) e <strong>JetDefragmentA</strong> (ANSI).</p> | 
+| | | <p><strong>Client</strong></p> | <p>Richiede Windows Vista, Windows XP o Windows 2000 Professional.</p> | | <p><strong>Server</strong></p> | <p>Richiede Windows Server 2008, Windows Server 2003 o Windows 2000 Server.</p> | | <p><strong>Intestazione</strong></p> | <p>Dichiarato in Esent.h.</p> | | <p><strong>Libreria</strong></p> | <p>Usare ESENT.lib.</p> | | <p><strong>DLL</strong></p> | <p>Richiede ESENT.dll.</p> | | <p><strong>Unicode</strong></p> | <p>Implementato come <strong>JetDefragmentW</strong> (Unicode) e <strong>JetDefragmentA</strong> (ANSI).</p> | 
 
 
 
