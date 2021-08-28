@@ -1,7 +1,7 @@
 ---
-description: Di seguito è riportato un elenco dei nomi descrittivi delle proprietà WIA (Windows Image Acquisition) e degli ID numerici. Vengono presentate come Microsoft Visual Basic definizioni di costanti, per una facile inclusione in applicazioni o script.
+description: Di seguito è riportato un elenco di Windows descrittivi delle proprietà di acquisizione di immagini (WIA) e id numerici. Vengono presentati come definizioni di costanti Visual Basic Microsoft, per una pratica inclusione in applicazioni o script.
 ms.assetid: 6cacb7ce-1f41-4d24-adcb-c7aa9049f846
-title: Definizioni di costanti della proprietà WIA
+title: Definizioni delle costanti delle proprietà WIA
 ms.topic: article
 ms.date: 05/31/2018
 topic_type:
@@ -9,18 +9,18 @@ topic_type:
 api_name: ''
 api_type: ''
 api_location: ''
-ms.openlocfilehash: 0fec89e2e10b019b7186482609d3ab4089ede692
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 6539e14daf6a1fc124c177713f3056b981fd6c00ac9a41392ed03ae8759319cc
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "106307308"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118965450"
 ---
-# <a name="wia-property-constant-definitions"></a>Definizioni di costanti della proprietà WIA
+# <a name="wia-property-constant-definitions"></a>Definizioni delle costanti delle proprietà WIA
 
-Di seguito è riportato un elenco dei nomi descrittivi delle proprietà WIA (Windows Image Acquisition) e degli ID numerici. Vengono presentate come Microsoft Visual Basic definizioni di costanti, per una facile inclusione in applicazioni o script.
+Di seguito è riportato un elenco di Windows descrittivi delle proprietà di acquisizione di immagini (WIA) e id numerici. Vengono presentati come definizioni di costanti Visual Basic Microsoft, per una pratica inclusione in applicazioni o script.
 
-Per Visual Basic applicazioni, aggiungere un riferimento a "Microsoft Windows Image Acquisition 1,01 Type Library", in cui tali costanti vengono fornite come tipi di enumerazione.
+Per Visual Basic applicazioni, aggiungere un riferimento a "Microsoft Windows Image Acquisition 1.01 Type Library", in cui queste costanti vengono fornite come tipi di enumerazione.
 
 
 ```

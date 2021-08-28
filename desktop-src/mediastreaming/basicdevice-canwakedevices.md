@@ -1,11 +1,11 @@
 ---
-title: Proprietà BasicDevice. CanWakeDevices
+title: BasicDevice.CanWakeDevices - proprietà
 description: Ottiene un valore che indica se il dispositivo può essere riattivato.
 ms.assetid: 0BF0B2CD-E09E-4A0B-9D48-A980CBFE4233
 keywords:
-- API di streaming multimediale della proprietà CanWakeDevices
-- API di streaming multimediale della proprietà CanWakeDevices, interfaccia BasicDevice
-- API di streaming multimediale dell'interfaccia BasicDevice, proprietà CanWakeDevices
+- Proprietà CanWakeDevices API Streaming multimediale
+- Proprietà CanWakeDevices API Streaming multimediale, interfaccia BasicDevice
+- Interfaccia BasicDevice API Streaming multimediale , proprietà CanWakeDevices
 topic_type:
 - apiref
 api_name:
@@ -15,14 +15,14 @@ api_type:
 ms.topic: reference
 ms.date: 05/31/2018
 api_location: ''
-ms.openlocfilehash: 63fc4ed8c387c7fbe083e64311442b9e12176e5d
-ms.sourcegitcommit: ebd3ce6908ff865f1ef66f2fc96769be0aad82e1
+ms.openlocfilehash: 37aba33168993df0e6e2853ea5bbc5f618863c3f025b28ab8ab98b81025486bf
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/19/2020
-ms.locfileid: "104117630"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119100903"
 ---
-# <a name="basicdevicecanwakedevices-property"></a>Proprietà BasicDevice. CanWakeDevices
+# <a name="basicdevicecanwakedevices-property"></a>BasicDevice.CanWakeDevices - proprietà
 
 Ottiene un valore che indica se il dispositivo può essere riattivato.
 
@@ -33,7 +33,7 @@ Questa proprietà è di sola lettura.
 
 ```C++
 HRESULT get_CanWakeDevices(
-  [out] boolean *value
+  [out] boolean *value
 );
 ```
 
@@ -41,7 +41,7 @@ HRESULT get_CanWakeDevices(
 
 ## <a name="property-value"></a>Valore proprietà
 
-Puntatore a un valore booleano che è **true** se il dispositivo può essere riattivato.
+Puntatore a un valore booleano **true se** il dispositivo può essere riattivato.
 
 ## <a name="see-also"></a>Vedi anche
 
@@ -50,6 +50,6 @@ Puntatore a un valore booleano che è **true** se il dispositivo può essere ria
 [**BasicDevice**](/previous-versions/windows/desktop/legacy/hh828813(v=vs.85))
 </dt> </dl>
 
- 
+ 
 
- 
+ 

@@ -1,11 +1,11 @@
 ---
 title: Interfaccia IMsRdpClientAdvancedSettings8
-description: Espone metodi e proprietà che gestiscono le impostazioni avanzate del controllo ActiveX Desktop remoto.
+description: Espone metodi e proprietà che gestiscono le impostazioni avanzate del Desktop remoto ActiveX controllo.
 ms.assetid: 9e1de47d-f194-4d9e-8e47-7c13a0677aaa
 ms.tgt_platform: multiple
 keywords:
 - Interfaccia IMsRdpClientAdvancedSettings8 Servizi Desktop remoto
-- Interfaccia IMsRdpClientAdvancedSettings8 Servizi Desktop remoto, descritta
+- Interfaccia IMsRdpClientAdvancedSettings8 Servizi Desktop remoto , descritta
 topic_type:
 - apiref
 api_name:
@@ -16,34 +16,34 @@ api_type:
 - COM
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: c8fce32baf792563e64d2f8b8e1ad2bd56a31c5b
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: fee551748ebe098bdec1950a51988e6a29309e75001e4a25d8277102a3e181a2
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "104400386"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119001299"
 ---
 # <a name="imsrdpclientadvancedsettings8-interface"></a>Interfaccia IMsRdpClientAdvancedSettings8
 
-Espone metodi e proprietà che gestiscono le impostazioni avanzate del controllo ActiveX Desktop remoto.
+Espone metodi e proprietà che gestiscono le impostazioni avanzate del Desktop remoto ActiveX controllo.
 
-Per ottenere un'istanza di questa interfaccia, usare la proprietà [**IMsRdpClient8:: AdvancedSettings9**](imsrdpclient8-advancedsettings9.md) .
+Per ottenere un'istanza di questa interfaccia, usare la [**proprietà IMsRdpClient8::AdvancedSettings9.**](imsrdpclient8-advancedsettings9.md)
 
 ## <a name="members"></a>Membri
 
-L'interfaccia **IMsRdpClientAdvancedSettings8** eredita da [**IMsRdpClientAdvancedSettings7**](imsrdpclientadvancedsettings7.md). **IMsRdpClientAdvancedSettings8** dispone anche di questi tipi di membri:
+**L'interfaccia IMsRdpClientAdvancedSettings8** eredita da [**IMsRdpClientAdvancedSettings7**](imsrdpclientadvancedsettings7.md). **IMsRdpClientAdvancedSettings8** include anche questi tipi di membri:
 
 -   [Proprietà](#properties)
 
 ### <a name="properties"></a>Proprietà
 
-L'interfaccia **IMsRdpClientAdvancedSettings8** ha queste proprietà.
+Queste proprietà sono disponibili nell'interfaccia **IMsRdpClientAdvancedSettings8.**
 
 
 
 | Proprietà                                                                                  | Tipo di accesso           | Descrizione                                                           |
 |:------------------------------------------------------------------------------------------|:----------------------|:----------------------------------------------------------------------|
-| [**BandwidthDetection**](imsrdpclientadvancedsettings8-bandwidthdetection.md)<br/> | Lettura/Scrittura<br/> | Specifica se le modifiche della larghezza di banda vengono rilevate automaticamente.<br/> |
+| [**BandwidthDetection**](imsrdpclientadvancedsettings8-bandwidthdetection.md)<br/> | Lettura/Scrittura<br/> | Specifica se vengono rilevate automaticamente modifiche alla larghezza di banda.<br/> |
 
 
 

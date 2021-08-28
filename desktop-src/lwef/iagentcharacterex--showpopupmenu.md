@@ -1,19 +1,19 @@
 ---
-title: ShowPopupMenu IAgentCharacterEx
-description: ShowPopupMenu IAgentCharacterEx
+title: IAgentCharacterEx ShowPopupMenu
+description: IAgentCharacterEx ShowPopupMenu
 ms.assetid: f93c4c9e-5ef8-42d1-8f22-d6625af7978f
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 535a86496f3553e0927ebe67d2c9823b738fb901
-ms.sourcegitcommit: 2d531328b6ed82d4ad971a45a5131b430c5866f7
+ms.openlocfilehash: d67d01edae103bad10eb085c4bfd1f5ce559bf26ab030816d241367ec3c13763
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "103856478"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119105459"
 ---
-# <a name="iagentcharacterexshowpopupmenu"></a>IAgentCharacterEx:: ShowPopupMenu
+# <a name="iagentcharacterexshowpopupmenu"></a>IAgentCharacterEx::ShowPopupMenu
 
-\[Microsoft Agent è stato deprecato a partire da Windows 7 e potrebbe non essere disponibile nelle versioni successive di Windows.\]
+\[Microsoft Agent è deprecato a Windows 7 e potrebbe non essere disponibile nelle versioni successive di Windows.\]
 
 ``` syntax
 HRESULT ShowPopupMenu(
@@ -22,37 +22,37 @@ HRESULT ShowPopupMenu(
 );
 ```
 
-Consente di visualizzare il menu di scelta rapida per il carattere.
+Visualizza il menu a comparsa per il carattere.
 
--   Restituisce \_ OK per indicare che l'operazione è stata completata.
+-   Restituisce S \_ OK per indicare che l'operazione è riuscita.
 
 <dl> <dt>
 
-<span id="x"></span><span id="X"></span>*x*
+<span id="x"></span><span id="X"></span>*X*
 </dt> <dd>
 
-Coordinata x del menu di scelta rapida del carattere in pixel rispetto all'origine dello schermo (in alto a sinistra).
+Coordinata x del menu a comparsa del carattere in pixel, rispetto all'origine dello schermo (in alto a sinistra).
 
 </dd> <dt>
 
-<span id="y"></span><span id="Y"></span>*y*
+<span id="y"></span><span id="Y"></span>*Y*
 </dt> <dd>
 
-Coordinata y del menu di scelta rapida del carattere in pixel rispetto all'origine dello schermo (in alto a sinistra).
+Coordinata y del menu a comparsa del carattere in pixel, rispetto all'origine dello schermo (in alto a sinistra).
 
 </dd> </dl>
 
-Quando si imposta [**IAgentCharacterEx:: SetAutoPopupMenu**](iagentcharacterex--setautopopupmenu.md) su **false**, il server non Visualizza più automaticamente il menu quando si fa clic con il pulsante destro del mouse sull'icona del carattere o della barra delle applicazioni. È possibile utilizzare questo metodo per visualizzare il menu.
+Quando si imposta [**IAgentCharacterEx::SetAutoPopupMenu**](iagentcharacterex--setautopopupmenu.md) su **False,** il server non visualizza più automaticamente il menu quando si fa clic con il pulsante destro del mouse sul carattere o sull'icona della barra delle applicazioni. È possibile usare questo metodo per visualizzare il menu.
 
-Il menu viene visualizzato fino a quando l'utente non seleziona un comando o Visualizza un altro menu. È possibile visualizzare un solo menu popup alla volta; Pertanto, le chiamate a questo metodo cancelleranno (rimuovere) il menu precedente.
+Il menu viene visualizzato fino a quando l'utente non seleziona un comando o visualizza un altro menu. È possibile visualizzare un solo menu a comparsa alla volta. Pertanto, le chiamate a questo metodo annullano (rimuovono) il menu precedente.
 
-Questo metodo deve essere chiamato solo quando l'applicazione client è il client attivo del carattere; in caso contrario, avrà esito negativo.
+Questo metodo deve essere chiamato solo quando l'applicazione client è il client attivo del carattere. in caso contrario, ha esito negativo.
 
 [**IAgentCharacterEx::SetAutoPopupMenu**](iagentcharacterex--setautopopupmenu.md)
 
- 
+ 
 
- 
+ 
 
 
 

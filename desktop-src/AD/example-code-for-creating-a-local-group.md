@@ -7,16 +7,16 @@ keywords:
 - Esempi di Active Directory Active Directory, creazione di un gruppo locale
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 19ac9439d22613920b07ad24b2c4e79f66eff05e
-ms.sourcegitcommit: 2d531328b6ed82d4ad971a45a5131b430c5866f7
+ms.openlocfilehash: 99ecb6de577c185b1e73244a609ad9e58af9d0fa2979b8ffd1e41f282c933100
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "103707672"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118962420"
 ---
 # <a name="example-code-for-creating-a-local-group"></a>Codice di esempio per la creazione di un gruppo locale
 
-Nell'esempio di codice C++ riportato di seguito viene creato un gruppo locale in un server membro o in un computer in cui è in esecuzione la workstation Windows NT o Windows 2000 Professional.
+L'esempio di codice C++ seguente crea un gruppo locale in un server membro o in un computer in esecuzione Windows NT Workstation o Windows 2000 Professional.
 
 
 ```C++
@@ -145,7 +145,7 @@ HRESULT CreateMachineLocalGroup(
 
 
 
-Nell'esempio di codice seguente Visual Basic viene creato un gruppo locale in un server membro o in un computer in cui è in esecuzione la workstation Windows NT o Windows 2000 Professional.
+Nell'Visual Basic di codice seguente viene creato un gruppo locale in un server membro o in un computer in esecuzione Windows NT Workstation o Windows 2000 Professional.
 
 
 ```VB
@@ -178,9 +178,9 @@ End Sub
 
 
 
- 
+ 
 
- 
+ 
 
 
 

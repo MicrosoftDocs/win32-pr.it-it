@@ -1,7 +1,7 @@
 ---
-description: Abilita o Disabilita i messaggi di debug.
+description: Abilitare o disabilitare i messaggi di debug.
 ms.assetid: 5c2aa3cf-ee6a-40fd-b300-67cb6ce691b6
-title: Funzione D3DX10DebugMute (D3DX10Core. h)
+title: Funzione D3DX10DebugMute (D3DX10Core.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -14,16 +14,16 @@ api_type:
 api_location:
 - D3DX10.lib
 - D3DX10.dll
-ms.openlocfilehash: 6f331e3f074a4b77a1f1a7f1a8117cf660940f7d
-ms.sourcegitcommit: 14010c34b35fa268046c7683f021f86de08ddd0a
+ms.openlocfilehash: f4cd6a7ade60bc59cb1e6cbd9d3a447fac5cb7364db1ca85dcf704acedaa645c
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/15/2021
-ms.locfileid: "106323182"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119128383"
 ---
-# <a name="d3dx10debugmute-function"></a>D3DX10DebugMute (funzione)
+# <a name="d3dx10debugmute-function"></a>Funzione D3DX10DebugMute
 
-Abilita o Disabilita i messaggi di debug.
+Abilitare o disabilitare i messaggi di debug.
 
 ## <a name="syntax"></a>Sintassi
 
@@ -40,12 +40,12 @@ HRESULT D3DX10DebugMute(
 
 <dl> <dt>
 
-*Disattiva* \[ in\]
+*Disattiva audio* \[ Pollici\]
 </dt> <dd>
 
-Tipo: **[ **bool**](../winprog/windows-data-types.md)**
+Tipo: **[ **BOOL**](../winprog/windows-data-types.md)**
 
-Impostare su **true** per abilitare i messaggi di debug; impostare su **false** per disabilitare i messaggi di debug.
+Impostare su **TRUE per** abilitare i messaggi di debug. impostare su **FALSE per** disabilitare i messaggi di debug.
 
 </dd> </dl>
 
@@ -53,11 +53,11 @@ Impostare su **true** per abilitare i messaggi di debug; impostare su **false** 
 
 Tipo: **[ **HRESULT**](https://msdn.microsoft.com/library/Bb401631(v=MSDN.10).aspx)**
 
-Il valore restituito è uno dei valori elencati in [codici restituiti Direct3D 10](d3d10-graphics-reference-returnvalues.md).
+Il valore restituito è uno dei valori elencati in [Codici restituiti Direct3D 10.](d3d10-graphics-reference-returnvalues.md)
 
 ## <a name="remarks"></a>Commenti
 
-Usare questa funzione per disabilitare i messaggi di errore per le API D3DX10 durante il debug; l'uso di questa funzione deve essere sorvegliato dall'opzione del \_ compilatore D3D10 debug.
+Usare questa funzione per disabilitare i messaggi di errore per le API D3DX10 durante il debug. L'uso di questa funzione deve essere sorvegliato dall'opzione del compilatore DEBUG D3D10. \_
 
 
 ```
@@ -68,7 +68,7 @@ Usare questa funzione per disabilitare i messaggi di errore per le API D3DX10 du
 
 
 
-Lo stato predefinito è **true** per una compilazione di debug.
+Lo stato predefinito è **TRUE per** una compilazione di debug.
 
 ## <a name="requirements"></a>Requisiti
 
@@ -76,8 +76,8 @@ Lo stato predefinito è **true** per una compilazione di debug.
 
 | Requisito | Valore |
 |--------------------|-----------------------------------------------------------------------------------------|
-| Intestazione<br/>  | <dl> <dt>D3DX10Core. h</dt> </dl> |
-| Libreria<br/> | <dl> <dt>D3DX10. lib</dt> </dl>   |
+| Intestazione<br/>  | <dl> <dt>D3DX10Core.h</dt> </dl> |
+| Libreria<br/> | <dl> <dt>D3DX10.lib</dt> </dl>   |
 
 
 
@@ -85,7 +85,7 @@ Lo stato predefinito è **true** per una compilazione di debug.
 
 <dl> <dt>
 
-[Funzioni per utilizzo generico](d3d10-graphics-reference-d3dx10-functions-general-purpose.md)
+[Per utilizzo generico funzioni](d3d10-graphics-reference-d3dx10-functions-general-purpose.md)
 </dt> </dl>
 
  

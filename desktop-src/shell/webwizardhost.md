@@ -1,7 +1,7 @@
 ---
-description: Espone metodi che consentono le pagine HTML ospitate in un'estensione della procedura guidata per comunicare con la procedura guidata.
+description: Espone metodi che consentono alle pagine HTML ospitate in un'estensione della procedura guidata di comunicare con la procedura guidata.
 ms.assetid: 7b3690dc-2007-43a0-80a3-4a68e3c8464d
-title: Oggetto WebWizardHost (shldisp. h)
+title: Oggetto WebWizardHost (Shldisp.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -13,37 +13,37 @@ api_type:
 - COM
 api_location:
 - Shldisp.h
-ms.openlocfilehash: 1fbaf53db11fda577e9e9c5384af5f7c62fe1944
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: c5bcf40a77c2f464d5277ac4823ed74a3f3c2bdd6a2114d2431684cc8b319f66
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "103967430"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118967750"
 ---
 # <a name="webwizardhost-object"></a>Oggetto WebWizardHost
 
-Espone metodi che consentono le pagine HTML ospitate in un'estensione della procedura guidata per comunicare con la procedura guidata.
+Espone metodi che consentono alle pagine HTML ospitate in un'estensione della procedura guidata di comunicare con la procedura guidata.
 
 ## <a name="members"></a>Membri
 
-L'oggetto **WebWizardHost** dispone di questi tipi di membri:
+**L'oggetto WebWizardHost** ha questi tipi di membri:
 
 -   [Metodi](#methods)
 -   [Proprietà](#properties)
 
 ### <a name="methods"></a>Metodi
 
-L'oggetto **WebWizardHost** dispone di questi metodi.
+**L'oggetto WebWizardHost** dispone di questi metodi.
 
 
 
 | Metodo                                                      | Descrizione                                                                                                                                                                        |
 |:------------------------------------------------------------|:-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| [**Annulla**](iwebwizardhost-cancel.md)                     | Simula un clic del pulsante **Annulla** .<br/>                                                                                                                                    |
-| [**FinalBack**](iwebwizardhost-finalback.md)               | Passa alla pagina lato client immediatamente precedente alla pagina che ospita le pagine HTML sul lato server.<br/>                                                                    |
-| [**FinalNext**](iwebwizardhost-finalnext.md)               | Passa alla pagina della procedura guidata lato client che segue la pagina che ospita le pagine HTML sul lato server oppure termina la procedura guidata se non sono presenti altre pagine lato client.<br/> |
-| [**SetHeaderText**](iwebwizardhost-setheadertext.md)       | Imposta il titolo e il sottotitolo visualizzati nell'intestazione della procedura guidata. In generale, il client visualizzerà l'intestazione sopra il codice HTML e sotto la barra del titolo.<br/>                    |
-| [**SetWizardButtons**](iwebwizardhost-setwizardbuttons.md) | Aggiorna i pulsanti **indietro**, **Avanti** e **fine** nel frame della procedura guidata del client.<br/>                                                                                    |
+| [**Annulla**](iwebwizardhost-cancel.md)                     | Simula un clic **sul pulsante** Annulla.<br/>                                                                                                                                    |
+| [**FinalBack**](iwebwizardhost-finalback.md)               | Passa alla pagina sul lato client immediatamente precedente alla pagina che ospita le pagine HTML sul lato server.<br/>                                                                    |
+| [**FinalNext**](iwebwizardhost-finalnext.md)               | Passa alla pagina della procedura guidata lato client che segue la pagina che ospita le pagine HTML sul lato server o termina la procedura guidata se non sono presenti altre pagine sul lato client.<br/> |
+| [**SetHeaderText**](iwebwizardhost-setheadertext.md)       | Imposta il titolo e il sottotitolo visualizzati nell'intestazione della procedura guidata. In generale, il client visualizza l'intestazione sopra il codice HTML e sotto la barra del titolo.<br/>                    |
+| [**SetWizardButtons**](iwebwizardhost-setwizardbuttons.md) | Aggiorna i **pulsanti Indietro** **,** Avanti **e** Fine nella cornice della procedura guidata del client.<br/>                                                                                    |
 
 
 
@@ -51,14 +51,14 @@ L'oggetto **WebWizardHost** dispone di questi metodi.
 
 ### <a name="properties"></a>Proprietà
 
-L'oggetto **WebWizardHost** dispone di queste proprietà.
+**L'oggetto WebWizardHost** ha queste proprietà.
 
 
 
 | Proprietà                                               | Tipo di accesso           | Descrizione                                              |
 |:-------------------------------------------------------|:----------------------|:---------------------------------------------------------|
 | [**Didascalia**](iwebwizardhost-caption.md)<br/>   | Lettura/Scrittura<br/> | Non implementato.<br/>                              |
-| [**Proprietà**](iwebwizardhost-property.md)<br/> | Lettura/Scrittura<br/> | Imposta o Recupera il valore corrente di una proprietà.<br/> |
+| [**Proprietà**](iwebwizardhost-property.md)<br/> | Lettura/Scrittura<br/> | Imposta o recupera il valore corrente di una proprietà.<br/> |
 
 
 
@@ -70,11 +70,11 @@ L'oggetto **WebWizardHost** dispone di queste proprietà.
 
 | Requisito | Valore |
 |-------------------------------------|----------------------------------------------------------------------------------------|
-| Client minimo supportato<br/> | \[Solo app desktop Windows XP\]<br/>                                            |
-| Server minimo supportato<br/> | \[Solo app desktop Windows Server 2003\]<br/>                                   |
-| Intestazione<br/>                   | <dl> <dt>Shldisp. h</dt> </dl>   |
-| IDL<br/>                      | <dl> <dt>Shldisp. idl</dt> </dl> |
-| IID<br/>                      | \_WEBWIZARDHOST CLSID<br/>                                                        |
+| Client minimo supportato<br/> | Windows Solo \[ app desktop XP\]<br/>                                            |
+| Server minimo supportato<br/> | Windows Solo app desktop di Server 2003 \[\]<br/>                                   |
+| Intestazione<br/>                   | <dl> <dt>Shldisp.h</dt> </dl>   |
+| Idl<br/>                      | <dl> <dt>Shldisp.idl</dt> </dl> |
+| IID<br/>                      | CLSID \_ WebWizardHost<br/>                                                        |
 
 
 

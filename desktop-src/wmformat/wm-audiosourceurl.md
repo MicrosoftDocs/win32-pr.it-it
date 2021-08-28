@@ -1,9 +1,9 @@
 ---
 title: WM/AudioSourceURL
-description: L'attributo WM/AudioSourceURL contiene l'indirizzo di una pagina web ufficiale del supporto di origine. Ad esempio, un brano di una colonna sonora potrebbe avere un collegamento alla pagina ufficiale per il film.
+description: L'attributo WM/AudioSourceURL contiene l'indirizzo di una pagina Web ufficiale del supporto di origine. Ad esempio, un brano di una colonna sonora potrebbe avere un collegamento alla pagina ufficiale del film.
 ms.assetid: 73a7e56e-914f-48d2-9e71-cb1aed015fc4
 keywords:
-- Formato di Windows Media WM/AudioSourceURL
+- WM/AudioSourceURL windows Media Format
 topic_type:
 - apiref
 api_name:
@@ -12,16 +12,16 @@ api_type:
 - NA
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: c41ff96907bcd8e8bb7b2e9657f92bf24a1ff495
-ms.sourcegitcommit: 57758ecb246c84d65e6e0e4bd5570d9176fa39cd
+ms.openlocfilehash: 1057ba92c641ef68a2179be1af84eaa7350b0c3dcbf338f3bb9d53530d1fed64
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/25/2019
-ms.locfileid: "104334316"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118963790"
 ---
 # <a name="wmaudiosourceurl"></a>WM/AudioSourceURL
 
-L'attributo **WM/AudioSourceURL** contiene l'indirizzo di una pagina web ufficiale del supporto di origine. Ad esempio, un brano di una colonna sonora potrebbe avere un collegamento alla pagina ufficiale per il film.
+**L'attributo WM/AudioSourceURL** contiene l'indirizzo di una pagina Web ufficiale del supporto di origine. Ad esempio, un brano di una colonna sonora potrebbe avere un collegamento alla pagina ufficiale del film.
 
 ## <a name="global-constant"></a>Costante globale
 
@@ -29,7 +29,7 @@ g \_ wszWMAudioSourceURL
 
 ## <a name="data-type"></a>Tipo di dati
 
-**\_stringa di tipo WMT \_**
+**STRINGA DI \_ TIPO \_ WMT**
 
 ## <a name="see-also"></a>Vedi anche
 
@@ -38,9 +38,9 @@ g \_ wszWMAudioSourceURL
 [**Elenco degli attributi**](attribute-list.md)
 </dt> </dl>
 
- 
+ 
 
- 
+ 
 
 
 

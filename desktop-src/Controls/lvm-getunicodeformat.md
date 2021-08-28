@@ -1,9 +1,9 @@
 ---
-title: Messaggio LVM_GETUNICODEFORMAT (COMmctrl. h)
-description: Recupera il flag del formato carattere UNICODE per il controllo. È possibile inviare questo messaggio in modo esplicito o usare la \_ macro GetUnicodeFormat di ListView.
+title: LVM_GETUNICODEFORMAT messaggio (Commctrl.h)
+description: Recupera il flag di formato carattere UNICODE per il controllo . È possibile inviare questo messaggio in modo esplicito o usare la \_ macro ListView GetUnicodeFormat.
 ms.assetid: b0598b60-4d0e-4c68-b63a-e614c6268129
 keywords:
-- Controlli di Windows Message LVM_GETUNICODEFORMAT
+- LVM_GETUNICODEFORMAT dei controlli Windows messaggio
 topic_type:
 - apiref
 api_name:
@@ -14,16 +14,16 @@ api_type:
 - HeaderDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 720a65baab8ec9c1ec3b311e49fe3672c97a0fba
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: 9b3166d7349bf138fa853523c019a4c1db86e3f1a2d81a6da86c4ef25b5ed405
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "103874317"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119019259"
 ---
-# <a name="lvm_getunicodeformat-message"></a>\_Messaggio GETUNICODEFORMAT LVM
+# <a name="lvm_getunicodeformat-message"></a>Messaggio \_ LVM GETUNICODEFORMAT
 
-Recupera il flag del formato carattere UNICODE per il controllo. È possibile inviare questo messaggio in modo esplicito o usare la macro [**\_ GetUnicodeFormat di ListView**](/windows/desktop/api/Commctrl/nf-commctrl-listview_getunicodeformat) .
+Recupera il flag di formato carattere UNICODE per il controllo . È possibile inviare questo messaggio in modo esplicito o usare la macro [**\_ ListView GetUnicodeFormat.**](/windows/desktop/api/Commctrl/nf-commctrl-listview_getunicodeformat)
 
 ## <a name="parameters"></a>Parametri
 
@@ -41,7 +41,7 @@ Restituisce il flag di formato Unicode per il controllo. Se questo valore è div
 
 ## <a name="remarks"></a>Commenti
 
-Per una descrizione di questo messaggio, vedere la sezione Osservazioni per [**CCM \_ GETUNICODEFORMAT**](ccm-getunicodeformat.md) .
+Per una descrizione di questo messaggio, vedere le osservazioni relative a [**CCM \_ GETUNICODEFORMAT.**](ccm-getunicodeformat.md)
 
 ## <a name="requirements"></a>Requisiti
 
@@ -49,9 +49,9 @@ Per una descrizione di questo messaggio, vedere la sezione Osservazioni per [**C
 
 | Requisito | Valore |
 |-------------------------------------|---------------------------------------------------------------------------------------|
-| Client minimo supportato<br/> | \[Solo app desktop di Windows Vista\]<br/>                                        |
-| Server minimo supportato<br/> | \[Solo app desktop Windows Server 2003\]<br/>                                  |
-| Intestazione<br/>                   | <dl> <dt>Commctrl. h</dt> </dl> |
+| Client minimo supportato<br/> | Windows Solo \[ app desktop Vista\]<br/>                                        |
+| Server minimo supportato<br/> | Windows Solo app desktop di Server 2003 \[\]<br/>                                  |
+| Intestazione<br/>                   | <dl> <dt>Commctrl.h</dt> </dl> |
 
 
 
@@ -59,7 +59,7 @@ Per una descrizione di questo messaggio, vedere la sezione Osservazioni per [**C
 
 <dl> <dt>
 
-[**\_SETUNICODEFORMAT LVM**](lvm-setunicodeformat.md)
+[**LVM \_ SETUNICODEFORMAT**](lvm-setunicodeformat.md)
 </dt> </dl>
 
  

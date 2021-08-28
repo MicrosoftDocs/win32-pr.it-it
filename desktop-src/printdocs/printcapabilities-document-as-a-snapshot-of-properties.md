@@ -4,12 +4,12 @@ description: Esaminare il documento PrintCapabilities come snapshot delle propri
 ms.assetid: 476c98e6-face-42cf-874d-cfa7a54b0666
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: b399c82211c268a72ad2b67082c144c64e46a879
-ms.sourcegitcommit: b32433cc0394159c7263809ae67615ab5792d40d
+ms.openlocfilehash: a031334e820b140cb27f7c293741a84e0d8a89c6c9d1c47f89cf83a87a2d3cd4
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/30/2021
-ms.locfileid: "113118646"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119033909"
 ---
 # <a name="printcapabilities-document-as-a-snapshot-of-properties"></a>Documento PrintCapabilities come snapshot delle proprietà
 

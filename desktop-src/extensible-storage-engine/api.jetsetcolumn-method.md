@@ -1,6 +1,6 @@
 ---
-description: 'Altre informazioni su: metodo API. JetSetColumn'
-title: API. JetSetColumn, metodo
+description: Altre informazioni sul metodo Api.JetSetColumn
+title: Metodo Api.JetSetColumn
 TOCTitle: 'JetSetColumn method '
 ms:assetid: Overload:Microsoft.Isam.Esent.Interop.Api.JetSetColumn
 ms:mtpsurl: https://msdn.microsoft.com/library/microsoft.isam.esent.interop.api.jetsetcolumn(v=EXCHG.10)
@@ -14,17 +14,17 @@ dev_langs:
 - JScript
 - VB
 - other
-ms.openlocfilehash: 01512f79ec9cc0b21ba8c36f2d766c1621a33747
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: bb75baecde84168b886c004e231d212922486164cf5433d304b8602326c7dba2
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104484525"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118983141"
 ---
-# <a name="apijetsetcolumn-method"></a>API. JetSetColumn, metodo
+# <a name="apijetsetcolumn-method"></a>Metodo Api.JetSetColumn
 
-Includi membri protetti  
-Includi membri ereditati  
+Includere membri protetti  
+Includere i membri ereditati  
 
 ## <a name="overload-list"></a>Elenco di overload
 
@@ -39,13 +39,13 @@ Includi membri ereditati
 <tbody>
 <tr class="odd">
 <td><img src="../images/dn292146.pubmethod(exchg.10).gif" title="Metodo pubblico" alt="Public method" /><img src="../images/dn292146.static(exchg.10).gif" title="Membro statico" alt="Static member" /></td>
-<td><a href="dn334009(v=exchg.10).md">JetSetColumn (JET_SESID, JET_TABLEID, JET_COLUMNID, [], Int32, SetColumnGrbit, JET_SETINFO)</a></td>
-<td>La funzione JetSetColumn modifica un valore di colonna singolo in un record modificato da inserire o per aggiornare il record corrente. Può sovrascrivere un valore esistente, aggiungere un nuovo valore a una sequenza di valori in una colonna multivalore, rimuovere un valore da una sequenza di valori in una colonna multivalore o aggiornare tutto o parte di un valore Long, ovvero una colonna di tipo <a href="hh577895(v=exchg.10).md">LONGTEXT</a> o <a href="hh577895(v=exchg.10).md">LongBinary</a>.</td>
+<td><a href="dn334009(v=exchg.10).md">JetSetColumn(JET_SESID, JET_TABLEID, JET_COLUMNID, [], Int32, SetColumnGrbit, JET_SETINFO)</a></td>
+<td>La funzione JetSetColumn modifica un singolo valore di colonna in un record modificato da inserire o aggiornare il record corrente. Può sovrascrivere un valore esistente, aggiungere un nuovo valore a una sequenza di valori in una colonna multivalore, rimuovere un valore da una sequenza di valori in una colonna multivalore o aggiornare tutto o parte di un valore long (una colonna di tipo <a href="hh577895(v=exchg.10).md">LongText</a> <a href="hh577895(v=exchg.10).md">o LongBinary).</a></td>
 </tr>
 <tr class="even">
 <td><img src="../images/dn292146.pubmethod(exchg.10).gif" title="Metodo pubblico" alt="Public method" /><img src="../images/dn292146.static(exchg.10).gif" title="Membro statico" alt="Static member" /></td>
-<td><a href="dn334008(v=exchg.10).md">JetSetColumn (JET_SESID, JET_TABLEID, JET_COLUMNID, [], Int32, Int32, SetColumnGrbit, JET_SETINFO)</a></td>
-<td>La funzione JetSetColumn modifica un valore di colonna singolo in un record modificato da inserire o per aggiornare il record corrente. Può sovrascrivere un valore esistente, aggiungere un nuovo valore a una sequenza di valori in una colonna multivalore, rimuovere un valore da una sequenza di valori in una colonna multivalore o aggiornare tutto o parte di un valore Long, ovvero una colonna di tipo <a href="hh577895(v=exchg.10).md">LONGTEXT</a> o <a href="hh577895(v=exchg.10).md">LongBinary</a>.</td>
+<td><a href="dn334008(v=exchg.10).md">JetSetColumn(JET_SESID, JET_TABLEID, JET_COLUMNID, [], Int32, Int32, SetColumnGrbit, JET_SETINFO)</a></td>
+<td>La funzione JetSetColumn modifica un singolo valore di colonna in un record modificato da inserire o aggiornare il record corrente. Può sovrascrivere un valore esistente, aggiungere un nuovo valore a una sequenza di valori in una colonna multivalore, rimuovere un valore da una sequenza di valori in una colonna multivalore o aggiornare tutto o parte di un valore long (una colonna di tipo <a href="hh577895(v=exchg.10).md">LongText</a> <a href="hh577895(v=exchg.10).md">o LongBinary).</a></td>
 </tr>
 </tbody>
 </table>
@@ -59,6 +59,6 @@ Inizio
 
 [Classe API](./api-class.md)
 
-[Membri API](./api-members.md)
+[Membri api](./api-members.md)
 
-[Spazio dei nomi Microsoft. ISAM. esent. Interop](./microsoft.isam.esent.interop-namespace.md)
+[Spazio dei nomi Microsoft.Isam.Esent.Interop](./microsoft.isam.esent.interop-namespace.md)

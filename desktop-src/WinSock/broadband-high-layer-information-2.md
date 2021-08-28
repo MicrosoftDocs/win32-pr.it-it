@@ -1,17 +1,17 @@
 ---
 description: In questa sezione viene elencata la definizione del tipo per le informazioni di alto livello a banda larga.
 ms.assetid: 42c56a06-7444-4b59-8a9f-5790ac47f8ac
-title: Informazioni sul livello elevato a banda larga
+title: Informazioni sul livello alto a banda larga
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: e7ddce7631f5724f50a8998d8f2fcfa0ef5ca1f7
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: b91d24f981a8dec79581c1faac04873d761ff338428b77141403172a79ffe51c
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104129219"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119132724"
 ---
-# <a name="broadband-high-layer-information"></a>Informazioni sul livello elevato a banda larga
+# <a name="broadband-high-layer-information"></a>Informazioni sul livello alto a banda larga
 
 In questa sezione viene elencata la definizione del tipo per le informazioni di alto livello a banda larga.
 

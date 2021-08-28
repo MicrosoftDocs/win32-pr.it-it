@@ -1,10 +1,10 @@
 ---
-title: Sub-Class-of (attributo)
+title: Attributo Sub-Class-Of
 description: Classe padre di una classe.
 ms.assetid: ff2afb13-5d72-4b8b-9e66-c16fb0ae5e88
 ms.tgt_platform: multiple
 keywords:
-- Classe secondaria-dello schema AD dell'attributo
+- Schema AD dell'attributo Sub-Class-Of
 - Schema AD dell'attributo subClassOf
 topic_type:
 - apiref
@@ -14,14 +14,14 @@ api_type:
 - Schema
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: b90c1e431e8c1e501731070359d379436973ef67
-ms.sourcegitcommit: b77ace27b0432e7cd3863191b11926be032fbe2f
+ms.openlocfilehash: 1d6e9ea83cf538ee9b49acc38399ac6d7ae651e789cc9e9c9de5b15625c54438
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/14/2020
-ms.locfileid: "104122323"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118959970"
 ---
-# <a name="sub-class-of-attribute"></a>Sub-Class-of (attributo)
+# <a name="sub-class-of-attribute"></a>Attributo Sub-Class-Of
 
 Classe padre di una classe.
 
@@ -29,13 +29,13 @@ Classe padre di una classe.
 
 | Voce | Valore |
 |-------------------|-----------------------------------------------------------------|
-| CN                | Classe secondaria di                                                    |
-| LDAP-Display-Name | subClassOf                                                      |
+| CN                | Sottoclasse di                                                    |
+| Ldap-Display-Name | subClassOf                                                      |
 | Dimensione              | \-                                                              |
-| Privilegio aggiornamento  | Amministratore schema                                            |
+| Aggiorna privilegio  | Amministratore dello schema                                            |
 | Frequenza di aggiornamento  | \-                                                              |
 | Attribute-Id      | 1.2.840.113556.1.2.21                                           |
-| System-ID-GUID    | bf967a3b-0de6-11d0-a285-00aa003049e2                            |
+| System-Id-Guid    | bf967a3b-0de6-11d0-a285-00aa003049e2                            |
 | Sintassi            | [**String(Object-Identifier)**](s-string-object-identifier.md) |
 
 
@@ -44,7 +44,7 @@ Classe padre di una classe.
 
 -   [**Windows 2000 Server**](#windows-2000-server)
 -   [**Windows Server 2003**](#windows-server-2003)
--   [**ADAM**](#adam)
+-   [**Adam**](#adam)
 -   [**Windows Server 2003 R2**](#windows-server-2003-r2)
 -   [**Windows Server 2008**](#windows-server-2008)
 -   [**Windows Server 2008 R2**](#windows-server-2008-r2)
@@ -59,15 +59,15 @@ Classe padre di una classe.
 | ID collegamento                | \-                                               |
 | MAPI-Id                | \-                                               |
 | System-Only            | Vero                                             |
-| È a valore singolo       | Vero                                             |
+| A valore singolo       | Vero                                             |
 | Indicizzato             | Falso                                            |
 | Nel catalogo globale      | Falso                                            |
-| NT-Security-descrittore | O:BAG: NON VALIDO: S:                                     |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                     |
 | Range-Lower            | \-                                               |
 | Range-Upper            | \-                                               |
 | Search-Flags           | 0x00000008                                       |
 | System-Flags           | 0x00000010                                       |
-| Classi utilizzate in        | [**Classe-schema**](c-classschema.md)<br/> |
+| Classi usate in        | [**Schema di classe**](c-classschema.md)<br/> |
 
 
 
@@ -80,19 +80,19 @@ Classe padre di una classe.
 | ID collegamento                | \-                                               |
 | MAPI-Id                | \-                                               |
 | System-Only            | Vero                                             |
-| È a valore singolo       | Vero                                             |
+| A valore singolo       | Vero                                             |
 | Indicizzato             | Falso                                            |
 | Nel catalogo globale      | Falso                                            |
-| NT-Security-descrittore | O:BAG: NON VALIDO: S:                                     |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                     |
 | Range-Lower            | \-                                               |
 | Range-Upper            | \-                                               |
 | Search-Flags           | 0x00000008                                       |
 | System-Flags           | 0x00000010                                       |
-| Classi utilizzate in        | [**Classe-schema**](c-classschema.md)<br/> |
+| Classi usate in        | [**Schema di classe**](c-classschema.md)<br/> |
 
 
 
-## <a name="adam"></a>ADAM
+## <a name="adam"></a>Adam
 
 
 
@@ -101,15 +101,15 @@ Classe padre di una classe.
 | ID collegamento                | \-                                               |
 | MAPI-Id                | \-                                               |
 | System-Only            | Vero                                             |
-| È a valore singolo       | Vero                                             |
+| A valore singolo       | Vero                                             |
 | Indicizzato             | Falso                                            |
 | Nel catalogo globale      | Falso                                            |
-| NT-Security-descrittore | O:BAG: NON VALIDO: S:                                     |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                     |
 | Range-Lower            | \-                                               |
 | Range-Upper            | \-                                               |
 | Search-Flags           | 0x00000008                                       |
 | System-Flags           | 0x00000010                                       |
-| Classi utilizzate in        | [**Classe-schema**](c-classschema.md)<br/> |
+| Classi usate in        | [**Schema di classe**](c-classschema.md)<br/> |
 
 
 
@@ -122,15 +122,15 @@ Classe padre di una classe.
 | ID collegamento                | \-                                               |
 | MAPI-Id                | \-                                               |
 | System-Only            | Vero                                             |
-| È a valore singolo       | Vero                                             |
+| A valore singolo       | Vero                                             |
 | Indicizzato             | Falso                                            |
 | Nel catalogo globale      | Falso                                            |
-| NT-Security-descrittore | O:BAG: NON VALIDO: S:                                     |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                     |
 | Range-Lower            | \-                                               |
 | Range-Upper            | \-                                               |
 | Search-Flags           | 0x00000008                                       |
 | System-Flags           | 0x00000010                                       |
-| Classi utilizzate in        | [**Classe-schema**](c-classschema.md)<br/> |
+| Classi usate in        | [**Schema di classe**](c-classschema.md)<br/> |
 
 
 
@@ -143,15 +143,15 @@ Classe padre di una classe.
 | ID collegamento                | \-                                               |
 | MAPI-Id                | \-                                               |
 | System-Only            | Vero                                             |
-| È a valore singolo       | Vero                                             |
+| A valore singolo       | Vero                                             |
 | Indicizzato             | Falso                                            |
 | Nel catalogo globale      | Falso                                            |
-| NT-Security-descrittore | O:BAG: NON VALIDO: S:                                     |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                     |
 | Range-Lower            | \-                                               |
 | Range-Upper            | \-                                               |
 | Search-Flags           | 0x00000008                                       |
 | System-Flags           | 0x00000010                                       |
-| Classi utilizzate in        | [**Classe-schema**](c-classschema.md)<br/> |
+| Classi usate in        | [**Schema di classe**](c-classschema.md)<br/> |
 
 
 
@@ -164,15 +164,15 @@ Classe padre di una classe.
 | ID collegamento                | \-                                               |
 | MAPI-Id                | \-                                               |
 | System-Only            | Vero                                             |
-| È a valore singolo       | Vero                                             |
+| A valore singolo       | Vero                                             |
 | Indicizzato             | Falso                                            |
 | Nel catalogo globale      | Falso                                            |
-| NT-Security-descrittore | O:BAG: NON VALIDO: S:                                     |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                     |
 | Range-Lower            | \-                                               |
 | Range-Upper            | \-                                               |
 | Search-Flags           | 0x00000008                                       |
 | System-Flags           | 0x00000010                                       |
-| Classi utilizzate in        | [**Classe-schema**](c-classschema.md)<br/> |
+| Classi usate in        | [**Schema di classe**](c-classschema.md)<br/> |
 
 
 
@@ -185,15 +185,15 @@ Classe padre di una classe.
 | ID collegamento                | \-                                               |
 | MAPI-Id                | \-                                               |
 | System-Only            | Vero                                             |
-| È a valore singolo       | Vero                                             |
+| A valore singolo       | Vero                                             |
 | Indicizzato             | Falso                                            |
 | Nel catalogo globale      | Falso                                            |
-| NT-Security-descrittore | O:BAG: NON VALIDO: S:                                     |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                     |
 | Range-Lower            | \-                                               |
 | Range-Upper            | \-                                               |
 | Search-Flags           | 0x00000008                                       |
 | System-Flags           | 0x00000010                                       |
-| Classi utilizzate in        | [**Classe-schema**](c-classschema.md)<br/> |
+| Classi usate in        | [**Schema di classe**](c-classschema.md)<br/> |
 
 
 

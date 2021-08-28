@@ -1,10 +1,10 @@
 ---
-title: Metodo INapEnforcementClientConnection GetCorrelationId (NapEnforcementClient. h)
-description: Ottiene l'ID usato per correlare le richieste di rapporto di integrità e le risposte a rapporto di integrità.
+title: Metodo GetCorrelationId INapEnforcementClientConnection (NapEnforcementClient.h)
+description: Ottiene l'ID utilizzato per correlare soh-requests e SoH-responses.
 ms.assetid: f59880d4-5de6-4163-ae01-1095ff52bf38
 keywords:
-- NAP metodo GetCorrelationId
-- Metodo GetCorrelationId NAP, interfaccia INapEnforcementClientConnection
+- Metodo GetCorrelationId NAP
+- Metodo GetCorrelationId NAP , interfaccia INapEnforcementClientConnection
 - Interfaccia INapEnforcementClientConnection NAP, metodo GetCorrelationId
 topic_type:
 - apiref
@@ -16,21 +16,21 @@ api_type:
 - COM
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 82572cc499a61d453a70c47391e48f2004dca24d
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: 1a1045513d672afbbd4e53f956f03b1f4db2a925cf756c158303a17998bcf219
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "104048759"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118940079"
 ---
-# <a name="inapenforcementclientconnectiongetcorrelationid-method"></a>Metodo INapEnforcementClientConnection:: GetCorrelationId
+# <a name="inapenforcementclientconnectiongetcorrelationid-method"></a>Metodo INapEnforcementClientConnection::GetCorrelationId
 
 > [!Note]  
-> La piattaforma protezione accesso alla rete non è disponibile a partire da Windows 10
+> La piattaforma Protezione accesso alla rete non è disponibile a partire da Windows 10
 
  
 
-Il metodo **INapEnforcementClientConnection:: GetCorrelationId** Ottiene l'ID usato per correlare le richieste e le risposte a rapporto di integrità.
+Il **metodo INapEnforcementClientConnection::GetCorrelationId** ottiene l'ID usato per correlare le richieste SoH e le risposte SoH.
 
 ## <a name="syntax"></a>Sintassi
 
@@ -47,24 +47,24 @@ HRESULT GetCorrelationId(
 
 <dl> <dt>
 
-ID correlazione  \[ out\]
+*correlationId* \[ Cambio\]
 </dt> <dd>
 
-Struttura [**CorrelationId**](/windows/win32/api/naptypes/ns-naptypes-correlationid) univoca che identifica questo scambio di rapporto di integrità.
+Struttura [**CorrelationId univoca**](/windows/win32/api/naptypes/ns-naptypes-correlationid) che identifica questo scambio SoH.
 
 </dd> </dl>
 
 ## <a name="return-value"></a>Valore restituito
 
-È possibile che vengano restituiti anche altri codici di errore specifici di COM.
+Possono essere restituiti anche altri codici di errore specifici di COM.
 
 
 
 | Codice restituito                                                                                     | Descrizione                                                        |
 |-------------------------------------------------------------------------------------------------|--------------------------------------------------------------------|
 | <dl> <dt>**S \_ OK**</dt> </dl>           | Operazione riuscita.<br/>                                    |
-| <dl> <dt>**E \_ ACCESSDENIED**</dt> </dl> | Errore delle autorizzazioni, accesso negato.<br/>                       |
-| <dl> <dt>**E \_ OUTOFMEMORY**</dt> </dl>  | Limite di risorse di sistema. Impossibile eseguire l'operazione.<br/> |
+| <dl> <dt>**E \_ ACCESSO NEGATO**</dt> </dl> | Errore di autorizzazioni, accesso negato.<br/>                       |
+| <dl> <dt>**E \_ OUTOFMEMORY**</dt> </dl>  | Limite di risorse di sistema: impossibile eseguire l'operazione.<br/> |
 
 
 
@@ -72,11 +72,11 @@ Struttura [**CorrelationId**](/windows/win32/api/naptypes/ns-naptypes-correlatio
 
 ## <a name="remarks"></a>Commenti
 
-L'ID di correlazione viene impostato da NapAgent e in base all'ID connessione.
+Correlation-id viene impostato da NapAgent e in base all'ID connessione.
 
-Questo ID viene usato per correlare le richieste e le risposte, ovvero descrive in modo univoco uno scambio di rapporto di integrità e contiene sempre l'ID del set di integrità più recente per l'oggetto connessione.
+Questo ID viene usato per correlare richieste e risposte, ad esempio descrive in modo univoco uno scambio SoH e contiene sempre l'ID del set SoH più recente nell'oggetto connessione.
 
-Quando viene ricevuta una SoH-Response, il NapAgent garantisce prima di tutto gli ID corrispondenti; in caso contrario, viene restituito un errore e l'applicazione deve eliminare il pacchetto. Per ulteriori informazioni, vedere [**INapEnforcementClientBinding::P rocesssohresponse**](inapenforcementclientbinding-processsohresponse-method.md) .
+Quando viene ricevuto SoH-Response, NapAgent garantisce prima di tutto che gli ID corrispondano. In caso contrario, viene restituito un errore e l'applicatore deve eliminare il pacchetto. Per altri dettagli, vedere [**INapEnforcementClientBinding::P rocessSoHResponse.**](inapenforcementclientbinding-processsohresponse-method.md)
 
 ## <a name="requirements"></a>Requisiti
 
@@ -84,10 +84,10 @@ Quando viene ricevuta una SoH-Response, il NapAgent garantisce prima di tutto gl
 
 | Requisito | Valore |
 |-------------------------------------|-----------------------------------------------------------------------------------------------------|
-| Client minimo supportato<br/> | \[Solo app desktop di Windows Vista\]<br/>                                                      |
-| Server minimo supportato<br/> | \[Solo app desktop Windows Server 2008\]<br/>                                                |
-| Intestazione<br/>                   | <dl> <dt>NapEnforcementClient. h</dt> </dl>   |
-| IDL<br/>                      | <dl> <dt>NapEnforcementClient. idl</dt> </dl> |
+| Client minimo supportato<br/> | Windows Solo \[ app desktop di Vista\]<br/>                                                      |
+| Server minimo supportato<br/> | Windows Solo app desktop server 2008 \[\]<br/>                                                |
+| Intestazione<br/>                   | <dl> <dt>NapEnforcementClient.h</dt> </dl>   |
+| Idl<br/>                      | <dl> <dt>NapEnforcementClient.idl</dt> </dl> |
 | DLL<br/>                      | <dl> <dt>Qagent.dll</dt> </dl>               |
 
 

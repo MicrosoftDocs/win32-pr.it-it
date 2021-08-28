@@ -4,12 +4,12 @@ ms.assetid: 222ad000-5cd2-4f25-8267-8f68fb800cf4
 title: System.MileageInformation
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 25b5aa7d147bff83948402a37e649a505dadb011
-ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
+ms.openlocfilehash: 5af994ef9fd9bf9273eae52d7fa2410e9eba8a67aedfeef0ce3460eb5f36f9af
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/28/2021
-ms.locfileid: "108113949"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119096810"
 ---
 # <a name="systemmileageinformation"></a>System.MileageInformation
 
@@ -36,7 +36,7 @@ I valori PKEY sono definiti in Propkey.h.
 
 <dl> <dt>
 
-[proprietàDescrizione](./propdesc-schema-propertydescription.md)
+[propertyDescription](./propdesc-schema-propertydescription.md)
 </dt> <dt>
 
 [searchInfo](./propdesc-schema-searchinfo.md)
@@ -66,7 +66,7 @@ I valori PKEY sono definiti in Propkey.h.
 [enumeratedList](./propdesc-schema-enumeratedlist.md)
 </dt> <dt>
 
-[DrawControl](./propdesc-schema-drawcontrol.md)
+[drawControl](./propdesc-schema-drawcontrol.md)
 </dt> <dt>
 
 [editControl](./propdesc-schema-editcontrol.md)

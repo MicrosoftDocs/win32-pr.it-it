@@ -4,33 +4,33 @@ description: A ogni elemento di un controllo di visualizzazione albero possono e
 ms.assetid: 3683DB35-D70F-4181-9181-95354599B9FB
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 011d789da4eec39febae9d93436e23c23fa59507
-ms.sourcegitcommit: 3e70ae762629e244028b437420ed50b5850db4e3
+ms.openlocfilehash: d2b8edcff0d07f46aa6eb8612ddbbfa37145c5ab26ab463a7d57e9e6543430e3
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/20/2020
-ms.locfileid: "104117395"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119019349"
 ---
 # <a name="how-to-initialize-the-image-list"></a>Come inizializzare l'elenco di immagini
 
-A ogni elemento di un controllo di visualizzazione albero possono essere associate due immagini. Un elemento Visualizza un'immagine quando è selezionata e l'altra in caso contrario. Per includere immagini con elementi della visualizzazione albero, utilizzare innanzitutto le funzioni [elenchi immagini](image-lists.md) per creare un elenco di immagini e aggiungervi immagini. Associare quindi l'elenco di immagini al controllo di visualizzazione ad albero usando il messaggio macchina virtuale [**TVM \_**](tvm-setimagelist.md) .
+A ogni elemento di un controllo di visualizzazione albero possono essere associate due immagini. Un elemento visualizza un'immagine quando è selezionata e l'altra quando non lo è. Per includere immagini con elementi di visualizzazione albero, usare prima di tutto le funzioni [Elenchi](image-lists.md) immagini per creare un elenco di immagini e aggiungerne altre. Associare quindi l'elenco di immagini al controllo di visualizzazione albero usando il messaggio [**\_ TVM SETIMAGELIST.**](tvm-setimagelist.md)
 
 ## <a name="what-you-need-to-know"></a>Informazioni importanti
 
 ### <a name="technologies"></a>Tecnologie
 
--   [Controlli Windows](window-controls.md)
+-   [Windows Controlli](window-controls.md)
 
 ### <a name="prerequisites"></a>Prerequisiti
 
 -   C/C++
--   Programmazione dell'interfaccia utente di Windows
+-   Windows Interfaccia utente programmazione
 
 ## <a name="instructions"></a>Istruzioni
 
 ### <a name="initialize-the-image-list"></a>Inizializzare l'elenco di immagini
 
-Nell'esempio seguente viene creato un elenco di immagini, vengono aggiunte tre bitmap all'elenco e l'elenco di immagini viene associato a un controllo di visualizzazione albero.
+L'esempio seguente crea un elenco di immagini, aggiunge tre bitmap all'elenco e associa l'elenco di immagini a un controllo di visualizzazione albero.
 
 
 ```C++
@@ -89,15 +89,15 @@ BOOL InitTreeViewImageLists(HWND hwndTV)
 
 <dl> <dt>
 
-[Uso di controlli Tree-View](using-treeview.md)
+[Uso Tree-View controlli](using-treeview.md)
 </dt> <dt>
 
-[L'esempio CustDTv illustra il progetto personalizzato in un controllo Tree-View](https://support.microsoft.com/default.aspx?scid=kb;EN-US;q248496)
+[L'esempio CustDTv illustra il disegno personalizzato in un controllo Tree-View personalizzato](https://support.microsoft.com/default.aspx?scid=kb;EN-US;q248496)
 </dt> </dl>
 
- 
+ 
 
- 
+ 
 
 
 

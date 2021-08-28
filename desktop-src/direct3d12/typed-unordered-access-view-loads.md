@@ -1,22 +1,22 @@
 ---
 title: Caricamento della visualizzazione di accesso non ordinato (UAV) tipi
-description: Informazioni sul carico Unordered Access View (UAV) in Direct3D 12. Il caricamento tipidato UAV consente a uno shader di leggere da un UAV con un DXGI_FORMAT.
+description: Informazioni sul Unordered Access View (UAV) in Direct3D 12. Il caricamento tipidato UAV consente a uno shader di leggere da un UAV con un'DXGI_FORMAT.
 ms.assetid: 6106D15E-EAF6-4583-B4F2-7CC7EE30DE15
 ms.localizationpriority: high
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 96128354132a58e0b8648fba2b4e1e6babb95535
-ms.sourcegitcommit: 91530c19d26ba4c57a6af1f37b57f211f580464e
+ms.openlocfilehash: e3bd45c1b2c14aa85ec9b9ab65cd6d6a9f33cb5e0995ac20b779b84aa7bed640
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/19/2021
-ms.locfileid: "112394766"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119123478"
 ---
 # <a name="typed-unordered-access-view-uav-loads"></a>Caricamento della visualizzazione di accesso non ordinato (UAV) tipi
 
 Unordered Access View (UAV) Typed Load è la possibilità per uno shader di leggere da un UAV con un formato [**DXGI \_ specifico.**](/windows/desktop/api/dxgiformat/ne-dxgiformat-dxgi_format)
 
--   [Panoramica](#overview)
+-   [Overview](#overview)
 -   [Formati supportati e chiamate API](#supported-formats-and-api-calls)
 -   [Uso dei caricamenti UAV tipiati da HLSL](#using-typed-uav-loads-from-hlsl)
 -   [Uso dei caricamenti UAV tipiati UNORM e SNORM da HLSL](#using-unorm-and-snorm-typed-uav-loads-from-hlsl)
@@ -82,7 +82,7 @@ I formati seguenti sono supportati facoltativamente e singolarmente nell'hardwar
 -   B5G5R5A1 \_ UNORM
 -   B4G4R4A4 \_ UNORM
 
-Per determinare il supporto per eventuali formati aggiuntivi, chiamare [**CheckFeatureSupport**](/windows/desktop/api/d3d12/nf-d3d12-id3d12device-checkfeaturesupport) con la struttura [**D3D12 \_ FEATURE DATA \_ \_ D3D12 \_ OPTIONS**](/windows/desktop/api/d3d12/ns-d3d12-d3d12_feature_data_d3d12_options) come primo parametro (vedere [Capability Querying](capability-querying.md)). Il *campo TypedUAVLoadAdditionalFormats* verrà impostato se è supportato l'elenco "supportato come set" precedente. Eseguire una seconda chiamata a **CheckFeatureSupport** usando una struttura [**D3D12 \_ FEATURE DATA FORMAT \_ \_ \_ SUPPORT**](/windows/desktop/api/d3d12/ns-d3d12-d3d12_feature_data_format_support) (verificando la struttura restituita rispetto al membro D3D12 FORMAT SUPPORT2 UAV TYPED LOAD dell'enumerazione \_ \_ \_ \_ \_ [**D3D12 \_ FORMAT \_ SUPPORT2)**](/windows/desktop/api/d3d12/ne-d3d12-d3d12_format_support2) per determinare il supporto nell'elenco dei formati supportati elencati in precedenza, ad esempio:
+Per determinare il supporto per eventuali formati aggiuntivi, chiamare [**CheckFeatureSupport**](/windows/desktop/api/d3d12/nf-d3d12-id3d12device-checkfeaturesupport) con la struttura [**D3D12 \_ FEATURE DATA \_ \_ D3D12 \_ OPTIONS**](/windows/desktop/api/d3d12/ns-d3d12-d3d12_feature_data_d3d12_options) come primo parametro (vedere [Capability Querying](capability-querying.md)). Il *campo TypedUAVLoadAdditionalFormats* verrà impostato se è supportato l'elenco "supportato come set" precedente. Effettuare una seconda chiamata a **CheckFeatureSupport** usando una struttura [**D3D12 \_ FEATURE DATA FORMAT \_ \_ \_ SUPPORT**](/windows/desktop/api/d3d12/ns-d3d12-d3d12_feature_data_format_support) (verificando la struttura restituita rispetto al membro D3D12 FORMAT SUPPORT2 UAV TYPED LOAD dell'enumerazione \_ \_ \_ \_ \_ [**D3D12 \_ FORMAT \_ SUPPORT2)**](/windows/desktop/api/d3d12/ne-d3d12-d3d12_format_support2) per determinare il supporto nell'elenco dei formati supportati facoltativamente elencati in precedenza, ad esempio:
 
 ``` syntax
 D3D12_FEATURE_DATA_D3D12_OPTIONS FeatureData;
@@ -122,7 +122,7 @@ float4 main() : SV_Target
 
 ## <a name="using-unorm-and-snorm-typed-uav-loads-from-hlsl"></a>Uso dei caricamenti UAV tipiati UNORM e SNORM da HLSL
 
-Quando si usano caricamenti UAV tipiati per la lettura da una risorsa UNORM o SNORM, è necessario dichiarare correttamente il tipo di elemento dell'oggetto HLSL come `unorm` o `snorm` . Viene specificato come comportamento non definito per non trovare la corrispondenza tra il tipo di elemento dichiarato in HLSL e il tipo di dati della risorsa sottostante. Ad esempio, se si usa il caricamento UAV tipiato in una risorsa buffer con dati R8 UNORM, è necessario dichiarare il tipo di elemento \_ come `unorm float` :
+Quando si usano caricamenti UAV tipiati per la lettura da una risorsa UNORM o SNORM, è necessario dichiarare correttamente il tipo di elemento dell'oggetto HLSL come `unorm` o `snorm` . Viene specificato come comportamento non definito per non trovare la corrispondenza tra il tipo di elemento dichiarato in HLSL e il tipo di dati della risorsa sottostante. Ad esempio, se si usano caricamenti UAV tipiati in una risorsa buffer con dati R8 UNORM, è necessario dichiarare il tipo di elemento \_ come `unorm float` :
 
 ``` syntax
 RWBuffer<unorm float> uav;

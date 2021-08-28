@@ -1,19 +1,19 @@
 ---
-description: Il servizio di notifica eventi di sistema (SENS) definisce la coclasse SENS come parte della libreria dei tipi SENS.
+description: System Event Notification Service (SENS) definisce la coclasse SENS come parte della libreria dei tipi SENS.
 ms.assetid: b494808c-1116-47ac-8713-0d515b312368
 title: Oggetto SENS
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 4e9d0d5cd857063d6ac224de66610d2604db619d
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 1acdf70b5e2229051d569bd1f607ad8db5d3d567b4c0421464757f02bc6a8e4b
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "106316626"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119003949"
 ---
 # <a name="sens-object"></a>Oggetto SENS
 
-Il servizio di notifica eventi di sistema (SENS) definisce la coclasse SENS come parte della libreria dei tipi SENS.
+System Event Notification Service (SENS) definisce la coclasse SENS come parte della libreria dei tipi SENS.
 
 ## <a name="implementation"></a>Implementazione
 
@@ -25,7 +25,7 @@ L'implementazione dell'oggetto SENS viene fornita dal sistema operativo.
 
 | Funzione                                      | Descrizione                                             |
 |-----------------------------------------------|---------------------------------------------------------|
-| [**CoCreateInstance**](/windows/win32/api/combaseapi/nf-combaseapi-cocreateinstance) | Crea un'istanza dell'oggetto SENS utilizzando il relativo CLSID. |
+| [**Cocreateinstance**](/windows/win32/api/combaseapi/nf-combaseapi-cocreateinstance) | Crea un'istanza dell'oggetto SENS usando il relativo CLSID. |
 
 
 
@@ -37,10 +37,10 @@ L'implementazione dell'oggetto SENS viene fornita dal sistema operativo.
 
 | Interfaccia                            | Descrizione                                                                                         |
 |--------------------------------------|-----------------------------------------------------------------------------------------------------|
-| [**IsensNetwork**](/windows/desktop/api/Sensevts/nn-sensevts-isensnetwork) | Valore predefinito. Interfaccia in uscita implementata dall'oggetto sink nell'applicazione del Sottoscrittore.                   |
-| [**IsensOnNow**](/windows/desktop/api/Sensevts/nn-sensevts-isensonnow)     | Interfaccia in uscita implementata dall'oggetto sink nell'applicazione del Sottoscrittore.                            |
-| [**IsensLogon**](/windows/desktop/api/Sensevts/nn-sensevts-isenslogon)     | Interfaccia in uscita implementata dall'oggetto sink nell'applicazione del Sottoscrittore.                            |
-| [**IsensLogon2**](/windows/desktop/api/Sensevts/nn-sensevts-isenslogon2)   | Interfaccia in uscita implementata dall'oggetto sink nell'applicazione del Sottoscrittore. Disponibile con Windows XP. |
+| [**IsensNetwork**](/windows/desktop/api/Sensevts/nn-sensevts-isensnetwork) | Valore predefinito. Interfaccia in uscita implementata dall'oggetto sink nell'applicazione sottoscrittore.                   |
+| [**IsensOnNow**](/windows/desktop/api/Sensevts/nn-sensevts-isensonnow)     | Interfaccia in uscita implementata dall'oggetto sink nell'applicazione sottoscrittore.                            |
+| [**IsensLogon**](/windows/desktop/api/Sensevts/nn-sensevts-isenslogon)     | Interfaccia in uscita implementata dall'oggetto sink nell'applicazione sottoscrittore.                            |
+| [**IsensLogon2**](/windows/desktop/api/Sensevts/nn-sensevts-isenslogon2)   | Interfaccia in uscita implementata dall'oggetto sink nell'applicazione sottoscrittore. Disponibile con Windows XP. |
 
 
 
@@ -59,7 +59,7 @@ L'implementazione dell'oggetto SENS viene fornita dal sistema operativo.
 [**ISensOnNow**](/windows/desktop/api/Sensevts/nn-sensevts-isensonnow)
 </dt> <dt>
 
-[Informazioni sul servizio di notifica eventi di sistema](about-system-event-notification-service.md)
+[Informazioni sul servizio di notifica degli eventi di sistema](about-system-event-notification-service.md)
 </dt> </dl>
 
  

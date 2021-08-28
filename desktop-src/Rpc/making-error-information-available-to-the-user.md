@@ -1,19 +1,19 @@
 ---
-title: Rendere disponibili all'utente informazioni sull'errore
-description: Quando un chiamante riceve un errore ed è necessario notificare all'utente l'errore, la presenza di informazioni estese sugli errori deve essere controllata e, se trovata, il chiamante deve rendere disponibili all'utente le informazioni risultanti.
+title: Rendere disponibili all'utente le informazioni sugli errori
+description: Quando un chiamante riceve un errore e deve notificare l'errore all'utente, è necessario controllare la presenza di informazioni estese sull'errore e, se viene trovato, il chiamante deve rendere disponibili le informazioni risultanti all'utente.
 ms.assetid: 18689280-7124-46e4-9341-ad8d0c1705db
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 18386dbebd443aced4f5680922549c0ecb0eba55
-ms.sourcegitcommit: 2d531328b6ed82d4ad971a45a5131b430c5866f7
+ms.openlocfilehash: c334b0d5b5044a13b507945cfa9d8ac97b67eb120f496f83c080d2b79b857f9d
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "103857022"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118928576"
 ---
-# <a name="making-error-information-available-to-the-user"></a>Rendere disponibili all'utente informazioni sull'errore
+# <a name="making-error-information-available-to-the-user"></a>Rendere disponibili all'utente le informazioni sugli errori
 
-Quando un chiamante riceve un errore ed è necessario notificare all'utente l'errore, la presenza di informazioni estese sugli errori deve essere controllata e, se trovata, il chiamante deve rendere disponibili all'utente le informazioni risultanti. Il frammento di codice seguente è un esempio di rendere disponibili queste informazioni all'utente:
+Quando un chiamante riceve un errore e deve notificare l'errore all'utente, è necessario controllare la presenza di informazioni estese sull'errore e, se viene trovato, il chiamante deve rendere disponibili le informazioni risultanti all'utente. Il frammento di codice seguente è un esempio di rendere disponibili queste informazioni all'utente:
 
 
 ```C++
@@ -163,11 +163,11 @@ if (status)
 
 
 
-In questo esempio le informazioni estese sull'errore vengono scaricate nella console di, ma il componente può renderlo disponibile per l'utente in qualsiasi altro modo. Se il componente sceglie di salvare le informazioni nell'archivio permanente e di visualizzarle in un secondo momento, è spesso più facile usare il formato binario reso disponibile dalle chiamate di funzione [**RpcErrorSaveErrorInfo**](/windows/desktop/api/Rpcasync/nf-rpcasync-rpcerrorsaveerrorinfo) e [**RpcErrorLoadErrorInfo**](/windows/desktop/api/Rpcasync/nf-rpcasync-rpcerrorloaderrorinfo) .
+In questo esempio le informazioni sull'errore estese vengono scaricate nella console, ma il componente può renderle disponibili all'utente in qualsiasi altro modo. Se il componente sceglie di salvare le informazioni nell'archiviazione persistente e di mostrarla in un secondo momento, è spesso più semplice usare il formato binario reso disponibile dalle chiamate di funzione [**RpcErrorSaveErrorInfo**](/windows/desktop/api/Rpcasync/nf-rpcasync-rpcerrorsaveerrorinfo) e [**RpcErrorLoadErrorInfo.**](/windows/desktop/api/Rpcasync/nf-rpcasync-rpcerrorloaderrorinfo)
 
- 
+ 
 
- 
+ 
 
 
 

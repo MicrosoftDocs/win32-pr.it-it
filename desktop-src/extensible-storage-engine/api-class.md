@@ -1,5 +1,5 @@
 ---
-description: 'Altre informazioni su: classe API'
+description: 'Altre informazioni su: Classe API'
 title: Classe API
 TOCTitle: Api class
 ms:assetid: T:Microsoft.Isam.Esent.Interop.Api
@@ -24,24 +24,24 @@ api_type:
 api_location:
 - Microsoft.Isam.Esent.Interop.dll
 ROBOTS: INDEX,FOLLOW
-ms.openlocfilehash: bc602192634fbd49351cde53da2f6360ce9f632f
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: f18377aece83d810ac5129f47c3476c99f166494ca1e0dc37cba887e87cc3630
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "106305571"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118983841"
 ---
 # <a name="api-class"></a>Classe API
 
-Versioni gestite dell'API ESENT. Questa classe contiene metodi statici che corrispondono all'API ESENT non gestita. Questi metodi generano eccezioni quando vengono restituiti errori. Metodi helper per l'API ESENT. JetMakeKey a capo. Metodi solo interni dell'API. Metodi helper per l'API ESENT. Queste operazioni eseguono la conversione dei dati per JetMakeKey. Metodi helper per l'API ESENT. Questi metodi gestiscono i metadati del database. Metodi helper per l'API ESENT. Queste sono versioni di interoperabilità dell'API, ma incapsulano usi molto comuni delle funzioni. Membri dell'API contrassegnati come obsoleti. Metodi helper per l'API ESENT. Queste sono versioni di interoperabilità dell'API, ma incapsulano usi molto comuni delle funzioni. Metodi helper per l'API ESENT. Questa operazione esegue la conversione dei dati per l'impostazione di colonne.
+Versioni gestite dell'API ESENT. Questa classe contiene metodi statici che corrispondono all'API ESENT non gestita. Questi metodi generano eccezioni quando vengono restituiti errori. Metodi helper per l'API ESENT. Questi esegono il wrapping di JetMakeKey. Metodi solo interni dell'API. Metodi helper per l'API ESENT. In questo modo viene eseguita la conversione dei dati per JetMakeKey. Metodi helper per l'API ESENT. Questi metodi trattano i metadati del database. Metodi helper per l'API ESENT. Queste non sono versioni di interoperabilità dell'API, ma incapsulano usi molto comuni delle funzioni. Membri API contrassegnati come obsoleti. Metodi helper per l'API ESENT. Queste non sono versioni di interoperabilità dell'API, ma incapsulano usi molto comuni delle funzioni. Metodi helper per l'API ESENT. In questo modo viene eseguita la conversione dei dati per l'impostazione delle colonne.
 
 ## <a name="inheritance-hierarchy"></a>Gerarchia di ereditarietà
 
 [System.Object](/dotnet/api/system.object)  
-  Microsoft. ISAM. esent. Interop. API  
+  Microsoft.Isam.Esent.Interop.Api  
 
-**Spazio dei nomi:**  [Microsoft. ISAM. esent. Interop](./microsoft.isam.esent.interop-namespace.md)  
-**Assembly:**  Microsoft. ISAM. esent. Interop (in Microsoft.Isam.Esent.Interop.dll)
+**Spazio dei nomi:**  [Microsoft.Isam.Esent.Interop](./microsoft.isam.esent.interop-namespace.md)  
+**Assembly:**  Microsoft.Isam.Esent.Interop (in Microsoft.Isam.Esent.Interop.dll)
 
 ## <a name="syntax"></a>Sintassi
 
@@ -64,6 +64,6 @@ I membri statici pubblici (Shared in Visual Basic) di questo tipo sono thread-sa
 
 #### <a name="reference"></a>Riferimento
 
-[Membri API](./api-members.md)
+[Membri api](./api-members.md)
 
-[Spazio dei nomi Microsoft. ISAM. esent. Interop](./microsoft.isam.esent.interop-namespace.md)
+[Spazio dei nomi Microsoft.Isam.Esent.Interop](./microsoft.isam.esent.interop-namespace.md)

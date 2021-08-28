@@ -1,10 +1,10 @@
 ---
-title: ACS-Enable-ACS-attributo servizio
+title: Attributo ACS-Enable-ACS-Service
 description: True se il servizio ACS deve essere abilitato.
 ms.assetid: 376f80a7-f07f-44ef-a12f-8c732ec514c4
 ms.tgt_platform: multiple
 keywords:
-- ACS-Enable-ACS-schema AD dell'attributo del servizio
+- Schema AD dell'attributo ACS-Enable-ACS-Service
 - Schema AD dell'attributo aCSEnableACSService
 topic_type:
 - apiref
@@ -14,14 +14,14 @@ api_type:
 - Schema
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: e2eb4994157d90562cc15ccaaa03de8a03383e0c
-ms.sourcegitcommit: b77ace27b0432e7cd3863191b11926be032fbe2f
+ms.openlocfilehash: 79da9f552f370c0c3d7f66b3d13ce59b7f272651f130b93c40678bcbc1eddcc4
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/14/2020
-ms.locfileid: "104123231"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119022879"
 ---
-# <a name="acs-enable-acs-service-attribute"></a>ACS-Enable-ACS-attributo servizio
+# <a name="acs-enable-acs-service-attribute"></a>Attributo ACS-Enable-ACS-Service
 
 True se il servizio ACS deve essere abilitato.
 
@@ -30,12 +30,12 @@ True se il servizio ACS deve essere abilitato.
 | Voce | Valore |
 |-------------------|--------------------------------------|
 | CN                | ACS-Enable-ACS-Service               |
-| LDAP-Display-Name | aCSEnableACSService                  |
+| Ldap-Display-Name | aCSEnableACSService                  |
 | Dimensione              | 4 byte                              |
-| Privilegio aggiornamento  | \-                                   |
+| Aggiorna privilegio  | \-                                   |
 | Frequenza di aggiornamento  | \-                                   |
 | Attribute-Id      | 1.2.840.113556.1.4.770               |
-| System-ID-GUID    | 7f561287-5301-11d1-a9c5-0000f80367c1 |
+| System-Id-Guid    | 7f561287-5301-11d1-a9c5-0000f80367c1 |
 | Sintassi            | [**Boolean**](s-boolean.md)         |
 
 
@@ -58,15 +58,15 @@ True se il servizio ACS deve essere abilitato.
 | ID collegamento                | \-                                           |
 | MAPI-Id                | \-                                           |
 | System-Only            | Falso                                        |
-| È a valore singolo       | Vero                                         |
+| A valore singolo       | Vero                                         |
 | Indicizzato             | Falso                                        |
 | Nel catalogo globale      | Falso                                        |
-| NT-Security-descrittore | O:BAG: NON VALIDO: S:                                 |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                 |
 | Range-Lower            | \-                                           |
 | Range-Upper            | \-                                           |
 | Search-Flags           | 0x00000000                                   |
 | System-Flags           | 0x00000010                                   |
-| Classi utilizzate in        | [**ACS-subnet**](c-acssubnet.md)<br/> |
+| Classi usate in        | [**ACS-Subnet**](c-acssubnet.md)<br/> |
 
 
 
@@ -79,15 +79,15 @@ True se il servizio ACS deve essere abilitato.
 | ID collegamento                | \-                                           |
 | MAPI-Id                | \-                                           |
 | System-Only            | Falso                                        |
-| È a valore singolo       | Vero                                         |
+| A valore singolo       | Vero                                         |
 | Indicizzato             | Falso                                        |
 | Nel catalogo globale      | Falso                                        |
-| NT-Security-descrittore | O:BAG: NON VALIDO: S:                                 |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                 |
 | Range-Lower            | \-                                           |
 | Range-Upper            | \-                                           |
 | Search-Flags           | 0x00000000                                   |
 | System-Flags           | 0x00000010                                   |
-| Classi utilizzate in        | [**ACS-subnet**](c-acssubnet.md)<br/> |
+| Classi usate in        | [**ACS-Subnet**](c-acssubnet.md)<br/> |
 
 
 
@@ -100,15 +100,15 @@ True se il servizio ACS deve essere abilitato.
 | ID collegamento                | \-                                           |
 | MAPI-Id                | \-                                           |
 | System-Only            | Falso                                        |
-| È a valore singolo       | Vero                                         |
+| A valore singolo       | Vero                                         |
 | Indicizzato             | Falso                                        |
 | Nel catalogo globale      | Falso                                        |
-| NT-Security-descrittore | O:BAG: NON VALIDO: S:                                 |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                 |
 | Range-Lower            | \-                                           |
 | Range-Upper            | \-                                           |
 | Search-Flags           | 0x00000000                                   |
 | System-Flags           | 0x00000010                                   |
-| Classi utilizzate in        | [**ACS-subnet**](c-acssubnet.md)<br/> |
+| Classi usate in        | [**ACS-Subnet**](c-acssubnet.md)<br/> |
 
 
 
@@ -121,15 +121,15 @@ True se il servizio ACS deve essere abilitato.
 | ID collegamento                | \-                                           |
 | MAPI-Id                | \-                                           |
 | System-Only            | Falso                                        |
-| È a valore singolo       | Vero                                         |
+| Is-Single-Valued       | Vero                                         |
 | Indicizzato             | Falso                                        |
 | Nel catalogo globale      | Falso                                        |
-| NT-Security-descrittore | O:BAG: NON VALIDO: S:                                 |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                 |
 | Range-Lower            | \-                                           |
 | Range-Upper            | \-                                           |
 | Search-Flags           | 0x00000000                                   |
 | System-Flags           | 0x00000010                                   |
-| Classi utilizzate in        | [**ACS-subnet**](c-acssubnet.md)<br/> |
+| Classi usate in        | [**ACS-Subnet**](c-acssubnet.md)<br/> |
 
 
 
@@ -142,15 +142,15 @@ True se il servizio ACS deve essere abilitato.
 | ID collegamento                | \-                                           |
 | MAPI-Id                | \-                                           |
 | System-Only            | Falso                                        |
-| È a valore singolo       | Vero                                         |
+| Is-Single-Valued       | Vero                                         |
 | Indicizzato             | Falso                                        |
 | Nel catalogo globale      | Falso                                        |
-| NT-Security-descrittore | O:BAG: NON VALIDO: S:                                 |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                 |
 | Range-Lower            | \-                                           |
 | Range-Upper            | \-                                           |
 | Search-Flags           | 0x00000000                                   |
 | System-Flags           | 0x00000010                                   |
-| Classi utilizzate in        | [**ACS-subnet**](c-acssubnet.md)<br/> |
+| Classi usate in        | [**ACS-Subnet**](c-acssubnet.md)<br/> |
 
 
 
@@ -163,15 +163,15 @@ True se il servizio ACS deve essere abilitato.
 | ID collegamento                | \-                                           |
 | MAPI-Id                | \-                                           |
 | System-Only            | Falso                                        |
-| È a valore singolo       | Vero                                         |
+| Is-Single-Valued       | Vero                                         |
 | Indicizzato             | Falso                                        |
 | Nel catalogo globale      | Falso                                        |
-| NT-Security-descrittore | O:BAG: NON VALIDO: S:                                 |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                 |
 | Range-Lower            | \-                                           |
 | Range-Upper            | \-                                           |
 | Search-Flags           | 0x00000000                                   |
 | System-Flags           | 0x00000010                                   |
-| Classi utilizzate in        | [**ACS-subnet**](c-acssubnet.md)<br/> |
+| Classi usate in        | [**ACS-Subnet**](c-acssubnet.md)<br/> |
 
 
 

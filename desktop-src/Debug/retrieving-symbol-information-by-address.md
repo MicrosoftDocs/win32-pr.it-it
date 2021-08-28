@@ -1,19 +1,19 @@
 ---
-description: Nel codice seguente viene illustrato come chiamare la funzione SymFromAddr.
+description: Il codice seguente illustra come chiamare la funzione SymFromAddr.
 ms.assetid: 63dfadea-b0c4-4050-add8-d1f3aef7a495
-title: Recupero delle informazioni sui simboli per indirizzo
+title: Recupero di informazioni sui simboli in base all'indirizzo
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 29ad9d2879dbfd5820c4aa6c2e7563a1575ebe1c
-ms.sourcegitcommit: c7add10d695482e1ceb72d62b8a4ebd84ea050f7
+ms.openlocfilehash: 6484327117e66826402dc97abb09f58813e528599c69bd97054528f5cfe89aba
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104126432"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119076385"
 ---
-# <a name="retrieving-symbol-information-by-address"></a>Recupero delle informazioni sui simboli per indirizzo
+# <a name="retrieving-symbol-information-by-address"></a>Recupero di informazioni sui simboli in base all'indirizzo
 
-Nel codice seguente viene illustrato come chiamare la funzione [**SymFromAddr**](/windows/desktop/api/Dbghelp/nf-dbghelp-symfromaddr) . Questa funzione compila una struttura di [**\_ informazioni sui simboli**](/windows/desktop/api/DbgHelp/ns-dbghelp-symbol_info) . Poiché il nome è di lunghezza variabile, è necessario specificare un buffer sufficientemente grande da mantenere il nome archiviato alla fine della struttura delle informazioni sui **simboli \_** . Inoltre, il membro **MaxNameLen** deve essere impostato sul numero di byte riservati per il nome. In questo esempio, *dwAddress* è l'indirizzo di cui eseguire il mapping a un simbolo. La funzione **SymFromAddr** archivia un offset all'inizio del simbolo nell'indirizzo in *dwDisplacement*. Nell'esempio si presuppone che sia stato inizializzato il gestore di simboli utilizzando il codice nell' [inizializzazione del gestore di simboli](initializing-the-symbol-handler.md).
+Il codice seguente illustra come chiamare la [**funzione SymFromAddr.**](/windows/desktop/api/Dbghelp/nf-dbghelp-symfromaddr) Questa funzione inserisce una struttura [**SYMBOL \_ INFO.**](/windows/desktop/api/DbgHelp/ns-dbghelp-symbol_info) Poiché la lunghezza del nome è variabile, è necessario specificare un buffer sufficientemente grande da contenere il nome archiviato alla fine della **struttura SYMBOL \_ INFO.** Inoltre, il **membro MaxNameLen** deve essere impostato sul numero di byte riservati per il nome. In questo esempio *dwAddress è* l'indirizzo di cui eseguire il mapping a un simbolo. La **funzione SymFromAddr** archivierà un offset all'inizio del simbolo per l'indirizzo in *dwDisplacement*. Nell'esempio si presuppone che sia stato inizializzato il gestore dei simboli usando il codice in [Inizializzazione del gestore dei simboli](initializing-the-symbol-handler.md).
 
 
 ```C++
@@ -40,7 +40,7 @@ else
 
 
 
-Per recuperare il numero di riga del codice sorgente per un indirizzo specificato, un'applicazione può usare [**SymGetLineFromAddr64**](/windows/desktop/api/Dbghelp/nf-dbghelp-symgetlinefromaddr). Questa funzione richiede un puntatore a una struttura [**Imagehlp \_ LINE64**](/windows/desktop/api/DbgHelp/ns-dbghelp-imagehlp_line) per ricevere il nome del file di origine e il numero di riga corrispondente a un indirizzo di codice specificato. Si noti che il gestore di simboli può recuperare le informazioni sul numero di riga solo quando le **\_ \_ linee di caricamento SYMOPT** vengono impostate tramite la funzione [**SymSetOptions**](/windows/desktop/api/Dbghelp/nf-dbghelp-symsetoptions) . È necessario impostare questa opzione prima di caricare il modulo. Il parametro dwAddress contiene l'indirizzo del codice per il quale verrà individuato il nome del file di origine e il numero di riga.
+Per recuperare il numero di riga del codice sorgente per un indirizzo specificato, un'applicazione può [**usare SymGetLineFromAddr64.**](/windows/desktop/api/Dbghelp/nf-dbghelp-symgetlinefromaddr) Questa funzione richiede un puntatore a una struttura [**IMAGEHLP \_ LINE64**](/windows/desktop/api/DbgHelp/ns-dbghelp-imagehlp_line) per ricevere il nome del file di origine e il numero di riga corrispondenti a un indirizzo di codice specificato. Si noti che il gestore dei simboli può recuperare le informazioni sul numero di riga solo quando **SYMOPT \_ LOAD \_ LINES** è impostato usando la [**funzione SymSetOptions.**](/windows/desktop/api/Dbghelp/nf-dbghelp-symsetoptions) Questa opzione deve essere impostata prima di caricare il modulo. Il parametro dwAddress contiene l'indirizzo di codice per il quale verranno individuati il nome del file di origine e il numero di riga.
 
 
 ```C++

@@ -1,6 +1,6 @@
 ---
 title: Attributo MS-SQL-GPSLongitude
-description: L'attributo MS-SQL-GPSLongitude non è attualmente in uso.
+description: L'attributo MS-SQL-GPSLongitude non è attualmente utilizzato.
 ms.assetid: 70dfe2f1-f222-47f8-981f-0f2ca1718c72
 ms.tgt_platform: multiple
 keywords:
@@ -14,28 +14,28 @@ api_type:
 - Schema
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: eeb9642f7a5c856d6beeffc2cf20dcd1d9bde4d5
-ms.sourcegitcommit: b77ace27b0432e7cd3863191b11926be032fbe2f
+ms.openlocfilehash: 9e317888b92192f0df9d371f73e211ebcfb07ccbfed81318e2188579f7954d7f
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/14/2020
-ms.locfileid: "103744314"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118961130"
 ---
 # <a name="ms-sql-gpslongitude-attribute"></a>Attributo MS-SQL-GPSLongitude
 
-L'attributo **MS-SQL-GPSLongitude** non è attualmente in uso.
+**L'attributo MS-SQL-GPSLongitude** non è attualmente utilizzato.
 
 
 
 | Voce | Valore |
 |-------------------|---------------------------------------------|
 | CN                | MS-SQL-GPSLongitude                         |
-| LDAP-Display-Name | mS-SQL-GPSLongitude                         |
+| Ldap-Display-Name | mS-SQL-GPSLongitude                         |
 | Dimensione              | \-                                          |
-| Privilegio aggiornamento  | \-                                          |
+| Aggiorna privilegio  | \-                                          |
 | Frequenza di aggiornamento  | \-                                          |
 | Attribute-Id      | 1.2.840.113556.1.4.1386                     |
-| System-ID-GUID    | b7577c94-ccee-11d2-9993-0000f87a57d4        |
+| System-Id-Guid    | b7577c94-ccee-11d2-9993-0000f87a57d4        |
 | Sintassi            | [**String(Unicode)**](s-string-unicode.md) |
 
 
@@ -58,15 +58,15 @@ L'attributo **MS-SQL-GPSLongitude** non è attualmente in uso.
 | ID collegamento                | \-                                                        |
 | MAPI-Id                | \-                                                        |
 | System-Only            | Falso                                                     |
-| È a valore singolo       | Vero                                                      |
+| A valore singolo       | Vero                                                      |
 | Indicizzato             | Falso                                                     |
 | Nel catalogo globale      | Falso                                                     |
-| NT-Security-descrittore | O:BAG: NON VALIDO: S:                                              |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                              |
 | Range-Lower            | \-                                                        |
 | Range-Upper            | \-                                                        |
 | Search-Flags           | 0x00000000                                                |
 | System-Flags           | 0x00000010                                                |
-| Classi utilizzate in        | [**MS-SQL-SQLServer**](c-ms-sql-sqlserver.md)<br/> |
+| Classi usate in        | [**MS-SQL-SQLServer**](c-ms-sql-sqlserver.md)<br/> |
 
 
 
@@ -79,15 +79,15 @@ L'attributo **MS-SQL-GPSLongitude** non è attualmente in uso.
 | ID collegamento                | \-                                                        |
 | MAPI-Id                | \-                                                        |
 | System-Only            | Falso                                                     |
-| È a valore singolo       | Vero                                                      |
+| A valore singolo       | Vero                                                      |
 | Indicizzato             | Falso                                                     |
 | Nel catalogo globale      | Falso                                                     |
-| NT-Security-descrittore | O:BAG: NON VALIDO: S:                                              |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                              |
 | Range-Lower            | \-                                                        |
 | Range-Upper            | \-                                                        |
 | Search-Flags           | 0x00000000                                                |
 | System-Flags           | 0x00000010                                                |
-| Classi utilizzate in        | [**MS-SQL-SQLServer**](c-ms-sql-sqlserver.md)<br/> |
+| Classi usate in        | [**MS-SQL-SQLServer**](c-ms-sql-sqlserver.md)<br/> |
 
 
 
@@ -100,15 +100,15 @@ L'attributo **MS-SQL-GPSLongitude** non è attualmente in uso.
 | ID collegamento                | \-                                                        |
 | MAPI-Id                | \-                                                        |
 | System-Only            | Falso                                                     |
-| È a valore singolo       | Vero                                                      |
+| A valore singolo       | Vero                                                      |
 | Indicizzato             | Falso                                                     |
 | Nel catalogo globale      | Falso                                                     |
-| NT-Security-descrittore | O:BAG: NON VALIDO: S:                                              |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                              |
 | Range-Lower            | \-                                                        |
 | Range-Upper            | \-                                                        |
 | Search-Flags           | 0x00000000                                                |
 | System-Flags           | 0x00000010                                                |
-| Classi utilizzate in        | [**MS-SQL-SQLServer**](c-ms-sql-sqlserver.md)<br/> |
+| Classi usate in        | [**MS-SQL-SQLServer**](c-ms-sql-sqlserver.md)<br/> |
 
 
 
@@ -121,15 +121,15 @@ L'attributo **MS-SQL-GPSLongitude** non è attualmente in uso.
 | ID collegamento                | \-                                                        |
 | MAPI-Id                | \-                                                        |
 | System-Only            | Falso                                                     |
-| È a valore singolo       | Vero                                                      |
+| A valore singolo       | Vero                                                      |
 | Indicizzato             | Falso                                                     |
 | Nel catalogo globale      | Falso                                                     |
-| NT-Security-descrittore | O:BAG: NON VALIDO: S:                                              |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                              |
 | Range-Lower            | \-                                                        |
 | Range-Upper            | \-                                                        |
 | Search-Flags           | 0x00000000                                                |
 | System-Flags           | 0x00000010                                                |
-| Classi utilizzate in        | [**MS-SQL-SQLServer**](c-ms-sql-sqlserver.md)<br/> |
+| Classi usate in        | [**MS-SQL-SQLServer**](c-ms-sql-sqlserver.md)<br/> |
 
 
 
@@ -142,15 +142,15 @@ L'attributo **MS-SQL-GPSLongitude** non è attualmente in uso.
 | ID collegamento                | \-                                                        |
 | MAPI-Id                | \-                                                        |
 | System-Only            | Falso                                                     |
-| È a valore singolo       | Vero                                                      |
+| A valore singolo       | Vero                                                      |
 | Indicizzato             | Falso                                                     |
 | Nel catalogo globale      | Falso                                                     |
-| NT-Security-descrittore | O:BAG: NON VALIDO: S:                                              |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                              |
 | Range-Lower            | \-                                                        |
 | Range-Upper            | \-                                                        |
 | Search-Flags           | 0x00000000                                                |
 | System-Flags           | 0x00000010                                                |
-| Classi utilizzate in        | [**MS-SQL-SQLServer**](c-ms-sql-sqlserver.md)<br/> |
+| Classi usate in        | [**MS-SQL-SQLServer**](c-ms-sql-sqlserver.md)<br/> |
 
 
 
@@ -163,15 +163,15 @@ L'attributo **MS-SQL-GPSLongitude** non è attualmente in uso.
 | ID collegamento                | \-                                                        |
 | MAPI-Id                | \-                                                        |
 | System-Only            | Falso                                                     |
-| È a valore singolo       | Vero                                                      |
+| A valore singolo       | Vero                                                      |
 | Indicizzato             | Falso                                                     |
 | Nel catalogo globale      | Falso                                                     |
-| NT-Security-descrittore | O:BAG: NON VALIDO: S:                                              |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                              |
 | Range-Lower            | \-                                                        |
 | Range-Upper            | \-                                                        |
 | Search-Flags           | 0x00000000                                                |
 | System-Flags           | 0x00000010                                                |
-| Classi utilizzate in        | [**MS-SQL-SQLServer**](c-ms-sql-sqlserver.md)<br/> |
+| Classi usate in        | [**MS-SQL-SQLServer**](c-ms-sql-sqlserver.md)<br/> |
 
 
 

@@ -1,12 +1,12 @@
 ---
-title: Proprietà GatewayAuthCookieServerAddr di IMsRdpClientTransportSettings3
+title: Proprietà IMsRdpClientTransportSettings3 GatewayAuthCookieServerAddr
 description: Indirizzo del server per l'autenticazione basata su cookie.
 ms.assetid: e00480cd-2133-42ff-8447-6c4234b56bf9
 ms.tgt_platform: multiple
 keywords:
-- Servizi Desktop remoto proprietà GatewayAuthCookieServerAddr
-- Servizi Desktop remoto proprietà GatewayAuthCookieServerAddr, interfaccia IMsRdpClientTransportSettings3
-- Interfaccia IMsRdpClientTransportSettings3 Servizi Desktop remoto, proprietà GatewayAuthCookieServerAddr
+- Proprietà GatewayAuthCookieServerAddr Servizi Desktop remoto
+- Proprietà GatewayAuthCookieServerAddr Servizi Desktop remoto , interfaccia IMsRdpClientTransportSettings3
+- Interfaccia IMsRdpClientTransportSettings3 Servizi Desktop remoto proprietà , GatewayAuthCookieServerAddr
 topic_type:
 - apiref
 api_name:
@@ -19,14 +19,14 @@ api_type:
 - COM
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: fc238129d0bb9f698e90fc5e1de85e7257a4d16e
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: 330a1ddb15d548988c23f8140ce848f7f68be5d1deb17fc51bd88eed23b9eec2
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "104479042"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119000921"
 ---
-# <a name="imsrdpclienttransportsettings3gatewayauthcookieserveraddr-property"></a>Proprietà IMsRdpClientTransportSettings3:: GatewayAuthCookieServerAddr
+# <a name="imsrdpclienttransportsettings3gatewayauthcookieserveraddr-property"></a>Proprietà IMsRdpClientTransportSettings3::GatewayAuthCookieServerAddr
 
 Indirizzo del server per l'autenticazione basata su cookie.
 

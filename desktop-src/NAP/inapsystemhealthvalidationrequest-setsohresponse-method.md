@@ -1,9 +1,9 @@
 ---
-title: Metodo INapSystemHealthValidationRequest SetSoHResponse (NapSystemHealthValidator. h)
-description: Consente la convalida dell'integrità di sistema (SHV) per impostare il SoHResponse da inviare alla rispettiva controparte Agente integrità sistema (SHA) sul lato client.
+title: Metodo INapSystemHealthValidationRequest SetSoHResponse (NapSystemHealthValidator.h)
+description: Consente ai validator di integrità del sistema (SHV) di impostare SoHResponse da inviare alla controparte dell'agente di integrità del sistema (SHA) sul lato client.
 ms.assetid: 250b90ac-ce8f-4771-9d20-84c491adfb2c
 keywords:
-- NAP metodo SetSoHResponse
+- Metodo SetSoHResponse NAP
 - Metodo SetSoHResponse NAP, interfaccia INapSystemHealthValidationRequest
 - Interfaccia INapSystemHealthValidationRequest NAP, metodo SetSoHResponse
 topic_type:
@@ -16,21 +16,21 @@ api_type:
 - COM
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: b818218ef4f8601ecf4927f5e8b90f93e5386b56
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: 2af44bc3c4801a35ad311f184f3aa2763ccc401ee01dce8a96ef65a0e2496219
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "104400822"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118939139"
 ---
-# <a name="inapsystemhealthvalidationrequestsetsohresponse-method"></a>Metodo INapSystemHealthValidationRequest:: SetSoHResponse
+# <a name="inapsystemhealthvalidationrequestsetsohresponse-method"></a>Metodo INapSystemHealthValidationRequest::SetSoHResponse
 
 > [!Note]  
-> La piattaforma protezione accesso alla rete non è disponibile a partire da Windows 10
+> La piattaforma Protezione accesso alla rete non è disponibile a partire da Windows 10
 
  
 
-Il metodo **INapSystemHealthValidationRequest:: SetSoHResponse** consente ai validator di integrità del sistema (SHV) di impostare il [**SoHResponse**](/windows/win32/api/naptypes/ns-naptypes-soh) da inviare alla rispettiva controparte dell'agente integrità sistema (SHA) sul lato client.
+Il metodo **INapSystemHealthValidationRequest::SetSoHResponse** consente ai validator di integrità del sistema (SHV) di impostare [**SoHResponse**](/windows/win32/api/naptypes/ns-naptypes-soh) da inviare alla controparte dell'agente di integrità del sistema (SHA) sul lato client.
 
 ## <a name="syntax"></a>Sintassi
 
@@ -47,23 +47,23 @@ HRESULT SetSoHResponse(
 
 <dl> <dt>
 
-*sohResponse* \[ in\]
+*sohResponse* \[ Pollici\]
 </dt> <dd>
 
-Puntatore a una struttura [**SoHResponse**](/windows/win32/api/naptypes/ns-naptypes-soh) .
+Puntatore a una [**struttura SoHResponse.**](/windows/win32/api/naptypes/ns-naptypes-soh)
 
 </dd> </dl>
 
 ## <a name="return-value"></a>Valore restituito
 
-È possibile che vengano restituiti anche altri codici di errore specifici di COM.
+Possono essere restituiti anche altri codici di errore specifici di COM.
 
 
 
 | Codice restituito                                                                                     | Descrizione                                                        |
 |-------------------------------------------------------------------------------------------------|--------------------------------------------------------------------|
 | <dl> <dt>**S \_ OK**</dt> </dl>           | Operazione riuscita.<br/>                                    |
-| <dl> <dt>**E \_ ACCESSDENIED**</dt> </dl> | Errore delle autorizzazioni, accesso negato.<br/>                       |
+| <dl> <dt>**E \_ ACCESSO NEGATO**</dt> </dl> | Errore di autorizzazione, accesso negato.<br/>                       |
 | <dl> <dt>**E \_ OUTOFMEMORY**</dt> </dl>  | Limite di risorse di sistema. Impossibile eseguire l'operazione.<br/> |
 
 
@@ -77,9 +77,9 @@ Puntatore a una struttura [**SoHResponse**](/windows/win32/api/naptypes/ns-napty
 | Requisito | Valore |
 |-------------------------------------|---------------------------------------------------------------------------------------------------------|
 | Client minimo supportato<br/> | Nessuno supportato<br/>                                                                               |
-| Server minimo supportato<br/> | \[Solo app desktop Windows Server 2008\]<br/>                                                    |
-| Intestazione<br/>                   | <dl> <dt>NapSystemHealthValidator. h</dt> </dl>   |
-| IDL<br/>                      | <dl> <dt>NapSystemHealthValidator. idl</dt> </dl> |
+| Server minimo supportato<br/> | Windows Solo app desktop di Server 2008 \[\]<br/>                                                    |
+| Intestazione<br/>                   | <dl> <dt>NapSystemHealthValidator.h</dt> </dl>   |
+| Idl<br/>                      | <dl> <dt>NapSystemHealthValidator.idl</dt> </dl> |
 | DLL<br/>                      | <dl> <dt>Qshvhost.dll</dt> </dl>                 |
 
 

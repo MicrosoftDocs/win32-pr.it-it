@@ -1,6 +1,6 @@
 ---
-title: Costanti fornitore NAP (NapMicrosoftVendorIds. h)
-description: In NapMicrosoftVendorIds. h sono definiti gli ID dei componenti Microsoft NAP interni seguenti.
+title: Costanti del fornitore di Protezione accesso alla rete (NapMicrosoftVendorIds.h)
+description: I seguenti ID dei componenti interni di Protezione accesso alla rete Microsoft sono definiti in NapMicrosoftVendorIds.h.
 ms.assetid: 16d87399-3d96-47c7-b865-c56cfacdeff8
 topic_type:
 - apiref
@@ -24,21 +24,21 @@ api_type:
 - HeaderDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 9a5f748ab45b51ce69393c0719fac9a712201f19
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: 23820190cf476cdc0d27f0e4641752dc135cab0f808d37f60adc95b919429671
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "106302254"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118939119"
 ---
-# <a name="nap-vendor-constants"></a>Costanti fornitore NAP
+# <a name="nap-vendor-constants"></a>Costanti del fornitore di Protezione accesso alla rete
 
 > [!Note]  
-> La piattaforma protezione accesso alla rete non è disponibile a partire da Windows 10
+> La piattaforma Protezione accesso alla rete non è disponibile a partire da Windows 10
 
  
 
-In NapMicrosoftVendorIds. h sono definiti gli ID dei componenti Microsoft NAP interni seguenti. Quando si implementa un SHA o un servizio di convalida dell'integrità di sistema, non usare questi valori ID già assegnati ai componenti interni di integrità del sistema Microsoft.
+I seguenti ID dei componenti interni di Protezione accesso alla rete Microsoft sono definiti in NapMicrosoftVendorIds.h. Quando si implementa un'applicazione SHA o SHV, non usare questi valori ID già assegnati ai componenti interni dell'integrità del sistema Microsoft.
 
 <dl> <dt>
 
@@ -165,9 +165,9 @@ In NapMicrosoftVendorIds. h sono definiti gli ID dei componenti Microsoft NAP in
 
 | Requisito | Valore |
 |-------------------------------------|----------------------------------------------------------------------------------------------------|
-| Client minimo supportato<br/> | \[Solo app desktop di Windows Vista\]<br/>                                                     |
-| Server minimo supportato<br/> | \[Solo app desktop Windows Server 2008\]<br/>                                               |
-| Intestazione<br/>                   | <dl> <dt>NapMicrosoftVendorIds. h</dt> </dl> |
+| Client minimo supportato<br/> | Windows Solo \[ app desktop Vista\]<br/>                                                     |
+| Server minimo supportato<br/> | Windows Solo app desktop di Server 2008 \[\]<br/>                                               |
+| Intestazione<br/>                   | <dl> <dt>NapMicrosoftVendorIds.h</dt> </dl> |
 
 
 

@@ -1,7 +1,7 @@
 - name: Servizio di notifica eventi di sistema
   href: system-event-notification-service-portal.md
   items:
-    - name: Informazioni sul servizio di notifica eventi di sistema
+    - name: Informazioni sul servizio di notifica degli eventi di sistema
       href: about-system-event-notification-service.md
       items:
         - name: Configurazioni di mobile computing per SENS
@@ -10,9 +10,9 @@
           href: application-scenarios-for-sens.md
         - name: Notifiche
           href: notifications.md
-        - name: Architettura SENS
+        - name: Architettura di SENS
           href: sens-architecture.md
-    - name: Riferimento a SENS
+    - name: Informazioni di riferimento su SENS
       href: sens-reference.md
       items:
         - name: IsDestinationReachable
@@ -32,7 +32,7 @@
                   href: /windows/desktop/api/Sensevts/nf-sensevts-isenslogon-displaylock
                 - name: Metodo DisplayUnLock
                   href: /windows/desktop/api/Sensevts/nf-sensevts-isenslogon-displayunlock
-                - name: Metodo di disconnessione
+                - name: Metodo Logoff
                   href: /windows/desktop/api/Sensevts/nf-sensevts-isenslogon-logoff
                 - name: Metodo Logon
                   href: /windows/desktop/api/Sensevts/nf-sensevts-isenslogon-logon
@@ -45,7 +45,7 @@
             - name: ISensLogon2
               href: /windows/desktop/api/Sensevts/nn-sensevts-isenslogon2
               items:
-                - name: Metodo di disconnessione
+                - name: Metodo Logoff
                   href: /windows/desktop/api/Sensevts/nf-sensevts-isenslogon2-logoff
                 - name: Metodo Logon
                   href: /windows/desktop/api/Sensevts/nf-sensevts-isenslogon2-logon
@@ -53,16 +53,16 @@
                   href: /windows/desktop/api/Sensevts/nf-sensevts-isenslogon2-sessiondisconnect
                 - name: Metodo SessionReconnect
                   href: /windows/desktop/api/Sensevts/nf-sensevts-isenslogon2-sessionreconnect
-                - name: Metodo postshell
+                - name: Metodo PostShell
                   href: /windows/desktop/api/Sensevts/nf-sensevts-isenslogon2-postshell
             - name: ISensNetwork
               href: /windows/desktop/api/Sensevts/nn-sensevts-isensnetwork
               items:
                 - name: Metodo ConnectionLost
                   href: /windows/desktop/api/Sensevts/nf-sensevts-isensnetwork-connectionlost
-                - name: Metodo ConnectionMade
+                - name: Metodo Connection Made
                   href: /windows/desktop/api/Sensevts/nf-sensevts-isensnetwork-connectionmade
-                - name: Metodo ConnectionMadeNoQOCInfo
+                - name: Metodo Connection MadeNoQOCInfo
                   href: /windows/desktop/api/Sensevts/nf-sensevts-isensnetwork-connectionmadenoqocinfo
                 - name: SENS_QOCINFO
                   href: /windows/desktop/api/Sensevts/ns-sensevts-sens_qocinfo

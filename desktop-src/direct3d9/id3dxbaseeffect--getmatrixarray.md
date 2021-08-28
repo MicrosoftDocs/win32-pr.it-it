@@ -1,7 +1,7 @@
 ---
-description: Ottiene una matrice di matrici nontransposed.
+description: Ottiene una matrice di matrici non trasposte.
 ms.assetid: 37b08f55-22f1-4b60-8cd4-566a77e7dbd6
-title: 'Metodo ID3DXBaseEffect:: GetMatrixArray (D3DX9Shader. h)'
+title: Metodo ID3DXBaseEffect::GetMatrixArray (D3DX9Shader.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -14,16 +14,16 @@ api_type:
 api_location:
 - D3dx9.lib
 - D3dx9.dll
-ms.openlocfilehash: 242b3c42976f9bfe4ad8ecad4d965c473839ffdd
-ms.sourcegitcommit: 14010c34b35fa268046c7683f021f86de08ddd0a
+ms.openlocfilehash: 6d94820200cfc4cdc90c0a67562ac84efd57cd5cacb8e2a0ff37fcb91454db33
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/15/2021
-ms.locfileid: "106323599"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118987791"
 ---
-# <a name="id3dxbaseeffectgetmatrixarray-method"></a>Metodo ID3DXBaseEffect:: GetMatrixArray
+# <a name="id3dxbaseeffectgetmatrixarray-method"></a>Metodo ID3DXBaseEffect::GetMatrixArray
 
-Ottiene una matrice di matrici nontransposed.
+Ottiene una matrice di matrici non trasposte.
 
 ## <a name="syntax"></a>Sintassi
 
@@ -42,28 +42,28 @@ HRESULT GetMatrixArray(
 
 <dl> <dt>
 
-*hParameter* \[ in\]
+*hParameter* \[ Pollici\]
 </dt> <dd>
 
 Tipo: **[D3DXHANDLE](dx9-graphics-reference-effects-constants.md)**
 
-Identificatore univoco. Vedere [handle (Direct3D 9)](handles.md).
+Identificatore univoco. Vedere [Handle (Direct3D 9)](handles.md).
 
 </dd> <dt>
 
-*pmatrix* \[ out\]
+*pMatrix* \[ Cambio\]
 </dt> <dd>
 
 Tipo: **[ **D3DXMATRIX**](d3dxmatrix.md)\***
 
-Restituisce una matrice di matrici nontransposed. Vedere [**D3DXMATRIX**](d3dxmatrix.md).
+Restituisce una matrice di matrici non trasposte. Vedere [**D3DXMATRIX**](d3dxmatrix.md).
 
 </dd> <dt>
 
-*Numero* \[ di in\]
+*Conteggio* \[ Pollici\]
 </dt> <dd>
 
-Tipo: **[ **uint**](../winprog/windows-data-types.md)**
+Tipo: **[ **UINT**](../winprog/windows-data-types.md)**
 
 Numero di matrici nella matrice.
 
@@ -77,9 +77,9 @@ Se il metodo ha esito positivo, il valore restituito è D3D \_ OK. Se il metodo 
 
 ## <a name="remarks"></a>Commenti
 
-Una matrice nontransposed contiene dati principali della riga; ovvero ogni vettore è contenuto in una riga.
+Una matrice non trasposta contiene dati principali di riga. in altri, ogni vettore è contenuto in una riga.
 
-Se le matrici di destinazione sono più grandi delle matrici di origine, verranno riempiti solo i componenti in alto a sinistra di ogni matrice di destinazione e i componenti della matrice di destinazione rimanenti verranno impostati su zero.
+Se le matrici di destinazione sono maggiori delle matrici di origine, verranno riempiti solo i componenti in alto a sinistra di ogni matrice di destinazione e i componenti rimanenti della matrice di destinazione verranno impostati su zero.
 
 ## <a name="requirements"></a>Requisiti
 
@@ -87,8 +87,8 @@ Se le matrici di destinazione sono più grandi delle matrici di origine, verrann
 
 | Requisito | Valore |
 |--------------------|------------------------------------------------------------------------------------------|
-| Intestazione<br/>  | <dl> <dt>D3DX9Shader. h</dt> </dl> |
-| Libreria<br/> | <dl> <dt>D3dx9. lib</dt> </dl>     |
+| Intestazione<br/>  | <dl> <dt>D3DX9Shader.h</dt> </dl> |
+| Libreria<br/> | <dl> <dt>D3dx9.lib</dt> </dl>     |
 
 
 

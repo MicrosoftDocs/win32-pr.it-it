@@ -1,7 +1,7 @@
 ---
-description: Il metodo GetClassWindowStyles recupera gli stili della classe e gli stili della finestra.
+description: Il metodo GetClassWindowStyles recupera gli stili di classe e di finestra della finestra.
 ms.assetid: 6eec7912-c654-4e4f-b6f1-ec94c7284575
-title: Metodo CBaseWindow. GetClassWindowStyles (Winutil. h)
+title: Metodo CBaseWindow.GetClassWindowStyles (Winutil.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -16,16 +16,16 @@ api_location:
 - Strmbase.dll
 - Strmbasd.lib
 - Strmbasd.dll
-ms.openlocfilehash: a34332f84a91ee88d61ee5f29f0b6a0b0cc44714
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: ba7042069d4f1190a88b25ea4cc349e8230c149dd61d2d06fc91fa3439a9e55f
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "106327946"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119074631"
 ---
-# <a name="cbasewindowgetclasswindowstyles-method"></a>CBaseWindow. GetClassWindowStyles, metodo
+# <a name="cbasewindowgetclasswindowstyles-method"></a>Metodo CBaseWindow.GetClassWindowStyles
 
-Il `GetClassWindowStyles` metodo recupera gli stili della classe e gli stili della finestra.
+Il `GetClassWindowStyles` metodo recupera gli stili della classe della finestra e gli stili della finestra.
 
 ## <a name="syntax"></a>Sintassi
 
@@ -61,19 +61,19 @@ Puntatore a una variabile che riceve gli stili della finestra.
 *pWindowStylesEx* 
 </dt> <dd>
 
-Puntatore a una variabile che riceve gli stili della finestra estesa.
+Puntatore a una variabile che riceve gli stili di finestra estesi.
 
 </dd> </dl>
 
 ## <a name="return-value"></a>Valore restituito
 
-Restituisce una stringa di testo statica che contiene il nome della classe.
+Restituisce una stringa di testo statico che contiene il nome della classe.
 
 ## <a name="remarks"></a>Commenti
 
-Il metodo [**CBaseWindow::P reparewindow**](cbasewindow-preparewindow.md) chiama questo metodo per recuperare gli stili della classe e gli stili della finestra della finestra.
+Il [**metodo CBaseWindow::P repareWindow**](cbasewindow-preparewindow.md) chiama questo metodo per recuperare gli stili di classe e gli stili della finestra della finestra.
 
-Questo metodo è virtuale puro; la classe derivata deve implementarla. Nell'esempio seguente viene illustrata una possibile implementazione:
+Questo metodo è virtuale puro. la classe derivata deve implementarla. L'esempio seguente illustra una possibile implementazione:
 
 
 ```C++
@@ -90,7 +90,7 @@ LPTSTR CMyWindowClass::GetClassWindowStyles(DWORD *pClassStyles,
 
 
 
-L'oggetto usa lo stile della classe per il membro **lpszClassName** di una struttura WNDCLASS, che passa alla funzione **registerClass** . L'oggetto utilizza gli stili della finestra per i parametri *dwExStyle* e *DwStyle* della funzione **CreateWindowEx** . Per ulteriori informazioni, vedere Platform SDK.
+L'oggetto usa lo stile di classe per il membro **lpszClassName** di una struttura WNDCLASS, che passa alla **funzione RegisterClass.** L'oggetto usa gli stili della finestra *per i parametri dwExStyle* *e dwStyle* della **funzione CreateWindowEx.** Per altre informazioni, vedere Platform SDK.
 
 ## <a name="requirements"></a>Requisiti
 
@@ -98,8 +98,8 @@ L'oggetto usa lo stile della classe per il membro **lpszClassName** di una strut
 
 | Requisito | Valore |
 |--------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Intestazione<br/>  | <dl> <dt>WinUtil. h (include Streams. h)</dt> </dl>                                                                                   |
-| Libreria<br/> | <dl> <dt>Strmbase. lib (compilazioni finali); </dt> <dt>Strmbasd. lib (build di debug)</dt> </dl> |
+| Intestazione<br/>  | <dl> <dt>Winutil.h (includere Flussi.h)</dt> </dl>                                                                                   |
+| Libreria<br/> | <dl> <dt>Strmbase.lib (build di vendita al dettaglio); </dt> <dt>Strmbasd.lib (build di debug)</dt> </dl> |
 
 
 

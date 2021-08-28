@@ -4,12 +4,12 @@ description: Strutture di input del mouse
 ms.assetid: 96aa177e-0b67-45b5-a912-8d2b66be6df7
 ms.topic: article
 ms.date: 03/25/2020
-ms.openlocfilehash: 4647e7e590d6cefcdf53582986692a8e7c96f8b7
-ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
+ms.openlocfilehash: 67313a9a778c8aca5814eae9c8739eee1fee95bc2d793da4d5f44ca42fca5448
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/28/2021
-ms.locfileid: "108090079"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119105710"
 ---
 # <a name="mouse-input-structures"></a>Strutture di input del mouse
 

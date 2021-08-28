@@ -1,23 +1,23 @@
 ---
 title: Codice di esempio per l'estensione dello schema a livello di codice
-description: Questo argomento include un esempio di codice C++ che estende a livello di codice lo schema di Active Directory.
+description: Questo argomento include un esempio di codice C++ che estende lo schema di Active Directory a livello di codice.
 ms.assetid: e84678c5-ac12-424b-ba6c-c6cba23e4ff6
 ms.tgt_platform: multiple
 keywords:
-- Codice di esempio per l'estensione dello schema AD a livello di codice
-- Estensione dello schema AD a livello di codice, esempio di codice per
+- Codice di esempio per l'estensione dello schema ad Ad a livello di codice
+- Estensione dello schema AD a livello di codice, codice di esempio per
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: c76264267c4ea97e4cf7998c19442a28483b4758
-ms.sourcegitcommit: 2d531328b6ed82d4ad971a45a5131b430c5866f7
+ms.openlocfilehash: b1ee2331fa31946691d0906eb9abd4942c037044b2d9f7891182ed8e2f890abb
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "104220942"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118962330"
 ---
 # <a name="example-code-for-extending-the-schema-programmatically"></a>Codice di esempio per l'estensione dello schema a livello di codice
 
-Questo argomento include un esempio di codice C++ che estende a livello di codice lo schema di Active Directory.
+Questo argomento include un esempio di codice C++ che estende lo schema di Active Directory a livello di codice.
 
 
 ```C++
@@ -863,9 +863,9 @@ void ReportErrorW(LPCWSTR pwszDefaultMsg, DWORD dwErr)
 
 
 
- 
+ 
 
- 
+ 
 
 
 

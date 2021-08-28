@@ -1,9 +1,9 @@
 ---
-title: 'Funzione Texture1D:: operator'
-description: Restituisce una variabile di risorse di sola lettura per un Texture1D.
+title: Funzione Texture1D::Operator
+description: Restituisce una variabile di risorsa di sola lettura per un oggetto Texture1D.
 ms.assetid: df54097d-4d1b-496a-a17d-6e9a10cfb996
 keywords:
-- Funzione operator HLSL
+- Funzione operatore HLSL
 topic_type:
 - apiref
 api_name:
@@ -13,16 +13,16 @@ api_type:
 ms.topic: reference
 ms.date: 05/31/2018
 api_location: ''
-ms.openlocfilehash: 44e5b502c7ae8b766363956920d7922858b4d771
-ms.sourcegitcommit: 8fa6614b715bddf14648cce36d2df22e5232801a
+ms.openlocfilehash: d2c11ef313531adb9b129ffb99103ea6c7778462eddf8c1c76f4b235c92951c5
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/10/2020
-ms.locfileid: "104118822"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118985911"
 ---
-# <a name="texture1doperator--function"></a>Funzione Texture1D:: operator
+# <a name="texture1doperator--function"></a>Funzione Texture1D::Operator
 
-Restituisce una variabile di risorse di sola lettura per un [**Texture1D**](sm5-object-texture1d.md).
+Restituisce una variabile di risorsa di sola lettura per [**un oggetto Texture1D.**](sm5-object-texture1d.md)
 
 ## <a name="syntax"></a>Sintassi
 
@@ -36,7 +36,7 @@ R Operator[](
 
 <dl> <dt>
 
-*pos* \[ in\]
+*pos* \[ Pollici\]
 </dt> <dd>
 
 Tipo: **uint**
@@ -49,17 +49,17 @@ Posizione dell'indice. Contiene la coordinata x.
 
 Tipo: **R**
 
-Variabile di sola lettura di una risorsa.
+Variabile di risorsa di sola lettura.
 
 ## <a name="remarks"></a>Commenti
 
-Questo metodo accede sempre al primo livello MIP. Per specificare altri livelli MIP, usare invece l' [**\[ \] \[ \] operatore MIP.**](sm5-object-texture1d-mipsoperatorindex.md)
+Questo metodo accede sempre al primo livello mip. Per specificare altri livelli mip, usare [**invece \[ \] \[ \] mip.operator.**](sm5-object-texture1d-mipsoperatorindex.md)
 
 Questa funzione è supportata per i tipi di shader seguenti:
 
 
 
-| Vertice | Hull | Dominio | Geometria | Pixel | Calcolo |
+| Vertice | Scafo | Dominio | Geometria | Pixel | Calcolo |
 |--------|------|--------|----------|-------|---------|
 | x      | x    | x      | x        | x     | x       |
 
@@ -74,7 +74,7 @@ Questa funzione è supportata per i tipi di shader seguenti:
 [Texture1D](sm5-object-texture1d.md)
 </dt> <dt>
 
-[Modello Shader 5](d3d11-graphics-reference-sm5.md)
+[Modello shader 5](d3d11-graphics-reference-sm5.md)
 </dt> </dl>
 
  

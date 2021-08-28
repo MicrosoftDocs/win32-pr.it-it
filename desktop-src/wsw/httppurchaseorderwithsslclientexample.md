@@ -1,29 +1,29 @@
 ---
 title: HttpPurchaseOrderWithSslClientExample
-description: In questo esempio viene illustrato come utilizzare il proxy del servizio per comunicare con un servizio PurchaseOrder, con la sicurezza del trasporto SSL.
+description: Questo esempio illustra come usare il proxy del servizio per la comunicazione con un servizio PurchaseOrder, con la sicurezza del trasporto SSL.
 ms.assetid: afa73250-5f1c-4151-a2e0-4a5ccc91b63f
 keywords:
-- HttpPurchaseOrderWithSslClientExample native-servizi Web
+- HttpPurchaseOrderWithSslClientExample Native-Web-Services
 - WWSAPI
-- WWS
+- Wws
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: c1ef11cc6309213dd9f5548c51496f9dfa560a66
-ms.sourcegitcommit: 2d531328b6ed82d4ad971a45a5131b430c5866f7
+ms.openlocfilehash: cb5ec730c524873688f1a1a4fddb9c38f84767230a3d35bb3a2ad3ef8edfb3f9
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "106298488"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118963150"
 ---
 # <a name="httppurchaseorderwithsslclientexample"></a>HttpPurchaseOrderWithSslClientExample
 
-In questo esempio viene illustrato come utilizzare il proxy del servizio per comunicare con un servizio PurchaseOrder, con la sicurezza del trasporto SSL.
+Questo esempio illustra come usare il proxy del servizio per la comunicazione con un servizio PurchaseOrder, con la sicurezza del trasporto SSL.
 
--   [HttpPurchaseOrderClientWithSsl. cpp](#httppurchaseorderclientwithsslcpp)
--   [PurchaseOrder. WSDL](#purchaseorderwsdl)
+-   [HttpPurchaseOrderClientWithSsl.cpp](#httppurchaseorderclientwithsslcpp)
+-   [PurchaseOrder.wsdl](#purchaseorderwsdl)
 -   [Makefile](#makefile)
 
-## <a name="httppurchaseorderclientwithsslcpp"></a>HttpPurchaseOrderClientWithSsl. cpp
+## <a name="httppurchaseorderclientwithsslcpp"></a>HttpPurchaseOrderClientWithSsl.cpp
 
 
 ```C++
@@ -317,7 +317,7 @@ Exit:
 
 
 
-## <a name="purchaseorderwsdl"></a>PurchaseOrder. WSDL
+## <a name="purchaseorderwsdl"></a>PurchaseOrder.wsdl
 
 ``` syntax
 <wsdl:definitions 
@@ -456,9 +456,9 @@ clean:
     $(CLEANUP)
 ```
 
- 
+ 
 
- 
+ 
 
 
 

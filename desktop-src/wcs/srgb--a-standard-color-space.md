@@ -3,7 +3,7 @@ title: sRGB A Spazio colori standard
 description: In seguito a considerazioni sulla larghezza di banda Internet, Hewlett-Packard e Microsoft hanno proposto l'adozione di uno spazio colori predefinito standard noto come sRGB (IEC 61966-2-1), in modo da consentire un mapping dei colori accurato con un sovraccarico dei dati molto ridotto.
 ms.assetid: b9017702-7dca-4d79-bed0-936f97cb6109
 keywords:
-- Windows Color System (WCS),sRGB color space
+- Windows Sistema colori (WCS), spazio colore sRGB
 - WCS (Windows Color System),sRGB color space
 - gestione colori immagine,spazio colore sRGB
 - gestione dei colori, spazio colore sRGB
@@ -13,20 +13,20 @@ keywords:
 ms.localizationpriority: high
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: aa5d1b2d87cdca5424f8393ae47e592718f33985
-ms.sourcegitcommit: 099ecdda1e83618b844387405da0db0ebda93a65
+ms.openlocfilehash: 0779ec79868a6ec6d78e447b7ee3473847b8fdc1ffa165897abd2dcbcb7a0793
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/04/2021
-ms.locfileid: "111443642"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118965920"
 ---
 # <a name="srgb-a-standard-color-space"></a>sRGB: spazio colore standard
 
 In seguito a considerazioni sulla larghezza di banda Internet, Hewlett-Packard e [](c.md) Microsoft hanno proposto l'adozione di uno spazio colori predefinito standard noto come *sRGB* (IEC 61966-2-1), in modo da consentire un [mapping](c.md) dei colori accurato con un sovraccarico dei dati molto ridotto.
 
-Una versione del file della Guida di un white paper che illustra i dettagli tecnici di sRGB, sRGB.hlp, è disponibile nella cartella Guida di \\ WCS 1.0 Programmer's Reference (Guida di riferimento per programmatori WCS 1.0).
+Una versione del file della Guida di un white paper che illustra i dettagli tecnici di sRGB, sRGB.hlp, è disponibile nella cartella Guida di \\ WCS 1.0 Programmer's Reference (Guida di riferimento per programmatori di WCS 1.0).
 
-Formati di file diversi possono usare o aggiungere un flag per specificare che l'immagine si trova nello spazio colore sRGB. Nel formato DIB (Device-Independent Bitmap) di Windows, l'impostazione del membro **bV5CSType** della struttura [**BITMAPV5HEADER**](using-structures-in-wcs-1-0.md) su **LCS \_ sRGB** specifica che i colori DIB sono nello spazio colori sRGB.
+Formati di file diversi possono usare o aggiungere un flag per specificare che l'immagine si trova nello spazio colore sRGB. Nel formato di bitmap indipendente dal dispositivo (DIB) di Windows, l'impostazione del membro **bV5CSType** della struttura [**BITMAPV5HEADER**](using-structures-in-wcs-1-0.md) su **LCS \_ sRGB** specifica che i colori DIB sono nello spazio colore sRGB.
 
 WCS 1.0 offre supporto nativo per sRGB. Esistono due modi per usare WCS 1.0 per il rendering di un'immagine definita nello spazio colore sRGB:
 
@@ -62,11 +62,11 @@ La tabella seguente illustra le trasformazioni di colore risultanti quando non �
 
 ## <a name="srgb-and-embedded-profiles"></a>sRGB e profili incorporati
 
-A partire da ICM versione 2.0, le applicazioni che utilizzano WCS possono incorporare i profili nelle immagini. I profili incorporati consentono alle applicazioni degli utenti di mantenere un aspetto di colore coerente anche se le immagini vengono trasmesse su Internet.
+A partire ICM versione 2.0, le applicazioni che utilizzano WCS possono incorporare i profili nelle immagini. I profili incorporati consentono alle applicazioni degli utenti di mantenere un aspetto di colore coerente anche se le immagini vengono trasmesse su Internet.
 
 Le immagini che usano lo spazio colore sRGB non necessitano di un profilo colori incorporato. Poiché non hanno un profilo incorporato, le immagini basate su sRGB sono più piccole e più facilmente trasferibili tra i canali di dati con larghezza di banda limitata.
 
-Le applicazioni devono impostare il flag **LCS \_ sRGB** nell'intestazione bitmap dell'immagine per indicare che l'immagine usa lo spazio colore sRGB. Per informazioni dettagliate, vedere [Strutture di intestazione bitmap di Windows](using-structures-in-wcs-1-0.md) e [**LOGCOLORSPACE.**](/windows/desktop/api/Wingdi/ns-wingdi-taglogcolorspacea)
+Le applicazioni devono impostare il flag **LCS \_ sRGB** nell'intestazione bitmap dell'immagine per indicare che l'immagine usa lo spazio colore sRGB. Per informazioni dettagliate, [vedere Windows di intestazione bitmap](using-structures-in-wcs-1-0.md) e [**LOGCOLORSPACE.**](/windows/desktop/api/Wingdi/ns-wingdi-taglogcolorspacea)
 
  
 

@@ -1,17 +1,17 @@
 ---
 description: Specifica il profilo audio e il livello di un flusso AAC (Advanced Audio Coding).
 ms.assetid: 87fa1127-46ca-4b83-a3b5-99253af22ba0
-title: Attributo MF_MT_AAC_AUDIO_PROFILE_LEVEL_INDICATION (Mfapi. h)
+title: MF_MT_AAC_AUDIO_PROFILE_LEVEL_INDICATION attributo (Mfapi.h)
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 116bfc2b41cff3cbd92fc9a60be150ea598e1cc0
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: 89934c55ff07124c28952c621513ddd4fd8db504c6e9df7cc6094f8ba7b875ed
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "106332384"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119104567"
 ---
-# <a name="mf_mt_aac_audio_profile_level_indication-attribute"></a>\_ \_ \_ \_ \_ Attributo indicazione livello profilo audio \_ MF mt AAC
+# <a name="mf_mt_aac_audio_profile_level_indication-attribute"></a>Attributo MF \_ MT \_ AAC \_ AUDIO PROFILE \_ \_ LEVEL \_ INDICATION
 
 Specifica il profilo audio e il livello di un flusso AAC (Advanced Audio Coding).
 
@@ -21,9 +21,9 @@ Specifica il profilo audio e il livello di un flusso AAC (Advanced Audio Coding)
 
 ## <a name="getset"></a>Ottenere/impostare
 
-Per ottenere questo attributo, chiamare [**IMFAttributes:: GetUInt32**](/windows/desktop/api/mfobjects/nf-mfobjects-imfattributes-getuint32).
+Per ottenere questo attributo, chiamare [**IMFAttributes::GetUINT32**](/windows/desktop/api/mfobjects/nf-mfobjects-imfattributes-getuint32).
 
-Per impostare questo attributo, chiamare [**IMFAttributes::**](/windows/desktop/api/mfobjects/nf-mfobjects-imfattributes-setuint32)SetAttribute.
+Per impostare questo attributo, chiamare [**IMFAttributes::SetUINT32**](/windows/desktop/api/mfobjects/nf-mfobjects-imfattributes-setuint32).
 
 ## <a name="applies-to"></a>Si applica a
 
@@ -31,9 +31,9 @@ Per impostare questo attributo, chiamare [**IMFAttributes::**](/windows/desktop/
 
 ## <a name="remarks"></a>Commenti
 
-Questo attributo contiene il valore del campo **audioProfileLevelIndication** , come definito da ISO/IEC 14496-3.
+Questo attributo contiene il valore del campo **audioProfileLevelIndication,** come definito da ISO/IEC 14496-3.
 
-La costante GUID per questo attributo viene esportata da mfuuid. lib.
+La costante GUID per questo attributo viene esportata da mfuuid.lib.
 
 ## <a name="requirements"></a>Requisiti
 
@@ -41,7 +41,7 @@ La costante GUID per questo attributo viene esportata da mfuuid. lib.
 
 | Requisito | Valore |
 |-------------------|------------------------------------------------------------------------------------|
-| Intestazione<br/> | <dl> <dt>Mfapi. h</dt> </dl> |
+| Intestazione<br/> | <dl> <dt>Mfapi.h</dt> </dl> |
 
 
 
@@ -49,7 +49,7 @@ La costante GUID per questo attributo viene esportata da mfuuid. lib.
 
 <dl> <dt>
 
-[Elenco alfabetico degli attributi di Media Foundation](alphabetical-list-of-media-foundation-attributes.md)
+[Elenco alfabetico di Media Foundation attributi](alphabetical-list-of-media-foundation-attributes.md)
 </dt> <dt>
 
 [Attributi del tipo di supporto](media-type-attributes.md)

@@ -1,12 +1,12 @@
 ---
-title: Metodo GetVirtualDesktopAssignedToUser della classe Win32_RDMSVirtualDesktop
+title: Metodo GetVirtualDesktopAssignedToUser della Win32_RDMSVirtualDesktop classe
 description: Recupera il desktop virtuale assegnato all'utente specificato.
 ms.assetid: cbc22c45-4492-4651-b164-a6fd717c5ab4
 ms.tgt_platform: multiple
 keywords:
-- Servizi Desktop remoto del metodo GetVirtualDesktopAssignedToUser
-- Metodo GetVirtualDesktopAssignedToUser Servizi Desktop remoto, classe Win32_RDMSVirtualDesktop
-- Classe Win32_RDMSVirtualDesktop Servizi Desktop remoto, metodo GetVirtualDesktopAssignedToUser
+- Metodo GetVirtualDesktopAssignedToUser Servizi Desktop remoto
+- Metodo GetVirtualDesktopAssignedToUser Servizi Desktop remoto , Win32_RDMSVirtualDesktop classe
+- Win32_RDMSVirtualDesktop classe Servizi Desktop remoto metodo , GetVirtualDesktopAssignedToUser
 topic_type:
 - apiref
 api_name:
@@ -17,14 +17,14 @@ api_type:
 - COM
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: fcbbbed20b6b571e8867689ac901344af8e23b93
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: fce30afea4a95ed462bfb1b456788fa54f045097c16c3d65070cdb343e928237
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "106301112"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119059549"
 ---
-# <a name="getvirtualdesktopassignedtouser-method-of-the-win32_rdmsvirtualdesktop-class"></a>Metodo GetVirtualDesktopAssignedToUser della \_ classe RDMSVirtualDesktop Win32
+# <a name="getvirtualdesktopassignedtouser-method-of-the-win32_rdmsvirtualdesktop-class"></a>Metodo GetVirtualDesktopAssignedToUser della classe \_ WIN32 RDMSVirtualDesktop
 
 Recupera il desktop virtuale assegnato all'utente specificato.
 
@@ -46,28 +46,28 @@ uint32 GetVirtualDesktopAssignedToUser(
 
 <dl> <dt>
 
-*CollectionAlias* \[ in\]
+*CollectionAlias* \[ Pollici\]
 </dt> <dd>
 
-Alias dell'insieme di desktop virtuali che contiene il desktop virtuale.
+Alias della raccolta di desktop virtuali che contiene il desktop virtuale.
 
 </dd> <dt>
 
-*Nome utente* \[ in\]
+*UserName* \[ Pollici\]
 </dt> <dd>
 
 Nome utente dell'utente.
 
 </dd> <dt>
 
-*UserDomain* \[ in\]
+*UserDomain* \[ Pollici\]
 </dt> <dd>
 
 Nome di dominio dell'utente.
 
 </dd> <dt>
 
-*VMName* \[ out\]
+*VMName* \[ Cambio\]
 </dt> <dd>
 
 Riceve il nome della macchina virtuale del desktop virtuale.
@@ -86,8 +86,8 @@ Restituisce 0 in caso di esito positivo, in caso contrario restituisce un codice
 |-------------------------------------|---------------------------------------------------------------------------------------------|
 | Client minimo supportato<br/> | Nessuno supportato<br/>                                                                   |
 | Server minimo supportato<br/> | Windows Server 2012<br/>                                                              |
-| Spazio dei nomi<br/>                | Radice \\ CIMv2 \\ RDBMS<br/>                                                                |
-| MOF<br/>                      | <dl> <dt>RDManagement. mof</dt> </dl> |
+| Spazio dei nomi<br/>                | Rdms \\ CIMv2 \\ radice<br/>                                                                |
+| MOF<br/>                      | <dl> <dt>RDManagement.mof</dt> </dl> |
 | DLL<br/>                      | <dl> <dt>RDMS.dll</dt> </dl>         |
 
 
@@ -96,7 +96,7 @@ Restituisce 0 in caso di esito positivo, in caso contrario restituisce un codice
 
 <dl> <dt>
 
-[**\_RDMSVirtualDesktop Win32**](win32-rdmsvirtualdesktop.md)
+[**Win32 \_ RDMSVirtualDesktop**](win32-rdmsvirtualdesktop.md)
 </dt> </dl>
 
  

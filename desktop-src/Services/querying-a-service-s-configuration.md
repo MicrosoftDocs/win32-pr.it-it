@@ -1,21 +1,21 @@
 ---
-description: Un programma di configurazione del servizio usa la funzione OpenService per ottenere un handle \_ con \_ accesso alla configurazione della query di servizio a un oggetto del servizio installato.
+description: Un programma di configurazione del servizio usa la funzione OpenService per ottenere un handle con accesso SERVICE \_ QUERY CONFIG a un oggetto servizio \_ installato.
 ms.assetid: e6633dc9-c9b6-457d-8adc-e751ec9cf71d
 title: Esecuzione di query su una configurazione dei servizi
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 0efddea6ca590aa07b0c523588295d5f87ffefa8
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: b8eb8abd0792107c4c10757db22d2d96253837623138c9c5d6d000c25d4d39eb
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "103885041"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118889317"
 ---
 # <a name="querying-a-services-configuration"></a>Esecuzione di query sulla configurazione di un servizio
 
-Un [programma di configurazione del servizio](service-configuration-programs.md) usa la funzione [**OpenService**](/windows/desktop/api/Winsvc/nf-winsvc-openservicea) per ottenere un handle \_ con \_ accesso alla configurazione della query di servizio a un oggetto del servizio installato. Il programma può quindi utilizzare l'handle dell'oggetto servizio nelle funzioni [**QueryServiceConfig**](/windows/desktop/api/Winsvc/nf-winsvc-queryserviceconfiga) e [**QueryServiceConfig2**](/windows/desktop/api/Winsvc/nf-winsvc-queryserviceconfig2a) per recuperare la configurazione corrente del servizio.
+Un [programma di configurazione del](service-configuration-programs.md) servizio usa la funzione [**OpenService**](/windows/desktop/api/Winsvc/nf-winsvc-openservicea) per ottenere un handle con accesso SERVICE \_ QUERY CONFIG a un oggetto servizio \_ installato. Il programma può quindi usare l'handle dell'oggetto servizio nelle funzioni [**QueryServiceConfig**](/windows/desktop/api/Winsvc/nf-winsvc-queryserviceconfiga) e [**QueryServiceConfig2**](/windows/desktop/api/Winsvc/nf-winsvc-queryserviceconfig2a) per recuperare la configurazione corrente del servizio.
 
-Nell'esempio seguente, la funzione DoQuerySvc USA [**QueryServiceConfig**](/windows/desktop/api/Winsvc/nf-winsvc-queryserviceconfiga) e [**QueryServiceConfig2**](/windows/desktop/api/Winsvc/nf-winsvc-queryserviceconfig2a) per recuperare le informazioni di configurazione, quindi scrive le informazioni selezionate nella console. La variabile szSvcName è una variabile globale che contiene il nome del servizio. Per l'esempio completo che imposta questa variabile, vedere [SvcConfig. cpp](svcconfig-cpp.md).
+Nell'esempio seguente la funzione DoQuerySvc usa [**QueryServiceConfig**](/windows/desktop/api/Winsvc/nf-winsvc-queryserviceconfiga) e [**QueryServiceConfig2**](/windows/desktop/api/Winsvc/nf-winsvc-queryserviceconfig2a) per recuperare le informazioni di configurazione, quindi scrive le informazioni selezionate nella console. La variabile szSvcName è una variabile globale che contiene il nome del servizio. Per l'esempio completo che imposta questa variabile, vedere [SvcConfig.cpp](svcconfig-cpp.md).
 
 
 ```C++
@@ -159,7 +159,7 @@ cleanup:
 
 <dl> <dt>
 
-[Configurazione del servizio](service-configuration.md)
+[Service Configuration](service-configuration.md)
 </dt> <dt>
 
 [Esempio di servizio completo](the-complete-service-sample.md)

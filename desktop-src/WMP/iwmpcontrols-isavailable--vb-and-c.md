@@ -1,9 +1,9 @@
 ---
-title: IWMPControls. disavailable (VB e C)
-description: La proprietà disavailable (il \_ metodo Get disavailable in C \) ottiene un valore che indica se è disponibile un tipo specificato di informazioni o se è possibile eseguire un'azione specificata.
+title: IWMPControls.isAvailable (VB e C )
+description: La proprietà isAvailable (il metodo get isAvailable in C\ ) ottiene un valore che indica se è disponibile un tipo specificato di informazioni o se è possibile eseguire \_ un'azione specificata.
 ms.assetid: 00812d5c-513e-49d5-93ba-750b81a852dd
 keywords:
-- IWMPControls. disavailable (VB e C) Windows Media Player
+- IWMPControls.isAvailable (VB e C ) Windows Media Player
 topic_type:
 - apiref
 api_name:
@@ -14,16 +14,16 @@ api_type:
 - Assembly
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: fe0d5d9ffcd6cad6eefb7cdff25fd2cf34b76ccc
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: d73562fb4f96731216c30ada33db8e13d1468b31fb6fcefe7eedef6dd7892348
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "106328213"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119054849"
 ---
-# <a name="iwmpcontrolsisavailable-vb-and-c"></a>IWMPControls. disavailable (VB e C#)
+# <a name="iwmpcontrolsisavailable-vb-and-c"></a>IWMPControls.isAvailable (VB e C#)
 
-La proprietà **disavailable** (il metodo **get \_ disavailable** in C#) ottiene un valore che indica se è disponibile un tipo specificato di informazioni o se è possibile eseguire un'azione specificata.
+La **proprietà isAvailable** (metodo **get \_ isAvailable** in C#) ottiene un valore che indica se è disponibile un tipo specificato di informazioni o se è possibile eseguire un'azione specificata.
 
 
 ```
@@ -49,23 +49,23 @@ bool get_isAvailable (
 
 *bstrItem*
 
-System. String che corrisponde a uno dei valori seguenti.
+Oggetto System.String che è uno dei valori seguenti.
 
 
 
 | Valore           | Descrizione                                                                                                                                                       |
 |-----------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| currentItem     | Individua se l'utente può impostare la proprietà **IWMPControls. CurrentItem** .                                                                                     |
+| Currentitem     | Individua se l'utente può impostare la **proprietà IWMPControls.currentItem.**                                                                                     |
 | currentMarker   | Individua se l'utente può cercare un marcatore specifico.                                                                                                         |
-| currentPosition | Individua se l'utente può eseguire la ricerca in una posizione specifica nel file. Alcuni file non supportano la ricerca.                                                        |
-| fastForward     | Rileva se il file supporta l'avanzamento rapido e se tale funzionalità può essere richiamata. Molti tipi di file (e flussi live) non supportano fastForward. |
-| fastReverse     | Rileva se il file supporta fastReverse e se tale funzionalità può essere richiamata. Molti tipi di file (e flussi live) non supportano fastReverse.     |
+| currentPosition | Individua se l'utente può cercare una posizione specifica nel file. Alcuni file non supportano la ricerca.                                                        |
+| Fastforward     | Individua se il file supporta l'inoltro rapido e se tale funzionalità può essere richiamata. Molti tipi di file (e flussi live) non supportano fastForward. |
+| fastReverse     | Individua se il file supporta fastReverse e se tale funzionalità può essere richiamata. Molti tipi di file (e flussi live) non supportano fastReverse.     |
 | Avanti            | Individua se l'utente può cercare la voce successiva in una playlist.                                                                                              |
-| Sospendi           | Individua se è disponibile il metodo **IWMPControls. pause** .                                                                                                 |
-| Play            | Rileva se il metodo **IWMPControls. Play** è disponibile.                                                                                                  |
+| Sospendi           | Individua se il **metodo IWMPControls.pause** è disponibile.                                                                                                 |
+| Giocare            | Individua se il **metodo IWMPControls.play** è disponibile.                                                                                                  |
 | previous        | Individua se l'utente può cercare la voce precedente in una playlist.                                                                                          |
-| step            | Rileva se il metodo **IWMPControls2. Step** è disponibile durante la riproduzione.                                                                                 |
-| stop            | Rileva se il metodo **IWMPControls. Stop** è disponibile.                                                                                                  |
+| step            | Individua se il **metodo IWMPControls2.step** è disponibile durante la riproduzione.                                                                                 |
+| stop            | Individua se il **metodo IWMPControls.stop** è disponibile.                                                                                                  |
 
 
 
@@ -75,15 +75,15 @@ System. String che corrisponde a uno dei valori seguenti.
 
 **System.Boolean**
 
-**System. Boolean** che indica se un tipo specificato di informazioni è disponibile o se è possibile eseguire un'azione specificata.
+Valore **System.Boolean che** indica se è disponibile un tipo specificato di informazioni o se è possibile eseguire un'azione specificata.
 
 ## <a name="remarks"></a>Commenti
 
-**IWMPControls. disavailable** è una proprietà in Visual Basic che accetta un parametro. In C# viene indicato come il metodo **IWMPControls. Get \_ unavailable** .
+**IWMPControls.isAvailable** è una proprietà in Visual Basic che accetta un parametro. In C# viene definito metodo **IWMPControls.get \_ isAvailable.**
 
 ## <a name="examples"></a>Esempio
 
-Nell'esempio seguente viene utilizzata **la proprietà IsValid** (il metodo **get \_ disavailable** in C#) per verificare che l'elemento multimediale corrente supporti la proprietà **currentPosition** . L'oggetto **AxWMPLib. AxWindowsMediaPlayer** è rappresentato dalla variabile denominata Player.
+Nell'esempio seguente viene utilizzata la proprietà **isAvailable** (metodo **get \_ isAvailable** in C#) per verificare che l'elemento multimediale corrente supporti la **proprietà currentPosition.** **L'oggetto AxWMPLib.AxWindowsMediaPlayer** è rappresentato dalla variabile denominata player.
 
 
 ```CSharp
@@ -115,7 +115,7 @@ End If
 
 | Requisito | Valore |
 |----------------------|------------------------------------------------------------------------------------------------------------------------|
-| Versione<br/>   | Windows Media Player 9 serie o versione successiva<br/>                                                                      |
+| Versione<br/>   | Windows Media Player serie 9 o successive<br/>                                                                      |
 | Spazio dei nomi<br/> | **WMPLib**<br/>                                                                                                  |
 | Assembly<br/>  | <dl> <dt>Interop.WMPLib.dll (Interop.WMPLib.dll.dll)</dt> </dl> |
 
@@ -128,19 +128,19 @@ End If
 [**Interfaccia IWMPControls (VB e C#)**](iwmpcontrols--vb-and-c.md)
 </dt> <dt>
 
-[**IWMPControls. currentItem (VB e C#)**](wmplibiwmpcontrols-iwmpcontrols-currentitem--vb-and-c.md)
+[**IWMPControls.currentItem (VB e C#)**](wmplibiwmpcontrols-iwmpcontrols-currentitem--vb-and-c.md)
 </dt> <dt>
 
-[**IWMPControls. pause (VB e C#)**](wmplibiwmpcontrols-iwmpcontrols-pause--vb-and-c.md)
+[**IWMPControls.pause (VB e C#)**](wmplibiwmpcontrols-iwmpcontrols-pause--vb-and-c.md)
 </dt> <dt>
 
-[**IWMPControls. Play (VB e C#)**](wmplibiwmpcontrols-iwmpcontrols-play--vb-and-c.md)
+[**IWMPControls.play (VB e C#)**](wmplibiwmpcontrols-iwmpcontrols-play--vb-and-c.md)
 </dt> <dt>
 
-[**IWMPControls. Stop (VB e C#)**](wmplibiwmpcontrols-iwmpcontrols-stop--vb-and-c.md)
+[**IWMPControls.stop (VB e C#)**](wmplibiwmpcontrols-iwmpcontrols-stop--vb-and-c.md)
 </dt> <dt>
 
-[**IWMPControls2. Step (VB e C#)**](wmplibiwmpcontrols2-iwmpcontrols2-step--vb-and-c.md)
+[**IWMPControls2.step (VB e C#)**](wmplibiwmpcontrols2-iwmpcontrols2-step--vb-and-c.md)
 </dt> </dl>
 
  

@@ -1,10 +1,10 @@
 ---
-title: Attributo pwd-History-length
-description: Numero di password obsolete da salvare.
+title: Attributo Pwd-History-Length
+description: Numero di password precedenti da salvare.
 ms.assetid: 6440620d-9e77-411a-ab96-f8e979262bec
 ms.tgt_platform: multiple
 keywords:
-- Attributo pwd-History-length-schema AD
+- Schema AD dell'attributo Pwd-History-Length
 - Schema AD dell'attributo pwdHistoryLength
 topic_type:
 - apiref
@@ -14,28 +14,28 @@ api_type:
 - Schema
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 899c486914db31dcd8a07b18c6cb6b5842e0ab00
-ms.sourcegitcommit: b77ace27b0432e7cd3863191b11926be032fbe2f
+ms.openlocfilehash: 7c9c2c5011b2c497e8b6ed69015dd7dd16fbd2bf979d199674dd6ccbb2a67b81
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/14/2020
-ms.locfileid: "104400956"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118960100"
 ---
-# <a name="pwd-history-length-attribute"></a>Attributo pwd-History-length
+# <a name="pwd-history-length-attribute"></a>Attributo Pwd-History-Length
 
-Numero di password obsolete da salvare.
+Numero di password precedenti da salvare.
 
 
 
 | Voce | Valore |
 |-------------------|------------------------------------------|
-| CN                | Pwd-cronologia-lunghezza                       |
-| LDAP-Display-Name | pwdHistoryLength                         |
+| CN                | Pwd-History-Length                       |
+| Ldap-Display-Name | pwdHistoryLength                         |
 | Dimensione              | 4 byte                                  |
-| Privilegio aggiornamento  | Amministratore di dominio                     |
-| Frequenza di aggiornamento  | Quando è necessario modificare i criteri dell'account. |
+| Privilegio di aggiornamento  | Amministratore di dominio                     |
+| Frequenza di aggiornamento  | Quando i criteri dell'account devono cambiare. |
 | Attribute-Id      | 1.2.840.113556.1.4.95                    |
-| System-ID-GUID    | bf967a09-0de6-11d0-a285-00aa003049e2     |
+| System-Id-Guid    | bf967a09-0de6-11d0-a285-00aa003049e2     |
 | Sintassi            | [**Enumerazione**](s-enumeration.md)     |
 
 
@@ -58,15 +58,15 @@ Numero di password obsolete da salvare.
 | ID collegamento                | \-                                                                                                                                                    |
 | MAPI-Id                | \-                                                                                                                                                    |
 | System-Only            | Falso                                                                                                                                                 |
-| È a valore singolo       | Vero                                                                                                                                                  |
+| Is-Single-Valued       | Vero                                                                                                                                                  |
 | Indicizzato             | Falso                                                                                                                                                 |
 | Nel catalogo globale      | Falso                                                                                                                                                 |
-| NT-Security-descrittore | O:BAG: NON VALIDO: S:                                                                                                                                          |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                                                                                                                          |
 | Range-Lower            | 0                                                                                                                                                     |
 | Range-Upper            | 65535                                                                                                                                                 |
 | Search-Flags           | 0x00000000                                                                                                                                            |
 | System-Flags           | 0x00000010                                                                                                                                            |
-| Classi utilizzate in        | [**Criteri di dominio**](c-domainpolicy.md)<br/> [**Sam-dominio**](c-samdomain.md)<br/> [**Sam-dominio-base**](c-samdomainbase.md)<br/> |
+| Classi usate in        | [**Criteri di dominio**](c-domainpolicy.md)<br/> [**Sam-Domain**](c-samdomain.md)<br/> [**Sam-Domain-Base**](c-samdomainbase.md)<br/> |
 
 
 
@@ -79,15 +79,15 @@ Numero di password obsolete da salvare.
 | ID collegamento                | \-                                                                                                                                                    |
 | MAPI-Id                | \-                                                                                                                                                    |
 | System-Only            | Falso                                                                                                                                                 |
-| È a valore singolo       | Vero                                                                                                                                                  |
+| Is-Single-Valued       | Vero                                                                                                                                                  |
 | Indicizzato             | Falso                                                                                                                                                 |
 | Nel catalogo globale      | Falso                                                                                                                                                 |
-| NT-Security-descrittore | O:BAG: NON VALIDO: S:                                                                                                                                          |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                                                                                                                          |
 | Range-Lower            | 0                                                                                                                                                     |
 | Range-Upper            | 65535                                                                                                                                                 |
 | Search-Flags           | 0x00000000                                                                                                                                            |
 | System-Flags           | 0x00000010                                                                                                                                            |
-| Classi utilizzate in        | [**Criteri di dominio**](c-domainpolicy.md)<br/> [**Sam-dominio**](c-samdomain.md)<br/> [**Sam-dominio-base**](c-samdomainbase.md)<br/> |
+| Classi usate in        | [**Criteri di dominio**](c-domainpolicy.md)<br/> [**Sam-Domain**](c-samdomain.md)<br/> [**Sam-Domain-Base**](c-samdomainbase.md)<br/> |
 
 
 
@@ -100,15 +100,15 @@ Numero di password obsolete da salvare.
 | ID collegamento                | \-                                                                                                                                                    |
 | MAPI-Id                | \-                                                                                                                                                    |
 | System-Only            | Falso                                                                                                                                                 |
-| È a valore singolo       | Vero                                                                                                                                                  |
+| Is-Single-Valued       | Vero                                                                                                                                                  |
 | Indicizzato             | Falso                                                                                                                                                 |
 | Nel catalogo globale      | Falso                                                                                                                                                 |
-| NT-Security-descrittore | O:BAG: NON VALIDO: S:                                                                                                                                          |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                                                                                                                          |
 | Range-Lower            | 0                                                                                                                                                     |
 | Range-Upper            | 65535                                                                                                                                                 |
 | Search-Flags           | 0x00000000                                                                                                                                            |
 | System-Flags           | 0x00000010                                                                                                                                            |
-| Classi utilizzate in        | [**Criteri di dominio**](c-domainpolicy.md)<br/> [**Sam-dominio**](c-samdomain.md)<br/> [**Sam-dominio-base**](c-samdomainbase.md)<br/> |
+| Classi usate in        | [**Criteri di dominio**](c-domainpolicy.md)<br/> [**Sam-Domain**](c-samdomain.md)<br/> [**Sam-Domain-Base**](c-samdomainbase.md)<br/> |
 
 
 
@@ -121,15 +121,15 @@ Numero di password obsolete da salvare.
 | ID collegamento                | \-                                                                                                                                                    |
 | MAPI-Id                | \-                                                                                                                                                    |
 | System-Only            | Falso                                                                                                                                                 |
-| È a valore singolo       | Vero                                                                                                                                                  |
+| A valore singolo       | Vero                                                                                                                                                  |
 | Indicizzato             | Falso                                                                                                                                                 |
 | Nel catalogo globale      | Falso                                                                                                                                                 |
-| NT-Security-descrittore | O:BAG: NON VALIDO: S:                                                                                                                                          |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                                                                                                                          |
 | Range-Lower            | 0                                                                                                                                                     |
 | Range-Upper            | 65535                                                                                                                                                 |
 | Search-Flags           | 0x00000000                                                                                                                                            |
 | System-Flags           | 0x00000010                                                                                                                                            |
-| Classi utilizzate in        | [**Criteri di dominio**](c-domainpolicy.md)<br/> [**Sam-dominio**](c-samdomain.md)<br/> [**Sam-dominio-base**](c-samdomainbase.md)<br/> |
+| Classi usate in        | [**Criteri di dominio**](c-domainpolicy.md)<br/> [**Sam-Domain**](c-samdomain.md)<br/> [**Sam-Domain-Base**](c-samdomainbase.md)<br/> |
 
 
 
@@ -142,15 +142,15 @@ Numero di password obsolete da salvare.
 | ID collegamento                | \-                                                                                                                                                    |
 | MAPI-Id                | \-                                                                                                                                                    |
 | System-Only            | Falso                                                                                                                                                 |
-| È a valore singolo       | Vero                                                                                                                                                  |
+| A valore singolo       | Vero                                                                                                                                                  |
 | Indicizzato             | Falso                                                                                                                                                 |
 | Nel catalogo globale      | Falso                                                                                                                                                 |
-| NT-Security-descrittore | O:BAG: NON VALIDO: S:                                                                                                                                          |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                                                                                                                          |
 | Range-Lower            | 0                                                                                                                                                     |
 | Range-Upper            | 65535                                                                                                                                                 |
 | Search-Flags           | 0x00000000                                                                                                                                            |
 | System-Flags           | 0x00000010                                                                                                                                            |
-| Classi utilizzate in        | [**Criteri di dominio**](c-domainpolicy.md)<br/> [**Sam-dominio**](c-samdomain.md)<br/> [**Sam-dominio-base**](c-samdomainbase.md)<br/> |
+| Classi usate in        | [**Criteri di dominio**](c-domainpolicy.md)<br/> [**Sam-Domain**](c-samdomain.md)<br/> [**Sam-Domain-Base**](c-samdomainbase.md)<br/> |
 
 
 
@@ -163,15 +163,15 @@ Numero di password obsolete da salvare.
 | ID collegamento                | \-                                                                                                                                                    |
 | MAPI-Id                | \-                                                                                                                                                    |
 | System-Only            | Falso                                                                                                                                                 |
-| È a valore singolo       | Vero                                                                                                                                                  |
+| A valore singolo       | Vero                                                                                                                                                  |
 | Indicizzato             | Falso                                                                                                                                                 |
 | Nel catalogo globale      | Falso                                                                                                                                                 |
-| NT-Security-descrittore | O:BAG: NON VALIDO: S:                                                                                                                                          |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                                                                                                                          |
 | Range-Lower            | 0                                                                                                                                                     |
 | Range-Upper            | 65535                                                                                                                                                 |
 | Search-Flags           | 0x00000000                                                                                                                                            |
 | System-Flags           | 0x00000010                                                                                                                                            |
-| Classi utilizzate in        | [**Criteri di dominio**](c-domainpolicy.md)<br/> [**Sam-dominio**](c-samdomain.md)<br/> [**Sam-dominio-base**](c-samdomainbase.md)<br/> |
+| Classi usate in        | [**Criteri di dominio**](c-domainpolicy.md)<br/> [**Sam-Domain**](c-samdomain.md)<br/> [**Sam-Domain-Base**](c-samdomainbase.md)<br/> |
 
 
 

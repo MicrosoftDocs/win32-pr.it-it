@@ -1,11 +1,11 @@
 ---
-title: Attributo GPC-file-sys-Path
+title: Attributo GPC-File-Sys-Path
 description: True se l'oggetto è abilitato.
 ms.assetid: 815d8191-d282-4f53-9109-c18d7a9b0a34
 ms.tgt_platform: multiple
 keywords:
-- GPC-file-sys-schema AD dell'attributo path
-- Schema AD dell'attributo alla gPCFileSysPath
+- Schema AD dell'attributo GPC-File-Sys-Path
+- Schema AD dell'attributo gPCFileSysPath
 topic_type:
 - apiref
 api_name:
@@ -14,14 +14,14 @@ api_type:
 - Schema
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 9b56d03d072dfbe1472dc88835d581975f992c0f
-ms.sourcegitcommit: b77ace27b0432e7cd3863191b11926be032fbe2f
+ms.openlocfilehash: 24f4835bd4840c6566c9e93dfcadc78ae79b6ff29c961ed057955d5058827118
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/14/2020
-ms.locfileid: "104519918"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118961350"
 ---
-# <a name="gpc-file-sys-path-attribute"></a>Attributo GPC-file-sys-Path
+# <a name="gpc-file-sys-path-attribute"></a>Attributo GPC-File-Sys-Path
 
 **True** se l'oggetto è abilitato.
 
@@ -29,13 +29,13 @@ ms.locfileid: "104519918"
 
 | Voce | Valore |
 |-------------------|---------------------------------------------|
-| CN                | GPC-file-sys-Path                           |
-| LDAP-Display-Name | Alla gPCFileSysPath                              |
+| CN                | GPC-File-Sys-Path                           |
+| Ldap-Display-Name | gPCFileSysPath                              |
 | Dimensione              | \-                                          |
-| Privilegio aggiornamento  | \-                                          |
+| Privilegio di aggiornamento  | \-                                          |
 | Frequenza di aggiornamento  | \-                                          |
 | Attribute-Id      | 1.2.840.113556.1.4.894                      |
-| System-ID-GUID    | f30e3bc1-9ff0-11d1-b603-0000f80367c1        |
+| System-Id-Guid    | f30e3bc1-9ff0-11d1-b603-0000f80367c1        |
 | Sintassi            | [**String(Unicode)**](s-string-unicode.md) |
 
 
@@ -58,15 +58,15 @@ ms.locfileid: "104519918"
 | ID collegamento                | \-                                                                  |
 | MAPI-Id                | \-                                                                  |
 | System-Only            | Falso                                                               |
-| È a valore singolo       | Vero                                                                |
+| Is-Single-Valued       | Vero                                                                |
 | Indicizzato             | Falso                                                               |
 | Nel catalogo globale      | Falso                                                               |
-| NT-Security-descrittore | O:BAG: NON VALIDO: S:                                                        |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                                        |
 | Range-Lower            | \-                                                                  |
 | Range-Upper            | \-                                                                  |
 | Search-Flags           | 0x00000000                                                          |
 | System-Flags           | 0x00000010                                                          |
-| Classi utilizzate in        | [**Gruppo-criteri-contenitore**](c-grouppolicycontainer.md)<br/> |
+| Classi usate in        | [**Group-Policy-Container**](c-grouppolicycontainer.md)<br/> |
 
 
 
@@ -79,15 +79,15 @@ ms.locfileid: "104519918"
 | ID collegamento                | \-                                                                  |
 | MAPI-Id                | \-                                                                  |
 | System-Only            | Falso                                                               |
-| È a valore singolo       | Vero                                                                |
+| Is-Single-Valued       | Vero                                                                |
 | Indicizzato             | Falso                                                               |
 | Nel catalogo globale      | Falso                                                               |
-| NT-Security-descrittore | O:BAG: NON VALIDO: S:                                                        |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                                        |
 | Range-Lower            | \-                                                                  |
 | Range-Upper            | \-                                                                  |
 | Search-Flags           | 0x00000000                                                          |
 | System-Flags           | 0x00000010                                                          |
-| Classi utilizzate in        | [**Gruppo-criteri-contenitore**](c-grouppolicycontainer.md)<br/> |
+| Classi usate in        | [**Group-Policy-Container**](c-grouppolicycontainer.md)<br/> |
 
 
 
@@ -100,15 +100,15 @@ ms.locfileid: "104519918"
 | ID collegamento                | \-                                                                  |
 | MAPI-Id                | \-                                                                  |
 | System-Only            | Falso                                                               |
-| È a valore singolo       | Vero                                                                |
+| Is-Single-Valued       | Vero                                                                |
 | Indicizzato             | Falso                                                               |
 | Nel catalogo globale      | Falso                                                               |
-| NT-Security-descrittore | O:BAG: NON VALIDO: S:                                                        |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                                        |
 | Range-Lower            | \-                                                                  |
 | Range-Upper            | \-                                                                  |
 | Search-Flags           | 0x00000000                                                          |
 | System-Flags           | 0x00000010                                                          |
-| Classi utilizzate in        | [**Gruppo-criteri-contenitore**](c-grouppolicycontainer.md)<br/> |
+| Classi usate in        | [**Group-Policy-Container**](c-grouppolicycontainer.md)<br/> |
 
 
 
@@ -121,15 +121,15 @@ ms.locfileid: "104519918"
 | ID collegamento                | \-                                                                  |
 | MAPI-Id                | \-                                                                  |
 | System-Only            | Falso                                                               |
-| È a valore singolo       | Vero                                                                |
+| Is-Single-Valued       | Vero                                                                |
 | Indicizzato             | Falso                                                               |
 | Nel catalogo globale      | Falso                                                               |
-| NT-Security-descrittore | O:BAG: NON VALIDO: S:                                                        |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                                        |
 | Range-Lower            | \-                                                                  |
 | Range-Upper            | \-                                                                  |
 | Search-Flags           | 0x00000000                                                          |
 | System-Flags           | 0x00000010                                                          |
-| Classi utilizzate in        | [**Gruppo-criteri-contenitore**](c-grouppolicycontainer.md)<br/> |
+| Classi usate in        | [**Contenitore criteri di gruppo**](c-grouppolicycontainer.md)<br/> |
 
 
 
@@ -142,15 +142,15 @@ ms.locfileid: "104519918"
 | ID collegamento                | \-                                                                  |
 | MAPI-Id                | \-                                                                  |
 | System-Only            | Falso                                                               |
-| È a valore singolo       | Vero                                                                |
+| Is-Single-Valued       | Vero                                                                |
 | Indicizzato             | Falso                                                               |
 | Nel catalogo globale      | Falso                                                               |
-| NT-Security-descrittore | O:BAG: NON VALIDO: S:                                                        |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                                        |
 | Range-Lower            | \-                                                                  |
 | Range-Upper            | \-                                                                  |
 | Search-Flags           | 0x00000000                                                          |
 | System-Flags           | 0x00000010                                                          |
-| Classi utilizzate in        | [**Gruppo-criteri-contenitore**](c-grouppolicycontainer.md)<br/> |
+| Classi usate in        | [**Contenitore criteri di gruppo**](c-grouppolicycontainer.md)<br/> |
 
 
 
@@ -163,15 +163,15 @@ ms.locfileid: "104519918"
 | ID collegamento                | \-                                                                  |
 | MAPI-Id                | \-                                                                  |
 | System-Only            | Falso                                                               |
-| È a valore singolo       | Vero                                                                |
+| Is-Single-Valued       | Vero                                                                |
 | Indicizzato             | Falso                                                               |
 | Nel catalogo globale      | Falso                                                               |
-| NT-Security-descrittore | O:BAG: NON VALIDO: S:                                                        |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                                        |
 | Range-Lower            | \-                                                                  |
 | Range-Upper            | \-                                                                  |
 | Search-Flags           | 0x00000000                                                          |
 | System-Flags           | 0x00000010                                                          |
-| Classi utilizzate in        | [**Gruppo-criteri-contenitore**](c-grouppolicycontainer.md)<br/> |
+| Classi usate in        | [**Contenitore criteri di gruppo**](c-grouppolicycontainer.md)<br/> |
 
 
 
