@@ -1,21 +1,21 @@
 ---
 description: Specifica le informazioni sul tipo di una proprietà.
 ms.assetid: ae1f8835-ef6c-42bb-b44f-ad374337a012
-title: typeInfo
+title: Typeinfo
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: aa783a606066163fd8b17f53ef8a0fe2da44e539
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 1a70c6eeaee63bcb99ee19217ccff5d3ff7086a2
+ms.sourcegitcommit: c276a8912787b2cda74dcf54eb96df961bb1188b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "106310108"
+ms.lasthandoff: 08/20/2021
+ms.locfileid: "122632169"
 ---
-# <a name="typeinfo"></a>typeInfo
+# <a name="typeinfo"></a>Typeinfo
 
-Specifica le informazioni sul tipo di una proprietà. Deve essere presente un solo elemento [TypeInfo]() per ogni [PropertyDescription](./propdesc-schema-propertydescription.md). Questo elemento è stato modificato per Windows 7.
+Specifica le informazioni sul tipo di una proprietà. Deve essere presente un solo [elemento typeInfo]() per [ogni propertyDescription.](./propdesc-schema-propertydescription.md) Questo elemento è stato modificato per Windows 7.
 
-Se sono presenti più elementi, viene usato l'ultimo. Se non viene specificato alcun elemento [TypeInfo]() , le impostazioni predefinite degli attributi vengono applicate alla descrizione della proprietà.
+Se sono presenti più elementi, viene usato l'ultimo. Se non [viene specificato alcun elemento typeInfo,]() le impostazioni dell'attributo predefinite vengono applicate alla descrizione della proprietà.
 
 ## <a name="syntax-for-windows-7"></a>Sintassi per Windows 7
 
@@ -120,7 +120,7 @@ Se sono presenti più elementi, viene usato l'ultimo. Se non viene specificato a
 
 | Elemento padre                                                   | Elementi figlio |
 |------------------------------------------------------------------|----------------|
-| [propertyDescription](./propdesc-schema-propertydescription.md) | nessuno           |
+| [propertyDescription](./propdesc-schema-propertydescription.md) | Nessuno           |
 
 
 
@@ -132,8 +132,8 @@ Se sono presenti più elementi, viene usato l'ultimo. Se non viene specificato a
 
 <table>
 <colgroup>
-<col style="width: 50%" />
-<col style="width: 50%" />
+<col  />
+<col  />
 </colgroup>
 <thead>
 <tr class="header">
@@ -144,7 +144,7 @@ Se sono presenti più elementi, viene usato l'ultimo. Se non viene specificato a
 <tbody>
 <tr class="odd">
 <td>type</td>
-<td>Pubblica. facoltativo. Il valore predefinito è &quot; Any &quot; . Indica il tipo della proprietà. Di seguito sono riportati i tipi validi e i tipi Variant associati vengono recuperati da <a href="/windows/win32/api/propsys/nf-propsys-ipropertydescription-getpropertytype"><strong>IPropertyDescription:: GetPropertyType</strong></a>. 
+<td>Pubblica. facoltativo. Il valore predefinito &quot; è Any &quot; . Indica il tipo della proprietà. Di seguito sono riportati i tipi validi e i relativi tipi variant associati vengono recuperati da <a href="/windows/win32/api/propsys/nf-propsys-ipropertydescription-getpropertytype"><strong>IPropertyDescription::GetPropertyType</strong></a>. 
 <table>
 <thead>
 <tr class="header">
@@ -155,15 +155,15 @@ Se sono presenti più elementi, viene usato l'ultimo. Se non viene specificato a
 <tbody>
 <tr class="odd">
 <td>Qualsiasi</td>
-<td>Valore predefinito. Il sottosistema di proprietà non impone né forza il valore della proprietà. <a href="/windows/win32/api/propsys/nf-propsys-ipropertydescription-getpropertytype"><strong>IPropertyDescription:: GetPropertyType</strong></a> Restituisce VT_NULL. I fornitori di software indipendenti (ISV) sono vivamente invitati a fornire un tipo anziché eseguire il fallback su questa impostazione predefinita.</td>
+<td>Valore predefinito. Il sottosistema della proprietà non imponi né forza il valore della proprietà. <a href="/windows/win32/api/propsys/nf-propsys-ipropertydescription-getpropertytype"><strong>IPropertyDescription::GetPropertyType</strong></a> restituisce VT_NULL. I fornitori di software indipendenti (ISV) sono fortemente invitati a fornire un tipo anziché eseguire il fall back su questa impostazione predefinita.</td>
 </tr>
 <tr class="even">
 <td>Null</td>
-<td>Non esiste alcun valore per questa proprietà. <a href="/windows/win32/api/propsys/nf-propsys-ipropertydescription-getpropertytype"><strong>IPropertyDescription:: GetPropertyType</strong></a> Restituisce VT_NULL.</td>
+<td>Non esiste alcun valore per questa proprietà. <a href="/windows/win32/api/propsys/nf-propsys-ipropertydescription-getpropertytype"><strong>IPropertyDescription::GetPropertyType</strong></a> restituisce VT_NULL.</td>
 </tr>
 <tr class="odd">
-<td>string</td>
-<td>Il valore deve essere un VT_LPWSTR, ovvero una stringa Unicode terminata da un riferimento null.</td>
+<td>Stringa</td>
+<td>Il valore deve essere un VT_LPWSTR, ovvero una stringa Unicode terminata da un riferimento Null.</td>
 </tr>
 <tr class="even">
 <td>Boolean</td>
@@ -171,7 +171,7 @@ Se sono presenti più elementi, viene usato l'ultimo. Se non viene specificato a
 </tr>
 <tr class="odd">
 <td>Byte</td>
-<td>Il valore deve essere un VT_UI1, che è un byte.</td>
+<td>Il valore deve essere un VT_UI1, ovvero un byte.</td>
 </tr>
 <tr class="even">
 <td>Buffer</td>
@@ -179,11 +179,11 @@ Se sono presenti più elementi, viene usato l'ultimo. Se non viene specificato a
 </tr>
 <tr class="odd">
 <td>Int16</td>
-<td>Il valore deve essere un VT_I2, ovvero un Integer a 16 bit.</td>
+<td>Il valore deve essere un VT_I2, ovvero un intero a 16 bit.</td>
 </tr>
 <tr class="even">
 <td>UInt16</td>
-<td>Il valore deve essere un VT_UI2, ovvero una Unsigned Integer a 16 bit.</td>
+<td>Il valore deve essere un VT_UI2, ovvero un intero senza segno a 16 bit.</td>
 </tr>
 <tr class="odd">
 <td>Int32</td>
@@ -191,23 +191,23 @@ Se sono presenti più elementi, viene usato l'ultimo. Se non viene specificato a
 </tr>
 <tr class="even">
 <td>UInt32</td>
-<td>Il valore deve essere un VT_UI4, ovvero una Unsigned Integer a 32 bit.</td>
+<td>Il valore deve essere un VT_UI4, ovvero un intero senza segno a 32 bit.</td>
 </tr>
 <tr class="odd">
 <td>Int64</td>
-<td>Il valore deve essere un VT_I8, ovvero un intero a 64 bit.</td>
+<td>Il valore deve essere un VT_I8, ovvero un numero intero a 64 bit.</td>
 </tr>
 <tr class="even">
 <td>UInt64</td>
-<td>Il valore deve essere un VT_UI8, ovvero una Unsigned Integer a 64 bit.</td>
+<td>Il valore deve essere un VT_UI8, ovvero un intero senza segno a 64 bit.</td>
 </tr>
 <tr class="odd">
 <td>Double</td>
-<td>Il valore deve essere un VT_R8, che è un valore Double.</td>
+<td>Il valore deve essere un VT_R8, ovvero un valore double.</td>
 </tr>
 <tr class="even">
 <td>Datetime</td>
-<td>Il valore deve essere un VT_FILETIME, che è un <a href="/windows/desktop/api/minwinbase/ns-minwinbase-filetime"><strong>FILETIME</strong></a>.</td>
+<td>Il valore deve essere un VT_FILETIME, ovvero <a href="/windows/desktop/api/minwinbase/ns-minwinbase-filetime"><strong>fileTIME</strong></a>.</td>
 </tr>
 <tr class="odd">
 <td>Guid</td>
@@ -219,15 +219,15 @@ Se sono presenti più elementi, viene usato l'ultimo. Se non viene specificato a
 </tr>
 <tr class="odd">
 <td>Stream</td>
-<td>Il valore deve essere un VT_STREAM, ovvero un oggetto che implementa <a href="/windows/desktop/api/objidl/nn-objidl-istream"><strong>IStream</strong></a>.</td>
+<td>Il valore deve essere un VT_STREAM, ovvero un oggetto che implementa <a href="/windows/desktop/api/objidl/nn-objidl-istream"><strong>IStream.</strong></a></td>
 </tr>
 <tr class="even">
 <td>Appunti</td>
-<td>Il valore deve essere un VT_CF, che è un formato degli Appunti.</td>
+<td>Il valore deve essere un VT_CF, ovvero un formato degli Appunti.</td>
 </tr>
 <tr class="odd">
 <td>Oggetto</td>
-<td>Il valore deve essere un VT_UNKNOWN, ovvero un oggetto che implementa <a href="/windows/desktop/api/unknwn/nn-unknwn-iunknown"><strong>IUnknown</strong></a>.</td>
+<td>Il valore deve essere un VT_UNKNOWN, ovvero un oggetto che implementa <a href="/windows/desktop/api/unknwn/nn-unknwn-iunknown"><strong>IUnknown.</strong></a></td>
 </tr>
 </tbody>
 </table>
@@ -236,7 +236,7 @@ Se sono presenti più elementi, viene usato l'ultimo. Se non viene specificato a
 </tr>
 <tr class="even">
 <td>groupingRange</td>
-<td>facoltativo. Il valore predefinito è &quot; discreto &quot; . Specifica la modalità di visualizzazione della proprietà quando una visualizzazione viene raggruppata in base a questa proprietà. Una volta impostati qui, questi valori vengono recuperati da <a href="/windows/win32/api/propsys/nf-propsys-ipropertydescription-getgroupingrange"><strong>IPropertyDescription:: GetGroupingRange</strong></a>. Di seguito sono riportati i tipi validi.
+<td>facoltativo. Il valore predefinito &quot; è Discrete &quot; . Specifica la modalità di visualizzazione della proprietà quando una visualizzazione viene raggruppata in base a questa proprietà. Una volta impostati qui, questi valori vengono recuperati <a href="/windows/win32/api/propsys/nf-propsys-ipropertydescription-getgroupingrange"><strong>da IPropertyDescription::GetGroupingRange</strong></a>. Di seguito sono riportati i tipi validi.
 
 <table>
 <thead>
@@ -252,7 +252,7 @@ Se sono presenti più elementi, viene usato l'ultimo. Se non viene specificato a
 </tr>
 <tr class="even">
 <td>Alfanumerico</td>
-<td>Visualizza gli intervalli alfanumerici statici per i valori.</td>
+<td>Visualizza intervalli alfanumerici statici per i valori.</td>
 </tr>
 <tr class="odd">
 <td>Dimensione</td>
@@ -260,11 +260,11 @@ Se sono presenti più elementi, viene usato l'ultimo. Se non viene specificato a
 </tr>
 <tr class="even">
 <td>Data</td>
-<td>Visualizza i gruppi mese/anno. Valore predefinito per le proprietà di tipo = &quot; DateTime &quot; .</td>
+<td>Visualizza i gruppi mese/anno. Impostazione predefinita per le proprietà di tipo = &quot; DateTime &quot; .</td>
 </tr>
 <tr class="odd">
 <td>TimeRelative</td>
-<td>Viene visualizzato nei gruppi relativi al tempo.</td>
+<td>Viene visualizzato in gruppi relativi all'ora.</td>
 </tr>
 <tr class="even">
 <td>Dynamic</td>
@@ -272,7 +272,7 @@ Se sono presenti più elementi, viene usato l'ultimo. Se non viene specificato a
 </tr>
 <tr class="odd">
 <td>Percentuale</td>
-<td>Visualizza i bucket percentuali.</td>
+<td>Visualizza i bucket di percentuale.</td>
 </tr>
 </tbody>
 </table>
@@ -280,18 +280,18 @@ Se sono presenti più elementi, viene usato l'ultimo. Se non viene specificato a
 <p> </p></td>
 </tr>
 <tr class="odd">
-<td>innata</td>
-<td>Pubblica. facoltativo. Il valore predefinito è &quot;false&quot;. Specifica se la proprietà è considerata innata. Una proprietà innata è una proprietà calcolata dal contenuto di un file o da altri sistemi o risorse. System. size, ad esempio, è una proprietà innata fornita dal file system; la modifica del valore della proprietà in e di per sé non esegue alcuna operazione. Altri esempi sono System. image. Dimensions e System.Document. PageCount, che vengono calcolate da programmi basati sul contenuto del file, non in base a un'impostazione modificabile dall'utente. L'impostazione di innate = &quot; true &quot; indica che l'utente non può modificare direttamente questa proprietà tramite un controllo proprietà. Questo valore esegue il mapping al flag di PDTF_ISINNATE definito in <a href="/windows/win32/api/propsys/ne-propsys-propdesc_type_flags"><strong>PROPDESC_TYPE_FLAGS</strong></a> e usato in <a href="/windows/win32/api/propsys/nf-propsys-ipropertydescription-gettypeflags"><strong>IPropertyDescription:: GetTypeFlags</strong></a>.</td>
+<td>isInnate</td>
+<td>Pubblica. facoltativo. Il valore predefinito è &quot;false&quot;. Specifica se la proprietà è considerata innata. Una proprietà innata è una proprietà calcolata dal contenuto di un file o da altre risorse o sistemi. Ad esempio, System.Size è una proprietà innata fornita dal file system; La modifica del valore della proprietà in e di per sé non esegue alcuna operazione. Altri esempi sono System.Image.Dimensions e System.Document. PageCount, calcolato dai programmi in base al contenuto del file, non in base a un'impostazione modificabile dall'utente. L'impostazione di isInnate= &quot; true indica che l'utente non può modificare questa proprietà direttamente tramite un controllo &quot; proprietà. Questo valore esegue il mapping al flag PDTF_ISINNATE definito in <a href="/windows/win32/api/propsys/ne-propsys-propdesc_type_flags"><strong>PROPDESC_TYPE_FLAGS</strong></a> e usato in <a href="/windows/win32/api/propsys/nf-propsys-ipropertydescription-gettypeflags"><strong>IPropertyDescription::GetTypeFlags</strong></a>.</td>
 </tr>
 <tr class="even">
 <td>canBePurged</td>
-<td><strong>Windows Vista con Service Pack 1 (SP1) e versioni successive</strong>. Pubblica. facoltativo. Se impostato su &quot; true &quot; , consente di eliminare una proprietà innata. Le proprietà innate, che vengono calcolate da altre proprietà, sono di sola lettura per definizione. Il valore predefinito di questo attributo dipende dal valore di <em>innate</em> .
+<td><strong>Windows Vista solo con Service Pack 1 (SP1) e versioni successive.</strong> Pubblica. facoltativo. Se impostato su &quot; &quot; true, consente l'eliminazione di una proprietà innata. Le proprietà innate, calcolate da altre proprietà, sono di sola lettura per definizione. Il valore predefinito per questo attributo dipende dal <em>valore isInnate.</em>
 
 <table>
 <thead>
 <tr class="header">
-<th>innata</th>
-<th>Valore predefinito di canBePurged</th>
+<th>isInnate</th>
+<th>Valore predefinito canBePurged</th>
 </tr>
 </thead>
 <tbody>
@@ -310,25 +310,25 @@ Se sono presenti più elementi, viene usato l'ultimo. Se non viene specificato a
 <div class="alert">
 <blockquote>
 [!Note]<br />
-Una proprietà il cui valore <em>innate</em> è &quot; false &quot; (ovvero la proprietà è di lettura/scrittura) non può inoltre impostare il valore <em>canBePurged</em> su &quot; false &quot; . Questa restrizione viene applicata dal sistema operativo.
+Una proprietà il cui <em>valore isInnate</em> è false (vale a dire che la proprietà è di lettura/scrittura) non può anche impostare il &quot; valore &quot; <em>canBePurged</em> su &quot; &quot; false. Questa restrizione viene applicata dal sistema operativo.
 </blockquote>
 </div>
 <div>
  
 </div>
-<p>Anche se questo attributo è stato introdotto in Windows Vista con Service Pack 1 (SP1), un file con estensione propdesc che include questo attributo è compatibile con Windows Vista prima di Windows Vista con SP1. In questa situazione, l'attributo <em>canBePurged</em> viene semplicemente ignorato.</p></td>
+<p>Sebbene questo attributo sia stato introdotto in Windows Vista con Service Pack 1 (SP1), un file con estensione propdesc che include questo attributo è compatibile con Windows Vista prima di Windows Vista con SP1. <em>L'attributo canBePurged</em> viene semplicemente ignorato in tale situazione.</p></td>
 </tr>
 <tr class="odd">
 <td>multipleValues</td>
-<td>Pubblica. facoltativo. Il valore predefinito è &quot;false&quot;. Specifica se la proprietà può avere più valori. Questo valore esegue il mapping al flag di PDTF_MULTIPLEVALUES definito in <a href="/windows/win32/api/propsys/ne-propsys-propdesc_type_flags"><strong>PROPDESC_TYPE_FLAGS</strong></a> e usato in <a href="/windows/win32/api/propsys/nf-propsys-ipropertydescription-gettypeflags"><strong>IPropertyDescription:: GetTypeFlags</strong></a>. Ciò influisce anche sul fatto che VT_VECTOR sia o a un VARTYPE del valore della proprietà.</td>
+<td>Pubblica. facoltativo. Il valore predefinito è &quot;false&quot;. Specifica se questa proprietà può avere più valori. Questo valore esegue il mapping al flag PDTF_MULTIPLEVALUES definito in <a href="/windows/win32/api/propsys/ne-propsys-propdesc_type_flags"><strong>PROPDESC_TYPE_FLAGS</strong></a> e usato in <a href="/windows/win32/api/propsys/nf-propsys-ipropertydescription-gettypeflags"><strong>IPropertyDescription::GetTypeFlags</strong></a>. Ciò influisce anche sulla VT_VECTOR è OR sul VALORE VARTYPE del valore della proprietà.</td>
 </tr>
 <tr class="even">
 <td>isGroup</td>
-<td>Pubblica. facoltativo. Il valore predefinito è &quot;false&quot;. Specifica se la proprietà è un'intestazione di gruppo. Un'intestazione di gruppo viene utilizzata rigorosamente in proplists, non ha alcun valore, non viene mai archiviata in un file e deve avere anche <typeInfo type=&quot;Null&quot;> . Alcune interfacce utente del sistema usano proplists per indicare la sequenza delle proprietà da visualizzare. Questi proplists possono includere riferimenti a intestazioni di gruppo (ad esempio, System. PropGroup. camera), che indicano all'interfaccia utente di avviare una nuova sezione del gruppo (ad esempio, &quot; le impostazioni della fotocamera &quot; ). Una descrizione della proprietà con il valore di ' Group = &quot; true &quot; ' deve specificare un oggetto <labelInfo label=&quot;Some localized label&quot;> ; in caso contrario, non è una proprietà utile. Questo valore esegue il mapping al flag di PDTF_ISGROUP definito in <a href="/windows/win32/api/propsys/ne-propsys-propdesc_type_flags"><strong>PROPDESC_TYPE_FLAGS</strong></a> e usato in <a href="/windows/win32/api/propsys/nf-propsys-ipropertydescription-gettypeflags"><strong>IPropertyDescription:: GetTypeFlags</strong></a>.</td>
+<td>Pubblica. facoltativo. Il valore predefinito è &quot;false&quot;. Specifica se la proprietà è un'intestazione di gruppo. Un'intestazione di gruppo viene usata esclusivamente negli elenchi proplist, non ha alcun valore, non viene mai archiviata in un file e deve avere anche <typeInfo type=&quot;Null&quot;> . Alcune ui nel sistema usano proplist per indicare la sequenza delle proprietà da visualizzare. Questi proplist possono includere riferimenti alle intestazioni di gruppo (ad esempio, System.PropGroup.Camera), che indica all'interfaccia utente di avviare una nuova sezione di gruppo (ad esempio, &quot; Camera Impostazioni &quot; ). Una descrizione della proprietà con isGroup= true deve specificare , in caso contrario &quot; non è una proprietà &quot; <labelInfo label=&quot;Some localized label&quot;> utile. Questo valore esegue il mapping al flag PDTF_ISGROUP definito in <a href="/windows/win32/api/propsys/ne-propsys-propdesc_type_flags"><strong>PROPDESC_TYPE_FLAGS</strong></a> e usato in <a href="/windows/win32/api/propsys/nf-propsys-ipropertydescription-gettypeflags"><strong>IPropertyDescription::GetTypeFlags</strong></a>.</td>
 </tr>
 <tr class="odd">
 <td>aggregationType</td>
-<td>Pubblica. facoltativo. Il valore predefinito è &quot; default &quot; . Specifica la modalità di visualizzazione delle proprietà di aggregazione quando vengono selezionati più elementi. Una volta impostati qui, questi valori vengono recuperati da <a href="/windows/win32/api/propsys/nf-propsys-ipropertydescription-getaggregationtype"><strong>IPropertyDescription:: GetAggregationType</strong></a> come <a href="/windows/win32/api/propsys/ne-propsys-propdesc_aggregation_type"><strong>PROPDESC_AGGREGATION_TYPE</strong></a>. Di seguito sono riportati i tipi validi.
+<td>Pubblica. facoltativo. Il valore predefinito &quot; è &quot; Default. Specifica la modalità di visualizzazione delle proprietà di aggregazione quando vengono selezionati più elementi. Una volta impostati qui, questi valori vengono recuperati da <a href="/windows/win32/api/propsys/nf-propsys-ipropertydescription-getaggregationtype"><strong>IPropertyDescription::GetAggregationType</strong></a> <a href="/windows/win32/api/propsys/ne-propsys-propdesc_aggregation_type"><strong>come</strong></a>PROPDESC_AGGREGATION_TYPE . Di seguito sono riportati i tipi validi.
 
 <table>
 <thead>
@@ -340,35 +340,35 @@ Una proprietà il cui valore <em>innate</em> è &quot; false &quot; (ovvero la p
 <tbody>
 <tr class="odd">
 <td>Predefinito</td>
-<td>Valore predefinito. Visualizza un segnaposto con <strong>più valori</strong> nell'interfaccia utente. Si tratta dell'impostazione predefinita se il <em>tipo</em> non è compatibile con il <em>aggregationType</em>specificato.</td>
+<td>Valore predefinito. Visualizza un <strong>segnaposto Con più valori</strong> nell'interfaccia utente. Si tratta dell'impostazione predefinita se <em>il tipo è</em> incompatibile con l'elemento <em>aggregationType specificato.</em></td>
 </tr>
 <tr class="even">
-<td>First (Primo)</td>
-<td>Consente di visualizzare il valore della proprietà del primo elemento della selezione o della raccolta.</td>
+<td>Primo</td>
+<td>Visualizza il valore della proprietà del primo elemento nella selezione o nell'insieme.</td>
 </tr>
 <tr class="odd">
 <td>Sum</td>
-<td>Visualizza la somma dei valori numerici. Utile per proprietà quali System. Media. Duration o System. size. Questo valore non è compatibile con i tipi non numerici.</td>
+<td>Visualizza la somma dei valori numerici. Utile per proprietà quali System.Media.Duration o System.Size. Questo valore non è compatibile con i tipi non numerici.</td>
 </tr>
 <tr class="even">
 <td>Media</td>
-<td>Visualizza la media dei valori numerici. Utile per proprietà quali System. rating. Questo valore non è compatibile con i tipi non numerici.</td>
+<td>Visualizza la media dei valori numerici. Utile per proprietà come System.Rating. Questo valore non è compatibile con i tipi non numerici.</td>
 </tr>
 <tr class="odd">
 <td>DateRange</td>
-<td>Visualizza un intervallo di date. Utile per proprietà quali System. Photo. DateTaken. Questo valore non è compatibile con qualsiasi elemento tranne Type = &quot; DateTime &quot; ed è il valore predefinito per le proprietà di quel tipo.</td>
+<td>Visualizza un intervallo di date. Utile per proprietà come System.Photo.DateTaken. Questo valore non è compatibile con nessun elemento eccetto type= &quot; DateTime &quot; ed è l'impostazione predefinita per le proprietà di quel tipo.</td>
 </tr>
 <tr class="even">
 <td>Union</td>
-<td>Consente di visualizzare un'Unione di tutti i valori della selezione o della raccolta. L'ordine in cui vengono visualizzati i valori non è definito. Questo valore è l'impostazione predefinita per le proprietà di tipo = &quot; String &quot; e multipleValues = &quot; true &quot; .</td>
+<td>Visualizza un'unione di tutti i valori nella selezione o nell'insieme. L'ordine in cui vengono visualizzati i valori non è definito. Questo valore è il valore predefinito per le proprietà di tipo &quot; = String &quot; e multipleValues= &quot; &quot; true.</td>
 </tr>
 <tr class="odd">
 <td>Massimo</td>
-<td>Consente di visualizzare il valore massimo nella raccolta. Utile per proprietà quali System. DateModified. Non è compatibile con i tipi non numerici o non di data.</td>
+<td>Visualizza il valore massimo nella raccolta. Utile per proprietà come System.DateModified. Non compatibile con tipi non numerici o non di data.</td>
 </tr>
 <tr class="even">
-<td>Minima</td>
-<td>Consente di visualizzare il valore minimo nella raccolta. Non è compatibile con i tipi non numerici o non di data.</td>
+<td>Minimo</td>
+<td>Visualizza il valore minimo nella raccolta. Non compatibile con tipi non numerici o non di data.</td>
 </tr>
 </tbody>
 </table>
@@ -380,12 +380,12 @@ Una proprietà il cui valore <em>innate</em> è &quot; false &quot; (ovvero la p
 <td>Pubblica. facoltativo. Il valore predefinito è &quot;false&quot;.</td>
 </tr>
 <tr class="odd">
-<td>Visualizzabile</td>
-<td>Pubblica. facoltativo. Il valore predefinito è &quot;false&quot;. Specifica se questa proprietà deve essere visibile all'utente. Ad esempio, l'interfaccia utente di selezione colonne Mostra solo le proprietà con l'oggetto visualizzabile = &quot; true &quot; . L'eccezione è l'interfaccia utente basata su un oggetto prop, che Mostra sempre la proprietà. Se si dispone di una proprietà che è destinata solo a eseguire la spola dei dati tra due oggetti e non è mai stata progettata per essere visualizzata dall'utente, questo attributo deve essere false. Questo valore esegue il mapping al flag di PDTF_ISVIEWABLE definito in <a href="/windows/win32/api/propsys/ne-propsys-propdesc_type_flags"><strong>PROPDESC_TYPE_FLAGS</strong></a> e usato in <a href="/windows/win32/api/propsys/nf-propsys-ipropertydescription-gettypeflags"><strong>IPropertyDescription:: GetTypeFlags</strong></a>.</td>
+<td>isViewable</td>
+<td>Pubblica. facoltativo. Il valore predefinito è &quot;false&quot;. Specifica se questa proprietà deve essere visualizzabile per l'utente. Ad esempio, l'interfaccia utente di Selezione colonne mostra solo le proprietà con isViewable= &quot; &quot; true. L'eccezione è l'interfaccia utente basata su un proplist, che mostrerà sempre la proprietà . Se si dispone di una proprietà destinata solo a distinguere i dati tra due oggetti e che non deve mai essere visualizzata dall'utente, questo attributo deve essere false. Questo valore esegue il mapping al flag PDTF_ISVIEWABLE definito in <a href="/windows/win32/api/propsys/ne-propsys-propdesc_type_flags"><strong>PROPDESC_TYPE_FLAGS</strong></a> e usato in <a href="/windows/win32/api/propsys/nf-propsys-ipropertydescription-gettypeflags"><strong>IPropertyDescription::GetTypeFlags</strong></a>.</td>
 </tr>
 <tr class="even">
-<td>Queryable</td>
-<td>Solo Windows Vista. Non supportato in Windows 7 e versioni successive. Pubblica. facoltativo. Il valore predefinito è &quot;false&quot;. Specifica se questa proprietà deve essere disponibile nell'interfaccia utente di ricerca Generatore di query. Una proprietà deve avere un valore di visualizzabile = &quot; true &quot; prima che &quot; venga rispettata l'esecuzione di Queryable = true &quot; . Questo valore esegue il mapping al flag di PDTF_ISQUERYABLE definito in <a href="/windows/win32/api/propsys/ne-propsys-propdesc_type_flags"><strong>PROPDESC_TYPE_FLAGS</strong></a> e usato in <a href="/windows/win32/api/propsys/nf-propsys-ipropertydescription-gettypeflags"><strong>IPropertyDescription:: GetTypeFlags</strong></a>.</td>
+<td>isQueryable</td>
+<td>Windows Solo Vista. Non supportato in Windows 7 e versioni successive. Pubblica. facoltativo. Il valore predefinito è &quot;false&quot;. Specifica se questa proprietà deve essere disponibile nell'interfaccia utente Generatore di query ricerca. Una proprietà deve avere isViewable= &quot; true &quot; prima che isQueryable= &quot; true venga &quot; rispettato. Questo valore esegue il mapping al flag PDTF_ISQUERYABLE definito in <a href="/windows/win32/api/propsys/ne-propsys-propdesc_type_flags"><strong>PROPDESC_TYPE_FLAGS</strong></a> e usato in <a href="/windows/win32/api/propsys/nf-propsys-ipropertydescription-gettypeflags"><strong>IPropertyDescription::GetTypeFlags</strong></a>.</td>
 </tr>
 <tr class="odd">
 <td>searchRawValue</td>
@@ -393,11 +393,11 @@ Una proprietà il cui valore <em>innate</em> è &quot; false &quot; (ovvero la p
 </tr>
 <tr class="even">
 <td>includeInFullTextQuery</td>
-<td>Solo Windows Vista. Non supportato in Windows 7 e versioni successive. Pubblica. facoltativo. Il valore predefinito è &quot;false&quot;.</td>
+<td>Windows Solo Vista. Non supportato in Windows 7 e versioni successive. Pubblica. facoltativo. Il valore predefinito è &quot;false&quot;.</td>
 </tr>
 <tr class="odd">
 <td>conditionType</td>
-<td>Pubblica. facoltativo. Il valore predefinito è &quot; String &quot; . Specifica un hint per l'interfaccia utente di ricerca Generatore di query in modo che sia in grado di determinare l'elenco di possibili operatori di condizione all'interno di un predicato. Di seguito sono riportati i valori riconosciuti. 
+<td>Pubblica. facoltativo. Il valore predefinito è &quot; String &quot; . Specifica un hint per l'interfaccia utente Generatore di query ricerca in modo che possa determinare l'elenco di possibili operatori di condizione all'interno di un predicato. Di seguito sono riportati i valori riconosciuti. 
 <table>
 <thead>
 <tr class="header">
@@ -407,24 +407,24 @@ Una proprietà il cui valore <em>innate</em> è &quot; false &quot; (ovvero la p
 </thead>
 <tbody>
 <tr class="odd">
-<td>string</td>
-<td>Valore predefinito. Verranno utilizzati gli operatori seguenti: &quot; è &quot; , non è,,,, &quot; &quot; &quot; &lt; &quot; &quot; &gt; &quot; &quot; <= &quot; &quot; >= &quot; , &quot; inizia con &quot; , &quot; termina con &quot; , &quot; Contains &quot; , &quot; non contiene &quot; , &quot; è simile a &quot; .</td>
+<td>Stringa</td>
+<td>Valore predefinito. Verranno usati gli operatori seguenti: è , non è , , , , , inizia con , termina con &quot; &quot; &quot; &quot; &quot; &lt; &quot; &quot; &gt; &quot; &quot; <= &quot; &quot; >= &quot; &quot; , contiene , non contiene , è simile &quot; a &quot; &quot; &quot; &quot; &quot; &quot; &quot; &quot; .</td>
 </tr>
 <tr class="even">
-<td>Number</td>
-<td>Valore predefinito per le proprietà numeriche. Verranno utilizzati gli operatori seguenti: &quot; uguale a, &quot; non uguale a, &quot; &quot; &quot; è minore di &quot; , &quot; è maggiore di &quot; , &quot; è minore o uguale a &quot; , &quot; è maggiore o uguale a &quot; .</td>
+<td>Numero</td>
+<td>Impostazione predefinita per le proprietà numeriche. Verranno usati gli operatori seguenti: uguale a , diverso da , è minore di , è maggiore di , è minore o uguale a , è maggiore o &quot; &quot; uguale a &quot; &quot; &quot; &quot; &quot; &quot; &quot; &quot; &quot; &quot; .</td>
 </tr>
 <tr class="odd">
 <td>Datetime</td>
-<td>Valore predefinito per le proprietà di tipo = &quot; DateTime &quot; . Verranno utilizzati gli operatori seguenti: &quot; is &quot; , is &quot; Not &quot; , &quot; is before, is &quot; &quot; after &quot; , &quot; is before ma includes &quot; , is &quot; after ma includes &quot; .</td>
+<td>Impostazione predefinita per le proprietà di tipo = &quot; DateTime &quot; . Verranno usati gli operatori seguenti: è , non è , è prima di , è dopo , è prima di , ma include , è &quot; &quot; dopo ma &quot; include &quot; &quot; &quot; &quot; &quot; &quot; &quot; &quot; &quot; .</td>
 </tr>
 <tr class="even">
 <td>Boolean</td>
-<td>Valore predefinito per le proprietà di tipo = &quot; Boolean &quot; . Uguale al numero.</td>
+<td>Impostazione predefinita per le proprietà di tipo = &quot; Boolean &quot; . Uguale a Number.</td>
 </tr>
 <tr class="odd">
 <td>Dimensione</td>
-<td>Uguale al numero.</td>
+<td>Uguale a Number.</td>
 </tr>
 </tbody>
 </table>
@@ -433,7 +433,7 @@ Una proprietà il cui valore <em>innate</em> è &quot; false &quot; (ovvero la p
 </tr>
 <tr class="even">
 <td>defaultOperation</td>
-<td>Pubblica. facoltativo. Il valore predefinito è &quot; uguale a &quot; . Specifica un hint per lo strumento Generatore di query di ricerca in modo che sia in grado di determinare l'operatore predefinito. I valori possibili sono i seguenti:
+<td>Pubblica. facoltativo. Il valore predefinito &quot; è Uguale &quot; a . Specifica un hint per lo strumento Generatore di query ricerca in modo che possa determinare l'operatore predefinito. I valori possibili sono i seguenti:
 
 <table>
 <thead>
@@ -445,23 +445,23 @@ Una proprietà il cui valore <em>innate</em> è &quot; false &quot; (ovvero la p
 <tbody>
 <tr class="odd">
 <td>Uguale a</td>
-<td>Valore predefinito. Indica l'equivalente.</td>
+<td>Valore predefinito. Indica un valore equivalente.</td>
 </tr>
 <tr class="even">
 <td>NotEqual</td>
-<td>Indica un valore diverso da.</td>
+<td>Indica che non è equivalente.</td>
 </tr>
 <tr class="odd">
 <td>LessThan</td>
-<td>Indica minore di.</td>
+<td>Indica un valore minore di.</td>
 </tr>
 <tr class="even">
 <td>GreaterThan</td>
-<td>Impostazione predefinita per le proprietà di conditionType = &quot; size &quot; . Indica maggiore di.</td>
+<td>Impostazione predefinita per le proprietà di conditionType= &quot; &quot; Size. Indica un valore maggiore di.</td>
 </tr>
 <tr class="odd">
 <td>Contiene</td>
-<td>Impostazione predefinita per le proprietà di conditionType = &quot; String &quot; . Indica l'inclusione.</td>
+<td>Impostazione predefinita per le proprietà di conditionType= &quot; String &quot; . Indica l'inclusione.</td>
 </tr>
 </tbody>
 </table>

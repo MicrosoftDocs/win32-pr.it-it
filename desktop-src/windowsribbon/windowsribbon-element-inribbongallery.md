@@ -13,16 +13,16 @@ api_type:
 ms.topic: reference
 ms.date: 05/31/2018
 api_location: ''
-ms.openlocfilehash: 1156c7a3b625496b0a4d50b750a3db5cda51a6b77745aaf26d4282de1be3443d
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: b1a1d992a9a9ad000a3a6e658b513bf8246657dd
+ms.sourcegitcommit: c276a8912787b2cda74dcf54eb96df961bb1188b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "117850836"
+ms.lasthandoff: 08/20/2021
+ms.locfileid: "122625137"
 ---
 # <a name="inribbongallery-element"></a>Elemento InRibbonGallery
 
-Rappresenta la [raccolta nella barra](windowsribbon-controls-inribbongallery.md)multifunzione , un controllo basato sulla raccolta che espone un subset predefinito di elementi direttamente nella barra multifunzione. Eventuali elementi rimanenti vengono visualizzati quando si fa clic su un pulsante di menu a discesa.
+Rappresenta la [raccolta nella barra multifunzione](windowsribbon-controls-inribbongallery.md), un controllo basato sulla raccolta che espone un subset predefinito di elementi direttamente nella barra multifunzione. Eventuali elementi rimanenti vengono visualizzati quando si fa clic su un pulsante di menu a discesa.
 
 ## <a name="usage"></a>Utilizzo
 
@@ -49,10 +49,10 @@ Rappresenta la [raccolta nella barra](windowsribbon-controls-inribbongallery.md)
 
 <table>
 <colgroup>
-<col style="width: 25%" />
-<col style="width: 25%" />
-<col style="width: 25%" />
-<col style="width: 25%" />
+<col  />
+<col  />
+<col  />
+<col  />
 </colgroup>
 <thead>
 <tr class="header">
@@ -145,7 +145,7 @@ Si applica solo alle raccolte in cui il valore <em>dell'attributo Type</em> è u
 <td><strong>TextPosition</strong><br/></td>
 <td>TextPositionType<br/></td>
 <td>No<br/></td>
-<td>Specifica la posizione in cui viene visualizzata l'etichetta dell'elemento, relativa all'immagine. <br/> Limitato a uno dei valori seguenti:<br/> <br/>
+<td>Specifica la posizione in cui viene visualizzata l'etichetta dell'elemento rispetto all'immagine. <br/> Limitato a uno dei valori seguenti:<br/> <br/>
 <dt><span></span><span></span><strong></strong> (In basso)<br/> </dt> <dd></dd> <dt><span></span><span></span><strong></strong> (Nascondi)<br/> </dt> <dd></dd> <dt><span></span><span></span><strong></strong> (A sinistra)<br/> </dt> <dd></dd> <dt><span></span><span></span><strong></strong> (Sovrapposizione)<br/> </dt> <dd></dd> <dt><span></span><span></span><strong></strong> (A destra)<br/> </dt> <dd></dd> <dt><span></span><span></span><strong></strong> (In alto)<br/> </dt> <dd></dd> </dl></td>
 </tr>
 <tr class="odd">
@@ -181,8 +181,8 @@ Si applica solo alle raccolte in cui il valore <em>dell'attributo Type</em> è u
 
 <table>
 <colgroup>
-<col style="width: 50%" />
-<col style="width: 50%" />
+<col  />
+<col  />
 </colgroup>
 <thead>
 <tr class="header">
@@ -243,7 +243,7 @@ Questa sezione di codice illustra le dichiarazioni del comando **InRibbonGallery
 
 
 
-Questa sezione di codice illustra le **dichiarazioni di controllo InRibbonGallery.**
+Questa sezione di codice illustra le dichiarazioni di controllo **InRibbonGallery.**
 
 
 ```XML

@@ -4,16 +4,16 @@ ms.assetid: 7c38bc15-be86-4260-b2e4-13afc90de6d7
 title: stringFormat
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: e76c72865c3a0f327657d3d97cda55d57ebae1023793dabcad03db513319c004
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 6eb40ec92ed7b31486062b5cca027eb5257e07af
+ms.sourcegitcommit: c276a8912787b2cda74dcf54eb96df961bb1188b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "117867457"
+ms.lasthandoff: 08/20/2021
+ms.locfileid: "122631900"
 ---
 # <a name="stringformat"></a>stringFormat
 
-Specifica il modo [**in cui IPropertyDescription::FormatForDisplay**](/windows/win32/api/propsys/nf-propsys-ipropertydescription-formatfordisplay) deve formattare il valore della proprietà come stringa. È applicabile solo se <displayInfo displayType="String"> . Deve essere presente un solo [elemento stringFormat]() per ogni [elemento displayInfo.](./propdesc-schema-displayinfo.md)
+Specifica il modo [**in cui IPropertyDescription::FormatForDisplay**](/windows/win32/api/propsys/nf-propsys-ipropertydescription-formatfordisplay) deve formattare il valore della proprietà come stringa. Questo è applicabile solo se <displayInfo displayType="String"> . Deve essere presente un solo [elemento stringFormat]() per ogni [elemento displayInfo.](./propdesc-schema-displayinfo.md)
 
 Se sono presenti più elementi, viene usato l'ultimo. Se non viene specificato alcun elemento [stringFormat,]() le impostazioni predefinite dell'attributo vengono applicate alla descrizione della proprietà.
 
@@ -58,8 +58,8 @@ Se sono presenti più elementi, viene usato l'ultimo. Se non viene specificato a
 
 <table>
 <colgroup>
-<col style="width: 50%" />
-<col style="width: 50%" />
+<col  />
+<col  />
 </colgroup>
 <thead>
 <tr class="header">
@@ -70,7 +70,7 @@ Se sono presenti più elementi, viene usato l'ultimo. Se non viene specificato a
 <tbody>
 <tr class="odd">
 <td>formatAs</td>
-<td>Pubblica. facoltativo. Il valore predefinito &quot; è &quot; General. I valori validi sono i seguenti. 
+<td>Pubblica. facoltativo. Il valore predefinito &quot; è &quot; Generale. I valori validi sono i seguenti. 
 <table>
 <thead>
 <tr class="header">

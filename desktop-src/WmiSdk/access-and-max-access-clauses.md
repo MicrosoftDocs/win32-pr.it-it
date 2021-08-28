@@ -5,30 +5,30 @@ ms.tgt_platform: multiple
 title: Clausole ACCESS e MAX-ACCESS
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 37084a25a48c874866774b990a70e1332e730103
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 985b4bfe968841436cedd352a01a609aac6ba2d725887b6a638ffcd95656935d
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "106315253"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120120941"
 ---
 # <a name="access-and-max-access-clauses"></a>Clausole ACCESS e MAX-ACCESS
 
 Ogni definizione di oggetto MIB contiene una clausola ACCESS (SNMPv1) o MAX-ACCESS (SNMPv2C) che definisce i diritti di accesso all'oggetto.
 
 > [!Note]  
-> Per ulteriori informazioni sull'installazione del provider, vedere [configurazione dell'ambiente WMI SNMP](setting-up-the-wmi-snmp-environment.md).
+> Per altre informazioni sull'installazione del provider, vedere [Setting up the WMI SNMP Environment](setting-up-the-wmi-snmp-environment.md).
 
  
 
-Nella tabella seguente viene elencato il mapping della clausola SNMPv1 ACCESS.
+Nella tabella seguente viene elencato il mapping della clausola ACCESS SNMPv1.
 
 
 
-| Clausola di accesso MIB | Qualificatore CIM       |
+| Clausola ACCESS MIB | Qualificatore CIM       |
 |-------------------|---------------------|
 | Sola lettura         | **Lettura**            |
-| lettura/scrittura        | **Lettura**, **scrittura** |
+| lettura/scrittura        | **Lettura,** **scrittura** |
 | sola scrittura        | **Scrittura**           |
 | non accessibile    | **Non \_ accessibile** |
 
@@ -36,23 +36,23 @@ Nella tabella seguente viene elencato il mapping della clausola SNMPv1 ACCESS.
 
  
 
-La tabella seguente elenca il mapping della clausola SNMPv2C MAX-ACCESS.
+Nella tabella seguente viene elencato il mapping della clausola SNMPv2C MAX-ACCESS.
 
 
 
-| Clausola di accesso MIB     | Qualificatore CIM       |
+| Clausola MIB-ACCESS     | Qualificatore CIM       |
 |-----------------------|---------------------|
 | Sola lettura             | **Lettura**            |
-| lettura/scrittura            | **Lettura**, **scrittura** |
+| lettura/scrittura            | **Lettura,** **scrittura** |
 | lettura-creazione           | **Lettura**            |
-| accessibilità per notifica | **Non \_ accessibile** |
+| accessible-for-notify | **Non \_ accessibile** |
 | non accessibile        | **Non \_ accessibile** |
 
 
 
  
 
-Quando un oggetto MIB viene mappato a non accessibile e non è una proprietà con chiave della classe, non esiste alcun mapping dell'oggetto MIB stesso.
+Quando un oggetto MIB esegue il mapping a non accessibile e non è una proprietà con chiave della classe , non esiste alcun mapping dell'oggetto MIB stesso.
 
  
 

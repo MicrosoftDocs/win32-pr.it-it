@@ -13,20 +13,20 @@ api_name:
 api_type:
 - NA
 api_location: ''
-ms.openlocfilehash: 1f39146f8065401052c352472b28c4946cca6b98
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: b2a0cadf3e1469fbdaf347b269813e76b780348d28482a00b4de290aaf4e0f28
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "103757760"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120120761"
 ---
 # <a name="viewsources-qualifier"></a>Qualificatore ViewSources
 
-Tutte le classi di visualizzazione devono avere un qualificatore di matrice di stringhe denominato **ViewSources**. Il qualificatore **ViewSources** contiene le query di origine che definiscono le istanze di origine utilizzate nella classe di visualizzazione. Il valore del qualificatore **ViewSources** è una matrice di stringhe contenente le query [*WQL (WMI Query Language)*](gloss-w.md) . È possibile definire le classi di origine e limitare le istanze di origine utilizzate dalla classe di visualizzazione con la[clausola WHERE](where-clause.md) di [query con WQL](querying-with-wql.md)per creare una visualizzazione filtrata.
+Tutte le classi di visualizzazione devono avere un qualificatore di matrice di stringhe **denominato ViewSources.** Il **qualificatore ViewSources** contiene le query di origine che definiscono le istanze di origine usate nella classe di visualizzazione. Il valore del **qualificatore ViewSources** è una matrice di stringhe [*contenente WMI Query Language query WQL.*](gloss-w.md) È possibile definire classi di origine e limitare le istanze di origine utilizzate dalla classe di visualizzazione con la clausola[WHERE](where-clause.md) [WQL](querying-with-wql.md)per creare una vista filtrata.
 
-Il [provider di viste](view-provider.md) corrisponde alle query di origine nel qualificatore **ViewSources** per gli spazi dei nomi elencati nel [qualificatore ViewSpaces](viewspaces-qualifier.md) nell'ordine in cui sono elencate le query e gli spazi dei nomi. Il numero di query di origine deve corrispondere al numero di spazi dei nomi elencati nel qualificatore ViewSpaces. L'ordine in cui vengono elencate le query di origine determina gli spazi dei nomi da cui vengono disegnate le istanze di origine.
+Il [provider di](view-provider.md) visualizzazione abbina le query di origine nel qualificatore **ViewSources** agli spazi dei nomi elencati nel qualificatore [ViewSpaces](viewspaces-qualifier.md) nell'ordine in cui sono elencate le query e gli spazi dei nomi. Il numero di query di origine deve corrispondere al numero di spazi dei nomi elencati nel qualificatore ViewSpaces. L'ordine in cui vengono elencate le query di origine determina gli spazi dei nomi da cui vengono disegnate le istanze di origine.
 
-Nell'esempio seguente vengono selezionate solo le istanze della classe **LocalDisk** in cui il valore della proprietà **filesystem** è "NTFS" e le istanze della classe **RemoteDisk** in cui il valore della proprietà **FreeSpace** è maggiore di 45 megabyte:
+Nell'esempio seguente vengono selezionate solo le istanze della classe **LocalDisk** in cui il valore della proprietà **FileSystem** è "NTFS" e le istanze della classe **RemoteDisk** in cui il valore della proprietà **FreeSpace** è maggiore di 45 megabyte:
 
 
 ```sql
@@ -50,7 +50,7 @@ ViewSources{
 
 
 > [!Note]  
-> Il numero di query di origine che è possibile definire per le classi di visualizzazione join dipende dal numero di istanze restituite da queste query e dal numero di modi in cui tali istanze possono essere unite in join. Il numero di possibili combinazioni di istanze di origine per le classi di visualizzazione cresce in modo esponenziale, quindi è possibile usare le query di origine per le classi di visualizzazione join il più semplice possibile.
+> Il numero di query di origine che è possibile definire per le classi di vista join dipende dal numero di istanze restituite da queste query e dal numero di modi in cui è possibile unire tali istanze. Poiché il numero di possibili combinazioni di istanze di origine per le classi di visualizzazione aumenta in modo esponenziale, mantenere le query di origine per le classi di visualizzazione join il più semplici possibile.
 
  
 

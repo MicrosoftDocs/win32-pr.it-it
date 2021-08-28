@@ -1,24 +1,24 @@
 ---
-description: Consente di decrittografare un messaggio tramite digest.
+description: Decrittografa un messaggio tramite digest.
 ms.assetid: 46d45f59-33fa-434a-b329-20b6257c9a19
-title: Funzione DecryptMessage (digest)
+title: Funzione DecryptMessage (Digest)
 ms.topic: reference
 ms.date: 07/25/2019
-ms.openlocfilehash: 5363a5efc79d78c9c88e4a817c1c341e0e0f9c02
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: f87828263766643a10cf5400e38cabe9d3096403
+ms.sourcegitcommit: 9b5faa61c38b2d0c432b7f2dbee8c127b0e28a7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104485253"
+ms.lasthandoff: 08/19/2021
+ms.locfileid: "122480867"
 ---
-# <a name="decryptmessage-digest-function"></a>Funzione DecryptMessage (digest)
+# <a name="decryptmessage-digest-function"></a>Funzione DecryptMessage (Digest)
 
-La funzione **DecryptMessage (digest)** decrittografa un messaggio. Alcuni pacchetti non crittografano e decrittografano i messaggi, bensì eseguono e controllano un [*hash*](../secgloss/h-gly.md)di integrità.
+La **funzione DecryptMessage (Digest)** decrittografa un messaggio. Alcuni pacchetti non crittografano e decrittografano i messaggi, ma eseguono e controllano un [*hash di integrità*](../secgloss/h-gly.md).
 
-Il [*Security Support Provider*](../secgloss/s-gly.md) digest (SSP) fornisce la riservatezza di crittografia e decrittografia per i messaggi scambiati tra client e server solo come meccanismo SASL.
+Il provider [*SSP (Digest Security Support Provider)*](../secgloss/s-gly.md) fornisce la riservatezza di crittografia e decrittografia per i messaggi s scambiati tra client e server solo come meccanismo SASL.
 
 > [!Note]  
-> [**EncryptMessage (digest)**](encryptmessage--digest.md) e **DecryptMessage (digest)** possono essere chiamati contemporaneamente da due thread diversi in un contesto SSPI (Single [*Security Support Provider Interface*](../secgloss/s-gly.md) ) se un thread esegue la crittografia e l'altro esegue la decrittografia. Se più di un thread sta per essere crittografato o più di un thread viene decrittografato, ogni thread deve ottenere un contesto univoco.
+> [**EncryptMessage (Digest)**](encryptmessage--digest.md) e **DecryptMessage (Digest)** possono essere chiamati contemporaneamente da due thread diversi in un singolo contesto SSPI [*(Security Support Provider Interface)*](../secgloss/s-gly.md) se un thread è in fase di crittografia e l'altro sta decrittografando. Se più thread vengono crittografati o più thread vengono decrittografati, ogni thread deve ottenere un contesto univoco.
 
 ## <a name="syntax"></a>Sintassi
 
@@ -33,30 +33,34 @@ SECURITY_STATUS SEC_ENTRY DecryptMessage(
 
 ## <a name="parameters"></a>Parametri
 
-*phContext* \[ in\]
+*phContext* \[ Pollici\]
 
-Handle per il [*contesto di sicurezza*](../secgloss/s-gly.md) da utilizzare per decrittografare il messaggio.
+Handle per il contesto [*di sicurezza da*](../secgloss/s-gly.md) utilizzare per decrittografare il messaggio.
 
-*PMessage* \[ in uscita\]
+*pMessage* \[ in, out\]
 
-Puntatore a una struttura [**SecBufferDesc**](/windows/win32/api/sspi/ns-sspi-secbufferdesc) . In input la struttura fa riferimento a una o più strutture [**SecBuffer**](/windows/win32/api/sspi/ns-sspi-secbuffer) . Almeno uno di questi deve essere di tipo SECBUFFER \_ Data. Il buffer contiene il messaggio crittografato. Il messaggio crittografato viene decrittografato sul posto, sovrascrivendo il contenuto originale del buffer.
+Puntatore a una [**struttura SecBufferDesc.**](/windows/win32/api/sspi/ns-sspi-secbufferdesc) Nell'input la struttura fa riferimento a una o [**più strutture SecBuffer.**](/windows/win32/api/sspi/ns-sspi-secbuffer) Almeno uno di questi deve essere di tipo SECBUFFER \_ DATA. Tale buffer contiene il messaggio crittografato. Il messaggio crittografato viene decrittografato sul posto, sovrascrivendo il contenuto originale del buffer.
 
-Quando si usa il provider di servizi condivisi del digest, su input la struttura fa riferimento a una o più strutture [**SecBuffer**](/windows/win32/api/sspi/ns-sspi-secbuffer) . Uno di questi deve essere di tipo SECBUFFER \_ data o SECBUFFER \_ Stream e deve contenere il messaggio crittografato.
+Quando si usa il provider di servizi di configurazione digest, nell'input la struttura fa riferimento a una o più [**strutture SecBuffer.**](/windows/win32/api/sspi/ns-sspi-secbuffer) Uno di questi deve essere di tipo SECBUFFER DATA o SECBUFFER STREAM e \_ deve \_ contenere il messaggio crittografato.
 
-*MessageSeqNo* \[ in\]
+*MessageSeqNo* \[ Pollici\]
 
-Numero di sequenza previsto dall'applicazione di trasporto, se disponibile. Se l'applicazione di trasporto non mantiene i numeri di sequenza, questo parametro deve essere impostato su zero.
+Numero di sequenza previsto dall'applicazione di trasporto, se presente. Se l'applicazione di trasporto non gestisce i numeri di sequenza, questo parametro deve essere impostato su zero.
 
-Quando si utilizza SSP digest, questo parametro deve essere impostato su zero. SSP digest gestisce internamente i numeri di sequenza.
+Quando si usa il provider di servizi di configurazione digest, questo parametro deve essere impostato su zero. Il provider di servizi di configurazione digest gestisce internamente la numerazione delle sequenze.
 
-*pfQOP* \[ out\]
+*pfQOP* \[ Cambio\]
 
 Puntatore a una variabile di tipo **ULONG** che riceve flag specifici del pacchetto che indicano la qualità della protezione.
 
 Questo parametro può essere uno dei flag seguenti.
 
-<table><colgroup><col style="width: 50%" /><col style="width: 50%" /></colgroup><thead><tr class="header"><th>Valore</th><th>Significato</th></tr></thead><tbody><tr class="odd"><td><span id="SECQOP_WRAP_NO_ENCRYPT"></span><span id="secqop_wrap_no_encrypt"></span><dl> <dt><strong>SECQOP_WRAP_NO_ENCRYPT</strong></dt> </dl></td><td>Il messaggio non è stato crittografato, ma è stata generata un'intestazione o un trailer.<br/><blockquote>[!Note]<br />
-KERB_WRAP_NO_ENCRYPT ha lo stesso valore e lo stesso significato.</blockquote><br/></td></tr><tr class="even"><td><span id="SIGN_ONLY_"></span><span id="sign_only_"></span><dl> <dt><strong>SIGN_ONLY</strong></dt> </dl></td><td>Quando si utilizza il provider di servizi condivisi del digest, utilizzare questo flag quando il [*contesto di sicurezza*](../secgloss/s-gly.md) è impostato in modo da verificare solo la [*firma*](../secgloss/s-gly.md) . Per ulteriori informazioni, vedere [Quality of Protection](quality-of-protection.md).<br/></td></tr></tbody></table>
+
+| valore | Significato | 
+|-------|---------|
+| <span id="SECQOP_WRAP_NO_ENCRYPT"></span><span id="secqop_wrap_no_encrypt"></span><dl><dt><strong>SECQOP_WRAP_NO_ENCRYPT</strong></dt></dl> | Il messaggio non è stato crittografato, ma è stata prodotta un'intestazione o un trailer.<br /><blockquote>[!Note]<br />KERB_WRAP_NO_ENCRYPT ha lo stesso valore e lo stesso significato.</blockquote><br /> | 
+| <span id="SIGN_ONLY_"></span><span id="sign_only_"></span><dl><dt><strong>SIGN_ONLY</strong></dt></dl> | Quando si usa il provider di servizi di configurazione digest, usare questo flag quando il [*contesto di*](../secgloss/s-gly.md) sicurezza è impostato per verificare solo [*la*](../secgloss/s-gly.md) firma. Per altre informazioni, vedere [Quality of Protection.](quality-of-protection.md)<br /> | 
+
 
 ## <a name="return-value"></a>Valore restituito
 
@@ -66,33 +70,33 @@ Se la funzione non riesce a decrittografare il messaggio, restituisce uno dei co
 
 | Codice restituito                         | Descrizione                                                                                                                                                                  |
 |-------------------------------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| **SEC \_ E \_ buffer \_ troppo \_ piccolo**      | Il buffer dei messaggi è troppo piccolo. Utilizzato con il provider SSP del digest.                                                                                                                   |
-| **\_sistema di crittografia sec E \_ \_ \_ non valido** | La [*crittografia*](../secgloss/c-gly.md) scelta per il [*contesto di sicurezza*](../secgloss/s-gly.md) non è supportata. Utilizzato con il provider SSP del digest.                                                                                       |
-| **SEC \_ E \_ messaggio incompleto \_**     | I dati nel buffer di input sono incompleti. L'applicazione deve leggere più dati dal server e chiamare di nuovo [**DecryptMessage (digest)**](decryptmessage--digest.md) . |
-| **\_handle sec E \_ non valido \_**         | Handle di contesto non valido specificato nel parametro *phContext* . Utilizzato con il provider SSP del digest.                                                                     |
-| **SEC \_ E \_ messaggio \_ modificato**        | Il messaggio è stato modificato. Utilizzato con il provider SSP del digest.                                                                                                                      |
-| **SEC \_ E \_ fuori \_ \_ sequenza**       | Il messaggio non è stato ricevuto nella sequenza corretta.                                                                                                                        |
-| **SEC \_ E \_ qop \_ non \_ supportati**     | Il [*contesto di sicurezza*](../secgloss/s-gly.md)non supporta né la riservatezza né l' [*integrità*](../secgloss/i-gly.md) . Utilizzato con il provider SSP del digest.                           |
+| **BUFFER \_ SEC E TROPPO \_ \_ \_ PICCOLO**      | Il buffer dei messaggi è troppo piccolo. Usato con il provider di servizi di servizi di ssp digest.                                                                                                                   |
+| **SEC \_ E \_ CRYPTO \_ SYSTEM \_ INVALID** | La [*crittografia scelta*](../secgloss/c-gly.md) per il contesto di [*sicurezza*](../secgloss/s-gly.md) non è supportata. Usato con il provider di servizi di servizi di ssp digest.                                                                                       |
+| **MESSAGGIO \_ \_ INCOMPLETO \_ SEC E**     | I dati nel buffer di input sono incompleti. L'applicazione deve leggere altri dati dal server e chiamare di nuovo [**DecryptMessage (Digest).**](decryptmessage--digest.md) |
+| **HANDLE SEC \_ E \_ NON \_ VALIDO**         | Nel parametro *phContext* è stato specificato un handle di contesto non valido. Usato con il provider di servizi di servizi di ssp digest.                                                                     |
+| **SEC \_ E \_ MESSAGE \_ ALTERED**        | Il messaggio è stato modificato. Usato con il provider di servizi di servizi di ssp digest.                                                                                                                      |
+| **SEC \_ E \_ OUT \_ OF \_ SEQUENCE**       | Il messaggio non è stato ricevuto nella sequenza corretta.                                                                                                                        |
+| **SEC \_ E \_ QOP NON \_ \_ SUPPORTATO**     | La riservatezza e [*l'integrità non*](../secgloss/i-gly.md) sono supportate dal contesto [*di sicurezza*](../secgloss/s-gly.md). Usato con il provider di servizi di servizi di ssp digest.                           |
 
 ## <a name="remarks"></a>Commenti
 
-A volte un'applicazione legge i dati dalla parte remota, tenta di decrittografarli usando **DecryptMessage (digest)** e rileva che **DecryptMessage (digest)** è riuscito, ma i buffer di output sono vuoti. Si tratta di un comportamento normale che le applicazioni devono essere in grado di gestire.
+In alcuni casi un'applicazione leggerà i dati dall'entità remota, tenterà di decrittografarlo usando **DecryptMessage (Digest)** e scoprirà che **DecryptMessage (Digest)** ha avuto esito positivo, ma i buffer di output sono vuoti. Si tratta di un comportamento normale e le applicazioni devono essere in grado di gestire il problema.
 
-**Windows XP:** Questa funzione è nota anche come **UnsealMessage**. Le applicazioni devono ora usare solo **DecryptMessage (digest)** .
+**Windows XP:** Questa funzione era nota anche come **UnsealMessage.** Le applicazioni devono ora usare **solo DecryptMessage (Digest).**
 
 ## <a name="requirements"></a>Requisiti
 
-| Requisito | Valore |
+| Requisito | valore |
 |--------------------------|-------------------------------------------|
-| Client minimo supportato | \[Solo app desktop Windows XP\]          |
-| Server minimo supportato | \[Solo app desktop Windows Server 2003\] |
-| Intestazione                   | SSPI. h (include Security. h)               |
-| Libreria                  | Secur32. lib                               |
+| Client minimo supportato | Windows Solo \[ app desktop XP\]          |
+| Server minimo supportato | Windows Solo app desktop di Server 2003 \[\] |
+| Intestazione                   | Sspi.h (includere Security.h)               |
+| Libreria                  | Secur32.lib                               |
 | DLL                      | Secur32.dll                               |
 
 ## <a name="see-also"></a>Vedi anche
 
 - [Funzioni SSPI](authentication-functions.md#sspi-functions)
-- [**EncryptMessage (digest)**](encryptmessage--digest.md)
+- [**EncryptMessage (Digest)**](encryptmessage--digest.md)
 - [**SecBuffer**](/windows/win32/api/sspi/ns-sspi-secbuffer)
 - [**SecBufferDesc**](/windows/win32/api/sspi/ns-sspi-secbufferdesc)

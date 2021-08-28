@@ -17,12 +17,12 @@ api_location:
 topic_type:
 - APIRef
 - kbSyntax
-ms.openlocfilehash: 439f1e4461308076d2e349bf1bc2638db6754fe5
-ms.sourcegitcommit: a47bd86f517de76374e4fff33cfeb613eb259a7e
+ms.openlocfilehash: 22e2bc8654306031e417532ea8eb3c7b8df8c5bc
+ms.sourcegitcommit: c276a8912787b2cda74dcf54eb96df961bb1188b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/06/2021
-ms.locfileid: "106304301"
+ms.lasthandoff: 08/20/2021
+ms.locfileid: "122632139"
 ---
 # <a name="span-idvspixengineipixenginesingletonspanipixenginesingleton-interface"></a><span id="vspixengine.ipixenginesingleton"></span>Interfaccia IPixEngineSingleton
 
@@ -30,11 +30,11 @@ Determina se il motore supporta o meno un'istanza singleton.
 
 ## <a name="members"></a>Membri
 
-L'interfaccia **IPixEngineSingleton** eredita dall'interfaccia [**IUnknown**](/windows/desktop/api/unknwn/nn-unknwn-iunknown) ma non dispone di membri aggiuntivi.
+**L'interfaccia IPixEngineSingleton** eredita dall'interfaccia [**IUnknown**](/windows/desktop/api/unknwn/nn-unknwn-iunknown) ma non dispone di membri aggiuntivi.
 
 ## <a name="requirements"></a>Requisiti
 
-<table><colgroup><col style="width: 50%" /><col style="width: 50%" /></colgroup><tbody><tr class="odd"><td><p>Intestazione</p></td><td>Vspixengine. h</td></tr></tbody></table>
+<table><colgroup><col  /><col  /></colgroup><tbody><tr class="odd"><td><p>Intestazione</p></td><td>Vspixengine.h</td></tr></tbody></table>
 
  
 

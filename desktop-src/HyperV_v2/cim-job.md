@@ -1,7 +1,7 @@
 ---
-description: Elemento logico che rappresenta un'unità di lavoro da eseguire, ad esempio uno script o un processo di stampa. Un processo è diverso da un processo perché un processo può essere pianificato o accodato e l'esecuzione non è limitata a un singolo sistema.
+description: Elemento logico che rappresenta un'unità di lavoro da eseguire, ad esempio uno script o un processo di stampa. Un processo è distinto da un processo perché un processo può essere pianificato o accodato e la relativa esecuzione non è limitata a un singolo sistema.
 ms.assetid: 35e35c3f-617b-429b-b68f-fa0c0c330e92
-title: Classe CIM_Job (gestione Hyper-V)
+title: CIM_Job classe (gestione Hyper-V)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -34,16 +34,16 @@ api_type:
 - DllExport
 api_location:
 - vmms.exe
-ms.openlocfilehash: 6b59a162d36ee677ad00c8cc574282f970bc1d80
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 8eb8f63ec9d2cdd881a2ba0946f83a40fb8be866
+ms.sourcegitcommit: 9b5faa61c38b2d0c432b7f2dbee8c127b0e28a7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "103968028"
+ms.lasthandoff: 08/19/2021
+ms.locfileid: "122474587"
 ---
-# <a name="cim_job-class-hyper-v-management"></a>Classe CIM_Job (gestione Hyper-V)
+# <a name="cim_job-class-hyper-v-management"></a>CIM_Job classe (gestione Hyper-V)
 
-Elemento logico che rappresenta un'unità di lavoro da eseguire, ad esempio uno script o un processo di stampa. Un processo è diverso da un processo perché un processo può essere pianificato o accodato e l'esecuzione non è limitata a un singolo sistema.
+Elemento logico che rappresenta un'unità di lavoro da eseguire, ad esempio uno script o un processo di stampa. Un processo è distinto da un processo perché un processo può essere pianificato o accodato e la relativa esecuzione non è limitata a un singolo sistema.
 
 ## <a name="syntax"></a>Sintassi
 
@@ -77,40 +77,22 @@ class CIM_Job : CIM_LogicalElement
 
 ## <a name="members"></a>Members
 
-La classe del **\_ processo CIM** presenta questi tipi di membri:
+La **classe \_ Di processo CIM** ha questi tipi di membri:
 
 -   [Metodi](#methods)
 -   [Proprietà](#properties)
 
 ### <a name="methods"></a>Metodi
 
-La classe del **\_ processo CIM** presenta questi metodi.
+La **classe di \_ processo CIM** include questi metodi.
 
 
 
-<table>
-<colgroup>
-<col style="width: 50%" />
-<col style="width: 50%" />
-</colgroup>
-<thead>
-<tr class="header">
-<th style="text-align: left;">Metodo</th>
-<th style="text-align: left;">Descrizione</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td style="text-align: left;"><a href="cim-job-killjob.md"><strong>KillJob</strong></a></td>
-<td style="text-align: left;">Questo metodo è deprecato. Usare invece il metodo <strong>RequestStateChange</strong> .<br/>
-<blockquote>
-[!Note]<br />
-Descrizione deprecata: arresta un processo.
-</blockquote>
-<br/></td>
-</tr>
-</tbody>
-</table>
+
+| Metodo | Descrizione | 
+|--------|-------------|
+| <a href="cim-job-killjob.md"><strong>KillJob</strong></a> | Questo metodo è deprecato. Usare invece il <strong>metodo RequestStateChange.</strong><br /><blockquote>[!Note]<br />Descrizione deprecata: arresta un processo.</blockquote><br /> | 
+
 
 
 
@@ -118,23 +100,23 @@ Descrizione deprecata: arresta un processo.
 
 ### <a name="properties"></a>Proprietà
 
-La classe del **\_ processo CIM** dispone di queste proprietà.
+La **classe \_ di processo CIM** ha queste proprietà.
 
 <dl> <dt>
 
 **DeleteOnCompletion**
 </dt> <dd> <dl> <dt>
 
-Tipo di dati: **Boolean**
+Tipo di dati: **booleano**
 </dt> <dt>
 
-Tipo di accesso: lettura/scrittura
+Tipo di accesso: Lettura/Scrittura
 </dt> </dl>
 
-**True** per eliminare il processo al completamento; in caso contrario, **false**.
+**True** per eliminare il processo al completamento. in caso contrario, **false**.
 
 > [!Note]  
-> Questa proprietà non eliminerà i processi che vengono completati prima che questa proprietà sia impostata su **true**.
+> Questa proprietà non eliminerà i processi completati prima che questa proprietà sia impostata su **True.**
 
  
 
@@ -143,7 +125,7 @@ Tipo di accesso: lettura/scrittura
 **ElapsedTime**
 </dt> <dd> <dl> <dt>
 
-Tipo di dati: **DateTime**
+Tipo di dati: **datetime**
 </dt> <dt>
 
 Tipo di accesso: sola lettura
@@ -156,52 +138,52 @@ Durata dell'esecuzione del processo.
 **ErrorCode**
 </dt> <dd> <dl> <dt>
 
-Tipo di dati: **UInt16**
+Tipo di dati: **uint16**
 </dt> <dt>
 
 Tipo di accesso: sola lettura
 </dt> <dt>
 
-Qualificatori: [**ModelCorrespondence**](/windows/desktop/WmiSdk/standard-qualifiers) ("**\_ processo CIM**.**ErrorDescription**")
+Qualificatori: [**ModelCorrespondence**](/windows/desktop/WmiSdk/standard-qualifiers) ("**PROCESSO CIM \_**.**ErrorDescription**")
 </dt> </dl>
 
-Codice di errore specifico del fornitore che acquisisce le informazioni di elaborazione per i processi ricorrenti. Se il processo è stato completato senza errori, il valore deve essere impostato su zero.
+Codice di errore specifico del fornitore che acquisisce le informazioni di elaborazione per i processi ricorrenti. Il valore deve essere impostato su zero se il processo è stato completato senza errori.
 
 </dd> <dt>
 
 **ErrorDescription**
 </dt> <dd> <dl> <dt>
 
-Tipo di dati: **String**
+Tipo di dati: **stringa**
 </dt> <dt>
 
 Tipo di accesso: sola lettura
 </dt> <dt>
 
-Qualificatori: [**ModelCorrespondence**](/windows/desktop/WmiSdk/standard-qualifiers) ("**\_ processo CIM**.**ErrorCode**")
+Qualificatori: [**ModelCorrespondence**](/windows/desktop/WmiSdk/standard-qualifiers) ("**PROCESSO CIM \_**.**ErrorCode**")
 </dt> </dl>
 
-Stringa in formato libero che contiene una descrizione del codice di errore corrispondente nella proprietà **ErrorCode** .
+Stringa in formato libero contenente una descrizione del codice di errore corrispondente nella **proprietà ErrorCode.**
 
 </dd> <dt>
 
 **JobRunTimes**
 </dt> <dd> <dl> <dt>
 
-Tipo di dati: **UInt32**
+Tipo di dati: **uint32**
 </dt> <dt>
 
-Tipo di accesso: lettura/scrittura
+Tipo di accesso: Lettura/Scrittura
 </dt> </dl>
 
-Il numero di volte in cui eseguire il processo.
+Numero di volte in cui eseguire il processo.
 
 </dd> <dt>
 
 **Stato processo**
 </dt> <dd> <dl> <dt>
 
-Tipo di dati: **String**
+Tipo di dati: **stringa**
 </dt> <dt>
 
 Tipo di accesso: sola lettura
@@ -217,13 +199,13 @@ Stringa in formato libero che rappresenta lo stato del processo.
 **LocalOrUtcTime**
 </dt> <dd> <dl> <dt>
 
-Tipo di dati: **UInt16**
+Tipo di dati: **uint16**
 </dt> <dt>
 
-Tipo di accesso: lettura/scrittura
+Tipo di accesso: Lettura/Scrittura
 </dt> </dl>
 
-Indica se le ore nelle proprietà **RunStartInterval** e **UntilTime** rappresentano le ore locali o l'ora UTC.
+Indica se le ore nelle proprietà **RunStartInterval** e **UntilTime** rappresentano ora locale o ora UTC.
 
 <dt>
 
@@ -246,36 +228,36 @@ Indica se le ore nelle proprietà **RunStartInterval** e **UntilTime** rappresen
 **Notificare**
 </dt> <dd> <dl> <dt>
 
-Tipo di dati: **String**
+Tipo di dati: **stringa**
 </dt> <dt>
 
-Tipo di accesso: lettura/scrittura
+Tipo di accesso: Lettura/Scrittura
 </dt> </dl>
 
-Utente a cui inviare una notifica quando un processo viene completato o ha esito negativo.
+L'utente a cui inviare una notifica quando un processo viene completato o ha esito negativo.
 
 </dd> <dt>
 
 **OtherRecoveryAction**
 </dt> <dd> <dl> <dt>
 
-Tipo di dati: **String**
+Tipo di dati: **stringa**
 </dt> <dt>
 
 Tipo di accesso: sola lettura
 </dt> <dt>
 
-Qualificatori: [**ModelCorrespondence**](/windows/desktop/WmiSdk/standard-qualifiers) ("**\_ processo CIM**.**RecoveryAction**")
+Qualificatori: [**ModelCorrespondence**](/windows/desktop/WmiSdk/standard-qualifiers) ("**PROCESSO CIM \_**.**RecoveryAction ")**
 </dt> </dl>
 
-Stringa che descrive l'azione di ripristino quando la proprietà **RecoveryAction** è **diversa** ("1").
+Stringa che descrive l'azione di ripristino quando la **proprietà RecoveryAction** **è Other** ("1").
 
 </dd> <dt>
 
 **Proprietario**
 </dt> <dd> <dl> <dt>
 
-Tipo di dati: **String**
+Tipo di dati: **stringa**
 </dt> <dt>
 
 Tipo di accesso: sola lettura
@@ -284,23 +266,23 @@ Tipo di accesso: sola lettura
 Qualificatori: [**ModelCorrespondence**](/windows/desktop/WmiSdk/standard-qualifiers) ("[**CIM \_ OwningJobElement**](cim-owningjobelement.md).")
 </dt> </dl>
 
-Utente che ha inviato il processo oppure il nome del servizio o del metodo che ha richiesto il processo.
+L'utente che ha inviato il processo o il nome del servizio o del metodo che ha richiesto il processo.
 
 </dd> <dt>
 
 **PercentComplete**
 </dt> <dd> <dl> <dt>
 
-Tipo di dati: **UInt16**
+Tipo di dati: **uint16**
 </dt> <dt>
 
 Tipo di accesso: sola lettura
 </dt> <dt>
 
-Qualificatori: [**unità**](/windows/desktop/WmiSdk/standard-qualifiers) ("percentuale"), [**MinValue**](/windows/desktop/WmiSdk/standard-qualifiers) (0), [**MaxValue**](/windows/desktop/WmiSdk/standard-qualifiers) (101), **punito** ("percentuale")
+Qualificatori: [**Units**](/windows/desktop/WmiSdk/standard-qualifiers) ("Percent"), [**MinValue**](/windows/desktop/WmiSdk/standard-qualifiers) (0), [**MaxValue**](/windows/desktop/WmiSdk/standard-qualifiers) (101), **PUnit** ("percent")
 </dt> </dl>
 
-Percentuale del processo completato.
+Percentuale di completamento del processo.
 
 > [!Note]  
 > Il valore "101" non è definito e non sarà consentito nella successiva revisione principale della specifica.
@@ -312,10 +294,10 @@ Percentuale del processo completato.
 **Priorità**
 </dt> <dd> <dl> <dt>
 
-Tipo di dati: **UInt32**
+Tipo di dati: **uint32**
 </dt> <dt>
 
-Tipo di accesso: lettura/scrittura
+Tipo di accesso: Lettura/Scrittura
 </dt> </dl>
 
 Importanza del processo. Più è basso il numero, maggiore sarà la priorità.
@@ -325,16 +307,16 @@ Importanza del processo. Più è basso il numero, maggiore sarà la priorità.
 **RecoveryAction**
 </dt> <dd> <dl> <dt>
 
-Tipo di dati: **UInt16**
+Tipo di dati: **uint16**
 </dt> <dt>
 
 Tipo di accesso: sola lettura
 </dt> <dt>
 
-Qualificatori: [**ModelCorrespondence**](/windows/desktop/WmiSdk/standard-qualifiers) ("**\_ processo CIM**.**OtherRecoveryAction**")
+Qualificatori: [**ModelCorrespondence**](/windows/desktop/WmiSdk/standard-qualifiers) ("**PROCESSO CIM \_**.**OtherRecoveryAction**")
 </dt> </dl>
 
-Descrive l'azione di ripristino da eseguire in caso di esito negativo di un processo di esecuzione.
+Descrive l'azione di ripristino da eseguire quando un processo di esecuzione ha esito negativo.
 
 <dt>
 
@@ -345,7 +327,7 @@ Descrive l'azione di ripristino da eseguire in caso di esito negativo di un proc
 
 </dt> <dd>
 
-Non è noto come azione di ripristino da eseguire.
+Non si sa quale azione di ripristino intraprendere.
 
 </dd> <dt>
 
@@ -356,7 +338,7 @@ Non è noto come azione di ripristino da eseguire.
 
 </dt> <dd>
 
-L'azione di ripristino verrà specificata nella proprietà **OtherRecoveryAction** .
+L'azione di ripristino verrà specificata nella **proprietà OtherRecoveryAction.**
 
 </dd> <dt>
 
@@ -367,13 +349,13 @@ L'azione di ripristino verrà specificata nella proprietà **OtherRecoveryAction
 
 </dt> <dd>
 
-Arrestare l'esecuzione del processo e aggiornarne lo stato in modo appropriato.
+Arrestare l'esecuzione del processo e aggiornarne in modo appropriato lo stato.
 
 </dd> <dt>
 
 <span id="Continue_With_Next_Job"></span><span id="continue_with_next_job"></span><span id="CONTINUE_WITH_NEXT_JOB"></span>
 
-<span id="Continue_With_Next_Job"></span><span id="continue_with_next_job"></span><span id="CONTINUE_WITH_NEXT_JOB"></span>**Continua con il processo successivo** (3)
+<span id="Continue_With_Next_Job"></span><span id="continue_with_next_job"></span><span id="CONTINUE_WITH_NEXT_JOB"></span>**Continua con processo successivo** (3)
 
 
 </dt> <dd>
@@ -384,12 +366,12 @@ Continuare con il processo successivo nella coda.
 
 <span id="Re-run_Job"></span><span id="re-run_job"></span><span id="RE-RUN_JOB"></span>
 
-<span id="Re-run_Job"></span><span id="re-run_job"></span><span id="RE-RUN_JOB"></span>**Esegui di nuovo il processo** (4)
+<span id="Re-run_Job"></span><span id="re-run_job"></span><span id="RE-RUN_JOB"></span>**Eseguire di nuovo il processo** (4)
 
 
 </dt> <dd>
 
-Il processo deve essere eseguito nuovamente.
+Il processo deve essere rieseguiti.
 
 </dd> <dt>
 
@@ -400,7 +382,7 @@ Il processo deve essere eseguito nuovamente.
 
 </dt> <dd>
 
-Eseguire il processo associato usando la relazione di **RecoveryJob** . Si noti che il processo di ripristino deve essere già presente nella coda da cui verrà eseguito.
+Eseguire il processo associato usando la **relazione RecoveryJob.** Si noti che il processo di ripristino deve essere già presente nella coda da cui verrà eseguito.
 
 </dd> </dl>
 
@@ -412,13 +394,13 @@ Eseguire il processo associato usando la relazione di **RecoveryJob** . Si noti 
 Tipo di dati: **sint8**
 </dt> <dt>
 
-Tipo di accesso: lettura/scrittura
+Tipo di accesso: Lettura/scrittura
 </dt> <dt>
 
-Qualificatori: [**MinValue**](/windows/desktop/WmiSdk/standard-qualifiers) (-31), [**MaxValue**](/windows/desktop/WmiSdk/standard-qualifiers) (31), [**ModelCorrespondence**](/windows/desktop/WmiSdk/standard-qualifiers) ("**\_ processo CIM**.**RunMonth**","**\_ processo CIM**.**RunDayOfWeek**","**\_ processo CIM**.**RunStartInterval**")
+Qualificatori: [**MinValue**](/windows/desktop/WmiSdk/standard-qualifiers) (-31), [**MaxValue**](/windows/desktop/WmiSdk/standard-qualifiers) (31), [**ModelCorrespondence**](/windows/desktop/WmiSdk/standard-qualifiers) ("**CIM \_ Job**.**RunMonth**", "**PROCESSO CIM \_**.**RunDayOfWeek**", "**Processo CIM \_**.**RunStartInterval**")
 </dt> </dl>
 
-Intero utilizzato in combinazione con la proprietà **RunDayOfWeek** per indicare il giorno in cui il processo viene elaborato; in alternativa, se **RunDayOfWeek** è impostato su zero, **RunDay** indica il giorno del mese in cui viene elaborato il processo. Se **RunDay** è un numero intero negativo, specifica un giorno relativo alla fine del mese o, se **RunDay** è un numero intero positivo, specifica un giorno relativo all'inizio del mese.
+Intero utilizzato in combinazione con la **proprietà RunDayOfWeek** per indicare il giorno di elaborazione del processo. oppure, se **RunDayOfWeek** è impostato su zero, **RunDay** indica il giorno del mese in cui viene elaborato il processo. Se **RunDay** è un numero intero negativo, specifica un giorno relativo alla fine del mese oppure, se **RunDay** è un numero intero positivo, specifica un giorno relativo all'inizio del mese.
 
 </dd> <dt>
 
@@ -428,33 +410,33 @@ Intero utilizzato in combinazione con la proprietà **RunDayOfWeek** per indicar
 Tipo di dati: **sint8**
 </dt> <dt>
 
-Tipo di accesso: lettura/scrittura
+Tipo di accesso: Lettura/scrittura
 </dt> <dt>
 
-Qualificatori: [**ModelCorrespondence**](/windows/desktop/WmiSdk/standard-qualifiers) ("**\_ processo CIM**.**RunMonth**","**\_ processo CIM**.**RunDay**","**\_ processo CIM**.**RunStartInterval**")
+Qualificatori: [**ModelCorrespondence**](/windows/desktop/WmiSdk/standard-qualifiers) ("**PROCESSO CIM \_**.**RunMonth**", "**PROCESSO CIM \_**.**RunDay**", "**PROCESSO CIM \_**.**RunStartInterval**")
 </dt> </dl>
 
-Intero utilizzato in combinazione con la proprietà **RunDay** per indicare il giorno in cui il processo viene elaborato; in alternativa, se **RunDayOfWeek** è impostato su zero, **RunDay** indica il giorno del mese in cui viene elaborato il processo.
+Intero utilizzato in combinazione con la **proprietà RunDay** per indicare il giorno in cui viene elaborato il processo. oppure, se **RunDayOfWeek** è impostato su zero, **RunDay** indica il giorno del mese in cui viene elaborato il processo.
 
 <dt>
 
 <span id="-Saturday"></span><span id="-saturday"></span><span id="-SATURDAY"></span>
 
-**-Sabato** (-7)
+**-Saturday** (-7)
 
 
 </dt> <dd></dd> <dt>
 
 <span id="-Friday"></span><span id="-friday"></span><span id="-FRIDAY"></span>
 
-**-Venerdì** (-6)
+**-Friday** (-6)
 
 
 </dt> <dd></dd> <dt>
 
 <span id="-Thursday"></span><span id="-thursday"></span><span id="-THURSDAY"></span>
 
-**-Giovedi** (-5)
+**-Thursday** (-5)
 
 
 </dt> <dd></dd> <dt>
@@ -468,21 +450,21 @@ Intero utilizzato in combinazione con la proprietà **RunDay** per indicare il g
 
 <span id="-Tuesday"></span><span id="-tuesday"></span><span id="-TUESDAY"></span>
 
-**-Martedì** (-3)
+**-Tuesday** (-3)
 
 
 </dt> <dd></dd> <dt>
 
 <span id="-Monday"></span><span id="-monday"></span><span id="-MONDAY"></span>
 
-**-Lunedì** (-2)
+**-Monday** (-2)
 
 
 </dt> <dd></dd> <dt>
 
 <span id="-Sunday"></span><span id="-sunday"></span><span id="-SUNDAY"></span>
 
-**-Domenica** (-1)
+**-Sunday** (-1)
 
 
 </dt> <dd></dd> <dt>
@@ -524,7 +506,7 @@ Intero utilizzato in combinazione con la proprietà **RunDay** per indicare il g
 
 <span id="Thursday"></span><span id="thursday"></span><span id="THURSDAY"></span>
 
-**Giovedi** (5)
+**Giovedì** (5)
 
 
 </dt> <dd></dd> <dt>
@@ -548,13 +530,13 @@ Intero utilizzato in combinazione con la proprietà **RunDay** per indicare il g
 **RunMonth**
 </dt> <dd> <dl> <dt>
 
-Tipo di dati: **Uint8**
+Tipo di dati: **uint8**
 </dt> <dt>
 
-Tipo di accesso: lettura/scrittura
+Tipo di accesso: Lettura/scrittura
 </dt> <dt>
 
-Qualificatori: [**ModelCorrespondence**](/windows/desktop/WmiSdk/standard-qualifiers) ("**\_ processo CIM**.**RunDay**","**\_ processo CIM**.**RunDayOfWeek**","**\_ processo CIM**.**RunStartInterval**")
+Qualificatori: [**ModelCorrespondence**](/windows/desktop/WmiSdk/standard-qualifiers) ("**PROCESSO CIM \_**.**RunDay**", "**PROCESSO CIM \_**.**RunDayOfWeek**", "**Processo CIM \_**.**RunStartInterval**")
 </dt> </dl>
 
 Mese in cui viene elaborato il processo.
@@ -650,57 +632,57 @@ Mese in cui viene elaborato il processo.
 **RunStartInterval**
 </dt> <dd> <dl> <dt>
 
-Tipo di dati: **DateTime**
+Tipo di dati: **datetime**
 </dt> <dt>
 
-Tipo di accesso: lettura/scrittura
+Tipo di accesso: Lettura/scrittura
 </dt> <dt>
 
-Qualificatori: [**ModelCorrespondence**](/windows/desktop/WmiSdk/standard-qualifiers) ("**\_ processo CIM**.**RunMonth**","**\_ processo CIM**.**RunDay**","**\_ processo CIM**.**RunDayOfWeek**","**\_ processo CIM**.**RunStartInterval**")
+Qualificatori: [**ModelCorrespondence**](/windows/desktop/WmiSdk/standard-qualifiers) ("**PROCESSO CIM \_**.**RunMonth**", "**PROCESSO CIM \_**.**RunDay**", "**PROCESSO CIM \_**.**RunDayOfWeek**", "**Processo CIM \_**.**RunStartInterval**")
 </dt> </dl>
 
-Intervallo di tempo dopo la mezzanotte di elaborazione del processo. Ad esempio, "00000000020000.000000:000" indica che il processo viene eseguito in data o dopo due ore o ora locale o ora UTC (UTC viene specificato con la proprietà **LocalOrUtcTime** ).
+Intervallo di tempo dopo la mezzanotte in cui viene elaborato il processo. Ad esempio, "00000000020000.000000:000" indica che il processo deve essere eseguito in o dopo le due ore dell'ora locale o ora UTC (l'ora UTC è specificata con la **proprietà LocalOrUtcTime).**
 
 </dd> <dt>
 
 **ScheduledStartTime**
 </dt> <dd> <dl> <dt>
 
-Tipo di dati: **DateTime**
+Tipo di dati: **datetime**
 </dt> <dt>
 
-Tipo di accesso: lettura/scrittura
+Tipo di accesso: Lettura/scrittura
 </dt> <dt>
 
-Qualificatori: [**deprecato**](/windows/desktop/WmiSdk/standard-wmi-qualifiers) ("**\_ processo CIM**.**RunMonth**","**\_ processo CIM**.**RunDay**","**\_ processo CIM**.**RunDayOfWeek**","**\_ processo CIM**.**RunStartInterval**")
+Qualificatori: [**deprecati**](/windows/desktop/WmiSdk/standard-wmi-qualifiers) ("**Processo CIM \_**.**RunMonth**", "**PROCESSO CIM \_**.**RunDay**", "**PROCESSO CIM \_**.**RunDayOfWeek**", "**Processo CIM \_**.**RunStartInterval**")
 </dt> </dl>
 
 > [!Note]  
-> Questa proprietà è deprecata. È invece consigliabile usare le proprietà **RunMonth**, **RunDay**, **RunDayOfWeek** e **RunStartInterval** .
+> Questa proprietà è deprecata. È invece consigliabile usare le **proprietà RunMonth**, **RunDay**, **RunDayOfWeek** e **RunStartInterval.**
 
  
 
-Ora pianificata per l'avvio del processo corrente. Questa ora può essere rappresentata da una data e un'ora oppure da un intervallo relativo all'ora in cui la proprietà viene richiesta. Un valore di tutti gli zeri indica che il processo è già in esecuzione.
+Ora pianificata per l'avvio del processo corrente. Questa ora può essere rappresentata da una data e un'ora o da un intervallo relativo all'ora in cui è richiesta la proprietà . Un valore di tutti gli zeri indica che il processo è già in esecuzione.
 
 </dd> <dt>
 
 **StartTime**
 </dt> <dd> <dl> <dt>
 
-Tipo di dati: **DateTime**
+Tipo di dati: **datetime**
 </dt> <dt>
 
 Tipo di accesso: sola lettura
 </dt> </dl>
 
-Ora di inizio del processo. Questa ora può essere rappresentata da una data e un'ora o da un intervallo relativo all'ora in cui è richiesta la proprietà.
+Ora di avvio del processo. Questa ora può essere rappresentata da una data e un'ora o da un intervallo relativo all'ora in cui è richiesta la proprietà .
 
 </dd> <dt>
 
 **TimeSubmitted**
 </dt> <dd> <dl> <dt>
 
-Tipo di dati: **DateTime**
+Tipo di dati: **datetime**
 </dt> <dt>
 
 Tipo di accesso: sola lettura
@@ -713,16 +695,16 @@ Ora di invio del processo. Un valore di tutti gli zeri indica che l'elemento pad
 **UntilTime**
 </dt> <dd> <dl> <dt>
 
-Tipo di dati: **DateTime**
+Tipo di dati: **datetime**
 </dt> <dt>
 
-Tipo di accesso: lettura/scrittura
+Tipo di accesso: Lettura/scrittura
 </dt> <dt>
 
-Qualificatori: [**ModelCorrespondence**](/windows/desktop/WmiSdk/standard-qualifiers) ("**\_ processo CIM**.**LocalOrUtcTime**")
+Qualificatori: [**ModelCorrespondence**](/windows/desktop/WmiSdk/standard-qualifiers) ("**PROCESSO CIM \_**.**LocalOrUtcTime**")
 </dt> </dl>
 
-Tempo trascorso il quale il processo diventa non valido o deve essere arrestato. L'ora può essere rappresentata da una data e un'ora o da un intervallo relativo all'ora in cui questa proprietà è richiesta. Un valore di tutte le nove indica che il processo può essere eseguito A tempo indefinito.
+Ora dopo la quale il processo diventa non valido o deve essere arrestato. L'ora può essere rappresentata da una data e da un'ora oppure da un intervallo relativo all'ora in cui è richiesta questa proprietà. Un valore di tutte le nove indica che il processo può essere eseguito per un periodo illimitato.
 
 </dd> </dl>
 
@@ -730,12 +712,12 @@ Tempo trascorso il quale il processo diventa non valido o deve essere arrestato.
 
 
 
-| Requisito | Valore |
+| Requisito | valore |
 |-------------------------------------|---------------------------------------------------------------------------------------------------------|
 | Client minimo supportato<br/> | Windows 8<br/>                                                                                    |
 | Server minimo supportato<br/> | Windows Server 2012<br/>                                                                          |
-| Spazio dei nomi<br/>                | \\Virtualizzazione radice \\ v2<br/>                                                                     |
-| MOF<br/>                      | <dl> <dt>WindowsVirtualization. v2. mof</dt> </dl> |
+| Spazio dei nomi<br/>                | Virtualizzazione \\ radice \\ v2<br/>                                                                     |
+| MOF<br/>                      | <dl> <dt>WindowsVirtualization.V2.mof</dt> </dl> |
 | DLL<br/>                      | <dl> <dt>Vmms.exe</dt> </dl>                     |
 
 
@@ -744,7 +726,7 @@ Tempo trascorso il quale il processo diventa non valido o deve essere arrestato.
 
 <dl> <dt>
 
-[**\_LogicalElement CIM**](cim-logicalelement.md)
+[**CIM \_ LogicalElement**](cim-logicalelement.md)
 </dt> </dl>
 
  

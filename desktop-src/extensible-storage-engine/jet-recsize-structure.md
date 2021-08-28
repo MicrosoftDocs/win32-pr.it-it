@@ -1,5 +1,5 @@
 ---
-description: 'Altre informazioni su: JET_RECSIZE struttura'
+description: 'Altre informazioni su: JET_RECSIZE Structure'
 title: JET_RECSIZE struttura
 TOCTitle: JET_RECSIZE Structure
 ms:assetid: bb2a63bb-7956-46c2-9791-0d0678a6c366
@@ -15,12 +15,12 @@ api_type:
 - COM
 api_location: ''
 ROBOTS: INDEX,FOLLOW
-ms.openlocfilehash: a7ea4520a75e83c77a6403a583e9131a15df337b
-ms.sourcegitcommit: 4665ebce0c106bdb52eef36e544280b496b6f50b
+ms.openlocfilehash: 4fd0f59c821fa80d8de46f97e05aa1944354018e
+ms.sourcegitcommit: 9b5faa61c38b2d0c432b7f2dbee8c127b0e28a7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/26/2021
-ms.locfileid: "122988230"
+ms.lasthandoff: 08/19/2021
+ms.locfileid: "122475947"
 ---
 # <a name="jet_recsize-structure"></a>JET_RECSIZE struttura
 
@@ -29,7 +29,7 @@ _**Si applica a:** Windows | Windows Server_
 
 ## <a name="jet_recsize-structure"></a>JET_RECSIZE struttura
 
-La **JET_RECSIZE** viene usata da [JetGetRecordSize](./jetgetrecordsize-function.md) per restituire informazioni sui requisiti di utilizzo di un record nello spazio dati utente, nel numero di colonne del set, nel numero di valori e nello spazio di sovraccarico della struttura dei record ESE.
+La **JET_RECSIZE** utilizzata da [JetGetRecordSize](./jetgetrecordsize-function.md) per restituire informazioni sui requisiti di utilizzo di un record nello spazio dati utente, sul numero di colonne del set, sul numero di valori e sullo spazio di sovraccarico della struttura dei record ESE.
 
 **Windows Vista:** La **JET_RECSIZE** è stata introdotta in Windows Vista.
 
@@ -52,23 +52,23 @@ La **JET_RECSIZE** viene usata da [JetGetRecordSize](./jetgetrecordsize-function
 
 Set di dati utente nel record.
 
-**Nota**  La dimensione della chiave non è inclusa in questo.
+**Nota:**  Le dimensioni della chiave non sono incluse in questo.
 
 **cbLongValueData**
 
 Dati utente associati al record ma archiviati nell'albero a valori lunghi.
 
-**Nota**  In questo modo non vengono conteggiati i valori long intrinseci.
+**Nota:**  In questo modo non vengono conteggiati i valori long intrinseci.
 
 **cbOverhead**
 
-Sovraccarico della struttura dei record ESE per questo record. Sono incluse le dimensioni della chiave del record.
+Sovraccarico della struttura di record ESE per questo record. Sono incluse le dimensioni della chiave del record.
 
 **cbLongValueOverhead**
 
-Sovraccarico dei dati a valore lungo.
+Sovraccarico dei dati long-value.
 
-**Nota**  In questo modo non vengono conteggiati i valori long intrinseci.
+**Nota:**  In questo modo non vengono conteggiati i valori long intrinseci.
 
 **cNonTaggedColumns**
 
@@ -76,17 +76,17 @@ Numero totale di colonne fisse e variabili impostate in questo record.
 
 **cTaggedColumns**
 
-Numero totale di colonne con tag impostate in questo record.
+Numero totale di colonne contrassegnate impostate in questo record.
 
 **cLongValues**
 
-Numero totale di valori long archiviati nell'albero long-value per questo record.
+Numero totale di valori long archiviati nell'albero dei valori long per questo record.
 
-**Nota**  In questo modo non vengono conteggiati i valori long intrinseci.
+**Nota:**  In questo modo non vengono conteggiati i valori long intrinseci.
 
 **cMultiValues**
 
-Accumulo del numero totale di valori oltre il primo per tutte le colonne del record.
+Accumulo del numero totale di valori oltre la prima per tutte le colonne del record.
 
 ### <a name="remarks"></a>Commenti
 
@@ -95,11 +95,7 @@ Il numero totale di valori nel record sarà **cMultiValues**  +  **cNonTaggedCol
 ### <a name="requirements"></a>Requisiti
 
 
-| Requisito | Valore |
-|------------|----------|
-| <p><strong>Client</strong></p> | <p>Richiede Windows Vista.</p> | 
-| <p><strong>Server</strong></p> | <p>Richiede Windows Server 2008.</p> | 
-| <p><strong>Intestazione</strong></p> | <p>Dichiarato in Esent.h.</p> | 
+| | | <p><strong>Client</strong></p> | <p>Richiede Windows Vista.</p> | | <p><strong>Server</strong></p> | <p>Richiede Windows Server 2008.</p> | | <p><strong>Intestazione</strong></p> | <p>Dichiarato in Esent.h.</p> | 
 
 
 

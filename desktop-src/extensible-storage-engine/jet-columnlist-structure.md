@@ -15,12 +15,12 @@ api_type:
 - COM
 api_location: ''
 ROBOTS: INDEX,FOLLOW
-ms.openlocfilehash: c61f3492a9f92700fc51b7e51e13f8c3c3febc69
-ms.sourcegitcommit: 4665ebce0c106bdb52eef36e544280b496b6f50b
+ms.openlocfilehash: 6b7f874c95352ce29954adf46b1682dec89c7a9a
+ms.sourcegitcommit: 9b5faa61c38b2d0c432b7f2dbee8c127b0e28a7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/26/2021
-ms.locfileid: "122985264"
+ms.lasthandoff: 08/19/2021
+ms.locfileid: "122471797"
 ---
 # <a name="jet_columnlist-structure"></a>Struttura JET_COLUMNLIST
 
@@ -71,7 +71,7 @@ Numero di record nella tabella temporanea creata dalla chiamata API.
 
 Identificatore di colonna dell'ordine di presentazione.
 
-L'ordine di presentazione viene usato per ordinare le righe della tabella temporanea. L'ordine di presentazione è un valore [fisso JET_coltypLong](./jet-coltyp.md). Se il livello di informazioni specificato non è un livello compatto, viene contrassegnato anche come JET_bitColumnTTKey.
+L'ordine di presentazione viene usato per ordinare le righe della tabella temporanea. L'ordine di presentazione è fisso [JET_coltypLong](./jet-coltyp.md). Se il livello di informazioni specificato non è compatto, viene contrassegnato anche come JET_bitColumnTTKey.
 
 **columnidcolumnname**
 
@@ -101,7 +101,7 @@ Il codice paese è un valore [fisso JET_coltypShort](./jet-coltyp.md).
 
 Identificatore di colonna dell'identificatore di lingua.
 
-L'identificatore di lingua è un valore [fisso JET_coltypShort](./jet-coltyp.md).
+L'identificatore di lingua è un [valore fisso JET_coltypShort](./jet-coltyp.md).
 
 **columnidCp**
 
@@ -113,13 +113,13 @@ La tabella codici è una tabella [JET_coltypShort](./jet-coltyp.md).
 
 Identificatore di colonna della sequenza di regole di confronto.
 
-La sequenza di regole di confronto è un valore [fisso JET_coltypShort](./jet-coltyp.md).
+La sequenza di regole di confronto è un [valore JET_coltypShort](./jet-coltyp.md).
 
 **columnidcbMax**
 
 Identificatore di colonna del **campo cbMax.**
 
-**CbMax è un** valore [fisso JET_coltypLong](./jet-coltyp.md).
+**CbMax è** un valore fisso [JET_coltypLong](./jet-coltyp.md).
 
 **columnidgrbit**
 
@@ -171,7 +171,7 @@ Il nome della colonna è un [JET_coltypText](./jet-coltyp.md).
 
 Identificatore di colonna del nome della definizione di colonna.
 
-Il nome della definizione di colonna è [JET_coltypText](./jet-coltyp.md).
+Il nome della definizione di colonna è un [JET_coltypText](./jet-coltyp.md).
 
 ### <a name="remarks"></a>Commenti
 
@@ -182,11 +182,7 @@ La chiamata a [JetGetColumnInfo](./jetgetcolumninfo-function.md) o [JetGetTableC
 ### <a name="requirements"></a>Requisiti
 
 
-| Requisito | Valore |
-|------------|----------|
-| <p><strong>Client</strong></p> | <p>Richiede Windows Vista, Windows XP o Windows 2000 Professional.</p> | 
-| <p><strong>Server</strong></p> | <p>Richiede Windows Server 2008, Windows Server 2003 o Windows 2000 Server.</p> | 
-| <p><strong>Intestazione</strong></p> | <p>Dichiarato in Esent.h.</p> | 
+| | | <p><strong>Client</strong></p> | <p>Richiede Windows Vista, Windows XP o Windows 2000 Professional.</p> | | <p><strong>Server</strong></p> | <p>Richiede Windows Server 2008, Windows Server 2003 o Windows 2000 Server.</p> | | <p><strong>Intestazione</strong></p> | <p>Dichiarato in Esent.h.</p> | 
 
 
 

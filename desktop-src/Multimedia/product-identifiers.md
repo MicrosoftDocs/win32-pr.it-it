@@ -10,12 +10,12 @@ keywords:
 - società multimediali
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 20bb5a4e958e53c8dda6df71360d5512be0a61ff2ddb42fb77065ee7ce38f8a9
-ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
+ms.openlocfilehash: 15f9117299214aba4658443739f1bc359f7b5ed7
+ms.sourcegitcommit: c276a8912787b2cda74dcf54eb96df961bb1188b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "120037601"
+ms.lasthandoff: 08/20/2021
+ms.locfileid: "122625327"
 ---
 # <a name="product-identifiers"></a>Identificatori di prodotto
 
@@ -23,8 +23,8 @@ ms.locfileid: "120037601"
 
 <table>
 <colgroup>
-<col style="width: 50%" />
-<col style="width: 50%" />
+<col  />
+<col  />
 </colgroup>
 <thead>
 <tr class="header">

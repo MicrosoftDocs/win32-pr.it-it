@@ -9,12 +9,12 @@ topic_type:
 api_name: ''
 api_type: ''
 api_location: ''
-ms.openlocfilehash: d90444aff674ce876f19f02f21104dd7e42143de5926ba068bbe2c49f427fdde
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: c863d952990cd05394244fe662650df59568eeaf
+ms.sourcegitcommit: 9b5faa61c38b2d0c432b7f2dbee8c127b0e28a7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "117725888"
+ms.lasthandoff: 08/19/2021
+ms.locfileid: "122466968"
 ---
 # <a name="shader-model-4"></a>Modello shader 4
 
@@ -22,49 +22,16 @@ Il modello shader 4 è un superset delle funzionalità del modello shader [3,](d
 
 
 
-<table>
-<colgroup>
-<col style="width: 50%" />
-<col style="width: 50%" />
-</colgroup>
-<thead>
-<tr class="header">
-<th>Caratteristica</th>
-<th>Funzionalità</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>Set di istruzioni</td>
-<td><a href="dx-graphics-hlsl-intrinsic-functions.md"><strong>Funzioni HLSL</strong></a></td>
-</tr>
-<tr class="even">
-<td>Set di registri</td>
-<td>Il set di registri è accessibile tramite membri in buffer costanti e trame usando la semantica HLSL per elementi come la creazione di un pacchetto di componenti.
-<ul>
-<li>Registri pixel shader (vedere <a href="dx-graphics-hlsl-sm4-registers-ps-4-0.md">Registri - ps_4_0</a> e Registri - <a href="dx-graphics-hlsl-sm4-registers-ps-4-1.md">ps_4_1</a>)</li>
-<li>Registri vertex shader (vedere <a href="dx-graphics-hlsl-sm4-registers-vs-4-0.md">Registri - vs_4_0</a> e Registri - <a href="dx-graphics-hlsl-sm4-registers-vs-4-1.md">vs_4_1</a>)</li>
-<li>Registri geometry shader (vedere <a href="dx-graphics-hlsl-sm4-registers-gs-4-0.md">Registri - gs_4_0</a> e Registri - <a href="dx-graphics-hlsl-sm4-registers-gs-4-1.md">gs_4_1</a>)</li>
-</ul></td>
-</tr>
-<tr class="odd">
-<td>Vertex Shader Max</td>
-<td>Nessuna restrizione</td>
-</tr>
-<tr class="even">
-<td>Pixel Shader Max</td>
-<td>Nessuna restrizione</td>
-</tr>
-<tr class="odd">
-<td>Nuovi profili shader aggiunti</td>
-<td>gs_4_0, ps_4_0, vs_4_0, gs_4_1 *, ps_4_1*, gs_4_1*</td>
-</tr>
-<tr class="even">
-<td>Aggiunta Effect-Framework nuovo profilo</td>
-<td>fx_4_0, fx_4_1*</td>
-</tr>
-</tbody>
-</table>
+
+| Caratteristica | Funzionalità | 
+|---------|------------|
+| Set di istruzioni | <a href="dx-graphics-hlsl-intrinsic-functions.md"><strong>Funzioni HLSL</strong></a> | 
+| Set di registri | Il set di registri è accessibile tramite membri in buffer costanti e trame usando la semantica HLSL per elementi come la creazione di un pacchetto di componenti.<ul><li>Registri pixel shader (vedere <a href="dx-graphics-hlsl-sm4-registers-ps-4-0.md">Registri - ps_4_0</a> e Registri - <a href="dx-graphics-hlsl-sm4-registers-ps-4-1.md">ps_4_1</a>)</li><li>Registri vertex shader (vedere <a href="dx-graphics-hlsl-sm4-registers-vs-4-0.md">Registri - vs_4_0</a> e Registri - <a href="dx-graphics-hlsl-sm4-registers-vs-4-1.md">vs_4_1</a>)</li><li>Registri geometry shader (vedere <a href="dx-graphics-hlsl-sm4-registers-gs-4-0.md">Registri - gs_4_0</a> e Registri - <a href="dx-graphics-hlsl-sm4-registers-gs-4-1.md">gs_4_1</a>)</li></ul> | 
+| Vertex Shader Max | Nessuna restrizione | 
+| Pixel Shader Max | Nessuna restrizione | 
+| Nuovi profili shader aggiunti | gs_4_0, ps_4_0, vs_4_0, gs_4_1 *, ps_4_1*, gs_4_1* | 
+| Aggiunta Effect-Framework nuovo profilo | fx_4_0, fx_4_1* | 
+
 
 
 

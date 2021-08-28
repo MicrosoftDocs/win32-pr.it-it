@@ -4,18 +4,18 @@ ms.assetid: 3e8495f6-0860-4ea8-a258-784eaade85c7
 title: Costanti PacketPropertyGuids (Msinkaut.h)
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: e9eb946b170b1004deea7eb1f2faafeee5bc5dba
-ms.sourcegitcommit: 61a4c522182aa1cacbf5669683d9570a3bf043b2
+ms.openlocfilehash: b8b88a59d63bc8b45ea04e133f0d002fa86e35e5
+ms.sourcegitcommit: 9b5faa61c38b2d0c432b7f2dbee8c127b0e28a7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/26/2021
-ms.locfileid: "122884503"
+ms.lasthandoff: 08/19/2021
+ms.locfileid: "122481077"
 ---
 # <a name="packetpropertyguids-constants"></a>Costanti PacketPropertyGuids
 
 Definisce i valori che specificano le proprietà del pacchetto. Tablet PCAPI usa identificatori univoci globali (GUID) per identificare le proprietà dei pacchetti, che in COM sono stringhe costanti.
 
-In C++ è possibile accedere a queste costanti nel file di intestazione Msinkaut.h, che si trova nella &lt; directory systemdrive &gt; : Programmi \\ Microsoft \\ SDKs \\ Windows \\ v6.0 \\ Include se l'SDK è stato installato nel percorso predefinito. In C++ queste costanti sono WCHAR, non BSTR. Convertirli in BSTR prima dell'uso. Per altre informazioni sul tipo di dati BSTR, vedere [Uso della libreria COM.](using-the-com-library.md)
+In C++ è possibile accedere a queste costanti nel file di intestazione Msinkaut.h, che si trova nella <systemdrive> directory : Programmi Microsoft \\ \\ SDKs \\ Windows \\ v6.0 \\ Include se l'SDK è stato installato nel percorso predefinito. In C++ queste costanti sono WCHAR, non BSTR. Convertirli in BSTR prima dell'uso. Per altre informazioni sul tipo di dati BSTR, vedere [Uso della libreria COM.](using-the-com-library.md)
 
 Nella tabella seguente sono elencati i campi dell'identificatore univoco globale (GUID) della proprietà del pacchetto disponibili. Usare questi GUID per specificare le proprietà contenute nel pacchetto quando si crea il contesto della tablet. Per determinare l'intervallo e la risoluzione di una proprietà, chiamare il [**metodo GetPropertyMetrics.**](/windows/desktop/api/msinkaut/nf-msinkaut-iinktablet-getpropertymetrics) Le costanti nella tabella seguente che iniziano con "STR" sono rappresentazioni di stringa delle costanti binarie corrispondenti \_ visualizzate nella stessa cella della tabella.
 
@@ -63,7 +63,7 @@ Nella tabella seguente sono elencati i campi dell'identificatore univoco globale
 
 
 
-| Requisito | Valore |
+| Requisito | valore |
 |-------------------------------------|---------------------------------------------------------------------------------------------------------------------|
 | Client minimo supportato<br/> | Windows Solo app desktop XP Tablet PC \[ Edition\]<br/>                                                       |
 | Server minimo supportato<br/> | Nessuno supportato<br/>                                                                                           |

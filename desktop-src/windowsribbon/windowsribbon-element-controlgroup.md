@@ -3,7 +3,7 @@ title: Elemento ControlGroup
 description: Rappresenta un gruppo di controlli in un modello di layout SizeDefinition.
 ms.assetid: 688f3fa5-f305-4554-b16a-590983cf23b9
 keywords:
-- Elemento ControlGroup Windows ribbon
+- Elemento ControlGroup Windows barra multifunzione
 topic_type:
 - apiref
 api_name:
@@ -13,12 +13,12 @@ api_type:
 ms.topic: reference
 ms.date: 05/31/2018
 api_location: ''
-ms.openlocfilehash: a1777bd469b6bf07530881f9c20888d69fe98117ecbdeba4f3f5557f01ced172
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 33640f8e451f7124efda8c0e5377a3145d221668
+ms.sourcegitcommit: c276a8912787b2cda74dcf54eb96df961bb1188b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "117851027"
+ms.lasthandoff: 08/20/2021
+ms.locfileid: "122631989"
 ---
 # <a name="controlgroup-element"></a>Elemento ControlGroup
 
@@ -39,10 +39,10 @@ Rappresenta un gruppo di controlli in un modello di layout [**SizeDefinition.**]
 
 <table>
 <colgroup>
-<col style="width: 25%" />
-<col style="width: 25%" />
-<col style="width: 25%" />
-<col style="width: 25%" />
+<col  />
+<col  />
+<col  />
+<col  />
 </colgroup>
 <thead>
 <tr class="header">
@@ -57,8 +57,8 @@ Rappresenta un gruppo di controlli in un modello di layout [**SizeDefinition.**]
 <td><strong>Sequencenumber</strong><br/></td>
 <td>xs:positiveInteger<br/></td>
 <td>No<br/></td>
-<td>Valido solo quando <a href="windowsribbon-element-group.md"><strong>Group</strong></a> è l'elemento padre.<br/> Ogni <em>SequenceNumber deve</em> essere univoco all'interno di un <a href="windowsribbon-element-group.md"><strong>elemento Group.</strong></a> I valori di <em>SequenceNumber</em> devono aumentare per ogni <strong>elemento Group,</strong> ma non devono essere sequenziali. <br/> <br/>
-<dt><span></span><span></span><strong></strong> (xs:positiveInteger)<br/> </dt> <dd> Qualsiasi valore intero positivo compreso tra 1000 e 59999, inclusi.<br/> </dd> </dl></td>
+<td>Valido solo quando <a href="windowsribbon-element-group.md"><strong>Group</strong></a> è l'elemento padre.<br/> Ogni <em>SequenceNumber deve</em> essere univoco all'interno di <a href="windowsribbon-element-group.md"><strong>un elemento Group.</strong></a> I valori <em>per SequenceNumber</em> devono aumentare per <strong>ogni elemento Group,</strong> ma non devono essere sequenziali. <br/> <br/>
+<dt><span></span><span></span><strong></strong> (xs:positiveInteger)<br/> </dt> <dd> Qualsiasi valore intero positivo compreso tra 1000 e 59999 inclusi.<br/> </dd> </dl></td>
 </tr>
 </tbody>
 </table>
@@ -106,11 +106,11 @@ facoltativo.
 
 Può verificarsi una o più volte per ogni [**elemento Group**](windowsribbon-element-group.md) **o ControlGroup.**
 
-Se non vengono forniti numeri di sequenza, il rendering degli elementi viene eseguito nell'ordine specificato nel markup della barra multifunzione.
+Se non viene specificato alcun numero di sequenza, il rendering degli elementi viene eseguito nell'ordine specificato nel markup della barra multifunzione.
 
-Se [](windowsribbon-element-group.md) Group o **ControlGroup** è l'elemento padre, **ControlGroup** è vincolato ai seguenti possibili elementi figlio: [**Button,**](windowsribbon-element-button.md) [**CheckBox,**](windowsribbon-element-checkbox.md) [**ComboBox,**](windowsribbon-element-combobox.md) [**DropDownButton,**](windowsribbon-element-dropdownbutton.md) [**DropDownColorPicker,**](windowsribbon-element-dropdowncolorpicker.md) [**DropDownGallery,**](windowsribbon-element-dropdowngallery.md) [**FontControl,**](windowsribbon-element-fontcontrol.md) [**InRibbonGallery,**](windowsribbon-element-inribbongallery.md) [**Spinner,**](windowsribbon-element-spinner.md) [**SplitButton,**](windowsribbon-element-splitbutton.md) [**SplitButtonGallery**](windowsribbon-element-splitbuttongallery.md)o [**ToggleButton**](windowsribbon-element-togglebutton.md)
+Se [**Group**](windowsribbon-element-group.md) o **ControlGroup** è l'elemento padre, **ControlGroup** è vincolato ai seguenti possibili elementi figlio: [**Button**](windowsribbon-element-button.md), [**CheckBox**](windowsribbon-element-checkbox.md), [**ComboBox**](windowsribbon-element-combobox.md), [**DropDownButton**](windowsribbon-element-dropdownbutton.md), [**DropDownColorPicker**](windowsribbon-element-dropdowncolorpicker.md), [**DropDownGallery**](windowsribbon-element-dropdowngallery.md), [**FontControl**](windowsribbon-element-fontcontrol.md), [**InRibbonGallery**](windowsribbon-element-inribbongallery.md), [**Spinner**](windowsribbon-element-spinner.md), [**SplitButton**](windowsribbon-element-splitbutton.md), [**SplitButtonGallery**](windowsribbon-element-splitbuttongallery.md)o [**ToggleButton**](windowsribbon-element-togglebutton.md)
 
-In caso contrario, [**quando Row**](windowsribbon-element-row.md) o [**GroupSizeDefinition è**](windowsribbon-element-groupsizedefinition.md) l'elemento padre, [**Group**](windowsribbon-element-group.md) è vincolato all'elemento figlio seguente: [**ControlSizeDefinition**](windowsribbon-element-controlsizedefinition.md).
+In caso contrario, quando [**Row**](windowsribbon-element-row.md) o [**GroupSizeDefinition è**](windowsribbon-element-groupsizedefinition.md) l'elemento padre, [**Group**](windowsribbon-element-group.md) è vincolato all'elemento figlio seguente: [**ControlSizeDefinition**](windowsribbon-element-controlsizedefinition.md).
 
 ## <a name="examples"></a>Esempio
 

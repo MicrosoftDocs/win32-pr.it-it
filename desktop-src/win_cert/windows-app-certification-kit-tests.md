@@ -4,12 +4,12 @@ description: Di seguito sono riportati i dettagli del test per la certificazione
 ms.assetid: FA160F46-C266-4F89-B77F-166FEA9ED96B
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 1b251104418e8eeff88d4d0188e34628b5ec1bf3b54015550084d4a0e9df567e
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 9e1ec63fee4a9410b261ed29dc44cf8934906984
+ms.sourcegitcommit: 61a4c522182aa1cacbf5669683d9570a3bf043b2
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119086564"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "122885973"
 ---
 # <a name="windows-app-certification-kit-tests"></a>Test del Kit di certificazione app Windows
 
@@ -18,7 +18,7 @@ Di seguito sono riportati i dettagli del test per la certificazione delle app de
 -   [Installazione reversibile pulita](#clean-reversible-install)
 -   [Test dell'installazione nelle cartelle corrette](#install-to-the-correct-folders-test)
 -   [Test di file con firma digitale](#digitally-signed-file-test)
--   [Supportare il test Windows x64](#support-x64-windows-test)
+-   [Supporto del test Windows x64](#support-x64-windows-test)
 -   [Test di controllo della versione del sistema operativo](#os-version-checking-test)
 -   [Test del controllo dell'account utente](#user-account-control-uac-test)
 -   [Rispettare i messaggi di System Restart Manager](#adhere-to-system-restart-manager-messages)
@@ -67,7 +67,7 @@ Verifica che l'app scrive il programma e i file di dati nelle cartelle corrette.
     -   **Nota: Windows** la virtualizzazione dei file per migliorare la compatibilità delle app ed eliminare i problemi quando le app vengono eseguite come utente standard in Windows. L'app non deve basarsi sulla virtualizzazione presente nelle versioni future di Windows.
 -   Cartelle di dati delle app specifiche dell'utente
     -   Nelle installazioni "per computer", l'app non deve scrivere dati specifici dell'utente durante l'installazione. I dati di installazione specifici dell'utente devono essere scritti solo quando un utente avvia l'app per la prima volta. Ciò è dovuto al fatto che non esiste un percorso utente corretto in cui archiviare i dati al momento dell'installazione. I tentativi da parte di un'app di modificare i comportamenti di associazione predefiniti a livello di computer dopo l'installazione avranno esito negativo. Le impostazioni predefinite devono invece essere dichiarate a livello di singolo utente, impedendo a più utenti di sovrascrivere le impostazioni predefinite degli altri utenti.
-    -   Tutti i dati dell'app esclusivi per un utente specifico e non devono essere condivisi con altri utenti del computer devono essere archiviati in \\ <username> \\ Utenti AppData.
+    -   Tutti i dati dell'app esclusivi di un utente specifico e non devono essere condivisi con altri utenti del computer devono essere archiviati nel nome \\ &lt; utente Utente &gt; \\ AppData.
     -   Tutti i dati dell'app che devono essere condivisi tra gli utenti nel computer devono essere archiviati in ProgramData.
 -   Altre cartelle di sistema e chiavi del Registro di sistema
     -   L'app non deve mai scrivere direttamente nella directory Windows directory e o nelle sottodirectory. Usare i metodi corretti per l'installazione di file, ad esempio tipi di carattere o driver, in queste directory.
@@ -89,11 +89,11 @@ Verifica i file eseguibili e i driver di dispositivo per verificare che abbia un
 
 -   Sfondo
     -   I file con firma digitale rendono possibile verificare che il file sia originale e rilevare se il file è stato manomesso.
-    -   L'imposizione della firma del codice in modalità kernel è Windows funzionalità di sicurezza avanzata, nota anche come integrità del codice. Ci migliora la sicurezza dei Windows verificando l'integrità di un file ogni volta che viene caricato in memoria. Ci rileva se il codice dannoso ha modificato un file binario di sistema e genera un evento del log di diagnostica e di controllo del sistema quando la firma di un modulo kernel non viene verificata correttamente.
+    -   L'imposizione della firma del codice in modalità kernel è Windows funzionalità di sicurezza avanzata nota anche come integrità del codice. Ci migliora la sicurezza dei Windows verificando l'integrità di un file ogni volta che viene caricato in memoria. Ci rileva se il codice dannoso ha modificato un file binario di sistema e genera un evento del log di diagnostica e di controllo del sistema quando la firma di un modulo kernel non viene verificata correttamente.
     -   Se l'app richiede autorizzazioni elevate, la richiesta di elevazione dei privilegi visualizza informazioni contestuali sul file eseguibile che richiede l'accesso con privilegi elevati. A seconda che l'app sia firmata con Authenticode, l'utente potrebbe visualizzare la richiesta di consenso o la richiesta di credenziali.
     -   I nomi sicuri impediscono a terze parti di eseguire lo spoofing del codice, purché la chiave privata sia protetta. Il .NET Framework verifica la firma digitale quando carica l'assembly o la installa nella GAC. Senza l'accesso alla chiave privata, un utente malintenzionato non può modificare il codice e firmarlo di nuovo.
 -   Dettagli del test
-    -   Tutti i file eseguibili, ad esempio quelli con estensioni .exe, .dll, ocx, .sys, .cpl, drv e scr, devono essere firmati con un certificato Authenticode.
+    -   Tutti i file eseguibili, ad esempio quelli con estensioni di file .exe, .dll, ocx, .sys, .cpl, drv e scr, devono essere firmati con un certificato Authenticode.
     -   Tutti i driver in modalità kernel installati dall'app devono avere una firma Microsoft ottenuta tramite il programma WHQL o DRS. Tutti file system driver di filtro devono essere firmati WHQL.
 -   Azione correttiva
     -   Firmare i file eseguibili dell'app.
@@ -102,7 +102,7 @@ Verifica i file eseguibili e i driver di dispositivo per verificare che abbia un
     -   Le derozioni verranno considerate solo per i ridistribuibili di terze parti non firmati. Per la concessione di questa deroga è necessaria una prova di comunicazione che richiede una versione firmata dei ridistribuibili.
     -   I pacchetti software a valore aggiunto del dispositivo sono esenti dalla certificazione del driver in modalità kernel, perché i driver devono essere certificati in Windows certificazione hardware.
 
-## <a name="support-x64-windows-test"></a>Supportare il test Windows x64
+## <a name="support-x64-windows-test"></a>Supporto di test Windows x64
 
 Testare l'app per assicurarsi che il .exe sia compilato per l'architettura della piattaforma in cui verrà installata.
 
@@ -110,10 +110,10 @@ Testare l'app per assicurarsi che il .exe sia compilato per l'architettura della
     -   Il file eseguibile deve essere compilato per l'architettura del processore in cui è installato. Alcuni file eseguibili potrebbero essere eseguiti in un'architettura del processore diversa, ma non è affidabile.
     -   La compatibilità dell'architettura è importante perché i processi a 32 bit non possono caricare DLL a 64 bit e i processi a 64 bit non possono caricare DLL a 32 bit. Analogamente, le versioni a 64 bit di Windows non supportano l'esecuzione di applicazioni basate su Windows a 16 bit perché gli handle hanno 32 bit significativi su Windows Windows a 64 bit, quindi non possono essere passati alle applicazioni a 16 bit. Pertanto, il tentativo di avviare un'applicazione a 16 bit avrà esito negativo nelle versioni a 64 bit di Windows.
     -   I driver di dispositivo a 32 bit non possono essere eseguiti in versioni a 64 bit di Windows e pertanto devono essere portati all'architettura a 64 bit.
-    -   Per le applicazioni in modalità utente, il Windows a 64 bit include WOW64, che consente l'esecuzione di applicazioni Windows a 32 bit nei sistemi che eseguono Windows a 64 bit, anche se con una certa perdita di prestazioni. Non esiste alcun livello di traduzione equivalente per i driver di dispositivo.
+    -   Per le applicazioni in modalità utente, il Windows a 64 bit include WOW64, che consente l'esecuzione di applicazioni Windows a 32 bit in sistemi che eseguono Windows a 64 bit, anche se con una certa perdita di prestazioni. Non esiste alcun livello di traduzione equivalente per i driver di dispositivo.
     -   Per mantenere la compatibilità con le versioni a 64 bit di Windows, le app devono supportare in modo nativo a 64 bit o, come minimo, le app basate su Windows a 32 bit devono essere eseguite senza problemi nei sistemi a 64 bit:
         -   Le app e i relativi programmi di installazione non devono contenere codice a 16 bit o basarsi su componenti a 16 bit.
-        -   Il programma di installazione dell'app deve rilevare e installare i driver e i componenti appropriati nelle versioni a 64 bit Windows.
+        -   La configurazione dell'app deve rilevare e installare i driver e i componenti appropriati nelle versioni a 64 bit Windows.
         -   Tutti i plug-in della shell devono essere eseguiti in versioni a 64 bit di Windows.
         -   Le app eseguite nell'emulatore WoW64 non devono tentare di ignorare i meccanismi di virtualizzazione Wow64. Se esistono scenari specifici in cui le app devono rilevare se sono in esecuzione in un emulatore WoW64, devono eseguire questa operazione chiamando [**IsWow64Process**](/windows/desktop/api/wow64apiset/nf-wow64apiset-iswow64process).
 -   Dettagli del test
@@ -126,11 +126,11 @@ Testare l'app per assicurarsi che il .exe sia compilato per l'architettura della
 Verifica il modo in cui l'app verifica la versione Windows in cui è in esecuzione.
 
 -   Sfondo
-    -   Le app verificano la versione del sistema operativo testando una versione maggiore o uguale alla versione richiesta per garantire la compatibilità con le versioni future Windows.
+    -   Le app verificano la versione del sistema operativo testando una versione maggiore o uguale alla versione richiesta per garantire la compatibilità con le versioni future di Windows.
 -   Dettagli del test
     -   Simula l'esecuzione dell'app in versioni diverse Windows per vedere come reagisce.
 -   Azioni correttive
-    -   Testare la versione corretta Windows verificando se la versione corrente è maggiore o uguale alla versione richiesta dall'app, dal servizio o dal driver.
+    -   Testare la versione corretta di Windows verificando se la versione corrente è maggiore o uguale alla versione richiesta dall'app, dal servizio o dal driver.
     -   I programmi di installazione dei driver e i moduli di disinstallazione non devono mai controllare la versione del sistema operativo.
 -   Eccezioni e derozioni
     -   Le derozioni verranno considerate per le app che soddisfano i criteri *seguenti: (Si applica solo alla certificazione delle app desktop)*
@@ -144,10 +144,10 @@ Testa l'app per verificare che non siano necessarie autorizzazioni inutilmente e
 
 -   Sfondo
     -   Un'app che opera o viene installata solo quando l'utente è un amministratore forza gli utenti a eseguire l'app con autorizzazioni inutilmente elevate, che possono consentire al malware di accedere al computer dell'utente.
-    -   Quando gli utenti sono sempre costretti a eseguire app con token di accesso elevati, l'app può essere server come punto di ingresso per codice ingannevolo o dannoso. Questo malware può modificare facilmente il sistema operativo o, in caso contrario, influire su altri utenti. È quasi impossibile controllare un utente con accesso amministratore completo, perché gli amministratori possono installare le app ed eseguire qualsiasi app o script nel computer. I responsabili IT sono sempre alla ricerca di modi per creare "desktop standard" in cui gli utenti a log on come utenti standard. I desktop standard riducono notevolmente help desk e riducono il sovraccarico IT.
+    -   Quando gli utenti sono sempre costretti a eseguire app con token di accesso elevati, l'app può essere server come punto di ingresso per codice ingannevolo o dannoso. Questo malware può modificare facilmente il sistema operativo o, in caso contrario, influire su altri utenti. È quasi impossibile controllare un utente con accesso amministratore completo, perché gli amministratori possono installare le app ed eseguire qualsiasi app o script nel computer. I responsabili IT sono sempre alla ricerca di modi per creare "desktop standard" in cui gli utenti a log on come utenti standard. I desktop standard riducono notevolmente help desk costi e riducono il sovraccarico IT.
     -   La maggior parte delle applicazioni non richiede privilegi di amministratore in fase di esecuzione. Un account utente standard deve essere in grado di eseguirli. Windows app devono avere un manifesto (incorporato o esterno) per definire il livello di esecuzione che indica al sistema operativo i privilegi necessari per eseguire l'app. Il manifesto dell'app si applica solo .exe file, non .dll file. Controllo dell'account utente non controlla le DLL durante la creazione del processo. Le regole del controllo dell'account utente non si applicano servizi Microsoft. Il manifesto dell'app può essere incorporato o esterno.
-    -   Per creare un manifesto, creare un file con il nome <nome dell'app>.exe.manifest e archiviarlo nella stessa directory del \_ file EXE. Si noti che qualsiasi manifesto esterno viene ignorato se l'app ha un manifesto interno.
-        -   Ad esempio, <requestedExecutionLevel level="""asInvoker \| highestAvailable \| requireAdministrator"" uiAccess=""true \| false""/>
+    -   Per creare un manifesto, creare un file con il nome <app name>.exe.manifest e archiviarlo nella stessa directory del \_ file EXE. Si noti che qualsiasi manifesto esterno viene ignorato se l'app ha un manifesto interno.
+        -   Ad esempio, <requestedExecutionLevel level=""asInvoker \| highestAvailable \| requireAdministrator"" uiAccess=""true \| false""/>
         -   Il processo principale dell'app deve essere eseguito come utente standard (**asInvoker**). Tutte le funzionalità amministrative devono essere spostate in un processo separato che viene eseguito con privilegi amministrativi.
         -   Le app rivolte agli utenti che richiedono privilegi elevati devono essere firmate con Authenticode.
 -   Dettagli del test
@@ -168,7 +168,7 @@ Verifica la risposta dell'app ai messaggi di arresto e riavvio del sistema.
     -   Le app devono uscire il più rapidamente possibile quando viene notificata l'arresto del sistema per offrire un'esperienza di arresto reattivo o di spegnimento per l'utente.
     -   In un arresto critico, le app che restituiscono FALSE a [**WM \_ QUERYENDSESSION**](/windows/desktop/Shutdown/wm-queryendsession) verranno inviate **a WM \_ ENDSESSION** e chiuse, mentre quelle in timeout in risposta a WM QUERYENDSESSION verranno terminate \_ forzatamente.
 -   Dettagli del test
-    -   Esamina il modo in cui l'app risponde ai messaggi di arresto e uscita.
+    -   Esamina il modo in cui l'app risponde ai messaggi di arresto e di uscita.
 -   Azioni correttive
     -   Se l'app non supera questo test, esaminare come gestisce questi Windows messaggi:
         -   [**WM \_ QUERYENDSESSION**](/windows/desktop/Shutdown/wm-queryendsession) con *LPARAM*  =  **ENDSESSION \_ CLOSEAPP**(0x1): le app desktop devono rispondere (TRUE) immediatamente in preparazione del riavvio. Le app console possono chiamare [**SetConsoleCtrlHandler per**](/windows/console/setconsolectrlhandler) ricevere la notifica di arresto. I servizi possono chiamare [**RegisterServiceCtrlHandlerEx per**](/windows/desktop/api/winsvc/nf-winsvc-registerservicectrlhandlerexa) ricevere notifiche di arresto in una routine del gestore.
@@ -176,7 +176,7 @@ Verifica la risposta dell'app ai messaggi di arresto e riavvio del sistema.
     -   Le app console che ricevono la **notifica CTRL \_ C \_ EVENT** devono essere arrestate immediatamente. I driver non devono avere il veto su un evento di arresto del sistema.
     -   **Nota:** Le app che devono bloccare l'arresto a causa di un'operazione che non può essere interrotta devono usare [**ShutdownBlockReasonCreate**](/windows/desktop/api/winuser/nf-winuser-shutdownblockreasoncreate) per registrare una stringa che spiega il motivo all'utente. Al termine dell'operazione, l'app deve chiamare [**ShutdownBlockReasonDestroy**](/windows/desktop/api/winuser/nf-winuser-shutdownblockreasondestroy) per indicare che il sistema può essere arrestato.
 
-## <a name="safe-mode-test"></a>test Cassaforte modalità automatica
+## <a name="safe-mode-test"></a>test Cassaforte modalità di controllo
 
 Verifica se il driver o il servizio è configurato per l'avvio in modalità provvisoria.
 
@@ -205,7 +205,7 @@ Testare il comportamento dell'app quando viene eseguita in più sessioni contemp
     -   Ciò significa che i dati utente di un'istanza non sono visibili a un'altra istanza. L'audio in una sessione utente inattiva non deve essere ascoltato in una sessione utente attiva. Nei casi in cui più istanze dell'app usano risorse condivise, l'app deve assicurarsi che non si sia verificata un conflitto.
         -   Se l'app è stata installata per più utenti, archivia i dati nelle cartelle e nei percorsi corretti del Registro di sistema.
         -   L'app può essere eseguita in più sessioni utente (Cambio rapido utente) sia per l'accesso locale che per l'accesso remoto.
-    -   A tale scopo, l'app deve controllare altre sessioni del servizio terminal per le istanze esistenti dell'app. Se l'app non supporta più sessioni utente o l'accesso remoto, deve dirlo chiaramente all'utente quando viene avviata da una sessione di questo tipo.
+    -   A tale scopo, l'app deve controllare altre sessioni del servizio terminal (TS) per le istanze esistenti dell'app. Se l'app non supporta più sessioni utente o l'accesso remoto, deve dirlo chiaramente all'utente quando viene avviata da una sessione di questo tipo.
 -   Azione correttiva
     -   Assicurarsi che l'app non archivi i file di dati a livello di sistema o le impostazioni negli archivi dati specifici dell'utente, ad esempio profilo utente o HKCU. In caso contrario, le informazioni non saranno disponibili per altri utenti.
     -   L'app deve installare i file di dati e di configurazione a livello di sistema durante l'installazione e creare i file e le impostazioni specifici dell'utente dopo l'installazione quando un utente la esegue.
@@ -225,7 +225,7 @@ Monitoraggio dell'app durante il test per la certificazione per registrare event
     -   Assicurati che Controllo account utente sia attivato nel computer di prova.
     -   Assicurati che il test venga eseguito su un computer con uno schermo sufficientemente ampio.
     -   Se l'app non viene avviata e la piattaforma di test soddisfa i prerequisiti di [**ActivateApplication,**](/windows/desktop/api/shobjidl_core/nf-shobjidl_core-iapplicationactivationmanager-activateapplication)è possibile risolvere il problema esaminando il registro eventi di attivazione. Per individuare le voci pertinenti nel registro eventi:
-        1.  Aprire eventvwr.exe e passare al nodo applicazione \\ Windows \\ logs.
+        1.  Aprire eventvwr.exe e passare al nodo applicazione \\ Windows \\ log.
         2.  Filtra la visualizzazione in modo da mostrare gli ID degli eventi: 5900-6000.
         3.  Esamina le voci del registro con l'obiettivo di trovare una spiegazione al fatto che l'app non si è avviata.
     -   Cerca il file che ha causato il problema, identifica l'errore e correggilo. Ricompila ed esegui un nuovo test dell'app.
@@ -241,11 +241,11 @@ Monitoraggio dell'app durante il test per la certificazione per registrare event
 -   Sfondo
     -   Questo controllo convaliderà due aspetti di un'app, i file eseguibili principali dell'app, ad esempio il punto di ingresso dell'app rivolto all'utente, devono essere manifestati per motivi di compatibilità, nonché dichiarare il GUID corretto. Per supportare questo nuovo test, il report avrà un sottonodo in "Compatibilità & resilienza". L'app avrà esito negativo se una o entrambe queste condizioni non sono presenti.
 -   Dettagli test
-    -   **Compatibilità:** Le app devono essere completamente funzionali senza usare Windows modalità di compatibilità, messaggi AppHelp o altre correzioni di compatibilità. Un manifesto di compatibilità Windows fornire all'app il comportamento di compatibilità corretto nelle diverse versioni del sistema operativo
-    -   **AppInit:** Le app non devono elencare le DLL da caricare nella chiave del Registro di sistema HKEY LOCAL MACHINE Software Microsoft Windows NT CurrentVersion Windows \_ \_ \\ \\ \\ \\ \\ \\ AppInit \_ DLLs.
+    -   **Compatibilità:** Le app devono essere completamente funzionali senza usare Windows modalità di compatibilità, messaggi di AppHelp o altre correzioni di compatibilità. Un manifesto di compatibilità Windows fornire all'app il comportamento di compatibilità corretto nelle diverse versioni del sistema operativo
+    -   **AppInit:** Le app non devono elencare le DLL da caricare nella chiave del Registro di sistema HKEY \_ LOCAL MACHINE Software Microsoft Windows NT \_ \\ \\ \\ \\ CurrentVersion Windows \\ \\ AppInit \_ DLLs.
     -   **Switchback:** L'applicazione deve fornire il manifesto di switchback. Se il manifesto non è presente, Windows kit di certificazione dell'app restituisce un messaggio di avviso. Windows App Certification Kit verificherà anche che il manifesto contenga un GUID del sistema operativo valido.
 -   Azioni correttive
-    -   Correzione del componente dell'app che usa la correzione di compatibilità.
+    -   Correggere il componente dell'app che usa la correzione di compatibilità.
     -   Assicurarsi che l'app non si basa sulle correzioni di compatibilità per le relative funzionalità.
     -   Verificare che l'app sia manifeste e che la sezione di compatibilità includa i valori appropriati
 -   Informazioni aggiuntive

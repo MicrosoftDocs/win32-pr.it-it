@@ -4,12 +4,12 @@ ms.assetid: 84f9b74d-8397-4cd5-91a0-7f910ba7b19e
 title: Sintassi della tecnica degli effetti (Direct3D 10)
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: e3c0ff0c0f1b5e9c1fac4cdb12aac21e42d89771c0eae89d1cd9538d0281acee
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 106abd47e1148ce30127733f113a1b43a0058f60
+ms.sourcegitcommit: c276a8912787b2cda74dcf54eb96df961bb1188b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "117914486"
+ms.lasthandoff: 08/20/2021
+ms.locfileid: "122625127"
 ---
 # <a name="effect-technique-syntax-direct3d-10"></a>Sintassi della tecnica degli effetti (Direct3D 10)
 
@@ -77,8 +77,8 @@ Parola chiave obbligatoria.
 
 <table>
 <colgroup>
-<col style="width: 50%" />
-<col style="width: 50%" />
+<col  />
+<col  />
 </colgroup>
 <thead>
 <tr class="header">
@@ -92,7 +92,7 @@ Parola chiave obbligatoria.
 <td><span data-codelanguage=""></span>
 <table>
 <colgroup>
-<col style="width: 100%" />
+<col  />
 </colgroup>
 <tbody>
 <tr class="odd">
@@ -109,7 +109,7 @@ Parola chiave obbligatoria.
 <span data-codelanguage=""></span>
 <table>
 <colgroup>
-<col style="width: 100%" />
+<col  />
 </colgroup>
 <tbody>
 <tr class="odd">
@@ -127,7 +127,7 @@ Parola chiave obbligatoria.
 <span data-codelanguage=""></span>
 <table>
 <colgroup>
-<col style="width: 100%" />
+<col  />
 </colgroup>
 <tbody>
 <tr class="odd">
@@ -145,7 +145,7 @@ Parola chiave obbligatoria.
 <span data-codelanguage=""></span>
 <table>
 <colgroup>
-<col style="width: 100%" />
+<col  />
 </colgroup>
 <tbody>
 <tr class="odd">
@@ -160,7 +160,7 @@ Parola chiave obbligatoria.
 <span data-codelanguage=""></span>
 <table>
 <colgroup>
-<col style="width: 100%" />
+<col  />
 </colgroup>
 <tbody>
 <tr class="odd">
@@ -175,7 +175,7 @@ Parola chiave obbligatoria.
 <span data-codelanguage=""></span>
 <table>
 <colgroup>
-<col style="width: 100%" />
+<col  />
 </colgroup>
 <tbody>
 <tr class="odd">

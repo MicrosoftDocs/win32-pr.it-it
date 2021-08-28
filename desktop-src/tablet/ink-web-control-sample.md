@@ -4,12 +4,12 @@ ms.assetid: 7a9e304c-57ef-41a3-83be-2b2d31435da8
 title: Esempio di controllo Web Ink
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: d8a2f305f1dcbb412325970510c6eaa5f09732bf10d870c961820ab8d8749eda
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: dfe2035028ab622f896489b304ca850db4e25462
+ms.sourcegitcommit: 61a4c522182aa1cacbf5669683d9570a3bf043b2
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119032199"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "122882047"
 ---
 # <a name="ink-web-control-sample"></a>Esempio di controllo Web Ink
 
@@ -19,7 +19,7 @@ Per altre informazioni sull'uso dell'input penna sul Web, vedere [Input penna su
 
 ## <a name="modifications-to-the-original-sample-project"></a>Modifiche al modello di esempio Project
 
-Questo esempio è costituito da una soluzione che include due progetti e un file HTML. Il primo progetto, AutoClaims, è un progetto microsoft Visual C \# Control Library (un controllo utente). Il codice sorgente per questo controllo è quasi identico a quello dell'esempio AutoClaims con due differenze:
+Questo esempio è costituito da una soluzione che include due progetti e un file HTML. Il primo progetto, AutoClaims, è un progetto libreria di controlli Di Microsoft Visual C \# (un controllo utente). Il codice sorgente per questo controllo è quasi identico a quello dell'esempio AutoClaims con due differenze:
 
 -   La `AutoClaims` classe in questo esempio eredita dalla classe [UserControl](/dotnet/api/system.windows.forms.usercontrol?view=netcore-3.1) anziché dalla [classe Form.](/dotnet/api/system.windows.forms.form?view=netcore-3.1)
 
@@ -33,7 +33,7 @@ Questo esempio è costituito da una soluzione che include due progetti e un file
 
 ## <a name="referencing-the-control-in-html"></a>Riferimento al controllo in HTML
 
-La soluzione include un file HTML, default.htm. Questo file è la pagina a cui il browser passa per caricare il controllo. Il file contiene un <object> tag che fa riferimento al controllo . Include anche uno script che viene chiamato quando la pagina viene scaricata, come indicato dalla presenza dell'attributo onload=" `OnUnload()` nell'elemento <body> tag . Questa funzione chiama il metodo sul controllo per assicurarsi che tutte le `DisposeResources` risorse siano rilasciate correttamente all'arresto.
+La soluzione include un file HTML, default.htm. Questo file è la pagina a cui il browser passa per caricare il controllo. Il file contiene un &lt; tag oggetto che fa riferimento al controllo &gt; . Include anche uno script che viene chiamato quando la pagina viene scaricata, come indicato dalla presenza dell'attributo onload=" `OnUnload()` " nel tag del &lt; &gt; corpo. Questa funzione chiama il metodo sul controllo per assicurarsi che tutte le risorse `DisposeResources` siano rilasciate correttamente all'arresto.
 
 
 ```C++
@@ -59,16 +59,16 @@ La soluzione include un file HTML, default.htm. Questo file è la pagina a cui i
 
 
 
-Si noti il formato del valore dell'attributo classid per il <object> tag . Denota l'assembly, seguito da un separatore di segno, quindi lo spazio dei nomi che contiene il controllo e quindi il nome \# della classe del controllo.
+Si noti il formato del valore dell'attributo classid per il &lt; tag &gt; dell'oggetto. Denota l'assembly, seguito da un separatore di segno, quindi lo spazio dei nomi che contiene il controllo e quindi il nome \# della classe del controllo.
 
 Un controllo utente reale include probabilmente metodi aggiuntivi usati per rendere persistenti o inviare i dati raccolti nell'applicazione.
 
 ## <a name="the-autoclaims_webcontrol-project"></a>Controllo Web AutoClaims \_ Project
 
-Il progetto AutoClaims WebControl è un Project di distribuzione che crea un'installazione che aggiunge una radice \_ virtuale, AutoClaims WebControl, nel server Web quando \_ viene installato. Il controllo e il file HTML vengono inseriti in questa radice virtuale.
+Il progetto AutoClaims WebControl è un Project di distribuzione che crea un'installazione che aggiunge una radice \_ virtuale, AutoClaims WebControl, nel server Web al momento \_ dell'installazione. Il controllo e il file HTML vengono inseriti in questa radice virtuale.
 
 > [!Note]  
-> Gli esempi Web compilati non vengono installati dall'opzione di installazione predefinita per l'SDK. È necessario completare un'installazione personalizzata e selezionare la sotto-opzione "Esempi Web precompilato" per installarli.
+> Gli esempi Web compilati non vengono installati dall'opzione di installazione predefinita per l'SDK. È necessario completare un'installazione personalizzata e selezionare l'opzione secondaria "Esempi Web precompilato" per installarli.
 
  
 

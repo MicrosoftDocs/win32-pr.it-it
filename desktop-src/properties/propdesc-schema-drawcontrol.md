@@ -1,23 +1,23 @@
 ---
-description: Specifica il controllo da utilizzare quando si visualizza semplicemente la proprietà.
+description: Specifica il controllo da utilizzare quando si visualizza semplicemente la proprietà .
 ms.assetid: 0fb8afc4-d16b-4c2e-80b3-da9935b11bb5
 title: drawControl
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 5318fdebc995ff45932f75b4000ceda6e74068e1
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 58a330854f19005f7f2863c337451b1dcc56cea3
+ms.sourcegitcommit: c276a8912787b2cda74dcf54eb96df961bb1188b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104049788"
+ms.lasthandoff: 08/20/2021
+ms.locfileid: "122632049"
 ---
 # <a name="drawcontrol"></a>drawControl
 
-Specifica il controllo da utilizzare quando si visualizza semplicemente la proprietà. Deve essere presente un solo elemento [drawControl]() per ogni elemento [displayInfo](./propdesc-schema-displayinfo.md) .
+Specifica il controllo da utilizzare quando si visualizza semplicemente la proprietà . Deve essere presente un solo [elemento drawControl]() per ogni [elemento displayInfo.](./propdesc-schema-displayinfo.md)
 
-Se sono presenti più elementi, viene usato l'ultimo. Se non viene specificato alcun elemento [drawControl]() , le impostazioni predefinite degli attributi vengono applicate alla descrizione della proprietà.
+Se sono presenti più elementi, viene usato l'ultimo. Se non [viene specificato alcun elemento drawControl,]() le impostazioni dell'attributo predefinite vengono applicate alla descrizione della proprietà.
 
-Questo formato del controllo non consente la modifica delle proprietà.
+Questa forma del controllo non consente la modifica delle proprietà.
 
 ## <a name="syntax"></a>Sintassi
 
@@ -53,7 +53,7 @@ Questo formato del controllo non consente la modifica delle proprietà.
 
 | Elemento padre                                   | Elementi figlio |
 |--------------------------------------------------|----------------|
-| [displayInfo](./propdesc-schema-displayinfo.md) | nessuno           |
+| [displayInfo](./propdesc-schema-displayinfo.md) | Nessuno           |
 
 
 
@@ -65,8 +65,8 @@ Questo formato del controllo non consente la modifica delle proprietà.
 
 <table>
 <colgroup>
-<col style="width: 50%" />
-<col style="width: 50%" />
+<col  />
+<col  />
 </colgroup>
 <thead>
 <tr class="header">
@@ -77,7 +77,7 @@ Questo formato del controllo non consente la modifica delle proprietà.
 <tbody>
 <tr class="odd">
 <td>controllo</td>
-<td>Pubblica. facoltativo. Il valore predefinito è &quot; default &quot; . I valori validi sono i seguenti. 
+<td>Pubblica. facoltativo. Il valore predefinito &quot; è Default &quot; . I valori validi sono i seguenti. 
 <table>
 <thead>
 <tr class="header">
@@ -88,15 +88,15 @@ Questo formato del controllo non consente la modifica delle proprietà.
 <tbody>
 <tr class="odd">
 <td>Predefinito</td>
-<td>Valore predefinito. Usa il controllo predefinito, in base all' <typeInfo type=&quot;&quot;> attributo. Il tipo predefinito è &quot; String &quot; (multivalore) e il controllo predefinito è &quot; MultiValueText &quot; . Qualsiasi altro tipo comporta l'uso del &quot; &quot; controllo StaticText.</td>
+<td>Valore predefinito. Usa il controllo predefinito, in base <typeInfo type=&quot;&quot;> all'attributo . Il tipo predefinito è &quot; String &quot; (multivalore) e il controllo predefinito è &quot; MultiValueText &quot; . Qualsiasi altro tipo comporta l'uso &quot; del controllo &quot; StaticText.</td>
 </tr>
 <tr class="even">
 <td>MultiLineText</td>
-<td>Usa il controllo testo a più righe.</td>
+<td>Usa il controllo di testo su più righe.</td>
 </tr>
 <tr class="odd">
 <td>MultiValueText</td>
-<td>Usa il controllo di testo multivalore.</td>
+<td>Usa il controllo testo multivalore.</td>
 </tr>
 <tr class="even">
 <td>PercentBar</td>
@@ -108,11 +108,11 @@ Questo formato del controllo non consente la modifica delle proprietà.
 </tr>
 <tr class="even">
 <td>Classificazione</td>
-<td>Usa il controllo della classificazione a 5 stelle.</td>
+<td>Usa il controllo di classificazione a 5 stelle.</td>
 </tr>
 <tr class="odd">
 <td>StaticText</td>
-<td>USA <a href="/windows/win32/api/propsys/nf-propsys-ipropertydescription-formatfordisplay"><strong>IPropertyDescription:: FormatForDisplay</strong></a> per visualizzare il valore della proprietà.</td>
+<td>Usa <a href="/windows/win32/api/propsys/nf-propsys-ipropertydescription-formatfordisplay"><strong>IPropertyDescription::FormatForDisplay</strong></a> per visualizzare il valore della proprietà.</td>
 </tr>
 <tr class="even">
 <td>IconList</td>

@@ -4,12 +4,12 @@ ms.assetid: d5419c40-43e9-49ff-a378-9aeb0757e400
 title: ParameterInit
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: b961ede78b313e7fb3655024705a13f04edb947344493be4fe49ff14b5d00843
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: d60fa8cc98034d289a61d11e247ed2cd64f656c4
+ms.sourcegitcommit: 61a4c522182aa1cacbf5669683d9570a3bf043b2
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119947857"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "122886189"
 ---
 # <a name="parameterinit"></a>ParameterInit
 
@@ -19,7 +19,7 @@ Definisce un valore per un'istanza di un elemento ParameterDef. Un elemento Para
 
 ## <a name="element-tag"></a>Tag di elemento
 
-<ParameterInit>
+&lt;ParameterInit&gt;
 
 ## <a name="xml-attributes"></a>Attributi XML
 

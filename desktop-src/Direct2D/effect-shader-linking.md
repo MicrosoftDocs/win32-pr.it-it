@@ -4,12 +4,12 @@ description: Direct2D usa un'ottimizzazione denominata collegamento effect shade
 ms.assetid: 431A5B39-6C84-442D-AC66-0F341E10DF2C
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 608ae0b751840fc32b31e10012eb343c73ec3e0d941a26477a192b576204c247
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: e22d9ae245b5bbaa0c13dd7d5296dc419f740404
+ms.sourcegitcommit: 61a4c522182aa1cacbf5669683d9570a3bf043b2
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119431460"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "122881831"
 ---
 # <a name="effect-shader-linking"></a>Collegamento degli shader degli effetti
 
@@ -47,7 +47,7 @@ Se si sta creando un'applicazione Direct2D che usa gli effetti, non è necessari
 
 Gli autori di effetti sono responsabili dell'implementazione del loro effetto in modo che supporti il collegamento degli shader degli effetti; Per altre informazioni, vedere la sezione [Creazione di un](#authoring-a-shader-linking-compatible-custom-effect) effetto personalizzato compatibile con il collegamento di uno shader di seguito. Tutti gli effetti predefiniti supportano il collegamento dello shader.
 
-Direct2D collega solo trasformazioni di rendering adiacenti in situazioni in cui è utile. Tiene conto di più fattori quando si determina se collegare due trasformazioni. Ad esempio, il collegamento dello shader non viene eseguito se una delle trasformazioni usa vertex o compute shader, perché è possibile collegare solo pixel shader. Inoltre, se un effetto non è stato creato per essere compatibile con il collegamento dello shader, le trasformazioni circostanti non verranno collegate ad esso.
+Direct2D collega solo trasformazioni di rendering adiacenti in situazioni in cui è utile. Tiene conto di più fattori quando si determina se collegare due trasformazioni. Ad esempio, il collegamento dello shader non viene eseguito se una delle trasformazioni usa vertex o compute shader, perché è possibile collegare solo pixel shader. Inoltre, se un effetto non è stato creato per essere compatibile con il collegamento dello shader, le trasformazioni circostanti non verranno collegate.
 
 Nel caso in cui esista un tale rischio di collegamento, Direct2D non collega alcuna trasformazione adiacente al pericolo, ma tenta comunque di collegare il resto del grafico.
 
@@ -91,11 +91,11 @@ Gli autori di effetti personalizzati devono essere a conoscenza di diversi conce
 
 -   **Campionamento semplice e complesso**
 
-    Il collegamento della funzione shader funziona connettendo l'output di un pixel shader all'input di un passaggio pixel shader successivo. Ciò è possibile solo quando l'pixel shader richiede un solo valore di input per eseguire il calcolo. questo valore deriva in genere dal campionamento di una trama di input in corrispondenza della coordinata di trama emessa dal vertex shader. Tale pixel shader si dice che eseere un campionamento semplice.
+    Il collegamento della funzione shader funziona connettendo l'output di un pixel shader all'input di un passaggio pixel shader successivo. Ciò è possibile solo quando l'pixel shader richiede un solo valore di input per eseguire il calcolo. questo valore deriva in genere dal campionamento di una trama di input in corrispondenza della coordinata di trama emessa dal vertex shader. Si dice pixel shader un campionamento semplice.
 
     ![La conversione in scala di grigi è un esempio di campionamento semplice. il valore di un particolare pixel di output dipende solo dal valore del pixel di input corrispondente.](images/simple-sampling.png)
 
-    Alcuni pixel shader, ad esempio una sfocatura gaussiana, calcolano l'output da più campioni di input anziché da un singolo campione. Tale pixel shader si dice che eseere un campionamento complesso.
+    Alcuni pixel shader, ad esempio una sfocatura gaussiana, calcolano l'output da più campioni di input anziché da un singolo campione. Si dice pixel shader un campionamento complesso.
 
     
 
@@ -104,7 +104,7 @@ Gli autori di effetti personalizzati devono essere a conoscenza di diversi conce
     
     Solo le funzioni shader con input semplici possono avere l'input fornito da un'altra funzione shader. Le funzioni shader con input complessi devono essere fornite con una trama di input da campionare. Ciò significa che Direct2D non collega uno shader con input complessi al relativo predecessore.
 
-    Quando si [usano gli helper HLSL Direct2D,](hlsl-helpers.md)è necessario indicare in HLSL se uno shader usa input complessi o semplici.
+    Quando si usano [gli helper HLSL Direct2D,](hlsl-helpers.md)è necessario indicare in HLSL se uno shader usa input complessi o semplici.
 
 ## <a name="example-linking-compatible-effect-shader"></a>Esempio di shader con effetto compatibile con il collegamento
 
@@ -125,7 +125,7 @@ D2D_PS_ENTRY(LinkingCompatiblePixelShader)
 
 In questo breve esempio si noti che non sono dichiarati parametri di funzione, che il numero di input e il tipo di ogni input vengono dichiarati prima della funzione di ingresso, l'input viene recuperato chiamando [D2DGetInput](d2dgetinput.md)e che le direttive del preprocessore devono essere definite prima che venga incluso il file helper.
 
-Uno shader compatibile con il collegamento deve fornire sia un normale pixel shader che una funzione di esportazione shader. La macro [D2D \_ PS \_ ENTRY](d2d-ps-entry.md) consente di generare ognuno di questi elementi dallo stesso codice, se usato in combinazione con lo script di compilazione shader.
+Uno shader compatibile con il collegamento deve fornire una normale funzione pixel shader e una funzione export shader. La macro [D2D \_ PS \_ ENTRY](d2d-ps-entry.md) consente di generare ognuno di questi elementi dallo stesso codice, se usato in combinazione con lo script di compilazione shader.
 
 Quando si compila uno shader completo, le macro vengono espanse nel codice seguente, che ha una firma di input compatibile con effetti D2D.
 
@@ -159,11 +159,11 @@ export float4 LinkingCompatiblePixelShader_Function(
 
 Si noti che l'input della trama, normalmente recuperato tramite il campionamento di un oggetto Texture2D, è stato sostituito con un input di funzione (input0).
 
-Per una descrizione dettagliata completa delle operazioni da eseguire per scrivere un effetto [](custom-effects.md) compatibile con il collegamento, vedere l'esercitazione sugli effetti personalizzati e l'esempio di effetti immagine personalizzati [Direct2D](https://github.com/microsoft/Windows-universal-samples/tree/master/Samples/D2DCustomEffects).
+Per una descrizione dettagliata completa delle operazioni da eseguire per scrivere un effetto [](custom-effects.md) compatibile con il collegamento, vedere l'esercitazione Sugli effetti personalizzati e l'esempio di effetti immagine personalizzati [Direct2D](https://github.com/microsoft/Windows-universal-samples/tree/master/Samples/D2DCustomEffects).
 
 ## <a name="compiling-a-linking-compatible-shader"></a>Compilazione di un linking compatible-shader
 
-Per essere collegabile, il PIXEL SHADER BLOB passato a D2D deve contenere entrambe le versioni complete ed esportabili della funzione dello shader. Questa operazione viene eseguita incorporando la funzione di esportazione compilata nell'area DATI \_ PRIVATI DEL BLOB D3D. \_ \_
+Per essere collegabile, il BLOB pixel shader passato a D2D deve contenere sia la versione completa che la versione della funzione di esportazione dello shader. Questa operazione viene eseguita incorporando la funzione di esportazione compilata nell'area DATI \_ PRIVATI DEL BLOB D3D. \_ \_
 
 Quando gli shader vengono creati con le funzioni helper D2D, è necessario definire una destinazione di compilazione D2D in fase di compilazione. I tipi di destinazione della compilazione sono D2D \_ FULL \_ SHADER e D2D \_ FUNCTION.
 
@@ -173,7 +173,7 @@ La compilazione di uno shader con effetto compatibile con il collegamento è un 
 -   [Compilare lo shader completo e incorporare la funzione di esportazione](#step-2-compile-the-full-shader-and-embed-the-export-function)
 
 > [!Note]  
-> Quando si compila un effetto usando Visual Studio, è necessario creare un file batch che esegue entrambi i comandi FXC ed eseguire questo file batch come istruzione di compilazione personalizzata che viene eseguita prima dell'istruzione di compilazione.
+> Quando si compila un effetto usando Visual Studio, è necessario creare un file batch che esegue entrambi i comandi FXC ed eseguire questo file batch come istruzione di compilazione personalizzata eseguita prima dell'istruzione di compilazione.
 
  
 
@@ -189,11 +189,11 @@ Per compilare la versione della funzione di esportazione dello shader, è necess
 
 |    Flag                            |    Descrizione                       |
 |--------------------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| /t <ShaderModel>         | Impostare <ShaderModel> sul profilo di pixel shader appropriato come definito in [Sintassi FXC](/windows/desktop/direct3dtools/dx-graphics-tools-fxc-syntax). Deve trattarsi di uno dei profili elencati in "Collegamento dello shader HLSL". |
-| <MyShaderFile>.hlsl      | Impostare <MyShaderFile> sul nome del file HLSL.                                                                                                                                                                                                    |
-| FUNZIONE /D \_ D2D               | Questa definizione indica a FXC di compilare la versione della funzione di esportazione dello shader.                                                                                                                                                                       |
-| /D D D2D \_ ENTRY=<entry>    | Impostare <entry> sul nome del punto di ingresso HLSL definito all'interno della macro [D2D \_ PS \_ ENTRY.](d2d-ps-entry.md)                                                                                                                                    |
-| /Fl <MyShaderFile> .fxlib | Impostare <MyShaderfile> su in cui archiviare la versione della funzione di esportazione dello shader. Si noti che l'estensione .fxlib è solo per facilitare l'identificazione.                                                                                              |
+| /T &lt; ShaderModel&gt;         | Impostare &lt; ShaderModel &gt; sul profilo di pixel shader appropriato, come definito nella [sintassi FXC.](/windows/desktop/direct3dtools/dx-graphics-tools-fxc-syntax) Deve trattarsi di uno dei profili elencati in "Collegamento dello shader HLSL". |
+| &lt;MyShaderFile &gt; .hlsl      | Impostare &lt; MyShaderFile &gt; sul nome del file HLSL.                                                                                                                                                                                                    |
+| /D D D2D \_ FUNCTION               | Questa definizione indica a FXC di compilare la versione della funzione di esportazione dello shader.                                                                                                                                                                       |
+| Voce /D D2D \_ &lt; ENTRY=&gt;    | Impostare entry sul nome del punto di ingresso &lt; &gt; HLSL definito all'interno della macro [D2D \_ PS \_ ENTRY.](d2d-ps-entry.md)                                                                                                                                    |
+| /Fl &lt; MyShaderFile &gt; .fxlib | Impostare &lt; MyShaderfile &gt; sul percorso in cui si vuole archiviare la versione della funzione di esportazione dello shader. Si noti che l'estensione fxlib è solo per facilitare l'identificazione.                                                                                              |
 
 ### <a name="step-2-compile-the-full-shader-and-embed-the-export-function"></a>Passaggio 2: Compilare lo shader completo e incorporare la funzione di esportazione
 
@@ -207,22 +207,22 @@ Per compilare la versione completa dello shader con la versione di esportazione 
 
 |    Flag                                    |    Descrizione                     |
 |----------------------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| /t <ShaderModel>                 | Impostare <ShaderModel> sul profilo di pixel shader appropriato come definito in [Sintassi FXC](/windows/desktop/direct3dtools/dx-graphics-tools-fxc-syntax). Deve essere il profilo pixel shader corrispondente al profilo di collegamento specificato nel passaggio 1. |
-| <MyShaderFile>.hlsl              | Impostare <MyShaderFile> sul nome del file HLSL.                                                                                                                                                                                                                               |
+| /T &lt; ShaderModel&gt;                 | Impostare &lt; ShaderModel &gt; sul profilo di pixel shader appropriato, come definito nella [sintassi FXC.](/windows/desktop/direct3dtools/dx-graphics-tools-fxc-syntax) Deve essere il profilo pixel shader corrispondente al profilo di collegamento specificato nel passaggio 1. |
+| &lt;MyShaderFile &gt; .hlsl              | Impostare &lt; MyShaderFile &gt; sul nome del file HLSL.                                                                                                                                                                                                                               |
 | /D D D2D \_ FULL \_ SHADER                   | Questa definizione indica a FXC di compilare la versione completa dello shader.                                                                                                                                                                                                             |
-| /D D D2D \_ ENTRY=<entry>            | Impostare <entry> sul nome del punto di ingresso HLSL definito all'interno della macro D2D \_ PS \_ ENTRY().                                                                                                                                                                                 |
-| /e <entry>                       | Impostare <entry> sul nome del punto di ingresso HLSL definito all'interno della macro D2D \_ PS \_ ENTRY().                                                                                                                                                                                 |
-| /setprivate <MyShaderFile> .fxlib | Questo argomento indica a FXC di incorporare lo shader della funzione di esportazione generato nel passaggio 1 nell'area DATI \_ PRIVATI DEL BLOB D3D. \_ \_                                                                                                                                                          |
-| /Fo <MyShader> .cso               | Impostare <MyShader> su dove archiviare lo shader compilato finale combinato.                                                                                                                                                                                                 |
-| /Fh <MyShader> .h                 | Impostare <MyShader> su dove archiviare l'intestazione finale combinata.                                                                                                                                                                                                          |
+| Voce /D D2D \_ &lt; ENTRY=&gt;            | Impostare entry sul nome del punto di ingresso &lt; &gt; HLSL definito all'interno della macro D2D \_ PS \_ ENTRY().                                                                                                                                                                                 |
+| Voce &lt; /E&gt;                       | Impostare entry sul nome del punto di ingresso &lt; &gt; HLSL definito all'interno della macro D2D \_ PS \_ ENTRY().                                                                                                                                                                                 |
+| /setprivate &lt; MyShaderFile &gt; .fxlib | Questo argomento indica a FXC di incorporare lo shader della funzione di esportazione generato nel passaggio 1 nell'area DATI PRIVATI \_ DEL BLOB D3D. \_ \_                                                                                                                                                          |
+| /Fo &lt; MyShader &gt; .cso               | Impostare &lt; MyShader &gt; sul punto in cui si vuole archiviare lo shader compilato finale combinato.                                                                                                                                                                                                 |
+| /Fh &lt; MyShader &gt; .h                 | Impostare &lt; MyShader &gt; sul punto in cui si vuole archiviare l'intestazione finale combinata.                                                                                                                                                                                                          |
 
 ## <a name="export-function-specifications"></a>Esportare le specifiche della funzione
 
-È possibile, anche se non consigliato, creare uno shader con effetto compatibile senza usare gli helper forniti da D2D. È necessario assicurarsi che le firme di input complete dello shader e della funzione di esportazione siano conformi alle specifiche D2D.
+È possibile, anche se non consigliato, creare uno shader con effetto compatibile senza usare gli helper forniti da D2D. È necessario assicurarsi che sia lo shader completo che le firme di input della funzione di esportazione siano conformi alle specifiche D2D.
 
-Le specifiche per gli shader completi sono le stesse delle versioni Windows precedenti. Brevemente, i pixel shader di input devono essere SV POSITION, SCENE POSITION e \_ \_ TEXCOORD per ogni input dell'effetto.
+Le specifiche per gli shader completi sono le stesse delle versioni Windows precedenti. In breve, i pixel shader di input devono essere SV POSITION, SCENE POSITION e \_ \_ TEXCOORD per ogni input dell'effetto.
 
-Per la funzione di esportazione, la funzione deve restituire float4 e i relativi input devono essere di uno dei tipi seguenti:
+Per la funzione di esportazione, la funzione deve restituire un valore float4 e i relativi input devono essere di uno dei tipi seguenti:
 
 -   Input semplice
 
@@ -238,7 +238,7 @@ Per la funzione di esportazione, la funzione deve restituire float4 e i relativi
     float4 d2d_uvN  : TEXCOORDN                
     ```
 
-    Per gli input complessi, D2D passerà solo una coordinata di trama come descritto nella Windows 8 documentazione.
+    Per gli input complessi, D2D passerà solo una coordinata di trama, come descritto Windows 8 documentazione.
 
 -   Percorso di output
 
@@ -246,7 +246,7 @@ Per la funzione di esportazione, la funzione deve restituire float4 e i relativi
     float4 d2d_posScene : SCENE_POSITION                
     ```
 
-    È possibile definire \_ un solo input SCENE POSITION. Questo parametro deve essere incluso solo quando necessario, perché solo una funzione per shader collegato può usare questo parametro.
+    È possibile definire \_ un solo input SCENE POSITION. Questo parametro deve essere incluso solo quando necessario, perché solo una funzione per ogni shader collegato può usare questo parametro.
 
 La semantica deve essere definita come sopra, perché D2D ispeziona la semantica per decidere come collegare le funzioni tra loro. Se un input di funzione non corrisponde a uno dei tipi precedenti, la funzione verrà rifiutata per il collegamento dello shader.
 

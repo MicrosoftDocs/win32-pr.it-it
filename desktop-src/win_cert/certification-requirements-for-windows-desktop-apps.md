@@ -9,12 +9,12 @@ topic_type:
 api_name: ''
 api_type: ''
 api_location: ''
-ms.openlocfilehash: 4e78de8aef47479cdeb286b3c179a9a3c0520af4
-ms.sourcegitcommit: 61a4c522182aa1cacbf5669683d9570a3bf043b2
+ms.openlocfilehash: ad78afd89768eb7c362b1ed2171272a348a6466e
+ms.sourcegitcommit: c276a8912787b2cda74dcf54eb96df961bb1188b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/26/2021
-ms.locfileid: "122879682"
+ms.lasthandoff: 08/20/2021
+ms.locfileid: "122624967"
 ---
 # <a name="certification-requirements-for-windows-desktop-apps"></a>Requisiti di certificazione per Windows desktop
 
@@ -22,22 +22,22 @@ ms.locfileid: "122879682"
 
 **Data del documento:** 29 luglio 2015
 
-Questo documento contiene i requisiti tecnici e le qualifica di idoneità che un'app desktop deve soddisfare per partecipare al programma Windows 10 Di certificazione app desktop.
+Questo documento contiene i requisiti tecnici e le qualifica di idoneità che un'app desktop deve soddisfare per partecipare al programma di certificazione app desktop Windows 10 desktop.
 
 ## <a name="welcome"></a>Benvenuto!
 
-La Windows supporta un ampio ecosistema di prodotti e partner. La visualizzazione del logo Windows sul prodotto rappresenta una relazione e un impegno condiviso per la qualità tra Microsoft e l'azienda. I clienti si Windows il marchio del prodotto perché assicurano che soddisfi gli standard di compatibilità e funzionino bene Windows piattaforma. Il passaggio Windows certificazione dell'app consente di presentare l'app nel Centro compatibilità Windows ed è possibile visualizzare il logo di certificazione nel sito.
+La Windows supporta un ampio ecosistema di prodotti e partner. La visualizzazione del logo Windows sul prodotto rappresenta una relazione e un impegno condiviso per la qualità tra Microsoft e l'azienda. I clienti si affidano Windows marchio del prodotto perché assicurano che soddisfi gli standard di compatibilità e funzionino bene Windows piattaforma. Il passaggio Windows certificazione dell'app consente di presentare l'app nel Centro compatibilità Windows ed è possibile visualizzare il logo della certificazione nel sito.
 
-Il programma di certificazione app Windows è costituito da requisiti tecnici e di programma per garantire che le app di terze parti con il marchio Windows siano facili da installare e affidabili nei PC che eseguono Windows. I clienti sono molto interessati a stabilità, compatibilità, affidabilità, prestazioni e qualità nei sistemi acquistati. Microsoft si concentra sugli investimenti per soddisfare questi requisiti per le app software progettate per l'Windows per i PC. Queste attività includono test di compatibilità per la coerenza dell'esperienza, prestazioni migliorate e sicurezza avanzata nei PC che eseguono Windows software. I test di compatibilità Microsoft sono stati progettati in collaborazione con i partner del settore e sono continuamente migliorati in risposta agli sviluppi del settore e alla domanda dei consumatori.
+Il programma Windows App Certification Program è costituito da requisiti tecnici e di programma per garantire che le app di terze parti con il marchio Windows siano sia facili da installare che affidabili nei PC che eseguono Windows. I clienti sono molto interessati a stabilità, compatibilità, affidabilità, prestazioni e qualità nei sistemi acquistati. Microsoft si concentra sugli investimenti per soddisfare questi requisiti per le app software progettate per l'Windows per i PC. Queste attività includono test di compatibilità per la coerenza dell'esperienza, prestazioni migliorate e sicurezza migliorata nei PC che eseguono Windows software. I test di compatibilità Microsoft sono stati progettati in collaborazione con i partner del settore e sono continuamente migliorati in risposta agli sviluppi del settore e alla domanda dei consumatori.
 
-Il kit di certificazione app Windows viene usato per convalidare la conformità a questi requisiti e sostituisce le versioni precedenti del kit usate per la convalida in Windows 7, Windows 8 o Windows 8.1. Il Windows App Certification Kit è uno dei componenti inclusi in Windows Software Development Kit (SDK) per Windows 10.
+Il Windows App Certification Kit viene usato per convalidare la conformità a questi requisiti e sostituisce le versioni precedenti del kit usate per la convalida in Windows 7, Windows 8 o Windows 8.1. Il Windows App Certification Kit è uno dei componenti inclusi in Windows Software Development Kit (SDK) per Windows 10.
 
 ## <a name="app-eligibility"></a>Idoneità dell'app
 
 Perché un'app sia idonea Windows 10 la certificazione dell'app desktop, deve soddisfare i criteri seguenti e tutti i requisiti tecnici elencati in questo documento.
 
 -   Deve essere un'app autonoma
--   Deve essere eseguito in un computer Windows 10 locale
+-   Deve essere eseguito in un PC Windows 10 locale
 -   Può essere un componente client di un'app Windows Server certificata
 -   Deve essere codice e funzionalità completa
 -   Non deve comunicare con le app Windows Store tramite meccanismi locali, anche tramite file e chiavi del Registro di sistema, ad eccezione degli scenari aziendali supportati
@@ -50,11 +50,11 @@ Se l'app desktop viene inviata alla categoria di prodotti anti-virus e/o anti-sp
 
 ## <a name="1-apps-are-compatible-and-resilient"></a>1. Le app sono compatibili e resilienti
 
-Le volte in cui un'app si arresta in modo anomalo o smette di rispondere causa molte frustrazioni da parte dell'utente. Si prevede che le app siano resilienti e stabili e l'eliminazione di tali errori consente di garantire che il software sia più prevedibile, gestibile, performante e affidabile.<dl> 1.1 L'app non deve assumere una dipendenza Windows modalità di compatibilità, messaggio AppHelp e altre correzioni di compatibilità  
+Le volte in cui un'app si arresta in modo anomalo o smette di rispondere causa molte frustrazioni da parte dell'utente. Si prevede che le app siano resilienti e stabili e l'eliminazione di tali errori consente di garantire che il software sia più prevedibile, gestibile, performante e affidabile.<dl> 1.1 L'app non deve assumere una dipendenza dalle Windows di compatibilità, dal messaggio AppHelp e da qualsiasi altra correzione di compatibilità  
 1.2 L'app deve avere un manifesto di compatibilità e usare i GUID appropriati per le versioni supportate di Windows  
 1.3 L'app deve essere in grado di riconoscere DPI usando il manifesto dell'assembly dell'applicazione anziché chiamando SetProcessDPIAware  
 1.4 L'app non deve assumere una dipendenza dal runtime VB6  
-1.5 L'app non deve caricare DLL arbitrarie per intercettare le chiamate API Win32 usando HKLM \\ Software \\ Microsoft Windows NT \\ \\ CurrentVersion Windows Dll \\ \_ AppInit.  
+1.5 L'app non deve caricare DLL arbitrarie per intercettare le chiamate API Win32 usando HKLM \\ Software \\ Microsoft Windows NT \\ \\ CurrentVersion Windows \\ AppInit \_ DLL.  
 </dl>
 
 ## <a name="2-apps-must-adhere-to-windows-security-best-practices"></a>2. Le app devono rispettare Windows procedure consigliate per la sicurezza
@@ -71,11 +71,11 @@ Si noti che i test 2.1 2.6 sono applicabili solo alle app desktop testate in Win
 
 **Nota: l'accesso deve essere concesso solo alle entità che lo richiedono.**
 
-Il Windows App Certification Program verificherà che le superfici di attacco di Windows non siano esposte verificando che gli ACL e i servizi siano implementati in modo da non mettere a rischio il sistema Windows.
+Il programma di certificazione app Windows verificherà che le superfici di attacco di Windows non siano esposte verificando che gli ACL e i servizi siano implementati in modo da non mettere a rischio il sistema Windows.
 
 ## <a name="3-apps-support-windows-security-features"></a>3. Le app supportano Windows di sicurezza
 
-Il Windows sistema operativo ha molte funzionalità che supportano la sicurezza e la privacy del sistema. Le app devono supportare queste funzionalità per mantenere l'integrità del sistema operativo. Le app compilate in modo non corretto possono causare sovraccarichi del buffer che possono, a sua volta, causare attacchi Denial of Service o consentire l'esecuzione di codice dannoso. <dl> 3.1 L'app non deve usare AllowPartiallyTrustedCallersAttribute (APTCA) per garantire l'accesso sicuro agli assembly con nome sicuro  
+Il Windows operativo ha molte funzionalità che supportano la sicurezza e la privacy del sistema. Le app devono supportare queste funzionalità per mantenere l'integrità del sistema operativo. Le app compilate in modo non corretto possono causare sovraccarichi del buffer che possono, a sua volta, causare attacchi Denial of Service o consentire l'esecuzione di codice dannoso. <dl> 3.1 L'app non deve usare AllowPartiallyTrustedCallersAttribute (APTCA) per garantire l'accesso sicuro agli assembly con nome sicuro  
 3.2 L'app deve essere compilata usando il flag /SafeSEH per garantire la gestione sicura delle eccezioni  
 3.3 L'app deve essere compilata usando il flag /NXCOMPAT per impedire l'esecuzione dei dati  
 3.4 L'app deve essere compilata usando il flag /DYNAMICBASE per la casualizzazione del layout dello spazio indirizzi (ASLR)  
@@ -115,7 +115,7 @@ Un'installazione pulita e reversibile consente agli utenti di gestire correttame
 
 ## <a name="6-apps-must-digitally-sign-files-and-drivers"></a>6. Le app devono firmare digitalmente file e driver
 
-Una firma digitale Authenticode consente agli utenti di assicurarsi che il software sia originale. Consente inoltre di rilevare se un file è stato manomesso, ad esempio se è stato infettato da un virus. L'imposizione della firma del codice in modalità kernel è una funzionalità Windows nota come integrità del codice ,che migliora la sicurezza del sistema operativo verificando l'integrità di un file ogni volta che l'immagine del file viene caricata in memoria. Ci consente di rilevare se codice dannoso ha modificato un file binario di sistema. Genera anche un evento di log di diagnostica e di controllo di sistema quando la firma di un modulo del kernel non viene verificata correttamente. <dl> 6.1 Tutti i file eseguibili (.exe, .dll, ocx, .sys, .cpl, drv, scr) devono essere firmati con un certificato Authenticode  
+Una firma digitale Authenticode consente agli utenti di assicurarsi che il software sia originale. Consente inoltre di rilevare se un file è stato manomesso, ad esempio se è stato infettato da un virus. L'imposizione della firma del codice in modalità kernel è una funzionalità Windows nota come integrità del codice che migliora la sicurezza del sistema operativo verificando l'integrità di un file ogni volta che l'immagine del file viene caricata in memoria. Ci consente di rilevare se codice dannoso ha modificato un file binario di sistema. Genera anche un evento di log di diagnostica e di controllo di sistema quando la firma di un modulo del kernel non viene verificata correttamente. <dl> 6.1 Tutti i file eseguibili (.exe, .dll, ocx, .sys, .cpl, drv, scr) devono essere firmati con un certificato Authenticode  
 6.2 Tutti i driver in modalità kernel installati dall'app devono avere una firma Microsoft ottenuta tramite il Windows di certificazione hardware. Tutti i driver di filtro del file system devono essere firmati da Microsoft.  
 6.3 Eccezioni ed esenzioni <dl> Le derozioni verranno considerate solo per i ridistribuibili di terze parti non firmati, esclusi i driver. Per la concessione di questa deroga è necessaria una prova di comunicazione che richiede una versione firmata dei ridistribuibili.  
 </dl> </dd> </dl>
@@ -168,8 +168,8 @@ Gli utenti devono avere un'esperienza coerente e sicura con il percorso di insta
 -   Start Menu AllPrograms > STARTUP
 
 </dd> 10.3 Your app data, which must be shared among users on the computer, should be stored within ProgramData  
-10.4 Your app s data that is exclusive to a specific user and that is not to be shared with other users of the computer, must be stored in Users\\&lt;username&gt;\\AppData  
-10.5 Your app must never write directly to the "Windows" directory and or subdirectories <dl> Usare i metodi corretti per l'installazione di file, ad esempio tipi di carattere o driver.  
+10.4 Your app s data that is exclusive to a specific user and that is not to be shared with other users of the computer, must be stored in Users\\<username>\\Appdata  
+10.5 L'app non deve mai scrivere direttamente nella directory "Windows" e o nelle sottodirectory <dl> Usare i metodi corretti per l'installazione di file, ad esempio tipi di carattere o driver.  
 </dl> </dd> 10.6 Your app must write user data at first run and not during the installation in  per-machine  installations <dl> Quando l'app è installata, non esiste un percorso utente corretto in cui archiviare i dati. I tentativi da parte di un'app di modificare i comportamenti di associazione predefiniti a livello di computer dopo l'installazione avranno esito negativo. Le impostazioni predefinite devono invece essere dichiarate a livello di singolo utente, impedendo a più utenti di sovrascrivere le impostazioni predefinite degli altri utenti.  
 </dl> </dd> 10.7 Exceptions and Waivers <dl> È necessaria una deroga per le app che scrivono nella Global Assembly Cache (GAC) .NET, che devono mantenere private le dipendenze degli assembly e archiviarle nella directory dell'app, a meno che la condivisione di un assembly non sia esplicitamente necessaria.  
 </dl> </dd> </dl>
@@ -236,7 +236,7 @@ Grazie ancora per aver preso parte al nostro impegno a offrire esperienze di cli
 </tr>
 <tr class="even">
 <td>Compatibilità e resilienza</td>
-<td>Gli arresti & blocchi anomali sono un'interruzione importante per gli utenti e causano frustrazione. Si prevede che le app siano resilienti e stabili, eliminando tali errori si garantisce che il software sia più prevedibile, gestibile, performante e affidabile.<br/> Il punto di ingresso dell'app rivolto all'utente deve essere manifestato per motivi di compatibilità e deve dichiarare il GUID corretto. <br/> I punti di ingresso dell'app per l'utente devono essere manifestati per il riconoscimento HIGH-DPI e le API appropriate vengono chiamate per supportare HIGH-DPI.<br/> Per altre informazioni, vedere:
+<td>Gli arresti & blocchi anomali sono una grave interruzione per gli utenti e causano frustrazione. Si prevede che le app siano resilienti e stabili, eliminando tali errori si garantisce che il software sia più prevedibile, gestibile, affidabile e affidabile.<br/> Il punto di ingresso dell'app rivolto all'utente deve essere manifestato per motivi di compatibilità e deve dichiarare il GUID corretto. <br/> I punti di ingresso dell'app per l'utente devono essere manifesti per la consapevolezza dei valori DPI alti e che vengono chiamate le API appropriate per supportare high-DPI.<br/> Per altre informazioni, vedere:
 <ul>
 <li><a href="https://support.microsoft.com/kb/197571">DLL AppInit</a></li>
 <li><a href="/windows/desktop/w8cookbook/application--executable--manifest">Manifesto dell'app (eseguibile)</a></li>
@@ -245,8 +245,8 @@ Grazie ancora per aver preso parte al nostro impegno a offrire esperienze di cli
 <br/></td>
 </tr>
 <tr class="odd">
-<td>Attenersi alle Sicurezza di Windows consigliate</td>
-<td>L Windows procedure consigliate per la sicurezza consente di evitare la creazione di esposizione Windows di attacco. Le superfici di attacco sono i punti di ingresso che un utente malintenzionato potrebbe usare per sfruttare il sistema operativo sfruttando le vulnerabilità nel software di destinazione. Una delle peggiori vulnerabilità di sicurezza è l'elevazione dei privilegi.<br/> Per altre informazioni, vedere:
+<td>Conformità alle Sicurezza di Windows consigliate</td>
+<td>L Windows procedure consigliate per la sicurezza consente di evitare di creare esposizione alle Windows di attacco. Le superfici di attacco sono i punti di ingresso che un utente malintenzionato potrebbe usare per sfruttare il sistema operativo sfruttando le vulnerabilità nel software di destinazione. Una delle peggiori vulnerabilità della sicurezza è l'elevazione dei privilegi.<br/> Per altre informazioni, vedere:
 <ul>
 <li><a href="https://technet.microsoft.com/security/gg749821">Attack Surface Analyzer</a></li>
 <li><a href="/windows/desktop/SecAuthZ/access-control-lists">Elenchi di controllo di accesso</a></li>
@@ -259,32 +259,32 @@ Grazie ancora per aver preso parte al nostro impegno a offrire esperienze di cli
 </tr>
 <tr class="odd">
 <td>Rispettare i messaggi di System Restart Manager</td>
-<td>Quando gli utenti avviano l'arresto, nella maggior parte dei casi, hanno un forte desiderio di vedere l'arresto riuscito; possono avere fretta di uscire dall'ufficio e &quot; vogliono solo che i computer si &quot; spegnino. Le app devono rispettare questo desiderio non bloccando l'arresto. Anche se nella maggior parte dei casi, un arresto potrebbe non essere critico, le app devono essere preparate per la possibilità di un arresto critico.</td>
+<td>Quando gli utenti avviano l'arresto, nella maggior parte dei casi desiderano che l'arresto abbia esito positivo. Potrebbero essere in diffigate nel lasciare l'ufficio e &quot; volere &quot; solo che i computer si spegnino. Le app devono rispettare questo volere non bloccando l'arresto. Anche se nella maggior parte dei casi un arresto potrebbe non essere critico, le app devono essere preparate per la possibilità di un arresto critico.</td>
 </tr>
 <tr class="even">
 <td>Installazione reversibile pulita</td>
-<td>Un'installazione pulita e reversibile consente agli utenti di gestire correttamente (distribuire e rimuovere) le app nei propri sistemi. Per altre informazioni, <a href="/visualstudio/deployment/how-to-install-prerequisites-with-a-clickonce-application?view=vs-2015">vedere Procedura: Installare i prerequisiti con un'ClickOnce app.</a></td>
+<td>Un'installazione pulita e reversibile consente agli utenti di gestire (distribuire e rimuovere) correttamente le app nei propri sistemi. Per altre informazioni, <a href="/visualstudio/deployment/how-to-install-prerequisites-with-a-clickonce-application?view=vs-2015">vedere Procedura: Installare i prerequisiti con un'ClickOnce applicazione</a>.</td>
 </tr>
 <tr class="odd">
 <td>Firmare digitalmente file e driver</td>
-<td>Una firma digitale Authenticode consente agli utenti di assicurarsi che il software sia originale. Consente inoltre di rilevare se un file è stato manomesso, ad esempio se è stato infettato da un virus. L'imposizione della firma del codice in modalità kernel è una funzionalità Windows nota come integrità del codice che migliora la sicurezza del sistema operativo verificando l'integrità di un file ogni volta che l'immagine del file viene caricata in memoria. Ci consente di rilevare se codice dannoso ha modificato un file binario di sistema. Genera anche un evento di log di diagnostica e di controllo di sistema quando la firma di un modulo del kernel non viene verificata correttamente.<br/></td>
+<td>Una firma digitale Authenticode consente agli utenti di assicurarsi che il software sia originale. Consente inoltre di rilevare se un file è stato manomesso, ad esempio se è stato infettato da un virus. L'imposizione della firma del codice in modalità kernel è una funzionalità di Windows nota come integrità del codice ,che migliora la sicurezza del sistema operativo verificando l'integrità di un file ogni volta che l'immagine del file viene caricata in memoria. Ci rileva se il codice dannoso ha modificato un file binario di sistema. Genera anche un evento del log di diagnostica e di controllo del sistema quando la firma di un modulo del kernel non viene verificata correttamente.<br/></td>
 </tr>
 <tr class="even">
 <td>Non bloccare l'installazione o l'avvio dell'app in base al controllo della versione del sistema operativo</td>
-<td>È importante che i clienti non siano artificialmente bloccati dall'installazione o dall'esecuzione dell'app quando non sono presenti limitazioni tecniche. In generale, se le app sono state scritte Windows Vista o versioni successive, non dovrebbero avere alcun motivo per controllare la versione del sistema operativo. Per altre informazioni, vedere <a href="/windows/desktop/Win7AppQual/operating-system-versioning">Controllo delle versioni del sistema operativo.</a></td>
+<td>È importante che i clienti non siano artificialmente bloccati dall'installazione o dall'esecuzione dell'app quando non sono presenti limitazioni tecniche. In generale, se le app sono state scritte per Windows Vista o versioni successive, non dovrebbero avere alcun motivo per controllare la versione del sistema operativo. Per altre informazioni, vedere Controllo <a href="/windows/desktop/Win7AppQual/operating-system-versioning">delle versioni del sistema operativo.</a></td>
 </tr>
 <tr class="odd">
-<td>Non caricare servizi e driver in modalità Cassaforte predefinita</td>
-<td>Cassaforte consente agli utenti di diagnosticare e risolvere i Windows. A meno che non sia necessario per operazioni di base del sistema (ad esempio, driver di dispositivo di archiviazione) o per scopi diagnostici e di ripristino (ad esempio, antivirus), i driver e i servizi non devono essere impostati per il caricamento in modalità sicura. Per impostazione predefinita, la modalità provvisoria non avvia la maggior parte dei driver e dei servizi che non sono stati preinstallati con Windows. Devono rimanere disabilitate a meno che il sistema non le richieda per operazioni di base o per scopi diagnostici e di ripristino.<br/> Per altre informazioni, vedere:
+<td>Non caricare servizi e driver in modalità Cassaforte sicurezza</td>
+<td>Cassaforte consente agli utenti di diagnosticare e risolvere i Windows. A meno che non sia necessario per operazioni di base del sistema (ad esempio, driver di dispositivo di archiviazione) o per scopi diagnostici e di ripristino (ad esempio, scanner antivirus), i driver e i servizi non devono essere impostati per il caricamento in modalità sicura. Per impostazione predefinita, la modalità provvisoria non avvia la maggior parte dei driver e dei servizi che non sono stati preinstallati con Windows. Devono rimanere disabilitati a meno che il sistema non li richieda per operazioni di base o per scopi diagnostici e di ripristino.<br/> Per altre informazioni, vedere:
 <ul>
-<li><a href="/windows-hardware/drivers/kernel/determining-whether-the-operating-system-is-running-in-safe-mode">Determinare se il sistema operativo è in esecuzione in Cassaforte predefinita</a></li>
-<li><a href="https://support.microsoft.com/kb/837643">Come determinare se il sistema è in esecuzione in modalità Cassaforte da un driver di dispositivo</a></li>
+<li><a href="/windows-hardware/drivers/kernel/determining-whether-the-operating-system-is-running-in-safe-mode">Determinazione dell'esecuzione del sistema operativo in Cassaforte predefinita</a></li>
+<li><a href="https://support.microsoft.com/kb/837643">Come determinare se il sistema è in esecuzione in Cassaforte da un driver di dispositivo</a></li>
 </ul>
 <br/></td>
 </tr>
 <tr class="even">
-<td>Seguire le linee guida per il controllo dell'account utente</td>
-<td>Alcune Windows'app vengono eseguite nel contesto di sicurezza di un account amministratore e molte richiedono diritti utente e Windows privilegi elevati. Il controllo dell'accesso alle risorse consente agli utenti di avere il controllo dei propri sistemi contro modifiche indesiderate(una modifica indesiderata può essere dannosa, ad esempio un rootkit che prende furtivamente il controllo del computer o un'azione da parte di utenti con privilegi limitati, ad esempio un dipendente che installa software proibito in un computer di lavoro). La regola più importante per controllare l'accesso alle risorse è fornire il minimo livello di accesso al contesto utente standard necessario per consentire a un utente di eseguire le attività necessarie. Le linee guida del controllo dell'account utente seguenti forniscono all'app le autorizzazioni necessarie quando necessario, senza lasciare il sistema costantemente esposto ai rischi per la sicurezza.<br/> Per altre informazioni, vedere:
+<td>Seguire le linee guida di Controllo dell'account utente</td>
+<td>Alcune Windows'app vengono eseguite nel contesto di sicurezza di un account amministratore e molte richiedono diritti utente eccessivi Windows privilegi. Il controllo dell'accesso alle risorse consente agli utenti di avere il controllo dei propri sistemi contro modifiche indesiderate (una modifica indesiderata può essere dannosa, ad esempio un rootkit che assume il controllo del computer o un'azione da parte di utenti con privilegi limitati, ad esempio un dipendente che installa software vietato in un computer di lavoro). La regola più importante per controllare l'accesso alle risorse è fornire il minimo livello di accesso al contesto utente standard necessario a un utente per eseguire le attività necessarie. Le linee guida di Controllo dell'account utente seguenti forniscono all'app le autorizzazioni necessarie quando necessario, senza lasciare il sistema costantemente esposto ai rischi per la sicurezza.<br/> Per altre informazioni, vedere:
 <ul>
 <li><a href="/windows/desktop/uxguide/winenv-uac">Controllo dell'account utente</a></li>
 <li><a href="/previous-versions/aa480152(v=msdn.10)">Controllo dell'account utente: Linee guida per l'aggiornamento delle applicazioni</a></li>
@@ -292,16 +292,16 @@ Grazie ancora per aver preso parte al nostro impegno a offrire esperienze di cli
 <br/></td>
 </tr>
 <tr class="odd">
-<td>Eseguire l'installazione nelle cartelle corrette per impostazione predefinita</td>
-<td>Gli utenti devono avere un'esperienza coerente e sicura con il percorso di installazione predefinito dei file, mantenendo la possibilità di installare un'app nel percorso scelto. È anche necessario archiviare i dati dell'app nella posizione corretta per consentire a più utenti di usare lo stesso computer senza danneggiare o sovrascrivere i dati e le impostazioni dell'altro. Per altre informazioni, vedere <a href="/previous-versions/ms954376(v=msdn.10)">Riepilogo dei requisiti di installazione/disinstallazione.</a></td>
+<td>Installa nelle cartelle corrette per impostazione predefinita</td>
+<td>Gli utenti devono avere un'esperienza coerente e sicura con il percorso di installazione predefinito dei file, mantenendo al tempo stesso la possibilità di installare un'app nel percorso scelto. È anche necessario archiviare i dati dell'app nella posizione corretta per consentire a più utenti di usare lo stesso computer senza danneggiare o sovrascrivere i dati e le impostazioni reciproci. Per altre informazioni, vedere <a href="/previous-versions/ms954376(v=msdn.10)">Riepilogo dei requisiti di installazione/disinstallazione.</a></td>
 </tr>
 <tr class="even">
 <td>Supporto di sessioni multi-utente</td>
-<td>Windows utenti devono essere in grado di eseguire sessioni simultanee senza conflitti o interruzioni. Per altre informazioni, vedere Linee <a href="/windows/desktop/TermServ/terminal-services-programming-guidelines">guida Servizi Desktop remoto programmazione .</a></td>
+<td>Windows utenti devono essere in grado di eseguire sessioni simultanee senza conflitti o interruzioni. Per altre informazioni, vedere Linee <a href="/windows/desktop/TermServ/terminal-services-programming-guidelines">guida Servizi Desktop remoto programmazione.</a></td>
 </tr>
 <tr class="odd">
 <td>Supporto delle versioni x64 di Windows</td>
-<td>Poiché l'hardware a 64 bit diventa sempre più diffuso, gli utenti si aspettano che gli sviluppatori di app possano sfruttare i vantaggi dell'architettura a 64 bit eseguendo la migrazione delle app a 64 bit o che le versioni a 32 bit dell'app si esercitino bene nelle versioni a 64 bit di Windows.</td>
+<td>Poiché l'hardware a 64 bit diventa più prevalente, gli utenti si aspettano che gli sviluppatori di app possano sfruttare i vantaggi dell'architettura a 64 bit eseguendo la migrazione delle app a 64 bit o che le versioni a 32 bit dell'app vengono eseguite bene nelle versioni a 64 bit di Windows.</td>
 </tr>
 </tbody>
 </table>
@@ -313,4 +313,4 @@ Grazie ancora per aver preso parte al nostro impegno a offrire esperienze di cli
 ## <a name="see-also"></a>Vedi anche
 
 -   [Windows Programma di certificazione hardware](/previous-versions/windows/hardware/hck/jj124227(v=vs.85))
--   [Come usare il kit di certificazione Windows app](./using-the-windows-app-certification-kit.md)
+-   [Come usare il kit di Windows app](./using-the-windows-app-certification-kit.md)

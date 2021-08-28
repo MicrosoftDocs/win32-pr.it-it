@@ -1,31 +1,31 @@
 ---
 title: Creazione di una sottoscrizione avviata dall'agente di raccolta
-description: È possibile sottoscrivere per ricevere eventi in un computer locale (l'agente di raccolta eventi) che vengono inoltrati dai computer remoti (le origini eventi) usando una sottoscrizione avviata dall'agente di raccolta.
+description: È possibile sottoscrivere per ricevere eventi in un computer locale (l'agente di raccolta eventi) che vengono inoltrati da computer remoti (origini eventi) usando una sottoscrizione avviata dall'agente di raccolta.
 ms.assetid: 76f14e01-7a84-4c94-aea6-91189573eb89
 ms.tgt_platform: multiple
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 1b5fdcff469ad8f6dfef4f775e0c79da814e9f4c6e05a71a95b6ddf70446d4ba
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 0f05b2a0e6628256ca5efd86c142bac09f5fcc2b
+ms.sourcegitcommit: 61a4c522182aa1cacbf5669683d9570a3bf043b2
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "120006131"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "122886241"
 ---
 # <a name="creating-a-collector-initiated-subscription"></a>Creazione di una sottoscrizione avviata dall'agente di raccolta
 
-È possibile sottoscrivere per ricevere eventi in un computer locale (l'agente di raccolta eventi) che vengono inoltrati dai computer remoti (le origini eventi) usando una sottoscrizione avviata dall'agente di raccolta. In una sottoscrizione avviata dall'agente di raccolta, la sottoscrizione deve contenere un elenco di tutte le origini eventi. Prima che un computer dell'agente di raccolta possa sottoscrivere eventi e un'origine eventi remota possa inoltrare gli eventi, entrambi i computer devono essere configurati per la raccolta e l'inoltro degli eventi. Per altre informazioni su come configurare i computer, vedere Configurare i computer per [l'inoltro e la raccolta di eventi.](/previous-versions/windows/it-pro/windows-server-2008-R2-and-2008/cc748890(v=ws.11))
+È possibile sottoscrivere per ricevere eventi in un computer locale (l'agente di raccolta eventi) che vengono inoltrati da computer remoti (origini eventi) usando una sottoscrizione avviata dall'agente di raccolta. In una sottoscrizione avviata dall'agente di raccolta, la sottoscrizione deve contenere un elenco di tutte le origini eventi. Prima che un computer dell'agente di raccolta possa sottoscrivere eventi e un'origine eventi remota possa inoltrare gli eventi, entrambi i computer devono essere configurati per la raccolta e l'inoltro degli eventi. Per altre informazioni su come configurare i computer, vedere Configurare i computer per [l'inoltro e la raccolta di eventi](/previous-versions/windows/it-pro/windows-server-2008-R2-and-2008/cc748890(v=ws.11)).
 
 L'esempio di codice seguente segue una serie di passaggi per creare una sottoscrizione avviata dall'agente di raccolta:
 
 **Per creare una sottoscrizione avviata dall'agente di raccolta**
 
-1.  Aprire la sottoscrizione specificando il nome della sottoscrizione e i diritti di accesso come parametri per [**la funzione EcOpenSubscription.**](/windows/desktop/api/Evcoll/nf-evcoll-ecopensubscription) Per altre informazioni sui diritti di accesso, vedere [**l'Windows costanti dell'agente di raccolta eventi**](windows-event-collector-constants.md).
-2.  Impostare le proprietà della sottoscrizione chiamando la [**funzione EcSetSubscriptionProperty.**](/windows/desktop/api/Evcoll/nf-evcoll-ecsetsubscriptionproperty) Per altre informazioni sulle proprietà di sottoscrizione che è possibile impostare, vedere l'enumerazione [**EC \_ SUBSCRIPTION PROPERTY \_ \_ ID.**](/windows/desktop/api/Evcoll/ne-evcoll-ec_subscription_property_id)
+1.  Aprire la sottoscrizione specificando il nome della sottoscrizione e i diritti di accesso come parametri per la [**funzione EcOpenSubscription.**](/windows/desktop/api/Evcoll/nf-evcoll-ecopensubscription) Per altre informazioni sui diritti di accesso, vedere [**Costanti dell'agente**](windows-event-collector-constants.md)Windows eventi .
+2.  Impostare le proprietà della sottoscrizione chiamando la [**funzione EcSetSubscriptionProperty.**](/windows/desktop/api/Evcoll/nf-evcoll-ecsetsubscriptionproperty) Per altre informazioni sulle proprietà della sottoscrizione che è possibile impostare, vedere l'enumerazione [**EC \_ SUBSCRIPTION PROPERTY \_ \_ ID.**](/windows/desktop/api/Evcoll/ne-evcoll-ec_subscription_property_id)
 3.  Salvare la sottoscrizione chiamando la [**funzione EcSaveSubscription.**](/windows/desktop/api/Evcoll/nf-evcoll-ecsavesubscription)
 4.  Chiudere la sottoscrizione chiamando la [**funzione EcClose.**](/windows/desktop/api/Evcoll/nf-evcoll-ecclose)
 
-Per altre informazioni sull'aggiunta di un'origine evento, vedere [Aggiunta di un'origine evento a una sottoscrizione dell'agente di raccolta eventi.](adding-an-event-source-to-an-event-collector-subscription.md)
+Per altre informazioni sull'aggiunta di un'origine evento, vedere [Aggiunta di un'origine evento a una sottoscrizione dell'agente di raccolta eventi](adding-an-event-source-to-an-event-collector-subscription.md).
 
 L'esempio di codice C++ seguente illustra come creare una sottoscrizione avviata dall'agente di raccolta:
 
@@ -517,12 +517,12 @@ DWORD GetProperty(EC_HANDLE hSubscription,
 
     1.  Eseguire il comando seguente da un prompt dei comandi con privilegi elevati per ottenere lo stato di runtime della sottoscrizione:
 
-        **wecutil gr***<subscriptionID>*
+        **wecutil gr** *&lt; subscriptionID &gt;*
 
-    2.  Verificare che l'origine evento sia connessa. Potrebbe essere necessario attendere il termine dell'intervallo di aggiornamento specificato nei criteri dopo aver creato la sottoscrizione per l'origine evento da collegare.
+    2.  Verificare che l'origine evento sia connessa. Potrebbe essere necessario attendere la fine dell'intervallo di aggiornamento specificato nei criteri dopo aver creato la sottoscrizione per la connessione dell'origine evento.
     3.  Eseguire il comando seguente per ottenere le informazioni sulla sottoscrizione:
 
-        **wecutil gs***<subscriptionID>*
+        **wecutil gs** *&lt; subscriptionID &gt;*
 
     4.  Ottenere il valore DeliveryMaxItems dalle informazioni sulla sottoscrizione.
 

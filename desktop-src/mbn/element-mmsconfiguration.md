@@ -7,12 +7,12 @@ MSHAttr:
 title: MmsConfiguration
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 0217dae3aad8afb70997d27db3053a6bac9f41b2
-ms.sourcegitcommit: 61a4c522182aa1cacbf5669683d9570a3bf043b2
+ms.openlocfilehash: ff6612ce37bfa39b9498b6db4b9ce49cb06a6326
+ms.sourcegitcommit: 4665ebce0c106bdb52eef36e544280b496b6f50b
 ms.translationtype: MT
 ms.contentlocale: it-IT
 ms.lasthandoff: 08/26/2021
-ms.locfileid: "122882940"
+ms.locfileid: "122982134"
 ---
 # <a name="span-idwwan_profile_v4element_mmsconfigurationspanmmsconfiguration"></a><span id="WWAN_profile_v4.element_MmsConfiguration"></span>MmsConfiguration
 
@@ -21,10 +21,10 @@ Informazioni di configurazione per MmS (Multimedia Messaging Service).
 Oltre a impostare gli elementi di configurazione all'interno di questo elemento, un profilo MMS deve avere le impostazioni seguenti.
 
 -   [**L'elemento Name**](element-name.md) deve contenere un nome univoco a livello di sistema.
--   [**ProfileCreationType**](./schema-profilecreationtype-mbnprofile-element.md) deve essere impostato su **UserProvisioned.**
--   [**SimIccID**](/windows/win32/api/mbnapi/nf-mbnapi-imbnsubscriberinformation-get_simiccid) deve contenere l'ICCID della SIM a cui è destinato questo profilo.
+-   [**ProfileCreationType deve**](./schema-profilecreationtype-mbnprofile-element.md) essere impostato su **UserProvisioned.**
+-   [**SimIccID deve**](/windows/win32/api/mbnapi/nf-mbnapi-imbnsubscriberinformation-get_simiccid) contenere l'ICCID della SIM a cui è destinato questo profilo.
 -   ConnectionMode [**deve**](./schema-connectionmode-mbnprofile-element.md) essere impostato su **Manual.**
--   [**PurposeGroupGuid**](element-purposegroupguid.md) deve contenere il GUID per il gruppo di scopi MMS.
+-   [**PurposeGroupGuid deve**](element-purposegroupguid.md) contenere il GUID per il gruppo di scopi MMS.
 -   [**IsAdditionalPdpContextProfile**](/previous-versions/windows/desktop/legacy/mt156987(v=vs.85)) deve essere impostato su **true.**
 
 ## <a name="element-hierarchy"></a>Gerarchia degli elementi
@@ -72,7 +72,7 @@ Nessuno.
 
 | Elemento padre | Descrizione | 
 |----------------|-------------|
-| <a href="element-mbnprofileext.md">MBNProfileExt</a> | <p><strong>L'elemento MBNProfileExt</strong> è un'estensione dell'elemento MBNProfile precedente. Identifica un profilo Mobile Broadband con un set più ricco di opzioni rispetto all'elemento MBNProfile.</p><p>In un profilo possono essere presenti più elementi MbnProfileExt che descrivono le impostazioni del profilo per un determinato set di condizioni operative. Usare <a href="element-profileconditionedon.md"><strong>l'elemento figlio ProfileConditionedOn</strong></a> di <strong>MBNProfileExt</strong> per specificare le condizioni operative che rendono un profilo specifico il profilo attivo.</p> | 
+| <a href="element-mbnprofileext.md">MBNProfileExt</a> | <p><strong>L'elemento MBNProfileExt</strong> è un'estensione dell'elemento MBNProfile precedente. Identifica un profilo Mobile Broadband con un set di opzioni più ricco rispetto all'elemento MBNProfile.</p><p>In un profilo possono essere presenti più elementi MbnProfileExt, che descrivono le impostazioni del profilo per un particolare set di condizioni operative. Usare <a href="element-profileconditionedon.md"><strong>l'elemento figlio ProfileConditionedOn</strong></a> di <strong>MBNProfileExt</strong> per specificare le condizioni operative che rendono un profilo specifico il profilo attivo.</p> | 
 
 
  
@@ -80,7 +80,9 @@ Nessuno.
 ## <a name="requirements"></a>Requisiti
 
 
-| | | <p>Spazio dei nomi</p> | <p>https://www.microsoft.com/networking/WWAN/profile/v4</p> | 
+| Requisito | Valore |
+|------------|----------|
+| <p>Spazio dei nomi</p> | <p>https://www.microsoft.com/networking/WWAN/profile/v4</p> | 
 
 
  

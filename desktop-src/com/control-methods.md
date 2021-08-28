@@ -4,27 +4,27 @@ description: Metodi di controllo
 ms.assetid: e35cb39a-3bdc-4359-a289-c808d31748e8
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: bb19bf237c47391cd02f6feed0c1b62efc0e71d6
-ms.sourcegitcommit: 2d531328b6ed82d4ad971a45a5131b430c5866f7
+ms.openlocfilehash: 7733d9f1030a0e5f0775c5cdc5eb24415a24ba67d56356421f60cee9dada6e59
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "104332348"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120120521"
 ---
 # <a name="control-methods"></a>Metodi di controllo
 
-Sono disponibili tre metodi standard che i controlli possono supportare: Refresh, DoClick e AboutBox. Questi metodi standard hanno valori DISPID negativi, che ne indicano lo stato standard.
+I controlli possono supportare tre metodi standard: Refresh, DoClick e AboutBox. Questi metodi standard hanno valori DISPID negativi, che ne indicano lo stato standard.
 
 ## <a name="related-topics"></a>Argomenti correlati
 
 <dl> <dt>
 
-[Proprietà del controllo](control-properties.md)
+[Proprietà dei controlli](control-properties.md)
 </dt> </dl>
 
- 
+ 
 
- 
+ 
 
 
 

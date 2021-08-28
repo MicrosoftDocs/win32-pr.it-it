@@ -1,35 +1,35 @@
 ---
 title: Introduzione (DirectXMath)
-description: La libreria DirectXMath implementa un'interfaccia ottimale e portatile per operazioni aritmetiche e di algebra lineare su vettori a virgola mobile a precisione singola (2D, 3D e 4D) o matrici (3 × 3 e 4 × 4).
+description: La libreria DirectXMath implementa un'interfaccia ottimale e portabile per operazioni algebra aritmetiche e lineari su vettori a virgola mobile a precisione singola (2D, 3D e 4D) o matrici (3×3 e 4×4).
 ms.assetid: 9972e382-7a0f-88a7-ad44-18521af3520d
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 05e599acfc498e28b33acfc5bbbba2bea5669d2a
-ms.sourcegitcommit: 3bdf30edb314e0fcd17dc4ddbc70e4ec7d3596e6
+ms.openlocfilehash: 5ad7de99a462dc533d8010c45dfadcb1bcfa1b6f33317a941e91c16f30c3d2c5
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/10/2021
-ms.locfileid: "104351021"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120117501"
 ---
 # <a name="getting-started-directxmath"></a>Introduzione (DirectXMath)
 
-La libreria DirectXMath implementa un'interfaccia ottimale e portatile per operazioni aritmetiche e di algebra lineare su vettori a virgola mobile a precisione singola (2D, 3D e 4D) o matrici (3 × 3 e 4 × 4). La libreria ha un supporto limitato per le operazioni di vettori di tipo Integer. Queste operazioni vengono ampiamente utilizzate nel rendering e nell'animazione da programmi di grafica. Non è disponibile alcun supporto per i vettori a precisione doppia (compresi Long, short o byte) e solo le operazioni di vettori di tipo Integer limitate.
+La libreria DirectXMath implementa un'interfaccia ottimale e portabile per operazioni algebra aritmetiche e lineari su vettori a virgola mobile a precisione singola (2D, 3D e 4D) o matrici (3×3 e 4×4). La libreria ha un supporto limitato per le operazioni su vettori integer. Queste operazioni vengono ampiamente usate nel rendering e nell'animazione dai programmi di grafica. Non è disponibile alcun supporto per i vettori a precisione doppia (inclusi long, short o byte) e solo per operazioni limitate sui vettori integer.
 
-La libreria è disponibile in un'ampia gamma di piattaforme Windows. Poiché la libreria fornisce funzionalità non disponibili in precedenza, questa versione sostituisce le librerie seguenti:
+La libreria è disponibile in un'ampia gamma di Windows. Poiché la libreria fornisce funzionalità non disponibili in precedenza, questa versione sostituisce le librerie seguenti:
 
--   Xbox Math Library fornita dall'intestazione Xboxmath. h
+-   Libreria xbox math fornita dall'intestazione Xboxmath.h
 -   Libreria D3DX 9 fornita dalle DLL D3DX 9
--   Libreria matematica D3DX 10 fornita tramite le dll D3DX 10
--   XNA Math Library fornita dall'intestazione XNAMath. h in DirectX SDK e Xbox 360 XDK
+-   Libreria matematica D3DX 10 fornita tramite le DLL D3DX 10
+-   Libreria matematica XNA fornita dall'intestazione xnamath.h in DirectX SDK e Xbox 360 XDK
 
-In queste sezioni vengono illustrate le nozioni di base per iniziare.
+Queste sezioni descrivono le nozioni di base per iniziare.
 
 -   [Scaricare](#download)
 -   [Requisiti di sistema in fase di esecuzione](#run-time-system-requirements)
--   [Panoramica sulla progettazione](#design-overview)
--   [Convenzione matrice](#matrix-convention)
+-   [Panoramica della progettazione](#design-overview)
+-   [Convenzione di matrice](#matrix-convention)
 -   [Utilizzo di base](#basic-usage)
--   [Linee guida sull'utilizzo del tipo](#type-usage-guidelines)
+-   [Linee guida sull'utilizzo dei tipi](#type-usage-guidelines)
 -   [Creazione di vettori](#creating-vectors)
     -   [VETTORI COSTANTI](#constant-vectors)
     -   [VETTORI DA VARIABILI](#vectors-from-variables)
@@ -40,74 +40,74 @@ In queste sezioni vengono illustrate le nozioni di base per iniziare.
 
 ## <a name="download"></a>Scarica
 
-La libreria DirectXMath è inclusa nella Windows SDK. In alternativa, è possibile scaricarlo da [GitHub/Microsoft/DirectXMath](https://github.com/Microsoft/DirectXMath). Questo sito contiene anche progetti di esempio correlati.
+La libreria DirectXMath è inclusa in Windows SDK. In alternativa, è possibile scaricarlo [da GitHub/Microsoft/DirectXMath](https://github.com/Microsoft/DirectXMath). Questo sito contiene anche progetti di esempio correlati.
 
-## <a name="run-time-system-requirements"></a>Requisiti di sistema Run-Time
+## <a name="run-time-system-requirements"></a>Run-Time di sistema
 
-La libreria DirectXMath usa istruzioni del processore specializzate per le operazioni vettoriali quando sono disponibili. Per evitare che un programma generi errori di "eccezione di istruzione sconosciuta", controllare il supporto del processore chiamando [**XMVerifyCPUSupport**](/windows/win32/api/directxmath/nf-directxmath-xmverifycpusupport) prima di usare la libreria DirectXMath.
+La libreria DirectXMath usa istruzioni specifiche del processore per le operazioni vettoriali quando sono disponibili. Per evitare che un programma generi errori di "eccezione di istruzione sconosciuta", verificare il supporto del processore chiamando [**XMVerifyCPUSupport**](/windows/win32/api/directxmath/nf-directxmath-xmverifycpusupport) prima di usare la libreria DirectXMath.
 
-Questi sono i requisiti di base per il supporto di run-time della libreria DirectXMath:
+Di seguito sono i requisiti di supporto di base della libreria DirectXMath:
 
--   Per la compilazione predefinita in una piattaforma Windows (x86/x64) è necessario il supporto delle istruzioni SSE/SSE2.
--   Il valore predefinito di Compliation in una piattaforma Windows RT richiede il supporto dell'istruzione ARM-NEON.
--   Per la compilazione con [**\_ XM \_ nessun \_ intrinseco \_**](ovw-xnamath-reference-directives.md) definito è necessario solo il supporto per operazioni a virgola mobile standard.
+-   La compilazione predefinita in una Windows (x86/x64) richiede il supporto delle istruzioni SSE/SSE2.
+-   La compilazione predefinita in una piattaforma Windows RT richiede il supporto per le istruzioni ARM-NEON.
+-   La compilazione [**\_ con XM \_ NO \_ INTRINSICS \_**](ovw-xnamath-reference-directives.md) definito richiede solo il supporto delle operazioni a virgola mobile standard.
 
 > [!Note]  
-> Quando si chiama [**XMVerifyCPUSupport**](/windows/win32/api/directxmath/nf-directxmath-xmverifycpusupport), includere <Windows. h> prima di includere <DirectXMath. h>. Questa è l'unica funzione della libreria che richiede contenuto da <Windows. h> quindi non è necessario includere <Windows. h> in ogni modulo che usa <DirectXMath. h>.
+> Quando si chiama [**XMVerifyCPUSupport**](/windows/win32/api/directxmath/nf-directxmath-xmverifycpusupport), includere <windows.h> prima di includere <DirectXMath.h>. Questa è l'unica funzione nella libreria che richiede qualsiasi contenuto da <windows.h> quindi non è necessario includere <windows.h> in ogni modulo che usa <DirectXMath.h>.
 
  
 
 ## <a name="design-overview"></a>Panoramica della progettazione
 
-La libreria DirectXMath supporta principalmente il linguaggio di programmazione C++. La libreria viene implementata usando routine inline nei file di intestazione, DirectXMath \* . inl, DirectXPackedVector. inl e DirectXCollision. inl. Questa implementazione si avvale di funzioni intrinseche del compilatore ad alte prestazioni.
+La libreria DirectXMath supporta principalmente il linguaggio di programmazione C++. La libreria viene implementata usando routine inline nei file di intestazione, DirectXMath \* .inl, DirectXPackedVector.inl e DirectXCollision.inl. Questa implementazione usa intrinseci del compilatore ad alte prestazioni.
 
-La libreria DirectXMath fornisce:
+La libreria DirectXMath offre:
 
--   Implementazione di che utilizza intrinseci SSE/SSE2.
+-   Implementazione con funzioni intrinseche SSE/SSE2.
 -   Implementazione senza intrinseci.
--   Implementazione di mediante gli intrinseci ARM-NEON.
+-   Implementazione che usa intrinseci ARM-NEON.
 
-Poiché la libreria viene recapitata usando i file di intestazione, usare il codice sorgente per personalizzare e ottimizzare per la propria app.
+Poiché la libreria viene recapitata usando i file di intestazione, usare il codice sorgente per personalizzare e ottimizzare la propria app.
 
-## <a name="matrix-convention"></a>Convenzione matrice
+## <a name="matrix-convention"></a>Convenzione di matrice
 
-DirectXMath USA matrici di righe, vettori di righe e pre-moltiplicazione. La manualità è determinata dalla versione della funzione utilizzata (RH rispetto a LH); in caso contrario, la funzione funziona con le coordinate di visualizzazione a sinistra o a destra.
+DirectXMath usa matrici principali di riga, vettori di riga e pre-moltiplicazione. La mano è determinata dalla versione della funzione usata (RH e LH), in caso contrario la funzione funziona con le coordinate di visualizzazione mancino o destro.
 
-Per riferimento, Direct3D ha usato in passato il sistema di coordinate di sinistra, le matrici di righe, i vettori di riga e la pre-moltiplicazione. La moderna Direct3D non ha un requisito forte per le coordinate Left e Rights e in genere HLSL shaders per impostazione predefinita per l'utilizzo di matrici di colonne principali. Per informazioni dettagliate, vedere [HLSL Matrix ordering](/windows/desktop/direct3dhlsl/dx-graphics-hlsl-per-component-math) .
+Per riferimento, Direct3D ha usato in passato il sistema di coordinate mancino, le matrici principali di riga, i vettori di riga e la pre-moltiplicazione. Direct3D moderno non ha un requisito sicuro per le coordinate sinistra e destra e in genere gli shader HLSL utilizzano per impostazione predefinita matrici di colonne principali. Per informazioni [dettagliate, vedere Ordinamento delle matrici HLSL.](/windows/desktop/direct3dhlsl/dx-graphics-hlsl-per-component-math)
 
 ## <a name="basic-usage"></a>Utilizzo di base
 
-Per utilizzare le funzioni della libreria DirectXMath, includere le intestazioni DirectXMath. h, DirectXPackedVector. h, DirectXColors. h e/o DirectXCollision. h. Le intestazioni si trovano in Windows Software Development Kit per le app di Windows Store.
+Per usare le funzioni della libreria DirectXMath, includere le intestazioni DirectXMath.h, DirectXPackedVector.h, DirectXColors.h e/o DirectXCollision.h. Le intestazioni sono disponibili in Windows Software Development Kit per le app Windows Store.
 
-## <a name="type-usage-guidelines"></a>Linee guida sull'utilizzo del tipo
+## <a name="type-usage-guidelines"></a>Linee guida sull'utilizzo dei tipi
 
-I tipi [**XMVECTOR**](xmvector-data-type.md) e [**XMMATRIX**](/windows/win32/api/directxmath/ns-directxmath-xmmatrix) sono i cavalli di lavoro per la libreria DirectXMath. Ogni operazione utilizza o produce dati di questi tipi. L'uso di questi elementi è fondamentale per l'uso della libreria. Tuttavia, poiché DirectXMath usa i set di istruzioni SIMD, questi tipi di dati sono soggetti a una serie di restrizioni. È fondamentale comprendere queste restrizioni se si desidera utilizzare le funzioni DirectXMath.
+I [**tipi XMVECTOR**](xmvector-data-type.md) [**e XMMATRIX**](/windows/win32/api/directxmath/ns-directxmath-xmmatrix) sono i cavalli di lavoro per la libreria DirectXMath. Ogni operazione utilizza o produce dati di questi tipi. L'uso di questi elementi è fondamentale per l'uso della libreria. Tuttavia, poiché DirectXMath usa i set di istruzioni SIMD, questi tipi di dati sono soggetti a una serie di restrizioni. È fondamentale comprendere queste restrizioni se si vuole usare in modo utile le funzioni DirectXMath.
 
-Si pensi a [**XMVECTOR**](xmvector-data-type.md) come a un proxy per un registro hardware SIMD e [**XMMATRIX**](/windows/win32/api/directxmath/ns-directxmath-xmmatrix) come proxy per un raggruppamento logico di quattro registri hardware SIMD. Questi tipi sono annotati per indicare che è necessario che l'allineamento a 16 byte funzioni correttamente. Il compilatore li posiziona automaticamente nello stack quando vengono usati come variabile locale o li inserisce nel segmento di dati quando vengono usati come variabile globale. Con le convenzioni appropriate, possono anche essere passate in modo sicuro come parametri a una funzione. per informazioni dettagliate, vedere [convenzioni di chiamata](pg-xnamath-internals.md) .
+È consigliabile pensare a [**XMVECTOR**](xmvector-data-type.md) come a un proxy per un registro hardware SIMD e a [**XMMATRIX**](/windows/win32/api/directxmath/ns-directxmath-xmmatrix) come un proxy per un raggruppamento logico di quattro registri hardware SIMD. Questi tipi vengono annotati per indicare che è necessario un allineamento a 16 byte per il corretto funzionamento. Il compilatore li inserirà automaticamente nello stack quando vengono usati come variabile locale o li inserirà nel segmento di dati quando vengono usati come variabile globale. Con le convenzioni appropriate, possono anche essere passate in modo sicuro come parametri a una funzione (per informazioni dettagliate, vedere [Convenzioni di](pg-xnamath-internals.md) chiamata).
 
-Le allocazioni dall'heap, tuttavia, sono più complesse. Di conseguenza, è necessario prestare attenzione quando si utilizza [**XMVECTOR**](xmvector-data-type.md) o [**XMMATRIX**](/windows/win32/api/directxmath/ns-directxmath-xmmatrix) come membro di una classe o di una struttura da allocare dall'heap. In Windows x64, tutte le allocazioni di heap sono allineate a 16 byte, ma per Windows x86 sono allineate solo a 8 byte. Sono disponibili opzioni per l'allocazione di strutture dall'heap con allineamento a 16 byte. vedere [allineare correttamente le allocazioni](pg-xnamath-optimizing.md). Per i programmi C++, è possibile usare gli overload di operator new/delete/New \[ \] /Delete \[ \] (globalmente o specifici della classe) per applicare l'allineamento ottimale, se lo si desidera.
+Le allocazioni dall'heap, tuttavia, sono più complesse. Di conseguenza, è necessario prestare attenzione ogni volta che si usa [**XMVECTOR**](xmvector-data-type.md) o [**XMMATRIX**](/windows/win32/api/directxmath/ns-directxmath-xmmatrix) come membro di una classe o di una struttura da allocare dall'heap. In Windows x64, tutte le allocazioni di heap sono allineate a 16 byte, ma per Windows x86, sono allineate solo a 8 byte. Sono disponibili opzioni per l'allocazione di strutture dall'heap con allineamento a 16 byte (vedere [Allineare correttamente le allocazioni](pg-xnamath-optimizing.md)). Per i programmi C++, è possibile usare gli overload dell'operatore new/delete/new /delete (a livello globale o specifico della classe) per applicare l'allineamento \[ \] \[ \] ottimale, se necessario.
 
 > [!Note]  
-> Come alternativa all'applicazione dell'allineamento nella classe C++ direttamente tramite l'overload di New/Delete, è possibile usare l' [idioma pimpl](https://en.wikipedia.org/wiki/Opaque_pointer). Se si garantisce che la classe **impl** sia allineata tramite [**\_ \_ malloc**](/cpp/c-runtime-library/reference/aligned-malloc) internamente, è possibile usare liberamente i tipi allineati all'interno dell'implementazione interna. Si tratta di un'opzione utile quando la classe ' Public ' è una Windows Runtime classe di riferimento o è destinata all'uso con [**\_<>PTR std:: Shared**](/cpp/standard-library/shared-ptr-class), che in caso contrario può compromettere un'accurata allineamento.
+> In alternativa all'applicazione dell'allineamento nella classe C++ direttamente tramite l'overload di new/delete, è possibile usare [l'idiom pImpl](https://en.wikipedia.org/wiki/Opaque_pointer). Se si garantisce che la **classe Impl** sia allineata internamente tramite [**\_ \_ malloc**](/cpp/c-runtime-library/reference/aligned-malloc) allineata, è possibile usare liberamente tipi allineati all'interno dell'implementazione interna. Si tratta di un'opzione valida quando la classe "public" è una classe di riferimento del runtime di Windows o destinata all'uso con [**std::shared \_ ptr<>**](/cpp/standard-library/shared-ptr-class), che altrimenti può interrompere l'allineamento attento.
 
  
 
-Tuttavia, spesso è più semplice e più compatta evitare l'uso di [**XMVECTOR**](xmvector-data-type.md) o [**XMMATRIX**](/windows/win32/api/directxmath/ns-directxmath-xmmatrix) direttamente in una classe o una struttura. In alternativa, usare [**XMFLOAT3**](/windows/win32/api/directxmath/ns-directxmath-xmfloat3), [**XMFLOAT4**](/windows/win32/api/directxmath/ns-directxmath-xmfloat4), [**XMFLOAT4X3**](/windows/win32/api/directxmath/ns-directxmath-xmfloat4x3), [**XMFLOAT4X4**](/windows/win32/api/directxmath/ns-directxmath-xmfloat4x4)e così via, come membri della struttura. Inoltre, è possibile usare le funzioni di [archiviazione](ovw-xnamath-reference-functions-storage.md) vettoriale e di [caricamento vettoriale](ovw-xnamath-reference-functions-load.md) per spostare i dati in modo efficiente in variabili locali **XMVECTOR** o **XMMATRIX** , eseguire calcoli e archiviare i risultati. Sono disponibili anche funzioni di streaming ([**XMVector3TransformStream**](/windows/win32/api/directxmath/nf-directxmath-xmvector3transformstream), [**XMVector4TransformStream**](/windows/win32/api/directxmath/nf-directxmath-xmvector4transformstream)e così via) che funzionano in modo efficiente direttamente su matrici di questi tipi di dati.
+Tuttavia, spesso è più semplice e compatto evitare l'uso di [**XMVECTOR**](xmvector-data-type.md) o [**XMMATRIX**](/windows/win32/api/directxmath/ns-directxmath-xmmatrix) direttamente in una classe o struttura. Usare invece [**XMFLOAT3,**](/windows/win32/api/directxmath/ns-directxmath-xmfloat3) [**XMFLOAT4,**](/windows/win32/api/directxmath/ns-directxmath-xmfloat4) [**XMFLOAT4X3,**](/windows/win32/api/directxmath/ns-directxmath-xmfloat4x3) [**XMFLOAT4X4 e**](/windows/win32/api/directxmath/ns-directxmath-xmfloat4x4)così via come membri della struttura. È anche possibile usare le funzioni [Vector Loading](ovw-xnamath-reference-functions-load.md) e Vector Archiviazione per spostare i dati [in](ovw-xnamath-reference-functions-storage.md) modo efficiente nelle variabili locali **XMVECTOR** o **XMMATRIX,** eseguire calcoli e archiviare i risultati. Esistono anche funzioni di streaming ([**XMVector3TransformStream**](/windows/win32/api/directxmath/nf-directxmath-xmvector3transformstream), [**XMVector4TransformStream**](/windows/win32/api/directxmath/nf-directxmath-xmvector4transformstream)e così via) che operano in modo efficiente direttamente sulle matrici di questi tipi di dati.
 
 ## <a name="creating-vectors"></a>Creazione di vettori
 
 ### <a name="constant-vectors"></a>VETTORI COSTANTI
 
-Molte operazioni richiedono l'uso di costanti nei calcoli vettoriali e esistono diversi modi per caricare un [**XMVECTOR**](xmvector-data-type.md) con i valori desiderati.
+Molte operazioni richiedono l'uso di costanti nei calcoli vettoriali e esistono diversi modi per caricare [**un oggetto XMVECTOR**](xmvector-data-type.md) con i valori desiderati.
 
--   Se si carica una costante scalare in tutti gli elementi di un [**XMVECTOR**](xmvector-data-type.md), usare [**XMVectorReplicate**](/windows/win32/api/directxmath/nf-directxmath-xmvectorreplicate) o [**XMVectorReplicateInt**](/windows/win32/api/directxmath/nf-directxmath-xmvectorreplicateint).
+-   Se si carica una costante scalare in tutti gli elementi di [**un oggetto XMVECTOR,**](xmvector-data-type.md)usare [**XMVectorReplicate**](/windows/win32/api/directxmath/nf-directxmath-xmvectorreplicate) o [**XMVectorReplicateInt**](/windows/win32/api/directxmath/nf-directxmath-xmvectorreplicateint).
     ```
     XMVECTOR vFive = XMVectorReplicate( 5.f );
     ```
 
     
 
--   Se si usa una costante Vector con valori fissi diversi come [**XMVECTOR**](xmvector-data-type.md), usare le strutture [**XMVECTORF32**](xmvectorf32-data-type.md), [**XMVECTORU32**](xmvectoru32-data-type.md), **XMVECTORI32** o [**XMVECTORU8**](xmvectoru8-data-type.md) . È possibile fare riferimento a queste informazioni direttamente ovunque si passi un valore **XMVECTOR** .
+-   Se si usa una costante vettoriale con valori fissi diversi come [**XMVECTOR,**](xmvector-data-type.md)usare le strutture [**XMVECTORF32**](xmvectorf32-data-type.md), [**XMVECTORU32**](xmvectoru32-data-type.md), **XMVECTORI32** o [**XMVECTORU8.**](xmvectoru8-data-type.md) È quindi possibile farvi riferimento direttamente ovunque si passi un **valore XMVECTOR.**
     ```
     static const XMVECTORF32 vFactors = { 1.0f, 2.0f, 3.0f, 4.0f };
     ```
@@ -115,12 +115,12 @@ Molte operazioni richiedono l'uso di costanti nei calcoli vettoriali e esistono 
     
 
     > [!Note]  
-    > Non usare gli elenchi di inizializzatori direttamente con [**XMVECTOR**](xmvector-data-type.md) (ovvero XMVECTOR v = {1.0 f, 2.0 f, 3.0 f, 4.0 f}). Tale codice è inefficiente e non è portabile su tutte le piattaforme supportate da DirectXMath.
+    > Non usare elenchi di inizializzatori direttamente con [**XMVECTOR**](xmvector-data-type.md) ,ovvero XMVECTOR v = { 1.0f, 2.0f, 3.0f, 4.0f }). Questo codice non è efficiente e non è portabile in tutte le piattaforme supportate da DirectXMath.
 
      
 
--   DirectXMath include una serie di costanti globali predefinite che è possibile usare nel codice (g \_ XMOne, g \_ XMOne3, g \_ XMTwo, g \_ XMOneHalf, g \_ XMHalfPi, g \_ XMPi e così via). Eseguire una ricerca nell'intestazione DirectXMath. h per i valori **XMGLOBALCONSTANT** .
--   È disponibile un set di costanti vettoriali per i colori RGB comuni (rosso, verde, blu, giallo e così via). Per altre informazioni su queste costanti vettoriali, vedere DirectXColors. h e lo spazio dei nomi DirectX:: Colors.
+-   DirectXMath include una serie di costanti globali predefinite che è possibile usare nel codice (g \_ XMOne, g \_ XMOne3, g \_ XMTwo, g \_ XMOneHalf, g \_ XMHalfPi, g \_ XMPi e così via). Cercare i valori **XMGLOBALCONSTANT nell'intestazione** DirectXMath.h.
+-   È presente un set di costanti vettoriali per i colori RGB comuni (rosso, verde, blu, giallo e così via). Per altre informazioni su queste costanti vettoriali, vedere DirectXColors.h e lo spazio dei nomi DirectX::Colors.
 
 ### <a name="vectors-from-variables"></a>VETTORI DA VARIABILI
 
@@ -140,14 +140,14 @@ Molte operazioni richiedono l'uso di costanti nei calcoli vettoriali e esistono 
 
 ### <a name="vectors-from-vectors"></a>VETTORI DA VETTORI
 
--   Se si crea un vettore da un altro vettore con un componente specifico impostato su una variabile, è possibile prendere in considerazione l'uso delle [funzioni di accesso vettoriale](ovw-xnamath-reference-functions-accessors.md).
+-   Se si crea un vettore da un altro vettore con un componente specifico impostato su una variabile, è possibile prendere in considerazione l'uso di Funzioni [di accesso vettoriale](ovw-xnamath-reference-functions-accessors.md).
     ```
     XMVECTOR v2 = XMVectorSetW( v1, fw );
     ```
 
     
 
--   Se si crea un vettore da un altro vettore con un singolo componente replicato, usare [**XMVectorSplatX**](/windows/win32/api/directxmath/nf-directxmath-xmvectorsplatx), [**XMVectorSplatY**](/windows/win32/api/directxmath/nf-directxmath-xmvectorsplaty), [**XMVectorSplatZ**](/windows/win32/api/directxmath/nf-directxmath-xmvectorsplatz)e [**XMVectorSplatW**](/windows/win32/api/directxmath/nf-directxmath-xmvectorsplatw).
+-   Se si crea un vettore da un altro vettore con un singolo componente replicato, usare [**XMVectorSplatX,**](/windows/win32/api/directxmath/nf-directxmath-xmvectorsplatx) [**XMVectorSplatY,**](/windows/win32/api/directxmath/nf-directxmath-xmvectorsplaty) [**XMVectorSplatZ**](/windows/win32/api/directxmath/nf-directxmath-xmvectorsplatz)e [**XMVectorSplatW.**](/windows/win32/api/directxmath/nf-directxmath-xmvectorsplatw)
     ```
     XMVECTOR vz = XMVectorSplatZ( v );
     ```
@@ -166,21 +166,21 @@ Molte operazioni richiedono l'uso di costanti nei calcoli vettoriali e esistono 
 ### <a name="vectors-from-memory"></a>VETTORI DALLA MEMORIA
 
 -   Per il caricamento di un singolo valore float dalla memoria, vedere [**XMVectorReplicatePtr**](/windows/win32/api/directxmath/nf-directxmath-xmvectorreplicateptr), [**XMVectorReplicateIntPtr**](/windows/win32/api/directxmath/nf-directxmath-xmvectorreplicateintptr), [**XMLoadFloat**](/windows/win32/api/directxmath/nf-directxmath-xmloadfloat)e [**XMLoadInt**](/windows/win32/api/directxmath/nf-directxmath-xmloadint).
--   Metodi comuni per il caricamento di matrici float sono: [**XMLoadFloat2**](/windows/win32/api/directxmath/nf-directxmath-xmloadfloat2), [**XMLoadFloat3**](/windows/win32/api/directxmath/nf-directxmath-xmloadfloat3), [**XMLoadFloat4**](/windows/win32/api/directxmath/nf-directxmath-xmloadfloat4), [**XMLoadFloat3x3**](/windows/win32/api/directxmath/nf-directxmath-xmloadfloat3x3), [**XMLoadFloat4x3**](/windows/win32/api/directxmath/nf-directxmath-xmloadfloat4x3)e [**XMLoadFloat4x4**](/windows/win32/api/directxmath/nf-directxmath-xmloadfloat4x4).
--   DirectXMath include un set completo di tipi, i carichi e gli archivi correlati per la gestione di varie strutture di dati e formati GPU comuni. Vedere [vector Load](ovw-xnamath-reference-functions-load.md) e [vector Store](ovw-xnamath-reference-functions-storage.md).
+-   I modi comuni per caricare matrici float sono: [**XMLoadFloat2,**](/windows/win32/api/directxmath/nf-directxmath-xmloadfloat2) [**XMLoadFloat3,**](/windows/win32/api/directxmath/nf-directxmath-xmloadfloat3) [**XMLoadFloat4,**](/windows/win32/api/directxmath/nf-directxmath-xmloadfloat4) [**XMLoadFloat3x3,**](/windows/win32/api/directxmath/nf-directxmath-xmloadfloat3x3) [**XMLoadFloat4x3**](/windows/win32/api/directxmath/nf-directxmath-xmloadfloat4x3)e [**XMLoadFloat4x4.**](/windows/win32/api/directxmath/nf-directxmath-xmloadfloat4x4)
+-   DirectXMath include un set di tipi e carichi e archivi correlati per la gestione di varie strutture di dati e formati GPU comuni. Vedere [Caricamento vettoriale](ovw-xnamath-reference-functions-load.md) e [Archivio vettori](ovw-xnamath-reference-functions-storage.md).
 
 ## <a name="extracting-components-from-vectors"></a>Estrazione di componenti da vettori
 
-L'elaborazione SIMD è più efficiente quando i dati vengono caricati nei registri SIMD ed elaborati completamente prima di estrarre i risultati. La conversione tra forme scalari e vettoriali non è efficiente, quindi è consigliabile eseguirla solo quando è necessario. Per questo motivo, le funzioni nella libreria DirectXMath che producono un valore scalare vengono restituite in un formato vettoriale in cui il risultato scalare viene replicato attraverso il vettore risultante (ovvero [**XMVector2Dot**](/windows/win32/api/directxmath/nf-directxmath-xmvector2dot), [**XMVector3Length**](/windows/win32/api/directxmath/nf-directxmath-xmvector3length)e così via). Tuttavia, quando sono necessari valori scalari, di seguito sono riportate alcune opzioni su come procedere:
+L'elaborazione SIMD è più efficiente quando i dati vengono caricati nei registri SIMD ed elaborati completamente prima di estrarre i risultati. La conversione tra forme scalari e vettoriali è inefficiente, quindi è consigliabile eseguire questa operazione solo quando necessario. Per questo motivo, le funzioni nella libreria DirectXMath che producono un valore scalare vengono restituite in forma di vettore in cui il risultato scalare viene replicato nel vettore risultante, ovvero [**XMVector2Dot,**](/windows/win32/api/directxmath/nf-directxmath-xmvector2dot) [**XMVector3Length**](/windows/win32/api/directxmath/nf-directxmath-xmvector3length)e così via. Tuttavia, quando sono necessari valori scalari, ecco alcune opzioni su come eseguire questa procedura:
 
--   Se viene calcolata una singola risposta scalare, l'uso delle [funzioni di accesso Vector](ovw-xnamath-reference-functions-accessors.md) è appropriato:
+-   Se viene calcolata una singola risposta scalare, l'uso delle funzioni [di accesso vettoriale](ovw-xnamath-reference-functions-accessors.md) è appropriato:
     ```
     float f = XMVectorGetX( v );
     ```
 
     
 
--   Se è necessario estrarre più componenti del vettore, è consigliabile archiviare il vettore in una struttura di memoria e leggerlo di nuovo. Ad esempio:
+-   Se è necessario estrarre più componenti del vettore, è consigliabile archiviare il vettore in una struttura di memoria e leggerlo di nuovo. Esempio:
     ```
     XMFLOAT4A t;
     XMStoreFloat4A( &t, v );
@@ -189,13 +189,13 @@ L'elaborazione SIMD è più efficiente quando i dati vengono caricati nei regist
 
     
 
--   Il tipo di elaborazione vettoriale più efficiente consiste nell'usare lo streaming di memoria in memoria dove i dati di input vengono caricati dalla memoria (usando le [funzioni di caricamento del vettore](ovw-xnamath-reference-functions-load.md)), elaborati completamente nel form SIMD e quindi scritti in memoria (usando le funzioni di [Archivio vettoriale](ovw-xnamath-reference-functions-storage.md)).
+-   La forma più efficiente di elaborazione vettoriale è usare lo streaming da memoria a memoria in cui i dati di input vengono caricati dalla memoria (tramite funzioni di caricamento [vettoriale),](ovw-xnamath-reference-functions-load.md)elaborati completamente in formato SIMD e quindi scritti in memoria [(usando](ovw-xnamath-reference-functions-storage.md)funzioni di archivio vettoriali).
 
 ## <a name="related-topics"></a>Argomenti correlati
 
 <dl> <dt>
 
-[Guida alla programmazione di DirectXMath](ovw-xnamath-progguide.md)
+[Guida per programmatori DirectXMath](ovw-xnamath-progguide.md)
 </dt> </dl>
 
  

@@ -15,12 +15,12 @@ api_type:
 - COM
 api_location: ''
 ROBOTS: INDEX,FOLLOW
-ms.openlocfilehash: 92695b9600ef18e716fa02cf58157c3c4781988e
-ms.sourcegitcommit: 9b5faa61c38b2d0c432b7f2dbee8c127b0e28a7e
+ms.openlocfilehash: fcc6c63b06614eb16379fbb18d59a5459a8e5085
+ms.sourcegitcommit: 4665ebce0c106bdb52eef36e544280b496b6f50b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/19/2021
-ms.locfileid: "122468358"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "122983034"
 ---
 # <a name="jet_tablecreate-structure"></a>Struttura JET_TABLECREATE
 
@@ -29,7 +29,7 @@ _**Si applica a:** Windows | Windows Server_
 
 ## <a name="jet_tablecreate-structure"></a>Struttura JET_TABLECREATE
 
-La **JET_TABLECREATE** contiene le informazioni necessarie per creare una tabella popolata con colonne e indici in un database ESE. La **JET_TABLECREATE** viene usata da [JetCreateTableColumnIndex](./jetcreatetablecolumnindex-function.md)
+La **JET_TABLECREATE** contiene le informazioni necessarie per creare una tabella popolata con colonne e indici in un database ESE. La **JET_TABLECREATE** utilizzata da [JetCreateTableColumnIndex](./jetcreatetablecolumnindex-function.md)
 
 ```cpp
     typedef struct tagJET_TABLECREATE {
@@ -64,7 +64,7 @@ Il nome deve soddisfare le condizioni seguenti:
 
 <!-- end list -->
 
-  - Sono costituiti dal set di caratteri seguente: da 0 a 9, da A a Z, da a a z e da tutti gli altri segni di punteggiatura ad eccezione del punto esclamativo ( ), della virgola (,), della parentesi di apertura ( ) e della parentesi di chiusura ( ), ovvero i caratteri ASCII 0x20, da 0x22 a 0x2d, 0x2f fino a 0x5a, 0x5c e 0x5d attraverso \! \[ \] 0x7f.
+  - Sono costituiti dal set di caratteri seguente: da 0 a 9, da A a Z, da a a z e da tutti gli altri segni di punteggiatura ad eccezione del punto esclamativo ( ), della virgola (,), della parentesi di apertura ( ) e della parentesi di chiusura ( ), ovvero i caratteri ASCII 0x20, da 0x22 a 0x2d, da 0x2f a 0x5a, 0x5c e 0x5d attraverso \! \[ \] 0x7f.
 
 <!-- end list -->
 
@@ -76,7 +76,7 @@ Il nome deve soddisfare le condizioni seguenti:
 
 **szTemplateTableName**
 
-Nome di una tabella già esistente da cui ereditare il linguaggio DDL di base (Data Definition Language). L'uso di una tabella modello consente di creare facilmente molte tabelle con colonne e indici identici.
+Nome di una tabella già esistente da cui ereditare il linguaggio DDL (Data Definition Language) di base. L'uso di una tabella modello consente di creare facilmente molte tabelle con colonne e indici identici.
 
 **ulPages**
 
@@ -107,10 +107,10 @@ Numero di elementi [JET_INDEXCREATE](./jet-indexcreate-structure.md) in **rginde
 Gruppo di bit che contengono le opzioni per questa chiamata, che includono zero o più dei valori seguenti.
 
 
-| <p>valore</p> | <p>Significato</p> | 
+| <p>Valore</p> | <p>Significato</p> | 
 |--------------|----------------|
 | <p>JET_bitTableCreateFixedDDL</p> | <p>L'JET_bitTableCreateFixedDDL impedisce le operazioni DDL sulla tabella, ad esempio l'aggiunta o la rimozione di colonne.</p> | 
-| <p>JET_bitTableCreateTemplateTable</p> | <p>L'JET_bitTableCreateTemplateTable fa sì che la tabella sia una tabella modello. Le nuove tabelle possono quindi specificare il nome di questa tabella come tabella modello. L'impostazione JET_bitTableCreateTemplateTable implica JET_bitTableCreateFixedDDL.</p> | 
+| <p>JET_bitTableCreateTemplateTable</p> | <p>L JET_bitTableCreateTemplateTable imposta la tabella come tabella modello. Le nuove tabelle possono quindi specificare il nome di questa tabella come tabella modello. L'JET_bitTableCreateTemplateTable implica JET_bitTableCreateFixedDDL.</p> | 
 | <p>JET_bitTableCreateNoFixedVarColumnsInDerivedTables</p> | <p>Deprecato. Non usare.</p> | 
 
 
@@ -128,7 +128,12 @@ Il numero di oggetti creati è uguale alla somma di colonne, tabelle e indici cr
 ### <a name="requirements"></a>Requisiti
 
 
-| | | <p><strong>Client</strong></p> | <p>Richiede Windows Vista, Windows XP o Windows 2000 Professional.</p> | | <p><strong>Server</strong></p> | <p>Richiede Windows Server 2008, Windows Server 2003 o Windows 2000 Server.</p> | | <p><strong>Intestazione</strong></p> | <p>Dichiarato in Esent.h.</p> | | <p><strong>Unicode</strong></p> | <p>Implementato come <strong>JET_TABLECREATE_W</strong> (Unicode) <strong>e JET_TABLECREATE_A</strong> (ANSI).</p> | 
+| Requisito | Valore |
+|------------|----------|
+| <p><strong>Client</strong></p> | <p>Richiede Windows Vista, Windows XP o Windows 2000 Professional.</p> | 
+| <p><strong>Server</strong></p> | <p>Richiede Windows Server 2008, Windows Server 2003 o Windows 2000 Server.</p> | 
+| <p><strong>Intestazione</strong></p> | <p>Dichiarato in Esent.h.</p> | 
+| <p><strong>Unicode</strong></p> | <p>Implementato come <strong>JET_TABLECREATE_W</strong> (Unicode) <strong>e JET_TABLECREATE_A</strong> (ANSI).</p> | 
 
 
 

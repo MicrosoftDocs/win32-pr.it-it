@@ -1,6 +1,6 @@
 ---
-title: Metodo ID3DX12PipelineParserCallbacks DepthStencilStateCb (D3DX12. h) (DSV)
-description: Chiama il callback del sottooggetto del formato del valore depth stencil di un oggetto che implementa questa interfaccia.
+title: Metodo ID3DX12PipelineParserCallbacks DepthStencilStateCb (D3DX12.h) (DSV)
+description: Chiama il depth stencil di sottooggetto in formato valore di un oggetto che implementa questa interfaccia.
 ms.assetid: BDD3AB24-34C6-41C8-984D-78A45867BF24
 keywords:
 - Metodo DepthStencilStateCb
@@ -17,16 +17,16 @@ api_type:
 ms.localizationpriority: low
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: fd40b138c357c143deafffe01252b3c8b3e87cda
-ms.sourcegitcommit: 0e611cdff84ff9f897c59e4e1d2b2d134bc4e133
+ms.openlocfilehash: d72a7501c57af515a9c9e26a435aaae02ae3ebd4cdb260f37800fda1be3d720e
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/02/2021
-ms.locfileid: "106334359"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120096421"
 ---
-# <a name="id3dx12pipelineparsercallbacks-depthstencilstatecb-method-d3dx12h-for-depth-stencil-value"></a>Metodo ID3DX12PipelineParserCallbacks DepthStencilStateCb (D3DX12. h) per depth stencil valore
+# <a name="id3dx12pipelineparsercallbacks-depthstencilstatecb-method-d3dx12h-for-depth-stencil-value"></a>Metodo ID3DX12PipelineParserCallbacks DepthStencilStateCb (D3DX12.h) per depth stencil valore
 
-Chiama il callback del sottooggetto del formato del valore depth stencil di un oggetto che implementa questa interfaccia.
+Chiama il depth stencil di sottooggetto in formato valore di un oggetto che implementa questa interfaccia.
 
 ## <a name="syntax"></a>Sintassi
 
@@ -46,15 +46,15 @@ void DepthStencilStateCb(
 *DepthStencilState* 
 </dt> <dd>
 
-Tipo: **[ **DXGI \_ Format**](/windows/desktop/api/dxgiformat/ne-dxgiformat-dxgi_format)**
+Tipo: **[ **FORMATO \_ DXGI**](/windows/desktop/api/dxgiformat/ne-dxgiformat-dxgi_format)**
 
-Dettagli del depth stencil oggetto del formato del valore analizzato da un flusso di stato della pipeline.
+Dettagli del sottooggetto depth stencil formato valore analizzato da un flusso di stato della pipeline.
 
 </dd> </dl>
 
 ## <a name="return-value"></a>Valore restituito
 
-Non restituisce alcun elemento.
+Non restituisce alcun valore.
 
 ## <a name="requirements"></a>Requisiti
 
@@ -62,8 +62,8 @@ Non restituisce alcun elemento.
 
 | Requisito | Valore |
 |--------------------|--------------------------------------------------------------------------------------|
-| Intestazione<br/>  | <dl> <dt>D3DX12. h</dt> </dl>  |
-| Libreria<br/> | <dl> <dt>D3D12. lib</dt> </dl> |
+| Intestazione<br/>  | <dl> <dt>D3DX12.h</dt> </dl>  |
+| Libreria<br/> | <dl> <dt>D3D12.lib</dt> </dl> |
 | DLL<br/>     | <dl> <dt>D3D12.dll</dt> </dl> |
 
 
@@ -78,7 +78,7 @@ Non restituisce alcun elemento.
 [**ID3DX12PipelineParserCallbacks**](id3dx12pipelineparsercallbacks.md)
 </dt> <dt>
 
-[**\_formato DXGI**](/windows/desktop/api/dxgiformat/ne-dxgiformat-dxgi_format)
+[**FORMATO \_ DXGI**](/windows/desktop/api/dxgiformat/ne-dxgiformat-dxgi_format)
 </dt> </dl>
 
  

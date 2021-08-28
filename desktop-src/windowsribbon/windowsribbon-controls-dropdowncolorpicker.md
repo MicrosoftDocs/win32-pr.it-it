@@ -1,19 +1,19 @@
 ---
 title: Drop-Down Selezione colori
-description: Il framework Windows barra multifunzione offre un controllo Drop-Down Selezione colori specifico che espone un'ampia gamma di impostazioni di colore tramite un pulsante di menu suddiviso e un selettore di colore a discesa personalizzabile.
+description: Il framework Windows della barra multifunzione fornisce un controllo Drop-Down Selezione colori specifico che espone un'ampia gamma di impostazioni di colore tramite un pulsante di divisione e un selettore di colore a discesa personalizzabile.
 ms.assetid: 65e1fc23-7ac0-4bb3-9359-28ce88acf356
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 9e8104ba92d0be9d56607083508d7f30728a7f3a141839d74314561d392fb942
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 15c96d14cc192d7a1d9394d2f71b40b9b38c7df1
+ms.sourcegitcommit: 9b5faa61c38b2d0c432b7f2dbee8c127b0e28a7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "118707665"
+ms.lasthandoff: 08/19/2021
+ms.locfileid: "122467428"
 ---
 # <a name="drop-down-color-picker"></a>Drop-Down Selezione colori
 
-Il framework Windows barra multifunzione offre un controllo Drop-Down Selezione colori specifico che espone un'ampia gamma di impostazioni di colore tramite un pulsante di menu suddiviso e un selettore di colore a discesa personalizzabile.
+Il framework Windows della barra multifunzione fornisce un controllo Drop-Down Selezione colori specifico che espone un'ampia gamma di impostazioni di colore tramite un pulsante di divisione e un selettore di colore a discesa personalizzabile.
 
 -   [Introduzione](#introduction)
 -   [markup](#markup)
@@ -24,74 +24,27 @@ Il framework Windows barra multifunzione offre un controllo Drop-Down Selezione 
 
 ## <a name="introduction"></a>Introduzione
 
-Emulando l'aspetto e le funzionalità della selezione colori di Microsoft Office, il framework della barra multifunzione è in grado di trarre vantaggio da e contribuire a coerenza e familiarità in un'ampia gamma di applicazioni.
+Emulando l'aspetto e le funzionalità del selettore colori di Microsoft Office, il framework della barra multifunzione è in grado di trarre vantaggio e contribuire alla coerenza e alla familiarità in un'ampia gamma di applicazioni.
 
 ## <a name="markup"></a>markup
 
-Come tutti i controlli della barra multifunzione, Drop-Down Selezione colori è facilmente implementata e personalizzata tramite markup. Il framework fornisce una serie di attributi dell'elemento per Drop-Down Selezione colori esporre vari livelli di funzionalità. Nella tabella seguente sono elencati gli Drop-Down Selezione colori seguenti.
+Come tutti i controlli della barra multifunzione, Drop-Down Selezione colori facilmente implementata e personalizzata tramite markup. Il framework fornisce una serie di attributi dell'elemento per Drop-Down Selezione colori esporre vari livelli di funzionalità. Nella tabella seguente sono elencati gli Drop-Down Selezione colori seguenti.
 
 
 
-<table>
-<colgroup>
-<col style="width: 50%" />
-<col style="width: 50%" />
-</colgroup>
-<thead>
-<tr class="header">
-<th>Attributo</th>
-<th>Descrizione</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>ColorTemplate</td>
-<td>Modelli di layout che specificano il tipo di Drop-Down Selezione colori.<br/> Sono disponibili tre modelli, ognuno dei quali specifica un layout di controllo e i valori predefiniti per gli attributi associati e le chiavi di proprietà. <br/>
-<ul>
-<li><code>ThemeColors</code></li>
-<li><code>StandardColors</code></li>
-<li><code>HighlightColors</code></li>
-</ul></td>
-</tr>
-<tr class="even">
-<td>ChipSize</td>
-<td>Dimensioni di ogni chip di colore (o campione).<br/>
-<ul>
-<li><code>Small</code></li>
-<li><code>Medium</code></li>
-<li><code>Large</code></li>
-</ul></td>
-</tr>
-<tr class="odd">
-<td>Colonne</td>
-<td>Numero di colonne chip (o campione) di colore.<br/></td>
-</tr>
-<tr class="even">
-<td>CommandName</td>
-<td>Nome della dichiarazione Command associata. <br/></td>
-</tr>
-<tr class="odd">
-<td>IsAutomaticColorButtonVisible</td>
-<td>Visualizza o nasconde il <strong>pulsante</strong> Automatico.<br/> Valido solo quando <em>ColorTemplate</em> ha un valore <code>ThemeColors</code> di o <code>StandardColors</code> .<br/></td>
-</tr>
-<tr class="even">
-<td>IsNoColorButtonVisible</td>
-<td>Visualizza (o nasconde) il <strong>pulsante Nessun</strong> colore.<br/> Valido per tutti <em>i valori ColorTemplate.</em><br/></td>
-</tr>
-<tr class="odd">
-<td>RecentColorGridRows</td>
-<td>Numero di righe di chip di colori (o campione) nell'area <strong>Colori</strong> recenti.<br/> Valido solo quando <em>ColorTemplate</em> ha un valore pari a <code>ThemeColors</code> .<br/></td>
-</tr>
-<tr class="even">
-<td>StandardColorGridRows</td>
-<td>Numero di righe chip di colori (o campione) nell'area <strong>Colori</strong> standard.<br/></td>
-</tr>
-<tr class="odd">
-<td>ThemeColorGridRows</td>
-<td>Numero di righe chip di colori (o campione) nell'area <strong>Colori tema.</strong><br/> Valido solo quando <em>ColorTemplate</em> ha un valore pari a <code>ThemeColors</code> .<br/></td>
-</tr>
-</tbody>
-</table>
+
+| Attributo | Descrizione | 
+|-----------|-------------|
+| ColorTemplate | Modelli di layout che specificano il tipo di Drop-Down Selezione colori.<br /> Sono disponibili tre modelli, ognuno dei quali specifica un layout di controllo e i valori predefiniti per gli attributi associati e le chiavi di proprietà. <br /><ul><li><code>ThemeColors</code></li><li><code>StandardColors</code></li><li><code>HighlightColors</code></li></ul> | 
+| ChipSize | Dimensioni di ogni chip di colore (o campione).<br /><ul><li><code>Small</code></li><li><code>Medium</code></li><li><code>Large</code></li></ul> | 
+| Colonne | Numero di colonne di chip di colore (o campione).<br /> | 
+| CommandName | Nome della dichiarazione Command associata. <br /> | 
+| IsAutomaticColorButtonVisible | Visualizza (o nasconde) il <strong>pulsante</strong> Automatico.<br /> Valido solo quando <em>ColorTemplate</em> ha valore <code>ThemeColors</code> o <code>StandardColors</code> .<br /> | 
+| IsNoColorButtonVisible | Visualizza (o nasconde) il <strong>pulsante Nessun</strong> colore.<br /> Valido per tutti <em>i valori ColorTemplate.</em><br /> | 
+| RecentColorGridRows | Numero di righe di chip di colore (o campione) nell'area <strong>Colori</strong> recenti.<br /> Valido solo quando <em>ColorTemplate</em> ha valore <code>ThemeColors</code> .<br /> | 
+| StandardColorGridRows | Numero di righe di chip di colore (o campione) nell'area <strong>Colori</strong> standard.<br /> | 
+| ThemeColorGridRows | Numero di righe di chip di colore (o campione) nell'area <strong>Colori tema.</strong><br /> Valido solo quando <em>ColorTemplate</em> ha valore <code>ThemeColors</code> .<br /> | 
+
 
 
 
@@ -103,7 +56,7 @@ Le schermate seguenti illustrano i layout Drop-Down Selezione colori predefiniti
 
 |     &nbsp;     |  &nbsp;   | &nbsp;  |
 |-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| `ThemeColors`: \[ screenshot di nuova riga \] ![ dell'elemento dropdowncolorpicker con l'attributo colortemplate impostato su 'themecolors'. ](images/markup/colortemplate.themedcolors.1.png) \[ Newline\] | `standardcolors`: \[ screenshot di nuova riga \] ![ dell'elemento dropdowncolorpicker con l'attributo colortemplate impostato su 'standardcolors'. ](images/markup/colortemplate.standardcolors.3.png) \[ Newline\] | `highlightcolors`: \[ screenshot di nuova riga \] ![ dell'elemento dropdowncolorpicker con l'attributo colortemplate impostato su "highlightcolors".](images/markup/colortemplate.highlightcolors.2.png)<br/> |
+| `ThemeColors`: \[ screenshot di nuova riga \] ![ dell'elemento dropdowncolorpicker con l'attributo colortemplate impostato su "themecolors". ](images/markup/colortemplate.themedcolors.1.png) \[ Newline\] | `standardcolors`: \[ screenshot di nuova riga \] ![ dell'elemento dropdowncolorpicker con l'attributo colortemplate impostato su 'standardcolors'. ](images/markup/colortemplate.standardcolors.3.png) \[ Newline\] | `highlightcolors`: \[ screenshot di nuova riga \] ![ dell'elemento dropdowncolorpicker con l'attributo colortemplate impostato su "highlightcolors".](images/markup/colortemplate.highlightcolors.2.png)<br/> |
 
 
 
@@ -165,13 +118,13 @@ Il markup di base necessario per ogni Drop-Down Selezione colori è illustrato n
 
 ## <a name="code"></a>Codice
 
-In quanto controllo specializzato che supporta la personalizzazione, qualsiasi implementazione del Drop-Down Selezione colori che sfrutta queste funzionalità richiede codice dell'applicazione specializzato per gestire le proprietà e gli eventuali comandi emessi dal controllo.
+In quanto controllo specializzato che supporta la personalizzazione, qualsiasi implementazione del Drop-Down Selezione colori che sfrutta queste funzionalità richiede codice dell'applicazione specializzato per gestire le proprietà e gestire tutti i comandi emessi dal controllo.
 
 ### <a name="properties"></a>Proprietà
 
-Il framework della barra multifunzione definisce una raccolta di [chiavi di proprietà](windowsribbon-reference-properties.md) per il Drop-Down Selezione colori controllo .
+Il framework della barra multifunzione definisce una raccolta di [chiavi di proprietà](windowsribbon-reference-properties.md) per il controllo Drop-Down Selezione colori barra multifunzione.
 
-In genere, una Drop-Down Selezione colori viene aggiornata nell'interfaccia utente della barra multifunzione invalidando il comando associato al controllo tramite una chiamata al [**metodo IUIFramework::InvalidateUICommand.**](/windows/desktop/api/uiribbon/nf-uiribbon-iuiframework-invalidateuicommand) L'evento di invalidamento viene gestito e la proprietà viene aggiornata dal metodo di callback [**IUICommandHandler::UpdateProperty.**](/windows/desktop/api/uiribbon/nf-uiribbon-iuicommandhandler-updateproperty)
+In genere, una Drop-Down Selezione colori viene aggiornata nell'interfaccia utente della barra multifunzione invalidando il comando associato al controllo tramite una chiamata al metodo [**IUIFramework::InvalidateUICommand.**](/windows/desktop/api/uiribbon/nf-uiribbon-iuiframework-invalidateuicommand) L'evento di invalidazione viene gestito e la proprietà viene aggiornata dal metodo di callback [**IUICommandHandler::UpdateProperty.**](/windows/desktop/api/uiribbon/nf-uiribbon-iuicommandhandler-updateproperty)
 
 Il metodo di callback [**IUICommandHandler::UpdateProperty**](/windows/desktop/api/uiribbon/nf-uiribbon-iuicommandhandler-updateproperty) non viene eseguito e l'applicazione ha eseguito una query per un valore di proprietà aggiornato, fino a quando la proprietà non è richiesta dal framework. Ad esempio, quando una scheda viene attivata e un controllo viene visualizzato nell'interfaccia utente della barra multifunzione o quando viene visualizzata una descrizione comando.
 
@@ -180,151 +133,35 @@ Il metodo di callback [**IUICommandHandler::UpdateProperty**](/windows/desktop/a
 
  
 
-Nella tabella seguente sono elencate le chiavi di proprietà associate al Drop-Down Selezione colori controllo .
+Nella tabella seguente sono elencate le chiavi di proprietà associate al controllo Drop-Down Selezione colori controllo .
 
 
 
-<table>
-<colgroup>
-<col style="width: 33%" />
-<col style="width: 33%" />
-<col style="width: 33%" />
-</colgroup>
-<thead>
-<tr class="header">
-<th>Chiave di proprietà</th>
-<th>Descrizione</th>
-<th>Note</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td><a href="windowsribbon-reference-properties-uipkey-automaticcolorlabel.md">UI_PKEY_AutomaticColorLabel</a></td>
-<td>Definisce l'etichetta per il <strong>pulsante Colore</strong> automatico.<br/> Valido solo quando <em>ColorTemplate</em> ha un valore <code>ThemeColors</code> di o <code>StandardColors</code> .<br/></td>
-<td>Supporta <a href="/windows/desktop/api/uiribbon/nf-uiribbon-iuiframework-getuicommandproperty"><strong>IUIFramework::GetUICommandProperty</strong></a> e <a href="/windows/desktop/api/uiribbon/nf-uiribbon-iuiframework-setuicommandproperty"><strong>IUIFramework::SetUICommandProperty</strong></a>.</td>
-</tr>
-<tr class="even">
-<td><a href="windowsribbon-reference-properties-uipkey-color.md">UI_PKEY_Color</a></td>
-<td>Definisce il valore del colore selezionato come <a href="/windows/win32/gdi/colorref">COLORREF.</a><br/> Valido solo quando <a href="windowsribbon-reference-properties-uipkey-colortype.md">UI_PKEY_ColorType</a> ha un valore pari a <code>UI_SWATCHCOLORTYPE_RGB</code> .<br/></td>
-<td>Supporta <a href="/windows/desktop/api/uiribbon/nf-uiribbon-iuiframework-getuicommandproperty"><strong>IUIFramework::GetUICommandProperty</strong></a> e <a href="/windows/desktop/api/uiribbon/nf-uiribbon-iuiframework-setuicommandproperty"><strong>IUIFramework::SetUICommandProperty</strong></a>.</td>
-</tr>
-<tr class="odd">
-<td><a href="windowsribbon-reference-properties-uipkey-colortype.md">UI_PKEY_ColorType</a></td>
-<td>Definisce il tipo di colore selezionato.<br/></td>
-<td>Supporta <a href="/windows/desktop/api/uiribbon/nf-uiribbon-iuiframework-getuicommandproperty"><strong>IUIFramework::GetUICommandProperty</strong></a> e <a href="/windows/desktop/api/uiribbon/nf-uiribbon-iuiframework-setuicommandproperty"><strong>IUIFramework::SetUICommandProperty</strong></a>.</td>
-</tr>
-<tr class="even">
-<td><a href="windowsribbon-reference-properties-uipkey-enabled.md">UI_PKEY_Enabled</a></td>
-<td>Definisce la possibilità per un controllo di rispondere all'interazione dell'utente.<br/></td>
-<td>Supporta <a href="/windows/desktop/api/uiribbon/nf-uiribbon-iuiframework-getuicommandproperty"><strong>IUIFramework::GetUICommandProperty</strong></a> e <a href="/windows/desktop/api/uiribbon/nf-uiribbon-iuiframework-setuicommandproperty"><strong>IUIFramework::SetUICommandProperty</strong></a>.</td>
-</tr>
-<tr class="odd">
-<td><a href="windowsribbon-reference-properties-uipkey-keytip.md">UI_PKEY_Keytip</a></td>
 
-<td>Può essere aggiornato solo tramite invalidamento.</td>
-</tr>
-<tr class="even">
-<td><a href="windowsribbon-reference-properties-uipkey-label.md">UI_PKEY_Label</a></td>
-<td>Definisce la stringa di caratteri per un'etichetta di controllo.<br/></td>
-<td>Può essere aggiornato solo tramite invalidamento.</td>
-</tr>
-<tr class="odd">
-<td><a href="windowsribbon-reference-properties-uipkey-largehighcontrastimage.md">UI_PKEY_LargeHighContrastImage</a></td>
-<td>Definisce l'immagine a contrasto elevato di grandi dimensioni da visualizzare per un controllo .<br/></td>
-<td>Può essere aggiornato solo tramite invalidamento.<br/> Per altre informazioni sui formati di immagine, vedere <a href="windowsribbon-imageformats.md">Specifica delle risorse immagine della barra multifunzione.</a><br/></td>
-</tr>
-<tr class="even">
-<td><a href="windowsribbon-reference-properties-uipkey-largeimage.md">UI_PKEY_LargeImage</a></td>
-<td>Definisce l'immagine grande da visualizzare per un controllo .<br/></td>
-<td>Può essere aggiornato solo tramite invalidamento.<br/> Per altre informazioni sui formati di immagine, vedere <a href="windowsribbon-imageformats.md">Specifica delle risorse immagine della barra multifunzione.</a><br/></td>
-</tr>
-<tr class="odd">
-<td><a href="windowsribbon-reference-properties-uipkey-morecolorslabel.md">UI_PKEY_MoreColorsLabel</a></td>
-<td>Definisce l'etichetta per il <strong>pulsante Altri</strong> colori.<br/> Valido solo quando <em>ColorTemplate</em> ha un valore <code>ThemeColors</code> di o <code>StandardColors</code> .<br/></td>
-<td>Supporta <a href="/windows/desktop/api/uiribbon/nf-uiribbon-iuiframework-getuicommandproperty"><strong>IUIFramework::GetUICommandProperty</strong></a> e <a href="/windows/desktop/api/uiribbon/nf-uiribbon-iuiframework-setuicommandproperty"><strong>IUIFramework::SetUICommandProperty</strong></a>.</td>
-</tr>
-<tr class="even">
-<td><a href="windowsribbon-reference-properties-uipkey-nocolorlabel.md">UI_PKEY_NoColorLabel</a></td>
-<td>Definisce l'etichetta per il <strong>pulsante Nessun</strong> colore.<br/> Valido per tutti <em>i valori ColorTemplate.</em><br/></td>
-<td>Supporta <a href="/windows/desktop/api/uiribbon/nf-uiribbon-iuiframework-getuicommandproperty"><strong>IUIFramework::GetUICommandProperty</strong></a> e <a href="/windows/desktop/api/uiribbon/nf-uiribbon-iuiframework-setuicommandproperty"><strong>IUIFramework::SetUICommandProperty</strong></a>.</td>
-</tr>
-<tr class="odd">
-<td><a href="windowsribbon-reference-properties-uipkey-recentcolorscategorylabel.md">UI_PKEY_RecentColorsCategoryLabel</a></td>
-<td>Definisce l'etichetta per la <strong>categoria Colori</strong> recenti.<br/> Valido solo quando <em>ColorTemplate</em> ha un valore pari a <code>ThemeColors</code> . Questo è l'unico modello che contiene categorie etichettate.<br/></td>
-<td>Supporta <a href="/windows/desktop/api/uiribbon/nf-uiribbon-iuiframework-getuicommandproperty"><strong>IUIFramework::GetUICommandProperty</strong></a> e <a href="/windows/desktop/api/uiribbon/nf-uiribbon-iuiframework-setuicommandproperty"><strong>IUIFramework::SetUICommandProperty</strong></a>.</td>
-</tr>
-<tr class="even">
-<td><a href="windowsribbon-reference-properties-uipkey-smallhighcontrastimage.md">UI_PKEY_SmallHighContrastImage</a></td>
-<td>Definisce la piccola immagine a contrasto elevato da visualizzare per un controllo .<br/></td>
-<td>Può essere aggiornato solo tramite invalidamento.<br/> Per altre informazioni sui formati di immagine, vedere <a href="windowsribbon-imageformats.md">Specifica delle risorse immagine della barra multifunzione.</a><br/></td>
-</tr>
-<tr class="odd">
-<td><a href="windowsribbon-reference-properties-uipkey-smallimage.md">UI_PKEY_SmallImage</a></td>
-<td>Definisce l'immagine piccola da visualizzare per un controllo .<br/></td>
-<td>Può essere aggiornato solo tramite invalidamento.<br/> Per altre informazioni sui formati di immagine, vedere <a href="windowsribbon-imageformats.md">Specifica delle risorse immagine della barra multifunzione.</a><br/></td>
-</tr>
-<tr class="even">
-<td><a href="windowsribbon-reference-properties-uipkey-standardcolors.md">UI_PKEY_StandardColors</a></td>
-<td>Definisce una matrice di <a href="/windows/win32/gdi/colorref">valori COLORREF</a> per i campioni di un Drop-Down Selezione colori.<br/> Ogni Drop-Down Selezione colori <em>ColorTemplate contiene</em> una <code>StandardColors</code> griglia. <br/>
-<blockquote>
-[!Note]<br />
-Vengono visualizzati i valori <a href="/windows/win32/gdi/colorref">COLORREF</a> dell'oggetto <em>StandardColorGridRows</em> x <em>Columns</em> iniziale della matrice. Se la matrice definisce un numero di colori inferiore al numero di campioni dichiarati nel markup, vengono visualizzati spazi vuoti <code>StandardColors</code> per i chip mancanti.
-</blockquote>
-<br/></td>
-<td>Supporta <a href="/windows/desktop/api/uiribbon/nf-uiribbon-iuiframework-getuicommandproperty"><strong>IUIFramework::GetUICommandProperty</strong></a> e <a href="/windows/desktop/api/uiribbon/nf-uiribbon-iuiframework-setuicommandproperty"><strong>IUIFramework::SetUICommandProperty</strong></a>.</td>
-</tr>
-<tr class="odd">
-<td><a href="windowsribbon-reference-properties-uipkey-standardcolorscategorylabel.md">UI_PKEY_StandardColorsCategoryLabel</a></td>
-<td>Definisce l'etichetta per la <strong>categoria Colori</strong> standard.<br/> Valido solo quando <em>ColorTemplate</em> ha un valore pari a <code>ThemeColors</code> . Questo è l'unico modello che contiene categorie etichettate.<br/></td>
-<td>Supporta <a href="/windows/desktop/api/uiribbon/nf-uiribbon-iuiframework-getuicommandproperty"><strong>IUIFramework::GetUICommandProperty</strong></a> e <a href="/windows/desktop/api/uiribbon/nf-uiribbon-iuiframework-setuicommandproperty"><strong>IUIFramework::SetUICommandProperty</strong></a>.</td>
-</tr>
-<tr class="even">
-<td><a href="windowsribbon-reference-properties-uipkey-standardcolorstooltips.md">UI_PKEY_StandardColorsTooltips</a></td>
-<td>Definisce una matrice di stringhe di descrizioni comando del controllo colore per la <code>StandardColors</code> griglia.<br/> Ogni Drop-Down Selezione colori <em>ColorTemplate contiene</em> una <code>StandardColors</code> griglia. <br/>
-<blockquote>
-[!Note]<br />
-Vengono usate solo le descrizioni comandi necessarie per etichettare i campioni di colore visualizzati <code>StandardColors</code> nella griglia. Se vengono fornite meno etichette rispetto al numero di campioni nella griglia, viene fornito un valore predefinito per i campioni di <code>StandardColors</code> resto.
-</blockquote>
-<br/></td>
-<td>Supporta <a href="/windows/desktop/api/uiribbon/nf-uiribbon-iuiframework-getuicommandproperty"><strong>IUIFramework::GetUICommandProperty</strong></a> e <a href="/windows/desktop/api/uiribbon/nf-uiribbon-iuiframework-setuicommandproperty"><strong>IUIFramework::SetUICommandProperty</strong></a>.</td>
-</tr>
-<tr class="odd">
-<td><a href="windowsribbon-reference-properties-uipkey-themecolors.md">UI_PKEY_ThemeColors</a></td>
-<td>Definisce una matrice di <a href="/windows/win32/gdi/colorref">valori COLORREF</a> per i campioni di un Drop-Down Selezione colori.<br/> Valido solo quando <em>ColorTemplate</em> ha un valore pari a <code>ThemeColors</code> . <br/>
-<blockquote>
-[!Note]<br />
-Vengono visualizzati i valori <a href="/windows/win32/gdi/colorref">COLORREF</a> <em>dell'oggetto ThemeColorGridRows</em> x <em>Columns</em> iniziale della matrice. Se la matrice definisce un numero di colori inferiore al numero di campioni dichiarati nel markup, vengono visualizzati spazi vuoti <code>ThemeColors</code> per i chip mancanti.
-</blockquote>
-<br/></td>
-<td>Supporta <a href="/windows/desktop/api/uiribbon/nf-uiribbon-iuiframework-getuicommandproperty"><strong>IUIFramework::GetUICommandProperty</strong></a> e <a href="/windows/desktop/api/uiribbon/nf-uiribbon-iuiframework-setuicommandproperty"><strong>IUIFramework::SetUICommandProperty</strong></a>.</td>
-</tr>
-<tr class="even">
-<td><a href="windowsribbon-reference-properties-uipkey-themecolorstooltips.md">UI_PKEY_ThemeColorsTooltips</a></td>
-<td>Definisce la matrice di stringhe di descrizioni comando del controllo colore per la <code>ThemeColors</code> griglia.<br/> Valido solo quando <em>ColorTemplate</em> ha un valore pari a <code>ThemeColors</code> . <br/>
-<blockquote>
-[!Note]<br />
-Vengono usate solo le descrizioni comandi necessarie per etichettare i campioni di colore visualizzati <code>ThemeColors</code> nella griglia. Se vengono fornite meno etichette rispetto al numero di campioni nella griglia, viene fornito un valore predefinito per i campioni di <code>ThemeColors</code> resto.
-</blockquote>
-<br/></td>
-<td>Supporta <a href="/windows/desktop/api/uiribbon/nf-uiribbon-iuiframework-getuicommandproperty"><strong>IUIFramework::GetUICommandProperty</strong></a> e <a href="/windows/desktop/api/uiribbon/nf-uiribbon-iuiframework-setuicommandproperty"><strong>IUIFramework::SetUICommandProperty</strong></a>.</td>
-</tr>
-<tr class="odd">
-<td><a href="windowsribbon-reference-properties-uipkey-themecolorscategorylabel.md">UI_PKEY_ThemeColorsCategoryLabel</a></td>
-<td>Definisce l'etichetta per la <strong>categoria Colori</strong> tema.<br/> Valido solo quando <em>ColorTemplate</em> ha un valore pari a <code>ThemeColors</code> . Questo è l'unico modello che contiene categorie etichettate.<br/></td>
-<td>Supporta <a href="/windows/desktop/api/uiribbon/nf-uiribbon-iuiframework-getuicommandproperty"><strong>IUIFramework::GetUICommandProperty</strong></a> e <a href="/windows/desktop/api/uiribbon/nf-uiribbon-iuiframework-setuicommandproperty"><strong>IUIFramework::SetUICommandProperty</strong></a>.</td>
-</tr>
-<tr class="even">
-<td><a href="windowsribbon-reference-properties-uipkey-tooltipdescription.md">UI_PKEY_TooltipDescription</a></td>
-<td>Definisce la stringa di caratteri per una descrizione comando associata a un <a href="windowsribbon-reference-properties-uipkey-tooltiptitle.md">UI_PKEY_TooltipTitle</a>.<br/></td>
-<td>Può essere aggiornato solo tramite invalidamento.</td>
-</tr>
-<tr class="odd">
-<td><a href="windowsribbon-reference-properties-uipkey-tooltiptitle.md">UI_PKEY_TooltipTitle</a></td>
-<td>Definisce la stringa di caratteri per una descrizione comando.<br/></td>
-<td>Può essere aggiornato solo tramite invalidamento.</td>
-</tr>
-</tbody>
-</table>
+| Chiave di proprietà | Descrizione | Note | 
+|--------------|-------------|-------|
+| <a href="windowsribbon-reference-properties-uipkey-automaticcolorlabel.md">UI_PKEY_AutomaticColorLabel</a> | Definisce l'etichetta per il <strong>pulsante Colore</strong> automatico.<br /> Valido solo quando <em>ColorTemplate</em> ha valore <code>ThemeColors</code> o <code>StandardColors</code> .<br /> | Supporta <a href="/windows/desktop/api/uiribbon/nf-uiribbon-iuiframework-getuicommandproperty"><strong>IUIFramework::GetUICommandProperty</strong></a> e <a href="/windows/desktop/api/uiribbon/nf-uiribbon-iuiframework-setuicommandproperty"><strong>IUIFramework::SetUICommandProperty</strong></a>. | 
+| <a href="windowsribbon-reference-properties-uipkey-color.md">UI_PKEY_Color</a> | Definisce il valore del colore selezionato come <a href="/windows/win32/gdi/colorref">COLORREF.</a><br /> Valido solo quando <a href="windowsribbon-reference-properties-uipkey-colortype.md">UI_PKEY_ColorType</a> ha valore <code>UI_SWATCHCOLORTYPE_RGB</code> .<br /> | Supporta <a href="/windows/desktop/api/uiribbon/nf-uiribbon-iuiframework-getuicommandproperty"><strong>IUIFramework::GetUICommandProperty</strong></a> e <a href="/windows/desktop/api/uiribbon/nf-uiribbon-iuiframework-setuicommandproperty"><strong>IUIFramework::SetUICommandProperty</strong></a>. | 
+| <a href="windowsribbon-reference-properties-uipkey-colortype.md">UI_PKEY_ColorType</a> | Definisce il tipo di colore selezionato.<br /> | Supporta <a href="/windows/desktop/api/uiribbon/nf-uiribbon-iuiframework-getuicommandproperty"><strong>IUIFramework::GetUICommandProperty</strong></a> e <a href="/windows/desktop/api/uiribbon/nf-uiribbon-iuiframework-setuicommandproperty"><strong>IUIFramework::SetUICommandProperty</strong></a>. | 
+| <a href="windowsribbon-reference-properties-uipkey-enabled.md">UI_PKEY_Enabled</a> | Definisce la possibilità per un controllo di rispondere all'interazione dell'utente.<br /> | Supporta <a href="/windows/desktop/api/uiribbon/nf-uiribbon-iuiframework-getuicommandproperty"><strong>IUIFramework::GetUICommandProperty</strong></a> e <a href="/windows/desktop/api/uiribbon/nf-uiribbon-iuiframework-setuicommandproperty"><strong>IUIFramework::SetUICommandProperty</strong></a>. | 
+| <a href="windowsribbon-reference-properties-uipkey-keytip.md">UI_PKEY_Keytip</a> | Può essere aggiornato solo tramite invalidazione. | 
+| <a href="windowsribbon-reference-properties-uipkey-label.md">UI_PKEY_Label</a> | Definisce la stringa di caratteri per un'etichetta di controllo.<br /> | Può essere aggiornato solo tramite invalidazione. | 
+| <a href="windowsribbon-reference-properties-uipkey-largehighcontrastimage.md">UI_PKEY_LargeHighContrastImage</a> | Definisce l'immagine a contrasto elevato di grandi dimensioni da visualizzare per un controllo .<br /> | Può essere aggiornato solo tramite invalidazione.<br /> Per altre informazioni sui formati di immagine, vedere <a href="windowsribbon-imageformats.md">Specifica delle risorse immagine della barra multifunzione</a>.<br /> | 
+| <a href="windowsribbon-reference-properties-uipkey-largeimage.md">UI_PKEY_LargeImage</a> | Definisce l'immagine di grandi dimensioni da visualizzare per un controllo .<br /> | Può essere aggiornato solo tramite invalidazione.<br /> Per altre informazioni sui formati di immagine, vedere <a href="windowsribbon-imageformats.md">Specifica delle risorse immagine della barra multifunzione</a>.<br /> | 
+| <a href="windowsribbon-reference-properties-uipkey-morecolorslabel.md">UI_PKEY_MoreColorsLabel</a> | Definisce l'etichetta per il <strong>pulsante Altri</strong> colori.<br /> Valido solo quando <em>ColorTemplate</em> ha valore <code>ThemeColors</code> o <code>StandardColors</code> .<br /> | Supporta <a href="/windows/desktop/api/uiribbon/nf-uiribbon-iuiframework-getuicommandproperty"><strong>IUIFramework::GetUICommandProperty</strong></a> e <a href="/windows/desktop/api/uiribbon/nf-uiribbon-iuiframework-setuicommandproperty"><strong>IUIFramework::SetUICommandProperty</strong></a>. | 
+| <a href="windowsribbon-reference-properties-uipkey-nocolorlabel.md">UI_PKEY_NoColorLabel</a> | Definisce l'etichetta per il <strong>pulsante Nessun</strong> colore.<br /> Valido per tutti <em>i valori ColorTemplate.</em><br /> | Supporta <a href="/windows/desktop/api/uiribbon/nf-uiribbon-iuiframework-getuicommandproperty"><strong>IUIFramework::GetUICommandProperty</strong></a> e <a href="/windows/desktop/api/uiribbon/nf-uiribbon-iuiframework-setuicommandproperty"><strong>IUIFramework::SetUICommandProperty</strong></a>. | 
+| <a href="windowsribbon-reference-properties-uipkey-recentcolorscategorylabel.md">UI_PKEY_RecentColorsCategoryLabel</a> | Definisce l'etichetta per la <strong>categoria Colori</strong> recenti.<br /> Valido solo quando <em>ColorTemplate</em> ha valore <code>ThemeColors</code> . Questo è l'unico modello che contiene categorie etichettate.<br /> | Supporta <a href="/windows/desktop/api/uiribbon/nf-uiribbon-iuiframework-getuicommandproperty"><strong>IUIFramework::GetUICommandProperty</strong></a> e <a href="/windows/desktop/api/uiribbon/nf-uiribbon-iuiframework-setuicommandproperty"><strong>IUIFramework::SetUICommandProperty</strong></a>. | 
+| <a href="windowsribbon-reference-properties-uipkey-smallhighcontrastimage.md">UI_PKEY_SmallHighContrastImage</a> | Definisce la piccola immagine a contrasto elevato da visualizzare per un controllo .<br /> | Può essere aggiornato solo tramite invalidamento.<br /> Per altre informazioni sui formati di immagine, vedere <a href="windowsribbon-imageformats.md">Specifica delle risorse immagine della barra multifunzione.</a><br /> | 
+| <a href="windowsribbon-reference-properties-uipkey-smallimage.md">UI_PKEY_SmallImage</a> | Definisce l'immagine piccola da visualizzare per un controllo .<br /> | Può essere aggiornato solo tramite invalidamento.<br /> Per altre informazioni sui formati di immagine, vedere <a href="windowsribbon-imageformats.md">Specifica delle risorse immagine della barra multifunzione.</a><br /> | 
+| <a href="windowsribbon-reference-properties-uipkey-standardcolors.md">UI_PKEY_StandardColors</a> | Definisce una matrice di <a href="/windows/win32/gdi/colorref">valori COLORREF</a> per i campioni di un Drop-Down Selezione colori.<br /> Ogni Drop-Down Selezione colori <em>ColorTemplate</em> contiene una <code>StandardColors</code> griglia. <br /><blockquote>[!Note]<br />Vengono visualizzati i valori <a href="/windows/win32/gdi/colorref">COLORREF</a> dell'oggetto <em>StandardColorGridRows</em> x <em>Columns</em> iniziale della matrice. Se la matrice definisce un numero di colori inferiore al numero di campioni dichiarati nel markup, vengono visualizzati spazi vuoti <code>StandardColors</code> per i chip mancanti.</blockquote><br /> | Supporta <a href="/windows/desktop/api/uiribbon/nf-uiribbon-iuiframework-getuicommandproperty"><strong>IUIFramework::GetUICommandProperty</strong></a> e <a href="/windows/desktop/api/uiribbon/nf-uiribbon-iuiframework-setuicommandproperty"><strong>IUIFramework::SetUICommandProperty</strong></a>. | 
+| <a href="windowsribbon-reference-properties-uipkey-standardcolorscategorylabel.md">UI_PKEY_StandardColorsCategoryLabel</a> | Definisce l'etichetta per la <strong>categoria Colori</strong> standard.<br /> Valido solo quando <em>ColorTemplate</em> ha un valore pari a <code>ThemeColors</code> . Questo è l'unico modello che contiene categorie etichettate.<br /> | Supporta <a href="/windows/desktop/api/uiribbon/nf-uiribbon-iuiframework-getuicommandproperty"><strong>IUIFramework::GetUICommandProperty</strong></a> e <a href="/windows/desktop/api/uiribbon/nf-uiribbon-iuiframework-setuicommandproperty"><strong>IUIFramework::SetUICommandProperty</strong></a>. | 
+| <a href="windowsribbon-reference-properties-uipkey-standardcolorstooltips.md">UI_PKEY_StandardColorsTooltips</a> | Definisce una matrice di stringhe di descrizioni comando del controllo colore per la <code>StandardColors</code> griglia.<br /> Ogni Drop-Down Selezione colori <em>ColorTemplate</em> contiene una <code>StandardColors</code> griglia. <br /><blockquote>[!Note]<br />Vengono usate solo le descrizioni comandi necessarie per etichettare i campioni di colore visualizzati <code>StandardColors</code> nella griglia. Se vengono fornite meno etichette rispetto al numero di campioni nella griglia, viene fornito un valore predefinito per i campioni di <code>StandardColors</code> resto.</blockquote><br /> | Supporta <a href="/windows/desktop/api/uiribbon/nf-uiribbon-iuiframework-getuicommandproperty"><strong>IUIFramework::GetUICommandProperty</strong></a> e <a href="/windows/desktop/api/uiribbon/nf-uiribbon-iuiframework-setuicommandproperty"><strong>IUIFramework::SetUICommandProperty</strong></a>. | 
+| <a href="windowsribbon-reference-properties-uipkey-themecolors.md">UI_PKEY_ThemeColors</a> | Definisce una matrice di <a href="/windows/win32/gdi/colorref">valori COLORREF</a> per i campioni di un Drop-Down Selezione colori.<br /> Valido solo quando <em>ColorTemplate</em> ha un valore pari a <code>ThemeColors</code> . <br /><blockquote>[!Note]<br />Vengono visualizzati i valori <a href="/windows/win32/gdi/colorref">COLORREF</a> <em>dell'oggetto ThemeColorGridRows</em> x <em>Columns</em> iniziale della matrice. Se la matrice definisce un numero di colori inferiore al numero di campioni dichiarati nel markup, vengono visualizzati spazi vuoti <code>ThemeColors</code> per i chip mancanti.</blockquote><br /> | Supporta <a href="/windows/desktop/api/uiribbon/nf-uiribbon-iuiframework-getuicommandproperty"><strong>IUIFramework::GetUICommandProperty</strong></a> e <a href="/windows/desktop/api/uiribbon/nf-uiribbon-iuiframework-setuicommandproperty"><strong>IUIFramework::SetUICommandProperty</strong></a>. | 
+| <a href="windowsribbon-reference-properties-uipkey-themecolorstooltips.md">UI_PKEY_ThemeColorsTooltips</a> | Definisce la matrice di stringhe di descrizioni comando del controllo colore per la <code>ThemeColors</code> griglia.<br /> Valido solo quando <em>ColorTemplate</em> ha un valore pari a <code>ThemeColors</code> . <br /><blockquote>[!Note]<br />Vengono usate solo le descrizioni comandi necessarie per etichettare i campioni di colore visualizzati <code>ThemeColors</code> nella griglia. Se vengono fornite meno etichette rispetto al numero di campioni nella griglia, viene fornito un valore predefinito per i campioni di <code>ThemeColors</code> resto.</blockquote><br /> | Supporta <a href="/windows/desktop/api/uiribbon/nf-uiribbon-iuiframework-getuicommandproperty"><strong>IUIFramework::GetUICommandProperty</strong></a> e <a href="/windows/desktop/api/uiribbon/nf-uiribbon-iuiframework-setuicommandproperty"><strong>IUIFramework::SetUICommandProperty</strong></a>. | 
+| <a href="windowsribbon-reference-properties-uipkey-themecolorscategorylabel.md">UI_PKEY_ThemeColorsCategoryLabel</a> | Definisce l'etichetta per la <strong>categoria Colori</strong> tema.<br /> Valido solo quando <em>ColorTemplate</em> ha un valore pari a <code>ThemeColors</code> . Questo è l'unico modello che contiene categorie etichettate.<br /> | Supporta <a href="/windows/desktop/api/uiribbon/nf-uiribbon-iuiframework-getuicommandproperty"><strong>IUIFramework::GetUICommandProperty</strong></a> e <a href="/windows/desktop/api/uiribbon/nf-uiribbon-iuiframework-setuicommandproperty"><strong>IUIFramework::SetUICommandProperty</strong></a>. | 
+| <a href="windowsribbon-reference-properties-uipkey-tooltipdescription.md">UI_PKEY_TooltipDescription</a> | Definisce la stringa di caratteri per una descrizione comando associata a un <a href="windowsribbon-reference-properties-uipkey-tooltiptitle.md">UI_PKEY_TooltipTitle</a>.<br /> | Può essere aggiornato solo tramite invalidamento. | 
+| <a href="windowsribbon-reference-properties-uipkey-tooltiptitle.md">UI_PKEY_TooltipTitle</a> | Definisce la stringa di caratteri per una descrizione comando.<br /> | Può essere aggiornato solo tramite invalidamento. | 
+
 
 
 

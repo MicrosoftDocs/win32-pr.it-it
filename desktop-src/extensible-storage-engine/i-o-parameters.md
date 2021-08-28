@@ -15,12 +15,12 @@ api_type:
 - COM
 api_location: ''
 ROBOTS: INDEX,FOLLOW
-ms.openlocfilehash: 0a980e436dacc020a0606e6a9466492fe687ca0e
-ms.sourcegitcommit: 9b5faa61c38b2d0c432b7f2dbee8c127b0e28a7e
+ms.openlocfilehash: 62cc1183f14e3de113ff5f34eaf6367bc2ff0f9a
+ms.sourcegitcommit: 4665ebce0c106bdb52eef36e544280b496b6f50b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/19/2021
-ms.locfileid: "122473537"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "122981984"
 ---
 # <a name="io-parameters"></a>Parametri di I/O
 
@@ -34,34 +34,70 @@ Questo argomento contiene i parametri usati per l'input e l'output (I/O).
 *JET_paramAccessDeniedRetryPeriod*  
 53  
 
-**Windows XP e versioni successive:**  Questo parametro configura la durata (in millisecondi) che il motore di database userà per accedere a un file bloccato prima che si verifica un errore JET_errFileAccessDenied. Questo ritardo temporale è progettato per aggirare il software antivirus che potrebbe contenere alcuni file del motore di database aperti brevemente dopo la chiusura.
+**Windows XP e versioni successive:**  Questo parametro consente di configurare la durata (in millisecondi) che il motore di database userà per accedere a un file bloccato prima che si verifica un errore JET_errFileAccessDenied. Questo ritardo è progettato per risolvere i problemi del software antivirus che potrebbe contenere alcuni file del motore di database aperti brevemente dopo la chiusura.
 
-**Nota:**  Come risultato della logica di ripetizione dei tentativi precedente, qualsiasi tentativo di connessione a un database o di usare un file di log già in uso dal motore di database comporta un ritardo di queste dimensioni prima che la chiamata API restituisca un errore (legittimo). Questo parametro può essere usato per disattivare tale ritardo nel caso in cui si tratta di uno scenario comune.
+**Nota**  In seguito alla logica di ripetizione dei tentativi precedente, qualsiasi tentativo di connettersi a un database o usare un file di log già in uso dal motore di database comporta un ritardo di queste dimensioni prima che la chiamata API restituisca un errore (legittimo). Questo parametro può essere usato per disattivare tale ritardo nel caso in cui si tratta di uno scenario comune.
 
 
-| | | <p>Valore predefinito:</p> | <p>10000</p> | | <p>Digitare:</p> | <p>Intero</p> | | <p>Intervallo valido:</p> | <p>0 – 4294967295</p> | | <p>Ambito:</p> | <p>Globale</p> | | <p>Imposta dopo <a href="gg269354(v=exchg.10).md">JetCreateInstance</a>:</p> | <p>Sì</p> | | <p>Impostare dopo <a href="gg294068(v=exchg.10).md">JetInit</a>:</p> | <p>Sì</p> | | <p>Influisce sul layout fisico:</p> | <p>No</p> | | <p>Influisce sull'affidabilità:</p> | <p>Sì</p> | | <p>Influisce sulle prestazioni:</p> | <p>Sì</p> | | <p>Influisce sulle risorse:</p> | <p>No</p> | | <p>Disponibilità:</p> | <p>Windows XP e versioni successive</p> | 
+| Etichetta | Valore |
+|--------|-------|
+| <p>Valore predefinito:</p> | <p>10000</p> | 
+| <p>Digitare:</p> | <p>Intero</p> | 
+| <p>Intervallo valido:</p> | <p>0 – 4294967295</p> | 
+| <p>Ambito:</p> | <p>Globale</p> | 
+| <p>Imposta dopo <a href="gg269354(v=exchg.10).md">JetCreateInstance:</a></p> | <p>Sì</p> | 
+| <p>Impostato dopo <a href="gg294068(v=exchg.10).md">JetInit:</a></p> | <p>Sì</p> | 
+| <p>Influisce sul layout fisico:</p> | <p>No</p> | 
+| <p>Influisce sull'affidabilità:</p> | <p>Sì</p> | 
+| <p>Influisce sulle prestazioni:</p> | <p>Sì</p> | 
+| <p>Influisce sulle risorse:</p> | <p>No</p> | 
+| <p>Disponibilità:</p> | <p>Windows XP e versioni successive</p> | 
 
 
 
 *JET_paramCreatePathIfNotExist*  
 100  
 
-Quando questo parametro è impostato su true, qualsiasi cartella mancante in un percorso file system utilizzato dal motore di database verrà creata automaticamente. In caso contrario, l'operazione che usa il percorso file system non riuscirà con JET_errInvalidPath.
+Quando questo parametro è impostato su true, qualsiasi cartella mancante in un percorso di file system utilizzato dal motore di database verrà creata automaticamente. In caso contrario, l'operazione che usa il percorso file system mancante avrà esito negativo con JET_errInvalidPath.
 
 
-| | | <p>Valore predefinito:</p> | <p>Falso</p> | | <p>Digitare:</p> | <p>Boolean</p> | | <p>Intervallo valido:</p> | <p>False, True</p> | | <p>Ambito:</p> | <p>Istanza</p> | | <p>Imposta dopo <a href="gg269354(v=exchg.10).md">JetCreateInstance</a>:</p> | <p>Sì</p> | | <p>Impostare dopo <a href="gg294068(v=exchg.10).md">JetInit</a>:</p> | <p>No</p> | | <p>Influisce sul layout fisico:</p> | <p>Sì</p> | | <p>Influisce sull'affidabilità:</p> | <p>No</p> | | <p>Influisce sulle prestazioni:</p> | <p>No</p> | | <p>Influisce sulle risorse:</p> | <p>No</p> | | <p>Disponibilità:</p> | <p>Tutti</p> | 
+| Etichetta | Valore |
+|--------|-------|
+| <p>Valore predefinito:</p> | <p>Falso</p> | 
+| <p>Digitare:</p> | <p>Boolean</p> | 
+| <p>Intervallo valido:</p> | <p>False, True</p> | 
+| <p>Ambito:</p> | <p>Istanza</p> | 
+| <p>Imposta dopo <a href="gg269354(v=exchg.10).md">JetCreateInstance:</a></p> | <p>Sì</p> | 
+| <p>Impostato dopo <a href="gg294068(v=exchg.10).md">JetInit:</a></p> | <p>No</p> | 
+| <p>Influisce sul layout fisico:</p> | <p>Sì</p> | 
+| <p>Influisce sull'affidabilità:</p> | <p>No</p> | 
+| <p>Influisce sulle prestazioni:</p> | <p>No</p> | 
+| <p>Influisce sulle risorse:</p> | <p>No</p> | 
+| <p>Disponibilità:</p> | <p>Tutti</p> | 
 
 
 
 *JET_paramEnableFileCache*  
 126  
 
-Quando questo parametro è **True,** il motore di database userà la cache Windows file come cache di lettura per tutti i vari file. Verrà inoltre utilizzata come cache di scrittura per il database temporaneo o per i database aperti con il ripristino disabilitato. Il motore di database deve disabilitare la memorizzazione nella cache in scrittura per i database ordinari, i file di log delle transazioni e i file di checkpoint per proteggere l'integrità transazionale dei database.
+Quando questo parametro è **True,** il motore di database userà la cache Windows file come cache di lettura per tutti i vari file. Verrà inoltre utilizzato come cache di scrittura per il database temporaneo o per i database aperti con il recupero disabilitato. Il motore di database deve disabilitare la memorizzazione nella cache di scrittura per i database normali, i file di log delle transazioni e i file di checkpoint per proteggere l'integrità transazionale dei database.
 
-È importante notare che l'uso della cache Windows file aggiungerà un secondo livello di memorizzazione nella cache per i file di database. La cache del database userà comunque la propria memoria per memorizzare nella cache i file di database. Questa modalità ha lo scopo di consentire all'applicazione di configurare il motore di database con una cache dedicata di piccole dimensioni e di consentire a Windows di donare memoria disponibile per migliorare ulteriormente la memorizzazione nella cache dei dati del database.
+È importante notare che l'uso della cache dei file Windows aggiungerà un secondo livello di memorizzazione nella cache per i file di database. La cache del database userà comunque la propria memoria per memorizzare nella cache i file di database. Lo scopo di questa modalità è consentire all'applicazione di configurare il motore di database con una piccola cache dedicata e di consentire al Windows di donare memoria disponibile per migliorare ulteriormente la memorizzazione nella cache dei dati del database.
 
 
-| | | <p>Valore predefinito:</p> | <p>Falso</p> | | <p>Digitare:</p> | <p>Boolean</p> | | <p>Intervallo valido:</p> | <p>False, True</p> | | <p>Ambito:</p> | <p>Globale</p> | | <p>Imposta dopo <a href="gg269354(v=exchg.10).md">JetCreateInstance</a>:</p> | <p>No</p> | | <p>Impostare dopo <a href="gg294068(v=exchg.10).md">JetInit</a>:</p> | <p>No</p> | | <p>Influisce sul layout fisico:</p> | <p>No</p> | | <p>Influisce sull'affidabilità:</p> | <p>No</p> | | <p>Influisce sulle prestazioni:</p> | <p>Sì</p> | | <p>Influisce sulle risorse:</p> | <p>Sì</p> | | <p>Disponibilità:</p> | <p>Windows Vista e versioni successive</p> | 
+| Etichetta | Valore |
+|--------|-------|
+| <p>Valore predefinito:</p> | <p>Falso</p> | 
+| <p>Digitare:</p> | <p>Boolean</p> | 
+| <p>Intervallo valido:</p> | <p>False, True</p> | 
+| <p>Ambito:</p> | <p>Globale</p> | 
+| <p>Imposta dopo <a href="gg269354(v=exchg.10).md">JetCreateInstance:</a></p> | <p>No</p> | 
+| <p>Impostato dopo <a href="gg294068(v=exchg.10).md">JetInit:</a></p> | <p>No</p> | 
+| <p>Influisce sul layout fisico:</p> | <p>No</p> | 
+| <p>Influisce sull'affidabilità:</p> | <p>No</p> | 
+| <p>Influisce sulle prestazioni:</p> | <p>Sì</p> | 
+| <p>Influisce sulle risorse:</p> | <p>Sì</p> | 
+| <p>Disponibilità:</p> | <p>Windows Vista e versioni successive</p> | 
 
 
 
@@ -73,7 +109,19 @@ Questo parametro controlla il modo in cui ESE gestisce le operazioni di I/O. I v
 **Windows Vista:**  JET_paramIOPriority è stato introdotto in Windows Vista.
 
 
-| | | <p>Valore predefinito:</p> | <p>0</p> | | <p>Digitare:</p> | <p>Intero</p> | | <p>Intervallo valido:</p> | <p>0 - 1</p> | | <p>Ambito:</p> | <p>Istanza</p> | | <p>Imposta dopo <a href="gg269354(v=exchg.10).md">JetCreateInstance:</a></p> | <p>Sì</p> | | <p>Impostato dopo <a href="gg294068(v=exchg.10).md">JetInit:</a></p> | <p>Sì</p> | | <p>Influisce sul layout fisico:</p> | <p>No</p> | | <p>Influisce sull'affidabilità:</p> | <p>No</p> | | <p>Influisce sulle prestazioni:</p> | <p>Sì</p> | | <p>Influisce sulle risorse:</p> | <p>No</p> | | <p>Disponibilità:</p> | <p>Windows Vista</p> | 
+| Etichetta | Valore |
+|--------|-------|
+| <p>Valore predefinito:</p> | <p>0</p> | 
+| <p>Digitare:</p> | <p>Intero</p> | 
+| <p>Intervallo valido:</p> | <p>0 - 1</p> | 
+| <p>Ambito:</p> | <p>Istanza</p> | 
+| <p>Imposta dopo <a href="gg269354(v=exchg.10).md">JetCreateInstance</a>:</p> | <p>Sì</p> | 
+| <p>Impostare dopo <a href="gg294068(v=exchg.10).md">JetInit</a>:</p> | <p>Sì</p> | 
+| <p>Influisce sul layout fisico:</p> | <p>No</p> | 
+| <p>Influisce sull'affidabilità:</p> | <p>No</p> | 
+| <p>Influisce sulle prestazioni:</p> | <p>Sì</p> | 
+| <p>Influisce sulle risorse:</p> | <p>No</p> | 
+| <p>Disponibilità:</p> | <p>Windows Vista</p> | 
 
 
 
@@ -87,17 +135,41 @@ Un valore maggiore per questo parametro può contribuire in modo significativo a
 **Windows XP e Windows Server 2003:**  Questo parametro viene ignorato in Windows XP e Windows Server 2003 e non influisce sul funzionamento del motore di database.
 
 
-| | | <p>Valore predefinito:</p> | <p><strong>Windows 2000:</strong> 64</p><p><strong>Windows Vista:</strong> 1024</p> | | <p>Digitare:</p> | <p>Intero</p> | | <p>Intervallo valido:</p> | <p><strong>Windows 2000:</strong> 8 - 2147483647</p><p><strong>Windows Vista:</strong> 0 - 65536</p> | | <p>Ambito:</p> | <p>Globale</p> | | <p>Imposta dopo <a href="gg269354(v=exchg.10).md">JetCreateInstance:</a></p> | <p>No</p> | | <p>Impostato dopo <a href="gg294068(v=exchg.10).md">JetInit:</a></p> | <p>No</p> | | <p>Influisce sul layout fisico:</p> | <p>No</p> | | <p>Influisce sull'affidabilità:</p> | <p>No</p> | | <p>Influisce sulle prestazioni:</p> | <p>Sì</p> | | <p>Influisce sulle risorse:</p> | <p>Sì</p> | | <p>Disponibilità:</p> | <p>Tutti</p> | 
+| Etichetta | Valore |
+|--------|-------|
+| <p>Valore predefinito:</p> | <p><strong>Windows 2000:</strong> 64</p><p><strong>Windows Vista:</strong> 1024</p> | 
+| <p>Digitare:</p> | <p>Intero</p> | 
+| <p>Intervallo valido:</p> | <p><strong>Windows 2000:</strong> 8 - 2147483647</p><p><strong>Windows Vista:</strong> 0 - 65536</p> | 
+| <p>Ambito:</p> | <p>Globale</p> | 
+| <p>Imposta dopo <a href="gg269354(v=exchg.10).md">JetCreateInstance</a>:</p> | <p>No</p> | 
+| <p>Impostare dopo <a href="gg294068(v=exchg.10).md">JetInit</a>:</p> | <p>No</p> | 
+| <p>Influisce sul layout fisico:</p> | <p>No</p> | 
+| <p>Influisce sull'affidabilità:</p> | <p>No</p> | 
+| <p>Influisce sulle prestazioni:</p> | <p>Sì</p> | 
+| <p>Influisce sulle risorse:</p> | <p>Sì</p> | 
+| <p>Disponibilità:</p> | <p>Tutti</p> | 
 
 
 
 *JET_paramMaxCoalesceReadSize*  
 164  
 
-Numero massimo di byte che possono essere raggruppati per un'operazione di lettura coalesced.
+Numero massimo di byte che è possibile raggruppare per un'operazione di lettura coalesced.
 
 
-| | | <p>Valore predefinito:</p> | <p>262144</p> | | <p>Digitare:</p> | <p>Intero</p> | | <p>Intervallo valido:</p> | <p>0-1073741824</p> | | <p>Ambito:</p> | <p>Globale</p> | | <p>Imposta dopo <a href="gg269354(v=exchg.10).md">JetCreateInstance:</a></p> | <p>Sì</p> | | <p>Impostato dopo <a href="gg294068(v=exchg.10).md">JetInit:</a></p> | <p>No</p> | | <p>Influisce sul layout fisico:</p> | <p>No</p> | | <p>Influisce sull'affidabilità:</p> | <p>No</p> | | <p>Influisce sulle prestazioni:</p> | <p>Sì</p> | | <p>Influisce sulle risorse:</p> | <p>No</p> | | <p>Disponibilità:</p> | <p>Windows 7</p> | 
+| Etichetta | Valore |
+|--------|-------|
+| <p>Valore predefinito:</p> | <p>262144</p> | 
+| <p>Digitare:</p> | <p>Intero</p> | 
+| <p>Intervallo valido:</p> | <p>0-1073741824</p> | 
+| <p>Ambito:</p> | <p>Globale</p> | 
+| <p>Imposta dopo <a href="gg269354(v=exchg.10).md">JetCreateInstance</a>:</p> | <p>Sì</p> | 
+| <p>Impostare dopo <a href="gg294068(v=exchg.10).md">JetInit</a>:</p> | <p>No</p> | 
+| <p>Influisce sul layout fisico:</p> | <p>No</p> | 
+| <p>Influisce sull'affidabilità:</p> | <p>No</p> | 
+| <p>Influisce sulle prestazioni:</p> | <p>Sì</p> | 
+| <p>Influisce sulle risorse:</p> | <p>No</p> | 
+| <p>Disponibilità:</p> | <p>Windows 7</p> | 
 
 
 
@@ -107,7 +179,19 @@ Numero massimo di byte che possono essere raggruppati per un'operazione di lettu
 Numero massimo di byte che è possibile raggruppare per un'operazione di scrittura coalesced.
 
 
-| | | <p>Valore predefinito:</p> | <p>393216</p> | | <p>Digitare:</p> | <p>Intero</p> | | <p>Intervallo valido:</p> | <p>0-1073741824</p> | | <p>Ambito:</p> | <p>Globale</p> | | <p>Imposta dopo <a href="gg269354(v=exchg.10).md">JetCreateInstance:</a></p> | <p>Sì</p> | | <p>Impostato dopo <a href="gg294068(v=exchg.10).md">JetInit:</a></p> | <p>No</p> | | <p>Influisce sul layout fisico:</p> | <p>No</p> | | <p>Influisce sull'affidabilità:</p> | <p>No</p> | | <p>Influisce sulle prestazioni:</p> | <p>Sì</p> | | <p>Influisce sulle risorse:</p> | <p>No</p> | | <p>Disponibilità:</p> | <p>Windows 7</p> | 
+| Etichetta | Valore |
+|--------|-------|
+| <p>Valore predefinito:</p> | <p>393216</p> | 
+| <p>Digitare:</p> | <p>Intero</p> | 
+| <p>Intervallo valido:</p> | <p>0-1073741824</p> | 
+| <p>Ambito:</p> | <p>Globale</p> | 
+| <p>Imposta dopo <a href="gg269354(v=exchg.10).md">JetCreateInstance</a>:</p> | <p>Sì</p> | 
+| <p>Impostare dopo <a href="gg294068(v=exchg.10).md">JetInit</a>:</p> | <p>No</p> | 
+| <p>Influisce sul layout fisico:</p> | <p>No</p> | 
+| <p>Influisce sull'affidabilità:</p> | <p>No</p> | 
+| <p>Influisce sulle prestazioni:</p> | <p>Sì</p> | 
+| <p>Influisce sulle risorse:</p> | <p>No</p> | 
+| <p>Disponibilità:</p> | <p>Windows 7</p> | 
 
 
 
@@ -117,24 +201,52 @@ Numero massimo di byte che è possibile raggruppare per un'operazione di scrittu
 Numero massimo di byte che è possibile trovare per un'operazione di I/O di scrittura coalesced.
 
 
-| | | <p>Valore predefinito:</p> | <p>262144</p> | | <p>Digitare:</p> | <p>Intero</p> | | <p>Intervallo valido:</p> | <p>0-1073741824</p> | | <p>Ambito:</p> | <p>Globale</p> | | <p>Imposta dopo <a href="gg269354(v=exchg.10).md">JetCreateInstance</a>:</p> | <p>Sì</p> | | <p>Impostare dopo <a href="gg294068(v=exchg.10).md">JetInit</a>:</p> | <p>No</p> | | <p>Influisce sul layout fisico:</p> | <p>No</p> | | <p>Influisce sull'affidabilità:</p> | <p>No</p> | | <p>Influisce sulle prestazioni:</p> | <p>Sì</p> | | <p>Influisce sulle risorse:</p> | <p>No</p> | | <p>Disponibilità:</p> | <p>Windows 7</p> | 
+| Etichetta | Valore |
+|--------|-------|
+| <p>Valore predefinito:</p> | <p>262144</p> | 
+| <p>Digitare:</p> | <p>Intero</p> | 
+| <p>Intervallo valido:</p> | <p>0-1073741824</p> | 
+| <p>Ambito:</p> | <p>Globale</p> | 
+| <p>Imposta dopo <a href="gg269354(v=exchg.10).md">JetCreateInstance:</a></p> | <p>Sì</p> | 
+| <p>Impostato dopo <a href="gg294068(v=exchg.10).md">JetInit:</a></p> | <p>No</p> | 
+| <p>Influisce sul layout fisico:</p> | <p>No</p> | 
+| <p>Influisce sull'affidabilità:</p> | <p>No</p> | 
+| <p>Influisce sulle prestazioni:</p> | <p>Sì</p> | 
+| <p>Influisce sulle risorse:</p> | <p>No</p> | 
+| <p>Disponibilità:</p> | <p>Windows 7</p> | 
 
 
 
 *JET_paramMaxCoalesceWriteGapSize*  
 167  
 
-Numero massimo di byte che possono essere gapped per un'operazione di I/O di lettura coalesced.
+Numero massimo di byte che è possibile trovare per un'operazione di I/O di lettura coalesced.
 
 
-| | | <p>Valore predefinito:</p> | <p>393216</p> | | <p>Digitare:</p> | <p>Intero</p> | | <p>Intervallo valido:</p> | <p>0-1073741824</p> | | <p>Ambito:</p> | <p>Globale</p> | | <p>Imposta dopo <a href="gg269354(v=exchg.10).md">JetCreateInstance</a>:</p> | <p>Sì</p> | | <p>Impostare dopo <a href="gg294068(v=exchg.10).md">JetInit</a>:</p> | <p>No</p> | | <p>Influisce sul layout fisico:</p> | <p>No</p> | | <p>Influisce sull'affidabilità:</p> | <p>No</p> | | <p>Influisce sulle prestazioni:</p> | <p>Sì</p> | | <p>Influisce sulle risorse:</p> | <p>No</p> | | <p>Disponibilità:</p> | <p>Windows 7</p> | 
+| Etichetta | Valore |
+|--------|-------|
+| <p>Valore predefinito:</p> | <p>393216</p> | 
+| <p>Digitare:</p> | <p>Intero</p> | 
+| <p>Intervallo valido:</p> | <p>0-1073741824</p> | 
+| <p>Ambito:</p> | <p>Globale</p> | 
+| <p>Imposta dopo <a href="gg269354(v=exchg.10).md">JetCreateInstance:</a></p> | <p>Sì</p> | 
+| <p>Impostato dopo <a href="gg294068(v=exchg.10).md">JetInit:</a></p> | <p>No</p> | 
+| <p>Influisce sul layout fisico:</p> | <p>No</p> | 
+| <p>Influisce sull'affidabilità:</p> | <p>No</p> | 
+| <p>Influisce sulle prestazioni:</p> | <p>Sì</p> | 
+| <p>Influisce sulle risorse:</p> | <p>No</p> | 
+| <p>Disponibilità:</p> | <p>Windows 7</p> | 
 
 
 
 ### <a name="requirements"></a>Requisiti
 
 
-| | | <p><strong>Client</strong></p> | <p>Richiede Windows Vista, Windows XP o Windows 2000 Professional.</p> | | <p><strong>Server</strong></p> | <p>Richiede Windows Server 2008, Windows Server 2003 o Windows 2000 Server.</p> | | <p><strong>Intestazione</strong></p> | <p>Dichiarato in Esent.h.</p> | 
+| Requisito | Valore |
+|------------|----------|
+| <p><strong>Client</strong></p> | <p>Richiede Windows Vista, Windows XP o Windows 2000 Professional.</p> | 
+| <p><strong>Server</strong></p> | <p>Richiede Windows Server 2008, Windows Server 2003 o Windows 2000 Server.</p> | 
+| <p><strong>Intestazione</strong></p> | <p>Dichiarato in Esent.h.</p> | 
 
 
 

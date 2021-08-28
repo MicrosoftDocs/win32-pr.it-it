@@ -7,22 +7,22 @@ MSHAttr:
 title: IwlanApplicability
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: a7dca01d0f37d3c2643864e23d6dd34b9e9bf817
-ms.sourcegitcommit: 9b5faa61c38b2d0c432b7f2dbee8c127b0e28a7e
+ms.openlocfilehash: dac7d44d5bae50a899e3d32c4e421b4c8d2cd80e
+ms.sourcegitcommit: 61a4c522182aa1cacbf5669683d9570a3bf043b2
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/19/2021
-ms.locfileid: "122473957"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "122882075"
 ---
 # <a name="span-idwwan_profile_v4element_iwlanapplicabilityspaniwlanapplicability"></a><span id="WWAN_profile_v4.element_IwlanApplicability"></span>IwlanApplicability
 
-Specifica che questo profilo è attivo solo quando si è connessi a una rete IWLAN. In caso contrario, il profilo non è applicabile e non può essere usato per attivare un contesto PDP (Packet Data Protocol). Il valore di questo elemento deve essere un valore [**iwlanApplicabilityType**](simpletype-iwlanapplicabilitytype.md) valido.
+Specifica che questo profilo è attivo solo quando è connesso a una rete IWLAN. In caso contrario, il profilo non è applicabile e non può essere usato per attivare un contesto PDP (Packet Data Protocol). Il valore di questo elemento deve essere un valore [**iwlanApplicabilityType**](simpletype-iwlanapplicabilitytype.md) valido.
 
 ## <a name="element-hierarchy"></a>Gerarchia degli elementi
 
-[<MBNProfileExt>](element-mbnprofileext.md)  
-[<ProfileConditionedOn>](element-profileconditionedon.md)  
-**<IwlanApplicability>**
+[&lt;MBNProfileExt&gt;](element-mbnprofileext.md)  
+[&lt;ProfileConditionedOn&gt;](element-profileconditionedon.md)  
+**&lt;IwlanApplicability&gt;**
 
 ## <a name="syntax"></a>Sintassi
 
@@ -49,7 +49,7 @@ Nessuno.
 
 | Elemento padre | Descrizione | 
 |----------------|-------------|
-| <a href="element-profileconditionedon.md">ProfileConditionedOn</a> | <p>Specifica le condizioni che devono essere soddisfatte perché un profilo sia applicabile.</p><p>Questo elemento è una novità per v4. Consente di specificare più profili che si applicano in condizioni diverse e di usare automaticamente il profilo appropriato quando è applicabile. Questo elemento è facoltativo. Se non viene specificato, il profilo è sempre applicabile in relazione alle condizioni elencate.</p> | 
+| <a href="element-profileconditionedon.md">ProfileConditionedOn</a> | <p>Specifica le condizioni che devono essere soddisfatte perché un profilo sia applicabile.</p><p>Questo elemento è nuovo per la versione 4. Consente di specificare più profili che si applicano in condizioni diverse e di usare automaticamente il profilo appropriato quando è applicabile. Questo elemento è facoltativo. Se non viene specificato, il profilo è sempre applicabile rispetto alle condizioni elencate.</p> | 
 
 
  

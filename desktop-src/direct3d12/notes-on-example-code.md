@@ -1,27 +1,27 @@
 ---
 title: Codice di esempio nel riferimento D3D12
-description: Viene illustrato l'uso del codice di esempio nella documentazione di Direct3D 12.
+description: Illustra l'uso di codice di esempio nella documentazione di Direct3D 12.
 ms.assetid: C2323482-D06D-43B7-9BDE-BFB9A6A6B70D
 ms.localizationpriority: high
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 2d65dd8db64dd829a7a318717e44a64ea189c7a3
-ms.sourcegitcommit: 4c00910ed754d7d0a68c9a833751d714c06e3b39
+ms.openlocfilehash: 6a789ba8fa913b6852d8f7528183a71da31095d69539a79b2351e5b9ab7d3462
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/05/2021
-ms.locfileid: "104548789"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120119521"
 ---
 # <a name="example-code-in-the-d3d12-reference"></a>Codice di esempio nel riferimento D3D12
 
-Viene illustrato l'uso del codice di esempio nella documentazione di Direct3D 12.
+Illustra l'uso di codice di esempio nella documentazione di Direct3D 12.
 
--   [Codice frammento di esempio](#example-snippet-code)
+-   [Codice del frammento di codice di esempio](#example-snippet-code)
 -   [Argomenti correlati](#related-topics)
 
-## <a name="example-snippet-code"></a>Codice frammento di esempio
+## <a name="example-snippet-code"></a>Codice del frammento di codice di esempio
 
-Il codice di esempio illustrato nella Guida di riferimento a Direct3D 12 non è compilabile o codice di esecuzione. si tratta semplicemente di un frammento di codice che fornisce un esempio di come viene chiamata l'API. Alcuni esempi elencano le variabili globali e i membri di classe usati dalle chiamate, ad esempio:
+Il codice di esempio illustrato nel riferimento a Direct3D 12 non è compilabile o in grado di essere eseguito, ma è semplicemente un frammento di codice che fornisce un esempio di come viene chiamata l'API. Alcuni esempi elencano le variabili globali e i membri di classe usati dalle chiamate, ad esempio:
 
 Oggetti pipeline globali.
 
@@ -91,13 +91,13 @@ ThrowIfFailed(m_commandList->Close());
 [Creazione di un componente Direct3D 12 di base](creating-a-basic-direct3d-12-component.md)
 </dt> <dt>
 
-[Guida di riferimento a Direct3D 12](direct3d-12-reference.md)
+[Informazioni di riferimento su Direct3D 12](direct3d-12-reference.md)
 </dt> <dt>
 
-[Procedure dettagliate per il codice D3D12](d3d12-code-walk-throughs.md)
+[Procedura per il codice D3D12](d3d12-code-walk-throughs.md)
 </dt> <dt>
 
-[Esempi di lavoro](working-samples.md)
+[Esempi funzionanti](working-samples.md)
 </dt> </dl>
 
  

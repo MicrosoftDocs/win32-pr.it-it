@@ -1,5 +1,5 @@
 ---
-description: MbNProfileExt \/ RoamApplicability (v4)
+description: MBNProfileExt \/ RoamApplicability (v4)
 MS-HAID: WWAN\_profile\_v4.element\_RoamApplicability
 MSHAttr:
 - PreferredSiteName:MSDN
@@ -7,14 +7,14 @@ MSHAttr:
 title: RoamApplicability
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: a6fbd7b80e8f5cec49caaa0ea08d747d99e938b2
-ms.sourcegitcommit: 4665ebce0c106bdb52eef36e544280b496b6f50b
+ms.openlocfilehash: e79c35cf8b20a2be85f4ef51e4a3745c9096d9e0
+ms.sourcegitcommit: 9b5faa61c38b2d0c432b7f2dbee8c127b0e28a7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/26/2021
-ms.locfileid: "122986864"
+ms.lasthandoff: 08/19/2021
+ms.locfileid: "122481097"
 ---
-# <a name="span-idwwan_profile_v4element_roamapplicabilityspanmbnprofileextroamapplicability-v4"></a><span id="WWAN_profile_v4.element_RoamApplicability"></span>MbNProfileExt \/ RoamApplicability (v4)
+# <a name="span-idwwan_profile_v4element_roamapplicabilityspanmbnprofileextroamapplicability-v4"></a><span id="WWAN_profile_v4.element_RoamApplicability"></span>MBNProfileExt \/ RoamApplicability (v4)
 
 Specifica che questo profilo è attivo solo quando la condizione di roaming corrente è quella specificata. In caso contrario, il profilo non è applicabile e non può essere usato per attivare un contesto PDP (Packet Data Protocol). Il valore di questo elemento deve essere un valore [**roamApplicabilityType**](simpletype-roamapplicabilitytype.md) valido.
 
@@ -52,7 +52,7 @@ Nessuno.
 | Elemento padre | Descrizione | 
 |----------------|-------------|
 | <a href="element-modemdmconfigprofile.md">ModemDMConfigProfile</a> | <p>Profilo di configurazione dm modem.</p> | 
-| <a href="element-profileconditionedon.md">ProfileConditionedOn</a> | <p>Specifica le condizioni che devono essere soddisfatte perché un profilo sia applicabile.</p><p>Questo elemento è nuovo per la versione 4. Consente di specificare più profili che si applicano in condizioni diverse e di usare automaticamente il profilo appropriato quando è applicabile. Questo elemento è facoltativo. Se non viene specificato, il profilo è sempre applicabile rispetto alle condizioni elencate.</p> | 
+| <a href="element-profileconditionedon.md">ProfileConditionedOn</a> | <p>Specifica le condizioni che devono essere soddisfatte perché un profilo sia applicabile.</p><p>Questo elemento è una novità per v4. Consente di specificare più profili che si applicano in condizioni diverse e di usare automaticamente il profilo appropriato quando è applicabile. Questo elemento è facoltativo. Se non viene specificato, il profilo è sempre applicabile in relazione alle condizioni elencate.</p> | 
 
 
  
@@ -60,9 +60,7 @@ Nessuno.
 ## <a name="requirements"></a>Requisiti
 
 
-| Requisito | Valore |
-|------------|----------|
-| <p>Spazio dei nomi</p> | <p>https://www.microsoft.com/networking/WWAN/profile/v4</p> | 
+| | | <p>Spazio dei nomi</p> | <p>https://www.microsoft.com/networking/WWAN/profile/v4</p> | 
 
 
  

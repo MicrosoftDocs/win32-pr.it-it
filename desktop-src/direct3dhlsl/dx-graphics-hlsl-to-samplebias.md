@@ -9,12 +9,12 @@ topic_type:
 api_name: ''
 api_type: ''
 api_location: ''
-ms.openlocfilehash: 0e1cb91c7564bfff6e21fb1cdf0dcdbf28f68d928b85274e33c964a290f3231e
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: a279a92db9d38c8f0a8e80edbd87ec667d580d05
+ms.sourcegitcommit: c276a8912787b2cda74dcf54eb96df961bb1188b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119119775"
+ms.lasthandoff: 08/20/2021
+ms.locfileid: "122624527"
 ---
 # <a name="samplebias-directx-hlsl-texture-object"></a>SampleBias (oggetto trama DirectX HLSL)
 
@@ -32,8 +32,8 @@ Campionamento di una trama, dopo l'applicazione della distorsione di input al li
 
 <table>
 <colgroup>
-<col style="width: 50%" />
-<col style="width: 50%" />
+<col  />
+<col  />
 </colgroup>
 <thead>
 <tr class="header">
@@ -87,7 +87,7 @@ Campionamento di una trama, dopo l'applicazione della distorsione di input al li
 <td><p>[in] Il valore di distorsione, ovvero un numero a virgola mobile compreso tra -16.0 e 15,99, viene applicato a un livello mip prima del campionamento.</p></td>
 </tr>
 <tr class="odd">
-<td><p><span id="Offset"></span><span id="offset"></span><span id="OFFSET"></span><em>compensare</em></p></td>
+<td><p><span id="Offset"></span><span id="offset"></span><span id="OFFSET"></span><em>Compensare</em></p></td>
 <td><p>[in] Offset facoltativo delle coordinate della trama, che può essere usato per qualsiasi tipo di oggetto trama. l'offset viene applicato alla posizione prima del campionamento. Gli offset di trama devono essere statici. Il tipo di argomento dipende dal tipo texture-object. Per altre informazioni, vedere <a href="/windows/win32/direct3dhlsl/dx-graphics-hlsl-to-sample#applying-texture-coordinate-offsets">Applicazione degli offset delle coordinate di trama.</a></p>
 
 <table>
@@ -130,7 +130,7 @@ Campionamento di una trama, dopo l'applicazione della distorsione di input al li
 
 Tipo di modello della trama, che può essere un vettore singolo o multi-componente. Il formato è basato sul formato [**DXGI \_ della trama.**](/windows/desktop/api/dxgiformat/ne-dxgiformat-dxgi_format)
 
-## <a name="minimum-shader-model"></a>Modello shader minimo
+## <a name="minimum-shader-model"></a>Modello di shader minimo
 
 Questa funzione è supportata nei modelli shader seguenti.
 

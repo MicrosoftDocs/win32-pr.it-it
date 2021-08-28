@@ -1,7 +1,7 @@
 ---
-description: Determina se le impostazioni locali specificate per nome sono installate o supportate nel sistema operativo.
+description: Determina se le impostazioni locali specificate in base al nome sono installate o supportate nel sistema operativo.
 ms.assetid: 6df92e4d-d78e-48b5-9515-18f0497de95b
-title: Funzione RtlIsValidLocaleName (Ntrtl. h)
+title: Funzione RtlIsValidLocaleName (Ntrtl.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -13,19 +13,19 @@ api_type:
 - DllExport
 api_location:
 - Kernel32.dll
-ms.openlocfilehash: 3433daaf48e81f662945f1d223e9cf7188ddb706
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 993d819324987fccdfb66c26343bccfb9a815606655a18ff1a1e43f9a2af0eac
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "103879097"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120130281"
 ---
-# <a name="rtlisvalidlocalename-function"></a>RtlIsValidLocaleName (funzione)
+# <a name="rtlisvalidlocalename-function"></a>Funzione RtlIsValidLocaleName
 
-Determina se le impostazioni locali specificate per nome sono installate o supportate nel sistema operativo.
+Determina se le impostazioni locali specificate in base al nome sono installate o supportate nel sistema operativo.
 
 > [!Note]  
-> Questa funzione è disponibile per l'utilizzo solo in Windows Vista. Potrebbe essere modificato o non disponibile nelle versioni successive. Le applicazioni devono usare [**IsValidLocaleName**](/windows/desktop/api/Winnls/nf-winnls-isvalidlocalename).
+> Questa funzione è disponibile solo in Windows Vista. Potrebbe essere stato modificato o non disponibile nelle versioni successive. Le applicazioni devono [**usare IsValidLocaleName**](/windows/desktop/api/Winnls/nf-winnls-isvalidlocalename).
 
  
 
@@ -45,27 +45,27 @@ BOOL RtlIsValidLocaleName(
 
 <dl> <dt>
 
-*LocaleName* \[ in\]
+*Nome delle impostazioni locali* \[ Pollici\]
 </dt> <dd>
 
-[Nome delle impostazioni locali](locale-names.md) da convalidare. Questo parametro può specificare il nome di [impostazioni locali personalizzate](custom-locales.md).
+[Nome delle impostazioni locali](locale-names.md) da convalidare. Questo parametro può specificare il nome di impostazioni [locali personalizzate.](custom-locales.md)
 
 </dd> <dt>
 
-*Flag* \[ in\]
+*Flag* \[ Pollici\]
 </dt> <dd>
 
-Flag che indicano se le impostazioni locali non associate ad alcun paese sono considerate valide. Attualmente l'unico flag definito è [impostazioni locali \_ Consenti \_ neutro](locale-allow-neutral.md). Il valore predefinito è che non lo sono.
+Flag che indicano se le impostazioni locali non valide sono considerate valide. Attualmente l'unico flag definito è [LOCALE \_ ALLOW \_ NEUTRAL.](locale-allow-neutral.md) Il valore predefinito è che non lo sono.
 
 </dd> </dl>
 
 ## <a name="return-value"></a>Valore restituito
 
-Restituisce un valore diverso da zero se ha esito positivo; in caso contrario, 0.
+Restituisce un valore diverso da zero in caso di esito positivo oppure 0 in caso contrario.
 
 ## <a name="remarks"></a>Commenti
 
-Questa funzione è simile a [**IsValidLocaleName**](/windows/desktop/api/Winnls/nf-winnls-isvalidlocalename). L'unica differenza è che se le impostazioni locali \_ consentono l' \_ impostazione della lingua neutra, **RtlIsValidLocaleName** restituisce **true** per un nome che corrisponde a impostazioni locali non associate ad alcun paese, ad esempio "en", mentre [**IsValidLocaleName**](/windows/desktop/api/Winnls/nf-winnls-isvalidlocalename) restituisce **true** solo per le impostazioni locali specifiche, ad esempio "en-US". Le impostazioni locali neutre vengono utilizzate come parte della strategia di caricamento delle risorse in Windows Vista e versioni successive. Solo una piccola classe di applicazioni altamente specializzate utilizza **RtlIsValidLocaleName** e le impostazioni locali \_ consentono la \_ neutralità, perché le impostazioni locali neutre sono di uso molto limitato. Nessuna delle funzioni descritte nella [chiamata delle funzioni "nome delle impostazioni locali"](calling-the--locale-name--functions.md) accetta impostazioni locali neutre come input.
+Questa funzione è simile a [**IsValidLocaleName**](/windows/desktop/api/Winnls/nf-winnls-isvalidlocalename). L'unica differenza è che se è impostato LOCALE \_ ALLOW \_ NEUTRAL, **RtlIsValidLocaleName** restituisce **TRUE** per un nome che corrisponde a impostazioni locali neutre (ad esempio "en"), mentre [**IsValidLocaleName**](/windows/desktop/api/Winnls/nf-winnls-isvalidlocalename) restituisce **TRUE** solo per impostazioni locali specifiche (ad esempio "en-US"). Le impostazioni locali neutre vengono usate come parte della strategia di caricamento delle risorse in Windows Vista e versioni successive. Solo una piccola classe di applicazioni altamente specializzate usa **RtlIsValidLocaleName** e imposta LOCALE ALLOW NEUTRAL, perché le impostazioni locali neutre sono \_ di uso molto \_ limitato. Nessuna delle funzioni descritte in [Chiamata delle funzioni "Nome impostazioni locali"](calling-the--locale-name--functions.md) accetta impostazioni locali neutre come input.
 
 ## <a name="requirements"></a>Requisiti
 
@@ -73,9 +73,9 @@ Questa funzione è simile a [**IsValidLocaleName**](/windows/desktop/api/Winnls/
 
 | Requisito | Valore |
 |-------------------------------------|-----------------------------------------------------------------------------------------|
-| Client minimo supportato<br/> | \[Solo app desktop di Windows Vista\]<br/>                                          |
-| Server minimo supportato<br/> | \[Solo app desktop Windows Server 2008\]<br/>                                    |
-| Intestazione<br/>                   | <dl> <dt>Ntrtl. h</dt> </dl>      |
+| Client minimo supportato<br/> | Windows Solo \[ app desktop di Vista\]<br/>                                          |
+| Server minimo supportato<br/> | Windows Solo app desktop server 2008 \[\]<br/>                                    |
+| Intestazione<br/>                   | <dl> <dt>Ntrtl.h</dt> </dl>      |
 | Libreria<br/>                  | <dl> <dt>Kernel32.lib</dt> </dl> |
 | DLL<br/>                      | <dl> <dt>Kernel32.dll</dt> </dl> |
 
@@ -85,10 +85,10 @@ Questa funzione è simile a [**IsValidLocaleName**](/windows/desktop/api/Winnls/
 
 <dl> <dt>
 
-[Supporto per lingua nazionale](national-language-support.md)
+[Supporto linguistico nazionale](national-language-support.md)
 </dt> <dt>
 
-[Funzioni di supporto del linguaggio nazionale](national-language-support-functions.md)
+[Funzioni di supporto linguistico nazionale](national-language-support-functions.md)
 </dt> <dt>
 
 [**IsValidLocaleName**](/windows/desktop/api/Winnls/nf-winnls-isvalidlocalename)

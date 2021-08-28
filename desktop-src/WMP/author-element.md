@@ -1,6 +1,6 @@
 ---
 title: Elemento AUTHOR
-description: L'elemento AUTHOR contiene il nome dell'autore di un metafile di Windows Media o di un clip multimediale.
+description: L'elemento AUTHOR contiene il nome dell'autore di un Windows o di un clip multimediale.
 ms.assetid: d80aad3d-4471-4310-8d43-2733ed83103c
 keywords:
 - Elemento AUTHOR Windows Media Player
@@ -13,16 +13,16 @@ api_type:
 ms.topic: reference
 ms.date: 05/31/2018
 api_location: ''
-ms.openlocfilehash: 9d20498ebd7c8a56edc2e32bc2e76422c9b22242
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: 058753d73049debe01e442f49bf12476642111549ad890e931100026badaeb3d
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "106325267"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120098891"
 ---
 # <a name="author-element"></a>Elemento AUTHOR
 
-L'elemento **Author** contiene il nome dell'autore di un metafile di Windows Media o di un clip multimediale.
+**L'elemento AUTHOR** contiene il nome dell'autore di un Windows o di un clip multimediale.
 
 ``` syntax
 <AUTHOR>   
@@ -40,7 +40,7 @@ Questo elemento non ha attributi.
 
 | Gerarchia       | Elemento            |
 |-----------------|--------------------|
-| Elementi padre | **ASX**, **voce** |
+| Elementi padre | **ASX**, **ENTRY** |
 | Elementi figlio  | nessuno               |
 
 
@@ -49,13 +49,13 @@ Questo elemento non ha attributi.
 
 ## <a name="remarks"></a>Osservazioni
 
-Questo elemento contiene una stringa di testo che rappresenta il nome dell'autore di un metafile Windows Media o di un clip multimediale. È possibile utilizzare l'elemento **Author** all'interno dell'elemento **ASX** e negli elementi **entry** .
+Questo elemento contiene una stringa di testo che rappresenta il nome dell'autore di un Windows o di un clip multimediale. È possibile usare **l'elemento AUTHOR** all'interno **dell'elemento ASX** e all'interno **degli elementi ENTRY.**
 
-Se questo elemento viene visualizzato nell'elemento **ASX** , il testo viene visualizzato come **Mostra** informazioni.
+Se questo elemento viene visualizzato **nell'elemento ASX,** il testo viene visualizzato come **Mostra** informazioni.
 
-Se questo elemento viene visualizzato in un elemento **entry** , il testo viene visualizzato come autore della clip.
+Se questo elemento viene visualizzato in un **elemento ENTRY,** il testo viene visualizzato come autore del clip.
 
-Ogni elemento **ASX** e **entry** padre deve contenere al massimo un elemento **autore** figlio. Più elementi **Author** dopo il primo verranno ignorati e non verranno visualizzati.
+Ogni elemento **ASX e** **ENTRY** padre deve contenere al massimo un elemento **AUTHOR** figlio. Più **elementi AUTHOR** dopo il primo verranno ignorati e non verranno visualizzati.
 
 ## <a name="examples"></a>Esempio
 
@@ -87,10 +87,10 @@ Ogni elemento **ASX** e **entry** padre deve contenere al massimo un elemento **
 
 <dl> <dt>
 
-[**Riferimento agli elementi metafile di Windows Media**](windows-media-metafile-elements-reference.md)
+[**Windows Informazioni di riferimento per gli elementi metafile multimediali**](windows-media-metafile-elements-reference.md)
 </dt> <dt>
 
-[**Informazioni di riferimento sui metafile di Windows Media**](windows-media-metafile-reference.md)
+[**Windows Informazioni di riferimento sui metafile multimediali**](windows-media-metafile-reference.md)
 </dt> </dl>
 
  

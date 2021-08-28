@@ -1,6 +1,6 @@
 ---
 title: Codici di errore di Routing e Accesso remoto
-description: I codici di errore dell'API Routing e Accesso remoto (RRAS) seguenti sono definiti in raserror.h.
+description: I codici di errore dell'API routing e accesso remoto (RRAS) seguenti sono definiti in raserror.h.
 ms.assetid: 1fa41438-7c93-4e9c-851c-652fba23da4f
 topic_type:
 - apiref
@@ -11,16 +11,16 @@ api_type:
 ms.topic: reference
 ms.date: 05/31/2018
 api_location: ''
-ms.openlocfilehash: 7bd68c31ef2b92cce75059d5d86ee68dc65d1151
-ms.sourcegitcommit: c276a8912787b2cda74dcf54eb96df961bb1188b
+ms.openlocfilehash: 5664bc6a4b6b820d7ce72b0605cea8339aa96b16
+ms.sourcegitcommit: 61a4c522182aa1cacbf5669683d9570a3bf043b2
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/20/2021
-ms.locfileid: "122624327"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "122886025"
 ---
 # <a name="routing-and-remote-access-error-codes"></a>Codici di errore di Routing e Accesso remoto
 
-I codici di errore dell'API Routing e Accesso remoto (RRAS) seguenti sono definiti in raserror.h. Tutti i codici di errore sono supportati in Windows 2000 o versioni successive di Windows se non diversamente specificato.
+I codici di errore dell'API routing e accesso remoto (RRAS) seguenti sono definiti in raserror.h. Tutti i codici di errore sono supportati in Windows 2000 o versioni successive di Windows se non diversamente specificato.
 
 
 
@@ -37,7 +37,7 @@ I codici di errore dell'API Routing e Accesso remoto (RRAS) seguenti sono defini
 </thead>
 <tbody>
 <tr class="odd">
-<td><span id="PENDING"></span><span id="pending"></span><dl> <dt><strong>IN SOSPESO</strong></dt> <dt>600</dt> </dl></td>
+<td><span id="PENDING"></span><span id="pending"></span><dl> <dt><strong>PENDING</strong></dt> <dt>600</dt> </dl></td>
 <td>Un'operazione è in sospeso.<br/></td>
 </tr>
 <tr class="even">
@@ -122,7 +122,7 @@ Deprecato in Windows Vista e versioni successive di Windows.
 </tr>
 <tr class="odd">
 <td><span id="ERROR_ASYNC_REQUEST_PENDING"></span><span id="error_async_request_pending"></span><dl> <dt><strong>ERROR_ASYNC_REQUEST_PENDING</strong></dt> <dt>616</dt> </dl></td>
-<td>Una richiesta asincrona è in sospeso.<br/></td>
+<td>Richiesta asincrona in sospeso.<br/></td>
 </tr>
 <tr class="even">
 <td><span id="ERROR_ALREADY_DISCONNECTING"></span><span id="error_already_disconnecting"></span><dl> <dt><strong>ERROR_ALREADY_DISCONNECTING</strong></dt> <dt>617</dt> </dl></td>
@@ -138,7 +138,7 @@ Deprecato in Windows Vista e versioni successive di Windows.
 </tr>
 <tr class="odd">
 <td><span id="ERROR_NO_ENDPOINTS"></span><span id="error_no_endpoints"></span><dl> <dt><strong>ERROR_NO_ENDPOINTS</strong></dt> <dt>620</dt> </dl></td>
-<td>Non è stato possibile determinare endpoint.<br/>
+<td>Non è stato possibile determinare alcun endpoint.<br/>
 <blockquote>
 [!Note]<br />
 Deprecato in Windows Vista e versioni successive di Windows.
@@ -147,19 +147,19 @@ Deprecato in Windows Vista e versioni successive di Windows.
 </tr>
 <tr class="even">
 <td><span id="ERROR_CANNOT_OPEN_PHONEBOOK"></span><span id="error_cannot_open_phonebook"></span><dl> <dt><strong>ERROR_CANNOT_OPEN_PHONEBOOK</strong></dt> <dt>621</dt> </dl></td>
-<td>Impossibile aprire il file della rubrica telefonica specificato.<br/></td>
+<td>Impossibile aprire il file della rubrica specificata.<br/></td>
 </tr>
 <tr class="odd">
 <td><span id="ERROR_CANNOT_LOAD_PHONEBOOK"></span><span id="error_cannot_load_phonebook"></span><dl> <dt><strong>ERROR_CANNOT_LOAD_PHONEBOOK</strong></dt> <dt>622</dt> </dl></td>
-<td>Impossibile caricare il file della rubrica telefonica specificato.<br/></td>
+<td>Impossibile caricare il file della rubrica specificato.<br/></td>
 </tr>
 <tr class="even">
 <td><span id="ERROR_CANNOT_FIND_PHONEBOOK_ENTRY"></span><span id="error_cannot_find_phonebook_entry"></span><dl> <dt><strong>ERROR_CANNOT_FIND_PHONEBOOK_ENTRY</strong></dt> <dt>623</dt> </dl></td>
-<td>Impossibile trovare la voce della rubrica telefonica specificata.<br/></td>
+<td>Impossibile trovare la voce della rubrica specificata.<br/></td>
 </tr>
 <tr class="odd">
 <td><span id="ERROR_CANNOT_WRITE_PHONEBOOK"></span><span id="error_cannot_write_phonebook"></span><dl> <dt><strong>ERROR_CANNOT_WRITE_PHONEBOOK</strong></dt> <dt>624</dt> </dl></td>
-<td>Impossibile scrivere nel file della rubrica telefonica specificato.<br/></td>
+<td>Impossibile scrivere nel file della rubrica specificata.<br/></td>
 </tr>
 <tr class="even">
 <td><span id="ERROR_CORRUPT_PHONEBOOK"></span><span id="error_corrupt_phonebook"></span><dl> <dt><strong>ERROR_CORRUPT_PHONEBOOK</strong></dt> <dt>625</dt> </dl></td>
@@ -167,7 +167,7 @@ Deprecato in Windows Vista e versioni successive di Windows.
 </tr>
 <tr class="odd">
 <td><span id="ERROR_CANNOT_LOAD_STRING"></span><span id="error_cannot_load_string"></span><dl> <dt><strong>ERROR_CANNOT_LOAD_STRING</strong></dt> <dt>626</dt> </dl></td>
-<td>Impossibile caricare una stringa.<br/>
+<td>Non è stato possibile caricare una stringa.<br/>
 <blockquote>
 [!Note]<br />
 Deprecato in Windows Vista e versioni successive di Windows.
@@ -204,7 +204,7 @@ Deprecato in Windows Vista e versioni successive di Windows.
 </tr>
 <tr class="odd">
 <td><span id="ERROR_CANNOT_PROJECT_CLIENT"></span><span id="error_cannot_project_client"></span><dl> <dt><strong>ERROR_CANNOT_PROJECT_CLIENT</strong></dt> <dt>634</dt> </dl></td>
-<td>Impossibile registrare il computer nella rete remota.<br/>
+<td>Non è stato possibile registrare il computer nella rete remota.<br/>
 <blockquote>
 [!Note]<br />
 Deprecato in Windows Vista e versioni successive di Windows.
@@ -221,7 +221,7 @@ Deprecato in Windows Vista e versioni successive di Windows.
 </tr>
 <tr class="even">
 <td><span id="ERROR_BAD_STRING"></span><span id="error_bad_string"></span><dl> <dt><strong>ERROR_BAD_STRING</strong></dt> <dt>637</dt> </dl></td>
-<td>È stata rilevata una stringa che non è stato possibile convertire.<br/>
+<td>È stata rilevata una stringa che non può essere convertita.<br/>
 <blockquote>
 [!Note]<br />
 Deprecato in Windows Vista e versioni successive di Windows.
@@ -333,7 +333,7 @@ Deprecato in Windows Vista e versioni successive di Windows.
 </tr>
 <tr class="even">
 <td><span id="ERROR_MESSAGE_MACRO_NOT_FOUND"></span><span id="error_message_macro_not_found"></span><dl> <dt><strong>ERROR_MESSAGE_MACRO_NOT_FOUND</strong></dt> <dt>655</dt> </dl></td>
-<td>La <message> macro non è stata trovata nel dispositivo . Sezione del file INF.<br/></td>
+<td>La &lt; &gt; macro del messaggio non è stata trovata nel dispositivo . Sezione del file INF.<br/></td>
 </tr>
 <tr class="odd">
 <td><span id="ERROR_DEFAULTOFF_MACRO_NOT_FOUND"></span><span id="error_defaultoff_macro_not_found"></span><dl> <dt><strong>ERROR_DEFAULTOFF_MACRO_NOT_FOUND</strong></dt> <dt>656</dt> </dl></td>
@@ -349,7 +349,7 @@ Deprecato in Windows Vista e versioni successive di Windows.
 </tr>
 <tr class="even">
 <td><span id="ERROR_DEVICENAME_NOT_FOUND"></span><span id="error_devicename_not_found"></span><dl> <dt><strong>ERROR_DEVICENAME_NOT_FOUND</strong></dt> <dt>659</dt> </dl></td>
-<td>Il file .INI multimediale fa riferimento a un nome di dispositivo sconosciuto.<br/></td>
+<td>Il file .INI fa riferimento a un nome di dispositivo sconosciuto.<br/></td>
 </tr>
 <tr class="odd">
 <td><span id="ERROR_NO_RESPONSES"></span><span id="error_no_responses"></span><dl> <dt><strong>ERROR_NO_RESPONSES</strong></dt> <dt>660</dt> </dl></td>
@@ -365,7 +365,7 @@ Deprecato in Windows Vista e versioni successive di Windows.
 </tr>
 <tr class="even">
 <td><span id="ERROR_UNKNOWN_DEVICE_TYPE"></span><span id="error_unknown_device_type"></span><dl> <dt><strong>ERROR_UNKNOWN_DEVICE_TYPE</strong></dt> <dt>663</dt> </dl></td>
-<td>Il file .INI multimediale fa riferimento a un tipo di dispositivo sconosciuto.<br/></td>
+<td>Il file .INI fa riferimento a un tipo di dispositivo sconosciuto.<br/></td>
 </tr>
 <tr class="odd">
 <td><span id="ERROR_ALLOCATING_MEMORY"></span><span id="error_allocating_memory"></span><dl> <dt><strong>ERROR_ALLOCATING_MEMORY</strong></dt> <dt>664</dt> </dl></td>
@@ -409,7 +409,7 @@ Deprecato in Windows Vista e versioni successive di Windows.
 </tr>
 <tr class="odd">
 <td><span id="ERROR_READING_MAXCONNECTBPS"></span><span id="error_reading_maxconnectbps"></span><dl> <dt><strong>ERROR_READING_MAXCONNECTBPS</strong></dt> <dt>674</dt> </dl></td>
-<td>Il sistema non è stato in grado di leggere la velocità massima di connessione del supporto dal file .INI supporto.<br/>
+<td>Il sistema non è stato in grado di leggere la velocità massima di connessione del supporto dal file .INI multimediale.<br/>
 <blockquote>
 [!Note]<br />
 Deprecato in Windows Vista e versioni successive di Windows.
@@ -475,7 +475,7 @@ Deprecato in Windows Vista e versioni successive di Windows.
 </tr>
 <tr class="odd">
 <td><span id="ERROR_WRITING_DEFAULTOFF"></span><span id="error_writing_defaultoff"></span><dl> <dt><strong>ERROR_WRITING_DEFAULTOFF</strong></dt> <dt>688</dt> </dl></td>
-<td>Si è verificato un errore durante la scrittura dell'impostazione predefinita.<br/></td>
+<td>Si è verificato un errore durante la scrittura del valore predefinito.<br/></td>
 </tr>
 <tr class="even">
 <td><span id="ERROR_READING_DEFAULTOFF"></span><span id="error_reading_defaultoff"></span><dl> <dt><strong>ERROR_READING_DEFAULTOFF</strong></dt> <dt>689</dt> </dl></td>
@@ -483,7 +483,7 @@ Deprecato in Windows Vista e versioni successive di Windows.
 </tr>
 <tr class="odd">
 <td><span id="ERROR_EMPTY_INI_FILE"></span><span id="error_empty_ini_file"></span><dl> <dt><strong>ERROR_EMPTY_INI_FILE</strong></dt> <dt>690</dt> </dl></td>
-<td>Il file .INI è vuoto.<br/></td>
+<td>Il file .INI file è vuoto.<br/></td>
 </tr>
 <tr class="even">
 <td><span id="ERROR_AUTHENTICATION_FAILURE"></span><span id="error_authentication_failure"></span><dl> <dt><strong>ERROR_AUTHENTICATION_FAILURE</strong></dt> <dt>691</dt> </dl></td>
@@ -515,7 +515,7 @@ Deprecato in Windows Vista e versioni successive di Windows.
 </tr>
 <tr class="odd">
 <td><span id="ERROR_UNKNOWN_RESPONSE_KEY"></span><span id="error_unknown_response_key"></span><dl> <dt><strong>ERROR_UNKNOWN_RESPONSE_KEY</strong></dt> <dt>698</dt> </dl></td>
-<td>Nome della chiave di risposta nel dispositivo. Il file INF non è nel formato previsto.<br/></td>
+<td>Nome della chiave di risposta nel dispositivo . Il formato del file INF non è previsto.<br/></td>
 </tr>
 <tr class="even">
 <td><span id="ERROR_RECV_BUF_FULL"></span><span id="error_recv_buf_full"></span><dl> <dt><strong>ERROR_RECV_BUF_FULL</strong></dt> <dt>699</dt> </dl></td>
@@ -531,11 +531,11 @@ Deprecato in Windows Vista e versioni successive di Windows.
 </tr>
 <tr class="odd">
 <td><span id="ERROR_UNEXPECTED_RESPONSE"></span><span id="error_unexpected_response"></span><dl> <dt><strong>ERROR_UNEXPECTED_RESPONSE</strong></dt> <dt>702</dt> </dl></td>
-<td>Risposta del dispositivo ricevuta quando non ne è prevista nessuna.<br/></td>
+<td>Risposta del dispositivo ricevuta quando non ne è previsto nessuno.<br/></td>
 </tr>
 <tr class="even">
 <td><span id="ERROR_INTERACTIVE_MODE"></span><span id="error_interactive_mode"></span><dl> <dt><strong>ERROR_INTERACTIVE_MODE</strong></dt> <dt>703</dt> </dl></td>
-<td>Si è verificato un errore perché è abilitata la modalità interattiva.<br/></td>
+<td>Si è verificato un errore perché la modalità interattiva è abilitata.<br/></td>
 </tr>
 <tr class="odd">
 <td><span id="ERROR_BAD_CALLBACK_NUMBER"></span><span id="error_bad_callback_number"></span><dl> <dt><strong>ERROR_BAD_CALLBACK_NUMBER</strong></dt> <dt>704</dt> </dl></td>
@@ -585,7 +585,7 @@ Deprecato in Windows Vista e versioni successive di Windows.
 </tr>
 <tr class="even">
 <td><span id="ERROR_NO_ACTIVE_ISDN_LINES"></span><span id="error_no_active_isdn_lines"></span><dl> <dt><strong>ERROR_NO_ACTIVE_ISDN_LINES</strong></dt> <dt>713</dt> </dl></td>
-<td>Non sono disponibili linee ISDN attive.<br/></td>
+<td>Non sono disponibili righe ISDN attive.<br/></td>
 </tr>
 <tr class="odd">
 <td><span id="ERROR_NO_ISDN_CHANNELS_AVAILABLE"></span><span id="error_no_isdn_channels_available"></span><dl> <dt><strong>ERROR_NO_ISDN_CHANNELS_AVAILABLE</strong></dt> <dt>714</dt> </dl></td>
@@ -598,7 +598,7 @@ Deprecato in Windows Vista e versioni successive di Windows.
 </tr>
 <tr class="even">
 <td><span id="ERROR_TOO_MANY_LINE_ERRORS"></span><span id="error_too_many_line_errors"></span><dl> <dt><strong>ERROR_TOO_MANY_LINE_ERRORS</strong></dt> <dt>715</dt> </dl></td>
-<td>Si sono verificati troppi errori a causa di una qualità scadente della linea telefonica.<br/>
+<td>Si sono verificati troppi errori a causa della scarsa qualità della linea telefonica.<br/>
 <blockquote>
 [!Note]<br />
 Deprecato in Windows Vista e versioni successive di Windows.
@@ -611,7 +611,7 @@ Deprecato in Windows Vista e versioni successive di Windows.
 </tr>
 <tr class="even">
 <td><span id="ERROR_NO_IP_ADDRESSES"></span><span id="error_no_ip_addresses"></span><dl> <dt><strong>ERROR_NO_IP_ADDRESSES</strong></dt> <dt>717</dt> </dl></td>
-<td>Nel pool statico di indirizzi IP di accesso remoto non sono disponibili indirizzi IP.<br/></td>
+<td>Nessun indirizzo IP disponibile nel pool statico di indirizzi IP di accesso remoto.<br/></td>
 </tr>
 <tr class="odd">
 <td><span id="ERROR_PPP_TIMEOUT"></span><span id="error_ppp_timeout"></span><dl> <dt><strong>ERROR_PPP_TIMEOUT</strong></dt> <dt>718</dt> </dl></td>
@@ -644,7 +644,7 @@ Deprecato in Windows Vista e versioni successive di Windows.
 </tr>
 <tr class="odd">
 <td><span id="ERROR_IPXCP_NO_DIALOUT_CONFIGURED"></span><span id="error_ipxcp_no_dialout_configured"></span><dl> <dt><strong>ERROR_IPXCP_NO_DIALOUT_CONFIGURED</strong></dt> <dt>724</dt> </dl></td>
-<td>Il protocollo IPX non può connettersi al modem (o a un altro dispositivo di connessione) perché il computer non è configurato per la connessione in uscita (si tratta di un router IPX).<br/>
+<td>Il protocollo IPX non è in grado di effettuare chiamate in uscita sul modem (o su un altro dispositivo di connessione) perché questo computer non è configurato per la connessione remota (si tratta di un router IPX).<br/>
 <blockquote>
 [!Note]<br />
 Deprecato in Windows Vista e versioni successive di Windows.
@@ -653,7 +653,7 @@ Deprecato in Windows Vista e versioni successive di Windows.
 </tr>
 <tr class="even">
 <td><span id="ERROR_IPXCP_NO_DIALIN_CONFIGURED"></span><span id="error_ipxcp_no_dialin_configured"></span><dl> <dt><strong>ERROR_IPXCP_NO_DIALIN_CONFIGURED</strong></dt> <dt>725</dt> </dl></td>
-<td>Il protocollo IPX non è in grado di connettersi al modem (o a un altro dispositivo di connessione) perché il computer non è configurato per la composizione in (il router IPX non è installato).<br/>
+<td>Il protocollo IPX non è in grado di connettersi al modem (o a un altro dispositivo di connessione) perché questo computer non è configurato per la chiamata in (il router IPX non è installato).<br/>
 <blockquote>
 [!Note]<br />
 Deprecato in Windows Vista e versioni successive di Windows.
@@ -696,7 +696,7 @@ Deprecato in Windows Vista e versioni successive di Windows.
 </tr>
 <tr class="odd">
 <td><span id="ERROR_PPP_NOT_CONVERGING"></span><span id="error_ppp_not_converging"></span><dl> <dt><strong>ERROR_PPP_NOT_CONVERGING</strong></dt> <dt>732</dt> </dl></td>
-<td>La negoziazione PPP non è in convergenza.<br/></td>
+<td>La negoziazione PPP non è convergenza.<br/></td>
 </tr>
 <tr class="even">
 <td><span id="ERROR_PPP_CP_REJECTED"></span><span id="error_ppp_cp_rejected"></span><dl> <dt><strong>ERROR_PPP_CP_REJECTED</strong></dt> <dt>733</dt> </dl></td>
@@ -934,7 +934,7 @@ Deprecato in Windows Vista e versioni successive di Windows.
 </tr>
 <tr class="odd">
 <td><span id="ERROR_TEMPFAILURE"></span><span id="error_tempfailure"></span><dl> <dt><strong>ERROR_TEMPFAILURE</strong></dt> <dt>774</dt> </dl></td>
-<td>Il tentativo di connessione non è riuscito a causa di un errore temporaneo. Provare a eseguire di nuovo la connessione.<br/></td>
+<td>Tentativo di connessione non riuscito a causa di un errore temporaneo. Provare a eseguire di nuovo la connessione.<br/></td>
 </tr>
 <tr class="even">
 <td><span id="ERROR_BLOCKED"></span><span id="error_blocked"></span><dl> <dt><strong>ERROR_BLOCKED</strong></dt> <dt>775</dt> </dl></td>
@@ -954,7 +954,7 @@ Deprecato in Windows Vista e versioni successive di Windows.
 </tr>
 <tr class="even">
 <td><span id="ERROR_SMART_CARD_REQUIRED"></span><span id="error_smart_card_required"></span><dl> <dt><strong>ERROR_SMART_CARD_REQUIRED</strong></dt> <dt>779</dt> </dl></td>
-<td>Per effettuare la connessione remota usando questa connessione, è necessario usare un smart card.<br/>
+<td>Per usare questa connessione, è necessario usare un smart card.<br/>
 <blockquote>
 [!Note]<br />
 Deprecato in Windows Vista e versioni successive di Windows.
@@ -980,23 +980,23 @@ Deprecato in Windows Vista e versioni successive di Windows.
 </tr>
 <tr class="even">
 <td><span id="ERROR_SHARING_NO_PRIVATE_LAN"></span><span id="error_sharing_no_private_lan"></span><dl> <dt><strong>ERROR_SHARING_NO_PRIVATE_LAN</strong></dt> <dt>783</dt> </dl></td>
-<td>La Condivisione connessione Internet non può essere abilitata. La connessione LAN selezionata come rete privata non è presente o è disconnessa dalla rete. Assicurarsi che la scheda LAN sia connessa prima di abilitare Condivisione connessione Internet. <br/></td>
+<td>Condivisione connessione Internet non può essere abilitata. La connessione LAN selezionata come rete privata non è presente o è disconnessa dalla rete. Assicurarsi che la scheda LAN sia connessa prima di abilitare Condivisione connessione Internet. <br/></td>
 </tr>
 <tr class="odd">
 <td><span id="ERROR_NO_DIFF_USER_AT_LOGON"></span><span id="error_no_diff_user_at_logon"></span><dl> <dt><strong>ERROR_NO_DIFF_USER_AT_LOGON</strong></dt> <dt>784</dt> </dl></td>
-<td>Non è possibile effettuare chiamate tramite questa connessione al momento dell'accesso perché è configurata per l'uso di un nome utente diverso da quello nel smart card. Se si vuole usare questa connessione al momento dell'accesso, è necessario configurarla per l'uso del nome utente nel smart card. <br/></td>
+<td>Non è possibile usare questa connessione al momento dell'accesso perché è configurata per l'uso di un nome utente diverso da quello nel smart card. Se si desidera utilizzare questa connessione al momento dell'accesso, è necessario configurarla per l'utilizzo del nome utente nel smart card. <br/></td>
 </tr>
 <tr class="even">
 <td><span id="ERROR_NO_REG_CERT_AT_LOGON"></span><span id="error_no_reg_cert_at_logon"></span><dl> <dt><strong>ERROR_NO_REG_CERT_AT_LOGON</strong></dt> <dt>785</dt> </dl></td>
-<td>Non è possibile chiamare usando questa connessione al momento dell'accesso perché non è configurata per l'uso di un smart card. Se si vuole usarlo al momento dell'accesso, è necessario modificare le proprietà di questa connessione in modo che usi un smart card. <br/></td>
+<td>Non è possibile usare questa connessione al momento dell'accesso perché non è configurata per l'uso di un smart card. Se si desidera utilizzarlo al momento dell'accesso, è necessario modificare le proprietà di questa connessione in modo che usi un smart card. <br/></td>
 </tr>
 <tr class="odd">
 <td><span id="ERROR_OAKLEY_NO_CERT"></span><span id="error_oakley_no_cert"></span><dl> <dt><strong>ERROR_OAKLEY_NO_CERT</strong></dt> <dt>786</dt> </dl></td>
-<td>Il tentativo di connessione L2TP non è riuscito perché nel computer non è presente alcun certificato computer valido per l'autenticazione di sicurezza. <br/></td>
+<td>Il tentativo di connessione L2TP non è riuscito perché nel computer non è presente alcun certificato del computer valido per l'autenticazione di sicurezza. <br/></td>
 </tr>
 <tr class="even">
 <td><span id="ERROR_OAKLEY_AUTH_FAIL"></span><span id="error_oakley_auth_fail"></span><dl> <dt><strong>ERROR_OAKLEY_AUTH_FAIL</strong></dt> <dt>787</dt> </dl></td>
-<td>Il tentativo di connessione L2TP non è riuscito perché il livello di sicurezza non è in grado di autenticare il computer remoto. <br/></td>
+<td>Il tentativo di connessione L2TP non è riuscito perché il livello di sicurezza non è stato in grado di autenticare il computer remoto. <br/></td>
 </tr>
 <tr class="odd">
 <td><span id="ERROR_OAKLEY_ATTRIB_FAIL"></span><span id="error_oakley_attrib_fail"></span><dl> <dt><strong>ERROR_OAKLEY_ATTRIB_FAIL</strong></dt> <dt>788</dt> </dl></td>
@@ -1004,7 +1004,7 @@ Deprecato in Windows Vista e versioni successive di Windows.
 </tr>
 <tr class="even">
 <td><span id="ERROR_OAKLEY_GENERAL_PROCESSING"></span><span id="error_oakley_general_processing"></span><dl> <dt><strong>ERROR_OAKLEY_GENERAL_PROCESSING</strong></dt> <dt>789</dt> </dl></td>
-<td>Il tentativo di connessione L2TP non è riuscito perché il livello di sicurezza ha rilevato un errore di elaborazione durante le negoziazioni iniziali con il computer remoto. <br/></td>
+<td>Il tentativo di connessione L2TP non è riuscito perché il livello di sicurezza ha rilevato un errore di elaborazione durante la negoziazione iniziale con il computer remoto. <br/></td>
 </tr>
 <tr class="odd">
 <td><span id="ERROR_OAKLEY_NO_PEER_CERT"></span><span id="error_oakley_no_peer_cert"></span><dl> <dt><strong>ERROR_OAKLEY_NO_PEER_CERT</strong></dt> <dt>790</dt> </dl></td>
@@ -1016,7 +1016,7 @@ Deprecato in Windows Vista e versioni successive di Windows.
 </tr>
 <tr class="odd">
 <td><span id="ERROR_OAKLEY_TIMED_OUT"></span><span id="error_oakley_timed_out"></span><dl> <dt><strong>ERROR_OAKLEY_TIMED_OUT</strong></dt> <dt>792</dt> </dl></td>
-<td>Il tentativo di connessione L2TP non è riuscito perché si è verificata una negoziazione di sicurezza. <br/></td>
+<td>Tentativo di connessione L2TP non riuscito a causa del timeout della negoziazione di sicurezza. <br/></td>
 </tr>
 <tr class="even">
 <td><span id="ERROR_OAKLEY_ERROR"></span><span id="error_oakley_error"></span><dl> <dt><strong>ERROR_OAKLEY_ERROR</strong></dt> <dt>793</dt> </dl></td>
@@ -1024,15 +1024,15 @@ Deprecato in Windows Vista e versioni successive di Windows.
 </tr>
 <tr class="odd">
 <td><span id="ERROR_UNKNOWN_FRAMED_PROTOCOL"></span><span id="error_unknown_framed_protocol"></span><dl> <dt><strong>ERROR_UNKNOWN_FRAMED_PROTOCOL</strong></dt> <dt>794</dt> </dl></td>
-<td>L'attributo RADIUS del protocollo con frame per questo utente non è PPP. <br/></td>
+<td>L'attributo RADIUS del protocollo frame per questo utente non è PPP. <br/></td>
 </tr>
 <tr class="even">
 <td><span id="ERROR_WRONG_TUNNEL_TYPE"></span><span id="error_wrong_tunnel_type"></span><dl> <dt><strong>ERROR_WRONG_TUNNEL_TYPE</strong></dt> <dt>795</dt> </dl></td>
-<td>L Tunnel di tipo RADIUS per questo utente non è corretto. <br/></td>
+<td>L Tunnel'attributo RADIUS di tipo specificato per questo utente non è corretto. <br/></td>
 </tr>
 <tr class="odd">
 <td><span id="ERROR_UNKNOWN_SERVICE_TYPE"></span><span id="error_unknown_service_type"></span><dl> <dt><strong>ERROR_UNKNOWN_SERVICE_TYPE</strong></dt> <dt>796</dt> </dl></td>
-<td>L'attributo RADIUS del tipo di servizio per questo utente non è né incorniciato né in frame di callback. <br/></td>
+<td>L'attributo RADIUS del tipo di servizio per questo utente non è né con frame né con callback. <br/></td>
 </tr>
 <tr class="even">
 <td><span id="ERROR_CONNECTING_DEVICE_NOT_FOUND"></span><span id="error_connecting_device_not_found"></span><dl> <dt><strong>ERROR_CONNECTING_DEVICE_NOT_FOUND</strong></dt> <dt>797</dt> </dl></td>
@@ -1040,11 +1040,11 @@ Deprecato in Windows Vista e versioni successive di Windows.
 </tr>
 <tr class="odd">
 <td><span id="ERROR_NO_EAPTLS_CERTIFICATE"></span><span id="error_no_eaptls_certificate"></span><dl> <dt><strong>ERROR_NO_EAPTLS_CERTIFICATE</strong></dt> <dt>798</dt> </dl></td>
-<td>Impossibile trovare un certificato che può essere usato con il protocollo EAP (Extensible Authentication Protocol). <br/></td>
+<td>Non è stato possibile trovare un certificato che può essere usato con il protocollo EAP (Extensible Authentication Protocol). <br/></td>
 </tr>
 <tr class="even">
 <td><span id="ERROR_SHARING_HOST_ADDRESS_CONFLICT"></span><span id="error_sharing_host_address_conflict"></span><dl> <dt><strong>ERROR_SHARING_HOST_ADDRESS_CONFLICT</strong></dt> <dt>799</dt> </dl></td>
-<td>Condivisione connessione Internet (ICS) non può essere abilitato a causa di un conflitto di indirizzi IP nella rete. ICS richiede che l'host sia configurato per l'uso <strong>di 192.168.0.1.</strong> Assicurarsi che nessun altro client nella rete sia configurato per l'uso <strong>di 192.168.0.1</strong>.<br/>
+<td>Condivisione connessione Internet (ICS) non può essere abilitato a causa di un conflitto di indirizzi IP nella rete. ICS richiede che l'host sia configurato per <strong>l'uso di 192.168.0.1.</strong> Assicurarsi che nessun altro client nella rete sia configurato per l'uso <strong>di 192.168.0.1</strong>.<br/>
 <blockquote>
 [!Note]<br />
 Supportato in Windows XP e versioni successive di Windows.
@@ -1067,7 +1067,7 @@ Supportato in Windows XP e versioni successive di Windows.
 </tr>
 <tr class="even">
 <td><span id="ERROR_VALIDATING_SERVER_CERT"></span><span id="error_validating_server_cert"></span><dl> <dt><strong>ERROR_VALIDATING_SERVER_CERT</strong></dt> <dt>801</dt> </dl></td>
-<td>Questa connessione è configurata per convalidare l'identità del server di accesso, ma Windows il certificato digitale inviato dal server.<br/>
+<td>Questa connessione è configurata per convalidare l'identità del server di accesso, Windows non può verificare il certificato digitale inviato dal server.<br/>
 <blockquote>
 [!Note]<br />
 Supportato in Windows XP e versioni successive di Windows.
@@ -1076,7 +1076,7 @@ Supportato in Windows XP e versioni successive di Windows.
 </tr>
 <tr class="odd">
 <td><span id="ERROR_READING_SCARD"></span><span id="error_reading_scard"></span><dl> <dt><strong>ERROR_READING_SCARD</strong></dt> <dt>802</dt> </dl></td>
-<td>La scheda fornita non è stata riconosciuta. Verificare che la scheda sia inserita correttamente e si adatti in modo sicuro.<br/>
+<td>La scheda fornita non è stata riconosciuta. Verificare che la scheda sia inserita correttamente e che si adatti in modo sicuro.<br/>
 <blockquote>
 [!Note]<br />
 Supportato in Windows XP con SP1 e versioni successive di Windows.
@@ -1085,7 +1085,7 @@ Supportato in Windows XP con SP1 e versioni successive di Windows.
 </tr>
 <tr class="even">
 <td><span id="ERROR_INVALID_PEAP_COOKIE_CONFIG"></span><span id="error_invalid_peap_cookie_config"></span><dl> <dt><strong>ERROR_INVALID_PEAP_COOKIE_CONFIG</strong></dt> <dt>803</dt> </dl></td>
-<td>La configurazione PEAP archiviata nel cookie di sessione non corrisponde alla configurazione della sessione corrente.<br/>
+<td>La configurazione PEAP archiviata nel cookie di sessione non corrisponde alla configurazione di sessione corrente.<br/>
 <blockquote>
 [!Note]<br />
 Supportato in Windows XP con SP1 e versioni successive di Windows.
@@ -1103,7 +1103,7 @@ Supportato in Windows XP con SP1 e versioni successive di Windows.
 </tr>
 <tr class="even">
 <td><span id="ERROR_INVALID_MSCHAPV2_CONFIG"></span><span id="error_invalid_mschapv2_config"></span><dl> <dt><strong>ERROR_INVALID_MSCHAPV2_CONFIG</strong></dt> <dt>805</dt> </dl></td>
-<td>Non è possibile chiamare usando questa connessione al momento dell'accesso perché è configurata per l'uso delle credenziali dell'utente attualmente connesso.<br/>
+<td>Non è possibile usare questa connessione al momento dell'accesso perché è configurata per l'uso delle credenziali dell'utente attualmente connesso.<br/>
 <blockquote>
 [!Note]<br />
 Supportato in Windows XP con SP1 e versioni successive di Windows.
@@ -1121,7 +1121,7 @@ Supportato in Windows Vista e versioni successive di Windows.
 </tr>
 <tr class="even">
 <td><span id="ERROR_VPN_DISCONNECT"></span><span id="error_vpn_disconnect"></span><dl> <dt><strong>ERROR_VPN_DISCONNECT</strong></dt> <dt>807</dt> </dl></td>
-<td>La connessione di rete tra il computer e il server VPN è stata interrotta. Questo problema può essere causato da un problema nella trasmissione VPN ed è in genere il risultato della latenza di Internet o semplicemente del fatto che il server VPN ha raggiunto la capacità. Provare a riconnettersi al server VPN.<br/>
+<td>La connessione di rete tra il computer e il server VPN è stata interrotta. Ciò può essere causato da un problema nella trasmissione VPN ed è in genere il risultato della latenza di Internet o semplicemente del fatto che il server VPN ha raggiunto la capacità. Provare a riconnettersi al server VPN.<br/>
 <blockquote>
 [!Note]<br />
 Supportato in Windows Vista e versioni successive di Windows.
@@ -1130,7 +1130,7 @@ Supportato in Windows Vista e versioni successive di Windows.
 </tr>
 <tr class="odd">
 <td><span id="ERROR_VPN_REFUSED"></span><span id="error_vpn_refused"></span><dl> <dt><strong>ERROR_VPN_REFUSED</strong></dt> <dt>808</dt> </dl></td>
-<td>Impossibile stabilire la connessione di rete tra il computer e il server VPN perché il server remoto ha rifiutato la connessione. Ciò è in genere causato da una mancata corrispondenza tra la configurazione del server e le impostazioni di connessione.<br/>
+<td>Non è stato possibile stabilire la connessione di rete tra il computer e il server VPN perché il server remoto ha rifiutato la connessione. Ciò è in genere causato da una mancata corrispondenza tra la configurazione del server e le impostazioni di connessione.<br/>
 <blockquote>
 [!Note]<br />
 Supportato in Windows Vista e versioni successive di Windows.
@@ -1157,7 +1157,7 @@ Supportato in Windows Vista e versioni successive di Windows
 </tr>
 <tr class="even">
 <td><span id="ERROR_VPN_BAD_PSK"></span><span id="error_vpn_bad_psk"></span><dl> <dt><strong>ERROR_VPN_BAD_PSK</strong></dt> <dt>811</dt> </dl></td>
-<td>Non è stato possibile stabilire la connessione di rete tra il computer e il server VPN perché il server remoto non risponde. Ciò è in genere causato da un problema di chiave precondifazione tra il client e il server. Una chiave precondicondita viene usata per garantire di essere chi si dice di essere in un ciclo di comunicazione di sicurezza IP (IPSec).<br/>
+<td>Non è stato possibile stabilire la connessione di rete tra il computer e il server VPN perché il server remoto non risponde. Ciò è in genere causato da un problema di chiave precondifazione tra il client e il server. Una chiave precondi condita viene usata per garantire di essere chi si dice di essere in un ciclo di comunicazione di sicurezza IP (IPSec).<br/>
 <blockquote>
 [!Note]<br />
 Supportato in Windows Vista e versioni successive di Windows.
@@ -1193,7 +1193,7 @@ Supportato in Windows Vista e versioni successive di Windows.
 </tr>
 <tr class="even">
 <td><span id="ERROR_BROADBAND_TIMEOUT"></span><span id="error_broadband_timeout"></span><dl> <dt><strong>ERROR_BROADBAND_TIMEOUT</strong></dt> <dt>815</dt> </dl></td>
-<td>Impossibile stabilire la connessione di rete a banda larga nel computer perché il server remoto non risponde. Il problema potrebbe essere causato da un valore non valido per il campo "Nome servizio" per la connessione.<br/>
+<td>Impossibile stabilire la connessione di rete a banda larga nel computer perché il server remoto non risponde. Il problema potrebbe essere causato da un valore non valido per il campo "Nome servizio" per questa connessione.<br/>
 <blockquote>
 [!Note]<br />
 Supportato in Windows Vista e versioni successive di Windows.
@@ -1633,7 +1633,7 @@ I codici di errore dell'API routing e accesso remoto (RRAS) seguenti sono defini
 </tr>
 <tr class="even">
 <td><span id="ERROR_PROTOCOL_STOP_PENDING"></span><span id="error_protocol_stop_pending"></span><dl> <dt><strong>ERROR_PROTOCOL_STOP_PENDING</strong></dt> <dt>907</dt> </dl></td>
-<td>Il protocollo specificato è in corso di arresto.<br/></td>
+<td>Il protocollo specificato è in arresto.<br/></td>
 </tr>
 <tr class="odd">
 <td><span id="ERROR_INTERFACE_CONNECTED"></span><span id="error_interface_connected"></span><dl> <dt><strong>ERROR_INTERFACE_CONNECTED</strong></dt> <dt>908</dt> </dl></td>
@@ -1657,11 +1657,11 @@ I codici di errore dell'API routing e accesso remoto (RRAS) seguenti sono defini
 </tr>
 <tr class="even">
 <td><span id="ERROR_NOT_CLIENT_PORT"></span><span id="error_not_client_port"></span><dl> <dt><strong>ERROR_NOT_CLIENT_PORT</strong></dt> <dt>913</dt> </dl></td>
-<td>Un client di Accesso remoto ha tentato di connettersi tramite una porta riservata solo ai router.<br/></td>
+<td>Un client di accesso remoto ha tentato di connettersi tramite una porta riservata solo ai router.<br/></td>
 </tr>
 <tr class="odd">
 <td><span id="ERROR_NOT_ROUTER_PORT"></span><span id="error_not_router_port"></span><dl> <dt><strong>ERROR_NOT_ROUTER_PORT</strong></dt> <dt>914</dt> </dl></td>
-<td>Un router di connessione a richiesta ha tentato di connettersi su una porta riservata solo ai client di Accesso remoto.<br/></td>
+<td>Un router di connessione a richiesta ha tentato di connettersi tramite una porta riservata solo ai client di accesso remoto.<br/></td>
 </tr>
 <tr class="even">
 <td><span id="ERROR_CLIENT_INTERFACE_ALREADY_EXISTS"></span><span id="error_client_interface_already_exists"></span><dl> <dt><strong>ERROR_CLIENT_INTERFACE_ALREADY_EXISTS</strong></dt> <dt>915</dt> </dl></td>
@@ -1669,7 +1669,7 @@ I codici di errore dell'API routing e accesso remoto (RRAS) seguenti sono defini
 </tr>
 <tr class="odd">
 <td><span id="ERROR_INTERFACE_DISABLED"></span><span id="error_interface_disabled"></span><dl> <dt><strong>ERROR_INTERFACE_DISABLED</strong></dt> <dt>916</dt> </dl></td>
-<td>L'interfaccia è in uno stato disabilitato.<br/></td>
+<td>L'interfaccia è in stato disabilitato.<br/></td>
 </tr>
 <tr class="even">
 <td><span id="ERROR_AUTH_PROTOCOL_REJECTED"></span><span id="error_auth_protocol_rejected"></span><dl> <dt><strong>ERROR_AUTH_PROTOCOL_REJECTED</strong></dt> <dt>917</dt> </dl></td>
@@ -1681,7 +1681,7 @@ I codici di errore dell'API routing e accesso remoto (RRAS) seguenti sono defini
 </tr>
 <tr class="even">
 <td><span id="ERROR_PEER_REFUSED_AUTH"></span><span id="error_peer_refused_auth"></span><dl> <dt><strong>ERROR_PEER_REFUSED_AUTH</strong></dt> <dt>919</dt> </dl></td>
-<td>Non è stato possibile stabilire la connessione perché il protocollo di autenticazione usato dal server RAS/VPN per verificare che il nome utente e la password non siano corrispondenti alle impostazioni nel profilo di connessione.<br/></td>
+<td>Impossibile stabilire la connessione perché il protocollo di autenticazione usato dal server RAS/VPN per verificare il nome utente e la password non può corrispondere alle impostazioni nel profilo di connessione.<br/></td>
 </tr>
 <tr class="odd">
 <td><span id="ERROR_REMOTE_NO_DIALIN_PERMISSION"></span><span id="error_remote_no_dialin_permission"></span><dl> <dt><strong>ERROR_REMOTE_NO_DIALIN_PERMISSION</strong></dt> <dt>920</dt> </dl></td>
@@ -1697,11 +1697,11 @@ I codici di errore dell'API routing e accesso remoto (RRAS) seguenti sono defini
 </tr>
 <tr class="even">
 <td><span id="ERROR_REMOTE_RESTRICTED_LOGON_HOURS"></span><span id="error_remote_restricted_logon_hours"></span><dl> <dt><strong>ERROR_REMOTE_RESTRICTED_LOGON_HOURS</strong></dt> <dt>923</dt> </dl></td>
-<td>L'account remoto non è autorizzato ad accedere a questa ora del giorno.<br/></td>
+<td>All'account remoto non è consentito l'accesso in questa ora del giorno.<br/></td>
 </tr>
 <tr class="odd">
 <td><span id="ERROR_REMOTE_AUTHENTICATION_FAILURE"></span><span id="error_remote_authentication_failure"></span><dl> <dt><strong>ERROR_REMOTE_AUTHENTICATION_FAILURE</strong></dt> <dt>924</dt> </dl></td>
-<td>Accesso negato al peer remoto perché il nome utente, la password o entrambi non sono validi nel dominio.<br/></td>
+<td>L'accesso è stato negato al peer remoto perché il nome utente, la password o entrambi non sono validi nel dominio.<br/></td>
 </tr>
 <tr class="even">
 <td><span id="ERROR_INTERFACE_HAS_NO_DEVICES"></span><span id="error_interface_has_no_devices"></span><dl> <dt><strong>ERROR_INTERFACE_HAS_NO_DEVICES</strong></dt> <dt>925</dt> </dl></td>
@@ -1717,7 +1717,7 @@ I codici di errore dell'API routing e accesso remoto (RRAS) seguenti sono defini
 </tr>
 <tr class="odd">
 <td><span id="ERROR_SERVICE_IS_PAUSED"></span><span id="error_service_is_paused"></span><dl> <dt><strong>ERROR_SERVICE_IS_PAUSED</strong></dt> <dt>928</dt> </dl></td>
-<td>Il servizio Demand Dial è in stato di sospensione.<br/></td>
+<td>Il servizio Connessione a richiesta è in stato di sospensione.<br/></td>
 </tr>
 <tr class="even">
 <td><span id="ERROR_INTERFACE_DISCONNECTED"></span><span id="error_interface_disconnected"></span><dl> <dt><strong>ERROR_INTERFACE_DISCONNECTED</strong></dt> <dt>929</dt> </dl></td>
@@ -1725,11 +1725,11 @@ I codici di errore dell'API routing e accesso remoto (RRAS) seguenti sono defini
 </tr>
 <tr class="odd">
 <td><span id="ERROR_AUTH_SERVER_TIMEOUT"></span><span id="error_auth_server_timeout"></span><dl> <dt><strong>ERROR_AUTH_SERVER_TIMEOUT</strong></dt> <dt>930</dt> </dl></td>
-<td>Il server di autenticazione non ha risposto alle richieste di autenticazione in modo orario.<br/></td>
+<td>Il server di autenticazione non ha risposto in modo orario alle richieste di autenticazione.<br/></td>
 </tr>
 <tr class="even">
 <td><span id="ERROR_PORT_LIMIT_REACHED"></span><span id="error_port_limit_reached"></span><dl> <dt><strong>ERROR_PORT_LIMIT_REACHED</strong></dt> <dt>931</dt> </dl></td>
-<td>È stato raggiunto il numero massimo di porte consentite per l'uso nella connessione multi-collegamento.<br/></td>
+<td>È stato raggiunto il numero massimo di porte consentite per l'uso nella connessione multi-collegato.<br/></td>
 </tr>
 <tr class="odd">
 <td><span id="ERROR_PPP_SESSION_TIMEOUT"></span><span id="error_ppp_session_timeout"></span><dl> <dt><strong>ERROR_PPP_SESSION_TIMEOUT</strong></dt> <dt>932</dt> </dl></td>
@@ -1749,7 +1749,7 @@ I codici di errore dell'API routing e accesso remoto (RRAS) seguenti sono defini
 </tr>
 <tr class="odd">
 <td><span id="ERROR_BAP_DISCONNECTED"></span><span id="error_bap_disconnected"></span><dl> <dt><strong>ERROR_BAP_DISCONNECTED</strong></dt> <dt>936</dt> </dl></td>
-<td>La porta è stata disconnessa a causa dei criteri DELP (Bandwidth Allocation Protocol).<br/></td>
+<td>La porta è stata disconnessa a causa dei criteri BAP (Bandwidth Allocation Protocol).<br/></td>
 </tr>
 <tr class="even">
 <td><span id="ERROR_USER_LIMIT"></span><span id="error_user_limit"></span><dl> <dt><strong>ERROR_USER_LIMIT</strong></dt> <dt>937</dt> </dl></td>
@@ -1761,11 +1761,11 @@ I codici di errore dell'API routing e accesso remoto (RRAS) seguenti sono defini
 </tr>
 <tr class="even">
 <td><span id="ERROR_INVALID_RADIUS_RESPONSE"></span><span id="error_invalid_radius_response"></span><dl> <dt><strong>ERROR_INVALID_RADIUS_RESPONSE</strong></dt> <dt>939</dt> </dl></td>
-<td>La risposta ricevuta dal server di autenticazione RADIUS non è valida. Assicurarsi che la password segreta con distinzione tra maiuscole e minuscole per il server RADIUS sia impostata correttamente.<br/></td>
+<td>La risposta ricevuta dal server di autenticazione RADIUS non è valida. Assicurarsi che la password del segreto con distinzione tra maiuscole e minuscole per il server RADIUS sia impostata correttamente.<br/></td>
 </tr>
 <tr class="odd">
 <td><span id="ERROR_DIALIN_HOURS_RESTRICTION"></span><span id="error_dialin_hours_restriction"></span><dl> <dt><strong>ERROR_DIALIN_HOURS_RESTRICTION</strong></dt> <dt>940</dt> </dl></td>
-<td>Al momento non si dispone dell'autorizzazione per connettersi.<br/></td>
+<td>Non si dispone dell'autorizzazione per la connessione in questo momento.<br/></td>
 </tr>
 <tr class="even">
 <td><span id="ERROR_ALLOWED_PORT_TYPE_RESTRICTION"></span><span id="error_allowed_port_type_restriction"></span><dl> <dt><strong>ERROR_ALLOWED_PORT_TYPE_RESTRICTION</strong></dt> <dt>941</dt> </dl></td>
@@ -1773,15 +1773,15 @@ I codici di errore dell'API routing e accesso remoto (RRAS) seguenti sono defini
 </tr>
 <tr class="odd">
 <td><span id="ERROR_AUTH_PROTOCOL_RESTRICTION"></span><span id="error_auth_protocol_restriction"></span><dl> <dt><strong>ERROR_AUTH_PROTOCOL_RESTRICTION</strong></dt> <dt>942</dt> </dl></td>
-<td>Non è stato possibile stabilire la connessione perché il metodo di autenticazione usato dal profilo di connessione non è consentito per l'uso da parte di criteri di accesso configurati nel server RAS/VPN. In particolare, ciò potrebbe essere dovuto a differenze di configurazione tra il metodo di autenticazione selezionato nel server RAS/VPN e i criteri di accesso configurati.<br/></td>
+<td>Impossibile stabilire la connessione perché il metodo di autenticazione usato dal profilo di connessione non è consentito per l'uso da parte di criteri di accesso configurati nel server RAS/VPN. In particolare, ciò potrebbe essere dovuto a differenze di configurazione tra il metodo di autenticazione selezionato nel server RAS/VPN e i criteri di accesso configurati.<br/></td>
 </tr>
 <tr class="even">
 <td><span id="ERROR_BAP_REQUIRED"></span><span id="error_bap_required"></span><dl> <dt><strong>ERROR_BAP_REQUIRED</strong></dt> <dt>943</dt> </dl></td>
-<td>BAP è necessario per questo utente.<br/></td>
+<td>BAP è obbligatorio per questo utente.<br/></td>
 </tr>
 <tr class="odd">
 <td><span id="ERROR_DIALOUT_HOURS_RESTRICTION"></span><span id="error_dialout_hours_restriction"></span><dl> <dt><strong>ERROR_DIALOUT_HOURS_RESTRICTION</strong></dt> <dt>944</dt> </dl></td>
-<td>Al momento non è consentita la connessione dell'interfaccia.<br/></td>
+<td>L'interfaccia non è consentita per la connessione in questo momento.<br/></td>
 </tr>
 <tr class="even">
 <td><span id="ERROR_ROUTER_CONFIG_INCOMPATIBLE"></span><span id="error_router_config_incompatible"></span><dl> <dt><strong>ERROR_ROUTER_CONFIG_INCOMPATIBLE</strong></dt> <dt>945</dt> </dl></td>
