@@ -1,23 +1,23 @@
 ---
-title: IMUL (SM4-ASM)
-description: Intero con segno Multiply.
+title: imul (sm4 - asm)
+description: Numero intero con segno moltiplicato.
 ms.assetid: DB95A38F-54E4-4BB6-81DF-CFFEBB4D425B
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 997f62fc389ad1e0fb6b23dd6c419ff8b3933b41
-ms.sourcegitcommit: fe03c5d92ca6a0d66a114b2303e99c0a19241ffb
+ms.openlocfilehash: 87eabcc07dc5c6a662494c71a26c5f60e5fa1053265e3740ad3605ed685771a0
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/20/2019
-ms.locfileid: "103719423"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118986491"
 ---
-# <a name="imul-sm4---asm"></a>IMUL (SM4-ASM)
+# <a name="imul-sm4---asm"></a>imul (sm4 - asm)
 
-Intero con segno Multiply.
+Numero intero con segno moltiplicato.
 
 
 
-| IMUL destHI \[ . mask \] , destLO \[ . mask \] , \[ - \] src0 \[ . Swizzle \] , \[ - \] src1 \[ . Swizzle\] |
+| imul destHI \[ \] .mask, destLO \[ \] .mask, \[ - \] src0 \[ .swizzle, \] \[ - \] src1 \[ .swizzle\] |
 |-------------------------------------------------------------------------------------|
 
 
@@ -28,10 +28,10 @@ Intero con segno Multiply.
 
 | Elemento                                                                                           | Descrizione                                                      |
 |------------------------------------------------------------------------------------------------|------------------------------------------------------------------|
-| <span id="destHI"></span><span id="desthi"></span><span id="DESTHI"></span>*destHI*<br/> | \[nell' \] indirizzo dei bit 32 alti del risultato.<br/> |
-| <span id="destLO"></span><span id="destlo"></span><span id="DESTLO"></span>*destLO*<br/> | \[nell' \] indirizzo dei bit 32 bassi del risultato.<br/>  |
-| <span id="src0"></span><span id="SRC0"></span>*src0*<br/>                                | \[nel \] valore da moltiplicare per *src1*.<br/>             |
-| <span id="src1"></span><span id="SRC1"></span>*src1*<br/>                                | \[nel \] valore da moltiplicare per *src0*.<br/>             |
+| <span id="destHI"></span><span id="desthi"></span><span id="DESTHI"></span>*destHI*<br/> | \[in \] Indirizzo dei 32 bit alti del risultato.<br/> |
+| <span id="destLO"></span><span id="destlo"></span><span id="DESTLO"></span>*destLO*<br/> | \[in \] Indirizzo dei 32 bit bassi del risultato.<br/>  |
+| <span id="src0"></span><span id="SRC0"></span>*src0*<br/>                                | \[in \] Valore da moltiplicare con *src1*.<br/>             |
+| <span id="src1"></span><span id="SRC1"></span>*src1*<br/>                                | \[in \] Valore da moltiplicare con *src0*.<br/>             |
 
 
 
@@ -39,11 +39,11 @@ Intero con segno Multiply.
 
 ## <a name="remarks"></a>Commenti
 
-Moltiplicazione componente per gli operandi a 32 bit *src0* e *src1* (entrambi firmati), producendo il risultato corretto a 64 bit completo (per componente). I 32 bit bassi (per componente) sono posizionati in *destLO*. I 32 bit alti (per componente) sono posizionati in *destHI*.
+Moltiplicazione per componente di operandi a 32 bit *src0* e *src1* (entrambi con segno), producendo il risultato completo a 64 bit (per componente) corretto. I 32 bit bassi (per componente) vengono inseriti in *destLO*. I 32 bit alti (per componente) vengono inseriti in *destHI*.
 
-È possibile specificare *destHI* o *destLO* come null anziché specificare un registro, se non sono necessari i bit 32 massimi o bassi del risultato 64 bit.
+È *possibile specificare destHI* o *destLO* come NULL invece di specificare un registro, se i 32 bit alti o bassi del risultato a 64 bit non sono necessari.
 
-Il modificatore negazioni facoltativo negli operandi di origine richiede il complemento di 2 prima di eseguire un'operazione aritmetica.
+Il modificatore di negazione facoltativo sugli operandi di origine accetta il complemento 2 prima di eseguire un'operazione aritmetica.
 
 Questa istruzione si applica alle fasi dello shader seguenti:
 
@@ -57,7 +57,7 @@ Questa istruzione si applica alle fasi dello shader seguenti:
 
  
 
-## <a name="minimum-shader-model"></a>Modello Shader minimo
+## <a name="minimum-shader-model"></a>Modello di shader minimo
 
 Questa funzione è supportata nei modelli shader seguenti.
 
@@ -65,12 +65,12 @@ Questa funzione è supportata nei modelli shader seguenti.
 
 | Modello di shader                                              | Supportato |
 |-----------------------------------------------------------|-----------|
-| [Modello Shader 5](d3d11-graphics-reference-sm5.md)        | sì       |
-| [Modello Shader 4,1](dx-graphics-hlsl-sm4.md)              | sì       |
-| [Modello Shader 4](dx-graphics-hlsl-sm4.md)                | sì       |
+| [Modello shader 5](d3d11-graphics-reference-sm5.md)        | sì       |
+| [Modello shader 4.1](dx-graphics-hlsl-sm4.md)              | sì       |
+| [Modello shader 4](dx-graphics-hlsl-sm4.md)                | sì       |
 | [Shader Model 3 (DirectX HLSL)](dx-graphics-hlsl-sm3.md) | no        |
-| [Shader Model 2 (DirectX HLSL)](dx-graphics-hlsl-sm2.md) | no        |
-| [Shader Model 1 (DirectX HLSL)](dx-graphics-hlsl-sm1.md) | no        |
+| [Modello shader 2 (DirectX HLSL)](dx-graphics-hlsl-sm2.md) | no        |
+| [Modello shader 1 (DirectX HLSL)](dx-graphics-hlsl-sm1.md) | no        |
 
 
 
@@ -80,7 +80,7 @@ Questa funzione è supportata nei modelli shader seguenti.
 
 <dl> <dt>
 
-[Assembly Shader Model 4 (DirectX HLSL)](dx-graphics-hlsl-sm4-asm.md)
+[Shader Model 4 Assembly (DirectX HLSL)](dx-graphics-hlsl-sm4-asm.md)
 </dt> </dl>
 
  

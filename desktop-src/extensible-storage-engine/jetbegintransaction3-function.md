@@ -19,12 +19,12 @@ api_type:
 api_location:
 - ESENT.DLL
 ROBOTS: INDEX,FOLLOW
-ms.openlocfilehash: ed7c963da40f72fb7ea54c5614836a1de81a0b3d
-ms.sourcegitcommit: 9b5faa61c38b2d0c432b7f2dbee8c127b0e28a7e
+ms.openlocfilehash: ca07ad3957efadfb86ac5df9b1994d5c4525c7a2
+ms.sourcegitcommit: 4665ebce0c106bdb52eef36e544280b496b6f50b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/19/2021
-ms.locfileid: "122479237"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "122989044"
 ---
 # <a name="jetbegintransaction3-function"></a>Funzione JetBeginTransaction3
 
@@ -58,7 +58,7 @@ Identificatore facoltativo fornito dall'utente per identificare la transazione.
 Gruppo di bit che specifica zero o più valori dell'opzione di chiamata elencati nella tabella seguente.
 
 
-| <p>valore</p> | <p>Significato</p> | 
+| <p>Valore</p> | <p>Significato</p> | 
 |--------------|----------------|
 | <p>JET_bitTransactionReadOnly</p> | <p>La transazione non modificherà il database. Se si tenta di eseguire un aggiornamento, l'operazione avrà esito negativo con JET_errTransReadOnly di risposta. Questa opzione viene ignorata a meno che non venga richiesta quando la sessione specificata non è già in una transazione. Questa opzione è disponibile nelle versioni del Windows operativo a partire da Windows XP.</p> | 
 
@@ -93,7 +93,13 @@ Per altre informazioni sul funzionamento delle transazioni, vedere [JetBeginTran
 #### <a name="requirements"></a>Requisiti
 
 
-| | | <p><strong>Client</strong></p> | <p>Richiede Windows 8.</p> | | <p><strong>Server</strong></p> | <p>Richiede Windows Server 2012.</p> | | <p><strong>Intestazione</strong></p> | <p>Dichiarato in Esent.h.</p> | | <p><strong>Libreria</strong></p> | <p>Usare ESENT.lib.</p> | | <p><strong>DLL</strong></p> | <p>Richiede ESENT.dll.</p> | 
+| Requisito | Valore |
+|------------|----------|
+| <p><strong>Client</strong></p> | <p>Richiede Windows 8.</p> | 
+| <p><strong>Server</strong></p> | <p>Richiede Windows Server 2012.</p> | 
+| <p><strong>Intestazione</strong></p> | <p>Dichiarato in Esent.h.</p> | 
+| <p><strong>Libreria</strong></p> | <p>Usare ESENT.lib.</p> | 
+| <p><strong>DLL</strong></p> | <p>Richiede ESENT.dll.</p> | 
 
 
 

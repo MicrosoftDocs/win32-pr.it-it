@@ -19,12 +19,12 @@ api_type:
 api_location:
 - ESENT.DLL
 ROBOTS: INDEX,FOLLOW
-ms.openlocfilehash: 3dd7faf1a28d6cafe7b33e4df49f32c631bb699e
-ms.sourcegitcommit: 9b5faa61c38b2d0c432b7f2dbee8c127b0e28a7e
+ms.openlocfilehash: f12fc06b915f5462c9209416cf54436ef3d7239b
+ms.sourcegitcommit: 4665ebce0c106bdb52eef36e544280b496b6f50b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/19/2021
-ms.locfileid: "122477527"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "122985684"
 ---
 # <a name="jetresizedatabase-function"></a>Funzione JetResizeDatabase
 
@@ -68,7 +68,7 @@ Puntatore a un numero che riceve le dimensioni del database, in pagine, dopo la 
 Gruppo di bit che specifica zero o più valori elencati nella tabella seguente.
 
 
-| <p>valore</p> | <p>Significato</p> | 
+| <p>Valore</p> | <p>Significato</p> | 
 |--------------|----------------|
 | <p>JET_bitResizeDatabaseOnlyGrow</p> | <p>Aumentare solo le dimensioni del database. Se la chiamata di ridimensionamento compatta il database, non eseguire alcuna operazione.</p> | 
 
@@ -98,7 +98,13 @@ Le dimensioni del file potrebbero non corrispondere al numero di pagine restitui
 #### <a name="requirements"></a>Requisiti
 
 
-| | | <p><strong>Client</strong></p> | <p>Richiede Windows 8.</p> | | <p><strong>Server</strong></p> | <p>Richiede Windows Server 2012.</p> | | <p><strong>Intestazione</strong></p> | <p>Dichiarato in Esent.h.</p> | | <p><strong>Libreria</strong></p> | <p>Usare ESENT.lib.</p> | | <p><strong>DLL</strong></p> | <p>Richiede ESENT.dll.</p> | 
+| Requisito | Valore |
+|------------|----------|
+| <p><strong>Client</strong></p> | <p>Richiede Windows 8.</p> | 
+| <p><strong>Server</strong></p> | <p>Richiede Windows Server 2012.</p> | 
+| <p><strong>Intestazione</strong></p> | <p>Dichiarato in Esent.h.</p> | 
+| <p><strong>Libreria</strong></p> | <p>Usare ESENT.lib.</p> | 
+| <p><strong>DLL</strong></p> | <p>Richiede ESENT.dll.</p> | 
 
 
 

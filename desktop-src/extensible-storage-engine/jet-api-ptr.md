@@ -15,12 +15,12 @@ api_type:
 - COM
 api_location: ''
 ROBOTS: INDEX,FOLLOW
-ms.openlocfilehash: 401c490c667cd8f9842a7ab0429e10a510e3b06e
-ms.sourcegitcommit: 9b5faa61c38b2d0c432b7f2dbee8c127b0e28a7e
+ms.openlocfilehash: ddf50b5bb5e65ca60677f5578170b84f744016e9
+ms.sourcegitcommit: 4665ebce0c106bdb52eef36e544280b496b6f50b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/19/2021
-ms.locfileid: "122466398"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "122985304"
 ---
 # <a name="jet_api_ptr"></a>JET_API_PTR
 
@@ -29,7 +29,7 @@ _**Si applica a:** Windows | Windows Server_
 
 ## <a name="jet_api_ptr"></a>JET_API_PTR
 
-Il **JET_API_PTR** dati contiene un valore integer o puntatore.
+Il **JET_API_PTR** dati contiene un integer o un valore puntatore.
 
 ```cpp
     #if defined(_WIN64)
@@ -45,11 +45,11 @@ Il **JET_API_PTR** dati contiene un valore integer o puntatore.
 
 JET_API_PTR
 
-Come un **DWORD_PTR** di dati, il tipo di dati **JET_API_PTR** è definito come 4 byte in un computer a 32 bit e 8 byte in un computer a 64 bit.
+Analogamente a **un tipo** di dati **DWORD_PTR,** il tipo di dati JET_API_PTR è definito come 4 byte in un computer a 32 bit e 8 byte in un computer a 64 bit.
 
 ### <a name="remarks"></a>Commenti
 
-Il **JET_API_PTR** di dati viene usato per definire i tipi di dati seguenti:
+Il **JET_API_PTR** dati viene usato per definire i tipi di dati seguenti:
 
   - [JET_HANDLE](./jet-handle.md)
 
@@ -64,5 +64,9 @@ Il **JET_API_PTR** di dati viene usato per definire i tipi di dati seguenti:
 ### <a name="requirements"></a>Requisiti
 
 
-| | | <p><strong>Client</strong></p> | <p>Richiede Windows Vista, Windows XP o Windows 2000 Professional.</p> | | <p><strong>Server</strong></p> | <p>Richiede Windows Server 2008, Windows Server 2003 o Windows 2000 Server.</p> | | <p><strong>Intestazione</strong></p> | <p>Dichiarato in Esent.h.</p> | 
+| Requisito | Valore |
+|------------|----------|
+| <p><strong>Client</strong></p> | <p>Richiede Windows Vista, Windows XP o Windows 2000 Professional.</p> | 
+| <p><strong>Server</strong></p> | <p>Richiede Windows Server 2008, Windows Server 2003 o Windows 2000 Server.</p> | 
+| <p><strong>Intestazione</strong></p> | <p>Dichiarato in Esent.h.</p> | 
 

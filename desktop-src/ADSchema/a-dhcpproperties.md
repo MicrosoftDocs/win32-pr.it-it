@@ -1,10 +1,10 @@
 ---
-title: attributo DHCP-Properties
-description: L'attributo DHCP-Properties non è attualmente in uso.
+title: Attributo dhcp-Properties
+description: L'attributo dhcp-Properties non è attualmente usato.
 ms.assetid: bc725fc3-6331-4c88-be60-52f34cd29ec6
 ms.tgt_platform: multiple
 keywords:
-- DHCP-proprietà attributo AD schema
+- Schema AD dell'attributo dhcp-Properties
 - Schema AD dell'attributo dhcpProperties
 topic_type:
 - apiref
@@ -14,28 +14,28 @@ api_type:
 - Schema
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: bab19720d628b0297dec183636f611923ce8c25e
-ms.sourcegitcommit: b77ace27b0432e7cd3863191b11926be032fbe2f
+ms.openlocfilehash: dfcff103184a84a156a3bf2479b52d13fdcda264bf4a3f4b757f852310748de9
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/14/2020
-ms.locfileid: "103875802"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120050041"
 ---
-# <a name="dhcp-properties-attribute"></a>attributo DHCP-Properties
+# <a name="dhcp-properties-attribute"></a>Attributo dhcp-Properties
 
-L'attributo **DHCP-Properties** non è attualmente in uso.
+**L'attributo dhcp-Properties** non è attualmente usato.
 
 
 
 | Voce | Valore |
 |-------------------|-------------------------------------------------------|
-| CN                | Proprietà DHCP                                       |
-| LDAP-Display-Name | dhcpProperties                                        |
+| CN                | dhcp-Properties                                       |
+| Ldap-Display-Name | dhcpProperties                                        |
 | Dimensione              | \-                                                    |
-| Privilegio aggiornamento  | \-                                                    |
+| Privilegio di aggiornamento  | \-                                                    |
 | Frequenza di aggiornamento  | \-                                                    |
 | Attribute-Id      | 1.2.840.113556.1.4.718                                |
-| System-ID-GUID    | 963d2753-48be-11d1-a9c3-0000f80367c1                  |
+| System-Id-Guid    | 963d2753-48be-11d1-a9c3-0000f80367c1                  |
 | Sintassi            | [**Object(Replica-Link)**](s-object-replica-link.md) |
 
 
@@ -58,15 +58,15 @@ L'attributo **DHCP-Properties** non è attualmente in uso.
 | ID collegamento                | \-                                           |
 | MAPI-Id                | \-                                           |
 | System-Only            | Falso                                        |
-| È a valore singolo       | Falso                                        |
+| Is-Single-Valued       | Falso                                        |
 | Indicizzato             | Falso                                        |
 | Nel catalogo globale      | Falso                                        |
-| NT-Security-descrittore | O:BAG: NON VALIDO: S:                                 |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                 |
 | Range-Lower            | \-                                           |
 | Range-Upper            | \-                                           |
 | Search-Flags           | 0x00000000                                   |
 | System-Flags           | 0x00000010                                   |
-| Classi utilizzate in        | [**Classe DHCP**](c-dhcpclass.md)<br/> |
+| Classi usate in        | [**Classe DHCP**](c-dhcpclass.md)<br/> |
 
 
 
@@ -79,15 +79,15 @@ L'attributo **DHCP-Properties** non è attualmente in uso.
 | ID collegamento                | \-                                           |
 | MAPI-Id                | \-                                           |
 | System-Only            | Falso                                        |
-| È a valore singolo       | Falso                                        |
+| Is-Single-Valued       | Falso                                        |
 | Indicizzato             | Falso                                        |
 | Nel catalogo globale      | Falso                                        |
-| NT-Security-descrittore | O:BAG: NON VALIDO: S:                                 |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                 |
 | Range-Lower            | \-                                           |
 | Range-Upper            | \-                                           |
 | Search-Flags           | 0x00000000                                   |
 | System-Flags           | 0x00000010                                   |
-| Classi utilizzate in        | [**Classe DHCP**](c-dhcpclass.md)<br/> |
+| Classi usate in        | [**Classe DHCP**](c-dhcpclass.md)<br/> |
 
 
 
@@ -100,15 +100,15 @@ L'attributo **DHCP-Properties** non è attualmente in uso.
 | ID collegamento                | \-                                           |
 | MAPI-Id                | \-                                           |
 | System-Only            | Falso                                        |
-| È a valore singolo       | Falso                                        |
+| Is-Single-Valued       | Falso                                        |
 | Indicizzato             | Falso                                        |
 | Nel catalogo globale      | Falso                                        |
-| NT-Security-descrittore | O:BAG: NON VALIDO: S:                                 |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                 |
 | Range-Lower            | \-                                           |
 | Range-Upper            | \-                                           |
 | Search-Flags           | 0x00000000                                   |
 | System-Flags           | 0x00000010                                   |
-| Classi utilizzate in        | [**Classe DHCP**](c-dhcpclass.md)<br/> |
+| Classi usate in        | [**Classe DHCP**](c-dhcpclass.md)<br/> |
 
 
 
@@ -121,15 +121,15 @@ L'attributo **DHCP-Properties** non è attualmente in uso.
 | ID collegamento                | \-                                           |
 | MAPI-Id                | \-                                           |
 | System-Only            | Falso                                        |
-| È a valore singolo       | Falso                                        |
+| Is-Single-Valued       | Falso                                        |
 | Indicizzato             | Falso                                        |
 | Nel catalogo globale      | Falso                                        |
-| NT-Security-descrittore | O:BAG: NON VALIDO: S:                                 |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                 |
 | Range-Lower            | \-                                           |
 | Range-Upper            | \-                                           |
 | Search-Flags           | 0x00000000                                   |
 | System-Flags           | 0x00000010                                   |
-| Classi utilizzate in        | [**Classe DHCP**](c-dhcpclass.md)<br/> |
+| Classi usate in        | [**Classe DHCP**](c-dhcpclass.md)<br/> |
 
 
 
@@ -142,15 +142,15 @@ L'attributo **DHCP-Properties** non è attualmente in uso.
 | ID collegamento                | \-                                           |
 | MAPI-Id                | \-                                           |
 | System-Only            | Falso                                        |
-| È a valore singolo       | Falso                                        |
+| Is-Single-Valued       | Falso                                        |
 | Indicizzato             | Falso                                        |
 | Nel catalogo globale      | Falso                                        |
-| NT-Security-descrittore | O:BAG: NON VALIDO: S:                                 |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                 |
 | Range-Lower            | \-                                           |
 | Range-Upper            | \-                                           |
 | Search-Flags           | 0x00000000                                   |
 | System-Flags           | 0x00000010                                   |
-| Classi utilizzate in        | [**Classe DHCP**](c-dhcpclass.md)<br/> |
+| Classi usate in        | [**Classe DHCP**](c-dhcpclass.md)<br/> |
 
 
 
@@ -163,15 +163,15 @@ L'attributo **DHCP-Properties** non è attualmente in uso.
 | ID collegamento                | \-                                           |
 | MAPI-Id                | \-                                           |
 | System-Only            | Falso                                        |
-| È a valore singolo       | Falso                                        |
+| Is-Single-Valued       | Falso                                        |
 | Indicizzato             | Falso                                        |
 | Nel catalogo globale      | Falso                                        |
-| NT-Security-descrittore | O:BAG: NON VALIDO: S:                                 |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                 |
 | Range-Lower            | \-                                           |
 | Range-Upper            | \-                                           |
 | Search-Flags           | 0x00000000                                   |
 | System-Flags           | 0x00000010                                   |
-| Classi utilizzate in        | [**Classe DHCP**](c-dhcpclass.md)<br/> |
+| Classi usate in        | [**Classe DHCP**](c-dhcpclass.md)<br/> |
 
 
 

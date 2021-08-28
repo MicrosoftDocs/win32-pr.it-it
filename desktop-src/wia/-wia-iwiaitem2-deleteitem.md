@@ -1,7 +1,7 @@
 ---
-description: Rimuove l'oggetto IWiaItem2 corrente dalla struttura ad albero di oggetti del dispositivo.
+description: Rimuove l'oggetto IWiaItem2 corrente dall'albero di oggetti del dispositivo.
 ms.assetid: 247eb36f-3e5c-4030-8334-1a4028b3eb44
-title: Metodo IWiaItem2::D eleteItem (WIA. h)
+title: Metodo IWiaItem2::D eleteItem (Wia.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -13,16 +13,16 @@ api_type:
 - COM
 api_location:
 - Wia.h
-ms.openlocfilehash: ef6a4204b591f06811f0941ca0ceed72b76151db
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 791d596ee48c4d3e2efd67259ec2e37249c930c6da32f704d332df1da6930503
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "106307367"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119593001"
 ---
-# <a name="iwiaitem2deleteitem-method"></a>IWiaItem2::D Metodo eleteItem
+# <a name="iwiaitem2deleteitem-method"></a>Metodo IWiaItem2::D eleteItem
 
-Rimuove l'oggetto [**IWiaItem2**](-wia-iwiaitem2.md) corrente dalla struttura ad albero di oggetti del dispositivo.
+Rimuove [**l'oggetto IWiaItem2 corrente**](-wia-iwiaitem2.md) dall'albero di oggetti del dispositivo.
 
 ## <a name="syntax"></a>Sintassi
 
@@ -39,12 +39,12 @@ HRESULT DeleteItem(
 
 <dl> <dt>
 
-*è* \[ in\]
+*lFlags* \[ Pollici\]
 </dt> <dd>
 
-Tipo: **Long**
+Tipo: **LONG**
 
-Attualmente non usato. Deve essere impostato su zero.
+Attualmente inutilizzato. Deve essere impostato su zero.
 
 </dd> </dl>
 
@@ -52,13 +52,13 @@ Attualmente non usato. Deve essere impostato su zero.
 
 Tipo: **HRESULT**
 
-Se questo metodo ha esito positivo, restituisce **S \_ OK**. In caso contrario, restituisce un codice di errore **HRESULT** .
+Se questo metodo ha esito positivo, restituisce **S \_ OK**. In caso contrario, restituisce un **codice di errore HRESULT.**
 
 ## <a name="remarks"></a>Commenti
 
-Il sistema di runtime Windows Image Acquisition (WIA) 2,0 rappresenta ogni dispositivo hardware WIA 2,0 connesso al computer dell'utente come albero gerarchico di oggetti [**IWiaItem2**](-wia-iwiaitem2.md) . Un dispositivo WIA 2,0 specificato può o meno consentire alle applicazioni di eliminare oggetti **IWiaItem2** dal relativo albero. Gli elementi con elementi figlio non possono essere eliminati. Per eseguire una query sul dispositivo per la funzionalità di eliminazione degli elementi, è necessario usare l'interfaccia [**IEnumWIA \_ dev \_ Caps**](/windows/desktop/api/wia_xp/nn-wia_xp-ienumwia_dev_caps) .
+Il sistema di run-time di Windows Image Acquisition (WIA) 2.0 rappresenta ogni dispositivo hardware WIA 2.0 connesso al computer dell'utente come albero gerarchico di oggetti [**IWiaItem2.**](-wia-iwiaitem2.md) Un determinato dispositivo WIA 2.0 può consentire o meno alle applicazioni di eliminare oggetti **IWiaItem2** dal relativo albero. Gli elementi con elementi figlio non possono essere eliminati. [**L'interfaccia IEnumWIA \_ DEV \_ CAPS**](/windows/desktop/api/wia_xp/nn-wia_xp-ienumwia_dev_caps) deve essere usata per eseguire query sul dispositivo per la funzionalità di eliminazione degli elementi.
 
-Se il dispositivo supporta l'eliminazione di elementi nella struttura ad albero di [**IWiaItem2**](-wia-iwiaitem2.md) , chiamare il metodo **IWiaItem2::D eleteitem** per rimuovere l'oggetto **IWiaItem2** . Si noti che questo metodo elimina un oggetto solo dopo che tutti i riferimenti all'oggetto sono stati rilasciati. Se l'eliminazione di un elemento non è riuscita, \_ viene restituito E DeleteItem. Il valore numerico per questo errore non è ancora definito.
+Se il dispositivo supporta l'eliminazione di elementi nell'albero [**IWiaItem2,**](-wia-iwiaitem2.md) chiamare il metodo **IWiaItem2::D eleteItem** per rimuovere **l'oggetto IWiaItem2.** Si noti che questo metodo elimina un oggetto solo dopo il rilascio di tutti i riferimenti all'oggetto. Se l'eliminazione di un elemento non è riuscita, viene restituito E \_ DELETEITEM. Il valore numerico per questo errore non è ancora definito.
 
 ## <a name="requirements"></a>Requisiti
 
@@ -66,10 +66,10 @@ Se il dispositivo supporta l'eliminazione di elementi nella struttura ad albero 
 
 | Requisito | Valore |
 |-------------------------------------|------------------------------------------------------------------------------------|
-| Client minimo supportato<br/> | \[Solo app desktop di Windows Vista\]<br/>                                     |
-| Server minimo supportato<br/> | \[Solo app desktop Windows Server 2008\]<br/>                               |
-| Intestazione<br/>                   | <dl> <dt>WIA. h</dt> </dl>   |
-| IDL<br/>                      | <dl> <dt>WIA. idl</dt> </dl> |
+| Client minimo supportato<br/> | Windows Solo \[ app desktop Vista\]<br/>                                     |
+| Server minimo supportato<br/> | Windows Solo app desktop di Server 2008 \[\]<br/>                               |
+| Intestazione<br/>                   | <dl> <dt>Wia.h</dt> </dl>   |
+| Idl<br/>                      | <dl> <dt>Wia.idl</dt> </dl> |
 
 
 

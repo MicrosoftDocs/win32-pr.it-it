@@ -17,12 +17,12 @@ api_location:
 topic_type:
 - APIRef
 - kbSyntax
-ms.openlocfilehash: c4afb51e1785e0e34822acdb0add5045d9183cb8b8a58ad040277dad5cebf7d8
-ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
+ms.openlocfilehash: eb07bfa5155a57eafd12732dc2a4005c8d4e1f0a
+ms.sourcegitcommit: c276a8912787b2cda74dcf54eb96df961bb1188b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119892191"
+ms.lasthandoff: 08/20/2021
+ms.locfileid: "122629203"
 ---
 # <a name="span-idvspixengineresourcepairspanresourcepair-structure"></a><span id="vspixengine.resourcepair"></span>Struttura ResourcePair
 
@@ -45,7 +45,7 @@ Stringa COM che contiene il valore della risorsa condivisa.
 
 ## <a name="requirements"></a>Requisiti
 
-<table><colgroup><col style="width: 50%" /><col style="width: 50%" /></colgroup><tbody><tr class="odd"><td><p>Intestazione</p></td><td>Vspixengine.h</td></tr></tbody></table>
+<table><colgroup><col  /><col  /></colgroup><tbody><tr class="odd"><td><p>Intestazione</p></td><td>Vspixengine.h</td></tr></tbody></table>
 
  
 

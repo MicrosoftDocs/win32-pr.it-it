@@ -10,12 +10,12 @@ topic_type:
 api_name: ''
 api_type: ''
 api_location: ''
-ms.openlocfilehash: bacf37ebab07ab60e347efa1645c3cf320700fb3
-ms.sourcegitcommit: 61a4c522182aa1cacbf5669683d9570a3bf043b2
+ms.openlocfilehash: 86ed2974895b9688ba635dcc174b46ff32589f39
+ms.sourcegitcommit: c276a8912787b2cda74dcf54eb96df961bb1188b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/26/2021
-ms.locfileid: "122884693"
+ms.lasthandoff: 08/20/2021
+ms.locfileid: "122630182"
 ---
 # <a name="wmi-tasks-accounts-and-domains"></a>Attività WMI: Account e domini
 
@@ -112,7 +112,7 @@ Next</code></pre></td>
 <td><pre><code>using Microsoft.Management.Infrastructure;
 ...
 CimSession session = CimSession.Create(&quot;localHost&quot;);
-IEnumerable&lt;CimInstance&gt; queryInstance = session.QueryInstances(@&quot;root\cimv2&quot;, &quot;WQL&quot;, &quot;SELECT * FROM Win32_ComputerSystem&quot;);
+IEnumerable<CimInstance> queryInstance = session.QueryInstances(@&quot;root\cimv2&quot;, &quot;WQL&quot;, &quot;SELECT * FROM Win32_ComputerSystem&quot;);
 
 foreach (CimInstance cimObj in queryInstance)
 {
@@ -250,7 +250,7 @@ Next</code></pre></td>
 <td><pre><code>using Microsoft.Management.Infrastructure;
 ...
 CimSession session = CimSession.Create(&quot;localHost&quot;);
-IEnumerable&lt;CimInstance&gt; queryInstance = session.QueryInstances(@&quot;root\cimv2&quot;, &quot;WQL&quot;, &quot;SELECT * FROM Win32_ComputerSystem&quot;);
+IEnumerable<CimInstance> queryInstance = session.QueryInstances(@&quot;root\cimv2&quot;, &quot;WQL&quot;, &quot;SELECT * FROM Win32_ComputerSystem&quot;);
 
 foreach (CimInstance cimObj in queryInstance)
 {
@@ -324,7 +324,7 @@ foreach($computer in $computers) {
 <td><pre><code>using Microsoft.Management.Infrastructure;
 ...
 CimSession session = CimSession.Create(&quot;localHost&quot;);
-IEnumerable&lt;CimInstance&gt; queryInstance = session.QueryInstances(@&quot;root\cimv2&quot;, &quot;WQL&quot;, &quot;SELECT * FROM Win32_ComputerSystem&quot;);
+IEnumerable<CimInstance> queryInstance = session.QueryInstances(@&quot;root\cimv2&quot;, &quot;WQL&quot;, &quot;SELECT * FROM Win32_ComputerSystem&quot;);
 
 foreach (CimInstance cimObj in queryInstance)
 {

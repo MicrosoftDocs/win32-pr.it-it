@@ -7,12 +7,12 @@ MSHAttr:
 title: IsDefault
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 886dab9e4388b5935503d21729d65ccc748caba0
-ms.sourcegitcommit: 61a4c522182aa1cacbf5669683d9570a3bf043b2
+ms.openlocfilehash: bee1dde08c883b6519a9ac92220de9e7562ef263
+ms.sourcegitcommit: 4665ebce0c106bdb52eef36e544280b496b6f50b
 ms.translationtype: MT
 ms.contentlocale: it-IT
 ms.lasthandoff: 08/26/2021
-ms.locfileid: "122883631"
+ms.locfileid: "122988694"
 ---
 # <a name="span-idwwan_profile_v4element_isdefaultspanisdefault"></a><span id="WWAN_profile_v4.element_IsDefault"></span>IsDefault
 
@@ -58,7 +58,9 @@ Nessuno.
 ## <a name="requirements"></a>Requisiti
 
 
-| | | <p>Spazio dei nomi</p> | <p>https://www.microsoft.com/networking/WWAN/profile/v4</p> | 
+| Requisito | Valore |
+|------------|----------|
+| <p>Spazio dei nomi</p> | <p>https://www.microsoft.com/networking/WWAN/profile/v4</p> | 
 
 
  

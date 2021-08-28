@@ -1,11 +1,11 @@
 ---
-title: Proprietà TaskNamedValueCollection. Count
-description: Per gli script, ottiene il numero di coppie nome-valore nella raccolta.
+title: TaskNamedValueCollection.Count - proprietà
+description: Per lo scripting, ottiene il numero di coppie nome-valore nella raccolta.
 ms.assetid: 73ecaeae-2837-4f77-819c-3d34f87d0e88
 keywords:
-- Utilità di pianificazione della proprietà Count
-- Utilità di pianificazione di proprietà Count, oggetto TaskNamedValueCollection
-- Utilità di pianificazione oggetto TaskNamedValueCollection, proprietà Count
+- Proprietà Count Utilità di pianificazione
+- Proprietà Count Utilità di pianificazione, oggetto TaskNamedValueCollection
+- Oggetto TaskNamedValueCollection Utilità di pianificazione proprietà , Count
 topic_type:
 - apiref
 api_name:
@@ -16,16 +16,16 @@ api_type:
 - COM
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: e29da03214c457233b5e16b327ba6e714bb3408f
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: a66378c0ca17bef4aec9a342e5ddbca1efb2b826e4901815eb91d7cdadf55b09
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "103742914"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119285801"
 ---
-# <a name="tasknamedvaluecollectioncount-property"></a>Proprietà TaskNamedValueCollection. Count
+# <a name="tasknamedvaluecollectioncount-property"></a>TaskNamedValueCollection.Count - proprietà
 
-Per gli script, ottiene il numero di coppie nome-valore nella raccolta.
+Per lo scripting, ottiene il numero di coppie nome-valore nella raccolta.
 
 ## <a name="syntax"></a>Sintassi
 
@@ -46,9 +46,9 @@ Numero di coppie nome-valore nella raccolta.
 
 | Requisito | Valore |
 |-------------------------------------|-----------------------------------------------------------------------------------------|
-| Client minimo supportato<br/> | \[Solo app desktop di Windows Vista\]<br/>                                          |
-| Server minimo supportato<br/> | \[Solo app desktop Windows Server 2008\]<br/>                                    |
-| Libreria dei tipi<br/>             | <dl> <dt>Taskschd. tlb</dt> </dl> |
+| Client minimo supportato<br/> | Windows Solo \[ app desktop Vista\]<br/>                                          |
+| Server minimo supportato<br/> | Windows Solo app desktop di Server 2008 \[\]<br/>                                    |
+| Libreria dei tipi<br/>             | <dl> <dt>Taskschd.tlb</dt> </dl> |
 | DLL<br/>                      | <dl> <dt>Taskschd.dll</dt> </dl> |
 
 

@@ -1,19 +1,19 @@
 ---
-description: "Contiene l'URL del file IFO (informazioni DVD) specificato dal server HTTP nell'intestazione HTTP &\\# 0034; Pragma: ifoFileURI.dlna.org&\\# 0034;."
+description: "Contiene l'URL del file IFO (DVD Information) specificato dal server HTTP nell'intestazione HTTP, &\\# 0034; Pragma: ifoFileURI.dlna.org&\\# 0034;."
 ms.assetid: 007e0f4d-fb37-4dec-96a7-311df567eb04
-title: Attributo MF_BYTESTREAM_IFO_FILE_URI (Mfobjects. h)
+title: MF_BYTESTREAM_IFO_FILE_URI attributo (Mfobjects.h)
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: a1c80e015b68272b073c442b4064c80a6787b811
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: ab4349f3319a875f428921b0a99aefa61e49340c240a87260c1132abcc7c45f9
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "106309588"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119723471"
 ---
-# <a name="mf_bytestream_ifo_file_uri-attribute"></a>\_ \_ \_ Attributo URI del file MF BYTESTREAM IFO \_
+# <a name="mf_bytestream_ifo_file_uri-attribute"></a>Attributo \_ URI \_ FILE IFO BYTESTREAM MF \_ \_
 
-Contiene l'URL del file IFO (informazioni DVD) specificato dal server HTTP nell'intestazione HTTP "pragma: ifoFileURI.dlna.org".
+Contiene l'URL del file IFO (DVD Information) specificato dal server HTTP nell'intestazione HTTP "Pragma: ifoFileURI.dlna.org".
 
 ## <a name="data-type"></a>Tipo di dati
 
@@ -21,9 +21,9 @@ Contiene l'URL del file IFO (informazioni DVD) specificato dal server HTTP nell'
 
 ## <a name="getset"></a>Ottenere/impostare
 
-Per ottenere questo attributo, chiamare [**IMFAttributes:: GetString**](/windows/desktop/api/mfobjects/nf-mfobjects-imfattributes-getstring).
+Per ottenere questo attributo, chiamare [**IMFAttributes::GetString**](/windows/desktop/api/mfobjects/nf-mfobjects-imfattributes-getstring).
 
-Per impostare questo attributo, chiamare [**IMFAttributes:: sestring**](/windows/desktop/api/mfobjects/nf-mfobjects-imfattributes-setstring).
+Per impostare questo attributo, chiamare [**IMFAttributes::SetString**](/windows/desktop/api/mfobjects/nf-mfobjects-imfattributes-setstring).
 
 ## <a name="applies-to"></a>Si applica a
 
@@ -33,7 +33,7 @@ Per impostare questo attributo, chiamare [**IMFAttributes:: sestring**](/windows
 
 Il flusso di byte HTTP cerca la stringa "ifoFileURI.dlna.org" nell'intestazione HTTP. Se la stringa viene trovata, viene copiata in questo attributo nel flusso di byte.
 
-La costante GUID per questo attributo viene esportata da mfuuid. lib.
+La costante GUID per questo attributo viene esportata da mfuuid.lib.
 
 ## <a name="requirements"></a>Requisiti
 
@@ -41,9 +41,9 @@ La costante GUID per questo attributo viene esportata da mfuuid. lib.
 
 | Requisito | Valore |
 |-------------------------------------|----------------------------------------------------------------------------------------------------------|
-| Client minimo supportato<br/> | App desktop di Windows 7 \[ \| UWP\]<br/>                                                        |
-| Server minimo supportato<br/> | App desktop di Windows Server 2008 R2 \[ \| UWP\]<br/>                                           |
-| Intestazione<br/>                   | <dl> <dt>Mfobjects. h (include Mfidl. h)</dt> </dl> |
+| Client minimo supportato<br/> | Windows 7 \[ app desktop app \| UWP\]<br/>                                                        |
+| Server minimo supportato<br/> | Windows App UWP per app desktop server 2008 R2 \[ \|\]<br/>                                           |
+| Intestazione<br/>                   | <dl> <dt>Mfobjects.h (includere Mfidl.h)</dt> </dl> |
 
 
 
@@ -51,7 +51,7 @@ La costante GUID per questo attributo viene esportata da mfuuid. lib.
 
 <dl> <dt>
 
-[Elenco alfabetico degli attributi di Media Foundation](alphabetical-list-of-media-foundation-attributes.md)
+[Elenco alfabetico di Media Foundation attributi](alphabetical-list-of-media-foundation-attributes.md)
 </dt> <dt>
 
 [Attributi del flusso di byte](byte-stream-attributes.md)

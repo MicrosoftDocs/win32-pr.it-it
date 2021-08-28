@@ -1,6 +1,6 @@
 ---
 description: 'Altre informazioni su: Costruttore JET_OBJECTLIST'
-title: Costruttore JET_OBJECTLIST
+title: JET_OBJECTLIST costruttore
 TOCTitle: 'JET_OBJECTLIST constructor '
 ms:assetid: M:Microsoft.Isam.Esent.Interop.JET_OBJECTLIST.#ctor
 ms:mtpsurl: https://msdn.microsoft.com/library/microsoft.isam.esent.interop.jet_objectlist.jet_objectlist(v=EXCHG.10)
@@ -24,17 +24,17 @@ api_type:
 api_location:
 - Microsoft.Isam.Esent.Interop.dll
 ROBOTS: INDEX,FOLLOW
-ms.openlocfilehash: 4d50038d23c5b5e18680812262aa7c05b11ac6cd
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: b4357ca0547cd350d1187b8eee01bf1928da612e256320c575340af4872a1f03
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "106315100"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119730641"
 ---
-# <a name="jet_objectlist-constructor"></a>Costruttore JET_OBJECTLIST
+# <a name="jet_objectlist-constructor"></a>JET_OBJECTLIST costruttore
 
-**Spazio dei nomi:**  [Microsoft. ISAM. esent. Interop](./microsoft.isam.esent.interop-namespace.md)  
-**Assembly:**  Microsoft. ISAM. esent. Interop (in Microsoft.Isam.Esent.Interop.dll)
+**Spazio dei nomi:**  [Microsoft.Isam.Esent.Interop](./microsoft.isam.esent.interop-namespace.md)  
+**Assembly:**  Microsoft.Isam.Esent.Interop (in Microsoft.Isam.Esent.Interop.dll)
 
 ## <a name="syntax"></a>Sintassi
 
@@ -54,8 +54,8 @@ public JET_OBJECTLIST()
 
 #### <a name="reference"></a>Riferimento
 
-[Classe JET_OBJECTLIST](./jet-objectlist-class.md)
+[JET_OBJECTLIST classe](./jet-objectlist-class.md)
 
-[Membri JET_OBJECTLIST](./jet-objectlist-members.md)
+[JET_OBJECTLIST membri](./jet-objectlist-members.md)
 
-[Spazio dei nomi Microsoft. ISAM. esent. Interop](./microsoft.isam.esent.interop-namespace.md)
+[Spazio dei nomi Microsoft.Isam.Esent.Interop](./microsoft.isam.esent.interop-namespace.md)

@@ -1,9 +1,9 @@
 ---
-title: Messaggio WM_UNDO (winuser. h)
-description: Un'applicazione invia un \_ messaggio di annullamento WM a un controllo di modifica per annullare l'ultima operazione. Quando questo messaggio viene inviato a un controllo di modifica, il testo eliminato in precedenza viene ripristinato o il testo aggiunto in precedenza viene eliminato.
+title: WM_UNDO messaggio (Winuser.h)
+description: Un'applicazione invia un messaggio UNDO WM \_ a un controllo di modifica per annullare l'ultima operazione. Quando questo messaggio viene inviato a un controllo di modifica, il testo eliminato in precedenza viene ripristinato o il testo aggiunto in precedenza viene eliminato.
 ms.assetid: bb5a3425-bf99-4a08-8747-82c24c5889ad
 keywords:
-- Controlli di Windows Message WM_UNDO
+- WM_UNDO controlli di Windows messaggio
 topic_type:
 - apiref
 api_name:
@@ -14,16 +14,16 @@ api_type:
 - HeaderDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 3c5eb9182b6d8d3fc1360565f6661e989f3b6d0d
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: 7b6e4bd0715b7eeb5f99f34f5142ac3198c5c1eae53cf4486c3efce9dace19a9
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "104477525"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119311341"
 ---
-# <a name="wm_undo-message"></a>\_Messaggio di annullamento WM
+# <a name="wm_undo-message"></a>Messaggio \_ UNDO WM
 
-Un'applicazione invia un messaggio di **\_ annullamento WM** a un controllo di modifica per annullare l'ultima operazione. Quando questo messaggio viene inviato a un controllo di modifica, il testo eliminato in precedenza viene ripristinato o il testo aggiunto in precedenza viene eliminato.
+Un'applicazione invia un **messaggio UNDO WM \_** a un controllo di modifica per annullare l'ultima operazione. Quando questo messaggio viene inviato a un controllo di modifica, il testo eliminato in precedenza viene ripristinato o il testo aggiunto in precedenza viene eliminato.
 
 ## <a name="parameters"></a>Parametri
 
@@ -32,26 +32,26 @@ Un'applicazione invia un messaggio di **\_ annullamento WM** a un controllo di m
 *wParam* 
 </dt> <dd>
 
-Non utilizzato; deve essere zero.
+Non usato; deve essere zero.
 
 </dd> <dt>
 
 *lParam* 
 </dt> <dd>
 
-Non utilizzato; deve essere zero.
+Non usato; deve essere zero.
 
 </dd> </dl>
 
 ## <a name="return-value"></a>Valore restituito
 
-Se il messaggio ha esito positivo, il valore restituito è **true**.
+Se il messaggio ha esito positivo, il valore restituito è **TRUE.**
 
-Se il messaggio ha esito negativo, il valore restituito è **false**.
+Se il messaggio ha esito negativo, il valore restituito è **FALSE.**
 
 ## <a name="remarks"></a>Commenti
 
-**Modifica avanzata:** È consigliabile usare l' [**\_ annullamento em**](em-undo.md) anziché **WM \_ Undo**.
+**Rich Edit:** È consigliabile usare [**EM \_ UNDO**](em-undo.md) anziché **WM \_ UNDO.**
 
 ## <a name="requirements"></a>Requisiti
 
@@ -59,9 +59,9 @@ Se il messaggio ha esito negativo, il valore restituito è **false**.
 
 | Requisito | Valore |
 |-------------------------------------|----------------------------------------------------------------------------------------------------------|
-| Client minimo supportato<br/> | \[Solo app desktop di Windows Vista\]<br/>                                                           |
-| Server minimo supportato<br/> | \[Solo app desktop Windows Server 2003\]<br/>                                                     |
-| Intestazione<br/>                   | <dl> <dt>Winuser. h (include Windows. h)</dt> </dl> |
+| Client minimo supportato<br/> | Windows Solo \[ app desktop Vista\]<br/>                                                           |
+| Server minimo supportato<br/> | Windows Solo app desktop di Server 2003 \[\]<br/>                                                     |
+| Intestazione<br/>                   | <dl> <dt>Winuser.h (includere Windows.h)</dt> </dl> |
 
 
 
@@ -72,16 +72,16 @@ Se il messaggio ha esito negativo, il valore restituito è **false**.
 **Altre risorse**
 </dt> <dt>
 
-[**chiaro di WM \_**](/windows/desktop/dataxchg/wm-clear)
+[**WM \_ CLEAR**](/windows/desktop/dataxchg/wm-clear)
 </dt> <dt>
 
-[**\_copia WM**](/windows/desktop/dataxchg/wm-copy)
+[**WM \_ COPY**](/windows/desktop/dataxchg/wm-copy)
 </dt> <dt>
 
-[**\_taglia WM**](/windows/desktop/dataxchg/wm-cut)
+[**WM \_ CUT**](/windows/desktop/dataxchg/wm-cut)
 </dt> <dt>
 
-[**\_Incolla WM**](/windows/desktop/dataxchg/wm-paste)
+[**WM \_ PASTE**](/windows/desktop/dataxchg/wm-paste)
 </dt> </dl>
 
  

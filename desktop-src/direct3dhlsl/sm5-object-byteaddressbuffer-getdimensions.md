@@ -1,6 +1,6 @@
 ---
-title: 'Funzione ByteAddressBuffer:: GetDimensions'
-description: 'Ottiene la lunghezza del buffer. | Funzione ByteAddressBuffer:: GetDimensions'
+title: Funzione ByteAddressBuffer::GetDimensions
+description: Ottiene la lunghezza del buffer. | Funzione ByteAddressBuffer::GetDimensions
 ms.assetid: 32099118-8d8a-440e-96ba-2580d905f068
 keywords:
 - Funzione GetDimensions HLSL
@@ -13,14 +13,14 @@ api_type:
 ms.topic: reference
 ms.date: 05/31/2018
 api_location: ''
-ms.openlocfilehash: 1cbb705789e444a6fa54aeb87190912996f65621
-ms.sourcegitcommit: 92e74c99f8f4d097676959d0c317f533c2400a80
+ms.openlocfilehash: 398b5a6dba995a11dcf4ce8a78fecee9bb185ce98ec285453bdd52c1180a4eb3
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/09/2021
-ms.locfileid: "104995293"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120067721"
 ---
-# <a name="byteaddressbuffergetdimensions-function"></a>Funzione ByteAddressBuffer:: GetDimensions
+# <a name="byteaddressbuffergetdimensions-function"></a>Funzione ByteAddressBuffer::GetDimensions
 
 Ottiene la lunghezza del buffer.
 
@@ -36,7 +36,7 @@ void GetDimensions(
 
 <dl> <dt>
 
-*Dim* \[ out\]
+*dim* \[ out\]
 </dt> <dd>
 
 Tipo: **uint**
@@ -55,7 +55,7 @@ Questa funzione è supportata per i tipi di shader seguenti:
 
 
 
-| Vertice | Hull | Dominio | Geometria | Pixel | Calcolo |
+| Vertice | Scafo | Dominio | Geometria | Pixel | Calcolo |
 |--------|------|--------|----------|-------|---------|
 | x      | x    | x      | x        | x     | x       |
 
@@ -70,7 +70,7 @@ Questa funzione è supportata per i tipi di shader seguenti:
 [ByteAddressBuffer](sm5-object-byteaddressbuffer.md)
 </dt> <dt>
 
-[Modello Shader 5](d3d11-graphics-reference-sm5.md)
+[Modello shader 5](d3d11-graphics-reference-sm5.md)
 </dt> </dl>
 
  

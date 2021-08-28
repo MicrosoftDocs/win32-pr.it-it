@@ -1,21 +1,21 @@
 ---
-description: La proprietà di riepilogo del numero di caratteri viene utilizzata solo nelle trasformazioni.
+description: La proprietà Riepilogo conteggio caratteri viene usata solo nelle trasformazioni.
 ms.assetid: d26d24a5-558e-4333-ae39-ffba1bbc5247
-title: Proprietà riepilogo Conteggio caratteri
+title: Proprietà Riepilogo conteggio caratteri
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: afc99c065721f0f0b94691a12e00204305940efd
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: 766cc9ab355e533c155bfc81bac7b3f6e82cf9ab8679cf4feb00e9d01705a94b
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "106328450"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119754341"
 ---
-# <a name="character-count-summary-property"></a>Proprietà riepilogo Conteggio caratteri
+# <a name="character-count-summary-property"></a>Proprietà Riepilogo conteggio caratteri
 
-La proprietà di **Riepilogo del numero di caratteri** viene utilizzata solo nelle trasformazioni. Questa parte del flusso di informazioni di riepilogo è divisa in parole a 2 16 bit. La parola superiore contiene i [*flag di convalida della trasformazione*](t-gly.md). La parola inferiore contiene i [*flag di condizione di errore di trasformazione*](t-gly.md).
+La **proprietà Riepilogo conteggio** caratteri viene usata solo nelle trasformazioni. Questa parte del flusso di informazioni di riepilogo è suddivisa in due parole a 16 bit. La parola superiore contiene i [*flag di convalida della trasformazione*](t-gly.md). La parola inferiore contiene i [*flag della condizione di errore di trasformazione*](t-gly.md).
 
-Questa proprietà deve essere null in un pacchetto di installazione o in un pacchetto di patch.
+Questa proprietà deve essere Null in un pacchetto di installazione o in un pacchetto patch.
 
 ## <a name="requirements"></a>Requisiti
 
@@ -23,7 +23,7 @@ Questa proprietà deve essere null in un pacchetto di installazione o in un pacc
 
 | Requisito | Valore |
 |--------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Versione<br/> | Windows Installer 5,0 in Windows Server 2012, Windows 8, Windows Server 2008 R2 o Windows 7. Windows Installer 4,0 o Windows Installer 4,5 in Windows Server 2008 o Windows Vista. Windows Installer in Windows Server 2003 o Windows XP.<br/> |
+| Versione<br/> | Windows Programma di installazione 5.0 Windows Server 2012, Windows 8, Windows Server 2008 R2 o Windows 7. Windows Programma di installazione 4.0 o Windows Installer 4.5 in Windows Server 2008 o Windows Vista. Windows Programma di installazione Windows Server 2003 o Windows XP.<br/> |
 
 
 

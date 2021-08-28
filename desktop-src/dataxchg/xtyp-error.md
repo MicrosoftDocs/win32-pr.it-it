@@ -1,9 +1,9 @@
 ---
-title: Transazione XTYP_ERROR (DDEML. h)
-description: Una funzione di callback Dynamic Data Exchange (DDE), DdeCallback, riceve la \_ transazione di errore XTYP quando si verifica un errore critico.
+title: XTYP_ERROR transazione (Ddeml.h)
+description: Una Dynamic Data Exchange callback DDE (DDE), DdeCallback, riceve la transazione ERROR XTYP quando \_ si verifica un errore critico.
 ms.assetid: 710daa04-ed83-42e3-a55e-6ccf891a3d52
 keywords:
-- Scambio di dati delle transazioni XTYP_ERROR
+- XTYP_ERROR di dati della transazione Exchange
 topic_type:
 - apiref
 api_name:
@@ -14,16 +14,16 @@ api_type:
 - HeaderDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: ebbad80cb23a37881e8954dee4a80a87f253e499
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: ce59800723758201b4857b5a3ae0844675347b2d4fd403c77650b36d9275bfb6
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "106301597"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119755981"
 ---
-# <a name="xtyp_error-transaction"></a>\_Transazione di errore XTYP
+# <a name="xtyp_error-transaction"></a>Transazione ERROR \_ XTYP
 
-Una funzione di callback Dynamic Data Exchange (DDE), [*DdeCallback*](/windows/win32/api/ddeml/nc-ddeml-pfncallback), riceve la transazione di **\_ errore XTYP** quando si verifica un errore critico.
+Una Dynamic Data Exchange callback DDE [*(DDE), DdeCallback,*](/windows/win32/api/ddeml/nc-ddeml-pfncallback)riceve la transazione **ERROR XTYP \_** quando si verifica un errore critico.
 
 
 ```C++
@@ -55,7 +55,7 @@ Non usato.
 *hconv* 
 </dt> <dd>
 
-Handle per la conversazione associata all'errore. Questo parametro è **null** se l'errore non è associato a una conversazione.
+Handle per la conversazione associata all'errore. Questo parametro è **NULL** se l'errore non è associato a una conversazione.
 
 </dd> <dt>
 
@@ -83,13 +83,13 @@ Non usato.
 *dwData1* 
 </dt> <dd>
 
-Codice di errore nella parola di ordine inferiore. Attualmente, è supportato solo il codice di errore seguente.
+Codice di errore nella parola di ordine più basso. Attualmente è supportato solo il codice di errore seguente.
 
 
 
 | Valore                                                                                                                                                                      | Significato                                                                                      |
 |----------------------------------------------------------------------------------------------------------------------------------------------------------------------------|----------------------------------------------------------------------------------------------|
-| <span id="DMLERR_LOW_MEMORY"></span><span id="dmlerr_low_memory"></span><dl> <dt>**\_memoria insufficiente DMLERR \_**</dt> </dl> | Memoria insufficiente. è possibile che i dati Advise, poke o Execute vadano persi o che il sistema abbia esito negativo.<br/> |
+| <span id="DMLERR_LOW_MEMORY"></span><span id="dmlerr_low_memory"></span><dl> <dt>**MEMORIA INSUFFICIENTE \_ DMLERR \_**</dt> </dl> | Memoria insufficiente. consigliare, eseguire o eseguire i dati potrebbero essere persi o il sistema potrebbe non riuscire.<br/> |
 
 
 
@@ -106,7 +106,7 @@ Non usato.
 
 ## <a name="remarks"></a>Commenti
 
-Un'applicazione non può bloccare questo tipo di transazione. il codice restituito del **\_ blocco CBR** viene ignorato. La libreria di gestione Dynamic Data Exchange (DDEML) tenta di liberare memoria rimuovendo le risorse non critiche. Un'applicazione che dispone di conversazioni bloccate dovrebbe sbloccarle.
+Un'applicazione non può bloccare questo tipo di transazione. Il **codice restituito da CBR \_ BLOCK** viene ignorato. La Dynamic Data Exchange DDEML (Dynamic Data Exchange Management Library) tenta di liberare memoria rimuovendo le risorse non critiche. Un'applicazione che ha bloccato le conversazioni deve sbloccarle.
 
 ## <a name="requirements"></a>Requisiti
 
@@ -116,7 +116,7 @@ Un'applicazione non può bloccare questo tipo di transazione. il codice restitui
 |-------------------------------------|--------------------------------------------------------------------------------------------------------|
 | Client minimo supportato<br/> | Windows 2000 Professional \[solo app desktop\]<br/>                                             |
 | Server minimo supportato<br/> | Windows 2000 Server \[solo app desktop\]<br/>                                                   |
-| Intestazione<br/>                   | <dl> <dt>DDEML. h (include Windows. h)</dt> </dl> |
+| Intestazione<br/>                   | <dl> <dt>Ddeml.h (includere Windows.h)</dt> </dl> |
 
 
 
@@ -124,7 +124,7 @@ Un'applicazione non può bloccare questo tipo di transazione. il codice restitui
 
 <dl> <dt>
 
-[Panoramica della libreria di gestione Dynamic Data Exchange](dynamic-data-exchange-management-library.md)
+[Dynamic Data Exchange panoramica della libreria di gestione di Dynamic Data Exchange](dynamic-data-exchange-management-library.md)
 </dt> </dl>
 
  

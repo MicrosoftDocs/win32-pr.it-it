@@ -1,11 +1,11 @@
 ---
-title: MS-WMI-attributo query
+title: Attributo ms-WMI-Query
 description: Una singola query WQL.
 ms.assetid: 3fb594fc-d160-4807-a019-3dec56d2262b
 ms.tgt_platform: multiple
 keywords:
-- Schema AD dell'attributo della query MS-WMI
-- msWMI-schema AD dell'attributo di query
+- Schema AD dell'attributo ms-WMI-Query
+- Schema AD dell'attributo msWMI-Query
 topic_type:
 - apiref
 api_name:
@@ -14,14 +14,14 @@ api_type:
 - Schema
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: e5bb5376cf957d46894c6fa2c59016564d28dfb9
-ms.sourcegitcommit: b77ace27b0432e7cd3863191b11926be032fbe2f
+ms.openlocfilehash: 20525051f20b57fe3464031ede74d5d8a46a5e87c3a4614c5217fbc1b429ed49
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/14/2020
-ms.locfileid: "103875618"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119589531"
 ---
-# <a name="ms-wmi-query-attribute"></a>MS-WMI-attributo query
+# <a name="ms-wmi-query-attribute"></a>Attributo ms-WMI-Query
 
 Una singola query WQL.
 
@@ -29,13 +29,13 @@ Una singola query WQL.
 
 | Voce | Valore |
 |-------------------|---------------------------------------------|
-| CN                | MS-WMI-query                                |
-| LDAP-Display-Name | msWMI-query                                 |
+| CN                | ms-WMI-Query                                |
+| Ldap-Display-Name | msWMI-Query                                 |
 | Dimensione              | Meno di 250 caratteri.                   |
-| Privilegio aggiornamento  | Amministratore Criteri di gruppo                  |
+| Privilegio di aggiornamento  | Criteri di gruppo amministratore                  |
 | Frequenza di aggiornamento  | \-                                          |
 | Attribute-Id      | 1.2.840.113556.1.4.1642                     |
-| System-ID-GUID    | 65fff93e-35e3-45a3-85ae-876c6718297f        |
+| System-Id-Guid    | 65fff93e-35e3-45a3-85ae-876c6718297f        |
 | Sintassi            | [**String(Unicode)**](s-string-unicode.md) |
 
 
@@ -57,15 +57,15 @@ Una singola query WQL.
 | ID collegamento                | \-                                             |
 | MAPI-Id                | \-                                             |
 | System-Only            | Falso                                          |
-| È a valore singolo       | Vero                                           |
+| Is-Single-Valued       | Vero                                           |
 | Indicizzato             | Falso                                          |
 | Nel catalogo globale      | Falso                                          |
-| NT-Security-descrittore | O:BAG: NON VALIDO: S:                                   |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                   |
 | Range-Lower            | \-                                             |
 | Range-Upper            | \-                                             |
 | Search-Flags           | 0x00000000                                     |
 | System-Flags           | 0x00000010                                     |
-| Classi utilizzate in        | [**MS-WMI-regola**](c-mswmi-rule.md)<br/> |
+| Classi usate in        | [**ms-WMI-Rule**](c-mswmi-rule.md)<br/> |
 
 
 
@@ -78,15 +78,15 @@ Una singola query WQL.
 | ID collegamento                | \-                                             |
 | MAPI-Id                | \-                                             |
 | System-Only            | Falso                                          |
-| È a valore singolo       | Vero                                           |
+| Is-Single-Valued       | Vero                                           |
 | Indicizzato             | Falso                                          |
 | Nel catalogo globale      | Falso                                          |
-| NT-Security-descrittore | O:BAG: NON VALIDO: S:                                   |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                   |
 | Range-Lower            | \-                                             |
 | Range-Upper            | \-                                             |
 | Search-Flags           | 0x00000000                                     |
 | System-Flags           | 0x00000010                                     |
-| Classi utilizzate in        | [**MS-WMI-regola**](c-mswmi-rule.md)<br/> |
+| Classi usate in        | [**ms-WMI-Rule**](c-mswmi-rule.md)<br/> |
 
 
 
@@ -99,15 +99,15 @@ Una singola query WQL.
 | ID collegamento                | \-                                             |
 | MAPI-Id                | \-                                             |
 | System-Only            | Falso                                          |
-| È a valore singolo       | Vero                                           |
+| Is-Single-Valued       | Vero                                           |
 | Indicizzato             | Falso                                          |
 | Nel catalogo globale      | Falso                                          |
-| NT-Security-descrittore | O:BAG: NON VALIDO: S:                                   |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                   |
 | Range-Lower            | \-                                             |
 | Range-Upper            | \-                                             |
 | Search-Flags           | 0x00000000                                     |
 | System-Flags           | 0x00000010                                     |
-| Classi utilizzate in        | [**MS-WMI-regola**](c-mswmi-rule.md)<br/> |
+| Classi usate in        | [**ms-WMI-Rule**](c-mswmi-rule.md)<br/> |
 
 
 
@@ -120,15 +120,15 @@ Una singola query WQL.
 | ID collegamento                | \-                                             |
 | MAPI-Id                | \-                                             |
 | System-Only            | Falso                                          |
-| È a valore singolo       | Vero                                           |
+| Is-Single-Valued       | Vero                                           |
 | Indicizzato             | Falso                                          |
 | Nel catalogo globale      | Falso                                          |
-| NT-Security-descrittore | O:BAG: NON VALIDO: S:                                   |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                   |
 | Range-Lower            | \-                                             |
 | Range-Upper            | \-                                             |
 | Search-Flags           | 0x00000000                                     |
 | System-Flags           | 0x00000010                                     |
-| Classi utilizzate in        | [**MS-WMI-regola**](c-mswmi-rule.md)<br/> |
+| Classi usate in        | [**ms-WMI-Rule**](c-mswmi-rule.md)<br/> |
 
 
 
@@ -141,15 +141,15 @@ Una singola query WQL.
 | ID collegamento                | \-                                             |
 | MAPI-Id                | \-                                             |
 | System-Only            | Falso                                          |
-| È a valore singolo       | Vero                                           |
+| Is-Single-Valued       | Vero                                           |
 | Indicizzato             | Falso                                          |
 | Nel catalogo globale      | Falso                                          |
-| NT-Security-descrittore | O:BAG: NON VALIDO: S:                                   |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                   |
 | Range-Lower            | \-                                             |
 | Range-Upper            | \-                                             |
 | Search-Flags           | 0x00000000                                     |
 | System-Flags           | 0x00000010                                     |
-| Classi utilizzate in        | [**MS-WMI-regola**](c-mswmi-rule.md)<br/> |
+| Classi usate in        | [**ms-WMI-Rule**](c-mswmi-rule.md)<br/> |
 
 
 

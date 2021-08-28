@@ -4,17 +4,17 @@ ms.assetid: 8901eb78-bb7f-4dfe-bc01-0a267af5140f
 title: Errori di rendering
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 7e5af72ccf7ca76b2d4899178757282f1879c06052d2db2f3e1d929ddeef0f53
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: e31d49c5fbb82457282decdaa07152e75db6bc3e
+ms.sourcegitcommit: 9b5faa61c38b2d0c432b7f2dbee8c127b0e28a7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "120050611"
+ms.lasthandoff: 08/19/2021
+ms.locfileid: "122482587"
 ---
 # <a name="rendering-errors"></a>Errori di rendering
 
 > [!Note]  
-> \[Deprecato. Questa API potrebbe essere rimossa dalle versioni future Windows.\]
+> \[Deprecato. Questa API potrebbe essere rimossa dalle versioni future di Windows.\]
 
  
 
@@ -32,167 +32,38 @@ Microsoft® DirectShow® Editing Services (DES) definisce vari codici di errore 
 
 
 
-<table>
-<colgroup>
-<col style="width: 25%" />
-<col style="width: 25%" />
-<col style="width: 25%" />
-<col style="width: 25%" />
-</colgroup>
-<thead>
-<tr class="header">
-<th>Codice di errore</th>
-<th>Descrizione</th>
-<th>Informazioni aggiuntive</th>
-<th>Tipo variant</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>DEX_IDS_BAD_SOURCE_NAME</td>
-<td>Il nome del file non esiste o DirectShow non riconosce l'estensione del file.</td>
-<td>Nome file</td>
-<td><strong>BSTR</strong></td>
-</tr>
-<tr class="even">
-<td>DEX_IDS_BAD_SOURCE_NAME2</td>
-<td>Il tipo di file non corrisponde all'estensione di file o il file è danneggiato.</td>
-<td>Nome file</td>
-<td><strong>BSTR</strong></td>
-</tr>
-<tr class="odd">
-<td>DEX_IDS_MISSING_SOURCE_NAME</td>
-<td>Il nome file era obbligatorio, ma non è stato specificato.</td>
-<td>Nessuno</td>
-<td>Non applicabile</td>
-</tr>
-<tr class="even">
-<td>DEX_IDS_UNKNOWN_SOURCE</td>
-<td>Impossibile analizzare l'origine dati fornita da questa origine.</td>
-<td>Nessuno</td>
-<td>Non applicabile</td>
-</tr>
-<tr class="odd">
-<td>DEX_IDS_INSTALL_PROBLEM</td>
-<td>Errore imprevisto. Alcuni DirectShow componente non sono installati correttamente.</td>
-<td>Nessuno</td>
-<td>Non applicabile</td>
-</tr>
-<tr class="even">
-<td>DEX_IDS_NO_SOURCE_NAMES</td>
-<td>Il filtro di origine non accetta nomi di file.</td>
-<td>Nessuno</td>
-<td>Non applicabile</td>
-</tr>
-<tr class="odd">
-<td>DEX_IDS_BAD_MEDIATYPE</td>
-<td>Il tipo di supporto del gruppo non è supportato.</td>
-<td>Numero gruppo</td>
-<td><strong>int</strong></td>
-</tr>
-<tr class="even">
-<td>DEX_IDS_STREAM_NUMBER</td>
-<td>Numero di flusso non valido per questa origine.</td>
-<td>Numero di flusso</td>
-<td><strong>int</strong></td>
-</tr>
-<tr class="odd">
-<td>DEX_IDS_OUTOFMEMORY</td>
-<td>Memoria insufficiente.</td>
-<td>Nessuno</td>
-<td>Non applicabile</td>
-</tr>
-<tr class="even">
-<td>DEX_IDS_DIBSEQ_NOTALLSAME</td>
-<td>Una bitmap nella sequenza non era dello stesso tipo delle altre.</td>
-<td>Nome bitmap</td>
-<td><strong>BSTR</strong></td>
-</tr>
-<tr class="odd">
-<td>DEX_IDS_CLIPTOOSHORT</td>
-<td>I tempi multimediali del clip non sono validi o la sequenza DIB (Device-Independent Bitmap) è troppo breve.
-<blockquote>
-[!Note]<br />
-Se si verificano altri errori di rendering, questo errore potrebbe verificarsi anche se i tempi dei supporti sono validi.
-</blockquote>
-<br/></td>
-<td>Nessuno</td>
-<td>Non applicabile</td>
-</tr>
-<tr class="even">
-<td>DEX_IDS_INVALID_DXT</td>
-<td>L'identificatore di classe (CLSID) dell'effetto o della transizione non è valido.</td>
-<td>CLSID</td>
-<td><strong>BSTR</strong></td>
-</tr>
-<tr class="odd">
-<td>DEX_IDS_INVALID_DEFAULT_DXT</td>
-<td>Il CLSID dell'effetto o della transizione predefinita non è valido.</td>
-<td>CLSID</td>
-<td><strong>BSTR</strong></td>
-</tr>
-<tr class="even">
-<td>DEX_IDS_NO_3D</td>
-<td>La versione di DirectX non supporta le transizioni tridimensionali.</td>
-<td>CLSID</td>
-<td><strong>BSTR</strong></td>
-</tr>
-<tr class="odd">
-<td>DEX_IDS_BROKEN_DXT</td>
-<td>Questo effetto non è del tipo giusto o è interrotto.</td>
-<td>CLSID</td>
-<td><strong>BSTR</strong></td>
-</tr>
-<tr class="even">
-<td>DEX_IDS_NO_SUCH_PROPERTY</td>
-<td>Questa proprietà non esiste nell'oggetto .</td>
-<td>Nome proprietà</td>
-<td><strong>BSTR</strong></td>
-</tr>
-<tr class="odd">
-<td>DEX_IDS_ILLEGAL_PROPERTY_VAL</td>
-<td>Valore non valido per questa proprietà.</td>
-<td>Valore specificato</td>
-<td><strong>Variante</strong></td>
-</tr>
-<tr class="even">
-<td>DEX_IDS_INVALID_XML</td>
-<td>Errore di sintassi nel file XML.</td>
-<td>Numero di riga</td>
-<td>VT_I4 (intero a 4 byte)</td>
-</tr>
-<tr class="odd">
-<td>DEX_IDS_CANT_FIND_FILTER</td>
-<td>Impossibile trovare il filtro specificato in XML in base alla categoria e all'istanza.</td>
-<td>Nome descrittivo (istanza)</td>
-<td><strong>BSTR</strong></td>
-</tr>
-<tr class="even">
-<td>DEX_IDS_DISK_WRITE_ERROR</td>
-<td>Errore durante la scrittura del file XML su disco.</td>
-<td>Nessuno</td>
-<td>Non applicabile</td>
-</tr>
-<tr class="odd">
-<td>DEX_IDS_INVALID_AUDIO_FX</td>
-<td>CLSID non è un filtro DirectShow effetto audio valido.</td>
-<td>CLSID</td>
-<td><strong>BSTR</strong></td>
-</tr>
-<tr class="even">
-<td>DEX_IDS_CANT_FIND_COMPRESSOR</td>
-<td>Impossibile trovare un file per produrre il formato di compressione specificato.</td>
-<td>Nessuno</td>
-<td>Non applicabile</td>
-</tr>
-</tbody>
-</table>
+
+| Codice di errore | Descrizione | Informazioni aggiuntive | Tipo variant | 
+|------------|-------------|-------------------|--------------|
+| DEX_IDS_BAD_SOURCE_NAME | Il nome file non esiste o DirectShow non riconosce l'estensione del file. | Nome file | <strong>BSTR</strong> | 
+| DEX_IDS_BAD_SOURCE_NAME2 | Il tipo di file non corrisponde all'estensione di file o il file è danneggiato. | Nome file | <strong>BSTR</strong> | 
+| DEX_IDS_MISSING_SOURCE_NAME | Il nome file era obbligatorio, ma non è stato specificato. | Nessuno | Non applicabile | 
+| DEX_IDS_UNKNOWN_SOURCE | Impossibile analizzare l'origine dati fornita da questa origine. | Nessuno | Non applicabile | 
+| DEX_IDS_INSTALL_PROBLEM | Errore imprevisto. Alcuni DirectShow componente non sono installati correttamente. | Nessuno | Non applicabile | 
+| DEX_IDS_NO_SOURCE_NAMES | Il filtro di origine non accetta nomi di file. | Nessuno | Non applicabile | 
+| DEX_IDS_BAD_MEDIATYPE | Il tipo di supporto del gruppo non è supportato. | Numero gruppo | <strong>int</strong> | 
+| DEX_IDS_STREAM_NUMBER | Numero di flusso non valido per questa origine. | Numero di flusso | <strong>int</strong> | 
+| DEX_IDS_OUTOFMEMORY | Memoria insufficiente. | Nessuno | Non applicabile | 
+| DEX_IDS_DIBSEQ_NOTALLSAME | Una bitmap nella sequenza non era dello stesso tipo delle altre. | Nome bitmap | <strong>BSTR</strong> | 
+| DEX_IDS_CLIPTOOSHORT | I tempi multimediali del clip non sono validi o la sequenza DIB (Device-Independent Bitmap) è troppo breve.<blockquote>[!Note]<br />Se si verificano altri errori di rendering, questo errore potrebbe verificarsi anche se i tempi dei supporti sono validi.</blockquote><br /> | Nessuno | Non applicabile | 
+| DEX_IDS_INVALID_DXT | L'identificatore di classe (CLSID) dell'effetto o della transizione non è valido. | CLSID | <strong>BSTR</strong> | 
+| DEX_IDS_INVALID_DEFAULT_DXT | Il CLSID dell'effetto o della transizione predefinita non è valido. | CLSID | <strong>BSTR</strong> | 
+| DEX_IDS_NO_3D | La versione di DirectX non supporta le transizioni tridimensionali. | CLSID | <strong>BSTR</strong> | 
+| DEX_IDS_BROKEN_DXT | Questo effetto non è del tipo giusto o viene interrotto. | CLSID | <strong>BSTR</strong> | 
+| DEX_IDS_NO_SUCH_PROPERTY | Questa proprietà non esiste nell'oggetto . | Nome proprietà | <strong>BSTR</strong> | 
+| DEX_IDS_ILLEGAL_PROPERTY_VAL | Valore non valido per questa proprietà. | Valore specificato | <strong>VARIANTE</strong> | 
+| DEX_IDS_INVALID_XML | Errore di sintassi nel file XML. | Numero di riga | VT_I4 (intero a 4 byte) | 
+| DEX_IDS_CANT_FIND_FILTER | Impossibile trovare il filtro specificato in XML in base alla categoria e all'istanza. | Nome descrittivo (istanza) | <strong>BSTR</strong> | 
+| DEX_IDS_DISK_WRITE_ERROR | Errore durante la scrittura del file XML su disco. | Nessuno | Non applicabile | 
+| DEX_IDS_INVALID_AUDIO_FX | CLSID non valido DirectShow filtro effetto audio. | CLSID | <strong>BSTR</strong> | 
+| DEX_IDS_CANT_FIND_COMPRESSOR | Impossibile trovare un file per produrre il formato di compressione specificato. | Nessuno | Non applicabile | 
+
 
 
 
  
 
-Gli errori seguenti non dovrebbero mai verificarsi. Se si verifica uno di questi errori, inviare una segnalazione di bug a Microsoft.
+Gli errori seguenti non devono mai verificarsi. Se si verifica uno di questi errori, inviare una segnalazione di bug a Microsoft.
 
 
 

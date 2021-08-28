@@ -1,49 +1,49 @@
 ---
-description: Per gli utenti in tutto il mondo, l'input testuale fa parte di un'esperienza di elaborazione moderna, per blogging, commenti, Tweet, messaggistica istantanea o qualsiasi altro tipo di testo. In Windows 8, il controllo ortografico è incorporato per modificare i controlli.
+description: Per gli utenti di tutto il mondo, l'input testuale fa parte di un'esperienza di elaborazione moderna, per blog, commenti, tweet, messaggistica immediata o qualsiasi altro tipo di digitazione di testo. In Windows 8, il controllo ortografico è incorporato per modificare i controlli.
 ms.assetid: ED569D4F-568B-4381-91C3-8EAEDA4DD47C
-title: Informazioni sull'API controllo ortografico
+title: Informazioni sull'API Controllo ortografico
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 2f0d356823e665781052e2a2d5ea98b358155038
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 0e3c15594be003b67a6e0c9df62e234e8076cd4ea213bc08468f3bb72698f51f
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "103883018"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119754941"
 ---
-# <a name="about-the-spell-checking-api"></a>Informazioni sull'API controllo ortografico
+# <a name="about-the-spell-checking-api"></a>Informazioni sull'API Controllo ortografico
 
-Per gli utenti in tutto il mondo, l'input testuale fa parte di un'esperienza di elaborazione moderna, per blogging, commenti, Tweet, messaggistica istantanea o qualsiasi altro tipo di testo. In Windows 8, il controllo ortografico è incorporato per modificare i controlli.
+Per gli utenti di tutto il mondo, l'input testuale fa parte di un'esperienza di elaborazione moderna, per blog, commenti, tweet, messaggistica immediata o qualsiasi altro tipo di digitazione di testo. In Windows 8, il controllo ortografico è incorporato per modificare i controlli.
 
-Gli sviluppatori possono usare l'API di controllo ortografico nelle app per utilizzare i servizi di controllo ortografico disponibili. Gli sviluppatori possono inoltre creare i controllo ortografici che diventano provider e sono integrati nel Framework di controllo ortografico di Windows.
+Gli sviluppatori possono usare l'API controllo ortografico nelle app per usare i servizi di controllo ortografico disponibili. Gli sviluppatori possono anche creare correttori ortografico che diventano provider e sono integrati nel framework Windows controllo ortografico.
 
-L'API di controllo ortografico è progettata per l'uso da parte degli sviluppatori C/C++ professionali delle app Windows Component Object Model (COM). L'API di controllo ortografico non è supportata per l'uso in un servizio Windows o ASP.NET.
+L'API Controllo ortografico è progettata per l'uso da parte di sviluppatori professionisti C/C++ di app Windows Component Object Model (COM). L'API Controllo ortografico non è supportata per l'uso in Windows o ASP.NET servizio.
 
 ## <a name="versioning"></a>Controllo delle versioni
 
-L'API controllo ortografico è disponibile a partire da Windows 8 o Windows Server 2012. Le aggiunte future all'API verranno gestite creando nuove interfacce che possono essere determinate usando [**QueryInterface**](/windows/win32/api/unknwn/nf-unknwn-iunknown-queryinterface(q)) su quelle esistenti.
+L'API Controllo ortografico è disponibile a partire Windows 8 o Windows Server 2012. Le aggiunte future all'API verranno gestite creando nuove interfacce che possono essere determinate usando [**QueryInterface**](/windows/win32/api/unknwn/nf-unknwn-iunknown-queryinterface(q)) su quelle esistenti.
 
 ## <a name="interfaces"></a>Interfacce
 
-Tutte le interfacce devono essere rilasciate quando non sono più utilizzate. Tutte le stringhe restituite (parametro out) **LPWSTR** (e gli elementi **LPOLESTR** da [**IEnumString**](/windows/win32/api/objidlbase/nn-objidlbase-ienumstring)) devono essere rilasciate con [**CoTaskMemFree**](/windows/win32/api/combaseapi/nf-combaseapi-cotaskmemfree) quando non vengono più usate.
+Tutte le interfacce devono essere rilasciate quando non vengono più usate. Tutte le stringhe **LPWSTR** restituite (parametro out) (e gli elementi **LPOLESTR** di [**IEnumString**](/windows/win32/api/objidlbase/nn-objidlbase-ienumstring)) devono essere rilasciate con [**CoTaskMemFree**](/windows/win32/api/combaseapi/nf-combaseapi-cotaskmemfree) quando non vengono più usate.
 
 ## <a name="error-handling"></a>Gestione degli errori
 
-Gli errori vengono restituiti come **HRESULT** s. [**IErrorInfo**](/windows/win32/api/oaidl/nn-oaidl-ierrorinfo) e [**ISupportErrorInfo**](/windows/win32/api/oaidl/nn-oaidl-isupporterrorinfo) non sono supportati in questa API. Gli errori non sono particolarmente praticabili ad eccezione degli argomenti non corretti.
+Gli errori vengono restituiti **come HRESULT** s. [**IErrorInfo**](/windows/win32/api/oaidl/nn-oaidl-ierrorinfo) e [**ISupportErrorInfo**](/windows/win32/api/oaidl/nn-oaidl-isupporterrorinfo) non sono supportati in questa API. Gli errori non sono particolarmente gestibili se non per argomenti non corretti.
 
-I codici di errore RPC standard possono essere restituiti da qualsiasi chiamata API perché sono out-of-process. Si applicano i timeout standard RPC.
+I codici di errore RPC standard possono essere restituiti da una delle chiamate API perché sono out-of-process. Si applicano timeout RPC standard.
 
 ## <a name="security"></a>Sicurezza
 
-L'API di controllo ortografico può caricare codice esterno (provider di controllo ortografico). Questo codice verrà eseguito out-of-process e in un contesto di sicurezza con restrizioni.
+L'API Controllo ortografico può caricare codice esterno (provider di controllo ortografico). Questo codice verrà eseguito out-of-process e in un contesto di sicurezza limitato.
 
-## <a name="dictionary-files"></a>File dizionario
+## <a name="dictionary-files"></a>File di dizionario
 
-I dizionari specifici dell'utente per una lingua che contiene il contenuto per gli elenchi di parole aggiunte, escluse e corrette si trovano in% AppData% \\ Microsoft \\ spelling \\ *<language tag>* . I nomi file sono default. dic (added), default. exc (escluso) e default. ACL (correzione automatica). I file sono di testo non crittografato UTF-16 che deve iniziare con il BOM (Byte Order Mark) appropriato. Ogni riga contiene una parola (negli elenchi di parole aggiunte ed escluse) o una coppia di correzione automatica con le parole separate da una barra verticale (" \| ") (nell'elenco di parole correzione automatica). Altri file. dic,. exc e. ACL presenti nella directory verranno rilevati dal servizio di controllo ortografico e aggiunti agli elenchi di parole utente. Questi file sono considerati di sola lettura e non vengono modificati dall'API di controllo ortografico.
+I dizionari specifici dell'utente per una lingua, che contengono il contenuto per gli elenchi di parole Aggiunte, Escluse e Correzione automatica, si trovano in %AppData% \\ Microsoft \\ Spelling \\ *<language tag>* . I nomi dei file sono default.dic (Added), default.exc (Excluded) e default.acl (Correzione automatica). I file sono testo non crittografato UTF-16 LE che deve iniziare con il byte order mark (BOM) appropriato. Ogni riga contiene una parola (negli elenchi Parole aggiunte ed escluse) o una coppia di correzione automatica con le parole separate da una barra verticale (" ") (nell'elenco di parole di Correzione \| automatica). Altri file con estensione dic, exc e acl presenti nella directory verranno rilevati dal servizio di controllo ortografico e aggiunti agli elenchi di parole utente. Questi file sono considerati di sola lettura e non vengono modificati dall'API di controllo ortografico.
 
 ## <a name="installing-a-spell-checking-provider"></a>Installazione di un provider di controllo ortografico
 
-L'installazione di un provider di controllo ortografico deve inserire tutti i file usati in un percorso che consenta l'accesso in lettura dal SID ([ID di sicurezza](../secauthz/security-identifiers.md)) "tutti i pacchetti dell'applicazione". L'installazione in una cartella in "programmi" funziona correttamente. Inoltre, il provider deve impostare alcune chiavi nel registro affinché venga visualizzato nell'API di controllo ortografico. Può trovarsi nell'hive dell' \_ utente corrente di HKEY \_ o nell' \_ hive del computer locale hKey, \_ a seconda che venga installato solo per l'utente corrente o per tutti gli utenti.
+L'installazione di un provider di controllo ortografico deve inserire tutti i file utilizzati in un percorso che consenta l'accesso in lettura dal SID[(](../secauthz/security-identifiers.md)identificatore di sicurezza ) "ALL APPLICATION PACKAGES". L'installazione in una cartella in "Programmi" funziona correttamente. Inoltre, il provider deve impostare alcune chiavi nel Registro di sistema perché venga visualizzata nell'API controllo ortografico. Può essere presente nell'hive HKEY CURRENT USER o \_ \_ nell'hive HKEY LOCAL MACHINE a seconda che debba essere installato solo per l'utente corrente \_ o per tutti gli \_ utenti.
 
 
 ```
@@ -62,15 +62,15 @@ Key: <Registry hive>\SOFTWARE\Microsoft\Spelling\Spellers\<Provider id string>
 
 
 
-L' [esempio del provider di controllo ortografico](https://github.com/microsoft/Windows-classic-samples/tree/master/Samples/SpellCheckerProvider) fornisce un esempio della registrazione necessaria per installare un provider.
+[L'esempio di provider di controllo](https://github.com/microsoft/Windows-classic-samples/tree/master/Samples/SpellCheckerProvider) ortografico fornisce un esempio della registrazione necessaria per installare un provider.
 
-Se si creano nuove opzioni di controllo ortografico per un provider di controllo ortografico, vedere [**IOptionDescription:: ID**](/windows/desktop/api/Spellcheck/nf-spellcheck-ioptiondescription-get_id) per informazioni aggiuntive sulla denominazione.
+Se si creano nuove opzioni di controllo ortografico per un provider di controllo ortografico, vedere [**IOptionDescription::Id**](/windows/desktop/api/Spellcheck/nf-spellcheck-ioptiondescription-get_id) per indicazioni sulla denominazione.
 
 ## <a name="related-topics"></a>Argomenti correlati
 
 <dl> <dt>
 
-[Riferimento all'API controllo ortografico](spell-checker-api-reference.md)
+[Informazioni di riferimento sulle API di controllo ortografico](spell-checker-api-reference.md)
 </dt> <dt>
 
 [Esempio di client di controllo ortografico](https://github.com/microsoft/Windows-classic-samples/tree/master/Samples/SpellCheckerClient)
@@ -79,10 +79,10 @@ Se si creano nuove opzioni di controllo ortografico per un provider di controllo
 [Esempio di provider di controllo ortografico](https://github.com/microsoft/Windows-classic-samples/tree/master/Samples/SpellCheckerProvider)
 </dt> <dt>
 
-[**IOptionDescription:: ID**](/windows/desktop/api/Spellcheck/nf-spellcheck-ioptiondescription-get_id)
+[**IOptionDescription::Id**](/windows/desktop/api/Spellcheck/nf-spellcheck-ioptiondescription-get_id)
 </dt> <dt>
 
-[**IEnumString**](/windows/win32/api/objidlbase/nn-objidlbase-ienumstring)
+[**Ienumstring**](/windows/win32/api/objidlbase/nn-objidlbase-ienumstring)
 </dt> <dt>
 
 [**QueryInterface**](/windows/win32/api/unknwn/nf-unknwn-iunknown-queryinterface(q))

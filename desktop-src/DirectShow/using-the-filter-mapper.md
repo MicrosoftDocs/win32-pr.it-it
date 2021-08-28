@@ -1,23 +1,23 @@
 ---
-description: Uso del mapper dei filtri
+description: Uso di Filter Mapper
 ms.assetid: 3f774350-4508-437f-98d1-cca91220f339
-title: Uso del mapper dei filtri
+title: Uso di Filter Mapper
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 2c2d7acf85a7b415fc161cd21e17d069b46c3f40
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 48758c40b97477200b4fab1215eaccac53823771add86d6a8b915370776495a0
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "103883097"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120049612"
 ---
-# <a name="using-the-filter-mapper"></a>Uso del mapper dei filtri
+# <a name="using-the-filter-mapper"></a>Uso di Filter Mapper
 
-Il [mapper del filtro](filter-mapper.md) è un oggetto com che enumera i filtri DirectShow in base a diversi criteri di ricerca. Il mapper del filtro può essere meno efficiente rispetto all'enumeratore di dispositivi di sistema, pertanto se sono necessari filtri da una determinata categoria, è necessario usare l'enumeratore di dispositivo di sistema. Tuttavia, se è necessario individuare un filtro che supporti una determinata combinazione di tipi di supporto, ma non rientra in una categoria non crittografata, potrebbe essere necessario utilizzare il mapper dei filtri. Un esempio potrebbe essere un filtro Renderer o un filtro decodificatore.
+Filter [Mapper è](filter-mapper.md) un oggetto COM che enumera DirectShow filtri in base a vari criteri di ricerca. Il filtro mapper può essere meno efficiente rispetto all'enumeratore dispositivo di sistema, quindi se sono necessari filtri da una determinata categoria, è consigliabile usare l'enumeratore dispositivo di sistema. Tuttavia, se è necessario individuare un filtro che supporta una determinata combinazione di tipi di supporti, ma non rientra in una categoria chiara, potrebbe essere necessario usare Il mapper filtri. Un esempio è un filtro renderer o un filtro decodificatore.
 
-Il mapper del filtro espone l'interfaccia [**IFilterMapper2**](/windows/desktop/api/Strmif/nn-strmif-ifiltermapper2) . Per cercare un filtro, chiamare il metodo [**IFilterMapper2:: EnumMatchingFilters**](/windows/desktop/api/Strmif/nf-strmif-ifiltermapper2-enummatchingfilters) . Questo metodo accetta diversi parametri che definiscono i criteri di ricerca e restituisce un enumeratore per i filtri corrispondenti. L'enumeratore supporta l'interfaccia [**IEnumMoniker**](/windows/win32/api/objidl/nn-objidl-ienummoniker) e fornisce un moniker univoco per ogni filtro corrispondente.
+Filter Mapper espone [**l'interfaccia IFilterMapper2.**](/windows/desktop/api/Strmif/nn-strmif-ifiltermapper2) Per cercare un filtro, chiamare il [**metodo IFilterMapper2::EnumMatchingFilters.**](/windows/desktop/api/Strmif/nf-strmif-ifiltermapper2-enummatchingfilters) Questo metodo accetta diversi parametri che definiscono i criteri di ricerca e restituisce un enumeratore per i filtri corrispondenti. L'enumeratore supporta [**l'interfaccia IEnumMoniker**](/windows/win32/api/objidl/nn-objidl-ienummoniker) e fornisce un moniker univoco per ogni filtro corrispondente.
 
-Nell'esempio seguente vengono enumerati i filtri che accettano input video digitale (DV) e hanno almeno un pin di output di qualsiasi tipo di supporto. Il filtro del [decodificatore video DV](dv-video-decoder-filter.md) corrisponde a questi criteri.
+Nell'esempio seguente vengono enumerati i filtri che accettano l'input video digitale (DV) e hanno almeno un pin di output di qualsiasi tipo di supporto. Il filtro [decodificatore video DV](dv-video-decoder-filter.md) corrisponde a questi criteri.
 
 
 ```C++
@@ -93,20 +93,20 @@ pEnum->Release();
 
 
 
-Il metodo [**EnumMatchingFilters**](/windows/desktop/api/Strmif/nf-strmif-ifiltermapper2-enummatchingfilters) ha un numero di parametri piuttosto elevato, commentati nell'esempio. I valori significativi per questo esempio includono:
+Il [**metodo EnumMatchingFilters**](/windows/desktop/api/Strmif/nf-strmif-ifiltermapper2-enummatchingfilters) ha un numero piuttosto elevato di parametri, commentati nell'esempio. I valori significativi per questo esempio includono:
 
--   Valore minimo di Merit: il filtro deve avere un valore Merit superiore a MERIT non \_ \_ \_ usare.
--   Tipi di input: il chiamante passa una matrice contenente coppie di tipi e sottotipi principali. Solo i filtri che supportano almeno una di queste coppie corrisponderanno.
--   Corrispondenza esatta: un filtro può registrare i valori **null** per il tipo principale, il sottotipo, la categoria del PIN o il supporto. A meno che non si specifichi la corrispondenza esatta, un valore **null** funge da carattere jolly e corrisponde a qualsiasi valore specificato dall'utente. Con la corrispondenza esatta, il filtro deve corrispondere esattamente ai criteri specificati. Tuttavia, se si assegna un parametro **null** nei criteri di ricerca, viene sempre usato come carattere jolly o come valore "Don ' t Care", che corrisponde a qualsiasi filtro.
+-   Valore minimo di merito: il filtro deve avere un valore di merito superiore a MERIT \_ DO \_ NOT \_ USE.
+-   Tipi di input: il chiamante passa una matrice contenente coppie di tipi principali e sottotipi. Solo i filtri che supportano almeno una di queste coppie corrisponderanno.
+-   Corrispondenza esatta: un filtro può registrare **valori NULL** per il tipo principale, il sottotipo, la categoria pin o il supporto. A meno che non si specifica una corrispondenza esatta, un **valore NULL** funge da carattere jolly, corrispondente a qualsiasi valore specificato. Con la corrispondenza esatta, il filtro deve corrispondere esattamente ai criteri. Tuttavia, se si assegna un **parametro NULL** nei criteri di ricerca, questo funge sempre da carattere jolly o da valore "don't care", corrispondente a qualsiasi filtro.
 
 ## <a name="related-topics"></a>Argomenti correlati
 
 <dl> <dt>
 
-[Enumerazione dei dispositivi e dei filtri](enumerating-devices-and-filters.md)
+[Enumerazione di dispositivi e filtri](enumerating-devices-and-filters.md)
 </dt> <dt>
 
-[Connessione intelligente](intelligent-connect.md)
+[Gestione Connessione](intelligent-connect.md)
 </dt> </dl>
 
  

@@ -1,9 +1,9 @@
 ---
-title: attributo ncacn_vns_spp
-description: La \_ \_ parola chiave ncacn le reti virtuali spp identifica Banyan VINES SPP come famiglia di protocolli per l'endpoint. Questa famiglia di protocolli è obsoleta e non deve essere utilizzata nelle nuove applicazioni.
+title: ncacn_vns_spp attributo
+description: La parola chiave ncacn \_ vns \_ spp identifica Banyan Vines SPP come famiglia di protocolli per l'endpoint. Questa famiglia di protocolli è obsoleta e non deve essere usata nelle nuove applicazioni.
 ms.assetid: a2aff0a6-2e7e-43e4-a180-f1ddd0456843
 keywords:
-- attributo ncacn_vns_spp MIDL
+- ncacn_vns_spp attributo MIDL
 topic_type:
 - apiref
 api_name:
@@ -12,16 +12,16 @@ api_type:
 - NA
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 84e72cd17ae65fbffc2cef280f15d12ba0ddbdbe
-ms.sourcegitcommit: ebd3ce6908ff865f1ef66f2fc96769be0aad82e1
+ms.openlocfilehash: e8409e7e9e0bfc01545ac73673f0653c5a4940c65422223233ec5005f5c9fc02
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/19/2020
-ms.locfileid: "103726079"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119560281"
 ---
-# <a name="ncacn_vns_spp-attribute"></a>\_attributo ncacn le reti virtuali \_ spp
+# <a name="ncacn_vns_spp-attribute"></a>Attributo spp ncacn \_ vns \_
 
-La parola chiave **ncacn \_ le reti virtuali \_ spp** identifica Banyan VINES SPP come famiglia di protocolli per l'endpoint. Questa famiglia di protocolli è obsoleta e non deve essere utilizzata nelle nuove applicazioni.
+La **parola chiave ncacn \_ vns \_ spp** identifica Banyan Vines SPP come famiglia di protocolli per l'endpoint. Questa famiglia di protocolli è obsoleta e non deve essere usata nelle nuove applicazioni.
 
 ``` syntax
 endpoint("ncacn_vns_spp:server-name[port-address]")
@@ -31,30 +31,30 @@ endpoint("ncacn_vns_spp:server-name[port-address]")
 
 <dl> <dt>
 
-*nome server* 
+*server-name* 
 </dt> <dd>
 
-Specifica il nome StreetTalk del server. Il nome è nel formato item@group @organization . L'elemento può contenere un massimo di 31 caratteri e il gruppo e l'organizzazione possono avere un massimo di 15 caratteri.
+Specifica il nome StreetTalk del server. Il nome è nel formato item@group @organization . L'elemento può contenere fino a 31 caratteri e il gruppo e l'organizzazione possono contenere fino a 15 caratteri.
 
 </dd> <dt>
 
-*nome porta* 
+*port-name* 
 </dt> <dd>
 
-Specifica una porta Banyan VINES SPP. L'intervallo valido per gli endpoint statici è 250-511.
+Specifica una porta SPP Banyan Vines. L'intervallo valido per gli endpoint statici è compreso tra 250 e 511.
 
 </dd> </dl>
 
 ## <a name="remarks"></a>Commenti
 
-Per usare il protocollo di trasporto **ncacn \_ le reti virtuali \_ spp** nelle applicazioni distribuite in esecuzione su Windows 2000, è necessario installare il software Banyan Enterprise client appropriato. Al termine dell'installazione, aprire il **Pannello di controllo**, scegliere **configurazione e Aggiungi**, quindi selezionare **servizio \| \| servizi RPC di Banyan per Banyan**. Il supporto per i client a 16 bit richiede il software VINES appropriato. Per ulteriori informazioni sul prodotto Enterprise Client di Banyan e sul software a 16 bit Vines, contattare Banyan.
+Per usare il protocollo di trasporto **ncacn \_ vns \_ spp** nelle applicazioni distribuite in esecuzione in Windows 2000, è necessario installare il software banyan Enterprise Client appropriato. Dopo **l'installazione, aprire Pannello di controllo**, scegliere **Configurazione e Aggiungi**, quindi selezionare Servizi RPC **\| Banyan per \| Banyan**. Il supporto per i client a 16 bit richiede software Vines appropriato. Per altre informazioni sul prodotto banyan Enterprise Client e sul software Vines a 16 bit, contattare Banyan.
 
-La sintassi della stringa di porta del trasporto del Banyan VINES, come tutte le stringhe di porta, viene definita indipendentemente dalla specifica IDL. Il compilatore esegue alcune verifiche della sintassi, ma non garantisce che la specifica dell'endpoint sia corretta. È possibile che alcuni errori vengano segnalati in fase di esecuzione anziché in fase di compilazione.
+La sintassi della stringa della porta di trasporto SPP Banyan Vines, come tutte le stringhe di porta, è definita indipendentemente dalla specifica IDL. Il compilatore esegue un controllo della sintassi, ma non garantisce che la specifica dell'endpoint sia corretta. Alcuni errori possono essere segnalati in fase di esecuzione anziché in fase di compilazione.
 
 > [!Note]  
 > Questa famiglia di protocolli non è supportata in Windows XP.
 
- 
+ 
 
 ## <a name="examples"></a>Esempi
 
@@ -74,48 +74,48 @@ interface iface
 
 <dl> <dt>
 
-[**endpoint**](endpoint.md)
+[**Endpoint**](endpoint.md)
 </dt> <dt>
 
 [File di definizione dell'interfaccia (IDL)](interface-definition-idl-file.md)
 </dt> <dt>
 
-[**ncacn \_ in \_ DSP**](ncacn-at-dsp.md)
+[**ncacn \_ in \_ dsp**](ncacn-at-dsp.md)
 </dt> <dt>
 
-[**ncacn \_ DNET \_ NSP**](ncacn-dnet-nsp.md)
+[**ncacn \_ dnet \_ nsp**](ncacn-dnet-nsp.md)
 </dt> <dt>
 
-[**\_TCP IP \_ ncacn**](ncacn-ip-tcp.md)
+[**ncacn \_ ip \_ tcp**](ncacn-ip-tcp.md)
 </dt> <dt>
 
-[**ncacn \_ NB \_ IPX**](ncacn-nb-ipx.md)
+[**ncacn \_ nb \_ ipx**](ncacn-nb-ipx.md)
 </dt> <dt>
 
-[**\_SPX ncacn**](ncacn-spx.md)
+[**ncacn \_ spx**](ncacn-spx.md)
 </dt> <dt>
 
-[**ncacn \_ NB \_ NB**](ncacn-nb-nb.md)
+[**ncacn \_ nb \_ nb**](ncacn-nb-nb.md)
 </dt> <dt>
 
-[**ncacn \_ NB \_ TCP**](ncacn-nb-tcp.md)
+[**ncacn \_ nb \_ tcp**](ncacn-nb-tcp.md)
 </dt> <dt>
 
-[**\_NP ncacn**](ncacn-np.md)
+[**ncacn \_ np**](ncacn-np.md)
 </dt> <dt>
 
 [**ncalrpc**](ncalrpc.md)
 </dt> <dt>
 
-[**ncadg \_ IPX**](ncadg-ipx.md)
+[**ncadg \_ ipx**](ncadg-ipx.md)
 </dt> <dt>
 
-[**\_UDP IP \_ ncadg**](ncadg-ip-udp.md)
+[**ncadg \_ ip \_ udp**](ncadg-ip-udp.md)
 </dt> <dt>
 
-[Associazione stringa](/windows/desktop/Rpc/string-binding)
+[associazione di stringhe](/windows/desktop/Rpc/string-binding)
 </dt> </dl>
 
- 
+ 
 
- 
+ 

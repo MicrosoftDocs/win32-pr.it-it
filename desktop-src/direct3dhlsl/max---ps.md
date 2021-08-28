@@ -1,6 +1,6 @@
 ---
-title: max-PS
-description: Calcola il numero massimo di origini. | max-PS
+title: max - ps
+description: Calcola il numero massimo di origini. | max - ps
 ms.assetid: 3d3bef5b-0ff7-441b-8681-a3f4cde0ae4f
 ms.topic: reference
 ms.date: 05/31/2018
@@ -9,14 +9,14 @@ topic_type:
 api_name: ''
 api_type: ''
 api_location: ''
-ms.openlocfilehash: c6186f0bd57acd4862a62a4c0a30ae92118b75ce
-ms.sourcegitcommit: 92e74c99f8f4d097676959d0c317f533c2400a80
+ms.openlocfilehash: da2c6a21b7d3c415d4ae5339349bf929cbe6818795e2ea22de449aa0bbb237f2
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/09/2021
-ms.locfileid: "104982070"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118986381"
 ---
-# <a name="max---ps"></a>max-PS
+# <a name="max---ps"></a>max - ps
 
 Calcola il numero massimo di origini.
 
@@ -24,7 +24,7 @@ Calcola il numero massimo di origini.
 
 
 
-| Max DST, src0, src1 |
+| max dst, src0, src1 |
 |---------------------|
 
 
@@ -33,7 +33,7 @@ Calcola il numero massimo di origini.
 
 dove
 
--   DST è il registro di destinazione.
+-   dst è il registro di destinazione.
 -   src0 è un registro di origine.
 -   src1 è un registro di origine.
 
@@ -41,7 +41,7 @@ dove
 
 
 
-| Versioni pixel shader | 1\_1 | 1\_2 | 1 \_ 3 | 1\_4 | 2 \_ 0 | 2 \_ x | 2 \_ SW | 3 \_ 0 | 3 \_ SW |
+| Versioni pixel shader | 1\_1 | 1\_2 | 1 \_ 3 | 1\_4 | 2 \_ 0 | 2 \_ x | 2 \_ sw | 3 \_ 0 | 3 \_ sw |
 |-----------------------|------|------|------|------|------|------|-------|------|-------|
 | max                   |      |      |      |      | x    | x    | x     | x    | x     |
 
@@ -49,7 +49,7 @@ dove
 
  
 
-Il frammento di codice seguente mostra le operazioni eseguite.
+Il frammento di codice seguente illustra le operazioni eseguite.
 
 
 ```
@@ -65,7 +65,7 @@ dest.w=(src0.w >= src1.w) ? src0.w : src1.w;
 
 <dl> <dt>
 
-[Istruzioni pixel shader](dx9-graphics-reference-asm-ps-instructions.md)
+[Istruzioni per pixel shader](dx9-graphics-reference-asm-ps-instructions.md)
 </dt> </dl>
 
  

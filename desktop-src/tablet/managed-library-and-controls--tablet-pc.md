@@ -4,12 +4,12 @@ ms.assetid: d9c491c9-d341-4189-9a41-45c4d78322fa
 title: Libreria e controlli gestiti (Tablet PC)
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: d031a97226d200b99a6d36b42e3e4c43862f5b6ac52203ee4ca08d1e5714f2c7
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 81b4096ba54d3cd882b3ee50469d94792b4a46ce
+ms.sourcegitcommit: 61a4c522182aa1cacbf5669683d9570a3bf043b2
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119031729"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "122884280"
 ---
 # <a name="managed-library-and-controls-tablet-pc"></a>Libreria e controlli gestiti (Tablet PC)
 
@@ -19,8 +19,8 @@ Per compilare applicazioni Tablet PC in C e Visual Basic .NET, il progetto in Mi
 
 In Windows Vista gli assembly della libreria gestita di Tablet PC vengono installati per impostazione predefinita in due directory:
 
--   <systemdrive>: \\ Programmi File comuni Directory Microsoft Shared \\ \\ \\ Ink
--   <systemdrive>: \\ Programmi Microsoft SDK Windows bin \\ \\ \\ v6.0 \\
+-   &lt;&gt;systemdrive: Programmi File comuni Directory Microsoft Shared \\ \\ \\ \\ Ink
+-   &lt;&gt;systemdrive: Programmi Microsoft SDK Windows Bin \\ \\ \\ \\ v6.0 \\
 
 Per aggiungere un riferimento alle librerie gestite della piattaforma Tablet PC in Microsoft Visual Studio .NET:
 

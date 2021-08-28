@@ -1,23 +1,23 @@
 ---
-description: Definire il set di azioni per l' \_ archiviazione IOCTL \_ gestire il codice di controllo degli attributi del \_ set di dati \_ \_ .
+description: Definire il set di azioni per il codice di controllo IOCTL \_ STORAGE MANAGE DATA SET \_ \_ \_ \_ ATTRIBUTES.
 ms.assetid: ff688c9a-8669-4699-aab9-1e2e3a5c7fca
-title: DEVICE_DATA_MANAGEMENT_SET_ACTION (WinIoCtl. h)
+title: DEVICE_DATA_MANAGEMENT_SET_ACTION (WinIoCtl.h)
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 524d1dbd2ecf09dbcfa66fa766089dde7cf04a0d
-ms.sourcegitcommit: c7add10d695482e1ceb72d62b8a4ebd84ea050f7
+ms.openlocfilehash: 602243e31645e1cc4706e3a3a2b954bb68fc2cbda58a0f0b6c9076ae6b0797f3
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "103877749"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119654921"
 ---
-# <a name="device_data_management_set_action"></a>\_ \_ azione set di gestione dati \_ del \_ dispositivo
+# <a name="device_data_management_set_action"></a>AZIONE \_ DEL SET DI GESTIONE DEI DATI DEI \_ \_ \_ DISPOSITIVI
 
-I valori costanti seguenti sono il set di valori possibili per il tipo di **\_ \_ \_ \_ azione set di gestione dati del dispositivo** , definito come tipo **DWORD**.
+I valori costanti seguenti sono il set di valori possibili per il tipo **DEVICE DATA MANAGEMENT SET \_ \_ \_ \_ ACTION,** definito come **tipo DWORD**.
 
 <dl> <dt>
 
-<span id="DeviceDsmAction_None"></span><span id="devicedsmaction_none"></span><span id="DEVICEDSMACTION_NONE"></span>**DeviceDsmAction \_ None**
+<span id="DeviceDsmAction_None"></span><span id="devicedsmaction_none"></span><span id="DEVICEDSMACTION_NONE"></span>**DeviceDsmAction \_ Nessuno**
 </dt> <dd> <dl> <dt>
 
 0
@@ -38,40 +38,40 @@ Non viene eseguita alcuna azione.
 
 
 
-Viene eseguita un'azione trim.
+Viene eseguita un'azione di taglio.
 
 
 </dt> </dl> </dd> <dt>
 
-<span id="DeviceDsmAction_Notification"></span><span id="devicedsmaction_notification"></span><span id="DEVICEDSMACTION_NOTIFICATION"></span>**\_Notifica DeviceDsmAction**
+<span id="DeviceDsmAction_Notification"></span><span id="devicedsmaction_notification"></span><span id="DEVICEDSMACTION_NOTIFICATION"></span>**Notifica \_ DeviceDsmAction**
 </dt> <dd> <dl> <dt>
 
-2 \| **DeviceDsmActionFlag non \_ distruttivo** (0x80000002)
+2 \| **DeviceDsmActionFlag \_ NonDestructive** (0x80000002)
 </dt> <dt>
 
 
 
-Viene eseguita un'azione di notifica. I parametri si trovano in una struttura di [**\_ \_ \_ parametri di notifica DSM del dispositivo**](/windows/desktop/api/WinIoCtl/ns-winioctl-device_dsm_notification_parameters) . Il **DeviceDsmActionFlag non \_ distruttivo** (0x80000000) è un flag di bit per indicare allo stack del driver che questa operazione non è distruttiva.
+Viene eseguita un'azione di notifica. I parametri sono in una [**struttura DEVICE \_ DSM NOTIFICATION \_ \_ PARAMETERS.**](/windows/desktop/api/WinIoCtl/ns-winioctl-device_dsm_notification_parameters) **DeviceDsmActionFlag \_ NonDestructive** (0x80000000) è un flag di bit per indicare nello stack del driver che questa operazione non è distruttiva.
 
 
 </dt> </dl> </dd> <dt>
 
-<span id="DeviceDsmAction_OffloadRead"></span><span id="devicedsmaction_offloadread"></span><span id="DEVICEDSMACTION_OFFLOADREAD"></span>**\_OffloadRead DeviceDsmAction**
+<span id="DeviceDsmAction_OffloadRead"></span><span id="devicedsmaction_offloadread"></span><span id="DEVICEDSMACTION_OFFLOADREAD"></span>**DeviceDsmAction \_ OffloadRead**
 </dt> <dd> <dl> <dt>
 
-3 \| **DeviceDsmActionFlag non \_ distruttivi** (0x80000003)
+3 \| **DeviceDsmActionFlag \_ NonDestructive** (0x80000003)
 </dt> <dt>
 
 
 
-Viene eseguita un'azione di lettura offload. I parametri si trovano in una struttura di [**\_ parametri di \_ \_ lettura \_ di OFFLOAD DSM del dispositivo**](/windows/desktop/api/WinIoCtl/ns-winioctl-device_dsm_offload_read_parameters) . L'output si trova in una struttura di [**\_ \_ \_ output di lettura OFFLOAD archiviazione**](/windows/desktop/api/WinIoCtl/ns-winioctl-storage_offload_read_output) . Il **DeviceDsmActionFlag non \_ distruttivo** (0x80000000) è un flag di bit per indicare allo stack del driver che questa operazione non è distruttiva.
+Viene eseguita un'azione di lettura offload. I parametri sono in una [**struttura DEVICE \_ DSM \_ OFFLOAD READ \_ \_ PARAMETERS.**](/windows/desktop/api/WinIoCtl/ns-winioctl-device_dsm_offload_read_parameters) L'output si trova in [**una struttura STORAGE \_ OFFLOAD READ \_ \_ OUTPUT.**](/windows/desktop/api/WinIoCtl/ns-winioctl-storage_offload_read_output) **DeviceDsmActionFlag \_ NonDestructive** (0x80000000) è un flag di bit per indicare nello stack del driver che questa operazione non è distruttiva.
 
 **Windows 7 e Windows Server 2008 R2:** Questo valore non è supportato prima di Windows 8 e Windows Server 2012.
 
 
 </dt> </dl> </dd> <dt>
 
-<span id="DeviceDsmAction_OffloadWrite"></span><span id="devicedsmaction_offloadwrite"></span><span id="DEVICEDSMACTION_OFFLOADWRITE"></span>**\_OffloadWrite DeviceDsmAction**
+<span id="DeviceDsmAction_OffloadWrite"></span><span id="devicedsmaction_offloadwrite"></span><span id="DEVICEDSMACTION_OFFLOADWRITE"></span>**DeviceDsmAction \_ OffloadWrite**
 </dt> <dd> <dl> <dt>
 
 4
@@ -79,7 +79,7 @@ Viene eseguita un'azione di lettura offload. I parametri si trovano in una strut
 
 
 
-Viene eseguita un'azione di scrittura di offload. I parametri si trovano in una struttura di [**\_ parametri di \_ \_ scrittura \_ di OFFLOAD DSM del dispositivo**](/windows/desktop/api/WinIoCtl/ns-winioctl-device_dsm_offload_write_parameters) . L'output si trova in una struttura di [**output di scrittura di OFFLOAD dell'archiviazione \_ \_ \_**](/windows/desktop/api/WinIoCtl/ns-winioctl-storage_offload_write_output) .
+Viene eseguita un'azione di scrittura offload. I parametri sono in una [**struttura DEVICE \_ DSM \_ OFFLOAD WRITE \_ \_ PARAMETERS.**](/windows/desktop/api/WinIoCtl/ns-winioctl-device_dsm_offload_write_parameters) L'output si trova in [**una struttura STORAGE \_ OFFLOAD WRITE \_ \_ OUTPUT.**](/windows/desktop/api/WinIoCtl/ns-winioctl-storage_offload_write_output)
 
 **Windows 7 e Windows Server 2008 R2:** Questo valore non è supportato prima di Windows 8 e Windows Server 2012.
 
@@ -89,57 +89,57 @@ Viene eseguita un'azione di scrittura di offload. I parametri si trovano in una 
 <span id="DeviceDsmAction_Allocation"></span><span id="devicedsmaction_allocation"></span><span id="DEVICEDSMACTION_ALLOCATION"></span>**Allocazione DeviceDsmAction \_**
 </dt> <dd> <dl> <dt>
 
-5 \| **DeviceDsmActionFlag non \_ distruttivi** (0x80000005)
+5 \| **DeviceDsmActionFlag \_ NonDestructive** (0x80000005)
 </dt> <dt>
 
 
 
-Viene restituita una bitmap di allocazione per il primo intervallo di set di dati passato. L'output si trova in una struttura di [**\_ \_ \_ \_ \_ stato di provisioning LB del set di dati del dispositivo**](/windows/desktop/api/WinIoCtl/ns-winioctl-device_data_set_lb_provisioning_state) . Il **DeviceDsmActionFlag non \_ distruttivo** (0x80000000) è un flag di bit per indicare allo stack del driver che questa operazione non è distruttiva.
+Viene restituita una bitmap di allocazione per il primo intervallo di set di dati passato. L'output si trova in [**una struttura DEVICE DATA SET \_ \_ \_ LB PROVISIONING \_ \_ STATE.**](/windows/desktop/api/WinIoCtl/ns-winioctl-device_data_set_lb_provisioning_state) **DeviceDsmActionFlag \_ NonDestructive** (0x80000000) è un flag di bit per indicare nello stack del driver che questa operazione non è distruttiva.
 
 **Windows 7 e Windows Server 2008 R2:** Questo valore non è supportato prima di Windows 8 e Windows Server 2012.
 
 
 </dt> </dl> </dd> <dt>
 
-<span id="DeviceDsmAction_Repair"></span><span id="devicedsmaction_repair"></span><span id="DEVICEDSMACTION_REPAIR"></span>**\_Ripristino DeviceDsmAction**
+<span id="DeviceDsmAction_Repair"></span><span id="devicedsmaction_repair"></span><span id="DEVICEDSMACTION_REPAIR"></span>**Ripristino di \_ DeviceDsmAction**
 </dt> <dd> <dl> <dt>
 
-6 \| **DeviceDsmActionFlag non \_ distruttivi** (0x80000006)
+6 \| **DeviceDsmActionFlag \_ NonDestructive** (0x80000006)
 </dt> <dt>
 
 
 
-Viene eseguita un'azione di ripristino. Il **DeviceDsmActionFlag non \_ distruttivo** (0x80000000) è un flag di bit per indicare allo stack del driver che questa operazione non è distruttiva.
+Viene eseguita un'azione di ripristino. **DeviceDsmActionFlag \_ NonDestructive** (0x80000000) è un flag di bit per indicare nello stack del driver che questa operazione non è distruttiva.
 
 **Windows 7 e Windows Server 2008 R2:** Questo valore non è supportato prima di Windows 8 e Windows Server 2012.
 
 
 </dt> </dl> </dd> <dt>
 
-<span id="DeviceDsmAction_Scrub"></span><span id="devicedsmaction_scrub"></span><span id="DEVICEDSMACTION_SCRUB"></span>**DeviceDsmAction \_ scrub**
+<span id="DeviceDsmAction_Scrub"></span><span id="devicedsmaction_scrub"></span><span id="DEVICEDSMACTION_SCRUB"></span>**DeviceDsmAction \_ Scrub**
 </dt> <dd> <dl> <dt>
 
-7 \| **DeviceDsmActionFlag non \_ distruttivi** (0x80000007)
+7 \| **DeviceDsmActionFlag \_ NonDestructive** (0x80000007)
 </dt> <dt>
 
 
 
-Viene eseguita un'azione di scrub. Il **DeviceDsmActionFlag non \_ distruttivo** (0x80000000) è un flag di bit per indicare allo stack del driver che questa operazione non è distruttiva.
+Viene eseguita un'azione di scrubbing. **DeviceDsmActionFlag \_ NonDestructive** (0x80000000) è un flag di bit per indicare nello stack del driver che questa operazione non è distruttiva.
 
 **Windows 7 e Windows Server 2008 R2:** Questo valore non è supportato prima di Windows 8 e Windows Server 2012.
 
 
 </dt> </dl> </dd> <dt>
 
-<span id="DeviceDsmAction_Resiliency"></span><span id="devicedsmaction_resiliency"></span><span id="DEVICEDSMACTION_RESILIENCY"></span>**\_Resilienza DeviceDsmAction**
+<span id="DeviceDsmAction_Resiliency"></span><span id="devicedsmaction_resiliency"></span><span id="DEVICEDSMACTION_RESILIENCY"></span>**Resilienza di DeviceDsmAction \_**
 </dt> <dd> <dl> <dt>
 
-8 \| **DeviceDsmActionFlag non \_ distruttivi** (0x80000008)
+8 \| **DeviceDsmActionFlag \_ NonDestructive** (0x80000008)
 </dt> <dt>
 
 
 
-Viene eseguita un'azione di resilienza. Il **DeviceDsmActionFlag non \_ distruttivo** (0x80000000) è un flag di bit per indicare allo stack del driver che questa operazione non è distruttiva.
+Viene eseguita un'azione di resilienza. **DeviceDsmActionFlag \_ NonDestructive** (0x80000000) è un flag di bit per indicare nello stack del driver che questa operazione non è distruttiva.
 
 **Windows 7 e Windows Server 2008 R2:** Questo valore non è supportato prima di Windows 8 e Windows Server 2012.
 
@@ -154,7 +154,7 @@ Viene eseguita un'azione di resilienza. Il **DeviceDsmActionFlag non \_ distrutt
 |-------------------------------------|-----------------------------------------------------------------------------------------------------------|
 | Client minimo supportato<br/> | Windows 7<br/>                                                                                      |
 | Server minimo supportato<br/> | Windows Server 2008 R2<br/>                                                                         |
-| Intestazione<br/>                   | <dl> <dt>WinIoCtl. h (include Windows. h)</dt> </dl> |
+| Intestazione<br/>                   | <dl> <dt>WinIoCtl.h (includere Windows.h)</dt> </dl> |
 
 
 

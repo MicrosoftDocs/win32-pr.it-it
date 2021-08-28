@@ -3,7 +3,7 @@ title: Group - elemento
 description: Rappresenta un controllo Group che funziona come contenitore per un gruppo di elementi.
 ms.assetid: b0d3fcda-7165-40f4-9e57-c7ab88b31711
 keywords:
-- Elemento Group Windows Ribbon
+- Elemento Group Windows ribbon
 topic_type:
 - apiref
 api_name:
@@ -13,12 +13,12 @@ api_type:
 ms.topic: reference
 ms.date: 05/31/2018
 api_location: ''
-ms.openlocfilehash: 2ca9d138e18296bc801fd37931a3b8066761abd3dd697d360513983ad5288dfb
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 86d12ddb781ecf7e1effba1cade8eb00e92fe20b
+ms.sourcegitcommit: c276a8912787b2cda74dcf54eb96df961bb1188b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119810611"
+ms.lasthandoff: 08/20/2021
+ms.locfileid: "122631369"
 ---
 # <a name="group-element"></a>Group - elemento
 
@@ -41,10 +41,10 @@ Rappresenta un [controllo Group](windowsribbon-controls-group.md) che funziona c
 
 <table>
 <colgroup>
-<col style="width: 25%" />
-<col style="width: 25%" />
-<col style="width: 25%" />
-<col style="width: 25%" />
+<col  />
+<col  />
+<col  />
+<col  />
 </colgroup>
 <thead>
 <tr class="header">
@@ -65,8 +65,8 @@ Rappresenta un [controllo Group](windowsribbon-controls-group.md) che funziona c
 <td><strong>CommandName</strong><br/></td>
 <td>xs:positiveInteger o xs:string<br/></td>
 <td>No<br/></td>
-<td>Associa l'elemento a un <a href="windowsribbon-element-command.md"><strong>oggetto Command</strong></a>.<br/> <br/>
-<dt><span></span><span></span><strong></strong> (xs:positiveInteger o xs:string)<br/> </dt> <dd> Stringa, valore intero compreso tra 2 e 59999, inclusivo o valore esadecimale compreso tra 0x2 e 0xea5f, inclusi. <br/> Il valore deve essere univoco all'interno del documento XML della barra multifunzione. <br/> Lunghezza massima: 100 caratteri. <br/> </dd> </dl></td>
+<td>Associa l'elemento a un <a href="windowsribbon-element-command.md"><strong>oggetto Command.</strong></a><br/> <br/>
+<dt><span></span><span></span><strong></strong> (xs:positiveInteger o xs:string)<br/> </dt> <dd> Stringa, valore intero compreso tra 2 e 59999 inclusi o valore esadecimale compreso tra 0x2 e 0xea5f inclusi. <br/> Il valore deve essere univoco all'interno del documento XML della barra multifunzione. <br/> Lunghezza massima: 100 caratteri. <br/> </dd> </dl></td>
 </tr>
 <tr class="odd">
 <td><strong>SizeDefinition</strong><br/></td>
@@ -119,13 +119,13 @@ facoltativo.
 
 Può verificarsi una o più volte per ogni [**elemento Tab.**](windowsribbon-element-tab.md)
 
-[**La scheda**](windowsribbon-element-tab.md) supporta le [modalità dell'applicazione](ribbon-applicationmodes.md).
+[**Tab**](windowsribbon-element-tab.md) supporta le [modalità dell'applicazione](ribbon-applicationmodes.md).
 
 Il markup della barra multifunzione è valido solo quando gli elementi figlio di **Group** corrispondono al modello specificato per *SizeDefinition.*
 
 ## <a name="examples"></a>Esempio
 
-Nell'esempio di codice seguente viene illustrato l'uso di un modello personalizzato in un **oggetto Group**.
+Nell'esempio di codice seguente viene illustrato l'utilizzo di un modello personalizzato in un **oggetto Group.**
 
 
 ```
@@ -150,7 +150,7 @@ Nell'esempio di codice seguente viene illustrato l'uso di un modello personalizz
 [Personalizzazione di una barra multifunzione tramite definizioni delle dimensioni e criteri di ridimensionamento](windowsribbon-templates.md)
 </dt> <dt>
 
-[Controllo Gruppo](windowsribbon-controls-group.md)
+[Controllo Group](windowsribbon-controls-group.md)
 </dt> <dt>
 
 [**SetModes**](/windows/desktop/api/uiribbon/nf-uiribbon-iuiframework-setmodes)

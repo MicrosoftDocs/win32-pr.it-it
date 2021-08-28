@@ -1,33 +1,33 @@
 ---
-description: L'azione annuncia è un'azione di primo livello chiamata per installare o rimuovere i componenti annunciati.
+description: L'azione ADVERTISE è un'azione di primo livello chiamata per installare o rimuovere i componenti annunciati.
 ms.assetid: d9c843e4-fcd9-4d47-9ca9-ffa83ed80574
-title: Pubblicizza azione
+title: AZIONE ADVERTISE
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 0985990d69863f250cfd6f589deb43a59f9c66e9
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: dd70b36edfb0074911ee3c9487a299f3c0b2eb4bacc59f05241fc6ee22119800
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "103756245"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120045931"
 ---
-# <a name="advertise-action"></a>Pubblicizza azione
+# <a name="advertise-action"></a>AZIONE ADVERTISE
 
-L'azione annuncia è un'azione di primo livello chiamata per installare o rimuovere i componenti annunciati.
+L'azione ADVERTISE è un'azione di primo livello chiamata per installare o rimuovere i componenti annunciati.
 
-## <a name="sequence-restrictions"></a>Restrizioni sequenza
+## <a name="sequence-restrictions"></a>Restrizioni di sequenza
 
-Non esistono restrizioni di sequenza.
+Non sono presenti restrizioni di sequenza.
 
 ## <a name="actiondata-messages"></a>Messaggi ActionData
 
-Nessun messaggio ActionData.
+Non sono presenti messaggi ActionData.
 
 ## <a name="remarks"></a>Commenti
 
-Per [*annuncio*](a-gly.md) si intende la capacità del programma di installazione di fornire le interfacce di caricamento e avvio di un'applicazione senza installare fisicamente l'applicazione. Il programma di installazione non installa i componenti necessari fino a quando un utente o un'applicazione non attiva un'interfaccia annunciata. Questo concetto viene definito [*installazione su richiesta*](i-gly.md).
+[*La*](a-gly.md) pubblicità si riferisce alla capacità del programma di installazione di fornire le interfacce di caricamento e avvio di un'applicazione senza installare fisicamente l'applicazione. Il programma di installazione non installa i componenti necessari finché un utente o un'applicazione non attiva un'interfaccia annunciata. Questo concetto è denominato [*install-on-demand.*](i-gly.md)
 
-L'azione ADVERTISe non viene chiamata dall'interno della sequenza della tabella Action, il Windows Installer esegue questa azione quando l'eseguibile della riga di comando Msiexec.exe viene chiamato con l'opzione della riga di comando '/j ' o quando [**MsiInstallProduct**](/windows/desktop/api/Msi/nf-msi-msiinstallproducta) viene chiamato con il parametro *SZCOMMANDLINE* impostato su Action = advertise.
+L'azione ADVERTISE non viene chiamata dall'interno della sequenza di tabella delle azioni, il programma di installazione di Windows esegue questa azione quando l'eseguibile della riga di comando Msiexec.exe viene chiamato con l'opzione della riga di comando '/j' o quando [**MsiInstallProduct**](/windows/desktop/api/Msi/nf-msi-msiinstallproducta) viene chiamato con il parametro *szCommandLine* impostato su ACTION=ADVERTISE.
 
 ## <a name="related-topics"></a>Argomenti correlati
 

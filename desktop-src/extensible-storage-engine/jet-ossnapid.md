@@ -15,12 +15,12 @@ api_type:
 - COM
 api_location: ''
 ROBOTS: INDEX,FOLLOW
-ms.openlocfilehash: d6185f17c16cbdb2a45e172a14af346c3519aa12
-ms.sourcegitcommit: 9b5faa61c38b2d0c432b7f2dbee8c127b0e28a7e
+ms.openlocfilehash: 82be9a4aa00f1880493d81dbcd53d1d8d76cc46a
+ms.sourcegitcommit: 4665ebce0c106bdb52eef36e544280b496b6f50b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/19/2021
-ms.locfileid: "122468368"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "122983804"
 ---
 # <a name="jet_ossnapid"></a>JET_OSSNAPID
 
@@ -29,7 +29,7 @@ _**Si applica a:** Windows | Windows Server_
 
 ## <a name="jet_ossnapid"></a>JET_OSSNAPID
 
-Il **JET_OSSNAPID** di dati contiene un handle per uno snapshot del database.
+Il **JET_OSSNAPID** dati contiene un handle per uno snapshot del database.
 
 ```cpp
     typedef JET_API_PTR JET_OSSNAPID;
@@ -39,13 +39,17 @@ Il **JET_OSSNAPID** di dati contiene un handle per uno snapshot del database.
 
 JET_OSSNAPID
 
-Handle per uno snapshot del database. Questo handle viene usato negli elementi dell'API JET coinvolti nel backup dello snapshot.
+Handle per uno snapshot del database. Questo handle viene utilizzato negli elementi dell'API JET coinvolti nel backup di snapshot.
 
 **È** possibile usare NULL per indicare un handle non valido.
 
 ### <a name="requirements"></a>Requisiti
 
 
-| | | <p><strong>Client</strong></p> | <p>Richiede Windows Vista, Windows XP o Windows 2000 Professional.</p> | | <p><strong>Server</strong></p> | <p>Richiede Windows Server 2008, Windows Server 2003 o Windows 2000 Server.</p> | | <p><strong>Intestazione</strong></p> | <p>Dichiarato in Esent.h.</p> | 
+| Requisito | Valore |
+|------------|----------|
+| <p><strong>Client</strong></p> | <p>Richiede Windows Vista, Windows XP o Windows 2000 Professional.</p> | 
+| <p><strong>Server</strong></p> | <p>Richiede Windows Server 2008, Windows Server 2003 o Windows 2000 Server.</p> | 
+| <p><strong>Intestazione</strong></p> | <p>Dichiarato in Esent.h.</p> | 
 
 

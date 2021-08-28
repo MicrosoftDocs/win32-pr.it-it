@@ -4,12 +4,12 @@ ms.assetid: 87a897cd-d3aa-488a-b129-9837d3500d0d
 title: Cosa non è un documento PrintCapabilities
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 8bcd5dbedf6ee3a7e2713bd3591b182c606cfb0c
-ms.sourcegitcommit: 5d4e99f4c8f42f5f543e52cb9beb9fb13ec56c5f
+ms.openlocfilehash: 180c303a21dbed39908d87831a1e01e2965b09a68e1e23a6e1f8793e247556f4
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/19/2021
-ms.locfileid: "112409894"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119718541"
 ---
 # <a name="what-a-printcapabilities-document-is-not"></a>Cosa non è un documento PrintCapabilities
 
@@ -21,7 +21,7 @@ Un documento PrintCapabilities:
 
 -   Non rappresenta dati multivalore (dipendenti dalla configurazione).
 
-    Ogni documento PrintCapabilities viene costruito per una configurazione specifica. Nessuna proprietà o ScoredProperty nel documento può avere un valore che dipende dalla configurazione specifica. Nella versione dello schema iniziale, il provider PrintCapabilities deve elaborare l'input PrintTicket e creare un documento PrintCapabilities contenente i valori property appropriati per la configurazione specificata in PrintTicket.
+    Ogni documento PrintCapabilities viene costruito per una configurazione specifica. Nessuna proprietà o ScoredProperty nel documento può avere un valore che dipende dalla configurazione specifica. Nella versione iniziale dello schema, il provider PrintCapabilities deve elaborare l'input PrintTicket e creare un documento PrintCapabilities contenente i valori property appropriati per la configurazione specificata in PrintTicket.
 
 -   Non contiene informazioni sui vincoli.
 

@@ -1,9 +1,9 @@
 ---
-title: Messaggio LB_SETTOPINDEX (winuser. h)
+title: LB_SETTOPINDEX messaggio (Winuser.h)
 description: Assicura che l'elemento specificato in una casella di riepilogo sia visibile.
 ms.assetid: vs|controls|~\controls\listboxes\listboxreference\listboxmessages\lb_settopindex.htm
 keywords:
-- Controlli di Windows Message LB_SETTOPINDEX
+- LB_SETTOPINDEX di controllo Windows messaggio
 topic_type:
 - apiref
 api_name:
@@ -14,14 +14,14 @@ api_type:
 - HeaderDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 7b415c2369ccc7963a5139ab001159bdba7d6326
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: f4b640b55ed2c6e3e38eea0b8bd23eb4f99d770dd49b4499f054f5ec38b71873
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "104120999"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119435461"
 ---
-# <a name="lb_settopindex-message"></a>\_Messaggio SETTOPINDEX lb
+# <a name="lb_settopindex-message"></a>Messaggio \_ LB SETTOPINDEX
 
 Assicura che l'elemento specificato in una casella di riepilogo sia visibile.
 
@@ -34,7 +34,7 @@ Assicura che l'elemento specificato in una casella di riepilogo sia visibile.
 
 Indice in base zero dell'elemento nella casella di riepilogo.
 
-Windows 95/Windows 98/Windows Millennium Edition (Windows Me): il parametro *wParam* è limitato ai valori a 16 bit. Ciò significa che le caselle di riepilogo non possono contenere più di 32.767 elementi. Sebbene il numero di elementi sia limitato, le dimensioni totali in byte degli elementi in una casella di riepilogo sono limitate solo dalla memoria disponibile.
+Windows 95/Windows 98/Windows Millennium Edition (Windows Me): il *parametro wParam* è limitato a valori a 16 bit. Ciò significa che le caselle di riepilogo non possono contenere più di 32.767 elementi. Anche se il numero di elementi è limitato, la dimensione totale in byte degli elementi in una casella di riepilogo è limitata solo dalla memoria disponibile.
 
 </dd> <dt>
 
@@ -47,11 +47,11 @@ Questo parametro non viene usato.
 
 ## <a name="return-value"></a>Valore restituito
 
-Se si verifica un errore, il valore restituito è LB \_ Err.
+Se si verifica un errore, il valore restituito è LB \_ ERR.
 
 ## <a name="remarks"></a>Commenti
 
-Il sistema scorre il contenuto della casella di riepilogo in modo che l'elemento specificato venga visualizzato nella parte superiore della casella di riepilogo oppure che sia stato raggiunto l'intervallo massimo di scorrimento.
+Il sistema scorre il contenuto della casella di riepilogo in modo che l'elemento specificato venga visualizzato nella parte superiore della casella di riepilogo o che sia stato raggiunto l'intervallo di scorrimento massimo.
 
 ## <a name="requirements"></a>Requisiti
 
@@ -59,9 +59,9 @@ Il sistema scorre il contenuto della casella di riepilogo in modo che l'elemento
 
 | Requisito | Valore |
 |-------------------------------------|----------------------------------------------------------------------------------------------------------|
-| Client minimo supportato<br/> | \[Solo app desktop di Windows Vista\]<br/>                                                           |
-| Server minimo supportato<br/> | \[Solo app desktop Windows Server 2003\]<br/>                                                     |
-| Intestazione<br/>                   | <dl> <dt>Winuser. h (include Windows. h)</dt> </dl> |
+| Client minimo supportato<br/> | Windows Solo \[ app desktop Vista\]<br/>                                                           |
+| Server minimo supportato<br/> | Windows Solo app desktop di Server 2003 \[\]<br/>                                                     |
+| Intestazione<br/>                   | <dl> <dt>Winuser.h (includere Windows.h)</dt> </dl> |
 
 
 
@@ -69,7 +69,7 @@ Il sistema scorre il contenuto della casella di riepilogo in modo che l'elemento
 
 <dl> <dt>
 
-[**\_GETTOPINDEX lb**](lb-gettopindex.md)
+[**LB \_ GETTOPINDEX**](lb-gettopindex.md)
 </dt> </dl>
 
  

@@ -1,5 +1,5 @@
 ---
-title: Costanti WINBIO_BIR_VERSION (tipi WinBio \_ . h)
+title: WINBIO_BIR_VERSION costanti (Winbio \_ types.h)
 description: Specificare la versione.
 ms.assetid: FBB8AE77-0FA2-46DE-B2F4-55D17CB6E7AB
 topic_type:
@@ -13,23 +13,23 @@ api_type:
 - HeaderDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 2da1e16c95e2b7dec5448c609a3d3689cc5f1c19
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: 611be9539d5eac520a3b179d9b9de51a8b41a1ab67e39c29adb1933b38bb049b
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "106301634"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119480311"
 ---
-# <a name="winbio_bir_version-constants"></a>Costanti della versione di WINBIO \_ Bir \_
+# <a name="winbio_bir_version-constants"></a>Costanti VERSION \_ di WINBIO BIR \_
 
-I flag seguenti vengono usati dai membri **HeaderVersion** e **PatronHeaderVersion** della struttura dell' [**\_ \_ intestazione WINBIO bir**](winbio-bir-header.md) per specificare la versione.
+I flag seguenti vengono usati dai membri **HeaderVersion** **eHeaderVersion** della struttura [**WINBIO \_ BIR \_ HEADER**](winbio-bir-header.md) per specificare la versione.
 
 
 
 | Costante/valore                                                                                                                                                                                                                                                         | Descrizione                                     |
 |:-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|:------------------------------------------------|
-| <span id="WINBIO_CBEFF_HEADER_VERSION"></span><span id="winbio_cbeff_header_version"></span><dl> <dt>**WINBIO \_ CBEFF \_ intestazione \_ versione**</dt> <dt>0x11</dt> </dl>    | Specifica la versione dell'intestazione.<br/>        |
-| <span id="WINBIO_PATRON_HEADER_VERSION"></span><span id="winbio_patron_header_version"></span><dl> <dt>**WINBIO \_ \_ \_ Versione intestazione patron**</dt> <dt>0x11</dt> </dl> | Specifica la versione dell'intestazione Patron.<br/> |
+| <span id="WINBIO_CBEFF_HEADER_VERSION"></span><span id="winbio_cbeff_header_version"></span><dl> <dt>**WINBIO \_ VERSIONE \_ DELL'INTESTAZIONE \_ CBEFF**</dt> <dt>0x11</dt> </dl>    | Specifica la versione dell'intestazione.<br/>        |
+| <span id="WINBIO_PATRON_HEADER_VERSION"></span><span id="winbio_patron_header_version"></span><dl> <dt>**WINBIO \_ HEADER \_ \_ VERSION 0X11**</dt> <dt></dt> </dl> | Specifica la versione dell'intestazione.<br/> |
 
 
 
@@ -39,9 +39,9 @@ I flag seguenti vengono usati dai membri **HeaderVersion** e **PatronHeaderVersi
 
 | Requisito | Valore |
 |-------------------------------------|---------------------------------------------------------------------------------------------------------------|
-| Client minimo supportato<br/> | \[Solo app desktop di Windows 7\]<br/>                                                                    |
-| Server minimo supportato<br/> | Solo app desktop Windows Server 2008 R2 \[\]<br/>                                                       |
-| Intestazione<br/>                   | <dl> <dt>\_Tipi WinBio. h (includere WinBio. h)</dt> </dl> |
+| Client minimo supportato<br/> | Windows 7 \[ app desktop\]<br/>                                                                    |
+| Server minimo supportato<br/> | Windows Solo app desktop server 2008 R2 \[\]<br/>                                                       |
+| Intestazione<br/>                   | <dl> <dt>Winbio \_ types.h (include Winbio.h)</dt> </dl> |
 
 
 
@@ -52,7 +52,7 @@ I flag seguenti vengono usati dai membri **HeaderVersion** e **PatronHeaderVersi
 [Costanti dell'applicazione client](client-application-constants.md)
 </dt> <dt>
 
-[**\_intestazione WINBIO bir \_**](winbio-bir-header.md)
+[**INTESTAZIONE BIR WINBIO \_ \_**](winbio-bir-header.md)
 </dt> </dl>
 
  

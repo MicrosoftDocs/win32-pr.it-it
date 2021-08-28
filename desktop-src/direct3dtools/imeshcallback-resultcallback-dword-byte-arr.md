@@ -1,5 +1,5 @@
 ---
-description: '<span id="vspixengine.imeshcallback_resultcallback_dword_byte_arr"></span>Metodo IMeshCallback::ResultCallback : non usato.'
+description: '<span id="vspixengine.imeshcallback_resultcallback_dword_byte_arr"></span>Metodo IMeshCallback::ResultCallback: non usato.'
 MS-HAID: vspixengine.IMeshCallback\_ResultCallback\_DWORD\_BYTE\_arr
 MSHAttr:
 - PreferredSiteName:MSDN
@@ -17,12 +17,12 @@ api_location:
 topic_type:
 - APIRef
 - kbSyntax
-ms.openlocfilehash: 644890f0ba28f48407d6557184bd24f2aaf3501b
-ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
+ms.openlocfilehash: 699a1d1e60cc4bfda97faf77d8f1138f5998b202
+ms.sourcegitcommit: c276a8912787b2cda74dcf54eb96df961bb1188b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/28/2021
-ms.locfileid: "108114909"
+ms.lasthandoff: 08/20/2021
+ms.locfileid: "122630155"
 ---
 # <a name="span-idvspixengineimeshcallback_resultcallback_dword_byte_arrspanimeshcallbackresultcallback-method"></a><span id="vspixengine.imeshcallback_resultcallback_dword_byte_arr"></span>Metodo IMeshCallback::ResultCallback
 
@@ -43,7 +43,7 @@ HRESULT ResultCallback(
 *Dimensione*   
 Non usato.
 
-*Buffer \_ count0*   
+*buffer \_ count0*   
 Non usato.
 
 ## <a name="return-value"></a>Valore restituito
@@ -52,7 +52,7 @@ Se questo metodo ha esito positivo, restituisce **S \_ OK**. In caso contrario, 
 
 ## <a name="requirements"></a>Requisiti
 
-<table><colgroup><col style="width: 50%" /><col style="width: 50%" /></colgroup><tbody><tr class="odd"><td><p>Intestazione</p></td><td>Vspixengine.h</td></tr></tbody></table>
+<table><colgroup><col  /><col  /></colgroup><tbody><tr class="odd"><td><p>Intestazione</p></td><td>Vspixengine.h</td></tr></tbody></table>
 
 ## <a name="span-idsee_alsospansee-also"></a><span id="see_also"></span>Vedere anche
 

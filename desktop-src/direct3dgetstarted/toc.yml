@@ -1,4 +1,4 @@
-- name: Creare la prima app di Windows con DirectX
+- name: Creare la prima app Windows con DirectX
   href: building-your-first-directx-app.md
   items:
     - name: Prerequisiti per lo sviluppo con DirectX
@@ -6,7 +6,7 @@
     - name: Introduzione a DirectX per Windows
       href: getting-started-with-a-directx-game.md
       items:
-        - name: Usare le risorse del dispositivo DirectX
+        - name: Usare le risorse dei dispositivi DirectX
           href: work-with-dxgi.md
         - name: Informazioni sulla pipeline di rendering Direct3D 11
           href: understand-the-directx-11-2-graphics-pipeline.md

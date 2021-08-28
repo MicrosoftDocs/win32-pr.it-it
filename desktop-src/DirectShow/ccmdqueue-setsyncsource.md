@@ -1,7 +1,7 @@
 ---
-description: Il metodo SetSyncSource imposta l'orologio usato per la temporizzazione.
+description: Il metodo SetSyncSource imposta l'orologio usato per l'intervallo.
 ms.assetid: 646d4d24-f9b7-438a-b842-58e90eb6a945
-title: Metodo CCmdQueue. SetSyncSource (Winutil. h)
+title: Metodo CCmdQueue.SetSyncSource (Winutil.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -16,16 +16,16 @@ api_location:
 - Strmbase.dll
 - Strmbasd.lib
 - Strmbasd.dll
-ms.openlocfilehash: 995df3afa5185d8f50278899ac6a5d67dc6d230e
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: 3877fb52a1e2268d24974ee3575c712d27a107f4429398ada9de1ebf5e728675
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "106324185"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119757151"
 ---
-# <a name="ccmdqueuesetsyncsource-method"></a>CCmdQueue. SetSyncSource, metodo
+# <a name="ccmdqueuesetsyncsource-method"></a>Metodo CCmdQueue.SetSyncSource
 
-Il `SetSyncSource` metodo imposta l'orologio usato per la temporizzazione.
+Il `SetSyncSource` metodo imposta l'orologio usato per l'intervallo.
 
 ## <a name="syntax"></a>Sintassi
 
@@ -45,13 +45,13 @@ virtual HRESULT SetSyncSource(
 *pIrc* 
 </dt> <dd>
 
-Puntatore all'interfaccia [**IReferenceClock**](/windows/desktop/api/Strmif/nn-strmif-ireferenceclock) .
+Puntatore [**all'interfaccia IReferenceClock.**](/windows/desktop/api/Strmif/nn-strmif-ireferenceclock)
 
 </dd> </dl>
 
 ## <a name="return-value"></a>Valore restituito
 
-Restituisce \_ OK.
+Restituisce S \_ OK.
 
 ## <a name="requirements"></a>Requisiti
 
@@ -59,8 +59,8 @@ Restituisce \_ OK.
 
 | Requisito | Valore |
 |--------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Intestazione<br/>  | <dl> <dt>WinUtil. h (include Streams. h)</dt> </dl>                                                                                   |
-| Libreria<br/> | <dl> <dt>Strmbase. lib (compilazioni finali); </dt> <dt>Strmbasd. lib (build di debug)</dt> </dl> |
+| Intestazione<br/>  | <dl> <dt>Winutil.h (includere Flussi.h)</dt> </dl>                                                                                   |
+| Libreria<br/> | <dl> <dt>Strmbase.lib (build di vendita al dettaglio); </dt> <dt>Strmbasd.lib (build di debug)</dt> </dl> |
 
 
 

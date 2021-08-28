@@ -4,12 +4,12 @@ ms.assetid: 99bfc55d-6519-4e85-98ce-cad27bd71ffb
 title: MPEG-2 Demultiplexer
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: d4648a456e8f7fa43274486111973fa2255ab29e4e674bc249e1c2a3c64a7b43
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: f21898cb4fa3c16b07508dc3370c519d3edfbced
+ms.sourcegitcommit: 4665ebce0c106bdb52eef36e544280b496b6f50b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "118152984"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "122983954"
 ---
 # <a name="mpeg-2-demultiplexer"></a>MPEG-2 Demultiplexer
 
@@ -22,71 +22,20 @@ Questo filtro demultiplexa i flussi di trasporto e programma MPEG-2 recapitati i
 
 
 
-<table>
-<colgroup>
-<col style="width: 50%" />
-<col style="width: 50%" />
-</colgroup>
-<tbody>
-<tr class="odd">
-<td>Interfacce di filtro</td>
-<td>Tutte le modalità:<br/>
-<ul>
-<li><a href="/windows/desktop/api/Strmif/nn-strmif-ibasefilter"><strong>Filtro IBaseFilter</strong></a></li>
-<li><strong>ISpecifyPropertyPages</strong></li>
-</ul>
-Solo modalità push:<br/>
-<ul>
-<li><a href="/windows/desktop/api/Strmif/nn-strmif-iamfiltermiscflags"><strong>IAMFilterMiscFlags</strong></a></li>
-<li><a href="/windows/desktop/api/Strmif/nn-strmif-impeg2demultiplexer"><strong>IMpeg2Demultiplexer</strong></a></li>
-<li><a href="/windows/desktop/api/Strmif/nn-strmif-ireferenceclock"><strong>IReferenceClock</strong></a></li>
-</ul></td>
-</tr>
-<tr class="even">
-<td>Tipi di supporti pin di input</td>
-<td>Tipo principale: MEDIATYPE_STREAM<br/> Sottotipo:<br/>
-<ul>
-<li>KSDATAFORMAT_SUBTYPE_BDA_MPEG2_TRANSPORT</li>
-<li>MEDIASUBTYPE_MPEG2_PROGRAM</li>
-<li>MEDIASUBTYPE_MPEG2_TRANSPORT</li>
-<li>MEDIASUBTYPE_MPEG2_TRANSPORT_STRIDE</li>
-</ul>
-Per altre informazioni, vedere <a href="mpeg-2-demultiplexer-media-types.md"><strong>MPEG-2 Demultiplexer Media Types</strong></a>.<br/></td>
-</tr>
-<tr class="odd">
-<td>Interfacce pin di input</td>
-<td><a href="/windows/desktop/api/Strmif/nn-strmif-imeminputpin"><strong>IMemInputPin</strong></a>, <a href="/windows/desktop/api/Strmif/nn-strmif-ipin"><strong>IPin</strong></a>, <a href="/windows/desktop/api/Strmif/nn-strmif-iqualitycontrol"><strong>IQualityControl</strong></a></td>
-</tr>
-<tr class="even">
-<td>Tipi di supporti pin di output</td>
-<td>I flussi elementari audio e video devono avere un tipo principale di MEDIATYPE_Audio o MEDIATYPE_Video.<br/> Per altre informazioni, vedere <a href="mpeg-2-demultiplexer-media-types.md"><strong>MPEG-2 Demultiplexer Media Types</strong></a>.<br/></td>
-</tr>
-<tr class="odd">
-<td>Interfacce pin di output</td>
-<td><a href="/windows/desktop/api/Strmif/nn-strmif-ipin"><strong>IPin,</strong></a>solo modalità push <a href="/windows/desktop/api/Strmif/nn-strmif-iqualitycontrol"><strong>IQualityControl:</strong></a> <a href="/windows/desktop/api/Strmif/nn-strmif-iampushsource"><strong>IAMPushSource,</strong></a> <a href="/previous-versions/windows/desktop/api/Bdaiface/nn-bdaiface-impeg2pidmap"><strong>IMPEG2PIDMap,</strong></a> <a href="/windows/desktop/api/Strmif/nn-strmif-impeg2streamidmap"><strong>IMPEG2StreamIdMap</strong></a><br/> Solo modalità pull: <a href="/windows/desktop/api/Strmif/nn-strmif-imediaseeking"> <strong>IMediaSeeking</strong></a><br/></td>
-</tr>
-<tr class="even">
-<td>CLSID del filtro</td>
-<td>CLSID_MPEG2Demultiplexer</td>
-</tr>
-<tr class="odd">
-<td>CLSID pagina delle proprietà</td>
-<td>Disponibile solo per i test. Usare <strong>l'interfaccia ISpecifyPropertyPages</strong> per accedere alle pagine delle proprietà</td>
-</tr>
-<tr class="even">
-<td>File eseguibile</td>
-<td>mpg2splt.ax</td>
-</tr>
-<tr class="odd">
-<td><a href="merit.md">Merito</a></td>
-<td>MERIT_NORMAL</td>
-</tr>
-<tr class="even">
-<td><a href="filter-categories.md">Categoria filtro</a></td>
-<td>CLSID_LegacyAmFilterCategory</td>
-</tr>
-</tbody>
-</table>
+
+| Etichetta | Valore |
+|--------|-------|
+| Interfacce di filtro | Tutte le modalità:<br /><ul><li><a href="/windows/desktop/api/Strmif/nn-strmif-ibasefilter"><strong>Filtro IBaseFilter</strong></a></li><li><strong>ISpecifyPropertyPages</strong></li></ul>Solo modalità push:<br /><ul><li><a href="/windows/desktop/api/Strmif/nn-strmif-iamfiltermiscflags"><strong>IAMFilterMiscFlags</strong></a></li><li><a href="/windows/desktop/api/Strmif/nn-strmif-impeg2demultiplexer"><strong>IMpeg2Demultiplexer</strong></a></li><li><a href="/windows/desktop/api/Strmif/nn-strmif-ireferenceclock"><strong>IReferenceClock</strong></a></li></ul> | 
+| Tipi di supporti pin di input | Tipo principale: MEDIATYPE_STREAM<br /> Sottotipo:<br /><ul><li>KSDATAFORMAT_SUBTYPE_BDA_MPEG2_TRANSPORT</li><li>MEDIASUBTYPE_MPEG2_PROGRAM</li><li>MEDIASUBTYPE_MPEG2_TRANSPORT</li><li>MEDIASUBTYPE_MPEG2_TRANSPORT_STRIDE</li></ul>Per altre informazioni, vedere <a href="mpeg-2-demultiplexer-media-types.md"><strong>MPEG-2 Demultiplexer Media Types</strong></a>.<br /> | 
+| Interfacce pin di input | <a href="/windows/desktop/api/Strmif/nn-strmif-imeminputpin"><strong>IMemInputPin</strong></a>, <a href="/windows/desktop/api/Strmif/nn-strmif-ipin"><strong>IPin</strong></a>, <a href="/windows/desktop/api/Strmif/nn-strmif-iqualitycontrol"><strong>IQualityControl</strong></a> | 
+| Tipi di supporti pin di output | I flussi elementari audio e video devono avere un tipo principale di MEDIATYPE_Audio o MEDIATYPE_Video.<br /> Per altre informazioni, vedere <a href="mpeg-2-demultiplexer-media-types.md"><strong>MPEG-2 Demultiplexer Media Types</strong></a>.<br /> | 
+| Interfacce pin di output | <a href="/windows/desktop/api/Strmif/nn-strmif-ipin"><strong>IPin,</strong></a>solo modalità push <a href="/windows/desktop/api/Strmif/nn-strmif-iqualitycontrol"><strong>IQualityControl:</strong></a> <a href="/windows/desktop/api/Strmif/nn-strmif-iampushsource"><strong>IAMPushSource,</strong></a> <a href="/previous-versions/windows/desktop/api/Bdaiface/nn-bdaiface-impeg2pidmap"><strong>IMPEG2PIDMap,</strong></a> <a href="/windows/desktop/api/Strmif/nn-strmif-impeg2streamidmap"><strong>IMPEG2StreamIdMap</strong></a><br /> Solo modalità pull: <a href="/windows/desktop/api/Strmif/nn-strmif-imediaseeking"> <strong>IMediaSeeking</strong></a><br /> | 
+| CLSID del filtro | CLSID_MPEG2Demultiplexer | 
+| CLSID pagina delle proprietà | Disponibile solo per i test. Usare <strong>l'interfaccia ISpecifyPropertyPages</strong> per accedere alle pagine delle proprietà | 
+| File eseguibile | mpg2splt.ax | 
+| <a href="merit.md">Merito</a> | MERIT_NORMAL | 
+| <a href="filter-categories.md">Categoria filtro</a> | CLSID_LegacyAmFilterCategory | 
+
 
 
 

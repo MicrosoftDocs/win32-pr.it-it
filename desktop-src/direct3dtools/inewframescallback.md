@@ -1,5 +1,5 @@
 ---
-description: Callback dal motore che indica che è stata completata l'analisi dei nuovi frame aggiunti al log.
+description: Callback dal motore che indica che è stata completata l'analisi di tutti i nuovi frame aggiunti al log.
 MS-HAID: vspixengine.INewFramesCallback
 MSHAttr:
 - PreferredSiteName:MSDN
@@ -17,16 +17,16 @@ api_location:
 topic_type:
 - APIRef
 - kbSyntax
-ms.openlocfilehash: 8f9d47e84cf4deeebafa6592853f73e86d8339f8
-ms.sourcegitcommit: 4e94fc75fad7b2a0f3c92a26f97e89924e59b7a9
+ms.openlocfilehash: 8b5e27183461ca1eb0e214000551e18c08d2914f
+ms.sourcegitcommit: c276a8912787b2cda74dcf54eb96df961bb1188b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/24/2021
-ms.locfileid: "122787317"
+ms.lasthandoff: 08/20/2021
+ms.locfileid: "122631419"
 ---
 # <a name="span-idvspixengineinewframescallbackspaninewframescallback-interface"></a><span id="vspixengine.inewframescallback"></span>Interfaccia INewFramesCallback
 
-Callback dal motore che indica che è stata completata l'analisi dei nuovi frame aggiunti al log.
+Callback dal motore che indica che è stata completata l'analisi di tutti i nuovi frame aggiunti al log.
 
 ## <a name="members"></a>Membri
 
@@ -36,9 +36,9 @@ Callback dal motore che indica che è stata completata l'analisi dei nuovi frame
 
 ### <a name="span-idmethodsspanmethods"></a><span id="methods"></span>Metodi
 
-**L'interfaccia INewFramesCallback** include questi metodi.
+Questi metodi sono disponibili nell'interfaccia **INewFramesCallback.**
 
-<table><colgroup><col  /><col  /></colgroup><thead><tr class="header"><th >Metodo</th><th >Descrizione</th></tr></thead><tbody><tr class="odd"><td ><a href="/windows/desktop/direct3dtools/inewframescallback-cancelall"><strong>CancelAll</strong></a></td><td ><p>Callback che notifica all'host che tutte le richieste sono state annullate.</p></td></tr><tr class="even"><td ><a href="/windows/desktop/direct3dtools/inewframescallback-cancelusingcallback-iunknown-ptr"><strong>CancelUsingCallback</strong></a></td><td ><p>Callback che notifica all'host una richiesta annullata.</p></td></tr><tr class="odd"><td ><a href="/windows/desktop/direct3dtools/inewframescallback-cancelusingcookie-dword"><strong>CancelUsingCookie</strong></a></td><td ><p>Callback che notifica all'host una richiesta annullata usando un cookie che identifica in modo univoco la richiesta.</p></td></tr><tr class="even"><td ><a href="/windows/desktop/direct3dtools/inewframescallback-newframesavailable"><strong>NewFramesAvailable</strong></a></td><td ><p>Callback che notifica all'host che sono disponibili nuovi frame per l'elaborazione.</p></td></tr></tbody></table>
+<table><colgroup><col  /><col  /></colgroup><thead><tr class="header"><th style="text-align: left;">Metodo</th><th style="text-align: left;">Descrizione</th></tr></thead><tbody><tr class="odd"><td style="text-align: left;"><a href="/windows/desktop/direct3dtools/inewframescallback-cancelall"><strong>CancelAll</strong></a></td><td style="text-align: left;"><p>Callback che notifica all'host che tutte le richieste sono state annullate.</p></td></tr><tr class="even"><td style="text-align: left;"><a href="/windows/desktop/direct3dtools/inewframescallback-cancelusingcallback-iunknown-ptr"><strong>CancelUsingCallback</strong></a></td><td style="text-align: left;"><p>Callback che notifica all'host di una richiesta annullata.</p></td></tr><tr class="odd"><td style="text-align: left;"><a href="/windows/desktop/direct3dtools/inewframescallback-cancelusingcookie-dword"><strong>CancelUsingCookie</strong></a></td><td style="text-align: left;"><p>Callback che notifica all'host di una richiesta annullata usando un cookie che identifica in modo univoco la richiesta.</p></td></tr><tr class="even"><td style="text-align: left;"><a href="/windows/desktop/direct3dtools/inewframescallback-newframesavailable"><strong>NewFramesAvailable</strong></a></td><td style="text-align: left;"><p>Callback che notifica all'host che sono disponibili nuovi frame per l'elaborazione.</p></td></tr></tbody></table>
 
  
 

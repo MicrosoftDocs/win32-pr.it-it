@@ -14,12 +14,12 @@ api_type:
 api_location:
 - D3DX10.lib
 - D3DX10.dll
-ms.openlocfilehash: 0041d775b21d1af37bc51d6ec2f432e616b2abd6
-ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
+ms.openlocfilehash: 88a738c880bcf338e0afafdb40f1d215a8c3aa48712b47180515d36cc24d4c47
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/28/2021
-ms.locfileid: "108113299"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119730041"
 ---
 # <a name="d3dxcomputeboundingsphere-function-d3dx10mathh"></a>Funzione D3DXComputeBoundingSphere (D3DX10math.h)
 

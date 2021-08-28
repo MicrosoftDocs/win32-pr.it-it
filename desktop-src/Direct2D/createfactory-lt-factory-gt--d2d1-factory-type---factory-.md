@@ -14,14 +14,14 @@ api_type:
 - DllExport
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: af5635a6f996ea6cd3af2c3b3022efa054cd27605430c8230143980e00b9abbd
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: f36a5fd244f0dc814de2414b5642fc4f57ca744a
+ms.sourcegitcommit: 61a4c522182aa1cacbf5669683d9570a3bf043b2
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "117826470"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "122883254"
 ---
-# <a name="d2d1createfactoryfactoryd2d1_factory_typefactory-function"></a>Funzione D2D1CreateFactory <Factory> (D2D1 \_ FACTORY \_ TYPE,Factory) \* \*
+# <a name="d2d1createfactoryltfactorygtd2d1_factory_typefactory-function"></a>Funzione D2D1CreateFactory &lt; Factory &gt; (D2D1 \_ FACTORY \_ TYPE,Factory) \* \*
 
 Crea un oggetto factory che può essere usato per creare risorse Direct2D.
 
@@ -88,7 +88,7 @@ HRESULT DemoApp::CreateDeviceIndependentResources()
 | Requisito | Valore |
 |-------------------------------------|------------------------------------------------------------------------------------------------------------------------------------------|
 | Client minimo supportato<br/> | Windows 7, Windows Vista con SP2 e Aggiornamento piattaforma per Windows app desktop di Vista \[ \| app UWP\]<br/>                          |
-| Server minimo supportato<br/> | Windows Server 2008 R2, Windows Server 2008 con SP2 e aggiornamento della piattaforma per Windows app desktop di Windows Server 2008 \[ app desktop \| UWP\]<br/> |
+| Server minimo supportato<br/> | Windows Server 2008 R2, Windows Server 2008 con SP2 e Aggiornamento della piattaforma per app desktop Windows Server 2008 \[ \| app UWP\]<br/> |
 | Telefono minimo supportato<br/>  | Windows Phone 8.1 \[ Windows Phone silverlight 8.1 e Windows Runtime\]<br/>                                                  |
 | Intestazione<br/>                   | <dl> <dt>D2d1.h</dt> </dl>                                                        |
 | Libreria<br/>                  | <dl> <dt>D2d1.lib</dt> </dl>                                                      |

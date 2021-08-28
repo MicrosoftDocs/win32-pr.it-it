@@ -14,12 +14,12 @@ api_type:
 - DllExport
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 26546b0c0d8c335f2f741f10d50a7042fffc304ad54be4ed779910fcb84246be
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 832cfadb28d80b57366084297877ffadc1a6238c
+ms.sourcegitcommit: 9b5faa61c38b2d0c432b7f2dbee8c127b0e28a7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "118616543"
+ms.lasthandoff: 08/19/2021
+ms.locfileid: "122480707"
 ---
 # <a name="gldrawpixels-function"></a>Funzione glDrawPixels
 
@@ -47,7 +47,7 @@ void WINAPI glDrawPixels(
 *width* 
 </dt> <dd>
 
-Dimensione della larghezza del rettangolo in pixel che verrà scritto nel framebuffer.
+Dimensione della larghezza del rettangolo in pixel che verrà scritto nel buffer frame.
 
 </dd> <dt>
 
@@ -65,99 +65,23 @@ Formato dei dati pixel. Le costanti simboliche accettabili sono le seguenti.
 
 
 
-<table>
-<colgroup>
-<col style="width: 50%" />
-<col style="width: 50%" />
-</colgroup>
-<thead>
-<tr class="header">
-<th>Valore</th>
-<th>Significato</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td><span id="GL_COLOR_INDEX"></span><span id="gl_color_index"></span><dl> <dt><strong>GL_COLOR_INDEX</strong></dt> </dl></td>
-<td>Ogni pixel è un singolo valore, un indice dei colori. <br/>
-<ol>
-<li>La <strong>funzione glDrawPixels</strong> converte ogni pixel in formato a virgola fissa, con un numero non specificato di bit a destra del punto binario, indipendentemente dal tipo di dati di memoria. I valori a virgola mobile vengono convertiti in valori a virgola fissa veri. La <strong>funzione glDrawPixels</strong> converte i dati integer con segno e senza segno con tutti i bit di frazione impostati su zero. La funzione converte i dati bitmap in 0.0 o 1.0.</li>
-<li>La <strong>funzione glDrawPixels</strong> sposta ogni indice a virgola fissa a sinistra di GL_INDEX_SHIFT bit e lo aggiunge a GL_INDEX_OFFSET. Se GL_INDEX_SHIFT è negativo, lo spostamento è a destra. In entrambi i casi, zero bit riempiono le posizioni di bit altrimenti non specifiche nel risultato.</li>
-<li>In modalità RGBA, <strong>glDrawPixels</strong> converte l'indice risultante in un pixel RGBA usando le tabelle GL_PIXEL_MAP_I_TO_R, GL_PIXEL_MAP_I_TO_G, GL_PIXEL_MAP_I_TO_B e GL_PIXEL_MAP_I_TO_A. Quando in modalità color-index e GL_MAP_COLOR è true, l'indice viene sostituito con il valore a cui fa riferimento <strong>glDrawPixels</strong> nella tabella di ricerca GL_PIXEL_MAP_I_TO_I.</li>
-<li>Indipendentemente dal fatto che la sostituzione di ricerca dell'indice sia eseguita o meno, la parte intera dell'indice è <strong>AND</strong>ed con 2<sup>b</sup> 1, dove b è il numero di bit in un oggetto - <em></em> color-index buffer.</li>
-<li>Gli indici o i colori RGBA risultanti vengono quindi convertiti in frammenti associando la posizione raster <em>corrente z</em>-coordinate e coordinate trama a ogni pixel e quindi assegnando le coordinate della finestra <em>x</em> e <em>y</em> al <em>frammento n</em>in modo che <em>x</em>? = <em>x</em><sub>r</sub> + <em>n</em> mod <em>width</em><br/> <em>y</em>? = <em>y</em><sub>r</sub> + <em>n/width</em><br/> dove (<em>x</em><sub>r</sub> , <em>y</em><sub>r</sub> ) è la posizione raster corrente.<br/></li>
-<li>La <strong>funzione glDrawPixels</strong> tratta questi frammenti di pixel esattamente come i frammenti generati dalla rasterizzazione di punti, linee o poligoni. Applica il mapping delle trame, la nebbia e tutte le operazioni sui frammenti prima di scrivere i frammenti nel framebuffer.</li>
-</ol></td>
-</tr>
-<tr class="even">
-<td><span id="GL_STENCIL_INDEX"></span><span id="gl_stencil_index"></span><dl> <dt><strong>GL_STENCIL_INDEX</strong></dt> </dl></td>
-<td>Ogni pixel è un singolo valore, un indice di stencil. <br/>
-<ol>
-<li>La <strong>funzione glDrawPixels</strong> lo converte in formato a virgola fissa, con un numero non specificato di bit a destra del punto binario, indipendentemente dal tipo di dati di memoria. I valori a virgola mobile vengono convertiti in valori a virgola fissa veri. La <strong>funzione glDrawPixels</strong> converte i dati integer con segno e senza segno con tutti i bit di frazione impostati su zero. I dati bitmap vengono convertiti in 0.0 o 1.0.</li>
-<li>La <strong>funzione glDrawPixels</strong> sposta ogni indice a virgola fissa a sinistra di GL_INDEX_SHIFT bit e lo aggiunge a GL_INDEX_OFFSET. Se GL_INDEX_SHIFT è negativo, lo spostamento è a destra. In entrambi i casi, zero bit riempiono le posizioni di bit altrimenti non specifiche nel risultato.</li>
-<li>Se GL_MAP_STENCIL è true, l'indice viene sostituito con il valore a cui fa riferimento <strong>glDrawPixels</strong> nella tabella di ricerca GL_PIXEL_MAP_S_TO_S.</li>
-<li>Indipendentemente dal fatto che la sostituzione di ricerca dell'indice sia eseguita o meno, la parte intera dell'indice è <strong>quindi AND</strong>ed con 2<sup>b</sup> 1, dove b è il numero di bit nel - buffer di stencil. <em></em> Gli indici degli stencil risultanti vengono quindi scritti nel buffer degli stencil in modo che <em>l'eesimo</em>indice n sia scritto nella posizione <em>x</em>? = <em>x</em><sub>r</sub> + <em>n</em> mod <em>width</em><br/> <em>y</em>? = <em>y</em><sub>r</sub> + <em>n/width</em><br/> dove (<em>x</em><sub>r</sub> , <em></em> y<sub>r</sub> ) è la posizione raster corrente. Solo il test di proprietà dei pixel, il test della forbice e la maschera di scrittura dello stencil influiscono su queste scritture.<br/></li>
-</ol></td>
-</tr>
-<tr class="odd">
-<td><span id="GL_DEPTH_COMPONENT"></span><span id="gl_depth_component"></span><dl> <dt><strong>GL_DEPTH_COMPONENT</strong></dt> </dl></td>
-<td>Ogni pixel è un componente a profondità singola. <br/>
-<ol>
-<li>La <strong>funzione glDrawPixels</strong> converte i dati a virgola mobile direttamente in un formato a virgola mobile interno con precisione non specificata. I dati integer con segno vengono mappati in modo lineare al formato a virgola mobile interno in modo che il valore integer rappresentabile più positivo sia mappato a 1,0 e il valore rappresentabile più negativo sia mappato a -1,0. I dati integer senza segno vengono mappati in modo analogo: il valore intero più grande viene mappato a 1,0 e zero viene mappato a 0,0.</li>
-<li>La <strong>funzione glDrawPixels</strong> moltiplica il valore di profondità a virgola mobile risultante per GL_DEPTH_SCALE e lo aggiunge a GL_DEPTH_BIAS. Il risultato è ancorato all'intervallo [0,1].</li>
-<li>La funzione <strong>glDrawPixels</strong> converte i componenti di profondità risultanti in frammenti associando il colore della posizione raster corrente o le coordinate di indice e trama a ogni pixel e quindi assegnando le coordinate della finestra <em>x</em> e <em>y</em> al <em>frammento n,</em> in modo che <em>x</em>? = <em></em>x<sub>r</sub> + <em>n</em> mod <em>width</em><br/> <em>y</em>? = <em>y</em><sub>r</sub> + <em>n/width</em><br/> dove ( <em></em> x<sub>r</sub> ,<em>y</em><sub>r</sub> ) è la posizione raster corrente.<br/></li>
-<li>Questi frammenti di pixel vengono quindi trattati esattamente come i frammenti generati dalla rasterizzazione di punti, linee o poligoni. La <strong>funzione glDrawPixels</strong> applica il mapping delle trame, la nebbia e tutte le operazioni sui frammenti prima di scrivere i frammenti nel framebuffer.</li>
-</ol></td>
-</tr>
-<tr class="even">
-<td><span id="GL_RGBA"></span><span id="gl_rgba"></span><dl> <dt><strong>GL_RGBA</strong></dt> </dl></td>
-<td>Ogni pixel è un gruppo di quattro componenti nell'ordine seguente: rosso, verde, blu, alfa. <br/>
-<ol>
-<li>La <strong>funzione glDrawPixels</strong> converte i valori a virgola mobile direttamente in un formato a virgola mobile interno con precisione non specificata. I valori integer con segno vengono mappati in modo lineare al formato a virgola mobile interno in modo che il valore integer rappresentabile più positivo sia mappato a 1,0 e il valore rappresentabile più negativo sia mappato a -1,0. I dati integer senza segno vengono mappati in modo analogo: il valore intero più grande viene mappato a 1,0 e zero viene mappato a 0,0.</li>
-<li>La funzione <strong>glDrawPixels</strong> moltiplica i valori di colore a virgola mobile risultanti per GL_c_SCALE e li aggiunge a GL_c_BIAS, dove <em>c</em> è RED, GREEN, BLUE e ALPHA per i rispettivi componenti di colore. I risultati sono ancorati all'intervallo [0,1].</li>
-<li>Se GL_MAP_COLOR è true, <strong>glDrawPixels</strong> ridimensiona ogni componente di colore in base alle dimensioni della tabella di ricerca GL_PIXEL_MAP_c_TO_c e quindi sostituisce il componente con il valore a cui fa riferimento in tale tabella; <em>c</em> è rispettivamente R, G, B o A.</li>
-<li>La funzione <strong>glDrawPixels</strong> converte i colori RGBA risultanti in frammenti associando la posizione raster <em>corrente z</em>-coordinate e le coordinate di trama a ogni pixel, quindi assegnando le coordinate della finestra <em>x</em> e <em>y</em> al <em>frammento n</em>in modo che <em>x</em>? = <em>x</em><sub>r</sub> + <em>n</em> mod <em>width</em><br/> <em>y</em>? = <em>y</em><sub>r</sub> + <em>n /width</em><br/> dove (<em>x</em><sub>r</sub> ,<em>y</em><sub>r</sub> ) è la posizione raster corrente.<br/></li>
-<li>Questi frammenti di pixel vengono quindi trattati esattamente come i frammenti generati dalla rasterizzazione di punti, linee o poligoni. La <strong>funzione glDrawPixels</strong> applica il mapping delle trame, la nebbia e tutte le operazioni sui frammenti prima di scrivere i frammenti nel framebuffer.</li>
-</ol></td>
-</tr>
-<tr class="odd">
-<td><span id="GL_RED"></span><span id="gl_red"></span><dl> <dt><strong>GL_RED</strong></dt> </dl></td>
-<td>Ogni pixel è un singolo componente rosso.<br/> La funzione <strong>glDrawPixels</strong> converte questo componente nel formato a virgola mobile interno nello stesso modo del componente rosso di un pixel RGBA e quindi lo converte in un pixel RGBA con verde e blu impostato su 0,0 e alfa impostato su 1,0. Dopo questa conversione, il pixel viene considerato come se fosse stato letto come un pixel RGBA.<br/></td>
-</tr>
-<tr class="even">
-<td><span id="GL_GREEN"></span><span id="gl_green"></span><dl> <dt><strong>GL_GREEN</strong></dt> </dl></td>
-<td>Ogni pixel è un singolo componente verde.<br/> La funzione <strong>glDrawPixels</strong> converte questo componente nel formato a virgola mobile interno nello stesso modo del componente verde di un pixel RGBA e quindi lo converte in un pixel RGBA con rosso e blu impostato su 0,0 e alfa impostato su 1,0. Dopo questa conversione, il pixel viene considerato come se fosse stato letto come un pixel RGBA.<br/></td>
-</tr>
-<tr class="odd">
-<td><span id="GL_BLUE"></span><span id="gl_blue"></span><dl> <dt><strong>GL_BLUE</strong></dt> </dl></td>
-<td>Ogni pixel è un singolo componente blu.<br/> La funzione <strong>glDrawPixels</strong> converte questo componente nel formato a virgola mobile interno nello stesso modo del componente blu di un pixel RGBA, quindi lo converte in un pixel RGBA con rosso e verde impostati su 0,0 e alfa impostato su 1,0. Dopo questa conversione, il pixel viene considerato come se fosse stato letto come un pixel RGBA.<br/></td>
-</tr>
-<tr class="even">
-<td><span id="GL_ALPHA"></span><span id="gl_alpha"></span><dl> <dt><strong>GL_ALPHA</strong></dt> </dl></td>
-<td>Ogni pixel è un singolo componente alfa.<br/> La funzione <strong>glDrawPixels</strong> converte questo componente nel formato a virgola mobile interno nello stesso modo del componente alfa di un pixel RGBA e quindi lo converte in un pixel RGBA con rosso, verde e blu impostato su 0,0. Dopo questa conversione, il pixel viene considerato come se fosse stato letto come un pixel RGBA.<br/></td>
-</tr>
-<tr class="odd">
-<td><span id="GL_RGB"></span><span id="gl_rgb"></span><dl> <dt><strong>GL_RGB</strong></dt> </dl></td>
-<td>Ogni pixel è un gruppo di tre componenti nell'ordine seguente: rosso, verde, blu. La <strong>funzione glDrawPixels</strong> converte ogni componente nel formato a virgola mobile interno nello stesso modo dei componenti rosso, verde e blu di un pixel RGBA. La tripla di colore viene convertita in un pixel RGBA con alfa impostato su 1,0. Dopo questa conversione, il pixel viene considerato come se fosse stato letto come un pixel RGBA.<br/></td>
-</tr>
-<tr class="even">
-<td><span id="GL_LUMINANCE"></span><span id="gl_luminance"></span><dl> <dt><strong>GL_LUMINANCE</strong></dt> </dl></td>
-<td>Ogni pixel è un singolo componente di luminance.<br/> La funzione <strong>glDrawPixels</strong> converte questo componente nel formato a virgola mobile interno nello stesso modo del componente rosso di un pixel RGBA e quindi lo converte in un pixel RGBA con rosso, verde e blu impostato sul valore di luminance convertito e alfa impostato su 1,0. Dopo questa conversione, il pixel viene considerato come se fosse stato letto come un pixel RGBA.<br/></td>
-</tr>
-<tr class="odd">
-<td><span id="GL_LUMINANCE_ALPHA"></span><span id="gl_luminance_alpha"></span><dl> <dt><strong>GL_LUMINANCE_ALPHA</strong></dt> </dl></td>
-<td>Ogni pixel è un gruppo di due componenti nell'ordine seguente: luminance, alpha.<br/> La funzione <strong>glDrawPixels</strong> converte i due componenti nel formato a virgola mobile interno nello stesso modo del componente rosso di un pixel RGBA, quindi li converte in un pixel RGBA con rosso, verde e blu impostati sul valore di luminance convertito e alfa impostato sul valore alfa convertito. Dopo questa conversione, il pixel viene considerato come se fosse stato letto come un pixel RGBA.<br/></td>
-</tr>
-<tr class="even">
-<td><span id="GL_BGR_EXT"></span><span id="gl_bgr_ext"></span><dl> <dt><strong>GL_BGR_EXT</strong></dt> </dl></td>
-<td>Ogni pixel è un gruppo di tre componenti nell'ordine seguente: blu, verde, rosso.<br/> GL_BGR_EXT un formato che corrisponde al layout di memoria Windows bitmap indipendenti dal dispositivo (DIB). Di conseguenza, le applicazioni possono usare gli stessi dati con Windows di funzione e chiamate di funzione pixel OpenGL.<br/></td>
-</tr>
-<tr class="odd">
-<td><span id="GL_BGRA_EXT"></span><span id="gl_bgra_ext"></span><dl> <dt><strong>GL_BGRA_EXT</strong></dt> </dl></td>
-<td>Ogni pixel è un gruppo di quattro componenti nell'ordine seguente: blu, verde, rosso, alfa.<br/> GL_BGRA_EXT fornisce un formato che corrisponde al layout di memoria Windows bitmap indipendenti dal dispositivo (DIB). Di conseguenza, le applicazioni possono usare gli stessi dati con Windows di funzione e chiamate di funzione pixel OpenGL.<br/></td>
-</tr>
-</tbody>
-</table>
+
+| valore | Significato | 
+|-------|---------|
+| <span id="GL_COLOR_INDEX"></span><span id="gl_color_index"></span><dl><dt><strong>GL_COLOR_INDEX</strong></dt></dl> | Ogni pixel è un singolo valore, un indice di colore. <br /><ol><li>La <strong>funzione glDrawPixels</strong> converte ogni pixel in formato a virgola fissa, con un numero non specificato di bit a destra del punto binario, indipendentemente dal tipo di dati di memoria. I valori a virgola mobile vengono convertiti in valori a virgola fissa effettivi. La <strong>funzione glDrawPixels</strong> converte i dati di interi con segno e senza segno con tutti i bit frazionari impostati su zero. La funzione converte i dati bitmap in 0.0 o 1.0.</li><li>La <strong>funzione glDrawPixels</strong> sposta ogni indice a virgola fissa a sinistra di GL_INDEX_SHIFT bit e lo aggiunge a GL_INDEX_OFFSET. Se GL_INDEX_SHIFT è negativo, lo spostamento è a destra. In entrambi i casi, zero bit riempiono le posizioni di bit altrimenti non specificata nel risultato.</li><li>In modalità RGBA, <strong>glDrawPixels</strong> converte l'indice risultante in un pixel RGBA usando le tabelle GL_PIXEL_MAP_I_TO_R, GL_PIXEL_MAP_I_TO_G, GL_PIXEL_MAP_I_TO_B e GL_PIXEL_MAP_I_TO_A. Quando è in modalità color-index e GL_MAP_COLOR è true, l'indice viene sostituito con il valore a cui <strong>glDrawPixels</strong> fa riferimento nella tabella di GL_PIXEL_MAP_I_TO_I.</li><li>Indipendentemente dal fatto che la sostituzione di ricerca dell'indice sia stata eseguita o meno, la parte intera dell'indice è <strong>AND</strong>con 2<sup>b</sup> - 1, dove <em>b</em> è il numero di bit in un index buffer.</li><li>Gli indici o i colori RGBA risultanti vengono quindi convertiti in frammenti collegando la coordinata <em>z</em>della posizione raster corrente e le coordinate della trama a ogni pixel e quindi assegnando le coordinate delle finestre <em>x</em> e <em>y</em> al <em>frammento n</em>in modo che <em>x</em>? = <em>x</em><sub>r</sub>  +  <em>n</em> mod <em>width</em><br /><em>y</em>? = <em>y</em><sub>r</sub>  +  <em>n/width</em><br /> dove (<em>x</em><sub>r</sub> , <em>y</em><sub>r</sub> ) è la posizione raster corrente.<br /></li><li>La <strong>funzione glDrawPixels</strong> considera questi frammenti di pixel esattamente come i frammenti generati dall'rasterizzazione di punti, linee o poligoni. Applica il mapping delle trame, il riempimento e tutte le operazioni sui frammenti prima di scrivere i frammenti nel framebuffer.</li></ol> | 
+| <span id="GL_STENCIL_INDEX"></span><span id="gl_stencil_index"></span><dl><dt><strong>GL_STENCIL_INDEX</strong></dt></dl> | Ogni pixel è un singolo valore, un indice stencil. <br /><ol><li>La <strong>funzione glDrawPixels</strong> la converte in formato a virgola fissa, con un numero non specificato di bit a destra del punto binario, indipendentemente dal tipo di dati di memoria. I valori a virgola mobile vengono convertiti in valori a virgola fissa effettivi. La <strong>funzione glDrawPixels</strong> converte i dati di interi con segno e senza segno con tutti i bit frazionari impostati su zero. I dati bitmap vengono convertiti in 0.0 o 1.0.</li><li>La <strong>funzione glDrawPixels</strong> sposta ogni indice a virgola fissa a sinistra di GL_INDEX_SHIFT bit e lo aggiunge a GL_INDEX_OFFSET. Se GL_INDEX_SHIFT è negativo, lo spostamento è a destra. In entrambi i casi, zero bit riempiono le posizioni di bit altrimenti non specificata nel risultato.</li><li>Se GL_MAP_STENCIL è true, l'indice viene sostituito con il valore a cui <strong>glDrawPixels</strong> fa riferimento nella tabella di GL_PIXEL_MAP_S_TO_S.</li><li>Indipendentemente dal fatto che la sostituzione di ricerca dell'indice sia eseguita o meno, la parte intera dell'indice è <strong>quindi AND</strong>con 2<sup>b</sup> - 1, dove <em>b</em> è il numero di bit nel buffer degli stencil. Gli indici degli stencil risultanti vengono quindi <em></em>scritti nel buffer degli stencil in modo che l'eesimo indice sia scritto nella posizione <em>x</em>? = <em>x</em><sub>r</sub>  +  <em>n</em> mod <em>width</em><br /><em>y</em>? = <em>y</em><sub>r</sub>  +  <em>n/width</em><br /> dove (<em>x</em><sub>r</sub> , <em></em> y<sub>r</sub> ) è la posizione raster corrente. Solo il test di proprietà dei pixel, il test di scissor e la writemask degli stencil influiscono su queste scritture.<br /></li></ol> | 
+| <span id="GL_DEPTH_COMPONENT"></span><span id="gl_depth_component"></span><dl><dt><strong>GL_DEPTH_COMPONENT</strong></dt></dl> | Ogni pixel è un componente a profondità singola. <br /><ol><li>La <strong>funzione glDrawPixels</strong> converte i dati a virgola mobile direttamente in un formato a virgola mobile interno con precisione non specificata. I dati di tipo Signed Integer vengono mappati in modo lineare al formato a virgola mobile interno in modo che il valore integer rappresentabile più positivo sia mappato a 1,0 e che il valore rappresentabile più negativo sia -1,0. Il mapping dei dati di un intero senza segno viene eseguito in modo analogo: il valore intero più grande viene mappato a 1,0 e zero esegue il mapping a 0,0.</li><li>La <strong>funzione glDrawPixels</strong> moltiplica il valore di profondità a virgola mobile risultante per GL_DEPTH_SCALE e lo aggiunge a GL_DEPTH_BIAS. Il risultato viene definito in base all'intervallo [0,1].</li><li>La <strong>funzione glDrawPixels</strong> converte i componenti di profondità risultanti in frammenti collegando il colore della posizione raster corrente o le coordinate di indice e trama a ogni pixel e assegnando le coordinate delle finestre <em>x</em> e <em>y</em> al <em>frammento n</em> in modo che <em>x</em>? = <em></em>x<sub>r</sub>  +  <em>n</em> mod <em>width</em><br /><em>y</em>? = <em>y</em><sub>r</sub>  +  <em>n/width</em><br /> dove ( <em></em> x<sub>r</sub> ,<em>y</em><sub>r</sub> ) è la posizione raster corrente.<br /></li><li>Questi frammenti di pixel vengono quindi trattati esattamente come i frammenti generati dall'rasterizzazione di punti, linee o poligoni. La <strong>funzione glDrawPixels</strong> applica il mapping delle trame, il riempimento e tutte le operazioni di frammento prima di scrivere i frammenti nel framebuffer.</li></ol> | 
+| <span id="GL_RGBA"></span><span id="gl_rgba"></span><dl><dt><strong>GL_RGBA</strong></dt></dl> | Ogni pixel è un gruppo di quattro componenti in questo ordine: rosso, verde, blu, alfa. <br /><ol><li>La <strong>funzione glDrawPixels</strong> converte i valori a virgola mobile direttamente in un formato a virgola mobile interno con precisione non specificata. I valori interi con segno vengono mappati in modo lineare al formato a virgola mobile interno in modo che il valore intero rappresentabile più positivo sia mappato a 1,0 e il valore rappresentabile più negativo a -1,0. Il mapping dei dati di un intero senza segno viene eseguito in modo analogo: il valore intero più grande viene mappato a 1,0 e zero esegue il mapping a 0,0.</li><li>La <strong>funzione glDrawPixels</strong> moltiplica i valori di colore a virgola mobile risultanti per GL_c_SCALE e li aggiunge a GL_c_BIAS, dove <em>c</em> è RED, GREEN, BLUE e ALPHA per i rispettivi componenti di colore. I risultati vengono definiti nell'intervallo [0,1].</li><li>Se GL_MAP_COLOR è true, <strong>glDrawPixels</strong> ridimensiona ogni componente colore in base alle dimensioni della tabella di ricerca GL_PIXEL_MAP_c_TO_c e quindi sostituisce il componente con il valore a cui fa riferimento nella tabella; <em>c</em> è rispettivamente R, G, B o A.</li><li>La <strong>funzione glDrawPixels</strong> converte i colori RGBA risultanti in frammenti collegando le coordinate z <em>della</em>posizione raster corrente e della trama a ogni pixel, quindi assegnando le coordinate delle finestre <em>x</em> e <em>y</em> al <em>frammento n</em>in modo che <em>x</em>? = <em>x</em><sub>r</sub>  +  <em>n</em> mod <em>width</em><br /><em>y</em>? = <em>y</em><sub>r</sub>  +  <em>n /width</em><br /> dove (<em>x</em><sub>r</sub> ,<em>y</em><sub>r</sub> ) è la posizione raster corrente.<br /></li><li>Questi frammenti di pixel vengono quindi trattati esattamente come i frammenti generati dall'rasterizzazione di punti, linee o poligoni. La <strong>funzione glDrawPixels</strong> applica il mapping delle trame, il riempimento e tutte le operazioni di frammento prima di scrivere i frammenti nel framebuffer.</li></ol> | 
+| <span id="GL_RED"></span><span id="gl_red"></span><dl><dt><strong>GL_RED</strong></dt></dl> | Ogni pixel è un singolo componente rosso.<br /> La <strong>funzione glDrawPixels</strong> converte questo componente nel formato a virgola mobile interno allo stesso modo del componente rosso di un pixel RGBA, quindi lo converte in un pixel RGBA con verde e blu impostati su 0,0 e alfa impostato su 1,0. Dopo questa conversione, il pixel viene considerato come se fosse stato letto come pixel RGBA.<br /> | 
+| <span id="GL_GREEN"></span><span id="gl_green"></span><dl><dt><strong>GL_GREEN</strong></dt></dl> | Ogni pixel è un singolo componente verde.<br /> La <strong>funzione glDrawPixels</strong> converte questo componente nel formato a virgola mobile interno allo stesso modo del componente verde di un pixel RGBA, quindi lo converte in un pixel RGBA con rosso e blu impostati su 0,0 e alfa impostato su 1,0. Dopo questa conversione, il pixel viene considerato come se fosse stato letto come pixel RGBA.<br /> | 
+| <span id="GL_BLUE"></span><span id="gl_blue"></span><dl><dt><strong>GL_BLUE</strong></dt></dl> | Ogni pixel è un singolo componente blu.<br /> La funzione <strong>glDrawPixels</strong> converte questo componente nel formato a virgola mobile interno allo stesso modo del componente blu di un pixel RGBA e quindi lo converte in un pixel RGBA con rosso e verde impostati su 0,0 e alfa impostato su 1,0. Dopo questa conversione, il pixel viene considerato come se fosse stato letto come pixel RGBA.<br /> | 
+| <span id="GL_ALPHA"></span><span id="gl_alpha"></span><dl><dt><strong>GL_ALPHA</strong></dt></dl> | Ogni pixel è un singolo componente alfa.<br /> La <strong>funzione glDrawPixels</strong> converte questo componente nel formato a virgola mobile interno allo stesso modo del componente alfa di un pixel RGBA e quindi lo converte in un pixel RGBA con rosso, verde e blu impostato su 0,0. Dopo questa conversione, il pixel viene considerato come se fosse stato letto come pixel RGBA.<br /> | 
+| <span id="GL_RGB"></span><span id="gl_rgb"></span><dl><dt><strong>GL_RGB</strong></dt></dl> | Ogni pixel è un gruppo di tre componenti in questo ordine: rosso, verde, blu. La <strong>funzione glDrawPixels</strong> converte ogni componente nel formato a virgola mobile interno nello stesso modo dei componenti rosso, verde e blu di un pixel RGBA. La tripla di colore viene convertita in un pixel RGBA con alfa impostato su 1,0. Dopo questa conversione, il pixel viene considerato come se fosse stato letto come un pixel RGBA.<br /> | 
+| <span id="GL_LUMINANCE"></span><span id="gl_luminance"></span><dl><dt><strong>GL_LUMINANCE</strong></dt></dl> | Ogni pixel è un singolo componente di luminance.<br /> La funzione <strong>glDrawPixels</strong> converte questo componente nel formato a virgola mobile interno nello stesso modo del componente rosso di un pixel RGBA e quindi lo converte in un pixel RGBA con rosso, verde e blu impostato sul valore di luminance convertito e alfa impostato su 1,0. Dopo questa conversione, il pixel viene considerato come se fosse stato letto come un pixel RGBA.<br /> | 
+| <span id="GL_LUMINANCE_ALPHA"></span><span id="gl_luminance_alpha"></span><dl><dt><strong>GL_LUMINANCE_ALPHA</strong></dt></dl> | Ogni pixel è un gruppo di due componenti nell'ordine seguente: luminance, alpha.<br /> La funzione <strong>glDrawPixels</strong> converte i due componenti nel formato a virgola mobile interno nello stesso modo del componente rosso di un pixel RGBA, quindi li converte in un pixel RGBA con rosso, verde e blu impostati sul valore di luminance convertito e alfa impostato sul valore alfa convertito. Dopo questa conversione, il pixel viene considerato come se fosse stato letto come un pixel RGBA.<br /> | 
+| <span id="GL_BGR_EXT"></span><span id="gl_bgr_ext"></span><dl><dt><strong>GL_BGR_EXT</strong></dt></dl> | Ogni pixel è un gruppo di tre componenti nell'ordine seguente: blu, verde, rosso.<br /> GL_BGR_EXT un formato che corrisponde al layout di memoria Windows bitmap indipendenti dal dispositivo (DIB). Di conseguenza, le applicazioni possono usare gli stessi dati con Windows di funzione e chiamate di funzione pixel OpenGL.<br /> | 
+| <span id="GL_BGRA_EXT"></span><span id="gl_bgra_ext"></span><dl><dt><strong>GL_BGRA_EXT</strong></dt></dl> | Ogni pixel è un gruppo di quattro componenti nell'ordine seguente: blu, verde, rosso, alfa.<br /> GL_BGRA_EXT un formato che corrisponde al layout di memoria Windows bitmap indipendenti dal dispositivo (DIB). Di conseguenza, le applicazioni possono usare gli stessi dati con Windows di funzione e chiamate di funzione pixel OpenGL.<br /> | 
+
 
 
 
@@ -172,7 +96,7 @@ Tipo di dati per *i pixel.* Di seguito sono riportate le costanti simboliche acc
 
 
 
-| Valore                                                                                                                                                                      | Significato                                           |
+| valore                                                                                                                                                                      | Significato                                           |
 |----------------------------------------------------------------------------------------------------------------------------------------------------------------------------|---------------------------------------------------|
 | <span id="GL_UNSIGNED_BYTE"></span><span id="gl_unsigned_byte"></span><dl> <dt>**GL \_ UNSIGNED \_ BYTE**</dt> </dl>    | Intero senza segno a 8 bit<br/>                 |
 | <span id="GL_BYTE"></span><span id="gl_byte"></span><dl> <dt>**GL \_ BYTE**</dt> </dl>                                | Valore intero con segno a 8 bit<br/>                   |
@@ -244,7 +168,7 @@ Le funzioni seguenti recuperano informazioni correlate a **glDrawPixels**:
 
 
 
-| Requisito | Valore |
+| Requisito | valore |
 |-------------------------------------|-----------------------------------------------------------------------------------------|
 | Client minimo supportato<br/> | Windows 2000 Professional \[solo app desktop\]<br/>                              |
 | Server minimo supportato<br/> | Windows 2000 Server \[solo app desktop\]<br/>                                    |
