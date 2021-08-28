@@ -1,32 +1,32 @@
 ---
-description: L'attributo Start specifica l'ora di inizio di un oggetto, relativa all'oggetto padre.
+description: L'attributo start specifica l'ora di inizio di un oggetto rispetto all'oggetto padre.
 ms.assetid: 971de88e-c1ee-4e07-bf8e-3153e4fd11f3
-title: Attributo Start
+title: Attributo start
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 3b377d0d83c86b981400a784904cf0423f0cca20
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 227b04a8cd7dc366a9cf10a4930233cd834e2bea7faa64bb59c248049b9e9abe
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "106316329"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119650991"
 ---
-# <a name="start-attribute"></a>Attributo Start
+# <a name="start-attribute"></a>Attributo start
 
 > [!Note]  
-> \[Deprecato. Questa API può essere rimossa dalle versioni successive di Windows.\]
+> \[Deprecato. Questa API potrebbe essere rimossa dalle versioni future Windows.\]
 
  
 
-L' `start` attributo specifica l'ora di inizio di un oggetto, relativa all'oggetto padre.
+`start`L'attributo specifica l'ora di inizio di un oggetto rispetto all'oggetto padre.
 
 ## <a name="possible-values"></a>Valori possibili
 
-Deve essere una stringa con formato *hh: mm: SS. FF* , dove *HH* = hours, *mm* = minutes, *SS* = seconds e *FF* = frazioni di secondi. Esempio: 1:04:30.512. È possibile omettere le unità iniziali. Ad esempio, 3:00 (tre minuti) e 45 (45 secondi) sono entrambi validi.
+Deve essere una stringa nel formato *hh:mm:ss.ff,* dove *hh* = ore, mm = *minuti,* *ss* = secondi e *ff* = frazioni di secondi. Esempio: 1:04:30.512. Le unità iniziali possono essere omesse. Ad esempio, 3:00 (tre minuti) e 45 (45 secondi) sono entrambi validi.
 
 ## <a name="applies-to"></a>Si applica a
 
-[**clip**](clip-element.md), [**effetto**](effect-element.md), [**transizione**](transition-element.md)
+[**clip,**](clip-element.md) [**effetto,**](effect-element.md) [**transizione**](transition-element.md)
 
 ## <a name="see-also"></a>Vedi anche
 

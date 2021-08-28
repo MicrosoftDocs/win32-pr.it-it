@@ -1,5 +1,5 @@
 ---
-description: 'FileIo_V1: questa classe è la classe padre per gli eventi di I/O dei file. La sintassi seguente è semplificata dal codice MOF.'
+description: 'FileIo_V1 classe: questa classe è la classe padre per gli eventi di I/O di file. La sintassi seguente è semplificata dal codice MOF.'
 ms.assetid: da64a02d-4bde-4ee9-81fa-8a67d53cd62e
 title: FileIo_V1 classe
 ms.topic: reference
@@ -12,16 +12,16 @@ api_name:
 api_type:
 - NA
 api_location: ''
-ms.openlocfilehash: c40568425212231a547352ffdafb7baef46e412a
-ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
+ms.openlocfilehash: 1bd63a2380626486db40d04a5b07b5c840e472cc3382dfa12f72c8a100e2c947
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/28/2021
-ms.locfileid: "108106539"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119754771"
 ---
 # <a name="fileio_v1-class"></a>Classe FileIo \_ V1
 
-Questa classe è la classe padre per gli eventi di I/O dei file.
+Questa classe è la classe padre per gli eventi di I/O di file.
 
 La sintassi seguente è semplificata dal codice MOF.
 
@@ -44,8 +44,8 @@ La **classe FileIo \_ V1** non definisce membri.
 
 | Requisito | Valore |
 |-------------------------------------|------------------------------------------------------|
-| Client minimo supportato<br/> | Solo app desktop di Windows XP \[\]<br/>          |
-| Server minimo supportato<br/> | Solo app desktop di Windows Server 2003 \[\]<br/> |
+| Client minimo supportato<br/> | Windows Solo \[ app desktop XP\]<br/>          |
+| Server minimo supportato<br/> | Windows Solo app desktop server 2003 \[\]<br/> |
 
 
 

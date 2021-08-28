@@ -14,12 +14,12 @@ api_type:
 api_location:
 - d3dx9.lib
 - d3dx9.dll
-ms.openlocfilehash: f39890a92bbff9d27a1150e76092d865dc36c089
-ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
+ms.openlocfilehash: 161978529f12518280284c8c62328756e92b313a63caf0210a6da35ec23ffe0b
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/28/2021
-ms.locfileid: "108097829"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119791471"
 ---
 # <a name="d3dxvec3normalize-function-d3dx9mathh"></a>Funzione D3DXVec3Normalize (D3dx9math.h)
 

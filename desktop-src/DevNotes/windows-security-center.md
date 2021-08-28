@@ -1,27 +1,27 @@
 ---
-description: Centro sicurezza Windows
+description: Sicurezza di Windows Center
 ms.assetid: FF0D7B81-AFDC-4DB2-B2B0-0D2536B2757B
-title: Centro sicurezza Windows
+title: Sicurezza di Windows Center
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 694185b0a0fed7af9c2ab3d7965674c02354c079
-ms.sourcegitcommit: c7add10d695482e1ceb72d62b8a4ebd84ea050f7
+ms.openlocfilehash: adec1a4ccc2d13c2ea2b194c375c2e3e1e773b435e22e67cd97b0870b1c2e250
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104125859"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119642061"
 ---
-# <a name="windows-security-center"></a>Centro sicurezza Windows
+# <a name="windows-security-center"></a>Sicurezza di Windows Center
 
-Windows Security Center (WSC) è uno strumento di creazione di report completo che consente agli utenti di stabilire e mantenere un livello di protezione protetto intorno ai propri sistemi di computer. Una volta stabilito un livello di sicurezza, il Centro sicurezza PC Windows non è visibile mentre monitora lo stato di integrità del computer. Tuttavia, se esistono vulnerabilità, WSC fornisce avvisi e indicazioni per aiutare l'utente a ottenere uno stato sicuro che viene esposto all'utente finale attraverso il centro operativo.
+Sicurezza di Windows Center (WSC) è uno strumento di creazione di report completo che consente agli utenti di stabilire e mantenere un livello di sicurezza fisico intorno ai sistemi informatici. Dopo aver stabilito un livello di sicurezza, Sicurezza di Windows Center non è inspicuo quando monitora lo stato di integrità del computer. Tuttavia, se esistono vulnerabilità, WSC fornisce avvisi e linee guida prescrittive per assistere l'utente nel raggiungimento di uno stato sicuro che viene indicato all'utente finale tramite il Centro notifiche.
 
-Affinché le soluzioni di sicurezza di terze parti (antivirus, antimalware o antispyware) siano conformi a Windows e segnalino correttamente lo stato al centro operativo, è necessario registrarsi con il Centro sicurezza e segnalare eventuali modifiche di stato successive usando le API private per la comunicazione con WSC. WSC, a sua volta, comunica questi aggiornamenti al centro operativo, dove vengono infine visualizzati all'utente finale.
+Perché le soluzioni di sicurezza di terze parti (antivirus, antimalware o antispyware) siano conformi a Windows e segnalano correttamente lo stato al Centro notifiche, devono registrarsi nel Centro sicurezza e segnalare eventuali modifiche di stato successive usando API private per la comunicazione con WSC. WSC, a sua volta, comunica questi aggiornamenti al Centro notifiche, dove vengono infine visualizzati all'utente finale.
 
 ## <a name="in-this-section"></a>Contenuto della sezione
 
--   [Enumerazioni del Centro sicurezza di Windows](windows-security-center-enumerations.md)
--   [Interfacce del Centro sicurezza di Windows](windows-security-center-interfaces.md)
--   [Funzioni del Centro sicurezza di Windows](windows-security-center-functions.md)
+-   [enumerazioni Sicurezza di Windows Center](windows-security-center-enumerations.md)
+-   [Sicurezza di Windows Center](windows-security-center-interfaces.md)
+-   [Sicurezza di Windows Center](windows-security-center-functions.md)
 
  
 

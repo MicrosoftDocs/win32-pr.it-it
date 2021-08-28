@@ -14,12 +14,12 @@ api_type:
 api_location:
 - d3dx9.lib
 - d3dx9.dll
-ms.openlocfilehash: 8519dca07a4475ff043491802ae173ecc61c0bd3
-ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
+ms.openlocfilehash: 270ff91100e5f12239c741188368d131d542721ed1fd307ef4149b0c25940981
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/28/2021
-ms.locfileid: "108107459"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119791661"
 ---
 # <a name="d3dxmatrixorthooffcenterrh-function-d3dx9mathh"></a>Funzione D3DXMatrixOrthoOffCenterRH (D3dx9math.h)
 
@@ -119,7 +119,7 @@ Puntatore all'oggetto [**D3DXMATRIX risultante.**](../direct3d10/d3d10-d3dxmatri
 
 La [**funzione D3DXMatrixOrthoRH**](d3dxmatrixorthorh.md) è un caso speciale della **funzione D3DXMatrixOrthoOffCenterRH.** Per creare la stessa proiezione **usando D3DXMatrixOrthoOffCenterRH,** usare i valori seguenti: l = -w/2, r = w/2, b = -h/2 e t = h/2.
 
-Tutti i parametri della **funzione D3DXMatrixOrthoOffCenterRH** sono distanze nello spazio della fotocamera. I parametri descrivono le dimensioni del volume della vista.
+Tutti i parametri della **funzione D3DXMatrixOrthoOffCenterRH** sono distanze nello spazio della fotocamera. I parametri descrivono le dimensioni del volume di visualizzazione.
 
 Il valore restituito per questa funzione è lo stesso valore restituito nel *parametro pOut.* In questo modo, la **funzione D3DXMatrixOrthoOffCenterRH** può essere usata come parametro per un'altra funzione.
 

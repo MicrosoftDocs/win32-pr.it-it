@@ -1,10 +1,10 @@
 ---
-title: Interfaccia INapServerInfo (NapServerManagement. h)
-description: I client di gestione (ad esempio, i provider WMI o gli strumenti da riga di comando) utilizzano per eseguire una query sullo stato del sistema server protezione accesso alla rete.
+title: Interfaccia INapServerInfo (NapServerManagement.h)
+description: I client di gestione ,ad esempio i provider WMI o gli strumenti da riga di comando, usano per eseguire query sullo stato del sistema server di Protezione accesso alla rete.
 ms.assetid: 3c6d3f76-ea63-4cb2-bac7-e5668e50b7a7
 keywords:
-- NAP interfaccia INapServerInfo
-- Interfaccia NAP di INapServerInfo, descrizione
+- Interfaccia INapServerInfo nap
+- Interfaccia INapServerInfo nap , descritta
 topic_type:
 - apiref
 api_name:
@@ -15,39 +15,39 @@ api_type:
 - COM
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: ec17e3303fe4af4d359279de6c5fa7aa5f34d409
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: 556c2a5b7e7545038995d5091d46931352f9ee32bddfa31b91237dfa54d69620
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "106301813"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119626101"
 ---
 # <a name="inapserverinfo-interface"></a>Interfaccia INapServerInfo
 
 > [!Note]  
-> La piattaforma protezione accesso alla rete non è disponibile a partire da Windows 10
+> La piattaforma Protezione accesso alla rete non è disponibile a partire da Windows 10
 
  
 
-**INapServerInfo** fornisce i metodi che i client di gestione (ad esempio, i provider WMI o gli strumenti da riga di comando) utilizzano per eseguire una query sullo stato del sistema server protezione accesso alla rete.
+**INapServerInfo** fornisce metodi che i client di gestione ,ad esempio i provider WMI o gli strumenti da riga di comando, usano per eseguire query sullo stato del sistema server di Protezione accesso alla rete.
 
 ## <a name="members"></a>Membri
 
-L'interfaccia **INapServerInfo** eredita dall'interfaccia [**IUnknown**](/windows/desktop/api/unknwn/nn-unknwn-iunknown) . **INapServerInfo** dispone anche di questi tipi di membri:
+**L'interfaccia INapServerInfo** eredita dall'interfaccia [**IUnknown.**](/windows/desktop/api/unknwn/nn-unknwn-iunknown) **INapServerInfo** include anche questi tipi di membri:
 
 -   [Metodi](#methods)
 
 ### <a name="methods"></a>Metodi
 
-L'interfaccia **INapServerInfo** dispone di questi metodi.
+Questi metodi sono disponibili nell'interfaccia **INapServerInfo.**
 
 
 
 | Metodo                                                                                                                   | Descrizione                                                             |
 |:-------------------------------------------------------------------------------------------------------------------------|:------------------------------------------------------------------------|
-| [**INapServerInfo::GetFailureCategoryMappings**](inapserverinfo-getfailurecategorymappings-method.md)                   | Recupera i mapping delle categorie di errore per un oggetto di convalida integrità specificato.<br/> |
-| [**INapServerInfo::GetNapServerInfo**](inapserverinfo-getnapserverinfo-method.md)                                       | Recupera le informazioni sul server NAP.<br/>                  |
-| [**INapServerInfo::GetRegisteredSystemHealthValidators**](inapserverinfo-getregisteredsystemhealthvalidators-method.md) | Recupera un elenco di SHV registrati.<br/>                         |
+| [**INapServerInfo::GetFailureCategoryMappings**](inapserverinfo-getfailurecategorymappings-method.md)                   | Recupera i mapping della categoria di errore per un'istanza shv specificata.<br/> |
+| [**INapServerInfo::GetNapServerInfo**](inapserverinfo-getnapserverinfo-method.md)                                       | Recupera informazioni sul server di Protezione accesso alla rete.<br/>                  |
+| [**INapServerInfo::GetRegisteredSystemHealthValidators**](inapserverinfo-getregisteredsystemhealthvalidators-method.md) | Recupera un elenco di shv registrati.<br/>                         |
 
 
 
@@ -55,7 +55,7 @@ L'interfaccia **INapServerInfo** dispone di questi metodi.
 
 ## <a name="remarks"></a>Commenti
 
-Questi metodi forniscono solo informazioni statiche sul server NAP e sui relativi componenti nel sistema.
+Questi metodi forniscono solo informazioni statiche sul server di Protezione accesso alla rete e sui relativi componenti nel sistema.
 
 ## <a name="requirements"></a>Requisiti
 
@@ -64,9 +64,9 @@ Questi metodi forniscono solo informazioni statiche sul server NAP e sui relativ
 | Requisito | Valore |
 |-------------------------------------|----------------------------------------------------------------------------------------------------|
 | Client minimo supportato<br/> | Nessuno supportato<br/>                                                                          |
-| Server minimo supportato<br/> | \[Solo app desktop Windows Server 2008\]<br/>                                               |
-| Intestazione<br/>                   | <dl> <dt>NapServerManagement. h</dt> </dl>   |
-| IDL<br/>                      | <dl> <dt>NapServerManagement. idl</dt> </dl> |
+| Server minimo supportato<br/> | Windows Solo app desktop server 2008 \[\]<br/>                                               |
+| Intestazione<br/>                   | <dl> <dt>NapServerManagement.h</dt> </dl>   |
+| Idl<br/>                      | <dl> <dt>NapServerManagement.idl</dt> </dl> |
 | DLL<br/>                      | <dl> <dt>Qsvrmgmt.dll</dt> </dl>            |
 
 
@@ -75,10 +75,10 @@ Questi metodi forniscono solo informazioni statiche sul server NAP e sui relativ
 
 <dl> <dt>
 
-[Interfacce NAP](nap-interfaces.md)
+[Interfacce di Protezione accesso alla rete](nap-interfaces.md)
 </dt> <dt>
 
-[Riferimento NAP](nap-reference.md)
+[Informazioni di riferimento su Protezione accesso alla rete](nap-reference.md)
 </dt> </dl>
 
  

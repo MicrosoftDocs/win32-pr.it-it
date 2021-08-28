@@ -1,37 +1,37 @@
 ---
-description: Contiene un puntatore agli attributi del flusso del flusso connesso su una trasformazione di Media Foundation basata su hardware.
+description: Contiene un puntatore agli attributi del flusso connesso in una trasformazione Media Foundation (MFT) basata su hardware.
 ms.assetid: 7e14a02e-4cbf-45aa-a6f5-2c53b2437127
-title: Attributo MFT_CONNECTED_STREAM_ATTRIBUTE (Mftransform. h)
+title: MFT_CONNECTED_STREAM_ATTRIBUTE attributo (Mftransform.h)
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: a3b182cbed78f5f9851b621de72bf691bf698b70
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 2289b8f1e8d5d751f7aa69564b8bbd26d865b43efedb474529147385b1851bb0
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "103880606"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119722567"
 ---
-# <a name="mft_connected_stream_attribute-attribute"></a>\_ \_ Attributo attributo flusso connesso MFT \_
+# <a name="mft_connected_stream_attribute-attribute"></a>Attributo MFT \_ CONNECTED \_ STREAM \_ ATTRIBUTE
 
-Contiene un puntatore agli attributi del flusso del flusso connesso su una trasformazione di Media Foundation basata su hardware.
+Contiene un puntatore agli attributi del flusso connesso in una trasformazione Media Foundation (MFT) basata su hardware.
 
 ## <a name="data-type"></a>Tipo di dati
 
-**IMFAttributes \** _ archiviato come _*IUnknown \**_
+**IMFAttributes \* *_ archiviato come _* IUnknown\***
 
 ## <a name="getset"></a>Ottenere/impostare
 
-Per ottenere questo attributo, chiamare [_ *IMFAttributes:: getunknown* *](/windows/desktop/api/mfobjects/nf-mfobjects-imfattributes-getunknown).
+Per ottenere questo attributo, chiamare [**IMFAttributes::GetUnknown**](/windows/desktop/api/mfobjects/nf-mfobjects-imfattributes-getunknown).
 
-Per impostare questo attributo, chiamare [**IMFAttributes:: seunknown**](/windows/desktop/api/mfobjects/nf-mfobjects-imfattributes-setunknown).
+Per impostare questo attributo, chiamare [**IMFAttributes::SetUnknown**](/windows/desktop/api/mfobjects/nf-mfobjects-imfattributes-setunknown).
 
 ## <a name="remarks"></a>Commenti
 
-Le applicazioni in genere non utilizzano questo attributo.
+Le applicazioni in genere non usano questo attributo.
 
-Questo attributo viene usato per MFTs che fungono da proxy per un dispositivo hardware. Per informazioni dettagliate, vedere [hardware MFTS](hardware-mfts.md).
+Questo attributo viene usato per i file MFT che fungono da proxy per un dispositivo hardware. Per informazioni dettagliate, vedere [MFT hardware.](hardware-mfts.md)
 
-La costante GUID per questo attributo viene esportata da mfuuid. lib.
+La costante GUID per questo attributo viene esportata da mfuuid.lib.
 
 ## <a name="requirements"></a>Requisiti
 
@@ -39,9 +39,9 @@ La costante GUID per questo attributo viene esportata da mfuuid. lib.
 
 | Requisito | Valore |
 |-------------------------------------|------------------------------------------------------------------------------------------|
-| Client minimo supportato<br/> | App desktop di Windows 7 \[ \| UWP\]<br/>                                        |
-| Server minimo supportato<br/> | App desktop di Windows Server 2008 R2 \[ \| UWP\]<br/>                           |
-| Intestazione<br/>                   | <dl> <dt>Mftransform. h</dt> </dl> |
+| Client minimo supportato<br/> | Windows 7 \[ app desktop app \| UWP\]<br/>                                        |
+| Server minimo supportato<br/> | Windows App desktop di Server 2008 R2 \[ \| app UWP\]<br/>                           |
+| Intestazione<br/>                   | <dl> <dt>Mftransform.h</dt> </dl> |
 
 
 
@@ -49,13 +49,13 @@ La costante GUID per questo attributo viene esportata da mfuuid. lib.
 
 <dl> <dt>
 
-[Elenco alfabetico degli attributi di Media Foundation](alphabetical-list-of-media-foundation-attributes.md)
+[Elenco alfabetico degli Media Foundation personalizzati](alphabetical-list-of-media-foundation-attributes.md)
 </dt> <dt>
 
-[MFT \_ connesso \_ al \_ \_ flusso HW](mft-connected-to-hw-stream.md)
+[MFT \_ CONNESSO \_ A \_ HW \_ STREAM](mft-connected-to-hw-stream.md)
 </dt> <dt>
 
-[MFTs hardware](hardware-mfts.md)
+[MFT hardware](hardware-mfts.md)
 </dt> <dt>
 
 [Attributi di trasformazione](transform-attributes.md)

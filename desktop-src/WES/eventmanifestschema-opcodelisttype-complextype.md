@@ -1,9 +1,9 @@
 ---
 title: Tipo complesso OpcodeListType
-description: Definisce un elenco di codici operativi usati per identificare le operazioni di un componente dell'applicazione.
+description: Definisce un elenco di codici operativo usati per identificare le operazioni di un componente dell'applicazione.
 ms.assetid: 0cbca036-b32e-4fc4-96ee-1dd5bee019bf
 keywords:
-- Log eventi di tipo complesso OpcodeListType
+- EventLog di tipo complesso OpcodeListType
 topic_type:
 - apiref
 api_name:
@@ -13,16 +13,16 @@ api_type:
 ms.topic: reference
 ms.date: 05/31/2018
 api_location: ''
-ms.openlocfilehash: dce0942ef0268f50b25987a6be0fd4fffeebd614
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: 0c44a2c2fa38957f302dfe3861a89f57dbe51d44ca737268a8988f8c138be8b7
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "104476528"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119767301"
 ---
 # <a name="opcodelisttype-complex-type"></a>Tipo complesso OpcodeListType
 
-Definisce un elenco di codici operativi usati per identificare le operazioni di un componente dell'applicazione.
+Definisce un elenco di codici operativo usati per identificare le operazioni di un componente dell'applicazione.
 
 ``` syntax
 <xs:complexType name="OpcodeListType">
@@ -42,7 +42,7 @@ Definisce un elenco di codici operativi usati per identificare le operazioni di 
 
 | Elemento                                                             | Tipo                                                             | Descrizione                                                            |
 |---------------------------------------------------------------------|------------------------------------------------------------------|------------------------------------------------------------------------|
-| [**codice operativo**](eventmanifestschema-opcode-opcodelisttype-element.md) | [**OpcodeType**](eventmanifestschema-opcodetype-complextype.md) | Definisce un'operazione all'interno di un componente dell'applicazione.<br/> |
+| [**Opcode**](eventmanifestschema-opcode-opcodelisttype-element.md) | [**OpcodeType**](eventmanifestschema-opcodetype-complextype.md) | Definisce un'operazione all'interno di un componente dell'applicazione.<br/> |
 
 
 
@@ -52,8 +52,8 @@ Definisce un elenco di codici operativi usati per identificare le operazioni di 
 
 | Requisito | Valore |
 |-------------------------------------|------------------------------------------------------|
-| Client minimo supportato<br/> | \[Solo app desktop di Windows Vista\]<br/>       |
-| Server minimo supportato<br/> | \[Solo app desktop Windows Server 2008\]<br/> |
+| Client minimo supportato<br/> | Windows Solo \[ app desktop Vista\]<br/>       |
+| Server minimo supportato<br/> | Windows Solo app desktop di Server 2008 \[\]<br/> |
 
 
 

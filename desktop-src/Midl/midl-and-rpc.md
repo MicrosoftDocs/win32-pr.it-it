@@ -1,30 +1,30 @@
 ---
 title: MIDL e RPC
-description: Quando si sviluppa un'applicazione RPC, si utilizza un editor di testo per creare un file IDL che definisce l'interfaccia tra il client e il server.
+description: Quando si sviluppa un'applicazione RPC, si usa un editor di testo per creare un file IDL che definisce l'interfaccia tra il client e il server.
 ms.assetid: 222a1e45-f007-4089-b700-6f4bed672cfa
 keywords:
-- MIDL Compiler MIDL, MIDL e RPC
-- i compilatori MIDL, MIDL e RPC
-- MIDL e MIDL MIDL
-- MIDL RPC
+- MIDL compiler MIDL , MIDL and RPC
+- compilatori MIDL, MIDL e RPC
+- MIDL e RPC MIDL
+- RPC MIDL
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: ffbb89ba823c3db43fa45a200b02fe5970fd2a37
-ms.sourcegitcommit: ebd3ce6908ff865f1ef66f2fc96769be0aad82e1
+ms.openlocfilehash: 02d8196d15d25eb9ef52f2b199d17046b27de672ca5cd1f0fcf3eb67cc5028ea
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/19/2020
-ms.locfileid: "104046726"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119787501"
 ---
 # <a name="midl-and-rpc"></a>MIDL e RPC
 
-Quando si sviluppa un'applicazione RPC, si utilizza un editor di testo per creare un file IDL che definisce l'interfaccia tra il client e il server. Il compilatore MIDL viene usato per generare i file di origine richiesti dai programmi client e server. Gli argomenti seguenti presentano informazioni sull'uso del compilatore MIDL per le applicazioni RPC:
+Quando si sviluppa un'applicazione RPC, si usa un editor di testo per creare un file IDL che definisce l'interfaccia tra il client e il server. Il compilatore MIDL viene utilizzato per generare i file di origine necessari per i programmi client e server. Negli argomenti seguenti vengono fornite informazioni sull'uso del compilatore MIDL per le applicazioni RPC:
 
 -   [File generati per un'interfaccia RPC](files-generated-for-an-rpc-interface.md)
--   [Destinazione degli stub per piattaforme specifiche a 32 bit o a 64 bit](targeting-stubs-for-specific-32-bit-or-64-bit-platforms.md)
+-   [Stub di destinazione per piattaforme specifiche a 32 bit o a 64 bit](targeting-stubs-for-specific-32-bit-or-64-bit-platforms.md)
 
-Per ulteriori informazioni, vedere [compilazione di applicazioni RPC](/windows/desktop/Rpc/building-rpc-applications).
+Per altre informazioni, vedere [Compilazione di applicazioni RPC.](/windows/desktop/Rpc/building-rpc-applications)
 
- 
+ 
 
- 
+ 

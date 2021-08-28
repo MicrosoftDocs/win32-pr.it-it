@@ -1,19 +1,19 @@
 ---
-description: impostazioni locali \_ STHOUSAND
+description: IMPOSTAZIONI \_ LOCALI STHOUSAND
 ms.assetid: 20898656-d9e3-47cb-9f0f-ea997633aa88
 title: LOCALE_STHOUSAND
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 670eb7565aab544a7e8ac9ff6046a11a2e902c12
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 76d5e5abb732961289bb94133534d13d24a29df3996deca9448a2196f9d473ed
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104527661"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119829321"
 ---
-# <a name="locale_sthousand"></a>impostazioni locali \_ STHOUSAND
+# <a name="locale_sthousand"></a>IMPOSTAZIONI \_ LOCALI STHOUSAND
 
-Caratteri utilizzati per separare i gruppi di cifre che si trovano a sinistra del separatore decimale. Il numero massimo di caratteri consentiti per questa stringa è quattro, incluso un carattere di terminazione null. In genere, questi gruppi rappresentano migliaia. Tuttavia, a seconda del valore specificato per le [impostazioni locali \_ SGROUPING](locale-sgrouping.md), possono rappresentare qualcos'altro.
+Caratteri usati per separare gruppi di cifre a sinistra del separatore decimale. Il numero massimo di caratteri consentiti per questa stringa è quattro, incluso un carattere Null di terminazione. In genere, questi gruppi rappresentano migliaia. Tuttavia, a seconda del valore specificato per [LOCALE \_ SGROUPING,](locale-sgrouping.md)possono rappresentare altro.
 
  
 

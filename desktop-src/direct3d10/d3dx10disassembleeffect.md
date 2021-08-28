@@ -1,7 +1,7 @@
 ---
-description: Nota invece di usare questa funzione legacy, è consigliabile usare l'API D3DDisassemble. Questa funzione, che disassembla un effetto compilato in una stringa di testo che contiene istruzioni di assembly e assegnazioni di registro, è stata deprecata.
+description: Nota Invece di usare questa funzione legacy, è consigliabile usare l'API D3DDisassemble. Questa funzione, che disassembla un effetto compilato in una stringa di testo che contiene istruzioni di assembly e assegnazioni di registro, è stata deprecata.
 ms.assetid: 218ac120-33ce-44db-84a7-99fef3281f07
-title: Funzione D3DX10DisassembleEffect (D3DX10Core. h)
+title: Funzione D3DX10DisassembleEffect (D3DX10Core.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -13,17 +13,17 @@ api_type:
 - HeaderDef
 api_location:
 - D3DX10Core.h
-ms.openlocfilehash: 67fe19365616e779bd17ab689550b34737288317
-ms.sourcegitcommit: 14010c34b35fa268046c7683f021f86de08ddd0a
+ms.openlocfilehash: 282dcbb91013e5e8bf6def540809fa3afdb3bca40e2a2fd5250c5b3c92877af5
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/15/2021
-ms.locfileid: "103969426"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119753281"
 ---
-# <a name="d3dx10disassembleeffect-function"></a>D3DX10DisassembleEffect (funzione)
+# <a name="d3dx10disassembleeffect-function"></a>Funzione D3DX10DisassembleEffect
 
 > [!Note]  
-> Invece di usare questa funzione legacy, è consigliabile usare l'API [**D3DDisassemble**](/windows/win32/api/d3dcompiler/nf-d3dcompiler-d3ddisassemble) .
+> Invece di usare questa funzione legacy, è consigliabile usare [**l'API D3DDisassemble.**](/windows/win32/api/d3dcompiler/nf-d3dcompiler-d3ddisassemble)
 
  
 
@@ -46,30 +46,30 @@ HRESULT D3DX10DisassembleEffect(
 
 <dl> <dt>
 
-*pEffect* \[ in\]
+*pEffect* \[ Pollici\]
 </dt> <dd>
 
 Tipo: **[ **ID3D10Effect**](/windows/desktop/api/D3D10Effect/nn-d3d10effect-id3d10effect)\***
 
-Un puntatore all'interfaccia effetto (vedere [**interfaccia ID3D10Effect**](/windows/desktop/api/D3D10Effect/nn-d3d10effect-id3d10effect)).
+Puntatore all'interfaccia dell'effetto (vedere [**INTERFACCIA ID3D10Effect).**](/windows/desktop/api/D3D10Effect/nn-d3d10effect-id3d10effect)
 
 </dd> <dt>
 
-*EnableColorCode* \[ in\]
+*EnableColorCode* \[ Pollici\]
 </dt> <dd>
 
-Tipo: **[ **bool**](../winprog/windows-data-types.md)**
+Tipo: **[ **BOOL**](../winprog/windows-data-types.md)**
 
-Includere i tag HTML nell'output per codificare il risultato.
+Includere i tag HTML nell'output per colorare il risultato.
 
 </dd> <dt>
 
-*ppDisassembly* \[ out\]
+*ppDisassembly* \[ Cambio\]
 </dt> <dd>
 
 Tipo: **[ **ID3D10Blob**](/windows/desktop/api/D3DCommon/nn-d3dcommon-id3d10blob)\*\***
 
-Indirizzo di un buffer (vedere [**interfaccia ID3D10Blob**](/windows/desktop/api/D3DCommon/nn-d3dcommon-id3d10blob)) che contiene l'effetto disassemblato.
+Indirizzo di un buffer (vedere [**l'interfaccia ID3D10Blob)**](/windows/desktop/api/D3DCommon/nn-d3dcommon-id3d10blob)che contiene l'effetto disassemblato.
 
 </dd> </dl>
 
@@ -77,7 +77,7 @@ Indirizzo di un buffer (vedere [**interfaccia ID3D10Blob**](/windows/desktop/api
 
 Tipo: **[ **HRESULT**](https://msdn.microsoft.com/library/Bb401631(v=MSDN.10).aspx)**
 
-Restituisce uno dei seguenti [codici restituiti Direct3D 10](d3d10-graphics-reference-returnvalues.md).
+Restituisce uno dei seguenti [codici restituiti Direct3D 10.](d3d10-graphics-reference-returnvalues.md)
 
 ## <a name="requirements"></a>Requisiti
 
@@ -85,7 +85,7 @@ Restituisce uno dei seguenti [codici restituiti Direct3D 10](d3d10-graphics-refe
 
 | Requisito | Valore |
 |-------------------|-----------------------------------------------------------------------------------------|
-| Intestazione<br/> | <dl> <dt>D3DX10Core. h</dt> </dl> |
+| Intestazione<br/> | <dl> <dt>D3DX10Core.h</dt> </dl> |
 
 
 
@@ -93,7 +93,7 @@ Restituisce uno dei seguenti [codici restituiti Direct3D 10](d3d10-graphics-refe
 
 <dl> <dt>
 
-[Funzioni per utilizzo generico](d3d10-graphics-reference-d3dx10-functions-general-purpose.md)
+[Per utilizzo generico funzioni](d3d10-graphics-reference-d3dx10-functions-general-purpose.md)
 </dt> </dl>
 
  

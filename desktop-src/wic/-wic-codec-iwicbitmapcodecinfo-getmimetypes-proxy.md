@@ -1,7 +1,7 @@
 ---
 description: Funzione proxy per il metodo GetMimeTypes.
 ms.assetid: 9d05624f-da08-4475-933b-faa12bec9012
-title: Funzione IWICBitmapCodecInfo_GetMimeTypes_Proxy
+title: IWICBitmapCodecInfo_GetMimeTypes_Proxy funzione
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -14,16 +14,16 @@ api_type:
 api_location:
 - Windowscodecs.dll
 - Wincodec.lib
-ms.openlocfilehash: eb00b2ae3cd935171a9333a55a76038ef9ae2ed8
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: fc579283b35ed7d112f17aa639be592d70f304cb83930d1219e976655f0b13c4
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104525933"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119772441"
 ---
-# <a name="iwicbitmapcodecinfo_getmimetypes_proxy-function"></a>IWICBitmapCodecInfo \_ GetMimeTypes- \_ funzione proxy
+# <a name="iwicbitmapcodecinfo_getmimetypes_proxy-function"></a>Funzione proxy IWICBitmapCodecInfo \_ GetMimeTypes \_
 
-Funzione proxy per il metodo [**GetMimeTypes**](/windows/desktop/api/Wincodec/nf-wincodec-iwicbitmapcodecinfo-getmimetypes) .
+Funzione proxy per il [**metodo GetMimeTypes.**](/windows/desktop/api/Wincodec/nf-wincodec-iwicbitmapcodecinfo-getmimetypes)
 
 ## <a name="syntax"></a>Sintassi
 
@@ -43,37 +43,37 @@ HRESULT IWICBitmapCodecInfo_GetMimeTypes_Proxy(
 
 <dl> <dt>
 
-*Questa \_ PTR* \[ in\]
+*QUESTO \_ PTR* \[ in\]
 </dt> <dd>
 
-Tipo: **[**IWICBitmapCodecInfo**](/windows/desktop/api/Wincodec/nn-wincodec-iwicbitmapcodecinfo) \** _
+Tipo: **[ **IWICBitmapCodecInfo**](/windows/desktop/api/Wincodec/nn-wincodec-iwicbitmapcodecinfo)\***
 
-Puntatore a questo oggetto [_ *IWICBitmapCodecInfo* *](/windows/desktop/api/Wincodec/nn-wincodec-iwicbitmapcodecinfo) .
+Puntatore a [**questo oggetto IWICBitmapCodecInfo.**](/windows/desktop/api/Wincodec/nn-wincodec-iwicbitmapcodecinfo)
 
 </dd> <dt>
 
-*cchMimeTypes* \[ in\]
+*cchMimeTypes* \[ Pollici\]
 </dt> <dd>
 
-Tipo: **uint**
+Tipo: **UINT**
 
-Dimensioni del buffer dei tipi MIME.
+Dimensione del buffer dei tipi MIME.
 
 </dd> <dt>
 
-*wzMimeTypes* \[ out\]
+*wzMimeTypes* \[ Cambio\]
 </dt> <dd>
 
-Tipo: **WCHAR \** _
+Tipo: **WCHAR \***
 
 Puntatore che riceve i tipi MIME associati al codec.
 
 </dd> <dt>
 
-_pcchActual * \[ out\]
+*pcchActual* \[ Cambio\]
 </dt> <dd>
 
-Tipo: **uint \** _
+Tipo: **UINT \***
 
 Dimensioni effettive del buffer necessarie per recuperare tutti i tipi MIME associati al codec.
 
@@ -81,9 +81,9 @@ Dimensioni effettive del buffer necessarie per recuperare tutti i tipi MIME asso
 
 ## <a name="return-value"></a>Valore restituito
 
-Tipo: _ *HRESULT**
+Tipo: **HRESULT**
 
-Se questa funzione ha esito positivo, restituisce **S \_ OK**. In caso contrario, restituisce un codice di errore **HRESULT** .
+Se questa funzione ha esito positivo, restituisce **S \_ OK**. In caso contrario, restituisce un **codice di errore HRESULT.**
 
 ## <a name="remarks"></a>Osservazioni
 
@@ -93,9 +93,9 @@ Se questa funzione ha esito positivo, restituisce **S \_ OK**. In caso contrario
 
 | Requisito | Valore |
 |-------------------------------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Client minimo supportato<br/> | Windows XP con SP2, \[ solo app desktop di Windows Vista\]<br/>                                                                                              |
-| Server minimo supportato<br/> | \[Solo app desktop Windows Server 2008\]<br/>                                                                                                             |
-| DLL<br/>                      | <dl> <dt>Windowscodecs.dll; </dt> <dt>Wincodec. lib</dt> </dl> |
+| Client minimo supportato<br/> | Windows XP con SP2, Windows solo \[ app desktop vista\]<br/>                                                                                              |
+| Server minimo supportato<br/> | Windows Solo app desktop di Server 2008 \[\]<br/>                                                                                                             |
+| DLL<br/>                      | <dl> <dt>Windowscodecs.dll; </dt> <dt>Wincodec.lib</dt> </dl> |
 
 
 

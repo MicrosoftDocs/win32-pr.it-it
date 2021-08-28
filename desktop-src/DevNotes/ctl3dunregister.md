@@ -1,7 +1,7 @@
 ---
 description: Annulla la registrazione di un'applicazione come client di CTL3D.
 ms.assetid: 21990A79-F90D-4AE1-AB02-2B33583B47F5
-title: Ctl3dUnregister (funzione)
+title: Funzione Ctl3dUnregister
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -13,14 +13,14 @@ api_type:
 - DllExport
 api_location:
 - Ctl3d32.dll
-ms.openlocfilehash: 85cd45062da9c01ef8af5a312a855bfaab6a6bf7
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: 32a954efceba7400692ad92c91bedb47283587827739c19f23e7802e1481fbe6
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "106331830"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119691501"
 ---
-# <a name="ctl3dunregister-function"></a>Ctl3dUnregister (funzione)
+# <a name="ctl3dunregister-function"></a>Funzione Ctl3dUnregister
 
 Annulla la registrazione di un'applicazione come client di CTL3D.
 
@@ -48,15 +48,15 @@ Handle per l'applicazione di cui annullare la registrazione come client.
 
 ## <a name="return-value"></a>Valore restituito
 
-Restituisce **true** se viene annullata la registrazione dell'applicazione come client di CTL3D; in caso contrario, restituisce **false**.
+Restituisce **TRUE** se la registrazione dell'applicazione viene annullata come client di CTL3D; In caso contrario, restituisce **FALSE.**
 
 ## <a name="remarks"></a>Commenti
 
 Un'applicazione che usa CTL3D deve chiamare questa funzione in WinMain.
 
-gli effetti 3D non sono disponibili nei sistemi con una risoluzione inferiore a VGA.
+Gli effetti 3D non sono disponibili nei sistemi con risoluzione inferiore a VGA.
 
-A questa funzione non è associato alcun file di intestazione o libreria di importazione. è necessario chiamarla usando le funzioni [**LoadLibrary**](/windows/win32/api/libloaderapi/nf-libloaderapi-loadlibrarya) e [**GetProcAddress**](/windows/win32/api/libloaderapi/nf-libloaderapi-getprocaddress) .
+A questa funzione non è associata alcuna libreria di importazione o file di intestazione. è necessario chiamarlo usando le [**funzioni LoadLibrary**](/windows/win32/api/libloaderapi/nf-libloaderapi-loadlibrarya) [**e GetProcAddress.**](/windows/win32/api/libloaderapi/nf-libloaderapi-getprocaddress)
 
 ## <a name="requirements"></a>Requisiti
 

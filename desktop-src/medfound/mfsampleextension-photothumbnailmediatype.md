@@ -1,19 +1,19 @@
 ---
-description: Contiene IMFMediaType che descrive il tipo di formato di immagine contenuto nell' \_ attributo di anteprima MFSampleExtension.
+description: Contiene IMFMediaType che descrive il tipo di formato dell'immagine contenuto nell'attributo MFSampleExtension \_ PhotoThumbnail.
 ms.assetid: BA727189-385D-4BA1-9F17-AC6ECDD20ABF
-title: Attributo MFSampleExtension_PhotoThumbnailMediaType (Mfapi. h)
+title: MFSampleExtension_PhotoThumbnailMediaType attributo (Mfapi.h)
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: bb0e415fb0d3b062b4a5064006d3873cd42ea593
-ms.sourcegitcommit: c16214e53680dc71d1c07111b51f72b82a4512d8
+ms.openlocfilehash: 77496340d598c7caf1064df0d3fc7e1ae7f112309bf6fbba6a66f3d5516e3828
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/03/2021
-ms.locfileid: "106320679"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119713601"
 ---
-# <a name="mfsampleextension_photothumbnailmediatype-attribute"></a>\_Attributo PhotoThumbnailMediaType di MFSampleExtension
+# <a name="mfsampleextension_photothumbnailmediatype-attribute"></a>Attributo MFSampleExtension \_ PhotoThumbnailMediaType
 
-Contiene [**IMFMediaType**](/windows/desktop/api/mfobjects/nn-mfobjects-imfmediatype) che descrive il tipo di formato di immagine contenuto nell'attributo di [ \_ Anteprima MFSampleExtension](mfsampleextension-photothumbnail.md) .
+Contiene [**IMFMediaType**](/windows/desktop/api/mfobjects/nn-mfobjects-imfmediatype) che descrive il tipo di formato dell'immagine contenuto nell'attributo [MFSampleExtension \_ PhotoThumbnail.](mfsampleextension-photothumbnail.md)
 
 ## <a name="data-type"></a>Tipo di dati
 
@@ -21,7 +21,7 @@ Contiene [**IMFMediaType**](/windows/desktop/api/mfobjects/nn-mfobjects-imfmedia
 
 ## <a name="remarks"></a>Commenti
 
-Se nell'esempio Photo è presente l'attributo [MFSampleExtension \_ fotothumbnail](mfsampleextension-photothumbnail.md) , il PhotoThumbnailMediaType MFSampleExtension \_ è obbligatorio e deve contenere almeno il [ \_ \_ \_ tipo principale MF mt](mf-mt-major-type-attribute.md), il [ \_ \_ sottotipo](mf-mt-subtype-attribute.md) MF mt e la dimensione del [ \_ frame MF \_ \_ mt](mf-mt-frame-size-attribute.md) che descrivono l'anteprima.
+Se l'attributo [MFSampleExtension \_ PhotoThumbnail](mfsampleextension-photothumbnail.md) è presente nell'esempio di foto, l'attributo MFSampleExtension PhotoThumbnailMediaType è obbligatorio e deve contenere \_ almeno [MF \_ MT MAJOR \_ \_ TYPE,](mf-mt-major-type-attribute.md) [MF MT \_ \_ SUBTYPE](mf-mt-subtype-attribute.md) e [MF MT FRAME \_ \_ \_ SIZE](mf-mt-frame-size-attribute.md) che descrivono l'anteprima.
 
 ## <a name="requirements"></a>Requisiti
 
@@ -29,9 +29,9 @@ Se nell'esempio Photo è presente l'attributo [MFSampleExtension \_ fotothumbnai
 
 | Requisito | Valore |
 |-------------------------------------|------------------------------------------------------------------------------------|
-| Client minimo supportato<br/> | App \[ desktop di Windows 8.1 app \| UWP\]<br/>                                |
-| Server minimo supportato<br/> | App desktop di Windows Server 2012 R2 \[ \| UWP\]<br/>                     |
-| Intestazione<br/>                   | <dl> <dt>Mfapi. h</dt> </dl> |
+| Client minimo supportato<br/> | \[Windows 8.1 app desktop \| app UWP\]<br/>                                |
+| Server minimo supportato<br/> | Windows Server 2012 App \[ UWP per app desktop \| R2\]<br/>                     |
+| Intestazione<br/>                   | <dl> <dt>Mfapi.h</dt> </dl> |
 
 
 
@@ -39,10 +39,10 @@ Se nell'esempio Photo è presente l'attributo [MFSampleExtension \_ fotothumbnai
 
 <dl> <dt>
 
-[Elenco alfabetico degli attributi di Media Foundation](alphabetical-list-of-media-foundation-attributes.md)
+[Elenco alfabetico di Media Foundation attributi](alphabetical-list-of-media-foundation-attributes.md)
 </dt> <dt>
 
-[Anteprima di MFSampleExtension \_](mfsampleextension-photothumbnail.md)
+[MFSampleExtension \_ PhotoThumbnail](mfsampleextension-photothumbnail.md)
 </dt> </dl>
 
  

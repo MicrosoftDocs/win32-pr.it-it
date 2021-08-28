@@ -1,9 +1,9 @@
 ---
-title: maxSize (ChannelLoggingType)-elemento
+title: Elemento maxSize (ChannelLoggingType)
 description: Dimensione massima, in byte, del file di log.
 ms.assetid: 94b5e4c9-9a7b-4950-8e23-b3b0aa0dd100
 keywords:
-- elemento maxSize EventLog
+- Elemento maxSize EventLog
 topic_type:
 - apiref
 api_name:
@@ -13,14 +13,14 @@ api_type:
 ms.topic: reference
 ms.date: 05/31/2018
 api_location: ''
-ms.openlocfilehash: 8a27b2224a64eadf1637f3d2f7f44973f4614536
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: 569b69cdfaf43cbb38382529e55565f19f0e398a2a7adb69d4d2860b36839b0a
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "104047875"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119767331"
 ---
-# <a name="maxsize-channelloggingtype-element"></a>maxSize (ChannelLoggingType)-elemento
+# <a name="maxsize-channelloggingtype-element"></a>Elemento maxSize (ChannelLoggingType)
 
 Dimensione massima, in byte, del file di log.
 
@@ -30,7 +30,7 @@ Dimensione massima, in byte, del file di log.
  />
 ```
 
-L'elemento **MaxSize** è definito dal tipo complesso [**ChannelLoggingType**](eventmanifestschema-channelloggingtype-complextype.md) .
+**L'elemento maxSize** è definito dal tipo complesso [**ChannelLoggingType.**](eventmanifestschema-channelloggingtype-complextype.md)
 
 ## <a name="requirements"></a>Requisiti
 
@@ -38,8 +38,8 @@ L'elemento **MaxSize** è definito dal tipo complesso [**ChannelLoggingType**](e
 
 | Requisito | Valore |
 |-------------------------------------|------------------------------------------------------|
-| Client minimo supportato<br/> | \[Solo app desktop di Windows Vista\]<br/>       |
-| Server minimo supportato<br/> | \[Solo app desktop Windows Server 2008\]<br/> |
+| Client minimo supportato<br/> | Windows Solo \[ app desktop di Vista\]<br/>       |
+| Server minimo supportato<br/> | Windows Solo app desktop server 2008 \[\]<br/> |
 
 
 

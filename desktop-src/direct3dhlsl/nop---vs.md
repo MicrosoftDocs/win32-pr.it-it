@@ -1,6 +1,6 @@
 ---
-title: NOP-vs
-description: Non viene eseguita alcuna operazione. | NOP-vs
+title: nop - vs
+description: Non viene eseguita alcuna operazione. | nop - vs
 ms.assetid: 0ef0ad87-4fda-4c7a-a61a-fb83484cf11f
 ms.topic: reference
 ms.date: 05/31/2018
@@ -9,14 +9,14 @@ topic_type:
 api_name: ''
 api_type: ''
 api_location: ''
-ms.openlocfilehash: 285d958f466e93bf40db92443047d604131d54f9
-ms.sourcegitcommit: 92e74c99f8f4d097676959d0c317f533c2400a80
+ms.openlocfilehash: 57620618a27a3c101415bc055e601320ad2f688c9f68fa2da7ce3297e63d8a29
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/09/2021
-ms.locfileid: "104352866"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119788781"
 ---
-# <a name="nop---vs"></a>NOP-vs
+# <a name="nop---vs"></a>nop - vs
 
 Non viene eseguita alcuna operazione.
 
@@ -24,7 +24,7 @@ Non viene eseguita alcuna operazione.
 
 
 
-| NOP |
+| Nop |
 |-----|
 
 
@@ -35,15 +35,15 @@ Non viene eseguita alcuna operazione.
 
 
 
-| Versioni vertex shader | 1\_1 | 2 \_ 0 | 2 \_ x | 2 \_ SW | 3 \_ 0 | 3 \_ SW |
+| Versioni di vertex shader | 1\_1 | 2 \_ 0 | 2 \_ x | 2 \_ sw | 3 \_ 0 | 3 \_ sw |
 |------------------------|------|------|------|-------|------|-------|
-| NOP                    | x    | x    | x    | x     | x    | x     |
+| Nop                    | x    | x    | x    | x     | x    | x     |
 
 
 
  
 
-Questa istruzione esegue un'operazione no-op o no. La sintassi per la chiamata è la seguente:
+Questa istruzione esegue un'operazione no-op o nessuna operazione. La sintassi per la chiamata è la seguente:
 
 
 ```
@@ -56,7 +56,7 @@ nop
 
 <dl> <dt>
 
-[Istruzioni vertex shader](dx9-graphics-reference-asm-vs-instructions.md)
+[Istruzioni per vertex shader](dx9-graphics-reference-asm-vs-instructions.md)
 </dt> </dl>
 
  

@@ -1,19 +1,19 @@
 ---
 description: L'interfaccia IBinaryConverter espone i metodi seguenti.
 ms.assetid: 263D97A1-6B60-4114-BB57-1B5604632F5D
-title: Metodi IBinaryConverter
+title: Metodi di IBinaryConverter
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 4149aff40bedd8dd1e5137a8ad238740a398f512
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: f2358028f62741668fd74d33a9505b9534d76b6e1b2f2e771cfd353a9a9943bc
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "106316713"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119669791"
 ---
-# <a name="ibinaryconverter-methods"></a>Metodi IBinaryConverter
+# <a name="ibinaryconverter-methods"></a>Metodi di IBinaryConverter
 
-L'interfaccia [**IBinaryConverter**](/windows/desktop/api/CertEnroll/nn-certenroll-ibinaryconverter) espone i metodi seguenti.
+[**L'interfaccia IBinaryConverter**](/windows/desktop/api/CertEnroll/nn-certenroll-ibinaryconverter) espone i metodi seguenti.
 
 ## <a name="in-this-section"></a>Contenuto della sezione
 

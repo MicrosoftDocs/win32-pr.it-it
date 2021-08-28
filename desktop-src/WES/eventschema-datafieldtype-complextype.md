@@ -1,9 +1,9 @@
 ---
-title: Tipo complesso DataType (registro eventi di Windows)
+title: Tipo complesso DataType (Windows eventi)
 description: Definisce un elemento di dati.
 ms.assetid: f3b7de63-1ac1-429d-9e36-1f13c26c9618
 keywords:
-- Log eventi di tipo complesso DataType
+- EventLog di tipo complesso DataType
 topic_type:
 - apiref
 api_name:
@@ -13,12 +13,12 @@ api_type:
 ms.topic: reference
 ms.date: 05/31/2018
 api_location: ''
-ms.openlocfilehash: 9d3ac6e545cbe8567bbe041568c442f762743ad0
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: ba1fcbf217b16fb675a7a4eca00c8faa201737c07eea35a809f85617e96e9445
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "104341053"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119620281"
 ---
 # <a name="datatype-complex-type"></a>Tipo complesso DataType
 
@@ -49,14 +49,14 @@ Definisce un elemento di dati.
 
 | Nome | Tipo   | Descrizione                                                                                                                                                              |
 |------|--------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Nome | stringa | Nome di un elemento di dati definito nel modello (vedere il tipo complesso [**TemplateItemType**](eventmanifestschema-templateitemtype-complextype.md) ).<br/> |
+| Nome | stringa | Nome di un elemento di dati definito nel modello (vedere il tipo complesso [**TemplateItemType).**](eventmanifestschema-templateitemtype-complextype.md)<br/> |
 | Tipo | QName  | Non usato.<br/>                                                                                                                                                     |
 
 
 
 ## <a name="remarks"></a>Commenti
 
-L'elemento dati può essere un elemento di dati di primo livello o un elemento dati in una struttura.
+L'elemento dati può essere un elemento dati di primo livello o un elemento dati in una struttura .
 
 ## <a name="requirements"></a>Requisiti
 
@@ -64,8 +64,8 @@ L'elemento dati può essere un elemento di dati di primo livello o un elemento d
 
 | Requisito | Valore |
 |-------------------------------------|------------------------------------------------------|
-| Client minimo supportato<br/> | \[Solo app desktop di Windows Vista\]<br/>       |
-| Server minimo supportato<br/> | \[Solo app desktop Windows Server 2008\]<br/> |
+| Client minimo supportato<br/> | Windows Solo \[ app desktop di Vista\]<br/>       |
+| Server minimo supportato<br/> | Windows Solo app desktop server 2008 \[\]<br/> |
 
 
 

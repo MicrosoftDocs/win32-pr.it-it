@@ -14,12 +14,12 @@ api_type:
 api_location:
 - D3DX10.lib
 - D3DX10.dll
-ms.openlocfilehash: f1ab6069890bdffdedbd3e36caed1a93984fc2c2
-ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
+ms.openlocfilehash: 8de2798672a482ae25fd3d94aefb1859840d6d214848fb965273f009dc22518d
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/28/2021
-ms.locfileid: "108109149"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119754501"
 ---
 # <a name="d3dxmatrixorthorh-function-d3dx10mathh"></a>Funzione D3DXMatrixOrthoRH (D3DX10Math.h)
 
@@ -97,7 +97,7 @@ Puntatore all'oggetto [**D3DXMATRIX risultante.**](d3d10-d3dxmatrix.md)
 
 ## <a name="remarks"></a>Commenti
 
-Tutti i parametri della funzione D3DXMatrixOrthoRH sono distanze nello spazio della fotocamera. I parametri descrivono le dimensioni del volume di visualizzazione.
+Tutti i parametri della funzione D3DXMatrixOrthoRH sono distanze nello spazio della fotocamera. I parametri descrivono le dimensioni del volume della vista.
 
 Il valore restituito per questa funzione è lo stesso valore restituito nel parametro pOut. In questo modo, la funzione D3DXMatrixOrthoRH può essere usata come parametro per un'altra funzione.
 

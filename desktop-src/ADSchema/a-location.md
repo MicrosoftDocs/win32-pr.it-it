@@ -1,11 +1,11 @@
 ---
 title: Location (attributo)
-description: Posizione dell'utente, ad esempio numero di ufficio.
+description: Posizione dell'utente, ad esempio il numero di ufficio.
 ms.assetid: 3ee97a61-6dce-4f41-b03a-a475706f3cbd
 ms.tgt_platform: multiple
 keywords:
-- Schema di AD dell'attributo location
-- Schema di AD dell'attributo location
+- Schema AD dell'attributo location
+- Schema AD dell'attributo location
 topic_type:
 - apiref
 api_name:
@@ -14,28 +14,28 @@ api_type:
 - Schema
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 1a37f15e80d470c0662036745f285aea87e79391
-ms.sourcegitcommit: b77ace27b0432e7cd3863191b11926be032fbe2f
+ms.openlocfilehash: f7e8080ffa24c9b2a147e6e3ec76f586a92fba3456aa1f80d2875c1292940232
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/14/2020
-ms.locfileid: "104122586"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119705771"
 ---
-# <a name="location-attribute-ad-schema"></a>Attributo location (schema AD)
+# <a name="location-attribute-ad-schema"></a>Attributo Location (schema AD)
 
-Posizione dell'utente, ad esempio numero di ufficio.
+Posizione dell'utente, ad esempio il numero di ufficio.
 
 
 
 | Voce | Valore |
 |-------------------|---------------------------------------------|
-| CN                | Location                                    |
-| LDAP-Display-Name | posizione                                    |
+| CN                | Località                                    |
+| Ldap-Display-Name | posizione                                    |
 | Dimensione              | \-                                          |
-| Privilegio aggiornamento  | \-                                          |
+| Privilegio di aggiornamento  | \-                                          |
 | Frequenza di aggiornamento  | \-                                          |
 | Attribute-Id      | 1.2.840.113556.1.4.222                      |
-| System-ID-GUID    | 09dcb79f-165f-11d0-a064-00aa006c33ed        |
+| System-Id-Guid    | 09dcb79f-165f-11d0-a064-00aa006c33ed        |
 | Sintassi            | [**String(Unicode)**](s-string-unicode.md) |
 
 
@@ -44,7 +44,7 @@ Posizione dell'utente, ad esempio numero di ufficio.
 
 -   [**Windows 2000 Server**](#windows-2000-server)
 -   [**Windows Server 2003**](#windows-server-2003)
--   [**ADAM**](#adam)
+-   [**Adam**](#adam)
 -   [**Windows Server 2003 R2**](#windows-server-2003-r2)
 -   [**Windows Server 2008**](#windows-server-2008)
 -   [**Windows Server 2008 R2**](#windows-server-2008-r2)
@@ -59,15 +59,15 @@ Posizione dell'utente, ad esempio numero di ufficio.
 | ID collegamento                | \-                                                                                                                                                               |
 | MAPI-Id                | \-                                                                                                                                                               |
 | System-Only            | Falso                                                                                                                                                            |
-| È a valore singolo       | Vero                                                                                                                                                             |
+| Is-Single-Valued       | Vero                                                                                                                                                             |
 | Indicizzato             | Vero                                                                                                                                                             |
 | Nel catalogo globale      | Vero                                                                                                                                                             |
-| NT-Security-descrittore | O:BAG: NON VALIDO: S:                                                                                                                                                     |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                                                                                                                                     |
 | Range-Lower            | 0                                                                                                                                                                |
 | Range-Upper            | 1024                                                                                                                                                             |
 | Search-Flags           | 0x00000001                                                                                                                                                       |
 | System-Flags           | 0x00000010                                                                                                                                                       |
-| Classi utilizzate in        | [**Computer**](c-computer.md)<br/> [**Coda di stampa**](c-printqueue.md)<br/> [**Sito**](c-site.md)<br/> [**Subnet**](c-subnet.md)<br/> |
+| Classi usate in        | [**Computer**](c-computer.md)<br/> [**Coda di stampa**](c-printqueue.md)<br/> [**Sito**](c-site.md)<br/> [**Subnet**](c-subnet.md)<br/> |
 
 
 
@@ -80,19 +80,19 @@ Posizione dell'utente, ad esempio numero di ufficio.
 | ID collegamento                | \-                                                                                                                                                                                                 |
 | MAPI-Id                | \-                                                                                                                                                                                                 |
 | System-Only            | Falso                                                                                                                                                                                              |
-| È a valore singolo       | Vero                                                                                                                                                                                               |
+| Is-Single-Valued       | Vero                                                                                                                                                                                               |
 | Indicizzato             | Vero                                                                                                                                                                                               |
 | Nel catalogo globale      | Vero                                                                                                                                                                                               |
-| NT-Security-descrittore | O:BAG: NON VALIDO: S:                                                                                                                                                                                       |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                                                                                                                                                                       |
 | Range-Lower            | 0                                                                                                                                                                                                  |
 | Range-Upper            | 1024                                                                                                                                                                                               |
 | Search-Flags           | 0x00000001                                                                                                                                                                                         |
 | System-Flags           | 0x00000010                                                                                                                                                                                         |
-| Classi utilizzate in        | [**Computer**](c-computer.md)<br/> [**Coda di stampa**](c-printqueue.md)<br/> [**camera**](c-room.md)<br/> [**Sito**](c-site.md)<br/> [**Subnet**](c-subnet.md)<br/> |
+| Classi usate in        | [**Computer**](c-computer.md)<br/> [**Coda di stampa**](c-printqueue.md)<br/> [**Camera**](c-room.md)<br/> [**Sito**](c-site.md)<br/> [**Subnet**](c-subnet.md)<br/> |
 
 
 
-## <a name="adam"></a>ADAM
+## <a name="adam"></a>Adam
 
 
 
@@ -101,15 +101,15 @@ Posizione dell'utente, ad esempio numero di ufficio.
 | ID collegamento                | \-                                                                      |
 | MAPI-Id                | \-                                                                      |
 | System-Only            | Falso                                                                   |
-| È a valore singolo       | Vero                                                                    |
+| Is-Single-Valued       | Vero                                                                    |
 | Indicizzato             | Vero                                                                    |
 | Nel catalogo globale      | Vero                                                                    |
-| NT-Security-descrittore | O:BAG: NON VALIDO: S:                                                            |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                                            |
 | Range-Lower            | 0                                                                       |
 | Range-Upper            | 1024                                                                    |
 | Search-Flags           | 0x00000001                                                              |
 | System-Flags           | 0x00000010                                                              |
-| Classi utilizzate in        | [**Sito**](c-site.md)<br/> [**Subnet**](c-subnet.md)<br/> |
+| Classi usate in        | [**Sito**](c-site.md)<br/> [**Subnet**](c-subnet.md)<br/> |
 
 
 
@@ -122,15 +122,15 @@ Posizione dell'utente, ad esempio numero di ufficio.
 | ID collegamento                | \-                                                                                                                                                                                                 |
 | MAPI-Id                | \-                                                                                                                                                                                                 |
 | System-Only            | Falso                                                                                                                                                                                              |
-| È a valore singolo       | Vero                                                                                                                                                                                               |
+| Is-Single-Valued       | Vero                                                                                                                                                                                               |
 | Indicizzato             | Vero                                                                                                                                                                                               |
 | Nel catalogo globale      | Vero                                                                                                                                                                                               |
-| NT-Security-descrittore | O:BAG: NON VALIDO: S:                                                                                                                                                                                       |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                                                                                                                                                                       |
 | Range-Lower            | 0                                                                                                                                                                                                  |
 | Range-Upper            | 1024                                                                                                                                                                                               |
 | Search-Flags           | 0x00000001                                                                                                                                                                                         |
 | System-Flags           | 0x00000010                                                                                                                                                                                         |
-| Classi utilizzate in        | [**Computer**](c-computer.md)<br/> [**Coda di stampa**](c-printqueue.md)<br/> [**camera**](c-room.md)<br/> [**Sito**](c-site.md)<br/> [**Subnet**](c-subnet.md)<br/> |
+| Classi usate in        | [**Computer**](c-computer.md)<br/> [**Coda di stampa**](c-printqueue.md)<br/> [**Camera**](c-room.md)<br/> [**Sito**](c-site.md)<br/> [**Subnet**](c-subnet.md)<br/> |
 
 
 
@@ -143,15 +143,15 @@ Posizione dell'utente, ad esempio numero di ufficio.
 | ID collegamento                | \-                                                                                                                                                                                                 |
 | MAPI-Id                | \-                                                                                                                                                                                                 |
 | System-Only            | Falso                                                                                                                                                                                              |
-| È a valore singolo       | Vero                                                                                                                                                                                               |
+| Is-Single-Valued       | Vero                                                                                                                                                                                               |
 | Indicizzato             | Vero                                                                                                                                                                                               |
 | Nel catalogo globale      | Vero                                                                                                                                                                                               |
-| NT-Security-descrittore | O:BAG: NON VALIDO: S:                                                                                                                                                                                       |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                                                                                                                                                                       |
 | Range-Lower            | 0                                                                                                                                                                                                  |
 | Range-Upper            | 1024                                                                                                                                                                                               |
 | Search-Flags           | 0x00000001                                                                                                                                                                                         |
 | System-Flags           | 0x00000010                                                                                                                                                                                         |
-| Classi utilizzate in        | [**Computer**](c-computer.md)<br/> [**Coda di stampa**](c-printqueue.md)<br/> [**camera**](c-room.md)<br/> [**Sito**](c-site.md)<br/> [**Subnet**](c-subnet.md)<br/> |
+| Classi usate in        | [**Computer**](c-computer.md)<br/> [**Coda di stampa**](c-printqueue.md)<br/> [**Camera**](c-room.md)<br/> [**Sito**](c-site.md)<br/> [**Subnet**](c-subnet.md)<br/> |
 
 
 
@@ -164,15 +164,15 @@ Posizione dell'utente, ad esempio numero di ufficio.
 | ID collegamento                | \-                                                                                                                                                                                                 |
 | MAPI-Id                | \-                                                                                                                                                                                                 |
 | System-Only            | Falso                                                                                                                                                                                              |
-| È a valore singolo       | Vero                                                                                                                                                                                               |
+| Is-Single-Valued       | Vero                                                                                                                                                                                               |
 | Indicizzato             | Vero                                                                                                                                                                                               |
 | Nel catalogo globale      | Vero                                                                                                                                                                                               |
-| NT-Security-descrittore | O:BAG: NON VALIDO: S:                                                                                                                                                                                       |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                                                                                                                                                                       |
 | Range-Lower            | 0                                                                                                                                                                                                  |
 | Range-Upper            | 1024                                                                                                                                                                                               |
 | Search-Flags           | 0x00000001                                                                                                                                                                                         |
 | System-Flags           | 0x00000010                                                                                                                                                                                         |
-| Classi utilizzate in        | [**Computer**](c-computer.md)<br/> [**Coda di stampa**](c-printqueue.md)<br/> [**camera**](c-room.md)<br/> [**Sito**](c-site.md)<br/> [**Subnet**](c-subnet.md)<br/> |
+| Classi usate in        | [**Computer**](c-computer.md)<br/> [**Coda di stampa**](c-printqueue.md)<br/> [**Camera**](c-room.md)<br/> [**Sito**](c-site.md)<br/> [**Subnet**](c-subnet.md)<br/> |
 
 
 
@@ -185,15 +185,15 @@ Posizione dell'utente, ad esempio numero di ufficio.
 | ID collegamento                | \-                                                                                                                                                                                                 |
 | MAPI-Id                | \-                                                                                                                                                                                                 |
 | System-Only            | Falso                                                                                                                                                                                              |
-| È a valore singolo       | Vero                                                                                                                                                                                               |
+| Is-Single-Valued       | Vero                                                                                                                                                                                               |
 | Indicizzato             | Vero                                                                                                                                                                                               |
 | Nel catalogo globale      | Vero                                                                                                                                                                                               |
-| NT-Security-descrittore | O:BAG: NON VALIDO: S:                                                                                                                                                                                       |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                                                                                                                                                                       |
 | Range-Lower            | 0                                                                                                                                                                                                  |
 | Range-Upper            | 1024                                                                                                                                                                                               |
 | Search-Flags           | 0x00000001                                                                                                                                                                                         |
 | System-Flags           | 0x00000010                                                                                                                                                                                         |
-| Classi utilizzate in        | [**Computer**](c-computer.md)<br/> [**Coda di stampa**](c-printqueue.md)<br/> [**camera**](c-room.md)<br/> [**Sito**](c-site.md)<br/> [**Subnet**](c-subnet.md)<br/> |
+| Classi usate in        | [**Computer**](c-computer.md)<br/> [**Coda di stampa**](c-printqueue.md)<br/> [**Camera**](c-room.md)<br/> [**Sito**](c-site.md)<br/> [**Subnet**](c-subnet.md)<br/> |
 
 
 

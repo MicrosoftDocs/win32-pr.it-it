@@ -1,10 +1,10 @@
 ---
-title: attributo per la risposta a una richiesta
-description: Consente al server RIS di accettare le richieste RIS.
+title: Attributo netboot-Answer-Requests
+description: Consente al server RIS di accettare eventuali richieste RIS.
 ms.assetid: fb57762f-d7af-45ae-80f2-5dd52b5688a9
 ms.tgt_platform: multiple
 keywords:
-- Schema di AD per l'attributo per la risposta e la richiesta di risposta
+- Schema AD dell'attributo netboot-Answer-Requests
 - Schema AD dell'attributo netbootAnswerRequests
 topic_type:
 - apiref
@@ -14,28 +14,28 @@ api_type:
 - Schema
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 2e3552517189635da9c2ed464e286c06bb3c8d19
-ms.sourcegitcommit: b77ace27b0432e7cd3863191b11926be032fbe2f
+ms.openlocfilehash: d8580c3ff7cacda36fc63430f615ad9615c7ff8aa3b0354d725b97a5e9896c61
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/14/2020
-ms.locfileid: "106303407"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119648701"
 ---
-# <a name="netboot-answer-requests-attribute"></a>attributo per la risposta a una richiesta
+# <a name="netboot-answer-requests-attribute"></a>Attributo netboot-Answer-Requests
 
-Consente al server RIS di accettare le richieste RIS.
+Consente al server RIS di accettare eventuali richieste RIS.
 
 
 
 | Voce | Valore |
 |-------------------|--------------------------------------|
-| CN                | Domande e risposte-risposta              |
-| LDAP-Display-Name | netbootAnswerRequests                |
+| CN                | Netboot-Answer-Requests              |
+| Ldap-Display-Name | netbootAnswerRequests                |
 | Dimensione              | \-                                   |
-| Privilegio aggiornamento  | Questo valore viene impostato dal sistema.     |
+| Aggiorna privilegio  | Questo valore viene impostato dal sistema.     |
 | Frequenza di aggiornamento  | \-                                   |
 | Attribute-Id      | 1.2.840.113556.1.4.853               |
-| System-ID-GUID    | 0738307a-91df-11d1-aebc-0000f80367c1 |
+| System-Id-Guid    | 0738307a-91df-11d1-aebc-0000f80367c1 |
 | Sintassi            | [**Boolean**](s-boolean.md)         |
 
 
@@ -58,15 +58,15 @@ Consente al server RIS di accettare le richieste RIS.
 | ID collegamento                | \-                                                         |
 | MAPI-Id                | \-                                                         |
 | System-Only            | Falso                                                      |
-| È a valore singolo       | Vero                                                       |
+| Is-Single-Valued       | Vero                                                       |
 | Indicizzato             | Falso                                                      |
 | Nel catalogo globale      | Falso                                                      |
-| NT-Security-descrittore | O:BAG: NON VALIDO: S:                                               |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                               |
 | Range-Lower            | \-                                                         |
 | Range-Upper            | \-                                                         |
 | Search-Flags           | 0x00000000                                                 |
 | System-Flags           | 0x00000010                                                 |
-| Classi utilizzate in        | [**IntelliMirror-SCP**](c-intellimirrorscp.md)<br/> |
+| Classi usate in        | [**Intellimirror-SCP**](c-intellimirrorscp.md)<br/> |
 
 
 
@@ -79,15 +79,15 @@ Consente al server RIS di accettare le richieste RIS.
 | ID collegamento                | \-                                                         |
 | MAPI-Id                | \-                                                         |
 | System-Only            | Falso                                                      |
-| È a valore singolo       | Vero                                                       |
+| Is-Single-Valued       | Vero                                                       |
 | Indicizzato             | Falso                                                      |
 | Nel catalogo globale      | Falso                                                      |
-| NT-Security-descrittore | O:BAG: NON VALIDO: S:                                               |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                               |
 | Range-Lower            | \-                                                         |
 | Range-Upper            | \-                                                         |
 | Search-Flags           | 0x00000000                                                 |
 | System-Flags           | 0x00000010                                                 |
-| Classi utilizzate in        | [**IntelliMirror-SCP**](c-intellimirrorscp.md)<br/> |
+| Classi usate in        | [**Intellimirror-SCP**](c-intellimirrorscp.md)<br/> |
 
 
 
@@ -100,15 +100,15 @@ Consente al server RIS di accettare le richieste RIS.
 | ID collegamento                | \-                                                         |
 | MAPI-Id                | \-                                                         |
 | System-Only            | Falso                                                      |
-| È a valore singolo       | Vero                                                       |
+| Is-Single-Valued       | Vero                                                       |
 | Indicizzato             | Falso                                                      |
 | Nel catalogo globale      | Falso                                                      |
-| NT-Security-descrittore | O:BAG: NON VALIDO: S:                                               |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                               |
 | Range-Lower            | \-                                                         |
 | Range-Upper            | \-                                                         |
 | Search-Flags           | 0x00000000                                                 |
 | System-Flags           | 0x00000010                                                 |
-| Classi utilizzate in        | [**IntelliMirror-SCP**](c-intellimirrorscp.md)<br/> |
+| Classi usate in        | [**Intellimirror-SCP**](c-intellimirrorscp.md)<br/> |
 
 
 
@@ -121,15 +121,15 @@ Consente al server RIS di accettare le richieste RIS.
 | ID collegamento                | \-                                                         |
 | MAPI-Id                | \-                                                         |
 | System-Only            | Falso                                                      |
-| È a valore singolo       | Vero                                                       |
+| Is-Single-Valued       | Vero                                                       |
 | Indicizzato             | Falso                                                      |
 | Nel catalogo globale      | Falso                                                      |
-| NT-Security-descrittore | O:BAG: NON VALIDO: S:                                               |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                               |
 | Range-Lower            | \-                                                         |
 | Range-Upper            | \-                                                         |
 | Search-Flags           | 0x00000000                                                 |
 | System-Flags           | 0x00000010                                                 |
-| Classi utilizzate in        | [**IntelliMirror-SCP**](c-intellimirrorscp.md)<br/> |
+| Classi usate in        | [**Intellimirror-SCP**](c-intellimirrorscp.md)<br/> |
 
 
 
@@ -142,15 +142,15 @@ Consente al server RIS di accettare le richieste RIS.
 | ID collegamento                | \-                                                         |
 | MAPI-Id                | \-                                                         |
 | System-Only            | Falso                                                      |
-| È a valore singolo       | Vero                                                       |
+| Is-Single-Valued       | Vero                                                       |
 | Indicizzato             | Falso                                                      |
 | Nel catalogo globale      | Falso                                                      |
-| NT-Security-descrittore | O:BAG: NON VALIDO: S:                                               |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                               |
 | Range-Lower            | \-                                                         |
 | Range-Upper            | \-                                                         |
 | Search-Flags           | 0x00000000                                                 |
 | System-Flags           | 0x00000010                                                 |
-| Classi utilizzate in        | [**IntelliMirror-SCP**](c-intellimirrorscp.md)<br/> |
+| Classi usate in        | [**Intellimirror-SCP**](c-intellimirrorscp.md)<br/> |
 
 
 
@@ -163,15 +163,15 @@ Consente al server RIS di accettare le richieste RIS.
 | ID collegamento                | \-                                                         |
 | MAPI-Id                | \-                                                         |
 | System-Only            | Falso                                                      |
-| È a valore singolo       | Vero                                                       |
+| Is-Single-Valued       | Vero                                                       |
 | Indicizzato             | Falso                                                      |
 | Nel catalogo globale      | Falso                                                      |
-| NT-Security-descrittore | O:BAG: NON VALIDO: S:                                               |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                               |
 | Range-Lower            | \-                                                         |
 | Range-Upper            | \-                                                         |
 | Search-Flags           | 0x00000000                                                 |
 | System-Flags           | 0x00000010                                                 |
-| Classi utilizzate in        | [**IntelliMirror-SCP**](c-intellimirrorscp.md)<br/> |
+| Classi usate in        | [**Intellimirror-SCP**](c-intellimirrorscp.md)<br/> |
 
 
 

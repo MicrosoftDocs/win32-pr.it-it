@@ -1,7 +1,7 @@
 ---
 description: Rappresenta un servizio in grado di creare, applicare ed eliminare snapshot di sistemi virtuali.
 ms.assetid: 8d5d54a2-08f1-4f24-bca3-601dc698d018
-title: Classe CIM_VirtualSystemSnapshotService
+title: CIM_VirtualSystemSnapshotService classe
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -13,14 +13,14 @@ api_type:
 - DllExport
 api_location:
 - vmms.exe
-ms.openlocfilehash: 7ae74f85d1af9867b7a95c23aeda670b8f06f413
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 5546c7381eb0830d820af20d7efa03e5d7441a712b872a3ae2167b3e441354d0
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "103885869"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119682691"
 ---
-# <a name="cim_virtualsystemsnapshotservice-class"></a>CIM \_ VirtualSystemSnapshotService (classe)
+# <a name="cim_virtualsystemsnapshotservice-class"></a>Classe CIM \_ VirtualSystemSnapshotService
 
 Rappresenta un servizio in grado di creare, applicare ed eliminare snapshot di sistemi virtuali.
 
@@ -35,13 +35,13 @@ class CIM_VirtualSystemSnapshotService : CIM_Service
 
 ## <a name="members"></a>Members
 
-La classe **CIM \_ VirtualSystemSnapshotService** presenta questi tipi di membri:
+La **classe CIM \_ VirtualSystemSnapshotService** ha questi tipi di membri:
 
 -   [Metodi](#methods)
 
 ### <a name="methods"></a>Metodi
 
-La classe **CIM \_ VirtualSystemSnapshotService** presenta questi metodi.
+La **classe CIM \_ VirtualSystemSnapshotService** dispone di questi metodi.
 
 
 
@@ -63,8 +63,8 @@ La classe **CIM \_ VirtualSystemSnapshotService** presenta questi metodi.
 |-------------------------------------|---------------------------------------------------------------------------------------------------------|
 | Client minimo supportato<br/> | Windows 8<br/>                                                                                    |
 | Server minimo supportato<br/> | Windows Server 2012<br/>                                                                          |
-| Spazio dei nomi<br/>                | \\Virtualizzazione radice \\ v2<br/>                                                                     |
-| MOF<br/>                      | <dl> <dt>WindowsVirtualization. v2. mof</dt> </dl> |
+| Spazio dei nomi<br/>                | Virtualizzazione \\ radice \\ v2<br/>                                                                     |
+| MOF<br/>                      | <dl> <dt>WindowsVirtualization.V2.mof</dt> </dl> |
 | DLL<br/>                      | <dl> <dt>Vmms.exe</dt> </dl>                     |
 
 
@@ -73,7 +73,7 @@ La classe **CIM \_ VirtualSystemSnapshotService** presenta questi metodi.
 
 <dl> <dt>
 
-[**\_Servizio CIM**](cim-service.md)
+[**Servizio \_ CIM**](cim-service.md)
 </dt> </dl>
 
  

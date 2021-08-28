@@ -1,10 +1,10 @@
 ---
-title: Attributo non di sicurezza-membro
-description: Membri non di sicurezza di un gruppo. Utilizzato per gli elenchi di distribuzione di Exchange.
+title: Attributo non membro di sicurezza
+description: Membri non di sicurezza di un gruppo. Usato per Exchange di distribuzione.
 ms.assetid: 0db135e4-dcba-4afb-a174-3c7b2b40688e
 ms.tgt_platform: multiple
 keywords:
-- Schema AD dell'attributo non di sicurezza-membro
+- Schema AD dell'attributo non membro di sicurezza
 - Schema AD dell'attributo nonSecurityMember
 topic_type:
 - apiref
@@ -14,28 +14,28 @@ api_type:
 - Schema
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: a04919d9d538ff4da97d73e79d14e9a2706032b8
-ms.sourcegitcommit: b77ace27b0432e7cd3863191b11926be032fbe2f
+ms.openlocfilehash: dba59e37e4d4be5549e9ab5f36747f1cfd0046a9fb01ca91e2a9e79f353f148a
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/14/2020
-ms.locfileid: "103965353"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119648381"
 ---
-# <a name="non-security-member-attribute"></a>Attributo non di sicurezza-membro
+# <a name="non-security-member-attribute"></a>Attributo non membro di sicurezza
 
-Membri non di sicurezza di un gruppo. Utilizzato per gli elenchi di distribuzione di Exchange.
+Membri non di sicurezza di un gruppo. Usato per Exchange di distribuzione.
 
 
 
 | Voce | Valore |
 |-------------------|--------------------------------------------------|
-| CN                | Membro non di sicurezza                              |
-| LDAP-Display-Name | nonSecurityMember                                |
+| CN                | Non membro della sicurezza                              |
+| Ldap-Display-Name | nonSecurityMember                                |
 | Dimensione              | \-                                               |
-| Privilegio aggiornamento  | Amministratore di dominio                             |
-| Frequenza di aggiornamento  | Ogni volta che un utente viene aggiunto o rimosso dal DL. |
+| Privilegio di aggiornamento  | Amministratore di dominio                             |
+| Frequenza di aggiornamento  | Ogni volta che un utente viene aggiunto o rimosso dalla dll. |
 | Attribute-Id      | 1.2.840.113556.1.4.530                           |
-| System-ID-GUID    | 52458018-ca6a-11D0-AFFF-0000f80367c1             |
+| System-Id-Guid    | 52458018-ca6a-11d0-afff-0000f80367c1             |
 | Sintassi            | [**Object(DS-DN)**](s-object-ds-dn.md)          |
 
 
@@ -58,15 +58,15 @@ Membri non di sicurezza di un gruppo. Utilizzato per gli elenchi di distribuzion
 | ID collegamento                | 50                                  |
 | MAPI-Id                | \-                                  |
 | System-Only            | Falso                               |
-| È a valore singolo       | Falso                               |
+| Is-Single-Valued       | Falso                               |
 | Indicizzato             | Falso                               |
 | Nel catalogo globale      | Falso                               |
-| NT-Security-descrittore | O:BAG: NON VALIDO: S:                        |
+| NT-Security-Descriptor | O:BAG:BAD:S:                        |
 | Range-Lower            | \-                                  |
 | Range-Upper            | \-                                  |
 | Search-Flags           | 0x00000000                          |
 | System-Flags           | 0x00000010                          |
-| Classi utilizzate in        | [**Group**](c-group.md)<br/> |
+| Classi usate in        | [**Group**](c-group.md)<br/> |
 
 
 
@@ -79,15 +79,15 @@ Membri non di sicurezza di un gruppo. Utilizzato per gli elenchi di distribuzion
 | ID collegamento                | 50                                  |
 | MAPI-Id                | \-                                  |
 | System-Only            | Falso                               |
-| È a valore singolo       | Falso                               |
+| Is-Single-Valued       | Falso                               |
 | Indicizzato             | Falso                               |
 | Nel catalogo globale      | Falso                               |
-| NT-Security-descrittore | O:BAG: NON VALIDO: S:                        |
+| NT-Security-Descriptor | O:BAG:BAD:S:                        |
 | Range-Lower            | \-                                  |
 | Range-Upper            | \-                                  |
 | Search-Flags           | 0x00000000                          |
 | System-Flags           | 0x00000010                          |
-| Classi utilizzate in        | [**Group**](c-group.md)<br/> |
+| Classi usate in        | [**Group**](c-group.md)<br/> |
 
 
 
@@ -100,15 +100,15 @@ Membri non di sicurezza di un gruppo. Utilizzato per gli elenchi di distribuzion
 | ID collegamento                | 50                                  |
 | MAPI-Id                | \-                                  |
 | System-Only            | Falso                               |
-| È a valore singolo       | Falso                               |
+| Is-Single-Valued       | Falso                               |
 | Indicizzato             | Falso                               |
 | Nel catalogo globale      | Falso                               |
-| NT-Security-descrittore | O:BAG: NON VALIDO: S:                        |
+| NT-Security-Descriptor | O:BAG:BAD:S:                        |
 | Range-Lower            | \-                                  |
 | Range-Upper            | \-                                  |
 | Search-Flags           | 0x00000000                          |
 | System-Flags           | 0x00000010                          |
-| Classi utilizzate in        | [**Group**](c-group.md)<br/> |
+| Classi usate in        | [**Group**](c-group.md)<br/> |
 
 
 
@@ -121,15 +121,15 @@ Membri non di sicurezza di un gruppo. Utilizzato per gli elenchi di distribuzion
 | ID collegamento                | 50                                  |
 | MAPI-Id                | \-                                  |
 | System-Only            | Falso                               |
-| È a valore singolo       | Falso                               |
+| Is-Single-Valued       | Falso                               |
 | Indicizzato             | Falso                               |
 | Nel catalogo globale      | Falso                               |
-| NT-Security-descrittore | O:BAG: NON VALIDO: S:                        |
+| NT-Security-Descriptor | O:BAG:BAD:S:                        |
 | Range-Lower            | \-                                  |
 | Range-Upper            | \-                                  |
 | Search-Flags           | 0x00000000                          |
 | System-Flags           | 0x00000010                          |
-| Classi utilizzate in        | [**Group**](c-group.md)<br/> |
+| Classi usate in        | [**Group**](c-group.md)<br/> |
 
 
 
@@ -142,15 +142,15 @@ Membri non di sicurezza di un gruppo. Utilizzato per gli elenchi di distribuzion
 | ID collegamento                | 50                                  |
 | MAPI-Id                | \-                                  |
 | System-Only            | Falso                               |
-| È a valore singolo       | Falso                               |
+| Is-Single-Valued       | Falso                               |
 | Indicizzato             | Falso                               |
 | Nel catalogo globale      | Falso                               |
-| NT-Security-descrittore | O:BAG: NON VALIDO: S:                        |
+| NT-Security-Descriptor | O:BAG:BAD:S:                        |
 | Range-Lower            | \-                                  |
 | Range-Upper            | \-                                  |
 | Search-Flags           | 0x00000000                          |
 | System-Flags           | 0x00000010                          |
-| Classi utilizzate in        | [**Group**](c-group.md)<br/> |
+| Classi usate in        | [**Group**](c-group.md)<br/> |
 
 
 
@@ -163,15 +163,15 @@ Membri non di sicurezza di un gruppo. Utilizzato per gli elenchi di distribuzion
 | ID collegamento                | 50                                  |
 | MAPI-Id                | \-                                  |
 | System-Only            | Falso                               |
-| È a valore singolo       | Falso                               |
+| Is-Single-Valued       | Falso                               |
 | Indicizzato             | Falso                               |
 | Nel catalogo globale      | Falso                               |
-| NT-Security-descrittore | O:BAG: NON VALIDO: S:                        |
+| NT-Security-Descriptor | O:BAG:BAD:S:                        |
 | Range-Lower            | \-                                  |
 | Range-Upper            | \-                                  |
 | Search-Flags           | 0x00000000                          |
 | System-Flags           | 0x00000010                          |
-| Classi utilizzate in        | [**Group**](c-group.md)<br/> |
+| Classi usate in        | [**Group**](c-group.md)<br/> |
 
 
 

@@ -1,19 +1,19 @@
 ---
-description: Inserito nella coda di messaggi del thread di installazione quando scade un timer. Il messaggio viene inserito dalla funzione GetMessage o PeekMessage.
+description: Inviato alla coda di messaggi del thread di installazione alla scadenza di un timer. Il messaggio viene pubblicato dalla funzione GetMessage o PeekMessage.
 ms.assetid: 419e3f05-35ec-4e48-b24d-ab98df687b20
-title: Messaggio WM_TIMER (winuser. h)
+title: WM_TIMER messaggio (Winuser.h)
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: c7c99db67c9c9b3419e477ccd0a78133df453a7c
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 0d770d640b801849eeebe1c4ec86df8c41642c6149b89e00d82261f4e090f56f
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "104233016"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119710031"
 ---
-# <a name="wm_timer-message"></a>\_Messaggio timer WM
+# <a name="wm_timer-message"></a>Messaggio WM \_ TIMER
 
-Inserito nella coda di messaggi del thread di installazione quando scade un timer. Il messaggio viene inserito dalla funzione [**GetMessage**](/windows/win32/api/winuser/nf-winuser-getmessage) o [**PeekMessage**](/windows/win32/api/winuser/nf-winuser-peekmessagea) .
+Inviato alla coda di messaggi del thread di installazione alla scadenza di un timer. Il messaggio viene pubblicato dalla [**funzione GetMessage**](/windows/win32/api/winuser/nf-winuser-getmessage) [**o PeekMessage.**](/windows/win32/api/winuser/nf-winuser-peekmessagea)
 
 
 ```C++
@@ -26,17 +26,17 @@ Inserito nella coda di messaggi del thread di installazione quando scade un time
 
 <dl> <dt>
 
-*wParam* \[ in\]
+*wParam* \[ Pollici\]
 </dt> <dd>
 
 Identificatore del timer.
 
 </dd> <dt>
 
-*lParam* \[ in\]
+*lParam* \[ Pollici\]
 </dt> <dd>
 
-Puntatore a una funzione di callback definita dall'applicazione passata alla funzione [**setimer**](/windows/win32/api/winuser/nf-winuser-settimer) durante l'installazione del timer.
+Puntatore a una funzione di callback definita dall'applicazione passata alla [**funzione SetTimer**](/windows/win32/api/winuser/nf-winuser-settimer) quando è stato installato il timer.
 
 </dd> </dl>
 
@@ -48,9 +48,9 @@ Un'applicazione deve restituire zero se elabora questo messaggio.
 
 ## <a name="remarks"></a>Commenti
 
-È possibile elaborare il messaggio fornendo un caso **del \_ timer WM** nella procedura della finestra. In caso contrario, [**DispatchMessage**](/windows/win32/api/winuser/nf-winuser-dispatchmessage) chiamerà la funzione di callback [*TimerProc*](/windows/win32/api/winuser/nc-winuser-timerproc) specificata nella chiamata alla funzione [**setimer**](/windows/win32/api/winuser/nf-winuser-settimer) utilizzata per installare il timer.
+È possibile elaborare il messaggio specificando un case **WM \_ TIMER** nella routine della finestra. In caso [**contrario, DispatchMessage**](/windows/win32/api/winuser/nf-winuser-dispatchmessage) chiamerà la funzione di callback [*TimerProc*](/windows/win32/api/winuser/nc-winuser-timerproc) specificata nella chiamata alla [**funzione SetTimer**](/windows/win32/api/winuser/nf-winuser-settimer) usata per installare il timer.
 
-Il messaggio del **\_ timer WM** è un messaggio con priorità bassa. Le funzioni [**GetMessage**](/windows/win32/api/winuser/nf-winuser-getmessage) e [**PeekMessage**](/windows/win32/api/winuser/nf-winuser-peekmessagea) pubblicano questo messaggio solo quando non sono presenti altri messaggi con priorità più elevata nella coda di messaggi del thread.
+Il **messaggio WM \_ TIMER** è un messaggio con priorità bassa. Le [**funzioni GetMessage**](/windows/win32/api/winuser/nf-winuser-getmessage) [**e PeekMessage**](/windows/win32/api/winuser/nf-winuser-peekmessagea) pubblicano questo messaggio solo quando nella coda di messaggi del thread non sono presenti altri messaggi con priorità più alta.
 
 ## <a name="requirements"></a>Requisiti
 
@@ -60,7 +60,7 @@ Il messaggio del **\_ timer WM** è un messaggio con priorità bassa. Le funzion
 |-------------------------------------|----------------------------------------------------------------------------------------------------------|
 | Client minimo supportato<br/> | Windows 2000 Professional \[solo app desktop\]<br/>                                               |
 | Server minimo supportato<br/> | Windows 2000 Server \[solo app desktop\]<br/>                                                     |
-| Intestazione<br/>                   | <dl> <dt>Winuser. h (include Windows. h)</dt> </dl> |
+| Intestazione<br/>                   | <dl> <dt>Winuser.h (includere Windows.h)</dt> </dl> |
 
 
 

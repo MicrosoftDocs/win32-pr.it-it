@@ -4,12 +4,12 @@ ms.assetid: 9f105c3b-4617-4684-b8be-2939967841c1
 title: System.Contact.JobInfo2YomiCompanyName
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 86200593d5e66938fda7860de115ecf4c9bca3fe
-ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
+ms.openlocfilehash: e77f1a533f543d65c6dd9fa383a47929d5d64175c4766b7bccb874bc28e7d33e
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/28/2021
-ms.locfileid: "108101759"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119717811"
 ---
 # <a name="systemcontactjobinfo2yomicompanyname"></a>System.Contact.JobInfo2YomiCompanyName
 

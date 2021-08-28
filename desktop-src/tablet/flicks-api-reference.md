@@ -1,32 +1,32 @@
 ---
-description: In questa sezione sono contenute informazioni di riferimento da utilizzare per l'implementazione del supporto del gesto rapido di Tablet PC nei controlli o nelle applicazioni.
+description: Questa sezione contiene informazioni di riferimento per l'uso durante l'implementazione del supporto dei movimenti di scorrimento di Tablet PC in controlli o applicazioni.
 ms.assetid: 5559b3a0-739b-4dd5-acf4-a44811c7cf37
-title: Guida di riferimento ai gesti rapidi
+title: Informazioni di riferimento su Flicks
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: f7e6a1f7718e3b616fc3e2ad5d95c07c1155905a
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 0d7a7c6387766589df12f1ddad05a67675c9610f8cdcc219eb92777b721e1fd3
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104343756"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119774021"
 ---
-# <a name="flicks-reference"></a>Guida di riferimento ai gesti rapidi
+# <a name="flicks-reference"></a>Informazioni di riferimento su Flicks
 
-In questa sezione sono contenute informazioni di riferimento da utilizzare per l'implementazione del supporto del gesto rapido di Tablet PC nei controlli o nelle applicazioni.
+Questa sezione contiene informazioni di riferimento per l'uso durante l'implementazione del supporto dei movimenti di scorrimento di Tablet PC in controlli o applicazioni.
 
 ## <a name="in-this-section"></a>Contenuto della sezione
 
--   [Scorri messaggi](flicks-messages.md)
--   [Enumerazioni di gesti rapidi](flicks-enumerations.md)
--   [Scorri le strutture](flicks-structures.md)
--   [Costanti rapide](flicks-constants.md)
+-   [Messaggi con scorrimento rapido](flicks-messages.md)
+-   [Enumerazioni Flicks](flicks-enumerations.md)
+-   [Strutture Flicks](flicks-structures.md)
+-   [Costanti di Flicks](flicks-constants.md)
 
 ## <a name="related-topics"></a>Argomenti correlati
 
 <dl> <dt>
 
-[Uso di movimenti](using-gestures.md)
+[Uso dei movimenti](using-gestures.md)
 </dt> </dl>
 
  

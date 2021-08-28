@@ -12,18 +12,18 @@ api_name:
 api_type:
 - Schema
 api_location: ''
-ms.openlocfilehash: 5105b8e634aa5affa8648b763a82bbd60cbaec17
-ms.sourcegitcommit: 0e611cdff84ff9f897c59e4e1d2b2d134bc4e133
+ms.openlocfilehash: 77b09bf046cdbadb58c888a3084d14ed14794064bf9f11c110ccecaff105fceb
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/02/2021
-ms.locfileid: "106334399"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119684411"
 ---
 # <a name="enableautoconfig-globalflags-element-lan_policy-for-wlan"></a>Elemento enableAutoConfig (globalFlags) (LAN_policy) per WLAN 
 
-L'elemento **enableAutoConfig** (globalFlags) specifica se i computer utilizzano il servizio di configurazione automatica (AutoConfig) incorporato per gestire le connessioni wireless. Quando **enableAutoConfig** ha il valore false, i computer non devono usare la configurazione automatica per gestire le connessioni wireless e il servizio di configurazione automatica risponde solo alle richieste per abilitare il servizio. Quando **enableAutoConfig** ha il valore true, i computer possono usare il servizio di configurazione automatica.
+**L'elemento enableAutoConfig** (globalFlags) specifica se i computer usano il servizio di configurazione automatica (AutoConfig) incorporato per gestire le connessioni wireless. Quando **enableAutoConfig** ha il valore FALSE, i computer non devono usare AutoConfig per gestire le connessioni wireless e il servizio AutoConfig risponde solo alle richieste di abilitazione del servizio. Quando **enableAutoConfig ha** valore TRUE, i computer possono usare il servizio AutoConfig.
 
-Questo elemento è obbligatorio. Quando un profilo viene creato dal servizio di configurazione automatica, questo elemento avrà il valore predefinito TRUE.
+Questo elemento è obbligatorio. Quando un profilo viene creato dal servizio AutoConfig, questo elemento avrà il valore predefinito TRUE.
 
 ``` syntax
 <xs:element name="enableAutoConfig"
@@ -31,7 +31,7 @@ Questo elemento è obbligatorio. Quando un profilo viene creato dal servizio di 
  />
 ```
 
-L'elemento **enableAutoConfig** è definito dall'elemento [**globalFlags**](wlan-policyschema-globalflags-wlanpolicy-element.md) .
+**L'elemento enableAutoConfig** è definito dall'elemento [**globalFlags.**](wlan-policyschema-globalflags-wlanpolicy-element.md)
 
 ## <a name="requirements"></a>Requisiti
 
@@ -39,8 +39,8 @@ L'elemento **enableAutoConfig** è definito dall'elemento [**globalFlags**](wlan
 
 | Requisito | Valore |
 |-------------------------------------|------------------------------------------------------|
-| Client minimo supportato<br/> | \[Solo app desktop di Windows Vista\]<br/>       |
-| Server minimo supportato<br/> | \[Solo app desktop Windows Server 2008\]<br/> |
+| Client minimo supportato<br/> | Windows Solo \[ app desktop Vista\]<br/>       |
+| Server minimo supportato<br/> | Windows Solo app desktop di Server 2008 \[\]<br/> |
 
 
 
@@ -54,7 +54,7 @@ L'elemento **enableAutoConfig** è definito dall'elemento [**globalFlags**](wlan
 [**globalFlags**](wlan-policyschema-globalflags-wlanpolicy-element.md)
 </dt> <dt>
 
-**Possibile elemento padre immediato nell'istanza dello schema**
+**Possibile elemento padre diretto nell'istanza dello schema**
 </dt> <dt>
 
 [**globalFlags (WLANPolicy)**](wlan-policyschema-globalflags-wlanpolicy-element.md)

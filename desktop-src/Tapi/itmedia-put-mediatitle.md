@@ -1,21 +1,21 @@
 ---
-description: Il \_ metodo Put MediaTitle imposta un titolo testuale per i supporti che l'applicazione può usare a scopo informativo o di visualizzazione. Se il set di caratteri è ASCII, deve essere una stringa convertibile ASCII. In caso contrario, può essere qualsiasi stringa BSTR.
+description: Il metodo put MediaTitle imposta un titolo testuale per il contenuto multimediale che l'applicazione può usare a \_ scopo informativo o di visualizzazione. Deve essere una stringa convertibile ASCII se il set di caratteri è ASCII. In caso contrario, può essere qualsiasi stringa BSTR.
 ms.assetid: bbab033b-bd37-4ef6-9e84-1d0b17ecbd4e
-title: 'ITMedia: metodo:p ut_MediaTitle (sdpblb. h)'
+title: Metodo ITMedia::p ut_MediaTitle (Sdpblb.h)
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: c1d1abee91b08555f79437e5e26710761429e4f1
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: 8bd07111cfa737be7ec5750a147ffd8d598e68b819f27f03a901a01fd66fbfdb
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "106326238"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119682751"
 ---
-# <a name="itmediaput_mediatitle-method"></a>ITMedia::p UT \_ MediaTitle metodo
+# <a name="itmediaput_mediatitle-method"></a>Metodo ITMedia::p ut \_ MediaTitle
 
-\[ I controlli e le interfacce per la comunicazione di telefonia IP Rendezvous non sono disponibili per l'uso in Windows Vista, Windows Server 2008 e nelle versioni successive del sistema operativo. L'API del client RTC fornisce funzionalità simili.\]
+\[Le interfacce e i controlli di conferenza di telefonia IP rendezvous non sono disponibili per l'uso in Windows Vista, Windows Server 2008 e nelle versioni successive del sistema operativo. L'API client rtc offre funzionalità simili.\]
 
-Il metodo **put \_ MediaTitle** imposta un titolo testuale per i supporti che l'applicazione può usare a scopo informativo o di visualizzazione. Se il set di caratteri è ASCII, deve essere una stringa convertibile ASCII. In caso contrario, può essere qualsiasi stringa **BSTR** .
+Il **metodo put \_ MediaTitle** imposta un titolo testuale per il contenuto multimediale che l'applicazione può usare a scopo informativo o di visualizzazione. Deve essere una stringa convertibile ASCII se il set di caratteri è ASCII. In caso contrario, può essere qualsiasi **stringa BSTR.**
 
 ## <a name="syntax"></a>Sintassi
 
@@ -32,10 +32,10 @@ HRESULT put_MediaTitle(
 
 <dl> <dt>
 
-*pMediaTitle* \[ in\]
+*pMediaTitle* \[ Pollici\]
 </dt> <dd>
 
-Puntatore a un **BSTR** che contiene il titolo del supporto.
+Puntatore a **un oggetto BSTR** contenente il titolo del contenuto multimediale.
 
 </dd> </dl>
 
@@ -47,11 +47,11 @@ Questo metodo può restituire uno di questi valori.
 
 | Codice restituito                                                                                   | Descrizione                                                     |
 |-----------------------------------------------------------------------------------------------|-----------------------------------------------------------------|
-| <dl> <dt>**\_OK**</dt> </dl>          | Il metodo è riuscito.<br/>                                    |
-| <dl> <dt>**\_puntatore E**</dt> </dl>     | Il parametro *pMediaTitle* non è un puntatore valido.<br/>  |
-| <dl> <dt>**E \_ INVALIDARG**</dt> </dl>  | Il parametro *pMediaTitle* non è valido.<br/>            |
-| <dl> <dt>**E \_ OutOfMemory**</dt> </dl> | La memoria disponibile non è sufficiente per eseguire l'operazione.<br/> |
-| <dl> <dt>**E \_ non riescono**</dt> </dl>        | Errore non specificato.<br/>                                   |
+| <dl> <dt>**S \_ OK**</dt> </dl>          | Il metodo è riuscito.<br/>                                    |
+| <dl> <dt>**PUNTATORE \_ E**</dt> </dl>     | Il *parametro pMediaTitle* non è un puntatore valido.<br/>  |
+| <dl> <dt>**E \_ INVALIDARG**</dt> </dl>  | Il *parametro pMediaTitle* non è valido.<br/>            |
+| <dl> <dt>**E \_ OUTOFMEMORY**</dt> </dl> | Memoria insufficiente per eseguire l'operazione.<br/> |
+| <dl> <dt>**E \_ FAIL**</dt> </dl>        | Errore non specificato.<br/>                                   |
 | <dl> <dt>**E \_ NOTIMPL**</dt> </dl>     | Questo metodo non è ancora implementato.<br/>                  |
 
 
@@ -60,9 +60,9 @@ Questo metodo può restituire uno di questi valori.
 
 ## <a name="remarks"></a>Commenti
 
-L'applicazione deve usare [**SysAllocString**](/windows/win32/api/oleauto/nf-oleauto-sysallocstring) per allocare memoria per il parametro *PMediaTitle* e usare [**SysFreeString**](/windows/win32/api/oleauto/nf-oleauto-sysfreestring) per liberare la memoria quando la variabile non è più necessaria.
+L'applicazione deve [**usare SysAllocString**](/windows/win32/api/oleauto/nf-oleauto-sysallocstring) per allocare memoria per il *parametro pMediaTitle* e [**usare SysFreeString**](/windows/win32/api/oleauto/nf-oleauto-sysfreestring) per liberare la memoria quando la variabile non è più necessaria.
 
-Questa funzione può inviare dati in rete in forma non crittografata; Pertanto, un utente che intercetta la rete potrebbe essere in grado di leggere i dati. Il rischio di sicurezza di inviare i dati in testo non crittografato deve essere considerato prima di utilizzare questo metodo.
+Questa funzione può inviare dati in rete in formato non crittografato. Pertanto, un utente che intercetta la rete potrebbe essere in grado di leggere i dati. Prima di utilizzare questo metodo, è necessario considerare il rischio di sicurezza dell'invio dei dati in testo non crittografato.
 
 ## <a name="requirements"></a>Requisiti
 
@@ -70,9 +70,9 @@ Questa funzione può inviare dati in rete in forma non crittografata; Pertanto, 
 
 | Requisito | Valore |
 |-------------------------|---------------------------------------------------------------------------------------|
-| Versione TAPI<br/> | Richiede TAPI 3,0 o versione successiva<br/>                                                 |
-| Intestazione<br/>       | <dl> <dt>Sdpblb. h</dt> </dl>   |
-| Libreria<br/>      | <dl> <dt>UUID. lib</dt> </dl>   |
+| Versione TAPI<br/> | Richiede TAPI 3.0 o versione successiva<br/>                                                 |
+| Intestazione<br/>       | <dl> <dt>Sdpblb.h</dt> </dl>   |
+| Libreria<br/>      | <dl> <dt>Uuid.lib</dt> </dl>   |
 | DLL<br/>          | <dl> <dt>Sdpblb.dll</dt> </dl> |
 
 
@@ -84,7 +84,7 @@ Questa funzione può inviare dati in rete in forma non crittografata; Pertanto, 
 [**ITMedia**](itmedia.md)
 </dt> <dt>
 
-[**ITMedia:: Get \_ MediaTitle**](itmedia-get-mediatitle.md)
+[**ITMedia::get \_ MediaTitle**](itmedia-get-mediatitle.md)
 </dt> </dl>
 
  

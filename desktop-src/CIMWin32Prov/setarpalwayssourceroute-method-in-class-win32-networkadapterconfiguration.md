@@ -2,7 +2,7 @@
 description: Il metodo statico della classe WMI SetArpAlwaysSourceRoute viene usato per impostare la trasmissione di query ARP tramite TCP/IP.
 ms.assetid: bbff4e2e-aea6-400e-8bd8-f62aaa9fa601
 ms.tgt_platform: multiple
-title: Metodo SetArpAlwaysSourceRoute della classe Win32_NetworkAdapterConfiguration
+title: Metodo SetArpAlwaysSourceRoute della Win32_NetworkAdapterConfiguration classe
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -14,18 +14,18 @@ api_type:
 - COM
 api_location:
 - CIMWin32.dll
-ms.openlocfilehash: 7151fbbd13d3ac6fdf4ac3b129cdcb438abe73a9
-ms.sourcegitcommit: c7add10d695482e1ceb72d62b8a4ebd84ea050f7
+ms.openlocfilehash: 4be5443ce06b977373ef93e87b737350cf7fe771553db9e94da07311b2093da0
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104126285"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119752711"
 ---
-# <a name="setarpalwayssourceroute-method-of-the-win32_networkadapterconfiguration-class"></a>Metodo SetArpAlwaysSourceRoute della \_ classe NetworkAdapterConfiguration Win32
+# <a name="setarpalwayssourceroute-method-of-the-win32_networkadapterconfiguration-class"></a>Metodo SetArpAlwaysSourceRoute della classe NetworkAdapterConfiguration Win32 \_
 
-Il metodo statico della [classe WMI](/windows/desktop/WmiSdk/retrieving-a-class) **SetArpAlwaysSourceRoute** viene usato per impostare la trasmissione di query ARP tramite TCP/IP.
+Il metodo statico della classe [WMI](/windows/desktop/WmiSdk/retrieving-a-class) **SetArpAlwaysSourceRoute** viene usato per impostare la trasmissione di query ARP tramite TCP/IP.
 
-In questo argomento viene utilizzata la sintassi Managed Object Format (MOF). Per ulteriori informazioni sull'utilizzo di questo metodo, vedere [chiamata a un metodo](/windows/desktop/WmiSdk/calling-a-method).
+Questo argomento usa Managed Object Format (MOF). Per altre informazioni sull'uso di questo metodo, vedere [Chiamata di un metodo](/windows/desktop/WmiSdk/calling-a-method).
 
 ## <a name="syntax"></a>Sintassi
 
@@ -42,34 +42,34 @@ uint32 SetArpAlwaysSourceRoute(
 
 <dl> <dt>
 
-*ArpAlwaysSourceRoute* \[ in\]
+*ArpAlwaysSourceRoute* \[ Pollici\]
 </dt> <dd>
 
-Se **true**, TCP/IP è forzato a trasmettere query ARP con il routing di origine abilitato nelle reti token ring. Per impostazione predefinita, lo stack trasmette le query ARP senza prima il routing del codice sorgente, quindi i tentativi con il routing del codice sorgente abilitato se non viene ricevuta alcuna risposta.
+Se **true,** TCP/IP è obbligato a trasmettere query ARP con routing di origine abilitato nelle reti Token Ring. Per impostazione predefinita, lo stack trasmette prima le query ARP senza routing di origine, quindi riprova con il routing di origine abilitato se non viene ricevuta alcuna risposta.
 
 </dd> </dl>
 
 ## <a name="return-value"></a>Valore restituito
 
-Restituisce un valore pari a 0 (zero) per un completamento corretto quando non è richiesto il riavvio, 1 (uno) per un completamento corretto quando è necessario un riavvio e un numero diverso se si verifica un errore. Per ulteriori informazioni sui codici di errore, vedere [**costanti di errore WMI**](/windows/desktop/WmiSdk/wmi-error-constants) o [**WbemErrorEnum**](/windows/desktop/api/wbemdisp/ne-wbemdisp-wbemerrorenum). Per i valori **HRESULT** generali, vedere [codici di errore di sistema](/windows/desktop/Debug/system-error-codes).
+Restituisce il valore 0 (zero) per un completamento corretto quando non è necessario alcun riavvio, 1 (uno) per un completamento corretto quando è necessario un riavvio e un numero diverso se si verifica un errore. Per altre informazioni sui codici di errore, vedere [**Costanti di errore WMI**](/windows/desktop/WmiSdk/wmi-error-constants) o [**WbemErrorEnum.**](/windows/desktop/api/wbemdisp/ne-wbemdisp-wbemerrorenum) Per i valori **HRESULT** generali, vedere [Codici di errore di sistema.](/windows/desktop/Debug/system-error-codes)
 
 <dl> <dt>
 
-**Operazione completata, non è necessario riavviare il computer**
+**Completamento riuscito, riavvio non necessario**
 </dt> <dd>
 
 0
 
-Operazione completata, non è necessario riavviare il computer.
+Completamento riuscito, riavvio non necessario.
 
 </dd> <dt>
 
-**Operazione completata, riavvio richiesto**
+**Completamento riuscito, riavvio necessario**
 </dt> <dd>
 
 1
 
-Operazione completata, è necessario riavviare il computer.
+Completamento riuscito. È necessario riavviare il computer.
 
 </dd> <dt>
 
@@ -91,12 +91,12 @@ Errore sconosciuto.
 
 </dd> <dt>
 
-**subnet mask non valido**
+**Non subnet mask**
 </dt> <dd>
 
 66
 
-Subnet mask non valido.
+Non subnet mask.
 
 </dd> <dt>
 
@@ -105,7 +105,7 @@ Subnet mask non valido.
 
 67
 
-Si è verificato un errore durante l'elaborazione di un'istanza di restituita.
+Si è verificato un errore durante l'elaborazione di un'istanza restituita.
 
 </dd> <dt>
 
@@ -118,7 +118,7 @@ Parametro di input non valido.
 
 </dd> <dt>
 
-**Sono stati specificati più di 5 gateway**
+**Più di 5 gateway specificati**
 </dt> <dd>
 
 69
@@ -136,7 +136,7 @@ Indirizzo IP non valido.
 
 </dd> <dt>
 
-**Indirizzo IP gateway non valido**
+**Indirizzo IP del gateway non valido**
 </dt> <dd>
 
 71
@@ -145,12 +145,12 @@ Indirizzo IP del gateway non valido.
 
 </dd> <dt>
 
-**Si è verificato un errore durante l'accesso al registro di sistema per le informazioni richieste**
+**Si è verificato un errore durante l'accesso al Registro di sistema per le informazioni richieste**
 </dt> <dd>
 
 72
 
-Si è verificato un errore durante l'accesso al registro di sistema per le informazioni richieste.
+Si è verificato un errore durante l'accesso al Registro di sistema per le informazioni richieste.
 
 </dd> <dt>
 
@@ -226,7 +226,7 @@ Impossibile configurare il servizio TCP/IP.
 
 </dd> <dt>
 
-**Non è possibile configurare il servizio DHCP**
+**Impossibile configurare il servizio DHCP**
 </dt> <dd>
 
 81
@@ -235,12 +235,12 @@ Impossibile configurare il servizio DHCP.
 
 </dd> <dt>
 
-**Non è possibile rinnovare il lease DHCP**
+**Impossibile rinnovare il lease DHCP**
 </dt> <dd>
 
 82
 
-Non è possibile rinnovare il lease DHCP.
+Impossibile rinnovare il lease DHCP.
 
 </dd> <dt>
 
@@ -258,11 +258,11 @@ Impossibile rilasciare il lease DHCP.
 
 84
 
-IP non abilitato sulla scheda.
+IP non abilitato nella scheda.
 
 </dd> <dt>
 
-**IPX non abilitato sull'adapter**
+**IPX non abilitato sulla scheda**
 </dt> <dd>
 
 85
@@ -271,12 +271,12 @@ IPX non abilitato sulla scheda.
 
 </dd> <dt>
 
-**Errore limite numero frame/rete**
+**Errore di limiti dei numeri di rete/frame**
 </dt> <dd>
 
 86
 
-Errore dei limiti del numero di rete o del frame.
+Errore di limiti del numero di rete o del frame.
 
 </dd> <dt>
 
@@ -307,12 +307,12 @@ Numero di rete duplicato.
 
 </dd> <dt>
 
-**Parametro fuori limite**
+**Parametro fuori dai limiti**
 </dt> <dd>
 
 90
 
-Parametro fuori limite.
+Parametro al di fuori dei limiti.
 
 </dd> <dt>
 
@@ -348,20 +348,20 @@ Esiste già.
 
 94
 
-Il percorso, il file o l'oggetto non è stato trovato.
+Percorso, file o oggetto non trovato.
 
 </dd> <dt>
 
-**Non è possibile inviare una notifica al servizio**
+**Impossibile inviare una notifica al servizio**
 </dt> <dd>
 
 95
 
-Impossibile notificare il servizio.
+Impossibile inviare una notifica al servizio.
 
 </dd> <dt>
 
-**Non è possibile inviare una notifica al servizio DNS**
+**Impossibile inviare una notifica al servizio DNS**
 </dt> <dd>
 
 96
@@ -388,7 +388,7 @@ Non tutti i lease DHCP possono essere rilasciati o rinnovati.
 
 </dd> <dt>
 
-**DHCP non abilitato sull'adapter**
+**DHCP non abilitato sulla scheda**
 </dt> <dd>
 
 100
@@ -406,7 +406,7 @@ DHCP non abilitato sulla scheda.
 
 ## <a name="examples"></a>Esempio
 
-L'esempio [Modify ARP queries to use source routing](https://Gallery.TechNet.Microsoft.Com/e0298c96-acc2-4809-9365-fce3000db00e) VBScript nella raccolta TechNet USA **SETARPALWAYSSOURCEROUTE** per configurare TCP/IP in modo da usare sempre il routing del codice sorgente in tutte le reti token ring.
+L'esempio Modify [ARP Queries to Use Source Routing](https://Gallery.TechNet.Microsoft.Com/e0298c96-acc2-4809-9365-fce3000db00e) VBScript (Modifica query ARP per l'uso del routing di origine) in TechNet Gallery usa **SetArpAlwaysSourceRoute per** configurare TCP/IP in modo che usi sempre il routing di origine in tutte le reti Token Ring.
 
 ## <a name="requirements"></a>Requisiti
 
@@ -417,7 +417,7 @@ L'esempio [Modify ARP queries to use source routing](https://Gallery.TechNet.Mic
 | Client minimo supportato<br/> | Windows Vista<br/>                                                                |
 | Server minimo supportato<br/> | Windows Server 2008<br/>                                                          |
 | Spazio dei nomi<br/>                | \\CIMV2 radice<br/>                                                                  |
-| MOF<br/>                      | <dl> <dt>CIMWin32. mof</dt> </dl> |
+| MOF<br/>                      | <dl> <dt>CIMWin32.mof</dt> </dl> |
 | DLL<br/>                      | <dl> <dt>CIMWin32.dll</dt> </dl> |
 
 
@@ -426,16 +426,16 @@ L'esempio [Modify ARP queries to use source routing](https://Gallery.TechNet.Mic
 
 <dl> <dt>
 
-[Classi hardware del sistema del computer](computer-system-hardware-classes.md)
+[Classi hardware del sistema computer](computer-system-hardware-classes.md)
 </dt> <dt>
 
-[**\_NetworkAdapterConfiguration Win32**](win32-networkadapterconfiguration.md)
+[**Win32 \_ NetworkAdapterConfiguration**](win32-networkadapterconfiguration.md)
 </dt> <dt>
 
-[Attività WMI: rete](/windows/desktop/WmiSdk/wmi-tasks--networking)
+[Attività WMI: Rete](/windows/desktop/WmiSdk/wmi-tasks--networking)
 </dt> <dt>
 
-[Attività WMI: account e domini](/windows/desktop/WmiSdk/wmi-tasks--accounts-and-domains)
+[Attività WMI: Account e domini](/windows/desktop/WmiSdk/wmi-tasks--accounts-and-domains)
 </dt> <dt>
 
 [Supporto di IPv6 e IPv4 in WMI](/windows/desktop/WmiSdk/ipv6-and-ipv4-support-in-wmi)

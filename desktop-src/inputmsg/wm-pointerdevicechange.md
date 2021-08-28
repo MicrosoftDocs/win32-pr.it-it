@@ -1,9 +1,9 @@
 ---
-title: Messaggio WM_POINTERDEVICECHANGE
-description: Inviato a una finestra quando viene apportata una modifica alle impostazioni di un monitoraggio a cui è collegato un digitalizzatore. Questo messaggio contiene informazioni sul ridimensionamento della modalità di visualizzazione.
+title: WM_POINTERDEVICECHANGE messaggio
+description: Inviato a una finestra quando viene apportata una modifica alle impostazioni di un monitor a cui è collegato un digitalizzatore. Questo messaggio contiene informazioni relative al ridimensionamento della modalità di visualizzazione.
 ms.assetid: 9ED01D4C-58B4-4A21-B510-784281F9A909
 keywords:
-- Messaggi e notifiche di input del messaggio WM_POINTERDEVICECHANGE
+- WM_POINTERDEVICECHANGE messaggi di input e notifiche del messaggio
 topic_type:
 - apiref
 api_name:
@@ -14,19 +14,19 @@ api_type:
 - HeaderDef
 ms.topic: article
 ms.date: 02/03/2020
-ms.openlocfilehash: 38f570059f374f64e393e960a8458e605983d6c5
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: 6d75a5afa245303952c5c6b1814b2f1ce77cd03da7c789d34bda2500c6bffee3
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "106302073"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119829581"
 ---
-# <a name="wm_pointerdevicechange-message"></a>Messaggio WM_POINTERDEVICECHANGE
+# <a name="wm_pointerdevicechange-message"></a>WM_POINTERDEVICECHANGE messaggio
 
-Inviato a una finestra quando viene apportata una modifica alle impostazioni di un monitoraggio a cui è collegato un digitalizzatore. Questo messaggio contiene informazioni sul ridimensionamento della modalità di visualizzazione.
+Inviato a una finestra quando viene apportata una modifica alle impostazioni di un monitor a cui è collegato un digitalizzatore. Questo messaggio contiene informazioni relative al ridimensionamento della modalità di visualizzazione.
 
 > \[! Importante\]  
-> Le applicazioni desktop devono essere compatibili con DPI. Se l'app non è compatibile con DPI, le coordinate dello schermo contenute nei messaggi puntatore e le strutture correlate potrebbero sembrare non accurate a causa della virtualizzazione DPI. La virtualizzazione DPI fornisce il supporto per il ridimensionamento automatico per le applicazioni che non sono compatibili con DPI ed è attivo per impostazione predefinita (gli utenti possono disabilitarlo). Per altre informazioni, vedere [scrittura di applicazioni Win32 ad alta risoluzione](/previous-versions//dd464660(v=vs.85)).
+> Le app desktop devono essere in grado di riconoscere DPI. Se l'app non è in grado di riconoscere DPI, le coordinate dello schermo contenute nei messaggi dell'indicatore di misura e nelle strutture correlate potrebbero apparire inaccurate a causa della virtualizzazione DPI. La virtualizzazione DPI offre il supporto per il ridimensionamento automatico per le applicazioni che non sono in grado di riconoscere DPI ed è attiva per impostazione predefinita (gli utenti possono disattivarla). Per altre informazioni, vedere [Writing High-DPI Win32 Applications](/previous-versions//dd464660(v=vs.85)).
 
  
 
@@ -44,7 +44,7 @@ Inviato a una finestra quando viene apportata una modifica alle impostazioni di 
 *wParam* 
 </dt> <dd>
 
-Contiene un valore delle [**costanti di modifica del dispositivo puntatore**](pointer-device-change-constants.md).
+Contiene un valore da [**Pointer Device Change Constants**](pointer-device-change-constants.md).
 
 </dd> <dt>
 
@@ -57,7 +57,7 @@ Ulteriori informazioni specifiche del messaggio.
 
 ## <a name="return-value"></a>Valore restituito
 
-Se l'applicazione elabora il messaggio, deve restituire zero.
+Se l'applicazione elabora questo messaggio, deve restituire zero.
 
 Se l'applicazione non elabora questo messaggio, deve chiamare [**DefWindowProc**](/windows/win32/api/winuser/nf-winuser-defwindowproca).
 
@@ -67,9 +67,9 @@ Se l'applicazione non elabora questo messaggio, deve chiamare [**DefWindowProc**
 
 | Requisito | Valore |
 |-------------------------------------|----------------------------------------------------------------------------------------------------------|
-| Client minimo supportato<br/> | \[Solo app desktop di Windows 8\]<br/>                                                               |
-| Server minimo supportato<br/> | \[Solo app desktop Windows Server 2012\]<br/>                                                     |
-| Intestazione<br/>                   | <dl> <dt>Winuser. h (include Windows. h)</dt> </dl> |
+| Client minimo supportato<br/> | \[Windows 8 solo app desktop\]<br/>                                                               |
+| Server minimo supportato<br/> | \[Windows Server 2012 solo app desktop\]<br/>                                                     |
+| Intestazione<br/>                   | <dl> <dt>Winuser.h (includere Windows.h)</dt> </dl> |
 
 
 

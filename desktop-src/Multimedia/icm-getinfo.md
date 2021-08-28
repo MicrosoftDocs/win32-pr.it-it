@@ -1,9 +1,9 @@
 ---
-title: Messaggio di ICM_GETINFO (VFW. h)
-description: Il \_ messaggio ICM GetInfo esegue una query su un driver di compressione video per restituirne una descrizione in una struttura ICINFO.
+title: ICM_GETINFO messaggio (Vfw.h)
+description: Il ICM GETINFO esegue una query su un driver di compressione video per restituire una descrizione di se \_ stesso in una struttura ICINFO.
 ms.assetid: 8029f247-9777-4a34-9e84-908482094493
 keywords:
-- ICM_GETINFO messaggi multimediali di Windows
+- ICM_GETINFO messaggio Windows Multimediali
 topic_type:
 - apiref
 api_name:
@@ -14,16 +14,16 @@ api_type:
 - HeaderDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 634803b7dd9a3b8900c35fabedcadb99908c2b31
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: 173f510642b807a0e4c4a8c5c84d6d4de2aa7ce55cc0707eccabf5421cf98a44
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "106301759"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119690811"
 ---
-# <a name="icm_getinfo-message"></a>\_Messaggio ICM GETinfo
+# <a name="icm_getinfo-message"></a>\_ICM Messaggio GETINFO
 
-Il messaggio **ICM \_ GetInfo** esegue una query su un driver di compressione video per restituirne una descrizione in una struttura [**ICINFO**](/windows/desktop/api/Vfw/ns-vfw-icinfo) .
+Il **ICM \_ GETINFO** esegue una query su un driver di compressione video per restituire una descrizione di se stesso in una [**struttura ICINFO.**](/windows/desktop/api/Vfw/ns-vfw-icinfo)
 
 
 ```C++
@@ -41,14 +41,14 @@ lParam = sizeof(ICINFO);
 <span id="lpicinfo"></span><span id="LPICINFO"></span>*lpicinfo*
 </dt> <dd>
 
-Puntatore a una struttura **ICINFO** per contenere informazioni.
+Puntatore a una **struttura ICINFO** per contenere informazioni.
 
 </dd> <dt>
 
-<span id="lParam"></span><span id="lparam"></span><span id="LPARAM"></span>*lParam*
+<span id="lParam"></span><span id="lparam"></span><span id="LPARAM"></span>*Lparam*
 </dt> <dd>
 
-Dimensioni, in byte, di **ICINFO**.
+Dimensione, in byte, di **ICINFO.**
 
 </dd> </dl>
 
@@ -58,9 +58,9 @@ Restituisce la dimensione, in byte, di [**ICINFO**](/windows/desktop/api/Vfw/ns-
 
 ## <a name="remarks"></a>Commenti
 
-In genere, le applicazioni inviano questo messaggio per visualizzare un elenco dei commediatori installati.
+In genere, le applicazioni inviano questo messaggio per visualizzare un elenco degli elementi installati.
 
-Il driver deve riempire tutti i membri della struttura [**ICINFO**](/windows/desktop/api/Vfw/ns-vfw-icinfo) ad eccezione di **szDriver**.
+Il driver deve compilare tutti i membri della [**struttura ICINFO**](/windows/desktop/api/Vfw/ns-vfw-icinfo) ad eccezione **di szDriver**.
 
 ## <a name="requirements"></a>Requisiti
 
@@ -70,7 +70,7 @@ Il driver deve riempire tutti i membri della struttura [**ICINFO**](/windows/des
 |-------------------------------------|----------------------------------------------------------------------------------|
 | Client minimo supportato<br/> | Windows 2000 Professional \[solo app desktop\]<br/>                       |
 | Server minimo supportato<br/> | Windows 2000 Server \[solo app desktop\]<br/>                             |
-| Intestazione<br/>                   | <dl> <dt>VFW. h</dt> </dl> |
+| Intestazione<br/>                   | <dl> <dt>Vfw.h</dt> </dl> |
 
 
 

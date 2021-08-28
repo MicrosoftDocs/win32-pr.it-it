@@ -1,7 +1,7 @@
 ---
-description: Contiene la dimensione dell'elemento.
+description: Contiene le dimensioni dell'elemento.
 ms.assetid: 0eda405e-d54f-48d2-a060-a1fdcdb23785
-title: Proprietà FolderItem. Size (shldisp. h)
+title: Proprietà FolderItem.Size (Shldisp.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -13,16 +13,16 @@ api_type:
 - COM
 api_location:
 - Shell32.dll
-ms.openlocfilehash: 5d44d1c1ddd9b46f768f218250802562f9a36312
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 576da1ef42768fe8574fab5f965270134cad50d96f4b4e3fe0aaa7234af6d365
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104524466"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119715441"
 ---
-# <a name="folderitemsize-property"></a>Proprietà FolderItem. size
+# <a name="folderitemsize-property"></a>FolderItem.Size - proprietà
 
-Contiene la dimensione dell'elemento.
+Contiene le dimensioni dell'elemento.
 
 Questa proprietà è di sola lettura.
 
@@ -37,13 +37,13 @@ iSize = FolderItem.Size
 
 ## <a name="property-value"></a>Valore proprietà
 
-**Intero** che riceve le dimensioni dell'elemento.
+Intero **che** riceve le dimensioni dell'elemento.
 
 ## <a name="examples"></a>Esempio
 
-Nell'esempio seguente vengono utilizzate le **dimensioni** per recuperare le dimensioni del file eseguibile del blocco note. L'utilizzo corretto viene visualizzato per JScript, VBScript e Visual Basic.
+L'esempio seguente usa **Size** per recuperare le dimensioni del file eseguibile Blocco note file eseguibile. Viene visualizzato un utilizzo appropriato per JScript, VBScript e Visual Basic.
 
-JScript
+JScript:
 
 
 ```JScript
@@ -73,7 +73,7 @@ JScript
 
 
 
-VBScript
+Vbscript:
 
 
 ```VB
@@ -148,11 +148,11 @@ End Sub
 
 | Requisito | Valore |
 |-------------------------------------|----------------------------------------------------------------------------------------------------------------|
-| Client minimo supportato<br/> | Windows 2000 Professional, \[ solo app desktop Windows XP\]<br/>                                         |
+| Client minimo supportato<br/> | Windows 2000 Professional, Windows solo app desktop XP \[\]<br/>                                         |
 | Server minimo supportato<br/> | Windows 2000 Server \[solo app desktop\]<br/>                                                           |
-| Intestazione<br/>                   | <dl> <dt>Shldisp. h</dt> </dl>                           |
-| IDL<br/>                      | <dl> <dt>Shldisp. idl</dt> </dl>                         |
-| DLL<br/>                      | <dl> <dt>Shell32.dll (versione 4,71 o successiva)</dt> </dl> |
+| Intestazione<br/>                   | <dl> <dt>Shldisp.h</dt> </dl>                           |
+| Idl<br/>                      | <dl> <dt>Shldisp.idl</dt> </dl>                         |
+| DLL<br/>                      | <dl> <dt>Shell32.dll (versione 4.71 o successiva)</dt> </dl> |
 
 
 

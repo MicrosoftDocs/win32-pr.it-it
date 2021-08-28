@@ -13,12 +13,12 @@ api_type:
 - COM
 api_location:
 - vmms.exe
-ms.openlocfilehash: 6cc14e24bad22210f08e33fcff3dfaeb4e282ed2
-ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
+ms.openlocfilehash: 75a7a0f72482304e4075c713c715d048d17f42a611dbc1b4fbd93678f712a953
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/28/2021
-ms.locfileid: "108111890"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119789920"
 ---
 # <a name="requeststatechange-method-of-the-msvm_externalfcport-class"></a>Metodo RequestStateChange della classe Msvm \_ ExternalFcPort
 
@@ -106,14 +106,14 @@ Nuovo stato. Le informazioni vengono inserite nella proprietà **RequestedState*
 
 <span id="Reset"></span><span id="reset"></span><span id="RESET"></span>
 
-**Reimposta** (11)
+**Reimpostazione** (11)
 
 
 </dt> <dd></dd> <dt>
 
 <span id="DMTF_Reserved"></span><span id="dmtf_reserved"></span><span id="DMTF_RESERVED"></span>
 
-**DmTF riservato** (..)
+**DMTF riservato** (..)
 
 
 </dt> <dd></dd> <dt>
@@ -128,14 +128,14 @@ Nuovo stato. Le informazioni vengono inserite nella proprietà **RequestedState*
 *Processo* \[ Cambio\]
 </dt> <dd>
 
-Può contenere un riferimento a [**CIM \_ ConcreteJob**](cim-concretejob.md) creato per tenere traccia della transizione di stato avviata dalla chiamata al metodo.
+Può contenere un riferimento al [**processo \_ concreto CIM**](cim-concretejob.md) creato per tenere traccia della transizione di stato avviata dalla chiamata al metodo.
 
 </dd> <dt>
 
 *TimeoutPeriod* \[ Pollici\]
 </dt> <dd>
 
-Periodo di timeout che specifica la quantità massima di tempo prevista dal client per la transizione al nuovo stato. Il formato dell'intervallo deve essere usato per specificare il periodo di timeout. Il valore 0 o **Null** indica che il client non ha requisiti di tempo per la transizione. Se questa proprietà non contiene 0 o **Null** e l'implementazione non supporta questo parametro, deve essere restituito un codice restituito 4098 (Utilizzo del parametro di **timeout** non supportato).
+Periodo di timeout che specifica la quantità massima di tempo prevista dal client per la transizione al nuovo stato. Il formato dell'intervallo deve essere usato per specificare il periodo di timeout. Il valore 0 o **Null** indica che il client non ha requisiti di tempo per la transizione. Se questa proprietà non contiene 0 o **Null** e l'implementazione non supporta questo parametro, deve essere restituito un codice restituito 4098 ( Utilizzo del parametro **di timeout** non supportato ).
 
 </dd> </dl>
 
@@ -145,7 +145,7 @@ Questo metodo restituisce uno dei valori seguenti:
 
 <dl> <dt>
 
-**Completata senza errori** (0)
+**Completato senza errori** (0)
 </dt> <dt>
 
 **Non supportato** (1)
@@ -158,7 +158,7 @@ Questo metodo restituisce uno dei valori seguenti:
 | Requisito | Valore |
 |-------------------------------------|---------------------------------------------------------------------------------------------------------|
 | Client minimo supportato<br/> | Windows 8.1<br/>                                                                                  |
-| Server minimo supportato<br/> | Windows Server 2012 R2<br/>                                                                       |
+| Server minimo supportato<br/> | R2 per Windows Server 2012<br/>                                                                       |
 | Spazio dei nomi<br/>                | Virtualizzazione \\ radice \\ v2<br/>                                                                     |
 | MOF<br/>                      | <dl> <dt>WindowsVirtualization.V2.mof</dt> </dl> |
 | DLL<br/>                      | <dl> <dt>Vmms.exe</dt> </dl>                     |

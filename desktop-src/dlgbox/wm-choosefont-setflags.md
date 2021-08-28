@@ -1,9 +1,9 @@
 ---
-title: Messaggio WM_CHOOSEFONT_SETFLAGS (COMMDLG. h)
-description: Un'applicazione invia il \_ \_ messaggio di flag ChooseFont di WM a una finestra di dialogo tipo di carattere per impostare le opzioni di visualizzazione per la finestra di dialogo.
+title: WM_CHOOSEFONT_SETFLAGS messaggio (Commdlg.h)
+description: Un'applicazione invia il \_ messaggio WM CHOOSEFONT SETFLAGS a una finestra di dialogo Tipo di carattere per impostare le opzioni di \_ visualizzazione per la finestra di dialogo.
 ms.assetid: 945ebc07-440d-4466-8255-ad344bdc568a
 keywords:
-- Finestre di dialogo WM_CHOOSEFONT_SETFLAGS messaggio
+- WM_CHOOSEFONT_SETFLAGS finestre di dialogo del messaggio
 topic_type:
 - apiref
 api_name:
@@ -14,16 +14,16 @@ api_type:
 - HeaderDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 4f7abf436311f8a3868b1471c2a10a7ee2e4a3b7
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: 0d77290dfb3668e24d3586cf6d742b524e05fb07979de7c8d45f39998aca9708
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "104120571"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119726081"
 ---
-# <a name="wm_choosefont_setflags-message"></a>Messaggio di FLAG di WM \_ ChooseFont \_
+# <a name="wm_choosefont_setflags-message"></a>Messaggio \_ WM CHOOSEFONT \_ SETFLAGS
 
-Un'applicazione invia il messaggio di **\_ \_ flag ChooseFont di WM** a una finestra di dialogo **tipo di carattere** per impostare le opzioni di visualizzazione per la finestra di dialogo.
+Un'applicazione invia il **\_ messaggio WM CHOOSEFONT \_ SETFLAGS** **a** una finestra di dialogo Tipo di carattere per impostare le opzioni di visualizzazione per la finestra di dialogo.
 
 
 ```C++
@@ -47,7 +47,7 @@ Questo parametro non viene usato.
 *lParam* 
 </dt> <dd>
 
-Puntatore a una struttura [**ChooseFont**](/windows/win32/api/commdlg/ns-commdlg-choosefonta) contenente nuove impostazioni nel membro dei **flag** .
+Puntatore a una [**struttura CHOOSEFONT**](/windows/win32/api/commdlg/ns-commdlg-choosefonta) che contiene nuove impostazioni nel **membro Flags.**
 
 </dd> </dl>
 
@@ -57,9 +57,9 @@ Nessun valore restituito.
 
 ## <a name="remarks"></a>Commenti
 
-La funzione [**ChooseFont**](/windows/win32/api/commdlg/ns-commdlg-choosefonta) crea una finestra di dialogo del **tipo di carattere** e usa una struttura [**ChooseFont**](/windows/win32/api/commdlg/ns-commdlg-choosefonta) per specificare i valori iniziali per il membro dei **flag** . Utilizzare il messaggio di **\_ \_ flag ChooseFont di WM** per specificare valori diversi per il membro dei **flag** mentre è aperta la finestra di dialogo **tipo di carattere** .
+La [**funzione ChooseFont**](/windows/win32/api/commdlg/ns-commdlg-choosefonta) crea una **finestra di** dialogo Tipo di carattere e usa una [**struttura CHOOSEFONT**](/windows/win32/api/commdlg/ns-commdlg-choosefonta) per specificare i valori iniziali per il **membro Flags.** Usare il **messaggio WM \_ CHOOSEFONT \_ SETFLAGS** per specificare valori diversi per il membro **Flags** mentre la finestra **di** dialogo Tipo di carattere è aperta.
 
-In genere, è necessario inviare il messaggio di **\_ \_ flag ChooseFont di WM** da una procedura di hook di [**CFHookProc**](/windows/win32/api/commdlg/nc-commdlg-lpcfhookproc) .
+In genere, è consigliabile inviare **il \_ messaggio WM CHOOSEFONT \_ SETFLAGS** da una procedura hook [**CFHookProc.**](/windows/win32/api/commdlg/nc-commdlg-lpcfhookproc)
 
 ## <a name="requirements"></a>Requisiti
 
@@ -69,7 +69,7 @@ In genere, è necessario inviare il messaggio di **\_ \_ flag ChooseFont di WM**
 |-------------------------------------|----------------------------------------------------------------------------------------------------------|
 | Client minimo supportato<br/> | Windows 2000 Professional \[solo app desktop\]<br/>                                               |
 | Server minimo supportato<br/> | Windows 2000 Server \[solo app desktop\]<br/>                                                     |
-| Intestazione<br/>                   | <dl> <dt>COMMDLG. h (include Windows. h)</dt> </dl> |
+| Intestazione<br/>                   | <dl> <dt>Commdlg.h (includere Windows.h)</dt> </dl> |
 
 
 
@@ -92,7 +92,7 @@ In genere, è necessario inviare il messaggio di **\_ \_ flag ChooseFont di WM**
 **Informazioni concettuali**
 </dt> <dt>
 
-[Libreria finestra di dialogo comune](common-dialog-box-library.md)
+[Libreria di finestre di dialogo comune](common-dialog-box-library.md)
 </dt> </dl>
 
  

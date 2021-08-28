@@ -1,8 +1,8 @@
 ---
-description: Genera eventi a intervalli, in modo analogo a un \_ messaggio del timer WM nella programmazione Windows.
+description: Genera eventi a intervalli, in modo analogo a un messaggio WM \_ TIMER Windows programmazione.
 ms.assetid: 0895a743-a0dd-4833-a2bf-0196369e18b9
 ms.tgt_platform: multiple
-title: Classe __IntervalTimerInstruction
+title: __IntervalTimerInstruction classe
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -17,18 +17,18 @@ api_type:
 - Schema
 api_location:
 - All
-ms.openlocfilehash: 20dd1c9fb2d009de4d8d957b4d5980cc6d6ff45e
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 17f0c55edceb3c5fb009f49ae97e3765ec3e0255a82f8c75e133344379c24d90
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "106317593"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119640761"
 ---
 # <a name="__intervaltimerinstruction-class"></a>\_\_Classe IntervalTimerInstruction
 
-La classe di sistema **\_ \_ IntervalTimerInstruction** genera eventi a intervalli, in modo analogo a un \_ messaggio del timer WM nella programmazione Windows. Un consumer di eventi registra per ricevere eventi timer intervallo creando una query di eventi che fa riferimento a questa classe. A causa del comportamento del sistema operativo, non vi sono garanzie che gli eventi vengano recapitati esattamente all'intervallo richiesto.
+La **\_ \_ classe di sistema IntervalTimerInstruction** genera eventi a intervalli, in modo simile a un messaggio WM \_ TIMER Windows programmazione. Un consumer di eventi si registra per ricevere eventi timer di intervallo creando una query di eventi che fa riferimento a questa classe. A causa del comportamento del sistema operativo, non ci sono garanzie che gli eventi verranno recapitati esattamente all'intervallo richiesto.
 
-La sintassi seguente è semplificata dal codice MOF (Managed Object Format) e include tutte le proprietà ereditate. Le proprietà sono elencate in ordine alfabetico e non in ordine MOF.
+La sintassi seguente è semplificata dal codice MOF (Managed Object Format) e include tutte le proprietà ereditate. Le proprietà sono elencate in ordine alfabetico, non in ordine MOF.
 
 ## <a name="syntax"></a>Sintassi
 
@@ -43,20 +43,20 @@ class __IntervalTimerInstruction : __TimerInstruction
 
 ## <a name="members"></a>Members
 
-La classe **\_ \_ IntervalTimerInstruction** dispone di questi tipi di membri:
+La **\_ \_ classe IntervalTimerInstruction** ha questi tipi di membri:
 
 -   [Proprietà](#properties)
 
 ### <a name="properties"></a>Proprietà
 
-La classe **\_ \_ IntervalTimerInstruction** dispone di queste proprietà.
+La **\_ \_ classe IntervalTimerInstruction** ha queste proprietà.
 
 <dl> <dt>
 
 **IntervalBetweenEvents**
 </dt> <dd> <dl> <dt>
 
-Tipo di dati: **UInt32**
+Tipo di dati: **uint32**
 </dt> <dt>
 
 Tipo di accesso: sola lettura
@@ -72,27 +72,27 @@ Numero di millisecondi tra la generazione di eventi.
 **SkipIfPassed**
 </dt> <dd> <dl> <dt>
 
-Tipo di dati: **Boolean**
+Tipo di dati: **booleano**
 </dt> <dt>
 
 Tipo di accesso: sola lettura
 </dt> </dl>
 
-Se **true**, l'evento deve essere ignorato se l'intervallo è già stato superato. Il valore predefinito è **false**. Questa proprietà viene ereditata da [**\_ \_ TimerInstruction**](--timerinstruction.md).
+Se **TRUE,** questo evento deve essere ignorato se l'intervallo è già passato. Il valore predefinito è **FALSE.** Questa proprietà viene ereditata da [**\_ \_ TimerInstruction.**](--timerinstruction.md)
 
 <dt>
 
 FALSE
 </dt> <dd>
 
-Quando WMI o il consumer diventano nuovamente disponibili, viene generato e ricevuto un evento di notifica.
+Quando WMI o il consumer diventano nuovamente disponibili, verrà generato e ricevuto un evento di notifica.
 
 </dd> <dt>
 
 true
 </dt> <dd>
 
-L'evento timer non si verifica se WMI non è disponibile per generarlo all'intervallo di tempo appropriato oppure se il consumer che richiede la ricezione dell'evento non è disponibile.
+L'evento timer non si verifica se WMI non è disponibile per generarlo all'intervallo di tempo appropriato o se il consumer che richiede di ricevere l'evento non è disponibile.
 
 </dd> </dl>
 
@@ -101,30 +101,30 @@ L'evento timer non si verifica se WMI non è disponibile per generarlo all'inter
 **TimerId**
 </dt> <dd> <dl> <dt>
 
-Tipo di dati: **String**
+Tipo di dati: **string**
 </dt> <dt>
 
 Tipo di accesso: sola lettura
 </dt> <dt>
 
-Qualificatori: [ **chiave**](standard-qualifiers.md)
+Qualificatori: [ **Chiave**](standard-qualifiers.md)
 </dt> </dl>
 
-Identificatore univoco per questo oggetto **\_ \_ IntervalTimerInstruction** . Questa proprietà viene ereditata da [**\_ \_ TimerInstruction**](--timerinstruction.md).
+Identificatore univoco per **\_ \_ questo oggetto IntervalTimerInstruction.** Questa proprietà viene ereditata da [**\_ \_ TimerInstruction.**](--timerinstruction.md)
 
 </dd> </dl>
 
 ## <a name="remarks"></a>Commenti
 
-La classe **\_ \_ IntervalTimerInstruction** deriva da [**\_ \_ TimerInstruction**](--timerinstruction.md).
+La **\_ \_ classe IntervalTimerInstruction** è derivata da [**\_ \_ TimerInstruction.**](--timerinstruction.md)
 
-La query di eventi immessa per la registrazione per un evento timer intervallo è in genere basata sulla proprietà **timerId** . Gli eventi di notifica generati da un evento timer intervallo contengono la proprietà **NumFirings** che contiene i dati che riflettono il numero di eventi generati durante il periodo in cui non è stato possibile ricevere gli eventi. Se **SkipIfPassed** è impostato su **true**, tali informazioni vengono ignorate.
+La query di evento immessa per la registrazione per un evento timer a intervalli è in genere basata sulla **proprietà TimerId.** Gli eventi di notifica generati da un evento timer a intervalli contengono la proprietà **NumFirings** che contiene dati che riflettono il numero di eventi generati durante l'impossibilità di ricevere gli eventi. Se **SkipIfPassed è** impostato su **TRUE,** le informazioni vengono rimosse.
 
-Il valore della proprietà **IntervalBetweenEvents** deve essere ragionevolmente grande. Se è troppo piccolo, WMI potrebbe ignorarlo e non generare l'evento a causa di limitazioni in alcuni sistemi operativi.
+Il valore della **proprietà IntervalBetweenEvents** deve essere ragionevolmente grande. Se è troppo piccolo, WMI potrebbe ignorarlo e non generare l'evento a causa di limitazioni in alcuni sistemi operativi.
 
-WMI genera l'evento timer interval creando un'istanza della classe [**\_ \_ TimerEvent**](--timerevent.md) .
+WMI genera l'evento timer intervallo creando un'istanza della [**\_ \_ classe TimerEvent.**](--timerevent.md)
 
-Per ricevere questi eventi del timer in un consumer di eventi temporaneo, eseguire [**IWbemServices:: ExecNotificationQuery**](/windows/desktop/api/WbemCli/nf-wbemcli-iwbemservices-execnotificationquery) con la stringa di query di evento seguente:
+Per ricevere questi eventi timer in un consumer di eventi temporaneo, eseguire [**IWbemServices::ExecNotificationQuery con**](/windows/desktop/api/WbemCli/nf-wbemcli-iwbemservices-execnotificationquery) la stringa di query dell'evento seguente:
 
 
 ```sql
@@ -133,11 +133,11 @@ SELECT * FROM __TimerEvent WHERE TimerID = "MyEvent"
 
 
 
-Per ricevere questi eventi timer in un consumer di eventi permanenti, è necessario caricare la query precedente in un filtro eventi, definire un consumer logico e creare un'associazione da filtro a consumer per il filtro e il consumer. Per ulteriori informazioni, vedere [ricezione di eventi in qualsiasi momento](receiving-events-at-all-times.md).
+Per ricevere questi eventi timer in un consumer di eventi permanente, è necessario caricare la query precedente in un filtro eventi, definire un consumer logico e creare un'associazione da filtro a consumer per il filtro e il consumer. Per altre informazioni, vedere [Ricezione di eventi in qualsiasi momento.](receiving-events-at-all-times.md)
 
 ## <a name="examples"></a>Esempio
 
-Nella dichiarazione MOF seguente viene illustrato come generare un evento timer intervallo con la proprietà chiave impostata su "" ".
+La dichiarazione MOF seguente illustra come generare un evento timer di intervallo con la proprietà key impostata su "MyEvent" ogni 10 secondi:
 
 
 ```mof
@@ -173,7 +173,7 @@ instance of __IntervalTimerInstruction
 [Classi di sistema WMI](wmi-system-classes.md)
 </dt> <dt>
 
-[Ricezione di eventi temporizzati o ripetuti](receiving-a-timed-or-repeating-event.md)
+[Ricezione di eventi programmati o ripetuti](receiving-a-timed-or-repeating-event.md)
 </dt> </dl>
 
  

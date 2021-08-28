@@ -1,7 +1,7 @@
 ---
-description: La proprietà del tipo di sola lettura restituisce uno dei valori di msmErrorType, che indica il tipo di errore rappresentato da questo oggetto.
+description: La proprietà Type di sola lettura restituisce uno dei valori di msmErrorType, che indica il tipo di errore rappresentato da questo oggetto.
 ms.assetid: 5567ba71-c815-4434-962c-aa46cd171712
-title: Proprietà Error. Type (Mergemod. h)
+title: Proprietà Error.Type (Mergemod.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -14,16 +14,16 @@ api_type:
 - COM
 api_location:
 - Mergemod.dll
-ms.openlocfilehash: b0fa0a2b65ba4465458b05d2978bc5c7a1fd0250
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: d5beb6d50c54555f765756c00eaff453303060b82abd7ab24d842b19a2f8cd06
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "106327919"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119692451"
 ---
-# <a name="errortype-property"></a>Proprietà Error. Type
+# <a name="errortype-property"></a>Proprietà Error.Type
 
-La proprietà del **tipo** di sola lettura restituisce uno dei valori di msmErrorType, che indica il tipo di errore rappresentato da questo oggetto.
+La proprietà **Type di** sola lettura restituisce uno dei valori di msmErrorType, che indica il tipo di errore rappresentato da questo oggetto.
 
 Questa proprietà è di sola lettura.
 
@@ -40,7 +40,7 @@ propVal = Error.Type
 
 ## <a name="c"></a>C++
 
-Vedere funzione [**get \_ Type Function**](/windows/win32/api/mergemod/nf-mergemod-imsmerror-get_type) (oggetto Error).
+Vedere [**funzione get Type \_ Function**](/windows/win32/api/mergemod/nf-mergemod-imsmerror-get_type) (oggetto Error).
 
 ## <a name="requirements"></a>Requisiti
 
@@ -48,8 +48,8 @@ Vedere funzione [**get \_ Type Function**](/windows/win32/api/mergemod/nf-mergem
 
 | Requisito | Valore |
 |--------------------|-----------------------------------------------------------------------------------------|
-| Versione<br/> | Mergemod.dll 1,0 o versione successiva<br/>                                                    |
-| Intestazione<br/>  | <dl> <dt>Mergemod. h</dt> </dl>   |
+| Versione<br/> | Mergemod.dll 1.0 o versione successiva<br/>                                                    |
+| Intestazione<br/>  | <dl> <dt>Mergemod.h</dt> </dl>   |
 | DLL<br/>     | <dl> <dt>Mergemod.dll</dt> </dl> |
 
 

@@ -1,5 +1,5 @@
 ---
-description: Tenta di collocare il servizio nello stato di avvio.
+description: Tenta di impostare il servizio sullo stato di avvio.
 ms.assetid: 3bafa228-a84b-4f14-a9e5-dfad09b83610
 ms.tgt_platform: multiple
 title: Metodo StartService della classe Win32_BaseService
@@ -14,18 +14,18 @@ api_type:
 - COM
 api_location:
 - CIMWin32.dll
-ms.openlocfilehash: 9fbfad47899193a25be08292aff97f9d8e211ba7
-ms.sourcegitcommit: c7add10d695482e1ceb72d62b8a4ebd84ea050f7
+ms.openlocfilehash: e82aadee8d2ff339e8561d35818e169d42ce8f364417fa03957518b2b090bc2b
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "103877834"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119752371"
 ---
-# <a name="startservice-method-of-the-win32_baseservice-class"></a>Metodo StartService della \_ classe BaseService Win32
+# <a name="startservice-method-of-the-win32_baseservice-class"></a>Metodo StartService della classe \_ Win32 BaseService
 
-Il metodo **StartService** tenta di collocare il servizio nello stato di avvio.
+Il **metodo StartService** tenta di inserire il servizio nello stato di avvio.
 
-In questo argomento viene utilizzata la sintassi Managed Object Format (MOF). Per ulteriori informazioni sull'utilizzo di questo metodo, vedere [chiamata a un metodo](/windows/desktop/WmiSdk/calling-a-method).
+Questo argomento usa Managed Object Format (MOF). Per altre informazioni sull'uso di questo metodo, vedere [Chiamata di un metodo](/windows/desktop/WmiSdk/calling-a-method).
 
 ## <a name="syntax"></a>Sintassi
 
@@ -69,7 +69,7 @@ La richiesta non è supportata.
 
 2
 
-L'utente non dispone dell'accesso necessario.
+L'utente non aveva l'accesso necessario.
 
 </dd> <dt>
 
@@ -96,7 +96,7 @@ Il codice di controllo richiesto non è valido o non è accettabile per il servi
 
 5
 
-Impossibile inviare il codice di controllo richiesto al servizio perché lo stato del servizio (proprietà di [**stato**](win32-baseservice.md) [**\_ BaseService Win32**](win32-baseservice.md)) è uguale a 0, 1 o 2.
+Non è possibile inviare il codice di controllo richiesto al servizio perché lo stato del servizio (proprietà Stato [**servizio \_ base Win32)**](win32-baseservice.md)è uguale a 0, 1 o 2.[](win32-baseservice.md)
 
 </dd> <dt>
 
@@ -109,7 +109,7 @@ Il servizio non è stato avviato.
 
 </dd> <dt>
 
-**Timeout richiesta servizio**
+**Timeout richiesta di servizio**
 </dt> <dd>
 
 7
@@ -132,7 +132,7 @@ Processo interattivo.
 
 9
 
-Impossibile trovare il percorso di directory del file eseguibile del servizio.
+Impossibile trovare il percorso della directory del file eseguibile del servizio.
 
 </dd> <dt>
 
@@ -154,7 +154,7 @@ Il database a cui aggiungere il nuovo servizio è bloccato.
 
 </dd> <dt>
 
-**Dipendenza servizio eliminata**
+**Dipendenza del servizio eliminata**
 </dt> <dd>
 
 12
@@ -195,11 +195,11 @@ Il servizio non dispone delle credenziali di autenticazione corrette per l'esecu
 
 16
 
-Questo servizio verrà rimosso dal sistema.
+Questo servizio viene rimosso dal sistema.
 
 </dd> <dt>
 
-**Servizio senza thread**
+**Nessun thread del servizio**
 </dt> <dd>
 
 17
@@ -208,7 +208,7 @@ Nessun thread di esecuzione per il servizio.
 
 </dd> <dt>
 
-**Stato dipendenza circolare**
+**Dipendenza circolare dello stato**
 </dt> <dd>
 
 18
@@ -217,7 +217,7 @@ All'avvio del servizio sono state rilevate dipendenze circolari.
 
 </dd> <dt>
 
-**Stato nome duplicato**
+**Nome duplicato stato**
 </dt> <dd>
 
 19
@@ -226,7 +226,7 @@ All'avvio del servizio sono state rilevate dipendenze circolari.
 
 </dd> <dt>
 
-**Stato nome non valido**
+**Nome dello stato non valido**
 </dt> <dd>
 
 20
@@ -235,25 +235,25 @@ Il nome del servizio contiene caratteri non validi.
 
 </dd> <dt>
 
-**Stato parametro non valido**
+**Parametro stato non valido**
 </dt> <dd>
 
 21
 
-Sono stati passati parametri non validi al servizio.
+Al servizio sono stati passati parametri non validi.
 
 </dd> <dt>
 
-**Stato account del servizio non valido**
+**Stato Account del servizio non valido**
 </dt> <dd>
 
 22
 
-L'account con cui viene eseguito il servizio non è valido o non dispone delle autorizzazioni necessarie per eseguire il servizio.
+L'account con cui eseguire il servizio non è valido o non dispone delle autorizzazioni per eseguire il servizio.
 
 </dd> <dt>
 
-**Il servizio stato esiste**
+**Servizio di stato esistente**
 </dt> <dd>
 
 23
@@ -287,7 +287,7 @@ Il servizio è attualmente sospeso nel sistema.
 | Client minimo supportato<br/> | Windows Vista<br/>                                                                |
 | Server minimo supportato<br/> | Windows Server 2008<br/>                                                          |
 | Spazio dei nomi<br/>                | \\CIMV2 radice<br/>                                                                  |
-| MOF<br/>                      | <dl> <dt>CIMWin32. mof</dt> </dl> |
+| MOF<br/>                      | <dl> <dt>CIMWin32.mof</dt> </dl> |
 | DLL<br/>                      | <dl> <dt>CIMWin32.dll</dt> </dl> |
 
 
@@ -299,7 +299,7 @@ Il servizio è attualmente sospeso nel sistema.
 [Classi del sistema operativo](/previous-versions//aa392727(v=vs.85))
 </dt> <dt>
 
-[**\_BaseService Win32**](win32-baseservice.md)
+[**Win32 \_ BaseService**](win32-baseservice.md)
 </dt> </dl>
 
  

@@ -1,5 +1,5 @@
 ---
-description: 'Altre informazioni su: Enumerazione GetLockGrbit'
+description: Altre informazioni sull'enumerazione GetLockGrbit
 title: Enumerazione GetLockGrbit
 TOCTitle: GetLockGrbit enumeration
 ms:assetid: T:Microsoft.Isam.Esent.Interop.GetLockGrbit
@@ -28,12 +28,12 @@ api_type:
 api_location:
 - Microsoft.Isam.Esent.Interop.dll
 ROBOTS: INDEX,FOLLOW
-ms.openlocfilehash: 2cfcad088fa93d73910a0333d3aca9a700e97996
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: e4a77ca293fc39504c0e78e25150ae12ba46b8317daa8e00c59b6dc3dca3f1ef
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "103966999"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119732171"
 ---
 # <a name="getlockgrbit-enumeration"></a>Enumerazione GetLockGrbit
 
@@ -41,8 +41,8 @@ Opzioni per JetGetLock.
 
 Questa enumerazione ha un attributo [FlagsAttribute](/dotnet/api/system.flagsattribute) che consente una combinazione bit per bit dei valori del relativo membro.
 
-**Spazio dei nomi:**  [Microsoft. ISAM. esent. Interop](./microsoft.isam.esent.interop-namespace.md)  
-**Assembly:**  Microsoft. ISAM. esent. Interop (in Microsoft.Isam.Esent.Interop.dll)
+**Spazio dei nomi:**  [Microsoft.Isam.Esent.Interop](./microsoft.isam.esent.interop-namespace.md)  
+**Assembly:**  Microsoft.Isam.Esent.Interop (in Microsoft.Isam.Esent.Interop.dll)
 
 ## <a name="syntax"></a>Sintassi
 
@@ -72,13 +72,13 @@ public enum GetLockGrbit
 <tbody>
 <tr class="odd">
 <td></td>
-<td>Lettura</td>
-<td>Acquisisce un blocco di lettura sul record corrente. I blocchi di lettura non sono compatibili con i blocchi di scrittura già conservati da altre sessioni, ma sono compatibili con i blocchi di lettura mantenuti da altre sessioni.</td>
+<td>Read</td>
+<td>Acquisire un blocco di lettura sul record corrente. I blocchi di lettura non sono compatibili con i blocchi di scrittura già mantenuti da altre sessioni, ma sono compatibili con i blocchi di lettura mantenuti da altre sessioni.</td>
 </tr>
 <tr class="even">
 <td></td>
 <td>Scrittura</td>
-<td>Acquisisce un blocco di scrittura nel record corrente. I blocchi di scrittura non sono compatibili con i blocchi Write o Read utilizzati da altre sessioni, ma sono compatibili con i blocchi di lettura contenuti nella stessa sessione.</td>
+<td>Acquisire un blocco di scrittura sul record corrente. I blocchi di scrittura non sono compatibili con i blocchi di scrittura o lettura mantenuti da altre sessioni, ma sono compatibili con i blocchi di lettura mantenuti dalla stessa sessione.</td>
 </tr>
 </tbody>
 </table>
@@ -88,4 +88,4 @@ public enum GetLockGrbit
 
 #### <a name="reference"></a>Riferimento
 
-[Spazio dei nomi Microsoft. ISAM. esent. Interop](./microsoft.isam.esent.interop-namespace.md)
+[Spazio dei nomi Microsoft.Isam.Esent.Interop](./microsoft.isam.esent.interop-namespace.md)

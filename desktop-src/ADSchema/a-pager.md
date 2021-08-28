@@ -1,11 +1,11 @@
 ---
-title: Telefono-cercapersone-attributo primario
-description: Numero del cercapersone primario.
+title: Telefono-Pager-Primary
+description: Numero del pager primario.
 ms.assetid: e5230e09-f76b-4d2a-b56b-d989d315f9bb
 ms.tgt_platform: multiple
 keywords:
-- Telefono-cercapersone-schema AD dell'attributo primario
-- Schema AD dell'attributo pager
+- Telefono schema AD dell'attributo Telefono-Pager-Primary
+- Pager attribute AD Schema (Schema AD dell'attributo pager)
 topic_type:
 - apiref
 api_name:
@@ -14,28 +14,28 @@ api_type:
 - Schema
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 883e0d519b0fabc14afbdd78fd8eb93bd29a9824
-ms.sourcegitcommit: b77ace27b0432e7cd3863191b11926be032fbe2f
+ms.openlocfilehash: b1ebfa52809d53ebf42679b303ebd03fb1f4056f725f08624269c3bdcca8683a
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/14/2020
-ms.locfileid: "104122402"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119647871"
 ---
-# <a name="phone-pager-primary-attribute"></a>Telefono-cercapersone-attributo primario
+# <a name="phone-pager-primary-attribute"></a>Telefono-Pager-Primary
 
-Numero del cercapersone primario.
+Numero del pager primario.
 
 
 
 | Voce | Valore |
 |-------------------|----------------------------------------------------------------------------------|
-| CN                | Telefono-cercapersone-primario                                                              |
-| LDAP-Display-Name | pager                                                                            |
+| CN                | Telefono-Pager-Primary                                                              |
+| Ldap-Display-Name | pager                                                                            |
 | Dimensione              | \-                                                                               |
-| Privilegio aggiornamento  | Amministratore di dominio o proprietario dell'account.                                           |
-| Frequenza di aggiornamento  | Quando viene creato il record dell'utente e ogni volta che il numero di telefono deve essere modificato. |
+| Aggiorna privilegio  | Amministratore di dominio o proprietario dell'account.                                           |
+| Frequenza di aggiornamento  | Quando viene creato il record dell'utente e ogni volta che il numero di telefono deve cambiare. |
 | Attribute-Id      | 0.9.2342.19200300.100.1.42                                                       |
-| System-ID-GUID    | f0f8ffa6-1191-11d0-a060-00aa006c33ed                                             |
+| System-Id-Guid    | f0f8ffa6-1191-11d0-a060-00aa006c33ed                                             |
 | Sintassi            | [**String(Unicode)**](s-string-unicode.md)                                      |
 
 
@@ -58,15 +58,15 @@ Numero del cercapersone primario.
 | ID collegamento                | \-                                                                 |
 | MAPI-Id                | 0x3A21                                                             |
 | System-Only            | Falso                                                              |
-| È a valore singolo       | Vero                                                               |
+| Is-Single-Valued       | Vero                                                               |
 | Indicizzato             | Falso                                                              |
 | Nel catalogo globale      | Falso                                                              |
-| NT-Security-descrittore | O:BAG: NON VALIDO: S:                                                       |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                                       |
 | Range-Lower            | 1                                                                  |
 | Range-Upper            | 64                                                                 |
 | Search-Flags           | 0x00000000                                                         |
 | System-Flags           | 0x00000010                                                         |
-| Classi utilizzate in        | [**Organizational-Person**](c-organizationalperson.md)<br/> |
+| Classi usate in        | [**Organizational-Person**](c-organizationalperson.md)<br/> |
 
 
 
@@ -79,15 +79,15 @@ Numero del cercapersone primario.
 | ID collegamento                | \-                                                                                                                                                       |
 | MAPI-Id                | 0x3A21                                                                                                                                                   |
 | System-Only            | Falso                                                                                                                                                    |
-| È a valore singolo       | Vero                                                                                                                                                     |
+| Is-Single-Valued       | Vero                                                                                                                                                     |
 | Indicizzato             | Falso                                                                                                                                                    |
 | Nel catalogo globale      | Falso                                                                                                                                                    |
-| NT-Security-descrittore | O:BAG: NON VALIDO: S:                                                                                                                                             |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                                                                                                                             |
 | Range-Lower            | 1                                                                                                                                                        |
 | Range-Upper            | 64                                                                                                                                                       |
 | Search-Flags           | 0x00000000                                                                                                                                               |
 | System-Flags           | 0x00000010                                                                                                                                               |
-| Classi utilizzate in        | [**inetOrgPerson**](c-inetorgperson.md)<br/> [**Organizational-Person**](c-organizationalperson.md)<br/> [**Utente**](c-user.md)<br/> |
+| Classi usate in        | [**inetOrgPerson**](c-inetorgperson.md)<br/> [**Organizational-Person**](c-organizationalperson.md)<br/> [**Utente**](c-user.md)<br/> |
 
 
 
@@ -100,15 +100,15 @@ Numero del cercapersone primario.
 | ID collegamento                | \-                                                                                                                                                       |
 | MAPI-Id                | 0x3A21                                                                                                                                                   |
 | System-Only            | Falso                                                                                                                                                    |
-| È a valore singolo       | Vero                                                                                                                                                     |
+| Is-Single-Valued       | Vero                                                                                                                                                     |
 | Indicizzato             | Falso                                                                                                                                                    |
 | Nel catalogo globale      | Falso                                                                                                                                                    |
-| NT-Security-descrittore | O:BAG: NON VALIDO: S:                                                                                                                                             |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                                                                                                                             |
 | Range-Lower            | 1                                                                                                                                                        |
 | Range-Upper            | 64                                                                                                                                                       |
 | Search-Flags           | 0x00000000                                                                                                                                               |
 | System-Flags           | 0x00000010                                                                                                                                               |
-| Classi utilizzate in        | [**inetOrgPerson**](c-inetorgperson.md)<br/> [**Organizational-Person**](c-organizationalperson.md)<br/> [**Utente**](c-user.md)<br/> |
+| Classi usate in        | [**inetOrgPerson**](c-inetorgperson.md)<br/> [**Organizational-Person**](c-organizationalperson.md)<br/> [**Utente**](c-user.md)<br/> |
 
 
 
@@ -121,15 +121,15 @@ Numero del cercapersone primario.
 | ID collegamento                | \-                                                                                                                                                       |
 | MAPI-Id                | 0x3A21                                                                                                                                                   |
 | System-Only            | Falso                                                                                                                                                    |
-| È a valore singolo       | Vero                                                                                                                                                     |
+| Is-Single-Valued       | Vero                                                                                                                                                     |
 | Indicizzato             | Falso                                                                                                                                                    |
 | Nel catalogo globale      | Falso                                                                                                                                                    |
-| NT-Security-descrittore | O:BAG: NON VALIDO: S:                                                                                                                                             |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                                                                                                                             |
 | Range-Lower            | 1                                                                                                                                                        |
 | Range-Upper            | 64                                                                                                                                                       |
 | Search-Flags           | 0x00000000                                                                                                                                               |
 | System-Flags           | 0x00000010                                                                                                                                               |
-| Classi utilizzate in        | [**inetOrgPerson**](c-inetorgperson.md)<br/> [**Organizational-Person**](c-organizationalperson.md)<br/> [**Utente**](c-user.md)<br/> |
+| Classi usate in        | [**inetOrgPerson**](c-inetorgperson.md)<br/> [**Organizational-Person**](c-organizationalperson.md)<br/> [**Utente**](c-user.md)<br/> |
 
 
 
@@ -142,15 +142,15 @@ Numero del cercapersone primario.
 | ID collegamento                | \-                                                                                                                                                       |
 | MAPI-Id                | 0x3A21                                                                                                                                                   |
 | System-Only            | Falso                                                                                                                                                    |
-| È a valore singolo       | Vero                                                                                                                                                     |
+| Is-Single-Valued       | Vero                                                                                                                                                     |
 | Indicizzato             | Falso                                                                                                                                                    |
 | Nel catalogo globale      | Falso                                                                                                                                                    |
-| NT-Security-descrittore | O:BAG: NON VALIDO: S:                                                                                                                                             |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                                                                                                                             |
 | Range-Lower            | 1                                                                                                                                                        |
 | Range-Upper            | 64                                                                                                                                                       |
 | Search-Flags           | 0x00000000                                                                                                                                               |
 | System-Flags           | 0x00000010                                                                                                                                               |
-| Classi utilizzate in        | [**inetOrgPerson**](c-inetorgperson.md)<br/> [**Organizational-Person**](c-organizationalperson.md)<br/> [**Utente**](c-user.md)<br/> |
+| Classi usate in        | [**inetOrgPerson**](c-inetorgperson.md)<br/> [**Organizational-Person**](c-organizationalperson.md)<br/> [**Utente**](c-user.md)<br/> |
 
 
 
@@ -163,15 +163,15 @@ Numero del cercapersone primario.
 | ID collegamento                | \-                                                                                                                                                       |
 | MAPI-Id                | 0x3A21                                                                                                                                                   |
 | System-Only            | Falso                                                                                                                                                    |
-| È a valore singolo       | Vero                                                                                                                                                     |
+| Is-Single-Valued       | Vero                                                                                                                                                     |
 | Indicizzato             | Falso                                                                                                                                                    |
 | Nel catalogo globale      | Falso                                                                                                                                                    |
-| NT-Security-descrittore | O:BAG: NON VALIDO: S:                                                                                                                                             |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                                                                                                                             |
 | Range-Lower            | 1                                                                                                                                                        |
 | Range-Upper            | 64                                                                                                                                                       |
 | Search-Flags           | 0x00000000                                                                                                                                               |
 | System-Flags           | 0x00000010                                                                                                                                               |
-| Classi utilizzate in        | [**inetOrgPerson**](c-inetorgperson.md)<br/> [**Organizational-Person**](c-organizationalperson.md)<br/> [**Utente**](c-user.md)<br/> |
+| Classi usate in        | [**inetOrgPerson**](c-inetorgperson.md)<br/> [**Organizational-Person**](c-organizationalperson.md)<br/> [**Utente**](c-user.md)<br/> |
 
 
 

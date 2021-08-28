@@ -4,16 +4,16 @@ description: IAgentBalloon GetFontName
 ms.assetid: 7d057571-bb6e-4b79-bc4a-5691779ace51
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 73f29ad981fb4b10249b17e55c92fb286552eedc
-ms.sourcegitcommit: 2d531328b6ed82d4ad971a45a5131b430c5866f7
+ms.openlocfilehash: 08cb0bceae040f9261d2530b19d074df937dbdaf80d91a27f57b5cf9c1fd8f89
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "104396803"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119725319"
 ---
-# <a name="iagentballoongetfontname"></a>IAgentBalloon:: GetFontName
+# <a name="iagentballoongetfontname"></a>IAgentBalloon::GetFontName
 
-\[Microsoft Agent è stato deprecato a partire da Windows 7 e potrebbe non essere disponibile nelle versioni successive di Windows.\]
+\[Microsoft Agent è deprecato a Windows 7 e potrebbe non essere disponibile nelle versioni successive di Windows.\]
 
 ``` syntax
 HRESULT GetFontName(
@@ -21,24 +21,24 @@ HRESULT GetFontName(
 );                      // in word balloon
 ```
 
-Recupera il valore per il tipo di carattere visualizzato in un fumetto di Word.
+Recupera il valore per il tipo di carattere visualizzato in un fumetto di parole.
 
--   Restituisce \_ OK per indicare che l'operazione è stata completata.
+-   Restituisce S \_ OK per indicare che l'operazione è riuscita.
 
 <dl> <dt>
 
 <span id="pbszFontName"></span><span id="pbszfontname"></span><span id="PBSZFONTNAME"></span>*pbszFontName*
 </dt> <dd>
 
-Indirizzo di un BSTR che riceve il nome del tipo di carattere visualizzato in un fumetto di Word.
+Indirizzo di un BSTR che riceve il nome del tipo di carattere visualizzato in un fumetto.
 
 </dd> </dl>
 
-Il tipo di carattere predefinito utilizzato in un fumetto di parole è definito nell'editor dei caratteri di Microsoft Agent. È possibile modificarlo con [**IAgentBalloon:: Sefontname**](https://www.bing.com/search?q=**IAgentBalloon::SetFontName**). L'utente può eseguire l'override dell'impostazione del tipo di carattere per tutti i caratteri utilizzando la finestra delle proprietà di Microsoft Agent.
+Il tipo di carattere predefinito usato in un fumetto di parole di tipo carattere è definito nell'editor di caratteri di Microsoft Agent. È possibile modificarlo con [**IAgentBalloon::SetFontName**](https://www.bing.com/search?q=**IAgentBalloon::SetFontName**). L'utente può eseguire l'override dell'impostazione del carattere per tutti i caratteri usando la finestra delle proprietà di Microsoft Agent.
 
- 
+ 
 
- 
+ 
 
 
 

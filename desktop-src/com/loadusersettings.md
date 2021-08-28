@@ -1,39 +1,39 @@
 ---
 title: LoadUserSettings
-description: Determina se COM caricherà il profilo utente per i server COM in esecuzione come identità dell'applicazione di avvio dell'utente.
+description: Determina se COM carica il profilo utente per i server COM in esecuzione come identità dell'applicazione utente di avvio.
 ms.assetid: 3e2b3249-3747-4d98-96da-f3e480a51d12
 keywords:
-- Valore LoadUserSettings del registro di sistema COM
+- Valore del Registro di sistema LoadUserSettings COM
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 5e14282b00bc2c2d9b989e19480047f115623d55
-ms.sourcegitcommit: 2d531328b6ed82d4ad971a45a5131b430c5866f7
+ms.openlocfilehash: e4b82bd89015baa4c73c9200013e49c76523951218dfde62bbe39300eefdfe0a
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "103955666"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119731041"
 ---
 # <a name="loadusersettings"></a>LoadUserSettings
 
-Determina se COM caricherà il profilo utente per i server COM in esecuzione come identità dell'applicazione di avvio dell'utente.
+Determina se COM carica il profilo utente per i server COM in esecuzione come identità dell'applicazione utente di avvio.
 
 ## <a name="registry-entry"></a>Voce del Registro di sistema
 
 ```
 HKEY_LOCAL_MACHINE\SOFTWARE\Classes\AppID
-   {AppID_GUID}
-      LoadUserSettings = value
+   {AppID_GUID}
+      LoadUserSettings = value
 ```
 
 ## <a name="remarks"></a>Commenti
 
-Si tratta di un valore **reg \_ DWORD** . Se il *valore* è diverso da zero, com carica il profilo dell'account utente con il quale avvia il server com. Se il *valore* è zero o non è presente, com non caricherà il profilo dell'account utente con cui viene avviato il server com.
+Si tratta di **un valore \_ DWORD REG.** Se *il* valore è diverso da zero, COM carica il profilo dell'account utente con cui avvia il server COM. Se *il* valore è zero o non è presente, COM non carica il profilo dell'account utente con cui avvia il server COM.
 
-Questa impostazione viene ignorata se è presente una voce [**RunAs**](runas.md) .
+Questa impostazione viene ignorata se è presente una voce [**RunAs.**](runas.md)
 
- 
+ 
 
- 
+ 
 
 
 

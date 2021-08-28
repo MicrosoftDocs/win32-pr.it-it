@@ -1,6 +1,6 @@
 ---
 title: Attributo Machine-Password-Change-Interval
-description: L'attributo Machine-Password-Change-Interval non è attualmente in uso.
+description: L'attributo Machine-Password-Change-Interval non è attualmente usato.
 ms.assetid: e101dc40-3a90-4ce3-9023-2d6077fdcbac
 ms.tgt_platform: multiple
 keywords:
@@ -14,29 +14,29 @@ api_type:
 - Schema
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 2d7a101617fcb56d349795335fb118fe40fca406
-ms.sourcegitcommit: b77ace27b0432e7cd3863191b11926be032fbe2f
+ms.openlocfilehash: d9a3fa9ff7af57e15f10141b6b63d4e8ecd19169ab6c5448399b586aa7a013fe
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/14/2020
-ms.locfileid: "106303008"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119705671"
 ---
 # <a name="machine-password-change-interval-attribute"></a>Attributo Machine-Password-Change-Interval
 
-L'attributo **Machine-Password-Change-Interval** non è attualmente in uso.
+**L'attributo Machine-Password-Change-Interval** non è attualmente usato.
 
 
 
 | Voce | Valore |
 |-------------------|--------------------------------------|
-| CN                | Computer-password-modifica-intervallo     |
-| LDAP-Display-Name | machinePasswordChangeInterval        |
+| CN                | Intervallo di modifica della password del computer     |
+| Ldap-Display-Name | machinePasswordChangeInterval        |
 | Dimensione              | \-                                   |
-| Privilegio aggiornamento  | \-                                   |
+| Privilegio di aggiornamento  | \-                                   |
 | Frequenza di aggiornamento  | \-                                   |
 | Attribute-Id      | 1.2.840.113556.1.4.520               |
-| System-ID-GUID    | c9b6358e-bb38-11d0-afef-0000f80367c1 |
-| Sintassi            | [**Interval**](s-interval.md)       |
+| System-Id-Guid    | c9b6358e-bb38-11d0-afef-0000f80367c1 |
+| Sintassi            | [**Intervallo**](s-interval.md)       |
 
 
 
@@ -58,15 +58,15 @@ L'attributo **Machine-Password-Change-Interval** non è attualmente in uso.
 | ID collegamento                | \-           |
 | MAPI-Id                | \-           |
 | System-Only            | Falso        |
-| È a valore singolo       | Vero         |
+| Is-Single-Valued       | Vero         |
 | Indicizzato             | Falso        |
 | Nel catalogo globale      | Falso        |
-| NT-Security-descrittore | O:BAG: NON VALIDO: S: |
+| NT-Security-Descriptor | O:BAG:BAD:S: |
 | Range-Lower            | \-           |
 | Range-Upper            | \-           |
 | Search-Flags           | 0x00000000   |
 | System-Flags           | 0x00000010   |
-| Classi utilizzate in        | \-           |
+| Classi usate in        | \-           |
 
 
 
@@ -79,15 +79,15 @@ L'attributo **Machine-Password-Change-Interval** non è attualmente in uso.
 | ID collegamento                | \-           |
 | MAPI-Id                | \-           |
 | System-Only            | Falso        |
-| È a valore singolo       | Vero         |
+| Is-Single-Valued       | Vero         |
 | Indicizzato             | Falso        |
 | Nel catalogo globale      | Falso        |
-| NT-Security-descrittore | O:BAG: NON VALIDO: S: |
+| NT-Security-Descriptor | O:BAG:BAD:S: |
 | Range-Lower            | \-           |
 | Range-Upper            | \-           |
 | Search-Flags           | 0x00000000   |
 | System-Flags           | 0x00000010   |
-| Classi utilizzate in        | \-           |
+| Classi usate in        | \-           |
 
 
 
@@ -100,15 +100,15 @@ L'attributo **Machine-Password-Change-Interval** non è attualmente in uso.
 | ID collegamento                | \-           |
 | MAPI-Id                | \-           |
 | System-Only            | Falso        |
-| È a valore singolo       | Vero         |
+| Is-Single-Valued       | Vero         |
 | Indicizzato             | Falso        |
 | Nel catalogo globale      | Falso        |
-| NT-Security-descrittore | O:BAG: NON VALIDO: S: |
+| NT-Security-Descriptor | O:BAG:BAD:S: |
 | Range-Lower            | \-           |
 | Range-Upper            | \-           |
 | Search-Flags           | 0x00000000   |
 | System-Flags           | 0x00000010   |
-| Classi utilizzate in        | \-           |
+| Classi usate in        | \-           |
 
 
 
@@ -121,15 +121,15 @@ L'attributo **Machine-Password-Change-Interval** non è attualmente in uso.
 | ID collegamento                | \-           |
 | MAPI-Id                | \-           |
 | System-Only            | Falso        |
-| È a valore singolo       | Vero         |
+| Is-Single-Valued       | Vero         |
 | Indicizzato             | Falso        |
 | Nel catalogo globale      | Falso        |
-| NT-Security-descrittore | O:BAG: NON VALIDO: S: |
+| NT-Security-Descriptor | O:BAG:BAD:S: |
 | Range-Lower            | \-           |
 | Range-Upper            | \-           |
 | Search-Flags           | 0x00000000   |
 | System-Flags           | 0x00000010   |
-| Classi utilizzate in        | \-           |
+| Classi usate in        | \-           |
 
 
 
@@ -142,15 +142,15 @@ L'attributo **Machine-Password-Change-Interval** non è attualmente in uso.
 | ID collegamento                | \-           |
 | MAPI-Id                | \-           |
 | System-Only            | Falso        |
-| È a valore singolo       | Vero         |
+| Is-Single-Valued       | Vero         |
 | Indicizzato             | Falso        |
 | Nel catalogo globale      | Falso        |
-| NT-Security-descrittore | O:BAG: NON VALIDO: S: |
+| NT-Security-Descriptor | O:BAG:BAD:S: |
 | Range-Lower            | \-           |
 | Range-Upper            | \-           |
 | Search-Flags           | 0x00000000   |
 | System-Flags           | 0x00000010   |
-| Classi utilizzate in        | \-           |
+| Classi usate in        | \-           |
 
 
 
@@ -163,15 +163,15 @@ L'attributo **Machine-Password-Change-Interval** non è attualmente in uso.
 | ID collegamento                | \-           |
 | MAPI-Id                | \-           |
 | System-Only            | Falso        |
-| È a valore singolo       | Vero         |
+| Is-Single-Valued       | Vero         |
 | Indicizzato             | Falso        |
 | Nel catalogo globale      | Falso        |
-| NT-Security-descrittore | O:BAG: NON VALIDO: S: |
+| NT-Security-Descriptor | O:BAG:BAD:S: |
 | Range-Lower            | \-           |
 | Range-Upper            | \-           |
 | Search-Flags           | 0x00000000   |
 | System-Flags           | 0x00000010   |
-| Classi utilizzate in        | \-           |
+| Classi usate in        | \-           |
 
 
 

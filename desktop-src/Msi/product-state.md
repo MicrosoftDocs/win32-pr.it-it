@@ -1,7 +1,7 @@
 ---
-description: La proprietà state restituisce lo stato di installazione dell'istanza del prodotto.
+description: La proprietà State restituisce lo stato di installazione di questa istanza del prodotto.
 ms.assetid: ae4c7a43-d4af-4e06-a3f8-d7c2d0715d84
-title: Proprietà Product. state
+title: Product.State - proprietà
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -13,16 +13,16 @@ api_type:
 - COM
 api_location:
 - Msi.dll
-ms.openlocfilehash: 64d2f5d39a516fc4a0c00b8e18c159e1f2496e22
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: befa632feae7b4c57983f13a28e695051842cb5d1a2ff0908e6ffd011c6e4918
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "106330622"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119753951"
 ---
-# <a name="productstate-property"></a>Proprietà Product. state
+# <a name="productstate-property"></a>Product.State - proprietà
 
-La proprietà **state** restituisce lo stato di installazione dell'istanza del prodotto.
+La **proprietà State** restituisce lo stato di installazione di questa istanza del prodotto.
 
 Questa proprietà è di sola lettura.
 
@@ -43,11 +43,11 @@ Questa proprietà restituisce uno dei valori seguenti.
 
 
 
-| Stato di installazione       | Significato                                |
+| Stato dell'installazione       | Significato                                |
 |--------------------------|----------------------------------------|
-| \_impostazione predefinita InstallState    | Istanza del prodotto installata localmente. |
-| INSTALLSTATE \_ annunciata | Istanza del prodotto annunciata.        |
-| INSTALLSTATE \_ sconosciuto    | Istanza del prodotto sconosciuta.           |
+| INSTALLSTATE \_ DEFAULT    | Istanza del prodotto installata localmente. |
+| INSTALLSTATE \_ ANNUNCIATO | Istanza del prodotto annunciata.        |
+| INSTALLSTATE \_ UNKNOWN    | Istanza del prodotto sconosciuta.           |
 
 
 
@@ -59,7 +59,7 @@ Questa proprietà restituisce uno dei valori seguenti.
 
 | Requisito | Valore |
 |--------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Versione<br/> | Windows Installer 5,0 in Windows Server 2012, Windows 8, Windows Server 2008 R2 o Windows 7. Windows Installer 4,0 o Windows Installer 4,5 in Windows Server 2008 o Windows Vista. Windows Installer 3,0 o versioni successive in Windows Server 2003, Windows XP e Windows 2000<br/> |
+| Versione<br/> | Windows Programma di installazione 5.0 Windows Server 2012, Windows 8, Windows Server 2008 R2 o Windows 7. Windows Installer 4.0 o Windows Installer 4.5 in Windows Server 2008 o Windows Vista. Windows Programma di installazione 3.0 o versione successiva in Windows Server 2003, Windows XP e Windows 2000<br/> |
 | DLL<br/>     | <dl> <dt>Msi.dll</dt> </dl>                                                                                                                                                                                                   |
 | IID<br/>     | IID \_ IProduct è definito come 000C10A0-0000-0000-C000-000000000046<br/>                                                                                                                                                                                                          |
 
@@ -72,7 +72,7 @@ Questa proprietà restituisce uno dei valori seguenti.
 [**Prodotto**](product-object.md)
 </dt> <dt>
 
-[Non supportato in Windows Installer 2,0 e versioni precedenti](not-supported-in-windows-installer-version-2-0.md)
+[Non supportato in Windows Installer 2.0 e versioni precedenti](not-supported-in-windows-installer-version-2-0.md)
 </dt> </dl>
 
  

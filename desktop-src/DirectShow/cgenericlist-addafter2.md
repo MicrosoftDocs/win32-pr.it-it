@@ -1,7 +1,7 @@
 ---
-description: Il metodo AddAfter inserisce un elenco dopo la posizione specificata e usa i parametri "pos" e "plist".
+description: Il metodo AddAfter inserisce un elenco dopo la posizione specificata e usa i parametri 'pos' e 'plist'.
 ms.assetid: 99214667-8478-40e5-b55b-6ac47b1fb4d2
-title: Metodo CGenericList. AddAfter (Wxlist. h)-pos, parametri plist
+title: Metodo CGenericList.AddAfter (Wxlist.h) - parametri pos e plist
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -16,14 +16,14 @@ api_location:
 - Strmbase.dll
 - Strmbasd.lib
 - Strmbasd.dll
-ms.openlocfilehash: c6bbe26e98acc999f067a7b0e96c3716e7e0c0c0
-ms.sourcegitcommit: 168d11879cb9fd89d26f826482725c0a626be00f
+ms.openlocfilehash: 846e37b961af8d2492b3aff032193e87fb3603eb1751c25f0e3ca8e0c5d38618
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/16/2021
-ms.locfileid: "104531105"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119697481"
 ---
-# <a name="cgenericlistaddafter-method-wxlisth---pos-plist-parameters"></a>Metodo CGenericList. AddAfter (Wxlist. h)-pos, parametri plist
+# <a name="cgenericlistaddafter-method-wxlisth---pos-plist-parameters"></a>Metodo CGenericList.AddAfter (Wxlist.h) - parametri pos e plist
 
 Il `AddAfter` metodo inserisce un elenco dopo la posizione specificata.
 
@@ -50,7 +50,7 @@ Posizione in cui inserire l'elenco. L'elenco viene inserito dopo questa posizion
 
 </dd> <dt>
 
-*pList* 
+*Plist* 
 </dt> <dd>
 
 Puntatore all'elenco da inserire.
@@ -59,14 +59,14 @@ Puntatore all'elenco da inserire.
 
 ## <a name="return-value"></a>Valore restituito
 
-Restituisce **true** se l'operazione ha esito positivo o **false** in caso contrario.
+Restituisce **TRUE in** caso di esito positivo oppure FALSE **in** caso contrario.
 
 ## <a name="requirements"></a>Requisiti
 
 | Requisito | Valore |
 |-|-|
-| Intestazione | Wxlist. h (include Streams. h) |
-| Libreria| Strmbase. lib (compilazioni finali); Strmbasd. lib (build di debug) |
+| Intestazione | Wxlist.h (includere Flussi.h) |
+| Libreria| Strmbase.lib (build di vendita al dettaglio); Strmbasd.lib (build di debug) |
 
 ## <a name="see-also"></a>Vedi anche
 

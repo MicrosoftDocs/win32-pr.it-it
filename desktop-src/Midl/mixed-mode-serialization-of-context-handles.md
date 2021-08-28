@@ -1,48 +1,48 @@
 ---
 title: Serializzazione in modalità mista di handle di contesto
-description: In Microsoft Windows XP, una singola interfaccia può supportare sia gli handle di contesto serializzati che quelli non serializzati, denominati serializzazione in modalità mista.
+description: In Microsoft Windows XP una singola interfaccia può contenere handle di contesto serializzati e non serializzati, denominati serializzazione in modalità mista.
 ms.assetid: b52c1d6f-cdc5-4597-a36e-bb957e4aab01
 keywords:
-- Riferimento al linguaggio MIDL MIDL, serializzazione in modalità mista di handle di contesto
-- gestione del contesto MIDL
-- serializzazione in modalità mista MIDL
+- MidL language reference MIDL , serializzazione in modalità mista di handle di contesto
+- il contesto gestisce MIDL
+- MIDL di serializzazione in modalità mista
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 0922b53bfc7ba2e30ad8df0764e3cf9a36f0f723
-ms.sourcegitcommit: 2d531328b6ed82d4ad971a45a5131b430c5866f7
+ms.openlocfilehash: 0aaa35f02a939a50e2484ace29630783ee219d6313d7538cba54b1f54cd83007
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "103856077"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119787431"
 ---
 # <a name="mixed-mode-serialization-of-context-handles"></a>Serializzazione in modalità mista di handle di contesto
 
-A partire da Windows XP, una singola interfaccia può supportare sia gli handle di contesto serializzati che quelli non serializzati, consentendo a un metodo su un'interfaccia di accedere a un handle di contesto esclusivamente (serializzato), mentre altri metodi accedono a tale handle di contesto in modalità condivisa (non serializzato). Per ulteriori informazioni sugli handle di contesto, vedere i seguenti attributi:
+A partire da Windows XP, una singola interfaccia può contenere handle di contesto serializzati e non serializzati, consentendo a un metodo in un'interfaccia di accedere esclusivamente a un handle di contesto (serializzato), mentre altri metodi accedono a tale handle di contesto in modalità condivisa (non serializzata). Per altre informazioni sugli handle di contesto, vedere gli attributi seguenti:
 
--   [**handle di contesto \_**](context-handle.md)
--   [**\_serializzazione handle di contesto \_**](context-handle-serialize.md)
--   [**gestore del contesto \_ \_ noserialize**](context-handle-noserialize.md)
+-   [**handle di \_ contesto**](context-handle.md)
+-   [**serializzazione \_ dell'handle \_ di contesto**](context-handle-serialize.md)
+-   [**handle \_ di contesto \_ noserialize**](context-handle-noserialize.md)
 
-Le funzionalità di accesso in modalità condivisa e serializzata sono paragonabili ai meccanismi di blocco in lettura/scrittura. i metodi che usano un handle di contesto serializzato sono utenti esclusivi (writer), mentre i metodi che usano un handle di contesto non serializzato sono utenti condivisi (lettori). I metodi che eliminano o modificano lo stato di un handle di contesto devono essere serializzati. I metodi che non modificano lo stato di un handle di contesto, ad esempio i metodi che leggono semplicemente da un handle di contesto, possono essere non serializzati. L'utilizzo di un handle di contesto in modalità mista può migliorare notevolmente la scalabilità di un server, soprattutto quando più thread effettuano chiamate simultanee allo stesso handle di contesto.
+Le funzionalità di accesso in modalità serializzata e condivisa sono paragonabili ai meccanismi di blocco in lettura/scrittura. I metodi che usano un handle di contesto serializzato sono utenti esclusivi (writer), mentre i metodi che usano un handle di contesto non serializzato sono utenti condivisi (lettori). I metodi che eliminano o modificano lo stato di un handle di contesto devono essere serializzati. I metodi che non modificano lo stato di un handle di contesto, ad esempio i metodi che semplicemente leggono da un handle di contesto, possono essere nonserializzati. L'uso di un handle di contesto in modalità mista può migliorare notevolmente la scalabilità di un server, soprattutto quando più thread eserciteranno chiamate simultanee allo stesso handle di contesto.
 
-RPC non impone il "blocco di scrittura" nei metodi che usano un handle di contesto in modalità condivisa, quindi le applicazioni devono garantire che gli handle del contesto in modalità condivisa non vengano modificati. La modifica di un handle di contesto utilizzato in modalità condivisa può comportare un lieve danneggiamento del contenuto della gestione del contesto, che non è possibile eseguire il debug.
+RPC non applica il "blocco di scrittura" ai metodi che usano un handle di contesto in modalità condivisa, il che significa che le applicazioni devono garantire che gli handle di contesto in modalità condivisa non vengano modificati. La modifica di un handle di contesto usato in modalità condivisa può causare lievi danneggiamenti del contenuto dell'handle di contesto, che non è possibile eseguire il debug.
 
-La modifica della logica di serializzazione di un handle di contesto influiscono solo sul server. Inoltre, la modifica della logica di serializzazione di un handle di contesto non influisce sul formato wire e pertanto le modifiche apportate alla logica di serializzazione in un server non influiscono sulla capacità dei client esistenti di interagire con il server.
+La modifica della logica di serializzazione di un handle di contesto influisce solo sul server. Inoltre, la modifica della logica di serializzazione di un handle di contesto non influisce sul formato wire e pertanto le modifiche alla logica di serializzazione in un server non influiscono sulla capacità dei client esistenti di interagire con il server.
 
-Non è consigliabile usare solo handle di contesto non serializzati. I server che utilizzano handle non serializzati devono passare all'accesso serializzato per il metodo che chiude l'handle del contesto.
+Non è consigliabile usare solo handle di contesto nonserializzati. I server che usano handle non serializzati devono passare all'accesso serializzato per il metodo che chiude l'handle di contesto.
 
-Gli handle di contesto \[ \] solo in uscita vengono in genere utilizzati dai metodi di creazione e non richiedono alcuna serializzazione. Pertanto, qualsiasi attributo di serializzazione applicato agli \[ \] handle del contesto di sola uscita, ad esempio la [**\_ \_ serializzazione**](context-handle-serialize.md) dell'handle del contesto o l' [**handle di contesto \_ \_ noserialize**](context-handle-noserialize.md), viene ignorato da RPC.
+Gli handle di contesto che sono out -only vengono in genere usati dai metodi \[ di creazione e non richiedono alcuna \] serializzazione. Pertanto, qualsiasi attributo di serializzazione applicato agli handle di contesto out-only, ad esempio la serializzazione dell'handle di contesto o \[ \] [**l'handle di contesto \_ \_ noserialize,**](context-handle-noserialize.md)viene ignorato da RPC. [**\_ \_**](context-handle-serialize.md)
 
 > [!Note]  
 > I metodi di creazione vengono serializzati in modo implicito.
 
- 
+ 
 
 ## <a name="examples"></a>Esempio
 
-Nei due esempi seguenti viene illustrato come abilitare la serializzazione in modalità mista degli handle di contesto.
+I due esempi seguenti illustrano come abilitare la serializzazione in modalità mista degli handle di contesto.
 
-Nel primo esempio viene illustrato come eseguire questa operazione nel file IDL:
+Il primo esempio illustra come eseguire questa operazione nel file IDL:
 
 ``` syntax
 typedef [context_handle] void *TestContextHandleExclusive;
@@ -59,7 +59,7 @@ UseExclusive(...
              ...);
 ```
 
-Nel secondo esempio viene illustrato come abilitare la serializzazione in modalità mista degli handle di contesto nel file ACF:
+Il secondo esempio illustra come abilitare la serializzazione in modalità mista degli handle di contesto nel file ACF:
 
 ``` syntax
 typedef [context_handle_serialize] TestContextHandleExclusive;
@@ -71,18 +71,18 @@ typedef [context_handle_noserialize] TestContextHandleShared;
 
 <dl> <dt>
 
-[**handle di contesto \_**](context-handle.md)
+[**handle di \_ contesto**](context-handle.md)
 </dt> <dt>
 
-[**\_serializzazione handle di contesto \_**](context-handle-serialize.md)
+[**serializzazione \_ dell'handle \_ di contesto**](context-handle-serialize.md)
 </dt> <dt>
 
-[**gestore del contesto \_ \_ noserialize**](context-handle-noserialize.md)
+[**handle \_ di contesto \_ noserialize**](context-handle-noserialize.md)
 </dt> </dl>
 
- 
+ 
 
- 
+ 
 
 
 

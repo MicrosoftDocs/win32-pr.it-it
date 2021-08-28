@@ -1,19 +1,19 @@
 ---
-description: La \_ notifica SPFILENOTIFY ENDQUEUE viene inviata alla routine di callback quando tutte le operazioni in coda sono state completate.
+description: La notifica SPFILENOTIFY ENDQUEUE viene inviata alla routine di callback al completamento di tutte le operazioni \_ in coda.
 ms.assetid: f4540ab6-edea-4f84-b7eb-4ab3f774068b
-title: Messaggio SPFILENOTIFY_ENDQUEUE (Setupapi. h)
+title: SPFILENOTIFY_ENDQUEUE messaggio (Setupapi.h)
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 0f3ed2ca896f91ec09cb49f89731b41c5d099465
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 6192ac867b47b3e5cf9d06806bfb6eb42743aee4d97a935035fd7b44ea0e79b8
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "103968499"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119665141"
 ---
-# <a name="spfilenotify_endqueue-message"></a>\_Messaggio SPFILENOTIFY ENDQUEUE
+# <a name="spfilenotify_endqueue-message"></a>MESSAGGIO SPFILENOTIFY \_ ENDQUEUE
 
-La notifica **SPFILENOTIFY \_ ENDQUEUE** viene inviata alla routine di callback quando tutte le operazioni in coda sono state completate.
+La **notifica SPFILENOTIFY \_ ENDQUEUE** viene inviata alla routine di callback al completamento di tutte le operazioni in coda.
 
 
 ```C++
@@ -32,7 +32,7 @@ SPFILENOTIFY_ENDQUEUE
 *Param1* 
 </dt> <dd>
 
-**True** se la coda è stata elaborata correttamente; in caso contrario, **false** .
+**TRUE** se la coda è stata elaborata correttamente, **FALSE in caso** contrario.
 
 </dd> <dt>
 
@@ -53,9 +53,9 @@ Il valore restituito viene ignorato.
 
 | Requisito | Valore |
 |-------------------------------------|---------------------------------------------------------------------------------------|
-| Client minimo supportato<br/> | \[Solo app desktop Windows XP\]<br/>                                           |
-| Server minimo supportato<br/> | \[Solo app desktop Windows Server 2003\]<br/>                                  |
-| Intestazione<br/>                   | <dl> <dt>Setupapi. h</dt> </dl> |
+| Client minimo supportato<br/> | Windows Solo \[ app desktop XP\]<br/>                                           |
+| Server minimo supportato<br/> | Windows Solo app desktop di Server 2003 \[\]<br/>                                  |
+| Intestazione<br/>                   | <dl> <dt>Setupapi.h</dt> </dl> |
 
 
 

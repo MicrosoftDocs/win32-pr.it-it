@@ -1,10 +1,10 @@
 ---
-title: System-classe ausiliaria-attributo
+title: Attributo System-Auxiliary-Class
 description: Elenco di classi ausiliarie che non possono essere modificate dall'utente.
 ms.assetid: 6d629925-7321-4f3a-bf4c-4adf0d33c946
 ms.tgt_platform: multiple
 keywords:
-- Schema di AD Attribute di classe ausiliario di sistema
+- Schema AD dell'attributo System-Auxiliary-Class
 - Schema AD dell'attributo systemAuxiliaryClass
 topic_type:
 - apiref
@@ -14,14 +14,14 @@ api_type:
 - Schema
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: ebe70899ba2bda8fe98b38228cb661e7a773ec1d
-ms.sourcegitcommit: b77ace27b0432e7cd3863191b11926be032fbe2f
+ms.openlocfilehash: 7d49d19d51e20795f761331f548af72810a32561591c4b7dbdd3d2871f438915
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/14/2020
-ms.locfileid: "106303119"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119645351"
 ---
-# <a name="system-auxiliary-class-attribute"></a>System-classe ausiliaria-attributo
+# <a name="system-auxiliary-class-attribute"></a>Attributo System-Auxiliary-Class
 
 Elenco di classi ausiliarie che non possono essere modificate dall'utente.
 
@@ -29,13 +29,13 @@ Elenco di classi ausiliarie che non possono essere modificate dall'utente.
 
 | Voce | Valore |
 |-------------------|--------------------------------------------------------------------|
-| CN                | System-ausiliari-classe                                             |
-| LDAP-Display-Name | systemAuxiliaryClass                                               |
+| CN                | System-Auxiliary-Class                                             |
+| Ldap-Display-Name | SystemAuxiliaryClass                                               |
 | Dimensione              | \-                                                                 |
-| Privilegio aggiornamento  | Amministratore schema                                               |
+| Aggiorna privilegio  | Amministratore dello schema                                               |
 | Frequenza di aggiornamento  | Quando viene creata la classe o viene aggiunta una nuova classe ausiliaria. |
 | Attribute-Id      | 1.2.840.113556.1.4.198                                             |
-| System-ID-GUID    | bf967a43-0de6-11d0-a285-00aa003049e2                               |
+| System-Id-Guid    | bf967a43-0de6-11d0-a285-00aa003049e2                               |
 | Sintassi            | [**String(Object-Identifier)**](s-string-object-identifier.md)    |
 
 
@@ -44,7 +44,7 @@ Elenco di classi ausiliarie che non possono essere modificate dall'utente.
 
 -   [**Windows 2000 Server**](#windows-2000-server)
 -   [**Windows Server 2003**](#windows-server-2003)
--   [**ADAM**](#adam)
+-   [**Adam**](#adam)
 -   [**Windows Server 2003 R2**](#windows-server-2003-r2)
 -   [**Windows Server 2008**](#windows-server-2008)
 -   [**Windows Server 2008 R2**](#windows-server-2008-r2)
@@ -59,15 +59,15 @@ Elenco di classi ausiliarie che non possono essere modificate dall'utente.
 | ID collegamento                | \-                                               |
 | MAPI-Id                | \-                                               |
 | System-Only            | Vero                                             |
-| È a valore singolo       | Falso                                            |
+| A valore singolo       | Falso                                            |
 | Indicizzato             | Falso                                            |
 | Nel catalogo globale      | Falso                                            |
-| NT-Security-descrittore | O:BAG: NON VALIDO: S:                                     |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                     |
 | Range-Lower            | \-                                               |
 | Range-Upper            | \-                                               |
 | Search-Flags           | 0x00000000                                       |
 | System-Flags           | 0x00000010                                       |
-| Classi utilizzate in        | [**Classe-schema**](c-classschema.md)<br/> |
+| Classi usate in        | [**Schema di classe**](c-classschema.md)<br/> |
 
 
 
@@ -80,19 +80,19 @@ Elenco di classi ausiliarie che non possono essere modificate dall'utente.
 | ID collegamento                | \-                                               |
 | MAPI-Id                | \-                                               |
 | System-Only            | Vero                                             |
-| È a valore singolo       | Falso                                            |
+| A valore singolo       | Falso                                            |
 | Indicizzato             | Falso                                            |
 | Nel catalogo globale      | Falso                                            |
-| NT-Security-descrittore | O:BAG: NON VALIDO: S:                                     |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                     |
 | Range-Lower            | \-                                               |
 | Range-Upper            | \-                                               |
 | Search-Flags           | 0x00000000                                       |
 | System-Flags           | 0x00000010                                       |
-| Classi utilizzate in        | [**Classe-schema**](c-classschema.md)<br/> |
+| Classi usate in        | [**Schema di classe**](c-classschema.md)<br/> |
 
 
 
-## <a name="adam"></a>ADAM
+## <a name="adam"></a>Adam
 
 
 
@@ -101,15 +101,15 @@ Elenco di classi ausiliarie che non possono essere modificate dall'utente.
 | ID collegamento                | \-                                               |
 | MAPI-Id                | \-                                               |
 | System-Only            | Vero                                             |
-| È a valore singolo       | Falso                                            |
+| A valore singolo       | Falso                                            |
 | Indicizzato             | Falso                                            |
 | Nel catalogo globale      | Falso                                            |
-| NT-Security-descrittore | O:BAG: NON VALIDO: S:                                     |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                     |
 | Range-Lower            | \-                                               |
 | Range-Upper            | \-                                               |
 | Search-Flags           | 0x00000000                                       |
 | System-Flags           | 0x00000010                                       |
-| Classi utilizzate in        | [**Classe-schema**](c-classschema.md)<br/> |
+| Classi usate in        | [**Schema di classe**](c-classschema.md)<br/> |
 
 
 
@@ -122,15 +122,15 @@ Elenco di classi ausiliarie che non possono essere modificate dall'utente.
 | ID collegamento                | \-                                               |
 | MAPI-Id                | \-                                               |
 | System-Only            | Vero                                             |
-| È a valore singolo       | Falso                                            |
+| Is-Single-Valued       | Falso                                            |
 | Indicizzato             | Falso                                            |
 | Nel catalogo globale      | Falso                                            |
-| NT-Security-descrittore | O:BAG: NON VALIDO: S:                                     |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                     |
 | Range-Lower            | \-                                               |
 | Range-Upper            | \-                                               |
 | Search-Flags           | 0x00000000                                       |
 | System-Flags           | 0x00000010                                       |
-| Classi utilizzate in        | [**Classe-schema**](c-classschema.md)<br/> |
+| Classi usate in        | [**Schema di classe**](c-classschema.md)<br/> |
 
 
 
@@ -143,15 +143,15 @@ Elenco di classi ausiliarie che non possono essere modificate dall'utente.
 | ID collegamento                | \-                                               |
 | MAPI-Id                | \-                                               |
 | System-Only            | Vero                                             |
-| È a valore singolo       | Falso                                            |
+| Is-Single-Valued       | Falso                                            |
 | Indicizzato             | Falso                                            |
 | Nel catalogo globale      | Falso                                            |
-| NT-Security-descrittore | O:BAG: NON VALIDO: S:                                     |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                     |
 | Range-Lower            | \-                                               |
 | Range-Upper            | \-                                               |
 | Search-Flags           | 0x00000000                                       |
 | System-Flags           | 0x00000010                                       |
-| Classi utilizzate in        | [**Classe-schema**](c-classschema.md)<br/> |
+| Classi usate in        | [**Schema di classe**](c-classschema.md)<br/> |
 
 
 
@@ -164,15 +164,15 @@ Elenco di classi ausiliarie che non possono essere modificate dall'utente.
 | ID collegamento                | \-                                               |
 | MAPI-Id                | \-                                               |
 | System-Only            | Vero                                             |
-| È a valore singolo       | Falso                                            |
+| Is-Single-Valued       | Falso                                            |
 | Indicizzato             | Falso                                            |
 | Nel catalogo globale      | Falso                                            |
-| NT-Security-descrittore | O:BAG: NON VALIDO: S:                                     |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                     |
 | Range-Lower            | \-                                               |
 | Range-Upper            | \-                                               |
 | Search-Flags           | 0x00000000                                       |
 | System-Flags           | 0x00000010                                       |
-| Classi utilizzate in        | [**Classe-schema**](c-classschema.md)<br/> |
+| Classi usate in        | [**Schema di classe**](c-classschema.md)<br/> |
 
 
 
@@ -185,15 +185,15 @@ Elenco di classi ausiliarie che non possono essere modificate dall'utente.
 | ID collegamento                | \-                                               |
 | MAPI-Id                | \-                                               |
 | System-Only            | Vero                                             |
-| È a valore singolo       | Falso                                            |
+| Is-Single-Valued       | Falso                                            |
 | Indicizzato             | Falso                                            |
 | Nel catalogo globale      | Falso                                            |
-| NT-Security-descrittore | O:BAG: NON VALIDO: S:                                     |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                     |
 | Range-Lower            | \-                                               |
 | Range-Upper            | \-                                               |
 | Search-Flags           | 0x00000000                                       |
 | System-Flags           | 0x00000010                                       |
-| Classi utilizzate in        | [**Classe-schema**](c-classschema.md)<br/> |
+| Classi usate in        | [**Schema di classe**](c-classschema.md)<br/> |
 
 
 

@@ -1,7 +1,7 @@
 ---
-description: Il \_ metodo Put Visible consente di visualizzare o nascondere la finestra.
+description: Il metodo put \_ Visible consente di visualizzare o nascondere la finestra.
 ms.assetid: 77e8d071-f876-4e35-945c-d1daf96ad02b
-title: Metodo CBaseControlWindow.put_Visible (Ctlutil. h)
+title: CBaseControlWindow.put_Visible metodo (Ctlutil.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -16,14 +16,14 @@ api_location:
 - Strmbase.dll
 - Strmbasd.lib
 - Strmbasd.dll
-ms.openlocfilehash: 7bf713b4ccb9932b1201e7ced40fddcd87407ef6
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: f2c8565d14c58d520a91c682e55d3dbc2ba079cf956213bdc61d044834d690c1
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "106333372"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119793291"
 ---
-# <a name="cbasecontrolwindowput_visible-method"></a>CBaseControlWindow. Put ( \_ metodo visibile)
+# <a name="cbasecontrolwindowput_visible-method"></a>Metodo CBaseControlWindow.put \_ Visible
 
 Il `put_Visible` metodo consente di visualizzare o nascondere la finestra.
 
@@ -51,7 +51,7 @@ Flag booleano di automazione (0 indica che la finestra è nascosta, 1 indica che
 
 ## <a name="return-value"></a>Valore restituito
 
-Restituisce un valore **HRESULT** .
+Restituisce un **valore HRESULT.**
 
 ## <a name="requirements"></a>Requisiti
 
@@ -59,8 +59,8 @@ Restituisce un valore **HRESULT** .
 
 | Requisito | Valore |
 |--------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Intestazione<br/>  | <dl> <dt>Ctlutil. h (include Streams. h)</dt> </dl>                                                                                   |
-| Libreria<br/> | <dl> <dt>Strmbase. lib (compilazioni finali); </dt> <dt>Strmbasd. lib (build di debug)</dt> </dl> |
+| Intestazione<br/>  | <dl> <dt>Ctlutil.h (include Flussi.h)</dt> </dl>                                                                                   |
+| Libreria<br/> | <dl> <dt>Strmbase.lib (build di vendita al dettaglio); </dt> <dt>Strmbasd.lib (build di debug)</dt> </dl> |
 
 
 
